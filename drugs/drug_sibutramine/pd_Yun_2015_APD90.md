@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sibutramine (measured concentrations) drives Action potential duration 90% (in msec): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sibutramine concentrations (10 and 30 μM) shortened APD90 in rabbit Purkinje fibers by 9% and 17%, respectively; the paper does not state an Emax/IC50 model fit or mechanism for the APD90 effect, only noting presumed mixed ion channel effects.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yun_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

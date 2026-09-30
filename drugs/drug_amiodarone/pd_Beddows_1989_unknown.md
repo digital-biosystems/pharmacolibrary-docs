@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Desethylamiodarone (measured concentrations) drives cell number (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Desethylamiodarone (measured in µg/ml) directly and cytotoxically reduces SGHTL-34 thyrocyte cell number (DNA/protein content), with an EC50 of 6.8 ± 1.1 µg/ml (record lists 6.8 pg/ml) and near-complete cell loss after 24 h at 12.5 µg/ml; amiodarone is much less potent, reducing cell number by only ~25–30% (Emax) at concentrations up to 50 µg/ml. The paper states the mechanism (direct cytotoxicity) but gives no formal PD model parameters (no Imax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beddows_1989`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Beddows SA; Page SR; Taylor AH; McNerney R; Whitley GS; Johnstone AP; et al. et 
   ·  DOI: [10.1016/0006-2952(89)90648-5](https://doi.org/10.1016/0006-2952(89)90648-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 6.8 | pg/ml | not captured | review_gapfill (not captured) | Beddows_1989:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 6.8 | pg/ml | not captured | review_gapfill (not captured) | Beddows_1989:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

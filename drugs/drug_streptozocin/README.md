@@ -26,12 +26,12 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span> | [Balogh_2019](drugs/drug_streptozocin/pd_Balogh_2019_GTP_S_binding.md) | Balogh M et al., Efficacy-Based Perspective to Overcome…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.00347](https://doi.org/10.3389/fphar.2019.00347) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span> | [Balogh_2019](drugs/drug_streptozocin/pd_Balogh_2019_PPT.md) | Balogh M et al., Efficacy-Based Perspective to Overcome…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.00347](https://doi.org/10.3389/fphar.2019.00347) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Fohlen_2021](drugs/drug_streptozocin/pd_Fohlen_2021_CV.md) | Fohlen A et al., Anticancer Drugs for Intra-Arterial Tre…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070639](https://doi.org/10.3390/ph14070639) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Holmes_1998](drugs/drug_streptozocin/pd_Holmes_1998_unknown.md) | Holmes BB et al., Heroin acts on delta opioid receptors i…, Proceedings of the Society… (1998) | [10.3181/00379727-218-44301](https://doi.org/10.3181/00379727-218-44301) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span> | [Balogh_2019_GTP_S_binding](drugs/drug_streptozocin/pd_Balogh_2019_GTP_S_binding.md) | G-protein activation ← 14-O-methymorphine-6-O-sulfate · direct Emax (saturable) effect | — | Balogh M et al., Efficacy-Based Perspective to Overcome…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.00347](https://doi.org/10.3389/fphar.2019.00347) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span> | [Balogh_2019_PPT](drugs/drug_streptozocin/pd_Balogh_2019_PPT.md) | hind paw withdrawal threshold ← 14-O-methymorphine-6-O-sulfate · direct Emax (saturable) effect | — | Balogh M et al., Efficacy-Based Perspective to Overcome…, Frontiers in pharmacology (2019) | [10.3389/fphar.2019.00347](https://doi.org/10.3389/fphar.2019.00347) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Fohlen_2021_CV](drugs/drug_streptozocin/pd_Fohlen_2021_CV.md) | cell viability ← unknown · direct sigmoid Emax (Hill) effect | — | Fohlen A et al., Anticancer Drugs for Intra-Arterial Tre…, Pharmaceuticals (Basel, Swi… (2021) | [10.3390/ph14070639](https://doi.org/10.3390/ph14070639) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Holmes_1998_unknown](drugs/drug_streptozocin/pd_Holmes_1998_unknown.md) | tail flick latency ← heroin · stimulation effect | — | Holmes BB et al., Heroin acts on delta opioid receptors i…, Proceedings of the Society… (1998) | [10.3181/00379727-218-44301](https://doi.org/10.3181/00379727-218-44301) |
 
 ## ADME sites
 
@@ -44,6 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer | DrugBank actor |
+| absorption | testis | `ABCB1` inducer | DrugBank actor |
 | metabolism | liver | `CYP1A2` inducer, `CYP2E1` inducer | DrugBank actor |
 | metabolism | lung | `CYP1A1` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` inducer | DrugBank actor |

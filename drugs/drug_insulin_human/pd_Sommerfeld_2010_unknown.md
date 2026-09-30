@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin glargine, M1, M2 drive thymidine incorporation (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD model or potency values (EC50/Emax) for thymidine incorporation; it only describes that insulin glargine and its metabolites M1 and M2 were incubated with Saos-2 cells at various concentrations to measure 14C-thymidine incorporation as a readout of mitogenic (direct stimulatory) activity, with no mechanism beyond direct receptor-mediated stimulation reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sommerfeld_2010`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

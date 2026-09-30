@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:09 | 3:14 | 0/0/0 | 0/0/0 | 0/0/0 | 92,419/3,056 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-09-29 22:05 | 0:54 | 0/0/0 | 0/0/0 | 0/0/0 | 4,671/322 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -40,7 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 35 matched, 23 returned
-- **screened:** 1  ·  **relevant:** 0
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -53,7 +53,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hatami_2012.pdf` | Hatami M et al., Fiber-based liquid-phase micro-extracti…, Chirality (2012) | popPK | 9 | [10.1002/chir.22057](https://doi.org/10.1002/chir.22057) | [22700279](https://pubmed.ncbi.nlm.nih.gov/22700279) | The paper reports a pharmacokinetic study of mebeverine in rats with specific parameters (CL, Vd, t1/2), but the evidence text only describes the relative differences between enantiomers without providing the actual numeric values. |
 | `Winsemius_2002.pdf` | Winsemius A et al., A pharmacokinetic comparison of the mod…, International journal of cl… (2002) | popPK | 9 | not captured | [12469979](https://pubmed.ncbi.nlm.nih.gov/12469979) | The paper is a direct PK study of mebeverine, but the provided evidence contains only qualitative descriptions (e.g., "lower Cmax", "longer half-life") without specific numeric parameter values. |
 
-<sub>queue written 2026-09-18T09:08:54.652822+00:00</sub>
+<sub>queue written 2026-09-29T22:05:34.946996+00:00</sub>
 
 ## Screened and excluded
 

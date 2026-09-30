@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 18f (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Compound 18f (an 8-hydroxyquinoline-indole hybrid) concentration-dependently inhibits self-induced Aβ1–42 aggregation measured as % inhibition in a thioflavin T fluorescence assay (25 µM Aβ1–42; test concentrations 0.3–27 µM), with an EC50 of 1.08 µM; 18f also afforded 82.3% and 88.3% inhibition against Cu2+- and Zn2+-induced Aβ1–42 aggregation, respectively. The paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0); inhibition is attributed to metal chelation of Cu2+, Zn2+, and Fe2+ and, per docking, to hydrogen-bonding and π–π/π–cation interactions with Aβ1–42.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bowroju_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

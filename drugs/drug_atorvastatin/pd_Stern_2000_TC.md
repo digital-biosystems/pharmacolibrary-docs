@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin (concentrations from the PK model of Chen_2025) drives Total cholesterol (in unknown): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> Atorvastatin doses of 5, 20, and 80 mg/day produced log-linear reductions in LDL-cholesterol (Friedewald) of 34%, 43%, and 57%, respectively; the paper does not state a mechanistic PD model (e.g., Imax/IC50 or kin/kout) or potency parameters for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stern_2000`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

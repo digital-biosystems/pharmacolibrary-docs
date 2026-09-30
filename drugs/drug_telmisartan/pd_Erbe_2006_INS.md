@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives insulin (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan concentrations (μmol/l) were modeled against insulin levels in ob/ob mice via an Emax-type stimulation model, with the proposed mechanism being PPARγ agonism; however, the paper reports no Emax, EC50, or rate parameters for the insulin response, and in vivo telmisartan (20 mg/kg, 4 days) did not significantly lower insulin levels. The only potency values given are in vitro PPARγ ligand EC50 values of 3–5 μmol/l for telmisartan and other sartans in PGC-1 recruitment assays.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erbe_2006`
 - **model family:** `emax`
 - **driver:** `cited_pk`

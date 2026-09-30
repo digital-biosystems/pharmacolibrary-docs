@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Drimia maritima bulb extract (measured concentrations) drives Reactive oxygen species (in arbitrary units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for ROS; it only shows that Drimia maritima bulb extract (with proscillaridin A as predominant metabolite) dose-dependently induced (not inhibited) intracellular ROS in COLO-205 cells at concentrations of 2, 2.75, and 3.5 µg/mL (significant, p &lt; 0.0001 after 48 h), while effects in Caco-2 cells (0.5–1.5 µg/mL) were non-significant; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for the ROS response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Abdallat_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

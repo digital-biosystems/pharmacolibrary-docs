@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vancomycin (concentrations from the PK model of Goyal_2022::final_pk_model) drives 30-day mortality (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic mechanism; it is a retrospective study relating vancomycin exposure (average AUC24/MIC and Ctrough in μg/mL during the initial 72 h) to binary 30-day mortality in enterococcal bacteremia via ROC cutoffs and logistic regression. Cutoffs were AUC24/MIC 504 (ROC AUC 0.712, 95% CI 0.539–0.886) and Ctrough 13.94 μg/mL (ROC AUC 0.760, 95% CI 0.627–0.892); only Ctrough ≥ 13.94 μg/mL was an independent risk factor for mortality (OR 8.40, 95% CI 1.60–86.62, p = 0.010), with no Imax/IC50/EC50/Emax/kin/kout/ke0 values reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nham_2022`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Retatrutide dose acts on weight reduction (kg vs placebo) described by an Emax dose-response model; the paper does not state a mechanism (no kin/kout/IC50/ke0). At 6.5 mg the weight reduction was 13.2 kg over 52 weeks; the dose reaching 80% of Emax was 23 mg, while the maximum studied dose of 12 mg corresponds to 60.7% of Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

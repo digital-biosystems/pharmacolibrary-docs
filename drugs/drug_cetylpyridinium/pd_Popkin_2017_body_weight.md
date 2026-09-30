@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives name (in % of initial weight) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In mice infected with influenza A/PR/8/1934 (H1N1), oral CPC (ARMS-1, 0.1% CPC w/v) is associated with higher body weight (% of initial weight on day 0) versus PBS controls, with differences of 14% (day 3) to 24.8% (day 6) post-infection; the paper does not state a pharmacodynamic mechanism or model for this response. In vitro, CPC's virucidal effect (mechanism: direct disruption of the viral envelope) occurred within 10 minutes, with EC50 values of 5–12.5 μg/mL for susceptible isolates and 8 μg/mL for oseltamivir-resistant influenza A and B strains.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Popkin_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

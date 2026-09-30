@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives name (in RFU) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Isoprenaline, an mβ2AR agonist, stimulates calcium-dependent fluorescence (RFU) in FLIPR assays of mβ2AR::GFP mutants, with concentration–response curves fitted by a 3-parameter Hill model (slope 1); the paper reports EC50 values (e.g. WT 0.42 nM, no-NxS mutant 0.67 nM) and maximum responses as percent of WT (e.g. 120% for no-NxS, 19–89% for various Ct/TM7 mutants), but does not describe a specific PD mechanism such as an indirect production/elimination model or an effect compartment.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jamet_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

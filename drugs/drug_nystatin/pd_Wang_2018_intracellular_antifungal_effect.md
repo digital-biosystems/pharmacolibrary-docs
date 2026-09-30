@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Voriconazole (measured concentrations) drives name (in proportion of initial intracellular inoculum): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Voriconazole extracellular concentration (Ce, mg/L) was related to the intracellular antifungal effect against A. fumigatus (proportion of initial intracellular inoculum in A549 cells, nystatin target-cell model) by an inhibitory sigmoid Emax model, a direct concentration–effect relationship with no effect-compartment or turnover mechanism described. E50 was 7.05 mg/L for AF293 and 2.11 mg/L for AF26 (Emin ~ +0.2 lg cfu increase; Emax a reduction of 0.79–0.84 lg cfu); when Ce was normalized by MIC, the combined fit gave Emax 84.01% suppression, Emin 59.36% increase, and Hill slope 1.1 (R2 = 0.97).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

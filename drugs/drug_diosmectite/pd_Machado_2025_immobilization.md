@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Satureja montana essential oil drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for diosmectite; it reports a concentration–response (Probit regression) for Daphnia magna immobilization (%) after 48 h exposure to the Satureja montana EO nanoclay formulation, with EC50 = 0.011 mg mL-1 and 100% immobilization at ≥0.021 mg mL-1; no mechanism, Imax/Emax, kin/kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Machado_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

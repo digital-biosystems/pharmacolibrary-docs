@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives genital tract infection (in event): indirect response — drug inhibits the production of genital tract infection.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (ng·h/mL, from the cited PK model) acts on the time-to-event probability of genital tract infection via an Emax function proportional to a Weibull baseline hazard in a repeated time-to-event model; the paper does not describe an indirect-response mechanism and does not report Imax, IC50, kin, kout or ke0 values. The probability of GTI appeared to reach a maximum around an exposure of 500 ng·h/mL (covered by 5.0–10.0 mg doses), with sex and region as significant covariates.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Perampanel (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Perampanel (PER) concentration-dependently suppresses the amplitude of M-type K+ current (IK(M)) in mHippoE-14 neurons with an IC50 of 0.92 μM (e.g., 1 μM PER reduced the current from 141 ± 11 to 67 ± 9 pA), acting as a direct channel blocker that shifts the KM channel activation curve rightward in a voltage-dependent manner; the paper does not state Emax, Hill coefficient, or kinetic parameters for IK(M). Flupirtine is not the driver of this effect but attenuated PER's suppression of IK(M).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lai_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 06:53 | 9:36 | 0/0/0 | 0/2/0 | 0/0/1 | 183,927/6,955 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 2/7 | 8/1 | 0 |
+| 2026-09-29 23:08 | 10:24 | 0/0/0 | 0/2/0 | 0/0/1 | 110,636/14,443 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 4/7 | 9/2 | 0 |
 
 ## popPK records
 
@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Erenburg_2024](drugs/drug_dexfenfluramine/pd_Erenburg_2024_unknown.md) | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MES.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span> | [Sheeni_2025](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MMI.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Erenburg_2024_unknown](drugs/drug_dexfenfluramine/pd_Erenburg_2024_unknown.md) | antiseizure activity ← norfenfluramine · direct sigmoid Emax (Hill) effect | — | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sheeni_2025_MES](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MES.md) | antiseizure activity ← l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine · stimulation effect | — | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span> | [Sheeni_2025_MMI](drugs/drug_dexfenfluramine/pd_Sheeni_2025_MMI.md) | neurotoxicity ← l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine · stimulation effect | — | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
 
 ## Pharmacogenomics (PGx)
 
@@ -65,14 +65,14 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 119 matched, 62 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 119 matched, 91 returned
+- **screened:** 7  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -80,9 +80,12 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Berger_1992.pdf` | Berger UV et al., The substituted amphetamines 3,4-methyl…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90023-w](https://doi.org/10.1016/0014-2999(92)90023-w) | [1356787](https://www.ncbi.nlm.nih.gov/pubmed/1356787) | metadata signals extractable PD data (EC50) |
 | `Gobbi_1989.pdf` | Gobbi M et al., In-vivo (+)-[3H]fenfluramine binding to…, The Journal of pharmacy and… (1989) | pd | 4 | [10.1111/j.2042-7158.1989.tb06445.x](https://doi.org/10.1111/j.2042-7158.1989.tb06445.x) | [2568465](https://www.ncbi.nlm.nih.gov/pubmed/2568465) | metadata signals extractable PD data (IC50) |
 | `Kannengiesser_1976.pdf` | Kannengiesser MH et al., Comparative action of fenfluramine on t…, European journal of pharmac… (1976) | pd | 4 | [10.1016/0014-2999(76)90298-3](https://doi.org/10.1016/0014-2999(76)90298-3) | [1253827](https://www.ncbi.nlm.nih.gov/pubmed/1253827) | metadata signals extractable PD data (IC50) |
+| `McElroy_1988.pdf` | McElroy JF et al., Discriminative stimulus properties of c…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [2834535](https://www.ncbi.nlm.nih.gov/pubmed/2834535) | metadata signals extractable PD data (IC50) |
+| `Robinson_1989.pdf` | Robinson TN et al., The mechanism of tetrahydroaminoacridin…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb12656.x](https://doi.org/10.1111/j.1476-5381.1989.tb12656.x) | [2611486](https://www.ncbi.nlm.nih.gov/pubmed/2611486) | metadata signals extractable PD data (IC50) |
 | `Rothman_2003.pdf` | Rothman RB et al., (+)-Fenfluramine and its major metaboli…, The Journal of pharmacology… (2003) | pd | 4 | [10.1124/jpet.103.049684](https://doi.org/10.1124/jpet.103.049684) | [12649307](https://www.ncbi.nlm.nih.gov/pubmed/12649307) | metadata signals extractable PD data (EC50) |
+| `Wee_2006.pdf` | Wee S et al., Self-administration of mixtures of fenf…, Pharmacology, biochemistry,… (2006) | pd | 4 | [10.1016/j.pbb.2006.05.022](https://doi.org/10.1016/j.pbb.2006.05.022) | [16828855](https://www.ncbi.nlm.nih.gov/pubmed/16828855) | metadata signals extractable PD data (sigmoid) |
 
-<sub>queue written 2026-09-22T06:48:23.801803+00:00</sub>
+<sub>queue written 2026-09-29T23:04:45.743876+00:00</sub>
 
 ## Screened and excluded
 
@@ -90,8 +93,10 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Abou-Khalil_2022 | irrelevant | 0 | 0 | no_text gate: only 354 chars of text extracted (&lt; 400) |
 | PD | Abou-Khalil_2022 | not_relevant | 0 | 0 | The provided text is a brief editorial note regarding the publication history of a review article and contains no pharmacodynamic data, models, or parameters for dexfenfluramine. |
+| popPK | Agarwal_1992 | irrelevant | 0 | 0 | The study is a genotoxicity/clastogenicity assay in mice and does not report any pharmacokinetic parameters for dexfenfluramine. |
 | popPK | Anderer_2000 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of buspirone on brain electrical activity and does not report any pharmacokinetic parameters for dexfenfluramine. |
 | PD | Anderer_2000 | not_relevant | 0 | 0 | The paper investigates buspirone, not dexfenfluramine, and does not report numeric PD parameters or exposure-response relationships for the target drug. |
+| popPK | Anthenelli_2000 | irrelevant | 0 | 0 | The study uses d,l-fenfluramine as a pharmacological probe to measure prolactin response, not dexfenfluramine, and does not report quantitative PK parameters for the target drug. |
 | popPK | Berger_1992 | irrelevant | 0 | 0 | no_text gate: only 209 chars of text extracted (&lt; 400) |
 | PD | Berger_1992 | not_relevant | 0 | 0 | The paper investigates the mechanism of serotonin release for substituted amphetamines and fenfluramine, but does not report a pharmacokinetic/pharmacodynamic model or numeric exposure-response parameters for dexfenfluramine. |
 | PGx | Chiron_2019 | not_relevant | 0 | 0 | The paper discusses stiripentol and mentions fenfluramine, but does not report pharmacogenomic effects on the PK/PD of dexfenfluramine. |
@@ -102,25 +107,48 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Erenburg_2023 | irrelevant | 2 | 0 | The study focuses on fenfluramine and norfenfluramine enantiomers in rodents, not dexfenfluramine, and provides no quantitative PK parameters for the target drug. |
 | popPK | Erenburg_2024 | irrelevant | 2 | 0 | The study focuses on the antiseizure activity (pharmacodynamics) of fenfluramine and norfenfluramine enantiomers in mice, reporting ED50 and EC50 values rather than quantitative pharmacokinetic disposition parameters (CL, V, t1/2) for dexfenfluramine. |
 | popPK | Fielden_2010 | irrelevant | 0 | 0 | The paper focuses on the mechanism of valvular heart disease and receptor binding (5HT2BR) for a candidate compound (RO3013) and fenfluramine, without reporting any pharmacokinetic parameters for dexfenfluramine. |
+| popPK | Foltin_1990 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in baboons measuring food intake and tolerance, with no pharmacokinetic parameters or disposition data reported. |
+| popPK | Foltin_2011 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in baboons measuring food intake and dose-response curves, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Fracasso_1995 | irrelevant | 2 | 0 | The study focuses on neurochemical effects (serotonin depletion) and qualitative PK comparisons in rodents, without reporting specific quantitative PK parameters (CL, V, ka) for dexfenfluramine. |
 | popPK | Francis_1995 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of DL-fenfluramine on food intake and gastric emptying in rats, not its pharmacokinetic parameters. |
+| popPK | Gadow_1992 | irrelevant | 0 | 0 | The paper is a review of pediatric psychopharmacotherapy that mentions fenfluramine only as a potential treatment candidate without reporting any pharmacokinetic parameters. |
+| PD | Gadow_1992 | not_relevant | 1 | 0 | The text is a general review of pediatric psychopharmacotherapy that mentions fenfluramine qualitatively but provides no specific data, dose-response curves, or numeric PD parameters for dexfenfluramine. |
 | popPK | Gobbi_1989 | irrelevant | 0 | 0 | no_text gate: only 91 chars of text extracted (&lt; 400) |
 | PD | Gobbi_1989 | not_relevant | 0 | 0 | The paper describes in-vitro/in-vivo radioligand binding studies (Kd, Bmax) for fenfluramine, which are pharmacological binding parameters, not pharmacodynamic exposure-response or dose-response relationships for drug effects. |
 | popPK | Gobbi_1992 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of serotonin release in rat synaptosomes and does not report pharmacokinetic disposition parameters. |
+| popPK | Gobbi_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of neurotransmitter release by (+)-norfenfluramine (a metabolite of fenfluramine) and does not report pharmacokinetic parameters for dexfenfluramine. |
 | popPK | Goodwin_1994 | irrelevant | 0 | 0 | The study focuses on neuroendocrine and subjective effects of dexfenfluramine and does not report any pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Goodwin_1994 | not_relevant | 1 | 0 | The study reports a lack of statistically discernible effects at a single dose (30 mg) and explicitly states that more information is required on the dose-response relationship, providing no numeric PD parameters or concentration-effect data. |
 | popPK | Haritos_1998 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of enzyme kinetics (Km, Vmax) in liver microsomes, not a pharmacokinetic study reporting in-vivo disposition parameters like clearance or volume. |
 | PD | Haritos_1998 | not_relevant | 0 | 0 | The paper reports in vitro metabolic kinetics (Km, Vmax, IC50 for enzyme inhibition) but does not report a pharmacodynamic (exposure-response or dose-response) relationship for the drug's therapeutic effect. |
 | PGx | Haritos_1998 | not_relevant | 2 | 0 | The paper is an in vitro study using liver microsomes and recombinant enzymes; it does not report in vivo pharmacokinetic or pharmacodynamic parameters in human subjects stratified by genotype. |
+| popPK | Hu_1998 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of ion channel inhibition and does not report any pharmacokinetic parameters. |
+| popPK | Inserte_1999 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on serotonin uptake inhibition by tetanus toxin, not a pharmacokinetic study of dexfenfluramine. |
+| PD | Inserte_1999 | not_relevant | 0 | 0 | The paper reports PD parameters for tetanus toxin and fenfluramine (not dexfenfluramine) in a biochemical assay, not a pharmacokinetic/pharmacodynamic study of dexfenfluramine. |
 | popPK | Johnson_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on transporter-mediated efflux in cell lines, not a pharmacokinetic study, and does not report disposition parameters for dexfenfluramine. |
 | PD | Johnson_1998 | not_relevant | 0 | 0 | The paper reports in vitro transporter efflux data for fenfluramine, not dexfenfluramine, and does not provide specific numeric PD parameters (EC50/Emax) for the target drug. |
 | popPK | Kannengiesser_1976 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
 | PD | Kannengiesser_1976 | not_relevant | 0 | 0 | The paper focuses on the comparative action of fenfluramine (not dexfenfluramine) on serotonin and dopamine uptake/release in vitro, lacking any pharmacokinetic or exposure-response modeling. |
+| popPK | Kilpatrick_2001 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study examining MAO inhibition and serotonin release, not a pharmacokinetic study reporting disposition parameters for dexfenfluramine. |
+| PD | Kilpatrick_2001 | not_relevant | 2 | 2 | The paper reports in vitro IC50 values for MAO inhibition, which are enzyme kinetics parameters, not pharmacodynamic exposure-response or dose-response relationships for the drug's clinical effect. |
 | popPK | Kornblith_1976 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats focusing on food intake and brain stimulation, not a pharmacokinetic study, and does not report any disposition parameters for dexfenfluramine. |
 | PD | Kornblith_1976 | not_relevant | 1 | 0 | The paper studies fenfluramine (not dexfenfluramine) and provides only qualitative descriptions of dose effects without numeric PD parameters or extractable curves. |
+| popPK | Leonardi_1994 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of MAO inhibition and does not report pharmacokinetic parameters for dexfenfluramine. |
+| PD | Leonardi_1994 | not_relevant | 0 | 0 | The paper describes an in vitro MAO inhibition assay for MDMA and fenfluramine, not an in vivo pharmacodynamic or exposure-response analysis for dexfenfluramine. |
+| popPK | Lewis_1985 | irrelevant | 0 | 0 | The study investigates the pharmacodynamic effects of fenfluramine (not dexfenfluramine) on hormone secretion and does not report quantitative pharmacokinetic parameters. |
 | popPK | Li_2004 | irrelevant | 0 | 0 | The study focuses on the pharmacological characterization of SERT ligands AFM and DASB, with fenfluramine serving only as a low-affinity competitor in binding assays, and no PK parameters for dexfenfluramine are reported. |
 | PD | Li_2004 | not_relevant | 0 | 0 | The paper characterizes the binding affinity (Kd) and selectivity of PET ligands (AFM and DASB) for the serotonin transporter, not the pharmacodynamic exposure-response relationship of dexfenfluramine. |
+| popPK | Maeda_1994 | irrelevant | 0 | 0 | The study investigates the neural mechanisms of penile erection in rats using fenfluramine (not dexfenfluramine) as a pharmacological tool, and it does not report any pharmacokinetic parameters. |
+| popPK | Mallillin_2026 | irrelevant | 0 | 0 | The paper is a review of allometric scaling methods and does not report original quantitative pharmacokinetic parameters for dexfenfluramine. |
+| PD | Mallillin_2026 | not_relevant | 1 | 0 | The paper is a review of allometric scaling and PK prediction; it mentions fenfluramine only as a historical example of toxicodynamic failure without providing any numeric PD parameters or exposure-response data. |
+| popPK | Marona-Lewicka_1994 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of MMAI and does not report pharmacokinetic parameters for dexfenfluramine. |
+| PD | Marona-Lewicka_1994 | not_relevant | 0 | 0 | The paper studies the behavioral effects of MMAI, not dexfenfluramine, and does not report any pharmacodynamic parameters for dexfenfluramine. |
 | PGx | Martin_2022 | not_relevant | 0 | 0 | The paper reports in vitro drug-drug interaction and metabolic pathway studies for fenfluramine, but does not investigate the impact of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Martin_2022_2 | not_relevant | 0 | 0 | The paper evaluates in vitro drug-drug interaction potential (CYP inhibition/induction) of fenfluramine, not pharmacogenomic effects of gene variants on PK/PD. |
+| popPK | Martinez_2002 | irrelevant | 0 | 0 | The paper is a clinical study on Chinese herb nephropathy and does not report pharmacokinetic parameters for dexfenfluramine. |
+| PD | Martinez_2002 | not_relevant | 0 | 0 | The paper analyzes the dose-response relationship for Aristolochia fangchi (and mentions fenfluramine as a co-ingested drug), but it does not report any pharmacodynamic or exposure-response relationship for dexfenfluramine. |
+| popPK | McElroy_1988 | irrelevant | 0 | 0 | The study focuses on the discriminative stimulus properties of clenbuterol in rats and does not report pharmacokinetic parameters for dexfenfluramine. |
+| PD | McElroy_1988 | not_relevant | 0 | 0 | The paper focuses on the discriminative stimulus properties of clenbuterol and does not report any pharmacodynamic or exposure-response data for dexfenfluramine. |
 | popPK | Mittur_2024 | irrelevant | 0 | 0 | no_text gate: only 88 chars of text extracted (&lt; 400) |
 | PD | Mittur_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics of fenfluramine and norfenfluramine in hepatic impairment and does not report any pharmacodynamic or exposure-response data for dexfenfluramine. |
 | popPK | Ni_2004 | irrelevant | 0 | 0 | The study focuses on the vasoactive pharmacodynamics of (+)-norfenfluramine (a metabolite of fenfluramine) and does not report pharmacokinetic parameters for dexfenfluramine. |
@@ -129,15 +157,21 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Nickel_1986 | not_relevant | 1 | 0 | The text discusses fenetylline (not dexfenfluramine) and only qualitatively states that pharmacodynamic activity is tied to plasma levels without providing numeric PD parameters or curves. |
 | popPK | Odi_2021 | irrelevant | 0 | 0 | The paper is a narrative review discussing mechanisms and clinical use of fenfluramine, containing no original quantitative pharmacokinetic parameter values for dexfenfluramine. |
 | PD | Odi_2021 | not_relevant | 1 | 0 | The text is a narrative review discussing mechanisms and clinical efficacy without providing specific numeric PD parameters, concentration-effect curves, or PK/PD modeling results. |
+| popPK | Padich_1996 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study on sensorimotor gating in rats and does not report any pharmacokinetic parameters for dexfenfluramine. |
+| PD | Padich_1996 | not_relevant | 0 | 0 | The paper studies fenfluramine and MDL 100,907, not dexfenfluramine, and does not report PK/PD modeling or numeric PD parameters for dexfenfluramine. |
 | popPK | Pan_2025 | irrelevant | 0 | 0 | The paper describes an immunoassay method for detecting fenfluramine adulteration in food, not a pharmacokinetic study of dexfenfluramine. |
 | PD | Pan_2025 | not_relevant | 0 | 0 | The paper describes an immunoassay method for detecting fenfluramine in food, not a pharmacodynamic or exposure-response study in biological subjects. |
 | popPK | Pigliasco_2024 | irrelevant | 0 | 0 | The paper describes an analytical method for fenfluramine (not dexfenfluramine) and reports only plasma concentrations, not pharmacokinetic disposition parameters. |
 | PD | Pigliasco_2024 | not_relevant | 0 | 0 | The paper describes a bioanalytical method for quantifying fenfluramine and cannabidiol in plasma and reports observed plasma concentrations, but it does not report any pharmacodynamic (PD) or exposure-response relationship, dose-response curve, or numeric PD parameters. |
 | popPK | Quednow_2012 | irrelevant | 1 | 0 | The study uses dexfenfluramine as a challenge agent to assess serotonin release via PET, and while it mentions plasma concentration-time profiles, it does not report quantitative pharmacokinetic parameters (CL, V, ka) for the drug itself. |
+| popPK | Ramírez_1982 | irrelevant | 0 | 0 | The study investigates the hemodynamic effects of fenfluramine (not dexfenfluramine) and does not report any pharmacokinetic parameters. |
+| PD | Ramírez_1982 | not_relevant | 2 | 1 | The paper studies fenfluramine (not dexfenfluramine) and reports only qualitative dose-dependent effects without providing numeric PD parameters or extractable concentration-effect curves. |
 | PGx | Reist_2004 | not_relevant | 2 | 1 | The study investigates the effect of 5-HT2A receptor polymorphisms on fenfluramine-induced prolactin release (a PD biomarker), but the drug of interest is dexfenfluramine, and the paper does not report specific PK/PD parameters for dexfenfluramine. |
 | popPK | Roberti_2025 | irrelevant | 0 | 0 | The paper is a review of drug-drug interactions in epilepsy syndromes and does not mention dexfenfluramine or report any pharmacokinetic parameters for it. |
 | PD | Roberti_2025 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions in epilepsy syndromes and does not contain any data, analysis, or numeric parameters for dexfenfluramine. |
 | PGx | Roberti_2025 | not_relevant | 0 | 0 | The paper is a review of drug-drug interactions in epilepsy syndromes and does not mention dexfenfluramine or specific pharmacogenomic effects on its PK/PD parameters. |
+| popPK | Robinson_1989 | irrelevant | 0 | 0 | no_text gate: only 131 chars of text extracted (&lt; 400) |
+| PD | Robinson_1989 | not_relevant | 0 | 0 | The paper investigates the mechanism of neurotransmitter release evoked by tetrahydroaminoacridine in rat brain tissue and does not mention dexfenfluramine or report any pharmacodynamic parameters for it. |
 | popPK | Rothman_2003 | irrelevant | 0 | 0 | no_text gate: only 117 chars of text extracted (&lt; 400) |
 | PD | Rothman_2003 | not_relevant | 0 | 0 | The text describes the pharmacological mechanism (substrate for norepinephrine transporters) but contains no data, analysis, or numeric parameters regarding exposure-response or dose-response relationships. |
 | popPK | Rothman_2010 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on serotonin transporter modulation and does not report pharmacokinetic parameters for dexfenfluramine. |
@@ -150,6 +184,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Schechter_1985 | irrelevant | 0 | 0 | The study is a behavioral pharmacology investigation using fenfluramine as a probe, not a pharmacokinetic study, and contains no PK parameters for dexfenfluramine. |
 | PD | Schechter_1985 | not_relevant | 0 | 0 | The paper investigates fenfluramine (not dexfenfluramine) and reports only qualitative behavioral outcomes (intermediate results) without numeric PD parameters or dose-response curves for the target drug. |
 | popPK | Schechter_1986 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment on fenfluramine (not dexfenfluramine) and does not report any pharmacokinetic parameters. |
+| popPK | Schechter_1996 | irrelevant | 0 | 0 | The study is a behavioral drug discrimination experiment in rats, not a pharmacokinetic study, and does not report any disposition parameters for dexfenfluramine. |
+| popPK | Sen_1994 | irrelevant | 0 | 0 | The study is a genotoxicity/clastogenicity assessment in mice and does not report any pharmacokinetic parameters for dexfenfluramine. |
+| PD | Sen_1994 | not_relevant | 3 | 2 | The study reports qualitative dose-dependent clastogenicity and synergism with caffeine but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative exposure-response model for dexfenfluramine. |
 | popPK | Sheeni_2025 | irrelevant | 2 | 0 | The study reports single-timepoint concentrations and pharmacodynamic potency (ED50/EC50) rather than quantitative pharmacokinetic disposition parameters (CL, V, ka, t1/2) or compartmental models. |
 | popPK | Sheeni_2026 | irrelevant | 0 | 0 | The study focuses on fenfluramine and norfenfluramine enantiomers, not dexfenfluramine, and reports pharmacodynamic potency/toxicity indices rather than quantitative PK disposition parameters. |
 | PGx | Souche_1991 | not_relevant | 0 | 0 | The paper studies citalopram and uses fenfluramine as a probe for serotonin function, but does not report pharmacokinetic or pharmacodynamic parameters for dexfenfluramine. |
@@ -157,7 +194,15 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Surdi_2026 | not_relevant | 0 | 0 | The paper reports clinical outcomes (seizure frequency, cognition) in Dravet syndrome patients and does not report pharmacokinetic or pharmacodynamic parameters of dexfenfluramine. |
 | popPK | Sánchez_1995 | irrelevant | 0 | 0 | The paper is a behavioral pharmacology study in mice focusing on serotonergic mechanisms and does not report any pharmacokinetic parameters for dexfenfluramine. |
 | PGx | Ton_2007 | not_relevant | 0 | 0 | The paper reports gene-treatment interactions on smoking cessation outcomes, not pharmacokinetic or pharmacodynamic parameters of dexfenfluramine. |
+| popPK | Van_1989 | irrelevant | 0 | 0 | The study is a pharmacological investigation of prolactin secretion in rats using fenfluramine (not dexfenfluramine) and does not report any pharmacokinetic parameters. |
+| PD | Van_1989 | not_relevant | 0 | 0 | The paper studies fenfluramine (not dexfenfluramine) and reports qualitative dose-dependent effects on prolactin without providing numeric PD parameters or extractable concentration-effect curves. |
+| popPK | Wee_2006 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rhesus monkeys focusing on self-administration and reinforcing efficacy, not pharmacokinetics, and does not report any PK parameters for dexfenfluramine. |
+| popPK | Weintraub_1984 | irrelevant | 0 | 0 | The paper is a clinical trial focused on weight loss efficacy and adverse effects, reporting no pharmacokinetic parameters for dexfenfluramine. |
+| PD | Weintraub_1984 | not_relevant | 1 | 0 | The paper reports clinical efficacy (weight loss) and adverse effects for fixed doses but does not provide plasma concentration data or fit a pharmacodynamic model to derive numeric PD parameters like Emax or EC50. |
+| popPK | Young_2006 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of TDIQ and fenfluramine (not dexfenfluramine) in mice and does not report any pharmacokinetic parameters. |
 | popPK | Zaczek_1990 | irrelevant | 2 | 0 | The study focuses on fenfluramine (not dexfenfluramine) and neurochemical effects, with no quantitative PK parameters (CL, V, etc.) reported in the evidence. |
+| popPK | Zorrilla_2005 | irrelevant | 0 | 0 | The study focuses on the behavioral effects of leptin and fenfluramine on meal patterning in rats, not on the pharmacokinetic parameters of dexfenfluramine. |
+| PD | Zorrilla_2005 | not_relevant | 0 | 0 | The paper studies fenfluramine and leptin, not dexfenfluramine, and does not report concentration-effect or PK/PD parameters for the target drug. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

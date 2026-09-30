@@ -23,9 +23,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.664). The first reading is what the record holds.">cross-check: disputed</span> | [Arshad_2020](drugs/drug_isopropanol/pd_Arshad_2020_WBC.md) | Arshad U et al., Prediction of exposure-driven myelotoxi…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-019-04028-5](https://doi.org/10.1007/s00280-019-04028-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.664). The first reading is what the record holds.">cross-check: disputed</span> | [Arshad_2020_WBC](drugs/drug_isopropanol/pd_Arshad_2020_WBC.md) | total WBC count ← 5-fluorouracil · indirect response — drug stimulates the production of total WBC count | — | Arshad U et al., Prediction of exposure-driven myelotoxi…, Cancer chemotherapy and pha… (2020) | [10.1007/s00280-019-04028-5](https://doi.org/10.1007/s00280-019-04028-5) |
 
 ## ADME sites
 

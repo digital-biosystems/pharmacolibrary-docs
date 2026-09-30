@@ -19,10 +19,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [McKenna_1977](drugs/toxin_11_dichloroethene/pd_McKenna_1977_alkylating_metabolites.md) | McKenna MJ et al., Pharmacokinetics of vinylidene chloride…, Environmental health perspe… (1977) | [10.1289/ehp.772199](https://doi.org/10.1289/ehp.772199) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [McKenna_1977](drugs/toxin_11_dichloroethene/pd_McKenna_1977_hepatic_glutathione.md) | McKenna MJ et al., Pharmacokinetics of vinylidene chloride…, Environmental health perspe… (1977) | [10.1289/ehp.772199](https://doi.org/10.1289/ehp.772199) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [McKenna_1977_alkylating_metabolites](drugs/toxin_11_dichloroethene/pd_McKenna_1977_alkylating_metabolites.md) | name ← reactive alkylating species · inhibition effect | — | McKenna MJ et al., Pharmacokinetics of vinylidene chloride…, Environmental health perspe… (1977) | [10.1289/ehp.772199](https://doi.org/10.1289/ehp.772199) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [McKenna_1977_hepatic_glutathione](drugs/toxin_11_dichloroethene/pd_McKenna_1977_hepatic_glutathione.md) | name ← reactive alkylating species · inhibition effect | — | McKenna MJ et al., Pharmacokinetics of vinylidene chloride…, Environmental health perspe… (1977) | [10.1289/ehp.772199](https://doi.org/10.1289/ehp.772199) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Survodutide (the dose) drives bodyweight (in kg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports a dose–response relationship between weekly survodutide doses (0.3–2.7 mg qw; 1.2–1.8 mg biw) and relative bodyweight reduction at 16 weeks, which was dose-dependent, significant in the MCPMod averaging model, and did not reach a plateau (maximum adjusted mean −8.7% at DG6). No pharmacodynamic mechanism, effect model form, or potency/rate parameters (e.g. Emax, ED50, kin, kout) are stated for the bodyweight response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blüher_2024`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5 aza-2-deoxycytidine drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In BNML rats, decitabine (5-aza-2'-deoxycytidine, aza-dC) doses up to 100 mg kg-1 i.v. were compared with ara-C for effects on the percentage of leukaemic cells in S phase measured by flow cytometry; the paper does not state a pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given), and it reports that aza-dC did not influence cell cycle kinetics in the first 24 h after exposure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richel_1988`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

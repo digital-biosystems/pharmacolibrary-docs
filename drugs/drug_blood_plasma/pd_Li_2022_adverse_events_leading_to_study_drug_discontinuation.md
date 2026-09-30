@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Toripalimab (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Toripalimab plasma concentrations (µg/mL) were related to the probability of adverse events leading to study drug discontinuation by logistic regression (categorical exposure-response analysis in 152 NPC patients); the paper does not state a mechanistic PD model (no Imax/IC50/EC50/Emax/kin/kout/ke0 for this endpoint). The sigmoidal Emax parameters reported (EmaxTV -0.444, T50 1580 h, gamma 1.32) describe the time-varying clearance of toripalimab in the population PK model (two-compartment, CLTV 14.9 mL/h, V1 3710 mL), not the safety response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2022`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,47 +31,47 @@ Li L; Qu J; Song M; Zhao Q; Yang Y; Tan X; Hu Y; Li J; Lin Y; Feng H; Yao S; Kee
   ·  DOI: [10.3389/fphar.2022.1069818](https://doi.org/10.3389/fphar.2022.1069818)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EmaxTV — Estimates | `Q320` · not captured | -0.444 | not captured | not captured | llm (not captured) | T1:row1:col1 |
-| EmaxTV — %RSE | `Q320` · not captured | 11 | not captured | not captured | llm (not captured) | T1:row1:col2 |
-| EmaxTV — Bootstrap median | `Q320` · not captured | -0.43 | not captured | not captured | llm (not captured) | T1:row1:col5 |
-| T50 (h) — Estimates | `Q57` · not captured | 1580 | h | not captured | llm (not captured) | T1:row2:col1 |
-| T50 (h) — %RSE | `Q57` · not captured | 17 | h | not captured | llm (not captured) | T1:row2:col2 |
-| T50 (h) — Bootstrap median | `Q57` · not captured | 1615 | h | not captured | llm (not captured) | T1:row2:col5 |
-| Gamma — Estimates | `Q325` · not captured | 1.32 | not captured | not captured | exact (not captured) | T1:row3:col1 |
-| Gamma — %RSE | `Q325` · not captured | 14 | not captured | not captured | exact (not captured) | T1:row3:col2 |
-| Gamma — Bootstrap median | `Q325` · not captured | 1.33 | not captured | not captured | exact (not captured) | T1:row3:col5 |
-| CLTV (mL/h) — Estimates | `Q358` · not captured | 14.9 | mL/h | not captured | llm (not captured) | T1:row4:col1 |
-| CLTV (mL/h) — %RSE | `Q22` · not captured | 2 | mL/h | not captured | llm (not captured) | T1:row4:col2 |
-| CLTV (mL/h) — Bootstrap median | `Q22` · not captured | 14.8 | mL/h | not captured | llm (not captured) | T1:row4:col5 |
-| CLFemale — Estimates | `Q22` · not captured | -0.19 | not captured | not captured | llm (not captured) | T1:row7:col1 |
-| CLFemale — %RSE | `Q22` · not captured | 11 | not captured | not captured | llm (not captured) | T1:row7:col2 |
-| CLFemale — Bootstrap median | `Q22` · not captured | -0.19 | not captured | not captured | llm (not captured) | T1:row7:col5 |
-| CLAlbumin — Estimates | `Q358` · not captured | -0.676 | not captured | not captured | llm (not captured) | T1:row8:col1 |
-| CLAlbumin — %RSE | `Q358` · not captured | 15 | not captured | not captured | llm (not captured) | T1:row8:col2 |
-| CLAlbumin — Bootstrap median | `Q22` · not captured | -0.69 | not captured | not captured | llm (not captured) | T1:row8:col5 |
-| CLCRCL — Estimates | `Q22` · not captured | 0.226 | not captured | not captured | llm (not captured) | T1:row10:col1 |
-| CLCRCL — Bootstrap median | `Q22` · not captured | 0.229 | not captured | not captured | llm (not captured) | T1:row10:col5 |
-| V1 (mL) — Estimates | `Q63` · not captured | 3710 | mL | not captured | exact (not captured) | T1:row11:col1 |
-| V1 (mL) — %RSE | `Q63` · not captured | 3 | mL | not captured | exact (not captured) | T1:row11:col2 |
-| V1 (mL) — Bootstrap median | `Q63` · not captured | 3707 | mL | not captured | exact (not captured) | T1:row11:col5 |
-| V1White Race — Estimates | `Q63` · not captured | -0.23 | not captured | not captured | llm (not captured) | T1:row12:col1 |
-| V1White Race — Bootstrap median | `Q63` · not captured | -0.23 | not captured | not captured | llm (not captured) | T1:row12:col5 |
-| V1Other Race — Estimates | `Q63` · not captured | -0.327 | not captured | not captured | llm (not captured) | T1:row13:col1 |
-| V1Other Race — Bootstrap median | `Q63` · not captured | -0.33 | not captured | not captured | llm (not captured) | T1:row13:col5 |
-| QTV (mL/h) — Estimates | `Q358` · not captured | 36.5 | mL/h | not captured | llm (not captured) | T1:row15:col1 |
-| QTV (mL/h) — %RSE | `Q358` · not captured | 73 | mL/h | not captured | llm (not captured) | T1:row15:col2 |
-| QTV (mL/h) — Bootstrap median | `Q358` · not captured | 30 | mL/h | not captured | llm (not captured) | T1:row15:col5 |
-| V2TV (mL) — Estimates | `Q64` · not captured | 796 | mL | not captured | llm (not captured) | T1:row16:col1 |
-| V2TV (mL) — %RSE | `Q64` · not captured | 16 | mL | not captured | llm (not captured) | T1:row16:col2 |
-| V2TV (mL) — Bootstrap median | `Q64` · not captured | 866 | mL | not captured | llm (not captured) | T1:row16:col5 |
-| IIV on Emax — Estimates | `Q312` · not captured | 39 | not captured | not captured | llm_corrected (not captured) | T1:row18:col1 |
-| IIV on Emax — %RSE | `Q312` · not captured | 12 | not captured | not captured | llm_corrected (not captured) | T1:row18:col2 |
-| IIV on Emax | `Q312` · not captured | 29 | not captured | not captured | llm_corrected (not captured) | T1:row18:col4 |
-| Proportional error — Estimates | `Q316` · not captured | 19 | not captured | not captured | exact (not captured) | T1:row23:col1 |
-| Proportional error — %RSE | `Q316` · not captured | 4 | not captured | not captured | exact (not captured) | T1:row23:col2 |
-| Proportional error | `Q316` · not captured | 8 | not captured | not captured | exact (not captured) | T1:row23:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EmaxTV — Estimates | `Q320` · not captured | -0.444 | not captured | not captured | llm (not captured) | T1:row1:col1 |
+| PD (effect) | EmaxTV — %RSE | `Q320` · not captured | 11 | not captured | not captured | llm (not captured) | T1:row1:col2 |
+| PD (effect) | EmaxTV — Bootstrap median | `Q320` · not captured | -0.43 | not captured | not captured | llm (not captured) | T1:row1:col5 |
+| PK (driver) | T50 (h) — Estimates | `Q57` · not captured | 1580 | h | not captured | llm (not captured) | T1:row2:col1 |
+| PK (driver) | T50 (h) — %RSE | `Q57` · not captured | 17 | h | not captured | llm (not captured) | T1:row2:col2 |
+| PK (driver) | T50 (h) — Bootstrap median | `Q57` · not captured | 1615 | h | not captured | llm (not captured) | T1:row2:col5 |
+| PD (effect) | Gamma — Estimates | `Q325` · not captured | 1.32 | not captured | not captured | exact (not captured) | T1:row3:col1 |
+| PD (effect) | Gamma — %RSE | `Q325` · not captured | 14 | not captured | not captured | exact (not captured) | T1:row3:col2 |
+| PD (effect) | Gamma — Bootstrap median | `Q325` · not captured | 1.33 | not captured | not captured | exact (not captured) | T1:row3:col5 |
+| PK (driver) | CLTV (mL/h) — Estimates | `Q358` · not captured | 14.9 | mL/h | not captured | llm (not captured) | T1:row4:col1 |
+| PK (driver) | CLTV (mL/h) — %RSE | `Q22` · not captured | 2 | mL/h | not captured | llm (not captured) | T1:row4:col2 |
+| PK (driver) | CLTV (mL/h) — Bootstrap median | `Q22` · not captured | 14.8 | mL/h | not captured | llm (not captured) | T1:row4:col5 |
+| PK (driver) | CLFemale — Estimates | `Q22` · not captured | -0.19 | not captured | not captured | llm (not captured) | T1:row7:col1 |
+| PK (driver) | CLFemale — %RSE | `Q22` · not captured | 11 | not captured | not captured | llm (not captured) | T1:row7:col2 |
+| PK (driver) | CLFemale — Bootstrap median | `Q22` · not captured | -0.19 | not captured | not captured | llm (not captured) | T1:row7:col5 |
+| PK (driver) | CLAlbumin — Estimates | `Q358` · not captured | -0.676 | not captured | not captured | llm (not captured) | T1:row8:col1 |
+| PK (driver) | CLAlbumin — %RSE | `Q358` · not captured | 15 | not captured | not captured | llm (not captured) | T1:row8:col2 |
+| PK (driver) | CLAlbumin — Bootstrap median | `Q22` · not captured | -0.69 | not captured | not captured | llm (not captured) | T1:row8:col5 |
+| PK (driver) | CLCRCL — Estimates | `Q22` · not captured | 0.226 | not captured | not captured | llm (not captured) | T1:row10:col1 |
+| PK (driver) | CLCRCL — Bootstrap median | `Q22` · not captured | 0.229 | not captured | not captured | llm (not captured) | T1:row10:col5 |
+| PK (driver) | V1 (mL) — Estimates | `Q63` · not captured | 3710 | mL | not captured | exact (not captured) | T1:row11:col1 |
+| PK (driver) | V1 (mL) — %RSE | `Q63` · not captured | 3 | mL | not captured | exact (not captured) | T1:row11:col2 |
+| PK (driver) | V1 (mL) — Bootstrap median | `Q63` · not captured | 3707 | mL | not captured | exact (not captured) | T1:row11:col5 |
+| PK (driver) | V1White Race — Estimates | `Q63` · not captured | -0.23 | not captured | not captured | llm (not captured) | T1:row12:col1 |
+| PK (driver) | V1White Race — Bootstrap median | `Q63` · not captured | -0.23 | not captured | not captured | llm (not captured) | T1:row12:col5 |
+| PK (driver) | V1Other Race — Estimates | `Q63` · not captured | -0.327 | not captured | not captured | llm (not captured) | T1:row13:col1 |
+| PK (driver) | V1Other Race — Bootstrap median | `Q63` · not captured | -0.33 | not captured | not captured | llm (not captured) | T1:row13:col5 |
+| PK (driver) | QTV (mL/h) — Estimates | `Q358` · not captured | 36.5 | mL/h | not captured | llm (not captured) | T1:row15:col1 |
+| PK (driver) | QTV (mL/h) — %RSE | `Q358` · not captured | 73 | mL/h | not captured | llm (not captured) | T1:row15:col2 |
+| PK (driver) | QTV (mL/h) — Bootstrap median | `Q358` · not captured | 30 | mL/h | not captured | llm (not captured) | T1:row15:col5 |
+| PK (driver) | V2TV (mL) — Estimates | `Q64` · not captured | 796 | mL | not captured | llm (not captured) | T1:row16:col1 |
+| PK (driver) | V2TV (mL) — %RSE | `Q64` · not captured | 16 | mL | not captured | llm (not captured) | T1:row16:col2 |
+| PK (driver) | V2TV (mL) — Bootstrap median | `Q64` · not captured | 866 | mL | not captured | llm (not captured) | T1:row16:col5 |
+| variability | IIV on Emax — Estimates | `Q312` · not captured | 39 | not captured | not captured | llm_corrected (not captured) | T1:row18:col1 |
+| variability | IIV on Emax — %RSE | `Q312` · not captured | 12 | not captured | not captured | llm_corrected (not captured) | T1:row18:col2 |
+| variability | IIV on Emax | `Q312` · not captured | 29 | not captured | not captured | llm_corrected (not captured) | T1:row18:col4 |
+| variability | Proportional error — Estimates | `Q316` · not captured | 19 | not captured | not captured | exact (not captured) | T1:row23:col1 |
+| variability | Proportional error — %RSE | `Q316` · not captured | 4 | not captured | not captured | exact (not captured) | T1:row23:col2 |
+| variability | Proportional error | `Q316` · not captured | 8 | not captured | not captured | exact (not captured) | T1:row23:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

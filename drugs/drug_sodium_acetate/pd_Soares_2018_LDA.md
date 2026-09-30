@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myracrodruon urundeuva seed exudates (SEX) drives Haemonchus contortus larval development (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Myracrodruon urundeuva seed exudates (SEX) and its protein-enriched fraction SEXF1 inhibited Haemonchus contortus larval development (LDA, % inhibition) with IC50 of 0.29 mg mL-1 each (SEXF2: 0.42 mg mL-1), tested at 0.0125–2.0 mg mL-1; the paper does not state a pharmacodynamic mechanism (e.g., Emax or turnover model) for this inhibitory effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soares_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

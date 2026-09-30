@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salicylate (measured concentrations) drives name (in mV): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Extracellular salicylate (applied as potassium salicylate) reduces the peak nonlinear capacitance (Cm pk) of guinea-pig outer hair cells, with VpkCm shifting to depolarized levels above ~1 mM; the concentration-response relation is sigmoid with a half-maximal concentration (K1/2) of 1.6 mM and a Hill coefficient of 1.0, effects detectable from ~300 µM and saturating above 10 mM. The paper does not state a mechanistic PD model (e.g., kin/kout or Emax parameters) beyond this direct sigmoid concentration-response effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kakehata_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

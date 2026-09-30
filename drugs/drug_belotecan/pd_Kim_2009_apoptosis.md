@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CKD-602 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CKD-602 (belotecan) concentrations (nM) increased apoptosis in four human glioma cell lines after 48 h exposure (Annexin V/PI and TUNEL assays), with cells treated at concentrations based on ~2-fold of their viability IC50 values (9.07 nM LN229, 14.57 nM U251 MG, 29.13 nM U343 MG, 84.66 nM U87 MG). The paper does not state a pharmacodynamic model or mechanism for the apoptosis response (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma for apoptosis), only that CKD-602 is a topoisomerase I inhibitor producing dose- and time-dependent cytotoxicity, G2 arrest, and apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2009`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

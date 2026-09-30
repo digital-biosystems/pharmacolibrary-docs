@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The peginesatide record lacks any clearance parameter — only volumes (V2 35.6 mL/kg, V3 7.42 mL/kg, V 34.9 mL/kg) and Q 5.23 mL/kg/hr were extracted — so the disposition is incomplete and the model was held back.**

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gastrin/CCK receptor antagonists drives cell growth (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Proglumide inhibited AR4-2J rat pancreatic tumour cell growth in a concentration-dependent manner over a 4-day MTT assay, with an IC50 of 3.5 x 10-3 M (3 mM), the least potent of the gastrin/CCK receptor antagonists tested. The paper attributes the effect to gastrin/CCK receptor antagonism of an autocrine gastrin growth stimulus (inhibition partially reversed by prior addition of 5 x 10-7 M gastrin), but gives no explicit PD model parameters such as Emax, kin, kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blackmore_1992`
 - **model family:** `emax`
 - **driver:** `not_resolved`

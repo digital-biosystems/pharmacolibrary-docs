@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT-100 drives name (in days) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a formal PD model for median survival; it only reports that BCT-100 (pegylated arginase) at 60 mg/kg prolonged median survival in 211H xenografts from 22 to 38 days and in H226 xenografts from 36.5 to 50.5 days (p &lt; 0.01), attributed to arginine depletion (reduced serum and intratumoral arginine) causing apoptosis and G1 arrest; no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for this response (in vitro viability IC50 values of 13–24 mU/ml at 72 h are reported for cell viability, not survival).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lam_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

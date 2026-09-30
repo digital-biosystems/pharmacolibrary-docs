@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cisplatin (measured concentrations) drives cellular viability (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cisplatin and cimetidine concentrations each inhibit cancer cell viability (R, %) in Huh7 and MDA-MB-468 cells via a cell-growth-inhibition model: each drug contributes a killing term Smax·C/(SC50+C) reducing viability from baseline R0 (100%) with first-order growth kg (0.011–0.018 h−1). Cisplatin is far more potent (SC50,CIS 2.48–4.27 µM; Smax,CIS 0.038–0.108 h−1; rate 1/τCIS 0.101–1.17 h−1) than cimetidine (SC50,CIM 21453.95–36886.97 µM; Smax,CIM 0.096–0.106 h−1), with reported single-agent IC50s of 3.19 mM (Huh7) and 3.28 mM (MDA-MB-468).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Mody H; Vaidya TR; Lesko LJ; Ait-Oudhia S et al. (2022). Cells 12
   ·  DOI: [10.3390/cells12010057](https://doi.org/10.3390/cells12010057)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| R0 (%) — Estimate (% RSE) | `Q336` · not captured | 100 | Units | not captured | exact (not captured) | cells-12-00057-t002:row2:col2 |
-| R0 (%) — Estimate (% RSE) | `Q336` · not captured | 100 | Units | not captured | exact (not captured) | cells-12-00057-t002:row2:col3 |
-| kg (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.011 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row3:col2 |
-| kg (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.018 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row3:col3 |
-| Smax,CIS (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.038 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row4:col2 |
-| Smax,CIS (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.108 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row4:col3 |
-| SC50,CIS (µM) — Estimate (% RSE) | `Q322` · not captured | 4.27 | µM | not captured | llm (not captured) | cells-12-00057-t002:row5:col2 |
-| SC50,CIS (µM) — Estimate (% RSE) | `Q322` · not captured | 2.48 | µM | not captured | llm (not captured) | cells-12-00057-t002:row5:col3 |
-| 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 1.17 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col2 |
-| 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.101 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col3 |
-| Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.106 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col2 |
-| Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.096 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col3 |
-| SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 36886.97 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col2 |
-| SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 21453.95 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | R0 (%) — Estimate (% RSE) | `Q336` · not captured | 100 | Units | not captured | exact (not captured) | cells-12-00057-t002:row2:col2 |
+| PD (effect) | R0 (%) — Estimate (% RSE) | `Q336` · not captured | 100 | Units | not captured | exact (not captured) | cells-12-00057-t002:row2:col3 |
+| PK (driver) | kg (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.011 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row3:col2 |
+| PK (driver) | kg (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.018 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row3:col3 |
+| PK (driver) | Smax,CIS (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.038 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row4:col2 |
+| PK (driver) | Smax,CIS (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.108 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row4:col3 |
+| PD (effect) | SC50,CIS (µM) — Estimate (% RSE) | `Q322` · not captured | 4.27 | µM | not captured | llm (not captured) | cells-12-00057-t002:row5:col2 |
+| PD (effect) | SC50,CIS (µM) — Estimate (% RSE) | `Q322` · not captured | 2.48 | µM | not captured | llm (not captured) | cells-12-00057-t002:row5:col3 |
+| PK (driver) | 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 1.17 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col2 |
+| PK (driver) | 1/ƮCIS (h−1) — Estimate (% RSE) | `Q47` · not captured | 0.101 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row6:col3 |
+| PK (driver) | Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.106 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col2 |
+| PK (driver) | Smax,CIM (h−1) — Estimate (% RSE) | `Q32` · not captured | 0.096 | h−1 | not captured | llm (not captured) | cells-12-00057-t002:row7:col3 |
+| PD (effect) | SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 36886.97 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col2 |
+| PD (effect) | SC50,CIM (µM) — Estimate (% RSE) | `Q322` · not captured | 21453.95 | µM | not captured | llm (not captured) | cells-12-00057-t002:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

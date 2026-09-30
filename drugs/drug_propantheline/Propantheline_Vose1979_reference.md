@@ -5,7 +5,7 @@
 
 # propantheline — `Propantheline_Vose1979_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,13 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Only clearance was extracted — no volume.**
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — propantheline: CL 79.2 l h-1, CLR 11.5 l h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of renal clearance: this record has 11.5, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,21 +63,14 @@ Vose CW; Ford GC; Grigson SJ; Haskins NJ; Prout M; Stevens PM; et al. et al. (19
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (6/6 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[renal clearance]` | 11.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total plasma clearance]` | 79.2 | not captured | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

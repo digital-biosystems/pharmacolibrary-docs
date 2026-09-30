@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Docosahexaenoic acid + eicosapentaenoic acid drives diastolic blood pressure (in mm Hg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a mechanistic PD model; it reports a 1-stage random-effects dose-response (restricted cubic spline) analysis of DHA+EPA intake (g/d) versus mean change in diastolic blood pressure (mm Hg) relative to placebo (0 g/d). The relationship is J-shaped/nonlinear, with the largest DBP reductions at 2–3 g/d (−1.64 mm Hg, 95% CI −2.29 to −0.99 at 2 g/d; −1.80 mm Hg, 95% CI −2.38 to −1.23 at 3 g/d) and weaker or null effects above 3 g/d; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,63 +31,63 @@ Zhang X; Ritonja JA; Zhou N; Chen BE; Li X et al. (2022). Journal of the America
   ·  DOI: [10.1161/JAHA.121.025071](https://doi.org/10.1161/JAHA.121.025071)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| DBP — 1.0 g/d | `Q358` · not captured | -1.07 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.64 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -1.80 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -1.73 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -1.59 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.46 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -2.49 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -3.18 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -3.64 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -3.99 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.23 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -2.14 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -2.81 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -3.30 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -3.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.55 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -2.42 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -2.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -1.80 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -1.21 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -0.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.51 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -1.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -2.29 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -2.66 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.67 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -2.43 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -2.44 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -1.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -1.03 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -0.61 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.17 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -1.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -2.18 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -2.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.11 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.69 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -1.84 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -1.73 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -1.53 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | 0.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -0.05 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -0.94 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -2.08 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -3.27 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.13 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.89 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -2.01 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | -1.60 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | -0.85 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col11 |
-| DBP — 1.0 g/d | `Q358` · not captured | -1.10 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col3 |
-| DBP — 2.0 g/d | `Q358` · not captured | -1.04 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col5 |
-| DBP — 3.0 g/d | `Q358` · not captured | -0.40 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col7 |
-| DBP — 4.0 g/d | `Q358` · not captured | 0.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col9 |
-| DBP — 5.0 g/d | `Q358` · not captured | 1.07 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.07 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.64 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -1.80 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -1.73 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -1.59 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row3:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.46 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -2.49 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -3.18 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -3.64 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -3.99 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row7:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.23 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -2.14 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -2.81 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -3.30 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -3.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row12:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.55 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -2.42 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -2.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -1.80 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -1.21 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row17:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -0.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.51 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -1.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -2.29 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -2.66 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row22:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.67 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -2.43 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -2.44 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -1.91 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -1.03 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row27:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -0.61 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.17 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -1.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -2.18 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -2.68 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row32:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.11 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.69 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -1.84 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -1.73 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -1.53 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row37:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | 0.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -0.05 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -0.94 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -2.08 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -3.27 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row42:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.13 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.89 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -2.01 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | -1.60 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | -0.85 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row47:col11 |
+| PK (driver) | DBP — 1.0 g/d | `Q358` · not captured | -1.10 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col3 |
+| PK (driver) | DBP — 2.0 g/d | `Q358` · not captured | -1.04 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col5 |
+| PK (driver) | DBP — 3.0 g/d | `Q358` · not captured | -0.40 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col7 |
+| PK (driver) | DBP — 4.0 g/d | `Q358` · not captured | 0.34 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col9 |
+| PK (driver) | DBP — 5.0 g/d | `Q358` · not captured | 1.07 | not captured | not captured | llm (not captured) | jah37404-tbl-0001:row52:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

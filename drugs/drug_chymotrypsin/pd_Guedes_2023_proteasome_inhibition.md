@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** JHG58 (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> JHG58 (compound 4) concentration inhibits chymotrypsin-like (CT-L) proteasome activity (and C-L, T-L) in isolated human 20S proteasomes and semi-purified cancer cell proteasomes, measured as % inhibition at 60 min; the paper does not state a PD model beyond IC50 fitting. IC50 values: isolated 20S CT-L 51.13 µM, C-L 41.18 µM, T-L 48.36 µM; Jurkat CT-L 24.25 µM, C-L 27.05 µM; HT-29 CT-L 31.30 µM, C-L 35.23 µM; HCT116 CT-L 35.72 µM, C-L 28.91 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guedes_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

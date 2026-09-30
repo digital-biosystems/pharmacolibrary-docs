@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Betamethasone (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Betamethasone plasma concentrations (ng/mL) suppress endogenous cortisol production in horses via an indirect response model with inhibition of the zero-order production rate Kin (dCortisol/dt = Kin×(1 − Imax×BTM^γ/(IC50^γ+BTM^γ)) − Kout×Cortisol). Estimates: Kin 16.0 ± 3.15 ng/(mL·h), Kout 0.325 ± 0.02 1/h, IC50 0.04 ± 0.01 ng/mL, with Imax and gamma fixed to 1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sullivan_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,21 +30,21 @@ Sullivan J; Blea J; McKemie DS; Kass PH; Knych HK et al. (2026). Journal of vete
   ·  DOI: [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| K in (ng/(mL × h)) — Estimate (mean ± SE) | `Q358` · not captured | 16.0 | not captured | not captured | llm (not captured) | jvp70052-tbl-0006:row1:col1 |
-| K out (1/h) — Estimate (mean ± SE) | `Q328` · not captured | 0.325 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col1 |
-| K out (1/h) — CV (%) | `Q328` · not captured | 4.85 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col2 |
-| K out (1/h) — ω2 | `Q328` · not captured | 0.380 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col3 |
-| K out (1/h) — BSV% | `Q328` · not captured | 7.76 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col4 |
-| I max (ng/mL) — Estimate (mean ± SE) | `Q323` · not captured | 1.0 | ng/mL | not captured | space_fold (not captured) | jvp70052-tbl-0006:row3:col1 |
-| I max (ng/mL) — CV (%) | `Q323` · not captured | 0.0 | ng/mL | not captured | space_fold (not captured) | jvp70052-tbl-0006:row3:col2 |
-| IC50 (ng/mL) — Estimate (mean ± SE) | `Q322` · not captured | 0.04 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col1 |
-| IC50 (ng/mL) — CV (%) | `Q322` · not captured | 27.0 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col2 |
-| IC50 (ng/mL) — ω2 | `Q322` · not captured | 0.932 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col3 |
-| IC50 (ng/mL) — BSV% | `Q322` · not captured | 93.1 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col4 |
-| Gamma — Estimate (mean ± SE) | `Q325` · not captured | 1.0 | not captured | not captured | exact (not captured) | jvp70052-tbl-0006:row5:col1 |
-| Gamma — CV (%) | `Q325` · not captured | 0.0 | not captured | not captured | exact (not captured) | jvp70052-tbl-0006:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | K in (ng/(mL × h)) — Estimate (mean ± SE) | `Q358` · not captured | 16.0 | not captured | not captured | llm (not captured) | jvp70052-tbl-0006:row1:col1 |
+| PD (effect) | K out (1/h) — Estimate (mean ± SE) | `Q328` · not captured | 0.325 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col1 |
+| PD (effect) | K out (1/h) — CV (%) | `Q328` · not captured | 4.85 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col2 |
+| PD (effect) | K out (1/h) — ω2 | `Q328` · not captured | 0.380 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col3 |
+| PD (effect) | K out (1/h) — BSV% | `Q328` · not captured | 7.76 | not captured | not captured | space_fold (not captured) | jvp70052-tbl-0006:row2:col4 |
+| PD (effect) | I max (ng/mL) — Estimate (mean ± SE) | `Q323` · not captured | 1.0 | ng/mL | not captured | space_fold (not captured) | jvp70052-tbl-0006:row3:col1 |
+| PD (effect) | I max (ng/mL) — CV (%) | `Q323` · not captured | 0.0 | ng/mL | not captured | space_fold (not captured) | jvp70052-tbl-0006:row3:col2 |
+| PD (effect) | IC50 (ng/mL) — Estimate (mean ± SE) | `Q322` · not captured | 0.04 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col1 |
+| PD (effect) | IC50 (ng/mL) — CV (%) | `Q322` · not captured | 27.0 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col2 |
+| PD (effect) | IC50 (ng/mL) — ω2 | `Q322` · not captured | 0.932 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col3 |
+| PD (effect) | IC50 (ng/mL) — BSV% | `Q322` · not captured | 93.1 | ng/mL | not captured | exact (not captured) | jvp70052-tbl-0006:row4:col4 |
+| PD (effect) | Gamma — Estimate (mean ± SE) | `Q325` · not captured | 1.0 | not captured | not captured | exact (not captured) | jvp70052-tbl-0006:row5:col1 |
+| PD (effect) | Gamma — CV (%) | `Q325` · not captured | 0.0 | not captured | not captured | exact (not captured) | jvp70052-tbl-0006:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

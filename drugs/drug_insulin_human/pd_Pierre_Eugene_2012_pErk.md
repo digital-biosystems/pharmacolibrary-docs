@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glargine (measured concentrations) drives Erk1/2 phosphorylation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Insulin glargine stimulates Erk1/2 phosphorylation (pErk) in MCF-7 cells via activation of insulin/IGF1R hybrid receptors, with significantly higher potency than human insulin, while metabolites M1 and M2 showed effects similar to insulin; the paper does not state the mechanism as a specific PD model form and provides no numeric EC50, Emax, or rate parameters for pErk.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pierre-Eugene_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

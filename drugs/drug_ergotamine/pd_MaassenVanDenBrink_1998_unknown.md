@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives coronary artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ergotamine concentrations contract human isolated coronary artery segments (responses expressed as % of 100 mmol/L K+-induced contraction) via a direct concentration-response (Emax) relationship; the paper does not state a production/elimination or effect-compartment mechanism. Its EC50 was significantly lower than that of sumatriptan (which ranged 117–2042 nmol/L), and its Emax did not differ significantly from sumatriptan's (2.3%–27.0% of the K+ response); specific numeric EC50/Emax values for ergotamine are not given in the excerpts, but after oral 2 mg the clinical Cmax remains &lt;10% of its EC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

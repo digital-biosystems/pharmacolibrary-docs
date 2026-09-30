@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives body weight (in kg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism for semaglutide's effect on body weight; it only reports dose-dependent weight loss with weekly subcutaneous semaglutide (2, 8, 16 mg) versus placebo over 40 weeks, with mean percent body weight change of −7.3%, −8.3%, −10.8%, and −2.0% (treatment policy estimand), and no potency (IC50/EC50/Emax) or rate (kin/kout/ke0) parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aroda_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Aroda VR; Jørgensen NB; Kumar B; Lingvay I; Laulund AS; Buse JB et al. (2025). 
   ·  DOI: [10.2337/dc24-2425](https://doi.org/10.2337/dc24-2425)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Fasting plasma glucose (mmol/L) — Semaglutide 2 mg | `Q41` · not captured | 9.9 | mmol/L | not captured | llm (not captured) | T1:row19:col1 |
-| Fasting plasma glucose (mmol/L) — Semaglutide 8 mg | `Q41` · not captured | 9.5 | mmol/L | not captured | llm (not captured) | T1:row19:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Fasting plasma glucose (mmol/L) — Semaglutide 2 mg | `Q41` · not captured | 9.9 | mmol/L | not captured | llm (not captured) | T1:row19:col1 |
+| PK (driver) | Fasting plasma glucose (mmol/L) — Semaglutide 8 mg | `Q41` · not captured | 9.5 | mmol/L | not captured | llm (not captured) | T1:row19:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

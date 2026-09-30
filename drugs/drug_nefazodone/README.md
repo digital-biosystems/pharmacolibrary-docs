@@ -35,6 +35,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer/inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor, `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |

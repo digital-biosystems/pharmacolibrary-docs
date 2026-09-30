@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from this paper's PK model) drives enflurane ECso (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In enflururan-anesthetized dogs, plasma midazolam concentrations (ng/ml), produced by a 2.5 mg/kg iv bolus or a 21 µg/kg/min infusion (3 mg/kg loading dose, target 1000 ng/ml), reduce enflurane MAC (%), with MAC reduction correlated with log plasma midazolam concentration; the paper does not state a PD model or potency parameters (no Imax, IC50, Emax, kin, kout, or ke0 are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hall_1988`
 - **model family:** `unknown`
 - **driver:** `pk_record`

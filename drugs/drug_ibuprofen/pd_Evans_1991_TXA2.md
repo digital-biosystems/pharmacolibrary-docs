@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S(+)-ibuprofen drives thromboxane production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Unbound S(+)-ibuprofen plasma concentration inhibits TXB2 (thromboxane) production during whole blood clotting, described by a sigmoidal Emax (inhibitory) model fitted to percentage inhibition of TXB2 generation; the paper does not describe an effect-compartment or turnover mechanism. In vitro, the S-I blood concentration giving 50% inhibition (IC50) was 1.1 mg l-1 (2.2 mg l-1 for racemate, i.e. 1.1 mg l-1 of each enantiomer), with slope factor n = 1.6; in vivo, the time for unbound S-I to fall below the EC50 averaged 6.27 h (s.d. 0.96 h, range 5.32–7.13 h) across subjects.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Evans_1991`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Evans AM; Nation RL; Sansom LN; Bochner F; Somogyi AA et al. (1991). British jou
   ·  DOI: [10.1111/j.1365-2125.1991.tb05500.x](https://doi.org/10.1111/j.1365-2125.1991.tb05500.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 5.32 | h | not captured | llm (not captured) | tab_2:row2:col1 |
-| 2 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 7.13 | h | not captured | llm (not captured) | tab_2:row3:col1 |
-| 3 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 7.06 | h | not captured | llm (not captured) | tab_2:row4:col1 |
-| 4 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 5.56 | h | not captured | llm (not captured) | tab_2:row5:col1 |
-| Mean — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 6.27 | h | not captured | llm (not captured) | tab_2:row6:col1 |
-| s.d. — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 0.96 | h | not captured | llm (not captured) | tab_2:row7:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | 1 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 5.32 | h | not captured | llm (not captured) | tab_2:row2:col1 |
+| — | 2 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 7.13 | h | not captured | llm (not captured) | tab_2:row3:col1 |
+| — | 3 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 7.06 | h | not captured | llm (not captured) | tab_2:row4:col1 |
+| — | 4 — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 5.56 | h | not captured | llm (not captured) | tab_2:row5:col1 |
+| — | Mean — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 6.27 | h | not captured | llm (not captured) | tab_2:row6:col1 |
+| — | s.d. — Time for Cus-I to fall below EC50 (h) | `Q100` · not captured | 0.96 | h | not captured | llm (not captured) | tab_2:row7:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

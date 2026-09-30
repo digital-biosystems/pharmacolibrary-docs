@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives cAMP (in RIU): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In HEK293 cells, salbutamol acts as a partial β2-adrenoceptor agonist stimulating cAMP production (GloSensor, RIU); peak responses were fitted with a sigmoid Emax model (Emax 44.74% of 1 μM isoprenaline, log EC50 −6.73 M) and initial rates with a kinetic model (log L50 −6.68 M; no salbutamol IRmax given). The paper does not state a full mechanistic PD model for salbutamol beyond agonist-stimulated cAMP formation attenuated by operational rate constants k1 and k2 (desensitisation/PDE activity), and no k1, k2, kin, kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cullum_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,23 +31,23 @@ Cullum SA; Veprintsev DB; Hill SJ et al. (2023). British journal of pharmacology
   ·  DOI: [10.1111/bph.16008](https://doi.org/10.1111/bph.16008)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (% 1 μM isoprenaline) — Isoprenaline | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col2 |
-| Emax (% 1 μM isoprenaline) — Formoterol | `Q320` · not captured | 98.38 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col3 |
-| Emax (% 1 μM isoprenaline) — Salbutamol | `Q320` · not captured | 44.74 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col4 |
-| Emax (% 1 μM isoprenaline) — Salmeterol | `Q320` · not captured | 33.73 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col5 |
-| IRmax (% 1 μM isoprenaline) — Isoprenaline | `Q323` · not captured | 100 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col2 |
-| IRmax (% 1 μM isoprenaline) — Formoterol | `Q323` · not captured | 83.36 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col3 |
-| IRmax (% 1 μM isoprenaline) — Salmeterol | `Q323` · not captured | 22.41 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col5 |
-| Log EC50 (M) — Isoprenaline | `Q321` · not captured | -8.01 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col2 |
-| Log EC50 (M) — Formoterol | `Q321` · not captured | -9.00 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col3 |
-| Log EC50 (M) — Salbutamol | `Q321` · not captured | -6.73 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col4 |
-| Log EC50 (M) — Salmeterol | `Q321` · not captured | -8.39 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col5 |
-| Log L50 (M) — Isoprenaline | `Q322` · not captured | -8.13 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col2 |
-| Log L50 (M) — Formoterol | `Q322` · not captured | -8.80 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col3 |
-| Log L50 (M) — Salbutamol | `Q322` · not captured | -6.68 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col4 |
-| Log L50 (M) — Salmeterol | `Q322` · not captured | -8.08 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (% 1 μM isoprenaline) — Isoprenaline | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col2 |
+| PD (effect) | Emax (% 1 μM isoprenaline) — Formoterol | `Q320` · not captured | 98.38 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col3 |
+| PD (effect) | Emax (% 1 μM isoprenaline) — Salbutamol | `Q320` · not captured | 44.74 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col4 |
+| PD (effect) | Emax (% 1 μM isoprenaline) — Salmeterol | `Q320` · not captured | 33.73 | not captured | not captured | exact (not captured) | bph16008-tbl-0001:row0:col5 |
+| PD (effect) | IRmax (% 1 μM isoprenaline) — Isoprenaline | `Q323` · not captured | 100 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col2 |
+| PD (effect) | IRmax (% 1 μM isoprenaline) — Formoterol | `Q323` · not captured | 83.36 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col3 |
+| PD (effect) | IRmax (% 1 μM isoprenaline) — Salmeterol | `Q323` · not captured | 22.41 | not captured | not captured | llm (not captured) | bph16008-tbl-0001:row1:col5 |
+| PD (effect) | Log EC50 (M) — Isoprenaline | `Q321` · not captured | -8.01 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col2 |
+| PD (effect) | Log EC50 (M) — Formoterol | `Q321` · not captured | -9.00 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col3 |
+| PD (effect) | Log EC50 (M) — Salbutamol | `Q321` · not captured | -6.73 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col4 |
+| PD (effect) | Log EC50 (M) — Salmeterol | `Q321` · not captured | -8.39 | M | not captured | llm_confirmed (not captured) | bph16008-tbl-0001:row2:col5 |
+| PD (effect) | Log L50 (M) — Isoprenaline | `Q322` · not captured | -8.13 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col2 |
+| PD (effect) | Log L50 (M) — Formoterol | `Q322` · not captured | -8.80 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col3 |
+| PD (effect) | Log L50 (M) — Salbutamol | `Q322` · not captured | -6.68 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col4 |
+| PD (effect) | Log L50 (M) — Salmeterol | `Q322` · not captured | -8.08 | M | not captured | llm (not captured) | bph16008-tbl-0001:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

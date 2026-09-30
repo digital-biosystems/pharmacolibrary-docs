@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mosnodenvir (measured concentrations) drives DENV-3 RNA (in copies/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Mosnodenvir concentrations (average steady-state concentration, Cavg,ss, in ng/mL) inhibit DENV-3 RNA virion production rate in a viral dynamic model via a sigmoid Emax relationship: εp = Imax·conc^h/(IC50^h + conc^h), with Imax fixed at 1 and IC50 and Hill coefficient h estimated (values in Table S3/Table 2, not given in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goeyvaerts_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

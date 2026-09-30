@@ -28,17 +28,17 @@ In addition to the above, recent review articles have already demonstrated the i
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> | [Ekobena_2025_reference](drugs/drug_zinc/Zinc_Ekobena2025_reference.md) | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q34 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Giesy_1980_reference](drugs/drug_zinc/Zinc_Giesy1980_reference.md) | 1-compartment (no model) | 5 | Giesy JP et al., Cadmium and zinc accumulation and elimi…, Archives of environmental c… (1980) | [10.1007/BF01055544](https://doi.org/10.1007/BF01055544) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_zinc/Zinc_Cao2025_reference.md) | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span> | [Ekobena_2025_reference](drugs/drug_zinc/Zinc_Ekobena2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Ekobena P et al., Population pharmacokinetics of bictegra…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf297](https://doi.org/10.1093/jac/dkaf297) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q34 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Giesy_1980_reference](drugs/drug_zinc/Zinc_Giesy1980_reference.md) | — | 1-compartment (no model) | 5 | Giesy JP et al., Cadmium and zinc accumulation and elimi…, Archives of environmental c… (1980) | [10.1007/BF01055544](https://doi.org/10.1007/BF01055544) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_zinc/Zinc_Cao2025_reference.md) | — | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Cao_2025](drugs/drug_zinc/pd_Cao_2025_IgG.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Cao_2025_IgG](drugs/drug_zinc/pd_Cao_2025_IgG.md) | IgG level ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Raltitrexed drives name (in grade 3-4): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Raltitrexed exposure (observed AUC), not the administered dose (2 vs 3 mg/m²), predicts the probability of grade 3-4 liver toxicity, assessed by logistic regression; the paper does not report a mechanistic PD model or potency/rate parameters (Imax, IC50, kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Royer_2021`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -21,43 +31,43 @@ Royer B; Schmitt A; Nguyen T; Paillard MJ; Jary M; Demarchi M; et al. et al. (20
   ·  DOI: [10.1111/bcp.14519](https://doi.org/10.1111/bcp.14519)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/h) | `Q22` · not captured | 2.82 | L/h | not captured | exact (not captured) | tab_0:row2:col1 |
-| CL (L/h) | `Q22` · not captured | 5.0 | L/h | not captured | exact (not captured) | tab_0:row2:col2 |
-| CL (L/h) — Bootstrap (n = 500) | `Q22` · not captured | 2.83 | L/h | not captured | exact (not captured) | tab_0:row2:col4 |
-| CL (L/h) | `Q22` · not captured | 2.59 | L/h | not captured | exact (not captured) | tab_0:row2:col5 |
-| CCCG/CL | `Q358` · not captured | 0.481 | not captured | not captured | llm (not captured) | tab_0:row3:col1 |
-| CCCG/CL | `Q358` · not captured | 30.6 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
-| CCCG/CL — Bootstrap (n = 500) | `Q22` · not captured | 0.474 | n = 500 | not captured | llm (not captured) | tab_0:row3:col4 |
-| CCCG/CL | `Q358` · not captured | 0.195 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| V1 (L) | `Q63` · not captured | 4.66 | L | not captured | exact (not captured) | tab_0:row5:col1 |
-| V1 (L) | `Q63` · not captured | 4.8 | L | not captured | exact (not captured) | tab_0:row5:col2 |
-| V1 (L) — Bootstrap (n = 500) | `Q63` · not captured | 4.62 | L | not captured | exact (not captured) | tab_0:row5:col4 |
-| V1 (L) | `Q63` · not captured | 4.26 | L | not captured | exact (not captured) | tab_0:row5:col5 |
-| Q2 (L/h) | `Q30` · not captured | 4.64 | L/h | not captured | special_case (not captured) | tab_0:row6:col1 |
-| Q2 (L/h) | `Q30` · not captured | 7.2 | L/h | not captured | special_case (not captured) | tab_0:row6:col2 |
-| Q2 (L/h) — Bootstrap (n = 500) | `Q30` · not captured | 4.69 | L/h | not captured | special_case (not captured) | tab_0:row6:col4 |
-| Q2 (L/h) | `Q30` · not captured | 4.09 | L/h | not captured | special_case (not captured) | tab_0:row6:col5 |
-| V2 (L) | `Q64` · not captured | 6.19 | L | not captured | exact (not captured) | tab_0:row7:col1 |
-| V2 (L) | `Q64` · not captured | 3.9 | L | not captured | exact (not captured) | tab_0:row7:col2 |
-| V2 (L) — Bootstrap (n = 500) | `Q64` · not captured | 6.21 | L | not captured | exact (not captured) | tab_0:row7:col4 |
-| V2 (L) | `Q64` · not captured | 5.81 | L | not captured | exact (not captured) | tab_0:row7:col5 |
-| BSA/V2 — Bootstrap (n = 500) | `Q64` · not captured | 1.29 | n = 500 | not captured | llm (not captured) | tab_0:row8:col4 |
-| Q3 (L/h) | `Q308` · not captured | 3.99 | L/h | not captured | exact (not captured) | tab_0:row9:col1 |
-| Q3 (L/h) | `Q308` · not captured | 5.1 | L/h | not captured | exact (not captured) | tab_0:row9:col2 |
-| Q3 (L/h) — Bootstrap (n = 500) | `Q308` · not captured | 3.98 | L/h | not captured | exact (not captured) | tab_0:row9:col4 |
-| Q3 (L/h) | `Q308` · not captured | 3.65 | L/h | not captured | exact (not captured) | tab_0:row9:col5 |
-| V3 (L) | `Q77` · not captured | 522 | L | not captured | exact (not captured) | tab_0:row10:col1 |
-| V3 (L) | `Q77` · not captured | 5.5 | L | not captured | exact (not captured) | tab_0:row10:col2 |
-| V3 (L) — Bootstrap (n = 500) | `Q77` · not captured | 522 | L | not captured | exact (not captured) | tab_0:row10:col4 |
-| V3 (L) | `Q77` · not captured | 470 | L | not captured | exact (not captured) | tab_0:row10:col5 |
-| IIV CL | `Q312` · not captured | 18.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row11:col2 |
-| IOV CL | `Q313` · not captured | 14.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
-| IIV V1 | `Q312` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col2 |
-| IIV Q3 | `Q312` · not captured | 14.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col2 |
-| IIV V3 | `Q312` · not captured | 23.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col2 |
-| Proportional error | `Q316` · not captured | 4.6 | not captured | not captured | exact (not captured) | tab_0:row16:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/h) | `Q22` · not captured | 2.82 | L/h | not captured | exact (not captured) | tab_0:row2:col1 |
+| PK (driver) | CL (L/h) | `Q22` · not captured | 5.0 | L/h | not captured | exact (not captured) | tab_0:row2:col2 |
+| PK (driver) | CL (L/h) — Bootstrap (n = 500) | `Q22` · not captured | 2.83 | L/h | not captured | exact (not captured) | tab_0:row2:col4 |
+| PK (driver) | CL (L/h) | `Q22` · not captured | 2.59 | L/h | not captured | exact (not captured) | tab_0:row2:col5 |
+| PK (driver) | CCCG/CL | `Q358` · not captured | 0.481 | not captured | not captured | llm (not captured) | tab_0:row3:col1 |
+| PK (driver) | CCCG/CL | `Q358` · not captured | 30.6 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
+| PK (driver) | CCCG/CL — Bootstrap (n = 500) | `Q22` · not captured | 0.474 | n = 500 | not captured | llm (not captured) | tab_0:row3:col4 |
+| PK (driver) | CCCG/CL | `Q358` · not captured | 0.195 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
+| PK (driver) | V1 (L) | `Q63` · not captured | 4.66 | L | not captured | exact (not captured) | tab_0:row5:col1 |
+| PK (driver) | V1 (L) | `Q63` · not captured | 4.8 | L | not captured | exact (not captured) | tab_0:row5:col2 |
+| PK (driver) | V1 (L) — Bootstrap (n = 500) | `Q63` · not captured | 4.62 | L | not captured | exact (not captured) | tab_0:row5:col4 |
+| PK (driver) | V1 (L) | `Q63` · not captured | 4.26 | L | not captured | exact (not captured) | tab_0:row5:col5 |
+| PK (driver) | Q2 (L/h) | `Q30` · not captured | 4.64 | L/h | not captured | special_case (not captured) | tab_0:row6:col1 |
+| PK (driver) | Q2 (L/h) | `Q30` · not captured | 7.2 | L/h | not captured | special_case (not captured) | tab_0:row6:col2 |
+| PK (driver) | Q2 (L/h) — Bootstrap (n = 500) | `Q30` · not captured | 4.69 | L/h | not captured | special_case (not captured) | tab_0:row6:col4 |
+| PK (driver) | Q2 (L/h) | `Q30` · not captured | 4.09 | L/h | not captured | special_case (not captured) | tab_0:row6:col5 |
+| PK (driver) | V2 (L) | `Q64` · not captured | 6.19 | L | not captured | exact (not captured) | tab_0:row7:col1 |
+| PK (driver) | V2 (L) | `Q64` · not captured | 3.9 | L | not captured | exact (not captured) | tab_0:row7:col2 |
+| PK (driver) | V2 (L) — Bootstrap (n = 500) | `Q64` · not captured | 6.21 | L | not captured | exact (not captured) | tab_0:row7:col4 |
+| PK (driver) | V2 (L) | `Q64` · not captured | 5.81 | L | not captured | exact (not captured) | tab_0:row7:col5 |
+| PK (driver) | BSA/V2 — Bootstrap (n = 500) | `Q64` · not captured | 1.29 | n = 500 | not captured | llm (not captured) | tab_0:row8:col4 |
+| PK (driver) | Q3 (L/h) | `Q308` · not captured | 3.99 | L/h | not captured | exact (not captured) | tab_0:row9:col1 |
+| PK (driver) | Q3 (L/h) | `Q308` · not captured | 5.1 | L/h | not captured | exact (not captured) | tab_0:row9:col2 |
+| PK (driver) | Q3 (L/h) — Bootstrap (n = 500) | `Q308` · not captured | 3.98 | L/h | not captured | exact (not captured) | tab_0:row9:col4 |
+| PK (driver) | Q3 (L/h) | `Q308` · not captured | 3.65 | L/h | not captured | exact (not captured) | tab_0:row9:col5 |
+| PK (driver) | V3 (L) | `Q77` · not captured | 522 | L | not captured | exact (not captured) | tab_0:row10:col1 |
+| PK (driver) | V3 (L) | `Q77` · not captured | 5.5 | L | not captured | exact (not captured) | tab_0:row10:col2 |
+| PK (driver) | V3 (L) — Bootstrap (n = 500) | `Q77` · not captured | 522 | L | not captured | exact (not captured) | tab_0:row10:col4 |
+| PK (driver) | V3 (L) | `Q77` · not captured | 470 | L | not captured | exact (not captured) | tab_0:row10:col5 |
+| variability | IIV CL | `Q312` · not captured | 18.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row11:col2 |
+| variability | IOV CL | `Q313` · not captured | 14.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
+| variability | IIV V1 | `Q312` · not captured | 32.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col2 |
+| variability | IIV Q3 | `Q312` · not captured | 14.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col2 |
+| variability | IIV V3 | `Q312` · not captured | 23.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col2 |
+| variability | Proportional error | `Q316` · not captured | 4.6 | not captured | not captured | exact (not captured) | tab_0:row16:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

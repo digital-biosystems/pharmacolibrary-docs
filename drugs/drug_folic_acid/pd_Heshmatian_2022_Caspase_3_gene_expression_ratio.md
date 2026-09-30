@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (measured concentrations) drives name (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for the caspase 3 gene expression ratio; doxorubicin (2.5–40 µM, with IC50 of 10.8 µM at 24 h and 8.6 µM at 48 h) and GNP-F (70 µM) with X-ray irradiation were given as combination treatments, and caspase 3 mRNA expression increased (not decreased) versus controls, significantly so in the triple combination group, with no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values stated for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heshmatian_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

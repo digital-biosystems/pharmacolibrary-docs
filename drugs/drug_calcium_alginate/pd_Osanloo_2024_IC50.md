@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alginate nanoparticles containing Cuminum cyminum and Zataria multiflora essential oils (measured concentrations) drive name (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of alginate nanoparticles loaded with Cuminum cyminum (Alg-CC) or Zataria multiflora (Alg-ZM) essential oils inhibit viability of A-375 and A-431 skin cancer cells and growth of E. coli, P. aeruginosa, and S. aureus, with IC50 values of 132 (104–167) and 158 (102–247) μg/mL for Alg-ZM and 664 (439–1005) and 321 (247–416) μg/mL for Alg-CC against A-375 and A-431, respectively, and 178 (145–219), 95 (38–238), and 307 (252–375) μg/mL for Alg-ZM versus 690 (344–1381), 633 (347–1153), and 1098 (637–1794) μg/mL for Alg-CC against E. coli, P. aeruginosa, and S. aureus. The paper reports only IC50 values from concentration-response data and does not describe a pharmacodynamic mechanis
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Osanloo_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Trospium serves as a victim substrate whose OCT1-mediated uptake is directly inhibited by co-incubated inhibitors (e.g., sumatriptan, IC50 270 μM for trospium uptake; trimethoprim inhibited trospium with an on average 2.6-fold lower IC50 than for fenoterol, salbutamol, zolmitriptan, and metformin), with no kinetic production/elimination model or potency value for trospium itself stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rönnpagel_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

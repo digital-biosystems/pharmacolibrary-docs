@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Boceprevir-based MPro inhibitors (e.g. MPI40, MPI43, MPI44, MPI46) drive MPro enzymatic activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Boceprevir-based MPro inhibitors (MPI29–MPI38, MPI40, MPI42, MPI43, etc.) inhibit MPro enzymatic activity in a reversible covalent manner, measured as IC50 in a fluorogenic substrate assay (20 nM MPro preincubated 30 min with inhibitor, 10 μM Sub3); in vitro IC50 values range from 9.3 nM (MPI29) to 720 nM (MPI35), with boceprevir at 26 nM, and cellular EC50 values in 293T cells (MPro-eGFP cytotoxicity suppression assay) range from 0.14 μM (MPI35) to 7.7 μM (MPI30). The paper does not state a PD model with Imax, kin, kout, ke0, or gamma parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alugubelli_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,40 +30,40 @@ Alugubelli YR; Geng ZZ; Yang KS; Shaabani N; Khatua K; Ma XR; et al. et al. (202
   ·  DOI: [10.1016/j.ejmech.2022.114596](https://doi.org/10.1016/j.ejmech.2022.114596)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Enzymatic IC50 (nM) — MPI29 | `Q322` · not captured | 9.3 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
-| Enzymatic IC50 (nM) — MPI30 | `Q322` · not captured | 40 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
-| Enzymatic IC50 (nM) — MPI31 | `Q322` · not captured | 360 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
-| Enzymatic IC50 (nM) — MPI32 | `Q322` · not captured | 620 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
-| Enzymatic IC50 (nM) — MPI33 | `Q322` · not captured | 75 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
-| Enzymatic IC50 (nM) — MPI34 | `Q322` · not captured | 370 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
-| Enzymatic IC50 (nM) — MPI35 | `Q322` · not captured | 720 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col9 |
-| Enzymatic IC50 (nM) — MPI36 | `Q322` · not captured | 102 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col10 |
-| Enzymatic IC50 (nM) — MPI37 | `Q322` · not captured | 23 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col11 |
-| Enzymatic IC50 (nM) — MPI38 | `Q322` · not captured | 17 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col12 |
-| Enzymatic IC50 (nM) — Boceprevir | `Q322` · not captured | 26 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col2 |
-| Enzymatic IC50 (nM) — MPI29 | `Q322` · not captured | 180 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col3 |
-| Enzymatic IC50 (nM) — MPI30 | `Q322` · not captured | 150 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col4 |
-| Enzymatic IC50 (nM) — MPI31 | `Q322` · not captured | 22 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col5 |
-| Enzymatic IC50 (nM) — MPI32 | `Q322` · not captured | 45 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col6 |
-| Enzymatic IC50 (nM) — MPI33 | `Q322` · not captured | 59 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col7 |
-| Enzymatic IC50 (nM) — MPI34 | `Q322` · not captured | 97 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col8 |
-| Enzymatic IC50 (nM) — MPI35 | `Q322` · not captured | 120 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col9 |
-| Enzymatic IC50 (nM) — MPI36 | `Q322` · not captured | 720 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col10 |
-| Enzymatic IC50 (nM) — MPI37 | `Q322` · not captured | 66 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col11 |
-| Cellular EC50 (μM) — MPI29 | `Q321` · not captured | 7.4 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col3 |
-| Cellular EC50 (μM) — MPI30 | `Q321` · not captured | 7.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col4 |
-| Cellular EC50 (μM) — MPI31 | `Q321` · not captured | 2.6 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col5 |
-| Cellular EC50 (μM) — MPI32 | `Q321` · not captured | 0.37 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col6 |
-| Cellular EC50 (μM) — MPI33 | `Q321` · not captured | 0.31 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col7 |
-| Cellular EC50 (μM) — MPI34 | `Q321` · not captured | 0.74 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col8 |
-| Cellular EC50 (μM) — MPI35 | `Q321` · not captured | 0.14 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col9 |
-| Cellular EC50 (μM) — MPI37 | `Q321` · not captured | 3.4 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col11 |
-| Antiviral EC50 (μM) — MPI37 | `Q321` · not captured | 1.30 | μM | not captured | llm_confirmed (not captured) | tbl1:row7:col11 |
-| CC50 (μM) — MPI32 | `Q322` · not captured | 34.2 | μM | not captured | llm (not captured) | tbl1:row8:col6 |
-| CC50 (μM) — MPI33 | `Q322` · not captured | 143.7 | μM | not captured | llm (not captured) | tbl1:row8:col7 |
-| CC50 (μM) — MPI35 | `Q322` · not captured | 163.4 | μM | not captured | llm (not captured) | tbl1:row8:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Enzymatic IC50 (nM) — MPI29 | `Q322` · not captured | 9.3 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI30 | `Q322` · not captured | 40 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI31 | `Q322` · not captured | 360 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI32 | `Q322` · not captured | 620 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI33 | `Q322` · not captured | 75 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI34 | `Q322` · not captured | 370 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI35 | `Q322` · not captured | 720 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col9 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI36 | `Q322` · not captured | 102 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col10 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI37 | `Q322` · not captured | 23 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col11 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI38 | `Q322` · not captured | 17 | nM | not captured | llm_confirmed (not captured) | tbl1:row0:col12 |
+| PD (effect) | Enzymatic IC50 (nM) — Boceprevir | `Q322` · not captured | 26 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col2 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI29 | `Q322` · not captured | 180 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col3 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI30 | `Q322` · not captured | 150 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col4 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI31 | `Q322` · not captured | 22 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col5 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI32 | `Q322` · not captured | 45 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col6 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI33 | `Q322` · not captured | 59 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col7 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI34 | `Q322` · not captured | 97 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col8 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI35 | `Q322` · not captured | 120 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col9 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI36 | `Q322` · not captured | 720 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col10 |
+| PD (effect) | Enzymatic IC50 (nM) — MPI37 | `Q322` · not captured | 66 | nM | not captured | llm_confirmed (not captured) | tbl1:row5:col11 |
+| PD (effect) | Cellular EC50 (μM) — MPI29 | `Q321` · not captured | 7.4 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col3 |
+| PD (effect) | Cellular EC50 (μM) — MPI30 | `Q321` · not captured | 7.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col4 |
+| PD (effect) | Cellular EC50 (μM) — MPI31 | `Q321` · not captured | 2.6 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col5 |
+| PD (effect) | Cellular EC50 (μM) — MPI32 | `Q321` · not captured | 0.37 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col6 |
+| PD (effect) | Cellular EC50 (μM) — MPI33 | `Q321` · not captured | 0.31 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col7 |
+| PD (effect) | Cellular EC50 (μM) — MPI34 | `Q321` · not captured | 0.74 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col8 |
+| PD (effect) | Cellular EC50 (μM) — MPI35 | `Q321` · not captured | 0.14 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col9 |
+| PD (effect) | Cellular EC50 (μM) — MPI37 | `Q321` · not captured | 3.4 | μM | not captured | llm_confirmed (not captured) | tbl1:row6:col11 |
+| PD (effect) | Antiviral EC50 (μM) — MPI37 | `Q321` · not captured | 1.30 | μM | not captured | llm_confirmed (not captured) | tbl1:row7:col11 |
+| PD (effect) | CC50 (μM) — MPI32 | `Q322` · not captured | 34.2 | μM | not captured | llm (not captured) | tbl1:row8:col6 |
+| PD (effect) | CC50 (μM) — MPI33 | `Q322` · not captured | 143.7 | μM | not captured | llm (not captured) | tbl1:row8:col7 |
+| PD (effect) | CC50 (μM) — MPI35 | `Q322` · not captured | 163.4 | μM | not captured | llm (not captured) | tbl1:row8:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

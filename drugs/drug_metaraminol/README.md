@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Xiao_2021](drugs/drug_metaraminol/pd_Xiao_2021_unknown.md) | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Xiao_2021_unknown](drugs/drug_metaraminol/pd_Xiao_2021_unknown.md) | hypotension ← metaraminol · categorical (graded) response model | — | Xiao F et al., A Randomized Double-Blinded Dose-depend…, Frontiers in pharmacology (2021) | [10.3389/fphar.2021.608198](https://doi.org/10.3389/fphar.2021.608198) |
 
 ## ADME sites
 

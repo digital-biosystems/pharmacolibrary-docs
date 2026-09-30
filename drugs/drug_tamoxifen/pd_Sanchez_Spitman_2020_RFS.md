@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Endoxifen (measured concentrations) drives relapse-free survival (in time_to_event): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Endoxifen serum concentrations (ng/ml) were related to relapse-free survival (time to relapse) in tamoxifen-treated early breast cancer patients using Cox and logistic regression, not a mechanistic PD model; no significant association was found for thresholds 5.9, 5.2, 3.3 or 10.3 ng/ml, and as a continuous variable the hazard ratio was 0.988 (95% CI 0.944–1.035) per ng/ml, with logistic regression suggesting only a minor decrease in relapse risk at higher endoxifen concentrations. The paper does not state a mechanism (no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sanchez-Spitman_2020`
 - **model family:** `tte`
 - **driver:** `conc_no_pk`

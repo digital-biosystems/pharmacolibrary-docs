@@ -34,11 +34,11 @@ Daunorubicin is indicated in combination with [cytarabine] for the treatment of 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Drevin_2022_reference](drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference.md) | 1-compartment, oral | 11 (+1 cov.) | Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hempel_2003_reference](drugs/drug_daunorubicin/Daunorubicin_Hempel2003_reference.md) | 1-compartment (no model) | 0 | Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_reference](drugs/drug_daunorubicin/Daunorubicin_Wang2019_reference.md) | 1-compartment (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Drevin_2022_reference](drugs/drug_daunorubicin/Daunorubicin_Drevin2022_reference.md) | held back | 1-compartment, oral | 11 (+1 cov.) | Drevin G et al., Daunorubicin and Its Active Metabolite…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040792](https://doi.org/10.3390/pharmaceutics14040792) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hempel_2003_reference](drugs/drug_daunorubicin/Daunorubicin_Hempel2003_reference.md) | — | 1-compartment (no model) | 0 | Hempel G et al., Population pharmacokinetics of liposoma…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01886.x](https://doi.org/10.1046/j.1365-2125.2003.01886.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2019_reference](drugs/drug_daunorubicin/Daunorubicin_Wang2019_reference.md) | — | 1-compartment (no model) | 0 | Wang Q et al., Population Pharmacokinetics and Exposur…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1366](https://doi.org/10.1002/jcph.1366) |
 
 ## ADME sites
 
@@ -52,6 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |

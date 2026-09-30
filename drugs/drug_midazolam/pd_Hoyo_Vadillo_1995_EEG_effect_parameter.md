@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives EEG beta frequency band amplitude (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In rats given midazolam 5 mg/kg IV over 15 min, plasma midazolam concentrations were linked to the EEG beta-band (11.5–30 Hz) amplitude via a sigmoid Emax inhibitory model; the paper does not report numeric PD parameters (IC50, Emax, gamma, ke0). Ethanol (0.44 ± 0.04 g/l steady state) did not change midazolam PK or EEG baseline but caused a significant parallel leftward shift of the midazolam concentration–EEG effect relationship, indicating a pharmacodynamic interaction, with no further mechanism quantified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoyo-Vadillo_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

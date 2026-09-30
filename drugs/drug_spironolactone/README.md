@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;spironolactone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Lass2024_value_2&quot;,&quot;label&quot;:&quot;Lass_2024_value_2&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Lass2024_value_2.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Spironolactone_Lass2024_value_1&quot;,&quot;label&quot;:&quot;Lass_2024_value_1&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Lass2024_value_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Spironolactone_Lass2024_value_1&quot;,&quot;label&quot;:&quot;Lass_2024_value_1&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Lass2024_value_1.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Spironolactone_Lass2024_value_2&quot;,&quot;label&quot;:&quot;Lass_2024_value_2&quot;,&quot;href&quot;:&quot;drugs/drug_spironolactone/Spironolactone_Lass2024_value_2.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # spironolactone
 
@@ -47,10 +47,10 @@ As spironolactone has antiandrogenic activity, its off-label uses include the tr
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Lass_2024_value_2](drugs/drug_spironolactone/Spironolactone_Lass2024_value_2.md) | 1-compartment general linear | 2 | Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024) | [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lass_2024_value_1](drugs/drug_spironolactone/Spironolactone_Lass2024_value_1.md) | general linear (no model) | 2 | Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024) | [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lass_2024_value_1](drugs/drug_spironolactone/Spironolactone_Lass2024_value_1.md) | — | general linear (no model) | 2 | Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024) | [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central] left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Lass_2024_value_2](drugs/drug_spironolactone/Spironolactone_Lass2024_value_2.md) | held back | 1-compartment general linear | 2 | Lass J et al., Pharmacokinetics of oral spironolactone…, European journal of clinica… (2024) | [10.1007/s00228-023-03599-w](https://doi.org/10.1007/s00228-023-03599-w) |
 
 ## ADME sites
 
@@ -63,6 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | kidney | <sub>“…cts of the synthetic mineralocorticoid, fludrocortisone, on urinary electrolyte compositio…”</sub> | prose |
 | metabolism | liver | `CYP2C8` inhibitor | DrugBank actor |
@@ -71,8 +72,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | excretion | liver | `ABCB11` substrate, `ABCC2` inducer | DrugBank actor |
 | excretion | small intestine | `ABCC2` inducer | DrugBank actor |
 | target | adrenal gland | `CYP11B1` inducer | DrugBank actor |
+| target | prostate gland | `AR` target | DrugBank actor |
 
-<sub>Actors without a tissue in the table: AR (target), CACNA1C (inhibitor), CYP11B2 (inhibitor), ESR1 (target), NR1I2 (target), NR3C1 (target), NR3C2 (target), PGR (target).</sub>
+<sub>Actors without a tissue in the table: CACNA1C (inhibitor), CYP11B2 (inhibitor), ESR1 (target), NR1I2 (target), NR3C1 (target), NR3C2 (target), PGR (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -84,7 +86,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 46 matched, 20 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Screened and excluded

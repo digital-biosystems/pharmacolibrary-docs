@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives aldosterone (in pg/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal PD model for aldosterone; it only describes that single oral doses of cilazapril (5, 10 and 20 mg), acting via ACE inhibition (peak ACE inhibition &gt;90% at 2–3 h, e.g. 96.0 ± 8.9% after 20 mg), were associated with a fall in plasma aldosterone (pg/ml) with a peak effect at 6 h after dosing, which was not statistically significant, and no potency (IC50/EC50/Emax) or rate (kin/kout/ke0) values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ajayi_1986`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

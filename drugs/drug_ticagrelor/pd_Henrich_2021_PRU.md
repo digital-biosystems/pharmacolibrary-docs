@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Selatogrel, active metabolite of clopidogrel, active metabolite of prasugrel, ticagrelor, active metabolite of ticagrelor drive Platelet reactivity units (in PRU): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Selatogrel plasma concentrations inhibit platelet reactivity measured as PRU (VerifyNow P2Y12 reaction units), modelled with a sigmoid Emax/turnover-type inhibitory PD model in which selatogrel reduces PRU from its baseline (R0 = 1, PD50 = 0.278, both unitless as reported); the paper states the mechanism as P2Y12 receptor binding (dissociation constant affected by AMI) with a low half-maximal inhibitory concentration of 41.9 pmol/L (25.9 ng/ml), and kout is a model parameter but its value is not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrich_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Henrich A; Claussen CH; Dingemanse J; Krause A et al. (2021). CPT: pharmacometri
   ·  DOI: [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PD50 (‐) | `Q321` · not captured | 0.278 | ‐ | not captured | review_gapfill (not captured) | Henrich_2021:review |
-| R0 (‐) | `Q336` · not captured | 1 | ‐ | not captured | review_gapfill (not captured) | Henrich_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | PD50 (‐) | `Q321` · not captured | 0.278 | ‐ | not captured | review_gapfill (not captured) | Henrich_2021:review |
+| PD (effect) | R0 (‐) | `Q336` · not captured | 1 | ‐ | not captured | review_gapfill (not captured) | Henrich_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

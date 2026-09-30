@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The rifaximin record was rejected because the terminal half-life is dimensionally inconsistent: t1/2β is 0.11 while t1/2z is 5.98 h for the same two-compartment disposition, a structural-parameter mismatch.**

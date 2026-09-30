@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Epinephrine and norepinephrine (measured concentrations) drive name (in mmHg x min x ml-1 x 100g-1) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anesthetized dogs, intravenously infused norepinephrine (0.1, 0.5, 2.5 nmol·kg⁻¹·min⁻¹, raising plasma norepinephrine by 2.5, 13, and 63 nM above a resting level of 3.6 nM) caused significant vasoconstriction in skeletal muscle (vascular resistance, mmHg·min·ml⁻¹·100g⁻¹) already at a plasma concentration of 5 nM, whereas epinephrine had no significant effect on skeletal muscle vascular resistance. The paper does not state a quantitative PD model (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values) or a formal mechanism for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hjemdahl_1979`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexmedetomidine drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Dexmedetomidine plasma concentrations inhibit the release (production) of epinephrine, modeled as an indirect response (Model I) with baseline R0 = 0.22 nmol/L and IC50 of 0.153 ng/mL (one estimate 0.166 ng/mL), with release-rate constants kd,p of 19.1 h−1 and 3.67 h−1; the paper states dexmedetomidine, an α2-adrenoceptor agonist, inhibits catecholamine (NE and E) release.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoo_2015`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,16 +31,16 @@ Yoo H; Iirola T; Vilo S; Manner T; Aantaa R; Lahtinen M; et al. et al. (2015). E
   ·  DOI: [10.1007/s00228-015-1913-0](https://doi.org/10.1007/s00228-015-1913-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| R0 (nmol/L) — Estimate | `Q336` · not captured | 0.22 | nmol/L | not captured | exact (not captured) | T2:row2:col3 |
-| IC50 (ng/mL) — Estimate | `Q322` · not captured | 0.153 | ng/mL | not captured | exact (not captured) | T2:row4:col2 |
-| IC50 (ng/mL) — Estimate | `Q322` · not captured | 0.166 | ng/mL | not captured | exact (not captured) | T2:row4:col3 |
-| kd,p (h−1) — Estimate | `Q331` · not captured | 19.1 | h−1 | not captured | llm_confirmed (not captured) | T2:row5:col2 |
-| kd,p (h−1) — Estimate | `Q331` · not captured | 3.67 | h−1 | not captured | llm_confirmed (not captured) | T2:row5:col3 |
-| Additive error (nmol/L) — Estimate | `Q317` · not captured | 0.072 | nmol/L | not captured | exact (not captured) | T2:row10:col2 |
-| Proportional error — Estimate | `Q316` · not captured | 0.356 | nmol/L | not captured | exact (not captured) | T2:row11:col2 |
-| Proportional error — Estimate | `Q316` · not captured | 0.56 | nmol/L | not captured | exact (not captured) | T2:row11:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | R0 (nmol/L) — Estimate | `Q336` · not captured | 0.22 | nmol/L | not captured | exact (not captured) | T2:row2:col3 |
+| PD (effect) | IC50 (ng/mL) — Estimate | `Q322` · not captured | 0.153 | ng/mL | not captured | exact (not captured) | T2:row4:col2 |
+| PD (effect) | IC50 (ng/mL) — Estimate | `Q322` · not captured | 0.166 | ng/mL | not captured | exact (not captured) | T2:row4:col3 |
+| PD (effect) | kd,p (h−1) — Estimate | `Q331` · not captured | 19.1 | h−1 | not captured | llm_confirmed (not captured) | T2:row5:col2 |
+| PD (effect) | kd,p (h−1) — Estimate | `Q331` · not captured | 3.67 | h−1 | not captured | llm_confirmed (not captured) | T2:row5:col3 |
+| variability | Additive error (nmol/L) — Estimate | `Q317` · not captured | 0.072 | nmol/L | not captured | exact (not captured) | T2:row10:col2 |
+| variability | Proportional error — Estimate | `Q316` · not captured | 0.356 | nmol/L | not captured | exact (not captured) | T2:row11:col2 |
+| variability | Proportional error — Estimate | `Q316` · not captured | 0.56 | nmol/L | not captured | exact (not captured) | T2:row11:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxyfluorfen (measured concentrations) drives T3 (in ng/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oxyfluorfen (oral doses 125–500 mg/kg) suppresses serum T3 (measured in ng/ml by RIA) by approximately 30% in male juvenile rats after 4 days of exposure, an effect attributed to inhibition of the sodium-iodide symporter (NIS), with an in vitro NIS IC50 of 2 μM (≈0.8 mg/g tissue) in FRTL5 cells; no PD model parameters (Imax, IC50 for the in vivo T3 response, kin/kout, ke0) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stoker_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

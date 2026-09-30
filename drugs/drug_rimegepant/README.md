@@ -25,10 +25,10 @@ The current standard of migraine therapy involves abortive treatment with "tript
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Comisar_2025_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | 2-compartment, oral | 6 (+7 cov.) | Comisar (2025) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Comisar_2025_2_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md) | 2-compartment, oral | 6 | Comisar (2025) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub> | [Comisar_2025_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 (+7 cov.) | Comisar (2025) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span> | [Comisar_2025_2_reference](drugs/drug_rimegepant/Rimegepant_Comisar2025v2_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Comisar (2025) | — |
 
 ## ADME sites
 
@@ -42,6 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` substrate, `CYP3A4` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…cts, 78% of the administered radioactivity was recovered in feces and 24% in urine.[L11971…”</sub> | prose |

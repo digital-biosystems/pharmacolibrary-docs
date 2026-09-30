@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hwang_2023](drugs/drug_oxyphenisatine/pd_Hwang_2023_heart_rate.md) | Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023) | [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hwang_2023_heart_rate](drugs/drug_oxyphenisatine/pd_Hwang_2023_heart_rate.md) | name ← carvedilol · direct sigmoid Emax (Hill) effect | — | Hwang S et al., Population Pharmacokinetic-Pharmacodyna…, Journal of Korean medical s… (2023) | [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SRI-37618 (measured concentrations) drives name (in fold change): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> SRI-37618 (µM concentrations, with hemin as positive control) stimulates HO-1 protein expression (fold change) in HEK293 cells in a dose-dependent manner, consistent with a direct Emax-type induction; the paper reports an EC50 of 0.4315 mM for SRI-37618 but gives no Emax, gamma, or turnover (kin/kout) values and does not describe a more detailed mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ghajar-Rahimi_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

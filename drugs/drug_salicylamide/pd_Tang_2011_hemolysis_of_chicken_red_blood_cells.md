@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 40 (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports in vitro anti-influenza activity, not a pharmacodynamic model: compound concentrations inhibit the cytopathic effect (EC50, μM) and hemolysis of chicken red blood cells (IC50, μM), with no mechanism (e.g., Emax/kin-kout/effect compartment) stated. The record's 'nM' units and driver 'compound 40' are not supported by the excerpts, which give IC50 values for hemolysis in μM (e.g., compound 8: CC50 26.7 μM; compound 17: CC50 9.7 μM) and EC50 (CPE) values such as 0.030, 2.12, and 0.057 μM for compounds 1, 9, and 17, alongside human and mouse liver microsome clearance (e.g., compound 17: MLM CL 86.1 mL/min/kg).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tang_2011`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,63 +30,63 @@ Tang G; Lin X; Qiu Z; Li W; Zhu L; Wang L; et al. et al. (2011). ACS medicinal c
   ·  DOI: [10.1021/ml2000627](https://doi.org/10.1021/ml2000627)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.030 | nM | not captured | llm (not captured) | tab_0:row1:col3 |
-| 1 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 76.7 | not captured | not captured | llm (not captured) | tab_0:row1:col5 |
-| 7 — EC 50 (CPE, μM) a | `Q321` · not captured | 6.90 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
-| 7 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 45.2 | not captured | not captured | llm (not captured) | tab_0:row2:col5 |
-| 8 — EC 50 (CPE, μM) a | `Q321` · not captured | 8.5 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
-| 8 — CC 50 (μM) b | `Q322` · not captured | 26.7 | nM | not captured | llm (not captured) | tab_0:row3:col4 |
-| 8 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 82.9 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| 9 — EC 50 (CPE, μM) a | `Q321` · not captured | 2.12 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
-| 9 — CC 50 (μM) b | `Q322` · not captured | 36.8 | nM | not captured | llm (not captured) | tab_0:row4:col4 |
-| 9 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 85.4 | not captured | not captured | llm (not captured) | tab_0:row4:col5 |
-| 10 — EC 50 (CPE, μM) a | `Q321` · not captured | 2.5 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
-| 10 — CC 50 (μM) b | `Q322` · not captured | 16.2 | nM | not captured | llm (not captured) | tab_0:row5:col4 |
-| 10 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 78.2 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
-| 11 — CC 50 (μM) b | `Q322` · not captured | 4.2 | nM | not captured | llm (not captured) | tab_0:row6:col4 |
-| 12 — EC 50 (CPE, μM) a | `Q321` · not captured | 4.43 | nM | not captured | llm (not captured) | tab_0:row7:col3 |
-| 12 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 80.6 | not captured | not captured | llm (not captured) | tab_0:row7:col5 |
-| 13 — EC 50 (CPE, μM) a | `Q321` · not captured | 3.39 | nM | not captured | llm (not captured) | tab_0:row8:col3 |
-| 13 — CC 50 (μM) b | `Q322` · not captured | 30.5 | nM | not captured | llm (not captured) | tab_0:row8:col4 |
-| 14 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.22 | nM | not captured | llm (not captured) | tab_0:row9:col3 |
-| 14 — CC 50 (μM) b | `Q322` · not captured | 13.5 | nM | not captured | llm (not captured) | tab_0:row9:col4 |
-| 14 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 82.3 | not captured | not captured | llm (not captured) | tab_0:row9:col5 |
-| 15 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.43 | nM | not captured | llm (not captured) | tab_0:row10:col3 |
-| 15 — CC 50 (μM) b | `Q322` · not captured | 37 | nM | not captured | llm (not captured) | tab_0:row10:col4 |
-| 15 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 85.6 | not captured | not captured | llm (not captured) | tab_0:row10:col5 |
-| 16 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.52 | nM | not captured | llm (not captured) | tab_0:row11:col3 |
-| 16 — CC 50 (μM) b | `Q322` · not captured | 6.9 | nM | not captured | llm (not captured) | tab_0:row11:col4 |
-| 17 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.057 | nM | not captured | llm (not captured) | tab_0:row12:col3 |
-| 17 — CC 50 (μM) b | `Q322` · not captured | 9.7 | nM | not captured | llm (not captured) | tab_0:row12:col4 |
-| 17 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 86.1 | not captured | not captured | llm (not captured) | tab_0:row12:col5 |
-| 18 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.44 | nM | not captured | llm (not captured) | tab_0:row13:col3 |
-| 18 — CC 50 (μM) b | `Q322` · not captured | 8.1 | nM | not captured | llm (not captured) | tab_0:row13:col4 |
-| 19 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.15 | nM | not captured | llm (not captured) | tab_0:row14:col3 |
-| 19 — CC 50 (μM) b | `Q322` · not captured | 6.6 | nM | not captured | llm (not captured) | tab_0:row14:col4 |
-| 20 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.042 | nM | not captured | llm (not captured) | tab_0:row15:col3 |
-| 20 — CC 50 (μM) b | `Q322` · not captured | 7.8 | nM | not captured | llm (not captured) | tab_0:row15:col4 |
-| 20 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_0:row15:col5 |
-| 21 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.044 | nM | not captured | llm (not captured) | tab_0:row16:col3 |
-| 21 — CC 50 (μM) b | `Q322` · not captured | 6.7 | nM | not captured | llm (not captured) | tab_0:row16:col4 |
-| 21 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 49.8 | not captured | not captured | llm (not captured) | tab_0:row16:col5 |
-| 22 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.015 | nM | not captured | llm (not captured) | tab_0:row17:col3 |
-| 22 — CC 50 (μM) b | `Q322` · not captured | 4.4 | nM | not captured | llm (not captured) | tab_0:row17:col4 |
-| 22 — MLM CL h (mL/min/kg) c | `Q22` · not captured | 85.1 | not captured | not captured | llm (not captured) | tab_0:row17:col5 |
-| 23 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.018 | nM | not captured | llm (not captured) | tab_0:row18:col3 |
-| 23 — CC 50 (μM) b | `Q322` · not captured | 2.8 | nM | not captured | llm (not captured) | tab_0:row18:col4 |
-| 23 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 62.4 | not captured | not captured | llm (not captured) | tab_0:row18:col5 |
-| 24 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.25 | nM | not captured | llm (not captured) | tab_0:row19:col3 |
-| 24 — CC 50 (μM) b | `Q322` · not captured | 46.9 | nM | not captured | llm (not captured) | tab_0:row19:col4 |
-| 24 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 84 | not captured | not captured | llm (not captured) | tab_0:row19:col5 |
-| 25 — CC 50 (μM) b | `Q322` · not captured | 6.0 | nM | not captured | llm (not captured) | tab_0:row20:col4 |
-| 26 — EC 50 (CPE, μM) a | `Q321` · not captured | 37.9 | nM | not captured | llm (not captured) | tab_0:row21:col3 |
-| 26 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 43.0 | not captured | not captured | llm (not captured) | tab_0:row21:col5 |
-| 27 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.93 | nM | not captured | llm (not captured) | tab_0:row22:col3 |
-| 27 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 65.3 | not captured | not captured | llm (not captured) | tab_0:row22:col5 |
-| 28 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.21 | nM | not captured | llm (not captured) | tab_0:row23:col3 |
-| 28 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 37.2 | not captured | not captured | llm (not captured) | tab_0:row23:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.030 | nM | not captured | llm (not captured) | tab_0:row1:col3 |
+| PK (driver) | 1 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 76.7 | not captured | not captured | llm (not captured) | tab_0:row1:col5 |
+| PD (effect) | 7 — EC 50 (CPE, μM) a | `Q321` · not captured | 6.90 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
+| PK (driver) | 7 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 45.2 | not captured | not captured | llm (not captured) | tab_0:row2:col5 |
+| PD (effect) | 8 — EC 50 (CPE, μM) a | `Q321` · not captured | 8.5 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
+| PD (effect) | 8 — CC 50 (μM) b | `Q322` · not captured | 26.7 | nM | not captured | llm (not captured) | tab_0:row3:col4 |
+| PK (driver) | 8 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 82.9 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
+| PD (effect) | 9 — EC 50 (CPE, μM) a | `Q321` · not captured | 2.12 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
+| PD (effect) | 9 — CC 50 (μM) b | `Q322` · not captured | 36.8 | nM | not captured | llm (not captured) | tab_0:row4:col4 |
+| PK (driver) | 9 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 85.4 | not captured | not captured | llm (not captured) | tab_0:row4:col5 |
+| PD (effect) | 10 — EC 50 (CPE, μM) a | `Q321` · not captured | 2.5 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
+| PD (effect) | 10 — CC 50 (μM) b | `Q322` · not captured | 16.2 | nM | not captured | llm (not captured) | tab_0:row5:col4 |
+| PK (driver) | 10 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 78.2 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
+| PD (effect) | 11 — CC 50 (μM) b | `Q322` · not captured | 4.2 | nM | not captured | llm (not captured) | tab_0:row6:col4 |
+| PD (effect) | 12 — EC 50 (CPE, μM) a | `Q321` · not captured | 4.43 | nM | not captured | llm (not captured) | tab_0:row7:col3 |
+| PK (driver) | 12 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 80.6 | not captured | not captured | llm (not captured) | tab_0:row7:col5 |
+| PD (effect) | 13 — EC 50 (CPE, μM) a | `Q321` · not captured | 3.39 | nM | not captured | llm (not captured) | tab_0:row8:col3 |
+| PD (effect) | 13 — CC 50 (μM) b | `Q322` · not captured | 30.5 | nM | not captured | llm (not captured) | tab_0:row8:col4 |
+| PD (effect) | 14 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.22 | nM | not captured | llm (not captured) | tab_0:row9:col3 |
+| PD (effect) | 14 — CC 50 (μM) b | `Q322` · not captured | 13.5 | nM | not captured | llm (not captured) | tab_0:row9:col4 |
+| PK (driver) | 14 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 82.3 | not captured | not captured | llm (not captured) | tab_0:row9:col5 |
+| PD (effect) | 15 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.43 | nM | not captured | llm (not captured) | tab_0:row10:col3 |
+| PD (effect) | 15 — CC 50 (μM) b | `Q322` · not captured | 37 | nM | not captured | llm (not captured) | tab_0:row10:col4 |
+| PK (driver) | 15 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 85.6 | not captured | not captured | llm (not captured) | tab_0:row10:col5 |
+| PD (effect) | 16 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.52 | nM | not captured | llm (not captured) | tab_0:row11:col3 |
+| PD (effect) | 16 — CC 50 (μM) b | `Q322` · not captured | 6.9 | nM | not captured | llm (not captured) | tab_0:row11:col4 |
+| PD (effect) | 17 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.057 | nM | not captured | llm (not captured) | tab_0:row12:col3 |
+| PD (effect) | 17 — CC 50 (μM) b | `Q322` · not captured | 9.7 | nM | not captured | llm (not captured) | tab_0:row12:col4 |
+| PK (driver) | 17 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 86.1 | not captured | not captured | llm (not captured) | tab_0:row12:col5 |
+| PD (effect) | 18 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.44 | nM | not captured | llm (not captured) | tab_0:row13:col3 |
+| PD (effect) | 18 — CC 50 (μM) b | `Q322` · not captured | 8.1 | nM | not captured | llm (not captured) | tab_0:row13:col4 |
+| PD (effect) | 19 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.15 | nM | not captured | llm (not captured) | tab_0:row14:col3 |
+| PD (effect) | 19 — CC 50 (μM) b | `Q322` · not captured | 6.6 | nM | not captured | llm (not captured) | tab_0:row14:col4 |
+| PD (effect) | 20 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.042 | nM | not captured | llm (not captured) | tab_0:row15:col3 |
+| PD (effect) | 20 — CC 50 (μM) b | `Q322` · not captured | 7.8 | nM | not captured | llm (not captured) | tab_0:row15:col4 |
+| PK (driver) | 20 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_0:row15:col5 |
+| PD (effect) | 21 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.044 | nM | not captured | llm (not captured) | tab_0:row16:col3 |
+| PD (effect) | 21 — CC 50 (μM) b | `Q322` · not captured | 6.7 | nM | not captured | llm (not captured) | tab_0:row16:col4 |
+| PK (driver) | 21 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 49.8 | not captured | not captured | llm (not captured) | tab_0:row16:col5 |
+| PD (effect) | 22 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.015 | nM | not captured | llm (not captured) | tab_0:row17:col3 |
+| PD (effect) | 22 — CC 50 (μM) b | `Q322` · not captured | 4.4 | nM | not captured | llm (not captured) | tab_0:row17:col4 |
+| PK (driver) | 22 — MLM CL h (mL/min/kg) c | `Q22` · not captured | 85.1 | not captured | not captured | llm (not captured) | tab_0:row17:col5 |
+| PD (effect) | 23 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.018 | nM | not captured | llm (not captured) | tab_0:row18:col3 |
+| PD (effect) | 23 — CC 50 (μM) b | `Q322` · not captured | 2.8 | nM | not captured | llm (not captured) | tab_0:row18:col4 |
+| PK (driver) | 23 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 62.4 | not captured | not captured | llm (not captured) | tab_0:row18:col5 |
+| PD (effect) | 24 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.25 | nM | not captured | llm (not captured) | tab_0:row19:col3 |
+| PD (effect) | 24 — CC 50 (μM) b | `Q322` · not captured | 46.9 | nM | not captured | llm (not captured) | tab_0:row19:col4 |
+| PK (driver) | 24 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 84 | not captured | not captured | llm (not captured) | tab_0:row19:col5 |
+| PD (effect) | 25 — CC 50 (μM) b | `Q322` · not captured | 6.0 | nM | not captured | llm (not captured) | tab_0:row20:col4 |
+| PD (effect) | 26 — EC 50 (CPE, μM) a | `Q321` · not captured | 37.9 | nM | not captured | llm (not captured) | tab_0:row21:col3 |
+| PK (driver) | 26 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 43.0 | not captured | not captured | llm (not captured) | tab_0:row21:col5 |
+| PD (effect) | 27 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.93 | nM | not captured | llm (not captured) | tab_0:row22:col3 |
+| PK (driver) | 27 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 65.3 | not captured | not captured | llm (not captured) | tab_0:row22:col5 |
+| PD (effect) | 28 — EC 50 (CPE, μM) a | `Q321` · not captured | 0.21 | nM | not captured | llm (not captured) | tab_0:row23:col3 |
+| PK (driver) | 28 — MLM CL h (mL/min/kg) c | `Q358` · not captured | 37.2 | not captured | not captured | llm (not captured) | tab_0:row23:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

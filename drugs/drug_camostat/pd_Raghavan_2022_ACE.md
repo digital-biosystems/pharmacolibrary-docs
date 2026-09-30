@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metadichol (measured concentrations) drives ACE inhibition (in ng/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Metadichol (and camostat mesylate as comparator) directly inhibit ACE enzymatic activity in vitro, measured as inhibition of substrate cleavage (fluorescence), with IC50 values reported in ng/mL for Metadichol and μg/mL for camostat mesylate; the paper does not state the numeric IC50 values, an Imax/Emax, or any kinetic mechanism beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raghavan_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Norepinephrine drives cutaneous vascular conductance (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bretylium tosylate was not itself modeled as a concentration-effect driver; it was perfused intradermally to locally inhibit presynaptic noradrenergic vesicle release, and the modeled relation was a sigmoid (logistic) dose-response of exogenous norepinephrine (1×10⁻⁸ to 10⁻² log M) decreasing cutaneous vascular conductance. In young subjects the norepinephrine EC50 was similar with and without bretylium pretreatment, while in older subjects the bretylium-pretreated dose-response curve was shifted rightward, indicating reduced vasoconstrictor responsiveness when endogenous release was blocked.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_2004`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

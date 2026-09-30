@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoflurane (measured concentrations) drives glycine receptor current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for methoxyflurane; it reports that volatile anaesthetics, including methoxyflurane, potentiate glycine-activated chloride currents in Xenopus oocytes expressing glycine receptors and in rat medullary neurones, with potentiation at 1 MAC of 60–220% in oocytes and 40–80% in neurones (glycine fixed at about one third of its control EC50, which was 215±5 µM in oocytes and 30±1 µM in neurones). No Imax, IC50, kin, kout, ke0 or other model parameters for methoxyflurane are given, and the mechanism of potentiation is not stated beyond the observation that anaesthetics did not affect the chloride reversal potential.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Downie_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

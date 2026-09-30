@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives name (in % phenylephrine precontraction): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Silymarin (SM) was tested as a fixed 50 mg/L bath incubation (not a concentration–response of SM itself) on acetylcholine-induced relaxation (% phenylephrine precontraction) in endothelium-intact aortic rings from aged rats; the paper does not report an Emax/IC50/EC50 model fit for this response. Mechanistically, the paper indicates the vascular effect of SM is nitric oxide–dependent, since co-incubation with L-NAME (100 mM) abolished SM's effects, while indomethacin (10 mM) did not alter them.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Demirci_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

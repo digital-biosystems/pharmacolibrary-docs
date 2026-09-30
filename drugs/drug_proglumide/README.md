@@ -20,10 +20,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Martins_2006](drugs/drug_proglumide/pd_Martins_2006_unknown.md) | Martins SR et al., Activation of neural cholecystokinin-1…, Brazilian journal of medica… (2006) | [10.1590/s0100-879x2006000200014](https://doi.org/10.1590/s0100-879x2006000200014) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Blackmore_1992](drugs/drug_proglumide/pd_Blackmore_1992_unknown.md) | Blackmore M et al., Autocrine stimulation of growth of AR4-…, British journal of cancer (1992) | [10.1038/bjc.1992.212](https://doi.org/10.1038/bjc.1992.212) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Martins_2006_unknown](drugs/drug_proglumide/pd_Martins_2006_unknown.md) | duodenal longitudinal muscle relaxation ← CCK-8S · direct Emax (saturable) effect | — | Martins SR et al., Activation of neural cholecystokinin-1…, Brazilian journal of medica… (2006) | [10.1590/s0100-879x2006000200014](https://doi.org/10.1590/s0100-879x2006000200014) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Blackmore_1992_unknown](drugs/drug_proglumide/pd_Blackmore_1992_unknown.md) | cell growth ← gastrin/CCK receptor antagonists · direct Emax (saturable) effect | — | Blackmore M et al., Autocrine stimulation of growth of AR4-…, British journal of cancer (1992) | [10.1038/bjc.1992.212](https://doi.org/10.1038/bjc.1992.212) |
 
 ## ADME sites
 

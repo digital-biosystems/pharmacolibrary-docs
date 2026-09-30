@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 43 (measured concentrations) drives YAP/TAZ N/C ratio (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Compound 43 (an acid ceramidase inhibitor) concentration-dependently inhibits YAP/TAZ nuclear localization (decreased YAP/TAZ N/C ratio) in hepatic stellate cells, with an effect at 86 nM versus 75 μM for B13; the paper does not state a PD model, IC50/EC50 for this response, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beresis_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

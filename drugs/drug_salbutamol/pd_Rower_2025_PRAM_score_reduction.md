@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium drives Pediatric Respiratory Assessment Measure score reduction (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Intravenous magnesium sulfate exposure (cumulative serum magnesium AUC0-2 h, mg h/L) acts on the PRAM score reduction in pediatric asthma exacerbation via a linear exposure-response relationship (stimulation of score reduction); the paper does not state a mechanistic PD model with parameters such as Imax, IC50, or kout. Increasing total magnesium AUC0-2 h from 40.5 mg h/L (placebo mean) to 61.4 mg h/L (treated mean) changes PRAM score reduction from -0.4 to -2.4, and an ROC threshold of 63.1 mg h/L is associated with a PRAM reduction of at least three points.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rower_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

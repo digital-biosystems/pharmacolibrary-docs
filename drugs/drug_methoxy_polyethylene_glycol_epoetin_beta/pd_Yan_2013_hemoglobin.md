@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exogenous EPO drives name (in HGB): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Exogenous EPO (methoxy polyethylene glycol epoetin beta) concentrations (mIU/ml) stimulate hemoglobin (HGB, g/dl) production via binding to the EPO receptor on erythroid precursor cells, modeled with a PK/PD model incorporating the operational model of agonism (TMDD), where C50 quantifies the minimal effective concentration as the concentration producing half-maximal stimulation of erythroid precursor proliferation; the paper does not report numeric values for C50, Emax, or rate constants in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yan_2013`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

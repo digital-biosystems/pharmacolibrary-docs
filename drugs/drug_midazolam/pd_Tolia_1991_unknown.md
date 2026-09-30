@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives sedation score (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (µg/L) were related to a categorical sedation score in children during endoscopy; sedation scores paralleled the decline in plasma midazolam concentration, consistent with rapid plasma–CNS equilibration, but the paper reports no formal PD model and gives no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values. Mean peak concentration at maximum sedation (5 min) was 229 ± 39 µg/L, with a mean sedative dose of 0.08 mg/kg (range 0.05–0.1 mg/kg), clearance 10.0 ± 5.0 ml/min/kg, and terminal half-life 47 ± 26 min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tolia_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

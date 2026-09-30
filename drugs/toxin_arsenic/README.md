@@ -19,14 +19,14 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_AG.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_Cl.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_DOC.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_Fe.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_K.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024](drugs/toxin_arsenic/pd_Zhang_2024_Na.md) | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_AG](drugs/toxin_arsenic/pd_Zhang_2024_AG.md) | {'name': 'anion gap ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_Cl](drugs/toxin_arsenic/pd_Zhang_2024_Cl.md) | {'name': 'serum chloride ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_DOC](drugs/toxin_arsenic/pd_Zhang_2024_DOC.md) | {'name': 'serum deoxycorticosterone ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_Fe](drugs/toxin_arsenic/pd_Zhang_2024_Fe.md) | {'name': 'serum iron ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_K](drugs/toxin_arsenic/pd_Zhang_2024_K.md) | {'name': 'serum potassium ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2024_Na](drugs/toxin_arsenic/pd_Zhang_2024_Na.md) | {'name': 'serum sodium ← blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) · direct linear effect | — | Zhang H et al., Association and mediation analyses amon…, Scientific reports (2024) | [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5) |
 
 ## Pharmacogenomics (PGx)
 

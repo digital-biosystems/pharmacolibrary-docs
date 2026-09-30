@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from this paper's PK model) drives mean arterial blood pressure (in mmHg): indirect response — drug inhibits the production of mean arterial blood pressure.
+
+**Model:** No model was generated from this record.
+
+> In SH rats given single oral doses of 2, 4, and 8 mg/kg telmisartan, plasma telmisartan concentrations (ng•mL⁻¹) inhibit the zero-order production rate (Kin) of mean arterial blood pressure in an indirect response (inhibition-of-input) model, with baseline R0 = Kin/Kout. Estimated Kout were 36.7, 34.6, and 31.9 h⁻¹ and IC50 86.2, 95.8, and 91.1 ng•mL⁻¹ at the three doses; an effect-compartment model (ke0 29.4, 33.8, 28.7 h⁻¹; IC50 78.2, 85.7, 80.9 ng•mL⁻¹) fit worse by Akaike's criterion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hao_2007`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

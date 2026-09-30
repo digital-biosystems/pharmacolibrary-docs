@@ -25,9 +25,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [de_2022](drugs/drug_calcium_pantothenate/pd_de_2022_parasitemia.md) | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [de_2022_parasitemia](drugs/drug_calcium_pantothenate/pd_de_2022_parasitemia.md) | name ← MMV693183 · direct Emax (saturable) effect | — | de Vries LE et al., Preclinical characterization and target…, Nature communications (2022) | [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5) |
 
 ## ADME sites
 

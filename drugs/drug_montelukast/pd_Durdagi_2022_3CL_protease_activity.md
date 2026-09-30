@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montelukast (concentrations from the PK model of Knorr_2006) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Montelukast (μM) directly inhibits SARS-CoV-2 3CL (Mpro) protease activity (%), measured as fluorescence from substrate cleavage; the paper states a concentration-dependent inhibition with IC50 = 28.36 μM, 74.04% inhibition at 100 μM and 60.59% at 50 μM, but gives no kinetic PD model (no kin, kout, ke0, or Hill coefficient).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Durdagi_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,20 +31,20 @@ Durdagi S; Avsar T; Orhan MD; Serhatli M; Balcioglu BK; Ozturk HU; et al. et al.
   ·  DOI: [10.1016/j.ymthe.2021.10.014](https://doi.org/10.1016/j.ymthe.2021.10.014)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 92.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
-| IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 35.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
-| IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 23.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
-| IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 92.39 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
-| IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 38.80 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
-| IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 28.11 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
-| IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 72.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col3 |
-| IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 47.1 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
-| IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 50.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col5 |
-| IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 117.6 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col3 |
-| IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 38.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col4 |
-| IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 38.5 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 92.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
+| PD (effect) | IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 35.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
+| PD (effect) | IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 23.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
+| PD (effect) | IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 92.39 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| PD (effect) | IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 38.80 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
+| PD (effect) | IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 28.11 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
+| PD (effect) | IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 72.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col3 |
+| PD (effect) | IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 47.1 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
+| PD (effect) | IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 50.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col5 |
+| PD (effect) | IC50 values of montelukast (μM) — 24 | `Q322` · not captured | 117.6 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col3 |
+| PD (effect) | IC50 values of montelukast (μM) — 48 | `Q322` · not captured | 38.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col4 |
+| PD (effect) | IC50 values of montelukast (μM) — 72 | `Q322` · not captured | 38.5 | μM | not captured | llm_confirmed (not captured) | tbl1:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

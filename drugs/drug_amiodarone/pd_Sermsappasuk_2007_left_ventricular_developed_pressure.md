@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil (measured concentrations) drives name (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Verapamil (tissue concentration) reduces left ventricular developed pressure (mmHg) in perfused rat hearts via a direct sigmoid Emax negative inotropic effect with tolerance development (mean delay time 12 min; g = 0.16, i.e. 16% reduction of steady-state effect), with EC50 16.4 nM and Emax 50.5 mmHg (baseline E0 71.1 mmHg); amiodarone (1 µM in perfusate) was present as a modifier but did not influence verapamil uptake or partitioning.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sermsappasuk_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Sermsappasuk P; Abdelrahman O; Weiss M et al. (2007). Pharmaceutical research 24
   ·  DOI: [10.1007/s11095-006-9117-z](https://doi.org/10.1007/s11095-006-9117-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max | `Q320` · not captured | 50.5 | mmHg | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
-| EC 50 | `Q321` · not captured | 16.4 | nM | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
-| E 0 | `Q324` · not captured | 71.1 | mmHg | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max | `Q320` · not captured | 50.5 | mmHg | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
+| PD (effect) | EC 50 | `Q321` · not captured | 16.4 | nM | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
+| PD (effect) | E 0 | `Q324` · not captured | 71.1 | mmHg | not captured | review_gapfill (not captured) | Sermsappasuk_2007:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

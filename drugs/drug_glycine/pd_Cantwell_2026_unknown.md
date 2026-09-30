@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RPI-GLYT2-82 (measured concentrations) drives cold allodynia (in response rate) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> RPI-GLYT2-82, an allosteric non-competitive GlyT2 inhibitor, inhibits glycine-induced transport currents (IC50 554 nM vs 11.4 nM for ORG25543), with currents recovering within 5 min of drug removal; in CCI mice, i.p. doses of 50 and 100 mg/kg reduced cold allodynia response rate with peak anti-allodynia within 2 hours, comparable to gabapentin. The paper does not state a PD model (e.g., Imax/IC50/kin/kout) for the cold allodynia response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cantwell_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

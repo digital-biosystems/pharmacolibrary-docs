@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buparlisib (measured concentrations) drives name (in % of starting size) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Buparlisib (free Bup and the SS-Bup conjugate) concentrations in µM inhibit 3D spheroid growth (spheroid size, % of starting size) in U87MG, U118MG and T98G cells, with dose-dependent inhibition reaching ~90% at ≥50 µM SS-Bup and ~96–97% endpoint size with 50 µM SS-Bup or 200 µM free Bup; the paper does not state a formal PD model or any potency/rate parameters (no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma), and only speculates that the mechanism may involve cytoskeletal disruption causing spheroid compaction, while polymeric P-SS-Bup caused growth arrest without shrinkage.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Havelkova_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

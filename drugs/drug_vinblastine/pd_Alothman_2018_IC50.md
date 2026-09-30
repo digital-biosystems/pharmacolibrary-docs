@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cenchrus ciliaris extracts (measured concentrations) drives cell viability (in mg/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine sulphate served as a reference standard in vitro, directly inhibiting viability/growth of six tumour cell lines (A-549, CACO, HCT-116, HeLa, HepG-2, MCF-7/PC3), with IC50 values reported in µg/ml (e.g. 2.93 ± 0.3 µg/ml against HepG-2); the paper gives no PD model, mechanism, or parameters such as Emax, kin, kout or ke0, only IC50 values estimated from dose-response survival curves.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alothman_2018`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

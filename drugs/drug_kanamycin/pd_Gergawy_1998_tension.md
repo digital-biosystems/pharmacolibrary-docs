@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomycin (measured concentrations) drives isometric tension (in % of maximum tension): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Kanamycin concentration-dependently decreased isometric tension (% of maximum) in canine basilar artery rings precontracted with oxyhemoglobin (10 mM), with an EC50 of 3.9±0.5 mM (n=5); it was the least potent of the aminoglycosides tested (neomycin EC50 0.46±0.1 mM). The paper does not state an explicit PD mechanism (e.g. Imax, kin/kout or effect-compartment parameters are not given), though the relaxation is attributed to inhibition of the OxyHb-induced contraction, with potency roughly corresponding to the number of positive charges in the molecules.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gergawy_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

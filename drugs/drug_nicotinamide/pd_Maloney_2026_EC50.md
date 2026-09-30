@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AG-670 (measured concentrations) drives NNMT enzyme activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AG-670 directly inhibits isolated NNMT enzyme activity with an EC50 of 2.7 µM (95% CI: 1.4–5.8), fitted by a four-parameter logistic (variable slope) model; the paper does not report a PD turnover/Emax model or further rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maloney_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

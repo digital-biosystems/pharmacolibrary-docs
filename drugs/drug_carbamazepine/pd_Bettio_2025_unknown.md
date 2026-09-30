@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbamazepine, phenytoin, valproic acid, lacosamide, cenobamate, retigabine drive seizure protection (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the MES seizure-protection model, carbamazepine (a sodium channel blocker) dose-dependently reduces the fraction of mice/rats seizing, with an ED50 of 9.67 mg/kg in mice and 4.39 mg/kg in rats; plasma EC50 was 13.8 µM in mice vs 4.55 µM in rats and brain EC50 32.5 µM (mouse) vs 4.70 µM (rat). Dose–response curves were fitted with a Hill–Langmuir (Emax-type) equation; the paper does not describe a specific inhibitory production/elimination mechanism beyond CBZ's sodium channel blockade.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettio_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,50 +31,50 @@ Bettio L; Bankar G; Dubé CM; Nelkenbrecher K; Filipovic M; Singh S; et al. et a
   ·  DOI: [10.3390/ijms26157029](https://doi.org/10.3390/ijms26157029)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ED50(mg/kg) — CBZ | `Q321` · not captured | 9.67 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col2 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 4.70 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col3 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 6.91 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col4 |
-| ED50(mg/kg) — PHT | `Q321` · not captured | 9.81 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col5 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 2.66 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col6 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 11.5 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col7 |
-| ED50(mg/kg) — VPA | `Q321` · not captured | 196 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col8 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 307 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col9 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 2.05 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col10 |
-| ED50(mg/kg) — LSM | `Q321` · not captured | 15.2 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col11 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 12.2 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col12 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 1.21 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col13 |
-| ED50(mg/kg) — CNB | `Q321` · not captured | 7.05 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col14 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 10.7 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col15 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 2.33 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col16 |
-| ED50(mg/kg) — RTG | `Q321` · not captured | 42.9 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col17 |
-| ED50(mg/kg) — Rat | `Q321` · not captured | 3.01 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col18 |
-| ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 1.19 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col19 |
-| EC50 (µM)Plasma — CBZ | `Q321` · not captured | 13.8 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col2 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 1.03 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col3 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 2.28 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col4 |
-| EC50 (µM)Plasma — PHT | `Q321` · not captured | 27.6 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col5 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.83 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col6 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.33 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col7 |
-| EC50 (µM)Plasma — VPA | `Q321` · not captured | 1668 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col8 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.24 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col9 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.61 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col10 |
-| EC50 (µM)Plasma — LSM | `Q321` · not captured | 19.3 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col11 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.49 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col12 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.57 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col13 |
-| EC50 (µM)Plasma — CNB | `Q321` · not captured | 66.0 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col14 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.67 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col15 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 0.56 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col16 |
-| EC50 (µM)Plasma — RTG | `Q321` · not captured | 2.26 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col17 |
-| EC50 (µM)Plasma — Rat | `Q321` · not captured | 2.06 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col18 |
-| EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 0.77 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col19 |
-| EC50 (µM)Brain — CBZ | `Q321` · not captured | 32.5 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col2 |
-| EC50 (µM)Brain — PHT | `Q321` · not captured | 30.6 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col5 |
-| EC50 (µM)Brain — VPA | `Q321` · not captured | 630 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col8 |
-| EC50 (µM)Brain — LSM | `Q321` · not captured | 14.8 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col11 |
-| EC50 (µM)Brain — CNB | `Q321` · not captured | 24.9 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col14 |
-| EC50 (µM)Brain — RTG | `Q321` · not captured | 3.58 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col17 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ED50(mg/kg) — CBZ | `Q321` · not captured | 9.67 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col2 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 4.70 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col3 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 6.91 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col4 |
+| PD (effect) | ED50(mg/kg) — PHT | `Q321` · not captured | 9.81 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col5 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 2.66 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col6 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 11.5 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col7 |
+| PD (effect) | ED50(mg/kg) — VPA | `Q321` · not captured | 196 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col8 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 307 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col9 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 2.05 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col10 |
+| PD (effect) | ED50(mg/kg) — LSM | `Q321` · not captured | 15.2 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col11 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 12.2 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col12 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 1.21 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col13 |
+| PD (effect) | ED50(mg/kg) — CNB | `Q321` · not captured | 7.05 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col14 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 10.7 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col15 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 2.33 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col16 |
+| PD (effect) | ED50(mg/kg) — RTG | `Q321` · not captured | 42.9 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col17 |
+| PD (effect) | ED50(mg/kg) — Rat | `Q321` · not captured | 3.01 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col18 |
+| PD (effect) | ED50(mg/kg) — Mouse/rat fold | `Q321` · not captured | 1.19 | mg/kg | not captured | llm (not captured) | ijms-26-07029-t001:row2:col19 |
+| PD (effect) | EC50 (µM)Plasma — CBZ | `Q321` · not captured | 13.8 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col2 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 1.03 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col3 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 2.28 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col4 |
+| PD (effect) | EC50 (µM)Plasma — PHT | `Q321` · not captured | 27.6 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col5 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.83 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col6 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.33 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col7 |
+| PD (effect) | EC50 (µM)Plasma — VPA | `Q321` · not captured | 1668 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col8 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.24 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col9 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.61 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col10 |
+| PD (effect) | EC50 (µM)Plasma — LSM | `Q321` · not captured | 19.3 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col11 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.49 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col12 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 1.57 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col13 |
+| PD (effect) | EC50 (µM)Plasma — CNB | `Q321` · not captured | 66.0 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col14 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 0.67 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col15 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 0.56 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col16 |
+| PD (effect) | EC50 (µM)Plasma — RTG | `Q321` · not captured | 2.26 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col17 |
+| PD (effect) | EC50 (µM)Plasma — Rat | `Q321` · not captured | 2.06 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col18 |
+| PD (effect) | EC50 (µM)Plasma — Mouse/rat fold | `Q321` · not captured | 0.77 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row3:col19 |
+| PD (effect) | EC50 (µM)Brain — CBZ | `Q321` · not captured | 32.5 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col2 |
+| PD (effect) | EC50 (µM)Brain — PHT | `Q321` · not captured | 30.6 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col5 |
+| PD (effect) | EC50 (µM)Brain — VPA | `Q321` · not captured | 630 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col8 |
+| PD (effect) | EC50 (µM)Brain — LSM | `Q321` · not captured | 14.8 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col11 |
+| PD (effect) | EC50 (µM)Brain — CNB | `Q321` · not captured | 24.9 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col14 |
+| PD (effect) | EC50 (µM)Brain — RTG | `Q321` · not captured | 3.58 | unknown | not captured | llm_confirmed (not captured) | ijms-26-07029-t001:row4:col17 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

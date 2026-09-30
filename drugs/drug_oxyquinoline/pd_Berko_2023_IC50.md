@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lorlatinib (measured concentrations) drives Cell viability (in nM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Lorlatinib concentrations (0–10000 nM) inhibit ALK-TKD kinase activity (and, in cell lines, cell viability measured by CellTiter-Glo after 120 h), acting as a competitive ATP-site inhibitor; IC50 values (nM) were obtained by a 3-parameter inhibitor-vs-normalized-response fit, and a kinetic model defined IC50 as the concentration depleting 50% of the ALK/ATP complex. The excerpts do not report specific IC50, Emax, or rate values, and no Emax model parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Berko_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

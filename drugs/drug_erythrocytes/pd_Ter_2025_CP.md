@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eculizumab drives classical pathway activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Eculizumab concentrations inhibit classical complement pathway (CP) activity via blockade of complement C5, described with an inhibitory Emax-type PD model; however, the excerpts do not report the PD potency parameters (Imax/IC50) or an effect-compartment link, and the listed parameter values (e.g. clearance 0.163 L/day, Vmax 25.6 mg/day, Km 13.5 mg/L) pertain to the two-compartment PK model with parallel linear and nonlinear elimination.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ter_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Ter Avest M; Langemeijer SMC; van den Heuvel LPWJ; Baas LM; van de Kar NCAJ; Ter
   ·  DOI: [10.1007/s40262-025-01536-x](https://doi.org/10.1007/s40262-025-01536-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Clearance (L/day) — Population estimate (RSE%) | `Q22` · not captured | 0.163 | L/day | not captured | exact (not captured) | Tab2:row1:col1 |
-| IIVCL (ω2) — Population estimate (RSE%) | `Q312` · not captured | 0.155 | RSE% | not captured | llm (not captured) | Tab2:row2:col1 |
-| IOVCL in case of aHUS (ω2) — Population estimate (RSE%) | `Q313` · not captured | 0.112 | RSE% | not captured | llm (not captured) | Tab2:row3:col1 |
-| Volume of distribution 1 (L) — Population estimate (RSE%) | `Q63` · not captured | 4.3 | L | not captured | llm_corrected (not captured) | Tab2:row4:col1 |
-| IIVV1 (ω2) — Population estimate (RSE%) | `Q312` · not captured | 0.0812 | RSE% | not captured | llm (not captured) | Tab2:row5:col1 |
-| Volume of distribution 2 (L) — Population estimate (RSE%) | `Q64` · not captured | 2.6 | L | not captured | llm_corrected (not captured) | Tab2:row6:col1 |
-| Q (L/day) — Population estimate (RSE%) | `Q30` · not captured | 0.62 | L/day | not captured | exact (not captured) | Tab2:row7:col1 |
-| Maximum rate (Vmax) [mg/day] — Population estimate (RSE%) | `Q66` · not captured | 25.6 | mg/day | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
-| Concentration for 50% of the maximum rate (Km) [mg/L] — Population estimate (RSE%) | `Q1` · not captured | 13.5 | mg/L | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
-| Additional error — Population estimate (RSE%) | `Q317` · not captured | 19.3 | RSE% | not captured | llm (not captured) | Tab2:row11:col1 |
-| Proportional error assay 1 (Radboudumc) — Population estimate (RSE%) | `Q316` · not captured | 0.0186 | Radboudumc | not captured | llm_confirmed (not captured) | Tab2:row12:col1 |
-| Proportional error assay 2 (Sanquin) — Population estimate (RSE%) | `Q316` · not captured | 0.187 | Sanquin | not captured | llm_confirmed (not captured) | Tab2:row13:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Clearance (L/day) — Population estimate (RSE%) | `Q22` · not captured | 0.163 | L/day | not captured | exact (not captured) | Tab2:row1:col1 |
+| variability | IIVCL (ω2) — Population estimate (RSE%) | `Q312` · not captured | 0.155 | RSE% | not captured | llm (not captured) | Tab2:row2:col1 |
+| variability | IOVCL in case of aHUS (ω2) — Population estimate (RSE%) | `Q313` · not captured | 0.112 | RSE% | not captured | llm (not captured) | Tab2:row3:col1 |
+| PK (driver) | Volume of distribution 1 (L) — Population estimate (RSE%) | `Q63` · not captured | 4.3 | L | not captured | llm_corrected (not captured) | Tab2:row4:col1 |
+| variability | IIVV1 (ω2) — Population estimate (RSE%) | `Q312` · not captured | 0.0812 | RSE% | not captured | llm (not captured) | Tab2:row5:col1 |
+| PK (driver) | Volume of distribution 2 (L) — Population estimate (RSE%) | `Q64` · not captured | 2.6 | L | not captured | llm_corrected (not captured) | Tab2:row6:col1 |
+| PK (driver) | Q (L/day) — Population estimate (RSE%) | `Q30` · not captured | 0.62 | L/day | not captured | exact (not captured) | Tab2:row7:col1 |
+| PK (driver) | Maximum rate (Vmax) [mg/day] — Population estimate (RSE%) | `Q66` · not captured | 25.6 | mg/day | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
+| PK (driver) | Concentration for 50% of the maximum rate (Km) [mg/L] — Population estimate (RSE%) | `Q1` · not captured | 13.5 | mg/L | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
+| variability | Additional error — Population estimate (RSE%) | `Q317` · not captured | 19.3 | RSE% | not captured | llm (not captured) | Tab2:row11:col1 |
+| variability | Proportional error assay 1 (Radboudumc) — Population estimate (RSE%) | `Q316` · not captured | 0.0186 | Radboudumc | not captured | llm_confirmed (not captured) | Tab2:row12:col1 |
+| variability | Proportional error assay 2 (Sanquin) — Population estimate (RSE%) | `Q316` · not captured | 0.187 | Sanquin | not captured | llm_confirmed (not captured) | Tab2:row13:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

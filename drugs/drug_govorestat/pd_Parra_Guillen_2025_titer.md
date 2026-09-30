@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** V937 drives ADA (in neutralizing anti-V937 antibody titers): indirect response — drug inhibits the production of ADA.
+
+**Model:** No model was generated from this record.
+
+> Serum V937 (oncolytic virus, copies/mL) stimulates the production of neutralizing anti-V937 antibodies (ADA, modeled as reciprocal titer/dilution factor) via a saturable (Emax-type) production model with EC50 = 7.54 × 10^7 copies/mL, with ADA appearance delayed through two transit compartments (mean transit time 24.3 days) and a slower ADA degradation rate than the transit rate constant; the paper does not state Imax, kin, kout, or ke0 values, and no impact of ADA on V937 clearance was found.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parra-Guillen_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

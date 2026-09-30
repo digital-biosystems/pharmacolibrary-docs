@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Iron (concentrations from the PK model of Ekobena_2025) drives hepcidin (in nmol/L): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Serum iron (μmol/L) acts as a driver of serum hepcidin (nmol/L) in a joint turnover model where iron stimulates the production rate of hepcidin (k_synH), rather than acting via a direct Emax or effect-compartment link; the paper does not report potency parameters (Imax, IC50/EC50) or rate constants (kin, kout, ke0) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Angeli_2016`
 - **model family:** `linear`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ondansetron (measured concentrations) drives ASP+ intracellular accumulation (in fluorescence) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In OCT2- and MATE1-overexpressing HEK293 cells, the 5-HT3 antagonists (including tropisetron) concentration-dependently inhibited the intracellular accumulation of the probe substrate ASP+ (fluorescence) by inhibiting transporter-mediated uptake/efflux; IC50 values were 31.3 µM (tropisetron, OCT2) and 1.6 µM (tropisetron, MATE1), with OCT2 and MATE1 transport inhibited up to ~90% and ~70%, respectively. The paper does not state a formal PD model (e.g., Emax parameters, kin/kout, or ke0) beyond these IC50 estimates.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `George_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ George B; Wen X; Jaimes EA; Joy MS; Aleksunes LM et al. (2021). International jo
   ·  DOI: [10.3390/ijms22126439](https://doi.org/10.3390/ijms22126439)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| OCT2 IC50 (µM) — Ondansetron | `Q322` · not captured | 2.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col2 |
-| OCT2 IC50 (µM) — Palonosetron | `Q322` · not captured | 2.2 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col3 |
-| OCT2 IC50 (µM) — Granisetron | `Q322` · not captured | 3.8 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col4 |
-| OCT2 IC50 (µM) — Tropisetron | `Q322` · not captured | 31.3 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col5 |
-| OCT2 IC50 (µM) — Dolasetron | `Q322` · not captured | 85.4 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col6 |
-| OCT2 IC50 (µM) — Cimetidine | `Q322` · not captured | 24.5 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col7 |
-| MATE1 IC50 (µM) — Ondansetron | `Q322` · not captured | 0.1 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col2 |
-| MATE1 IC50 (µM) — Palonosetron | `Q322` · not captured | 1.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col3 |
-| MATE1 IC50 (µM) — Granisetron | `Q322` · not captured | 5.0 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col4 |
-| MATE1 IC50 (µM) — Tropisetron | `Q322` · not captured | 1.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col5 |
-| MATE1 IC50 (µM) — Dolasetron | `Q322` · not captured | 27.4 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col6 |
-| MATE1 IC50 (µM) — Cimetidine | `Q322` · not captured | 0.23 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | OCT2 IC50 (µM) — Ondansetron | `Q322` · not captured | 2.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col2 |
+| PD (effect) | OCT2 IC50 (µM) — Palonosetron | `Q322` · not captured | 2.2 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col3 |
+| PD (effect) | OCT2 IC50 (µM) — Granisetron | `Q322` · not captured | 3.8 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col4 |
+| PD (effect) | OCT2 IC50 (µM) — Tropisetron | `Q322` · not captured | 31.3 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col5 |
+| PD (effect) | OCT2 IC50 (µM) — Dolasetron | `Q322` · not captured | 85.4 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col6 |
+| PD (effect) | OCT2 IC50 (µM) — Cimetidine | `Q322` · not captured | 24.5 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row0:col7 |
+| PD (effect) | MATE1 IC50 (µM) — Ondansetron | `Q322` · not captured | 0.1 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col2 |
+| PD (effect) | MATE1 IC50 (µM) — Palonosetron | `Q322` · not captured | 1.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col3 |
+| PD (effect) | MATE1 IC50 (µM) — Granisetron | `Q322` · not captured | 5.0 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col4 |
+| PD (effect) | MATE1 IC50 (µM) — Tropisetron | `Q322` · not captured | 1.6 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col5 |
+| PD (effect) | MATE1 IC50 (µM) — Dolasetron | `Q322` · not captured | 27.4 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col6 |
+| PD (effect) | MATE1 IC50 (µM) — Cimetidine | `Q322` · not captured | 0.23 | µM | not captured | llm_confirmed (not captured) | ijms-22-06439-t001:row1:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

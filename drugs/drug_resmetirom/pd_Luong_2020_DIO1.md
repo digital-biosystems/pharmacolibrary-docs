@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VK2809A drives DIO1 (in RQ): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In Huh-7 cells, resmetirom (MGL-3196) directly stimulates DIO1 transcription via THRβ agonism in a dose-dependent manner, with a mean EC50 of 245.8 nM (T3: 1.2 nM; GC-1: 3.6 nM); in HFD-fed rats, single oral doses of 1.5 and 5 mg/kg MGL-3196 increased liver Dio1 RNA (RQ) dose-dependently at 24 h post-dose (maximal 1.9-fold increase at 5 mg/kg, no significant effect at 0.5 mg/kg). The paper does not report an Emax, kin/kout, or ke0 for this response, and no effect-compartment or turnover mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

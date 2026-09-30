@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** H2S (measured concentrations) drives name (in SSP4 fluorescence): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> H2S (0–1.75 mM) concentration-dependently stimulates polysulfide production (SSP4 fluorescence) after 90 min in normoxia with 1 μM SOD, with an apparent EC50 of ~380 μM H2S and peak production at 750 μM; above 1 mM H2S the response is inhibited (apparent IC50 ~1.5 mM, also reported as 1.25 mM, complete inhibition at 1.75 mM), attributed to H2S inhibition of SOD. No mechanism model (e.g., kin/kout or effect compartment) is given; the record lists a sigmoid Emax fit, and without SOD the EC50 was not determined and no H2S-dependent inhibition was seen.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Olson_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

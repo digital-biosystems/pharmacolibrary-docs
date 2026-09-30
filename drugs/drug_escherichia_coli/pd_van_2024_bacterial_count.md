@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Temocillin (measured concentrations) drives name (in cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Temocillin concentrations (mg/L) act on Escherichia coli total bacterial counts (cfu/mL) in static time–kill and hollow-fibre infection model data via a sigmoid Emax concentration–effect relationship inhibiting bacterial growth, with the population split into pre-existing susceptible and less-susceptible subpopulations to capture regrowth/resistance amplification. The excerpts do not report numeric values for Emax, IC50/EC50, gamma, or growth/kill rate constants, and no effect-compartment link is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

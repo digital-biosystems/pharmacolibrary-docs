@@ -23,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Taylor_1980_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_reference.md) | 1-compartment (no model) | 1 | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md) | 1-compartment (no model) | 0 | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Straehl_1985_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md) | general linear (no model) | 4 | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Taylor_1980_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Taylor1980_reference.md) | — | 1-compartment (no model) | 1 | Taylor T et al., Pharmacokinetics of isosorbide dinitrat…, Biopharmaceutics & drug dis… (1980) | [10.1002/bdd.2510010310](https://doi.org/10.1002/bdd.2510010310) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Doyle_1981_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Doyle1981_reference.md) | — | 1-compartment (no model) | 0 | Doyle E et al., Pharmacokinetics of isosorbide dinitrat…, Journal of pharmaceutical s… (1981) | [10.1002/jps.2600701122](https://doi.org/10.1002/jps.2600701122) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Straehl_1985_reference](drugs/drug_isosorbide_dinitrate/IsosorbideDinitrate_Straehl1985_reference.md) | — | general linear (no model) | 4 | Straehl P et al., Isosorbide dinitrate bioavailability, k…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.150](https://doi.org/10.1038/clpt.1985.150) |
 
 ## ADME sites
 

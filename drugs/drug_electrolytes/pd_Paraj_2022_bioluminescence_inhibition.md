@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ionic liquids and inorganic salts (measured concentrations) drive name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations (mg/L) of ionic liquids (EAN, EIm NO3, C4C1pyrr TFSI, C4C1C1Im TFSI) and their salt-doped mixtures were related to percent bioluminescence inhibition of A. fischeri via a logistic (sigmoid Emax) concentration–response fit at 5, 15 and 30 min exposure, yielding EC50 values (e.g. EIm NO3 598 mg/L at 30 min vs 1073 mg/L for EIm NO3 + Li salt); the paper reports EC50/EC10/EC20 as potency metrics but does not state a mechanistic PD model (no Imax, kin, kout or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parajó_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

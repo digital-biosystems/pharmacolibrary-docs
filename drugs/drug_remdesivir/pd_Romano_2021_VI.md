@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GS-443902 drives viral inhibition (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Remdesivir (via its active metabolite GS-443902) was modelled with an Emax-type inhibitory relationship between drug concentration and percent viral inhibition in Vero cells; the paper does not state an explicit PD mechanism beyond this direct concentration-effect inhibition. Reported potency was an IC50 of 0.006 mg/L for remdesivir (versus 0.36 mg/L for chloroquine and 0.242 mg/L for hydroxychloroquine); no Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Romano_2021`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Romano F; D'Agate S; Della Pasqua OD et al. (2021). Pharmaceutics 13
   ·  DOI: [10.3390/pharmaceutics13081299](https://doi.org/10.3390/pharmaceutics13081299)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Chloroquine — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.36 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row1:col3 |
-| Hydroxy-chloroquine — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.242 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row2:col3 |
-| Remdesivir — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.006 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row3:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Chloroquine — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.36 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row1:col3 |
+| PD (effect) | Hydroxy-chloroquine — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.242 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row2:col3 |
+| PD (effect) | Remdesivir — Reported IC50 (Value or Range) (mg/L) | `Q322` · not captured | 0.006 | mg/L | not captured | llm (not captured) | pharmaceutics-13-01299-t001:row3:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

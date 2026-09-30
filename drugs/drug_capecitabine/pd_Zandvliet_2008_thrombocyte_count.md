@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Indisulam drives thrombocyte count (in ×10^9/l): indirect response — drug inhibits the loss of thrombocyte count.
+
+**Model:** No model was generated from this record.
+
+> In a semiphysiological indirect-response model, 5'-DFUR (capecitabine metabolite) plasma concentrations inhibit the production (input rate kin) of the enzyme/cell turnover chain driving thrombocyte count, via an Emax function (1 − C/(C + C50)) with C50 = 0.0167 nM (RSE 559%) for 50% reduction of kin,enzyme; transit times MTT of 138 h (RSE 0.07) and 93.7 h (RSE 0.13) h are reported for the cell chains.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zandvliet_2008`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,32 +30,32 @@ Zandvliet AS; Siegel-Lakhai WS; Beijnen JH; Copalu W; Etienne-Grimaldi MC; Milan
   ·  DOI: [10.1038/sj.clpt.6100344](https://doi.org/10.1038/sj.clpt.6100344)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MTT enzyme (h) — Estimate | `Q81` · not captured | 230 | h | not captured | boundary (not captured) | tab_2:row2:col2 |
-| MTT enzyme (h) — RSE | `Q81` · not captured | 0.12 | h | not captured | boundary (not captured) | tab_2:row2:col3 |
-| MTT enzyme (h) — IIV (%) | `Q81` · not captured | 78 | h | not captured | boundary (not captured) | tab_2:row2:col5 |
-| MTT enzyme (h) — RSE | `Q81` · not captured | 0.68 | h | not captured | boundary (not captured) | tab_2:row2:col6 |
-| MTT (h) — Estimate | `Q81` · not captured | 138 | h | not captured | exact (not captured) | tab_2:row4:col2 |
-| MTT (h) — RSE | `Q81` · not captured | 0.07 | h | not captured | exact (not captured) | tab_2:row4:col3 |
-| MTT (h) — Range a | `Q81` · not captured | 134 | h | not captured | exact (not captured) | tab_2:row4:col4 |
-| MTT (h) — IIV (%) | `Q81` · not captured | 25 | h | not captured | exact (not captured) | tab_2:row4:col5 |
-| MTT (h) — RSE | `Q81` · not captured | 0.38 | h | not captured | exact (not captured) | tab_2:row4:col6 |
-| MTT (h) — Range a (%) | `Q81` · not captured | 10 | h | not captured | exact (not captured) | tab_2:row4:col7 |
-| g — IIV (%) | `Q312` · not captured | 69 | not captured | not captured | llm (not captured) | tab_2:row5:col5 |
-| Proportional residual error (%) | `Q316` · not captured | 32.5 | not captured | not captured | exact (not captured) | tab_2:row8:col1 |
-| Proportional residual error (%) — Estimate | `Q316` · not captured | 0.09 | not captured | not captured | exact (not captured) | tab_2:row8:col2 |
-| Proportional residual error (%) — RSE | `Q316` · not captured | 31.5 | not captured | not captured | exact (not captured) | tab_2:row8:col3 |
-| MTT (h) — Estimate | `Q81` · not captured | 93.7 | h | not captured | exact (not captured) | tab_2:row10:col2 |
-| MTT (h) — RSE | `Q81` · not captured | 0.13 | h | not captured | exact (not captured) | tab_2:row10:col3 |
-| MTT (h) — Range a | `Q81` · not captured | 80.2 | h | not captured | exact (not captured) | tab_2:row10:col4 |
-| MTT (h) — IIV (%) | `Q81` · not captured | 19 | h | not captured | exact (not captured) | tab_2:row10:col5 |
-| MTT (h) — RSE | `Q81` · not captured | 0.71 | h | not captured | exact (not captured) | tab_2:row10:col6 |
-| MTT (h) — Range a (%) | `Q81` · not captured | 13 | h | not captured | exact (not captured) | tab_2:row10:col7 |
-| g — IIV (%) | `Q312` · not captured | 56 | not captured | not captured | llm (not captured) | tab_2:row11:col5 |
-| Proportional residual error (%) | `Q316` · not captured | 30.8 | not captured | not captured | exact (not captured) | tab_2:row14:col1 |
-| Proportional residual error (%) — Estimate | `Q316` · not captured | 0.14 | not captured | not captured | exact (not captured) | tab_2:row14:col2 |
-| Proportional residual error (%) — RSE | `Q316` · not captured | 26.5 | not captured | not captured | exact (not captured) | tab_2:row14:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MTT enzyme (h) — Estimate | `Q81` · not captured | 230 | h | not captured | boundary (not captured) | tab_2:row2:col2 |
+| PK (driver) | MTT enzyme (h) — RSE | `Q81` · not captured | 0.12 | h | not captured | boundary (not captured) | tab_2:row2:col3 |
+| PK (driver) | MTT enzyme (h) — IIV (%) | `Q81` · not captured | 78 | h | not captured | boundary (not captured) | tab_2:row2:col5 |
+| PK (driver) | MTT enzyme (h) — RSE | `Q81` · not captured | 0.68 | h | not captured | boundary (not captured) | tab_2:row2:col6 |
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 138 | h | not captured | exact (not captured) | tab_2:row4:col2 |
+| PK (driver) | MTT (h) — RSE | `Q81` · not captured | 0.07 | h | not captured | exact (not captured) | tab_2:row4:col3 |
+| PK (driver) | MTT (h) — Range a | `Q81` · not captured | 134 | h | not captured | exact (not captured) | tab_2:row4:col4 |
+| PK (driver) | MTT (h) — IIV (%) | `Q81` · not captured | 25 | h | not captured | exact (not captured) | tab_2:row4:col5 |
+| PK (driver) | MTT (h) — RSE | `Q81` · not captured | 0.38 | h | not captured | exact (not captured) | tab_2:row4:col6 |
+| PK (driver) | MTT (h) — Range a (%) | `Q81` · not captured | 10 | h | not captured | exact (not captured) | tab_2:row4:col7 |
+| variability | g — IIV (%) | `Q312` · not captured | 69 | not captured | not captured | llm (not captured) | tab_2:row5:col5 |
+| variability | Proportional residual error (%) | `Q316` · not captured | 32.5 | not captured | not captured | exact (not captured) | tab_2:row8:col1 |
+| variability | Proportional residual error (%) — Estimate | `Q316` · not captured | 0.09 | not captured | not captured | exact (not captured) | tab_2:row8:col2 |
+| variability | Proportional residual error (%) — RSE | `Q316` · not captured | 31.5 | not captured | not captured | exact (not captured) | tab_2:row8:col3 |
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 93.7 | h | not captured | exact (not captured) | tab_2:row10:col2 |
+| PK (driver) | MTT (h) — RSE | `Q81` · not captured | 0.13 | h | not captured | exact (not captured) | tab_2:row10:col3 |
+| PK (driver) | MTT (h) — Range a | `Q81` · not captured | 80.2 | h | not captured | exact (not captured) | tab_2:row10:col4 |
+| PK (driver) | MTT (h) — IIV (%) | `Q81` · not captured | 19 | h | not captured | exact (not captured) | tab_2:row10:col5 |
+| PK (driver) | MTT (h) — RSE | `Q81` · not captured | 0.71 | h | not captured | exact (not captured) | tab_2:row10:col6 |
+| PK (driver) | MTT (h) — Range a (%) | `Q81` · not captured | 13 | h | not captured | exact (not captured) | tab_2:row10:col7 |
+| variability | g — IIV (%) | `Q312` · not captured | 56 | not captured | not captured | llm (not captured) | tab_2:row11:col5 |
+| variability | Proportional residual error (%) | `Q316` · not captured | 30.8 | not captured | not captured | exact (not captured) | tab_2:row14:col1 |
+| variability | Proportional residual error (%) — Estimate | `Q316` · not captured | 0.14 | not captured | not captured | exact (not captured) | tab_2:row14:col2 |
+| variability | Proportional residual error (%) — RSE | `Q316` · not captured | 26.5 | not captured | not captured | exact (not captured) | tab_2:row14:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

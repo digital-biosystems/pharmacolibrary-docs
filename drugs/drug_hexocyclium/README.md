@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | about | citation | doi |
-|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Verspohl_1990_unknown](drugs/drug_hexocyclium/pd_Verspohl_1990_unknown.md) | glucagon secretion ← arecaidine propargyl ester · direct Emax (saturable) effect | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Verspohl_1990_unknown](drugs/drug_hexocyclium/pd_Verspohl_1990_unknown.md) | glucagon secretion ← arecaidine propargyl ester · direct Emax (saturable) effect | — | Verspohl EJ et al., Muscarinic receptor subtypes in rat pan…, European journal of pharmac… (1990) | [10.1016/0014-2999(90)90109-j](https://doi.org/10.1016/0014-2999(90)90109-j) |
 
 ## ADME sites
 

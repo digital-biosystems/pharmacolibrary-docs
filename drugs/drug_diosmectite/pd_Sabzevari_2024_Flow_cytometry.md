@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montmorillonite (measured concentrations) drives cell cycle distribution (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Montmorillonite (diosmectite) concentrations (µg/mL) were assessed against cell cycle distribution and cell death by flow cytometry in MDA-MB-231 and MCF-7 cells; Mt increased sub-G1 populations (2.5%→17.5% in MDA-MB-231, 3%→11.5% in MCF-7), G0/G1 population in MCF-7 (46.4%→54.3%), apoptosis (11%→49% and 9.6%→71%), and necrosis (5.4%→32% and 4%→11.2%), attributed to altered gene expression (e.g., Cas-3, P53, Bcl-2, Cyclin-D1, P21) and possible mitochondrial damage. No PD model, mechanism of concentration-response, or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the cell cycle response are given; the only potency values are MTT IC50s (~50 µg/mL for MDA-MB-231 and ~20
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sabzevari_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** U46619 (measured concentrations) drives name (in 340/380 nm emission ratio): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for iloprost on calcium mobilization; iloprost (IP receptor agonist, tested at 1 mM for cAMP) acts via IP receptor/cAMP–PKA signalling, but it failed to normalize the U46619 (TP agonist) dose–response for intracellular Ca2+ (340/380 nm fura-2 ratio) in hypoxic pulmonary arterial myocytes due to IP receptor desensitization, and no Imax, IC50, EC50, Emax, kin, kout, ke0 or Hill coefficient values for iloprost are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Santhosh_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

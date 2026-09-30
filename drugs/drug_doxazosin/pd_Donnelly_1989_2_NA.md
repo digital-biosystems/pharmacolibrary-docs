@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives plasma noradrenaline (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking doxazosin concentrations to plasma noradrenaline; noradrenaline was only measured (6 h after placebo or doxazosin 2 mg) and responsiveness to doxazosin was reported as unrelated to plasma noradrenaline. The kinetic-dynamic modelling in the paper instead concerned blood pressure, using an effect compartment, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for noradrenaline are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Donnelly_1989_2`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

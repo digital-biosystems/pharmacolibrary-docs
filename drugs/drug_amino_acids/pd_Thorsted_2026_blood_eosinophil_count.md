@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Depemokimab (measured concentrations) drives name (in cells/µL): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Depemokimab concentrations (µg/mL) reduce blood eosinophil count (cells/µL) via an indirect-response model (with a placebo linear baseline+slope term and a differential-equation treatment effect), with EC50 0.194 µg/mL and Emax 84.8% (Hill coefficient included but value not given in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thorsted_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -21,12 +31,12 @@ Thorsted A; Tanneau L; Lavalley-Morelle A; Follows R; Jacques L; Bird N; Gevaert
   ·  DOI: [10.1002/jcph.70187](https://doi.org/10.1002/jcph.70187)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Regular maintenance OCS at baseline, n (%) — FTIH asthma study (N = 48) | `Q100` · not captured | 0 | N = 48 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col1 |
-| Regular maintenance OCS at baseline, n (%) — SWIFT‐1/‐2 (N = 748) | `Q100` · not captured | 40 | N = 748 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col2 |
-| Regular maintenance OCS at baseline, n (%) — ANCHOR‐1/‐2 (N = 528) | `Q100` · not captured | 0 | N = 528 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col3 |
-| Regular maintenance OCS at baseline, n (%) — Overall (N = 1324) | `Q100` · not captured | 40 | N = 1324 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Regular maintenance OCS at baseline, n (%) — FTIH asthma study (N = 48) | `Q100` · not captured | 0 | N = 48 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col1 |
+| — | Regular maintenance OCS at baseline, n (%) — SWIFT‐1/‐2 (N = 748) | `Q100` · not captured | 40 | N = 748 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col2 |
+| — | Regular maintenance OCS at baseline, n (%) — ANCHOR‐1/‐2 (N = 528) | `Q100` · not captured | 0 | N = 528 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col3 |
+| — | Regular maintenance OCS at baseline, n (%) — Overall (N = 1324) | `Q100` · not captured | 40 | N = 1324 | not captured | llm_corrected (not captured) | jcph70187-tbl-0003:row8:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

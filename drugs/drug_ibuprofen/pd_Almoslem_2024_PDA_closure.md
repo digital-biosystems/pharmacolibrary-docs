@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibuprofen, acetaminophen drive PDA closure (in binary): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> The paper models PDA closure in preterm neonates (&lt;29 weeks gestation) as a time-to-event (binary) response driven by ibuprofen and acetaminophen (APAP) exposure, with the two drugs acting synergistically to stimulate closure; the excerpts do not state the concentrations used as drivers, the mechanism (e.g., Emax or hazard form), or any potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Almoslem_2024`
 - **model family:** `tte`
 - **driver:** `not_resolved`

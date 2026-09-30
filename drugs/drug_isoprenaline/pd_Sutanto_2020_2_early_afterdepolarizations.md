@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chloroquine (measured concentrations) drives name (in count) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the in silico ventricular cardiomyocyte models, simulated isoproterenol (ISO) beta-adrenergic stimulation, applied across a range of simulated concentrations alongside chloroquine (5 and 20 μM, alone or with azithromycin), reduced the count of early afterdepolarizations (EADs) by shortening drug-prolonged APD via PKA-mediated phosphorylation of ICa,L and IKs, thereby restoring repolarization reserve. The paper does not state a quantitative PD model (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values) for the ISO–EAD relationship, and notes ISO could promote EADs when ICa,L window current is increased.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sutanto_2020_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

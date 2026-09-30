@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Gladziwa_1995_reference](drugs/drug_roxatidine/Roxatidine_Gladziwa1995_reference.md) | 1-compartment (no model) | 1 | Gladziwa U et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04423.x](https://doi.org/10.1111/j.1365-2125.1995.tb04423.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Gladziwa_1995_reference](drugs/drug_roxatidine/Roxatidine_Gladziwa1995_reference.md) | — | 1-compartment (no model) | 1 | Gladziwa U et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (1995) | [10.1111/j.1365-2125.1995.tb04423.x](https://doi.org/10.1111/j.1365-2125.1995.tb04423.x) |
 
 ## ADME sites
 

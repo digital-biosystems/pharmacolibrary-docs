@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-Asparaginase drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative PD model for the L-Glutamine response; it only states that L-Asparaginase (nErA/PEG-nErA) enzymatically depletes its substrates L-Asparagine and L-Glutamine, with plasma Asn depleted for up to 25 days after PEG-nErA, and reports only in vitro cytotoxicity IC50 values of 0.06–0.17 U/mL on ALL cell lines.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Modi_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

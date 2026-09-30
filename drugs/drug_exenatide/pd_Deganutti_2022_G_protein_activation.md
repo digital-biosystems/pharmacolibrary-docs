@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GLP-1, oxyntomodulin, exendin-4, exendin-P5 drive G protein activation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for exenatide (or the other agonists) on G protein activation; it qualitatively describes a direct agonist effect, where GLP-1, oxyntomodulin, exendin-4 and exendin-P5, via their N-terminal interactions with the GLP-1R transmembrane domain, allosterically modulate Gs coupling and the kinetics of G protein activation (e.g. exendin-P5 shows faster Gs conformational transitions), but no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values with units are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deganutti_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

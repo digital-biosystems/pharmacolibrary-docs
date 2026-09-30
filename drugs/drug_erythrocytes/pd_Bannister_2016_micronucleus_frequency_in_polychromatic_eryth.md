@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gamma radiation drives name (in MN-PCE): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Gamma radiation dose (mGy) drives micronucleus frequency in polychromatic erythrocytes (MN-PCE) in mouse bone marrow; in C57BL/6 mice the excess MN-PCE response was best described by a linear dose–response between 100 mGy and 1 Gy (with a threshold between 500 mGy and 1 Gy and departure from linearity above 1 Gy), with MN-PCE frequencies increased 2.2-, 5.0-, 8.7- and 7.3-fold at 100 mGy, 500 mGy, 1 Gy and 2 Gy versus the unirradiated baseline of 0.46% ± 0.045%. The paper does not state a pharmacodynamic mechanism (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bannister_2016`
 - **model family:** `linear`
 - **driver:** `not_resolved`

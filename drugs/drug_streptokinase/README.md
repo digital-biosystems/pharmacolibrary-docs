@@ -25,9 +25,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rox_2017](drugs/drug_streptokinase/pd_Rox_2017_unknown.md) | Rox K et al., Linoleic and palmitoleic acid block str…, Scientific reports (2017) | [10.1038/s41598-017-11276-z](https://doi.org/10.1038/s41598-017-11276-z) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rox_2017_unknown](drugs/drug_streptokinase/pd_Rox_2017_unknown.md) | survival ← linoleic acid · inhibition effect | — | Rox K et al., Linoleic and palmitoleic acid block str…, Scientific reports (2017) | [10.1038/s41598-017-11276-z](https://doi.org/10.1038/s41598-017-11276-z) |
 
 ## ADME sites
 

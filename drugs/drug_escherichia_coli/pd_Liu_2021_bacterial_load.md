@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin (measured concentrations) drives name (in log10 CFU/thigh): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Enrofloxacin (with its metabolite ciprofloxacin) acts on E. coli bacterial load in the neutropenic mouse thigh infection model (change in log10 CFU/thigh at 24 h), described by a sigmoid inhibitory Emax model relating PK-PD indices (AUC/MIC, Cmax/MIC, %T&gt;MIC) to effect; the paper does not state numeric Emax, EC50, or Hill (gamma) values in the excerpts, and MIC50/MIC90 was 0.25 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

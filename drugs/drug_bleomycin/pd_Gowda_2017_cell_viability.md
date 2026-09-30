@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Honokiol (measured concentrations) drives Cell viability (in normalized absorbance): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Honokiol concentration (µM) inhibits cell viability, measured as normalized absorbance, with IC50 values obtained by fitting to equation 1 (a concentration–response relation where IC50 is the honokiol concentration reducing normalized absorbance to 50%, with A fixed at 100); the paper does not state a specific PD mechanism (e.g., Emax/kin–kout parameters) for the viability response, and no numeric IC50 for cell viability appears in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gowda_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulodexide (measured concentrations) drives heparanase-1 gene expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulodexide concentrations (μg/ml) directly inhibit heparanase-1 (HPSE) enzymatic activity, with an IC50 of 5 μg/ml and complete inhibition at 20 μg/ml; the paper does not report a formal PD model (no Imax, kin, kout, ke0, or gamma). Sulodexide does not alter basal HPSE gene expression in HK2 cells but prevents FGF-2-induced HPSE overexpression, an effect attributed to the heparin (LMWH) component, since dermatan sulfate alone inhibited HPSE activity by no more than 30% up to 50 μg/ml.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Masola_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

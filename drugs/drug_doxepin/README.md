@@ -60,6 +60,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |

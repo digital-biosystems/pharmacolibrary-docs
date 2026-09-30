@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-HT drives relaxation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Pizotifen acts as a competitive antagonist at endothelial 5-HT2B receptors, shifting the concentration-response curves for 5-HT- and BW 723C86-induced relaxation of PGF2a-precontracted pig pulmonary artery rings to the right without reducing maximum response; pA2 values were 8.47 against 5-HT and 8.32 against BW 723C86 (BW 723C86 itself: pEC50 8.21±0.03, Emax 89±4% relative to 5-HT).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glusa_2000`
 - **model family:** `emax`
 - **driver:** `not_resolved`

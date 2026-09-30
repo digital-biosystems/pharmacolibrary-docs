@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;diltiazem&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/&quot;},{&quot;label&quot;:&quot;Fu_1987 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Fu1987_reference&quot;,&quot;label&quot;:&quot;Fu_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diltiazem_Hglund1989_reference&quot;,&quot;label&quot;:&quot;H\u00f6glund_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Murata1989_reference&quot;,&quot;label&quot;:&quot;Murata_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diltiazem_Guan2018_reference&quot;,&quot;label&quot;:&quot;Guan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Guan2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Klle1983_reference&quot;,&quot;label&quot;:&quot;K\u00f6lle_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Klle1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Fu1987_reference&quot;,&quot;label&quot;:&quot;Fu_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Fu1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diltiazem_Hglund1989_reference&quot;,&quot;label&quot;:&quot;H\u00f6glund_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Hglund1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diltiazem_Murata1989_reference&quot;,&quot;label&quot;:&quot;Murata_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diltiazem/Diltiazem_Murata1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**No volume or clearance — not a compartmental population PK model.**
+
+The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diltiazem, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Fu M; Hung JS; Yeh SJ; Lin FC; Hsu RS; Wu D et al. (1987). Journal of clinical pharmacology 27
@@ -36,7 +42,7 @@ Fu M; Hung JS; Yeh SJ; Lin FC; Hsu RS; Wu D et al. (1987). Journal of clinical p
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| mean distribution half-life | `Q59` · t1/2α | 15.8 | minutes | not captured | [min] | not captured | llm (0.6) | Fu_1987:abstract | — | not captured |
+| mean distribution half-life | `Q59` · t1/2α | 15.8 | minutes | 948.0 | h | not captured | llm (0.6) | Fu_1987:abstract | — | not captured |
 | elimination half-life | `Q57` · t1/2z | 3.8 | hr | 13680.0 | [h] | not captured | llm (0.6) | Fu_1987:abstract | — | not captured |
 
 <details class="legend">
@@ -53,6 +59,7 @@ Fu M; Hung JS; Yeh SJ; Lin FC; Hsu RS; Wu D et al. (1987). Journal of clinical p
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- unit re-normalised: t1/2α 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Fu_1987_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model

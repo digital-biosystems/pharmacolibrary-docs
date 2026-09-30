@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In Huh-7 human hepatocyte cells, increasing concentrations of MGL-3196 (resmetirom) directly stimulate liver DIO1 transcript levels via THRβ agonism, with a mean EC50 of 245.8 nM for DIO1 (least potent of the tested agonists; T3 DIO1 EC50 = 1.2 nM, GC-1 = 3.6 nM); the paper reports dose-response EC50 values but does not state an Emax, Imax, or kinetic parameters for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

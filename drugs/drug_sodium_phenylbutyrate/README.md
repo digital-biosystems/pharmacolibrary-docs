@@ -36,11 +36,11 @@ Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauro
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Eriksen_2023_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md) | 1-compartment, IV | 2 | Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023) | [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Piscitelli_1995_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md) | general linear (no model) | 0 | Piscitelli SC et al., Disposition of phenylbutyrate and its m…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04075.x](https://doi.org/10.1002/j.1552-4604.1995.tb04075.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Eriksen_2023_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Eriksen2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Eriksen PL et al., Clearance and production of ammonia qua…, Journal of hepatology (2023) | [10.1016/j.jhep.2023.03.042](https://doi.org/10.1016/j.jhep.2023.03.042) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Wang_2022_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Wang2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Wang X et al., Population Pharmacokinetic Analysis to…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01075-1](https://doi.org/10.1007/s40262-021-01075-1) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Piscitelli_1995_reference](drugs/drug_sodium_phenylbutyrate/SodiumPhenylbutyrate_Piscitelli1995_reference.md) | — | general linear (no model) | 0 | Piscitelli SC et al., Disposition of phenylbutyrate and its m…, Journal of clinical pharmac… (1995) | [10.1002/j.1552-4604.1995.tb04075.x](https://doi.org/10.1002/j.1552-4604.1995.tb04075.x) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ethacridine (measured concentrations) drives name (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethacridine concentrations (μM) inhibit Mpro activity measured with a FlipGFP-based reporter (ratio), with IC50 ~3.54 μM; the paper does not state a PD model form (no Emax/kin/kout/ke0 given). Its antiviral effect (EC50 ~0.08 μM) is far more potent than the Mpro inhibition, indicating the main mechanism is direct inactivation of viral particles rather than Mpro inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

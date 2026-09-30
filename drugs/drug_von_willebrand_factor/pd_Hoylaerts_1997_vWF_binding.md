@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Von Willebrand factor (concentrations from the PK model of Bukkems_2021::base) drives vWF binding to collagen VI (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model; it reports in vitro binding of von Willebrand factor (vWF, 3 µg/ml or 1 µg/ml) to collagen VI, which occurs with moderately high affinity (EC50 ≈ 5 nM) and is inhibited by ATA acting via the vWF A1 domain, with IC50 ≈ 0.6 µM for non-digested collagen VI and IC50 ≈ 200 µM for pepsin-digested collagen VI; calin also inhibited binding with IC50 ≈ 10 µg/ml. No kin, kout, ke0, Emax or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoylaerts_1997`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

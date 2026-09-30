@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chloroxylenol drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chloroxylenol (10%) concentrations (1000–4000 µL/L) inhibit in vitro mycelial growth of Sclerotium rolfsii (poisoned food technique, % inhibition vs control); the paper does not state a mechanism beyond direct concentration–response inhibition, with EC50 = 1347.74 µL/L and EC90 = 3324.9652 µL/L (formulated phenol 7%: EC90 = 3995.7593 µL/L), estimated by probit/log linear regression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hussien_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Hussien RAA; Gnedy MMA; Sayed AAS; Bondok A; Alkhalifah DHM; Elkelish A; et al. 
   ·  DOI: [10.3390/plants11243542](https://doi.org/10.3390/plants11243542)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC90 — Formulated phenol (7%) | `Q321` · not captured | 3995.7593 | µL/L | not captured | llm (not captured) | plants-11-03542-t005:row5:col3 |
-| EC90 — Chloroxylenol (10%) | `Q321` · not captured | 3324.9652 | µL/L | not captured | llm (not captured) | plants-11-03542-t005:row5:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC90 — Formulated phenol (7%) | `Q321` · not captured | 3995.7593 | µL/L | not captured | llm (not captured) | plants-11-03542-t005:row5:col3 |
+| PD (effect) | EC90 — Chloroxylenol (10%) | `Q321` · not captured | 3324.9652 | µL/L | not captured | llm (not captured) | plants-11-03542-t005:row5:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

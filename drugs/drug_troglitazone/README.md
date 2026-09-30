@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mansour_2011](drugs/drug_troglitazone/pd_Mansour_2011_unknown.md) | Mansour M et al., Thiazolidinediones/PPARγ agonists and f…, International journal of on… (2011) | [10.3892/ijo.2010.877](https://doi.org/10.3892/ijo.2010.877) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bouwmeester_2023](drugs/drug_troglitazone/pd_Bouwmeester_2023_unknown.md) | Bouwmeester MC et al., Drug Metabolism of Hepatocyte-like Orga…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mansour_2011_unknown](drugs/drug_troglitazone/pd_Mansour_2011_unknown.md) | apoptosis ← rosiglitazone · inhibition effect | — | Mansour M et al., Thiazolidinediones/PPARγ agonists and f…, International journal of on… (2011) | [10.3892/ijo.2010.877](https://doi.org/10.3892/ijo.2010.877) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Bouwmeester_2023_unknown](drugs/drug_troglitazone/pd_Bouwmeester_2023_unknown.md) | cell viability ← unknown · inhibition effect | — | Bouwmeester MC et al., Drug Metabolism of Hepatocyte-like Orga…, Molecules (Basel, Switzerla… (2023) | [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621) |
 
 ## ADME sites
 
@@ -46,6 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | excretion | liver | `ABCB11` inhibitor | DrugBank actor |
 | target | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
 | target | ovary | `CYP19A1` inhibitor | DrugBank actor |
+| target | testis | `CYP19A1` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: ACSL4 (inhibitor), ESRRA (inverse agonist), ESRRG (inverse agonist), PPARA (unknown), PPARD (unknown), PPARG (regulator), PPARG (target), SERPINE1 (target), UGT1A10 (substrate), UGT1A7 (substrate), UGT1A8 (substrate).</sub>
 

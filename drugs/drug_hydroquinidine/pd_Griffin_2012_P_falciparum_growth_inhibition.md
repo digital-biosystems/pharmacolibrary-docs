@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cinchona alkaloids (quinine, quinidine, cinchonidine, cinchonine, hydroquinine, hydroquinidine, 9-epiquinine, 9-epiquinidine) (measured concentrations) drive name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hydroquinidine concentrations (nM) were tested in a 72-h SYBR green I growth inhibition assay against P. falciparum, with percent growth inhibition plotted against log drug concentration and fitted to a variable-slope sigmoidal curve to derive IC50 values (nM, mean ± SEM from 3–8 tests); the paper does not state a pharmacodynamic mechanism (e.g., kin/kout or effect-compartment parameters), and no specific hydroquinidine IC50 value appears in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Griffin_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

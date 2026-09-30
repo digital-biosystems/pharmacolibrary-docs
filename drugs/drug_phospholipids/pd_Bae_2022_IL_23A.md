@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A15:0-i15:0 PE drives IL-23A (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a quantitative PD model for IL-23A; it reports that the TLR2 agonist lipid a15:0-i15:0 PE stimulates cytokine mRNA/release in human monocytes but is significantly less effective at inducing IL-23 (IL-23A/IL-12B) than LPS or Pam3CSK4, with 0.15 µmol l−1 stated to be approximately 1% of EC50, and that this low dose given 18 h before agonist suppresses subsequent TNFα release. No Imax, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bae_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

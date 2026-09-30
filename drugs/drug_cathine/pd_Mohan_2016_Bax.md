@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Khat extract (measured concentrations) drives Bax expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports that khat extract (cathine-rich) increases Bax protein expression in H9c2 cells in a time-dependent manner at the IC50 concentration of 86.5 μg/ml, but it does not specify the pharmacodynamic mechanism (e.g., direct effect, production, or elimination) or provide specific PD parameters such as Emax, IC50 for Bax, or rate constants.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mohan_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -34,8 +44,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_direction` | inhibition | stimulation | mismatch |
-| `gpt-oss:120b` | `model_family` | unknown | emax | mismatch |
+| `gpt-oss:120b` | `driver_compound` | khat extract | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
 
 </details>
 

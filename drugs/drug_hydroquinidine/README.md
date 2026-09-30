@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Griffin_2012](drugs/drug_hydroquinidine/pd_Griffin_2012_P_falciparum_growth_inhibition.md) | Griffin CE et al., Mutation in the Plasmodium falciparum C…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.05667-11](https://doi.org/10.1128/AAC.05667-11) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Griffin_2012_P_falciparum_growth_inhibition](drugs/drug_hydroquinidine/pd_Griffin_2012_P_falciparum_growth_inhibition.md) | name ← Cinchona alkaloids (quinine, quinidine, cinchonidine, cinchonine, hydroquinine, hydroquinidine, 9-epiquinine, 9-epiquinidine) · inhibition effect | — | Griffin CE et al., Mutation in the Plasmodium falciparum C…, Antimicrobial agents and ch… (2012) | [10.1128/AAC.05667-11](https://doi.org/10.1128/AAC.05667-11) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

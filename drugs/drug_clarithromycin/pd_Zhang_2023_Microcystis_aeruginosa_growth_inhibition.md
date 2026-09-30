@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ampicillin drives name (in EC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Clarithromycin (CLA) concentrations act on Microcystis aeruginosa growth inhibition via a speciation-based bioavailability model in which the charged (CLA+) and neutral (CLA0) species each exert toxic effects combined by the concentration-addition (CA) concept; the paper does not describe a kinetic mechanism (no kin, kout, or ke0). Potency is given as EC50 of 4.22 µg L−1 for CLA0 and 6.12 µg L−1 for CLA+ (with alternative assumption-based values of 3.69 µg L−1 for CLA+ and 0.30 µg L−1 for CLA0 when only one species is assumed toxic).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Zhang Q; Demeestere K; De Schamphelaere KAC et al. (2023). The Science of the to
   ·  DOI: [10.1016/j.scitotenv.2023.166781](https://doi.org/10.1016/j.scitotenv.2023.166781)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 3.97 | µg L -1 | not captured | review_gapfill (not captured) | Zhang_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 3.97 | µg L -1 | not captured | review_gapfill (not captured) | Zhang_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

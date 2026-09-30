@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-arachidonoylglycerol (measured concentrations) drives GRABeCB2.0 fluorescent signal (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 2-AG concentration-dependently increases the GRABeCB2.0 fluorescent signal (ΔF/F0) in HEK293 cells via CB1R-dependent sensor activation (SR141617 reduces signal, IC50 = 3.3 nM), described by a direct stimulatory Emax model with EC50 = 85 nM; the paper gives no kin/kout or effect-compartment parameters, only maximal response (peak) values for CB1R agonists of 2.5, 1.7 and 2.7.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,12 +31,12 @@ Singh S; Sarroza D; English A; McGrory M; Dong A; Zweifel L; et al. et al. (2023
   ·  DOI: [10.1101/2023.03.03.531053](https://doi.org/10.1101/2023.03.03.531053)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 2.5 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col2 |
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.7 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col3 |
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 2.7 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col4 |
-| EC50 | `Q321` · not captured | 85 | nM | not captured | review_gapfill (not captured) | Singh_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 2.5 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col2 |
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.7 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col3 |
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 2.7 | not captured | not captured | llm_confirmed (not captured) | T1:row3:col4 |
+| PD (effect) | EC50 | `Q321` · not captured | 85 | nM | not captured | review_gapfill (not captured) | Singh_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

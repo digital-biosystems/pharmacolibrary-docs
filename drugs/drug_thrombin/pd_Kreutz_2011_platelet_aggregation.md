@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adenosine diphosphate (measured concentrations) drives name (in percent): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Thrombin (0.01–0.5 U/mL) stimulates platelet aggregation (percent aggregation) in washed platelets, fitted with an Emax-type dose-response model; the paper does not state a mechanistic PD model beyond direct agonist-induced aggregation. The only potency value given is a nonsignificant trend toward lower EC50 in MetS vs lean pigs (0.27 ± 0.3 vs 0.36 ± 0.6 U/l; P = 0.36); no Imax, Emax, kin, kout, ke0, or gamma values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreutz_2011`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

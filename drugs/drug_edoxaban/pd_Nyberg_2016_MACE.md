@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban (concentrations from the PK model of Edwina_2025) drives major adverse cardiovascular event (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> For MACE (composite of nonfatal MI, nonfatal stroke, nonfatal systemic embolic events, and cardiovascular death) in edoxaban-treated Hokusai-VTE patients, time-to-event was best described by a Weibull distribution, but no edoxaban exposure metric (e.g., Cav or Cmax, ng/mL) was a statistically significant predictor of MACE risk; only the risk factor AGE75 remained significant (predicted 1-year MACE probability 1.17%, increased 349% in patients with AGE75). The paper therefore does not establish a drug-concentration–response mechanism or potency values for MACE.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyberg_2016`
 - **model family:** `tte`
 - **driver:** `cited_pk`

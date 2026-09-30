@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**CL/F and V/F have no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Extracted — bisoprolol: Q 0.0612 l/h/kg, Q3 1.15 L/h, CL/F 22, V/F 12.6.
 
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Taguchi M; Nozawa T; Igawa A; Inoue H; Takesono C; Tahara K; et al. et al. (2005). Biological & pharmaceutical bulletin 28

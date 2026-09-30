@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Malvidin drives LDH activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In HaCaT spheroids, menadione (50 μM, 16 h) was used as a cytotoxic agent inducing LDH release, while NaDES extracts containing malvidin (0.05–1.1 μg mL−1, 24 h) reduced LDH release; the paper does not state a PD model, mechanism, or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Punzo_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

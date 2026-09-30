@@ -25,11 +25,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010](drugs/drug_crofelemer/pd_Tradtrantip_2010_CFTR.md) | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010](drugs/drug_crofelemer/pd_Tradtrantip_2010_SCC.md) | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010](drugs/drug_crofelemer/pd_Tradtrantip_2010_TMEM16A.md) | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010_CFTR](drugs/drug_crofelemer/pd_Tradtrantip_2010_CFTR.md) | CFTR Cl- current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010_SCC](drugs/drug_crofelemer/pd_Tradtrantip_2010_SCC.md) | Short-circuit current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tradtrantip_2010_TMEM16A](drugs/drug_crofelemer/pd_Tradtrantip_2010_TMEM16A.md) | TMEM16A Cl- current ← crofelemer · direct Emax (saturable) effect | — | Tradtrantip L et al., Crofelemer, an antisecretory antidiarrh…, Molecular pharmacology (2010) | [10.1124/mol.109.061051](https://doi.org/10.1124/mol.109.061051) |
 
 ## ADME sites
 

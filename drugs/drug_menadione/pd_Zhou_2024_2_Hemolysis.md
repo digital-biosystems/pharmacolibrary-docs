@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myricetin (measured concentrations) drives Hemolytic activity (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Myricetin (2–16 μg/mL) inhibited the hemolytic activity of S. aureus culture supernatant on rabbit erythrocytes in a dose-dependent manner without affecting growth, despite slightly upregulating hla expression; the paper does not state an Emax/IC50 for this hemolysis effect or a kinetic mechanism for it (the reported IC50 of 2 μM refers to competitive inhibition of NDH-2 with respect to menadione).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

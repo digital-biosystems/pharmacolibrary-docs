@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (PTX) concentrations in the cytoskeleton compartment (exposure 20 and 40 ng/mL) drive tubulin polymerization, described by an indirect response model, and tubulin polymerization in turn increases the G2/M cell population (cell cycle arrest); a hypothetical effect compartment was used to characterize the distribution delay between cellular PK and PD. The excerpts do not state the specific potency or rate parameter values (e.g., IC50, Emax, ke0, kin, kout) for the G2/M response, and the paper does not describe the G2/M link as an inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

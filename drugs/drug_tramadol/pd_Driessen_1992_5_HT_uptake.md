@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tramadol (concentrations from the PK model of Al-Qurain_2022::base) drives 5-HT uptake (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, tramadol inhibited uptake of [3H]-5-HT into purified rat frontal cortex synaptosomes with an IC50 of 3.1 pm, the (+)-enantiomer being about four times more potent than the (-)-enantiomer and O-desmethyltramadol about ten times less potent; tramadol also facilitated basal outflow of [3H]-5-HT from preloaded cortical slices at concentrations above 1 pm (10 pm enhanced overflow by about 100%). The paper does not state a formal PD model (no Emax/kin/kout/ke0 parameters); IC50s were estimated by fitting to a Hill-type (IB1) model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Driessen_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

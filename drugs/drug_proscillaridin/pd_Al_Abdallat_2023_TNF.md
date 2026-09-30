@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Drimia maritima bulb extract (measured concentrations) drives TNF-α expression (in fold change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for TNF-α expression; it only reports that Drimia maritima bulb extract (predominant compound proscillaridin A) dose-dependently increased TNF-α expression in Caco-2 cells after 48 h, by 6.5-fold at 2 µg/mL, 6.4-fold at 1.5 µg/mL, and 5.2-fold at 1 µg/mL (non-significant elevations of 3.3- and 3.6-fold at 0.75 and 0.5 µg/mL), with no potency (IC50/EC50/Emax) or rate parameters given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Abdallat_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

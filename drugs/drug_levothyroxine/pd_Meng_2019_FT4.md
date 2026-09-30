@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anti-thyroid drug (ATD) (the dose) drives free thyroxine (in pmol l−1): indirect response — drug inhibits the production of free thyroxine.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Anti-thyroid drug (ATD) dose (mg) acts on serum free thyroxine (FT4, pmol l−1) via an indirect-response (inhibition) model in which the drug reduces the FT4 synthesis rate A by the factor (1 − d/(IC50 + d)), while FT4 decays with rate C; the paper does not state Imax/Emax, kin, kout or ke0 values. Patient-specific IC50 estimates were 58.151, 72.901 and 35.062 mg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meng_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`
@@ -21,11 +31,11 @@ Meng F; Li E; Yen PM; Leow MKS et al. (2019). Journal of the Royal Society, Inte
   ·  DOI: [10.1098/rsif.2019.0083](https://doi.org/10.1098/rsif.2019.0083)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 2 — IC50 | `Q322` · not captured | 58.151 | mg | not captured | llm (not captured) | RSIF20190083TB3:row1:col3 |
-| 16 — IC50 | `Q322` · not captured | 72.901 | mg | not captured | llm (not captured) | RSIF20190083TB3:row2:col3 |
-| 23 — IC50 | `Q322` · not captured | 35.062 | mg | not captured | llm (not captured) | RSIF20190083TB3:row3:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 2 — IC50 | `Q322` · not captured | 58.151 | mg | not captured | llm (not captured) | RSIF20190083TB3:row1:col3 |
+| PD (effect) | 16 — IC50 | `Q322` · not captured | 72.901 | mg | not captured | llm (not captured) | RSIF20190083TB3:row2:col3 |
+| PD (effect) | 23 — IC50 | `Q322` · not captured | 35.062 | mg | not captured | llm (not captured) | RSIF20190083TB3:row3:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

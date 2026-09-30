@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **No volume or clearance — not a compartmental population PK model.**
@@ -38,7 +40,7 @@ Field CL; Whoriskey ST; Zhao X; Papich MG et al. (2021). Journal of zoo and wild
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| peaking within | `Q56` · tmax | 20 | minutes | not captured | [min] | not captured | llm (0.6) | Field_2021:abstract, Field_2021:abstract | — | not captured |
+| peaking within | `Q56` · tmax | 20 | minutes | 1200.0 | h | not captured | llm (0.6) | Field_2021:abstract, Field_2021:abstract | — | not captured |
 | t1/2 | `Q57` · t1/2z | 40 | min | 2400.0 | [min] | not captured | exact (1.0) | Field_2021:abstract, Field_2021:abstract | — | not captured |
 
 <details class="legend">
@@ -57,6 +59,7 @@ Field CL; Whoriskey ST; Zhao X; Papich MG et al. (2021). Journal of zoo and wild
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- unit re-normalised: tmax 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Field_2021_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model

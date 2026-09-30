@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methanol extract of Lactuca serriola (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dicyclomine (dicycloverine) relaxed carbachol-(1 μM) and K+-(80 mM) induced contractions in isolated rabbit trachea with EC50 values of 0.171 μM (95% CI: 0.102–0.220, n=5) and 1.55 μM (95% CI: 1.39–2.54, n=5), respectively, and at 0.03–0.1 μM shifted carbachol response curves rightward with suppression of maximum effect, consistent with the paper's proposed dual mechanism of muscarinic receptor antagonism plus Ca++ channel blockade; no Emax, kin/kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Janbaz_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

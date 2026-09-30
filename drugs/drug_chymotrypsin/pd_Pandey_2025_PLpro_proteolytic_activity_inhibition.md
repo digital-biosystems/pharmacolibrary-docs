@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 9-aminominocycline (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> 9-aminominocycline (9-AMN) concentrations inhibit SARS-CoV-2 PLpro proteolytic activity in vitro, acting as a mixed inhibitor that binds the PLpro active site (direct enzymatic inhibition; no Emax/kin/kout/ke0/gamma values reported). The IC50 for proteolytic activity is 4.15 µM (DUB activity 4.54–4.55 µM), with ~90–95% inhibition at 50 µM; in cell-based antiviral assays EC50 values are 1.04 µM (Delta) and 2.35 µM (Omicron).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pandey_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

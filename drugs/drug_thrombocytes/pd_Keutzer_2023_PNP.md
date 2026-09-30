@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linezolid (measured concentrations) drives peripheral neuropathy (in days): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> The paper models peripheral neuropathy (PNP) in drug-resistant tuberculosis patients with a time-to-event (TTE) approach, with linezolid trough concentration (Cmin, mg/L) identified as the exposure index driving PNP risk; the mechanism by which Cmin affects PNP is not given. A safety target of Cmin ≤ 1.4 mg/L over 6 months was proposed to keep cumulative PNP probability below 20% (predicted 16.9% at 600 mg QD, 30.2% at 1200 mg QD, 10.1% at 300 mg QD). Note: the record's 'drug: thrombocytes' label is inconsistent with the paper, which models thrombocyte counts separately by an indirect response model (dPt/dt = kin·(1−Slope·Ct) − kout·Pt or kin − kout·(1+Slope·Ct)·Pt) driven by AUC0–24h,ss.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Keutzer_2023`
 - **model family:** `tte`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Keutzer L; Mockeliunas L; Sturkenboom MGG; Bolhuis MS; Akkerman OW; Simonsson US
   ·  DOI: [10.3390/ph16111575](https://doi.org/10.3390/ph16111575)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| No. Smoking — All Patients | `Q100` · not captured | 28 | not captured | not captured | llm (not captured) | pharmaceuticals-16-01575-t001:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | No. Smoking — All Patients | `Q100` · not captured | 28 | not captured | not captured | llm (not captured) | pharmaceuticals-16-01575-t001:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

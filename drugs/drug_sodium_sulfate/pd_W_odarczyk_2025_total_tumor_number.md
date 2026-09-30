@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KR-12-NH2 (measured concentrations) drives name (in count) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record pairs sodium sulfate (the AOM/DSS colitis-inducing agent) with total tumor number (count) as the measured response, driven by KR-12-NH2 concentrations in µM with an inhibitory direction, but the paper excerpts provide no pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this tumor-count response; the excerpts only report IC50 values for cell viability assays and qualitative anti-inflammatory cytokine modulation, so the mechanism for the tumor-number effect is not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Włodarczyk_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

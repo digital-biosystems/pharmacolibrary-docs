@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vosoritide (measured concentrations) drives collagen type X marker (in pg/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Vosoritide plasma exposure (Cmax or AUC0-t) was related to mean CXM (pg/mL, day 10–183) via a direct sigmoid Emax stimulation model (E0 + PK^h·Emax/(PK^h+EC50^h)); for Cmax: Emax 3690 pg/mL, EC50 1730 pg/mL, h 3.93; for AUC0-t: Emax 4460 pg/mL, EC50 5.17×10^4 pg·min/mL, h 1.10, with the CXM response saturated at doses ≥15 µg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

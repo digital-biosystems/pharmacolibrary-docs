@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive reticulocytes (in 10^12/L): indirect response — drug inhibits the production of reticulocytes.
+
+**Model:** No model was generated from this record.
+
+> Reticulocyte counts (10^12/L) are described by an indirect response model in which rHuEPO (with romiplostim in the combination therapy) stimulates the production of RETs; the paper does not state Imax, IC50/EC50, kin, kout, or gamma values in the excerpts, and the mechanism is described only qualitatively as stimulation of reticulocyte production.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

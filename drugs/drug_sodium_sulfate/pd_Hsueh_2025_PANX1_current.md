@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 12 (measured concentrations) drives name (in pA) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Compound 12 (bath-applied, µm concentrations) concentration-dependently inhibits whole-cell PANX1 currents (pA) in hPANX1-expressing HEK293T cells, with voltage-dependent inhibition (greater at −50 mV than +80 mV) and an IC50 of ≈0.73 µm at −50 mV; inhibition was nearly complete at 3 µm (87.0% ± 2.8%). The paper does not state a formal PD model (no Emax/kin/kout/ke0), but mechanistically suggests allosteric inhibition via interaction with Trp74, reducing channel open probability with preserved unitary conductance.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsueh_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

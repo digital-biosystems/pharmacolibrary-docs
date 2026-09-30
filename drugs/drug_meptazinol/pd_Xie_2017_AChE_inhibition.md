@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (−)-meptazinol phenylcarbamate (43) (measured concentrations) drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, (−)-meptazinol phenylcarbamate (43) and dimethylcarbamate (42) inhibit AChE activity (percent inhibition by Ellman's method, mice brain homogenate) in a direct concentration-dependent manner, with IC50 values of 31.6 nM (43) and 6.93 nM (42) versus 5460 nM for rivastigmine; for BChE (mice serum) the IC50 values were 67.1 nM (43), 3.17 nM (42), and 1590 nM (rivastigmine). The paper does not state a PD model beyond the IC50 from the log concentration–response curve.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Xie Q; Zheng Z; Shao B; Fu W; Xia Z; Li W; et al. et al. (2017). Journal of enzy
   ·  DOI: [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 ± SEM (nM) — 42 | `Q322` · not captured | 6.93 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col3 |
-| IC50 ± SEM (nM) — 43 | `Q322` · not captured | 31.6 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col4 |
-| IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 5460 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col6 |
-| IC50 ± SEM (nM) — 42 | `Q322` · not captured | 3.17 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col3 |
-| IC50 ± SEM (nM) — 43 | `Q322` · not captured | 67.1 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col4 |
-| IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 1590 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 ± SEM (nM) — 42 | `Q322` · not captured | 6.93 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col3 |
+| PD (effect) | IC50 ± SEM (nM) — 43 | `Q322` · not captured | 31.6 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col4 |
+| PD (effect) | IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 5460 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col6 |
+| PD (effect) | IC50 ± SEM (nM) — 42 | `Q322` · not captured | 3.17 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col3 |
+| PD (effect) | IC50 ± SEM (nM) — 43 | `Q322` · not captured | 67.1 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col4 |
+| PD (effect) | IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 1590 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

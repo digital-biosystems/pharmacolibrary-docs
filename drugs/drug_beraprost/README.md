@@ -26,14 +26,14 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Perez_2016](drugs/drug_beraprost/pd_Perez_2016_TR.md) | Perez Diaz N et al., In silico modelling of prostacyclin and…, Prostaglandins & other lipi… (2016) | [10.1016/j.prostaglandins.2015.12.002](https://doi.org/10.1016/j.prostaglandins.2015.12.002) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Perez_2016](drugs/drug_beraprost/pd_Perez_2016_vasodilation.md) | Perez Diaz N et al., In silico modelling of prostacyclin and…, Prostaglandins & other lipi… (2016) | [10.1016/j.prostaglandins.2015.12.002](https://doi.org/10.1016/j.prostaglandins.2015.12.002) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yang_1999](drugs/drug_beraprost/pd_Yang_1999_platelet_aggregation.md) | Yang L et al., Inhibitory effects of beraprost on plat…, Thrombosis research (1999) | [10.1016/s0049-3848(98)00187-x](https://doi.org/10.1016/s0049-3848(98)00187-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019](drugs/drug_beraprost/pd_Shen_2019_cAMP_generation.md) | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019](drugs/drug_beraprost/pd_Shen_2019_cell_proliferation_inhibition.md) | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019](drugs/drug_beraprost/pd_Shen_2019_vascular_relaxation.md) | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Perez_2016_TR](drugs/drug_beraprost/pd_Perez_2016_TR.md) | TRα antagonist activity ← beraprost · inhibition effect | — | Perez Diaz N et al., In silico modelling of prostacyclin and…, Prostaglandins & other lipi… (2016) | [10.1016/j.prostaglandins.2015.12.002](https://doi.org/10.1016/j.prostaglandins.2015.12.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Perez_2016_vasodilation](drugs/drug_beraprost/pd_Perez_2016_vasodilation.md) | T3-induced vasodilation ← beraprost · inhibition effect | — | Perez Diaz N et al., In silico modelling of prostacyclin and…, Prostaglandins & other lipi… (2016) | [10.1016/j.prostaglandins.2015.12.002](https://doi.org/10.1016/j.prostaglandins.2015.12.002) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yang_1999_platelet_aggregation](drugs/drug_beraprost/pd_Yang_1999_platelet_aggregation.md) | name ← beraprost · inhibition effect | — | Yang L et al., Inhibitory effects of beraprost on plat…, Thrombosis research (1999) | [10.1016/s0049-3848(98)00187-x](https://doi.org/10.1016/s0049-3848(98)00187-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019_cAMP_generation](drugs/drug_beraprost/pd_Shen_2019_cAMP_generation.md) | name ← esuberaprost · direct Emax (saturable) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019_cell_proliferation_inhibition](drugs/drug_beraprost/pd_Shen_2019_cell_proliferation_inhibition.md) | name ← esuberaprost · direct Emax (saturable) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Shen_2019_vascular_relaxation](drugs/drug_beraprost/pd_Shen_2019_vascular_relaxation.md) | name ← esuberaprost · direct Emax (saturable) effect | — | Shen L et al., Pharmacology of the single isomer, esub…, Biochemical pharmacology (2019) | [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026) |
 
 ## ADME sites
 

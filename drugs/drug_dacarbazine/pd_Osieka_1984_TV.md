@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dacarbazine (the dose) drives tumor volume (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (DTIC) doses in mg/kg (e.g., the LD10/30 level of 200 mg/kg) act on tumor volume in human melanoma xenografts, with an inhibitory dose-response relationship described by linear dose-response curves; the paper does not state a specific mechanism (e.g., Emax, effect compartment) and gives no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Osieka_1984`
 - **model family:** `linear`
 - **driver:** `dose_only`

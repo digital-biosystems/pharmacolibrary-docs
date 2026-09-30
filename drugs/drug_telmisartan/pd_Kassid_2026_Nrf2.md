@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives Nrf2 expression (in relative expression) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal PD model for telmisartan on Nrf2 expression; it only describes dose-dependent stimulation of testicular Nrf2 expression (relative expression) in cyclophosphamide-treated rats, with low, medium and high telmisartan doses (mg/kg/day) progressively restoring Nrf2 toward control levels, attributed mechanistically to Nrf2/HO-1 signaling upregulation. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

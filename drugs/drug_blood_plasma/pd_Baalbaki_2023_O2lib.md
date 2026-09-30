@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Imatinib drives Liberation of oxygen supplementation (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a mechanistic PD model for O2lib; instead, imatinib total plasma exposure (Cttrough and AUCtave) was related to time to liberation from oxygen supplementation (O2lib, time-to-event over 90 days) via Cox regression, showing an inverse association: unadjusted HR 0.73 (p=0.0014) and adjusted HR 0.78 (p=0.032) per Cttrough, with AUCtave HR 0.93 (unadjusted) and 0.81 (adjusted), i.e. lower exposure was associated with a higher likelihood of an O2lib event (logrank p=0.005 for Cttrough categories, p&lt;0.001 for AUCtave categories). No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baalbaki_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -21,43 +31,43 @@ Baalbaki N; Duijvelaar E; Said MM; Schippers J; Bet PM; Twisk J; Fritchley S; Lo
   ·  DOI: [10.1016/j.ejps.2023.106418](https://doi.org/10.1016/j.ejps.2023.106418)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.73 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col1 |
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.60 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col2 |
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.0014 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col3 |
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.78 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col4 |
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.61 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col5 |
-| Cttrough (mg/L) — A | `Q37` · not captured | 0.032 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col6 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.93 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col1 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.86 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col2 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.087 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col3 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.93 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col4 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.81 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col5 |
-| AUCtave(mg*h/L) — A | `Q19` · not captured | 0.36 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col6 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.51 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col1 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.34 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col2 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.001 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col3 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.61 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col4 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.36 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col5 |
-| Cttrough (mg/L)- High — A | `Q37` · not captured | 0.062 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col6 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.76 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col1 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.51 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col2 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.17 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col3 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 1.15 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col4 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.72 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col5 |
-| Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.56 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col6 |
-| AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.44 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col1 |
-| AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.29 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col2 |
-| AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.58 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col4 |
-| AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.33 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col5 |
-| AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.066 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col6 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.56 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col1 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.38 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col2 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.0046 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col3 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.50 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col4 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.31 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col5 |
-| AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.0044 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.73 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col1 |
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.60 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col2 |
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.0014 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col3 |
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.78 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col4 |
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.61 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col5 |
+| PK (driver) | Cttrough (mg/L) — A | `Q37` · not captured | 0.032 | mg/L | not captured | llm_confirmed (not captured) | tbl0003:row4:col6 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.93 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col1 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.86 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col2 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.087 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col3 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.93 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col4 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.81 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col5 |
+| PK (driver) | AUCtave(mg*h/L) — A | `Q19` · not captured | 0.36 | mg*h/L | not captured | llm (not captured) | tbl0003:row5:col6 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.51 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col1 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.34 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col2 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.001 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col3 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.61 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col4 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.36 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col5 |
+| PK (driver) | Cttrough (mg/L)- High — A | `Q37` · not captured | 0.062 | reference category=low | not captured | llm (not captured) | tbl0003:row7:col6 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.76 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col1 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.51 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col2 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.17 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col3 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 1.15 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col4 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.72 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col5 |
+| PK (driver) | Cttrough (mg/L)- Medium — A | `Q37` · not captured | 0.56 | reference category=low | not captured | llm (not captured) | tbl0003:row8:col6 |
+| PK (driver) | AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.44 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col1 |
+| PK (driver) | AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.29 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col2 |
+| PK (driver) | AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.58 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col4 |
+| PK (driver) | AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.33 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col5 |
+| PK (driver) | AUCtave(mg*h/L)- High — A | `Q19` · not captured | 0.066 | reference category=low | not captured | llm (not captured) | tbl0003:row9:col6 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.56 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col1 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.38 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col2 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.0046 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col3 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.50 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col4 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.31 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col5 |
+| PK (driver) | AUCtave(mg*h/L)- Medium — A | `Q19` · not captured | 0.0044 | reference category=low | not captured | llm (not captured) | tbl0003:row10:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

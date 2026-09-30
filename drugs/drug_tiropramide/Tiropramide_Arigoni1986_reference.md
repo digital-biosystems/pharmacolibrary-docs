@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **Only clearance was extracted — no volume.**
@@ -29,7 +31,7 @@ Arigoni R; Chisté R; Drovanti A; Makovec F; Senin P; Setnikar I et al. (1986). 
 ## Model component
 <dbs-pgx drug="tiropramide" model-id="Tiropramide_Arigoni1986_reference" status="needs_review" stale="false" population="healthy volunteers" measured-compound="tiropramide" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
@@ -91,12 +93,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Arigoni_1986:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q65 | pass | volume within physiological range | 221 L | not captured | not captured | ['Arigoni_1986:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

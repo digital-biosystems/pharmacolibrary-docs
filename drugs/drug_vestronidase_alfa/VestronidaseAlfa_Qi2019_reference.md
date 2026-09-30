@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The vestronidase alfa parameters (CL 9.61, V1 9.64, Q 16.3, V2 4.23) were reported with the unit 'units' instead of L/h or L, so no SI values could be established and the record was rejected.**

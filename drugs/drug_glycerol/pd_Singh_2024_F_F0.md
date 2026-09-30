@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-arachidonoyl glycerol (measured concentrations) drives GRABeCB2.0 fluorescence (in ratio): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> ATP (300 µM–1 mM) stimulates endogenous 2-arachidonoyl glycerol (2-AG) production, detected as GRABeCB2.0 fluorescence (ΔF/F0, ratio), with ATP increasing 2-AG by ≈9 nM; the mechanism is stimulation of 2-AG production (PLC- and calcium-dependent), not inhibition of its elimination. The record's Emax-type fit gives peak maximal responses of 1.79, 0.90 and 1.69 (ratio) with times to peak of 4.38, 3.74 and 4.64 min for CB1R agonists; the paper does not state IC50/EC50/Imax/kin/kout/ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,14 +31,14 @@ Singh S; Sarroza D; English A; Whittington D; Dong A; Malamas M; et al. et al. (
   ·  DOI: [10.1111/bph.16348](https://doi.org/10.1111/bph.16348)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Time to peak — CB1R agonists | `Q56` · not captured | 4.38 | not captured | not captured | llm_corrected (not captured) | T1:row4:col2 |
-| Time to peak — CB1R agonists | `Q56` · not captured | 3.74 | not captured | not captured | llm_corrected (not captured) | T1:row4:col3 |
-| Time to peak — CB1R agonists | `Q56` · not captured | 4.64 | not captured | not captured | llm_corrected (not captured) | T1:row4:col4 |
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.79 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col2 |
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 0.90 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col3 |
-| Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.69 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Time to peak — CB1R agonists | `Q56` · not captured | 4.38 | not captured | not captured | llm_corrected (not captured) | T1:row4:col2 |
+| PK (driver) | Time to peak — CB1R agonists | `Q56` · not captured | 3.74 | not captured | not captured | llm_corrected (not captured) | T1:row4:col3 |
+| PK (driver) | Time to peak — CB1R agonists | `Q56` · not captured | 4.64 | not captured | not captured | llm_corrected (not captured) | T1:row4:col4 |
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.79 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col2 |
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 0.90 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col3 |
+| PD (effect) | Maximal response: peak — CB1R agonists | `Q320` · not captured | 1.69 | not captured | not captured | llm_confirmed (not captured) | T1:row5:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

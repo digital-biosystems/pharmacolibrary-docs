@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hemin (measured concentrations) drives Cell migration (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Hemin concentrations (μM) inhibit PC-3 cell migration in a dose-dependent, ANO1-dependent manner (no effect in ANO1-KO cells), acting via inhibition of the ANO1 chloride channel (IC50 0.45 μM) and reduction of ANO1 protein levels; the paper does not report a fitted Emax/IC50 for the migration response itself or any kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Park_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

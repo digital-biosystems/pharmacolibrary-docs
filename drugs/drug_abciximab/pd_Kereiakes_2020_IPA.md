@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RUC-4 (measured concentrations) drives Inhibition of platelet aggregation (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> RUC-4 blood concentrations (ng/mL) drive inhibition of platelet aggregation (IPA, %) measured ex vivo by light transmission aggregometry with 20 μmol/L ADP; RUC-4 acts as a glycoprotein IIb/IIIa inhibitor, and the record describes a sigmoid Emax inhibitory model, but the paper excerpts give no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kereiakes_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

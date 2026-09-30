@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Selatogrel drives Inhibition of platelet aggregation (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for cangrelor; cangrelor is mentioned only qualitatively as an intravenously administered reversible P2Y12 receptor antagonist whose dissociation from the receptor prevents clopidogrel's and prasugrel's active metabolites from conveying sustained IPA if given during cangrelor infusion. No cangrelor concentrations, potency values (IC50/EC50/Emax), or rate constants are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrich_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

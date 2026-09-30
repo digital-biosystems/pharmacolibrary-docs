@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives Hydroxyl radical scavenging activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of the peptides SMP-3, SMP-7, SMP-10, and SMP-11 (from Spanish mackerel muscle protein hydrolysate) act on hydroxyl radical (HO·) scavenging activity (%), a concentration-dependent direct scavenging effect with EC50 values of 1.12, 0.38, 0.26, and 0.67 mg/mL, respectively (GSH control 0.12 mg/mL); no pharmacodynamic model parameters (Imax, Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

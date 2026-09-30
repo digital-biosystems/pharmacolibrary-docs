@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ca2+ drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In DUOX1/DUOXA1-expressing HEK293T homogenates, Ca2+ stimulates H2O2 synthesis rate in an Emax relationship; with Ca2+ preincubation before NADPH start the EC50 was 1.6 μM (CI95 0.9–2.9 μM), whereas with NADPH preincubation and Ca2+ start it was 0.3 mM (CI95 0.1–0.5 mM), with maximum activity reduced &gt;2-fold in the latter order. The paper does not state a kinetic mechanism beyond Ca2+-dependent activation of DUOX1's H2O2 synthesis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Conner_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

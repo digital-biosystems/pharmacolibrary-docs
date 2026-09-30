@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NIK-smi drives CCL5 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The NIK inhibitor NIK-smi dose-dependently reduces serum and colon tissue CCL5 (a CD40-dependent biomarker) in the anti-CD40 agonist antibody colitis model, consistent with NIK-smi inhibiting NIK-driven chemokine production; a 200 mg/kg BID regimen was required for sustained NIK inhibition, and the paper reports a free IC90 of 320 nM. The paper does not state a specific PD model structure (e.g., Emax or indirect-response parameters) for the CCL5 relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Xu H; Li D; Liang J; Adamson N; Scherl A; Zou L; Hu C; Storm EE; Cox CB; Johnson
   ·  DOI: [10.3389/fimmu.2026.1825442](https://doi.org/10.3389/fimmu.2026.1825442)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| free IC90 | `Q322` · not captured | 320 | nM | not captured | review_gapfill (not captured) | Xu_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | free IC90 | `Q322` · not captured | 320 | nM | not captured | review_gapfill (not captured) | Xu_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

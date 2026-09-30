@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifapentine (measured concentrations) drives name (in log10 CFU/lung) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD model mechanism or parameters (no Imax/IC50/Emax/kin/kout/ke0) linking rifabutin plasma concentrations (target troughs 0.045 and 0.15 μg/mL) to the M. tuberculosis lung burden (log10 CFU/lung); it only reports an exposure-activity PK/PD study design with one-compartment PK (CL/F, V/F, Ka) and an autoinduction factor on CL/F.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@
 not matched (stem Chang_2023)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| RPT 0.75 mg/kg BID — Fitted plasma concentrationb (µg/mL) | `Q900` · not captured | 2.98 | µg/mL | not captured | llm (not captured) | T3:row6:col3 |
-| RPT 0.75 mg/kg BID — Fitted plasma concentrationb (µg/mL) | `Q900` · not captured | 2.60 | µg/mL | not captured | llm (not captured) | T3:row6:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | RPT 0.75 mg/kg BID — Fitted plasma concentrationb (µg/mL) | `Q900` · not captured | 2.98 | µg/mL | not captured | llm (not captured) | T3:row6:col3 |
+| model term | RPT 0.75 mg/kg BID — Fitted plasma concentrationb (µg/mL) | `Q900` · not captured | 2.60 | µg/mL | not captured | llm (not captured) | T3:row6:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

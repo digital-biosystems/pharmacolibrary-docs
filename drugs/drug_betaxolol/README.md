@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Lieberman_1996](drugs/drug_betaxolol/pd_Lieberman_1996_BP.md) | Lieberman R et al., Role of pharmacokinetic-pharmacodynamic…, Therapeutic drug monitoring (1996) | [10.1097/00007691-199608000-00019](https://doi.org/10.1097/00007691-199608000-00019) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Lieberman_1996_BP](drugs/drug_betaxolol/pd_Lieberman_1996_BP.md) | blood pressure ← betaxolol · direct sigmoid Emax (Hill) effect | — | Lieberman R et al., Role of pharmacokinetic-pharmacodynamic…, Therapeutic drug monitoring (1996) | [10.1097/00007691-199608000-00019](https://doi.org/10.1097/00007691-199608000-00019) |
 
 ## Pharmacogenomics (PGx)
 

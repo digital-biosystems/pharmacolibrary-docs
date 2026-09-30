@@ -25,9 +25,9 @@ The use of docetaxel may lead to udesired outcomes such as hepatic impairment, h
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | 1-compartment (no model) | 2 | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_docetaxel/Docetaxel_Wang2024_reference.md) | — | 1-compartment (no model) | 2 | Wang D et al., Oral docetaxel plus encequidar - A phar…, Journal of pharmacokinetics… (2024) | [10.1007/s10928-024-09913-y](https://doi.org/10.1007/s10928-024-09913-y) |
 
 ## ADME sites
 
@@ -41,6 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` substrate | DrugBank actor |
 | distribution | lung | `ABCC1` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate, `SLC22A7` substrate | DrugBank actor |

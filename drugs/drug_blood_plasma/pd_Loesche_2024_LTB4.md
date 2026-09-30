@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LYS006 drives LTB4 reduction (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> LYS006, an LTA4H inhibitor, reduces ex vivo LTB4 levels (percent) in blood, with an IC50 of 21 ng/mL; the paper does not state a formal PD model structure (no Imax/Emax, kin/kout, or ke0 values are given), but attributes the steep, sustained concentration–response relationship to retention of LYS006 in blood cells (~33 ng/mL at 24 h after a single 20 mg dose) maintaining target engagement despite low plasma levels (1.2 ng/mL), yielding 95% LTB4 reduction at 4 h and &gt;80% at 24 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Loesche_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Loesche C; Picard D; Van Hoorick B; Schuhmann I; Jäger P; Klein K; et al. et al
   ·  DOI: [10.1111/cts.13724](https://doi.org/10.1111/cts.13724)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Dry skin — SAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col1 |
-| Dry skin — SAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col2 |
-| Dry skin — MAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col3 |
-| Dry skin — MAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col4 |
-| Dry skin — FE cohorts | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col5 |
-| IC50 | `Q322` · not captured | 21 | ng/mL | not captured | review_gapfill (not captured) | Loesche_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Dry skin — SAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col1 |
+| — | Dry skin — SAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col2 |
+| — | Dry skin — MAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col3 |
+| — | Dry skin — MAD cohorts | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col4 |
+| — | Dry skin — FE cohorts | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | cts13724-tbl-0002:row14:col5 |
+| PD (effect) | IC50 | `Q322` · not captured | 21 | ng/mL | not captured | review_gapfill (not captured) | Loesche_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

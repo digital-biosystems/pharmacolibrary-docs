@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Warfarin (measured concentrations) drives INR (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Warfarin acts on the INR indirectly: it inhibits vitamin K hydroquinone (VKH2), reducing the concentrations of coagulation Factors II, VII, and X, and the relative reduction in their product is translated into an increased INR via a log–log linear INR equation (exponent γ). The paper does not state numeric Imax, IC50/EC50, or rate constants (kin, kout, ke0) in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Falkenhagen_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

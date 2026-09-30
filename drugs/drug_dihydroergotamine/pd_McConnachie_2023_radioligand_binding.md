@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dihydroergotamine mesylate (measured concentrations) drives name (in percent inhibition) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dihydroergotamine (0.01–300 nM for 5-HT3/4E; 0.3–10,000 nM for 5-HT1B, α2B, D2, D5) was tested in radioligand binding assays measuring percent inhibition of specific binding, i.e., a direct competitive binding effect rather than a production/elimination model; the paper does not state a formal PD model. Key values given are an IC50 of 149 nM at the 5-HT1F receptor (weak binding) and dissociation half-lives of 1.38 h (5-HT1B) and 1.28 h (5-HT1D), about 10-fold longer than sumatriptan (0.17 h and 0.09 h).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McConnachie_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

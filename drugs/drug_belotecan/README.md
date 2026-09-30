@@ -24,11 +24,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2009](drugs/drug_belotecan/pd_Kim_2009_apoptosis.md) | Kim YY et al., CKD-602, a camptothecin derivative, inh…, Oncology reports (2009) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2009](drugs/drug_belotecan/pd_Kim_2009_cell_viability.md) | Kim YY et al., CKD-602, a camptothecin derivative, inh…, Oncology reports (2009) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Wu_2012_2](drugs/drug_belotecan/pd_Wu_2012_2_MONO.md) | Wu (2012) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2009_apoptosis](drugs/drug_belotecan/pd_Kim_2009_apoptosis.md) | name ← CKD-602 · inhibition effect | — | Kim YY et al., CKD-602, a camptothecin derivative, inh…, Oncology reports (2009) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Kim_2009_cell_viability](drugs/drug_belotecan/pd_Kim_2009_cell_viability.md) | name ← CKD-602 · inhibition effect | — | Kim YY et al., CKD-602, a camptothecin derivative, inh…, Oncology reports (2009) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Wu_2012_2_MONO](drugs/drug_belotecan/pd_Wu_2012_2_MONO.md) | monocytes ← encapsulated CKD-602 · direct Emax (saturable) effect | — | Wu (2012) | — |
 
 ## ADME sites
 

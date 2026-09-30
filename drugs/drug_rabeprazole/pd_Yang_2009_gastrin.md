@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rabeprazole (concentrations from this paper's PK model) drives gastrin (in pg/ml): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Rabeprazole plasma concentrations drive a stimulatory sigmoid-Emax effect on serum gastrin (pg/ml), linked through an effect compartment (ke0) because the concentration–gastrin profile showed counterclockwise hysteresis; the record gives an EC50 of 50 (units not stated), and the paper reports that Emax decreased and EC50 and ke0 increased after multiple doses, but does not state the numeric Emax or the precise mechanism by which rabeprazole raises gastrin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,12 +31,12 @@ Yang JC; Yang YF; Uang YS; Lin CJ; Wang TH et al. (2009). British journal of cli
   ·  DOI: [10.1111/j.1365-2125.2009.03393.x](https://doi.org/10.1111/j.1365-2125.2009.03393.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC — Final PK model | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col1 |
-| EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col6 |
-| EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col13 |
-| EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col17 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC — Final PK model | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col1 |
+| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col6 |
+| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col13 |
+| PD (effect) | EC | `Q321` · not captured | 50 | unknown | not captured | llm (not captured) | tab_0:row8:col17 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

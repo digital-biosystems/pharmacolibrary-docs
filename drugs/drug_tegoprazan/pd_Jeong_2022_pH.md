@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tegoprazan (concentrations from the PK model of He_2021) drives gastric acid pH (in unit): indirect response — drug inhibits the loss of gastric acid pH.
+
+**Model:** No model was generated from this record.
+
+> Tegoprazan plasma concentrations (ng/mL, from the PBPK model) drive intragastric gastric acid pH via an indirect response model combined with a sigmoid Emax function applied to a baseline pH profile described by a sixth-order Fourier series; the paper does not state the specific PD parameter values (e.g., Emax, EC50, kin, kout).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeong_2022`
 - **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
@@ -21,30 +31,30 @@ Jeong HC; Kim MG; Wei Z; Lee KR; Lee J; Song IS; et al. et al. (2022). Pharmaceu
   ·  DOI: [10.3390/pharmaceutics14061298](https://doi.org/10.3390/pharmaceutics14061298)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| fu — Initial Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col1 |
-| fu — Final Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col2 |
-| Vss (L/kg) — Initial Value | `Q65` · not captured | 1.55 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col1 |
-| Vss (L/kg) — Final Value | `Q65` · not captured | 1.0 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col2 |
-| CLint, CYP3A4 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.855 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col1 |
-| CLint, CYP3A4 (μL/min/pmol) — Final Value | `Q3` · not captured | 1.920 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col2 |
-| CLint, CYP2C19 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.614 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col1 |
-| CLint, CYP2C19 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.710 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col2 |
-| CLint, CYP2C8 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col1 |
-| CLint, CYP2C8 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col2 |
-| CLint, CYP2C9 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col1 |
-| CLint, CYP2C9 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col2 |
-| CLint, CYP2D6 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col1 |
-| CLint, CYP2D6 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col2 |
-| CLint, CYP2E1 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col1 |
-| CLint, CYP2E1 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col2 |
-| Additional HLM CLint (μL/min/mg protein) — Initial Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col1 |
-| Additional HLM CLint (μL/min/mg protein) — Final Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col2 |
-| Biliary CLint (µL/min/106) — Final Value | `Q3` · not captured | 1.290 | µL/min/106 | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row25:col2 |
-| CLR (L/h) — Initial Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col1 |
-| CLR (L/h) — Final Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col2 |
-| Additional systemic clearance (L/h) — Final Value | `Q358` · not captured | 1.43 | L/h | not captured | llm_corrected (not captured) | pharmaceutics-14-01298-t001:row27:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | fu — Initial Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col1 |
+| PK (driver) | fu — Final Value | `Q46` · not captured | 0.087 | not captured | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row7:col2 |
+| PK (driver) | Vss (L/kg) — Initial Value | `Q65` · not captured | 1.55 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col1 |
+| PK (driver) | Vss (L/kg) — Final Value | `Q65` · not captured | 1.0 | L/kg | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row14:col2 |
+| PK (driver) | CLint, CYP3A4 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.855 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col1 |
+| PK (driver) | CLint, CYP3A4 (μL/min/pmol) — Final Value | `Q3` · not captured | 1.920 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row18:col2 |
+| PK (driver) | CLint, CYP2C19 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.614 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col1 |
+| PK (driver) | CLint, CYP2C19 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.710 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row19:col2 |
+| PK (driver) | CLint, CYP2C8 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col1 |
+| PK (driver) | CLint, CYP2C8 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.060 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row20:col2 |
+| PK (driver) | CLint, CYP2C9 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col1 |
+| PK (driver) | CLint, CYP2C9 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.140 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row21:col2 |
+| PK (driver) | CLint, CYP2D6 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col1 |
+| PK (driver) | CLint, CYP2D6 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.020 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row22:col2 |
+| PK (driver) | CLint, CYP2E1 (μL/min/pmol) — Initial Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col1 |
+| PK (driver) | CLint, CYP2E1 (μL/min/pmol) — Final Value | `Q3` · not captured | 0.030 | μL/min/pmol | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row23:col2 |
+| PK (driver) | Additional HLM CLint (μL/min/mg protein) — Initial Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col1 |
+| PK (driver) | Additional HLM CLint (μL/min/mg protein) — Final Value | `Q3` · not captured | 15.96 | μL/min/mg protein | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row24:col2 |
+| PK (driver) | Biliary CLint (µL/min/106) — Final Value | `Q3` · not captured | 1.290 | µL/min/106 | not captured | llm_confirmed (not captured) | pharmaceutics-14-01298-t001:row25:col2 |
+| PK (driver) | CLR (L/h) — Initial Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col1 |
+| PK (driver) | CLR (L/h) — Final Value | `Q26` · not captured | 1.1 | L/h | not captured | exact (not captured) | pharmaceutics-14-01298-t001:row26:col2 |
+| PK (driver) | Additional systemic clearance (L/h) — Final Value | `Q358` · not captured | 1.43 | L/h | not captured | llm_corrected (not captured) | pharmaceutics-14-01298-t001:row27:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

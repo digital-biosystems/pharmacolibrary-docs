@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Argatroban, dabigatran, rivaroxaban, apixaban, fondaparinux drive coagulation activity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In an in vitro fluorometric assay, fondaparinux (and the other anticoagulants argatroban, dabigatran, rivaroxaban, apixaban) concentrations directly inhibit coagulation activity (thrombin/AMC fluorescence) in platelet-poor plasma via a sigmoid (Hill) Emax relationship; for fondaparinux the IC50 is 107 nM and the Hill coefficient nH is 4.5 (95% CI 1.3), the steepest of the drugs tested, so doubling the dose from IC50 decreases coagulation activity by ~46%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,18 +31,18 @@ Chang JB; Quinnies KM; Realubit R; Karan C; Rand JH; Tatonetti NP et al. (2016).
   ·  DOI: [10.1038/srep29387](https://doi.org/10.1038/srep29387)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Apixaban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 4.1 | not captured | not captured | llm (not captured) | t1:row1:col1 |
-| Apixaban — IC50(nM) | `Q322` · not captured | 29 | nM | not captured | llm (not captured) | t1:row1:col2 |
-| Argatroban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 1.7 | not captured | not captured | llm (not captured) | t1:row2:col1 |
-| Argatroban — IC50(nM) | `Q322` · not captured | 45 | nM | not captured | llm (not captured) | t1:row2:col2 |
-| Dabigatran — Hill coefficient,nH, 95% CI | `Q325` · not captured | 2.7 | not captured | not captured | llm (not captured) | t1:row3:col1 |
-| Dabigatran — IC50(nM) | `Q322` · not captured | 26 | nM | not captured | llm (not captured) | t1:row3:col2 |
-| Fondaparinux — Hill coefficient,nH, 95% CI | `Q325` · not captured | 4.5 | not captured | not captured | llm (not captured) | t1:row4:col1 |
-| Fondaparinux — IC50(nM) | `Q322` · not captured | 107 | nM | not captured | llm (not captured) | t1:row4:col2 |
-| Rivaroxaban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 3.6 | not captured | not captured | llm (not captured) | t1:row5:col1 |
-| Rivaroxaban — IC50(nM) | `Q322` · not captured | 17 | nM | not captured | llm (not captured) | t1:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Apixaban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 4.1 | not captured | not captured | llm (not captured) | t1:row1:col1 |
+| PD (effect) | Apixaban — IC50(nM) | `Q322` · not captured | 29 | nM | not captured | llm (not captured) | t1:row1:col2 |
+| PD (effect) | Argatroban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 1.7 | not captured | not captured | llm (not captured) | t1:row2:col1 |
+| PD (effect) | Argatroban — IC50(nM) | `Q322` · not captured | 45 | nM | not captured | llm (not captured) | t1:row2:col2 |
+| PD (effect) | Dabigatran — Hill coefficient,nH, 95% CI | `Q325` · not captured | 2.7 | not captured | not captured | llm (not captured) | t1:row3:col1 |
+| PD (effect) | Dabigatran — IC50(nM) | `Q322` · not captured | 26 | nM | not captured | llm (not captured) | t1:row3:col2 |
+| PD (effect) | Fondaparinux — Hill coefficient,nH, 95% CI | `Q325` · not captured | 4.5 | not captured | not captured | llm (not captured) | t1:row4:col1 |
+| PD (effect) | Fondaparinux — IC50(nM) | `Q322` · not captured | 107 | nM | not captured | llm (not captured) | t1:row4:col2 |
+| PD (effect) | Rivaroxaban — Hill coefficient,nH, 95% CI | `Q325` · not captured | 3.6 | not captured | not captured | llm (not captured) | t1:row5:col1 |
+| PD (effect) | Rivaroxaban — IC50(nM) | `Q322` · not captured | 17 | nM | not captured | llm (not captured) | t1:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

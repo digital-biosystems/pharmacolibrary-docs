@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinidine (measured concentrations) drives Vulnerability window (in ms) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the SQT3 (Kir2.1 D172N) ventricular model, disopyramide is described as prolonging QT interval and reducing T-wave amplitude, but the paper does not state a pharmacodynamic model or mechanism linking disopyramide concentrations to the vulnerability window (VW, ms); no disopyramide potency values (IC50, Hill coefficient) or VW effect parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2017_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

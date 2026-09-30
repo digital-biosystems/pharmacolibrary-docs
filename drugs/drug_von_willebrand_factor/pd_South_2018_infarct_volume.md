@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking ADAMTS-13 concentrations to infarct volume; it reports dose-ranging effects of WT and gain-of-function (GoF) ADAMTS-13 (200, 400, 800 nM) on infarct volume and rCBF in mouse stroke models, with GoF protective at lower doses than WT. The only potency value given is for in vitro dissolution of VWF–platelet aggregates, with EC50 of 10.2 ± 5.6 nM (WT) and 2.5 ± 1.1 nM (GoF); no mechanism for the infarct volume response is quantified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

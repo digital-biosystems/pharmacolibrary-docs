@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ceratonia siliqua aqueous extract (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for anxiety; the only concentration-response data are in vitro, where Ceratonia siliqua aqueous extract (CsAE) dose-dependently inhibits acetylcholinesterase activity, with an IC50 of 0.29 ± 0.004 mg/mL and maximal inhibition of 88.53 ± 0.08% at 1 mg/mL (galantamine reference: IC50 0.03 ± 0.0005 mg/mL, 98.05 ± 0.63% at 0.25 mg/mL). No mechanism beyond enzyme inhibition, and no PD model parameters (Emax, kin, kout, ke0, gamma), are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abidar_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

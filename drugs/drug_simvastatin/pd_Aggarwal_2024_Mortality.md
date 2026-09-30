@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives All-cause mortality (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanism linking simvastatin to all-cause mortality; it only reports that individual ED50 and Emax values were estimated from a nonlinear mixed-effects dose-response model of LDL-C reduction and then related to time-to-event outcomes (composite ASCVD events and all-cause mortality), without giving potency or rate values for the mortality endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -19,25 +19,25 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 04:20 | 14:18 | 2/0/0 | 3/0/0 | 0/0/2 | 381,244/26,960 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 4/14 | 17/1 | 0 |
+| 2026-09-29 22:42 | 1:08 | 2/0/0 | 3/0/0 | 0/0/2 | 26,533/1,871 | ollama / qwen3.8:27b-mtp-q8_0 | 18 | 4/14 | 17/1 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_loperamide](drugs/drug_loperamide/Loperamide_Valenzuela2025_loperamide.md) | ▶ model + simulator | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Valenzuela_2025_m1](drugs/drug_loperamide/Loperamide_Valenzuela2025_m1.md) | ▶ model + simulator | 1-compartment, oral | 8 | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Abidi_2022](drugs/drug_loperamide/pd_Abidi_2022_SIC.md) | Abidi C et al., Dose-dependent Action of, Dose-response : a publicati… (2022) | [10.1177/15593258221127556](https://doi.org/10.1177/15593258221127556) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Dominguez-Gomez_2026](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_QT.md) | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dominguez-Gomez_2026](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_QT_interval_prolongation.md) | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dominguez-Gomez_2026](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_arrhythmic_probability.md) | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Dominguez-Gomez_2026](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_unknown.md) | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Valenzuela_2025](drugs/drug_loperamide/pd_Valenzuela_2025_QTcF.md) | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Abidi_2022_SIC](drugs/drug_loperamide/pd_Abidi_2022_SIC.md) | spontaneous intestinal contraction amplitude ← Zingiber officinale aqueous extract · direct Emax (saturable) effect | — | Abidi C et al., Dose-dependent Action of, Dose-response : a publicati… (2022) | [10.1177/15593258221127556](https://doi.org/10.1177/15593258221127556) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Dominguez-Gomez_2026_QT](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_QT.md) | QT prolongation ← loperamide · direct sigmoid Emax (Hill) effect | — | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dominguez-Gomez_2026_QT_interval_prolongation](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_QT_interval_prolongation.md) | name ← loperamide · direct sigmoid Emax (Hill) effect | — | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Dominguez-Gomez_2026_arrhythmic_probability](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_arrhythmic_probability.md) | name ← loperamide · direct sigmoid Emax (Hill) effect | — | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Dominguez-Gomez_2026_unknown](drugs/drug_loperamide/pd_Dominguez_Gomez_2026_unknown.md) | Arrhythmic probability ← loperamide · direct sigmoid Emax (Hill) effect | — | Dominguez-Gomez P et al., AI-enhanced cardiac digital twins exten…, Regulatory toxicology and p… (2026) | [10.1016/j.yrtph.2026.106138](https://doi.org/10.1016/j.yrtph.2026.106138) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Valenzuela_2025_QTcF](drugs/drug_loperamide/pd_Valenzuela_2025_QTcF.md) | name ← N-desmethyl loperamide (M1) · direct linear effect | — | Valenzuela B et al., Evaluation of the Effect of Loperamide…, Clinical and translational… (2025) | [10.1111/cts.70114](https://doi.org/10.1111/cts.70114) |
 
 ## Pharmacogenomics (PGx)
 
@@ -62,6 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/metabolism/substrate | DrugBank actor |
@@ -79,7 +80,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 130 matched, 57 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 9  ·  **relevant:** 1
 - **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

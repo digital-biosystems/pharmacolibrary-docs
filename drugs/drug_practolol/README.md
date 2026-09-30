@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Barber_1971_reference](drugs/drug_practolol/Practolol_Barber1971_reference.md) | 1-compartment (no model) | 0 | Barber HE et al., Distribution kinetics and intestinal ab…, British journal of pharmaco… (1971) | [10.1111/j.1476-5381.1971.tb08049.x](https://doi.org/10.1111/j.1476-5381.1971.tb08049.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Barber_1971_reference](drugs/drug_practolol/Practolol_Barber1971_reference.md) | — | 1-compartment (no model) | 0 | Barber HE et al., Distribution kinetics and intestinal ab…, British journal of pharmaco… (1971) | [10.1111/j.1476-5381.1971.tb08049.x](https://doi.org/10.1111/j.1476-5381.1971.tb08049.x) |
 
 ## ADME sites
 

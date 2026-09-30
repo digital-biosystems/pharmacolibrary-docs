@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DEET (measured concentrations) drives Firefly light organ illumination (in intensity) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DEET (applied as µg doses, 1–5 µg) acts on the firefly (Photinus pyralis) light organ, causing dose-dependent illumination via an octopaminergic mechanism (blocked by the octopamine receptor antagonist phentolamine), consistent with octopamine-mediated induction of luminescence; the paper gives no PD model parameters (no Emax, EC50, kin, kout, or ke0) for this effect, only qualitative dose-dependent activation with faint illumination at 1–2.5 µg and bright complete illumination at 5 µg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swale_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

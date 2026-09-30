@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Imipramine (concentrations from the PK model of Tamayo_1992) drives HERG tail current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Imipramine reversibly inhibits HERG tail current (I_HERG) in HERG-transfected CHO cells with a sigmoid Emax relationship, IC50 of 3.4±0.4 mM and Hill coefficient 1.17±0.03 (n=5); 3 mM imipramine inhibited 41±4% of tail current. The paper does not give an explicit PD mechanism model, but suggests block via binding to resting channels with rapid additional binding to open channels early during depolarization, without preferential inactivated-state binding.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Teschemacher_1999`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

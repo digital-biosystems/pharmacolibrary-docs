@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Metformin (mM concentrations, no PK model) stimulates ROS formation in MCF-7WT cells indirectly: it inhibits collagen biosynthesis, increasing intracellular proline availability for PRODH/POX-dependent ROS generation; the paper does not report a quantitative PD model (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma for the ROS response). Cytotoxicity IC50 values were ~17 mM in MCF-7WT and ~28 mM in MCF-7crPOX cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huynh_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methotrexate (measured concentrations) drives name (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record indicates extracellular methotrexate concentrations (µM) inhibiting a 5-formyltetrahydrofolate-related response (EC50 in µM) in L1210 murine leukemia cells, but the excerpts do not state this EC50, the model form, or an inhibitory mechanism; the excerpts only describe MTX transport via the reduced folate carrier (e.g., steady-state intracellular MTX maxima of 8.8 and 41.4 µM in L1210 and MTXr A-R16 cells, efflux rate constants 0.13 and 0.64 min−1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_1997`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

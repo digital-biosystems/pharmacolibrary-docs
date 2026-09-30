@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hemin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hemin (1–10 μM, 14 h exposure) acts on neuronal death measured by LDH release in mixed cortical neuron/astrocyte cultures, producing concentration-dependent injury with a calculated EC50 of 1.85 μM (69.7 ± 8.6% LDH release at 3 μM in wild-type); the paper does not state a formal PD model or mechanism parameters, though injury is attributed to hemin breakdown products (iron, prevented by phenanthroline) and reduced ≥60% in HO-2 knockout cultures.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Regan_2004`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

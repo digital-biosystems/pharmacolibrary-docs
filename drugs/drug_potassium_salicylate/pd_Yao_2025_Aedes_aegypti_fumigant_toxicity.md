@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methyl salicylate (measured concentrations) drives name (in LC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism for the fumigant toxicity of Neolamarckia cadamba essential oils against Aedes aegypti; it reports only median lethal concentrations (LC50) of 0.20–0.22 μL/L (fumigant toxicity) and LC50 of 73.41–75.27 μg/mL (toxicity), with KT50 of 1.36–1.97 min. The IC50 values in the record (ascorbic acid 0.02 mg/mL, stem bark EO 1.23–1.24 mg/mL, leaf EO 3.29 mg/mL) refer to DPPH radical-scavenging antioxidant activity, not to the mosquito response, and no Imax, kin, kout, ke0 or Hill coefficient is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yao_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Yao H; Liu Y; Liu X; Zhou J; Deng Q; Huang J et al. (2025). Plants (Basel, Switz
   ·  DOI: [10.3390/plants14233633](https://doi.org/10.3390/plants14233633)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ascorbic acid — IC50 * (mg/mL) | `Q322` · not captured | 0.02 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row1:col2 |
-| EO of the stem barks — IC50 * (mg/mL) | `Q322` · not captured | 1.24 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row2:col2 |
-| EO of the leaves — IC50 * (mg/mL) | `Q322` · not captured | 3.29 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ascorbic acid — IC50 * (mg/mL) | `Q322` · not captured | 0.02 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row1:col2 |
+| PD (effect) | EO of the stem barks — IC50 * (mg/mL) | `Q322` · not captured | 1.24 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row2:col2 |
+| PD (effect) | EO of the leaves — IC50 * (mg/mL) | `Q322` · not captured | 3.29 | mg/mL | not captured | llm (not captured) | plants-14-03633-t004:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

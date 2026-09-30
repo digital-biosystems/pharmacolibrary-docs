@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hymecromone's active compound 4-methylumbelliferone (4MU) inhibits hyaluronan (HA) secretion/deposition by NIH3T3 fibroblasts in a concentration-dependent manner, with IC50 = 8.68 ± 1.6 μM; the paper suggests the mechanism is depletion of the HAS substrate UDP-GlcUA (4MU is a UDP-glucuronyltransferase substrate) rather than direct HAS inhibition, and no PD model parameters (Imax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsitrina_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

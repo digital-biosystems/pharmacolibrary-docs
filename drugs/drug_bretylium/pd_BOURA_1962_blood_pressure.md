@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in mmHg) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking bretylium concentrations to blood pressure; no mechanism, potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0) for a blood pressure response are given. The excerpts only report that bretylium (e.g. 10 mg/kg daily) blocks adrenergic neurone function and produces hypersensitivity of the cat nictitating membrane to adrenaline and noradrenaline (up to about 100-fold for noradrenaline and 20-fold for adrenaline after 7–14 daily doses).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `BOURA_1962`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

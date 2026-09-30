@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The propacetamol record is incomplete: the intercompartmental clearance Q (116 l.h(-1).70 kg(-1)) was neither extracted nor defaulted, so parameter coverage failed (2 of 3 expected), and the record was built from the abstract only.**

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (concentrations from the PK model of Ailabouni_2026::250_mg) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Metformin concentrations act on the peripheral glucose uptake effect (EP), one of three glucose-lowering effect coefficients (EGI, EL, EP) describing stimulation of glucose consumption in the periphery; the model is a sigmoid Emax-type function with parameters α = 12.80 and 1.01e-02 and β = 1.90 and 4.13 (units not stated). The paper does not give Imax, IC50/EC50, kin, kout, or ke0 values, and does not state the mechanism beyond metformin stimulating peripheral glucose consumption.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Sun L; Kwok E; Gopaluni B; Vahidi O et al. (2011). The open biomedical engineeri
   ·  DOI: [10.2174/1874120701105010001](https://doi.org/10.2174/1874120701105010001)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| α | `Q67` · not captured | 12.80 | not captured | not captured | exact (not captured) | T1:row6:col1 |
-| α | `Q67` · not captured | 1.01e-02 | not captured | not captured | exact (not captured) | T1:row6:col3 |
-| β | `Q47` · not captured | 1.90 | not captured | not captured | exact (not captured) | T1:row7:col1 |
-| β | `Q47` · not captured | 4.13 | not captured | not captured | exact (not captured) | T1:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | α | `Q67` · not captured | 12.80 | not captured | not captured | exact (not captured) | T1:row6:col1 |
+| PK (driver) | α | `Q67` · not captured | 1.01e-02 | not captured | not captured | exact (not captured) | T1:row6:col3 |
+| PK (driver) | β | `Q47` · not captured | 1.90 | not captured | not captured | exact (not captured) | T1:row7:col1 |
+| PK (driver) | β | `Q47` · not captured | 4.13 | not captured | not captured | exact (not captured) | T1:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

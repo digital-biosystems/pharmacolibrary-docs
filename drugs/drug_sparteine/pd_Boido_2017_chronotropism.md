@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-(4-tolyl)sparteine (measured concentrations) drives frequency rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sparteine derivative 2-(4-tolyl)sparteine concentrations (µM) act on the chronotropism (frequency rate) of an isolated heart preparation, described as an Emax-type stimulation, but the paper does not state the mechanism, Imax, IC50/EC50, Emax, or rate parameters for this compound; it only reports modest chronotropic effects for related analogues (e.g. compound 7f up to +19% positive chronotropism, while compounds 6b, 6e, and 7b showed &lt;6% activity up to 30 µM, with negative chronotropism or toxicity at higher concentrations).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boido_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

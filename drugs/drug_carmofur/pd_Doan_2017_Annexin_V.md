@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carmofur (measured concentrations) drives apoptosis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carmofur (μM concentrations, no PK model) induces apoptosis measured by Annexin-V-Alexa-488 staining in pediatric brain tumor cell lines (CHLA259, CHLA266, SJGBM2, CHLA200); the mechanism is inhibition of acid ceramidase (ASAH1), elevating ceramide and thereby triggering apoptosis via cytochrome c release and caspase-9/3 activation. The paper does not state a PD model (no Imax, IC50 for apoptosis, Emax, kin/kout, or ke0); reported IC50 values for carmofur across the cell lines range 4.6–50 μM, with 26 μM in CHLA200.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Doan_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** D9-THC drives CB1 reporter activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Δ9-THC concentrations were tested in a CB1 reporter assay, with receptor activity normalized to the fitted Emax of the reference agonist CP55,940 (set at 100%), indicating a direct stimulatory concentration-response (Emax-type) effect on CB1 reporter activity; the excerpts do not state the mechanism beyond this and provide no numeric potency values (EC50, Emax, etc.) for Δ9-THC.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Janssens_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

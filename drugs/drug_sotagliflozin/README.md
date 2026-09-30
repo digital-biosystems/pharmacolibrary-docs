@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |

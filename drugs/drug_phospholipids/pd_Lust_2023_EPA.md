@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Docosahexaenoic acid drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for EPA; it only reports that %EPA in RBC membranes increased significantly over 27 weeks in a dose-dependent manner with DHA supplementation (2, 4, and 6 g·d−1 groups), with the largest change from baseline being only ~0.5%, and no mechanism (e.g., Emax, IC50, kin/kout) or potency parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lust_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

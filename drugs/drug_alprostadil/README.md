@@ -28,10 +28,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.604). The first reading is what the record holds.">cross-check: disputed</span> | [Almquist_2026](drugs/drug_alprostadil/pd_Almquist_2026_UPCR24.md) | Almquist J et al., Anifrolumab Dose Regimen Selection for…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70307](https://doi.org/10.1002/cpt.70307) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.604). The first reading is what the record holds.">cross-check: disputed</span> | [Almquist_2026](drugs/drug_alprostadil/pd_Almquist_2026_dropout.md) | Almquist J et al., Anifrolumab Dose Regimen Selection for…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70307](https://doi.org/10.1002/cpt.70307) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.604). The first reading is what the record holds.">cross-check: disputed</span> | [Almquist_2026_UPCR24](drugs/drug_alprostadil/pd_Almquist_2026_UPCR24.md) | 24-hour urine protein-creatinine ratio ← anifrolumab · direct linear effect | — | Almquist J et al., Anifrolumab Dose Regimen Selection for…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70307](https://doi.org/10.1002/cpt.70307) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.604). The first reading is what the record holds.">cross-check: disputed</span> | [Almquist_2026_dropout](drugs/drug_alprostadil/pd_Almquist_2026_dropout.md) | investigational product discontinuation ← anifrolumab · direct linear effect | — | Almquist J et al., Anifrolumab Dose Regimen Selection for…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70307](https://doi.org/10.1002/cpt.70307) |
 
 ## ADME sites
 

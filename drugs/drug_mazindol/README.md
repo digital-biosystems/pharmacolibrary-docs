@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_basic_model](drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md) | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_basic_model](drugs/drug_mazindol/Mazindol_Konofal2014_basic_model.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Konofal_2014_final](drugs/drug_mazindol/Mazindol_Konofal2014_final.md) | held back | 1-compartment, oral | 2 | Konofal E et al., Pilot Phase II study of mazindol in chi…, Drug design, development an… (2014) | [10.2147/DDDT.S65495](https://doi.org/10.2147/DDDT.S65495) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SNH-119014 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> SNH-119014 (the driver compound, related to mitapivat/AG-348) concentration-dependently activates recombinant human PKLR, with an AC50 of 28.90 nM, Emax of 949.9%, and Hill coefficient 1.243 (AG-348: AC50 13.71 nM, Emax 749.4%, Hill 1.200); the paper does not state a PD model for the ATP content response beyond this direct concentration-dependent activation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

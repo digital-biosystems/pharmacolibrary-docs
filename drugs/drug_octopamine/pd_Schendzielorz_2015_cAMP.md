@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Octopamine drives cAMP (in pmol/mg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Octopamine (OA) applied to hawkmoth antennae (40 μM in incubations) stimulates cAMP production (pmol/mg, measured by ELISA) via OA receptors of the OctαR type, as the OA-receptor antagonist EPI (40 μM) prevented the cAMP rise; the paper does not state an explicit Emax/IC50/kin/kout/ke0 for this model. It reports that the EC50 for OA-receptor activation decreased during the moth's activity phase (daytime-dependent receptor sensitization), but no numeric EC50 for this preparation is given in the excerpts (the only numeric EC50 cited, 3 x 10–8 M, is for D. melanogaster DmOA2).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schendzielorz_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`

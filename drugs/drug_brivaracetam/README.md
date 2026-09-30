@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | 1-compartment (no model) | 2 | Schoemaker (2017) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schoemaker_2017_2_reference](drugs/drug_brivaracetam/Brivaracetam_Schoemaker2017v2_reference.md) | — | 1-compartment (no model) | 2 | Schoemaker (2017) | — |
 
 ## ADME sites
 

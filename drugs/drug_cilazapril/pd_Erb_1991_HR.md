@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives heart rate (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model of cilazapril acting on heart rate; instead, ACE inhibition by cilazapril was assessed via the rightward shift of the angiotensin I dose–response curve for diastolic blood pressure (competitive antagonism at the enzyme level), with a pharmacological effect half-life of about 4 hours after a 4 mg dose (DR-1 about 8 initially).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erb_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

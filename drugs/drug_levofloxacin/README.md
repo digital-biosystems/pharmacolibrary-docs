@@ -27,11 +27,11 @@ In its ophthalmic formulation, levofloxacin is indicated for the treatment of ba
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_mean](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | 1-compartment (no model) | 1 | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_mean](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_mean.md) | ▶ model + simulator | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Setiawan_2022_median](drugs/drug_levofloxacin/Levofloxacin_Setiawan2022_median.md) | ▶ model + simulator | 2-compartment, IV | 4 | Setiawan E et al., Population pharmacokinetics and dose op…, Scientific reports (2022) | [10.1038/s41598-022-12627-1](https://doi.org/10.1038/s41598-022-12627-1) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [He_2024_reference](drugs/drug_levofloxacin/Levofloxacin_He2024_reference.md) | — | 1-compartment (no model) | 1 | He YY et al., Population pharmacokinetics and dose op…, British journal of clinical… (2024) | [10.1111/bcp.16003](https://doi.org/10.1111/bcp.16003) |
 
 ## ADME sites
 
@@ -44,6 +44,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `SLC22A4` inhibitor, `SLCO1A2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | kidney | <sub>“…less than 5% of the administered dose was recovered in the urine as these metabolites, ind…”</sub> | prose |
 | metabolism | liver | `CYP2C9` inhibitor, `SLC22A1` inhibitor | DrugBank actor |

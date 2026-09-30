@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AZ14289671 (trypsin-labeled driver) concentrations inhibit EGFR phosphorylation measured by HTRF in EGFR Exon20Ins cell lines, acting as a direct inhibitor of EGFR phosphorylation (mechanism not further specified); mean IC50 was 17–41 nmol/L in mutant cell lines versus 480–832 nmol/L in EGFRWT lines, and in vivo a single oral dose of 50 mg/kg in LXF2478ASV tumors gave &gt;90% reduction of EGFR phosphorylation at 6 h, with free plasma levels exceeding the IC90 for ~6 h before rapid clearance.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

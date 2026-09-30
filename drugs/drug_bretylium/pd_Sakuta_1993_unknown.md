@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clofilium drives Y-26763-induced K+ current (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bretylium concentration-dependently and reversibly suppresses the Y-26763-induced (glibenclamide-sensitive, ATP-sensitive K+ channel-mediated) outward K+ current in voltage-clamped Xenopus oocytes, with an IC50 &gt; 2000 µM, making it the weakest class III suppressor tested (clofilium IC50 3.3 µM, E-4031 660 µM, MS-551 980 µM). The paper does not state a specific mechanism for bretylium's inhibition beyond this blockade of the K+ current response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sakuta_1993`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Sakuta H; Okamoto K; Watanabe Y et al. (1993). British journal of pharmacology 1
   ·  DOI: [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| apparent EC50 | `Q321` · not captured | 57.5 | JM | not captured | review_gapfill (not captured) | Sakuta_1993:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | apparent EC50 | `Q321` · not captured | 57.5 | JM | not captured | review_gapfill (not captured) | Sakuta_1993:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

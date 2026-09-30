@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_patients with severe sepsis](drugs/drug_drotrecogin_alfa_activated/DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep.md) | — (no model) | 0 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Macias_2002_patients with severe sepsis](drugs/drug_drotrecogin_alfa_activated/DrotrecoginAlfaActivated_Macias2002_patients_with_severe_sep.md) | — | — (no model) | 0 | Macias WL et al., Pharmacokinetic-pharmacodynamic analysi…, Clinical pharmacology and t… (2002) | [10.1067/mcp.2002.128148](https://doi.org/10.1067/mcp.2002.128148) |
 
 ## ADME sites
 

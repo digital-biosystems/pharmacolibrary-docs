@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The methyldopa record was rejected because clearance (11.2 l/h) is dimensionally inconsistent with the elimination constant (0.56 h-1) and volume of distribution (0.29 l/kg), and the values came from the paper's abstract only.**

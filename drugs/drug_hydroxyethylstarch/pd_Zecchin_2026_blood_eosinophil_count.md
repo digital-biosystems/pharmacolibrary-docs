@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Depemokimab drives name (in BEC): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Depemokimab concentrations inhibit blood eosinophil count (BEC) via an indirect response model in which the drug inhibits the production of eosinophils (IL-5–mediated), with parameters reported on the log scale: KRO −1.73 (SE 0.0529), KOUT −4.35 1/h (SE 0.0921), IC50 −2.34 μg/mL (SE 0.0789), Imax −1.77 (SE 0.0265), with baseline E0 −0.2601 (SD 0.3054); the paper does not state these values in natural units or a Hill coefficient value in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zecchin_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,28 +31,28 @@ Zecchin C; Schalkwijk S; Pouliquen IJ; Berges A; Bird N; Follows R; et al. et al
   ·  DOI: [10.1002/cpt.70183](https://doi.org/10.1002/cpt.70183)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| KRO (GI/L) — Theta | `Q358` · not captured | -1.73 | GI/L | not captured | llm (not captured) | cpt70183-tbl-0002:row1:col1 |
-| KRO (GI/L) — SE | `Q358` · not captured | 0.0529 | GI/L | not captured | llm (not captured) | cpt70183-tbl-0002:row1:col2 |
-| KOUT (1/h) — Theta | `Q328` · not captured | -4.35 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col1 |
-| KOUT (1/h) — SE | `Q328` · not captured | 0.0921 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col2 |
-| KOUT (1/h) — %RSEa | `Q328` · not captured | 2.12 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col3 |
-| IC50 (μg/mL) — Theta | `Q322` · not captured | -2.34 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col1 |
-| IC50 (μg/mL) — SE | `Q322` · not captured | 0.0789 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col2 |
-| IC50 (μg/mL) — %RSEa | `Q322` · not captured | 3.37 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col3 |
-| I max — Theta | `Q323` · not captured | -1.77 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col1 |
-| I max — SE | `Q323` · not captured | 0.0265 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col2 |
-| I max — %RSEa | `Q323` · not captured | 1.50 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col3 |
-| BEOS2 on I max — Theta | `Q323` · not captured | -0.380 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col1 |
-| BEOS2 on I max — SE | `Q323` · not captured | 0.0339 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col2 |
-| BEOS2 on I max — %RSEa | `Q323` · not captured | 8.92 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col3 |
-| BPV I max — Theta | `Q323` · not captured | 0.294 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col1 |
-| BPV I max — Parameter estimate (95% CI)b | `Q323` · not captured | 58.5 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col4 |
-| Residual error — Theta | `Q315` · not captured | 0.350 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col1 |
-| Residual error — SE | `Q315` · not captured | 0.0203 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col2 |
-| Residual error — %RSEa | `Q315` · not captured | 5.81 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col3 |
-| E0 | `Q324` · not captured | -0.2601 | SD 0.3054 | not captured | review_gapfill (not captured) | Zecchin_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | KRO (GI/L) — Theta | `Q358` · not captured | -1.73 | GI/L | not captured | llm (not captured) | cpt70183-tbl-0002:row1:col1 |
+| PK (driver) | KRO (GI/L) — SE | `Q358` · not captured | 0.0529 | GI/L | not captured | llm (not captured) | cpt70183-tbl-0002:row1:col2 |
+| PD (effect) | KOUT (1/h) — Theta | `Q328` · not captured | -4.35 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col1 |
+| PD (effect) | KOUT (1/h) — SE | `Q328` · not captured | 0.0921 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col2 |
+| PD (effect) | KOUT (1/h) — %RSEa | `Q328` · not captured | 2.12 | not captured | not captured | exact (not captured) | cpt70183-tbl-0002:row2:col3 |
+| PD (effect) | IC50 (μg/mL) — Theta | `Q322` · not captured | -2.34 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col1 |
+| PD (effect) | IC50 (μg/mL) — SE | `Q322` · not captured | 0.0789 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col2 |
+| PD (effect) | IC50 (μg/mL) — %RSEa | `Q322` · not captured | 3.37 | μg/mL | not captured | exact (not captured) | cpt70183-tbl-0002:row3:col3 |
+| PD (effect) | I max — Theta | `Q323` · not captured | -1.77 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col1 |
+| PD (effect) | I max — SE | `Q323` · not captured | 0.0265 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col2 |
+| PD (effect) | I max — %RSEa | `Q323` · not captured | 1.50 | not captured | not captured | space_fold (not captured) | cpt70183-tbl-0002:row4:col3 |
+| PD (effect) | BEOS2 on I max — Theta | `Q323` · not captured | -0.380 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col1 |
+| PD (effect) | BEOS2 on I max — SE | `Q323` · not captured | 0.0339 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col2 |
+| PD (effect) | BEOS2 on I max — %RSEa | `Q323` · not captured | 8.92 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row6:col3 |
+| PD (effect) | BPV I max — Theta | `Q323` · not captured | 0.294 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col1 |
+| PD (effect) | BPV I max — Parameter estimate (95% CI)b | `Q323` · not captured | 58.5 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row15:col4 |
+| variability | Residual error — Theta | `Q315` · not captured | 0.350 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col1 |
+| variability | Residual error — SE | `Q315` · not captured | 0.0203 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col2 |
+| variability | Residual error — %RSEa | `Q315` · not captured | 5.81 | not captured | not captured | llm (not captured) | cpt70183-tbl-0002:row17:col3 |
+| PD (effect) | E0 | `Q324` · not captured | -0.2601 | SD 0.3054 | not captured | review_gapfill (not captured) | Zecchin_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

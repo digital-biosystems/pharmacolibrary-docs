@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The rolapitant parent–metabolite record was rejected because the peripheral volume V2 (164 L) was neither emitted nor defaulted, the model output was the parent compartment instead of the measured analyte, and the structure was reduced to a one-compartment model with an invented ka.**

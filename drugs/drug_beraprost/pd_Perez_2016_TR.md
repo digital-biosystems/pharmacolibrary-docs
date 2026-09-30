@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Beraprost (measured concentrations) drives TRα antagonist activity (in % induction) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Beraprost concentrations (mol/L) were tested against TRα antagonist activity measured as % induction, an inhibitory effect; the paper excerpts provide no model, mechanism, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Perez_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

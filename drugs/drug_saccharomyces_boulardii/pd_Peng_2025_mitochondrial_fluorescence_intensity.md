@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Puberulic acid (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Puberulic acid (µM concentrations) reduced mitochondrial fluorescence intensity in 3D-RPTECs in a time-dependent manner (decrease observed at 30 µM); the paper does not state an Emax/IC50/EC50 or a kinetic mechanism for this specific response, though it suggests mitochondrial dysfunction as the mechanism of nephrotoxicity (for the related ATP endpoint, EC50 was 24.7 µM at 7 d, and OAT1 uptake inhibition had IC50 5.4 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peng_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

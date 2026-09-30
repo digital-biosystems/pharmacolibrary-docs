@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives standing systolic blood pressure (in mmHg): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Doxazosin plasma concentrations (ng ml-1) reduce standing systolic blood pressure (mmHg) via an effect-compartment (link) model with inhibitory effect, consistent with the delayed maximum effect at 5-6 h even after intravenous dosing; the paper excerpts do not state the potency parameters (IC50/EC50/Emax) or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Elliott_1986`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

@@ -33,11 +33,11 @@ Riociguat is indicated for the treatment of adults with pulmonary arterial hyper
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2016_2_reference](drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md) | 1-compartment (no model) | 3 | Saleh (2016) | — |
-| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | 1-compartment, oral | 6 | Saleh (2016) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2020_reference](drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md) | parent + metabolite (no model) | 1 | Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020) | [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2016_2_reference](drugs/drug_riociguat/Riociguat_Saleh2016v2_reference.md) | — | 1-compartment (no model) | 3 | Saleh (2016) | — |
+| <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.385). The first reading is what the record holds.">cross-check: disputed</span> | [Saleh_2016_reference](drugs/drug_riociguat/Riociguat_Saleh2016_reference.md) | ▶ model + simulator | 1-compartment, oral | 6 | Saleh (2016) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2020_reference](drugs/drug_riociguat/Riociguat_Michalikov2020_reference.md) | — | parent + metabolite (no model) | 1 | Michaličková D et al., Population pharmacokinetics of riocigua…, Pulmonary circulation (2020) | [10.1177/2045894019898031](https://doi.org/10.1177/2045894019898031) |
 
 ## ADME sites
 
@@ -51,6 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
 | metabolism | heart | `CYP2J2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate | DrugBank actor |

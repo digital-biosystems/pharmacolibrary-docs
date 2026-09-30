@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;levamlodipine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamlodipine_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levamlodipine_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Levamlodipine_Li2025_base&quot;,&quot;label&quot;:&quot;Li_2025_base&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Levamlodipine_Li2025_final&quot;,&quot;label&quot;:&quot;Li_2025_final&quot;,&quot;href&quot;:&quot;drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # levamlodipine
 
@@ -34,10 +34,10 @@ Levamlodipine was granted FDA approval on 19 December 2019.[L10833]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2025_base](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md) | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2025_final](drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md) | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Li_2025_base](drugs/drug_levamlodipine/Levamlodipine_Li2025_base.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Li_2025_final](drugs/drug_levamlodipine/Levamlodipine_Li2025_final.md) | ▶ model + simulator | 1-compartment, oral | 3 | Li G et al., Model-Informed Precision Dosing of Leva…, Drug design, development an… (2025) | [10.2147/DDDT.S501762](https://doi.org/10.2147/DDDT.S501762) |
 
 ## ADME sites
 
@@ -70,7 +70,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 4 matched, 4 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

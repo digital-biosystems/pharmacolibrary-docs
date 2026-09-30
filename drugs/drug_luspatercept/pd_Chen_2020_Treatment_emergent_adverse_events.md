@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Luspatercept (concentrations from this paper's PK model) drives name (in TEAEs): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Luspatercept serum exposure (ng/mL) was related to the probability of treatment-emergent adverse events (TEAEs) via logistic regression, with a linear exposure effect selected over an Emax model; the paper does not state a mechanism for the TEAE relationship and gives no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values) for it, noting only that the probability of TEAEs ≥ grade 3 was reduced at higher luspatercept AUC after adjusting for placebo effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

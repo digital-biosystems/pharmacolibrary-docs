@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopamine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Externally applied dopamine (10^-7 g/ml and above) inhibited spike generation and mechanical (phasic contractile) activity of the cat small intestine longitudinal muscle, an effect attributed to action on alpha- and beta-adrenergic receptors since it was blocked by phentolamine, phenoxybenzamine and propranolol; the paper reports no PD model parameters (no Imax, IC50, Emax, kin, kout, ke0 or gamma), and dopamine (10^-5 g/ml) also shifted acetylcholine dose-response curves to higher concentrations as a non-competitive antagonist (pD'2 values given only in a table not shown).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Okawa_1975`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

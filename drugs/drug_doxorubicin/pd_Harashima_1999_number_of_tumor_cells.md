@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Free doxorubicin drives name (in unknown): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Free doxorubicin concentration in the tumor compartment drives a cell-kill kinetic model of the number of tumor cells, i.e. the drug inhibits tumor cell number via AUC/concentration-dependent cell killing (type I), with tumor cell-kill rate constants (e.g. kel 0.0485 h−1, k2 2.27 h−1, ke 0.20 h−1 in rats); the paper does not report Imax/IC50/EC50/Emax/ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Harashima_1999`
 - **model family:** `disease_progression`
 - **driver:** `not_resolved`
@@ -21,19 +31,19 @@ Harashima H; Tsuchihashi M; Iida S; Doi H; Kiwada H et al. (1999). Advanced drug
   ·  DOI: [10.1016/s0169-409x(99)00039-3](https://doi.org/10.1016/s0169-409x(99)00039-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 15490 | `Q358` · not captured | 2.89 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col1 |
-| 15490 | `Q358` · not captured | 0.0617 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col2 |
-| 15490 | `Q358` · not captured | 0.961 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col3 |
-| 15490 | `Q358` · not captured | 0.720 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col4 |
-| 15490 | `Q358` · not captured | 3.37 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col5 |
-| 15490 | `Q358` · not captured | 2.27 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col6 |
-| 15490 | `Q358` · not captured | 0.0485 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col7 |
-| 4155 | `Q358` · not captured | 7.17 | ml / 70 kg | not captured | llm (not captured) | tab_2:row5:col1 |
-| 4155 | `Q358` · not captured | 0.0103 | ml / 70 kg | not captured | llm (not captured) | tab_2:row5:col2 |
-| 0.0285 | `Q358` · not captured | 0.323 | ml / 70 kg | not captured | llm (not captured) | tab_2:row8:col1 |
-| 0.0285 | `Q358` · not captured | 9.69 | ml / 70 kg | not captured | llm (not captured) | tab_2:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 15490 | `Q358` · not captured | 2.89 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col1 |
+| PK (driver) | 15490 | `Q358` · not captured | 0.0617 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col2 |
+| PK (driver) | 15490 | `Q358` · not captured | 0.961 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col3 |
+| PK (driver) | 15490 | `Q358` · not captured | 0.720 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col4 |
+| PK (driver) | 15490 | `Q358` · not captured | 3.37 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col5 |
+| PK (driver) | 15490 | `Q358` · not captured | 2.27 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col6 |
+| PK (driver) | 15490 | `Q358` · not captured | 0.0485 | ml/70 kg | not captured | llm (not captured) | tab_2:row2:col7 |
+| PK (driver) | 4155 | `Q358` · not captured | 7.17 | ml / 70 kg | not captured | llm (not captured) | tab_2:row5:col1 |
+| PK (driver) | 4155 | `Q358` · not captured | 0.0103 | ml / 70 kg | not captured | llm (not captured) | tab_2:row5:col2 |
+| PK (driver) | 0.0285 | `Q358` · not captured | 0.323 | ml / 70 kg | not captured | llm (not captured) | tab_2:row8:col1 |
+| PK (driver) | 0.0285 | `Q358` · not captured | 9.69 | ml / 70 kg | not captured | llm (not captured) | tab_2:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

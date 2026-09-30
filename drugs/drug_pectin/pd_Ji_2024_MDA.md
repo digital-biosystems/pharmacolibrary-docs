@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nerol drives malondialdehyde content (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for MDA; it reports that 0.04 μL/mL nerol increased malondialdehyde content in F. oxysporum over time (from 4.88 to 15.47 nmol/g over 24–60 h, 1.42 times control at 60 h), attributed to nerol-induced ROS buildup and membrane lipid peroxidation rather than to any modeled inhibitory mechanism. No Imax, IC50, EC50, kin, kout, or ke0 values are given for the MDA response (the EC50 values of 0.46, 1.81, and 1.26 μL/mL refer to mycelial growth inhibition, not MDA).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

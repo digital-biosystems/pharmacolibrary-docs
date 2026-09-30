@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucaena leucocephala protein extracts drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Leucaena leucocephala protein extracts (TE, SE, CE, extracted in sodium phosphate buffer) were tested against Haemonchus contortus larval exsheathment (% exsheathed larvae monitored over 60 min) at 0.6 mg mL-1 and egg hatch at 0.05–0.8 mg mL-1; the paper reports EC50 values for egg hatching inhibition of 0.48 mg mL-1 (CE) and 0.33 mg mL-1 (TE), but does not state a PD mechanism or parameters such as Imax, Emax, kin, kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soares_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

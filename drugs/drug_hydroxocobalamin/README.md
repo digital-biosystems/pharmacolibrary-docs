@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> | [de_1994_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md) | 1-compartment, IV | 3 | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Houeto_1996_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md) | 1-compartment, oral | 4 | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span> | [de_1994_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_de1994_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | de La Coussaye JE et al., Pharmacokinetics of hydroxocobalamin in…, Journal of neurosurgical an… (1994) | [10.1097/00008506-199404000-00006](https://doi.org/10.1097/00008506-199404000-00006) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Houeto_1996_reference](drugs/drug_hydroxocobalamin/Hydroxocobalamin_Houeto1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Houeto P et al., Pharmacokinetics of hydroxocobalamin in…, Journal of toxicology. Clin… (1996) | [10.3109/15563659609013809](https://doi.org/10.3109/15563659609013809) |
 
 ## ADME sites
 

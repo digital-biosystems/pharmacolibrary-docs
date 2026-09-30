@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dhawan_2006_healthy male volunteers](drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md) | — (no model) | 0 | Dhawan S et al., Bioavailability of immediate- and exten…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645030-00007](https://doi.org/10.2165/00003088-200645030-00007) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dhawan_2006_healthy male volunteers](drugs/drug_glipizide/Glipizide_Dhawan2006_healthy_male_volunteers.md) | — | — (no model) | 0 | Dhawan S et al., Bioavailability of immediate- and exten…, Clinical pharmacokinetics (2006) | [10.2165/00003088-200645030-00007](https://doi.org/10.2165/00003088-200645030-00007) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Barrett-Jolley_1998](drugs/drug_glipizide/pd_Barrett_Jolley_1998_unknown.md) | Barrett-Jolley R et al., Characterization of K(ATP) channels in…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701727](https://doi.org/10.1038/sj.bjp.0701727) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Barrett-Jolley_1998_unknown](drugs/drug_glipizide/pd_Barrett_Jolley_1998_unknown.md) | whole-cell chord conductance ← levcromakalim · direct sigmoid Emax (Hill) effect | — | Barrett-Jolley R et al., Characterization of K(ATP) channels in…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0701727](https://doi.org/10.1038/sj.bjp.0701727) |
 
 ## ADME sites
 

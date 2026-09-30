@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin (the dose) drives neutrophil count (in count) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (1, 2, or 4 mg/kg intrapulmonary instillation in ICR mice) dose-dependently increased BALF neutrophil counts at 7 days, with significant increases only at 2 and 4 mg/kg and a trend of decrease by 24 days; the paper reports only dose-response data and gives no PD model, mechanism, or potency/rate parameters (no Imax, IC50/EC50, kin, kout, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2010`
 - **model family:** `unknown`
 - **driver:** `dose_only`

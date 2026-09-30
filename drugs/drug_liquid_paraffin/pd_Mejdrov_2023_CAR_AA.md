@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives CAR LBD assembly assay (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the CAR LBD assembly assay (CAR AA), test compounds (1 nM–30 μM, 24 h treatment) stimulate CAR LBD assembly, analyzed with a sigmoid Emax model with activity expressed relative to CITCO (100%); the paper does not describe a production/elimination (kin/kout) or effect-compartment mechanism, implying a direct agonist effect. Reported potencies include EC50 = 24.9 nM for compound 48 (which also activates PXR with EC50 = 4.34 ± 1 μM), EC50 below 0.1 μM for compounds 43–51, and nanomolar EC50 for compounds 15f and 15h, with Emax lower than full agonists CITCO and 15d for partial agonists such as 15i.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mejdrová_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -1,13 +1,23 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A03A&quot;,&quot;href&quot;:&quot;atc/A03A.md&quot;},{&quot;label&quot;:&quot;tegaserod&quot;,&quot;href&quot;:&quot;drugs/drug_tegaserod/&quot;},{&quot;label&quot;:&quot;Liu_2020 \u00b7 PD name&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
+# name — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
 <table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
+
+## What this record describes
+
+**As extracted:** Tegaserod (measured concentrations) drives name (in mm3) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking tegaserod (TM) concentrations to tumor volume; the only concentration-response data are IC50 values (µM) from 72 h MTT viability assays for the PI3K/Akt/mTOR pathway inhibitors MK-2206 (0.29–4.76 µM), ZSTK474 (0.51–3.47 µM) and KU-0063794 (0.68–1.90 µM) across melanoma cell lines, which the paper uses to infer that TM suppresses p-S6 by blunting PI3K/Akt/mTOR signaling, without stating potency values for tegaserod itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Liu_2020`
 - **model family:** `unknown`
@@ -20,26 +30,26 @@ Liu W; Stachura P; Xu HC; Umesh Ganesh N; Cox F; Wang R; et al. et al. (2020). J
   ·  DOI: [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50±SEM — MK-2206 | `Q322` · not captured | 0.29 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 0.95 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 0.68 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 4.76 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 2.69 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.90 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 1.92 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 0.51 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.63 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 3.11 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 2.80 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.71 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 1.26 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 1.06 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 0.97 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 3.03 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 3.47 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.84 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 0.29 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 0.95 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 0.68 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 4.76 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 2.69 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.90 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 1.92 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 0.51 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.63 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 3.11 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 2.80 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.71 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 1.26 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 1.06 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 0.97 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 3.03 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 3.47 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.84 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -47,55 +57,14 @@ Liu W; Stachura P; Xu HC; Umesh Ganesh N; Cox F; Wang R; et al. et al. (2020). J
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.1 (4/40 fields) | 36 |
+| `gpt-oss:120b` | confirmed | 1.0 (22/22 fields) | none |
 
-<details><summary>36 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[Q322]` | 0.29 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.95 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.68 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 4.76 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 2.69 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.90 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.92 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.51 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.63 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 3.11 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 2.80 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.71 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.26 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.06 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 0.97 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 3.03 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 3.47 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 1.84 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.29 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.95 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.68 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 4.76 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 2.69 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.90 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.92 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.51 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.63 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 3.11 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 2.80 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.71 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.26 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.06 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 0.97 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 3.03 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 3.47 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | not captured | 1.84 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this PD record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>

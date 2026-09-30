@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxine (the dose) drives homocysteine (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dietary pyridoxine (0–3.96 mg/kg supplemental doses) was related to plasma homocysteine in White Pekin ducks; homocysteine decreased with pyridoxine supplementation (quadratic trend, p = 0.0538), mechanistically because PLP serves as coenzyme for the transsulfuration enzymes cystathionine β-synthase and cystathionine γ-lyase that degrade homocysteine. A quadratic regression gave a maximum homocysteine response of 8.9 μmol/L at an estimated supplemental pyridoxine requirement of 2.72 mg/kg; no Emax/IC50/kin/kout parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2014`
 - **model family:** `unknown`
 - **driver:** `dose_only`

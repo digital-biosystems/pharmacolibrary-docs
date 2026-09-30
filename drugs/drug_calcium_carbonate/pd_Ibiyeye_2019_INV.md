@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin/thymoquinone (measured concentrations) drives cell invasion (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin, thymoquinone (free and ACNP nanoparticle-loaded, alone and combined) inhibit MDA-MB-231 breast cancer cell invasion (% cells crossing basement membrane after 48 h), with Dox/TQ giving the lowest invasion (20.5%) and TQ-ACNP the highest (81.4%) vs control; the paper reports IC50 values (e.g. 72 h Dox/TQ-ACNP 0.09532 μg/ml, Dox/TQ 0.319 μg/ml, TQ 1.068 μg/ml at 24 h) but does not state a pharmacodynamic mechanism or model (no Emax/kin/kout/ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ibiyeye_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,16 +31,16 @@ Ibiyeye KM; Nordin N; Ajat M; Zuki ABZ et al. (2019). Frontiers in oncology 9
   ·  DOI: [10.3389/fonc.2019.00599](https://doi.org/10.3389/fonc.2019.00599)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 24 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 2.588 | μg/ml | not captured | llm (not captured) | T1:row1:col2 |
-| 24 h — TQ (μg/ml) | `Q19` · not captured | 1.068 | μg/ml | not captured | llm (not captured) | T1:row1:col3 |
-| 48 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 0.974 | μg/ml | not captured | llm (not captured) | T1:row2:col2 |
-| 48 h — TQ (μg/ml) | `Q75` · not captured | 0.5591 | μg/ml | not captured | llm (not captured) | T1:row2:col3 |
-| 72 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 1.338 | μg/ml | not captured | llm (not captured) | T1:row3:col2 |
-| 72 h — TQ-ACNP (μg/ml) | `Q75` · not captured | 1.44 | μg/ml | not captured | llm (not captured) | T1:row3:col4 |
-| 72 h — Dox/TQ (μg/ml) | `Q75` · not captured | 0.319 | μg/ml | not captured | llm (not captured) | T1:row3:col5 |
-| 72 h — Dox/TQ-ACNP (μg/ml) | `Q75` · not captured | 0.09532 | μg/ml | not captured | llm (not captured) | T1:row3:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 24 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 2.588 | μg/ml | not captured | llm (not captured) | T1:row1:col2 |
+| PK (driver) | 24 h — TQ (μg/ml) | `Q19` · not captured | 1.068 | μg/ml | not captured | llm (not captured) | T1:row1:col3 |
+| PK (driver) | 48 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 0.974 | μg/ml | not captured | llm (not captured) | T1:row2:col2 |
+| PK (driver) | 48 h — TQ (μg/ml) | `Q75` · not captured | 0.5591 | μg/ml | not captured | llm (not captured) | T1:row2:col3 |
+| PK (driver) | 72 h — Dox-ACNP (μg/ml) | `Q75` · not captured | 1.338 | μg/ml | not captured | llm (not captured) | T1:row3:col2 |
+| PK (driver) | 72 h — TQ-ACNP (μg/ml) | `Q75` · not captured | 1.44 | μg/ml | not captured | llm (not captured) | T1:row3:col4 |
+| PK (driver) | 72 h — Dox/TQ (μg/ml) | `Q75` · not captured | 0.319 | μg/ml | not captured | llm (not captured) | T1:row3:col5 |
+| PK (driver) | 72 h — Dox/TQ-ACNP (μg/ml) | `Q75` · not captured | 0.09532 | μg/ml | not captured | llm (not captured) | T1:row3:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

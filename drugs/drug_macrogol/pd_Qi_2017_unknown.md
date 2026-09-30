@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2Dm2m (measured concentrations) drives HIV-1 residual infectivity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The bispecific multivalent protein 2Dm2m (not macrogol, which was only used for virion separation) concentration-dependently inactivates cell-free HIV-1 virions, measured as residual infectivity after inhibitor removal; the paper does not state a mechanistic PD model (no Imax/kin/kout/ke0), only EC50 values at the low nanomolar level, e.g. 5.8 nM against the T20-resistant strain 9491 and 3.6 nM against the T2635-resistant strain K90E/N126K, with gp41-targeting peptides (T20, T2635, SFT) enhancing inactivation ~3.3- to 6.5-fold.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qi_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

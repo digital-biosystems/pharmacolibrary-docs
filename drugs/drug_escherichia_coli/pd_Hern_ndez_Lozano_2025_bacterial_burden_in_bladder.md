@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Apramycin (measured concentrations) drives name (in log10 cfu/organ): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism or parameter values for the effect of apramycin on bacterial burden in the bladder (log10 CFU/organ); it only reports that PKPD simulations in the cUTI mouse model predicted bacterial killing well, with slight underprediction of bladder burden at apramycin doses of 0.8, 3.2 and 12.8 mg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -21,22 +31,22 @@ Hernández-Lozano I; Aranzana-Climent V; Cao S; Matias C; Ulf Hansen J; Liepinsh
   ·  DOI: [10.1093/jac/dkae409](https://doi.org/10.1093/jac/dkae409)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k d — Value | `Q331` · not captured | 0.179 | mg/L | not captured | space_fold (not captured) | dkae409-T1:row5:col4 |
-| B max — Value | `Q332` · not captured | 9.18 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col4 |
-| B max — 95% CI | `Q332` · not captured | 8.97 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col5 |
-| k ada × 1000 — Value | `Q49` · not captured | 0.080 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col4 |
-| k ada × 1000 — 95% CI | `Q49` · not captured | 0.033 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col5 |
-| k d,k — Value | `Q331` · not captured | 0.526 | mg/L | not captured | llm (not captured) | dkae409-T1:row23:col4 |
-| k d,k — 95% CI | `Q331` · not captured | 0.348 | mg/L | not captured | llm (not captured) | dkae409-T1:row23:col5 |
-| k ada,k — Value | `Q49` · not captured | 0.031 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col4 |
-| k ada,k — 95% CI | `Q49` · not captured | 0.006 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col5 |
-| B max,k — Value | `Q332` · not captured | 6.49 | not captured | not captured | llm (not captured) | dkae409-T1:row28:col4 |
-| k d,b — Value | `Q331` · not captured | 1.16 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col4 |
-| k d,b — 95% CI | `Q331` · not captured | 0.85 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col5 |
-| k ada,b — 95% CI | `Q49` · not captured | 0.43 | not captured | not captured | llm (not captured) | dkae409-T1:row38:col5 |
-| B max,b — Value | `Q332` · not captured | 7.07 | not captured | not captured | llm (not captured) | dkae409-T1:row39:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | k d — Value | `Q331` · not captured | 0.179 | mg/L | not captured | space_fold (not captured) | dkae409-T1:row5:col4 |
+| PD (effect) | B max — Value | `Q332` · not captured | 9.18 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col4 |
+| PD (effect) | B max — 95% CI | `Q332` · not captured | 8.97 | not captured | not captured | space_fold (not captured) | dkae409-T1:row6:col5 |
+| PK (driver) | k ada × 1000 — Value | `Q49` · not captured | 0.080 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col4 |
+| PK (driver) | k ada × 1000 — 95% CI | `Q49` · not captured | 0.033 | not captured | not captured | llm (not captured) | dkae409-T1:row15:col5 |
+| PD (effect) | k d,k — Value | `Q331` · not captured | 0.526 | mg/L | not captured | llm (not captured) | dkae409-T1:row23:col4 |
+| PD (effect) | k d,k — 95% CI | `Q331` · not captured | 0.348 | mg/L | not captured | llm (not captured) | dkae409-T1:row23:col5 |
+| PK (driver) | k ada,k — Value | `Q49` · not captured | 0.031 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col4 |
+| PK (driver) | k ada,k — 95% CI | `Q49` · not captured | 0.006 | not captured | not captured | llm (not captured) | dkae409-T1:row27:col5 |
+| PD (effect) | B max,k — Value | `Q332` · not captured | 6.49 | not captured | not captured | llm (not captured) | dkae409-T1:row28:col4 |
+| PD (effect) | k d,b — Value | `Q331` · not captured | 1.16 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col4 |
+| PD (effect) | k d,b — 95% CI | `Q331` · not captured | 0.85 | mg/L | not captured | llm (not captured) | dkae409-T1:row34:col5 |
+| PK (driver) | k ada,b — 95% CI | `Q49` · not captured | 0.43 | not captured | not captured | llm (not captured) | dkae409-T1:row38:col5 |
+| PD (effect) | B max,b — Value | `Q332` · not captured | 7.07 | not captured | not captured | llm (not captured) | dkae409-T1:row39:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

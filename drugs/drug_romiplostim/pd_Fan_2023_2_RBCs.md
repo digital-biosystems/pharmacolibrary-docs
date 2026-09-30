@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive red blood cells (in 10^12/L): indirect response — drug inhibits the production of red blood cells.
+
+**Model:** No model was generated from this record.
+
+> Romiplostim (with rHuEPO) drives red blood cell counts (10^12/L) in a catenary lifespan-based indirect response model of erythropoiesis from bone marrow progenitor cells, with romiplostim stimulating expansion of hematopoietic stem cells; the excerpts give no numeric potency or rate values (e.g., IC50, Emax, kin, kout) for the RBC response, only lifespan/residence-time parameters (TRBC, TRET) described as close to physiological values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

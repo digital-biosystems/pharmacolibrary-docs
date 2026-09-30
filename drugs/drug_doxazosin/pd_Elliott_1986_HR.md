@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives heart rate (in beats min-1): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD model for doxazosin's effect on heart rate; it only reports that oral (2 mg) and intravenous (1 mg) doxazosin increased heart rate in young subjects to 108 beats min-1 (placebo 82 beats min-1), with no IC50/EC50/Emax/kin/kout/ke0 values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Elliott_1986`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

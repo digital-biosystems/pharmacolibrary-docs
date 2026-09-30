@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in [Ca2+]i) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II stimulates intracellular calcium concentration ([Ca2+]i) in rat anterior pituitary cells via AT1 receptors; the peak [Ca2+]i spike amplitude increased with ANG II concentration with an EC50 of 2.3 nM and an apparent maximum at 10 nM. ANG II also produced concentration-related homologous desensitization of the subsequent [Ca2+]i response (EC50 1.1 nM; significant at 1 nM, complete abolition after 10^-7 M pretreatment), with no explicit PD model (e.g., kin/kout or Emax parameters) stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `González_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

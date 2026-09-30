@@ -48,6 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…nsively metabolized, with metabolites primarily excreted in feces.[L53593] A single oral d…”</sub> | prose |
 | excretion | kidney | <sub>“…in a mean of 6.71% of the dosed radioactivity recovered in urine and 26.18% in feces, with…”</sub> | prose |
 | excretion | small intestine | <sub>“…part to the formation of volatile metabolites in the human intestine.[L53593] Sepiapterin…”</sub> | prose |

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tropifexor drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record's drug (obeticholic acid) and effect direction (inhibition) are contradicted by the paper: tropifexor, a non-bile acid FXR agonist, dose-dependently increased FGF19 (and decreased C4) in PBC patients, with FGF19 Cmax increases on Day 28 vs placebo of 285.1 (30 μg), 797.0 (60 μg), and 583.3 pg*h/ml (90 μg). The paper describes no pharmacodynamic model and reports no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma), only a qualitative dose-response relationship between tropifexor, FGF19, and GGT.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schramm_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_reference](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | 3-compartment (no model) | 8 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span> | [Shi_2026_reference](drugs/drug_oxycodone/Oxycodone_Shi2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Shi S et al., Pharmacokinetics of intravenous oxycodo…, Frontiers in medicine (2026) | [10.3389/fmed.2026.1834903](https://doi.org/10.3389/fmed.2026.1834903) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.474). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Saari_2012_reference](drugs/drug_oxycodone/Oxycodone_Saari2012_reference.md) | — | 3-compartment (no model) | 8 | Saari TI et al., Oxycodone clearance is markedly reduced…, British journal of anaesthe… (2012) | [10.1093/bja/aer395](https://doi.org/10.1093/bja/aer395) |
 
 ## ADME sites
 

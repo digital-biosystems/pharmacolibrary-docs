@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Intracellular Na+ (measured concentrations) drives Na,K pump rate (in mM/min): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In sheep Purkinje strands, the Na,K pump rate (maximum rate of intracellular Na+ activity decline, AaiNa/At, in mM/min) is stimulated directly by intracellular Na+ concentration, described by a Hill (sigmoid Emax) equation; the paper does not state an effect of g_strophanthin in the excerpts. The reported K0.5 for the Na+ site is 10.5 mM (corresponding to 14 mM intracellular Na+), with Vmax obtained by fitting to the Hill equation; no Imax, kin, kout, ke0, or Hill coefficient values are given numerically in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sejersted_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

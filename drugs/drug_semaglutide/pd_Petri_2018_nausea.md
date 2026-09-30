@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018::base) drives nausea: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide average steady-state concentration (Cavg) was related to the binary probability of nausea via logistic regression (sigmoid exposure-response), with the nausea probability increasing with exposure but showing tolerance development over time: the concentration tolerated without nausea by 95% of participants rose from &lt;5 nmol/L at week 1 to &gt;30 nmol/L by week 30. The paper does not state Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values, nor a mechanistic production/elimination model for the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Petri_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

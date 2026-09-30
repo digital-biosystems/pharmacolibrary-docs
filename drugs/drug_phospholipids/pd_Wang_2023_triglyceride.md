@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omega-3 fatty acids (DHA + EPA) drives name (in mg/dL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Daily DHA+EPA intake (g/d) reduces triglycerides (mg/dL) with an approximately linear dose–response (cubic spline model); mean change was −42.61 mg/dL (95% CI −53.41 to −31.80) at 2 g/d and −68.90 mg/dL (95% CI −98.40 to −39.40) at 3 g/d, with no mechanism or potency parameters (Imax, IC50, kin, kout) stated in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

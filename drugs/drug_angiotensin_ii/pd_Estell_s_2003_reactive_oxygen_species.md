@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Uvariopsine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Uvariopsine (0.1–1 mM) inhibited Ang-II (1 nM)-induced ROS generation in endothelial cells, PMNs and the hypoxanthine–xanthine oxidase system, acting as a free radical scavenger (direct inhibitory effect); the paper gives an IC50 of 8.0 mM for uvariopsine on ROS generation in the hypoxanthine–xanthine oxidase system, but no Emax, kin, kout, ke0 or gamma values and no formal PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Estellés_2003`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

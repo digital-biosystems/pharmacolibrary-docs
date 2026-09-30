@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syn-Vm24-CDR3L (measured concentrations) drives CD25 expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The excerpts describe Syn-Vm24-CDR3L (a Kv1.3-blocking antibody-toxin CDR fusion) being tested on human T-cell activation markers including CD25 measured by flow cytometry, but they do not state a pharmacodynamic model linking Syn-Vm24-CDR3L concentrations to CD25 expression, nor any mechanism, Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values; the record's drug (palivizumab) is not described in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

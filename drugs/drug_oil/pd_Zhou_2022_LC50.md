@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Palmarosa oil (measured concentrations) drives lethal concentration (in mg/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Palmarosa oil bath concentrations (mg/L) were related to goldfish mortality, with 24-h and 48-h LC50 values of 40.8 and 39.15 mg/L estimated by Probit analysis; the paper does not state a pharmacodynamic mechanism (no Imax/IC50/kin/kout/ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

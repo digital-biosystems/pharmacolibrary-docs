@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Afromomum melegueta essential oil drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Afromomum melegueta essential oil inhibited angiotensin-I-converting enzyme (ACE) activity in vitro (percent inhibition), with an EC50 of 65.53 µL/mL (A. danielli oil: 48.73 µL/mL; captopril 2.81 µg/mL); the paper attributes the inhibition to the oils' chemical constituents reducing angiotensin II production but does not state a specific PD mechanism or model parameters (no Imax, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Adefegha_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Receptor occupancy (5-HT1B/1D) drives headache relief (in percent): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Rizatriptan, a 5-HT1B/1D receptor agonist, was related to headache relief rate (%) via 5-HT1B/1D receptor occupancy (Φ1B, Φ1D) and its AUC, analyzed with a sigmoid Emax model (E = relief rate, Emax, EC50, γ); the paper does not report rizatriptan-specific Emax, EC50, or γ values, only noting high occupancies (Φmax1B 32.0–89.4%, Φmax1D 68.4–96.2% across triptans) are likely needed for clinical effect, with rizatriptan PK such as Cmax 32.6 ng/mL and Tmax 1.8 h after oral 50 mg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tokuoka_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,34 +30,34 @@ Tokuoka K; Takayanagi R; Suzuki Y; Watanabe M; Kitagawa Y; Yamada Y et al. (2014
   ·  DOI: [10.1186/1129-2377-15-85](https://doi.org/10.1186/1129-2377-15-85)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| T max (hr) — SC 3 mg※ | `Q56` · not captured | 0.21 | hr | not captured | space_fold (not captured) | T4:row0:col3 |
-| T max (hr) — SC 6 mg | `Q56` · not captured | 0.2 | hr | not captured | space_fold (not captured) | T4:row0:col4 |
-| T max (hr) — PO 50 mg※ | `Q56` · not captured | 1.8 | hr | not captured | space_fold (not captured) | T4:row0:col6 |
-| T max (hr) — PO 100 mg | `Q56` · not captured | 2 | hr | not captured | space_fold (not captured) | T4:row0:col7 |
-| T max (hr) — NS 10 mg | `Q56` · not captured | 1.1 | hr | not captured | space_fold (not captured) | T4:row0:col9 |
-| T max (hr) — NS 20 mg※ | `Q56` · not captured | 1.3 | hr | not captured | space_fold (not captured) | T4:row0:col10 |
-| T max (hr) — 3 | `Q56` · not captured | 5.23 | hr | not captured | space_fold (not captured) | T4:row0:col13 |
-| T max (hr) — 3 | `Q56` · not captured | 3.5 | hr | not captured | space_fold (not captured) | T4:row0:col15 |
-| T max (hr) — PO 20 mg※ | `Q56` · not captured | 1 | hr | not captured | space_fold (not captured) | T4:row0:col17 |
-| T max (hr) — PO 40 mg | `Q56` · not captured | 1.2 | hr | not captured | space_fold (not captured) | T4:row0:col18 |
-| T max (hr) — PO 10 mg※ | `Q56` · not captured | 1 | hr | not captured | space_fold (not captured) | T4:row0:col20 |
-| T max (hr) — PO 1 mg | `Q56` · not captured | 2.17 | hr | not captured | space_fold (not captured) | T4:row0:col22 |
-| T max (hr) — PO 2.5 mg※ | `Q56` · not captured | 2.68 | hr | not captured | space_fold (not captured) | T4:row0:col23 |
-| C max (ng/mL) — SC 3 mg※ | `Q32` · not captured | 44 | ng/mL | not captured | space_fold (not captured) | T4:row1:col3 |
-| C max (ng/mL) — SC 6 mg | `Q32` · not captured | 95.5 | ng/mL | not captured | space_fold (not captured) | T4:row1:col4 |
-| C max (ng/mL) — PO 50 mg※ | `Q32` · not captured | 32.6 | ng/mL | not captured | space_fold (not captured) | T4:row1:col6 |
-| C max (ng/mL) — PO 100 mg | `Q32` · not captured | 58.2 | ng/mL | not captured | space_fold (not captured) | T4:row1:col7 |
-| C max (ng/mL) — NS 10 mg | `Q32` · not captured | 6.4 | ng/mL | not captured | space_fold (not captured) | T4:row1:col9 |
-| C max (ng/mL) — NS 20 mg※ | `Q32` · not captured | 12.2 | ng/mL | not captured | space_fold (not captured) | T4:row1:col10 |
-| C max (ng/mL) — 3 | `Q32` · not captured | 1.74 | ng/mL | not captured | space_fold (not captured) | T4:row1:col13 |
-| C max (ng/mL) — 3 | `Q32` · not captured | 1.17 | ng/mL | not captured | space_fold (not captured) | T4:row1:col15 |
-| C max (ng/mL) — PO 20 mg※ | `Q32` · not captured | 38.9 | ng/mL | not captured | space_fold (not captured) | T4:row1:col17 |
-| C max (ng/mL) — PO 40 mg | `Q32` · not captured | 69.7 | ng/mL | not captured | space_fold (not captured) | T4:row1:col18 |
-| C max (ng/mL) — PO 10 mg※ | `Q32` · not captured | 20.3 | ng/mL | not captured | space_fold (not captured) | T4:row1:col20 |
-| C max (ng/mL) — PO 1 mg | `Q32` · not captured | 2.12 | ng/mL | not captured | space_fold (not captured) | T4:row1:col22 |
-| C max (ng/mL) — PO 2.5 mg※ | `Q32` · not captured | 5.62 | ng/mL | not captured | space_fold (not captured) | T4:row1:col23 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | T max (hr) — SC 3 mg※ | `Q56` · not captured | 0.21 | hr | not captured | space_fold (not captured) | T4:row0:col3 |
+| PK (driver) | T max (hr) — SC 6 mg | `Q56` · not captured | 0.2 | hr | not captured | space_fold (not captured) | T4:row0:col4 |
+| PK (driver) | T max (hr) — PO 50 mg※ | `Q56` · not captured | 1.8 | hr | not captured | space_fold (not captured) | T4:row0:col6 |
+| PK (driver) | T max (hr) — PO 100 mg | `Q56` · not captured | 2 | hr | not captured | space_fold (not captured) | T4:row0:col7 |
+| PK (driver) | T max (hr) — NS 10 mg | `Q56` · not captured | 1.1 | hr | not captured | space_fold (not captured) | T4:row0:col9 |
+| PK (driver) | T max (hr) — NS 20 mg※ | `Q56` · not captured | 1.3 | hr | not captured | space_fold (not captured) | T4:row0:col10 |
+| PK (driver) | T max (hr) — 3 | `Q56` · not captured | 5.23 | hr | not captured | space_fold (not captured) | T4:row0:col13 |
+| PK (driver) | T max (hr) — 3 | `Q56` · not captured | 3.5 | hr | not captured | space_fold (not captured) | T4:row0:col15 |
+| PK (driver) | T max (hr) — PO 20 mg※ | `Q56` · not captured | 1 | hr | not captured | space_fold (not captured) | T4:row0:col17 |
+| PK (driver) | T max (hr) — PO 40 mg | `Q56` · not captured | 1.2 | hr | not captured | space_fold (not captured) | T4:row0:col18 |
+| PK (driver) | T max (hr) — PO 10 mg※ | `Q56` · not captured | 1 | hr | not captured | space_fold (not captured) | T4:row0:col20 |
+| PK (driver) | T max (hr) — PO 1 mg | `Q56` · not captured | 2.17 | hr | not captured | space_fold (not captured) | T4:row0:col22 |
+| PK (driver) | T max (hr) — PO 2.5 mg※ | `Q56` · not captured | 2.68 | hr | not captured | space_fold (not captured) | T4:row0:col23 |
+| PK (driver) | C max (ng/mL) — SC 3 mg※ | `Q32` · not captured | 44 | ng/mL | not captured | space_fold (not captured) | T4:row1:col3 |
+| PK (driver) | C max (ng/mL) — SC 6 mg | `Q32` · not captured | 95.5 | ng/mL | not captured | space_fold (not captured) | T4:row1:col4 |
+| PK (driver) | C max (ng/mL) — PO 50 mg※ | `Q32` · not captured | 32.6 | ng/mL | not captured | space_fold (not captured) | T4:row1:col6 |
+| PK (driver) | C max (ng/mL) — PO 100 mg | `Q32` · not captured | 58.2 | ng/mL | not captured | space_fold (not captured) | T4:row1:col7 |
+| PK (driver) | C max (ng/mL) — NS 10 mg | `Q32` · not captured | 6.4 | ng/mL | not captured | space_fold (not captured) | T4:row1:col9 |
+| PK (driver) | C max (ng/mL) — NS 20 mg※ | `Q32` · not captured | 12.2 | ng/mL | not captured | space_fold (not captured) | T4:row1:col10 |
+| PK (driver) | C max (ng/mL) — 3 | `Q32` · not captured | 1.74 | ng/mL | not captured | space_fold (not captured) | T4:row1:col13 |
+| PK (driver) | C max (ng/mL) — 3 | `Q32` · not captured | 1.17 | ng/mL | not captured | space_fold (not captured) | T4:row1:col15 |
+| PK (driver) | C max (ng/mL) — PO 20 mg※ | `Q32` · not captured | 38.9 | ng/mL | not captured | space_fold (not captured) | T4:row1:col17 |
+| PK (driver) | C max (ng/mL) — PO 40 mg | `Q32` · not captured | 69.7 | ng/mL | not captured | space_fold (not captured) | T4:row1:col18 |
+| PK (driver) | C max (ng/mL) — PO 10 mg※ | `Q32` · not captured | 20.3 | ng/mL | not captured | space_fold (not captured) | T4:row1:col20 |
+| PK (driver) | C max (ng/mL) — PO 1 mg | `Q32` · not captured | 2.12 | ng/mL | not captured | space_fold (not captured) | T4:row1:col22 |
+| PK (driver) | C max (ng/mL) — PO 2.5 mg※ | `Q32` · not captured | 5.62 | ng/mL | not captured | space_fold (not captured) | T4:row1:col23 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

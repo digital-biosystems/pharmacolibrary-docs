@@ -20,7 +20,7 @@ Fenfluramine was granted initial FDA approval in 1973 prior to its withdrawal; i
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 07:42 | 36:10 | 0/0/0 | 3/2/0 | 0/0/0 | 951,721/14,770 | ollama / qwen3.8:27b-mtp-q8_0 | 40 | 2/38 | 38/2 | 0 |
+| 2026-09-29 23:19 | 9:25 | 0/0/0 | 3/2/0 | 0/0/0 | 79,762/11,856 | ollama / qwen3.8:27b-mtp-q8_0 | 41 | 2/39 | 39/2 | 0 |
 
 ## popPK records
 
@@ -28,15 +28,15 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Leonardi_1994](drugs/drug_fenfluramine/pd_Leonardi_1994_MAO_A_activity.md) | Leonardi ET et al., MDMA (ecstasy) inhibition of MAO type A…, Neuropsychopharmacology : o… (1994) | [10.1038/npp.1994.26](https://doi.org/10.1038/npp.1994.26) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Leonardi_1994](drugs/drug_fenfluramine/pd_Leonardi_1994_MAO_B_activity.md) | Leonardi ET et al., MDMA (ecstasy) inhibition of MAO type A…, Neuropsychopharmacology : o… (1994) | [10.1038/npp.1994.26](https://doi.org/10.1038/npp.1994.26) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [McComic_2026](drugs/drug_fenfluramine/pd_McComic_2026_unknown.md) | McComic SE et al., Discovery of mCMV280: An Oral Ectoparas…, Journal of medicinal chemis… (2026) | [10.1021/acs.jmedchem.5c03776](https://doi.org/10.1021/acs.jmedchem.5c03776) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [van_2026](drugs/drug_fenfluramine/pd_van_2026_bacterial_load.md) | van den Berg S et al., The pharmacodynamics of polymyxin B in…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag097](https://doi.org/10.1093/jac/dkag097) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Erenburg_2024](drugs/drug_fenfluramine/pd_Erenburg_2024_unknown.md) | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sheeni_2025](drugs/drug_fenfluramine/pd_Sheeni_2025_MES.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.316). The first reading is what the record holds.">cross-check: disputed</span> | [Sheeni_2025](drugs/drug_fenfluramine/pd_Sheeni_2025_MMI.md) | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Leonardi_1994_MAO_A_activity](drugs/drug_fenfluramine/pd_Leonardi_1994_MAO_A_activity.md) | name ← MDMA · direct Emax (saturable) effect | — | Leonardi ET et al., MDMA (ecstasy) inhibition of MAO type A…, Neuropsychopharmacology : o… (1994) | [10.1038/npp.1994.26](https://doi.org/10.1038/npp.1994.26) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Leonardi_1994_MAO_B_activity](drugs/drug_fenfluramine/pd_Leonardi_1994_MAO_B_activity.md) | name ← MDMA · direct Emax (saturable) effect | — | Leonardi ET et al., MDMA (ecstasy) inhibition of MAO type A…, Neuropsychopharmacology : o… (1994) | [10.1038/npp.1994.26](https://doi.org/10.1038/npp.1994.26) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [McComic_2026_unknown](drugs/drug_fenfluramine/pd_McComic_2026_unknown.md) | mosquito viability ← isoxazoline (afoxolaner/fluralaner) · inhibition effect | — | McComic SE et al., Discovery of mCMV280: An Oral Ectoparas…, Journal of medicinal chemis… (2026) | [10.1021/acs.jmedchem.5c03776](https://doi.org/10.1021/acs.jmedchem.5c03776) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [van_2026_bacterial_load](drugs/drug_fenfluramine/pd_van_2026_bacterial_load.md) | name ← polymyxin B · direct Emax (saturable) effect | — | van den Berg S et al., The pharmacodynamics of polymyxin B in…, The Journal of antimicrobia… (2026) | [10.1093/jac/dkag097](https://doi.org/10.1093/jac/dkag097) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Erenburg_2024_unknown](drugs/drug_fenfluramine/pd_Erenburg_2024_unknown.md) | antiseizure activity ← norfenfluramine · direct sigmoid Emax (Hill) effect | — | Erenburg N et al., Stereoselective Analysis of the Antisei…, International journal of mo… (2024) | [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sheeni_2025_MES](drugs/drug_fenfluramine/pd_Sheeni_2025_MES.md) | antiseizure activity ← l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine · stimulation effect | — | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.211). The first reading is what the record holds.">cross-check: disputed</span> | [Sheeni_2025_MMI](drugs/drug_fenfluramine/pd_Sheeni_2025_MMI.md) | neurotoxicity ← l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine · stimulation effect | — | Sheeni Y et al., Enantioselective comparative analysis o…, Epilepsia (2025) | [10.1111/epi.18542](https://doi.org/10.1111/epi.18542) |
 
 ## ADME sites
 
@@ -63,27 +63,30 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 111 matched, 102 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 173 matched, 131 returned
+- **screened:** 5  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_8 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_11 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Mittur_2024.pdf` | Mittur A et al., Effect of Hepatic Impairment on the Pha…, Journal of clinical pharmac… (2024) | popPK | 8 | [10.1002/jcph.2431](https://doi.org/10.1002/jcph.2431) | [38523492](https://pubmed.ncbi.nlm.nih.gov/38523492) | The study reports PK parameters for fenfluramine, but the evidence only provides exposure ratios (AUC) and lacks specific numeric values for clearance, volume, or half-life. |
+| `Mittur_2024.pdf` | Mittur A et al., Effect of Hepatic Impairment on the Pha…, Journal of clinical pharmac… (2024) | pd | 5 | [10.1002/jcph.2431](https://doi.org/10.1002/jcph.2431) | [38523492](https://www.ncbi.nlm.nih.gov/pubmed/38523492) | metadata signals extractable PD data (exposure-response) |
 | `Berger_1992.pdf` | Berger UV et al., The substituted amphetamines 3,4-methyl…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90023-w](https://doi.org/10.1016/0014-2999(92)90023-w) | [1356787](https://www.ncbi.nlm.nih.gov/pubmed/1356787) | metadata signals extractable PD data (EC50) |
 | `Gobbi_1989.pdf` | Gobbi M et al., In-vivo (+)-[3H]fenfluramine binding to…, The Journal of pharmacy and… (1989) | pd | 4 | [10.1111/j.2042-7158.1989.tb06445.x](https://doi.org/10.1111/j.2042-7158.1989.tb06445.x) | [2568465](https://www.ncbi.nlm.nih.gov/pubmed/2568465) | metadata signals extractable PD data (IC50) |
+| `Johnson_2003.pdf` | Johnson GJ et al., The effect of the anorectic agent, d-fe…, Journal of thrombosis and h… (2003) | pd | 4 | [10.1046/j.1538-7836.2003.00474.x](https://doi.org/10.1046/j.1538-7836.2003.00474.x) | [14675103](https://www.ncbi.nlm.nih.gov/pubmed/14675103) | metadata signals extractable PD data (IC50) |
 | `Kannengiesser_1976.pdf` | Kannengiesser MH et al., Comparative action of fenfluramine on t…, European journal of pharmac… (1976) | pd | 4 | [10.1016/0014-2999(76)90298-3](https://doi.org/10.1016/0014-2999(76)90298-3) | [1253827](https://www.ncbi.nlm.nih.gov/pubmed/1253827) | metadata signals extractable PD data (IC50) |
 | `McElroy_1988.pdf` | McElroy JF et al., Discriminative stimulus properties of c…, The Journal of pharmacology… (1988) | pd | 4 | not captured | [2834535](https://www.ncbi.nlm.nih.gov/pubmed/2834535) | metadata signals extractable PD data (IC50) |
 | `Robinson_1989.pdf` | Robinson TN et al., The mechanism of tetrahydroaminoacridin…, British journal of pharmaco… (1989) | pd | 4 | [10.1111/j.1476-5381.1989.tb12656.x](https://doi.org/10.1111/j.1476-5381.1989.tb12656.x) | [2611486](https://www.ncbi.nlm.nih.gov/pubmed/2611486) | metadata signals extractable PD data (IC50) |
 | `Rothman_2003.pdf` | Rothman RB et al., (+)-Fenfluramine and its major metaboli…, The Journal of pharmacology… (2003) | pd | 4 | [10.1124/jpet.103.049684](https://doi.org/10.1124/jpet.103.049684) | [12649307](https://www.ncbi.nlm.nih.gov/pubmed/12649307) | metadata signals extractable PD data (EC50) |
+| `Samanin_1979.pdf` | Samanin R et al., Chlorophenylpiperazine: a central serot…, Naunyn-Schmiedeberg's archi… (1979) | pd | 4 | [10.1007/BF00499059](https://doi.org/10.1007/BF00499059) | [503247](https://www.ncbi.nlm.nih.gov/pubmed/503247) | metadata signals extractable PD data (IC50) |
+| `Samanin_1980.pdf` | Samanin R et al., Further studies on the mechanism of ser…, Psychopharmacology (1980) | pd | 4 | [10.1007/BF00426657](https://doi.org/10.1007/BF00426657) | [6771803](https://www.ncbi.nlm.nih.gov/pubmed/6771803) | metadata signals extractable PD data (IC50) |
 | `Wee_2006.pdf` | Wee S et al., Self-administration of mixtures of fenf…, Pharmacology, biochemistry,… (2006) | pd | 4 | [10.1016/j.pbb.2006.05.022](https://doi.org/10.1016/j.pbb.2006.05.022) | [16828855](https://www.ncbi.nlm.nih.gov/pubmed/16828855) | metadata signals extractable PD data (sigmoid) |
 
-<sub>queue written 2026-09-22T07:35:34.353342+00:00</sub>
+<sub>queue written 2026-09-29T23:15:47.958583+00:00</sub>
 
 ## Screened and excluded
 
@@ -99,8 +102,11 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Anthenelli_2000 | irrelevant | 2 | 0 | The study uses fenfluramine as a pharmacological probe to measure prolactin response (pharmacodynamics) and does not report quantitative pharmacokinetic parameters like clearance or volume. |
 | popPK | Ariefta_2026 | irrelevant | 0 | 0 | The paper studies synthetic quinoline antimalarial derivatives and does not report pharmacokinetic parameters for fenfluramine. |
 | PD | Ariefta_2026 | not_relevant | 0 | 0 | The paper evaluates quinoline derivatives for antimalarial activity and does not mention fenfluramine or report any pharmacodynamic exposure-response relationships. |
+| popPK | Bednarczyk-Cwynar_2026 | irrelevant | 0 | 0 | The paper focuses on oleanolic acid derivatives and does not involve fenfluramine or report any pharmacokinetic parameters for it. |
+| PD | Bednarczyk-Cwynar_2026 | not_relevant | 0 | 0 | The paper studies oleanolic acid derivatives, not fenfluramine, and reports in vitro IC50 values for unrelated compounds. |
 | popPK | Berger_1992 | irrelevant | 0 | 0 | no_text gate: only 209 chars of text extracted (&lt; 400) |
 | PD | Berger_1992 | not_relevant | 0 | 0 | The paper describes a qualitative mechanism of action (5-HT release blocked by fluoxetine/cocaine) without reporting numeric concentration-effect or dose-response parameters for fenfluramine. |
+| PD | Bialer_2025 | not_relevant | 1 | 0 | The text is a review article discussing the chirality of antiseizure medications and does not report specific numeric pharmacodynamic parameters or exposure-response data for fenfluramine. |
 | popPK | Buslov_2025 | irrelevant | 0 | 0 | The paper is a biocatalysis study on the synthesis of d-amino acids and does not involve fenfluramine or pharmacokinetic parameters. |
 | PD | Buslov_2025 | not_relevant | 0 | 0 | The paper describes the engineering of an enzyme (phenylalanine ammonia lyase) for the synthesis of amino acids and does not involve fenfluramine or any pharmacodynamic analysis. |
 | popPK | Carruba_1977 | irrelevant | 0 | 0 | The study is an in-vitro/in-vivo mechanistic investigation of serotonin uptake and storage, not a pharmacokinetic study reporting disposition parameters for fenfluramine. |
@@ -148,6 +154,8 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Karabıyık_2024 | not_relevant | 0 | 0 | The paper studies ruthenium complexes, not fenfluramine, and reports only IC50 values for cytotoxicity without any pharmacokinetic or exposure-response modeling. |
 | popPK | Kornblith_1976 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment in rats focusing on food intake and brain stimulation, with no pharmacokinetic parameters reported. |
 | PD | Kornblith_1976 | not_relevant | 3 | 1 | The text describes a qualitative dose-response study comparing behavioral effects but does not provide specific numeric doses, concentrations, or quantitative PD parameters (e.g., ED50, Emax) in the provided excerpt. |
+| popPK | Kumar_2026 | irrelevant | 0 | 0 | The paper studies the pharmacological properties of Pongamia pinnata leaf extract and does not mention fenfluramine or report any pharmacokinetic parameters for it. |
+| PD | Kumar_2026 | not_relevant | 0 | 0 | The paper studies Pongamia pinnata leaf extract, not fenfluramine, and does not report any pharmacodynamic parameters for fenfluramine. |
 | popPK | Kut_1992 | irrelevant | 0 | 0 | The study investigates the immunological effects of fenfluramine on T-lymphocytes and does not report any pharmacokinetic parameters. |
 | PD | Kut_1992 | not_relevant | 3 | 2 | The paper describes a qualitative biphasic dose-response effect of fenfluramine on T-cell activity but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative concentration-effect curve. |
 | popPK | Lee_2025 | irrelevant | 0 | 0 | The paper is a synthetic chemistry study on bicyclo[1.1.1]pentane derivatives and does not involve fenfluramine or pharmacokinetic parameters. |
@@ -161,14 +169,18 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Maeda_1994 | irrelevant | 0 | 0 | The study is a pharmacological investigation of neural mechanisms for penile erection and does not report any pharmacokinetic parameters for fenfluramine. |
 | popPK | Malik_2025 | irrelevant | 0 | 0 | The paper is a machine learning study on EGFR inhibitors and does not contain any pharmacokinetic data for fenfluramine. |
 | PD | Malik_2025 | not_relevant | 0 | 0 | The paper describes a machine learning model for classifying EGFR inhibitors and does not contain any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for fenfluramine. |
+| PD | Marona-Lewicka_1994 | not_relevant | 1 | 0 | The paper studies MMAI, not fenfluramine, and only qualitatively mentions that MMAI's dose-response curve is parallel to fenfluramine's without providing numeric PD parameters for fenfluramine. |
 | PGx | Martin_2022 | not_relevant | 0 | 0 | The paper reports in vitro drug-drug interaction and metabolic pathway characterization (CYP enzymes) but does not report any pharmacogenomic effects (gene variants/genotypes) on PK or PD parameters. |
+| PD | Martin_2022_2 | not_relevant | 0 | 0 | The paper reports in vitro enzyme inhibition (IC50) and induction data for drug-drug interaction assessment, not a pharmacodynamic exposure-response or dose-response relationship for the drug's therapeutic effect. |
 | PGx | Martin_2022_2 | not_relevant | 0 | 0 | The paper evaluates in vitro drug-drug interaction potential (CYP inhibition/induction) of fenfluramine, not the effect of gene variants on its pharmacokinetics or pharmacodynamics. |
+| PD | Martinez_2002 | not_relevant | 2 | 1 | The paper analyzes the dose-response relationship for Aristolochia fangchi (ST-AF) and renal failure, not fenfluramine; fenfluramine is only listed as a co-ingested substance with no specific PD parameters or exposure-response analysis provided for it. |
 | popPK | McComic_2026 | irrelevant | 0 | 0 | The paper focuses on the discovery of mCMV280 (an isoxazoline ectoparasiticide) and does not report pharmacokinetic parameters for fenfluramine. |
 | PD | McComic_2026 | not_relevant | 0 | 0 | The paper focuses on the discovery of mCMV280 (an isoxazoline) and does not contain any data, analysis, or mention of fenfluramine. |
 | popPK | McElroy_1988 | irrelevant | 0 | 0 | The study focuses on the discriminative stimulus properties of clenbuterol, and fenfluramine is only mentioned as a comparator that did not substitute for the stimulus, with no pharmacokinetic parameters reported. |
 | PD | McElroy_1988 | not_relevant | 0 | 0 | The paper focuses on the discriminative stimulus properties of clenbuterol; fenfluramine is only mentioned as a negative control that produced no effect, with no PD parameters reported for it. |
 | popPK | Mejdrová_2023 | irrelevant | 0 | 0 | The paper describes the discovery of novel CAR agonists and does not report pharmacokinetic parameters for fenfluramine. |
 | PD | Mejdrová_2023 | not_relevant | 0 | 0 | The paper focuses on the discovery of CAR agonists and does not report any pharmacodynamic or exposure-response data for fenfluramine. |
+| PD | Mennini_1978 | not_relevant | 1 | 0 | The paper reports IC50 values for narcotic analgesics (e.g., methadone, morphine) but only qualitatively mentions fenfluramine as a 5-HT releaser without providing any numeric concentration-effect data or PD parameters for it. |
 | popPK | Mittur_2024 | relevant | 8 | 2 | The study reports PK parameters for fenfluramine, but the evidence only provides exposure ratios (AUC) and lacks specific numeric values for clearance, volume, or half-life. |
 | PD | Mittur_2024 | not_relevant | 1 | 0 | The paper reports only pharmacokinetic changes (AUC ratios) in hepatic impairment and qualitatively references exposure-response ranges from other studies, but provides no numeric PD parameters or concentration-effect data. |
 | popPK | Nardella_2025 | irrelevant | 0 | 0 | The paper studies an antimalarial kinase inhibitor (compound 12) and does not involve fenfluramine or its pharmacokinetics. |
@@ -181,6 +193,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Nicolai_2024 | not_relevant | 0 | 0 | The paper is a synthetic chemistry study on the synthesis of bicyclo[4.1.1]octanes and contains no pharmacodynamic or exposure-response data for fenfluramine. |
 | popPK | Odi_2021 | irrelevant | 0 | 0 | The paper is a narrative review discussing mechanisms of action and clinical efficacy, containing no original quantitative pharmacokinetic parameter values for fenfluramine. |
 | PD | Odi_2021 | not_relevant | 1 | 0 | The text is a narrative review discussing mechanisms and clinical efficacy without providing specific numeric PD parameters, concentration-effect curves, or PK/PD modeling results. |
+| PD | Padich_1996 | not_relevant | 2 | 1 | The paper reports a dose-response ED50 for the antagonist MDL 100,907, but does not provide numeric PD parameters (Emax, EC50, etc.) or concentration-effect data for fenfluramine itself. |
 | popPK | Pan_2025 | irrelevant | 0 | 0 | The paper describes an immunoassay method for detecting fenfluramine adulteration in food, not a pharmacokinetic study. |
 | PD | Pan_2025 | not_relevant | 0 | 0 | The paper describes an immunoassay method for detecting fenfluramine in food, not a pharmacodynamic or exposure-response study in biological subjects. |
 | popPK | Pigliasco_2024 | irrelevant | 1 | 0 | The paper describes an analytical method for therapeutic drug monitoring and reports plasma concentrations, but it does not provide pharmacokinetic disposition parameters such as clearance, volume of distribution, or half-life. |
@@ -198,6 +211,8 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Rothman_2010 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of serotonin transporter modulation using rat brain synaptosomes and does not report pharmacokinetic parameters for fenfluramine. |
 | PD | Rothman_2010 | not_relevant | 4 | 2 | The paper reports in vitro dose-response parameters (EC50, Emax) for fenfluramine as a substrate, but does not provide the specific numeric values in the text, nor does it model fenfluramine as a drug with a pharmacodynamic effect on a biological endpoint in the context of PK/PD. |
 | popPK | Saletu_1993 | irrelevant | 2 | 0 | The study reports qualitative blood level trends and pharmacodynamic effects (EEG) but does not provide quantitative pharmacokinetic parameters (CL, V, t1/2) for fenfluramine. |
+| PD | Samanin_1979 | not_relevant | 0 | 0 | The paper focuses on the pharmacology of chlorophenylpiperazine; fenfluramine is only mentioned as a comparator in a single sentence without providing any dose-response data or PD parameters for it. |
+| PD | Samanin_1980 | not_relevant | 3 | 2 | The paper reports in vitro IC50 values and a qualitative comparison of in vivo ED50s for serotonin uptake inhibition, but does not provide a quantitative exposure-response or dose-response curve for fenfluramine's anorectic effect with extractable PD parameters. |
 | popPK | Sarkar_2021 | irrelevant | 0 | 0 | The paper is a computational study on SARS-CoV-2 inhibitors (chloroquine/hydroxychloroquine) and does not involve fenfluramine or pharmacokinetic parameters. |
 | PD | Sarkar_2021 | not_relevant | 0 | 0 | The paper is a computational study on quinoline inhibitors for SARS-CoV-2 proteins and does not mention fenfluramine or report any pharmacodynamic or exposure-response data. |
 | popPK | Scarduelli_1985 | irrelevant | 0 | 0 | The study focuses on the pharmacodynamic effect of fenfluramine on serum prolactin levels and does not report any pharmacokinetic parameters. |
@@ -209,6 +224,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Schechter_1985 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment using fenfluramine as a probe, and it does not report any pharmacokinetic parameters. |
 | PD | Schechter_1985 | not_relevant | 3 | 2 | The paper reports a dose-response curve for d-amphetamine (with ED50 values) but only provides qualitative descriptions ("intermediate results") for fenfluramine without numeric PD parameters or a defined dose-effect curve for the target drug. |
 | popPK | Schechter_1986 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment measuring discriminative stimulus effects and ED50 values, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| PD | Schechter_1993 | not_relevant | 0 | 0 | The paper focuses on ibogaine discrimination and only qualitatively mentions fenfluramine as a non-generalizing stimulus without providing specific dose-response data or PD parameters for fenfluramine. |
 | popPK | Schulz_2026 | irrelevant | 0 | 0 | The paper is a structural biology and medicinal chemistry study on KIT/PDGFRA inhibitors for GIST and does not involve fenfluramine or pharmacokinetic parameters. |
 | PD | Schulz_2026 | not_relevant | 0 | 0 | The paper focuses on structure-based drug design for KIT/PDGFRA inhibitors in GIST and does not mention or analyze fenfluramine. |
 | popPK | Sheeni_2025 | irrelevant | 2 | 1 | The study is a pharmacodynamic analysis of anticonvulsant potency (ED50/EC50) in mice, not a pharmacokinetic study reporting disposition parameters like clearance, volume, or half-life. |
@@ -228,11 +244,13 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Ton_2007 | not_relevant | 0 | 0 | The paper reports gene-treatment interactions on smoking cessation outcomes, not pharmacokinetic or pharmacodynamic parameters of fenfluramine. |
 | popPK | Tükenmez_2026 | irrelevant | 0 | 0 | The paper describes the development of new antibiotics (TriPcides) against Staphylococcus aureus and contains no information regarding fenfluramine or its pharmacokinetics. |
 | PD | Tükenmez_2026 | not_relevant | 0 | 0 | The paper investigates the antimicrobial activity of TriPcides against Staphylococcus aureus and does not mention fenfluramine or report any pharmacodynamic parameters for it. |
+| PD | Unger_2003 | not_relevant | 3 | 1 | The paper reports a statistical association (chi-square) between cumulative dose and the presence of aortic regurgitation, but does not provide numeric PD parameters (e.g., EC50, Emax) or a quantitative dose-response curve. |
 | popPK | Vanangamudi_2023 | irrelevant | 0 | 0 | The paper is a review on the design of HIV NNRTIs and does not contain any pharmacokinetic data for fenfluramine. |
 | PD | Vanangamudi_2023 | not_relevant | 0 | 0 | The paper is a review on the design and development of NNRTIs and does not mention fenfluramine or report any pharmacodynamic or exposure-response data. |
 | popPK | Wali_2026 | irrelevant | 0 | 0 | The paper is a review of natural kinase inhibitors in lung cancer and does not mention fenfluramine or report any pharmacokinetic parameters for it. |
 | PD | Wali_2026 | not_relevant | 0 | 0 | The paper is a review of natural kinase inhibitors in lung cancer and does not contain any pharmacodynamic or exposure-response data for fenfluramine. |
 | popPK | Wee_2006 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment on self-administration in monkeys and does not report any pharmacokinetic parameters for fenfluramine. |
+| PD | Weintraub_1984 | not_relevant | 1 | 0 | The paper reports clinical efficacy (weight loss) and adverse effects for fixed doses but does not provide plasma concentration data or fit a pharmacodynamic model to derive numeric PD parameters like Emax or EC50. |
 | popPK | Yang_2026 | irrelevant | 0 | 0 | The paper describes a deep learning model for drug discovery targeting YTHDC2 and does not involve fenfluramine or pharmacokinetic parameters. |
 | PD | Yang_2026 | not_relevant | 0 | 0 | The paper reports in vitro binding and enzymatic inhibition data (IC50) for a YTHDC2 inhibitor, not pharmacodynamic exposure-response or dose-response data for fenfluramine. |
 | popPK | Young_2006 | irrelevant | 0 | 0 | The study is a behavioral pharmacology experiment comparing appetite suppression in mice, not a pharmacokinetic study, and fenfluramine is used only as a reference comparator. |

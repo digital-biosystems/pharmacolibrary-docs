@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives calpastatin protein levels (in relative density): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (morpholine salicylate analog) concentration (μM) acts on calpastatin (CAST) protein levels (relative density) by stabilizing the CAST–calpain-2 complex, thereby reducing calpain-2-mediated proteolytic cleavage (degradation) of CAST; the record fits this as a stimulatory Emax model, but the excerpts provide no numeric potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sertraline (concentrations from the PK model of Castillo_2024) drives parasite burden (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sertraline (SERT) concentrations inhibit L. (L.) infantum parasite burden in vitro with reported EC50 values of 0.7, 4.2, 27.4 and 6.4 μM for SERT and 2.5, 12.0 and 4.8 μM for liposomal LP-SERT (miltefosine controls: 16.2, 3.1, 127.7, 40.9 μM); the paper does not state a PD mechanism or model, only that the effect is inhibitory.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Romanelli_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,19 +31,19 @@ Romanelli MM; da Costa-Silva TA; Cunha-Junior E; Dias Ferreira D; Guerra JM; Gal
   ·  DOI: [10.3389/fcimb.2019.00353](https://doi.org/10.3389/fcimb.2019.00353)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SERT — EC50 (μM) ± SD | `Q321` · not captured | 0.7 | μM | not captured | llm (not captured) | T1:row2:col1 |
-| SERT — EC50 (μM) ± SD | `Q321` · not captured | 4.2 | μM | not captured | llm (not captured) | T1:row2:col2 |
-| SERT — EC50 (μM) ± SD | `Q321` · not captured | 27.4 | μM | not captured | llm (not captured) | T1:row2:col3 |
-| SERT — EC50 (μM) ± SD | `Q321` · not captured | 6.4 | μM | not captured | llm (not captured) | T1:row2:col4 |
-| LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 2.5 | μM | not captured | llm (not captured) | T1:row3:col2 |
-| LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 12.0 | μM | not captured | llm (not captured) | T1:row3:col3 |
-| LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 4.8 | μM | not captured | llm (not captured) | T1:row3:col4 |
-| Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 16.2 | μM | not captured | llm (not captured) | T1:row4:col1 |
-| Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 3.1 | μM | not captured | llm (not captured) | T1:row4:col2 |
-| Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 127.7 | μM | not captured | llm (not captured) | T1:row4:col3 |
-| Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 40.9 | μM | not captured | llm (not captured) | T1:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | SERT — EC50 (μM) ± SD | `Q321` · not captured | 0.7 | μM | not captured | llm (not captured) | T1:row2:col1 |
+| PD (effect) | SERT — EC50 (μM) ± SD | `Q321` · not captured | 4.2 | μM | not captured | llm (not captured) | T1:row2:col2 |
+| PD (effect) | SERT — EC50 (μM) ± SD | `Q321` · not captured | 27.4 | μM | not captured | llm (not captured) | T1:row2:col3 |
+| PD (effect) | SERT — EC50 (μM) ± SD | `Q321` · not captured | 6.4 | μM | not captured | llm (not captured) | T1:row2:col4 |
+| PD (effect) | LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 2.5 | μM | not captured | llm (not captured) | T1:row3:col2 |
+| PD (effect) | LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 12.0 | μM | not captured | llm (not captured) | T1:row3:col3 |
+| PD (effect) | LP-SERT — EC50 (μM) ± SD | `Q321` · not captured | 4.8 | μM | not captured | llm (not captured) | T1:row3:col4 |
+| PD (effect) | Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 16.2 | μM | not captured | llm (not captured) | T1:row4:col1 |
+| PD (effect) | Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 3.1 | μM | not captured | llm (not captured) | T1:row4:col2 |
+| PD (effect) | Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 127.7 | μM | not captured | llm (not captured) | T1:row4:col3 |
+| PD (effect) | Miltefosine — EC50 (μM) ± SD | `Q321` · not captured | 40.9 | μM | not captured | llm (not captured) | T1:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

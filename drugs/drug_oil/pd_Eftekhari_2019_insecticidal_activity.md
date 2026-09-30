@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliveria decumbens essential oil (measured concentrations) drives name (in µg/larva) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports no pharmacodynamic model linking Oliveria decumbens essential oil concentrations to insecticidal activity; it only gives an LD50 of 52.1 µg/larva for topical and fumigation application to Trichoplusia ni larvae, with no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values stated for this response (AChE inhibition, IC50 = 0.117 ± 0.049 µg/mL, was measured separately and not linked in vivo).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eftekhari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

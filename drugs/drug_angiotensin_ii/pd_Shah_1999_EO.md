@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives endogenous ouabain-like steroid (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In bovine adrenal zona glomerulosa cells, angiotensin II dose-dependently stimulates secretion of the endogenous ouabain-like steroid (EO), with an EC50 of ~1 nmol/L for Ang II stimulation (similar to that for corticosteroid secretion); the paper does not state a quantitative PD model (no Imax/IC50/kin/kout/ke0) for the EO response. The mechanism is receptor-mediated stimulation of EO secretion (blocked by PD123319 but not losartan, indicating an AT2-like receptor), not a direct Emax effect on an endogenous response variable.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shah_1999`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

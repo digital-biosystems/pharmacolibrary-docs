@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5 aza-2-deoxycytidine drives name (in days) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In BNML rats, intravenous 5-aza-2-deoxycytidine (aza-dC) doses (mg kg-1, 3 times q12h) increased median survival time (MST, days) in a dose-dependent manner up to 50 mg kg-1, with only slight further improvement at higher doses; the paper reports this as an empirical dose-response relationship and does not state a pharmacodynamic model, mechanism, or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Richel_1988`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

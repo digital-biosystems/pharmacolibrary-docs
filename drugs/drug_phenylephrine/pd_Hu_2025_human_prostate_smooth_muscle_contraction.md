@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Verapamil concentration-dependently inhibits phenylephrine-induced contraction of human prostate smooth muscle via antagonism of α1A-adrenoceptors (rightward shifts/increased EC50) with additional reduction of maximum contractions possibly involving CaV1.2 inhibition: 1 µM verapamil decreased the phenylephrine Emax by 41% and increased EC50 by 0.47 orders of magnitude, and 10 µM decreased Emax by 62% and increased EC50 by 0.83 orders of magnitude. The paper reports no formal Emax/IC50 model parameters (no Imax, IC50, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

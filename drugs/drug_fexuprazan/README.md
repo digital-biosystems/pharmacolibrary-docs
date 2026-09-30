@@ -21,16 +21,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Jung_2026_reference](drugs/drug_fexuprazan/Fexuprazan_Jung2026_reference.md) | — | 1-compartment (no model) | 0 | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jung_2026](drugs/drug_fexuprazan/pd_Jung_2026_intragastric_pH.md) | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2022_pH](drugs/drug_fexuprazan/pd_Kim_2022_pH.md) | gastric pH ← fexuprazan · indirect response — drug inhibits the production of gastric pH | — | Kim MS et al., Model-Based Prediction of Acid Suppress…, Pharmaceuticals (Basel, Swi… (2022) | [10.3390/ph15060709](https://doi.org/10.3390/ph15060709) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Jung_2026_intragastric_pH](drugs/drug_fexuprazan/pd_Jung_2026_intragastric_pH.md) | name ← tegoprazan, YH4808, fexuprazan, vonoprazan · indirect response — drug inhibits the production of name | — | Jung W et al., A Mechanism-Based Multi-Level Populatio…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70181](https://doi.org/10.1002/psp4.70181) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

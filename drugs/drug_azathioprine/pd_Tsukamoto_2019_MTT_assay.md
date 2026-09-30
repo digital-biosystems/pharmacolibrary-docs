@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SN-38 drives cell viability (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Azathioprine (tested up to 100 µM) reduces cell viability (% of control) in Flp-In-293 cells after 72 h exposure, measured by MTT assay; the paper reports EC50 values (e.g. 6-mercaptopurine 2.2 ± 0.07 µM) comparing Mock, ABCC4 (WT) and ABCC4 (G187W) cells, with ABCC4 (WT) showing 4.2-fold resistance to azathioprine versus Mock, but does not state an explicit PD mechanism (no Imax, Emax, kin, kout or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsukamoto_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`

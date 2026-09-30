@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A15:0-i15:0 PE drives TNFα (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The phospholipid a15:0-i15:0 PE directly stimulates TNFα release from dendritic cells via a TLR2–TLR1 heterodimer (no TNFα induction in tlr2−/− cells, robust induction in tlr4−/− cells); the paper reports a dose–response curve but gives no numeric EC50, Emax, or kinetic parameters, stating only that 0.15 µmol l−1 (≈1% of EC50) given 18 h before other agonists (e.g. LPS) completely suppressed TNFα release.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bae_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

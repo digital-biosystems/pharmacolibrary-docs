@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ionized calcium drives Parathyroid hormone (in unknown): indirect response — drug inhibits the loss of Parathyroid hormone.
+
+**Model:** No model was generated from this record.
+
+> Oral calcium (400 mg elemental calcium as calcium carbonate tablets or Geumjin thermal spring water) was modeled via an indirect response (K-PD) model in which absorbed but unobserved ionized calcium inhibits the secretion (zero-order input, kinPTH) of PTH, with PTH eliminated by first-order koutPTH; no potency values (Imax, IC50) are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahn_2014`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

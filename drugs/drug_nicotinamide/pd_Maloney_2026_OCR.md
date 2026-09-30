@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AG-670 (measured concentrations) drives Mitochondrial oxygen consumption (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AG-670 (a nicotinamide-derived NNMT inhibitor) at a sublethal concentration of 10 µM inhibits cellular and in situ mitochondrial oxygen consumption (OCR, ~3–4 fold) in NNMT-expressing SCC-4 and DOK cells, with no effect in NNMT-negative MCF-7 cells; the paper does not state a PD model for OCR, but AG-670 directly inhibits isolated NNMT enzyme activity with EC50 2.7 µM (95% CI 1.4–5.8) and is cytotoxic to SCC-4 cells with IC50 41.8 µM (95% CI 33.5–65.3).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maloney_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

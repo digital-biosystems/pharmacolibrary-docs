@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amitriptyline (concentrations from the PK model of Koh_2019) drives RR interval length (in ms): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Amitriptyline plasma concentration (μM) was related to RR interval length (ms) via a direct Emax model (RR = (RR0 − RRmax)·C^n/(EC50^n + C^n)), with RR0 = 995.3 ms, RRmax = 500.8 ms, EC50 = 0.4 μM, n = 1.5 (RMSE 120.98); the paper does not state a production/elimination mechanism beyond this direct concentration–effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tylutki_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`

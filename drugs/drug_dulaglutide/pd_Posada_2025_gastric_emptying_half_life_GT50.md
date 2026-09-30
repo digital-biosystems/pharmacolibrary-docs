@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dulaglutide (concentrations from the PK model of Admiraal_2023) drives name (in h) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a PD model linking dulaglutide concentrations to gastric emptying half-life (GT50); it only uses gastric mean residence time (MRT) values of 0.27 h (median) and 1.18 h (90% CI upper) in Simcyp PBPK models, with dulaglutide (1.5 mg clinically, 4.5 mg predicted) delaying gastric emptying (inhibition), but no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Posada_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Posada MM; Schneck KB; Morse BL; Rougee LRA; Tham LS; Rehmel JF; Thompson B; Sta
   ·  DOI: [10.1002/psp4.70101](https://doi.org/10.1002/psp4.70101)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Gastric mean residence (MRT) time (h) values used in Simcyp PBPK models (median and 90% CI) — 0 | `Q53` · not captured | 0.27 | median and 90% CI | not captured | llm_confirmed (not captured) | psp470101-tbl-0001:row1:col3 |
-| Gastric mean residence (MRT) time (h) values used in Simcyp PBPK models (median and 90% CI) — 0 | `Q53` · not captured | 1.18 | median and 90% CI | not captured | llm_confirmed (not captured) | psp470101-tbl-0001:row2:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Gastric mean residence (MRT) time (h) values used in Simcyp PBPK models (median and 90% CI) — 0 | `Q53` · not captured | 0.27 | median and 90% CI | not captured | llm_confirmed (not captured) | psp470101-tbl-0001:row1:col3 |
+| PK (driver) | Gastric mean residence (MRT) time (h) values used in Simcyp PBPK models (median and 90% CI) — 0 | `Q53` · not captured | 1.18 | median and 90% CI | not captured | llm_confirmed (not captured) | psp470101-tbl-0001:row2:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

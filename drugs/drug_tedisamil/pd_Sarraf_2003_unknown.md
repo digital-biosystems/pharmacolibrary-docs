@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tedisamil drives ischaemia-induced arrhythmias (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tedisamil was infused in anaesthetised rats and dose-dependently suppressed ischaemia-induced arrhythmias (percent antiarrhythmic protection), with an ED50 of 3.071.3 mmol kg−1 min−1; the paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0), only dose–response curves fit to a two-parameter logistic function. In electrophysiological studies, tedisamil dose-relatedly increased effective refractory period, and coinfusion of 2 mmol kg−1 min−1 lidocaine (inert alone) synergistically shifted the tedisamil dose–response leftward, reducing tedisamil's ED50 to 0.870.2 mmol kg−1 min−1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarraf_2003`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,16 +30,16 @@ Sarraf G; Barrett TD; Walker MJ et al. (2003). British journal of pharmacology 1
   ·  DOI: [10.1038/sj.bjp.0705373](https://doi.org/10.1038/sj.bjp.0705373)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 0.125 | `Q358` · not captured | 2 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row33:col1 |
-| 0.25 | `Q358` · not captured | 2 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row34:col1 |
-| 0.063 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row38:col1 |
-| 0.125 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row39:col1 |
-| 0.25 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row40:col1 |
-| 0.063 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row43:col1 |
-| 0.125 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row44:col1 |
-| 0.25 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row45:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 0.125 | `Q358` · not captured | 2 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row33:col1 |
+| PK (driver) | 0.25 | `Q358` · not captured | 2 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row34:col1 |
+| PK (driver) | 0.063 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row38:col1 |
+| PK (driver) | 0.125 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row39:col1 |
+| PK (driver) | 0.25 | `Q358` · not captured | 4 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row40:col1 |
+| PK (driver) | 0.063 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row43:col1 |
+| PK (driver) | 0.125 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row44:col1 |
+| PK (driver) | 0.25 | `Q358` · not captured | 6 | mmol kg À1 min À1 | not captured | llm (not captured) | tab_1:row45:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

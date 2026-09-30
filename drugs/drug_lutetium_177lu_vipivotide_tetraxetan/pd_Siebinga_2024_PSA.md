@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** [177Lu]Lu-PSMA-I&T drives prostate-specific antigen (in unknown): indirect response — drug inhibits the production of prostate-specific antigen.
+
+**Model:** No model was generated from this record.
+
+> In the PKPD model, tumor [177Lu]Lu-PSMA-I&T exposure (from SPECT/CT) drives PSA dynamics via a linear, concentration-dependent inhibitory drug effect on PSA production, best described as a direct linear effect plus a delayed linear effect (not Emax-type); KD,direct was 0.000335 L·day−1·GBq−1 (40.1% RSE), the exponential PSA growth rate kG was 0.000408 h−1 (14.2% RSE), baseline PSA was fixed at 140 µg/L with tumor volume as a linear covariate (57.5 µg/L, 38.9% RSE), and the delayed effect was mechanistically attributed to changes in tumor microenvironment or a radiation-induced bystander response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Siebinga_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Siebinga H; de Wit-van der Veen BJ; de Vries-Huizing DMV; Vogel WV; Hendrikx JJM
   ·  DOI: [10.1186/s40658-024-00642-2](https://doi.org/10.1186/s40658-024-00642-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tumor volume on baseline PSA (µg/L)b — 95% CI | `Q100` · not captured | 15.5 | µg/L | not captured | llm_corrected (not captured) | Tab3:row3:col2 |
-| PSA growth rate (kG) (h−1) — 95% CI | `Q335` · not captured | 0.000286 | h−1 | not captured | llm (not captured) | Tab3:row4:col2 |
-| Baseline PSA (CV%) — 95% CI | `Q100` · not captured | 151 | µg/L | not captured | nil (not captured) | Tab3:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Tumor volume on baseline PSA (µg/L)b — 95% CI | `Q100` · not captured | 15.5 | µg/L | not captured | llm_corrected (not captured) | Tab3:row3:col2 |
+| PD (effect) | PSA growth rate (kG) (h−1) — 95% CI | `Q335` · not captured | 0.000286 | h−1 | not captured | llm (not captured) | Tab3:row4:col2 |
+| — | Baseline PSA (CV%) — 95% CI | `Q100` · not captured | 151 | µg/L | not captured | nil (not captured) | Tab3:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

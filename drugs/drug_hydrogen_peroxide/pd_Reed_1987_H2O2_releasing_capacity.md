@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RMu-GM-CSF (measured concentrations) drives name (in fluorescence units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for the H2O2-releasing capacity response; it only states qualitatively that rMu-GM-CSF (tested at 10 and 100 ng/ml) and other cytokines enhance macrophage H2O2-secretory capacity, with no mechanism, effect form, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Reed_1987`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

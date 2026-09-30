@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zinc ions (measured concentrations) drives Cytopathic effects (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Zinc chloride (zinc ions, mM) inhibited EV-D68-induced cytopathic effects in RD cells, with an antiviral EC50 of 0.033 mM versus a cytotoxicity IC50 of 0.26 mM; the paper does not state a formal PD model, but mechanistically zinc acts at viral entry and release/replication steps, moderately blocking attachment and potently suppressing extracellular VP1, RNA replication, and infectious virion production.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [McBride_2009](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | McBride (2009) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tisdale_2012](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [McBride_2009_IKr_block](drugs/drug_ibutilide/pd_McBride_2009_IKr_block.md) | name ← ibutilide · inhibition effect | — | McBride (2009) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Tisdale_2012_QTF](drugs/drug_ibutilide/pd_Tisdale_2012_QTF.md) | QTF interval ← ibutilide · direct sigmoid Emax (Hill) effect | — | Tisdale JE et al., Enhanced sensitivity to drug-induced QT…, Journal of clinical pharmac… (2012) | [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939) |
 
 ## ADME sites
 

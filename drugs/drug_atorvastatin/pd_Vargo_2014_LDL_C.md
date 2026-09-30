@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin (concentrations from the PK model of Chen_2025) drives low-density lipoprotein cholesterol (in % lowering) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atorvastatin total daily dose (mg/day) acts on percent LDL-C lowering via a direct sigmoid Emax dose-response model (Emax, ED50, and a sigmoidicity factor for the slope around ED50), with LDL-C efficacy correlated more with total daily dose/AUC than with peak Cmax; the paper does not state numeric values for Emax, ED50, or the sigmoidicity factor in the excerpts, and no mechanism beyond this dose-response relation is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vargo_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

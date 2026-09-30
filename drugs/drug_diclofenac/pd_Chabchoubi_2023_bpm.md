@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diclofenac, ibuprofen, ketoprofen, paracetamol (measured concentrations) drive heartbeat rate (in continuous): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper relates exposure concentrations (mg/L) of diclofenac (also ibuprofen, ketoprofen, paracetamol) to heartbeat rate in zebrafish embryos, fitted with a sigmoid Emax model with an inhibitory direction; the excerpts do not state the mechanism (e.g., production vs. elimination inhibition) and give no numeric Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chabchoubi_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives cAMP (in normalized vs 0 µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan (30, 50, 70 µM for HCT-8 and HepG2; 20, 40, 50 µM for SK-N-AS) reduced intracellular cAMP (normalized vs 0 µM) in V2 receptor-expressing cancer cell lines, consistent with inhibition of cAMP production downstream of V2 receptor antagonism, though the paper does not state a formal PD model. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for the cAMP response; the only potency values reported are anti-proliferative IC50s of 52 µM (HCT-8), 38 µM (HepG2) and 40 µM (SK-N-AS).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

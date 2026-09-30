@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silver nanoparticles (SC-Ag(I)) drives name (in µg ml−1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silver nanoparticles (SC–Ag(I), CMC–AgNPs, St–AgNPs) applied at µg ml−1 concentrations inhibit in-vitro proliferation of cancer cell lines (colon HCT116, prostate PC3, HePG2, MCF7, A549), with 100 µg ml−1 giving maximal inhibition and SC–AgNPs achieving 100% inhibition in HCT116 and PC3; the paper reports IC50/IC90 values (e.g. HCT116 IC50 25.8 and IC90 54.73 µg ml−1 for SC–AgNPs; CMC–AgNPs HCT116 IC50 41.7 and IC90 71.9 µg ml−1; HePG2 IC50 64.3, IC90 110.7 µg ml−1; PC3 IC50 45.1 µg ml−1; MCF7 IC50 71.4 µg ml−1; A549 IC50 80.1 µg ml−1) but does not state a pharmacodynamic mechanism or model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Basta_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ Basta AH; Lotfy VF; Mahmoud K; Abdelwahed NAM et al. (2020). Royal Society open 
   ·  DOI: [10.1098/rsos.200928](https://doi.org/10.1098/rsos.200928)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| colon cell line HCT116 — IC50 (µg ml−1) | `Q322` · not captured | 25.8 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row2:col2 |
-| CMC–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 71.9 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row3:col2 |
-| St–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 101.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row5:col2 |
-| lung carcinoma cell line A549 — IC50 (µg ml−1) | `Q322` · not captured | 80.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row6:col2 |
-| human hepatocellular carcinoma cell line HePG2 — IC50 (µg ml−1) | `Q322` · not captured | 64.3 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row10:col2 |
-| human hepatocellular carcinoma cell line HePG2 — IC90 (µg ml−1) | `Q322` · not captured | 110.7 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row10:col3 |
-| prostate cell line PC3 — IC50 (µg ml−1) | `Q322` · not captured | 45.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row14:col2 |
-| St–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 144.0 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row17:col2 |
-| breast adenocarcinoma MCF7 — IC50 (µg ml−1) | `Q322` · not captured | 71.4 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row18:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | colon cell line HCT116 — IC50 (µg ml−1) | `Q322` · not captured | 25.8 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row2:col2 |
+| PD (effect) | CMC–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 71.9 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row3:col2 |
+| PD (effect) | St–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 101.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row5:col2 |
+| PD (effect) | lung carcinoma cell line A549 — IC50 (µg ml−1) | `Q322` · not captured | 80.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row6:col2 |
+| PD (effect) | human hepatocellular carcinoma cell line HePG2 — IC50 (µg ml−1) | `Q322` · not captured | 64.3 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row10:col2 |
+| PD (effect) | human hepatocellular carcinoma cell line HePG2 — IC90 (µg ml−1) | `Q322` · not captured | 110.7 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row10:col3 |
+| PD (effect) | prostate cell line PC3 — IC50 (µg ml−1) | `Q322` · not captured | 45.1 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row14:col2 |
+| PD (effect) | St–AgNPs — IC50 (µg ml−1) | `Q322` · not captured | 144.0 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row17:col2 |
+| PD (effect) | breast adenocarcinoma MCF7 — IC50 (µg ml−1) | `Q322` · not captured | 71.4 | µg ml−1 | not captured | llm (not captured) | RSOS200928TB5:row18:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

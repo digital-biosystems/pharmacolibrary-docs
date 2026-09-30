@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Yu_2023_reference](drugs/drug_ilaprazole/Ilaprazole_Yu2023_reference.md) | — | 2-compartment (no model) | 3 (+2 cov.) | Yu M et al., Population pharmacokinetic modeling of…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1306222](https://doi.org/10.3389/fphar.2023.1306222) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

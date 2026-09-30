@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plumbagin, menadione, lawsone (measured concentrations) drive name (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism or model for the effect of plumbagin, menadione, and lawsone on intracellular ROS concentration (expressed as % of control) in C6 cells; it only reports that concentrations higher than 5 μM plumbagin and higher than 8 μM menadione statistically significantly stimulated ROS production, while lawsone had no or very small effect. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for this ROS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Majiene_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Majiene D; Kuseliauskyte J; Stimbirys A; Jekabsone A et al. (2019). Nutrients 11
   ·  DOI: [10.3390/nu11061294](https://doi.org/10.3390/nu11061294)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Plumbagin — VL | `Q61` · not captured | 34.1 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row3:col2 |
-| Lawsone — VL | `Q61` · not captured | 30.3 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row11:col2 |
-| Lawsone — VADP | `Q358` · not captured | 60.6 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row11:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Plumbagin — VL | `Q61` · not captured | 34.1 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row3:col2 |
+| PK (driver) | Lawsone — VL | `Q61` · not captured | 30.3 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row11:col2 |
+| PK (driver) | Lawsone — VADP | `Q358` · not captured | 60.6 | not captured | not captured | llm (not captured) | nutrients-11-01294-t001:row11:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan (concentrations from the PK model of Bertin_2025) drives vasorelaxation (in %): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Levosimendan (M concentrations) directly stimulates dose-dependent vasorelaxation of rat basilar artery segments, described by an Emax model with Emax 103% and pD2 (−log10EC50) 5.38; the paper reports the altered contraction appeared non-competitive (unchanged pD2) and does not state a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wanderer_2022`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Wanderer S; Andereggen L; Mrosek J; Kashefiolasl S; Schubert GA; Marbacher S; et
   ·  DOI: [10.1136/neurintsurg-2021-017504](https://doi.org/10.1136/neurintsurg-2021-017504)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 103 | % | not captured | review_gapfill (not captured) | Wanderer_2022:review |
-| pD2 (-log10EC50) | `Q321` · not captured | 5.38 | -log10EC50 | not captured | review_gapfill (not captured) | Wanderer_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 103 | % | not captured | review_gapfill (not captured) | Wanderer_2022:review |
+| PD (effect) | pD2 (-log10EC50) | `Q321` · not captured | 5.38 | -log10EC50 | not captured | review_gapfill (not captured) | Wanderer_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

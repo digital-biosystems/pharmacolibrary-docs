@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** FGFC1 derivatives (F1-F7) (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> FGFC1 derivatives (F1–F7) stimulate fibrinolytic activity in vitro via reciprocal activation of pro-uPA and plasminogen (measured as urokinase activity with chromogenic substrate S-2444), with EC50 values such as 59.7 μM for F1 and 42.3 μM for the most potent derivative F6; the paper does not describe a formal PD model (no Imax/IC50/kin/kout/ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Wang Y; Chen H; Sheng R; Fu Z; Fan J; Wu W; et al. et al. (2021). Marine drugs 1
   ·  DOI: [10.3390/md19040218](https://doi.org/10.3390/md19040218)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| F1 | `Q40` · not captured | 59.7 | not captured | not captured | exact (not captured) | marinedrugs-19-00218-t001:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | F1 | `Q40` · not captured | 59.7 | not captured | not captured | exact (not captured) | marinedrugs-19-00218-t001:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

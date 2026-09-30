@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sotatercept (measured concentrations) drives hemoglobin (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sotatercept concentrations (ng/mL) drive hemoglobin in a semi-mechanistic PK/Hgb model in which sotatercept stimulates the production and maturation rates of erythroid progenitor cells (maximal stimulation ~18.6%), with Hgb expressed from predicted RET and mature RBC counts; the concentration giving half-maximal stimulatory effect (SC50) was 2,710 ng/mL (gamma 1.00), with baseline RET of 97.8 ×10⁹ cells/L in PAH participants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ait-Oudhia_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,18 +31,18 @@ Ait-Oudhia S; Jaworowicz D; Hu Z; Gaurav M; Barcomb H; Hu S; et al. et al. (2025
   ·  DOI: [10.1002/cpt.3524](https://doi.org/10.1002/cpt.3524)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SC50 — Final parameter estimate | `Q321` · not captured | 2710 | ng/mL | not captured | llm (not captured) | cpt3524-tbl-0003:row3:col2 |
-| SC50 — Final parameter estimate | `Q321` · not captured | 20.7 | ng/mL | not captured | llm (not captured) | cpt3524-tbl-0003:row3:col3 |
-| IC50 — Final parameter estimate | `Q322` · not captured | 36.3 | ng/mL | not captured | exact (not captured) | cpt3524-tbl-0003:row7:col2 |
-| IC50 — Final parameter estimate | `Q322` · not captured | 19.7 | ng/mL | not captured | exact (not captured) | cpt3524-tbl-0003:row7:col3 |
-| GAMMA — Final parameter estimate | `Q325` · not captured | 1.00 | unit | not captured | exact (not captured) | cpt3524-tbl-0003:row8:col2 |
-| Baseline RET in PAH participants (109 cells/L) — Parameter (unit) | `Q324` · not captured | 97.8 | unit | not captured | llm_confirmed (not captured) | cpt3524-tbl-0003:row10:col1 |
-| Baseline RET in PAH participants (109 cells/L) — Final parameter estimate | `Q324` · not captured | 3.03 | unit | not captured | llm_confirmed (not captured) | cpt3524-tbl-0003:row10:col2 |
-| cov (IIV in RET0, IIV in SMAX) — Final parameter estimate | `Q312` · not captured | 30.9 | IIV in RET0, IIV in SMAX | not captured | llm (not captured) | cpt3524-tbl-0003:row16:col3 |
-| cov (IIV in RBC0, IIV in SMAX) — Final parameter estimate | `Q312` · not captured | 27.1 | IIV in RBC0, IIV in SMAX | not captured | llm (not captured) | cpt3524-tbl-0003:row17:col3 |
-| cov (IIV in RBC0, IIV in RET0) — Final parameter estimate | `Q312` · not captured | 37.2 | IIV in RBC0, IIV in RET0 | not captured | llm (not captured) | cpt3524-tbl-0003:row18:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | SC50 — Final parameter estimate | `Q321` · not captured | 2710 | ng/mL | not captured | llm (not captured) | cpt3524-tbl-0003:row3:col2 |
+| PD (effect) | SC50 — Final parameter estimate | `Q321` · not captured | 20.7 | ng/mL | not captured | llm (not captured) | cpt3524-tbl-0003:row3:col3 |
+| PD (effect) | IC50 — Final parameter estimate | `Q322` · not captured | 36.3 | ng/mL | not captured | exact (not captured) | cpt3524-tbl-0003:row7:col2 |
+| PD (effect) | IC50 — Final parameter estimate | `Q322` · not captured | 19.7 | ng/mL | not captured | exact (not captured) | cpt3524-tbl-0003:row7:col3 |
+| PD (effect) | GAMMA — Final parameter estimate | `Q325` · not captured | 1.00 | unit | not captured | exact (not captured) | cpt3524-tbl-0003:row8:col2 |
+| PD (effect) | Baseline RET in PAH participants (109 cells/L) — Parameter (unit) | `Q324` · not captured | 97.8 | unit | not captured | llm_confirmed (not captured) | cpt3524-tbl-0003:row10:col1 |
+| PD (effect) | Baseline RET in PAH participants (109 cells/L) — Final parameter estimate | `Q324` · not captured | 3.03 | unit | not captured | llm_confirmed (not captured) | cpt3524-tbl-0003:row10:col2 |
+| variability | cov (IIV in RET0, IIV in SMAX) — Final parameter estimate | `Q312` · not captured | 30.9 | IIV in RET0, IIV in SMAX | not captured | llm (not captured) | cpt3524-tbl-0003:row16:col3 |
+| variability | cov (IIV in RBC0, IIV in SMAX) — Final parameter estimate | `Q312` · not captured | 27.1 | IIV in RBC0, IIV in SMAX | not captured | llm (not captured) | cpt3524-tbl-0003:row17:col3 |
+| variability | cov (IIV in RBC0, IIV in RET0) — Final parameter estimate | `Q312` · not captured | 37.2 | IIV in RBC0, IIV in RET0 | not captured | llm (not captured) | cpt3524-tbl-0003:row18:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

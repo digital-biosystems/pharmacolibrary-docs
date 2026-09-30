@@ -32,8 +32,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 |---|---|---|---|
 | metabolism | kidney | <sub>“…Renal…”</sub> | prose |
 | metabolism | liver | `CYP2C9` inhibitor | DrugBank actor |
-
-<sub>Actors without a tissue in the table: AR (target).</sub>
+| target | prostate gland | `AR` target | DrugBank actor |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

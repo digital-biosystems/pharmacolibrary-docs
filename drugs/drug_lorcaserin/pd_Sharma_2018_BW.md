@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naltrexone/bupropion drives body weight (in kg): indirect response — drug inhibits the production of body weight.
+
+**Model:** No model was generated from this record.
+
+> The model describes the inhibitory effect of naltrexone and bupropion concentrations on body weight progression (BWprog,1) using a combined Emax function with individual ED50 values for each drug. The underlying indirect response model characterizes body weight dynamics with a zero-order production rate (kin) and a first-order elimination rate (kout), while disease progression is fixed at 0.7 kg per year for subjects without T2DM.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sharma_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

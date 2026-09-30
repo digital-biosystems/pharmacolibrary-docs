@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulfasalazine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking sulfasalazine concentrations to TOS; TOS (ng/ml by ELISA) was measured in rat thoracic aorta incubated in high glucose with a single sulfasalazine pre-treatment (300 mM, 30 min), and TOS levels did not change significantly with JNK or ERK inhibitors compared with sulfasalazine alone (sulfasalazine group TOS 4.83 ± 0.31 ng/ml). No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for a sulfasalazine–TOS relationship are given, and no mechanism for a concentration–TOS effect is quantified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sonmez_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Flupirtine (concentrations from the PK model of Giorgi_2016) drives inwardly rectifying potassium current (in pA): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Flupirtine (0.6 mM EC50) concentration-dependently activates an inwardly rectifying potassium current (Kir, measured in pA by patch-clamp) in rat cultured hippocampal neurones, with 1 mM producing a current of about 739 pA; the paper describes this as a direct concentration-dependent activation (sigmoid Emax relationship) mediated via a G-protein-coupled mechanism since it was largely prevented by pertussis toxin, but gives no Imax, Emax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jakob_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Jakob R; Krieglstein J et al. (1997). British journal of pharmacology 122
   ·  DOI: [10.1038/sj.bjp.0701519](https://doi.org/10.1038/sj.bjp.0701519)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 0.6 | mM | not captured | review_gapfill (not captured) | Jakob_1997:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 0.6 | mM | not captured | review_gapfill (not captured) | Jakob_1997:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

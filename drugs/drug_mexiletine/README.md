@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Vozeh_1982_reference](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | 1-compartment, oral | 4 | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Vozeh_1982_reference](drugs/drug_mexiletine/Mexiletine_Vozeh1982_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Vozeh S et al., Population pharmacokinetic parameters i…, European journal of clinica… (1982) | [10.1007/BF00605996](https://doi.org/10.1007/BF00605996) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Hong_1984](drugs/drug_mexiletine/pd_Hong_1984_unknown.md) | Hong CY et al., Local anaesthetic effect of antiarrhyth…, British journal of clinical… (1984) | [10.1111/j.1365-2125.1984.tb02404.x](https://doi.org/10.1111/j.1365-2125.1984.tb02404.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Hong_1984_unknown](drugs/drug_mexiletine/pd_Hong_1984_unknown.md) | sperm motility ← quinidine, procainamide, mexiletine, labetalol, diltiazem · inhibition effect | — | Hong CY et al., Local anaesthetic effect of antiarrhyth…, British journal of clinical… (1984) | [10.1111/j.1365-2125.1984.tb02404.x](https://doi.org/10.1111/j.1365-2125.1984.tb02404.x) |
 
 ## Pharmacogenomics (PGx)
 

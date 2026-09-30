@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nadroparin (concentrations from the PK model of Piwowarczyk_2023::estimate_unit) drives anti-Xa level (in IU/mL) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nadroparin dose drives anti-Xa levels (IU/mL) via a two-compartment population pharmacodynamic model with first-order elimination, treating anti-Xa as a direct PK-like measure of factor Xa inhibition; no separate effect-compartment or Emax/IC50 structure is described. Key estimates: apparent central clearance 7.4 mL/min (RSE 15.9%), central volume 3864.2 mL, intercompartmental clearance 7.1 mL/min (RSE 16.4%), peripheral volume 34554.7 mL, with LBM, dialysis mode, and dialyzer explaining between-subject variability.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jaspers_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,16 +31,16 @@ Jaspers TCC; Meijer CE; Vleming LJ; Franssen CFM; Diepstraten J; Lukens MV; et a
   ·  DOI: [10.1007/s40262-022-01162-x](https://doi.org/10.1007/s40262-022-01162-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Apparent clearance from central compartment (mL/min) — Parameter estimate | `Q27` · not captured | 7.4 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
-| Apparent clearance from central compartment (mL/min) — RSE (%) | `Q27` · not captured | 15.9 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row1:col3 |
-| Apparent volume of distribution for central compartment (mL) — Parameter estimate | `Q290` · not captured | 3864.2 | mL | not captured | llm_corrected (not captured) | Tab2:row2:col2 |
-| Apparent volume of distribution for central compartment (mL) — RSE (%) | `Q290` · not captured | 0.3 | mL | not captured | llm_corrected (not captured) | Tab2:row2:col3 |
-| Apparent intercompartmental clearance (mL/min) — Parameter estimate | `Q30` · not captured | 7.1 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row3:col2 |
-| Apparent intercompartmental clearance (mL/min) — RSE (%) | `Q30` · not captured | 16.4 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
-| Apparent volume of distribution for peripheral compartment (mL) — Parameter estimate | `Q82` · not captured | 34554.7 | mL | not captured | llm_corrected (not captured) | Tab2:row4:col2 |
-| Apparent volume of distribution for peripheral compartment (mL) — RSE (%) | `Q82` · not captured | 18.1 | mL | not captured | llm_corrected (not captured) | Tab2:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Apparent clearance from central compartment (mL/min) — Parameter estimate | `Q27` · not captured | 7.4 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
+| PK (driver) | Apparent clearance from central compartment (mL/min) — RSE (%) | `Q27` · not captured | 15.9 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row1:col3 |
+| PK (driver) | Apparent volume of distribution for central compartment (mL) — Parameter estimate | `Q290` · not captured | 3864.2 | mL | not captured | llm_corrected (not captured) | Tab2:row2:col2 |
+| PK (driver) | Apparent volume of distribution for central compartment (mL) — RSE (%) | `Q290` · not captured | 0.3 | mL | not captured | llm_corrected (not captured) | Tab2:row2:col3 |
+| PK (driver) | Apparent intercompartmental clearance (mL/min) — Parameter estimate | `Q30` · not captured | 7.1 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row3:col2 |
+| PK (driver) | Apparent intercompartmental clearance (mL/min) — RSE (%) | `Q30` · not captured | 16.4 | mL/min | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
+| PK (driver) | Apparent volume of distribution for peripheral compartment (mL) — Parameter estimate | `Q82` · not captured | 34554.7 | mL | not captured | llm_corrected (not captured) | Tab2:row4:col2 |
+| PK (driver) | Apparent volume of distribution for peripheral compartment (mL) — RSE (%) | `Q82` · not captured | 18.1 | mL | not captured | llm_corrected (not captured) | Tab2:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

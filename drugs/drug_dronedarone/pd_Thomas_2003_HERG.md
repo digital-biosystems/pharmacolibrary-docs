@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dronedarone (measured concentrations) drives HERG tail current (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dronedarone directly inhibits HERG tail currents (measured in cRNA-injected oocytes after a test pulse to 30 mV), blocking channels in the closed, open, and inactivated states; the concentration-response relation yielded an IC50 of 9.2 mM with a Hill coefficient of 0.91 (n=4-5), with maximum block reached after 30 min of perfusion and partial reversibility within 30 min of washout. No Emax, kin/kout, or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thomas_2003`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

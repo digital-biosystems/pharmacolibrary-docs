@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Kalanchoe blossfeldiana ethanol extract (measured concentrations) drives elastase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Kalanchoe blossfeldiana ethanol extract (µg/mL) dose-dependently inhibited hyaluronidase activity in vitro, with complete inhibition at 400 µg/mL; the paper reports an IC50 (only stated as ~1.5-fold higher than the standard oleanolic acid, no numeric value given) and does not describe a mechanistic PD model (no Imax/Emax, kin/kout, or ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stefanowicz-Hajduk_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CBG (measured concentrations) drives DRG neuron excitability (AP count) (in count): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> CBG concentrations (µM) inhibit DRG neuron excitability (action potential count) via inhibition of Nav1.8, acting by blocking the apparent Gmax (preventing channel opening) rather than stabilizing inactivation; the paper reports an IC50 at V1/2 of ~5 µM for CBG on Nav1.8 (vs ~2 µM for CBD and ~16 µM for CBN), with CBG showing the most pronounced inhibitory effect on Nav1.8 biophysical parameters at the tested concentrations. No Emax, kin, kout, ke0, or Hill slope values are given for the AP-count response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ghovanloo_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

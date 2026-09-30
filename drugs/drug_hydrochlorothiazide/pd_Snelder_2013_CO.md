@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amlodipine, fasudil, enalapril, propranolol, hydrochlorothiazide, prazosin drive cardiac output (in unknown): indirect response — drug inhibits the production of cardiac output.
+
+**Model:** No model was generated from this record.
+
+> In this mechanism-based turnover (indirect response) model, hydrochlorothiazide (one of six test compounds) acts on cardiac output (CO) via an inhibitory effect on CO, described by linked turnover equations dCO/dt = Kin_CO·FB1(MAP) − kout_CO·CO, where Kin_CO is the zero-order production rate constant and kout_CO the first-order dissipation rate constant of CO. The paper does not state specific potency values (Imax, IC50) or numeric kin/kout estimates for hydrochlorothiazide in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Octenidine dihydrochloride drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Octenidine dihydrochloride (0.00625–0.4%, 12–24 h exposure) inhibits WST-1-measured cell viability (%) in IOBA-NHC and ARPE-19 cells in a dose- and time-dependent manner, with IC50 values of 0.076 ± 1.30% (IOBA-NHC) and 0.039 ± 5.07% (ARPE-19) from a four-parameter logistic dose–response fit; the paper does not state a mechanistic PD model (no Imax, kin, kout, or ke0 reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ciftci_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

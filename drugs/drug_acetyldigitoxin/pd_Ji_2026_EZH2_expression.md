@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetyldigitoxin (measured concentrations) drives name (in relative mRNA/protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Acetyldigitoxin (ADT) concentration (nM) reduces EZH2 expression (relative mRNA/protein) in A549 NSCLC cells, with EZH2 mRNA down to 0.52-fold after treatment; the paper does not state a PD model form or potency parameters (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma) for this expression response. Mechanistically, ADT is proposed to directly or indirectly inhibit EZH2, also lowering global H3K27me3, though direct biochemical proof of enzyme inhibition is lacking; cytotoxicity IC50 values are 32.4 nM (A549) and 190 nM (normal bronchial epithelial cells).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

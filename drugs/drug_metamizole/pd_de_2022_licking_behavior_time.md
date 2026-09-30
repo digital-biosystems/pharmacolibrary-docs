@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LASSBio-2265 (measured concentrations) drives name (in seconds): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe a PD model linking metamizole concentrations to licking behavior time; no mechanism, potency, or rate values for that relationship are given. The excerpts instead report LASSBio-2265 (compound 11) acting on cAMP in CHO-K1 CNR2 Gi cells as a partial inverse agonist of human CB2 receptors, with EC50 0.369 ± 0.03 µM and efficacy of 63% of the maximum effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

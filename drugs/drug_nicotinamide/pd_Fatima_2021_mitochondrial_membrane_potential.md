@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the mitochondrial membrane potential response; it only reports that neomenthol (10–100 µM) caused a concentration-dependent decrease in mitochondrial membrane potential, with a maximum decrease of 13.05 ± 2.6% versus control at the highest concentration (100 µM; FITC mean 2913 ± 1.41 vs untreated control 3194.5 ± 2.12), and no potency (IC50/EC50/Emax) or rate parameters are given for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

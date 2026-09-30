@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ustekinumab drives fecal calprotectin (in mg/kg): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Ustekinumab serum concentrations (nanomolar) act on fecal calprotectin (FC, mg/kg) indirectly via a target-mediated drug disposition PK model linked to an indirect response model: ustekinumab binds a latent target, and the decrease in unbound target inhibits FC production, with FC eliminated at Kout = 0.0581 day−1. Potency/efficacy were C50 = 2.46 nmol/L and Emax = 219 mg/kg, with baseline FC of 102 mg/kg in patients without ulcers and 213 mg/kg in patients with ulcers at baseline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aguiar_2021`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`
@@ -20,15 +30,15 @@ Aguiar Zdovc J; Hanžel J; Kurent T; Sever N; Koželj M; Smrekar N; et al. et al
   ·  DOI: [10.3390/pharmaceutics13101587](https://doi.org/10.3390/pharmaceutics13101587)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kout (day−1) — Estimate | `Q328` · not captured | 0.0581 | day−1 | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row1:col1 |
-| Patients without ulcers at baseline — Estimate | `Q100` · not captured | 102 | mg/kg | not captured | llm_corrected (not captured) | pharmaceutics-13-01587-t003:row3:col1 |
-| Patients with ulcers at baseline — Estimate | `Q100` · not captured | 213 | mg/kg | not captured | llm_corrected (not captured) | pharmaceutics-13-01587-t003:row4:col1 |
-| Emax (%) — Estimate | `Q320` · not captured | 219 | mg/kg | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row5:col1 |
-| C50 (nmol/L) — Estimate | `Q321` · not captured | 2.46 | nmol/L | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row6:col1 |
-| IIV FC0 (%) b — Estimate | `Q312` · not captured | 99.0 | mg/kg | not captured | llm_confirmed (not captured) | pharmaceutics-13-01587-t003:row8:col1 |
-| Proportional RUV (%) b — Estimate | `Q316` · not captured | 57.3 | mg/kg | not captured | llm_confirmed (not captured) | pharmaceutics-13-01587-t003:row10:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kout (day−1) — Estimate | `Q328` · not captured | 0.0581 | day−1 | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row1:col1 |
+| — | Patients without ulcers at baseline — Estimate | `Q100` · not captured | 102 | mg/kg | not captured | llm_corrected (not captured) | pharmaceutics-13-01587-t003:row3:col1 |
+| — | Patients with ulcers at baseline — Estimate | `Q100` · not captured | 213 | mg/kg | not captured | llm_corrected (not captured) | pharmaceutics-13-01587-t003:row4:col1 |
+| PD (effect) | Emax (%) — Estimate | `Q320` · not captured | 219 | mg/kg | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row5:col1 |
+| PD (effect) | C50 (nmol/L) — Estimate | `Q321` · not captured | 2.46 | nmol/L | not captured | exact (not captured) | pharmaceutics-13-01587-t003:row6:col1 |
+| variability | IIV FC0 (%) b — Estimate | `Q312` · not captured | 99.0 | mg/kg | not captured | llm_confirmed (not captured) | pharmaceutics-13-01587-t003:row8:col1 |
+| variability | Proportional RUV (%) b — Estimate | `Q316` · not captured | 57.3 | mg/kg | not captured | llm_confirmed (not captured) | pharmaceutics-13-01587-t003:row10:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

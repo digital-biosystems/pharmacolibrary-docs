@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 43 (measured concentrations) drives aCDase enzymatic activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Compound 43 concentrations (nM) inhibit aCDase enzymatic activity by covalent inhibition, as indicated by a decrease in Vmax in Michaelis–Menten analysis; the paper reports a kinact/Ki of 1.68 × 10^4 M−1 s−1 and notes the initial binding is weak with Ki presumably &gt;200 nM, but does not state an IC50, Emax, or a PD model structure for compound 43.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Beresis_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

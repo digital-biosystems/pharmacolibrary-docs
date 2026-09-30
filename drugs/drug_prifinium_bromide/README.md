@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:34 | 0:58 | 0/0/0 | 0/0/0 | 0/0/0 | 8,613/768 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-29 22:10 | 0:55 | 0/0/0 | 0/0/0 | 0/0/0 | 1,336/132 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -52,7 +52,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Noguchi_1983.pdf` | Noguchi H et al., Pharmacokinetics of prifinium bromide i…, International journal of cl… (1983) | popPK | 10 | not captured | [6134685](https://pubmed.ncbi.nlm.nih.gov/6134685) | The paper reports quantitative PK parameters (CL, Vss, t1/2) for prifinium bromide in humans with all numeric values explicitly present in the text. |
 
-<sub>queue written 2026-09-18T09:33:55.952184+00:00</sub>
+<sub>queue written 2026-09-29T22:10:20.244445+00:00</sub>
 
 ## Screened and excluded
 

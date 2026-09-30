@@ -24,10 +24,10 @@ Enoxaparin is also indicated in the prophylaxis of DVT in abdominal surgery, hip
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | 1-compartment, oral | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_iiv_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | 1-compartment, oral | 2 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: F, Cl, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_value_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_value_r_s_e.md) | held back | 1-compartment, oral | 1 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: biomarker_kinetics_as_drug_pk</sub><br><sub>route_to: `scholar`</sub> | [Zufferey_2021_iiv_r_s_e](drugs/drug_enoxaparin/Enoxaparin_Zufferey2021_iiv_r_s_e.md) | held back | 1-compartment, oral | 2 | Zufferey PJ et al., Pharmacokinetics of enoxaparin in COVID…, Thrombosis research (2021) | [10.1016/j.thromres.2021.07.010](https://doi.org/10.1016/j.thromres.2021.07.010) |
 
 ## ADME sites
 

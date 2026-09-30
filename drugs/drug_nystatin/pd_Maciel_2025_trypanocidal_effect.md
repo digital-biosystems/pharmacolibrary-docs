@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nystatin (measured concentrations) drives parasite growth (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (μM) inhibit T. cruzi epimastigote growth measured after 24 h, fitted by a sigmoid Emax (logistic dose-response) model with IC50 0.17 μM (95% CI 0.11–0.25); the paper does not state Imax, Emax, gamma, or turnover parameters, and the mechanism is described as sterol binding and pore formation with membrane disruption and non-specific inhibition of membrane uptake processes, rather than arginine uptake inhibition alone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maciel_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

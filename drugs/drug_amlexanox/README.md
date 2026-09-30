@@ -26,12 +26,12 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_COX_2.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_IL_6.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_TNF_alpha.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021](drugs/drug_amlexanox/pd_Ishikawa_2021_T_cell_activation.md) | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021_COX_2](drugs/drug_amlexanox/pd_Ishikawa_2021_COX_2.md) | Cyclooxygenase-2 ← ibudilast · inhibition effect | — | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021_IL_6](drugs/drug_amlexanox/pd_Ishikawa_2021_IL_6.md) | Interleukin-6 ← ibudilast · inhibition effect | — | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021_TNF_alpha](drugs/drug_amlexanox/pd_Ishikawa_2021_TNF_alpha.md) | Tumor necrosis factor-alpha ← ibudilast · inhibition effect | — | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Ishikawa_2021_T_cell_activation](drugs/drug_amlexanox/pd_Ishikawa_2021_T_cell_activation.md) | T-cell activation ← ibudilast · inhibition effect | — | Ishikawa S et al., T-Cell Activation-Inhibitory Assay to S…, Biological & pharmaceutical… (2021) | [10.1248/bpb.b20-00889](https://doi.org/10.1248/bpb.b20-00889) |
 
 ## ADME sites
 

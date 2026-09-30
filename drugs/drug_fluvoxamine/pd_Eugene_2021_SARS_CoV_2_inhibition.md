@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluoxetine (measured concentrations) drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking fluvoxamine or fluoxetine concentrations to a measured response over time; it only compares simulated fluoxetine plasma trough concentrations (at 20–60 mg/day) with in vitro SARS-CoV-2 inhibition thresholds in Calu-3 cells, EC50 = 283.6 ng/ml (0.82 μM) and EC90 = 1390.1 ng/ml (4.02 μM), without stating a mechanism (e.g., Emax/IC50 turnover model) or parameters such as Imax, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eugene_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

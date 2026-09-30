@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives All-cause mortality (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a concentration-driven PD mechanism for rosuvastatin on all-cause mortality; it uses an Emax-type dose-response model with ED50 (median dose achieving 50% LDL-C reduction) and Emax (maximum LDL-C reduction) estimated per individual, then relates these to time-to-event outcomes including all-cause mortality. No numeric ED50, Emax, or rate values for rosuvastatin are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

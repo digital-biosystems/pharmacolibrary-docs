@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verbascum thapsus extract (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record's PD entry is not supported by the excerpts: the paper does not report an Emax model for a death-time response to carbohydrates; instead it reports that crude aqueous methanolic Verbascum thapsus extract (Vt.Cr) concentration-dependently shortened time to paralysis/death in Ascaridia galli and Raillietina spiralis (fastest at 40 mg/ml; relative paralysis indices 4.58, 3.41 and 2.08 at 10, 20 and 40 mg/ml in A. galli), with no Imax, IC50/EC50, kin, kout or ke0 stated for that effect. The only mechanistic quantification is for rabbit jejunum relaxation, where 3 mg/ml Vt.Cr right-shifted calcium chloride curves (EC50 -1.9 ± 0.06 vs control -2.5 ± 0.12 log molar [Ca2+], n = 6), sugges
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ali_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride analogs (24, 26, 29, 30) (measured concentrations) drive uPA inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amiloride analogs (e.g., 24, 26, 29, 30) directly inhibit urokinase-type plasminogen activator (uPA) activity in a fluorescence-based biochemical assay, with IC50 values of 175 nM (24), 86 nM (26), 10,949 nM (29), and 5715 nM (30); the paper reports IC50 potencies but does not describe a kinetic PD model (no Imax, kin, kout, or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Buckley_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

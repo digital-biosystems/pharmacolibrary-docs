@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Noroxacin drives noroxacin CSF concentration at onset of maximal seizures (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> An inhibitory Emax model with a baseline parameter was fitted to CSF norfloxacin concentration at onset of maximal seizures versus CSF BPAA concentration: BPAA reduces the norfloxacin concentration needed for seizures, with baseline C_CSF0,Nor = 47.3 ± 2.3 µM, an asymptotic value C_CSF,base,Nor at infinite BPAA, and a CSF50,BPAA defined as the BPAA concentration halving the difference between baseline and asymptote; no Imax, gamma, kin/kout or ke0 values are given, and the paper does not state a mechanistic production/elimination link beyond this direct inhibitory Emax relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marchand_2000`
 - **model family:** `emax`
 - **driver:** `not_resolved`

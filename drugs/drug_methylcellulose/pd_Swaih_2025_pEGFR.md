@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 (measured concentrations) drives pEGFR (in nmol/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AZ14289671 concentrations inhibit EGFR phosphorylation (pEGFR) in EGFR exon 20 insertion mutant cell lines with mean HTRF IC50 values of 17–41 nmol/L, versus 480–832 nmol/L in EGFRWT lines, acting as an irreversible EGFR inhibitor. In H2073WT xenografts the in vivo pEGFR PD was described by a simple irreversible binding turnover model with saturable inactivation (parameters Kbind and IC50) and EGFR protein turnover Krec fixed at 0.0231 h−1 (t1/2 30 h); the paper does not report the fitted Kbind or IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

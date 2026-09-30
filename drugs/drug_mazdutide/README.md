@@ -23,9 +23,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2025](drugs/drug_mazdutide/pd_Guo_2025_weight_reduction.md) | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2025_weight_reduction](drugs/drug_mazdutide/pd_Guo_2025_weight_reduction.md) | name ← unknown · direct Emax (saturable) effect | — | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

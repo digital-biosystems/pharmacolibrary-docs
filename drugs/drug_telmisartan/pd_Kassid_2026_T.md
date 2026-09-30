@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives testosterone (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In CPA-injured rats, telmisartan (3, 5, 7 mg/kg/day for 8 days) dose-dependently restored serum testosterone that had been suppressed by cyclophosphamide, with high dose giving near-complete restoration; the paper attributes this to AT1 receptor blockade plus PPAR-γ partial agonism (antioxidant/anti-apoptotic effects) but provides no PD model parameters (no Emax, IC50, kin, kout, or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

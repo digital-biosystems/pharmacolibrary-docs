@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies](drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md) | — (no model) | 0 | Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022) | [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Nadaf_2022_cats with indolent lymphoproliferative malignancies](drugs/drug_chlorambucil/Chlorambucil_AlNadaf2022_cats_with_indolent_lymphoproliferat.md) | — | — (no model) | 0 | Al-Nadaf S et al., Population pharmacokinetics identifies…, American journal of veterin… (2022) | [10.2460/ajvr.22.06.0099](https://doi.org/10.2460/ajvr.22.06.0099) |
 
 ## ADME sites
 

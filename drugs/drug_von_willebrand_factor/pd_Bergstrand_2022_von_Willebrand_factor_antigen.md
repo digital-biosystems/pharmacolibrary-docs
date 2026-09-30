@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Caplacizumab drives name (in vWF:Ag): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Caplacizumab concentrations act on von Willebrand factor antigen (vWF:Ag) via a semimechanistic target-mediated drug disposition (TMDD) model, in which caplacizumab binds its vWF target (inhibition of vWF:Ag). The excerpts do not state the potency (e.g., affinity/IC50) or rate parameter values, only that target affinity and baseline vWF:Ag were assumed similar between adults and children.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bergstrand_2022`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

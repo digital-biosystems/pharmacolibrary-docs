@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VK2809A drives CPT1A (in RQ): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a resmetirom (VK2809A) PD model on CPT1A; instead, CPT1A mRNA (RQ) in Huh-7 cells is stimulated dose-dependently by direct THR agonism, with EC50 values of 0.7 nM for T3, 1.9 nM for GC-1, and 308.0 nM for MGL-3196; no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

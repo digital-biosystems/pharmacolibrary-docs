@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Xie_2024](drugs/drug_stannous_fluoride/pd_Xie_2024_unknown.md) | Xie S et al., Stannous fluoride protects gingival ker…, Frontiers in dental medicine (2024) | [10.3389/fdmed.2024.1492369](https://doi.org/10.3389/fdmed.2024.1492369) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Xie_2024_unknown](drugs/drug_stannous_fluoride/pd_Xie_2024_unknown.md) | Oxidative stress (ROS) ← stannous fluoride · inhibition effect | — | Xie S et al., Stannous fluoride protects gingival ker…, Frontiers in dental medicine (2024) | [10.3389/fdmed.2024.1492369](https://doi.org/10.3389/fdmed.2024.1492369) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

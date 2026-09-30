@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Iloprost drives relaxation (in % of papaverine response): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Misoprostol (an EP-receptor agonist) produced concentration-dependent relaxation of histamine (50 µM)-contracted human bronchial preparations, expressed as % of the papaverine response, with a pD2 of 6.33±0.28 and Emax of 57±8% (n=4); the relaxations were inhibited by the DP/EP1/EP2 antagonist AH6809 (3 µM), consistent with a direct receptor-mediated effect, and no kinetic (kin/kout/ke0) parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Norel_1999`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Norel X; Walch L; Labat C; Gascard JP; Dulmet E; Brink C et al. (1999). British 
   ·  DOI: [10.1038/sj.bjp.0702392](https://doi.org/10.1038/sj.bjp.0702392)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cicaprost | `Q320` · not captured | 65 | E max (%) | not captured | review_gapfill (not captured) | Norel_1999:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Cicaprost | `Q320` · not captured | 65 | E max (%) | not captured | review_gapfill (not captured) | Norel_1999:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

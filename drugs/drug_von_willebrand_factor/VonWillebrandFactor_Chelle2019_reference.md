@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Rejected because the von Willebrand factor two-compartment parameters fall outside physiological plausibility — clearance 0.195 L/h, central volume 2.3 L, peripheral volume 0.449 L and intercompartmental clearance 0.078 L/h suggest a unit or scale extraction error.**

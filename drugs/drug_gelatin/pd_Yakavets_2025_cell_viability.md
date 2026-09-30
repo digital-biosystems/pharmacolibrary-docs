@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin, 5-Fluorouracil, Camptothecin, OLA, I-BET762 (measured concentrations) drive name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for gelatin; cell viability (%) in breast cancer spheroids/PDOs was measured by LIVE/DEAD assay as a function of concentrations (µM) of Doxorubicin, 5-Fluorouracil, Camptothecin, OLA, and I-BET762, with an inhibitory (viability-reducing) effect, but no mechanism, Emax/IC50/EC50, or rate parameters are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yakavets_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

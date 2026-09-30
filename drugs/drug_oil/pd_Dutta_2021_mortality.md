@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mustard essential oil drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Mustard essential oil (MEO, µg ml−1) was applied to Meloidogyne incognita in vitro, with percent mortality as the response; the paper reports only exposure-time-dependent LC50 values of 47.7, 30.3, and 20.4 µg ml−1 at 24, 48, and 72 h, and does not state a pharmacodynamic model or mechanism (nematostatic at low concentrations, nematicidal at higher concentrations upon prolonged exposure).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dutta_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

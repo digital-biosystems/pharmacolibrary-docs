@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;potassium canrenoate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/&quot;},{&quot;label&quot;:&quot;Suyagh_2012 \u00b7 two_experimentally_determined_s_one_for_each_exponent_estimate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_two_experimentally_determined&quot;,&quot;label&quot;:&quot;Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_median&quot;,&quot;label&quot;:&quot;Suyagh_2012_median&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_median.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2012_two_experimentally_determined&quot;,&quot;label&quot;:&quot;Suyagh_2012_two_experimentally_determined_s_one_for_each_exponent_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2012_two_experimentally_determined.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;PotassiumCanrenoate_Suyagh2013_reference&quot;,&quot;label&quot;:&quot;Suyagh_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_potassium_canrenoate/PotassiumCanrenoate_Suyagh2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The model does not reproduce the paper's terminal half-life (model/paper ratio 2.53).**
+
+Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. None of the extracted parameters is potassium canrenoate's own; they describe canrenone. Extracted — canrenone: CL/F 12.7 L/h, V/F 520 L, kfm 4.48 1/h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium canrenoate, the second reading unknown; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 > **Dose compound ≠ measured compound:** dosed `potassium canrenoate`, measured `canrenone`.
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Genistein (measured concentrations) drives c-Fos expression (in count) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for genistein on c-Fos expression; it only shows that genistein (and Glycine max) significantly decreased c-Fos immunoreactivity in the PVN of EFS-stressed rats versus control (p &lt; 0.01), with no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values given for this response. The only potency value stated is genistein's 5-HT2C receptor binding IC50 of 77.28 ± 26.57 mg/mL, proposed as the mechanism underlying its sedative effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ye_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

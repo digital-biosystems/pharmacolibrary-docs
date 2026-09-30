@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen, ibuprofen, tramadol (measured concentrations) drive Pain Score: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen (with acetaminophen and tramadol) plasma concentrations inhibit pain score (PPPM) via a fractional Emax model with an effect compartment (ke0, expressed as equilibration half-time), plus an additive Emax disease-progression (pain resolution) component; ibuprofen C50 is 3.95 mg/L (95% CI 2.57–7.53), and combination acetaminophen+ibuprofen gives a maximum 65% pain score reduction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hannam_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

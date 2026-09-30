@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** IACS-010759 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> IACS-010759 (an OxPhos inhibitor) was tested at 0–123 nM for 96 h against cell viability (CellTiter-Glo ATP-based) in T-ALL cell lines, PDX models and primary samples, showing dose-dependent inhibition of viability paralleling inhibition of ATP production and OCR, with lower IC50 in NOTCH1-mutant lines than in healthy T-lymphocytes; the paper reports IC50 values from nonlinear regression dose-response fitting but does not state specific IC50, Emax, or rate parameter values, nor a mechanistic PD model beyond direct dose-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baran_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

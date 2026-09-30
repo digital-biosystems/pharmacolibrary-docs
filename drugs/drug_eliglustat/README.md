@@ -27,9 +27,9 @@ In the EU, Eliglustat is approved for the same indication in the pediatric popul
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Wolthuis_2025_reference](drugs/drug_eliglustat/Eliglustat_Wolthuis2025_reference.md) | — | 1-compartment (no model) | 0 | Wolthuis DFGJ et al., Model-informed repurposing of eliglusta…, Pediatric nephrology (Berli… (2025) | [10.1007/s00467-025-06688-3](https://doi.org/10.1007/s00467-025-06688-3) |
 
 ## ADME sites
 
@@ -42,6 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

@@ -33,9 +33,9 @@ Before administering lovastatin, it is important to rule out the presence of sec
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | 2-compartment general linear | 4 | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: CLelim[central], Q1 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huff_1992_reference](drugs/drug_lovastatin/Lovastatin_Huff1992_reference.md) | held back | 2-compartment general linear | 4 | Huff MW et al., Dietary fish oil plus lovastatin decrea…, Arteriosclerosis and thromb… (1992) | [10.1161/01.atv.12.8.902](https://doi.org/10.1161/01.atv.12.8.902) |
 
 ## ADME sites
 
@@ -50,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | skeletal muscle | <sub>“…dverse effects from increased exposure to the drug, such as muscle pain and risk of rhabdo…”</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor, `SLCO2B1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C19` substrate, `CYP2C8` substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor/substrate, `SLCO1B3` unknown, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B7` substrate | DrugBank actor |

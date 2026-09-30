@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Epigallocatechin gallate (EGCG) (measured concentrations) drives name (in fluorescence) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In buffer, polysulfide production measured as SSP4 fluorescence (90 min incubation) increases concentration-dependently with H2S (0–300 μM range shown) in the presence of a fixed 30 μM EGCG, whereas varying EGCG (fixed 30 μM H2S) has no concentration-dependent effect, indicating EGCG catalytically oxidizes H2S to polysulfides (requiring O2-dependent EGCG autooxidation and partly superoxide, since Tempol and SOD halved formation). The paper reports no Emax, EC50/IC50, kin/kout or other model parameters for this reaction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Olson_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

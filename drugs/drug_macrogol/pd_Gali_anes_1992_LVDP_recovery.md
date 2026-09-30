@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-SOD drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG-SOD (macrogol-linked superoxide dismutase) dosing (units/kg, e.g. 30,000 units/kg pretreatment plus additive to perfusate/cardioplegic solution) stimulates postischemic LVDP recovery (%), increasing recovery from 44±4% (control) to 70±3%; the dose-response is bell-shaped, with efficacy lost at high doses (60,000 units/kg). The paper does not state a pharmacodynamic mechanism or potency/rate parameters (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Galiñanes_1992`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

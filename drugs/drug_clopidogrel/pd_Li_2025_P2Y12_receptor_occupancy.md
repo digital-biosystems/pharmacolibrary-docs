@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Active metabolite drives name (in %): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Clopidogrel's active metabolite acts on platelet P2Y12 receptor occupancy (%) by irreversibly binding the P2Y12 receptor via a disulfide bond with a cysteine residue, with occupancy measured in rats after a 10 mg/kg single dose; the paper does not state a quantitative PD model mechanism or potency/rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives neurodegeneration (in intensity per 100 μm2): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (μM concentrations) acts on neurodegeneration measured as DARPP32 intensity (intensity per 100 μm2) with a stimulatory Emax-type model; the paper states the mechanism is stabilization of the CAST–calpain-2 protein-protein interaction preventing CAST degradation and suppressing calpain-2–mediated mitochondrial fragmentation, but no potency (EC50/Emax) or rate values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

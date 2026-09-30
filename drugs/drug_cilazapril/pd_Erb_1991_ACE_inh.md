@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Deget_1991) drives ACE inhibition (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazapril (single oral doses, e.g. 4 mg) inhibits ACE, measured as the rightward shift of the angiotensin I dose–response curve (diastolic blood pressure response to continuous angiotensin I infusion), via competitive antagonism at the enzyme level; after 4 mg the shift (DR-1) was about 8 initially and the pharmacological effect declined with a half-life of about 4 hours. The paper does not give numeric Emax/IC50, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erb_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

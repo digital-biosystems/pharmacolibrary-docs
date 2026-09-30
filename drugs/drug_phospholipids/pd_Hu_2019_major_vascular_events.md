@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Marine omega-3 drives name (in rate ratio): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> This is a meta-analysis, not a pharmacodynamic model: marine omega-3 dose (mg/d, EPA+DHA) was related to major vascular events via a linear meta-regression of rate ratios, with each 1000 mg/d lowering risk by 17% (95% CI: 3–28%); no mechanism, Emax/IC50/kin/kout parameters, or effect-compartment structure is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2019`
 - **model family:** `linear`
 - **driver:** `not_resolved`

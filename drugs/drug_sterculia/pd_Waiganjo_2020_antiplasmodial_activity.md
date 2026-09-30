@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for sterculia; it only reports in vitro antiplasmodial IC50 categories (high ≤10, moderate 11–50, low 50–100, inactive ≥100 μg/ml) for various plant extracts against P. falciparum D6 and W2 strains, with no mechanism, Emax/IC50 parameters, or rate constants given for sterculia.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Waiganjo_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

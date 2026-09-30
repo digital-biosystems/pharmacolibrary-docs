@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG2kC34 (measured concentrations) drives name (in EC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG2kC34 and PEG5kC34 (PEGylated C34 fusion inhibitors) inhibit infection of 47 HIV-1 clinical isolates with mean EC50 of about 26 nM and 32 nM, respectively, acting as HIV fusion inhibitors that bind gp41 HR1 (N36) to form high-affinity α-helical complexes; no PD model (e.g., Emax, kin/kout) is described in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,24 +31,24 @@ Wang C; Cheng S; Zhang Y; Ding Y; Chong H; Xing H; et al. et al. (2019). Viruses
   ·  DOI: [10.3390/v11090811](https://doi.org/10.3390/v11090811)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tmax (h) — PEG2kC34 | `Q56` · not captured | 2.94 | h | not captured | exact (not captured) | viruses-11-00811-t002:row2:col1 |
-| Tmax (h) — PEG5kC34 | `Q56` · not captured | 3.88 | h | not captured | exact (not captured) | viruses-11-00811-t002:row2:col2 |
-| Cmax (μg/mL) — PEG2kC34 | `Q32` · not captured | 10.37 | μg/mL | not captured | exact (not captured) | viruses-11-00811-t002:row3:col1 |
-| Cmax (μg/mL) — PEG5kC34 | `Q32` · not captured | 4.32 | μg/mL | not captured | exact (not captured) | viruses-11-00811-t002:row3:col2 |
-| t1/2 (h) — PEG2kC34 | `Q57` · not captured | 2.57 | h | not captured | exact (not captured) | viruses-11-00811-t002:row4:col1 |
-| t1/2 (h) — PEG5kC34 | `Q57` · not captured | 5.11 | h | not captured | exact (not captured) | viruses-11-00811-t002:row4:col2 |
-| AUC0-24h (μg/mL * h) — PEG2kC34 | `Q19` · not captured | 39.75 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row5:col1 |
-| AUC0-24h (μg/mL * h) — PEG5kC34 | `Q19` · not captured | 17.68 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row5:col2 |
-| AUCINF_obs (μg/mL * h) — PEG2kC34 | `Q17` · not captured | 40.38 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row6:col1 |
-| AUCINF_obs (μg/mL * h) — PEG5kC34 | `Q17` · not captured | 15.56 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row6:col2 |
-| Vz_F_obs (ml/kg) — PEG2kC34 | `Q61` · not captured | 773.42 | ml/kg | not captured | llm (not captured) | viruses-11-00811-t002:row7:col1 |
-| Vz_F_obs (ml/kg) — PEG5kC34 | `Q61` · not captured | 2688.46 | ml/kg | not captured | llm (not captured) | viruses-11-00811-t002:row7:col2 |
-| Cl_F_obs (ml/h/kg) — PEG2kC34 | `Q358` · not captured | 353.43 | ml/h/kg | not captured | llm (not captured) | viruses-11-00811-t002:row8:col1 |
-| Cl_F_obs (ml/h/kg) — PEG5kC34 | `Q358` · not captured | 1033.79 | ml/h/kg | not captured | llm (not captured) | viruses-11-00811-t002:row8:col2 |
-| MRTlast (h) — PEG2kC34 | `Q53` · not captured | 3.08 | h | not captured | exact (not captured) | viruses-11-00811-t002:row9:col1 |
-| MRTlast (h) — PEG5kC34 | `Q53` · not captured | 3.75 | h | not captured | exact (not captured) | viruses-11-00811-t002:row9:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Tmax (h) — PEG2kC34 | `Q56` · not captured | 2.94 | h | not captured | exact (not captured) | viruses-11-00811-t002:row2:col1 |
+| PK (driver) | Tmax (h) — PEG5kC34 | `Q56` · not captured | 3.88 | h | not captured | exact (not captured) | viruses-11-00811-t002:row2:col2 |
+| PK (driver) | Cmax (μg/mL) — PEG2kC34 | `Q32` · not captured | 10.37 | μg/mL | not captured | exact (not captured) | viruses-11-00811-t002:row3:col1 |
+| PK (driver) | Cmax (μg/mL) — PEG5kC34 | `Q32` · not captured | 4.32 | μg/mL | not captured | exact (not captured) | viruses-11-00811-t002:row3:col2 |
+| PK (driver) | t1/2 (h) — PEG2kC34 | `Q57` · not captured | 2.57 | h | not captured | exact (not captured) | viruses-11-00811-t002:row4:col1 |
+| PK (driver) | t1/2 (h) — PEG5kC34 | `Q57` · not captured | 5.11 | h | not captured | exact (not captured) | viruses-11-00811-t002:row4:col2 |
+| PK (driver) | AUC0-24h (μg/mL * h) — PEG2kC34 | `Q19` · not captured | 39.75 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row5:col1 |
+| PK (driver) | AUC0-24h (μg/mL * h) — PEG5kC34 | `Q19` · not captured | 17.68 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row5:col2 |
+| PK (driver) | AUCINF_obs (μg/mL * h) — PEG2kC34 | `Q17` · not captured | 40.38 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row6:col1 |
+| PK (driver) | AUCINF_obs (μg/mL * h) — PEG5kC34 | `Q17` · not captured | 15.56 | μg/mL * h | not captured | llm (not captured) | viruses-11-00811-t002:row6:col2 |
+| PK (driver) | Vz_F_obs (ml/kg) — PEG2kC34 | `Q61` · not captured | 773.42 | ml/kg | not captured | llm (not captured) | viruses-11-00811-t002:row7:col1 |
+| PK (driver) | Vz_F_obs (ml/kg) — PEG5kC34 | `Q61` · not captured | 2688.46 | ml/kg | not captured | llm (not captured) | viruses-11-00811-t002:row7:col2 |
+| PK (driver) | Cl_F_obs (ml/h/kg) — PEG2kC34 | `Q358` · not captured | 353.43 | ml/h/kg | not captured | llm (not captured) | viruses-11-00811-t002:row8:col1 |
+| PK (driver) | Cl_F_obs (ml/h/kg) — PEG5kC34 | `Q358` · not captured | 1033.79 | ml/h/kg | not captured | llm (not captured) | viruses-11-00811-t002:row8:col2 |
+| PK (driver) | MRTlast (h) — PEG2kC34 | `Q53` · not captured | 3.08 | h | not captured | exact (not captured) | viruses-11-00811-t002:row9:col1 |
+| PK (driver) | MRTlast (h) — PEG5kC34 | `Q53` · not captured | 3.75 | h | not captured | exact (not captured) | viruses-11-00811-t002:row9:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

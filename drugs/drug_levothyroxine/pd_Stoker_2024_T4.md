@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxyfluorfen (measured concentrations) drives T4 (in ng/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In juvenile rats, oral oxyfluorfen (1.625–125 mg/kg/day over 4 or 8 days) suppressed serum T4 (measured in ng/ml by RIA) in a dose-dependent manner (30–80% suppression; NOEL 1.625 mg/kg, LOEL 3.25 mg/kg), with T3 suppressed only at 62.5 mg/kg and no TSH change; the paper attributes the effect to oxyfluorfen's inhibition of the sodium-iodide symporter (NIS), but no PD model parameters (Imax, IC50, kin, kout, etc.) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stoker_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

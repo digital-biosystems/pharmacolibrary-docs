@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives ACE activity (in % inhibition): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat, the active hydrolysis product of the prodrug cilazapril, inhibits ACE activity (measured as % inhibition); the paper does not state a specific PD model structure (e.g. Emax or indirect response) linking plasma cilazaprilat concentrations to ACE inhibition, but reports an in vitro IC50 of 1.93 nmol/L for cilazaprilat against rabbit lung ACE (vs enalaprilat 3.12 nmol/L and captopril 6.93 nmol/L), with relative potency 1.63 vs enalaprilat. In vivo, single oral cilazapril doses of 1.25–20 mg produced &gt;90% peak ACE inhibition at 2–3 h, with recovery of ACE activity slow (~5–6%/h in rats) and activity still below baseline at 72 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deget_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

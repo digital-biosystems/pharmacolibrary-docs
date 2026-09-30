@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Saccharomyces cerevisiae var. boulardii supernatant (measured concentrations) drives name (in relative expression) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Saccharomyces cerevisiae var. boulardii supernatant (SBS, µg/ml) concentration-dependently inhibits relative survivin gene expression in EPG85-257P and EPG85-257RDB gastric cancer cells over 24–72 hr; the paper does not state a specific PD model or mechanism beyond survivin downregulation, and reports IC50 values of 387 µg/ml (EPG, 72 hr) and 575 µg/ml (RDB, 48 hr) for cytotoxicity, with no Imax, Emax, kin, kout, ke0, or gamma given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pakbin_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

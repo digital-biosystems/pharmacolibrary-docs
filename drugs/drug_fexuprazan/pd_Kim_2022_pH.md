@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fexuprazan (concentrations from the PK model of Jung_2026) drives gastric pH (in unitless): indirect response — drug inhibits the production of gastric pH.
+
+**Model:** No model was generated from this record.
+
+> Fexuprazan plasma concentrations (ng/mL, from a cited PK model) drive gastric pH via an indirect response model in which the drug stimulates pH (i.e., inhibits acid production, raising pOH/pH); the parameters kin, Imax, and IC50 were estimated from pH profiles after 10–320 mg once daily, but their numerical values are not given in the excerpts. A sigmoid Emax direct model on unbound stomach concentrations (Emax, EC50, γ, pHbaseline) was also used for comparison, again without reported values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

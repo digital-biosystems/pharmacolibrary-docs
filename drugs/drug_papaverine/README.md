@@ -23,18 +23,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | 1-compartment (no model) | 1 | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ritschel_1977_reference](drugs/drug_papaverine/Papaverine_Ritschel1977_reference.md) | — | 1-compartment (no model) | 1 | Ritschel WA et al., Pharmacokinetics of papaverine in man, International journal of cl… (1977) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> | [Rehman_2022](drugs/drug_papaverine/pd_Rehman_2022_unknown.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_carbachol_induced_contraction.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_high_K_induced_contraction.md) | Rehman (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2](drugs/drug_papaverine/pd_Rehman_2022_2_percent_inhibition_of_diarrhea.md) | Rehman (2022) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> | [Rehman_2022_unknown](drugs/drug_papaverine/pd_Rehman_2022_unknown.md) | tracheal contraction ← fenchone · direct Emax (saturable) effect | — | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2_inhibition_of_carbachol_induced_contraction](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_carbachol_induced_contraction.md) | name ← Balanites aegyptiaca methanolic extract · direct Emax (saturable) effect | — | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2_inhibition_of_high_K_induced_contraction](drugs/drug_papaverine/pd_Rehman_2022_2_inhibition_of_high_K_induced_contraction.md) | name ← Balanites aegyptiaca methanolic extract · direct Emax (saturable) effect | — | Rehman (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehman_2022_2_percent_inhibition_of_diarrhea](drugs/drug_papaverine/pd_Rehman_2022_2_percent_inhibition_of_diarrhea.md) | name ← Balanites aegyptiaca methanolic extract · direct Emax (saturable) effect | — | Rehman (2022) | — |
 
 ## ADME sites
 

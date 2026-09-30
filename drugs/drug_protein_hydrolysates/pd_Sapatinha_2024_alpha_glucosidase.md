@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fish protein hydrolysates (measured concentrations) drives alpha-glucosidase inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Fish protein hydrolysates (FPH, mg/mL) were tested in vitro against α-glucosidase activity (% inhibition), showing a weak, concentration-dependent inhibitory effect with no PK link; the paper does not state a PD mechanism or model. Inhibition varied by co-product (BS highest: 77.76 ± 4.62% with A+P; GB lowest: 21.83 ± 0.51% with AP; NP up to 38.42 ± 1.13% with A), and IC50 values above 100 mg/mL were expected, so no IC50, Emax, kin/kout, or ke0 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sapatinha_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

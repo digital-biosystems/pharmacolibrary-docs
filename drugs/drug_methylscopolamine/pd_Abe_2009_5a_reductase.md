@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives 5a-reductase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not study methylscopolamine; it reports that saw palmetto extract (SPE, 10–200 mg/ml) and its free fatty acids (lauric, oleic, myristic, palmitic, linoleic acid, 10–300 mg/ml) inhibit 5α-reductase activity in rat liver, with potency expressed as IC50 (concentration inhibiting 50% of activity, determined by log probit analysis), but the specific 5α-reductase IC50 values are not given in the excerpts and no mechanism beyond direct inhibition, nor any PD model parameters (Imax, kin, kout, ke0, gamma), are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abe_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

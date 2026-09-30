@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Drimia maritima bulb extract (measured concentrations) drives Cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Drimia maritima bulb extract (containing proscillaridin A, ProA) concentration-dependently inhibits cell viability (MTT) of COLO-205 and Caco-2 cells after 48 h, with IC50 values of ~2.3 µg/mL (COLO-205) and ~0.9 µg/mL (Caco-2) for the extract, and 0.0029 µg/mL (COLO-205) and 0.012 µg/mL (Caco-2) for ProA; the extract was far less potent on normal hGF cells (IC50 ~13.1 µg/mL). The paper reports only IC50 values from log–probit analysis and does not state a pharmacodynamic model or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Abdallat_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

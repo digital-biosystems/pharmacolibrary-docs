@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Pelligand_2020](drugs/drug_theobromine/pd_Pelligand_2020_diuresis.md) | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Pelligand_2020](drugs/drug_theobromine/pd_Pelligand_2020_natriuresis.md) | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Pelligand_2020_diuresis](drugs/drug_theobromine/pd_Pelligand_2020_diuresis.md) | diuresis ← torasemide · model not identified | — | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Pelligand_2020_natriuresis](drugs/drug_theobromine/pd_Pelligand_2020_natriuresis.md) | natriuresis ← torasemide · model not identified | — | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
 
 ## Pharmacogenomics (PGx)
 

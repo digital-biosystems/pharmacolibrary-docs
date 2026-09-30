@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan (concentrations from the PK model of Bertin_2025) drives ischaemic area (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Levosimendan concentrations (M) were related to the epicardial ischaemic area measured by NADH-fluorescence (%) in regionally ischaemic rabbit hearts, with the record describing an Emax-type model with a stimulatory effect direction; the excerpts do not state the mechanism of this concentration–response relationship and give no potency or rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma) for the ischaemic-area response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rump_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

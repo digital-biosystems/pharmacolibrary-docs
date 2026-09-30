@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Carlsson_2021::estimate) drives proportion of individuals with symptomatic hypoglycaemia (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper reports no exposure–response relationship between plasma liraglutide concentration (exposures associated with 1.8–3.0 mg doses) and the incidence of documented symptomatic hypoglycaemia in individuals with type 2 diabetes (p-value for slope = 0.83); no mechanism or potency parameters (Imax, IC50, EC50, Emax, gamma) are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

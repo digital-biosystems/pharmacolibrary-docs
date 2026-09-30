@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Reinbold_2010_reference](drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md) | 1-compartment, oral | 7 | Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010) | [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Reinbold_2010_reference](drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md) | ▶ model + simulator | 1-compartment, oral | 7 | Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010) | [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vutrisiran drives serum transthyretin (in µg/mL): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Vutrisiran 25 mg subcutaneously every 3 months reduces serum transthyretin (TTR, µg/mL) via RNA interference-mediated knockdown of hepatic TTR production (inhibition of TTR synthesis, not elimination); the excerpts report observed median TTR knockdown (e.g. 64.2% at Week 3 and 86.2% steady-state trough in HELIOS-A; 69.0% at Week 6 and 82.5% steady-state trough in HELIOS-B) but do not state a quantitative PD model with Imax, IC50, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fontana_2026`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -20,27 +30,27 @@ Fontana M; Algalarrondo V; Garcia-Pavia P; Maurer MS; Gillmore JD; Cappelli F; K
   ·  DOI: [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Overall population Week 3 — TTR percent reduction from baseline | `Q100` · not captured | 114 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
-| Peak ss a — TTR percent reduction from baseline | `Q100` · not captured | 15 | not captured | not captured | llm_corrected (not captured) | tab_0:row4:col2 |
-| Peak ss a | `Q32` · not captured | 87.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col3 |
-| Peak ss a | `Q32` · not captured | 91.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
-| Peak ss a | `Q32` · not captured | 87.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
-| Peak ss a | `Q32` · not captured | 86.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col6 |
-| Trough ss — TTR percent reduction from baseline | `Q37` · not captured | 118 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col2 |
-| Trough ss | `Q37` · not captured | 81.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col3 |
-| Trough ss | `Q37` · not captured | 86.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col4 |
-| Trough ss | `Q37` · not captured | 75.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col5 |
-| Trough ss | `Q37` · not captured | 84.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col6 |
-| Month 18 — TTR percent reduction from baseline | `Q100` · not captured | 85.4 | not captured | not captured | llm (not captured) | tab_0:row7:col2 |
-| Overall population Week 6 — TTR percent reduction from baseline | `Q100` · not captured | 294 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
-| Trough ss — TTR percent reduction from baseline | `Q37` · not captured | 307 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col2 |
-| Trough ss | `Q37` · not captured | 78.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col3 |
-| Trough ss | `Q37` · not captured | 82.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col4 |
-| Trough ss | `Q37` · not captured | 70.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col5 |
-| Trough ss | `Q37` · not captured | 80.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col6 |
-| Month 30 — TTR percent reduction from baseline | `Q100` · not captured | 81.0 | not captured | not captured | llm (not captured) | tab_0:row11:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Overall population Week 3 — TTR percent reduction from baseline | `Q100` · not captured | 114 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
+| — | Peak ss a — TTR percent reduction from baseline | `Q100` · not captured | 15 | not captured | not captured | llm_corrected (not captured) | tab_0:row4:col2 |
+| PK (driver) | Peak ss a | `Q32` · not captured | 87.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col3 |
+| PK (driver) | Peak ss a | `Q32` · not captured | 91.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
+| PK (driver) | Peak ss a | `Q32` · not captured | 87.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
+| PK (driver) | Peak ss a | `Q32` · not captured | 86.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col6 |
+| PK (driver) | Trough ss — TTR percent reduction from baseline | `Q37` · not captured | 118 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col2 |
+| PK (driver) | Trough ss | `Q37` · not captured | 81.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col3 |
+| PK (driver) | Trough ss | `Q37` · not captured | 86.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col4 |
+| PK (driver) | Trough ss | `Q37` · not captured | 75.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col5 |
+| PK (driver) | Trough ss | `Q37` · not captured | 84.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row5:col6 |
+| — | Month 18 — TTR percent reduction from baseline | `Q100` · not captured | 85.4 | not captured | not captured | llm (not captured) | tab_0:row7:col2 |
+| — | Overall population Week 6 — TTR percent reduction from baseline | `Q100` · not captured | 294 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
+| PK (driver) | Trough ss — TTR percent reduction from baseline | `Q37` · not captured | 307 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col2 |
+| PK (driver) | Trough ss | `Q37` · not captured | 78.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col3 |
+| PK (driver) | Trough ss | `Q37` · not captured | 82.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col4 |
+| PK (driver) | Trough ss | `Q37` · not captured | 70.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col5 |
+| PK (driver) | Trough ss | `Q37` · not captured | 80.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col6 |
+| — | Month 30 — TTR percent reduction from baseline | `Q100` · not captured | 81.0 | not captured | not captured | llm (not captured) | tab_0:row11:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

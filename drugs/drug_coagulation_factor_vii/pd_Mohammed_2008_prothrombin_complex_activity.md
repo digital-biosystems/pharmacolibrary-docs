@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin drives name (in percentage decrease from baseline): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> S-warfarin plasma concentrations (ng mL-1) drive an indirect response (inhibition of production) of prothrombin complex activity (PCA, including coagulation factor VII), expressed as percentage decrease from baseline, with EC50,S of 443 ± 212 ng mL-1 under warfarin alone; cranberry co-treatment lowered EC50,S (mean ratio 0.85, 90% CI 0.77–0.94) without affecting warfarin pharmacokinetics (V P/F 3120 mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mohammed_2008`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Mohammed Abdul MI; Jiang X; Williams KM; Day RO; Roufogalis BD; Liauw WS; Xu H; 
   ·  DOI: [10.1038/bjp.2008.210](https://doi.org/10.1038/bjp.2008.210)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V P /F (mL) — Estimates | `Q82` · not captured | 3120 | mL | not captured | space_fold (not captured) | tab_2:row5:col1 |
-| mean ratio of S-warfarin EC 50 | `Q321` · not captured | 0.85 | 90% CI; n ¼ 12 | not captured | review_gapfill (not captured) | Mohammed_2008:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V P /F (mL) — Estimates | `Q82` · not captured | 3120 | mL | not captured | space_fold (not captured) | tab_2:row5:col1 |
+| PD (effect) | mean ratio of S-warfarin EC 50 | `Q321` · not captured | 0.85 | 90% CI; n ¼ 12 | not captured | review_gapfill (not captured) | Mohammed_2008:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

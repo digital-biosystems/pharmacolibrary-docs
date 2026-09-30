@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives Pgp activity (in relative units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In LS180 cells exposed for 144 h, rifabutin (and rifampicin) increased Pgp activity (rhodamine123 efflux, relative units) in a concentration-dependent manner, fitted to an Emax model (four-parameter logistic, variable slope); the paper does not state the EC50 or Emax values (they are in Supplemental Material Table S7) and gives no kinetic parameters, describing the effect as induction of Pgp activity without a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

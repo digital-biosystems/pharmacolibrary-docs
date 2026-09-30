@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TAFEMgO NPs (the dose) drives Tail bleeding time (in s) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TAFEMgO NPs (magnesium oxide nanoparticles) given as a dose prolonged mouse tail bleeding time from 106 s (PBS control) to 935 s at 50 mg/kg, an anticoagulant effect attributed to interaction with factors in the common blood-clotting pathway; the paper does not state a PD model or potency parameters for this response (platelet aggregation inhibition IC50 317.2 μg/μL is reported separately).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatappa_2022`
 - **model family:** `unknown`
 - **driver:** `dose_only`

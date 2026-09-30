@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Olsalazine (measured concentrations) drives CDH1 expression (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Olsalazine (300 μM) stimulates CDH1 expression in MDA-MB-231 cells, producing a 5.96-fold increase at 24 h and 7.7-fold at 48 h, attributed to inhibition of DNA methyltransferase (demethylating/re-expression mechanism); no PD model parameters (Imax, IC50 for expression, kin, kout, ke0) are given, only cytotoxicity IC50 values of 4000 μM (24 h) and ~300 μM (48 h).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Asl_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

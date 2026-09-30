@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive cardiac output (in ml/min): indirect response — drug inhibits the production of cardiac output.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, amlodipine's effect on cardiac output (CO, ml/min) is described indirectly: CO is not driven directly by concentration but is the product of HR and SV, with linked turnover equations (zero-order production rates Kin, first-order dissipation rates kout) and negative MAP feedback; the drug acts by inhibiting one of the haemodynamic turnover responses (record: inhibition, indirect response type). The excerpts do not state amlodipine's specific site of action, effect form, or any potency/rate values (Imax, IC50, Kin, kout) for CO.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

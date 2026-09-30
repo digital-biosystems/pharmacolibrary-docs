@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PFOA (measured concentrations) drives name (in pmol/l): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Plasma PFOA (μM, from weekly APFO doses of 50–1200 mg) was linked to serum free thyroxine (pmol/l) via an effect-compartment model in which a first-order distribution delay to the biophase was rate-limiting and the effect compartment equilibrated with plasma through a first-order rate constant ke; the paper does not state ke, Emax/IC50-type potency values, or an explicit effect form, though the observed fT4 increase (GEE slope ≈2.8×10−3 pmol/l/μM) was attributed to PFOA displacing thyroxine from binding proteins.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Convertino_2018`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

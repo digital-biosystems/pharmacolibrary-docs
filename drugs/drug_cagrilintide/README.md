@@ -23,9 +23,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Al-Harbi_2025](drugs/drug_cagrilintide/pd_Al_Harbi_2025_weight_loss.md) | Al-Harbi FA et al., Synthetic target trial emulation and pr…, Metabolism open (2025) | [10.1016/j.metop.2025.100414](https://doi.org/10.1016/j.metop.2025.100414) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Al-Harbi_2025_weight_loss](drugs/drug_cagrilintide/pd_Al_Harbi_2025_weight_loss.md) | name ← amycretin · direct Emax (saturable) effect | — | Al-Harbi FA et al., Synthetic target trial emulation and pr…, Metabolism open (2025) | [10.1016/j.metop.2025.100414](https://doi.org/10.1016/j.metop.2025.100414) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CXCL12 (measured concentrations) drives name (in RFU) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In human lung endothelial cells (hPPAEC), CXCL12 variants act on thrombin-induced hyper-permeability (barrier function, RFU), inhibiting the thrombin-mediated impairment via CXCR4 agonism (with heparan sulfate proteoglycan interactions contributing); CXCL12α, CXCL12β, CXCL12(3–68) and CXCL12 K27A/R41A/R47A showed EC50 values of 0.05–0.5 nM, while CXCL12 R47E and CXCL12 S-S4V were about one order of magnitude less potent (EC50 0.5–50 nM), and CXCL12(2) affected barrier impairment only at 50 nM. The record's values of 117 nM (S-S4V), 105 nM (R47E) and 111 nM (K27A/R41A/R47A) are CXCR4-related parameters, but the paper does not state a kinetic mechanism (e.g. kin/kout or effect compartment) for
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cheng_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Cheng YH; Eby JM; LaPorte HM; Volkman BF; Majetschak M et al. (2017). PloS one 1
   ·  DOI: [10.1371/journal.pone.0187949](https://doi.org/10.1371/journal.pone.0187949)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CXCL12 S-S4V — CXCR4 | `Q322` · not captured | 117 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col2 |
-| CXCL12 R47E — CXCR4 | `Q322` · not captured | 105 | nM | not captured | llm (not captured) | pone.0187949.t001:row7:col2 |
-| CXCL12 K27A R41A R47A — CXCR4 | `Q322` · not captured | 111 | nM | not captured | llm (not captured) | pone.0187949.t001:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CXCL12 S-S4V — CXCR4 | `Q322` · not captured | 117 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col2 |
+| PD (effect) | CXCL12 R47E — CXCR4 | `Q322` · not captured | 105 | nM | not captured | llm (not captured) | pone.0187949.t001:row7:col2 |
+| PD (effect) | CXCL12 K27A R41A R47A — CXCR4 | `Q322` · not captured | 111 | nM | not captured | llm (not captured) | pone.0187949.t001:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

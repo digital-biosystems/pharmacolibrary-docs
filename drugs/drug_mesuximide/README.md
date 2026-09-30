@@ -25,12 +25,12 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026](drugs/drug_mesuximide/pd_Biesdorf_2026_CBR6.md) | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026](drugs/drug_mesuximide/pd_Biesdorf_2026_ORR.md) | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026](drugs/drug_mesuximide/pd_Biesdorf_2026_unknown.md) | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026](drugs/drug_mesuximide/pd_Tran_2026_infection.md) | Tran TM et al., Pharmacokinetics and pharmacodynamics o…, The Journal of clinical inv… (2026) | [10.1172/jci207559](https://doi.org/10.1172/jci207559) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026_CBR6](drugs/drug_mesuximide/pd_Biesdorf_2026_CBR6.md) | Clinical benefit rate for &gt;= 6 months ← Cofetuzumab pelidotin (ADC) · categorical (graded) response model | — | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026_ORR](drugs/drug_mesuximide/pd_Biesdorf_2026_ORR.md) | Objective response rate ← Cofetuzumab pelidotin (ADC) · categorical (graded) response model | — | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Biesdorf_2026_unknown](drugs/drug_mesuximide/pd_Biesdorf_2026_unknown.md) | Grade &gt;= 2 rash ← Cofetuzumab pelidotin (ADC) · categorical (graded) response model | — | Biesdorf C et al., Population Pharmacokinetics and Exposur…, Clinical pharmacology and t… (2026) | [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_infection](drugs/drug_mesuximide/pd_Tran_2026_infection.md) | Pf infection ← CIS43LS · time-to-event model | — | Tran TM et al., Pharmacokinetics and pharmacodynamics o…, The Journal of clinical inv… (2026) | [10.1172/jci207559](https://doi.org/10.1172/jci207559) |
 
 ## ADME sites
 

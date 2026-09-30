@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Procaterol (measured concentrations) drives percent inhibition of muscarinic contraction (in continuous): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Salbutamol (a beta-adrenoceptor agonist) concentration-dependently inhibits methacholine (10 μM)-induced airway smooth muscle contraction, described by a sigmoid Emax concentration-inhibition model; salbutamol 100 nM alone caused 44.1 ± 6.2% inhibition. In the presence of tiotropium (1 nM), the curve was shifted left and the maximum increased (for the analogous beta-agonist procaterol, EC50 fell to 1.6 ± 0.4 nM and maximal inhibition rose to 94.3 ± 4.6%), indicating synergistic enhancement rather than a stated kinetic mechanism; no kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,23 +31,23 @@ Kume H; Nishiyama O; Isoya T; Higashimoto Y; Tohda Y; Noda Y et al. (2018). Inte
   ·  DOI: [10.3390/ijms19071999](https://doi.org/10.3390/ijms19071999)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tiotropium — EC50 (nM) | `Q321` · not captured | 3.3 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col1 |
-| Tiotropium — EC50 (nM) | `Q321` · not captured | 2.78 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col2 |
-| Tiotropium — EC50 (nM) | `Q321` · not captured | 9.82 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col4 |
-| Tiotropium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row4:col5 |
-| Tiotropium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row4:col6 |
-| Atropine — EC50 (nM) | `Q321` · not captured | 5.7 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col1 |
-| Atropine — EC50 (nM) | `Q321` · not captured | 4.55 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col2 |
-| Atropine — EC50 (nM) | `Q321` · not captured | 12.57 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col4 |
-| Atropine — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row5:col5 |
-| Atropine — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row5:col6 |
-| Glycopyrronium — EC50 (nM) | `Q321` · not captured | 8.2 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col1 |
-| Glycopyrronium — EC50 (nM) | `Q321` · not captured | 7.05 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col2 |
-| Glycopyrronium — EC50 (nM) | `Q321` · not captured | 13.26 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col4 |
-| Glycopyrronium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row6:col5 |
-| Glycopyrronium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row6:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Tiotropium — EC50 (nM) | `Q321` · not captured | 3.3 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col1 |
+| PD (effect) | Tiotropium — EC50 (nM) | `Q321` · not captured | 2.78 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col2 |
+| PD (effect) | Tiotropium — EC50 (nM) | `Q321` · not captured | 9.82 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row4:col4 |
+| PD (effect) | Tiotropium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row4:col5 |
+| PD (effect) | Tiotropium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row4:col6 |
+| PD (effect) | Atropine — EC50 (nM) | `Q321` · not captured | 5.7 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col1 |
+| PD (effect) | Atropine — EC50 (nM) | `Q321` · not captured | 4.55 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col2 |
+| PD (effect) | Atropine — EC50 (nM) | `Q321` · not captured | 12.57 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row5:col4 |
+| PD (effect) | Atropine — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row5:col5 |
+| PD (effect) | Atropine — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row5:col6 |
+| PD (effect) | Glycopyrronium — EC50 (nM) | `Q321` · not captured | 8.2 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col1 |
+| PD (effect) | Glycopyrronium — EC50 (nM) | `Q321` · not captured | 7.05 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col2 |
+| PD (effect) | Glycopyrronium — EC50 (nM) | `Q321` · not captured | 13.26 | nM | not captured | llm (not captured) | ijms-19-01999-t001:row6:col4 |
+| PD (effect) | Glycopyrronium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row6:col5 |
+| PD (effect) | Glycopyrronium — Emax (%) | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | ijms-19-01999-t001:row6:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

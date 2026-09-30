@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Synephrine (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Synephrine (SYN) concentration (1–81 μM, cumulative) acts directly on the beating rate of hiPSC-CMs, stimulating it via β1 adrenergic receptor activation (β1 blockers abolished the effect); the paper reports a sigmoid Emax-type concentration-response but does not state EC50, Emax, or slope values for SYN (only ISO's EC50 of 18.00 nM is given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuan_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Yuan X; Yu T; Zhang Z; Li S et al. (2024). Frontiers in cardiovascular medicine 
   ·  DOI: [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Isoprenaline — ETPC (μM) | `Q322` · not captured | 0.002 | μM | not captured | llm (not captured) | T2:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Isoprenaline — ETPC (μM) | `Q322` · not captured | 0.002 | μM | not captured | llm (not captured) | T2:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

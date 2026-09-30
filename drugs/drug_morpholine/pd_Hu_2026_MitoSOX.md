@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives mitochondrial ROS production (in fluorescence intensity): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative concentration-response model for morpholine on mitochondrial ROS (MitoSOX fluorescence intensity); no EC50, Emax, or rate constants for this endpoint appear in the excerpts. Mechanistically, the paper states that the related compound A36 (compound 82) acts as a protein-protein interaction stabilizer of the CAST–calpain-2 complex, protecting CAST from degradation and thereby suppressing Drp1-mediated mitochondrial fragmentation and preserving mitochondrial function, but it does not describe a specific PD mechanism for morpholine on ROS production.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

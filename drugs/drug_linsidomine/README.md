@@ -17,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | parent + metabolite (no model) | 3 | Spreux-Varoquaux (1991) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Spreux-Varoquaux_1991_reference](drugs/drug_linsidomine/Linsidomine_SpreuxVaroquaux1991_reference.md) | — | parent + metabolite (no model) | 3 | Spreux-Varoquaux (1991) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

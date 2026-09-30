@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Malva parviflora fractions (the dose) drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Chronic daily angiotensin II (AGII) administration in mice increased systolic and diastolic blood pressure dose-dependently (Emax model), with ED50 0.038 mg/kg and Emax 135 mmHg for SBP and ED50 0.046 mg/kg and Emax 98 mmHg for DBP; the paper attributes the pressor effect to vascular smooth muscle contraction plus AGII-induced pro-inflammatory and pro-oxidant vascular damage rather than stating an explicit PD mechanism (e.g. kin/kout or effect compartment), and no such parameters are given. Malva parviflora extract/fractions counteracted this hypertension, and its compounds tiliroside and scopoletin lowered transient blood pressure differentials with ΔSBP ED50 0.01 and 0.12 mg/kg (Emax 33.22
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lagunas-Herrera_2019`
 - **model family:** `emax`
 - **driver:** `dose_only`

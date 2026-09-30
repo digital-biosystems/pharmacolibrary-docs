@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ORM-10962 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the Ca2+ transient response; it only shows that 1 µM ORM-10962 (a selective NCX inhibitor) slightly increased Ca2+ transient amplitude in isolated dog ventricular myocytes (Δ = 3.80±1.49%, n = 8), with no Emax, IC50/EC50, kin/kout or ke0 values given for this response (the reported EC50 values of 55/67 nM apply to inhibition of inward/outward NCX current, not the Ca2+ transient).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kohajda_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The isosorbide dinitrate record was rejected because its metabolites, isosorbide 5-mononitrate and isosorbide 2-mononitrate, are unlinked from the dose, and the model was built from the abstract only.**
@@ -38,7 +40,7 @@ Straehl P; Galeazzi RL et al. (1985). Clinical pharmacology and therapeutics 38
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| t1/2 | `Q57` · t1/2z | 4.7 | minutes | not captured | [min] | not captured | exact (1.0) | Straehl_1985:abstract, Straehl_1985:abstract | — | not captured |
+| t1/2 | `Q57` · t1/2z | 4.7 | minutes | 282.0 | h | not captured | exact (1.0) | Straehl_1985:abstract, Straehl_1985:abstract | — | not captured |
 | volume of distribution at steady state | `Q65` · Vss | 90 | L | 0.09 | [l] | not captured | llm_corrected (0.6) | Straehl_1985:abstract | — | not captured |
 | Total plasma clearance | `Q22` · CL | 136 | L/hr | 3.777777777777778e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Straehl_1985:abstract | — | not captured |
 | ISDN bioavailability | `Q40` · Fab | 29 | % | not captured | not captured | not captured | llm_confirmed (0.6) | Straehl_1985:abstract | — | not captured |
@@ -60,6 +62,7 @@ Straehl P; Galeazzi RL et al. (1985). Clinical pharmacology and therapeutics 38
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- unit re-normalised: t1/2z 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Straehl_1985_metadata.yaml (10 record(s)); values are summary statistics, not a fitted model

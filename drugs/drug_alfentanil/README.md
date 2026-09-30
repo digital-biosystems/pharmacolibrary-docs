@@ -23,18 +23,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Davis_1986_reference](drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md) | 2-compartment, oral | 3 | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vozeh_1990_reference](drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md) | 1-compartment, IV | 3 | Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990) | [10.1007/BF01063558](https://doi.org/10.1007/BF01063558) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025_reference](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | 1-compartment (no model) | 0 | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Davis_1986_reference](drugs/drug_alfentanil/Alfentanil_Davis1986_reference.md) | ▶ model + simulator | 2-compartment, oral | 3 | Davis PJ et al., Clinical pharmacokinetics of the newer…, Clinical pharmacokinetics (1986) | [10.2165/00003088-198611010-00002](https://doi.org/10.2165/00003088-198611010-00002) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Vozeh_1990_reference](drugs/drug_alfentanil/Alfentanil_Vozeh1990_reference.md) | held back | 1-compartment, IV | 3 | Vozeh S et al., Evaluation of population (NONMEM) pharm…, Journal of pharmacokinetics… (1990) | [10.1007/BF01063558](https://doi.org/10.1007/BF01063558) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Medina-Aymerich_2025_reference](drugs/drug_alfentanil/Alfentanil_MedinaAymerich2025_reference.md) | — | 1-compartment (no model) | 0 | Medina-Aymerich L et al., Population Pharmacokinetics of Alfentan…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70044](https://doi.org/10.1002/jcph.70044) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Bouillon_1999](drugs/drug_alfentanil/pd_Bouillon_1999_PaCO2.md) | Bouillon T et al., Pharmacokinetic-pharmacodynamic modelin…, Anesthesiology (1999) | [10.1097/00000542-199907000-00023](https://doi.org/10.1097/00000542-199907000-00023) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Liou_2023](drugs/drug_alfentanil/pd_Liou_2023_LOR.md) | Liou JY et al., Pharmacodynamic modeling of moderate se…, BMC pharmacology & toxicolo… (2023) | [10.1186/s40360-023-00642-5](https://doi.org/10.1186/s40360-023-00642-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Bouillon_1999_PaCO2](drugs/drug_alfentanil/pd_Bouillon_1999_PaCO2.md) | arterial carbon dioxide pressure ← alfentanil · indirect response — drug inhibits the production of arterial carbon dioxide pressure | — | Bouillon T et al., Pharmacokinetic-pharmacodynamic modelin…, Anesthesiology (1999) | [10.1097/00000542-199907000-00023](https://doi.org/10.1097/00000542-199907000-00023) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Liou_2023_LOR](drugs/drug_alfentanil/pd_Liou_2023_LOR.md) | loss of response ← midazolam, alfentanil, propofol · direct sigmoid Emax (Hill) effect | — | Liou JY et al., Pharmacodynamic modeling of moderate se…, BMC pharmacology & toxicolo… (2023) | [10.1186/s40360-023-00642-5](https://doi.org/10.1186/s40360-023-00642-5) |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,6 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
 | metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
 | metabolism | kidney | `CYP3A5` metabolism/substrate | DrugBank actor |

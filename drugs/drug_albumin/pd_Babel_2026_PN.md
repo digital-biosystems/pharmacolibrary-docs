@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telisotuzumab vedotin conjugate (measured concentrations) drives Grade &gt;= 3 Peripheral Neuropathy (in proportion): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanistic PD model for grade ≥ 3 peripheral neuropathy; it only reports significant positive correlations between Teliso-V conjugate exposure metrics (CavgADC, CavgC1 ADC, CmingmADC, CmaxgmADC, in µg/mL) and the probability of grade ≥ 3 peripheral neuropathy (a binary response), with a predicted event rate of 9.60% at the median simulated conjugate Cavg for 1.9 mg/kg Q2W. No Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values are given, and albumin appears only as a covariate on Teliso-V conjugate clearance, not as a driver of the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Babel_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

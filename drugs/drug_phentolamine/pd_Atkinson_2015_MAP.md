@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenylephrine drives mean arterial pressure (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper describes phenylephrine (not phentolamine) plasma concentrations directly stimulating mean arterial pressure via an Emax model: MAP = E0 + Emax·C/(EC50 + C), with E0 = 86.3 mmHg, Emax = 51.2 mmHg, and EC50 = 11.1 mcg L−1; no effect-compartment or turnover mechanism is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Atkinson_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,28 +30,28 @@ Atkinson HC; Potts AL; Anderson BJ et al. (2015). European journal of clinical p
   ·  DOI: [10.1007/s00228-015-1876-1](https://doi.org/10.1007/s00228-015-1876-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CLstd (L h−1 70 kg−1) — Estimate | `Q354` · not captured | 139 | L h−1 70 kg−1 | not captured | exact (not captured) | Tab2:row2:col2 |
-| CLstd (L h−1 70 kg−1) — %BSV | `Q354` · not captured | 38.3 | L h−1 70 kg−1 | not captured | exact (not captured) | Tab2:row2:col3 |
-| V1std (L 70 kg−1) — Estimate | `Q352` · not captured | 15.3 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row3:col2 |
-| V1std (L 70 kg−1) — %BSV | `Q63` · not captured | 106.3 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row3:col3 |
-| Qstd (L h−1 70 kg−1) — Estimate | `Q358` · not captured | 30 | L h−1 70 kg−1 | not captured | llm (not captured) | Tab2:row4:col2 |
-| Qstd (L h−1 70 kg−1) — %BSV | `Q358` · not captured | 130 | L h−1 70 kg−1 | not captured | llm (not captured) | Tab2:row4:col3 |
-| V2std (L 70 kg−1) — Estimate | `Q352` · not captured | 235 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row5:col2 |
-| V2std (L 70 kg−1) — %BSV | `Q64` · not captured | 101 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row5:col3 |
-| Lag oral (h) — Estimate | `Q83` · not captured | 0.247 | h | not captured | llm (not captured) | Tab2:row7:col2 |
-| Bioavailability oral — Estimate | `Q40` · not captured | 0.014 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col2 |
-| Bioavailability 2.5 % ophthalmic solution — Estimate | `Q40` · not captured | 0.15 | not captured | not captured | llm_confirmed (not captured) | Tab2:row10:col2 |
-| Bioavailability 10 % ophthalmic solution — Estimate | `Q40` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | Tab2:row12:col2 |
-| Residual error — Estimate | `Q315` · not captured | 0.013 | not captured | not captured | llm (not captured) | Tab2:row13:col2 |
-| E0 (mmHg) — Estimate | `Q324` · not captured | 86.3 | mmHg | not captured | exact (not captured) | Tab2:row16:col2 |
-| E0 (mmHg) — %BSV | `Q324` · not captured | 4.4 | mmHg | not captured | exact (not captured) | Tab2:row16:col3 |
-| EC50 (mcg L−1) — Estimate | `Q321` · not captured | 11.1 | mcg L−1 | not captured | exact (not captured) | Tab2:row17:col2 |
-| EC50 (mcg L−1) — %BSV | `Q321` · not captured | 141 | mcg L−1 | not captured | exact (not captured) | Tab2:row17:col3 |
-| Emax (mmHg) — Estimate | `Q320` · not captured | 51.2 | mmHg | not captured | exact (not captured) | Tab2:row18:col2 |
-| Emax (mmHg) — %BSV | `Q320` · not captured | 44.8 | mmHg | not captured | exact (not captured) | Tab2:row18:col3 |
-| Residual error — Estimate | `Q315` · not captured | 9.88 | not captured | not captured | llm (not captured) | Tab2:row19:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CLstd (L h−1 70 kg−1) — Estimate | `Q354` · not captured | 139 | L h−1 70 kg−1 | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | CLstd (L h−1 70 kg−1) — %BSV | `Q354` · not captured | 38.3 | L h−1 70 kg−1 | not captured | exact (not captured) | Tab2:row2:col3 |
+| PK (driver) | V1std (L 70 kg−1) — Estimate | `Q352` · not captured | 15.3 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row3:col2 |
+| PK (driver) | V1std (L 70 kg−1) — %BSV | `Q63` · not captured | 106.3 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row3:col3 |
+| PK (driver) | Qstd (L h−1 70 kg−1) — Estimate | `Q358` · not captured | 30 | L h−1 70 kg−1 | not captured | llm (not captured) | Tab2:row4:col2 |
+| PK (driver) | Qstd (L h−1 70 kg−1) — %BSV | `Q358` · not captured | 130 | L h−1 70 kg−1 | not captured | llm (not captured) | Tab2:row4:col3 |
+| PK (driver) | V2std (L 70 kg−1) — Estimate | `Q352` · not captured | 235 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row5:col2 |
+| PK (driver) | V2std (L 70 kg−1) — %BSV | `Q64` · not captured | 101 | L 70 kg−1 | not captured | llm (not captured) | Tab2:row5:col3 |
+| PK (driver) | Lag oral (h) — Estimate | `Q83` · not captured | 0.247 | h | not captured | llm (not captured) | Tab2:row7:col2 |
+| PK (driver) | Bioavailability oral — Estimate | `Q40` · not captured | 0.014 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col2 |
+| PK (driver) | Bioavailability 2.5 % ophthalmic solution — Estimate | `Q40` · not captured | 0.15 | not captured | not captured | llm_confirmed (not captured) | Tab2:row10:col2 |
+| PK (driver) | Bioavailability 10 % ophthalmic solution — Estimate | `Q40` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | Tab2:row12:col2 |
+| variability | Residual error — Estimate | `Q315` · not captured | 0.013 | not captured | not captured | llm (not captured) | Tab2:row13:col2 |
+| PD (effect) | E0 (mmHg) — Estimate | `Q324` · not captured | 86.3 | mmHg | not captured | exact (not captured) | Tab2:row16:col2 |
+| PD (effect) | E0 (mmHg) — %BSV | `Q324` · not captured | 4.4 | mmHg | not captured | exact (not captured) | Tab2:row16:col3 |
+| PD (effect) | EC50 (mcg L−1) — Estimate | `Q321` · not captured | 11.1 | mcg L−1 | not captured | exact (not captured) | Tab2:row17:col2 |
+| PD (effect) | EC50 (mcg L−1) — %BSV | `Q321` · not captured | 141 | mcg L−1 | not captured | exact (not captured) | Tab2:row17:col3 |
+| PD (effect) | Emax (mmHg) — Estimate | `Q320` · not captured | 51.2 | mmHg | not captured | exact (not captured) | Tab2:row18:col2 |
+| PD (effect) | Emax (mmHg) — %BSV | `Q320` · not captured | 44.8 | mmHg | not captured | exact (not captured) | Tab2:row18:col3 |
+| variability | Residual error — Estimate | `Q315` · not captured | 9.88 | not captured | not captured | llm (not captured) | Tab2:row19:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

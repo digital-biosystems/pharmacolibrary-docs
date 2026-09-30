@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cyanobium sp. pigment extracts (carotenoids and phycobiliproteins) drive cytotoxicity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cyanobium sp. pigment extracts (carotenoid/ethanolic and phycobiliprotein/water) inhibit hyaluronidase activity in vitro, with IC50 values of 108.74 ± 5.74 μg mL−1 (ethanolic) and 67.25 ± 1.18 μg mL−1 (water); the water extract also inhibits collagenase (IC50 = 582.82 ± 56.99 μg mL−1). The paper does not describe a pharmacodynamic model (no Emax/kin/kout parameters); IC50 values were obtained by curve spline interpolation, and no cytotoxicity was observed in skin-related cell lines.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pagels_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Pagels F; Almeida C; Vasconcelos V; Guedes AC et al. (2022). Marine drugs 20
   ·  DOI: [10.3390/md20080481](https://doi.org/10.3390/md20080481)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Antioxidant capacity (ABTS•+ IC50, mg mL−1) — Ethanolic Ingredient | `Q322` · not captured | 140.69 | ABTS•+ IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row11:col1 |
-| Antioxidant capacity (ABTS•+ IC50, mg mL−1) — Water Ingredient | `Q322` · not captured | 180.93 | ABTS•+ IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row11:col2 |
-| Anti-hyaluronidase activity (IC50, mg mL−1) — Ethanolic Ingredient | `Q322` · not captured | 115.37 | IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row12:col1 |
-| Anti-hyaluronidase activity (IC50, mg mL−1) — Water Ingredient | `Q322` · not captured | 79.41 | IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Antioxidant capacity (ABTS•+ IC50, mg mL−1) — Ethanolic Ingredient | `Q322` · not captured | 140.69 | ABTS•+ IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row11:col1 |
+| PD (effect) | Antioxidant capacity (ABTS•+ IC50, mg mL−1) — Water Ingredient | `Q322` · not captured | 180.93 | ABTS•+ IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row11:col2 |
+| PD (effect) | Anti-hyaluronidase activity (IC50, mg mL−1) — Ethanolic Ingredient | `Q322` · not captured | 115.37 | IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row12:col1 |
+| PD (effect) | Anti-hyaluronidase activity (IC50, mg mL−1) — Water Ingredient | `Q322` · not captured | 79.41 | IC50, mg mL−1 | not captured | llm (not captured) | marinedrugs-20-00481-t001:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

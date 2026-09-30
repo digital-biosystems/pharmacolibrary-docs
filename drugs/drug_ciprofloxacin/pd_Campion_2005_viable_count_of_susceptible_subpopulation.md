@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ciprofloxacin (concentrations from the PK model of Alihodzic_2022) drives name (in CFU/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ciprofloxacin concentrations (µg/ml) act on the viable count (CFU/ml) of the ciprofloxacin-susceptible subpopulation (S) of S. aureus via a saturable Emax killing function, in which the drug increases the bacterial death rate (killing rate constant k times C/(C+EC50S)) within a logistic two-population growth model; the paper does not state the numeric EC50, Emax, or rate constant values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Campion_2005`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -26,13 +26,13 @@ Illegal use of opium has been registered to be for both recreational and medicin
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 04:51 | 2:02 | 0/1/0 | 0/0/0 | 0/0/0 | 40,833/1,618 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-09-29 22:48 | 1:23 | 0/1/0 | 0/0/0 | 0/0/0 | 18,507/3,379 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_reference](drugs/drug_opium/Opium_Liu2016_reference.md) | 1-compartment (no model) | 2 | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Liu_2016_reference](drugs/drug_opium/Opium_Liu2016_reference.md) | — | 1-compartment (no model) | 2 | Liu T et al., Mechanistic Population Pharmacokinetics…, Journal of clinical pharmac… (2016) | [10.1002/jcph.696](https://doi.org/10.1002/jcph.696) |
 
 ## ADME sites
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 25 matched, 24 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 6  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -74,7 +74,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Elkader_2005.pdf` | Elkader A et al., Buprenorphine: clinical pharmacokinetic…, Clinical pharmacokinetics (2005) | pgx | 7 | [10.2165/00003088-200544070-00001](https://doi.org/10.2165/00003088-200544070-00001) | [15966752](https://www.ncbi.nlm.nih.gov/pubmed/15966752) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 | `Xie_2019.pdf` | Xie GL et al., [Effect of opioid-related gene polymorp…, Zhonghua yi xue za zhi (2019) | pgx | 5 | [10.3760/cma.j.issn.0376-2491.2019.47.009](https://doi.org/10.3760/cma.j.issn.0376-2491.2019.47.009) | [31874497](https://www.ncbi.nlm.nih.gov/pubmed/31874497) | metadata signals extractable PGX data (ABCB1) |
 
-<sub>queue written 2026-09-22T04:49:18.746233+00:00</sub>
+<sub>queue written 2026-09-29T22:47:24.009475+00:00</sub>
 
 ## Screened and excluded
 

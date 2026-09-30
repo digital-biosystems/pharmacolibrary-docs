@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT-100 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In 211H and H226 mesothelioma xenografts, BCT-100 (pegylated arginase, doses 20 and 60 mg/kg) depleted intratumoral arginine in a dose-dependent manner (211H: 9.7±2.3 to 5.3±1.1 and 3.4±0.7 nmole/mg protein; H226: 9.1±2.5 to 6.2±1.8 and 4.3±1.3 nmole/mg protein), via arginase-mediated arginine catabolism leading to apoptosis and G1 arrest. The paper does not report a formal PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma) for the intratumoral arginine response; the only IC50 values given are for in vitro cell viability (13–24 mU/ml at 72 h).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lam_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lalka_1976_reference](drugs/drug_tocainide/Tocainide_Lalka1976_reference.md) | 1-compartment (no model) | 7 | Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacology and t… (1976) | [10.1002/cpt1976196757](https://doi.org/10.1002/cpt1976196757) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Lalka_1976_reference](drugs/drug_tocainide/Tocainide_Lalka1976_reference.md) | — | 1-compartment (no model) | 7 | Lalka D et al., Kinetics of the oral antiarrhythmic lid…, Clinical pharmacology and t… (1976) | [10.1002/cpt1976196757](https://doi.org/10.1002/cpt1976196757) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vildagliptin (measured concentrations) drives DPP-4 inhibition (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vildagliptin free (simulated) plasma, muscle and liver concentrations inhibit DPP-4 via a direct Imax model, with IC50 = 1350 mg/L (4.5 nmol/L); the paper does not state the Imax value or any kin/kout/ke0. Efficacy was assessed as the percentage of the dosing interval with ≥80% (or 92%) inhibition, achieved in plasma for 25–100 mg q12h (92% only for 50 and 100 mg) and in muscle only with 100 mg q12h, but never in liver.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dias_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,34 +30,34 @@ Dias BB; Olivo LB; de Araújo BV et al. (2026). CPT: pharmacometrics & systems p
   ·  DOI: [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/h/kg) — Estimate (% RSE) | `Q22` · not captured | 2.72 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col1 |
-| CL (L/h/kg) — IIV (% RSE) | `Q22` · not captured | 19.2 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col2 |
-| CL (L/h/kg) — Shrinkage % | `Q22` · not captured | 16 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col3 |
-| V 1 (L/kg) — Estimate (% RSE) | `Q63` · not captured | 1.11 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row2:col1 |
-| Q 1,healthy (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 0.338 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col1 |
-| Q 1,healthy (L/h/kg) — IIV (% RSE) | `Q358` · not captured | 65.4 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col2 |
-| Q 1,healthy (L/h/kg) — Shrinkage % | `Q318` · not captured | 30 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col3 |
-| Q 1,diabetic (L/h/kg) — Estimate (% RSE) | `Q358` · not captured | 2.61 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col1 |
-| Q 1,diabetic (L/h/kg) — IIV (% RSE) | `Q358` · not captured | 65.4 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col2 |
-| Q 1,diabetic (L/h/kg) — Shrinkage % | `Q318` · not captured | 30 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col3 |
-| V 2 (L/kg) — Estimate (% RSE) | `Q64` · not captured | 1.85 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row5:col1 |
-| Q in,muscle (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 2.09 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row6:col1 |
-| Q out,muscle (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 14.3 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row7:col1 |
-| V 3 (L/kg) — Estimate (% RSE) | `Q77` · not captured | 2.55 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col1 |
-| V 3 (L/kg) — IIV (% RSE) | `Q77` · not captured | 76.6 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col2 |
-| V 3 (L/kg) — Shrinkage % | `Q77` · not captured | 30 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col3 |
-| Q in,liver (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 2.5 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row9:col1 |
-| Q out,liver,healthy (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 218 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col1 |
-| Q out,liver,healthy (L/h/kg) — IIV (% RSE) | `Q30` · not captured | 72.0 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col2 |
-| Q out,liver,healthy (L/h/kg) — Shrinkage % | `Q318` · not captured | 40 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col3 |
-| Q out,liver,diabetic (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 19.7 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col1 |
-| Q out,liver,diabetic (L/h/kg) — IIV (% RSE) | `Q30` · not captured | 72.0 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col2 |
-| Q out,liver,diabetic (L/h/kg) — Shrinkage % | `Q318` · not captured | 40 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col3 |
-| V 4 (L/kg) — Estimate (% RSE) | `Q61` · not captured | 0.856 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col1 |
-| V 4 (L/kg) — IIV (% RSE) | `Q61` · not captured | 181.4 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col2 |
-| V 4 (L/kg) — Shrinkage % | `Q318` · not captured | 43 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/h/kg) — Estimate (% RSE) | `Q22` · not captured | 2.72 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col1 |
+| PK (driver) | CL (L/h/kg) — IIV (% RSE) | `Q22` · not captured | 19.2 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col2 |
+| PK (driver) | CL (L/h/kg) — Shrinkage % | `Q22` · not captured | 16 | L/h/kg | not captured | exact (not captured) | psp470165-tbl-0001:row1:col3 |
+| PK (driver) | V 1 (L/kg) — Estimate (% RSE) | `Q63` · not captured | 1.11 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row2:col1 |
+| PK (driver) | Q 1,healthy (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 0.338 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col1 |
+| PK (driver) | Q 1,healthy (L/h/kg) — IIV (% RSE) | `Q358` · not captured | 65.4 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col2 |
+| variability | Q 1,healthy (L/h/kg) — Shrinkage % | `Q318` · not captured | 30 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row3:col3 |
+| PK (driver) | Q 1,diabetic (L/h/kg) — Estimate (% RSE) | `Q358` · not captured | 2.61 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col1 |
+| PK (driver) | Q 1,diabetic (L/h/kg) — IIV (% RSE) | `Q358` · not captured | 65.4 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col2 |
+| variability | Q 1,diabetic (L/h/kg) — Shrinkage % | `Q318` · not captured | 30 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row4:col3 |
+| PK (driver) | V 2 (L/kg) — Estimate (% RSE) | `Q64` · not captured | 1.85 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row5:col1 |
+| PK (driver) | Q in,muscle (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 2.09 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row6:col1 |
+| PK (driver) | Q out,muscle (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 14.3 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row7:col1 |
+| PK (driver) | V 3 (L/kg) — Estimate (% RSE) | `Q77` · not captured | 2.55 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col1 |
+| PK (driver) | V 3 (L/kg) — IIV (% RSE) | `Q77` · not captured | 76.6 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col2 |
+| PK (driver) | V 3 (L/kg) — Shrinkage % | `Q77` · not captured | 30 | L/kg | not captured | space_fold (not captured) | psp470165-tbl-0001:row8:col3 |
+| PK (driver) | Q in,liver (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 2.5 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row9:col1 |
+| PK (driver) | Q out,liver,healthy (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 218 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col1 |
+| PK (driver) | Q out,liver,healthy (L/h/kg) — IIV (% RSE) | `Q30` · not captured | 72.0 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col2 |
+| variability | Q out,liver,healthy (L/h/kg) — Shrinkage % | `Q318` · not captured | 40 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row10:col3 |
+| PK (driver) | Q out,liver,diabetic (L/h/kg) — Estimate (% RSE) | `Q30` · not captured | 19.7 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col1 |
+| PK (driver) | Q out,liver,diabetic (L/h/kg) — IIV (% RSE) | `Q30` · not captured | 72.0 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col2 |
+| variability | Q out,liver,diabetic (L/h/kg) — Shrinkage % | `Q318` · not captured | 40 | L/h/kg | not captured | llm (not captured) | psp470165-tbl-0001:row11:col3 |
+| PK (driver) | V 4 (L/kg) — Estimate (% RSE) | `Q61` · not captured | 0.856 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col1 |
+| PK (driver) | V 4 (L/kg) — IIV (% RSE) | `Q61` · not captured | 181.4 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col2 |
+| variability | V 4 (L/kg) — Shrinkage % | `Q318` · not captured | 43 | L/kg | not captured | llm (not captured) | psp470165-tbl-0001:row12:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

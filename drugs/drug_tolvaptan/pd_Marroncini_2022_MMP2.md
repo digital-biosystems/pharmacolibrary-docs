@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives MMP2 activity (in normalized vs 0 µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan (µM concentrations, 48 h exposure) dose-dependently reduced MMP2 activity measured by zymography (normalized vs 0 µM) in HCT-8, HepG2 and SK-N-AS cancer cells, an inhibition associated with reduced cell invasion; the paper does not state a PD model, potency values (Imax/IC50) or rate constants for MMP2, and the only IC50s given are for cell proliferation (52, 38 and 40 µM respectively).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

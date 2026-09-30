@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifaximin (concentrations from the PK model of Francis_2019) drives name (in log10CFU/gland): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Rifaximin mammary-gland exposure (AUC/MIC as the PK/PD surrogate) drives the 24-h reduction in E. coli counts (Δlog10CFU/gland) in the mastitis mouse model, described by an inhibitory sigmoid Emax model with baseline (R = 0.9825). The paper reports Emax 2.36 ± 0.50 log10CFU/gland, Emax − E0 6.91 ± 0.63 log10CFU/gland, EC50 (AUC/MIC) 2.36 ± 0.50 h, and Hill slope N 1.35 ± 0.18, with AUC/MIC targets of 57.80 h and 73.63 h for 2- and 2.5-log10CFU/gland reductions; no rate constants (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,56 +31,56 @@ Wang H; Chen C; Liu C; Chen X; Zhang J; Wang Y; et al. et al. (2023). BMC veteri
   ·  DOI: [10.1186/s12917-022-03564-2](https://doi.org/10.1186/s12917-022-03564-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.18 | n = 6 | not captured | exact (not captured) | Tab3:row3:col1 |
-| T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 7.45 | n = 6 | not captured | exact (not captured) | Tab3:row3:col2 |
-| T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.84 | n = 6 | not captured | exact (not captured) | Tab3:row3:col3 |
-| T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 7.19 | n = 6 | not captured | exact (not captured) | Tab3:row3:col4 |
-| T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.92 | n = 6 | not captured | exact (not captured) | Tab3:row3:col5 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 6.76 | n = 6 | not captured | exact (not captured) | Tab3:row4:col1 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.42 | n = 6 | not captured | exact (not captured) | Tab3:row4:col2 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 6.80 | n = 6 | not captured | exact (not captured) | Tab3:row4:col3 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.11 | n = 6 | not captured | exact (not captured) | Tab3:row4:col4 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.02 | n = 6 | not captured | exact (not captured) | Tab3:row4:col5 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 170.23 | n = 6 | not captured | llm (not captured) | Tab3:row5:col1 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 414.31 | n = 6 | not captured | llm (not captured) | Tab3:row5:col2 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 653.22 | n = 6 | not captured | llm (not captured) | Tab3:row5:col3 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 1287.03 | n = 6 | not captured | llm (not captured) | Tab3:row5:col4 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 25.01 | n = 6 | not captured | exact (not captured) | Tab3:row6:col1 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 49.73 | n = 6 | not captured | exact (not captured) | Tab3:row6:col2 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 83.17 | n = 6 | not captured | exact (not captured) | Tab3:row6:col3 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 162.17 | n = 6 | not captured | exact (not captured) | Tab3:row6:col4 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 9.10 | n = 6 | not captured | exact (not captured) | Tab3:row8:col1 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 11.34 | n = 6 | not captured | exact (not captured) | Tab3:row8:col2 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 9.08 | n = 6 | not captured | exact (not captured) | Tab3:row8:col3 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 10.46 | n = 6 | not captured | exact (not captured) | Tab3:row8:col4 |
-| MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 10.00 | n = 6 | not captured | exact (not captured) | Tab3:row8:col5 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 175.41 | n = 6 | not captured | llm (not captured) | Tab3:row9:col1 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 469.08 | n = 6 | not captured | llm (not captured) | Tab3:row9:col2 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 677.08 | n = 6 | not captured | llm (not captured) | Tab3:row9:col3 |
-| AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 1400.29 | n = 6 | not captured | llm (not captured) | Tab3:row9:col4 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 27.08 | n = 6 | not captured | exact (not captured) | Tab3:row10:col1 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 53.07 | n = 6 | not captured | exact (not captured) | Tab3:row10:col2 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 87.31 | n = 6 | not captured | exact (not captured) | Tab3:row10:col3 |
-| Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 165.99 | n = 6 | not captured | exact (not captured) | Tab3:row10:col4 |
-| V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 1.85 | n = 6 | not captured | exact (not captured) | Tab3:row11:col1 |
-| V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 1.88 | n = 6 | not captured | exact (not captured) | Tab3:row11:col2 |
-| V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.29 | n = 6 | not captured | exact (not captured) | Tab3:row11:col3 |
-| V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.41 | n = 6 | not captured | exact (not captured) | Tab3:row11:col4 |
-| V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.11 | n = 6 | not captured | exact (not captured) | Tab3:row11:col5 |
-| V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.75 | n = 6 | not captured | exact (not captured) | Tab3:row13:col1 |
-| V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.53 | n = 6 | not captured | exact (not captured) | Tab3:row13:col2 |
-| V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.39 | n = 6 | not captured | exact (not captured) | Tab3:row13:col3 |
-| V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.58 | n = 6 | not captured | exact (not captured) | Tab3:row13:col4 |
-| V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.56 | n = 6 | not captured | exact (not captured) | Tab3:row13:col5 |
-| CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.13 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col1 |
-| CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.21 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col2 |
-| CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.14 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col3 |
-| CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 0.40 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col4 |
-| CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 0.97 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col5 |
-| Emax | `Q320` · not captured | 2.36 | log10 CFU/gland | not captured | review_gapfill (not captured) | Wang_2023:review |
-| EC50 | `Q321` · not captured | 2.36 | log10 CFU/gland | not captured | review_gapfill (not captured) | Wang_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.18 | n = 6 | not captured | exact (not captured) | Tab3:row3:col1 |
+| PK (driver) | T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 7.45 | n = 6 | not captured | exact (not captured) | Tab3:row3:col2 |
+| PK (driver) | T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.84 | n = 6 | not captured | exact (not captured) | Tab3:row3:col3 |
+| PK (driver) | T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 7.19 | n = 6 | not captured | exact (not captured) | Tab3:row3:col4 |
+| PK (driver) | T1/2 — Administered Dose (µg/gland) (n = 6) | `Q57` · not captured | 6.92 | n = 6 | not captured | exact (not captured) | Tab3:row3:col5 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 6.76 | n = 6 | not captured | exact (not captured) | Tab3:row4:col1 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.42 | n = 6 | not captured | exact (not captured) | Tab3:row4:col2 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 6.80 | n = 6 | not captured | exact (not captured) | Tab3:row4:col3 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.11 | n = 6 | not captured | exact (not captured) | Tab3:row4:col4 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 7.02 | n = 6 | not captured | exact (not captured) | Tab3:row4:col5 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 170.23 | n = 6 | not captured | llm (not captured) | Tab3:row5:col1 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 414.31 | n = 6 | not captured | llm (not captured) | Tab3:row5:col2 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 653.22 | n = 6 | not captured | llm (not captured) | Tab3:row5:col3 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 1287.03 | n = 6 | not captured | llm (not captured) | Tab3:row5:col4 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 25.01 | n = 6 | not captured | exact (not captured) | Tab3:row6:col1 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 49.73 | n = 6 | not captured | exact (not captured) | Tab3:row6:col2 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 83.17 | n = 6 | not captured | exact (not captured) | Tab3:row6:col3 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 162.17 | n = 6 | not captured | exact (not captured) | Tab3:row6:col4 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 9.10 | n = 6 | not captured | exact (not captured) | Tab3:row8:col1 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 11.34 | n = 6 | not captured | exact (not captured) | Tab3:row8:col2 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 9.08 | n = 6 | not captured | exact (not captured) | Tab3:row8:col3 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 10.46 | n = 6 | not captured | exact (not captured) | Tab3:row8:col4 |
+| PK (driver) | MRT — Administered Dose (µg/gland) (n = 6) | `Q53` · not captured | 10.00 | n = 6 | not captured | exact (not captured) | Tab3:row8:col5 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 175.41 | n = 6 | not captured | llm (not captured) | Tab3:row9:col1 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 469.08 | n = 6 | not captured | llm (not captured) | Tab3:row9:col2 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 677.08 | n = 6 | not captured | llm (not captured) | Tab3:row9:col3 |
+| PK (driver) | AUC24 — Administered Dose (µg/gland) (n = 6) | `Q19` · not captured | 1400.29 | n = 6 | not captured | llm (not captured) | Tab3:row9:col4 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 27.08 | n = 6 | not captured | exact (not captured) | Tab3:row10:col1 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 53.07 | n = 6 | not captured | exact (not captured) | Tab3:row10:col2 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 87.31 | n = 6 | not captured | exact (not captured) | Tab3:row10:col3 |
+| PK (driver) | Cmax — Administered Dose (µg/gland) (n = 6) | `Q32` · not captured | 165.99 | n = 6 | not captured | exact (not captured) | Tab3:row10:col4 |
+| PK (driver) | V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 1.85 | n = 6 | not captured | exact (not captured) | Tab3:row11:col1 |
+| PK (driver) | V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 1.88 | n = 6 | not captured | exact (not captured) | Tab3:row11:col2 |
+| PK (driver) | V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.29 | n = 6 | not captured | exact (not captured) | Tab3:row11:col3 |
+| PK (driver) | V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.41 | n = 6 | not captured | exact (not captured) | Tab3:row11:col4 |
+| PK (driver) | V1 — Administered Dose (µg/gland) (n = 6) | `Q63` · not captured | 2.11 | n = 6 | not captured | exact (not captured) | Tab3:row11:col5 |
+| PK (driver) | V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.75 | n = 6 | not captured | exact (not captured) | Tab3:row13:col1 |
+| PK (driver) | V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.53 | n = 6 | not captured | exact (not captured) | Tab3:row13:col2 |
+| PK (driver) | V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.39 | n = 6 | not captured | exact (not captured) | Tab3:row13:col3 |
+| PK (driver) | V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.58 | n = 6 | not captured | exact (not captured) | Tab3:row13:col4 |
+| PK (driver) | V2 — Administered Dose (µg/gland) (n = 6) | `Q64` · not captured | 0.56 | n = 6 | not captured | exact (not captured) | Tab3:row13:col5 |
+| PK (driver) | CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.13 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col1 |
+| PK (driver) | CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.21 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col2 |
+| PK (driver) | CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 1.14 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col3 |
+| PK (driver) | CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 0.40 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col4 |
+| PK (driver) | CL2 — Administered Dose (µg/gland) (n = 6) | `Q30` · not captured | 0.97 | n = 6 | not captured | special_case (not captured) | Tab3:row14:col5 |
+| PD (effect) | Emax | `Q320` · not captured | 2.36 | log10 CFU/gland | not captured | review_gapfill (not captured) | Wang_2023:review |
+| PD (effect) | EC50 | `Q321` · not captured | 2.36 | log10 CFU/gland | not captured | review_gapfill (not captured) | Wang_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

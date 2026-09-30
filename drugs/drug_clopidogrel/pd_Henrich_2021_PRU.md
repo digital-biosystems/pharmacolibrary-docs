@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Selatogrel, active metabolite of clopidogrel, active metabolite of prasugrel, ticagrelor, AR-C124910XX drive platelet reactivity units: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Selatogrel concentrations (with active metabolites of clopidogrel, prasugrel, ticaglor, and AR-C124910XX as co-drivers) inhibit platelet reactivity (PRU) via a sigmoid Emax model with an effect on platelet P2Y12 receptor dissociation; the paper states an IC50 of 41.9 pmol/L (25.9 ng/ml) for selatogrel, with kout and kPr as turnover parameters, but the excerpts do not give the Imax, Emax, gamma, kin, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrich_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

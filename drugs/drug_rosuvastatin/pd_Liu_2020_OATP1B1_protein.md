@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Berberine (measured concentrations) drives OATP1B1 protein expression (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Berberine (5–50 μM, 24 h) concentration-dependently enhanced OATP1B1 protein expression in HepG2 cells (with rosuvastatin as the studied statin context), an Emax-type stimulatory effect; the paper does not state an Emax or IC50 for the protein response, but reports EC50 values for OATP1B1 promoter activation of 12.19 ± 0.86 μM via hFXR and 32.15 ± 2.32 μM via hLXRα, suggesting a mechanism of nuclear receptor (FXR/LXRα)-mediated transcriptional upregulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

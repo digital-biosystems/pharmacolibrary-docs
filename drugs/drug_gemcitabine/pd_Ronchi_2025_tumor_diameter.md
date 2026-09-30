@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives name (in cm): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine plasma concentrations (mg/L, from the cited Doi_2017 PK model) act on tumor diameter (cm) in a disease-progression (tumor growth inhibition) model, in which the drug effect is a first-order inhibition of exponential tumor growth; the paper does not report potency values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ronchi_2025`
 - **model family:** `disease_progression`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Ronchi D; Tosca EM; Magni P et al. (2025). Journal of pharmacokinetics and pharm
   ·  DOI: [10.1007/s10928-025-09970-x](https://doi.org/10.1007/s10928-025-09970-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kindler [30] — Number of patients in the gemcitabine group | `Q100` · not captured | 316 | not captured | not captured | llm (not captured) | Tab1:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Kindler [30] — Number of patients in the gemcitabine group | `Q100` · not captured | 316 | not captured | not captured | llm (not captured) | Tab1:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

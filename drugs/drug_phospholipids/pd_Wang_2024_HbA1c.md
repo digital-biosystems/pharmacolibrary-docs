@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ω-3 PUFA drives HbA1c (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma ω-3 PUFA concentrations inhibit HbA1c (%) via an inhibitory Emax model (E0 5.641%, Imax 0.597%, IC50 0.090 g/L); the paper does not state a specific mechanism (e.g. kin/kout) beyond this dose-dependent decrease, with ω-3 PUFA PK described by a two-compartment model (Ka 1.175 h⁻¹, V 26.151 L, CL 0.411 L·h⁻¹, HDL a significant covariate).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,32 +31,32 @@ Wang L; Huang X; Sun M; Zheng T; Zheng L; Lin X; et al. et al. (2024). Nutrition
   ·  DOI: [10.1038/s41387-024-00262-w](https://doi.org/10.1038/s41387-024-00262-w)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ka — Final model (CV%) | `Q49` · not captured | 1.175 | not captured | not captured | exact (not captured) | Tab2:row2:col1 |
-| Ka — Bootstrap results | `Q49` · not captured | 1.184 | not captured | not captured | exact (not captured) | Tab2:row2:col2 |
-| Ka — Bootstrap results | `Q49` · not captured | 0.005 | not captured | not captured | exact (not captured) | Tab2:row2:col3 |
-| V (L) — Final model (CV%) | `Q61` · not captured | 26.151 | L | not captured | exact (not captured) | Tab2:row3:col1 |
-| V (L) — Bootstrap results | `Q61` · not captured | 25.99 | L | not captured | exact (not captured) | Tab2:row3:col2 |
-| V (L) — Bootstrap results | `Q61` · not captured | 12.995 | L | not captured | exact (not captured) | Tab2:row3:col3 |
-| CL (L·h-1) — Final model (CV%) | `Q22` · not captured | 0.411 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col1 |
-| CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.568 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col2 |
-| CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.37 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col3 |
-| σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
-| σ — Bootstrap results | `Q315` · not captured | 0.380 | not captured | not captured | llm (not captured) | Tab2:row5:col2 |
-| σ — Bootstrap results | `Q315` · not captured | 0.008 | not captured | not captured | llm (not captured) | Tab2:row5:col3 |
-| E0 (%) — Final model (CV%) | `Q324` · not captured | 5.641 | not captured | not captured | exact (not captured) | Tab2:row6:col1 |
-| E0 (%) — Bootstrap results | `Q324` · not captured | 5.58 | not captured | not captured | exact (not captured) | Tab2:row6:col2 |
-| E0 (%) — Bootstrap results | `Q324` · not captured | 5.528 | not captured | not captured | exact (not captured) | Tab2:row6:col3 |
-| IC50 (g/L) — Final model (CV%) | `Q322` · not captured | 0.090 | g/L | not captured | exact (not captured) | Tab2:row7:col1 |
-| IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col2 |
-| IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col3 |
-| Imax (%) — Final model (CV%) | `Q323` · not captured | 0.597 | not captured | not captured | exact (not captured) | Tab2:row8:col1 |
-| Imax (%) — Bootstrap results | `Q323` · not captured | 0.615 | not captured | not captured | exact (not captured) | Tab2:row8:col2 |
-| Imax (%) — Bootstrap results | `Q323` · not captured | 0.425 | not captured | not captured | exact (not captured) | Tab2:row8:col3 |
-| σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col1 |
-| σ — Bootstrap results | `Q315` · not captured | 1.615 | not captured | not captured | llm (not captured) | Tab2:row9:col2 |
-| σ — Bootstrap results | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ka — Final model (CV%) | `Q49` · not captured | 1.175 | not captured | not captured | exact (not captured) | Tab2:row2:col1 |
+| PK (driver) | Ka — Bootstrap results | `Q49` · not captured | 1.184 | not captured | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | Ka — Bootstrap results | `Q49` · not captured | 0.005 | not captured | not captured | exact (not captured) | Tab2:row2:col3 |
+| PK (driver) | V (L) — Final model (CV%) | `Q61` · not captured | 26.151 | L | not captured | exact (not captured) | Tab2:row3:col1 |
+| PK (driver) | V (L) — Bootstrap results | `Q61` · not captured | 25.99 | L | not captured | exact (not captured) | Tab2:row3:col2 |
+| PK (driver) | V (L) — Bootstrap results | `Q61` · not captured | 12.995 | L | not captured | exact (not captured) | Tab2:row3:col3 |
+| PK (driver) | CL (L·h-1) — Final model (CV%) | `Q22` · not captured | 0.411 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col1 |
+| PK (driver) | CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.568 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col2 |
+| PK (driver) | CL (L·h-1) — Bootstrap results | `Q22` · not captured | 0.37 | L·h-1 | not captured | exact (not captured) | Tab2:row4:col3 |
+| variability | σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
+| variability | σ — Bootstrap results | `Q315` · not captured | 0.380 | not captured | not captured | llm (not captured) | Tab2:row5:col2 |
+| variability | σ — Bootstrap results | `Q315` · not captured | 0.008 | not captured | not captured | llm (not captured) | Tab2:row5:col3 |
+| PD (effect) | E0 (%) — Final model (CV%) | `Q324` · not captured | 5.641 | not captured | not captured | exact (not captured) | Tab2:row6:col1 |
+| PD (effect) | E0 (%) — Bootstrap results | `Q324` · not captured | 5.58 | not captured | not captured | exact (not captured) | Tab2:row6:col2 |
+| PD (effect) | E0 (%) — Bootstrap results | `Q324` · not captured | 5.528 | not captured | not captured | exact (not captured) | Tab2:row6:col3 |
+| PD (effect) | IC50 (g/L) — Final model (CV%) | `Q322` · not captured | 0.090 | g/L | not captured | exact (not captured) | Tab2:row7:col1 |
+| PD (effect) | IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col2 |
+| PD (effect) | IC50 (g/L) — Bootstrap results | `Q322` · not captured | 0.089 | g/L | not captured | exact (not captured) | Tab2:row7:col3 |
+| PD (effect) | Imax (%) — Final model (CV%) | `Q323` · not captured | 0.597 | not captured | not captured | exact (not captured) | Tab2:row8:col1 |
+| PD (effect) | Imax (%) — Bootstrap results | `Q323` · not captured | 0.615 | not captured | not captured | exact (not captured) | Tab2:row8:col2 |
+| PD (effect) | Imax (%) — Bootstrap results | `Q323` · not captured | 0.425 | not captured | not captured | exact (not captured) | Tab2:row8:col3 |
+| variability | σ — Final model (CV%) | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col1 |
+| variability | σ — Bootstrap results | `Q315` · not captured | 1.615 | not captured | not captured | llm (not captured) | Tab2:row9:col2 |
+| variability | σ — Bootstrap results | `Q315` · not captured | 0.354 | not captured | not captured | llm (not captured) | Tab2:row9:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

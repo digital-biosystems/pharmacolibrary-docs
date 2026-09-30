@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prucalopride (concentrations from the PK model of van_2016::estimate) drives name (in % increase): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Prucalopride (nM concentrations) directly stimulated cholinergically mediated EFS-evoked contractions of human isolated colon circular muscle, described by an Emax model with EC50 855 nM and a maximum increase of 33% (in % increase of EFS-evoked AUC); the paper does not state a turnover/indirect-response mechanism or rate constants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Broad_2013`
 - **model family:** `emax`
 - **driver:** `cited_pk`

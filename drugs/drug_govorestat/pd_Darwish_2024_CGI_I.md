@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trofinetide drives Clinical Global Impression–Improvement (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the exposure–response analysis, trofinetide exposure measures (steady-state Cmax and AUC0–12, in μg·h/mL) were related to the CGI-I score (seven-point clinician-rated improvement scale), with a statistically significant exposure–response relationship; the CGI-I model suggested greater improvement for participants reaching an average steady-state Cmax of 150 μg/mL. The paper does not state a mechanism (e.g., inhibition of production or elimination) or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the CGI-I model, and in the LAVENDER study modeling for CGI-I was not completed because no clear relationship with exposure was found.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2024`
 - **model family:** `linear`
 - **driver:** `not_resolved`

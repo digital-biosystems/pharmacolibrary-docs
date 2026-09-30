@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buformin (measured concentrations) drives cell viability (in absorbance) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Buformin concentration-dependently inhibits U-2 OS osteosarcoma cell viability (CCK-8 absorbance, 490 nm) after 72 h exposure, with an IC50 of 69.1 µM; the paper attributes the antiproliferative effect to AMPK pathway activation (upregulated AMPK phosphorylation, suppressed S6 phosphorylation, downregulated cyclin D1 and MMP9) but does not state a formal PD model or parameters such as Imax, kin, kout, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ding_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

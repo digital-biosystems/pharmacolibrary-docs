@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives EEG total amplitude in 11.5-30 Hz (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (from a two-exponential IV model after 2.5 mg kg−1) were linked to the increase in EEG total amplitude in the 11.5–30 Hz range by a direct sigmoidal Emax model (no effect-compartment), reflecting benzodiazepine action on GABA-ergic neurotransmission; the paper reports E0, Emax, EC50 (EC50,u for unbound concentration) and shape factor n but the excerpts do not give their numeric values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hovinga_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,24 +31,24 @@ Hovinga S; Stijnen AM; Langemeijer MW; Mandema JW; van Bezooijen CF; Danhof M et
   ·  DOI: [10.1111/j.1476-5381.1992.tb14482.x](https://doi.org/10.1111/j.1476-5381.1992.tb14482.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Total body clearance (ml minm ' kg-') — 4 | `Q22` · not captured | 104 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col1 |
-| Total body clearance (ml minm ' kg-') — 13 | `Q22` · not captured | 96 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col2 |
-| Total body clearance (ml minm ' kg-') — 24 | `Q22` · not captured | 75 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col3 |
-| Total body clearance (ml minm ' kg-') — 29 | `Q22` · not captured | 66 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col4 |
-| Steady state volume of — 4 | `Q65` · not captured | 3.4 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col1 |
-| Steady state volume of — 13 | `Q65` · not captured | 2.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col2 |
-| Steady state volume of — 24 | `Q65` · not captured | 3.6 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col3 |
-| Steady state volume of — 29 | `Q65` · not captured | 3.3 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col4 |
-| distribution (I kg-') Volume of the central — 4 | `Q61` · not captured | 1.2 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col1 |
-| distribution (I kg-') Volume of the central — 13 | `Q61` · not captured | 0.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col2 |
-| distribution (I kg-') Volume of the central — 24 | `Q61` · not captured | 0.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col3 |
-| distribution (I kg-') Volume of the central — 29 | `Q61` · not captured | 1.1 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col4 |
-| compartment (I kg-') Elimination half-life (min) — 4 | `Q57` · not captured | 30 | min | not captured | llm (not captured) | tab_1:row5:col1 |
-| compartment (I kg-') Elimination half-life (min) — 13 | `Q57` · not captured | 32 | min | not captured | llm (not captured) | tab_1:row5:col2 |
-| compartment (I kg-') Elimination half-life (min) — 24 | `Q57` · not captured | 49 | min | not captured | llm (not captured) | tab_1:row5:col3 |
-| compartment (I kg-') Elimination half-life (min) — 29 | `Q57` · not captured | 50 | min | not captured | llm (not captured) | tab_1:row5:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Total body clearance (ml minm ' kg-') — 4 | `Q22` · not captured | 104 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col1 |
+| PK (driver) | Total body clearance (ml minm ' kg-') — 13 | `Q22` · not captured | 96 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col2 |
+| PK (driver) | Total body clearance (ml minm ' kg-') — 24 | `Q22` · not captured | 75 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col3 |
+| PK (driver) | Total body clearance (ml minm ' kg-') — 29 | `Q22` · not captured | 66 | ml minm ' kg-' | not captured | llm_confirmed (not captured) | tab_1:row2:col4 |
+| PK (driver) | Steady state volume of — 4 | `Q65` · not captured | 3.4 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col1 |
+| PK (driver) | Steady state volume of — 13 | `Q65` · not captured | 2.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col2 |
+| PK (driver) | Steady state volume of — 24 | `Q65` · not captured | 3.6 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col3 |
+| PK (driver) | Steady state volume of — 29 | `Q65` · not captured | 3.3 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col4 |
+| PK (driver) | distribution (I kg-') Volume of the central — 4 | `Q61` · not captured | 1.2 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col1 |
+| PK (driver) | distribution (I kg-') Volume of the central — 13 | `Q61` · not captured | 0.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col2 |
+| PK (driver) | distribution (I kg-') Volume of the central — 24 | `Q61` · not captured | 0.9 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col3 |
+| PK (driver) | distribution (I kg-') Volume of the central — 29 | `Q61` · not captured | 1.1 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col4 |
+| PK (driver) | compartment (I kg-') Elimination half-life (min) — 4 | `Q57` · not captured | 30 | min | not captured | llm (not captured) | tab_1:row5:col1 |
+| PK (driver) | compartment (I kg-') Elimination half-life (min) — 13 | `Q57` · not captured | 32 | min | not captured | llm (not captured) | tab_1:row5:col2 |
+| PK (driver) | compartment (I kg-') Elimination half-life (min) — 24 | `Q57` · not captured | 49 | min | not captured | llm (not captured) | tab_1:row5:col3 |
+| PK (driver) | compartment (I kg-') Elimination half-life (min) — 29 | `Q57` · not captured | 50 | min | not captured | llm (not captured) | tab_1:row5:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -26,16 +26,16 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_ADP_induced_platelet_aggregation.md) | Gelbenegger (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_Closure_time.md) | Gelbenegger (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_Platelet_reactivity_index.md) | Gelbenegger (2022) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Gupta_2020](drugs/drug_cangrelor/pd_Gupta_2020_Mpro_inhibitory_activity.md) | Gupta A et al., Structure-Based Virtual Screening and B…, ACS omega (2020) | [10.1021/acsomega.0c04808](https://doi.org/10.1021/acsomega.0c04808) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vargas_2021](drugs/drug_cangrelor/pd_Vargas_2021_maximal_platelet_aggregation_inhibition.md) | Vargas D et al., Cangrelor PK/PD analysis in post-operat…, Journal of thrombosis and h… (2021) | [10.1111/jth.15141](https://doi.org/10.1111/jth.15141) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Gupta_2020](drugs/drug_cangrelor/pd_Gupta_2020_Mpro_activity.md) | Gupta A et al., Structure-Based Virtual Screening and B…, ACS omega (2020) | [10.1021/acsomega.0c04808](https://doi.org/10.1021/acsomega.0c04808) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_cangrelor/pd_Henrich_2021_IPA.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_cangrelor/pd_Henrich_2021_inhibition_of_platelet_aggregation.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2_ADP_induced_platelet_aggregation](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_ADP_induced_platelet_aggregation.md) | name ← cangrelor · inhibition effect | — | Gelbenegger (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2_Closure_time](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_Closure_time.md) | name ← cangrelor · inhibition effect | — | Gelbenegger (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gelbenegger_2022_2_Platelet_reactivity_index](drugs/drug_cangrelor/pd_Gelbenegger_2022_2_Platelet_reactivity_index.md) | name ← cangrelor · inhibition effect | — | Gelbenegger (2022) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gupta_2020_Mpro_inhibitory_activity](drugs/drug_cangrelor/pd_Gupta_2020_Mpro_inhibitory_activity.md) | name ← cobicistat · inhibition effect | — | Gupta A et al., Structure-Based Virtual Screening and B…, ACS omega (2020) | [10.1021/acsomega.0c04808](https://doi.org/10.1021/acsomega.0c04808) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Vargas_2021_maximal_platelet_aggregation_inhibition](drugs/drug_cangrelor/pd_Vargas_2021_maximal_platelet_aggregation_inhibition.md) | name ← cangrelor · direct Emax (saturable) effect | — | Vargas D et al., Cangrelor PK/PD analysis in post-operat…, Journal of thrombosis and h… (2021) | [10.1111/jth.15141](https://doi.org/10.1111/jth.15141) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Gupta_2020_Mpro_activity](drugs/drug_cangrelor/pd_Gupta_2020_Mpro_activity.md) | name ← cobicistat · inhibition effect | — | Gupta A et al., Structure-Based Virtual Screening and B…, ACS omega (2020) | [10.1021/acsomega.0c04808](https://doi.org/10.1021/acsomega.0c04808) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021_IPA](drugs/drug_cangrelor/pd_Henrich_2021_IPA.md) | Inhibition of platelet aggregation ← selatogrel · inhibition effect | — | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021_inhibition_of_platelet_aggregation](drugs/drug_cangrelor/pd_Henrich_2021_inhibition_of_platelet_aggregation.md) | name ← selatogrel, active metabolite of clopidogrel, active metabolite of prasugrel, ticagrelor, active metabolite of ticagrelor · direct sigmoid Emax (Hill) effect | — | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
 
 ## Pharmacogenomics (PGx)
 

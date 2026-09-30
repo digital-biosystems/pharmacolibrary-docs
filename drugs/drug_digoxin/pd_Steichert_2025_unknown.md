@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enalaprilat (measured concentrations) drives angiotensin II/angiotensin I ratio (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Enalaprilat concentration (µg/L) inhibits the angiotensin II/angiotensin I ratio (a measure of ACE activity) via an Imax model with full inhibition and a sigmoidicity factor in healthy adults, with an effect compartment (ke0 = 0.48) to capture the delay between plasma concentration and effect; baseline ratio E0 = 0.043 and IC50 = 30.01 µg/L (RSE 27.8%). In children with heart failure the same inhibitory Imax relationship was used without a sigmoidicity factor, with a lower half-maximal inhibitory concentration than in adults.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Steichert_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,46 +31,46 @@ Steichert M; Cawello W; Burckhardt BB; Suessenbach FK; Laeer S; On Behalf Of The
   ·  DOI: [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ktr — Estimate | `Q306` · not captured | 5.31 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row1:col2 |
-| ktr — Relative Standard Error (%) | `Q306` · not captured | 25.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row1:col3 |
-| Mtt — Estimate | `Q81` · not captured | 1.46 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row2:col2 |
-| Mtt — Relative Standard Error (%) | `Q81` · not captured | 11.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row2:col3 |
-| ka — Estimate | `Q49` · not captured | 1.19 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row3:col2 |
-| ka — Relative Standard Error (%) | `Q49` · not captured | 8.6 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row3:col3 |
-| CL/F — Estimate | `Q27` · not captured | 36.39 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row4:col2 |
-| CL/F — Relative Standard Error (%) | `Q27` · not captured | 10.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row4:col3 |
-| V1/F — Estimate | `Q290` · not captured | 223.71 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row5:col2 |
-| V1/F — Relative Standard Error (%) | `Q290` · not captured | 15.3 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row5:col3 |
-| Q/F — Estimate | `Q69` · not captured | 6.38 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row6:col2 |
-| Q/F — Relative Standard Error (%) | `Q69` · not captured | 13.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row6:col3 |
-| V2/F — Estimate | `Q82` · not captured | 108.26 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row7:col2 |
-| V2/F — Relative Standard Error (%) | `Q82` · not captured | 27.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row7:col3 |
-| ke0 — Estimate | `Q326` · not captured | 0.48 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row8:col2 |
-| ke0 — Relative Standard Error (%) | `Q326` · not captured | 21.9 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row8:col3 |
-| E0 — Estimate | `Q324` · not captured | 0.043 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row10:col2 |
-| E0 — Relative Standard Error (%) | `Q324` · not captured | 39.1 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row10:col3 |
-| IC50 — Estimate | `Q322` · not captured | 30.01 | µg/L | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row11:col2 |
-| IC50 — Relative Standard Error (%) | `Q322` · not captured | 27.8 | µg/L | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row11:col3 |
-| IIV ktr — Estimate | `Q306` · not captured | 72.89 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row13:col2 |
-| IIV ktr — Relative Standard Error (%) | `Q306` · not captured | 25.6 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row13:col3 |
-| IIV Mtt — Estimate | `Q312` · not captured | 33.7 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row14:col2 |
-| IIV Mtt — Relative Standard Error (%) | `Q312` · not captured | 24.1 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row14:col3 |
-| IIV CL/F — Estimate | `Q312` · not captured | 30.17 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row15:col2 |
-| IIV CL/F — Relative Standard Error (%) | `Q312` · not captured | 25.2 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row15:col3 |
-| IIV V1/F — Estimate | `Q290` · not captured | 46.61 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row16:col2 |
-| IIV V1/F — Relative Standard Error (%) | `Q312` · not captured | 23.6 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row16:col3 |
-| IIV E0 — Estimate | `Q312` · not captured | 141.9 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row17:col2 |
-| IIV E0 — Relative Standard Error (%) | `Q312` · not captured | 24.0 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row17:col3 |
-| IIV IC50 — Estimate | `Q322` · not captured | 79.35 | µg/L | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row18:col2 |
-| IIV IC50 — Relative Standard Error (%) | `Q312` · not captured | 30.4 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row18:col3 |
-| Proportional error — Estimate | `Q316` · not captured | 0.072 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row22:col2 |
-| Proportional error — Relative Standard Error (%) | `Q316` · not captured | 12.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row22:col3 |
-| Additive error — Estimate | `Q317` · not captured | 0.42 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row23:col2 |
-| Additive error — Relative Standard Error (%) | `Q317` · not captured | 8.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row23:col3 |
-| Proportional error — Estimate | `Q316` · not captured | 0.41 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row25:col2 |
-| Proportional error — Relative Standard Error (%) | `Q316` · not captured | 8.9 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row25:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ktr — Estimate | `Q306` · not captured | 5.31 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row1:col2 |
+| PK (driver) | ktr — Relative Standard Error (%) | `Q306` · not captured | 25.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row1:col3 |
+| PK (driver) | Mtt — Estimate | `Q81` · not captured | 1.46 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row2:col2 |
+| PK (driver) | Mtt — Relative Standard Error (%) | `Q81` · not captured | 11.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row2:col3 |
+| PK (driver) | ka — Estimate | `Q49` · not captured | 1.19 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row3:col2 |
+| PK (driver) | ka — Relative Standard Error (%) | `Q49` · not captured | 8.6 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row3:col3 |
+| PK (driver) | CL/F — Estimate | `Q27` · not captured | 36.39 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row4:col2 |
+| PK (driver) | CL/F — Relative Standard Error (%) | `Q27` · not captured | 10.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row4:col3 |
+| PK (driver) | V1/F — Estimate | `Q290` · not captured | 223.71 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row5:col2 |
+| PK (driver) | V1/F — Relative Standard Error (%) | `Q290` · not captured | 15.3 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row5:col3 |
+| PK (driver) | Q/F — Estimate | `Q69` · not captured | 6.38 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row6:col2 |
+| PK (driver) | Q/F — Relative Standard Error (%) | `Q69` · not captured | 13.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row6:col3 |
+| PK (driver) | V2/F — Estimate | `Q82` · not captured | 108.26 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row7:col2 |
+| PK (driver) | V2/F — Relative Standard Error (%) | `Q82` · not captured | 27.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row7:col3 |
+| PD (effect) | ke0 — Estimate | `Q326` · not captured | 0.48 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row8:col2 |
+| PD (effect) | ke0 — Relative Standard Error (%) | `Q326` · not captured | 21.9 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row8:col3 |
+| PD (effect) | E0 — Estimate | `Q324` · not captured | 0.043 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row10:col2 |
+| PD (effect) | E0 — Relative Standard Error (%) | `Q324` · not captured | 39.1 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row10:col3 |
+| PD (effect) | IC50 — Estimate | `Q322` · not captured | 30.01 | µg/L | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row11:col2 |
+| PD (effect) | IC50 — Relative Standard Error (%) | `Q322` · not captured | 27.8 | µg/L | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row11:col3 |
+| PK (driver) | IIV ktr — Estimate | `Q306` · not captured | 72.89 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row13:col2 |
+| PK (driver) | IIV ktr — Relative Standard Error (%) | `Q306` · not captured | 25.6 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row13:col3 |
+| variability | IIV Mtt — Estimate | `Q312` · not captured | 33.7 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row14:col2 |
+| variability | IIV Mtt — Relative Standard Error (%) | `Q312` · not captured | 24.1 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row14:col3 |
+| variability | IIV CL/F — Estimate | `Q312` · not captured | 30.17 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row15:col2 |
+| variability | IIV CL/F — Relative Standard Error (%) | `Q312` · not captured | 25.2 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row15:col3 |
+| PK (driver) | IIV V1/F — Estimate | `Q290` · not captured | 46.61 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row16:col2 |
+| variability | IIV V1/F — Relative Standard Error (%) | `Q312` · not captured | 23.6 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row16:col3 |
+| variability | IIV E0 — Estimate | `Q312` · not captured | 141.9 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row17:col2 |
+| variability | IIV E0 — Relative Standard Error (%) | `Q312` · not captured | 24.0 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row17:col3 |
+| PD (effect) | IIV IC50 — Estimate | `Q322` · not captured | 79.35 | µg/L | not captured | llm_confirmed (not captured) | pharmaceutics-17-01345-t002:row18:col2 |
+| variability | IIV IC50 — Relative Standard Error (%) | `Q312` · not captured | 30.4 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-17-01345-t002:row18:col3 |
+| variability | Proportional error — Estimate | `Q316` · not captured | 0.072 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row22:col2 |
+| variability | Proportional error — Relative Standard Error (%) | `Q316` · not captured | 12.2 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row22:col3 |
+| variability | Additive error — Estimate | `Q317` · not captured | 0.42 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row23:col2 |
+| variability | Additive error — Relative Standard Error (%) | `Q317` · not captured | 8.7 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row23:col3 |
+| variability | Proportional error — Estimate | `Q316` · not captured | 0.41 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row25:col2 |
+| variability | Proportional error — Relative Standard Error (%) | `Q316` · not captured | 8.9 | not captured | not captured | exact (not captured) | pharmaceutics-17-01345-t002:row25:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

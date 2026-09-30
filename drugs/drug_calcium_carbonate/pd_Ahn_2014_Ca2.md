@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ionized calcium drives Ionized calcium (in unknown): indirect response — drug inhibits the loss of Ionized calcium.
+
+**Model:** No model was generated from this record.
+
+> In this K-PD model, absorbed (but unobserved) calcium from calcium carbonate (or thermal spring water) acts on the measured PTH response: the absorbed Ca2+ inhibits the production (secretion) of PTH, modeled as an indirect response model with zero-order input (kinPTH) and first-order output (koutPTH) rates, while Ca2+ itself was described by a separate indirect response model with kinCa and koutCa. The paper does not report numeric potency or rate values (Imax, IC50, kin, kout) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahn_2014`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives Enhanced Liver Fibrosis score (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide (dose in mg/week) reduces the Enhanced Liver Fibrosis (ELF) score (WMD = −0.49, 95%CI: −0.70 to −0.29); the paper does not state a pharmacodynamic mechanism or model, and no potency (IC50/Emax) or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kan_2025`
 - **model family:** `linear`
 - **driver:** `cited_pk`

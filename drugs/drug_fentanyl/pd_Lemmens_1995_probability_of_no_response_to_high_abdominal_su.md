@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alfentanil (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking alfentanil plasma concentrations (µg/L) to the probability of no response to high abdominal surgery, and no mechanism, potency (IC50/EC50/Emax) or rate parameters for this relationship are given in the excerpts; only general statements are provided, e.g. alfentanil concentrations needed to suppress clinical responses vary 4- to 5-fold between patients and its t½ke0 is 1.1 minutes.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lemmens_1995`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

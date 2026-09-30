@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-arachidonoyl glycine (NAGly) (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> N-arachidonoyl glycine (NAGly) directly inhibits Cav3.1 T-type calcium currents (about 70% inhibition at 3 µM, developing within minutes and reversible with BSA perfusion, 94 ± 4% washout recovery), an effect attributed to a hyperpolarized shift in the steady-state inactivation of T-currents; the paper does not report Emax, IC50/EC50, or kinetic parameters for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barbara_2009`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

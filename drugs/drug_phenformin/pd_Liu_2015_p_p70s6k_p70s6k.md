@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives p-p70s6k/p70s6k ratio (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin concentrations (0–4 mM) were applied to breast cancer cell lines for 24 h, and the p-p70s6k/p70s6k ratio was measured by western blot as a readout of mTOR pathway inhibition; the paper does not state a PD model or mechanism for this response. Reported IC50 values for cell viability were 1.184 mM (MCF7), 0.665 mM (ZR-75-1), 2.347 mM (MDA-MB-231) and 1.885 mM (SUM1315); no Imax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

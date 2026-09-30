@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sibutramine (measured concentrations) drives Mean blood pressure (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a PD model for blood pressure; it only reports that oral sibutramine 30 mg/kg in conscious beagle dogs raised mean blood pressure with a maximal increase of 51 ΔmmHg at 6 h post-dose (and heart rate +76 Δbpm at 9 h), without stating a mechanism or any Emax/IC50 parameters for the BP response (the IC50 of 3.92 μM with Hillslope 1.9768 refers to hERG channel inhibition, not blood pressure).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yun_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

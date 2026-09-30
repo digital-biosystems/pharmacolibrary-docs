@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives p-ERK/ERK ratio (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the p-ERK/ERK ratio; phenformin (0–4 mM, 24 h) was only used qualitatively in Western blots, and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values for this response are given. The only quantitative values are cell viability IC50s of 1.184 mM (MCF7), 0.665 mM (ZR-75-1), 2.347 mM (MDA-MB-231) and 1.885 mM (SUM1315), which were used as treatment concentrations, not as a potency parameter for p-ERK/ERK.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-BA (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for WNT3A: PEG–BA (0.4–100 µM) treatment of MIA PaCa-2 cells caused dysregulation of the chemoresistance gene WNT3A (measured as gene expression, unit not stated), but no mechanism, Imax/IC50, kin/kout, ke0 or slope values for this response are given. The only potency values reported are cytotoxicity IC50s (XTT viability): PEG–BA 1.35 ± 0.11 µM in MIA PaCa-2 cells versus 9.84 ± 0.10 µM in Vero cells (SI 7.28).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fru_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

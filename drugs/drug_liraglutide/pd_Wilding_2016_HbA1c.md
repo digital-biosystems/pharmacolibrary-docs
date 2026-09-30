@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Carlsson_2021::estimate) drives change in glycated haemoglobin (in mmol/mol): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In individuals with type 2 diabetes, plasma liraglutide concentration (nM, from cited PK) was related to change in HbA1c (mmol/mol) via a sigmoid Emax (inhibitory) exposure–response model with covariate effects (e.g. gender on Emax, E0 placebo response); the HbA1c reduction increased with exposure and plateaued at ~21 nM (~500 nM×h AUC), with no numeric EC50, Emax or γ values reported, and no turnover (kin/kout) or effect-compartment mechanism described; mediator analysis attributed the incremental HbA1c reduction above 1.8 mg almost entirely to weight loss.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

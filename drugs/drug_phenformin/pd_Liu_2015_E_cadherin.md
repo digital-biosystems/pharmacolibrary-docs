@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives E-cadherin expression (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for E-cadherin expression; phenformin (0–4 mM, 24 h exposure) was reported to increase E-cadherin expression (a MET effect, opposite to the record's 'inhibition' direction) in MDA-MB-231 cells with moderate changes in MCF-7, ZR-75-1 and SUM1315 cells, and cell viability IC50 values of 1.184, 0.665, 2.347 and 1.885 mM were reported for these four lines respectively, but no Imax, Emax, kin, kout, ke0 or Hill coefficient is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

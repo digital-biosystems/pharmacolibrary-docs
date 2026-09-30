@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT-100 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BCT-100 (pegylated arginase) reduces mesothelioma cell viability in a dose-dependent manner, with 72-h IC50 values of 14.3 ± 2.0, 13.0 ± 1.8, 22.4 ± 6.0, 20.8 ± 5.6 and 18.6 ± 6.5 mU/ml in H28, 211H, H226, H2052 and H2452 cells respectively; the paper does not state a formal PD model or mechanism parameters, though the effect is attributed to arginine depletion leading to apoptosis and G1 arrest.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lam_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

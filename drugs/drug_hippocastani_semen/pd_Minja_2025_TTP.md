@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Delpazolid drives mycobacterial load (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Delpazolid plasma exposure (AUC0-24, mg/L per h) was linked to the change in sputum mycobacterial load measured as time to positivity (TTP) in an Emax-type exposure-response model; the paper does not state Imax, IC50/EC50, Emax, or gamma values, but reports a plateau in efficacy at an AUC0-24 of 50 mg/L per h (near the median exposure at 1200 mg once daily), with a bilinear model for log10 TTP increase showing a node point at day 7-8; no mechanism (e.g. kin/kout or effect compartment) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Minja_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

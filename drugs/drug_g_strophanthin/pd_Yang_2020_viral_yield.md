@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tylophorine-based compounds (measured concentrations) drives name (in p.f.u./ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tylophorine-based compounds (dbq33b, dbq33b4p7, PI09) inhibit viral yield (p.f.u./ml) of HCoV-OC43 and HCoV-229E, with complete reductions of ~7–8 log (HCoV-OC43) at 30, 100, and 300 nM and ~6–7 log (HCoV-229E) at 100, 300, and 600 nM, respectively; EC50 values are reported up to 8 nM (FIPV/HCoV-OC43) and 6.5 nM (HCoV-229E). The paper does not state a pharmacodynamic mechanism (e.g., kin/kout or Emax parameters) for the yield reduction, only that the compounds target viral RNA.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

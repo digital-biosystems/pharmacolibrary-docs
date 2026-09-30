@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dabigatran drives thromboelastometric reaction time (in min): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Dabigatran plasma concentration prolongs thromboelastometric reaction time (R, min) in rabbits given intravenous dabigatran 15 mg.kg−1, described by a sigmoidal Emax model with an effect compartment (delayed concentration–effect) link; the paper also tested an indirect turnover model but states no distinct mechanism beyond direct thrombin inhibition. Key estimates: E0 100 sec, Emax 899 sec, Ce50/Cp50 20.1 mg.L−1 (95% CI 19.7.22.6, BSV 0.7%) and 25.9 mg.L−1 (BSV 26.2%), and equilibration half-life T1/2keo 1.4 min (BSV 16.2%) and 0.952 min (BSV 12.2%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eaton_2022`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -20,21 +30,21 @@ Eaton MP; Nadtochiy SM; Stefanos T; LeMoine D; Anderson BJ et al. (2022). Paedia
   ·  DOI: [10.1111/pan.14511](https://doi.org/10.1111/pan.14511)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E0 (sec) — Estimate | `Q324` · not captured | 100 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row2:col1 |
-| E0 (sec) — Estimate | `Q324` · not captured | 100 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row2:col4 |
-| Emax (sec) — Estimate | `Q320` · not captured | 899 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row3:col1 |
-| Emax (sec) — Estimate | `Q320` · not captured | 899 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row3:col4 |
-| Ce50 / Cp50 mg.L−1 — Estimate | `Q321` · not captured | 20.1 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col1 |
-| Ce50 / Cp50 mg.L−1 — BSV% | `Q321` · not captured | 0.7 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col2 |
-| Ce50 / Cp50 mg.L−1 — 95% CI | `Q321` · not captured | 19.7.22.6 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col3 |
-| Ce50 / Cp50 mg.L−1 — Estimate | `Q321` · not captured | 25.9 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col4 |
-| Ce50 / Cp50 mg.L−1 — BSV% | `Q321` · not captured | 26.2 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col5 |
-| T1/2keo / TRNOVR (min) — Estimate | `Q326` · not captured | 1.4 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col1 |
-| T1/2keo / TRNOVR (min) — BSV% | `Q326` · not captured | 16.2 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col2 |
-| T1/2keo / TRNOVR (min) — Estimate | `Q326` · not captured | 0.952 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col4 |
-| T1/2keo / TRNOVR (min) — BSV% | `Q326` · not captured | 12.2 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E0 (sec) — Estimate | `Q324` · not captured | 100 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row2:col1 |
+| PD (effect) | E0 (sec) — Estimate | `Q324` · not captured | 100 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row2:col4 |
+| PD (effect) | Emax (sec) — Estimate | `Q320` · not captured | 899 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row3:col1 |
+| PD (effect) | Emax (sec) — Estimate | `Q320` · not captured | 899 | sec | not captured | exact (not captured) | pan14511-tbl-0002:row3:col4 |
+| PD (effect) | Ce50 / Cp50 mg.L−1 — Estimate | `Q321` · not captured | 20.1 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col1 |
+| PD (effect) | Ce50 / Cp50 mg.L−1 — BSV% | `Q321` · not captured | 0.7 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col2 |
+| PD (effect) | Ce50 / Cp50 mg.L−1 — 95% CI | `Q321` · not captured | 19.7.22.6 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col3 |
+| PD (effect) | Ce50 / Cp50 mg.L−1 — Estimate | `Q321` · not captured | 25.9 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col4 |
+| PD (effect) | Ce50 / Cp50 mg.L−1 — BSV% | `Q321` · not captured | 26.2 | mg.L-1 | not captured | llm (not captured) | pan14511-tbl-0002:row4:col5 |
+| PD (effect) | T1/2keo / TRNOVR (min) — Estimate | `Q326` · not captured | 1.4 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col1 |
+| PD (effect) | T1/2keo / TRNOVR (min) — BSV% | `Q326` · not captured | 16.2 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col2 |
+| PD (effect) | T1/2keo / TRNOVR (min) — Estimate | `Q326` · not captured | 0.952 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col4 |
+| PD (effect) | T1/2keo / TRNOVR (min) — BSV% | `Q326` · not captured | 12.2 | min | not captured | llm (not captured) | pan14511-tbl-0002:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

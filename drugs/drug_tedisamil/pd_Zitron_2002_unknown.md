@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bertosamil (measured concentrations) drives HERG tail current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bertosamil (record lists tedisamil, but the paper studies bertosamil) concentration-dependently inhibits HERG tail currents in Xenopus oocytes, fitted with a Hill (sigmoid Emax) equation giving an IC50 of 62.7 mM and a Hill coefficient of 1.53; block is state-dependent (mainly open and inactivated channels), develops rapidly (90% of inhibition within 180±8.22 s) and is fully reversible on washout within 294±38.7 s. No Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zitron_2002`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

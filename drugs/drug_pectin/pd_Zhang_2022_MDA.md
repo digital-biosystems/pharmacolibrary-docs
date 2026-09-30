@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thymol (measured concentrations) drives malondialdehyde content (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for malondialdehyde (MDA) content; TKL100 (thymol/KGM/LG coating, 100 mg/L thymol) treatment of Mucor circinelloides significantly increased MDA content at 12–48 h, with a sharp decrease below control at 60 h, attributed to membrane lipid peroxidation damage followed by a self-repair/stress-resistance mechanism. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are reported for the MDA response (the EC50 of 113.55 mg/L refers to inhibition of mycelial growth, not MDA), and the record's 'inhibition' direction contradicts the paper's reported increase.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

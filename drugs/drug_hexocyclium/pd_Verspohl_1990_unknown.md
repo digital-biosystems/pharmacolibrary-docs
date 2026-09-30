@@ -11,7 +11,13 @@
 
 ## What this record describes
 
-Arecaidine propargyl ester (measured concentrations) drives glucagon secretion (in unknown): direct Emax (saturable) effect.
+**As extracted:** Arecaidine propargyl ester (measured concentrations) drives glucagon secretion (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> APE (arecaidine propargyl ester) directly stimulates glucagon secretion from rat pancreatic islets via muscarinic receptor activation, with an EC50 of 2.3 nM (high-affinity receptor Kd 8.1 nM); hexocyclium (sila-hexocyclium, SiHC) acts as a muscarinic antagonist that inhibits this APE-mediated glucagon release (potency rank atropine &gt; SiHC &gt; pirenzepine = methoctramine), with no Imax/IC50 value for glucagon release stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Verspohl_1990`
 - **model family:** `emax`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fenchone (measured concentrations) drives tracheal contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Fenchone (not papaverine, which is only mentioned as a comparator PDE/Ca2+-channel inhibitor) concentration-dependently inhibits sustained contractions of isolated guinea pig trachea evoked by low K+ (25 mM), high K+ (80 mM), and carbachol (1 µM), with an Emax-type inhibitory concentration–response relationship; EC50 was 0.62 mg/mL (0.58–0.72) against low K+ and 6.44 mg/mL (5.86–7.32) against high K+, the higher potency against low K+ suggesting K+ channel opening- and/or Ca2+ channel inhibition-like mechanisms, and a papaverine-like PDE-inhibitory action was indicated by leftward shift of isoproterenol CRCs against CCh. The paper does not report Imax, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehman_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@
 not matched (stem Rehman_2022)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Skin Permeability — Model Name | `Q100` · not captured | -2.116 | not captured | not captured | llm (not captured) | molecules-27-01360-t004:row4:col1 |
-| D — Predicted Value | `Q310` · not captured | 0.247 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row8:col2 |
-| Fraction unbound (human) — Model Name | `Q46` · not captured | 0.421 | human | not captured | exact (not captured) | molecules-27-01360-t004:row9:col1 |
-| E — Predicted Value | `Q38` · not captured | 0.085 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row19:col2 |
-| EC50 | `Q321` · not captured | 0.62 | mg/mL | not captured | review_gapfill (not captured) | Rehman_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Skin Permeability — Model Name | `Q100` · not captured | -2.116 | not captured | not captured | llm (not captured) | molecules-27-01360-t004:row4:col1 |
+| PK (driver) | D — Predicted Value | `Q310` · not captured | 0.247 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row8:col2 |
+| PK (driver) | Fraction unbound (human) — Model Name | `Q46` · not captured | 0.421 | human | not captured | exact (not captured) | molecules-27-01360-t004:row9:col1 |
+| PK (driver) | E — Predicted Value | `Q38` · not captured | 0.085 | not captured | not captured | exact (not captured) | molecules-27-01360-t004:row19:col2 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.62 | mg/mL | not captured | review_gapfill (not captured) | Rehman_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

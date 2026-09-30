@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives uric acid (in mg/L): direct Emax (saturable) effect.
 
-> The model describes oxypurinol inhibiting the production rate of uric acid (kP,0 = 50.5 mg/h) via an Emax mechanism, with a baseline fractional excretion coefficient (FE,0) of 0.07, uric acid volume of distribution (VUA) of 20 L, and intestinal clearance (CLI) of 0.3 L/h. The paper defines the potency parameter [P]50,PIN as the plasma concentration of the inhibitor resulting in half-maximal fractional decrease in production, but the provided excerpts do not state a specific numerical value for this potency.
+**Model:** No model was generated from this record.
+
+> Oxypurinol (the active metabolite of allopurinol) acts on serum uric acid by inhibiting its production rate (xanthine oxidase pathway), modeled as an Imax/IC50-type effect on kP, with baseline production kP,0 = 50.5 mg/h, baseline fractional excretion FE,0 = 0.07, V_UA = 20 L, and CL_I = 0.3 L/h; the paper does not state numeric values for the maximum fractional decrease (Rmax) or the half-maximal inhibitory concentration ([P]50,RIN).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Aksenov_2018`
 - **model family:** `emax`

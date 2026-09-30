@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifuroxazide (measured concentrations) drives cell proliferation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nifuroxazide (NFZ) concentrations inhibit cell proliferation (CCK8 absorbance) in prostate cancer cell lines, most potently in ERG-positive VCaP cells (IC50 2.65 ± 0.08 μmol/L), acting as a TMPRSS:ERG inhibitor (stronger affinity for ERG than STAT3 or ALDH1); the paper does not state a specific PD model structure (no Imax, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

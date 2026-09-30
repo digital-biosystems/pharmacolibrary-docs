@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Luseogliflozin (concentrations from the PK model of Samukawa_2017) drives urinary glucose excretion (in g/day): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Luseogliflozin (0.5–5 mg once daily) stimulates urinary glucose excretion (UGE, g/day) in Japanese patients with T2DM by inhibiting SGLT2; the paper does not state a mechanism beyond SGLT2 inhibition. A sigmoid Emax model related AUC to UGE, with Emax (maximum change in UGE) estimated at 119 g and EC50 defined as the AUC at 50% of UGE; the 5 mg dose gave a mean daily UGE of 101 g/day (~85% of Emax), but the paper does not report numeric EC50 or γ values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sasaki_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,84 +31,84 @@ Sasaki T; Seino Y; Fukatsu A; Ubukata M; Sakai S; Samukawa Y et al. (2015). Adva
   ·  DOI: [10.1007/s12325-015-0200-x](https://doi.org/10.1007/s12325-015-0200-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C max (ng/mL) — 0.5 mg (N = 7) | `Q32` · not captured | 21.9 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col3 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 0.643 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col4 |
-| C max (ng/mL) — 1 mg (N = 8) | `Q32` · not captured | 43.7 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col5 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 0.688 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col6 |
-| C max (ng/mL) — 2.5 mg (N = 8) | `Q32` · not captured | 119 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col7 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 1.00 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col8 |
-| C max (ng/mL) — 5 mg (N = 8) | `Q32` · not captured | 243 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col9 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 0.688 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col10 |
-| C max (ng/mL) — 0.5 mg (N = 7) | `Q32` · not captured | 0.726 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col12 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 2.07 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col13 |
-| C max (ng/mL) — 1 mg (N = 8) | `Q32` · not captured | 1.61 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col14 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 2.44 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col15 |
-| C max (ng/mL) — 2.5 mg (N = 8) | `Q32` · not captured | 4.13 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col16 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 2.75 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col17 |
-| C max (ng/mL) — 5 mg (N = 7) | `Q32` · not captured | 8.90 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col18 |
-| C max (ng/mL) — Day 7 | `Q32` · not captured | 2.00 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col19 |
-| t max (h) — 0.5 mg (N = 7) | `Q56` · not captured | 0.857 | h | not captured | space_fold (not captured) | Tab2:row2:col3 |
-| t max (h) — Day 7 | `Q56` · not captured | 179 | h | not captured | space_fold (not captured) | Tab2:row2:col4 |
-| t max (h) — 1 mg (N = 8) | `Q56` · not captured | 0.688 | h | not captured | space_fold (not captured) | Tab2:row2:col5 |
-| t max (h) — Day 7 | `Q56` · not captured | 370 | h | not captured | space_fold (not captured) | Tab2:row2:col6 |
-| t max (h) — 2.5 mg (N = 8) | `Q56` · not captured | 0.625 | h | not captured | space_fold (not captured) | Tab2:row2:col7 |
-| t max (h) — Day 7 | `Q56` · not captured | 899 | h | not captured | space_fold (not captured) | Tab2:row2:col8 |
-| t max (h) — 5 mg (N = 8) | `Q56` · not captured | 0.625 | h | not captured | space_fold (not captured) | Tab2:row2:col9 |
-| t max (h) — Day 7 | `Q56` · not captured | 1880 | h | not captured | space_fold (not captured) | Tab2:row2:col10 |
-| t max (h) — 0.5 mg (N = 7) | `Q56` · not captured | 4.71 | h | not captured | space_fold (not captured) | Tab2:row2:col12 |
-| t max (h) — Day 7 | `Q56` · not captured | 22.8 | h | not captured | space_fold (not captured) | Tab2:row2:col13 |
-| t max (h) — 1 mg (N = 8) | `Q56` · not captured | 4.75 | h | not captured | space_fold (not captured) | Tab2:row2:col14 |
-| t max (h) — Day 7 | `Q56` · not captured | 50.4 | h | not captured | space_fold (not captured) | Tab2:row2:col15 |
-| t max (h) — 2.5 mg (N = 8) | `Q56` · not captured | 3.31 | h | not captured | space_fold (not captured) | Tab2:row2:col16 |
-| t max (h) — Day 7 | `Q56` · not captured | 116 | h | not captured | space_fold (not captured) | Tab2:row2:col17 |
-| t max (h) — 5 mg (N = 7) | `Q56` · not captured | 5.86 | h | not captured | space_fold (not captured) | Tab2:row2:col18 |
-| t max (h) — Day 7 | `Q56` · not captured | 259 | h | not captured | space_fold (not captured) | Tab2:row2:col19 |
-| AUC (ng h/mL)a — 0.5 mg (N = 7) | `Q88` · not captured | 171 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
-| AUC (ng h/mL)a — 1 mg (N = 8) | `Q88` · not captured | 357 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col5 |
-| AUC (ng h/mL)a — 2.5 mg (N = 8) | `Q88` · not captured | 864 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col7 |
-| AUC (ng h/mL)a — 5 mg (N = 8) | `Q88` · not captured | 1690 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col9 |
-| AUC (ng h/mL)a — 0.5 mg (N = 7) | `Q88` · not captured | 28.6 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col12 |
-| AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.138 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col13 |
-| AUC (ng h/mL)a — 1 mg (N = 8) | `Q88` · not captured | 62.7 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col14 |
-| AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.147 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col15 |
-| AUC (ng h/mL)a — 2.5 mg (N = 8) | `Q88` · not captured | 140 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col16 |
-| AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.140 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col17 |
-| AUC (ng h/mL)a — 5 mg (N = 7) | `Q88` · not captured | 306 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col18 |
-| AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.148 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col19 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 10.5 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col4 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 10.0 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col6 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 9.20 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col8 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 9.54 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col10 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 18.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col13 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 17.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col15 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 16.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col17 |
-| AUC ratiob — Day 7 | `Q21` · not captured | 19.3 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col19 |
-| t 1/2 (h) — 0.5 mg (N = 7) | `Q57` · not captured | 9.86 | h | not captured | space_fold (not captured) | Tab2:row5:col3 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 4.56 | h | not captured | space_fold (not captured) | Tab2:row5:col4 |
-| t 1/2 (h) — 1 mg (N = 8) | `Q57` · not captured | 9.61 | h | not captured | space_fold (not captured) | Tab2:row5:col5 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 4.30 | h | not captured | space_fold (not captured) | Tab2:row5:col6 |
-| t 1/2 (h) — 2.5 mg (N = 8) | `Q57` · not captured | 9.24 | h | not captured | space_fold (not captured) | Tab2:row5:col7 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 4.79 | h | not captured | space_fold (not captured) | Tab2:row5:col8 |
-| t 1/2 (h) — 5 mg (N = 8) | `Q57` · not captured | 8.96 | h | not captured | space_fold (not captured) | Tab2:row5:col9 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 4.56 | h | not captured | space_fold (not captured) | Tab2:row5:col10 |
-| t 1/2 (h) — 0.5 mg (N = 7) | `Q57` · not captured | 24.7 | h | not captured | space_fold (not captured) | Tab2:row5:col12 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 10.4 | h | not captured | space_fold (not captured) | Tab2:row5:col13 |
-| t 1/2 (h) — 1 mg (N = 8) | `Q57` · not captured | 24.0 | h | not captured | space_fold (not captured) | Tab2:row5:col14 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 11.1 | h | not captured | space_fold (not captured) | Tab2:row5:col15 |
-| t 1/2 (h) — 2.5 mg (N = 8) | `Q57` · not captured | 20.2 | h | not captured | space_fold (not captured) | Tab2:row5:col16 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 11.2 | h | not captured | space_fold (not captured) | Tab2:row5:col17 |
-| t 1/2 (h) — 5 mg (N = 7) | `Q57` · not captured | 19.5 | h | not captured | space_fold (not captured) | Tab2:row5:col18 |
-| t 1/2 (h) — Day 7 | `Q57` · not captured | 11.6 | h | not captured | space_fold (not captured) | Tab2:row5:col19 |
-| Ae0–24 (% of dose) — 0.5 mg (N = 7) | `Q91` · not captured | 3.76 | % of dose | not captured | llm (not captured) | Tab2:row6:col3 |
-| Ae0–24 (% of dose) — 1 mg (N = 8) | `Q91` · not captured | 4.06 | % of dose | not captured | llm (not captured) | Tab2:row6:col5 |
-| Ae0–24 (% of dose) — 2.5 mg (N = 8) | `Q91` · not captured | 4.51 | % of dose | not captured | llm (not captured) | Tab2:row6:col7 |
-| Ae0–24 (% of dose) — 5 mg (N = 8) | `Q91` · not captured | 4.11 | % of dose | not captured | llm (not captured) | Tab2:row6:col9 |
-| Ae0–24 (% of dose) — 0.5 mg (N = 7) | `Q91` · not captured | 5.22 | % of dose | not captured | llm (not captured) | Tab2:row6:col12 |
-| Ae0–24 (% of dose) — 1 mg (N = 8) | `Q91` · not captured | 5.86 | % of dose | not captured | llm (not captured) | Tab2:row6:col14 |
-| Ae0–24 (% of dose) — 2.5 mg (N = 8) | `Q91` · not captured | 6.72 | % of dose | not captured | llm (not captured) | Tab2:row6:col16 |
-| Ae0–24 (% of dose) — 5 mg (N = 7) | `Q91` · not captured | 6.70 | % of dose | not captured | llm (not captured) | Tab2:row6:col18 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | C max (ng/mL) — 0.5 mg (N = 7) | `Q32` · not captured | 21.9 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col3 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 0.643 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col4 |
+| PK (driver) | C max (ng/mL) — 1 mg (N = 8) | `Q32` · not captured | 43.7 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col5 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 0.688 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col6 |
+| PK (driver) | C max (ng/mL) — 2.5 mg (N = 8) | `Q32` · not captured | 119 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col7 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 1.00 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col8 |
+| PK (driver) | C max (ng/mL) — 5 mg (N = 8) | `Q32` · not captured | 243 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col9 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 0.688 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col10 |
+| PK (driver) | C max (ng/mL) — 0.5 mg (N = 7) | `Q32` · not captured | 0.726 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col12 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 2.07 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col13 |
+| PK (driver) | C max (ng/mL) — 1 mg (N = 8) | `Q32` · not captured | 1.61 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col14 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 2.44 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col15 |
+| PK (driver) | C max (ng/mL) — 2.5 mg (N = 8) | `Q32` · not captured | 4.13 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col16 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 2.75 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col17 |
+| PK (driver) | C max (ng/mL) — 5 mg (N = 7) | `Q32` · not captured | 8.90 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col18 |
+| PK (driver) | C max (ng/mL) — Day 7 | `Q32` · not captured | 2.00 | ng/mL | not captured | space_fold (not captured) | Tab2:row1:col19 |
+| PK (driver) | t max (h) — 0.5 mg (N = 7) | `Q56` · not captured | 0.857 | h | not captured | space_fold (not captured) | Tab2:row2:col3 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 179 | h | not captured | space_fold (not captured) | Tab2:row2:col4 |
+| PK (driver) | t max (h) — 1 mg (N = 8) | `Q56` · not captured | 0.688 | h | not captured | space_fold (not captured) | Tab2:row2:col5 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 370 | h | not captured | space_fold (not captured) | Tab2:row2:col6 |
+| PK (driver) | t max (h) — 2.5 mg (N = 8) | `Q56` · not captured | 0.625 | h | not captured | space_fold (not captured) | Tab2:row2:col7 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 899 | h | not captured | space_fold (not captured) | Tab2:row2:col8 |
+| PK (driver) | t max (h) — 5 mg (N = 8) | `Q56` · not captured | 0.625 | h | not captured | space_fold (not captured) | Tab2:row2:col9 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 1880 | h | not captured | space_fold (not captured) | Tab2:row2:col10 |
+| PK (driver) | t max (h) — 0.5 mg (N = 7) | `Q56` · not captured | 4.71 | h | not captured | space_fold (not captured) | Tab2:row2:col12 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 22.8 | h | not captured | space_fold (not captured) | Tab2:row2:col13 |
+| PK (driver) | t max (h) — 1 mg (N = 8) | `Q56` · not captured | 4.75 | h | not captured | space_fold (not captured) | Tab2:row2:col14 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 50.4 | h | not captured | space_fold (not captured) | Tab2:row2:col15 |
+| PK (driver) | t max (h) — 2.5 mg (N = 8) | `Q56` · not captured | 3.31 | h | not captured | space_fold (not captured) | Tab2:row2:col16 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 116 | h | not captured | space_fold (not captured) | Tab2:row2:col17 |
+| PK (driver) | t max (h) — 5 mg (N = 7) | `Q56` · not captured | 5.86 | h | not captured | space_fold (not captured) | Tab2:row2:col18 |
+| PK (driver) | t max (h) — Day 7 | `Q56` · not captured | 259 | h | not captured | space_fold (not captured) | Tab2:row2:col19 |
+| PK (driver) | AUC (ng h/mL)a — 0.5 mg (N = 7) | `Q88` · not captured | 171 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
+| PK (driver) | AUC (ng h/mL)a — 1 mg (N = 8) | `Q88` · not captured | 357 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col5 |
+| PK (driver) | AUC (ng h/mL)a — 2.5 mg (N = 8) | `Q88` · not captured | 864 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col7 |
+| PK (driver) | AUC (ng h/mL)a — 5 mg (N = 8) | `Q88` · not captured | 1690 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col9 |
+| PK (driver) | AUC (ng h/mL)a — 0.5 mg (N = 7) | `Q88` · not captured | 28.6 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col12 |
+| PK (driver) | AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.138 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col13 |
+| PK (driver) | AUC (ng h/mL)a — 1 mg (N = 8) | `Q88` · not captured | 62.7 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col14 |
+| PK (driver) | AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.147 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col15 |
+| PK (driver) | AUC (ng h/mL)a — 2.5 mg (N = 8) | `Q88` · not captured | 140 | N = 8 | not captured | llm_confirmed (not captured) | Tab2:row3:col16 |
+| PK (driver) | AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.140 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col17 |
+| PK (driver) | AUC (ng h/mL)a — 5 mg (N = 7) | `Q88` · not captured | 306 | N = 7 | not captured | llm_confirmed (not captured) | Tab2:row3:col18 |
+| PK (driver) | AUC (ng h/mL)a — Day 7 | `Q88` · not captured | 0.148 | not captured | not captured | llm_confirmed (not captured) | Tab2:row3:col19 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 10.5 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col4 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 10.0 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col6 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 9.20 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col8 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 9.54 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col10 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 18.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col13 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 17.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col15 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 16.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col17 |
+| PK (driver) | AUC ratiob — Day 7 | `Q21` · not captured | 19.3 | not captured | not captured | llm_corrected (not captured) | Tab2:row4:col19 |
+| PK (driver) | t 1/2 (h) — 0.5 mg (N = 7) | `Q57` · not captured | 9.86 | h | not captured | space_fold (not captured) | Tab2:row5:col3 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 4.56 | h | not captured | space_fold (not captured) | Tab2:row5:col4 |
+| PK (driver) | t 1/2 (h) — 1 mg (N = 8) | `Q57` · not captured | 9.61 | h | not captured | space_fold (not captured) | Tab2:row5:col5 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 4.30 | h | not captured | space_fold (not captured) | Tab2:row5:col6 |
+| PK (driver) | t 1/2 (h) — 2.5 mg (N = 8) | `Q57` · not captured | 9.24 | h | not captured | space_fold (not captured) | Tab2:row5:col7 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 4.79 | h | not captured | space_fold (not captured) | Tab2:row5:col8 |
+| PK (driver) | t 1/2 (h) — 5 mg (N = 8) | `Q57` · not captured | 8.96 | h | not captured | space_fold (not captured) | Tab2:row5:col9 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 4.56 | h | not captured | space_fold (not captured) | Tab2:row5:col10 |
+| PK (driver) | t 1/2 (h) — 0.5 mg (N = 7) | `Q57` · not captured | 24.7 | h | not captured | space_fold (not captured) | Tab2:row5:col12 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 10.4 | h | not captured | space_fold (not captured) | Tab2:row5:col13 |
+| PK (driver) | t 1/2 (h) — 1 mg (N = 8) | `Q57` · not captured | 24.0 | h | not captured | space_fold (not captured) | Tab2:row5:col14 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 11.1 | h | not captured | space_fold (not captured) | Tab2:row5:col15 |
+| PK (driver) | t 1/2 (h) — 2.5 mg (N = 8) | `Q57` · not captured | 20.2 | h | not captured | space_fold (not captured) | Tab2:row5:col16 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 11.2 | h | not captured | space_fold (not captured) | Tab2:row5:col17 |
+| PK (driver) | t 1/2 (h) — 5 mg (N = 7) | `Q57` · not captured | 19.5 | h | not captured | space_fold (not captured) | Tab2:row5:col18 |
+| PK (driver) | t 1/2 (h) — Day 7 | `Q57` · not captured | 11.6 | h | not captured | space_fold (not captured) | Tab2:row5:col19 |
+| PK (driver) | Ae0–24 (% of dose) — 0.5 mg (N = 7) | `Q91` · not captured | 3.76 | % of dose | not captured | llm (not captured) | Tab2:row6:col3 |
+| PK (driver) | Ae0–24 (% of dose) — 1 mg (N = 8) | `Q91` · not captured | 4.06 | % of dose | not captured | llm (not captured) | Tab2:row6:col5 |
+| PK (driver) | Ae0–24 (% of dose) — 2.5 mg (N = 8) | `Q91` · not captured | 4.51 | % of dose | not captured | llm (not captured) | Tab2:row6:col7 |
+| PK (driver) | Ae0–24 (% of dose) — 5 mg (N = 8) | `Q91` · not captured | 4.11 | % of dose | not captured | llm (not captured) | Tab2:row6:col9 |
+| PK (driver) | Ae0–24 (% of dose) — 0.5 mg (N = 7) | `Q91` · not captured | 5.22 | % of dose | not captured | llm (not captured) | Tab2:row6:col12 |
+| PK (driver) | Ae0–24 (% of dose) — 1 mg (N = 8) | `Q91` · not captured | 5.86 | % of dose | not captured | llm (not captured) | Tab2:row6:col14 |
+| PK (driver) | Ae0–24 (% of dose) — 2.5 mg (N = 8) | `Q91` · not captured | 6.72 | % of dose | not captured | llm (not captured) | Tab2:row6:col16 |
+| PK (driver) | Ae0–24 (% of dose) — 5 mg (N = 7) | `Q91` · not captured | 6.70 | % of dose | not captured | llm (not captured) | Tab2:row6:col18 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

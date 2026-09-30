@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Extruded linseed drives milk fat content (in g/kg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Extruded linseed (EL, g/cow/day) acts on milk fat content (MFC, g/kg) via a linear mixed-model relationship, with EL supplementation decreasing MFC (e.g. by 0.04 to 0.85 g/kg across parities, and ~0.30 g/kg per 250 g EL per a cited meta-analysis), attributed mechanistically to PUFA-derived ruminal biohydrogenation intermediates inhibiting mammary milk fat synthesis; no potency parameters (Imax, IC50, Emax, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ariza_2019`
 - **model family:** `linear`
 - **driver:** `not_resolved`

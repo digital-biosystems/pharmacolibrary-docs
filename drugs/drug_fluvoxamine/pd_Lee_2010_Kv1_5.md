@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluvoxamine (concentrations from the PK model of Geldof_2007) drives Kv1.5 whole-cell current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Fluvoxamine (0.3–30 µM) reversibly and concentration-dependently inhibits Kv1.5 whole-cell current in CHO cells, fitted with a Hill/sigmoid Emax-type concentration–response giving an IC50 of 2.0 µM and a Hill coefficient of 0.7. The mechanism is direct open-state channel block (preferential binding after channel opening, with use- and voltage-dependent inhibition and slowed deactivation), not a turnover/production model; inhibition reached steady state within 2 min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

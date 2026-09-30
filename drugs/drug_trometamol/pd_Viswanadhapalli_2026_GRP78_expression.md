@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ERX-208 (measured concentrations) drives name (in % positive cells) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ERX-208 (nM concentrations) acts on GRP78 expression (% positive cells) in ovarian cancer cells/tumors; the paper does not give a quantitative PD model or potency values for this endpoint, but states that ERX-208 induces endoplasmic reticulum stress and increases GRP78 levels (an upregulation, not inhibition), alongside elevated p-eIF2α, p-PERK and CHOP; for cell viability the reported IC50 is ~100 nM (vs ~500 nM for ERX-41).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Viswanadhapalli_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

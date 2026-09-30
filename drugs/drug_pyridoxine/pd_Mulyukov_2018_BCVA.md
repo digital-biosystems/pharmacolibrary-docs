@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ranibizumab (measured concentrations) drives best corrected visual acuity (in ETDRS letters): indirect response — drug inhibits the production of best corrected visual acuity.
+
+**Model:** No model was generated from this record.
+
+> In this indirect response model, intravitreal ranibizumab concentration (μg/mL) stimulates BCVA (ETDRS letters): untreated BCVA deteriorates from baseline toward the steady-state ratio kin/kout at rate kout (natural disease progression), while ranibizumab increases the treated steady-state BCVA via an Emax-type effect (Emaxiss) on this turnover. The paper reports an EC50 of 2 μg/mL (noting a previously reported analogous IC50 of 6.5 μg/mL), with monthly dosing Cmin of 12.5 μg/mL well above EC50 versus 0.12 μg/mL with quarterly dosing; no numeric values for kin, kout, or Emax are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mulyukov_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,21 +30,21 @@ Mulyukov Z; Weber S; Pigeolet E; Clemens A; Lehr T; Racine A et al. (2018). CPT:
   ·  DOI: [10.1002/psp4.12322](https://doi.org/10.1002/psp4.12322)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline BCVA (SD), letters — ANCHOR | `Q324` · not captured | 47.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col1 |
-| Baseline BCVA (SD), letters — ANCHOR | `Q324` · not captured | 47.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col2 |
-| Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 55.8 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col3 |
-| Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 57.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col4 |
-| Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 56.5 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col5 |
-| Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col6 |
-| Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col7 |
-| Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.9 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col8 |
-| Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 55.8 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col9 |
-| Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 53.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col10 |
-| Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 55.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col11 |
-| Baseline BCVA (SD), letters — HARBOR | `Q324` · not captured | 54.2 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col12 |
-| Baseline BCVA (SD), letters — HARBOR | `Q324` · not captured | 53.5 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col13 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline BCVA (SD), letters — ANCHOR | `Q324` · not captured | 47.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col1 |
+| PD (effect) | Baseline BCVA (SD), letters — ANCHOR | `Q324` · not captured | 47.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col2 |
+| PD (effect) | Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 55.8 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col3 |
+| PD (effect) | Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 57.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col4 |
+| PD (effect) | Baseline BCVA (SD), letters — EXCITE | `Q324` · not captured | 56.5 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col5 |
+| PD (effect) | Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col6 |
+| PD (effect) | Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col7 |
+| PD (effect) | Baseline BCVA (SD), letters — MARINA | `Q324` · not captured | 53.9 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col8 |
+| PD (effect) | Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 55.8 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col9 |
+| PD (effect) | Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 53.7 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col10 |
+| PD (effect) | Baseline BCVA (SD), letters — PIER | `Q324` · not captured | 55.1 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col11 |
+| PD (effect) | Baseline BCVA (SD), letters — HARBOR | `Q324` · not captured | 54.2 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col12 |
+| PD (effect) | Baseline BCVA (SD), letters — HARBOR | `Q324` · not captured | 53.5 | not captured | not captured | llm_confirmed (not captured) | psp412322-tbl-0001:row11:col13 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

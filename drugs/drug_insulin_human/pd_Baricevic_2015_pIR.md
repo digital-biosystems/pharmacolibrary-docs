@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in phosphorylation level) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports dose- and time-dependent phosphorylation of IGF-IR/IR, IRS-1 and Akt (Ser 473) in cancer cell lines after stimulation with insulin, X10 and IGF-I (e.g. 10 nM of each ligand; 15 min, 6 and 18 h), with receptor phosphorylation as an early event and Akt activation later and weaker; no quantitative PD model (Emax/EC50/kin/kout/ke0) or mechanism of effect is given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baricevic_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

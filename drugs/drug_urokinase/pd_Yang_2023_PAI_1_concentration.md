@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thrombolytic agents (alteplase, tenecteplase, reteplase, urokinase) drive name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In this simulation study, intravenous urokinase (like alteplase, tenecteplase, reteplase) is modeled with a two-compartment PK-PD model (elimination constant kel,D, distribution constants kcp/kpc) whose concentration profile drives a local PD model of fibrinolytic reactions in the clot; PAI-1 concentration (plasma and clot) changes as PAI-1 reacts with/is depleted by the drug, with urokinase giving the lowest plasma PAI-1 and PAI-1 in the clot depleted to about 1×10−6 μM within minutes. The paper does not state a specific PD mechanism form (e.g., Emax, effect compartment) or any potency/rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this drug–response pair.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

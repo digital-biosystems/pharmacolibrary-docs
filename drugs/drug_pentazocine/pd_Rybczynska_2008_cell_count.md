@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (1)-pentazocine, AC915, rimcazole, haloperidol (measured concentrations) drive cell number (in cells) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In C6 glioma cells, the sigma ligands (1)-pentazocine, AC915, rimcazole, and haloperidol inhibit cell number (counted after 24 h) in a dose-dependent manner, acting via sigma-receptor occupancy; the paper does not state a specific PD model form. EC50 values for 50% cell loss were 31 mM (rimcazole), 58 mM (haloperidol), 819 mM (AC915), and 710 mM for (1)-pentazocine growth inhibition, with cytotoxicity thresholds of 20, 25, and 220 mM for rimcazole, haloperidol, and AC915 respectively; IC50 values for inhibition of cellular 11C-SA4503 binding were 6.5, 7.4, 0.36, and 0.27 mM for (1)-pentazocine, AC915, rimcazole, and haloperidol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rybczynska_2008`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

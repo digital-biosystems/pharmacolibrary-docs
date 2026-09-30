@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | 1-compartment (no model) | 3 | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | 1-compartment (no model) | 0 | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Le_1995_reference](drugs/drug_dofetilide/Dofetilide_Le1995_reference.md) | — | 1-compartment (no model) | 3 | Le Coz F et al., Pharmacokinetic and pharmacodynamic mod…, Clinical pharmacology and t… (1995) | [10.1016/0009-9236(95)90038-1](https://doi.org/10.1016/0009-9236(95)90038-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gotta_2015_reference](drugs/drug_dofetilide/Dofetilide_Gotta2015_reference.md) | — | 1-compartment (no model) | 0 | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Aguado-Sierra_2024](drugs/drug_dofetilide/pd_Aguado_Sierra_2024_QT.md) | Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of pharmacological… (2024) | [10.1016/j.vascn.2024.107498](https://doi.org/10.1016/j.vascn.2024.107498) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Gotta_2015](drugs/drug_dofetilide/pd_Gotta_2015_QTc.md) | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Aguado-Sierra_2024_QT](drugs/drug_dofetilide/pd_Aguado_Sierra_2024_QT.md) | QT interval ← unknown · stimulation effect | — | Aguado-Sierra J et al., Virtual clinical QT exposure-response s…, Journal of pharmacological… (2024) | [10.1016/j.vascn.2024.107498](https://doi.org/10.1016/j.vascn.2024.107498) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Gotta_2015_QTc](drugs/drug_dofetilide/pd_Gotta_2015_QTc.md) | QTc prolongation ← moxifloxacin, dofetilide, sotalol · direct sigmoid Emax (Hill) effect | — | Gotta V et al., Inter-study variability of preclinical…, British journal of pharmaco… (2015) | [10.1111/bph.13218](https://doi.org/10.1111/bph.13218) |
 
 ## Pharmacogenomics (PGx)
 

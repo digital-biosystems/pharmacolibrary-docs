@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** FOY-251 (concentrations from the PK model of Kosinsky_2022::r_s_e) drives name (in relative to control): indirect response — drug inhibits the production of name.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> FOY-251 (active metabolite of camostat) concentrations inhibit recombinant TMPRSS2 enzymatic activity via reversible covalent inhibition, with Ki = 7.46 nM; TMPRSS2 activity in turn drives SARS-2-S viral entry rate through a Hill-Langmuir relationship (Ksp = 0.047, h = 0.59), so ~95% TMPRSS2 inhibition is needed for 50% viral entry inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kosinsky_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Kosinsky Y; Peskov K; Stanski DR; Wetmore D; Vinetz J et al. (2022). Microbiolog
   ·  DOI: [10.1128/spectrum.02167-21](https://doi.org/10.1128/spectrum.02167-21)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ki, nM — R.S.E. (%) | `Q322` · not captured | 7.46 | nM | not captured | llm (not captured) | tab2:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ki, nM — R.S.E. (%) | `Q322` · not captured | 7.46 | nM | not captured | llm (not captured) | tab2:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from this paper's PK model) drives tumor bioluminescence (in fold increase): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Tumor extracellular fluid (tECF) concentrations of 5-fluorouracil (μM) inhibit tumor growth measured as bioluminescence fold increase W(t) via a sigmoidal Emax function (Km = kmax,m·CtECF^Hm/(EC50,m^Hm + CtECF^Hm)) driving cell death through three transit compartments in an exponential–linear growth model. The in vivo IC50 was 2.12 μM (within twofold of the 1-hour in vitro IC50 of 3.5 μM); the paper does not state numerical values for kmax,m, Hm, Kexp,m, Klin,m, or Kdel,m in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Daryani_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,32 +31,32 @@ Daryani VM; Patel YT; Tagen M; Turner DC; Carcaboso AM; Atkinson JM; et al. et a
   ·  DOI: [10.1002/psp4.12075](https://doi.org/10.1002/psp4.12075)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Maximum plasma 5‐FU elimination rate (Vmax,plasma,m) — Estimate ± SE | `Q66` · not captured | 2040 | Vmax,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row2:col2 |
-| Maximum plasma 5‐FU elimination rate (Vmax,plasma,m) — IIV (% CV) | `Q66` · not captured | 12.2 | Vmax,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row2:col3 |
-| Michaelis–Menten constant for plasma 5‐FU elimination (Km,plasma,m) — Estimate ± SE | `Q1` · not captured | 125 | Km,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row3:col2 |
-| Volume of central compartment (V1,m) — Estimate ± SE | `Q63` · not captured | 0.962 | V1,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row4:col2 |
-| Volume of central compartment (V1,m) — IIV (% CV) | `Q63` · not captured | 22.1 | V1,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row4:col3 |
-| Intercompartmental clearance (Qm) — Estimate ± SE | `Q30` · not captured | 1.67 | Qm | not captured | exact (not captured) | psp412075-tbl-0001:row5:col2 |
-| Intercompartmental clearance (Qm) — IIV (% CV) | `Q30` · not captured | 31.1 | Qm | not captured | exact (not captured) | psp412075-tbl-0001:row5:col3 |
-| Volume of peripheral compartment (V2,m) — Estimate ± SE | `Q64` · not captured | 0.332 | V2,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row6:col2 |
-| Residual variability for 5‐FU plasma concentrations (σplasma, prop) — Estimate ± SE | `Q315` · not captured | 30.7 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row7:col2 |
-| Residual variability for 5‐FU plasma concentrations (σplasma, prop) — IIV (% CV) | `Q315` · not captured | 30.7 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row7:col3 |
-| Rate constant for 5‐FU movement from plasma to tECF (K13,m) — Estimate ± SE | `Q303` · not captured | 0.0043 | K13,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row9:col2 |
-| Rate constant for 5‐FU movement from plasma to tECF (K13,m) — IIV (% CV) | `Q303` · not captured | 7.8 | K13,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row9:col3 |
-| Rate constant for 5‐FU movement from tECF to plasma (K31,m) — Estimate ± SE | `Q304` · not captured | 3.24 | K31,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row10:col2 |
-| Rate constant for 5‐FU movement from tECF to plasma (K31,m) — IIV (% CV) | `Q304` · not captured | 26.1 | K31,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row10:col3 |
-| 5‐FU fraction unbound in mouse plasma (fu,m) — Estimate ± SE | `Q46` · not captured | 0.37 | fu,m | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row11:col2 |
-| Volume of tECF compartment (V3,m) — Estimate ± SE | `Q77` · not captured | 0.001 | V3,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row12:col2 |
-| Maximum tumor 5‐FU elimination rate (Vmax,tumor,m) — Estimate ± SE | `Q66` · not captured | 0.0063 | Vmax,tumor,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row15:col2 |
-| Michaelis–Menten constant for tumor 5‐FU elimination (Km,tumor,m) — Estimate ± SE | `Q1` · not captured | 0.012 | Km,tumor,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row16:col2 |
-| Residual variability for 5‐FU plasma concentrations (σplasma, prop) — Estimate ± SE | `Q315` · not captured | 35.9 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row17:col2 |
-| Residual variability for 5‐FU plasma concentrations (σplasma, prop) — IIV (% CV) | `Q315` · not captured | 35.9 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row17:col3 |
-| Residual variability for 5‐FU tumor concentrations (σtECF, prop) — Estimate ± SE | `Q315` · not captured | 27.9 | σtECF, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row18:col2 |
-| Residual variability for 5‐FU tumor concentrations (σtECF, prop) — IIV (% CV) | `Q315` · not captured | 27.9 | σtECF, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row18:col3 |
-| Residual variability for tumor growth (σefficacy, prop) — Estimate ± SE | `Q315` · not captured | 37.0 | σefficacy, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row28:col2 |
-| Residual variability for tumor growth (σefficacy, prop) — IIV (% CV) | `Q315` · not captured | 37.0 | σefficacy, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row28:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Maximum plasma 5‐FU elimination rate (Vmax,plasma,m) — Estimate ± SE | `Q66` · not captured | 2040 | Vmax,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row2:col2 |
+| PK (driver) | Maximum plasma 5‐FU elimination rate (Vmax,plasma,m) — IIV (% CV) | `Q66` · not captured | 12.2 | Vmax,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row2:col3 |
+| PK (driver) | Michaelis–Menten constant for plasma 5‐FU elimination (Km,plasma,m) — Estimate ± SE | `Q1` · not captured | 125 | Km,plasma,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row3:col2 |
+| PK (driver) | Volume of central compartment (V1,m) — Estimate ± SE | `Q63` · not captured | 0.962 | V1,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row4:col2 |
+| PK (driver) | Volume of central compartment (V1,m) — IIV (% CV) | `Q63` · not captured | 22.1 | V1,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row4:col3 |
+| PK (driver) | Intercompartmental clearance (Qm) — Estimate ± SE | `Q30` · not captured | 1.67 | Qm | not captured | exact (not captured) | psp412075-tbl-0001:row5:col2 |
+| PK (driver) | Intercompartmental clearance (Qm) — IIV (% CV) | `Q30` · not captured | 31.1 | Qm | not captured | exact (not captured) | psp412075-tbl-0001:row5:col3 |
+| PK (driver) | Volume of peripheral compartment (V2,m) — Estimate ± SE | `Q64` · not captured | 0.332 | V2,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row6:col2 |
+| variability | Residual variability for 5‐FU plasma concentrations (σplasma, prop) — Estimate ± SE | `Q315` · not captured | 30.7 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row7:col2 |
+| variability | Residual variability for 5‐FU plasma concentrations (σplasma, prop) — IIV (% CV) | `Q315` · not captured | 30.7 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row7:col3 |
+| PK (driver) | Rate constant for 5‐FU movement from plasma to tECF (K13,m) — Estimate ± SE | `Q303` · not captured | 0.0043 | K13,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row9:col2 |
+| PK (driver) | Rate constant for 5‐FU movement from plasma to tECF (K13,m) — IIV (% CV) | `Q303` · not captured | 7.8 | K13,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row9:col3 |
+| PK (driver) | Rate constant for 5‐FU movement from tECF to plasma (K31,m) — Estimate ± SE | `Q304` · not captured | 3.24 | K31,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row10:col2 |
+| PK (driver) | Rate constant for 5‐FU movement from tECF to plasma (K31,m) — IIV (% CV) | `Q304` · not captured | 26.1 | K31,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row10:col3 |
+| PK (driver) | 5‐FU fraction unbound in mouse plasma (fu,m) — Estimate ± SE | `Q46` · not captured | 0.37 | fu,m | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row11:col2 |
+| PK (driver) | Volume of tECF compartment (V3,m) — Estimate ± SE | `Q77` · not captured | 0.001 | V3,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row12:col2 |
+| PK (driver) | Maximum tumor 5‐FU elimination rate (Vmax,tumor,m) — Estimate ± SE | `Q66` · not captured | 0.0063 | Vmax,tumor,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row15:col2 |
+| PK (driver) | Michaelis–Menten constant for tumor 5‐FU elimination (Km,tumor,m) — Estimate ± SE | `Q1` · not captured | 0.012 | Km,tumor,m | not captured | llm_corrected (not captured) | psp412075-tbl-0001:row16:col2 |
+| variability | Residual variability for 5‐FU plasma concentrations (σplasma, prop) — Estimate ± SE | `Q315` · not captured | 35.9 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row17:col2 |
+| variability | Residual variability for 5‐FU plasma concentrations (σplasma, prop) — IIV (% CV) | `Q315` · not captured | 35.9 | σplasma, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row17:col3 |
+| variability | Residual variability for 5‐FU tumor concentrations (σtECF, prop) — Estimate ± SE | `Q315` · not captured | 27.9 | σtECF, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row18:col2 |
+| variability | Residual variability for 5‐FU tumor concentrations (σtECF, prop) — IIV (% CV) | `Q315` · not captured | 27.9 | σtECF, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row18:col3 |
+| variability | Residual variability for tumor growth (σefficacy, prop) — Estimate ± SE | `Q315` · not captured | 37.0 | σefficacy, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row28:col2 |
+| variability | Residual variability for tumor growth (σefficacy, prop) — IIV (% CV) | `Q315` · not captured | 37.0 | σefficacy, prop | not captured | llm_confirmed (not captured) | psp412075-tbl-0001:row28:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

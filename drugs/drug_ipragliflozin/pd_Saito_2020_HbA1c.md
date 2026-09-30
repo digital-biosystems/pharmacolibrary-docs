@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ipragliflozin drives HbA1c (in %): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Ipragliflozin's effect on HbA1c (change from baseline, %) was modeled with an Emax disease-progression model in which the driver is the predicted 24-h change in urinary glucose excretion (ΔUGE24h, g/24h) entering an effect compartment (Keq) rather than drug exposure; the delay to maximum effect (~20–24 weeks) was described by a linear function of the effect compartment. Population Emax at reference baseline HbA1c 7.9% was 1.56% (baseline HbA1c scaled Emax, +34% per 10% higher baseline), EC50 was 24.1 g/24h (IIV 90% CV), with a linear disease progression slope of 0.0123 per week and residual error 15.3% CV; the paper does not state a numeric Keq value for HbA1c.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saito_2020`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

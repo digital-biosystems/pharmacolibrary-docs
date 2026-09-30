@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nucleoside analogues (gemcitabine, 5-fluorouracil, cytarabine, bromodeoxyuridine, zidovudine, lamivudine) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper measures growth (OD600) of S. pombe cultures exposed to nucleoside analogues including 5-fluorouracil, reporting half-maximal inhibitory (IC50) doses in µM from dose–response curves; the effect is an inhibitory (anti-proliferative) effect on growth, with IC50 used as the dose that decreases proliferation. The excerpts do not state a fluorouracil-specific IC50, an Emax/Imax, kin/kout, ke0, gamma, or an explicit mechanism (e.g., production vs. elimination inhibition or effect-compartment), and the record's listed parameters (IC50 10.7 µM, 312 µm, 0.01 n) are not supported by the excerpts, which instead give IC50s for other analogues (e.g., gemcitabine &gt;500 µM wild type, 2.8 µM chk1∆;
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kagalwala_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Kagalwala ZB; Chhipa MA; Kianfard Z; Karam E; Magalage SP; Sabatinos SA et al. (
   ·  DOI: [10.3390/cimb47090756](https://doi.org/10.3390/cimb47090756)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Gem Dose (µM) | `Q322` · not captured | 10.7 | µM | not captured | exact (not captured) | cimb-47-00756-t003:row4:col1 |
-| IC50 — Mean Length ± SD (µm) | `Q322` · not captured | 312 | µm | not captured | exact (not captured) | cimb-47-00756-t003:row4:col2 |
-| IC50 — Number of Cells (n) | `Q322` · not captured | 0.01 | n | not captured | exact (not captured) | cimb-47-00756-t003:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Gem Dose (µM) | `Q322` · not captured | 10.7 | µM | not captured | exact (not captured) | cimb-47-00756-t003:row4:col1 |
+| PD (effect) | IC50 — Mean Length ± SD (µm) | `Q322` · not captured | 312 | µm | not captured | exact (not captured) | cimb-47-00756-t003:row4:col2 |
+| PD (effect) | IC50 — Number of Cells (n) | `Q322` · not captured | 0.01 | n | not captured | exact (not captured) | cimb-47-00756-t003:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -29,9 +29,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Millart_1983_reference](drugs/drug_vincamine/Vincamine_Millart1983_reference.md) | 1-compartment (no model) | 3 | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Millart_1983_reference](drugs/drug_vincamine/Vincamine_Millart1983_reference.md) | — | 1-compartment (no model) | 3 | Millart H et al., Pharmacokinetic study of two pharmaceut…, International journal of cl… (1983) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

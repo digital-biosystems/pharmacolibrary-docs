@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking MHV370 concentrations to IgG deposition in kidneys; the excerpts only describe in vitro TLR7/8 inhibition (e.g., IC50 of 15 ± 10 nM against CL307-driven and 7 ± 0.1 nM against R848-driven reporter activity, and 3.8 ± 0.8 nM and 5.2 ± 1.5 nM against R848- and TL8-506-driven ROS production), with no mechanism, Imax, EC50, Emax, kin, kout, ke0, or gamma values given for the kidney IgG deposition response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

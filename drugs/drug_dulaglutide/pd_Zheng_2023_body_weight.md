@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CpdH (measured concentrations) drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dulaglutide concentrations act on body weight (kg) indirectly via an Emax inhibitory effect on energy intake (food intake), with weight loss also generating compensatory changes in energy expenditure and intake in the mechanism-based longitudinal model; dulaglutide was fitted with a separate parameter set from CpdH, and the excerpts give no dulaglutide-specific Emax, EC50, or rate values (the only stated value, Emax = −100% for CpdH, applies to the GDF15 analog, not dulaglutide).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Zheng S; Polidori D; Wang Y; Geist B; Lin-Schmidt X; Furman JL; Nelson S; Nawroc
   ·  DOI: [10.1111/cts.13543](https://doi.org/10.1111/cts.13543)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (%) — CpdH mean (RSE%) | `Q320` · not captured | -100 | RSE% | not captured | llm (not captured) | cts13543-tbl-0001:row7:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (%) — CpdH mean (RSE%) | `Q320` · not captured | -100 | RSE% | not captured | llm (not captured) | cts13543-tbl-0001:row7:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -25,9 +25,9 @@ The indication for chronic lymphocytic leukemia (CLL) was removed from the US dr
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kim_2018_reference](drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md) | 2-compartment, IV | 6 | Kim T et al., Clinical response and pharmacokinetics…, BMC cancer (2018) | [10.1186/s12885-018-4632-y](https://doi.org/10.1186/s12885-018-4632-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Kim_2018_reference](drugs/drug_bendamustine/Bendamustine_Kim2018_reference.md) | held back | 2-compartment, IV | 6 | Kim T et al., Clinical response and pharmacokinetics…, BMC cancer (2018) | [10.1186/s12885-018-4632-y](https://doi.org/10.1186/s12885-018-4632-y) |
 
 ## ADME sites
 

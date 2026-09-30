@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Abciximab (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper relates abciximab plasma concentrations (ng/ml) to percent inhibition of platelet aggregation induced by 20-µmol/L ADP using an Emax-type inhibitory model; the excerpts provide no mechanism details and no numeric potency (IC50/Emax) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abernethy_2002`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

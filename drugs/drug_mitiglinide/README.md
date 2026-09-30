@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2598)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | 1-compartment, oral | 4 | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2598)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2017_reference](drugs/drug_mitiglinide/Mitiglinide_Liu2017_reference.md) | held back | 1-compartment, oral | 4 | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.053). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2017](drugs/drug_mitiglinide/pd_Liu_2017_glucose.md) | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.053). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2017_glucose](drugs/drug_mitiglinide/pd_Liu_2017_glucose.md) | plasma glucose ← mitiglinide · delayed effect through an effect compartment | — | Liu S et al., Pharmacokinetic and pharmacodynamic mod…, BMC pharmacology & toxicolo… (2017) | [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6) |
 
 ## ADME sites
 

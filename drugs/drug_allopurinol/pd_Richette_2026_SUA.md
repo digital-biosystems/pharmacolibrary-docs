@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Stocker_2012) drives serum urate (in µM): direct linear effect.
 
-> The paper describes a linear mixed-effects regression model where allopurinol dose (in 150 mg increments) and oxypurinol concentrations are associated with serum urate levels, with the effect modified by fractional excretion of uric acid (FEUA) and estimated glomerular filtration rate (eGFR). The model reports a beta coefficient of -0.26 for eGFR and 6.46 for FEUA &gt; 5.5%, but does not specify a mechanistic pharmacodynamic model (e.g., Emax, inhibition of production/elimination) or standard potency parameters (IC50, EC50, Imax).
+**Model:** No model was generated from this record.
+
+> Allopurinol (via its active metabolite oxypurinol, a xanthine oxidase inhibitor) lowers serum urate (µM) in a linear dose–response manner, with each 150-mg allopurinol increment reducing SUA by −72.37 µM (FEUA ≤5.5%) or −65.96 µM (FEUA &gt;5.5%); the model is a linear mixed-effects regression including covariates eGFR (beta −0.26) and FEUA &gt;5.5% (beta 6.46), and the paper does not report Imax, IC50, or other PD potency parameters.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Richette_2026`
 - **model family:** `linear`

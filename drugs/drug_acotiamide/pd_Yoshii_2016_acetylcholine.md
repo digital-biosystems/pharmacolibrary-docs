@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acotiamide (measured concentrations) drives name (in unknown): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> Acotiamide concentration in the stomach precursor pool inhibits the elimination (AChE-mediated hydrolysis) of acetylcholine in rat stomach, an indirect response Model II (kin 0.00314 nmol/g tissue/min, kout 0.00415 min−1) with IC50 1.79 μM; ACh rose to 131% of baseline at 2 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoshii_2016`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -19,21 +29,21 @@
 not matched (stem Yoshii_2016)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V1 (ml/kg) — Value | `Q63` · not captured | 302 | ml/kg | not captured | exact (not captured) | Tab1:row1:col1 |
-| k1 (min−1) — Value | `Q900` · not captured | 0.126 | min−1 | not captured | llm (not captured) | Tab1:row2:col1 |
-| k2 (min−1) — Value | `Q346` · not captured | 0.0313 | min−1 | not captured | llm (not captured) | Tab1:row3:col1 |
-| CLtot (ml/min/kg) — Value | `Q22` · not captured | 56.9 | ml/min/kg | not captured | exact (not captured) | Tab1:row4:col1 |
-| Ve (ml) — Value | `Q61` · not captured | 0.441 | ml | not captured | llm (not captured) | Tab1:row5:col1 |
-| fb · PSinf (ml/min) — Value | `Q358` · not captured | 0.174 | ml/min | not captured | llm (not captured) | Tab1:row7:col1 |
-| Qt (ml/min) — Value | `Q30` · not captured | 1.1 | ml/min | not captured | llm (not captured) | Tab1:row8:col1 |
-| VT (ml) — Value | `Q61` · not captured | 0.133 | ml | not captured | llm (not captured) | Tab1:row9:col1 |
-| kass (min−1) — Value | `Q49` · not captured | 0.0000320 | min−1 | not captured | llm (not captured) | Tab1:row11:col1 |
-| kdis (min−1) — Value | `Q326` · not captured | 0.00000485 | min−1 | not captured | llm (not captured) | Tab1:row12:col1 |
-| IC50 (μM) — Value | `Q322` · not captured | 1.79 | μM | not captured | exact (not captured) | Tab1:row13:col1 |
-| kin (nmol/g of tissue/min) — Value | `Q327` · not captured | 0.00314 | nmol/g of tissue/min | not captured | exact (not captured) | Tab1:row14:col1 |
-| kout (min−1) — Value | `Q328` · not captured | 0.00415 | min−1 | not captured | exact (not captured) | Tab1:row15:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V1 (ml/kg) — Value | `Q63` · not captured | 302 | ml/kg | not captured | exact (not captured) | Tab1:row1:col1 |
+| model term | k1 (min−1) — Value | `Q900` · not captured | 0.126 | min−1 | not captured | llm (not captured) | Tab1:row2:col1 |
+| PK (driver) | k2 (min−1) — Value | `Q346` · not captured | 0.0313 | min−1 | not captured | llm (not captured) | Tab1:row3:col1 |
+| PK (driver) | CLtot (ml/min/kg) — Value | `Q22` · not captured | 56.9 | ml/min/kg | not captured | exact (not captured) | Tab1:row4:col1 |
+| PK (driver) | Ve (ml) — Value | `Q61` · not captured | 0.441 | ml | not captured | llm (not captured) | Tab1:row5:col1 |
+| PK (driver) | fb · PSinf (ml/min) — Value | `Q358` · not captured | 0.174 | ml/min | not captured | llm (not captured) | Tab1:row7:col1 |
+| PK (driver) | Qt (ml/min) — Value | `Q30` · not captured | 1.1 | ml/min | not captured | llm (not captured) | Tab1:row8:col1 |
+| PK (driver) | VT (ml) — Value | `Q61` · not captured | 0.133 | ml | not captured | llm (not captured) | Tab1:row9:col1 |
+| PK (driver) | kass (min−1) — Value | `Q49` · not captured | 0.0000320 | min−1 | not captured | llm (not captured) | Tab1:row11:col1 |
+| PD (effect) | kdis (min−1) — Value | `Q326` · not captured | 0.00000485 | min−1 | not captured | llm (not captured) | Tab1:row12:col1 |
+| PD (effect) | IC50 (μM) — Value | `Q322` · not captured | 1.79 | μM | not captured | exact (not captured) | Tab1:row13:col1 |
+| PD (effect) | kin (nmol/g of tissue/min) — Value | `Q327` · not captured | 0.00314 | nmol/g of tissue/min | not captured | exact (not captured) | Tab1:row14:col1 |
+| PD (effect) | kout (min−1) — Value | `Q328` · not captured | 0.00415 | min−1 | not captured | exact (not captured) | Tab1:row15:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

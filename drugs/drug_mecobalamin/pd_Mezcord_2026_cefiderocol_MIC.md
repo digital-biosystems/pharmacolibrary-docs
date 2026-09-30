@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methylcobalamin (measured concentrations) drives name (in mg/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal PD model; it describes a concentration-dependent antagonism in which methylcobalamin (vitamin B12) increases cefiderocol MICs, with antagonism (FICI &gt;4) consistently seen at methylcobalamin concentrations &gt;25 mg/L, producing two- to four-fold MIC increases (e.g., E. coli K12 NDM-5 MIC rising from 0.25 to 2.0 mg/L at 40 mg/L and 4 mg/L at 100 mg/L methylcobalamin), attributed mechanistically to vitamin B12 interaction with TonB-dependent receptors and downregulation of siderophore-mediated iron acquisition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mezcord_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

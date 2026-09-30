@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pralatrexate (measured concentrations) drives name (in copies): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Pralatrexate (PDX), a folate antagonist, was tested in HAdV-B55-infected 3D lung organoids, where viral RNA levels (quantified by qPCR at 48 hpi) were fitted to an inhibitory Emax dose-response model against drug concentration (nM); the record lists multiple EC50 values (e.g., 0.31, 1.23, 4.05, 87.56 nM among others), but the paper excerpts do not state the EC50 values, the Emax, or a specific mechanism for the reduction of viral RNA beyond PDX's known inhibition of folate metabolism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liang_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,28 +30,28 @@ Liang X; Feng Y; Xu C; Wang Y; Yang W; Kuang J; et al. et al. (2026). Antimicrob
   ·  DOI: [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 — 1 | `Q321` · not captured | 87.56 | nM | not captured | exact (not captured) | T1:row1:col3 |
-| EC50 — 2 | `Q321` · not captured | 4.05 | nM | not captured | exact (not captured) | T1:row1:col4 |
-| EC50 — 3 | `Q321` · not captured | 1.23 | nM | not captured | exact (not captured) | T1:row1:col5 |
-| EC50 — 4 | `Q321` · not captured | 0.31 | nM | not captured | exact (not captured) | T1:row1:col6 |
-| EC50 — 1 | `Q321` · not captured | 13.21 | nM | not captured | exact (not captured) | T1:row2:col3 |
-| EC50 — 2 | `Q321` · not captured | 32.87 | nM | not captured | exact (not captured) | T1:row2:col4 |
-| EC50 — 3 | `Q321` · not captured | 0.69 | nM | not captured | exact (not captured) | T1:row2:col5 |
-| EC50 — 4 | `Q321` · not captured | 38.37 | nM | not captured | exact (not captured) | T1:row2:col6 |
-| EC50 — 1 | `Q321` · not captured | 7.23 | nM | not captured | exact (not captured) | T1:row3:col3 |
-| EC50 — 2 | `Q321` · not captured | 79.74 | nM | not captured | exact (not captured) | T1:row3:col4 |
-| EC50 — 3 | `Q321` · not captured | 1.63 | nM | not captured | exact (not captured) | T1:row3:col5 |
-| EC50 — 4 | `Q321` · not captured | 89.71 | nM | not captured | exact (not captured) | T1:row3:col6 |
-| EC50 — 1 | `Q321` · not captured | 53.21 | nM | not captured | exact (not captured) | T1:row4:col3 |
-| EC50 — 2 | `Q321` · not captured | 35.69 | nM | not captured | exact (not captured) | T1:row4:col4 |
-| EC50 — 3 | `Q321` · not captured | 3.53 | nM | not captured | exact (not captured) | T1:row4:col5 |
-| EC50 — 4 | `Q321` · not captured | 13.19 | nM | not captured | exact (not captured) | T1:row4:col6 |
-| EC50 — 1 | `Q321` · not captured | 14.78 | nM | not captured | exact (not captured) | T1:row5:col3 |
-| EC50 — 2 | `Q321` · not captured | 15.99 | nM | not captured | exact (not captured) | T1:row5:col4 |
-| EC50 — 3 | `Q321` · not captured | 1.42 | nM | not captured | exact (not captured) | T1:row5:col5 |
-| EC50 — 4 | `Q321` · not captured | 14.79 | nM | not captured | exact (not captured) | T1:row5:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 — 1 | `Q321` · not captured | 87.56 | nM | not captured | exact (not captured) | T1:row1:col3 |
+| PD (effect) | EC50 — 2 | `Q321` · not captured | 4.05 | nM | not captured | exact (not captured) | T1:row1:col4 |
+| PD (effect) | EC50 — 3 | `Q321` · not captured | 1.23 | nM | not captured | exact (not captured) | T1:row1:col5 |
+| PD (effect) | EC50 — 4 | `Q321` · not captured | 0.31 | nM | not captured | exact (not captured) | T1:row1:col6 |
+| PD (effect) | EC50 — 1 | `Q321` · not captured | 13.21 | nM | not captured | exact (not captured) | T1:row2:col3 |
+| PD (effect) | EC50 — 2 | `Q321` · not captured | 32.87 | nM | not captured | exact (not captured) | T1:row2:col4 |
+| PD (effect) | EC50 — 3 | `Q321` · not captured | 0.69 | nM | not captured | exact (not captured) | T1:row2:col5 |
+| PD (effect) | EC50 — 4 | `Q321` · not captured | 38.37 | nM | not captured | exact (not captured) | T1:row2:col6 |
+| PD (effect) | EC50 — 1 | `Q321` · not captured | 7.23 | nM | not captured | exact (not captured) | T1:row3:col3 |
+| PD (effect) | EC50 — 2 | `Q321` · not captured | 79.74 | nM | not captured | exact (not captured) | T1:row3:col4 |
+| PD (effect) | EC50 — 3 | `Q321` · not captured | 1.63 | nM | not captured | exact (not captured) | T1:row3:col5 |
+| PD (effect) | EC50 — 4 | `Q321` · not captured | 89.71 | nM | not captured | exact (not captured) | T1:row3:col6 |
+| PD (effect) | EC50 — 1 | `Q321` · not captured | 53.21 | nM | not captured | exact (not captured) | T1:row4:col3 |
+| PD (effect) | EC50 — 2 | `Q321` · not captured | 35.69 | nM | not captured | exact (not captured) | T1:row4:col4 |
+| PD (effect) | EC50 — 3 | `Q321` · not captured | 3.53 | nM | not captured | exact (not captured) | T1:row4:col5 |
+| PD (effect) | EC50 — 4 | `Q321` · not captured | 13.19 | nM | not captured | exact (not captured) | T1:row4:col6 |
+| PD (effect) | EC50 — 1 | `Q321` · not captured | 14.78 | nM | not captured | exact (not captured) | T1:row5:col3 |
+| PD (effect) | EC50 — 2 | `Q321` · not captured | 15.99 | nM | not captured | exact (not captured) | T1:row5:col4 |
+| PD (effect) | EC50 — 3 | `Q321` · not captured | 1.42 | nM | not captured | exact (not captured) | T1:row5:col5 |
+| PD (effect) | EC50 — 4 | `Q321` · not captured | 14.79 | nM | not captured | exact (not captured) | T1:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

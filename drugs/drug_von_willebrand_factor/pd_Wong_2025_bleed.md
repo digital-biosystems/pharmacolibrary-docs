@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Factor VIII activity drives bleeding episodes (in count): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Efanesoctocog alfa (FVIII replacement) concentrations, tracked via FVIII activity (IU/dL), were related to the time to bleeding episodes in a repeated time-to-event model with a Weibull base hazard and an effect of FVIII activity reducing (inhibiting) the bleeding hazard; the excerpts do not state the exact functional form or any potency parameters (e.g., IC50/EC50), only reporting steady-state trough/Cmax levels such as Ctrough 13.5 (SD 6.21) IU/dL and median 12.7 IU/dL for 50 IU/kg once weekly.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wong_2025`
 - **model family:** `tte`
 - **driver:** `not_resolved`
@@ -21,20 +31,20 @@ Wong N; Bhagunde P; Nyberg J; Katragadda S; Demissie M; Willemze A; Benson C; Ma
   ·  DOI: [10.1002/jcph.70008](https://doi.org/10.1002/jcph.70008)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 50.9 a — Ctroughss (IU/dL) | `Q37` · not captured | 11.2 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row3:col1 |
-| 50.9 a — Cmaxss (IU/dL) | `Q32` · not captured | 129 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row3:col3 |
-| 78.3 b — Ctroughss (IU/dL) | `Q37` · not captured | 14 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row4:col1 |
-| 78.3 b — Cmaxss (IU/dL) | `Q32` · not captured | 144 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row4:col3 |
-| 116.3 c — Ctroughss (IU/dL) | `Q37` · not captured | 16.3 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row5:col1 |
-| 116.3 c — Cmaxss (IU/dL) | `Q32` · not captured | 156 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row5:col3 |
-| 13.4 d — Ctroughss (IU/dL) | `Q37` · not captured | 5.38 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row7:col1 |
-| 13.4 d — Cmaxss (IU/dL) | `Q32` · not captured | 94.6 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row7:col3 |
-| 22.1 e — Ctroughss (IU/dL) | `Q37` · not captured | 7.14 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row8:col1 |
-| 22.1 e — Cmaxss (IU/dL) | `Q32` · not captured | 106 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row8:col3 |
-| 50.9 a — Ctroughss (IU/dL) | `Q37` · not captured | 11.2 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row9:col1 |
-| 50.9 a — Cmaxss (IU/dL) | `Q32` · not captured | 129 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row9:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 50.9 a — Ctroughss (IU/dL) | `Q37` · not captured | 11.2 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row3:col1 |
+| PK (driver) | 50.9 a — Cmaxss (IU/dL) | `Q32` · not captured | 129 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row3:col3 |
+| PK (driver) | 78.3 b — Ctroughss (IU/dL) | `Q37` · not captured | 14 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row4:col1 |
+| PK (driver) | 78.3 b — Cmaxss (IU/dL) | `Q32` · not captured | 144 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row4:col3 |
+| PK (driver) | 116.3 c — Ctroughss (IU/dL) | `Q37` · not captured | 16.3 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row5:col1 |
+| PK (driver) | 116.3 c — Cmaxss (IU/dL) | `Q32` · not captured | 156 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row5:col3 |
+| PK (driver) | 13.4 d — Ctroughss (IU/dL) | `Q37` · not captured | 5.38 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row7:col1 |
+| PK (driver) | 13.4 d — Cmaxss (IU/dL) | `Q32` · not captured | 94.6 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row7:col3 |
+| PK (driver) | 22.1 e — Ctroughss (IU/dL) | `Q37` · not captured | 7.14 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row8:col1 |
+| PK (driver) | 22.1 e — Cmaxss (IU/dL) | `Q32` · not captured | 106 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row8:col3 |
+| PK (driver) | 50.9 a — Ctroughss (IU/dL) | `Q37` · not captured | 11.2 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row9:col1 |
+| PK (driver) | 50.9 a — Cmaxss (IU/dL) | `Q32` · not captured | 129 | IU/dL | not captured | llm (not captured) | jcph70008-tbl-0001:row9:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Olanzapine drives name (in D2RO) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Olanzapine brain concentrations drive dopamine D2 receptor occupancy (D2RO) in rat striatum via a mechanism-based model describing direct receptor binding kinetics (association–dissociation), not an Emax/kin-kout or effect-compartment structure. Key drug-specific parameters (reduced model): Kd 14.7 nM, kon 0.178 nM−1 h−1, koff 2.62 h−1 (full model: Kd 14.6 nM, kon 0.208 nM−1 h−1, koff 3.04 h−1), with brain efflux clearance CLbev 0.394 l/h/kg (reduced) or 0.433 l/h/kg (full model).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Johnson_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,23 +30,23 @@ Johnson M; Kozielska M; Pilla Reddy V; Vermeulen A; Li C; Grimwood S; et al. et 
   ·  DOI: [10.1007/s11095-011-0477-7](https://doi.org/10.1007/s11095-011-0477-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CLbev(l/h/kg) — Full model (FM) | `Q358` · not captured | 0.433 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col1 |
-| CLbev(l/h/kg) — Reduced model (RM) | `Q358` · not captured | 0.394 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col2 |
-| CLbev(l/h/kg) — % difference | `Q358` · not captured | -10 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col3 |
-| Kd (nM) — Full model (FM) | `Q331` · not captured | 14.6 | nM | not captured | exact (not captured) | Tab4:row3:col1 |
-| Kd (nM) — Reduced model (RM) | `Q331` · not captured | 14.7 | nM | not captured | exact (not captured) | Tab4:row3:col2 |
-| koff (h−1) — Full model (FM) | `Q330` · not captured | 3.04 | h−1 | not captured | exact (not captured) | Tab4:row4:col1 |
-| koff (h−1) — Reduced model (RM) | `Q330` · not captured | 2.62 | h−1 | not captured | exact (not captured) | Tab4:row4:col2 |
-| koff (h−1) — % difference | `Q330` · not captured | -16 | h−1 | not captured | exact (not captured) | Tab4:row4:col3 |
-| kon (nM−1 h−1)a — Full model (FM) | `Q329` · not captured | 0.208 | FM | not captured | llm_confirmed (not captured) | Tab4:row5:col1 |
-| kon (nM−1 h−1)a — Reduced model (RM) | `Q329` · not captured | 0.178 | RM | not captured | llm_confirmed (not captured) | Tab4:row5:col2 |
-| kon (nM−1 h−1)a — % difference | `Q329` · not captured | -17 | not captured | not captured | llm_confirmed (not captured) | Tab4:row5:col3 |
-| Proportional error (BC) — Full model (FM) | `Q316` · not captured | 0.479 | BC | not captured | exact (not captured) | Tab4:row6:col1 |
-| Proportional error (BC) — Reduced model (RM) | `Q316` · not captured | 0.479 | BC | not captured | exact (not captured) | Tab4:row6:col2 |
-| Additive error (D2RO) — Full model (FM) | `Q317` · not captured | 0.136 | D2RO | not captured | exact (not captured) | Tab4:row7:col1 |
-| Additive error (D2RO) — Reduced model (RM) | `Q317` · not captured | 0.136 | D2RO | not captured | exact (not captured) | Tab4:row7:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CLbev(l/h/kg) — Full model (FM) | `Q358` · not captured | 0.433 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col1 |
+| PK (driver) | CLbev(l/h/kg) — Reduced model (RM) | `Q358` · not captured | 0.394 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col2 |
+| PK (driver) | CLbev(l/h/kg) — % difference | `Q358` · not captured | -10 | l/h/kg | not captured | llm (not captured) | Tab4:row2:col3 |
+| PD (effect) | Kd (nM) — Full model (FM) | `Q331` · not captured | 14.6 | nM | not captured | exact (not captured) | Tab4:row3:col1 |
+| PD (effect) | Kd (nM) — Reduced model (RM) | `Q331` · not captured | 14.7 | nM | not captured | exact (not captured) | Tab4:row3:col2 |
+| PD (effect) | koff (h−1) — Full model (FM) | `Q330` · not captured | 3.04 | h−1 | not captured | exact (not captured) | Tab4:row4:col1 |
+| PD (effect) | koff (h−1) — Reduced model (RM) | `Q330` · not captured | 2.62 | h−1 | not captured | exact (not captured) | Tab4:row4:col2 |
+| PD (effect) | koff (h−1) — % difference | `Q330` · not captured | -16 | h−1 | not captured | exact (not captured) | Tab4:row4:col3 |
+| PD (effect) | kon (nM−1 h−1)a — Full model (FM) | `Q329` · not captured | 0.208 | FM | not captured | llm_confirmed (not captured) | Tab4:row5:col1 |
+| PD (effect) | kon (nM−1 h−1)a — Reduced model (RM) | `Q329` · not captured | 0.178 | RM | not captured | llm_confirmed (not captured) | Tab4:row5:col2 |
+| PD (effect) | kon (nM−1 h−1)a — % difference | `Q329` · not captured | -17 | not captured | not captured | llm_confirmed (not captured) | Tab4:row5:col3 |
+| variability | Proportional error (BC) — Full model (FM) | `Q316` · not captured | 0.479 | BC | not captured | exact (not captured) | Tab4:row6:col1 |
+| variability | Proportional error (BC) — Reduced model (RM) | `Q316` · not captured | 0.479 | BC | not captured | exact (not captured) | Tab4:row6:col2 |
+| variability | Additive error (D2RO) — Full model (FM) | `Q317` · not captured | 0.136 | D2RO | not captured | exact (not captured) | Tab4:row7:col1 |
+| variability | Additive error (D2RO) — Reduced model (RM) | `Q317` · not captured | 0.136 | D2RO | not captured | exact (not captured) | Tab4:row7:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

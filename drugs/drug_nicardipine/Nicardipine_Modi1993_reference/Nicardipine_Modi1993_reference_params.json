@@ -1,0 +1,30 @@
+{
+ "dose_source": "WHO ATC DDD 90 mg parenteral (C08CA04)",
+ "model_id": "Nicardipine_Modi1993_reference",
+ "molar_masses": {
+  "central.C": 0.479525
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 1.7888888888888892e-05,
+  "F": 1.0,
+  "MM": 0.479525,
+  "VdPerKg": 0.000275,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 9e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662051
+ },
+ "reference_peaks": {
+  "central.C": 0.0035838322459934148
+ },
+ "stop_time": 86400.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

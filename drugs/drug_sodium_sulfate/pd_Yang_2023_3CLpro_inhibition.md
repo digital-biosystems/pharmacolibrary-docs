@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PMPD (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record's pairing of PMPD with 3CLpro inhibition is not supported by the paper: PMPD showed poor 3CLpro inhibitory activity at 10 μM, and its reported potency is against spike–ACE2 binding (IC50 85.5 nM; spike RBD binding KD 78.59 nM). Direct inhibition of 3CLpro activity (percent inhibition, fluorescence assay) was observed for PGS (IC50 1.20 μM) and PSS (IC50 1.42 μM), with the polyguluronate backbone and sulfate group implicated; no Emax, kin/kout, or other model parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

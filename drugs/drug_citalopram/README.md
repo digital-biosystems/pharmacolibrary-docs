@@ -25,11 +25,11 @@ Citalopram was approved by the FDA in 1998 for the treatment of depression in ad
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76, Q22, Q65, Q317 — no SI value t…</sub><br><sub>route_to: `human_review`</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | 1-compartment general linear | 4 | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Weisskopf_2020_reference](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | 1-compartment, IV | 5 | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> | [Friberg_2006_reference](drugs/drug_citalopram/Citalopram_Friberg2006_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Friberg LE et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2006) | [10.1111/j.1365-2125.2005.02546.x](https://doi.org/10.1111/j.1365-2125.2005.02546.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q76, Q22, Q65, Q317 — no SI value t…</sub><br><sub>route_to: `human_review`</sub> | [Akil_2016_reference](drugs/drug_citalopram/Citalopram_Akil2016_reference.md) | held back | 1-compartment general linear | 4 | Akil A et al., A population pharmacokinetic model for…, Journal of pharmacokinetics… (2016) | [10.1007/s10928-015-9457-6](https://doi.org/10.1007/s10928-015-9457-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Weisskopf_2020_reference](drugs/drug_citalopram/Citalopram_Weisskopf2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 5 | Weisskopf E et al., A population pharmacokinetic model for…, British journal of clinical… (2020) | [10.1111/bcp.14278](https://doi.org/10.1111/bcp.14278) |
 
 ## ADME sites
 
@@ -42,6 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate, `MAOA` substrate, `MAOB` substrate | DrugBank actor |
 | metabolism | liver | `AOX1` substrate, `CYP1A2` inhibitor, `CYP2C19` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` substrate | DrugBank actor |

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thymol (measured concentrations) drives cellulase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for cellulase (Cx) activity; it only shows that treatment with the thymol/KGM/LG coating at 100 mg/L thymol (TKL100) progressively reduced Cx activity, reaching 60.8% of control at 60 h, which the authors attribute to inhibition of Cx synthesis via suppression of M. circinelloides metabolism. No Imax, IC50/EC50 for Cx, kin, kout, ke0, or gamma values are given for this response (the reported EC50 of 113.55 mg/L refers to inhibition of mycelial growth, not Cx activity).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium drives Pediatric Respiratory Assessment Measure score reduction (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Intravenous magnesium (not salbutamol) exposure was correlated with PRAM score reduction in pediatric asthma: AUC0–2 h of total and ionized serum magnesium were significantly associated with PRAM reduction (Pearson ρ = −0.44, P = .018 and ρ = −0.45, P = .014), whereas single time-point concentrations (Cmax, C120 min) were not. No mechanistic PD model (e.g. Emax or turnover) could be estimated; the relationship is a linear/correlational exposure–response one, with an ROC-derived threshold AUC0–2 h of 63.1 mg h/L (total) and 24.1 mg h/L (ionized) giving &gt;80% sensitivity for a PRAM reduction of −3 points.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rower_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

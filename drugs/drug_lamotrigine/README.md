@@ -33,11 +33,11 @@ It is important to note that lamotirigine should not be used in the treatment of
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huo_2025_reference](drugs/drug_lamotrigine/Lamotrigine_Huo2025_reference.md) | 1-compartment, oral | 3 | Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, development an… (2025) | [10.2147/DDDT.S541597](https://doi.org/10.2147/DDDT.S541597) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Karanam_2025_reference](drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference.md) | 1-compartment, oral | 3 | Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025) | [10.1002/phar.4640](https://doi.org/10.1002/phar.4640) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Methaneethorn_2020_reference](drugs/drug_lamotrigine/Lamotrigine_Methaneethorn2020_reference.md) | 1-compartment (no model) | 0 | Methaneethorn J et al., Sources of lamotrigine pharmacokinetic…, Seizure (2020) | [10.1016/j.seizure.2020.07.014](https://doi.org/10.1016/j.seizure.2020.07.014) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Huo_2025_reference](drugs/drug_lamotrigine/Lamotrigine_Huo2025_reference.md) | held back | 1-compartment, oral | 3 | Huo J et al., Dosing Optimization of Lamotrigine in P…, Drug design, development an… (2025) | [10.2147/DDDT.S541597](https://doi.org/10.2147/DDDT.S541597) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Karanam_2025_reference](drugs/drug_lamotrigine/Lamotrigine_Karanam2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Karanam A et al., Characterization of lamotrigine disposi…, Pharmacotherapy (2025) | [10.1002/phar.4640](https://doi.org/10.1002/phar.4640) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Methaneethorn_2020_reference](drugs/drug_lamotrigine/Lamotrigine_Methaneethorn2020_reference.md) | — | 1-compartment (no model) | 0 | Methaneethorn J et al., Sources of lamotrigine pharmacokinetic…, Seizure (2020) | [10.1016/j.seizure.2020.07.014](https://doi.org/10.1016/j.seizure.2020.07.014) |
 
 ## ADME sites
 
@@ -50,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | liver | `SLC22A1` substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate | DrugBank actor |

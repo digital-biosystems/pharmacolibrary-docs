@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spigelia anthelmia protein fractions drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Protein fractions from Spigelia anthelmia (LPF, SPF, RPF, tested at 0.062–2.0 mg mL-1) were incubated with Haemonchus contortus eggs for 48 h, and percent inhibition of egg hatching was measured; the paper does not state a pharmacodynamic model or mechanism for this response, and no EC50, Imax or rate parameters for egg hatching are given in the excerpts (EC50 values are reported only for larval exsheathment, 0.47 and 0.78 mg mL-1, and migration, 0.11–0.21 mg mL-1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Araújo_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

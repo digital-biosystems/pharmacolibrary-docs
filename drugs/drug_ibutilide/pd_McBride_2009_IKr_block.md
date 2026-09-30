@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibutilide (measured concentrations) drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ibutilide concentration (nM) inhibits HERG/IKr current amplitude in CHO cells; the paper does not state a specific PD model form, but reports IC50 values of 27.4±2.5 nM (HERG alone), 105.3±1.42 nM with MDR1-G2677T (A893S, attributed to enhanced drug efflux reducing channel binding), and 22.2±0.9 nM with G2677T/C3435T (which fails to traffic to the cell surface).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McBride_2009`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

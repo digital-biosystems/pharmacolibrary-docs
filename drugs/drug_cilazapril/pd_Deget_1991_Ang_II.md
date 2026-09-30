@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives plasma angiotensin II (in concentration): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazapril, hydrolysed to the active ACE inhibitor cilazaprilat, decreases plasma angiotensin II concentrations by inhibiting ACE (i.e. inhibiting Ang II production); the excerpts state no quantitative PD model parameters (Imax, IC50, kin, kout, etc.) relating cilazaprilat concentrations to the Ang II response, only that ACE inhibition exceeded 90% after single oral doses of 1.25–20 mg, peaking about 2–3 hours after administration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deget_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

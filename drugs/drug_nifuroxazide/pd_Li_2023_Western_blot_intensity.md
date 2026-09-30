@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifuroxazide (measured concentrations) drives PARP1 cleavage (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for nifuroxazide's effect on PARP1 cleavage; it only states qualitatively that NFZ increased PARP1 cleavage (Western blot) and that this effect was not altered by the PARP1 inhibitor olaparib, suggesting apoptosis separate from parthanatos. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for this response; the only potency value reported is an antiproliferative IC50 of 2.65 ± 0.08 μmol/L for NFZ in VCaP cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

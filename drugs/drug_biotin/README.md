@@ -23,18 +23,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | 1-compartment, IV | 2 | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | 1-compartment, IV | 2 | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2001_reference](drugs/drug_biotin/Biotin_Wang2001_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang KS et al., The clearance and metabolism of biotin…, The Journal of nutrition (2001) | [10.1093/jn/131.4.1271](https://doi.org/10.1093/jn/131.4.1271) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Wang_2023_reference](drugs/drug_biotin/Biotin_Wang2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Wang Y et al., A picogram BA-ELISA quantification assa…, PLoS neglected tropical dis… (2023) | [10.1371/journal.pntd.0011568](https://doi.org/10.1371/journal.pntd.0011568) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024](drugs/drug_biotin/pd_Niu_2024_IC50.md) | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024](drugs/drug_biotin/pd_Niu_2024_TB.md) | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024](drugs/drug_biotin/pd_Niu_2024_unknown.md) | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024_IC50](drugs/drug_biotin/pd_Niu_2024_IC50.md) | Cytotoxicity ← Leucinostatin B derivatives · inhibition effect | — | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024_TB](drugs/drug_biotin/pd_Niu_2024_TB.md) | Malaria transmission blocking ← Leucinostatin B derivatives · inhibition effect | — | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Niu_2024_unknown](drugs/drug_biotin/pd_Niu_2024_unknown.md) | Hemolysis ← Leucinostatin B derivatives · inhibition effect | — | Niu G et al., Leucinostatins target Plasmodium mitoch…, Parasites & vectors (2024) | [10.1186/s13071-024-06608-8](https://doi.org/10.1186/s13071-024-06608-8) |
 
 ## ADME sites
 

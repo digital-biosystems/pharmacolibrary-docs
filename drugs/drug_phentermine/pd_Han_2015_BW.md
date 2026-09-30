@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** M1 and M2 (sibutramine metabolites) (measured concentrations) drive body weight (in kg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the paper (sibutramine, not phentermine), body weight is described by a turnover model in which sibutramine exposure (AUCss,sum of metabolites M1 and M2) inhibits the rate of weight gain (Rate of weight gain = kin×(1−Emax×AUCss,sum/(AUC50+AUCss,sum)−Pmax)), with weight loss following first-order kinetics (kout×BW) and kin = BASE×kout; a constant placebo effect Pmax (influenced by sex and baseline BMI) is also included. The excerpts do not report numerical values for Emax, AUC50, kin, kout, or Pmax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

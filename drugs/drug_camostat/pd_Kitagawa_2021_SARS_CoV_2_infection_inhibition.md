@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 4-(4-guanidinobenzoyloxy)phenylacetic acid (GBPA) (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plasma GBPA (the active metabolite of camostat mesylate) concentrations were linked to inhibition of SARS-CoV-2 infection via an EC50 of 178 nM, used to compute time above EC50 from predicted steady-state concentrations; the paper does not state a full PD model form (e.g., Emax or indirect effect), only this threshold-based EC50 metric.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kitagawa_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,27 +31,27 @@ Kitagawa J; Arai H; Iida H; Mukai J; Furukawa K; Ohtsu S; et al. et al. (2021). 
   ·  DOI: [10.1111/cts.13052](https://doi.org/10.1111/cts.13052)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Absorption rate constant (KA) [/h] — Estimate | `Q49` · not captured | 5.91 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row2:col1 |
-| Absorption rate constant (KA) [/h] — RSE (%) | `Q49` · not captured | 49.2 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row2:col2 |
-| Clearance (CL) [L/h] — Estimate | `Q22` · not captured | 680 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row3:col1 |
-| Clearance (CL) [L/h] — RSE (%) | `Q358` · not captured | 9.78 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row3:col2 |
-| Volume of distribution of the central (V2/F) [L] — Estimate | `Q82` · not captured | 904 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row4:col1 |
-| Volume of distribution of the central (V2/F) [L] — RSE (%) | `Q82` · not captured | 8.83 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row4:col2 |
-| Intercompartmental clearance (Q) [L/h] — Estimate | `Q30` · not captured | 25.6 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row5:col1 |
-| Intercompartmental clearance (Q) [L/h] — RSE (%) | `Q30` · not captured | 15 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row5:col2 |
-| Volume of distribution of the peripheral (V3/F) [L] — Estimate | `Q78` · not captured | 151 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row6:col1 |
-| Volume of distribution of the peripheral (V3/F) [L] — RSE (%) | `Q78` · not captured | 19.9 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row6:col2 |
-| Lag time [h] — Estimate | `Q83` · not captured | 0.319 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row7:col1 |
-| Lag time [h] — RSE (%) | `Q83` · not captured | 2.39 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row7:col2 |
-| IOV on KA [% CV] — Estimate | `Q313` · not captured | 105 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row19:col1 |
-| IOV on KA [% CV] — RSE (%) | `Q313` · not captured | 22.7 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row19:col2 |
-| IOV on FA [% CV] — Estimate | `Q313` · not captured | 35.8 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row20:col1 |
-| IOV on FA [% CV] — RSE (%) | `Q313` · not captured | 10.7 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row20:col2 |
-| Proportional residual error [% CV] — Estimate | `Q316` · not captured | 0.39 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row22:col1 |
-| Proportional residual error [% CV] — RSE (%) | `Q316` · not captured | 4.46 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row22:col2 |
-| EC50 value of GBPA that inhibited SARS‐Cov‐2 infection | `Q321` · not captured | 178 | nM | not captured | review_gapfill (not captured) | Kitagawa_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Absorption rate constant (KA) [/h] — Estimate | `Q49` · not captured | 5.91 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row2:col1 |
+| PK (driver) | Absorption rate constant (KA) [/h] — RSE (%) | `Q49` · not captured | 49.2 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row2:col2 |
+| PK (driver) | Clearance (CL) [L/h] — Estimate | `Q22` · not captured | 680 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row3:col1 |
+| PK (driver) | Clearance (CL) [L/h] — RSE (%) | `Q358` · not captured | 9.78 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row3:col2 |
+| PK (driver) | Volume of distribution of the central (V2/F) [L] — Estimate | `Q82` · not captured | 904 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row4:col1 |
+| PK (driver) | Volume of distribution of the central (V2/F) [L] — RSE (%) | `Q82` · not captured | 8.83 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row4:col2 |
+| PK (driver) | Intercompartmental clearance (Q) [L/h] — Estimate | `Q30` · not captured | 25.6 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row5:col1 |
+| PK (driver) | Intercompartmental clearance (Q) [L/h] — RSE (%) | `Q30` · not captured | 15 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row5:col2 |
+| PK (driver) | Volume of distribution of the peripheral (V3/F) [L] — Estimate | `Q78` · not captured | 151 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row6:col1 |
+| PK (driver) | Volume of distribution of the peripheral (V3/F) [L] — RSE (%) | `Q78` · not captured | 19.9 | not captured | not captured | llm_corrected (not captured) | cts13052-tbl-0002:row6:col2 |
+| PK (driver) | Lag time [h] — Estimate | `Q83` · not captured | 0.319 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row7:col1 |
+| PK (driver) | Lag time [h] — RSE (%) | `Q83` · not captured | 2.39 | not captured | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row7:col2 |
+| variability | IOV on KA [% CV] — Estimate | `Q313` · not captured | 105 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row19:col1 |
+| variability | IOV on KA [% CV] — RSE (%) | `Q313` · not captured | 22.7 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row19:col2 |
+| variability | IOV on FA [% CV] — Estimate | `Q313` · not captured | 35.8 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row20:col1 |
+| variability | IOV on FA [% CV] — RSE (%) | `Q313` · not captured | 10.7 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row20:col2 |
+| variability | Proportional residual error [% CV] — Estimate | `Q316` · not captured | 0.39 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row22:col1 |
+| variability | Proportional residual error [% CV] — RSE (%) | `Q316` · not captured | 4.46 | IOV | not captured | llm_confirmed (not captured) | cts13052-tbl-0002:row22:col2 |
+| PD (effect) | EC50 value of GBPA that inhibited SARS‐Cov‐2 infection | `Q321` · not captured | 178 | nM | not captured | review_gapfill (not captured) | Kitagawa_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

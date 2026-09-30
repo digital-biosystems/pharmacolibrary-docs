@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nicorandil (concentrations from the PK model of Iida_2008::obj) drives name (in percentage): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nicorandil concentration-dependently relaxes rat isolated small mesenteric arteries precontracted with U46619, analysed with a sigmoid Emax concentration-response model (effect: stimulation of relaxation, expressed as percentage relaxation). The paper does not state an EC50, Emax or slope value for nicorandil itself; mechanistically, relaxation is attributed to a combination of guanylate cyclase stimulation, KATP channel opening and a third, nifedipine-sensitive (L-type Ca2+ channel-related) mechanism, since glibenclamide (3 µM) alone did not shift the nicorandil curve, glibenclamide plus methylene blue (10 µM) shifted it 8-fold, nifedipine (100 nM) shifted it 5-fold, and the triple combinat
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fujiwara_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

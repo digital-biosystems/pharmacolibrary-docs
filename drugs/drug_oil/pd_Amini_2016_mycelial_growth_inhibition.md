@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cymbopogon citratus essential oil drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cymbopogon citratus essential oil concentrations (ppm) inhibit mycelial growth (%) of Phytophthora species in vitro; the paper does not state a pharmacodynamic mechanism or model, only EC50 values from Probit analysis: 31.473 ppm (P. capsici), 33.097 ppm (P. melonis) and 69.112 ppm (P. drechsleri).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Amini_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ikawa_2007](drugs/drug_lafutidine/pd_Ikawa_2007_pH.md) | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Ikawa_2007_pH](drugs/drug_lafutidine/pd_Ikawa_2007_pH.md) | intragastric pH ← lafutidine · direct sigmoid Emax (Hill) effect | — | Ikawa K et al., Pharmacokinetic and pharmacodynamic pro…, Biological & pharmaceutical… (2007) | [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

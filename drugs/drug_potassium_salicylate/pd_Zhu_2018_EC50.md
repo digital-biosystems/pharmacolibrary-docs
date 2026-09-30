@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenazine-1-carboxylic acid ester conjugates (measured concentrations) drives fungicidal activity (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model; it reports EC50 values (μg/mL) of 16 phenazine-1-carboxylic acid (PCA) hydroxybenzoic acid ester conjugates for inhibition of mycelial growth of Rhizoctonia solani in vitro, with EC50 ranging from 3.2 μg/mL (conjugate 5c, 6.5-fold more potent than PCA, EC50 18.6 μg/mL) to 138.4 μg/mL (5k), and potency correlating with LogP (optimal 4.42–5.08). No mechanism of the concentration–response relationship (e.g., Emax, IC50/kin/kout parameters) is given beyond the proposed PCA-related hydroxyl-radical/redox-disruption mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,25 +30,25 @@ Zhu X; Yu L; Zhang M; Xu Z; Yao Z; Wu Q; et al. et al. (2018). Chemistry Central
   ·  DOI: [10.1186/s13065-018-0478-2](https://doi.org/10.1186/s13065-018-0478-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 5a — EC50 (μg/mL) | `Q321` · not captured | 48.3 | μg/mL | not captured | llm (not captured) | Tab2:row1:col1 |
-| 5b — EC50 (μg/mL) | `Q321` · not captured | 14.1 | μg/mL | not captured | llm (not captured) | Tab2:row2:col1 |
-| 5c — EC50 (μg/mL) | `Q321` · not captured | 3.2 | μg/mL | not captured | llm (not captured) | Tab2:row3:col1 |
-| 5d — EC50 (μg/mL) | `Q321` · not captured | 9.5 | μg/mL | not captured | llm (not captured) | Tab2:row4:col1 |
-| 5e — EC50 (μg/mL) | `Q321` · not captured | 12.8 | μg/mL | not captured | llm (not captured) | Tab2:row5:col1 |
-| 5f — EC50 (μg/mL) | `Q321` · not captured | 96.3 | μg/mL | not captured | llm (not captured) | Tab2:row6:col1 |
-| 5g — EC50 (μg/mL) | `Q321` · not captured | 68.6 | μg/mL | not captured | llm (not captured) | Tab2:row7:col1 |
-| 5h — EC50 (μg/mL) | `Q321` · not captured | 9.5 | μg/mL | not captured | llm (not captured) | Tab2:row8:col1 |
-| 5i — EC50 (μg/mL) | `Q321` · not captured | 4.9 | μg/mL | not captured | llm (not captured) | Tab2:row9:col1 |
-| 5j — EC50 (μg/mL) | `Q321` · not captured | 56.9 | μg/mL | not captured | llm (not captured) | Tab2:row10:col1 |
-| 5k — EC50 (μg/mL) | `Q321` · not captured | 138.4 | μg/mL | not captured | llm (not captured) | Tab2:row11:col1 |
-| 5l — EC50 (μg/mL) | `Q321` · not captured | 70.5 | μg/mL | not captured | llm (not captured) | Tab2:row12:col1 |
-| 5 m — EC50 (μg/mL) | `Q321` · not captured | 4.5 | μg/mL | not captured | llm (not captured) | Tab2:row13:col1 |
-| 5n — EC50 (μg/mL) | `Q321` · not captured | 5.6 | μg/mL | not captured | llm (not captured) | Tab2:row14:col1 |
-| 5o — EC50 (μg/mL) | `Q321` · not captured | 11.8 | μg/mL | not captured | llm (not captured) | Tab2:row15:col1 |
-| 5p — EC50 (μg/mL) | `Q321` · not captured | 70 | μg/mL | not captured | llm (not captured) | Tab2:row16:col1 |
-| PCA — EC50 (μg/mL) | `Q321` · not captured | 18.6 | μg/mL | not captured | llm (not captured) | Tab2:row17:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 5a — EC50 (μg/mL) | `Q321` · not captured | 48.3 | μg/mL | not captured | llm (not captured) | Tab2:row1:col1 |
+| PD (effect) | 5b — EC50 (μg/mL) | `Q321` · not captured | 14.1 | μg/mL | not captured | llm (not captured) | Tab2:row2:col1 |
+| PD (effect) | 5c — EC50 (μg/mL) | `Q321` · not captured | 3.2 | μg/mL | not captured | llm (not captured) | Tab2:row3:col1 |
+| PD (effect) | 5d — EC50 (μg/mL) | `Q321` · not captured | 9.5 | μg/mL | not captured | llm (not captured) | Tab2:row4:col1 |
+| PD (effect) | 5e — EC50 (μg/mL) | `Q321` · not captured | 12.8 | μg/mL | not captured | llm (not captured) | Tab2:row5:col1 |
+| PD (effect) | 5f — EC50 (μg/mL) | `Q321` · not captured | 96.3 | μg/mL | not captured | llm (not captured) | Tab2:row6:col1 |
+| PD (effect) | 5g — EC50 (μg/mL) | `Q321` · not captured | 68.6 | μg/mL | not captured | llm (not captured) | Tab2:row7:col1 |
+| PD (effect) | 5h — EC50 (μg/mL) | `Q321` · not captured | 9.5 | μg/mL | not captured | llm (not captured) | Tab2:row8:col1 |
+| PD (effect) | 5i — EC50 (μg/mL) | `Q321` · not captured | 4.9 | μg/mL | not captured | llm (not captured) | Tab2:row9:col1 |
+| PD (effect) | 5j — EC50 (μg/mL) | `Q321` · not captured | 56.9 | μg/mL | not captured | llm (not captured) | Tab2:row10:col1 |
+| PD (effect) | 5k — EC50 (μg/mL) | `Q321` · not captured | 138.4 | μg/mL | not captured | llm (not captured) | Tab2:row11:col1 |
+| PD (effect) | 5l — EC50 (μg/mL) | `Q321` · not captured | 70.5 | μg/mL | not captured | llm (not captured) | Tab2:row12:col1 |
+| PD (effect) | 5 m — EC50 (μg/mL) | `Q321` · not captured | 4.5 | μg/mL | not captured | llm (not captured) | Tab2:row13:col1 |
+| PD (effect) | 5n — EC50 (μg/mL) | `Q321` · not captured | 5.6 | μg/mL | not captured | llm (not captured) | Tab2:row14:col1 |
+| PD (effect) | 5o — EC50 (μg/mL) | `Q321` · not captured | 11.8 | μg/mL | not captured | llm (not captured) | Tab2:row15:col1 |
+| PD (effect) | 5p — EC50 (μg/mL) | `Q321` · not captured | 70 | μg/mL | not captured | llm (not captured) | Tab2:row16:col1 |
+| PD (effect) | PCA — EC50 (μg/mL) | `Q321` · not captured | 18.6 | μg/mL | not captured | llm (not captured) | Tab2:row17:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

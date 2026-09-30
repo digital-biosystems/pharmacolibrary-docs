@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives antiestrogenic activity (in % activity): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride inhibited estrogen-induced luciferase activity in VM7Luc4E2 ERalpha-positive breast carcinoma cells, with 86% inhibition at 10 μM after 24 h; the paper does not report an IC50, Emax, or other PD parameters for this response, and proposes (but does not establish) that the antiestrogenic effect is a consequence of mitochondrial electron transport chain (complex 1) inhibition, since the antiestrogenic concentration–response curve overlapped with that for mitochondrial O2 consumption inhibition (O2 consumption IC50 3.8 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Datta_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

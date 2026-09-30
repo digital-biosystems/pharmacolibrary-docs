@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** EvoSiR4 (measured concentrations) drives intracellular calcium release (in relative fluorescence): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> EvoSiR4 concentrations (nM) stimulate intracellular calcium release (dF/F0, relative fluorescence) via a direct positive allosteric modulation of the calcium-sensing receptor (CaSR) in a FLIPR assay with 0.5 mM CaCl2, described by a sigmoid Emax concentration-response model; the paper reports an EC50 of ~40 nM (low nanomolar, &lt;50 nM), which increases with BSA binding to 64 ± 12 nM (0.1% BSA), 102 ± 34 nM (0.5% BSA), and 106 ± 42 nM (1% BSA), compared with evocalcet's EC50 of 243 ± 15 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bátora_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

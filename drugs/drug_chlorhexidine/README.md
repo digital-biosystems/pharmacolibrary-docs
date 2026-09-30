@@ -25,21 +25,21 @@ Chlorhexidine was developed in the UK by Imperial Chemical Industries in the ear
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | 1-compartment (no model) | 2 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | 1-compartment (no model) | 0 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | — | 1-compartment (no model) | 2 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | — | 1-compartment (no model) | 0 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025](drugs/drug_chlorhexidine/pd_Zhang_2025_Body_weight.md) | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025](drugs/drug_chlorhexidine/pd_Zhang_2025_Survival.md) | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025](drugs/drug_chlorhexidine/pd_Zhang_2025_Viral_load.md) | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025](drugs/drug_chlorhexidine/pd_Zhang_2025_ZIKV_replication_inhibition.md) | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_survival.md) | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_viability.md) | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_Body_weight](drugs/drug_chlorhexidine/pd_Zhang_2025_Body_weight.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_Survival](drugs/drug_chlorhexidine/pd_Zhang_2025_Survival.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_Viral_load](drugs/drug_chlorhexidine/pd_Zhang_2025_Viral_load.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2025_ZIKV_replication_inhibition](drugs/drug_chlorhexidine/pd_Zhang_2025_ZIKV_replication_inhibition.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023_trophozoite_survival](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_survival.md) | name ← chlorhexidine gluconate · inhibition effect | — | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_2023_trophozoite_viability](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_viability.md) | name ← chlorhexidine gluconate · inhibition effect | — | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
 
 ## ADME sites
 

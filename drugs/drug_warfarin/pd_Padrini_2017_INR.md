@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin, R-warfarin drive International Normalized Ratio (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> S-warfarin and R-warfarin plasma concentrations (mg l-1) were related to INR via a sigmoid Emax PKPD model, with a turnover model describing prothrombin complex activity synthesis and elimination driving INR; the initial hypothesis of full VKORC1 inhibition by both enantiomers was rejected (negative EC50 for RW), and the paper gives no accepted potency values (model-estimated PCA half-life 11.4 h).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Padrini_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

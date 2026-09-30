@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanism; it reports direct concentration–response potencies (EC50) of sparteine-related compounds for raising the ac arrhythmia threshold, with compound 5 most potent (EC50 = 0.017 µM) and compound 6 at EC50 = 0.68 µM, versus quinidine at EC50 = 10.26 µM (95% CL 8.44 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tasso_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Tasso B; Mattioli LB; Tonelli M; Boido V; Chiarini A; Sparatore F; et al. et al.
   ·  DOI: [10.3390/molecules28196916](https://doi.org/10.3390/molecules28196916)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Quinidine — EC50 b(μM) | `Q321` · not captured | 10.26 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row4:col2 |
-| Quinidine — 95% Conf Lim(μM) | `Q322` · not captured | 8.44 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row4:col3 |
-| 1 — EC50 b(μM) | `Q321` · not captured | 3.66 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row6:col2 |
-| 4 — EC50 b(μM) | `Q321` · not captured | 10.67 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row9:col2 |
-| 5 — EC50 b(μM) | `Q321` · not captured | 0.017 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row10:col2 |
-| 6 — EC50 b(μM) | `Q321` · not captured | 0.68 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Quinidine — EC50 b(μM) | `Q321` · not captured | 10.26 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row4:col2 |
+| PD (effect) | Quinidine — 95% Conf Lim(μM) | `Q322` · not captured | 8.44 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row4:col3 |
+| PD (effect) | 1 — EC50 b(μM) | `Q321` · not captured | 3.66 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row6:col2 |
+| PD (effect) | 4 — EC50 b(μM) | `Q321` · not captured | 10.67 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row9:col2 |
+| PD (effect) | 5 — EC50 b(μM) | `Q321` · not captured | 0.017 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row10:col2 |
+| PD (effect) | 6 — EC50 b(μM) | `Q321` · not captured | 0.68 | μM | not captured | llm (not captured) | molecules-28-06916-t001:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

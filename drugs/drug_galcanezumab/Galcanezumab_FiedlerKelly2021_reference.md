@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
@@ -42,7 +44,7 @@ Fiedler-Kelly J; Raddad E; de Hoon J; Ludwig EA; Passarell J; Kielbasa W; et al.
 | volume of distribution | `Q61` · V | 11.2 | L | 0.0112 | [l] | not captured | exact (1.0) | Fiedler-Kelly_2021:abstract | — | not captured |
 | absorption rate constant | `Q49` · kabs | 0.0192 | h-1 | 5.333333333333333e-06 | [1] / [h] | not captured | exact (1.0) | Fiedler-Kelly_2021:abstract | — | not captured |
 | lag time | `Q83` · tlag | 0.202 | hours | 727.2 | [h] | not captured | exact (1.0) | Fiedler-Kelly_2021:abstract | — | not captured |
-| elimination half-life | `Q57` · t1/2z | 30 | days | not captured | [d] | not captured | llm (0.6) | Fiedler-Kelly_2021:abstract | — | not captured |
+| elimination half-life | `Q57` · t1/2z | 30 | days | 2592000.0 | h | not captured | llm (0.6) | Fiedler-Kelly_2021:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +62,7 @@ Fiedler-Kelly J; Raddad E; de Hoon J; Ludwig EA; Passarell J; Kielbasa W; et al.
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- unit re-normalised: t1/2z 'days' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Fiedler-Kelly_2021_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model

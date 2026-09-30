@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vedolizumab drives Time to endoscopic remission (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic mechanism linking vedolizumab to time to endoscopic remission; instead, vedolizumab clearance (CL, population estimate 0.159 L/day, cut-off 0.1886 L/day) was used as a categorical predictor in a Cox proportional hazards analysis of time to endoscopic remission, with lower CL associated with higher likelihood of remission. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marković_2024`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -20,15 +30,15 @@ Marković S; Kralj Đ; Svorcan P; Knežević Ivanovski T; Odanović O; Obradovi�
   ·  DOI: [10.3390/pharmaceutics16121629](https://doi.org/10.3390/pharmaceutics16121629)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/day) — Estimated Value (%RSE) | `Q22` · not captured | 0.159 | L/day | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row1:col1 |
-| Vc (L) — Estimated Value (%RSE) | `Q63` · not captured | 3.19 | L | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row2:col1 |
-| Q (L/day) — Estimated Value (%RSE) | `Q30` · not captured | 0.120 | L/day | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row3:col1 |
-| Vp (L) — Estimated Value (%RSE) | `Q64` · not captured | 1.66 | L | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row4:col1 |
-| IIVCL (%) — Estimated Value (%RSE) | `Q312` · not captured | 16.4 | Units | not captured | llm (not captured) | pharmaceutics-16-01629-t002:row6:col1 |
-| IIVVc (%) — Estimated Value (%RSE) | `Q312` · not captured | 18.9 | Units | not captured | llm (not captured) | pharmaceutics-16-01629-t002:row7:col1 |
-| Proportional residual error — Estimated Value (%RSE) | `Q316` · not captured | 0.458 | Units | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row8:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/day) — Estimated Value (%RSE) | `Q22` · not captured | 0.159 | L/day | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row1:col1 |
+| PK (driver) | Vc (L) — Estimated Value (%RSE) | `Q63` · not captured | 3.19 | L | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row2:col1 |
+| PK (driver) | Q (L/day) — Estimated Value (%RSE) | `Q30` · not captured | 0.120 | L/day | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row3:col1 |
+| PK (driver) | Vp (L) — Estimated Value (%RSE) | `Q64` · not captured | 1.66 | L | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row4:col1 |
+| variability | IIVCL (%) — Estimated Value (%RSE) | `Q312` · not captured | 16.4 | Units | not captured | llm (not captured) | pharmaceutics-16-01629-t002:row6:col1 |
+| variability | IIVVc (%) — Estimated Value (%RSE) | `Q312` · not captured | 18.9 | Units | not captured | llm (not captured) | pharmaceutics-16-01629-t002:row7:col1 |
+| variability | Proportional residual error — Estimated Value (%RSE) | `Q316` · not captured | 0.458 | Units | not captured | exact (not captured) | pharmaceutics-16-01629-t002:row8:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

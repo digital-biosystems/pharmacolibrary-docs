@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Overgaard_2016::total) drives name (in pg/ml): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanism for the calcitonin response; it was analysed as a sigmoid Emax exposure–response of change in plasma calcitonin (pg/ml) to steady-state plasma liraglutide concentration (nM), with Emax, EC50 and Hill coefficient γ as model parameters, but the excerpts give no numeric values for calcitonin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

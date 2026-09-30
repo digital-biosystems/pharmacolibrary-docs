@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ouabain (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ouabain (g_strophanthin) stimulates the density of TRPV4 currents (dITRPV4, pA/pF) with an Emax-type concentration–effect relationship and an EC50 of 1.89 nM; the mechanism is biphasic: a short-term enhancement via PLC-mediated PIP2 depletion (disinhibition of TRPV4) and a long-term enhancement via synthesis of new TRPV4 channels through Src/Ras/Raf/Mek/Erk and PI3K/Akt/mTOR pathways. No Imax, Emax, kin, kout or ke0 values are stated in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ponce_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

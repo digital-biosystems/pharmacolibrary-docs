@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BAY-3827 (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BAY-3827 (μM-range concentrations in cellular assays) directly inhibits AMPK kinase activity as a mixed-type, ATP-competitive inhibitor; the paper does not state an Emax model or kin/kout/ke0 parameters. Cell-free IC50 values were 1.4 nM at 10 μM ATP and 15 nM at 2 mM ATP (with 2 μM AMP), and across AMPK heterotrimers 1.8–4.1 nM at 20 μM ATP and 31.2–57 nM at 200 μM ATP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fraguas_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

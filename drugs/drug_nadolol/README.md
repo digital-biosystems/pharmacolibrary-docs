@@ -33,9 +33,9 @@ Nadolol was granted FDA approval on 10 December 1979.[L7922]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_1992_reference](drugs/drug_nadolol/Nadolol_Mehta1992_reference.md) | 1-compartment (no model) | 1 | Mehta AV et al., Pharmacokinetics of nadolol in children…, Journal of clinical pharmac… (1992) | [10.1002/j.1552-4604.1992.tb03805.x](https://doi.org/10.1002/j.1552-4604.1992.tb03805.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mehta_1992_reference](drugs/drug_nadolol/Nadolol_Mehta1992_reference.md) | — | 1-compartment (no model) | 1 | Mehta AV et al., Pharmacokinetics of nadolol in children…, Journal of clinical pharmac… (1992) | [10.1002/j.1552-4604.1992.tb03805.x](https://doi.org/10.1002/j.1552-4604.1992.tb03805.x) |
 
 ## ADME sites
 

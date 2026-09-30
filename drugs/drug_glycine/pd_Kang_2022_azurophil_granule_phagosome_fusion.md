@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycine (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycine (μM concentrations) stimulates azurophil granule-phagosome fusion in human neutrophils that have taken up E. coli, acting via the GlyRα2/ROS (NADPH oxidase)/Ca2+/p38 MAPK pathway, as the enhancement was blocked by strychnine, DPI, and SB203580. The paper does not state a quantitative PD model (no Emax/IC50/kin/kout values) for this response; the only potency value given, EC50 = 238 μM, refers to glycine's enhancement of neutrophil bactericidal activity, not to granule-phagosome fusion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

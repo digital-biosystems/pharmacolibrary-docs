@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lead acetate (measured concentrations) drives detrusor muscle relaxation (in % relaxation) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In this study isoprenaline (10−9–10−4 M) acts directly on rat detrusor muscle strips precontracted with ACh (10−4 M), producing concentration-dependent % relaxation (control EMAX 64.98 ± 4.33%). Subacute lead acetate toxicity (30 mg/kg, ip, 21 days) inhibited this relaxation, shifting the isoprenaline dose-response curve upward and reducing EMAX to 31.67 ± 2.26%; the paper attributes this to inflammation-related downregulation of β-adrenoceptor (and purinoceptor) signalling, and no PD model parameters (IC50, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taha_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Taha SS; Daabees TT; Aly RG; Senbel AM et al. (2022). Saudi pharmaceutical journ
   ·  DOI: [10.1016/j.jsps.2022.01.012](https://doi.org/10.1016/j.jsps.2022.01.012)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5' phosphate (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a PD model for tidal volume; PLP (24 mg/kg infusion) showed no significant effect on KCN-evoked tidal volume in SHR (ΔVT = −0.1 mL/Kg, P = 0.82), so no potency (IC50/Emax) values for this response are given. The only quantitative PD data are in vitro, where PLP inhibited α,β-methylene ATP-evoked Ca2+ responses in hP2X2/3R-expressing cells with an IC50 of 8.7 ± 0.7 µM via allosteric antagonism (right-shift of EC50 from 433 to 1706 nM and 63% reduction of maximal response).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Felippe_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

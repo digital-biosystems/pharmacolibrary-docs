@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives cell viability (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (free DOX, DOX-Lip, PSA-DOX/ICG-Lip ± 808 nm laser) reduces CCK-8-measured cell viability of C33a cells with increasing concentration; the paper reports IC50 values (Free DOX 0.84 μM, DOX-Lip 0.79 μM, PSA-DOX/ICG-Lip (−) 0.63 μM, PSA-DOX/ICG-Lip + laser 0.26 μM) but does not state a mechanistic PD model or parameters such as Emax, IC50-model gamma, kin/kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bai_2026`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,11 +31,11 @@ Bai J; Huang J; Zhang Q; Su W; Tang X; Amuti M; Zhu G; Shen Q; Yang J; Wang M et
   ·  DOI: [10.3390/pharmaceutics18040434](https://doi.org/10.3390/pharmaceutics18040434)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Free DOX — C33a | `Q75` · not captured | 0.84 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row1:col2 |
-| DOX-Lip — C33a | `Q75` · not captured | 0.79 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row2:col2 |
-| PSA-DOX/ICG-Lip (−) — C33a | `Q75` · not captured | 0.63 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Free DOX — C33a | `Q75` · not captured | 0.84 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row1:col2 |
+| PK (driver) | DOX-Lip — C33a | `Q75` · not captured | 0.79 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row2:col2 |
+| PK (driver) | PSA-DOX/ICG-Lip (−) — C33a | `Q75` · not captured | 0.63 | μM | not captured | llm (not captured) | pharmaceutics-18-00434-t003:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

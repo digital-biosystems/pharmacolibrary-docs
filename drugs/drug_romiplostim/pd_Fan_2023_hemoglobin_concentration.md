@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Romiplostim, rHuEPO, carboplatin drive name (in HGB): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> In a catenary-lifetime-based indirect response model, hemoglobin (HGB) production is stimulated by rHuEPO (SC50E 66.08 mIU/mL) with romiplostim synergizing on erythropoiesis, with a transit time TRET of 35.13 h, an effect-compartment equilibration rate Ke0 of 0.01669 1/h, and KE of 52.94 ×10–4/h; the paper does not state an explicit Emax/Imax for the HGB response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,22 +30,22 @@
 not matched (stem Fan_2023)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| TRET (h) — estimate | `Q361` · not captured | 35.13 | h | not captured | llm (not captured) | tbl1:row3:col2 |
-| KE (×10–4/h) — estimate | `Q47` · not captured | 52.94 | units | not captured | exact (not captured) | tbl1:row8:col2 |
-| KE (×10–4/h) — %RSE | `Q47` · not captured | 16.02 | units | not captured | exact (not captured) | tbl1:row8:col3 |
-| SC50E (mIU/mL) — estimate | `Q321` · not captured | 66.08 | mIU/mL | not captured | llm (not captured) | tbl1:row15:col2 |
-| SC50E (mIU/mL) — %RSE | `Q321` · not captured | 40.56 | mIU/mL | not captured | llm (not captured) | tbl1:row15:col3 |
-| Ke0 (1/h) — estimate | `Q326` · not captured | 0.01669 | units | not captured | exact (not captured) | tbl1:row16:col2 |
-| Ke0 (1/h) — %RSE | `Q326` · not captured | 20.05 | units | not captured | exact (not captured) | tbl1:row16:col3 |
-| σPLT1 — estimate | `Q315` · not captured | 0.1657 | units | not captured | llm (not captured) | tbl1:row17:col2 |
-| σPLT1 — %RSE | `Q315` · not captured | 5.238 | units | not captured | llm (not captured) | tbl1:row17:col3 |
-| σPLT2 — estimate | `Q315` · not captured | 0.1103 | units | not captured | llm (not captured) | tbl1:row18:col2 |
-| σPLT2 — %RSE | `Q315` · not captured | 5.558 | units | not captured | llm (not captured) | tbl1:row18:col3 |
-| σRBC — %RSE | `Q315` · not captured | 5.208 | units | not captured | llm (not captured) | tbl1:row19:col3 |
-| σHGB — estimate | `Q315` · not captured | 1.177 | units | not captured | llm (not captured) | tbl1:row20:col2 |
-| σHGB — %RSE | `Q315` · not captured | 6.137 | units | not captured | llm (not captured) | tbl1:row20:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | TRET (h) — estimate | `Q361` · not captured | 35.13 | h | not captured | llm (not captured) | tbl1:row3:col2 |
+| PK (driver) | KE (×10–4/h) — estimate | `Q47` · not captured | 52.94 | units | not captured | exact (not captured) | tbl1:row8:col2 |
+| PK (driver) | KE (×10–4/h) — %RSE | `Q47` · not captured | 16.02 | units | not captured | exact (not captured) | tbl1:row8:col3 |
+| PD (effect) | SC50E (mIU/mL) — estimate | `Q321` · not captured | 66.08 | mIU/mL | not captured | llm (not captured) | tbl1:row15:col2 |
+| PD (effect) | SC50E (mIU/mL) — %RSE | `Q321` · not captured | 40.56 | mIU/mL | not captured | llm (not captured) | tbl1:row15:col3 |
+| PD (effect) | Ke0 (1/h) — estimate | `Q326` · not captured | 0.01669 | units | not captured | exact (not captured) | tbl1:row16:col2 |
+| PD (effect) | Ke0 (1/h) — %RSE | `Q326` · not captured | 20.05 | units | not captured | exact (not captured) | tbl1:row16:col3 |
+| variability | σPLT1 — estimate | `Q315` · not captured | 0.1657 | units | not captured | llm (not captured) | tbl1:row17:col2 |
+| variability | σPLT1 — %RSE | `Q315` · not captured | 5.238 | units | not captured | llm (not captured) | tbl1:row17:col3 |
+| variability | σPLT2 — estimate | `Q315` · not captured | 0.1103 | units | not captured | llm (not captured) | tbl1:row18:col2 |
+| variability | σPLT2 — %RSE | `Q315` · not captured | 5.558 | units | not captured | llm (not captured) | tbl1:row18:col3 |
+| variability | σRBC — %RSE | `Q315` · not captured | 5.208 | units | not captured | llm (not captured) | tbl1:row19:col3 |
+| variability | σHGB — estimate | `Q315` · not captured | 1.177 | units | not captured | llm (not captured) | tbl1:row20:col2 |
+| variability | σHGB — %RSE | `Q315` · not captured | 6.137 | units | not captured | llm (not captured) | tbl1:row20:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

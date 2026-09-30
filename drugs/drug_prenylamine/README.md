@@ -29,9 +29,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Paar_1990_reference](drugs/drug_prenylamine/Prenylamine_Paar1990_reference.md) | 1-compartment (no model) | 5 | Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschung (1990) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Paar_1990_reference](drugs/drug_prenylamine/Prenylamine_Paar1990_reference.md) | — | 1-compartment (no model) | 5 | Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschung (1990) | — |
 
 ## ADME sites
 

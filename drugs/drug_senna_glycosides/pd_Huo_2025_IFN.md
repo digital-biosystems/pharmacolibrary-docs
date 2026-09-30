@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sennoside A (measured concentrations) drives IFN-γ concentration (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sennoside A (SA, 50 and 100 µM) increased IFN-γ concentrations in co-cultures of SA-treated SCC7 and CAL27 OSCC cells with activated CD8+ T cells (no effect in NOK cells at 100 µM), an effect attributed to SA-induced ferroptosis and PD-L1 downregulation via NF-κB pathway repression; the paper reports no pharmacodynamic model or potency parameters for the IFN-γ response (the reported IC50 values of 94.38 and 77.41 µM refer to cell viability, not IFN-γ).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Melhem_2013_reference](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | 2-compartment, oral | 6 | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Melhem_2013_reference](drugs/drug_hydrocodone/Hydrocodone_Melhem2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 6 | Melhem MR et al., Population pharmacokinetic analysis for…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0081-6](https://doi.org/10.1007/s40262-013-0081-6) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004](drugs/drug_hydrocodone/pd_Zhao_2004_Clinically_Meaningful_Events_CMEs_count.md) | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004](drugs/drug_hydrocodone/pd_Zhao_2004_Patient_CME_days.md) | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004](drugs/drug_hydrocodone/pd_Zhao_2004_Symptom_Distress_Scale_SDS_composite_score.md) | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004_Clinically_Meaningful_Events_CMEs_count](drugs/drug_hydrocodone/pd_Zhao_2004_Clinically_Meaningful_Events_CMEs_count.md) | name ← morphine equivalent dose · direct linear effect | — | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004_Patient_CME_days](drugs/drug_hydrocodone/pd_Zhao_2004_Patient_CME_days.md) | name ← morphine equivalent dose · direct linear effect | — | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhao_2004_Symptom_Distress_Scale_SDS_composite_score](drugs/drug_hydrocodone/pd_Zhao_2004_Symptom_Distress_Scale_SDS_composite_score.md) | name ← morphine equivalent dose · direct linear effect | — | Zhao SZ et al., Dose-response relationship between opio…, Journal of pain and symptom… (2004) | [10.1016/j.jpainsymman.2003.11.001](https://doi.org/10.1016/j.jpainsymman.2003.11.001) |
 
 ## Pharmacogenomics (PGx)
 

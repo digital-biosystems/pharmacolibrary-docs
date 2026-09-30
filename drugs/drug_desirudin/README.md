@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lefèvre_1997](drugs/drug_desirudin/pd_Lef_vre_1997_activated_partial_thromboplastin_time.md) | Lefèvre G et al., Effect of renal impairment on the pharm…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90151-X](https://doi.org/10.1016/S0009-9236(97)90151-X) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lefèvre_1997_activated_partial_thromboplastin_time](drugs/drug_desirudin/pd_Lef_vre_1997_activated_partial_thromboplastin_time.md) | name ← desirudin · direct linear effect | — | Lefèvre G et al., Effect of renal impairment on the pharm…, Clinical pharmacology and t… (1997) | [10.1016/S0009-9236(97)90151-X](https://doi.org/10.1016/S0009-9236(97)90151-X) |
 
 ## ADME sites
 

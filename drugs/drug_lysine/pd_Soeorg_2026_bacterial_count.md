@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Meropenem (measured concentrations) drives name (in log10 cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Meropenem and colistin/polymyxin B concentrations (mg/L) reduce bacterial count (log10 cfu/mL) of A. baumannii in time-kill experiments via sigmoidal Emax killing functions (Emax = maximum kill rate, EC50 = potency) acting on logistic bacterial growth, with the combination effect described by Bliss independence with a general pharmacodynamic interaction in which colistin/polymyxin B augments meropenem killing by increasing Emax (ΔEmax 0.29, RSE 27.1%) and reducing EC50 (ΔEC50 1 mg/L). Key estimates: Bmax 8.41 log10 cfu/mL (RSE 0.7%), EmaxMERO 3.47 (RSE 12.7%), EmaxCOLPMB 3.62 (RSE 2.7%), EC50COLPMB 0.33 mg/L (RSE 13.2%), residual variability 1.21 (RSE 9.2%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soeorg_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,21 +30,21 @@ Soeorg H; Lyu S; Kloprogge F; Standing JF et al. (2026). Antimicrobial agents an
   ·  DOI: [10.1128/aac.00274-26](https://doi.org/10.1128/aac.00274-26)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Bmax — Estimate | `Q332` · not captured | 8.41 | not captured | not captured | exact (not captured) | T1:row3:col2 |
-| Bmax — RSE (%) | `Q332` · not captured | 0.7 | not captured | not captured | exact (not captured) | T1:row3:col3 |
-| EmaxMERO — Estimate | `Q320` · not captured | 3.47 | not captured | not captured | llm (not captured) | T1:row6:col2 |
-| EmaxMERO — RSE (%) | `Q320` · not captured | 12.7 | not captured | not captured | llm (not captured) | T1:row6:col3 |
-| EmaxCOLPMB — Estimate | `Q320` · not captured | 3.62 | not captured | not captured | llm (not captured) | T1:row13:col2 |
-| EmaxCOLPMB — RSE (%) | `Q320` · not captured | 2.7 | not captured | not captured | llm (not captured) | T1:row13:col3 |
-| EC50COLPMB — Estimate | `Q321` · not captured | 0.33 | mg/L | not captured | llm (not captured) | T1:row16:col2 |
-| EC50COLPMB — RSE (%) | `Q321` · not captured | 13.2 | mg/L | not captured | llm (not captured) | T1:row16:col3 |
-| ΔEmax — Estimate | `Q320` · not captured | 0.29 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col2 |
-| ΔEmax — RSE (%) | `Q320` · not captured | 27.1 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col3 |
-| ΔEC50 — Estimate | `Q321` · not captured | 1 | mg/L | not captured | llm_confirmed (not captured) | T1:row20:col2 |
-| Residual variability — Estimate | `Q315` · not captured | 1.21 | not captured | not captured | exact (not captured) | T1:row21:col2 |
-| Residual variability — RSE (%) | `Q315` · not captured | 9.2 | not captured | not captured | exact (not captured) | T1:row21:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Bmax — Estimate | `Q332` · not captured | 8.41 | not captured | not captured | exact (not captured) | T1:row3:col2 |
+| PD (effect) | Bmax — RSE (%) | `Q332` · not captured | 0.7 | not captured | not captured | exact (not captured) | T1:row3:col3 |
+| PD (effect) | EmaxMERO — Estimate | `Q320` · not captured | 3.47 | not captured | not captured | llm (not captured) | T1:row6:col2 |
+| PD (effect) | EmaxMERO — RSE (%) | `Q320` · not captured | 12.7 | not captured | not captured | llm (not captured) | T1:row6:col3 |
+| PD (effect) | EmaxCOLPMB — Estimate | `Q320` · not captured | 3.62 | not captured | not captured | llm (not captured) | T1:row13:col2 |
+| PD (effect) | EmaxCOLPMB — RSE (%) | `Q320` · not captured | 2.7 | not captured | not captured | llm (not captured) | T1:row13:col3 |
+| PD (effect) | EC50COLPMB — Estimate | `Q321` · not captured | 0.33 | mg/L | not captured | llm (not captured) | T1:row16:col2 |
+| PD (effect) | EC50COLPMB — RSE (%) | `Q321` · not captured | 13.2 | mg/L | not captured | llm (not captured) | T1:row16:col3 |
+| PD (effect) | ΔEmax — Estimate | `Q320` · not captured | 0.29 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col2 |
+| PD (effect) | ΔEmax — RSE (%) | `Q320` · not captured | 27.1 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col3 |
+| PD (effect) | ΔEC50 — Estimate | `Q321` · not captured | 1 | mg/L | not captured | llm_confirmed (not captured) | T1:row20:col2 |
+| variability | Residual variability — Estimate | `Q315` · not captured | 1.21 | not captured | not captured | exact (not captured) | T1:row21:col2 |
+| variability | Residual variability — RSE (%) | `Q315` · not captured | 9.2 | not captured | not captured | exact (not captured) | T1:row21:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

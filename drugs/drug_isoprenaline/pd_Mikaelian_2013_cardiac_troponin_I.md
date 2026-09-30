@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Handling procedure drives name (in pg/mL): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> The paper does not model isoprenaline; serum cardiac troponin I (pg/mL) in rats is driven by handling procedures (no drug concentrations), described by a K-PD pulse input with an Emax forcing function stimulating cTnI formation in an indirect response model (zero-order synthesis, first-order loss Kdeg = 0.616 h−1, baseline 2.51 pg/mL). Potency EC50 was 0.089 (pg/mL of the empirical forcing function) shared across procedures, with Emax estimated per handling group: 0.511 (no handling), 0.0927 (anesthesia), and 7.77 (restraint); the decay rate constant of the handling effect was fixed at 3 (h−1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mikaelian_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,30 +30,30 @@ Mikaelian I; Dunn ME; Mould DR; Hirkaler G; Geng W; Coluccio D; Nicklaus R; Sing
   ·  DOI: [10.1002/prp2.11](https://doi.org/10.1002/prp2.11)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline (pg/mL) — Typical value | `Q324` · not captured | 2.51 | pg/mL | not captured | exact (not captured) | tbl3:row1:col1 |
-| Baseline (pg/mL) — SD (%) | `Q324` · not captured | 3.6 | pg/mL | not captured | exact (not captured) | tbl3:row1:col2 |
-| Baseline (pg/mL) — Between animal variability | `Q324` · not captured | 34.35 | pg/mL | not captured | exact (not captured) | tbl3:row1:col4 |
-| Baseline (pg/mL) — SD (%) | `Q324` · not captured | 25.8 | pg/mL | not captured | exact (not captured) | tbl3:row1:col5 |
-| Kdeg (h−1) — Typical value | `Q328` · not captured | 0.616 | h−1 | not captured | exact (not captured) | tbl3:row2:col1 |
-| Kdeg (h−1) — SD (%) | `Q328` · not captured | 7.7 | h−1 | not captured | exact (not captured) | tbl3:row2:col2 |
-| Kdeg (h−1) — Between animal variability | `Q328` · not captured | 7.5 | h−1 | not captured | exact (not captured) | tbl3:row2:col4 |
-| Kdeg (h−1) — SD (%) | `Q328` · not captured | 750 | h−1 | not captured | exact (not captured) | tbl3:row2:col5 |
-| Emax for NH group — Typical value | `Q320` · not captured | 0.511 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col1 |
-| Emax for NH group — SD (%) | `Q320` · not captured | 26.8 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col2 |
-| Emax for NH group — Between animal variability | `Q320` · not captured | 193 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col4 |
-| Emax for NH group — SD (%) | `Q320` · not captured | 18 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col5 |
-| Emax for A group — Typical value | `Q320` · not captured | 0.0927 | units | not captured | llm_confirmed (not captured) | tbl3:row4:col1 |
-| Emax for A group — SD (%) | `Q320` · not captured | 21.8 | units | not captured | llm_confirmed (not captured) | tbl3:row4:col2 |
-| Emax for RR group — Typical value | `Q320` · not captured | 7.77 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col1 |
-| Emax for RR group — SD (%) | `Q320` · not captured | 32.3 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col2 |
-| EC50, pg/mL — Typical value | `Q321` · not captured | 0.089 | pg/mL | not captured | exact (not captured) | tbl3:row6:col1 |
-| EC50, pg/mL — SD (%) | `Q321` · not captured | 36.6 | pg/mL | not captured | exact (not captured) | tbl3:row6:col2 |
-| Study 1 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.617 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col1 |
-| Study 1 Additive error (pg/mL) — SD (%) | `Q317` · not captured | 8.7 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col2 |
-| Study 2 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.452 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row8:col1 |
-| Study 2 Additive error (pg/mL) — SD (%) | `Q317` · not captured | 6.9 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline (pg/mL) — Typical value | `Q324` · not captured | 2.51 | pg/mL | not captured | exact (not captured) | tbl3:row1:col1 |
+| PD (effect) | Baseline (pg/mL) — SD (%) | `Q324` · not captured | 3.6 | pg/mL | not captured | exact (not captured) | tbl3:row1:col2 |
+| PD (effect) | Baseline (pg/mL) — Between animal variability | `Q324` · not captured | 34.35 | pg/mL | not captured | exact (not captured) | tbl3:row1:col4 |
+| PD (effect) | Baseline (pg/mL) — SD (%) | `Q324` · not captured | 25.8 | pg/mL | not captured | exact (not captured) | tbl3:row1:col5 |
+| PD (effect) | Kdeg (h−1) — Typical value | `Q328` · not captured | 0.616 | h−1 | not captured | exact (not captured) | tbl3:row2:col1 |
+| PD (effect) | Kdeg (h−1) — SD (%) | `Q328` · not captured | 7.7 | h−1 | not captured | exact (not captured) | tbl3:row2:col2 |
+| PD (effect) | Kdeg (h−1) — Between animal variability | `Q328` · not captured | 7.5 | h−1 | not captured | exact (not captured) | tbl3:row2:col4 |
+| PD (effect) | Kdeg (h−1) — SD (%) | `Q328` · not captured | 750 | h−1 | not captured | exact (not captured) | tbl3:row2:col5 |
+| PD (effect) | Emax for NH group — Typical value | `Q320` · not captured | 0.511 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col1 |
+| PD (effect) | Emax for NH group — SD (%) | `Q320` · not captured | 26.8 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col2 |
+| PD (effect) | Emax for NH group — Between animal variability | `Q320` · not captured | 193 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col4 |
+| PD (effect) | Emax for NH group — SD (%) | `Q320` · not captured | 18 | units | not captured | llm_confirmed (not captured) | tbl3:row3:col5 |
+| PD (effect) | Emax for A group — Typical value | `Q320` · not captured | 0.0927 | units | not captured | llm_confirmed (not captured) | tbl3:row4:col1 |
+| PD (effect) | Emax for A group — SD (%) | `Q320` · not captured | 21.8 | units | not captured | llm_confirmed (not captured) | tbl3:row4:col2 |
+| PD (effect) | Emax for RR group — Typical value | `Q320` · not captured | 7.77 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col1 |
+| PD (effect) | Emax for RR group — SD (%) | `Q320` · not captured | 32.3 | units | not captured | llm_confirmed (not captured) | tbl3:row5:col2 |
+| PD (effect) | EC50, pg/mL — Typical value | `Q321` · not captured | 0.089 | pg/mL | not captured | exact (not captured) | tbl3:row6:col1 |
+| PD (effect) | EC50, pg/mL — SD (%) | `Q321` · not captured | 36.6 | pg/mL | not captured | exact (not captured) | tbl3:row6:col2 |
+| variability | Study 1 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.617 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col1 |
+| variability | Study 1 Additive error (pg/mL) — SD (%) | `Q317` · not captured | 8.7 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row7:col2 |
+| variability | Study 2 Additive error (pg/mL) — Typical value | `Q317` · not captured | 0.452 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row8:col1 |
+| variability | Study 2 Additive error (pg/mL) — SD (%) | `Q317` · not captured | 6.9 | pg/mL | not captured | llm_confirmed (not captured) | tbl3:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

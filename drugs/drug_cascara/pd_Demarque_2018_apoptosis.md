@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cascarosides (measured concentrations) drives name (in qualitative) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model: apoptosis in NOK-SI cells was assessed qualitatively (Western blot of pro-caspase-3, pro-caspase-8, PARP, RIP1) after 48 h exposure to isolated compounds or extracts at 300 μg/mL, with cascaroside-enriched cascara extract and glycosylated anthraquinones inducing apoptosis (decreased intact pro-caspase-3/8, PARP cleavage, decreased RIP1); no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given, and no mechanism beyond apoptosis activation via caspase/PARP pathways is quantified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Demarque_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

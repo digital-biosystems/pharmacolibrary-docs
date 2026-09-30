@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nanobody drives 5-hydroxy omeprazole activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nanobodies (Nb1, Nb6, Nb14, Nb15, Nb19) inhibit CYP102A1-catalysed conversion of omeprazole to 5-hydroxy omeprazole (5OH-OMP) in a direct dose–response manner, with IC50 values of 0.60 ± 0.15, 2.8 ± 1.8, 0.16 ± 0.11, 0.37 ± 0.031, and 1.2 ± 0.58 µM, respectively; the paper does not state a mechanistic PD model beyond postulating that nanobody binding to flexible regions of the CYP102A1 homodimer inhibits catalytic activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

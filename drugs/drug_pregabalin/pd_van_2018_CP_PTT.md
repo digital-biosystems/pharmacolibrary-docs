@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pregabalin (concentrations from this paper's PK model) drives cold pressor pain tolerance threshold (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> For the cold pressor pain tolerance threshold, pregabalin plasma concentrations act on a turnover model by linearly stimulating the production (k_in) of the response, which fit better than a direct additive effect (ΔOFV −88.8 vs −27.3), while an Emax relationship did not improve the fit (ΔOFV −1.6); the paper does not state numeric values for the slope, k_in, or k_out in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2018`
 - **model family:** `linear`
 - **driver:** `pk_record`

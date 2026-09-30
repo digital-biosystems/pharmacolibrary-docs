@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> | [Jiang_2025_reference](drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md) | 1-compartment, oral | 3 | Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, development an… (2025) | [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Leblond_2023_reference](drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md) | 1-compartment, oral | 2 | Leblond P et al., Phase I Study of a Combination of Fluva…, Cancers (2023) | [10.3390/cancers15072020](https://doi.org/10.3390/cancers15072020) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Bayoumy_2025_reference](drugs/drug_tioguanine/Tioguanine_Bayoumy2025_reference.md) | 1-compartment (no model) | 3 | Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01532-1](https://doi.org/10.1007/s40262-025-01532-1) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span> | [Jiang_2025_reference](drugs/drug_tioguanine/Tioguanine_Jiang2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Jiang L et al., Drug-Drug Interactions and Individualiz…, Drug design, development an… (2025) | [10.2147/dddt.s547878](https://doi.org/10.2147/dddt.s547878) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Leblond_2023_reference](drugs/drug_tioguanine/Tioguanine_Leblond2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Leblond P et al., Phase I Study of a Combination of Fluva…, Cancers (2023) | [10.3390/cancers15072020](https://doi.org/10.3390/cancers15072020) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Bayoumy_2025_reference](drugs/drug_tioguanine/Tioguanine_Bayoumy2025_reference.md) | — | 1-compartment (no model) | 3 | Bayoumy AB et al., Population Pharmacokinetics Model of Th…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01532-1](https://doi.org/10.1007/s40262-025-01532-1) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Simsek_2019](drugs/drug_tioguanine/pd_Simsek_2019_CE.md) | Simsek M et al., Sustained effectiveness, safety and the…, Alimentary pharmacology & t… (2019) | [10.1111/apt.15280](https://doi.org/10.1111/apt.15280) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Simsek_2019_CE](drugs/drug_tioguanine/pd_Simsek_2019_CE.md) | clinical effectiveness ← 6-thioguanine nucleotides · categorical (graded) response model | — | Simsek M et al., Sustained effectiveness, safety and the…, Alimentary pharmacology & t… (2019) | [10.1111/apt.15280](https://doi.org/10.1111/apt.15280) |
 
 ## Pharmacogenomics (PGx)
 

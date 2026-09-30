@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride drives XTT metabolic activity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride concentrations (molarity) inhibit the metabolic activity of 24 h S. mutans biofilms measured by XTT absorbance after 3 h exposure, described by a sigmoid Emax (inhibitory) model; the paper reports an IC50 of 8.9 mg/L (26 µM) but does not state Imax, gamma, or a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Forry_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

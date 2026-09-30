@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CIS43LS (measured concentrations) drives Pf infection (in binary): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> CIS43LS serum concentration (μg/mL) was related to time to first Pf infection in a time-to-event (proportional hazards) analysis, with higher concentrations reducing infection hazard (protective efficacy); the paper does not state an explicit PD mechanism or parameters such as Imax/IC50, but reports that a serum concentration of 64 μg/mL corresponded to ≥80% protective efficacy.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tran_2026`
 - **model family:** `tte`
 - **driver:** `conc_no_pk`

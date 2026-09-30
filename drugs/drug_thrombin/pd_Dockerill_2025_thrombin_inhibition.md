@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A1-E1 (measured concentrations) drives name (in Ki) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The supramolecular inhibitor A1-E1 (active-site fragment A1 fused via PNA hybridization to exosite II fragment E1) directly inhibits thrombin activity measured in a fluorogenic thrombin activity assay, with Ki = 74 pM, an ~800-fold potency enhancement over fragment A1 alone (Ki = 58.7 nM; E1 alone inactive); the paper does not state a PD model form (no Imax, IC50, kin/kout or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dockerill_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

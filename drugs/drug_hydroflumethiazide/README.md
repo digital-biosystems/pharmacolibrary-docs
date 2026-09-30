@@ -31,10 +31,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Brrs1979_reference.md) | 1-compartment (no model) | 1 | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yakatan_1977_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Yakatan1977_reference.md) | 1-compartment (no model) | 3 | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Brørs_1979_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Brrs1979_reference.md) | — | 1-compartment (no model) | 1 | Brørs O et al., Distribution of elimination of hydroflu…, European journal of clinica… (1979) | [10.1007/BF00563119](https://doi.org/10.1007/BF00563119) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yakatan_1977_reference](drugs/drug_hydroflumethiazide/Hydroflumethiazide_Yakatan1977_reference.md) | — | 1-compartment (no model) | 3 | Yakatan GJ et al., Pharmacokinetics of orally administered…, Journal of clinical pharmac… (1977) | [10.1002/j.1552-4604.1977.tb04584.x](https://doi.org/10.1002/j.1552-4604.1977.tb04584.x) |
 
 ## ADME sites
 

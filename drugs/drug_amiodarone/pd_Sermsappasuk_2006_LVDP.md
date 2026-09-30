@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiodarone (concentrations from the PK model of Anastasiou-Nana_1982) drives left ventricular developed pressure (in %): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> In isolated perfused rat hearts, amiodarone (10 µM infused for 15 min) decreased left ventricular developed pressure (negative inotropic effect); the effect was delayed relative to vascular compartment concentration via an effect-compartment (biophase) delay with time constant 11 min, and the effect was described by a sigmoid Emax model with Emax 37.7% and EC50 0.53 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sermsappasuk_2006`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Sermsappasuk P; Baek M; Weiss M et al. (2006). European journal of pharmaceutica
   ·  DOI: [10.1016/j.ejps.2006.02.007](https://doi.org/10.1016/j.ejps.2006.02.007)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (%) | `Q320` · not captured | 37.0 | % | not captured | review_gapfill (not captured) | Sermsappasuk_2006:review |
-| EC 50 (M) | `Q321` · not captured | 0.53 | M | not captured | review_gapfill (not captured) | Sermsappasuk_2006:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (%) | `Q320` · not captured | 37.0 | % | not captured | review_gapfill (not captured) | Sermsappasuk_2006:review |
+| PD (effect) | EC 50 (M) | `Q321` · not captured | 0.53 | M | not captured | review_gapfill (not captured) | Sermsappasuk_2006:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

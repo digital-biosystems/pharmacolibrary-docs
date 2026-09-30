@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Evacetrapib drives HDL-C (in % change from baseline): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Evacetrapib exposure (AUC, ng•hour/ml) drives the percent change from baseline in HDL-C via a direct Emax model, consistent with its mechanism of CETP inhibition (which raises HDL-C); the model includes a placebo term and an Emax/EC50 structure, but the paper excerpts do not report the numeric Emax, EC50, or slope values (Table 2 not provided).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Friedrich_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

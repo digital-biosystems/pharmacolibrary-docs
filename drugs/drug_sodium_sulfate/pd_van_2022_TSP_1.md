@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives Thrombospondin-1 (in ng/mL/10^6 platelets): indirect response — drug inhibits the production of Thrombospondin-1.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel plasma concentrations (ng/mL) stimulate the production (kin) of platelet TSP-1 (ng/mL/10^6 platelets) in an indirect-response turnover model with a sigmoidal Emax function (EBASE 43.8 ng/mL/10^6 platelets, 95% CI 39.7–48.5; EC50 284 ng/mL, 95% CI 122–724); TSP-1 turnover time was fixed to 9.7 days (kout = 1/9.7 days), and at the RP2D steady-state concentrations the model estimates a 5.4–22.0% increase in TSP-1 formation rate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ van Eijk M; Yu H; Sawicki E; de Weger VA; Nuijen B; Dorlo TPC; Beijnen JH; Huite
   ·  DOI: [10.1007/s00280-022-04445-z](https://doi.org/10.1007/s00280-022-04445-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 — Estimate | `Q321` · not captured | 284 | ng/mL | not captured | exact (not captured) | Tab2:row2:col2 |
-| EC50 — 95% CI | `Q321` · not captured | 122 | ng/mL | not captured | exact (not captured) | Tab2:row2:col3 |
-| EBASE — Shrinkage (%) | `Q318` · not captured | 4 | not captured | not captured | llm (not captured) | Tab2:row6:col4 |
-| σprop — Estimate | `Q316` · not captured | 13.8 | not captured | not captured | llm (not captured) | Tab2:row8:col2 |
-| σprop — 95% CI | `Q316` · not captured | 12.3 | not captured | not captured | llm (not captured) | Tab2:row8:col3 |
-| σprop — Shrinkage (%) | `Q318` · not captured | 12 | not captured | not captured | llm (not captured) | Tab2:row8:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 — Estimate | `Q321` · not captured | 284 | ng/mL | not captured | exact (not captured) | Tab2:row2:col2 |
+| PD (effect) | EC50 — 95% CI | `Q321` · not captured | 122 | ng/mL | not captured | exact (not captured) | Tab2:row2:col3 |
+| variability | EBASE — Shrinkage (%) | `Q318` · not captured | 4 | not captured | not captured | llm (not captured) | Tab2:row6:col4 |
+| variability | σprop — Estimate | `Q316` · not captured | 13.8 | not captured | not captured | llm (not captured) | Tab2:row8:col2 |
+| variability | σprop — 95% CI | `Q316` · not captured | 12.3 | not captured | not captured | llm (not captured) | Tab2:row8:col3 |
+| variability | σprop — Shrinkage (%) | `Q318` · not captured | 12 | not captured | not captured | llm (not captured) | Tab2:row8:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

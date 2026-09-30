@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Total serum omega-3 fatty acids drives name (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the rat air pouch model, total serum omega-3 fatty acid concentration inhibits total pouch WBC count (infiltration) in an Emax/IC50-type exposure–response relationship, with an IC50 of 134 µg/mL (ED50 ≈ 0.16 mL/kg OM-3 CA); EPA alone showed the best individual relationship (IC50 33 µg/mL, R2 0.70). The paper does not state a mechanistic PD model (e.g., kin/kout or effect compartment) for this endpoint, though in vitro DHA/EPA inhibit IL-1β production with IC50 4.6 µM and 6.0 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iverson_2018`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Stocker_2012) drives urate (in mmol/L) (inhibition; the model form was not identified).
 
-> Oxypurinol concentrations inhibit the plasma urate response, with the paper describing the effect as a reduction in urate concentrations (E0 - Emax) but not explicitly stating the underlying mechanism (e.g., production vs. elimination inhibition). The paper provides estimates for the mean IC50, E0, and Emax in Table V, but the specific numerical values for these constants are not included in the provided excerpts.
+**Model:** No model was generated from this record.
+
+> Allopurinol lowers plasma urate (mmol/L) largely via its metabolite oxypurinol, whose trough plasma concentrations (mg/L) inhibit urate concentrations with an inhibitory Emax-type relationship (IC50, E0 and Emax estimated by fitting, values in table V not given in the excerpts); the paper does not state a PD mechanism beyond this inhibition of urate concentrations.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Day_2007`
 - **model family:** `unknown`

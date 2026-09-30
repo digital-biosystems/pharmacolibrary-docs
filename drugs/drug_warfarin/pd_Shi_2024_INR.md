@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin (concentrations from the PK model of Aoyama_2022) drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> S-warfarin plasma concentration (mg/L) acts on INR via an indirect response model: S-warfarin inhibits the synthesis of NPT (prothrombin complex), with IMax fixed at 1.0 (complete inhibition of NPT synthesis) and IC50 = 0.24 mg/L; the inhibited NPT pool (kout = 0.0136 1/h, Kin = Kout × NPT0) drives INR nonlinearly with exponent λ = 3.48 and a maximum INR increase from baseline fixed at 5.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shi_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,13 +31,13 @@ Shi K; Deng J et al. (2024). Pharmacogenetics and genomics 34
   ·  DOI: [10.1097/FPC.0000000000000545](https://doi.org/10.1097/FPC.0000000000000545)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PK:Cp(S) — Estimate | `Q75` · not captured | 0.24 | S | not captured | llm (not captured) | T3:row1:col2 |
-| PD-1:NPT — Estimate | `Q358` · not captured | 0.0725 | not captured | not captured | llm (not captured) | T3:row4:col2 |
-| Kout (1/h) — Parametera | `Q328` · not captured | 0.0136 | not captured | not captured | exact (not captured) | T3:row5:col1 |
-| λ d — Parametera | `Q67` · not captured | 3.48 | not captured | not captured | llm (not captured) | T3:row9:col1 |
-| IMax | `Q323` · not captured | 1.0 | not captured | not captured | review_gapfill (not captured) | Shi_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | PK:Cp(S) — Estimate | `Q75` · not captured | 0.24 | S | not captured | llm (not captured) | T3:row1:col2 |
+| PK (driver) | PD-1:NPT — Estimate | `Q358` · not captured | 0.0725 | not captured | not captured | llm (not captured) | T3:row4:col2 |
+| PD (effect) | Kout (1/h) — Parametera | `Q328` · not captured | 0.0136 | not captured | not captured | exact (not captured) | T3:row5:col1 |
+| PK (driver) | λ d — Parametera | `Q67` · not captured | 3.48 | not captured | not captured | llm (not captured) | T3:row9:col1 |
+| PD (effect) | IMax | `Q323` · not captured | 1.0 | not captured | not captured | review_gapfill (not captured) | Shi_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

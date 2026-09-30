@@ -29,9 +29,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2021](drugs/drug_sodium_tartrate/pd_Singh_2021_mitophagy.md) | Singh F et al., Pharmacological rescue of impaired mito…, eLife (2021) | [10.7554/elife.67604](https://doi.org/10.7554/elife.67604) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2021_mitophagy](drugs/drug_sodium_tartrate/pd_Singh_2021_mitophagy.md) | name ← GSK3357679A · stimulation effect | — | Singh F et al., Pharmacological rescue of impaired mito…, eLife (2021) | [10.7554/elife.67604](https://doi.org/10.7554/elife.67604) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

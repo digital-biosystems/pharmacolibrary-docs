@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Rejected: the record for von Willebrand factor/factor VIII (Kim_2024) mis-splits the estimates table — column '6' is a table statistic, not a study population — and the factor VIII clearance of 0.0243 L/h is physiologically implausible, indicating a unit or scale extraction error.**

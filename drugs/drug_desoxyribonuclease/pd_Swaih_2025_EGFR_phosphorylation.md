@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AZ14289671 (an oral EGFR Exon20Ins inhibitor) inhibits EGFR phosphorylation in EGFR-mutant cell lines and xenografts, with mean HTRF IC50 values of 17–41 nmol/L across EGFR Exon20Ins lines versus 480–832 nmol/L in EGFRWT lines; in LXF2478ASV xenografts a single oral dose reduced EGFR phosphorylation &gt;90% at 6 h (50 mg/kg), with recovery by 16–24 h as free plasma concentrations exceeded the IC90 for only ~6 h before rapid clearance. The paper does not state a formal PD model structure (no Imax/kin/kout/ke0/gamma values); the mechanism is direct covalent inhibition of EGFR kinase activity (kinact/KI reported), not a modeled production/elimination effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

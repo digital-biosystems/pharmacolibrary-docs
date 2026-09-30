@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxyfluorfen (measured concentrations) drives TSH (in ng/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oxyfluorfen (oral doses 3.25–62.5 mg/kg/day for 8 days in male juvenile rats) was tested against serum TSH (ng/ml, RIA), but no significant change in TSH was observed at any dose despite marked T4 suppression (30–80% at 3.25–62.5 mg/kg); the paper does not report a PD model, potency values (Imax, IC50, EC50), or rate constants for the TSH response. In vitro, oxyfluorfen inhibited NIS-mediated iodide uptake with an EC50 of approximately 2 µM in both hNIS-HEK-293T-EPA and rat FRTL-5 cell RAIU assays.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stoker_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

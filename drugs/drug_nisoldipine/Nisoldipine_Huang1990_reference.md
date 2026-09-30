@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The clearance unit min.kg is dimensionally invalid, causing a structural parameter mismatch for m-nisoldipine.**
+
+The record lists total clearance as 9 min.kg, which is not a valid pharmacokinetic unit. This dimensional error triggered a rejection for a structural parameter mismatch. Additionally, the record was built from the abstract alone, so summary statistics stood in for a fitted model. Extracted — m-nisoldipine: t1/2α 4.3 min, t1/2β 63.6 min, V 0.805 L/kg, CL 9 min.kg, t1/2z 84.8 min, tmax 31.2 min, Cmax 50 micrograms/L.
 
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Huang Y; Fu SX; Li YS et al. (1990). Zhongguo yao li xue bao = Acta pharmacologica Sinica 11

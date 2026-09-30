@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Andrographolide (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tinidazole concentrations (µM) were tested in vitro against percentage inhibition of E. histolytica clinical isolates in drug susceptibility assays; the paper reports a mean IC50 of 16.1 µM (lower than metronidazole's 20.01 µM, p = 0.022) with higher percentage inhibition than metronidazole across the concentration range, but does not describe a pharmacodynamic mechanism or model (no Emax/kin/kout parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Singh A; Banerjee T; Shukla SK; Upadhyay S; Verma A et al. (2023). Scientific re
   ·  DOI: [10.1038/s41598-023-39382-1](https://doi.org/10.1038/s41598-023-39382-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E. h — Reference | `Q324` · not captured | 60 | not captured | not captured | llm (not captured) | Tab1:row2:col8 |
-| E. h — Reference | `Q324` · not captured | 36 | not captured | not captured | llm (not captured) | Tab1:row3:col8 |
-| E. h(HM1:IMSS) — Reference | `Q359` · not captured | 61 | HM1:IMSS | not captured | llm (not captured) | Tab1:row4:col8 |
-| E. h — Reference | `Q324` · not captured | 62 | not captured | not captured | llm (not captured) | Tab1:row5:col8 |
-| E. h — Reference | `Q324` · not captured | 31 | not captured | not captured | llm (not captured) | Tab1:row6:col8 |
-| E. h — Reference | `Q324` · not captured | 32 | not captured | not captured | llm (not captured) | Tab1:row7:col8 |
-| E. h — Reference | `Q324` · not captured | 63 | not captured | not captured | llm (not captured) | Tab1:row9:col8 |
-| E. h(HM1:IMSS) — Reference | `Q359` · not captured | 64 | HM1:IMSS | not captured | llm (not captured) | Tab1:row10:col8 |
-| E. h(HM1:IMSS) — Reference | `Q359` · not captured | 65 | HM1:IMSS | not captured | llm (not captured) | Tab1:row12:col8 |
-| E. h — Reference | `Q324` · not captured | 34 | not captured | not captured | llm (not captured) | Tab1:row13:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E. h — Reference | `Q324` · not captured | 60 | not captured | not captured | llm (not captured) | Tab1:row2:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 36 | not captured | not captured | llm (not captured) | Tab1:row3:col8 |
+| PK (driver) | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 61 | HM1:IMSS | not captured | llm (not captured) | Tab1:row4:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 62 | not captured | not captured | llm (not captured) | Tab1:row5:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 31 | not captured | not captured | llm (not captured) | Tab1:row6:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 32 | not captured | not captured | llm (not captured) | Tab1:row7:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 63 | not captured | not captured | llm (not captured) | Tab1:row9:col8 |
+| PK (driver) | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 64 | HM1:IMSS | not captured | llm (not captured) | Tab1:row10:col8 |
+| PK (driver) | E. h(HM1:IMSS) — Reference | `Q359` · not captured | 65 | HM1:IMSS | not captured | llm (not captured) | Tab1:row12:col8 |
+| PD (effect) | E. h — Reference | `Q324` · not captured | 34 | not captured | not captured | llm (not captured) | Tab1:row13:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

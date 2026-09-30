@@ -25,9 +25,9 @@ Desflurane was granted FDA approval on 18 September 1992.[L30285]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2006_reference](drugs/drug_desflurane/Desflurane_Hendrickx2006_reference.md) | 1-compartment (no model) | 0 | Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006) | [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hendrickx_2006_reference](drugs/drug_desflurane/Desflurane_Hendrickx2006_reference.md) | — | 1-compartment (no model) | 0 | Hendrickx JF et al., Do distribution volumes and clearances…, BMC anesthesiology (2006) | [10.1186/1471-2253-6-7](https://doi.org/10.1186/1471-2253-6-7) |
 
 ## ADME sites
 

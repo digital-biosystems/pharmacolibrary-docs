@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isavuconazole (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for hepatotoxicity; it only used exploratory logistic regression to assess associations between isavuconazole trough concentration or AUC and hepatotoxicity (defined as at least a 2-fold increase in any liver function test from baseline), and no potency (IC50/EC50/Emax) or rate parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guidi_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

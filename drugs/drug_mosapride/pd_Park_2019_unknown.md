@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mosapride (measured concentrations) drives 5-HT3 receptor current rise slope (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Mosapride (0.3–30 µM) co-applied with 3 µM 5-HT concentration-dependently inhibited 5-HT3 receptor currents in NCB-20 cells, decreasing the current rise slope by blocking channel opening (with additional closed-channel block suggested by pre-application). The paper reports an IC50 of 4.03 ± 0.04 µM with Hill coefficient −1.45 ± 0.13 for peak amplitude inhibition; no Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Park_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

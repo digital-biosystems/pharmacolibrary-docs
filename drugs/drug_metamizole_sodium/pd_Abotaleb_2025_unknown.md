@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metamorphine drives MOR β-arrestin pathway activation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Metamorphine (a metamizole metabolite) directly activates the MOR β-arrestin pathway in an Emax-type concentration–response relationship, with EC50 = 3.06 μM and Emax = 70% (vs morphine EC50 = 0.383 μM, Emax = 33%); metamorphine also binds MOR with IC50 = 7.3 nM (Ki = 3.0 nM) against [3H]DAMGO. The paper does not state kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abotaleb_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

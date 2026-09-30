@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adalimumab (measured concentrations) drives Psoriasis Area and Severity Index (in score): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> In the paper, serum adalimumab concentrations (µg/mL) drive an indirect-response (turnover) model of the PASI score, in which adalimumab inhibits the production of psoriasis lesions via an Emax function (Emax fixed to 1). Key estimates: baseline PASI 14.3, kout 0.04 /day, EC50 0.95 µg/mL (BSV 97.1% on EC50, 116.6% on kout, 38.6% on baseline; additive error SD 3.2).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pan_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -21,23 +31,23 @@ Pan S; Tsakok T; Wei R; Dand N; Loeff FC; Bloem K; de Vries A; Baudry D; Duckwor
   ·  DOI: [10.1111/cts.70563](https://doi.org/10.1111/cts.70563)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline PASI — Estimate | `Q324` · not captured | 14.3 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row1:col1 |
-| Baseline PASI — RSE (%) | `Q324` · not captured | 4.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row1:col2 |
-| k out (/day) — Estimate | `Q328` · not captured | 0.04 | /day | not captured | llm (not captured) | cts70563-tbl-0003:row2:col1 |
-| k out (/day) — RSE (%) | `Q328` · not captured | 7.7 | /day | not captured | llm (not captured) | cts70563-tbl-0003:row2:col2 |
-| EC50 (μg/mL) — Estimate | `Q321` · not captured | 0.95 | μg/mL | not captured | exact (not captured) | cts70563-tbl-0003:row4:col1 |
-| EC50 (μg/mL) — RSE (%) | `Q321` · not captured | 13.7 | μg/mL | not captured | exact (not captured) | cts70563-tbl-0003:row4:col2 |
-| BSV on baseline (%) — Estimate | `Q324` · not captured | 38.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row5:col1 |
-| BSV on baseline (%) — RSE (%) | `Q324` · not captured | 16.0 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row5:col2 |
-| BSV on k out (%) — Estimate | `Q312` · not captured | 116.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row6:col1 |
-| BSV on k out (%) — RSE (%) | `Q312` · not captured | 19.7 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row6:col2 |
-| BSV on EC50 (%) — Estimate | `Q321` · not captured | 97.1 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row7:col1 |
-| BSV on EC50 (%) — RSE (%) | `Q321` · not captured | 22.0 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row7:col2 |
-| Additive error (SD) — Estimate | `Q317` · not captured | 3.2 | SD | not captured | exact (not captured) | cts70563-tbl-0003:row8:col1 |
-| Additive error (SD) — RSE (%) | `Q317` · not captured | 7.8 | SD | not captured | exact (not captured) | cts70563-tbl-0003:row8:col2 |
-| E max | `Q320` · not captured | 1 | not captured | not captured | review_gapfill (not captured) | Pan_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline PASI — Estimate | `Q324` · not captured | 14.3 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row1:col1 |
+| PD (effect) | Baseline PASI — RSE (%) | `Q324` · not captured | 4.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row1:col2 |
+| PD (effect) | k out (/day) — Estimate | `Q328` · not captured | 0.04 | /day | not captured | llm (not captured) | cts70563-tbl-0003:row2:col1 |
+| PD (effect) | k out (/day) — RSE (%) | `Q328` · not captured | 7.7 | /day | not captured | llm (not captured) | cts70563-tbl-0003:row2:col2 |
+| PD (effect) | EC50 (μg/mL) — Estimate | `Q321` · not captured | 0.95 | μg/mL | not captured | exact (not captured) | cts70563-tbl-0003:row4:col1 |
+| PD (effect) | EC50 (μg/mL) — RSE (%) | `Q321` · not captured | 13.7 | μg/mL | not captured | exact (not captured) | cts70563-tbl-0003:row4:col2 |
+| PD (effect) | BSV on baseline (%) — Estimate | `Q324` · not captured | 38.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row5:col1 |
+| PD (effect) | BSV on baseline (%) — RSE (%) | `Q324` · not captured | 16.0 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row5:col2 |
+| variability | BSV on k out (%) — Estimate | `Q312` · not captured | 116.6 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row6:col1 |
+| variability | BSV on k out (%) — RSE (%) | `Q312` · not captured | 19.7 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row6:col2 |
+| PD (effect) | BSV on EC50 (%) — Estimate | `Q321` · not captured | 97.1 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row7:col1 |
+| PD (effect) | BSV on EC50 (%) — RSE (%) | `Q321` · not captured | 22.0 | unit | not captured | boundary (not captured) | cts70563-tbl-0003:row7:col2 |
+| variability | Additive error (SD) — Estimate | `Q317` · not captured | 3.2 | SD | not captured | exact (not captured) | cts70563-tbl-0003:row8:col1 |
+| variability | Additive error (SD) — RSE (%) | `Q317` · not captured | 7.8 | SD | not captured | exact (not captured) | cts70563-tbl-0003:row8:col2 |
+| PD (effect) | E max | `Q320` · not captured | 1 | not captured | not captured | review_gapfill (not captured) | Pan_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

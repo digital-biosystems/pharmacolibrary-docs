@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DEET (measured concentrations) drives Sf21 cell internal free calcium (in fluorescence) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for DEET acting on Sf21 cell internal free calcium; the excerpts contain no mechanism, potency, or rate values (e.g., Emax, EC50, kin, kout, ke0) for this response. The only DEET EC50 given is 120 µM for excitatory effects on housefly larval CNS, attributed to an octopamine receptor-mediated mechanism blocked by phentolamine, not to a calcium response model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swale_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

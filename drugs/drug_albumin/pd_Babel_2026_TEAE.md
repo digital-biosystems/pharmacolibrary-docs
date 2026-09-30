@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telisotuzumab vedotin conjugate (measured concentrations) drives Grade &gt;= 3 Treatment-Emergent Adverse Events (in proportion): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper states that grade ≥ 3 treatment-emergent adverse events (TEAEs, proportion) were correlated with unconjugated MMAE payload exposure metrics (not Teliso-V conjugate exposure as in the record), with a positive exposure-safety relationship; the paper does not describe the mechanism (e.g., Emax or effect-compartment) and gives no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Babel_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

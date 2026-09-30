@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Apitolisib (measured concentrations) drives pAkt (in %): indirect response — drug inhibits the production of pAkt.
+
+**Model:** No model was generated from this record.
+
+> In 786-O xenograft mice, apitolisib plasma concentration (Cp) inhibits the formation rate of the pAkt biomarker (%pAkt relative to baseline) in an indirect response model: d(%pAkt)/dt = kin(1 − Imax·Cp^γ1/(IC50^γ1 + Cp^γ1)) − kout·%pAkt. The fitted IC50 in tumor tissue was 403 µg/L (vs 9.32 µg/L in patients); the paper does not state the Imax, kin, kout, or γ1 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Moein_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

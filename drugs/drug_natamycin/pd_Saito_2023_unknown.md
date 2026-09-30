@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Natamycin (measured concentrations) drives Mucor rot incidence (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Natamycin concentrations (mg/ml) inhibit Mucor rot incidence on mandarin fruit (reducing incidence from 100% in controls to ~30% at the 920 mg/ml label rate), but the paper does not describe a pharmacodynamic model or mechanism (no Emax/IC50/kin/kout/ke0 parameters). The only potency values are in vitro sensitivity measures: mean EC50 for inhibition of sporangiospore germination of 0.59 mg/ml (range 0.533–0.636 mg/ml across 50 isolates) and MIC &lt;1.0 mg/ml for mycelial growth inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saito_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

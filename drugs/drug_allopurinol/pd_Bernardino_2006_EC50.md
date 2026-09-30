@@ -14,9 +14,11 @@
 
 **As extracted:** 1-(4-X-phenyl)-N′-[(4-Y-phenyl)methylene]-1H-pyrazole-4-carbohydrazides drives leishmanicidal activity (in µM l -1): direct Emax (saturable) effect.
 
-> The paper reports that compounds 27 and 15 inhibit the growth of Leishmania amazonensis with EC50/24h values of 50 and 80 µM l-1, respectively, but does not specify the underlying pharmacodynamic mechanism or rate constants. Allopurinol is mentioned only as a reference drug for comparison, not as the subject of a fitted PD model.
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism; it reports in vitro leishmanicidal activity of 1-(4-X-phenyl)-N′-[(4-Y-phenyl)methylene]-1H-pyrazole-4-carbohydrazides against L. amazonensis promastigotes, with compounds 27 and 15 inhibiting growth (90% and 66%) with EC50/24h values of 50 and 80 µM l−1, respectively, and allopurinol serving only as a reference drug.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Bernardino_2006`
 - **model family:** `emax`

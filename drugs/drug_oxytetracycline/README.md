@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Winter_2024_reference](drugs/drug_oxytetracycline/Oxytetracycline_Winter2024_reference.md) | 2-compartment (no model) | 7 (+1 cov.) | Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024) | [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Winter_2024_reference](drugs/drug_oxytetracycline/Oxytetracycline_Winter2024_reference.md) | — | 2-compartment (no model) | 7 (+1 cov.) | Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024) | [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ajmaline (concentrations from the PK model of Iven_1977) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ajmaline inhibits the peak skeletal muscle sodium current (I_Na) measured with the loose-patch clamp technique, with a sigmoid Emax-type concentration dependence; the excerpts state an apparent IC50 for I_Na block (given as 'B23' in the Discussion) but provide no explicit PD mechanism beyond channel block and no Emax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Friedrich_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

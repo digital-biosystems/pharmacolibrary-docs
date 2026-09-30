@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 10-hydroxystearic acid drives Collagen type III (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 10-hydroxystearic acid (HSA) stimulates collagen type III synthesis in primary human dermal fibroblasts dose-dependently (up to 244% of control at 5 μM after 48 h; P &lt; 0.01), and in ex vivo human skin topically applied HSA (0.33–3.3 mM, 0.1 w/w%) increased collagen type III by 57% at day 6 (P &lt; 0.01). The paper does not state a mechanistic PD model (no Imax/IC50/EC50/Emax, kin/kout or ke0 values are given); the record's Emax family and the Midkine fold change (15.74, P = 0.0027) are not supported by the excerpts as potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schütz_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Schütz R; Rawlings AV; Wandeler E; Jackson E; Trevisan S; Monneuse JM; et al. e
   ·  DOI: [10.1111/ics.12529](https://doi.org/10.1111/ics.12529)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Midkine — Fold change | `Q100` · not captured | 15.74 | not captured | not captured | llm (not captured) | ics12529-tbl-0003:row1:col2 |
-| Midkine — P‐value | `Q100` · not captured | 0.0027 | not captured | not captured | llm (not captured) | ics12529-tbl-0003:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Midkine — Fold change | `Q100` · not captured | 15.74 | not captured | not captured | llm (not captured) | ics12529-tbl-0003:row1:col2 |
+| — | Midkine — P‐value | `Q100` · not captured | 0.0027 | not captured | not captured | llm (not captured) | ics12529-tbl-0003:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

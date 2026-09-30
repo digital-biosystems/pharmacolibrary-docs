@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**T1/2ka  has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUCt, Cmax and t1/2ka ), so that value has no SI equivalent. None of the extracted parameters is carvedilol's own; they describe atenolol. Extracted — atenolol: AUCt 3.05 µg·h/mL, Cmax 396 ng/mL, tmax 2.87 h, V/F 158 L, CL 18.1 L/h, kel 0.58 1/h, t1/2ka 0.53 h$^{-1}$, t1/2z 0.88 h.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc$_{0-24hr}$: this record has 3.05, the second reading none; it also differs on 16 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Baek IH; Yun MH; Yun HY; Kwon KI et al. (2008). Archives of pharmacal research 31

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AKE-72 (measured concentrations) drives name (in GI50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model or mechanism for the Ba/F3 (Bcr-AblT315I) cell growth inhibition response; it only reports that AKE-72 concentrations inhibit BCR-ABLT315I with an IC50 of 9 nM (and &lt;0.5 nM against BCR-ABLWT), and potently inhibits proliferation of Ba/F3 cells expressing native BCR-ABL or its T315I mutant, without stating Imax, EC50, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `El-Damasy_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

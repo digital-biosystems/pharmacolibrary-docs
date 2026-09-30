@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ugonin J (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> UJ (µM concentrations) reduces LPS-induced TNF-α protein expression in A549 cells, with 20 µM UJ lowering TNF-α protein levels by more than 2-fold; the paper does not state a PD model, mechanism, or potency parameters (Imax/IC50/kin/kout) for this anti-inflammatory response. Separately, UJ inhibits SARS-CoV-2 3CLpro proteolytic activity with IC50 0.94 ± 0.19 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chiou_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

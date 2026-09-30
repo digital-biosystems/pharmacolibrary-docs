@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives colony growth (in mM): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Menadione (mM concentrations) inhibits colony growth of Beauveria bassiana, quantified as a survival index (viability ratio) fitted to a logistic survival equation I_s = 1/[1+exp(a+bC)]; the paper does not state a pharmacodynamic mechanism beyond menadione's superoxide-generating stress. Potency is given as EC50 = 2.41 ± 0.03 mM for the BbSod2-overexpressing strain T4 versus 1.25 ± 0.01 mM for the wild type; no Imax, Emax, kin, kout, ke0, or gamma values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buformin (measured concentrations) drives colony formation (in count) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Buformin concentrations (µM) inhibit colony formation of U-2 OS osteosarcoma cells; a 2-week treatment with 50 µM buformin significantly decreased colony count (P = 0.016), attributed mechanistically to AMPK pathway activation (upregulated AMPK phosphorylation with suppressed S6 phosphorylation and downregulated cyclin D1 and MMP9). The paper does not report a PD model for the colony-formation response; the only potency value given is an IC50 of 69.1 µM from the CCK-8 proliferation assay (72 h), not from the colony assay.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ding_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

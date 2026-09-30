@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cibenzoline drives insulin secretion (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cibenzoline concentration-dependently potentiates glucose (5.5 mM)-stimulated insulin secretion from rat pancreatic islets (direct insulinotrophic effect, Hill/Emax-type fit), with EC50 94.2 ± 46.4 µM and Hill coefficient 1.2 ± 0.6 (single experiment: EC50 67.6 µM, Hill 0.7). The proposed mechanism is concentration-dependent inhibition of pancreatic β-cell KATP channels (IC50 0.4 µM inside-out, 5.2 µM cell-attached at pH 7.4; pH-dependent, IC50 26.8 µM at pH 6.2 to 0.9 µM at pH 8.4), with the drug binding from the cytoplasmic side; no kinetic parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishida-Takahashi_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

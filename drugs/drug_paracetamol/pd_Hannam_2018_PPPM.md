@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen, ibuprofen, tramadol (concentrations from the PK model of Hannam_2018::clacet_l_h_70_kg_1) drive Pain Score (in pain units): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of acetaminophen, ibuprofen, and tramadol (mg/L) act on postoperative pain score (PPPM, baseline E0 = 15 pain units) via an effect-compartment model with a fractional Emax function expressing combined drug response (inhibitory, additive), with the observed analgesic delay described by an equilibration half-time (t1/2keo = ln2/keo); ibuprofen's C50 for analgesia was 3.95 mg/L (95% CI 2.57–7.53), and combination acetaminophen–ibuprofen therapy produced a maximum 65% reduction in pain score. Pain resolution over time was captured by an additional Emax disease-progression model (Emax,DIS, T50,DIS, HILLDIS) multiplying the drug effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hannam_2018`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

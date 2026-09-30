@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliceridine drives V̇E55 (in l/min) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oliceridine plasma concentrations inhibit isohypercapnic ventilation (V̇E55, l/min), the slope-derived ventilatory response to hypercapnia, causing rapid respiratory depression after high-dose infusion with return toward baseline within 3 h; the excerpts do not state the PD model structure or parameter values (Imax, IC50, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simons_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Simons P; van der Schrier R; van Lemmen M; Jansen S; Kuijpers KWK; van Velzen M;
   ·  DOI: [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Between-subject variability — Baseline, l/min | `Q312` · not captured | 0.21 | not captured | not captured | exact (not captured) | tab_1:row1:col4 |
-| Between-subject variability — σ 2 | `Q312` · not captured | 1.95 | not captured | not captured | exact (not captured) | tab_1:row1:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | Between-subject variability — Baseline, l/min | `Q312` · not captured | 0.21 | not captured | not captured | exact (not captured) | tab_1:row1:col4 |
+| variability | Between-subject variability — σ 2 | `Q312` · not captured | 1.95 | not captured | not captured | exact (not captured) | tab_1:row1:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

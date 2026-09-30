@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from this paper's PK model) drives Bispectral Index (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Midazolam plasma concentrations (converted to effect-site concentrations Ce via an effect compartment to collapse the clockwise hysteresis) inhibit the Bispectral Index according to an Imax model: E = E0 × (1 − Imax·Ce/(Ce+IC50)). The paper reports E0 = 57.63, Imax = 0.088 (maximal fraction of inhibition), and IC50 = 13.57 ng/mL; no Hill exponent (γ) value is given, and no kin/kout or ke0 values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Flores-Pérez_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,23 +31,23 @@ Flores-Pérez C; Moreno-Rocha LA; Chávez-Pacheco JL; Noguez-Méndez NA; Flores-
   ·  DOI: [10.3390/pharmaceutics15112565](https://doi.org/10.3390/pharmaceutics15112565)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E0 — Value | `Q324` · not captured | 57.63 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col1 |
-| E0 — RSE (%) | `Q324` · not captured | 2.17 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col2 |
-| E0 — RSE (%) | `Q324` · not captured | 2.17 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col3 |
-| Imax — Value | `Q323` · not captured | 0.088 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col1 |
-| Imax — RSE (%) | `Q323` · not captured | 0.036 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col2 |
-| Imax — RSE (%) | `Q323` · not captured | 0.036 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col3 |
-| IC50 — Value | `Q322` · not captured | 13.57 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col1 |
-| IC50 — RSE (%) | `Q322` · not captured | 30.01 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col2 |
-| IC50 — RSE (%) | `Q322` · not captured | 30.01 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col3 |
-| ω2E0 (CV%) — Value | `Q100` · not captured | 0.19 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col1 |
-| ω2E0 (CV%) — RSE (%) | `Q100` · not captured | 19.58 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col2 |
-| ω2E0 (CV%) — RSE (%) | `Q100` · not captured | 12.4 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col3 |
-| ω2IC50 (CV%) — Value | `Q100` · not captured | 2.99 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col1 |
-| ω2IC50 (CV%) — RSE (%) | `Q100` · not captured | 8796.01 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col2 |
-| ω2IC50 (CV%) — RSE (%) | `Q100` · not captured | 32.7 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E0 — Value | `Q324` · not captured | 57.63 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col1 |
+| PD (effect) | E0 — RSE (%) | `Q324` · not captured | 2.17 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col2 |
+| PD (effect) | E0 — RSE (%) | `Q324` · not captured | 2.17 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row1:col3 |
+| PD (effect) | Imax — Value | `Q323` · not captured | 0.088 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col1 |
+| PD (effect) | Imax — RSE (%) | `Q323` · not captured | 0.036 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col2 |
+| PD (effect) | Imax — RSE (%) | `Q323` · not captured | 0.036 | not captured | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row2:col3 |
+| PD (effect) | IC50 — Value | `Q322` · not captured | 13.57 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col1 |
+| PD (effect) | IC50 — RSE (%) | `Q322` · not captured | 30.01 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col2 |
+| PD (effect) | IC50 — RSE (%) | `Q322` · not captured | 30.01 | ng/mL | not captured | exact (not captured) | pharmaceutics-15-02565-t003:row3:col3 |
+| — | ω2E0 (CV%) — Value | `Q100` · not captured | 0.19 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col1 |
+| — | ω2E0 (CV%) — RSE (%) | `Q100` · not captured | 19.58 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col2 |
+| — | ω2E0 (CV%) — RSE (%) | `Q100` · not captured | 12.4 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row6:col3 |
+| — | ω2IC50 (CV%) — Value | `Q100` · not captured | 2.99 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col1 |
+| — | ω2IC50 (CV%) — RSE (%) | `Q100` · not captured | 8796.01 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col2 |
+| — | ω2IC50 (CV%) — RSE (%) | `Q100` · not captured | 32.7 | not captured | not captured | nil (not captured) | pharmaceutics-15-02565-t003:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

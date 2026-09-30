@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mineral concentration (osmolality) drives blood osmolarity (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In feed-deprived bulls given an oral rehydration solution, increasing mineral concentration (osmolality: 0, 100, 200, 300 mOsm/kg) linearly increased blood osmolarity at 48 h (p = 0.04), alongside linear increases in blood K+ and Na+; the paper describes only a linear dose-response relationship and does not state a pharmacodynamic mechanism or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilms_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

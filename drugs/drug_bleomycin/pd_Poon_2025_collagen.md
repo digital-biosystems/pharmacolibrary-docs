@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PIPE-791 (measured concentrations) drives collagen expression (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In vitro, PIPE-791 (an LPAR1 antagonist) concentration-dependently inhibited LPA-induced COL1A1 collagen expression in primary human lung fibroblasts with an IC50 of 1.1 nM (chemotaxis IC50 1.5 nM); the paper does not state an explicit Emax/Imax or kinetic model parameters. In vivo, therapeutic oral dosing of PIPE-791 at 3 mg/kg once daily reduced collagen expression and fibrosis markers in the mouse bleomycin model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poon_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

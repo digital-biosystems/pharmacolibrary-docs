@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Epigallocatechin gallate (EGCG) (measured concentrations) drives name (in fluorescence) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given). It describes EGCG (and other catechins, potency EGC &gt; EGCG &gt;&gt; EG) catalytically oxidizing H2S (added as Na2S, e.g. 1 mM) to polysulfides, measured as SSP4 fluorescence, via a one-electron autoxidation mechanism in which a catechin B-ring OH group forms a semiquinone radical and oxygen is reduced to superoxide, either of which oxidizes HS− to thiyl radicals that form polysulfides; polysulfide production is time- and concentration-dependent (e.g. Matcha up to 100 mg/L, plateauing by 360 min), with H2S declining with a half-time of 3.4 ± 0.16 min in tea
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Olson_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

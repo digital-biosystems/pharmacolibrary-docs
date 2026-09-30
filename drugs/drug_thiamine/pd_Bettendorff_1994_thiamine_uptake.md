@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Veratridine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In mouse neuroblastoma cells, veratridine (0–25 µM) inhibits high-affinity thiamine uptake (measured with [14C]thiamine) with an IC50 of 7 ± 1.1 µM and an apparent Ki of ~7 µM, while low-affinity uptake is unaffected; the inhibition is linked to veratridine's activation of voltage-gated Na+ channels (22Na+ uptake EC50 25 µM) and resulting membrane depolarization, but the paper reports no formal PD model (no Imax, kin/kout, or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bettendorff_1994`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05B&quot;,&quot;href&quot;:&quot;atc/C05B.md&quot;},{&quot;label&quot;:&quot;phenol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Nichols2008_reference&quot;,&quot;label&quot;:&quot;Nichols_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Nichols2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Phenol_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Phenol_Nichols2008_reference&quot;,&quot;label&quot;:&quot;Nichols_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_phenol/Phenol_Nichols2008_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # phenol
 
@@ -32,10 +32,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | 1-compartment, oral | 4 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> | [Thoueille_2023_reference](drugs/drug_phenol/Phenol_Thoueille2023_reference.md) | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> | [Thoueille_2023_reference](drugs/drug_phenol/Phenol_Thoueille2023_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: F, Cl, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Nichols_2008_reference](drugs/drug_phenol/Phenol_Nichols2008_reference.md) | held back | 1-compartment, oral | 4 | Nichols JW et al., Use of online microdialysis sampling to…, Drug metabolism and disposi… (2008) | [10.1124/dmd.107.020123](https://doi.org/10.1124/dmd.107.020123) |
 
 ## Pharmacogenomics (PGx)
 
@@ -76,7 +76,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 2134 matched, 251 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 2  ·  extracted 2  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** QO58-lysine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking QO58-lysine concentrations to the paw withdrawal/licking-biting response; it only shows dose- and time-dependent inhibition of formalin-induced phase II pain behavior (maximal effect with pre-treatment 4 h before formalin), with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values stated. The only quantitative parameters are non-compartmental PK after oral doses of 12.5, 25 and 50 mg/kg (e.g. t1/2 2.89, 2.72 and 2.98 h; Tmax 3.83, 3.00 and 3.20 h; Cmax 4.34, 18.57 and 49.78 mg/L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Teng_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,29 +30,29 @@ Teng BC; Song Y; Zhang F; Ma TY; Qi JL; Zhang HL; et al. et al. (2016). Acta pha
   ·  DOI: [10.1038/aps.2016.33](https://doi.org/10.1038/aps.2016.33)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| t 1/2 (h) — 12.5 mg/kg | `Q57` · not captured | 2.89 | h | not captured | space_fold (not captured) | tab_0:row1:col1 |
-| t 1/2 (h) — 25 mg/kg | `Q57` · not captured | 2.72 | h | not captured | space_fold (not captured) | tab_0:row1:col2 |
-| t 1/2 (h) — 50 mg/kg | `Q57` · not captured | 2.98 | h | not captured | space_fold (not captured) | tab_0:row1:col3 |
-| T max (h) — 12.5 mg/kg | `Q56` · not captured | 3.83 | h | not captured | space_fold (not captured) | tab_0:row2:col1 |
-| T max (h) — 25 mg/kg | `Q56` · not captured | 3.00 | h | not captured | space_fold (not captured) | tab_0:row2:col2 |
-| T max (h) — 50 mg/kg | `Q56` · not captured | 3.20 | h | not captured | space_fold (not captured) | tab_0:row2:col3 |
-| C max (mg/L) — 12.5 mg/kg | `Q32` · not captured | 4.34 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col1 |
-| C max (mg/L) — 25 mg/kg | `Q32` · not captured | 18.57 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col2 |
-| C max (mg/L) — 50 mg/kg | `Q32` · not captured | 49.78 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col3 |
-| Vz/F (L/kg) — 12.5 mg/kg | `Q76` · not captured | 2.12 | L/kg | not captured | exact (not captured) | tab_0:row4:col1 |
-| Vz/F (L/kg) — 25 mg/kg | `Q76` · not captured | 1.18 | L/kg | not captured | exact (not captured) | tab_0:row4:col2 |
-| Vz/F (L/kg) — 50 mg/kg | `Q76` · not captured | 0.77 | L/kg | not captured | exact (not captured) | tab_0:row4:col3 |
-| CLz/F (L•h -1 •kg -1 ) — 12.5 mg/kg | `Q358` · not captured | 0.51 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col1 |
-| CLz/F (L•h -1 •kg -1 ) — 25 mg/kg | `Q358` · not captured | 0.29 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col2 |
-| CLz/F (L•h -1 •kg -1 ) — 50 mg/kg | `Q358` · not captured | 0.18 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col3 |
-| AUC (0-t) (mg/L•h) — 12.5 mg/kg | `Q88` · not captured | 24.03 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col1 |
-| AUC (0-t) (mg/L•h) — 25 mg/kg | `Q88` · not captured | 85.84 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col2 |
-| AUC (0-t) (mg/L•h) — 50 mg/kg | `Q88` · not captured | 281.01 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col3 |
-| AUC (0-∞) (mg/L•h) — 12.5 mg/kg | `Q88` · not captured | 24.68 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col1 |
-| AUC (0-∞) (mg/L•h) — 25 mg/kg | `Q88` · not captured | 87.30 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col2 |
-| AUC (0-∞) (mg/L•h) — 50 mg/kg | `Q88` · not captured | 281.85 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | t 1/2 (h) — 12.5 mg/kg | `Q57` · not captured | 2.89 | h | not captured | space_fold (not captured) | tab_0:row1:col1 |
+| PK (driver) | t 1/2 (h) — 25 mg/kg | `Q57` · not captured | 2.72 | h | not captured | space_fold (not captured) | tab_0:row1:col2 |
+| PK (driver) | t 1/2 (h) — 50 mg/kg | `Q57` · not captured | 2.98 | h | not captured | space_fold (not captured) | tab_0:row1:col3 |
+| PK (driver) | T max (h) — 12.5 mg/kg | `Q56` · not captured | 3.83 | h | not captured | space_fold (not captured) | tab_0:row2:col1 |
+| PK (driver) | T max (h) — 25 mg/kg | `Q56` · not captured | 3.00 | h | not captured | space_fold (not captured) | tab_0:row2:col2 |
+| PK (driver) | T max (h) — 50 mg/kg | `Q56` · not captured | 3.20 | h | not captured | space_fold (not captured) | tab_0:row2:col3 |
+| PK (driver) | C max (mg/L) — 12.5 mg/kg | `Q32` · not captured | 4.34 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col1 |
+| PK (driver) | C max (mg/L) — 25 mg/kg | `Q32` · not captured | 18.57 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col2 |
+| PK (driver) | C max (mg/L) — 50 mg/kg | `Q32` · not captured | 49.78 | mg/L | not captured | space_fold (not captured) | tab_0:row3:col3 |
+| PK (driver) | Vz/F (L/kg) — 12.5 mg/kg | `Q76` · not captured | 2.12 | L/kg | not captured | exact (not captured) | tab_0:row4:col1 |
+| PK (driver) | Vz/F (L/kg) — 25 mg/kg | `Q76` · not captured | 1.18 | L/kg | not captured | exact (not captured) | tab_0:row4:col2 |
+| PK (driver) | Vz/F (L/kg) — 50 mg/kg | `Q76` · not captured | 0.77 | L/kg | not captured | exact (not captured) | tab_0:row4:col3 |
+| PK (driver) | CLz/F (L•h -1 •kg -1 ) — 12.5 mg/kg | `Q358` · not captured | 0.51 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col1 |
+| PK (driver) | CLz/F (L•h -1 •kg -1 ) — 25 mg/kg | `Q358` · not captured | 0.29 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col2 |
+| PK (driver) | CLz/F (L•h -1 •kg -1 ) — 50 mg/kg | `Q358` · not captured | 0.18 | L•h -1 •kg -1 | not captured | llm (not captured) | tab_0:row5:col3 |
+| PK (driver) | AUC (0-t) (mg/L•h) — 12.5 mg/kg | `Q88` · not captured | 24.03 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col1 |
+| PK (driver) | AUC (0-t) (mg/L•h) — 25 mg/kg | `Q88` · not captured | 85.84 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col2 |
+| PK (driver) | AUC (0-t) (mg/L•h) — 50 mg/kg | `Q88` · not captured | 281.01 | mg/L•h | not captured | space_fold (not captured) | tab_0:row6:col3 |
+| PK (driver) | AUC (0-∞) (mg/L•h) — 12.5 mg/kg | `Q88` · not captured | 24.68 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col1 |
+| PK (driver) | AUC (0-∞) (mg/L•h) — 25 mg/kg | `Q88` · not captured | 87.30 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col2 |
+| PK (driver) | AUC (0-∞) (mg/L•h) — 50 mg/kg | `Q88` · not captured | 281.85 | mg/L•h | not captured | space_fold (not captured) | tab_0:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

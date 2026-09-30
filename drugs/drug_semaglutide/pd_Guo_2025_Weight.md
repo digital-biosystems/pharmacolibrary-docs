@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives weight reduction (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide (oral 1–40 mg; injectable 1.0 mg) was described with an Emax-type dose-response/time-course model for drug-induced weight reduction versus placebo (ΔΔWeight, kg), with predicted 52-week effects of 4–7 kg for oral semaglutide and 8–9 kg for injectable semaglutide 1.0 mg (e.g., 9.88, 7.27, and 6.24 kg at ages 45, 55, and 60 years). The paper does not state the mechanism beyond GLP-1 receptor agonism and provides no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values for semaglutide.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

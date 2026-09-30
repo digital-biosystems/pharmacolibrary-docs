@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-asparaginase drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> L-asparaginase (free and liposomal formulations) inhibits MOLT-4 leukemic cell viability (cytotoxicity assay), with IC50 values of 0.000376 U/mL for free ASNase, 0.000548 U/mL for ASNase-DMPC, and 0.000267 U/mL for ASNase-DMPC/DSPE-PEG 10%; the mechanism is asparagine depletion by the enzyme, and no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ de Souza Guimarães M; Cachumba JJM; Bueno CZ; Torres-Obreque KM; Lara GVR; Mont
   ·  DOI: [10.3390/pharmaceutics14091819](https://doi.org/10.3390/pharmaceutics14091819)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ASNase — IC50 (U/mL) | `Q322` · not captured | 0.000376 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row1:col1 |
-| ASNase-DMPC — IC50 (U/mL) | `Q322` · not captured | 0.000548 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row2:col1 |
-| ASNase-DMPC/DSPE-PEG 10% — IC50 (U/mL) | `Q322` · not captured | 0.000267 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ASNase — IC50 (U/mL) | `Q322` · not captured | 0.000376 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row1:col1 |
+| PD (effect) | ASNase-DMPC — IC50 (U/mL) | `Q322` · not captured | 0.000548 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row2:col1 |
+| PD (effect) | ASNase-DMPC/DSPE-PEG 10% — IC50 (U/mL) | `Q322` · not captured | 0.000267 | U/mL | not captured | llm (not captured) | pharmaceutics-14-01819-t003:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

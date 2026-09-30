@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PIPE-791 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In primary human lung fibroblasts, PIPE-791 (an LPAR1 antagonist) inhibited TGFβ1-induced myofibroblast transformation, significantly reducing αSMA expression and COL1A1 induction at 1 μM across all TGFβ1 concentrations tested; the paper does not report an IC50, Emax, or kinetic parameters for the TGFβ1-stimulated response (reported potencies are for LPA-driven responses: chemotaxis IC50 1.5 nM and COL1A1 IC50 1.1 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poon_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

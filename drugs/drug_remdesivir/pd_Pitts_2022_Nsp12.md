@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023) drives viral load (in PFU): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking remdesivir concentrations to viral load; it reports in vitro antiviral potency, with most remdesivir EC50 values near 100 nM (all variants within 2.4-fold of WA1) against infectious virus/nucleoprotein, and states the mechanism as incorporation of the triphosphate metabolite RDV-TP into viral RNA, causing clashes with Nsp12 that compromise further RNA synthesis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pitts_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

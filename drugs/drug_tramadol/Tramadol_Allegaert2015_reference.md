@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The tramadol parent–metabolite record was rejected because its structure is a one-compartment enteral model whose output is the parent tramadol compartment rather than the measured analyte, and clearance, volume and ka values were left unconfirmed.**

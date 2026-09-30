@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ipatasertib drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model or potency/rate parameters (no IC50, Emax, kin, kout, or ke0 are given). Mechanistically, ipatasertib (400 mg q.d., an AKT inhibitor) transiently increases glucose by inhibiting AKT, thereby blunting insulin-stimulated glucose uptake and hepatic gluconeogenesis suppression, with glucose returning to baseline within 6 h as exposure declines; % time in range (70–180 mg/dL) and other glucose parameters were unchanged with added low-dose prednisone (5 mg b.i.d.) ± abiraterone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sutaria_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

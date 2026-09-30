@@ -23,17 +23,25 @@ When used in combination with [naltrexone] as the marketed product ContraveⓇ, 
 
 Bupropion is also used off-label as a first-line treatment in patients with ADHD and comorbid bipolar disorder when used as an adjunct to mood stabilizers.[F4624]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| bupropion | parent | 239.741 | C13H18ClNO | DrugBank | [444](https://pubchem.ncbi.nlm.nih.gov/compound/444) | Butz_1981 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 06:32 | 0:12 | 0/1/0 | 0/0/0 | 0/0/0 | 3,792/287 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/0 | 3/0 | 0 |
+| 2026-09-29 22:52 | 1:43 | 0/1/0 | 0/0/0 | 0/0/0 | 14,737/3,999 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_reference](drugs/drug_bupropion/Bupropion_Butz1981_reference.md) | 1-compartment (no model) | 0 | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Butz_1981_reference](drugs/drug_bupropion/Bupropion_Butz1981_reference.md) | — | 1-compartment (no model) | 1 | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | — |
 
 ## ADME sites
 
@@ -61,7 +69,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 135 matched, 15 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 4  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -74,7 +82,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Butz_1981.pdf` | Butz RF et al., Radioimmunoassay and pharmacokinetic pr…, The Journal of pharmacology… (1981) | popPK | 9 | not captured | [6785419](https://pubmed.ncbi.nlm.nih.gov/6785419) | The study reports quantitative PK parameters (half-life, bioavailability, Cmax) for bupropion in dogs, but specific clearance and volume values are not explicitly listed in the text. |
 | `Wang_2006.pdf` | Wang JS et al., Population pharmacokinetic analysis of…, Psychopharmacology (2006) | popPK | 8 | [10.1007/s00213-005-0209-y](https://doi.org/10.1007/s00213-005-0209-y) | [16283256](https://pubmed.ncbi.nlm.nih.gov/16283256) | The study is a population PK analysis in mice involving bupropion, but the provided evidence only contains qualitative interaction results (fold-changes in AUC) and lacks specific numeric PK parameter values (CL, V, ka) for bupropion. |
 
-<sub>queue written 2026-09-22T06:32:05.697421+00:00</sub>
+<sub>queue written 2026-09-29T22:51:04.497220+00:00</sub>
 
 ## Screened and excluded
 

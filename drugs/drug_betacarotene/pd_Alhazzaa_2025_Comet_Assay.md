@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (measured concentrations) drives tailed cells (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In HCT-116 cells, doxorubicin (free, liposomal, or co-encapsulated with β-carotene in liposomes) increases the percentage of tailed cells in the alkaline comet assay (DOX-Lipo 16.27 ± 0.25% vs control 7.50 ± 0.46%), an effect attributed to topoisomerase II inhibition and oxidative DNA damage; co-delivered β-carotene attenuates this damage via redox/ROS quenching (BC–DOX-Lipo 11.43 ± 0.45%, ~30% lower than DOX-Lipo, p &lt; 0.001). No pharmacodynamic model (e.g., Emax, IC50/Imax for the comet endpoint, kin/kout, ke0) is fitted for the tailed-cell response; the only potency values given are MTT IC50s (free DOX 610.9 ± 11.4, DOX-Lipo 614.0 ± 1.8, BC–DOX-Lipo 618.9 ± 5.8, free BC 960.6 ± 13.6, BC-Li
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alhazzaa_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Alhazzaa DM; Shafaa MW; Elabed S; Shafaa AM; Omran MM et al. (2025). Scientific 
   ·  DOI: [10.1038/s41598-025-27935-5](https://doi.org/10.1038/s41598-025-27935-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Absorption — Predicted (β-Carotene) | `Q40` · not captured | -4.63 | β-Carotene | not captured | exact (not captured) | Tab4:row1:col2 |
-| Absorption — Predicted (Doxorubicin) | `Q40` · not captured | -6.93 | Doxorubicin | not captured | exact (not captured) | Tab4:row1:col3 |
-| Skin permeability — Property | `Q412` · not captured | -3.34 | not captured | not captured | llm (not captured) | Tab4:row6:col1 |
-| Skin permeability — Predicted (β-Carotene) | `Q412` · not captured | 0.3 | β-Carotene | not captured | llm (not captured) | Tab4:row6:col2 |
-| Fraction unbound (Human) — Property | `Q46` · not captured | 2.45 | Human | not captured | exact (not captured) | Tab4:row8:col1 |
-| Fraction unbound (Human) — Predicted (β-Carotene) | `Q46` · not captured | 0.83 | Human | not captured | exact (not captured) | Tab4:row8:col2 |
-| Plasma protein binding — Property | `Q46` · not captured | 74.93 | not captured | not captured | llm_confirmed (not captured) | Tab4:row9:col1 |
-| Plasma protein binding — Predicted (β-Carotene) | `Q46` · not captured | 76.23 | β-Carotene | not captured | llm_confirmed (not captured) | Tab4:row9:col2 |
-| Steady state volume of distribution (Vss) — Property | `Q65` · not captured | 8.62 | Vss | not captured | llm_corrected (not captured) | Tab4:row10:col1 |
-| Steady state volume of distribution (Vss) — Predicted (β-Carotene) | `Q65` · not captured | 3.44 | Vss | not captured | llm_corrected (not captured) | Tab4:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Absorption — Predicted (β-Carotene) | `Q40` · not captured | -4.63 | β-Carotene | not captured | exact (not captured) | Tab4:row1:col2 |
+| PK (driver) | Absorption — Predicted (Doxorubicin) | `Q40` · not captured | -6.93 | Doxorubicin | not captured | exact (not captured) | Tab4:row1:col3 |
+| model term | Skin permeability — Property | `Q412` · not captured | -3.34 | not captured | not captured | llm (not captured) | Tab4:row6:col1 |
+| model term | Skin permeability — Predicted (β-Carotene) | `Q412` · not captured | 0.3 | β-Carotene | not captured | llm (not captured) | Tab4:row6:col2 |
+| PK (driver) | Fraction unbound (Human) — Property | `Q46` · not captured | 2.45 | Human | not captured | exact (not captured) | Tab4:row8:col1 |
+| PK (driver) | Fraction unbound (Human) — Predicted (β-Carotene) | `Q46` · not captured | 0.83 | Human | not captured | exact (not captured) | Tab4:row8:col2 |
+| PK (driver) | Plasma protein binding — Property | `Q46` · not captured | 74.93 | not captured | not captured | llm_confirmed (not captured) | Tab4:row9:col1 |
+| PK (driver) | Plasma protein binding — Predicted (β-Carotene) | `Q46` · not captured | 76.23 | β-Carotene | not captured | llm_confirmed (not captured) | Tab4:row9:col2 |
+| PK (driver) | Steady state volume of distribution (Vss) — Property | `Q65` · not captured | 8.62 | Vss | not captured | llm_corrected (not captured) | Tab4:row10:col1 |
+| PK (driver) | Steady state volume of distribution (Vss) — Predicted (β-Carotene) | `Q65` · not captured | 3.44 | Vss | not captured | llm_corrected (not captured) | Tab4:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

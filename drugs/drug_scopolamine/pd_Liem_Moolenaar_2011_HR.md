@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Scopolamine (concentrations from this paper's PK model) drives heart rate (in bpm): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Scopolamine plasma concentrations (pg/ml) were linked to heart rate (bpm) via an effect-compartment model with an inhibitory effect; the excerpts do not state the effect form or any potency (IC50/EC50/Emax) or equilibration rate (ke0) values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liem-Moolenaar_2011`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

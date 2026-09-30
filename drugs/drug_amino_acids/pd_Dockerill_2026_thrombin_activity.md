@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trivalent inhibitor (AS31 + Ex1-16 + Ex2-1) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The trivalent inhibitor (AS-31 + Ex1-16 + Ex2-1) directly inhibits thrombin enzymatic activity (fluorogenic substrate assay) as a reversible, near-stoichiometric tight-binding active-site/exosite blocker, with an apparent Ki of 4.6 pM (Morrison model; bounded at ~4.0 ± 0.6 pM by the Cheng–Prusoff/IC50 limit at 200 pM enzyme), versus Ki of 17.2 pM (AS-31+Ex1-16), 12.4 pM (AS-31+Ex2-1) and 600 pM for AS-31 alone; inhibition is reversed by a toehold antidote that disassembles the complex. The paper does not state a PD model with parameters such as IC50 curves, Emax, kin/kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dockerill_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tenecteplase, a tPA mutant, is simulated with a two-compartment PK-PD model coupled to a local fibrinolysis model, where its plasma concentration drives fibrinolytic reactions (plasminogen activation) that determine clot lysis time (min); the paper does not state an explicit Emax/IC50-type potency or rate parameters (kin, kout, ke0) for this drug-response relationship, only reporting that tenecteplase and alteplase show similar thrombolysis efficacy with lower ICH risk and better PAI-1 resistance than urokinase.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

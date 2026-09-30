@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Balanites aegyptiaca methanolic extract (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the castor oil-induced diarrhea model in mice, orally administered Balanites aegyptiaca methanolic fruit extract inhibited diarrhea by 40% at 200 mg/kg and 80% at 400 mg/kg (loperamide 10 mg/kg gave 100%); the paper gives no Imax, IC50/EC50, kin, kout or ke0 for this in vivo response and does not state a quantitative mechanism for the antidiarrheal effect, though ex vivo it suggests papaverine-like dual PDE inhibition and Ca++ channel blockade with EC50 values of 1.44 mg/mL (CCh) and 1.27 mg/mL (high K+).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehman_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

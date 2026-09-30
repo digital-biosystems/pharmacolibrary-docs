@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucinostatin B derivatives (measured concentrations) drives Cytotoxicity (in nM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Leucinostatin A (LB-CH3) concentrations (0–1000 nM) inhibit proliferation of HEK293 and K562 cells, giving IC50 values of 89.6 nM and 47.3 nM, respectively; the paper does not state a mechanistic PD model for this cytotoxicity. Against erythrocytes, LA up to 100 µM (about 10^6 times its transmission-blocking IC50) caused no significant hemolysis, indicating membrane disruption is not the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Niu_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

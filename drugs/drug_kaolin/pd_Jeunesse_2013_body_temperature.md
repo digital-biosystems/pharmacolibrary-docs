@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cimicoxib (measured concentrations) drives name (in °C): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Cimicoxib plasma concentration acts on body temperature (antipyretic effect) in a kaolin-induced inflammation model in dogs via an indirect response model in which the drug inhibits the production (Kin) of the elevated temperature response (sigmoid-Imax function on Kin). The paper reports a plasma concentration corresponding to half the maximum indirect effect of 239 μg/L for body temperature; no Imax, Kin, Kout or Hill coefficient values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeunesse_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

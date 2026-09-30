@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methotrexate (measured concentrations) drives acute kidney injury (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper links estimated serum methotrexate concentrations (µmol/L), specifically the 4-h post-infusion concentration, to the binary occurrence of any-stage acute kidney injury via logistic regression (with the effect dependent on disease type); no Emax/IC50-type PD parameters or mechanism (e.g., production or elimination inhibition) are stated, and notably higher 8 g/m2 doses with higher 4-h MTX concentrations showed lower AKI frequency than ≤3.5 g/m2 doses (OR 3.58, 95% CI 1.1–10.8, p = 0.054).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taylor_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -20,37 +30,37 @@ Taylor ZL; Barreto EF; Cole KC; Rule AD; Kashani KB; Leung N; Thompson CA; Witzi
   ·  DOI: [10.1007/s40262-026-01618-4](https://doi.org/10.1007/s40262-026-01618-4)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/h) — Final model | `Q22` · not captured | 11.8 | L/h | not captured | exact (not captured) | Tab2:row2:col1 |
-| CL (L/h) — Final model | `Q22` · not captured | 5.1 | L/h | not captured | exact (not captured) | Tab2:row2:col2 |
-| CL (L/h) — Bootstrap | `Q22` · not captured | 11.8 | L/h | not captured | exact (not captured) | Tab2:row2:col4 |
-| CL (L/h) — Bootstrap | `Q22` · not captured | 10.8 | L/h | not captured | exact (not captured) | Tab2:row2:col5 |
-| V1 (L) — Final model | `Q63` · not captured | 42.2 | L | not captured | exact (not captured) | Tab2:row5:col1 |
-| V1 (L) — Final model | `Q63` · not captured | 6.4 | L | not captured | exact (not captured) | Tab2:row5:col2 |
-| V1 (L) — Bootstrap | `Q63` · not captured | 41.9 | L | not captured | exact (not captured) | Tab2:row5:col4 |
-| V1 (L) — Bootstrap | `Q63` · not captured | 37.8 | L | not captured | exact (not captured) | Tab2:row5:col5 |
-| Q (L/h) — Final model | `Q30` · not captured | 0.35 | L/h | not captured | exact (not captured) | Tab2:row6:col1 |
-| Q (L/h) — Final model | `Q30` · not captured | 11.6 | L/h | not captured | exact (not captured) | Tab2:row6:col2 |
-| Q (L/h) — Bootstrap | `Q30` · not captured | 0.35 | L/h | not captured | exact (not captured) | Tab2:row6:col4 |
-| Q (L/h) — Bootstrap | `Q30` · not captured | 0.29 | L/h | not captured | exact (not captured) | Tab2:row6:col5 |
-| V2 (L) — Final model | `Q64` · not captured | 6.67 | L | not captured | exact (not captured) | Tab2:row7:col1 |
-| V2 (L) — Final model | `Q64` · not captured | 10.4 | L | not captured | exact (not captured) | Tab2:row7:col2 |
-| V2 (L) — Bootstrap | `Q64` · not captured | 6.63 | L | not captured | exact (not captured) | Tab2:row7:col4 |
-| V2 (L) — Bootstrap | `Q64` · not captured | 5.56 | L | not captured | exact (not captured) | Tab2:row7:col5 |
-| IIV CL — Final model | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
-| IIV CL — Final model | `Q312` · not captured | 24.3 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col2 |
-| IIV CL — Final model | `Q312` · not captured | 13.3 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col3 |
-| IIV CL — Bootstrap | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col4 |
-| IIV CL — Bootstrap | `Q312` · not captured | 0.01 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col5 |
-| IIV V2 — Final model | `Q312` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
-| IIV V2 — Final model | `Q312` · not captured | 23.9 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col2 |
-| IIV V2 — Final model | `Q312` · not captured | 31 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col3 |
-| IIV V2 — Bootstrap | `Q312` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col4 |
-| IIV V2 — Bootstrap | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col5 |
-| Residual error — Final model | `Q315` · not captured | 0.20 | not captured | not captured | llm (not captured) | Tab2:row10:col1 |
-| Residual error — Final model | `Q315` · not captured | 11.6 | not captured | not captured | llm (not captured) | Tab2:row10:col2 |
-| Residual error — Final model | `Q315` · not captured | 12.2 | not captured | not captured | llm (not captured) | Tab2:row10:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/h) — Final model | `Q22` · not captured | 11.8 | L/h | not captured | exact (not captured) | Tab2:row2:col1 |
+| PK (driver) | CL (L/h) — Final model | `Q22` · not captured | 5.1 | L/h | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | CL (L/h) — Bootstrap | `Q22` · not captured | 11.8 | L/h | not captured | exact (not captured) | Tab2:row2:col4 |
+| PK (driver) | CL (L/h) — Bootstrap | `Q22` · not captured | 10.8 | L/h | not captured | exact (not captured) | Tab2:row2:col5 |
+| PK (driver) | V1 (L) — Final model | `Q63` · not captured | 42.2 | L | not captured | exact (not captured) | Tab2:row5:col1 |
+| PK (driver) | V1 (L) — Final model | `Q63` · not captured | 6.4 | L | not captured | exact (not captured) | Tab2:row5:col2 |
+| PK (driver) | V1 (L) — Bootstrap | `Q63` · not captured | 41.9 | L | not captured | exact (not captured) | Tab2:row5:col4 |
+| PK (driver) | V1 (L) — Bootstrap | `Q63` · not captured | 37.8 | L | not captured | exact (not captured) | Tab2:row5:col5 |
+| PK (driver) | Q (L/h) — Final model | `Q30` · not captured | 0.35 | L/h | not captured | exact (not captured) | Tab2:row6:col1 |
+| PK (driver) | Q (L/h) — Final model | `Q30` · not captured | 11.6 | L/h | not captured | exact (not captured) | Tab2:row6:col2 |
+| PK (driver) | Q (L/h) — Bootstrap | `Q30` · not captured | 0.35 | L/h | not captured | exact (not captured) | Tab2:row6:col4 |
+| PK (driver) | Q (L/h) — Bootstrap | `Q30` · not captured | 0.29 | L/h | not captured | exact (not captured) | Tab2:row6:col5 |
+| PK (driver) | V2 (L) — Final model | `Q64` · not captured | 6.67 | L | not captured | exact (not captured) | Tab2:row7:col1 |
+| PK (driver) | V2 (L) — Final model | `Q64` · not captured | 10.4 | L | not captured | exact (not captured) | Tab2:row7:col2 |
+| PK (driver) | V2 (L) — Bootstrap | `Q64` · not captured | 6.63 | L | not captured | exact (not captured) | Tab2:row7:col4 |
+| PK (driver) | V2 (L) — Bootstrap | `Q64` · not captured | 5.56 | L | not captured | exact (not captured) | Tab2:row7:col5 |
+| variability | IIV CL — Final model | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col1 |
+| variability | IIV CL — Final model | `Q312` · not captured | 24.3 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col2 |
+| variability | IIV CL — Final model | `Q312` · not captured | 13.3 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col3 |
+| variability | IIV CL — Bootstrap | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col4 |
+| variability | IIV CL — Bootstrap | `Q312` · not captured | 0.01 | not captured | not captured | llm_confirmed (not captured) | Tab2:row8:col5 |
+| variability | IIV V2 — Final model | `Q312` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col1 |
+| variability | IIV V2 — Final model | `Q312` · not captured | 23.9 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col2 |
+| variability | IIV V2 — Final model | `Q312` · not captured | 31 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col3 |
+| variability | IIV V2 — Bootstrap | `Q312` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col4 |
+| variability | IIV V2 — Bootstrap | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | Tab2:row9:col5 |
+| variability | Residual error — Final model | `Q315` · not captured | 0.20 | not captured | not captured | llm (not captured) | Tab2:row10:col1 |
+| variability | Residual error — Final model | `Q315` · not captured | 11.6 | not captured | not captured | llm (not captured) | Tab2:row10:col2 |
+| variability | Residual error — Final model | `Q315` · not captured | 12.2 | not captured | not captured | llm (not captured) | Tab2:row10:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

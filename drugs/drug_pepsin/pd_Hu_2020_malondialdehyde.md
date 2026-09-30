@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** YWDAW (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide full-text excerpts, so no pharmacodynamic model details can be stated: the record only indicates that YWDAW concentrations (µM) are linked to a stimulatory effect on malondialdehyde, with no model family, mechanism, or potency/rate parameters available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives apoptosis (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (µM concentrations, e.g. 1 µM 24 h challenge) drives apoptosis measured as % TUNEL-positive cells in hiPSC-derived cardiomyocytes; the paper describes a direct concentration-response (Emax-type) relationship in which doxorubicin induces apoptosis via mitochondrial membrane disruption, loss of membrane potential and ROS generation, with the curve shifting leftward (greater toxicity) in mitolow cells. No numeric potency (EC50/Emax) or rate parameters are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiong_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

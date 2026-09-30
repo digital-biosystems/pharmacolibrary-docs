@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carboplatin drives thrombocyte reduction (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Carboplatin exposure (predicted AUC0-∞, mg.h/L) is related to the percentage of thrombocyte reduction 14 days after administration in dogs by a direct sigmoid Emax (inhibitory) model; the paper does not describe any turnover (kin/kout) or effect-compartment mechanism. The AUC-based fit was better than dose in mg/kg (r2 = 0.73 vs 0.57), but the paper excerpts available here do not provide the numeric Emax, EC50, or Hill coefficient values for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Béguin_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Béguin J; Mahfoudhi S; Uzel M; Rostang A; Ibish C; Ferran AA; Pelligand L; Huli
   ·  DOI: [10.1186/s12917-024-04404-1](https://doi.org/10.1186/s12917-024-04404-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| r2 — AUC0-∞ (mg.h/L) vs Thrombocyte reduction (%) | `Q17` · not captured | 0.73 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | r2 — AUC0-∞ (mg.h/L) vs Thrombocyte reduction (%) | `Q17` · not captured | 0.73 | not captured | not captured | llm (not captured) | Tab2:row5:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

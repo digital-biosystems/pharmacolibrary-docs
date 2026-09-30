@@ -27,16 +27,16 @@ Parenteral (intravenous, intramuscular, and subcutaneous) phylloquinone is indic
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Novotny_2010_reference](drugs/drug_phytomenadione/Phytomenadione_Novotny2010_reference.md) | 1-compartment (no model) | 1 | Novotny JA et al., Vitamin K absorption and kinetics in hu…, The British journal of nutr… (2010) | [10.1017/S0007114510001182](https://doi.org/10.1017/S0007114510001182) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Novotny_2010_reference](drugs/drug_phytomenadione/Phytomenadione_Novotny2010_reference.md) | — | 1-compartment (no model) | 1 | Novotny JA et al., Vitamin K absorption and kinetics in hu…, The British journal of nutr… (2010) | [10.1017/S0007114510001182](https://doi.org/10.1017/S0007114510001182) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [OREILLY_1963](drugs/drug_phytomenadione/pd_OREILLY_1963_prothrombin_complex_activity.md) | OREILLY (1963) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Filonov_2018](drugs/drug_phytomenadione/pd_Filonov_2018_CFDA.md) | Filonov D et al., Initial Assessment of Variability of Re…, Frontiers in public health (2018) | [10.3389/fpubh.2018.00369](https://doi.org/10.3389/fpubh.2018.00369) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [OREILLY_1963_prothrombin_complex_activity](drugs/drug_phytomenadione/pd_OREILLY_1963_prothrombin_complex_activity.md) | name ← warfarin · inhibition effect | — | OREILLY (1963) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Filonov_2018_CFDA](drugs/drug_phytomenadione/pd_Filonov_2018_CFDA.md) | cell viability ← unknown · inhibition effect | — | Filonov D et al., Initial Assessment of Variability of Re…, Frontiers in public health (2018) | [10.3389/fpubh.2018.00369](https://doi.org/10.3389/fpubh.2018.00369) |
 
 ## Pharmacogenomics (PGx)
 

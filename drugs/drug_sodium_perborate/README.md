@@ -30,11 +30,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Xiang_2021](drugs/drug_sodium_perborate/pd_Xiang_2021_pFGFR2.md) | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Xiang_2021](drugs/drug_sodium_perborate/pd_Xiang_2021_proliferation.md) | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Xiang_2021](drugs/drug_sodium_perborate/pd_Xiang_2021_specific_lysis.md) | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Xiang_2021_pFGFR2](drugs/drug_sodium_perborate/pd_Xiang_2021_pFGFR2.md) | FGFR2 phosphorylation ← bemarituzumab · inhibition effect | — | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Xiang_2021_proliferation](drugs/drug_sodium_perborate/pd_Xiang_2021_proliferation.md) | Cell proliferation ← bemarituzumab · inhibition effect | — | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Xiang_2021_specific_lysis](drugs/drug_sodium_perborate/pd_Xiang_2021_specific_lysis.md) | ADCC activity ← bemarituzumab · inhibition effect | — | Xiang H et al., Preclinical characterization of bemarit…, mAbs (2021) | [10.1080/19420862.2021.1981202](https://doi.org/10.1080/19420862.2021.1981202) |
 
 ## ADME sites
 

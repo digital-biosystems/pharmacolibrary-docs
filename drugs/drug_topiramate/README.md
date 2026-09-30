@@ -27,11 +27,11 @@ Topiramate is also used off-label as an adjunct therapy for weight management[L1
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Lee_2024_reference](drugs/drug_topiramate/Topiramate_Lee2024_reference.md) | 1-compartment, oral | 5 | Lee S et al., Topiramate dosage optimization for effe…, Annals of clinical and tran… (2024) | [10.1002/acn3.51962](https://doi.org/10.1002/acn3.51962) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q23 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_reference](drugs/drug_topiramate/Topiramate_Majid2016_reference.md) | 1-compartment (no model) | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Marques_2020_reference](drugs/drug_topiramate/Topiramate_Marques2020_reference.md) | 1-compartment (no model) | 3 | Marques MR et al., Topiramate pharmacokinetics in neonates…, Acta paediatrica (Oslo, Nor… (2020) | [10.1111/apa.14944](https://doi.org/10.1111/apa.14944) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Lee_2024_reference](drugs/drug_topiramate/Topiramate_Lee2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Lee S et al., Topiramate dosage optimization for effe…, Annals of clinical and tran… (2024) | [10.1002/acn3.51962](https://doi.org/10.1002/acn3.51962) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q23 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_reference](drugs/drug_topiramate/Topiramate_Majid2016_reference.md) | — | 1-compartment (no model) | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Marques_2020_reference](drugs/drug_topiramate/Topiramate_Marques2020_reference.md) | — | 1-compartment (no model) | 3 | Marques MR et al., Topiramate pharmacokinetics in neonates…, Acta paediatrica (Oslo, Nor… (2020) | [10.1111/apa.14944](https://doi.org/10.1111/apa.14944) |
 
 ## Pharmacogenomics (PGx)
 
@@ -59,6 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CYP2C19` inhibitor, `CYP3A4` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer | DrugBank actor |

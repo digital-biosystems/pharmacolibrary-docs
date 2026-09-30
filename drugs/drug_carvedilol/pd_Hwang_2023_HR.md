@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carvedilol (concentrations from this paper's PK model) drives heart rate (in bpm): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Carvedilol plasma concentration (ng/mL) reduces isoproterenol-induced heart rate via a modified inhibitory Emax model of competitive antagonism at β-adrenergic receptors, with baseline HR E0 = 60.4 bpm, isoproterenol ED50 = 0.685 μg, maximal isoproterenol effect Emax = 30.7 bpm, and carvedilol IC50 = 16.5 ng/mL (γ fixed to 1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hwang_2023`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -20,13 +30,13 @@ Hwang S; Lee S; Yoon J; Chung JY et al. (2023). Journal of Korean medical scienc
   ·  DOI: [10.3346/jkms.2023.38.e173](https://doi.org/10.3346/jkms.2023.38.e173)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E 0 (bpm) — Final model | `Q324` · not captured | 60.4 | bpm | not captured | llm (not captured) | tab_2:row3:col1 |
-| ED 50 (μg) — Final model | `Q321` · not captured | 0.685 | μg | not captured | llm (not captured) | tab_2:row4:col1 |
-| E max (bpm) — Final model | `Q320` · not captured | 30.7 | bpm | not captured | llm (not captured) | tab_2:row5:col1 |
-| IC 50 (ng/mL) — Final model | `Q322` · not captured | 16.5 | ng/mL | not captured | llm (not captured) | tab_2:row6:col1 |
-| Additive error — Final model | `Q317` · not captured | 64.2 | not captured | not captured | exact (not captured) | tab_2:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E 0 (bpm) — Final model | `Q324` · not captured | 60.4 | bpm | not captured | llm (not captured) | tab_2:row3:col1 |
+| PD (effect) | ED 50 (μg) — Final model | `Q321` · not captured | 0.685 | μg | not captured | llm (not captured) | tab_2:row4:col1 |
+| PD (effect) | E max (bpm) — Final model | `Q320` · not captured | 30.7 | bpm | not captured | llm (not captured) | tab_2:row5:col1 |
+| PD (effect) | IC 50 (ng/mL) — Final model | `Q322` · not captured | 16.5 | ng/mL | not captured | llm (not captured) | tab_2:row6:col1 |
+| variability | Additive error — Final model | `Q317` · not captured | 64.2 | not captured | not captured | exact (not captured) | tab_2:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

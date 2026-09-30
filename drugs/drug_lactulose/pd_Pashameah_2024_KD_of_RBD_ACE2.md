@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lactulose octasulfate (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lactulose octasulfate (LOS) concentrations (200, 400, 600 nM) were tested in a BLI assay for their effect on the dissociation constant (KD) of RBD-ACE2 binding, but the paper does not state a PD model, mechanism, or quantitative KD values. Separately, LOS inhibited coronavirus replication in plaque reduction assays with IC50 values of 4.62 ± 0.32 μM (SARS-CoV-2), 5.35 ± 0.21 μM (SARS-CoV), and 3.93 ± 0.27 μM (MERS-CoV).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pashameah_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

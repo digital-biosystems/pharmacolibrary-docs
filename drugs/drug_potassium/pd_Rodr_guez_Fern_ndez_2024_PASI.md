@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ustekinumab drives Psoriasis Area and Severity Index (in unknown): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+
+**Model:** No model was generated from this record.
+
+> Ustekinumab serum concentrations act on the PASI score via an indirect response model in which the drug inhibits the zero-order progression rate (kin) of psoriatic skin lesions through an Imax model, with a first-order remission rate kout = 0.016 d−1; the IC50 was fixed to a published value, but its numeric value and the Imax estimate are not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rodríguez-Fernández_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives plasma renin activity (in ng/ml/h) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for plasma renin activity; it only reports that single oral doses of 5, 10 and 20 mg cilazapril (converted to the active diacid cilazaprilat, an ACE inhibitor) produced a dose-dependent increase in PRA (ng AI ml−1 h−1), peaking at 6 h and returning to baseline by 24 h, secondary to &gt;90% peak ACE inhibition at 2–3 h. No Imax, IC50, EC50, Emax, kin, kout or ke0 values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ajayi_1986`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

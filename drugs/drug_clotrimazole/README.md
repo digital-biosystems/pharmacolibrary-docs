@@ -43,18 +43,18 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993](drugs/drug_clotrimazole/pd_Brugnara_1993_K_transport.md) | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993](drugs/drug_clotrimazole/pd_Brugnara_1993_cell_volume.md) | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993](drugs/drug_clotrimazole/pd_Brugnara_1993_membrane_potential.md) | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Köfeler_2000](drugs/drug_clotrimazole/pd_K_feler_2000_PGE2.md) | Köfeler HC et al., Effect of cytochrome P-450 inhibitors e…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703427](https://doi.org/10.1038/sj.bjp.0703427) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Köfeler_2000](drugs/drug_clotrimazole/pd_K_feler_2000_TXB2.md) | Köfeler HC et al., Effect of cytochrome P-450 inhibitors e…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703427](https://doi.org/10.1038/sj.bjp.0703427) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nhien_2011](drugs/drug_clotrimazole/pd_Nhien_2011_BH.md) | Nhien NT et al., Effect of Inducers, Incubation Time and…, Tropical medicine and health (2011) | [10.2149/tmh.2011-29](https://doi.org/10.2149/tmh.2011-29) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Taravaud_2017](drugs/drug_clotrimazole/pd_Taravaud_2017_IC50.md) | Taravaud A et al., In vitro evaluation of antimicrobial ag…, International journal for p… (2017) | [10.1016/j.ijpddr.2017.09.002](https://doi.org/10.1016/j.ijpddr.2017.09.002) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Back_1988](drugs/drug_clotrimazole/pd_Back_1988_unknown.md) | Back DJ et al., In vitro inhibition studies of tolbutam…, British journal of clinical… (1988) | [10.1111/j.1365-2125.1988.tb03359.x](https://doi.org/10.1111/j.1365-2125.1988.tb03359.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Foti_2016](drugs/drug_clotrimazole/pd_Foti_2016_unknown.md) | Foti RS et al., Comparison of the ligand binding site o…, Journal of enzyme inhibitio… (2016) | [10.1080/14756366.2016.1193734](https://doi.org/10.1080/14756366.2016.1193734) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Ishii_1997](drugs/drug_clotrimazole/pd_Ishii_1997_unknown.md) | Ishii TM et al., A human intermediate conductance calciu…, Proceedings of the National… (1997) | [10.1073/pnas.94.21.11651](https://doi.org/10.1073/pnas.94.21.11651) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993_K_transport](drugs/drug_clotrimazole/pd_Brugnara_1993_K_transport.md) | name ← clotrimazole · inhibition effect | — | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993_cell_volume](drugs/drug_clotrimazole/pd_Brugnara_1993_cell_volume.md) | name ← clotrimazole · inhibition effect | — | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brugnara_1993_membrane_potential](drugs/drug_clotrimazole/pd_Brugnara_1993_membrane_potential.md) | name ← clotrimazole · inhibition effect | — | Brugnara C et al., Inhibition of Ca(2+)-dependent K+ trans…, The Journal of clinical inv… (1993) | [10.1172/JCI116597](https://doi.org/10.1172/JCI116597) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Köfeler_2000_PGE2](drugs/drug_clotrimazole/pd_K_feler_2000_PGE2.md) | PGE2 ← econazole · inhibition effect | — | Köfeler HC et al., Effect of cytochrome P-450 inhibitors e…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703427](https://doi.org/10.1038/sj.bjp.0703427) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Köfeler_2000_TXB2](drugs/drug_clotrimazole/pd_K_feler_2000_TXB2.md) | TXB2 ← econazole · inhibition effect | — | Köfeler HC et al., Effect of cytochrome P-450 inhibitors e…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703427](https://doi.org/10.1038/sj.bjp.0703427) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nhien_2011_BH](drugs/drug_clotrimazole/pd_Nhien_2011_BH.md) | hemozoin formation ← chloroquine · inhibition effect | — | Nhien NT et al., Effect of Inducers, Incubation Time and…, Tropical medicine and health (2011) | [10.2149/tmh.2011-29](https://doi.org/10.2149/tmh.2011-29) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Taravaud_2017_IC50](drugs/drug_clotrimazole/pd_Taravaud_2017_IC50.md) | IC50 ← amphotericin B · inhibition effect | — | Taravaud A et al., In vitro evaluation of antimicrobial ag…, International journal for p… (2017) | [10.1016/j.ijpddr.2017.09.002](https://doi.org/10.1016/j.ijpddr.2017.09.002) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Back_1988_unknown](drugs/drug_clotrimazole/pd_Back_1988_unknown.md) | tolbutamide hydroxylase activity ← unknown · inhibition effect | — | Back DJ et al., In vitro inhibition studies of tolbutam…, British journal of clinical… (1988) | [10.1111/j.1365-2125.1988.tb03359.x](https://doi.org/10.1111/j.1365-2125.1988.tb03359.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Foti_2016_unknown](drugs/drug_clotrimazole/pd_Foti_2016_unknown.md) | tazarotenic acid sulfoxide formation ← unknown · inhibition effect | — | Foti RS et al., Comparison of the ligand binding site o…, Journal of enzyme inhibitio… (2016) | [10.1080/14756366.2016.1193734](https://doi.org/10.1080/14756366.2016.1193734) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Ishii_1997_unknown](drugs/drug_clotrimazole/pd_Ishii_1997_unknown.md) | potassium current ← calcium · direct sigmoid Emax (Hill) effect | — | Ishii TM et al., A human intermediate conductance calciu…, Proceedings of the National… (1997) | [10.1073/pnas.94.21.11651](https://doi.org/10.1073/pnas.94.21.11651) |
 
 ## ADME sites
 
@@ -67,6 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer/inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inducer/inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inducer/inhibitor/substrate, `CYP3A7` inducer, `SLCO1B1` inhibitor/substrate, `SLCO1B3` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/inhibitor/substrate | DrugBank actor |

@@ -27,17 +27,17 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | 1-compartment (no model) | 2 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | 1-compartment (no model) | 1 | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | — | 1-compartment (no model) | 2 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | — | 1-compartment (no model) | 1 | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chung_2022](drugs/drug_esomeprazole/pd_Chung_2022_pH.md) | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Chung_2022_pH](drugs/drug_esomeprazole/pd_Chung_2022_pH.md) | intragastric pH ← YH4808 · direct sigmoid Emax (Hill) effect | — | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Emicizumab (measured concentrations) drives bleeding count (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Emicizumab plasma concentration (µg/mL) inhibits the daily bleeding count (ABR) via an inhibitory Emax relationship on a generalized Poisson count model, with IC50 = 3.58 µg/mL; the paper does not state Emax or a mechanistic turnover (kin/kout) description, and ABR plateaus above ~30 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jonsson_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Jonsson F; Schmitt C; Petry C; Mercier F; Frey N; Retout S et al. (2021). Clinic
   ·  DOI: [10.1007/s40262-021-01006-0](https://doi.org/10.1007/s40262-021-01006-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (concentration to achieve 50% of drug effect) | `Q322` · not captured | 3.58 | μg/mL | not captured | review_gapfill (not captured) | Jonsson_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (concentration to achieve 50% of drug effect) | `Q322` · not captured | 3.58 | μg/mL | not captured | review_gapfill (not captured) | Jonsson_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

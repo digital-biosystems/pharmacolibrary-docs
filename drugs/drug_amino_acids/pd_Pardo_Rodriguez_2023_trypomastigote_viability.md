@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lupeol acetate (measured concentrations) drives name (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lupeol acetate (ACLUPE) concentrations (94–3 μg/mL, 24 h exposure) act on T. cruzi trypomastigote viability, inducing parasite death with an EC50 of 15.82 ± 3.7 μg/mL (moderate potency); the paper does not state a mechanism (no Emax/kin/kout/ke0 parameters given), and EC50 values were obtained by probit analysis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pardo-Rodriguez_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

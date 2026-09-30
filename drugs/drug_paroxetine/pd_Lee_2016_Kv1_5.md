@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paroxetine (concentrations from the PK model of Chen_2025) drives Kv1.5 whole-cell current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Paroxetine reversibly inhibits Kv1.5 whole-cell current in CHO cells by preferential open-state channel block, accelerating current decay without altering activation kinetics; the concentration-response fit gives an IC50 of 4.11 µM with a Hill coefficient of 0.98, and binding/unbinding rate constants k+1 and k−1 are reported but their values are not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

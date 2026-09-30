@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alpinia galanga oil (measured concentrations) drives name (in % of control) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alpinia galanga oil (AGO, µg/mL) positively modulates GABAA receptors, increasing specific [3H]muscimol binding in rat cortical membranes (expressed as % of control); NE-AGO (20% w/w AGO nanoemulsion) increased binding to 179% of control with EC50 of 391 µg/mL. The paper does not state a full PD model (no Imax/Emax, kin/kout, or ke0 values); the effect is attributed to GABAA receptor positive allosteric modulation, likely via methyl eugenol, whose binding energy in the benzodiazepine site was −22.16 kcal/mol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Khumpirapang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

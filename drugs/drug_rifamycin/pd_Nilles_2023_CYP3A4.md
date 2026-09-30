@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives CYP3A4 activity (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Rifampicin (µM extracellular/intracellular concentrations) stimulates metabolic CYP3A4 activity in LS180 cells via a direct Emax (four-parameter logistic, variable slope) concentration–effect model, with EC50 42.8 ± 1.5 µM and Emax 3.5 ± 0.8-fold at 24 h (efficacy maximal by 72 h; EC50 unchanged with exposure time); rifabutin showed no concentration-dependent CYP3A4 activity increase. Separately, both rifamycins inhibited CYP3A4 activity in microsomes (rifampicin IC50 2.9 ± 0.9 µM; rifabutin 10.6 ± 2.9 µM, ~80% maximal inhibition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

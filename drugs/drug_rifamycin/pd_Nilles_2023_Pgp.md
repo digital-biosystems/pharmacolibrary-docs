@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives Pgp efflux activity (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Rifampicin concentrations (µM) increased Pgp efflux activity in LS180 cells after 144 h exposure, described by an Emax model (four-parameter logistic, variable slope); the paper does not state the EC50, Emax, or slope values in the excerpts (they are in Supplemental Table S7). Separately, rifampicin directly inhibited Pgp activity in P388/dx cells with IC50 = 12.9 ± 4.1 µM, substantially less potent than rifabutin (IC50 = 0.3 ± 0.1 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

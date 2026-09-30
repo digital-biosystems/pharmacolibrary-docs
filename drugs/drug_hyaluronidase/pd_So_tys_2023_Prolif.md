@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sorbus intermedia terpenoids (measured concentrations) drives Cell proliferation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sorbus intermedia terpenoids inhibited testosterone-stimulated PNT2 cell proliferation in a dose-dependent manner (about 45% decrease at 60 µg/mL after 24 h for UA, UAL, and AUA, more potent than dutasteride), but the paper does not state a pharmacodynamic mechanism or model for this effect. The only IC50 reported (8.61 µg/mL) refers to albumin denaturation inhibition, not proliferation; hyaluronidase inhibition IC50 values were 225.75 µg/mL (UA) and 369.77 µg/mL (UAL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sołtys_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Sołtys A; Galanty A; Grabowska K; Paśko P; Zagrodzki P; Podolak I et al. (2023
   ·  DOI: [10.3390/ph16070965](https://doi.org/10.3390/ph16070965)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Albumin Denaturation Inhibition (%) | `Q322` · not captured | 8.61 | µg/mL | not captured | exact (not captured) | pharmaceuticals-16-00965-t001:row11:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Albumin Denaturation Inhibition (%) | `Q322` · not captured | 8.61 | µg/mL | not captured | exact (not captured) | pharmaceuticals-16-00965-t001:row11:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

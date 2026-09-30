@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliceridine drives Successful anesthesia (in NA): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Oliceridine doses (0.01–0.03 mg kg−1, given with propofol) act on the binary response of successful anesthesia during cervical dilation, with success rates of 50%, 80%, 75%, 90%, and 95% across the five dose groups; the paper reports an ED90 of 0.025 mg kg−1 but does not state a pharmacodynamic mechanism or model parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Song_2025`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plasmin drives neutrophil adherence (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plasmin (10^-10 to 10^-7 M) directly stimulates neutrophil adherence to cultured ovine pulmonary artery endothelial monolayers in a concentration-dependent way, with no effect below 10^-10 M, onset at 10^-10 M, and maximal (fivefold above baseline) responses at 10^-8 and 10^-7 M; the effect develops over 60 min (threefold at 30 min) and persists ~30 min after plasmin removal. The paper does not report a formal PD model or potency parameters (no IC50/EC50/Emax/ke0); mechanistically the response is mediated by plasmin's lysine-binding sites acting on neutrophil CD18 adhesive glycoprotein, independent of the catalytic site.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lo_1989`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

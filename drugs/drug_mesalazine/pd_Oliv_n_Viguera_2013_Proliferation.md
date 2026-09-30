@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 13b (measured concentrations) drives 3T3 fibroblast proliferation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 13b (not mesalazine, which was only a weak KCa3.1 inhibitor with EC50≥10 µM) inhibits 3T3 fibroblast proliferation via blockade of KCa3.1 channels, acting as a negative gating modulator (antagonized by SKA-31); 13b inhibited KCa3.1 currents with EC50 19 nM and reduced fibroblast proliferation by ~20% at day 3 at both 0.5 and 2 µM, with no Emax, kin, kout, or ke0 values reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oliván-Viguera_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

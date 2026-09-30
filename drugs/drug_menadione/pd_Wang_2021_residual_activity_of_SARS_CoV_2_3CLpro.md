@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vitamin K3 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Vitamin K3 (menadione) inhibits SARS-CoV-2 3CLpro enzymatic activity (residual protease activity measured by FRET assay) in a concentration- and time-dependent manner, consistent with covalent, irreversible (mechanism-based) inhibition; the IC50 decreased 4.4-fold from 20.96 to 4.78 μM over 30 min, and KI and kinact were determined from residual activity at 5–80 μM over 40 min (values not stated in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

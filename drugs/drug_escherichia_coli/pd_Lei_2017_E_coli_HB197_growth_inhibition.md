@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Marbofloxacin (measured concentrations) drives name (in log10 CFU/ml): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Marbofloxacin ex vivo activity against E. coli HB197 in pig ileum content was described by an inhibitory sigmoid Emax model relating the AUC0-24 h/MIC ratio to the log10 change in bacterial count (CFU/ml) over 24 h incubation; the paper does not state the numeric Emax, EC50, E0 or Hill coefficient values in the excerpts, but reports the AUC0-24 h/MIC ratios needed for bacteriostasis (E=0), bactericidal activity (E=-3) and bacterial elimination (E=-4) as 16.26, 23.54 and 27.18 h, respectively, with an in vivo AUC0-24 h/MIC of 23.08 and AUC0-24 h/MPC of 5.63.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lei_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Lei Z; Liu Q; Xiong J; Yang B; Yang S; Zhu Q; et al. et al. (2017). Frontiers in
   ·  DOI: [10.3389/fphar.2017.00542](https://doi.org/10.3389/fphar.2017.00542)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUC0-24 h/MIC — Mean ± SD | `Q19` · not captured | 23.08 | not captured | not captured | llm (not captured) | T2:row3:col2 |
-| AUC0-24 h/MPC — Mean ± SD | `Q19` · not captured | 5.63 | not captured | not captured | llm (not captured) | T2:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUC0-24 h/MIC — Mean ± SD | `Q19` · not captured | 23.08 | not captured | not captured | llm (not captured) | T2:row3:col2 |
+| PK (driver) | AUC0-24 h/MPC — Mean ± SD | `Q19` · not captured | 5.63 | not captured | not captured | llm (not captured) | T2:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

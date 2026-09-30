@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizin analogues (compounds 12-19, 23) (measured concentrations) drive name (in CC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid (GL) and its analogues (compounds 12–19, 23) were tested for cytotoxicity in MDCK cells (3.1–250 µM, 48 h, cell viability as surrogate endpoint); GL was not toxic even at 2500 µM, while its aglycones glycyrrhetinic acid and carbenoxolone showed CC50 values of 7.4 µM and 17.8 µM, respectively. The paper does not state a pharmacodynamic model or mechanism for the cytotoxicity effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stanetty_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

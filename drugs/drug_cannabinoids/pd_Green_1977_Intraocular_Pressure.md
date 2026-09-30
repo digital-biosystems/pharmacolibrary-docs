@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SP-1 drives name (in IOP) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model: topical (0.001–1%) or oral (0.3 mg/kg) doses of three nitrogen-containing cannabinoids (including SP-1) cause a dose-dependent fall in rabbit IOP, and 0.5% topically lowers monkey IOP (maximum ~20% at 2 h, lasting ~4–5 h), but no mechanism, Emax/IC50/EC50, or rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Green_1977`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

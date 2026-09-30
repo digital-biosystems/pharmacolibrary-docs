@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prazosin (measured concentrations) drives systolic blood pressure (in mm Hg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes a linear concentration-effect model in which prazosin plasma concentrations (ng/ml) are related to the systolic blood pressure response (mm Hg) with an inhibitory (blood pressure-lowering) direction, and reports a trimazosin potency of 2.0 mm Hg/µg/ml; however, the paper excerpts do not describe this specific drug-response model or its mechanism, only discussing general concentration-effect modeling concepts such as linear proportionality and anticlockwise hysteresis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Reid_1990`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Reid JL; Meredith PA et al. (1990). Hypertension (Dallas, Tex. : 1979) 16
   ·  DOI: [10.1161/01.hyp.16.1.12](https://doi.org/10.1161/01.hyp.16.1.12)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| trimazosin potency | `Q321` · not captured | 2.0 | mm Hg/)ug/ml | not captured | review_gapfill (not captured) | Reid_1990:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | trimazosin potency | `Q321` · not captured | 2.0 | mm Hg/)ug/ml | not captured | review_gapfill (not captured) | Reid_1990:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

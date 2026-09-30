@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Etoperidone was evaluated as an acetylcholinesterase (AChE) inhibitor, with AChE inhibition measured in vitro (IC50 = 712.80 μM) and cell index monitored by xCELLigence RTCA showing no significant cytotoxicity up to 70 μM over 48 hours (100 μM reduced viability, p &lt; 0.001); the paper does not state a PD model linking concentration to response, only an in silico AChE docking score of -13.4 kcal/mol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Girgin_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Girgin M; Isik S; Kantarci-Carsibasi N et al. (2023). PloS one 18
   ·  DOI: [10.1371/journal.pone.0284994](https://doi.org/10.1371/journal.pone.0284994)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Queuine — AChE Docking Score(kcal/mol) | `Q100` · not captured | -10.1 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row2:col1 |
-| Etoperidone — AChE Docking Score(kcal/mol) | `Q100` · not captured | -13.4 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row6:col1 |
-| Donepezil — AChE Docking Score(kcal/mol) | `Q100` · not captured | -14.8 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row13:col1 |
-| Galantamine — AChE Docking Score(kcal/mol) | `Q100` · not captured | -8.1 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row19:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Queuine — AChE Docking Score(kcal/mol) | `Q100` · not captured | -10.1 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row2:col1 |
+| — | Etoperidone — AChE Docking Score(kcal/mol) | `Q100` · not captured | -13.4 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row6:col1 |
+| — | Donepezil — AChE Docking Score(kcal/mol) | `Q100` · not captured | -14.8 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row13:col1 |
+| — | Galantamine — AChE Docking Score(kcal/mol) | `Q100` · not captured | -8.1 | kcal/mol | not captured | llm (not captured) | pone.0284994.t002:row19:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives ventilation frequency (in min-1): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record lists hyoscyamine acting on ventilation frequency (fV, min-1) in zebrafish larvae with an Emax-type model, but the paper excerpts do not report any hyoscyamine data, mechanism, or potency values (no EC50, Emax, or rate constants are given for this drug); the excerpts only describe related muscarinic experiments, in which atropine co-applied with hypoxia failed to inhibit fV at 1–100 μM and abolished the hyperventilatory response at 200 μM, with no dose-response model fitted.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rahbar_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VRC07-523LS (measured concentrations) drives PT80 (in ratio): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model: PT80 is a derived ratio of serum VRC07-523LS concentration (µg/mL) to the virus IC80, calculated from simulated concentration–time profiles, not a drug effect on a measured response. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given, and no mechanism linking concentrations to PT80 beyond this ratio is stated; a PT80 &gt;200 was associated with 90% of maximal antiviral efficacy in the AMP study.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huynh_2026`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

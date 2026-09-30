@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PMPD (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not support the record's pairing of PMPD with 3CLpro inhibition: PMPD showed only weak 3CLpro inhibitory activity at 10 μM in the FRET assay, and no IC50, Emax, or mechanism for PMPD is given. Instead, the sulfated alginates PGS and PSS inhibited 3CLpro enzymatic activity with IC50 values of 1.20 μM and 1.42 μM respectively, with no PD mechanism or kinetic parameters (Imax, kin, kout, ke0) stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

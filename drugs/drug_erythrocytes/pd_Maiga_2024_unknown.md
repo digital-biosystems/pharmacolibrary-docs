@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cabamiquine, pyronaridine (measured concentrations) drive parasite killing rate (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In vitro sigmoid Emax models describe cabamiquine and pyronaridine concentrations (nM) driving the parasite killing rate (%) of P. falciparum, with Emax fixed (not precisely estimable) and effects acting as direct concentration-dependent killing combined under Bliss Independence (no synergy or antagonism quantifiable). Against cabamiquine-resistant isolates, EC50 was 961 nM for cabamiquine (resistant isolate 1) or not precisely estimable (resistant isolate 2), while pyronaridine EC50 was 12.9 nM (isolate 1) and 7.62 nM (isolate 2, unchanged in combination); in wild-type isolates pyronaridine EC50 was 28.3 nM and cabamiquine EC50 increased from 0.799 to 5.90 nM (7.38-fold) via a concentration
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maiga_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,12 +30,12 @@ Maiga M; Dembele L; Courlet P; Khandelwal A; Dara A; Sogore F; Diakité O; Maiga
   ·  DOI: [10.1038/s41467-024-51994-3](https://doi.org/10.1038/s41467-024-51994-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Resistant isolate 1 EC50 (nM) — Cabamiquinea | `Q321` · not captured | 961 | nM | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| Resistant isolate 1 EC50 (nM) — Pyronaridine | `Q321` · not captured | 12.9 | nM | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
-| Resistant isolate 2 EC50 (nM) — Pyronaridine | `Q321` · not captured | 7.62 | nM | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
-| Resistant isolate 2 EC50 (nM) — Pyronaridine (in combinationb) | `Q321` · not captured | 7.62 | nM | not captured | llm_confirmed (not captured) | Tab2:row3:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Resistant isolate 1 EC50 (nM) — Cabamiquinea | `Q321` · not captured | 961 | nM | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
+| PD (effect) | Resistant isolate 1 EC50 (nM) — Pyronaridine | `Q321` · not captured | 12.9 | nM | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
+| PD (effect) | Resistant isolate 2 EC50 (nM) — Pyronaridine | `Q321` · not captured | 7.62 | nM | not captured | llm_confirmed (not captured) | Tab2:row3:col3 |
+| PD (effect) | Resistant isolate 2 EC50 (nM) — Pyronaridine (in combinationb) | `Q321` · not captured | 7.62 | nM | not captured | llm_confirmed (not captured) | Tab2:row3:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

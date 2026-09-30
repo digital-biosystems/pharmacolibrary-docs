@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S9 drives GABAA receptor potency (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> S9, a Zuranolone analog acting as a positive allosteric modulator of GABAA receptors, potentiates GABA-evoked currents (at EC20 GABA, 1 μmol/L) in an Emax-type concentration–response relationship, with EC50 of 50 ± 10 nmol/L (Emax 675 ± 163%) at synaptic α1β2γ2 and 34 ± 10 nmol/L (Emax 967 ± 118%) at extrasynaptic α4β3δ receptors; the paper attributes the higher potency to stronger binding via the trifluoroethoxypyridine-triazolone pharmacophore, though no formal PD model parameters beyond EC50/Emax are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

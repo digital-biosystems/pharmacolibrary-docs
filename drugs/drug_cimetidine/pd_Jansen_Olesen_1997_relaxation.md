@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Histamine drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Histamine (M) acts as a concentration-dependent stimulator of relaxation (%) in precontracted human cranial arteries, described by an Emax-type concentration-response model (Imax 87–81%, pIC50 8.14–7.15). Cimetidine (10^-5 M), an H2-receptor antagonist, is not the driver but a blocker: it shifted the histamine concentration-response curves rightward and reduced relaxation (e.g. cerebral arteries with L-NAME: Imax 54+9%, pIC50 6.57+0.40; temporal arteries with L-NAME: Imax 39+9%, pIC50 7.14+0.47), and in endothelium-denuded quiescent arteries it converted the histamine response into a contraction (Emax 77+16%, pEC50 7.16+0.46 in cerebral; Emax 29+8%, pEC50 6.77+0.35 in temporal), abolished by
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jansen-Olesen_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

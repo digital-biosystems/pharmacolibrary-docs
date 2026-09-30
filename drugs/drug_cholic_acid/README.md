@@ -24,9 +24,9 @@ Cholic acid, formulated as Cholbam capsules, is approved by the United States Fo
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Quarfordt_1973_reference](drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md) | general linear (no model) | 0 | Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973) | [10.1172/JCI107378](https://doi.org/10.1172/JCI107378) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Quarfordt_1973_reference](drugs/drug_cholic_acid/CholicAcid_Quarfordt1973_reference.md) | — | general linear (no model) | 0 | Quarfordt SH et al., Estimation of cholesterol and bile acid…, The Journal of clinical inv… (1973) | [10.1172/JCI107378](https://doi.org/10.1172/JCI107378) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer, `SLCO1A2` inducer/inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inducer | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inducer | DrugBank actor |
 | distribution | lung | `ABCC1` inducer | DrugBank actor |
 | metabolism | kidney | `SLC22A7` inhibitor | DrugBank actor |

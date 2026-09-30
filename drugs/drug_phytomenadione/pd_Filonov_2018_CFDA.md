@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phytomenadione (phytonadione) was tested as the relatively nontoxic counterpart of menadione in primary human endothelial colony-forming cells (ECFCs), where cell viability (% measured by CFDA fluorescence after 48 h exposure to 9 concentrations) was inhibited by the toxicants CdCl2, NaAsO2, TBT, and menadione; the paper does not describe a pharmacodynamic mechanism for phytomenadione itself. Reported potency for the toxicants (IC10/IC50 ranges across clones): CdCl2 4.2–9.3/12.3–18.0 µM, NaAsO2 1.1–5.0/4.9–15.1 µM, TBT 0.2–0.5/1.2–2.3 µM, menadione 5.6–19.0/8.0–26.3 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Filonov_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

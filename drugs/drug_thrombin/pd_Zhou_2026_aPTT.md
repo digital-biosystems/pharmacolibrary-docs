@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Milvexian (measured concentrations) drives name (in seconds): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Milvexian plasma concentrations (ng/mL) act directly on aPTT (seconds), prolonging it via an Emax relationship consistent with selective inhibition of the intrinsic coagulation pathway; aPTT increases with concentration and plateaus above 9,000 ng/mL, with no Emax, EC50, or gamma values stated in the excerpts. At 100 mg BID, the modeled mean aPTT ratio to baseline was 79 seconds (72–88) at 4 hours and 73 seconds (66–83) at 12 hours post-dose.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

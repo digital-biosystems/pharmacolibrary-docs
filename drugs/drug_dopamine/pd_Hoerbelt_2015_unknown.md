@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopamine (measured concentrations) drives GABA-evoked current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dopamine (0.1–10 mM) directly modulates GABA_A receptor currents measured by whole-cell patch clamp: it inhibits tonic GABA-evoked currents (e.g., in striatal neurons and α1β3 or α1β2γ2 receptors) via a fast (&lt;200 ms), subunit-dependent, pseudocompetitive channel interaction rather than GPCRs or pore block, and it directly activates receptors containing β and γ subunits without α (β3γ2 EC50 = 660 µM). The paper does not report an Emax/Imax or kinetic model parameters for the inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoerbelt_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

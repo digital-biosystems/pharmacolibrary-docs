@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pramlintide (measured concentrations) drives cell proliferation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pramlintide (0–102.4 μg/mL) directly inhibits MTT-measured cell proliferation in HCT-116 and HT-29 colorectal cancer cell lines in a dose-dependent manner after 72 h exposure; the paper reports IC50 values (e.g., 43.41 and 12.09 μM for oxaliplatin in colorectal cancer cell lines) but does not state a PD model or mechanism (no Imax, kin, kout, ke0, or gamma given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Keilani_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Al-Keilani MS; Alsmadi DH; Darweesh RS; Alzoubi KH et al. (2018). Clinical pharm
   ·  DOI: [10.2147/CPAA.S153780](https://doi.org/10.2147/CPAA.S153780)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 43.41 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col1 |
-| OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 12.09 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 43.41 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col1 |
+| PK (driver) | OXA (μM) — Colorectal cancer cell lines | `Q358` · not captured | 12.09 | μM | not captured | llm (not captured) | t1-cpaa-10-023:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 16a (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dihydropyrimidinone analog 16a (the paper's most potent compound, not diosmectite) inhibits percentage growth/viability of human cancer cell lines in a concentration-dependent MTT assay (0.07–70 μM), with IC50 values of 14.7 ± 1.1 μM (colon Colo-205), 13.8 ± 0.9 μM (prostate PC-3), 13.1 ± 1.4 μM (leukemia THP-1) and 7.1 ± 0.8 μM (lung A549), while showing least toxicity against normal fR-2 cells (IC50 &gt;70 μM); the paper does not state a mechanistic PD model (no Imax, kin, kout or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Farooq_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,44 +30,44 @@ Farooq S; Alharthi FA; Alsalme A; Hussain A; Dar BA; Hamid A; et al. et al. (202
   ·  DOI: [10.1039/d0ra09072g](https://doi.org/10.1039/d0ra09072g)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Colon (Colo-205) IC50 — 5a | `Q322` · not captured | 37.6 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col2 |
-| Colon (Colo-205) IC50 — 8a | `Q322` · not captured | 18.6 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col5 |
-| Colon (Colo-205) IC50 — 13a | `Q322` · not captured | 59.4 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col10 |
-| Colon (Colo-205) IC50 — 15a | `Q322` · not captured | 27.3 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col12 |
-| Colon (Colo-205) IC50 — 16a | `Q322` · not captured | 14.7 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col13 |
-| Colon (Colo-205) IC50 — 17a | `Q322` · not captured | 38.2 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col14 |
-| Colon (Colo-205) IC50 — 19a | `Q322` · not captured | 33.7 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col16 |
-| Colon (Colo-205) IC50 — 20a | `Q322` · not captured | 23.4 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col17 |
-| Colon (Colo-205) IC50 — 21a | `Q322` · not captured | 48.1 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col18 |
-| Colon (Colo-205) IC50 — 5-Fluorouracil | `Q322` · not captured | 33.9 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col19 |
-| Prostate (PC-3) IC50 — 5a | `Q322` · not captured | 40.8 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col2 |
-| Prostate (PC-3) IC50 — 8a | `Q322` · not captured | 22.2 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col5 |
-| Prostate (PC-3) IC50 — 10a | `Q322` · not captured | 29.4 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col7 |
-| Prostate (PC-3) IC50 — 11a | `Q322` · not captured | 29.3 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col8 |
-| Prostate (PC-3) IC50 — 13a | `Q322` · not captured | 35.4 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col10 |
-| Prostate (PC-3) IC50 — 16a | `Q322` · not captured | 13.8 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col13 |
-| Prostate (PC-3) IC50 — 17a | `Q322` · not captured | 47.9 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col14 |
-| Prostate (PC-3) IC50 — Paclitaxel | `Q322` · not captured | 0.048 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col20 |
-| Leukemia (THP-1) IC50 — 5a | `Q322` · not captured | 65.8 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col2 |
-| Leukemia (THP-1) IC50 — 8a | `Q322` · not captured | 43.8 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col5 |
-| Leukemia (THP-1) IC50 — 10a | `Q322` · not captured | 42.1 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col7 |
-| Leukemia (THP-1) IC50 — 13a | `Q322` · not captured | 23.2 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col10 |
-| Leukemia (THP-1) IC50 — 16a | `Q322` · not captured | 13.1 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col13 |
-| Leukemia (THP-1) IC50 — Doxorubicin | `Q322` · not captured | 0.018 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col21 |
-| Lung (A549) IC50 — 5a | `Q322` · not captured | 67.8 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col2 |
-| Lung (A549) IC50 — 8a | `Q322` · not captured | 63.4 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col5 |
-| Lung (A549) IC50 — 13a | `Q322` · not captured | 30.3 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col10 |
-| Lung (A549) IC50 — 16a | `Q322` · not captured | 7.1 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col13 |
-| Lung (A549) IC50 — 17a | `Q322` · not captured | 26.4 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col14 |
-| Lung (A549) IC50 — 19a | `Q322` · not captured | 47.8 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col16 |
-| Lung (A549) IC50 — Paclitaxel | `Q322` · not captured | 5.1 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col20 |
-| Normal (fR-2) IC50 — 5a | `Q322` · not captured | 68.8 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col2 |
-| Normal (fR-2) IC50 — 8a | `Q322` · not captured | 67.2 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col5 |
-| Normal (fR-2) IC50 — 13a | `Q322` · not captured | 67.6 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col10 |
-| Normal (fR-2) IC50 — 20a | `Q322` · not captured | 68.7 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col17 |
-| Normal (fR-2) IC50 — 5-Fluorouracil | `Q322` · not captured | 334.7 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col19 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Colon (Colo-205) IC50 — 5a | `Q322` · not captured | 37.6 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col2 |
+| PD (effect) | Colon (Colo-205) IC50 — 8a | `Q322` · not captured | 18.6 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col5 |
+| PD (effect) | Colon (Colo-205) IC50 — 13a | `Q322` · not captured | 59.4 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col10 |
+| PD (effect) | Colon (Colo-205) IC50 — 15a | `Q322` · not captured | 27.3 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col12 |
+| PD (effect) | Colon (Colo-205) IC50 — 16a | `Q322` · not captured | 14.7 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col13 |
+| PD (effect) | Colon (Colo-205) IC50 — 17a | `Q322` · not captured | 38.2 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col14 |
+| PD (effect) | Colon (Colo-205) IC50 — 19a | `Q322` · not captured | 33.7 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col16 |
+| PD (effect) | Colon (Colo-205) IC50 — 20a | `Q322` · not captured | 23.4 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col17 |
+| PD (effect) | Colon (Colo-205) IC50 — 21a | `Q322` · not captured | 48.1 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col18 |
+| PD (effect) | Colon (Colo-205) IC50 — 5-Fluorouracil | `Q322` · not captured | 33.9 | μM | not captured | llm_confirmed (not captured) | tab5:row0:col19 |
+| PD (effect) | Prostate (PC-3) IC50 — 5a | `Q322` · not captured | 40.8 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col2 |
+| PD (effect) | Prostate (PC-3) IC50 — 8a | `Q322` · not captured | 22.2 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col5 |
+| PD (effect) | Prostate (PC-3) IC50 — 10a | `Q322` · not captured | 29.4 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col7 |
+| PD (effect) | Prostate (PC-3) IC50 — 11a | `Q322` · not captured | 29.3 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col8 |
+| PD (effect) | Prostate (PC-3) IC50 — 13a | `Q322` · not captured | 35.4 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col10 |
+| PD (effect) | Prostate (PC-3) IC50 — 16a | `Q322` · not captured | 13.8 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col13 |
+| PD (effect) | Prostate (PC-3) IC50 — 17a | `Q322` · not captured | 47.9 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col14 |
+| PD (effect) | Prostate (PC-3) IC50 — Paclitaxel | `Q322` · not captured | 0.048 | μM | not captured | llm_confirmed (not captured) | tab5:row1:col20 |
+| PD (effect) | Leukemia (THP-1) IC50 — 5a | `Q322` · not captured | 65.8 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col2 |
+| PD (effect) | Leukemia (THP-1) IC50 — 8a | `Q322` · not captured | 43.8 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col5 |
+| PD (effect) | Leukemia (THP-1) IC50 — 10a | `Q322` · not captured | 42.1 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col7 |
+| PD (effect) | Leukemia (THP-1) IC50 — 13a | `Q322` · not captured | 23.2 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col10 |
+| PD (effect) | Leukemia (THP-1) IC50 — 16a | `Q322` · not captured | 13.1 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col13 |
+| PD (effect) | Leukemia (THP-1) IC50 — Doxorubicin | `Q322` · not captured | 0.018 | μM | not captured | llm_confirmed (not captured) | tab5:row2:col21 |
+| PD (effect) | Lung (A549) IC50 — 5a | `Q322` · not captured | 67.8 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col2 |
+| PD (effect) | Lung (A549) IC50 — 8a | `Q322` · not captured | 63.4 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col5 |
+| PD (effect) | Lung (A549) IC50 — 13a | `Q322` · not captured | 30.3 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col10 |
+| PD (effect) | Lung (A549) IC50 — 16a | `Q322` · not captured | 7.1 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col13 |
+| PD (effect) | Lung (A549) IC50 — 17a | `Q322` · not captured | 26.4 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col14 |
+| PD (effect) | Lung (A549) IC50 — 19a | `Q322` · not captured | 47.8 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col16 |
+| PD (effect) | Lung (A549) IC50 — Paclitaxel | `Q322` · not captured | 5.1 | μM | not captured | llm_confirmed (not captured) | tab5:row3:col20 |
+| PD (effect) | Normal (fR-2) IC50 — 5a | `Q322` · not captured | 68.8 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col2 |
+| PD (effect) | Normal (fR-2) IC50 — 8a | `Q322` · not captured | 67.2 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col5 |
+| PD (effect) | Normal (fR-2) IC50 — 13a | `Q322` · not captured | 67.6 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col10 |
+| PD (effect) | Normal (fR-2) IC50 — 20a | `Q322` · not captured | 68.7 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col17 |
+| PD (effect) | Normal (fR-2) IC50 — 5-Fluorouracil | `Q322` · not captured | 334.7 | μM | not captured | llm_confirmed (not captured) | tab5:row4:col19 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

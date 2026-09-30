@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives cellular uptake (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model: gemcitabine cellular uptake (measured by HPLC after incubation with 200 µg/ml gemcitabine for 2 or 4 h) was simply compared between SW1990 and SW1990-GZ cells, with significantly lower intracellular gemcitabine in the resistant cells (P&lt;0.05 at 2 h; P&lt;0.01 at 4 h), and no mechanism model, Imax/IC50 for uptake, or rate constants (kin, kout, ke0) are given. The only potency values reported are MTT IC50 values of 0.07±0.0021 µg/ml (SW1990) and 87.5±3.24 µg/ml (SW1990-GZ), with a resistance index of 1,250.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

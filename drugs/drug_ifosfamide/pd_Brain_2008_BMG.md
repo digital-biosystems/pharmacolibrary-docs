@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ifosfamide (concentrations from this paper's PK model) drives BMG (in unknown): indirect response — drug inhibits the production of BMG.
+
+**Model:** No model was generated from this record.
+
+> Urinary beta2-microglobulin (BMG) time-courses were related to ifosfamide concentration via an indirect response model in which ifosfamide inhibits the production of the response (indirect response model I, inhibition). The paper does not report the BMG model's parameter estimates (e.g. Imax, IC50, kin, kout) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brain_2008`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

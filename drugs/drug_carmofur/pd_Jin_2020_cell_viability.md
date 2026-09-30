@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carmofur (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carmofur concentrations (μM) were tested in Vero E6 cells infected with SARS-CoV-2 (MOI 0.05), measuring percentage inhibition of viral replication (qRT-PCR viral copy number) and cell viability relative to DMSO vehicle; the paper reports an EC50 of 24.30 μM for inhibition of viral replication, attributed mechanistically to covalent inhibition of the SARS-CoV-2 main protease (Mpro) at catalytic Cys145, but it does not state a PD model, Imax/Emax, kin/kout, ke0 or gamma values, and notes carmofur showed no detectable antiviral activity in a prior Vero cell assay.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

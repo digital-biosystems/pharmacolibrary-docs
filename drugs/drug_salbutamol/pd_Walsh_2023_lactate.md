@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salbutamol (concentrations from this paper's PK model) drives lactate (in mmol/L): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Salbutamol plasma concentrations (ng/ml) were linked to blood lactate (mmol/L) with a sigmoid Emax stimulation model in a sequential population PKPD analysis, but the excerpts give no lactate-specific parameter values (no Emax, EC50, or Hill coefficient) and do not state a mechanistic production/elimination model for lactate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

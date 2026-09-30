@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polyethylene glycol (15)-hydroxystearate (PEG15HS) (measured concentrations) drives Amphotericin B MIC (in mg/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Surfactant concentrations (PEG15HS, Brij S10/S20/O20/C10) reduce the measured amphotericin B MIC (mg/L) in Mucorales checkerboard assays, described by an inhibitory Emax model (MIC decreasing from MIC0 toward MIC∞ with maximal ratio Rmax = MIC0/MIC∞); the proposed mechanism is surfactant-induced monomerization of AmB aggregates, increasing the active monomeric fraction. Potency EC50 values were 0.44 mg/L for PEG15HS, 0.02 mg/L for Brij S10 and Brij S20, 0.06 mg/L for Brij O20, and 0.05 mg/L for Brij C10, with PEG15HS Rmax ranging from 2.5 to 63.8 depending on the isolate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brunet_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Brunet K; Diop CAB; Chauzy A; Prébonnaud N; Marchand S; Rammaert B; et al. et a
   ·  DOI: [10.3390/jof8020121](https://doi.org/10.3390/jof8020121)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PEG15HS — EC50 (mg/L) | `Q321` · not captured | 0.44 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row1:col3 |
-| Brij® S10 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row13:col3 |
-| Brij® S20 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row14:col3 |
-| Brij® O20 — EC50 (mg/L) | `Q321` · not captured | 0.06 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row15:col3 |
-| Brij® C10 — EC50 (mg/L) | `Q321` · not captured | 0.05 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row16:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | PEG15HS — EC50 (mg/L) | `Q321` · not captured | 0.44 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row1:col3 |
+| PD (effect) | Brij® S10 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row13:col3 |
+| PD (effect) | Brij® S20 — EC50 (mg/L) | `Q321` · not captured | 0.02 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row14:col3 |
+| PD (effect) | Brij® O20 — EC50 (mg/L) | `Q321` · not captured | 0.06 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row15:col3 |
+| PD (effect) | Brij® C10 — EC50 (mg/L) | `Q321` · not captured | 0.05 | mg/L | not captured | llm (not captured) | jof-08-00121-t001:row16:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

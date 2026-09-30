@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan drives ischaemic area (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide a pharmacodynamic model for amrinone acting on the ischaemic area (NADH-fluorescence area); no potency (IC50/EC50/Emax) or rate parameters are stated for this drug-response pair, and the excerpts only note that amrinone, a PDE-inhibitor, diminished myocardial ischaemia similarly to milrinone at functionally equieffective concentrations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rump_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

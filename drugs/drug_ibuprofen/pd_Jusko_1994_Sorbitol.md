@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aldose reductase inhibitor (measured concentrations) drives sorbitol concentration (in unknown): indirect response — drug inhibits the production of sorbitol concentration.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> An aldose reductase inhibitor (record lists ibuprofen, but the paper describes an aldose reductase inhibitor) inhibits the production of sorbitol in red blood cells, consistent with indirect response model I, with Emax 12.99 and EC50 26.4 ng/ml; no kin or kout values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jusko_1994`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Jusko WJ; Ko HC et al. (1994). Clinical pharmacology and therapeutics 56
   ·  DOI: [10.1038/clpt.1994.155](https://doi.org/10.1038/clpt.1994.155)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 12.99 | Emax | not captured | review_gapfill (not captured) | Jusko_1994:review |
-| EC50 | `Q321` · not captured | 26.4 | ng/ml | not captured | review_gapfill (not captured) | Jusko_1994:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 12.99 | Emax | not captured | review_gapfill (not captured) | Jusko_1994:review |
+| PD (effect) | EC50 | `Q321` · not captured | 26.4 | ng/ml | not captured | review_gapfill (not captured) | Jusko_1994:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexamethasone (concentrations from this paper's PK model) drives IL-6 (in pg/mL): indirect response — drug inhibits the production of IL-6.
+
+**Model:** No model was generated from this record.
+
+> Dexamethasone plasma concentrations inhibit the production (zero-order kin) of IL-6 in an indirect response model (Imax 0.161, IC50 0.7 ng/mL), with IL-6 turnover kin 18.21 pg/mL/h and kout 0.183 h−1; CRP production is in turn stimulated by IL-6 (SIL6onCRP).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Świerczek_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
@@ -21,25 +31,25 @@
   ·  DOI: [10.1111/cts.13577](https://doi.org/10.1111/cts.13577)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k inTNF (pg mL−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 3.890 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row1:col2 |
-| k inTNF (pg mL−1 h−1) — SD of random effects | `Q315` · not captured | 0 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row1:col3 |
-| k outTNF (h−1) — SD of random effects | `Q328` · not captured | 0.1071 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row2:col3 |
-| IC50DEX(TNF) (ng/mL) — SD of random effects | `Q322` · not captured | 0.45 | ng/mL | not captured | llm (not captured) | cts13577-tbl-0002:row3:col3 |
-| I maxDEX(TNF) — SD of random effects | `Q323` · not captured | 0.166 | TNF | not captured | llm (not captured) | cts13577-tbl-0002:row4:col3 |
-| IC50DEX(IL6) (ng/mL) — SD of random effects | `Q322` · not captured | 0.7 | ng/mL | not captured | llm (not captured) | cts13577-tbl-0002:row5:col3 |
-| I maxDEX(IL6) — SD of random effects | `Q323` · not captured | 0.161 | IL6 | not captured | llm (not captured) | cts13577-tbl-0002:row6:col3 |
-| k inIL6 (pg mL−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 18.21 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row7:col2 |
-| k inIL6 (pg mL−1 h−1) — SD of random effects | `Q328` · not captured | 0 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row7:col3 |
-| S IL6onCRP (mL/pg) — SD of random effects | `Q312` · not captured | 0 | mL/pg | not captured | llm (not captured) | cts13577-tbl-0002:row8:col3 |
-| k outIL6 (h−1) — SD of random effects | `Q328` · not captured | 0.183 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row9:col3 |
-| k inCRP (mg L−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 0.0016 | mg L−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row10:col2 |
-| k inCRP (mg L−1 h−1) — SD of random effects | `Q315` · not captured | 0 | mg L−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row10:col3 |
-| k outCRP (h−1) — SD of random effects | `Q328` · not captured | 0.0037 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row11:col3 |
-| R 0TNF (pg/mL) — SD of random effects | `Q336` · not captured | 0 | pg/mL | not captured | llm (not captured) | cts13577-tbl-0002:row12:col3 |
-| R 0IL6 (pg/mL) — SD of random effects | `Q336` · not captured | 0 | pg/mL | not captured | llm (not captured) | cts13577-tbl-0002:row13:col3 |
-| R 0CRP (mg/L) — SD of random effects | `Q315` · not captured | 0 | mg/L | not captured | llm (not captured) | cts13577-tbl-0002:row14:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | k inTNF (pg mL−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 3.890 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row1:col2 |
+| variability | k inTNF (pg mL−1 h−1) — SD of random effects | `Q315` · not captured | 0 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row1:col3 |
+| PD (effect) | k outTNF (h−1) — SD of random effects | `Q328` · not captured | 0.1071 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row2:col3 |
+| PD (effect) | IC50DEX(TNF) (ng/mL) — SD of random effects | `Q322` · not captured | 0.45 | ng/mL | not captured | llm (not captured) | cts13577-tbl-0002:row3:col3 |
+| PD (effect) | I maxDEX(TNF) — SD of random effects | `Q323` · not captured | 0.166 | TNF | not captured | llm (not captured) | cts13577-tbl-0002:row4:col3 |
+| PD (effect) | IC50DEX(IL6) (ng/mL) — SD of random effects | `Q322` · not captured | 0.7 | ng/mL | not captured | llm (not captured) | cts13577-tbl-0002:row5:col3 |
+| PD (effect) | I maxDEX(IL6) — SD of random effects | `Q323` · not captured | 0.161 | IL6 | not captured | llm (not captured) | cts13577-tbl-0002:row6:col3 |
+| PD (effect) | k inIL6 (pg mL−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 18.21 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row7:col2 |
+| PD (effect) | k inIL6 (pg mL−1 h−1) — SD of random effects | `Q328` · not captured | 0 | pg mL−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row7:col3 |
+| variability | S IL6onCRP (mL/pg) — SD of random effects | `Q312` · not captured | 0 | mL/pg | not captured | llm (not captured) | cts13577-tbl-0002:row8:col3 |
+| PD (effect) | k outIL6 (h−1) — SD of random effects | `Q328` · not captured | 0.183 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row9:col3 |
+| PD (effect) | k inCRP (mg L−1 h−1) — Fixed effects (reference) | `Q328` · not captured | 0.0016 | mg L−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row10:col2 |
+| variability | k inCRP (mg L−1 h−1) — SD of random effects | `Q315` · not captured | 0 | mg L−1 h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row10:col3 |
+| PD (effect) | k outCRP (h−1) — SD of random effects | `Q328` · not captured | 0.0037 | h−1 | not captured | llm (not captured) | cts13577-tbl-0002:row11:col3 |
+| PD (effect) | R 0TNF (pg/mL) — SD of random effects | `Q336` · not captured | 0 | pg/mL | not captured | llm (not captured) | cts13577-tbl-0002:row12:col3 |
+| PD (effect) | R 0IL6 (pg/mL) — SD of random effects | `Q336` · not captured | 0 | pg/mL | not captured | llm (not captured) | cts13577-tbl-0002:row13:col3 |
+| variability | R 0CRP (mg/L) — SD of random effects | `Q315` · not captured | 0 | mg/L | not captured | llm (not captured) | cts13577-tbl-0002:row14:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zafirlukast (measured concentrations) drives name (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for montelukast on lipid accumulation: in 3T3-L1 adipocytes treated with differentiation cocktail plus montelukast, montelukast did not induce lipid accumulation (unlike zafirlukast, which dose-dependently triggered moderate lipid accumulation), despite montelukast activating PPARγ in the reporter assay with an EC50 of 1.17 μM and 21.9% maximal activation. No mechanism, Emax/IC50 parameters, or rate constants for the lipid accumulation response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Göbel_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

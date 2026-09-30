@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BI-847325 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BI-847325, a dual MEK/Aurora kinase inhibitor, concentration-dependently inhibits viability/proliferation of ATC C643 and SW1736 cells (MTT assay, 24–72 h exposure); the paper does not state a mechanistic PD model (no Emax/kin/kout/ke0 parameters). IC50 values: 2D culture 2 μM (C643) and 4 μM (SW1736); 3D alginate spheroid culture 15 μM (C643) and 34 μM (SW1736), with effects constant after 48 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Samimi_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

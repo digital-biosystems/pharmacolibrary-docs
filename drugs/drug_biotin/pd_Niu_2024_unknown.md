@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucinostatin B derivatives (measured concentrations) drives Hemolysis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports hemolysis of human red blood cells exposed to leucinostatin A (LA): even at 100 µM—about 106 times its 0.16 nM IC50 for malaria transmission blocking—hemolysis was not significantly different from control (p &gt; 0.9), suggesting leucinostatins do not block transmission by disrupting the cytoplasmic membrane. No PD model, potency values (e.g., IC50/EC50 for hemolysis), or mechanism for the hemolysis response itself is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Niu_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -34,8 +34,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 | excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
+| target | adrenal gland | `CYP17A1` substrate | DrugBank actor |
+| target | testis | `CYP17A1` substrate | DrugBank actor |
 
-<sub>Actors without a tissue in the table: CYP17A1 (substrate), CYP2C18 (substrate).</sub>
+<sub>Actors without a tissue in the table: CYP2C18 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

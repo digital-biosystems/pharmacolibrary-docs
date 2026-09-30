@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taurolidine (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taurolidine (TRD, 100–1000 μM, 24 h incubation) acts on the percentage of apoptotic cells measured by FACS in five cell lines, with a complex, non-uniform dose response: HT29 and Chang Liver showed maximal effects at 250 μM (66.2% ± 5.6% and 33.2% ± 1.0% viable cells, with increased apoptosis), HT1080 at 100 μM (26.8% ± 3.7% viable, mainly apoptotic), and AsPC-1 and BxPC-3 at 1000 μM (36.8% ± 5.2% and 25.7% ± 4.3% viable, exclusively necrotic). The paper does not state a pharmacodynamic model or parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma); mechanistically it suggests TRD-induced reactive oxygen species mediate the cell death, since NAC co-incubation attenuated it in all lines
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chromik_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

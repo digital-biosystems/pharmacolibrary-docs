@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Iron (measured concentrations) drives HGB (in g/dL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Serum iron concentration (C_Iron, μg/dL) stimulates the zero-order production of hemoglobin (HGB, g/dL) in an Emax-type indirect response model (dHGB/dt = KIN_HGB·(1 + Smax_HGB·C_Iron/(SC50_HGB + C_Iron)) − KOUT_HGB·HGB), with KOUT_HGB assumed equal to the RBC elimination rate; the estimated SC50Iron was 3.14 μg/dL (%RSE 38.93) and KE 166.5 (%RSE 16.22). Smax_HGB and KIN_HGB/KOUT_HGB values are not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cao_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,19 +30,19 @@ Cao K; Fan X; Wong RSM; Yan X et al. (2025). ACS pharmacology & translational sc
   ·  DOI: [10.1021/acsptsci.5c00097](https://doi.org/10.1021/acsptsci.5c00097)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SC50Iron — estimate | `Q322` · not captured | 3.14 | μg/dL | not captured | llm (not captured) | tbl1:row6:col3 |
-| SC50Iron — % RSE | `Q321` · not captured | 38.93 | μg/dL | not captured | llm (not captured) | tbl1:row6:col4 |
-| KE — estimate | `Q47` · not captured | 166.5 | not captured | not captured | exact (not captured) | tbl1:row13:col3 |
-| KE — % RSE | `Q47` · not captured | 16.22 | not captured | not captured | exact (not captured) | tbl1:row13:col4 |
-| SC50DF — estimate | `Q321` · not captured | 2062 | μg/dL | not captured | llm (not captured) | tbl1:row15:col3 |
-| σprop‑RBC — estimate | `Q315` · not captured | 0.29 | not captured | not captured | llm (not captured) | tbl1:row16:col3 |
-| σprop‑RBC — % RSE | `Q316` · not captured | 7.13 | not captured | not captured | llm (not captured) | tbl1:row16:col4 |
-| σadd‑HBG — estimate | `Q315` · not captured | 0.79 | not captured | not captured | llm (not captured) | tbl1:row17:col3 |
-| σadd‑HBG — % RSE | `Q317` · not captured | 5.11 | not captured | not captured | llm (not captured) | tbl1:row17:col4 |
-| σprop‑PLT — estimate | `Q315` · not captured | 0.58 | not captured | not captured | llm (not captured) | tbl1:row18:col3 |
-| σprop‑PLT — % RSE | `Q316` · not captured | 6.80 | not captured | not captured | llm (not captured) | tbl1:row18:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | SC50Iron — estimate | `Q322` · not captured | 3.14 | μg/dL | not captured | llm (not captured) | tbl1:row6:col3 |
+| PD (effect) | SC50Iron — % RSE | `Q321` · not captured | 38.93 | μg/dL | not captured | llm (not captured) | tbl1:row6:col4 |
+| PK (driver) | KE — estimate | `Q47` · not captured | 166.5 | not captured | not captured | exact (not captured) | tbl1:row13:col3 |
+| PK (driver) | KE — % RSE | `Q47` · not captured | 16.22 | not captured | not captured | exact (not captured) | tbl1:row13:col4 |
+| PD (effect) | SC50DF — estimate | `Q321` · not captured | 2062 | μg/dL | not captured | llm (not captured) | tbl1:row15:col3 |
+| variability | σprop‑RBC — estimate | `Q315` · not captured | 0.29 | not captured | not captured | llm (not captured) | tbl1:row16:col3 |
+| variability | σprop‑RBC — % RSE | `Q316` · not captured | 7.13 | not captured | not captured | llm (not captured) | tbl1:row16:col4 |
+| variability | σadd‑HBG — estimate | `Q315` · not captured | 0.79 | not captured | not captured | llm (not captured) | tbl1:row17:col3 |
+| variability | σadd‑HBG — % RSE | `Q317` · not captured | 5.11 | not captured | not captured | llm (not captured) | tbl1:row17:col4 |
+| variability | σprop‑PLT — estimate | `Q315` · not captured | 0.58 | not captured | not captured | llm (not captured) | tbl1:row18:col3 |
+| variability | σprop‑PLT — % RSE | `Q316` · not captured | 6.80 | not captured | not captured | llm (not captured) | tbl1:row18:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

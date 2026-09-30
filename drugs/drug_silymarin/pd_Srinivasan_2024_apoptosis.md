@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (μM concentrations) induces apoptosis in A549 lung cancer cells, with an apoptotic rate of 25.8 % (necrosis 5.72 %) after 24 h by Annexin V-FITC staining; the paper reports an MTT proliferation IC50 of 58 μM but does not state a quantitative PD model (no Imax, Emax, kin, kout, ke0, or gamma) or a formal mechanism linking concentration to apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Srinivasan_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

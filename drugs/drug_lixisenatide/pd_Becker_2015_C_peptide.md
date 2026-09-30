@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lixisenatide drives name (in nmol/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a formal PD model for lixisenatide's effect on C-peptide (nmol/L); it reports a dose–response relationship in which single subcutaneous doses of 2.5–20 µg lixisenatide dose-proportionally reduced postprandial C-peptide (and insulin and plasma glucose) after a standardized liquid meal, attributed mechanistically to delayed gastric emptying (gastrostatic effect) rather than to a quantified Emax/IC50-type mechanism. No potency (EC50, IC50, Emax) or rate (kin, kout, ke0) parameters are given; only effect estimates vs placebo on PPG metrics (e.g. AUC0–1 h −61.2 mmol·min·L−1, Cmax −0.8 mmol·L−1) appear in the record.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Becker_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Becker RH; Stechl J; Steinstraesser A; Golor G; Pellissier F et al. (2015). Diab
   ·  DOI: [10.1002/dmrr.2647](https://doi.org/10.1002/dmrr.2647)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PPG–AUC0–1 h (mmol min L−1) — Effect estimate vs placebo | `Q19` · not captured | -61.2 | mmol min L−1 | not captured | llm (not captured) | dmrr2647-tbl-0002:row1:col2 |
-| PPG–Cmax (mmol L−1) — Effect estimate vs placebo | `Q32` · not captured | -0.8 | mmol L−1 | not captured | llm_confirmed (not captured) | dmrr2647-tbl-0002:row5:col2 |
-| PPG–AUC0–1 h (mmol min L−1) — Effect estimate vs placebo | `Q19` · not captured | -31.1 | mmol min L−1 | not captured | llm (not captured) | dmrr2647-tbl-0002:row10:col2 |
-| PPG–Cmax (mmol L−1) — Effect estimate vs placebo | `Q32` · not captured | -0.3 | mmol L−1 | not captured | llm_confirmed (not captured) | dmrr2647-tbl-0002:row16:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | PPG–AUC0–1 h (mmol min L−1) — Effect estimate vs placebo | `Q19` · not captured | -61.2 | mmol min L−1 | not captured | llm (not captured) | dmrr2647-tbl-0002:row1:col2 |
+| PK (driver) | PPG–Cmax (mmol L−1) — Effect estimate vs placebo | `Q32` · not captured | -0.8 | mmol L−1 | not captured | llm_confirmed (not captured) | dmrr2647-tbl-0002:row5:col2 |
+| PK (driver) | PPG–AUC0–1 h (mmol min L−1) — Effect estimate vs placebo | `Q19` · not captured | -31.1 | mmol min L−1 | not captured | llm (not captured) | dmrr2647-tbl-0002:row10:col2 |
+| PK (driver) | PPG–Cmax (mmol L−1) — Effect estimate vs placebo | `Q32` · not captured | -0.3 | mmol L−1 | not captured | llm_confirmed (not captured) | dmrr2647-tbl-0002:row16:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

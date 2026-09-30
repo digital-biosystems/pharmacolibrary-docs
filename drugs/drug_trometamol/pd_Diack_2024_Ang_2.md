@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Faricimab (measured concentrations) drives free Ang-2 (in pg/mL): indirect response — drug inhibits the production of free Ang-2.
+
+**Model:** No model was generated from this record.
+
+> Faricimab (aqueous humor concentration, µg/mL) inhibits free Ang-2 (pg/mL) in an indirect response model in which faricimab stimulates the loss/elimination of free Ang-2 (kout 4.15 1/day), with EC50 2.59 µg/mL, EMAX 0.987, and Hill coefficients of 1.11 (phase 2) and 0.655 (phase 3).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Diack_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,35 +30,35 @@ Diack C; Avery RL; Cheung CMG; Csaky KG; Gibiansky L; Jaminion F; Gibiansky E; S
   ·  DOI: [10.1167/tvst.13.11.13](https://doi.org/10.1167/tvst.13.11.13)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| kout (1/day) — Estimate | `Q328` · not captured | 4.15 | not captured | not captured | exact (not captured) | tbl1:row1:col2 |
-| kout (1/day) — % RSE | `Q328` · not captured | 8.42 | not captured | not captured | exact (not captured) | tbl1:row1:col3 |
-| kout (1/day) — 95% CI | `Q328` · not captured | 3.46 | not captured | not captured | exact (not captured) | tbl1:row1:col4 |
-| EC50 (µg/mL) — Estimate | `Q321` · not captured | 2.59 | µg/mL | not captured | exact (not captured) | tbl1:row4:col2 |
-| EC50 (µg/mL) — % RSE | `Q321` · not captured | 3.36 | µg/mL | not captured | exact (not captured) | tbl1:row4:col3 |
-| EC50 (µg/mL) — 95% CI | `Q321` · not captured | 2.42 | µg/mL | not captured | exact (not captured) | tbl1:row4:col4 |
-| HillPhase 2 — Estimate | `Q325` · not captured | 1.11 | not captured | not captured | llm (not captured) | tbl1:row5:col2 |
-| HillPhase 2 — % RSE | `Q100` · not captured | 1.33 | not captured | not captured | llm (not captured) | tbl1:row5:col3 |
-| HillPhase 2 — 95% CI | `Q325` · not captured | 1.08 | not captured | not captured | llm (not captured) | tbl1:row5:col4 |
-| HillPhase 3 — Estimate | `Q325` · not captured | 0.655 | not captured | not captured | llm (not captured) | tbl1:row6:col2 |
-| HillPhase 3 — % RSE | `Q100` · not captured | 1.07 | not captured | not captured | llm (not captured) | tbl1:row6:col3 |
-| HillPhase 3 — 95% CI | `Q325` · not captured | 0.641 | not captured | not captured | llm (not captured) | tbl1:row6:col4 |
-| EMAX — Estimate | `Q320` · not captured | 0.987 | not captured | not captured | exact (not captured) | tbl1:row7:col2 |
-| EMAX — % RSE | `Q320` · not captured | 0.0117 | not captured | not captured | exact (not captured) | tbl1:row7:col3 |
-| EMAX — 95% CI | `Q320` · not captured | 0.987 | not captured | not captured | exact (not captured) | tbl1:row7:col4 |
-| σVEGF-A = ωBASE,observed — Estimate | `Q315` · not captured | 0.401 | not captured | not captured | llm (not captured) | tbl1:row8:col2 |
-| σVEGF-A = ωBASE,observed — % RSE | `Q315` · not captured | 1.19 | not captured | not captured | llm (not captured) | tbl1:row8:col3 |
-| σVEGF-A = ωBASE,observed — 95% CI | `Q315` · not captured | 0.391 | not captured | not captured | llm (not captured) | tbl1:row8:col4 |
-| HillBASE — Estimate | `Q100` · not captured | 0.235 | not captured | not captured | llm (not captured) | tbl1:row9:col2 |
-| HillBASE — % RSE | `Q100` · not captured | 2.08 | not captured | not captured | llm (not captured) | tbl1:row9:col3 |
-| HillBASE — 95% CI | `Q325` · not captured | 0.225 | not captured | not captured | llm (not captured) | tbl1:row9:col4 |
-| ω2BASE,missing — Estimate | `Q312` · not captured | 0.411 | not captured | not captured | llm (not captured) | tbl1:row10:col2 |
-| ω2BASE,missing — % RSE | `Q312` · not captured | 19 | not captured | not captured | llm (not captured) | tbl1:row10:col3 |
-| ω2BASE,missing — 95% CI | `Q312` · not captured | 0.258 | not captured | not captured | llm (not captured) | tbl1:row10:col4 |
-| ω2EC50 — Estimate | `Q321` · not captured | 1.1 | µg/mL | not captured | llm (not captured) | tbl1:row12:col2 |
-| ω2EC50 — % RSE | `Q321` · not captured | 4.15 | µg/mL | not captured | llm (not captured) | tbl1:row12:col3 |
-| ω2EC50 — 95% CI | `Q321` · not captured | 1.01 | µg/mL | not captured | llm (not captured) | tbl1:row12:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | kout (1/day) — Estimate | `Q328` · not captured | 4.15 | not captured | not captured | exact (not captured) | tbl1:row1:col2 |
+| PD (effect) | kout (1/day) — % RSE | `Q328` · not captured | 8.42 | not captured | not captured | exact (not captured) | tbl1:row1:col3 |
+| PD (effect) | kout (1/day) — 95% CI | `Q328` · not captured | 3.46 | not captured | not captured | exact (not captured) | tbl1:row1:col4 |
+| PD (effect) | EC50 (µg/mL) — Estimate | `Q321` · not captured | 2.59 | µg/mL | not captured | exact (not captured) | tbl1:row4:col2 |
+| PD (effect) | EC50 (µg/mL) — % RSE | `Q321` · not captured | 3.36 | µg/mL | not captured | exact (not captured) | tbl1:row4:col3 |
+| PD (effect) | EC50 (µg/mL) — 95% CI | `Q321` · not captured | 2.42 | µg/mL | not captured | exact (not captured) | tbl1:row4:col4 |
+| PD (effect) | HillPhase 2 — Estimate | `Q325` · not captured | 1.11 | not captured | not captured | llm (not captured) | tbl1:row5:col2 |
+| — | HillPhase 2 — % RSE | `Q100` · not captured | 1.33 | not captured | not captured | llm (not captured) | tbl1:row5:col3 |
+| PD (effect) | HillPhase 2 — 95% CI | `Q325` · not captured | 1.08 | not captured | not captured | llm (not captured) | tbl1:row5:col4 |
+| PD (effect) | HillPhase 3 — Estimate | `Q325` · not captured | 0.655 | not captured | not captured | llm (not captured) | tbl1:row6:col2 |
+| — | HillPhase 3 — % RSE | `Q100` · not captured | 1.07 | not captured | not captured | llm (not captured) | tbl1:row6:col3 |
+| PD (effect) | HillPhase 3 — 95% CI | `Q325` · not captured | 0.641 | not captured | not captured | llm (not captured) | tbl1:row6:col4 |
+| PD (effect) | EMAX — Estimate | `Q320` · not captured | 0.987 | not captured | not captured | exact (not captured) | tbl1:row7:col2 |
+| PD (effect) | EMAX — % RSE | `Q320` · not captured | 0.0117 | not captured | not captured | exact (not captured) | tbl1:row7:col3 |
+| PD (effect) | EMAX — 95% CI | `Q320` · not captured | 0.987 | not captured | not captured | exact (not captured) | tbl1:row7:col4 |
+| variability | σVEGF-A = ωBASE,observed — Estimate | `Q315` · not captured | 0.401 | not captured | not captured | llm (not captured) | tbl1:row8:col2 |
+| variability | σVEGF-A = ωBASE,observed — % RSE | `Q315` · not captured | 1.19 | not captured | not captured | llm (not captured) | tbl1:row8:col3 |
+| variability | σVEGF-A = ωBASE,observed — 95% CI | `Q315` · not captured | 0.391 | not captured | not captured | llm (not captured) | tbl1:row8:col4 |
+| — | HillBASE — Estimate | `Q100` · not captured | 0.235 | not captured | not captured | llm (not captured) | tbl1:row9:col2 |
+| — | HillBASE — % RSE | `Q100` · not captured | 2.08 | not captured | not captured | llm (not captured) | tbl1:row9:col3 |
+| PD (effect) | HillBASE — 95% CI | `Q325` · not captured | 0.225 | not captured | not captured | llm (not captured) | tbl1:row9:col4 |
+| variability | ω2BASE,missing — Estimate | `Q312` · not captured | 0.411 | not captured | not captured | llm (not captured) | tbl1:row10:col2 |
+| variability | ω2BASE,missing — % RSE | `Q312` · not captured | 19 | not captured | not captured | llm (not captured) | tbl1:row10:col3 |
+| variability | ω2BASE,missing — 95% CI | `Q312` · not captured | 0.258 | not captured | not captured | llm (not captured) | tbl1:row10:col4 |
+| PD (effect) | ω2EC50 — Estimate | `Q321` · not captured | 1.1 | µg/mL | not captured | llm (not captured) | tbl1:row12:col2 |
+| PD (effect) | ω2EC50 — % RSE | `Q321` · not captured | 4.15 | µg/mL | not captured | llm (not captured) | tbl1:row12:col3 |
+| PD (effect) | ω2EC50 — 95% CI | `Q321` · not captured | 1.01 | µg/mL | not captured | llm (not captured) | tbl1:row12:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

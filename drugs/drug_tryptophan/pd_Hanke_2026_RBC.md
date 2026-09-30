@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Iclepertin drives red blood cell count (in 10^12/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Iclepertin exposure (AUC, nmol·h/L) inhibits hemoglobin synthesis via GlyT1 inhibition, modeled as a proportional Emax-type inhibitory effect on the MCH production rate (Kin_MCH), with the effect propagated through two 4-transit-compartment chains (MCH and RBC, shared first-order transfer rate Ktr = 4/RBC lifespan) driving RBC count (10^12/L); RBC production is additionally stimulated by a hemoglobin-decrease feedback (power function on Kin_RBC). The paper does not report numerical values for Emax, AUC50, Kin_MCH, Kin_RBC, or the RBC lifespan in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanke_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

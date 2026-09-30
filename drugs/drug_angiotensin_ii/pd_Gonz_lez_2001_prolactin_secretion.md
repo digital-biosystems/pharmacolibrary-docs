@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in PRL) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In rat anterior pituitary cells, angiotensin II (AT1 receptor agonist) stimulates prolactin (PRL) secretion via mobilization of intracellular Ca2+; the paper does not report a formal PD model (no Imax/IC50/EC50/kin/kout/ke0 for the PRL response). Desensitization of the AT1 response was concentration-related with EC50 1.1 nM: a 1-min exposure to 10^-7 M ANG II left 66.8 ± 2.1% of the Ca2+ response, with only partial recovery (77.6 ± 2.4%) even 4 h after agonist removal.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `González_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

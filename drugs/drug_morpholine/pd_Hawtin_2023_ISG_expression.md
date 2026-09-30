@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in normalized): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MHV370 (morpholine) concentrations inhibit ISG expression (normalized, averaged 2−ΔΔCt across ISG transcripts) by blocking TLR7 signaling; the paper does not state an explicit Emax/IC50 for the ISG endpoint itself, though in a TLR7-driven reporter assay MHV370 inhibited CL307- and R848-driven activity with IC50 of 15 ± 10 nM and 7 ± 0.1 nM, respectively, and 0.3 μM completely blocked immune-complex-driven ISG expression in PBMCs.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

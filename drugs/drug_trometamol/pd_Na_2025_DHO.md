@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** HOSU-53 drives dihydroorotate (in unknown): indirect response — drug stimulates the production of dihydroorotate.
+
+**Model:** No model was generated from this record.
+
+> HOSU-53 plasma concentrations inhibit the degradation (Kout) of its substrate dihydroorotate (DHO) in an indirect turnover model (inhibition of loss, since HOSU-53 inhibits DHODH-mediated conversion of DHO to orotate), with IC50 0.1 μmol/L, gamma 1.9, Kout 52 /h, and baseline R0 0.06 μmol/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Na_2025`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`
@@ -20,48 +30,48 @@ Na JY; Hai M; Kim K; Vibhute SM; Bennett CE; Coss CC; Phelps MA et al. (2025). P
   ·  DOI: [10.3390/pharmaceutics17040412](https://doi.org/10.3390/pharmaceutics17040412)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| F (%) — Model Estimates(RSE%) | `Q40` · not captured | 0.67 | RSE% | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col1 |
-| F (%) — Bootstrap Result | `Q40` · not captured | 0.67 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col2 |
-| F (%) — Bootstrap Result | `Q40` · not captured | 0.63 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col3 |
-| Ka (/h) — Model Estimates(RSE%) | `Q49` · not captured | 1.53 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col1 |
-| Ka (/h) — Bootstrap Result | `Q49` · not captured | 1.55 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col2 |
-| Ka (/h) — Bootstrap Result | `Q49` · not captured | 1.28 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col3 |
-| CL/F (mL/h) — Model Estimates(RSE%) | `Q27` · not captured | 150 | mL/h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row4:col1 |
-| V1 (mL) — Model Estimates(RSE%) | `Q63` · not captured | 980 | mL | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row5:col1 |
-| Q (mL/h) — Model Estimates(RSE%) | `Q30` · not captured | 400 | mL/h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row6:col1 |
-| V2 (mL) — Model Estimates(RSE%) | `Q64` · not captured | 490 | mL | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row7:col1 |
-| IIV F — Model Estimates(RSE%) | `Q312` · not captured | 0.24 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col1 |
-| IIV F — Bootstrap Result | `Q312` · not captured | 0.17 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col2 |
-| IIV F — Bootstrap Result | `Q312` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col3 |
-| IIV Ka — Model Estimates(RSE%) | `Q312` · not captured | 0.59 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col1 |
-| IIV Ka — Bootstrap Result | `Q312` · not captured | 0.59 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col2 |
-| IIV Ka — Bootstrap Result | `Q312` · not captured | 0.5 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col3 |
-| IIV CL — Model Estimates(RSE%) | `Q312` · not captured | 0.2 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row10:col1 |
-| Additive residual error (PK) — Model Estimates(RSE%) | `Q317` · not captured | 0.0033 | PK | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row11:col1 |
-| Proportional residual error (PK) — Model Estimates(RSE%) | `Q316` · not captured | 0.45 | PK | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row12:col1 |
-| R0 (μmol/L) — Model Estimates(RSE%) | `Q336` · not captured | 0.06 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col1 |
-| R0 (μmol/L) — Bootstrap Result | `Q336` · not captured | 0.05 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col2 |
-| R0 (μmol/L) — Bootstrap Result | `Q336` · not captured | 0.03 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col3 |
-| Kout (/h) — Model Estimates(RSE%) | `Q328` · not captured | 52 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col1 |
-| Kout (/h) — Bootstrap Result | `Q328` · not captured | 70 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col2 |
-| Kout (/h) — Bootstrap Result | `Q328` · not captured | 44 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col3 |
-| IC50 (μmol/L) — Model Estimates(RSE%) | `Q322` · not captured | 0.1 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col1 |
-| IC50 (μmol/L) — Bootstrap Result | `Q322` · not captured | 0.08 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col2 |
-| IC50 (μmol/L) — Bootstrap Result | `Q322` · not captured | 0.06 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col3 |
-| gamma — Model Estimates(RSE%) | `Q325` · not captured | 1.9 | RSE% | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col1 |
-| gamma — Bootstrap Result | `Q325` · not captured | 1.86 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col2 |
-| gamma — Bootstrap Result | `Q325` · not captured | 1.69 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col3 |
-| IIV Kout — Model Estimates(RSE%) | `Q328` · not captured | 0.42 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col1 |
-| IIV Kout — Bootstrap Result | `Q328` · not captured | 0.4 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col2 |
-| IIV Kout — Bootstrap Result | `Q328` · not captured | 0.28 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col3 |
-| IIV IC50 — Model Estimates(RSE%) | `Q322` · not captured | 0.44 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col1 |
-| IIV IC50 — Bootstrap Result | `Q322` · not captured | 0.42 | unknown | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col2 |
-| IIV IC50 — Bootstrap Result | `Q322` · not captured | 0.3 | unknown | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col3 |
-| Proportional residual error (PD) — Model Estimates(RSE%) | `Q316` · not captured | 0.55 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col1 |
-| Proportional residual error (PD) — Bootstrap Result | `Q316` · not captured | 0.55 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col2 |
-| Proportional residual error (PD) — Bootstrap Result | `Q316` · not captured | 0.52 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | F (%) — Model Estimates(RSE%) | `Q40` · not captured | 0.67 | RSE% | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col1 |
+| PK (driver) | F (%) — Bootstrap Result | `Q40` · not captured | 0.67 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col2 |
+| PK (driver) | F (%) — Bootstrap Result | `Q40` · not captured | 0.63 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row2:col3 |
+| PK (driver) | Ka (/h) — Model Estimates(RSE%) | `Q49` · not captured | 1.53 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col1 |
+| PK (driver) | Ka (/h) — Bootstrap Result | `Q49` · not captured | 1.55 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col2 |
+| PK (driver) | Ka (/h) — Bootstrap Result | `Q49` · not captured | 1.28 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row3:col3 |
+| PK (driver) | CL/F (mL/h) — Model Estimates(RSE%) | `Q27` · not captured | 150 | mL/h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row4:col1 |
+| PK (driver) | V1 (mL) — Model Estimates(RSE%) | `Q63` · not captured | 980 | mL | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row5:col1 |
+| PK (driver) | Q (mL/h) — Model Estimates(RSE%) | `Q30` · not captured | 400 | mL/h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row6:col1 |
+| PK (driver) | V2 (mL) — Model Estimates(RSE%) | `Q64` · not captured | 490 | mL | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row7:col1 |
+| variability | IIV F — Model Estimates(RSE%) | `Q312` · not captured | 0.24 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col1 |
+| variability | IIV F — Bootstrap Result | `Q312` · not captured | 0.17 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col2 |
+| variability | IIV F — Bootstrap Result | `Q312` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row8:col3 |
+| variability | IIV Ka — Model Estimates(RSE%) | `Q312` · not captured | 0.59 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col1 |
+| variability | IIV Ka — Bootstrap Result | `Q312` · not captured | 0.59 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col2 |
+| variability | IIV Ka — Bootstrap Result | `Q312` · not captured | 0.5 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row9:col3 |
+| variability | IIV CL — Model Estimates(RSE%) | `Q312` · not captured | 0.2 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row10:col1 |
+| variability | Additive residual error (PK) — Model Estimates(RSE%) | `Q317` · not captured | 0.0033 | PK | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row11:col1 |
+| variability | Proportional residual error (PK) — Model Estimates(RSE%) | `Q316` · not captured | 0.45 | PK | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row12:col1 |
+| PD (effect) | R0 (μmol/L) — Model Estimates(RSE%) | `Q336` · not captured | 0.06 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col1 |
+| PD (effect) | R0 (μmol/L) — Bootstrap Result | `Q336` · not captured | 0.05 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col2 |
+| PD (effect) | R0 (μmol/L) — Bootstrap Result | `Q336` · not captured | 0.03 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row13:col3 |
+| PD (effect) | Kout (/h) — Model Estimates(RSE%) | `Q328` · not captured | 52 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col1 |
+| PD (effect) | Kout (/h) — Bootstrap Result | `Q328` · not captured | 70 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col2 |
+| PD (effect) | Kout (/h) — Bootstrap Result | `Q328` · not captured | 44 | /h | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row14:col3 |
+| PD (effect) | IC50 (μmol/L) — Model Estimates(RSE%) | `Q322` · not captured | 0.1 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col1 |
+| PD (effect) | IC50 (μmol/L) — Bootstrap Result | `Q322` · not captured | 0.08 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col2 |
+| PD (effect) | IC50 (μmol/L) — Bootstrap Result | `Q322` · not captured | 0.06 | μmol/L | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row15:col3 |
+| PD (effect) | gamma — Model Estimates(RSE%) | `Q325` · not captured | 1.9 | RSE% | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col1 |
+| PD (effect) | gamma — Bootstrap Result | `Q325` · not captured | 1.86 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col2 |
+| PD (effect) | gamma — Bootstrap Result | `Q325` · not captured | 1.69 | not captured | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row16:col3 |
+| PD (effect) | IIV Kout — Model Estimates(RSE%) | `Q328` · not captured | 0.42 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col1 |
+| PD (effect) | IIV Kout — Bootstrap Result | `Q328` · not captured | 0.4 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col2 |
+| PD (effect) | IIV Kout — Bootstrap Result | `Q328` · not captured | 0.28 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row17:col3 |
+| PD (effect) | IIV IC50 — Model Estimates(RSE%) | `Q322` · not captured | 0.44 | RSE% | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col1 |
+| PD (effect) | IIV IC50 — Bootstrap Result | `Q322` · not captured | 0.42 | unknown | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col2 |
+| PD (effect) | IIV IC50 — Bootstrap Result | `Q322` · not captured | 0.3 | unknown | not captured | llm_confirmed (not captured) | pharmaceutics-17-00412-t003:row18:col3 |
+| variability | Proportional residual error (PD) — Model Estimates(RSE%) | `Q316` · not captured | 0.55 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col1 |
+| variability | Proportional residual error (PD) — Bootstrap Result | `Q316` · not captured | 0.55 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col2 |
+| variability | Proportional residual error (PD) — Bootstrap Result | `Q316` · not captured | 0.52 | PD | not captured | exact (not captured) | pharmaceutics-17-00412-t003:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

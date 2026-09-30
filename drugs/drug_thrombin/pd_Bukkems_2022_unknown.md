@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Factor VIII drives normalized plasmin peak height (in % of NPP): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Factor VIII activity (IU/dL) acts on normalized plasmin peak height (% of NPP) via an inhibitory sigmoid Emax (Imax) function, as plasmin peak height decreased slightly after FVIII administration; the paper does not state a production/elimination mechanism beyond this direct effect. The EC50 was 593 IU/dL (record lists 614 IU/dL for the final model), with mild haemophilia Emax at 70.9% of severe; no kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bukkems_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,24 +30,24 @@ Bukkems LH; Valke LLFG; Barteling W; Laros-van Gorkom BAP; Blijlevens NMA; Cnoss
   ·  DOI: [10.1111/bcp.15185](https://doi.org/10.1111/bcp.15185)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V1 (dL) — Final model | `Q63` · not captured | 27.7 | dL | not captured | exact (not captured) | bcp15185-tbl-0002:row3:col1 |
-| V2 (dL) — Final model | `Q64` · not captured | 5.63 | dL | not captured | exact (not captured) | bcp15185-tbl-0002:row4:col1 |
-| CL (dL/h) — Final model | `Q22` · not captured | 1.69 | dL/h | not captured | exact (not captured) | bcp15185-tbl-0002:row5:col1 |
-| Q (dL/h) — Final model | `Q30` · not captured | 2.27 | dL/h | not captured | exact (not captured) | bcp15185-tbl-0002:row6:col1 |
-| Correlation IIV V1 and CL (%) — Final model | `Q312` · not captured | 43.6 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row8:col2 |
-| Proportional error OSA (%) — Final model | `Q316` · not captured | 11.2 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row16:col1 |
-| Additive error OSA (IU/dL) — Final model | `Q317` · not captured | 4.15 | IU/dL | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row17:col1 |
-| Proportional error CSA (%) — Final model | `Q316` · not captured | 10.5 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row18:col1 |
-| Additive error CSA (IU/dL) — Final model | `Q317` · not captured | 4.28 | IU/dL | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row19:col1 |
-| EC50 (IU/dL) — Final model | `Q321` · not captured | 50.1 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row23:col1 |
-| Additive error (% of NPP) — Final model | `Q317` · not captured | 11.2 | % of NPP | not captured | exact (not captured) | bcp15185-tbl-0002:row26:col1 |
-| EC50 (IU/dL) — Final model | `Q321` · not captured | 13.9 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row29:col1 |
-| Mild haemophilia on E max (% of severe) — Final model | `Q320` · not captured | 70.9 | % of severe | not captured | llm (not captured) | bcp15185-tbl-0002:row31:col1 |
-| Additive error (% of NPP) — Final model | `Q317` · not captured | 8.62 | % of NPP | not captured | exact (not captured) | bcp15185-tbl-0002:row34:col1 |
-| EC50 (IU/dL) — Final model | `Q321` · not captured | 614 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row37:col1 |
-| Proportional error (%) — Final model | `Q316` · not captured | 26.8 | not captured | not captured | exact (not captured) | bcp15185-tbl-0002:row40:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V1 (dL) — Final model | `Q63` · not captured | 27.7 | dL | not captured | exact (not captured) | bcp15185-tbl-0002:row3:col1 |
+| PK (driver) | V2 (dL) — Final model | `Q64` · not captured | 5.63 | dL | not captured | exact (not captured) | bcp15185-tbl-0002:row4:col1 |
+| PK (driver) | CL (dL/h) — Final model | `Q22` · not captured | 1.69 | dL/h | not captured | exact (not captured) | bcp15185-tbl-0002:row5:col1 |
+| PK (driver) | Q (dL/h) — Final model | `Q30` · not captured | 2.27 | dL/h | not captured | exact (not captured) | bcp15185-tbl-0002:row6:col1 |
+| variability | Correlation IIV V1 and CL (%) — Final model | `Q312` · not captured | 43.6 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row8:col2 |
+| variability | Proportional error OSA (%) — Final model | `Q316` · not captured | 11.2 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row16:col1 |
+| variability | Additive error OSA (IU/dL) — Final model | `Q317` · not captured | 4.15 | IU/dL | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row17:col1 |
+| variability | Proportional error CSA (%) — Final model | `Q316` · not captured | 10.5 | not captured | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row18:col1 |
+| variability | Additive error CSA (IU/dL) — Final model | `Q317` · not captured | 4.28 | IU/dL | not captured | llm_confirmed (not captured) | bcp15185-tbl-0002:row19:col1 |
+| PD (effect) | EC50 (IU/dL) — Final model | `Q321` · not captured | 50.1 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row23:col1 |
+| variability | Additive error (% of NPP) — Final model | `Q317` · not captured | 11.2 | % of NPP | not captured | exact (not captured) | bcp15185-tbl-0002:row26:col1 |
+| PD (effect) | EC50 (IU/dL) — Final model | `Q321` · not captured | 13.9 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row29:col1 |
+| PD (effect) | Mild haemophilia on E max (% of severe) — Final model | `Q320` · not captured | 70.9 | % of severe | not captured | llm (not captured) | bcp15185-tbl-0002:row31:col1 |
+| variability | Additive error (% of NPP) — Final model | `Q317` · not captured | 8.62 | % of NPP | not captured | exact (not captured) | bcp15185-tbl-0002:row34:col1 |
+| PD (effect) | EC50 (IU/dL) — Final model | `Q321` · not captured | 614 | IU/dL | not captured | exact (not captured) | bcp15185-tbl-0002:row37:col1 |
+| variability | Proportional error (%) — Final model | `Q316` · not captured | 26.8 | not captured | not captured | exact (not captured) | bcp15185-tbl-0002:row40:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

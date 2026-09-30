@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Free cytoplasmic Ca (measured concentrations) drives cell capacitance (in pF): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Free cytoplasmic Ca (mM) stimulates cell capacitance (pF) in BHK cells expressing NCX1 via a sigmoid Emax relationship, with half-maximal response at 0.12 mM Ca and Hill coefficient ≈2; responses (25–100% increase) occur within 5 s and return to baseline in 1–3 min. The paper does not state a formal Emax/IC50 parameterization beyond these values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yaradanakul_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

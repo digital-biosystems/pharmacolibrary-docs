@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **No value for rifabutin's clearance, volume of distribution, absorption lag time, central→peripheral rate constant and peripheral→central rate constant.**
@@ -41,8 +43,8 @@ Gatti G; Papa P; Torre D; Andreoni M; Poggio A; Bassetti M; et al. et al. (1998)
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | absorption rate constant | `Q49` · kabs | 0.201 | /h | 5.583333333333334e-05 | [1] / [h] | not captured | exact (1.0) | Gatti_1998:abstract | — | not captured |
-| clearance/bioavailability (CL/F | `Q27` · CL/F | 60.9 | liters/h | not captured | not captured | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
-| volume of the central compartment/bioavailability | `Q61` · V | 231 | liters | not captured | not captured | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
+| clearance/bioavailability (CL/F | `Q27` · CL/F | 60.9 | liters/h | 1.6916666666666667e-05 | L/h | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
+| volume of the central compartment/bioavailability | `Q61` · V | 231 | liters | 0.231 | L | not captured | llm_confirmed (0.6) | Gatti_1998:abstract | — | not captured |
 | intercompartmental clearance | `Q30` · Q | 60.3 | liters/h | 1.675e-05 | [l] / [h] | not captured | exact (1.0) | Gatti_1998:abstract | — | not captured |
 | volume of the peripheral compartment/bioavailability (Vp/F | `Q82` · V2/F | 1 | 050 liters | not captured | not captured | not captured | llm_corrected (0.6) | Gatti_1998:abstract | — | not captured |
 
@@ -59,6 +61,8 @@ Gatti G; Papa P; Torre D; Andreoni M; Poggio A; Bassetti M; et al. et al. (1998)
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- unit re-normalised: CL/F 'liters/h' now converts (value unchanged)
+- unit re-normalised: V 'liters' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Gatti_1998_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model

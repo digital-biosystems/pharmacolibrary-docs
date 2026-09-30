@@ -34,6 +34,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | brain | `MAOA` inhibitor, `MAOB` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor, `MAOA` inhibitor | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives APD 90 (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan (TEL) concentration-dependently prolongs APD 90 in HL-1 cells (3 μM raised APD 90 from 96 ± 5 ms to 157 ± 12 ms; 10 μM further prolonged APD and induced early afterdepolarizations), an effect attributed to stimulation of late I_Na (and attenuation by KCNH2 siRNA), though the paper does not state the detailed mechanism of this gain-of-function action. The excerpts provide no quantitative PD parameters (Emax, EC50, gamma, kin, kout, ke0) for the APD 90 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

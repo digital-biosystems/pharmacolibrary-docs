@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Carlsson_2021::estimate) drives proportion of individuals with vomiting (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanism or a sigmoid-Emax parameter set for vomiting; it only reports that the proportion of individuals with any vomiting increased with liraglutide exposure (nM), a relationship that was not statistically significant in the combined analysis (p = 0.26) or Trial 1 (p = 0.52) but was significant in Trials 2 and 3 (p = 0.03 and 0.04), suggesting the relationship is driven by exposures up to and including the 1.8 mg dose and levels off at higher doses. No IC50, EC50, Emax, or rate constants are given for vomiting, and no exposure–response relationship was seen for moderate/severe vomiting (p = 0.85).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

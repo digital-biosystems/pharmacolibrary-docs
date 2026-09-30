@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MitoQNO11 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MitoQNO11 (a mitochondria-targeted quinolone) inhibits cytochrome bc1 complex (Qi site) activity in a dose-dependent manner, depressing respiration and ATP production in fungi; EC50 values against P. capsici and S. sclerotoria are 7.42 and 4.43 μmol/L respectively, with other reported EC50s including boscalid 0.83 μmol/L, kresoxim-methyl 71.41 μmol/L, and pyrimorph 3.77 μmol/L. The paper does not state a formal PD model (no Imax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Wang J; Liu X; Yin F; Xu Y; Fu B; Li J; et al. et al. (2023). Journal of fungi (
   ·  DOI: [10.3390/jof9060685](https://doi.org/10.3390/jof9060685)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 7.42 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row0:col4 |
-| EC50 (μmol/L) — pyrimorph | `Q321` · not captured | 3.77 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row0:col7 |
-| EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 4.43 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col4 |
-| EC50 (μmol/L) — boscalid | `Q321` · not captured | 0.83 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col5 |
-| EC50 (μmol/L) — kresoxim-methyl | `Q321` · not captured | 71.41 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col6 |
-| EC50 (μmol/L) — pyrimorph | `Q321` · not captured | 74.33 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col7 |
-| EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 21.73 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row2:col4 |
-| EC50 (μmol/L) — boscalid | `Q321` · not captured | 6.79 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row2:col5 |
-| EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 51.42 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row3:col4 |
-| EC50 (μmol/L) — kresoxim-methyl | `Q321` · not captured | 51.56 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row3:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 7.42 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row0:col4 |
+| PD (effect) | EC50 (μmol/L) — pyrimorph | `Q321` · not captured | 3.77 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row0:col7 |
+| PD (effect) | EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 4.43 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col4 |
+| PD (effect) | EC50 (μmol/L) — boscalid | `Q321` · not captured | 0.83 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col5 |
+| PD (effect) | EC50 (μmol/L) — kresoxim-methyl | `Q321` · not captured | 71.41 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col6 |
+| PD (effect) | EC50 (μmol/L) — pyrimorph | `Q321` · not captured | 74.33 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row1:col7 |
+| PD (effect) | EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 21.73 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row2:col4 |
+| PD (effect) | EC50 (μmol/L) — boscalid | `Q321` · not captured | 6.79 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row2:col5 |
+| PD (effect) | EC50 (μmol/L) — mitoQNO11 | `Q321` · not captured | 51.42 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row3:col4 |
+| PD (effect) | EC50 (μmol/L) — kresoxim-methyl | `Q321` · not captured | 51.56 | μmol/L | not captured | exact (not captured) | jof-09-00685-t002:row3:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

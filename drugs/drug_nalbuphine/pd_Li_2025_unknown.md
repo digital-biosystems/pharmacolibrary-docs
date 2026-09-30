@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Propofol drives response to cervical dilation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nalbuphine (0.15 or 0.2 mg·kg−1 IV) reduces the effect-site propofol concentration (Ceprop) needed to suppress the response to cervical dilation in 50% of patients (EC50), determined by up-down sequential (Dixon) analysis with probit regression as backup; the paper does not describe a pharmacodynamic mechanism (e.g., no Imax/IC50/kin/kout/ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Li SX; Zhou YH; Yang YJ; Wang Q; Lei W; Shen JJ; et al. et al. (2025). BMC anest
   ·  DOI: [10.1186/s12871-025-03208-6](https://doi.org/10.1186/s12871-025-03208-6)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50a — P-value | `Q321` · not captured | 0.002 | μg·ml−1 | not captured | llm (not captured) | Tab2:row1:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50a — P-value | `Q321` · not captured | 0.002 | μg·ml−1 | not captured | llm (not captured) | Tab2:row1:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

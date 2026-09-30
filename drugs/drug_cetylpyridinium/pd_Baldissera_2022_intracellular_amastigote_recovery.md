@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Imidazolium salts (measured concentrations) drives name (in count) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of imidazolium salts and C16PyrCl (0.1–100 µM, 48 h incubation) act on Leishmania-infected macrophages, reducing intracellular amastigote recovery in a concentration-dependent inhibitory manner; the paper does not state a specific PD mechanism (e.g., Emax/kin-kout) for this response. For cetylpyridinium (C16PyrCl) the record lists a selectivity index of 1.6 (95% CI), and the paper reports a promastigote IC50 of 4 µM against L. amazonensis, but no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given for the intracellular amastigote recovery endpoint itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baldissera_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Baldissera FG; Fazolo T; da Silva MB; de Santana Filho PC; da Silva VD; Rivillo 
   ·  DOI: [10.3389/fimmu.2022.1096312](https://doi.org/10.3389/fimmu.2022.1096312)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SI g — C10MImMeS | `Q358` · not captured | 6.6 | CI 95% | not captured | llm (not captured) | T1:row5:col2 |
-| SI g — C16MImPF6 | `Q358` · not captured | 2.4 | CI 95% | not captured | llm (not captured) | T1:row5:col3 |
-| SI g — C16MImBr | `Q358` · not captured | 2.7 | CI 95% | not captured | llm (not captured) | T1:row5:col4 |
-| SI g — C16M2ImCl | `Q358` · not captured | 4.8 | CI 95% | not captured | llm (not captured) | T1:row5:col5 |
-| SI g — C16M4ImCl | `Q358` · not captured | 10 | CI 95% | not captured | llm (not captured) | T1:row5:col6 |
-| SI g — (C10)2MImCl | `Q358` · not captured | 8.6 | CI 95% | not captured | llm (not captured) | T1:row5:col7 |
-| SI g — C16PyrCl | `Q358` · not captured | 1.6 | CI 95% | not captured | llm (not captured) | T1:row5:col9 |
-| SI h — C16MImPF6 | `Q358` · not captured | 3.6 | CI 95% | not captured | llm (not captured) | T1:row6:col3 |
-| SI h — C16MImBr | `Q358` · not captured | 3.8 | CI 95% | not captured | llm (not captured) | T1:row6:col4 |
-| SI h — C16M2ImCl | `Q358` · not captured | 5.3 | CI 95% | not captured | llm (not captured) | T1:row6:col5 |
-| SI h — C16M4ImCl | `Q358` · not captured | 8.7 | CI 95% | not captured | llm (not captured) | T1:row6:col6 |
-| SI h — (C10)2MImCl | `Q358` · not captured | 11 | CI 95% | not captured | llm (not captured) | T1:row6:col7 |
-| SI i — (C10)2MImCl | `Q358` · not captured | 82 | CI 95% | not captured | llm (not captured) | T1:row7:col7 |
-| SI j — (C10)2MImCl | `Q358` · not captured | 105 | CI 95% | not captured | llm (not captured) | T1:row8:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | SI g — C10MImMeS | `Q358` · not captured | 6.6 | CI 95% | not captured | llm (not captured) | T1:row5:col2 |
+| PK (driver) | SI g — C16MImPF6 | `Q358` · not captured | 2.4 | CI 95% | not captured | llm (not captured) | T1:row5:col3 |
+| PK (driver) | SI g — C16MImBr | `Q358` · not captured | 2.7 | CI 95% | not captured | llm (not captured) | T1:row5:col4 |
+| PK (driver) | SI g — C16M2ImCl | `Q358` · not captured | 4.8 | CI 95% | not captured | llm (not captured) | T1:row5:col5 |
+| PK (driver) | SI g — C16M4ImCl | `Q358` · not captured | 10 | CI 95% | not captured | llm (not captured) | T1:row5:col6 |
+| PK (driver) | SI g — (C10)2MImCl | `Q358` · not captured | 8.6 | CI 95% | not captured | llm (not captured) | T1:row5:col7 |
+| PK (driver) | SI g — C16PyrCl | `Q358` · not captured | 1.6 | CI 95% | not captured | llm (not captured) | T1:row5:col9 |
+| PK (driver) | SI h — C16MImPF6 | `Q358` · not captured | 3.6 | CI 95% | not captured | llm (not captured) | T1:row6:col3 |
+| PK (driver) | SI h — C16MImBr | `Q358` · not captured | 3.8 | CI 95% | not captured | llm (not captured) | T1:row6:col4 |
+| PK (driver) | SI h — C16M2ImCl | `Q358` · not captured | 5.3 | CI 95% | not captured | llm (not captured) | T1:row6:col5 |
+| PK (driver) | SI h — C16M4ImCl | `Q358` · not captured | 8.7 | CI 95% | not captured | llm (not captured) | T1:row6:col6 |
+| PK (driver) | SI h — (C10)2MImCl | `Q358` · not captured | 11 | CI 95% | not captured | llm (not captured) | T1:row6:col7 |
+| PK (driver) | SI i — (C10)2MImCl | `Q358` · not captured | 82 | CI 95% | not captured | llm (not captured) | T1:row7:col7 |
+| PK (driver) | SI j — (C10)2MImCl | `Q358` · not captured | 105 | CI 95% | not captured | llm (not captured) | T1:row8:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

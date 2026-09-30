@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Penicillin drives name (in count/ml) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Penicillin (units/ml) drives formation of protoplast-like spherical bodies (count/ml) in Clostridium botulinum cultures containing 8% polyethylene glycol (macrogol) and lysozyme; the paper gives only a dose-response relationship (maximal yield at 10,000 units/ml penicillin alone; with 100 µg lysozyme/ml, 1,250–2,500 units penicillin yields &gt;1.0×10^8 spheres/ml) and does not state a pharmacodynamic model, mechanism, or potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brown_1970`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

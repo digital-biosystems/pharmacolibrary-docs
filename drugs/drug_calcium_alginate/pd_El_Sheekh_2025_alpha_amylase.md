@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alginate (measured concentrations) drives Alpha-amylase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alginate extracts (Hormophysa cuneiformis, HA; Turbinaria ornata, TA) directly inhibit α-amylase enzyme activity in vitro in a concentration-dependent manner (test range 0.25–500 µg/mL), with IC50 values of 45.14 µg/mL (TA) and 341.48 µg/mL (HA), both less potent than acarbose (IC50 = 6.52 µg/mL). No kinetic mechanism (e.g., kin/kout or turnover model) is given; inhibition is reported only as IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `El-Sheekh_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

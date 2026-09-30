@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives plasma urate concentration (in unknown) (the model form was not identified).
 
-> Steady-state plasma oxypurinol concentrations inhibit plasma urate concentration via a sigmoid Emax model, with a C50 of 36.58 ± 8.36 mM. The paper does not specify the underlying mechanism (e.g., production vs. elimination) or rate constants (kin, kout, ke0).
+**Model:** No model was generated from this record.
+
+> Allopurinol (via its metabolite oxypurinol, an inhibitor of xanthine oxidase and thus of urate production) lowers plasma urate concentration; the plasma oxypurinol concentration vs plasma urate relationship was fitted to an inhibition sigmoid Emax model with C50 36.58±8.36 mM (paper does not state Imax/kin/kout/ke0 for this endpoint).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Graham_1996`
 - **model family:** `unknown`

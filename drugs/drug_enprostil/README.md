@@ -20,10 +20,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Eglen_1989](drugs/drug_enprostil/pd_Eglen_1989_unknown.md) | Eglen RM et al., Characterization of the prostanoid rece…, British journal of pharmaco… (1989) | [10.1111/j.1476-5381.1989.tb12682.x](https://doi.org/10.1111/j.1476-5381.1989.tb12682.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hussein_1993](drugs/drug_enprostil/pd_Hussein_1993_unknown.md) | Hussein Z et al., Age-related differences in the pharmaco…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb00386.x](https://doi.org/10.1111/j.1365-2125.1993.tb00386.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Eglen_1989_unknown](drugs/drug_enprostil/pd_Eglen_1989_unknown.md) | guinea-pig aorta contraction ← enprostil · stimulation effect | — | Eglen RM et al., Characterization of the prostanoid rece…, British journal of pharmaco… (1989) | [10.1111/j.1476-5381.1989.tb12682.x](https://doi.org/10.1111/j.1476-5381.1989.tb12682.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Hussein_1993_unknown](drugs/drug_enprostil/pd_Hussein_1993_unknown.md) | gastric acid secretion ← lansoprazole · direct sigmoid Emax (Hill) effect | — | Hussein Z et al., Age-related differences in the pharmaco…, British journal of clinical… (1993) | [10.1111/j.1365-2125.1993.tb00386.x](https://doi.org/10.1111/j.1365-2125.1993.tb00386.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

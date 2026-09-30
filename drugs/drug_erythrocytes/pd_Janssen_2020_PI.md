@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bortezomib (measured concentrations) drives 20S proteasome activity (in pmol AMC/s/mg protein): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bortezomib plasma concentration (ng/mL) directly inhibits 20S proteasome activity (PI, pmol AMC/s/mg protein) via an inhibitory sigmoidal Emax model (PI = PI0 × (1 − Emax·C^Hill/(EC50^Hill + C^Hill))), with a Hill parameter significantly improving fit; an effect-compartment model gave a large rate estimate and no fit improvement, confirming a direct effect. The paper does not state the numerical values of Emax, EC50, or Hill in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Janssen_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

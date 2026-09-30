@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tetrahydroacridine derivatives (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tetrahydroacridine derivatives were tested in vitro against hyaluronidase activity (turbidimetric % inhibition assay); the paper does not state a mechanistic PD model, only IC50 values. All six compounds inhibited hyaluronidase with IC50 ranging from 52.27 to 272.31 μM, compound 4 being most potent (IC50 52.27 μM, SD ±0.58), slightly more potent than the positive control heparin (IC50 56.41 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kłosiński_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Kłosiński K; Girek M; Czarnecka K; Pasieka Z; Skibiński R; Szymański P et al
   ·  DOI: [10.1007/s13577-020-00376-0](https://doi.org/10.1007/s13577-020-00376-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 [µM] against A549 — 1 | `Q322` · not captured | 106.37 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col2 |
-| IC50 [µM] against A549 — 2 | `Q322` · not captured | 148.20 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
-| IC50 [µM] against A549 — 3 | `Q322` · not captured | 183.26 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
-| IC50 [µM] against A549 — 5 | `Q322` · not captured | 117.76 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col6 |
-| IC50 [µM] against A549 — C1 | `Q322` · not captured | 451.47 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col8 |
-| IC50 [µM] against HT29 — 1 | `Q322` · not captured | 68.41 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col2 |
-| IC50 [µM] against HT29 — 2 | `Q322` · not captured | 50.20 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
-| IC50 [µM] against HT29 — 3 | `Q322` · not captured | 22.98 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
-| IC50 [µM] against HT29 — 5 | `Q322` · not captured | 44.02 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col6 |
-| IC50 [µM] against HT29 — C1 | `Q322` · not captured | 654.03 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col8 |
-| IC50 [µM] against HT29 — C2 | `Q322` · not captured | 1626.85 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col9 |
-| IC50 [µM] against EA.hy9263 — 4 | `Q322` · not captured | 52.55 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
-| IC50 [µM] against EA.hy9263 — 6 | `Q322` · not captured | 50.88 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col7 |
-| IC50 [µM] against EA.hy9263 — C1 | `Q322` · not captured | 155.19 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 [µM] against A549 — 1 | `Q322` · not captured | 106.37 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col2 |
+| PD (effect) | IC50 [µM] against A549 — 2 | `Q322` · not captured | 148.20 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
+| PD (effect) | IC50 [µM] against A549 — 3 | `Q322` · not captured | 183.26 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
+| PD (effect) | IC50 [µM] against A549 — 5 | `Q322` · not captured | 117.76 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col6 |
+| PD (effect) | IC50 [µM] against A549 — C1 | `Q322` · not captured | 451.47 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col8 |
+| PD (effect) | IC50 [µM] against HT29 — 1 | `Q322` · not captured | 68.41 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col2 |
+| PD (effect) | IC50 [µM] against HT29 — 2 | `Q322` · not captured | 50.20 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
+| PD (effect) | IC50 [µM] against HT29 — 3 | `Q322` · not captured | 22.98 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
+| PD (effect) | IC50 [µM] against HT29 — 5 | `Q322` · not captured | 44.02 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col6 |
+| PD (effect) | IC50 [µM] against HT29 — C1 | `Q322` · not captured | 654.03 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col8 |
+| PD (effect) | IC50 [µM] against HT29 — C2 | `Q322` · not captured | 1626.85 | μM | not captured | llm_confirmed (not captured) | Tab1:row4:col9 |
+| PD (effect) | IC50 [µM] against EA.hy9263 — 4 | `Q322` · not captured | 52.55 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
+| PD (effect) | IC50 [µM] against EA.hy9263 — 6 | `Q322` · not captured | 50.88 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col7 |
+| PD (effect) | IC50 [µM] against EA.hy9263 — C1 | `Q322` · not captured | 155.19 | μM | not captured | llm_confirmed (not captured) | Tab1:row6:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

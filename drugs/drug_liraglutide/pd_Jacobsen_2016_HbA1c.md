@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Overgaard_2016::total) drives HbA1c (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Liraglutide reduces HbA1c (by ~0.8–1.5 % in LEAD trials) via glucose-dependent stimulation of insulin secretion and reduced glucagon levels; the paper describes a dose/exposure–response relationship with maximum HbA1c response at trough plasma concentrations ≥~15 nmol/L (levelling off at 16–22 nmol/L in the Asian trial) and maximum responses at doses ≥1.2 mg, but does not state a formal PD model or parameters (Emax, IC50/EC50, kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jacobsen_2016`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

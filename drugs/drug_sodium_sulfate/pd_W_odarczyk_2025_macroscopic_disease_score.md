@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KR-12-NH2 (measured concentrations) drives name (in score) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking sodium sulfate or KR-12-NH2 concentrations to a macroscopic disease score; the excerpts only report concentration-dependent inhibition of HT-29 colon cancer cell viability (with IC50 values stated to be lower for HT-29 than for healthy CCD 841 CoN cells, but no numeric IC50, Emax, or rate constants given), and no mechanism for this effect is provided.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Włodarczyk_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

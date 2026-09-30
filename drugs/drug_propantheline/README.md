@@ -19,22 +19,22 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:43 | 9:46 | 0/0/1 | 2/1/0 | 0/0/0 | 154,225/20,128 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
+| 2026-09-29 22:11 | 1:35 | 0/0/1 | 2/1/0 | 0/0/0 | 11,705/5,929 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) | 1-compartment (no model) | 2 | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vose_1979_reference](drugs/drug_propantheline/Propantheline_Vose1979_reference.md) | — | 1-compartment (no model) | 2 | Vose CW et al., Pharmacokinetics of propantheline bromi…, British journal of clinical… (1979) | [10.1111/j.1365-2125.1979.tb00902.x](https://doi.org/10.1111/j.1365-2125.1979.tb00902.x) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sadraei_2013](drugs/drug_propantheline/pd_Sadraei_2013_ileum_contraction.md) | Sadraei H et al., Antispasmodic effects of Prangos ferula…, Research in pharmaceutical… (2013) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sadraei_2014](drugs/drug_propantheline/pd_Sadraei_2014_tension_development.md) | Sadraei H et al., Antispasmodic activity of isovanillin a…, Research in pharmaceutical… (2014) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Chiu_2008](drugs/drug_propantheline/pd_Chiu_2008_hair_cell_survival.md) | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Chiu_2008](drugs/drug_propantheline/pd_Chiu_2008_unknown.md) | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sadraei_2013_ileum_contraction](drugs/drug_propantheline/pd_Sadraei_2013_ileum_contraction.md) | name ← osthole · inhibition effect | — | Sadraei H et al., Antispasmodic effects of Prangos ferula…, Research in pharmaceutical… (2013) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Sadraei_2014_tension_development](drugs/drug_propantheline/pd_Sadraei_2014_tension_development.md) | name ← isovanillin · inhibition effect | — | Sadraei H et al., Antispasmodic activity of isovanillin a…, Research in pharmaceutical… (2014) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Chiu_2008_hair_cell_survival](drugs/drug_propantheline/pd_Chiu_2008_hair_cell_survival.md) | name ← unknown · inhibition effect | — | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Chiu_2008_unknown](drugs/drug_propantheline/pd_Chiu_2008_unknown.md) | hair cell survival ← unknown · inhibition effect | — | Chiu LL et al., Using the zebrafish lateral line to scr…, Journal of the Association… (2008) | [10.1007/s10162-008-0118-y](https://doi.org/10.1007/s10162-008-0118-y) |
 
 ## ADME sites
 
@@ -69,7 +69,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Alberts_1995.pdf` | Alberts P, Classification of the presynaptic musca…, The Journal of pharmacology… (1995) | pd | 4 | not captured | [7616431](https://www.ncbi.nlm.nih.gov/pubmed/7616431) | metadata signals extractable PD data (EC50) |
 | `Guay_2003.pdf` | Guay DR, Clinical pharmacokinetics of drugs used…, Clinical pharmacokinetics (2003) | pgx | 8 | [10.2165/00003088-200342140-00004](https://doi.org/10.2165/00003088-200342140-00004) | [14606931](https://www.ncbi.nlm.nih.gov/pubmed/14606931) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 
-<sub>queue written 2026-09-18T09:37:57.040484+00:00</sub>
+<sub>queue written 2026-09-29T22:10:20.667261+00:00</sub>
 
 ## Screened and excluded
 

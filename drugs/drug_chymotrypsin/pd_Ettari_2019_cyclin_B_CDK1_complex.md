@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amide 6 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amide 6 (µM concentrations, no PK model) reduces cyclin B/CDK1 complex levels in MM.1R multiple myeloma cells as part of a cell-cycle arrest effect; the paper does not give a quantitative PD model for this response, only reporting immunoproteasome chymotrypsin-like inhibition (Ki 4.90 µM for β1i, 4.39 µM for β5i) and antiproliferative EC50 of 17.8 µM, with the cyclin/CDK reduction attributed to proteasome inhibition though other mechanisms are not excluded.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

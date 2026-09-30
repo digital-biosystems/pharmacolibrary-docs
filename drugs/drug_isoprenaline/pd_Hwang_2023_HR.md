@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carvedilol (measured concentrations) drives heart rate (in bpm): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Isoproterenol dose increases heart rate via a direct Emax model (E0 60.4 bpm, ED50 0.69 μg, Emax 30.7 bpm, γ fixed to 1), and carvedilol concentration acts as a competitive antagonist of this effect via an inhibitory Emax model with IC50 16.5 ng/mL; no delayed (effect-compartment) component was used because the response was direct and rapid.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hwang_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

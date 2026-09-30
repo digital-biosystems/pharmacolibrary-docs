@@ -24,20 +24,20 @@ Fluvoxamine has been in use in clinical practice since 1983 and has a clinical t
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Strauss_1999_reference](drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md) | 1-compartment, IV | 3 | Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999) | [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007_reference.md) | 1-compartment (no model) | 0 | Geldof (2007) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_2_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007v2_reference.md) | 1-compartment (no model) | 3 | Geldof (2007) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Strauss_1999_reference](drugs/drug_fluvoxamine/Fluvoxamine_Strauss1999_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Strauss WL et al., Characterization of human brain pharmac…, Biological psychiatry (1999) | [10.1016/s0006-3223(98)00324-2](https://doi.org/10.1016/s0006-3223(98)00324-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007_reference.md) | — | 1-compartment (no model) | 0 | Geldof (2007) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Geldof_2007_2_reference](drugs/drug_fluvoxamine/Fluvoxamine_Geldof2007v2_reference.md) | — | 1-compartment (no model) | 3 | Geldof (2007) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Eugene_2021](drugs/drug_fluvoxamine/pd_Eugene_2021_SARS_CoV_2_inhibition.md) | Eugene AR, Fluoxetine pharmacokinetics and tissue…, F1000Research (2021) | [10.12688/f1000research.53275.3](https://doi.org/10.12688/f1000research.53275.3) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Geldof_2008](drugs/drug_fluvoxamine/pd_Geldof_2008_SERT.md) | Geldof (2008) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hong_2015](drugs/drug_fluvoxamine/pd_Hong_2015_Kv.md) | Hong DH et al., The Effects of the Selective Serotonin…, Biological & pharmaceutical… (2015) | [10.1248/bpb.b15-00207](https://doi.org/10.1248/bpb.b15-00207) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lee_2010](drugs/drug_fluvoxamine/pd_Lee_2010_Kv1_5.md) | Lee HM et al., Inhibitory action of fluvoxamine on Kv1…, Biological & pharmaceutical… (2010) | [10.1248/bpb.33.977](https://doi.org/10.1248/bpb.33.977) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Eugene_2021_SARS_CoV_2_inhibition](drugs/drug_fluvoxamine/pd_Eugene_2021_SARS_CoV_2_inhibition.md) | name ← fluoxetine · inhibition effect | — | Eugene AR, Fluoxetine pharmacokinetics and tissue…, F1000Research (2021) | [10.12688/f1000research.53275.3](https://doi.org/10.12688/f1000research.53275.3) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Geldof_2008_SERT](drugs/drug_fluvoxamine/pd_Geldof_2008_SERT.md) | SERT occupancy ← fluvoxamine · direct Emax (saturable) effect | — | Geldof (2008) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hong_2015_Kv](drugs/drug_fluvoxamine/pd_Hong_2015_Kv.md) | Kv current amplitude ← fluvoxamine · direct sigmoid Emax (Hill) effect | — | Hong DH et al., The Effects of the Selective Serotonin…, Biological & pharmaceutical… (2015) | [10.1248/bpb.b15-00207](https://doi.org/10.1248/bpb.b15-00207) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Lee_2010_Kv1_5](drugs/drug_fluvoxamine/pd_Lee_2010_Kv1_5.md) | Kv1.5 whole-cell current ← fluvoxamine · direct sigmoid Emax (Hill) effect | — | Lee HM et al., Inhibitory action of fluvoxamine on Kv1…, Biological & pharmaceutical… (2010) | [10.1248/bpb.33.977](https://doi.org/10.1248/bpb.33.977) |
 
 ## ADME sites
 
@@ -50,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` inhibitor | DrugBank actor |

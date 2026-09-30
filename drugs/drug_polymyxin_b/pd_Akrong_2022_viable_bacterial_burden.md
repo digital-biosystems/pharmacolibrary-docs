@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polymyxin B (measured concentrations) drives name (in CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Polymyxin B concentrations (0.125–128 mg/L) inhibit the growth of viable A. baumannii (CFU/mL) via a bactericidal kill rate K_PMB described by a sigmoidal Emax model (Emax 8.96, EC50 1.46 mg/L, Hill coefficient g 0.656), within a single-population model with adaptive resistance (growth rate Kg 1.62, Bmax 8.5, Kon 0.253, s 0.608); the inoculum effect was captured as an increase of EC50 with starting inoculum.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akrong_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,16 +31,16 @@ Akrong G; Chauzy A; Aranzana-Climent V; Lacroix M; Deroche L; Prouvensier L; et 
   ·  DOI: [10.1128/AAC.01789-21](https://doi.org/10.1128/AAC.01789-21)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kg | `Q358` · not captured | 1.62 | not captured | not captured | llm (not captured) | tab_0:row6:col3 |
-| B max | `Q332` · not captured | 8.5 | not captured | not captured | space_fold (not captured) | tab_0:row7:col3 |
-| E max(0) | `Q320` · not captured | 8.96 | not captured | not captured | space_fold (not captured) | tab_0:row8:col3 |
-| EC 50 | `Q321` · not captured | 1.46 | mg/L | not captured | space_fold (not captured) | tab_0:row10:col3 |
-| K on | `Q329` · not captured | 0.253 | not captured | not captured | space_fold (not captured) | tab_0:row13:col3 |
-| K on — % CV for IIV | `Q329` · not captured | 40.8 | not captured | not captured | space_fold (not captured) | tab_0:row13:col4 |
-| s | `Q335` · not captured | 0.608 | not captured | not captured | exact (not captured) | tab_0:row17:col3 |
-| g | `Q325` · not captured | 0.656 | Hill coefficient that characterizes the steepness of the drug effect relationship | not captured | review_gapfill (not captured) | Akrong_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Kg | `Q358` · not captured | 1.62 | not captured | not captured | llm (not captured) | tab_0:row6:col3 |
+| PD (effect) | B max | `Q332` · not captured | 8.5 | not captured | not captured | space_fold (not captured) | tab_0:row7:col3 |
+| PD (effect) | E max(0) | `Q320` · not captured | 8.96 | not captured | not captured | space_fold (not captured) | tab_0:row8:col3 |
+| PD (effect) | EC 50 | `Q321` · not captured | 1.46 | mg/L | not captured | space_fold (not captured) | tab_0:row10:col3 |
+| PD (effect) | K on | `Q329` · not captured | 0.253 | not captured | not captured | space_fold (not captured) | tab_0:row13:col3 |
+| PD (effect) | K on — % CV for IIV | `Q329` · not captured | 40.8 | not captured | not captured | space_fold (not captured) | tab_0:row13:col4 |
+| PD (effect) | s | `Q335` · not captured | 0.608 | not captured | not captured | exact (not captured) | tab_0:row17:col3 |
+| PD (effect) | g | `Q325` · not captured | 0.656 | Hill coefficient that characterizes the steepness of the drug effect relationship | not captured | review_gapfill (not captured) | Akrong_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Berzosertib (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In P. falciparum–infected NSG mice, whole blood berzosertib concentrations (ng/mL) act on parasitemia via a sigmoid Emax model in which the drug contributes a parasite kill rate (K kill = 0.058 1/h, 2.5th percentile 0.048) against parasite growth, with EC50,blood = 13.24 ng/mL (R.S.E. 43.7%; 2.5th percentile 6.16, 97.5th percentile 28.44), unbound plasma EC50 = 0.58 ng/mL, and whole blood MPCEC90 = 18.12 ng/mL; the Hill coefficient was fixed at the value minimizing OFV/BICc but its value is not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Redhi_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,24 +30,24 @@ Redhi D; Mulubwa M; Mmonwa MM; Njoroge M; Krugmann L; Chibale K et al. (2026). C
   ·  DOI: [10.1002/cpt.70303](https://doi.org/10.1002/cpt.70303)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| K kill (1/h) — Estimate | `Q47` · not captured | 0.058 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col1 |
-| K kill (1/h) — 2.5th percentile | `Q337` · not captured | 0.048 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col3 |
-| Whole blood EC50,blood (ng/mL) — Estimate | `Q321` · not captured | 13.24 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col1 |
-| Whole blood EC50,blood (ng/mL) — R.S.E. (%) | `Q321` · not captured | 43.7 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col2 |
-| Whole blood EC50,blood (ng/mL) — 2.5th percentile | `Q321` · not captured | 6.16 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col3 |
-| Whole blood EC50,blood (ng/mL) — 97.5th percentile | `Q321` · not captured | 28.44 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col4 |
-| Unbound plasma EC50 (ng/mL) — Estimate | `Q321` · not captured | 0.58 | ng/mL | not captured | llm_corrected (not captured) | cpt70303-tbl-0001:row5:col1 |
-| Whole blood MPCEC90 (ng/mL) — Estimate | `Q321` · not captured | 18.12 | ng/mL | not captured | llm (not captured) | cpt70303-tbl-0001:row6:col1 |
-| ωKgrow — Shrinkage (%) | `Q318` · not captured | -0.84 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row9:col5 |
-| ωKkill — Shrinkage (%) | `Q318` · not captured | 1.86 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row10:col5 |
-| ωEC50 — Estimate | `Q321` · not captured | 0.62 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col1 |
-| ωEC50 — R.S.E. (%) | `Q321` · not captured | 45.2 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col2 |
-| ωEC50 — 2.5th percentile | `Q321` · not captured | 0.28 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col3 |
-| ωEC50 — 97.5th percentile | `Q321` · not captured | 1.37 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col4 |
-| ωEC50 — Shrinkage (%) | `Q318` · not captured | 1.46 | not captured | not captured | llm_corrected (not captured) | cpt70303-tbl-0001:row11:col5 |
-| Proportional — R.S.E. (%) | `Q316` · not captured | 7.91 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row13:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | K kill (1/h) — Estimate | `Q47` · not captured | 0.058 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col1 |
+| PD (effect) | K kill (1/h) — 2.5th percentile | `Q337` · not captured | 0.048 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row3:col3 |
+| PD (effect) | Whole blood EC50,blood (ng/mL) — Estimate | `Q321` · not captured | 13.24 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col1 |
+| PD (effect) | Whole blood EC50,blood (ng/mL) — R.S.E. (%) | `Q321` · not captured | 43.7 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col2 |
+| PD (effect) | Whole blood EC50,blood (ng/mL) — 2.5th percentile | `Q321` · not captured | 6.16 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col3 |
+| PD (effect) | Whole blood EC50,blood (ng/mL) — 97.5th percentile | `Q321` · not captured | 28.44 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row4:col4 |
+| PD (effect) | Unbound plasma EC50 (ng/mL) — Estimate | `Q321` · not captured | 0.58 | ng/mL | not captured | llm_corrected (not captured) | cpt70303-tbl-0001:row5:col1 |
+| PD (effect) | Whole blood MPCEC90 (ng/mL) — Estimate | `Q321` · not captured | 18.12 | ng/mL | not captured | llm (not captured) | cpt70303-tbl-0001:row6:col1 |
+| variability | ωKgrow — Shrinkage (%) | `Q318` · not captured | -0.84 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row9:col5 |
+| variability | ωKkill — Shrinkage (%) | `Q318` · not captured | 1.86 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row10:col5 |
+| PD (effect) | ωEC50 — Estimate | `Q321` · not captured | 0.62 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col1 |
+| PD (effect) | ωEC50 — R.S.E. (%) | `Q321` · not captured | 45.2 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col2 |
+| PD (effect) | ωEC50 — 2.5th percentile | `Q321` · not captured | 0.28 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col3 |
+| PD (effect) | ωEC50 — 97.5th percentile | `Q321` · not captured | 1.37 | ng/mL | not captured | llm_confirmed (not captured) | cpt70303-tbl-0001:row11:col4 |
+| variability | ωEC50 — Shrinkage (%) | `Q318` · not captured | 1.46 | not captured | not captured | llm_corrected (not captured) | cpt70303-tbl-0001:row11:col5 |
+| variability | Proportional — R.S.E. (%) | `Q316` · not captured | 7.91 | not captured | not captured | llm (not captured) | cpt70303-tbl-0001:row13:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

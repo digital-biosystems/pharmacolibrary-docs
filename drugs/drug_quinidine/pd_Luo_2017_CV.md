@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinidine (concentrations from the PK model of Fattinger_1991_2) drives Conduction velocity (in cm/s) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a computational SQT3 ventricular model, simulated quinidine concentrations (µM, e.g. 4 µM) act on conduction velocity (cm/s) by blocking ion channels (modelled with IC50 and Hill coefficient values, which are not stated in the excerpts); the paper reports that quinidine decreased ventricular conduction velocity but gives no quantitative PD parameters (Imax, IC50, EC50, kin, kout, ke0) for CV.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2017`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

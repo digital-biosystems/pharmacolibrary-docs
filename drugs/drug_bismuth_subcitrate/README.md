@@ -16,16 +16,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Benet_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Benet1991_reference.md) | 1-compartment (no model) | 0 | Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991) | [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dresow_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Dresow1991_reference.md) | 1-compartment (no model) | 0 | Dresow B et al., Bioavailability of bismuth from 205Bi-l…, Archives of toxicology (1991) | [10.1007/BF02098030](https://doi.org/10.1007/BF02098030) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Benet_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Benet1991_reference.md) | — | 1-compartment (no model) | 0 | Benet LZ, Safety and pharmacokinetics: colloidal…, Scandinavian journal of gas… (1991) | [10.3109/00365529109093217](https://doi.org/10.3109/00365529109093217) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Dresow_1991_reference](drugs/drug_bismuth_subcitrate/BismuthSubcitrate_Dresow1991_reference.md) | — | 1-compartment (no model) | 0 | Dresow B et al., Bioavailability of bismuth from 205Bi-l…, Archives of toxicology (1991) | [10.1007/BF02098030](https://doi.org/10.1007/BF02098030) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jin_2004](drugs/drug_bismuth_subcitrate/pd_Jin_2004_unknown.md) | Jin L et al., Inhibition of alcohol dehydrogenase by…, Journal of inorganic bioche… (2004) | [10.1016/j.jinorgbio.2004.03.016](https://doi.org/10.1016/j.jinorgbio.2004.03.016) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Jin_2004_unknown](drugs/drug_bismuth_subcitrate/pd_Jin_2004_unknown.md) | enzyme activity ← bismuth subcitrate · inhibition effect | — | Jin L et al., Inhibition of alcohol dehydrogenase by…, Journal of inorganic bioche… (2004) | [10.1016/j.jinorgbio.2004.03.016](https://doi.org/10.1016/j.jinorgbio.2004.03.016) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

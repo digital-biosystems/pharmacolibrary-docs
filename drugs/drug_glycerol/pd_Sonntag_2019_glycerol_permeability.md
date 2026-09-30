@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DFP00173 (measured concentrations) drives name (in light scattering intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DFP00173 (and comparator Z433927330) concentrations inhibit glycerol permeability, measured as the t1/2 of the scattered light intensity decrease in erythrocytes, by direct blockade of AQP3 channels (DFP00173 highly specific for AQP3, not AQP7); apparent IC50 values are ~0.2 µM for DFP00173 and ~0.6 µM for Z433927330, with 25 µM used in representative inhibition traces. No PD model structure (e.g. Emax, effect compartment) is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sonntag_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

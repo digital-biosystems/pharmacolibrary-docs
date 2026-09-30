@@ -26,9 +26,9 @@ Marketed as the brand name pr
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruan_2014_adults with type 2 diabetes](drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md) | — (no model) | 0 | Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014) | [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Ruan_2014_adults with type 2 diabetes](drugs/drug_insulin_lispro/InsulinLispro_Ruan2014_adults_with_type_2_diabetes.md) | — | — (no model) | 0 | Ruan Y et al., Pharmacokinetics of insulin lispro in t…, Computer methods and progra… (2014) | [10.1016/j.cmpb.2014.07.004](https://doi.org/10.1016/j.cmpb.2014.07.004) |
 
 ## ADME sites
 

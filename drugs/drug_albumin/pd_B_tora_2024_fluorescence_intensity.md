@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** EvoSiR4 (measured concentrations) drives CaSR binding (in arbitrary units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In an in vitro FLIPR assay, EvoSiR4 acts as a positive allosteric modulator stimulating CaSR activity (measured as fluorescence intensity), with an EC50 of about 40 nM; adding bovine serum albumin shifts the concentration–response rightward in a saturable manner (EC50 64 ± 12 nM with 0.1% BSA, 102 ± 34 nM with 0.5%, 106 ± 42 nM with 1%), attributed to albumin binding of EvoSiR4 rather than a direct effect on the receptor; the paper does not state Imax/Emax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bátora_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linseed extract (measured concentrations) drives Hemolysis inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Linseed extract concentrations (100–1000 µg/mL) were tested against erythrocyte hemolysis inhibition (%), which increased with concentration (87.2% at 100 µg/mL to 93.7% at 1000 µg/mL), compared with indomethacin (91.6–98.6%). The paper reports only these concentration-response observations and does not state a pharmacodynamic model or mechanism (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alawlaqi_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Alawlaqi MM; Al-Rajhi AMH; Abdelghany TM; Ganash M; Moawad H et al. (2023). Jour
   ·  DOI: [10.3390/jfb14060300](https://doi.org/10.3390/jfb14060300)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Chlorogenic acid — E_place | `Q341` · not captured | -50.8947 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row1:col6 |
-| Chlorogenic acid — E_place | `Q341` · not captured | -69.8904 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row2:col6 |
-| Chlorogenic acid — E_place | `Q341` · not captured | -66.5634 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row3:col6 |
-| Chlorogenic acid — E_place | `Q341` · not captured | -75.9115 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row4:col6 |
-| Chlorogenic acid — E_place | `Q341` · not captured | -74.0203 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row5:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Chlorogenic acid — E_place | `Q341` · not captured | -50.8947 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row1:col6 |
+| PD (effect) | Chlorogenic acid — E_place | `Q341` · not captured | -69.8904 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row2:col6 |
+| PD (effect) | Chlorogenic acid — E_place | `Q341` · not captured | -66.5634 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row3:col6 |
+| PD (effect) | Chlorogenic acid — E_place | `Q341` · not captured | -75.9115 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row4:col6 |
+| PD (effect) | Chlorogenic acid — E_place | `Q341` · not captured | -74.0203 | not captured | not captured | llm (not captured) | jfb-14-00300-t004:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

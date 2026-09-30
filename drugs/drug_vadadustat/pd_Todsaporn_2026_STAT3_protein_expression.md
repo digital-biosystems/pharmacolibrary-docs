@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe vadadustat acting on STAT3 protein expression; instead it reports naphthalene-based compounds (2q, 2s, 2d) that directly inhibit JAK2 kinase activity in a dose-dependent manner, with IC50 values of 12.25 ± 1.07 nM (2q, more potent than ruxolitinib at 22.35 ± 3.58 nM), 18.84 ± 0.92 nM (2s), and 40.47 ± 2.54 nM (2d); no Emax, kin, kout, or ke0 values are given, and the mechanism is a direct concentration–response inhibition of JAK2 kinase activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Todsaporn_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,54 +30,54 @@ Todsaporn D; Sanachai K; Suddee N; Kanjanapanyakom C; Maitarad P; Worayuthakarn 
   ·  DOI: [10.1021/acs.jcim.6c00414](https://doi.org/10.1021/acs.jcim.6c00414)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 2b — IC 50 (μM) ± SEM | `Q322` · not captured | 15.25 | unknown | not captured | llm (not captured) | tbl2:row2:col4 |
-| 2b — IC 50 (μM) ± SEM | `Q322` · not captured | 80.58 | unknown | not captured | llm (not captured) | tbl2:row2:col5 |
-| 2c — IC 50 (μM) ± SEM | `Q322` · not captured | 47.54 | unknown | not captured | llm (not captured) | tbl2:row3:col4 |
-| 2c — IC 50 (μM) ± SEM | `Q322` · not captured | 70.63 | unknown | not captured | llm (not captured) | tbl2:row3:col5 |
-| 2d — IC 50 (μM) ± SEM | `Q322` · not captured | 13.14 | unknown | not captured | llm (not captured) | tbl2:row4:col4 |
-| 2d — IC 50 (μM) ± SEM | `Q322` · not captured | 65.14 | unknown | not captured | llm (not captured) | tbl2:row4:col5 |
-| 2e — IC 50 (μM) ± SEM | `Q322` · not captured | 22.32 | unknown | not captured | llm (not captured) | tbl2:row5:col4 |
-| 2e — IC 50 (μM) ± SEM | `Q322` · not captured | 98.36 | unknown | not captured | llm (not captured) | tbl2:row5:col5 |
-| 2f — IC 50 (μM) ± SEM | `Q322` · not captured | 34.21 | unknown | not captured | llm (not captured) | tbl2:row6:col4 |
-| 2g — IC 50 (μM) ± SEM | `Q322` · not captured | 47.26 | unknown | not captured | llm (not captured) | tbl2:row7:col4 |
-| 2j — IC 50 (μM) ± SEM | `Q322` · not captured | 55.88 | unknown | not captured | llm (not captured) | tbl2:row9:col4 |
-| 2k — IC 50 (μM) ± SEM | `Q322` · not captured | 39.65 | unknown | not captured | llm (not captured) | tbl2:row10:col4 |
-| 2n — IC 50 (μM) ± SEM | `Q322` · not captured | 58.62 | unknown | not captured | llm (not captured) | tbl2:row12:col4 |
-| 2n — IC 50 (μM) ± SEM | `Q322` · not captured | 86.24 | unknown | not captured | llm (not captured) | tbl2:row12:col5 |
-| 2o — IC 50 (μM) ± SEM | `Q322` · not captured | 17.57 | unknown | not captured | llm (not captured) | tbl2:row13:col4 |
-| 2o — IC 50 (μM) ± SEM | `Q322` · not captured | 90.14 | unknown | not captured | llm (not captured) | tbl2:row13:col5 |
-| 2p — IC 50 (μM) ± SEM | `Q322` · not captured | 81.05 | unknown | not captured | llm (not captured) | tbl2:row14:col4 |
-| 2p — IC 50 (μM) ± SEM | `Q322` · not captured | 74.44 | unknown | not captured | llm (not captured) | tbl2:row14:col5 |
-| 2q — IC 50 (μM) ± SEM | `Q322` · not captured | 19.63 | unknown | not captured | llm (not captured) | tbl2:row15:col4 |
-| 2q — IC 50 (μM) ± SEM | `Q322` · not captured | 64.51 | unknown | not captured | llm (not captured) | tbl2:row15:col5 |
-| 2r — IC 50 (μM) ± SEM | `Q322` · not captured | 32.11 | unknown | not captured | llm (not captured) | tbl2:row16:col4 |
-| 2r — IC 50 (μM) ± SEM | `Q322` · not captured | 80.26 | unknown | not captured | llm (not captured) | tbl2:row16:col5 |
-| 2s — IC 50 (μM) ± SEM | `Q322` · not captured | 10.20 | unknown | not captured | llm (not captured) | tbl2:row17:col4 |
-| 2s — IC 50 (μM) ± SEM | `Q322` · not captured | 80.14 | unknown | not captured | llm (not captured) | tbl2:row17:col5 |
-| 2t — IC 50 (μM) ± SEM | `Q322` · not captured | 29.25 | unknown | not captured | llm (not captured) | tbl2:row18:col4 |
-| 2u — IC 50 (μM) ± SEM | `Q322` · not captured | 56.32 | unknown | not captured | llm (not captured) | tbl2:row19:col4 |
-| 2u — IC 50 (μM) ± SEM | `Q322` · not captured | 85.10 | unknown | not captured | llm (not captured) | tbl2:row19:col5 |
-| 3a — IC 50 (μM) ± SEM | `Q322` · not captured | 66.21 | unknown | not captured | llm (not captured) | tbl2:row21:col4 |
-| 3c — IC 50 (μM) ± SEM | `Q322` · not captured | 80.10 | unknown | not captured | llm (not captured) | tbl2:row22:col4 |
-| 3d — IC 50 (μM) ± SEM | `Q322` · not captured | 35.65 | unknown | not captured | llm (not captured) | tbl2:row23:col4 |
-| 3e — IC 50 (μM) ± SEM | `Q322` · not captured | 62.69 | unknown | not captured | llm (not captured) | tbl2:row24:col4 |
-| 3f — IC 50 (μM) ± SEM | `Q322` · not captured | 49.32 | unknown | not captured | llm (not captured) | tbl2:row25:col4 |
-| 3g — IC 50 (μM) ± SEM | `Q322` · not captured | 66.41 | unknown | not captured | llm (not captured) | tbl2:row26:col4 |
-| 3j — IC 50 (μM) ± SEM | `Q322` · not captured | 59.30 | unknown | not captured | llm (not captured) | tbl2:row28:col4 |
-| 3o — IC 50 (μM) ± SEM | `Q322` · not captured | 81.58 | unknown | not captured | llm (not captured) | tbl2:row30:col4 |
-| 3p — IC 50 (μM) ± SEM | `Q322` · not captured | 25.21 | unknown | not captured | llm (not captured) | tbl2:row31:col4 |
-| 3p — IC 50 (μM) ± SEM | `Q322` · not captured | 54.10 | unknown | not captured | llm (not captured) | tbl2:row31:col5 |
-| 3q — IC 50 (μM) ± SEM | `Q322` · not captured | 91.36 | unknown | not captured | llm (not captured) | tbl2:row32:col4 |
-| 3r — IC 50 (μM) ± SEM | `Q322` · not captured | 12.58 | unknown | not captured | llm (not captured) | tbl2:row33:col4 |
-| 3r — IC 50 (μM) ± SEM | `Q322` · not captured | 85.36 | unknown | not captured | llm (not captured) | tbl2:row33:col5 |
-| 3s — IC 50 (μM) ± SEM | `Q322` · not captured | 89.02 | unknown | not captured | llm (not captured) | tbl2:row34:col4 |
-| 3s — IC 50 (μM) ± SEM | `Q322` · not captured | 77.45 | unknown | not captured | llm (not captured) | tbl2:row34:col5 |
-| 3u — IC 50 (μM) ± SEM | `Q322` · not captured | 65.14 | unknown | not captured | llm (not captured) | tbl2:row36:col4 |
-| 3v — IC 50 (μM) ± SEM | `Q322` · not captured | 28.57 | unknown | not captured | llm (not captured) | tbl2:row37:col4 |
-| Ruxolitinib — IC 50 (μM) ± SEM | `Q322` · not captured | 35.14 | unknown | not captured | llm (not captured) | tbl2:row38:col4 |
-| Ruxolitinib — IC 50 (μM) ± SEM | `Q322` · not captured | 71.22 | unknown | not captured | llm (not captured) | tbl2:row38:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 2b — IC 50 (μM) ± SEM | `Q322` · not captured | 15.25 | unknown | not captured | llm (not captured) | tbl2:row2:col4 |
+| PD (effect) | 2b — IC 50 (μM) ± SEM | `Q322` · not captured | 80.58 | unknown | not captured | llm (not captured) | tbl2:row2:col5 |
+| PD (effect) | 2c — IC 50 (μM) ± SEM | `Q322` · not captured | 47.54 | unknown | not captured | llm (not captured) | tbl2:row3:col4 |
+| PD (effect) | 2c — IC 50 (μM) ± SEM | `Q322` · not captured | 70.63 | unknown | not captured | llm (not captured) | tbl2:row3:col5 |
+| PD (effect) | 2d — IC 50 (μM) ± SEM | `Q322` · not captured | 13.14 | unknown | not captured | llm (not captured) | tbl2:row4:col4 |
+| PD (effect) | 2d — IC 50 (μM) ± SEM | `Q322` · not captured | 65.14 | unknown | not captured | llm (not captured) | tbl2:row4:col5 |
+| PD (effect) | 2e — IC 50 (μM) ± SEM | `Q322` · not captured | 22.32 | unknown | not captured | llm (not captured) | tbl2:row5:col4 |
+| PD (effect) | 2e — IC 50 (μM) ± SEM | `Q322` · not captured | 98.36 | unknown | not captured | llm (not captured) | tbl2:row5:col5 |
+| PD (effect) | 2f — IC 50 (μM) ± SEM | `Q322` · not captured | 34.21 | unknown | not captured | llm (not captured) | tbl2:row6:col4 |
+| PD (effect) | 2g — IC 50 (μM) ± SEM | `Q322` · not captured | 47.26 | unknown | not captured | llm (not captured) | tbl2:row7:col4 |
+| PD (effect) | 2j — IC 50 (μM) ± SEM | `Q322` · not captured | 55.88 | unknown | not captured | llm (not captured) | tbl2:row9:col4 |
+| PD (effect) | 2k — IC 50 (μM) ± SEM | `Q322` · not captured | 39.65 | unknown | not captured | llm (not captured) | tbl2:row10:col4 |
+| PD (effect) | 2n — IC 50 (μM) ± SEM | `Q322` · not captured | 58.62 | unknown | not captured | llm (not captured) | tbl2:row12:col4 |
+| PD (effect) | 2n — IC 50 (μM) ± SEM | `Q322` · not captured | 86.24 | unknown | not captured | llm (not captured) | tbl2:row12:col5 |
+| PD (effect) | 2o — IC 50 (μM) ± SEM | `Q322` · not captured | 17.57 | unknown | not captured | llm (not captured) | tbl2:row13:col4 |
+| PD (effect) | 2o — IC 50 (μM) ± SEM | `Q322` · not captured | 90.14 | unknown | not captured | llm (not captured) | tbl2:row13:col5 |
+| PD (effect) | 2p — IC 50 (μM) ± SEM | `Q322` · not captured | 81.05 | unknown | not captured | llm (not captured) | tbl2:row14:col4 |
+| PD (effect) | 2p — IC 50 (μM) ± SEM | `Q322` · not captured | 74.44 | unknown | not captured | llm (not captured) | tbl2:row14:col5 |
+| PD (effect) | 2q — IC 50 (μM) ± SEM | `Q322` · not captured | 19.63 | unknown | not captured | llm (not captured) | tbl2:row15:col4 |
+| PD (effect) | 2q — IC 50 (μM) ± SEM | `Q322` · not captured | 64.51 | unknown | not captured | llm (not captured) | tbl2:row15:col5 |
+| PD (effect) | 2r — IC 50 (μM) ± SEM | `Q322` · not captured | 32.11 | unknown | not captured | llm (not captured) | tbl2:row16:col4 |
+| PD (effect) | 2r — IC 50 (μM) ± SEM | `Q322` · not captured | 80.26 | unknown | not captured | llm (not captured) | tbl2:row16:col5 |
+| PD (effect) | 2s — IC 50 (μM) ± SEM | `Q322` · not captured | 10.20 | unknown | not captured | llm (not captured) | tbl2:row17:col4 |
+| PD (effect) | 2s — IC 50 (μM) ± SEM | `Q322` · not captured | 80.14 | unknown | not captured | llm (not captured) | tbl2:row17:col5 |
+| PD (effect) | 2t — IC 50 (μM) ± SEM | `Q322` · not captured | 29.25 | unknown | not captured | llm (not captured) | tbl2:row18:col4 |
+| PD (effect) | 2u — IC 50 (μM) ± SEM | `Q322` · not captured | 56.32 | unknown | not captured | llm (not captured) | tbl2:row19:col4 |
+| PD (effect) | 2u — IC 50 (μM) ± SEM | `Q322` · not captured | 85.10 | unknown | not captured | llm (not captured) | tbl2:row19:col5 |
+| PD (effect) | 3a — IC 50 (μM) ± SEM | `Q322` · not captured | 66.21 | unknown | not captured | llm (not captured) | tbl2:row21:col4 |
+| PD (effect) | 3c — IC 50 (μM) ± SEM | `Q322` · not captured | 80.10 | unknown | not captured | llm (not captured) | tbl2:row22:col4 |
+| PD (effect) | 3d — IC 50 (μM) ± SEM | `Q322` · not captured | 35.65 | unknown | not captured | llm (not captured) | tbl2:row23:col4 |
+| PD (effect) | 3e — IC 50 (μM) ± SEM | `Q322` · not captured | 62.69 | unknown | not captured | llm (not captured) | tbl2:row24:col4 |
+| PD (effect) | 3f — IC 50 (μM) ± SEM | `Q322` · not captured | 49.32 | unknown | not captured | llm (not captured) | tbl2:row25:col4 |
+| PD (effect) | 3g — IC 50 (μM) ± SEM | `Q322` · not captured | 66.41 | unknown | not captured | llm (not captured) | tbl2:row26:col4 |
+| PD (effect) | 3j — IC 50 (μM) ± SEM | `Q322` · not captured | 59.30 | unknown | not captured | llm (not captured) | tbl2:row28:col4 |
+| PD (effect) | 3o — IC 50 (μM) ± SEM | `Q322` · not captured | 81.58 | unknown | not captured | llm (not captured) | tbl2:row30:col4 |
+| PD (effect) | 3p — IC 50 (μM) ± SEM | `Q322` · not captured | 25.21 | unknown | not captured | llm (not captured) | tbl2:row31:col4 |
+| PD (effect) | 3p — IC 50 (μM) ± SEM | `Q322` · not captured | 54.10 | unknown | not captured | llm (not captured) | tbl2:row31:col5 |
+| PD (effect) | 3q — IC 50 (μM) ± SEM | `Q322` · not captured | 91.36 | unknown | not captured | llm (not captured) | tbl2:row32:col4 |
+| PD (effect) | 3r — IC 50 (μM) ± SEM | `Q322` · not captured | 12.58 | unknown | not captured | llm (not captured) | tbl2:row33:col4 |
+| PD (effect) | 3r — IC 50 (μM) ± SEM | `Q322` · not captured | 85.36 | unknown | not captured | llm (not captured) | tbl2:row33:col5 |
+| PD (effect) | 3s — IC 50 (μM) ± SEM | `Q322` · not captured | 89.02 | unknown | not captured | llm (not captured) | tbl2:row34:col4 |
+| PD (effect) | 3s — IC 50 (μM) ± SEM | `Q322` · not captured | 77.45 | unknown | not captured | llm (not captured) | tbl2:row34:col5 |
+| PD (effect) | 3u — IC 50 (μM) ± SEM | `Q322` · not captured | 65.14 | unknown | not captured | llm (not captured) | tbl2:row36:col4 |
+| PD (effect) | 3v — IC 50 (μM) ± SEM | `Q322` · not captured | 28.57 | unknown | not captured | llm (not captured) | tbl2:row37:col4 |
+| PD (effect) | Ruxolitinib — IC 50 (μM) ± SEM | `Q322` · not captured | 35.14 | unknown | not captured | llm (not captured) | tbl2:row38:col4 |
+| PD (effect) | Ruxolitinib — IC 50 (μM) ± SEM | `Q322` · not captured | 71.22 | unknown | not captured | llm (not captured) | tbl2:row38:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

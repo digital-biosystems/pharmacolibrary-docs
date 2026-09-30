@@ -14,9 +14,11 @@
 
 **As extracted:** JB-161 drives cell growth (in %): direct Emax (saturable) effect.
 
-> The paper describes a direct dose-response relationship where the compound JB-161 inhibits cell growth (measured as GI50) in the JFCR39 panel, but it does not specify the underlying pharmacodynamic mechanism (e.g., Emax, indirect response) or provide specific potency values (IC50, EC50) or rate constants for JB-161.
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for allopurinol; it reports growth-inhibitory activity of the KDM5B inhibitor JB-161 on 39 human cancer cell lines (JFCR39), where concentrations of 1–100 μM (48 h exposure, SRB assay) were fitted by nonlinear regression to dose–response curves to determine GI50 (% growth inhibition), with no mechanism, Emax, IC50 for JB-161, or rate parameters stated.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hara_2026`
 - **model family:** `emax`

@@ -34,9 +34,9 @@ A combination product (Opsynvi) comprising macitentan and [tadalafil] was approv
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Bartolucci_2021_reference](drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md) | 1-compartment, oral | 5 | Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Bartolucci_2021_reference](drugs/drug_macitentan/Macitentan_Bartolucci2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 5 | Bartolucci R et al., A Population Pharmacokinetic Model of M…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01049-3](https://doi.org/10.1007/s40262-021-01049-3) |
 
 ## Pharmacogenomics (PGx)
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 6-thioguanine nucleotides (concentrations from the PK model of Bayoumy_2025) drives clinical effectiveness (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism; it only reports a categorical association between steady-state erythrocyte 6-thioguanine nucleotide (6-TGN) concentrations (pmol/8×10^8 RBC) and binary clinical effectiveness in tioguanine-treated IBD patients. Higher 6-TGN levels were associated with response (801 vs 492 pmol/8×10^8 RBC, P &lt; 0.05), with a ROC-derived cut-off of 682 pmol/8×10^8 RBC (specificity 89%, sensitivity 74%, AUC 0.89) and an odds ratio for response of 22.2 (95% CI 7.1–68.7) above this threshold; no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simsek_2019`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

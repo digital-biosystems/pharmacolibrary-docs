@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2022_dialysis-dependent chronic kidney disease patients](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md) | — (no model) | 0 | Michaličková (2022) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Michaličková_2022_dialysis-dependent chronic kidney disease patients](drugs/drug_fondaparinux/Fondaparinux_Michalikov2022_dialysis_dependent_chronic_kidne.md) | — | — (no model) | 0 | Michaličková (2022) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Chang_2016](drugs/drug_fondaparinux/pd_Chang_2016_unknown.md) | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> | [Chang_2016_unknown](drugs/drug_fondaparinux/pd_Chang_2016_unknown.md) | coagulation activity ← argatroban, dabigatran, rivaroxaban, apixaban, fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
 
 ## ADME sites
 

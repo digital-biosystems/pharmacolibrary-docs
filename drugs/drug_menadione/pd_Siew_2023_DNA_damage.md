@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Laevifolin A (measured concentrations) drives name (in level of DNA damage) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In HT-29 cells, menadione (100 µM), a redox-cycling/oxidative DNA-damaging agent, induces DNA damage (tail moment 7.00 ± 0.8; % tail DNA 23.4 ± 3.1), while pre-treatment with Laevifolin A (at its 21.2 µM cytotoxicity IC50) significantly reduces menadione-induced DNA damage (tail moment 1.24 ± 0.1; % tail DNA 9.8 ± 0.9), an inhibitory/genoprotective effect attributed to its antioxidant free-radical scavenging properties; no quantitative PD model parameters (Imax, IC50 for DNA damage, kin, kout, ke0) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Siew_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

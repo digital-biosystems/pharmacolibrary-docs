@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxamic hydrazide 1 (measured concentrations) drives name (in fluorescence intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oxamic hydrazide 1 concentrations inhibit rat CSE enzymatic activity, measured as H2S-dependent HSip-1 fluorescence intensity; the mechanism is direct enzymatic inhibition via formation of a Schiff base linkage with the PLP cofactor in the CSE active site. The paper reports an IC50 of 13 ± 1 μM (mean ± S.E.) but no Emax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Echizen_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

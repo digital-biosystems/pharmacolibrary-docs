@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spigelia anthelmia protein fractions drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the larval exsheathment inhibition assay, H. contortus L3 larvae were exposed to Spigelia anthelmia protein fractions (1.2–0.075 mg mL-1) for 3 h, and exsheathment (induced by 2% sodium hypochlorite) was monitored over 60 min; LPF (EC50 0.47 mg mL-1) and RPF (EC50 0.78 mg mL-1) inhibited exsheathment, while SPF inhibited only 7.9% at 1.2 mg mL-1. The paper does not state a pharmacodynamic mechanism (e.g. Emax/turnover parameters) for this effect; sodium phosphate was only the extraction/control buffer.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Araújo_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The cannabidiol horse model was held back because it fails to reproduce the paper's Cmax (1.572842631025892e-06 vs 3.8999999999999997e-07) and terminal half-life (5.165650385265054 h vs 161.29 h), and the absorption rate ka was invented rather than taken from the source.**

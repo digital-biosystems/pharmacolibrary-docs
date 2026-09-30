@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nicotinamide derivatives 4a–4f inhibit succinate dehydrogenase (SDH) in a dose-dependent manner, with IC50 values of 3.18 µM (4b), 30.03 µM (4c), 10.47 µM (4d), 4.95 µM (4e), 11.18 µM (4f), and 1.67 µM for the reference boscalid; the paper does not state a PD model beyond this direct inhibition, though docking suggests binding to the substrate and entrance cavities of SDH (1YQ3).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Yang Z; Guo L; Zhou C; Wang X; Yu M; Xul M; et al. et al. (2020). Journal of pes
   ·  DOI: [10.1584/jpestics.D19-061](https://doi.org/10.1584/jpestics.D19-061)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 4b — IC50 (µM) | `Q322` · not captured | 3.18 | µM | not captured | llm (not captured) | table3:row2:col1 |
-| 4c — IC50 (µM) | `Q322` · not captured | 30.03 | µM | not captured | llm (not captured) | table3:row3:col1 |
-| 4d — IC50 (µM) | `Q322` · not captured | 10.47 | µM | not captured | llm (not captured) | table3:row4:col1 |
-| 4e — IC50 (µM) | `Q322` · not captured | 4.95 | µM | not captured | llm (not captured) | table3:row5:col1 |
-| 4f — IC50 (µM) | `Q322` · not captured | 11.18 | µM | not captured | llm (not captured) | table3:row6:col1 |
-| Boscalid — IC50 (µM) | `Q322` · not captured | 1.67 | µM | not captured | llm (not captured) | table3:row7:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 4b — IC50 (µM) | `Q322` · not captured | 3.18 | µM | not captured | llm (not captured) | table3:row2:col1 |
+| PD (effect) | 4c — IC50 (µM) | `Q322` · not captured | 30.03 | µM | not captured | llm (not captured) | table3:row3:col1 |
+| PD (effect) | 4d — IC50 (µM) | `Q322` · not captured | 10.47 | µM | not captured | llm (not captured) | table3:row4:col1 |
+| PD (effect) | 4e — IC50 (µM) | `Q322` · not captured | 4.95 | µM | not captured | llm (not captured) | table3:row5:col1 |
+| PD (effect) | 4f — IC50 (µM) | `Q322` · not captured | 11.18 | µM | not captured | llm (not captured) | table3:row6:col1 |
+| PD (effect) | Boscalid — IC50 (µM) | `Q322` · not captured | 1.67 | µM | not captured | llm (not captured) | table3:row7:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

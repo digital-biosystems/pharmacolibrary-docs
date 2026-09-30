@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Canagliflozin drives glycosylated haemoglobin (in %): indirect response — drug stimulates the production of glycosylated haemoglobin.
+
+**Model:** No model was generated from this record.
+
+> Canagliflozin plasma concentration drives an indirect response (turnover) model of HbA1c (%), where canagliflozin (plus a placebo effect) inhibits HbA1c production (dH/dt = kin − (Ef)·kout·H), with Ef_c = Emax·C/(C+EC50). Key estimates: Emax = −0.738 %HbA1c at steady-state (SE 0.070), EC50 = 10^4.12 ng/ml (log EC50 SE 0.54), HbA1c half-life (kout) = 28.2 days (SE 2.24), and baseline HbA1c (kin) = 7.72% (SE 0.024).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2017`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`
@@ -21,18 +31,18 @@ de Winter W; Dunne A; de Trixhe XW; Devineni D; Hsu CH; Pinheiro J; et al. et al
   ·  DOI: [10.1111/bcp.13180](https://doi.org/10.1111/bcp.13180)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| t ½ HbA1c (day) — Estimate Std. Error | `Q57` · not captured | 28.2 | day | not captured | llm (not captured) | tab_1:row1:col2 |
-| t ½ HbA1c (day) | `Q57` · not captured | 2.24 | day | not captured | llm (not captured) | tab_1:row1:col3 |
-| Baseline HbA1c (%) — Estimate Std. Error | `Q324` · not captured | 7.72 | not captured | not captured | llm_confirmed (not captured) | tab_1:row2:col2 |
-| Baseline HbA1c (%) | `Q324` · not captured | 0.024 | not captured | not captured | llm_confirmed (not captured) | tab_1:row2:col3 |
-| E max (%HbA1c @ steady-state) | `Q320` · not captured | -0.738 | %HbA1c @ steady-state | not captured | space_fold (not captured) | tab_1:row9:col1 |
-| E max (%HbA1c @ steady-state) — Estimate Std. Error | `Q320` · not captured | 0.070 | %HbA1c @ steady-state | not captured | space_fold (not captured) | tab_1:row9:col2 |
-| Log(EC 50 ) (Log(ng ml — Estimate Std. Error | `Q321` · not captured | 4.12 | unknown | not captured | llm (not captured) | tab_1:row10:col2 |
-| Log(EC 50 ) (Log(ng ml | `Q321` · not captured | 0.54 | unknown | not captured | llm (not captured) | tab_1:row10:col3 |
-| Residual error variance | `Q315` · not captured | 0.00182 | not captured | not captured | exact (not captured) | tab_1:row11:col1 |
-| Residual error variance — Estimate Std. Error | `Q315` · not captured | 0.00014 | not captured | not captured | exact (not captured) | tab_1:row11:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | t ½ HbA1c (day) — Estimate Std. Error | `Q57` · not captured | 28.2 | day | not captured | llm (not captured) | tab_1:row1:col2 |
+| PK (driver) | t ½ HbA1c (day) | `Q57` · not captured | 2.24 | day | not captured | llm (not captured) | tab_1:row1:col3 |
+| PD (effect) | Baseline HbA1c (%) — Estimate Std. Error | `Q324` · not captured | 7.72 | not captured | not captured | llm_confirmed (not captured) | tab_1:row2:col2 |
+| PD (effect) | Baseline HbA1c (%) | `Q324` · not captured | 0.024 | not captured | not captured | llm_confirmed (not captured) | tab_1:row2:col3 |
+| PD (effect) | E max (%HbA1c @ steady-state) | `Q320` · not captured | -0.738 | %HbA1c @ steady-state | not captured | space_fold (not captured) | tab_1:row9:col1 |
+| PD (effect) | E max (%HbA1c @ steady-state) — Estimate Std. Error | `Q320` · not captured | 0.070 | %HbA1c @ steady-state | not captured | space_fold (not captured) | tab_1:row9:col2 |
+| PD (effect) | Log(EC 50 ) (Log(ng ml — Estimate Std. Error | `Q321` · not captured | 4.12 | unknown | not captured | llm (not captured) | tab_1:row10:col2 |
+| PD (effect) | Log(EC 50 ) (Log(ng ml | `Q321` · not captured | 0.54 | unknown | not captured | llm (not captured) | tab_1:row10:col3 |
+| variability | Residual error variance | `Q315` · not captured | 0.00182 | not captured | not captured | exact (not captured) | tab_1:row11:col1 |
+| variability | Residual error variance — Estimate Std. Error | `Q315` · not captured | 0.00014 | not captured | not captured | exact (not captured) | tab_1:row11:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

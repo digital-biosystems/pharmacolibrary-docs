@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BW A256C drives ventricular ectopic activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BW A256C (not flecainide itself) dose-dependently suppresses ventricular ectopic activity in conscious dogs after coronary artery ligation (i.v. total dose 1.5 mg kg−1; oral 1.25–5 mg kg−1) and reperfusion arrhythmias in anaesthetized dogs (0.25–1 mg kg−1 i.v.), acting as a class 1 antiarrhythmic; the paper gives a log EC50 of −5.66 M for this effect but does not state a detailed PD mechanism (e.g. kin/kout or effect-compartment parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Allan_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Allan G; Donoghue S; Follenfant MJ; Sawyer DA et al. (1986). British journal of 
   ·  DOI: [10.1111/j.1476-5381.1986.tb10209.x](https://doi.org/10.1111/j.1476-5381.1986.tb10209.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| log EC50 for BW A256C | `Q321` · not captured | -5.66 | M | not captured | review_gapfill (not captured) | Allan_1986:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | log EC50 for BW A256C | `Q321` · not captured | -5.66 | M | not captured | review_gapfill (not captured) | Allan_1986:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

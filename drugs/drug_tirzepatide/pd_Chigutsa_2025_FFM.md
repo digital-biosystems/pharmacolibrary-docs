@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tirzepatide (concentrations from the PK model of Schneck_2024) drives fat-free mass (in kg): indirect response — drug inhibits the production of fat-free mass.
+
+**Model:** No model was generated from this record.
+
+> Tirzepatide concentrations (from a cited population PK model, doses 5–15 mg once weekly) act on fat-free mass (kg) via an indirect response model with an inhibitory, proportional drug effect, fitted sequentially and simultaneously with fat mass; the paper reports a ~3:1 greater reduction of fat mass than FFM but the excerpts do not state the mechanism parameters (Imax, IC50, kin, kout) or their values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chigutsa_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

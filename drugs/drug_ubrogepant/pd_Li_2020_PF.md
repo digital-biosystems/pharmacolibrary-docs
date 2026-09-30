@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ubrogepant (measured concentrations) drives 2-hour pain freedom (in proportion): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ubrogepant plasma concentration at 2 hours (C2hour, nM) acts on 2-hour pain freedom (PF) in a joint ordinal logit E-R model with 2-hour pain relief, where the drug effect f_d(c) is added to the placebo logit-probability (β0 for PF); the paper does not state the functional form or numeric potency values (Imax/IC50/EC50/Emax), only that the dose-response plateaus over 25–100 mg, with ~83%, 88%, and 94% of maximal PF achieved at 25, 50, and 100 mg (HME formulation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

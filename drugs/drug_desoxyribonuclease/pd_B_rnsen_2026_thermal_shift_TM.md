@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BDM91531 (measured concentrations) drives name (in °C): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BDM91531 (µM concentrations) acts on the thermal shift (ΔTM, °C) of AcrB in a differential scanning fluorimetry assay, described with an Emax-type concentration–response model; the paper states the mechanism is direct binding of the divalent cationic BDM91531 to the AcrB efflux pump (electrostatic interactions involving D408, E947 and D951), trapping protomers in an O-to-L transitional state and blocking conformational cycling of the trimer. No numeric potency (IC50/EC50/Emax) or rate values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Börnsen_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

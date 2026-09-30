@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lactose drives name (in binary) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oral lactose (and lactitol) doses in g/kg body weight were related to the binary occurrence of transitory diarrhea via cumulative dose–response regression; no pharmacodynamic mechanism (e.g., Emax, turnover) is given. For lactose the regression y=-94.62+131.26x (R2=0.95) gave a maximum non-effective dose of 0.72 g/kg and a dose causing diarrhea in half the subjects of 1.10 g/kg; for lactitol y=-56.08+155.06x (R2=0.99) gave a maximum permissive dose of 0.36 g/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oku_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

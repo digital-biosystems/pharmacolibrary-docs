@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In MCF-7 cells exposed to paclitaxel (PTX) delivered by PLGA-PEG polymeric micelles at 20 and 40 ng/mL, PTX stimulates tubulin polymerization, which was fitted by an indirect response model; a hypothetical effect compartment was used to characterize the distribution delay between cellular PK (3-compartment subcellular model) and PD. The paper does not state the potency values (e.g., IC50/Emax) or rate constants for this response in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

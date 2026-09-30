@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** H+ drives NMDA receptor current (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Protons (H+) inhibit NMDA receptor-mediated currents in cerebellar granule cells elicited by 20-50 µM aspartate plus 3 µM glycine; the inhibition is non-competitive with respect to aspartate (EC50 unchanged at pH 6.8 vs 7.6), and the composite H+ inhibition curve fitted with an IC50 equation gave an IC50 of pH 7.3 (50 nM [H+]). The paper does not state a full PD model family or kinetic parameters (kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Traynelis_1990`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

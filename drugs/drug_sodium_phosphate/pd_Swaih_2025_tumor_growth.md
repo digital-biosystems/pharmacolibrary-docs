@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 (measured concentrations) drives tumor_growth (in rate) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for tumor growth itself; the in vivo PD modeling described links AZ14289671 concentrations to inhibition of EGFR phosphorylation in H2073WT xenografts using a simple irreversible binding turnover model (following the approach used for the irreversible inhibitor osimertinib), in which the compound irreversibly inactivates EGFR protein with a saturable inactivation term governed by compound-dependent Kbind (maximum inactivation rate) and IC50, while EGFR protein turnover (Krec) was fixed at 0.0231 h−1 (turnover t1/2 of 30 h). In vitro potency values reported for AZ14289671 include mean IC50 of 17–41 nmol/L against EGFR phosphorylation in EGFR E
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The minocycline record was rejected because its two-compartment structure contains an unreachable peripheral compartment, and the tabulated values (CL 1.88 L/h, V1 7.78 L, V2 5.77 L) carry labels belonging to other drugs.**

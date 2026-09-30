@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (1R,2R)-O-desmethyltramadol (M1) drive pain score (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Unbound (1R,2R)-O-desmethyltramadol (M1) concentrations drive the VAS pain score (0–1 normalized) via an inhibitory Imax model with an effect compartment (dCe/dt = ke0·(Cp − Ce)) reducing pain from baseline PD0; the paper does not state ke0, Imax, or gamma values for the PD model. IC50 was 2.91 nmol/L (725.61 ng/L) in non-diabetic patients, 0.156 nmol/L in T1DM and 0.515 nmol/L in T2DM, indicating greater sensitivity with diabetes.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chun_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -21,72 +31,72 @@ Chun D; Mehta P; Guzy S; Cicali B; Lauretti GR; Lanchote VL; Vozmediano V; De Mo
   ·  DOI: [10.1002/psp4.13315](https://doi.org/10.1002/psp4.13315)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| α — 1R,2R ‐ Tramadol | `Q67` · not captured | 2.96 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row3:col2 |
-| α — 1S,2S ‐ Tramadol | `Q67` · not captured | 3.63 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row3:col4 |
-| γ — 1R,2R ‐ Tramadol | `Q89` · not captured | 0.147 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row4:col2 |
-| γ — 1S,2S ‐ Tramadol | `Q89` · not captured | 0.087 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row4:col4 |
-| β — 1R,2R ‐ Tramadol | `Q47` · not captured | 0.762 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row5:col2 |
-| β — 1S,2S ‐ Tramadol | `Q47` · not captured | 0.779 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row5:col4 |
-| Vcparent,u/F L — 1R,2R ‐ Tramadol | `Q76` · not captured | 63.4 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row6:col2 |
-| Vcparent,u/F L — 1S,2S ‐ Tramadol | `Q76` · not captured | 78.1 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row6:col4 |
-| β1 — 1R,2R ‐ Tramadol | `Q60` · not captured | 3.87 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row7:col2 |
-| β1 — 1S,2S ‐ Tramadol | `Q60` · not captured | 3.43 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row7:col4 |
-| Qparent,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 299 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row9:col2 |
-| Qparent,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 337 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row9:col4 |
-| β2 — 1R,2R ‐ Tramadol | `Q60` · not captured | 0.311 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row12:col2 |
-| β2 — 1S,2S ‐ Tramadol | `Q60` · not captured | 0.15 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row12:col4 |
-| β3 — 1R,2R ‐ Tramadol | `Q60` · not captured | 0.95 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row13:col2 |
-| ωα2 — 1R,2R ‐ Tramadol | `Q314` · not captured | 0.1 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row14:col2 |
-| ωα2 — 1S,2S ‐ Tramadol | `Q314` · not captured | 0.155 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row14:col4 |
-| KbM1 — 1R,2R ‐ Tramadol | `Q1` · not captured | 3.07 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row22:col2 |
-| KbM1 — 1S,2S ‐ Tramadol | `Q1` · not captured | 3.65 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row22:col4 |
-| fuM1 — 1R,2R ‐ Tramadol | `Q46` · not captured | 0.246 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row23:col2 |
-| fuM1 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.215 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row23:col4 |
-| FRAC — 1R,2R ‐ Tramadol | `Q43` · not captured | 0.0661 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row26:col2 |
-| CLbileu/FL/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 382 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row28:col2 |
-| CLbileu/FL/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 406 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row28:col4 |
-| CLM1,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 42 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row32:col2 |
-| CLM1,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 120 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row32:col4 |
-| CLM2,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 7.75 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row34:col2 |
-| CLM2,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 13.4 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row34:col4 |
-| CLotherparent,u L/h — 1R,2R ‐ Tramadol | `Q24` · not captured | 36.4 | u L/h | not captured | llm (not captured) | psp413315-tbl-0001:row36:col2 |
-| CLotherparent,u L/h — 1S,2S ‐ Tramadol | `Q24` · not captured | 38.6 | u L/h | not captured | llm (not captured) | psp413315-tbl-0001:row36:col4 |
-| fm1 — 1R,2R ‐ Tramadol | `Q45` · not captured | 0.538 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row37:col2 |
-| fm1 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.415 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row37:col4 |
-| fm2 — 1R,2R ‐ Tramadol | `Q45` · not captured | 0.10 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row38:col2 |
-| fm2 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.225 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row38:col4 |
-| Vmaxnmol/h — 1R,2R ‐ Tramadol | `Q66` · not captured | 98.6 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row39:col2 |
-| Vmaxnmol/h — 1S,2S ‐ Tramadol | `Q66` · not captured | 139 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row39:col4 |
-| Km nmol/L — 1R,2R ‐ Tramadol | `Q1` · not captured | 16300 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row40:col2 |
-| Km nmol/L — 1S,2S ‐ Tramadol | `Q1` · not captured | 21500 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row40:col4 |
-| ωCLFM1,u/F2 — 1R,2R ‐ Tramadol | `Q27` · not captured | 0.726 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row41:col2 |
-| ωCLFM1,u/F2 — 1S,2S ‐ Tramadol | `Q27` · not captured | 0.304 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row41:col4 |
-| ωKb22 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.43 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row42:col2 |
-| ωKb22 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.119 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row42:col4 |
-| ωCLbileu/F2 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.487 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row43:col2 |
-| ωCLbileu/F2 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.276 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row43:col4 |
-| ωCLM2,u/F2 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.443 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row44:col2 |
-| ωCLM2,u/F2 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.332 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row44:col4 |
-| ωVmax2 — 1R,2R ‐ Tramadol | `Q66` · not captured | 0.415 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row45:col2 |
-| ωKm2 — 1R,2R ‐ Tramadol | `Q1` · not captured | 1.99 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row46:col2 |
-| ωKm2 — 1S,2S ‐ Tramadol | `Q1` · not captured | 2.51 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row46:col4 |
-| σprop,parent,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.044 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row47:col2 |
-| σprop,parent,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.043 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row47:col4 |
-| σprop,parent,t2 — 1R,2R ‐ Tramadol | `Q316` · not captured | 0.041 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row48:col2 |
-| σprop,parent,t2 — 1S,2S ‐ Tramadol | `Q316` · not captured | 0.039 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row48:col4 |
-| σprop,M1,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.181 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row49:col2 |
-| σprop,M1,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.161 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row49:col4 |
-| σprop,M1,t2 — 1R,2R ‐ Tramadol | `Q316` · not captured | 0.217 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row50:col2 |
-| σprop,M1,t2 — 1S,2S ‐ Tramadol | `Q316` · not captured | 0.234 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row50:col4 |
-| σprop,M2,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.083 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row51:col2 |
-| σprop,M2,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.096 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row51:col4 |
-| ke0 h−1 — 1R,2R ‐ Tramadol | `Q326` · not captured | 0.0398 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row53:col2 |
-| Imax — 1R,2R ‐ Tramadol | `Q323` · not captured | 0.908 | RSE% | not captured | exact (not captured) | psp413315-tbl-0001:row54:col2 |
-| IC 50 [nmol/L] — 1R,2R ‐ Tramadol | `Q322` · not captured | 2.36 | nmol/L | not captured | llm (not captured) | psp413315-tbl-0001:row56:col2 |
-| ωImax2 — 1R,2R ‐ Tramadol | `Q323` · not captured | 8.97 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row59:col2 |
-| σadd2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.713 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row61:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | α — 1R,2R ‐ Tramadol | `Q67` · not captured | 2.96 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row3:col2 |
+| PK (driver) | α — 1S,2S ‐ Tramadol | `Q67` · not captured | 3.63 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row3:col4 |
+| PK (driver) | γ — 1R,2R ‐ Tramadol | `Q89` · not captured | 0.147 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row4:col2 |
+| PK (driver) | γ — 1S,2S ‐ Tramadol | `Q89` · not captured | 0.087 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row4:col4 |
+| PK (driver) | β — 1R,2R ‐ Tramadol | `Q47` · not captured | 0.762 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row5:col2 |
+| PK (driver) | β — 1S,2S ‐ Tramadol | `Q47` · not captured | 0.779 | not captured | not captured | exact (not captured) | psp413315-tbl-0001:row5:col4 |
+| PK (driver) | Vcparent,u/F L — 1R,2R ‐ Tramadol | `Q76` · not captured | 63.4 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row6:col2 |
+| PK (driver) | Vcparent,u/F L — 1S,2S ‐ Tramadol | `Q76` · not captured | 78.1 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row6:col4 |
+| PK (driver) | β1 — 1R,2R ‐ Tramadol | `Q60` · not captured | 3.87 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row7:col2 |
+| PK (driver) | β1 — 1S,2S ‐ Tramadol | `Q60` · not captured | 3.43 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row7:col4 |
+| PK (driver) | Qparent,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 299 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row9:col2 |
+| PK (driver) | Qparent,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 337 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row9:col4 |
+| PK (driver) | β2 — 1R,2R ‐ Tramadol | `Q60` · not captured | 0.311 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row12:col2 |
+| PK (driver) | β2 — 1S,2S ‐ Tramadol | `Q60` · not captured | 0.15 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row12:col4 |
+| PK (driver) | β3 — 1R,2R ‐ Tramadol | `Q60` · not captured | 0.95 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row13:col2 |
+| variability | ωα2 — 1R,2R ‐ Tramadol | `Q314` · not captured | 0.1 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row14:col2 |
+| variability | ωα2 — 1S,2S ‐ Tramadol | `Q314` · not captured | 0.155 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row14:col4 |
+| PK (driver) | KbM1 — 1R,2R ‐ Tramadol | `Q1` · not captured | 3.07 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row22:col2 |
+| PK (driver) | KbM1 — 1S,2S ‐ Tramadol | `Q1` · not captured | 3.65 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row22:col4 |
+| PK (driver) | fuM1 — 1R,2R ‐ Tramadol | `Q46` · not captured | 0.246 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row23:col2 |
+| PK (driver) | fuM1 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.215 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row23:col4 |
+| PK (driver) | FRAC — 1R,2R ‐ Tramadol | `Q43` · not captured | 0.0661 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row26:col2 |
+| PK (driver) | CLbileu/FL/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 382 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row28:col2 |
+| PK (driver) | CLbileu/FL/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 406 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row28:col4 |
+| PK (driver) | CLM1,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 42 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row32:col2 |
+| PK (driver) | CLM1,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 120 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row32:col4 |
+| PK (driver) | CLM2,u/F L/h — 1R,2R ‐ Tramadol | `Q358` · not captured | 7.75 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row34:col2 |
+| PK (driver) | CLM2,u/F L/h — 1S,2S ‐ Tramadol | `Q358` · not captured | 13.4 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row34:col4 |
+| PK (driver) | CLotherparent,u L/h — 1R,2R ‐ Tramadol | `Q24` · not captured | 36.4 | u L/h | not captured | llm (not captured) | psp413315-tbl-0001:row36:col2 |
+| PK (driver) | CLotherparent,u L/h — 1S,2S ‐ Tramadol | `Q24` · not captured | 38.6 | u L/h | not captured | llm (not captured) | psp413315-tbl-0001:row36:col4 |
+| PK (driver) | fm1 — 1R,2R ‐ Tramadol | `Q45` · not captured | 0.538 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row37:col2 |
+| PK (driver) | fm1 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.415 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row37:col4 |
+| PK (driver) | fm2 — 1R,2R ‐ Tramadol | `Q45` · not captured | 0.10 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row38:col2 |
+| PK (driver) | fm2 — 1S,2S ‐ Tramadol | `Q45` · not captured | 0.225 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row38:col4 |
+| PK (driver) | Vmaxnmol/h — 1R,2R ‐ Tramadol | `Q66` · not captured | 98.6 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row39:col2 |
+| PK (driver) | Vmaxnmol/h — 1S,2S ‐ Tramadol | `Q66` · not captured | 139 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row39:col4 |
+| PK (driver) | Km nmol/L — 1R,2R ‐ Tramadol | `Q1` · not captured | 16300 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row40:col2 |
+| PK (driver) | Km nmol/L — 1S,2S ‐ Tramadol | `Q1` · not captured | 21500 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row40:col4 |
+| PK (driver) | ωCLFM1,u/F2 — 1R,2R ‐ Tramadol | `Q27` · not captured | 0.726 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row41:col2 |
+| PK (driver) | ωCLFM1,u/F2 — 1S,2S ‐ Tramadol | `Q27` · not captured | 0.304 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row41:col4 |
+| PK (driver) | ωKb22 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.43 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row42:col2 |
+| PK (driver) | ωKb22 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.119 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row42:col4 |
+| PK (driver) | ωCLbileu/F2 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.487 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row43:col2 |
+| PK (driver) | ωCLbileu/F2 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.276 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row43:col4 |
+| PK (driver) | ωCLM2,u/F2 — 1R,2R ‐ Tramadol | `Q358` · not captured | 0.443 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row44:col2 |
+| PK (driver) | ωCLM2,u/F2 — 1S,2S ‐ Tramadol | `Q358` · not captured | 0.332 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row44:col4 |
+| PK (driver) | ωVmax2 — 1R,2R ‐ Tramadol | `Q66` · not captured | 0.415 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row45:col2 |
+| PK (driver) | ωKm2 — 1R,2R ‐ Tramadol | `Q1` · not captured | 1.99 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row46:col2 |
+| PK (driver) | ωKm2 — 1S,2S ‐ Tramadol | `Q1` · not captured | 2.51 | not captured | not captured | llm (not captured) | psp413315-tbl-0001:row46:col4 |
+| variability | σprop,parent,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.044 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row47:col2 |
+| variability | σprop,parent,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.043 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row47:col4 |
+| variability | σprop,parent,t2 — 1R,2R ‐ Tramadol | `Q316` · not captured | 0.041 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row48:col2 |
+| variability | σprop,parent,t2 — 1S,2S ‐ Tramadol | `Q316` · not captured | 0.039 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row48:col4 |
+| variability | σprop,M1,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.181 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row49:col2 |
+| variability | σprop,M1,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.161 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row49:col4 |
+| variability | σprop,M1,t2 — 1R,2R ‐ Tramadol | `Q316` · not captured | 0.217 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row50:col2 |
+| variability | σprop,M1,t2 — 1S,2S ‐ Tramadol | `Q316` · not captured | 0.234 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row50:col4 |
+| variability | σprop,M2,u2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.083 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row51:col2 |
+| variability | σprop,M2,u2 — 1S,2S ‐ Tramadol | `Q315` · not captured | 0.096 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row51:col4 |
+| PD (effect) | ke0 h−1 — 1R,2R ‐ Tramadol | `Q326` · not captured | 0.0398 | RSE% | not captured | llm_confirmed (not captured) | psp413315-tbl-0001:row53:col2 |
+| PD (effect) | Imax — 1R,2R ‐ Tramadol | `Q323` · not captured | 0.908 | RSE% | not captured | exact (not captured) | psp413315-tbl-0001:row54:col2 |
+| PD (effect) | IC 50 [nmol/L] — 1R,2R ‐ Tramadol | `Q322` · not captured | 2.36 | nmol/L | not captured | llm (not captured) | psp413315-tbl-0001:row56:col2 |
+| PD (effect) | ωImax2 — 1R,2R ‐ Tramadol | `Q323` · not captured | 8.97 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row59:col2 |
+| variability | σadd2 — 1R,2R ‐ Tramadol | `Q315` · not captured | 0.713 | RSE% | not captured | llm (not captured) | psp413315-tbl-0001:row61:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

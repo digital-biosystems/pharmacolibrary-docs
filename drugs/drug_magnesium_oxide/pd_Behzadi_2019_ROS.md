@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium oxide nanoparticles (measured concentrations) drives ROS generation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In K562 cells, MgO nanoparticles at their IC50 concentration (17.75 µg/mL) for 24 hours increased intracellular ROS generation (mean FLI-1H 2,407 vs 821 in controls), an effect reduced by the ROS scavenger curcumin (50 µM pretreatment; FLI-1H 1,082), indicating ROS acts upstream of MgO NP-induced apoptosis; the paper reports no PD model parameters (no Imax, IC50 for ROS, Emax, kin, kout, ke0, or gamma) and describes no formal mechanism model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Behzadi_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

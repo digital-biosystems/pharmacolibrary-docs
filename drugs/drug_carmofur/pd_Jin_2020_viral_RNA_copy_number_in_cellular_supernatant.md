@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carmofur (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carmofur concentrations (μM) inhibit SARS-CoV-2 replication in cells, measured as viral RNA copy number in the cellular supernatant, with an EC50 of 24.30 μM; the mechanism is inhibition of the SARS-CoV-2 main protease via covalent binding of carmofur's carbonyl group to catalytic Cys145, with the fatty acid tail occupying the S2 subsite. The paper does not report a full PD model (no Imax, kin, kout, ke0 or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

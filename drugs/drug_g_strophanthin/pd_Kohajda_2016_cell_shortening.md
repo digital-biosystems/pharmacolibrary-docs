@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ORM-10962 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> ORM-10962, a selective NCX inhibitor, acts on cell shortening (and Ca2+ transients) in isolated dog ventricular myocytes indirectly by inhibiting the sodium-calcium exchanger, with EC50 values of 55 nM (inward) and 67 nM (outward) for NCX current; effects on cell shortening were measured only at a fixed 1 μM concentration (e.g. -38.12±16.45% in enhanced reverse mode, +56.47±17.85% in enhanced forward mode), and no Emax/IC50 or kinetic parameters for the shortening response itself are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kohajda_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

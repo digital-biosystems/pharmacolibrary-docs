@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin degludec and insulin aspart drive glucose infusion rate (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> In Japanese patients with type 1 diabetes, a population PK/PD model linked separate IDeg and IAsp insulin concentrations to glucose infusion rate (GIR) via two separate insulin-action effect compartments (one for IDeg, one for IAsp, each with its own turnover and insulin sensitivity parameter), whose contributions were additive on the GIR scale; the paper does not report numeric potency or rate parameter values (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma are given in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haahr_2016`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

@@ -25,15 +25,15 @@ May also be used off-label to manage panic disorders with or without agoraphobia
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | parent + metabolite (no model) | 1 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tamayo_1992_reference](drugs/drug_imipramine/Imipramine_Tamayo1992_reference.md) | — | parent + metabolite (no model) | 1 | Tamayo M et al., Population pharmacokinetics of imiprami…, European journal of clinica… (1992) | [10.1007/BF02280761](https://doi.org/10.1007/BF02280761) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Teschemacher_1999](drugs/drug_imipramine/pd_Teschemacher_1999_I_HERG.md) | Teschemacher AG et al., Inhibition of the current of heterologo…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702800](https://doi.org/10.1038/sj.bjp.0702800) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Teschemacher_1999_I_HERG](drugs/drug_imipramine/pd_Teschemacher_1999_I_HERG.md) | HERG tail current ← imipramine · direct sigmoid Emax (Hill) effect | — | Teschemacher AG et al., Inhibition of the current of heterologo…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702800](https://doi.org/10.1038/sj.bjp.0702800) |
 
 ## ADME sites
 
@@ -47,6 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `SLC22A4` inhibitor | DrugBank actor |
 | absorption | stomach | <sub>“…c amine groups are ionized in the acidic environment of the stomach, preventing movement a…”</sub> | prose |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` unknown, `ORM1` unknown | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |

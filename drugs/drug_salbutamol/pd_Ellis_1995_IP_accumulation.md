@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salmeterol (measured concentrations) drives inhibition of histamine-stimulated [3H]-inositol phosphate accumulation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Salmeterol (0.1–1000 nM) concentration-dependently inhibited histamine (0.1 mM)-stimulated [3H]-inositol phosphate accumulation in bovine tracheal smooth muscle slices, with IC50 = 1.4 [0.3–6.3] nM, more potent than salbutamol (1–10000 nM; IC50 = 13.8 [7.0–27.4] nM); the paper does not state a formal PD model (e.g. kin/kout or Emax parameters) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ellis_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

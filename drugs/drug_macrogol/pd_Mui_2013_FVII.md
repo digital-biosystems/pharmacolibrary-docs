@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SiRNA (the dose) drives FVII protein concentration (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In mice, FVII siRNA delivered in LNPs dose-dependently reduces plasma FVII protein concentration (measured 24 h after intravenous dosing by the Biophen VII assay); the paper does not state a mechanistic PD model, but reports ED50 values (siRNA dose reducing FVII by 50% vs saline controls, by linear interpolation) of ~0.02–0.04 mg/kg for LNPs with 1.5 mol% PEG-C14/C16/C18, 0.02–0.06 mg/kg for PEG-C14 at 1.5–3.5 mol%, while 2.5–3.5 mol% PEG-C18 LNPs were inactive over the tested dose range.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mui_2013`
 - **model family:** `unknown`
 - **driver:** `dose_only`

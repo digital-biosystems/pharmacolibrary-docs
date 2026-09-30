@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives VER P-100 latency (in msec): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (ng/ml, after a 15 mg oral dose) were related to the increase in VER P-100 latency (msec) with a sigmoid Emax model, with hysteresis accounted for by an effect-compartment delay parameter ke0; the paper does not state the numeric parameter values (Emax, EC50, gamma, ke0) in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koopmans_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

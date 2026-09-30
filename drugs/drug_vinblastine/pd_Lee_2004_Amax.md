@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-methoxy-6,7-dipropyloxyflavone (23) drive intracellular vinblastine accumulation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In KB/MDR cells, 5-methoxy-6,7-dipropyloxyflavone (23) increases intracellular vinblastine accumulation (a 1-h accumulation assay used as a surrogate marker of P-gp 170 pump activity) by inhibiting the P-gp 170 ATP-dependent efflux pump; the paper does not state an Emax model, potency values (IC50/EC50/Emax), or rate parameters for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2004`
 - **model family:** `emax`
 - **driver:** `not_resolved`

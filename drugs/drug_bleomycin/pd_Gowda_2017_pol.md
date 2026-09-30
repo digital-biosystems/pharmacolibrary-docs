@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Honokiol (measured concentrations) drives DNA polymerase λ activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Honokiol (HNL) concentrations inhibit purified human DNA polymerase λ activity (dCTP incorporation) by hyperbolic mixed-type noncompetitive inhibition with respect to dCTP, with a Ki of 8.3 µM; no Emax/IC50 or turnover (kin/kout) parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gowda_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

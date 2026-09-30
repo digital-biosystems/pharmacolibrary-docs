@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cs/PVA/MgO-C. roseus biocomposite (measured concentrations) drives name (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro egg albumin denaturation assay: the Cs/PVA/MgO-C. roseus biocomposite (25, 50, 100 µg/mL) concentration-dependently inhibits protein denaturation, measured as % inhibition (~70% at 25, ~80% at 50, ~90% at 100 µg/mL, similar to diclofenac). The paper reports no PD model, mechanism, or potency parameters (no IC50/Emax).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hemanth_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

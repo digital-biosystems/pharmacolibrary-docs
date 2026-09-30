@@ -16,16 +16,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Dodds_2005_reference](drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md) | 1-compartment general linear | 0 | Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005) | [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span><br><sub>STALE — current validate: not captured</sub> | [Dodds_2005_reference](drugs/drug_coagulation_factor_xiii/CoagulationFactorXiii_Dodds2005_reference.md) | held back | 1-compartment general linear | 0 | Dodds MG et al., Population pharmacokinetics of recombin…, The AAPS journal (2005) | [10.1208/aapsj070370](https://doi.org/10.1208/aapsj070370) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Byrnes_2024](drugs/drug_coagulation_factor_xiii/pd_Byrnes_2024_FXIII_Act.md) | Byrnes JR et al., Reciprocal stabilization of coagulation…, Blood (2024) | [10.1182/blood.2023022042](https://doi.org/10.1182/blood.2023022042) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Byrnes_2024](drugs/drug_coagulation_factor_xiii/pd_Byrnes_2024_FXIII_Ag.md) | Byrnes JR et al., Reciprocal stabilization of coagulation…, Blood (2024) | [10.1182/blood.2023022042](https://doi.org/10.1182/blood.2023022042) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Byrnes_2024_FXIII_Act](drugs/drug_coagulation_factor_xiii/pd_Byrnes_2024_FXIII_Act.md) | FXIII activity ← rFXIII-A2 · stimulation effect | — | Byrnes JR et al., Reciprocal stabilization of coagulation…, Blood (2024) | [10.1182/blood.2023022042](https://doi.org/10.1182/blood.2023022042) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Byrnes_2024_FXIII_Ag](drugs/drug_coagulation_factor_xiii/pd_Byrnes_2024_FXIII_Ag.md) | FXIII antigen ← rFXIII-A2 · stimulation effect | — | Byrnes JR et al., Reciprocal stabilization of coagulation…, Blood (2024) | [10.1182/blood.2023022042](https://doi.org/10.1182/blood.2023022042) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

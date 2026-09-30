@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rituximab (measured concentrations) drives name (in OS): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model; it reports only an observational exposure-response association in which higher first-cycle rituximab trough concentrations (C1-trough, μg/ml) were associated with longer overall survival (and PFS) in DLBCL patients on R-CHOP, with a C1-trough ≥18.40 μg/ml linked to better OS (p = 0.0038); no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2022`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

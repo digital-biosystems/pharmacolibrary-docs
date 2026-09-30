@@ -20,7 +20,7 @@ In February 2020, the FDA issued a Drug Safety Communication requesting the manu
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 07:50 | 7:19 | 0/0/0 | 1/1/0 | 0/0/0 | 146,790/5,707 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
+| 2026-09-29 23:21 | 1:51 | 0/0/0 | 1/1/0 | 0/0/0 | 9,550/1,652 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 5/0 | 0 |
 
 ## popPK records
 
@@ -28,10 +28,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Han_2015](drugs/drug_lorcaserin/pd_Han_2015_BW.md) | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Sharma_2018](drugs/drug_lorcaserin/pd_Sharma_2018_BW.md) | Sharma VD et al., Model-Based Approach to Predict Adheren…, Journal of clinical pharmac… (2018) | [10.1002/jcph.994](https://doi.org/10.1002/jcph.994) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Han_2015_BW](drugs/drug_lorcaserin/pd_Han_2015_BW.md) | body weight ← M1 and M2 (sibutramine metabolites) · direct sigmoid Emax (Hill) effect | — | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Sharma_2018_BW](drugs/drug_lorcaserin/pd_Sharma_2018_BW.md) | body weight ← naltrexone/bupropion · indirect response — drug inhibits the production of body weight | — | Sharma VD et al., Model-Based Approach to Predict Adheren…, Journal of clinical pharmac… (2018) | [10.1002/jcph.994](https://doi.org/10.1002/jcph.994) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 53 matched, 53 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -74,7 +74,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kulkarni_2017.pdf` | Kulkarni P et al., Correlation of pharmacokinetics and bra…, Journal of pharmacological… (2017) | pd | 5 | [10.1016/j.vascn.2017.09.258](https://doi.org/10.1016/j.vascn.2017.09.258) | [28974368](https://www.ncbi.nlm.nih.gov/pubmed/28974368) | metadata signals extractable PD data (PK-PD) |
 | `Usmani_2012.pdf` | Usmani KA et al., Identification of human cytochrome P450…, Drug metabolism and disposi… (2012) | pgx | 7 | [10.1124/dmd.111.043414](https://doi.org/10.1124/dmd.111.043414) | [22266842](https://www.ncbi.nlm.nih.gov/pubmed/22266842) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-22T07:48:17.548701+00:00</sub>
+<sub>queue written 2026-09-29T23:20:35.037456+00:00</sub>
 
 ## Screened and excluded
 

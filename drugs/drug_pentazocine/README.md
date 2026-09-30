@@ -26,16 +26,16 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Altura_1983](drugs/drug_pentazocine/pd_Altura_1983_contractile_tension.md) | Altura BT et al., Phencyclidine ("angel dust") analogs an…, Proceedings of the National… (1983) | [10.1073/pnas.80.3.865](https://doi.org/10.1073/pnas.80.3.865) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Omori_2022](drugs/drug_pentazocine/pd_Omori_2022_NRS.md) | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008](drugs/drug_pentazocine/pd_Rybczynska_2008_Choline.md) | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008](drugs/drug_pentazocine/pd_Rybczynska_2008_FDG.md) | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008](drugs/drug_pentazocine/pd_Rybczynska_2008_FLT.md) | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008](drugs/drug_pentazocine/pd_Rybczynska_2008_Methionine.md) | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008](drugs/drug_pentazocine/pd_Rybczynska_2008_cell_count.md) | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Tyers_1980](drugs/drug_pentazocine/pd_Tyers_1980_unknown.md) | Tyers MB, A classification of opiate receptors th…, British journal of pharmaco… (1980) | [10.1111/j.1476-5381.1980.tb07041.x](https://doi.org/10.1111/j.1476-5381.1980.tb07041.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Altura_1983_contractile_tension](drugs/drug_pentazocine/pd_Altura_1983_contractile_tension.md) | name ← phencyclidine · direct Emax (saturable) effect | — | Altura BT et al., Phencyclidine ("angel dust") analogs an…, Proceedings of the National… (1983) | [10.1073/pnas.80.3.865](https://doi.org/10.1073/pnas.80.3.865) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Omori_2022_NRS](drugs/drug_pentazocine/pd_Omori_2022_NRS.md) | name ← Pentazocine · indirect response — drug inhibits the production of name | — | Omori T et al., Pharmacokinetic/Pharmacodynamic Modelin…, Biological & pharmaceutical… (2022) | [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008_Choline](drugs/drug_pentazocine/pd_Rybczynska_2008_Choline.md) | 11C-choline uptake ← (1)-pentazocine, AC915, rimcazole, haloperidol · inhibition effect | — | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008_FDG](drugs/drug_pentazocine/pd_Rybczynska_2008_FDG.md) | 18F-FDG uptake ← (1)-pentazocine, AC915, rimcazole, haloperidol · inhibition effect | — | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008_FLT](drugs/drug_pentazocine/pd_Rybczynska_2008_FLT.md) | 18F-FLT uptake ← (1)-pentazocine, AC915, rimcazole, haloperidol · inhibition effect | — | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008_Methionine](drugs/drug_pentazocine/pd_Rybczynska_2008_Methionine.md) | 11C-methionine uptake ← (1)-pentazocine, AC915, rimcazole, haloperidol · inhibition effect | — | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rybczynska_2008_cell_count](drugs/drug_pentazocine/pd_Rybczynska_2008_cell_count.md) | cell number ← (1)-pentazocine, AC915, rimcazole, haloperidol · inhibition effect | — | Rybczynska AA et al., Cytotoxicity of sigma-receptor ligands…, Journal of nuclear medicine… (2008) | [10.2967/jnumed.108.053876](https://doi.org/10.2967/jnumed.108.053876) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Tyers_1980_unknown](drugs/drug_pentazocine/pd_Tyers_1980_unknown.md) | antinociception ← unknown · inhibition effect | — | Tyers MB, A classification of opiate receptors th…, British journal of pharmaco… (1980) | [10.1111/j.1476-5381.1980.tb07041.x](https://doi.org/10.1111/j.1476-5381.1980.tb07041.x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -59,6 +59,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | liver | <sub>“…Hepatic…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: OPRK1 (target), OPRM1 (target), SIGMAR1 (target).</sub>

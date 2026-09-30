@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives blood pressure (in mm Hg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Doxazosin plasma concentrations were related to falls in systolic and diastolic blood pressure by a linear effect model with an effect-compartment equilibration rate constant Keq (slope m and Keq given per patient in Table 4); no direct concentration-effect relationship existed in individual patients. Responsiveness (slope m) declined significantly from -2.1 mm Hg·ng⁻¹·ml⁻¹ after the first dose to -1.5 after 1 week and -1.4 after 6 weeks (about 30% loss, mostly in the first week); no Imax, IC50, Emax or gamma values are stated, and the paper does not give a production/elimination-turnover mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Donnelly_1989_2`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

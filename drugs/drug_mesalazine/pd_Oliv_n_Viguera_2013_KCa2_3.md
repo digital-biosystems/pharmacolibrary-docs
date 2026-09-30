@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 13b (measured concentrations) drives KCa2.3 current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 13b inhibits the hKCa2.3 current (patch-clamp) with a direct concentration–response (Emax-type) block; the paper reports an EC50 of 241±129 pM with a Hill coefficient close to 1, and SKA-31 recovered the current blocked by 1 nM 13b.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oliván-Viguera_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

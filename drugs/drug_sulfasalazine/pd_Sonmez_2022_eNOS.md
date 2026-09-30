@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulfasalazine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sulfasalazine (single pre-treatment concentration 300 mM, 30 min) was tested against high-glucose-impaired vascular responses in rat thoracic aorta, with eNOS levels measured by ELISA (e.g., 9.17 ± 3.07 ng/ml in high glucose vs. 19.16 ± 11.625 ng/ml in control); sulfasalazine improved contractile/relaxation responses and modulated eNOS and HO-1 levels, attributed to Nrf2/HO-1 and ERK–JNK pathway involvement. The paper does not report an Emax/IC50-type concentration–response fit for sulfasalazine on eNOS, and no mechanism of drug action on the eNOS response is quantified beyond this pathway-based interpretation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sonmez_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

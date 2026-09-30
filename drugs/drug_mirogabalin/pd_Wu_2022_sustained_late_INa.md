@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mirogabalin (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Mirogabalin (0.3–100 μM) concentration-dependently inhibits the sustained (late) Na+ current (INa(L)) in GH3 cells, described by a modified Hill (sigmoid Emax) equation with an IC50 of 7.3 μM (vs 19.5 μM for peak INa(T)); the paper does not state Imax, kin, kout, or ke0, and the mechanism is direct channel block (state- and use-dependent inhibition of INa), with a KD of 8.2 μM for the MGB-induced increase in current inactivation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plumbagin (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Menadione decreased C6 glioblastoma cell viability in a concentration-dependent manner, causing cell death by necrosis; the paper does not state a pharmacodynamic model or mechanism beyond this direct cytotoxic effect, reporting an IC50 of 9.6 ± 0.75 μM, with no effect at 1–3 μM, viability dropping to 20–49% at 5–8 μM, and near-complete cell death at 20–25 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Majiene_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MQ232 drives cystic index (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MQ232 (nmol/kg BW, s.c.) is modelled with an Emax-type relationship stimulating the cystic index (ratio of cyst area to total kidney area, %) measured in embryonic kidneys treated six days with MQ232; the paper does not state the mechanism of this effect and provides no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma) for the cystic index model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stanajic-Petrovic_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

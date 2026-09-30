@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amide 6 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amide 6 concentrations (µM) inhibit the chymotrypsin-like (ChT-L) activities of the immunoproteasome, with Ki values of 4.90 µM (β1i) and 4.39 µM (β5i), and inhibit MM.1R cell vitality with EC50 = 17.8 µM; the paper does not state a PD model structure (no Imax, kin, kout, ke0, or gamma), and the mechanism of the cell vitality response is not given beyond proteasome inhibition leading to cell cycle arrest.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

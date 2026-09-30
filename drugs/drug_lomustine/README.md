@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> | [Rodón_2015_reference](drugs/drug_lomustine/Lomustine_Rodn2015_reference.md) | 1-compartment, IV | 2 | Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015) | [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> | [Rodón_2015_reference](drugs/drug_lomustine/Lomustine_Rodn2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Rodón J et al., Pharmacokinetic, pharmacodynamic and bi…, Investigational new drugs (2015) | [10.1007/s10637-014-0192-4](https://doi.org/10.1007/s10637-014-0192-4) |
 
 ## ADME sites
 

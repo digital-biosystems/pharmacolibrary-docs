@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MAP30 (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> MAP30 (and Momordin) concentrations (μM) were assayed in A549-ACE2 cells for inhibition of SARS-CoV-2 replication (IC50 ~0.2 μM, overall mean 5.7 μg/ml) with concomitant cell viability (% viability) measured for cytotoxicity (CC50 ~2 μM, overall mean 72 μg/ml or ~2.4 μM); the mechanism is not modeled as a PD production/elimination process but the paper attributes the inhibitory effect to MAP30's RNA N-glycosylase activity (depurination of 28S rRNA), since Y70 mutation abrogates both effects, and K171/K215 mutation reduced potency (IC50 ~1 μM, CC50 ~10 μM). Data were fit by dose-response (sigmoid Emax-type) non-linear curve fitting; no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watts_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Watts NR; Eren E; Palmer I; Huang PL; Huang PL; Shoemaker RH; et al. et al. (202
   ·  DOI: [10.1371/journal.pone.0286370](https://doi.org/10.1371/journal.pone.0286370)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — IC50 (μg/ml)b | `Q322` · not captured | 6.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col2 |
-| 1 — CC50 (μg/ml)c | `Q322` · not captured | 100.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col3 |
-| 2 f — IC50 (μg/ml)b | `Q322` · not captured | 5.9 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col2 |
-| 2 f — CC50 (μg/ml)c | `Q322` · not captured | 50.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col3 |
-| 3 — IC50 (μg/ml)b | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col2 |
-| 3 — CC50 (μg/ml)c | `Q322` · not captured | 96.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col3 |
-| 4 — IC50 (μg/ml)b | `Q322` · not captured | 7.4 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col2 |
-| 4 — CC50 (μg/ml)c | `Q322` · not captured | 101.7 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — IC50 (μg/ml)b | `Q322` · not captured | 6.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col2 |
+| PD (effect) | 1 — CC50 (μg/ml)c | `Q322` · not captured | 100.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col3 |
+| PD (effect) | 2 f — IC50 (μg/ml)b | `Q322` · not captured | 5.9 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col2 |
+| PD (effect) | 2 f — CC50 (μg/ml)c | `Q322` · not captured | 50.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col3 |
+| PD (effect) | 3 — IC50 (μg/ml)b | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col2 |
+| PD (effect) | 3 — CC50 (μg/ml)c | `Q322` · not captured | 96.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col3 |
+| PD (effect) | 4 — IC50 (μg/ml)b | `Q322` · not captured | 7.4 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col2 |
+| PD (effect) | 4 — CC50 (μg/ml)c | `Q322` · not captured | 101.7 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taraxacum officinale essential oil (measured concentrations) drives HeLa cell growth inhibition (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taraxacum officinale essential oil concentrations (2–95 µg/mL) inhibit HeLa cell growth measured by MTT as % inhibition of viability; the paper does not state a mechanistic PD model (no kin/kout, Emax, or effect-compartment description). Reported potency: IC50 = 45.56 ± 0.05 µg/mL with maximum inhibition 83.58% at 95 µg/mL, versus doxorubicin (IC50 = 4.34 ± 0.02 µg/mL, 92.50% inhibition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kamal_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

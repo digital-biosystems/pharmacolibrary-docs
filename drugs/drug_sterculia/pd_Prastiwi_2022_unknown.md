@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methanol extract of Sterculia comosa (measured concentrations) drives FRAP antioxidant activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links methanol extract of Sterculia comosa concentrations to FRAP antioxidant activity, but the paper does not present a pharmacodynamic model for FRAP: it reports only FRAP antioxidant capacity of the isolated compounds KC4.4.6 ((-)-2-(E)-caffeoyl-D-glyceric acid) at 16.4 FeEAC mol/g and KC4.4.5.1 (trans-isoferulic acid) at 15.79 FeEAC mol/g, with no mechanism, Emax/IC50 for FRAP, or rate parameters stated. The IC50 values given (methanol extract 2.787 μg/ml, nor-NOHA 3.733 μg/ml) refer to arginase inhibitory activity, not the FRAP response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Prastiwi_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Prastiwi R; Elya B; Hanafi M; Sauriasari R; Desmiaty Y; Dewanti E; et al. et al.
   ·  DOI: [10.1016/j.heliyon.2022.e08798](https://doi.org/10.1016/j.heliyon.2022.e08798)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 15 — IC50 (μg/ml) | `Q322` · not captured | 2.787 | μg/ml | not captured | llm (not captured) | tbl1:row2:col4 |
-| Nor-NOHA — IC50 (μg/ml) | `Q322` · not captured | 3.733 | μg/ml | not captured | llm (not captured) | tbl1:row6:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 15 — IC50 (μg/ml) | `Q322` · not captured | 2.787 | μg/ml | not captured | llm (not captured) | tbl1:row2:col4 |
+| PD (effect) | Nor-NOHA — IC50 (μg/ml) | `Q322` · not captured | 3.733 | μg/ml | not captured | llm (not captured) | tbl1:row6:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

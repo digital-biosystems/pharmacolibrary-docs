@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol (10, 20 and 40 µM) induced chromatin condensation and increased the nucleocytoplasmic ratio in HL-60 cells (Wright–Giemsa staining), an effect enhanced by combination with 1 µM ATRA (40 µM notopterol + 1 µM ATRA, P&lt;0.01). The paper does not state a pharmacodynamic model or mechanism for this categorical response, and no potency (EC50/Emax) or rate parameters are given for chromatin condensation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

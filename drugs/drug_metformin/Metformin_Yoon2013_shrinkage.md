@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **'shrinkage (%)' is a column of the estimates table, not a study population.**
@@ -77,7 +79,6 @@ Yoon H; Cho HY; Yoo HD; Kim SM; Lee YB et al. (2013). The AAPS journal 15
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C1_half_life_beta | pass | 3.1 | 3.038 | 0.98 | 0.25 | reported t½β |
 | C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Yoon_2013:discussion_prose'] |
 | C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Yoon_2013:discussion_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |

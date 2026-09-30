@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VS-77 drives name (in percent_residual_activity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> VS-77 inhibits CLK3 kinase activity (percent residual activity) with an IC50 of 0.3 μM, acting as a direct enzyme inhibitor whose affinity is attributed to a salt bridge between its terminal benzoic acid and lysine 241 of CLK3; it also inhibits the other CLK isoforms (IC50 0.06–0.12 μM). The paper reports no PD model beyond these IC50 values (no Imax, Emax, kin, kout, or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clonidine and midazolam (concentrations from this paper's PK model) drive COMFORT-B score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Clonidine and midazolam plasma concentrations act on the COMFORT-B sedation score via a joint sigmoid Emax (inhibitory) model with Emax fixed to 6 (score), an additive postanesthesia effect (PAEMAX 11.8, washing out over time after surgery), and an estimated midazolam EC50 of 186 ng/mL; the paper does not state a clonidine EC50 value in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bardol_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,12 +31,12 @@ Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; et al. et al. (2025)
   ·  DOI: [10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Parameter | `Q320` · not captured | 6 | not captured | not captured | exact (not captured) | pan70050-tbl-0003:row7:col1 |
-| PAEMAX — Parameter | `Q100` · not captured | 11.8 | not captured | not captured | llm (not captured) | pan70050-tbl-0003:row9:col1 |
-| IIV EC50 (%) — Parameter | `Q321` · not captured | 525 | unknown | not captured | llm_confirmed (not captured) | pan70050-tbl-0003:row11:col1 |
-| Err prop (%) — Parameter | `Q316` · not captured | 28.2 | not captured | not captured | llm (not captured) | pan70050-tbl-0003:row12:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Parameter | `Q320` · not captured | 6 | not captured | not captured | exact (not captured) | pan70050-tbl-0003:row7:col1 |
+| — | PAEMAX — Parameter | `Q100` · not captured | 11.8 | not captured | not captured | llm (not captured) | pan70050-tbl-0003:row9:col1 |
+| PD (effect) | IIV EC50 (%) — Parameter | `Q321` · not captured | 525 | unknown | not captured | llm_confirmed (not captured) | pan70050-tbl-0003:row11:col1 |
+| variability | Err prop (%) — Parameter | `Q316` · not captured | 28.2 | not captured | not captured | llm (not captured) | pan70050-tbl-0003:row12:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

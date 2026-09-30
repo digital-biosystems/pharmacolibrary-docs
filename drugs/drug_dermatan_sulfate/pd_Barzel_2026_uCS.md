@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vestronidase alfa drives urinary chondroitin sulfate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the vestronidase alfa popPD model (Qi et al., 2018), exposure to vestronidase alfa (in µg×h/mL) was related to urinary chondroitin sulfate (uCS) using an Emax model with an inhibitory effect direction; the excerpts do not state the mechanism (e.g., inhibition of uCS production or elimination) and do not report potency or rate values (Imax, IC50/EC50, Emax, kin, kout, ke0, gamma) for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barzel_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

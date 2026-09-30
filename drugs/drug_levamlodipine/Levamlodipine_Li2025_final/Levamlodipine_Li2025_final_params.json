@@ -1,0 +1,37 @@
+{
+ "dose_source": "paper",
+ "model_id": "Levamlodipine_Li2025_final",
+ "molar_masses": {
+  "central.C": 0.5670499999999999
+ },
+ "note": "Values for the shared PK_1C_enteral.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "paper_doses_kind": "discrete",
+ "paper_doses_mg": [
+  2.5,
+  5.0
+ ],
+ "parameters": {
+  "Cl": 1.6558333333333334e-05,
+  "F": 0.9,
+  "MM": 0.5670499999999999,
+  "Tlag": 0.0,
+  "VdPerKg": 0.05102857142857143,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 2.5e-06,
+  "ka": 0.00021944444444444444,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 18699.799599198395
+ },
+ "reference_peaks": {
+  "central.C": 5.795615969429294e-07
+ },
+ "stop_time": 777600.0,
+ "template": "PK_1C_enteral",
+ "template_fmu": "PK_1C_enteral.fmu"
+}

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DDABT1 (measured concentrations) drives name (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for paw edema; DDABT1 (potassium salicylate–telmisartan conjugate) was given as a single dose (0.0194 mmol/kg, TM-equivalent) and the measured response was percent reduction of carrageenan-induced paw edema (87.59% at 4 h), with no concentration–response relationship, Emax/IC50 for inflammation, or mechanism stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dash_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexamethasone (concentrations from this paper's PK model) drives name (in GLU): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Plasma dexamethasone (ng/mL) drives plasma glucose (GLU) in horses via an indirect response model III, in which DEX stimulates GLU production (gluconeogenesis), with zero-order production kin_GLU ~0.25 mM/h, first-order loss (t1/2 14.3 h), Emax 1.187 and EC50 0.80 ng/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GPEGPMGLE, EGPFGPEG, GFIGPTE (measured concentrations) drive Reactive oxygen species (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model (no Imax/IC50/EC50-of-inhibition, kin/kout, ke0, or Emax parameters are given for ROS); it only reports that the collagen peptides GPEGPMGLE, EGPFGPEG, and GFIGPTE scavenge radicals in vitro with EC50 values of 0.59, 0.37, and 0.45 mg/mL (DPPH·), 0.45, 0.33, and 0.32 mg/mL (hydroxyl radical), and 0.62, 0.47, and 0.74 mg/mL (superoxide anion), and that at 100 µM in H2O2-damaged HepG2 cells the peptides (RCP2, RCP3, RCP5) lowered intracellular ROS from 227.2 ± 14.8% of blank control to 140.6 ± 10.8%, 169.1 ± 8.6%, and 182.1 ± 8.9%, respectively, with no mechanism stated beyond direct radical scavenging.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Wang WY; Zhao YQ; Zhao GX; Chi CF; Wang B et al. (2020). Marine drugs 18
   ·  DOI: [10.3390/md18030156](https://doi.org/10.3390/md18030156)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
-| Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
+| PK (driver) | Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

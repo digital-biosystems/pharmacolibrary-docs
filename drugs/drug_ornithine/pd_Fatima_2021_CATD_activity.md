@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> No pharmacodynamic model is described in the paper; the excerpts report in vitro concentration–response data only, with neomenthol (µM) inhibiting ornithine decarboxylase (ODC) activity measured as percent inhibition, giving IC50 values of 20.2 ± 1.02 µM in the cell-free system, 29.59 ± 2.54 µM in K562 and 57.2 ± 2.85 µM in MDA-MB-231 cells, with inhibition below 50% in A549, PC-3, A431 and FaDu; no Imax, kin, kout, ke0 or Hill coefficient is stated, and the mechanism is not modeled beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

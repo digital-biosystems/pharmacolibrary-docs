@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GSK3511294 drives name (in cells μL−1): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> GSK3511294 plasma concentrations (μg mL−1) reduce blood eosinophil counts (cells μL−1) via an indirect response model, consistent with IL-5 neutralization inhibiting eosinophil production; the paper estimates a characteristic concentration for 50% of maximum effect of ~0.1 μg mL−1 and a maximum effect of 87% (baseline eosinophil count included as a covariate on baseline and Emax). No kin/kout or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2022`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -21,22 +31,22 @@ Singh D; Fuhr R; Bird NP; Mole S; Hardes K; Man YL; Cahn A; Yancey SW; Pouliquen
   ·  DOI: [10.1111/bcp.15002](https://doi.org/10.1111/bcp.15002)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Skin and subcutaneous tissue disorders — Placebo (n = 12) | `Q100` · not captured | 0 | n = 12 | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col1 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col2 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col3 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 3 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col4 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col5 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col6 |
-| Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 5 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col7 |
-| Dry skin — Placebo (n = 12) | `Q100` · not captured | 0 | n = 12 | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col1 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col2 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col3 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col4 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col5 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col6 |
-| Dry skin — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Skin and subcutaneous tissue disorders — Placebo (n = 12) | `Q100` · not captured | 0 | n = 12 | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col1 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col2 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col3 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 3 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col4 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col5 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col6 |
+| — | Skin and subcutaneous tissue disorders — GSK3511294 | `Q100` · not captured | 5 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row26:col7 |
+| — | Dry skin — Placebo (n = 12) | `Q100` · not captured | 0 | n = 12 | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col1 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col2 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col3 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col4 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col5 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col6 |
+| — | Dry skin — GSK3511294 | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | bcp15002-tbl-0002:row27:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ferulago carduchorum essential oil drives Cytotoxicity (in µg ml-1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The essential oil of Ferulago carduchorum was tested in an MTT assay against cell viability (cytotoxicity) in T47D, HEPG2, HT-29 and NIH/3T3 cell lines, with IC50 values (µg ml−1) read from dose-response curves; the paper reports only IC50 &lt; 2 µg ml−1 for T47D, HEPG2 and HT-29 (strongest on T47D) and does not state a pharmacodynamic model, mechanism, or potency parameters such as Emax or IC50 values per line.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Golfakhrabadi_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

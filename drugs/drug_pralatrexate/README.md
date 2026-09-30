@@ -28,17 +28,17 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Clark_2020](drugs/drug_pralatrexate/pd_Clark_2020_unknown.md) | Clark RA et al., Preclinical evaluation of the anti-tumo…, Oncotarget (2020) | [10.18632/oncotarget.27697](https://doi.org/10.18632/oncotarget.27697) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026](drugs/drug_pralatrexate/pd_Liang_2026_viral_RNA_level.md) | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026](drugs/drug_pralatrexate/pd_Liang_2026_viral_copy_number.md) | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026](drugs/drug_pralatrexate/pd_Liang_2026_viral_inhibition_percentage.md) | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Peters_2020](drugs/drug_pralatrexate/pd_Peters_2020_growth_inhibition.md) | Peters GJ et al., Schedule-Dependent Synergy Between the…, Frontiers in cell and devel… (2020) | [10.3389/fcell.2020.577215](https://doi.org/10.3389/fcell.2020.577215) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020](drugs/drug_pralatrexate/pd_Scotto_2020_DUSP4_expression.md) | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020](drugs/drug_pralatrexate/pd_Scotto_2020_STAT5_phosphorylation.md) | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020](drugs/drug_pralatrexate/pd_Scotto_2020_growth_inhibition.md) | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2020](drugs/drug_pralatrexate/pd_Zhang_2020_viral_yield.md) | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Clark_2020_unknown](drugs/drug_pralatrexate/pd_Clark_2020_unknown.md) | Ki67 staining ← pralatrexate · inhibition effect | — | Clark RA et al., Preclinical evaluation of the anti-tumo…, Oncotarget (2020) | [10.18632/oncotarget.27697](https://doi.org/10.18632/oncotarget.27697) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026_viral_RNA_level](drugs/drug_pralatrexate/pd_Liang_2026_viral_RNA_level.md) | name ← pralatrexate · direct Emax (saturable) effect | — | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026_viral_copy_number](drugs/drug_pralatrexate/pd_Liang_2026_viral_copy_number.md) | name ← pralatrexate · direct Emax (saturable) effect | — | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Liang_2026_viral_inhibition_percentage](drugs/drug_pralatrexate/pd_Liang_2026_viral_inhibition_percentage.md) | name ← pralatrexate · direct Emax (saturable) effect | — | Liang X et al., Pralatrexate is a potent pan-serotype h…, Antimicrobial agents and ch… (2026) | [10.1128/aac.01960-25](https://doi.org/10.1128/aac.01960-25) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Peters_2020_growth_inhibition](drugs/drug_pralatrexate/pd_Peters_2020_growth_inhibition.md) | name ← pralatrexate · inhibition effect | — | Peters GJ et al., Schedule-Dependent Synergy Between the…, Frontiers in cell and devel… (2020) | [10.3389/fcell.2020.577215](https://doi.org/10.3389/fcell.2020.577215) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020_DUSP4_expression](drugs/drug_pralatrexate/pd_Scotto_2020_DUSP4_expression.md) | name ← pralatrexate · inhibition effect | — | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020_STAT5_phosphorylation](drugs/drug_pralatrexate/pd_Scotto_2020_STAT5_phosphorylation.md) | name ← pralatrexate · inhibition effect | — | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Scotto_2020_growth_inhibition](drugs/drug_pralatrexate/pd_Scotto_2020_growth_inhibition.md) | name ← pralatrexate · inhibition effect | — | Scotto L et al., Generation of pralatrexate resistant T-…, Genes, chromosomes & cancer (2020) | [10.1002/gcc.22884](https://doi.org/10.1002/gcc.22884) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2020_viral_yield](drugs/drug_pralatrexate/pd_Zhang_2020_viral_yield.md) | name ← Pralatrexate · inhibition effect | — | Zhang H et al., A novel virtual screening procedure ide…, PLoS computational biology (2020) | [10.1371/journal.pcbi.1008489](https://doi.org/10.1371/journal.pcbi.1008489) |
 
 ## ADME sites
 
@@ -51,6 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `SLCO1B3` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…ed in urine as unchanged pralatrexate and 34% (CV = 88%) in feces as unchanged pralatrexat…”</sub> | prose |

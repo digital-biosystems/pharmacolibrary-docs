@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cypermethrin (measured concentrations) drives CFU-GEMM (in colonies) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a methylcellulose CFU assay, cypermethrin (1–16 mM) concentration-dependently inhibited CFU-GEMM colony counts after 14 days; the paper reports relative IC50 values for inhibition but does not state a specific mechanism or model parameters (no Imax, Emax, kin/kout, or ke0 given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandarapu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

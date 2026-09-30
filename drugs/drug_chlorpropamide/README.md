@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Vila_1979](drugs/drug_chlorpropamide/pd_Vila_1979_unknown.md) | Vila Jato JL et al., [Relation between the pharmacokinetic a…, Bollettino chimico farmaceu… (1979) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Vila_1979_unknown](drugs/drug_chlorpropamide/pd_Vila_1979_unknown.md) | unknown ← chlorpropamide · model not identified | — | Vila Jato JL et al., [Relation between the pharmacokinetic a…, Bollettino chimico farmaceu… (1979) | — |
 
 ## ADME sites
 

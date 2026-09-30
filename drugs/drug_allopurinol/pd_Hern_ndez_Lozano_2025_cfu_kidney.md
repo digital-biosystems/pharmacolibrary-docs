@@ -14,9 +14,11 @@
 
 **As extracted:** Apramycin (measured concentrations) drives bacterial burden in kidney (in log10 cfu/organ): indirect response — drug inhibits the production of bacterial burden in kidney.
 
-> The paper does not describe the mechanism of action or provide the specific parameter values listed in the record, stating only that allopurinol reduced bacterial burden in the kidney by at least 2-log compared to vehicle control at doses of 3.2, 12.8, and 51.2 mg/kg.
+**Model:** No model was generated from this record.
+
+> Apramycin concentrations (mg/L) act on bacterial burden in kidney (log10 cfu/organ) via an indirect response (inhibition) model, with dissociation constant kd 0.179 mg/L, maximum effect capacity Bmax 9.18, slope gamma 1, and adaptation rate kada 0.080 (×1000); compartment-specific values were kd,k 0.526 mg/L with Bmax,k 6.49 and kd,b 1.16 mg/L with Bmax,b 7.07. The paper excerpts do not state the mechanism, only that kidney and bladder cfu/organ at 96 h post-inoculation were reduced by at least 2-log versus vehicle control and start of treatment.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `indirect_response_i`

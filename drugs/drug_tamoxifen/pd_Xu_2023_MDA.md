@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tamoxifen (concentrations from the PK model of Bosch_2023) drives lipid peroxidation (in nmol/mg protein): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a fitted PD model or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, gamma are given). Qualitatively, tamoxifen (TAM) treatment increased lipid peroxidation measured as MDA (nmol/mg protein) in bladder cancer cells via ROS/iron-dependent ferroptosis, an effect suppressed by RelB; the record's 'inhibition' Emax direction is not supported by the excerpts, which describe induction of MDA by TAM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taspoglutide (measured concentrations) drives body weight loss (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Taspoglutide average concentrations (0, 59.85 and 119.7 pmol/l for placebo, 10 mg and 20 mg SC) act on body weight loss from baseline in an Emax-type model added on top of an exponential placebo response; the drug term is Dmax × C/(IC50 + C) × (1 − e^(−k_drug·t)), with IC50 (potency for 50% of maximum effect) 41.7 pmol/l, maximum drug effect Dmax −1.85 kg versus placebo Pmax −1.33 kg. The paper does not state the values of k_p or k_drug in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2015_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

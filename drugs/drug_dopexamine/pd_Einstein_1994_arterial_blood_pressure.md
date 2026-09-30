@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopexamine drives name (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anaesthetized and conscious dogs, intravenous infusions of dopexamine (dose-response curves of about 5-50 µg kg−1 min−1) decreased arterial blood pressure, an effect attributed to vasodilatation via stimulation of vascular D1 receptors and β2-adrenoceptors (with possible reduced noradrenaline release via prejunctional D2 receptors). The paper reports dose-response curves but does not give a quantitative PD model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values) for the blood pressure response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Einstein_1994`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Einstein R; Abdul-Hussein N; Wong TW; Chang DH; Matthews R; Richardson DP et al.
   ·  DOI: [10.1111/j.1476-5381.1994.tb14044.x](https://doi.org/10.1111/j.1476-5381.1994.tb14044.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| a, | `Q900` · not captured | 0 | s-2 | not captured | llm (not captured) | tab_1:row12:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | a, | `Q900` · not captured | 0 | s-2 | not captured | llm (not captured) | tab_1:row12:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exenatide (concentrations from this paper's PK model) drives name (in unknown): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> Exenatide (serum concentrations, μg/L) stimulates the zero-order production (input) rate of insulin, which in turn acts via an effect compartment to stimulate glucose disposition and inhibit glucose production, lowering blood glucose in diabetic rats. Key insulinotropic parameters: SC50 = 4.02 μg/L (half-maximal stimulation concentration), Sm1 = 0.8, with insulin turnover kinI = 21.3 mU·L⁻¹·h⁻¹ and koutI = 2.11 h⁻¹.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2012`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
@@ -20,11 +30,11 @@
 not matched (stem Li_2012)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SC 50 (μg/L) — Estimate (RSE%) | `Q321` · not captured | 4.02 | μg/L | not captured | llm (not captured) | tab_2:row2:col1 |
-| k inI (mU•L -1 •h -1 ) — Estimate (RSE%) | `Q334` · not captured | 21.3 | mU•L -1 •h -1 | not captured | llm (not captured) | tab_2:row3:col1 |
-| k outI (h -1 ) — Estimate (RSE%) | `Q328` · not captured | 2.11 | h -1 | not captured | llm (not captured) | tab_2:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | SC 50 (μg/L) — Estimate (RSE%) | `Q321` · not captured | 4.02 | μg/L | not captured | llm (not captured) | tab_2:row2:col1 |
+| PD (effect) | k inI (mU•L -1 •h -1 ) — Estimate (RSE%) | `Q334` · not captured | 21.3 | mU•L -1 •h -1 | not captured | llm (not captured) | tab_2:row3:col1 |
+| PD (effect) | k outI (h -1 ) — Estimate (RSE%) | `Q328` · not captured | 2.11 | h -1 | not captured | llm (not captured) | tab_2:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

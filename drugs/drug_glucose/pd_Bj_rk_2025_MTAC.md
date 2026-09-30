@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phloretin (measured concentrations) drives 18F-deoxyglucose diffusion capacity (MTAC) (in μL min−1): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Intraperitoneal phloretin (mg/L) inhibits the diffusive transport of 18F-deoxyglucose, measured as MTAC (µL/min), via blockade of facilitative glucose transporter channels; a sigmoidal Hill (Emax) model gave an EC50 of 4.3 mg/L (95% CI 0.27–8.3 in the first analysis; 1.3–7.3 with Hill coefficient fixed at −2 in the second), while the Hill coefficient itself could not be significantly determined.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Björk_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

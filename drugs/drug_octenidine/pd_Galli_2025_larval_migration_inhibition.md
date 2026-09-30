@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chalcone (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Octenidine concentrations (µM) inhibit larval migration (%) in the LMIT after 24 h incubation, with a reported EC50 of 6.9 µM at 24 h; the paper does not state a pharmacodynamic mechanism (no Emax/kin/kout or effect-compartment parameters are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Galli_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,21 +29,21 @@
 not matched (stem Galli_2025)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ethacridine lactate — EC50 (μM) at 24 h | `Q321` · not captured | 50.1 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row4:col5 |
-| Ethacridine lactate monohydrate — EC50 (μM) at 24 h | `Q321` · not captured | 28.2 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row5:col5 |
-| Octenidine — EC50 (μM) at 24 h | `Q321` · not captured | 6.9 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row13:col5 |
-| Robenidine — EC50 (μM) at 24 h | `Q321` · not captured | 32.3 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row18:col5 |
-| Salinomycin — EC50 (μM) at 24 h | `Q321` · not captured | 55.3 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row19:col5 |
-| Tolfenpyrad — EC50 (μM) at 24 h | `Q321` · not captured | 2.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row23:col5 |
-| Kuwanon G — EC50 (μM) at 24 h | `Q321` · not captured | 34.7 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row24:col5 |
-| Chalcone — EC50 (μM) at 24 h | `Q321` · not captured | 52.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row25:col5 |
-| Trans-chalcone — EC50 (μM) at 24 h | `Q321` · not captured | 24.9 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row26:col5 |
-| Polygodial — EC50 (μM) at 24 h | `Q321` · not captured | 33.2 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row27:col5 |
-| 3,29-dibenzoyl rarounitriol — EC50 (μM) at 24 h | `Q321` · not captured | 45.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row28:col5 |
-| Dioscin — EC50 (μM) at 24 h | `Q321` · not captured | 37.8 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row30:col5 |
-| Resveratrol — EC50 (μM) at 24 h | `Q321` · not captured | 27.7 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row32:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ethacridine lactate — EC50 (μM) at 24 h | `Q321` · not captured | 50.1 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row4:col5 |
+| PD (effect) | Ethacridine lactate monohydrate — EC50 (μM) at 24 h | `Q321` · not captured | 28.2 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row5:col5 |
+| PD (effect) | Octenidine — EC50 (μM) at 24 h | `Q321` · not captured | 6.9 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row13:col5 |
+| PD (effect) | Robenidine — EC50 (μM) at 24 h | `Q321` · not captured | 32.3 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row18:col5 |
+| PD (effect) | Salinomycin — EC50 (μM) at 24 h | `Q321` · not captured | 55.3 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row19:col5 |
+| PD (effect) | Tolfenpyrad — EC50 (μM) at 24 h | `Q321` · not captured | 2.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row23:col5 |
+| PD (effect) | Kuwanon G — EC50 (μM) at 24 h | `Q321` · not captured | 34.7 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row24:col5 |
+| PD (effect) | Chalcone — EC50 (μM) at 24 h | `Q321` · not captured | 52.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row25:col5 |
+| PD (effect) | Trans-chalcone — EC50 (μM) at 24 h | `Q321` · not captured | 24.9 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row26:col5 |
+| PD (effect) | Polygodial — EC50 (μM) at 24 h | `Q321` · not captured | 33.2 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row27:col5 |
+| PD (effect) | 3,29-dibenzoyl rarounitriol — EC50 (μM) at 24 h | `Q321` · not captured | 45.4 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row28:col5 |
+| PD (effect) | Dioscin — EC50 (μM) at 24 h | `Q321` · not captured | 37.8 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row30:col5 |
+| PD (effect) | Resveratrol — EC50 (μM) at 24 h | `Q321` · not captured | 27.7 | µM | not captured | llm (not captured) | ijms-26-01595-t001:row32:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

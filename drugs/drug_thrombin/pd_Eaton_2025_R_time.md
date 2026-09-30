@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dabigatran (measured concentrations) drives name (in minutes): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Dabigatran plasma concentrations (mg/L) prolong the thromboelastographic R-time (min), a measure reflecting dabigatran's inhibition of thrombin activity, described by a sigmoidal Emax effect-compartment model in which a rate constant ke0 links plasma concentration to effect-site concentration (Ce). Key estimates: E0 0.584 min, Emax 180 min, Ce50 40.8 mg/L (EC50 64.2 mg/L in sheep without cardiopulmonary bypass), EA50 29.9 mg/L, and a very short equilibration half-time T1/2keo 0.011 min, consistent with immediate reversible binding to thrombin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eaton_2025`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Eaton MP; Nadtochiy SM; Stefanos T; Anderson BJ et al. (2025). Perfusion 40
   ·  DOI: [10.1177/02676591231226291](https://doi.org/10.1177/02676591231226291)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E0 (min) — Estimate | `Q324` · not captured | 0.584 | min | not captured | exact (not captured) | table2-02676591251406086:row2:col1 |
-| E0 (min) — BSV% | `Q324` · not captured | 15.1 | min | not captured | exact (not captured) | table2-02676591251406086:row2:col2 |
-| Emax (min) — Estimate | `Q320` · not captured | 180 | min | not captured | exact (not captured) | table2-02676591251406086:row3:col1 |
-| Ce50 (mg/L) — Estimate | `Q321` · not captured | 40.8 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row4:col1 |
-| Ce50 (mg/L) — BSV% | `Q321` · not captured | 19.9 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row4:col2 |
-| T1/2keo (min) — Estimate | `Q57` · not captured | 0.011 | min | not captured | fuzzy_llm_dim_refused (not captured) | table2-02676591251406086:row6:col1 |
-| EA50 (mg/L) — Estimate | `Q321` · not captured | 29.9 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row7:col1 |
-| EA50 (mg/L) — BSV% | `Q321` · not captured | 105.4 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row7:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E0 (min) — Estimate | `Q324` · not captured | 0.584 | min | not captured | exact (not captured) | table2-02676591251406086:row2:col1 |
+| PD (effect) | E0 (min) — BSV% | `Q324` · not captured | 15.1 | min | not captured | exact (not captured) | table2-02676591251406086:row2:col2 |
+| PD (effect) | Emax (min) — Estimate | `Q320` · not captured | 180 | min | not captured | exact (not captured) | table2-02676591251406086:row3:col1 |
+| PD (effect) | Ce50 (mg/L) — Estimate | `Q321` · not captured | 40.8 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row4:col1 |
+| PD (effect) | Ce50 (mg/L) — BSV% | `Q321` · not captured | 19.9 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row4:col2 |
+| PK (driver) | T1/2keo (min) — Estimate | `Q57` · not captured | 0.011 | min | not captured | fuzzy_llm_dim_refused (not captured) | table2-02676591251406086:row6:col1 |
+| PD (effect) | EA50 (mg/L) — Estimate | `Q321` · not captured | 29.9 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row7:col1 |
+| PD (effect) | EA50 (mg/L) — BSV% | `Q321` · not captured | 105.4 | mg/L | not captured | llm (not captured) | table2-02676591251406086:row7:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

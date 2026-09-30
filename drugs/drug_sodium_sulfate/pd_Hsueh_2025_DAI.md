@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 12 (measured concentrations) drives Disease Activity Index (in score): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In DSS-induced colitis mice, daily intraperitoneal doses of compound 12 (10 or 15 mg kg−1) reduced the Disease Activity Index (DAI, score) in a dose-dependent manner, more strongly than Trovan at the same 15 mg kg−1 dose, attributed to inhibition of the PANX1 channel (e.g., 87.0% ± 2.8% inhibition of PANX1 currents at 3 µm and −50 mV). The paper does not report an Emax/IC50-type PD model or potency/rate parameters (Imax, IC50, kin, kout, ke0, gamma) for the DAI response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsueh_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kim_2016_reference](drugs/drug_aceclofenac/Aceclofenac_Kim2016_reference.md) | general linear (no model) | 0 | Kim E et al., Modeling of aceclofenac metabolism to m…, Drug metabolism and pharmac… (2016) | [10.1016/j.dmpk.2016.10.001](https://doi.org/10.1016/j.dmpk.2016.10.001) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kim_2016_reference](drugs/drug_aceclofenac/Aceclofenac_Kim2016_reference.md) | — | general linear (no model) | 0 | Kim E et al., Modeling of aceclofenac metabolism to m…, Drug metabolism and pharmac… (2016) | [10.1016/j.dmpk.2016.10.001](https://doi.org/10.1016/j.dmpk.2016.10.001) |
 
 ## Pharmacogenomics (PGx)
 

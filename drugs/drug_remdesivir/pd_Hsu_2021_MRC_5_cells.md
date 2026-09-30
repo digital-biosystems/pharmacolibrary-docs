@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023::gs_441524) drives IL-6 production (in nM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Remdesivir concentrations (nM) dose-dependently reduced IL-6 production in HCoV-OC43-infected MRC-5 cells, an inhibitory effect the paper reports as an EC50 of 224 ± 53 nM without specifying a mechanistic model (e.g., production vs. elimination inhibition or effect-compartment).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsu_2021`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,13 +31,13 @@ Hsu HY; Yang CW; Lee YZ; Lin YL; Chang SY; Yang RB; et al. et al. (2021). Fronti
   ·  DOI: [10.3389/fphar.2021.706901](https://doi.org/10.3389/fphar.2021.706901)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 96 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 85 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
-| SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 3962 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
-| SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 291 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 224 | nM | not captured | llm (not captured) | tab_0:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 96 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 85 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
+| PD (effect) | SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 3962 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
+| PD (effect) | SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 291 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 224 | nM | not captured | llm (not captured) | tab_0:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

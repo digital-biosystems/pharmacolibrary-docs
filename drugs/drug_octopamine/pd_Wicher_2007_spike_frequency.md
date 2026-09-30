@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Perisulfakinin (measured concentrations) drives name (in Hz): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Perisulfakinin (PSK, pM concentrations) acts on the spiking frequency (Hz) of octopaminergic DUM neurons in a biphasic manner: an early transient acceleration (EC50 = 21 pM) and a late reduction in spike frequency (EC50 = 11 pM). The late inhibition is mediated by PSK reducing the pacemaker Ca2+ background current through cAMP-inhibited pTRPγ channels (with PSK raising intracellular cAMP and lowering intracellular Ca2+), while the early acceleration mechanism is not fully resolved, likely reflecting over-compensation by up-regulated voltage-gated Ca2+ currents.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wicher_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aminoglycosides (measured concentrations) drives bacterial growth rate (in Log cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Streptomycin (SMN) concentrations (µg/mL) inhibit the net growth rate (ψ, log cfu/mL) of E. coli O157:H7 via a sigmoid Emax/Hill-type PD function, in which the death rate μ(a) follows a Hill function of concentration; parameters: ψmax = 0.5651 (CI 0.4419–0.7845), ψmin = −0.8166 (CI −1.028 to −0.6976), EC50 = 2.996 µg/mL (CI 1.781–5.250), Hill coefficient = −0.7631 (CI −1.244 to −0.4600), zMIC = 1.22, R2 = 0.9842.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

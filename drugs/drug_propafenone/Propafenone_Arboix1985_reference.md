@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The propafenone two-compartment record was rejected because a structural parameter has a dimension mismatch and the model structure contains an unreachable compartment, with all five parameter values (t1/2α 2.8 min, t1/2β 80 min, kel 0.12 min⁻¹, Vdβ 1.6 l/kg, CL 1.03 l/h) disputed by a second reader.**

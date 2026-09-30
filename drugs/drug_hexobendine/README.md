@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kolassa_1975_rats](drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md) | — (no model) | 0 | Kolassa (1975) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Kolassa_1975_rats](drugs/drug_hexobendine/Hexobendine_Kolassa1975_rats.md) | — | — (no model) | 0 | Kolassa (1975) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MDMA (measured concentrations) drives name (in nmoles product/mg protein-minute): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper describes MDMA as a competitive inhibitor of MAO-A (Ki = 22.0 µmol/L for (+)-MDMA) and a mixed inhibitor of MAO-B, but states that fenfluramine is a poor inhibitor of both MAO-A and MAO-B without providing specific potency values or a mechanistic model for fenfluramine. The record incorrectly identifies MDMA as the driver for fenfluramine's effect on MAO-B, whereas the paper attributes the MAO-B inhibition to fluoxetine (IC50 = 80 µmol/L) and characterizes MDMA's MAO-B inhibition as mixed rather than a simple Emax model.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Leonardi_1994`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

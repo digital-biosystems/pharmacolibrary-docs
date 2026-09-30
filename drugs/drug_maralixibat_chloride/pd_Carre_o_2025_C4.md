@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linerixibat (the dose) drives 7-alpha-hydroxy-4-cholesten-3-one (in ng/mL): indirect response — drug inhibits the production of 7-alpha-hydroxy-4-cholesten-3-one.
+
+**Model:** No model was generated from this record.
+
+> A population kinetic-PD indirect response model describes linerixibat dose (1–180 mg, once/twice daily) driving serum C4 (ng/mL): the dose rate from a virtual PK compartment stimulates the zero-order synthesis rate (Kin) of C4 via an Emax function, with diurnal variation captured by a dual cosine function (8 and 12 h periods). Key estimates: baseline 11.9 ng/mL, Kout 0.135 h−1, Emax 5.55 h−1, EDK50 3.03 mg/h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carreño_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`
@@ -20,12 +30,12 @@ Carreño F; Mehta R; de Souza AR; Collins J; Swift B et al. (2025). CPT: pharmac
   ·  DOI: [10.1002/psp4.13300](https://doi.org/10.1002/psp4.13300)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline (ng/mL) — Model parameter estimates (% RSE) a | `Q324` · not captured | 11.9 | ng/mL | not captured | exact (not captured) | psp413300-tbl-0002:row2:col1 |
-| K out (h−1) — Model parameter estimates (% RSE) a | `Q328` · not captured | 0.135 | h−1 | not captured | space_fold (not captured) | psp413300-tbl-0002:row3:col1 |
-| E max — Model parameter estimates (% RSE) a | `Q320` · not captured | 5.55 | h−1 | not captured | space_fold (not captured) | psp413300-tbl-0002:row10:col1 |
-| EDK50 (mg/h) — Model parameter estimates (% RSE) a | `Q321` · not captured | 3.03 | mg/h | not captured | llm (not captured) | psp413300-tbl-0002:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline (ng/mL) — Model parameter estimates (% RSE) a | `Q324` · not captured | 11.9 | ng/mL | not captured | exact (not captured) | psp413300-tbl-0002:row2:col1 |
+| PD (effect) | K out (h−1) — Model parameter estimates (% RSE) a | `Q328` · not captured | 0.135 | h−1 | not captured | space_fold (not captured) | psp413300-tbl-0002:row3:col1 |
+| PD (effect) | E max — Model parameter estimates (% RSE) a | `Q320` · not captured | 5.55 | h−1 | not captured | space_fold (not captured) | psp413300-tbl-0002:row10:col1 |
+| PD (effect) | EDK50 (mg/h) — Model parameter estimates (% RSE) a | `Q321` · not captured | 3.03 | mg/h | not captured | llm (not captured) | psp413300-tbl-0002:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

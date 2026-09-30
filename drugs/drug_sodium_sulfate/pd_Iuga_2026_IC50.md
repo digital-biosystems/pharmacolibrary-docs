@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TPG-2t (measured concentrations) drives SARS-CoV-2 PLpro activity (in μM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TPG-2t (2t) directly inhibits SARS-CoV-2 PLpro enzyme activity in a biochemical FRET assay (non-covalent binding in the PLpro active site), with IC50 = 0.634 µM and cellular antiviral EC50 = 2.89 µM; the paper reports no PD model parameters (no Imax, kin, kout, ke0, or gamma), only these potency values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iuga_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

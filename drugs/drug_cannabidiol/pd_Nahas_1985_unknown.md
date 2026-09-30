@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A9-THC drives heart rate (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the isolated Langendorff-perfused rat heart, Δ9-THC (2.05–7.75 × 10⁻⁶ M) directly increased heart rate (biphasic, maximal 24% above control at 7.75 × 10⁻⁶ M), while cannabidiol (CBD) had limited effect on rate; simultaneous equimolar CBD administration antagonized or mitigated the THC-induced tachycardia. The paper reports no PD model parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) and does not describe a formal mechanism beyond this direct concentration–response interaction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nahas_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives Receptor Occupancy (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a conventional PD model with potency or rate parameters; instead, D2 receptor occupancy (%) is predicted mechanistically from simulated brain concentrations (brainECF vs. brain cell membrane, brainM) using a PBPK framework (LeiCNS-PK3.0) with receptor binding kinetics, D2R internalization/recycling, and endogenous dopamine competition, with brainM concentrations (improved by the microsomal membrane partition coefficient KpM) best explaining PET-RO for lipophilic ligands such as buprenorphine. No IC50, EC50, Emax, kin, kout, or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Budda_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

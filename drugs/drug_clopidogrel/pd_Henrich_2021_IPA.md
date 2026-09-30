@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Selatogrel, active metabolite of clopidogrel, active metabolite of prasugrel, ticagrelor, AR-C124910XX drive inhibition of platelet aggregation (in percent): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not model clopidogrel concentrations acting directly on IPA via a sigmoid Emax; instead, IPA (% inhibition of platelet aggregation) is described by a receptor-pool PD model in which selatogrel, the active metabolites of clopidogrel and prasugrel, ticagrelor, and AR-C124910XX bind concurrently and reversibly or irreversibly (clopidogrel's active metabolite binds irreversibly) to the P2Y12 receptor pool, with ticagrelor and its metabolite additionally binding allosterically to the selatogrel-receptor complex. No numeric potency (IC50/EC50/Emax) or turnover (kin/kout/ke0) values for clopidogrel are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henrich_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

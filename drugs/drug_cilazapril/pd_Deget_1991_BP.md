@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives blood pressure (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the blood pressure response; it states qualitatively that cilazaprilat, the active hydrolysis product of cilazapril, inhibits ACE, reducing angiotensin II and thereby lowering blood pressure. No Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values for the BP response are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deget_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

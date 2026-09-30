@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glyoxal-derived lysine dimer (GOLD) (measured concentrations) drives calcium mobilization (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> GOLD (glyoxal-derived lysine dimer) concentration-dependently inhibits quinine-induced calcium mobilization in T2R4-expressing HEK293T cells (antagonism, no direct agonist effect), with IC50 10.52 ± 4.7 μM against a fixed quinine concentration of 1 mM (the EC50 for T2R4); CML was weaker with IC50 32.62 ± 9.5 μM. The paper does not state a formal PD model (e.g., Emax, kin/kout) beyond these IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jaggupilli_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Jaggupilli A; Howard R; Aluko RE; Chelikani P et al. (2019). Nutrients 11
   ·  DOI: [10.3390/nu11061317](https://doi.org/10.3390/nu11061317)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 for T2R4 | `Q321` · not captured | 1 | mM | not captured | review_gapfill (not captured) | Jaggupilli_2019:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 for T2R4 | `Q321` · not captured | 1 | mM | not captured | review_gapfill (not captured) | Jaggupilli_2019:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

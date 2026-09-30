@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Moringa oleifera protein hydrolysates (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking Moringa oleifera protein hydrolysate concentrations to muscle glucose uptake; it only reports concentration-dependent stimulation of glucose uptake (e.g., Alcalase hydrolysate 22.03–29.93% at 30 min and 29.55–34.6% at 60 min without insulin) without a mechanism, Emax/EC50, or rate parameters. The recorded IC50 of 13.3 mg/mL refers to DPPH radical scavenging by the trypsin hydrolysate, not to the glucose uptake response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bakwo_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Bakwo Bassogog CB; Nyobe CE; Sabine FY; Bruno Dupon AA; Ngui SP; Minka SR; et al
   ·  DOI: [10.1016/j.heliyon.2024.e28368](https://doi.org/10.1016/j.heliyon.2024.e28368)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50(mg/mL) DPPH — Trypsin hydrolysate | `Q322` · not captured | 13.3e2 | mg/mL | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50(mg/mL) DPPH — Trypsin hydrolysate | `Q322` · not captured | 13.3e2 | mg/mL | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

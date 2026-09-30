@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking resmetirom (MGL-3196) concentrations to triglyceride levels; serum triglyceride was measured pre- and post-dose in HFD rats, but no Emax parameters (Emax, EC50, kin, kout, ke0) for a triglyceride response are reported. Mechanistically, MGL-3196 acts as a THRβ-selective agonist (TR-FRET THRβ EC50 = 73.1 nM, THRα EC50 = 993.8 nM), and it dose-dependently decreased serum total cholesterol (maximal 33.6% decrease at 5 mg/kg) while not significantly affecting hepatic triglyceride levels at 1.5 and 5.0 mg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naphthoquinone amino acid derivatives (measured concentrations) drives cell proliferation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Naphthoquinone amino acid derivatives (e.g. 3a–c, 6.25–200 μM) inhibit cell proliferation in a dose-dependent manner in SiHa, CaLo, C33-A and HaCaT cells, with IC50 values reported (e.g. compound 3a: 40.98, 55.67, 61.60 and 81.08 μM for SiHa, HaCaT, CaLo and C33-A, respectively); the paper does not state a specific PD mechanism or model (e.g. Emax parameters), only suggesting proliferation inhibition may arise from apoptosis induction, topoisomerase II-α inhibition or ROS generation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Córdova-Rivas_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives EEG alpha activity (in % of baseline): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (ng/ml, after a 15 mg oral dose) were related to the decrease in EEG alpha activity (% of baseline) via a sigmoid Emax model with an effect compartment to account for hysteresis; mean EC50 values ranged from 42.0 to 48.1 ng/ml, the sigmoid exponent was 3.7 ± 1.8, and effect-compartment equilibration half-lives (t½ ke0) ranged from 0.26 to 0.60 hour. A threshold Emax model with a threshold concentration of 15.7 ± 11.1 ng/ml fitted the EEG data comparably well.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koopmans_1988`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

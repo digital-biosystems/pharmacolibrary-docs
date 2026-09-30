@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives duration of analgesia (in min) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model linking drug concentrations to duration of analgesia; DOA (time between first perceptible/meaningful pain relief and pain reappearing, in min) was compared descriptively across single doses (ibuprofen 400/600/800 mg, paracetamol 500/1000 mg, paracetamol 1000 mg/codeine 60 mg) versus placebo using ANOVA/log-rank tests, with ibuprofen 800 mg showing the longest DOA and no potency (IC50/EC50/Emax) or rate (kin/kout/ke0) parameters reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lyngstad_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Lyngstad G; Skjelbred P; Swanson DM; Skoglund LA et al. (2021). European journal
   ·  DOI: [10.1007/s00228-021-03231-9](https://doi.org/10.1007/s00228-021-03231-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Fair — Ibuprofen | `Q87` · not captured | 6 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col1 |
-| Fair — Ibuprofen | `Q87` · not captured | 8 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col2 |
-| Fair — Ibuprofen | `Q87` · not captured | 8 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col3 |
-| Fair — Paracetamol | `Q87` · not captured | 26 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col4 |
-| Fair — Paracetamol | `Q87` · not captured | 28 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col5 |
-| Fair — Paracetamol/codeine | `Q87` · not captured | 16 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Fair — Ibuprofen | `Q87` · not captured | 6 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col1 |
+| PK (driver) | Fair — Ibuprofen | `Q87` · not captured | 8 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col2 |
+| PK (driver) | Fair — Ibuprofen | `Q87` · not captured | 8 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col3 |
+| PK (driver) | Fair — Paracetamol | `Q87` · not captured | 26 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col4 |
+| PK (driver) | Fair — Paracetamol | `Q87` · not captured | 28 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col5 |
+| PK (driver) | Fair — Paracetamol/codeine | `Q87` · not captured | 16 | Q1, Q3 | not captured | llm (not captured) | tab_1:row13:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

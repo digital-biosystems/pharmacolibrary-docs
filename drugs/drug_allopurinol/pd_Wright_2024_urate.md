@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives serum urate (in mmol/L): direct sigmoid Emax (Hill) effect.
 
-> The model describes a direct, proportional sigmoid Emax inhibition of serum urate (baseline 0.55 mmol/L) by oxypurinol concentrations, with a maximum inhibition (Imax) of 1 and a Hill coefficient (GAM) of 1.06. The paper notes that while a turnover model might be mechanistically more sensible due to hysteresis, the final model used a direct-effects approach without specifying an effect compartment rate constant (ke0).
+**Model:** No model was generated from this record.
+
+> Oxypurinol (the active metabolite of allopurinol, described by a cited one-compartment PK model) directly inhibits serum urate concentrations via a sigmoid Emax model with proportional inhibition: baseline urate E0 = 0.55 mmol/L, Imax = 1, IC50 with 39.6% CV between-subject variability, and Hill coefficient (GAM) = 1.06. The paper does not state the IC50 point estimate itself, and notes the direct-effect model (no effect compartment) is intended for steady-state use.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wright_2024`
 - **model family:** `sigmoid_emax`

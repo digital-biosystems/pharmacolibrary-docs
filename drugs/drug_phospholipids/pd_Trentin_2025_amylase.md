@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Microglena antarctica extracts drives α-amylase inhibition (in mg mL−1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Acetone extracts of Microglena antarctica (biomass cultivated at 4 °C and 8 °C) inhibit α-amylase activity in vitro (starch/iodine assay at 580 nm), with IC50 values of 4.53 mg mL−1 (4 °C) and 3.34 mg mL−1 (8 °C); the paper reports only these IC50 values and does not state a pharmacodynamic mechanism or model (no Emax, kin/kout, or ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Trentin_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,17 +31,17 @@ Trentin R; Moschin E; Custódio L; Moro I et al. (2025). Biomolecules 15
   ·  DOI: [10.3390/biom15121658](https://doi.org/10.3390/biom15121658)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ABTS EC50 — 4 °C | `Q321` · not captured | 4.18 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col2 |
-| ABTS EC50 — Methanol | `Q321` · not captured | 26.24 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col3 |
-| ABTS EC50 — 16 °C | `Q321` · not captured | 3.57 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col6 |
-| ABTS EC50 — Methanol | `Q321` · not captured | 10.26 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col7 |
-| ABTS EC50 — BHT | `Q321` · not captured | 0.12 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col8 |
-| CCA EC50 — Methanol | `Q321` · not captured | 27.23 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col3 |
-| CCA EC50 — 8 °C | `Q321` · not captured | 6.31 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col4 |
-| CCA EC50 — Methanol | `Q321` · not captured | 26.69 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col5 |
-| CCA EC50 — EDTA | `Q321` · not captured | 0.18 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ABTS EC50 — 4 °C | `Q321` · not captured | 4.18 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col2 |
+| PD (effect) | ABTS EC50 — Methanol | `Q321` · not captured | 26.24 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col3 |
+| PD (effect) | ABTS EC50 — 16 °C | `Q321` · not captured | 3.57 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col6 |
+| PD (effect) | ABTS EC50 — Methanol | `Q321` · not captured | 10.26 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col7 |
+| PD (effect) | ABTS EC50 — BHT | `Q321` · not captured | 0.12 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row3:col8 |
+| PD (effect) | CCA EC50 — Methanol | `Q321` · not captured | 27.23 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col3 |
+| PD (effect) | CCA EC50 — 8 °C | `Q321` · not captured | 6.31 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col4 |
+| PD (effect) | CCA EC50 — Methanol | `Q321` · not captured | 26.69 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col5 |
+| PD (effect) | CCA EC50 — EDTA | `Q321` · not captured | 0.18 | mg mL−1 | not captured | llm_confirmed (not captured) | biomolecules-15-01658-t001:row6:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

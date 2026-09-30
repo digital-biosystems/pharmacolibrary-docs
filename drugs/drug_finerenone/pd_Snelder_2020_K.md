@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium concentration (in mmol/L): indirect response — drug inhibits the production of serum potassium concentration.
+
+**Model:** No model was generated from this record.
+
+> Finerenone plasma concentration (µg/L, from a cited popPK model) drives serum potassium concentration (mmol/L) via a turnover (indirect response) model with a log-linear concentration–effect relationship, predicting an increase in potassium with increasing exposure and attenuation of effect gains at high exposures; the drug effect was proportional to baseline potassium. The paper does not state Imax, IC50/EC50, kin, kout, or ke0 values for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,50 +31,50 @@ Snelder N; Heinig R; Drenth HJ; Joseph A; Kolkhof P; Lippert J; et al. et al. (2
   ·  DOI: [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 64.1 | kg | not captured | llm_corrected (not captured) | Tab3:row0:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 24.2 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row0:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 49 | years | not captured | llm_corrected (not captured) | Tab3:row0:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 33.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 33.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row0:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 33.7 | g/kg | not captured | llm_corrected (not captured) | Tab3:row0:col10 |
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 54 | kg | not captured | llm_corrected (not captured) | Tab3:row1:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 21.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row1:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 44 | years | not captured | llm_corrected (not captured) | Tab3:row1:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 41.0 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 42.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row1:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 38.5 | g/kg | not captured | llm_corrected (not captured) | Tab3:row1:col10 |
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 90.6 | kg | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 31.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row2:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 65 | years | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 63.9 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 66.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.3 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row2:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 192.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row2:col10 |
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 71.6 | kg | not captured | llm_corrected (not captured) | Tab3:row3:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 26.5 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row3:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 64 | years | not captured | llm_corrected (not captured) | Tab3:row3:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 61.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 64.6 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.2 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row3:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 216.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row3:col10 |
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 126.3 | kg | not captured | llm_corrected (not captured) | Tab3:row4:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 41.7 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row4:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row4:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 102.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 101.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 5.0 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row4:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1626 | g/kg | not captured | llm_corrected (not captured) | Tab3:row4:col10 |
-| Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 100 | kg | not captured | llm_corrected (not captured) | Tab3:row5:col4 |
-| Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 34.6 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row5:col5 |
-| Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row5:col6 |
-| Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 87.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col7 |
-| Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 85.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col8 |
-| Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.8 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row5:col9 |
-| Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1345 | g/kg | not captured | llm_corrected (not captured) | Tab3:row5:col10 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 64.1 | kg | not captured | llm_corrected (not captured) | Tab3:row0:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 24.2 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row0:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 49 | years | not captured | llm_corrected (not captured) | Tab3:row0:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 33.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 33.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row0:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 33.7 | g/kg | not captured | llm_corrected (not captured) | Tab3:row0:col10 |
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 54 | kg | not captured | llm_corrected (not captured) | Tab3:row1:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 21.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row1:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 44 | years | not captured | llm_corrected (not captured) | Tab3:row1:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 41.0 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 42.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row1:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 38.5 | g/kg | not captured | llm_corrected (not captured) | Tab3:row1:col10 |
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 90.6 | kg | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 31.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row2:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 65 | years | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 63.9 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 66.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.3 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row2:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 192.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row2:col10 |
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 71.6 | kg | not captured | llm_corrected (not captured) | Tab3:row3:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 26.5 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row3:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 64 | years | not captured | llm_corrected (not captured) | Tab3:row3:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 61.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 64.6 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.2 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row3:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 216.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row3:col10 |
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 126.3 | kg | not captured | llm_corrected (not captured) | Tab3:row4:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 41.7 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row4:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row4:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 102.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 101.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 5.0 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row4:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1626 | g/kg | not captured | llm_corrected (not captured) | Tab3:row4:col10 |
+| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 100 | kg | not captured | llm_corrected (not captured) | Tab3:row5:col4 |
+| — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 34.6 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row5:col5 |
+| — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row5:col6 |
+| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 87.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col7 |
+| — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 85.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col8 |
+| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.8 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row5:col9 |
+| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1345 | g/kg | not captured | llm_corrected (not captured) | Tab3:row5:col10 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

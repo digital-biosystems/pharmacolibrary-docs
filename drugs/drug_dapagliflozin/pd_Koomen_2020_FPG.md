@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives fasting plasma glucose (in mmol/L): indirect response — drug inhibits the production of fasting plasma glucose.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (AUC0–24, ng·h/mL) was related to fasting plasma glucose (mmol/L) via an Emax-type exposure–response relationship (with a proportional Weibull placebo response on FPG); the paper does not state an indirect-response mechanism or potency values (Imax/IC50/kin/kout) for FPG. A 10 mg dose yielded an average exposure of 638 ng·h/mL (95% PI 354–1061), corresponding to 71.2% (95% PI 57.9–80.5%) of the estimated maximum effect on FPG.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Meclofenamate drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In guinea-pigs, intravenous meclofenamate antagonizes bradykinin-induced bronchoconstriction (measured as air overflow volume by the Konzett-Rössler method), reducing the bronchoconstrictor response to bradykinin to less than half without reducing the response to acetylcholine; the paper does not state a pharmacodynamic mechanism, and no numeric potency values (MED, IC50, Emax, etc.) are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Collier_1968`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** OA-10 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> OA-10 concentrations inhibit acid (pH 5.2)-induced, HA2-mediated hemolysis of chicken erythrocytes in a dose-dependent direct inhibitory manner, with an IC50 of 26 µM (arbidol control IC50 51 µM); the paper does not state a kinetic PD model (no Imax, kin, kout, ke0 or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ye_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,29 +30,29 @@ Ye M; Liao Y; Wu L; Qi W; Choudhry N; Liu Y; et al. et al. (2020). Viruses 12
   ·  DOI: [10.3390/v12020225](https://doi.org/10.3390/v12020225)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| OA-0 — CC50 a (μM) | `Q322` · not captured | 67.4 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row1:col2 |
-| OA-0 — EC50 b (μM) | `Q321` · not captured | 14.2 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row1:col3 |
-| OA-1 — CC50 a (μM) | `Q322` · not captured | 15.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row2:col2 |
-| OA-1 — EC50 b (μM) | `Q321` · not captured | 2.30 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row2:col3 |
-| OA-2 — CC50 a (μM) | `Q322` · not captured | 20.5 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row3:col2 |
-| OA-2 — EC50 b (μM) | `Q321` · not captured | 5.22 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row3:col3 |
-| OA-3 — CC50 a (μM) | `Q322` · not captured | 31.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row4:col2 |
-| OA-3 — EC50 b (μM) | `Q321` · not captured | 2.87 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row4:col3 |
-| OA-4 — CC50 a (μM) | `Q322` · not captured | 12.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row5:col2 |
-| OA-4 — EC50 b (μM) | `Q321` · not captured | 4.45 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row5:col3 |
-| OA-5 — CC50 a (μM) | `Q322` · not captured | 7.55 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row6:col2 |
-| OA-5 — EC50 b (μM) | `Q321` · not captured | 4.24 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row6:col3 |
-| OA-7 — CC50 a (μM) | `Q322` · not captured | 9.88 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row8:col2 |
-| OA-7 — EC50 b (μM) | `Q321` · not captured | 7.79 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row8:col3 |
-| OA-8 — CC50 a (μM) | `Q322` · not captured | 15.5 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row9:col2 |
-| OA-8 — EC50 b (μM) | `Q321` · not captured | 3.03 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row9:col3 |
-| OA-9 — CC50 a (μM) | `Q322` · not captured | 10.8 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row10:col2 |
-| OA-9 — EC50 b (μM) | `Q321` · not captured | 4.61 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row10:col3 |
-| OA-10 — EC50 b (μM) | `Q321` · not captured | 14.0 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row11:col3 |
-| OA-11 — CC50 a (μM) | `Q322` · not captured | 60.0 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row12:col2 |
-| OA-11 — EC50 b (μM) | `Q321` · not captured | 6.7 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row12:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | OA-0 — CC50 a (μM) | `Q322` · not captured | 67.4 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row1:col2 |
+| PD (effect) | OA-0 — EC50 b (μM) | `Q321` · not captured | 14.2 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row1:col3 |
+| PD (effect) | OA-1 — CC50 a (μM) | `Q322` · not captured | 15.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row2:col2 |
+| PD (effect) | OA-1 — EC50 b (μM) | `Q321` · not captured | 2.30 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row2:col3 |
+| PD (effect) | OA-2 — CC50 a (μM) | `Q322` · not captured | 20.5 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row3:col2 |
+| PD (effect) | OA-2 — EC50 b (μM) | `Q321` · not captured | 5.22 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row3:col3 |
+| PD (effect) | OA-3 — CC50 a (μM) | `Q322` · not captured | 31.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row4:col2 |
+| PD (effect) | OA-3 — EC50 b (μM) | `Q321` · not captured | 2.87 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row4:col3 |
+| PD (effect) | OA-4 — CC50 a (μM) | `Q322` · not captured | 12.1 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row5:col2 |
+| PD (effect) | OA-4 — EC50 b (μM) | `Q321` · not captured | 4.45 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row5:col3 |
+| PD (effect) | OA-5 — CC50 a (μM) | `Q322` · not captured | 7.55 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row6:col2 |
+| PD (effect) | OA-5 — EC50 b (μM) | `Q321` · not captured | 4.24 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row6:col3 |
+| PD (effect) | OA-7 — CC50 a (μM) | `Q322` · not captured | 9.88 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row8:col2 |
+| PD (effect) | OA-7 — EC50 b (μM) | `Q321` · not captured | 7.79 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row8:col3 |
+| PD (effect) | OA-8 — CC50 a (μM) | `Q322` · not captured | 15.5 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row9:col2 |
+| PD (effect) | OA-8 — EC50 b (μM) | `Q321` · not captured | 3.03 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row9:col3 |
+| PD (effect) | OA-9 — CC50 a (μM) | `Q322` · not captured | 10.8 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row10:col2 |
+| PD (effect) | OA-9 — EC50 b (μM) | `Q321` · not captured | 4.61 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row10:col3 |
+| PD (effect) | OA-10 — EC50 b (μM) | `Q321` · not captured | 14.0 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row11:col3 |
+| PD (effect) | OA-11 — CC50 a (μM) | `Q322` · not captured | 60.0 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row12:col2 |
+| PD (effect) | OA-11 — EC50 b (μM) | `Q321` · not captured | 6.7 | μM | not captured | llm (not captured) | viruses-12-00225-t002:row12:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

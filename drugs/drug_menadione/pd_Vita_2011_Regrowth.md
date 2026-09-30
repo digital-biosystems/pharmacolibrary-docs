@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives name (in binary) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Menadione (μM concentrations) acts on the binary regrowth response of glioma cells after prolonged exposure: 1–25 μM for 1–2 weeks allowed regrowth, while 50 μM for 1 week (or 25 μM for 2 weeks) prevented regrowth, and the menadione:vitamin C combination (10 μM:1 mM, 1 week) prevented regrowth in all 8 patient-derived cultures. The paper does not state a formal PD model; mechanistically it attributes cytotoxicity to ROS generation (IC50 ≅ 10 μM for inhibition of DNA synthesis in rat brain mini-units, time-dependent with 84.36 ± 2.25% inhibition at 50 μM after 60 min, irreversible after drug removal).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vita_2011`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

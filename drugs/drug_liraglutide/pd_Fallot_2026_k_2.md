@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide, tirzepatide, liraglutide (measured concentrations) drive Aβ42 secondary nucleation rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide (μM concentrations) modestly inhibits the secondary nucleation rate constant k2 of Aβ42 aggregation; the paper does not state an Emax/IC50 effect form for this step, but reports KIS values for secondary nucleation inhibition of ~4 μM (from the ~2.5-fold fibril length increase at 20 μM liraglutide, equating to a ~6.25-fold drop in k2), 33.2 μM (unseeded assay), and 2.6 μM (seeded experiments).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fallot_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

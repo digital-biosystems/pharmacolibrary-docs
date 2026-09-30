@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (−)-meptazinol phenylcarbamate (43) (measured concentrations) drives name (in percent decrease) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In SH-SY5Y-APP695 cells, (−)-meptazinol phenylcarbamate (43) concentration-dependently lowered Aβ42 levels (measured by ELISA, reported as percent decrease), but the paper gives no IC50, Emax, or other potency values for this anti-amyloidogenic effect and states the mechanism is unresolved, hypothesizing a direct action on the amyloidogenic processing pathway with possible non-cholinergic involvement beyond AChE inhibition. The IC50 values in the record (43: 31.6 nM AChE, 67.1 nM BChE; 42: 6.93 nM AChE, 3.17 nM BChE; rivastigmine: 5460 nM AChE, 1590 nM BChE) refer to enzyme inhibition, not Aβ42 reduction, and 43 was a reversible uncompetitive AChE inhibitor that decreased Vmax (10% and 25% a
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Xie Q; Zheng Z; Shao B; Fu W; Xia Z; Li W; et al. et al. (2017). Journal of enzy
   ·  DOI: [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 ± SEM (nM) — 42 | `Q322` · not captured | 6.93 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col3 |
-| IC50 ± SEM (nM) — 43 | `Q322` · not captured | 31.6 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col4 |
-| IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 5460 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col6 |
-| IC50 ± SEM (nM) — 42 | `Q322` · not captured | 3.17 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col3 |
-| IC50 ± SEM (nM) — 43 | `Q322` · not captured | 67.1 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col4 |
-| IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 1590 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 ± SEM (nM) — 42 | `Q322` · not captured | 6.93 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col3 |
+| PD (effect) | IC50 ± SEM (nM) — 43 | `Q322` · not captured | 31.6 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col4 |
+| PD (effect) | IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 5460 | nM | not captured | llm_confirmed (not captured) | t0004:row0:col6 |
+| PD (effect) | IC50 ± SEM (nM) — 42 | `Q322` · not captured | 3.17 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col3 |
+| PD (effect) | IC50 ± SEM (nM) — 43 | `Q322` · not captured | 67.1 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col4 |
+| PD (effect) | IC50 ± SEM (nM) — Rivastigmine | `Q322` · not captured | 1590 | nM | not captured | llm_confirmed (not captured) | t0004:row1:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

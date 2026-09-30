@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Minocycline (concentrations from the PK model of Athanassa_2025) drives highly resistant bacteria (in log10CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Minocycline concentrations (mg/L) inhibit the growth/kill of the highly resistant bacterial subpopulation (log10CFU/mL) via a sigmoid Emax kill model: Emax,MIN = 1.41 h⁻¹ (maximum kill rate constant, applied to both subpopulations), EC50,MIN-HR = 1.67 mg/L (EC50,MIN-R = 1.02 mg/L for the resistant subpopulation), with power parameter γMIN (value truncated in the excerpt).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aranzana-Climent_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

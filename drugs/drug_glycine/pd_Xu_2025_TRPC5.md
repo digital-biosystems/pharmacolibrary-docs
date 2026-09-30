@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-palmitoyl glycine (measured concentrations) drives TRPC5 current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> N-palmitoyl glycine (PalGly) acts as a direct agonist of hTRPC5 channels, enhancing whole-cell TRPC5 currents in HEK293 cells (inward currents ~6-fold, outward ~2-fold at 1 µM, the maximum solubility). Because 1 µM was the maximum soluble concentration, the EC50 was estimated by co-administration of 20 µM rosiglitazone, giving approximately 104 nM for inward currents and 128 nM for outward currents; the paper does not state an Emax, kin, kout, ke0 or Hill coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

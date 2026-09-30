@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium was one of the known inhibitors used to pharmacologically validate the high-content SARS-CoV-2 cytopathicity assay in Caco-2 cells, where compound concentration inhibits the percent cytopathic effect in an eight-point dose-response format; the paper does not state a mechanism of action for cetylpyridinium and provides no IC50, Emax, or other potency or rate parameters for it.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ellinger_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,22 +30,22 @@ Ellinger B; Bojkova D; Zaliani A; Cinatl J; Claussen C; Westhaus S; et al. et al
   ·  DOI: [10.1038/s41597-021-00848-4](https://doi.org/10.1038/s41597-021-00848-4)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Results SARS-CoV-2 (Caco-2) IC50 µM — emetine | `Q322` · not captured | 0.52 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col2 |
-| Results SARS-CoV-2 (Caco-2) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.58 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col3 |
-| Results SARS-CoV-2 (Caco-2) IC50 µM — remde-sivir | `Q322` · not captured | 0.76 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col4 |
-| Toxicity Caco-2 CC50 µM — emetine | `Q322` · not captured | 1.13 | unknown | not captured | llm (not captured) | Tab3:row1:col2 |
-| CI — emetine | `Q358` · not captured | 2 | not captured | not captured | llm (not captured) | Tab3:row2:col2 |
-| Reports SARS-CoV-2 (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.7722 | unknown | not captured | llm_confirmed (not captured) | Tab3:row3:col4 |
-| Reports SARS-CoV (Vero-E6) IC50 µM — emetine | `Q322` · not captured | 0.05153 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col2 |
-| Reports SARS-CoV (Vero-E6) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.04353 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col3 |
-| Reports SARS-CoV (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.06922 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col4 |
-| Reports SARS-CoV (Vero-E6) IC50 µM — chloro-quine | `Q322` · not captured | 4.456 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col5 |
-| Reports MERS (Vero-E6) IC50 µM — emetine | `Q322` · not captured | 0.0854 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col2 |
-| Reports MERS (Vero-E6) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.1654 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col3 |
-| Reports MERS (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.07422 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col4 |
-| Reports MERS (Vero-E6) IC50 µM — chloro-quine | `Q322` · not captured | 6.27553 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Results SARS-CoV-2 (Caco-2) IC50 µM — emetine | `Q322` · not captured | 0.52 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col2 |
+| PD (effect) | Results SARS-CoV-2 (Caco-2) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.58 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col3 |
+| PD (effect) | Results SARS-CoV-2 (Caco-2) IC50 µM — remde-sivir | `Q322` · not captured | 0.76 | unknown | not captured | llm_confirmed (not captured) | Tab3:row0:col4 |
+| PD (effect) | Toxicity Caco-2 CC50 µM — emetine | `Q322` · not captured | 1.13 | unknown | not captured | llm (not captured) | Tab3:row1:col2 |
+| PK (driver) | CI — emetine | `Q358` · not captured | 2 | not captured | not captured | llm (not captured) | Tab3:row2:col2 |
+| PD (effect) | Reports SARS-CoV-2 (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.7722 | unknown | not captured | llm_confirmed (not captured) | Tab3:row3:col4 |
+| PD (effect) | Reports SARS-CoV (Vero-E6) IC50 µM — emetine | `Q322` · not captured | 0.05153 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col2 |
+| PD (effect) | Reports SARS-CoV (Vero-E6) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.04353 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col3 |
+| PD (effect) | Reports SARS-CoV (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.06922 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col4 |
+| PD (effect) | Reports SARS-CoV (Vero-E6) IC50 µM — chloro-quine | `Q322` · not captured | 4.456 | unknown | not captured | llm_confirmed (not captured) | Tab3:row4:col5 |
+| PD (effect) | Reports MERS (Vero-E6) IC50 µM — emetine | `Q322` · not captured | 0.0854 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col2 |
+| PD (effect) | Reports MERS (Vero-E6) IC50 µM — cyclo-heximide | `Q322` · not captured | 0.1654 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col3 |
+| PD (effect) | Reports MERS (Vero-E6) IC50 µM — remde-sivir | `Q322` · not captured | 0.07422 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col4 |
+| PD (effect) | Reports MERS (Vero-E6) IC50 µM — chloro-quine | `Q322` · not captured | 6.27553 | unknown | not captured | llm_confirmed (not captured) | Tab3:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

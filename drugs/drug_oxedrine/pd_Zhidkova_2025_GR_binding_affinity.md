@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 10S-E2 (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a competitive [3H]dexamethasone glucocorticoid receptor (GR) binding assay in K562 cells, the synephrine derivative 10S-E2 concentration-dependently displaces [3H]Dex from GR binding, with an IC50 of 0.56 µM (comparable to Dex, 0.31 µM; CpdA 2.84 µM); the paper does not describe a kinetic PD model, only this direct binding inhibition IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhidkova_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,27 +30,27 @@ Zhidkova EM; Savina ED; Migaleva DV; Vlasova OA; Valiev TT; Enikeev AD; et al. e
   ·  DOI: [10.3390/ijms262311404](https://doi.org/10.3390/ijms262311404)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — IC50, μM | `Q322` · not captured | 40.9 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row1:col2 |
-| 2 — IC50, μM | `Q322` · not captured | 43.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row2:col2 |
-| 3 — IC50, μM | `Q322` · not captured | 43.0 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row3:col2 |
-| 4 — IC50, μM | `Q322` · not captured | 60.6 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row4:col2 |
-| 5 — IC50, μM | `Q322` · not captured | 71.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row5:col2 |
-| 6 — IC50, μM | `Q322` · not captured | 75.7 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row6:col2 |
-| 7 — IC50, μM | `Q322` · not captured | 64.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row7:col2 |
-| 8 — IC50, μM | `Q322` · not captured | 49.4 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row8:col2 |
-| 9 — IC50, μM | `Q322` · not captured | 55.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row9:col2 |
-| 10 — IC50, μM | `Q322` · not captured | 70.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row10:col2 |
-| 11 — IC50, μM | `Q322` · not captured | 80.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row11:col2 |
-| 12 — IC50, μM | `Q322` · not captured | 52.4 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row12:col2 |
-| 13 — IC50, μM | `Q322` · not captured | 63.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row13:col2 |
-| 14 — IC50, μM | `Q322` · not captured | 67.6 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row14:col2 |
-| 15 — IC50, μM | `Q322` · not captured | 55.0 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row15:col2 |
-| 16 — IC50, μM | `Q322` · not captured | 65.9 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row16:col2 |
-| 17 — IC50, μM | `Q322` · not captured | 69.8 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row17:col2 |
-| 18 — IC50, μM | `Q322` · not captured | 71.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row18:col2 |
-| 19 — IC50, μM | `Q322` · not captured | 71.5 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row19:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — IC50, μM | `Q322` · not captured | 40.9 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row1:col2 |
+| PD (effect) | 2 — IC50, μM | `Q322` · not captured | 43.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row2:col2 |
+| PD (effect) | 3 — IC50, μM | `Q322` · not captured | 43.0 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row3:col2 |
+| PD (effect) | 4 — IC50, μM | `Q322` · not captured | 60.6 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row4:col2 |
+| PD (effect) | 5 — IC50, μM | `Q322` · not captured | 71.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row5:col2 |
+| PD (effect) | 6 — IC50, μM | `Q322` · not captured | 75.7 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row6:col2 |
+| PD (effect) | 7 — IC50, μM | `Q322` · not captured | 64.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row7:col2 |
+| PD (effect) | 8 — IC50, μM | `Q322` · not captured | 49.4 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row8:col2 |
+| PD (effect) | 9 — IC50, μM | `Q322` · not captured | 55.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row9:col2 |
+| PD (effect) | 10 — IC50, μM | `Q322` · not captured | 70.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row10:col2 |
+| PD (effect) | 11 — IC50, μM | `Q322` · not captured | 80.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row11:col2 |
+| PD (effect) | 12 — IC50, μM | `Q322` · not captured | 52.4 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row12:col2 |
+| PD (effect) | 13 — IC50, μM | `Q322` · not captured | 63.2 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row13:col2 |
+| PD (effect) | 14 — IC50, μM | `Q322` · not captured | 67.6 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row14:col2 |
+| PD (effect) | 15 — IC50, μM | `Q322` · not captured | 55.0 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row15:col2 |
+| PD (effect) | 16 — IC50, μM | `Q322` · not captured | 65.9 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row16:col2 |
+| PD (effect) | 17 — IC50, μM | `Q322` · not captured | 69.8 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row17:col2 |
+| PD (effect) | 18 — IC50, μM | `Q322` · not captured | 71.3 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row18:col2 |
+| PD (effect) | 19 — IC50, μM | `Q322` · not captured | 71.5 | µM | not captured | llm (not captured) | ijms-26-11404-t002:row19:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

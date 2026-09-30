@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NCF-CR-NPs (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> NCF-CR-NPs (folic acid-conjugated crocin nanoparticles) concentrations (μg/ml) were associated with increased caspase 8 expression in HT-29 cells, indicating induction of apoptosis; the paper does not state a PD model, mechanism of action on caspase 8 beyond increased expression, or potency/rate parameters for this response (the reported IC50 ~11.6 μg/ml refers to MTT cytotoxicity, not caspase 8).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soltani_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

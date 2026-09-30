@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methotrexate drives homocysteine (in unknown): indirect response — drug inhibits the production of homocysteine.
+
+**Model:** No model was generated from this record.
+
+> Methotrexate plasma concentrations inhibit the elimination rate (kout) of homocysteine in an indirect response (Model I) framework, with the inhibition described by an inverse Emax model (Emax fixed to 1, i.e. kout reduced to 1.93% and 0.99% of baseline in low- and standard/high-risk patients); EC50 (MTX concentration at 50% of maximal effect) was estimated but its numeric value is not given in the excerpts, and baseline HCY (HCYBL) increased significantly with age.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rühs_2012`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Rühs H; Becker A; Drescher A; Panetta JC; Pui CH; Relling MV; Jaehde U et al. (
   ·  DOI: [10.1371/journal.pone.0046015](https://doi.org/10.1371/journal.pone.0046015)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| θEmax — ModelEstimates(CI90%) | `Q320` · not captured | 1 | CI90% | not captured | llm_confirmed (not captured) | pone-0046015-t002:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | θEmax — ModelEstimates(CI90%) | `Q320` · not captured | 1 | CI90% | not captured | llm_confirmed (not captured) | pone-0046015-t002:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

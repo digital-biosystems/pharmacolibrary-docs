@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For mazdutide, the model-based meta-analysis used an Emax-type dose-response/time-course framework linking administered dose (3–10 mg) to weight reduction (kg) versus placebo, with simulated 52-week effects of 4–7 kg; however, no dose-response relationship was observed within the studied dose range (efficacy plateau), and the paper does not report drug concentrations, a mechanism of action on the response, or potency/rate parameters (Emax, ED50/IC50, kin, kout, ke0) for mazdutide.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

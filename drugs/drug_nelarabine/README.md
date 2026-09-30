@@ -30,10 +30,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eletskaya_2023](drugs/drug_nelarabine/pd_Eletskaya_2023_unknown.md) | Eletskaya BZ et al., Enzymatic Synthesis of 2-Chloropurine A…, International journal of mo… (2023) | [10.3390/ijms24076223](https://doi.org/10.3390/ijms24076223) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Tohidian_2025](drugs/drug_nelarabine/pd_Tohidian_2025_unknown.md) | Tohidian M et al., The niosomal nelarabine as a promising…, Annals of medicine and surg… (2025) | [10.1097/MS9.0000000000002821](https://doi.org/10.1097/MS9.0000000000002821) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Eletskaya_2023_unknown](drugs/drug_nelarabine/pd_Eletskaya_2023_unknown.md) | U937 cell survival ← 2-chloropurine arabinonucleosides (specifically serine derivative 4b) · inhibition effect | — | Eletskaya BZ et al., Enzymatic Synthesis of 2-Chloropurine A…, International journal of mo… (2023) | [10.3390/ijms24076223](https://doi.org/10.3390/ijms24076223) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Tohidian_2025_unknown](drugs/drug_nelarabine/pd_Tohidian_2025_unknown.md) | FOXO1 expression ← nelarabine · inhibition effect | — | Tohidian M et al., The niosomal nelarabine as a promising…, Annals of medicine and surg… (2025) | [10.1097/MS9.0000000000002821](https://doi.org/10.1097/MS9.0000000000002821) |
 
 ## Pharmacogenomics (PGx)
 

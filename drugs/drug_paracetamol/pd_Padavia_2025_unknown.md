@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives ductus arteriosus diameter (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Paracetamol concentrations in an effect compartment (Ce) were linked to ductus arteriosus diameter in an inhibitory effect-compartment model; the excerpts do not state the potency (IC50/Imax), equilibration rate (ke0), or the exact effect form, only that Ce was compared with an IC95 threshold in simulations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Padavia_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

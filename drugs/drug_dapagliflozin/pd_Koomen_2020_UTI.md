@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives urinary tract infection (in event): indirect response — drug inhibits the production of urinary tract infection.
+
+**Model:** No model was generated from this record.
+
+> In a repeated time-to-event analysis, dapagliflozin systemic exposure (ng h/mL) was log-linearly related to the hazard/probability of developing a urinary tract infection over 24 weeks (Weibull survival model); the paper does not state an IC50/EC50/Emax or an indirect-response mechanism, and the maximum UTI probability was not reached up to 1000 ng h/mL (10 mg dose).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

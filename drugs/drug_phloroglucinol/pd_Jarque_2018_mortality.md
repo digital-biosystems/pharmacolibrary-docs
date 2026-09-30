@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Resorcinol, methimazole, potassium perchlorate, 6-propyl-2-thiouracil, ethylenethiourea, phloroglucinol, pyrazole (measured concentrations) drive name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In zebrafish embryos (48–120 hpf), phloroglucinol and other goitrogens were tested for induction of tg:mCherry reporter fluorescence (thyroglobulin upregulation) and for mortality; concentration–response data were fitted with a Hill-slope (sigmoid Emax) model, giving an EC50 for tg:mCherry induction of 1096 μM (SE 756 μM) for phloroglucinol and an LC50 for mortality of 78922 μM for ethylenethiourea, 33100 μM for potassium perchlorate, 3500 μM for propylthiouracil, 42428 μM for pyrazole, 5197 μM for resorcinol, and 29.4 μM for 3,4-DCA. The paper does not state a PD mechanism for the mortality response beyond unspecific baseline toxicity, and no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jarque_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,34 +30,34 @@ Jarque S; Fetter E; Veneman WJ; Spaink HP; Peravali R; Strähle U; et al. et al.
   ·  DOI: [10.1371/journal.pone.0203087](https://doi.org/10.1371/journal.pone.0203087)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LC50 (48–120 hpf) — Ethylenethiourea | `Q322` · not captured | 78922 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col2 |
-| LC50 (48–120 hpf) — Potassium perchlorate | `Q322` · not captured | 33100 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col5 |
-| LC50 (48–120 hpf) — Propylthiouracil | `Q322` · not captured | 3500 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col6 |
-| LC50 (48–120 hpf) — Pyrazole | `Q322` · not captured | 42428 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col7 |
-| LC50 (48–120 hpf) — Resorcinol | `Q322` · not captured | 5197 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col8 |
-| LC50 (48–120 hpf) — 3,4-DCA | `Q322` · not captured | 29.4 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col9 |
-| EC50 (μM) — Ethylenethiourea | `Q321` · not captured | 366 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col2 |
-| EC50 (μM) — Methimazole | `Q321` · not captured | 279 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col3 |
-| EC50 (μM) — Phloroglucinol | `Q321` · not captured | 1096 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col4 |
-| EC50 (μM) — Potassium perchlorate | `Q321` · not captured | 137 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col5 |
-| EC50 (μM) — Propylthiouracil | `Q321` · not captured | 334 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col6 |
-| EC50 (μM) — Pyrazole | `Q321` · not captured | 637 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col7 |
-| EC50 (μM) — Resorcinol | `Q321` · not captured | 3.4 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col8 |
-| EC50 SE (μM) — Ethylenethiourea | `Q321` · not captured | 116 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col2 |
-| EC50 SE (μM) — Methimazole | `Q321` · not captured | 104 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col3 |
-| EC50 SE (μM) — Phloroglucinol | `Q321` · not captured | 756 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col4 |
-| EC50 SE (μM) — Potassium perchlorate | `Q321` · not captured | 146 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col5 |
-| EC50 SE (μM) — Propylthiouracil | `Q321` · not captured | 115 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col6 |
-| EC50 SE (μM) — Pyrazole | `Q321` · not captured | 67.8 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col7 |
-| EC50 SE (μM) — Resorcinol | `Q321` · not captured | 1.6 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col8 |
-| EC50 T4 reductiona (μM) — Ethylenethiourea | `Q321` · not captured | 135 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col2 |
-| EC50 T4 reductiona (μM) — Methimazole | `Q321` · not captured | 290 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col3 |
-| EC50 T4 reductiona (μM) — Phloroglucinol | `Q321` · not captured | 2700 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col4 |
-| EC50 T4 reductiona (μM) — Potassium perchlorate | `Q321` · not captured | 2.5 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col5 |
-| EC50 T4 reductiona (μM) — Propylthiouracil | `Q321` · not captured | 137 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col6 |
-| EC50 T4 reductiona (μM) — Resorcinol | `Q321` · not captured | 82 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | LC50 (48–120 hpf) — Ethylenethiourea | `Q322` · not captured | 78922 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col2 |
+| PD (effect) | LC50 (48–120 hpf) — Potassium perchlorate | `Q322` · not captured | 33100 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col5 |
+| PD (effect) | LC50 (48–120 hpf) — Propylthiouracil | `Q322` · not captured | 3500 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col6 |
+| PD (effect) | LC50 (48–120 hpf) — Pyrazole | `Q322` · not captured | 42428 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col7 |
+| PD (effect) | LC50 (48–120 hpf) — Resorcinol | `Q322` · not captured | 5197 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col8 |
+| PD (effect) | LC50 (48–120 hpf) — 3,4-DCA | `Q322` · not captured | 29.4 | μM | not captured | llm (not captured) | pone.0203087.t001:row2:col9 |
+| PD (effect) | EC50 (μM) — Ethylenethiourea | `Q321` · not captured | 366 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col2 |
+| PD (effect) | EC50 (μM) — Methimazole | `Q321` · not captured | 279 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col3 |
+| PD (effect) | EC50 (μM) — Phloroglucinol | `Q321` · not captured | 1096 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col4 |
+| PD (effect) | EC50 (μM) — Potassium perchlorate | `Q321` · not captured | 137 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col5 |
+| PD (effect) | EC50 (μM) — Propylthiouracil | `Q321` · not captured | 334 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col6 |
+| PD (effect) | EC50 (μM) — Pyrazole | `Q321` · not captured | 637 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col7 |
+| PD (effect) | EC50 (μM) — Resorcinol | `Q321` · not captured | 3.4 | μM | not captured | exact (not captured) | pone.0203087.t001:row3:col8 |
+| PD (effect) | EC50 SE (μM) — Ethylenethiourea | `Q321` · not captured | 116 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col2 |
+| PD (effect) | EC50 SE (μM) — Methimazole | `Q321` · not captured | 104 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col3 |
+| PD (effect) | EC50 SE (μM) — Phloroglucinol | `Q321` · not captured | 756 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col4 |
+| PD (effect) | EC50 SE (μM) — Potassium perchlorate | `Q321` · not captured | 146 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col5 |
+| PD (effect) | EC50 SE (μM) — Propylthiouracil | `Q321` · not captured | 115 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col6 |
+| PD (effect) | EC50 SE (μM) — Pyrazole | `Q321` · not captured | 67.8 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col7 |
+| PD (effect) | EC50 SE (μM) — Resorcinol | `Q321` · not captured | 1.6 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row4:col8 |
+| PD (effect) | EC50 T4 reductiona (μM) — Ethylenethiourea | `Q321` · not captured | 135 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col2 |
+| PD (effect) | EC50 T4 reductiona (μM) — Methimazole | `Q321` · not captured | 290 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col3 |
+| PD (effect) | EC50 T4 reductiona (μM) — Phloroglucinol | `Q321` · not captured | 2700 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col4 |
+| PD (effect) | EC50 T4 reductiona (μM) — Potassium perchlorate | `Q321` · not captured | 2.5 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col5 |
+| PD (effect) | EC50 T4 reductiona (μM) — Propylthiouracil | `Q321` · not captured | 137 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col6 |
+| PD (effect) | EC50 T4 reductiona (μM) — Resorcinol | `Q321` · not captured | 82 | μM | not captured | llm_confirmed (not captured) | pone.0203087.t001:row9:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

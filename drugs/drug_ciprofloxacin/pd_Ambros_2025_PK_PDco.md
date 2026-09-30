@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin + ciprofloxacin (measured concentrations) drives PK/PDco (in mg/L) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking concentrations to a measured response; instead, PK/PD cutoffs (PK/PDco, in mg/L) were derived by Monte Carlo simulation from steady-state AUCs of enrofloxacin plus its metabolite ciprofloxacin after IV and IM enrofloxacin dosing at 7.5 and 10 mg/kg/day, using AUC/MIC pharmacodynamic targets of 24–48 h (Gram-positive) and 72–96 h (Gram-negative). No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given, and no mechanism of drug action on a response is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ambros_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

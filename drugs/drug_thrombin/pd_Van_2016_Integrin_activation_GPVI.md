@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model with drug concentrations acting on a measured response; instead, PUVA treatment (amotosalen plus UVA light) inhibited Akt phosphorylation in platelets stimulated via collagen glycoprotein VI and thrombin PAR-1, by psoralen-phospholipid adduct formation increasing lipid packing and preventing membrane recruitment of Akt and Btk effectors. No potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Van_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

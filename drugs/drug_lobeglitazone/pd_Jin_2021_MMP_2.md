@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lobeglitazone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lobeglitazone (LGZ, μM concentrations) inhibits TGF-β1-induced MMP-2 expression in BRAF-mutated PTC cell lines (BCPAP, K1), acting via a PPAR-γ-dependent suppression of the p38 MAPK pathway (GW9662 restored p38 phosphorylation and MMP-2 expression). The paper does not report a quantitative PD model or potency/rate parameters (no IC50, Imax, kin, kout, or gamma values for MMP-2 are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

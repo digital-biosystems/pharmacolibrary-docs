@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Duhaiman_1996](drugs/drug_dicoumarol/pd_Duhaiman_1996_oxidoreductase_activity_of_camel_lens_alpha_cr.md) | Duhaiman AS, Inhibition of zeta-crystallin by Coumar…, Journal of protein chemistry (1996) | [10.1007/BF01887114](https://doi.org/10.1007/BF01887114) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2005](drugs/drug_dicoumarol/pd_Lee_2005_NQO1.md) | Lee YY et al., Human NAD(P)H:quinone oxidoreductase in…, Free radical biology & medi… (2005) | [10.1016/j.freeradbiomed.2005.03.013](https://doi.org/10.1016/j.freeradbiomed.2005.03.013) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Duhaiman_1996_oxidoreductase_activity_of_camel_lens_alpha_crystallin](drugs/drug_dicoumarol/pd_Duhaiman_1996_oxidoreductase_activity_of_camel_lens_alpha_cr.md) | name ← dicoumarol · inhibition effect | — | Duhaiman AS, Inhibition of zeta-crystallin by Coumar…, Journal of protein chemistry (1996) | [10.1007/BF01887114](https://doi.org/10.1007/BF01887114) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2005_NQO1](drugs/drug_dicoumarol/pd_Lee_2005_NQO1.md) | NQO1 activity ← flavonoids · inhibition effect | — | Lee YY et al., Human NAD(P)H:quinone oxidoreductase in…, Free radical biology & medi… (2005) | [10.1016/j.freeradbiomed.2005.03.013](https://doi.org/10.1016/j.freeradbiomed.2005.03.013) |
 
 ## ADME sites
 

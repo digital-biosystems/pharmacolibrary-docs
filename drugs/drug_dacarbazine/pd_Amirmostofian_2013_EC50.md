@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dacarbazine (measured concentrations) drives cytotoxicity (in µM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine concentrations (µM) act on hepatocyte viability (cytotoxicity), with an EC50 2h of 56 µM defined as the concentration decreasing viability to 50% after 2 h incubation; the paper does not state a pharmacodynamic model (e.g., Emax, kin/kout) or mechanism parameters, only mechanistic findings of ROS formation, mitochondrial membrane potential decrease, and lysosomal membrane rupture.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Amirmostofian_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@
 Amirmostofian M; Pourahmad Jaktaji J; Soleimani Z; Tabib K; Tanbakosazan F; Omrani M; et al. et al. (2013). Iranian journal of pharmaceutical research : IJPR 12
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 2h concentration for DTIC | `Q321` · not captured | 56 | µM | not captured | review_gapfill (not captured) | Amirmostofian_2013:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 2h concentration for DTIC | `Q321` · not captured | 56 | µM | not captured | review_gapfill (not captured) | Amirmostofian_2013:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

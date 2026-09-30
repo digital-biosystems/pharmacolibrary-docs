@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (1 × 10−4–100 μM) inhibits the metabolic activity of A549 cells cultured in gelatin-based (GelMA) and other 3D matrices, with IC50 values fitted by four-parameter [inhibitor] vs. response variable-slope nonlinear regression: 0.44 μM in soft GelMA and 0.80 μM in stiff GelMA (vs. 0.40 μM soft LungMA, 1.23 μM stiff LungMA, 0.04 μM BME). The paper does not state a mechanistic PD model (no Imax, Emax, kin/kout, or ke0), only these empirical IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hipwood_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

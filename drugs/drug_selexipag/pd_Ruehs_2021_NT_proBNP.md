@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vericiguat drives NT-proBNP (in pg/mL): indirect response — drug inhibits the loss of NT-proBNP.
+
+**Model:** No model was generated from this record.
+
+> The paper describes vericiguat (not selexipag) acting on plasma NT-proBNP (pg/mL) via a turnover (indirect response) model: vericiguat exposure-dependently lowers NT-proBNP, with an inhibitory effect of [NT-proBNP] on kout (first-order elimination, reflecting reduced renal clearance at high NT-proBNP), while kin is a zero-order production rate; no Imax, IC50, EC50, Emax, ke0, gamma, or numeric kin/kout values are given. Simulated 20-week vericiguat 10 mg on top of SoC produced baseline-dependent absolute NT-proBNP decreases of 11 pg/mL (5%) at 250 pg/mL baseline up to 734 pg/mL (7%) at 10,000 pg/mL baseline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ruehs_2021`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

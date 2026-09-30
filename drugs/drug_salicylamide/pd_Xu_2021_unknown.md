@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** JMX0493 drives HAdV-mediated endosomolysis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> JMX0493 (compound 16) inhibits HAdV-mediated endosomolysis by blocking viral particle escape from the endosome, preventing uncoating and presentation of lytic protein VI; in the plaque assay it inhibited HAdV plaque formation with IC50 = 0.78 μM (CC50 = 91.2 μM, SI = 116.9), and its inhibitory activity declined from 95.3% at 0 min p.i. to 30.7% at 20 min p.i., indicating an early, time-dependent step of action. No PD model parameters (Emax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

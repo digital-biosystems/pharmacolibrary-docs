@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fentanyl drives ventilation (in l/min): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Buprenorphine plasma concentrations inhibit ventilation (Vi50, l/min) from a baseline E0 of 23.90 l/min via a combined biophase equilibration–receptor association/dissociation model with a linear transducer function, with ke0 = 0.0092 min⁻¹, kon = 0.246 ml/ng/min, koff = 0.0102 min⁻¹ and KD = 0.089 nM; the model confirms partial agonism with intrinsic activity α = 0.56 (95% CI 0.50–0.62), reflecting a ceiling effect on respiratory depression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yassen_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,25 +30,25 @@ Yassen A; Olofsen E; Romberg R; Sarton E; Teppema L; Danhof M; et al. et al. (20
   ·  DOI: [10.1038/sj.clpt.6100025](https://doi.org/10.1038/sj.clpt.6100025)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k on (ml/ng/min) | `Q27` · not captured | 0.246 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col1 |
-| k on (ml/ng/min) — CV of | `Q27` · not captured | 17.9 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col2 |
-| k on (ml/ng/min) — Inter- | `Q27` · not captured | 72.1 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col3 |
-| k on (ml/ng/min) — CV of | `Q27` · not captured | 26.4 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col4 |
-| k off (min À1 ) | `Q330` · not captured | 0.0102 | min À1 | not captured | llm (not captured) | tab_1:row5:col1 |
-| k off (min À1 ) — CV of | `Q330` · not captured | 23.2 | min À1 | not captured | llm (not captured) | tab_1:row5:col2 |
-| K D (nM b ) | `Q331` · not captured | 0.089 | nM b | not captured | llm (not captured) | tab_1:row6:col1 |
-| k eo ( min À1 ) | `Q326` · not captured | 0.0092 | min À1 | not captured | llm (not captured) | tab_1:row7:col1 |
-| k eo ( min À1 ) — CV of | `Q326` · not captured | 22.5 | min À1 | not captured | llm (not captured) | tab_1:row7:col2 |
-| k eo ( min À1 ) — Inter- | `Q326` · not captured | 110 | min À1 | not captured | llm (not captured) | tab_1:row7:col3 |
-| k eo ( min À1 ) — CV of | `Q326` · not captured | 24.1 | min À1 | not captured | llm (not captured) | tab_1:row7:col4 |
-| E 0 (l/min) | `Q324` · not captured | 23.90 | l/min | not captured | llm (not captured) | tab_1:row8:col1 |
-| E 0 (l/min) — CV of | `Q324` · not captured | 3.7 | l/min | not captured | llm (not captured) | tab_1:row8:col2 |
-| E 0 (l/min) — Inter- | `Q324` · not captured | 25.1 | l/min | not captured | llm (not captured) | tab_1:row8:col3 |
-| E 0 (l/min) — CV of | `Q324` · not captured | 20.9 | l/min | not captured | llm (not captured) | tab_1:row8:col4 |
-| Additive error | `Q317` · not captured | 1.3 | not captured | not captured | exact (not captured) | tab_1:row10:col1 |
-| Additive error — CV of | `Q317` · not captured | 13.1 | not captured | not captured | exact (not captured) | tab_1:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k on (ml/ng/min) | `Q27` · not captured | 0.246 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col1 |
+| PK (driver) | k on (ml/ng/min) — CV of | `Q27` · not captured | 17.9 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col2 |
+| PK (driver) | k on (ml/ng/min) — Inter- | `Q27` · not captured | 72.1 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col3 |
+| PK (driver) | k on (ml/ng/min) — CV of | `Q27` · not captured | 26.4 | ml/ng/min | not captured | llm (not captured) | tab_1:row4:col4 |
+| PD (effect) | k off (min À1 ) | `Q330` · not captured | 0.0102 | min À1 | not captured | llm (not captured) | tab_1:row5:col1 |
+| PD (effect) | k off (min À1 ) — CV of | `Q330` · not captured | 23.2 | min À1 | not captured | llm (not captured) | tab_1:row5:col2 |
+| PD (effect) | K D (nM b ) | `Q331` · not captured | 0.089 | nM b | not captured | llm (not captured) | tab_1:row6:col1 |
+| PD (effect) | k eo ( min À1 ) | `Q326` · not captured | 0.0092 | min À1 | not captured | llm (not captured) | tab_1:row7:col1 |
+| PD (effect) | k eo ( min À1 ) — CV of | `Q326` · not captured | 22.5 | min À1 | not captured | llm (not captured) | tab_1:row7:col2 |
+| PD (effect) | k eo ( min À1 ) — Inter- | `Q326` · not captured | 110 | min À1 | not captured | llm (not captured) | tab_1:row7:col3 |
+| PD (effect) | k eo ( min À1 ) — CV of | `Q326` · not captured | 24.1 | min À1 | not captured | llm (not captured) | tab_1:row7:col4 |
+| PD (effect) | E 0 (l/min) | `Q324` · not captured | 23.90 | l/min | not captured | llm (not captured) | tab_1:row8:col1 |
+| PD (effect) | E 0 (l/min) — CV of | `Q324` · not captured | 3.7 | l/min | not captured | llm (not captured) | tab_1:row8:col2 |
+| PD (effect) | E 0 (l/min) — Inter- | `Q324` · not captured | 25.1 | l/min | not captured | llm (not captured) | tab_1:row8:col3 |
+| PD (effect) | E 0 (l/min) — CV of | `Q324` · not captured | 20.9 | l/min | not captured | llm (not captured) | tab_1:row8:col4 |
+| variability | Additive error | `Q317` · not captured | 1.3 | not captured | not captured | exact (not captured) | tab_1:row10:col1 |
+| variability | Additive error — CV of | `Q317` · not captured | 13.1 | not captured | not captured | exact (not captured) | tab_1:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

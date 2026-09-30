@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Auranofin (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Auranofin concentrations (0.15–4.8 µM) inhibit T. gondii growth (fluorescence, day 5 post infection) with a sigmoid Emax model: IC50 = 0.28 µM, Emax = 82%, Hill coefficient = 1.94. The paper does not give a mechanistic PD model (no kin/kout/ke0); it only suggests thioredoxin reductase as a possible molecular target.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Andrade_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

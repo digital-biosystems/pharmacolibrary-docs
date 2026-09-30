@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ICPD47 (measured concentrations) drives spheroid size (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for gemcitabine's effect on spheroid size, and no spheroid size data or mechanism appear in the excerpts. The only quantitative findings are EC50 values for the Hsp90 inhibitor ICPD47 inhibiting cell viability after 72 h (3.91 ± 0.25 µM in MIA PaCa-2 and 2.38 ± 0.25 µM in PANC-1 cells), with gemcitabine combinations showing synergistic activity by the Chou-Talalay method but no stated potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Daunys_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

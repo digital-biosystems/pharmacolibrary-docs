@@ -19,9 +19,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yoshii_1987](drugs/toxin_112_trichloroethane/pd_Yoshii_1987_gACh.md) | Yoshii K et al., Equilibrium properties of mouse-Torpedo…, The Journal of general phys… (1987) | [10.1085/jgp.90.4.553](https://doi.org/10.1085/jgp.90.4.553) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yoshii_1987_gACh](drugs/toxin_112_trichloroethane/pd_Yoshii_1987_gACh.md) | ACh-induced conductance ← acetylcholine · direct sigmoid Emax (Hill) effect | — | Yoshii K et al., Equilibrium properties of mouse-Torpedo…, The Journal of general phys… (1987) | [10.1085/jgp.90.4.553](https://doi.org/10.1085/jgp.90.4.553) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

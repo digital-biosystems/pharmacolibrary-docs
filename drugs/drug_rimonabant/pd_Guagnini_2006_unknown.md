@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (þ) WIN 55,212-2 (measured concentrations) drive electrically evoked contractions (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> (þ) WIN 55,212-2 concentrations (nM) directly inhibit electrically evoked contractions of guinea-pig and human small intestine myenteric plexus–longitudinal muscle via cannabinoid CB1 receptors, with IC50 4.8 nM (guinea-pig) and 56 nM (human); rimonabant acts as a competitive CB1 antagonist (pA2 8.4 and 8.2), and in guinea-pig (but not human) strips rimonabant alone increased contractions by more than 100%, attributed to antagonism of endocannabinoid tone or inverse agonism. No Emax, kin/kout or ke0 values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guagnini_2006`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

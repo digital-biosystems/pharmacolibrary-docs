@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (measured concentrations) drives cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Metformin (free MET and MET-loaded HA-coated chitosan/gelatin nanoparticles, 0.5–8 mM) inhibits A375 melanoma cell viability measured by MTT assay after 24 h in a concentration-dependent manner; the paper does not state a PD mechanism or model parameters, only IC50 values of 3.94 ± 0.57 mM for MET-loaded NPs and 7.63 ± 0.26 mM for free MET.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ebrahimnejad_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

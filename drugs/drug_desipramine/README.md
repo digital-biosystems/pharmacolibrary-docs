@@ -23,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2024_reference](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | 2-compartment, IV | 3 | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Gueorguieva_2010_reference](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | 2-compartment, IV | 5 | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [DeVane_1981_reference](drugs/drug_desipramine/Desipramine_DeVane1981_reference.md) | 1-compartment (no model) | 8 | DeVane CL et al., Desipramine and 2-hydroxy-desipramine p…, European journal of clinica… (1981) | [10.1007/BF00558386](https://doi.org/10.1007/BF00558386) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Asiimwe_2024_reference](drugs/drug_desipramine/Desipramine_Asiimwe2024_reference.md) | held back | 2-compartment, IV | 3 | Asiimwe IG et al., Machine-Learning Assisted Screening of…, The AAPS journal (2024) | [10.1208/s12248-024-00934-6](https://doi.org/10.1208/s12248-024-00934-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>blocking: T1_t_half_beta</sub><br><sub>route_to: `scholar`</sub> | [Gueorguieva_2010_reference](drugs/drug_desipramine/Desipramine_Gueorguieva2010_reference.md) | ▶ model + simulator | 2-compartment, IV | 5 | Gueorguieva I et al., Desipramine, substrate for CYP2D6 activ…, British journal of clinical… (2010) | [10.1111/j.1365-2125.2010.03731.x](https://doi.org/10.1111/j.1365-2125.2010.03731.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [DeVane_1981_reference](drugs/drug_desipramine/Desipramine_DeVane1981_reference.md) | — | 1-compartment (no model) | 8 | DeVane CL et al., Desipramine and 2-hydroxy-desipramine p…, European journal of clinica… (1981) | [10.1007/BF00558386](https://doi.org/10.1007/BF00558386) |
 
 ## ADME sites
 
@@ -41,6 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ORM1` unknown | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor | DrugBank actor |

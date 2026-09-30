@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menthofuran (measured concentrations) drives name (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Menthofuran (oral doses 50 and 100 mg/kg) reduced the number of loose stools in the castor oil-induced diarrhea model in a dose-dependent manner; the paper does not state an Emax/IC50 model for this count response, only suggesting mechanisms such as reduced secretion or altered peristalsis (possibly via decreased calcium influx, muscarinic antagonism, or opioid agonism).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Santos_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

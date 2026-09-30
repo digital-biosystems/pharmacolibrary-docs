@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives mitochondrial morphology (in percentage): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (a CAST stabilizer) concentration (μM; e.g. 1 μM for 5 days in HD-MSNs) acts on mitochondrial morphology (percentage fragmentation) in an Emax-type relationship; the paper describes the mechanism as A36 restoring CAST expression, thereby suppressing calpain-2 activity and reducing p-Drp1 S616–driven mitochondrial fragmentation. No potency (IC50/EC50/Emax) or rate parameters are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

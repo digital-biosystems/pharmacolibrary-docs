@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vancomycin (concentrations from the PK model of Goyal_2022::final_pk_model) drives Clinical failure at EOT (in binary): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for clinical failure at EOT: vancomycin exposure (AUC24/MIC and Ctrough, μg/mL) was only compared with clinical failure via ROC analysis, and neither parameter predicted it (AUC24/MIC ROC-AUC 0.536 [95% CI 0.387–0.685]; Ctrough 0.561 [95% CI 0.397–0.724]), with no mechanism, potency, or rate values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nham_2022`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

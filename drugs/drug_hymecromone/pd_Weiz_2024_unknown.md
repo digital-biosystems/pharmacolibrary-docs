@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phloroglucinol-rutinoside (measured concentrations) drives cell proliferation (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phloroglucinol-rutinoside (PR) concentration (0–2.0 mM, 48 h) inhibits proliferation of PANC1 pancreatic cancer cells, with an IC50 of 0.89 mM (RR 1.67 mM, 4MUR 2.4 mM; in Huh7 cells PR 3.8 mM, RR 4.5 mM; IC50 &gt; 8 mM in normal hTERT-HPNE cells); the paper does not state a PD model or mechanism beyond growth inhibition, and the KM values in the record (hesperidin 0.70 mM, rutin 0.47 mM) refer to the αRβG diglycosidase substrate affinity, not the proliferation response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Weiz_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Weiz G; González AL; Mansilla IS; Fernandez-Zapico ME; Molejón MI; Breccia JD 
   ·  DOI: [10.1186/s12934-024-02395-0](https://doi.org/10.1186/s12934-024-02395-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Hesperidin — KM [mM] | `Q1` · not captured | 0.70 | not captured | not captured | llm (not captured) | Tab2:row1:col1 |
-| Rutin — KM [mM] | `Q1` · not captured | 0.47 | not captured | not captured | llm (not captured) | Tab2:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Hesperidin — KM [mM] | `Q1` · not captured | 0.70 | not captured | not captured | llm (not captured) | Tab2:row1:col1 |
+| PK (driver) | Rutin — KM [mM] | `Q1` · not captured | 0.47 | not captured | not captured | llm (not captured) | Tab2:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Artefenomel drives Day 28 PCR-adjusted ACPR (in %): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a mechanistic PD model; Day 28 PCR-adjusted ACPR (binary, %) was analysed by logistic regression with ferroquine AUC0–d28, baseline parasitaemia, and low-efficacy study centre as significant covariates, while artefenomel AUC0–∞ was not a significant contributor (removed in backward elimination). Parasite clearance parameters (parasite clearance rate in 1/h, PC50 and TPC50 in h) were faster with ferroquine 400 mg plus artefenomel (300, 600, or 1000 mg) than ferroquine alone, but no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gansane_2023`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

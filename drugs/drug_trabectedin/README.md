@@ -23,19 +23,19 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007_cancer patients](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | — (no model) | 0 | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019_children and adolescent patients with cancer](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | — (no model) | 0 | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Perez-Ruixo_2007_cancer patients](drugs/drug_trabectedin/Trabectedin_PerezRuixo2007_cancer_patients.md) | — | — (no model) | 0 | Perez-Ruixo JJ et al., Population pharmacokinetic meta-analysi…, Clinical pharmacokinetics (2007) | [10.2165/00003088-200746100-00005](https://doi.org/10.2165/00003088-200746100-00005) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Poggesi_2019_children and adolescent patients with cancer](drugs/drug_trabectedin/Trabectedin_Poggesi2019_children_and_adolescent_patients_wit.md) | — | — (no model) | 0 | Poggesi I et al., Population pharmacokinetics of trabecte…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03899-y](https://doi.org/10.1007/s00280-019-03899-y) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_G0_G1_phase.md) | Miao (2016) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_G2_M_phase.md) | Miao (2016) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_S_phase.md) | Miao (2016) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_sub_G1_phase_apoptosis.md) | Miao (2016) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016_fraction_of_cells_in_G0_G1_phase](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_G0_G1_phase.md) | name ← gemcitabine · direct sigmoid Emax (Hill) effect | — | Miao (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016_fraction_of_cells_in_G2_M_phase](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_G2_M_phase.md) | name ← gemcitabine · direct sigmoid Emax (Hill) effect | — | Miao (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016_fraction_of_cells_in_S_phase](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_S_phase.md) | name ← gemcitabine · direct sigmoid Emax (Hill) effect | — | Miao (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Miao_2016_fraction_of_cells_in_sub_G1_phase_apoptosis](drugs/drug_trabectedin/pd_Miao_2016_fraction_of_cells_in_sub_G1_phase_apoptosis.md) | name ← gemcitabine · direct sigmoid Emax (Hill) effect | — | Miao (2016) | — |
 
 ## ADME sites
 

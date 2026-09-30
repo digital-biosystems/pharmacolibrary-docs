@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibuprofen (concentrations from the PK model of Albert_1984) drives articular index (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen (daily doses 800, 1600 and 2400 mg) was given to rheumatoid patients and the articular index (AI) was measured as a clinical response; a significant improvement occurred at 1600 mg/day with no further overall increase at 2400 mg/day. The paper does not state a PD model or mechanism, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given; indeed there was no significant correlation between plasma AUC and AI response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grennan_1983`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

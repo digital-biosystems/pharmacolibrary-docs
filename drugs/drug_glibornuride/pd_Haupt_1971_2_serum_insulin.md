@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolbutamide, glibenclamide, glibornuride, glisoxepide (the dose) drive name (in uU/ml) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Intravenous sulfonylureas (tolbutamide, glibenclamide, glibornuride, glisoxepide) were given as doses (mg/kg) to healthy volunteers and diabetics, with serum insulin (uU/ml) measured over time; the paper does not state a formal PD model or parameters (no Imax, IC50, EC50, kin, kout, ke0, gamma). Mechanistically the drugs act by beta-cytotropic stimulation of insulin secretion, and relative to tolbutamide the ED30 potencies for blood-glucose lowering were 1250-fold higher for glibenclamide, 63-fold for glibornuride and 375-fold for glisoxepide; a second ED30 dose given 3 h later produced lower insulin concentrations than the first.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haupt_1971_2`
 - **model family:** `unknown`
 - **driver:** `dose_only`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glucose drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model: pre-exercise carbohydrate (75 g vs 150 g) is only compared with placebo on responses such as heart rate, RPE and rate of perceived pressure (AUC HR 1663/1757/1726; AUC RPE 56.2/43.3/46.5; AUC RPP 49.4/37.2/33.9 for placebo/75 g/150 g), and in vitro glucose uptake in myotubes increased with glucose concentration (0.35–10 g/L, dose effect p=0.011 wild-type, p=0.004 McArdle). No mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Valenzuela_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -19,20 +29,20 @@
 not matched (stem Valenzuela_2024)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUC HR — Placebo | `Q88` · not captured | 1663 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col1 |
-| AUC HR — 75 g CHO | `Q88` · not captured | 1757 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col2 |
-| AUC HR — 150 g CHO | `Q88` · not captured | 1726 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col3 |
-| AUC RPE — Placebo | `Q88` · not captured | 56.2 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col1 |
-| AUC RPE — 75 g CHO | `Q88` · not captured | 43.3 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col2 |
-| AUC RPE — 150 g CHO | `Q88` · not captured | 46.5 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col3 |
-| AUC RPP — Placebo | `Q88` · not captured | 49.4 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col1 |
-| AUC RPP — 75 g CHO | `Q88` · not captured | 37.2 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col2 |
-| AUC RPP — 150 g CHO | `Q88` · not captured | 33.9 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col3 |
-| Peak RPP — Placebo | `Q32` · not captured | 6.1 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col1 |
-| Peak RPP — 75 g CHO | `Q32` · not captured | 8.6 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col2 |
-| Peak RPP — 150 g CHO | `Q32` · not captured | 8.9 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUC HR — Placebo | `Q88` · not captured | 1663 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col1 |
+| PK (driver) | AUC HR — 75 g CHO | `Q88` · not captured | 1757 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col2 |
+| PK (driver) | AUC HR — 150 g CHO | `Q88` · not captured | 1726 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row10:col3 |
+| PK (driver) | AUC RPE — Placebo | `Q88` · not captured | 56.2 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col1 |
+| PK (driver) | AUC RPE — 75 g CHO | `Q88` · not captured | 43.3 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col2 |
+| PK (driver) | AUC RPE — 150 g CHO | `Q88` · not captured | 46.5 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row11:col3 |
+| PK (driver) | AUC RPP — Placebo | `Q88` · not captured | 49.4 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col1 |
+| PK (driver) | AUC RPP — 75 g CHO | `Q88` · not captured | 37.2 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col2 |
+| PK (driver) | AUC RPP — 150 g CHO | `Q88` · not captured | 33.9 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row12:col3 |
+| PK (driver) | Peak RPP — Placebo | `Q32` · not captured | 6.1 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col1 |
+| PK (driver) | Peak RPP — 75 g CHO | `Q32` · not captured | 8.6 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col2 |
+| PK (driver) | Peak RPP — 150 g CHO | `Q32` · not captured | 8.9 | not captured | not captured | llm_confirmed (not captured) | tbl0002:row21:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

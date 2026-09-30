@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** EPO-receptor complex (RC) drives Reticulocytes (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> In this TMDD/DDE example, the EPO–receptor complex (RC) stimulates the zero-order production of bone-marrow RBC precursors via S(t)=1+Smax·RC/(SC50+RC), which after maturation delays (TP1, TP2) increases reticulocyte (RET) counts; a negative feedback inhibitory function I(t)=1−Imax·ΔHb/(IC50+ΔHb) on kin counteracts this as Hb rises. Reported values (simulated/estimated with true Gamma function, RPTO method): Smax 0.5/0.478, SC50 0.1/0.111, and KIN0 fixed at 190; the Erlang Ersatz Gamma estimates were Smax 0.479 and SC50 0.119.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bauer_2025`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ Bauer RJ; Krzyzanski W et al. (2025). CPT: pharmacometrics & systems pharmacolog
   ·  DOI: [10.1002/psp4.70046](https://doi.org/10.1002/psp4.70046)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — Smax | `Q32` · not captured | 0.5 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col1 |
-| Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — SC50 | `Q321` · not captured | 0.1 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col2 |
-| Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col5 |
-| Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — Smax | `Q32` · not captured | 0.478 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col1 |
-| Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — SC50 | `Q321` · not captured | 0.111 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col2 |
-| Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col5 |
-| Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — Smax | `Q32` · not captured | 0.479 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col1 |
-| Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — SC50 | `Q321` · not captured | 0.119 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col2 |
-| Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — Smax | `Q32` · not captured | 0.5 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col1 |
+| PD (effect) | Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — SC50 | `Q321` · not captured | 0.1 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col2 |
+| — | Simulated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_sim.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row1:col5 |
+| PK (driver) | Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — Smax | `Q32` · not captured | 0.478 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col1 |
+| PD (effect) | Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — SC50 | `Q321` · not captured | 0.111 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col2 |
+| — | Estimated with true Gamma function (RPTO method) ..\example4\smax_gamma_rep_imp.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row2:col5 |
+| PK (driver) | Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — Smax | `Q32` · not captured | 0.479 | not captured | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col1 |
+| PD (effect) | Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — SC50 | `Q321` · not captured | 0.119 | unknown | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col2 |
+| — | Estimated with Erlang Ersatz Gamma ..\example4\smax_gammat_rep_imp.ctl — KIN0 (fixed) | `Q100` · not captured | 190 | fixed | not captured | llm_corrected (not captured) | psp470046-tbl-0006:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

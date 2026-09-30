@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Kanodia_2020](drugs/drug_racecadotril/pd_Kanodia_2020_cGMP.md) | Kanodia J et al., Safety, Pharmacokinetics, and Pharmacod…, Clinical and translational… (2020) | [10.1111/cts.12831](https://doi.org/10.1111/cts.12831) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Kanodia_2020_cGMP](drugs/drug_racecadotril/pd_Kanodia_2020_cGMP.md) | name ← TD-0714 · delayed effect through an effect compartment | — | Kanodia J et al., Safety, Pharmacokinetics, and Pharmacod…, Clinical and translational… (2020) | [10.1111/cts.12831](https://doi.org/10.1111/cts.12831) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

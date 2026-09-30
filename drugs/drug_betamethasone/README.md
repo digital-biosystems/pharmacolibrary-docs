@@ -23,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Schoenmakers_2025_reference](drugs/drug_betamethasone/Betamethasone_Schoenmakers2025_reference.md) | 1-compartment (no model) | 2 | Schoenmakers S et al., Pharmacokinetics of betamethasone in pr…, British journal of clinical… (2025) | [10.1002/bcp.70035](https://doi.org/10.1002/bcp.70035) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Krzyzanski_2021_2_reference](drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md) | 1-compartment, oral | 7 | Krzyzanski (2021) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sullivan_2026_reference](drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md) | 1-compartment (no model) | 3 | Sullivan J et al., Pharmacokinetics and Anti-Inflammatory…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Schoenmakers_2025_reference](drugs/drug_betamethasone/Betamethasone_Schoenmakers2025_reference.md) | — | 1-compartment (no model) | 2 | Schoenmakers S et al., Pharmacokinetics of betamethasone in pr…, British journal of clinical… (2025) | [10.1002/bcp.70035](https://doi.org/10.1002/bcp.70035) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Krzyzanski_2021_2_reference](drugs/drug_betamethasone/Betamethasone_Krzyzanski2021v2_reference.md) | held back | 1-compartment, oral | 7 | Krzyzanski (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sullivan_2026_reference](drugs/drug_betamethasone/Betamethasone_Sullivan2026_reference.md) | — | 1-compartment (no model) | 3 | Sullivan J et al., Pharmacokinetics and Anti-Inflammatory…, Journal of veterinary pharm… (2026) | [10.1111/jvp.70052](https://doi.org/10.1111/jvp.70052) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer, `CYP3A7` unknown | DrugBank actor |
@@ -49,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | excretion | kidney | <sub>“…Corticosteroids are eliminated predominantly in the urine.[A187436]…”</sub> | prose |
 | target | adipose tissue | `CYP19A1` inhibitor/substrate | DrugBank actor |
 | target | ovary | `CYP19A1` inhibitor/substrate | DrugBank actor |
+| target | testis | `CYP19A1` inhibitor/substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: NR3C1 (target), SERPINA6 (unknown).</sub>
 

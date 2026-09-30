@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Licochalcone A (measured concentrations) drives human thrombin activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Licochalcone A reversibly inhibits human thrombin activity (thrombin-mediated Z-GGRAMC acetate hydrolysis) in a mixed manner, with IC50 = 7.96 μM and Ki = 12.23 μM; other chalcones showed IC50 values of 17.95–38.76 μM, and the positive inhibitors ginkgetin and baicalein gave IC50 values of 8.05 μM and 36.11 μM respectively. The paper does not state a PD model beyond these IC50/Ki values, but docking suggests inhibition occurs by occupying the thrombin catalytic cavity (interactions with Tyr-60A and Ser-195).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shi_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Shi CC; Chen TR; Zhang QH; Wei LH; Huang C; Zhu YD; et al. et al. (2020). RSC ad
   ·  DOI: [10.1039/c9ra09203j](https://doi.org/10.1039/c9ra09203j)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Chalcones — IC50 (μM) | `Q322` · not captured | 38.76 | μM | not captured | llm (not captured) | tab1:row1:col4 |
-| Positive inhibitors — IC50 (μM) | `Q322` · not captured | 8.05 | μM | not captured | llm (not captured) | tab1:row22:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Chalcones — IC50 (μM) | `Q322` · not captured | 38.76 | μM | not captured | llm (not captured) | tab1:row1:col4 |
+| PD (effect) | Positive inhibitors — IC50 (μM) | `Q322` · not captured | 8.05 | μM | not captured | llm (not captured) | tab1:row22:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

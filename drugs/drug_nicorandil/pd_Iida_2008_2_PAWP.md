@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nicorandil (concentrations from this paper's PK model) drives pulmonary artery wedge pressure (in unknown): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Nicorandil plasma concentrations act directly (negligible delay; effect-compartment half-life 2.2 min was not supported) on pulmonary artery wedge pressure (PAWP) as an inhibitory Emax offset added to a disease-progression model of PAWP, with Emax −11.7 mmHg and EC50 423 (units not stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iida_2008_2`
 - **model family:** `disease_progression`
 - **driver:** `pk_record`
@@ -21,35 +31,35 @@ Iida S; Kinoshita H; Holford NH et al. (2008). British journal of clinical pharm
   ·  DOI: [10.1111/j.1365-2125.2008.03257.x](https://doi.org/10.1111/j.1365-2125.2008.03257.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| POP_Emax | `Q320` · not captured | -11.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col2 |
-| POP_Emax | `Q320` · not captured | 58.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col4 |
-| POP_Emax — Confidence interval | `Q320` · not captured | -30.0 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col5 |
-| POP_Emax | `Q320` · not captured | -7.48 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col6 |
-| POP_EC50 | `Q321` · not captured | 423 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col2 |
-| POP_EC50 | `Q321` · not captured | 107.1 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col4 |
-| POP_EC50 — Confidence interval | `Q321` · not captured | 165 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col5 |
-| POP_EC50 | `Q321` · not captured | 1552 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col6 |
-| POP_CL | `Q22` · not captured | 26.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col2 |
-| POP_CL | `Q22` · not captured | 13.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col4 |
-| POP_CL — Confidence interval | `Q22` · not captured | 21.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col5 |
-| POP_CL | `Q22` · not captured | 31.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col6 |
-| POP_V1 | `Q63` · not captured | 18.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col2 |
-| POP_V1 | `Q63` · not captured | 14.8 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col4 |
-| POP_V1 — Confidence interval | `Q63` · not captured | 14.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col5 |
-| POP_V1 | `Q63` · not captured | 23.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col6 |
-| POP_Q | `Q30` · not captured | 71.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col2 |
-| POP_Q | `Q30` · not captured | 76.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col4 |
-| POP_Q — Confidence interval | `Q30` · not captured | 54.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col5 |
-| POP_Q | `Q30` · not captured | 203 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col6 |
-| POP_V2 | `Q64` · not captured | 24.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col2 |
-| POP_V2 | `Q64` · not captured | 6.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col4 |
-| POP_V2 — Confidence interval | `Q64` · not captured | 21.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col5 |
-| POP_V2 | `Q64` · not captured | 25.4 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col6 |
-| FV2 | `Q82` · not captured | 4.06 | not captured | not captured | llm (not captured) | tab_0:row14:col2 |
-| FV2 | `Q82` · not captured | 219.1 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
-| FV2 | `Q82` · not captured | 25.3 | not captured | not captured | llm (not captured) | tab_0:row14:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | POP_Emax | `Q320` · not captured | -11.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col2 |
+| PD (effect) | POP_Emax | `Q320` · not captured | 58.7 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col4 |
+| PD (effect) | POP_Emax — Confidence interval | `Q320` · not captured | -30.0 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col5 |
+| PD (effect) | POP_Emax | `Q320` · not captured | -7.48 | not captured | not captured | tv_prefix (not captured) | tab_0:row5:col6 |
+| PD (effect) | POP_EC50 | `Q321` · not captured | 423 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col2 |
+| PD (effect) | POP_EC50 | `Q321` · not captured | 107.1 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col4 |
+| PD (effect) | POP_EC50 — Confidence interval | `Q321` · not captured | 165 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col5 |
+| PD (effect) | POP_EC50 | `Q321` · not captured | 1552 | unknown | not captured | tv_prefix (not captured) | tab_0:row6:col6 |
+| PK (driver) | POP_CL | `Q22` · not captured | 26.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col2 |
+| PK (driver) | POP_CL | `Q22` · not captured | 13.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col4 |
+| PK (driver) | POP_CL — Confidence interval | `Q22` · not captured | 21.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col5 |
+| PK (driver) | POP_CL | `Q22` · not captured | 31.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row7:col6 |
+| PK (driver) | POP_V1 | `Q63` · not captured | 18.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col2 |
+| PK (driver) | POP_V1 | `Q63` · not captured | 14.8 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col4 |
+| PK (driver) | POP_V1 — Confidence interval | `Q63` · not captured | 14.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col5 |
+| PK (driver) | POP_V1 | `Q63` · not captured | 23.3 | not captured | not captured | tv_prefix (not captured) | tab_0:row8:col6 |
+| PK (driver) | POP_Q | `Q30` · not captured | 71.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col2 |
+| PK (driver) | POP_Q | `Q30` · not captured | 76.9 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col4 |
+| PK (driver) | POP_Q — Confidence interval | `Q30` · not captured | 54.5 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col5 |
+| PK (driver) | POP_Q | `Q30` · not captured | 203 | not captured | not captured | tv_prefix (not captured) | tab_0:row9:col6 |
+| PK (driver) | POP_V2 | `Q64` · not captured | 24.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col2 |
+| PK (driver) | POP_V2 | `Q64` · not captured | 6.6 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col4 |
+| PK (driver) | POP_V2 — Confidence interval | `Q64` · not captured | 21.1 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col5 |
+| PK (driver) | POP_V2 | `Q64` · not captured | 25.4 | not captured | not captured | tv_prefix (not captured) | tab_0:row10:col6 |
+| PK (driver) | FV2 | `Q82` · not captured | 4.06 | not captured | not captured | llm (not captured) | tab_0:row14:col2 |
+| PK (driver) | FV2 | `Q82` · not captured | 219.1 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
+| PK (driver) | FV2 | `Q82` · not captured | 25.3 | not captured | not captured | llm (not captured) | tab_0:row14:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

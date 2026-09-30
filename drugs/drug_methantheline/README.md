@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 09:23 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 6,818/671 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-29 22:08 | 0:36 | 0/0/0 | 0/0/0 | 0/0/0 | 1,380/194 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -57,7 +57,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Müller_2012.pdf` | Müller C et al., Relative bioavailability and pharmacody…, European journal of clinica… (2012) | pd | 5 | [10.1007/s00228-012-1286-6](https://doi.org/10.1007/s00228-012-1286-6) | [22527350](https://www.ncbi.nlm.nih.gov/pubmed/22527350) | metadata signals extractable PD data (sigmoid) |
 
-<sub>queue written 2026-09-18T09:23:46.588005+00:00</sub>
+<sub>queue written 2026-09-29T22:08:06.807661+00:00</sub>
 
 ## Screened and excluded
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methotrexate (concentrations from the PK model of Blackman_2026) drives adenosine release (in % of total purine released): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Methotrexate (uM-range driver, cited PK) stimulates adenosine release (% of total purine released) from fibroblasts and endothelial cells in a dose-dependent Emax manner, with EC50 of 1 nM in fibroblasts (max 31 ± 6% from 4 ± 1%) and 6 nM with stimulated neutrophils (51 ± 4%); the paper states the mechanism is unknown but hypothesizes AICAR transformylase inhibition causing AICAR accumulation, and no kin/kout/ke0/gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cronstein_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

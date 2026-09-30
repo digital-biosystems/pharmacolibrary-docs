@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salicylate (measured concentrations) drives name (in pF): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Extracellular salicylate (applied by Y-tube) reduces peak capacitance (Cmpk, pF) of guinea-pig outer hair cells in a sigmoidal concentration-dependent manner, with effects detectable at ~300 µM, saturation above 10 mM, K1/2 = 1.6 mM and Hill coefficient n = 1.0; the paper does not state a mechanistic model (e.g., Imax/IC50, kin/kout) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kakehata_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

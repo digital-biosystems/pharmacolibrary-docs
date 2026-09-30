@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myricetin (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Myricetin (μM concentrations) dose-dependently attenuates the hemolytic activity of S. aureus culture on rabbit erythrocytes; the paper attributes this to NDH-2 inhibition (competitive with respect to menadione, IC50 2 μM / 0.7 μg/mL) but does not state a quantitative PD model (no Imax, Emax, kin, kout, ke0, or gamma) for the hemolytic response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

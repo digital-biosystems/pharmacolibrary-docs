@@ -20,10 +20,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_1990](drugs/drug_carboquone/pd_Lin_1990_colony_number.md) | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_1990](drugs/drug_carboquone/pd_Lin_1990_optical_density.md) | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_1990_colony_number](drugs/drug_carboquone/pd_Lin_1990_colony_number.md) | name ← carboquone · inhibition effect | — | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lin_1990_optical_density](drugs/drug_carboquone/pd_Lin_1990_optical_density.md) | name ← carboquone · inhibition effect | — | Lin ST, [Study on chemosensitivity test (in vit…, Nihon Ika Daigaku zasshi (1990) | [10.1272/jnms1923.57.127](https://doi.org/10.1272/jnms1923.57.127) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

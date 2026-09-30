@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mecamylamine (concentrations from this paper's PK model) drives Diastolic blood pressure (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma mecamylamine concentrations (μg L−1) act directly (no effect compartment) on diastolic blood pressure via an inhibitory Emax model, with Emax 30% and EC50 17.1 μg L−1 (SEM 17.1 μg L−1); the paper does not state a distinct mechanism beyond direct nicotinic antagonism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alvarez-Jimenez_2017`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -21,16 +31,16 @@ Alvarez-Jimenez R; Baakman AC; Stevens J; Goulooze SC; Hart EP; Rissmann R; et a
   ·  DOI: [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Parameter — Mecamylamine pharmacokinetics | `Q100` · not captured | 26.8 | not captured | not captured | llm (not captured) | tab_1:row2:col3 |
-| SEM — Mecamylamine pharmacokinetics | `Q100` · not captured | 1.04 | not captured | not captured | llm (not captured) | tab_1:row3:col3 |
-| IIV | `Q312` · not captured | 0.326 | not captured | not captured | exact (not captured) | tab_1:row4:col5 |
-| IIV — (percentage of correct answers) | `Q312` · not captured | 0.885 | percentage of correct answers | not captured | exact (not captured) | tab_1:row4:col16 |
-| IIV | `Q312` · not captured | 0.150 | not captured | not captured | exact (not captured) | tab_1:row4:col17 |
-| IIV — Systolic and diastolic blood pressure (mmHg) BL D | `Q312` · not captured | 6.91 | not captured | not captured | exact (not captured) | tab_1:row4:col24 |
-| E max | `Q320` · not captured | 30 | % | not captured | review_gapfill (not captured) | Alvarez-Jimenez_2017:review |
-| SEM of the EC 50 | `Q321` · not captured | 17.1 | μg L -1 | not captured | review_gapfill (not captured) | Alvarez-Jimenez_2017:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Parameter — Mecamylamine pharmacokinetics | `Q100` · not captured | 26.8 | not captured | not captured | llm (not captured) | tab_1:row2:col3 |
+| — | SEM — Mecamylamine pharmacokinetics | `Q100` · not captured | 1.04 | not captured | not captured | llm (not captured) | tab_1:row3:col3 |
+| variability | IIV | `Q312` · not captured | 0.326 | not captured | not captured | exact (not captured) | tab_1:row4:col5 |
+| variability | IIV — (percentage of correct answers) | `Q312` · not captured | 0.885 | percentage of correct answers | not captured | exact (not captured) | tab_1:row4:col16 |
+| variability | IIV | `Q312` · not captured | 0.150 | not captured | not captured | exact (not captured) | tab_1:row4:col17 |
+| variability | IIV — Systolic and diastolic blood pressure (mmHg) BL D | `Q312` · not captured | 6.91 | not captured | not captured | exact (not captured) | tab_1:row4:col24 |
+| PD (effect) | E max | `Q320` · not captured | 30 | % | not captured | review_gapfill (not captured) | Alvarez-Jimenez_2017:review |
+| PD (effect) | SEM of the EC 50 | `Q321` · not captured | 17.1 | μg L -1 | not captured | review_gapfill (not captured) | Alvarez-Jimenez_2017:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

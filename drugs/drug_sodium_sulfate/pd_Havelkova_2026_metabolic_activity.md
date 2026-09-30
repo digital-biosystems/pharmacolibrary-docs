@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buparlisib (measured concentrations) drives name (in RFU) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Buparlisib (free Bup, 2–200 µM) concentration-dependently inhibits metabolic activity (RFU) of GBM cell lines (U87MG, U118MG, T98G) after 72 h, with ~75% inhibition at 2 µM in U118MG/T98G, ~70% at 5 µM in U87MG, and maximum suppression at 20 µM (U87MG) or 200 µM (T98G); the paper reports no explicit PD model parameters (Imax, IC50, Emax, kin/kout) or mechanism beyond direct concentration-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Havelkova_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

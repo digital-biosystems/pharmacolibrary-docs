@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vestronidase alfa (concentrations from this paper's PK model) drives urinary chondroitin sulfate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vestronidase alfa serum AUC exposure was linked to the percentage reduction from baseline in urinary chondroitin sulfate (uCS) via an inhibitory Emax model (I0 fixed to 0), with IC50 = 8.6 µg·h/mL and Imax = 82.0% decrease in uCS; no effect-compartment or turnover (kin/kout) mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qi_2019`
 - **model family:** `emax`
 - **driver:** `pk_record`

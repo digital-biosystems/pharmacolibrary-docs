@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Orlistat (measured concentrations) drives virus titer (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Orlistat concentrations (μM) reduce DENV virus titer in HEK293T/17 cells, with a dose-dependent inhibition significant from 7 μM and ~3Log10 reduction at 10 μM at 36 h; the paper reports EC50 values of 84.79 μM (24 h) and 10.07 μM (36 h) for reduction of virus production, but does not state a specific PD model or mechanism beyond inhibition of FASN-dependent lipogenesis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tongluan_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

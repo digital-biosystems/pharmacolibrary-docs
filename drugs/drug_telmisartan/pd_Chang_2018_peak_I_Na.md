@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives peak I Na (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan (0.03–0.1 μM minimal, concentration-dependently) stimulates the peak component of voltage-gated Na+ current (peak I Na) in HL-1 cardiomyocytes, described as a direct stimulatory (gain-of-function) action on Na+ channels with a sigmoid Emax-type concentration–response relationship and EC50 of 0.2 μM; the detailed mechanism of this stimulatory action remains unclear in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

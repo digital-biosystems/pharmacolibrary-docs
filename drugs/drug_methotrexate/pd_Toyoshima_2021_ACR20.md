@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Peficitinib drives ACR20 response rate (in rate): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Peficitinib exposure (AUC24) drives ACR20 response, described by a continuous time Markov model with a sigmoidal Emax (saturable exposure) effect on the transition probability of ACR20 response over time; the paper does not state an Imax/IC50-type inhibition mechanism for ACR20. The exposure at half-maximal effect (EX50) was 693 (AUC24 units) at reference baseline DAS28-CRP 5.3 and total bilirubin 10, with EX50 decreasing at higher baseline DAS28-CRP and total bilirubin; predicted ACR20 response at 12 weeks with peficitinib 150 mg was 65.6–68.4%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toyoshima_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

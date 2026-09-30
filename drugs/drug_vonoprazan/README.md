@@ -31,9 +31,9 @@ In February 2015, vonoprazan was first marketed in Japan for the treatment of ac
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | 1-compartment (no model) | 0 | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Echizen_2016_reference](drugs/drug_vonoprazan/Vonoprazan_Echizen2016_reference.md) | — | 1-compartment (no model) | 0 | Echizen H, The First-in-Class Potassium-Competitiv…, Clinical pharmacokinetics (2016) | [10.1007/s40262-015-0326-7](https://doi.org/10.1007/s40262-015-0326-7) |
 
 ## ADME sites
 
@@ -46,6 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |

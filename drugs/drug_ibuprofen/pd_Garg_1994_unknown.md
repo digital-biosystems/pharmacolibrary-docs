@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibuprofen (concentrations from the PK model of Albert_1984) drives antipyretic effect (in % Inhibition): indirect response — drug inhibits the production of antipyretic effect.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen plasma concentrations (mg/L, from 5 and 10 mg/kg oral doses) were linked to antipyretic effect (% inhibition) using an indirect response model, in which the drug's inhibition of prostaglandin E2 synthesis in the brain (inhibition of response production) drives the fever reduction; the paper does not state the Imax, IC50, or other parameter values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Garg_1994`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

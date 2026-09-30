@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Comets_1998](drugs/drug_fluindione/pd_Comets_1998_INR.md) | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Comets_1998_INR](drugs/drug_fluindione/pd_Comets_1998_INR.md) | INR ← fluindione · indirect response — drug inhibits the loss of INR | — | Comets E et al., Modeling INR data to predict maintenanc…, Therapeutic drug monitoring (1998) | [10.1097/00007691-199812000-00009](https://doi.org/10.1097/00007691-199812000-00009) |
 
 ## ADME sites
 

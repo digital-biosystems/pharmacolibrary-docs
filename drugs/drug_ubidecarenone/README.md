@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tomono_1986_reference](drugs/drug_ubidecarenone/Ubidecarenone_Tomono1986_reference.md) | 1-compartment (no model) | 2 | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tomono_1986_reference](drugs/drug_ubidecarenone/Ubidecarenone_Tomono1986_reference.md) | — | 1-compartment (no model) | 2 | Tomono Y et al., Pharmacokinetic study of deuterium-labe…, International journal of cl… (1986) | — |
 
 ## ADME sites
 
@@ -47,6 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | stomach | <sub>“…e food. The absorption is lower in the presence of an empty stomach and greater in presenc…”</sub> | prose |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | kidney | <sub>“…the phosphorylation in the cells and transportation to the kidneys for further excretion b…”</sub> | prose |
 | excretion | bile duct | <sub>“…The main elimination route of ubidecarenone is through the bile. After its oral administra…”</sub> | prose |
 | excretion | kidney | <sub>“…a small fraction of the metabolites.[L1065, A31416] In the urine, ubidecarenone is bound t…”</sub> | prose |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AgNPs/PVA-g-PEG drives mortality rate (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> AgNPs/PVA-g-PEG concentration (μg mL−1) drives mortality rate (%) in HCT116 and SW620 cells after 24 h, described by a four-parameter logistic (sigmoid Emax) concentration–response curve; the paper does not state a production/elimination mechanism, only direct cytotoxicity. IC50 values are 25.42 ± 1.38 μg mL−1 in HCT116 and 37.64 ± 2.07 μg mL−1 in SW620 cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lu_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Treprostinil drives name (in 6MWD) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model: treprostinil dose (converted to weight-based ng/kg/min) was only retrospectively compared across tertiles against change in six-minute walk distance (6MWD), with no mechanism, effect model, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ramani_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

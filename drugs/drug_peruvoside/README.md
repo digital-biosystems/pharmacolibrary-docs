@@ -20,9 +20,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Samanta_2016](drugs/drug_peruvoside/pd_Samanta_2016_unknown.md) | Samanta J et al., Antifertility activity of Thevetia peru…, Indian journal of pharmacol… (2016) | [10.4103/0253-7613.194861](https://doi.org/10.4103/0253-7613.194861) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Samanta_2016_unknown](drugs/drug_peruvoside/pd_Samanta_2016_unknown.md) | uterine contraction ← Thevetia peruviana leaf extract (TPL-Me-G) · direct Emax (saturable) effect | — | Samanta J et al., Antifertility activity of Thevetia peru…, Indian journal of pharmacol… (2016) | [10.4103/0253-7613.194861](https://doi.org/10.4103/0253-7613.194861) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

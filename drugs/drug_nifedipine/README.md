@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;nifedipine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Li2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nifedipine_Chung1987_reference&quot;,&quot;label&quot;:&quot;Chung_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nifedipine_Li2025_reference&quot;,&quot;label&quot;:&quot;Li_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Li2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Nifedipine_Chung1987_reference&quot;,&quot;label&quot;:&quot;Chung_1987_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # nifedipine
 
@@ -33,10 +33,10 @@ Nifedipine was granted FDA approval on 31 December 1981.[L11383]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2025_reference](drugs/drug_nifedipine/Nifedipine_Li2025_reference.md) | 1-compartment, oral | 3 | Li Y et al., Population Pharmacokinetics of Nifedipi…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70087](https://doi.org/10.1002/jcph.70087) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chung_1987_reference](drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md) | 1-compartment (no model) | 0 | Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987) | [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Li_2025_reference](drugs/drug_nifedipine/Nifedipine_Li2025_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Li Y et al., Population Pharmacokinetics of Nifedipi…, Journal of clinical pharmac… (2025) | [10.1002/jcph.70087](https://doi.org/10.1002/jcph.70087) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Chung_1987_reference](drugs/drug_nifedipine/Nifedipine_Chung1987_reference.md) | — | 1-compartment (no model) | 0 | Chung M et al., Clinical pharmacokinetics of nifedipine…, The American journal of med… (1987) | [10.1016/0002-9343(87)90630-9](https://doi.org/10.1016/0002-9343(87)90630-9) |
 
 ## ADME sites
 
@@ -73,7 +73,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 448 matched, 20 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

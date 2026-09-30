@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Oishi_2017_reference](drugs/drug_eplerenone/Eplerenone_Oishi2017_reference.md) | 1-compartment (no model) | 1 | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Oishi_2017_reference](drugs/drug_eplerenone/Eplerenone_Oishi2017_reference.md) | — | 1-compartment (no model) | 1 | Oishi M et al., Population Pharmacokinetics of Eplereno…, Journal of clinical pharmac… (2017) | [10.1002/jcph.861](https://doi.org/10.1002/jcph.861) |
 
 ## ADME sites
 

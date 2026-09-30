@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In a luciferase reporter transcription assay, prednisolone directly stimulates (activates) the mutant androgen receptor AR L702H with EC50 = 48 nmol/L and the double mutant AR L702H/T878A with EC50 = 4.0 nmol/L, while AR WT, p.W742C, p.H875Y and p.T878A showed no activation; the paper describes this as direct receptor activation by the ligand and does not state Imax, kin/kout or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snaterse_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

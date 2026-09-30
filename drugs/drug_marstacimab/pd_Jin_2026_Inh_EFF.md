@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anti-TFPI antibody (measured concentrations) drives Inhibition effect (in %): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Anti-TFPI antibody (marstacimab) concentration (nM) in the central compartment directly and instantaneously drives the inhibition effect (Inh EFF, %) of TFPI blockade, modeled as a direct-effect function of central concentration within a TMDD PK framework; the paper does not state Imax, IC50/EC50, or other potency/rate parameter values for this effect in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2026`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | 1-compartment (no model) | 3 | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Dailly_2008_reference](drugs/drug_domperidone/Domperidone_Dailly2008_reference.md) | — | 1-compartment (no model) | 3 | Dailly E et al., Population pharmacokinetics of domperid…, European journal of clinica… (2008) | [10.1007/s00228-008-0535-1](https://doi.org/10.1007/s00228-008-0535-1) |
 
 ## Pharmacogenomics (PGx)
 
@@ -49,6 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate/transport | DrugBank actor |
+| absorption | testis | `ABCB1` substrate/transport | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2B6` substrate, `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |

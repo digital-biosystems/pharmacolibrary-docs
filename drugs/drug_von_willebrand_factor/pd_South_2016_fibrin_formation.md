@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in absorbance) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ADAMTS-13 (GoF variant, 50 nM) acts on fibrin formation measured as absorbance at 405 nm in plasma turbidity assays, with the effect being inhibition of fibrin formation via proteolysis of fibrinogen; wild-type ADAMTS-13 showed no significant effect. The paper does not report a formal PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

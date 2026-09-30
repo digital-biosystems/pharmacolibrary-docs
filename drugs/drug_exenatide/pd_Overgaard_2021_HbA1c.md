@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (measured concentrations) drives HbA1c change from baseline (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plasma semaglutide concentrations (nmol/L) drive the change from baseline in HbA1c (%) at 26 weeks, described by an Emax model in which baseline HbA1c and trial population influence the treatment effect, with additional placebo effects of diabetes duration and baseline HbA1c; the paper does not state Emax, EC50, or other parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Overgaard_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

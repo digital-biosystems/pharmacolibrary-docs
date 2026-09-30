@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 08:11 | 12:40 | 0/0/0 | 0/0/0 | 0/0/0 | 346,470/7,845 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 2/12 | 14/0 | 0 |
+| 2026-09-29 23:28 | 0:44 | 0/0/0 | 0/0/0 | 0/0/0 | 1,844/168 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 2/12 | 14/0 | 0 |
 
 ## popPK records
 
@@ -54,7 +54,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Chevalier_2021.pdf` | Chevalier C et al., Pharmacokinetics of Imeglimin in Subjec…, Clinical pharmacokinetics (2021) | popPK | 8 | [10.1007/s40262-020-00948-1](https://doi.org/10.1007/s40262-020-00948-1) | [33169345](https://pubmed.ncbi.nlm.nih.gov/33169345) | The study reports PK parameters for imeglimin, but the evidence only provides relative fold-changes (Cmax/AUC ratios) rather than absolute quantitative disposition parameters like clearance or volume. |
 | `Kitamura_2023.pdf` | Kitamura A et al., Pharmacokinetics and Safety of Imeglimi…, Journal of clinical pharmac… (2023) | popPK | 8 | [10.1002/jcph.2218](https://doi.org/10.1002/jcph.2218) | [36847203](https://pubmed.ncbi.nlm.nih.gov/36847203) | The study reports PK parameters for imeglimin, but the specific numeric values are not present in the provided text, which only describes trends and qualitative findings. |
 
-<sub>queue written 2026-09-22T08:10:39.186250+00:00</sub>
+<sub>queue written 2026-09-29T23:28:42.361681+00:00</sub>
 
 ## Screened and excluded
 

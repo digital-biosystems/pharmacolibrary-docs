@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syn-Vm24-CDR3L (measured concentrations) drives TNF-alpha secretion (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe a pharmacodynamic model linking palivizumab concentrations to TNF-alpha secretion; the paper instead concerns the Kv1.3-blocking antibody-toxin fusion Syn-Vm24-CDR3L (rat terminal half-life 54.0 h intravenous, 38.4 h subcutaneous; Moka1 Kd = 1 nM for Kv1.3), and no mechanism, potency, or rate values for a palivizumab–TNF-alpha relationship are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GCG-NH2 drives PTH1R beta-arrestin-2 recruitment (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper excerpts do not describe trypsin acting on PTH1R beta-arrestin-2 recruitment, and no mechanism, potency (Imax, IC50, EC50, Emax) or rate values for this model are given; the excerpts instead report glucagon analogue (G1–G3) effects on GCGR cAMP production and GCGR beta-arrestin-2 recruitment, so the mechanism for the recorded model cannot be stated from the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gibadullin_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

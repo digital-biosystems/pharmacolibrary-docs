@@ -22,18 +22,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine/Thiamine_Rindi1980_rats.md) | — (no model) | 0 | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Rindi_1980_rats](drugs/drug_thiamine/Thiamine_Rindi1980_rats.md) | — | — (no model) | 0 | Rindi G et al., Thiamine content and turnover rates of…, Brain research (1980) | [10.1016/0006-8993(80)90619-8](https://doi.org/10.1016/0006-8993(80)90619-8) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bettendorff_1994](drugs/drug_thiamine/pd_Bettendorff_1994_thiamine_uptake.md) | Bettendorff L et al., Mechanism of thiamine transport in neur…, The Journal of biological c… (1994) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hoetzel_2026](drugs/drug_thiamine/pd_Hoetzel_2026_GFP.md) | Hoetzel J et al., Mechanism underlying the high regulator…, Nature communications (2026) | [10.1038/s41467-026-76256-2](https://doi.org/10.1038/s41467-026-76256-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mooney_2024](drugs/drug_thiamine/pd_Mooney_2024_cell_count.md) | Mooney R et al., Sodium Metabisulfite Inhibits Acanthamo…, Pathogens (Basel, Switzerla… (2024) | [10.3390/pathogens13060431](https://doi.org/10.3390/pathogens13060431) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Noguchi_2018](drugs/drug_thiamine/pd_Noguchi_2018_BDK.md) | Noguchi S et al., Ca2+-dependent inhibition of branched-c…, Biochemical and biophysical… (2018) | [10.1016/j.bbrc.2018.09.038](https://doi.org/10.1016/j.bbrc.2018.09.038) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Bettendorff_1994_thiamine_uptake](drugs/drug_thiamine/pd_Bettendorff_1994_thiamine_uptake.md) | name ← veratridine · inhibition effect | — | Bettendorff L et al., Mechanism of thiamine transport in neur…, The Journal of biological c… (1994) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hoetzel_2026_GFP](drugs/drug_thiamine/pd_Hoetzel_2026_GFP.md) | GFP expression ← doxycycline · direct Emax (saturable) effect | — | Hoetzel J et al., Mechanism underlying the high regulator…, Nature communications (2026) | [10.1038/s41467-026-76256-2](https://doi.org/10.1038/s41467-026-76256-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mooney_2024_cell_count](drugs/drug_thiamine/pd_Mooney_2024_cell_count.md) | Acanthamoeba trophozoite growth ← sodium metabisulfite · inhibition effect | — | Mooney R et al., Sodium Metabisulfite Inhibits Acanthamo…, Pathogens (Basel, Switzerla… (2024) | [10.3390/pathogens13060431](https://doi.org/10.3390/pathogens13060431) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Noguchi_2018_BDK](drugs/drug_thiamine/pd_Noguchi_2018_BDK.md) | BCKDH kinase activity ← thiamine pyrophosphate · inhibition effect | — | Noguchi S et al., Ca2+-dependent inhibition of branched-c…, Biochemical and biophysical… (2018) | [10.1016/j.bbrc.2018.09.038](https://doi.org/10.1016/j.bbrc.2018.09.038) |
 
 ## ADME sites
 

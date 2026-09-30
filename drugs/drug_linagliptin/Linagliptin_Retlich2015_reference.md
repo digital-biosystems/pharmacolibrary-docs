@@ -5,7 +5,7 @@
 
 # linagliptin — `Linagliptin_Retlich2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.476). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,11 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Kabs, t1/2ka , k13, Q/F, V, Cmax and KD have no unit.**
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Bmax), so that value has no SI equivalent. Extracted — linagliptin: kabs 0.933, t1/2ka 0.795, k13 0.441, V1/F 715 L, Q/F 412, V 1.65e+03, CL/F 258 L/h, Bmax 4.97 nmol/L, … (+2).
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has linagliptin, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -79,6 +83,37 @@ Retlich S; Duval V; Graefe-Mody U; Friedrich C; Patel S; Jaehde U; et al. et al.
 - LLM selected parameter table(s) 4
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.476 (10/21 fields) | 11 |
+
+<details><summary>11 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.bioavailability.theta` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose_b max,c g]` | not captured | 3.41 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f in study 4]` | not captured | 169 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ggt_cle,f]` | not captured | -0.0339 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a,2]` | 0.795 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a,3]` | 0.441 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[relative bioavailability]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v p/f (l)d].parameter_id` | Q61 | Q82 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | linagliptin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | linagliptin | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Peficitinib drives 28-joint disease activity score based on C-reactive protein (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Peficitinib exposure (AUC24h) drives the time course of DAS28-CRP via an indirect response model in which the drug inhibits the production rate constant of disease severity (DKEQ), with a sigmoidal Emax-type drug effect DE = Emax × EX50/(EX50 + AUC24h); the excerpts do not report numerical values for Emax, EX50, or DKEQ.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toyoshima_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

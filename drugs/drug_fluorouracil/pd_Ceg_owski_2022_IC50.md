@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in µg mL−1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> This paper does not present a pharmacodynamic model: 5-fluorouracil-loaded molecularly imprinted microparticles (EGDMA- or TRIM-based) were characterized by release kinetics (fitted to Korsmeyer–Peppas; pseudo-first/second-order rate constants reported, e.g. MIPTRIM 2.47 h−1 first-order, 0.52 h−1 second-order) and by IC50 cytotoxicity (µg mL−1) in cancer cell lines (U87 MG, HeLa, KB, A-549, MCF-7) and normal HDF cells, with drug-loaded MIPTRIM showing cytotoxicity against HeLa similar to pure 5-FU but roughly threefold lower toxicity against HDF; no mechanism linking concentrations to response (e.g. Imax, IC50, EC50, Emax, kin, kout, ke0 values) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cegłowski_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,24 +31,24 @@ Cegłowski M; Kurczewska J; Lusina A; Nazim T; Ruszkowski P et al. (2022). Polym
   ·  DOI: [10.3390/polym14051027](https://doi.org/10.3390/polym14051027)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 3.46 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col1 |
-| MIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.987 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col2 |
-| MIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.03 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col3 |
-| MIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.998 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col4 |
-| NIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 1.50 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col1 |
-| NIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.979 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col2 |
-| NIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.00 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col3 |
-| NIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.997 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col4 |
-| MIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 2.47 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col1 |
-| MIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.993 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col2 |
-| MIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.52 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col3 |
-| MIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.999 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col4 |
-| NIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 1.74 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col1 |
-| NIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.980 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col2 |
-| NIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.73 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col3 |
-| NIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.994 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 3.46 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col1 |
+| PK (driver) | MIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.987 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col2 |
+| — | MIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.03 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col3 |
+| — | MIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.998 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row2:col4 |
+| PK (driver) | NIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 1.50 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col1 |
+| PK (driver) | NIPEGDMA — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.979 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col2 |
+| — | NIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.00 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col3 |
+| — | NIPEGDMA — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.997 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row3:col4 |
+| PK (driver) | MIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 2.47 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col1 |
+| PK (driver) | MIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.993 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col2 |
+| — | MIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.52 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col3 |
+| — | MIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.999 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row4:col4 |
+| PK (driver) | NIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 1.74 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col1 |
+| PK (driver) | NIPTRIM — Pseudo-First-Order Kinetic Model | `Q47` · not captured | 0.980 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col2 |
+| — | NIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 1.73 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col3 |
+| — | NIPTRIM — Pseudo-Second-Order Kinetic Model | `Q100` · not captured | 0.994 | h−1 | not captured | llm (not captured) | polymers-14-01027-t002:row5:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopexamine drives renal vascular resistance (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Intra-arterial dopexamine reduces renal vascular resistance (RVR) in the anaesthetized dog via renal vasodilatation mediated by stimulation of vascular DA1-receptors and β2-adrenoceptors (response partially reduced by ICI 118551 and antagonized by SCH 23390); the RVR ED20 for dopexamine was 0.9 x 10^-8 mol kg^-1 (95% CL 0.5–1.5 x 10^-8 mol kg^-1), with a 20% fall in RVR at 2.3 x 10^-8 mol kg^-1 (i.a.), and dopexamine has about one-third the potency of dopamine at the vascular DA1-receptor. The paper does not state a formal PD model (e.g. Emax, kin/kout, effect compartment) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brown_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

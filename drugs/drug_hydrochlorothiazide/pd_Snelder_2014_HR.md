@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive heart rate (in bpm): indirect response — drug inhibits the production of heart rate.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, hydrochlorothiazide (with other antihypertensives) acts on heart rate (bpm) via an indirect response mechanism: drug effects on HR are described by a turnover equation with zero-order production (Kin_HR) and first-order dissipation (kout_HR = 11.6 h⁻¹ in WKY), linked to MAP, SV and TPR through negative baroreflex feedback (FB); the paper does not state hydrochlorothiazide-specific potency values (Imax/IC50/EC50) in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

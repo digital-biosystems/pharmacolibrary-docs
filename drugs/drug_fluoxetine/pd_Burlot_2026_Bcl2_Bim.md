@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S65487 (measured concentrations) drives Bcl2/Bim complex (in μg/L): indirect response — drug inhibits the production of Bcl2/Bim complex.
+
+**Model:** No model was generated from this record.
+
+> S65487 (not fluoxetine) plasma concentrations inhibit the formation of the Bcl2/Bim complex (measured in μg/L) via an indirect response model in which the Imax=1 inhibitory Emax effect acts on the complex production rate kin; the paper does not report numeric IC50, Emax, or kin values in the excerpts. Baseline complex R0 was 11.8 μg/L (Phase I) and 12.7 μg/L (Phase I/II), with kout of 0.4 (units not stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Burlot_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -21,88 +31,88 @@ Burlot C; Riglet F; Romagnoli M; Leconte A; Delmas A; Schmitt A; et al. et al. (
   ·  DOI: [10.1002/psp4.70288](https://doi.org/10.1002/psp4.70288)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cl — Base PK/PD model | `Q22` · not captured | 12.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col3 |
-| Cl — Base PK/PD model | `Q22` · not captured | 5.3 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col4 |
-| Cl — PhI‐II PK/PD model | `Q22` · not captured | 12.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col5 |
-| Cl — PhI‐II PK/PD model | `Q22` · not captured | 5.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col6 |
-| Vcentral — Base PK/PD model | `Q63` · not captured | 9.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col3 |
-| Vcentral — Base PK/PD model | `Q63` · not captured | 9.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col4 |
-| Vcentral — PhI‐II PK/PD model | `Q63` · not captured | 7.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col5 |
-| Vcentral — PhI‐II PK/PD model | `Q63` · not captured | 10.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col6 |
-| Q2 — Base PK/PD model | `Q30` · not captured | 2.1 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col3 |
-| Q2 — Base PK/PD model | `Q30` · not captured | 17.2 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col4 |
-| Q2 — PhI‐II PK/PD model | `Q30` · not captured | 1.5 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col5 |
-| Q2 — PhI‐II PK/PD model | `Q30` · not captured | 13.1 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col6 |
-| V2 — Base PK/PD model | `Q64` · not captured | 17.1 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col3 |
-| V2 — Base PK/PD model | `Q64` · not captured | 15.9 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col4 |
-| V2 — PhI‐II PK/PD model | `Q64` · not captured | 16.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col5 |
-| V2 — PhI‐II PK/PD model | `Q64` · not captured | 14.0 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col6 |
-| Q3 — Base PK/PD model | `Q308` · not captured | 8.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col3 |
-| Q3 — Base PK/PD model | `Q308` · not captured | 16.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col4 |
-| Q3 — PhI‐II PK/PD model | `Q308` · not captured | 15.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col5 |
-| Q3 — PhI‐II PK/PD model | `Q308` · not captured | 18.6 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col6 |
-| V3 — Base PK/PD model | `Q77` · not captured | 11.6 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col3 |
-| V3 — Base PK/PD model | `Q77` · not captured | 9.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col4 |
-| V3 — PhI‐II PK/PD model | `Q77` · not captured | 14.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col5 |
-| V3 — PhI‐II PK/PD model | `Q77` · not captured | 7.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col6 |
-| R0 — Base PK/PD model | `Q336` · not captured | 11.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row8:col4 |
-| R0 — PhI‐II PK/PD model | `Q336` · not captured | 12.7 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row8:col6 |
-| kout — Base PK/PD model | `Q328` · not captured | 0.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col3 |
-| kout — Base PK/PD model | `Q328` · not captured | 9.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col4 |
-| kout — PhI‐II PK/PD model | `Q328` · not captured | 0.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col5 |
-| kout — PhI‐II PK/PD model | `Q328` · not captured | 8.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col6 |
-| IC50 — Base PK/PD model | `Q322` · not captured | 64.1 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col3 |
-| IC50 — Base PK/PD model | `Q322` · not captured | 34.6 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col4 |
-| IC50 — PhI‐II PK/PD model | `Q322` · not captured | 140.9 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col5 |
-| IC50 — PhI‐II PK/PD model | `Q322` · not captured | 45.6 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col6 |
-| β‐IC50STUDY003 — PhI‐II PK/PD model | `Q322` · not captured | -1.6 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row11:col5 |
-| β‐IC50STUDY003 — PhI‐II PK/PD model | `Q322` · not captured | 39.8 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row11:col6 |
-| IIVCL — Base PK/PD model | `Q312` · not captured | 57.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col3 |
-| IIVCL — Base PK/PD model | `Q312` · not captured | 7.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col4 |
-| IIVCL — PhI‐II PK/PD model | `Q312` · not captured | 58.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col5 |
-| IIVCL — PhI‐II PK/PD model | `Q312` · not captured | 7.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col6 |
-| IIVVc — Base PK/PD model | `Q312` · not captured | 105 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col3 |
-| IIVVc — Base PK/PD model | `Q312` · not captured | 8.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col4 |
-| IIVVc — PhI‐II PK/PD model | `Q312` · not captured | 119.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col5 |
-| IIVVc — PhI‐II PK/PD model | `Q312` · not captured | 9.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col6 |
-| IIVQ2 — Base PK/PD model | `Q312` · not captured | 334.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col3 |
-| IIVQ2 — Base PK/PD model | `Q312` · not captured | 9.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col4 |
-| IIVQ2 — PhI‐II PK/PD model | `Q312` · not captured | 258.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col5 |
-| IIVQ2 — PhI‐II PK/PD model | `Q312` · not captured | 9.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col6 |
-| IIVV2 — Base PK/PD model | `Q312` · not captured | 289.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col3 |
-| IIVV2 — Base PK/PD model | `Q312` · not captured | 9.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col4 |
-| IIVV2 — PhI‐II PK/PD model | `Q312` · not captured | 365.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col5 |
-| IIVV2 — PhI‐II PK/PD model | `Q312` · not captured | 10.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col6 |
-| IIVQ3 — Base PK/PD model | `Q312` · not captured | 254.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col3 |
-| IIVQ3 — Base PK/PD model | `Q312` · not captured | 9.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col4 |
-| IIVQ3 — PhI‐II PK/PD model | `Q312` · not captured | 365.4 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col5 |
-| IIVQ3 — PhI‐II PK/PD model | `Q312` · not captured | 8.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col6 |
-| IIVV3 — Base PK/PD model | `Q312` · not captured | 55.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col3 |
-| IIVV3 — Base PK/PD model | `Q312` · not captured | 17.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col4 |
-| IIVV3 — PhI‐II PK/PD model | `Q77` · not captured | 53.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col5 |
-| IIVV3 — PhI‐II PK/PD model | `Q77` · not captured | 13.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col6 |
-| IIVkout — Base PK/PD model | `Q328` · not captured | 85.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col3 |
-| IIVkout — Base PK/PD model | `Q328` · not captured | 11.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col4 |
-| IIVkout — PhI‐II PK/PD model | `Q328` · not captured | 90.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col5 |
-| IIVkout — PhI‐II PK/PD model | `Q328` · not captured | 9.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col6 |
-| IIVIC50 — Base PK/PD model | `Q322` · not captured | 3264.7 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col3 |
-| IIVIC50 — Base PK/PD model | `Q322` · not captured | 10.2 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col4 |
-| IIVIC50 — PhI‐II PK/PD model | `Q322` · not captured | 1386.5 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col5 |
-| IIVIC50 — PhI‐II PK/PD model | `Q322` · not captured | 11.2 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col6 |
-| σ Add — Base PK/PD model | `Q317` · not captured | 3.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col3 |
-| σ Add — Base PK/PD model | `Q317` · not captured | 13.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col4 |
-| σ Add — PhI‐II PK/PD model | `Q317` · not captured | 2.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col5 |
-| σ Add — PhI‐II PK/PD model | `Q317` · not captured | 8.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col6 |
-| σ Prop — Base PK/PD model | `Q315` · not captured | 0.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col3 |
-| σ Prop — Base PK/PD model | `Q315` · not captured | 2.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col4 |
-| σ Prop — PhI‐II PK/PD model | `Q316` · not captured | 0.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col5 |
-| σ Prop — PhI‐II PK/PD model | `Q316` · not captured | 2.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col6 |
-| σ Prop2 — Base PK/PD model | `Q315` · not captured | 0.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col3 |
-| σ Prop2 — Base PK/PD model | `Q315` · not captured | 5.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col4 |
-| σ Prop2 — PhI‐II PK/PD model | `Q315` · not captured | 0.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col5 |
-| σ Prop2 — PhI‐II PK/PD model | `Q315` · not captured | 4.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cl — Base PK/PD model | `Q22` · not captured | 12.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col3 |
+| PK (driver) | Cl — Base PK/PD model | `Q22` · not captured | 5.3 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col4 |
+| PK (driver) | Cl — PhI‐II PK/PD model | `Q22` · not captured | 12.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col5 |
+| PK (driver) | Cl — PhI‐II PK/PD model | `Q22` · not captured | 5.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row2:col6 |
+| PK (driver) | Vcentral — Base PK/PD model | `Q63` · not captured | 9.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col3 |
+| PK (driver) | Vcentral — Base PK/PD model | `Q63` · not captured | 9.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col4 |
+| PK (driver) | Vcentral — PhI‐II PK/PD model | `Q63` · not captured | 7.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col5 |
+| PK (driver) | Vcentral — PhI‐II PK/PD model | `Q63` · not captured | 10.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row3:col6 |
+| PK (driver) | Q2 — Base PK/PD model | `Q30` · not captured | 2.1 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col3 |
+| PK (driver) | Q2 — Base PK/PD model | `Q30` · not captured | 17.2 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col4 |
+| PK (driver) | Q2 — PhI‐II PK/PD model | `Q30` · not captured | 1.5 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col5 |
+| PK (driver) | Q2 — PhI‐II PK/PD model | `Q30` · not captured | 13.1 | not captured | not captured | special_case (not captured) | psp470288-tbl-0002:row4:col6 |
+| PK (driver) | V2 — Base PK/PD model | `Q64` · not captured | 17.1 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col3 |
+| PK (driver) | V2 — Base PK/PD model | `Q64` · not captured | 15.9 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col4 |
+| PK (driver) | V2 — PhI‐II PK/PD model | `Q64` · not captured | 16.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col5 |
+| PK (driver) | V2 — PhI‐II PK/PD model | `Q64` · not captured | 14.0 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row5:col6 |
+| PK (driver) | Q3 — Base PK/PD model | `Q308` · not captured | 8.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col3 |
+| PK (driver) | Q3 — Base PK/PD model | `Q308` · not captured | 16.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col4 |
+| PK (driver) | Q3 — PhI‐II PK/PD model | `Q308` · not captured | 15.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col5 |
+| PK (driver) | Q3 — PhI‐II PK/PD model | `Q308` · not captured | 18.6 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row6:col6 |
+| PK (driver) | V3 — Base PK/PD model | `Q77` · not captured | 11.6 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col3 |
+| PK (driver) | V3 — Base PK/PD model | `Q77` · not captured | 9.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col4 |
+| PK (driver) | V3 — PhI‐II PK/PD model | `Q77` · not captured | 14.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col5 |
+| PK (driver) | V3 — PhI‐II PK/PD model | `Q77` · not captured | 7.5 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row7:col6 |
+| PD (effect) | R0 — Base PK/PD model | `Q336` · not captured | 11.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row8:col4 |
+| PD (effect) | R0 — PhI‐II PK/PD model | `Q336` · not captured | 12.7 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row8:col6 |
+| PD (effect) | kout — Base PK/PD model | `Q328` · not captured | 0.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col3 |
+| PD (effect) | kout — Base PK/PD model | `Q328` · not captured | 9.2 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col4 |
+| PD (effect) | kout — PhI‐II PK/PD model | `Q328` · not captured | 0.4 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col5 |
+| PD (effect) | kout — PhI‐II PK/PD model | `Q328` · not captured | 8.8 | not captured | not captured | exact (not captured) | psp470288-tbl-0002:row9:col6 |
+| PD (effect) | IC50 — Base PK/PD model | `Q322` · not captured | 64.1 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col3 |
+| PD (effect) | IC50 — Base PK/PD model | `Q322` · not captured | 34.6 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col4 |
+| PD (effect) | IC50 — PhI‐II PK/PD model | `Q322` · not captured | 140.9 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col5 |
+| PD (effect) | IC50 — PhI‐II PK/PD model | `Q322` · not captured | 45.6 | μg/L | not captured | exact (not captured) | psp470288-tbl-0002:row10:col6 |
+| PD (effect) | β‐IC50STUDY003 — PhI‐II PK/PD model | `Q322` · not captured | -1.6 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row11:col5 |
+| PD (effect) | β‐IC50STUDY003 — PhI‐II PK/PD model | `Q322` · not captured | 39.8 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row11:col6 |
+| variability | IIVCL — Base PK/PD model | `Q312` · not captured | 57.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col3 |
+| variability | IIVCL — Base PK/PD model | `Q312` · not captured | 7.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col4 |
+| variability | IIVCL — PhI‐II PK/PD model | `Q312` · not captured | 58.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col5 |
+| variability | IIVCL — PhI‐II PK/PD model | `Q312` · not captured | 7.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row12:col6 |
+| variability | IIVVc — Base PK/PD model | `Q312` · not captured | 105 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col3 |
+| variability | IIVVc — Base PK/PD model | `Q312` · not captured | 8.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col4 |
+| variability | IIVVc — PhI‐II PK/PD model | `Q312` · not captured | 119.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col5 |
+| variability | IIVVc — PhI‐II PK/PD model | `Q312` · not captured | 9.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row13:col6 |
+| variability | IIVQ2 — Base PK/PD model | `Q312` · not captured | 334.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col3 |
+| variability | IIVQ2 — Base PK/PD model | `Q312` · not captured | 9.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col4 |
+| variability | IIVQ2 — PhI‐II PK/PD model | `Q312` · not captured | 258.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col5 |
+| variability | IIVQ2 — PhI‐II PK/PD model | `Q312` · not captured | 9.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row14:col6 |
+| variability | IIVV2 — Base PK/PD model | `Q312` · not captured | 289.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col3 |
+| variability | IIVV2 — Base PK/PD model | `Q312` · not captured | 9.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col4 |
+| variability | IIVV2 — PhI‐II PK/PD model | `Q312` · not captured | 365.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col5 |
+| variability | IIVV2 — PhI‐II PK/PD model | `Q312` · not captured | 10.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row15:col6 |
+| variability | IIVQ3 — Base PK/PD model | `Q312` · not captured | 254.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col3 |
+| variability | IIVQ3 — Base PK/PD model | `Q312` · not captured | 9.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col4 |
+| variability | IIVQ3 — PhI‐II PK/PD model | `Q312` · not captured | 365.4 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col5 |
+| variability | IIVQ3 — PhI‐II PK/PD model | `Q312` · not captured | 8.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row16:col6 |
+| variability | IIVV3 — Base PK/PD model | `Q312` · not captured | 55.3 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col3 |
+| variability | IIVV3 — Base PK/PD model | `Q312` · not captured | 17.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col4 |
+| PK (driver) | IIVV3 — PhI‐II PK/PD model | `Q77` · not captured | 53.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col5 |
+| PK (driver) | IIVV3 — PhI‐II PK/PD model | `Q77` · not captured | 13.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row17:col6 |
+| PD (effect) | IIVkout — Base PK/PD model | `Q328` · not captured | 85.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col3 |
+| PD (effect) | IIVkout — Base PK/PD model | `Q328` · not captured | 11.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col4 |
+| PD (effect) | IIVkout — PhI‐II PK/PD model | `Q328` · not captured | 90.2 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col5 |
+| PD (effect) | IIVkout — PhI‐II PK/PD model | `Q328` · not captured | 9.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row19:col6 |
+| PD (effect) | IIVIC50 — Base PK/PD model | `Q322` · not captured | 3264.7 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col3 |
+| PD (effect) | IIVIC50 — Base PK/PD model | `Q322` · not captured | 10.2 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col4 |
+| PD (effect) | IIVIC50 — PhI‐II PK/PD model | `Q322` · not captured | 1386.5 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col5 |
+| PD (effect) | IIVIC50 — PhI‐II PK/PD model | `Q322` · not captured | 11.2 | μg/L | not captured | llm (not captured) | psp470288-tbl-0002:row20:col6 |
+| variability | σ Add — Base PK/PD model | `Q317` · not captured | 3.1 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col3 |
+| variability | σ Add — Base PK/PD model | `Q317` · not captured | 13.8 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col4 |
+| variability | σ Add — PhI‐II PK/PD model | `Q317` · not captured | 2.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col5 |
+| variability | σ Add — PhI‐II PK/PD model | `Q317` · not captured | 8.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row22:col6 |
+| variability | σ Prop — Base PK/PD model | `Q315` · not captured | 0.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col3 |
+| variability | σ Prop — Base PK/PD model | `Q315` · not captured | 2.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col4 |
+| variability | σ Prop — PhI‐II PK/PD model | `Q316` · not captured | 0.5 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col5 |
+| variability | σ Prop — PhI‐II PK/PD model | `Q316` · not captured | 2.0 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row23:col6 |
+| variability | σ Prop2 — Base PK/PD model | `Q315` · not captured | 0.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col3 |
+| variability | σ Prop2 — Base PK/PD model | `Q315` · not captured | 5.9 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col4 |
+| variability | σ Prop2 — PhI‐II PK/PD model | `Q315` · not captured | 0.7 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col5 |
+| variability | σ Prop2 — PhI‐II PK/PD model | `Q315` · not captured | 4.6 | not captured | not captured | llm (not captured) | psp470288-tbl-0002:row24:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 8'-hydroxy-dihydroergotamine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In rat hippocampal membrane binding assays, 8'-hydroxy-dihydroergotamine concentration-dependently inhibited the specific binding of the 5-HT1A radioligands [3H]8-OH-DPAT and [3H]WAY 100635, with IC50 values of 8±3 and 11±3 nM (n=3), respectively; the paper does not state an Emax or kinetic parameters, and the apparent Hill coefficients significantly above unity indicate a more complex (likely allosteric) interaction rather than simple competition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanoun_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

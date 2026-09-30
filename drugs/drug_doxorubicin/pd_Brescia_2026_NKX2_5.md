@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives NKX2.5+ cell count (in normalized to baseline) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (μM concentrations, e.g. repeated 1 μM rounds, 3 μM, 10 μM) acts on the NKX2.5+ hPSC-CM count (normalized to 0 h baseline) by inducing apoptosis/cell death, causing a decline in NKX2.5+ cells that is faster in triple co-cultures than in monocultures; the paper does not state a quantitative PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brescia_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

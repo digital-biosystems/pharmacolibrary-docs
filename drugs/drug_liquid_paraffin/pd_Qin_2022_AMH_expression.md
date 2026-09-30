@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ab4B19 (the dose) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative PD model for AMH expression; it only reports qualitatively that Ab4B19 (an anti-BDNF receptor agonist antibody, given by tail vein at 0.1–1 mg/kg once every 4 days for 16 days) reversed the cyclophosphamide-induced decrease in ovarian AMH expression, with no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qin_2022`
 - **model family:** `unknown`
 - **driver:** `dose_only`

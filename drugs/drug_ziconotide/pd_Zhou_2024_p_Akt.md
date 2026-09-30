@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CDDO-Me (measured concentrations) drives name (in intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CDDO-Me (µM concentrations) inhibits proliferation of EGFR-T790M NSCLC cells, with IC50 values of 0.28 ± 0.01 µM in erlotinib-resistant PC9-ER cells, 0.40 ± 0.03 µM in H1975 (L858R/T790M), 2.81 ± 0.30 µM in A549 (EGFR-WT), and 26.83 ± 3.61 µM in normal 293T cells; the paper does not state a quantitative PD model (no Emax, kin, kout, or ke0), but mechanistically CDDO-Me is reported to inhibit the PI3K/Akt/mTOR signaling pathway and to bind the EGFR-T790M ATP pocket (docking score −8.9 for CSN15660).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,34 +30,34 @@ Zhou R; Liu Z; Wu T; Pan X; Li T; Miao K; Li Y; Hu X; Wu H; Hemmings AM; Jiang B
   ·  DOI: [10.1186/s12964-024-01954-7](https://doi.org/10.1186/s12964-024-01954-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CSN15660 — Docking score | `Q100` · not captured | -8.9 | not captured | not captured | llm (not captured) | Tab2:row1:col12 |
-| CSN12828 — Docking score | `Q100` · not captured | -8.7 | not captured | not captured | llm (not captured) | Tab2:row2:col12 |
-| CSN21003 — Docking score | `Q100` · not captured | -8.5 | not captured | not captured | llm (not captured) | Tab2:row3:col12 |
-| FDB001822 — Docking score | `Q100` · not captured | -8.4 | not captured | not captured | llm (not captured) | Tab2:row4:col12 |
-| FDB004435 — Docking score | `Q100` · not captured | -8.2 | not captured | not captured | llm (not captured) | Tab2:row5:col12 |
-| FDB000488 — Docking score | `Q100` · not captured | -8.2 | not captured | not captured | llm (not captured) | Tab2:row6:col12 |
-| FDB022684 — Docking score | `Q100` · not captured | -7.7 | not captured | not captured | llm (not captured) | Tab2:row7:col12 |
-| FDB007234 — Docking score | `Q100` · not captured | -7.4 | not captured | not captured | llm (not captured) | Tab2:row8:col12 |
-| FDB007717 — Docking score | `Q100` · not captured | -7.4 | not captured | not captured | llm (not captured) | Tab2:row9:col12 |
-| FDB007794 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row10:col12 |
-| FDB013845 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row11:col12 |
-| FDB019265 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row12:col12 |
-| FDB097411 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row13:col12 |
-| FDB001956 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row14:col12 |
-| FDB022983 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row15:col12 |
-| FDB014737 — Docking score | `Q100` · not captured | -7.2 | not captured | not captured | llm (not captured) | Tab2:row16:col12 |
-| FDB009193 — Docking score | `Q100` · not captured | -7.2 | not captured | not captured | llm (not captured) | Tab2:row17:col12 |
-| FDB005326 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row18:col12 |
-| FDB021371 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row19:col12 |
-| FDB014954 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row20:col12 |
-| FDB016956 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row21:col12 |
-| FDB029178 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row22:col12 |
-| FDB013625 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row23:col12 |
-| FDB021227 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row24:col12 |
-| FDB014444 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row25:col12 |
-| FDB016223 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row26:col12 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | CSN15660 — Docking score | `Q100` · not captured | -8.9 | not captured | not captured | llm (not captured) | Tab2:row1:col12 |
+| — | CSN12828 — Docking score | `Q100` · not captured | -8.7 | not captured | not captured | llm (not captured) | Tab2:row2:col12 |
+| — | CSN21003 — Docking score | `Q100` · not captured | -8.5 | not captured | not captured | llm (not captured) | Tab2:row3:col12 |
+| — | FDB001822 — Docking score | `Q100` · not captured | -8.4 | not captured | not captured | llm (not captured) | Tab2:row4:col12 |
+| — | FDB004435 — Docking score | `Q100` · not captured | -8.2 | not captured | not captured | llm (not captured) | Tab2:row5:col12 |
+| — | FDB000488 — Docking score | `Q100` · not captured | -8.2 | not captured | not captured | llm (not captured) | Tab2:row6:col12 |
+| — | FDB022684 — Docking score | `Q100` · not captured | -7.7 | not captured | not captured | llm (not captured) | Tab2:row7:col12 |
+| — | FDB007234 — Docking score | `Q100` · not captured | -7.4 | not captured | not captured | llm (not captured) | Tab2:row8:col12 |
+| — | FDB007717 — Docking score | `Q100` · not captured | -7.4 | not captured | not captured | llm (not captured) | Tab2:row9:col12 |
+| — | FDB007794 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row10:col12 |
+| — | FDB013845 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row11:col12 |
+| — | FDB019265 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row12:col12 |
+| — | FDB097411 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row13:col12 |
+| — | FDB001956 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row14:col12 |
+| — | FDB022983 — Docking score | `Q100` · not captured | -7.3 | not captured | not captured | llm (not captured) | Tab2:row15:col12 |
+| — | FDB014737 — Docking score | `Q100` · not captured | -7.2 | not captured | not captured | llm (not captured) | Tab2:row16:col12 |
+| — | FDB009193 — Docking score | `Q100` · not captured | -7.2 | not captured | not captured | llm (not captured) | Tab2:row17:col12 |
+| — | FDB005326 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row18:col12 |
+| — | FDB021371 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row19:col12 |
+| — | FDB014954 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row20:col12 |
+| — | FDB016956 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row21:col12 |
+| — | FDB029178 — Docking score | `Q100` · not captured | -7.1 | not captured | not captured | llm (not captured) | Tab2:row22:col12 |
+| — | FDB013625 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row23:col12 |
+| — | FDB021227 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row24:col12 |
+| — | FDB014444 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row25:col12 |
+| — | FDB016223 — Docking score | `Q100` · not captured | -7 | not captured | not captured | llm (not captured) | Tab2:row26:col12 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

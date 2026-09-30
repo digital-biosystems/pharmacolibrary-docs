@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifedipine drives name (in mmHg): direct effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model of amlodipine or nifedipine acting on systolic blood pressure; instead it reports in vitro drug–drug interaction data showing that isavuconazole reversibly (non–time-dependent) inhibits CYP3A4-mediated metabolism of calcium channel blockers, with an IC50 of 0.8092 μM (competitive inhibition assay, midazolam as probe substrate), a Ki of 0.1962 μM, and a microsomal unbound fraction (fu_mic) of 0.282. No mechanism for the systolic blood pressure response, nor potency or rate values for that response, are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2025`
 - **model family:** `direct_effect`
 - **driver:** `not_resolved`

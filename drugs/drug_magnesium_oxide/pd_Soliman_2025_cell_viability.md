@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MgO NPs (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MgO NPs (μg/mL) inhibit cell viability of HeLa and PC3 cancer cells in a dose-dependent manner (IC50 179.4 and 190.67 μg/mL, respectively; less toxicity toward normal Vero cells), and also inhibit α-glucosidase (IC50 38.8 μg/mL) and α-amylase (IC50 76.71 μg/mL); the paper does not state a pharmacodynamic model or mechanism beyond dose-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soliman_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

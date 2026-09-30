@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Collier_1968](drugs/drug_glafenine/pd_Collier_1968_bronchoconstriction.md) | Collier HO et al., Antagonism by fenamates and like-acting…, British journal of pharmaco… (1968) | [10.1111/j.1476-5381.1968.tb07952.x](https://doi.org/10.1111/j.1476-5381.1968.tb07952.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Collier_1968_bronchoconstriction](drugs/drug_glafenine/pd_Collier_1968_bronchoconstriction.md) | name ← meclofenamate · inhibition effect | — | Collier HO et al., Antagonism by fenamates and like-acting…, British journal of pharmaco… (1968) | [10.1111/j.1476-5381.1968.tb07952.x](https://doi.org/10.1111/j.1476-5381.1968.tb07952.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

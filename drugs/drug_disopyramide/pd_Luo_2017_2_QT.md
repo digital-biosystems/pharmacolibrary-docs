@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinidine (measured concentrations) drives QT interval (in ms) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In this simulation study, quinidine concentrations of 4, 7, and 10 µM prolonged the QT interval of pseudo-ECGs from 322 ms to 380, 395, and 397 ms respectively in the SQT3 (KCNJ2 D172N) ventricular model, acting via channel-blocking effects modelled with IC50 and Hill coefficient values; disopyramide was also simulated but no PD model parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for disopyramide on QT are stated in the excerpts, and no formal PD model structure is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2017_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

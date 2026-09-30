@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pereskia aculeata extracts (measured concentrations) drives Antibacterial activity (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pereskia aculeata leaf extracts (petroleum ether, chloroform, methanol; tested at 1–4 µg/mL) were applied to inoculated agar plates and the measured response was the diameter (mm) of the inhibition halo against various bacteria and molds; the paper reports a dose-dependent inhibitory effect (e.g., methanol extract inactive at 1 µg/mL against B. cereus DSM 4313 and S. aureus but strongly inhibitory at 4 µg/mL) but does not state a pharmacodynamic model or mechanism, and no potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given for the antibacterial halo response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Souza_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

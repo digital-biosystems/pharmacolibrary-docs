@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pseudo-ginsenosides drives hemolysis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Twelve synthetic pseudo-ginsenosides (0–25 µM) were tested for inhibition of AAPH-induced (40 mM) hemolysis of rabbit erythrocytes, with activity quantified by IC50 values ranked from (20Z) pseudo-PPT (strongest) to (20E) pseudo-Rh1 (weakest); the paper reports IC50 values but does not state a pharmacodynamic model, mechanism, or parameter values such as Imax, Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

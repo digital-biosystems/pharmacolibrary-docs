@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomycin (measured concentrations) drives intracellular calcium (in nM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for kanamycin's effect on intracellular calcium ([Ca2+]i) in cerebrovascular smooth muscle cells; it only shows qualitatively that aminoglycosides inhibit the OxyHb-induced sustained elevation of [Ca2+]i, with potency correlating with the number of amino groups (neomycin &gt; gentamicin &gt; streptomycin &gt; kanamycin). The only quantitative values given are for relaxation of OxyHb (10 mM)-precontracted arterial rings, where kanamycin had an EC50 of 3.9±0.5 mM (n=5), the least potent of the aminoglycosides tested; no Imax, IC50, Emax, kin, kout or ke0 values are stated, and the mechanism for the [Ca2+]i effect is not explicitly defined.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gergawy_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

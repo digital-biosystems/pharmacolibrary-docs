@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/&quot;},{&quot;label&quot;:&quot;Baek_2008 \u00b7 carvedilol_25_mg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atenolol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Sowinski1995_reference&quot;,&quot;label&quot;:&quot;Sowinski_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_before_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_before_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_during_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_during_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_during_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_van2007_reference&quot;,&quot;label&quot;:&quot;van_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_van2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atenolol_Baek2008_atenolol_50_mg&quot;,&quot;label&quot;:&quot;Baek_2008_atenolol_50_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_atenolol_50_mg.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Baek2008_carvedilol_25_mg&quot;,&quot;label&quot;:&quot;Baek_2008_carvedilol_25_mg&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Baek2008_carvedilol_25_mg.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Sowinski1995_reference&quot;,&quot;label&quot;:&quot;Sowinski_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Sowinski1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_before_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_before_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_before_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Celardo1987_during_renal_failure&quot;,&quot;label&quot;:&quot;Celardo_1987_during_renal_failure&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Celardo1987_during_renal_failure.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Scherholz2018_reference&quot;,&quot;label&quot;:&quot;Scherholz_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Scherholz2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_Wjcicki2003_reference&quot;,&quot;label&quot;:&quot;W\u00f3jcicki_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_Wjcicki2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atenolol_van2007_reference&quot;,&quot;label&quot;:&quot;van_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_atenolol/Atenolol_van2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atenolol — `Atenolol_Baek2008_carvedilol_25_mg`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.043). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,18 +13,24 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
+
+**All ten extracted parameters describe carvedilol, not atenolol, leaving atenolol's clearance, volume, and lag time at placeholder defaults.**
+
+The record lists AUC, Cmax, and clearance values for carvedilol, yet the drug is identified as atenolol. Consequently, atenolol's clearance, volume of distribution, and absorption lag time had no source values. A second reader also disagreed on the primary analyte and reported different parameter values. Extracted — carvedilol: AUCt 283 ng*h/mL, Cmax 62.7 ng/mL, tmax 1.26 h, V/F 1.56e+03 L, CL 94.6 L/h, kel 4.45 h⁻¹, kabs 4.52 h⁻¹, k21 0.19 h⁻¹, … (+2).
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atenolol, the second reading unknown; it also differs on 21 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Baek IH; Yun MH; Yun HY; Kwon KI et al. (2008). Archives of pharmacal research 31
   ·  DOI: [10.1007/s12272-001-1231-4](https://doi.org/10.1007/s12272-001-1231-4)
 
 ## Model component
-<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="extracted" stale="false" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="atenolol" model-id="Atenolol_Baek2008_carvedilol_25_mg" status="model_quarantined" stale="false" population="healthy adults" measured-compound="atenolol" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 10 extracted.
@@ -32,6 +38,8 @@ Baek IH; Yun MH; Yun HY; Kwon KI et al. (2008). Archives of pharmacal research 3
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | AUC0-30hr (ng h/mL) | `Q19` · AUCt | 282.55 | ng*h/mL | not captured | ng*h/mL | not captured | llm (0.6) | Baek_2008_table_2:row1:col2 | — | not captured |
@@ -133,6 +141,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q22 | pass | clearance within physiological range | 94.6 L/h | not captured | not captured | ['Baek_2008_table_2:row5:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.56e+03 L | not captured | not captured | ['Baek_2008_table_2:row4:col2'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_apparent_invariant | not captured | pass | not captured | F=Fm=1, no molar correction | not captured | apparent params must not be double-corrected |
+| T3_param_coverage | not captured | fail | 5 scholar param(s) emitted or defaulted | 4 covered | not captured | neither emitted nor in defaulted[]: ['k21'] |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C_enteral | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+| T1_cmax | reference | skipped | 396.14 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_cmax | reference | skipped | 2262.74 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 2.9 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 1.3 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 222.87 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_tmax | reference | skipped | 2221.26 | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -141,6 +166,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_atenolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Baek_2008` / `Baek_2008::carvedilol_25_mg`)
+- model: `../../../knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.mo`
+- deviation: `../../../knowledgebase/drugs/drug_atenolol/models/modelica/_needs_review/Atenolol_Baek2008_carvedilol_25_mg.deviation.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

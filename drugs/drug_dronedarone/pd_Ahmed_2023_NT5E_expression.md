@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atovaquone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for the NT5E (ecto-5'-nucleotidase) response: atovaquone (tested at 1 and 5 µM in Vero E6 cells) was associated with dysregulation of purine metabolism including NT5E in metabolomic profiling, but no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values and no mechanism (e.g., inhibition of production or elimination) are stated for this response. The antiviral IC50 of atovaquone was 1.5 µM in Vero E6 and 6.8 µM in Huh7.5 cells, with the effect not mediated by DHODH inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmed_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

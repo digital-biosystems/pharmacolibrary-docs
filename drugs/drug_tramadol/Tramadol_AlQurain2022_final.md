@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **The tramadol record was rejected because CL/F (0.00604 l/h), V1/F (0.373 l), Q (0.0426 l/h) and V2/F (0.379 l) fall far outside physiological ranges, indicating a unit or scale extraction error.**

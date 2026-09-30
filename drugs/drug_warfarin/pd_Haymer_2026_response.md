@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amprenavir analogues (e.g., VU6077967, 11c, 11d) (measured concentrations) drive PI hydrolysis (in percentage): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the PI hydrolysis assay (HEK cells expressing CB2 coupled via a chimeric G protein, without 2-AG), amprenavir (5) acts as a CB2 agonist directly stimulating the PI hydrolysis response, with an EC50 of 690 nM; the paper does not state an Emax, Hill coefficient, or kinetic parameters for this assay.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haymer_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Haymer DH; Duncan RA; Rodriguez AL; Han A; Lindsay RJ; Wijesiri NK; Thompson Gra
   ·  DOI: [10.1021/acs.jmedchem.5c02796](https://doi.org/10.1021/acs.jmedchem.5c02796)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 760 | nM | not captured | review_gapfill (not captured) | Haymer_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 760 | nM | not captured | review_gapfill (not captured) | Haymer_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

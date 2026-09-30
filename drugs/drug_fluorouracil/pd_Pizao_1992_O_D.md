@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Brooks_2025) drives absorbance readings (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In postconfluent HT29 microcultures, 5-fluorouracil concentration was related to sulforhodamine B absorbance (O.D.) as a cytotoxicity endpoint, with an EC50 of 50 µM defined as the concentration producing absorbance readings 50% lower than non-treated wells; the paper does not state a mechanistic PD model (e.g. Imax/IC50 turnover or effect-compartment) beyond this inhibitory EC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pizao_1992`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -20,9 +30,9 @@
 not matched (stem Pizao_1992)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| mean EC50 | `Q321` · not captured | 50 | gM | not captured | review_gapfill (not captured) | Pizao_1992:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | mean EC50 | `Q321` · not captured | 50 | gM | not captured | review_gapfill (not captured) | Pizao_1992:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cymbopogon proximus essential oil (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In rat ileum, Cymbopogon proximus essential oil (EOCP) concentration-dependently inhibits intestinal smooth muscle contractions evoked by carbachol (EC50 0.12 mg/mL, 0.10–0.15, n=5) and high K+ (80 mM; EC50 1.15 mg/mL, 1.07–1.28, n=5), acting like dicyclomine (EC50 0.31 µM and 3.41 µM, respectively) via competitive muscarinic inhibition at low concentrations (0.03 mg/mL, parallel CCh-CRC shift) and non-competitive/Ca++-antagonist-like inhibition at higher concentrations (0.1 mg/mL, suppressed maximum); the paper does not report kin/kout/ke0 or an effect-compartment model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Althurwi_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

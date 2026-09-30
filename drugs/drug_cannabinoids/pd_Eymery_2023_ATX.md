@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Δ9-trans-tetrahydrocannabinol drives autotaxin activity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Δ9-trans-tetrahydrocannabinol (THC) inhibits autotaxin (ATX) activity, measured in vitro with ATX-β and LPC 18:1 as substrate, by blocking the hydrophobic pocket at the enzyme's active-site entrance so that the LPC/LPA aliphatic chain cannot bind; the paper reports an apparent EC50 of 1026 nM for THC, but no Imax, Emax, gamma, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eymery_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Eymery MC; McCarthy AA; Hausmann J et al. (2023). Life science alliance 6
   ·  DOI: [10.26508/lsa.202201595](https://doi.org/10.26508/lsa.202201595)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| apparent EC50 value of THC with ATX-β and LPC 18:1 as a substrate | `Q321` · not captured | 1026 | nM | not captured | review_gapfill (not captured) | Eymery_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | apparent EC50 value of THC with ATX-β and LPC 18:1 as a substrate | `Q321` · not captured | 1026 | nM | not captured | review_gapfill (not captured) | Eymery_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

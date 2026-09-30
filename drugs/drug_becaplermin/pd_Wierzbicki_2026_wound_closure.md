@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GN44028 drives wound closure (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> GN44028 concentrations were associated with reduced wound closure (%) in 786-O cells (61.4 ± 8.09% vs control) and markedly in Caki-1 cells (4.9 ± 4.8% at 48 h vs control); the paper does not state a mechanism for this effect, and no potency (IC50/EC50/Emax) or rate parameters are reported for the wound closure response, which the authors note reflects both migration and proliferation rather than migratory capacity alone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wierzbicki_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Wierzbicki PM; Rybarczyk A; Czajkowski M; Kieżun J; Kraziński BE; Olszewska A;
   ·  DOI: [10.3390/ijms27083505](https://doi.org/10.3390/ijms27083505)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 10.98 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col3 |
-| IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 22.28 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col4 |
-| IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 31.53 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col5 |
-| IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 10.23 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col3 |
-| IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 19.49 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col4 |
-| IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 44.61 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col5 |
-| IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 3.39 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col3 |
-| IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 7.99 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col4 |
-| IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 5.77 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col5 |
-| IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 33.53 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col3 |
-| IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 12.47 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col4 |
-| IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 4.61 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 10.98 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col3 |
+| PD (effect) | IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 22.28 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col4 |
+| PD (effect) | IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 31.53 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row0:col5 |
+| PD (effect) | IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 10.23 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col3 |
+| PD (effect) | IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 19.49 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col4 |
+| PD (effect) | IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 44.61 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row1:col5 |
+| PD (effect) | IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 3.39 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col3 |
+| PD (effect) | IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 7.99 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col4 |
+| PD (effect) | IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 5.77 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row2:col5 |
+| PD (effect) | IC50 Concentration [μM] — HK-2 (normal) | `Q322` · not captured | 33.53 | normal | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col3 |
+| PD (effect) | IC50 Concentration [μM] — 786-O (ccRCC, VHL-mut) | `Q322` · not captured | 12.47 | ccRCC, VHL-mut | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col4 |
+| PD (effect) | IC50 Concentration [μM] — Caki-1 (ccRCC, VHL-wt) | `Q322` · not captured | 4.61 | ccRCC, VHL-wt | not captured | llm_confirmed (not captured) | ijms-27-03505-t005:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

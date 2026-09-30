@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **The capecitabine model was quarantined because its elimination clearance had no extracted value and a placeholder was used, and the V/F parameter (11.8 L) was neither emitted nor defaulted.**

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salsolinol drives beta-arrestin recruitment (in luminescence): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In CHO-K1 cells expressing the human μ-opioid receptor, racemic salsolinol (SAL) acts as a μ-opioid receptor agonist reducing intracellular cAMP (measured as chemiluminescence), with EC50 = 2 × 10−5 M (R2 = 0.86) versus morphine EC50 = 4 × 10−9 M; naltrexone antagonizes SAL (1.5 × 10−4 M, ~80% maximal response) in a concentration-dependent manner, achieving complete antagonism at 10−8 M with IC50 = 1 × 10−9 M (R2 = 0.85). The paper does not state a mechanism beyond competitive antagonism of receptor activation, and no Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Berríos-Cárcamo_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

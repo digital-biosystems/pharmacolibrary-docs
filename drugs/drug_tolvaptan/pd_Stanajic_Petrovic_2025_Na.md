@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MQ232 drives plasma sodium concentration (in mM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide a quantitative PD model for tolvaptan's effect on plasma sodium concentration; it only reports that tolvaptan (22 µmol/kg BW p.o., given on days 2–4 in a rat SIAD model) partially restored natremia at day 4 (plasma [Na+] = 137.6 mM, rise of 4.8 mM/d), with no Emax, EC50, kin, kout, or ke0 values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stanajic-Petrovic_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

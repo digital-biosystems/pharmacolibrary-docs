@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hemin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Intracellular hemin (200 nM tested) slows N-type inactivation of Kv3.4 channels in inside-out patches from HEK293t cells, increasing the non-inactivated current fraction at 50 mV from 5.2 ± 0.1% (GSH control) to 22.0 ± 0.2% and the inactivation time constant from 12.0 ± 0.1 to 23.8 ± 0.5 ms; the mechanism is hemin coordination by the N-terminal ball domain cysteine residues (C6 and C24), which impairs N-type inactivation, and no potency values (Imax, IC50, EC50) or kinetic model parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Coburger_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

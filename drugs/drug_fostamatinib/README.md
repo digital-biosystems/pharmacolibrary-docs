@@ -25,9 +25,9 @@ Recently, fostamatinib has been identified as a potential therapeutic for contro
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | 1-compartment (no model) | 0 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Boström_2014_reference](drugs/drug_fostamatinib/Fostamatinib_Bostrm2014_reference.md) | — | 1-compartment (no model) | 0 | Boström E et al., Exposure vs. response of blood pressure…, Journal of clinical pharmac… (2014) | [10.1002/jcph.341](https://doi.org/10.1002/jcph.341) |
 
 ## ADME sites
 
@@ -39,6 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` inhibitor | DrugBank actor |
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCG2` inhibitor | DrugBank actor |
 | distribution | blood | `SLC29A1` inhibitor | DrugBank actor |
 | distribution | liver | `SLC29A1` inhibitor | DrugBank actor |
 | metabolism | bile duct | <sub>“…jugate [A32936]. A 3,5 benzene diol metabolite forms in the feces via processing of the O-…”</sub> | prose |

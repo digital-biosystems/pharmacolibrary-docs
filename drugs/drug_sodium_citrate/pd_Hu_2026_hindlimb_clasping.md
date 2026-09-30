@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives motor deficits (in score): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (a CAST–calpain-2 protein-protein interaction stabilizer that prevents CAST degradation and limits calpain-2 activation) reduced motor deficits including hindlimb clasping in HD R6/2 mice treated intraperitoneally at 10 mg kg−1 day−1, 5 days per week from 6 to 12 weeks of age; the paper does not report an Emax model or potency/rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

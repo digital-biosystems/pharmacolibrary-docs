@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DEET (measured concentrations) drives Rat cortical sodium current (in current) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DEET (µM concentrations) directly blocks rat cortical neuronal sodium currents in patch clamp recordings, acting like a local anesthetic channel blocker (though unusually with a steeper Hill slope than lidocaine or toluene, by 7- and 10-fold respectively); the paper does not report an IC50, Emax, or rate constants for this sodium current effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swale_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

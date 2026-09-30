@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizic acid derivatives (Compounds 3, 6, 11, 21) (measured concentrations) drive name (in TCID50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid derivatives (GL-D-ValOMe 3, GL-TyrOMe 6, GL-PheOEt 11, GL-LysOMe 21) at μM concentrations concentration-dependently inhibit DENV2 yield (TCID50) in Vero E6 cells, acting by reducing viral protein expression and impairing the DENV2 attachment stage; no PD model (Emax/kin-kout) is described. IC50 values for DENV2 yield inhibition were 0.50 μM (compound 3), 6.0 μM (compound 6), 0.2 μM (compound 11), and 2.7 μM (compound 21), with CC50 &gt;100 μM in both cell lines.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hour_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pinacidil (measured concentrations) drives K+ channel current (in pA): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Nicorandil (1–30 µM, threshold 10 µM for SUR2A) directly activates whole-cell K+ channel current (pA) through SUR2B/Kir6.2 and, far less potently, SUR2A/Kir6.2 channels in a concentration-dependent manner, with 30 µM nicorandil activating SUR2B/Kir6.2 approximately to the same extent as 100 µM pinacidil and nicorandil being &gt;100 times more potent at SUR2B than SUR2A; the paper does not state an Emax, EC50, or kinetic model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shindo_1998`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** YH4808 drives intragastric pH (in pH units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> YH4808 plasma concentrations stimulate intragastric pH via a sigmoid Emax (effect-compartment) model with Emax 4.38 pH units, EC50 53 ng/mL, and ke0 (KEO) 47 1/h; the paper does not state a gamma (Hill) value. The increased pH in turn inhibits YH4808 exposure with EPmax 58% and EP50 59 pH units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chung_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,29 +31,29 @@ Chung TK; Lee HA; Lee KR; Jang SB; Yu KS; Lee H et al. (2022). CPT: pharmacometr
   ·  DOI: [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F, L/h — Shrinkage for IIV | `Q27` · not captured | 33.0 | L/h | not captured | exact (not captured) | psp412839-tbl-0002:row1:col4 |
-| V C /F, L — Shrinkage for IIV | `Q290` · not captured | 25.0 | L | not captured | space_fold (not captured) | psp412839-tbl-0002:row2:col4 |
-| V P /F, L — Shrinkage for IIV | `Q82` · not captured | 54.0 | L | not captured | space_fold (not captured) | psp412839-tbl-0002:row3:col4 |
-| Q/F, L/h — Shrinkage for IIV | `Q69` · not captured | 34.0 | L/h | not captured | exact (not captured) | psp412839-tbl-0002:row4:col4 |
-| K A, 1/h — Shrinkage for IIV | `Q49` · not captured | 48.0 | 1/h | not captured | space_fold (not captured) | psp412839-tbl-0002:row5:col4 |
-| ALAG1, h — Shrinkage for IIV | `Q318` · not captured | 68.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row6:col4 |
-| A 0 — Shrinkage for IIV | `Q318` · not captured | 54.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row7:col4 |
-| A 1 — Shrinkage for IIV | `Q318` · not captured | 46.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row8:col4 |
-| A 2 — Shrinkage for IIV | `Q318` · not captured | 59.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row9:col4 |
-| A 3 — Shrinkage for IIV | `Q318` · not captured | 61.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row10:col4 |
-| A 4 — Shrinkage for IIV | `Q318` · not captured | 87.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row11:col4 |
-| C 1 , h — Shrinkage for IIV | `Q318` · not captured | 64.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row12:col4 |
-| C 2 , h — Shrinkage for IIV | `Q318` · not captured | 72.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row13:col4 |
-| C 3 , h — Shrinkage for IIV | `Q318` · not captured | 51.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row14:col4 |
-| C 4 , h — Shrinkage for IIV | `Q318` · not captured | 77.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row15:col4 |
-| Emax, pH unit — Shrinkage for IIV | `Q318` · not captured | 58.0 | not captured | not captured | llm_corrected (not captured) | psp412839-tbl-0002:row16:col4 |
-| EC50, ng/mL — Shrinkage for IIV | `Q321` · not captured | 53.0 | ng/mL | not captured | exact (not captured) | psp412839-tbl-0002:row17:col4 |
-| KEO, 1/h — Shrinkage for IIV | `Q326` · not captured | 47.0 | 1/h | not captured | exact (not captured) | psp412839-tbl-0002:row18:col4 |
-| EPmax — Shrinkage for IIV | `Q318` · not captured | 56.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row19:col4 |
-| EP50, pH unit — Shrinkage for IIV | `Q321` · not captured | 59.0 | unknown | not captured | llm (not captured) | psp412839-tbl-0002:row20:col4 |
-| Emax | `Q320` · not captured | 4.38 | pH | not captured | review_gapfill (not captured) | Chung_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F, L/h — Shrinkage for IIV | `Q27` · not captured | 33.0 | L/h | not captured | exact (not captured) | psp412839-tbl-0002:row1:col4 |
+| PK (driver) | V C /F, L — Shrinkage for IIV | `Q290` · not captured | 25.0 | L | not captured | space_fold (not captured) | psp412839-tbl-0002:row2:col4 |
+| PK (driver) | V P /F, L — Shrinkage for IIV | `Q82` · not captured | 54.0 | L | not captured | space_fold (not captured) | psp412839-tbl-0002:row3:col4 |
+| PK (driver) | Q/F, L/h — Shrinkage for IIV | `Q69` · not captured | 34.0 | L/h | not captured | exact (not captured) | psp412839-tbl-0002:row4:col4 |
+| PK (driver) | K A, 1/h — Shrinkage for IIV | `Q49` · not captured | 48.0 | 1/h | not captured | space_fold (not captured) | psp412839-tbl-0002:row5:col4 |
+| variability | ALAG1, h — Shrinkage for IIV | `Q318` · not captured | 68.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row6:col4 |
+| variability | A 0 — Shrinkage for IIV | `Q318` · not captured | 54.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row7:col4 |
+| variability | A 1 — Shrinkage for IIV | `Q318` · not captured | 46.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row8:col4 |
+| variability | A 2 — Shrinkage for IIV | `Q318` · not captured | 59.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row9:col4 |
+| variability | A 3 — Shrinkage for IIV | `Q318` · not captured | 61.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row10:col4 |
+| variability | A 4 — Shrinkage for IIV | `Q318` · not captured | 87.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row11:col4 |
+| variability | C 1 , h — Shrinkage for IIV | `Q318` · not captured | 64.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row12:col4 |
+| variability | C 2 , h — Shrinkage for IIV | `Q318` · not captured | 72.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row13:col4 |
+| variability | C 3 , h — Shrinkage for IIV | `Q318` · not captured | 51.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row14:col4 |
+| variability | C 4 , h — Shrinkage for IIV | `Q318` · not captured | 77.0 | h | not captured | llm (not captured) | psp412839-tbl-0002:row15:col4 |
+| variability | Emax, pH unit — Shrinkage for IIV | `Q318` · not captured | 58.0 | not captured | not captured | llm_corrected (not captured) | psp412839-tbl-0002:row16:col4 |
+| PD (effect) | EC50, ng/mL — Shrinkage for IIV | `Q321` · not captured | 53.0 | ng/mL | not captured | exact (not captured) | psp412839-tbl-0002:row17:col4 |
+| PD (effect) | KEO, 1/h — Shrinkage for IIV | `Q326` · not captured | 47.0 | 1/h | not captured | exact (not captured) | psp412839-tbl-0002:row18:col4 |
+| variability | EPmax — Shrinkage for IIV | `Q318` · not captured | 56.0 | not captured | not captured | llm (not captured) | psp412839-tbl-0002:row19:col4 |
+| PD (effect) | EP50, pH unit — Shrinkage for IIV | `Q321` · not captured | 59.0 | unknown | not captured | llm (not captured) | psp412839-tbl-0002:row20:col4 |
+| PD (effect) | Emax | `Q320` · not captured | 4.38 | pH | not captured | review_gapfill (not captured) | Chung_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin (concentrations from the PK model of Chen_2025) drives LDL-apolipoprotein B (in unknown): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> Atorvastatin doses of 5, 20, and 80 mg daily reduced LDL-apolipoprotein B (measured after ultracentrifugation) in a log-linear dose-response manner, with the paper not stating a mechanistic PD model (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stern_2000`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

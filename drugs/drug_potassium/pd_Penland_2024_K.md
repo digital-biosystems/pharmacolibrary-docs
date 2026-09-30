@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium zirconium cyclosilicate (the dose) drives Serum Potassium (in mmol/L): indirect response — drug inhibits the production of Serum Potassium.
+
+**Model:** No model was generated from this record.
+
+> Sodium zirconium cyclosilicate (SZC) doses (g) drive, via a virtual PK exposure compartment, an indirect-response model of serum K+ (mmol/L) in which a sigmoid Emax function inhibits the zero-order K+ input/production rate (Kin); K+ elimination is governed by Kout. Key estimates (full model): Emax 63.3% inhibition, EC50 32.8 g, Kout 0.548 1/h, SZC mean transit time (MTT) 137 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Penland_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`
@@ -20,21 +30,21 @@ Penland RC; Åstrand M; Boulton DW; Någård M et al. (2024). Clinical pharmacok
   ·  DOI: [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SZC MTT, h — Base model, estimate (RSE %) | `Q81` · not captured | 145 | h | not captured | llm_confirmed (not captured) | Tab2:row1:col1 |
-| SZC MTT, h — Full model, estimate (RSE %) | `Q81` · not captured | 137 | h | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
-| Serum K+ Kout, 1/h — Base model, estimate (RSE %) | `Q328` · not captured | 0.644 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col1 |
-| Serum K+ Kout, 1/h — Full model, estimate (RSE %) | `Q328` · not captured | 0.548 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| Emax, % inhibition — Base model, estimate (RSE %) | `Q320` · not captured | 43.4 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col1 |
-| Emax, % inhibition — Full model, estimate (RSE %) | `Q320` · not captured | 63.3 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col2 |
-| EC50, g — Base model, estimate (RSE %) | `Q321` · not captured | 15.3 | g | not captured | exact (not captured) | Tab2:row5:col1 |
-| EC50, g — Full model, estimate (RSE %) | `Q321` · not captured | 32.8 | g | not captured | exact (not captured) | Tab2:row5:col2 |
-| BPV of EC50 variance — Base model, estimate (RSE %) | `Q321` · not captured | 0.33 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col1 |
-| BPV of EC50 variance — Full model, estimate (RSE %) | `Q321` · not captured | 0.171 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col2 |
-| BPV of placebo variance — Base model, estimate (RSE %) | `Q312` · not captured | 0.036 | RSE % | not captured | llm (not captured) | Tab2:row8:col1 |
-| Residual error variance — Base model, estimate (RSE %) | `Q315` · not captured | 0.34 | RSE % | not captured | exact (not captured) | Tab2:row9:col1 |
-| Residual error variance — Full model, estimate (RSE %) | `Q315` · not captured | 0.118 | RSE % | not captured | exact (not captured) | Tab2:row9:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | SZC MTT, h — Base model, estimate (RSE %) | `Q81` · not captured | 145 | h | not captured | llm_confirmed (not captured) | Tab2:row1:col1 |
+| PK (driver) | SZC MTT, h — Full model, estimate (RSE %) | `Q81` · not captured | 137 | h | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
+| PD (effect) | Serum K+ Kout, 1/h — Base model, estimate (RSE %) | `Q328` · not captured | 0.644 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col1 |
+| PD (effect) | Serum K+ Kout, 1/h — Full model, estimate (RSE %) | `Q328` · not captured | 0.548 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
+| PD (effect) | Emax, % inhibition — Base model, estimate (RSE %) | `Q320` · not captured | 43.4 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col1 |
+| PD (effect) | Emax, % inhibition — Full model, estimate (RSE %) | `Q320` · not captured | 63.3 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col2 |
+| PD (effect) | EC50, g — Base model, estimate (RSE %) | `Q321` · not captured | 15.3 | g | not captured | exact (not captured) | Tab2:row5:col1 |
+| PD (effect) | EC50, g — Full model, estimate (RSE %) | `Q321` · not captured | 32.8 | g | not captured | exact (not captured) | Tab2:row5:col2 |
+| PD (effect) | BPV of EC50 variance — Base model, estimate (RSE %) | `Q321` · not captured | 0.33 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col1 |
+| PD (effect) | BPV of EC50 variance — Full model, estimate (RSE %) | `Q321` · not captured | 0.171 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col2 |
+| variability | BPV of placebo variance — Base model, estimate (RSE %) | `Q312` · not captured | 0.036 | RSE % | not captured | llm (not captured) | Tab2:row8:col1 |
+| variability | Residual error variance — Base model, estimate (RSE %) | `Q315` · not captured | 0.34 | RSE % | not captured | exact (not captured) | Tab2:row9:col1 |
+| variability | Residual error variance — Full model, estimate (RSE %) | `Q315` · not captured | 0.118 | RSE % | not captured | exact (not captured) | Tab2:row9:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

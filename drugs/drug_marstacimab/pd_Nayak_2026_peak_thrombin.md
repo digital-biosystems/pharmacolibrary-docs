@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Free TFPI (measured concentrations) drives peak thrombin (in nM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> An inhibitory Emax model links model-predicted free TFPI concentration to peak thrombin generation (peak TGA, nM), with baseline peak thrombin P_BASE of 37.8 nM, maximum P_MAX of 91.4 nM, and EC50 of 2.92 nM (bootstrap median 2.92 nM, 95% CI 1.77–?); the paper does not state a turnover (kin/kout) or effect-compartment mechanism, describing it as a direct inhibitory Emax relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nayak_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,33 +31,33 @@ Nayak S; Suzuki A; Ravva P; Raje S et al. (2026). Clinical pharmacokinetics
   ·  DOI: [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline peak TGA, P BASE (nM) 37.8 — Popula- | `Q324` · not captured | 4.45 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col1 |
-| Baseline peak TGA, P BASE (nM) 37.8 — SE | `Q324` · not captured | 11.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col2 |
-| Baseline peak TGA, P BASE (nM) 37.8 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q324` · not captured | 37.5 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col3 |
-| Baseline peak TGA, P BASE (nM) 37.8 | `Q324` · not captured | 11.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col4 |
-| EC 50 (nM) — Popula- | `Q321` · not captured | 2.92 | nM | not captured | space_fold (not captured) | tab_6:row4:col1 |
-| EC 50 (nM) — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q321` · not captured | 2.92 | nM | not captured | space_fold (not captured) | tab_6:row4:col3 |
-| EC 50 (nM) | `Q321` · not captured | 1.77 | nM | not captured | space_fold (not captured) | tab_6:row4:col4 |
-| Maximum peak TGA, P MAX (nM) 91.4 — Popula- | `Q32` · not captured | 12.2 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col1 |
-| Maximum peak TGA, P MAX (nM) 91.4 — SE | `Q32` · not captured | 13.3 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col2 |
-| Maximum peak TGA, P MAX (nM) 91.4 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q32` · not captured | 91.6 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col3 |
-| Maximum peak TGA, P MAX (nM) 91.4 | `Q32` · not captured | 74.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col4 |
-| Additive error peak TGA (nM) — Popula- | `Q317` · not captured | 26.3 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col1 |
-| Additive error peak TGA (nM) — SE | `Q317` · not captured | 0.51 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col2 |
-| Additive error peak TGA (nM) — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q317` · not captured | 1.94 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col3 |
-| Additive error peak TGA (nM) | `Q317` · not captured | 26.2 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col4 |
-| Additive error peak TGA (nM) | `Q317` · not captured | 24.2 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col5 |
-| IIV on P BASE — Popula- | `Q312` · not captured | 0.104 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col1 |
-| IIV on P BASE — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.0987 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col3 |
-| IIV on P BASE | `Q312` · not captured | 0.0115 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col4 |
-| IIV on EC 50 — Popula- | `Q312` · not captured | 0.0283 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col1 |
-| IIV on EC 50 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col3 |
-| IIV on EC 50 | `Q312` · not captured | 0.00165 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col4 |
-| IIV on P MAX — Popula- | `Q312` · not captured | 0.111 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col1 |
-| IIV on P MAX — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.103 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col3 |
-| IIV on P MAX | `Q312` · not captured | 0.00341 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline peak TGA, P BASE (nM) 37.8 — Popula- | `Q324` · not captured | 4.45 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col1 |
+| PD (effect) | Baseline peak TGA, P BASE (nM) 37.8 — SE | `Q324` · not captured | 11.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col2 |
+| PD (effect) | Baseline peak TGA, P BASE (nM) 37.8 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q324` · not captured | 37.5 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col3 |
+| PD (effect) | Baseline peak TGA, P BASE (nM) 37.8 | `Q324` · not captured | 11.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row3:col4 |
+| PD (effect) | EC 50 (nM) — Popula- | `Q321` · not captured | 2.92 | nM | not captured | space_fold (not captured) | tab_6:row4:col1 |
+| PD (effect) | EC 50 (nM) — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q321` · not captured | 2.92 | nM | not captured | space_fold (not captured) | tab_6:row4:col3 |
+| PD (effect) | EC 50 (nM) | `Q321` · not captured | 1.77 | nM | not captured | space_fold (not captured) | tab_6:row4:col4 |
+| PK (driver) | Maximum peak TGA, P MAX (nM) 91.4 — Popula- | `Q32` · not captured | 12.2 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col1 |
+| PK (driver) | Maximum peak TGA, P MAX (nM) 91.4 — SE | `Q32` · not captured | 13.3 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col2 |
+| PK (driver) | Maximum peak TGA, P MAX (nM) 91.4 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q32` · not captured | 91.6 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col3 |
+| PK (driver) | Maximum peak TGA, P MAX (nM) 91.4 | `Q32` · not captured | 74.8 | not captured | not captured | llm_confirmed (not captured) | tab_6:row5:col4 |
+| variability | Additive error peak TGA (nM) — Popula- | `Q317` · not captured | 26.3 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col1 |
+| variability | Additive error peak TGA (nM) — SE | `Q317` · not captured | 0.51 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col2 |
+| variability | Additive error peak TGA (nM) — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q317` · not captured | 1.94 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col3 |
+| variability | Additive error peak TGA (nM) | `Q317` · not captured | 26.2 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col4 |
+| variability | Additive error peak TGA (nM) | `Q317` · not captured | 24.2 | nM | not captured | llm_confirmed (not captured) | tab_6:row7:col5 |
+| variability | IIV on P BASE — Popula- | `Q312` · not captured | 0.104 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col1 |
+| variability | IIV on P BASE — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.0987 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col3 |
+| variability | IIV on P BASE | `Q312` · not captured | 0.0115 | not captured | not captured | llm_confirmed (not captured) | tab_6:row8:col4 |
+| variability | IIV on EC 50 — Popula- | `Q312` · not captured | 0.0283 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col1 |
+| variability | IIV on EC 50 — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.02 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col3 |
+| variability | IIV on EC 50 | `Q312` · not captured | 0.00165 | not captured | not captured | llm_confirmed (not captured) | tab_6:row9:col4 |
+| variability | IIV on P MAX — Popula- | `Q312` · not captured | 0.111 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col1 |
+| variability | IIV on P MAX — RSE/CV Bootstrap estimate Bootstrap 95% CI | `Q312` · not captured | 0.103 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col3 |
+| variability | IIV on P MAX | `Q312` · not captured | 0.00341 | not captured | not captured | llm_confirmed (not captured) | tab_6:row10:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

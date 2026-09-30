@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Balanites aegyptiaca methanolic extract (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The methanolic fruit extract of Balanites aegyptiaca concentration-dependently inhibited carbachol (1 µM)-evoked contraction of rat isolated ileum (relaxant effect from 0.1 mg/mL, complete inhibition at 3 mg/mL), with an EC50 of 1.44 mg/mL (95% CI 1.08–1.78, n = 4–5); against high K+ (80 mM)-evoked spasm the EC50 was 1.27 mg/mL (0.98–1.66). The paper proposes a papaverine-like mechanism of dual PDE inhibition and Ca++ channel blockade, supported by leftward potentiation of isoprenaline inhibitory CRCs at 0.1 and 0.3 mg/mL, but no explicit Emax/Imax, kin, kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehman_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

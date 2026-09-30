@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Emicizumab (measured concentrations) drives bleeding event (in event): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> In a repeated time-to-event model, plasma emicizumab concentration (μg/mL) reduces the time-varying bleeding hazard in patients with severe hemophilia A via an inhibitory Emax model on the baseline bleeding hazard λ, with EC50 defined as the concentration halving λ (individual value, no population EC50 given); simulations indicated concentrations ≥45 μg/mL yield zero bleeding events for 1 year in at least 50% of patients. No Imax, kin, kout, or ke0 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoneyama_2018`
 - **model family:** `tte`
 - **driver:** `conc_no_pk`
@@ -21,25 +31,25 @@ Yoneyama K; Schmitt C; Kotani N; Levy GG; Kasai R; Iida S; Shima M; Kawanishi T 
   ·  DOI: [10.1007/s40262-017-0616-3](https://doi.org/10.1007/s40262-017-0616-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F b — Estimate | `Q358` · not captured | 0.222 | not captured | not captured | llm_corrected (not captured) | Tab2:row2:col2 |
-| CL/F b — 95% CIa | `Q27` · not captured | 0.206 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
-| V d/F b — Estimate | `Q76` · not captured | 10.2 | not captured | not captured | llm (not captured) | Tab2:row3:col2 |
-| V d/F b — 95% CIa | `Q76` · not captured | 9.61 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
-| t ½,abs — Estimate | `Q57` · not captured | 1.56 | not captured | not captured | llm (not captured) | Tab2:row4:col2 |
-| t ½,abs — 95% CIa | `Q57` · not captured | 1.30 | not captured | not captured | llm (not captured) | Tab2:row4:col3 |
-| Variance for CL/F — Estimate | `Q315` · not captured | 0.0737 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col2 |
-| Variance for CL/F — 95% CIa | `Q312` · not captured | 0.0449 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col3 |
-| Variance for CL/F — Shrinkage (%) | `Q318` · not captured | 3.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col4 |
-| Variance for V d/F — Shrinkage (%) | `Q318` · not captured | 4.2 | not captured | not captured | llm (not captured) | Tab2:row14:col4 |
-| Variance for t ½,abs — Shrinkage (%) | `Q318` · not captured | 4.1 | not captured | not captured | llm (not captured) | Tab2:row15:col4 |
-| Covariance for CL/F and V d/F — Estimate | `Q314` · not captured | 0.0278 | not captured | not captured | llm_corrected (not captured) | Tab2:row16:col2 |
-| Covariance for CL/F and V d/F — 95% CIa | `Q314` · not captured | 0.0116 | not captured | not captured | llm_corrected (not captured) | Tab2:row16:col3 |
-| Additive errorh — Estimate | `Q317` · not captured | 0.0149 | not captured | not captured | llm_confirmed (not captured) | Tab2:row18:col2 |
-| Additive errorh — 95% CIa | `Q317` · not captured | 0.0115 | not captured | not captured | llm_confirmed (not captured) | Tab2:row18:col3 |
-| Proportional errorj — Estimate | `Q316` · not captured | 12.8 | not captured | not captured | llm_confirmed (not captured) | Tab2:row19:col2 |
-| Proportional errorj — 95% CIa | `Q316` · not captured | 12.2 | not captured | not captured | llm_confirmed (not captured) | Tab2:row19:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F b — Estimate | `Q358` · not captured | 0.222 | not captured | not captured | llm_corrected (not captured) | Tab2:row2:col2 |
+| PK (driver) | CL/F b — 95% CIa | `Q27` · not captured | 0.206 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
+| PK (driver) | V d/F b — Estimate | `Q76` · not captured | 10.2 | not captured | not captured | llm (not captured) | Tab2:row3:col2 |
+| PK (driver) | V d/F b — 95% CIa | `Q76` · not captured | 9.61 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
+| PK (driver) | t ½,abs — Estimate | `Q57` · not captured | 1.56 | not captured | not captured | llm (not captured) | Tab2:row4:col2 |
+| PK (driver) | t ½,abs — 95% CIa | `Q57` · not captured | 1.30 | not captured | not captured | llm (not captured) | Tab2:row4:col3 |
+| variability | Variance for CL/F — Estimate | `Q315` · not captured | 0.0737 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col2 |
+| variability | Variance for CL/F — 95% CIa | `Q312` · not captured | 0.0449 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col3 |
+| variability | Variance for CL/F — Shrinkage (%) | `Q318` · not captured | 3.6 | not captured | not captured | llm_corrected (not captured) | Tab2:row13:col4 |
+| variability | Variance for V d/F — Shrinkage (%) | `Q318` · not captured | 4.2 | not captured | not captured | llm (not captured) | Tab2:row14:col4 |
+| variability | Variance for t ½,abs — Shrinkage (%) | `Q318` · not captured | 4.1 | not captured | not captured | llm (not captured) | Tab2:row15:col4 |
+| variability | Covariance for CL/F and V d/F — Estimate | `Q314` · not captured | 0.0278 | not captured | not captured | llm_corrected (not captured) | Tab2:row16:col2 |
+| variability | Covariance for CL/F and V d/F — 95% CIa | `Q314` · not captured | 0.0116 | not captured | not captured | llm_corrected (not captured) | Tab2:row16:col3 |
+| variability | Additive errorh — Estimate | `Q317` · not captured | 0.0149 | not captured | not captured | llm_confirmed (not captured) | Tab2:row18:col2 |
+| variability | Additive errorh — 95% CIa | `Q317` · not captured | 0.0115 | not captured | not captured | llm_confirmed (not captured) | Tab2:row18:col3 |
+| variability | Proportional errorj — Estimate | `Q316` · not captured | 12.8 | not captured | not captured | llm_confirmed (not captured) | Tab2:row19:col2 |
+| variability | Proportional errorj — 95% CIa | `Q316` · not captured | 12.2 | not captured | not captured | llm_confirmed (not captured) | Tab2:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

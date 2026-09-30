@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoflurane (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The record's drug/response pairing is not supported by the excerpts: the paper studies isoflurane (not methoxyflurane) potentiating glycine-induced peak chloride currents in glycine receptors, with glycine concentration-response curves fitted by a Hill equation (oocytes: EC50 = 215 ± 5 µM, nH = 1.70 ± 0.05; medullary neurones: EC50 = 30 ± 1 µM, nH = 1.76 ± 0.08); isoflurane at clinically relevant concentrations potentiated responses to low glycine concentrations (60–220% in oocytes, 40–80% in neurones) by shifting the glycine curve leftward, with no effect at high glycine concentrations, and no Emax/IC50/kin/kout/ke0 values for the isoflurane effect are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Downie_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

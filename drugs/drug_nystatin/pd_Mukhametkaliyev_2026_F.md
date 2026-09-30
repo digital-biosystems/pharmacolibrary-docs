@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Natamycin (measured concentrations) drives fusion activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (mg/mL) dose-dependently inhibit Newcastle disease virus membrane fusion activity in vitro, with an EC50 of 0.00545 ± 0.00560 mg/mL (IC50 0.0117 ± 0.0029 mg/mL for neuraminidase activity). The paper does not establish a definitive mechanism, stating the suppression likely arises from membrane-associated effects (sterol binding/membrane perturbation) possibly combined with glycoprotein (HN/F) association rather than specific protein inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mukhametkaliyev_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Mukhametkaliyev A; Bogoyavlenskiy A; Alexyuk P; Alexyuk M; Sokolova N; Moldakhan
   ·  DOI: [10.3390/molecules31111915](https://doi.org/10.3390/molecules31111915)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Natamycin — Mean IC50 ± SD | `Q322` · not captured | 0.0220 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row1:col4 |
-| Filipin — Mean IC50 ± SD | `Q322` · not captured | 0.0043 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row2:col4 |
-| Nystatin — Mean IC50 ± SD | `Q322` · not captured | 0.0117 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row3:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Natamycin — Mean IC50 ± SD | `Q322` · not captured | 0.0220 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row1:col4 |
+| PD (effect) | Filipin — Mean IC50 ± SD | `Q322` · not captured | 0.0043 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row2:col4 |
+| PD (effect) | Nystatin — Mean IC50 ± SD | `Q322` · not captured | 0.0117 | mg/mL | not captured | llm (not captured) | molecules-31-01915-t002:row3:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizin analogues (compounds 12-19, 23) (measured concentrations) drive name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizin (GL) and its spacer-bridged analogues (compounds 12–19, 23) were tested in MDCK cells infected with influenza A H3N2 virus, where compound concentration (µM) inhibited virus-induced cytopathicity, reported as IC50; GL itself had an IC50 of 1026 µM. The paper does not state a pharmacodynamic mechanism or model parameters (no Imax, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stanetty_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

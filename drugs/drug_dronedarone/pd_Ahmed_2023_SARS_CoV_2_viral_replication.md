@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atovaquone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dronedarone concentrations inhibit SARS-CoV-2 viral replication in cell-based assays (Vero E6 and Huh7.5 cells), with antiviral IC50 values of 1.5 µM in Vero E6 and 0.38 µM in Huh7.5 cells and cytotoxicity CC50 of 22.70 and 20.20 µM, respectively. The paper reports direct concentration-response inhibition without a PD model; a proposed mechanism is inhibition of the viral main protease Mpro, with dronedarone Mpro IC50 of 18.03 µM, though the paper does not establish this as the antiviral mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmed_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

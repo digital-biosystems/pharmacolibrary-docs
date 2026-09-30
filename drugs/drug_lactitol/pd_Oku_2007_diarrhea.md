@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Xylitol drives diarrhea (in binary): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Single oral doses of lactitol (10–40 g) act directly on the binary incidence of diarrhea in male and female subjects, with the dose–response described by ED50 values of 0.52 g/kg B.W. (male) and 0.67 g/kg B.W. (female); the paper reports no mechanism beyond the osmotic diarrhea caused by non-digestible sugar alcohols and gives no rate parameters (no Imax, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oku_2007`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Oku T; Nakamura S et al. (2007). Journal of nutritional science and vitaminology
   ·  DOI: [10.3177/jnsv.53.13](https://doi.org/10.3177/jnsv.53.13)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Male — ED50 | `Q321` · not captured | 0.68 | g/kg B.W. | not captured | llm (not captured) | tab_1:row3:col2 |
-| Female — ED50 | `Q321` · not captured | 0.95 | g/kg B.W. | not captured | llm (not captured) | tab_1:row4:col2 |
-| Male — ED50 | `Q321` · not captured | 0.94 | g/kg B.W. | not captured | llm (not captured) | tab_1:row6:col2 |
-| Female — ED50 | `Q321` · not captured | 1.57 | g/kg B.W. | not captured | llm (not captured) | tab_1:row7:col2 |
-| Male — ED50 | `Q321` · not captured | 0.52 | g/kg B.W. | not captured | llm (not captured) | tab_1:row9:col2 |
-| Female — ED50 | `Q321` · not captured | 0.67 | g/kg B.W. | not captured | llm (not captured) | tab_1:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Male — ED50 | `Q321` · not captured | 0.68 | g/kg B.W. | not captured | llm (not captured) | tab_1:row3:col2 |
+| PD (effect) | Female — ED50 | `Q321` · not captured | 0.95 | g/kg B.W. | not captured | llm (not captured) | tab_1:row4:col2 |
+| PD (effect) | Male — ED50 | `Q321` · not captured | 0.94 | g/kg B.W. | not captured | llm (not captured) | tab_1:row6:col2 |
+| PD (effect) | Female — ED50 | `Q321` · not captured | 1.57 | g/kg B.W. | not captured | llm (not captured) | tab_1:row7:col2 |
+| PD (effect) | Male — ED50 | `Q321` · not captured | 0.52 | g/kg B.W. | not captured | llm (not captured) | tab_1:row9:col2 |
+| PD (effect) | Female — ED50 | `Q321` · not captured | 0.67 | g/kg B.W. | not captured | llm (not captured) | tab_1:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

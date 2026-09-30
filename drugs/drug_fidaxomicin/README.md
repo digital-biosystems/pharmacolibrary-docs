@@ -39,6 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor | DrugBank actor |
 | metabolism | stomach | <sub>“…it is speculated that this biotransformation is mediated by gastric acid or enzymatic acti…”</sub> | prose |

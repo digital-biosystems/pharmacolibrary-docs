@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (S)-ketoprofen (measured concentrations) drives percentage inhibition of TXB2 generation (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Unbound (S)-ketoprofen serum concentration (ng/ml) directly inhibits TXB2 generation during whole blood clotting (percentage inhibition), modelled with a sigmoidal Emax equation reflecting enantioselective inhibition of cyclooxygenase-mediated prostanoid biosynthesis; the paper does not report numeric IC50, Emax, or gamma values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hayball_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

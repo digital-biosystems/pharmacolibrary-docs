@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline (measured concentrations) drives peak ICa,L current density (in % increase): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Isoprenaline (Iso) concentration-dependently stimulates the peak L-type Ca2+ current density (ICa,L, % increase) in ARVMs via β-AR/cAMP–PKA signalling, tested at 0.3–10 nM (with PEG-Iso at 10 nM–1 µM); the paper reports only that 10 nM Iso and 1 µM PEG-Iso produced similar ICa,L increases, and does not state Emax, EC50, or other model parameters for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Madders_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

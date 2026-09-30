@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluindione drives INR (in unknown): indirect response — drug inhibits the production of INR.
+
+**Model:** No model was generated from this record.
+
+> Fluindione plasma concentrations act on INR via an indirect response model in which fluindione inhibits the production of the INR response (Hill/Emax inhibition function), with turnover governed by I0 = 1.10 (hr⁻¹) and kout = 0.03 hr⁻¹; potency parameters are IC50 = 2.18 mg/L, Imax = 0.94 and Hill coefficient γ = 1.71 (surgery lowers IC50 and γ, with β IC50,surgery = -0.54 and β γ,surgery = -0.46).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Comets_2012`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,41 +30,41 @@ Comets E; Diquet B; Legrain S; Huisse MG; Godon A; Bruhat C; Chauveheid MP; Delp
   ·  DOI: [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V (L) — Base model | `Q61` · not captured | 9.06 | L | not captured | exact (not captured) | tab_1:row3:col1 |
-| V (L) — Final model | `Q61` · not captured | 41 | L | not captured | exact (not captured) | tab_1:row3:col2 |
-| V (L) | `Q61` · not captured | 8.24 | L | not captured | exact (not captured) | tab_1:row3:col3 |
-| V (L) | `Q61` · not captured | 36 | L | not captured | exact (not captured) | tab_1:row3:col4 |
-| β V,men | `Q60` · not captured | 0.24 | hr -1 | not captured | llm (not captured) | tab_1:row4:col3 |
-| CL (L.hr -1 ) — Base model | `Q22` · not captured | 0.12 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col1 |
-| CL (L.hr -1 ) — Final model | `Q22` · not captured | 47 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col2 |
-| CL (L.hr -1 ) | `Q22` · not captured | 0.10 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col3 |
-| CL (L.hr -1 ) | `Q22` · not captured | 42 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col4 |
-| β CL,cordarone | `Q358` · not captured | -0.18 | hr -1 | not captured | llm_corrected (not captured) | tab_1:row8:col3 |
-| I 0 (-) — Base model | `Q324` · not captured | 1.11 | hr -1 | not captured | llm (not captured) | tab_1:row9:col1 |
-| I 0 (-) | `Q358` · not captured | 1.10 | hr -1 | not captured | llm (not captured) | tab_1:row9:col3 |
-| I 0 (-) | `Q358` · not captured | 7 | hr -1 | not captured | llm (not captured) | tab_1:row9:col4 |
-| k out (hr -1 ) — Base model | `Q328` · not captured | 0.03 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col1 |
-| k out (hr -1 ) — Final model | `Q328` · not captured | 80 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col2 |
-| k out (hr -1 ) | `Q328` · not captured | 0.03 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col3 |
-| k out (hr -1 ) | `Q328` · not captured | 85 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col4 |
-| IC 50 (mg.L -1 ) — Base model | `Q322` · not captured | 1.71 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col1 |
-| IC 50 (mg.L -1 ) — Final model | `Q322` · not captured | 56 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col2 |
-| IC 50 (mg.L -1 ) | `Q322` · not captured | 2.18 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col3 |
-| IC 50 (mg.L -1 ) | `Q322` · not captured | 53 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col4 |
-| β IC 50 ,surgery | `Q322` · not captured | -0.54 | hr -1 | not captured | llm (not captured) | tab_1:row12:col3 |
-| I max (-) — Base model | `Q323` · not captured | 0.89 | hr -1 | not captured | space_fold (not captured) | tab_1:row13:col1 |
-| I max (-) | `Q323` · not captured | 0.94 | hr -1 | not captured | space_fold (not captured) | tab_1:row13:col3 |
-| γ (-) | `Q89` · not captured | 1.71 | hr -1 | not captured | llm (not captured) | tab_1:row14:col3 |
-| γ (-) | `Q89` · not captured | 40 | hr -1 | not captured | llm (not captured) | tab_1:row14:col4 |
-| β γ,surgery | `Q47` · not captured | -0.46 | hr -1 | not captured | llm (not captured) | tab_1:row15:col3 |
-| a PK (mg.L -1 ) — Base model | `Q900` · not captured | 0.19 | mg.L -1 | not captured | llm (not captured) | tab_1:row17:col1 |
-| a PK (mg.L -1 ) | `Q900` · not captured | 0.20 | mg.L -1 | not captured | llm (not captured) | tab_1:row17:col3 |
-| b PK (-) — Base model | `Q358` · not captured | 0.09 | hr -1 | not captured | llm (not captured) | tab_1:row18:col1 |
-| b PK (-) | `Q358` · not captured | 0.08 | hr -1 | not captured | llm (not captured) | tab_1:row18:col3 |
-| b PD (-) — Base model | `Q358` · not captured | 0.14 | hr -1 | not captured | llm (not captured) | tab_1:row19:col1 |
-| b PD (-) | `Q358` · not captured | 0.13 | hr -1 | not captured | llm (not captured) | tab_1:row19:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V (L) — Base model | `Q61` · not captured | 9.06 | L | not captured | exact (not captured) | tab_1:row3:col1 |
+| PK (driver) | V (L) — Final model | `Q61` · not captured | 41 | L | not captured | exact (not captured) | tab_1:row3:col2 |
+| PK (driver) | V (L) | `Q61` · not captured | 8.24 | L | not captured | exact (not captured) | tab_1:row3:col3 |
+| PK (driver) | V (L) | `Q61` · not captured | 36 | L | not captured | exact (not captured) | tab_1:row3:col4 |
+| PK (driver) | β V,men | `Q60` · not captured | 0.24 | hr -1 | not captured | llm (not captured) | tab_1:row4:col3 |
+| PK (driver) | CL (L.hr -1 ) — Base model | `Q22` · not captured | 0.12 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col1 |
+| PK (driver) | CL (L.hr -1 ) — Final model | `Q22` · not captured | 47 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col2 |
+| PK (driver) | CL (L.hr -1 ) | `Q22` · not captured | 0.10 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col3 |
+| PK (driver) | CL (L.hr -1 ) | `Q22` · not captured | 42 | L.hr -1 | not captured | exact (not captured) | tab_1:row6:col4 |
+| PK (driver) | β CL,cordarone | `Q358` · not captured | -0.18 | hr -1 | not captured | llm_corrected (not captured) | tab_1:row8:col3 |
+| PD (effect) | I 0 (-) — Base model | `Q324` · not captured | 1.11 | hr -1 | not captured | llm (not captured) | tab_1:row9:col1 |
+| PK (driver) | I 0 (-) | `Q358` · not captured | 1.10 | hr -1 | not captured | llm (not captured) | tab_1:row9:col3 |
+| PK (driver) | I 0 (-) | `Q358` · not captured | 7 | hr -1 | not captured | llm (not captured) | tab_1:row9:col4 |
+| PD (effect) | k out (hr -1 ) — Base model | `Q328` · not captured | 0.03 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col1 |
+| PD (effect) | k out (hr -1 ) — Final model | `Q328` · not captured | 80 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col2 |
+| PD (effect) | k out (hr -1 ) | `Q328` · not captured | 0.03 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col3 |
+| PD (effect) | k out (hr -1 ) | `Q328` · not captured | 85 | hr -1 | not captured | space_fold (not captured) | tab_1:row10:col4 |
+| PD (effect) | IC 50 (mg.L -1 ) — Base model | `Q322` · not captured | 1.71 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col1 |
+| PD (effect) | IC 50 (mg.L -1 ) — Final model | `Q322` · not captured | 56 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col2 |
+| PD (effect) | IC 50 (mg.L -1 ) | `Q322` · not captured | 2.18 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col3 |
+| PD (effect) | IC 50 (mg.L -1 ) | `Q322` · not captured | 53 | mg.L -1 | not captured | space_fold (not captured) | tab_1:row11:col4 |
+| PD (effect) | β IC 50 ,surgery | `Q322` · not captured | -0.54 | hr -1 | not captured | llm (not captured) | tab_1:row12:col3 |
+| PD (effect) | I max (-) — Base model | `Q323` · not captured | 0.89 | hr -1 | not captured | space_fold (not captured) | tab_1:row13:col1 |
+| PD (effect) | I max (-) | `Q323` · not captured | 0.94 | hr -1 | not captured | space_fold (not captured) | tab_1:row13:col3 |
+| PK (driver) | γ (-) | `Q89` · not captured | 1.71 | hr -1 | not captured | llm (not captured) | tab_1:row14:col3 |
+| PK (driver) | γ (-) | `Q89` · not captured | 40 | hr -1 | not captured | llm (not captured) | tab_1:row14:col4 |
+| PK (driver) | β γ,surgery | `Q47` · not captured | -0.46 | hr -1 | not captured | llm (not captured) | tab_1:row15:col3 |
+| model term | a PK (mg.L -1 ) — Base model | `Q900` · not captured | 0.19 | mg.L -1 | not captured | llm (not captured) | tab_1:row17:col1 |
+| model term | a PK (mg.L -1 ) | `Q900` · not captured | 0.20 | mg.L -1 | not captured | llm (not captured) | tab_1:row17:col3 |
+| PK (driver) | b PK (-) — Base model | `Q358` · not captured | 0.09 | hr -1 | not captured | llm (not captured) | tab_1:row18:col1 |
+| PK (driver) | b PK (-) | `Q358` · not captured | 0.08 | hr -1 | not captured | llm (not captured) | tab_1:row18:col3 |
+| PK (driver) | b PD (-) — Base model | `Q358` · not captured | 0.14 | hr -1 | not captured | llm (not captured) | tab_1:row19:col1 |
+| PK (driver) | b PD (-) | `Q358` · not captured | 0.13 | hr -1 | not captured | llm (not captured) | tab_1:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

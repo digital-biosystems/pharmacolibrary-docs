@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ugonin J (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ugonin J (UJ) concentrations inhibit LPS-induced IL-8 mRNA expression in A549 cells, significantly downregulating IL-8 mRNA by more than 1-fold at 20 µM; the paper does not state a PD model, IC50, or kinetic parameters for this response, and the mechanism for the IL-8 effect is not given (UJ's characterized mechanism is inhibition of SARS-CoV-2 3CLpro, IC50 0.94 ± 0.19 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chiou_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

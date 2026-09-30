@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-BA (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG–BA (µM concentrations) inhibits IL-6 production in PBMCs from pancreatic cancer patients and controls, with a consistent ~4-fold decrease in IL-6 versus BA (971.15 vs 5430.94 pg/mL; controls 10.59 vs 396.24 pg/mL) at 3 µM; the paper does not state a PD model, Imax/IC50 for IL-6, or kinetic parameters, and attributes the inhibition to improved activity from PEG conjugation rather than cytotoxicity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fru_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives Gamma-glutamyl transferase (in U/L): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for GGT; it only reports a meta-analytic weighted mean difference of −8.70 U/L (95%CI: −18.69 to 1.29, P = 0.09) for semaglutide (dosed in mg/week) versus control on serum GGT, which was not statistically significant, and no mechanism, potency (Imax/IC50/EC50/Emax), or rate parameters (kin/kout/ke0/gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kan_2025`
 - **model family:** `linear`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Afromomum melegueta essential oil drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Afromomum melegueta essential oil (µL/mL) scavenges NO radicals in vitro (Fig. 4), an inhibitory effect; the paper does not state a pharmacodynamic mechanism or model, and no potency values (EC50, Emax) are reported for the NO radical scavenging assay (EC50 values are given only for other assays, e.g. 139.04 and 91.83 µL/mL for α-amylase/α-glucosidase, 65.53 µL/mL for ACE, 131.76 µL/mL for lipid peroxidation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Adefegha_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

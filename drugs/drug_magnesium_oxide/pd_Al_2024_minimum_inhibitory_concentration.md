@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CP-MgONPs (magnesium oxide nanoparticles) applied at doses of 25–2500 μg·mL−1 inhibit microbial growth (agar-well inhibition zones) and cancer cell viability; MICs were 625 μg·mL−1 (E. coli, S. aureus), 0.64 μg·mL−1 (B. cereus, P. aeruginosa), 0.78 μg·mL−1 (K. pneumoniae) and 0.88 μg·mL−1 (S. pneumoniae), and 48 h IC50 values were 15.3, 74 and 96.1 μg·mL−1 for Hep2, SH-SY5Y and COLO 205 cells. The paper does not state a formal PD model (no Imax/IC50 model fit, kin/kout, ke0 or gamma); the proposed mechanism is nanoparticle entry into cells inhibiting growth, possibly via ROS-mediated apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

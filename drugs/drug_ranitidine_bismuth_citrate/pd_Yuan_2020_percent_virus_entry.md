@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RBC drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide a quantitative PD model linking ranitidine bismuth citrate (RBC) concentrations to percent virus entry; no IC50, Emax, kin, kout or ke0 values for that relationship appear in the excerpts. Mechanistically, RBC acts as a potent, apparently irreversible inhibitor of the SARS-CoV-2 helicase—suppressing its ATPase and DNA-unwinding activities, likely via bismuth(iii) binding to zinc-containing viral proteins—but the excerpts give no numeric potency values for this inhibition either.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuan_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

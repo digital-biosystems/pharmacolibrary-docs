@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Emicizumab (measured concentrations) drives bleeding count (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Emicizumab plasma concentrations (µg/mL) inhibit the daily bleeding count (ABR) via an inhibitory Emax relationship within a generalized Poisson count model, with IC50 = 3.58 µg/mL; the paper does not state Emax or Imax values, and the effect plateaus above ~30 µg/mL (predicted mean ABR 1.28, a 94% reduction from baseline, at 53.5 µg/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jonsson_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

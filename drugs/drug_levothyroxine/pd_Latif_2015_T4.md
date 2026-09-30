@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MS437 drives thyroxine (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the T4 response; it describes MS437 (and MS438) as TSHR agonists that stimulate thyroid hormone release, with serum total T4 measured before and 72 h after three daily i.p. doses of 100 µg/mouse, showing a sustained increase in T4 versus vehicle controls (p &lt; 0.01). No Emax, EC50, or other potency/rate parameters for the in vivo T4 response are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Latif_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`

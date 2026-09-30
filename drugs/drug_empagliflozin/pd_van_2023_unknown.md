@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin drives systolic blood pressure (in mmHg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In patients with T2D (RED study), dapagliflozin plasma exposure (AUC0–tau,ss, geometric mean 1153.1 µg/L*h, CV 81.8%) was linearly associated with systolic blood pressure, with each doubling of exposure corresponding to a 0.80 mmHg decrease (p = 0.002); the paper describes this as a linear mixed-effects exposure–response relationship and does not state a mechanistic PD model (no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

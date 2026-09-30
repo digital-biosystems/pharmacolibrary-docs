@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin drives endogenous glucose production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma insulin (mU/l) suppresses endogenous glucose production (EGP) in sheep, with half-maximal suppression of EGP to half the basal level at insulin concentrations of 80 (SE 26) and 89 (SE 29) mU/l for dried-grass and maize-based diets respectively; the paper does not state a mechanistic model form (e.g. kin/kout or Imax parameters) beyond this inhibitory concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Janes_1985`
 - **model family:** `emax`
 - **driver:** `not_resolved`

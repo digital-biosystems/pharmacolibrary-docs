@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives estimated glomerular filtration rate (in mL/min/1.73 m2): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Finerenone exposure slows chronic eGFR decline (eGFR in mL/min/1.73 m2) in a disease-progression model, acting indirectly by reducing UACR, whose model-predicted longitudinal values are linked to the chronic eGFR slope; no additional UACR-independent finerenone effect on eGFR decline was identified. The paper does not state Imax/IC50/EC50/Emax/kin/kout/ke0 values; the stabilisation point of eGFR decline was estimated at 16.2 mL/min/1.73 m2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goulooze_2022`
 - **model family:** `disease_progression`
 - **driver:** `cited_pk`
@@ -20,12 +30,12 @@
 not matched (stem Goulooze_2022)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 140 | UACR | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
-| Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 26.7 | UACR | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| Baseline eGFR (eGFR) — 5th–95th percentile | `Q100` · not captured | 26.7 | eGFR | not captured | llm_corrected (not captured) | Tab2:row9:col2 |
-| Inter-individual variability eGFR decline (eGFR) — 5th–95th percentile | `Q312` · not captured | 140 | eGFR | not captured | llm_confirmed (not captured) | Tab2:row14:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 140 | UACR | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
+| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 26.7 | UACR | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
+| — | Baseline eGFR (eGFR) — 5th–95th percentile | `Q100` · not captured | 26.7 | eGFR | not captured | llm_corrected (not captured) | Tab2:row9:col2 |
+| variability | Inter-individual variability eGFR decline (eGFR) — 5th–95th percentile | `Q312` · not captured | 140 | eGFR | not captured | llm_confirmed (not captured) | Tab2:row14:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

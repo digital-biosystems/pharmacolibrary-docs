@@ -25,9 +25,9 @@ The prevalence of GERD is thought to be 10-20% in western countries.[A176843] Ra
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | 1-compartment, oral | 4 | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span> | [Hawwa_2013_reference](drugs/drug_ranitidine/Ranitidine_Hawwa2013_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Hawwa AF et al., Prophylactic ranitidine treatment in cr…, British journal of clinical… (2013) | [10.1111/j.1365-2125.2012.04473.x](https://doi.org/10.1111/j.1365-2125.2012.04473.x) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | bile duct | <sub>“…xide (1%) and desmethyl ranitidine (1%).[L10818,L10923] The feces contain the remainder of…”</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | kidney | <sub>“…The major metabolite in the urine is N-oxide, which represents less than 4% of the dose. O…”</sub> | prose |

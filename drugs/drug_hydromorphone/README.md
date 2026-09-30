@@ -29,20 +29,20 @@ Off-label, hydromorphone can be administered for the suppression of refractory c
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Wimbish_2024_reference](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | 2-compartment, IV | 3 | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025_reference](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | general linear (no model) | 2 | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Wimbish_2024_reference](drugs/drug_hydromorphone/Hydromorphone_Wimbish2024_reference.md) | ▶ model + simulator | 2-compartment, IV | 3 | Wimbish C et al., Pharmacokinetics of a continuous intrav…, Frontiers in veterinary sci… (2024) | [10.3389/fvets.2024.1362730](https://doi.org/10.3389/fvets.2024.1362730) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Meissner_2025_reference](drugs/drug_hydromorphone/Hydromorphone_Meissner2025_reference.md) | — | general linear (no model) | 2 | Meissner K et al., Morphine and hydromorphone pharmacokine…, British journal of anaesthe… (2025) | [10.1016/j.bja.2024.08.042](https://doi.org/10.1016/j.bja.2024.08.042) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Nordmeier_2022](drugs/drug_hydromorphone/pd_Nordmeier_2022_Emax.md) | Nordmeier F et al., Are the N-demethylated metabolites of U…, Drug testing and analysis (2022) | [10.1002/dta.3182](https://doi.org/10.1002/dta.3182) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020](drugs/drug_hydromorphone/pd_Vandeputte_2020_G_protein_mini_Gi_recruitment.md) | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020](drugs/drug_hydromorphone/pd_Vandeputte_2020_arrestin2_arr2_recruitment.md) | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024](drugs/drug_hydromorphone/pd_Walsh_2024_COWS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024](drugs/drug_hydromorphone/pd_Walsh_2024_VAS.md) | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Nordmeier_2022_Emax](drugs/drug_hydromorphone/pd_Nordmeier_2022_Emax.md) | MOR activation ← U-47700 · direct Emax (saturable) effect | — | Nordmeier F et al., Are the N-demethylated metabolites of U…, Drug testing and analysis (2022) | [10.1002/dta.3182](https://doi.org/10.1002/dta.3182) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020_G_protein_mini_Gi_recruitment](drugs/drug_hydromorphone/pd_Vandeputte_2020_G_protein_mini_Gi_recruitment.md) | name ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020_arrestin2_arr2_recruitment](drugs/drug_hydromorphone/pd_Vandeputte_2020_arrestin2_arr2_recruitment.md) | name ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024_COWS](drugs/drug_hydromorphone/pd_Walsh_2024_COWS.md) | Clinical Opiate Withdrawal Scale ← buprenorphine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Walsh_2024_VAS](drugs/drug_hydromorphone/pd_Walsh_2024_VAS.md) | desire to use VAS ← buprenorphine · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Walsh SL et al., Pharmacokinetic-pharmacodynamic analysi…, Neuropsychopharmacology : o… (2024) | [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z) |
 
 ## ADME sites
 

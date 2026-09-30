@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gpp[NH]p drives name (in d.p.m./mg protein): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Gpp[NH]p (and other guanine nucleotides) directly stimulate phosphoinositide phosphodiesterase (phospholipase C) in rat cerebral cortical membranes, increasing the production of [3H]inositol phosphates (d.p.m./mg protein) in a concentration-dependent manner, with maximal stimulation of 2.5–3-fold over control at 100 µM; the paper does not report an EC50 or IC50 for Gpp[NH]p itself, but GMP was much less potent with an EC50 of 380 µM, and no kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gonzales_1985`
 - **model family:** `emax`
 - **driver:** `not_resolved`

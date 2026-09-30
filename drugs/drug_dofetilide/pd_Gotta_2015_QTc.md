@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Moxifloxacin, dofetilide, sotalol drive QTc prolongation (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Dofetilide (with moxifloxacin and sotalol) plasma unbound concentration (µM free) drives QTc prolongation (ΔQTc, ms) via a sigmoid Emax concentration–effect relationship; the paper does not state a mechanistic production/elimination (kin/kout) or effect-compartment structure. The only potency value given is a relative parameter ρ Emax-EC50 for dofetilide of 0.78 (nM of µM free); no absolute Emax, EC50, or rate constants are reported, though dofetilide produced 4–18 ms (2–8%) prolongation in dog at 0.4–2 µM free.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gotta_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Gotta V; Cools F; van Ammel K; Gallacher DJ; Visser SA; Sannajust F; et al. et a
   ·  DOI: [10.1111/bph.13218](https://doi.org/10.1111/bph.13218)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ρ Emax-EC50 — Dofetilide | `Q321` · not captured | 0.78 | nM of μM free | not captured | llm_corrected (not captured) | tab_1:row44:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ρ Emax-EC50 — Dofetilide | `Q321` · not captured | 0.78 | nM of μM free | not captured | llm_corrected (not captured) | tab_1:row44:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

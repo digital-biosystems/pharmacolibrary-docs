@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Uvariopsine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Uvariopsine concentration-dependently inhibited the intracellular calcium elevations induced by PAF 1 mM in human neutrophils, with a calculated IC50 of 15.171.6 mM (stephenanthrine: 6.171.3 mM); the mechanism is suggested to be PAF receptor antagonism, as both alkaloids inhibited [3H]PAF binding to human PMNs concentration-dependently (uvariopsine IC50 15.573.6 mM). The paper does not state a specific PD model (no Emax, kin/kout or ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Estellés_2003`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

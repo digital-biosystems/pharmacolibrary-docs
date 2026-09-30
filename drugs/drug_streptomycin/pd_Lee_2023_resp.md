@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aminoglycosides (streptomycin, kanamycin, gentamicin, tobramycin, amikacin) (measured concentrations) drive net bacterial growth rate (in log10 change in bacterial density per hour): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Streptomycin concentrations (μg/mL) act directly on the net bacterial growth rate ψ (log10 change in bacterial density per hour) via a sigmoid Emax/Hill function in which the drug inhibits growth (death rate μ(a) as a Hill function of concentration); for SMN, ψmax = 0.5651, ψmin = −0.8166, Hill coefficient κ = −0.7631, EC50 = 2.996 μg/mL, and zMIC = 1.22 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

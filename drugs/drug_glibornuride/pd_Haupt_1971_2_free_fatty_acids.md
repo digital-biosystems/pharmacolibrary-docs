@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolbutamide, glibenclamide, glibornuride, glisoxepide (the dose) drive name (in FE/l) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Intravenous glibornuride (with tolbutamide, glibenclamide, glisoxepide) was given to healthy volunteers at three doses (mg/kg) to establish dose-response relations, with free fatty acids (FE/l) measured at 0–90 min and expressed as percent decrease from baseline; the paper reports only ED30 determination (for blood glucose) and does not state a pharmacodynamic mechanism or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma) for the free fatty acid response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haupt_1971_2`
 - **model family:** `unknown`
 - **driver:** `dose_only`

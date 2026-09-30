@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Khaya grandifoliola fraction KgF25 and Entada africana fraction EaF10 (measured concentrations) drive name (in Unit/mg protein) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for superoxide dismutase (SOD) activity; it only reports that combinations of the Khaya grandifoliola fraction KgF25 and Entada africana fraction EaF10 (tested at concentrations up to 200 μg/ml, with EC50 values of 10.30 ± 1.66 μg/ml for KgF25 and 13.47 ± 2.06 μg/ml for EaF10) significantly restored SOD activity in paracetamol-treated rat hepatocytes, without stating a mechanism or potency parameters (Imax, IC50, kin, kout, ke0, gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Njayou_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

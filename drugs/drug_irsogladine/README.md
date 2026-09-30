@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 05:27 | 9:55 | 0/0/0 | 0/0/0 | 0/0/0 | 346,567/5,133 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 3/13 | 16/0 | 0 |
+| 2026-09-29 21:36 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 1,588/140 | ollama / qwen3.8:27b-mtp-q8_0 | 16 | 3/13 | 16/0 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Nakamura_2006.pdf` | Nakamura A et al., Effects of irsogladine on P450-isoform…, Arzneimittel-Forschung (2006) | pgx | 7 | [10.1055/s-0031-1296750](https://doi.org/10.1055/s-0031-1296750) | [16927538](https://www.ncbi.nlm.nih.gov/pubmed/16927538) | metadata signals extractable PGX data (CYP2A6, PK/PD-context) |
 
-<sub>queue written 2026-09-18T05:26:45.857964+00:00</sub>
+<sub>queue written 2026-09-29T21:36:42.779426+00:00</sub>
 
 ## Screened and excluded
 

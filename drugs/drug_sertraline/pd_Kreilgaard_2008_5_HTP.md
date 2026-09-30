@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Escitalopram, paroxetine, sertraline drive 5-HTP-potentiated behavioral syndrome (in %): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Serum concentrations of escitalopram, paroxetine and sertraline (ng mL-1) were linked via an effect-compartment model to the 5-HTP-potentiated behavioral syndrome score in mice, with a direct stimulatory Emax effect (Emax fixed to 100 for all three). Potency values were EC50 = 11 ng mL-1 (ke0 = 0.4 h-1) for escitalopram, 5.3 ng mL-1 (ke0 = 0.4 h-1) for paroxetine, and 7.1 ng mL-1 (ke0 = 1.0 h-1) for sertraline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kreilgaard_2008`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -21,24 +31,24 @@ Kreilgaard M; Smith DG; Brennum LT; Sánchez C et al. (2008). British journal of
   ·  DOI: [10.1038/bjp.2008.243](https://doi.org/10.1038/bjp.2008.243)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 (ng mL À1 ) — Escitalopram | `Q321` · not captured | 11 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col3 |
-| EC 50 (ng mL À1 ) | `Q321` · not captured | 28 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col4 |
-| EC 50 (ng mL À1 ) — Paroxetine | `Q321` · not captured | 5.3 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col5 |
-| EC 50 (ng mL À1 ) | `Q321` · not captured | 52 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col6 |
-| EC 50 (ng mL À1 ) — Sertraline | `Q321` · not captured | 7.1 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col7 |
-| EC 50 (ng mL À1 ) | `Q321` · not captured | 80 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col8 |
-| E max — Escitalopram | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col3 |
-| E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col4 |
-| E max — Paroxetine | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col5 |
-| E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col6 |
-| E max — Sertraline | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col7 |
-| E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col8 |
-| k e0 (h À1 ) — Escitalopram | `Q326` · not captured | 0.4 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col3 |
-| k e0 (h À1 ) | `Q326` · not captured | 5.0 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col4 |
-| k e0 (h À1 ) — Paroxetine | `Q326` · not captured | 0.4 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col5 |
-| k e0 (h À1 ) — Sertraline | `Q326` · not captured | 1.0 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 (ng mL À1 ) — Escitalopram | `Q321` · not captured | 11 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col3 |
+| PD (effect) | EC 50 (ng mL À1 ) | `Q321` · not captured | 28 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col4 |
+| PD (effect) | EC 50 (ng mL À1 ) — Paroxetine | `Q321` · not captured | 5.3 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col5 |
+| PD (effect) | EC 50 (ng mL À1 ) | `Q321` · not captured | 52 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col6 |
+| PD (effect) | EC 50 (ng mL À1 ) — Sertraline | `Q321` · not captured | 7.1 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col7 |
+| PD (effect) | EC 50 (ng mL À1 ) | `Q321` · not captured | 80 | ng mL À1 | not captured | space_fold (not captured) | tab_1:row1:col8 |
+| PD (effect) | E max — Escitalopram | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col3 |
+| PD (effect) | E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col4 |
+| PD (effect) | E max — Paroxetine | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col5 |
+| PD (effect) | E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col6 |
+| PD (effect) | E max — Sertraline | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col7 |
+| PD (effect) | E max | `Q320` · not captured | 100 | not captured | not captured | space_fold (not captured) | tab_1:row3:col8 |
+| PD (effect) | k e0 (h À1 ) — Escitalopram | `Q326` · not captured | 0.4 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col3 |
+| PD (effect) | k e0 (h À1 ) | `Q326` · not captured | 5.0 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col4 |
+| PD (effect) | k e0 (h À1 ) — Paroxetine | `Q326` · not captured | 0.4 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col5 |
+| PD (effect) | k e0 (h À1 ) — Sertraline | `Q326` · not captured | 1.0 | h À1 | not captured | space_fold (not captured) | tab_1:row5:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

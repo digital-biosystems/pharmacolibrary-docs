@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives DPPH scavenging activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Methanolic extract of Sterculia villosa bark (MESV) scavenges DPPH in a concentration-dependent manner (15.625–500 μg/mL), reaching 52.42% scavenging at 500 μg/mL with an IC50 of 555.44 μg/mL; the paper attributes this to the extract's hydrogen-donating (proton-donating) capacity but gives no formal PD model or kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lyzu_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Lyzu C; Mitra S; Perveen K; Khan Z; Tareq AM; Bukhari NA; et al. et al. (2022). 
   ·  DOI: [10.1155/2022/3190496](https://doi.org/10.1155/2022/3190496)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 23 — 1R4U (kcal/mol) | `Q358` · not captured | -4.43 | kcal/mol | not captured | llm (not captured) | tab4:row24:col2 |
-| 25 — 1R4U (kcal/mol) | `Q358` · not captured | -6.266 | kcal/mol | not captured | llm (not captured) | tab4:row26:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 23 — 1R4U (kcal/mol) | `Q358` · not captured | -4.43 | kcal/mol | not captured | llm (not captured) | tab4:row24:col2 |
+| PK (driver) | 25 — 1R4U (kcal/mol) | `Q358` · not captured | -6.266 | kcal/mol | not captured | llm (not captured) | tab4:row26:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

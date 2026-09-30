@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Marbofloxacin (measured concentrations) drives name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Marbofloxacin concentrations (µg/mL) act on bacterial count (log10 CFU/mL) in a semi-mechanistic logistic-growth model in which the drug inhibits bacterial growth via concentration-dependent killing: dN/dt = kg(1−N/Nmax)N − Kmax·C^γ/(C^γ+EC50^γ)·N, with population estimates kg = 0.351 h−1, Kmax = 0.283 h−1, EC50 = 0.165 µg/mL (increased by goat milk medium, beta_EC50_MILK = 0.453, and by MIC, beta_EC50_MIC = 2.13), Nmax = 0.0297 log10 CFU/mL and gamma = 0.715 (IIV).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lorenzutti_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,19 +30,19 @@ Lorenzutti AM; Vico JP; Serrano-Rodríguez JM; Himelfarb MA; Andrés-Larrea MIS;
   ·  DOI: [10.3390/ani11113098](https://doi.org/10.3390/ani11113098)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Estimates (RSE; %) — kgpop (h−1) | `Q358` · not captured | 0.351 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col4 |
-| Estimates (RSE; %) — Kmaxpop (h−1) | `Q49` · not captured | 0.283 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col7 |
-| Estimates (RSE; %) — EC50pop (µg/mL) | `Q321` · not captured | 0.165 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col8 |
-| Estimates (RSE; %) — beta_EC50_MILK | `Q321` · not captured | 0.453 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col11 |
-| Estimates (RSE; %) — beta_EC50_MIC | `Q321` · not captured | 2.13 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col12 |
-| IIV (RSE; %) — Nmaxpop (log10 CFU/mL) | `Q312` · not captured | 0.0297 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col3 |
-| IIV (RSE; %) — kgpop (h−1) | `Q312` · not captured | 0.533 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col4 |
-| IIV (RSE; %) — N0pop (log10 CFU/mL) | `Q312` · not captured | 0.0201 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col5 |
-| IIV (RSE; %) — gammapop | `Q312` · not captured | 0.715 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col6 |
-| IIV (RSE; %) — Kmaxpop (h−1) | `Q312` · not captured | 0.515 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col7 |
-| IIV (RSE; %) — EC50pop (µg/mL) | `Q312` · not captured | 0.0842 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Estimates (RSE; %) — kgpop (h−1) | `Q358` · not captured | 0.351 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col4 |
+| PK (driver) | Estimates (RSE; %) — Kmaxpop (h−1) | `Q49` · not captured | 0.283 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col7 |
+| PD (effect) | Estimates (RSE; %) — EC50pop (µg/mL) | `Q321` · not captured | 0.165 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col8 |
+| PD (effect) | Estimates (RSE; %) — beta_EC50_MILK | `Q321` · not captured | 0.453 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col11 |
+| PD (effect) | Estimates (RSE; %) — beta_EC50_MIC | `Q321` · not captured | 2.13 | RSE; % | not captured | llm (not captured) | animals-11-03098-t004:row0:col12 |
+| variability | IIV (RSE; %) — Nmaxpop (log10 CFU/mL) | `Q312` · not captured | 0.0297 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col3 |
+| variability | IIV (RSE; %) — kgpop (h−1) | `Q312` · not captured | 0.533 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col4 |
+| variability | IIV (RSE; %) — N0pop (log10 CFU/mL) | `Q312` · not captured | 0.0201 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col5 |
+| variability | IIV (RSE; %) — gammapop | `Q312` · not captured | 0.715 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col6 |
+| variability | IIV (RSE; %) — Kmaxpop (h−1) | `Q312` · not captured | 0.515 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col7 |
+| variability | IIV (RSE; %) — EC50pop (µg/mL) | `Q312` · not captured | 0.0842 | RSE; % | not captured | exact (not captured) | animals-11-03098-t004:row1:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

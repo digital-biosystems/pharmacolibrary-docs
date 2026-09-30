@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives urease inhibition (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The sulfaguanidine-containing diclofenac conjugate (11) inhibits urease (measured as % inhibition of urea hydrolysis) with mixed-type inhibition: over 0–20 µM inhibitor and 0.5–4.0 mM urea, Vmax decreases while Km increases, indicating binding to both the active site and an allosteric site. Potency values reported are IC50 = 4.35 ± 0.23 µM (78.7% inhibition) and Ki = 1.09 µM; no kinetic model parameters such as kin, kout, or ke0 are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmad_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -19,41 +29,41 @@
 not matched (stem Ahmad_2023)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vmax (app) (μM/min)b — 4 | `Q66` · not captured | 2.94 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
-| Vmax (app) (μM/min)b — 6 | `Q66` · not captured | 0.755 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
-| Vmax (app) (μM/min)b — 8 | `Q66` · not captured | 2.27 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col6 |
-| Vmax (app) (μM/min)b — 10 | `Q66` · not captured | 3.46 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col8 |
-| Vmax (app) (μM/min)b — 11 | `Q66` · not captured | 1.11 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col9 |
-| Vmax (app) (μM/min)b — 12 | `Q66` · not captured | 8.62 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col10 |
-| Vmax (app) (μM/min)b — 13 | `Q66` · not captured | 3.03 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col11 |
-| Vmax (app) (μM/min)b — 14 | `Q66` · not captured | 2.28 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col12 |
-| Vmax (app) (μM/min)b — 15 | `Q66` · not captured | 6.36 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col13 |
-| Vmax (app) (μM/min)b — 17 | `Q66` · not captured | 8.54 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col15 |
-| Vmax (app) (μM/min)b — thiouread | `Q66` · not captured | 18.61 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col18 |
-| Km (app) (mM)b — 4 | `Q1` · not captured | 6.41 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col2 |
-| Km (app) (mM)b — 6 | `Q1` · not captured | 1.19 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
-| Km (app) (mM)b — 8 | `Q1` · not captured | 2.01 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col6 |
-| Km (app) (mM)b — 10 | `Q1` · not captured | 11.76 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col8 |
-| Km (app) (mM)b — 11 | `Q1` · not captured | 2.46 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col9 |
-| Km (app) (mM)b — 12 | `Q1` · not captured | 7.14 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col10 |
-| Km (app) (mM)b — 13 | `Q1` · not captured | 0.99 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col11 |
-| Km (app) (mM)b — 14 | `Q1` · not captured | 1.01 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col12 |
-| Km (app) (mM)b — 15 | `Q1` · not captured | 2.63 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col13 |
-| Km (app) (mM)b — 17 | `Q1` · not captured | 7.40 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col15 |
-| Km (app) (mM)b — thiouread | `Q1` · not captured | 2.18 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col18 |
-| Ki (μM)c — 4 | `Q350` · not captured | 7.45 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col2 |
-| Ki (μM)c — 6 | `Q350` · not captured | 16.29 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col4 |
-| Ki (μM)c — 8 | `Q350` · not captured | 10.80 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col6 |
-| Ki (μM)c — 10 | `Q350` · not captured | 2.73 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col8 |
-| Ki (μM)c — 11 | `Q350` · not captured | 1.09 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col9 |
-| Ki (μM)c — 12 | `Q350` · not captured | 3.06 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col10 |
-| Ki (μM)c — 13 | `Q350` · not captured | 4.82 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col11 |
-| Ki (μM)c — 14 | `Q350` · not captured | 1.65 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col12 |
-| Ki (μM)c — 15 | `Q350` · not captured | 1.04 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col13 |
-| Ki (μM)c — 17 | `Q350` · not captured | 0.46 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col15 |
-| Ki (μM)c — thiouread | `Q350` · not captured | 18.18 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col18 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vmax (app) (μM/min)b — 4 | `Q66` · not captured | 2.94 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
+| PK (driver) | Vmax (app) (μM/min)b — 6 | `Q66` · not captured | 0.755 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
+| PK (driver) | Vmax (app) (μM/min)b — 8 | `Q66` · not captured | 2.27 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col6 |
+| PK (driver) | Vmax (app) (μM/min)b — 10 | `Q66` · not captured | 3.46 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col8 |
+| PK (driver) | Vmax (app) (μM/min)b — 11 | `Q66` · not captured | 1.11 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col9 |
+| PK (driver) | Vmax (app) (μM/min)b — 12 | `Q66` · not captured | 8.62 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col10 |
+| PK (driver) | Vmax (app) (μM/min)b — 13 | `Q66` · not captured | 3.03 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col11 |
+| PK (driver) | Vmax (app) (μM/min)b — 14 | `Q66` · not captured | 2.28 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col12 |
+| PK (driver) | Vmax (app) (μM/min)b — 15 | `Q66` · not captured | 6.36 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col13 |
+| PK (driver) | Vmax (app) (μM/min)b — 17 | `Q66` · not captured | 8.54 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col15 |
+| PK (driver) | Vmax (app) (μM/min)b — thiouread | `Q66` · not captured | 18.61 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row1:col18 |
+| PK (driver) | Km (app) (mM)b — 4 | `Q1` · not captured | 6.41 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col2 |
+| PK (driver) | Km (app) (mM)b — 6 | `Q1` · not captured | 1.19 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
+| PK (driver) | Km (app) (mM)b — 8 | `Q1` · not captured | 2.01 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col6 |
+| PK (driver) | Km (app) (mM)b — 10 | `Q1` · not captured | 11.76 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col8 |
+| PK (driver) | Km (app) (mM)b — 11 | `Q1` · not captured | 2.46 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col9 |
+| PK (driver) | Km (app) (mM)b — 12 | `Q1` · not captured | 7.14 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col10 |
+| PK (driver) | Km (app) (mM)b — 13 | `Q1` · not captured | 0.99 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col11 |
+| PK (driver) | Km (app) (mM)b — 14 | `Q1` · not captured | 1.01 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col12 |
+| PK (driver) | Km (app) (mM)b — 15 | `Q1` · not captured | 2.63 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col13 |
+| PK (driver) | Km (app) (mM)b — 17 | `Q1` · not captured | 7.40 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col15 |
+| PK (driver) | Km (app) (mM)b — thiouread | `Q1` · not captured | 2.18 | % inhibition | not captured | llm_confirmed (not captured) | tbl1:row2:col18 |
+| PK (driver) | Ki (μM)c — 4 | `Q350` · not captured | 7.45 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col2 |
+| PK (driver) | Ki (μM)c — 6 | `Q350` · not captured | 16.29 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col4 |
+| PK (driver) | Ki (μM)c — 8 | `Q350` · not captured | 10.80 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col6 |
+| PK (driver) | Ki (μM)c — 10 | `Q350` · not captured | 2.73 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col8 |
+| PK (driver) | Ki (μM)c — 11 | `Q350` · not captured | 1.09 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col9 |
+| PK (driver) | Ki (μM)c — 12 | `Q350` · not captured | 3.06 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col10 |
+| PK (driver) | Ki (μM)c — 13 | `Q350` · not captured | 4.82 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col11 |
+| PK (driver) | Ki (μM)c — 14 | `Q350` · not captured | 1.65 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col12 |
+| PK (driver) | Ki (μM)c — 15 | `Q350` · not captured | 1.04 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col13 |
+| PK (driver) | Ki (μM)c — 17 | `Q350` · not captured | 0.46 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col15 |
+| PK (driver) | Ki (μM)c — thiouread | `Q350` · not captured | 18.18 | % inhibition | not captured | space_fold (not captured) | tbl1:row3:col18 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

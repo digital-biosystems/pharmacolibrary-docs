@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cixutumumab-PEG6-DM1-Low drives name (in days): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In MCF-7/Her18 cells, cixutumumab, cixutumumab-PEG6-DM1-Low and cixutumumab-PEG6-DM1-High showed direct concentration-dependent inhibition of viable cell number (antigrowth effect) with EC50 values of 47.1 ± 0.8 nM, 20.4 ± 0.8 nM and 39.7 ± 0.4 nM, respectively; the paper does not state a formal PD model linking concentrations to survival, which was instead reported as median survival in xenograft mice given ~2.5 mg/kg intravenous doses (PBS 60 days, cixutumumab 71 days, cixutumumab-PEG6-DM1-Low 147 days, cixutumumab-PEG6-DM1-High 65 days).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Solomon_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Solomon VR; Alizadeh E; Bernhard W; Makhlouf A; Hartimath SV; Hill W; et al. et 
   ·  DOI: [10.1038/s41598-020-75279-z](https://doi.org/10.1038/s41598-020-75279-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cixutumumab — EC50 (nM)b | `Q321` · not captured | 47.1 | unknown | not captured | llm (not captured) | Tab2:row1:col1 |
-| cixutumumab-PEG6-DM1-Low — EC50 (nM)b | `Q321` · not captured | 20.4 | unknown | not captured | llm (not captured) | Tab2:row2:col1 |
-| cixutumumab-PEG6-DM1-High — EC50 (nM)b | `Q321` · not captured | 39.7 | unknown | not captured | llm (not captured) | Tab2:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Cixutumumab — EC50 (nM)b | `Q321` · not captured | 47.1 | unknown | not captured | llm (not captured) | Tab2:row1:col1 |
+| PD (effect) | cixutumumab-PEG6-DM1-Low — EC50 (nM)b | `Q321` · not captured | 20.4 | unknown | not captured | llm (not captured) | Tab2:row2:col1 |
+| PD (effect) | cixutumumab-PEG6-DM1-High — EC50 (nM)b | `Q321` · not captured | 39.7 | unknown | not captured | llm (not captured) | Tab2:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

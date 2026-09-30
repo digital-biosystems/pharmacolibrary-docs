@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Metformin (mM concentrations, 48 h incubation) inhibits cell viability measured by MTT assay in MCF-7 breast cancer cells, with IC50 of 16.61 mM in MCF-7WT and 27.61 mM in PRODH/POX-knockdown MCF-7crPOX cells; the paper does not state a formal PD model (no Emax/kin/kout/ke0 parameters), but mechanistically attributes the cytotoxicity to metformin-induced AMPK activation, inhibition of collagen biosynthesis (increasing proline availability for PRODH/POX), ROS generation, and apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huynh_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

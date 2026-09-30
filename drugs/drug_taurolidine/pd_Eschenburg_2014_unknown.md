@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taurolidine (measured concentrations) drives Caspase-9 activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taurolidine (TRD) concentrations (0–500 μM) were applied to neuroblastoma cell lines and caspase-9 cleavage/activation was observed as part of apoptosis induction (76–86% at 48 h), but the paper does not state a pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for caspase-9 activity specifically; the only IC50 values given are for cell growth inhibition (51–274 μM at 48 h, e.g. 126 μM for SK-N-BE(2)-M17).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eschenburg_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

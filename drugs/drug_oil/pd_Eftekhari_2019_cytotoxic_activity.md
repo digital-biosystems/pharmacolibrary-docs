@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliveria decumbens essential oil (measured concentrations) drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oliveria decumbens essential oil (µg/mL) was tested for cytotoxic activity (MTT assay, µg/mL) against MCF-7, MDA-MB-231, and T47D breast cancer cell lines, showing inhibitory effects with IC50 &lt; 10 µg/mL for all three lines; the paper does not state a PD model or mechanism of action, noting only that thymol and carvacrol content may contribute.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eftekhari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

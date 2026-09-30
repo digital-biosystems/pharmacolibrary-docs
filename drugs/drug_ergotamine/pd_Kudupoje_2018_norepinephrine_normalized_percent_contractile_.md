@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ergotamine tartrate drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ergotamine tartrate (ETA) concentrations (M) directly stimulate the norepinephrine-normalized percent contractile response of lateral saphenous vein cross sections in ex vivo myography, described by a sigmoidal Emax relationship (R2 = 0.95) with a maximum response of 88.47% (at ≥3.125E-06 M) and an EC50 of −log [ETA] 6.66 ± 0.17 M (2.26 × 10−7 M); the paper does not describe a kinetic (kin/kout/ke0) mechanism, treating this as a direct concentration–response (receptor–agonist) effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kudupoje_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Kudupoje MB; Klotz JL; Yiannikouris A; Dawson KA; McLeod KR; Vanzant ES et al. (
   ·  DOI: [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Log EC50, −Log [ETA] — Mean | `Q321` · not captured | 6.66 | M | not captured | llm_confirmed (not captured) | toxins-10-00058-t001:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Log EC50, −Log [ETA] — Mean | `Q321` · not captured | 6.66 | M | not captured | llm_confirmed (not captured) | toxins-10-00058-t001:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

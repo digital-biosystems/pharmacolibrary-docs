@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for caspase 3 activity; it only reports that doxorubicin (at 8.6 µM = IC50, 4.3 µM = 0.5×IC50, and 2.15 µM = 0.25×IC50), alone or combined with 70 µM folic acid-conjugated gold nanoparticles and 2 Gy X-ray irradiation, increased caspase 3 activity in HT-29 cells after 48 h, with combination treatments higher than single treatments (P&lt;0.05). No mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values for this response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heshmatian_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sarafloxacin drives name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ex vivo serum from sarafloxacin-dosed ducks (10 mg/kg) was related to the change in E. coli O78 bacterial counts (log10 CFU/mL over 0–24 h) using a sigmoid Emax model with AUC0-24h/MIC as the driver; the paper does not describe a production/elimination (kin/kout) or effect-compartment mechanism. Reported AUC0-24h/MIC values were 34.3 h (IV) and 33.5 h (PO), with AUC0-24h/MIC targets of 25.4 h for bacteriostatic action, 40.6 h for bactericidal activity and 94.5 h for bacterial eradication.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Yu Y; Zhou YF; Sun J; Shi W; Liao XP; Liu YH et al. (2017). BMC veterinary resea
   ·  DOI: [10.1186/s12917-017-0964-0](https://doi.org/10.1186/s12917-017-0964-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUC0-24 h/MIC (h) — IV | `Q19` · not captured | 34.3 | h | not captured | llm (not captured) | Tab4:row1:col1 |
-| AUC0-24 h/MIC (h) — PO | `Q19` · not captured | 33.5 | h | not captured | llm (not captured) | Tab4:row1:col2 |
-| AUC0-24 h/MBC (h) — IV | `Q19` · not captured | 17.2 | h | not captured | llm (not captured) | Tab4:row3:col1 |
-| AUC0-24 h/MBC (h) — PO | `Q19` · not captured | 16.7 | h | not captured | llm (not captured) | Tab4:row3:col2 |
-| AUC0-24 h/MPC (h) — IV | `Q19` · not captured | 8.57 | h | not captured | llm (not captured) | Tab4:row5:col1 |
-| AUC0-24 h/MPC (h) — PO | `Q19` · not captured | 8.37 | h | not captured | llm (not captured) | Tab4:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUC0-24 h/MIC (h) — IV | `Q19` · not captured | 34.3 | h | not captured | llm (not captured) | Tab4:row1:col1 |
+| PK (driver) | AUC0-24 h/MIC (h) — PO | `Q19` · not captured | 33.5 | h | not captured | llm (not captured) | Tab4:row1:col2 |
+| PK (driver) | AUC0-24 h/MBC (h) — IV | `Q19` · not captured | 17.2 | h | not captured | llm (not captured) | Tab4:row3:col1 |
+| PK (driver) | AUC0-24 h/MBC (h) — PO | `Q19` · not captured | 16.7 | h | not captured | llm (not captured) | Tab4:row3:col2 |
+| PK (driver) | AUC0-24 h/MPC (h) — IV | `Q19` · not captured | 8.57 | h | not captured | llm (not captured) | Tab4:row5:col1 |
+| PK (driver) | AUC0-24 h/MPC (h) — PO | `Q19` · not captured | 8.37 | h | not captured | llm (not captured) | Tab4:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

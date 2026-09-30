@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vodo-C1 (measured concentrations) drives cAMP accumulation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vodo-C1 concentration (μM) inhibits forskolin-stimulated cAMP accumulation in CHO-K1 cells expressing human CB2R, described by an Emax model with Emax = 102.8% and EC50 = 7.8 μM; the excerpts do not state a mechanism for this effect (e.g., production vs. elimination inhibition or an effect-compartment link).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomašević_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Tomašević N; Emser FS; Muratspahić E; Gattringer J; Hasinger S; Hellinger R; 
   ·  DOI: [10.1016/j.jbc.2024.107330](https://doi.org/10.1016/j.jbc.2024.107330)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 102.8 | % | not captured | review_gapfill (not captured) | Tomašević_2024:review |
-| EC50 | `Q321` · not captured | 7.8 | μM | not captured | review_gapfill (not captured) | Tomašević_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 102.8 | % | not captured | review_gapfill (not captured) | Tomašević_2024:review |
+| PD (effect) | EC50 | `Q321` · not captured | 7.8 | μM | not captured | review_gapfill (not captured) | Tomašević_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

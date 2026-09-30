@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism for the cell-cycle distribution response; it reports IC50 values (μM) from cytotoxicity/cell-cycle analysis of naphthoquinone derivatives 8, 9, 11, and 12 in HeLa, SH-SY5Y, SaOS2, U2OS, and HDFa cells (e.g., compound 8: HeLa 0.54, SH-SY5Y 0.87, SaOS2 1.67, U2OS 1.81, HDFa 7.43 μM; compound 9: 0.50–3.87 μM; compound 11: 6.88–30.4 μM; compound 12: 0.63–1.65 μM), with compounds 8, 9, and 12 cytotoxic in the 0.50–1.81 μM range against malignant lines while 11 was active only at much higher IC50 values; no Emax, kin/kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Micheletti_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,28 +30,28 @@ Micheletti G; Boga C; Zalambani C; Farruggia G; Esposito E; Fiori J; et al. et a
   ·  DOI: [10.3390/molecules27175645](https://doi.org/10.3390/molecules27175645)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 8 — HeLaIC50 (μM) | `Q322` · not captured | 0.54 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col1 |
-| 8 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.87 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col2 |
-| 8 — SaOS2IC50 (μM) | `Q322` · not captured | 1.67 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col3 |
-| 8 — U2OSIC50 (μM) | `Q322` · not captured | 1.81 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col4 |
-| 8 — HDFaIC50 (μM) | `Q322` · not captured | 7.43 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col5 |
-| 9 — HeLaIC50 (μM) | `Q322` · not captured | 0.50 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col1 |
-| 9 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.96 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col2 |
-| 9 — SaOS2IC50 (μM) | `Q322` · not captured | 0.59 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col3 |
-| 9 — U2OSIC50 (μM) | `Q322` · not captured | 0.51 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col4 |
-| 9 — HDFaIC50 (μM) | `Q322` · not captured | 3.87 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col5 |
-| 11 — HeLaIC50 (μM) | `Q322` · not captured | 13.2 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col1 |
-| 11 — SH-SY5YIC50 (μM) | `Q322` · not captured | 11.4 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col2 |
-| 11 — SaOS2IC50 (μM) | `Q322` · not captured | 25.9 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col3 |
-| 11 — U2OSIC50 (μM) | `Q322` · not captured | 30.4 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col4 |
-| 11 — HDFaIC50 (μM) | `Q322` · not captured | 6.88 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col5 |
-| 12 — HeLaIC50 (μM) | `Q322` · not captured | 1.04 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col1 |
-| 12 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.63 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col2 |
-| 12 — SaOS2IC50 (μM) | `Q322` · not captured | 1.56 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col3 |
-| 12 — U2OSIC50 (μM) | `Q322` · not captured | 1.65 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col4 |
-| 12 — HDFaIC50 (μM) | `Q322` · not captured | 0.83 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 8 — HeLaIC50 (μM) | `Q322` · not captured | 0.54 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col1 |
+| PD (effect) | 8 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.87 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col2 |
+| PD (effect) | 8 — SaOS2IC50 (μM) | `Q322` · not captured | 1.67 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col3 |
+| PD (effect) | 8 — U2OSIC50 (μM) | `Q322` · not captured | 1.81 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col4 |
+| PD (effect) | 8 — HDFaIC50 (μM) | `Q322` · not captured | 7.43 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row1:col5 |
+| PD (effect) | 9 — HeLaIC50 (μM) | `Q322` · not captured | 0.50 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col1 |
+| PD (effect) | 9 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.96 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col2 |
+| PD (effect) | 9 — SaOS2IC50 (μM) | `Q322` · not captured | 0.59 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col3 |
+| PD (effect) | 9 — U2OSIC50 (μM) | `Q322` · not captured | 0.51 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col4 |
+| PD (effect) | 9 — HDFaIC50 (μM) | `Q322` · not captured | 3.87 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row2:col5 |
+| PD (effect) | 11 — HeLaIC50 (μM) | `Q322` · not captured | 13.2 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col1 |
+| PD (effect) | 11 — SH-SY5YIC50 (μM) | `Q322` · not captured | 11.4 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col2 |
+| PD (effect) | 11 — SaOS2IC50 (μM) | `Q322` · not captured | 25.9 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col3 |
+| PD (effect) | 11 — U2OSIC50 (μM) | `Q322` · not captured | 30.4 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col4 |
+| PD (effect) | 11 — HDFaIC50 (μM) | `Q322` · not captured | 6.88 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row4:col5 |
+| PD (effect) | 12 — HeLaIC50 (μM) | `Q322` · not captured | 1.04 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col1 |
+| PD (effect) | 12 — SH-SY5YIC50 (μM) | `Q322` · not captured | 0.63 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col2 |
+| PD (effect) | 12 — SaOS2IC50 (μM) | `Q322` · not captured | 1.56 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col3 |
+| PD (effect) | 12 — U2OSIC50 (μM) | `Q322` · not captured | 1.65 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col4 |
+| PD (effect) | 12 — HDFaIC50 (μM) | `Q322` · not captured | 0.83 | μM | not captured | llm (not captured) | molecules-27-05645-t002:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

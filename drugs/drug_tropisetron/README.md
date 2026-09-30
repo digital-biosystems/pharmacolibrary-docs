@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [George_2021](drugs/drug_tropisetron/pd_George_2021_ASP.md) | George B et al., In Vitro Inhibition of Renal OCT2 and M…, International journal of mo… (2021) | [10.3390/ijms22126439](https://doi.org/10.3390/ijms22126439) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [George_2021_ASP](drugs/drug_tropisetron/pd_George_2021_ASP.md) | ASP+ intracellular accumulation ← ondansetron · inhibition effect | — | George B et al., In Vitro Inhibition of Renal OCT2 and M…, International journal of mo… (2021) | [10.3390/ijms22126439](https://doi.org/10.3390/ijms22126439) |
 
 ## Pharmacogenomics (PGx)
 

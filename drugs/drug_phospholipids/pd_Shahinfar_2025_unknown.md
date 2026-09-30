@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omega-3 drives episodic memory (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Omega-3 supplementation (dose in mg/day) was related to episodic memory in a dose-response meta-analysis of RCTs; no pharmacodynamic mechanism (e.g., Emax, kin/kout) is given. Overall effect was not significant (SMD 0.27; 95%CI -0.06, 0.59), with a significant non-linear dose-response (P = 0.01): SMD -0.24 (95%CI -0.98, 0.49) per 1000 mg/d up to 1000 mg/d, then increasing, with benefits emerging at higher intakes (optimal range 1000-2500 mg/day).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shahinfar_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Shahinfar H; Yazdian Z; Avini NA; Torabinasab K; Shab-Bidar S et al. (2025). Sci
   ·  DOI: [10.1038/s41598-025-16129-8](https://doi.org/10.1038/s41598-025-16129-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Michelle A. Phillips et al., 2015 — Duration (week) | `Q100` · not captured | 16 | week | not captured | llm (not captured) | Tab1:row38:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Michelle A. Phillips et al., 2015 — Duration (week) | `Q100` · not captured | 16 | week | not captured | llm (not captured) | Tab1:row38:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

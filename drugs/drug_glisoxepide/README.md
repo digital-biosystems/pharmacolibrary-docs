@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 07:53 | 1:38 | 0/0/0 | 1/0/0 | 0/0/0 | 38,440/952 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-09-29 23:24 | 1:12 | 0/0/0 | 1/0/0 | 0/0/0 | 6,832/1,915 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glisoxepide/pd_Haupt_1971_2_blood_glucose.md) | Haupt (1971) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glisoxepide/pd_Haupt_1971_2_free_fatty_acids.md) | Haupt (1971) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glisoxepide/pd_Haupt_1971_2_serum_insulin.md) | Haupt (1971) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haupt_1971_2_blood_glucose](drugs/drug_glisoxepide/pd_Haupt_1971_2_blood_glucose.md) | name ← tolbutamide · stimulation effect | — | Haupt (1971) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haupt_1971_2_free_fatty_acids](drugs/drug_glisoxepide/pd_Haupt_1971_2_free_fatty_acids.md) | name ← tolbutamide · stimulation effect | — | Haupt (1971) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Haupt_1971_2_serum_insulin](drugs/drug_glisoxepide/pd_Haupt_1971_2_serum_insulin.md) | name ← tolbutamide · stimulation effect | — | Haupt (1971) | — |
 
 ## ADME sites
 
@@ -64,7 +64,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Chandra_2021.pdf` | Chandra A et al., Identification of potential inhibitors…, Journal of biomolecular str… (2021) | pd | 4 | [10.1080/07391102.2020.1775127](https://doi.org/10.1080/07391102.2020.1775127) | [32462970](https://www.ncbi.nlm.nih.gov/pubmed/32462970) | metadata signals extractable PD data (IC50) |
 | `Fückel_1992.pdf` | Fückel D et al., Interaction of sulfonylureas with the t…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90628-h](https://doi.org/10.1016/0014-2999(92)90628-h) | [1618280](https://www.ncbi.nlm.nih.gov/pubmed/1618280) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-22T07:52:31.613947+00:00</sub>
+<sub>queue written 2026-09-29T23:24:09.481628+00:00</sub>
 
 ## Screened and excluded
 

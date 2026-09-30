@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-chloropurine arabinonucleosides (specifically serine derivative 4b) (measured concentrations) drives U937 cell survival (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In U937 cells, nelarabine and 2-chloropurine arabinonucleoside derivatives (e.g. serine derivative 4b) concentration-dependently inhibited cell survival (0.1–50 μM range), with IC50 values of 3 μM for nelarabine and 16 μM for 4b (also 5b 50 μM, 14 50 μM, 15 22 μM); the paper does not state a specific PD mechanism beyond concentration-dependent growth inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eletskaya_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Eletskaya BZ; Berzina MY; Fateev IV; Kayushin AL; Dorofeeva EV; Lutonina OI; et 
   ·  DOI: [10.3390/ijms24076223](https://doi.org/10.3390/ijms24076223)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 4b — IC50, µM | `Q322` · not captured | 16.0 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row5:col5 |
-| 5b — IC50, µM | `Q322` · not captured | 50 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row6:col5 |
-| 14 — IC50, µM | `Q322` · not captured | 50 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row15:col5 |
-| 15 — IC50, µM | `Q322` · not captured | 22.0 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row16:col5 |
-| Nelarabine — IC50, µM | `Q322` · not captured | 3.3 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row19:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 4b — IC50, µM | `Q322` · not captured | 16.0 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row5:col5 |
+| PD (effect) | 5b — IC50, µM | `Q322` · not captured | 50 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row6:col5 |
+| PD (effect) | 14 — IC50, µM | `Q322` · not captured | 50 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row15:col5 |
+| PD (effect) | 15 — IC50, µM | `Q322` · not captured | 22.0 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row16:col5 |
+| PD (effect) | Nelarabine — IC50, µM | `Q322` · not captured | 3.3 | μM | not captured | llm (not captured) | ijms-24-06223-t006:row19:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

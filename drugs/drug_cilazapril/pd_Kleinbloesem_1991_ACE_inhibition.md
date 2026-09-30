@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives ACE inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat plasma concentrations (µg/L) are closely, positively correlated with the degree of ACE inhibition (%), a steep sigmoid concentration-effect relationship reflecting cilazaprilat's reversible, competitive inhibition of ACE; the IC50 (concentration causing 50% ACE inhibition) is approximately 1 µg/L plasma. The paper does not state a formal PD model (e.g. Imax/kin/kout parameters) for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kleinbloesem_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

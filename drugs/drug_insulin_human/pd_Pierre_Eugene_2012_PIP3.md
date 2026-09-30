@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glargine (measured concentrations) drives PIP3 production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Glargine (human insulin analogue) concentration (nM) directly stimulates PIP3 production, measured by a BRET-based Akt-PH recruitment assay in living MCF-7 and MDA-MB-231 cells, via activation of insulin/IGF1 receptors and PI-3 kinase (an Emax-type concentration–response relationship); the paper states glargine was more potent than insulin in MCF-7 cells but does not report numeric potency values (EC50/Emax) in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pierre-Eugene_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

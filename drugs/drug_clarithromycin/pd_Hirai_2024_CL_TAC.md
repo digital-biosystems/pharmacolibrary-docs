@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Voriconazole drives tacrolimus clearance (in unknown): indirect response — drug inhibits the production of tacrolimus clearance.
+
+**Model:** No model was generated from this record.
+
+> In the paper's mechanism-based model, tacrolimus clearance (CL_TAC) is reduced by a drug-drug interaction factor: voriconazole inhibits CL_TAC proportionally to its hepatic concentration via an Imax/IC50 function (DDI_VRCZ = IMAX_VRCZ × C_VRCZ,HILL / (IC50_VRCZ,HILL + C_VRCZ,HILL)), while clarithromycin acts indirectly by inhibiting the degradation of the CYP3A4 enzyme pool (degradation rate kdeg multiplied by 1 + DDI_CAM, with DDI_CAM = IMAX_CAM × C_CAM,HILL / (IC50_CAM,HILL + C_CAM,HILL)), with ki as the transfer rate constant into and from the inhibition compartment. The excerpts do not report numerical values for IMAX, IC50, kdeg, or ki, and the final model used a sigmoid Emax function f
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hirai_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

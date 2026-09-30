@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Brazilein (measured concentrations) drives cell viability (in µM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In MCF-7/HER2 cells, doxorubicin concentration-dependently reduces cell viability (MTT assay) via DNA intercalation and topoisomerase II inhibition, with an IC50 of 3 µM; brazilein alone inhibits viability with an IC50 of 51 ± 2.1 µM, and combinations at 1/10–1/2 of each IC50 are synergistic (CI &lt; 1). The paper does not report an Emax model or other PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Handayani_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Handayani S; Susidarti RA; Utomo RY; Meiyanto E; Jenie RII et al. (2022). Asian 
   ·  DOI: [10.31557/APJCP.2022.23.8.2623](https://doi.org/10.31557/APJCP.2022.23.8.2623)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC 50 value | `Q322` · not captured | 3 | µM | not captured | review_gapfill (not captured) | Handayani_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC 50 value | `Q322` · not captured | 3 | µM | not captured | review_gapfill (not captured) | Handayani_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

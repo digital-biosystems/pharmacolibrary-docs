@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibutilide (measured concentrations) drives QTF interval (in s): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ibutilide serum concentration (μg/L) lengthens the QTF interval (s) via a sigmoid Emax model with an effect compartment (ke0 = 0.05 h−1) to account for the slight hysteresis/delay; Emax = 0.07 s and EC50 = 0.008 μg/L (median EC50 significantly lower in heart failure patients).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tisdale_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Tisdale JE; Overholser BR; Wroblewski HA; Sowinski KM; Amankwa K; Borzak S; et a
   ·  DOI: [10.1177/0091270011416939](https://doi.org/10.1177/0091270011416939)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50, μg/L — P | `Q321` · not captured | 0.008 | μg/L | not captured | llm_confirmed (not captured) | T3:row1:col3 |
-| Emax, s — P | `Q320` · not captured | 0.07 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col3 |
-| Keo, h−1 — P | `Q326` · not captured | 0.05 | not captured | not captured | llm_confirmed (not captured) | T3:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50, μg/L — P | `Q321` · not captured | 0.008 | μg/L | not captured | llm_confirmed (not captured) | T3:row1:col3 |
+| PD (effect) | Emax, s — P | `Q320` · not captured | 0.07 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col3 |
+| PD (effect) | Keo, h−1 — P | `Q326` · not captured | 0.05 | not captured | not captured | llm_confirmed (not captured) | T3:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

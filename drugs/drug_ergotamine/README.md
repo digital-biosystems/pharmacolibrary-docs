@@ -23,19 +23,19 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | 1-compartment (no model) | 1 | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Tfelt-Hansen_1985_reference](drugs/drug_ergotamine/Ergotamine_TfeltHansen1985_reference.md) | — | 1-compartment (no model) | 1 | Tfelt-Hansen P et al., Intramuscular ergotamine: plasma levels…, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.7](https://doi.org/10.1038/clpt.1985.7) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kudupoje_2018](drugs/drug_ergotamine/pd_Kudupoje_2018_norepinephrine_normalized_percent_contractile_.md) | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [MaassenVanDenBrink_1998](drugs/drug_ergotamine/pd_MaassenVanDenBrink_1998_unknown.md) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rosenkranz_2008](drugs/drug_ergotamine/pd_Rosenkranz_2008_DNA_fragmentation.md) | Rosenkranz V et al., Alkaloids induce programmed cell death…, Molecules (Basel, Switzerla… (2008) | [10.3390/molecules13102462](https://doi.org/10.3390/molecules13102462) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rosenkranz_2008](drugs/drug_ergotamine/pd_Rosenkranz_2008_mitochondrial_membrane_potential.md) | Rosenkranz V et al., Alkaloids induce programmed cell death…, Molecules (Basel, Switzerla… (2008) | [10.3390/molecules13102462](https://doi.org/10.3390/molecules13102462) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yonpiam_2021](drugs/drug_ergotamine/pd_Yonpiam_2021_unknown.md) | Yonpiam R et al., Vasoactive Effects of Acute Ergot Expos…, Toxins (2021) | [10.3390/toxins13040291](https://doi.org/10.3390/toxins13040291) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kudupoje_2018_norepinephrine_normalized_percent_contractile_response](drugs/drug_ergotamine/pd_Kudupoje_2018_norepinephrine_normalized_percent_contractile_.md) | name ← ergotamine tartrate · direct sigmoid Emax (Hill) effect | — | Kudupoje MB et al., Contractile Response of Bovine Lateral…, Toxins (2018) | [10.3390/toxins10020058](https://doi.org/10.3390/toxins10020058) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [MaassenVanDenBrink_1998_unknown](drugs/drug_ergotamine/pd_MaassenVanDenBrink_1998_unknown.md) | coronary artery contraction ← unknown · direct Emax (saturable) effect | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rosenkranz_2008_DNA_fragmentation](drugs/drug_ergotamine/pd_Rosenkranz_2008_DNA_fragmentation.md) | name ← unknown · inhibition effect | — | Rosenkranz V et al., Alkaloids induce programmed cell death…, Molecules (Basel, Switzerla… (2008) | [10.3390/molecules13102462](https://doi.org/10.3390/molecules13102462) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rosenkranz_2008_mitochondrial_membrane_potential](drugs/drug_ergotamine/pd_Rosenkranz_2008_mitochondrial_membrane_potential.md) | name ← unknown · inhibition effect | — | Rosenkranz V et al., Alkaloids induce programmed cell death…, Molecules (Basel, Switzerla… (2008) | [10.3390/molecules13102462](https://doi.org/10.3390/molecules13102462) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yonpiam_2021_unknown](drugs/drug_ergotamine/pd_Yonpiam_2021_unknown.md) | arterial contractile response ← phenylephrine · direct sigmoid Emax (Hill) effect | — | Yonpiam R et al., Vasoactive Effects of Acute Ergot Expos…, Toxins (2021) | [10.3390/toxins13040291](https://doi.org/10.3390/toxins13040291) |
 
 ## ADME sites
 
@@ -48,6 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | bile duct | <sub>“…ed pathways, and 90% of the metabolites are excreted in the bile.…”</sub> | prose |
 | metabolism | liver | `CYP3A4` inhibitor/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate | DrugBank actor |

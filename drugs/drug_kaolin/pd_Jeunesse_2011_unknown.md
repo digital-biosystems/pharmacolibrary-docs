@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Meloxicam (measured concentrations) drives vertical force (in unknown): indirect response — drug inhibits the production of vertical force.
+
+**Model:** No model was generated from this record.
+
+> In the kaolin-induced paw inflammation model, meloxicam plasma concentrations (ng/ml) inhibit the production of the inflammatory response measured as vertical force on the force plate, described by an indirect response (inhibition of response production) model with ImaxA = 1, IC50A = 390 ng/ml (IC50A for lameness score 466 ng/ml, analgesia 546 ng/ml), and kin for Force Plate = 7.64 (CV%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeunesse_2011`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,27 +30,27 @@ Jeunesse EC; Bargues IA; Toutain CE; Lacroix MZ; Letellier IM; Giraudel JM; et a
   ·  DOI: [10.1124/jpet.110.178350](https://doi.org/10.1124/jpet.110.178350)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k in — Body Temperature (CV%) | `Q327` · not captured | 94.6 | not captured | not captured | space_fold (not captured) | tab_2:row1:col3 |
-| k in — Lameness Score (CV%) | `Q327` · not captured | 0.0057 | not captured | not captured | space_fold (not captured) | tab_2:row1:col4 |
-| k in — Creeping (CV%) | `Q327` · not captured | 13.8 | not captured | not captured | space_fold (not captured) | tab_2:row1:col5 |
-| k in — Force Plate (CV%) | `Q327` · not captured | 7.64 | not captured | not captured | space_fold (not captured) | tab_2:row1:col6 |
-| k in — Analgesia (CV%) | `Q327` · not captured | 43 | not captured | not captured | space_fold (not captured) | tab_2:row1:col7 |
-| IC 50B Nanograms per — Definition | `Q322` · not captured | 69 | ng/ml | not captured | llm (not captured) | tab_2:row3:col2 |
-| IC 50B Nanograms per — Lameness Score (CV%) | `Q322` · not captured | 56 | ng/ml | not captured | llm (not captured) | tab_2:row3:col4 |
-| IC 50B Nanograms per — Force Plate (CV%) | `Q322` · not captured | 72 | ng/ml | not captured | llm (not captured) | tab_2:row3:col6 |
-| IC 50B Nanograms per | `Q322` · not captured | 68 | ng/ml | not captured | llm (not captured) | tab_2:row3:col8 |
-| IC 50B Nanograms per | `Q322` · not captured | 61 | ng/ml | not captured | llm (not captured) | tab_2:row3:col10 |
-| I maxA No unit — Definition | `Q323` · not captured | 0.84 | not captured | not captured | llm (not captured) | tab_2:row8:col2 |
-| I maxA No unit — Body Temperature (CV%) | `Q323` · not captured | 0.82 | not captured | not captured | llm (not captured) | tab_2:row8:col3 |
-| I maxA No unit — Lameness Score (CV%) | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col4 |
-| I maxA No unit — Force Plate (CV%) | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col6 |
-| I maxA No unit | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col8 |
-| IC 50A Nanograms per — Definition | `Q322` · not captured | 210 | ng/ml | not captured | llm (not captured) | tab_2:row10:col2 |
-| IC 50A Nanograms per — Lameness Score (CV%) | `Q322` · not captured | 466 | ng/ml | not captured | llm (not captured) | tab_2:row10:col4 |
-| IC 50A Nanograms per — Analgesia (CV%) | `Q322` · not captured | 546 | ng/ml | not captured | llm (not captured) | tab_2:row10:col7 |
-| IC 50A Nanograms per | `Q322` · not captured | 390 | ng/ml | not captured | llm (not captured) | tab_2:row10:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | k in — Body Temperature (CV%) | `Q327` · not captured | 94.6 | not captured | not captured | space_fold (not captured) | tab_2:row1:col3 |
+| PD (effect) | k in — Lameness Score (CV%) | `Q327` · not captured | 0.0057 | not captured | not captured | space_fold (not captured) | tab_2:row1:col4 |
+| PD (effect) | k in — Creeping (CV%) | `Q327` · not captured | 13.8 | not captured | not captured | space_fold (not captured) | tab_2:row1:col5 |
+| PD (effect) | k in — Force Plate (CV%) | `Q327` · not captured | 7.64 | not captured | not captured | space_fold (not captured) | tab_2:row1:col6 |
+| PD (effect) | k in — Analgesia (CV%) | `Q327` · not captured | 43 | not captured | not captured | space_fold (not captured) | tab_2:row1:col7 |
+| PD (effect) | IC 50B Nanograms per — Definition | `Q322` · not captured | 69 | ng/ml | not captured | llm (not captured) | tab_2:row3:col2 |
+| PD (effect) | IC 50B Nanograms per — Lameness Score (CV%) | `Q322` · not captured | 56 | ng/ml | not captured | llm (not captured) | tab_2:row3:col4 |
+| PD (effect) | IC 50B Nanograms per — Force Plate (CV%) | `Q322` · not captured | 72 | ng/ml | not captured | llm (not captured) | tab_2:row3:col6 |
+| PD (effect) | IC 50B Nanograms per | `Q322` · not captured | 68 | ng/ml | not captured | llm (not captured) | tab_2:row3:col8 |
+| PD (effect) | IC 50B Nanograms per | `Q322` · not captured | 61 | ng/ml | not captured | llm (not captured) | tab_2:row3:col10 |
+| PD (effect) | I maxA No unit — Definition | `Q323` · not captured | 0.84 | not captured | not captured | llm (not captured) | tab_2:row8:col2 |
+| PD (effect) | I maxA No unit — Body Temperature (CV%) | `Q323` · not captured | 0.82 | not captured | not captured | llm (not captured) | tab_2:row8:col3 |
+| PD (effect) | I maxA No unit — Lameness Score (CV%) | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col4 |
+| PD (effect) | I maxA No unit — Force Plate (CV%) | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col6 |
+| PD (effect) | I maxA No unit | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col8 |
+| PD (effect) | IC 50A Nanograms per — Definition | `Q322` · not captured | 210 | ng/ml | not captured | llm (not captured) | tab_2:row10:col2 |
+| PD (effect) | IC 50A Nanograms per — Lameness Score (CV%) | `Q322` · not captured | 466 | ng/ml | not captured | llm (not captured) | tab_2:row10:col4 |
+| PD (effect) | IC 50A Nanograms per — Analgesia (CV%) | `Q322` · not captured | 546 | ng/ml | not captured | llm (not captured) | tab_2:row10:col7 |
+| PD (effect) | IC 50A Nanograms per | `Q322` · not captured | 390 | ng/ml | not captured | llm (not captured) | tab_2:row10:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

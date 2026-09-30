@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diclofenac, ibuprofen, ketoprofen, paracetamol (measured concentrations) drive name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for diclofenac on heart rate; it only reports observed effects in zebrafish embryos, where diclofenac (1.25 and 2.5 mg/L) significantly elevated heart rate (peaking at 127.5 beats per minute at 2.5 mg/L), while elsewhere diclofenac and ibuprofen decreased heart rate during early development (30–44 hpf) with return to normal after 56 h, and pericardial edema EC50 values of 1.3 mg/L (diclofenac) and 9.18 mg/L (ibuprofen) are given. No mechanism, Imax, IC50, Emax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chabchoubi_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TGP7 (measured concentrations) drives DPPH radical scavenging (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptide TGP7 (Asp-Gly-Pro-Lys-Gly-His, from alcalase-hydrolysed skipjack tuna scale gelatin) directly scavenges DPPH radical at concentrations of 0.1–5.0 mg/mL, with an EC50 of 0.54 mg/mL (vs TGP5 1.34 mg/mL and TGP9 0.67 mg/mL); the paper does not state a pharmacodynamic model or mechanism beyond hydrogen donation/free radical clearing.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qiu_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Qiu YT; Wang YM; Yang XR; Zhao YQ; Chi CF; Wang B et al. (2019). Marine drugs 17
   ·  DOI: [10.3390/md17100565](https://doi.org/10.3390/md17100565)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pepsin — DH (%) | `Q358` · not captured | 18.39 | not captured | not captured | llm (not captured) | marinedrugs-17-00565-t004:row1:col1 |
-| Trypsin — DH (%) | `Q358` · not captured | 19.64 | not captured | not captured | llm (not captured) | marinedrugs-17-00565-t004:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Pepsin — DH (%) | `Q358` · not captured | 18.39 | not captured | not captured | llm (not captured) | marinedrugs-17-00565-t004:row1:col1 |
+| PK (driver) | Trypsin — DH (%) | `Q358` · not captured | 19.64 | not captured | not captured | llm (not captured) | marinedrugs-17-00565-t004:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

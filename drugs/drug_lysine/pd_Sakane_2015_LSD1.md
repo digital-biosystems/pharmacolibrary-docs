@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-PCPA (measured concentrations) drives LSD1 activity (in pmol): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 2-PCPA (tranylcypromine) concentrations (0–100 µM) inhibit LSD1-catalysed demethylation of H3K4me2 (production of H3K4me1 and H3K4me0, measured in pmol by FI-TOF/MS) dose-dependently, with an IC50 of 6.90 µM (6.9 µM for the first and 5.8 µM for the second demethylation reaction); the paper does not state an Emax, Imax, or kinetic (kin/kout/ke0) model parameters beyond this IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sakane_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

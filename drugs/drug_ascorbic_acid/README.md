@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | 1-compartment (no model) | 1 | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Bluck_1996_reference](drugs/drug_ascorbic_acid/AscorbicAcid_Bluck1996_reference.md) | — | 1-compartment (no model) | 1 | Bluck LJ et al., Measurement of ascorbic acid kinetics i…, Journal of mass spectrometr… (1996) | [10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H](https://doi.org/10.1002/(SICI)1096-9888(199607)31:7&lt;741::AID-JMS352&gt;3.0.CO;2-H) |
 
 ## ADME sites
 

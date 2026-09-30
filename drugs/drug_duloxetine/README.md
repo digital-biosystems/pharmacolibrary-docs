@@ -54,10 +54,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Skinner_2004_reference](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | 1-compartment, oral | 3 | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020_reference](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | parent + metabolite (no model) | 5 (+6 cov.) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Skinner_2004_reference](drugs/drug_duloxetine/Duloxetine_Skinner2004_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Skinner MH et al., Effect of age on the pharmacokinetics o…, British journal of clinical… (2004) | [10.1046/j.1365-2125.2003.01963.x](https://doi.org/10.1046/j.1365-2125.2003.01963.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ngo_2020_reference](drugs/drug_duloxetine/Duloxetine_Ngo2020_reference.md) | — | parent + metabolite (no model) | 5 (+6 cov.) | Ngo TL et al., Application of an Inter-Species Extrapo…, International journal of mo… (2020) | [10.3390/ijms21051862](https://doi.org/10.3390/ijms21051862) |
 
 ## ADME sites
 
@@ -71,6 +71,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
 | absorption | stomach | <sub>“…an enteric coating to protect it during transit through the stomach. This creates a 2 hour…”</sub> | prose |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` target, `ORM1` target | DrugBank actor |
 | metabolism | bile duct | <sub>“…r uncharacterized metabolite is known to be excreted in the feces but comprises &lt;5% of the…”</sub> | prose |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |

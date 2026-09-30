@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives neurodegeneration (in intensity per 100 μm2): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the morpholine compound A36; it states only that A36 concentrations (μM) reduce neurodegeneration (DARPP32 intensity per 100 μm²) by stabilizing the CAST–calpain-2 protein-protein interaction, preventing CAST degradation and suppressing calpain-2–mediated mitochondrial fragmentation. No Emax, EC50, or other potency or rate parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AM4346 (measured concentrations) drives cAMP production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In HEK293 cells expressing hCB2 receptors, cannabinoid agonist concentrations (nM) decrease forskolin-stimulated cAMP production via CB2 receptor agonism, described by an Emax model. AM4346 was most potent (EC50 = 3.7 ± 1.5 nM, Emax = 89%), compared with AM1710 (EC50 = 10.5 ± 2.5 nM, Emax = 73%), AM1714 (EC50 = 36.9 ± 6.8 nM, Emax = 77%), and the reference agonist CP-55,940 (Emax = 100%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alapafuja_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Alapafuja SO; Nikas SP; Ho TC; Tong F; Benchama O; Makriyannis A et al. (2019). 
   ·  DOI: [10.3390/molecules24193559](https://doi.org/10.3390/molecules24193559)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CP-55,940 — E(max) (%) 2 | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row2:col2 |
-| 1a AM1710 — E(max) (%) 2 | `Q320` · not captured | 73 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row3:col2 |
-| 1b AM1714 — E(max) (%) 2 | `Q320` · not captured | 77 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row4:col2 |
-| 3f AM4346 — E(max) (%) 2 | `Q320` · not captured | 89 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row5:col2 |
-| EC50 | `Q321` · not captured | 3.7 | nM | not captured | review_gapfill (not captured) | Alapafuja_2019:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CP-55,940 — E(max) (%) 2 | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row2:col2 |
+| PD (effect) | 1a AM1710 — E(max) (%) 2 | `Q320` · not captured | 73 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row3:col2 |
+| PD (effect) | 1b AM1714 — E(max) (%) 2 | `Q320` · not captured | 77 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row4:col2 |
+| PD (effect) | 3f AM4346 — E(max) (%) 2 | `Q320` · not captured | 89 | not captured | not captured | llm (not captured) | molecules-24-03559-t004:row5:col2 |
+| PD (effect) | EC50 | `Q321` · not captured | 3.7 | nM | not captured | review_gapfill (not captured) | Alapafuja_2019:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

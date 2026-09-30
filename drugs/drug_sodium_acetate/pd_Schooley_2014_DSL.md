@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetate (measured concentrations) drives diastolic sarcomere length (in μm): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated mouse ventricular myocytes, sodium acetate (1–10 mM) increased diastolic sarcomere length (e.g. 1.81 ± 0.01 μm vs 1.77 ± 0.01 μm at 10 mM), an effect the paper attributes to acetate-induced mitochondrial swelling increasing sarcomere spacing; unlike the negative inotropic effect, the DSL change is sustained and shows little concentration dependence, and no Hill/Emax/IC50 parameters are reported for DSL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schooley_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

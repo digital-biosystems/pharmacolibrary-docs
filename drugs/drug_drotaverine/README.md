@@ -20,7 +20,7 @@ Drotaverine is not approved by the FDA, European Medicines Agency, or Health Can
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 08:55 | 1:10 | 0/0/0 | 0/0/0 | 0/0/0 | 12,742/1,119 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-29 21:46 | 0:43 | 0/0/0 | 0/0/0 | 0/0/0 | 1,598/166 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -62,7 +62,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Vargay_1984.pdf` | Vargay Z et al., The fate of drotaverine-acephyllinate i…, European journal of drug me… (1984) | popPK | 9 | [10.1007/BF03189602](https://doi.org/10.1007/BF03189602) | [6546919](https://pubmed.ncbi.nlm.nih.gov/6546919) | The paper describes a human PK study of drotaverine with a compartmental model, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence. |
 | `Kapui_1992.pdf` | Kapui Z et al., Comparative studies of drotaverine--ace…, Thrombosis research (1992) | pd | 4 | [10.1016/0049-3848(92)90045-c](https://doi.org/10.1016/0049-3848(92)90045-c) | [1519228](https://www.ncbi.nlm.nih.gov/pubmed/1519228) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T08:55:09.105272+00:00</sub>
+<sub>queue written 2026-09-29T21:46:40.920868+00:00</sub>
 
 ## Screened and excluded
 

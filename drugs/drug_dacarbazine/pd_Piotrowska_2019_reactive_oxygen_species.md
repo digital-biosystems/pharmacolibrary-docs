@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cisplatin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (0.15–10 µM) acts on proliferation of A375 melanoma cells measured by SRB assay, with 10 µM dacarbazine decreasing proliferation by ~50% (relative IC50 values reported for 24 and 48 h exposure); the paper states dacarbazine is known to produce reactive oxygen species but does not describe a formal PD model or give mechanism parameters such as Imax, IC50 in a model sense, kin, kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Piotrowska_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,24 +31,24 @@ Piotrowska A; Wierzbicka J; Rybarczyk A; Tuckey RC; Slominski AT; Żmijewski MA 
   ·  DOI: [10.3892/ijo.2019.4725](https://doi.org/10.3892/ijo.2019.4725)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 24 — Relative IC 50 | `Q322` · not captured | 0.017 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col2 |
-| 24 — Relative IC 50 | `Q322` · not captured | 0.011 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col3 |
-| 24 — Relative IC 50 | `Q322` · not captured | 0.013 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col4 |
-| 24 — Relative IC 50 | `Q322` · not captured | 0.017 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col5 |
-| 24 — Relative IC 50 | `Q322` · not captured | 0.012 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col6 |
-| 24 — Relative IC 50 | `Q322` · not captured | 4.81 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row3:col2 |
-| 24 — Relative IC 50 | `Q322` · not captured | 9.37 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row3:col5 |
-| 48 — Relative IC 50 | `Q322` · not captured | 2.57 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col2 |
-| 48 — Relative IC 50 | `Q322` · not captured | 1.97 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col3 |
-| 48 — Relative IC 50 | `Q322` · not captured | 3.47 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col4 |
-| 48 — Relative IC 50 | `Q322` · not captured | 3.71 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col5 |
-| 48 — Relative IC 50 | `Q322` · not captured | 2.13 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col6 |
-| 48 — Relative IC 50 | `Q322` · not captured | 1.07 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col2 |
-| 48 — Relative IC 50 | `Q322` · not captured | 1.17 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col4 |
-| 48 — Relative IC 50 | `Q322` · not captured | 1.04 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col5 |
-| 48 — Relative IC 50 | `Q322` · not captured | 0.85 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 0.017 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col2 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 0.011 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col3 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 0.013 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col4 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 0.017 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col5 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 0.012 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row2:col6 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 4.81 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row3:col2 |
+| PD (effect) | 24 — Relative IC 50 | `Q322` · not captured | 9.37 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row3:col5 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 2.57 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col2 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 1.97 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col3 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 3.47 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col4 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 3.71 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col5 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 2.13 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row4:col6 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 1.07 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col2 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 1.17 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col4 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 1.04 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col5 |
+| PD (effect) | 48 — Relative IC 50 | `Q322` · not captured | 0.85 | h | not captured | llm (not captured) | tII-ijo-54-04-1481:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

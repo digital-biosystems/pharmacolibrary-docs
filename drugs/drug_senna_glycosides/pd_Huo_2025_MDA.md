@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sennoside A (measured concentrations) drives MDA level (in absorbance) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sennoside A (25, 50, 100 µM) concentration-dependently elevated MDA levels (measured by absorbance at 532 nm) in SCC7 and CAL27 OSCC cells as part of a ferroptosis-inducing effect (via GPX4/xCT downregulation and NF-κB pathway inhibition); the paper does not report a pharmacodynamic model for MDA, and no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for this response (the reported IC50 values of 77.41 µM in SCC7 and 94.38 µM in CAL27 refer to cell viability, not MDA). Note: the paper describes SA as increasing MDA, not inhibiting it.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

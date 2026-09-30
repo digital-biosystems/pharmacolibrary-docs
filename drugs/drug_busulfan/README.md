@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022_pediatric stem cell transplantation recipients](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | — (no model) | 0 | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lawson_2022_pediatric stem cell transplantation recipients](drugs/drug_busulfan/Busulfan_Lawson2022_pediatric_stem_cell_transplantation_reci.md) | — | — (no model) | 0 | Lawson R et al., Population pharmacokinetic model for on…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12809](https://doi.org/10.1002/psp4.12809) |
 
 ## Pharmacogenomics (PGx)
 

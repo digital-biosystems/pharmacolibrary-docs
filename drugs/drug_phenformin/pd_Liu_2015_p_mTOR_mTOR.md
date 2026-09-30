@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives p-mTOR/mTOR ratio (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin concentrations (0–4 mM) were applied to breast cancer cells for 24 h, and the p-mTOR/mTOR ratio was measured by western blot as a continuous response; the paper does not state a PD model or mechanism for this ratio. The only potency values given are cell-viability IC50s of 1.184 mM (MCF7), 0.665 mM (ZR-75-1), 2.347 mM (MDA-MB-231) and 1.885 mM (SUM1315), which were the concentrations used for the p-mTOR/mTOR measurements.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

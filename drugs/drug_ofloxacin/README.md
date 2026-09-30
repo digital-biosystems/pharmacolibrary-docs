@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Fillastre_1987_reference](drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_reference.md) | 1-compartment, oral | 4 | Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Fillastre_1987_reference](drugs/drug_ofloxacin/Ofloxacin_Fillastre1987_reference.md) | held back | 1-compartment, oral | 4 | Fillastre JP et al., Ofloxacin pharmacokinetics in renal fai…, Antimicrobial agents and ch… (1987) | [10.1128/AAC.31.2.156](https://doi.org/10.1128/AAC.31.2.156) |
 
 ## ADME sites
 

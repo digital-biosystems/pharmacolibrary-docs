@@ -21,15 +21,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_reference](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | 1-compartment (no model) | 0 | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Albers_1988_reference](drugs/drug_alanyl_glutamine/AlanylGlutamine_Albers1988_reference.md) | — | 1-compartment (no model) | 0 | Albers S et al., Availability of amino acids supplied in…, Clinical science (London, E… (1988) | [10.1042/cs0750463](https://doi.org/10.1042/cs0750463) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Momin_2022](drugs/drug_alanyl_glutamine/pd_Momin_2022_FA.md) | Momin N et al., Maximizing response to intratumoral imm…, Nature communications (2022) | [10.1038/s41467-021-27390-6](https://doi.org/10.1038/s41467-021-27390-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Momin_2022_FA](drugs/drug_alanyl_glutamine/pd_Momin_2022_FA.md) | Fractional Activity ← Intratumoral IL-2 Fusion Protein · direct Emax (saturable) effect | — | Momin N et al., Maximizing response to intratumoral imm…, Nature communications (2022) | [10.1038/s41467-021-27390-6](https://doi.org/10.1038/s41467-021-27390-6) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

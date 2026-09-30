@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium oxide nanoparticles (measured concentrations) drives antiviral effect (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism for the antiviral effect; it only reports that MgO nanoparticles (tested up to the maximum non-toxic concentration of 62.5 µg/mL in Vero cells) showed dose-dependent antiviral activity of 84.7% against HAV and 49.7% against HSV-1 in an MTT assay, with no Imax, IC50/EC50, or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Selim_2025_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

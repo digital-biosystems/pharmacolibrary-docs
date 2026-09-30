@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sarafloxacin (measured concentrations) drives name (in log CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Sarafloxacin ex vivo serum exposure (PK/PD indices such as AUC0-24h/MIC, in h) was related to the log10 difference in E. coli O78 bacterial counts (log CFU/mL) using a sigmoid Emax model in which the drug inhibits bacterial growth; the paper does not describe a turnover (inhibitory production/elimination) mechanism. Key exposure targets stated: AUC0-24h/MIC of 25.4 h for bacteriostatic action, 40.6 h for bactericidal activity, and 94.5 h for eradication, with observed AUC0-24h/MIC of 33.4 ± 4.44 h and Cmax/MIC of 8.12 ± 2.92.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

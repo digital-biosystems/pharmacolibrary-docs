@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ['Ni(HL)(acetate)'] (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> [Ni(HL)(acetate)] (oxyquinoline-derived nickel complex) was tested in a wound-healing assay on CT-26 and HCT-116 colon cancer cells at concentrations near each compound's IC50; in HCT-116 it significantly inhibited cell migration, with wound closure reaching a maximum of 32% at 22 h (vs 22% for [Ru(HL)Cl(DMSO)]), while no significant effect was seen in CT-26. The paper does not state a pharmacodynamic mechanism (e.g., kin/kout or Emax model) for the antimigratory effect, and the listed IC50 values (2.7–43.8 μM) are antiproliferative potencies, not migration IC50s.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ribeiro_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,14 +29,14 @@
 not matched (stem Ribeiro_2022)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 11.0 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col1 |
-| CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 21.0 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col2 |
-| CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 2.7 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col3 |
-| HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 8.6 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col1 |
-| HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 16.6 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col2 |
-| HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 43.8 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 11.0 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col1 |
+| PD (effect) | CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 21.0 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col2 |
+| PD (effect) | CT-26 — IC50 (µM) ± SD | `Q322` · not captured | 2.7 | μM | not captured | llm_corrected (not captured) | pharmaceutics-14-02583-t005:row2:col3 |
+| PD (effect) | HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 8.6 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col1 |
+| PD (effect) | HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 16.6 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col2 |
+| PD (effect) | HCT-116 — IC50 (µM) ± SD | `Q322` · not captured | 43.8 | μM | not captured | llm (not captured) | pharmaceutics-14-02583-t005:row3:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

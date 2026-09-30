@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glibenclamide (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In vitro, glibenclamide (record lists glimepiride as drug, but the fitted concentrations and EC50 values correspond to glibenclamide) concentration-dependently reduced protein content/muscle weight in isolated mouse skeletal muscle fibers after 24 h incubation, fitted with a sigmoid Emax inhibitory model; the paper attributes the effect to blockade of the sarcolemmal KATP channel. Potency/efficacy values include EC50 of 8.84 × 10−6 mol/L in FDB (66.6 and 91.1 × 10−6 mol/L in EDL and SOL) with Emax of −56.36% (FDB), −33.12% (EDL), and −35.52% (SOL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mele_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,47 +31,47 @@ Mele A; Calzolaro S; Cannone G; Cetrone M; Conte D; Tricarico D et al. (2014). P
   ·  DOI: [10.1002/prp2.28](https://doi.org/10.1002/prp2.28)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (%) — FDB | `Q320` · not captured | -56.36 | not captured | not captured | exact (not captured) | tbl1:row0:col3 |
-| Emax (%) — EDL | `Q320` · not captured | -33.12 | not captured | not captured | exact (not captured) | tbl1:row0:col4 |
-| Emax (%) — SOL | `Q320` · not captured | -35.52 | not captured | not captured | exact (not captured) | tbl1:row0:col5 |
-| Emax (%) — FDB | `Q320` · not captured | -47.08 | not captured | not captured | exact (not captured) | tbl1:row0:col7 |
-| Emax (%) — EDL | `Q320` · not captured | -18.8 | not captured | not captured | exact (not captured) | tbl1:row0:col8 |
-| Emax (%) — SOL | `Q320` · not captured | -26.56 | not captured | not captured | exact (not captured) | tbl1:row0:col9 |
-| Emax (%) — FDB | `Q320` · not captured | -40.42 | not captured | not captured | exact (not captured) | tbl1:row0:col11 |
-| Emax (%) — EDL | `Q320` · not captured | -28.47 | not captured | not captured | exact (not captured) | tbl1:row0:col12 |
-| Emax (%) — SOL | `Q320` · not captured | -10.1 | not captured | not captured | exact (not captured) | tbl1:row0:col13 |
-| Emax (%) — FDB | `Q320` · not captured | -57.52 | not captured | not captured | exact (not captured) | tbl1:row0:col15 |
-| Emax (%) — EDL | `Q320` · not captured | -39.95 | not captured | not captured | exact (not captured) | tbl1:row0:col16 |
-| Emax (%) — SOL | `Q320` · not captured | -45.72 | not captured | not captured | exact (not captured) | tbl1:row0:col17 |
-| Emax (%) — FDB | `Q320` · not captured | -24.73 | not captured | not captured | exact (not captured) | tbl1:row0:col19 |
-| Emax (%) — EDL | `Q320` · not captured | -35.99 | not captured | not captured | exact (not captured) | tbl1:row0:col20 |
-| Emax (%) — SOL | `Q320` · not captured | -29.52 | not captured | not captured | exact (not captured) | tbl1:row0:col21 |
-| Emax (%) — FDB | `Q320` · not captured | -44.81 | not captured | not captured | exact (not captured) | tbl1:row0:col23 |
-| Emax (%) — EDL | `Q320` · not captured | -5.31 | not captured | not captured | exact (not captured) | tbl1:row0:col24 |
-| Emax (%) — SOL | `Q320` · not captured | -38.81 | not captured | not captured | exact (not captured) | tbl1:row0:col25 |
-| Emin (%) — FDB | `Q38` · not captured | -5.98 | not captured | not captured | llm (not captured) | tbl1:row1:col3 |
-| Emin (%) — FDB | `Q38` · not captured | -1.59 | not captured | not captured | llm (not captured) | tbl1:row1:col7 |
-| Emin (%) — FDB | `Q38` · not captured | -2.39 | not captured | not captured | llm (not captured) | tbl1:row1:col11 |
-| Emin (%) — FDB | `Q38` · not captured | -1.39 | not captured | not captured | llm (not captured) | tbl1:row1:col15 |
-| Emin (%) — FDB | `Q38` · not captured | -2.94 | not captured | not captured | llm (not captured) | tbl1:row1:col19 |
-| Emin (%) — FDB | `Q38` · not captured | -0.63 | not captured | not captured | llm (not captured) | tbl1:row1:col23 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 8.84 | mol/L | not captured | exact (not captured) | tbl1:row2:col3 |
-| EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 66.6 | mol/L | not captured | exact (not captured) | tbl1:row2:col4 |
-| EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 91.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col5 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 107.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col7 |
-| EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 219.2 | mol/L | not captured | exact (not captured) | tbl1:row2:col9 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 29.3 | mol/L | not captured | exact (not captured) | tbl1:row2:col11 |
-| EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 202.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col12 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 5.21 | mol/L | not captured | exact (not captured) | tbl1:row2:col15 |
-| EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 139.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col16 |
-| EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 71.5 | mol/L | not captured | exact (not captured) | tbl1:row2:col17 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 161.2 | mol/L | not captured | exact (not captured) | tbl1:row2:col19 |
-| EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 110.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col20 |
-| EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 180.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col21 |
-| EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 113.3 | mol/L | not captured | exact (not captured) | tbl1:row2:col23 |
-| EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 151.5 | mol/L | not captured | exact (not captured) | tbl1:row2:col25 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -56.36 | not captured | not captured | exact (not captured) | tbl1:row0:col3 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -33.12 | not captured | not captured | exact (not captured) | tbl1:row0:col4 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -35.52 | not captured | not captured | exact (not captured) | tbl1:row0:col5 |
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -47.08 | not captured | not captured | exact (not captured) | tbl1:row0:col7 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -18.8 | not captured | not captured | exact (not captured) | tbl1:row0:col8 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -26.56 | not captured | not captured | exact (not captured) | tbl1:row0:col9 |
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -40.42 | not captured | not captured | exact (not captured) | tbl1:row0:col11 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -28.47 | not captured | not captured | exact (not captured) | tbl1:row0:col12 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -10.1 | not captured | not captured | exact (not captured) | tbl1:row0:col13 |
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -57.52 | not captured | not captured | exact (not captured) | tbl1:row0:col15 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -39.95 | not captured | not captured | exact (not captured) | tbl1:row0:col16 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -45.72 | not captured | not captured | exact (not captured) | tbl1:row0:col17 |
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -24.73 | not captured | not captured | exact (not captured) | tbl1:row0:col19 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -35.99 | not captured | not captured | exact (not captured) | tbl1:row0:col20 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -29.52 | not captured | not captured | exact (not captured) | tbl1:row0:col21 |
+| PD (effect) | Emax (%) — FDB | `Q320` · not captured | -44.81 | not captured | not captured | exact (not captured) | tbl1:row0:col23 |
+| PD (effect) | Emax (%) — EDL | `Q320` · not captured | -5.31 | not captured | not captured | exact (not captured) | tbl1:row0:col24 |
+| PD (effect) | Emax (%) — SOL | `Q320` · not captured | -38.81 | not captured | not captured | exact (not captured) | tbl1:row0:col25 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -5.98 | not captured | not captured | llm (not captured) | tbl1:row1:col3 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -1.59 | not captured | not captured | llm (not captured) | tbl1:row1:col7 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -2.39 | not captured | not captured | llm (not captured) | tbl1:row1:col11 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -1.39 | not captured | not captured | llm (not captured) | tbl1:row1:col15 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -2.94 | not captured | not captured | llm (not captured) | tbl1:row1:col19 |
+| PK (driver) | Emin (%) — FDB | `Q38` · not captured | -0.63 | not captured | not captured | llm (not captured) | tbl1:row1:col23 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 8.84 | mol/L | not captured | exact (not captured) | tbl1:row2:col3 |
+| PD (effect) | EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 66.6 | mol/L | not captured | exact (not captured) | tbl1:row2:col4 |
+| PD (effect) | EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 91.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col5 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 107.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col7 |
+| PD (effect) | EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 219.2 | mol/L | not captured | exact (not captured) | tbl1:row2:col9 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 29.3 | mol/L | not captured | exact (not captured) | tbl1:row2:col11 |
+| PD (effect) | EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 202.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col12 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 5.21 | mol/L | not captured | exact (not captured) | tbl1:row2:col15 |
+| PD (effect) | EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 139.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col16 |
+| PD (effect) | EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 71.5 | mol/L | not captured | exact (not captured) | tbl1:row2:col17 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 161.2 | mol/L | not captured | exact (not captured) | tbl1:row2:col19 |
+| PD (effect) | EC50 (10−6 mol/L) — EDL | `Q321` · not captured | 110.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col20 |
+| PD (effect) | EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 180.1 | mol/L | not captured | exact (not captured) | tbl1:row2:col21 |
+| PD (effect) | EC50 (10−6 mol/L) — FDB | `Q321` · not captured | 113.3 | mol/L | not captured | exact (not captured) | tbl1:row2:col23 |
+| PD (effect) | EC50 (10−6 mol/L) — SOL | `Q321` · not captured | 151.5 | mol/L | not captured | exact (not captured) | tbl1:row2:col25 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

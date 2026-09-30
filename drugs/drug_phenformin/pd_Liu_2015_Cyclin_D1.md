@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives Cyclin D1 expression (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin (0–4 mM, 24 h) decreased cyclin D1 protein expression (western blot, ratio) in MCF7, ZR-75-1, MDA-MB-231 and SUM1315 breast cancer cells, each treated at its own IC50 (1.184, 0.665, 2.347 and 1.885 mM, respectively); the paper does not state a quantitative PD model or mechanism for the cyclin D1 response, only suggesting phenformin-induced G1 arrest is partly due to cyclin D1 downregulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Proscillaridin A drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Proscillaridin A (Pro A) concentrations inhibited pancreatic cancer cell proliferation (CCK-8, 72 h) with IC50 values of 35.25 nM (Panc-1), 180.3 nM (BxPC-3) and 370.9 nM (AsPC-1); ROS generation was measured by flow cytometry as a downstream response, but the paper does not state a pharmacodynamic model or mechanism linking Pro A concentrations to ROS, and no Imax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hou_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

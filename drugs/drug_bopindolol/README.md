@@ -32,9 +32,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Aellig_1986_reference](drugs/drug_bopindolol/Bopindolol_Aellig1986_reference.md) | — | 1-compartment (no model) | 2 | Aellig WH et al., Relationship between plasma concentrati…, British journal of clinical… (1986) | [10.1111/j.1365-2125.1986.tb02821.x](https://doi.org/10.1111/j.1365-2125.1986.tb02821.x) |
 
 ## ADME sites
 

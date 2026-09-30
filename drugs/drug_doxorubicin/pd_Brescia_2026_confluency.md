@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives phase confluency area (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (1 μM treatment cycles) reduces phase confluency (%) in hiPSC-CM cultures, with faster onset of cell death in triple co-cultures than in hiPSC-CM monocultures; the paper does not state a quantitative PD mechanism or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brescia_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

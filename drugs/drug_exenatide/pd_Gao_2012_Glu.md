@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exendin-4 (measured concentrations) drives glucose (in mmol/l): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Exendin-4 (exenatide), acting as a GLP-1 receptor agonist, was modeled with a glucose-insulin feedback system in which glucose stimulates insulin secretion (linear factor S_Glu) and insulin stimulates glucose uptake (linear factor S_Ins), each described by indirect response models with zero-order inputs (k_inG = k_outG·G_b, k_inI = k_outI·I_b) and first-order outputs (k_outG, k_outI); exendin-4's insulinotropic effect was integrated into this system, with its disposition described by a target-mediated drug disposition (TMDD) model. The excerpts do not report specific potency values (e.g., IC50, Emax) or rate constants for the glucose response itself, and the exact effect form on glucose is n
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gao_2012`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

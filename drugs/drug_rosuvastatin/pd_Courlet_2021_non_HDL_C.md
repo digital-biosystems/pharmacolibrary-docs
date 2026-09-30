@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rosuvastatin (concentrations from this paper's PK model) drives non-HDL-cholesterol (in mmol/L): indirect response — drug inhibits the production of non-HDL-cholesterol.
+
+**Model:** No model was generated from this record.
+
+> Rosuvastatin plasma concentrations (ng·h/mL from the PK model) inhibit the production of non-HDL-cholesterol in an indirect response (Type I) model, with kout = kin/baseline; the paper does not report numerical values for kin, kout or IC50, noting only large between-subject variability in IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Courlet_2021`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

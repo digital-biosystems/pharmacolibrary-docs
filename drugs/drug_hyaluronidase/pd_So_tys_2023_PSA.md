@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sorbus intermedia terpenoids (measured concentrations) drives PSA secretion (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sorbus intermedia terpenoids (e.g., UA, UAL, AUA, βSIT) reduced testosterone-stimulated PSA secretion in PNT2 cells to 76–86% at the highest concentrations (tested at 10 and 20 µg/mL), reversing the stimulatory effect of testosterone, but the paper states no IC50, Emax, or mechanism for this response and notes no strict dose–effect relationship. The IC50 of 8.61 µg/mL in the record refers to albumin denaturation inhibition, not PSA secretion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sołtys_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Sołtys A; Galanty A; Grabowska K; Paśko P; Zagrodzki P; Podolak I et al. (2023
   ·  DOI: [10.3390/ph16070965](https://doi.org/10.3390/ph16070965)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Albumin Denaturation Inhibition (%) | `Q322` · not captured | 8.61 | µg/mL | not captured | exact (not captured) | pharmaceuticals-16-00965-t001:row11:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Albumin Denaturation Inhibition (%) | `Q322` · not captured | 8.61 | µg/mL | not captured | exact (not captured) | pharmaceuticals-16-00965-t001:row11:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

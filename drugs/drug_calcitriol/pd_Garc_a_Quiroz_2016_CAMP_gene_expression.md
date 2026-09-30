@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Calcitriol (measured concentrations) drives name (in mRNA (normalized to ACTB)): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Calcitriol (nM concentrations) directly stimulates CAMP mRNA expression (normalized to ACTB) in breast cancer cell lines in a dose-dependent Emax manner; the paper does not describe an indirect production/elimination mechanism. EC50 values: HCC1806 2.13 nM, MCF7 4.42 nM, BT-474 14.6 nM, HCC1937 16.3 nM, IDC 17.1 nM, SUM-229PE 70.8 nM, with efficacy lower in ERα+ cells (&lt;10-fold) than ERα- cells (&gt;70-fold, up to &gt;200-fold in SUM-229PE).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `García-Quiroz_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ García-Quiroz J; García-Becerra R; Santos-Martínez N; Avila E; Larrea F; Día
   ·  DOI: [10.1186/s12929-016-0298-4](https://doi.org/10.1186/s12929-016-0298-4)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| HCC1806 — EC50 (nM) | `Q321` · not captured | 2.13 | nM | not captured | llm (not captured) | Tab3:row1:col1 |
-| MCF7 — EC50 (nM) | `Q321` · not captured | 4.42 | nM | not captured | llm (not captured) | Tab3:row2:col1 |
-| BT-474 — EC50 (nM) | `Q321` · not captured | 14.6 | nM | not captured | llm (not captured) | Tab3:row3:col1 |
-| HCC1937 — EC50 (nM) | `Q321` · not captured | 16.3 | nM | not captured | llm (not captured) | Tab3:row4:col1 |
-| IDC — EC50 (nM) | `Q321` · not captured | 17.1 | nM | not captured | llm (not captured) | Tab3:row5:col1 |
-| SUM-229PE — EC50 (nM) | `Q321` · not captured | 70.8 | nM | not captured | llm (not captured) | Tab3:row6:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | HCC1806 — EC50 (nM) | `Q321` · not captured | 2.13 | nM | not captured | llm (not captured) | Tab3:row1:col1 |
+| PD (effect) | MCF7 — EC50 (nM) | `Q321` · not captured | 4.42 | nM | not captured | llm (not captured) | Tab3:row2:col1 |
+| PD (effect) | BT-474 — EC50 (nM) | `Q321` · not captured | 14.6 | nM | not captured | llm (not captured) | Tab3:row3:col1 |
+| PD (effect) | HCC1937 — EC50 (nM) | `Q321` · not captured | 16.3 | nM | not captured | llm (not captured) | Tab3:row4:col1 |
+| PD (effect) | IDC — EC50 (nM) | `Q321` · not captured | 17.1 | nM | not captured | llm (not captured) | Tab3:row5:col1 |
+| PD (effect) | SUM-229PE — EC50 (nM) | `Q321` · not captured | 70.8 | nM | not captured | llm (not captured) | Tab3:row6:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

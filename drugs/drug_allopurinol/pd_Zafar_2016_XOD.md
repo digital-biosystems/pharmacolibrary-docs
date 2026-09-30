@@ -14,6 +14,8 @@
 
 **As extracted:** 2-Arylquinazolin-4(3H)-ones drives xanthine oxidase activity (in unknown): direct Emax (saturable) effect.
 
+**Model:** No model was generated from this record.
+
 - **paper:** `Zafar_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

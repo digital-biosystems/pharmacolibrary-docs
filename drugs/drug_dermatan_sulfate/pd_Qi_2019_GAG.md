@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vestronidase alfa drives urinary GAGs (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vestronidase alfa serum exposure (AUC-type, µg·h/mL) was related to the percentage reduction from baseline in urinary dermatan sulfate (and chondroitin sulfate) via an inhibitory Emax model: IC50 was 7.3 µg·h/mL for uDS (8.6 for uCS) and Imax 76.9% for uDS (82.0% for uCS), with interindividual variability on Imax (8.7%, RSE 8.7%). The paper does not state a turnover (kin/kout) or effect-compartment mechanism, only that the inhibitory maximal-effect model described the exposure–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qi_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,16 +30,16 @@ Qi Y; McKeever K; Taylor J; Haller C; Song W; Jones SA; Shi J et al. (2019). Cli
   ·  DOI: [10.1007/s40262-018-0721-y](https://doi.org/10.1007/s40262-018-0721-y)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC 50 , µg h/mL — Point estimate (relative standard error) | `Q322` · not captured | 8.6 | relative standard error | not captured | llm (not captured) | tab_3:row3:col1 |
-| IC 50 , µg h/mL | `Q322` · not captured | 7.3 | unknown | not captured | llm (not captured) | tab_3:row3:col2 |
-| I max , percent — Point estimate (relative standard error) | `Q323` · not captured | 82.0 | relative standard error | not captured | llm (not captured) | tab_3:row4:col1 |
-| I max , percent | `Q323` · not captured | 76.9 | not captured | not captured | llm (not captured) | tab_3:row4:col2 |
-| Interindividual variability — Point estimate (relative standard error) | `Q312` · not captured | 7.9 | relative standard error | not captured | exact (not captured) | tab_3:row5:col1 |
-| Interindividual variability | `Q312` · not captured | 8.7 | not captured | not captured | exact (not captured) | tab_3:row5:col2 |
-| Additive residual error — Point estimate (relative standard error) | `Q317` · not captured | 6.1 | relative standard error | not captured | exact (not captured) | tab_3:row7:col1 |
-| Additive residual error | `Q317` · not captured | 6.4 | not captured | not captured | exact (not captured) | tab_3:row7:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC 50 , µg h/mL — Point estimate (relative standard error) | `Q322` · not captured | 8.6 | relative standard error | not captured | llm (not captured) | tab_3:row3:col1 |
+| PD (effect) | IC 50 , µg h/mL | `Q322` · not captured | 7.3 | unknown | not captured | llm (not captured) | tab_3:row3:col2 |
+| PD (effect) | I max , percent — Point estimate (relative standard error) | `Q323` · not captured | 82.0 | relative standard error | not captured | llm (not captured) | tab_3:row4:col1 |
+| PD (effect) | I max , percent | `Q323` · not captured | 76.9 | not captured | not captured | llm (not captured) | tab_3:row4:col2 |
+| variability | Interindividual variability — Point estimate (relative standard error) | `Q312` · not captured | 7.9 | relative standard error | not captured | exact (not captured) | tab_3:row5:col1 |
+| variability | Interindividual variability | `Q312` · not captured | 8.7 | not captured | not captured | exact (not captured) | tab_3:row5:col2 |
+| variability | Additive residual error — Point estimate (relative standard error) | `Q317` · not captured | 6.1 | relative standard error | not captured | exact (not captured) | tab_3:row7:col1 |
+| variability | Additive residual error | `Q317` · not captured | 6.4 | not captured | not captured | exact (not captured) | tab_3:row7:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

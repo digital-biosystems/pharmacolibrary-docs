@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Piperacillin drives name (in CFU/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Piperacillin free concentrations at the infection site (mg/ml, measured by microdialysis) act on E. coli bacterial counts (CFU/ml) via a modified Emax model in which the drug adds a killing term to bacterial growth: dN/dt = k − (kmax·C/(EC50+C))·N, i.e. inhibition of net bacterial numbers. In vivo, the generation rate constant k was 0.76 ± 0.20 h−1, maximum killing effect kmax 1.38 ± 0.20 h−1, and EC50 1.31 ± 0.27 µg/ml (in vitro: k 1.30 ± 0.10 h−1, kmax 3.11 ± 0.27 h−1, EC50 5.44 ± 0.03 µg/ml).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2011`
 - **model family:** `emax`
 - **driver:** `not_resolved`

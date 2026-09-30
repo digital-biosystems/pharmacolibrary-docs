@@ -25,9 +25,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1984_reference](drugs/drug_buflomedil/Buflomedil_Rey1984_reference.md) | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Rey_1984_reference](drugs/drug_buflomedil/Buflomedil_Rey1984_reference.md) | — | 1-compartment (no model) | 2 | Rey E et al., Pharmacokinetics of buflomedil after in…, International journal of cl… (1984) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adipostatin A drives triglyceride accumulation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Adipostatin A inhibits glycerol-3-phosphate dehydrogenase (GPDH), an enzyme central to triglyceride synthesis, with an IC50 of 4.1 µM, and markedly inhibited triglyceride accumulation in 3T3-L1 cells at 5–7.5 µM without cytotoxicity at 7.5 µM; no PD model parameters (Imax, kin, kout, etc.) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsuge_1992`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

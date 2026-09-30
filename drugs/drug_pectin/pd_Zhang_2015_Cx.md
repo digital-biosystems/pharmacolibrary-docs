@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenazine-1-carboxamide (measured concentrations) drives cellulase activity (in U/mg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PCN (phenazine-1-carboxamide, 5–700 μg/mL) concentration-dependently inhibited cellulase (Cx) activity in Botrytis cinerea (measured in U/mg after 48 h), with Cx activity falling to a minimum of 0.79 U/mg at 700 μg/mL; the paper does not state a pharmacodynamic model or potency parameters (Imax/IC50) for Cx, and the overall antifungal EC50 was 108.12 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

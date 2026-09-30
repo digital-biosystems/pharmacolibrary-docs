@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MAGE-A4-TCB (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> MAGE-A4-TCB concentration (nM/µg/mL) drives tumor cell killing (measured via LDH release or caspase 3/7 cleavage) in A375 cells and patient-derived tumor organoids, described by a sigmoid Emax model E = Emax * CTCB^y / (EC50^y + CTCB^y) based on AUCE, with a Hill coefficient y; the paper does not state numeric EC50, Emax, or gamma values, but reports an in vitro PA30 for A375 tumor cell killing of 0.06 µg/mL (the most sensitive readout, versus 0.14 µg/mL for IL6 release), used for MABEL-based FIH dosing, while EC50 and EC90 values from organoid killing informed PAD and ATD projections.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Augustin_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

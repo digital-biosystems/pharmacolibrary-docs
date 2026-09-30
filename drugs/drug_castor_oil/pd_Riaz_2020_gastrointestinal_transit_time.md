@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Manilkara zapota crude extract (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Manilkara zapota crude extract (Mz.Cr) concentration-dependently inhibited gastrointestinal transit (charcoal meal % of small intestine length) in rats at 50, 100 and 300 mg/kg doses, and inhibited spontaneous and K+ (80 mM)-induced rabbit jejunum contractions with EC50 values of 0.11 mg/ml (0.08-0.1, n=4) and 0.16 mg/ml (0.09-0.2, n=4) respectively; the paper suggests a papaverine-like dual mechanism involving calcium channel blockade and PDE inhibition, but gives no Imax, Emax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Riaz_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

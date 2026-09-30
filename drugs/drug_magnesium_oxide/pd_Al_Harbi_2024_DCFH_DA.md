@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bioinspired magnesium oxide nanoparticles (measured concentrations) drives ROS level (HUVECs) (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bioinspired MgO nanoparticles (MgO–neem NPs) were tested against ROS level measured by the DCFH-DA assay in HUVECs (and HepG2) after 24 h exposure, with an inhibitory (free radical scavenging) effect; the paper reports an IC50 of 69.03 μg/mL for free radical scavenging activity but does not state a specific PD model, mechanism, or parameters such as Imax, kin, kout, or gamma for the ROS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Harbi_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

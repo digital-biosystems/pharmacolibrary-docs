@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alg-4-AP3 (measured concentrations) drives Cytotoxicity (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alg-4-AP3 (a 4-aminophenol-modified alginic acid) concentrations inhibit viability of HepG-2 and A-549 cancer cells in vitro (MTT assay, 24 h exposure), with IC50 values of 3.08 μg/mL (HepG-2) and 3.63 μg/mL (A-549); the paper reports only dose-response IC50 values and does not state a pharmacodynamic mechanism or model (no Emax, kin/kout, or ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahmoud_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

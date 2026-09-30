@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bemarituzumab drives FGFR2 phosphorylation (in relative light units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bemarituzumab inhibited FGF7-induced FGFR2 phosphorylation (measured as relative light units by ELISA) in SNU-16 gastric cancer cells in a concentration-dependent manner, with maximum inhibition at concentrations ≥6.25 µg/mL (&gt;95% receptor occupancy); the paper does not state an IC50, Emax, or a formal PD model/mechanism beyond blockade of FGFR2b signaling.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiang_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

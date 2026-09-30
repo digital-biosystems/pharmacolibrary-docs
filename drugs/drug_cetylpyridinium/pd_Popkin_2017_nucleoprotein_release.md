@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives name (in OD 450 nm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride (CPC) concentration (μg/mL) directly disrupts the influenza viral envelope, causing nucleoprotein release (measured as OD 450 nm), a virucidal mechanism independent of viral proteins; EC50 values were 5–12.5 μg/mL for susceptible strains and 8 μg/mL for both oseltamivir-resistant influenza A and B. No Emax, kin/kout, ke0, or Hill coefficient values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Popkin_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

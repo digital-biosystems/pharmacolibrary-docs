@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amlodipine, fasudil, enalapril, propranolol, hydrochlorothiazide, prazosin drive mean arterial pressure (in mmHg): indirect response — drug inhibits the production of mean arterial pressure.
+
+**Model:** No model was generated from this record.
+
+> In the mechanism-based CVS turnover model, hydrochlorothiazide (with the other test compounds) acts on the turnover of cardiac output (CO) and/or total peripheral resistance (TPR), which are linked to mean arterial pressure via MAP = CO × TPR; drug effects were best described by Emax models on the turnover equations (dCO/dt = Kin_CO − kout_CO·CO; dTPR/dt = Kin_TPR − kout_TPR·TPR). The excerpts do not report hydrochlorothiazide-specific potency (Emax, EC50/IC50) or effect-site values, and kout_CO was fixed to 99 h−1; the record labels the effect as inhibition of an indirect response, but the paper does not state the specific mechanism of hydrochlorothiazide in the provided text.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

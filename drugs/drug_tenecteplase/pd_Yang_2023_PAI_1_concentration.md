@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In this mechanistic PK-PD simulation, intravenous tenecteplase concentrations drive the temporal PAI-1 concentration profile in plasma and clot, with PAI-1 depletion occurring through reaction with the plasminogen activator (PAI-1 inhibition resistance), not via an Emax/Imax-type effect; the paper gives no IC50, Emax, kin, kout, ke0, or gamma values. Tenecteplase showed the highest PAI-1 resistance (slowest PAI-1 depletion, remaining about 5×10^5 μM in the clot at complete lysis, versus depletion to about 1×10^-6 μM within minutes for alteplase, reteplase, and urokinase).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remifentanil (measured concentrations) drives hemodynamic stability (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Remifentanil effect-site concentration (ng/ml) was related to the binary probability of hemodynamic stability (SBP and HR increase &lt;20% after nasotracheal intubation with video laryngoscope) via a sigmoid Emax model, P = Ce^γ/(Ce50^γ + Ce^γ); the Ce50 was 3.22 ng/ml (RSE 4.6%) and the Ce95 was 4.25 ng/ml. The paper does not state γ or any mechanism beyond this direct concentration–probability relation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoon_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Yoon JY; Park CG; Kim EJ; Choi BM; Yoon JU; Kim YH; Lee MO; Han KS; Ahn JH et al
   ·  DOI: [10.17245/jdapm.2020.20.4.195](https://doi.org/10.17245/jdapm.2020.20.4.195)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ce50 (ng/ml) — Estimates (SE) | `Q321` · not captured | 3.22 | ng/ml | not captured | llm (not captured) | T3:row1:col1 |
-| Ce50 (ng/ml) — RSE (%) | `Q321` · not captured | 4.6 | ng/ml | not captured | llm (not captured) | T3:row1:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ce50 (ng/ml) — Estimates (SE) | `Q321` · not captured | 3.22 | ng/ml | not captured | llm (not captured) | T3:row1:col1 |
+| PD (effect) | Ce50 (ng/ml) — RSE (%) | `Q321` · not captured | 4.6 | ng/ml | not captured | llm (not captured) | T3:row1:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan drives coronary flow (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes an Emax stimulation model in which amrinone concentrations increase coronary flow (CF, %) in isolated hearts, attributed in the paper to PDE-inhibition-related coronary vasodilatation; however, the excerpts provide no fitted potency or rate parameters (no EC50, Emax, kin, kout or ke0 values) for this relationship, and the record itself does not resolve the driver or effect form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rump_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

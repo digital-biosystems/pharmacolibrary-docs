@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Poseltinib (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Poseltinib concentrations (ng/ml) act on BTK phosphorylation (%) in PBMCs/splenocytes as a direct inhibitory Emax effect (inhibition of BTK phosphorylation/target occupancy), with the record listing Emax-model parameters 8.5, 6.7 and 2.7 (units not stated verbatim); the paper describes dose- and time-dependent inhibition of BTK phosphorylation but does not explicitly report IC50, Imax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Byun_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,17 +30,17 @@ Byun JY; Koh YT; Jang SY; Witcher JW; Chan JR; Pustilnik A; Daniels MJ; Kim YH; 
   ·  DOI: [10.1038/s41598-021-98255-7](https://doi.org/10.1038/s41598-021-98255-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PD — Poseltinib | `Q358` · not captured | 8.5 | not captured | not captured | llm (not captured) | Tab1:row2:col3 |
-| PD — Poseltinib | `Q358` · not captured | 6.7 | not captured | not captured | llm (not captured) | Tab1:row2:col4 |
-| PD — Poseltinib | `Q358` · not captured | 2.7 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
-| Cmax (ng/ml) — CIA control | `Q32` · not captured | 1.5 | ng/ml | not captured | exact (not captured) | Tab1:row5:col2 |
-| Cmax (ng/ml) — Poseltinib | `Q32` · not captured | 7.3 | ng/ml | not captured | exact (not captured) | Tab1:row5:col3 |
-| Cmax (ng/ml) — Poseltinib | `Q32` · not captured | 23.6 | ng/ml | not captured | exact (not captured) | Tab1:row5:col4 |
-| Tmax (hr) — CIA control | `Q56` · not captured | 0.6 | hr | not captured | exact (not captured) | Tab1:row6:col2 |
-| Tmax (hr) — Poseltinib | `Q56` · not captured | 0.5 | hr | not captured | exact (not captured) | Tab1:row6:col3 |
-| Tmax (hr) — Poseltinib | `Q56` · not captured | 1.4 | hr | not captured | exact (not captured) | Tab1:row6:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | PD — Poseltinib | `Q358` · not captured | 8.5 | not captured | not captured | llm (not captured) | Tab1:row2:col3 |
+| PK (driver) | PD — Poseltinib | `Q358` · not captured | 6.7 | not captured | not captured | llm (not captured) | Tab1:row2:col4 |
+| PK (driver) | PD — Poseltinib | `Q358` · not captured | 2.7 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
+| PK (driver) | Cmax (ng/ml) — CIA control | `Q32` · not captured | 1.5 | ng/ml | not captured | exact (not captured) | Tab1:row5:col2 |
+| PK (driver) | Cmax (ng/ml) — Poseltinib | `Q32` · not captured | 7.3 | ng/ml | not captured | exact (not captured) | Tab1:row5:col3 |
+| PK (driver) | Cmax (ng/ml) — Poseltinib | `Q32` · not captured | 23.6 | ng/ml | not captured | exact (not captured) | Tab1:row5:col4 |
+| PK (driver) | Tmax (hr) — CIA control | `Q56` · not captured | 0.6 | hr | not captured | exact (not captured) | Tab1:row6:col2 |
+| PK (driver) | Tmax (hr) — Poseltinib | `Q56` · not captured | 0.5 | hr | not captured | exact (not captured) | Tab1:row6:col3 |
+| PK (driver) | Tmax (hr) — Poseltinib | `Q56` · not captured | 1.4 | hr | not captured | exact (not captured) | Tab1:row6:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mentha spicata essential oil nanogel (measured concentrations) drives Antioxidant activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports DPPH antioxidant activity (%) of Mentha spicata essential oil nanogel tested at serial dilutions of 62.5–1000 µg/mL (30 min incubation, OD read at 517 nm), with the nanogel significantly more potent than the unformulated oil; however, no pharmacodynamic model, mechanism, or potency/rate parameters (e.g., IC50, Emax, kin, kout) are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rasti_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

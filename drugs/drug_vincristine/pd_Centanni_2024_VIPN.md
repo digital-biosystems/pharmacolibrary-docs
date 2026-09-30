@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vincristine (concentrations from this paper's PK model) drives Vincristine-induced peripheral neuropathy (VIPN) (in CTCAE grade): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Vincristine AUC (ng·h/mL) of each dosing cycle drives the probability of VIPN (CTCAE grade 0, 1, ≥2) in a proportional odds model with Markovian elements, where the preceding VIPN score predicts the next; an effect compartment did not improve fit, and no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given. A target AUC of 50 ng·h/mL was established to keep the probability of Grade ≥2 VIPN over five dosing occasions below 40%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Centanni_2024`
 - **model family:** `categorical`
 - **driver:** `pk_record`

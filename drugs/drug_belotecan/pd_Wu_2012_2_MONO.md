@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Encapsulated CKD-602 (measured concentrations) drives monocytes (in 10^9/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Encapsulated CKD-602 (S-CKD602, μg/L) drives monocytopenia (monocyte count, 10^9/L) in a mechanism-based model with bidirectional interaction: monocytes phagocytose the liposome (association rate ka, plus first-order degradation kdeg), and the drug directly kills monocytes, described by an inhibitory Emax effect on monocyte production/turnover with Emax 0.64 and EC50 355 μg/L (IIV CV% 146), and transit rate ktr 0.0774 1/h; monocyte production kin equals kout times baseline. The paper states the mechanism as direct cytotoxicity to monocytes (with an alternative myelosuppression model using Michaelis–Menten PK, Vmax 95.5 μg/h, km 877 μg/L), but the excerpts do not give the numeric PD parameter
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2012_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -19,18 +29,18 @@
 not matched (stem Wu_2012_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| VEncap (L) — Population mean RSEa (%) | `Q61` · not captured | 3.46 | L | not captured | llm (not captured) | t1-ijn-7-5555:row1:col2 |
-| VEncap (L) — IIVb, CV%c RSEa (%) | `Q61` · not captured | 70.9 | L | not captured | llm (not captured) | t1-ijn-7-5555:row1:col3 |
-| Vmax (μg/h) — Population mean RSEa (%) | `Q66` · not captured | 95.5 | μg/h | not captured | special_case (not captured) | t1-ijn-7-5555:row2:col2 |
-| Vmax (μg/h) — IIVb, CV%c RSEa (%) | `Q66` · not captured | 234 | μg/h | not captured | special_case (not captured) | t1-ijn-7-5555:row2:col3 |
-| km (μg/L) — Population mean RSEa (%) | `Q1` · not captured | 877 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row3:col2 |
-| Mono0 (109/L) — IIVb, CV%c RSEa (%) | `Q312` · not captured | 35.5 | not captured | not captured | llm (not captured) | t1-ijn-7-5555:row4:col3 |
-| ktr (1/h) — Population mean RSEa (%) | `Q306` · not captured | 0.0774 | not captured | not captured | exact (not captured) | t1-ijn-7-5555:row5:col2 |
-| Emax — Population mean RSEa (%) | `Q320` · not captured | 0.64 | not captured | not captured | exact (not captured) | t1-ijn-7-5555:row6:col2 |
-| EC50 (μg/L) — Population mean RSEa (%) | `Q321` · not captured | 355 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row7:col2 |
-| EC50 (μg/L) — IIVb, CV%c RSEa (%) | `Q321` · not captured | 146 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | VEncap (L) — Population mean RSEa (%) | `Q61` · not captured | 3.46 | L | not captured | llm (not captured) | t1-ijn-7-5555:row1:col2 |
+| PK (driver) | VEncap (L) — IIVb, CV%c RSEa (%) | `Q61` · not captured | 70.9 | L | not captured | llm (not captured) | t1-ijn-7-5555:row1:col3 |
+| PK (driver) | Vmax (μg/h) — Population mean RSEa (%) | `Q66` · not captured | 95.5 | μg/h | not captured | special_case (not captured) | t1-ijn-7-5555:row2:col2 |
+| PK (driver) | Vmax (μg/h) — IIVb, CV%c RSEa (%) | `Q66` · not captured | 234 | μg/h | not captured | special_case (not captured) | t1-ijn-7-5555:row2:col3 |
+| PK (driver) | km (μg/L) — Population mean RSEa (%) | `Q1` · not captured | 877 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row3:col2 |
+| variability | Mono0 (109/L) — IIVb, CV%c RSEa (%) | `Q312` · not captured | 35.5 | not captured | not captured | llm (not captured) | t1-ijn-7-5555:row4:col3 |
+| PK (driver) | ktr (1/h) — Population mean RSEa (%) | `Q306` · not captured | 0.0774 | not captured | not captured | exact (not captured) | t1-ijn-7-5555:row5:col2 |
+| PD (effect) | Emax — Population mean RSEa (%) | `Q320` · not captured | 0.64 | not captured | not captured | exact (not captured) | t1-ijn-7-5555:row6:col2 |
+| PD (effect) | EC50 (μg/L) — Population mean RSEa (%) | `Q321` · not captured | 355 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row7:col2 |
+| PD (effect) | EC50 (μg/L) — IIVb, CV%c RSEa (%) | `Q321` · not captured | 146 | μg/L | not captured | exact (not captured) | t1-ijn-7-5555:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

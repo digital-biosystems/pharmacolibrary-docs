@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Operculina turpethum black variety (OTB) crude extract (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated rabbit jejunum, the crude extract of Operculina turpethum black variety (OTB) concentration-dependently inhibited high K+ (80 mM)-induced contractions (measured as % inhibition), with an EC50 of 0.12 mg/ml (95% CI 0.10–0.15; n = 4), being more potent than against spontaneous contractions (EC50 1.04 mg/ml, 0.59–1.54); the paper does not state a formal PD model or mechanism parameters (no Imax, kin, kout, ke0), though the K+ preference suggests a calcium-channel-blocking (verapamil-like) action.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shareef_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

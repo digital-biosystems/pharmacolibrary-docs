@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-desmethyl loperamide (M1) (measured concentrations) drives name (in msec): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Loperamide's metabolite N-desmethyl loperamide (M1) concentrations in an effect compartment drive a linear, additive increase in placebo-adjusted ΔΔQTcF (msec), with an intercept of −1.66 msec and a slope of 0.544 msec per ng/mL M1; the equilibration delay 1/ke0 was 10.6 h. A sensitivity analysis using loperamide effect-compartment concentrations gave similar predictions (e.g. 5.46 msec at 48 mg), with mean ΔΔQTcF upper 90% CI limits below 10 msec for both 8 mg and 48 mg doses.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Valenzuela_2025`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -21,28 +31,28 @@ Valenzuela B; Gisleskog PO; Cirillo I; Coenen E; Ariyawansa J; Ali SR; et al. et
   ·  DOI: [10.1111/cts.70114](https://doi.org/10.1111/cts.70114)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F (L/h) — Loperamide | `Q27` · not captured | 293 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row2:col1 |
-| CL/F (L/h) — M1 | `Q27` · not captured | 52.4 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row2:col5 |
-| Vc/F (L) — Loperamide | `Q290` · not captured | 3380 | L | not captured | exact (not captured) | cts70114-tbl-0001:row3:col1 |
-| Vc/F (L) — M1 | `Q290` · not captured | 1650 | L | not captured | exact (not captured) | cts70114-tbl-0001:row3:col5 |
-| Vp/F (L) — Loperamide | `Q82` · not captured | 1770 | L | not captured | exact (not captured) | cts70114-tbl-0001:row4:col1 |
-| Vp/F (L) — M1 | `Q82` · not captured | 805 | L | not captured | exact (not captured) | cts70114-tbl-0001:row4:col5 |
-| Q/F (L/h) — Loperamide | `Q69` · not captured | 219 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row5:col1 |
-| Q/F (L/h) — M1 | `Q69` · not captured | 96.4 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row5:col5 |
-| k a 8 mg (h−1) — Loperamide | `Q49` · not captured | 1.19 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row8:col1 |
-| k a 8 mg (h−1) — M1 | `Q49` · not captured | 0.258 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row8:col5 |
-| k a 48 mg (h−1) — Loperamide | `Q49` · not captured | 4.21 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row9:col1 |
-| k a 48 mg (h−1) — M1 | `Q49` · not captured | 0.991 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row9:col5 |
-| Alag 8 mg (h) — Loperamide | `Q83` · not captured | 0.149 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row10:col1 |
-| Alag 8 mg (h) — M1 | `Q83` · not captured | 0.162 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row10:col5 |
-| Alag 48 mg (h) — Loperamide | `Q83` · not captured | 0.271 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row11:col1 |
-| Alag 48 mg (h) — M1 | `Q83` · not captured | 0.376 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row11:col5 |
-| D1 (h) — Loperamide | `Q310` · not captured | 0.551 | h | not captured | exact (not captured) | cts70114-tbl-0001:row12:col1 |
-| D1 (h) — M1 | `Q310` · not captured | 0.714 | h | not captured | exact (not captured) | cts70114-tbl-0001:row12:col5 |
-| Residual error b — Loperamide | `Q315` · not captured | 0.177 | not captured | not captured | llm (not captured) | cts70114-tbl-0001:row13:col1 |
-| Residual error b — M1 | `Q315` · not captured | 0.171 | not captured | not captured | llm (not captured) | cts70114-tbl-0001:row13:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F (L/h) — Loperamide | `Q27` · not captured | 293 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row2:col1 |
+| PK (driver) | CL/F (L/h) — M1 | `Q27` · not captured | 52.4 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row2:col5 |
+| PK (driver) | Vc/F (L) — Loperamide | `Q290` · not captured | 3380 | L | not captured | exact (not captured) | cts70114-tbl-0001:row3:col1 |
+| PK (driver) | Vc/F (L) — M1 | `Q290` · not captured | 1650 | L | not captured | exact (not captured) | cts70114-tbl-0001:row3:col5 |
+| PK (driver) | Vp/F (L) — Loperamide | `Q82` · not captured | 1770 | L | not captured | exact (not captured) | cts70114-tbl-0001:row4:col1 |
+| PK (driver) | Vp/F (L) — M1 | `Q82` · not captured | 805 | L | not captured | exact (not captured) | cts70114-tbl-0001:row4:col5 |
+| PK (driver) | Q/F (L/h) — Loperamide | `Q69` · not captured | 219 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row5:col1 |
+| PK (driver) | Q/F (L/h) — M1 | `Q69` · not captured | 96.4 | L/h | not captured | exact (not captured) | cts70114-tbl-0001:row5:col5 |
+| PK (driver) | k a 8 mg (h−1) — Loperamide | `Q49` · not captured | 1.19 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row8:col1 |
+| PK (driver) | k a 8 mg (h−1) — M1 | `Q49` · not captured | 0.258 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row8:col5 |
+| PK (driver) | k a 48 mg (h−1) — Loperamide | `Q49` · not captured | 4.21 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row9:col1 |
+| PK (driver) | k a 48 mg (h−1) — M1 | `Q49` · not captured | 0.991 | h−1 | not captured | llm (not captured) | cts70114-tbl-0001:row9:col5 |
+| PK (driver) | Alag 8 mg (h) — Loperamide | `Q83` · not captured | 0.149 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row10:col1 |
+| PK (driver) | Alag 8 mg (h) — M1 | `Q83` · not captured | 0.162 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row10:col5 |
+| PK (driver) | Alag 48 mg (h) — Loperamide | `Q83` · not captured | 0.271 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row11:col1 |
+| PK (driver) | Alag 48 mg (h) — M1 | `Q83` · not captured | 0.376 | h | not captured | llm_confirmed (not captured) | cts70114-tbl-0001:row11:col5 |
+| PK (driver) | D1 (h) — Loperamide | `Q310` · not captured | 0.551 | h | not captured | exact (not captured) | cts70114-tbl-0001:row12:col1 |
+| PK (driver) | D1 (h) — M1 | `Q310` · not captured | 0.714 | h | not captured | exact (not captured) | cts70114-tbl-0001:row12:col5 |
+| variability | Residual error b — Loperamide | `Q315` · not captured | 0.177 | not captured | not captured | llm (not captured) | cts70114-tbl-0001:row13:col1 |
+| variability | Residual error b — M1 | `Q315` · not captured | 0.171 | not captured | not captured | llm (not captured) | cts70114-tbl-0001:row13:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

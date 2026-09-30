@@ -14,9 +14,11 @@
 
 **As extracted:** Apramycin (measured concentrations) drives name (in log10 cfu/organ): direct linear effect.
 
-> The paper excerpts do not describe the pharmacodynamic mechanism or provide the specific parameter values (such as IC50, Emax, or rate constants) for the model linking apramycin concentrations to bacterial burden in the bladder. The provided text only reports that simulations using the developed PKPD model slightly underpredicted bacterial burden in the bladder for specific apramycin doses (0.8, 3.2, and 12.8 mg/kg) in mice infected with the ATCC 700336 strain.
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism or parameter values in the provided excerpts; it only reports that a PKPD model in the cUTI mouse model linked apramycin exposure (doses in mg/kg) to bacterial burden (log10 cfu/organ) in bladder and kidney, with killing generally well predicted but slightly underpredicted for some doses (e.g. 0.3 and 1 mg/kg in kidney; 0.8, 3.2 and 12.8 mg/kg in bladder).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `linear`

@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **The empagliflozin paediatric model was quarantined because volume of distribution, absorption rate constant and lag time had no source values and library defaults were substituted, and the recorded values (e.g. CL/F 3269 L/h, kabs 2750 1/h) conflict with a second reader's readings (6.74 L/h, 0.239 1/h).**

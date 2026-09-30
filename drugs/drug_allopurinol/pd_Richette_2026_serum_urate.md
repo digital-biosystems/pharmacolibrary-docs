@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives name (in µM): direct linear effect.
 
-> The paper describes a linear mixed-effects regression model assessing the association between oxypurinol concentrations and serum urate levels, but it does not specify the underlying pharmacodynamic mechanism (e.g., inhibition of production or elimination) or provide key potency and rate parameters such as IC50, Emax, or kout.
+**Model:** No model was generated from this record.
+
+> The record describes a linear inhibitory relationship in which oxypurinol concentrations (µM, from a cited PK model, Hishe_2023) drive the reduction in serum urate (µM) during allopurinol treatment; the excerpts do not state a mechanism (e.g. Emax or turnover parameters) and give no potency or rate values.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Richette_2026`
 - **model family:** `linear`

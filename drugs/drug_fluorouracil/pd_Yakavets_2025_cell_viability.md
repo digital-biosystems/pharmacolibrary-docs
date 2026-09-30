@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin, 5-Fluorouracil, Camptothecin, OLA, I-BET762 (measured concentrations) drive name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Fluorouracil (5-FU), among other drugs (doxorubicin, camptothecin, OLA, I-BET762), was applied at concentrations in µM to MCF-7 spheroids or patient-derived organoids, with cell viability (%) measured by LIVE/DEAD assay as the response; the record describes a sigmoid Emax inhibitory model with EC50 = 132 µM, but the paper excerpts do not state the mechanism or these parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yakavets_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Yakavets I; Kheiri S; Cruickshank J; Hickman RJ; Rakhshani F; Aldeghi M; Rajaons
   ·  DOI: [10.1126/sciadv.adt1851](https://doi.org/10.1126/sciadv.adt1851)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 132 | μM | not captured | review_gapfill (not captured) | Yakavets_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 132 | μM | not captured | review_gapfill (not captured) | Yakavets_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

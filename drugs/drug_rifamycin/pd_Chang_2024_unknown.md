@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifapentine drives grade 3 or higher adverse events (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking rifapentine exposure to grade 3 or higher adverse events; the excerpts only report that low rifapentine exposure (AUC0–24h, µg∙h/mL) was associated with tuberculosis-related unfavorable outcomes (HR 0.65 per 100 µg∙h/mL increase, 95%CI 0.54–0.77), with no mechanism, effect form, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) stated for the adverse-event response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2024`
 - **model family:** `tte`
 - **driver:** `not_resolved`
@@ -20,21 +30,21 @@ Chang VK; Imperial MZ; Phillips PPJ; Velásquez GE; Nahid P; Vernon A; Kurbatova
   ·  DOI: [10.1038/s41467-024-53273-7](https://doi.org/10.1038/s41467-024-53273-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Smoking History — Missing | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | Tab1:row36:col4 |
-| Rifapentine AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 67 | not captured | not captured | llm (not captured) | Tab1:row44:col4 |
-| Moxifloxacin AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 49 | not captured | not captured | llm (not captured) | Tab1:row45:col4 |
-| Isoniazid AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 153 | not captured | not captured | llm (not captured) | Tab1:row46:col4 |
-| Pyrazinamide AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 125 | not captured | not captured | llm (not captured) | Tab1:row47:col4 |
-| Ethambutol AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 138 | not captured | not captured | llm (not captured) | Tab1:row48:col4 |
-| Rifampin AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 57 | not captured | not captured | llm (not captured) | Tab1:row49:col4 |
-| Rifapentine Cmax [µg /mL] — Missing | `Q32` · not captured | 67 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row50:col4 |
-| Moxifloxacin Cmax [µg /mL] — Missing | `Q32` · not captured | 49 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row51:col4 |
-| Isoniazid Cmax [µg /mL] — Missing | `Q32` · not captured | 153 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row52:col4 |
-| Pyrazinamide Cmax [µg /mL] — Missing | `Q32` · not captured | 125 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row53:col4 |
-| Ethambutol Cmax [µg /mL] — Missing | `Q32` · not captured | 138 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row54:col4 |
-| Rifampin Cmax [µg /mL] — Missing | `Q32` · not captured | 57 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row55:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Smoking History — Missing | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | Tab1:row36:col4 |
+| PK (driver) | Rifapentine AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 67 | not captured | not captured | llm (not captured) | Tab1:row44:col4 |
+| PK (driver) | Moxifloxacin AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 49 | not captured | not captured | llm (not captured) | Tab1:row45:col4 |
+| PK (driver) | Isoniazid AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 153 | not captured | not captured | llm (not captured) | Tab1:row46:col4 |
+| PK (driver) | Pyrazinamide AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 125 | not captured | not captured | llm (not captured) | Tab1:row47:col4 |
+| PK (driver) | Ethambutol AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 138 | not captured | not captured | llm (not captured) | Tab1:row48:col4 |
+| PK (driver) | Rifampin AUC0–24h [µg∙h/mL] — Missing | `Q19` · not captured | 57 | not captured | not captured | llm (not captured) | Tab1:row49:col4 |
+| PK (driver) | Rifapentine Cmax [µg /mL] — Missing | `Q32` · not captured | 67 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row50:col4 |
+| PK (driver) | Moxifloxacin Cmax [µg /mL] — Missing | `Q32` · not captured | 49 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row51:col4 |
+| PK (driver) | Isoniazid Cmax [µg /mL] — Missing | `Q32` · not captured | 153 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row52:col4 |
+| PK (driver) | Pyrazinamide Cmax [µg /mL] — Missing | `Q32` · not captured | 125 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row53:col4 |
+| PK (driver) | Ethambutol Cmax [µg /mL] — Missing | `Q32` · not captured | 138 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row54:col4 |
+| PK (driver) | Rifampin Cmax [µg /mL] — Missing | `Q32` · not captured | 57 | µg /mL | not captured | llm_confirmed (not captured) | Tab1:row55:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

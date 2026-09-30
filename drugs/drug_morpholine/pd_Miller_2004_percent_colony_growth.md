@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trifloxystrobin drives name (in percent): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Trifloxystrobin concentrations (µg/liter) inhibit percent colony growth of Uncinula necator on leaf disks, analyzed as a linear regression of response on ln-transformed concentration (no mechanistic PD model such as Emax or turnover is given). The population mean EC50 was 12.8 µg/liter (95% CI 8.9 to 18.5 µg/liter), with study EC50 values ranging from 0.03 to 343 µg/liter.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Miller_2004`
 - **model family:** `linear`
 - **driver:** `not_resolved`

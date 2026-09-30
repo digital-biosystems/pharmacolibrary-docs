@@ -35,11 +35,11 @@ Olanzapine is also indicated in combination with [samidorphan] for the treatment
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Maharaj_2021_reference](drugs/drug_olanzapine/Olanzapine_Maharaj2021_reference.md) | 1-compartment, oral | 8 | Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021) | [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md) | 1-compartment (no model) | 2 | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md) | 1-compartment (no model) | 2 | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.944). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Maharaj_2021_reference](drugs/drug_olanzapine/Olanzapine_Maharaj2021_reference.md) | held back | 1-compartment, oral | 8 | Maharaj AR et al., Population pharmacokinetics of olanzapi…, British journal of clinical… (2021) | [10.1111/bcp.14414](https://doi.org/10.1111/bcp.14414) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2024_reference](drugs/drug_olanzapine/Olanzapine_Zhang2024_reference.md) | — | 1-compartment (no model) | 2 | Zhang C et al., Effects of Aripiprazole on Olanzapine P…, Neuropsychiatric disease an… (2024) | [10.2147/NDT.S455183](https://doi.org/10.2147/NDT.S455183) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2 negative clearance/volume in a covariate scenario or base (implausible — bas…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_olanzapine/Olanzapine_Zhang2025_reference.md) | — | 1-compartment (no model) | 2 | Zhang C et al., Drug-drug interaction of paroxetine on…, Frontiers in psychiatry (2025) | [10.3389/fpsyt.2025.1538996](https://doi.org/10.3389/fpsyt.2025.1538996) |
 
 ## ADME sites
 
@@ -52,6 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor, `FMO3` substrate, `UGT1A4` substrate | DrugBank actor |

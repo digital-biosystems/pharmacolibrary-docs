@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Uncomplexed ticagrelor and uncomplexed ticagrelor active metabolite drive VASP (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Uncomplexed ticagrelor (TICA) and uncomplexed active metabolite (TAM) concentrations act on VASP (same structural model as PRU/LTA) via a direct inhibitory sigmoid Emax model: PRU/VASP = Base × (1 − Emax1·TICA^γ/(EC501^γ+TICA^γ) − Emax2·TAM^γ/(EC502^γ+TAM^γ)), with Hill coefficients fixed to 2; the paper does not state numeric EC50/Emax estimates for VASP in the excerpts. PB2452 reduces the effect by complexing TICA and TAM, rendering them inactive (binding described by Kon, Kd, Kon2, Kd2 parameters), so VASP returns toward baseline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kathman_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

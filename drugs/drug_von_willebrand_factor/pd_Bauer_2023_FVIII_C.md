@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VWF:RCo drives FVIII activity (in IU/dL): indirect response — drug inhibits the production of FVIII activity.
+
+**Model:** No model was generated from this record.
+
+> FVIII activity (FVIII:C, IU/dL) was modeled as an indirect response in which VWF:RCo activity (IU/dL) acts by inhibition (consistent with VWF stabilizing endogenous FVIII by reducing its elimination), with an Imax of 0.998 and an IC50 of 0.0658 IU/dL; the excerpts do not state kin, kout, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bauer_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Bauer A; Friberg-Hietala S; Smania G; Wolfsegger M et al. (2023). Journal of blo
   ·  DOI: [10.2147/jbm.s395845](https://doi.org/10.2147/jbm.s395845)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50, IU/dL | `Q322` · not captured | 0.0658 | IU/dL | not captured | review_gapfill (not captured) | Bauer_2023:review |
-| Imax | `Q323` · not captured | 0.998 | – | not captured | review_gapfill (not captured) | Bauer_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50, IU/dL | `Q322` · not captured | 0.0658 | IU/dL | not captured | review_gapfill (not captured) | Bauer_2023:review |
+| PD (effect) | Imax | `Q323` · not captured | 0.998 | – | not captured | review_gapfill (not captured) | Bauer_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

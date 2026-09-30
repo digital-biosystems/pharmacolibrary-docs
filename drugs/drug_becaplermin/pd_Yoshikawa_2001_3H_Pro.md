@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PDGF-BB (measured concentrations) drives noncollagen protein synthesis (in dpm/mg dwt): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> PDGF-BB (0.1–100 ng/mL) dose-dependently stimulates noncollagen protein synthesis (3H-proline uptake, dpm/mg dwt) in rabbit tendon segments in vitro; the paper describes an Emax-type dose-response with potency expressed as LogED50 (highest potency in proximal intrasynovial tendon), but gives no numeric Emax, ED50, or mechanistic parameters (e.g., kin, kout) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoshikawa_2001`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

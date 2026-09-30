@@ -13,7 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+**Model:** No model was generated from this record.
+
+### Reviewer guidance
+
+**Only clearance was extracted — no volume.**
+
+A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (Cmax), so that value has no SI equivalent. Extracted — mibefradil: Cmax 220 µg/L, tmax 0.94 h, CL/F 26.7 L/h, t1/2β 11.1 h.
+
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 not matched (stem Welker_1998)

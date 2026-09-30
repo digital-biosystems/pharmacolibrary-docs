@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erlotinib (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Erlotinib concentrations (μM) were tested against caspase 3 and 7 activity in A549 and BZR cells cultured in type I collagen 3D matrices, but the paper does not state a pharmacodynamic model, mechanism, or potency/rate parameters for this response; the only quantitative values given are erlotinib IC50 values of 10 μM (A549) and 8 μM (BZR) for cell viability in 2D collagen coating, with old collagen protecting cells against erlotinib cytotoxicity in 3D.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarazin_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

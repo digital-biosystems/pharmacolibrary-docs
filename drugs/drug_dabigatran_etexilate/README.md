@@ -27,9 +27,9 @@ Dabigatran etexilate is also approved by the EMA to prevent VTE in adult patient
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | 1-compartment (no model) | 0 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2022_reference](drugs/drug_dabigatran_etexilate/DabigatranEtexilate_Liu2022_reference.md) | — | 1-compartment (no model) | 0 | Liu YO et al., Population pharmacokinetic analysis for…, Frontiers in cardiovascular… (2022) | [10.3389/fcvm.2022.998751](https://doi.org/10.3389/fcvm.2022.998751) |
 
 ## ADME sites
 
@@ -42,6 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | bile duct | <sub>“…hich are present in only trace amounts in plasma, urine, or feces. These include a variety…”</sub> | prose |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |

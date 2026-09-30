@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Itopride drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the isolated guinea pig distal colon, itopride (10^-10–10^-6 M) dose-dependently shortened colonic transit time (expressed as % of control), an effect attributed to its AChE inhibition and dopamine D2 receptor antagonism enhancing cholinergic stimulation of M3 receptors; no PD model parameters (Emax, IC50, EC50, kin, kout, ke0) are reported, and the paper does not specify a quantitative model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lim_2008`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

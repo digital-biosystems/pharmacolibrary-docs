@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Luseogliflozin (concentrations from this paper's PK model) drives urinary glucose excretion (in g) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Luseogliflozin plasma concentrations (nM) drive urinary glucose excretion (UGE, g) via a mechanism-based PK-PD model of competitive inhibition of SGLT2 (with SGLT1) in renal glucose reabsorption, using inhibition rate constants Kon and Koff and Ki2; sustained UGE is explained by slow dissociation from SGLT2, with a dissociation half-time of 6.81 h, and estimated population Ki2, Kon, and Koff within 0.31- to 3.6-fold of in vitro values. No IC50, EC50, Emax, kin, kout, or ke0 values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Samukawa_2017`
 - **model family:** `unknown`
 - **driver:** `pk_record`

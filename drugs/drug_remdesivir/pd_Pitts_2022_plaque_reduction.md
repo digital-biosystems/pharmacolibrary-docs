@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GS-441524 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In plaque reduction assays of SARS-CoV-2-infected A549-ACE2-TMPRSS2 cells, remdesivir (and its parent nucleoside GS-441524) concentrations directly inhibit infectious virus yield (plaque counts normalized to DMSO controls), acting via incorporation of the triphosphate metabolite RDV-TP into viral RNA by the Nsp12 RdRp, stalling RNA synthesis; the paper reports EC50 values (e.g., WA1 103 ± 46 nM at 48 hpi; Omicron 53 ± 32 nM at 72 hpi) but no formal PD model parameters (Emax, IC50, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pitts_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

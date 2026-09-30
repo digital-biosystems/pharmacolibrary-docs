@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DEET (measured concentrations) drives Acetylcholinesterase inhibition (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DEET concentrations (µM–mM) were tested against acetylcholinesterase (AChE) activity measured by the Ellman assay, with IC50 values from a four-parameter logistic fit; the paper gives no mechanism beyond direct enzyme inhibition. DEET was a poor inhibitor of DmAChE, hAChE, and MdAChE with mean IC50 values in the low millimolar range, while AgAChE and AeAChE were completely insensitive up to 10 mM; no specific numeric IC50, Emax, or rate values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swale_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

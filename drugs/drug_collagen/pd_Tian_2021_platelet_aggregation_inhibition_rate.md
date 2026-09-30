@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** OGSA (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> OGSA (an OG-containing collagen peptide) inhibits ADP-induced platelet aggregation in vitro with an IC50 of 0.63 mM (inhibition rate reported in %); the paper suggests the mechanism is inhibition of the ADP/P2Y12 receptor pathway (docking to P2Y12 at Cys97, Ser101, Lys179), and OGSA inhibited thrombus formation in rats at 200 μM/kg.bw. No PD model parameters (Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tian_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

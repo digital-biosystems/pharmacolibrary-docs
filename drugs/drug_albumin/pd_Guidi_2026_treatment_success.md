@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isavuconazole (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism: isavuconazole trough concentration (mg/L) or AUC was related to binary treatment success only via exploratory logistic regression, showing a non-significant trend with no potency or rate parameters reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guidi_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

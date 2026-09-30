@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tylophorine-based compounds (measured concentrations) drives name (in absorbance) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism (e.g., Emax/IC50 model, kin/kout) for g_strophanthin; it reports that cardiotonic steroids including g_strophanthin (a cardenolide) inhibit coronavirus-induced cytopathic effects, with EC50 values of up to 8 nM against feline infectious peritonitis virus and up to 16 nM against HCoV-OC43, measured by visual cytopathic effect/IFA in HCT-8 cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

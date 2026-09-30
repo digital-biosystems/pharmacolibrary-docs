@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bisoprolol (measured concentrations) drives Spontaneous action potential firing frequency (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bisoprolol (0.01–30 μM) increased spontaneous action potential firing frequency in GH3 cells via depolarization, and addition of flupirtine (10 μM) reversed the BIS-induced firing rate, consistent with flupirtine's stimulation of M-type K+ currents (BIS inhibits IK(M) with IC50 1.21 μM, Hill coefficient 1.2). The paper provides no quantitative potency or rate parameters (Emax, IC50, kin, kout, ke0) for the effect on AP firing itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `So_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

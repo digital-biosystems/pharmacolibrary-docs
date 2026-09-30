@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buprenorphine (concentrations from the PK model of Nelson_2024) drives Clinical Opiate Withdrawal Scale score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Buprenorphine plasma concentration (ng/mL) directly inhibits the COWS score via a sigmoid Imax model (VAS(Cp) = BASE·(1 − Imax·Cp^γ/(IC50^γ + Cp^γ))), with baseline 45.3, Imax fixed to 1.00, IC50 0.075 ng/mL, and IC90 0.109 ng/mL; the paper does not state a γ value for COWS.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -20,23 +30,23 @@ Walsh SL; Comer SD; Zdovc JA; Sarr C; Björnsson M; Strandgården K; et al. et a
   ·  DOI: [10.1038/s41386-023-01793-z](https://doi.org/10.1038/s41386-023-01793-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline — Value | `Q324` · not captured | 45.3 | not captured | not captured | exact (not captured) | tab_0:row2:col2 |
-| Baseline — RSE (%) | `Q324` · not captured | 2.40 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
-| IC 50 — Value | `Q322` · not captured | 0.075 | ng/mL | not captured | llm (not captured) | tab_0:row3:col2 |
-| IC 50 — RSE (%) | `Q322` · not captured | 30.4 | ng/mL | not captured | llm (not captured) | tab_0:row3:col3 |
-| I max — Value | `Q323` · not captured | 1.00 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
-| IIV Baseline — Value | `Q324` · not captured | 0.106 | not captured | not captured | boundary (not captured) | tab_0:row5:col2 |
-| IIV Baseline — RSE (%) | `Q324` · not captured | 19.8 | not captured | not captured | boundary (not captured) | tab_0:row5:col3 |
-| IIV Baseline — Shrinkage (%) | `Q324` · not captured | 11.6 | not captured | not captured | boundary (not captured) | tab_0:row5:col4 |
-| IIV IC 50 — Value | `Q312` · not captured | 1.90 | not captured | not captured | boundary (not captured) | tab_0:row6:col2 |
-| IIV IC 50 — RSE (%) | `Q312` · not captured | 10.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col3 |
-| IIV IC 50 — Shrinkage (%) | `Q312` · not captured | 13.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col4 |
-| IIV I max — Value | `Q312` · not captured | 0 | not captured | not captured | boundary (not captured) | tab_0:row7:col2 |
-| Additive — Value | `Q317` · not captured | 0.744 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
-| Additive — Shrinkage (%) | `Q318` · not captured | 9.39 | not captured | not captured | llm (not captured) | tab_0:row8:col4 |
-| IC 90 — Shrinkage (%) | `Q318` · not captured | 0.109 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline — Value | `Q324` · not captured | 45.3 | not captured | not captured | exact (not captured) | tab_0:row2:col2 |
+| PD (effect) | Baseline — RSE (%) | `Q324` · not captured | 2.40 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
+| PD (effect) | IC 50 — Value | `Q322` · not captured | 0.075 | ng/mL | not captured | llm (not captured) | tab_0:row3:col2 |
+| PD (effect) | IC 50 — RSE (%) | `Q322` · not captured | 30.4 | ng/mL | not captured | llm (not captured) | tab_0:row3:col3 |
+| PD (effect) | I max — Value | `Q323` · not captured | 1.00 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
+| PD (effect) | IIV Baseline — Value | `Q324` · not captured | 0.106 | not captured | not captured | boundary (not captured) | tab_0:row5:col2 |
+| PD (effect) | IIV Baseline — RSE (%) | `Q324` · not captured | 19.8 | not captured | not captured | boundary (not captured) | tab_0:row5:col3 |
+| PD (effect) | IIV Baseline — Shrinkage (%) | `Q324` · not captured | 11.6 | not captured | not captured | boundary (not captured) | tab_0:row5:col4 |
+| variability | IIV IC 50 — Value | `Q312` · not captured | 1.90 | not captured | not captured | boundary (not captured) | tab_0:row6:col2 |
+| variability | IIV IC 50 — RSE (%) | `Q312` · not captured | 10.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col3 |
+| variability | IIV IC 50 — Shrinkage (%) | `Q312` · not captured | 13.3 | not captured | not captured | boundary (not captured) | tab_0:row6:col4 |
+| variability | IIV I max — Value | `Q312` · not captured | 0 | not captured | not captured | boundary (not captured) | tab_0:row7:col2 |
+| variability | Additive — Value | `Q317` · not captured | 0.744 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
+| variability | Additive — Shrinkage (%) | `Q318` · not captured | 9.39 | not captured | not captured | llm (not captured) | tab_0:row8:col4 |
+| variability | IC 90 — Shrinkage (%) | `Q318` · not captured | 0.109 | not captured | not captured | llm (not captured) | tab_0:row14:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

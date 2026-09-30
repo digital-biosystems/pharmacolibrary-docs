@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pregabalin (concentrations from this paper's PK model) drives name (in LSR28): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Pregabalin average steady-state concentration (Cav,ss from the population PK model) acts on the natural log-transformed 28-day seizure rate (LSR28) via a direct Emax model with a common Emax (sum of population-specific placebo effect and maximum drug effect) and a common EC50, with separate baseline LSR28 and placebo effects for pediatric (4–16 years) and adult populations; the paper does not report numeric Emax or EC50 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2021`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -21,17 +31,17 @@ Chan PLS; Marshall SF; McFadyen L; Liu J et al. (2021). Clinical pharmacology an
   ·  DOI: [10.1002/cpt.2132](https://doi.org/10.1002/cpt.2132)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V/F — Estimate [RSE] | `Q76` · not captured | 38.6 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row6:col2 |
-| ka fastedf — Estimate [RSE] | `Q49` · not captured | 7.44 | not captured | not captured | llm_confirmed (not captured) | cpt2132-tbl-0002:row9:col2 |
-| T lag — Estimate [RSE] | `Q83` · not captured | 0.31 | not captured | not captured | space_fold (not captured) | cpt2132-tbl-0002:row12:col2 |
-| Interindividual variability — 95% confidence intervala | `Q312` · not captured | 16.3 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row14:col3 |
-| V/F — Estimate [RSE] | `Q76` · not captured | 10.3 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row15:col2 |
-| k a — Estimate [RSE] | `Q49` · not captured | 103 | not captured | not captured | space_fold (not captured) | cpt2132-tbl-0002:row16:col2 |
-| ka: fed — Estimate [RSE] | `Q49` · not captured | 25.5 | not captured | not captured | llm_confirmed (not captured) | cpt2132-tbl-0002:row17:col2 |
-| Proportional error — 95% confidence intervala | `Q316` · not captured | 15.2 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row18:col3 |
-| Additive error — 95% confidence intervala | `Q317` · not captured | 0.0074 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row22:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V/F — Estimate [RSE] | `Q76` · not captured | 38.6 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row6:col2 |
+| PK (driver) | ka fastedf — Estimate [RSE] | `Q49` · not captured | 7.44 | not captured | not captured | llm_confirmed (not captured) | cpt2132-tbl-0002:row9:col2 |
+| PK (driver) | T lag — Estimate [RSE] | `Q83` · not captured | 0.31 | not captured | not captured | space_fold (not captured) | cpt2132-tbl-0002:row12:col2 |
+| variability | Interindividual variability — 95% confidence intervala | `Q312` · not captured | 16.3 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row14:col3 |
+| PK (driver) | V/F — Estimate [RSE] | `Q76` · not captured | 10.3 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row15:col2 |
+| PK (driver) | k a — Estimate [RSE] | `Q49` · not captured | 103 | not captured | not captured | space_fold (not captured) | cpt2132-tbl-0002:row16:col2 |
+| PK (driver) | ka: fed — Estimate [RSE] | `Q49` · not captured | 25.5 | not captured | not captured | llm_confirmed (not captured) | cpt2132-tbl-0002:row17:col2 |
+| variability | Proportional error — 95% confidence intervala | `Q316` · not captured | 15.2 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row18:col3 |
+| variability | Additive error — 95% confidence intervala | `Q317` · not captured | 0.0074 | not captured | not captured | exact (not captured) | cpt2132-tbl-0002:row22:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

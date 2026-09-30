@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_paromomycin/Paromomycin_Lentzen1981_reference.md) | 1-compartment (no model) | 3 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Verrest_2021_2_reference](drugs/drug_paromomycin/Paromomycin_Verrest2021v2_reference.md) | nonlinear / manual (no model) | 1 | Verrest L et al., Geographical Variability in Paromomycin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) | 2-compartment (no model) | 6 (+1 cov.) | Verrest L et al., Population pharmacokinetics of a combin…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad286](https://doi.org/10.1093/jac/dkad286) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_paromomycin/Paromomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 3 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Verrest_2021_2_reference](drugs/drug_paromomycin/Paromomycin_Verrest2021v2_reference.md) | — | nonlinear / manual (no model) | 1 | Verrest L et al., Geographical Variability in Paromomycin…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01036-8](https://doi.org/10.1007/s40262-021-01036-8) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Verrest_2023_reference](drugs/drug_paromomycin/Paromomycin_Verrest2023_reference.md) | — | 2-compartment (no model) | 6 (+1 cov.) | Verrest L et al., Population pharmacokinetics of a combin…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad286](https://doi.org/10.1093/jac/dkad286) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Seifert_2006](drugs/drug_paromomycin/pd_Seifert_2006_percent_inhibition_of_Leishmania_donovani_amast.md) | Seifert K et al., In vitro and in vivo interactions betwe…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.1.73-79.2006](https://doi.org/10.1128/AAC.50.1.73-79.2006) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Seifert_2006_percent_inhibition_of_Leishmania_donovani_amastigotes](drugs/drug_paromomycin/pd_Seifert_2006_percent_inhibition_of_Leishmania_donovani_amast.md) | name ← miltefosine · direct sigmoid Emax (Hill) effect | — | Seifert K et al., In vitro and in vivo interactions betwe…, Antimicrobial agents and ch… (2006) | [10.1128/AAC.50.1.73-79.2006](https://doi.org/10.1128/AAC.50.1.73-79.2006) |
 
 ## ADME sites
 

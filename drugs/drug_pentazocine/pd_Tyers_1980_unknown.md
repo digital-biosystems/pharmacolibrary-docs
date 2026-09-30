@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives antinociception (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for pentazocine; it only reports dose-response data, with pentazocine (a κ-opiate agonist) essentially inactive against heat nociception except at sedating doses, while producing steep, parallel dose-response curves reaching maximum effect in the acetylcholine-induced writhing and paw pressure tests. No potency (ED50, IC50, EC50) or rate values specific to pentazocine are given in the excerpts, and no mechanism (e.g. Emax, effect compartment, kin/kout) is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tyers_1980`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

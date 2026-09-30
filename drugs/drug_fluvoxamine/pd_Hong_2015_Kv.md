@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluvoxamine (concentrations from the PK model of Geldof_2007) drives Kv current amplitude (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Fluvoxamine (µM) directly inhibits Kv current amplitude in freshly isolated rabbit coronary arterial smooth muscle cells in a concentration-dependent manner, acting on the closed (inactivated) state of Kv channels independent of serotonin reuptake inhibition; the paper reports an IC50 of 3.71±1.09 µM and a Hill coefficient of 0.62±0.14, with 3 µM fluvoxamine reducing Kv current by 48.63±1.53% at +60 mV within 2 min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

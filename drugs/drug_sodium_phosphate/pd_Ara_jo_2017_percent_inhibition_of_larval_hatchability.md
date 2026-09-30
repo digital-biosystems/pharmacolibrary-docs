@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spigelia anthelmia protein fractions drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Protein fractions from Spigelia anthelmia (LPF, SPF, RPF) were tested against percent inhibition of Haemonchus contortus larval hatchability (egg hatch assay) at concentrations of 0.062–2.0 mg mL-1, with an Emax-type concentration–response relationship; the paper does not state the mechanism of inhibition. The excerpts give EC50 values only for other assays (LEIA: LPF 0.47 and RPF 0.78 mg mL-1; LMIA: 0.11–0.21 mg mL-1), not for the egg hatchability response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Araújo_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

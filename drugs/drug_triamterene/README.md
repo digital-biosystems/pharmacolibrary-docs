@@ -35,10 +35,10 @@ Triamterene in combination with hydrochlorothiazide is indicated for the managme
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamid_2000_reference](drugs/drug_triamterene/Triamterene_Hamid2000_reference.md) | 1-compartment (no model) | 2 | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Diembeck_1982_reference](drugs/drug_triamterene/Triamterene_Diembeck1982_reference.md) | 1-compartment (no model) | 0 | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamid_2000_reference](drugs/drug_triamterene/Triamterene_Hamid2000_reference.md) | — | 1-compartment (no model) | 2 | Hamid O et al., Triamterene measurements in the aqueous…, Journal of ocular pharmacol… (2000) | [10.1089/jop.2000.16.565](https://doi.org/10.1089/jop.2000.16.565) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Diembeck_1982_reference](drugs/drug_triamterene/Triamterene_Diembeck1982_reference.md) | — | 1-compartment (no model) | 0 | Diembeck W et al., [Pharmacokinetics of xipamide and triam…, Arzneimittel-Forschung (1982) | — |
 
 ## ADME sites
 

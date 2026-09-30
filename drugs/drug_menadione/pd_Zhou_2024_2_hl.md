@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myricetin (measured concentrations) drives hlα gene expression (in relative expression): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report an Emax/IC50 model for hlα (α-hemolysin) gene expression; it states that sub-inhibitory concentrations of myricetin slightly stimulated (not inhibited) α-hemolysin gene expression, while dose-dependently attenuating hemolytic activity. The only potency value given is for NDH-2 enzyme inhibition: myricetin IC50 = 0.7 μg/mL (2 μM), acting as a competitive inhibitor with respect to menadione.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

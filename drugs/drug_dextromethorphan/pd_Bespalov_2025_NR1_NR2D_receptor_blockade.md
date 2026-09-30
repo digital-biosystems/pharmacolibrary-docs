@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dextromethorphan (concentrations from the PK model of Abduljalil_2010) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dextromethorphan (and its metabolite dextrorphan) concentrations directly block human recombinant NR1/NR2D (NMDA) receptors measured by whole-cell patch-clamp; the paper reports only fold-changes in potency with deuteration (about 2-fold increase in IC50 for dextromethorphan and 16-fold increase for dextrorphan), without giving absolute IC50, Emax, or kinetic values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bespalov_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ETP drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the kaolin/carrageenan monoarthritis model, ETP (10 mg/kg), SsEtOAc (200 and 400 mg/kg), F-14, MTX (1.0 mg/kg) and MEL (1.5 mg/kg) reduced joint IL-1β concentrations versus vehicle, but the paper does not state a pharmacodynamic mechanism (e.g., inhibition of production or elimination) or an Emax/IC50 fit for the IL-1β response. The only quantitative PD parameters given are for TPA ear edema inhibition by ETP (2.0 mg/ear), with ED50 = 0.25 mg/ear and Emax = 52.9%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salinas-Sánchez_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

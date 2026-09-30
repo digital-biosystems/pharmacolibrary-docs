@@ -17,15 +17,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ringwelski_1975_reference](drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md) | 1-compartment (no model) | 1 | Ringwelski L, [Analog computer analysis of radioactiv…, International journal of cl… (1975) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ringwelski_1975_reference](drugs/drug_tilidine/Tilidine_Ringwelski1975_reference.md) | — | 1-compartment (no model) | 1 | Ringwelski L, [Analog computer analysis of radioactiv…, International journal of cl… (1975) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Bryant_1982](drugs/drug_tilidine/pd_Bryant_1982_unknown.md) | Bryant RM et al., Involvement of the median raphe nucleus…, British journal of pharmaco… (1982) | [10.1111/j.1476-5381.1982.tb09339.x](https://doi.org/10.1111/j.1476-5381.1982.tb09339.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Bryant_1982_unknown](drugs/drug_tilidine/pd_Bryant_1982_unknown.md) | paw pressure threshold ← morphine · stimulation effect | — | Bryant RM et al., Involvement of the median raphe nucleus…, British journal of pharmaco… (1982) | [10.1111/j.1476-5381.1982.tb09339.x](https://doi.org/10.1111/j.1476-5381.1982.tb09339.x) |
 
 ## Pharmacogenomics (PGx)
 

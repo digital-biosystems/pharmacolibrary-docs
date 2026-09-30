@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hexachlorophene (measured concentrations) drives name (in PFU) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not give a PD model linking broxyquinoline concentrations to plaque forming units (PFU); broxyquinoline is only listed as one of five hits inhibiting SFTSV replication at low micromolar concentrations, with no IC50 or mechanism stated in the excerpts. The record's driver (hexachlorophene) is a separate compound: hexachlorophene concentration-dependently inhibited SFTSV replication measured as PFU, acting as a virus entry inhibitor that impairs entry by interfering with cell membrane fusion, with IC50 1.3 ± 0.3 µM and selectivity index 18.7; no Emax, kin/kout, ke0, or Hill coefficient values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuan_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

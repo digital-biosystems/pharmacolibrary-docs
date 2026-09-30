@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Darbepoetin alfa (measured concentrations) drives reticulocyte count (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Darbepoetin alfa (60 µg IV or SC) stimulates reticulocyte production, with baseline-adjusted reticulocyte count (%) as the PD marker; however, no PD model was fitted—ΔEmax and ΔAUEC0–last were obtained directly from observed data, and no potency (EC50/Emax) or rate (kin/kout/ke0) values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeon_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,30 +31,30 @@ Jeon I; Oh J; Kwon YK; Yoon SH; Cho JY; Jang IJ; et al. et al. (2021). Drug desi
   ·  DOI: [10.2147/DDDT.S303772](https://doi.org/10.2147/DDDT.S303772)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cmax (μg/L) — PK Parameters | `Q32` · not captured | 18.10 | μg/L | not captured | exact (not captured) | t0002:row2:col1 |
-| Cmax (μg/L) — CKD-11101 60 μg(Test Drug) | `Q32` · not captured | 17.27 | μg/L | not captured | exact (not captured) | t0002:row2:col2 |
-| AUC0-last (hr•μg/L) — PK Parameters | `Q74` · not captured | 402.18 | hr•μg/L | not captured | exact (not captured) | t0002:row3:col1 |
-| AUC0-last (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q74` · not captured | 376.31 | hr•μg/L | not captured | exact (not captured) | t0002:row3:col2 |
-| AUC0-∞ (hr•μg/L) — PK Parameters | `Q17` · not captured | 440.46 | hr•μg/L | not captured | exact (not captured) | t0002:row4:col1 |
-| AUC0-∞ (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q17` · not captured | 437.68 | hr•μg/L | not captured | exact (not captured) | t0002:row4:col2 |
-| t1/2 (h) — PK Parameters | `Q57` · not captured | 90.21 | h | not captured | exact (not captured) | t0002:row5:col1 |
-| t1/2 (h) — CKD-11101 60 μg(Test Drug) | `Q57` · not captured | 159.03 | h | not captured | exact (not captured) | t0002:row5:col2 |
-| CL (L/h) — PK Parameters | `Q22` · not captured | 0.15 | L/h | not captured | exact (not captured) | t0002:row6:col1 |
-| CL (L/h) — CKD-11101 60 μg(Test Drug) | `Q22` · not captured | 0.15 | L/h | not captured | exact (not captured) | t0002:row6:col2 |
-| Cmax (μg/L) — PK Parameters | `Q32` · not captured | 2.36 | μg/L | not captured | exact (not captured) | t0002:row9:col1 |
-| Cmax (μg/L) — CKD-11101 60 μg(Test Drug) | `Q32` · not captured | 2.08 | μg/L | not captured | exact (not captured) | t0002:row9:col2 |
-| AUC0-last (hr•μg/L) — PK Parameters | `Q74` · not captured | 217.07 | hr•μg/L | not captured | exact (not captured) | t0002:row10:col1 |
-| AUC0-last (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q74` · not captured | 196.82 | hr•μg/L | not captured | exact (not captured) | t0002:row10:col2 |
-| AUC0-∞ (hr•μg/L) — PK Parameters | `Q17` · not captured | 307.08 | hr•μg/L | not captured | exact (not captured) | t0002:row11:col1 |
-| AUC0-∞ (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q17` · not captured | 301.18 | hr•μg/L | not captured | exact (not captured) | t0002:row11:col2 |
-| t1/2 (h) — PK Parameters | `Q57` · not captured | 214.69 | h | not captured | exact (not captured) | t0002:row12:col1 |
-| t1/2 (h) — CKD-11101 60 μg(Test Drug) | `Q57` · not captured | 259.21 | h | not captured | exact (not captured) | t0002:row12:col2 |
-| CL/F (L/h) — PK Parameters | `Q27` · not captured | 0.24 | L/h | not captured | exact (not captured) | t0002:row13:col1 |
-| CL/F (L/h) — CKD-11101 60 μg(Test Drug) | `Q27` · not captured | 0.25 | L/h | not captured | exact (not captured) | t0002:row13:col2 |
-| Vz/F (L) — PK Parameters | `Q76` · not captured | 58.15 | L | not captured | exact (not captured) | t0002:row14:col1 |
-| Vz/F (L) — CKD-11101 60 μg(Test Drug) | `Q76` · not captured | 71 | L | not captured | exact (not captured) | t0002:row14:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cmax (μg/L) — PK Parameters | `Q32` · not captured | 18.10 | μg/L | not captured | exact (not captured) | t0002:row2:col1 |
+| PK (driver) | Cmax (μg/L) — CKD-11101 60 μg(Test Drug) | `Q32` · not captured | 17.27 | μg/L | not captured | exact (not captured) | t0002:row2:col2 |
+| PK (driver) | AUC0-last (hr•μg/L) — PK Parameters | `Q74` · not captured | 402.18 | hr•μg/L | not captured | exact (not captured) | t0002:row3:col1 |
+| PK (driver) | AUC0-last (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q74` · not captured | 376.31 | hr•μg/L | not captured | exact (not captured) | t0002:row3:col2 |
+| PK (driver) | AUC0-∞ (hr•μg/L) — PK Parameters | `Q17` · not captured | 440.46 | hr•μg/L | not captured | exact (not captured) | t0002:row4:col1 |
+| PK (driver) | AUC0-∞ (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q17` · not captured | 437.68 | hr•μg/L | not captured | exact (not captured) | t0002:row4:col2 |
+| PK (driver) | t1/2 (h) — PK Parameters | `Q57` · not captured | 90.21 | h | not captured | exact (not captured) | t0002:row5:col1 |
+| PK (driver) | t1/2 (h) — CKD-11101 60 μg(Test Drug) | `Q57` · not captured | 159.03 | h | not captured | exact (not captured) | t0002:row5:col2 |
+| PK (driver) | CL (L/h) — PK Parameters | `Q22` · not captured | 0.15 | L/h | not captured | exact (not captured) | t0002:row6:col1 |
+| PK (driver) | CL (L/h) — CKD-11101 60 μg(Test Drug) | `Q22` · not captured | 0.15 | L/h | not captured | exact (not captured) | t0002:row6:col2 |
+| PK (driver) | Cmax (μg/L) — PK Parameters | `Q32` · not captured | 2.36 | μg/L | not captured | exact (not captured) | t0002:row9:col1 |
+| PK (driver) | Cmax (μg/L) — CKD-11101 60 μg(Test Drug) | `Q32` · not captured | 2.08 | μg/L | not captured | exact (not captured) | t0002:row9:col2 |
+| PK (driver) | AUC0-last (hr•μg/L) — PK Parameters | `Q74` · not captured | 217.07 | hr•μg/L | not captured | exact (not captured) | t0002:row10:col1 |
+| PK (driver) | AUC0-last (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q74` · not captured | 196.82 | hr•μg/L | not captured | exact (not captured) | t0002:row10:col2 |
+| PK (driver) | AUC0-∞ (hr•μg/L) — PK Parameters | `Q17` · not captured | 307.08 | hr•μg/L | not captured | exact (not captured) | t0002:row11:col1 |
+| PK (driver) | AUC0-∞ (hr•μg/L) — CKD-11101 60 μg(Test Drug) | `Q17` · not captured | 301.18 | hr•μg/L | not captured | exact (not captured) | t0002:row11:col2 |
+| PK (driver) | t1/2 (h) — PK Parameters | `Q57` · not captured | 214.69 | h | not captured | exact (not captured) | t0002:row12:col1 |
+| PK (driver) | t1/2 (h) — CKD-11101 60 μg(Test Drug) | `Q57` · not captured | 259.21 | h | not captured | exact (not captured) | t0002:row12:col2 |
+| PK (driver) | CL/F (L/h) — PK Parameters | `Q27` · not captured | 0.24 | L/h | not captured | exact (not captured) | t0002:row13:col1 |
+| PK (driver) | CL/F (L/h) — CKD-11101 60 μg(Test Drug) | `Q27` · not captured | 0.25 | L/h | not captured | exact (not captured) | t0002:row13:col2 |
+| PK (driver) | Vz/F (L) — PK Parameters | `Q76` · not captured | 58.15 | L | not captured | exact (not captured) | t0002:row14:col1 |
+| PK (driver) | Vz/F (L) — CKD-11101 60 μg(Test Drug) | `Q76` · not captured | 71 | L | not captured | exact (not captured) | t0002:row14:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

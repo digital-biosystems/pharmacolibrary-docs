@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Darbepoetin alfa (concentrations from the PK model of Agoram_2006) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Darbepoetin alfa concentrations (μg/L) were related to red blood cell counts (with reticulocytes, hematocrit, and hemoglobin) after single SC or IV doses, but PD analysis was by non-compartmental methods only; the paper does not state a mechanism (e.g., Emax or indirect response model) and reports no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2019`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

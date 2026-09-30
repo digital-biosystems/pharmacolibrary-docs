@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amoxicillin (concentrations from the PK model of Albanell-Fernández_2025) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Amoxicillin concentrations act on viable E. coli bacterial counts (cfu/mL) via a PD model in which the first-order bactericidal killing rate constant follows a saturable-receptor (Emax-type) concentration dependence, while the resistance formation rate constant decreases log-linearly (exponentially) with increasing antibiotic concentration, together describing both killing and regrowth phases of the time-kill curve. The paper does not report numeric Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values for amoxicillin; the MIC against E. coli was 8 mg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

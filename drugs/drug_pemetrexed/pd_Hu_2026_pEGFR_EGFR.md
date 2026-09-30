@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pemetrexed, osimertinib drive EGFR signaling (in ratio): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> Osimertinib concentrations (nM/µg/L) inhibit EGFR signaling (pEGFR/EGFR ratio) via an Imax–EC50 inhibitory effect on EGFR levels, with EGFR turnover described by a transduction/turnover model in which osimertinib irreversibly depletes the receptor pool and EGFR rebound is reproduced by cell-damage-dependent resynthesis (kin) with elimination rate kout,EGFR; the fitted EC50 was 14.49 nM in culture medium, corresponding to a predicted plasma EC50 of 48.86 µg/L (γosi and Imax,osi estimated but values not stated). Pemetrexed's effect on pEGFR/EGFR is not described mechanistically; only a calibrated plasma EC50,pem of 0.47315 mg/L is reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `transduction`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** P-nitrophenyl a-D-glucopyranoside drives name (in integrated nerve response) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide usable information on the pharmacodynamic model: no full text is available, the driver (p-nitrophenyl a-D-glucopyranoside) and response (gerbil's chorda tympani nerve response to sucrose, integrated nerve response) are not resolved to a concentration–effect relationship, and no mechanism, model family, or potency/rate parameters are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vlahopoulos_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

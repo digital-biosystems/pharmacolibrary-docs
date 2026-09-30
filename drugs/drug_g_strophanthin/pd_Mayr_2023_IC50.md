@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ouabain drives name (in nM): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ouabain (5 μM–0.01 μM, 72 h) reduces viability of biliary tract cancer cells in a concentration-dependent manner, with IC50 values from four-parameter logistic (sigmoid Emax) fits ranging from 14 nM (TFK-1) and 15 nM (KKU-055) to 485 nM (OCUG-1) and 446 nM (OZ), with other lines between 60–126 nM. The cytotoxicity involves induction of apoptosis and appears independent of Na+/K+-ATPase pumping inhibition, membrane depolarization, and intracellular sodium changes; the paper does not quantify a specific PD mechanism or give Emax, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mayr_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

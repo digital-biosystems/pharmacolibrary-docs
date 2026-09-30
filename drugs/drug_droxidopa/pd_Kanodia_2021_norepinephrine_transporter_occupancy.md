@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ampreloxetine (measured concentrations) drives name (in percent): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ampreloxetine plasma concentrations (ng/mL) drive norepinephrine transporter (NET) occupancy (percent) via an inhibitory Emax-type PD model fitted to PET data, with an IC50 of 1.2 ng/mL; the paper does not state Imax, kout, or ke0 values. Predicted steady-state NET occupancy was 71–95% for 5 mg once daily and &gt;75% in nearly all subjects at 10 mg once daily.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kanodia_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,19 +30,19 @@ Kanodia J; Lo A; Baldwin RM; Graham RA; Bourdet DL et al. (2021). Clinical pharm
   ·  DOI: [10.1007/s40262-020-00918-7](https://doi.org/10.1007/s40262-020-00918-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Dose lag (h) — Population estimate (%RSE) | `Q83` · not captured | 1.74 | h | not captured | llm (not captured) | Tab5:row1:col1 |
-| CL/F (L/h) — Population estimate (%RSE) | `Q27` · not captured | 47.2 | L/h | not captured | exact (not captured) | Tab5:row2:col1 |
-| CL/F (L/h) — Inter-subject variability %CV (%RSE) | `Q27` · not captured | 50.4 | L/h | not captured | exact (not captured) | Tab5:row2:col2 |
-| V1/F (L) — Population estimate (%RSE) | `Q290` · not captured | 2040 | L | not captured | exact (not captured) | Tab5:row3:col1 |
-| V1/F (L) — Inter-subject variability %CV (%RSE) | `Q290` · not captured | 38.4 | L | not captured | exact (not captured) | Tab5:row3:col2 |
-| Q/F (L/h) — Population estimate (%RSE) | `Q69` · not captured | 15.4 | L/h | not captured | exact (not captured) | Tab5:row4:col1 |
-| V2/F (L) — Population estimate (%RSE) | `Q82` · not captured | 357 | L | not captured | exact (not captured) | Tab5:row5:col1 |
-| Ka (L/h) — Population estimate (%RSE) | `Q49` · not captured | 0.2 | L/h | not captured | exact (not captured) | Tab5:row6:col1 |
-| Ka (L/h) — Inter-subject variability %CV (%RSE) | `Q49` · not captured | 34.1 | L/h | not captured | exact (not captured) | Tab5:row6:col2 |
-| Proportional residual error (%) — Population estimate (%RSE) | `Q316` · not captured | 24.7 | L | not captured | exact (not captured) | Tab5:row10:col1 |
-| Additive residual error (ng/mL) — Population estimate (%RSE) | `Q317` · not captured | 0.199 | ng/mL | not captured | exact (not captured) | Tab5:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Dose lag (h) — Population estimate (%RSE) | `Q83` · not captured | 1.74 | h | not captured | llm (not captured) | Tab5:row1:col1 |
+| PK (driver) | CL/F (L/h) — Population estimate (%RSE) | `Q27` · not captured | 47.2 | L/h | not captured | exact (not captured) | Tab5:row2:col1 |
+| PK (driver) | CL/F (L/h) — Inter-subject variability %CV (%RSE) | `Q27` · not captured | 50.4 | L/h | not captured | exact (not captured) | Tab5:row2:col2 |
+| PK (driver) | V1/F (L) — Population estimate (%RSE) | `Q290` · not captured | 2040 | L | not captured | exact (not captured) | Tab5:row3:col1 |
+| PK (driver) | V1/F (L) — Inter-subject variability %CV (%RSE) | `Q290` · not captured | 38.4 | L | not captured | exact (not captured) | Tab5:row3:col2 |
+| PK (driver) | Q/F (L/h) — Population estimate (%RSE) | `Q69` · not captured | 15.4 | L/h | not captured | exact (not captured) | Tab5:row4:col1 |
+| PK (driver) | V2/F (L) — Population estimate (%RSE) | `Q82` · not captured | 357 | L | not captured | exact (not captured) | Tab5:row5:col1 |
+| PK (driver) | Ka (L/h) — Population estimate (%RSE) | `Q49` · not captured | 0.2 | L/h | not captured | exact (not captured) | Tab5:row6:col1 |
+| PK (driver) | Ka (L/h) — Inter-subject variability %CV (%RSE) | `Q49` · not captured | 34.1 | L/h | not captured | exact (not captured) | Tab5:row6:col2 |
+| variability | Proportional residual error (%) — Population estimate (%RSE) | `Q316` · not captured | 24.7 | L | not captured | exact (not captured) | Tab5:row10:col1 |
+| variability | Additive residual error (ng/mL) — Population estimate (%RSE) | `Q317` · not captured | 0.199 | ng/mL | not captured | exact (not captured) | Tab5:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

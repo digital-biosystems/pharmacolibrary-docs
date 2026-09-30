@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exendin-4 (measured concentrations) drives insulin (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Exenatide (exendin-4) concentrations stimulate insulin secretion via GLP-1 receptor agonism, integrated into a glucose-insulin feedback model in which glucose linearly stimulates insulin secretion (S_Glu) and insulin linearly stimulates glucose uptake (S_Ins), with insulin turnover described by an indirect response model (zero-order input k_inI = k_outI × I_basal, first-order output k_outI). The paper does not state potency values (e.g., EC50/Emax) for the insulinotropic effect in the excerpts; exenatide disposition was described by a TMDD model with total receptor content R_tot fixed at 1.24 nM in humans.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gao_2012`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

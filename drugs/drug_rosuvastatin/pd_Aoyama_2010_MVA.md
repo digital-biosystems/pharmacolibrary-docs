@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rosuvastatin (concentrations from this paper's PK model) drives mevalonic acid (in unknown): indirect response — drug inhibits the production of mevalonic acid.
+
+**Model:** No model was generated from this record.
+
+> Plasma rosuvastatin concentrations (from a first-order absorption two-compartment PK model, ka 0.368 h⁻¹, CL/F 264 l/h) drive an indirect-response model in which rosuvastatin inhibits the production of mevalonic acid (MVA) via HMG-CoA reductase inhibition, with MVA elimination kout = 1.97 h⁻¹ and a circadian amplitude term kamp = 1.06 ng/ml/h with tz = 15.5 h; the paper does not report Imax, IC50/EC50, Emax, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aoyama_2010`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
@@ -21,23 +31,23 @@ Aoyama T; Omori T; Watabe S; Shioya A; Ueno T; Fukuda N; et al. et al. (2010). B
   ·  DOI: [10.1248/bpb.33.1082](https://doi.org/10.1248/bpb.33.1082)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k a (h Ϫ1 ) — Estimate | `Q49` · not captured | 0.368 | h Ϫ1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
-| k a (h Ϫ1 ) — SE % | `Q49` · not captured | 4.5 | h Ϫ1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
-| CL/F (l/h) — Estimate | `Q27` · not captured | 264 | l/h | not captured | exact (not captured) | tab_1:row2:col1 |
-| CL/F (l/h) — SE % | `Q27` · not captured | 2.4 | l/h | not captured | exact (not captured) | tab_1:row2:col2 |
-| V c /F (l) — Estimate | `Q290` · not captured | 1170 | l | not captured | space_fold (not captured) | tab_1:row3:col1 |
-| V c /F (l) — SE % | `Q290` · not captured | 4.5 | l | not captured | space_fold (not captured) | tab_1:row3:col2 |
-| Q/F (l/h) — Estimate | `Q69` · not captured | 148 | l/h | not captured | exact (not captured) | tab_1:row4:col1 |
-| Q/F (l/h) — SE % | `Q69` · not captured | 15.5 | l/h | not captured | exact (not captured) | tab_1:row4:col2 |
-| V p /F (l) — Estimate | `Q82` · not captured | 3700 | l | not captured | space_fold (not captured) | tab_1:row5:col1 |
-| V p /F (l) — SE % | `Q82` · not captured | 24.5 | l | not captured | space_fold (not captured) | tab_1:row5:col2 |
-| k amp (ng/ml/h) — Estimate | `Q358` · not captured | 1.06 | ng/ml/h | not captured | llm (not captured) | tab_1:row7:col1 |
-| k amp (ng/ml/h) — SE % | `Q49` · not captured | 23.1 | ng/ml/h | not captured | llm (not captured) | tab_1:row7:col2 |
-| tz (h) — Estimate | `Q57` · not captured | 15.5 | h | not captured | llm (not captured) | tab_1:row8:col1 |
-| tz (h) — SE % | `Q57` · not captured | 1.8 | h | not captured | llm (not captured) | tab_1:row8:col2 |
-| k out (h Ϫ1 ) | `Q328` · not captured | 1.97 | h Ϫ1 | not captured | review_gapfill (not captured) | Aoyama_2010:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k a (h Ϫ1 ) — Estimate | `Q49` · not captured | 0.368 | h Ϫ1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
+| PK (driver) | k a (h Ϫ1 ) — SE % | `Q49` · not captured | 4.5 | h Ϫ1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
+| PK (driver) | CL/F (l/h) — Estimate | `Q27` · not captured | 264 | l/h | not captured | exact (not captured) | tab_1:row2:col1 |
+| PK (driver) | CL/F (l/h) — SE % | `Q27` · not captured | 2.4 | l/h | not captured | exact (not captured) | tab_1:row2:col2 |
+| PK (driver) | V c /F (l) — Estimate | `Q290` · not captured | 1170 | l | not captured | space_fold (not captured) | tab_1:row3:col1 |
+| PK (driver) | V c /F (l) — SE % | `Q290` · not captured | 4.5 | l | not captured | space_fold (not captured) | tab_1:row3:col2 |
+| PK (driver) | Q/F (l/h) — Estimate | `Q69` · not captured | 148 | l/h | not captured | exact (not captured) | tab_1:row4:col1 |
+| PK (driver) | Q/F (l/h) — SE % | `Q69` · not captured | 15.5 | l/h | not captured | exact (not captured) | tab_1:row4:col2 |
+| PK (driver) | V p /F (l) — Estimate | `Q82` · not captured | 3700 | l | not captured | space_fold (not captured) | tab_1:row5:col1 |
+| PK (driver) | V p /F (l) — SE % | `Q82` · not captured | 24.5 | l | not captured | space_fold (not captured) | tab_1:row5:col2 |
+| PK (driver) | k amp (ng/ml/h) — Estimate | `Q358` · not captured | 1.06 | ng/ml/h | not captured | llm (not captured) | tab_1:row7:col1 |
+| PK (driver) | k amp (ng/ml/h) — SE % | `Q49` · not captured | 23.1 | ng/ml/h | not captured | llm (not captured) | tab_1:row7:col2 |
+| PK (driver) | tz (h) — Estimate | `Q57` · not captured | 15.5 | h | not captured | llm (not captured) | tab_1:row8:col1 |
+| PK (driver) | tz (h) — SE % | `Q57` · not captured | 1.8 | h | not captured | llm (not captured) | tab_1:row8:col2 |
+| PD (effect) | k out (h Ϫ1 ) | `Q328` · not captured | 1.97 | h Ϫ1 | not captured | review_gapfill (not captured) | Aoyama_2010:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

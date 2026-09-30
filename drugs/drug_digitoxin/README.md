@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | parent + metabolite (no model) | 1 | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Flasch_1979_reference](drugs/drug_digitoxin/Digitoxin_Flasch1979_reference.md) | — | parent + metabolite (no model) | 1 | Flasch H et al., Pharmacokinetics of dihydrodigitoxin in…, Naunyn-Schmiedeberg's archi… (1979) | [10.1007/BF00500279](https://doi.org/10.1007/BF00500279) |
 
 ## ADME sites
 
@@ -38,6 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pinacidil drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Nicorandil concentration directly relaxes noradrenaline (0.1 uM)-contracted rat pulmonary artery ring preparations, with responses expressed as percentage reversal of the contraction and fitted by an Emax model; the paper does not state a mechanistic PD form beyond its vasodilator action. In pulmonary artery from monocrotaline-treated (pulmonary hypertensive) rats the maximum relaxation was increased while potency decreased 3-fold, with a reported -log EC50 of 5.4 for the pulmonary artery.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wanstall_1992`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Wanstall JC; O'Donnell SR et al. (1992). British journal of pharmacology 105
   ·  DOI: [10.1111/j.1476-5381.1992.tb14227.x](https://doi.org/10.1111/j.1476-5381.1992.tb14227.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pinacidil -log EC50 Pulmonary artery | `Q321` · not captured | 5.4 | not captured | not captured | review_gapfill (not captured) | Wanstall_1992:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Pinacidil -log EC50 Pulmonary artery | `Q321` · not captured | 5.4 | not captured | not captured | review_gapfill (not captured) | Wanstall_1992:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -5,7 +5,7 @@
 
 # bupropion — `Bupropion_Butz1981_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,13 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **No model parameters were extracted from this paper.**
 
 Nothing in the extracted data describes the drug's disposition, so there is no model to build. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bupropion, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -30,14 +32,26 @@ Butz RF; Schroeder DH; Welch RM; Mehta NB; Phillips AP; Findlay JW et al. (1981)
 <dbs-pgx drug="bupropion" model-id="Bupropion_Butz1981_reference" status="rejected" stale="false" population="beagle dogs" measured-compound="bupropion" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Parameters:** 1 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| mean terminal phase half-life of bupropion | `Q57` · t1/2z | 1.73 | hr | 6228.0 | [h] | not captured | llm (0.6) | Butz_1981:abstract | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| absolute oral bioavailability of the drug | Q40 | not captured | llm_confirmed |
 
 ## Departures & gaps
 
@@ -46,18 +60,29 @@ _No resolved parameters._
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Butz_1981_metadata.yaml (0 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Butz_1981_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (4/4 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>6 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[absolute oral bioavailability of the drug]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absolute oral bioavailability]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean terminal phase half-life of bupropion]` | 1.73 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean terminal phase half-life]` | not captured | 1.73 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | bupropion | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | bupropion | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -69,8 +94,9 @@ _Every reader agrees on every compared field of this record._
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Butz_1981:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">

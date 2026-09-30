@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 19(S)-HETE (measured concentrations) drives Platelet aggregation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 19(S)-HETE (not epoprostenol) acts as an IP (prostacyclin) receptor agonist, stimulating cAMP accumulation in MEG-01 cells with an EC50 of 520 nM and activating heterologously expressed IP receptor with an EC50 of 567 nM (Ki 660 nM vs 3H-iloprost); pretreatment of isolated murine platelets with 19(S)-HETE blocked thrombin-induced platelet aggregation, an effect absent in platelets from IP receptor-deficient mice. The paper does not state an Emax, kin, kout, ke0, or gamma, and no formal PD model parameters beyond the EC50 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tunaru_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

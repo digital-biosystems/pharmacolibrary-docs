@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Arshad_2020) drives HeLa cell viability (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 5-Fluorouracil (2–100 μg/mL range tested) inhibits HeLa cell viability (MTT, 48 h) via apoptosis, with an IC50 of 19.3 ± 0.49 μg/mL; the paper does not state a mechanistic PD model (no Imax/kin/kout/ke0). The PXFCu6 gel combining 5-Fu with CuO NPs was more potent, with IC50 11.82 ± 0.219 μg/mL, i.e. 3.62 times more potent than CuO NPs alone (IC50 42.8 ± 0.24 μg/mL) and 1.63 times more potent than free 5-Fu.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dutta_2024`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Dutta G; Chinnaiyan SK; Palaniyandi T; Sugumaran A; Narayanasamy D et al. (2024)
   ·  DOI: [10.1186/s11671-024-04166-7](https://doi.org/10.1186/s11671-024-04166-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| potency | `Q321` · not captured | 3.62 | times | not captured | review_gapfill (not captured) | Dutta_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | potency | `Q321` · not captured | 3.62 | times | not captured | review_gapfill (not captured) | Dutta_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in mm3): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> 5-fluorouracil concentration (tissue compartment in a two-compartment mouse-parameterized PK model) acts directly on tumor volume via a DIP model in which the tumor exponential growth/decay rate γ(x) is a Hill (sigmoid Emax) function of concentration, H(x)=E0+x^n(E1−E0)/(x^n+C^n); the paper does not state numeric values for E0, E1, C, or n in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pierik_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

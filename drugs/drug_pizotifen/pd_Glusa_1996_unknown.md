@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ergotamine drives arterial relaxation (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model with parameters; it reports that ergotamine (0.1–1 µM range for maximum effect) causes endothelium-dependent relaxation of PGF2α (3 µM)-precontracted porcine pulmonary artery rings, an effect attenuated by endothelium removal or L-NAME (200 µM), and that pizotifen (0.03 and 0.1 µM) produced surmountable antagonism of the ergotamine concentration-response curve, being the most potent inhibitory antagonist tested; no Imax, IC50, EC50, kin, kout or ke0 values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glusa_1996`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

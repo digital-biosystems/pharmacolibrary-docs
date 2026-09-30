@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibudilast (measured concentrations) drives Cyclooxygenase-2 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for amlexanox on COX-2; the only quantitative measure is an IC50 of 33 µM for amlexanox in a T-cell activation-inhibitory assay (anti-CD3/CD28-stimulated spleen leukocytes), with no stated mechanism, effect model, or COX-2-specific concentration-response parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishikawa_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

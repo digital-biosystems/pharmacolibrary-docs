@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Factor VIII (concentrations from the PK model of Kim_2024::1) drives normalized thrombin potential (in % of NPP): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Factor VIII activity (IU/dl) drives normalized thrombin potential (% of NPP) via a sigmoidal Emax stimulation model, with re-estimated EC50 of 1.93 IU/dl and Emax of 65.3 (% of NPP) (previously 13.9 IU/dl and 72.5 in Bukkems et al.); the paper does not state a turnover/indirect mechanism, describing it as a direct concentration–effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Valke_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

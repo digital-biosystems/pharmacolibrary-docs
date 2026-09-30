@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cefepime (measured concentrations) drives seizure stage (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Cefepime exposure (plasma AUC, brain Cmax and AUC) was related to the probability of seizure stage &gt;1 on the modified Racine scale via logistic regression models; the paper does not describe a mechanistic PD model (no Imax/IC50/kin/kout/ke0). The 50th percentile toxicity concentrations (TC50) were 30,658.6 mg·h/L for plasma AUC, 760.8 and 838.2 mg·h/L for cortex and hippocampus AUC, and 45.0 and 48.2 mg/L for cortex and hippocampus Cmax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pais_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AA-2G and 6-Acyl-AA-2G drive name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports direct concentration–effect data (EC50 values) for radical scavenging activity (%) against DPPH by AA-2G and 6-Acyl-AA-2G derivatives, with alpha-tocopherol as a comparator; no pharmacodynamic mechanism (e.g., kin/kout or effect-compartment) is described. EC50 values in 60% EtOH/water were 2.9×10^-5 M for 6-Palm-AA, 1.9×10^-5 M for alpha-tocopherol, and 2.2×10^-5 M for AA, while EC50 for 2,6-Palm-AA, AA-2P and AA-2S could not be determined due to extremely weak activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fujinami_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

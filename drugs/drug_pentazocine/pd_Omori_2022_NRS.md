@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pentazocine drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Pentazocine plasma concentration acts on the NRS pain score via an indirect response model in which the drug inhibits the production of pain (with an additional time-dependent effect on pain increase), fitted sequentially with a two-compartment PK model. For the original dataset, the reported estimates are EC50 = 176.3 ng/mL, kout = 3.35 /h, PT max = 0.57, PT 50 = 17.9 h, and γ time = 0.63; Emax was fixed at 1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Omori_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,57 +30,57 @@ Omori T; Aoyama T; Miyamoto A; Matsumoto Y et al. (2022). Biological & pharmaceu
   ·  DOI: [10.1248/bpb.b22-00398](https://doi.org/10.1248/bpb.b22-00398)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PT 50 (h) — Bootstrap result (n = 500) | `Q57` · not captured | 17.9 | h | not captured | llm (not captured) | tab_2:row4:col7 |
-| PT max | `Q56` · not captured | 0.567 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
-| PT max | `Q56` · not captured | 0.00266 | not captured | not captured | llm (not captured) | tab_2:row5:col2 |
-| PT max | `Q56` · not captured | 0.56 | not captured | not captured | llm (not captured) | tab_2:row5:col3 |
-| PT max — Original dataset | `Q56` · not captured | 0.57 | not captured | not captured | llm (not captured) | tab_2:row5:col4 |
-| PT max | `Q56` · not captured | 0.55 | not captured | not captured | llm (not captured) | tab_2:row5:col5 |
-| PT max | `Q56` · not captured | 0.396 | not captured | not captured | llm (not captured) | tab_2:row5:col6 |
-| PT max — Bootstrap result (n = 500) | `Q56` · not captured | 0.70 | n = 500 | not captured | llm (not captured) | tab_2:row5:col7 |
-| γ time | `Q89` · not captured | 0.373 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
-| γ time | `Q89` · not captured | 0.129 | not captured | not captured | llm (not captured) | tab_2:row6:col2 |
-| γ time | `Q89` · not captured | 0.12 | not captured | not captured | llm (not captured) | tab_2:row6:col3 |
-| γ time — Original dataset | `Q89` · not captured | 0.63 | not captured | not captured | llm (not captured) | tab_2:row6:col4 |
-| γ time | `Q89` · not captured | 0.38 | not captured | not captured | llm (not captured) | tab_2:row6:col5 |
-| γ time | `Q89` · not captured | 0.0044 | not captured | not captured | llm (not captured) | tab_2:row6:col6 |
-| EC 50 (ng/mL) | `Q321` · not captured | 144 | ng/mL | not captured | llm (not captured) | tab_2:row7:col1 |
-| EC 50 (ng/mL) | `Q321` · not captured | 16.5 | ng/mL | not captured | llm (not captured) | tab_2:row7:col2 |
-| EC 50 (ng/mL) | `Q321` · not captured | 111.7 | ng/mL | not captured | llm (not captured) | tab_2:row7:col3 |
-| EC 50 (ng/mL) — Original dataset | `Q321` · not captured | 176.3 | ng/mL | not captured | llm (not captured) | tab_2:row7:col4 |
-| EC 50 (ng/mL) | `Q321` · not captured | 143 | ng/mL | not captured | llm (not captured) | tab_2:row7:col5 |
-| EC 50 (ng/mL) | `Q321` · not captured | 48.4 | ng/mL | not captured | llm (not captured) | tab_2:row7:col6 |
-| EC 50 (ng/mL) — Bootstrap result (n = 500) | `Q321` · not captured | 1747 | ng/mL | not captured | llm (not captured) | tab_2:row7:col7 |
-| E max | `Q320` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col1 |
-| k out (/h) | `Q328` · not captured | 2.82 | /h | not captured | llm (not captured) | tab_2:row9:col1 |
-| k out (/h) | `Q328` · not captured | 0.268 | /h | not captured | llm (not captured) | tab_2:row9:col2 |
-| k out (/h) | `Q328` · not captured | 2.29 | /h | not captured | llm (not captured) | tab_2:row9:col3 |
-| k out (/h) — Original dataset | `Q328` · not captured | 3.35 | /h | not captured | llm (not captured) | tab_2:row9:col4 |
-| k out (/h) | `Q328` · not captured | 2.75 | /h | not captured | llm (not captured) | tab_2:row9:col5 |
-| k out (/h) | `Q328` · not captured | 0.961 | /h | not captured | llm (not captured) | tab_2:row9:col6 |
-| k out (/h) — Bootstrap result (n = 500) | `Q328` · not captured | 10.70 | /h | not captured | llm (not captured) | tab_2:row9:col7 |
-| ω 2 | `Q315` · not captured | 1.32 | not captured | not captured | llm (not captured) | tab_2:row10:col2 |
-| ω 2 | `Q315` · not captured | 0.0089 | not captured | not captured | llm (not captured) | tab_2:row10:col3 |
-| ω 2 — Original dataset | `Q312` · not captured | 1.30 | not captured | not captured | llm (not captured) | tab_2:row10:col4 |
-| ω 2 | `Q315` · not captured | 1.34 | not captured | not captured | llm (not captured) | tab_2:row10:col5 |
-| ω 2 | `Q315` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_2:row10:col6 |
-| ω 2 | `Q315` · not captured | 1.69 | not captured | not captured | llm (not captured) | tab_2:row10:col8 |
-| ω 2 EC50 | `Q321` · not captured | 4.03 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
-| ω 2 EC50 | `Q321` · not captured | 0.0816 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
-| ω 2 EC50 | `Q321` · not captured | 3.87 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col3 |
-| ω 2 EC50 — Original dataset | `Q321` · not captured | 4.19 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col4 |
-| ω 2 EC50 | `Q321` · not captured | 4.23 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col5 |
-| ω 2 EC50 | `Q321` · not captured | 2.12 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col6 |
-| ω 2 EC50 — Bootstrap result (n = 500) | `Q321` · not captured | 10.5 | n = 500 | not captured | llm_confirmed (not captured) | tab_2:row11:col7 |
-| σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col2 |
-| σ | `Q315` · not captured | 0.0404 | not captured | not captured | llm (not captured) | tab_2:row12:col3 |
-| σ — Original dataset | `Q315` · not captured | 1.70 | not captured | not captured | llm (not captured) | tab_2:row12:col4 |
-| σ | `Q315` · not captured | 1.86 | not captured | not captured | llm (not captured) | tab_2:row12:col5 |
-| σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col6 |
-| σ — Bootstrap result (n = 500) | `Q315` · not captured | 1.67 | n = 500 | not captured | llm (not captured) | tab_2:row12:col7 |
-| σ | `Q315` · not captured | 1.89 | not captured | not captured | llm (not captured) | tab_2:row12:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | PT 50 (h) — Bootstrap result (n = 500) | `Q57` · not captured | 17.9 | h | not captured | llm (not captured) | tab_2:row4:col7 |
+| PK (driver) | PT max | `Q56` · not captured | 0.567 | not captured | not captured | llm (not captured) | tab_2:row5:col1 |
+| PK (driver) | PT max | `Q56` · not captured | 0.00266 | not captured | not captured | llm (not captured) | tab_2:row5:col2 |
+| PK (driver) | PT max | `Q56` · not captured | 0.56 | not captured | not captured | llm (not captured) | tab_2:row5:col3 |
+| PK (driver) | PT max — Original dataset | `Q56` · not captured | 0.57 | not captured | not captured | llm (not captured) | tab_2:row5:col4 |
+| PK (driver) | PT max | `Q56` · not captured | 0.55 | not captured | not captured | llm (not captured) | tab_2:row5:col5 |
+| PK (driver) | PT max | `Q56` · not captured | 0.396 | not captured | not captured | llm (not captured) | tab_2:row5:col6 |
+| PK (driver) | PT max — Bootstrap result (n = 500) | `Q56` · not captured | 0.70 | n = 500 | not captured | llm (not captured) | tab_2:row5:col7 |
+| PK (driver) | γ time | `Q89` · not captured | 0.373 | not captured | not captured | llm (not captured) | tab_2:row6:col1 |
+| PK (driver) | γ time | `Q89` · not captured | 0.129 | not captured | not captured | llm (not captured) | tab_2:row6:col2 |
+| PK (driver) | γ time | `Q89` · not captured | 0.12 | not captured | not captured | llm (not captured) | tab_2:row6:col3 |
+| PK (driver) | γ time — Original dataset | `Q89` · not captured | 0.63 | not captured | not captured | llm (not captured) | tab_2:row6:col4 |
+| PK (driver) | γ time | `Q89` · not captured | 0.38 | not captured | not captured | llm (not captured) | tab_2:row6:col5 |
+| PK (driver) | γ time | `Q89` · not captured | 0.0044 | not captured | not captured | llm (not captured) | tab_2:row6:col6 |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 144 | ng/mL | not captured | llm (not captured) | tab_2:row7:col1 |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 16.5 | ng/mL | not captured | llm (not captured) | tab_2:row7:col2 |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 111.7 | ng/mL | not captured | llm (not captured) | tab_2:row7:col3 |
+| PD (effect) | EC 50 (ng/mL) — Original dataset | `Q321` · not captured | 176.3 | ng/mL | not captured | llm (not captured) | tab_2:row7:col4 |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 143 | ng/mL | not captured | llm (not captured) | tab_2:row7:col5 |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 48.4 | ng/mL | not captured | llm (not captured) | tab_2:row7:col6 |
+| PD (effect) | EC 50 (ng/mL) — Bootstrap result (n = 500) | `Q321` · not captured | 1747 | ng/mL | not captured | llm (not captured) | tab_2:row7:col7 |
+| PD (effect) | E max | `Q320` · not captured | 1 | not captured | not captured | llm (not captured) | tab_2:row8:col1 |
+| PD (effect) | k out (/h) | `Q328` · not captured | 2.82 | /h | not captured | llm (not captured) | tab_2:row9:col1 |
+| PD (effect) | k out (/h) | `Q328` · not captured | 0.268 | /h | not captured | llm (not captured) | tab_2:row9:col2 |
+| PD (effect) | k out (/h) | `Q328` · not captured | 2.29 | /h | not captured | llm (not captured) | tab_2:row9:col3 |
+| PD (effect) | k out (/h) — Original dataset | `Q328` · not captured | 3.35 | /h | not captured | llm (not captured) | tab_2:row9:col4 |
+| PD (effect) | k out (/h) | `Q328` · not captured | 2.75 | /h | not captured | llm (not captured) | tab_2:row9:col5 |
+| PD (effect) | k out (/h) | `Q328` · not captured | 0.961 | /h | not captured | llm (not captured) | tab_2:row9:col6 |
+| PD (effect) | k out (/h) — Bootstrap result (n = 500) | `Q328` · not captured | 10.70 | /h | not captured | llm (not captured) | tab_2:row9:col7 |
+| variability | ω 2 | `Q315` · not captured | 1.32 | not captured | not captured | llm (not captured) | tab_2:row10:col2 |
+| variability | ω 2 | `Q315` · not captured | 0.0089 | not captured | not captured | llm (not captured) | tab_2:row10:col3 |
+| variability | ω 2 — Original dataset | `Q312` · not captured | 1.30 | not captured | not captured | llm (not captured) | tab_2:row10:col4 |
+| variability | ω 2 | `Q315` · not captured | 1.34 | not captured | not captured | llm (not captured) | tab_2:row10:col5 |
+| variability | ω 2 | `Q315` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_2:row10:col6 |
+| variability | ω 2 | `Q315` · not captured | 1.69 | not captured | not captured | llm (not captured) | tab_2:row10:col8 |
+| PD (effect) | ω 2 EC50 | `Q321` · not captured | 4.03 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col1 |
+| PD (effect) | ω 2 EC50 | `Q321` · not captured | 0.0816 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col2 |
+| PD (effect) | ω 2 EC50 | `Q321` · not captured | 3.87 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col3 |
+| PD (effect) | ω 2 EC50 — Original dataset | `Q321` · not captured | 4.19 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col4 |
+| PD (effect) | ω 2 EC50 | `Q321` · not captured | 4.23 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col5 |
+| PD (effect) | ω 2 EC50 | `Q321` · not captured | 2.12 | unknown | not captured | llm_confirmed (not captured) | tab_2:row11:col6 |
+| PD (effect) | ω 2 EC50 — Bootstrap result (n = 500) | `Q321` · not captured | 10.5 | n = 500 | not captured | llm_confirmed (not captured) | tab_2:row11:col7 |
+| variability | σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col2 |
+| variability | σ | `Q315` · not captured | 0.0404 | not captured | not captured | llm (not captured) | tab_2:row12:col3 |
+| variability | σ — Original dataset | `Q315` · not captured | 1.70 | not captured | not captured | llm (not captured) | tab_2:row12:col4 |
+| variability | σ | `Q315` · not captured | 1.86 | not captured | not captured | llm (not captured) | tab_2:row12:col5 |
+| variability | σ | `Q315` · not captured | 1.78 | not captured | not captured | llm (not captured) | tab_2:row12:col6 |
+| variability | σ — Bootstrap result (n = 500) | `Q315` · not captured | 1.67 | n = 500 | not captured | llm (not captured) | tab_2:row12:col7 |
+| variability | σ | `Q315` · not captured | 1.89 | not captured | not captured | llm (not captured) | tab_2:row12:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

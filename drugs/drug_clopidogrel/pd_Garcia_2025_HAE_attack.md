@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Garadacimab (measured concentrations) drives HAE attack: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Garadacimab concentrations (μg/mL) act on the repeated time-to-event hazard of HAE attacks via a maximum-inhibition (Imax) structure that reduces the baseline attack hazard in a time-varying Poisson/repeated time-to-event exposure–response model; the paper does not report numeric Imax, IC50/EC50, or gamma values. The PD biomarker FXIIa-mediated kallikrein activity was described by a direct inhibitory response model, and 200 mg SC once monthly was projected to give 75% of patients a 90% reduction in relative attack risk.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Garcia_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,20 +31,20 @@ Garcia R; Cheng S; Glassman F; Sharma A; De Miguel-Lillo B; Wiens M; Johnston C;
   ·  DOI: [10.1002/psp4.70009](https://doi.org/10.1002/psp4.70009)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F (L/h) — Patients with HAE | `Q27` · not captured | 0.0217 | L/h | not captured | exact (not captured) | psp470009-tbl-0001:row2:col1 |
-| CL/F (L/h) — Patients with HAE | `Q27` · not captured | 0.0243 | L/h | not captured | exact (not captured) | psp470009-tbl-0001:row2:col2 |
-| V2/F (L) — Patients with HAE | `Q82` · not captured | 7.42 | L | not captured | exact (not captured) | psp470009-tbl-0001:row3:col1 |
-| V2/F (L) — Patients with HAE | `Q82` · not captured | 8.36 | L | not captured | exact (not captured) | psp470009-tbl-0001:row3:col2 |
-| AUCtau,ss (μg·h/mL) — Patients with HAE | `Q18` · not captured | 10300 | μg·h/mL | not captured | llm (not captured) | psp470009-tbl-0001:row4:col1 |
-| AUCtau,ss (μg·h/mL) — Patients with HAE | `Q18` · not captured | 9920 | μg·h/mL | not captured | llm (not captured) | psp470009-tbl-0001:row4:col2 |
-| C max,ss (μg/mL) — Patients with HAE | `Q32` · not captured | 21.2 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row5:col1 |
-| C max,ss (μg/mL) — Patients with HAE | `Q32` · not captured | 20.5 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row5:col2 |
-| C min,ss (μg/mL) — Patients with HAE | `Q36` · not captured | 9.30 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row6:col1 |
-| C min,ss (μg/mL) — Patients with HAE | `Q36` · not captured | 8.94 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row6:col2 |
-| t max (h) — Patients with HAE | `Q56` · not captured | 140 | h | not captured | space_fold (not captured) | psp470009-tbl-0001:row7:col2 |
-| t 1/2 (h) — Patients with HAE | `Q57` · not captured | 442 | h | not captured | space_fold (not captured) | psp470009-tbl-0001:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F (L/h) — Patients with HAE | `Q27` · not captured | 0.0217 | L/h | not captured | exact (not captured) | psp470009-tbl-0001:row2:col1 |
+| PK (driver) | CL/F (L/h) — Patients with HAE | `Q27` · not captured | 0.0243 | L/h | not captured | exact (not captured) | psp470009-tbl-0001:row2:col2 |
+| PK (driver) | V2/F (L) — Patients with HAE | `Q82` · not captured | 7.42 | L | not captured | exact (not captured) | psp470009-tbl-0001:row3:col1 |
+| PK (driver) | V2/F (L) — Patients with HAE | `Q82` · not captured | 8.36 | L | not captured | exact (not captured) | psp470009-tbl-0001:row3:col2 |
+| PK (driver) | AUCtau,ss (μg·h/mL) — Patients with HAE | `Q18` · not captured | 10300 | μg·h/mL | not captured | llm (not captured) | psp470009-tbl-0001:row4:col1 |
+| PK (driver) | AUCtau,ss (μg·h/mL) — Patients with HAE | `Q18` · not captured | 9920 | μg·h/mL | not captured | llm (not captured) | psp470009-tbl-0001:row4:col2 |
+| PK (driver) | C max,ss (μg/mL) — Patients with HAE | `Q32` · not captured | 21.2 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row5:col1 |
+| PK (driver) | C max,ss (μg/mL) — Patients with HAE | `Q32` · not captured | 20.5 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row5:col2 |
+| PK (driver) | C min,ss (μg/mL) — Patients with HAE | `Q36` · not captured | 9.30 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row6:col1 |
+| PK (driver) | C min,ss (μg/mL) — Patients with HAE | `Q36` · not captured | 8.94 | μg/mL | not captured | llm (not captured) | psp470009-tbl-0001:row6:col2 |
+| PK (driver) | t max (h) — Patients with HAE | `Q56` · not captured | 140 | h | not captured | space_fold (not captured) | psp470009-tbl-0001:row7:col2 |
+| PK (driver) | t 1/2 (h) — Patients with HAE | `Q57` · not captured | 442 | h | not captured | space_fold (not captured) | psp470009-tbl-0001:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

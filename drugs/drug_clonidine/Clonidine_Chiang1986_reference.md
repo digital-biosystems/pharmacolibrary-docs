@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The clonidine record was rejected because the ocular clearance of 14.9 microliter/min and steady-state volume of distribution of 0.53 ml fall outside physiological plausibility, suggesting a unit or scale extraction error.**
@@ -44,7 +46,7 @@ Chiang CH; Schoenwald RD et al. (1986). Journal of pharmacokinetics and biopharm
 | aqueous humor elimination rate constant k10 | `Q47` · kel | 0.0658 | min-1 | 0.0010966666666666666 | [1] / [min] | not captured | llm_confirmed (0.6) | Chiang_1986:abstract | — | not captured |
 | mean residence time MRTd | `Q53` · MRT | 35.6 | min | 2136.0 | [min] | not captured | llm_confirmed (0.6) | Chiang_1986:abstract | — | not captured |
 | apparent steady-state volume of distribution Vss | `Q65` · Vss | 0.53 | ml | 5.3e-07 | [ml] | not captured | llm_corrected (0.6) | Chiang_1986:abstract | — | not captured |
-| ocular clearance Qe | `Q22` · CL | 14.9 | microliter/min | not captured | [µl] / [min] | not captured | llm_confirmed (0.6) | Chiang_1986:abstract | — | not captured |
+| ocular clearance Qe | `Q22` · CL | 14.9 | microliter/min | 2.4833333333333335e-10 | L/h | not captured | llm_confirmed (0.6) | Chiang_1986:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +62,7 @@ Chiang CH; Schoenwald RD et al. (1986). Journal of pharmacokinetics and biopharm
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- unit re-normalised: CL 'microliter/min' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Chiang_1986_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model

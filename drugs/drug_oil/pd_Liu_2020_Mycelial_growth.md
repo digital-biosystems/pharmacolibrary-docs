@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taiwania flousiana essential oil (measured concentrations) drives mycelial growth (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> T. flousiana essential oil (62.5–1000 µg/mL) inhibits mycelial radial growth of six fungi, expressed as percent inhibition (MGI); the paper does not state a PD mechanism or model, only EC50 values: R. solani 287.94, C. gloeosporioiles 378.90, T. cucumeris 623.36, F. oxysporum 809.07, F. moniliforme 923.03, D. bryoniae 3162.34 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

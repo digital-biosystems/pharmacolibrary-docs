@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ag/MgO nanoparticles (measured concentrations) drives cytochrome C release (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ag/MgO nanoparticle concentrations (μg/mL) inhibit cancer cell growth (24-h exposure), with apoptosis via the mitochondrial pathway including cytochrome C release; the paper reports 24-h IC50 values (e.g. 90.2 μg/mL for Ag/MgO in HT29, versus 4.7 μg/mL oxaliplatin and 0.12 μg/mL paclitaxel) but does not state a specific PD model or mechanism parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Fahdawi_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Al-Fahdawi MQ; Aldoghachi AF; Alhassan FH; Al-Doghachi FAJ; Alshwyeh HA; Rasedee
   ·  DOI: [10.1016/j.heliyon.2023.e15560](https://doi.org/10.1016/j.heliyon.2023.e15560)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μg/mL) — Ag/MgO | `Q322` · not captured | 90.2 | μg/mL | not captured | exact (not captured) | tbl1:row0:col3 |
-| IC50 (μg/mL) — Oxaliplatin | `Q322` · not captured | 4.7 | μg/mL | not captured | exact (not captured) | tbl1:row0:col4 |
-| IC50 (μg/mL) — Ag/MgO | `Q322` · not captured | 85.0 | μg/mL | not captured | exact (not captured) | tbl1:row1:col3 |
-| IC50 (μg/mL) — Paclitaxel | `Q322` · not captured | 0.12 | μg/mL | not captured | exact (not captured) | tbl1:row1:col5 |
-| IC50 (μg/mL) — Oxaliplatin | `Q322` · not captured | 10.5 | μg/mL | not captured | exact (not captured) | tbl1:row2:col4 |
-| IC50 (μg/mL) — Paclitaxel | `Q322` · not captured | 0.8 | μg/mL | not captured | exact (not captured) | tbl1:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μg/mL) — Ag/MgO | `Q322` · not captured | 90.2 | μg/mL | not captured | exact (not captured) | tbl1:row0:col3 |
+| PD (effect) | IC50 (μg/mL) — Oxaliplatin | `Q322` · not captured | 4.7 | μg/mL | not captured | exact (not captured) | tbl1:row0:col4 |
+| PD (effect) | IC50 (μg/mL) — Ag/MgO | `Q322` · not captured | 85.0 | μg/mL | not captured | exact (not captured) | tbl1:row1:col3 |
+| PD (effect) | IC50 (μg/mL) — Paclitaxel | `Q322` · not captured | 0.12 | μg/mL | not captured | exact (not captured) | tbl1:row1:col5 |
+| PD (effect) | IC50 (μg/mL) — Oxaliplatin | `Q322` · not captured | 10.5 | μg/mL | not captured | exact (not captured) | tbl1:row2:col4 |
+| PD (effect) | IC50 (μg/mL) — Paclitaxel | `Q322` · not captured | 0.8 | μg/mL | not captured | exact (not captured) | tbl1:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

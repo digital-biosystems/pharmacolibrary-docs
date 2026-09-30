@@ -5,7 +5,7 @@
 
 # linagliptin — `Linagliptin_GraefeMody2012_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,11 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The linagliptin record was rejected because the paper reports no distribution volume and no clearance or elimination, so it is not a compartmental population PK model, and a structural parameter failed a dimensional check.**
 
 The record for linagliptin in adults with type 2 diabetes mellitus contains only exposure and summary parameters — AUC of 150 nmol·h/L, protein binding of 99%, oral bioavailability of 30%, terminal half-life of 100 hours, 5% excreted unchanged, and an absorption rate constant of 1.63 h−1 — but no volume of distribution and no clearance or elimination rate, so it is an exposure/outcome paper rather than a compartmental population PK model. A dimensional check on a structural parameter failed with a dimension mismatch. The record was also built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. Extracted — linagliptin: AUC 150 nmol · h/L, fu 99 %, Fab 30 %, t1/2z 100 hours, fe 5 %, kabs 1.63 h -1.
+
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of auc: this record has 150, the second reading none; it also differs on 9 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -69,11 +73,41 @@ Graefe-Mody U; Retlich S; Friedrich C et al. (2012). Clinical pharmacokinetics 5
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.375 (6/16 fields) | 10 |
+
+<details><summary>10 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[auc]` | 150 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[excreted in the urine]` | 5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka [h -1 ]]` | 1.63 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[oral dose]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[protein binding at 1 nmol/l]` | not captured | 99 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[protein binding]` | 99 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady-state auc]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady-state c]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal half-life].value` | 100 | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[urine excretion]` | not captured | 5 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q44 | pass | dimensionless | not captured | not captured | not captured | ['Graefe-Mody_2012:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tadayasu_2013:review'] |

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetate (measured concentrations) drives fractional sarcomere shortening (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Sodium acetate (reported as acetate concentration, 1–10 mM) inhibits fractional sarcomere shortening in isolated mouse ventricular myocytes in a concentration-dependent manner fit with a modified Hill (sigmoid Emax) equation; the paper states an IC50 but the numeric value is not given in the excerpts. Mechanistically, acetate stimulates mitochondrial Ca2+ uptake, reducing Ca2+ availability for myofilament activation (Ru-360 attenuated the effect), producing a transient decrease in shortening (5.6 ± 0.5% to 1.5 ± 0.2% at 2 min with 10 mM) that recovers by ~10 min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schooley_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

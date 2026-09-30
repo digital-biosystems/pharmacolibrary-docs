@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A1-E1 (the dose) drives name (in arbitrary units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the fibrin intensity response; it only reports that intravenous A1–E1 (2.5 or 5 mg/kg) inhibits thrombin (Ki = 74 pM for A1–E1, versus 58.7 nM for fragment A1 alone) and that a 5 mg/kg bolus prolonged aPTT more than twofold for 30 min, with fibrin formation visualized in a needle injury thrombosis model. No Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values for the fibrin response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dockerill_2025`
 - **model family:** `unknown`
 - **driver:** `dose_only`

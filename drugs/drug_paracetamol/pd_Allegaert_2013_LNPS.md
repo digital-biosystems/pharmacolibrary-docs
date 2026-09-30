@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paracetamol (concentrations from the PK model of Allegaert_2015) drives Leuven Neonatal Pain Score (in score units): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Paracetamol effect-compartment concentrations (mg/L) were linked to the Leuven Neonatal Pain Score via an Emax model with a delayed effect compartment (ke0 half-life 1.58 h), where paracetamol reduces the pain score from baseline E0 = 4.15 pain units (Emax equivalent to E0) with an EC50 of 2.07 mg/L; an effect-compartment concentration of 10 mg/L was associated with a pain score reduction of 3.4 pain units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Allegaert_2013`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`
@@ -21,22 +31,22 @@ Allegaert K; Naulaers G; Vanhaesebrouck S; Anderson BJ et al. (2013). Paediatric
   ·  DOI: [10.1111/pan.12076](https://doi.org/10.1111/pan.12076)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E0 (pain units) — Estimate % CV % SE % Shrinkage | `Q324` · not captured | 4.15 | pain units | not captured | exact (not captured) | tab_1:row1:col1 |
-| E0 (pain units) | `Q324` · not captured | 123 | pain units | not captured | exact (not captured) | tab_1:row1:col2 |
-| E0 (pain units) | `Q324` · not captured | 16.7 | pain units | not captured | exact (not captured) | tab_1:row1:col3 |
-| E0 (pain units) | `Q324` · not captured | 71.7 | pain units | not captured | exact (not captured) | tab_1:row1:col4 |
-| EC 50 (mgÁl À1 ) — Estimate % CV % SE % Shrinkage | `Q321` · not captured | 2.07 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col1 |
-| EC 50 (mgÁl À1 ) | `Q321` · not captured | 161 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col2 |
-| EC 50 (mgÁl À1 ) | `Q321` · not captured | 42.9 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col3 |
-| EC 50 (mgÁl À1 ) | `Q321` · not captured | 39.5 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col4 |
-| a T 1/2 keo ha — Estimate % CV % SE % Shrinkage | `Q326` · not captured | 1.58 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col1 |
-| a T 1/2 keo ha | `Q326` · not captured | 208 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col2 |
-| a T 1/2 keo ha | `Q326` · not captured | 30.5 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col3 |
-| a T 1/2 keo ha | `Q326` · not captured | 56.8 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col4 |
-| Additive error (pain units) 0.9 | `Q317` · not captured | 28.7 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col2 |
-| Additive error (pain units) 0.9 | `Q317` · not captured | 9.17 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E0 (pain units) — Estimate % CV % SE % Shrinkage | `Q324` · not captured | 4.15 | pain units | not captured | exact (not captured) | tab_1:row1:col1 |
+| PD (effect) | E0 (pain units) | `Q324` · not captured | 123 | pain units | not captured | exact (not captured) | tab_1:row1:col2 |
+| PD (effect) | E0 (pain units) | `Q324` · not captured | 16.7 | pain units | not captured | exact (not captured) | tab_1:row1:col3 |
+| PD (effect) | E0 (pain units) | `Q324` · not captured | 71.7 | pain units | not captured | exact (not captured) | tab_1:row1:col4 |
+| PD (effect) | EC 50 (mgÁl À1 ) — Estimate % CV % SE % Shrinkage | `Q321` · not captured | 2.07 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col1 |
+| PD (effect) | EC 50 (mgÁl À1 ) | `Q321` · not captured | 161 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col2 |
+| PD (effect) | EC 50 (mgÁl À1 ) | `Q321` · not captured | 42.9 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col3 |
+| PD (effect) | EC 50 (mgÁl À1 ) | `Q321` · not captured | 39.5 | mgÁl À1 | not captured | llm (not captured) | tab_1:row2:col4 |
+| PD (effect) | a T 1/2 keo ha — Estimate % CV % SE % Shrinkage | `Q326` · not captured | 1.58 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col1 |
+| PD (effect) | a T 1/2 keo ha | `Q326` · not captured | 208 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col2 |
+| PD (effect) | a T 1/2 keo ha | `Q326` · not captured | 30.5 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col3 |
+| PD (effect) | a T 1/2 keo ha | `Q326` · not captured | 56.8 | not captured | not captured | llm_confirmed (not captured) | tab_1:row3:col4 |
+| variability | Additive error (pain units) 0.9 | `Q317` · not captured | 28.7 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col2 |
+| variability | Additive error (pain units) 0.9 | `Q317` · not captured | 9.17 | not captured | not captured | llm_confirmed (not captured) | tab_1:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

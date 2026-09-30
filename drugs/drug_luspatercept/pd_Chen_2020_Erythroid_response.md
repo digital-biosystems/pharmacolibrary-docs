@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Luspatercept (concentrations from this paper's PK model) drives name (in mHI-E): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Luspatercept serum concentrations (ng/mL) were related to the probability of erythroid response (mHI-E, binary) by logistic regression; a linear exposure–effect model was selected over an Emax model because low-exposure data were insufficient to define the curve shape and both performed similarly. No potency parameters (EC50, Emax, etc.) are reported; slower luspatercept CL/F was independently associated with higher response probability, interpreted as reflecting disease/catabolic severity rather than a direct drug mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

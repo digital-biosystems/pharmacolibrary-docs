@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbendazim drives mortality (in mg kg-1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carbendazim (mg kg−1 dry soil) decreased earthworm (Eisenia andrei) survival in artificial soil containing kaolin, fitted with a three-parameter log-logistic dose-response model; the LC50 was 15.9 mg kg−1 (95% CI 6.70–25.1). The paper does not describe a pharmacodynamic mechanism (e.g., Emax, kin/kout) beyond this empirical dose-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acyclovir (measured concentrations) drives name (in TCID50/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper describes omeprazole (not dexlansoprazole) enhancing acyclovir's inhibition of HSV-1/HSV-2 replication measured as virus titre (TCID50/mL) and CPE; omeprazole alone reduced titres at ≥40 µg/mL, and 80 µg/mL reduced acyclovir IC50 by 10.8-fold (HSV-1, Vero), 47.7-fold (HSV-1, HaCaT), 7.3-fold (HSV-2, Vero) and 12.9-fold (HSV-2, HaCaT). No quantitative PD model (Emax/IC50 fit, kin/kout, ke0) or precise mechanism is given; the enhancement appears distinct from omeprazole's direct antiviral effect and may involve increased intracellular/lysosomal pH.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Michaelis_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

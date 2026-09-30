@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Moringa oleifera protein hydrolysates (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Moringa oleifera protein hydrolysates (mg/mL) stimulate glucose uptake by yeast cells (12.34–35.28% for the trypsin hydrolysate), a mechanism the paper attributes to insulin-mimetic peptides stimulating GluT4 translocation, though no PD model or parameters (Emax, EC50, kin, kout, ke0) are given for this response. The only potency value reported is a DPPH radical-scavenging IC50 of 13.3 mg/mL for the trypsin hydrolysate, which is an antioxidant endpoint, not the glucose-uptake response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bakwo_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Bakwo Bassogog CB; Nyobe CE; Sabine FY; Bruno Dupon AA; Ngui SP; Minka SR; et al
   ·  DOI: [10.1016/j.heliyon.2024.e28368](https://doi.org/10.1016/j.heliyon.2024.e28368)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50(mg/mL) DPPH — Trypsin hydrolysate | `Q322` · not captured | 13.3e2 | mg/mL | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50(mg/mL) DPPH — Trypsin hydrolysate | `Q322` · not captured | 13.3e2 | mg/mL | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

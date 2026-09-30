@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ATP drives arachidonoylethanolamide (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In N2a cells expressing the GRABeCB2.0 sensor, ATP (300 µM) and BzATP (300 µM) stimulate endocannabinoid (AEA/2-AG) production, measured as increased GRABeCB2.0 fluorescence; the ATP-induced response involves PLC, since the PLC inhibitor U73122 (1 µM) inhibited the ATP-induced activation phase by 58%, the plateau by 45% and the decay by 50% (BzATP responses inhibited 0%, 18% and 55%, respectively). The paper does not report an explicit PD model or potency parameters (Imax/IC50/EC50/kin/kout/ke0) for the ATP–AEA relationship; for reference, AEA itself activated the sensor with an EC50 of 58 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

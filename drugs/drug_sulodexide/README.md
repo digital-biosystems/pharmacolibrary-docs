@@ -25,15 +25,15 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_FN.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_HPSE.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_MMP9.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_SDC1.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_SMA.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_VIM.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012](drugs/drug_sulodexide/pd_Masola_2012_migration.md) | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_FN](drugs/drug_sulodexide/pd_Masola_2012_FN.md) | fibronectin expression ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_HPSE](drugs/drug_sulodexide/pd_Masola_2012_HPSE.md) | heparanase-1 gene expression ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_MMP9](drugs/drug_sulodexide/pd_Masola_2012_MMP9.md) | matrix metalloproteinase 9 activity ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_SDC1](drugs/drug_sulodexide/pd_Masola_2012_SDC1.md) | syndecan-1 gene expression ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_SMA](drugs/drug_sulodexide/pd_Masola_2012_SMA.md) | alpha-smooth muscle actin expression ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_VIM](drugs/drug_sulodexide/pd_Masola_2012_VIM.md) | vimentin expression ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Masola_2012_migration](drugs/drug_sulodexide/pd_Masola_2012_migration.md) | cell migration ← sulodexide · inhibition effect | — | Masola V et al., A new mechanism of action of sulodexide…, Journal of translational me… (2012) | [10.1186/1479-5876-10-213](https://doi.org/10.1186/1479-5876-10-213) |
 
 ## ADME sites
 

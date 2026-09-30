@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salicylic acid, paracetamol, clofibrinic acid, methotrexate (measured concentrations) drive bio-regard to the registration of pharmaceuticals (in none): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Paracetamol concentrations (mg/L) inhibit algal growth, with an EC50 of 134 mg/L; the paper reports this as a 50% growth-inhibition concentration in the algae test and does not describe a pharmacodynamic mechanism beyond this Emax-type inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henschel_1997`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Henschel KP; Wenzel A; Diedrich M; Fliedner A et al. (1997). Regulatory toxicolo
   ·  DOI: [10.1006/rtph.1997.1102](https://doi.org/10.1006/rtph.1997.1102)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 values (mg/L) Algae | `Q321` · not captured | 134 | mg/L | not captured | review_gapfill (not captured) | Henschel_1997:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 values (mg/L) Algae | `Q321` · not captured | 134 | mg/L | not captured | review_gapfill (not captured) | Henschel_1997:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

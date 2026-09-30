@@ -17,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Forsdahl_2018_reference](drugs/drug_meldonium/Meldonium_Forsdahl2018_reference.md) | 1-compartment (no model) | 0 | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Forsdahl_2018_reference](drugs/drug_meldonium/Meldonium_Forsdahl2018_reference.md) | — | 1-compartment (no model) | 0 | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

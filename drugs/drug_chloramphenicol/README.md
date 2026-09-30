@@ -25,9 +25,9 @@ The FDA has withdrawn all oral drug products containing chloramphenicol, due to 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | 1-compartment, IV | 1 | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Anderson_1983_reference](drugs/drug_chloramphenicol/Chloramphenicol_Anderson1983_reference.md) | held back | 1-compartment, IV | 1 | Anderson KL et al., Pharmacokinetics of chloramphenicol in…, Journal of veterinary pharm… (1983) | [10.1111/j.1365-2885.1983.tb00005.x](https://doi.org/10.1111/j.1365-2885.1983.tb00005.x) |
 
 ## ADME sites
 

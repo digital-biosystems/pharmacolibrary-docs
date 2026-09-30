@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives neuroinflammation (in intensity): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the effect of A36 (compound 82) on neuroinflammation (GFAP intensity); it only states qualitatively that A36, a CAST–calpain-2 complex stabilizer that prevents CAST degradation and limits calpain-2 activation, lowered neuroinflammation in PS19 tauopathy mice. Reported potency values concern other responses: EC50 ~2.77 μM (TMRM mitochondrial protection), ~1.55 μM (MTT viability), and ~3.55 μM (CAST protein up-regulation), all in vitro.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

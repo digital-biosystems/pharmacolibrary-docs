@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MTFD-MPAB (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Racemic mTFD-MPAB concentration-dependently enhanced the equilibrium binding of [3H]ACh to Torpedo nAChR-rich membranes with an EC50 of 9 µM, acting as a positive allosteric modulator at the transmitter binding sites (enhancement of agonist binding rather than inhibition of production or elimination; no kin, kout, ke0, Emax, or Hill coefficient values are reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hamouda_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

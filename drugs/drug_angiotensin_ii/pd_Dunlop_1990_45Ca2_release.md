@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ins(1,4,5)P3 drive 45Ca2+ release (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In saponin-permeabilized mesangial cells, Ins(1,4,5)P3 (not angiotensin II directly) drives 45Ca2+ release from intracellular stores; pre-incubation with exogenous PGE2 or 8-bromo cyclic AMP decreases the sensitivity of this release (a rightward shift of the Ins(1,4,5)P3 concentration–response), raising the EC50 from 0.091±0.021 µM in untreated cells to 0.182±0.024 µM (PGE2) and 0.457±0.031 µM (8-bromo cyclic AMP). The paper does not state an explicit PD model (e.g. Emax/kin/kout parameters) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dunlop_1990`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

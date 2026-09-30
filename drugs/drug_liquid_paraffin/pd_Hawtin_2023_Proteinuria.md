@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking MHV370 concentrations to proteinuria; proteinuria (mg/mL, or dipstick score) was only reported as a disease-progression readout in NZB/W F1 mice treated with MHV370-laced food or oral b.i.d. dosing, with inhibition already at 0.01% MHV370 in food. The only potency values given are in vitro/ex vivo: IC50 of 15 ± 10 nM against CL307- and 7 ± 0.1 nM against R848-driven TLR7 reporter activity, and an IC50 of 35 nM for the ex vivo blood CD69 PD marker; no Imax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

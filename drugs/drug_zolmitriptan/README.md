@@ -25,15 +25,15 @@ Zolmitriptan was first approved by the FDA for sale by Zeneca Pharmaceuticals un
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Zhou_2017_reference](drugs/drug_zolmitriptan/Zolmitriptan_Zhou2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Zhou W et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2017) | [10.1002/jcph.935](https://doi.org/10.1002/jcph.935) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [MaassenVanDenBrink_1998](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_unknown.md) | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [MaassenVanDenBrink_1998_unknown](drugs/drug_zolmitriptan/pd_MaassenVanDenBrink_1998_unknown.md) | coronary artery contraction ← unknown · direct Emax (saturable) effect | — | MaassenVanDenBrink A et al., Coronary side-effect potential of curre…, Circulation (1998) | [10.1161/01.cir.98.1.25](https://doi.org/10.1161/01.cir.98.1.25) |
 
 ## ADME sites
 
@@ -46,6 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` unknown | DrugBank actor |
 | absorption | placenta | `ABCB1` unknown | DrugBank actor |
 | absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
 | metabolism | brain | `MAOA` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `MAOA` substrate | DrugBank actor |
 | metabolism | small intestine | `MAOA` substrate | DrugBank actor |

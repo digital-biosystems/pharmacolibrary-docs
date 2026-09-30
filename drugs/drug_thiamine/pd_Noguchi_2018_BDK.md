@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thiamine pyrophosphate (measured concentrations) drives BCKDH kinase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Thiamine pyrophosphate (TPP) directly inhibits BCKDH kinase (BDK) activity of the partially purified BCKDH-BDK complex in vitro, with an IC50 of 2.5 µM in the presence of 1 µM free Ca2+ (inhibition is Ca2+-dependent and negligible without Ca2+); the IC50 of free Ca2+ for this inhibition with 5 µM TPP was 0.36 µM. No PD model structure (e.g., Emax, kin/kout) is given, only these in vitro concentration-response values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Noguchi_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

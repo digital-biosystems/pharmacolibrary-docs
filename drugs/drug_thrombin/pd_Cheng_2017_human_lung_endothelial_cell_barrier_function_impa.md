@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CXCL12 (measured concentrations) drives name (in percent): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In hPPAEC permeability assays, CXCL12 variants (CXCL12α, β, CXCL121, K27A/R41A/R47A) act as CXCR4 agonists that inhibit thrombin-induced impairment of endothelial barrier function, with end-point (t = 255 min) sigmoid dose-response EC50 values of 0.05–0.5 nM, while CXCL12 R47E and CXCL12 S-S4V were about one order of magnitude less potent (EC50 0.5–50 nM) and CXCL12(3–68) showed reduced efficacy; the listed binding EC50s were 105–117 nM for CXCR4 and 0.7–88 nM for ACKR3. The paper does not state Imax, kin, kout, or ke0 values, and attributes the protection to CXCR4 agonist activity plus interactions with endothelial heparan sulfate proteoglycans.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cheng_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Cheng YH; Eby JM; LaPorte HM; Volkman BF; Majetschak M et al. (2017). PloS one 1
   ·  DOI: [10.1371/journal.pone.0187949](https://doi.org/10.1371/journal.pone.0187949)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CXCL12 S-S4V — CXCR4 | `Q322` · not captured | 117 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col2 |
-| CXCL12 S-S4V — ACKR3 | `Q322` · not captured | 0.7 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col3 |
-| CXCL12 S-S4V — ACKR3 | `Q322` · not captured | 88 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col4 |
-| CXCL12 R47E — CXCR4 | `Q322` · not captured | 105 | nM | not captured | llm (not captured) | pone.0187949.t001:row7:col2 |
-| CXCL12 K27A R41A R47A — CXCR4 | `Q322` · not captured | 111 | nM | not captured | llm (not captured) | pone.0187949.t001:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CXCL12 S-S4V — CXCR4 | `Q322` · not captured | 117 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col2 |
+| PD (effect) | CXCL12 S-S4V — ACKR3 | `Q322` · not captured | 0.7 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col3 |
+| PD (effect) | CXCL12 S-S4V — ACKR3 | `Q322` · not captured | 88 | nM | not captured | llm (not captured) | pone.0187949.t001:row6:col4 |
+| PD (effect) | CXCL12 R47E — CXCR4 | `Q322` · not captured | 105 | nM | not captured | llm (not captured) | pone.0187949.t001:row7:col2 |
+| PD (effect) | CXCL12 K27A R41A R47A — CXCR4 | `Q322` · not captured | 111 | nM | not captured | llm (not captured) | pone.0187949.t001:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

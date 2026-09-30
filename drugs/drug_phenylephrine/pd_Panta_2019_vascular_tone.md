@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sphingosine-1-phosphate (measured concentrations) drives name (in % of reference contraction): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In murine aortas, sphingosine-1-phosphate (S1P, 5 µM, 20-min exposure) acts on phenylephrine-induced vascular tone (expressed as % of reference contraction to 124 mM K+), enhancing α1-adrenergic vasoconstriction by increasing the Emax and decreasing the EC50 of PE dose-response curves; the paper does not report numeric Emax, EC50, or potency values. The mechanism is not a direct Emax effect on the response but S1P2 receptor–G12/13–ROCK signaling, since the potentiation was abolished in S1P2-deficient vessels, by smooth muscle G12/13 deletion, and by ROCK inhibitors Y-27632 (2 µM) or fasudil (10 µM), and persisted up to three hours after S1P exposure.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Panta_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

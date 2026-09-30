@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lupeol acetate (measured concentrations) drives name (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lupeol acetate (ACLUPE) concentrations inhibit amastigote viability of T. cruzi, with an IC50 of 32.55 ± 1.2 μg/mL (moderate potency); the paper does not state a pharmacodynamic mechanism (e.g., Emax model, kin/kout) for this effect, only reporting the in vitro IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pardo-Rodriguez_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

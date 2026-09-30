@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diospyros villosa extracts and silver nanoparticles drive name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Diospyros villosa extracts (methanol, chloroform, hexane; leaf and stem) and their biosynthesized silver nanoparticles, tested at concentrations in µg mL−1, inhibit cell viability (%) of MCF-7, A549 and HEK293 cell lines in an MTT assay, with potency reported as IC50 values (e.g. methanolic leaf extract 0.16 µg mL−1, chloroform leaf 26.07 µg mL−1, hexane leaf 26.64 µg mL−1, camptothecin 36.54 µg mL−1). The paper does not state a pharmacodynamic mechanism or model (no Emax, kin/kout or effect-compartment parameters); it only reports IC50 values from concentration–viability data.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Adu_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Adu OT; Naidoo Y; Lin J; Dwarka D; Mellem J; Murthy HN; et al. et al. (2023). Pl
   ·  DOI: [10.3390/plants12040769](https://doi.org/10.3390/plants12040769)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Methanol Leaf Extr. | `Q322` · not captured | 0.16 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col1 |
-| IC50 — Chloroform Leaf Extr. | `Q322` · not captured | 26.07 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col2 |
-| IC50 — Hexane Leaf Extr. | `Q322` · not captured | 26.64 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col3 |
-| IC50 — Camptothecin | `Q322` · not captured | 36.54 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Methanol Leaf Extr. | `Q322` · not captured | 0.16 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col1 |
+| PD (effect) | IC50 — Chloroform Leaf Extr. | `Q322` · not captured | 26.07 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col2 |
+| PD (effect) | IC50 — Hexane Leaf Extr. | `Q322` · not captured | 26.64 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col3 |
+| PD (effect) | IC50 — Camptothecin | `Q322` · not captured | 36.54 | µg mL−1 | not captured | exact (not captured) | plants-12-00769-t003:row1:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

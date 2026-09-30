@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 8d (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Compound 8d acts as a CB2R agonist decreasing intracellular cAMP accumulation in CHO cells expressing hCB2R (measured after NKH 477-stimulated adenylyl cyclase activation), with an EC50 of 112 nM (0.11 μM); the paper does not describe a kinetic PD mechanism beyond this agonist potency.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Faúndez-Parraguez_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Faúndez-Parraguez M; Alarcón-Miranda C; Cho YH; Pessoa-Mahana H; Gallardo-Garr
   ·  DOI: [10.3390/ijms222011212](https://doi.org/10.3390/ijms222011212)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 112 | nM | not captured | review_gapfill (not captured) | Faúndez-Parraguez_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 112 | nM | not captured | review_gapfill (not captured) | Faúndez-Parraguez_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

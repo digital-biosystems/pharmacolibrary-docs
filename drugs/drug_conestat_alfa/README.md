@@ -24,9 +24,9 @@ Marketed as the product Ruconest (FDA), this drug is indicated for the treatment
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Farrell_2013_reference](drugs/drug_conestat_alfa/ConestatAlfa_Farrell2013_reference.md) | 1-compartment, IV | 3 (+3 cov.) | Farrell C et al., Population pharmacokinetics of recombin…, British journal of clinical… (2013) | [10.1111/bcp.12132](https://doi.org/10.1111/bcp.12132) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Farrell_2013_reference](drugs/drug_conestat_alfa/ConestatAlfa_Farrell2013_reference.md) | held back | 1-compartment, IV | 3 (+3 cov.) | Farrell C et al., Population pharmacokinetics of recombin…, British journal of clinical… (2013) | [10.1111/bcp.12132](https://doi.org/10.1111/bcp.12132) |
 
 ## ADME sites
 

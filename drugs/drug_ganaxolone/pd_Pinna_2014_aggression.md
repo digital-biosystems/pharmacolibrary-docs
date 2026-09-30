@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ganaxolone (the dose) drives aggression (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ganaxolone (3.75–30 mg/kg s.c.) dose-dependently inhibited aggressive behavior in socially isolated mice, with an EC50 of 9.7 mg/kg; the paper does not state a pharmacodynamic mechanism beyond a dose–response (Emax-type) relationship, and no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pinna_2014`
 - **model family:** `emax`
 - **driver:** `dose_only`

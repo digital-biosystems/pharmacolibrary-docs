@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remimazolam (measured concentrations) drives bispectral index (in unitless): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Remimazolam (RMZ) plasma concentrations drive inhibition of the bispectral index (BIS) via a maximum inhibitory (Imax) model with an effect compartment (ke0 = 0.135 min⁻¹), with Emax = 54.0 and population mean EC50 = 79.6 ng/mL; the paper does not state a gamma (Hill) coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ueshima_2025`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Ueshima S; Nagahara S; Nakaya K; Kawamura M; Hira D; Matsuura Y; et al. et al. (
   ·  DOI: [10.1038/s41598-025-10015-z](https://doi.org/10.1038/s41598-025-10015-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| θ CL M (L/min) | `Q22` · not captured | 25.1 | L/min | not captured | boundary (not captured) | tab_1:row3:col2 |
-| θ V 1M (L) | `Q63` · not captured | 26.7 | L | not captured | llm (not captured) | tab_1:row5:col2 |
-| θ E max | `Q320` · not captured | 54.0 | not captured | not captured | review_gapfill (not captured) | Ueshima_2025:review |
-| population mean EC 50 of RMZ | `Q321` · not captured | 79.6 | ng/mL | not captured | review_gapfill (not captured) | Ueshima_2025:review |
-| θ k e0 ( min -1 ) | `Q324` · not captured | 0.135 | min -1 | not captured | review_gapfill (not captured) | Ueshima_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | θ CL M (L/min) | `Q22` · not captured | 25.1 | L/min | not captured | boundary (not captured) | tab_1:row3:col2 |
+| PK (driver) | θ V 1M (L) | `Q63` · not captured | 26.7 | L | not captured | llm (not captured) | tab_1:row5:col2 |
+| PD (effect) | θ E max | `Q320` · not captured | 54.0 | not captured | not captured | review_gapfill (not captured) | Ueshima_2025:review |
+| PD (effect) | population mean EC 50 of RMZ | `Q321` · not captured | 79.6 | ng/mL | not captured | review_gapfill (not captured) | Ueshima_2025:review |
+| PD (effect) | θ k e0 ( min -1 ) | `Q324` · not captured | 0.135 | min -1 | not captured | review_gapfill (not captured) | Ueshima_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

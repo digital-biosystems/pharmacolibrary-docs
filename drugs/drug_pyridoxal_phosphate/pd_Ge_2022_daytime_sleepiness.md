@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5'-phosphate drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> This cross-sectional study reports a non-linear negative association between serum pyridoxal 5'-phosphate (PLP) concentration and the binary self-reported outcome daytime sleepiness (lower odds at higher PLP, e.g. OR 0.76, 95% CI 0.59–0.99 for Q2 vs Q1; significant mainly in males), with the association noted up to about 220 nmol/L and the lowest OR around 75 nmol/L. No pharmacodynamic mechanism, model structure, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0) are given in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ge_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

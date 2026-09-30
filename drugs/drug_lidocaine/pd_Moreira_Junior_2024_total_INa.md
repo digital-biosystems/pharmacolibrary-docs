@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eugenol (measured concentrations) drives name (in fractional current): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Lidocaine (LID) inhibits voltage-activated total sodium current (INa, fractional current) in DRG neurons via a direct sigmoid Emax concentration–response relationship, with an IC50 of 1.42 mM for total INa (holding potential −110 mV, test pulse to +20 mV) and a Hill coefficient of 1.02 ± 0.169, consistent with orthosteric/state-dependent VGSC blockade; the paper does not report Imax, kin, kout, or ke0. Pre-inhibition with LID (0.5 mM, ~25% of total INa) significantly altered eugenol's inhibition of total INa (IC50 1.84 ± 0.274 mM vs. 2.27 ± 0.075 mM alone; Hill coefficient reduced from 1.95 ± 0.120 to 0.98 ± 0.140), suggesting the two drugs inhibit INa by partly different mechanisms.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Moreira-Junior_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Moreira-Junior L; Leal-Cardoso JH; Cassola AC; Carvalho-de-Souza JL et al. (2024
   ·  DOI: [10.3389/fphar.2024.1354737](https://doi.org/10.3389/fphar.2024.1354737)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mM) — LID | `Q322` · not captured | 1.02 | mM | not captured | exact (not captured) | T1:row1:col3 |
-| IC50 (mM) — LID (EUG 1.3 mM) | `Q322` · not captured | 1.02 | mM | not captured | exact (not captured) | T1:row1:col5 |
-| IC50 (mM) — LID | `Q322` · not captured | 0.67 | mM | not captured | exact (not captured) | T1:row1:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mM) — LID | `Q322` · not captured | 1.02 | mM | not captured | exact (not captured) | T1:row1:col3 |
+| PD (effect) | IC50 (mM) — LID (EUG 1.3 mM) | `Q322` · not captured | 1.02 | mM | not captured | exact (not captured) | T1:row1:col5 |
+| PD (effect) | IC50 (mM) — LID | `Q322` · not captured | 0.67 | mM | not captured | exact (not captured) | T1:row1:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

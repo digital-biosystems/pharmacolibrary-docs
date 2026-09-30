@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ocrelizumab (measured concentrations) drives CD19+ lymphocyte count (in /mm3): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Ocrelizumab serum concentration (mg/L) acts on the CD19+ lymphocyte count (/mm3) by increasing the elimination of CD19+ cells in an Emax fashion (dB/dt = kin − kout·(1 + Emax·C/(EC50 + C))·B), with kin = B0·kout assumed at steady state; kout was fixed to 0.02/day, while Emax and EC50 values are not stated in the excerpts. A target-mediated-disposition alternative described OCR clearance as target-mediated via CD19+ counts (CLT0·e^(−kdes·t)·C·B/V1), but this was simplified away in the final model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Serkland_2026`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`
@@ -21,30 +31,30 @@ Serkland TT; Oma AF; Hallin EI; Øverås MH; Nygaard GO; Myhr KM; Torkildsen Ø;
   ·  DOI: [10.1007/s40262-026-01692-8](https://doi.org/10.1007/s40262-026-01692-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V 1 (L) — Estimate (RSE%) | `Q63` · not captured | 2.58 | L | not captured | space_fold (not captured) | tab_1:row2:col1 |
-| V 1 (L) — 95% CI | `Q63` · not captured | 2.37 | L | not captured | space_fold (not captured) | tab_1:row2:col2 |
-| V 2 (L) — Estimate (RSE%) | `Q64` · not captured | 1.95 | L | not captured | space_fold (not captured) | tab_1:row3:col1 |
-| V 2 (L) — 95% CI | `Q64` · not captured | 1.75 | L | not captured | space_fold (not captured) | tab_1:row3:col2 |
-| CL (L/day) — Estimate (RSE%) | `Q22` · not captured | 0.153 | L/day | not captured | exact (not captured) | tab_1:row4:col1 |
-| CL (L/day) — 95% CI | `Q22` · not captured | 0.133 | L/day | not captured | exact (not captured) | tab_1:row4:col2 |
-| Q (L/day) — Estimate (RSE%) | `Q30` · not captured | 0.220 | L/day | not captured | exact (not captured) | tab_1:row5:col1 |
-| Q (L/day) — 95% CI | `Q30` · not captured | 0.163 | L/day | not captured | exact (not captured) | tab_1:row5:col2 |
-| k out (1/day) — Estimate (RSE%) | `Q328` · not captured | 0.02 | RSE% | not captured | space_fold (not captured) | tab_1:row6:col1 |
-| k deg (L/(day⋅mg)) — Estimate (RSE%) | `Q328` · not captured | 1.70 | RSE% | not captured | llm (not captured) | tab_1:row7:col1 |
-| ω V1 — Estimate (RSE%) | `Q63` · not captured | 0.138 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row9:col1 |
-| ω V1 — 95% CI | `Q63` · not captured | 0.0882 | unit | not captured | llm_confirmed (not captured) | tab_1:row9:col2 |
-| ω V2 — Estimate (RSE%) | `Q64` · not captured | 0.109 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row10:col1 |
-| ω V2 — 95% CI | `Q64` · not captured | 0.0534 | unit | not captured | llm_confirmed (not captured) | tab_1:row10:col2 |
-| ω CL — Estimate (RSE%) | `Q22` · not captured | 0.234 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row11:col1 |
-| ω CL — 95% CI | `Q358` · not captured | 0.154 | unit | not captured | llm_corrected (not captured) | tab_1:row11:col2 |
-| σ add,OCR — Estimate (RSE%) | `Q317` · not captured | 0.545 | RSE% | not captured | llm (not captured) | tab_1:row13:col1 |
-| σ add,OCR — 95% CI | `Q317` · not captured | 0.390 | unit | not captured | llm (not captured) | tab_1:row13:col2 |
-| σ prop,OCR — Estimate (RSE%) | `Q316` · not captured | 0.0662 | RSE% | not captured | llm (not captured) | tab_1:row14:col1 |
-| σ prop,OCR — 95% CI | `Q316` · not captured | 0.0510 | unit | not captured | llm (not captured) | tab_1:row14:col2 |
-| σ add,CD19+ — Estimate (RSE%) | `Q315` · not captured | 2.28 | RSE% | not captured | llm (not captured) | tab_1:row15:col1 |
-| σ add,CD19+ — 95% CI | `Q315` · not captured | 1.72 | unit | not captured | llm (not captured) | tab_1:row15:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V 1 (L) — Estimate (RSE%) | `Q63` · not captured | 2.58 | L | not captured | space_fold (not captured) | tab_1:row2:col1 |
+| PK (driver) | V 1 (L) — 95% CI | `Q63` · not captured | 2.37 | L | not captured | space_fold (not captured) | tab_1:row2:col2 |
+| PK (driver) | V 2 (L) — Estimate (RSE%) | `Q64` · not captured | 1.95 | L | not captured | space_fold (not captured) | tab_1:row3:col1 |
+| PK (driver) | V 2 (L) — 95% CI | `Q64` · not captured | 1.75 | L | not captured | space_fold (not captured) | tab_1:row3:col2 |
+| PK (driver) | CL (L/day) — Estimate (RSE%) | `Q22` · not captured | 0.153 | L/day | not captured | exact (not captured) | tab_1:row4:col1 |
+| PK (driver) | CL (L/day) — 95% CI | `Q22` · not captured | 0.133 | L/day | not captured | exact (not captured) | tab_1:row4:col2 |
+| PK (driver) | Q (L/day) — Estimate (RSE%) | `Q30` · not captured | 0.220 | L/day | not captured | exact (not captured) | tab_1:row5:col1 |
+| PK (driver) | Q (L/day) — 95% CI | `Q30` · not captured | 0.163 | L/day | not captured | exact (not captured) | tab_1:row5:col2 |
+| PD (effect) | k out (1/day) — Estimate (RSE%) | `Q328` · not captured | 0.02 | RSE% | not captured | space_fold (not captured) | tab_1:row6:col1 |
+| PD (effect) | k deg (L/(day⋅mg)) — Estimate (RSE%) | `Q328` · not captured | 1.70 | RSE% | not captured | llm (not captured) | tab_1:row7:col1 |
+| PK (driver) | ω V1 — Estimate (RSE%) | `Q63` · not captured | 0.138 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row9:col1 |
+| PK (driver) | ω V1 — 95% CI | `Q63` · not captured | 0.0882 | unit | not captured | llm_confirmed (not captured) | tab_1:row9:col2 |
+| PK (driver) | ω V2 — Estimate (RSE%) | `Q64` · not captured | 0.109 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row10:col1 |
+| PK (driver) | ω V2 — 95% CI | `Q64` · not captured | 0.0534 | unit | not captured | llm_confirmed (not captured) | tab_1:row10:col2 |
+| PK (driver) | ω CL — Estimate (RSE%) | `Q22` · not captured | 0.234 | RSE% | not captured | llm_confirmed (not captured) | tab_1:row11:col1 |
+| PK (driver) | ω CL — 95% CI | `Q358` · not captured | 0.154 | unit | not captured | llm_corrected (not captured) | tab_1:row11:col2 |
+| variability | σ add,OCR — Estimate (RSE%) | `Q317` · not captured | 0.545 | RSE% | not captured | llm (not captured) | tab_1:row13:col1 |
+| variability | σ add,OCR — 95% CI | `Q317` · not captured | 0.390 | unit | not captured | llm (not captured) | tab_1:row13:col2 |
+| variability | σ prop,OCR — Estimate (RSE%) | `Q316` · not captured | 0.0662 | RSE% | not captured | llm (not captured) | tab_1:row14:col1 |
+| variability | σ prop,OCR — 95% CI | `Q316` · not captured | 0.0510 | unit | not captured | llm (not captured) | tab_1:row14:col2 |
+| variability | σ add,CD19+ — Estimate (RSE%) | `Q315` · not captured | 2.28 | RSE% | not captured | llm (not captured) | tab_1:row15:col1 |
+| variability | σ add,CD19+ — 95% CI | `Q315` · not captured | 1.72 | unit | not captured | llm (not captured) | tab_1:row15:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

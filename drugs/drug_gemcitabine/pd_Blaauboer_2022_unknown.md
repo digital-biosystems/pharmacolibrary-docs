@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives tumor size (in mm3) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine acts on KPC3 pancreatic tumor cell growth in vitro, with an EC50 of 1.5 ng/ml (reduced 1.3-fold to 1.1 ng/ml after IFN-β pre-treatment); the paper does not describe a pharmacodynamic model or mechanism for the effect on tumor size, and the 51% maximal inhibition in the record is not supported by the excerpts (51 refers to a 51-fold Oas1a expression increase).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blaauboer_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Blaauboer A; Van Koetsveld PM; Mustafa DAM; Dumas J; Dogan F; Van Zwienen S; et 
   ·  DOI: [10.3892/ijo.2022.5387](https://doi.org/10.3892/ijo.2022.5387)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 1.5 | ng/ml | not captured | review_gapfill (not captured) | Blaauboer_2022:review |
-| maximal inhibition | `Q323` · not captured | 51 | % | not captured | review_gapfill (not captured) | Blaauboer_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 1.5 | ng/ml | not captured | review_gapfill (not captured) | Blaauboer_2022:review |
+| PD (effect) | maximal inhibition | `Q323` · not captured | 51 | % | not captured | review_gapfill (not captured) | Blaauboer_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 3-(1H-tetrazol-5yl)-9H-thioxanthene-9-one-10,10-dioxide (measured concentrations) drive name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for acenocoumarol; it concerns bronchodilator compounds (e.g. 3-(1H-tetrazol-5yl)-9H-thioxanthene-9-one-10,10-dioxide) whose percent of relaxation at 0.1 mM and pD2 values are reported (theophylline 77.1%; selected compounds 91, 92, 85, 69 and 74%), with no mechanism, Emax/IC50/EC50, kin/kout or ke0 values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ríos-Santamarina_1998`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

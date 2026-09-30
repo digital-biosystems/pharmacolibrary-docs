@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taspoglutide (measured concentrations) drives HbA1c (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the paper, HbA1c is not driven directly by taspoglutide concentrations but by the model-predicted FPG response (metric) from the FPG MBMA, via an Emax-type drug-effect term added to a first-order placebo response: Drug_response = placebo + Dmax×metric/(DI50+metric)×(1−e^(−kdrug·t)). For HbA1c, the maximum drug effect beyond placebo was Dmax_Hb = −1.74% on top of a placebo effect Pmax_Hb = −0.253%, with half-maximal effect at an FPG change of −1.81 mmol/l; the paper does not state the HbA1c kdrug or a direct concentration-based IC50 for HbA1c (the 25.3 pmol/l potency refers to the FPG model).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -19,18 +29,18 @@
 not matched (stem Li_2015)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pmax_F(mmol/l)e — Estimate | `Q32` · not captured | -0.371 | not captured | not captured | llm (not captured) | t0010:row1:col1 |
-| Kp_F (1/week)e — Estimate | `Q358` · not captured | 0.781 | not captured | not captured | llm (not captured) | t0010:row2:col1 |
-| Dmax_F (mmol/l) — Estimate | `Q32` · not captured | -2.39 | mmol/l | not captured | llm (not captured) | t0010:row3:col1 |
-| Dmax_F (mmol/l) — R.S.E (%) | `Q32` · not captured | 6 | mmol/l | not captured | llm (not captured) | t0010:row3:col2 |
-| Dmax_F (mmol/l) — ITVd (%) | `Q32` · not captured | 24.8 | mmol/l | not captured | llm (not captured) | t0010:row3:col3 |
-| IC50_F (pmol/l) — Estimate | `Q322` · not captured | 25.3 | pmol/l | not captured | llm (not captured) | t0010:row4:col1 |
-| IC50_F (pmol/l) — R.S.E (%) | `Q322` · not captured | 0 | pmol/l | not captured | llm (not captured) | t0010:row4:col2 |
-| IC50_F (pmol/l) — ITVd (%) | `Q322` · not captured | 5.43 | pmol/l | not captured | llm (not captured) | t0010:row4:col3 |
-| Kdrug_F (1/week) — Estimate | `Q358` · not captured | 2.0 | not captured | not captured | llm (not captured) | t0010:row5:col1 |
-| Kdrug_F (1/week) — ITVd (%) | `Q358` · not captured | 12.5 | not captured | not captured | llm (not captured) | t0010:row5:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Pmax_F(mmol/l)e — Estimate | `Q32` · not captured | -0.371 | not captured | not captured | llm (not captured) | t0010:row1:col1 |
+| PK (driver) | Kp_F (1/week)e — Estimate | `Q358` · not captured | 0.781 | not captured | not captured | llm (not captured) | t0010:row2:col1 |
+| PK (driver) | Dmax_F (mmol/l) — Estimate | `Q32` · not captured | -2.39 | mmol/l | not captured | llm (not captured) | t0010:row3:col1 |
+| PK (driver) | Dmax_F (mmol/l) — R.S.E (%) | `Q32` · not captured | 6 | mmol/l | not captured | llm (not captured) | t0010:row3:col2 |
+| PK (driver) | Dmax_F (mmol/l) — ITVd (%) | `Q32` · not captured | 24.8 | mmol/l | not captured | llm (not captured) | t0010:row3:col3 |
+| PD (effect) | IC50_F (pmol/l) — Estimate | `Q322` · not captured | 25.3 | pmol/l | not captured | llm (not captured) | t0010:row4:col1 |
+| PD (effect) | IC50_F (pmol/l) — R.S.E (%) | `Q322` · not captured | 0 | pmol/l | not captured | llm (not captured) | t0010:row4:col2 |
+| PD (effect) | IC50_F (pmol/l) — ITVd (%) | `Q322` · not captured | 5.43 | pmol/l | not captured | llm (not captured) | t0010:row4:col3 |
+| PK (driver) | Kdrug_F (1/week) — Estimate | `Q358` · not captured | 2.0 | not captured | not captured | llm (not captured) | t0010:row5:col1 |
+| PK (driver) | Kdrug_F (1/week) — ITVd (%) | `Q358` · not captured | 12.5 | not captured | not captured | llm (not captured) | t0010:row5:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

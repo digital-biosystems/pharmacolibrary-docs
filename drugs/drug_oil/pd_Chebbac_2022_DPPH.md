@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Artemisia aragonensis essential oil (measured concentrations) drives DPPH inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Artemisia aragonensis essential oil concentrations (0.0019–1.0 mg/mL) inhibit DPPH free radical scavenging measured as percent inhibition; the paper does not describe a pharmacodynamic mechanism or model, reporting only a graphical IC50 of 0.034 ± 0.004 mg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chebbac_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

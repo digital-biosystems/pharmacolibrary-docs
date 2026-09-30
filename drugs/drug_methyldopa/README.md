@@ -32,9 +32,9 @@ First introduced in 1960 as an antihypertensive agent, methyldopa was considered
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
 
 ## ADME sites
 

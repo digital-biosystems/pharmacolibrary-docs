@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Kava extract (measured concentrations) drives MAO-B activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal PD model; it reports that Kava extract (not oxyquinoline) inhibits mouse brain MAO-B activity ex vivo after 21 days of gavage (10–400 mg/kg), with significant inhibition in cortex at 10 mg/kg and in the substantia nigra region at 10 and 100 mg/kg, without affecting MAO-A. In vitro, Kava extract reversibly inhibited MAO-B with IC50 = 14.62 μg/mL, increasing Km at 10 and 30 μg/mL (competitive-type inhibition); no Imax, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Krum_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

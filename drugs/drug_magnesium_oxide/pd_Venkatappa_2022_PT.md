@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TAFEMgO NPs (the dose) drives Prothrombin time (in s) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TAFEMgO NPs (0–120 μg) added to citrated human plasma prolonged prothrombin time (control 193 s vs 885 s), an anticoagulant effect attributed to interference with the common blood-clotting pathway; the paper does not state a pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for PT.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatappa_2022`
 - **model family:** `unknown`
 - **driver:** `dose_only`

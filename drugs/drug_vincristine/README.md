@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Centanni_2024_reference](drugs/drug_vincristine/Vincristine_Centanni2024_reference.md) | 2-compartment, IV | 5 | Centanni (2024) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Igarashi_2021_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_mean.md) | 1-compartment (no model) | 1 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Igarashi_2021_standard_error_of_the_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_standard_error_of_the_mean.md) | 1-compartment (no model) | 0 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Centanni_2024_reference](drugs/drug_vincristine/Vincristine_Centanni2024_reference.md) | held back | 2-compartment, IV | 5 | Centanni (2024) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Igarashi_2021_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_mean.md) | — | 1-compartment (no model) | 1 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Igarashi_2021_standard_error_of_the_mean](drugs/drug_vincristine/Vincristine_Igarashi2021_standard_error_of_the_mean.md) | — | 1-compartment (no model) | 0 | Igarashi T et al., Population pharmacokinetic model develo…, Cancer chemotherapy and pha… (2021) | [10.1007/s00280-020-04220-y](https://doi.org/10.1007/s00280-020-04220-y) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Centanni_2024](drugs/drug_vincristine/pd_Centanni_2024_VIPN.md) | Centanni (2024) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Centanni_2024_VIPN](drugs/drug_vincristine/pd_Centanni_2024_VIPN.md) | Vincristine-induced peripheral neuropathy (VIPN) ← vincristine · categorical (graded) response model | — | Centanni (2024) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -68,6 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |

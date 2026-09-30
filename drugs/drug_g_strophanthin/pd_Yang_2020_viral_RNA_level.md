@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tylophorine-based compounds (measured concentrations) drives name (in relative expression) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tylophorine-based compounds (dbq33b, dbq33b4p7, PI09) inhibit coronavirus replication, targeting viral RNA, with measured viral yields/load (p.f.u./ml, IFA against N protein) reduced concentration-dependently; against SARS-CoV-2 in Vero E6 cells the EC50 values were 2.5, 20, and 78 nM by cytopathic effect and 14, 32, and 77 nM by IFA, with EC50 values up to 8 nM (FIPV), 16 nM (HCoV-OC43), and 6.5 nM (HCoV-229E). The paper does not state a formal PD mechanism (e.g., Emax/IC50 model parameters such as Imax, kin, kout, or ke0) for this inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** FVIII:C drives Spontaneous bleeding (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> FVIII:C (human-cl rhFVIII) acts on ETP via a sigmoid Emax model (non-linear relationship; EC50 with 48.1% inter-individual variability), and ETP in turn modulates the hazard of spontaneous bleeding in a joint time-to-event model with constant (exponential) hazard, where higher ETP lowers bleeding hazard (beta = −0.00313); the annual spontaneous bleeding rate was 1.66 events/year and Te was 6390 hours. The paper does not state numeric Emax, IC50, kin, kout or ke0 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Delavenne_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

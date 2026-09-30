@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Synephrine (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Synephrine (oxedrine) concentrations (μM) applied to hiPSC-CMs produce a direct sigmoid Emax concentration-response on MEA-measured field potential duration (FPD, Bazett-corrected as FPDc), acting as a β1/β2/β3-adrenergic agonist (hypothesised partial agonist); the paper reports an EC50 of 3.31 μM (95% CI 1.751–9.806 μM) in hiPSC-CMs versus 34.12 μM (95% CI 24.66–49.37 μM) in NRCMs, and no Imax, kin, kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yuan_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Yuan X; Yu T; Zhang Z; Li S et al. (2024). Frontiers in cardiovascular medicine 
   ·  DOI: [10.3389/fcvm.2024.1407138](https://doi.org/10.3389/fcvm.2024.1407138)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Isoprenaline — ETPC (μM) | `Q322` · not captured | 0.002 | μM | not captured | llm (not captured) | T2:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Isoprenaline — ETPC (μM) | `Q322` · not captured | 0.002 | μM | not captured | llm (not captured) | T2:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

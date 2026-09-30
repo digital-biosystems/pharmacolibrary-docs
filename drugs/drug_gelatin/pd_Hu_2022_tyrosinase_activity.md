@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DLGFLARGF (measured concentrations) drives name (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptide DLGFLARGF (from grass carp scale gelatin hydrolysate) inhibits tyrosinase activity (measured as % of control) in B16F10 melanoma cells in a concentration-dependent manner, with an IC50 of 3.09 mM; the paper does not state a formal PD model, but molecular docking indicates inhibition occurs via hydrogen-bond binding to amino acid residue sites on the D chain of tyrosinase (not the catalytic site). At 1.6 mg/ml, tyrosinase activity fell to 76.81% of control (23.19% inhibition), comparable to kojic acid (28.34% at 0.75 mg/ml).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

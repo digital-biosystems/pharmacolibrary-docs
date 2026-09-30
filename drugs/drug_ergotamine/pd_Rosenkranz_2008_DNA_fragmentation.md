@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ergotamine induced DNA fragmentation (a marker of programmed cell death) in Trypanosoma brucei, with an EC50 below 100 µM (but not below 10 µM); the paper does not state a specific EC50 value, a pharmacodynamic model, or the mechanism of action, noting that the apoptosis-like death induced by such alkaloids occurs via unknown mechanisms.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rosenkranz_2008`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omadacycline drives name (in log10 cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the HFS-MAC, omadacycline exposure (AUC0-24 or AUC0-24/MIC, mg·h/L) was related to intracellular MAC bacterial burden (log10 cfu/mL) on each sampling day with an inhibitory sigmoid Emax model, Effect = Econ − Emax×EC^H/(EC^H+EC50^H), where Econ is the burden in non-treated controls and Emax the maximal kill; the paper does not describe a production/elimination (kin/kout) or effect-compartment mechanism. Econ and Emax increased with sampling day (e.g. Econ 4.67 log10 cfu/mL on Day 3 to 8.41 on Day 28; Emax 1.5 log10 cfu/mL on Day 3 to 3.17 on Day 10), and EC50/EC80 also changed up to 8-fold by day; the γ-slope analysis instead gave a single EC50 AUC0-24 of 30.15 ± 37.6 mg·h/L (AUC0-24/MIC
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chapagain_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,68 +31,68 @@ Chapagain M; Pasipanodya JG; Athale S; Bernal C; Trammell R; Howe D; et al. et a
   ·  DOI: [10.1093/jac/dkac068](https://doi.org/10.1093/jac/dkac068)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 4.67 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col3 |
-| E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | 4.78 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col4 |
-| E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | 5.11 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col5 |
-| E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | 5.24 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col6 |
-| E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 5.52 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col7 |
-| E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | 7.58 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col8 |
-| E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | 8.41 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col9 |
-| E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 0.07 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col11 |
-| E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | -0.10 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col12 |
-| E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | -0.39 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col13 |
-| E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | -0.47 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col14 |
-| E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | -0.79 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col15 |
-| E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | -2.91 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col16 |
-| E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | -3.89 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col17 |
-| E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 4.30 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col3 |
-| E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | 4.39 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col4 |
-| E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | 4.63 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col5 |
-| E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | 4.80 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col6 |
-| E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 4.77 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col7 |
-| E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | 6.58 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col8 |
-| E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | 7.10 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col9 |
-| E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 0 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col11 |
-| E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 0 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col15 |
-| E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | 1.5 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col3 |
-| E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | 2.17 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col4 |
-| E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | 2.83 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col5 |
-| E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | 3.17 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col6 |
-| E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | 4.39 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col7 |
-| E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | 6.62 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col8 |
-| E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | 8.41 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col9 |
-| E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | -458.80 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col11 |
-| E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | -4.40 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col12 |
-| E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | -6.76 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col13 |
-| E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | -5.28 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col14 |
-| E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | -264.50 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col15 |
-| E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | -109.10 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col16 |
-| E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | -634.50 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col17 |
-| E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | 1.36 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col3 |
-| E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | 1.54 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col4 |
-| E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | 2.09 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col5 |
-| E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | 2.31 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col6 |
-| E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | 3.84 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col7 |
-| E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | 4.42 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col8 |
-| E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | 7.06 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col9 |
-| EC50 (AUC0-24/MIC) — Day 3 | `Q321` · not captured | 11.23 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col3 |
-| EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 5.54 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col4 |
-| EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 1.47 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col5 |
-| EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 1.56 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col6 |
-| EC50 (AUC0-24/MIC) — Day 14 | `Q321` · not captured | 2.49 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col7 |
-| EC50 (AUC0-24/MIC) — Day 21 | `Q321` · not captured | 0.50 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col8 |
-| EC50 (AUC0-24/MIC) — Day 28 | `Q321` · not captured | 1.37 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col9 |
-| EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 74.69 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col12 |
-| EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 693.00 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col13 |
-| EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 27.83 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col14 |
-| EC50 (AUC0-24/MIC) — Day 3 | `Q321` · not captured | 0.77 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col3 |
-| EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 1.17 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col4 |
-| EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 0.07 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col5 |
-| EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 0.06 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col6 |
-| EC50 (AUC0-24/MIC) — Day 14 | `Q321` · not captured | 0.03 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col7 |
-| EC50 (AUC0-24/MIC) — Day 28 | `Q321` · not captured | 0.01 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 4.67 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col3 |
+| PK (driver) | E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | 4.78 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col4 |
+| PK (driver) | E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | 5.11 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col5 |
+| PK (driver) | E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | 5.24 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col6 |
+| PK (driver) | E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 5.52 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col7 |
+| PK (driver) | E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | 7.58 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col8 |
+| PK (driver) | E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | 8.41 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col9 |
+| PK (driver) | E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 0.07 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col11 |
+| PK (driver) | E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | -0.10 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col12 |
+| PK (driver) | E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | -0.39 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col13 |
+| PK (driver) | E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | -0.47 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col14 |
+| PK (driver) | E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | -0.79 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col15 |
+| PK (driver) | E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | -2.91 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col16 |
+| PK (driver) | E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | -3.89 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row0:col17 |
+| PK (driver) | E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 4.30 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col3 |
+| PK (driver) | E con (log10 cfu/mL) — Day 5 | `Q38` · not captured | 4.39 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col4 |
+| PK (driver) | E con (log10 cfu/mL) — Day 7 | `Q38` · not captured | 4.63 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col5 |
+| PK (driver) | E con (log10 cfu/mL) — Day 10 | `Q38` · not captured | 4.80 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col6 |
+| PK (driver) | E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 4.77 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col7 |
+| PK (driver) | E con (log10 cfu/mL) — Day 21 | `Q38` · not captured | 6.58 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col8 |
+| PK (driver) | E con (log10 cfu/mL) — Day 28 | `Q38` · not captured | 7.10 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col9 |
+| PK (driver) | E con (log10 cfu/mL) — Day 3 | `Q38` · not captured | 0 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col11 |
+| PK (driver) | E con (log10 cfu/mL) — Day 14 | `Q38` · not captured | 0 | log10 cfu/mL | not captured | llm (not captured) | dkac068-T3:row1:col15 |
+| PD (effect) | E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | 1.5 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col3 |
+| PD (effect) | E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | 2.17 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col4 |
+| PD (effect) | E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | 2.83 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col5 |
+| PD (effect) | E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | 3.17 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col6 |
+| PD (effect) | E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | 4.39 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col7 |
+| PD (effect) | E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | 6.62 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col8 |
+| PD (effect) | E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | 8.41 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col9 |
+| PD (effect) | E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | -458.80 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col11 |
+| PD (effect) | E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | -4.40 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col12 |
+| PD (effect) | E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | -6.76 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col13 |
+| PD (effect) | E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | -5.28 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col14 |
+| PD (effect) | E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | -264.50 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col15 |
+| PD (effect) | E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | -109.10 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col16 |
+| PD (effect) | E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | -634.50 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row2:col17 |
+| PD (effect) | E max (log10 cfu/mL) — Day 3 | `Q320` · not captured | 1.36 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col3 |
+| PD (effect) | E max (log10 cfu/mL) — Day 5 | `Q320` · not captured | 1.54 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col4 |
+| PD (effect) | E max (log10 cfu/mL) — Day 7 | `Q320` · not captured | 2.09 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col5 |
+| PD (effect) | E max (log10 cfu/mL) — Day 10 | `Q320` · not captured | 2.31 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col6 |
+| PD (effect) | E max (log10 cfu/mL) — Day 14 | `Q320` · not captured | 3.84 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col7 |
+| PD (effect) | E max (log10 cfu/mL) — Day 21 | `Q320` · not captured | 4.42 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col8 |
+| PD (effect) | E max (log10 cfu/mL) — Day 28 | `Q320` · not captured | 7.06 | log10 cfu/mL | not captured | space_fold (not captured) | dkac068-T3:row3:col9 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 3 | `Q321` · not captured | 11.23 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col3 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 5.54 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col4 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 1.47 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col5 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 1.56 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col6 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 14 | `Q321` · not captured | 2.49 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col7 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 21 | `Q321` · not captured | 0.50 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col8 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 28 | `Q321` · not captured | 1.37 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col9 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 74.69 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col12 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 693.00 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col13 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 27.83 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row6:col14 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 3 | `Q321` · not captured | 0.77 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col3 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 5 | `Q321` · not captured | 1.17 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col4 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 7 | `Q321` · not captured | 0.07 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col5 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 10 | `Q321` · not captured | 0.06 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col6 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 14 | `Q321` · not captured | 0.03 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col7 |
+| PD (effect) | EC50 (AUC0-24/MIC) — Day 28 | `Q321` · not captured | 0.01 | AUC0-24/MIC | not captured | exact (not captured) | dkac068-T3:row7:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

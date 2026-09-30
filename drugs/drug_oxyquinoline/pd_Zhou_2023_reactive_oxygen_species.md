@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-4 (measured concentrations) drives name (in fluorescence intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CP-4 concentrations (μM) inhibit reactive oxygen species fluorescence intensity in the ROS assay; the paper does not state a PD model or mechanism for this response, and no IC50 for the ROS readout is given (the reported IC50 values, e.g. CP-4 1.2 ± 0.3 μM in HCT116, are from MTT cytotoxicity assays).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,26 +30,26 @@ Zhou SH; Liao WH; Yang Y; Li W; Wu YY; Wu TT; et al. et al. (2023). ACS omega 8
   ·  DOI: [10.1021/acsomega.2c07742](https://doi.org/10.1021/acsomega.2c07742)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM)a — cisplatin | `Q322` · not captured | 7.5 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
-| IC50 (μM)a — oxaliplatin | `Q322` · not captured | 3.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
-| IC50 (μM)a — CP-1 | `Q322` · not captured | 3.8 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
-| IC50 (μM)a — CP-2 | `Q322` · not captured | 6.1 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
-| IC50 (μM)a — CP-3 | `Q322` · not captured | 8.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
-| IC50 (μM)a — CP-4 | `Q322` · not captured | 8.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
-| IC50 (μM)a — cisplatin | `Q322` · not captured | 5.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
-| IC50 (μM)a — oxaliplatin | `Q322` · not captured | 8.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
-| IC50 (μM)a — CP-1 | `Q322` · not captured | 1.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
-| IC50 (μM)a — CP-2 | `Q322` · not captured | 4.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col6 |
-| IC50 (μM)a — CP-3 | `Q322` · not captured | 2.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col7 |
-| IC50 (μM)a — CP-4 | `Q322` · not captured | 1.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col8 |
-| IC50 (μM)a — cisplatin | `Q322` · not captured | 0.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col3 |
-| IC50 (μM)a — oxaliplatin | `Q322` · not captured | 2.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
-| IC50 (μM)a — CP-1 | `Q322` · not captured | 8.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col5 |
-| IC50 (μM)a — CP-2 | `Q322` · not captured | 3.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col6 |
-| IC50 (μM)a — CP-3 | `Q322` · not captured | 23.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col7 |
-| IC50 (μM)a — CP-4 | `Q322` · not captured | 30.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM)a — cisplatin | `Q322` · not captured | 7.5 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
+| PD (effect) | IC50 (μM)a — oxaliplatin | `Q322` · not captured | 3.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
+| PD (effect) | IC50 (μM)a — CP-1 | `Q322` · not captured | 3.8 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
+| PD (effect) | IC50 (μM)a — CP-2 | `Q322` · not captured | 6.1 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
+| PD (effect) | IC50 (μM)a — CP-3 | `Q322` · not captured | 8.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
+| PD (effect) | IC50 (μM)a — CP-4 | `Q322` · not captured | 8.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
+| PD (effect) | IC50 (μM)a — cisplatin | `Q322` · not captured | 5.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| PD (effect) | IC50 (μM)a — oxaliplatin | `Q322` · not captured | 8.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
+| PD (effect) | IC50 (μM)a — CP-1 | `Q322` · not captured | 1.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
+| PD (effect) | IC50 (μM)a — CP-2 | `Q322` · not captured | 4.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col6 |
+| PD (effect) | IC50 (μM)a — CP-3 | `Q322` · not captured | 2.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col7 |
+| PD (effect) | IC50 (μM)a — CP-4 | `Q322` · not captured | 1.2 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col8 |
+| PD (effect) | IC50 (μM)a — cisplatin | `Q322` · not captured | 0.7 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col3 |
+| PD (effect) | IC50 (μM)a — oxaliplatin | `Q322` · not captured | 2.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col4 |
+| PD (effect) | IC50 (μM)a — CP-1 | `Q322` · not captured | 8.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col5 |
+| PD (effect) | IC50 (μM)a — CP-2 | `Q322` · not captured | 3.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col6 |
+| PD (effect) | IC50 (μM)a — CP-3 | `Q322` · not captured | 23.3 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col7 |
+| PD (effect) | IC50 (μM)a — CP-4 | `Q322` · not captured | 30.0 | μM | not captured | llm_confirmed (not captured) | tbl1:row2:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

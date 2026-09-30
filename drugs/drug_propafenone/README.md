@@ -23,11 +23,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Connolly_1984_reference](drugs/drug_propafenone/Propafenone_Connolly1984_reference.md) | 1-compartment (no model) | 3 | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fernández_1991_reference](drugs/drug_propafenone/Propafenone_Fernndez1991_reference.md) | 1-compartment (no model) | 4 | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Connolly_1984_reference](drugs/drug_propafenone/Propafenone_Connolly1984_reference.md) | — | 1-compartment (no model) | 3 | Connolly S et al., Propafenone disposition kinetics in car…, Clinical pharmacology and t… (1984) | [10.1038/clpt.1984.157](https://doi.org/10.1038/clpt.1984.157) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Arboix_1985_reference](drugs/drug_propafenone/Propafenone_Arboix1985_reference.md) | — | 1-compartment (no model) | 5 | Arboix M et al., Pharmacokinetics of intravenous propafe…, Methods and findings in exp… (1985) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Fernández_1991_reference](drugs/drug_propafenone/Propafenone_Fernndez1991_reference.md) | — | 1-compartment (no model) | 4 | Fernández J et al., Tissue distribution of propafenone in t…, European journal of drug me… (1991) | [10.1007/BF03189870](https://doi.org/10.1007/BF03189870) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

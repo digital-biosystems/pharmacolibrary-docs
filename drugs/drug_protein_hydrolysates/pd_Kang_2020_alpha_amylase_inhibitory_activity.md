@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Green crab hydrolysates (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Green crab protein hydrolysates (concentrations in mg/mL) inhibit porcine pancreatic α-amylase activity, reported as IC50 values: PA 9.35 ± 0.42, PR 11.02 ± 0.69, FL 11.12 ± 0.37, AL 12.53 ± 0.85, and CMC 16.49 ± 0.41 mg/mL, improving after simulated digestion (e.g. FL 9.31 ± 0.37 mg/mL). The paper does not state a pharmacodynamic model or mechanism (no Imax, Emax, kin/kout, or ke0 values); inhibition is attributed mainly to &lt;3 kDa peptide fractions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

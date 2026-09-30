@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The record was rejected because the plasma protein binding value of 32% was incorrectly assigned to the unbound fraction parameter.**
+
+The parameter labeled 'Plasma protein binding' with a value of 32% is defined as the unbound fraction (fu), creating a dimension mismatch. The record was built from the abstract alone, so these summary statistics stand in for a fitted model. A second reader could not verify the extracted values for clearance, AUC, or the elimination rate constant. Extracted — metoprolol: fu 32 %, CL 3.7 1/h/kg, MRT 0.77 h, AUC 0.9 mg h/l, kel 3.17 h-1, Ae 1.5 % of the administered dose.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has metoprolol, the second reading unknown; it also differs on 15 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Bortolotti A; Castelli D; Verotta D; Bonati M et al. (1989). European journal of drug metabolism and pharmacokinetics 14

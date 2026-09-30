@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Artesunate, mefloquine (measured concentrations) drive name (in %): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Artesunate and mefloquine concentrations (nM) inhibit P. berghei parasitemia (%) in an indirect response I model (inhibition), with baseline R0 = 17.8%, Kout = 0.08, IC50 = 0.0044 nM for artesunate (bootstrap CI 0.0040) and IC50 = 0.011 nM for mefloquine (bootstrap CI 0.0086).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mim_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,17 +30,17 @@ Mim SR; Vieira Santos V; Pereira LC; Pica K; Miranda ALLdS; Quadros HC; Moreira 
   ·  DOI: [10.1128/aac.01717-25](https://doi.org/10.1128/aac.01717-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline response, R0 — Estimate | `Q336` · not captured | 17.8 | not captured | not captured | llm_corrected (not captured) | T3:row1:col2 |
-| Degradation rate, Kout — Estimate | `Q328` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col2 |
-| Half-maximal inhibitory concentration, IC50 (MQ) — Estimate | `Q322` · not captured | 0.011 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col2 |
-| Half-maximal inhibitory concentration, IC50 (MQ) — Relative SE (%) | `Q322` · not captured | 11.2 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col3 |
-| Half-maximal inhibitory concentration, IC50 (MQ) — Bootstrap95% CI | `Q322` · not captured | 0.0086 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col4 |
-| Half-maximal inhibitory concentration, IC50 (AS) — Estimate | `Q322` · not captured | 0.0044 | AS | not captured | llm_confirmed (not captured) | T3:row5:col2 |
-| Half-maximal inhibitory concentration, IC50 (AS) — Relative SE (%) | `Q322` · not captured | 4.62 | AS | not captured | llm_confirmed (not captured) | T3:row5:col3 |
-| Half-maximal inhibitory concentration, IC50 (AS) — Bootstrap95% CI | `Q322` · not captured | 0.0040 | AS | not captured | llm_confirmed (not captured) | T3:row5:col4 |
-| Constant error model — Estimate | `Q317` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline response, R0 — Estimate | `Q336` · not captured | 17.8 | not captured | not captured | llm_corrected (not captured) | T3:row1:col2 |
+| PD (effect) | Degradation rate, Kout — Estimate | `Q328` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col2 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (MQ) — Estimate | `Q322` · not captured | 0.011 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col2 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (MQ) — Relative SE (%) | `Q322` · not captured | 11.2 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col3 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (MQ) — Bootstrap95% CI | `Q322` · not captured | 0.0086 | MQ | not captured | llm_confirmed (not captured) | T3:row3:col4 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (AS) — Estimate | `Q322` · not captured | 0.0044 | AS | not captured | llm_confirmed (not captured) | T3:row5:col2 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (AS) — Relative SE (%) | `Q322` · not captured | 4.62 | AS | not captured | llm_confirmed (not captured) | T3:row5:col3 |
+| PD (effect) | Half-maximal inhibitory concentration, IC50 (AS) — Bootstrap95% CI | `Q322` · not captured | 0.0040 | AS | not captured | llm_confirmed (not captured) | T3:row5:col4 |
+| variability | Constant error model — Estimate | `Q317` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

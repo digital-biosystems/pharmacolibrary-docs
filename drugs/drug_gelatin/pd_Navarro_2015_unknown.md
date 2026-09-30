@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dissolved silver (Ag d) drives photosynthesis (in % of control): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Dissolved silver (Ag d) released from gelatin-coated silver nanoparticles inhibits the photosynthetic yield of Chlamydomonas reinhardtii (expressed as % of control after 1 h exposure), with excess cysteine completely preventing the effect, confirming dissolved Ag+ as the causative agent; the concentration-response was fitted with a sigmoid Emax (inhibitory) model, but the paper does not report a gelatin-specific EC50, Imax, or rate parameters (only an overall total-Ag EC50 range of 0.28–5.25 µM across coatings, with AgNO3 at 0.18 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Navarro_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

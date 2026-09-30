@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salbutamol (concentrations from the PK model of Marques_2024) drives specific airways conductance (in kpa-1 s-1): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> Inhaled salbutamol 200 µg, given 15 min before challenge, protects against sodium metabisulphite-induced bronchoconstriction measured as specific airways conductance (sGaw, kPa-1 s-1), raising the geometric mean provocative dose causing a 35% fall in sGaw from 12.8 to 75.9 µmol (a 16.9-fold increase) and reducing the mean maximum fall in sGaw from 47.4% to 2.9%. The paper attributes this to physiological antagonism via β2-adrenoceptor agonism and does not state a quantitative PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iredale_1991`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`

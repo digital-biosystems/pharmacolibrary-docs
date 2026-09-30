@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2013_patients on steady-state phenprocoumon](drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) | — (no model) | 0 | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2013_patients on steady-state phenprocoumon](drugs/drug_phenprocoumon/Phenprocoumon_Abduljalil2013_patients_on_steady_state_phenpr.md) | — | — (no model) | 0 | Abduljalil K et al., Quantifying the effect of covariates on…, Clinical pharmacokinetics (2013) | [10.1007/s40262-013-0043-z](https://doi.org/10.1007/s40262-013-0043-z) |
 
 ## ADME sites
 

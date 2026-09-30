@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PF-9363 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PF-9363 (0.1–30 μM concentration range in MCF-7 cells) directly inhibits KAT7 activity, measured as the H3K14Ac acetylation biomarker, with inhibition occurring at higher concentrations than for KAT6A/B (hierarchical engagement KAT6A/B &gt; KAT7 » KAT8 &gt; KAT5). The paper does not state an IC50, Emax, or kinetic parameters for the KAT7 response, nor a specific PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

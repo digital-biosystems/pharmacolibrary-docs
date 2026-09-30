@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxytocin drives uterine contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper excerpts do not describe any pharmacodynamic model for isoprenaline on uterine contraction; isoprenaline is not mentioned, and no mechanism, potency (IC50/EC50/Emax) or rate parameters for it are reported. The excerpts instead report Emax-model concentration–response data for oxytocin (DysP pEC50 = 3.6 ± 0.2, Emax = 145.1 ± 8.7; control pEC50 = 3.1 ± 0.1, Emax = 100%), KCl and PGF2α on rat uterine contraction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lacerda-Júnior_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

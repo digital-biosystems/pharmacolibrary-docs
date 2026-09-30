@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prothioconazole drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Prothioconazole concentration (mg L−1) acts on the inhibitory rate (%) of F. graminearum in an Emax-type concentration–response relationship; the paper does not state a mechanistic PD model (no Imax, kin/kout, or ke0 given). The EC50 of prothioconazole alone was 1.124 mg L−1, and TZEO (T. 'zhongshansha' essential oil) synergistically reduced it to 0.280 mg L−1 at the optimal 1:1 weight ratio (synergistic ratio 3.96), while TZEO alone showed only weak inhibition (11.48% at 5 mg/L, 13.26% at 10 mg/L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives ATP synthesis (in fold change): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride inhibited complex 1-driven ATP synthesis (mtCIDAS), measured after 24 h in permeabilized cybrid cells, in a concentration-dependent manner with an IC50 of 0.9 μM; the paper hypothesizes the mechanism is inhibition of mitochondrial complex 1 (NADH-ubiquinone oxidoreductase) but does not state an explicit Emax/Imax or kinetic parameters for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Datta_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

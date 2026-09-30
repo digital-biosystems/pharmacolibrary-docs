@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alfentanil (measured concentrations) drives EEG spectral edge frequency (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Fentanyl plasma concentration decreases EEG spectral edge frequency (SEF), a continuous EEG-derived response, via an inhibitory effect on EEG frequency; the paper reports an equilibration half-life between effect and arterial concentration (t½ke0) of 6.6 minutes for fentanyl (vs 6.2 min for sufentanil), but does not state Imax, IC50/EC50, Emax, kin, kout or gamma values for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lemmens_1995`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

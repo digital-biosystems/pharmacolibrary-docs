@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** P-synephrine (measured concentrations) drives vasocontractile response (in % of maximal response to phenylephrine): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> p-Synephrine concentrations (µM) directly stimulate vasocontractile response of isolated mesenteric artery segments, expressed as % of maximal phenylephrine response, via a direct Emax (Hill slope 1) concentration–effect model with EC50 = 22.4 µM and Emax = 92.3%; the effect is blocked by prazosin and EPPTB, indicating α1-adrenergic/TAAR1-mediated vasoconstriction. No kin, kout, ke0, Imax or IC50 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pinckaers_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

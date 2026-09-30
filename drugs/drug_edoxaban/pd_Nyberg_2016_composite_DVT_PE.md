@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban (concentrations from the PK model of Edwina_2025) drives composite of recurrent DVT and nonfatal PE (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> In the parametric time-to-event analysis, edoxaban average steady-state concentration (Cav, ng/mL) acted on the hazard of the composite of recurrent DVT and nonfatal PE via a linear exposure-response relationship (HR per 1 ng/mL increase in Cav = 0.99), described by a Weibull time-to-event distribution with creatinine clearance modifying the slope; no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given, and no inhibitory production/elimination mechanism is described beyond this linear hazard reduction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyberg_2016`
 - **model family:** `tte`
 - **driver:** `cited_pk`

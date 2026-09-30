@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2023](drugs/drug_ketobemidone/pd_Vandeputte_2023_unknown.md) | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2023_unknown](drugs/drug_ketobemidone/pd_Vandeputte_2023_unknown.md) | β-arrestin 2 recruitment ← dipyanone · direct Emax (saturable) effect | — | Vandeputte MM et al., Detection, chemical analysis, and pharm…, Analytical and bioanalytica… (2023) | [10.1007/s00216-023-04722-7](https://doi.org/10.1007/s00216-023-04722-7) |
 
 ## ADME sites
 

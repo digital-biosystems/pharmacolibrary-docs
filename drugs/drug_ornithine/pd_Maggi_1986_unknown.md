@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Arginine vasopressin (measured concentrations) drives adenylate cyclase activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Arginine vasopressin (AVP) stimulates adenylate cyclase activity (pmol of cAMP per 10 min per mg of protein) in porcine seminal vesicle membranes in a dose-dependent direct Emax-type manner, with an EC50 of 14 nM; oxytocin and the V2 agonist dVDAVP had no effect at 100 nM. The paper does not state an Emax value or an indirect production/elimination mechanism, though binding data suggest the response is mediated via V1 vasopressin receptors.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maggi_1986`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Maggi M; Kassis S; Malozowski S; Guardabasso V; Rodbard D et al. (1986). Proceed
   ·  DOI: [10.1073/pnas.83.23.8824](https://doi.org/10.1073/pnas.83.23.8824)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 14 | nM | not captured | review_gapfill (not captured) | Maggi_1986:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 14 | nM | not captured | review_gapfill (not captured) | Maggi_1986:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

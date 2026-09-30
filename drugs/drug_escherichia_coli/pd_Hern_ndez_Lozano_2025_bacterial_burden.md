@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Apramycin (measured concentrations) drives name (in cfu): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Apramycin concentrations (mg/L) act on E. coli bacterial burden (cfu in kidney and bladder) in mouse cUTI models via a disease-progression PKPD model in which the drug inhibits bacterial net growth (76%–98% reduction of net growth reported). The excerpts do not state the effect form or give numeric potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma); a single 10.8 mg/kg IV dose was predicted to achieve stasis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `disease_progression`
 - **driver:** `conc_no_pk`

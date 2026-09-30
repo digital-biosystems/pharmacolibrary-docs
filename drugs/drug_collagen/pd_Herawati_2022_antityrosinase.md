@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pepsin-soluble collagen (PSC) and hydrolyzed collagen (HC) drive Antityrosinase activity (in ppm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, pepsin-soluble collagen (PSC) and hydrolyzed collagen (HC) from mackerel scad skin inhibit tyrosinase activity (measured as % inhibition of the enzyme); the paper does not state a pharmacodynamic model or mechanism beyond enzyme inhibition. The paper reports an antityrosinase IC50 of 79.35 ± 0.5 ppm for HC (about threefold more potent than PSC), with kojic acid as positive control; the record's IC50 values of 148.55 ppm (PSC) and 34.966 ppm (HC) correspond to DPPH antioxidant activity, not antityrosinase.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herawati_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,11 +30,11 @@ Herawati E; Akhsanitaqwim Y; Agnesia P; Listyawati S; Pangastuti A; Ratriyanto A
   ·  DOI: [10.3390/md20080516](https://doi.org/10.3390/md20080516)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ascorbic Acid — IC50 (ppm) | `Q322` · not captured | 8.61 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row1:col1 |
-| PSC — IC50 (ppm) | `Q322` · not captured | 148.55 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row2:col1 |
-| HC — IC50 (ppm) | `Q322` · not captured | 34.966 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ascorbic Acid — IC50 (ppm) | `Q322` · not captured | 8.61 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row1:col1 |
+| PD (effect) | PSC — IC50 (ppm) | `Q322` · not captured | 148.55 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row2:col1 |
+| PD (effect) | HC — IC50 (ppm) | `Q322` · not captured | 34.966 | ppm | not captured | llm (not captured) | marinedrugs-20-00516-t002:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model; it reports concentration–response potency (IC50) values for A. indica seed oil and other plant extracts/fractions inhibiting Leishmania parasite growth in vitro, e.g. A. indica seed oil IC50 = 215 µg/mL (L. infantum promastigotes), 211 µg/mL (L. tropica promastigotes), 15.3 µg/mL (L. infantum amastigotes) and 17.6 µg/mL (L. tropica amastigotes), with CC50 = 710.5 µg/mL; no mechanism, Emax, kin/kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yaima-Yate_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

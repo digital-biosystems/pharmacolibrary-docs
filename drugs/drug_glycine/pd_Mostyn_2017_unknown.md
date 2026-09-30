@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acyl-glycine inhibitors (measured concentrations) drives GlyT2 current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Acyl-glycine compounds inhibit glycine (EC50 21.6 ± 1.6 µM)-evoked currents in Xenopus oocytes expressing GlyT2 (clamped at -60 mV), acting as non-transportable, noncompetitive allosteric inhibitors; potency order was C18 &gt; C16 &gt; C14, with maximal inhibition of 52-67% for C18 compounds and 88-92% for C16 compounds, but no numeric IC50 values are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mostyn_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

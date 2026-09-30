@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amide 6 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for phospho-NF-kB; it only notes a trend of reduction of pNF-kB with Amide 6, attributed to proteasome inhibition, without any potency or rate values for this response. The stated potency values concern other endpoints: Ki of 4.90 µM (β1i) and 4.39 µM (β5i) for chymotrypsin-like immunoproteasome inhibition and an EC50 of 17.8 µM against MM.1R cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

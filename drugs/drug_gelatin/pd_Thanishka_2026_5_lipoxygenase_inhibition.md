@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Peperomia pellucida aqueous extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The aqueous extract of Peperomia pellucida (concentrations in μg/mL) was tested in vitro against 5-lipoxygenase inhibition, showing 58.22% ± 0.20% inhibition at 100 μg/mL versus 68.01% ± 0.15% for the methanolic extract and 88.74% ± 0.22% for zileuton; the paper reports no IC50, Emax, or kinetic parameters for this assay and does not state a pharmacodynamic mechanism or model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thanishka_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

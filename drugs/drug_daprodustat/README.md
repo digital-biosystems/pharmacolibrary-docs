@@ -28,15 +28,15 @@ of anemia. It is also not indicated in patients not on dialysis.[L44958]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mahar_2024_reference](drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md) | 1-compartment, oral | 4 | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Mahar_2024_reference](drugs/drug_daprodustat/Daprodustat_Mahar2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Mahar KM et al., Integrated Population Pharmacokinetics…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01417-9](https://doi.org/10.1007/s40262-024-01417-9) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Bailey_2019](drugs/drug_daprodustat/pd_Bailey_2019_hemoglobin.md) | Bailey CK et al., A randomized, 29-day, dose-ranging, eff…, BMC nephrology (2019) | [10.1186/s12882-019-1547-z](https://doi.org/10.1186/s12882-019-1547-z) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Bailey_2019_hemoglobin](drugs/drug_daprodustat/pd_Bailey_2019_hemoglobin.md) | name ← daprodustat · direct Emax (saturable) effect | — | Bailey CK et al., A randomized, 29-day, dose-ranging, eff…, BMC nephrology (2019) | [10.1186/s12882-019-1547-z](https://doi.org/10.1186/s12882-019-1547-z) |
 
 ## ADME sites
 
@@ -48,6 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor/substrate, `CYP3A4` substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…daprodustat, 74% of the radioactivity was recovered in the feces, and 21% of the radioacti…”</sub> | prose |

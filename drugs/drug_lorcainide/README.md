@@ -17,16 +17,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kates_1983_reference](drugs/drug_lorcainide/Lorcainide_Kates1983_reference.md) | 1-compartment (no model) | 3 | Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Klotz_1980_reference](drugs/drug_lorcainide/Lorcainide_Klotz1980_reference.md) | 1-compartment (no model) | 2 | Klotz U et al., The pharmacokinetics and tissue distrib…, Arzneimittel-Forschung (1980) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Kates_1983_reference](drugs/drug_lorcainide/Lorcainide_Kates1983_reference.md) | — | 1-compartment (no model) | 3 | Kates RE et al., Lorcainide disposition kinetics in arrh…, Clinical pharmacology and t… (1983) | [10.1038/clpt.1983.4](https://doi.org/10.1038/clpt.1983.4) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Klotz_1980_reference](drugs/drug_lorcainide/Lorcainide_Klotz1980_reference.md) | — | 1-compartment (no model) | 2 | Klotz U et al., The pharmacokinetics and tissue distrib…, Arzneimittel-Forschung (1980) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Sakuta_1993](drugs/drug_lorcainide/pd_Sakuta_1993_unknown.md) | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Sakuta_1993_unknown](drugs/drug_lorcainide/pd_Sakuta_1993_unknown.md) | Y-26763-induced K+ current ← clofilium · inhibition effect | — | Sakuta H et al., Antiarrhythmic drugs, clofilium and cib…, British journal of pharmaco… (1993) | [10.1111/j.1476-5381.1993.tb13655.x](https://doi.org/10.1111/j.1476-5381.1993.tb13655.x) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

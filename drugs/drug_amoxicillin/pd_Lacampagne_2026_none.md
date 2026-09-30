@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amoxicillin (concentrations from this paper's PK model) drives treatment efficacy (in binary): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Amoxicillin plasma concentrations (mg/L) were linked to treatment efficacy (binary) via a PK/PD probability-of-target-attainment approach using AUC/MIC thresholds (e.g. AUC/MIC ≥ 28 h for bacteriostatic effect); the paper does not state an Emax/IC50-type PD model or mechanism, only PTA values (e.g. 80.7% and 82.2% for Streptococcus suis under continuous and daytime dosing).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lacampagne_2026`
 - **model family:** `linear`
 - **driver:** `pk_record`

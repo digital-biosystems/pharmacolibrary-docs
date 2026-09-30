@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | 1-compartment, IV | 2 | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span> | [Ross_2007_reference](drugs/drug_aminocaproic_acid/AminocaproicAcid_Ross2007_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ross J et al., Pharmacokinetics and pharmacodynamics o…, American journal of veterin… (2007) | [10.2460/ajvr.68.9.1016](https://doi.org/10.2460/ajvr.68.9.1016) |
 
 ## ADME sites
 

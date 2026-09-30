@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin (concentrations from this paper's PK model) drives PT-INR (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the K-PD model, S-warfarin dose rate drives PT-INR via an Emax (stimulatory) model with two transit chains of three compartments; EC50 is 4.1 mg/L and varies with VKORC1 allele, while clearance depends on age and CYP2C9 genotype. The paper does not state Imax, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aoyama_2022`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -21,9 +31,9 @@ Aoyama T; Hirai T; Tsuji Y; Miyamoto A; Itoh T; Iwamoto T; et al. et al. (2022).
   ·  DOI: [10.1248/bpb.b21-00778](https://doi.org/10.1248/bpb.b21-00778)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 4.1 | mg/L | not captured | review_gapfill (not captured) | Aoyama_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 4.1 | mg/L | not captured | review_gapfill (not captured) | Aoyama_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

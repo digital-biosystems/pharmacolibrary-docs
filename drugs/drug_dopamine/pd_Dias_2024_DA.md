@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quetiapine drives dopamine (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Brain free quetiapine concentrations stimulate dopamine (DA) synthesis/release from a precursor pool (via D2 receptor binding), with an effect compartment (Ke0 = 0.450–0.568 h−1) accounting for the delay between QTP binding and DA release; the model describes DA synthesis (Kin = 0.299–0.913 ng/mL·h), release (Kmod = 0.529–1.27 h−1), and elimination/reuptake (KNP = 3.79 h−1) measured as mPFC extracellular DA by microdialysis after a 5 mg/kg i.v. dose. No Imax/IC50/EC50/Emax values are reported in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dias_2024`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Dias BB; Carreño F; Helfer VE; Olivo LB; Staudt KJ; Paese K; et al. et al. (202
   ·  DOI: [10.1002/psp4.13107](https://doi.org/10.1002/psp4.13107)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.299 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col1 |
-| Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.853 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col2 |
-| Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.609 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col3 |
-| Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.913 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col4 |
-| Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.450 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col1 |
-| Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.500 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col2 |
-| Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.568 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col3 |
-| Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.529 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col1 |
-| Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.910 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col2 |
-| Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.772 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col3 |
-| Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 1.27 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col4 |
-| KNP (h−1) — Individual estimates, median (SD) | `Q47` · not captured | 3.79 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.299 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col1 |
+| PD (effect) | Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.853 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col2 |
+| PD (effect) | Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.609 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col3 |
+| PD (effect) | Kin (ng/mL * h) — Individual estimates, median (SD) | `Q327` · not captured | 0.913 | ng/mL * h | not captured | exact (not captured) | psp413107-tbl-0001:row3:col4 |
+| PD (effect) | Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.450 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col1 |
+| PD (effect) | Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.500 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col2 |
+| PD (effect) | Keo (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.568 | h−1 | not captured | exact (not captured) | psp413107-tbl-0001:row6:col3 |
+| PD (effect) | Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.529 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col1 |
+| PD (effect) | Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.910 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col2 |
+| PD (effect) | Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 0.772 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col3 |
+| PD (effect) | Kmod (h−1) — Individual estimates, median (SD) | `Q326` · not captured | 1.27 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row7:col4 |
+| PK (driver) | KNP (h−1) — Individual estimates, median (SD) | `Q47` · not captured | 3.79 | h−1 | not captured | llm (not captured) | psp413107-tbl-0001:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

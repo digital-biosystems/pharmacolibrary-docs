@@ -29,9 +29,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [van_2007_reference](drugs/drug_clazosentan/Clazosentan_van2007_reference.md) | 1-compartment (no model) | 2 | van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal of clinical pharmac… (2007) | [10.1177/0091270007307337](https://doi.org/10.1177/0091270007307337) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [van_2007_reference](drugs/drug_clazosentan/Clazosentan_van2007_reference.md) | — | 1-compartment (no model) | 2 | van Giersbergen PL et al., Influence of ethnic origin and sex on t…, Journal of clinical pharmac… (2007) | [10.1177/0091270007307337](https://doi.org/10.1177/0091270007307337) |
 
 ## ADME sites
 

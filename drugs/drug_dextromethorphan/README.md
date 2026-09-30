@@ -24,15 +24,15 @@ Dextromethorphan was granted FDA approval before 3 December 1957.[A215412,L14997
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2010_reference](drugs/drug_dextromethorphan/Dextromethorphan_Abduljalil2010_reference.md) | parent + metabolite (no model) | 0 | Abduljalil K et al., Assessment of activity levels for CYP2D…, Clinical pharmacology and t… (2010) | [10.1038/clpt.2010.137](https://doi.org/10.1038/clpt.2010.137) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Abduljalil_2010_reference](drugs/drug_dextromethorphan/Dextromethorphan_Abduljalil2010_reference.md) | — | parent + metabolite (no model) | 0 | Abduljalil K et al., Assessment of activity levels for CYP2D…, Clinical pharmacology and t… (2010) | [10.1038/clpt.2010.137](https://doi.org/10.1038/clpt.2010.137) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bespalov_2025](drugs/drug_dextromethorphan/pd_Bespalov_2025_NR1_NR2D_receptor_blockade.md) | Bespalov A et al., Deuteration may reduce the efficacy of…, Alzheimer's research & ther… (2025) | [10.1186/s13195-025-01780-0](https://doi.org/10.1186/s13195-025-01780-0) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bespalov_2025_NR1_NR2D_receptor_blockade](drugs/drug_dextromethorphan/pd_Bespalov_2025_NR1_NR2D_receptor_blockade.md) | name ← dextromethorphan · direct Emax (saturable) effect | — | Bespalov A et al., Deuteration may reduce the efficacy of…, Alzheimer's research & ther… (2025) | [10.1186/s13195-025-01780-0](https://doi.org/10.1186/s13195-025-01780-0) |
 
 ## Pharmacogenomics (PGx)
 
@@ -58,6 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate, `CYP3A7` substrate, `UGT2B15` substrate, `UGT2B17` substrate, `UGT2B7` substrate | DrugBank actor |
@@ -66,6 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | target | brain | `SLC6A4` inhibitor | DrugBank actor |
 | target | ovary | `CYP19A1` inhibitor | DrugBank actor |
 | target | platelet | `SLC6A4` inhibitor | DrugBank actor |
+| target | testis | `CYP19A1` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CHRNA2 (target), CHRNA3 (target), CHRNA4 (target), CHRNA7 (target), CHRNB2 (target), CHRNB4 (target), CYBA (inhibitor), GRIN3A (target), OPRD1 (target), OPRK1 (target), OPRM1 (regulator), OPRM1 (target), PGRMC1 (binder), SIGMAR1 (target), SLC6A2 (inhibitor), UGT2B4 (substrate).</sub>
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive name (in g/dL): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Romiplostim (a thrombopoietin receptor agonist stimulating hematopoietic stem cell expansion) is combined with rHuEPO in a cell-lifespan, catenary indirect response model of erythropoiesis/thrombopoiesis, in which the drugs act on precursor cell production processes to drive hemoglobin (g/dL) as the measured response; the paper does not report Imax, IC50/EC50, kin, kout, or ke0 values for this relationship in the excerpts, and the record only lists TMDD-related KE and KM parameters without units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

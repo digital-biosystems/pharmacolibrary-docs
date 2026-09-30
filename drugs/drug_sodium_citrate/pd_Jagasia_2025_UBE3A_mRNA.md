@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rugonersen (measured concentrations) drives UBE3A mRNA upregulation (in % of vehicle): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Rugonersen (nM) acts on UBE3A mRNA upregulation (% of vehicle) via a direct sigmoid Emax/Imax response: the drug reduces UBE3A-ATS, and the remaining UBE3A-ATS mRNA is linked to UBE3A mRNA elevation, with ~84% UBE3A-ATS knock-down (16% remaining) required for a half-maximal UBE3A mRNA response; an EC50 of 5 (units truncated in the excerpt) is stated for the rugonersen concentration–Ube3a mRNA relationship. No kin/kout or ke0 values are given for this response (the protein, not mRNA, is described by a turnover model with a ~13-day half-life).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jagasia_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

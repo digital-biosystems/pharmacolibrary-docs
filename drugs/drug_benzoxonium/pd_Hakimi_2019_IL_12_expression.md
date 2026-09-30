@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Benzoxonium chloride (measured concentrations) drives name (in mRNA transcripts) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Benzoxonium chloride (as free drug B, niosomal NB1/NB2, or meglumine antimoniate MA) concentrations (µg/mL) inhibit Leishmania promastigote and amastigote viability in a dose-dependent manner after 48 h, with IC50 values of 210.2, 113.1, 90.7 and 536.6 µg/mL (promastigotes) and 147.0, 56.3, 25.4 and 101.8 µg/mL (amastigotes) for B, NB1, NB2 and MA respectively; the paper does not state a pharmacodynamic model or mechanism for the IL-12 mRNA response, only that IL-12 expression is linked to Th1 polarization and metacaspase-mediated apoptosis-like cell death.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hakimi_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Hakimi Parizi M; Pardakhty A; Sharifi I; Farajzadeh S; Daie Parizi MH; Sharifi H
   ·  DOI: [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Promastigote IC50a (µg/mL) — B | `Q322` · not captured | 210.2 | µg/mL | not captured | llm (not captured) | Tab2:row1:col1 |
-| Promastigote IC50a (µg/mL) — NB1 | `Q322` · not captured | 113.1 | µg/mL | not captured | llm (not captured) | Tab2:row1:col2 |
-| Promastigote IC50a (µg/mL) — NB2 | `Q322` · not captured | 90.7 | µg/mL | not captured | llm (not captured) | Tab2:row1:col3 |
-| Promastigote IC50a (µg/mL) — MA | `Q322` · not captured | 536.6 | µg/mL | not captured | llm (not captured) | Tab2:row1:col4 |
-| Amastigote IC50a (µg/mL) — B | `Q322` · not captured | 147.0 | µg/mL | not captured | llm (not captured) | Tab2:row2:col1 |
-| Amastigote IC50a (µg/mL) — NB1 | `Q322` · not captured | 56.3 | µg/mL | not captured | llm (not captured) | Tab2:row2:col2 |
-| Amastigote IC50a (µg/mL) — NB2 | `Q322` · not captured | 25.4 | µg/mL | not captured | llm (not captured) | Tab2:row2:col3 |
-| Amastigote IC50a (µg/mL) — MA | `Q322` · not captured | 101.8 | µg/mL | not captured | llm (not captured) | Tab2:row2:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Promastigote IC50a (µg/mL) — B | `Q322` · not captured | 210.2 | µg/mL | not captured | llm (not captured) | Tab2:row1:col1 |
+| PD (effect) | Promastigote IC50a (µg/mL) — NB1 | `Q322` · not captured | 113.1 | µg/mL | not captured | llm (not captured) | Tab2:row1:col2 |
+| PD (effect) | Promastigote IC50a (µg/mL) — NB2 | `Q322` · not captured | 90.7 | µg/mL | not captured | llm (not captured) | Tab2:row1:col3 |
+| PD (effect) | Promastigote IC50a (µg/mL) — MA | `Q322` · not captured | 536.6 | µg/mL | not captured | llm (not captured) | Tab2:row1:col4 |
+| PD (effect) | Amastigote IC50a (µg/mL) — B | `Q322` · not captured | 147.0 | µg/mL | not captured | llm (not captured) | Tab2:row2:col1 |
+| PD (effect) | Amastigote IC50a (µg/mL) — NB1 | `Q322` · not captured | 56.3 | µg/mL | not captured | llm (not captured) | Tab2:row2:col2 |
+| PD (effect) | Amastigote IC50a (µg/mL) — NB2 | `Q322` · not captured | 25.4 | µg/mL | not captured | llm (not captured) | Tab2:row2:col3 |
+| PD (effect) | Amastigote IC50a (µg/mL) — MA | `Q322` · not captured | 101.8 | µg/mL | not captured | llm (not captured) | Tab2:row2:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

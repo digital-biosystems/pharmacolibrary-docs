@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Galcanezumab (measured concentrations) drives free CGRP (in ng/mL): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Galcanezumab reduces free CGRP (ng/mL) via a target-mediated drug disposition mechanism: the antibody binds CGRP, and the resulting GMB-CGRP complex is cleared slowly (galcanezumab t1/2 ~27 days), preventing the normal rapid CGRP clearance processes (diffusion to catabolism and proteolysis), while free CGRP is governed by a baseline equilibrium of production and elimination (kin/kout). The paper does not state potency parameters (no IC50/EC50/Emax/ke0/gamma); simulated dose-dependent suppression of free CGRP ranged from 39% maximum at 5 mg to ~97% at 240–300 mg, with 61% and 76% average steady-state decreases at 120 mg and 240 mg monthly, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kielbasa_2019`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

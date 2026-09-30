@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin, fluvastatin drive aortic strip contraction amplitude (in % of control): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Atorvastatin (and fluvastatin) concentration-dependently inhibited KCl (80 mM)- and norepinephrine (1 µM)-induced contraction amplitude of isolated rabbit aortic strips, an effect attributed to calcium channel blocking activity; the data were fitted with a sigmoid Emax inhibition model, but the excerpts give no numeric EC50, Emax, or slope values (only that fluvastatin's EC50 on NE-induced contractions was lower, i.e. more potent, than atorvastatin's).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ali_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

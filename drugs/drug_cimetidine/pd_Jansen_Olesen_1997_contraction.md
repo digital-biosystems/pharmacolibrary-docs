@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Histamine drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In quiescent human cranial arteries (with cimetidine 10^-5 M present), histamine (M) produced a concentration-dependent contraction (Emax model): cerebral arteries Emax=77±16% with pEC50=7.16, temporal arteries Emax=29±8% with pEC50=6.77; this contraction reflects blockade of relaxant smooth-muscle H2 receptors by cimetidine unmasking contractile H1 receptors, since mepyramine (10^-7 M) abolished it.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jansen-Olesen_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018::base) drives body weight (in % change from baseline) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Semaglutide plasma concentrations (nmol/L, from a cited PK model) drive the percentage change from baseline in body weight via a direct stimulatory exposure–response (Emax-type) model, fitted sequentially with adult data (STEP 1/2, Phase 2) then adjusted for adolescents (STEP TEENS), with placebo and Emax modified for the adolescent population. The paper does not state numerical values for Emax, EC50 or other potency/rate parameters in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Strathe_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

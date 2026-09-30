@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-tri-iodothyronine (measured concentrations) drives rate of uptake (in fmol/min per mg of protein): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> L-tri-iodothyronine (pM) stimulates the rate of uptake (v, fmol/min per mg of protein) into isolated rat liver cells/plasma-membrane vesicles via a saturable carrier system, described by a sigmoid Emax relationship; the paper does not state Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eckel_1979`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

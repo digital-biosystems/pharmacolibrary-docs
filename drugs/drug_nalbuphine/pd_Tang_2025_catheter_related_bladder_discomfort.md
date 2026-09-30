@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nalbuphine (concentrations from the PK model of Bressolle_2011::basic_model) drives name (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Nalbuphine dose (0.025–0.10 mg/kg) acts on the moderate-severe catheter-related bladder discomfort (CRBD) score via probit dose-response analysis; the paper does not describe a mechanistic PD model (no Imax/IC50/kin/kout/ke0), only reporting ED50 and ED95 values from probit regression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tang_2025`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

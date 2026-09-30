@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives H,K-ATPase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Senna glycosides (sennoside A and sennoside B from Rhei Rhizoma) directly inhibit gastric H,K-ATPase activity in vitro, with IC50 values in the range 1.6–7.9×10⁻⁴ M; the paper reports concentration–response inhibition (IC50) but does not describe a kinetic PD model (no Imax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Satoh_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

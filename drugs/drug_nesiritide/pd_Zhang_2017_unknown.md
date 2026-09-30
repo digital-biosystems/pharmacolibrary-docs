@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DanHong injection drives AT1R antagonism (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DanHong injection (DH), not nesiritide, acts as an antagonist at the AT1 receptor: in HEK293/Gα15/AT1 cells stimulated with angiotensin II (EC50 2.34 nM), DH inhibited the angiotensin II signal in a dose-dependent manner with an IC50 of 1.10 μL/mL (telmisartan reference IC50 69.82 nM); DH was not an AT1R agonist, and the paper does not state a kinetic mechanism beyond this direct inhibitory concentration-response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

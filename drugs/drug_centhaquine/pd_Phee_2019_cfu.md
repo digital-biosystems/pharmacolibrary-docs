@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Colistin and fusidic acid (measured concentrations) drive Acinetobacter baumannii cfu (in cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Colistin and fusidic acid concentrations (mg/L) inhibit A. baumannii cfu growth via a sigmoidal Emax killing-rate model with a time-dependent resistance component (Gompertz): colistin EC50 9.86 ng/mL (Emax 39.5 h−1) and fusidic acid EC50 310 ng/mL (Emax 23.2 h−1), with synergy shown as an 82.6% decrease in colistin EC50 with fusidic acid and a 57.9% increase in fusidic acid Emax with colistin; growth rate θnet 1.87 h−1 and lag time 0.352 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Phee_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Phee LM; Kloprogge F; Morris R; Barrett J; Wareham DW; Standing JF et al. (2019)
   ·  DOI: [10.1093/jac/dky524](https://doi.org/10.1093/jac/dky524)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| θnet (h−1) — Fixed effect (RSE) | `Q328` · not captured | 1.87 | h−1 | not captured | llm (not captured) | dky524-T2:row1:col1 |
-| θlag (h) — Fixed effect (RSE) | `Q83` · not captured | 0.352 | h | not captured | llm (not captured) | dky524-T2:row3:col1 |
-| θEC50col (ng/mL) — Fixed effect (RSE) | `Q321` · not captured | 9.86 | ng/mL | not captured | llm (not captured) | dky524-T2:row4:col1 |
-| proportional increase in θEC50col with AB205 — Fixed effect (RSE) | `Q321` · not captured | 65.2 | mg/L | not captured | llm (not captured) | dky524-T2:row5:col1 |
-| θEmaxcol (h−1) — Fixed effect (RSE) | `Q326` · not captured | 39.5 | h−1 | not captured | llm (not captured) | dky524-T2:row6:col1 |
-| θEC50fus (ng/mL) — Fixed effect (RSE) | `Q321` · not captured | 310 | ng/mL | not captured | llm (not captured) | dky524-T2:row10:col1 |
-| θEmaxfus (h−1) — Fixed effect (RSE) | `Q326` · not captured | 23.2 | h−1 | not captured | llm (not captured) | dky524-T2:row11:col1 |
-| proportional decrease in θEC50col with fusidic acid — Fixed effect (RSE) | `Q321` · not captured | -0.826 | mg/L | not captured | llm (not captured) | dky524-T2:row17:col1 |
-| proportional decrease in θEC50col with fusidic acid for AB205 — Fixed effect (RSE) | `Q321` · not captured | -0.986 | mg/L | not captured | llm (not captured) | dky524-T2:row18:col1 |
-| proportional increase in θEmaxfus with colistin — Fixed effect (RSE) | `Q320` · not captured | 0.579 | not captured | not captured | llm (not captured) | dky524-T2:row19:col1 |
-| Residual variabilitygrowth model — Fixed effect (RSE) | `Q315` · not captured | 0.129 | not captured | not captured | llm (not captured) | dky524-T2:row23:col1 |
-| Residual variabilitycol — Fixed effect (RSE) | `Q315` · not captured | 2.8 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row24:col1 |
-| Residual variabilityfus — Fixed effect (RSE) | `Q315` · not captured | 0.698 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row25:col1 |
-| Residual variabilitycomb — Fixed effect (RSE) | `Q315` · not captured | 5.14 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row26:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | θnet (h−1) — Fixed effect (RSE) | `Q328` · not captured | 1.87 | h−1 | not captured | llm (not captured) | dky524-T2:row1:col1 |
+| PK (driver) | θlag (h) — Fixed effect (RSE) | `Q83` · not captured | 0.352 | h | not captured | llm (not captured) | dky524-T2:row3:col1 |
+| PD (effect) | θEC50col (ng/mL) — Fixed effect (RSE) | `Q321` · not captured | 9.86 | ng/mL | not captured | llm (not captured) | dky524-T2:row4:col1 |
+| PD (effect) | proportional increase in θEC50col with AB205 — Fixed effect (RSE) | `Q321` · not captured | 65.2 | mg/L | not captured | llm (not captured) | dky524-T2:row5:col1 |
+| PD (effect) | θEmaxcol (h−1) — Fixed effect (RSE) | `Q326` · not captured | 39.5 | h−1 | not captured | llm (not captured) | dky524-T2:row6:col1 |
+| PD (effect) | θEC50fus (ng/mL) — Fixed effect (RSE) | `Q321` · not captured | 310 | ng/mL | not captured | llm (not captured) | dky524-T2:row10:col1 |
+| PD (effect) | θEmaxfus (h−1) — Fixed effect (RSE) | `Q326` · not captured | 23.2 | h−1 | not captured | llm (not captured) | dky524-T2:row11:col1 |
+| PD (effect) | proportional decrease in θEC50col with fusidic acid — Fixed effect (RSE) | `Q321` · not captured | -0.826 | mg/L | not captured | llm (not captured) | dky524-T2:row17:col1 |
+| PD (effect) | proportional decrease in θEC50col with fusidic acid for AB205 — Fixed effect (RSE) | `Q321` · not captured | -0.986 | mg/L | not captured | llm (not captured) | dky524-T2:row18:col1 |
+| PD (effect) | proportional increase in θEmaxfus with colistin — Fixed effect (RSE) | `Q320` · not captured | 0.579 | not captured | not captured | llm (not captured) | dky524-T2:row19:col1 |
+| variability | Residual variabilitygrowth model — Fixed effect (RSE) | `Q315` · not captured | 0.129 | not captured | not captured | llm (not captured) | dky524-T2:row23:col1 |
+| variability | Residual variabilitycol — Fixed effect (RSE) | `Q315` · not captured | 2.8 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row24:col1 |
+| variability | Residual variabilityfus — Fixed effect (RSE) | `Q315` · not captured | 0.698 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row25:col1 |
+| variability | Residual variabilitycomb — Fixed effect (RSE) | `Q315` · not captured | 5.14 | not captured | not captured | llm_confirmed (not captured) | dky524-T2:row26:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

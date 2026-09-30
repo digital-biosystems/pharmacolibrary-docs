@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dahan_2024](drugs/drug_sodium_chloride/pd_Dahan_2024_PPT.md) | Dahan A et al., Nitric Oxide Donor Sodium Nitroprusside…, ACS pharmacology & translat… (2024) | [10.1021/acsptsci.4c00133](https://doi.org/10.1021/acsptsci.4c00133) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Dahan_2024_PPT](drugs/drug_sodium_chloride/pd_Dahan_2024_PPT.md) | pain pressure threshold ← S-ketamine, R-ketamine, S-norketamine, R-norketamine · direct sigmoid Emax (Hill) effect | — | Dahan A et al., Nitric Oxide Donor Sodium Nitroprusside…, ACS pharmacology & translat… (2024) | [10.1021/acsptsci.4c00133](https://doi.org/10.1021/acsptsci.4c00133) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atropine drives heart rate (in beats/min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atropine (0.014–0.03 mg/kg, given with neostigmine 0.04 or 0.06 mg/kg) increases heart rate (beats/min) in anaesthetised patients; the paper does not state a mechanistic PD model, only log-dose linear regression of percentage heart rate change at 5 and 10 min, with calculated ED50 of atropine 0.031–0.037 mg/kg and ED95 0.046–0.06 mg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naguib_1989`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

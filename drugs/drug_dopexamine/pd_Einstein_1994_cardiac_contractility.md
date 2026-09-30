@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopexamine drives name (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anaesthetized and conscious dogs, intravenous infusions of dopexamine (5–20 or 5–50 µg kg⁻¹ min⁻¹) dose-dependently increased cardiac contractility (and heart rate, while lowering blood pressure); the paper reports only dose-response curves and gives no quantitative PD model parameters (no Emax, EC50, kin, kout or ke0) for this response. The mechanism is discussed qualitatively as stimulation of β1- and/or β2-adrenoceptors, possibly aided by inhibition of neuronal noradrenaline uptake, but no specific mechanism is established.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Einstein_1994`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Einstein R; Abdul-Hussein N; Wong TW; Chang DH; Matthews R; Richardson DP et al.
   ·  DOI: [10.1111/j.1476-5381.1994.tb14044.x](https://doi.org/10.1111/j.1476-5381.1994.tb14044.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| a, | `Q900` · not captured | 0 | s-2 | not captured | llm (not captured) | tab_1:row12:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | a, | `Q900` · not captured | 0 | s-2 | not captured | llm (not captured) | tab_1:row12:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

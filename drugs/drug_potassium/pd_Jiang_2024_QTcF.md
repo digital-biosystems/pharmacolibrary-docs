@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifekalant (measured concentrations) drives QTcF interval prolongation (in ms): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Nifekalant plasma concentration (ng/mL) drives QTcF prolongation (ΔΔQTcF, ms) via a direct Emax model; the paper reports Emax = 101 ms and EC50 = 342 ng/mL, with no effect-compartment or turnover (kin/kout) mechanism described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiang_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Jiang J; Xu L; Chai L; Zhang L; Liu H; Yan Y; et al. et al. (2024). Journal of p
   ·  DOI: [10.1007/s10928-023-09882-8](https://doi.org/10.1007/s10928-023-09882-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL, L/h | `Q22` · not captured | 53.8 | L/h | not captured | exact (not captured) | tab_1:row4:col1 |
-| CL, L/h | `Q22` · not captured | 53.7 | L/h | not captured | exact (not captured) | tab_1:row4:col3 |
-| V C , L | `Q63` · not captured | 8.27 | L | not captured | space_fold (not captured) | tab_1:row5:col1 |
-| V C , L | `Q63` · not captured | 8.26 | L | not captured | space_fold (not captured) | tab_1:row5:col3 |
-| V p , L | `Q64` · not captured | 45.6 | L | not captured | space_fold (not captured) | tab_1:row6:col1 |
-| V p , L | `Q64` · not captured | 45.7 | L | not captured | space_fold (not captured) | tab_1:row6:col3 |
-| Q, L/h | `Q30` · not captured | 48.2 | L/h | not captured | exact (not captured) | tab_1:row7:col1 |
-| Q, L/h | `Q30` · not captured | 48.2 | L/h | not captured | exact (not captured) | tab_1:row7:col3 |
-| ω (CL), % | `Q358` · not captured | 11.1 | not captured | not captured | llm_corrected (not captured) | tab_1:row11:col1 |
-| ω (CL), % | `Q358` · not captured | 10.7 | not captured | not captured | llm_corrected (not captured) | tab_1:row11:col3 |
-| σ (Prop), % | `Q316` · not captured | 20.1 | not captured | not captured | llm (not captured) | tab_1:row15:col1 |
-| σ (Prop), % | `Q316` · not captured | 20.0 | not captured | not captured | llm (not captured) | tab_1:row15:col3 |
-| σ (Add), ng/mL | `Q315` · not captured | 2.34 | ng/mL | not captured | llm (not captured) | tab_1:row16:col1 |
-| σ (Add), ng/mL | `Q315` · not captured | 2.35 | ng/mL | not captured | llm (not captured) | tab_1:row16:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL, L/h | `Q22` · not captured | 53.8 | L/h | not captured | exact (not captured) | tab_1:row4:col1 |
+| PK (driver) | CL, L/h | `Q22` · not captured | 53.7 | L/h | not captured | exact (not captured) | tab_1:row4:col3 |
+| PK (driver) | V C , L | `Q63` · not captured | 8.27 | L | not captured | space_fold (not captured) | tab_1:row5:col1 |
+| PK (driver) | V C , L | `Q63` · not captured | 8.26 | L | not captured | space_fold (not captured) | tab_1:row5:col3 |
+| PK (driver) | V p , L | `Q64` · not captured | 45.6 | L | not captured | space_fold (not captured) | tab_1:row6:col1 |
+| PK (driver) | V p , L | `Q64` · not captured | 45.7 | L | not captured | space_fold (not captured) | tab_1:row6:col3 |
+| PK (driver) | Q, L/h | `Q30` · not captured | 48.2 | L/h | not captured | exact (not captured) | tab_1:row7:col1 |
+| PK (driver) | Q, L/h | `Q30` · not captured | 48.2 | L/h | not captured | exact (not captured) | tab_1:row7:col3 |
+| PK (driver) | ω (CL), % | `Q358` · not captured | 11.1 | not captured | not captured | llm_corrected (not captured) | tab_1:row11:col1 |
+| PK (driver) | ω (CL), % | `Q358` · not captured | 10.7 | not captured | not captured | llm_corrected (not captured) | tab_1:row11:col3 |
+| variability | σ (Prop), % | `Q316` · not captured | 20.1 | not captured | not captured | llm (not captured) | tab_1:row15:col1 |
+| variability | σ (Prop), % | `Q316` · not captured | 20.0 | not captured | not captured | llm (not captured) | tab_1:row15:col3 |
+| variability | σ (Add), ng/mL | `Q315` · not captured | 2.34 | ng/mL | not captured | llm (not captured) | tab_1:row16:col1 |
+| variability | σ (Add), ng/mL | `Q315` · not captured | 2.35 | ng/mL | not captured | llm (not captured) | tab_1:row16:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

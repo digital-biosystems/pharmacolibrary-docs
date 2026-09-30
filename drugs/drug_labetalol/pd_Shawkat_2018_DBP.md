@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives diastolic blood pressure (in unknown): indirect response — drug inhibits the production of diastolic blood pressure.
+
+**Model:** No model was generated from this record.
+
+> Labetalol lowers diastolic blood pressure via an inhibitory indirect response model, in which the drug inhibits the production of the DBP response; the paper does not state the driver concentrations, Imax, IC50, or rate constants (kin/kout), only noting a BP-lowering effect visible by about 2.5 hours post dose with maximum effect around 2.5 hours for DBP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shawkat_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

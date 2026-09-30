@@ -27,11 +27,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Nosek_2014](drugs/drug_insulin_degludec/pd_Nosek_2014_GIR.md) | Nosek L et al., Glucose-lowering effect of insulin degl…, Clinical drug investigation (2014) | [10.1007/s40261-014-0218-x](https://doi.org/10.1007/s40261-014-0218-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Haahr_2016](drugs/drug_insulin_degludec/pd_Haahr_2016_GIR.md) | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Heise_2014](drugs/drug_insulin_degludec/pd_Heise_2014_glucose_infusion_rate.md) | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Nosek_2014_GIR](drugs/drug_insulin_degludec/pd_Nosek_2014_GIR.md) | glucose infusion rate ← insulin degludec · delayed effect through an effect compartment | — | Nosek L et al., Glucose-lowering effect of insulin degl…, Clinical drug investigation (2014) | [10.1007/s40261-014-0218-x](https://doi.org/10.1007/s40261-014-0218-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Haahr_2016_GIR](drugs/drug_insulin_degludec/pd_Haahr_2016_GIR.md) | glucose infusion rate ← insulin degludec and insulin aspart · delayed effect through an effect compartment | — | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Heise_2014_glucose_infusion_rate](drugs/drug_insulin_degludec/pd_Heise_2014_glucose_infusion_rate.md) | name ← insulin degludec and insulin aspart · delayed effect through an effect compartment | — | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Elafibranor and GFT1007 (sum of AUC) drive Total bilirubin (in μmol/L): indirect response — drug inhibits the production of Total bilirubin.
+
+**Model:** No model was generated from this record.
+
+> Total bilirubin (μmol/L) is described by an indirect response model driven by the sum of elafibranor and GFT1007 AUCτ,ss (μmol·h/L), with a linear inhibitory drug effect (slope, RSE &gt; 50%, estimate close to zero) rather than an Emax model; the paper does not state the slope value, Imax/IC50, or kin/kout values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ooi_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

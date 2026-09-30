@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Balanites aegyptiaca methanolic extract (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Papaverine concentration-dependently inhibited high K+ (80 mM)-evoked contractions of rat ileum (direct inhibitory Emax-type effect), with EC50 8.14 µM (7.62–8.84, 95% CI, n=4–5); the paper attributes this to its phosphodiesterase inhibition and Ca++ channel blocking, but gives no Imax, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehman_2022_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

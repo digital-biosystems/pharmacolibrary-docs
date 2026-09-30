@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Romiplostim (concentrations from the PK model of Fan_2023) drives platelet count (in unknown): indirect response — drug inhibits the production of platelet count.
+
+**Model:** No model was generated from this record.
+
+> Romiplostim doses stimulate platelet production in a semi-mechanistic indirect (transit-compartment) model of platelet counts in MDS patients, with a drug-effect term (a, 0.28 day/mg) driving proliferation and a platelet-count-dependent drug-effect duration (kDE = 0.16 days⁻¹); key system parameters are kCirc = 0.57 days⁻¹ and MTT = 9.58 days, with responders (78%) and non-responders (22%) distinguished.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Perez_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,16 +31,16 @@ Perez Ruixo JJ; Doshi S; Wang YM; Mould DR et al. (2013). British journal of cli
   ·  DOI: [10.1111/bcp.12041](https://doi.org/10.1111/bcp.12041)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Population estimate [RSE (%)] — k 0 DE (days -1 ) | `Q326` · not captured | 0.16 | days -1 | not captured | llm (not captured) | tab_1:row0:col2 |
-| Population estimate [RSE (%)] — kCirc (days -1 ) | `Q47` · not captured | 0.57 | days -1 | not captured | llm (not captured) | tab_1:row0:col3 |
-| Population estimate [RSE (%)] — MTT (days) | `Q81` · not captured | 9.58 | days | not captured | llm (not captured) | tab_1:row0:col5 |
-| Population estimate [RSE (%)] — a (day/mg) | `Q358` · not captured | 0.28 | day/mg | not captured | llm (not captured) | tab_1:row0:col8 |
-| Inter-individual variability [RSE (%)] — kCirc (days -1 ) | `Q312` · not captured | 36.3 | days -1 | not captured | llm_confirmed (not captured) | tab_1:row1:col3 |
-| Inter-individual variability [RSE (%)] — Circ0 (¥ 10 9 l -1 )* | `Q312` · not captured | 47.0 | not captured | not captured | llm_confirmed (not captured) | tab_1:row1:col4 |
-| Inter-individual variability [RSE (%)] — MTT (days) | `Q81` · not captured | 44.7 | days | not captured | llm_corrected (not captured) | tab_1:row1:col5 |
-| Inter-individual variability [RSE (%)] — a (day/mg) | `Q312` · not captured | 163 | day/mg | not captured | llm_confirmed (not captured) | tab_1:row1:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Population estimate [RSE (%)] — k 0 DE (days -1 ) | `Q326` · not captured | 0.16 | days -1 | not captured | llm (not captured) | tab_1:row0:col2 |
+| PK (driver) | Population estimate [RSE (%)] — kCirc (days -1 ) | `Q47` · not captured | 0.57 | days -1 | not captured | llm (not captured) | tab_1:row0:col3 |
+| PK (driver) | Population estimate [RSE (%)] — MTT (days) | `Q81` · not captured | 9.58 | days | not captured | llm (not captured) | tab_1:row0:col5 |
+| PK (driver) | Population estimate [RSE (%)] — a (day/mg) | `Q358` · not captured | 0.28 | day/mg | not captured | llm (not captured) | tab_1:row0:col8 |
+| variability | Inter-individual variability [RSE (%)] — kCirc (days -1 ) | `Q312` · not captured | 36.3 | days -1 | not captured | llm_confirmed (not captured) | tab_1:row1:col3 |
+| variability | Inter-individual variability [RSE (%)] — Circ0 (¥ 10 9 l -1 )* | `Q312` · not captured | 47.0 | not captured | not captured | llm_confirmed (not captured) | tab_1:row1:col4 |
+| PK (driver) | Inter-individual variability [RSE (%)] — MTT (days) | `Q81` · not captured | 44.7 | days | not captured | llm_corrected (not captured) | tab_1:row1:col5 |
+| variability | Inter-individual variability [RSE (%)] — a (day/mg) | `Q312` · not captured | 163 | day/mg | not captured | llm_confirmed (not captured) | tab_1:row1:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

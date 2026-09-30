@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.926). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) | parent + metabolite (no model) | 12 | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.926). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2024_reference](drugs/drug_saxagliptin/Saxagliptin_Wang2024_reference.md) | — | parent + metabolite (no model) | 12 | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2024](drugs/drug_saxagliptin/pd_Wang_2024_DPP_4.md) | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2024_DPP_4](drugs/drug_saxagliptin/pd_Wang_2024_DPP_4.md) | DPP-4 inhibition ratio ← 5-hydroxy Saxagliptin · direct sigmoid Emax (Hill) effect | — | Wang T et al., Pharmacokinetic/Pharmacodynamic modelli…, BMC pharmacology & toxicolo… (2024) | [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3) |
 
 ## ADME sites
 

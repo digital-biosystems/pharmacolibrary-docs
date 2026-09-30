@@ -11,7 +11,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 07:58 | 4:36 | 0/0/0 | 0/0/0 | 0/0/0 | 83,366/5,348 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
+| 2026-09-29 23:27 | 2:30 | 0/0/0 | 0/0/0 | 0/0/0 | 24,726/1,508 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
@@ -25,8 +25,8 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 42 matched, 44 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 52 matched, 48 returned
+- **screened:** 4  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -42,7 +42,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Różyło_2022.pdf` | Różyło R et al., Microencapsulated Red Powders from Corn…, Molecules (Basel, Switzerla… (2022) | pd | 4 | [10.3390/molecules27103094](https://doi.org/10.3390/molecules27103094) | [35630570](https://www.ncbi.nlm.nih.gov/pubmed/35630570) | metadata signals extractable PD data (EC50) |
 | `Vachon_1988.pdf` | Vachon C et al., Concentration effect of soluble dietary…, Canadian journal of physiol… (1988) | pd | 4 | [10.1139/y88-127](https://doi.org/10.1139/y88-127) | [2844373](https://www.ncbi.nlm.nih.gov/pubmed/2844373) | metadata signals extractable PD data (Concentrationeffect) |
 
-<sub>queue written 2026-09-22T07:56:53.872321+00:00</sub>
+<sub>queue written 2026-09-29T23:27:43.672735+00:00</sub>
 
 ## Screened and excluded
 
@@ -79,6 +79,8 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Kasabri_2017 | not_relevant | 0 | 0 | The paper focuses on Adiantum capillus-veneris extracts, not guar gum, and does not report PD parameters for the target compound. |
 | popPK | Kumar_2025 | irrelevant | 0 | 0 | The study focuses on the formulation and efficacy of nystatin-loaded nanocapsules where guar gum is a carrier material, not a subject drug for pharmacokinetic analysis. |
 | PD | Kumar_2025 | not_relevant | 0 | 0 | The paper focuses on the formulation and characterization of nanocapsules and qualitative in vivo efficacy, without reporting any quantitative exposure-response or dose-response analysis with numeric PD parameters. |
+| popPK | Kumari_2025 | irrelevant | 0 | 0 | The paper is a review of polysaccharide-based drug delivery systems where guar gum is a delivery vehicle, not the subject drug, and no pharmacokinetic parameters are reported. |
+| PD | Kumari_2025 | not_relevant | 0 | 0 | The paper is a review of polysaccharide-based mucoadhesive hydrogels for drug delivery and does not report any pharmacodynamic or exposure-response data for guar gum. |
 | popPK | Li_2026 | irrelevant | 0 | 0 | The paper is a review on polysaccharide hydrogels for colorectal cancer and does not report pharmacokinetic parameters for guar gum. |
 | PD | Li_2026 | not_relevant | 0 | 0 | The paper is a review on natural polysaccharide hydrogels for colorectal cancer and does not report any pharmacodynamic or exposure-response data for guar gum. |
 | popPK | Lin_2021 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of lipid profile outcomes, not a pharmacokinetic study, and contains no PK parameters for guar gum. |
@@ -106,6 +108,9 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Sanaei_2022 | not_relevant | 0 | 0 | The paper studies the effect of heavy metals on guar plant growth and metal accumulation, not the pharmacokinetics or pharmacodynamics of guar gum in humans. |
 | popPK | Sati_2025 | irrelevant | 0 | 0 | The paper is a review of silver nanoparticles and does not contain any pharmacokinetic data for guar_gum. |
 | PD | Sati_2025 | not_relevant | 0 | 0 | The paper is a review of silver nanoparticles (AgNPs) synthesis and applications, containing no data or analysis regarding guar gum pharmacodynamics or exposure-response relationships. |
+| popPK | Setayesh_2023 | irrelevant | 0 | 0 | The paper is a meta-analysis of lipid profile outcomes (TC, LDL, etc.) and does not report pharmacokinetic parameters such as clearance, volume, or half-life for guar gum. |
+| popPK | Shao_2023 | irrelevant | 0 | 0 | The paper is a meta-analysis of blood pressure outcomes and does not report any pharmacokinetic parameters for guar gum. |
+| PD | Shao_2023 | not_relevant | 3 | 2 | The paper is a meta-analysis reporting weighted mean differences for blood pressure reduction based on dose thresholds (&gt;15g) and duration, but it does not provide a continuous exposure-response curve, Emax/EC50 parameters, or a formal PK/PD model fit. |
 | popPK | Sharma_2019 | irrelevant | 0 | 0 | The study focuses on paclitaxel pharmacokinetics, with guar gum serving only as a formulation carrier rather than the subject drug. |
 | PD | Sharma_2019 | not_relevant | 2 | 1 | The paper reports in vitro IC50 and PK parameters (Cmax) for paclitaxel formulations, but does not establish an exposure-response or dose-response relationship for guar gum itself, nor does it provide a PD model linking guar gum concentration to a pharmacodynamic effect. |
 | popPK | Soumya_2014 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro antioxidant potential of guar gum nanoparticles, containing no pharmacokinetic data or disposition parameters. |
@@ -115,6 +120,8 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Vachon_1988 | not_relevant | 0 | 0 | The provided text is only the title of a study on soluble dietary fibers in rats and does not contain the full text, data, or numeric PD parameters required to assess the relationship. |
 | popPK | Wahyuningsih_2026 | irrelevant | 0 | 0 | The paper is a review on nanocarriers for diabetic wound healing and does not report pharmacokinetic parameters for guar_gum. |
 | PD | Wahyuningsih_2026 | not_relevant | 0 | 0 | The paper is a review of nanocarrier delivery systems for phytochemicals in diabetic wound healing and does not report any pharmacodynamic or exposure-response data for guar gum. |
+| popPK | Wanders_2011 | irrelevant | 0 | 0 | The paper is a systematic review of dietary fiber effects on appetite and weight, not a pharmacokinetic study, and contains no PK parameters for guar gum. |
+| PD | Wanders_2011 | not_relevant | 1 | 0 | The paper is a systematic review that reports qualitative effect rates and explicitly states that distinct dose-response relationships were not observed, providing no numeric PD parameters. |
 | popPK | Whiteley_1996 | irrelevant | 0 | 0 | The study evaluates colonic mucosal growth and fermentation in rats, not the pharmacokinetic disposition parameters of guar gum. |
 | PD | Whiteley_1996 | not_relevant | 4 | 2 | The paper describes a qualitative dose-response relationship for guar gum but does not provide specific numeric data points or fitted PD parameters (like Emax or EC50) in the text. |
 | popPK | Zarbab_2023 | irrelevant | 0 | 0 | The study focuses on the synthesis and in-vitro drug release kinetics of a guar gum hydrogel for methotrexate, not on the pharmacokinetic parameters of guar gum itself. |

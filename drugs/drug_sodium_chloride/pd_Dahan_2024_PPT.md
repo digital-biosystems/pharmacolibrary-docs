@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-ketamine, R-ketamine, S-norketamine, R-norketamine drive pain pressure threshold: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> S- and R-ketamine effect-site concentrations (nmol/mL) increase the pain pressure threshold (PPT, Newton) via a sigmoid Emax model with an effect compartment equilibrating with the central PK compartment (t1/2ke0 = ln(2)/ke0); potency is expressed as the effect-site concentration increasing PPT by 100% over baseline (C100,SK and C100,RK) with shape factor γ, and the paper cites literature IC50 values of 0.8 μM for S-ketamine and 1.5 μM for R-ketamine. The paper does not state the fitted values of C100, γ, or ke0 in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dahan_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

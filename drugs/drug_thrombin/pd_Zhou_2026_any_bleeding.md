@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Milvexian (measured concentrations) drives name (in any bleeding): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For the safety endpoint any bleeding, milvexian (doses 25 mg QD to 200 mg BID; exposure in ng/mL) showed no meaningful dose- or exposure-response relationship; the model captured milvexian bleeding risk as an overall drug effect versus placebo (common Emax across treatments, with drug-specific ED50 only when supported by data), and no potency values (ED50, Emax) for bleeding are reported. The paper does not state a mechanism linking milvexian concentrations to bleeding, and no relationship was found between aPTT change and the probability of any bleeding.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

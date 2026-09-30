@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin flavonolignans and their sulfated conjugates (measured concentrations) drive name (in % relaxation) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin flavonolignans (e.g., silybin A, silychristin, silychristin-19-O-sulfate) were tested ex vivo at concentrations from 100 nM to 1 mM for their vasorelaxant effect (% relaxation) on isolated rat aorta, showing a direct concentration-dependent stimulatory effect with EC50 values between 19 and 30 µM (silybin A: 26.8 µM); the paper does not state a specific PD model or mechanism beyond endothelium dependence.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pourová_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

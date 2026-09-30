@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pregabalin (concentrations from this paper's PK model) drives electrical stimulation pain tolerance threshold (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Pregabalin concentrations act on the electrical stimulation pain tolerance threshold (ES PTT, observed range 5–50 mA) via a turnover model in which the drug effect is on k_in; an Emax relationship was first fitted but the EC50 was below 1 μg/l (maximal effect already reached at the lowest concentrations), so an on/off (all-or-none) effect on k_in with between-occasion variability on the baseline and IIV on the effect parameter was preferred. No numeric k_in or k_out values for the ES PTT endpoint are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2018`
 - **model family:** `linear`
 - **driver:** `pk_record`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mirikizumab (measured concentrations) drives CDAI clinical remission-composite (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Mirikizumab average concentration (μg/mL) was related to the binary Week 52 CDAI clinical remission-composite endpoint (CDAI &lt; 150) via a categorical (logistic) exposure-efficacy model, with baseline logit intercepts of −2.00, −1.89, and −1.30 and a negative effect of baseline CDAI on the intercept (−0.00391); the paper does not state Imax, IC50/EC50, or rate parameters for this endpoint, and no mechanism beyond a logistic exposure-response relationship is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chua_2025`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Chua L; Otani Y; Lin Z; Friedrich S; Durand F; Zhang XC et al. (2025). Clinical 
   ·  DOI: [10.1111/cts.70320](https://doi.org/10.1111/cts.70320)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -2.00 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row2:col1 |
-| Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | 0.0283 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row7:col1 |
-| Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -1.89 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row11:col1 |
-| Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -1.30 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row15:col1 |
-| Baseline CDAI on intercept d — Estimate (% SEE) | `Q324` · not captured | -0.00391 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row17:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -2.00 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row2:col1 |
+| PD (effect) | Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | 0.0283 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row7:col1 |
+| PD (effect) | Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -1.89 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row11:col1 |
+| PD (effect) | Baseline logit intercept — Estimate (% SEE) | `Q344` · not captured | -1.30 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row15:col1 |
+| PD (effect) | Baseline CDAI on intercept d — Estimate (% SEE) | `Q324` · not captured | -0.00391 | % SEE | not captured | llm_confirmed (not captured) | cts70320-tbl-0004:row17:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

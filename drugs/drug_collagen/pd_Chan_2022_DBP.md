@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vosoritide (measured concentrations) drives diastolic blood pressure (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper reports no correlation between vosoritide plasma Cmax and the maximum decrease from predose diastolic blood pressure (p = 0.43 in phase II; p = 0.79 in phase III), so no exposure–response (e.g. sigmoid Emax) model or potency parameters are established for DBP; the record's sigmoid Emax characterization is not supported by the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

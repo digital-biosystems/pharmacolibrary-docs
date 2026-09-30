@@ -20,7 +20,7 @@ Lobeglitazone was approved by the Ministry of Food and Drug Safety (South Korea)
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 08:31 | 8:43 | 0/0/0 | 2/0/0 | 0/0/0 | 207,658/8,105 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
+| 2026-09-29 23:44 | 1:34 | 0/0/0 | 2/0/0 | 0/0/0 | 3,375/1,034 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 1/6 | 7/0 | 0 |
 
 ## popPK records
 
@@ -28,17 +28,17 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_Cell_invasion.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_Cell_migration.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_E_cadherin.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_MMP_2.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_N_cadherin.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_Snail.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_Vimentin.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021](drugs/drug_lobeglitazone/pd_Jin_2021_p38_MAPK_phosphorylation.md) | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rocha_2020](drugs/drug_lobeglitazone/pd_Rocha_2020_PTP1B.md) | Rocha RF et al., The antidiabetic drug lobeglitazone has…, Bioorganic chemistry (2020) | [10.1016/j.bioorg.2020.103927](https://doi.org/10.1016/j.bioorg.2020.103927) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_Cell_invasion](drugs/drug_lobeglitazone/pd_Jin_2021_Cell_invasion.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_Cell_migration](drugs/drug_lobeglitazone/pd_Jin_2021_Cell_migration.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_E_cadherin](drugs/drug_lobeglitazone/pd_Jin_2021_E_cadherin.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_MMP_2](drugs/drug_lobeglitazone/pd_Jin_2021_MMP_2.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_N_cadherin](drugs/drug_lobeglitazone/pd_Jin_2021_N_cadherin.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_Snail](drugs/drug_lobeglitazone/pd_Jin_2021_Snail.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_Vimentin](drugs/drug_lobeglitazone/pd_Jin_2021_Vimentin.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2021_p38_MAPK_phosphorylation](drugs/drug_lobeglitazone/pd_Jin_2021_p38_MAPK_phosphorylation.md) | name ← Lobeglitazone · inhibition effect | — | Jin JQ et al., Lobeglitazone, A Peroxisome Proliferato…, Endocrinology and metabolis… (2021) | [10.3803/EnM.2021.1155](https://doi.org/10.3803/EnM.2021.1155) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rocha_2020_PTP1B](drugs/drug_lobeglitazone/pd_Rocha_2020_PTP1B.md) | PTP1B activity ← lobeglitazone · inhibition effect | — | Rocha RF et al., The antidiabetic drug lobeglitazone has…, Bioorganic chemistry (2020) | [10.1016/j.bioorg.2020.103927](https://doi.org/10.1016/j.bioorg.2020.103927) |
 
 ## ADME sites
 
@@ -51,6 +51,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` unknown | DrugBank actor |
 | absorption | placenta | `ABCB1` unknown | DrugBank actor |
 | absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor/substrate, `CYP2C9` inhibitor, `CYP3A4` substrate, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…he combined extent of the excretion of lobeglitazone to the bile, urine and intestine is l…”</sub> | prose |
@@ -86,7 +87,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Park_2014.pdf` | Park MK et al., Tolerability and pharmacokinetics of lo…, Clinical drug investigation (2014) | popPK | 6 | [10.1007/s40261-014-0197-y](https://doi.org/10.1007/s40261-014-0197-y) | [24802657](https://pubmed.ncbi.nlm.nih.gov/24802657) | The study reports non-compartmental PK parameters (Cmax, AUC, tmax) for lobeglitazone, but lacks compartmental model parameters (CL, V, ka) required for population PK extraction. |
 | `Sil_2014.pdf` | Sil Oh E et al., Effect of ketoconazole on lobeglitazone…, Clinical therapeutics (2014) | pgx | 7 | [10.1016/j.clinthera.2014.05.064](https://doi.org/10.1016/j.clinthera.2014.05.064) | [25047497](https://www.ncbi.nlm.nih.gov/pubmed/25047497) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-22T08:31:06.865635+00:00</sub>
+<sub>queue written 2026-09-29T23:43:55.871203+00:00</sub>
 
 ## Screened and excluded
 

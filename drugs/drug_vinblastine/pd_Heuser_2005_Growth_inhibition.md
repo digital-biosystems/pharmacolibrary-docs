@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cis-platin, doxorubicin, etoposide, gemcitabine, taxol, vincristine, vinblastine, vinorelbine drive name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine concentrations inhibit growth (increase in cell number over 72 h) of KB, KBC5-8, NCI-H69, and H69AR cells, with IC50 values of 1.09 nM (KB), 24.18 nM (KBC5-8), 1.09 nM (NCI-H69), and 4.41 nM (H69AR); the paper does not state a mechanistic PD model (no Emax, kin/kout, or ke0 parameters), only IC50 values from concentration–response testing under flavin-protecting conditions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heuser_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`

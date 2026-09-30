@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buprenorphine (concentrations from the PK model of Nelson_2024) drives PeakLat (in unknown): direct log-linear effect.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Buprenorphine plasma concentrations act directly (no effect compartment; indirect models did not converge) on the ERP N2 peak latency (PeakLat) via a log-linear drug effect with slope h2 = 0.000349 on a baseline E0 of 138 (with a discrete covariate group factor of 0.634 distinguishing early vs late N2 subjects); no Emax, IC50, kin/kout or ke0 values are reported for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Juul_2014`
 - **model family:** `log_linear`
 - **driver:** `cited_pk`
@@ -20,33 +30,33 @@ Juul RV; Foster DJ; Upton RN; Andresen T; Graversen C; Drewes AM; et al. et al. 
   ·  DOI: [10.1111/bcpt.12217](https://doi.org/10.1111/bcpt.12217)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline — PeakAmp | `Q324` · not captured | 24.9 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
-| Baseline | `Q324` · not captured | 18.2 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
-| Baseline — PeakLat | `Q324` · not captured | 138 | not captured | not captured | exact (not captured) | tab_0:row3:col5 |
-| Baseline | `Q324` · not captured | 2.1 | not captured | not captured | exact (not captured) | tab_0:row3:col6 |
-| Baseline | `Q324` · not captured | 25.6 | not captured | not captured | exact (not captured) | tab_0:row3:col9 |
-| h 2 — PeakLat | `Q56` · not captured | 0.000349 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
-| x BSV (baseline) — PeakAmp | `Q312` · not captured | 10.1 | baseline | not captured | boundary (not captured) | tab_0:row7:col2 |
-| x BSV (baseline) | `Q312` · not captured | 108.8 | baseline | not captured | boundary (not captured) | tab_0:row7:col3 |
-| x BSV (baseline) | `Q312` · not captured | 32.4 | baseline | not captured | boundary (not captured) | tab_0:row7:col6 |
-| x BSV (baseline) — MeanAmp | `Q312` · not captured | 5.11 | baseline | not captured | boundary (not captured) | tab_0:row7:col8 |
-| x BSV (baseline) | `Q312` · not captured | 45.6 | baseline | not captured | boundary (not captured) | tab_0:row7:col9 |
-| x BOV (baseline) — PeakAmp | `Q313` · not captured | 6.10 | baseline | not captured | boundary (not captured) | tab_0:row8:col2 |
-| x BOV (baseline) | `Q313` · not captured | 80.9 | baseline | not captured | boundary (not captured) | tab_0:row8:col3 |
-| x BOV (baseline) | `Q313` · not captured | 37.4 | baseline | not captured | boundary (not captured) | tab_0:row8:col6 |
-| x BOV (baseline) — MeanAmp | `Q313` · not captured | 1.85 | baseline | not captured | boundary (not captured) | tab_0:row8:col8 |
-| x BOV (baseline) | `Q313` · not captured | 48.3 | baseline | not captured | boundary (not captured) | tab_0:row8:col9 |
-| CovGroup — PeakLat | `Q56` · not captured | 0.634 | not captured | not captured | llm (not captured) | tab_0:row11:col5 |
-| K e0 — PeakAmp | `Q324` · not captured | 0.442 | not captured | not captured | boundary (not captured) | tab_0:row15:col2 |
-| K e0 | `Q324` · not captured | 85.5 | not captured | not captured | boundary (not captured) | tab_0:row15:col3 |
-| e proportional | `Q335` · not captured | 98.1 | not captured | not captured | llm (not captured) | tab_0:row18:col3 |
-| e proportional | `Q335` · not captured | 66.9 | not captured | not captured | llm (not captured) | tab_0:row18:col6 |
-| e proportional | `Q335` · not captured | 55.2 | not captured | not captured | llm (not captured) | tab_0:row18:col9 |
-| e additive | `Q317` · not captured | 53.7 | not captured | not captured | llm (not captured) | tab_0:row19:col3 |
-| e additive | `Q317` · not captured | 106.7 | not captured | not captured | llm (not captured) | tab_0:row19:col6 |
-| e additive | `Q317` · not captured | 10.6 | not captured | not captured | llm (not captured) | tab_0:row19:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline — PeakAmp | `Q324` · not captured | 24.9 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
+| PD (effect) | Baseline | `Q324` · not captured | 18.2 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
+| PD (effect) | Baseline — PeakLat | `Q324` · not captured | 138 | not captured | not captured | exact (not captured) | tab_0:row3:col5 |
+| PD (effect) | Baseline | `Q324` · not captured | 2.1 | not captured | not captured | exact (not captured) | tab_0:row3:col6 |
+| PD (effect) | Baseline | `Q324` · not captured | 25.6 | not captured | not captured | exact (not captured) | tab_0:row3:col9 |
+| PK (driver) | h 2 — PeakLat | `Q56` · not captured | 0.000349 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
+| variability | x BSV (baseline) — PeakAmp | `Q312` · not captured | 10.1 | baseline | not captured | boundary (not captured) | tab_0:row7:col2 |
+| variability | x BSV (baseline) | `Q312` · not captured | 108.8 | baseline | not captured | boundary (not captured) | tab_0:row7:col3 |
+| variability | x BSV (baseline) | `Q312` · not captured | 32.4 | baseline | not captured | boundary (not captured) | tab_0:row7:col6 |
+| variability | x BSV (baseline) — MeanAmp | `Q312` · not captured | 5.11 | baseline | not captured | boundary (not captured) | tab_0:row7:col8 |
+| variability | x BSV (baseline) | `Q312` · not captured | 45.6 | baseline | not captured | boundary (not captured) | tab_0:row7:col9 |
+| variability | x BOV (baseline) — PeakAmp | `Q313` · not captured | 6.10 | baseline | not captured | boundary (not captured) | tab_0:row8:col2 |
+| variability | x BOV (baseline) | `Q313` · not captured | 80.9 | baseline | not captured | boundary (not captured) | tab_0:row8:col3 |
+| variability | x BOV (baseline) | `Q313` · not captured | 37.4 | baseline | not captured | boundary (not captured) | tab_0:row8:col6 |
+| variability | x BOV (baseline) — MeanAmp | `Q313` · not captured | 1.85 | baseline | not captured | boundary (not captured) | tab_0:row8:col8 |
+| variability | x BOV (baseline) | `Q313` · not captured | 48.3 | baseline | not captured | boundary (not captured) | tab_0:row8:col9 |
+| PK (driver) | CovGroup — PeakLat | `Q56` · not captured | 0.634 | not captured | not captured | llm (not captured) | tab_0:row11:col5 |
+| PD (effect) | K e0 — PeakAmp | `Q324` · not captured | 0.442 | not captured | not captured | boundary (not captured) | tab_0:row15:col2 |
+| PD (effect) | K e0 | `Q324` · not captured | 85.5 | not captured | not captured | boundary (not captured) | tab_0:row15:col3 |
+| PD (effect) | e proportional | `Q335` · not captured | 98.1 | not captured | not captured | llm (not captured) | tab_0:row18:col3 |
+| PD (effect) | e proportional | `Q335` · not captured | 66.9 | not captured | not captured | llm (not captured) | tab_0:row18:col6 |
+| PD (effect) | e proportional | `Q335` · not captured | 55.2 | not captured | not captured | llm (not captured) | tab_0:row18:col9 |
+| variability | e additive | `Q317` · not captured | 53.7 | not captured | not captured | llm (not captured) | tab_0:row19:col3 |
+| variability | e additive | `Q317` · not captured | 106.7 | not captured | not captured | llm (not captured) | tab_0:row19:col6 |
+| variability | e additive | `Q317` · not captured | 10.6 | not captured | not captured | llm (not captured) | tab_0:row19:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erlotinib (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the Annexin V response; it only reports that erlotinib (μM concentrations) increased the percentage of Annexin V positive A549 and BZR cells in 3D type I collagen matrices, with a lower increase in old than adult collagen, and gives erlotinib IC50 values of 10 μM (A549) and 8 μM (BZR) in 2D collagen coating. No Imax, IC50 for apoptosis, Emax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarazin_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

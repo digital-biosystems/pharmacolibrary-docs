@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Padina pavonica water extract drives hyaluronidase activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Padina pavonica water extract inhibits hyaluronidase activity in vitro (percentage inhibition vs extract concentration, mg.mL-1); the paper gives an IC50 of 0.03 ± 0.01 mg.mL-1 for the PLE water extract (ethyl acetate extract: 0.25 ± 0.01 mg.mL-1), with 100% inhibition at 0.2 mg.mL-1, but does not describe a pharmacodynamic model or mechanism beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fayad_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

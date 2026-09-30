@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium (in mmol/L): indirect response — drug inhibits the production of serum potassium.
+
+**Model:** No model was generated from this record.
+
+> Finerenone plasma exposure (cited PK) stimulates serum potassium in an indirect response (turnover) model: an Emax function acts on kout of the potassium turnover system, with baseline 4.50 mmol/L, kin 0.00981 mmol/L/h (RSE 14.2%), Emax 0.0905 (a 9.95% increase, ~0.44 mmol/L at 4.4 mmol/L baseline; RSE 16.2%), and EC50 0.512 mg·h/L (RSE 33.3%); a disease-progression slope increasing potassium over time was also included.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goulooze_2022_2`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -20,22 +30,22 @@
 not matched (stem Goulooze_2022_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| θpop, BSL, BSL (mmol/L) — Estimate | `Q324` · not captured | 4.50 | mmol/L | not captured | llm (not captured) | Tab1:row1:col1 |
-| θpop,kin, kin (mmol/L/h) — Estimate | `Q327` · not captured | 0.00981 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col1 |
-| θpop,kin, kin (mmol/L/h) — RSE (%) | `Q327` · not captured | 14.2 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
-| θpop,EMAX, Emax — Estimate | `Q320` · not captured | 0.0905 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col1 |
-| θpop,EMAX, Emax — RSE (%) | `Q320` · not captured | 16.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col2 |
-| θpop,EC50, EC50 (mg × h/L) — Estimate | `Q321` · not captured | 0.512 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col1 |
-| θpop,EC50, EC50 (mg × h/L) — RSE (%) | `Q321` · not captured | 33.3 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col2 |
-| θJAP,σ, relative σ with Japanese ethnicity (%) — Estimate | `Q315` · not captured | 87.0 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
-| θJAP,σ, relative σ with Japanese ethnicity (%) — RSE (%) | `Q315` · not captured | 3.64 | not captured | not captured | llm (not captured) | Tab1:row8:col2 |
-| ω2 proportional Emax — Estimate | `Q320` · not captured | 1.49 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col1 |
-| ω2 proportional Emax — RSE (%) | `Q320` · not captured | 10.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col2 |
-| ω2 covariance BSL/Emax — RSE (%) | `Q314` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | Tab1:row20:col2 |
-| σ2, scalar of residual error — Estimate | `Q315` · not captured | 0.00447 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col1 |
-| σ2, scalar of residual error — RSE (%) | `Q315` · not captured | 0.986 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | θpop, BSL, BSL (mmol/L) — Estimate | `Q324` · not captured | 4.50 | mmol/L | not captured | llm (not captured) | Tab1:row1:col1 |
+| PD (effect) | θpop,kin, kin (mmol/L/h) — Estimate | `Q327` · not captured | 0.00981 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col1 |
+| PD (effect) | θpop,kin, kin (mmol/L/h) — RSE (%) | `Q327` · not captured | 14.2 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
+| PD (effect) | θpop,EMAX, Emax — Estimate | `Q320` · not captured | 0.0905 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col1 |
+| PD (effect) | θpop,EMAX, Emax — RSE (%) | `Q320` · not captured | 16.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col2 |
+| PD (effect) | θpop,EC50, EC50 (mg × h/L) — Estimate | `Q321` · not captured | 0.512 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col1 |
+| PD (effect) | θpop,EC50, EC50 (mg × h/L) — RSE (%) | `Q321` · not captured | 33.3 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col2 |
+| variability | θJAP,σ, relative σ with Japanese ethnicity (%) — Estimate | `Q315` · not captured | 87.0 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
+| variability | θJAP,σ, relative σ with Japanese ethnicity (%) — RSE (%) | `Q315` · not captured | 3.64 | not captured | not captured | llm (not captured) | Tab1:row8:col2 |
+| PD (effect) | ω2 proportional Emax — Estimate | `Q320` · not captured | 1.49 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col1 |
+| PD (effect) | ω2 proportional Emax — RSE (%) | `Q320` · not captured | 10.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col2 |
+| variability | ω2 covariance BSL/Emax — RSE (%) | `Q314` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | Tab1:row20:col2 |
+| variability | σ2, scalar of residual error — Estimate | `Q315` · not captured | 0.00447 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col1 |
+| variability | σ2, scalar of residual error — RSE (%) | `Q315` · not captured | 0.986 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

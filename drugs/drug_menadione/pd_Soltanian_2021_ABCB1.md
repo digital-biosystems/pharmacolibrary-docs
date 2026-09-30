@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cisplatin (measured concentrations) drives ABCB1+ cells (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links cisplatin concentration (µM) to the percentage of ABCB1+ cells in A549 cells with an inhibitory direction, but the paper excerpts provide no PD model, mechanism, or potency/rate parameters for this response; only unrelated IC50 values are given (cisplatin 0.25 µM and 22.5 µM, gemcitabine 5 µM and 9 µM, menadione 16 µM on cell survival).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

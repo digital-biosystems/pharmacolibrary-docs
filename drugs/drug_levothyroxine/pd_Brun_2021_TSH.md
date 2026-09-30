@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Free thyroxine drives name (in mIU/L): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> Levothyroxine replacement raises free thyroxine (fT4), which suppresses TSH (mIU/L) via an assumed log-linear TSH–fT4 relationship; the paper does not state a mechanistic PD model beyond this log-linear link and gives no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brun_2021`
 - **model family:** `log_linear`
 - **driver:** `not_resolved`

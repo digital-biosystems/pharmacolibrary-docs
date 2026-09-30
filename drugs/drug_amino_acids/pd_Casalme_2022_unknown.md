@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dolastatin 16 derivatives (measured concentrations) drives settlement of cypris larvae (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dolastatin 16 derivatives (and CuSO4 as reference) inhibit settlement of A. amphitrite cypris larvae after 48 h exposure, reported as EC50 values without a stated mechanism or PD model; EC50s ranged from 0.60 μg/mL (compound 21) to 4.62 μg/mL (compound 22), with CuSO4 at 0.10 μg/mL (0.63 μM), and LC50 values were also reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Casalme_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,24 +31,24 @@ Casalme LO; Katayama K; Hayakawa Y; Nakamura K; Yamauchi A; Nogata Y; et al. et 
   ·  DOI: [10.3390/md20020124](https://doi.org/10.3390/md20020124)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (μg/mL) 1 — 3 3 | `Q321` · not captured | 1.17 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col4 |
-| EC50 (μg/mL) 1 — 24 | `Q321` · not captured | 1.74 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col5 |
-| EC50 (μg/mL) 1 — Boc-3 | `Q321` · not captured | 0.79 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col6 |
-| EC50 (μg/mL) 1 — 21 | `Q321` · not captured | 0.60 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col7 |
-| EC50 (μg/mL) 1 — 22 | `Q321` · not captured | 4.62 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col8 |
-| EC50 (μg/mL) 1 — 25 | `Q321` · not captured | 0.90 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col9 |
-| EC50 (μg/mL) 1 — 29 | `Q321` · not captured | 3.27 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col10 |
-| EC50 (μg/mL) 1 — CuSO4 3 | `Q321` · not captured | 0.10 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col11 |
-| EC50 (μM) — 3 3 | `Q321` · not captured | 1.92 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col4 |
-| EC50 (μM) — 24 | `Q321` · not captured | 1.86 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col5 |
-| EC50 (μM) — Boc-3 | `Q321` · not captured | 1.30 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col6 |
-| EC50 (μM) — 21 | `Q321` · not captured | 0.96 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col7 |
-| EC50 (μM) — 22 | `Q321` · not captured | 6.47 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col8 |
-| EC50 (μM) — 25 | `Q321` · not captured | 1.32 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col9 |
-| EC50 (μM) — 29 | `Q321` · not captured | 6.52 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col10 |
-| EC50 (μM) — CuSO4 3 | `Q321` · not captured | 0.63 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (μg/mL) 1 — 3 3 | `Q321` · not captured | 1.17 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col4 |
+| PD (effect) | EC50 (μg/mL) 1 — 24 | `Q321` · not captured | 1.74 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col5 |
+| PD (effect) | EC50 (μg/mL) 1 — Boc-3 | `Q321` · not captured | 0.79 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col6 |
+| PD (effect) | EC50 (μg/mL) 1 — 21 | `Q321` · not captured | 0.60 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col7 |
+| PD (effect) | EC50 (μg/mL) 1 — 22 | `Q321` · not captured | 4.62 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col8 |
+| PD (effect) | EC50 (μg/mL) 1 — 25 | `Q321` · not captured | 0.90 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col9 |
+| PD (effect) | EC50 (μg/mL) 1 — 29 | `Q321` · not captured | 3.27 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col10 |
+| PD (effect) | EC50 (μg/mL) 1 — CuSO4 3 | `Q321` · not captured | 0.10 | μg/mL | not captured | llm_confirmed (not captured) | marinedrugs-20-00124-t001:row0:col11 |
+| PD (effect) | EC50 (μM) — 3 3 | `Q321` · not captured | 1.92 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col4 |
+| PD (effect) | EC50 (μM) — 24 | `Q321` · not captured | 1.86 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col5 |
+| PD (effect) | EC50 (μM) — Boc-3 | `Q321` · not captured | 1.30 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col6 |
+| PD (effect) | EC50 (μM) — 21 | `Q321` · not captured | 0.96 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col7 |
+| PD (effect) | EC50 (μM) — 22 | `Q321` · not captured | 6.47 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col8 |
+| PD (effect) | EC50 (μM) — 25 | `Q321` · not captured | 1.32 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col9 |
+| PD (effect) | EC50 (μM) — 29 | `Q321` · not captured | 6.52 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col10 |
+| PD (effect) | EC50 (μM) — CuSO4 3 | `Q321` · not captured | 0.63 | μM | not captured | exact (not captured) | marinedrugs-20-00124-t001:row1:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

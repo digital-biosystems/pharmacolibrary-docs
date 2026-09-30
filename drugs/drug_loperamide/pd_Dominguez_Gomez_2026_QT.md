@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Loperamide (concentrations from the PK model of Valenzuela_2025::loperamide) drives QT prolongation (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Loperamide concentration acts on QT prolongation (ΔQT, ms) via multichannel ion-channel blockade: each of seven currents (ICaL, INaL, Ito, IKs, IK1, INa, IKr) is reduced by a Hill model, g_drug,k = g_k·β_k with β_k = 1 + (C/IC50,k)^h_k, and the resulting conductance changes are propagated through 3D cardiac digital-twin (O'Hara–Rudy based) emulators to predict ΔQT. The paper does not state a single Emax/IC50 value for the ΔQT relationship in the excerpts; experimental IC50 and Hill coefficient replicates per channel (3 replicates in saline buffer, 6 for hERG and 3 for other channels in human plasma) were propagated as uncertainty, but their numeric values are not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dominguez-Gomez_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

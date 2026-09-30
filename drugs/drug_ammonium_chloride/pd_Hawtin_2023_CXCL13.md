@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in pg/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MHV370 (a TLR7/8 inhibitor) concentrations were related to serum CXCL13 (pg/ml, measured by ELISA at termination in NZB/W F1 mice given MHV370-laced food), with an inhibitory effect direction, but the paper does not state a PD model or mechanism for the CXCL13 response and reports no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma for it. Related potency values given elsewhere are IC50s for other readouts (e.g., 15 ± 10 nM and 7 ± 0.1 nM for reporter inhibition; 3.8 ± 0.8 nM and 5.2 ± 1.5 nM for ROS; 35 nM for the ex vivo CD69 blood PD marker), not for CXCL13.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

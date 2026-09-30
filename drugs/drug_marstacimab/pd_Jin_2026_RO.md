@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anti-TFPI antibody (measured concentrations) drives TFPI receptor occupancy (in %): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Anti-TFPI antibody (marstacimab) concentrations (nM) drive TFPI receptor occupancy (%), modeled with a TMDD-type binding relationship; the paper does not state an explicit PD effect form (no Imax/IC50/kin/kout/ke0 given), but relates occupancy to binding affinity (Kd, with subnanomolar Kd for 4D8) and to potency in the dPT assay via EC50 values, with RO% at trough depending on whether concentrations stay above the EC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2026`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

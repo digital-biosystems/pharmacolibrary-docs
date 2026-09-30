@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011_neonates and young infants undergoing cardiopulmonary bypass](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | — (no model) | 0 | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Tae_2011_neonates and young infants undergoing cardiopulmonary bypass](drugs/drug_aprotinin/Aprotinin_Tae2011_neonates_and_young_infants_undergoing_card.md) | — | — (no model) | 0 | Tae YM et al., Population pharmacokinetic analysis and…, Journal of clinical pharmac… (2011) | [10.1177/0091270010379411](https://doi.org/10.1177/0091270010379411) |
 
 ## Pharmacogenomics (PGx)
 

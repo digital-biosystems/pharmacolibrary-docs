@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BMS-180560 (measured concentrations) drives AII-stimulated acidification rates of RASM cells (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BMS-180560 (nM concentrations) inhibits the AII-stimulated acidification rate response of RASM cells, acting as an insurmountable AT1 receptor antagonist (AII could not overcome the inhibition); the record reports an Emax-type inhibition with an EC50 for AII of 22 nM, and the paper gives apparent KB values of 0.068 ± 0.048 nM (without BSA) for the antagonism, with 0.1 and 1 nM BMS-180560 decreasing AII-stimulated acidification responses by 22% and 100% respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dickinson_1994`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Dickinson KE; Cohen RB; Skwish S; Delaney CL; Serafino RP; Poss MA; et al. et al
   ·  DOI: [10.1111/j.1476-5381.1994.tb16191.x](https://doi.org/10.1111/j.1476-5381.1994.tb16191.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 for All | `Q321` · not captured | 22 | nM | not captured | review_gapfill (not captured) | Dickinson_1994:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 for All | `Q321` · not captured | 22 | nM | not captured | review_gapfill (not captured) | Dickinson_1994:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

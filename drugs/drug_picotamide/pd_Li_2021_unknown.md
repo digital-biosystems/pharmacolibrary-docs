@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Picotamide (measured concentrations) drives smooth muscle contraction (in mN): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Picotamide (µM concentrations) inhibits agonist- and EFS-induced smooth muscle contraction (mN) in porcine renal interlobar and coronary arteries; the paper describes it as a TXA2 receptor antagonist/TXA2 synthase inhibitor with non-competitive inhibition of α1-adrenergic, cholinergic and serotonin-induced contractions (right shifts of 2–10-fold in EC50 in interlobar arteries, ~50% inhibition without right shift in coronary arteries), and EFS-induced contractions were inhibited ~50% at 100 and 300 µM but not 30 µM; no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values for the contraction model are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syzygium aromaticum aqueous extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic effect of Syzygium aromaticum aqueous extract (SAAE) on H2O2: H2O2 was measured in neutrophils by DCFH fluorescence, and SAAE did not affect intracellular H2O2 levels (nor did it scavenge commercial H2O2 in a cell-free assay). No mechanism, IC50, Emax, or rate parameters are given for an H2O2 response; the inhibitory activity reported instead concerns luminol-amplified chemiluminescence and MPO activity (IC50 0.5 µg/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chniguir_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

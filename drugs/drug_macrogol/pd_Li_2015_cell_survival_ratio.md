@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MPEG-rLDP-AE (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> mPEG-rLDP-AE (PEGylated lidamycin) concentrations inhibit cancer cell growth (cell survival ratio, %) measured by MTT assay, a direct cytotoxic effect with no PD mechanism model given; IC50 values ranged from 0.03 to 1 nmol/L for the PEGylated LDM versus 0.1 to 4.2 nmol/L for unmodified LDM across four cell lines.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

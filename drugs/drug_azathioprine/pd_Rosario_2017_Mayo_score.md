@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vedolizumab drives clinical response (in points): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper describes vedolizumab (not azathioprine) inhibiting MAdCAM-1–α4β7 integrin binding on peripheral blood memory T cells, measured by the MAdCAM-1-Fc assay, via a direct-effect sigmoid Emax model; the EC50 was 0.093 µg/mL, with complete receptor saturation at approximately 1 µg/mL. The paper does not state a quantitative PD model linking vedolizumab concentrations to the clinical Mayo score response itself, only that concentrations ≥17.1 µg/mL (UC, GEMINI 1) and ≥16 µg/mL (CD, GEMINI 2) at week 6 were associated with remission rates above placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rosario_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,62 +31,62 @@ Rosario M; Dirks NL; Milch C; Parikh A; Bargfrede M; Wyant T; et al. et al. (201
   ·  DOI: [10.1007/s40262-017-0546-0](https://doi.org/10.1007/s40262-017-0546-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 5.62 | lg/mL | not captured | llm (not captured) | tab_0:row2:col1 |
-| C max (lg/mL) | `Q32` · not captured | 10.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col2 |
-| C max (lg/mL) | `Q32` · not captured | 58.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col3 |
-| C max (lg/mL) | `Q32` · not captured | 150 | lg/mL | not captured | llm (not captured) | tab_0:row2:col4 |
-| C max (lg/mL) | `Q32` · not captured | 243 | lg/mL | not captured | llm (not captured) | tab_0:row2:col5 |
-| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 31.3 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col1 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 119 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col2 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 955 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col3 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 3020 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col4 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 4840 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col5 |
-| AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 39.1 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col1 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 127 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col2 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 969 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col3 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3030 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col4 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 4850 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col5 |
-| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.02 | L | not captured | llm (not captured) | tab_0:row5:col1 |
-| V z (L) | `Q61` · not captured | 4.89 | L | not captured | llm (not captured) | tab_0:row5:col2 |
-| V z (L) | `Q61` · not captured | 3.28 | L | not captured | llm (not captured) | tab_0:row5:col3 |
-| V z (L) | `Q61` · not captured | 2.92 | L | not captured | llm (not captured) | tab_0:row5:col4 |
-| V z (L) | `Q61` · not captured | 2.73 | L | not captured | llm (not captured) | tab_0:row5:col5 |
-| CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.412 | L/day | not captured | exact (not captured) | tab_0:row6:col1 |
-| CL (L/day) | `Q22` · not captured | 0.297 | L/day | not captured | exact (not captured) | tab_0:row6:col2 |
-| CL (L/day) | `Q22` · not captured | 0.164 | L/day | not captured | exact (not captured) | tab_0:row6:col3 |
-| CL (L/day) | `Q22` · not captured | 0.136 | L/day | not captured | exact (not captured) | tab_0:row6:col4 |
-| CL (L/day) | `Q22` · not captured | 0.139 | L/day | not captured | exact (not captured) | tab_0:row6:col5 |
-| t (day) | `Q75` · not captured | 11.7 | day | not captured | llm (not captured) | tab_0:row7:col2 |
-| t (day) | `Q75` · not captured | 14.1 | day | not captured | llm (not captured) | tab_0:row7:col3 |
-| t (day) | `Q75` · not captured | 15.1 | day | not captured | llm (not captured) | tab_0:row7:col4 |
-| t (day) | `Q75` · not captured | 14.8 | day | not captured | llm (not captured) | tab_0:row7:col5 |
-| C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 48.2 | lg/mL | not captured | llm (not captured) | tab_0:row14:col1 |
-| C max (lg/mL) | `Q32` · not captured | 115 | lg/mL | not captured | llm (not captured) | tab_0:row14:col2 |
-| C max (lg/mL) | `Q32` · not captured | 188 | lg/mL | not captured | llm (not captured) | tab_0:row14:col3 |
-| C max (lg/mL) | `Q32` · not captured | 206 | lg/mL | not captured | llm (not captured) | tab_0:row14:col4 |
-| C max (lg/mL) | `Q32` · not captured | 239 | lg/mL | not captured | llm (not captured) | tab_0:row14:col5 |
-| AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 884 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col1 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 1990 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col2 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 3750 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col4 |
-| AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 5488 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col5 |
-| AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 899 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col1 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 2000 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col2 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3890 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col4 |
-| AUC 0-? (lgÁday/mL) | `Q88` · not captured | 5813 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col5 |
-| t (day) | `Q75` · not captured | 18.3 | day | not captured | llm (not captured) | tab_0:row17:col2 |
-| t (day) | `Q75` · not captured | 21.0 | day | not captured | llm (not captured) | tab_0:row17:col4 |
-| t (day) | `Q75` · not captured | 26.2 | day | not captured | llm (not captured) | tab_0:row17:col5 |
-| CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.200 | L/day | not captured | exact (not captured) | tab_0:row18:col1 |
-| CL (L/day) | `Q22` · not captured | 0.150 | L/day | not captured | exact (not captured) | tab_0:row18:col2 |
-| CL (L/day) | `Q22` · not captured | 0.154 | L/day | not captured | exact (not captured) | tab_0:row18:col4 |
-| V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.05 | L | not captured | llm (not captured) | tab_0:row19:col1 |
-| V z (L) | `Q61` · not captured | 3.87 | L | not captured | llm (not captured) | tab_0:row19:col2 |
-| V z (L) | `Q61` · not captured | 4.57 | L | not captured | llm (not captured) | tab_0:row19:col4 |
-| V ss (L) — Vedolizumab dose a | `Q65` · not captured | 5.72 | L | not captured | llm (not captured) | tab_0:row20:col1 |
-| V ss (L) | `Q65` · not captured | 4.49 | L | not captured | llm (not captured) | tab_0:row20:col2 |
-| V ss (L) | `Q65` · not captured | 4.95 | L | not captured | llm (not captured) | tab_0:row20:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 5.62 | lg/mL | not captured | llm (not captured) | tab_0:row2:col1 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 10.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col2 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 58.4 | lg/mL | not captured | llm (not captured) | tab_0:row2:col3 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 150 | lg/mL | not captured | llm (not captured) | tab_0:row2:col4 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 243 | lg/mL | not captured | llm (not captured) | tab_0:row2:col5 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 31.3 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col1 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 119 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col2 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 955 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col3 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 3020 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col4 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 4840 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row3:col5 |
+| PK (driver) | AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 39.1 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col1 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 127 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col2 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 969 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col3 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3030 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col4 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 4850 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row4:col5 |
+| PK (driver) | V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.02 | L | not captured | llm (not captured) | tab_0:row5:col1 |
+| PK (driver) | V z (L) | `Q61` · not captured | 4.89 | L | not captured | llm (not captured) | tab_0:row5:col2 |
+| PK (driver) | V z (L) | `Q61` · not captured | 3.28 | L | not captured | llm (not captured) | tab_0:row5:col3 |
+| PK (driver) | V z (L) | `Q61` · not captured | 2.92 | L | not captured | llm (not captured) | tab_0:row5:col4 |
+| PK (driver) | V z (L) | `Q61` · not captured | 2.73 | L | not captured | llm (not captured) | tab_0:row5:col5 |
+| PK (driver) | CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.412 | L/day | not captured | exact (not captured) | tab_0:row6:col1 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.297 | L/day | not captured | exact (not captured) | tab_0:row6:col2 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.164 | L/day | not captured | exact (not captured) | tab_0:row6:col3 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.136 | L/day | not captured | exact (not captured) | tab_0:row6:col4 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.139 | L/day | not captured | exact (not captured) | tab_0:row6:col5 |
+| PK (driver) | t (day) | `Q75` · not captured | 11.7 | day | not captured | llm (not captured) | tab_0:row7:col2 |
+| PK (driver) | t (day) | `Q75` · not captured | 14.1 | day | not captured | llm (not captured) | tab_0:row7:col3 |
+| PK (driver) | t (day) | `Q75` · not captured | 15.1 | day | not captured | llm (not captured) | tab_0:row7:col4 |
+| PK (driver) | t (day) | `Q75` · not captured | 14.8 | day | not captured | llm (not captured) | tab_0:row7:col5 |
+| PK (driver) | C max (lg/mL) — Vedolizumab dose a | `Q32` · not captured | 48.2 | lg/mL | not captured | llm (not captured) | tab_0:row14:col1 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 115 | lg/mL | not captured | llm (not captured) | tab_0:row14:col2 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 188 | lg/mL | not captured | llm (not captured) | tab_0:row14:col3 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 206 | lg/mL | not captured | llm (not captured) | tab_0:row14:col4 |
+| PK (driver) | C max (lg/mL) | `Q32` · not captured | 239 | lg/mL | not captured | llm (not captured) | tab_0:row14:col5 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 884 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col1 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 1990 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col2 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 3750 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col4 |
+| PK (driver) | AUC 0-tlast (lgÁday/mL) | `Q88` · not captured | 5488 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row15:col5 |
+| PK (driver) | AUC 0-? (lgÁday/mL) — Vedolizumab dose a | `Q88` · not captured | 899 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col1 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 2000 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col2 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 3890 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col4 |
+| PK (driver) | AUC 0-? (lgÁday/mL) | `Q88` · not captured | 5813 | lgÁday/mL | not captured | boundary (not captured) | tab_0:row16:col5 |
+| PK (driver) | t (day) | `Q75` · not captured | 18.3 | day | not captured | llm (not captured) | tab_0:row17:col2 |
+| PK (driver) | t (day) | `Q75` · not captured | 21.0 | day | not captured | llm (not captured) | tab_0:row17:col4 |
+| PK (driver) | t (day) | `Q75` · not captured | 26.2 | day | not captured | llm (not captured) | tab_0:row17:col5 |
+| PK (driver) | CL (L/day) — Vedolizumab dose a | `Q22` · not captured | 0.200 | L/day | not captured | exact (not captured) | tab_0:row18:col1 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.150 | L/day | not captured | exact (not captured) | tab_0:row18:col2 |
+| PK (driver) | CL (L/day) | `Q22` · not captured | 0.154 | L/day | not captured | exact (not captured) | tab_0:row18:col4 |
+| PK (driver) | V z (L) — Vedolizumab dose a | `Q61` · not captured | 4.05 | L | not captured | llm (not captured) | tab_0:row19:col1 |
+| PK (driver) | V z (L) | `Q61` · not captured | 3.87 | L | not captured | llm (not captured) | tab_0:row19:col2 |
+| PK (driver) | V z (L) | `Q61` · not captured | 4.57 | L | not captured | llm (not captured) | tab_0:row19:col4 |
+| PK (driver) | V ss (L) — Vedolizumab dose a | `Q65` · not captured | 5.72 | L | not captured | llm (not captured) | tab_0:row20:col1 |
+| PK (driver) | V ss (L) | `Q65` · not captured | 4.49 | L | not captured | llm (not captured) | tab_0:row20:col2 |
+| PK (driver) | V ss (L) | `Q65` · not captured | 4.95 | L | not captured | llm (not captured) | tab_0:row20:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

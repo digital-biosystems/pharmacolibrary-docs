@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dehydroabietic acid (measured concentrations) drives endoglucanase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dehydroabietic acid (DHA) concentrations (mg/L) inhibit endoglucanase (EG) activity in A. alternata in a concentration-dependent manner, with EG activity at the EC50-treated group falling to 24.75 μg/h/mL versus 153.84 μg/h/mL in controls after 72 h; the paper does not state a specific PD mechanism (e.g., Emax/turnover parameters) for the EG response, and the EC50 of 56.015 mg/L (EC30 9.966 mg/L) reported for A. alternata corresponds to mycelial growth inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2025_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,18 +29,18 @@
 not matched (stem Chen_2025_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| A. alternata — EC30 (mg/L) | `Q321` · not captured | 9.966 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row1:col4 |
-| A. alternata — EC50 (mg/L) | `Q321` · not captured | 56.015 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row1:col6 |
-| P. neglecta — EC30 (mg/L) | `Q321` · not captured | 101.918 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row2:col4 |
-| P. neglecta — EC50 (mg/L) | `Q321` · not captured | 492.687 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row2:col6 |
-| F. oxysporum — EC30 (mg/L) | `Q321` · not captured | 106.78 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row3:col4 |
-| F. oxysporum — EC50 (mg/L) | `Q321` · not captured | 595.547 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row3:col6 |
-| B. cinerea — EC30 (mg/L) | `Q321` · not captured | 10.727 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row4:col4 |
-| B. cinerea — EC50 (mg/L) | `Q321` · not captured | 70.664 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row4:col6 |
-| V. mali — EC30 (mg/L) | `Q321` · not captured | 14.763 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row5:col4 |
-| V. mali — EC50 (mg/L) | `Q321` · not captured | 72.319 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row5:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | A. alternata — EC30 (mg/L) | `Q321` · not captured | 9.966 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row1:col4 |
+| PD (effect) | A. alternata — EC50 (mg/L) | `Q321` · not captured | 56.015 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row1:col6 |
+| PD (effect) | P. neglecta — EC30 (mg/L) | `Q321` · not captured | 101.918 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row2:col4 |
+| PD (effect) | P. neglecta — EC50 (mg/L) | `Q321` · not captured | 492.687 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row2:col6 |
+| PD (effect) | F. oxysporum — EC30 (mg/L) | `Q321` · not captured | 106.78 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row3:col4 |
+| PD (effect) | F. oxysporum — EC50 (mg/L) | `Q321` · not captured | 595.547 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row3:col6 |
+| PD (effect) | B. cinerea — EC30 (mg/L) | `Q321` · not captured | 10.727 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row4:col4 |
+| PD (effect) | B. cinerea — EC50 (mg/L) | `Q321` · not captured | 70.664 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row4:col6 |
+| PD (effect) | V. mali — EC30 (mg/L) | `Q321` · not captured | 14.763 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row5:col4 |
+| PD (effect) | V. mali — EC50 (mg/L) | `Q321` · not captured | 72.319 | mg/L | not captured | llm (not captured) | jof-11-00265-t002:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

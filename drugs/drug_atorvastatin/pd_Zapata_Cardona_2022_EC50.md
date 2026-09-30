@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin (concentrations from the PK model of Chen_2025) drives SARS-CoV-2 viral replication (in μM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In vitro, atorvastatin concentrations (μM) inhibit SARS-CoV-2 viral replication in Vero E6 and Caco-2 cells, with EC50s of 15.4, 12.1, and 11.1 μM (D614G, Vero E6) for pre-post, pre-infection, and post-infection treatments, 16.8 and 21.1 μM for Delta and Mu variants, and 7.4 μM in Caco-2; CC50 was 50.3 μM (Vero E6) and 64.5 μM (Caco-2). The paper does not state a formal PD model (no Imax, kin, kout, ke0, or gamma), but suggests the mechanism involves effects on multiple stages of the viral replicative cycle via cholesterol-pathway modulation, with possible interaction with RdRp and 3CL protease.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zapata-Cardona_2022`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Zapata-Cardona MI; Flórez-Álvarez L; Zapata-Builes W; Guerra-Sandoval AL; Guer
   ·  DOI: [10.3389/fmicb.2022.721103](https://doi.org/10.3389/fmicb.2022.721103)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Atorvastatin — CC 50 (μM) | `Q322` · not captured | 50.3 | μM | not captured | llm (not captured) | tab_1:row1:col2 |
-| Atorvastatin — EC50 (μM) | `Q321` · not captured | 15.4 | μM | not captured | llm (not captured) | tab_1:row1:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Atorvastatin — CC 50 (μM) | `Q322` · not captured | 50.3 | μM | not captured | llm (not captured) | tab_1:row1:col2 |
+| PD (effect) | Atorvastatin — EC50 (μM) | `Q321` · not captured | 15.4 | μM | not captured | llm (not captured) | tab_1:row1:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

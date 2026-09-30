@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GPXGPPGPGP (measured concentrations) drives DPP-IV inhibitory activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports in vitro DPP-IV inhibitory activity (%) of fish skin gelatin hydrolysates and the peptide GPXGPPGPGP, with inhibition measured as a direct effect on DPP-IV activity; no pharmacodynamic model, mechanism of inhibition (e.g., production/elimination effects), or quantitative potency parameters (IC50, Emax, etc.) with values are provided in the excerpts, and gelatin itself showed poor inhibitory activity (&lt;5%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

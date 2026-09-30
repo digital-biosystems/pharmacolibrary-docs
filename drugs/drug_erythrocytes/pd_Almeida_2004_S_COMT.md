@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BIA 3-202 drives erythrocyte S-COMT activity (in pmol/mg protein/h) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BIA 3-202 doses (50–400 mg, given with Madopar 125) inhibit erythrocyte S-COMT activity (pmol/mg protein/h) in a dose-dependent manner; the paper does not state a concentration-driven PD model or mechanism beyond reversible COMT inhibition. Baseline activity E0 was ~40.6–44.1, maximum inhibition Emax ranged from 18.4 (50 mg) to 7.0 (400 mg) occurring at tEmax 1.4–2.1 h, giving percent inhibition [(E0−Emax)/E0]·100 of 57.2%, 69.2%, 80.0% and 83.8% at 50, 100, 200 and 400 mg respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Almeida_2004`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,24 +30,24 @@ Almeida L; Vaz-da-Silva M; Silveira P; Falcão A; Maia J; Loureiro A; et al. et 
   ·  DOI: [10.1097/00002826-200401000-00007](https://doi.org/10.1097/00002826-200401000-00007)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E 0 — 50 | `Q324` · not captured | 43.4 | not captured | not captured | space_fold (not captured) | tab_2:row0:col3 |
-| E 0 — 100 | `Q324` · not captured | 42.1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col4 |
-| E 0 — 200 | `Q324` · not captured | 40.6 | not captured | not captured | space_fold (not captured) | tab_2:row0:col5 |
-| E 0 — 400 | `Q324` · not captured | 44.1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col6 |
-| E max — 50 | `Q320` · not captured | 18.4 | not captured | not captured | space_fold (not captured) | tab_2:row1:col3 |
-| E max — 100 | `Q320` · not captured | 13.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col4 |
-| E max — 200 | `Q320` · not captured | 8.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col5 |
-| E max — 400 | `Q320` · not captured | 7.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col6 |
-| t Emax — 50 | `Q321` · not captured | 1.4 | unknown | not captured | llm_corrected (not captured) | tab_2:row2:col3 |
-| t Emax — 100 | `Q56` · not captured | 1.6 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col4 |
-| t Emax — 200 | `Q56` · not captured | 2.1 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col5 |
-| t Emax — 400 | `Q56` · not captured | 2.0 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col6 |
-| [(E 0 -E max )/E 0 ].100 — 50 | `Q100` · not captured | 57.2 | not captured | not captured | llm (not captured) | tab_2:row3:col3 |
-| [(E 0 -E max )/E 0 ].100 — 100 | `Q900` · not captured | 69.2 | not captured | not captured | llm (not captured) | tab_2:row3:col4 |
-| [(E 0 -E max )/E 0 ].100 — 200 | `Q100` · not captured | 80.0 | not captured | not captured | llm (not captured) | tab_2:row3:col5 |
-| [(E 0 -E max )/E 0 ].100 — 400 | `Q900` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_2:row3:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E 0 — 50 | `Q324` · not captured | 43.4 | not captured | not captured | space_fold (not captured) | tab_2:row0:col3 |
+| PD (effect) | E 0 — 100 | `Q324` · not captured | 42.1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col4 |
+| PD (effect) | E 0 — 200 | `Q324` · not captured | 40.6 | not captured | not captured | space_fold (not captured) | tab_2:row0:col5 |
+| PD (effect) | E 0 — 400 | `Q324` · not captured | 44.1 | not captured | not captured | space_fold (not captured) | tab_2:row0:col6 |
+| PD (effect) | E max — 50 | `Q320` · not captured | 18.4 | not captured | not captured | space_fold (not captured) | tab_2:row1:col3 |
+| PD (effect) | E max — 100 | `Q320` · not captured | 13.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col4 |
+| PD (effect) | E max — 200 | `Q320` · not captured | 8.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col5 |
+| PD (effect) | E max — 400 | `Q320` · not captured | 7.0 | not captured | not captured | space_fold (not captured) | tab_2:row1:col6 |
+| PD (effect) | t Emax — 50 | `Q321` · not captured | 1.4 | unknown | not captured | llm_corrected (not captured) | tab_2:row2:col3 |
+| PK (driver) | t Emax — 100 | `Q56` · not captured | 1.6 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col4 |
+| PK (driver) | t Emax — 200 | `Q56` · not captured | 2.1 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col5 |
+| PK (driver) | t Emax — 400 | `Q56` · not captured | 2.0 | not captured | not captured | llm_corrected (not captured) | tab_2:row2:col6 |
+| — | [(E 0 -E max )/E 0 ].100 — 50 | `Q100` · not captured | 57.2 | not captured | not captured | llm (not captured) | tab_2:row3:col3 |
+| model term | [(E 0 -E max )/E 0 ].100 — 100 | `Q900` · not captured | 69.2 | not captured | not captured | llm (not captured) | tab_2:row3:col4 |
+| — | [(E 0 -E max )/E 0 ].100 — 200 | `Q100` · not captured | 80.0 | not captured | not captured | llm (not captured) | tab_2:row3:col5 |
+| model term | [(E 0 -E max )/E 0 ].100 — 400 | `Q900` · not captured | 83.8 | not captured | not captured | llm (not captured) | tab_2:row3:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

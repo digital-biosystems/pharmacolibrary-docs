@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 19(S)-HETE (measured concentrations) drives Vasorelaxation (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 19(S)-HETE (nM concentrations) directly stimulates vasorelaxation of phenylephrine pre-contracted murine mesenteric arteries and aorta by activating the prostacyclin (IP) receptor and generating cAMP; the effect is abolished in IP-receptor-deficient (Ptgir-deleted) vessels and unaffected by COX-1/2 inhibition. The paper does not state an EC50, Emax, or rate constants for the vasorelaxation response itself (EC50 values of 520 nM in MEG-01 cells and 567 nM, Ki 660 nM, refer to cAMP/IP-receptor activation, not vasorelaxation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tunaru_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

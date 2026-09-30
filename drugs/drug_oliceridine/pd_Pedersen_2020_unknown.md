@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliceridine drives unknown (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Oliceridine concentration-response data at the μ-opioid receptor (Gαi2/GαoA activation and β-arrestin recruitment measured 2–60 min after stimulation) were fitted with a four-parameter sigmoid Emax model; no fit could be obtained for oliceridine in β-arrestin recruitment. The paper does not state specific EC50/Emax values for oliceridine, and no mechanism beyond direct agonist stimulation is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pedersen_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

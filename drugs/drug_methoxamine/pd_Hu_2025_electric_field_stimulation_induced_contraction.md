@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil (measured concentrations) drives name (in mN): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In human prostate organ bath experiments, verapamil (10 nM–10 µM) concentration-dependently inhibited electric field stimulation-induced contractions (measured in mN), with Emax decreased by 39% at 1 µM and 93% at 10 µM; the paper attributes this to mixed mechanisms (α1-adrenoceptor antagonism plus CaV1.2 inhibition) and does not report a quantitative PD model with IC50/EC50/kin/kout/ke0 values for the EFS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

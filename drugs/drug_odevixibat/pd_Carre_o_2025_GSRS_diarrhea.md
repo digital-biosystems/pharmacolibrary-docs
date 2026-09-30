@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 7-alpha-hydroxy-4-cholesten-3-one (measured concentrations) drives gastrointestinal symptom rating scale diarrhea score (in score): indirect response — drug inhibits the production of gastrointestinal symptom rating scale diarrhea score.
+
+**Model:** No model was generated from this record.
+
+> In the paper (linerixibat, not odevixibat), a kinetic-pharmacodynamic indirect response model links linerixibat dose (1–180 mg, once/twice daily) to serum C4 (7-alpha-hydroxy-4-cholesten-3-one, ng/mL), with an Emax stimulation of the zero-order C4 synthesis rate (Kin) and a dual cosine function (8 and 12 h periods) for diurnal variation; C4 then drives a proportional odds model for the GSRS diarrhea score (1–7). No numeric values for Emax, ED50/EC50, Kin, or KDE are given in the excerpts (KDE was fixed to a prior estimate), and the dose effect plateaued near 180 mg/day.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carreño_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

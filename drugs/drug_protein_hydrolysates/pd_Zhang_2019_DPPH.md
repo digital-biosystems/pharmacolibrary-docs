@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives DPPH radical scavenging activity (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations (0.05–5.0 mg/mL) of six skipjack tuna head peptides (P1–P6) and the hydrolysate were tested for direct DPPH radical scavenging activity, reported as EC50 values (mg/mL): P1 3.76, P2 0.31, P3 1.33, P4 0.33, P5 0.93, P6 0.46, with GSH control 0.22; the paper does not state a mechanistic PD model (no Imax, kin/kout, or ke0), only concentration–response EC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -19,29 +29,29 @@
 not matched (stem Zhang_2019)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (mg/mL) — P1 | `Q321` · not captured | 3.76 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col3 |
-| EC50 (mg/mL) — P2 | `Q321` · not captured | 0.31 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col4 |
-| EC50 (mg/mL) — P3 | `Q321` · not captured | 1.33 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col5 |
-| EC50 (mg/mL) — P4 | `Q321` · not captured | 0.33 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col6 |
-| EC50 (mg/mL) — P5 | `Q321` · not captured | 0.93 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col7 |
-| EC50 (mg/mL) — P6 | `Q321` · not captured | 0.46 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col8 |
-| EC50 (mg/mL) — GSH | `Q321` · not captured | 0.22 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col9 |
-| EC50 (mg/mL) — P1 | `Q321` · not captured | 2.43 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col3 |
-| EC50 (mg/mL) — P2 | `Q321` · not captured | 0.30 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col4 |
-| EC50 (mg/mL) — P3 | `Q321` · not captured | 1.71 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col5 |
-| EC50 (mg/mL) — P4 | `Q321` · not captured | 0.43 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col6 |
-| EC50 (mg/mL) — P5 | `Q321` · not captured | 0.81 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col7 |
-| EC50 (mg/mL) — P6 | `Q321` · not captured | 0.52 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col8 |
-| EC50 (mg/mL) — GSH | `Q321` · not captured | 0.12 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col9 |
-| EC50 (mg/mL) — P1 | `Q321` · not captured | 1.79 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col3 |
-| EC50 (mg/mL) — P2 | `Q321` · not captured | 0.56 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col4 |
-| EC50 (mg/mL) — P3 | `Q321` · not captured | 1.51 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col5 |
-| EC50 (mg/mL) — P4 | `Q321` · not captured | 0.38 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col6 |
-| EC50 (mg/mL) — P5 | `Q321` · not captured | 3.04 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col7 |
-| EC50 (mg/mL) — P6 | `Q321` · not captured | 0.71 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col8 |
-| EC50 (mg/mL) — GSH | `Q321` · not captured | 0.09 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (mg/mL) — P1 | `Q321` · not captured | 3.76 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col3 |
+| PD (effect) | EC50 (mg/mL) — P2 | `Q321` · not captured | 0.31 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col4 |
+| PD (effect) | EC50 (mg/mL) — P3 | `Q321` · not captured | 1.33 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col5 |
+| PD (effect) | EC50 (mg/mL) — P4 | `Q321` · not captured | 0.33 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col6 |
+| PD (effect) | EC50 (mg/mL) — P5 | `Q321` · not captured | 0.93 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col7 |
+| PD (effect) | EC50 (mg/mL) — P6 | `Q321` · not captured | 0.46 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col8 |
+| PD (effect) | EC50 (mg/mL) — GSH | `Q321` · not captured | 0.22 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row0:col9 |
+| PD (effect) | EC50 (mg/mL) — P1 | `Q321` · not captured | 2.43 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col3 |
+| PD (effect) | EC50 (mg/mL) — P2 | `Q321` · not captured | 0.30 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col4 |
+| PD (effect) | EC50 (mg/mL) — P3 | `Q321` · not captured | 1.71 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col5 |
+| PD (effect) | EC50 (mg/mL) — P4 | `Q321` · not captured | 0.43 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col6 |
+| PD (effect) | EC50 (mg/mL) — P5 | `Q321` · not captured | 0.81 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col7 |
+| PD (effect) | EC50 (mg/mL) — P6 | `Q321` · not captured | 0.52 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col8 |
+| PD (effect) | EC50 (mg/mL) — GSH | `Q321` · not captured | 0.12 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row1:col9 |
+| PD (effect) | EC50 (mg/mL) — P1 | `Q321` · not captured | 1.79 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col3 |
+| PD (effect) | EC50 (mg/mL) — P2 | `Q321` · not captured | 0.56 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col4 |
+| PD (effect) | EC50 (mg/mL) — P3 | `Q321` · not captured | 1.51 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col5 |
+| PD (effect) | EC50 (mg/mL) — P4 | `Q321` · not captured | 0.38 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col6 |
+| PD (effect) | EC50 (mg/mL) — P5 | `Q321` · not captured | 3.04 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col7 |
+| PD (effect) | EC50 (mg/mL) — P6 | `Q321` · not captured | 0.71 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col8 |
+| PD (effect) | EC50 (mg/mL) — GSH | `Q321` · not captured | 0.09 | mg/mL | not captured | exact (not captured) | antioxidants-08-00318-t002:row2:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

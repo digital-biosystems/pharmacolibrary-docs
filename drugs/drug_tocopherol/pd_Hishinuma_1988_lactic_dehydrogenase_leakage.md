@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alpha-tocopherol (concentrations from the PK model of Hidiroglou_1996) drives name (in Wroblewski units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alpha-tocopherol (µM) dose-dependently inhibits CDNB-induced lactic dehydrogenase (LDH) leakage (Wroblewski units) from cultured cells, with an EC50 of 0.1 µM; the paper does not state a specific PD model or mechanism beyond this protective (inhibitory) effect, which was independent of GSH recovery.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hishinuma_1988`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -30,12 +30,12 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dawei_2016](drugs/drug_dexlansoprazole/pd_Dawei_2016_PPI_disruption.md) | Dawei Z et al., A Novel Assay for Screening Inhibitors…, Scientific reports (2016) | [10.1038/srep33477](https://doi.org/10.1038/srep33477) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Michaelis_2019](drugs/drug_dexlansoprazole/pd_Michaelis_2019_CPE_formation.md) | Michaelis M et al., Omeprazole Increases the Efficacy of Ac…, Frontiers in microbiology (2019) | [10.3389/fmicb.2019.02790](https://doi.org/10.3389/fmicb.2019.02790) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Michaelis_2019](drugs/drug_dexlansoprazole/pd_Michaelis_2019_Virus_titre.md) | Michaelis M et al., Omeprazole Increases the Efficacy of Ac…, Frontiers in microbiology (2019) | [10.3389/fmicb.2019.02790](https://doi.org/10.3389/fmicb.2019.02790) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Han_2023_2](drugs/drug_dexlansoprazole/pd_Han_2023_2_gastric_pH.md) | Han S et al., Comparison of Pharmacodynamics between…, Gut and liver (2023) | [10.5009/gnl220050](https://doi.org/10.5009/gnl220050) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Dawei_2016_PPI_disruption](drugs/drug_dexlansoprazole/pd_Dawei_2016_PPI_disruption.md) | name ← dexlansoprazole · inhibition effect | — | Dawei Z et al., A Novel Assay for Screening Inhibitors…, Scientific reports (2016) | [10.1038/srep33477](https://doi.org/10.1038/srep33477) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Michaelis_2019_CPE_formation](drugs/drug_dexlansoprazole/pd_Michaelis_2019_CPE_formation.md) | name ← acyclovir · inhibition effect | — | Michaelis M et al., Omeprazole Increases the Efficacy of Ac…, Frontiers in microbiology (2019) | [10.3389/fmicb.2019.02790](https://doi.org/10.3389/fmicb.2019.02790) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Michaelis_2019_Virus_titre](drugs/drug_dexlansoprazole/pd_Michaelis_2019_Virus_titre.md) | name ← acyclovir · inhibition effect | — | Michaelis M et al., Omeprazole Increases the Efficacy of Ac…, Frontiers in microbiology (2019) | [10.3389/fmicb.2019.02790](https://doi.org/10.3389/fmicb.2019.02790) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Han_2023_2_gastric_pH](drugs/drug_dexlansoprazole/pd_Han_2023_2_gastric_pH.md) | name ← tegoprazan · stimulation effect | — | Han S et al., Comparison of Pharmacodynamics between…, Gut and liver (2023) | [10.5009/gnl220050](https://doi.org/10.5009/gnl220050) |
 
 ## Pharmacogenomics (PGx)
 

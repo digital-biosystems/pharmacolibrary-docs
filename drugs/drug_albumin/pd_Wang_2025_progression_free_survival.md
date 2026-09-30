@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Serplulimab drives name (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Serplulimab exposure metrics (C avg1 and C min1 after the first dose) were related to progression-free survival in an exposure–response (E–R) efficacy analysis; the paper does not state a pharmacodynamic mechanism or model form, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given. It notes that time-varying clearance (decreasing with prolonged administration) may confound the E–R relationship, as greater clearance reduction was seen in responders (PR/CR) than in SD/PD patients.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2025`
 - **model family:** `tte`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-3 PUFA drives visuospatial function (in mean difference) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for visuospatial function: n-3 PUFA intake (mg/day) was analyzed against the mean difference in visuospatial test scores (block design test) via random-effects and restricted cubic spline dose–response models, and no significant association or non-linear dose–response relationship was found (I2 = 71%, τ2 = 0.115), with no potency (Imax, IC50, EC50, Emax) or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Suh_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

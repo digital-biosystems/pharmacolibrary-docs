@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remifentanil (measured concentrations) drives emergence cough suppression (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Remifentanil effect-site concentration (ng/mL) was related to suppression of emergence cough (binary) in patients pre-treated with 0.075 mg intravenous palonosetron (n = 21) or saline (n = 24); the paper does not state a formal PD model, only EC50/EC95 estimates via Dixon's up-and-down method and isotonic regression. EC50 of remifentanil Ce was 1.33 ± 0.38 ng/mL (control) versus 1.42 ± 0.75 ng/mL (palonosetron, p = 0.813) by Dixon's method, and 1.17 (83% CI 0.86–1.43) versus 0.88 (0.78–1.23) ng/mL by isotonic regression, with EC95 of 1.90 (1.45–1.96) versus 2.43 (1.94–2.47) ng/mL, indicating no significant effect of palonosetron on remifentanil potency for cough suppression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gil_2021`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Gil HY; Kim HY; Lee HS; Kim NY; Kim JE et al. (2021). Journal of personalized me
   ·  DOI: [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 of remifentanil Ce (ng/mL) — Control(n = 24) | `Q321` · not captured | 1.33 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col1 |
-| EC50 of remifentanil Ce (ng/mL) — Palonosetron(n = 21) | `Q321` · not captured | 1.42 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col2 |
-| EC50 of remifentanil Ce (ng/mL) — p-Value | `Q321` · not captured | 0.813 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 of remifentanil Ce (ng/mL) — Control(n = 24) | `Q321` · not captured | 1.33 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col1 |
+| PD (effect) | EC50 of remifentanil Ce (ng/mL) — Palonosetron(n = 21) | `Q321` · not captured | 1.42 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col2 |
+| PD (effect) | EC50 of remifentanil Ce (ng/mL) — p-Value | `Q321` · not captured | 0.813 | ng/mL | not captured | llm_confirmed (not captured) | jpm-11-00887-t002:row2:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

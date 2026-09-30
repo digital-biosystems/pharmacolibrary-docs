@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Candesartan drives angiotensin II dose-effect curve shift (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Candesartan (from oral candesartan cilexetil 4, 8, 16 mg) acts as a competitive AT1-receptor antagonist of exogenously infused angiotensin II, measured as the rightward shift (dose ratio, DR) of the angiotensin II dose–effect curve for diastolic blood pressure, which was fitted with a sigmoid Emax (Hill) model; the paper does not report an effect-compartment or kin/kout mechanism. Schild regression with assumed slope 1 was used, and DR reached a maximum of about 30 at 6–9 h post dose, still elevated at 24 h; no IC50, EC50, Emax, ke0 or gamma values are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Malerczyk_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vortioxetine (concentrations from the PK model of Areberg_2014_2) drives total sleep time (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vortioxetine plasma concentration (individual Cav,sleep from a fixed population PK model) was related to PSG-measured total sleep time (TST), which decreased with active treatment; the record describes this as an inhibitory Emax-type effect with an additive component, but the excerpts do not state the mechanism for TST specifically and give no Emax, EC50, gamma or rate values for TST (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma are reported for this endpoint).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilson_2015`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Wilson S; Højer AM; Buchberg J; Areberg J; Nutt DJ et al. (2015). Journal of ps
   ·  DOI: [10.1177/0269881115599387](https://doi.org/10.1177/0269881115599387)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k (min/ng/mL) — Vortioxetine | `Q47` · not captured | 0.48 | min/ng/mL | not captured | exact (not captured) | table4-0269881115599387:row2:col1 |
-| k (min/ng/mL) — Vortioxetine | `Q47` · not captured | 27 | min/ng/mL | not captured | exact (not captured) | table4-0269881115599387:row2:col2 |
-| E0 (min) — Vortioxetine | `Q324` · not captured | 1.6 | min | not captured | exact (not captured) | table4-0269881115599387:row3:col1 |
-| E0 (min) — Vortioxetine | `Q324` · not captured | 215 | min | not captured | exact (not captured) | table4-0269881115599387:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k (min/ng/mL) — Vortioxetine | `Q47` · not captured | 0.48 | min/ng/mL | not captured | exact (not captured) | table4-0269881115599387:row2:col1 |
+| PK (driver) | k (min/ng/mL) — Vortioxetine | `Q47` · not captured | 27 | min/ng/mL | not captured | exact (not captured) | table4-0269881115599387:row2:col2 |
+| PD (effect) | E0 (min) — Vortioxetine | `Q324` · not captured | 1.6 | min | not captured | exact (not captured) | table4-0269881115599387:row3:col1 |
+| PD (effect) | E0 (min) — Vortioxetine | `Q324` · not captured | 215 | min | not captured | exact (not captured) | table4-0269881115599387:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (DTIC) concentrations (105–0.3 µM) were applied to fibroblast and melanoma cell lines and cell viability (%) was measured 24 h later as a direct inhibitory concentration–response; the paper reports IC50 values (e.g., 68.6 ± 3.2 µM in normal fibroblasts, 45.25 ± 0.5 µM in WM115 and 23.21 ± 1.83 µM in WM266-4 melanoma cells, dropping to 7.95 ± 2.9 µM and 0.58 ± 0.07 µM with ASO-mediated ERCC8/CSA silencing) but does not state a formal PD model or parameters such as Emax, gamma, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Filippi_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

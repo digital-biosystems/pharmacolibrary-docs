@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unbound polymyxin B (measured concentrations) drives name (in mg/dL): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> Unbound plasma polymyxin B concentrations drive kidney injury via 9 transit compartments (mean time to onset ~5–7 days, τ = 47.94 h); the final transit compartment concentration inhibits elimination of serum creatinine in an indirect response model, with kin = 0.08 mg/dL/h and IC50 = 2.77 mg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanafin_2025`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Hanafin PO; Mahadevan R; Rao GG; Zavascki AP; Sandri AM; Kwa A; et al. et al. (2
   ·  DOI: [10.1002/cpt.3729](https://doi.org/10.1002/cpt.3729)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| K in (mg/dL/h) — Final model estimate (%RSE) [shrinkage] | `Q327` · not captured | 0.08 | mg/dL/h | not captured | space_fold (not captured) | cpt3729-tbl-0002:row2:col1 |
-| IC50 (mg/L) — Final model estimate (%RSE) [shrinkage] | `Q322` · not captured | 2.77 | mg/L | not captured | exact (not captured) | cpt3729-tbl-0002:row3:col1 |
-| τ (hour) — Final model estimate (%RSE) [shrinkage] | `Q362` · not captured | 47.94 | hour | not captured | llm (not captured) | cpt3729-tbl-0002:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | K in (mg/dL/h) — Final model estimate (%RSE) [shrinkage] | `Q327` · not captured | 0.08 | mg/dL/h | not captured | space_fold (not captured) | cpt3729-tbl-0002:row2:col1 |
+| PD (effect) | IC50 (mg/L) — Final model estimate (%RSE) [shrinkage] | `Q322` · not captured | 2.77 | mg/L | not captured | exact (not captured) | cpt3729-tbl-0002:row3:col1 |
+| model term | τ (hour) — Final model estimate (%RSE) [shrinkage] | `Q362` · not captured | 47.94 | hour | not captured | llm (not captured) | cpt3729-tbl-0002:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

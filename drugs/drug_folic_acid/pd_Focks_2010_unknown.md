@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulfonamides drives relative bacterial growth rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Extracellular sulfonamide concentration inhibits the relative bacterial growth rate (µobs/µmax) via competitive inhibition of DHPS in folic acid (DHP) production, modeled as an Emax-type dose-response µobs = µmax·(1 − C_SA,env/(C_SA,env + H_I)) with proportional effect form. The inhibition constant H_I (Mol) depends on the anionic accumulation factor (AAF, pH- and pKa-dependent) and the cellular affinity factor (CAF, proportional to the DHPS affinity constant K_SA^M); the paper does not report specific numeric IC50/EC50 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Focks_2010`
 - **model family:** `emax`
 - **driver:** `not_resolved`

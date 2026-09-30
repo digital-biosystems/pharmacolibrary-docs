@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rosmarinic acid (measured concentrations) drives cell proliferation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> RA and DOX inhibit OVCAR3 cell proliferation (MTT viability, %) in a time- and concentration-dependent manner; IC50 values at 48 h were 980.3 μM for RA and 2.12 μM for DOX (DOX 5.32 μM in HaCaT), with RA 437.6 μM and DOX 0.08 μM at 72 h. The paper does not state a formal PD model or parameters (Imax, kin, kout, ke0); mechanistically it reports that RA and DOX down-regulate EGFR and Bcl-2 expression, inducing apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarı_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Sarı U; Zaman F et al. (2024). Acta cirurgica brasileira 39
   ·  DOI: [10.1590/acb390524](https://doi.org/10.1590/acb390524)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| OVCAR3/RA — IC 50 (μmol/L) 48 h | `Q322` · not captured | 980.3 | μM | not captured | llm (not captured) | tab_0:row1:col2 |
-| OVCAR3/DOX — IC 50 (μmol/L) 48 h | `Q322` · not captured | 2.12 | μM | not captured | llm (not captured) | tab_0:row2:col2 |
-| HaCat/DOX — IC 50 (μmol/L) 48 h | `Q322` · not captured | 5.32 | μM | not captured | llm (not captured) | tab_0:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | OVCAR3/RA — IC 50 (μmol/L) 48 h | `Q322` · not captured | 980.3 | μM | not captured | llm (not captured) | tab_0:row1:col2 |
+| PD (effect) | OVCAR3/DOX — IC 50 (μmol/L) 48 h | `Q322` · not captured | 2.12 | μM | not captured | llm (not captured) | tab_0:row2:col2 |
+| PD (effect) | HaCat/DOX — IC 50 (μmol/L) 48 h | `Q322` · not captured | 5.32 | μM | not captured | llm (not captured) | tab_0:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

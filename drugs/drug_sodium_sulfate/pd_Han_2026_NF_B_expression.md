@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Astilbin (measured concentrations) drives name (in fold) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Astilbin (AST) inhibited NF-κB expression (fold, measured in colonic tissues of AOM/DSS-treated mice) in a concentration-dependent manner at 10 and 20 mg/kg doses; the paper does not state a PD model form or potency parameters (no Imax, IC50, EC50, kin, kout, ke0, or gamma for this response), and the mechanism is described only qualitatively as suppression of the NF-κB pathway.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,24 +30,24 @@ Han L; Deng XZ; Li Y; Hui J et al. (2026). Indian journal of pharmacology 58
   ·  DOI: [10.4103/ijp.ijp_678_24](https://doi.org/10.4103/ijp.ijp_678_24)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| VH — Mean | `Q61` · not captured | 24.66 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col2 |
-| VH — Median | `Q61` · not captured | 26 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col3 |
-| VH — Minimum | `Q61` · not captured | 21 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col4 |
-| VH — Maximum | `Q66` · not captured | 27 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col5 |
-| VH — Mean | `Q61` · not captured | 40 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col2 |
-| VH — Median | `Q61` · not captured | 41 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col3 |
-| VH — Minimum | `Q61` · not captured | 36 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col4 |
-| VH — Maximum | `Q66` · not captured | 43 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col5 |
-| VH — Mean | `Q61` · not captured | 35.66 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col2 |
-| VH — Median | `Q61` · not captured | 35 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col3 |
-| VH — Minimum | `Q61` · not captured | 33 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col4 |
-| VH — Maximum | `Q66` · not captured | 39 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col5 |
-| VH — Mean | `Q61` · not captured | 28 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col2 |
-| VH — Median | `Q61` · not captured | 26 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col3 |
-| VH — Minimum | `Q61` · not captured | 25 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col4 |
-| VH — Maximum | `Q66` · not captured | 33 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | VH — Mean | `Q61` · not captured | 24.66 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col2 |
+| PK (driver) | VH — Median | `Q61` · not captured | 26 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col3 |
+| PK (driver) | VH — Minimum | `Q61` · not captured | 21 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col4 |
+| PK (driver) | VH — Maximum | `Q66` · not captured | 27 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row2:col5 |
+| PK (driver) | VH — Mean | `Q61` · not captured | 40 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col2 |
+| PK (driver) | VH — Median | `Q61` · not captured | 41 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col3 |
+| PK (driver) | VH — Minimum | `Q61` · not captured | 36 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col4 |
+| PK (driver) | VH — Maximum | `Q66` · not captured | 43 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row7:col5 |
+| PK (driver) | VH — Mean | `Q61` · not captured | 35.66 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col2 |
+| PK (driver) | VH — Median | `Q61` · not captured | 35 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col3 |
+| PK (driver) | VH — Minimum | `Q61` · not captured | 33 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col4 |
+| PK (driver) | VH — Maximum | `Q66` · not captured | 39 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row12:col5 |
+| PK (driver) | VH — Mean | `Q61` · not captured | 28 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col2 |
+| PK (driver) | VH — Median | `Q61` · not captured | 26 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col3 |
+| PK (driver) | VH — Minimum | `Q61` · not captured | 25 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col4 |
+| PK (driver) | VH — Maximum | `Q66` · not captured | 33 | not captured | not captured | llm (not captured) | ijp_678_24-t011:row17:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

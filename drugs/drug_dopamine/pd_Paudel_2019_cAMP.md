@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eckol (measured concentrations) drives cAMP (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In CHO cells expressing human dopamine receptors, eckol (25 and 50 µM) acts on intracellular cAMP as a D3R and D4R agonist: via negatively AC-coupled D2-like receptors it inhibits adenylyl cyclase and reduces cAMP (with inhibition of IP3-dependent Ca2+ release). The paper reports EC50 values of 48.62 µM (D3) and 42.55 µM (D4); no Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Paudel_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,19 +30,19 @@ Paudel P; Seong SH; Wu S; Park S; Jung HA; Choi JS et al. (2019). Marine drugs 1
   ·  DOI: [10.3390/md17020108](https://doi.org/10.3390/md17020108)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| % of Control Agonist Response — NK1 (h) Tachykinin | `Q100` · not captured | -2.32 | not captured | not captured | llm (not captured) | marinedrugs-17-00108-t001:row0:col7 |
-| % of Control Agonist Response — NK1 (h) Tachykinin | `Q100` · not captured | -2.99 | not captured | not captured | llm (not captured) | marinedrugs-17-00108-t001:row1:col7 |
-| EC50 a (μM) — D3 (h) Dopamine | `Q321` · not captured | 48.62 | μM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row2:col4 |
-| EC50 a (μM) — D4 (h) Dopamine | `Q321` · not captured | 42.55 | μM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row2:col5 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — D1 (h) Dopamine | `Q321` · not captured | 36 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col3 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — D3 (h) Dopamine | `Q321` · not captured | 2.9 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col4 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — D4 (h) Dopamine | `Q321` · not captured | 3.3 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col5 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — M5 (h) Acetylcholine (muscarinic) | `Q321` · not captured | 3.8 | muscarinic | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col6 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — NK1 (h) Tachykinin | `Q321` · not captured | 0.094 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col7 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — V1A (h) Vasopressin/Oxytocin | `Q321` · not captured | 0.11 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col8 |
-| Reference Agonists of Respective Target Receptors EC50 (nM) b — 5-HT1A (h) Serotonin | `Q321` · not captured | 3.1 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | % of Control Agonist Response — NK1 (h) Tachykinin | `Q100` · not captured | -2.32 | not captured | not captured | llm (not captured) | marinedrugs-17-00108-t001:row0:col7 |
+| — | % of Control Agonist Response — NK1 (h) Tachykinin | `Q100` · not captured | -2.99 | not captured | not captured | llm (not captured) | marinedrugs-17-00108-t001:row1:col7 |
+| PD (effect) | EC50 a (μM) — D3 (h) Dopamine | `Q321` · not captured | 48.62 | μM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row2:col4 |
+| PD (effect) | EC50 a (μM) — D4 (h) Dopamine | `Q321` · not captured | 42.55 | μM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row2:col5 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — D1 (h) Dopamine | `Q321` · not captured | 36 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col3 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — D3 (h) Dopamine | `Q321` · not captured | 2.9 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col4 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — D4 (h) Dopamine | `Q321` · not captured | 3.3 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col5 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — M5 (h) Acetylcholine (muscarinic) | `Q321` · not captured | 3.8 | muscarinic | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col6 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — NK1 (h) Tachykinin | `Q321` · not captured | 0.094 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col7 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — V1A (h) Vasopressin/Oxytocin | `Q321` · not captured | 0.11 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col8 |
+| PD (effect) | Reference Agonists of Respective Target Receptors EC50 (nM) b — 5-HT1A (h) Serotonin | `Q321` · not captured | 3.1 | µM | not captured | llm_confirmed (not captured) | marinedrugs-17-00108-t001:row4:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

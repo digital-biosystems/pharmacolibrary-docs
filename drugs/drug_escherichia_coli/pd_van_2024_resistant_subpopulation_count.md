@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Temocillin (measured concentrations) drives name (in cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Temocillin concentrations (mg/L) inhibit the growth of susceptible and less susceptible subpopulations of four Escherichia coli strains in a sigmoidal Emax model of bacterial counts (cfu/mL), with separate Emax/EC50 per subpopulation (e.g. EC50,LS 6.34–37.0 mg/L) and strain-specific maximum population sizes (Bmax 8.63–10.4 log cfu/mL) estimated for static time-kill and hollow-fibre data; the paper does not state Imax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,32 +31,32 @@ van Os W; Nussbaumer-Pröll A; Pham AD; Wijnant GJ; Ngougni Pokem P; Van Bambeke
   ·  DOI: [10.1093/jac/dkae243](https://doi.org/10.1093/jac/dkae243)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max,S — Estimate (%RSE) | `Q320` · not captured | 2.06 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col3 |
-| E max,S — Estimate (%RSE) | `Q320` · not captured | 2.38 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col4 |
-| E max,S — Estimate (%RSE) | `Q320` · not captured | 2.86 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col5 |
-| E max,S — Estimate (%RSE) | `Q320` · not captured | 2.38 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col6 |
-| EC50,S — Estimate (%RSE) | `Q321` · not captured | 3.56 | S | not captured | exact (not captured) | dkae243-T3:row5:col3 |
-| EC50,S — Estimate (%RSE) | `Q321` · not captured | 8.31 | S | not captured | exact (not captured) | dkae243-T3:row5:col4 |
-| EC50,S — Estimate (%RSE) | `Q321` · not captured | 3.75 | S | not captured | exact (not captured) | dkae243-T3:row5:col5 |
-| EC50,S — Estimate (%RSE) | `Q321` · not captured | 1.57 | S | not captured | exact (not captured) | dkae243-T3:row5:col6 |
-| E max,LS — Estimate (%RSE) | `Q320` · not captured | 0.777 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col3 |
-| E max,LS — Estimate (%RSE) | `Q320` · not captured | 1.09 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col4 |
-| E max,LS — Estimate (%RSE) | `Q320` · not captured | 1.01 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col5 |
-| E max,LS — Estimate (%RSE) | `Q320` · not captured | 0.843 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col6 |
-| EC50,LS — Estimate (%RSE) | `Q321` · not captured | 17.1 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col3 |
-| EC50,LS — Estimate (%RSE) | `Q321` · not captured | 37.0 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col4 |
-| EC50,LS — Estimate (%RSE) | `Q321` · not captured | 17.1 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col5 |
-| EC50,LS — Estimate (%RSE) | `Q321` · not captured | 6.34 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col6 |
-| Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.89 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col3 |
-| Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.86 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col4 |
-| Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.71 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col5 |
-| Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.63 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col6 |
-| Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.0 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col3 |
-| Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 9.94 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col4 |
-| Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.1 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col5 |
-| Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.4 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max,S — Estimate (%RSE) | `Q320` · not captured | 2.06 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col3 |
+| PD (effect) | E max,S — Estimate (%RSE) | `Q320` · not captured | 2.38 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col4 |
+| PD (effect) | E max,S — Estimate (%RSE) | `Q320` · not captured | 2.86 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col5 |
+| PD (effect) | E max,S — Estimate (%RSE) | `Q320` · not captured | 2.38 | S | not captured | space_fold (not captured) | dkae243-T3:row4:col6 |
+| PD (effect) | EC50,S — Estimate (%RSE) | `Q321` · not captured | 3.56 | S | not captured | exact (not captured) | dkae243-T3:row5:col3 |
+| PD (effect) | EC50,S — Estimate (%RSE) | `Q321` · not captured | 8.31 | S | not captured | exact (not captured) | dkae243-T3:row5:col4 |
+| PD (effect) | EC50,S — Estimate (%RSE) | `Q321` · not captured | 3.75 | S | not captured | exact (not captured) | dkae243-T3:row5:col5 |
+| PD (effect) | EC50,S — Estimate (%RSE) | `Q321` · not captured | 1.57 | S | not captured | exact (not captured) | dkae243-T3:row5:col6 |
+| PD (effect) | E max,LS — Estimate (%RSE) | `Q320` · not captured | 0.777 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col3 |
+| PD (effect) | E max,LS — Estimate (%RSE) | `Q320` · not captured | 1.09 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col4 |
+| PD (effect) | E max,LS — Estimate (%RSE) | `Q320` · not captured | 1.01 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col5 |
+| PD (effect) | E max,LS — Estimate (%RSE) | `Q320` · not captured | 0.843 | not captured | not captured | llm (not captured) | dkae243-T3:row9:col6 |
+| PD (effect) | EC50,LS — Estimate (%RSE) | `Q321` · not captured | 17.1 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col3 |
+| PD (effect) | EC50,LS — Estimate (%RSE) | `Q321` · not captured | 37.0 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col4 |
+| PD (effect) | EC50,LS — Estimate (%RSE) | `Q321` · not captured | 17.1 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col5 |
+| PD (effect) | EC50,LS — Estimate (%RSE) | `Q321` · not captured | 6.34 | mg/L | not captured | llm_confirmed (not captured) | dkae243-T3:row10:col6 |
+| PD (effect) | Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.89 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col3 |
+| PD (effect) | Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.86 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col4 |
+| PD (effect) | Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.71 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col5 |
+| PD (effect) | Bmax,STK — Estimate (%RSE) | `Q332` · not captured | 8.63 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row15:col6 |
+| PD (effect) | Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.0 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col3 |
+| PD (effect) | Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 9.94 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col4 |
+| PD (effect) | Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.1 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col5 |
+| PD (effect) | Bmax,HFIM — Estimate (%RSE) | `Q332` · not captured | 10.4 | not captured | not captured | llm_confirmed (not captured) | dkae243-T3:row16:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Luspatercept (concentrations from this paper's PK model) drives name (in RBC-TI): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Luspatercept exposure (average AUC, ng/mL·days equivalent, derived from cumulative dose/CL/F) was related by logistic regression to the binary probability of RBC transfusion independence (RBC-TI ≥ 8 weeks); a linear drug-effect model was selected over an Emax model because low-exposure data were insufficient to define the full curve, and no potency parameters (EC50/Emax) are reported. The paper does not describe a mechanistic PD (e.g., kin/kout) model; it only states a stimulatory exposure–response relationship with a saturated response probability at higher AUC under phase III dosing (1.0–1.75 mg/kg).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2020`
 - **model family:** `categorical`
 - **driver:** `pk_record`

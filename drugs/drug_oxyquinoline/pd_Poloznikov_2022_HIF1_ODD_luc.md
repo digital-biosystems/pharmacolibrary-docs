@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** HIF PHD inhibitors (roxadustat, vadadustat, DMOG, oxyquinolines) (measured concentrations) drive HIF1 ODD-luciferase activity (in fold activation) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oxyquinoline HIF PHD inhibitors act on HIF1 ODD-luciferase reporter activity (fold activation) in a neuroblastoma cell line by inhibiting the HIF PHD enzymes that hydroxylate the HIF1α ODD-luciferase fusion protein, thereby blocking its VHL/proteasomal degradation and causing immediate accumulation (stimulation) of the reporter; the paper does not report numeric IC50, Emax, or rate constants, but states the novel oxyquinolines #4896-3249 and #5704-0720 at 2 μM matched the pathway activation of 30 μM roxadustat and 500 μM DMOG, being two–three-fold more potent activators than ciclopirox (KD 100–200 nM vs 50 nM for ciclopirox) and more than an order of magnitude better activators than roxadust
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poloznikov_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium drives Maximum reduction in mean arterial pressure (in mmHg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The excerpts describe intravenous magnesium sulfate as a bronchodilator acting via inhibition of calcium influx into bronchiolar smooth muscle, inhibition of acetylcholine release, inhibition of histamine release, and improved mucus clearance, but they do not describe a pharmacodynamic model linking magnesium concentrations (mg h/L) to maximum reduction in mean arterial pressure (mmHg) during salbutamol treatment; no mechanism for this MAP-reduction response and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rower_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

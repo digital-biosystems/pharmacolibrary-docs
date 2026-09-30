@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives uterine artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II stimulates uterine artery contraction in pregnant rats, acting via AT1 receptors (with increased AT1bR and decreased AT2R expression), and this Ang II-induced contraction is concentration-dependently enhanced by a 2-fold elevation in plasma testosterone; the paper describes no Emax/IC50/EC50 or rate parameters for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chinnathambi_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

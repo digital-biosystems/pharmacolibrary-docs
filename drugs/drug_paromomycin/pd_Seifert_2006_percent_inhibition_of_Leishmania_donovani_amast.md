@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Miltefosine (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Miltefosine concentrations (µM) inhibit intracellular Leishmania donovani amastigotes in peritoneal macrophages in vitro, with EC50 values ranging from 10.78 µM at 3 days to 2.21 µM and 2.68 µM at 5 and 7 days; the paper does not state a mechanistic PD model (e.g., kin/kout or effect compartment), only dose-response EC50/EC90 values used in an isobologram interaction analysis with paromomycin (mean ΣFICs 0.79–0.93 at EC50).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Seifert_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Seifert K; Croft SL et al. (2006). Antimicrobial agents and chemotherapy 50
   ·  DOI: [10.1128/AAC.50.1.73-79.2006](https://doi.org/10.1128/AAC.50.1.73-79.2006)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 s of miltefosine ranged from | `Q321` · not captured | 10.78 | M | not captured | review_gapfill (not captured) | Seifert_2006:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 s of miltefosine ranged from | `Q321` · not captured | 10.78 | M | not captured | review_gapfill (not captured) | Seifert_2006:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

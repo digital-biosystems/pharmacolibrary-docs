@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.484). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2026](drugs/drug_glycerol_phenylbutyrate/pd_Zhou_2026_VAS.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.484). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2026_VAS](drugs/drug_glycerol_phenylbutyrate/pd_Zhou_2026_VAS.md) | pain intensity ← gabapentin · delayed effect through an effect compartment | — | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
 ## ADME sites
 

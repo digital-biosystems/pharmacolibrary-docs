@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tamoxifen (concentrations from the PK model of Bosch_2023) drives tumor volume (in mm3): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for tamoxifen's effect on tumor volume; it only describes a xenograft experiment in which mice with tumors of 500 mm3 received 4 mg/kg tamoxifen (or saline) and tumor volume (mm3) was measured every other day, with efficacy reduced by RelB/GPX4-mediated resistance. The record classifies the relationship as an Emax-type inhibition of tumor volume driven by cited tamoxifen PK in μM, but the excerpts provide no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values and no explicit mechanism linking concentrations to tumor volume.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`

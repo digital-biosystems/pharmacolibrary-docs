@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5' phosphate (measured concentrations) drives name (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not fit a PD model of PLP concentration vs. mean blood pressure; it reports that PLP (active vitamin B6) allosterically antagonises P2X3 receptors, inhibiting α,β-methylene ATP-evoked Ca2+ responses in hP2X2/3R-expressing cells with IC50 8.7 ± 0.7 µM (right-shifting the agonist EC50 from 433 ± 92 to 1706 ± 189 nM and reducing maximal response by 63%), and that in SHRs PLP lowered mean blood pressure by ΔMBP = −16.2 mmHg (95% CI −24.3 to −8.0), but no Emax/IC50 parameters for the blood pressure response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Felippe_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

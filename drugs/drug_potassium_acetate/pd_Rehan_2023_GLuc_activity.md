@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KZR-8445 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> KZR-8445 inhibits secretion of Gaussia luciferase (GLuc) reporter constructs (fused to IL-2 or TNFα) in a cell-based assay, acting directly on the Sec61α channel by competing with nascent signal peptides at the lateral gate; the paper reports an IC50 of approximately 100 nM, with reduced effect in cells expressing the R66I Sec61α plug mutant. No PD model structure (e.g., Emax, turnover, effect compartment) or additional potency/rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehan_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hemin (measured concentrations) drives Kv10.1 current (in pA): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Intracellular hemin inhibits Kv10.1 potassium channel current (pA) with a sigmoid Emax-type concentration–response relationship, acting by binding to a CxHx8H heme motif in the C-linker (Cys541, His543, His552), which likely constrains channel gating; the paper does not state a kinetic PD model. IC50 was ~4.2 nM under ambient and 63 nM under reducing conditions, with weakly voltage-dependent inhibition favoring resting potential; extracellular hemin (up to 1 µM) was ineffective.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sahoo_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

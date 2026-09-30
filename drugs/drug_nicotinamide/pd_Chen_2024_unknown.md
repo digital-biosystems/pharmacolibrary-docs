@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gliocidin (measured concentrations) drives survival (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a quantitative PD model linking gliocidin concentrations to survival; it reports that gliocidin (a prodrug anabolized by NMNAT1 to GAD, which indirectly inhibits IMPDH2, depleting guanine nucleotides) prolongs survival in orthotopic GBM mice at 50 mg kg−1 i.p. twice daily, with in vitro IC50 of 2 μM in a resistant PDX lowered 25-fold (to 80 nM) by NMNAT1 overexpression, and NMNAT1-overexpressing tumours showing median survival increased from 101 to 210 days.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

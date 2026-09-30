@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-SOD drives name (in mmHg) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a formal pharmacodynamic model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are stated). It reports empirically that intravenous PEG-SOD doses (0–60,000 units/kg) given 1 hour or 12–24 hours before ischemia enhance postischemic recovery of left ventricular developed pressure (LVDP, mmHg) in blood-perfused rabbit hearts, attributed mechanistically to scavenging of free radicals during ischemia and reperfusion, with maximal protection from combined pretreatment, cardioplegic additive (150 µg/ml), and reperfusate administration (LVDP recovery 70±3% vs 44±4% control).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Galiñanes_1992`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

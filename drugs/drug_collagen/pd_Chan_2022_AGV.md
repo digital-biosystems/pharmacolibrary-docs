@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vosoritide (measured concentrations) drives annualized growth velocity (in cm/year): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Vosoritide plasma exposure (Cmax in pg/mL or AUC0-t) was related to the change from baseline in annualized growth velocity (AGV, cm/year) in children with achondroplasia using a sigmoid Emax model (ΔAGV = E0 + PK^h·Emax/(PK^h + EC50^h)), i.e. a direct stimulatory Emax effect with no effect-compartment or turnover mechanism described. The paper states the exposure–response was steep between the 2.5 and 7.5 µg/kg doses (h = 2.26 for AUC0-t) and saturated at 15 µg/kg, but the specific E0, Emax and EC50 estimates for AGV are not given in the excerpts (EC50 values are tabulated for Cmax and AUC0-t only).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

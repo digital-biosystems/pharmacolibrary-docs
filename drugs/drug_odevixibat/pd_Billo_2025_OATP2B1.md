@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Elobixibat, linerixibat, maralixibat, odevixibat (measured concentrations) drive OATP2B1 transport inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In HEK293 cells overexpressing OATP2B1, odevixibat (tested alongside elobixibat, linerixibat, and maralixibat) concentration-dependently inhibited transport of the probe substrate [3H]E1S, with an IC50 of 2-5 μM in this study (no prior OATP2B1 data existed for odevixibat); the paper reports IC50 values but does not state a specific inhibitory mechanism or model beyond direct transporter inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Billo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

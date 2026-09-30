@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** O2N-BZM7 (measured concentrations) drives Giardia trophozoite viability (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Omeprazole-derived 2-mercaptobenzimidazoles (e.g. O2N-BZM7) inhibit Giardia trophozoite viability in a dose-dependent manner, with IC50 values of 14 µM (O2N-BZM7), 36 µM (H-BZM2), 17 µM (O2N-BZM9), 45 µM (lansoprazole), and 300 µM (omeprazole); the proposed mechanism is irreversible inactivation of the glycolytic enzyme triosephosphate isomerase (TPI) via a nonconservative Cys residue (position 222), with second-order inactivation rate constants K2 of 2.3, 3.2, and 2.8 M−1 s−1 for H-BZM2, O2N-BZM7, and O2N-BZM9, respectively. No kinetic PD model (e.g. Emax, kin/kout, effect compartment) is described; IC50 values were obtained from log(inhibitor) vs. normalized response curves with variable s
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hernández-Ochoa_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,32 +31,32 @@ Hernández-Ochoa B; Gómez-Manzo S; Sánchez-Carrillo A; Marcial-Quino J; Rocha-
   ·  DOI: [10.3390/molecules25173979](https://doi.org/10.3390/molecules25173979)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) — H-BZM1 | `Q322` · not captured | 676 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col3 |
-| IC50 (μM) — H-BZM2 | `Q322` · not captured | 36 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col4 |
-| IC50 (μM) — Lansoprazole | `Q322` · not captured | 45 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col5 |
-| IC50 (μM) — H2N-BZM6 | `Q322` · not captured | 135 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col6 |
-| IC50 (μM) — O2N-BZM7 | `Q322` · not captured | 14 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col7 |
-| IC50 (μM) — O2N-BZM9 | `Q322` · not captured | 17 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col8 |
-| IC50 (μM) — Omeprazole [17] | `Q322` · not captured | 300 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col9 |
-| CC50 (μM) — H-BZM1 | `Q322` · not captured | 4012 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col3 |
-| CC50 (μM) — H-BZM2 | `Q322` · not captured | 3184 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col4 |
-| CC50 (μM) — Lansoprazole | `Q322` · not captured | 2637 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col5 |
-| CC50 (μM) — H2N-BZM6 | `Q322` · not captured | 4006 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col6 |
-| CC50 (μM) — O2N-BZM7 | `Q322` · not captured | 640 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col7 |
-| CC50 (μM) — O2N-BZM9 | `Q322` · not captured | 663 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col8 |
-| CC50 (μM) — H-BZM1 | `Q322` · not captured | 3918 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col3 |
-| CC50 (μM) — H-BZM2 | `Q322` · not captured | 1912 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col4 |
-| CC50 (μM) — Lansoprazole | `Q322` · not captured | 548 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col5 |
-| CC50 (μM) — H2N-BZM6 | `Q322` · not captured | 1888 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col6 |
-| CC50 (μM) — O2N-BZM7 | `Q322` · not captured | 519 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col7 |
-| CC50 (μM) — O2N-BZM9 | `Q322` · not captured | 622 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col8 |
-| IC50 (μM) — H-BZM2 | `Q322` · not captured | 37 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col4 |
-| IC50 (μM) — Lansoprazole | `Q322` · not captured | 66 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col5 |
-| IC50 (μM) — O2N-BZM7 | `Q322` · not captured | 12 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col7 |
-| IC50 (μM) — O2N-BZM9 | `Q322` · not captured | 20 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col8 |
-| IC50 (μM) — Omeprazole [17] | `Q322` · not captured | 225 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) — H-BZM1 | `Q322` · not captured | 676 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col3 |
+| PD (effect) | IC50 (μM) — H-BZM2 | `Q322` · not captured | 36 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col4 |
+| PD (effect) | IC50 (μM) — Lansoprazole | `Q322` · not captured | 45 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col5 |
+| PD (effect) | IC50 (μM) — H2N-BZM6 | `Q322` · not captured | 135 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col6 |
+| PD (effect) | IC50 (μM) — O2N-BZM7 | `Q322` · not captured | 14 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col7 |
+| PD (effect) | IC50 (μM) — O2N-BZM9 | `Q322` · not captured | 17 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col8 |
+| PD (effect) | IC50 (μM) — Omeprazole [17] | `Q322` · not captured | 300 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row0:col9 |
+| PD (effect) | CC50 (μM) — H-BZM1 | `Q322` · not captured | 4012 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col3 |
+| PD (effect) | CC50 (μM) — H-BZM2 | `Q322` · not captured | 3184 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col4 |
+| PD (effect) | CC50 (μM) — Lansoprazole | `Q322` · not captured | 2637 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col5 |
+| PD (effect) | CC50 (μM) — H2N-BZM6 | `Q322` · not captured | 4006 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col6 |
+| PD (effect) | CC50 (μM) — O2N-BZM7 | `Q322` · not captured | 640 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col7 |
+| PD (effect) | CC50 (μM) — O2N-BZM9 | `Q322` · not captured | 663 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row1:col8 |
+| PD (effect) | CC50 (μM) — H-BZM1 | `Q322` · not captured | 3918 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col3 |
+| PD (effect) | CC50 (μM) — H-BZM2 | `Q322` · not captured | 1912 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col4 |
+| PD (effect) | CC50 (μM) — Lansoprazole | `Q322` · not captured | 548 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col5 |
+| PD (effect) | CC50 (μM) — H2N-BZM6 | `Q322` · not captured | 1888 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col6 |
+| PD (effect) | CC50 (μM) — O2N-BZM7 | `Q322` · not captured | 519 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col7 |
+| PD (effect) | CC50 (μM) — O2N-BZM9 | `Q322` · not captured | 622 | μM | not captured | llm (not captured) | molecules-25-03979-t001:row2:col8 |
+| PD (effect) | IC50 (μM) — H-BZM2 | `Q322` · not captured | 37 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col4 |
+| PD (effect) | IC50 (μM) — Lansoprazole | `Q322` · not captured | 66 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col5 |
+| PD (effect) | IC50 (μM) — O2N-BZM7 | `Q322` · not captured | 12 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col7 |
+| PD (effect) | IC50 (μM) — O2N-BZM9 | `Q322` · not captured | 20 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col8 |
+| PD (effect) | IC50 (μM) — Omeprazole [17] | `Q322` · not captured | 225 | μM | not captured | exact (not captured) | molecules-25-03979-t001:row3:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PFGPD, PYGAKG, YGPM (measured concentrations) drive Reducing power (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for reducing power: collagen peptides PFGPD, PYGAKG, and YGPM (mg/mL) were tested for antioxidant radical-scavenging activity in concentration–response assays, but no EC50, Imax, Emax, kin, kout, or ke0 values for the reducing power response are given in the excerpts, and the mechanism is not described beyond direct radical scavenging.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

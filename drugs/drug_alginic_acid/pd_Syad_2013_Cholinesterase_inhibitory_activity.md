@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sargassum wightii extracts (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Solvent extracts of Sargassum wightii (20–100 mg/mL) were incubated with AChE or BuChE, and percent enzyme inhibition was measured spectrophotometrically (Ellman assay); the paper reports concentration-dependent inhibition with IC50 values (e.g., AChE: petroleum ether 19.33±0.56, benzene 27.24±0.90 mg/mL; BuChE: acetone 10.49±0.03, benzene 12.98±0.31 mg/mL) but does not state a pharmacodynamic model or mechanism (no Imax, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Syad_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

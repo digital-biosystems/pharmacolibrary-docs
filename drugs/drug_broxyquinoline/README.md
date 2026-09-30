@@ -20,11 +20,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019](drugs/drug_broxyquinoline/pd_Yuan_2019_Plaque_forming_units.md) | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_NP_protein_expression.md) | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_S_segment_viral_genome_copy_number.md) | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019_Plaque_forming_units](drugs/drug_broxyquinoline/pd_Yuan_2019_Plaque_forming_units.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019_SFTSV_NP_protein_expression](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_NP_protein_expression.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yuan_2019_SFTSV_S_segment_viral_genome_copy_number](drugs/drug_broxyquinoline/pd_Yuan_2019_SFTSV_S_segment_viral_genome_copy_number.md) | name ← hexachlorophene · inhibition effect | — | Yuan S et al., Screening of an FDA-Approved Drug Libra…, Viruses (2019) | [10.3390/v11040385](https://doi.org/10.3390/v11040385) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

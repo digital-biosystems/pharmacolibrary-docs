@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Noradrenaline (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for isoprenaline; isoprenaline appears only at 50 μM to define non-specific binding in the β-adrenoceptor radioligand binding assay. The concentration-response data concern noradrenaline-induced aortic contraction (EC50 7.4, 12.5 and 5.5 nM in eu-, hypo- and hyperthyroid states), with no mechanism, Emax/IC50/kin/kout/ke0 values, or rate parameters given for isoprenaline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gunasekera_1990`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

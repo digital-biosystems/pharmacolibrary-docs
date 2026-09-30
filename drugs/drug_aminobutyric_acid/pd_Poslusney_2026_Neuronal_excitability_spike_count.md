@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LI-633 drives name (in Number of spikes) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> LI-633 acts as a positive allosteric modulator of GABA-A receptors, potentiating GABA/muscimol-induced inhibition of neuronal excitability (spike/calcium-fluorescence response) in a concentration-dependent manner; in rat DRG neurons with an EC30 muscimol concentration (3 uM), LI-633 potentiated GABAergic currents with EC50 of 70.4 nM and Emax of approximately 100%. Heterologous potency values (EC50, uM) were 0.093 (α1β2γ2), 0.009 (α2β2γ2), 0.128 (α3β2γ2), and 0.008 (α5β2γ2), with Emax (%a) of 236, 222, 208, and 79.4, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poslusney_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,16 +30,16 @@ Poslusney MS; Li Q; Buchler IP; Huang Y; Liu L; Zhu Y; et al. et al. (2026). Cel
   ·  DOI: [10.1016/j.jcmgh.2025.101704](https://doi.org/10.1016/j.jcmgh.2025.101704)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50, μM — α1ß2γ2 | `Q321` · not captured | 0.093 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col2 |
-| EC50, μM — α2ß2γ2 | `Q321` · not captured | 0.009 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
-| EC50, μM — α3ß2γ2 | `Q321` · not captured | 0.128 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
-| EC50, μM — α5ß2γ2 | `Q321` · not captured | 0.008 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
-| Emax, %a — α1ß2γ2 | `Q320` · not captured | 236 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
-| Emax, %a — α2ß2γ2 | `Q320` · not captured | 222 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
-| Emax, %a — α3ß2γ2 | `Q320` · not captured | 208 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
-| Emax, %a — α5ß2γ2 | `Q320` · not captured | 79.4 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50, μM — α1ß2γ2 | `Q321` · not captured | 0.093 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col2 |
+| PD (effect) | EC50, μM — α2ß2γ2 | `Q321` · not captured | 0.009 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
+| PD (effect) | EC50, μM — α3ß2γ2 | `Q321` · not captured | 0.128 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
+| PD (effect) | EC50, μM — α5ß2γ2 | `Q321` · not captured | 0.008 | unknown | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
+| PD (effect) | Emax, %a — α1ß2γ2 | `Q320` · not captured | 236 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
+| PD (effect) | Emax, %a — α2ß2γ2 | `Q320` · not captured | 222 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| PD (effect) | Emax, %a — α3ß2γ2 | `Q320` · not captured | 208 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col4 |
+| PD (effect) | Emax, %a — α5ß2γ2 | `Q320` · not captured | 79.4 | not captured | not captured | llm_confirmed (not captured) | tbl1:row1:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

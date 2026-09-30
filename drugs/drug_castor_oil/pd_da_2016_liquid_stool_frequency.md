@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Croton grewioides crude ethanolic extract (the dose) drives name (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Oral doses of Croton grewioides crude ethanolic extract (CG-EtOH, mg/kg) reduce castor-oil-induced liquid stool frequency (count), described as an inhibitory Emax-type dose effect with Emax = 100% at 250 mg/kg (loperamide also 100%). The paper does not state a mechanism in PD terms (no IC50, kin, kout, ke0, or gamma given), only suggesting reduced intestinal fluid secretion as the likely basis of the antidiarrheal effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `da_2016`
 - **model family:** `emax`
 - **driver:** `dose_only`

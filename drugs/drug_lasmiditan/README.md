@@ -27,9 +27,9 @@ Lasmiditan, in contrast, is a highly selective agonist of 5-HT<sub>1F</sub> rece
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.952). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tsai_2021_reference](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_reference.md) | 1-compartment, oral | 6 (+2 cov.) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.952). The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Vd, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Tsai_2021_reference](drugs/drug_lasmiditan/Lasmiditan_Tsai2021_reference.md) | held back | 1-compartment, oral | 6 (+2 cov.) | Tsai M et al., Pharmacokinetics, Safety, and Tolerabil…, Clinical pharmacokinetics (2021) | [10.1007/s40262-020-00966-z](https://doi.org/10.1007/s40262-020-00966-z) |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `SLC22A1` inhibitor | DrugBank actor |
 | excretion | kidney | `SLC47A1` inhibitor, `SLC47A2` inhibitor | DrugBank actor |

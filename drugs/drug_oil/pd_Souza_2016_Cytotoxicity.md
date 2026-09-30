@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pereskia aculeata extracts (measured concentrations) drives Cytotoxicity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pereskia aculeata extracts (0.01–100 µg/mL, 24 h) were tested for cytotoxicity against SH-SY5Y neuroblastoma cells; the chloroform extract showed the strongest antiproliferative effect (IC50 262.83 µg/mL, i.e. &lt;300 µg/mL), while petroleum ether and methanol extracts had IC50 &gt;2000 and &gt;1600 µg/mL, respectively. The paper does not state a pharmacodynamic mechanism (e.g. Emax model or effect-compartment), only these IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Souza_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

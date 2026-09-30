@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Empagliflozin (concentrations from this paper's PK model) drives name (in %): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Empagliflozin exposure (AUC, nM·h) acts on glycated hemoglobin (HbA1c, %) via an indirect response model with stimulation of the elimination (loss) of HbA1c, consistent with SGLT2 inhibition lowering plasma glucose and thereby reducing HbA1c. The HbA1c half-life calculated from kHbA1c,out was approximately 2.6 weeks (95% CI 1.7–3.9), so maximal effect is reached by ~12 weeks; the excerpts do not state Imax, IC50/EC50, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baron_2016`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

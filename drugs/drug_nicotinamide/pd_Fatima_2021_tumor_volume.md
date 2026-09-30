@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for tumor volume; it only reports that neomenthol (the record's 'nicotinamide' appears to be a mislabel) given i.p. for 9 days reduced EAC tumor cells by 58.84% at 75 mg/kg and 23.98% at 50 mg/kg in mice, with no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values given for this in vivo response. In vitro, neomenthol inhibited cell proliferation with IC50 values of 16.35–99.31 µM (e.g., 17.3 µM in A431 by MTT) and inhibited ODC with IC50 20.2 ± 1.02 µM in the cell-free system, but no mechanism linking concentrations to tumor volume is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

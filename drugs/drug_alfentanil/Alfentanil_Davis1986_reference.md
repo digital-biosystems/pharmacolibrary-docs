@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The record, nominally for alfentanil, carries sufentanil parameters (CL 11.3 ml/min/kg, V 0.39 L/kg, V/F 4.5 times bodyweight) and fails terminal half-life reproduction (paper 2.48 vs model 1.51), so it was held for review.**

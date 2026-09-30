@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018::base) drives body mass index (in kg/m2): indirect response — drug inhibits the production of body mass index.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide plasma concentrations (nmol/L) drive longitudinal body weight (BMI) changes via a semi-mechanistic combined indirect and direct response model, in which an indirect response component (reflecting appetite suppression and reduced energy intake) accounts for the time delay between concentration and weight loss, plus a small direct effect component with rapid onset. The paper does not state the potency (Imax/IC50) or rate (kin, kout) parameter values in the excerpts provided.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Strathe_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

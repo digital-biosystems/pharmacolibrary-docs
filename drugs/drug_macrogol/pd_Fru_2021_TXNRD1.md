@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-BA (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG–BA (macrogol-conjugated betulinic acid) concentrations (µM, tested 0.4–100 µM) downregulate TXNRD1 expression in MIA PaCa-2 pancreatic cancer cells (while upregulating it in Vero cells); the paper does not state a quantitative PD model or potency values (IC50, Emax, kin/kout) for the TXNRD1 response, only reporting the direction of gene dysregulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fru_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

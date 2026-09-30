@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives pain free (in fraction): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Eletriptan dose acts on the probability of becoming pain free via a direct Emax (logistic dose-response) model on the binary pain-free endpoint, with Emax,eletriptan = 3.09 and ED50 = 20.9 mg; the paper does not describe a concentration-driven mechanism (no IC50, kin/kout, or ke0 for this endpoint).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_2005`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,42 +30,42 @@ Mandema JW; Cox E; Alderman J et al. (2005). Cephalalgia : an international jour
   ·  DOI: [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k pl (h -1 ) — Pain relief | `Q47` · not captured | 1.56 | h -1 | not captured | llm (not captured) | tab_1:row4:col1 |
-| k pl (h -1 ) | `Q358` · not captured | 1.39 | h -1 | not captured | llm (not captured) | tab_1:row4:col2 |
-| k pl (h -1 ) | `Q358` · not captured | 1.75 | h -1 | not captured | llm (not captured) | tab_1:row4:col3 |
-| k pl (h -1 ) — Pain free | `Q326` · not captured | 0.99 | h -1 | not captured | llm (not captured) | tab_1:row4:col4 |
-| k pl (h -1 ) | `Q358` · not captured | 0.92 | h -1 | not captured | llm (not captured) | tab_1:row4:col5 |
-| k pl (h -1 ) | `Q358` · not captured | 1.07 | h -1 | not captured | llm (not captured) | tab_1:row4:col6 |
-| E max,eletriptan | `Q320` · not captured | 2.88 | not captured | not captured | llm (not captured) | tab_1:row5:col2 |
-| E max,eletriptan | `Q320` · not captured | 3.58 | not captured | not captured | llm (not captured) | tab_1:row5:col3 |
-| E max,eletriptan — Pain free | `Q320` · not captured | 3.09 | not captured | not captured | llm (not captured) | tab_1:row5:col4 |
-| E max,eletriptan | `Q320` · not captured | 2.75 | not captured | not captured | llm (not captured) | tab_1:row5:col5 |
-| E max,eletriptan | `Q320` · not captured | 3.33 | not captured | not captured | llm (not captured) | tab_1:row5:col6 |
-| E max,sumatriptan | `Q320` · not captured | 2.17 | not captured | not captured | llm (not captured) | tab_1:row6:col2 |
-| E max,sumatriptan | `Q320` · not captured | 3.35 | not captured | not captured | llm (not captured) | tab_1:row6:col3 |
-| E max,sumatriptan — Pain free | `Q320` · not captured | 1.91 | not captured | not captured | llm (not captured) | tab_1:row6:col4 |
-| E max,sumatriptan | `Q320` · not captured | 1.65 | not captured | not captured | llm (not captured) | tab_1:row6:col5 |
-| E max,sumatriptan | `Q320` · not captured | 2.17 | not captured | not captured | llm (not captured) | tab_1:row6:col6 |
-| k em,eletriptan (h -1 ) — Pain relief | `Q47` · not captured | 0.66 | h -1 | not captured | llm (not captured) | tab_1:row7:col1 |
-| k em,eletriptan (h -1 ) | `Q47` · not captured | 0.521 | h -1 | not captured | llm (not captured) | tab_1:row7:col2 |
-| k em,eletriptan (h -1 ) | `Q47` · not captured | 0.836 | h -1 | not captured | llm (not captured) | tab_1:row7:col3 |
-| k em,sumatriptan (h -1 ) — Pain relief | `Q47` · not captured | 0.426 | h -1 | not captured | llm (not captured) | tab_1:row8:col1 |
-| k em,sumatriptan (h -1 ) | `Q47` · not captured | 0.279 | h -1 | not captured | llm (not captured) | tab_1:row8:col2 |
-| k em,sumatriptan (h -1 ) | `Q47` · not captured | 0.651 | h -1 | not captured | llm (not captured) | tab_1:row8:col3 |
-| ED 50,eletriptan (mg) — Pain relief | `Q321` · not captured | 15.5 | mg | not captured | llm (not captured) | tab_1:row9:col1 |
-| ED 50,eletriptan (mg) | `Q321` · not captured | 11.5 | mg | not captured | llm (not captured) | tab_1:row9:col2 |
-| ED 50,eletriptan (mg) | `Q321` · not captured | 20.9 | mg | not captured | llm (not captured) | tab_1:row9:col3 |
-| ED 50,eletriptan (mg) — Pain free | `Q321` · not captured | 20.9 | mg | not captured | llm (not captured) | tab_1:row9:col4 |
-| ED 50,eletriptan (mg) | `Q321` · not captured | 15.6 | mg | not captured | llm (not captured) | tab_1:row9:col5 |
-| ED 50,eletriptan (mg) | `Q321` · not captured | 28.0 | mg | not captured | llm (not captured) | tab_1:row9:col6 |
-| ED 50,sumatriptan (mg) — Pain relief | `Q321` · not captured | 20.1 | mg | not captured | llm (not captured) | tab_1:row10:col1 |
-| ED 50,sumatriptan (mg) | `Q321` · not captured | 13.1 | mg | not captured | llm (not captured) | tab_1:row10:col2 |
-| ED 50,sumatriptan (mg) | `Q321` · not captured | 30.9 | mg | not captured | llm (not captured) | tab_1:row10:col3 |
-| ED 50,sumatriptan (mg) — Pain free | `Q321` · not captured | 13.5 | mg | not captured | llm (not captured) | tab_1:row10:col4 |
-| ED 50,sumatriptan (mg) | `Q321` · not captured | 9.67 | mg | not captured | llm (not captured) | tab_1:row10:col5 |
-| ED 50,sumatriptan (mg) | `Q321` · not captured | 18.8 | mg | not captured | llm (not captured) | tab_1:row10:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k pl (h -1 ) — Pain relief | `Q47` · not captured | 1.56 | h -1 | not captured | llm (not captured) | tab_1:row4:col1 |
+| PK (driver) | k pl (h -1 ) | `Q358` · not captured | 1.39 | h -1 | not captured | llm (not captured) | tab_1:row4:col2 |
+| PK (driver) | k pl (h -1 ) | `Q358` · not captured | 1.75 | h -1 | not captured | llm (not captured) | tab_1:row4:col3 |
+| PD (effect) | k pl (h -1 ) — Pain free | `Q326` · not captured | 0.99 | h -1 | not captured | llm (not captured) | tab_1:row4:col4 |
+| PK (driver) | k pl (h -1 ) | `Q358` · not captured | 0.92 | h -1 | not captured | llm (not captured) | tab_1:row4:col5 |
+| PK (driver) | k pl (h -1 ) | `Q358` · not captured | 1.07 | h -1 | not captured | llm (not captured) | tab_1:row4:col6 |
+| PD (effect) | E max,eletriptan | `Q320` · not captured | 2.88 | not captured | not captured | llm (not captured) | tab_1:row5:col2 |
+| PD (effect) | E max,eletriptan | `Q320` · not captured | 3.58 | not captured | not captured | llm (not captured) | tab_1:row5:col3 |
+| PD (effect) | E max,eletriptan — Pain free | `Q320` · not captured | 3.09 | not captured | not captured | llm (not captured) | tab_1:row5:col4 |
+| PD (effect) | E max,eletriptan | `Q320` · not captured | 2.75 | not captured | not captured | llm (not captured) | tab_1:row5:col5 |
+| PD (effect) | E max,eletriptan | `Q320` · not captured | 3.33 | not captured | not captured | llm (not captured) | tab_1:row5:col6 |
+| PD (effect) | E max,sumatriptan | `Q320` · not captured | 2.17 | not captured | not captured | llm (not captured) | tab_1:row6:col2 |
+| PD (effect) | E max,sumatriptan | `Q320` · not captured | 3.35 | not captured | not captured | llm (not captured) | tab_1:row6:col3 |
+| PD (effect) | E max,sumatriptan — Pain free | `Q320` · not captured | 1.91 | not captured | not captured | llm (not captured) | tab_1:row6:col4 |
+| PD (effect) | E max,sumatriptan | `Q320` · not captured | 1.65 | not captured | not captured | llm (not captured) | tab_1:row6:col5 |
+| PD (effect) | E max,sumatriptan | `Q320` · not captured | 2.17 | not captured | not captured | llm (not captured) | tab_1:row6:col6 |
+| PK (driver) | k em,eletriptan (h -1 ) — Pain relief | `Q47` · not captured | 0.66 | h -1 | not captured | llm (not captured) | tab_1:row7:col1 |
+| PK (driver) | k em,eletriptan (h -1 ) | `Q47` · not captured | 0.521 | h -1 | not captured | llm (not captured) | tab_1:row7:col2 |
+| PK (driver) | k em,eletriptan (h -1 ) | `Q47` · not captured | 0.836 | h -1 | not captured | llm (not captured) | tab_1:row7:col3 |
+| PK (driver) | k em,sumatriptan (h -1 ) — Pain relief | `Q47` · not captured | 0.426 | h -1 | not captured | llm (not captured) | tab_1:row8:col1 |
+| PK (driver) | k em,sumatriptan (h -1 ) | `Q47` · not captured | 0.279 | h -1 | not captured | llm (not captured) | tab_1:row8:col2 |
+| PK (driver) | k em,sumatriptan (h -1 ) | `Q47` · not captured | 0.651 | h -1 | not captured | llm (not captured) | tab_1:row8:col3 |
+| PD (effect) | ED 50,eletriptan (mg) — Pain relief | `Q321` · not captured | 15.5 | mg | not captured | llm (not captured) | tab_1:row9:col1 |
+| PD (effect) | ED 50,eletriptan (mg) | `Q321` · not captured | 11.5 | mg | not captured | llm (not captured) | tab_1:row9:col2 |
+| PD (effect) | ED 50,eletriptan (mg) | `Q321` · not captured | 20.9 | mg | not captured | llm (not captured) | tab_1:row9:col3 |
+| PD (effect) | ED 50,eletriptan (mg) — Pain free | `Q321` · not captured | 20.9 | mg | not captured | llm (not captured) | tab_1:row9:col4 |
+| PD (effect) | ED 50,eletriptan (mg) | `Q321` · not captured | 15.6 | mg | not captured | llm (not captured) | tab_1:row9:col5 |
+| PD (effect) | ED 50,eletriptan (mg) | `Q321` · not captured | 28.0 | mg | not captured | llm (not captured) | tab_1:row9:col6 |
+| PD (effect) | ED 50,sumatriptan (mg) — Pain relief | `Q321` · not captured | 20.1 | mg | not captured | llm (not captured) | tab_1:row10:col1 |
+| PD (effect) | ED 50,sumatriptan (mg) | `Q321` · not captured | 13.1 | mg | not captured | llm (not captured) | tab_1:row10:col2 |
+| PD (effect) | ED 50,sumatriptan (mg) | `Q321` · not captured | 30.9 | mg | not captured | llm (not captured) | tab_1:row10:col3 |
+| PD (effect) | ED 50,sumatriptan (mg) — Pain free | `Q321` · not captured | 13.5 | mg | not captured | llm (not captured) | tab_1:row10:col4 |
+| PD (effect) | ED 50,sumatriptan (mg) | `Q321` · not captured | 9.67 | mg | not captured | llm (not captured) | tab_1:row10:col5 |
+| PD (effect) | ED 50,sumatriptan (mg) | `Q321` · not captured | 18.8 | mg | not captured | llm (not captured) | tab_1:row10:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

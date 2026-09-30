@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prekallikrein (measured concentrations) drives per-4-week normalized HAE attack rate (in attacks/4 weeks): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Donidalorsen reduces plasma prekallikrein (PKK), and the per-4-week normalized HAE attack rate (attacks/4 weeks) was described by a direct sigmoidal Emax inhibition model as a function of per-4-week average PKK concentration, with baseline attack rate (exponent 1.03, linear) on Emax and baseline PKK (exponent 0.13, weak) on EC50 as covariates. Key values: EC50 110 mg/L (record: 111 mg/L), EC90 47.1 mg/L, EC1 18.7 mg/L, Emax 4.54 attacks/4 weeks, Hill coefficient 2.61; the paper does not describe an effect-compartment or kin/kout mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Singh P; Witjes H; Kleijn HJ; Diep JK; Bordone L; Newman KB; Gao X; Cohn DM et a
   ·  DOI: [10.1111/cts.70388](https://doi.org/10.1111/cts.70388)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Bootstrap statistics a | `Q320` · not captured | 4.54 | not captured | not captured | exact (not captured) | cts70388-tbl-0001:row2:col2 |
-| EC50 (mg/L) — Bootstrap statistics a | `Q321` · not captured | 111 | mg/L | not captured | exact (not captured) | cts70388-tbl-0001:row3:col2 |
-| Hill — Bootstrap statistics a | `Q325` · not captured | 2.61 | not captured | not captured | exact (not captured) | cts70388-tbl-0001:row4:col2 |
-| IIV on Emax (CV%) — Bootstrap statistics a | `Q100` · not captured | 26.5 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row8:col2 |
-| IIV on Emax (CV%) — Shrinkage | `Q100` · not captured | 42.7 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row8:col4 |
-| IIV on Hill (CV%) — Bootstrap statistics a | `Q100` · not captured | 129 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row9:col2 |
-| IIV on Hill (CV%) — Shrinkage | `Q100` · not captured | 27.1 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row9:col4 |
-| EC1 (mg/L) — Estimate (RSE%) | `Q321` · not captured | 18.7 | mg/L | not captured | llm (not captured) | cts70388-tbl-0001:row12:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Bootstrap statistics a | `Q320` · not captured | 4.54 | not captured | not captured | exact (not captured) | cts70388-tbl-0001:row2:col2 |
+| PD (effect) | EC50 (mg/L) — Bootstrap statistics a | `Q321` · not captured | 111 | mg/L | not captured | exact (not captured) | cts70388-tbl-0001:row3:col2 |
+| PD (effect) | Hill — Bootstrap statistics a | `Q325` · not captured | 2.61 | not captured | not captured | exact (not captured) | cts70388-tbl-0001:row4:col2 |
+| — | IIV on Emax (CV%) — Bootstrap statistics a | `Q100` · not captured | 26.5 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row8:col2 |
+| — | IIV on Emax (CV%) — Shrinkage | `Q100` · not captured | 42.7 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row8:col4 |
+| — | IIV on Hill (CV%) — Bootstrap statistics a | `Q100` · not captured | 129 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row9:col2 |
+| — | IIV on Hill (CV%) — Shrinkage | `Q100` · not captured | 27.1 | not captured | not captured | nil (not captured) | cts70388-tbl-0001:row9:col4 |
+| PD (effect) | EC1 (mg/L) — Estimate (RSE%) | `Q321` · not captured | 18.7 | mg/L | not captured | llm (not captured) | cts70388-tbl-0001:row12:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

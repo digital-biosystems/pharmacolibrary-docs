@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cyclo-(Pro-Tyr-Pro-Val) drives cAMP accumulation (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The cyclic tetrapeptide L-cyclo(Pro-Tyr-Pro-Val) 1 acts on forskolin-stimulated cAMP accumulation in human neuroblastoma SK-N-SH cells, acting as a potent μ-opioid receptor (MOR) agonist that reduces cAMP levels, with a reported EC50 of 2.5 nM; the paper does not state a specific PD model structure or parameters such as Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

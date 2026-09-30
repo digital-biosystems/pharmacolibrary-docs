@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aliskiren (the dose) drives plasma renin activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Aliskiren (150 or 300 mg) acts on plasma renin activity (PRA) by direct renin inhibition: an Emax-model target inhibition ED = Emax·D/(D+ED50) with Emax = 0.99 and ED50 = 20 mg reduces PRA in the Angiotensin module (DRI = E150·Aliskiren150 + E300·Aliskiren300). The record lists amlodipine 5 mg/day with an E(D) value of 0.413 for this response, but the paper does not describe a direct amlodipine effect on PRA (it notes amlodipine only as reducing correlation coefficients when combined with RAAS agents).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kutumova_2022`
 - **model family:** `emax`
 - **driver:** `dose_only`
@@ -21,13 +31,13 @@ Kutumova E; Kiselev I; Sharipov R; Lifshits G; Kolpakov F et al. (2022). Frontie
   ·  DOI: [10.3389/fphys.2022.1070115](https://doi.org/10.3389/fphys.2022.1070115)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Amlodipine, 5 mg/day — E(D)-value | `Q38` · not captured | 0.413 | not captured | not captured | llm (not captured) | T1:row2:col4 |
-| Bisoprolol, 5 mg/day — E(D)-value | `Q38` · not captured | 0.371 | not captured | not captured | llm (not captured) | T1:row6:col4 |
-| Enalapril, 20 mg/day — E(D)-value | `Q38` · not captured | 0.996 | not captured | not captured | llm (not captured) | T1:row8:col4 |
-| HCTZ, 12.5 mg/day — E(D)-value | `Q38` · not captured | 0.304 | not captured | not captured | llm (not captured) | T1:row9:col4 |
-| Glomerular filtration — Sign b | `Q26` · not captured | 0.469 | not captured | not captured | llm (not captured) | T1:row11:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Amlodipine, 5 mg/day — E(D)-value | `Q38` · not captured | 0.413 | not captured | not captured | llm (not captured) | T1:row2:col4 |
+| PK (driver) | Bisoprolol, 5 mg/day — E(D)-value | `Q38` · not captured | 0.371 | not captured | not captured | llm (not captured) | T1:row6:col4 |
+| PK (driver) | Enalapril, 20 mg/day — E(D)-value | `Q38` · not captured | 0.996 | not captured | not captured | llm (not captured) | T1:row8:col4 |
+| PK (driver) | HCTZ, 12.5 mg/day — E(D)-value | `Q38` · not captured | 0.304 | not captured | not captured | llm (not captured) | T1:row9:col4 |
+| PK (driver) | Glomerular filtration — Sign b | `Q26` · not captured | 0.469 | not captured | not captured | llm (not captured) | T1:row11:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

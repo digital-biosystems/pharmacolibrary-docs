@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taiwania flousiana essential oil (measured concentrations) drives chlorophyll b (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> T. flousiana essential oil inhibits chlorophyll b content of Spirogyra communis (µg/mL), with IC50 values of 53.39–106.91 µg/mL over 24–96 h (47.49 µg/mL at 48 h); the paper reports IC50/EC50 estimates but does not state a pharmacodynamic mechanism or model (no Imax, kin, kout, or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

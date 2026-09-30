@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methylophiopogonanone A, ophiopogonin D′, methylophiopogonanone B, ophiopogonin D (measured concentrations) drive telmisartan uptake (in NA): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations (μM) of the Ophiopogonis components methylophiopogonanone A, ophiopogonin D′, methylophiopogonanone B and ophiopogonin D were modelled against OATP1B3-mediated telmisartan uptake; the paper describes these components as inhibitors of transporter-mediated uptake (contrary to the record's 'stimulation' direction), but the excerpts do not state the model mechanism further or any potency values (IC50, Imax, Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

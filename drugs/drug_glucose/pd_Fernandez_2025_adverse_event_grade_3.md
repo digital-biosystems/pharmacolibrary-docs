@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Capivasertib (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Capivasertib exposure (Cmax, Cmin, AUC, and average ACmax/ACmin/AUC in ng/mL-equivalent metrics from a three-compartment PopPK model at 400 mg BD 4 days on/3 days off) was related to the binary likelihood of adverse event grade ≥ 3 in pooled safety data (n = 468), analyzed with a categorical exposure–response model; the paper does not state the pharmacodynamic mechanism or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fernandez_2025`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

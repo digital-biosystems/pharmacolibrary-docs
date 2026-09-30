@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vestronidase alfa (measured concentrations) drives urinary dermatan sulfate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vestronidase alfa serum exposure (AUC) drives an inhibitory maximal effect (Imax) model on the percentage reduction from baseline of urinary dermatan sulfate (uDS), with I0 fixed to 0; estimated Imax was 76.9% and IC50 was 7.3 µg·h/mL for uDS.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qi_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulfaguanidine derivatives (measured concentrations) drives alpha-amylase inhibition (in mM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulfaguanidine derivatives inhibit α-amylase in vitro, with IC50 values ranging from 0.33 to 1.33 µM (parent compound 3: 0.35 µM; most potent compound 4: 0.33 µM), compared to acarbose (IC50 = 1.72 µM). The paper reports only IC50 values and does not describe a pharmacodynamic model or mechanism beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ayoup_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

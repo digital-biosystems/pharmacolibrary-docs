@@ -5,7 +5,7 @@
 
 # opium — `Opium_Liu2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,13 +13,15 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **No volume or clearance — not a compartmental population PK model.**
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is opium's own; they describe morphine.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tincture of opium, the second reading diluted tincture of opium; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tincture of opium, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -69,16 +71,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.333 (3/9 fields) | 6 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 48.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[bioavailability]` | 48.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 48.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[first-order absorption rate constant]` | 0.751 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | tincture of opium | diluted tincture of opium | mismatch |
+| `gpt-oss:120b` | `parameters[first-order absorption rate constant]` | not captured | 0.751 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | tincture of opium | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | morphine | unknown | mismatch |
 
 </details>
 

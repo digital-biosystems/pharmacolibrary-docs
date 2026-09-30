@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Temozolomide (measured concentrations) drives cell viability (in relative units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carmustine reduced GBM cell viability (MTT signal, relative units) in a dose-dependent manner, with an IC50 of approximately 320 µM; the paper does not state a pharmacodynamic model or mechanism (e.g., no Imax, kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rubino_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

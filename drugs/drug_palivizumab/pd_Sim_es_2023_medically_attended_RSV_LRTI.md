@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nirsevimab drives name (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking nirsevimab exposure to the time-to-event endpoint of medically attended RSV LRTI; efficacy is reported only as a relative risk reduction versus placebo with weight-banded dosing (50 mg for infants &lt;5 kg, 100 mg for ≥5 kg), and no potency (IC50/EC50/Emax) or rate parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simões_2023`
 - **model family:** `tte`
 - **driver:** `not_resolved`

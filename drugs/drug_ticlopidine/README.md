@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_sir_resultsa](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_nonmem](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_nonmem.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Ashraf_2018_sir_resultsa](drugs/drug_ticlopidine/Ticlopidine_Ashraf2018_sir_resultsa.md) | — | parent + metabolite (no model) | 3 | Ashraf MW et al., Semimechanistic Population Pharmacokine…, CPT: pharmacometrics & syst… (2018) | [10.1002/psp4.12346](https://doi.org/10.1002/psp4.12346) |
 
 ## Pharmacogenomics (PGx)
 

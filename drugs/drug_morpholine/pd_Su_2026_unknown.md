@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MRS-9 drives S. aureus growth (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MRS-9 inhibits S. aureus (ATCC25923) growth, with approximately 50% growth inhibition at 128 μg/ml (MIC not reached; solubility limited testing to 128 μg/ml), acting as a potent type 1 MetRS inhibitor (IC50 0.09 ± 0.01 μM against SaMetRS, 2.5 ± 0.3 μM against EfMetRS, &gt;1000-fold selectivity over type 2 MetRSs); the paper does not state a specific PD model (e.g., Emax/IC50 growth-inhibition model) for the antibacterial response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Su_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

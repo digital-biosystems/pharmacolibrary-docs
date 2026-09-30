@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ceratonia siliqua aqueous extract (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model linking Ceratonia siliqua aqueous extract (CsAE) concentrations to a measured oxidative-stress response; it only reports in vitro antioxidant assays (DPPH scavenging IC50 = 0.116 ± 0.002 mg/mL; FRAP EC50 = 0.123 ± 0.003 mg/mL; weak iron chelation 0.971 ± 0.006 mg/mL) and dose-dependent AChE inhibition (IC50 = 0.29 ± 0.004 mg/mL, maximal inhibition 88.53 ± 0.08% at 1 mg/mL), with no mechanism, Emax/IC50 model parameters for oxidative stress, or rate constants given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abidar_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

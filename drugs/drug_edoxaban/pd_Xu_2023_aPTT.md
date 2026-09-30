@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban and M4 drive aPTT (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the PBPK/PD model, plasma unbound concentrations of edoxaban and its active metabolite M4 each act directly (linearly, additively) on aPTT, with the response calculated as baseline E0 plus Slopeedo·Cu,edo plus SlopeM4·Cu,M4; the paper does not report numeric Slope, IC50, or other potency/rate values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

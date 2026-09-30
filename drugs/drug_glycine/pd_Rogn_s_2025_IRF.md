@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bitopertin drives immature reticulocyte fraction (in 1): indirect response — drug inhibits the loss of immature reticulocyte fraction.
+
+**Model:** No model was generated from this record.
+
+> Bitopertin exposure (AUC) inhibits hemoglobin synthesis in precursor cells (Imax = 0.6, AUC50 = 16.50, %RSE 8.91, IIV 49.50%); the resulting decrease in total hemoglobin triggers homeostatic feedback that stimulates precursor/reticulocyte recruitment, producing the observed dose-dependent increase in immature reticulocyte fraction (IRF) rather than a direct drug effect on IRF. The record labels this an indirect-response (inhibitory, proportional) model; the paper does not state an explicit IC50/EC50/kin/kout/ke0 for IRF, but reports an erythrocyte lifespan LSRBC of 125 days (kTOL = 0.022) and baseline IRF0 with IIV of 32.09%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rognås_2025`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,25 +30,25 @@ Rognås SV; Schaedeli Stark F; Marchesi M; Silber Baumann HE; Abrantes JA et al.
   ·  DOI: [10.1007/s10928-025-09990-7](https://doi.org/10.1007/s10928-025-09990-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LSRBC — IIV (%CV) | `Q312` · not captured | 28.02 | not captured | not captured | llm (not captured) | Tab2:row2:col5 |
-| LSRBC — Shrinkagea (%) | `Q318` · not captured | 16.92 | not captured | not captured | llm (not captured) | Tab2:row2:col6 |
-| RET0 — IIV (%CV) | `Q312` · not captured | 26.02 | not captured | not captured | llm (not captured) | Tab2:row3:col5 |
-| RET0 — Shrinkagea (%) | `Q318` · not captured | 1.88 | not captured | not captured | llm (not captured) | Tab2:row3:col6 |
-| RBC0, male — IIV (%CV) | `Q312` · not captured | 5.34 | not captured | not captured | llm (not captured) | Tab2:row4:col5 |
-| RBC0, male — Shrinkagea (%) | `Q318` · not captured | 1.63 | not captured | not captured | llm (not captured) | Tab2:row4:col6 |
-| MCH0 — IIV (%CV) | `Q312` · not captured | 4.82 | not captured | not captured | llm (not captured) | Tab2:row6:col5 |
-| MCH0 — Shrinkagea (%) | `Q318` · not captured | 0.47 | not captured | not captured | llm (not captured) | Tab2:row6:col6 |
-| IRF0 — IIV (%CV) | `Q312` · not captured | 32.09 | not captured | not captured | llm (not captured) | Tab2:row7:col5 |
-| IRF0 — Shrinkagea (%) | `Q318` · not captured | 3.88 | not captured | not captured | llm (not captured) | Tab2:row7:col6 |
-| kTOL — Estimate | `Q337` · not captured | 0.022 | not captured | not captured | exact (not captured) | Tab2:row9:col2 |
-| kTOL — %RSE | `Q337` · not captured | 12.86 | not captured | not captured | exact (not captured) | Tab2:row9:col4 |
-| Imax,bitopertin — Estimate | `Q323` · not captured | 0.6 | not captured | not captured | llm_confirmed (not captured) | Tab2:row10:col2 |
-| AUC50, bitopertin — Estimate | `Q19` · not captured | 16.50 | not captured | not captured | llm (not captured) | Tab2:row11:col2 |
-| AUC50, bitopertin — %RSE | `Q19` · not captured | 8.91 | not captured | not captured | llm (not captured) | Tab2:row11:col4 |
-| AUC50, bitopertin — IIV (%CV) | `Q312` · not captured | 49.50 | not captured | not captured | llm (not captured) | Tab2:row11:col5 |
-| AUC50, bitopertin — Shrinkagea (%) | `Q318` · not captured | 24.97 | not captured | not captured | llm (not captured) | Tab2:row11:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | LSRBC — IIV (%CV) | `Q312` · not captured | 28.02 | not captured | not captured | llm (not captured) | Tab2:row2:col5 |
+| variability | LSRBC — Shrinkagea (%) | `Q318` · not captured | 16.92 | not captured | not captured | llm (not captured) | Tab2:row2:col6 |
+| variability | RET0 — IIV (%CV) | `Q312` · not captured | 26.02 | not captured | not captured | llm (not captured) | Tab2:row3:col5 |
+| variability | RET0 — Shrinkagea (%) | `Q318` · not captured | 1.88 | not captured | not captured | llm (not captured) | Tab2:row3:col6 |
+| variability | RBC0, male — IIV (%CV) | `Q312` · not captured | 5.34 | not captured | not captured | llm (not captured) | Tab2:row4:col5 |
+| variability | RBC0, male — Shrinkagea (%) | `Q318` · not captured | 1.63 | not captured | not captured | llm (not captured) | Tab2:row4:col6 |
+| variability | MCH0 — IIV (%CV) | `Q312` · not captured | 4.82 | not captured | not captured | llm (not captured) | Tab2:row6:col5 |
+| variability | MCH0 — Shrinkagea (%) | `Q318` · not captured | 0.47 | not captured | not captured | llm (not captured) | Tab2:row6:col6 |
+| variability | IRF0 — IIV (%CV) | `Q312` · not captured | 32.09 | not captured | not captured | llm (not captured) | Tab2:row7:col5 |
+| variability | IRF0 — Shrinkagea (%) | `Q318` · not captured | 3.88 | not captured | not captured | llm (not captured) | Tab2:row7:col6 |
+| PD (effect) | kTOL — Estimate | `Q337` · not captured | 0.022 | not captured | not captured | exact (not captured) | Tab2:row9:col2 |
+| PD (effect) | kTOL — %RSE | `Q337` · not captured | 12.86 | not captured | not captured | exact (not captured) | Tab2:row9:col4 |
+| PD (effect) | Imax,bitopertin — Estimate | `Q323` · not captured | 0.6 | not captured | not captured | llm_confirmed (not captured) | Tab2:row10:col2 |
+| PK (driver) | AUC50, bitopertin — Estimate | `Q19` · not captured | 16.50 | not captured | not captured | llm (not captured) | Tab2:row11:col2 |
+| PK (driver) | AUC50, bitopertin — %RSE | `Q19` · not captured | 8.91 | not captured | not captured | llm (not captured) | Tab2:row11:col4 |
+| variability | AUC50, bitopertin — IIV (%CV) | `Q312` · not captured | 49.50 | not captured | not captured | llm (not captured) | Tab2:row11:col5 |
+| variability | AUC50, bitopertin — Shrinkagea (%) | `Q318` · not captured | 24.97 | not captured | not captured | llm (not captured) | Tab2:row11:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

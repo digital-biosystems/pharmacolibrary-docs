@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in pg/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MHV370 (a TLR7/8 inhibitor) reduced serum CXCL13 (pg/ml, ELISA) in NZB/W F1 lupus mice given MHV370-laced food (efficacy seen from a dietary dose of 0.01% MHV370); the paper does not state a mechanism or potency (IC50/Emax) specifically for the CXCL13 response. Related PD potencies reported are inhibition of TLR7-driven reporter activity (IC50 15 ± 10 nM vs CL307, 7 ± 0.1 nM vs R848), neutrophil ROS (IC50 3.8 ± 0.8 nM vs R848, 5.2 ± 1.5 nM vs TL8-506), and an ex vivo blood CD69 PD marker IC50 of 35 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SB-CD (measured concentrations) drives Trypsin-like activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> SB-CD concentrations (µM) stimulate trypsin-like (T-L) activity via a direct Emax-type dose–response fit; the paper reports an EC50 of 1.1 ± 0.3 µM for T-L activity (vs 4.3 ± 0.5 µM for SB alone), but does not state Imax/Emax or a mechanistic description beyond reversible activation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bognanni_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

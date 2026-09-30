@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The model was rejected because the (S)-carvedilol compartment is unreachable from the dose, and a reported unit could not be converted to SI.**
+
+The record defines interconversion links from carvedilol to (S)-carvedilol, but the (S)-carvedilol compartment has no path from the dose, making it an orphan compartment. Additionally, a reported unit could not be converted to SI, so a parameter reached the model builder without a standard value. The second reader disagreed on the dose compound, primary analyte, and several parameter values, including clearance and absorption rate constant. Extracted — carvedilol: kabs 0.15 1/h, CL 17.3 L/h, V1 4.96 L, Q 12.5 L/h, V2 141 L, Fab 0.15 fixed, Frel 0.073, t1/2ka 0.21 h; (S)-carvedilol: Fab 0.3 fixed.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has rac-carvedilol, the second reading unknown; it also differs on 8 more fields. That field does not shape the model.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 > **Dose compound ≠ measured compound:** dosed `rac-carvedilol`, measured `(S)-carvedilol`.
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anifrolumab (measured concentrations) drives investigational product discontinuation: direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the dropout (time-to-event) model, anifrolumab exposure (concentration, μg/mL) and UPCR independently affect the momentary risk of investigational product discontinuation: higher anifrolumab exposure reduces dropout risk (50% reduction at 21 μg/mL vs. no exposure) and higher UPCR increases it (twice the risk at 2.8 vs. 0.5 mg/mg). The paper does not state the exact functional form (e.g., Imax/IC50) or rate parameters for the dropout submodel, describing only a direct concentration-dependent dropout reduction plus an indirect reduction via UPCR improvement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Almquist_2026`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -20,43 +30,43 @@ Almquist J; Chia YL; Tummala R; Bertagnolli L; Jayne D; Tang W; Lindholm C et al
   ·  DOI: [10.1002/cpt.70307](https://doi.org/10.1002/cpt.70307)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Systemic clearance, CLTV — Point estimate | `Q22` · not captured | 0.253 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row1:col2 |
-| Systemic clearance, CLTV — 95% confidence interval | `Q22` · not captured | 0.231 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row1:col3 |
-| Central volume of distribution, VC — Point estimate | `Q63` · not captured | 2.60 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row2:col2 |
-| Central volume of distribution, VC — 95% confidence interval | `Q63` · not captured | 2.48 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row2:col3 |
-| Intercompartmental clearance, Q — Point estimate | `Q30` · not captured | 0.937 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row3:col2 |
-| Peripheral volume of distribution, VP — Point estimate | `Q64` · not captured | 2.09 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row4:col2 |
-| Peripheral volume of distribution, VP — 95% confidence interval | `Q64` · not captured | 1.60 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row4:col3 |
-| Baseline IFN‐αR1 level, R0 — Point estimate | `Q336` · not captured | 0.104 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row6:col2 |
-| Baseline IFN‐αR1 level, R0 — 95% confidence interval | `Q336` · not captured | 0.0882 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row6:col3 |
-| Internalization rate constant, KINT — Point estimate | `Q334` · not captured | 77.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row7:col2 |
-| Clearance factor for IFN low patients, CLIFNLOW — Point estimate | `Q22` · not captured | 0.781 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row8:col2 |
-| Clearance factor for IFN low patients, CLIFNLOW — 95% confidence interval | `Q22` · not captured | 0.530 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row8:col3 |
-| UPCR baseline, Ub — Point estimate | `Q100` · not captured | 2.38 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row14:col2 |
-| UPCR baseline, Ub — 95% confidence interval | `Q100` · not captured | 2.12 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row14:col3 |
-| Shape parameter for UPCR, x — Point estimate | `Q343` · not captured | 0.512 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row15:col2 |
-| Shape parameter for UPCR, x — 95% confidence interval | `Q343` · not captured | 0.243 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row15:col3 |
-| IIV CL — Point estimate | `Q312` · not captured | 23.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row17:col2 |
-| IIV CL — 95% confidence interval | `Q312` · not captured | 16.3 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row17:col3 |
-| IIV R0 — Point estimate | `Q312` · not captured | 18.6 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row18:col2 |
-| IIV R0 — 95% confidence interval | `Q312` · not captured | 0.313 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row18:col3 |
-| IIV k — Point estimate | `Q312` · not captured | 45.7 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row19:col2 |
-| IIV k — 95% confidence interval | `Q312` · not captured | 19.6 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row19:col3 |
-| IIV Es — Point estimate | `Q312` · not captured | 127 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row20:col2 |
-| IIV Es — 95% confidence interval | `Q312` · not captured | 108 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row20:col3 |
-| IIV Ub — Point estimate | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row21:col2 |
-| IIV Ub — 95% confidence interval | `Q312` · not captured | 45.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row21:col3 |
-| IIV UPCR residual error — Point estimate | `Q312` · not captured | 20.3 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row22:col2 |
-| IIV UPCR residual error — 95% confidence interval | `Q315` · not captured | 9.19 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row22:col3 |
-| Additive PK residual error — Point estimate | `Q317` · not captured | 69.2 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row23:col2 |
-| Additive PK residual error — 95% confidence interval | `Q317` · not captured | 18.7 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row23:col3 |
-| Proportional PK residual error — Point estimate | `Q316` · not captured | 26.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row24:col2 |
-| Proportional PK residual error — 95% confidence interval | `Q316` · not captured | 21.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row24:col3 |
-| Lognormal UPCR residual error — 95% confidence interval | `Q315` · not captured | 45.3 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row25:col3 |
-| Constant base hazard for dropout, β0 — Point estimate | `Q342` · not captured | 0.253 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row26:col2 |
-| Constant base hazard for dropout, β0 — 95% confidence interval | `Q342` · not captured | 0.0978 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row26:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Systemic clearance, CLTV — Point estimate | `Q22` · not captured | 0.253 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row1:col2 |
+| PK (driver) | Systemic clearance, CLTV — 95% confidence interval | `Q22` · not captured | 0.231 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row1:col3 |
+| PK (driver) | Central volume of distribution, VC — Point estimate | `Q63` · not captured | 2.60 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row2:col2 |
+| PK (driver) | Central volume of distribution, VC — 95% confidence interval | `Q63` · not captured | 2.48 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row2:col3 |
+| PK (driver) | Intercompartmental clearance, Q — Point estimate | `Q30` · not captured | 0.937 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row3:col2 |
+| PK (driver) | Peripheral volume of distribution, VP — Point estimate | `Q64` · not captured | 2.09 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row4:col2 |
+| PK (driver) | Peripheral volume of distribution, VP — 95% confidence interval | `Q64` · not captured | 1.60 | not captured | not captured | boundary_compartment (not captured) | cpt70307-tbl-0001:row4:col3 |
+| PD (effect) | Baseline IFN‐αR1 level, R0 — Point estimate | `Q336` · not captured | 0.104 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row6:col2 |
+| PD (effect) | Baseline IFN‐αR1 level, R0 — 95% confidence interval | `Q336` · not captured | 0.0882 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row6:col3 |
+| PD (effect) | Internalization rate constant, KINT — Point estimate | `Q334` · not captured | 77.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row7:col2 |
+| PK (driver) | Clearance factor for IFN low patients, CLIFNLOW — Point estimate | `Q22` · not captured | 0.781 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row8:col2 |
+| PK (driver) | Clearance factor for IFN low patients, CLIFNLOW — 95% confidence interval | `Q22` · not captured | 0.530 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row8:col3 |
+| — | UPCR baseline, Ub — Point estimate | `Q100` · not captured | 2.38 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row14:col2 |
+| — | UPCR baseline, Ub — 95% confidence interval | `Q100` · not captured | 2.12 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row14:col3 |
+| PD (effect) | Shape parameter for UPCR, x — Point estimate | `Q343` · not captured | 0.512 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row15:col2 |
+| PD (effect) | Shape parameter for UPCR, x — 95% confidence interval | `Q343` · not captured | 0.243 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row15:col3 |
+| variability | IIV CL — Point estimate | `Q312` · not captured | 23.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row17:col2 |
+| variability | IIV CL — 95% confidence interval | `Q312` · not captured | 16.3 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row17:col3 |
+| variability | IIV R0 — Point estimate | `Q312` · not captured | 18.6 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row18:col2 |
+| variability | IIV R0 — 95% confidence interval | `Q312` · not captured | 0.313 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row18:col3 |
+| variability | IIV k — Point estimate | `Q312` · not captured | 45.7 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row19:col2 |
+| variability | IIV k — 95% confidence interval | `Q312` · not captured | 19.6 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row19:col3 |
+| variability | IIV Es — Point estimate | `Q312` · not captured | 127 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row20:col2 |
+| variability | IIV Es — 95% confidence interval | `Q312` · not captured | 108 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row20:col3 |
+| variability | IIV Ub — Point estimate | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row21:col2 |
+| variability | IIV Ub — 95% confidence interval | `Q312` · not captured | 45.4 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row21:col3 |
+| variability | IIV UPCR residual error — Point estimate | `Q312` · not captured | 20.3 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row22:col2 |
+| variability | IIV UPCR residual error — 95% confidence interval | `Q315` · not captured | 9.19 | not captured | not captured | llm_corrected (not captured) | cpt70307-tbl-0001:row22:col3 |
+| variability | Additive PK residual error — Point estimate | `Q317` · not captured | 69.2 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row23:col2 |
+| variability | Additive PK residual error — 95% confidence interval | `Q317` · not captured | 18.7 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row23:col3 |
+| variability | Proportional PK residual error — Point estimate | `Q316` · not captured | 26.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row24:col2 |
+| variability | Proportional PK residual error — 95% confidence interval | `Q316` · not captured | 21.1 | not captured | not captured | llm_confirmed (not captured) | cpt70307-tbl-0001:row24:col3 |
+| variability | Lognormal UPCR residual error — 95% confidence interval | `Q315` · not captured | 45.3 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row25:col3 |
+| PD (effect) | Constant base hazard for dropout, β0 — Point estimate | `Q342` · not captured | 0.253 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row26:col2 |
+| PD (effect) | Constant base hazard for dropout, β0 — 95% confidence interval | `Q342` · not captured | 0.0978 | not captured | not captured | llm (not captured) | cpt70307-tbl-0001:row26:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

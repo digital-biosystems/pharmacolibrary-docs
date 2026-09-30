@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives systolic blood pressure (in mmHg): indirect response — drug inhibits the production of systolic blood pressure.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (AUC0–24, ng·h/mL, from the cited Kobuchi_2025 PK model in a sequential fit) acts on systolic blood pressure (mmHg) via an indirect response model with inhibitory, proportional drug effect, per the extraction record; the paper itself describes only an exposure–response (Emax-type) population PD analysis and does not state the mechanism or give Imax/IC50 values for SBP, noting only that 10 mg/day (mean exposure 638 ng·h/mL, 95% PI 354–1061) produced &lt;10% of the estimated maximum effect on SBP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

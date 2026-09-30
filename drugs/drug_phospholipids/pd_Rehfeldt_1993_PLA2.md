@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ca2+ (measured concentrations) drives PLA2 activity (in nmol/min per mg) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ca2+ stimulates PLA2 activity (nmol/min per mg) of partially purified cytosolic PLA2 from THP-1 cells, with a biphasic dependence: activation at sub-micromolar free Ca2+ and further enhancement from 10 µM to 10 mM Ca2+, with no difference between control and PMA-differentiated (72 h, 5 nM PMA) cells. The paper does not state a quantitative potency parameter (EC50/Emax) or a specific mechanism for the Ca2+ activation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehfeldt_1993`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbachol (measured concentrations) drives phosphatidylinositol breakdown (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Carbachol (µM) stimulates phosphoinositide (PI) breakdown in rat cerebral-cortex and hippocampal slices via muscarinic receptors; the paper does not describe a kinetic PD model, only concentration–effect curves with EC50 values: 23 µM in saline-treated cortex and hippocampus, increased to 93 µM (cortex) and 126 µM (hippocampus) after long-term atropine treatment (20 mg/kg s.c., 6–14 days), with maximal breakdown unaltered.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goobar_1988`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium vanadate (measured concentrations) drives glucose transport (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sodium vanadate directly stimulates 2-deoxyglucose uptake in adipocytes with an Emax-type concentration-response (8-fold increase in transport rate, EC50 0.2 mM), an effect independent of the insulin receptor since it persists in trypsin-treated (100 µg/ml) cells; the paper does not state a detailed PD mechanism beyond receptor independence.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Green_1986`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

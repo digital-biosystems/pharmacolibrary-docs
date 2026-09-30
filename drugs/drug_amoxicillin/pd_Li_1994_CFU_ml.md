@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Beta-lactam antibiotics (amoxicillin, penicillin G, cephalexin, amdinocillin) drive bacterial population (in continuous): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Amoxicillin (and other beta-lactams) concentrations act on the viable E. coli population (CFU/mL) via a saturable-receptor (Emax-type) relationship in which the antibiotic increases the first-order bactericidal killing rate constant, while the resistance formation rate constant (δ) decreases log-linearly with increasing antibiotic concentration, together describing both killing and regrowth phases; the paper does not state numeric IC50/EC50/Emax values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

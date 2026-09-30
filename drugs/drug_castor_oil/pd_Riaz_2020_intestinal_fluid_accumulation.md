@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Manilkara zapota crude extract (measured concentrations) drives name (in g): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for this endpoint: Manilkara zapota crude extract (Mz.Cr, 50–300 mg/kg i.p.) dose-dependently reduced castor oil (10 ml/kg p.o.)-induced intestinal fluid accumulation in mice (entero-pooling assay, Pi/Pm x 1000), from 122.5±0.55 to 108.30±0.47, 95.32±0.86 and 84.98±0.67 at 50, 100 and 300 mg/kg respectively; no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for this response, and the mechanism is not stated beyond a suggested anti-secretory effect possibly involving Ca2+ channel blockade and PDE inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Riaz_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

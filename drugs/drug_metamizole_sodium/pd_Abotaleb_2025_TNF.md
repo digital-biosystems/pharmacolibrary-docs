@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metamorphine drives TNF release (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Metamizole sodium (not metamorphine) concentration-dependently stimulated LPS-induced TNF release in THP-1 cells, an effect the paper attributes to metamizole's prostaglandin/PGE2-related mechanism rather than MOR activation; the paper reports no quantitative PD parameters (no IC50, EC50, Emax, kin, kout, or ke0) for the TNF response, and metamorphine and morphine showed no effect on TNF release.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abotaleb_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

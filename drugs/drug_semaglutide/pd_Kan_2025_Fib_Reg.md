@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives Fibrosis Regression (in binary): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide (dosed in mg/week, PK from the cited Carlsson source) was modelled with a linear inhibitory effect on binary Fibrosis Regression, but the paper (a meta-analysis of 22 RCTs) reports no significant improvement (RR = 1.18, 95%CI: 0.74 to 1.88) and does not state a PD mechanism or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kan_2025`
 - **model family:** `linear`
 - **driver:** `cited_pk`

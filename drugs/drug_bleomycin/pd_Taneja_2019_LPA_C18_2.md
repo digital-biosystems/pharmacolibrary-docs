@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GLPG1690 drives plasma lysophosphatidic acid C18:2 (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> GLPG1690 plasma concentrations inhibit plasma LPA C18:2 via an Imax model driven by a delayed effect-site (effect-compartment) concentration, with short-lived hysteresis precluding a turnover model; the paper reports an IC50 of 114 ng/mL and a typical maximal LPA C18:2 reduction of 81% at 200 mg QD, but does not state Imax, kin, kout, or ke0 values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taneja_2019`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 6-Anilinopurine derivatives (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 6-Anilinopurine derivatives (e.g. compound 15) were tested at a fixed 5 µM concentration against mature stage IV–V P. falciparum gametocyte survival (% survival after 72 h incubation); the mechanism is inhibition of parasite HDAC activity (PfHDAC1), with compound 15 reducing gametocyte survival to 10.5% at 5 µM and inhibiting PfHDAC1 by 98% at 10 µM and 97% at 1 µM. The paper does not state a PD model (no Imax, IC50 for gametocytes, EC50, Emax, kin, kout, ke0, or gamma for this response); asexual-stage IC50 values are given (compound 15: 0.080 µM in 3D7, 0.068 µM in Dd2).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dias_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

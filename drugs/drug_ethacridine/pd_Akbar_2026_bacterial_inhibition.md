@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethacridine lactate (EL), alone and loaded on GA-OMC carbon nanotube nanoconjugates, inhibits bacterial growth (%) in a dose-dependent manner against E. coli K1, S. enterica, S. pneumoniae and other strains; EL alone inhibited 91.96% (E. coli K1) and 83.34% (S. pneumoniae), while EL-GA-OMC achieved 100% inhibition. The paper reports IC50 values in µg/mL (e.g. EL 50% inhibition of E. coli K1) but does not state a pharmacodynamic mechanism (e.g. Emax/IC50 model parameters, kin/kout) beyond the dose-dependent inhibitory response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

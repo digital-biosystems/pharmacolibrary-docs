@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives CYP3A4 activity (in relative units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In LS180 cells, rifabutin showed no detectable, concentration-dependent stimulation of CYP3A4 activity at any exposure time (24, 72, 96 h), so no Emax parameters could be fitted, in contrast to rifampicin (EC50 42.8 ± 1.5 µM, Emax 3.5 ± 0.8-fold at 24 h). In a microsome-based inhibition assay, rifabutin directly inhibited CYP3A4 activity by about 80% with an IC50 of 10.6 ± 2.9 µM (rifampicin: 2.9 ± 0.9 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

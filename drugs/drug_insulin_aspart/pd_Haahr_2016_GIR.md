@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin degludec and insulin aspart drive glucose infusion rate (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Insulin degludec/insulin aspart (0.5 U/kg single dose) glucose-lowering action on the glucose infusion rate (GIR) in a 26-h euglycemic clamp was modeled with separate insulin-action compartments for IDeg and IAsp, each with its own turnover and insulin sensitivity parameter, whose contributions are additive on the GIR scale; the paper does not report Imax, IC50/EC50, kin, kout, ke0 or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haahr_2016`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

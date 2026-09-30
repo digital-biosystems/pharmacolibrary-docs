@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MHV370 (oral, food-laced or b.i.d. dosing) inhibited progression of proteinuria (mg/mL, dipstick score) in NZB/W F1 lupus mice, with prevention already at 0.01% MHV370 in food; the paper does not state a PD model or mechanism for proteinuria itself, but attributes the effect to TLR7 inhibition (IC50 15 ± 10 nM against CL307 and 7 ± 0.1 nM against R848 in a reporter assay; ex vivo blood CD69 IC50 35 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

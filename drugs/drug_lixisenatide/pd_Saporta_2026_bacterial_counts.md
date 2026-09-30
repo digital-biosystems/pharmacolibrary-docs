@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Meropenem (measured concentrations) drives name (in log10 CFU/lung): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Meropenem plasma concentrations (mg/L) drive bacterial killing (reduction in log10 CFU/lung) in the mouse lung infection model via an inhibitory Emax model, with Emax 0.934 and EC50 1.62 mg/L (RSE 14% and 18%); the paper does not state an Imax/kin/kout/ke0 mechanism beyond this direct Emax killing effect, and lixisenatide is not involved.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saporta_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,24 +30,24 @@ Saporta R; Tassi N; Biordi V; Ticha O; Ginosyan A; Loryan I; Nielsen EI; Bekered
   ·  DOI: [10.1128/aac.01788-25](https://doi.org/10.1128/aac.01788-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL — Estimate | `Q22` · not captured | 5.33 | not captured | not captured | exact (not captured) | T1:row1:col3 |
-| CL — RSE (%) | `Q22` · not captured | 11 | not captured | not captured | exact (not captured) | T1:row1:col4 |
-| V neu — Estimate | `Q61` · not captured | 2.19 | not captured | not captured | llm (not captured) | T1:row2:col3 |
-| V com — Estimate | `Q61` · not captured | 3.4 | not captured | not captured | llm (not captured) | T1:row4:col3 |
-| k a — Estimate | `Q95` · not captured | 71.3 | not captured | not captured | llm (not captured) | T1:row5:col3 |
-| k a — RSE (%) | `Q95` · not captured | 39 | not captured | not captured | llm (not captured) | T1:row5:col4 |
-| V L2 — Estimate | `Q64` · not captured | 9.27 | not captured | not captured | llm (not captured) | T1:row7:col3 |
-| V L2 — RSE (%) | `Q64` · not captured | 26 | not captured | not captured | llm (not captured) | T1:row7:col4 |
-| Q — Estimate | `Q30` · not captured | 0.385 | not captured | not captured | exact (not captured) | T1:row8:col3 |
-| Q — RSE (%) | `Q30` · not captured | 19 | not captured | not captured | exact (not captured) | T1:row8:col4 |
-| Q 2 — Estimate | `Q30` · not captured | 2.48 | not captured | not captured | special_case (not captured) | T1:row9:col3 |
-| Q 2 — RSE (%) | `Q30` · not captured | 13 | not captured | not captured | special_case (not captured) | T1:row9:col4 |
-| E max — Estimate | `Q320` · not captured | 0.934 | not captured | not captured | llm (not captured) | T1:row16:col3 |
-| E max — RSE (%) | `Q320` · not captured | 14 | not captured | not captured | llm (not captured) | T1:row16:col4 |
-| EC50 — Estimate | `Q321` · not captured | 1.62 | mg/L | not captured | exact (not captured) | T1:row17:col3 |
-| EC50 — RSE (%) | `Q321` · not captured | 18 | mg/L | not captured | exact (not captured) | T1:row17:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL — Estimate | `Q22` · not captured | 5.33 | not captured | not captured | exact (not captured) | T1:row1:col3 |
+| PK (driver) | CL — RSE (%) | `Q22` · not captured | 11 | not captured | not captured | exact (not captured) | T1:row1:col4 |
+| PK (driver) | V neu — Estimate | `Q61` · not captured | 2.19 | not captured | not captured | llm (not captured) | T1:row2:col3 |
+| PK (driver) | V com — Estimate | `Q61` · not captured | 3.4 | not captured | not captured | llm (not captured) | T1:row4:col3 |
+| PK (driver) | k a — Estimate | `Q95` · not captured | 71.3 | not captured | not captured | llm (not captured) | T1:row5:col3 |
+| PK (driver) | k a — RSE (%) | `Q95` · not captured | 39 | not captured | not captured | llm (not captured) | T1:row5:col4 |
+| PK (driver) | V L2 — Estimate | `Q64` · not captured | 9.27 | not captured | not captured | llm (not captured) | T1:row7:col3 |
+| PK (driver) | V L2 — RSE (%) | `Q64` · not captured | 26 | not captured | not captured | llm (not captured) | T1:row7:col4 |
+| PK (driver) | Q — Estimate | `Q30` · not captured | 0.385 | not captured | not captured | exact (not captured) | T1:row8:col3 |
+| PK (driver) | Q — RSE (%) | `Q30` · not captured | 19 | not captured | not captured | exact (not captured) | T1:row8:col4 |
+| PK (driver) | Q 2 — Estimate | `Q30` · not captured | 2.48 | not captured | not captured | special_case (not captured) | T1:row9:col3 |
+| PK (driver) | Q 2 — RSE (%) | `Q30` · not captured | 13 | not captured | not captured | special_case (not captured) | T1:row9:col4 |
+| PD (effect) | E max — Estimate | `Q320` · not captured | 0.934 | not captured | not captured | llm (not captured) | T1:row16:col3 |
+| PD (effect) | E max — RSE (%) | `Q320` · not captured | 14 | not captured | not captured | llm (not captured) | T1:row16:col4 |
+| PD (effect) | EC50 — Estimate | `Q321` · not captured | 1.62 | mg/L | not captured | exact (not captured) | T1:row17:col3 |
+| PD (effect) | EC50 — RSE (%) | `Q321` · not captured | 18 | mg/L | not captured | exact (not captured) | T1:row17:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

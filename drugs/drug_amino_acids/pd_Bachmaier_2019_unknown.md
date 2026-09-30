@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 7-cyano-7-deazainosine (measured concentrations) drives in vitro kinase activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> 7-cyano-7-deazainosine (7-CN-7-C-Ino) concentrations (µM) stimulate in vitro kinase activity of the immunopurified T. brucei PKA holoenzyme (kemptide/[32P]-ATP assay), acting by direct activation of the PKA holoenzyme rather than via cAMP. The excerpts do not state the EC50, Emax, or other model parameters for 7-CN-7-C-Ino in this assay (potency values are given only for other 7-deazaadenosine analogues, e.g. toyocamycin EC50 88 nM in the in vivo reporter assay).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bachmaier_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

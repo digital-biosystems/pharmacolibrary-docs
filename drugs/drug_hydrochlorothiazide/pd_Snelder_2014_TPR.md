@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive total peripheral resistance (in mmHg/ml/min): indirect response — drug inhibits the production of total peripheral resistance.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, hydrochlorothiazide acts by inhibiting the production of total peripheral resistance (TPR, mmHg/ml/min) in an indirect response (turnover) framework, with TPR turnover characterized by kout_TPR = 3.58 h−1 and negative MAP feedback (FB0 = 0.00290 mmHg−1). The excerpts do not report hydrochlorothiazide-specific potency values (e.g., EC50 or Imax), so these are not available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

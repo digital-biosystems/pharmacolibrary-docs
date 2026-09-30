@@ -28,16 +28,16 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_CDH1.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_CDH1_expression.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_Cell_viability.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_uPA.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021](drugs/drug_olsalazine/pd_Asl_2021_uPA_expression.md) | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025](drugs/drug_olsalazine/pd_Nesbitt_2025_CD41.md) | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025](drugs/drug_olsalazine/pd_Nesbitt_2025_CD61.md) | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025](drugs/drug_olsalazine/pd_Nesbitt_2025_Platelets.md) | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021_CDH1](drugs/drug_olsalazine/pd_Asl_2021_CDH1.md) | CDH1 expression ← olsalazine · stimulation effect | — | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021_CDH1_expression](drugs/drug_olsalazine/pd_Asl_2021_CDH1_expression.md) | name ← olsalazine · stimulation effect | — | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021_Cell_viability](drugs/drug_olsalazine/pd_Asl_2021_Cell_viability.md) | name ← olsalazine · stimulation effect | — | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021_uPA](drugs/drug_olsalazine/pd_Asl_2021_uPA.md) | uPA expression ← olsalazine · stimulation effect | — | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Asl_2021_uPA_expression](drugs/drug_olsalazine/pd_Asl_2021_uPA_expression.md) | name ← olsalazine · stimulation effect | — | Asl MM et al., Comparison of the effects of olsalazine…, Research in pharmaceutical… (2021) | [10.4103/1735-5362.314826](https://doi.org/10.4103/1735-5362.314826) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025_CD41](drugs/drug_olsalazine/pd_Nesbitt_2025_CD41.md) | CD41 abundance ← BCT1028 · direct Emax (saturable) effect | — | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025_CD61](drugs/drug_olsalazine/pd_Nesbitt_2025_CD61.md) | CD61 abundance ← BCT1028 · direct Emax (saturable) effect | — | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nesbitt_2025_Platelets](drugs/drug_olsalazine/pd_Nesbitt_2025_Platelets.md) | Platelet recovery ← BCT1028 · direct Emax (saturable) effect | — | Nesbitt NM et al., Small molecule BLVRB redox inhibitor pr…, Nature communications (2025) | [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9) |
 
 ## ADME sites
 

@@ -24,16 +24,16 @@ Donidalorsen was approved by the FDA in August 2025 for prophylactic use to prev
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Diep_2026_reference](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | 2-compartment, oral | 5 (+4 cov.) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag, k12, k21 left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Diep_2026_reference](drugs/drug_donidalorsen/Donidalorsen_Diep2026_reference.md) | held back | 2-compartment, oral | 5 (+4 cov.) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2025](drugs/drug_donidalorsen/pd_Singh_2025_HAE_attack_rate.md) | Singh P et al., Exposure-Response Analysis of Donidalor…, Clinical and translational… (2025) | [10.1111/cts.70388](https://doi.org/10.1111/cts.70388) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span> | [Singh_2025_HAE_attack_rate](drugs/drug_donidalorsen/pd_Singh_2025_HAE_attack_rate.md) | per-4-week normalized HAE attack rate ← prekallikrein · direct sigmoid Emax (Hill) effect | — | Singh P et al., Exposure-Response Analysis of Donidalor…, Clinical and translational… (2025) | [10.1111/cts.70388](https://doi.org/10.1111/cts.70388) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span> | [Diep_2026_PKK](drugs/drug_donidalorsen/pd_Diep_2026_PKK.md) | prekallikrein ← donidalorsen · indirect response — drug inhibits the production of prekallikrein | model (no simulator) | Diep JK et al., Population Pharmacokinetic/Pharmacodyna…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206) |
 
 ## ADME sites
 

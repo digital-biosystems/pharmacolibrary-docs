@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026](drugs/drug_acoramidis/pd_Fontana_2026_TTR.md) | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026_TTR](drugs/drug_acoramidis/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
 
 ## ADME sites
 
@@ -42,6 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C9` inhibitor, `UGT1A1` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` substrate, `UGT2B7` substrate | DrugBank actor |

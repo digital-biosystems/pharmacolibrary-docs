@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in g force normalized to internal diameter): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentration-response curves of angiotensin II (concentrations in M) were fitted to a logistic/Emax-type equation for venous contraction measured as g force normalized to internal diameter; the paper does not state a mechanistic PD model (no Imax, kin, kout or ke0 given). Dietary maxEPA (marine oil) increased sensitivity to angiotensin II (-log EC50 -8.36 ± 0.18 vs -7.91 ± 0.14 M in placebo, P&lt;0.05) without changing maximal responses, an effect attributed to a blood-borne vasoactive substance such as TxA2 rather than the cyclo-oxygenase pathway, since indomethacin had no effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chin_1994`
 - **model family:** `emax`
 - **driver:** `not_resolved`

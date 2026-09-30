@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** E13 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Mandelic acid derivative E13 (and analogues E1–E28) concentrations in mg/L inhibit mycelial growth of plant pathogenic fungi (e.g. G. saubinetii, V. dahliae, S. sclerotiorum) measured as percent growth inhibition in vitro; the paper reports EC50 values (e.g. E13: 20.4 mg/L against one fungus and 18.5 mg/L against another) but does not state a pharmacodynamic model or mechanism beyond speculation that E13 destroys the fungal cell membrane and wall.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,70 +30,70 @@ Chen B; Song D; Shi H; Chen K; Wu Z; Chai H et al. (2023). International journal
   ·  DOI: [10.3390/ijms24108898](https://doi.org/10.3390/ijms24108898)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (mg/L) — E1 | `Q321` · not captured | 47.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col3 |
-| EC50 (mg/L) — E2 | `Q321` · not captured | 37.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col4 |
-| EC50 (mg/L) — E6 | `Q321` · not captured | 49.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col6 |
-| EC50 (mg/L) — E7 | `Q321` · not captured | 30.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col7 |
-| EC50 (mg/L) — E8 | `Q321` · not captured | 79.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col8 |
-| EC50 (mg/L) — E9 | `Q321` · not captured | 24.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col9 |
-| EC50 (mg/L) — E10 | `Q321` · not captured | 29.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col10 |
-| EC50 (mg/L) — E13 | `Q321` · not captured | 20.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col11 |
-| EC50 (mg/L) — E14 | `Q321` · not captured | 21.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col12 |
-| EC50 (mg/L) — E17 | `Q321` · not captured | 22.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col13 |
-| EC50 (mg/L) — E18 | `Q321` · not captured | 24.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col14 |
-| EC50 (mg/L) — E19 | `Q321` · not captured | 56.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col15 |
-| EC50 (mg/L) — E20 | `Q321` · not captured | 31.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col16 |
-| EC50 (mg/L) — E21 | `Q321` · not captured | 27.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col17 |
-| EC50 (mg/L) — E22 | `Q321` · not captured | 51.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col18 |
-| EC50 (mg/L) — E23 | `Q321` · not captured | 32.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col19 |
-| EC50 (mg/L) — E24 | `Q321` · not captured | 30.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col20 |
-| EC50 (mg/L) — E25 | `Q321` · not captured | 31.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col21 |
-| EC50 (mg/L) — E26 | `Q321` · not captured | 32.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col22 |
-| EC50 (mg/L) — E27 | `Q321` · not captured | 25.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col23 |
-| EC50 (mg/L) — E28 | `Q321` · not captured | 24.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col24 |
-| EC50 (mg/L) — E1 | `Q321` · not captured | 50.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col3 |
-| EC50 (mg/L) — E2 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col4 |
-| EC50 (mg/L) — E6 | `Q321` · not captured | 12.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col6 |
-| EC50 (mg/L) — E7 | `Q321` · not captured | 14.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col7 |
-| EC50 (mg/L) — E9 | `Q321` · not captured | 29.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col9 |
-| EC50 (mg/L) — E10 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col10 |
-| EC50 (mg/L) — E13 | `Q321` · not captured | 18.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col11 |
-| EC50 (mg/L) — E14 | `Q321` · not captured | 23.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col12 |
-| EC50 (mg/L) — E17 | `Q321` · not captured | 16.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col13 |
-| EC50 (mg/L) — E18 | `Q321` · not captured | 15.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col14 |
-| EC50 (mg/L) — E19 | `Q321` · not captured | 65.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col15 |
-| EC50 (mg/L) — E20 | `Q321` · not captured | 29.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col16 |
-| EC50 (mg/L) — E21 | `Q321` · not captured | 13.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col17 |
-| EC50 (mg/L) — E22 | `Q321` · not captured | 61.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col18 |
-| EC50 (mg/L) — E23 | `Q321` · not captured | 32.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col19 |
-| EC50 (mg/L) — E24 | `Q321` · not captured | 38.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col20 |
-| EC50 (mg/L) — E25 | `Q321` · not captured | 33.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col21 |
-| EC50 (mg/L) — E26 | `Q321` · not captured | 30.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col22 |
-| EC50 (mg/L) — E27 | `Q321` · not captured | 43.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col23 |
-| EC50 (mg/L) — E28 | `Q321` · not captured | 26.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col24 |
-| EC50 (mg/L) — E1 | `Q321` · not captured | 23.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col3 |
-| EC50 (mg/L) — E2 | `Q321` · not captured | 27.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col4 |
-| EC50 (mg/L) — E6 | `Q321` · not captured | 90.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col6 |
-| EC50 (mg/L) — E7 | `Q321` · not captured | 40.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col7 |
-| EC50 (mg/L) — E8 | `Q321` · not captured | 13.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col8 |
-| EC50 (mg/L) — E9 | `Q321` · not captured | 10.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col9 |
-| EC50 (mg/L) — E10 | `Q321` · not captured | 21.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col10 |
-| EC50 (mg/L) — E13 | `Q321` · not captured | 33.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col11 |
-| EC50 (mg/L) — E14 | `Q321` · not captured | 37.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col12 |
-| EC50 (mg/L) — E17 | `Q321` · not captured | 27.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col13 |
-| EC50 (mg/L) — E18 | `Q321` · not captured | 8.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col14 |
-| EC50 (mg/L) — E19 | `Q321` · not captured | 47.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col15 |
-| EC50 (mg/L) — E20 | `Q321` · not captured | 39.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col16 |
-| EC50 (mg/L) — E21 | `Q321` · not captured | 36.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col17 |
-| EC50 (mg/L) — E22 | `Q321` · not captured | 48.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col18 |
-| EC50 (mg/L) — E23 | `Q321` · not captured | 81.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col19 |
-| EC50 (mg/L) — E24 | `Q321` · not captured | 51.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col20 |
-| EC50 (mg/L) — E25 | `Q321` · not captured | 75.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col21 |
-| EC50 (mg/L) — E26 | `Q321` · not captured | 54.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col22 |
-| EC50 (mg/L) — E27 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col23 |
-| EC50 (mg/L) — E28 | `Q321` · not captured | 47.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col24 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (mg/L) — E1 | `Q321` · not captured | 47.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col3 |
+| PD (effect) | EC50 (mg/L) — E2 | `Q321` · not captured | 37.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col4 |
+| PD (effect) | EC50 (mg/L) — E6 | `Q321` · not captured | 49.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col6 |
+| PD (effect) | EC50 (mg/L) — E7 | `Q321` · not captured | 30.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col7 |
+| PD (effect) | EC50 (mg/L) — E8 | `Q321` · not captured | 79.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col8 |
+| PD (effect) | EC50 (mg/L) — E9 | `Q321` · not captured | 24.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col9 |
+| PD (effect) | EC50 (mg/L) — E10 | `Q321` · not captured | 29.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col10 |
+| PD (effect) | EC50 (mg/L) — E13 | `Q321` · not captured | 20.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col11 |
+| PD (effect) | EC50 (mg/L) — E14 | `Q321` · not captured | 21.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col12 |
+| PD (effect) | EC50 (mg/L) — E17 | `Q321` · not captured | 22.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col13 |
+| PD (effect) | EC50 (mg/L) — E18 | `Q321` · not captured | 24.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col14 |
+| PD (effect) | EC50 (mg/L) — E19 | `Q321` · not captured | 56.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col15 |
+| PD (effect) | EC50 (mg/L) — E20 | `Q321` · not captured | 31.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col16 |
+| PD (effect) | EC50 (mg/L) — E21 | `Q321` · not captured | 27.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col17 |
+| PD (effect) | EC50 (mg/L) — E22 | `Q321` · not captured | 51.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col18 |
+| PD (effect) | EC50 (mg/L) — E23 | `Q321` · not captured | 32.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col19 |
+| PD (effect) | EC50 (mg/L) — E24 | `Q321` · not captured | 30.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col20 |
+| PD (effect) | EC50 (mg/L) — E25 | `Q321` · not captured | 31.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col21 |
+| PD (effect) | EC50 (mg/L) — E26 | `Q321` · not captured | 32.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col22 |
+| PD (effect) | EC50 (mg/L) — E27 | `Q321` · not captured | 25.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col23 |
+| PD (effect) | EC50 (mg/L) — E28 | `Q321` · not captured | 24.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row0:col24 |
+| PD (effect) | EC50 (mg/L) — E1 | `Q321` · not captured | 50.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col3 |
+| PD (effect) | EC50 (mg/L) — E2 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col4 |
+| PD (effect) | EC50 (mg/L) — E6 | `Q321` · not captured | 12.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col6 |
+| PD (effect) | EC50 (mg/L) — E7 | `Q321` · not captured | 14.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col7 |
+| PD (effect) | EC50 (mg/L) — E9 | `Q321` · not captured | 29.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col9 |
+| PD (effect) | EC50 (mg/L) — E10 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col10 |
+| PD (effect) | EC50 (mg/L) — E13 | `Q321` · not captured | 18.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col11 |
+| PD (effect) | EC50 (mg/L) — E14 | `Q321` · not captured | 23.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col12 |
+| PD (effect) | EC50 (mg/L) — E17 | `Q321` · not captured | 16.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col13 |
+| PD (effect) | EC50 (mg/L) — E18 | `Q321` · not captured | 15.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col14 |
+| PD (effect) | EC50 (mg/L) — E19 | `Q321` · not captured | 65.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col15 |
+| PD (effect) | EC50 (mg/L) — E20 | `Q321` · not captured | 29.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col16 |
+| PD (effect) | EC50 (mg/L) — E21 | `Q321` · not captured | 13.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col17 |
+| PD (effect) | EC50 (mg/L) — E22 | `Q321` · not captured | 61.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col18 |
+| PD (effect) | EC50 (mg/L) — E23 | `Q321` · not captured | 32.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col19 |
+| PD (effect) | EC50 (mg/L) — E24 | `Q321` · not captured | 38.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col20 |
+| PD (effect) | EC50 (mg/L) — E25 | `Q321` · not captured | 33.7 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col21 |
+| PD (effect) | EC50 (mg/L) — E26 | `Q321` · not captured | 30.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col22 |
+| PD (effect) | EC50 (mg/L) — E27 | `Q321` · not captured | 43.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col23 |
+| PD (effect) | EC50 (mg/L) — E28 | `Q321` · not captured | 26.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row1:col24 |
+| PD (effect) | EC50 (mg/L) — E1 | `Q321` · not captured | 23.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col3 |
+| PD (effect) | EC50 (mg/L) — E2 | `Q321` · not captured | 27.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col4 |
+| PD (effect) | EC50 (mg/L) — E6 | `Q321` · not captured | 90.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col6 |
+| PD (effect) | EC50 (mg/L) — E7 | `Q321` · not captured | 40.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col7 |
+| PD (effect) | EC50 (mg/L) — E8 | `Q321` · not captured | 13.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col8 |
+| PD (effect) | EC50 (mg/L) — E9 | `Q321` · not captured | 10.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col9 |
+| PD (effect) | EC50 (mg/L) — E10 | `Q321` · not captured | 21.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col10 |
+| PD (effect) | EC50 (mg/L) — E13 | `Q321` · not captured | 33.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col11 |
+| PD (effect) | EC50 (mg/L) — E14 | `Q321` · not captured | 37.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col12 |
+| PD (effect) | EC50 (mg/L) — E17 | `Q321` · not captured | 27.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col13 |
+| PD (effect) | EC50 (mg/L) — E18 | `Q321` · not captured | 8.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col14 |
+| PD (effect) | EC50 (mg/L) — E19 | `Q321` · not captured | 47.8 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col15 |
+| PD (effect) | EC50 (mg/L) — E20 | `Q321` · not captured | 39.1 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col16 |
+| PD (effect) | EC50 (mg/L) — E21 | `Q321` · not captured | 36.3 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col17 |
+| PD (effect) | EC50 (mg/L) — E22 | `Q321` · not captured | 48.5 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col18 |
+| PD (effect) | EC50 (mg/L) — E23 | `Q321` · not captured | 81.4 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col19 |
+| PD (effect) | EC50 (mg/L) — E24 | `Q321` · not captured | 51.6 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col20 |
+| PD (effect) | EC50 (mg/L) — E25 | `Q321` · not captured | 75.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col21 |
+| PD (effect) | EC50 (mg/L) — E26 | `Q321` · not captured | 54.0 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col22 |
+| PD (effect) | EC50 (mg/L) — E27 | `Q321` · not captured | 37.2 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col23 |
+| PD (effect) | EC50 (mg/L) — E28 | `Q321` · not captured | 47.9 | mg/L | not captured | exact (not captured) | ijms-24-08898-t002:row2:col24 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

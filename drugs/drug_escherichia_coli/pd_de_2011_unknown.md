@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Piperacillin drives bacterial killing effect (in h À1): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Piperacillin free concentrations at the infection site (microdialysis, mg ml−1) drive bacterial killing of E. coli in immunocompromised rats via a modified Emax model (dN/dt = k − kmax·C/(EC50+C) · N), in which the drug adds a killing rate to the bacterial growth: in vivo k = 0.76 ± 0.20 h−1, kmax = 1.38 ± 0.20 h−1, EC50 = 1.31 ± 0.27 µg ml−1 (in vitro values: k = 1.30 ± 0.10 h−1, kmax = 3.11 ± 0.27 h−1, EC50 = 5.44 ± 0.03 µg ml−1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2011`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,15 +31,15 @@ de Araujo BV; Diniz A; Palma EC; Buffé C; Dalla Costa T et al. (2011). The Jour
   ·  DOI: [10.1038/ja.2011.29](https://doi.org/10.1038/ja.2011.29)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 (mg ml À1 ) — q4h | `Q321` · not captured | 5.41 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
-| EC 50 (mg ml À1 ) — q6h | `Q321` · not captured | 5.46 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
-| EC 50 (mg ml À1 ) — q8h | `Q321` · not captured | 5.47 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col3 |
-| EC 50 (mg ml À1 ) — Average ± s.d. | `Q321` · not captured | 5.4 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col4 |
-| k max (h À1 ) — q6h | `Q32` · not captured | 2.8 | h À1 | not captured | llm (not captured) | tab_1:row2:col2 |
-| k max (h À1 ) — q8h | `Q32` · not captured | 3.2 | h À1 | not captured | llm (not captured) | tab_1:row2:col3 |
-| k max (h À1 ) — Average ± s.d. | `Q320` · not captured | 3.1 | h À1 | not captured | llm (not captured) | tab_1:row2:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 (mg ml À1 ) — q4h | `Q321` · not captured | 5.41 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
+| PD (effect) | EC 50 (mg ml À1 ) — q6h | `Q321` · not captured | 5.46 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
+| PD (effect) | EC 50 (mg ml À1 ) — q8h | `Q321` · not captured | 5.47 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col3 |
+| PD (effect) | EC 50 (mg ml À1 ) — Average ± s.d. | `Q321` · not captured | 5.4 | mg ml À1 | not captured | space_fold (not captured) | tab_1:row1:col4 |
+| PK (driver) | k max (h À1 ) — q6h | `Q32` · not captured | 2.8 | h À1 | not captured | llm (not captured) | tab_1:row2:col2 |
+| PK (driver) | k max (h À1 ) — q8h | `Q32` · not captured | 3.2 | h À1 | not captured | llm (not captured) | tab_1:row2:col3 |
+| PD (effect) | k max (h À1 ) — Average ± s.d. | `Q320` · not captured | 3.1 | h À1 | not captured | llm (not captured) | tab_1:row2:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

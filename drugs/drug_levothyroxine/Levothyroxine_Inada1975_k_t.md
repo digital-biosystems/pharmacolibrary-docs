@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **Kel and k12 have no unit.**
@@ -43,7 +45,7 @@ Inada M; Kasagi K; Kurata S; Kazama Y; Takayama H; Torizuka K; et al. et al. (19
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | V* (liter) | `Q61` · V | 38.2 | liter | 0.038200000000000005 | [l] | not captured | llm (0.6) | Inada_1975_table_2:row2:col10, Inada_1975_table_2:row5:col10 | — | not captured |
-| K (per day) | `Q47` · kel | 0.324 | per day | not captured | [perday] | not captured | exact (1.0) | Inada_1975_table_2:row3:col10 | — | not captured |
+| K (per day) | `Q47` · kel | 0.324 | per day | 3.75e-06 | 1/h | not captured | exact (1.0) | Inada_1975_table_2:row3:col10 | — | not captured |
 | V3* (liter) | `Q77` · V3 | 19.7 | liter | 0.0197 | [l] | not captured | llm_confirmed (0.6) | Inada_1975_table_2:row6:col10 | — | not captured |
 | K₁₂ | `Q301` · k12 | 0.0316 | not captured | not captured | not captured | not captured | exact (1.0) | Inada_1975_table_4:row3:col10 | — | not captured |
 
@@ -73,6 +75,7 @@ Inada M; Kasagi K; Kurata S; Kazama Y; Takayama H; Torizuka K; et al. et al. (19
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- unit re-normalised: kel 'per day' now converts (value unchanged)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery

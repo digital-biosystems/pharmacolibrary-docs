@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin degludec and insulin aspart drive name (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> In subjects with T1DM, plasma concentrations of insulin degludec (IDeg) and insulin aspart (IAsp) each stimulate glucose infusion rate (GIR) via separate PK/PD components: each drug's distribution-compartment concentration drives an insulin-action (effect) compartment linked to GIR through a turnover parameter and an insulin-sensitivity parameter, producing a distinct IAsp peak plus a flat basal IDeg effect (median tGIRmax,SS 2.5 h; AUCGIR,τ,SS 3,859 mg/kg). The excerpts do not report numeric potency values (Emax, EC50, kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heise_2014`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

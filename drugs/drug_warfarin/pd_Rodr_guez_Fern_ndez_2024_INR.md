@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Warfarin (concentrations from the PK model of Gomeni_2026::deep_learning) drives INR (in unknown): indirect response — drug inhibits the loss of INR.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Warfarin plasma concentrations (mg/L) drive INR via an indirect response model: an inhibitory sigmoid-Emax effect (Imax fixed to 100%) on the zero-order synthesis rate of two transit-compartment chains (three compartments each; MTT1 = 1.13 d, MTT2 = 4.62 d) representing clotting factor formation/degradation, with gamma = 1.47 and estimated IC50 = 15.4 mg/L (base model); VKORC1 haplotype IC50 values were 11.76 (G/G), 10.49 (G/A), and 9.22 (A/A) mg/L, with INRbase 1.84, 1.78, and 2.18, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rodríguez-Fernández_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `cited_pk`
@@ -21,21 +31,21 @@ Rodríguez-Fernández K; Reynaldo-Fernández G; Reyes-González S; de Las Barrer
   ·  DOI: [10.1016/j.biopha.2023.115977](https://doi.org/10.1016/j.biopha.2023.115977)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MTT1 (d) — Population PK Model Estimates | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col1 |
-| MTT1 (d) — Bootstrap Results | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col3 |
-| MTT2 (d) — Population PK Model Estimates | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col1 |
-| MTT2 (d) — Bootstrap Results | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col3 |
-| γ — Population PK Model Estimates | `Q89` · not captured | 1.47 | not captured | not captured | llm (not captured) | T2:row12:col1 |
-| Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 23 | not captured | not captured | exact (not captured) | T2:row14:col1 |
-| Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 13 | not captured | not captured | exact (not captured) | T2:row14:col2 |
-| Baseline (%) — Bootstrap Results | `Q324` · not captured | 24 | not captured | not captured | exact (not captured) | T2:row14:col3 |
-| Baseline (%) — Bootstrap Results | `Q324` · not captured | 19 | not captured | not captured | exact (not captured) | T2:row14:col4 |
-| IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col1 |
-| IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 44 | mg/L | not captured | exact (not captured) | T2:row15:col2 |
-| IC50 (%) — Bootstrap Results | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col3 |
-| IC50 (%) — Bootstrap Results | `Q322` · not captured | 28 | mg/L | not captured | exact (not captured) | T2:row15:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MTT1 (d) — Population PK Model Estimates | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col1 |
+| PK (driver) | MTT1 (d) — Bootstrap Results | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col3 |
+| PK (driver) | MTT2 (d) — Population PK Model Estimates | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col1 |
+| PK (driver) | MTT2 (d) — Bootstrap Results | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col3 |
+| PK (driver) | γ — Population PK Model Estimates | `Q89` · not captured | 1.47 | not captured | not captured | llm (not captured) | T2:row12:col1 |
+| PD (effect) | Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 23 | not captured | not captured | exact (not captured) | T2:row14:col1 |
+| PD (effect) | Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 13 | not captured | not captured | exact (not captured) | T2:row14:col2 |
+| PD (effect) | Baseline (%) — Bootstrap Results | `Q324` · not captured | 24 | not captured | not captured | exact (not captured) | T2:row14:col3 |
+| PD (effect) | Baseline (%) — Bootstrap Results | `Q324` · not captured | 19 | not captured | not captured | exact (not captured) | T2:row14:col4 |
+| PD (effect) | IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col1 |
+| PD (effect) | IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 44 | mg/L | not captured | exact (not captured) | T2:row15:col2 |
+| PD (effect) | IC50 (%) — Bootstrap Results | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col3 |
+| PD (effect) | IC50 (%) — Bootstrap Results | `Q322` · not captured | 28 | mg/L | not captured | exact (not captured) | T2:row15:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

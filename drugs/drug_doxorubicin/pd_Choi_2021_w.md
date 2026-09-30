@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin, sorafenib (the dose) drive tumor volume (in cm3): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (with sorafenib) doses act on tumor volume (cm3) in mice via a disease-progression (transit-compartment) model, where tumor-growth inhibition is delayed relative to plasma concentrations and captured by a three-compartment transit structure; the paper does not state an Imax/IC50/EC50/Emax/kin/kout/ke0 mechanism in the excerpts, only a transit rate constant for combination therapy (k9_1) with drug contribution factors a (Dox) and b (Sor), and calculated CI-related rate parameters of 0.531, 0.680, and 0.694 1/day (Models C1, C2, and D).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Choi_2021`
 - **model family:** `disease_progression`
 - **driver:** `dose_only`
@@ -21,11 +31,11 @@ Choi YH; Zhang C; Liu Z; Tu MJ; Yu AX; Yu AM et al. (2021). The Journal of pharm
   ·  DOI: [10.1124/jpet.121.000584](https://doi.org/10.1124/jpet.121.000584)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Calculated parameter CI [-] c — Model C1 | `Q358` · not captured | 0.531 | 1/day | not captured | llm (not captured) | tab_0:row9:col1 |
-| Calculated parameter CI [-] c — Model C2 | `Q358` · not captured | 0.680 | 1/day | not captured | llm (not captured) | tab_0:row9:col2 |
-| Calculated parameter CI [-] c — Model D | `Q358` · not captured | 0.694 | 1/day | not captured | llm (not captured) | tab_0:row9:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Calculated parameter CI [-] c — Model C1 | `Q358` · not captured | 0.531 | 1/day | not captured | llm (not captured) | tab_0:row9:col1 |
+| PK (driver) | Calculated parameter CI [-] c — Model C2 | `Q358` · not captured | 0.680 | 1/day | not captured | llm (not captured) | tab_0:row9:col2 |
+| PK (driver) | Calculated parameter CI [-] c — Model D | `Q358` · not captured | 0.694 | 1/day | not captured | llm (not captured) | tab_0:row9:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

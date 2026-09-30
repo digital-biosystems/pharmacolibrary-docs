@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naloxegol (concentrations from the PK model of Al-Huniti_2016) drives weekly probability of response (in probability): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Naloxegol daily dose (mg) acts on the weekly probability of SBM response (≥3 SBMs/week and ≥1 SBM/week increase over baseline) via a longitudinal mixed-effects logistic regression dose-response model, in which the logit of the response probability is E0 + α×Dose + η, with α the odds ratio of response per mg; the paper does not state a mechanism beyond this direct dose effect and gives no Imax/IC50/EC50/Emax/kin/kout/ke0 values. Predicted median response rates were 40%, 50%, and 60% for 12.5, 25, and 37.5 mg doses, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Huniti_2017`
 - **model family:** `linear`
 - **driver:** `cited_pk`

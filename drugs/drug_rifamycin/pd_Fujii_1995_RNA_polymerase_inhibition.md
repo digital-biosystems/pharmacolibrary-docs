@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KRM-1648 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> KRM-1648 (a rifamycin derivative) inhibits bacterial RNA polymerase directly: IC50 values are 0.13 g/ml for E. coli RNA polymerase and 0.20 g/ml for M. avium RNA polymerase (versus rifampin at 0.10 and 0.07 g/ml, respectively), with only weak partial inhibition of M. fortuitum RNA polymerase (29% at 1–10 g/ml). Consistently, KRM inhibited RNA synthesis ([14C]uracil uptake into RNA) in M. avium dose-dependently with an IC50 of 0.04 g/ml, maximal at 0.1 g/ml; no PD model parameters (Imax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fujii_1995`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

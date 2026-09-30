@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DHA + EPA drives low-density lipoprotein cholesterol (in mg/dL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper relates daily DHA + EPA intake (g/d) to changes in LDL-C (mg/dL) via a 1-stage random-effects restricted cubic spline dose-response meta-analysis (3 knots at 10th, 50th, 90th percentiles; 0 g/d as reference), finding a nonlinear J-shaped dose-response curve for LDL-C and concluding LDL-C was not meaningfully targeted by EPA/DHA; no pharmacodynamic mechanism, Emax/IC50 parameters, or rate constants are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

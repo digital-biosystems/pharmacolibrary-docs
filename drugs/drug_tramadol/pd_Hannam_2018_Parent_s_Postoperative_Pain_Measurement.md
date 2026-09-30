@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen, ibuprofen, tramadol (concentrations from this paper's PK model) drive name (in pain units): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Effect-site concentrations of acetaminophen, ibuprofen and tramadol (mg/L) jointly reduce the Parent's Postoperative Pain Measurement score via a Greco additive fractional Emax model (β fixed at 0), with Emax 0.648, Hill 1.48, and C50 values of 7.06 mg/L (acetaminophen), 3.95 mg/L (ibuprofen) and 0.0703 mg/L (tramadol); equilibration half-times were 0.34 h, 1.04 h and 1.77 h respectively, and pain resolution was captured by a separate disease-progression Emax model (Emax,DIS 0.983, T50,DIS 46 h, Hill 5.9).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hannam_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,11 +31,11 @@ Hannam JA; Anderson BJ; Potts A et al. (2018). Paediatric anaesthesia 28
   ·  DOI: [10.1111/pan.13464](https://doi.org/10.1111/pan.13464)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E MAX | `Q320` · not captured | 0.648 | not captured | not captured | review_gapfill (not captured) | Hannam_2018:review |
-| C 50,ACET (mg/L) | `Q321` · not captured | 7.06 | mg/L | not captured | review_gapfill (not captured) | Hannam_2018:review |
-| HILL EFFECT | `Q325` · not captured | 1.48 | not captured | not captured | review_gapfill (not captured) | Hannam_2018:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E MAX | `Q320` · not captured | 0.648 | not captured | not captured | review_gapfill (not captured) | Hannam_2018:review |
+| PD (effect) | C 50,ACET (mg/L) | `Q321` · not captured | 7.06 | mg/L | not captured | review_gapfill (not captured) | Hannam_2018:review |
+| PD (effect) | HILL EFFECT | `Q325` · not captured | 1.48 | not captured | not captured | review_gapfill (not captured) | Hannam_2018:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

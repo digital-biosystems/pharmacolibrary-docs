@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lead (measured concentrations) drives name (in μg/dL): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Breast milk lead (μg/L) acts linearly on infant blood lead (μg/dL) at 3 months of age, increasing it by 1.8 μg/dL (95% CI: 1.1, 2.6) per μg/L breast milk lead; the paper describes this as a linear dose–response association and gives no pharmacodynamic mechanism (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettinger_2014`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

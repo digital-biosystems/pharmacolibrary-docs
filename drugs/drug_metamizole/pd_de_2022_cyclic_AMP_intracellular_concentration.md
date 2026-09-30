@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LASSBio-2265 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> LASSBio-2265 (metamizole-derived pyrazolamide 11) concentration-dependently increases intracellular cAMP in CHO-K1 CNR2 Gi cells (forskolin-stimulated), acting as a partial inverse agonist at human CB2 receptors, with EC50 0.369 ± 0.03 µM and efficacy 63% of maximum effect; the paper does not state an Emax model form beyond this.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

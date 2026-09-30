@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nicorandil (concentrations from the PK model of Iida_2008::obj) drives name (in mV): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nicorandil (1–1000 µM) concentration-dependently hyperpolarized rat small mesenteric artery membrane potential from -53 to -75 mV (repolarization of about 35 mV in U46619-depolarized vessels), an effect the paper attributes to KATP-channel opening and guanylate cyclase stimulation plus a third, nifedipine-sensitive mechanism, though glibenclamide (3 µM) did not alter the nicorandil membrane-potential curve; the paper does not report a sigmoid-Emax fit with numeric EC50, Emax, or slope values for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fujiwara_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

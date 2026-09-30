@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bemarituzumab drives ADCC activity (in % maximal lysis) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bemarituzumab concentrations drive ADCC activity, measured as percentage of specific lysis in a CytoTox 96 assay, with enhanced concentration-dependent tumor cell killing on FGFR2b-overexpressing cells (but none on FGFR2c-expressing Ba/F3) attributed to the afucosylated Fc domain's enhanced affinity for FcγRIIIa; the paper describes this only qualitatively and provides no PD model structure or parameter values (no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiang_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

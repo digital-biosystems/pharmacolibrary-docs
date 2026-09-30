@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **The rosiglitazone model in Gao_2012 was quarantined because clearance, absorption rate constant and absorption lag time were not reported, so library defaults stood in for these parameters.**
@@ -40,7 +42,7 @@ Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental ther
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| k a | `Q49` · kabs | 2.01 | h Ϫ1 | not captured | h Ϫ1 | not captured | space_fold (0.95) | Gao_2012:other_prose | — | not captured |
+| k a | `Q49` · kabs | 2.01 | h Ϫ1 | 0.0005583333333333333 | 1/h | not captured | space_fold (0.95) | Gao_2012:other_prose | — | not captured |
 | V/F | `Q76` · V/F | 342 | ml/kg | 0.023939999999999996 | L | not captured | exact (1.0) | Gao_2012:other_prose | — | not captured |
 
 <details class="legend">
@@ -68,6 +70,7 @@ Gao W; Jusko WJ et al. (2012). The Journal of pharmacology and experimental ther
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: 'estimate (cv%)' subgroup of Gao_2012 (paper reports 2 populations: definition, estimate (cv%))
+- unit re-normalised: kabs 'h Ϫ1' now converts (value unchanged)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery

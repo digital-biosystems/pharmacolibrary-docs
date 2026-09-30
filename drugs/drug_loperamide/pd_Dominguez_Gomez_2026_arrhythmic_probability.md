@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Loperamide (concentrations from the PK model of Valenzuela_2025::loperamide) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Loperamide concentrations (nM) are linked to arrhythmic probability (%) via mechanistic 3D cardiac digital-twin simulations in which loperamide blocks multiple ion channels (IKr/hERG, ICaL, INa, IKs) described by IC50 and Hill coefficient values from patch-clamp experiments (tested in saline buffer and, for hERG, 100% human plasma); the paper does not state a sigmoid-Emax PD mechanism or give numeric IC50, Emax, or rate values in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dominguez-Gomez_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

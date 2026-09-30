@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 drives name (in pg/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model or mechanism for the IL-1beta (pg/ml) response attributed to MHV370; the excerpts only give in vitro TLR7/8 inhibition potencies (e.g., IC50 15 ± 10 nM and 7 ± 0.1 nM for reporter activity, 3.8 ± 0.8 nM and 5.2 ± 1.5 nM for neutrophil ROS), with no IL-1beta data, no Imax/EC50/Emax/kin/kout/ke0/gamma values, and no stated mechanism linking drug concentrations to IL-1beta.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

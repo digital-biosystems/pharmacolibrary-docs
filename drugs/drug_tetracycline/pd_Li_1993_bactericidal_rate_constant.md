@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tetracycline (0–16 µg/ml) acts directly on the initial bactericidal rate constant K' of E. coli via a saturable Emax-type concentration-response relationship (sigmoid Emax fit, Hill coefficient not statistically different from 1), with K'max = 3.40 h⁻¹ and EC50 = 0.96 µg/ml; the paper does not describe a production/elimination (kin/kout) mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_1993`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,19 +31,19 @@ Li RC; Schentag JJ; Nix DE et al. (1993). Antimicrobial agents and chemotherapy 
   ·  DOI: [10.1128/AAC.37.3.523](https://doi.org/10.1128/AAC.37.3.523)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Amoxicillin (0-16) Lg/rml) — K'max (h-1) | `Q49` · not captured | 5.03 | h-1 | not captured | llm (not captured) | tab_0:row1:col2 |
-| Amoxicillin (0-16) Lg/rml) — EC50 (~Lg/m1) | `Q321` · not captured | 4.74 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row1:col3 |
-| Ciprofloxacin (0-0.15) — K'max (h-1) | `Q1` · not captured | 11.00 | h-1 | not captured | llm (not captured) | tab_0:row2:col2 |
-| Ciprofloxacin (0-0.15) — EC50 (~Lg/m1) | `Q321` · not captured | 0.03 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row2:col3 |
-| Tetracycline (0-16) — K'max (h-1) | `Q49` · not captured | 3.40 | h-1 | not captured | llm (not captured) | tab_0:row3:col2 |
-| Tetracycline (0-16) — EC50 (~Lg/m1) | `Q321` · not captured | 0.96 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row3:col3 |
-| Tobramycin (0-4) — K'max (h-1) | `Q49` · not captured | 12.81 | h-1 | not captured | llm (not captured) | tab_0:row5:col2 |
-| Tobramycin (0-4) — EC50 (~Lg/m1) | `Q321` · not captured | 2.53 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row5:col3 |
-| Ticarcillin (0-64) — K'max (h-1) | `Q66` · not captured | 1.00 | h-1 | not captured | llm (not captured) | tab_0:row6:col2 |
-| Ticarcillin (0-64) — EC50 (~Lg/m1) | `Q321` · not captured | 10.36 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row6:col3 |
-| Ticarcillin (0-64) — Cmec (Lg/m1) | `Q358` · not captured | 0.69 | Lg/m1 | not captured | llm (not captured) | tab_0:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Amoxicillin (0-16) Lg/rml) — K'max (h-1) | `Q49` · not captured | 5.03 | h-1 | not captured | llm (not captured) | tab_0:row1:col2 |
+| PD (effect) | Amoxicillin (0-16) Lg/rml) — EC50 (~Lg/m1) | `Q321` · not captured | 4.74 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row1:col3 |
+| PK (driver) | Ciprofloxacin (0-0.15) — K'max (h-1) | `Q1` · not captured | 11.00 | h-1 | not captured | llm (not captured) | tab_0:row2:col2 |
+| PD (effect) | Ciprofloxacin (0-0.15) — EC50 (~Lg/m1) | `Q321` · not captured | 0.03 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row2:col3 |
+| PK (driver) | Tetracycline (0-16) — K'max (h-1) | `Q49` · not captured | 3.40 | h-1 | not captured | llm (not captured) | tab_0:row3:col2 |
+| PD (effect) | Tetracycline (0-16) — EC50 (~Lg/m1) | `Q321` · not captured | 0.96 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row3:col3 |
+| PK (driver) | Tobramycin (0-4) — K'max (h-1) | `Q49` · not captured | 12.81 | h-1 | not captured | llm (not captured) | tab_0:row5:col2 |
+| PD (effect) | Tobramycin (0-4) — EC50 (~Lg/m1) | `Q321` · not captured | 2.53 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row5:col3 |
+| PK (driver) | Ticarcillin (0-64) — K'max (h-1) | `Q66` · not captured | 1.00 | h-1 | not captured | llm (not captured) | tab_0:row6:col2 |
+| PD (effect) | Ticarcillin (0-64) — EC50 (~Lg/m1) | `Q321` · not captured | 10.36 | ~Lg/m1 | not captured | llm (not captured) | tab_0:row6:col3 |
+| PK (driver) | Ticarcillin (0-64) — Cmec (Lg/m1) | `Q358` · not captured | 0.69 | Lg/m1 | not captured | llm (not captured) | tab_0:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

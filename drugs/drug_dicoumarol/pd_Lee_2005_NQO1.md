@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Flavonoids drives NQO1 activity (in fluorescence change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In CHO-hNQO1 cells, dicoumarol inhibits the NQO1-mediated resorufin reductase response (measured as resorufin fluorescence change): 50% inhibition required 1.6 µM dicoumarol in intact (living) cells, whereas the in vitro inhibition constant is 0.5 nM; the paper does not state a PD model structure (no Imax/EC50/kin/kout/ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

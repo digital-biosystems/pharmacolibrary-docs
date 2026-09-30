@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remimazolam (measured concentrations) drives University of Michigan Sedation Scale (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Remimazolam effect-site concentrations (with fentanyl concentrations predicted via the Ginsberg model) drive the categorical UMSS response through a proportional odds logistic regression model, with a simplified Minto additive interaction model between remimazolam and fentanyl; EC50 for UMSS 1 was 206 ng/ml (151–281) in one group and 68.2 ng/ml (55.9–120.1) in another, with ΔEC50 for UMSS 2 vs. 1 of 224 ng/ml (162–309) and UMSS 3 vs. 2 of 347 ng/ml (249–488), while fentanyl EC50 for UMSS 1 was 0.560 ng/ml (0.49–0.73) with ΔEC50 2 vs. 1 of 1.60 ng/ml (1.09–2.60) and 3 vs. 2 of 4.14 ng/ml (2.59–41.7).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Colin_2025`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,30 +31,30 @@ Colin PJ; Bichajian LH; Curt VR; Koomen JV; Stöhr T; Struys MMRF; Mason KP et a
   ·  DOI: [10.1097/aln.0000000000005560](https://doi.org/10.1097/aln.0000000000005560)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 -remimazolam -uMss 1, ng/ml | `Q321` · not captured | 206 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col2 |
-| EC50 -remimazolam -uMss 1, ng/ml — LcB | `Q321` · not captured | 151 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col3 |
-| EC50 -remimazolam -uMss 1, ng/ml — UcB | `Q321` · not captured | 281 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col4 |
-| EC50 -remimazolam -uMss 1, ng/ml | `Q321` · not captured | 68.2 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col5 |
-| EC50 -remimazolam -uMss 1, ng/ml — LcB | `Q321` · not captured | 55.9 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col6 |
-| EC50 -remimazolam -uMss 1, ng/ml — UcB | `Q321` · not captured | 120.1 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col7 |
-| EC50 -remimazolam -uMss 1, ng/ml — Shrinkage | `Q321` · not captured | 32 | ng/ml | not captured | boundary_llm_dim_refused (not captured) | tab_4:row4:col8 |
-| ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml | `Q321` · not captured | 224 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col2 |
-| ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml — LcB | `Q321` · not captured | 162 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col3 |
-| ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml — UcB | `Q321` · not captured | 309 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col4 |
-| ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml | `Q321` · not captured | 347 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col2 |
-| ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml — LcB | `Q321` · not captured | 249 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col3 |
-| ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml — UcB | `Q321` · not captured | 488 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col4 |
-| EC50 -fentanyl -uMss 1, ng/ml | `Q321` · not captured | 0.560 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col2 |
-| EC50 -fentanyl -uMss 1, ng/ml — LcB | `Q321` · not captured | 0.49 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col3 |
-| EC50 -fentanyl -uMss 1, ng/ml — UcB | `Q321` · not captured | 0.73 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col4 |
-| ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml | `Q321` · not captured | 1.60 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col2 |
-| ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml — LcB | `Q321` · not captured | 1.09 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col3 |
-| ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml — UcB | `Q321` · not captured | 2.60 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col4 |
-| ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml | `Q321` · not captured | 4.14 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col2 |
-| ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml — LcB | `Q321` · not captured | 2.59 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col3 |
-| ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml — UcB | `Q321` · not captured | 41.7 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml | `Q321` · not captured | 206 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col2 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml — LcB | `Q321` · not captured | 151 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col3 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml — UcB | `Q321` · not captured | 281 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col4 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml | `Q321` · not captured | 68.2 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col5 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml — LcB | `Q321` · not captured | 55.9 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col6 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml — UcB | `Q321` · not captured | 120.1 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row4:col7 |
+| PD (effect) | EC50 -remimazolam -uMss 1, ng/ml — Shrinkage | `Q321` · not captured | 32 | ng/ml | not captured | boundary_llm_dim_refused (not captured) | tab_4:row4:col8 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml | `Q321` · not captured | 224 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col2 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml — LcB | `Q321` · not captured | 162 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col3 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 2 vs. 1, ng/ml — UcB | `Q321` · not captured | 309 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row5:col4 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml | `Q321` · not captured | 347 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col2 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml — LcB | `Q321` · not captured | 249 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col3 |
+| PD (effect) | ΔEC50 -remimazolam -uMss 3 vs. 2, ng/ml — UcB | `Q321` · not captured | 488 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row6:col4 |
+| PD (effect) | EC50 -fentanyl -uMss 1, ng/ml | `Q321` · not captured | 0.560 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col2 |
+| PD (effect) | EC50 -fentanyl -uMss 1, ng/ml — LcB | `Q321` · not captured | 0.49 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col3 |
+| PD (effect) | EC50 -fentanyl -uMss 1, ng/ml — UcB | `Q321` · not captured | 0.73 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row8:col4 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml | `Q321` · not captured | 1.60 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col2 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml — LcB | `Q321` · not captured | 1.09 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col3 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 2 vs. 1, ng/ml — UcB | `Q321` · not captured | 2.60 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row9:col4 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml | `Q321` · not captured | 4.14 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col2 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml — LcB | `Q321` · not captured | 2.59 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col3 |
+| PD (effect) | ΔEC50 -fentanyl -uMss 3 vs. 2, ng/ml — UcB | `Q321` · not captured | 41.7 | ng/ml | not captured | llm_confirmed (not captured) | tab_4:row10:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

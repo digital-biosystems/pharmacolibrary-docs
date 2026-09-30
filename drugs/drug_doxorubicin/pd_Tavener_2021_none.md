@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives apoptosis (in % Annexin V/PI positive): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (μM concentrations) increases apoptosis in GL261 glioma cells, measured as % Annexin V/PI positive cells by flow cytometry after 15–17 h exposure; the paper reports an EC50 of 4.9 μM for the dose-dependent cytotoxic effect but does not state a formal PD mechanism model (e.g., Emax/Imax, kin/kout, or effect-compartment parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tavener_2021`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Tavener AM; Phelps MC; Daniels RL et al. (2021). Molecular biology reports 48
   ·  DOI: [10.1007/s11033-020-06109-8](https://doi.org/10.1007/s11033-020-06109-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 4.9 | μM | not captured | review_gapfill (not captured) | Tavener_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 4.9 | μM | not captured | review_gapfill (not captured) | Tavener_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

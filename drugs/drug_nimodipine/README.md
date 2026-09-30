@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C08C&quot;,&quot;href&quot;:&quot;atc/C08C.md&quot;},{&quot;label&quot;:&quot;nimodipine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimodipine_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nimodipine_Foucher2025_reference&quot;,&quot;label&quot;:&quot;Foucher_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # nimodipine
 
@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Foucher_2025_reference](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md) | 1-compartment, IV | 2 | Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neurological… (2025) | [10.1016/j.jns.2025.125666](https://doi.org/10.1016/j.jns.2025.125666) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Foucher_2025_reference](drugs/drug_nimodipine/Nimodipine_Foucher2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Foucher A et al., Impact of cerebral vasospasm therapy on…, Journal of the neurological… (2025) | [10.1016/j.jns.2025.125666](https://doi.org/10.1016/j.jns.2025.125666) |
 
 ## ADME sites
 

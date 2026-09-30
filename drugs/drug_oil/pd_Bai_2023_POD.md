@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Garlic essential oil drives peroxidase activity (in relative activity (%)) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for peroxidase (POD) activity; it only reports a time-course after a single spray of garlic essential oil at 0.1 g mL-1, where POD activity (relative activity, %) increased by 110% over 0–8 h versus control and then declined by 183% from its maximum over 8–72 h, interpreted as a stress-induced antioxidant response rather than a defined mechanism (no Imax, IC50, kin, kout or other model parameters are given). The only potency value reported is an EC50 of 0.0126 g mL-1 for GEO's overall inhibitory (allelopathic) effect on barnyard grass, not for POD activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bai_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

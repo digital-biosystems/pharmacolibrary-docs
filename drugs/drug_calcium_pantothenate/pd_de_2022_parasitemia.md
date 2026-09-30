@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MMV693183 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MMV693183 (via its CoA-PanAm metabolite, which inhibits acetyl-CoA synthetase, AcAS) reduces parasitemia in an inhibitory exposure-response (Emax-type) model; the paper reports gametocyte IC50 of 38 nM (oocyst formation), 12 nM for female gametocyte activation, and 1 µM for male gamete formation, but does not state numeric Emax, kin, kout, ke0, or gamma values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ de Vries LE; Jansen PAM; Barcelo C; Munro J; Verhoef JMJ; Pasaje CFA; Rubiano K;
   ·  DOI: [10.1038/s41467-022-29688-5](https://doi.org/10.1038/s41467-022-29688-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Human hepatocyte CLint (µl/min/106 cells) — (1) MMV689258 | `Q3` · not captured | 0.8 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
-| Human hepatocyte CLint (µl/min/106 cells) — (2) MMV693183 | `Q3` · not captured | 0.4 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
-| Human hepatocyte CLint (µl/min/106 cells) — (3) MMV884962 | `Q3` · not captured | 0.3 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
-| Human hepatocyte CLint (µl/min/106 cells) — (4) MMV1542001 | `Q3` · not captured | 0.5 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
-| Human hepatocyte CLint (µl/min/106 cells) — (5) MMV693182 | `Q3` · not captured | 0.2 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col6 |
-| Human hepatocyte CLint (µl/min/106 cells) — (6) MMV976394 | `Q3` · not captured | 0.2 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (1) MMV689258 | `Q3` · not captured | 0.8 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (2) MMV693183 | `Q3` · not captured | 0.4 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (3) MMV884962 | `Q3` · not captured | 0.3 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (4) MMV1542001 | `Q3` · not captured | 0.5 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (5) MMV693182 | `Q3` · not captured | 0.2 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col6 |
+| PK (driver) | Human hepatocyte CLint (µl/min/106 cells) — (6) MMV976394 | `Q3` · not captured | 0.2 | µl/min/106 cells | not captured | llm_confirmed (not captured) | Tab1:row3:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amphotericin B (measured concentrations) drives IC50 (in μM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Clotrimazole inhibits Acanthamoeba castellanii growth in vitro, with an IC50 of 0.77 μM at 3 days of treatment; the paper does not state a pharmacodynamic mechanism (no Emax/kin/kout model), and the IC50 values listed in the record (e.g. 5.94, 2.13 μM) are not found in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taravaud_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Taravaud A; Loiseau PM; Pomel S et al. (2017). International journal for parasit
   ·  DOI: [10.1016/j.ijpddr.2017.09.002](https://doi.org/10.1016/j.ijpddr.2017.09.002)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) ± SD at 3 days — A. castellanii ATCC 30010 | `Q322` · not captured | 5.94 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col2 |
-| IC50 (μM) ± SD at 3 days — A. castellanii CCAP 1534/3 | `Q322` · not captured | 5.43 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col3 |
-| IC50 (μM) ± SD at 3 days — A. polyphaga ATCC 50371 | `Q322` · not captured | 2.13 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col4 |
-| IC50 (μM) ± SD at 3 days — A. polyphaga CCAP 1501/3G | `Q322` · not captured | 7.15 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col5 |
-| IC50 (μM) ± SD at 4 days — A. castellanii ATCC 30010 | `Q322` · not captured | 52.99 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col2 |
-| IC50 (μM) ± SD at 4 days — A. castellanii CCAP 1534/3 | `Q322` · not captured | 45.10 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col3 |
-| IC50 (μM) ± SD at 4 days — A. polyphaga ATCC 50371 | `Q322` · not captured | 45.90 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col4 |
-| IC50 (μM) ± SD at 4 days — A. polyphaga CCAP 1501/3G | `Q322` · not captured | 74.74 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) ± SD at 3 days — A. castellanii ATCC 30010 | `Q322` · not captured | 5.94 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col2 |
+| PD (effect) | IC50 (μM) ± SD at 3 days — A. castellanii CCAP 1534/3 | `Q322` · not captured | 5.43 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col3 |
+| PD (effect) | IC50 (μM) ± SD at 3 days — A. polyphaga ATCC 50371 | `Q322` · not captured | 2.13 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col4 |
+| PD (effect) | IC50 (μM) ± SD at 3 days — A. polyphaga CCAP 1501/3G | `Q322` · not captured | 7.15 | μM | not captured | llm_confirmed (not captured) | tbl3:row0:col5 |
+| PD (effect) | IC50 (μM) ± SD at 4 days — A. castellanii ATCC 30010 | `Q322` · not captured | 52.99 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col2 |
+| PD (effect) | IC50 (μM) ± SD at 4 days — A. castellanii CCAP 1534/3 | `Q322` · not captured | 45.10 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col3 |
+| PD (effect) | IC50 (μM) ± SD at 4 days — A. polyphaga ATCC 50371 | `Q322` · not captured | 45.90 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col4 |
+| PD (effect) | IC50 (μM) ± SD at 4 days — A. polyphaga CCAP 1501/3G | `Q322` · not captured | 74.74 | μM | not captured | llm_confirmed (not captured) | tbl3:row1:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

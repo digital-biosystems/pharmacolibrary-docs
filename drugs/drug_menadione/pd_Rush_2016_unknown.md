@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 3-[(4-bromo-2,6-difluorophenyl)methoxy]-5-[[[[4-(1-pyrrolidinyl) butyl] amino] carbonyl]amino]-4-isothiazolecarboxamide hydrochloride (measured concentrations) drive corneal epithelial wound healing (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The RTKi (VEGFR2 inhibitor, VEGFR2 IC50 = 11 nM; EGFR IC50 = 5.8 μM) inhibits EGF-mediated corneal epithelial wound healing (% wound closure) in a dose-dependent manner via off-target EGFR kinase inhibition, with an in vitro IC50 of approximately 10 μM for EGFR-mediated wound healing; the paper does not state a formal PD model (no Emax/kin/kout/ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rush_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In hiPSC-CM EHTs, isoprenaline (concentrations in nM) stimulates contractile force, described by a sigmoid Emax concentration–response model; isoprenaline alone increased force by 48% (100 nM submaximal concentration). The paper does not state the mechanism beyond β-adrenoceptor-mediated positive inotropy and gives no numeric Emax, EC50, or Hill slope values for this fit.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saleem_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

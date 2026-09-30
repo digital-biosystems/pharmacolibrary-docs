@@ -20,13 +20,13 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_10_expression.md) | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_12_expression.md) | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_amastigote_inhibition.md) | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_apoptosis_rate.md) | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_promastigote_inhibition.md) | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019_IL_10_expression](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_10_expression.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019_IL_12_expression](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_12_expression.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019_amastigote_inhibition](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_amastigote_inhibition.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019_apoptosis_rate](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_apoptosis_rate.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hakimi_2019_promastigote_inhibition](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_promastigote_inhibition.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

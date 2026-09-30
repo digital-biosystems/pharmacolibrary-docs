@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Chae_2018) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan (0.03–0.1 μM range tested) directly stimulates the late voltage-gated Na+ current (INa) in HL-1 cardiomyocytes with an EC50 of 1.2 μM (peak INa EC50 0.2 μM), a direct Emax-type stimulatory effect whose detailed mechanism remains unclear per the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`

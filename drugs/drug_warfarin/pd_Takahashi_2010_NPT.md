@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin (concentrations from the PK model of Aoyama_2022) drives NPT (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> S-warfarin unbound plasma concentration (Cu(S), ng/mL) inhibits NPT activity, described by a sigmoid Emax model: NPT = NPT0 − [NPT0 × Cu(S)^γ / (IC50^γ + Cu(S)^γ)], mechanistically reflecting inhibition of VKOR and thus reduced vitamin K–dependent clotting factor activation. IC50 was 2.2 ng/mL in VKORC1 A/A homozygotes, 1.5-fold higher in A/G or G/G genotypes; γ and NPT0 units are not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Takahashi_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

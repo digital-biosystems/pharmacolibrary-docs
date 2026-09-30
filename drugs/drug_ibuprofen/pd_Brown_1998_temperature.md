@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen drives rectal temperature (in °C): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen (5 or 10 mg/kg doses, IBU05/IBU10) lowers rectal temperature (°C) in febrile children via a Sigmoid Emax effect model linked to a one-compartment PK model with an effect compartment; the paper does not state IC50/EC50 or Emax numeric values in the excerpts. Reported values: sigmoidicity factor γ = 3.97 ± 0.58 (IBU05) and 4.27 ± 0.63 (IBU10), effect-compartment half-life range 59.4–73.0 min (comparable to Kelley et al. ke0 of 0.0135 and 0.0071 min⁻¹ for APAP and racemic IBU).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brown_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

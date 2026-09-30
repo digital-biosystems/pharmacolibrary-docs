@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives PXR-responsive luciferase reporter assay (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The record lists liquid paraffin as the drug acting on a PXR-responsive luciferase reporter (% activation), but the excerpts do not mention liquid paraffin at all; the tested compounds (e.g., 15d, 37, 39–42) act as PXR agonists or inactive/deactivating ligands in this assay, with PXR activation reported relative to 10 μM rifampicin. The paper does not state a mechanism or potency parameters (Emax, EC50, etc.) for liquid paraffin on this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mejdrová_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

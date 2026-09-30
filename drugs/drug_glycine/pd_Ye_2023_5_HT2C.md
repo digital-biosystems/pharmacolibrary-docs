@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Genistein (measured concentrations) drives 5-HT2C receptor binding (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a 5-HT2C receptor binding assay, genistein (GE) showed concentration-dependent binding affinity to the 5-HT2C receptor with an IC50 of 77.28 ± 26.57 µg/mL (the record's mg/mL unit appears to be a transcription error; the paper states µg/mL), while Glycine max (GM) extract bound with IC50 values reported as 14.25 ± 11.02 µg/mL and 46.62 µg/mL; the paper does not state a PD model, mechanism, or parameters such as Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ye_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

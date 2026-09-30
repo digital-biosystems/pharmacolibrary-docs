@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CP-MgONPs (25–2500 μg·mL−1) applied via agar-well diffusion produced dose-dependent zones of growth inhibition (mm) in six bacterial strains, with the largest zones at 2500 μg·mL−1 (E. coli 20.72 ± 0.33 mm, S. aureus 19.52 ± 0.05 mm, B. cereus 16.78 ± 0.07 mm, P. aeruginosa 16.56 ± 0.06 mm, K. pneumoniae 14.24 ± 0.09 mm, S. pneumoniae 13.92 ± 0.01 mm). The paper does not fit a formal PD model or report Imax/IC50/EC50/Emax/kin/kout/ke0/gamma for the antibacterial response; it only suggests nanoparticles enter bacterial cells and inhibit growth, with the precise mechanism not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

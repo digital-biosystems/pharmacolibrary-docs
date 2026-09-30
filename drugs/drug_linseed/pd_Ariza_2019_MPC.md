@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Extruded linseed drives milk protein content (in g/kg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Extruded linseed (EL) dose (g/cow/day) was related to milk protein content (MPC, g/kg) via a linear mixed model (no PD mechanism, Emax, or rate parameters given); for every 100 g increase in EL exposure, MPC decreased by −0.006 to −0.023 g/kg depending on parity (parity 1 to 5+).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ariza_2019`
 - **model family:** `linear`
 - **driver:** `not_resolved`

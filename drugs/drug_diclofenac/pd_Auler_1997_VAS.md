@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diclofenac (concentrations from the PK model of Karunanidhi_2026) drives analgesia (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In postoperative patients given diclofenac 1 mg/kg im twice daily, plasma diclofenac concentrations (two-compartment PK) were related to analgesia measured as VAS (%), analyzed with a sigmoid Emax model with an inhibitory effect direction; the excerpts do not state the mechanism (e.g., Emax/IC50 values, kin/kout, or ke0) or any potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Auler_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

@@ -25,22 +25,22 @@ Prednisone was granted FDA approval on 21 February 1955.[L10496]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bouazza_2025_reference](drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md) | 1-compartment, oral | 4 | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | 1-compartment, IV | 2 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q353, Q27, Q355, Q88 — no SI v…</sub><br><sub>route_to: `human_review`</sub> | [Magee_2002_reference](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | 1-compartment, oral | 8 | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sassen_2020_reference](drugs/drug_prednisone/Prednisone_Sassen2020_reference.md) | 1-compartment, oral | 2 | Sassen SDT et al., Population Pharmacokinetics and Pharmac…, Clinical infectious disease… (2020) | [10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Bouazza_2025_reference](drugs/drug_prednisone/Prednisone_Bouazza2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Bouazza N et al., Population pharmacokinetic modelling of…, British journal of clinical… (2025) | [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [de_2023_reference](drugs/drug_prednisone/Prednisone_de2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal of clinical… (2023) | [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q49, Q353, Q27, Q355, Q88 — no SI v…</sub><br><sub>route_to: `human_review`</sub> | [Magee_2002_reference](drugs/drug_prednisone/Prednisone_Magee2002_reference.md) | held back | 1-compartment, oral | 8 | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sassen_2020_reference](drugs/drug_prednisone/Prednisone_Sassen2020_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Sassen SDT et al., Population Pharmacokinetics and Pharmac…, Clinical infectious disease… (2020) | [10.1093/cid/ciz1163](https://doi.org/10.1093/cid/ciz1163) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002](drugs/drug_prednisone/pd_Magee_2002_T_lymphocyte_cell_counts.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002](drugs/drug_prednisone/pd_Magee_2002_WBLP.md) | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_complete_response.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_overall_survival.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022](drugs/drug_prednisone/pd_Liu_2022_progression_free_survival.md) | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002_T_lymphocyte_cell_counts](drugs/drug_prednisone/pd_Magee_2002_T_lymphocyte_cell_counts.md) | T-lymphocyte cell counts ← prednisolone · indirect response — drug inhibits the production of T-lymphocyte cell counts | — | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Magee_2002_WBLP](drugs/drug_prednisone/pd_Magee_2002_WBLP.md) | whole blood lymphocyte proliferation ← prednisolone · indirect response — drug inhibits the production of whole blood lymphocyte proliferation | — | Magee MH et al., Pharmacokinetic/pharmacodynamic model f…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01567.x](https://doi.org/10.1046/j.1365-2125.2002.01567.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022_complete_response](drugs/drug_prednisone/pd_Liu_2022_complete_response.md) | name ← rituximab · categorical (graded) response model | — | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022_overall_survival](drugs/drug_prednisone/pd_Liu_2022_overall_survival.md) | name ← rituximab · categorical (graded) response model | — | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Liu_2022_progression_free_survival](drugs/drug_prednisone/pd_Liu_2022_progression_free_survival.md) | name ← rituximab · categorical (graded) response model | — | Liu S et al., Rituximab exposure-response in triweekl…, Clinical and translational… (2022) | [10.1111/cts.13186](https://doi.org/10.1111/cts.13186) |
 
 ## Pharmacogenomics (PGx)
 
@@ -64,6 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer | DrugBank actor |

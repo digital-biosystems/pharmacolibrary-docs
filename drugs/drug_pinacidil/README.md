@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1989_reference](drugs/drug_pinacidil/Pinacidil_Nielsen1989_reference.md) | 1-compartment (no model) | 0 | Nielsen CB et al., Pinacidil uptake and effects in the iso…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb00592.x](https://doi.org/10.1111/j.1600-0773.1989.tb00592.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Nielsen_1989_reference](drugs/drug_pinacidil/Pinacidil_Nielsen1989_reference.md) | — | 1-compartment (no model) | 0 | Nielsen CB et al., Pinacidil uptake and effects in the iso…, Pharmacology & toxicology (1989) | [10.1111/j.1600-0773.1989.tb00592.x](https://doi.org/10.1111/j.1600-0773.1989.tb00592.x) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluoxetine (concentrations from the PK model of Wilens_2002) drives mKATP activity (in % inhibition): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Fluoxetine directly inhibits mitochondrial ATP-sensitive potassium channel (mKATP) activity, measured as % inhibition in a thallium flux assay, with an IC50 of 2.4 μmol/L; the paper does not state an Emax model or further potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wojtovich_2010`
 - **model family:** `emax`
 - **driver:** `cited_pk`

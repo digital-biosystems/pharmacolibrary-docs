@@ -25,16 +25,16 @@ Misoprostol was granted FDA approval on 27 December 1988.[L7616]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | 1-compartment, oral | 5 | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Vorontsova_2022_reference](drugs/drug_misoprostol/Misoprostol_Vorontsova2022_reference.md) | held back | 1-compartment, oral | 5 | Vorontsova Y et al., Pharmacokinetics of vaginal versus bucc…, Clinical and translational… (2022) | [10.1111/cts.13306](https://doi.org/10.1111/cts.13306) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Nazabal_2023](drugs/drug_misoprostol/pd_Nazabal_2023_LC_neuron_firing_rate.md) | Nazabal A et al., Inhibition of rat locus coeruleus neuro…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1290605](https://doi.org/10.3389/fphar.2023.1290605) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Norel_1999](drugs/drug_misoprostol/pd_Norel_1999_relaxation.md) | Norel X et al., Prostanoid receptors involved in the re…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702392](https://doi.org/10.1038/sj.bjp.0702392) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nazabal_2023_LC_neuron_firing_rate](drugs/drug_misoprostol/pd_Nazabal_2023_LC_neuron_firing_rate.md) | firing rate ← sulprostone · direct Emax (saturable) effect | — | Nazabal A et al., Inhibition of rat locus coeruleus neuro…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1290605](https://doi.org/10.3389/fphar.2023.1290605) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Norel_1999_relaxation](drugs/drug_misoprostol/pd_Norel_1999_relaxation.md) | relaxation ← iloprost · direct Emax (saturable) effect | — | Norel X et al., Prostanoid receptors involved in the re…, British journal of pharmaco… (1999) | [10.1038/sj.bjp.0702392](https://doi.org/10.1038/sj.bjp.0702392) |
 
 ## ADME sites
 

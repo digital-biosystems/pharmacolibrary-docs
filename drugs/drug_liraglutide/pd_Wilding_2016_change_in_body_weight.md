@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Overgaard_2016::total) drives name (in kg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Steady-state total plasma liraglutide concentration (nM) was related to change in body weight (kg) via a sigmoid Emax model (direct exposure–response; the paper states weight loss occurs through decreased energy intake but gives no turnover/indirect mechanism). The excerpts define Emax, EC50, γ and a gender covariate on Emax (Imale) but do not report their numeric values; for HbA1c, reduction plateaued at ~21 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

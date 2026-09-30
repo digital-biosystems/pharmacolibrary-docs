@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Elobixibat, linerixibat, maralixibat, odevixibat (measured concentrations) drive SOAT transport inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In SOAT-HEK cells, maralixibat (and other BARIs) concentration-dependently inhibited steroid sulfate uptake (SOAT transport), a direct inhibition measured as IC50 curves; maralixibat inhibited SOAT with IC50 values of 4.5 and 5.9 μM in two independent experiments. The paper does not report a PD model with Imax, kin/kout, or ke0 for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Billo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

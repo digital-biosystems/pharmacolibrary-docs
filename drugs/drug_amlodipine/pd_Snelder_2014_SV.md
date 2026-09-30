@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive stroke volume (in ml): indirect response — drug inhibits the production of stroke volume.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, amlodipine's cardiovascular effects were best described as an inhibitory effect on TPR (not on SV, as the record states), within a mechanism-based linked turnover model where CO = HR × SV and MAP = CO × TPR, with SV influenced by MAP-mediated indirect feedback and a direct inverse log-linear relationship with HR; the paper does not report numeric potency (IC50/Imax) or rate (kin, kout) values for amlodipine in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

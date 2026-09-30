@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifuroxazide (measured concentrations) drives name (in count) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, nifuroxazide concentrations inhibit adult S. mansoni worm viability (72 h incubation), with EC50 values of 8.28 μM (male) and 13.79 μM (female) and EC90 values above 10 μM (male) and 15 μM (female); the paper does not state a PD model or mechanism. In vivo, an oral nifuroxazide dose reduced fecal egg burden by ~80% in patent infection (no significant effect in prepatent infection), but no concentration–response model or potency parameters are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Roquini_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

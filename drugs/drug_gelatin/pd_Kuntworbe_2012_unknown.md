@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cryptolepine hydrochloride (measured concentrations) drives Haemolysis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cryptolepine hydrochloride (free solution and gelatine nanoparticle formulations) concentration (μM) was related to percentage haemolysis of rat erythrocytes (relative to Triton X-100) using a four-parameter Hill (Emax-type) equation; the paper does not state a mechanistic PD model beyond this direct concentration–effect fit. The free drug had EC50 51.6 μM (Hill slope 0.9995), while all formulations were less haemolytic (EC50: 2.5ds 277.4 μM, 2.5ad 66.93 μM, 11.0ad 123.8 μM, 11.0ds 62.20 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kuntworbe_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

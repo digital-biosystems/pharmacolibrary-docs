@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-palmitoyl glycine (measured concentrations) drives Action potential duration (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> N-palmitoyl glycine (PalGly) shortens the action potential duration (APD) in rabbit ventricular cardiomyocytes and perfused hearts (1 μM PalGly for ≥10 min), acting via activation of TRPC5 (EC50 104 nM) and direct inhibition of TRPM4 (IC50 7 nM); the record classifies this as an Emax-type concentration–response model, but the paper does not report Emax, Hill coefficient, or turnover (kin/kout/ke0) parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

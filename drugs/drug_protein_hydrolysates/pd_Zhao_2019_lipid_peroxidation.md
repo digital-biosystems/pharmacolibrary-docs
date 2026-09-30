@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives Lipid peroxidation inhibition (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for lipid peroxidation inhibition; protein hydrolysate peptides (e.g., SMP-10) were tested in a linoleic acid model system over 7 days at 40 °C, with inhibition assessed by absorbance at 500 nm (lower absorbance = greater inhibition), and no Imax, IC50, EC50, kin, kout, or ke0 values are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

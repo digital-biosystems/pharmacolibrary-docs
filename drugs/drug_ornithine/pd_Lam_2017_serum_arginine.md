@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT-100 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a formal PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, gamma). BCT-100 (pegylated arginase, dosed 20 and 60 mg/kg) depletes serum arginine (control 98 ± 36 μM; reduced to 24 ± 5 and 14 ± 5 μM in 211H, and 14 ± 4 and 13 ± 4 μM in H226 xenografts), acting by enzymatic arginine degradation, with dose-dependent depletion also seen intratumorally.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lam_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

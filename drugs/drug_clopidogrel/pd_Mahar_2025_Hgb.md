@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Daprodustat drives hemoglobin (in g/L) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Daprodustat dose acts on hemoglobin (g/L) via a semi-mechanistic longitudinal Dose-Hgb model (Model 3) with a precursor cell compartment and 12 transit compartments for RBC lifespan, in which treatment increases the precursor cell production rate (Kin) by a power of allometrically scaled dose; the paper does not state Imax/IC50/EC50/Emax/ke0/gamma values in the excerpts. Baseline Hgb values (e.g., 103 g/L ND ESA users, 105 g/L HD ESA users, 104 g/L PD ESA users) and a disease progression term of -0.0462 per 1,000 days are included, with a factor of 0.426 on CDOSE for t.i.w. dosing in study 204,837.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahar_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,82 +31,82 @@ Mahar KM; van Noort M; van den Berg P; Yang S; Visser SAG; Post TM et al. (2025)
   ·  DOI: [10.1002/cpt.3544](https://doi.org/10.1002/cpt.3544)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline ND ESA users (g/L) — Variable | `Q100` · not captured | 103 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row3:col1 |
-| Baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 0.4 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col2 |
-| Baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 103 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col3 |
-| Baseline ND ESA users (g/L) — Final model | `Q324` · not captured | 0.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col4 |
-| Baseline HD ESA users (g/L) — Variable | `Q100` · not captured | 105 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row4:col1 |
-| Baseline HD ESA users (g/L) — Base model | `Q324` · not captured | 0.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row4:col2 |
-| Baseline HD ESA users (g/L) — Base model | `Q324` · not captured | 105 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row4:col3 |
-| Baseline HD ESA users (g/L) — Final model | `Q100` · not captured | 0.2 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row4:col4 |
-| Baseline PD ESA users (g/L) — Variable | `Q324` · not captured | 104 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col1 |
-| Baseline PD ESA users (g/L) — Base model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col2 |
-| Baseline PD ESA users (g/L) — Base model | `Q324` · not captured | 103 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col3 |
-| Baseline PD ESA users (g/L) — Final model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col4 |
-| Baseline just started or starting HD in 201410 (g/L) — Variable | `Q100` · not captured | 96.1 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row6:col1 |
-| Baseline just started or starting HD in 201410 (g/L) — Base model | `Q324` · not captured | 1.0 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col2 |
-| Baseline just started or starting HD in 201410 (g/L) — Base model | `Q324` · not captured | 95.5 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col3 |
-| Baseline just started or starting HD in 201410 (g/L) — Final model | `Q324` · not captured | 1.1 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col4 |
-| Baseline just started or starting PD in 201410 (g/L) — Variable | `Q100` · not captured | 101 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row7:col1 |
-| Baseline just started or starting PD in 201410 (g/L) — Base model | `Q324` · not captured | 2.6 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col2 |
-| Baseline just started or starting PD in 201410 (g/L) — Base model | `Q324` · not captured | 101 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col3 |
-| Baseline just started or starting PD in 201410 (g/L) — Final model | `Q324` · not captured | 2.6 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col4 |
-| True baseline ND ESA users (g/L) — Variable | `Q100` · not captured | 94.3 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row8:col1 |
-| True baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col2 |
-| True baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 95.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col3 |
-| True baseline ND ESA users (g/L) — Final model | `Q324` · not captured | 0.8 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col4 |
-| True baseline HD/PD ESA users (g/L) — Variable | `Q324` · not captured | 96.4 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col1 |
-| True baseline HD/PD ESA users (g/L) — Base model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col2 |
-| True baseline HD/PD ESA users (g/L) — Base model | `Q324` · not captured | 94.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col3 |
-| True baseline HD/PD ESA users (g/L) — Final model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col4 |
-| Factor on CDOSE for t.i.w. dosing in 204,837 (−) — Variable | `Q900` · not captured | 0.426 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row29:col1 |
-| Disease progression (/1,000 day) — Variable | `Q340` · not captured | -0.0462 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col1 |
-| Disease progression (/1,000 day) — Base model | `Q340` · not captured | 6.0 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col2 |
-| Disease progression (/1,000 day) — Base model | `Q340` · not captured | -0.0851 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col3 |
-| Disease progression (/1,000 day) — Final model | `Q340` · not captured | 8.3 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col4 |
-| Minimum KIN for Disease progression (g/L/day) — Variable | `Q327` · not captured | -0.575 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col1 |
-| Minimum KIN for Disease progression (g/L/day) — Base model | `Q327` · not captured | 10.4 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col2 |
-| Minimum KIN for Disease progression (g/L/day) — Base model | `Q327` · not captured | -0.678 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col3 |
-| Minimum KIN for Disease progression (g/L/day) — Final model | `Q327` · not captured | 11.1 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col4 |
-| Study 205270 on omega 1 (−) — Variable | `Q312` · not captured | 0.758 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col1 |
-| Study 205270 on omega 1 (−) — Base model | `Q312` · not captured | 7.0 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col2 |
-| Study 205270 on omega 1 (−) — Base model | `Q312` · not captured | 0.729 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col3 |
-| Study 205270 on omega 1 (−) — Final model | `Q312` · not captured | 7.2 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col4 |
-| Study 201410 on omega 1 (−) — Variable | `Q312` · not captured | 1.10 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col1 |
-| Study 201410 on omega 1 (−) — Base model | `Q312` · not captured | 9.3 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col2 |
-| Study 201410 on omega 1 (−) — Base model | `Q312` · not captured | 1.13 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col3 |
-| Study 201410 on omega 1 (−) — Final model | `Q312` · not captured | 9.3 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col4 |
-| IIV — Base model | `Q312` · not captured | 3.5 | not captured | not captured | exact (not captured) | cpt3544-tbl-0002:row38:col3 |
-| IIV — Final model | `Q312` · not captured | 3.5 | not captured | not captured | exact (not captured) | cpt3544-tbl-0002:row38:col5 |
-| Covariance between apparent and true baselines — Final model | `Q314` · not captured | 6.1 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row39:col4 |
-| Variance True baseline (additive) — Base model | `Q324` · not captured | 4.4 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row40:col2 |
-| Variance True baseline (additive) — Final model | `Q324` · not captured | 4.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row40:col4 |
-| Variance Disease progression rate first year (additive) — Base model | `Q340` · not captured | 9.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row43:col2 |
-| Variance Disease progression rate first year (additive) — Final model | `Q340` · not captured | 11.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row43:col4 |
-| Covariance between disease progression first and second year — Final model | `Q314` · not captured | 11.8 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row44:col4 |
-| Variance Disease progression rate second year (additive) — Base model | `Q340` · not captured | 8.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row45:col2 |
-| Variance Disease progression rate second year (additive) — Final model | `Q340` · not captured | 11.2 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row45:col4 |
-| Covariance between disease progression first year and third year and beyond — Final model | `Q314` · not captured | 13.5 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row46:col4 |
-| Variance Disease progression rate third year and beyond (additive) — Base model | `Q340` · not captured | 9.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row48:col2 |
-| Variance Disease progression rate third year and beyond (additive) — Final model | `Q340` · not captured | 11.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row48:col4 |
-| Standard deviation additive residual error study 204837 (g/L) — Variable | `Q317` · not captured | 6.22 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col1 |
-| Standard deviation additive residual error study 204837 (g/L) — Base model | `Q317` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col2 |
-| Standard deviation additive residual error study 204837 (g/L) — Base model | `Q317` · not captured | 6.28 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col3 |
-| Standard deviation additive residual error study 204837 (g/L) — Final model | `Q317` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col4 |
-| Standard deviation additive residual error study 201410 (g/L) — Variable | `Q317` · not captured | 7.30 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col1 |
-| Standard deviation additive residual error study 201410 (g/L) — Base model | `Q317` · not captured | 1.1 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col2 |
-| Standard deviation additive residual error study 201410 (g/L) — Base model | `Q317` · not captured | 7.24 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col3 |
-| Standard deviation additive residual error study 201410 (g/L) — Final model | `Q317` · not captured | 1.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col4 |
-| Standard deviation additive residual error study 200807 (g/L) — Variable | `Q317` · not captured | 7.32 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col1 |
-| Standard deviation additive residual error study 200807 (g/L) — Base model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col2 |
-| Standard deviation additive residual error study 200807 (g/L) — Base model | `Q317` · not captured | 7.27 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col3 |
-| Standard deviation additive residual error study 200807 (g/L) — Final model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col4 |
-| Standard deviation additive residual error study 200808 (g/L) — Variable | `Q317` · not captured | 6.43 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col1 |
-| Standard deviation additive residual error study 200808 (g/L) — Base model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col2 |
-| Standard deviation additive residual error study 200808 (g/L) — Base model | `Q317` · not captured | 6.39 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col3 |
-| Standard deviation additive residual error study 200808 (g/L) — Final model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Baseline ND ESA users (g/L) — Variable | `Q100` · not captured | 103 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row3:col1 |
+| PD (effect) | Baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 0.4 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col2 |
+| PD (effect) | Baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 103 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col3 |
+| PD (effect) | Baseline ND ESA users (g/L) — Final model | `Q324` · not captured | 0.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row3:col4 |
+| — | Baseline HD ESA users (g/L) — Variable | `Q100` · not captured | 105 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row4:col1 |
+| PD (effect) | Baseline HD ESA users (g/L) — Base model | `Q324` · not captured | 0.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row4:col2 |
+| PD (effect) | Baseline HD ESA users (g/L) — Base model | `Q324` · not captured | 105 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row4:col3 |
+| — | Baseline HD ESA users (g/L) — Final model | `Q100` · not captured | 0.2 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row4:col4 |
+| PD (effect) | Baseline PD ESA users (g/L) — Variable | `Q324` · not captured | 104 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col1 |
+| PD (effect) | Baseline PD ESA users (g/L) — Base model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col2 |
+| PD (effect) | Baseline PD ESA users (g/L) — Base model | `Q324` · not captured | 103 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col3 |
+| PD (effect) | Baseline PD ESA users (g/L) — Final model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row5:col4 |
+| — | Baseline just started or starting HD in 201410 (g/L) — Variable | `Q100` · not captured | 96.1 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row6:col1 |
+| PD (effect) | Baseline just started or starting HD in 201410 (g/L) — Base model | `Q324` · not captured | 1.0 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col2 |
+| PD (effect) | Baseline just started or starting HD in 201410 (g/L) — Base model | `Q324` · not captured | 95.5 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col3 |
+| PD (effect) | Baseline just started or starting HD in 201410 (g/L) — Final model | `Q324` · not captured | 1.1 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row6:col4 |
+| — | Baseline just started or starting PD in 201410 (g/L) — Variable | `Q100` · not captured | 101 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row7:col1 |
+| PD (effect) | Baseline just started or starting PD in 201410 (g/L) — Base model | `Q324` · not captured | 2.6 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col2 |
+| PD (effect) | Baseline just started or starting PD in 201410 (g/L) — Base model | `Q324` · not captured | 101 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col3 |
+| PD (effect) | Baseline just started or starting PD in 201410 (g/L) — Final model | `Q324` · not captured | 2.6 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row7:col4 |
+| — | True baseline ND ESA users (g/L) — Variable | `Q100` · not captured | 94.3 | g/L | not captured | llm_corrected (not captured) | cpt3544-tbl-0002:row8:col1 |
+| PD (effect) | True baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col2 |
+| PD (effect) | True baseline ND ESA users (g/L) — Base model | `Q324` · not captured | 95.3 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col3 |
+| PD (effect) | True baseline ND ESA users (g/L) — Final model | `Q324` · not captured | 0.8 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row8:col4 |
+| PD (effect) | True baseline HD/PD ESA users (g/L) — Variable | `Q324` · not captured | 96.4 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col1 |
+| PD (effect) | True baseline HD/PD ESA users (g/L) — Base model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col2 |
+| PD (effect) | True baseline HD/PD ESA users (g/L) — Base model | `Q324` · not captured | 94.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col3 |
+| PD (effect) | True baseline HD/PD ESA users (g/L) — Final model | `Q324` · not captured | 0.7 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row9:col4 |
+| model term | Factor on CDOSE for t.i.w. dosing in 204,837 (−) — Variable | `Q900` · not captured | 0.426 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row29:col1 |
+| PD (effect) | Disease progression (/1,000 day) — Variable | `Q340` · not captured | -0.0462 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col1 |
+| PD (effect) | Disease progression (/1,000 day) — Base model | `Q340` · not captured | 6.0 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col2 |
+| PD (effect) | Disease progression (/1,000 day) — Base model | `Q340` · not captured | -0.0851 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col3 |
+| PD (effect) | Disease progression (/1,000 day) — Final model | `Q340` · not captured | 8.3 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row31:col4 |
+| PD (effect) | Minimum KIN for Disease progression (g/L/day) — Variable | `Q327` · not captured | -0.575 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col1 |
+| PD (effect) | Minimum KIN for Disease progression (g/L/day) — Base model | `Q327` · not captured | 10.4 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col2 |
+| PD (effect) | Minimum KIN for Disease progression (g/L/day) — Base model | `Q327` · not captured | -0.678 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col3 |
+| PD (effect) | Minimum KIN for Disease progression (g/L/day) — Final model | `Q327` · not captured | 11.1 | g/L/day | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row32:col4 |
+| variability | Study 205270 on omega 1 (−) — Variable | `Q312` · not captured | 0.758 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col1 |
+| variability | Study 205270 on omega 1 (−) — Base model | `Q312` · not captured | 7.0 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col2 |
+| variability | Study 205270 on omega 1 (−) — Base model | `Q312` · not captured | 0.729 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col3 |
+| variability | Study 205270 on omega 1 (−) — Final model | `Q312` · not captured | 7.2 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row36:col4 |
+| variability | Study 201410 on omega 1 (−) — Variable | `Q312` · not captured | 1.10 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col1 |
+| variability | Study 201410 on omega 1 (−) — Base model | `Q312` · not captured | 9.3 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col2 |
+| variability | Study 201410 on omega 1 (−) — Base model | `Q312` · not captured | 1.13 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col3 |
+| variability | Study 201410 on omega 1 (−) — Final model | `Q312` · not captured | 9.3 | not captured | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row37:col4 |
+| variability | IIV — Base model | `Q312` · not captured | 3.5 | not captured | not captured | exact (not captured) | cpt3544-tbl-0002:row38:col3 |
+| variability | IIV — Final model | `Q312` · not captured | 3.5 | not captured | not captured | exact (not captured) | cpt3544-tbl-0002:row38:col5 |
+| variability | Covariance between apparent and true baselines — Final model | `Q314` · not captured | 6.1 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row39:col4 |
+| PD (effect) | Variance True baseline (additive) — Base model | `Q324` · not captured | 4.4 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row40:col2 |
+| PD (effect) | Variance True baseline (additive) — Final model | `Q324` · not captured | 4.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row40:col4 |
+| PD (effect) | Variance Disease progression rate first year (additive) — Base model | `Q340` · not captured | 9.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row43:col2 |
+| PD (effect) | Variance Disease progression rate first year (additive) — Final model | `Q340` · not captured | 11.3 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row43:col4 |
+| variability | Covariance between disease progression first and second year — Final model | `Q314` · not captured | 11.8 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row44:col4 |
+| PD (effect) | Variance Disease progression rate second year (additive) — Base model | `Q340` · not captured | 8.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row45:col2 |
+| PD (effect) | Variance Disease progression rate second year (additive) — Final model | `Q340` · not captured | 11.2 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row45:col4 |
+| variability | Covariance between disease progression first year and third year and beyond — Final model | `Q314` · not captured | 13.5 | not captured | not captured | llm (not captured) | cpt3544-tbl-0002:row46:col4 |
+| PD (effect) | Variance Disease progression rate third year and beyond (additive) — Base model | `Q340` · not captured | 9.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row48:col2 |
+| PD (effect) | Variance Disease progression rate third year and beyond (additive) — Final model | `Q340` · not captured | 11.6 | additive | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row48:col4 |
+| variability | Standard deviation additive residual error study 204837 (g/L) — Variable | `Q317` · not captured | 6.22 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col1 |
+| variability | Standard deviation additive residual error study 204837 (g/L) — Base model | `Q317` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col2 |
+| variability | Standard deviation additive residual error study 204837 (g/L) — Base model | `Q317` · not captured | 6.28 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col3 |
+| variability | Standard deviation additive residual error study 204837 (g/L) — Final model | `Q317` · not captured | 0.9 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row50:col4 |
+| variability | Standard deviation additive residual error study 201410 (g/L) — Variable | `Q317` · not captured | 7.30 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col1 |
+| variability | Standard deviation additive residual error study 201410 (g/L) — Base model | `Q317` · not captured | 1.1 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col2 |
+| variability | Standard deviation additive residual error study 201410 (g/L) — Base model | `Q317` · not captured | 7.24 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col3 |
+| variability | Standard deviation additive residual error study 201410 (g/L) — Final model | `Q317` · not captured | 1.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row51:col4 |
+| variability | Standard deviation additive residual error study 200807 (g/L) — Variable | `Q317` · not captured | 7.32 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col1 |
+| variability | Standard deviation additive residual error study 200807 (g/L) — Base model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col2 |
+| variability | Standard deviation additive residual error study 200807 (g/L) — Base model | `Q317` · not captured | 7.27 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col3 |
+| variability | Standard deviation additive residual error study 200807 (g/L) — Final model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row52:col4 |
+| variability | Standard deviation additive residual error study 200808 (g/L) — Variable | `Q317` · not captured | 6.43 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col1 |
+| variability | Standard deviation additive residual error study 200808 (g/L) — Base model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col2 |
+| variability | Standard deviation additive residual error study 200808 (g/L) — Base model | `Q317` · not captured | 6.39 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col3 |
+| variability | Standard deviation additive residual error study 200808 (g/L) — Final model | `Q317` · not captured | 0.2 | g/L | not captured | llm_confirmed (not captured) | cpt3544-tbl-0002:row53:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

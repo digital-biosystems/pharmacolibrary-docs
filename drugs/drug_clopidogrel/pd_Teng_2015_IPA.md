@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ticagrelor drives final-extent inhibition of platelet aggregation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ticagrelor (with its equipotent active metabolite AR-C124910XX) drives final-extent inhibition of platelet aggregation (IPA), which is dose-dependent and greater than with clopidogrel; the paper does not state a quantitative PD mechanism (no IC50/EC50/Emax/kin/kout/ke0 values are given), only reporting that maximum IPA occurs ~2 h after ticagrelor dosing with 40–50% IPA by 30 min and a duration of 3–5 days.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Teng_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Teng R et al. (2015). Clinical pharmacokinetics 54
   ·  DOI: [10.1007/s40262-015-0290-2](https://doi.org/10.1007/s40262-015-0290-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Maximum IPA — Ticagrelor [19, 20, 29] | `Q32` · not captured | 2 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
-| Maximum IPA — Prasugrel [31] | `Q32` · not captured | 3 | not captured | not captured | llm (not captured) | Tab1:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Maximum IPA — Ticagrelor [19, 20, 29] | `Q32` · not captured | 2 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
+| PK (driver) | Maximum IPA — Prasugrel [31] | `Q32` · not captured | 3 | not captured | not captured | llm (not captured) | Tab1:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

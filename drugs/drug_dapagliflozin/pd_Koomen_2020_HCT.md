@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives haematocrit (in %): indirect response — drug inhibits the production of haematocrit.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin plasma exposure (AUC, ng·h/mL; 5 mg ≈ 327, 10 mg ≈ 638 ng·h/mL) drives an increase in haematocrit (HCT, %); the paper does not state an explicit mechanism (no kin/kout, IC50/EC50, ke0 or gamma values are given), and while the record classifies it as a proportional indirect response Type I with inhibition, the paper states the HCT drug effect was best described by a power function of exposure, with 10 mg reaching 61.1% (95% PI 58.0–64.8%) of the estimated maximum effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

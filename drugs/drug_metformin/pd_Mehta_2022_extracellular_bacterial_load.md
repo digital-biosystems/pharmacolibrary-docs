@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (concentrations from the PK model of Ailabouni_2026::250_mg) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Metformin concentrations (from a PBPK model with a lung compartment) act on the extracellular/intracellular M. tuberculosis bacterial load in a QSP host immune response model, where metformin induces autophagy via AMPK-mTOR signaling (mTORC1 inhibition), producing a dose-dependent reduction of the intracellular bacterial load. The paper does not state the quantitative PD parameters (Imax, IC50, Emax, kin, kout, ke0, gamma) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mehta_2022`
 - **model family:** `emax`
 - **driver:** `cited_pk`

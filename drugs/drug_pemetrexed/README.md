@@ -35,20 +35,20 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023_reference](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | 1-compartment, IV | 3 | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022_reference](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | 2-compartment, IV | 4 | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022_reference](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | 1-compartment, IV | 2 | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Boosman_2023_reference](drugs/drug_pemetrexed/Pemetrexed_Boosman2023_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Boosman RJ et al., Prediction of the pharmacokinetics of p…, British journal of clinical… (2023) | [10.1111/bcp.15520](https://doi.org/10.1111/bcp.15520) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Cao_2022_reference](drugs/drug_pemetrexed/Pemetrexed_Cao2022_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | Cao P et al., Population pharmacokinetic study of pem…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.954242](https://doi.org/10.3389/fphar.2022.954242) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [de_2022_reference](drugs/drug_pemetrexed/Pemetrexed_de2022_reference.md) | held back | 1-compartment, IV | 2 | de Rouw N et al., Hyperhydration with cisplatin does not…, British journal of clinical… (2022) | [10.1111/bcp.15031](https://doi.org/10.1111/bcp.15031) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026](drugs/drug_pemetrexed/pd_Hu_2026_Bim.md) | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026](drugs/drug_pemetrexed/pd_Hu_2026_CL_PARP.md) | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026](drugs/drug_pemetrexed/pd_Hu_2026_TGI.md) | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026](drugs/drug_pemetrexed/pd_Hu_2026_pEGFR_EGFR.md) | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026_Bim](drugs/drug_pemetrexed/pd_Hu_2026_Bim.md) | Bim levels ← pemetrexed, osimertinib · delayed effect through transit (transduction) compartments | — | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026_CL_PARP](drugs/drug_pemetrexed/pd_Hu_2026_CL_PARP.md) | CL-PARP levels ← pemetrexed, osimertinib · delayed effect through transit (transduction) compartments | — | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026_TGI](drugs/drug_pemetrexed/pd_Hu_2026_TGI.md) | tumor growth inhibition ← pemetrexed, osimertinib · delayed effect through transit (transduction) compartments | — | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hu_2026_pEGFR_EGFR](drugs/drug_pemetrexed/pd_Hu_2026_pEGFR_EGFR.md) | EGFR signaling ← pemetrexed, osimertinib · delayed effect through transit (transduction) compartments | — | Hu K et al., A Mechanistic Pharmacokinetic/Pharmacod…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040408](https://doi.org/10.3390/pharmaceutics18040408) |
 
 ## Pharmacogenomics (PGx)
 
@@ -72,6 +72,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` unknown | DrugBank actor |
 | absorption | mammary gland | `ABCG2` unknown | DrugBank actor |
 | absorption | small intestine | `ABCG2` unknown | DrugBank actor |
+| absorption | testis | `ABCG2` unknown | DrugBank actor |
 | distribution | blood | `ALB` binder, `SLC29A1` inducer | DrugBank actor |
 | distribution | liver | `SLC29A1` inducer | DrugBank actor |
 | metabolism | liver | <sub>“…metrexed is not metabolized to an appreciable extent by the liver.[L43807,A253987]…”</sub> | prose |

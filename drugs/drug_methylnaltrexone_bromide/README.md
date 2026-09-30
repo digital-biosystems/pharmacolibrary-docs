@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Singleton_2010](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Singleton_2010](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Singleton_2010_VEGF_induced_human_pulmonary_microvascular_endothelial_cell_migration](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | name ← methylnaltrexone · inhibition effect | — | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Singleton_2010_VEGF_induced_human_pulmonary_microvascular_endothelial_cell_proliferation](drugs/drug_methylnaltrexone_bromide/pd_Singleton_2010_VEGF_induced_human_pulmonary_microvascular_en.md) | name ← methylnaltrexone · inhibition effect | — | Singleton PA et al., Methylnaltrexone potentiates the anti-a…, Journal of angiogenesis res… (2010) | [10.1186/2040-2384-2-5](https://doi.org/10.1186/2040-2384-2-5) |
 
 ## ADME sites
 

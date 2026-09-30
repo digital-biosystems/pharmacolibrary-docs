@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-hydroxytryptamine drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II and 5-hydroxytryptamine each act directly (Emax model) on vascular contraction of rat thoracic aortae, expressed as percentage of maximal contraction; in HFD-fed rats Emax increased (e.g. Emax of 5-HT 30.0 and of Ang II 25.0 in NPD-fed rats) with unchanged pD2 (−log EC50), and agonist potency order was Ang II &gt; 5-HT &gt; KCl. The paper does not state an explicit mechanism beyond direct agonist concentration–response stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ghatta_2004`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Ghatta S; Ramarao P et al. (2004). Lipids in health and disease 3
   ·  DOI: [10.1186/1476-511X-3-19](https://doi.org/10.1186/1476-511X-3-19)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax of 5-HT — NPD fed | `Q320` · not captured | 30.0 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col1 |
-| Emax of Ang II — NPD fed | `Q320` · not captured | 25.0 | not captured | not captured | llm_confirmed (not captured) | T2:row9:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax of 5-HT — NPD fed | `Q320` · not captured | 30.0 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col1 |
+| PD (effect) | Emax of Ang II — NPD fed | `Q320` · not captured | 25.0 | not captured | not captured | llm_confirmed (not captured) | T2:row9:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

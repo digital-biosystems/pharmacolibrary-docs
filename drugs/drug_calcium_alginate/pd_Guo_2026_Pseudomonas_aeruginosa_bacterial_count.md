@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Colistin drives name (in CFU/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the calcium alginate biofilm model, colistin concentrations inhibit the growth of Pseudomonas aeruginosa (log10 CFU/mL) via an Emax-type kill model with separate susceptible and resistant subpopulations; the paper reports an EC50S of 170 (unit not stated) and net growth rate kgr values of 0, 0.6, and 0, but the excerpts do not state the EC50R values' meaning or units (values -4.27 and -1.57 appear alongside ktr labels).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Guo Y; Yin J; Aulin LBS; Ciofu O; Moser C; Upadhyay PJ; Høiby N; Wang H; Guo T;
   ·  DOI: [10.1016/j.bioflm.2026.100387](https://doi.org/10.1016/j.bioflm.2026.100387)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| kgr | `Q358` · not captured | 0.6 | not captured | not captured | llm (not captured) | tab_0:row3:col6 |
-| kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
-| EC50S | `Q321` · not captured | 170 | unknown | not captured | llm (not captured) | tab_0:row7:col7 |
-| EC50R ktr | `Q338` · not captured | -4.27 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col6 |
-| EC50R ktr | `Q338` · not captured | -1.57 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
+| PK (driver) | kgr | `Q358` · not captured | 0.6 | not captured | not captured | llm (not captured) | tab_0:row3:col6 |
+| PK (driver) | kgr | `Q358` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
+| PD (effect) | EC50S | `Q321` · not captured | 170 | unknown | not captured | llm (not captured) | tab_0:row7:col7 |
+| PD (effect) | EC50R ktr | `Q338` · not captured | -4.27 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col6 |
+| PD (effect) | EC50R ktr | `Q338` · not captured | -1.57 | not captured | not captured | llm_corrected (not captured) | tab_0:row9:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

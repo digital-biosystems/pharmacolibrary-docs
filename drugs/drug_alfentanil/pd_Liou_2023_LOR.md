@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam, alfentanil, propofol drive loss of response (in binary): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Effect-site concentrations (Ce) of midazolam, alfentanil and propofol jointly drive the probability of loss of response (LOR, MOAA/S &lt; 4) via a Minto-type response-surface sigmoid Emax model: each Ce is normalized by its C50 (U_m = C_m/C50m, U_a = C_a/C50a, U_p = C_p/C50p), summed into U, and E = (U/U50)^n / (1 + (U/U50)^n), where U50 is the U giving 50% LOR probability. The paper does not state numeric C50, U50, gamma or slope values in the excerpts; simulations show propofol alone needs 1.59 µg/mL Ce for 95% LOR, reduced to 0.7/0.32 µg/mL with 1/2 mg midazolam, 1.37/1.12 µg/mL with 500/250 µg alfentanil, and 0.54 µg/mL with the three-drug regimen.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liou_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Liou JY; Kuo IT; Chang WK; Ting CK; Tsou MY et al. (2023). BMC pharmacology & to
   ·  DOI: [10.1186/s40360-023-00642-5](https://doi.org/10.1186/s40360-023-00642-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Responds readily to name spoken in normal tone — Score | `Q100` · not captured | 5 | not captured | not captured | llm (not captured) | tab_0:row1:col1 |
-| Lethargic response to name spoken in normal tone — Score | `Q100` · not captured | 4 | not captured | not captured | llm (not captured) | tab_0:row2:col1 |
-| Responds only after mild prodding or shaking — Score | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | tab_0:row4:col1 |
-| Does not respond to mild prodding or shaking, but responds to — Score | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | tab_0:row5:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Responds readily to name spoken in normal tone — Score | `Q100` · not captured | 5 | not captured | not captured | llm (not captured) | tab_0:row1:col1 |
+| — | Lethargic response to name spoken in normal tone — Score | `Q100` · not captured | 4 | not captured | not captured | llm (not captured) | tab_0:row2:col1 |
+| — | Responds only after mild prodding or shaking — Score | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | tab_0:row4:col1 |
+| — | Does not respond to mild prodding or shaking, but responds to — Score | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | tab_0:row5:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

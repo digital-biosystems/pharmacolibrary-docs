@@ -14,9 +14,11 @@
 
 **As extracted:** Verinurad (measured concentrations) drives serum uric acid (in mg/L): direct Emax (saturable) effect.
 
-> The model describes the inhibition of uric acid production by febuxostat or oxypurinol and the modulation of renal excretion by verinurad, with an estimated EC50 of 29.3 ng/mL for verinurad and a baseline fractional excretion of uric acid (FEUA) of 7.7%.
+**Model:** No model was generated from this record.
+
+> Verinurad concentrations (ng/mL) drive a semimechanistic uric acid disposition model in which verinurad inhibits renal URAT1-mediated reabsorption (increasing fractional excretion of uric acid, baseline FEUA 7.7%), while febuxostat or oxypurinol (the active metabolite of allopurinol) inhibit uric acid production rate via xanthine oxidase inhibition; the model describes serum uric acid (mg/L) and urinary uric acid excretion. The reported EC50 for verinurad was 29.3 ng/mL (with hyperuricemic covariate effects), and the paper does not state Imax, kout, ke0, or gamma values in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Leander_2021`
 - **model family:** `emax`

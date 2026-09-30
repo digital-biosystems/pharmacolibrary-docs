@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aspirin and ibuprofen (measured concentrations) drive ex vivo platelet aggregation (in unknown): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> Aspirin and ibuprofen plasma concentrations (fixed to literature PK, mg/L) drive ex vivo collagen- and arachidonic acid-induced platelet aggregation via a mechanism-based COX-1 enzyme turnover model: aspirin irreversibly inhibits the enzyme while ibuprofen binds reversibly with association/dissociation rates kon and koff, and enzyme turnover is described by kin and kout. The excerpts do not report numeric values for kin, kout, kon, koff, IC50, Emax or other potency parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_2008`
 - **model family:** `transduction`
 - **driver:** `conc_no_pk`

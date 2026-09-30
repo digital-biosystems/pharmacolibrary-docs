@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 12 (measured concentrations) drives name (in MFI) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Compound 12 (a naphthyridone) concentration-dependently inhibits PANX1-mediated To-Pro-3 uptake (measured as MFI), e.g. 76.2% ± 6.0% inhibition at 2.5 µm and 48.1% ± 4.9% at 1 µm; the paper does not state a formal PD model (no Imax/IC50/EC50/kin/kout/ke0), and the mechanism is direct channel blockade via interactions with specific PANX1 amino acid residues.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsueh_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

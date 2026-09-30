@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADB-BUTINACA (measured concentrations) drives CB1 receptor activation (in arbitrary units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> ADB-BUTINACA concentrations (60 μM down by eightfold serial dilution) were applied to CHO-K1 cells expressing human CB1 receptor, with luminescence (arbitrary units) as the measured response of CB1 receptor activation; the paper does not describe a kinetic mechanism, only a direct concentration-response (Emax-type) relationship, with an EC50 of 11.5 nM (comparable to ADB-4en-PINACA, 11.6 nM, and MDMB-4en-PINACA, 4.3 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kronstrand_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Kronstrand R; Norman C; Vikingsson S; Biemans A; Valencia Crespo B; Edwards D; e
   ·  DOI: [10.1002/dta.3203](https://doi.org/10.1002/dta.3203)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ADB-BUTINACA (EC 50 , 11.5 nM | `Q321` · not captured | 11.5 | nM | not captured | review_gapfill (not captured) | Kronstrand_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ADB-BUTINACA (EC 50 , 11.5 nM | `Q321` · not captured | 11.5 | nM | not captured | review_gapfill (not captured) | Kronstrand_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | 1-compartment (no model) | 0 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [el_1978_reference](drugs/drug_ethosuximide/Ethosuximide_el1978_reference.md) | — | 1-compartment (no model) | 0 | el Sayed MA et al., Pharmacokinetics of ethosuximide in the…, Archives internationales de… (1978) | — |
 
 ## ADME sites
 

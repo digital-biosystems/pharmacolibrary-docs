@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol (0–40 μM, 48 hrs) concentration-dependently increased p53 expression in HL-60 cells (western blot), alongside decreased CDK2, CDK4, CyclinD1, CyclinE and survivin, consistent with G0/G1 arrest; the paper reports no PD model for p53 and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

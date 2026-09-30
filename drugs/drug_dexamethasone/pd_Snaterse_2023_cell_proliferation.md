@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dexamethasone concentrations (nmol/L) were tested in a luciferase reporter transcription assay for androgen receptor activation: AR WT showed no sensitivity to dexamethasone, while the AR L702H/T878A double mutant was activated with EC50 = 26 nmol/L (direct stimulatory effect; no Emax or turnover parameters reported). The paper does not report a dexamethasone effect on cell proliferation or a mechanism beyond direct AR activation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snaterse_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

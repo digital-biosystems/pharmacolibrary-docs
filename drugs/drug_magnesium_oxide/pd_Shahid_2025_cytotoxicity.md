@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cationic polymer-coated magnesium oxide nanoparticles drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of MgO NPs, cationic PAMPTMA homopolymer, PAMPTMA-r-BuMA copolymer and their MgO nanocomposites (µg ml−1) inhibit cancer (A-549, Colon-26) and normal (HDF) cell viability in an MTT assay, reported as IC50 values (e.g. MgO NPs: 588, 1288, 1398 µg ml−1; homopolymer: 25, 22, 9 µg ml−1; copolymer: 19, 25, 31 µg ml−1; NCs: 202/64, 338/115 µg ml−1). The paper states the cytotoxicity is mediated by ROS generation and Mg²+ ion release plus electrostatic membrane targeting/disruption, but no formal PD model (Emax, kin/kout, ke0) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shahid_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,23 +30,23 @@ Shahid MH; Singh M; Rajan R; Matsumura K et al. (2025). Royal Society open scien
   ·  DOI: [10.1098/rsos.250656](https://doi.org/10.1098/rsos.250656)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 588 | µg ml−1 | not captured | exact (not captured) | T4:row0:col3 |
-| IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 25 | µg ml−1 | not captured | exact (not captured) | T4:row0:col4 |
-| IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 19 | µg ml−1 | not captured | exact (not captured) | T4:row0:col5 |
-| IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 202 | µg ml−1 | not captured | exact (not captured) | T4:row0:col6 |
-| IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 64 | µg ml−1 | not captured | exact (not captured) | T4:row0:col7 |
-| IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 1288 | µg ml−1 | not captured | exact (not captured) | T4:row1:col3 |
-| IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 22 | µg ml−1 | not captured | exact (not captured) | T4:row1:col4 |
-| IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 25 | µg ml−1 | not captured | exact (not captured) | T4:row1:col5 |
-| IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 338 | µg ml−1 | not captured | exact (not captured) | T4:row1:col6 |
-| IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 115 | µg ml−1 | not captured | exact (not captured) | T4:row1:col7 |
-| IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 1398 | µg ml−1 | not captured | exact (not captured) | T4:row2:col3 |
-| IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 9 | µg ml−1 | not captured | exact (not captured) | T4:row2:col4 |
-| IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 31 | µg ml−1 | not captured | exact (not captured) | T4:row2:col5 |
-| IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 180 | µg ml−1 | not captured | exact (not captured) | T4:row2:col6 |
-| IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 226 | µg ml−1 | not captured | exact (not captured) | T4:row2:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 588 | µg ml−1 | not captured | exact (not captured) | T4:row0:col3 |
+| PD (effect) | IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 25 | µg ml−1 | not captured | exact (not captured) | T4:row0:col4 |
+| PD (effect) | IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 19 | µg ml−1 | not captured | exact (not captured) | T4:row0:col5 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 202 | µg ml−1 | not captured | exact (not captured) | T4:row0:col6 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 64 | µg ml−1 | not captured | exact (not captured) | T4:row0:col7 |
+| PD (effect) | IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 1288 | µg ml−1 | not captured | exact (not captured) | T4:row1:col3 |
+| PD (effect) | IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 22 | µg ml−1 | not captured | exact (not captured) | T4:row1:col4 |
+| PD (effect) | IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 25 | µg ml−1 | not captured | exact (not captured) | T4:row1:col5 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 338 | µg ml−1 | not captured | exact (not captured) | T4:row1:col6 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 115 | µg ml−1 | not captured | exact (not captured) | T4:row1:col7 |
+| PD (effect) | IC50 (µg ml−1) — MgO NPs only | `Q322` · not captured | 1398 | µg ml−1 | not captured | exact (not captured) | T4:row2:col3 |
+| PD (effect) | IC50 (µg ml−1) — homopolymer only | `Q322` · not captured | 9 | µg ml−1 | not captured | exact (not captured) | T4:row2:col4 |
+| PD (effect) | IC50 (µg ml−1) — copolymer only | `Q322` · not captured | 31 | µg ml−1 | not captured | exact (not captured) | T4:row2:col5 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite homopolymer | `Q322` · not captured | 180 | µg ml−1 | not captured | exact (not captured) | T4:row2:col6 |
+| PD (effect) | IC50 (µg ml−1) — nanocomposite copolymer | `Q322` · not captured | 226 | µg ml−1 | not captured | exact (not captured) | T4:row2:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

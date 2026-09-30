@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II (measured concentrations) drives Forearm blood flow (in % change): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Intra-arterial angiotensin II (0.1–5 ng/kg/min) reduced forearm blood flow (FBF, % change) in normotensive men, described by a sigmoid Emax inhibitory model with a maximal FBF decrease of 75±4% and EC50 3.6±0.5 nmol/L (range 0.37–7.1 nmol/L); the paper does not state a production/elimination (kin/kout) mechanism, only direct AT1-receptor–mediated vasoconstriction (blocked by losartan).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saris_2000`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Saris JJ; van Dijk MA; Kroon I; Schalekamp MA; Danser AH et al. (2000). Hyperten
   ·  DOI: [10.1161/01.hyp.35.3.764](https://doi.org/10.1161/01.hyp.35.3.764)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 5.6 | nmol/L | not captured | review_gapfill (not captured) | Saris_2000:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 5.6 | nmol/L | not captured | review_gapfill (not captured) | Saris_2000:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

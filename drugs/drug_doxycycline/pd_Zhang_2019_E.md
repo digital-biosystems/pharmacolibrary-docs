@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxycycline (concentrations from the PK model of Altan_2024) drives antimycoplasmal effect (in log10CFU/ml): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Doxycycline concentrations (μg/ml) act on the kill rate (log10CFU/ml reduction) of Mycoplasma hyopneumoniae via a direct sigmoid Emax inhibitory effect, with EC50 0.78–13.04 μg/ml depending on the time interval (e.g. 1.09 μg/ml for 0–48 h), Emax 0.05–0.24 h−1 (0.05 h−1 for 0–48 h), E0 −2.13 log10CFU/ml, and Hill slope 1.73; the effect is concentration-dependent (Cmax/MIC best correlated, R2 = 0.923).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,24 +31,24 @@ Zhang H; Mao C; Li J; Huang Z; Gu X; Shen X; et al. et al. (2019). Frontiers in 
   ·  DOI: [10.3389/fphar.2019.01088](https://doi.org/10.3389/fphar.2019.01088)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (h−1) — 0–24 | `Q320` · not captured | 0.09 | h−1 | not captured | space_fold (not captured) | T1:row0:col2 |
-| E max (h−1) — 0–36 | `Q320` · not captured | 0.07 | h−1 | not captured | space_fold (not captured) | T1:row0:col3 |
-| E max (h−1) — 0–48 | `Q320` · not captured | 0.05 | h−1 | not captured | space_fold (not captured) | T1:row0:col4 |
-| E max (h−1) — 3–24 | `Q320` · not captured | 0.24 | h−1 | not captured | space_fold (not captured) | T1:row0:col5 |
-| E max (h−1) — 3–36 | `Q320` · not captured | 0.09 | h−1 | not captured | space_fold (not captured) | T1:row0:col6 |
-| E max (h−1) — 3–48 | `Q320` · not captured | 0.07 | h−1 | not captured | space_fold (not captured) | T1:row0:col7 |
-| E max (h−1) — 12–48 | `Q320` · not captured | 0.06 | h−1 | not captured | space_fold (not captured) | T1:row0:col8 |
-| EC50 (μg/ml) — 0–24 | `Q321` · not captured | 2.82 | μg/ml | not captured | exact (not captured) | T1:row1:col2 |
-| EC50 (μg/ml) — 0–36 | `Q321` · not captured | 1.62 | μg/ml | not captured | exact (not captured) | T1:row1:col3 |
-| EC50 (μg/ml) — 0–48 | `Q321` · not captured | 1.09 | μg/ml | not captured | exact (not captured) | T1:row1:col4 |
-| EC50 (μg/ml) — 3–24 | `Q321` · not captured | 13.04 | μg/ml | not captured | exact (not captured) | T1:row1:col5 |
-| EC50 (μg/ml) — 3–36 | `Q321` · not captured | 1.18 | μg/ml | not captured | exact (not captured) | T1:row1:col6 |
-| EC50 (μg/ml) — 3–48 | `Q321` · not captured | 0.98 | μg/ml | not captured | exact (not captured) | T1:row1:col7 |
-| EC50 (μg/ml) — 12–48 | `Q321` · not captured | 0.78 | μg/ml | not captured | exact (not captured) | T1:row1:col8 |
-| E 0 (log10CFU/ml) | `Q324` · not captured | -2.13 | log10CFU/ml | not captured | review_gapfill (not captured) | Zhang_2019:review |
-| Hill’s slope | `Q325` · not captured | 1.73 | not captured | not captured | review_gapfill (not captured) | Zhang_2019:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (h−1) — 0–24 | `Q320` · not captured | 0.09 | h−1 | not captured | space_fold (not captured) | T1:row0:col2 |
+| PD (effect) | E max (h−1) — 0–36 | `Q320` · not captured | 0.07 | h−1 | not captured | space_fold (not captured) | T1:row0:col3 |
+| PD (effect) | E max (h−1) — 0–48 | `Q320` · not captured | 0.05 | h−1 | not captured | space_fold (not captured) | T1:row0:col4 |
+| PD (effect) | E max (h−1) — 3–24 | `Q320` · not captured | 0.24 | h−1 | not captured | space_fold (not captured) | T1:row0:col5 |
+| PD (effect) | E max (h−1) — 3–36 | `Q320` · not captured | 0.09 | h−1 | not captured | space_fold (not captured) | T1:row0:col6 |
+| PD (effect) | E max (h−1) — 3–48 | `Q320` · not captured | 0.07 | h−1 | not captured | space_fold (not captured) | T1:row0:col7 |
+| PD (effect) | E max (h−1) — 12–48 | `Q320` · not captured | 0.06 | h−1 | not captured | space_fold (not captured) | T1:row0:col8 |
+| PD (effect) | EC50 (μg/ml) — 0–24 | `Q321` · not captured | 2.82 | μg/ml | not captured | exact (not captured) | T1:row1:col2 |
+| PD (effect) | EC50 (μg/ml) — 0–36 | `Q321` · not captured | 1.62 | μg/ml | not captured | exact (not captured) | T1:row1:col3 |
+| PD (effect) | EC50 (μg/ml) — 0–48 | `Q321` · not captured | 1.09 | μg/ml | not captured | exact (not captured) | T1:row1:col4 |
+| PD (effect) | EC50 (μg/ml) — 3–24 | `Q321` · not captured | 13.04 | μg/ml | not captured | exact (not captured) | T1:row1:col5 |
+| PD (effect) | EC50 (μg/ml) — 3–36 | `Q321` · not captured | 1.18 | μg/ml | not captured | exact (not captured) | T1:row1:col6 |
+| PD (effect) | EC50 (μg/ml) — 3–48 | `Q321` · not captured | 0.98 | μg/ml | not captured | exact (not captured) | T1:row1:col7 |
+| PD (effect) | EC50 (μg/ml) — 12–48 | `Q321` · not captured | 0.78 | μg/ml | not captured | exact (not captured) | T1:row1:col8 |
+| PD (effect) | E 0 (log10CFU/ml) | `Q324` · not captured | -2.13 | log10CFU/ml | not captured | review_gapfill (not captured) | Zhang_2019:review |
+| PD (effect) | Hill’s slope | `Q325` · not captured | 1.73 | not captured | not captured | review_gapfill (not captured) | Zhang_2019:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

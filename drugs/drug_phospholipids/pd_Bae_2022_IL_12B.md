@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A15:0-i15:0 PE drives IL-12B (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for IL-12B; it only states qualitatively that the lipid a15:0-i15:0 PE stimulates pro-inflammatory cytokines (TNFα, IL-6) in human monocytes at higher doses but is significantly less effective at inducing IL-23 (a heterodimer of IL-23A and IL-12B), with no mechanism, EC50, Emax or rate values given for IL-12B specifically (only that 0.15 µmol l−1 is approximately 1% of EC50 in the sequential-treatment context).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bae_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

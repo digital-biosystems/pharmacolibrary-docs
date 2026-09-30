@@ -30,8 +30,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
+| target | prostate gland | `AR` target | DrugBank actor |
 
-<sub>Actors without a tissue in the table: AR (target), Glucocorticoid binding proteins (binder).</sub>
+<sub>Actors without a tissue in the table: Glucocorticoid binding proteins (binder).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

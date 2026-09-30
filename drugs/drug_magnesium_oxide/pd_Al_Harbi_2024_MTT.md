@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bioinspired magnesium oxide nanoparticles (measured concentrations) drives cell viability (HUVECs) (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bioinspired MgO–neem nanoparticles (μg/mL) reduce HUVEC cell viability measured by MTT assay in a concentration-dependent manner; the paper reports no significant effect on normal HUVEC viability (no IC50 given for HUVECs) and does not state a PD model or parameters (Imax, IC50, kin, kout) for this response; the proposed mechanism is ROS-mediated oxidative stress causing cell death.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Harbi_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

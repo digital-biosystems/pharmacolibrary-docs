@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ertugliflozin drives Urinary Glucose Excretion (in g): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes an Emax-type inhibitory model in which ertugliflozin acts on urinary glucose excretion (UGE24, g), but the excerpts provide no concentration or dose driver, no mechanism, and no parameter values (Imax, IC50/EC50, Emax, gamma) to report.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fediuk_2021_3`
 - **model family:** `emax`
 - **driver:** `not_resolved`

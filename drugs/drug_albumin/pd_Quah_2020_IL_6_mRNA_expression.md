@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cornus officinalis Ethanolic Extract (COFE) (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> COFE (0.01–0.3 mg/mL) concentration-dependently inhibits LPS-induced IL-6 mRNA expression in RAW 264.7 cells, attributed to attenuation of NF-κB activation; the paper reports an EC50 of 0.039 mg/mL with Emax values ranging from 73% to 90% for IL-1β, IL-6, and TNF-α mRNA inhibition, but does not state a specific Emax or mechanism details (e.g., kin/kout) for IL-6 alone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Quah_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

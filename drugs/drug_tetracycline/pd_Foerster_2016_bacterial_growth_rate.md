@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Antimicrobial (measured concentrations) drives name (in h^-1): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Antimicrobial concentrations (μg/ml) act on the bacterial growth rate ψ (h^-1) of Neisseria gonorrhoeae via a sigmoid Emax-type pharmacodynamic model (Regoes et al.), in which the antimicrobial inhibits growth from ψmax toward a minimal growth rate ψmin at high concentrations, with potency given by the pharmacodynamic MIC (zMIC, where ψ=0) and steepness by the Hill coefficient κ. The paper does not report tetracycline-specific parameter values in the excerpts; the record lists ψmin values of −9.6 h^-1 for spectinomycin and −0.1 h^-1 for chloramphenicol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Foerster_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Foerster S; Unemo M; Hathaway LJ; Low N; Althaus CL et al. (2016). BMC microbiol
   ·  DOI: [10.1186/s12866-016-0838-9](https://doi.org/10.1186/s12866-016-0838-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Spectinomycin — ψ min (h−1)a | `Q47` · not captured | -9.6 | not captured | not captured | llm (not captured) | Tab1:row3:col3 |
-| Chloramphenicol — ψ min (h−1)a | `Q47` · not captured | -0.1 | not captured | not captured | llm (not captured) | Tab1:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Spectinomycin — ψ min (h−1)a | `Q47` · not captured | -9.6 | not captured | not captured | llm (not captured) | Tab1:row3:col3 |
+| PK (driver) | Chloramphenicol — ψ min (h−1)a | `Q47` · not captured | -0.1 | not captured | not captured | llm (not captured) | Tab1:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

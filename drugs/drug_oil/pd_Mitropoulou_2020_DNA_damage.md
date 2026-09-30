@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sideritis raeseri subsp. raeseri essential oil (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sideritis raeseri subsp. raeseri essential oil (0.05 and 0.5 mg/mL, 20 min pre-treatment) was tested against H2O2-induced (50–100 µM) DNA strand breaks in HaCaT cells measured by alkaline comet assay (arbitrary units, fold-change vs control), with inhibition of DNA damage attributed to cytoprotective/antioxidant activity; the paper does not state a pharmacodynamic model or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mitropoulou_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

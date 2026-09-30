@@ -25,18 +25,18 @@ Ganaxolone, similar to its endogenous counterparts, is a positive allosteric mod
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018_mice](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | — (no model) | 0 | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Zolkowska_2018_mice](drugs/drug_ganaxolone/Ganaxolone_Zolkowska2018_mice.md) | — | — (no model) | 0 | Zolkowska D et al., Intramuscular allopregnanolone and gana…, Epilepsia (2018) | [10.1111/epi.13999](https://doi.org/10.1111/epi.13999) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_aggression.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_anxiety.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_fear_extinction.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014](drugs/drug_ganaxolone/pd_Pinna_2014_locomotion.md) | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014_aggression](drugs/drug_ganaxolone/pd_Pinna_2014_aggression.md) | aggression ← ganaxolone · direct Emax (saturable) effect | — | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014_anxiety](drugs/drug_ganaxolone/pd_Pinna_2014_anxiety.md) | anxiety-like behavior ← ganaxolone · direct Emax (saturable) effect | — | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014_fear_extinction](drugs/drug_ganaxolone/pd_Pinna_2014_fear_extinction.md) | fear extinction ← ganaxolone · direct Emax (saturable) effect | — | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Pinna_2014_locomotion](drugs/drug_ganaxolone/pd_Pinna_2014_locomotion.md) | locomotion ← ganaxolone · direct Emax (saturable) effect | — | Pinna G et al., Ganaxolone improves behavioral deficits…, Frontiers in cellular neuro… (2014) | [10.3389/fncel.2014.00256](https://doi.org/10.3389/fncel.2014.00256) |
 
 ## ADME sites
 

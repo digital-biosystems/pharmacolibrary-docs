@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives diastolic blood pressure (in mm Hg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oral cilazapril (single doses 1.25, 3.75, 10 and 30 mg) reduces diastolic blood pressure dose-dependently and shifts the angiotensin I infusion dose–effect curve rightward, reflecting competitive inhibition of ACE; after cilazapril 4 mg the initial rightward shift was a DR-1 factor of about 8 and the pharmacological effect declined with a half-life of about 4 hours. The paper does not state an explicit PD model (e.g. Emax, IC50, kin/kout or ke0 parameters) for the DBP response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erb_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

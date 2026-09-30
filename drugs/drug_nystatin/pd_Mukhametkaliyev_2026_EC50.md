@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Natamycin (measured concentrations) drives fusion inhibition (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (mg/mL) inhibit NDV-induced membrane fusion in a dose-dependent manner, fitted to a sigmoidal dose–response model with variable slope; the paper does not state a mechanistic model beyond this. The mean fusion-inhibition EC50 is 0.00545 ± 0.00560 mg/mL, with Hill coefficients close to unity, and the paper notes the mechanism (e.g., direct inhibition vs. membrane-mediated effects) remains undetermined.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mukhametkaliyev_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

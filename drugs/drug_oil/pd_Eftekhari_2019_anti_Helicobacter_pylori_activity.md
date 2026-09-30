@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliveria decumbens essential oil (measured concentrations) drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oliveria decumbens essential oil concentrations (µg/mL) were tested against H. pylori growth by agar dilution, giving an MIC of 20.4 µg/mL (thymol alone: MIC 150 µg/mL); the paper reports only MIC values and does not describe a pharmacodynamic model or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eftekhari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cofetuzumab pelidotin (ADC) drives Clinical benefit rate for &gt;= 6 months (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Cofetuzumab pelidotin (ADC) average concentration up to best overall response (Cavg) acts on the binary probability of clinical benefit for ≥6 months (CBR6) via a logistic regression exposure-response model with a log link (log(P/(1−P)) = Int + slope·log(Exposure+1)); higher Cofe-P exposure significantly increased the probability of CBR6 (P &lt; 0.001). The paper does not report Imax/IC50/EC50/Emax/kin/kout/ke0 values for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Biesdorf_2026`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Biesdorf C; Rinas M; Engelhardt B; Saab R; Guo C; Ferlini C; Freise KJ; Menon RM
   ·  DOI: [10.1002/cpt.70432](https://doi.org/10.1002/cpt.70432)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/day) — Population estimate | `Q22` · not captured | 0.911 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row2:col1 |
-| CL (L/day) — % RSE | `Q22` · not captured | 4.14 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row2:col2 |
-| Vc (L) — Population estimate | `Q63` · not captured | 2.95 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row3:col1 |
-| Vc (L) — % RSE | `Q63` · not captured | 2.83 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row3:col2 |
-| Q (L/day) — Population estimate | `Q30` · not captured | 0.0974 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row4:col1 |
-| Q (L/day) — % RSE | `Q30` · not captured | 10.8 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row4:col2 |
-| Vp (L) — Population estimate | `Q64` · not captured | 1.09 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row5:col1 |
-| Vp (L) — % RSE | `Q64` · not captured | 6.56 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row5:col2 |
-| Proportional error — Population estimate | `Q316` · not captured | 0.118 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row10:col1 |
-| Proportional error — % RSE | `Q316` · not captured | 3.20 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row10:col2 |
-| Additive Error — Population estimate | `Q317` · not captured | 0.0108 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row11:col1 |
-| Additive Error — % RSE | `Q317` · not captured | 29.2 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row11:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/day) — Population estimate | `Q22` · not captured | 0.911 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row2:col1 |
+| PK (driver) | CL (L/day) — % RSE | `Q22` · not captured | 4.14 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row2:col2 |
+| PK (driver) | Vc (L) — Population estimate | `Q63` · not captured | 2.95 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row3:col1 |
+| PK (driver) | Vc (L) — % RSE | `Q63` · not captured | 2.83 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row3:col2 |
+| PK (driver) | Q (L/day) — Population estimate | `Q30` · not captured | 0.0974 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row4:col1 |
+| PK (driver) | Q (L/day) — % RSE | `Q30` · not captured | 10.8 | L/day | not captured | exact (not captured) | cpt70432-tbl-0001:row4:col2 |
+| PK (driver) | Vp (L) — Population estimate | `Q64` · not captured | 1.09 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row5:col1 |
+| PK (driver) | Vp (L) — % RSE | `Q64` · not captured | 6.56 | L | not captured | exact (not captured) | cpt70432-tbl-0001:row5:col2 |
+| variability | Proportional error — Population estimate | `Q316` · not captured | 0.118 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row10:col1 |
+| variability | Proportional error — % RSE | `Q316` · not captured | 3.20 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row10:col2 |
+| variability | Additive Error — Population estimate | `Q317` · not captured | 0.0108 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row11:col1 |
+| variability | Additive Error — % RSE | `Q317` · not captured | 29.2 | not captured | not captured | exact (not captured) | cpt70432-tbl-0001:row11:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

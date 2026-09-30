@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thrombolytic agents (alteplase, tenecteplase, reteplase, urokinase) drive name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the PK-PD model, intravenous thrombolytic drugs (urokinase, alteplase, tenecteplase, reteplase) act on plasma fibrinogen concentration through fibrinolytic reactions in a two-compartment systemic PK-PD model coupled to a local fibrinolysis model; urokinase produced the greatest fibrinogen depletion (highest ICH risk) while reteplase left fibrinogen unaffected. The paper does not state a specific PD mechanism form (e.g., Emax/IC50) or any potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the fibrinogen response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

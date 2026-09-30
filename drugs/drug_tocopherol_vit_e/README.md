@@ -24,17 +24,17 @@ Tocopherol, due to its antioxidant properties, is studied for its use in prevent
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_iv_d6_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_iv_d6_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Violet_2020_po_d3_tocopherol](drugs/drug_tocopherol_vit_e/TocopherolVitE_Violet2020_po_d3_tocopherol.md) | — | 1-compartment (no model) | 5 | Violet PC et al., Vitamin E sequestration by liver fat in…, JCI insight (2020) | [10.1172/jci.insight.133309](https://doi.org/10.1172/jci.insight.133309) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Vargas_2014](drugs/drug_tocopherol_vit_e/pd_Vargas_2014_unknown.md) | Vargas Fda S et al., Dose-response and time-course of α-toco…, Brazilian dental journal (2014) | [10.1590/0103-6440201302434](https://doi.org/10.1590/0103-6440201302434) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Gansane_2023](drugs/drug_tocopherol_vit_e/pd_Gansane_2023_ACPR.md) | Gansane A et al., Randomized, open-label, phase 2a study…, Malaria journal (2023) | [10.1186/s12936-022-04420-2](https://doi.org/10.1186/s12936-022-04420-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Vargas_2014_unknown](drugs/drug_tocopherol_vit_e/pd_Vargas_2014_unknown.md) | cell viability ← alpha-tocopherol · stimulation effect | — | Vargas Fda S et al., Dose-response and time-course of α-toco…, Brazilian dental journal (2014) | [10.1590/0103-6440201302434](https://doi.org/10.1590/0103-6440201302434) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Gansane_2023_ACPR](drugs/drug_tocopherol_vit_e/pd_Gansane_2023_ACPR.md) | Day 28 PCR-adjusted ACPR ← artefenomel · categorical (graded) response model | — | Gansane A et al., Randomized, open-label, phase 2a study…, Malaria journal (2023) | [10.1186/s12936-022-04420-2](https://doi.org/10.1186/s12936-022-04420-2) |
 
 ## ADME sites
 
@@ -47,6 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transporter | DrugBank actor |
 | absorption | placenta | `ABCB1` transporter | DrugBank actor |
 | absorption | small intestine | `ABCB1` transporter | DrugBank actor |
+| absorption | testis | `ABCB1` transporter | DrugBank actor |
 | metabolism | bile duct | <sub>“…These intermediate-chain metabolites can be found in human feces and urine. The catabolic…”</sub> | prose |
 | metabolism | kidney | `CYP4F2` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate, `CYP4F2` substrate | DrugBank actor |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Morphine equivalent dose (the dose) drives name (in count): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide excerpts describing the mechanism; the record indicates hydrocodone (as morphine equivalent dose, mg) acts on the count of Clinically Meaningful Events (CMEs) via a dose-only linear stimulation model, with no potency or rate values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2004`
 - **model family:** `linear`
 - **driver:** `dose_only`

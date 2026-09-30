@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Reserpine drives monoamines (in unknown): indirect response — drug inhibits the loss of monoamines.
+
+**Model:** No model was generated from this record.
+
+> Reserpine (0.1, 0.5, 1 mg/kg daily for 3 days in rats) depletes monoamines (MAs) in prefrontal cortex, spinal cord, and amygdala via a precursor-pool indirect response model in which reserpine inhibits MA production from a precursor pool (kin = 6.1 × 10−3 mg/h, kp = 8.6 × 10−4 h−1, kout = 2.7 × 10−2 h−1, with a parallel transit chain k0 = 1.9 × 10−1 h−1); the paper does not report Imax, IC50, EC50, Emax, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alfosea-Cuadrado_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,53 +30,53 @@ Alfosea-Cuadrado GM; Zarzoso-Foj J; Adell A; Valverde-Navarro AA; González-Sole
   ·  DOI: [10.3390/pharmaceutics16081101](https://doi.org/10.3390/pharmaceutics16081101)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 19.14 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col1 |
-| ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 226 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col3 |
-| ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 28 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col4 |
-| ka1 (h−1/kg) — Bootstrap Results | `Q49` · not captured | 19.14 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col5 |
-| ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 45.43 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col1 |
-| ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 12 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col2 |
-| ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 32 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col3 |
-| F1 — Population PKPD Model Estimates | `Q40` · not captured | 0.95 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col1 |
-| F1 — Population PKPD Model Estimates | `Q40` · not captured | 3 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col2 |
-| F1 — Population PKPD Model Estimates | `Q40` · not captured | 179 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col3 |
-| F1 — Population PKPD Model Estimates | `Q40` · not captured | 22 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col4 |
-| V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 1.3 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col1 |
-| V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 21 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col2 |
-| V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 59 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col3 |
-| V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 30 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col4 |
-| CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 11 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col2 |
-| CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 37 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col3 |
-| CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 25 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col4 |
-| kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 6.97 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col1 |
-| kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 18 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col2 |
-| kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 97 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col3 |
-| kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 9 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col4 |
-| kin (mg/h) AMY — Bootstrap Results | `Q327` · not captured | 7.04 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col5 |
-| kin (mg/h) PFC — Population PKPD Model Estimates | `Q327` · not captured | 2.10 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col1 |
-| kin (mg/h) PFC — Population PKPD Model Estimates | `Q327` · not captured | 18 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col2 |
-| kin (mg/h) PFC — Bootstrap Results | `Q327` · not captured | 2.16 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col5 |
-| kin (mg/h) SC — Population PKPD Model Estimates | `Q327` · not captured | 1.78 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col1 |
-| kin (mg/h) SC — Population PKPD Model Estimates | `Q327` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col2 |
-| kin (mg/h) SC — Bootstrap Results | `Q327` · not captured | 1.76 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col5 |
-| kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 14 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col2 |
-| kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 29 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col3 |
-| kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 37 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col4 |
-| kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 11 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col2 |
-| kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 22 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col3 |
-| kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 24 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col4 |
-| SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 47 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col2 |
-| SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 358 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col3 |
-| SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 11 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col4 |
-| k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 6 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col2 |
-| k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 9 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col3 |
-| k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 67 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col4 |
-| SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 1.25 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col1 |
-| SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 20 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col2 |
-| SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 74 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col3 |
-| SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 18 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 19.14 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col1 |
+| PK (driver) | ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 226 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col3 |
+| PK (driver) | ka1 (h−1/kg) — Population PKPD Model Estimates | `Q95` · not captured | 28 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col4 |
+| PK (driver) | ka1 (h−1/kg) — Bootstrap Results | `Q49` · not captured | 19.14 | h−1/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row3:col5 |
+| PK (driver) | ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 45.43 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col1 |
+| PK (driver) | ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 12 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col2 |
+| PK (driver) | ka2 (mg/h/kg) — Population PKPD Model Estimates | `Q49` · not captured | 32 | mg/h/kg | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row4:col3 |
+| PK (driver) | F1 — Population PKPD Model Estimates | `Q40` · not captured | 0.95 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col1 |
+| PK (driver) | F1 — Population PKPD Model Estimates | `Q40` · not captured | 3 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col2 |
+| PK (driver) | F1 — Population PKPD Model Estimates | `Q40` · not captured | 179 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col3 |
+| PK (driver) | F1 — Population PKPD Model Estimates | `Q40` · not captured | 22 | not captured | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row5:col4 |
+| PK (driver) | V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 1.3 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col1 |
+| PK (driver) | V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 21 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col2 |
+| PK (driver) | V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 59 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col3 |
+| PK (driver) | V (mL/kg) — Population PKPD Model Estimates | `Q61` · not captured | 30 | mL/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row6:col4 |
+| PK (driver) | CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 11 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col2 |
+| PK (driver) | CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 37 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col3 |
+| PK (driver) | CL (mL/h/kg) — Population PKPD Model Estimates | `Q22` · not captured | 25 | mL/h/kg | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row7:col4 |
+| PD (effect) | kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 6.97 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col1 |
+| PD (effect) | kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 18 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col2 |
+| PD (effect) | kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 97 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col3 |
+| PD (effect) | kin (mg/h) AMY — Population PKPD Model Estimates | `Q327` · not captured | 9 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col4 |
+| PD (effect) | kin (mg/h) AMY — Bootstrap Results | `Q327` · not captured | 7.04 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row8:col5 |
+| PD (effect) | kin (mg/h) PFC — Population PKPD Model Estimates | `Q327` · not captured | 2.10 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col1 |
+| PD (effect) | kin (mg/h) PFC — Population PKPD Model Estimates | `Q327` · not captured | 18 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col2 |
+| PD (effect) | kin (mg/h) PFC — Bootstrap Results | `Q327` · not captured | 2.16 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row9:col5 |
+| PD (effect) | kin (mg/h) SC — Population PKPD Model Estimates | `Q327` · not captured | 1.78 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col1 |
+| PD (effect) | kin (mg/h) SC — Population PKPD Model Estimates | `Q327` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col2 |
+| PD (effect) | kin (mg/h) SC — Bootstrap Results | `Q327` · not captured | 1.76 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-16-01101-t002:row10:col5 |
+| model term | kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 14 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col2 |
+| model term | kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 29 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col3 |
+| model term | kp (h−1) — Population PKPD Model Estimates | `Q410` · not captured | 37 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row11:col4 |
+| PD (effect) | kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 11 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col2 |
+| PD (effect) | kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 22 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col3 |
+| PD (effect) | kout (h−1) — Population PKPD Model Estimates | `Q328` · not captured | 24 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row12:col4 |
+| PD (effect) | SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 47 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col2 |
+| PD (effect) | SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 358 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col3 |
+| PD (effect) | SLP1 (h) — Population PKPD Model Estimates | `Q326` · not captured | 11 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row13:col4 |
+| PK (driver) | k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 6 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col2 |
+| PK (driver) | k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 9 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col3 |
+| PK (driver) | k0 (h−1) — Population PKPD Model Estimates | `Q307` · not captured | 67 | h−1 | not captured | exact (not captured) | pharmaceutics-16-01101-t002:row14:col4 |
+| PD (effect) | SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 1.25 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col1 |
+| PD (effect) | SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 20 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col2 |
+| PD (effect) | SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 74 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col3 |
+| PD (effect) | SLP2 (h) — Population PKPD Model Estimates | `Q326` · not captured | 18 | h | not captured | llm (not captured) | pharmaceutics-16-01101-t002:row15:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Deguelin (measured concentrations) drives CREB3L1 level (in level) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Deguelin (µM concentrations, no PK model) reduces CREB3L1 levels in GH3/MMQ prolactinoma cells and xenografts; the paper describes the mechanism as inhibition of ODC-mediated putrescine synthesis, lowering Rac1 activity and PI3K/AKT signaling, which downregulates CREB3L1 (and thereby PIT-1 and PRL). No quantitative PD model parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the CREB3L1 response are given; the only potency values reported are deguelin CCK-8 IC50s of 0.1518 µM (GH3) and 0.2381 µM (MMQ) for cell viability.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gong_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glucagon drives glucose (in mg/dL): indirect response — drug inhibits the production of glucose.
+
+**Model:** No model was generated from this record.
+
+> Glucagon plasma concentration stimulates glucose (mg/dL) via an indirect response model in which glucagon stimulates glucose production (Kin), with an Emax/EC50 relationship; lower baseline glucose was associated with higher Emax and lower Kin, and carry-over insulin effect was modeled as a time-dependent increase in glucose elimination (Kout). The excerpts do not report numeric values for Emax, EC50, Kin, or Kout.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `James_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

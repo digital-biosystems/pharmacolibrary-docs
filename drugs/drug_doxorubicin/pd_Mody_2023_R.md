@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from this paper's PK model) drives cell viability (in %): indirect response — drug inhibits the loss of cell viability.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin concentrations (µM) drive a decrease in AC16 cardiomyocyte cell viability (%), modeled as DOX stimulating cell death with a delay described by transit compartments (an indirect/turnover model); the paper does not state the potency (IC50/Imax) or turnover rate values in the provided text.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mody_2023`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
@@ -21,18 +31,18 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
   ·  DOI: [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/h/1.8m2) — Estimate (% RSE) | `Q22` · not captured | 53.3 | L/h/1.8m2 | not captured | exact (not captured) | Tab2:row2:col2 |
-| V (L/1.8m2) — Estimate (% RSE) | `Q61` · not captured | 17.7 | L/1.8m2 | not captured | exact (not captured) | Tab2:row3:col2 |
-| Q2 (L/h/1.8m2) — Estimate (% RSE) | `Q30` · not captured | 58.7 | L/h/1.8m2 | not captured | special_case (not captured) | Tab2:row4:col2 |
-| V2 (L/1.8m2) — Estimate (% RSE) | `Q64` · not captured | 1830 | L/1.8m2 | not captured | exact (not captured) | Tab2:row5:col2 |
-| Q3 (L/h/1.8m2) — Estimate (% RSE) | `Q308` · not captured | 21.8 | L/h/1.8m2 | not captured | exact (not captured) | Tab2:row6:col2 |
-| V3 (L/1.8m2) — Estimate (% RSE) | `Q77` · not captured | 71.6 | L/1.8m2 | not captured | exact (not captured) | Tab2:row7:col2 |
-| kel (h−1) — Estimate (% RSE) | `Q47` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row9:col2 |
-| k12 (h−1) — Estimate (% RSE) | `Q301` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row10:col2 |
-| k21 (h−1) — Estimate (% RSE) | `Q302` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row11:col2 |
-| V (L) — Estimate (% RSE) | `Q61` · not captured | 14.6 | L | not captured | exact (not captured) | Tab2:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/h/1.8m2) — Estimate (% RSE) | `Q22` · not captured | 53.3 | L/h/1.8m2 | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | V (L/1.8m2) — Estimate (% RSE) | `Q61` · not captured | 17.7 | L/1.8m2 | not captured | exact (not captured) | Tab2:row3:col2 |
+| PK (driver) | Q2 (L/h/1.8m2) — Estimate (% RSE) | `Q30` · not captured | 58.7 | L/h/1.8m2 | not captured | special_case (not captured) | Tab2:row4:col2 |
+| PK (driver) | V2 (L/1.8m2) — Estimate (% RSE) | `Q64` · not captured | 1830 | L/1.8m2 | not captured | exact (not captured) | Tab2:row5:col2 |
+| PK (driver) | Q3 (L/h/1.8m2) — Estimate (% RSE) | `Q308` · not captured | 21.8 | L/h/1.8m2 | not captured | exact (not captured) | Tab2:row6:col2 |
+| PK (driver) | V3 (L/1.8m2) — Estimate (% RSE) | `Q77` · not captured | 71.6 | L/1.8m2 | not captured | exact (not captured) | Tab2:row7:col2 |
+| PK (driver) | kel (h−1) — Estimate (% RSE) | `Q47` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row9:col2 |
+| PK (driver) | k12 (h−1) — Estimate (% RSE) | `Q301` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row10:col2 |
+| PK (driver) | k21 (h−1) — Estimate (% RSE) | `Q302` · not captured | 1 | h−1 | not captured | exact (not captured) | Tab2:row11:col2 |
+| PK (driver) | V (L) — Estimate (% RSE) | `Q61` · not captured | 14.6 | L | not captured | exact (not captured) | Tab2:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

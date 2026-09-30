@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT-100 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model linking BCT-100 concentrations to tumor volume; it only reports dose-dependent suppression of relative tumor volume in 211H and H226 xenografts after intraperitoneal BCT-100 (20 and 60 mg/kg twice weekly), with relative tumor volumes of 70.5% and 41.4% (211H, day 20) and 65.5% and 44.4% (H226, day 35) of control. No mechanism, Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lam_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

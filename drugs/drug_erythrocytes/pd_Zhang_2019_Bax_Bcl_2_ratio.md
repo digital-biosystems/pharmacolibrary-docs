@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myristoyl-CM4 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Myristoyl-CM4 (2–4 μM cytotoxic range; IC50 2 μM in K562/MDR and 3 μM in Jurkat cells) concentration-dependently increased the Bax/Bcl-2 ratio in these leukemia cells (e.g. from ~0.5 to 2.5 at 6 μM in Jurkat cells) by increasing pro-apoptotic Bax and decreasing anti-apoptotic Bcl-2, consistent with mitochondria-mediated apoptosis; the paper does not report a formal PD model or parameters such as Emax, IC50 for the ratio, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

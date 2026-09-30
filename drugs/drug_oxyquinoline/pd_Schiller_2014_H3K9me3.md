@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-octyl ester of IOX1 (measured concentrations) drives H3K9me3 levels (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The n-octyl ester of IOX1 (compound 5) inhibits JmjC histone lysine demethylases, causing a dose-dependent increase in H3K9me3 levels in HeLa cells (cellular EC50 = 3.8 μm for H3K9me3 demethylation inhibition; in vitro IC50 against KDM4C = 3.9 μm, with other enzymes ranging from 6.3 μm for KDM4E to 45.0 μm for KDM4E ester and 16.3–34.9 μm for KDM2A/KDM3A/KDM5C). The mechanism is direct inhibition of 2OG-dependent demethylase activity (likely by the intact ester form, which is not efficiently hydrolysed in cells); no kinetic PD model parameters (Imax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schiller_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,32 +30,32 @@ Schiller R; Scozzafava G; Tumber A; Wickens JR; Bush JT; Rai G; et al. et al. (2
   ·  DOI: [10.1002/cmdc.201300428](https://doi.org/10.1002/cmdc.201300428)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 [μm][a] | `Q322` · not captured | 1 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col2 |
-| IC50 [μm][a] — KDM4C | `Q322` · not captured | 0.6 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col3 |
-| IC50 [μm][a] — KDM4E | `Q322` · not captured | 2.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col4 |
-| IC50 [μm][a] — KDM2A | `Q322` · not captured | 1.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col5 |
-| IC50 [μm][a] — KDM3A | `Q322` · not captured | 0.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col6 |
-| IC50 [μm][a] — KDM5C | `Q322` · not captured | 19.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col7 |
-| IC50 [μm][a] — KDM6B | `Q322` · not captured | 1.4 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col8 |
-| IC50 [μm][a] — PHD2 | `Q322` · not captured | 33.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col9 |
-| IC50 [μm][a] | `Q322` · not captured | 2 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col2 |
-| IC50 [μm][a] — KDM4C | `Q322` · not captured | 10.7 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col3 |
-| IC50 [μm][a] — KDM4E | `Q322` · not captured | 12.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col4 |
-| IC50 [μm][a] — KDM2A | `Q322` · not captured | 30.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col5 |
-| IC50 [μm][a] — KDM3A | `Q322` · not captured | 14.5 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col6 |
-| IC50 [μm][a] — KDM5C | `Q322` · not captured | 34.9 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col7 |
-| IC50 [μm][a] — KDM6B | `Q322` · not captured | 10.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col8 |
-| IC50 [μm][a] — PHD2 | `Q322` · not captured | 41.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col9 |
-| IC50 [μm][a] | `Q322` · not captured | 4 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col2 |
-| IC50 [μm][a] — KDM4C | `Q322` · not captured | 5.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col3 |
-| IC50 [μm][a] — KDM4E | `Q322` · not captured | 6.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col4 |
-| IC50 [μm][a] — KDM2A | `Q322` · not captured | 16.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col5 |
-| IC50 [μm][a] — KDM3A | `Q322` · not captured | 29.4 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col6 |
-| IC50 [μm][a] | `Q322` · not captured | 5 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col2 |
-| IC50 [μm][a] — KDM4C | `Q322` · not captured | 3.9 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col3 |
-| IC50 [μm][a] — KDM4E | `Q322` · not captured | 45.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 [μm][a] | `Q322` · not captured | 1 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col2 |
+| PD (effect) | IC50 [μm][a] — KDM4C | `Q322` · not captured | 0.6 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col3 |
+| PD (effect) | IC50 [μm][a] — KDM4E | `Q322` · not captured | 2.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col4 |
+| PD (effect) | IC50 [μm][a] — KDM2A | `Q322` · not captured | 1.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col5 |
+| PD (effect) | IC50 [μm][a] — KDM3A | `Q322` · not captured | 0.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col6 |
+| PD (effect) | IC50 [μm][a] — KDM5C | `Q322` · not captured | 19.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col7 |
+| PD (effect) | IC50 [μm][a] — KDM6B | `Q322` · not captured | 1.4 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col8 |
+| PD (effect) | IC50 [μm][a] — PHD2 | `Q322` · not captured | 33.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row0:col9 |
+| PD (effect) | IC50 [μm][a] | `Q322` · not captured | 2 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col2 |
+| PD (effect) | IC50 [μm][a] — KDM4C | `Q322` · not captured | 10.7 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col3 |
+| PD (effect) | IC50 [μm][a] — KDM4E | `Q322` · not captured | 12.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col4 |
+| PD (effect) | IC50 [μm][a] — KDM2A | `Q322` · not captured | 30.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col5 |
+| PD (effect) | IC50 [μm][a] — KDM3A | `Q322` · not captured | 14.5 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col6 |
+| PD (effect) | IC50 [μm][a] — KDM5C | `Q322` · not captured | 34.9 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col7 |
+| PD (effect) | IC50 [μm][a] — KDM6B | `Q322` · not captured | 10.8 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col8 |
+| PD (effect) | IC50 [μm][a] — PHD2 | `Q322` · not captured | 41.1 | μm | not captured | llm_confirmed (not captured) | tbl3:row1:col9 |
+| PD (effect) | IC50 [μm][a] | `Q322` · not captured | 4 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col2 |
+| PD (effect) | IC50 [μm][a] — KDM4C | `Q322` · not captured | 5.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col3 |
+| PD (effect) | IC50 [μm][a] — KDM4E | `Q322` · not captured | 6.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col4 |
+| PD (effect) | IC50 [μm][a] — KDM2A | `Q322` · not captured | 16.3 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col5 |
+| PD (effect) | IC50 [μm][a] — KDM3A | `Q322` · not captured | 29.4 | μm | not captured | llm_confirmed (not captured) | tbl3:row2:col6 |
+| PD (effect) | IC50 [μm][a] | `Q322` · not captured | 5 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col2 |
+| PD (effect) | IC50 [μm][a] — KDM4C | `Q322` · not captured | 3.9 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col3 |
+| PD (effect) | IC50 [μm][a] — KDM4E | `Q322` · not captured | 45.0 | μm | not captured | llm_confirmed (not captured) | tbl3:row3:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

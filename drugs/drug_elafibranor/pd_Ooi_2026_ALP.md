@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Elafibranor and GFT1007 (sum of AUC) drive Alkaline phosphatase (in U/L): indirect response — drug inhibits the production of Alkaline phosphatase.
+
+**Model:** No model was generated from this record.
+
+> Elafibranor (with GFT1007, summed AUCτ,ss in μmol·h/L) acts on serum ALP (U/L) via an indirect response model in which the drug inhibits the zero-order production rate constant kin through an Emax function with Hill coefficient fixed to 1; saturation was reached at AUCτ,ss sum above ~30 μmol·h/L, and most 80 mg/day patients exceeded the AUCτ,ss,50 for ALP response. The paper does not report numeric values for kin, Emax, or AUCτ,ss,50 in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ooi_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

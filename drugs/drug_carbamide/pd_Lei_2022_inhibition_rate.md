@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** T24 (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of the pyrazolecarbamide derivative T24 (mg/L) act on the mycelial growth inhibition rate (%) of Rhizoctonia solani in vitro; the paper does not describe a mechanistic PD model, only EC50 values from inhibition-rate testing: T24 EC50 = 0.45 mg/L, versus hymexazol 10.49 mg/L and bixafen 0.25 mg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lei_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,11 +29,11 @@
 not matched (stem Lei_2022)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| T24 — EC50 (mg/L) | `Q321` · not captured | 0.45 | mg/L | not captured | llm (not captured) | T2:row1:col2 |
-| hymexazol — EC50 (mg/L) | `Q321` · not captured | 10.49 | mg/L | not captured | llm (not captured) | T2:row2:col2 |
-| bixafen — EC50 (mg/L) | `Q321` · not captured | 0.25 | mg/L | not captured | llm (not captured) | T2:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | T24 — EC50 (mg/L) | `Q321` · not captured | 0.45 | mg/L | not captured | llm (not captured) | T2:row1:col2 |
+| PD (effect) | hymexazol — EC50 (mg/L) | `Q321` · not captured | 10.49 | mg/L | not captured | llm (not captured) | T2:row2:col2 |
+| PD (effect) | bixafen — EC50 (mg/L) | `Q321` · not captured | 0.25 | mg/L | not captured | llm (not captured) | T2:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

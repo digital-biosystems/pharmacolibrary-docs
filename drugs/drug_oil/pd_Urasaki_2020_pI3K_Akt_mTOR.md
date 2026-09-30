@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Copaiba essential oil (measured concentrations) drives pI3K/Akt/mTOR signaling pathway activation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Copaiba essential oil concentrations stimulate phosphorylation of Akt1/2/3, mTOR, and p70S6K (pI3K/Akt/mTOR pathway) in SH-SY5Y cells, with effects peaking at 30 min post-treatment and a direct concentration–response EC50 of approximately 80 ng/mL; the paper does not state an explicit PD model form (e.g., Emax parameters, kin/kout, or effect compartment), and CB2 agonist/inverse agonist experiments suggest CB2-mediated involvement without giving quantitative potency values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Urasaki_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

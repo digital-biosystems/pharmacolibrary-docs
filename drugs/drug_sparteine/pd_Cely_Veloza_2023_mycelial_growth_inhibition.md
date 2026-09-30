@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinolizidines (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism; it reports concentration–response IC50 values for quinolizidine alkaloids inhibiting Fusarium oxysporum mycelial growth, with matrine-type compound 18 most potent (IC50 = 10.28 µM, fungicidal), cytisine-type compound 12 (IC50 = 11.3 µM) and 14 in group I, and lupanine-type compounds ranging from 28.5 µM (compound 3) to 417.5 µM (compound 7), with lupanine (compound 1) at IC50 110.5 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cely-Veloza_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

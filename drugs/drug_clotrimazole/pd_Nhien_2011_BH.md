@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chloroquine (measured concentrations) drives hemozoin formation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Clotrimazole (CLT) concentrations inhibit β-hematin (BH) formation in vitro (100 µM heme, 5 or 12 h incubation), acting by inhibition of heme crystallization; the paper does not state a specific PD mechanism (e.g., Emax or turnover model) for CLT. With linoleic acid (LA) as inducer, IC50 values ranged from 2.2 to 203.3 µM (5 h) and 2.8 to 185.0 µM (12 h), increasing with inducer and heme concentration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nhien_2011`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,32 +30,32 @@ Nhien NT; Huy NT; Uyen DT; Deharo E; Hoa PT; Hirayama K; et al. et al. (2011). T
   ·  DOI: [10.2149/tmh.2011-29](https://doi.org/10.2149/tmh.2011-29)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Q — Linoleic acid concentration | `Q30` · not captured | 62.5 | not captured | not captured | exact (not captured) | T3:row5:col1 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 2.9 | not captured | not captured | exact (not captured) | T3:row5:col2 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 0.7 | not captured | not captured | exact (not captured) | T3:row5:col3 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 27.5 | not captured | not captured | exact (not captured) | T3:row5:col5 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 4.0 | not captured | not captured | exact (not captured) | T3:row5:col6 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 0.9 | not captured | not captured | exact (not captured) | T3:row5:col7 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 203.3 | not captured | not captured | exact (not captured) | T3:row6:col1 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 13.5 | not captured | not captured | exact (not captured) | T3:row6:col2 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 2.2 | not captured | not captured | exact (not captured) | T3:row6:col3 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 108.3 | not captured | not captured | exact (not captured) | T3:row6:col5 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 13.5 | not captured | not captured | exact (not captured) | T3:row6:col6 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 3.3 | not captured | not captured | exact (not captured) | T3:row6:col7 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 33.3 | not captured | not captured | exact (not captured) | T3:row10:col1 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 5.8 | not captured | not captured | exact (not captured) | T3:row10:col2 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 0.7 | not captured | not captured | exact (not captured) | T3:row10:col3 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 23.0 | not captured | not captured | exact (not captured) | T3:row10:col5 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 2.0 | not captured | not captured | exact (not captured) | T3:row10:col6 |
-| Q — Linoleic acid concentration | `Q30` · not captured | 0.8 | not captured | not captured | exact (not captured) | T3:row10:col7 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 185.0 | not captured | not captured | exact (not captured) | T3:row11:col1 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 17.1 | not captured | not captured | exact (not captured) | T3:row11:col2 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 3.6 | not captured | not captured | exact (not captured) | T3:row11:col3 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 80.5 | not captured | not captured | exact (not captured) | T3:row11:col5 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 5.3 | not captured | not captured | exact (not captured) | T3:row11:col6 |
-| CLT — Linoleic acid concentration | `Q22` · not captured | 2.8 | not captured | not captured | exact (not captured) | T3:row11:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 62.5 | not captured | not captured | exact (not captured) | T3:row5:col1 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 2.9 | not captured | not captured | exact (not captured) | T3:row5:col2 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 0.7 | not captured | not captured | exact (not captured) | T3:row5:col3 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 27.5 | not captured | not captured | exact (not captured) | T3:row5:col5 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 4.0 | not captured | not captured | exact (not captured) | T3:row5:col6 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 0.9 | not captured | not captured | exact (not captured) | T3:row5:col7 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 203.3 | not captured | not captured | exact (not captured) | T3:row6:col1 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 13.5 | not captured | not captured | exact (not captured) | T3:row6:col2 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 2.2 | not captured | not captured | exact (not captured) | T3:row6:col3 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 108.3 | not captured | not captured | exact (not captured) | T3:row6:col5 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 13.5 | not captured | not captured | exact (not captured) | T3:row6:col6 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 3.3 | not captured | not captured | exact (not captured) | T3:row6:col7 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 33.3 | not captured | not captured | exact (not captured) | T3:row10:col1 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 5.8 | not captured | not captured | exact (not captured) | T3:row10:col2 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 0.7 | not captured | not captured | exact (not captured) | T3:row10:col3 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 23.0 | not captured | not captured | exact (not captured) | T3:row10:col5 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 2.0 | not captured | not captured | exact (not captured) | T3:row10:col6 |
+| PK (driver) | Q — Linoleic acid concentration | `Q30` · not captured | 0.8 | not captured | not captured | exact (not captured) | T3:row10:col7 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 185.0 | not captured | not captured | exact (not captured) | T3:row11:col1 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 17.1 | not captured | not captured | exact (not captured) | T3:row11:col2 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 3.6 | not captured | not captured | exact (not captured) | T3:row11:col3 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 80.5 | not captured | not captured | exact (not captured) | T3:row11:col5 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 5.3 | not captured | not captured | exact (not captured) | T3:row11:col6 |
+| PK (driver) | CLT — Linoleic acid concentration | `Q22` · not captured | 2.8 | not captured | not captured | exact (not captured) | T3:row11:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

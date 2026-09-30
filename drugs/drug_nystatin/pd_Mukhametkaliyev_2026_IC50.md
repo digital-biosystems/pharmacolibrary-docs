@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Natamycin (measured concentrations) drives neuraminidase inhibition (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (mg/mL) inhibit NDV neuraminidase activity in a dose-dependent manner, fitted to a sigmoidal dose–response model with variable slope, giving an IC50 of 0.0117 ± 0.0029 mg/mL. The paper does not state a mechanism, noting the inhibition may reflect direct enzyme inhibition or indirect membrane perturbation, and no kinetic parameters (Imax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mukhametkaliyev_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

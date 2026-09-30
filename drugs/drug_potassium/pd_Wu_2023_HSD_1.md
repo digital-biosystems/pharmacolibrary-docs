@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SPI-62 (measured concentrations) drives Hepatic HSD-1 activity (in %): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> SPI-62 plasma concentrations (nM) directly inhibit hepatic HSD-1 activity (%) with no effect delay, described by a TMDD-PD model with a proportional inhibitory Imax/IC50 relationship: Imax 99.9%, IC50 0.0787 nM, gamma (RSE 7%), plus TMDD parameters CLa 10.1, Ktr 8.82, Kon 8.43, Koff 0.229, and Rtotal 5460.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2023`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`
@@ -20,38 +30,38 @@ Wu N; Katz DA; An G et al. (2023). Clinical pharmacokinetics 62
   ·  DOI: [10.1007/s40262-023-01278-8](https://doi.org/10.1007/s40262-023-01278-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CLa — Estimates | `Q358` · not captured | 10.1 | not captured | not captured | llm (not captured) | Tab2:row2:col3 |
-| Ktr — Estimates | `Q306` · not captured | 8.82 | not captured | not captured | exact (not captured) | Tab2:row5:col3 |
-| Ktr — RSE (%) | `Q306` · not captured | 11 | not captured | not captured | exact (not captured) | Tab2:row5:col4 |
-| Kon — Estimates | `Q329` · not captured | 8.43 | not captured | not captured | exact (not captured) | Tab2:row6:col3 |
-| Kon — RSE (%) | `Q329` · not captured | 6 | not captured | not captured | exact (not captured) | Tab2:row6:col4 |
-| Koff — Estimates | `Q330` · not captured | 0.229 | not captured | not captured | exact (not captured) | Tab2:row7:col3 |
-| Koff — RSE (%) | `Q330` · not captured | 31 | not captured | not captured | exact (not captured) | Tab2:row7:col4 |
-| Rtotal — Estimates | `Q333` · not captured | 5460 | not captured | not captured | llm (not captured) | Tab2:row8:col3 |
-| Rtotal — RSE (%) | `Q333` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row8:col4 |
-| γ — RSE (%) | `Q89` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row9:col4 |
-| Imax — Estimates | `Q323` · not captured | 99.9 | not captured | not captured | exact (not captured) | Tab2:row10:col3 |
-| Imax — RSE (%) | `Q323` · not captured | 2 | not captured | not captured | exact (not captured) | Tab2:row10:col4 |
-| IC50 — Estimates | `Q322` · not captured | 0.0787 | nM | not captured | exact (not captured) | Tab2:row11:col3 |
-| IC50 — RSE (%) | `Q322` · not captured | 16 | nM | not captured | exact (not captured) | Tab2:row11:col4 |
-| IIVVcentral — RSE (%) | `Q312` · not captured | 33 | not captured | not captured | llm (not captured) | Tab2:row12:col4 |
-| IIVVcentral — Shrinkage (%) | `Q318` · not captured | 14 | not captured | not captured | llm (not captured) | Tab2:row12:col5 |
-| IIVCL — RSE (%) | `Q312` · not captured | 84 | not captured | not captured | llm (not captured) | Tab2:row13:col4 |
-| IIVCL — Shrinkage (%) | `Q318` · not captured | 21 | not captured | not captured | llm (not captured) | Tab2:row13:col5 |
-| IIVKtr — RSE (%) | `Q338` · not captured | 38 | not captured | not captured | llm (not captured) | Tab2:row14:col4 |
-| IIVKtr — Shrinkage (%) | `Q318` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row14:col5 |
-| IIVKoff — RSE (%) | `Q312` · not captured | 55 | not captured | not captured | llm (not captured) | Tab2:row15:col4 |
-| IIVKoff — Shrinkage (%) | `Q318` · not captured | 15 | not captured | not captured | llm (not captured) | Tab2:row15:col5 |
-| IIVRtotal — RSE (%) | `Q312` · not captured | 31 | not captured | not captured | llm (not captured) | Tab2:row16:col4 |
-| IIVRtotal — Shrinkage (%) | `Q318` · not captured | 9 | not captured | not captured | llm (not captured) | Tab2:row16:col5 |
-| IIVIC50 — RSE (%) | `Q322` · not captured | 63 | nM | not captured | llm (not captured) | Tab2:row17:col4 |
-| IIVIC50 — Shrinkage (%) | `Q318` · not captured | 37 | not captured | not captured | llm (not captured) | Tab2:row17:col5 |
-| σPK — RSE (%) | `Q315` · not captured | 3 | not captured | not captured | llm (not captured) | Tab2:row18:col4 |
-| σPK — Shrinkage (%) | `Q318` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row18:col5 |
-| σPD — RSE (%) | `Q315` · not captured | 12 | not captured | not captured | llm (not captured) | Tab2:row19:col4 |
-| σPD — Shrinkage (%) | `Q318` · not captured | 5 | not captured | not captured | llm (not captured) | Tab2:row19:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CLa — Estimates | `Q358` · not captured | 10.1 | not captured | not captured | llm (not captured) | Tab2:row2:col3 |
+| PK (driver) | Ktr — Estimates | `Q306` · not captured | 8.82 | not captured | not captured | exact (not captured) | Tab2:row5:col3 |
+| PK (driver) | Ktr — RSE (%) | `Q306` · not captured | 11 | not captured | not captured | exact (not captured) | Tab2:row5:col4 |
+| PD (effect) | Kon — Estimates | `Q329` · not captured | 8.43 | not captured | not captured | exact (not captured) | Tab2:row6:col3 |
+| PD (effect) | Kon — RSE (%) | `Q329` · not captured | 6 | not captured | not captured | exact (not captured) | Tab2:row6:col4 |
+| PD (effect) | Koff — Estimates | `Q330` · not captured | 0.229 | not captured | not captured | exact (not captured) | Tab2:row7:col3 |
+| PD (effect) | Koff — RSE (%) | `Q330` · not captured | 31 | not captured | not captured | exact (not captured) | Tab2:row7:col4 |
+| PD (effect) | Rtotal — Estimates | `Q333` · not captured | 5460 | not captured | not captured | llm (not captured) | Tab2:row8:col3 |
+| PD (effect) | Rtotal — RSE (%) | `Q333` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row8:col4 |
+| PK (driver) | γ — RSE (%) | `Q89` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row9:col4 |
+| PD (effect) | Imax — Estimates | `Q323` · not captured | 99.9 | not captured | not captured | exact (not captured) | Tab2:row10:col3 |
+| PD (effect) | Imax — RSE (%) | `Q323` · not captured | 2 | not captured | not captured | exact (not captured) | Tab2:row10:col4 |
+| PD (effect) | IC50 — Estimates | `Q322` · not captured | 0.0787 | nM | not captured | exact (not captured) | Tab2:row11:col3 |
+| PD (effect) | IC50 — RSE (%) | `Q322` · not captured | 16 | nM | not captured | exact (not captured) | Tab2:row11:col4 |
+| variability | IIVVcentral — RSE (%) | `Q312` · not captured | 33 | not captured | not captured | llm (not captured) | Tab2:row12:col4 |
+| variability | IIVVcentral — Shrinkage (%) | `Q318` · not captured | 14 | not captured | not captured | llm (not captured) | Tab2:row12:col5 |
+| variability | IIVCL — RSE (%) | `Q312` · not captured | 84 | not captured | not captured | llm (not captured) | Tab2:row13:col4 |
+| variability | IIVCL — Shrinkage (%) | `Q318` · not captured | 21 | not captured | not captured | llm (not captured) | Tab2:row13:col5 |
+| PD (effect) | IIVKtr — RSE (%) | `Q338` · not captured | 38 | not captured | not captured | llm (not captured) | Tab2:row14:col4 |
+| variability | IIVKtr — Shrinkage (%) | `Q318` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row14:col5 |
+| variability | IIVKoff — RSE (%) | `Q312` · not captured | 55 | not captured | not captured | llm (not captured) | Tab2:row15:col4 |
+| variability | IIVKoff — Shrinkage (%) | `Q318` · not captured | 15 | not captured | not captured | llm (not captured) | Tab2:row15:col5 |
+| variability | IIVRtotal — RSE (%) | `Q312` · not captured | 31 | not captured | not captured | llm (not captured) | Tab2:row16:col4 |
+| variability | IIVRtotal — Shrinkage (%) | `Q318` · not captured | 9 | not captured | not captured | llm (not captured) | Tab2:row16:col5 |
+| PD (effect) | IIVIC50 — RSE (%) | `Q322` · not captured | 63 | nM | not captured | llm (not captured) | Tab2:row17:col4 |
+| variability | IIVIC50 — Shrinkage (%) | `Q318` · not captured | 37 | not captured | not captured | llm (not captured) | Tab2:row17:col5 |
+| variability | σPK — RSE (%) | `Q315` · not captured | 3 | not captured | not captured | llm (not captured) | Tab2:row18:col4 |
+| variability | σPK — Shrinkage (%) | `Q318` · not captured | 7 | not captured | not captured | llm (not captured) | Tab2:row18:col5 |
+| variability | σPD — RSE (%) | `Q315` · not captured | 12 | not captured | not captured | llm (not captured) | Tab2:row19:col4 |
+| variability | σPD — Shrinkage (%) | `Q318` · not captured | 5 | not captured | not captured | llm (not captured) | Tab2:row19:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

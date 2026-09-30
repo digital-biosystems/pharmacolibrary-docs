@@ -22,10 +22,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_healthy Chinese subjects](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | — (no model) | 0 | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_healthy Chinese volunteers](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | — (no model) | 0 | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2020_healthy Chinese subjects](drugs/drug_eptifibatide/Eptifibatide_Liu2020_healthy_chinese_subjects.md) | — | — (no model) | 0 | Liu L et al., Clinical Evaluation of the Tolerability…, Clinical pharmacology in dr… (2020) | [10.1002/cpdd.717](https://doi.org/10.1002/cpdd.717) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wang_2015_healthy Chinese volunteers](drugs/drug_eptifibatide/Eptifibatide_Wang2015_healthy_chinese_volunteers.md) | — | — (no model) | 0 | Wang XP et al., Population pharmacokinetics and safety…, International journal of cl… (2015) | [10.5414/CP202196](https://doi.org/10.5414/CP202196) |
 
 ## ADME sites
 

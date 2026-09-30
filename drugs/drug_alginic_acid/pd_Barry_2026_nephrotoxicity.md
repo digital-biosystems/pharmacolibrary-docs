@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vancomycin drives name (in event): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Vancomycin exposure, summarized as cumulative AUC (AUCcum), was linked to the binary nephrotoxicity event (RIFLE-defined) in a categorical exposure-response model, with prior vancomycin exposure (occasion) retained as a significant covariate; the paper does not state a mechanistic PD form (no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are reported), and AUC24 showed no correlation with nephrotoxicity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barry_2026`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -20,23 +30,23 @@ Barry J; van Hasselt JGC; Evans M; Hirsch EB; Dunitz J; Shockley S; Billings J; 
   ·  DOI: [10.1002/ppul.71748](https://doi.org/10.1002/ppul.71748)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (L/hr) — Final model | `Q22` · not captured | 5.06 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col1 |
-| CL (L/hr) — Final model | `Q22` · not captured | 4.4 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col2 |
-| CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 5.04 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col3 |
-| CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 4.62 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col4 |
-| CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 5.49 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col5 |
-| θCrCL~CL — Final model | `Q22` · not captured | 1.04 | not captured | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col1 |
-| θCrCL~CL — Final model | `Q22` · not captured | 8.5 | not captured | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col2 |
-| θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 1.03 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col3 |
-| θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 0.82 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col4 |
-| θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 1.17 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col5 |
-| V (L) — Final model | `Q61` · not captured | 92.7 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col1 |
-| V (L) — Final model | `Q61` · not captured | 12.4 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col2 |
-| V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 91.6 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col3 |
-| V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 71.6 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col4 |
-| V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 116.9 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (L/hr) — Final model | `Q22` · not captured | 5.06 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col1 |
+| PK (driver) | CL (L/hr) — Final model | `Q22` · not captured | 4.4 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col2 |
+| PK (driver) | CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 5.04 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col3 |
+| PK (driver) | CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 4.62 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col4 |
+| PK (driver) | CL (L/hr) — Bootstrap (n = 2000) | `Q22` · not captured | 5.49 | L/hr | not captured | exact (not captured) | ppul71748-tbl-0003:row2:col5 |
+| PK (driver) | θCrCL~CL — Final model | `Q22` · not captured | 1.04 | not captured | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col1 |
+| PK (driver) | θCrCL~CL — Final model | `Q22` · not captured | 8.5 | not captured | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col2 |
+| PK (driver) | θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 1.03 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col3 |
+| PK (driver) | θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 0.82 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col4 |
+| PK (driver) | θCrCL~CL — Bootstrap (n = 2000) | `Q22` · not captured | 1.17 | n = 2000 | not captured | llm_confirmed (not captured) | ppul71748-tbl-0003:row3:col5 |
+| PK (driver) | V (L) — Final model | `Q61` · not captured | 92.7 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col1 |
+| PK (driver) | V (L) — Final model | `Q61` · not captured | 12.4 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col2 |
+| PK (driver) | V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 91.6 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col3 |
+| PK (driver) | V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 71.6 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col4 |
+| PK (driver) | V (L) — Bootstrap (n = 2000) | `Q61` · not captured | 116.9 | L | not captured | exact (not captured) | ppul71748-tbl-0003:row4:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

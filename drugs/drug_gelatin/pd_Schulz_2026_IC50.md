@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports HTRF biochemical IC50 values (nM) for inhibition of KIT/PDGFRA kinase variants by ripretinib (2.2 nM), sunitinib (8.0 nM), regorafenib (9.4 nM), avapritinib (11 nM), imatinib (51 nM) and numerous synthesized analogs (e.g. 44: 37 nM; 45: 62 nM; 33: 92 nM; 43: 100 nM; 34: 140 nM; 36: 110 nM; 26: 1600 nM; 25: 1700 nM; up to ≥18,000 nM for weak analogs); these are direct in vitro enzyme-inhibition potencies, and the paper does not describe a pharmacodynamic model with kin/kout, ke0 or Emax parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schulz_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,192 +30,192 @@ Schulz T; Beerbaum M; Scrima A; Jantzen H; Teuber A; Mühlenberg T; Ebel L; Garc
   ·  DOI: [10.1038/s41467-026-76340-7](https://doi.org/10.1038/s41467-026-76340-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| HTRF IC50 [nM] — imatinib | `Q322` · not captured | 51 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col3 |
-| HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 8.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col4 |
-| HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 9.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col5 |
-| HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.2 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col6 |
-| HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 11 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col7 |
-| HTRF IC50 [nM] — 11 | `Q322` · not captured | 2200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col9 |
-| HTRF IC50 [nM] — 12 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col10 |
-| HTRF IC50 [nM] — 13 | `Q322` · not captured | 13000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col11 |
-| HTRF IC50 [nM] — 15 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col13 |
-| HTRF IC50 [nM] — 19 | `Q322` · not captured | 4900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col17 |
-| HTRF IC50 [nM] — 20 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col18 |
-| HTRF IC50 [nM] — 22 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col20 |
-| HTRF IC50 [nM] — 23 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col21 |
-| HTRF IC50 [nM] — 24 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col22 |
-| HTRF IC50 [nM] — 25 | `Q322` · not captured | 1700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col23 |
-| HTRF IC50 [nM] — 26 | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col24 |
-| HTRF IC50 [nM] — 27 | `Q322` · not captured | 12000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col25 |
-| HTRF IC50 [nM] — 28 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col26 |
-| HTRF IC50 [nM] — 30 | `Q322` · not captured | 3300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col28 |
-| HTRF IC50 [nM] — 33 | `Q322` · not captured | 92 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col31 |
-| HTRF IC50 [nM] — 34 | `Q322` · not captured | 140 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col32 |
-| HTRF IC50 [nM] — 36 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col34 |
-| HTRF IC50 [nM] — 38 | `Q322` · not captured | 9400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col36 |
-| HTRF IC50 [nM] — 39 | `Q322` · not captured | 5700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col37 |
-| HTRF IC50 [nM] — 40 | `Q322` · not captured | 2800 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col38 |
-| HTRF IC50 [nM] — 41 | `Q322` · not captured | 2400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col39 |
-| HTRF IC50 [nM] — 43 | `Q322` · not captured | 100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col41 |
-| HTRF IC50 [nM] — 44 | `Q322` · not captured | 37 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col42 |
-| HTRF IC50 [nM] — 45 | `Q322` · not captured | 62 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col43 |
-| HTRF IC50 [nM] — 46 | `Q322` · not captured | 6400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col44 |
-| HTRF IC50 [nM] — 47 | `Q322` · not captured | 740 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col45 |
-| HTRF IC50 [nM] — 48 | `Q322` · not captured | 23 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col46 |
-| HTRF IC50 [nM] — imatinib | `Q322` · not captured | 850 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
-| HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 330 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
-| HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 210 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
-| HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col6 |
-| HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 0.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col7 |
-| HTRF IC50 [nM] — 11 | `Q322` · not captured | 9 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col9 |
-| HTRF IC50 [nM] — 12 | `Q322` · not captured | 2200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col10 |
-| HTRF IC50 [nM] — 13 | `Q322` · not captured | 200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col11 |
-| HTRF IC50 [nM] — 14 | `Q322` · not captured | 690 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col12 |
-| HTRF IC50 [nM] — 15 | `Q322` · not captured | 3900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col13 |
-| HTRF IC50 [nM] — 16 | `Q322` · not captured | 1380 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col14 |
-| HTRF IC50 [nM] — 17 | `Q322` · not captured | 21 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col15 |
-| HTRF IC50 [nM] — 18 | `Q322` · not captured | 22 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col16 |
-| HTRF IC50 [nM] — 19 | `Q322` · not captured | 68 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col17 |
-| HTRF IC50 [nM] — 20 | `Q322` · not captured | 260 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col18 |
-| HTRF IC50 [nM] — 22 | `Q322` · not captured | 860 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col20 |
-| HTRF IC50 [nM] — 23 | `Q322` · not captured | 620 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col21 |
-| HTRF IC50 [nM] — 24 | `Q322` · not captured | 280 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col22 |
-| HTRF IC50 [nM] — 25 | `Q322` · not captured | 19 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col23 |
-| HTRF IC50 [nM] — 26 | `Q322` · not captured | 60 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col24 |
-| HTRF IC50 [nM] — 27 | `Q322` · not captured | 14 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col25 |
-| HTRF IC50 [nM] — 28 | `Q322` · not captured | 470 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col26 |
-| HTRF IC50 [nM] — 30 | `Q322` · not captured | 53 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col28 |
-| HTRF IC50 [nM] — 31 | `Q322` · not captured | 63 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col29 |
-| HTRF IC50 [nM] — 32 | `Q322` · not captured | 1300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col30 |
-| HTRF IC50 [nM] — 33 | `Q322` · not captured | 2.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col31 |
-| HTRF IC50 [nM] — 34 | `Q322` · not captured | 4.1 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col32 |
-| HTRF IC50 [nM] — 35 | `Q322` · not captured | 160 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col33 |
-| HTRF IC50 [nM] — 36 | `Q322` · not captured | 6.5 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col34 |
-| HTRF IC50 [nM] — 37 | `Q322` · not captured | 8300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col35 |
-| HTRF IC50 [nM] — 38 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col36 |
-| HTRF IC50 [nM] — 39 | `Q322` · not captured | 34 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col37 |
-| HTRF IC50 [nM] — 40 | `Q322` · not captured | 29 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col38 |
-| HTRF IC50 [nM] — 41 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col39 |
-| HTRF IC50 [nM] — 42 | `Q322` · not captured | 4700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col40 |
-| HTRF IC50 [nM] — 43 | `Q322` · not captured | 1.1 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col41 |
-| HTRF IC50 [nM] — 44 | `Q322` · not captured | 0.7 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col42 |
-| HTRF IC50 [nM] — 45 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col43 |
-| HTRF IC50 [nM] — 46 | `Q322` · not captured | 83 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col44 |
-| HTRF IC50 [nM] — 47 | `Q322` · not captured | 23 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col45 |
-| HTRF IC50 [nM] — 48 | `Q322` · not captured | 2.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col46 |
-| HTRF IC50 [nM] — imatinib | `Q322` · not captured | 43 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
-| HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 6.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
-| HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 4.7 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
-| HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 4.2 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col6 |
-| HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 0.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col7 |
-| HTRF IC50 [nM] — 11 | `Q322` · not captured | 18 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col9 |
-| HTRF IC50 [nM] — 12 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col10 |
-| HTRF IC50 [nM] — 13 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col11 |
-| HTRF IC50 [nM] — 14 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col12 |
-| HTRF IC50 [nM] — 15 | `Q322` · not captured | 9600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col13 |
-| HTRF IC50 [nM] — 16 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col14 |
-| HTRF IC50 [nM] — 17 | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col15 |
-| HTRF IC50 [nM] — 18 | `Q322` · not captured | 500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col16 |
-| HTRF IC50 [nM] — 19 | `Q322` · not captured | 160 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col17 |
-| HTRF IC50 [nM] — 20 | `Q322` · not captured | 2400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col18 |
-| HTRF IC50 [nM] — 21 | `Q322` · not captured | 16000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col19 |
-| HTRF IC50 [nM] — 22 | `Q322` · not captured | 5100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col20 |
-| HTRF IC50 [nM] — 23 | `Q322` · not captured | 4400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col21 |
-| HTRF IC50 [nM] — 24 | `Q322` · not captured | 760 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col22 |
-| HTRF IC50 [nM] — 25 | `Q322` · not captured | 100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col23 |
-| HTRF IC50 [nM] — 26 | `Q322` · not captured | 180 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col24 |
-| HTRF IC50 [nM] — 27 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col25 |
-| HTRF IC50 [nM] — 28 | `Q322` · not captured | 9600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col26 |
-| HTRF IC50 [nM] — 29 | `Q322` · not captured | 1500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col27 |
-| HTRF IC50 [nM] — 30 | `Q322` · not captured | 170 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col28 |
-| HTRF IC50 [nM] — 31 | `Q322` · not captured | 970 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col29 |
-| HTRF IC50 [nM] — 33 | `Q322` · not captured | 4.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col31 |
-| HTRF IC50 [nM] — 34 | `Q322` · not captured | 5.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col32 |
-| HTRF IC50 [nM] — 35 | `Q322` · not captured | 300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col33 |
-| HTRF IC50 [nM] — 36 | `Q322` · not captured | 4.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col34 |
-| HTRF IC50 [nM] — 37 | `Q322` · not captured | 5900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col35 |
-| HTRF IC50 [nM] — 38 | `Q322` · not captured | 190 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col36 |
-| HTRF IC50 [nM] — 39 | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col37 |
-| HTRF IC50 [nM] — 40 | `Q322` · not captured | 43 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col38 |
-| HTRF IC50 [nM] — 41 | `Q322` · not captured | 27 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col39 |
-| HTRF IC50 [nM] — 42 | `Q322` · not captured | 7600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col40 |
-| HTRF IC50 [nM] — 43 | `Q322` · not captured | 2.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col41 |
-| HTRF IC50 [nM] — 44 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col42 |
-| HTRF IC50 [nM] — 45 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col43 |
-| HTRF IC50 [nM] — 46 | `Q322` · not captured | 180 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col44 |
-| HTRF IC50 [nM] — 47 | `Q322` · not captured | 32 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col45 |
-| HTRF IC50 [nM] — 48 | `Q322` · not captured | 1.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col46 |
-| HTRF IC50 [nM] — imatinib | `Q322` · not captured | 2100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
-| HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
-| HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
-| HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col6 |
-| HTRF IC50 [nM] — 11 | `Q322` · not captured | 1.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col9 |
-| HTRF IC50 [nM] — 12 | `Q322` · not captured | 8000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col10 |
-| HTRF IC50 [nM] — 13 | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col11 |
-| HTRF IC50 [nM] — 14 | `Q322` · not captured | 2100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col12 |
-| HTRF IC50 [nM] — 15 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col13 |
-| HTRF IC50 [nM] — 16 | `Q322` · not captured | 1700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col14 |
-| HTRF IC50 [nM] — 17 | `Q322` · not captured | 24 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col15 |
-| HTRF IC50 [nM] — 18 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col16 |
-| HTRF IC50 [nM] — 19 | `Q322` · not captured | 96 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col17 |
-| HTRF IC50 [nM] — 20 | `Q322` · not captured | 190 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col18 |
-| HTRF IC50 [nM] — 22 | `Q322` · not captured | 650 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col20 |
-| HTRF IC50 [nM] — 23 | `Q322` · not captured | 490 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col21 |
-| HTRF IC50 [nM] — 24 | `Q322` · not captured | 270 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col22 |
-| HTRF IC50 [nM] — 25 | `Q322` · not captured | 15 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col23 |
-| HTRF IC50 [nM] — 26 | `Q322` · not captured | 88 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col24 |
-| HTRF IC50 [nM] — 27 | `Q322` · not captured | 19 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col25 |
-| HTRF IC50 [nM] — 28 | `Q322` · not captured | 540 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col26 |
-| HTRF IC50 [nM] — 29 | `Q322` · not captured | 500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col27 |
-| HTRF IC50 [nM] — 30 | `Q322` · not captured | 36 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col28 |
-| HTRF IC50 [nM] — 31 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col29 |
-| HTRF IC50 [nM] — 32 | `Q322` · not captured | 1500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col30 |
-| HTRF IC50 [nM] — 33 | `Q322` · not captured | 0.5 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col31 |
-| HTRF IC50 [nM] — 34 | `Q322` · not captured | 3.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col32 |
-| HTRF IC50 [nM] — 35 | `Q322` · not captured | 77 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col33 |
-| HTRF IC50 [nM] — 36 | `Q322` · not captured | 1.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col34 |
-| HTRF IC50 [nM] — 37 | `Q322` · not captured | 4900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col35 |
-| HTRF IC50 [nM] — 38 | `Q322` · not captured | 62 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col36 |
-| HTRF IC50 [nM] — 39 | `Q322` · not captured | 42 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col37 |
-| HTRF IC50 [nM] — 40 | `Q322` · not captured | 6.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col38 |
-| HTRF IC50 [nM] — 41 | `Q322` · not captured | 13 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col39 |
-| HTRF IC50 [nM] — 42 | `Q322` · not captured | 2700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col40 |
-| HTRF IC50 [nM] — 43 | `Q322` · not captured | 0.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col41 |
-| HTRF IC50 [nM] — 46 | `Q322` · not captured | 36 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col44 |
-| HTRF IC50 [nM] — 47 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col45 |
-| HTRF IC50 [nM] — imatinib | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
-| HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 890 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
-| HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 320 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
-| HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 250 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col6 |
-| HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 95 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col7 |
-| HTRF IC50 [nM] — 10 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col8 |
-| HTRF IC50 [nM] — 11 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col9 |
-| HTRF IC50 [nM] — 13 | `Q322` · not captured | 6500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col11 |
-| HTRF IC50 [nM] — 14 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col12 |
-| HTRF IC50 [nM] — 15 | `Q322` · not captured | 19000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col13 |
-| HTRF IC50 [nM] — 19 | `Q322` · not captured | 6100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col17 |
-| HTRF IC50 [nM] — 20 | `Q322` · not captured | 8500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col18 |
-| HTRF IC50 [nM] — 22 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col20 |
-| HTRF IC50 [nM] — 23 | `Q322` · not captured | 19000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col21 |
-| HTRF IC50 [nM] — 24 | `Q322` · not captured | 13000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col22 |
-| HTRF IC50 [nM] — 25 | `Q322` · not captured | 5700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col23 |
-| HTRF IC50 [nM] — 27 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col25 |
-| HTRF IC50 [nM] — 30 | `Q322` · not captured | 2000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col28 |
-| HTRF IC50 [nM] — 33 | `Q322` · not captured | 1200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col31 |
-| HTRF IC50 [nM] — 34 | `Q322` · not captured | 150 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col32 |
-| HTRF IC50 [nM] — 36 | `Q322` · not captured | 460 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col34 |
-| HTRF IC50 [nM] — 38 | `Q322` · not captured | 4500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col36 |
-| HTRF IC50 [nM] — 39 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col37 |
-| HTRF IC50 [nM] — 40 | `Q322` · not captured | 10000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col38 |
-| HTRF IC50 [nM] — 41 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col39 |
-| HTRF IC50 [nM] — 43 | `Q322` · not captured | 74 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col41 |
-| HTRF IC50 [nM] — 44 | `Q322` · not captured | 290 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col42 |
-| HTRF IC50 [nM] — 45 | `Q322` · not captured | 37 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col43 |
-| HTRF IC50 [nM] — 46 | `Q322` · not captured | 8800 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col44 |
-| HTRF IC50 [nM] — 47 | `Q322` · not captured | 2500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col45 |
-| HTRF IC50 [nM] — 48 | `Q322` · not captured | 280 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col46 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | HTRF IC50 [nM] — imatinib | `Q322` · not captured | 51 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col3 |
+| PD (effect) | HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 8.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col4 |
+| PD (effect) | HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 9.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col5 |
+| PD (effect) | HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.2 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col6 |
+| PD (effect) | HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 11 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col7 |
+| PD (effect) | HTRF IC50 [nM] — 11 | `Q322` · not captured | 2200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col9 |
+| PD (effect) | HTRF IC50 [nM] — 12 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col10 |
+| PD (effect) | HTRF IC50 [nM] — 13 | `Q322` · not captured | 13000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col11 |
+| PD (effect) | HTRF IC50 [nM] — 15 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col13 |
+| PD (effect) | HTRF IC50 [nM] — 19 | `Q322` · not captured | 4900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col17 |
+| PD (effect) | HTRF IC50 [nM] — 20 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col18 |
+| PD (effect) | HTRF IC50 [nM] — 22 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col20 |
+| PD (effect) | HTRF IC50 [nM] — 23 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col21 |
+| PD (effect) | HTRF IC50 [nM] — 24 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col22 |
+| PD (effect) | HTRF IC50 [nM] — 25 | `Q322` · not captured | 1700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col23 |
+| PD (effect) | HTRF IC50 [nM] — 26 | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col24 |
+| PD (effect) | HTRF IC50 [nM] — 27 | `Q322` · not captured | 12000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col25 |
+| PD (effect) | HTRF IC50 [nM] — 28 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col26 |
+| PD (effect) | HTRF IC50 [nM] — 30 | `Q322` · not captured | 3300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col28 |
+| PD (effect) | HTRF IC50 [nM] — 33 | `Q322` · not captured | 92 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col31 |
+| PD (effect) | HTRF IC50 [nM] — 34 | `Q322` · not captured | 140 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col32 |
+| PD (effect) | HTRF IC50 [nM] — 36 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col34 |
+| PD (effect) | HTRF IC50 [nM] — 38 | `Q322` · not captured | 9400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col36 |
+| PD (effect) | HTRF IC50 [nM] — 39 | `Q322` · not captured | 5700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col37 |
+| PD (effect) | HTRF IC50 [nM] — 40 | `Q322` · not captured | 2800 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col38 |
+| PD (effect) | HTRF IC50 [nM] — 41 | `Q322` · not captured | 2400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col39 |
+| PD (effect) | HTRF IC50 [nM] — 43 | `Q322` · not captured | 100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col41 |
+| PD (effect) | HTRF IC50 [nM] — 44 | `Q322` · not captured | 37 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col42 |
+| PD (effect) | HTRF IC50 [nM] — 45 | `Q322` · not captured | 62 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col43 |
+| PD (effect) | HTRF IC50 [nM] — 46 | `Q322` · not captured | 6400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col44 |
+| PD (effect) | HTRF IC50 [nM] — 47 | `Q322` · not captured | 740 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col45 |
+| PD (effect) | HTRF IC50 [nM] — 48 | `Q322` · not captured | 23 | unknown | not captured | llm_confirmed (not captured) | Tab1:row0:col46 |
+| PD (effect) | HTRF IC50 [nM] — imatinib | `Q322` · not captured | 850 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
+| PD (effect) | HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 330 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
+| PD (effect) | HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 210 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
+| PD (effect) | HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col6 |
+| PD (effect) | HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 0.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col7 |
+| PD (effect) | HTRF IC50 [nM] — 11 | `Q322` · not captured | 9 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col9 |
+| PD (effect) | HTRF IC50 [nM] — 12 | `Q322` · not captured | 2200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col10 |
+| PD (effect) | HTRF IC50 [nM] — 13 | `Q322` · not captured | 200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col11 |
+| PD (effect) | HTRF IC50 [nM] — 14 | `Q322` · not captured | 690 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col12 |
+| PD (effect) | HTRF IC50 [nM] — 15 | `Q322` · not captured | 3900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col13 |
+| PD (effect) | HTRF IC50 [nM] — 16 | `Q322` · not captured | 1380 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col14 |
+| PD (effect) | HTRF IC50 [nM] — 17 | `Q322` · not captured | 21 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col15 |
+| PD (effect) | HTRF IC50 [nM] — 18 | `Q322` · not captured | 22 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col16 |
+| PD (effect) | HTRF IC50 [nM] — 19 | `Q322` · not captured | 68 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col17 |
+| PD (effect) | HTRF IC50 [nM] — 20 | `Q322` · not captured | 260 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col18 |
+| PD (effect) | HTRF IC50 [nM] — 22 | `Q322` · not captured | 860 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col20 |
+| PD (effect) | HTRF IC50 [nM] — 23 | `Q322` · not captured | 620 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col21 |
+| PD (effect) | HTRF IC50 [nM] — 24 | `Q322` · not captured | 280 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col22 |
+| PD (effect) | HTRF IC50 [nM] — 25 | `Q322` · not captured | 19 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col23 |
+| PD (effect) | HTRF IC50 [nM] — 26 | `Q322` · not captured | 60 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col24 |
+| PD (effect) | HTRF IC50 [nM] — 27 | `Q322` · not captured | 14 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col25 |
+| PD (effect) | HTRF IC50 [nM] — 28 | `Q322` · not captured | 470 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col26 |
+| PD (effect) | HTRF IC50 [nM] — 30 | `Q322` · not captured | 53 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col28 |
+| PD (effect) | HTRF IC50 [nM] — 31 | `Q322` · not captured | 63 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col29 |
+| PD (effect) | HTRF IC50 [nM] — 32 | `Q322` · not captured | 1300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col30 |
+| PD (effect) | HTRF IC50 [nM] — 33 | `Q322` · not captured | 2.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col31 |
+| PD (effect) | HTRF IC50 [nM] — 34 | `Q322` · not captured | 4.1 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col32 |
+| PD (effect) | HTRF IC50 [nM] — 35 | `Q322` · not captured | 160 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col33 |
+| PD (effect) | HTRF IC50 [nM] — 36 | `Q322` · not captured | 6.5 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col34 |
+| PD (effect) | HTRF IC50 [nM] — 37 | `Q322` · not captured | 8300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col35 |
+| PD (effect) | HTRF IC50 [nM] — 38 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col36 |
+| PD (effect) | HTRF IC50 [nM] — 39 | `Q322` · not captured | 34 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col37 |
+| PD (effect) | HTRF IC50 [nM] — 40 | `Q322` · not captured | 29 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col38 |
+| PD (effect) | HTRF IC50 [nM] — 41 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col39 |
+| PD (effect) | HTRF IC50 [nM] — 42 | `Q322` · not captured | 4700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col40 |
+| PD (effect) | HTRF IC50 [nM] — 43 | `Q322` · not captured | 1.1 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col41 |
+| PD (effect) | HTRF IC50 [nM] — 44 | `Q322` · not captured | 0.7 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col42 |
+| PD (effect) | HTRF IC50 [nM] — 45 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col43 |
+| PD (effect) | HTRF IC50 [nM] — 46 | `Q322` · not captured | 83 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col44 |
+| PD (effect) | HTRF IC50 [nM] — 47 | `Q322` · not captured | 23 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col45 |
+| PD (effect) | HTRF IC50 [nM] — 48 | `Q322` · not captured | 2.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row1:col46 |
+| PD (effect) | HTRF IC50 [nM] — imatinib | `Q322` · not captured | 43 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
+| PD (effect) | HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 6.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
+| PD (effect) | HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 4.7 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
+| PD (effect) | HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 4.2 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col6 |
+| PD (effect) | HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 0.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col7 |
+| PD (effect) | HTRF IC50 [nM] — 11 | `Q322` · not captured | 18 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col9 |
+| PD (effect) | HTRF IC50 [nM] — 12 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col10 |
+| PD (effect) | HTRF IC50 [nM] — 13 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col11 |
+| PD (effect) | HTRF IC50 [nM] — 14 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col12 |
+| PD (effect) | HTRF IC50 [nM] — 15 | `Q322` · not captured | 9600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col13 |
+| PD (effect) | HTRF IC50 [nM] — 16 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col14 |
+| PD (effect) | HTRF IC50 [nM] — 17 | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col15 |
+| PD (effect) | HTRF IC50 [nM] — 18 | `Q322` · not captured | 500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col16 |
+| PD (effect) | HTRF IC50 [nM] — 19 | `Q322` · not captured | 160 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col17 |
+| PD (effect) | HTRF IC50 [nM] — 20 | `Q322` · not captured | 2400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col18 |
+| PD (effect) | HTRF IC50 [nM] — 21 | `Q322` · not captured | 16000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col19 |
+| PD (effect) | HTRF IC50 [nM] — 22 | `Q322` · not captured | 5100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col20 |
+| PD (effect) | HTRF IC50 [nM] — 23 | `Q322` · not captured | 4400 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col21 |
+| PD (effect) | HTRF IC50 [nM] — 24 | `Q322` · not captured | 760 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col22 |
+| PD (effect) | HTRF IC50 [nM] — 25 | `Q322` · not captured | 100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col23 |
+| PD (effect) | HTRF IC50 [nM] — 26 | `Q322` · not captured | 180 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col24 |
+| PD (effect) | HTRF IC50 [nM] — 27 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col25 |
+| PD (effect) | HTRF IC50 [nM] — 28 | `Q322` · not captured | 9600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col26 |
+| PD (effect) | HTRF IC50 [nM] — 29 | `Q322` · not captured | 1500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col27 |
+| PD (effect) | HTRF IC50 [nM] — 30 | `Q322` · not captured | 170 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col28 |
+| PD (effect) | HTRF IC50 [nM] — 31 | `Q322` · not captured | 970 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col29 |
+| PD (effect) | HTRF IC50 [nM] — 33 | `Q322` · not captured | 4.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col31 |
+| PD (effect) | HTRF IC50 [nM] — 34 | `Q322` · not captured | 5.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col32 |
+| PD (effect) | HTRF IC50 [nM] — 35 | `Q322` · not captured | 300 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col33 |
+| PD (effect) | HTRF IC50 [nM] — 36 | `Q322` · not captured | 4.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col34 |
+| PD (effect) | HTRF IC50 [nM] — 37 | `Q322` · not captured | 5900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col35 |
+| PD (effect) | HTRF IC50 [nM] — 38 | `Q322` · not captured | 190 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col36 |
+| PD (effect) | HTRF IC50 [nM] — 39 | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col37 |
+| PD (effect) | HTRF IC50 [nM] — 40 | `Q322` · not captured | 43 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col38 |
+| PD (effect) | HTRF IC50 [nM] — 41 | `Q322` · not captured | 27 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col39 |
+| PD (effect) | HTRF IC50 [nM] — 42 | `Q322` · not captured | 7600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col40 |
+| PD (effect) | HTRF IC50 [nM] — 43 | `Q322` · not captured | 2.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col41 |
+| PD (effect) | HTRF IC50 [nM] — 44 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col42 |
+| PD (effect) | HTRF IC50 [nM] — 45 | `Q322` · not captured | 0.8 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col43 |
+| PD (effect) | HTRF IC50 [nM] — 46 | `Q322` · not captured | 180 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col44 |
+| PD (effect) | HTRF IC50 [nM] — 47 | `Q322` · not captured | 32 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col45 |
+| PD (effect) | HTRF IC50 [nM] — 48 | `Q322` · not captured | 1.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row2:col46 |
+| PD (effect) | HTRF IC50 [nM] — imatinib | `Q322` · not captured | 2100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
+| PD (effect) | HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 1600 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
+| PD (effect) | HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
+| PD (effect) | HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 2.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col6 |
+| PD (effect) | HTRF IC50 [nM] — 11 | `Q322` · not captured | 1.4 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col9 |
+| PD (effect) | HTRF IC50 [nM] — 12 | `Q322` · not captured | 8000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col10 |
+| PD (effect) | HTRF IC50 [nM] — 13 | `Q322` · not captured | 220 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col11 |
+| PD (effect) | HTRF IC50 [nM] — 14 | `Q322` · not captured | 2100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col12 |
+| PD (effect) | HTRF IC50 [nM] — 15 | `Q322` · not captured | 17000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col13 |
+| PD (effect) | HTRF IC50 [nM] — 16 | `Q322` · not captured | 1700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col14 |
+| PD (effect) | HTRF IC50 [nM] — 17 | `Q322` · not captured | 24 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col15 |
+| PD (effect) | HTRF IC50 [nM] — 18 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col16 |
+| PD (effect) | HTRF IC50 [nM] — 19 | `Q322` · not captured | 96 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col17 |
+| PD (effect) | HTRF IC50 [nM] — 20 | `Q322` · not captured | 190 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col18 |
+| PD (effect) | HTRF IC50 [nM] — 22 | `Q322` · not captured | 650 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col20 |
+| PD (effect) | HTRF IC50 [nM] — 23 | `Q322` · not captured | 490 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col21 |
+| PD (effect) | HTRF IC50 [nM] — 24 | `Q322` · not captured | 270 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col22 |
+| PD (effect) | HTRF IC50 [nM] — 25 | `Q322` · not captured | 15 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col23 |
+| PD (effect) | HTRF IC50 [nM] — 26 | `Q322` · not captured | 88 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col24 |
+| PD (effect) | HTRF IC50 [nM] — 27 | `Q322` · not captured | 19 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col25 |
+| PD (effect) | HTRF IC50 [nM] — 28 | `Q322` · not captured | 540 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col26 |
+| PD (effect) | HTRF IC50 [nM] — 29 | `Q322` · not captured | 500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col27 |
+| PD (effect) | HTRF IC50 [nM] — 30 | `Q322` · not captured | 36 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col28 |
+| PD (effect) | HTRF IC50 [nM] — 31 | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col29 |
+| PD (effect) | HTRF IC50 [nM] — 32 | `Q322` · not captured | 1500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col30 |
+| PD (effect) | HTRF IC50 [nM] — 33 | `Q322` · not captured | 0.5 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col31 |
+| PD (effect) | HTRF IC50 [nM] — 34 | `Q322` · not captured | 3.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col32 |
+| PD (effect) | HTRF IC50 [nM] — 35 | `Q322` · not captured | 77 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col33 |
+| PD (effect) | HTRF IC50 [nM] — 36 | `Q322` · not captured | 1.0 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col34 |
+| PD (effect) | HTRF IC50 [nM] — 37 | `Q322` · not captured | 4900 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col35 |
+| PD (effect) | HTRF IC50 [nM] — 38 | `Q322` · not captured | 62 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col36 |
+| PD (effect) | HTRF IC50 [nM] — 39 | `Q322` · not captured | 42 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col37 |
+| PD (effect) | HTRF IC50 [nM] — 40 | `Q322` · not captured | 6.6 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col38 |
+| PD (effect) | HTRF IC50 [nM] — 41 | `Q322` · not captured | 13 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col39 |
+| PD (effect) | HTRF IC50 [nM] — 42 | `Q322` · not captured | 2700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col40 |
+| PD (effect) | HTRF IC50 [nM] — 43 | `Q322` · not captured | 0.3 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col41 |
+| PD (effect) | HTRF IC50 [nM] — 46 | `Q322` · not captured | 36 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col44 |
+| PD (effect) | HTRF IC50 [nM] — 47 | `Q322` · not captured | 16 | unknown | not captured | llm_confirmed (not captured) | Tab1:row3:col45 |
+| PD (effect) | HTRF IC50 [nM] — imatinib | `Q322` · not captured | 110 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
+| PD (effect) | HTRF IC50 [nM] — sunitinib | `Q322` · not captured | 890 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
+| PD (effect) | HTRF IC50 [nM] — regorafenib | `Q322` · not captured | 320 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
+| PD (effect) | HTRF IC50 [nM] — ripretinib | `Q322` · not captured | 250 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col6 |
+| PD (effect) | HTRF IC50 [nM] — avapritinib | `Q322` · not captured | 95 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col7 |
+| PD (effect) | HTRF IC50 [nM] — 10 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col8 |
+| PD (effect) | HTRF IC50 [nM] — 11 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col9 |
+| PD (effect) | HTRF IC50 [nM] — 13 | `Q322` · not captured | 6500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col11 |
+| PD (effect) | HTRF IC50 [nM] — 14 | `Q322` · not captured | 15000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col12 |
+| PD (effect) | HTRF IC50 [nM] — 15 | `Q322` · not captured | 19000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col13 |
+| PD (effect) | HTRF IC50 [nM] — 19 | `Q322` · not captured | 6100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col17 |
+| PD (effect) | HTRF IC50 [nM] — 20 | `Q322` · not captured | 8500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col18 |
+| PD (effect) | HTRF IC50 [nM] — 22 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col20 |
+| PD (effect) | HTRF IC50 [nM] — 23 | `Q322` · not captured | 19000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col21 |
+| PD (effect) | HTRF IC50 [nM] — 24 | `Q322` · not captured | 13000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col22 |
+| PD (effect) | HTRF IC50 [nM] — 25 | `Q322` · not captured | 5700 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col23 |
+| PD (effect) | HTRF IC50 [nM] — 27 | `Q322` · not captured | 1100 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col25 |
+| PD (effect) | HTRF IC50 [nM] — 30 | `Q322` · not captured | 2000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col28 |
+| PD (effect) | HTRF IC50 [nM] — 33 | `Q322` · not captured | 1200 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col31 |
+| PD (effect) | HTRF IC50 [nM] — 34 | `Q322` · not captured | 150 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col32 |
+| PD (effect) | HTRF IC50 [nM] — 36 | `Q322` · not captured | 460 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col34 |
+| PD (effect) | HTRF IC50 [nM] — 38 | `Q322` · not captured | 4500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col36 |
+| PD (effect) | HTRF IC50 [nM] — 39 | `Q322` · not captured | 18000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col37 |
+| PD (effect) | HTRF IC50 [nM] — 40 | `Q322` · not captured | 10000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col38 |
+| PD (effect) | HTRF IC50 [nM] — 41 | `Q322` · not captured | 14000 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col39 |
+| PD (effect) | HTRF IC50 [nM] — 43 | `Q322` · not captured | 74 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col41 |
+| PD (effect) | HTRF IC50 [nM] — 44 | `Q322` · not captured | 290 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col42 |
+| PD (effect) | HTRF IC50 [nM] — 45 | `Q322` · not captured | 37 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col43 |
+| PD (effect) | HTRF IC50 [nM] — 46 | `Q322` · not captured | 8800 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col44 |
+| PD (effect) | HTRF IC50 [nM] — 47 | `Q322` · not captured | 2500 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col45 |
+| PD (effect) | HTRF IC50 [nM] — 48 | `Q322` · not captured | 280 | unknown | not captured | llm_confirmed (not captured) | Tab1:row4:col46 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

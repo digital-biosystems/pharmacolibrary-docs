@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nicotinamide analogs drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nicotinamide analogs (including flupirtine-related compounds) were tested for KV 7.2/3 channel opening activity in a sigmoid Emax concentration–response relationship, with stimulation of channel opening as the effect; the record reports an EC50 of 0.31 µM. The paper excerpts do not state a mechanism beyond direct channel opening activity and give no Imax, Emax, Hill coefficient, or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wurm_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Wurm KW; Bartz FM; Schulig L; Bodtke A; Bednarski PJ; Link A et al. (2023). Arch
   ·  DOI: [10.1002/ardp.202200473](https://doi.org/10.1002/ardp.202200473)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 value | `Q321` · not captured | 0.31 | µM | not captured | review_gapfill (not captured) | Wurm_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 value | `Q321` · not captured | 0.31 | µM | not captured | review_gapfill (not captured) | Wurm_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

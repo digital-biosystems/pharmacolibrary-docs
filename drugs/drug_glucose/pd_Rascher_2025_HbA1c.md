@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Empagliflozin drives HbA1c (in %): indirect response — drug inhibits the production of HbA1c.
+
+**Model:** No model was generated from this record.
+
+> Empagliflozin exposure (AUC) inhibits the HbA1c synthesis rate constant (kin) in an indirect response (turnover) model of HbA1c (%), with disease progression modelled as a time-dependent increase in kin (notably with background insulin). Key values: IMAX 10.1%, AUC50 fixed at 703 nmol·h/L, kout 0.0489 1/day; the paper does not report an explicit gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rascher_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,23 +30,23 @@ Rascher J; Cheng S; Johnston C; Härtter S; Jan-Georg W; Marquard J; Tartakovsky
   ·  DOI: [10.1002/bcp.70096](https://doi.org/10.1002/bcp.70096)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kout (1/day) — Median | `Q328` · not captured | 0.0489 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col3 |
-| Kout (1/day) — Bulk ESS | `Q328` · not captured | 5125 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col5 |
-| Kout (1/day) — Tail ESS | `Q328` · not captured | 3498 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col6 |
-| Kout (1/day) — Ȓ | `Q328` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col7 |
-| PROG (%/h/h) — Ȓ | `Q340` · not captured | 1.00 | %/h/h | not captured | llm (not captured) | bcp70096-tbl-0004:row4:col7 |
-| IMAX (%) — Median | `Q323` · not captured | 10.1 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col3 |
-| IMAX (%) — Bulk ESS | `Q323` · not captured | 6062 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col5 |
-| IMAX (%) — Tail ESS | `Q323` · not captured | 4750 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col6 |
-| IMAX (%) — Ȓ | `Q323` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col7 |
-| AUC50 (nmol*hr/L) — Median | `Q19` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | bcp70096-tbl-0004:row6:col3 |
-| ΩBASE (CV(%)) — Median | `Q312` · not captured | 16.1 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col3 |
-| ΩBASE (CV(%)) — Bulk ESS | `Q312` · not captured | 2373 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col5 |
-| ΩBASE (CV(%)) — Ȓ | `Q312` · not captured | 1.00 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col7 |
-| ΩBASE (CV(%)) — Shrinkage (%) | `Q318` · not captured | 14.9 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col8 |
-| ΩPROG (CV(%)) — Shrinkage (%) | `Q318` · not captured | 19.0 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row13:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kout (1/day) — Median | `Q328` · not captured | 0.0489 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col3 |
+| PD (effect) | Kout (1/day) — Bulk ESS | `Q328` · not captured | 5125 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col5 |
+| PD (effect) | Kout (1/day) — Tail ESS | `Q328` · not captured | 3498 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col6 |
+| PD (effect) | Kout (1/day) — Ȓ | `Q328` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col7 |
+| PD (effect) | PROG (%/h/h) — Ȓ | `Q340` · not captured | 1.00 | %/h/h | not captured | llm (not captured) | bcp70096-tbl-0004:row4:col7 |
+| PD (effect) | IMAX (%) — Median | `Q323` · not captured | 10.1 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col3 |
+| PD (effect) | IMAX (%) — Bulk ESS | `Q323` · not captured | 6062 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col5 |
+| PD (effect) | IMAX (%) — Tail ESS | `Q323` · not captured | 4750 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col6 |
+| PD (effect) | IMAX (%) — Ȓ | `Q323` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col7 |
+| PK (driver) | AUC50 (nmol*hr/L) — Median | `Q19` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | bcp70096-tbl-0004:row6:col3 |
+| variability | ΩBASE (CV(%)) — Median | `Q312` · not captured | 16.1 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col3 |
+| variability | ΩBASE (CV(%)) — Bulk ESS | `Q312` · not captured | 2373 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col5 |
+| variability | ΩBASE (CV(%)) — Ȓ | `Q312` · not captured | 1.00 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col7 |
+| variability | ΩBASE (CV(%)) — Shrinkage (%) | `Q318` · not captured | 14.9 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col8 |
+| variability | ΩPROG (CV(%)) — Shrinkage (%) | `Q318` · not captured | 19.0 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row13:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

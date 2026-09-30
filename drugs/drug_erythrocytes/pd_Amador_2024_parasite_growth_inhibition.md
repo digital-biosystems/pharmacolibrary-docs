@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plakortinic acids C and D (measured concentrations) drive name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plakortinic acids C and D (tested as a mixture, concentrations in µM) inhibit in vitro intra-erythrocytic growth of P. berghei parasites measured by luminescence assay, with an EC50 of 5.3 µM (5318 nM); 50% inhibition was seen at the initial 10 µM screening concentration, and no hemolytic activity occurred at 1.95–3.91 µM. The paper does not state a pharmacodynamic mechanism (e.g., Emax/IC50 model or effect on parasite production or elimination), and the listed ADMET values are pkCSM predictions, not fitted PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Amador_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Amador LA; Colón-Lorenzo EE; Rodríguez AD; Serrano AE et al. (2024). Life (Bas
   ·  DOI: [10.3390/life14060684](https://doi.org/10.3390/life14060684)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Absorption — CQ | `Q40` · not captured | -4.249 | not captured | not captured | exact (not captured) | life-14-00684-t001:row1:col2 |
-| Absorption — Plakortinic Acids C (1) and D (2) | `Q40` · not captured | -4.392 | not captured | not captured | exact (not captured) | life-14-00684-t001:row1:col3 |
-| Skin perm — Predictors | `Q100` · not captured | -2.679 | not captured | not captured | llm (not captured) | life-14-00684-t001:row4:col1 |
-| Skin perm — CQ | `Q100` · not captured | -2.735 | not captured | not captured | llm (not captured) | life-14-00684-t001:row4:col2 |
-| Fraction unbound — Predictors | `Q46` · not captured | 0.191 | not captured | not captured | exact (not captured) | life-14-00684-t001:row9:col1 |
-| Fraction unbound — CQ | `Q46` · not captured | 0.089 | not captured | not captured | exact (not captured) | life-14-00684-t001:row9:col2 |
-| Excretion — CQ | `Q44` · not captured | 1.092 | not captured | not captured | exact (not captured) | life-14-00684-t001:row19:col2 |
-| Excretion — Plakortinic Acids C (1) and D (2) | `Q44` · not captured | 0.953 | not captured | not captured | exact (not captured) | life-14-00684-t001:row19:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Absorption — CQ | `Q40` · not captured | -4.249 | not captured | not captured | exact (not captured) | life-14-00684-t001:row1:col2 |
+| PK (driver) | Absorption — Plakortinic Acids C (1) and D (2) | `Q40` · not captured | -4.392 | not captured | not captured | exact (not captured) | life-14-00684-t001:row1:col3 |
+| — | Skin perm — Predictors | `Q100` · not captured | -2.679 | not captured | not captured | llm (not captured) | life-14-00684-t001:row4:col1 |
+| — | Skin perm — CQ | `Q100` · not captured | -2.735 | not captured | not captured | llm (not captured) | life-14-00684-t001:row4:col2 |
+| PK (driver) | Fraction unbound — Predictors | `Q46` · not captured | 0.191 | not captured | not captured | exact (not captured) | life-14-00684-t001:row9:col1 |
+| PK (driver) | Fraction unbound — CQ | `Q46` · not captured | 0.089 | not captured | not captured | exact (not captured) | life-14-00684-t001:row9:col2 |
+| PK (driver) | Excretion — CQ | `Q44` · not captured | 1.092 | not captured | not captured | exact (not captured) | life-14-00684-t001:row19:col2 |
+| PK (driver) | Excretion — Plakortinic Acids C (1) and D (2) | `Q44` · not captured | 0.953 | not captured | not captured | exact (not captured) | life-14-00684-t001:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

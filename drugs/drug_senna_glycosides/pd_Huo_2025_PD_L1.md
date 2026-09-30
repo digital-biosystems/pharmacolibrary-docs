@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sennoside A (measured concentrations) drives PD-L1 expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sennoside A (SA) concentration-dependently decreased PD-L1 expression in OSCC cells (SCC7 at 3 tested concentrations; CAL27 at 50 and 100 μM), an inhibitory effect linked to induction of ferroptosis (reduced GPX4/xCT, elevated ROS, MDA, Fe2+); no PD model parameters (Imax, IC50 for PD-L1, kin, kout, ke0) are given, though SA reduced cell viability with IC50 values of 94.38 μM (SCC7) and 77.41 μM (CAL27).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

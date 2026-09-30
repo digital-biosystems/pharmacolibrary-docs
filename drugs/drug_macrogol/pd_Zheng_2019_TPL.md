@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives tubulin polymerization (in normalized to 100): indirect response — drug inhibits the production of tubulin polymerization.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (delivered as PLGA-PEG polymeric micelles, PTX-PM) at 20 and 40 ng/mL stimulates tubulin polymerization (normalized to 100) in MCF-7 cells; the time course was described by an indirect response model driven by a hypothetical effect compartment capturing the distribution delay, with tubulin polymerization subsequently driving G2/M arrest and cytotoxicity. The excerpts do not state the mechanism parameters (Imax, IC50, kin, kout, ke0) or their values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

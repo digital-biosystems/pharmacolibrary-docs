@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Artesunate (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dronedarone concentrations (µM) inhibit cell viability (WST assay, %) in canine lymphoid tumor cell lines (GL-1, UL-1, CLBL-1) after 72-h exposure, with IC50 values of 2.13 µM (GL-1), 1.64 µM (UL-1), and 2.87 µM (CLBL-1); the paper does not state a mechanistic PD model beyond dose-dependent antiproliferative inhibition from dose–response curves.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nishida_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Nishida M; Sakuma H; Ishida M; Daiku E; Takamiya M; Tomiyasu H; et al. et al. (2
   ·  DOI: [10.1186/s12917-025-05053-8](https://doi.org/10.1186/s12917-025-05053-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50(µM) — Artesunate | `Q322` · not captured | 0.22 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
-| IC50(µM) — Niclosamide | `Q322` · not captured | 0.89 | µM | not captured | exact (not captured) | Tab2:row1:col5 |
-| IC50(µM) — Pentamidine | `Q322` · not captured | 0.81 | µM | not captured | exact (not captured) | Tab2:row1:col6 |
-| IC50(µM) — Itraconazole | `Q322` · not captured | 2.76 | µM | not captured | exact (not captured) | Tab2:row1:col7 |
-| IC50(µM) — Dronedarone | `Q322` · not captured | 2.13 | µM | not captured | exact (not captured) | Tab2:row1:col8 |
-| IC50(µM) — Artesunate | `Q322` · not captured | 0.33 | µM | not captured | exact (not captured) | Tab2:row2:col3 |
-| IC50(µM) — Niclosamide | `Q322` · not captured | 0.69 | µM | not captured | exact (not captured) | Tab2:row2:col5 |
-| IC50(µM) — Pentamidine | `Q322` · not captured | 0.71 | µM | not captured | exact (not captured) | Tab2:row2:col6 |
-| IC50(µM) — Itraconazole | `Q322` · not captured | 2.73 | µM | not captured | exact (not captured) | Tab2:row2:col7 |
-| IC50(µM) — Dronedarone | `Q322` · not captured | 1.64 | µM | not captured | exact (not captured) | Tab2:row2:col8 |
-| IC50(µM) — Artesunate | `Q322` · not captured | 0.54 | µM | not captured | exact (not captured) | Tab2:row3:col3 |
-| IC50(µM) — Niclosamide | `Q322` · not captured | 0.64 | µM | not captured | exact (not captured) | Tab2:row3:col5 |
-| IC50(µM) — Pentamidine | `Q322` · not captured | 0.95 | µM | not captured | exact (not captured) | Tab2:row3:col6 |
-| IC50(µM) — Itraconazole | `Q322` · not captured | 3.25 | µM | not captured | exact (not captured) | Tab2:row3:col7 |
-| IC50(µM) — Dronedarone | `Q322` · not captured | 2.87 | µM | not captured | exact (not captured) | Tab2:row3:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50(µM) — Artesunate | `Q322` · not captured | 0.22 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
+| PD (effect) | IC50(µM) — Niclosamide | `Q322` · not captured | 0.89 | µM | not captured | exact (not captured) | Tab2:row1:col5 |
+| PD (effect) | IC50(µM) — Pentamidine | `Q322` · not captured | 0.81 | µM | not captured | exact (not captured) | Tab2:row1:col6 |
+| PD (effect) | IC50(µM) — Itraconazole | `Q322` · not captured | 2.76 | µM | not captured | exact (not captured) | Tab2:row1:col7 |
+| PD (effect) | IC50(µM) — Dronedarone | `Q322` · not captured | 2.13 | µM | not captured | exact (not captured) | Tab2:row1:col8 |
+| PD (effect) | IC50(µM) — Artesunate | `Q322` · not captured | 0.33 | µM | not captured | exact (not captured) | Tab2:row2:col3 |
+| PD (effect) | IC50(µM) — Niclosamide | `Q322` · not captured | 0.69 | µM | not captured | exact (not captured) | Tab2:row2:col5 |
+| PD (effect) | IC50(µM) — Pentamidine | `Q322` · not captured | 0.71 | µM | not captured | exact (not captured) | Tab2:row2:col6 |
+| PD (effect) | IC50(µM) — Itraconazole | `Q322` · not captured | 2.73 | µM | not captured | exact (not captured) | Tab2:row2:col7 |
+| PD (effect) | IC50(µM) — Dronedarone | `Q322` · not captured | 1.64 | µM | not captured | exact (not captured) | Tab2:row2:col8 |
+| PD (effect) | IC50(µM) — Artesunate | `Q322` · not captured | 0.54 | µM | not captured | exact (not captured) | Tab2:row3:col3 |
+| PD (effect) | IC50(µM) — Niclosamide | `Q322` · not captured | 0.64 | µM | not captured | exact (not captured) | Tab2:row3:col5 |
+| PD (effect) | IC50(µM) — Pentamidine | `Q322` · not captured | 0.95 | µM | not captured | exact (not captured) | Tab2:row3:col6 |
+| PD (effect) | IC50(µM) — Itraconazole | `Q322` · not captured | 3.25 | µM | not captured | exact (not captured) | Tab2:row3:col7 |
+| PD (effect) | IC50(µM) — Dronedarone | `Q322` · not captured | 2.87 | µM | not captured | exact (not captured) | Tab2:row3:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

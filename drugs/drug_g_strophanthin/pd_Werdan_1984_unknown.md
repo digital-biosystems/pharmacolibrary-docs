@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ouabain drives cellular Na+ (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In cultured chick embryo heart muscle cells, ouabain (studied as ³H-ouabain binding) acts by binding to a single class of high-affinity binding sites on the (Na⁺+K⁺)-ATPase (sodium pump), thereby inhibiting active Na⁺/K⁺ transport, which raises intracellular Na⁺ (with decreased intracellular K⁺ and inhibited ⁸⁶Rb⁺ uptake); dissociation of bound ouabain follows first-order kinetics and its time constant matches reactivation of the sodium pump. The excerpts give no numeric potency values (no IC50, EC50, Emax, kin, kout, ke0) or rate constants for the Na⁺ response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Werdan_1984`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

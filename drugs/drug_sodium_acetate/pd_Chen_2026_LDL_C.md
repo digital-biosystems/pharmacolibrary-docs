@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GA-28c (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative PD model linking GA-28c concentrations to LDL-C; it only reports that a single 2.5 mg/kg subcutaneous ASO dose maintained &gt;60% target suppression for over 2 weeks and reduced HFD-induced LDL-C by 66.03% (p &lt; 0.0001), with no IC50/EC50/Emax/kin/kout/ke0 values given and no mechanism stated for the lipid response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

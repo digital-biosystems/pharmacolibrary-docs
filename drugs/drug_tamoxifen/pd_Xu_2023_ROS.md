@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tamoxifen (concentrations from the PK model of Bosch_2023) drives ROS levels (in fold change): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tamoxifen (μM concentrations) increases ROS levels (fold change) in breast cancer cells by impairing mitochondrial function (enhancing proton permeability and inactivating mitochondrial antioxidants), thereby promoting ROS-provoked ferroptosis; the paper does not report an Emax model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`

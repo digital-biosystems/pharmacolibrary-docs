@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amrinone (concentrations from the PK model of Park_1983) drives positive chronotropic response (in beats/min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amrinone (2.4 x 10^-4 M to 2 x 10^-3 M) produced concentration-dependent positive chronotropic responses (beats/min) in isolated rabbit right atria, reaching a maximum of 85% of the isoprenaline maximum; the paper does not state an EC50, Imax, or kinetic parameters for this effect, and the mechanism is described only indirectly as phosphodiesterase inhibition (amrinone was at least 30 times less potent than carbazeran and IBMX in inhibiting right atrial cyclic AMP hydrolysis).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shahid_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

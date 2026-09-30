@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in ng/mg protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record pairs neomenthol concentrations (µM) with PI3K expression (ng/mg protein) as an inhibitory effect, but the paper excerpts do not describe this drug–response pair, its mechanism, or any potency or rate parameters for it; the excerpts instead report neomenthol IC50 values for antiproliferative assays (16.35–99.31 µM) and ODC inhibition (e.g. 20.2 ± 1.02 µM cell-free), with no PD model for PI3K expression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

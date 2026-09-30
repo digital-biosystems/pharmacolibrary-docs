@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexamethasone (concentrations from this paper's PK model) drives name (in CTS): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Plasma dexamethasone concentrations (ng/mL) inhibit the synthesis (kin_CTS) of endogenous plasma cortisol (CTS) in an indirect response (Model I) adrenal-suppression model, with CTS baseline described by a circadian cosine (Rm, Ra, 24 h period, acrophase tp) and first-order dissipation kout_CTS; the paper states an IC50 of 0.038 ng/mL for this inhibition (no Imax, kout, or gamma value is given in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

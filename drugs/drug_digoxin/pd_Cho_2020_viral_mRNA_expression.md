@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Digoxin (concentrations from the PK model of Chen_2013) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Digoxin concentrations (0.0125–1 µM tested) inhibit SARS-CoV-2 viral mRNA expression in Vero cells, acting at the post-entry stage, likely at the step of viral RNA synthesis; the paper reports an IC50 of 0.043 µM (CC50 &gt; 10 µM, SI &gt; 232.55) but does not state a formal PD model or parameters such as Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cho_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

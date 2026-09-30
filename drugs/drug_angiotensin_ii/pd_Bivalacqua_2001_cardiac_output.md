@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in ml/min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for cardiac output; the excerpts describe only dose-related pressor and total peripheral resistance responses to i.v. angiotensin II (µg/kg), mediated via AT1 receptors, with no potency (IC50/EC50/Emax) or rate parameters given for cardiac output.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bivalacqua_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

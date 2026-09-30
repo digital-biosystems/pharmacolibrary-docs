@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizic acid derivatives (Compounds 3, 6, 11, 21) (measured concentrations) drive name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid derivatives (compounds 3, 6, 11, 21) at μM concentrations concentration-dependently inhibit DENV2 E protein-mediated attachment (measured as %) in Vero E6 cells, acting on the viral attachment/entry stage via the DENV2 E protein; no PD model structure (e.g., Emax, Imax/IC50 with gamma, kin/kout, or effect compartment) is stated. Reported IC50 values for attachment inhibition: compound 11, 2.82 μM (DENV2 CprME/JEV SRIPs) and 1.26 μM (DENV2 prME/ZIKV SRIPs); compound 3, 6.69 μM (DENV2 CprME/JEV SRIPs) and 2.82 μM (DENV2 prME/ZIKV SRIPs).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hour_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel drives CD11a expression (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine (the drug in the record; the 'paclitaxel' driver field appears to be a mis-assignment) acts on CD11a cell-surface expression on P815 mastocytoma cells measured by flow cytometry after 24 h exposure, producing a dose-dependent reduction (also seen for CD11a mRNA by RT-PCR and in Yac-1 cells). The paper does not state a mechanism for the expression decrease and provides no PD model parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values); only EC25 and EC50 concentrations of vinblastine are mentioned as pretreatment doses affecting subsequent cytotoxic T lymphocyte killing, without numeric values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2003`
 - **model family:** `emax`
 - **driver:** `not_resolved`

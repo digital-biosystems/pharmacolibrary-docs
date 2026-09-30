@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetyldigitoxin (measured concentrations) drives name (in relative mRNA/protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for acetyldigitoxin's effect on Caspase-3; it only reports qualitatively that ADT (nanomolar concentrations, cytotoxicity IC50 = 32.4 nM in A549 cells) promoted apoptosis with upregulated cleaved Caspase-3 (and Bax) and downregulated Bcl-2, attributed to EZH2 inhibition (EZH2 down to 0.52-fold, reduced H3K27me3), with no Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ionic liquids and ionic liquids active pharmaceutical ingredients (measured concentrations) drive elastase enzyme activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations of ionic liquids and IL-APIs (mM) were tested for direct inhibition of porcine pancreatic elastase activity (a model for HNE), fitted with Emax-type inhibition models yielding EC50 values; the paper does not state a production/elimination mechanism beyond direct enzyme inhibition. EC50s ranged 124–289 mM (e.g. tetrabutylammonium acetate 176 ± 6 mM, 1-butyl-3-methylimidazolium acetate 289 ± 22 mM), with the positive control HNE inhibitor MeOSuc-Ala-Ala-Pro-Val-chloromethylketone at EC50 = 0.47 ± 0.05 mM; no Imax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mota_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,19 +31,19 @@ Mota FAR; Pereira SAP; Araujo ARTS; Saraiva MLMFS et al. (2021). Molecules (Base
   ·  DOI: [10.3390/molecules26010200](https://doi.org/10.3390/molecules26010200)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MeOSuc-Ala-Ala-Pro-Val-chloromethylketone — EC50 (mM) ± SD (1) | `Q321` · not captured | 0.47 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row1:col3 |
-| 1-Butyl-3-methylimidazolium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 208 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row2:col3 |
-| 1-Ethyl-3-methylimidazolium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 201 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row3:col3 |
-| 1-Butyl-3-methylimidazolium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 248 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row4:col3 |
-| 1-Ethyl-3-methylimidazolium trifluoromethanesulfonate — EC50 (mM) ± SD (1) | `Q321` · not captured | 239 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row5:col3 |
-| 1-Butyl-1-methylpyrrolidinium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 194 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row6:col3 |
-| 1-Butyl-4-methylpyridinium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 239 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row7:col3 |
-| Tetrabutylammonium acetate — EC50 (mM) ± SD (1) | `Q321` · not captured | 176 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row8:col3 |
-| Tetrabutylammonium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 233 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row9:col3 |
-| Tetrabutylphosphonium methanesulfonate — EC50 (mM) ± SD (1) | `Q321` · not captured | 229.9 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row10:col3 |
-| 1-Butyl-3-methylimidazolium acetate — EC50 (mM) ± SD (1) | `Q321` · not captured | 289 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row11:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | MeOSuc-Ala-Ala-Pro-Val-chloromethylketone — EC50 (mM) ± SD (1) | `Q321` · not captured | 0.47 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row1:col3 |
+| PD (effect) | 1-Butyl-3-methylimidazolium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 208 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row2:col3 |
+| PD (effect) | 1-Ethyl-3-methylimidazolium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 201 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row3:col3 |
+| PD (effect) | 1-Butyl-3-methylimidazolium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 248 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row4:col3 |
+| PD (effect) | 1-Ethyl-3-methylimidazolium trifluoromethanesulfonate — EC50 (mM) ± SD (1) | `Q321` · not captured | 239 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row5:col3 |
+| PD (effect) | 1-Butyl-1-methylpyrrolidinium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 194 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row6:col3 |
+| PD (effect) | 1-Butyl-4-methylpyridinium tetrafluoroborate — EC50 (mM) ± SD (1) | `Q321` · not captured | 239 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row7:col3 |
+| PD (effect) | Tetrabutylammonium acetate — EC50 (mM) ± SD (1) | `Q321` · not captured | 176 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row8:col3 |
+| PD (effect) | Tetrabutylammonium chloride — EC50 (mM) ± SD (1) | `Q321` · not captured | 233 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row9:col3 |
+| PD (effect) | Tetrabutylphosphonium methanesulfonate — EC50 (mM) ± SD (1) | `Q321` · not captured | 229.9 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row10:col3 |
+| PD (effect) | 1-Butyl-3-methylimidazolium acetate — EC50 (mM) ± SD (1) | `Q321` · not captured | 289 | IL | not captured | llm (not captured) | molecules-26-00200-t001:row11:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

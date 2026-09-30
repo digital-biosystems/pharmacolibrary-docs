@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vosoritide (measured concentrations) drives urinary cGMP (in pmol/mg Cr): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Vosoritide exposure (visit-matched Cmax in pg/mL or AUC0-t in pg-min/mL) drives the increase in urinary cGMP/Cr (pmol/mg Cr) via a direct sigmoid Emax model (ΔcGMP = E0 + PK^h·Emax/(PK^h + EC50^h); h = 1 in the phase III model), with no effect-compartment or turnover mechanism described. The EC50 for Cmax was 4790 pg/mL and the AUC0-t EC50 was 2.22 × 10^5 pg-min/mL, about sixfold below the mean AUC0-t at 30 µg/kg (1.27 × 10^6 pg-min/mL), indicating a near-saturated cGMP response at the highest dose.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

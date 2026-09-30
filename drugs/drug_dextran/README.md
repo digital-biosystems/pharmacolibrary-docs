@@ -28,9 +28,9 @@ Dextran as well presents ophthalmic applications as solutions or ointments for t
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_reference](drugs/drug_dextran/Dextran_Schwarz1981_reference.md) | 1-compartment (no model) | 4 | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Schwarz_1981_reference](drugs/drug_dextran/Dextran_Schwarz1981_reference.md) | — | 1-compartment (no model) | 4 | Schwarz JA et al., Pharmacokinetics of low molecular (mono…, International journal of cl… (1981) | — |
 
 ## ADME sites
 

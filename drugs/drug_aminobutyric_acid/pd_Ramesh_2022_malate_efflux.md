@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Picrotoxin (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Picrotoxin (0.1 nM–100 μM) inhibits malate efflux (via ALMT) stimulated by SO42− (10 mM) in tobacco BY2 cells and by Al3+ (100 μM) in wheat roots; the paper does not state a mechanistic PD model beyond this inhibitory effect. Apparent EC50 values for malate efflux inhibition were 0.14 nM (TaALMT1 BY2 cells), 0.34 nM (TaALMT1F213C mutant), and 0.18 nM (malate currents in TaALMT1 oocytes); GABA efflux was not blocked by picrotoxin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ramesh_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

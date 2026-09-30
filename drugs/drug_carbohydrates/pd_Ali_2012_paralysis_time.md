@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verbascum thapsus extract (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report an Emax-type concentration–response model for paralysis; it only reports that paralysis time of Ascaridia galli (and Raillietina spiralis) decreased with increasing V. thapsus extract concentration (relative index values 4.58, 3.41 and 2.08 at 10, 20 and 40 mg/ml), with no Imax, IC50/EC50, kin, kout or ke0 given. The only mechanistic data concern rabbit jejunum relaxation, where 3 mg/ml Vt.Cr right-shifted calcium chloride curves (EC50 -1.9 ± 0.06 vs control -2.5 ± 0.12 log molar [Ca2+]), suggesting blockade of voltage-sensitive L-type calcium channels.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ali_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

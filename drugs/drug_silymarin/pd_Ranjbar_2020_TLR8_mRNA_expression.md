@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives name (in relative expression) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (100 μg/ml, the IC50 in Ramos cells after 48 hr) was given to Ramos cells and TLR8 mRNA expression (relative expression, by RT-PCR) was measured time-dependently at that single concentration; the paper reports inhibition of TLR8 expression but does not state a PD model, mechanism, or potency/rate parameters (no Imax, IC50 for TLR8, EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ranjbar_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

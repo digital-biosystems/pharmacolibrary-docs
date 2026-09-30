@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tetrac (measured concentrations) drives name (in nM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Benziodarone was identified as displacing T4 from transthyretin (TTR) in the THPB-assay, where increasing test compound concentrations (with 100 nM T4 and 260 nM TTR) reduce protein-bound T4 (nM); the paper does not state a specific IC50, Emax, or kinetic parameters for benziodarone, and the mechanism is direct competitive displacement of T4 from its binding protein rather than a PD production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brandt_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

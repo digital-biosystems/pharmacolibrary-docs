@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxycycline (measured concentrations) drives GFP expression (in percent): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Doxycycline (µM concentrations) inhibits GFP expression (percent) in an Emax model with an EC50 of 3 µM; the paper does not state a mechanism beyond this inhibitory concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoetzel_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Hoetzel J; Walbrun A; Schäfer M; Wang T; Jørgensen AG; Becker O; Stamatakis K;
   ·  DOI: [10.1038/s41467-026-76256-2](https://doi.org/10.1038/s41467-026-76256-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 3 | µM | not captured | review_gapfill (not captured) | Hoetzel_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 3 | µM | not captured | review_gapfill (not captured) | Hoetzel_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

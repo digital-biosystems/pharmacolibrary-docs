@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gpp[NH]p drives inositol monophosphate (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gpp[NH]p (100 µM) stimulates phosphoinositide phosphodiesterase (phospholipase C) in rat cerebral cortical membranes, increasing production of [3H]inositol phosphates including inositol monophosphate (IP stimulated ~2-fold, IP2 8-fold, IP3 30-fold); the effect is a direct concentration-dependent stimulation with maximal stimulation 2.5–3-fold over control at ~100 µM, and the paper does not state an EC50, IC50, or kinetic parameters for Gpp[NH]p (EC50 380 µM is given only for GMP).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gonzales_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

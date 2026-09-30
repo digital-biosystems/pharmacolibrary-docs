@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (1)-pentazocine, AC915, rimcazole, haloperidol (measured concentrations) drive 18F-FDG uptake (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In C6 glioma cells, sigma-receptor ligands ((+)-pentazocine, AC915, rimcazole, haloperidol) were incubated for 24 h and cellular 18F-FDG uptake was measured; cytotoxic concentrations increased FDG uptake (interpreted as a metabolic flare preceding cell death, not a direct Emax/kin-kout mechanism, which the paper does not model). For (+)-pentazocine the threshold concentration for increased FDG uptake was 30 mM with a maximal increase of 1166% at 660 mM, while receptor-occupancy IC50 values for inhibition of cellular 11C-SA4503 binding were 6.5 mM ((+)-pentazocine), 7.4 mM (AC915), 0.36 mM (rimcazole), and 0.27 mM (haloperidol); AC915 (up to 776 mM) did not increase FDG uptake.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rybczynska_2008`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

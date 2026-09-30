@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** U-47700 (measured concentrations) drives name (in luminescence): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> U-47700 and its N-demethylated metabolites were tested in a live-cell β-arrestin recruitment (NanoLuc) assay measuring human MOR activation as luminescence; the paper does not describe a mechanistic PD model beyond a direct concentration–response (Emax-type) relationship. Potency (EC50) was 186 nM for U-47700, 3770 nM for N-desmethyl-U-47700, and &gt;5 μM for N,N-bisdesmethyl-U-47700, with Emax (relative to hydromorphone = 100%) of 183%, 127%, and 39.2% (maximal achieved effect; plateau not reached), respectively, over concentrations of 10 pM–100 μM monitored for 120 min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nordmeier_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

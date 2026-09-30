@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Taguchi_2006_reference](drugs/drug_bepridil/Bepridil_Taguchi2006_reference.md) | 1-compartment (no model) | 1 | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2006) | [10.1248/bpb.29.517](https://doi.org/10.1248/bpb.29.517) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Taguchi_2006_reference](drugs/drug_bepridil/Bepridil_Taguchi2006_reference.md) | — | 1-compartment (no model) | 1 | Taguchi M et al., Nonlinear mixed effects model analysis…, Biological & pharmaceutical… (2006) | [10.1248/bpb.29.517](https://doi.org/10.1248/bpb.29.517) |
 
 ## ADME sites
 

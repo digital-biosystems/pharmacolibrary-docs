@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin; fluvastatin; amlodipine drives calcium concentration-response contractile amplitude (in % of control): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated rabbit aortic strips, atorvastatin and fluvastatin (with amlodipine/verapamil as comparators) shifted calcium concentration-response curves (CCRCs, % of control) to the right, indicating inhibition of voltage-gated calcium channels; the paper reports derived EC50 values in Table 3 but the excerpts do not state the numeric EC50, Emax, or other model parameters, and no Emax/IC50 values or rate constants are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ali_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

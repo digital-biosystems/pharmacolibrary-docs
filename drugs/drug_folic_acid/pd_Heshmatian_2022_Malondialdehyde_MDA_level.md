@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism linking doxorubicin concentrations to the malondialdehyde (MDA) response; MDA was only measured after 48 h treatment with DOX at 8.6 µM (IC50), 4.3 µM (0.5×IC50), and 2.15 µM (0.25×IC50), alone and combined with 70 µM GNP-F and 2 Gy X-ray. No Imax, IC50 (for MDA), EC50, Emax, kin, kout, ke0, or gamma values for this response are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heshmatian_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

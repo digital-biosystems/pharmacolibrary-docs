@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 13b (measured concentrations) drives Coronary artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a PD model for mesalazine; the myography data concern the KCa3.1/KCa2.3 inhibitor 13b, which at 0.5 µM augmented 5-HT (1 µM)-induced coronary artery contraction by +74% (second stimulation +90%) and U46619 (0.2 µM)-induced contraction by +29%, an effect antagonized by the channel activator SKA-31 (10 µM reduced 5-HT contractions by −58%); no Imax, IC50, EC50, kin, kout, ke0 or gamma values are given for this effect (mesalamine EC50≥10 µM for KCa3.1 inhibition is reported only from patch-clamp experiments).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oliván-Viguera_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

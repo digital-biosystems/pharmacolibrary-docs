@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carisbamate (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Carisbamate (CRS) concentration-dependently inhibits the late voltage-gated Na+ current (INa(L)) measured at the end of a 30-ms depolarizing pulse in GH3 cells, fitted with a three-parameter logistic (sigmoidal Hill/Emax) model; the IC50 for INa(L) inhibition was 11.4 μM (versus 56.4 μM for INa(T)), indicating preferential INa(L) suppression. The paper describes this as direct current blockade and does not state Emax, Hill coefficient, or any turnover/kin parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hung_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

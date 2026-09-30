@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Milvexian (measured concentrations) drives name (in rate): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Milvexian plasma concentrations (ng/mL) were related to total VTE rate via an exposure–response (Emax-type) logistic/dose–response model with inhibition of VTE events; the paper does not report numeric Imax, IC50/EC50, or rate parameters for this endpoint, only noting that increasing exposure decreased VTE probability (e.g., simulated median VTE rate 9.4% at 100 mg BID vs. 21.4% with enoxaparin).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

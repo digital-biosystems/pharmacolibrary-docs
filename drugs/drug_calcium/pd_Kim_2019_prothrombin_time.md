@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rivaroxaban drives name (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Rivaroxaban plasma concentrations directly and proportionally prolong prothrombin time in rats via a linear PD model with no intercept and no effect compartment (no delay, as Factor Xa lies in the central compartment); the slope of relative prothrombin time vs. concentration was 0.00054 in rats, about 5.4-fold less sensitive than the human slope of 0.0029. Verapamil increased rivaroxaban exposure 2.8-fold (likely via inhibition of efflux transport) and thereby raised Emax of prothrombin time 2.5-fold (30% alone) and AUEC 2.6-fold (188%·h) without changing the PD slope; diltiazem had no significant effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2019`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Kim M; Son H; Noh K; Kim E; Shin BS; Kang W et al. (2019). Pharmaceutics 11
   ·  DOI: [10.3390/pharmaceutics11030133](https://doi.org/10.3390/pharmaceutics11030133)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka (h−1) — Rivaroxaban | `Q49` · not captured | 0.63 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row1:col1 |
-| V/F (mL/kg) — Rivaroxaban | `Q76` · not captured | 960 | mL/kg | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row2:col1 |
-| ke (h−1) — Rivaroxaban | `Q47` · not captured | 0.85 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row3:col1 |
-| ke (h−1) — Rivaroxaban + Verapamil | `Q47` · not captured | 0.80 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row3:col2 |
-| f (fraction) — Rivaroxaban | `Q40` · not captured | 0.61 | fraction | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row4:col1 |
-| f (fraction) — Rivaroxaban + Verapamil | `Q40` · not captured | 0.61 | fraction | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka (h−1) — Rivaroxaban | `Q49` · not captured | 0.63 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row1:col1 |
+| PK (driver) | V/F (mL/kg) — Rivaroxaban | `Q76` · not captured | 960 | mL/kg | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row2:col1 |
+| PK (driver) | ke (h−1) — Rivaroxaban | `Q47` · not captured | 0.85 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row3:col1 |
+| PK (driver) | ke (h−1) — Rivaroxaban + Verapamil | `Q47` · not captured | 0.80 | h−1 | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row3:col2 |
+| PK (driver) | f (fraction) — Rivaroxaban | `Q40` · not captured | 0.61 | fraction | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row4:col1 |
+| PK (driver) | f (fraction) — Rivaroxaban + Verapamil | `Q40` · not captured | 0.61 | fraction | not captured | exact (not captured) | pharmaceutics-11-00133-t003:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

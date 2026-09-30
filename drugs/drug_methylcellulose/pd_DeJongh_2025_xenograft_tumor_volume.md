@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZD7648 and olaparib (measured concentrations) drive name (in cm3): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> In ATM-knockout mouse xenografts, AZD7648 and olaparib plasma concentrations (µM) drive tumor volume (cm3) via a semi-mechanistic cell-state model: olaparib linearly promotes transition of proliferating to quiescent cells (OlEff), while AZD7648 saturably inhibits the quiescent-to-proliferating transition with Emax fixed to −1 (complete inhibition) and a fitted EC50; both effects are delayed by a transit-compartment model with fitted rate constant Ktr, and cell death proceeds through two transit compartments with first-order rate constants. The paper does not state the numeric EC50 or Ktr values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `DeJongh_2025`
 - **model family:** `disease_progression`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 16-hydroxycleroda-3,13-dien-15,16-olide (measured concentrations) drive name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> HCD (16-hydroxycleroda-3,13-dien-15,16-olide) concentrations (0.5–10 µM) inhibit Caco-2 and HT-29 cell viability (% of untreated control) in a dose- and time-dependent manner; the paper does not state a mechanistic PD model, only IC50 values: Caco-2 4.10 µM (36 h) and 2.32 µM (48 h), HT-29 10.18 µM (36 h) and 1.39 µM (48 h), versus 5-FU (100 µM at 36 h; 66.79 µM at 48 h).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

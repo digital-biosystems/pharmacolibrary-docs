@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_pantethine/Pantethine_Wittwer1985_reference.md) | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wittwer_1985_reference](drugs/drug_pantethine/Pantethine_Wittwer1985_reference.md) | — | 1-compartment (no model) | 0 | Wittwer CT et al., Metabolism of pantethine in cystinosis, The Journal of clinical inv… (1985) | [10.1172/JCI112152](https://doi.org/10.1172/JCI112152) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

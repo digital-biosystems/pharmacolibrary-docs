@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The fluorouracil (5-FU) two-compartment model record was rejected because structural parameters such as Vmax (2040), V1 (0.962), Q (1.67), V2 (0.332) and CL (13.0) carry no usable units, giving a dimension mismatch on a structural parameter.**

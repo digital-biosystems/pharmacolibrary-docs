@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** HumAb 826827 (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro reticulocyte invasion inhibition assays with P. vivax clinical isolates: humAb 826827 concentrations (7.8–1000 µg/mL) inhibit erythrocyte (reticulocyte) invasion by Pv merozoites via blocking the PvAMA1 invasion interaction; the paper does not state a PD model form, but reports an average IC50 of 48 µg/mL (±6.6 SEM, four isolates), with mean inhibition of 67.4% (±8.6% SEM) at 100 µg/mL (IC50 = 3.0 µg/mL in the Pf-PvAMA1 transgenic line).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Winnicki_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

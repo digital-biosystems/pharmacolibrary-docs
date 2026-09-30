@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The prucalopride model record was rejected because its one-compartment structure leaves the peripheral compartment (V2 = 192 l) unreachable from the dose, and the AUC of 62.3 ng mL−1 h was reported in a unit that could not be converted to SI.**

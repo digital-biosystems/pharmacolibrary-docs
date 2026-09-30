@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exenatide (concentrations from the PK model of Admiraal_2023) drives hKv1.5 current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Exenatide (μM concentrations) reversibly inhibits hKv1.5 current (IKv1.5) in HEK 293 cells, preferentially blocking the closed channel state and positively shifting the activation V1/2 by 15.93 mV at 3 μM; the paper reports an IC50 of 3.08 μM but does not state an Emax, Imax, kin, kout, ke0, or gamma, and no formal PD model (e.g., Emax fit or effect compartment) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`

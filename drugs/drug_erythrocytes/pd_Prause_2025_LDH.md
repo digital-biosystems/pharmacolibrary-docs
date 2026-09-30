@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Karmitoxin (measured concentrations) drives LDH release (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for LDH release; it reports that karmitoxin concentration-dependently increases LDH release (a marker of membrane lysis/cytotoxicity) in RTgill-W1 and HCEC-1CT cells, with EC50 values of 111 nM (RTgill-W1, 3 h), 74 nM (RTgill-W1, 24 h) and 175 nM (HCEC-1CT, 3 h), and maximum LDH release of about 11 % (RTgill-W1, 191 nM) and 40 % (HCEC-1CT, 245 nM); no Imax, kin, kout, ke0 or Hill coefficient is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Prause_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

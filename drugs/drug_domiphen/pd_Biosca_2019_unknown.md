@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyronaridine (measured concentrations) drives parasite growth inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links domiphen to parasite growth inhibition (%) driven by pyronaridine concentrations (nM), but the excerpts do not state a PD model, mechanism, or any potency values (IC50/EC50/Emax) for domiphen or pyronaridine; the IC50 values reported concern other drugs (e.g. atovaquone 77.6 nM free and 18.6 nM immunoliposomized, DB ~1 µM in living parasites), so the mechanism for this drug–response pair is not given in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Biosca_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive name (in 10^12/L): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Reticulocytes (10^12/L) are described by a catenary, cell-lifespan-based indirect response model in which rHuEPO (with romiplostim acting via hematopoietic stem cell expansion) stimulates the production of reticulocytes from bone marrow progenitor cells; the paper does not state Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for this response in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

@@ -24,10 +24,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2025](drugs/drug_orforglipron/pd_Guo_2025_weight_reduction.md) | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sonne_2026](drugs/drug_orforglipron/pd_Sonne_2026_cAMP.md) | Sonne N et al., Generation and characterisation of a hu…, EBioMedicine (2026) | [10.1016/j.ebiom.2026.106121](https://doi.org/10.1016/j.ebiom.2026.106121) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2025_weight_reduction](drugs/drug_orforglipron/pd_Guo_2025_weight_reduction.md) | name ← unknown · direct Emax (saturable) effect | — | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Sonne_2026_cAMP](drugs/drug_orforglipron/pd_Sonne_2026_cAMP.md) | cAMP production ← orforglipron · direct Emax (saturable) effect | — | Sonne N et al., Generation and characterisation of a hu…, EBioMedicine (2026) | [10.1016/j.ebiom.2026.106121](https://doi.org/10.1016/j.ebiom.2026.106121) |
 
 ## ADME sites
 

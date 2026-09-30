@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Evinacumab drives LDL-C (in unknown): indirect response — drug inhibits the production of LDL-C.
+
+**Model:** No model was generated from this record.
+
+> In patients with HoFH, evinacumab concentrations inhibit the production (formation) of LDL-C in an indirect response model with a saturable Michaelis–Menten inhibitory relationship, plus a lipoprotein apheresis-driven secondary LDL-C elimination; key estimates: baseline LDL-C 214 mg/dL, kin 34.7 mg/dL/day, Imax 0.574, IC50 32.7 mg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bihorel_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,22 +31,22 @@ Bihorel S; Dingman R; Mendell J; Wang Y; Banerjee P; Pordy R; Davis JD; DiCiocci
   ·  DOI: [10.1002/psp4.70016](https://doi.org/10.1002/psp4.70016)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LDLC0: Baseline LDL‐C concentration (mg/dL) — Estimate | `Q324` · not captured | 214 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col1 |
-| LDLC0: Baseline LDL‐C concentration (mg/dL) — %RSE | `Q324` · not captured | 9.74 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col2 |
-| kin: LDL‐C production rate (mg/dL/day) — Estimate | `Q327` · not captured | 34.7 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col1 |
-| kin: LDL‐C production rate (mg/dL/day) — %RSE | `Q327` · not captured | 16.9 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col2 |
-| Imax: Maximum inhibition (unitless) — Estimate | `Q323` · not captured | 0.574 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col1 |
-| Imax: Maximum inhibition (unitless) — %RSE | `Q323` · not captured | 5.95 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col2 |
-| IC50: Half‐inhibitory concentration (mg/L) — Estimate | `Q322` · not captured | 32.7 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col1 |
-| IC50: Half‐inhibitory concentration (mg/L) — %RSE | `Q322` · not captured | 23.9 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col2 |
-| IIV in kin (% CV) — Estimate | `Q100` · not captured | 54.5 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col1 |
-| IIV in kin (% CV) — %RSE | `Q100` · not captured | 37.3 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col2 |
-| Constant CV residual variability component — Estimate | `Q315` · not captured | 0.0631 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col1 |
-| Constant CV residual variability component — %RSE | `Q315` · not captured | 22.0 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col2 |
-| Additive residual variability component — Estimate | `Q317` · not captured | 60.3 | unit | not captured | llm_corrected (not captured) | psp470016-tbl-0003:row12:col1 |
-| Additive residual variability component — %RSE | `Q315` · not captured | 103 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | LDLC0: Baseline LDL‐C concentration (mg/dL) — Estimate | `Q324` · not captured | 214 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col1 |
+| PD (effect) | LDLC0: Baseline LDL‐C concentration (mg/dL) — %RSE | `Q324` · not captured | 9.74 | mg/dL | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row1:col2 |
+| PD (effect) | kin: LDL‐C production rate (mg/dL/day) — Estimate | `Q327` · not captured | 34.7 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col1 |
+| PD (effect) | kin: LDL‐C production rate (mg/dL/day) — %RSE | `Q327` · not captured | 16.9 | mg/dL/day | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row3:col2 |
+| PD (effect) | Imax: Maximum inhibition (unitless) — Estimate | `Q323` · not captured | 0.574 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col1 |
+| PD (effect) | Imax: Maximum inhibition (unitless) — %RSE | `Q323` · not captured | 5.95 | unitless | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row4:col2 |
+| PD (effect) | IC50: Half‐inhibitory concentration (mg/L) — Estimate | `Q322` · not captured | 32.7 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col1 |
+| PD (effect) | IC50: Half‐inhibitory concentration (mg/L) — %RSE | `Q322` · not captured | 23.9 | mg/L | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row6:col2 |
+| — | IIV in kin (% CV) — Estimate | `Q100` · not captured | 54.5 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col1 |
+| — | IIV in kin (% CV) — %RSE | `Q100` · not captured | 37.3 | unit | not captured | nil (not captured) | psp470016-tbl-0003:row10:col2 |
+| variability | Constant CV residual variability component — Estimate | `Q315` · not captured | 0.0631 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col1 |
+| variability | Constant CV residual variability component — %RSE | `Q315` · not captured | 22.0 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row11:col2 |
+| variability | Additive residual variability component — Estimate | `Q317` · not captured | 60.3 | unit | not captured | llm_corrected (not captured) | psp470016-tbl-0003:row12:col1 |
+| variability | Additive residual variability component — %RSE | `Q315` · not captured | 103 | unit | not captured | llm_confirmed (not captured) | psp470016-tbl-0003:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

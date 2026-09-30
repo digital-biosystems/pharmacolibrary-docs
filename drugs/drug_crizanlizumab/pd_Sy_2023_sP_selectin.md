@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Crizanlizumab (concentrations from this paper's PK model) drives soluble P-selectin (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Crizanlizumab (SelG1/SEG101) serum concentrations act on soluble P-selectin; the paper describes a population PK-PD Emax model (with TMDD for PK) in which the drug inhibits the sP-selectin response, but the excerpts do not state the mechanism in more detail and give no numeric values for Imax, EC50, Emax, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sy_2023`
 - **model family:** `tmdd`
 - **driver:** `pk_record`

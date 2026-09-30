@@ -27,19 +27,19 @@ It may also be indicated for use in combination with metformin or insulin to low
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yoo_2020_2_reference](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | 1-compartment, oral | 2 | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yoo_2020_2_reference](drugs/drug_glimepiride/Glimepiride_Yoo2020v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yoo H et al., Pharmacokinetic/Pharmacodynamic Interac…, Drug design, development an… (2020) | [10.2147/DDDT.S275343](https://doi.org/10.2147/DDDT.S275343) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Hu_2001](drugs/drug_glimepiride/pd_Hu_2001_unknown.md) | Hu S et al., Glucose-dependent and glucose-sensitizi…, International journal of ex… (2001) | [10.1155/edr.2001.63](https://doi.org/10.1155/edr.2001.63) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_KATP_channel_current.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_fibers_viability.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_mitochondrial_succinic_dehydrogenases_SDH_activity.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014](drugs/drug_glimepiride/pd_Mele_2014_percent_changes_of_the_protein_content_muscle_weig.md) | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Hu_2001_unknown](drugs/drug_glimepiride/pd_Hu_2001_unknown.md) | insulin secretion ← nateglinide · direct Emax (saturable) effect | — | Hu S et al., Glucose-dependent and glucose-sensitizi…, International journal of ex… (2001) | [10.1155/edr.2001.63](https://doi.org/10.1155/edr.2001.63) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014_KATP_channel_current](drugs/drug_glimepiride/pd_Mele_2014_KATP_channel_current.md) | name ← glibenclamide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014_fibers_viability](drugs/drug_glimepiride/pd_Mele_2014_fibers_viability.md) | name ← glibenclamide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014_mitochondrial_succinic_dehydrogenases_SDH_activity](drugs/drug_glimepiride/pd_Mele_2014_mitochondrial_succinic_dehydrogenases_SDH_activity.md) | name ← glibenclamide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mele_2014_percent_changes_of_the_protein_content_muscle_weight](drugs/drug_glimepiride/pd_Mele_2014_percent_changes_of_the_protein_content_muscle_weig.md) | name ← glibenclamide · direct sigmoid Emax (Hill) effect | — | Mele A et al., Database search of spontaneous reports…, Pharmacology research & per… (2014) | [10.1002/prp2.28](https://doi.org/10.1002/prp2.28) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AK111 drives Psoriasis Area and Severity Index (in score): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+
+**Model:** No model was generated from this record.
+
+> AK111 serum concentrations act on the PASI score via an indirect response (IDR) model with inhibition, chosen because PASI reduction showed a lag relative to peak concentration; the paper does not state the specific inhibited production/elimination process or any PD potency parameters (Imax, IC50, kin, kout) in the excerpts. Only PK parameters are reported (Ka 0.463 1/day, CL 0.182 L/day, V 6.65 L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2022_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -19,80 +29,80 @@
 not matched (stem Li_2022_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ka (1/day) — Point estimate | `Q49` · not captured | 0.463 | unit | not captured | exact (not captured) | T2:row2:col2 |
-| Ka (1/day) — RSE% | `Q49` · not captured | 9.3 | unit | not captured | exact (not captured) | T2:row2:col3 |
-| Ka (1/day) — Bootstrap of estimates median | `Q49` · not captured | 0.461 | unit | not captured | exact (not captured) | T2:row2:col4 |
-| Ka (1/day) — Bootstrap of estimates 90%CI | `Q49` · not captured | 0.392 | unit | not captured | exact (not captured) | T2:row2:col5 |
-| CL (L/day) — Point estimate | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col2 |
-| CL (L/day) — RSE% | `Q22` · not captured | 7.2 | L/day | not captured | exact (not captured) | T2:row3:col3 |
-| CL (L/day) — Bootstrap of estimates median | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col4 |
-| CL (L/day) — Bootstrap of estimates 90%CI | `Q22` · not captured | 0.159 | L/day | not captured | exact (not captured) | T2:row3:col5 |
-| V (L) — Point estimate | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col2 |
-| V (L) — RSE% | `Q61` · not captured | 7.8 | L | not captured | exact (not captured) | T2:row4:col3 |
-| V (L) — Bootstrap of estimates median | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col4 |
-| V (L) — Bootstrap of estimates 90%CI | `Q61` · not captured | 5.77 | L | not captured | exact (not captured) | T2:row4:col5 |
-| IIV Ka (%) — Point estimate | `Q312` · not captured | 50.1 | unit | not captured | llm_confirmed (not captured) | T2:row5:col2 |
-| IIV Ka (%) — RSE% | `Q312` · not captured | 13.5 | unit | not captured | llm_confirmed (not captured) | T2:row5:col3 |
-| IIV Ka (%) — Bootstrap of estimates median | `Q312` · not captured | 48.9 | unit | not captured | llm_confirmed (not captured) | T2:row5:col4 |
-| IIV Ka (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 36.6 | unit | not captured | llm_confirmed (not captured) | T2:row5:col5 |
-| IIV Ka (%) — Shrinkage% | `Q318` · not captured | 5.7 | unit | not captured | llm_corrected (not captured) | T2:row5:col6 |
-| IIV CL (%) — Point estimate | `Q312` · not captured | 42.2 | unit | not captured | llm_confirmed (not captured) | T2:row6:col2 |
-| IIV CL (%) — RSE% | `Q312` · not captured | 12.4 | unit | not captured | llm_confirmed (not captured) | T2:row6:col3 |
-| IIV CL (%) — Bootstrap of estimates median | `Q312` · not captured | 41.5 | unit | not captured | llm_confirmed (not captured) | T2:row6:col4 |
-| IIV CL (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 33.0 | unit | not captured | llm_confirmed (not captured) | T2:row6:col5 |
-| IIV CL (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row6:col6 |
-| IIV V (%) — Point estimate | `Q312` · not captured | 46.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col2 |
-| IIV V (%) — RSE% | `Q312` · not captured | 13.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col3 |
-| IIV V (%) — Bootstrap of estimates median | `Q312` · not captured | 45.6 | unit | not captured | llm_confirmed (not captured) | T2:row7:col4 |
-| IIV V (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 35.1 | unit | not captured | llm_confirmed (not captured) | T2:row7:col5 |
-| IIV V (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row7:col6 |
-| σprop — Point estimate | `Q316` · not captured | 0.0144 | unit | not captured | llm (not captured) | T2:row8:col2 |
-| σprop — RSE% | `Q316` · not captured | 9.4 | unit | not captured | llm (not captured) | T2:row8:col3 |
-| σprop — Bootstrap of estimates median | `Q316` · not captured | 0.0146 | unit | not captured | llm (not captured) | T2:row8:col4 |
-| σprop — Bootstrap of estimates 90%CI | `Q316` · not captured | 0.012 | unit | not captured | llm (not captured) | T2:row8:col5 |
-| σprop — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row8:col6 |
-| σaddi — RSE% | `Q315` · not captured | 42.4 | unit | not captured | llm (not captured) | T2:row9:col3 |
-| σaddi — Bootstrap of estimates median | `Q317` · not captured | 1.372 | unit | not captured | llm (not captured) | T2:row9:col4 |
-| σaddi — Bootstrap of estimates 90%CI | `Q317` · not captured | 0.442 | unit | not captured | llm (not captured) | T2:row9:col5 |
-| σaddi — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row9:col6 |
-| Kin (PASI/day) — Point estimate | `Q327` · not captured | 0.474 | PASI/day | not captured | exact (not captured) | T2:row11:col2 |
-| Kin (PASI/day) — RSE% | `Q327` · not captured | 21.3 | PASI/day | not captured | exact (not captured) | T2:row11:col3 |
-| Kin (PASI/day) — Bootstrap of estimates median | `Q327` · not captured | 0.481 | PASI/day | not captured | exact (not captured) | T2:row11:col4 |
-| Kin (PASI/day) — Bootstrap of estimates 90%CI | `Q327` · not captured | 0.305 | PASI/day | not captured | exact (not captured) | T2:row11:col5 |
-| Kout (1/day) — Point estimate | `Q328` · not captured | 0.024 | unit | not captured | exact (not captured) | T2:row12:col2 |
-| Kout (1/day) — RSE% | `Q328` · not captured | 21.5 | unit | not captured | exact (not captured) | T2:row12:col3 |
-| Kout (1/day) — Bootstrap of estimates median | `Q328` · not captured | 0.025 | unit | not captured | exact (not captured) | T2:row12:col4 |
-| Kout (1/day) — Bootstrap of estimates 90%CI | `Q328` · not captured | 0.015 | unit | not captured | exact (not captured) | T2:row12:col5 |
-| Imax — Point estimate | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col2 |
-| Imax — Bootstrap of estimates median | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col4 |
-| IC50 (ug/mL) — Point estimate | `Q322` · not captured | 0.52 | ug/mL | not captured | exact (not captured) | T2:row14:col2 |
-| IC50 (ug/mL) — RSE% | `Q322` · not captured | 66.4 | ug/mL | not captured | exact (not captured) | T2:row14:col3 |
-| IC50 (ug/mL) — Bootstrap of estimates median | `Q322` · not captured | 0.566 | ug/mL | not captured | exact (not captured) | T2:row14:col4 |
-| IC50 (ug/mL) — Bootstrap of estimates 90%CI | `Q322` · not captured | 0 | ug/mL | not captured | exact (not captured) | T2:row14:col5 |
-| Kplb — Point estimate | `Q410` · not captured | 0 | unit | not captured | llm (not captured) | T2:row16:col2 |
-| IIV Kin (%) — Point estimate | `Q312` · not captured | 16.0 | unit | not captured | llm_confirmed (not captured) | T2:row18:col2 |
-| IIV Kin (%) — RSE% | `Q312` · not captured | 38.7 | unit | not captured | llm_confirmed (not captured) | T2:row18:col3 |
-| IIV Kin (%) — Bootstrap of estimates median | `Q312` · not captured | 16.8 | unit | not captured | llm_confirmed (not captured) | T2:row18:col4 |
-| IIV Kin (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 5.90 | unit | not captured | llm_confirmed (not captured) | T2:row18:col5 |
-| IIV Kin (%) — Shrinkage% | `Q318` · not captured | 98.8 | unit | not captured | llm_corrected (not captured) | T2:row18:col6 |
-| IIV Kout (%) — Point estimate | `Q328` · not captured | 23.3 | unit | not captured | llm_confirmed (not captured) | T2:row19:col2 |
-| IIV Kout (%) — RSE% | `Q328` · not captured | 13.8 | unit | not captured | llm_confirmed (not captured) | T2:row19:col3 |
-| IIV Kout (%) — Bootstrap of estimates median | `Q328` · not captured | 22.2 | unit | not captured | llm_confirmed (not captured) | T2:row19:col4 |
-| IIV Kout (%) — Bootstrap of estimates 90%CI | `Q328` · not captured | 15.5 | unit | not captured | llm_confirmed (not captured) | T2:row19:col5 |
-| IIV Kout (%) — Shrinkage% | `Q318` · not captured | 18.3 | unit | not captured | llm_corrected (not captured) | T2:row19:col6 |
-| IIV IC50 (%) — Point estimate | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col2 |
-| IIV IC50 (%) — RSE% | `Q322` · not captured | 33.5 | unit | not captured | llm_confirmed (not captured) | T2:row20:col3 |
-| IIV IC50 (%) — Bootstrap of estimates median | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col4 |
-| IIV IC50 (%) — Bootstrap of estimates 90%CI | `Q322` · not captured | 67.6 | unit | not captured | llm_confirmed (not captured) | T2:row20:col5 |
-| IIV IC50 (%) — Shrinkage% | `Q318` · not captured | 47.8 | unit | not captured | llm_corrected (not captured) | T2:row20:col6 |
-| IIV PLBmax (%) — Point estimate | `Q312` · not captured | 98.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col2 |
-| IIV PLBmax (%) — RSE% | `Q312` · not captured | 15.0 | unit | not captured | llm_confirmed (not captured) | T2:row21:col3 |
-| IIV PLBmax (%) — Bootstrap of estimates median | `Q312` · not captured | 96.4 | unit | not captured | llm_confirmed (not captured) | T2:row21:col4 |
-| IIV PLBmax (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 64.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col5 |
-| IIV PLBmax (%) — Shrinkage% | `Q318` · not captured | 20.8 | unit | not captured | llm_corrected (not captured) | T2:row21:col6 |
-| σPASI — Shrinkage% | `Q318` · not captured | 11.5 | unit | not captured | llm (not captured) | T2:row22:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ka (1/day) — Point estimate | `Q49` · not captured | 0.463 | unit | not captured | exact (not captured) | T2:row2:col2 |
+| PK (driver) | Ka (1/day) — RSE% | `Q49` · not captured | 9.3 | unit | not captured | exact (not captured) | T2:row2:col3 |
+| PK (driver) | Ka (1/day) — Bootstrap of estimates median | `Q49` · not captured | 0.461 | unit | not captured | exact (not captured) | T2:row2:col4 |
+| PK (driver) | Ka (1/day) — Bootstrap of estimates 90%CI | `Q49` · not captured | 0.392 | unit | not captured | exact (not captured) | T2:row2:col5 |
+| PK (driver) | CL (L/day) — Point estimate | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col2 |
+| PK (driver) | CL (L/day) — RSE% | `Q22` · not captured | 7.2 | L/day | not captured | exact (not captured) | T2:row3:col3 |
+| PK (driver) | CL (L/day) — Bootstrap of estimates median | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col4 |
+| PK (driver) | CL (L/day) — Bootstrap of estimates 90%CI | `Q22` · not captured | 0.159 | L/day | not captured | exact (not captured) | T2:row3:col5 |
+| PK (driver) | V (L) — Point estimate | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col2 |
+| PK (driver) | V (L) — RSE% | `Q61` · not captured | 7.8 | L | not captured | exact (not captured) | T2:row4:col3 |
+| PK (driver) | V (L) — Bootstrap of estimates median | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col4 |
+| PK (driver) | V (L) — Bootstrap of estimates 90%CI | `Q61` · not captured | 5.77 | L | not captured | exact (not captured) | T2:row4:col5 |
+| variability | IIV Ka (%) — Point estimate | `Q312` · not captured | 50.1 | unit | not captured | llm_confirmed (not captured) | T2:row5:col2 |
+| variability | IIV Ka (%) — RSE% | `Q312` · not captured | 13.5 | unit | not captured | llm_confirmed (not captured) | T2:row5:col3 |
+| variability | IIV Ka (%) — Bootstrap of estimates median | `Q312` · not captured | 48.9 | unit | not captured | llm_confirmed (not captured) | T2:row5:col4 |
+| variability | IIV Ka (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 36.6 | unit | not captured | llm_confirmed (not captured) | T2:row5:col5 |
+| variability | IIV Ka (%) — Shrinkage% | `Q318` · not captured | 5.7 | unit | not captured | llm_corrected (not captured) | T2:row5:col6 |
+| variability | IIV CL (%) — Point estimate | `Q312` · not captured | 42.2 | unit | not captured | llm_confirmed (not captured) | T2:row6:col2 |
+| variability | IIV CL (%) — RSE% | `Q312` · not captured | 12.4 | unit | not captured | llm_confirmed (not captured) | T2:row6:col3 |
+| variability | IIV CL (%) — Bootstrap of estimates median | `Q312` · not captured | 41.5 | unit | not captured | llm_confirmed (not captured) | T2:row6:col4 |
+| variability | IIV CL (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 33.0 | unit | not captured | llm_confirmed (not captured) | T2:row6:col5 |
+| variability | IIV CL (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row6:col6 |
+| variability | IIV V (%) — Point estimate | `Q312` · not captured | 46.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col2 |
+| variability | IIV V (%) — RSE% | `Q312` · not captured | 13.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col3 |
+| variability | IIV V (%) — Bootstrap of estimates median | `Q312` · not captured | 45.6 | unit | not captured | llm_confirmed (not captured) | T2:row7:col4 |
+| variability | IIV V (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 35.1 | unit | not captured | llm_confirmed (not captured) | T2:row7:col5 |
+| variability | IIV V (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row7:col6 |
+| variability | σprop — Point estimate | `Q316` · not captured | 0.0144 | unit | not captured | llm (not captured) | T2:row8:col2 |
+| variability | σprop — RSE% | `Q316` · not captured | 9.4 | unit | not captured | llm (not captured) | T2:row8:col3 |
+| variability | σprop — Bootstrap of estimates median | `Q316` · not captured | 0.0146 | unit | not captured | llm (not captured) | T2:row8:col4 |
+| variability | σprop — Bootstrap of estimates 90%CI | `Q316` · not captured | 0.012 | unit | not captured | llm (not captured) | T2:row8:col5 |
+| variability | σprop — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row8:col6 |
+| variability | σaddi — RSE% | `Q315` · not captured | 42.4 | unit | not captured | llm (not captured) | T2:row9:col3 |
+| variability | σaddi — Bootstrap of estimates median | `Q317` · not captured | 1.372 | unit | not captured | llm (not captured) | T2:row9:col4 |
+| variability | σaddi — Bootstrap of estimates 90%CI | `Q317` · not captured | 0.442 | unit | not captured | llm (not captured) | T2:row9:col5 |
+| variability | σaddi — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row9:col6 |
+| PD (effect) | Kin (PASI/day) — Point estimate | `Q327` · not captured | 0.474 | PASI/day | not captured | exact (not captured) | T2:row11:col2 |
+| PD (effect) | Kin (PASI/day) — RSE% | `Q327` · not captured | 21.3 | PASI/day | not captured | exact (not captured) | T2:row11:col3 |
+| PD (effect) | Kin (PASI/day) — Bootstrap of estimates median | `Q327` · not captured | 0.481 | PASI/day | not captured | exact (not captured) | T2:row11:col4 |
+| PD (effect) | Kin (PASI/day) — Bootstrap of estimates 90%CI | `Q327` · not captured | 0.305 | PASI/day | not captured | exact (not captured) | T2:row11:col5 |
+| PD (effect) | Kout (1/day) — Point estimate | `Q328` · not captured | 0.024 | unit | not captured | exact (not captured) | T2:row12:col2 |
+| PD (effect) | Kout (1/day) — RSE% | `Q328` · not captured | 21.5 | unit | not captured | exact (not captured) | T2:row12:col3 |
+| PD (effect) | Kout (1/day) — Bootstrap of estimates median | `Q328` · not captured | 0.025 | unit | not captured | exact (not captured) | T2:row12:col4 |
+| PD (effect) | Kout (1/day) — Bootstrap of estimates 90%CI | `Q328` · not captured | 0.015 | unit | not captured | exact (not captured) | T2:row12:col5 |
+| PD (effect) | Imax — Point estimate | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col2 |
+| PD (effect) | Imax — Bootstrap of estimates median | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col4 |
+| PD (effect) | IC50 (ug/mL) — Point estimate | `Q322` · not captured | 0.52 | ug/mL | not captured | exact (not captured) | T2:row14:col2 |
+| PD (effect) | IC50 (ug/mL) — RSE% | `Q322` · not captured | 66.4 | ug/mL | not captured | exact (not captured) | T2:row14:col3 |
+| PD (effect) | IC50 (ug/mL) — Bootstrap of estimates median | `Q322` · not captured | 0.566 | ug/mL | not captured | exact (not captured) | T2:row14:col4 |
+| PD (effect) | IC50 (ug/mL) — Bootstrap of estimates 90%CI | `Q322` · not captured | 0 | ug/mL | not captured | exact (not captured) | T2:row14:col5 |
+| model term | Kplb — Point estimate | `Q410` · not captured | 0 | unit | not captured | llm (not captured) | T2:row16:col2 |
+| variability | IIV Kin (%) — Point estimate | `Q312` · not captured | 16.0 | unit | not captured | llm_confirmed (not captured) | T2:row18:col2 |
+| variability | IIV Kin (%) — RSE% | `Q312` · not captured | 38.7 | unit | not captured | llm_confirmed (not captured) | T2:row18:col3 |
+| variability | IIV Kin (%) — Bootstrap of estimates median | `Q312` · not captured | 16.8 | unit | not captured | llm_confirmed (not captured) | T2:row18:col4 |
+| variability | IIV Kin (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 5.90 | unit | not captured | llm_confirmed (not captured) | T2:row18:col5 |
+| variability | IIV Kin (%) — Shrinkage% | `Q318` · not captured | 98.8 | unit | not captured | llm_corrected (not captured) | T2:row18:col6 |
+| PD (effect) | IIV Kout (%) — Point estimate | `Q328` · not captured | 23.3 | unit | not captured | llm_confirmed (not captured) | T2:row19:col2 |
+| PD (effect) | IIV Kout (%) — RSE% | `Q328` · not captured | 13.8 | unit | not captured | llm_confirmed (not captured) | T2:row19:col3 |
+| PD (effect) | IIV Kout (%) — Bootstrap of estimates median | `Q328` · not captured | 22.2 | unit | not captured | llm_confirmed (not captured) | T2:row19:col4 |
+| PD (effect) | IIV Kout (%) — Bootstrap of estimates 90%CI | `Q328` · not captured | 15.5 | unit | not captured | llm_confirmed (not captured) | T2:row19:col5 |
+| variability | IIV Kout (%) — Shrinkage% | `Q318` · not captured | 18.3 | unit | not captured | llm_corrected (not captured) | T2:row19:col6 |
+| PD (effect) | IIV IC50 (%) — Point estimate | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col2 |
+| PD (effect) | IIV IC50 (%) — RSE% | `Q322` · not captured | 33.5 | unit | not captured | llm_confirmed (not captured) | T2:row20:col3 |
+| PD (effect) | IIV IC50 (%) — Bootstrap of estimates median | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col4 |
+| PD (effect) | IIV IC50 (%) — Bootstrap of estimates 90%CI | `Q322` · not captured | 67.6 | unit | not captured | llm_confirmed (not captured) | T2:row20:col5 |
+| variability | IIV IC50 (%) — Shrinkage% | `Q318` · not captured | 47.8 | unit | not captured | llm_corrected (not captured) | T2:row20:col6 |
+| variability | IIV PLBmax (%) — Point estimate | `Q312` · not captured | 98.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col2 |
+| variability | IIV PLBmax (%) — RSE% | `Q312` · not captured | 15.0 | unit | not captured | llm_confirmed (not captured) | T2:row21:col3 |
+| variability | IIV PLBmax (%) — Bootstrap of estimates median | `Q312` · not captured | 96.4 | unit | not captured | llm_confirmed (not captured) | T2:row21:col4 |
+| variability | IIV PLBmax (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 64.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col5 |
+| variability | IIV PLBmax (%) — Shrinkage% | `Q318` · not captured | 20.8 | unit | not captured | llm_corrected (not captured) | T2:row21:col6 |
+| variability | σPASI — Shrinkage% | `Q318` · not captured | 11.5 | unit | not captured | llm (not captured) | T2:row22:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

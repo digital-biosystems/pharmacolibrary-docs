@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (concentrations from the PK model of Chen_2025) drives frequency of [Ca2+]i oscillations (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Metformin concentration-dependently inhibited the frequency of phenylephrine-induced [Ca2+]i oscillations in rat hepatocytes, with an IC50 of 0.1 mM; the paper does not state a mechanistic PD model (e.g. kin/kout or effect compartment), only that the inhibition was antagonized by cAMP-elevating agents and enhanced by insulin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ubl_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

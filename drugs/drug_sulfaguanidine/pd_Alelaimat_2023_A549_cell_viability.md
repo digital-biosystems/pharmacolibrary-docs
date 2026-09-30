@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulfaguanidine–triazine derivatives (compounds 27, 28, 29, 31, 35) inhibit A549 lung cancer cell viability in an MTT assay at test concentrations of 100 and 50 μM, with IC50 values ranging from 14.8 to 33.2 μM (e.g., 14.8 μM for compound 27 and 33.2 μM for compound 28). The paper does not establish a mechanism for this antiproliferative effect, noting the compounds' moderate PI3Kα inhibition and postulating alternative modes of action such as carbonic anhydrase IX/XII or FAK inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alelaimat_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,73 +30,73 @@ Alelaimat MA; Al-Sha'er MA; Basheer HA et al. (2023). ACS omega 8
   ·  DOI: [10.1021/acsomega.3c01273](https://doi.org/10.1021/acsomega.3c01273)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 19 — experimental % of inhibition/IC50 | `Q322` · not captured | 28.4 | unknown | not captured | llm (not captured) | tbl2:row3:col5 |
-| 20 — experimental % of inhibition/IC50 | `Q322` · not captured | 31.3 | unknown | not captured | llm (not captured) | tbl2:row4:col5 |
-| 21 — experimental % of inhibition/IC50 | `Q322` · not captured | 68 | unknown | not captured | llm (not captured) | tbl2:row5:col5 |
-| 22 — experimental % of inhibition/IC50 | `Q322` · not captured | 59.7 | unknown | not captured | llm (not captured) | tbl2:row6:col5 |
-| 23 — experimental % of inhibition/IC50 | `Q322` · not captured | 88.3 | unknown | not captured | llm (not captured) | tbl2:row7:col5 |
-| 24 — experimental % of inhibition/IC50 | `Q322` · not captured | 66.3 | unknown | not captured | llm (not captured) | tbl2:row8:col5 |
-| 25 — experimental % of inhibition/IC50 | `Q322` · not captured | 40.1 | unknown | not captured | llm (not captured) | tbl2:row9:col5 |
-| 26 — experimental % of inhibition/IC50 | `Q322` · not captured | 39.6 | unknown | not captured | llm (not captured) | tbl2:row10:col5 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 17.5 | unknown | not captured | llm (not captured) | tbl2:row11:col2 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row11:col3 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.3 | unknown | not captured | llm (not captured) | tbl2:row11:col4 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 97.4 | unknown | not captured | llm (not captured) | tbl2:row11:col5 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 14.8 | unknown | not captured | llm (not captured) | tbl2:row11:col6 |
-| 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row11:col7 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 21.1 | unknown | not captured | llm (not captured) | tbl2:row12:col2 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row12:col3 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.2 | unknown | not captured | llm (not captured) | tbl2:row12:col4 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 98.6 | unknown | not captured | llm (not captured) | tbl2:row12:col5 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 33.2 | unknown | not captured | llm (not captured) | tbl2:row12:col6 |
-| 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row12:col7 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 18.4 | unknown | not captured | llm (not captured) | tbl2:row13:col2 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row13:col3 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 1.7 | unknown | not captured | llm (not captured) | tbl2:row13:col4 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 98.4 | unknown | not captured | llm (not captured) | tbl2:row13:col5 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 15.7 | unknown | not captured | llm (not captured) | tbl2:row13:col6 |
-| 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row13:col7 |
-| 30 — experimental % of inhibition/IC50 | `Q322` · not captured | 77.8 | unknown | not captured | llm (not captured) | tbl2:row14:col5 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 26.5 | unknown | not captured | llm (not captured) | tbl2:row15:col2 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row15:col3 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row15:col4 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 97 | unknown | not captured | llm (not captured) | tbl2:row15:col5 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 27.4 | unknown | not captured | llm (not captured) | tbl2:row15:col6 |
-| 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row15:col7 |
-| 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 99.5 | unknown | not captured | llm (not captured) | tbl2:row16:col5 |
-| 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 28.5 | unknown | not captured | llm (not captured) | tbl2:row16:col6 |
-| 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row16:col7 |
-| 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 97.8 | unknown | not captured | llm (not captured) | tbl2:row17:col5 |
-| 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 27.5 | unknown | not captured | llm (not captured) | tbl2:row17:col6 |
-| 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row17:col7 |
-| 34 — experimental % of inhibition/IC50 | `Q322` · not captured | 7.9 | unknown | not captured | llm (not captured) | tbl2:row18:col5 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 21.1 | unknown | not captured | llm (not captured) | tbl2:row19:col2 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row19:col3 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row19:col4 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 96.5 | unknown | not captured | llm (not captured) | tbl2:row19:col5 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 19.3 | unknown | not captured | llm (not captured) | tbl2:row19:col6 |
-| 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row19:col7 |
-| 36 — experimental % of inhibition/IC50 | `Q322` · not captured | 12.3 | unknown | not captured | llm (not captured) | tbl2:row20:col5 |
-| 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 99.8 | unknown | not captured | llm (not captured) | tbl2:row21:col5 |
-| 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 23.4 | unknown | not captured | llm (not captured) | tbl2:row21:col6 |
-| 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row21:col7 |
-| 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 95.1 | unknown | not captured | llm (not captured) | tbl2:row22:col5 |
-| 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 22.4 | unknown | not captured | llm (not captured) | tbl2:row22:col6 |
-| 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row22:col7 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 13.1 | unknown | not captured | llm (not captured) | tbl2:row23:col2 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row23:col3 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 2.2 | unknown | not captured | llm (not captured) | tbl2:row23:col4 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 95.1 | unknown | not captured | llm (not captured) | tbl2:row23:col5 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 16.5 | unknown | not captured | llm (not captured) | tbl2:row23:col6 |
-| Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 0.96 | unknown | not captured | llm (not captured) | tbl2:row23:col7 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row24:col2 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row24:col3 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 2.0 | unknown | not captured | llm (not captured) | tbl2:row24:col4 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 93.6 | unknown | not captured | llm (not captured) | tbl2:row24:col5 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 16.6 | unknown | not captured | llm (not captured) | tbl2:row24:col6 |
-| Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row24:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 19 — experimental % of inhibition/IC50 | `Q322` · not captured | 28.4 | unknown | not captured | llm (not captured) | tbl2:row3:col5 |
+| PD (effect) | 20 — experimental % of inhibition/IC50 | `Q322` · not captured | 31.3 | unknown | not captured | llm (not captured) | tbl2:row4:col5 |
+| PD (effect) | 21 — experimental % of inhibition/IC50 | `Q322` · not captured | 68 | unknown | not captured | llm (not captured) | tbl2:row5:col5 |
+| PD (effect) | 22 — experimental % of inhibition/IC50 | `Q322` · not captured | 59.7 | unknown | not captured | llm (not captured) | tbl2:row6:col5 |
+| PD (effect) | 23 — experimental % of inhibition/IC50 | `Q322` · not captured | 88.3 | unknown | not captured | llm (not captured) | tbl2:row7:col5 |
+| PD (effect) | 24 — experimental % of inhibition/IC50 | `Q322` · not captured | 66.3 | unknown | not captured | llm (not captured) | tbl2:row8:col5 |
+| PD (effect) | 25 — experimental % of inhibition/IC50 | `Q322` · not captured | 40.1 | unknown | not captured | llm (not captured) | tbl2:row9:col5 |
+| PD (effect) | 26 — experimental % of inhibition/IC50 | `Q322` · not captured | 39.6 | unknown | not captured | llm (not captured) | tbl2:row10:col5 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 17.5 | unknown | not captured | llm (not captured) | tbl2:row11:col2 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row11:col3 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.3 | unknown | not captured | llm (not captured) | tbl2:row11:col4 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 97.4 | unknown | not captured | llm (not captured) | tbl2:row11:col5 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 14.8 | unknown | not captured | llm (not captured) | tbl2:row11:col6 |
+| PD (effect) | 27 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row11:col7 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 21.1 | unknown | not captured | llm (not captured) | tbl2:row12:col2 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row12:col3 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.2 | unknown | not captured | llm (not captured) | tbl2:row12:col4 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 98.6 | unknown | not captured | llm (not captured) | tbl2:row12:col5 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 33.2 | unknown | not captured | llm (not captured) | tbl2:row12:col6 |
+| PD (effect) | 28 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row12:col7 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 18.4 | unknown | not captured | llm (not captured) | tbl2:row13:col2 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row13:col3 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 1.7 | unknown | not captured | llm (not captured) | tbl2:row13:col4 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 98.4 | unknown | not captured | llm (not captured) | tbl2:row13:col5 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 15.7 | unknown | not captured | llm (not captured) | tbl2:row13:col6 |
+| PD (effect) | 29 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row13:col7 |
+| PD (effect) | 30 — experimental % of inhibition/IC50 | `Q322` · not captured | 77.8 | unknown | not captured | llm (not captured) | tbl2:row14:col5 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 26.5 | unknown | not captured | llm (not captured) | tbl2:row15:col2 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row15:col3 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row15:col4 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 97 | unknown | not captured | llm (not captured) | tbl2:row15:col5 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 27.4 | unknown | not captured | llm (not captured) | tbl2:row15:col6 |
+| PD (effect) | 31 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row15:col7 |
+| PD (effect) | 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 99.5 | unknown | not captured | llm (not captured) | tbl2:row16:col5 |
+| PD (effect) | 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 28.5 | unknown | not captured | llm (not captured) | tbl2:row16:col6 |
+| PD (effect) | 32 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row16:col7 |
+| PD (effect) | 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 97.8 | unknown | not captured | llm (not captured) | tbl2:row17:col5 |
+| PD (effect) | 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 27.5 | unknown | not captured | llm (not captured) | tbl2:row17:col6 |
+| PD (effect) | 33 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row17:col7 |
+| PD (effect) | 34 — experimental % of inhibition/IC50 | `Q322` · not captured | 7.9 | unknown | not captured | llm (not captured) | tbl2:row18:col5 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 21.1 | unknown | not captured | llm (not captured) | tbl2:row19:col2 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row19:col3 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row19:col4 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 96.5 | unknown | not captured | llm (not captured) | tbl2:row19:col5 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 19.3 | unknown | not captured | llm (not captured) | tbl2:row19:col6 |
+| PD (effect) | 35 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row19:col7 |
+| PD (effect) | 36 — experimental % of inhibition/IC50 | `Q322` · not captured | 12.3 | unknown | not captured | llm (not captured) | tbl2:row20:col5 |
+| PD (effect) | 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 99.8 | unknown | not captured | llm (not captured) | tbl2:row21:col5 |
+| PD (effect) | 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 23.4 | unknown | not captured | llm (not captured) | tbl2:row21:col6 |
+| PD (effect) | 37 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row21:col7 |
+| PD (effect) | 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 95.1 | unknown | not captured | llm (not captured) | tbl2:row22:col5 |
+| PD (effect) | 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 22.4 | unknown | not captured | llm (not captured) | tbl2:row22:col6 |
+| PD (effect) | 38 — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row22:col7 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 13.1 | unknown | not captured | llm (not captured) | tbl2:row23:col2 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 0.98 | unknown | not captured | llm (not captured) | tbl2:row23:col3 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 2.2 | unknown | not captured | llm (not captured) | tbl2:row23:col4 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 95.1 | unknown | not captured | llm (not captured) | tbl2:row23:col5 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 16.5 | unknown | not captured | llm (not captured) | tbl2:row23:col6 |
+| PD (effect) | Geda — experimental % of inhibition/IC50 | `Q322` · not captured | 0.96 | unknown | not captured | llm (not captured) | tbl2:row23:col7 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 2.1 | unknown | not captured | llm (not captured) | tbl2:row24:col2 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 0.97 | unknown | not captured | llm (not captured) | tbl2:row24:col3 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 2.0 | unknown | not captured | llm (not captured) | tbl2:row24:col4 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 93.6 | unknown | not captured | llm (not captured) | tbl2:row24:col5 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 16.6 | unknown | not captured | llm (not captured) | tbl2:row24:col6 |
+| PD (effect) | Docxb — experimental % of inhibition/IC50 | `Q322` · not captured | 0.99 | unknown | not captured | llm (not captured) | tbl2:row24:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

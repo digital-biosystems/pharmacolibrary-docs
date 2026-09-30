@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myricetin (measured concentrations) drives seA gene expression (in relative expression): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Myricetin (2–16 μg/mL) inhibited seA gene expression in S. aureus in a dose-dependent manner; the paper does not state an Emax/IC50 for this gene-expression response, though myricetin is a competitive inhibitor of NDH-2 with respect to menadione with IC50 0.7 μg/mL (2 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

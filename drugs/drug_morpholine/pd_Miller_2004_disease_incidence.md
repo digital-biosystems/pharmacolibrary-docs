@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trifloxystrobin drives name (in percent): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Trifloxystrobin concentrations (µg/liter) suppress disease incidence (percent) of Uncinula necator on grape leaf disks, with EC50 estimated from the linear portion of the response regressed on ln-transformed concentration; the statewide mean EC50 for incidence was 12.8 µg/liter (95% CI 8.9–18.5 µg/liter), with population means ranging 12.8–20.5 µg/liter depending on analysis. The paper does not describe a pharmacodynamic mechanism beyond this concentration–response suppression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Miller_2004`
 - **model family:** `linear`
 - **driver:** `not_resolved`

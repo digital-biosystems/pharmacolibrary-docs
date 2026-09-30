@@ -24,9 +24,9 @@ In February 2014, metreleptin was approved by the FDA for the treatment of compl
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wong_2004_reference](drugs/drug_metreleptin/Metreleptin_Wong2004_reference.md) | 1-compartment (no model) | 3 | Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004) | [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.182). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wong_2004_reference](drugs/drug_metreleptin/Metreleptin_Wong2004_reference.md) | — | 1-compartment (no model) | 3 | Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004) | [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931) |
 
 ## ADME sites
 

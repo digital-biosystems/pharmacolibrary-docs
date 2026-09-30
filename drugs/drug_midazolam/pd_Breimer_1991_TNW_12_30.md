@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives TNW 12-30 (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentration, linked to an effect compartment (Cem) in equilibrium with plasma, stimulates the EEG parameter TNW 12-30 in healthy volunteers after 15, 30 and 60 mg midazolam doses, described by a sigmoid Emax model; the paper does not state the Emax, EC50, ke0 or gamma values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Breimer_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

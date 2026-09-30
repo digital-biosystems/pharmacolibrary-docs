@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ciprofol drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ciprofol effect-site concentrations (ng mL-1) suppress the Bispectral Index (BIS) in elderly surgical patients via an effect-compartment (ke0) link to a sigmoid Emax model, where ciprofol inhibits (lowers) BIS from baseline E0 = 93.40 with Imax = 45.77, IC50 (EC50) = 233.91 ng mL-1, and ke0 = 1.09 min-1 (bootstrap median 1.12 min-1); the Hill coefficient γ is reported but its estimate is not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,25 +30,25 @@ Zhu J; He J; Zhong B; Cao Y; Zhang X; Xu B et al. (2026). Frontiers in pharmacol
   ·  DOI: [10.3389/fphar.2026.1764590](https://doi.org/10.3389/fphar.2026.1764590)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ke0 (min-1) — Estimate (RSE%) | `Q326` · not captured | 1.09 | min-1 | not captured | exact (not captured) | T3:row2:col1 |
-| Ke0 (min-1) — Bootstrap median | `Q326` · not captured | 1.12 | min-1 | not captured | exact (not captured) | T3:row2:col2 |
-| Ke0 (min-1) — η-shrinkage (%) | `Q326` · not captured | 29.72 | min-1 | not captured | exact (not captured) | T3:row2:col4 |
-| E0 — Estimate (RSE%) | `Q324` · not captured | 93.40 | RSE% | not captured | exact (not captured) | T3:row3:col1 |
-| E0 — Bootstrap median | `Q324` · not captured | 93.41 | not captured | not captured | exact (not captured) | T3:row3:col2 |
-| E0 — η-shrinkage (%) | `Q324` · not captured | 23.51 | not captured | not captured | exact (not captured) | T3:row3:col4 |
-| Imax — Estimate (RSE%) | `Q323` · not captured | 45.77 | RSE% | not captured | exact (not captured) | T3:row4:col1 |
-| Imax — Bootstrap median | `Q323` · not captured | 45.79 | not captured | not captured | exact (not captured) | T3:row4:col2 |
-| Imax — η-shrinkage (%) | `Q323` · not captured | 26.85 | not captured | not captured | exact (not captured) | T3:row4:col4 |
-| IC50 (ng·ml-1) — Estimate (RSE%) | `Q322` · not captured | 233.91 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col1 |
-| IC50 (ng·ml-1) — Bootstrap median | `Q322` · not captured | 235.62 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col2 |
-| IC50 (ng·ml-1) — η-shrinkage (%) | `Q322` · not captured | 28.33 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col4 |
-| γ — η-shrinkage (%) | `Q318` · not captured | 29.23 | not captured | not captured | llm (not captured) | T3:row6:col4 |
-| ω(IC50) — Estimate (RSE%) | `Q322` · not captured | 0.09 | IC50 | not captured | llm (not captured) | T3:row8:col1 |
-| ω(IC50) — Bootstrap median | `Q322` · not captured | 0.08 | IC50 | not captured | llm (not captured) | T3:row8:col2 |
-| σ — Estimate (RSE%) | `Q315` · not captured | 7.70 | RSE% | not captured | llm (not captured) | T3:row11:col1 |
-| σ — ε-shrinkage (%) | `Q318` · not captured | 29.10 | WSV | not captured | llm (not captured) | T3:row11:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ke0 (min-1) — Estimate (RSE%) | `Q326` · not captured | 1.09 | min-1 | not captured | exact (not captured) | T3:row2:col1 |
+| PD (effect) | Ke0 (min-1) — Bootstrap median | `Q326` · not captured | 1.12 | min-1 | not captured | exact (not captured) | T3:row2:col2 |
+| PD (effect) | Ke0 (min-1) — η-shrinkage (%) | `Q326` · not captured | 29.72 | min-1 | not captured | exact (not captured) | T3:row2:col4 |
+| PD (effect) | E0 — Estimate (RSE%) | `Q324` · not captured | 93.40 | RSE% | not captured | exact (not captured) | T3:row3:col1 |
+| PD (effect) | E0 — Bootstrap median | `Q324` · not captured | 93.41 | not captured | not captured | exact (not captured) | T3:row3:col2 |
+| PD (effect) | E0 — η-shrinkage (%) | `Q324` · not captured | 23.51 | not captured | not captured | exact (not captured) | T3:row3:col4 |
+| PD (effect) | Imax — Estimate (RSE%) | `Q323` · not captured | 45.77 | RSE% | not captured | exact (not captured) | T3:row4:col1 |
+| PD (effect) | Imax — Bootstrap median | `Q323` · not captured | 45.79 | not captured | not captured | exact (not captured) | T3:row4:col2 |
+| PD (effect) | Imax — η-shrinkage (%) | `Q323` · not captured | 26.85 | not captured | not captured | exact (not captured) | T3:row4:col4 |
+| PD (effect) | IC50 (ng·ml-1) — Estimate (RSE%) | `Q322` · not captured | 233.91 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col1 |
+| PD (effect) | IC50 (ng·ml-1) — Bootstrap median | `Q322` · not captured | 235.62 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col2 |
+| PD (effect) | IC50 (ng·ml-1) — η-shrinkage (%) | `Q322` · not captured | 28.33 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col4 |
+| variability | γ — η-shrinkage (%) | `Q318` · not captured | 29.23 | not captured | not captured | llm (not captured) | T3:row6:col4 |
+| PD (effect) | ω(IC50) — Estimate (RSE%) | `Q322` · not captured | 0.09 | IC50 | not captured | llm (not captured) | T3:row8:col1 |
+| PD (effect) | ω(IC50) — Bootstrap median | `Q322` · not captured | 0.08 | IC50 | not captured | llm (not captured) | T3:row8:col2 |
+| variability | σ — Estimate (RSE%) | `Q315` · not captured | 7.70 | RSE% | not captured | llm (not captured) | T3:row11:col1 |
+| variability | σ — ε-shrinkage (%) | `Q318` · not captured | 29.10 | WSV | not captured | llm (not captured) | T3:row11:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lead (measured concentrations) drives name (in ratio): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism; it reports an empirical, nonlinear dose–response relationship between maternal plasma lead concentration (μg/L) and the milk-to-plasma (M/P) lead ratio, with the M/P ratio decreasing by 16.6 and 0.6 per 0.1 μg/L increase in plasma lead. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettinger_2014`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

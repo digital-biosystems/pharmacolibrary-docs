@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bisoprolol (measured concentrations) drives IK(erg) amplitude (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bisoprolol (not flupirtine, which only attenuated the effect) concentration-dependently and directly suppresses the amplitude of erg-mediated K+ current (IK(erg)) in pituitary GH3 cells, fitted with a Hill/Emax inhibition model with IC50 = 6.42 μM, Hill coefficient 1.2, and near-complete inhibition at 100 μM; the mechanism is direct channel inhibition, not β1-adrenergic antagonism, and no kin/kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `So_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

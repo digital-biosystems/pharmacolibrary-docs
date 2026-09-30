@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Endotoxin drives tumor necrosis factor alpha (in ng/L): indirect response — drug inhibits the production of tumor necrosis factor alpha.
+
+**Model:** No model was generated from this record.
+
+> Endotoxin (ETX) concentration-time course stimulates the production rate of TNF-α via a sigmoidal Emax relationship (Emax 2540, EC50 6.33 EU/L, γ 2.10), with tolerance modelled as a delayed (two transit compartments, MTT 6.33 h) Emax-driven increase in EC50 driven by ETX exposure (TC50 29300, Tmax 45100); baselines S0,TNF-α varied by study (3.06–281 ng/L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thorsted_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,31 +30,31 @@ Thorsted A; Bouchene S; Tano E; Castegren M; Lipcsey M; Sjölin J; Karlsson MO; 
   ·  DOI: [10.1371/journal.pone.0211981](https://doi.org/10.1371/journal.pone.0211981)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vmax — Estimates (RSE%) | `Q66` · not captured | 442000 | RSE% | not captured | special_case (not captured) | pone.0211981.t002:row1:col3 |
-| KM — Estimates (RSE%) | `Q1` · not captured | 12600 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row2:col3 |
-| KM — Variability in CV% (RSE%)c [SHR%] | `Q1` · not captured | 120 | not captured | not captured | exact (not captured) | pone.0211981.t002:row2:col5 |
-| Vc — Estimates (RSE%) | `Q63` · not captured | 36.1 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row3:col3 |
-| Vc — Variability in CV% (RSE%)c [SHR%] | `Q63` · not captured | 75.3 | not captured | not captured | exact (not captured) | pone.0211981.t002:row3:col5 |
-| BASEETX — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 96.3 | not captured | not captured | llm (not captured) | pone.0211981.t002:row4:col5 |
-| Baseline ETX (Coatest, study F)b — (unit) | `Q324` · not captured | 1810 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row5:col1 |
-| MTTTNF-α — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 81.5 | not captured | not captured | llm (not captured) | pone.0211981.t002:row8:col5 |
-| S0,TNF-α — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 54.1 | not captured | not captured | llm (not captured) | pone.0211981.t002:row9:col5 |
-| Baseline TNF-α (DuoSet, study E)b — (unit) | `Q324` · not captured | 25.4 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row10:col1 |
-| Baseline TNF-α (BioSource, study C+F)b — (unit) | `Q324` · not captured | 3.06 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row11:col1 |
-| Baseline TNF-α (BioSource, study D)b — (unit) | `Q324` · not captured | 68.2 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row12:col1 |
-| Emax — Estimates (RSE%) | `Q320` · not captured | 2540 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row13:col3 |
-| γ — Estimates (RSE%) | `Q89` · not captured | 2.10 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row15:col3 |
-| MTTEC50 — Estimates (RSE%) | `Q321` · not captured | 6.33 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row16:col3 |
-| Tmax — Estimates (RSE%) | `Q56` · not captured | 45100 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row17:col3 |
-| TC50 — Estimates (RSE%) | `Q321` · not captured | 29300 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row18:col3 |
-| MTTIL-6 — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 47.4 | not captured | not captured | llm (not captured) | pone.0211981.t002:row19:col5 |
-| S0,IL-6 — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 79.9 | not captured | not captured | llm (not captured) | pone.0211981.t002:row20:col5 |
-| Baseline IL-6 (BioSource, study C+D+F)b — (unit) | `Q324` · not captured | 8.19 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row21:col1 |
-| σ ETX — Estimates (RSE%) | `Q315` · not captured | 32.1 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row24:col3 |
-| σ TNF-α — Estimates (RSE%) | `Q315` · not captured | 48.5 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row25:col3 |
-| σ IL-6 — Estimates (RSE%) | `Q315` · not captured | 50.5 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row26:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vmax — Estimates (RSE%) | `Q66` · not captured | 442000 | RSE% | not captured | special_case (not captured) | pone.0211981.t002:row1:col3 |
+| PK (driver) | KM — Estimates (RSE%) | `Q1` · not captured | 12600 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row2:col3 |
+| PK (driver) | KM — Variability in CV% (RSE%)c [SHR%] | `Q1` · not captured | 120 | not captured | not captured | exact (not captured) | pone.0211981.t002:row2:col5 |
+| PK (driver) | Vc — Estimates (RSE%) | `Q63` · not captured | 36.1 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row3:col3 |
+| PK (driver) | Vc — Variability in CV% (RSE%)c [SHR%] | `Q63` · not captured | 75.3 | not captured | not captured | exact (not captured) | pone.0211981.t002:row3:col5 |
+| variability | BASEETX — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 96.3 | not captured | not captured | llm (not captured) | pone.0211981.t002:row4:col5 |
+| PD (effect) | Baseline ETX (Coatest, study F)b — (unit) | `Q324` · not captured | 1810 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row5:col1 |
+| variability | MTTTNF-α — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 81.5 | not captured | not captured | llm (not captured) | pone.0211981.t002:row8:col5 |
+| variability | S0,TNF-α — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 54.1 | not captured | not captured | llm (not captured) | pone.0211981.t002:row9:col5 |
+| PD (effect) | Baseline TNF-α (DuoSet, study E)b — (unit) | `Q324` · not captured | 25.4 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row10:col1 |
+| PD (effect) | Baseline TNF-α (BioSource, study C+F)b — (unit) | `Q324` · not captured | 3.06 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row11:col1 |
+| PD (effect) | Baseline TNF-α (BioSource, study D)b — (unit) | `Q324` · not captured | 68.2 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row12:col1 |
+| PD (effect) | Emax — Estimates (RSE%) | `Q320` · not captured | 2540 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row13:col3 |
+| PK (driver) | γ — Estimates (RSE%) | `Q89` · not captured | 2.10 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row15:col3 |
+| PD (effect) | MTTEC50 — Estimates (RSE%) | `Q321` · not captured | 6.33 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row16:col3 |
+| PK (driver) | Tmax — Estimates (RSE%) | `Q56` · not captured | 45100 | RSE% | not captured | exact (not captured) | pone.0211981.t002:row17:col3 |
+| PD (effect) | TC50 — Estimates (RSE%) | `Q321` · not captured | 29300 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row18:col3 |
+| variability | MTTIL-6 — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 47.4 | not captured | not captured | llm (not captured) | pone.0211981.t002:row19:col5 |
+| variability | S0,IL-6 — Variability in CV% (RSE%)c [SHR%] | `Q318` · not captured | 79.9 | not captured | not captured | llm (not captured) | pone.0211981.t002:row20:col5 |
+| PD (effect) | Baseline IL-6 (BioSource, study C+D+F)b — (unit) | `Q324` · not captured | 8.19 | unit | not captured | llm_confirmed (not captured) | pone.0211981.t002:row21:col1 |
+| variability | σ ETX — Estimates (RSE%) | `Q315` · not captured | 32.1 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row24:col3 |
+| variability | σ TNF-α — Estimates (RSE%) | `Q315` · not captured | 48.5 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row25:col3 |
+| variability | σ IL-6 — Estimates (RSE%) | `Q315` · not captured | 50.5 | RSE% | not captured | llm (not captured) | pone.0211981.t002:row26:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

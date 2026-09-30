@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives larval mortality (in days): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not model menadione concentration acting on larval mortality; LT50 (4.5 vs 5.7 days) reflects BbSod2-overexpressing versus wild-type B. bassiana virulence to Spodoptera litura larvae, not a menadione dose-response. Menadione instead inhibits fungal colony growth and conidial germination, with EC50 values of 2.41 ± 0.03 versus 1.25 ± 0.01 mM (growth) and 0.89 ± 0.06 versus 0.55 ± 0.07 mM (germination) for the transformed versus wild-type strains; no Imax, Emax, kin, kout, ke0, or sigmoid-Emax parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

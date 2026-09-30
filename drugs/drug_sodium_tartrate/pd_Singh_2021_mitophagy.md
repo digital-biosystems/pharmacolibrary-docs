@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GSK3357679A (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> GSK3357679A, an LRRK2 kinase inhibitor, stimulates mitophagy (mito-QC reporter, %) in a dose-dependent manner in primary MEFs, with maximal stimulation at 10 nM in WT cells and a reduced response with maximal effect at 100 nM in LRRK2 G2019S cells; the effect is LRRK2-dependent and proceeds via canonical (LC3-dependent) autophagy. The paper does not report a quantitative PD model (no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

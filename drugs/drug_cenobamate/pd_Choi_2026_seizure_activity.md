@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cenobamate (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cenobamate concentrations (µM) inhibit seizure activity in the mouse and rat MES model via a direct Emax-type exposure–response relationship; the paper does not state Imax, gamma, kin/kout, or an effect-compartment ke0. Reported EC50 values were 66.0 µM (plasma) and 24.9 µM (brain) in mice and 15.9 µM (plasma) and 10.7 µM (brain) in rats, with oral ED50 values of 7.05 (mice) and 6.0 (rats) determined 2 h after administration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Choi_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

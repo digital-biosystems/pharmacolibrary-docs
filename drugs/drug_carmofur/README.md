@@ -24,15 +24,15 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017](drugs/drug_carmofur/pd_Doan_2017_Annexin_V.md) | Doan (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017](drugs/drug_carmofur/pd_Doan_2017_MTT.md) | Doan (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_2](drugs/drug_carmofur/pd_Doan_2017_2_Annexin_V.md) | Doan (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_2](drugs/drug_carmofur/pd_Doan_2017_2_MTT.md) | Doan (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020](drugs/drug_carmofur/pd_Jin_2020_cell_viability.md) | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020](drugs/drug_carmofur/pd_Jin_2020_intracellular_nucleocapsid_NP_protein_level.md) | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020](drugs/drug_carmofur/pd_Jin_2020_viral_RNA_copy_number_in_cellular_supernatant.md) | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_Annexin_V](drugs/drug_carmofur/pd_Doan_2017_Annexin_V.md) | apoptosis ← carmofur · inhibition effect | — | Doan (2017) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_MTT](drugs/drug_carmofur/pd_Doan_2017_MTT.md) | cell survival ← carmofur · inhibition effect | — | Doan (2017) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_2_Annexin_V](drugs/drug_carmofur/pd_Doan_2017_2_Annexin_V.md) | apoptosis ← carmofur · inhibition effect | — | Doan (2017) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Doan_2017_2_MTT](drugs/drug_carmofur/pd_Doan_2017_2_MTT.md) | cell survival ← carmofur · inhibition effect | — | Doan (2017) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020_cell_viability](drugs/drug_carmofur/pd_Jin_2020_cell_viability.md) | name ← carmofur · inhibition effect | — | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020_intracellular_nucleocapsid_NP_protein_level](drugs/drug_carmofur/pd_Jin_2020_intracellular_nucleocapsid_NP_protein_level.md) | name ← carmofur · inhibition effect | — | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jin_2020_viral_RNA_copy_number_in_cellular_supernatant](drugs/drug_carmofur/pd_Jin_2020_viral_RNA_copy_number_in_cellular_supernatant.md) | name ← carmofur · inhibition effect | — | Jin Z et al., Structural basis for the inhibition of…, Nature structural & molecul… (2020) | [10.1038/s41594-020-0440-6](https://doi.org/10.1038/s41594-020-0440-6) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

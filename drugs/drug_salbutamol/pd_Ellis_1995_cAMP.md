@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salmeterol (measured concentrations) drives cyclic AMP accumulation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In bovine tracheal smooth muscle, salbutamol (and salmeterol) stimulate cyclic AMP accumulation via β2-adrenoceptor agonism, described by a sigmoid Emax concentration–response relationship; salbutamol's EC50 for cAMP accumulation is 169 [99–290] nM (salmeterol: 5.3 [1.8–15.2] nM), and salbutamol also inhibits histamine-stimulated [3H]-inositol phosphate accumulation with IC50 = 13.8 [7.0–27.4] nM. The paper does not state a kinetic (kin/kout/ke0) mechanism, only noting salbutamol's cAMP effects are more rapid (maximal within 5 min) than salmeterol's (30–40 min).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ellis_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

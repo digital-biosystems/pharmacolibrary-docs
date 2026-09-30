@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Propofol (measured concentrations) drives Observer's Assessment of Alertness/Sedation score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Propofol effect-site concentration (µg/mL) acts directly on the OAA/S sedation score via a sigmoid Emax model (no effect-compartment or turnover mechanism stated); predicted Ce50(m) for OAA/S scores ≥2, 3, 4, and 5 were 1.61, 1.78, 1.91, and 2.17 µg/mL, with steep slopes λ of 12.8, 13.2, 14.7, and 22.8, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koo_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,27 +31,27 @@ Koo BN; Shin S; Kim SY; Kang YR; Jeong KH; Han DW et al. (2015). Yonsei medical 
   ·  DOI: [10.3349/ymj.2015.56.5.1408](https://doi.org/10.3349/ymj.2015.56.5.1408)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C50(2) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.61 | µg/mL | not captured | space_fold (not captured) | T3:row2:col1 |
-| C50(2) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row2:col2 |
-| C50(3) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.78 | µg/mL | not captured | space_fold (not captured) | T3:row3:col1 |
-| C50(3) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.025 | µg/mL | not captured | space_fold (not captured) | T3:row3:col2 |
-| C50(4) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.91 | µg/mL | not captured | space_fold (not captured) | T3:row4:col1 |
-| C50(4) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.038 | µg/mL | not captured | space_fold (not captured) | T3:row4:col2 |
-| C50(5) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 2.17 | µg/mL | not captured | space_fold (not captured) | T3:row5:col1 |
-| C50(5) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.066 | µg/mL | not captured | space_fold (not captured) | T3:row5:col2 |
-| λ(2) — Population mean value (%RSE) | `Q47` · not captured | 12.8 | not captured | not captured | exact (not captured) | T3:row6:col1 |
-| λ(3) — Population mean value (%RSE) | `Q47` · not captured | 13.2 | not captured | not captured | exact (not captured) | T3:row7:col1 |
-| λ(4) — Population mean value (%RSE) | `Q47` · not captured | 14.7 | not captured | not captured | exact (not captured) | T3:row8:col1 |
-| λ(5) — Population mean value (%RSE) | `Q47` · not captured | 22.8 | not captured | not captured | exact (not captured) | T3:row9:col1 |
-| C50(2) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.53 | µg/mL | not captured | space_fold (not captured) | T3:row11:col1 |
-| C50(2) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row11:col2 |
-| C50(3) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.64 | µg/mL | not captured | space_fold (not captured) | T3:row12:col1 |
-| C50(3) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row12:col2 |
-| λ(2) — Population mean value (%RSE) | `Q47` · not captured | 26.3 | not captured | not captured | exact (not captured) | T3:row15:col1 |
-| λ(3) — Population mean value (%RSE) | `Q47` · not captured | 14.4 | not captured | not captured | exact (not captured) | T3:row16:col1 |
-| λ(4) — Population mean value (%RSE) | `Q47` · not captured | 7.68 | not captured | not captured | exact (not captured) | T3:row17:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | C50(2) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.61 | µg/mL | not captured | space_fold (not captured) | T3:row2:col1 |
+| PD (effect) | C50(2) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row2:col2 |
+| PD (effect) | C50(3) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.78 | µg/mL | not captured | space_fold (not captured) | T3:row3:col1 |
+| PD (effect) | C50(3) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.025 | µg/mL | not captured | space_fold (not captured) | T3:row3:col2 |
+| PD (effect) | C50(4) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.91 | µg/mL | not captured | space_fold (not captured) | T3:row4:col1 |
+| PD (effect) | C50(4) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.038 | µg/mL | not captured | space_fold (not captured) | T3:row4:col2 |
+| PD (effect) | C50(5) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 2.17 | µg/mL | not captured | space_fold (not captured) | T3:row5:col1 |
+| PD (effect) | C50(5) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.066 | µg/mL | not captured | space_fold (not captured) | T3:row5:col2 |
+| PK (driver) | λ(2) — Population mean value (%RSE) | `Q47` · not captured | 12.8 | not captured | not captured | exact (not captured) | T3:row6:col1 |
+| PK (driver) | λ(3) — Population mean value (%RSE) | `Q47` · not captured | 13.2 | not captured | not captured | exact (not captured) | T3:row7:col1 |
+| PK (driver) | λ(4) — Population mean value (%RSE) | `Q47` · not captured | 14.7 | not captured | not captured | exact (not captured) | T3:row8:col1 |
+| PK (driver) | λ(5) — Population mean value (%RSE) | `Q47` · not captured | 22.8 | not captured | not captured | exact (not captured) | T3:row9:col1 |
+| PD (effect) | C50(2) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.53 | µg/mL | not captured | space_fold (not captured) | T3:row11:col1 |
+| PD (effect) | C50(2) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row11:col2 |
+| PD (effect) | C50(3) (µg/mL) — Population mean value (%RSE) | `Q321` · not captured | 1.64 | µg/mL | not captured | space_fold (not captured) | T3:row12:col1 |
+| PD (effect) | C50(3) (µg/mL) — Interindividual variability (%CV) | `Q321` · not captured | 0.016 | µg/mL | not captured | space_fold (not captured) | T3:row12:col2 |
+| PK (driver) | λ(2) — Population mean value (%RSE) | `Q47` · not captured | 26.3 | not captured | not captured | exact (not captured) | T3:row15:col1 |
+| PK (driver) | λ(3) — Population mean value (%RSE) | `Q47` · not captured | 14.4 | not captured | not captured | exact (not captured) | T3:row16:col1 |
+| PK (driver) | λ(4) — Population mean value (%RSE) | `Q47` · not captured | 7.68 | not captured | not captured | exact (not captured) | T3:row17:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

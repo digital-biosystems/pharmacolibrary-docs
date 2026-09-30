@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BTZ-043 drives colony-forming units (in CFU/lung): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BTZ-043 plasma concentrations inhibit the decline of CFU/lung in an Emax model, with Emax 0.181 d−1 and EC50 0.005135 mg/L; the paper does not state the underlying mechanism beyond this inhibitory exposure-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ngara_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,25 +30,25 @@ Ngara B; Flori L; van Wijk RC; Ernest JP; Tyagi S; Soni H; Hölscher C; Walter K
   ·  DOI: [10.1093/infdis/jiaf088](https://doi.org/10.1093/infdis/jiaf088)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F, Lh−1 — Estimates (RSE %) | `Q27` · not captured | 0.119 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row2:col1 |
-| Km, mgL−1 — Estimates (RSE %) | `Q1` · not captured | 0.948 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row3:col1 |
-| Vc/F, L — Estimates (RSE %) | `Q290` · not captured | 0.041 | L | not captured | exact (not captured) | jiaf088-T1:row4:col1 |
-| Vmax, mgL−1h−1 — Estimates (RSE %) | `Q66` · not captured | 1.9 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row5:col1 |
-| Vp/F, L — Estimates (RSE %) | `Q82` · not captured | 0.203 | L | not captured | exact (not captured) | jiaf088-T1:row6:col1 |
-| Q/F, Lh−1 — Estimates (RSE %) | `Q69` · not captured | 0.042 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row7:col1 |
-| Additive error, mgL−1 — Estimates (RSE %) | `Q317` · not captured | 0.105 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row9:col1 |
-| Emax, d−1 — Estimates (RSE %) | `Q320` · not captured | 0.181 | d−1 | not captured | exact (not captured) | jiaf088-T1:row12:col1 |
-| EC50, mgL−1 — Estimates (RSE %) | `Q321` · not captured | 0.005135 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row13:col1 |
-| Additive error, log CFU lung−1 — Estimates (RSE %) | `Q317` · not captured | 1.416 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row14:col1 |
-| Kd, d−1 — Estimates (RSE %) | `Q331` · not captured | 0.41 | d−1 | not captured | exact (not captured) | jiaf088-T1:row18:col1 |
-| CL/F, Lh−1 — Estimates (RSE %) | `Q27` · not captured | 404 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row26:col1 |
-| Ka, h−1 — Estimates (RSE %) | `Q49` · not captured | 1.69 | h−1 | not captured | exact (not captured) | jiaf088-T1:row27:col1 |
-| Vc/F, L — Estimates (RSE %) | `Q290` · not captured | 764 | L | not captured | exact (not captured) | jiaf088-T1:row28:col1 |
-| MTT — Estimates (RSE %) | `Q81` · not captured | 0.34 | RSE % | not captured | exact (not captured) | jiaf088-T1:row30:col1 |
-| Q/F — Estimates (RSE %) | `Q69` · not captured | 68 | RSE % | not captured | exact (not captured) | jiaf088-T1:row32:col1 |
-| Vp/F — Estimates (RSE %) | `Q82` · not captured | 382 | RSE % | not captured | exact (not captured) | jiaf088-T1:row33:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F, Lh−1 — Estimates (RSE %) | `Q27` · not captured | 0.119 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row2:col1 |
+| PK (driver) | Km, mgL−1 — Estimates (RSE %) | `Q1` · not captured | 0.948 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row3:col1 |
+| PK (driver) | Vc/F, L — Estimates (RSE %) | `Q290` · not captured | 0.041 | L | not captured | exact (not captured) | jiaf088-T1:row4:col1 |
+| PK (driver) | Vmax, mgL−1h−1 — Estimates (RSE %) | `Q66` · not captured | 1.9 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row5:col1 |
+| PK (driver) | Vp/F, L — Estimates (RSE %) | `Q82` · not captured | 0.203 | L | not captured | exact (not captured) | jiaf088-T1:row6:col1 |
+| PK (driver) | Q/F, Lh−1 — Estimates (RSE %) | `Q69` · not captured | 0.042 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row7:col1 |
+| variability | Additive error, mgL−1 — Estimates (RSE %) | `Q317` · not captured | 0.105 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row9:col1 |
+| PD (effect) | Emax, d−1 — Estimates (RSE %) | `Q320` · not captured | 0.181 | d−1 | not captured | exact (not captured) | jiaf088-T1:row12:col1 |
+| PD (effect) | EC50, mgL−1 — Estimates (RSE %) | `Q321` · not captured | 0.005135 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row13:col1 |
+| variability | Additive error, log CFU lung−1 — Estimates (RSE %) | `Q317` · not captured | 1.416 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row14:col1 |
+| PD (effect) | Kd, d−1 — Estimates (RSE %) | `Q331` · not captured | 0.41 | d−1 | not captured | exact (not captured) | jiaf088-T1:row18:col1 |
+| PK (driver) | CL/F, Lh−1 — Estimates (RSE %) | `Q27` · not captured | 404 | RSE % | not captured | llm_confirmed (not captured) | jiaf088-T1:row26:col1 |
+| PK (driver) | Ka, h−1 — Estimates (RSE %) | `Q49` · not captured | 1.69 | h−1 | not captured | exact (not captured) | jiaf088-T1:row27:col1 |
+| PK (driver) | Vc/F, L — Estimates (RSE %) | `Q290` · not captured | 764 | L | not captured | exact (not captured) | jiaf088-T1:row28:col1 |
+| PK (driver) | MTT — Estimates (RSE %) | `Q81` · not captured | 0.34 | RSE % | not captured | exact (not captured) | jiaf088-T1:row30:col1 |
+| PK (driver) | Q/F — Estimates (RSE %) | `Q69` · not captured | 68 | RSE % | not captured | exact (not captured) | jiaf088-T1:row32:col1 |
+| PK (driver) | Vp/F — Estimates (RSE %) | `Q82` · not captured | 382 | RSE % | not captured | exact (not captured) | jiaf088-T1:row33:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

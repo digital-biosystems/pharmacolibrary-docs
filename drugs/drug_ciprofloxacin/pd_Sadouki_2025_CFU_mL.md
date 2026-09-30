@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Meropenem, gentamicin, ciprofloxacin (measured concentrations) drive bacterial load (in continuous): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Ciprofloxacin (constant concentrations, 0.25–16 × MIC) acts on E. coli bacterial load (CFU/mL) via a logistic Emax killing model with a time-dependent drug effect (β) capturing regrowth; the paper does not state a production/elimination mechanism beyond direct bactericidal effect. Reported ciprofloxacin parameters include EMAX 4.55 (37.6%RSE), IC50 0.0106 mg/L (8.58%RSE), hill 3.58 (12.1%RSE), and BETA 1.67%RSE, alongside BMAX 10 CFU/mL; gentamicin (EMAX 4.18, IC50 0.0781 mg/L, hill 2.76) and meropenem (EMAX 5.47, IC50 1.12 mg/L, hill 3.63) were modelled similarly.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sadouki_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,31 +31,31 @@ Sadouki Z; Wey EQ; Read L; Bayliss M; Noel A; Balakrishnan I; McHugh TD; Kloprog
   ·  DOI: [10.1038/s41598-025-29354-y](https://doi.org/10.1038/s41598-025-29354-y)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| BMAX (CFU/mL) — Parameter | `Q332` · not captured | 10 | CFU/mL | not captured | exact (not captured) | Tab1:row4:col1 |
-| EMAX — Parameter | `Q320` · not captured | 4.18 | not captured | not captured | exact (not captured) | Tab1:row9:col1 |
-| EMAX — Model estimate (%RSE) | `Q320` · not captured | 5.43 | %RSE | not captured | exact (not captured) | Tab1:row9:col2 |
-| IC50 (mg/L) — Parameter | `Q322` · not captured | 0.0781 | mg/L | not captured | exact (not captured) | Tab1:row10:col1 |
-| IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 72.3 | mg/L | not captured | exact (not captured) | Tab1:row10:col2 |
-| hill — Parameter | `Q325` · not captured | 2.76 | not captured | not captured | exact (not captured) | Tab1:row11:col1 |
-| hill — Model estimate (%RSE) | `Q325` · not captured | 26.4 | %RSE | not captured | exact (not captured) | Tab1:row11:col2 |
-| BETA — Parameter | `Q68` · not captured | 0.922 | not captured | not captured | exact (not captured) | Tab1:row13:col1 |
-| BETA — Model estimate (%RSE) | `Q68` · not captured | 1.58 | %RSE | not captured | exact (not captured) | Tab1:row13:col2 |
-| EMAX — Parameter | `Q320` · not captured | 5.47 | not captured | not captured | exact (not captured) | Tab1:row18:col1 |
-| IC50 (mg/L) — Parameter | `Q322` · not captured | 1.12 | mg/L | not captured | exact (not captured) | Tab1:row19:col1 |
-| IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 25.5 | mg/L | not captured | exact (not captured) | Tab1:row19:col2 |
-| hill — Parameter | `Q325` · not captured | 3.63 | not captured | not captured | exact (not captured) | Tab1:row20:col1 |
-| hill — Model estimate (%RSE) | `Q325` · not captured | 12.8 | %RSE | not captured | exact (not captured) | Tab1:row20:col2 |
-| BETA — Model estimate (%RSE) | `Q68` · not captured | 0.475 | %RSE | not captured | exact (not captured) | Tab1:row22:col2 |
-| EMAX — Parameter | `Q320` · not captured | 4.55 | mg/L | not captured | exact (not captured) | Tab1:row29:col1 |
-| EMAX — Model estimate (%RSE) | `Q320` · not captured | 37.6 | %RSE | not captured | exact (not captured) | Tab1:row29:col2 |
-| IC50 (mg/L) — Parameter | `Q322` · not captured | 0.0106 | mg/L | not captured | exact (not captured) | Tab1:row30:col1 |
-| IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 8.58 | mg/L | not captured | exact (not captured) | Tab1:row30:col2 |
-| hill — Parameter | `Q325` · not captured | 3.58 | mg/L | not captured | exact (not captured) | Tab1:row31:col1 |
-| hill — Model estimate (%RSE) | `Q325` · not captured | 12.1 | %RSE | not captured | exact (not captured) | Tab1:row31:col2 |
-| BETA — Model estimate (%RSE) | `Q68` · not captured | 1.67 | %RSE | not captured | exact (not captured) | Tab1:row33:col2 |
-| Residual variability — Model estimate (%RSE) | `Q315` · not captured | 0.864 | %RSE | not captured | exact (not captured) | Tab1:row44:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | BMAX (CFU/mL) — Parameter | `Q332` · not captured | 10 | CFU/mL | not captured | exact (not captured) | Tab1:row4:col1 |
+| PD (effect) | EMAX — Parameter | `Q320` · not captured | 4.18 | not captured | not captured | exact (not captured) | Tab1:row9:col1 |
+| PD (effect) | EMAX — Model estimate (%RSE) | `Q320` · not captured | 5.43 | %RSE | not captured | exact (not captured) | Tab1:row9:col2 |
+| PD (effect) | IC50 (mg/L) — Parameter | `Q322` · not captured | 0.0781 | mg/L | not captured | exact (not captured) | Tab1:row10:col1 |
+| PD (effect) | IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 72.3 | mg/L | not captured | exact (not captured) | Tab1:row10:col2 |
+| PD (effect) | hill — Parameter | `Q325` · not captured | 2.76 | not captured | not captured | exact (not captured) | Tab1:row11:col1 |
+| PD (effect) | hill — Model estimate (%RSE) | `Q325` · not captured | 26.4 | %RSE | not captured | exact (not captured) | Tab1:row11:col2 |
+| PK (driver) | BETA — Parameter | `Q68` · not captured | 0.922 | not captured | not captured | exact (not captured) | Tab1:row13:col1 |
+| PK (driver) | BETA — Model estimate (%RSE) | `Q68` · not captured | 1.58 | %RSE | not captured | exact (not captured) | Tab1:row13:col2 |
+| PD (effect) | EMAX — Parameter | `Q320` · not captured | 5.47 | not captured | not captured | exact (not captured) | Tab1:row18:col1 |
+| PD (effect) | IC50 (mg/L) — Parameter | `Q322` · not captured | 1.12 | mg/L | not captured | exact (not captured) | Tab1:row19:col1 |
+| PD (effect) | IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 25.5 | mg/L | not captured | exact (not captured) | Tab1:row19:col2 |
+| PD (effect) | hill — Parameter | `Q325` · not captured | 3.63 | not captured | not captured | exact (not captured) | Tab1:row20:col1 |
+| PD (effect) | hill — Model estimate (%RSE) | `Q325` · not captured | 12.8 | %RSE | not captured | exact (not captured) | Tab1:row20:col2 |
+| PK (driver) | BETA — Model estimate (%RSE) | `Q68` · not captured | 0.475 | %RSE | not captured | exact (not captured) | Tab1:row22:col2 |
+| PD (effect) | EMAX — Parameter | `Q320` · not captured | 4.55 | mg/L | not captured | exact (not captured) | Tab1:row29:col1 |
+| PD (effect) | EMAX — Model estimate (%RSE) | `Q320` · not captured | 37.6 | %RSE | not captured | exact (not captured) | Tab1:row29:col2 |
+| PD (effect) | IC50 (mg/L) — Parameter | `Q322` · not captured | 0.0106 | mg/L | not captured | exact (not captured) | Tab1:row30:col1 |
+| PD (effect) | IC50 (mg/L) — Model estimate (%RSE) | `Q322` · not captured | 8.58 | mg/L | not captured | exact (not captured) | Tab1:row30:col2 |
+| PD (effect) | hill — Parameter | `Q325` · not captured | 3.58 | mg/L | not captured | exact (not captured) | Tab1:row31:col1 |
+| PD (effect) | hill — Model estimate (%RSE) | `Q325` · not captured | 12.1 | %RSE | not captured | exact (not captured) | Tab1:row31:col2 |
+| PK (driver) | BETA — Model estimate (%RSE) | `Q68` · not captured | 1.67 | %RSE | not captured | exact (not captured) | Tab1:row33:col2 |
+| variability | Residual variability — Model estimate (%RSE) | `Q315` · not captured | 0.864 | %RSE | not captured | exact (not captured) | Tab1:row44:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chlorhexidine gluconate drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chlorhexidine gluconate concentrations inhibit Giardia trophozoite survival/growth (direct inhibitory dose–response; mechanism beyond inhibition of growth not stated), with EC50 values in the micromolar range after 2 h of treatment; no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Martin_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

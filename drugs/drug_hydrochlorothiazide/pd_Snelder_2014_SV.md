@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive stroke volume (in ml): indirect response — drug inhibits the production of stroke volume.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, hydrochlorothiazide (HCTZ, doses 0.1–30 mg kg−1 p.o.) was modelled as having an inhibitory effect on stroke volume (SV), described by a turnover equation with zero-order production rate constant Kin_SV and first-order dissipation rate constant kout_SV, with SV also influenced by negative MAP feedback (FB) and a direct inverse log-linear relationship with HR (HR_SV). The excerpts do not state the specific drug-effect functional form or any potency values (Imax/IC50/EC50/Emax, kin, kout, ke0, gamma) for HCTZ.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

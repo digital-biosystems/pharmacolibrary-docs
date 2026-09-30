@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carboplatin drives Platelet count (in unknown): indirect response — drug stimulates the production of Platelet count.
+
+**Model:** No model was generated from this record.
+
+> Carboplatin (not doxorubicin) concentrations inhibit the proliferation rate (kProl) of platelet precursors in a Friberg indirect myelosuppression model, using a linear effect (Slope·Conc) on proliferation, with feedback (Circ/Circ0)^γ maintaining baseline Circ0 and transit rate kTr=(N+1)/MTT; no Imax, IC50, EC50, Emax, or ke0 values are given in the excerpts, and serum albumin was a covariate on Circ0PLT and SlopePLT (reference 44 g/L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `De_2026`
 - **model family:** `indirect_response_iii`
 - **driver:** `not_resolved`

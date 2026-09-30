@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Concizumab (measured concentrations) drives free TFPI (in ng/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Concizumab concentration (ng/mL) drives a sigmoidal Emax reduction of plasma free TFPI (ng/mL) from a baseline of 81.5 ng/mL (95% CI 75.4–87.5), with full reduction to the assay LLOQ; the paper does not state a kin/kout mechanism, describing only a direct exposure–response effect. Potency: EC50 62.2 ng/mL (95% CI 52.4–72) with Hill coefficient 1.75 (95% CI 1.47–2.03).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eichler_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Eichler H; Angchaisuksiri P; Kavakli K; Knoebl P; Windyga J; Jiménez-Yuste V; e
   ·  DOI: [10.1111/hae.13627](https://doi.org/10.1111/hae.13627)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline (ng/mL) — Estimate | `Q324` · not captured | 81.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col1 |
-| Baseline (ng/mL) — 95% CI (lower) | `Q324` · not captured | 75.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col2 |
-| Baseline (ng/mL) — 95% CI (upper) | `Q324` · not captured | 87.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col3 |
-| Baseline (ng/mL) — Relative standard error (%) | `Q324` · not captured | 3.77 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col4 |
-| Baseline (ng/mL) — Between‐subject variability (% CV) | `Q324` · not captured | 19.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col5 |
-| Baseline (ng/mL) — Shrinkage (%) | `Q324` · not captured | 10.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col6 |
-| EC50 (ng/mL) — Estimate | `Q321` · not captured | 62.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col1 |
-| EC50 (ng/mL) — 95% CI (lower) | `Q321` · not captured | 52.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col2 |
-| EC50 (ng/mL) — 95% CI (upper) | `Q321` · not captured | 72 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col3 |
-| EC50 (ng/mL) — Relative standard error (%) | `Q321` · not captured | 8.02 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col4 |
-| EC50 (ng/mL) — Between‐subject variability (% CV) | `Q321` · not captured | 62.6 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col5 |
-| EC50 (ng/mL) — Shrinkage (%) | `Q321` · not captured | 21.3 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline (ng/mL) — Estimate | `Q324` · not captured | 81.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col1 |
+| PD (effect) | Baseline (ng/mL) — 95% CI (lower) | `Q324` · not captured | 75.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col2 |
+| PD (effect) | Baseline (ng/mL) — 95% CI (upper) | `Q324` · not captured | 87.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col3 |
+| PD (effect) | Baseline (ng/mL) — Relative standard error (%) | `Q324` · not captured | 3.77 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col4 |
+| PD (effect) | Baseline (ng/mL) — Between‐subject variability (% CV) | `Q324` · not captured | 19.5 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col5 |
+| PD (effect) | Baseline (ng/mL) — Shrinkage (%) | `Q324` · not captured | 10.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row1:col6 |
+| PD (effect) | EC50 (ng/mL) — Estimate | `Q321` · not captured | 62.2 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col1 |
+| PD (effect) | EC50 (ng/mL) — 95% CI (lower) | `Q321` · not captured | 52.4 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col2 |
+| PD (effect) | EC50 (ng/mL) — 95% CI (upper) | `Q321` · not captured | 72 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col3 |
+| PD (effect) | EC50 (ng/mL) — Relative standard error (%) | `Q321` · not captured | 8.02 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col4 |
+| PD (effect) | EC50 (ng/mL) — Between‐subject variability (% CV) | `Q321` · not captured | 62.6 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col5 |
+| PD (effect) | EC50 (ng/mL) — Shrinkage (%) | `Q321` · not captured | 21.3 | ng/mL | not captured | exact (not captured) | hae13627-tbl-0001:row2:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

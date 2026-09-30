@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dacarbazine (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (DTIC) concentrations (μM) inhibit A375 cell viability measured by MTT assay after 24–72 hr exposure, with a dose- and time-dependent decrease; the paper does not state a pharmacodynamic mechanism (e.g., production or elimination inhibition) or an Emax/IC50 model for DTIC, and no DTIC IC50 value is given (the only potency value reported is a temozolomide IC50 of 494.3 μM at 24 hr).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tabandeh_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Tabandeh F; Moradian Tehrani R; Sharifi M; Toopchi E et al. (2025). Iranian jour
   ·  DOI: [10.22038/ijbms.2025.84187.18208](https://doi.org/10.22038/ijbms.2025.84187.18208)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| TMZ — 24 hr | `Q19` · not captured | 494.3 | not captured | not captured | llm (not captured) | T3:row2:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | TMZ — 24 hr | `Q19` · not captured | 494.3 | not captured | not captured | llm (not captured) | T3:row2:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

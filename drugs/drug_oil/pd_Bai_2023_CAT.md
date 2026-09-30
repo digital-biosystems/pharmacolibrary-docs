@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Garlic essential oil drives catalase activity (in relative activity (%)) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Garlic essential oil (GEO) applied at 0.1 g mL-1 to barnyard grass seedlings acts on catalase (CAT) activity (relative activity, %; absolute values in U mgprot-1): CAT rose 121% above control to a maximum of 14.77 U mgprot-1 at 8 h, then fell 100% to 7.37 U mgprot-1 by 72 h. The paper does not give a pharmacodynamic model or mechanism for the CAT response; the only potency value reported is an EC50 of 0.0126 g mL-1 for GEO's inhibitory effect on barnyard grass seedling growth.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bai_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

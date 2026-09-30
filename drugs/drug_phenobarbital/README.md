@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Stoschus_2025_reference](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | 1-compartment, oral | 3 | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span> | [Teixeira-da-Silva_2022_reference](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | 1-compartment, oral | 3 | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Yalcin_2022_reference](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | 1-compartment, IV | 2 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Stoschus_2025_reference](drugs/drug_phenobarbital/Phenobarbital_Stoschus2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Stoschus M et al., Optimizing phenobarbital dosing in crit…, Epilepsia (2025) | [10.1111/epi.18517](https://doi.org/10.1111/epi.18517) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: partial</span> | [Teixeira-da-Silva_2022_reference](drugs/drug_phenobarbital/Phenobarbital_TeixeiradaSilva2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Teixeira-da-Silva P et al., Population Pharmacokinetics of Valproic…, Pharmaceutics (2022) | [10.3390/pharmaceutics14040811](https://doi.org/10.3390/pharmaceutics14040811) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Yalcin_2022_reference](drugs/drug_phenobarbital/Phenobarbital_Yalcin2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019](drugs/drug_phenobarbital/pd_Lee_2019_ETCO2.md) | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019_ETCO2](drugs/drug_phenobarbital/pd_Lee_2019_ETCO2.md) | end-tidal carbon dioxide ← respiratory rate · direct sigmoid Emax (Hill) effect | — | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -62,6 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | stomach | <sub>“…salt is ingested as a dilute solution or taken on an empty stomach.…”</sub> | prose |
+| absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inducer | DrugBank actor |
 | distribution | lung | `ABCC1` inducer | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer, `UGT2B7` inducer/metabolism | DrugBank actor |

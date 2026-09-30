@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Serplulimab drives name (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Serplulimab exposure metrics (Cavg1 and Cmin1 after the first dose) were related to overall survival (and PFS) via Cox proportional hazards models; the paper does not state a mechanistic PD model (no Imax/IC50/EC50/Emax/kin/kout/ke0 values), and E–R relationships for efficacy and safety were flat. Albumin was a covariate on serplulimab clearance and volume of distribution, not a response driven by drug concentration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2025`
 - **model family:** `tte`
 - **driver:** `not_resolved`

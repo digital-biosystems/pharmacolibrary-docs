@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.407). The first reading is what the record holds.">cross-check: disputed</span> | [Comets_2012](drugs/drug_phenindione/pd_Comets_2012_INR.md) | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.407). The first reading is what the record holds.">cross-check: disputed</span> | [Comets_2012_INR](drugs/drug_phenindione/pd_Comets_2012_INR.md) | INR ← fluindione · indirect response — drug inhibits the production of INR | — | Comets E et al., Pharmacokinetic and pharmacodynamic var…, Clinical pharmacology and t… (2012) | [10.1038/clpt.2011.309](https://doi.org/10.1038/clpt.2011.309) |
 
 ## ADME sites
 

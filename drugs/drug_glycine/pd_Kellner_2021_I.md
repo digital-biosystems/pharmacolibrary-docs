@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glutamate (measured concentrations) drives NMDAR current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Glycine, applied as a co-agonist together with glutamate, stimulates NMDAR currents (I) recorded from Xenopus oocytes expressing hGluN1a with hGluN2B-wt or G689C/G689S variants; the concentration-response relation was fitted with a sigmoid Emax model, yielding glycine EC50 values for hGluN2B-G689C and glutamate EC50 values for G689C and G689S (units reported as n, i.e. nM), but the excerpts do not state the numeric EC50 values, an Emax, a Hill slope, or any turnover (kin/kout/ke0) parameters, and no production/elimination mechanism is described—glycine acts via direct receptor activation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kellner_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

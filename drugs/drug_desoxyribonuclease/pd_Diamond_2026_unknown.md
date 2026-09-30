@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** IDB-001 (measured concentrations) drives tumor volume (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> IDB-001 and IDB-002, context-dependent inhibitors of human translation elongation, inhibit cancer cell proliferation (viability) in a concentration-dependent Emax-type manner, with EC50 values in the nanomolar-to-micromolar range (e.g. HCC-1143: IDB-002 0.210 µM, IDB-003 0.152 µM, ANS 0.195 µM, HHT 0.117 µM; MCF7: IDB-002 0.341 µM, IDB-003 0.130 µM, ANS 0.206 µM, HHT 0.026 µM; LS411N: IDB-002 0.236 µM, IDB-003 0.024 µM, ANS 0.084 µM, HHT 0.042 µM; MRC-5: IDB-002 0.618 µM, IDB-003 0.496 µM, ANS 0.211 µM, HHT 0.098 µM; 22Rv1: IDB-001 4.983 µM, IDB-002 0.103 µM, IDB-003 0.053 µM, ANS 0.045 µM, HHT 0.010 µM). The paper does not state an Emax model for tumor volume itself; tumor volume was measur
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Diamond_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,63 +30,63 @@ Diamond PD; Sauer PV; Holm M; Swanson-Swett CJ; Ferguson L; Bratset NM; Wienker 
   ·  DOI: [10.1038/s41467-026-69891-2](https://doi.org/10.1038/s41467-026-69891-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (µM) — 22Rv1 | `Q321` · not captured | 4.983 | µM | not captured | exact (not captured) | Tab2:row1:col2 |
-| EC50 (µM) — IDB-002 | `Q321` · not captured | 0.103 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
-| EC50 (µM) — IDB-003 | `Q321` · not captured | 0.053 | µM | not captured | exact (not captured) | Tab2:row1:col4 |
-| EC50 (µM) — ANS | `Q321` · not captured | 0.045 | µM | not captured | exact (not captured) | Tab2:row1:col5 |
-| EC50 (µM) — HHT | `Q321` · not captured | 0.010 | µM | not captured | exact (not captured) | Tab2:row1:col6 |
-| EC50 (µM) — HCC-1143 | `Q321` · not captured | 0.663 | µM | not captured | exact (not captured) | Tab2:row1:col7 |
-| EC50 (µM) — IDB-002 | `Q321` · not captured | 0.210 | µM | not captured | exact (not captured) | Tab2:row1:col8 |
-| EC50 (µM) — IDB-003 | `Q321` · not captured | 0.152 | µM | not captured | exact (not captured) | Tab2:row1:col9 |
-| EC50 (µM) — ANS | `Q321` · not captured | 0.195 | µM | not captured | exact (not captured) | Tab2:row1:col10 |
-| EC50 (µM) — HHT | `Q321` · not captured | 0.117 | µM | not captured | exact (not captured) | Tab2:row1:col11 |
-| EC50 (µM) — LS411N | `Q321` · not captured | 4.233 | µM | not captured | exact (not captured) | Tab2:row1:col12 |
-| EC50 (µM) — IDB-002 | `Q321` · not captured | 0.236 | µM | not captured | exact (not captured) | Tab2:row1:col13 |
-| EC50 (µM) — IDB-003 | `Q321` · not captured | 0.024 | µM | not captured | exact (not captured) | Tab2:row1:col14 |
-| EC50 (µM) — ANS | `Q321` · not captured | 0.084 | µM | not captured | exact (not captured) | Tab2:row1:col15 |
-| EC50 (µM) — HHT | `Q321` · not captured | 0.042 | µM | not captured | exact (not captured) | Tab2:row1:col16 |
-| EC50 (µM) — MCF7 | `Q321` · not captured | 1.364 | µM | not captured | exact (not captured) | Tab2:row1:col17 |
-| EC50 (µM) — IDB-002 | `Q321` · not captured | 0.341 | µM | not captured | exact (not captured) | Tab2:row1:col18 |
-| EC50 (µM) — IDB-003 | `Q321` · not captured | 0.130 | µM | not captured | exact (not captured) | Tab2:row1:col19 |
-| EC50 (µM) — ANS | `Q321` · not captured | 0.206 | µM | not captured | exact (not captured) | Tab2:row1:col20 |
-| EC50 (µM) — HHT | `Q321` · not captured | 0.026 | µM | not captured | exact (not captured) | Tab2:row1:col21 |
-| EC50 (µM) — MRC-5 | `Q321` · not captured | 5.440 | µM | not captured | exact (not captured) | Tab2:row1:col22 |
-| EC50 (µM) — IDB-002 | `Q321` · not captured | 0.618 | µM | not captured | exact (not captured) | Tab2:row1:col23 |
-| EC50 (µM) — IDB-003 | `Q321` · not captured | 0.496 | µM | not captured | exact (not captured) | Tab2:row1:col24 |
-| EC50 (µM) — ANS | `Q321` · not captured | 0.211 | µM | not captured | exact (not captured) | Tab2:row1:col25 |
-| EC50 (µM) — HHT | `Q321` · not captured | 0.098 | µM | not captured | exact (not captured) | Tab2:row1:col26 |
-| EC50 Upper CI (µM) — 22Rv1 | `Q321` · not captured | 6.649 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.058 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
-| EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.033 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col4 |
-| EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.026 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col5 |
-| EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.006 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col6 |
-| EC50 Upper CI (µM) — HCC-1143 | `Q321` · not captured | 0.916 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col7 |
-| EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.093 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col8 |
-| EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.115 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col9 |
-| EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.086 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col10 |
-| EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.055 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col11 |
-| EC50 Upper CI (µM) — LS411N | `Q321` · not captured | 5.098 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col12 |
-| EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.154 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col13 |
-| EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.019 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col14 |
-| EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.051 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col15 |
-| EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.028 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col16 |
-| EC50 Upper CI (µM) — MCF7 | `Q321` · not captured | 1.648 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col17 |
-| EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.255 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col18 |
-| EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.072 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col19 |
-| EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.108 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col20 |
-| EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.016 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col21 |
-| EC50 Upper CI (µM) — MRC-5 | `Q321` · not captured | 7.840 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col22 |
-| EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.336 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col23 |
-| EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.222 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col24 |
-| EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.121 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col25 |
-| EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.061 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col26 |
-| EC50 Lower CI (µM) — 22Rv1 | `Q321` · not captured | 3.735 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col2 |
-| EC50 Lower CI (µM) — HCC-1143 | `Q321` · not captured | 0.479 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col7 |
-| EC50 Lower CI (µM) — LS411N | `Q321` · not captured | 3.514 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col12 |
-| EC50 Lower CI (µM) — MCF7 | `Q321` · not captured | 1.129 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col17 |
-| EC50 Lower CI (µM) — MRC-5 | `Q321` · not captured | 3.780 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col22 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (µM) — 22Rv1 | `Q321` · not captured | 4.983 | µM | not captured | exact (not captured) | Tab2:row1:col2 |
+| PD (effect) | EC50 (µM) — IDB-002 | `Q321` · not captured | 0.103 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
+| PD (effect) | EC50 (µM) — IDB-003 | `Q321` · not captured | 0.053 | µM | not captured | exact (not captured) | Tab2:row1:col4 |
+| PD (effect) | EC50 (µM) — ANS | `Q321` · not captured | 0.045 | µM | not captured | exact (not captured) | Tab2:row1:col5 |
+| PD (effect) | EC50 (µM) — HHT | `Q321` · not captured | 0.010 | µM | not captured | exact (not captured) | Tab2:row1:col6 |
+| PD (effect) | EC50 (µM) — HCC-1143 | `Q321` · not captured | 0.663 | µM | not captured | exact (not captured) | Tab2:row1:col7 |
+| PD (effect) | EC50 (µM) — IDB-002 | `Q321` · not captured | 0.210 | µM | not captured | exact (not captured) | Tab2:row1:col8 |
+| PD (effect) | EC50 (µM) — IDB-003 | `Q321` · not captured | 0.152 | µM | not captured | exact (not captured) | Tab2:row1:col9 |
+| PD (effect) | EC50 (µM) — ANS | `Q321` · not captured | 0.195 | µM | not captured | exact (not captured) | Tab2:row1:col10 |
+| PD (effect) | EC50 (µM) — HHT | `Q321` · not captured | 0.117 | µM | not captured | exact (not captured) | Tab2:row1:col11 |
+| PD (effect) | EC50 (µM) — LS411N | `Q321` · not captured | 4.233 | µM | not captured | exact (not captured) | Tab2:row1:col12 |
+| PD (effect) | EC50 (µM) — IDB-002 | `Q321` · not captured | 0.236 | µM | not captured | exact (not captured) | Tab2:row1:col13 |
+| PD (effect) | EC50 (µM) — IDB-003 | `Q321` · not captured | 0.024 | µM | not captured | exact (not captured) | Tab2:row1:col14 |
+| PD (effect) | EC50 (µM) — ANS | `Q321` · not captured | 0.084 | µM | not captured | exact (not captured) | Tab2:row1:col15 |
+| PD (effect) | EC50 (µM) — HHT | `Q321` · not captured | 0.042 | µM | not captured | exact (not captured) | Tab2:row1:col16 |
+| PD (effect) | EC50 (µM) — MCF7 | `Q321` · not captured | 1.364 | µM | not captured | exact (not captured) | Tab2:row1:col17 |
+| PD (effect) | EC50 (µM) — IDB-002 | `Q321` · not captured | 0.341 | µM | not captured | exact (not captured) | Tab2:row1:col18 |
+| PD (effect) | EC50 (µM) — IDB-003 | `Q321` · not captured | 0.130 | µM | not captured | exact (not captured) | Tab2:row1:col19 |
+| PD (effect) | EC50 (µM) — ANS | `Q321` · not captured | 0.206 | µM | not captured | exact (not captured) | Tab2:row1:col20 |
+| PD (effect) | EC50 (µM) — HHT | `Q321` · not captured | 0.026 | µM | not captured | exact (not captured) | Tab2:row1:col21 |
+| PD (effect) | EC50 (µM) — MRC-5 | `Q321` · not captured | 5.440 | µM | not captured | exact (not captured) | Tab2:row1:col22 |
+| PD (effect) | EC50 (µM) — IDB-002 | `Q321` · not captured | 0.618 | µM | not captured | exact (not captured) | Tab2:row1:col23 |
+| PD (effect) | EC50 (µM) — IDB-003 | `Q321` · not captured | 0.496 | µM | not captured | exact (not captured) | Tab2:row1:col24 |
+| PD (effect) | EC50 (µM) — ANS | `Q321` · not captured | 0.211 | µM | not captured | exact (not captured) | Tab2:row1:col25 |
+| PD (effect) | EC50 (µM) — HHT | `Q321` · not captured | 0.098 | µM | not captured | exact (not captured) | Tab2:row1:col26 |
+| PD (effect) | EC50 Upper CI (µM) — 22Rv1 | `Q321` · not captured | 6.649 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.058 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.033 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col4 |
+| PD (effect) | EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.026 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col5 |
+| PD (effect) | EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.006 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col6 |
+| PD (effect) | EC50 Upper CI (µM) — HCC-1143 | `Q321` · not captured | 0.916 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col7 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.093 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col8 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.115 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col9 |
+| PD (effect) | EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.086 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col10 |
+| PD (effect) | EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.055 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col11 |
+| PD (effect) | EC50 Upper CI (µM) — LS411N | `Q321` · not captured | 5.098 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col12 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.154 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col13 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.019 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col14 |
+| PD (effect) | EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.051 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col15 |
+| PD (effect) | EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.028 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col16 |
+| PD (effect) | EC50 Upper CI (µM) — MCF7 | `Q321` · not captured | 1.648 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col17 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.255 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col18 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.072 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col19 |
+| PD (effect) | EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.108 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col20 |
+| PD (effect) | EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.016 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col21 |
+| PD (effect) | EC50 Upper CI (µM) — MRC-5 | `Q321` · not captured | 7.840 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col22 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-002 | `Q321` · not captured | 0.336 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col23 |
+| PD (effect) | EC50 Upper CI (µM) — IDB-003 | `Q321` · not captured | 0.222 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col24 |
+| PD (effect) | EC50 Upper CI (µM) — ANS | `Q321` · not captured | 0.121 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col25 |
+| PD (effect) | EC50 Upper CI (µM) — HHT | `Q321` · not captured | 0.061 | µM | not captured | llm_confirmed (not captured) | Tab2:row2:col26 |
+| PD (effect) | EC50 Lower CI (µM) — 22Rv1 | `Q321` · not captured | 3.735 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col2 |
+| PD (effect) | EC50 Lower CI (µM) — HCC-1143 | `Q321` · not captured | 0.479 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col7 |
+| PD (effect) | EC50 Lower CI (µM) — LS411N | `Q321` · not captured | 3.514 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col12 |
+| PD (effect) | EC50 Lower CI (µM) — MCF7 | `Q321` · not captured | 1.129 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col17 |
+| PD (effect) | EC50 Lower CI (µM) — MRC-5 | `Q321` · not captured | 3.780 | µM | not captured | llm_confirmed (not captured) | Tab2:row3:col22 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

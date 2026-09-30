@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Li_2023](drugs/drug_encainide/pd_Li_2023_Kv.md) | Li H et al., Encainide, a class Ic anti-arrhythmic a…, The Korean journal of physi… (2023) | [10.4196/kjpp.2023.27.4.399](https://doi.org/10.4196/kjpp.2023.27.4.399) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Li_2023_Kv](drugs/drug_encainide/pd_Li_2023_Kv.md) | Kv current ← encainide · direct sigmoid Emax (Hill) effect | — | Li H et al., Encainide, a class Ic anti-arrhythmic a…, The Korean journal of physi… (2023) | [10.4196/kjpp.2023.27.4.399](https://doi.org/10.4196/kjpp.2023.27.4.399) |
 
 ## ADME sites
 

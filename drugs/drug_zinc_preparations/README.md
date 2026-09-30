@@ -37,9 +37,9 @@ In addition to the above, recent review articles have already demonstrated the i
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vale_2014_reference](drugs/drug_zinc_preparations/ZincPreparations_Vale2014_reference.md) | 1-compartment (no model) | 1 | Vale SH et al., Zinc pharmacokinetic parameters in the…, European journal of clinica… (2014) | [10.1038/ejcn.2013.250](https://doi.org/10.1038/ejcn.2013.250) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Vale_2014_reference](drugs/drug_zinc_preparations/ZincPreparations_Vale2014_reference.md) | — | 1-compartment (no model) | 1 | Vale SH et al., Zinc pharmacokinetic parameters in the…, European journal of clinica… (2014) | [10.1038/ejcn.2013.250](https://doi.org/10.1038/ejcn.2013.250) |
 
 ## Pharmacogenomics (PGx)
 

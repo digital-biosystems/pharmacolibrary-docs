@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dobutamine drives dP/dtmax (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for g-strophanthin on dP/dtmax; it only reports that dobutamine infusion (10 µg/kg per min) significantly increased dP/dtmax, with dose-related effects on Emax, dE/dtmax, tmax, and T, but no Imax, IC50, EC50, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Little_1987`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

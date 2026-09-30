@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DHA + EPA drives triglyceride (in mg/dL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Daily DHA + EPA intake (g/d) reduces serum triglyceride (mg/dL) in an approximately linear dose–response relationship (cubic spline model), with mean changes of −42.61 mg/dL (95% CI −53.41 to −31.80) at 2 g/d and −68.90 mg/dL (95% CI −98.40 to −39.40) at 3 g/d; the paper does not state a pharmacodynamic mechanism or potency parameters (no Imax, IC50, Emax, kin, kout, or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

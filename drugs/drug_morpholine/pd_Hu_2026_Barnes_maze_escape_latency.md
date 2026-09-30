@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives cognitive decline (in seconds): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (compound 82) concentrations (μM) act on cognitive decline measured as Barnes maze escape latency (seconds) in tauopathy PS19 mice; the paper does not report an Emax/IC50-type PD model or potency/rate parameters for this response, but describes the mechanism as A36 stabilizing the CAST–calpain-2 protein-protein interaction, preventing CAST degradation and thereby limiting calpain-2 activation and mitochondrial damage (related in vitro EC50s: ~2.77 μM TMRM, ~1.55 μM MTT, ~3.55 μM CAST up-regulation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

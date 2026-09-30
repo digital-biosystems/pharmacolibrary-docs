@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KZR-8445 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> KZR-8445 directly inhibits Sec61α-mediated secretion of cytokine GLuc reporter constructs (IL-2 and TNFα) with an IC50 of ~100 nM; the paper does not state a full PD model (no Emax, kin, kout, or ke0 values), and in vivo it blocked arthritis progression dose-dependently at 10 and 20 mg kg−1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehan_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

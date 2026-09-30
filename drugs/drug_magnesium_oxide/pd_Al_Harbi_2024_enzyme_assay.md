@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bioinspired magnesium oxide nanoparticles (measured concentrations) drives alpha-amylase inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bioinspired MgO–neem nanoparticles inhibited α-amylase in a concentration-dependent in vitro enzyme assay with an IC50 of 61.53 μg/mL (acarbose standard: 12.41 μg/mL); the paper attributes the inhibition to free-radical scavenging linked to the nanoparticles' antioxidant activity, and no PD model, Emax, or kinetic parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Harbi_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montmorillonite (measured concentrations) drives gene expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Montmorillonite (Mt, from diosmectite) concentrations (µg/mL) were applied to MDA-MB-231 and MCF-7 breast cancer cells, with gene expression measured by qRT-PCR; Mt altered expression of apoptosis/cell-cycle genes (e.g., in MCF-7 up-regulating P62 4.1-fold and P21 2-fold, down-regulating Bcl-2 to 0.5-fold; in MDA-MB-231 up-regulating P62 3.2-fold, down-regulating P53 to 0.8-fold), consistent with Mt-induced apoptosis and cell-cycle arrest. The paper does not state a PD model, Imax/IC50 for gene expression, kin/kout, ke0, or gamma; the only potency values are MTT IC50s of ~50 (MDA-MB-231) and ~200 µg/mL (MCF-7) in FBS-free medium, and ~400 and ~2000 µg/mL in 10% FBS.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sabzevari_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

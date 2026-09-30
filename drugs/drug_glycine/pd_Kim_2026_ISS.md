@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycine (measured concentrations) drives steady-state current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Glycine concentrations (µM) act as the agonist driving the steady-state current (ISS) of GluN1-containing NMDARs, fitted with a Hill/sigmoid Emax equation (Imin typically negligible); the paper does not state numeric EC50, Imax or Hill slope values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

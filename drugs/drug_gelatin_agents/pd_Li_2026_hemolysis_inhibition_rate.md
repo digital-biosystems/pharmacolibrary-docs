@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mini-protein inhibitor P57 drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The mini-protein C9 inhibitor P57 (and P9) inhibits complement C9-mediated MAC formation, measured as hemolysis inhibition rate (%) in serum/RBC assays; P57 showed an IC50 of 11.67 nM against human serum (P9: 7.49 nM) and 93.80 nM against mouse serum, with dose-dependent inhibition from 1.85% to 96.31% over 10 nM–10 μM (Binder-47). The paper does not state a formal PD model (no Emax/kin/kout/ke0 parameters); the mechanism is direct inhibition of C9 polymerization/membrane insertion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

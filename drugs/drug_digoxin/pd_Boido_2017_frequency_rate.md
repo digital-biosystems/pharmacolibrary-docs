@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-(4-tolyl)sparteine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper excerpts do not describe a pharmacodynamic model for digoxin acting on frequency rate, nor do they mention 2-(4-tolyl)sparteine; they instead cover sigma-1 receptor docking and analgesic/anti-inflammatory testing of compound 7b versus milrinone, so no mechanism or potency/rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for the recorded model can be stated from the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boido_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

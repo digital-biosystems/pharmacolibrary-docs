@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulodexide (measured concentrations) drives matrix metalloproteinase 9 activity (in % of untreated) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulodexide (0–20 μg/ml, in vitro) inhibits FGF-2-induced MMP9 expression/activity in tubular cells, abolishing the FGF-2-triggered increase (zymography and gene expression), via inhibition of heparanase-1 (HPSE), an effect due exclusively to its heparin component; the paper reports an HPSE IC50 of 5 μg/ml and complete HPSE inhibition at 20 μg/ml, but gives no quantitative PD model (no Imax, kin, kout, ke0, or Hill coefficient) for the MMP9 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Masola_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

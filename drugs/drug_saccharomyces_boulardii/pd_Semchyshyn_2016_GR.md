@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydrogen peroxide (measured concentrations) drives glutathione reductase activity (in U/mg protein) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In Saccharomyces boulardii (wild-type yeast), exogenous hydrogen peroxide (1–100 mmol/L) acts on glutathione reductase activity (U/mg protein) with a biphasic hormetic concentration–response: hormetic concentrations (25 mmol/L for glucose-grown, 50 mmol/L for fructose-grown cells) increased GR activity about 1.4-fold, while 1 mmol/L H2O2 left it unchanged or slightly decreased and 100 mmol/L inhibited colony growth. The paper does not state a quantitative PD model (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values) and gives no explicit mechanism beyond suggesting GR is involved in the hormetic effect of H2O2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Semchyshyn_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

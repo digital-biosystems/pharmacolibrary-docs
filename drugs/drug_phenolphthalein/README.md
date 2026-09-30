@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Powell_1975_reference](drugs/drug_phenolphthalein/Phenolphthalein_Powell1975_reference.md) | 1-compartment (no model) | 0 | Powell GM et al., A model system for investigating the bi…, The Biochemical journal (1975) | [10.1042/bj1480303](https://doi.org/10.1042/bj1480303) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Powell_1975_reference](drugs/drug_phenolphthalein/Phenolphthalein_Powell1975_reference.md) | — | 1-compartment (no model) | 0 | Powell GM et al., A model system for investigating the bi…, The Biochemical journal (1975) | [10.1042/bj1480303](https://doi.org/10.1042/bj1480303) |
 
 ## ADME sites
 

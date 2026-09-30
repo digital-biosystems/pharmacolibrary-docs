@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Respiratory rate drives end-tidal carbon dioxide (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Respiratory rate (breaths/min), not phenobarbital itself, drives end-tidal CO2 (ETCO2, mmHg) via a sigmoid Emax model with an effect compartment (ke0) to account for hysteresis; increasing RR decreases ETCO2 from 40 to 30 mmHg (Emax fixed as the 10 mmHg decrease, E0 = 40 mmHg). Antiepileptic drug use including phenobarbital was a covariate lowering Ce50 (RR at 50% of maximum decrease, i.e. 35 mmHg): Ce50 was 20.5 breaths/min in non-users, with gamma and ke0 also differing between groups, but the paper does not report numeric values for gamma or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

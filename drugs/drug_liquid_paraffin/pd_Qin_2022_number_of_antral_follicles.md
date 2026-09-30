@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ab4B19 (the dose) drives name (in count) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for Ab4B19 on the number of antral follicles; no model family, mechanism, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given. The excerpts only report that Ab4B19 (0.2–1.8 nM in vitro; 1 mg/kg dosed once every 4 days in mice) stimulated oocyte maturation, ovulation, and corpora lutea counts via Trk receptor signaling (blocked by K252a), without quantifying antral follicle counts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qin_2022`
 - **model family:** `unknown`
 - **driver:** `dose_only`

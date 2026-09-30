@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Benzyl isothiocyanate (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The essential oil of Drypetes gossweileri (major constituent benzyl isothiocyanate, 96.23%) applied in vitro at 0.03 mg/mL (MLC) and 0.015 mg/mL suppressed egg hatching of Meloidogyne javanica J2, reaching 94.7% and 89.5% inhibition after five days and 100% suppression by 14 days; the paper does not state a pharmacodynamic model or mechanism for this effect (molecular docking against the KCC3 receptor is proposed only speculatively). No Imax, IC50, EC50, kin, kout, ke0, or gamma values are given for egg hatching suppression; the only potency value reported is an LC50–LC90 of 0.007–0.0113 mg/mL for J2 mortality.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mbula_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

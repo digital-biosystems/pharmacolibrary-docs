@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinidine (measured concentrations) drives name (in Hz) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In an in silico ten Tusscher ventricular model with the N588K (SQT1) IKr mutation, disopyramide (9, 10 and 13 μM) acts by simple pore block, reducing maximal ion channel conductance per a Hill equation (IC50 and Hill coefficient values taken from literature; the record lists N588K IKr nH = 1.07), which lowers the simulated dominant frequency from 3.43 Hz (N588K) to 2.51, 2.47 and 2.43 Hz respectively. The paper does not state a specific PD model (e.g. Emax/kin-kout/effect compartment) linking disopyramide concentration to dominant frequency, and no disopyramide IC50 value appears in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@
 not matched (stem Luo_2017)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| N588K IKr — nH | `Q325` · not captured | 1.07 | not captured | not captured | llm (not captured) | pone.0179515.t001:row2:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | N588K IKr — nH | `Q325` · not captured | 1.07 | not captured | not captured | llm (not captured) | pone.0179515.t001:row2:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

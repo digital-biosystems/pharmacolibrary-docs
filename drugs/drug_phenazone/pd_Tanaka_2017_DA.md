@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ketoprofen drives ductus arteriosus constriction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ketoprofen (fetal plasma unbound concentration) inhibits ductus arteriosus constriction in fetal rats via an Emax model with an effect-compartment link (ke0 = 0.0545 and 0.3154 per time unit), with Emax = 0.898 and 0.289 (unit 'B') and lnEC50,u = 5.32 (EC50,u not given directly); the paper does not state a production/elimination mechanism beyond this direct inhibitory Emax effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tanaka_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,27 +31,27 @@ Tanaka S; Kanagawa T; Momma K; Hori S; Satoh H; Nagamatsu T; et al. et al. (2017
   ·  DOI: [10.1111/bcp.13352](https://doi.org/10.1111/bcp.13352)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka | `Q49` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
-| ka | `Q49` · not captured | 5 | not captured | not captured | exact (not captured) | tab_0:row2:col6 |
-| ka | `Q49` · not captured | 6 | not captured | not captured | exact (not captured) | tab_0:row2:col9 |
-| kfm | `Q305` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row4:col3 |
-| kfm | `Q305` · not captured | 0.749 | not captured | not captured | exact (not captured) | tab_0:row4:col5 |
-| kfm | `Q305` · not captured | 0.437 | not captured | not captured | exact (not captured) | tab_0:row4:col7 |
-| kem | `Q1` · not captured | -1 | not captured | not captured | llm (not captured) | tab_0:row5:col3 |
-| kem | `Q1` · not captured | 0.325 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
-| kem | `Q1` · not captured | 0.077 | not captured | not captured | llm (not captured) | tab_0:row5:col7 |
-| Vd | `Q61` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row6:col3 |
-| Vd | `Q61` · not captured | 0.134 | not captured | not captured | exact (not captured) | tab_0:row6:col4 |
-| Vd | `Q61` · not captured | 0.047 | not captured | not captured | exact (not captured) | tab_0:row6:col6 |
-| ke0 | `Q326` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row9:col2 |
-| ke0 | `Q326` · not captured | 0.0545 | not captured | not captured | exact (not captured) | tab_0:row9:col5 |
-| ke0 | `Q326` · not captured | 0.3154 | not captured | not captured | exact (not captured) | tab_0:row9:col8 |
-| Emax | `Q320` · not captured | 0.898 | B | not captured | exact (not captured) | tab_0:row10:col5 |
-| Emax | `Q320` · not captured | 0.289 | B | not captured | exact (not captured) | tab_0:row10:col9 |
-| lnEC 50,u | `Q321` · not captured | 5.32 | u | not captured | llm (not captured) | tab_0:row12:col8 |
-| (EC 50,u ) | `Q100` · not captured | -1 | EC 50,u | not captured | nil (not captured) | tab_0:row13:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka | `Q49` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row2:col3 |
+| PK (driver) | ka | `Q49` · not captured | 5 | not captured | not captured | exact (not captured) | tab_0:row2:col6 |
+| PK (driver) | ka | `Q49` · not captured | 6 | not captured | not captured | exact (not captured) | tab_0:row2:col9 |
+| PK (driver) | kfm | `Q305` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row4:col3 |
+| PK (driver) | kfm | `Q305` · not captured | 0.749 | not captured | not captured | exact (not captured) | tab_0:row4:col5 |
+| PK (driver) | kfm | `Q305` · not captured | 0.437 | not captured | not captured | exact (not captured) | tab_0:row4:col7 |
+| PK (driver) | kem | `Q1` · not captured | -1 | not captured | not captured | llm (not captured) | tab_0:row5:col3 |
+| PK (driver) | kem | `Q1` · not captured | 0.325 | not captured | not captured | llm (not captured) | tab_0:row5:col5 |
+| PK (driver) | kem | `Q1` · not captured | 0.077 | not captured | not captured | llm (not captured) | tab_0:row5:col7 |
+| PK (driver) | Vd | `Q61` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row6:col3 |
+| PK (driver) | Vd | `Q61` · not captured | 0.134 | not captured | not captured | exact (not captured) | tab_0:row6:col4 |
+| PK (driver) | Vd | `Q61` · not captured | 0.047 | not captured | not captured | exact (not captured) | tab_0:row6:col6 |
+| PD (effect) | ke0 | `Q326` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row9:col2 |
+| PD (effect) | ke0 | `Q326` · not captured | 0.0545 | not captured | not captured | exact (not captured) | tab_0:row9:col5 |
+| PD (effect) | ke0 | `Q326` · not captured | 0.3154 | not captured | not captured | exact (not captured) | tab_0:row9:col8 |
+| PD (effect) | Emax | `Q320` · not captured | 0.898 | B | not captured | exact (not captured) | tab_0:row10:col5 |
+| PD (effect) | Emax | `Q320` · not captured | 0.289 | B | not captured | exact (not captured) | tab_0:row10:col9 |
+| PD (effect) | lnEC 50,u | `Q321` · not captured | 5.32 | u | not captured | llm (not captured) | tab_0:row12:col8 |
+| — | (EC 50,u ) | `Q100` · not captured | -1 | EC 50,u | not captured | nil (not captured) | tab_0:row13:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

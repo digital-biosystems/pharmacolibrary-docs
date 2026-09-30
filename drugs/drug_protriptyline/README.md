@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | 1-compartment (no model) | 2 | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Ziegler_1978_reference](drugs/drug_protriptyline/Protriptyline_Ziegler1978_reference.md) | — | 1-compartment (no model) | 2 | Ziegler VE et al., Protriptyline kinetics, Clinical pharmacology and t… (1978) | [10.1002/cpt1978235580](https://doi.org/10.1002/cpt1978235580) |
 
 ## ADME sites
 
@@ -38,6 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | excretion | bile duct | <sub>“…s for approximately 50% of the total drug administered. The fecal excretion pathway seems…”</sub> | prose |
 | excretion | kidney | <sub>“…Protriptyline is reported to undergo cumulative urinary excretion during 16 days, which ac…”</sub> | prose |
 | target | brain | `SLC6A4` inhibitor | DrugBank actor |

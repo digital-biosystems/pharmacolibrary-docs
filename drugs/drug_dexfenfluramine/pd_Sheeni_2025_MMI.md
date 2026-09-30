@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine drive neurotoxicity (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper describes a direct concentration-response relationship where plasma or brain concentrations of the four fenfluramine enantiomers drive the binary neurotoxicity response (minimal motor impairment) via a Hill equation, without specifying a mechanistic pathway such as production or elimination inhibition. The only specific potency value provided in the record is a plasma TC50 of 128 ng/mL for l-norfenfluramine.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sheeni_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Sheeni Y; Erenburg N; Barasch D; Shekh-Ahmad T; Perucca E; Bialer M et al. (2025
   ·  DOI: [10.1111/epi.18542](https://doi.org/10.1111/epi.18542)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Plasma TC50 (ng/mL) — l‐Norfenfluramine as metabolite of l‐fenfluramine | `Q321` · not captured | 128 | ng/mL | not captured | llm (not captured) | epi18542-tbl-0003:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Plasma TC50 (ng/mL) — l‐Norfenfluramine as metabolite of l‐fenfluramine | `Q321` · not captured | 128 | ng/mL | not captured | llm (not captured) | epi18542-tbl-0003:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -44,13 +54,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `driver_compound` | l-fenfluramine, d-fenfluramine, l-norfenfluramine, d-norfenfluramine | fenfluramine and norfenfluramine enantiomers | mismatch |
 | `gpt-oss:120b` | `effect_direction` | stimulation | inhibition | mismatch |
 | `gpt-oss:120b` | `model_family` | unknown | emax | mismatch |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 1.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 6.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | 128 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 2.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q410]` | not captured | 39.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q410]` | not captured | 0.85 | only_one_extracted |

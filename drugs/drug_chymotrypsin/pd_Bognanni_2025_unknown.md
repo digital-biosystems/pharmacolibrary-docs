@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** SB-CD (measured concentrations) drives Ubiquitinated proteins (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> SB-CD concentrations (µM) stimulate 20S proteasome chymotrypsin-like activity (EC50 0.6 ± 0.1 µM; trypsin-like EC50 1.1 ± 0.3 µM) via a dose–response nonlinear Emax-type fit, and in dSH-SY5Y cells 10 µM SB-CD for 6 h decreased ubiquitinated protein levels, consistent with proteasome activation; the paper does not state Imax, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bognanni_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

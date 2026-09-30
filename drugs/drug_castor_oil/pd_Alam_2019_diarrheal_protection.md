@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zanthoxylum armatum extracts (measured concentrations) drives name (in percent): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In mice, castor oil-induced diarrhea was inhibited by Zanthoxylum armatum fruit and bark extracts (300 and 1000 mg/kg), giving 75% and 52% diarrheal protection versus 96% for verapamil; the paper suggests the mechanism is inhibition of gut motility/calcium-mediated intestinal contractions or electrolyte outflux (similar to verapamil), but gives no Emax/IC50/kin/kout parameters for the diarrheal protection response itself (ex-vivo spasmolytic EC50s: fruit 0.7 mg/mL spontaneous, 3 mg/mL high K+; leaves 0.8 and 3 mg/mL; bark 0.5 and 0.61 mg/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alam_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

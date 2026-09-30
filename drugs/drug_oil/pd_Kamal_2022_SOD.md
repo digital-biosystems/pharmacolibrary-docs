@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taraxacum officinale essential oil (measured concentrations) drives Superoxide dismutase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for SOD activity. Taraxacum officinale essential oil was given orally to mice at 600 and 1200 mg/kg, and SOD (with CAT and GSH) was measured in hepatic and renal tissue homogenates, where APAP-induced decreases in SOD were restored to levels comparable to controls; no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values for SOD are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kamal_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

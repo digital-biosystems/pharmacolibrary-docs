@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paracetamol (concentrations from this paper's PK model) drives analgesic effect (in NA): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Paracetamol concentration is linked to analgesic effect (pain score 0–10) via a sigmoid Emax inhibitory model, with Emax 5.2; the paper excerpts do not state the EC50 value, its units, or the mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anderson_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,12 +31,12 @@ Anderson BJ; Hannam JA et al. (2015). Expert opinion on drug metabolism & toxico
   ·  DOI: [10.1517/17425255.2015.1061505](https://doi.org/10.1517/17425255.2015.1061505)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (0--10) — Paracetamol | `Q320` · not captured | 5.2 | not captured | not captured | llm (not captured) | tab_0:row1:col1 |
-| E max (0--10) — Ibuprofen | `Q320` · not captured | 5.1 | not captured | not captured | llm (not captured) | tab_0:row1:col2 |
-| E max (0--10) — Ketorolac | `Q320` · not captured | 8.5 | not captured | not captured | llm (not captured) | tab_0:row1:col3 |
-| E max (0--10) — Diclofenac | `Q320` · not captured | 4.89 | not captured | not captured | llm (not captured) | tab_0:row1:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (0--10) — Paracetamol | `Q320` · not captured | 5.2 | not captured | not captured | llm (not captured) | tab_0:row1:col1 |
+| PD (effect) | E max (0--10) — Ibuprofen | `Q320` · not captured | 5.1 | not captured | not captured | llm (not captured) | tab_0:row1:col2 |
+| PD (effect) | E max (0--10) — Ketorolac | `Q320` · not captured | 8.5 | not captured | not captured | llm (not captured) | tab_0:row1:col3 |
+| PD (effect) | E max (0--10) — Diclofenac | `Q320` · not captured | 4.89 | not captured | not captured | llm (not captured) | tab_0:row1:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril, benazepril (measured concentrations) drive Tumor Necrosis Factor-alpha (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cilazapril (and benazepril) at doses starting at 0.32 µM decreased 6-OHDA-elevated TNF-α levels in a dose-dependent manner, attributed to inhibition of angiotensin II–driven NF-κB–mediated cytokine production; the paper reports no PD model parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Altunlu_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

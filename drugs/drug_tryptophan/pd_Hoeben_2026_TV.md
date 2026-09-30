@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plasma asparaginase activity drives tumor volume (in mm3): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the PKPD tumor growth inhibition (TGI) model, plasma asparaginase activity (IU/L) from CalPEG (PEGylated L-asparaginase) drives inhibition of tumor volume (mm3) in mice, with a linear drug-exposure/response relationship assumed to be conserved between mice and HCC patients; the excerpts do not state a specific mechanism (e.g., kin/kout or Emax parameters) and give no potency values (no IC50, EC50, Emax, ke0, or gamma are reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoeben_2026`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Hoeben E; Madelain V; Acharya C; Barbier Saint Hilaire P; Tyagi E; Okour M; Foul
   ·  DOI: [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Mice PK — IIV (SD) | `Q312` · not captured | 0.0765 | not captured | not captured | llm (not captured) | Tab1:row1:col5 |
-| Model — IIV (SD) | `Q312` · not captured | 0.164 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
-| Human PK — IIV (SD) | `Q312` · not captured | 0.150 | not captured | not captured | llm (not captured) | Tab1:row6:col5 |
-| Model — IIV (SD) | `Q312` · not captured | 0.441 | not captured | not captured | llm (not captured) | Tab1:row7:col5 |
-| Mice PKPD — IIV (SD) | `Q312` · not captured | 0.224 | not captured | not captured | llm (not captured) | Tab1:row20:col5 |
-| Mice PKPD — Shrinkage (%) | `Q318` · not captured | 37.4 | not captured | not captured | llm (not captured) | Tab1:row20:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | Mice PK — IIV (SD) | `Q312` · not captured | 0.0765 | not captured | not captured | llm (not captured) | Tab1:row1:col5 |
+| variability | Model — IIV (SD) | `Q312` · not captured | 0.164 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
+| variability | Human PK — IIV (SD) | `Q312` · not captured | 0.150 | not captured | not captured | llm (not captured) | Tab1:row6:col5 |
+| variability | Model — IIV (SD) | `Q312` · not captured | 0.441 | not captured | not captured | llm (not captured) | Tab1:row7:col5 |
+| variability | Mice PKPD — IIV (SD) | `Q312` · not captured | 0.224 | not captured | not captured | llm (not captured) | Tab1:row20:col5 |
+| variability | Mice PKPD — Shrinkage (%) | `Q318` · not captured | 37.4 | not captured | not captured | llm (not captured) | Tab1:row20:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

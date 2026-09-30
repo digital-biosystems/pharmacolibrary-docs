@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Manilkara zapota crude extract (measured concentrations) drives name (in mm): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a gastric ulcer index model; instead it reports an inhibitory Emax-type concentration-response relationship in which Manilkara zapota crude extract (Mz.Cr) concentration (mg/ml) inhibits rabbit jejunum spontaneous and K+ (80 mM)-induced contractions, with EC50 values of 0.11 mg/ml (spontaneous) and 0.16 mg/ml (K+-induced); the proposed mechanism is dual, involving calcium channel blockade and PDE inhibition, though no Imax, kin, kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Riaz_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

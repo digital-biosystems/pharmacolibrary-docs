@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Intratumoral IL-2 Fusion Protein drives Fractional Activity (in unitless): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Intratumoral IL-2 fusion protein concentration (M) drives a stimulatory Emax-type relationship with fractional activity (unitless), with EC50,IL2 = 2.4 × 10−7 M; the excerpts do not state the mechanism of the FA response beyond this direct concentration–effect model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Momin_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Momin N; Palmeri JR; Lutz EA; Jailkhani N; Mak H; Tabet A; Chinn MM; Kang BH; Sp
   ·  DOI: [10.1038/s41467-021-27390-6](https://doi.org/10.1038/s41467-021-27390-6)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50,IL2 | `Q321` · not captured | 2.4 | × 10−7 M | not captured | review_gapfill (not captured) | Momin_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50,IL2 | `Q321` · not captured | 2.4 | × 10−7 M | not captured | review_gapfill (not captured) | Momin_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

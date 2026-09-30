@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ETP drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the kaolin/carrageenan monoarthritis model, ETP (10 mg/kg) reduced joint IL-6 concentrations relative to vehicle, but the paper does not state a pharmacodynamic mechanism (no Imax, IC50, kin, kout, or ke0 for IL-6); the reported Emax = 52.9% and ED50 = 0.25 mg/ear refer to edema inhibition, not IL-6.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salinas-Sánchez_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

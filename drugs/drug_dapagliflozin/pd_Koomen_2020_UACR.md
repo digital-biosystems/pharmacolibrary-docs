@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives urinary albumin-creatinine ratio (in mg/g): indirect response — drug inhibits the production of urinary albumin-creatinine ratio.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (individual model-predicted AUC0–24, in ng·h/mL, from the cited PK model) acts on urinary albumin–creatinine ratio (UACR, mg/g, log-transformed, patients with baseline microalbuminuria &gt;30 mg/g) via an indirect response model with inhibition of the response (proportional effect form), with a placebo effect described by a power function; the paper does not report the specific Imax, IC50, kin or kout values in the excerpts, but states that 10 mg/day dapagliflozin achieved only 25.7% (95% PI 23.5–28.3%) of the estimated maximum UACR effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

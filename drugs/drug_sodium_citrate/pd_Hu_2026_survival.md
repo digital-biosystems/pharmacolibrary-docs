@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives survival (in time): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 concentrations (μM) act on neuronal survival (time-to-event) in HD-MSNs and striatal HdhQ7/111 cells; the paper describes the mechanism as stabilization of the CAST–calpain-2 protein-protein complex, which prevents CAST degradation and limits calpain-2 activation and mitochondrial damage, rather than a direct Emax effect on survival. The excerpts do not report quantitative potency or rate parameters (Emax, EC50, kin, kout, ke0) for the survival response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

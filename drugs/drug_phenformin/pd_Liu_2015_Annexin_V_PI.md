@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives Early apoptosis percentage (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin concentrations (0–4 mM, 24 h exposure) increase the Annexin V+/PI- early apoptosis percentage in breast cancer cells (MCF7, ZR-75-1, MDA-MB-231, SUM1315 reaching 7.56%, 3.46%, 8.09% and 4.21%, respectively), an effect attributed to caspase 3 activation; the paper does not state a PD model, and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for this response (cell viability IC50s of 1.184, 0.665, 2.347 and 1.885 mM are reported for a different endpoint).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

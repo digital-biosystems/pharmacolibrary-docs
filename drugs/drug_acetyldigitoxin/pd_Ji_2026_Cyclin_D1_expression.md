@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetyldigitoxin (measured concentrations) drives name (in relative mRNA/protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Acetyldigitoxin (ADT) concentration-dependently reduces Cyclin D1 expression (relative mRNA/protein) in NSCLC A549 cells, attributed to inhibition of EZH2 expression and methyltransferase activity (decreased H3K27me3); the paper reports an A549 cytotoxicity IC50 of 32.4 nM (Beas-2B IC50 190 nM) but gives no quantitative PD model parameters (Imax, IC50/EC50 for Cyclin D1, kin, kout, ke0, gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

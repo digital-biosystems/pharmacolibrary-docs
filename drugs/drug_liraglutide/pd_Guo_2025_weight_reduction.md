@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide (1.8–3 mg) was modelled with an Emax-type dose–response/time-course model for weight reduction versus placebo, but no significant dose–response relationship was observed within the studied 1.2–3 mg range, indicating the doses had reached the efficacy plateau; the paper gives no IC50/EC50/Emax/kin/kout/ke0 values for liraglutide, only an estimated weight reduction of about 4.03 kg over 52 weeks (4–7 kg tier in simulations).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

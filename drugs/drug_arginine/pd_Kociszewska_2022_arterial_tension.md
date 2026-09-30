@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adipocyte-derived relaxing factor drives name (in mN) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not study arginine; it examines perivascular adipose tissue (PVAT) releasing adipocyte-derived relaxing factor (ADRF), which reduces the maximal contraction (Emax) of human radial artery segments to serotonin from 108.3 (20.2) mN to 76.1 (13.5) mN (P &lt; 0.0001, n = 15) without changing serotonin potency (EC50 3.57 × 10−7 ± 3.70 × 10−7 M with PVAT vs 3.45 × 10−7 ± 3.18 × 10−7 M without, P = 0.3), i.e. an Emax-lowering (anticontractile) effect rather than a shift in EC50; no Imax, IC50, kin, kout, ke0 or Hill coefficient values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kociszewska_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

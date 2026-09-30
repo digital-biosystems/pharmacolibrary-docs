@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pereskia aculeata extracts (measured concentrations) drives ADCY1 expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> P. aculeata methanol extract (100 µg/mL, 24 h) significantly reduced ADCY1 protein expression in SH-SY5Y neuroblastoma cells, while petroleum ether and chloroform extracts had no effect; the paper does not state a mechanism or potency parameters (no Imax/IC50/EC50/Emax/kin/kout/ke0) for the ADCY1 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Souza_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

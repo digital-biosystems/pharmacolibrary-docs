@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Neomenthol (10–100 µM) concentration-dependently decreased mitochondrial membrane potential in skin cancer cells, with a percent decrease of 13.05 ± 2.6% versus control at the highest concentration (100 µM; FITC mean 2913 ± 1.41 vs 3194.5 ± 2.12 control); the paper does not state a PD model or potency parameters (Imax/IC50/EC50) for this response, and no mechanism beyond mitochondrial membrane damage as an early apoptotic event is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

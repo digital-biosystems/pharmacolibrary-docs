@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methyl-diazonium ion drives alkylated DNA adducts (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the PK-PD model, intracellular temozolomide is converted to MTIC and then the methyl-diazonium ion, which alkylates DNA to form alkylated DNA adducts (DNA-R); this formation is counteracted by MGMT, which reverses the adducts. The paper does not state quantitative potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this PD step in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nelson_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

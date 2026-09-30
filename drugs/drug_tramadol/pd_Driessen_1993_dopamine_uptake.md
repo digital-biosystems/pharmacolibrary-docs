@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tramadol (concentrations from the PK model of Al-Qurain_2022::base) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tramadol inhibits dopamine uptake into purified rabbit caudate nucleus synaptosomes, but this effect is very weak, with only 62% inhibition at 100 µM; the paper does not report an IC50, Emax, or kinetic model parameters for the dopamine uptake response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Driessen_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

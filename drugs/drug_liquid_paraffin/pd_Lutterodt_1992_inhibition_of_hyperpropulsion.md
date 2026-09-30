@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Psidium guajava leaf extract drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Aqueous Psidium guajava leaf extracts (ED, EF, EC) given enterally 1 h before challenge dose-dependently inhibited Microlax-induced intestinal hyperpropulsion in rats, measured as % inhibition of propulsion rate relative to the Microlax control (98.8 ± 1.8 % h−1; normal liquid paraffin-phenol red meal rate 75.4 ± 6.0 % h−1). The excerpts show only a log dose-response relationship (with morphine, 0.3–2 mg/100 g, as reference) and state no PD model, Imax/IC50/EC50/Emax, or kinetic parameters; the paper does not give a mechanism for this in vivo effect, though prior work cited attributes the antidiarrhoeal action partly to inhibition of acetylcholine release and direct smooth-muscle spasmolysis
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lutterodt_1992`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

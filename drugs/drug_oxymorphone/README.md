@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sadiq_2013_original_data_set](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md) | 1-compartment, IV | 4 | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadiq_2013_bootstrap_resampling](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md) | 1-compartment (no model) | 4 | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sadiq_2013_original_data_set](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_original_data_set.md) | ▶ model + simulator | 1-compartment, IV | 4 | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sadiq_2013_bootstrap_resampling](drugs/drug_oxymorphone/Oxymorphone_Sadiq2013_bootstrap_resampling.md) | — | 1-compartment (no model) | 4 | Sadiq MW et al., Oxymorphone active uptake at the blood-…, Journal of pharmaceutical s… (2013) | [10.1002/jps.23492](https://doi.org/10.1002/jps.23492) |
 
 ## ADME sites
 

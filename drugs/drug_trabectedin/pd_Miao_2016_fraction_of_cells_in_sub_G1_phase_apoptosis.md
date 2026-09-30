@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Trabectedin acts on the cell-cycle distribution (fractions of cells in G0/G1, S, G2/M and sub-G1 apoptosis) in MiaPaCa-2 and BxPC-3 cells by inhibiting the S-to-G2/M transition rate k2 and the G2/M-to-G0/G1 transition rate k3, with S-phase inhibition decreasing over time (kS = 1 h−1 MiaPaCa-2, 0.00204 h−1 BxPC-3) and G2/M inhibition increasing over time (kG2 = 0.0270 h−1 MiaPaCa-2, 0.0516 h−1 BxPC-3); half-maximal inhibitory concentrations were IC50,Tbd,S = 0.222 nM (MiaPaCa-2) and 1.03 nM (BxPC-3) and IC50,Tbd,G2 = 0.525 nM (MiaPaCa-2) and 0.681 nM (BxPC-3), plus concentration-dependent effects on k1 with βk1 = 2.64 nM−1 (MiaPaCa-2) and 0.637 nM−1 (BxPC-3).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Miao_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@
 not matched (stem Miao_2016)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k1 — MiaPaCa-2 Estimate (CV%) | `Q301` · not captured | 0.0693 | not captured | not captured | llm (not captured) | T2:row1:col3 |
-| k1 — BxPC-3 Estimate (CV%) | `Q301` · not captured | 0.166 | not captured | not captured | llm (not captured) | T2:row1:col4 |
-| k2 — MiaPaCa-2 Estimate (CV%) | `Q346` · not captured | 0.101 | not captured | not captured | llm (not captured) | T2:row2:col3 |
-| k2 — BxPC-3 Estimate (CV%) | `Q346` · not captured | 0.149 | not captured | not captured | llm (not captured) | T2:row2:col4 |
-| k3 — MiaPaCa-2 Estimate (CV%) | `Q304` · not captured | 0.132 | not captured | not captured | llm (not captured) | T2:row3:col3 |
-| k3 — BxPC-3 Estimate (CV%) | `Q304` · not captured | 0.245 | not captured | not captured | llm (not captured) | T2:row3:col4 |
-| Imax — MiaPaCa-2 Estimate (CV%) | `Q323` · not captured | 0.922 | not captured | not captured | exact (not captured) | T2:row8:col3 |
-| Imax — BxPC-3 Estimate (CV%) | `Q323` · not captured | 0.868 | not captured | not captured | exact (not captured) | T2:row8:col4 |
-| IT50 — MiaPaCa-2 Estimate (CV%) | `Q322` · not captured | 45.4 | nM | not captured | llm (not captured) | T2:row9:col3 |
-| IT50 — BxPC-3 Estimate (CV%) | `Q322` · not captured | 61.0 | nM | not captured | llm (not captured) | T2:row9:col4 |
-| γ — MiaPaCa-2 Estimate (CV%) | `Q89` · not captured | 4.37 | not captured | not captured | llm (not captured) | T2:row10:col3 |
-| γ — BxPC-3 Estimate (CV%) | `Q89` · not captured | 3.30 | not captured | not captured | llm (not captured) | T2:row10:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k1 — MiaPaCa-2 Estimate (CV%) | `Q301` · not captured | 0.0693 | not captured | not captured | llm (not captured) | T2:row1:col3 |
+| PK (driver) | k1 — BxPC-3 Estimate (CV%) | `Q301` · not captured | 0.166 | not captured | not captured | llm (not captured) | T2:row1:col4 |
+| PK (driver) | k2 — MiaPaCa-2 Estimate (CV%) | `Q346` · not captured | 0.101 | not captured | not captured | llm (not captured) | T2:row2:col3 |
+| PK (driver) | k2 — BxPC-3 Estimate (CV%) | `Q346` · not captured | 0.149 | not captured | not captured | llm (not captured) | T2:row2:col4 |
+| PK (driver) | k3 — MiaPaCa-2 Estimate (CV%) | `Q304` · not captured | 0.132 | not captured | not captured | llm (not captured) | T2:row3:col3 |
+| PK (driver) | k3 — BxPC-3 Estimate (CV%) | `Q304` · not captured | 0.245 | not captured | not captured | llm (not captured) | T2:row3:col4 |
+| PD (effect) | Imax — MiaPaCa-2 Estimate (CV%) | `Q323` · not captured | 0.922 | not captured | not captured | exact (not captured) | T2:row8:col3 |
+| PD (effect) | Imax — BxPC-3 Estimate (CV%) | `Q323` · not captured | 0.868 | not captured | not captured | exact (not captured) | T2:row8:col4 |
+| PD (effect) | IT50 — MiaPaCa-2 Estimate (CV%) | `Q322` · not captured | 45.4 | nM | not captured | llm (not captured) | T2:row9:col3 |
+| PD (effect) | IT50 — BxPC-3 Estimate (CV%) | `Q322` · not captured | 61.0 | nM | not captured | llm (not captured) | T2:row9:col4 |
+| PK (driver) | γ — MiaPaCa-2 Estimate (CV%) | `Q89` · not captured | 4.37 | not captured | not captured | llm (not captured) | T2:row10:col3 |
+| PK (driver) | γ — BxPC-3 Estimate (CV%) | `Q89` · not captured | 3.30 | not captured | not captured | llm (not captured) | T2:row10:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Shin_2017](drugs/drug_nortriptyline/pd_Shin_2017_Kv.md) | Shin SE et al., Nortriptyline, a tricyclic antidepressa…, The Korean journal of physi… (2017) | [10.4196/kjpp.2017.21.2.225](https://doi.org/10.4196/kjpp.2017.21.2.225) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tylutki_2018](drugs/drug_nortriptyline/pd_Tylutki_2018_R_R_interval_length.md) | Tylutki (2018) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Shin_2017_Kv](drugs/drug_nortriptyline/pd_Shin_2017_Kv.md) | Kv current ← nortriptyline · direct sigmoid Emax (Hill) effect | — | Shin SE et al., Nortriptyline, a tricyclic antidepressa…, The Korean journal of physi… (2017) | [10.4196/kjpp.2017.21.2.225](https://doi.org/10.4196/kjpp.2017.21.2.225) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tylutki_2018_R_R_interval_length](drugs/drug_nortriptyline/pd_Tylutki_2018_R_R_interval_length.md) | name ← amitriptyline · direct sigmoid Emax (Hill) effect | — | Tylutki (2018) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,6 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/metabolism/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |

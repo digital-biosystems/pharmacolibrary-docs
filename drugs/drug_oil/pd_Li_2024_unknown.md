@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myrtus communis L. essential oil (measured concentrations) drives Cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Myrtus communis L. essential oil (MEO) concentrations inhibit HCoV-229E infection of Huh7.5 cells, measured by immunostaining/PrestoBlue cell viability, with an EC50 of 0.1204 mg/mL and a CC50 of 4.197 mg/mL (cytotoxicity ~35-fold above EC50); against HCoV-OC43 the EC50 was about 0.017% relative dilution. The paper does not state a specific PD model or mechanism (e.g., no Imax, kin, kout, ke0, or gamma values), only noting the mechanism of inhibition remains undetermined, possibly involving antioxidant activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

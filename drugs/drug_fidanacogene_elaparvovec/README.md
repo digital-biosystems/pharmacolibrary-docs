@@ -29,15 +29,15 @@ antibodies to variant AAV serotype Rh74. [L52845]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2025_reference](drugs/drug_fidanacogene_elaparvovec/FidanacogeneElaparvovec_Wojciechowski2025_reference.md) | parent + metabolite (no model) | 0 | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wojciechowski_2025_reference](drugs/drug_fidanacogene_elaparvovec/FidanacogeneElaparvovec_Wojciechowski2025_reference.md) | — | parent + metabolite (no model) | 0 | Wojciechowski J et al., Population Modeling of Factor IX Activi…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01535-y](https://doi.org/10.1007/s40262-025-01535-y) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025](drugs/drug_fidanacogene_elaparvovec/pd_Cao_2025_IgG.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025_IgG](drugs/drug_fidanacogene_elaparvovec/pd_Cao_2025_IgG.md) | IgG ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## ADME sites
 
@@ -46,7 +46,9 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | kidney | <sub>“…serum/plasma compared to the other liquid matrices (saliva, urine, semen).[L49444]…”</sub> | prose |
+| absorption | testis | <sub>“…lasma compared to the other liquid matrices (saliva, urine, semen).[L49444]…”</sub> | prose |
 | excretion | kidney | <sub>“…shed in peripheral blood mononuclear cells (PBMC), saliva, urine, semen, and serum/plasma.…”</sub> | prose |
+| excretion | testis | <sub>“…n peripheral blood mononuclear cells (PBMC), saliva, urine, semen, and serum/plasma.[L4944…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: Coagulation factor IX (F9) (gene replacement).</sub>
 

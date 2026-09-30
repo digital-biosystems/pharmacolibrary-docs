@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MS023 (measured concentrations) drives gene expression (BUB1B, CENPA, CENPI, FANCM, BRCA2, RAD51AP1, FANCD2) (in normalized gene counts) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the gene-expression response (BUB1B, CENPA, CENPI, FANCM, BRCA2, RAD51AP1, FANCD2 normalized gene counts) to MS023; it states only that MS023-mediated inhibition of type I PRMTs (PRMT1) downregulates DDR gene expression and nucleocytoplasmic transport, with no IC50, Emax, or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walton_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

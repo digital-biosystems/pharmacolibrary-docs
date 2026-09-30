@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Flupirtine (concentrations from the PK model of Giorgi_2016) drives spontaneous contractility (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Flupirtine (1–90 μM) directly inhibits the spontaneous contractility of isolated distal caprine ureter in a dose-dependent manner, with an Emax-type EC50 of 17.7 μM for a 10-min contact period; the paper attributes the mechanism to opening of Kv7 potassium channels, as the inhibition was reversed by 4-AP and XE-991.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naik_2018`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Naik GS; Kodagali R; Tyagi MG; Ernest K; Shanthi M; Mathew SK; et al. et al. (20
   ·  DOI: [10.4103/ijabmr.IJABMR_159_17](https://doi.org/10.4103/ijabmr.IJABMR_159_17)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 of flupirtine for a contact period of 10 min | `Q321` · not captured | 17.7 | μM | not captured | review_gapfill (not captured) | Naik_2018:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 of flupirtine for a contact period of 10 min | `Q321` · not captured | 17.7 | μM | not captured | review_gapfill (not captured) | Naik_2018:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

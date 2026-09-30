@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenazine-1-carboxamide (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenazine-1-carboxamide (PCN) concentrations (μg/mL) directly inhibit Botrytis cinerea spore germination (% relative inhibition), with inhibition increasing with concentration (10.45–21.62% at 35–70 μg/mL, 33.44% at 140 μg/mL, and 77.03% at 700 μg/mL); the EC50 is 108.12 μg/mL (carbendazim 101.39 μg/mL). The paper does not state a specific PD mechanism (e.g., Emax/turnover model) for the spore germination response, only suggesting that high concentrations may act via altered cell membrane permeability.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Zhang Y; Wang C; Su P; Liao X et al. (2015). PloS one 10
   ·  DOI: [10.1371/journal.pone.0140380](https://doi.org/10.1371/journal.pone.0140380)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PCN — EC50(μg/mL) | `Q321` · not captured | 108.12 | μg/mL | not captured | llm (not captured) | pone.0140380.t001:row1:col4 |
-| CBM — EC50(μg/mL) | `Q321` · not captured | 101.39 | μg/mL | not captured | llm (not captured) | pone.0140380.t001:row6:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | PCN — EC50(μg/mL) | `Q321` · not captured | 108.12 | μg/mL | not captured | llm (not captured) | pone.0140380.t001:row1:col4 |
+| PD (effect) | CBM — EC50(μg/mL) | `Q321` · not captured | 101.39 | μg/mL | not captured | llm (not captured) | pone.0140380.t001:row6:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

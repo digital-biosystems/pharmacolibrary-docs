@@ -27,9 +27,9 @@ Mannitol is also indicated as add-on maintenance therapy for improving pulmonary
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | — (no model) | 0 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Noorani_2022_awake young adult mice](drugs/drug_mannitol/Mannitol_Noorani2022_awake_young_adult_mice.md) | — | — (no model) | 0 | Noorani B et al., A Semi-Physiological Three-Compartment…, Pharmaceutical research (2022) | [10.1007/s11095-022-03175-4](https://doi.org/10.1007/s11095-022-03175-4) |
 
 ## ADME sites
 

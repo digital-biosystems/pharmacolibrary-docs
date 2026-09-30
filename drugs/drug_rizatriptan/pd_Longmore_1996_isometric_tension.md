@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rizatriptan drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Rizatriptan concentration directly contracts endothelium-denuded human isolated coronary artery segments measured as isometric tension, described by a direct Emax model (no effect-compartment or turnover mechanism stated); the overall mean EC50 was 0.22 (Study 1) and 0.31 (Study 2, units not stated, table header indicates mM) with overall Emax 102.0% of the 45 mM KCl response (individual Emax values 64.3–148.6%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Longmore_1996`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,100 +30,100 @@ Longmore J; Boulanger CM; Desta B; Hill RG; Schofield WN; Taylor AA et al. (1996
   ·  DOI: [10.1046/j.1365-2125.1996.04217.x](https://doi.org/10.1046/j.1365-2125.1996.04217.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 — 1 | `Q321` · not captured | 0.16 | unknown | not captured | space_fold (not captured) | tab_0:row0:col3 |
-| EC 50 — 2 | `Q321` · not captured | 0.60 | unknown | not captured | space_fold (not captured) | tab_0:row0:col4 |
-| EC 50 — 4 | `Q321` · not captured | 0.06 | unknown | not captured | space_fold (not captured) | tab_0:row0:col5 |
-| EC 50 — 5 | `Q321` · not captured | 0.75 | unknown | not captured | space_fold (not captured) | tab_0:row0:col6 |
-| EC 50 — 6 | `Q321` · not captured | 0.11 | unknown | not captured | space_fold (not captured) | tab_0:row0:col7 |
-| EC 50 — 7 | `Q321` · not captured | 1.21 | unknown | not captured | space_fold (not captured) | tab_0:row0:col8 |
-| EC 50 — 19 | `Q321` · not captured | 0.36 | unknown | not captured | space_fold (not captured) | tab_0:row0:col9 |
-| EC 50 — Overall value mean | `Q321` · not captured | 0.22 | unknown | not captured | space_fold (not captured) | tab_0:row0:col10 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.20 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row0:col11 |
-| EC 50 — 9 | `Q321` · not captured | 0.33 | unknown | not captured | space_fold (not captured) | tab_0:row0:col14 |
-| EC 50 — 10 | `Q321` · not captured | 0.31 | unknown | not captured | space_fold (not captured) | tab_0:row0:col15 |
-| EC 50 — 11 | `Q321` · not captured | 0.40 | unknown | not captured | space_fold (not captured) | tab_0:row0:col16 |
-| EC 50 — 12 | `Q321` · not captured | 0.85 | unknown | not captured | space_fold (not captured) | tab_0:row0:col17 |
-| EC 50 — 13 | `Q321` · not captured | 0.05 | unknown | not captured | space_fold (not captured) | tab_0:row0:col18 |
-| EC 50 — 16 | `Q321` · not captured | 1.24 | unknown | not captured | space_fold (not captured) | tab_0:row0:col19 |
-| EC 50 — 17 | `Q321` · not captured | 0.18 | unknown | not captured | space_fold (not captured) | tab_0:row0:col20 |
-| EC 50 — 18 | `Q321` · not captured | 0.20 | unknown | not captured | space_fold (not captured) | tab_0:row0:col21 |
-| EC 50 — Overall value mean | `Q321` · not captured | 0.31 | unknown | not captured | space_fold (not captured) | tab_0:row0:col22 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.3 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row0:col23 |
-| E max — 1 | `Q320` · not captured | 107.2 | not captured | not captured | space_fold (not captured) | tab_0:row1:col3 |
-| E max — 2 | `Q320` · not captured | 98.9 | not captured | not captured | space_fold (not captured) | tab_0:row1:col4 |
-| E max — 4 | `Q320` · not captured | 118.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col5 |
-| E max — 5 | `Q320` · not captured | 81.5 | not captured | not captured | space_fold (not captured) | tab_0:row1:col6 |
-| E max — 6 | `Q320` · not captured | 138.8 | not captured | not captured | space_fold (not captured) | tab_0:row1:col7 |
-| E max — 7 | `Q320` · not captured | 64.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col8 |
-| E max — 19 | `Q320` · not captured | 98.4 | not captured | not captured | space_fold (not captured) | tab_0:row1:col9 |
-| E max — Overall value mean | `Q320` · not captured | 102.0 | not captured | not captured | space_fold (not captured) | tab_0:row1:col10 |
-| E max — 9 | `Q320` · not captured | 148.6 | not captured | not captured | space_fold (not captured) | tab_0:row1:col14 |
-| E max — 10 | `Q320` · not captured | 146.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col15 |
-| E max — 11 | `Q320` · not captured | 87.4 | not captured | not captured | space_fold (not captured) | tab_0:row1:col16 |
-| E max — 12 | `Q320` · not captured | 62.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col17 |
-| E max — 13 | `Q320` · not captured | 119.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col18 |
-| E max — 16 | `Q320` · not captured | 186.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col19 |
-| E max — 17 | `Q320` · not captured | 151.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col20 |
-| E max — 18 | `Q320` · not captured | 126.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col21 |
-| E max — Overall value mean | `Q320` · not captured | 133.8 | not captured | not captured | space_fold (not captured) | tab_0:row1:col22 |
-| EC 50 — 1 | `Q321` · not captured | 1.20 | unknown | not captured | space_fold (not captured) | tab_0:row2:col3 |
-| EC 50 — 2 | `Q321` · not captured | 0.39 | unknown | not captured | space_fold (not captured) | tab_0:row2:col4 |
-| EC 50 — 4 | `Q321` · not captured | 0.23 | unknown | not captured | space_fold (not captured) | tab_0:row2:col5 |
-| EC 50 — 6 | `Q321` · not captured | 0.28 | unknown | not captured | space_fold (not captured) | tab_0:row2:col7 |
-| EC 50 — 19 | `Q321` · not captured | 3.09 | unknown | not captured | space_fold (not captured) | tab_0:row2:col9 |
-| EC 50 — Overall value mean | `Q321` · not captured | 0.63 | unknown | not captured | space_fold (not captured) | tab_0:row2:col10 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.5 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row2:col11 |
-| EC 50 — 9 | `Q321` · not captured | 0.35 | unknown | not captured | space_fold (not captured) | tab_0:row2:col14 |
-| EC 50 — 10 | `Q321` · not captured | 0.59 | unknown | not captured | space_fold (not captured) | tab_0:row2:col15 |
-| EC 50 — 13 | `Q321` · not captured | 1.81 | unknown | not captured | space_fold (not captured) | tab_0:row2:col18 |
-| EC 50 — 16 | `Q321` · not captured | 3.43 | unknown | not captured | space_fold (not captured) | tab_0:row2:col19 |
-| EC 50 — 17 | `Q321` · not captured | 0.95 | unknown | not captured | space_fold (not captured) | tab_0:row2:col20 |
-| EC 50 — 18 | `Q321` · not captured | 1.47 | unknown | not captured | space_fold (not captured) | tab_0:row2:col21 |
-| EC 50 — Overall value mean | `Q321` · not captured | 0.69 | unknown | not captured | space_fold (not captured) | tab_0:row2:col22 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.3 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row2:col23 |
-| E max — 1 | `Q320` · not captured | 28.2 | not captured | not captured | space_fold (not captured) | tab_0:row3:col3 |
-| E max — 2 | `Q320` · not captured | 158.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col4 |
-| E max — 4 | `Q320` · not captured | 40.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col5 |
-| E max — 6 | `Q320` · not captured | 92.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col7 |
-| E max — 19 | `Q320` · not captured | 42.0 | not captured | not captured | space_fold (not captured) | tab_0:row3:col9 |
-| E max — Overall value mean | `Q320` · not captured | 43.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col10 |
-| E max — 9 | `Q320` · not captured | 82.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col14 |
-| E max — 10 | `Q320` · not captured | 89.5 | not captured | not captured | space_fold (not captured) | tab_0:row3:col15 |
-| E max — 13 | `Q320` · not captured | 34.4 | not captured | not captured | space_fold (not captured) | tab_0:row3:col18 |
-| E max — 16 | `Q320` · not captured | 45.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col19 |
-| E max — 17 | `Q320` · not captured | 38.0 | not captured | not captured | space_fold (not captured) | tab_0:row3:col20 |
-| E max — 18 | `Q320` · not captured | 144.4 | not captured | not captured | space_fold (not captured) | tab_0:row3:col21 |
-| E max — Overall value mean | `Q320` · not captured | 57.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col22 |
-| EC 50 — 2 | `Q321` · not captured | 1.32 | unknown | not captured | space_fold (not captured) | tab_0:row4:col4 |
-| EC 50 — 4 | `Q321` · not captured | 0.56 | unknown | not captured | space_fold (not captured) | tab_0:row4:col5 |
-| EC 50 — 6 | `Q321` · not captured | 0.43 | unknown | not captured | space_fold (not captured) | tab_0:row4:col7 |
-| EC 50 — 7 | `Q321` · not captured | 2.52 | unknown | not captured | space_fold (not captured) | tab_0:row4:col8 |
-| EC 50 — Overall value mean | `Q321` · not captured | 1.02 | unknown | not captured | space_fold (not captured) | tab_0:row4:col10 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.8 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row4:col11 |
-| EC 50 — 9 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col14 |
-| EC 50 — 10 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col15 |
-| EC 50 — 12 | `Q321` · not captured | 0.16 | unknown | not captured | space_fold (not captured) | tab_0:row4:col17 |
-| EC 50 — 13 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col18 |
-| EC 50 — 16 | `Q321` · not captured | 0.98 | unknown | not captured | space_fold (not captured) | tab_0:row4:col19 |
-| EC 50 — 17 | `Q321` · not captured | 0.11 | unknown | not captured | space_fold (not captured) | tab_0:row4:col20 |
-| EC 50 — 18 | `Q321` · not captured | 0.58 | unknown | not captured | space_fold (not captured) | tab_0:row4:col21 |
-| EC 50 — Overall value mean | `Q321` · not captured | 0.09 | unknown | not captured | space_fold (not captured) | tab_0:row4:col22 |
-| EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.07 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row4:col23 |
-| E max — 2 | `Q320` · not captured | 58.5 | not captured | not captured | space_fold (not captured) | tab_0:row5:col4 |
-| E max — 4 | `Q320` · not captured | 26.5 | not captured | not captured | space_fold (not captured) | tab_0:row5:col5 |
-| E max — 6 | `Q320` · not captured | 74.0 | not captured | not captured | space_fold (not captured) | tab_0:row5:col7 |
-| E max — 7 | `Q320` · not captured | 8.3 | not captured | not captured | space_fold (not captured) | tab_0:row5:col8 |
-| E max — Overall value mean | `Q320` · not captured | 22.2 | not captured | not captured | space_fold (not captured) | tab_0:row5:col10 |
-| E max — 9 | `Q320` · not captured | 66.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col14 |
-| E max — 10 | `Q320` · not captured | 62.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col15 |
-| E max — 12 | `Q320` · not captured | 3.1 | not captured | not captured | space_fold (not captured) | tab_0:row5:col17 |
-| E max — 13 | `Q320` · not captured | 51.7 | not captured | not captured | space_fold (not captured) | tab_0:row5:col18 |
-| E max — 16 | `Q320` · not captured | 19.7 | not captured | not captured | space_fold (not captured) | tab_0:row5:col19 |
-| E max — 17 | `Q320` · not captured | 35.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col20 |
-| E max — 18 | `Q320` · not captured | 122.3 | not captured | not captured | space_fold (not captured) | tab_0:row5:col21 |
-| E max — Overall value mean | `Q320` · not captured | 44.8 | not captured | not captured | space_fold (not captured) | tab_0:row5:col22 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 — 1 | `Q321` · not captured | 0.16 | unknown | not captured | space_fold (not captured) | tab_0:row0:col3 |
+| PD (effect) | EC 50 — 2 | `Q321` · not captured | 0.60 | unknown | not captured | space_fold (not captured) | tab_0:row0:col4 |
+| PD (effect) | EC 50 — 4 | `Q321` · not captured | 0.06 | unknown | not captured | space_fold (not captured) | tab_0:row0:col5 |
+| PD (effect) | EC 50 — 5 | `Q321` · not captured | 0.75 | unknown | not captured | space_fold (not captured) | tab_0:row0:col6 |
+| PD (effect) | EC 50 — 6 | `Q321` · not captured | 0.11 | unknown | not captured | space_fold (not captured) | tab_0:row0:col7 |
+| PD (effect) | EC 50 — 7 | `Q321` · not captured | 1.21 | unknown | not captured | space_fold (not captured) | tab_0:row0:col8 |
+| PD (effect) | EC 50 — 19 | `Q321` · not captured | 0.36 | unknown | not captured | space_fold (not captured) | tab_0:row0:col9 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 0.22 | unknown | not captured | space_fold (not captured) | tab_0:row0:col10 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.20 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row0:col11 |
+| PD (effect) | EC 50 — 9 | `Q321` · not captured | 0.33 | unknown | not captured | space_fold (not captured) | tab_0:row0:col14 |
+| PD (effect) | EC 50 — 10 | `Q321` · not captured | 0.31 | unknown | not captured | space_fold (not captured) | tab_0:row0:col15 |
+| PD (effect) | EC 50 — 11 | `Q321` · not captured | 0.40 | unknown | not captured | space_fold (not captured) | tab_0:row0:col16 |
+| PD (effect) | EC 50 — 12 | `Q321` · not captured | 0.85 | unknown | not captured | space_fold (not captured) | tab_0:row0:col17 |
+| PD (effect) | EC 50 — 13 | `Q321` · not captured | 0.05 | unknown | not captured | space_fold (not captured) | tab_0:row0:col18 |
+| PD (effect) | EC 50 — 16 | `Q321` · not captured | 1.24 | unknown | not captured | space_fold (not captured) | tab_0:row0:col19 |
+| PD (effect) | EC 50 — 17 | `Q321` · not captured | 0.18 | unknown | not captured | space_fold (not captured) | tab_0:row0:col20 |
+| PD (effect) | EC 50 — 18 | `Q321` · not captured | 0.20 | unknown | not captured | space_fold (not captured) | tab_0:row0:col21 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 0.31 | unknown | not captured | space_fold (not captured) | tab_0:row0:col22 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.3 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row0:col23 |
+| PD (effect) | E max — 1 | `Q320` · not captured | 107.2 | not captured | not captured | space_fold (not captured) | tab_0:row1:col3 |
+| PD (effect) | E max — 2 | `Q320` · not captured | 98.9 | not captured | not captured | space_fold (not captured) | tab_0:row1:col4 |
+| PD (effect) | E max — 4 | `Q320` · not captured | 118.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col5 |
+| PD (effect) | E max — 5 | `Q320` · not captured | 81.5 | not captured | not captured | space_fold (not captured) | tab_0:row1:col6 |
+| PD (effect) | E max — 6 | `Q320` · not captured | 138.8 | not captured | not captured | space_fold (not captured) | tab_0:row1:col7 |
+| PD (effect) | E max — 7 | `Q320` · not captured | 64.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col8 |
+| PD (effect) | E max — 19 | `Q320` · not captured | 98.4 | not captured | not captured | space_fold (not captured) | tab_0:row1:col9 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 102.0 | not captured | not captured | space_fold (not captured) | tab_0:row1:col10 |
+| PD (effect) | E max — 9 | `Q320` · not captured | 148.6 | not captured | not captured | space_fold (not captured) | tab_0:row1:col14 |
+| PD (effect) | E max — 10 | `Q320` · not captured | 146.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col15 |
+| PD (effect) | E max — 11 | `Q320` · not captured | 87.4 | not captured | not captured | space_fold (not captured) | tab_0:row1:col16 |
+| PD (effect) | E max — 12 | `Q320` · not captured | 62.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col17 |
+| PD (effect) | E max — 13 | `Q320` · not captured | 119.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col18 |
+| PD (effect) | E max — 16 | `Q320` · not captured | 186.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col19 |
+| PD (effect) | E max — 17 | `Q320` · not captured | 151.1 | not captured | not captured | space_fold (not captured) | tab_0:row1:col20 |
+| PD (effect) | E max — 18 | `Q320` · not captured | 126.3 | not captured | not captured | space_fold (not captured) | tab_0:row1:col21 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 133.8 | not captured | not captured | space_fold (not captured) | tab_0:row1:col22 |
+| PD (effect) | EC 50 — 1 | `Q321` · not captured | 1.20 | unknown | not captured | space_fold (not captured) | tab_0:row2:col3 |
+| PD (effect) | EC 50 — 2 | `Q321` · not captured | 0.39 | unknown | not captured | space_fold (not captured) | tab_0:row2:col4 |
+| PD (effect) | EC 50 — 4 | `Q321` · not captured | 0.23 | unknown | not captured | space_fold (not captured) | tab_0:row2:col5 |
+| PD (effect) | EC 50 — 6 | `Q321` · not captured | 0.28 | unknown | not captured | space_fold (not captured) | tab_0:row2:col7 |
+| PD (effect) | EC 50 — 19 | `Q321` · not captured | 3.09 | unknown | not captured | space_fold (not captured) | tab_0:row2:col9 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 0.63 | unknown | not captured | space_fold (not captured) | tab_0:row2:col10 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.5 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row2:col11 |
+| PD (effect) | EC 50 — 9 | `Q321` · not captured | 0.35 | unknown | not captured | space_fold (not captured) | tab_0:row2:col14 |
+| PD (effect) | EC 50 — 10 | `Q321` · not captured | 0.59 | unknown | not captured | space_fold (not captured) | tab_0:row2:col15 |
+| PD (effect) | EC 50 — 13 | `Q321` · not captured | 1.81 | unknown | not captured | space_fold (not captured) | tab_0:row2:col18 |
+| PD (effect) | EC 50 — 16 | `Q321` · not captured | 3.43 | unknown | not captured | space_fold (not captured) | tab_0:row2:col19 |
+| PD (effect) | EC 50 — 17 | `Q321` · not captured | 0.95 | unknown | not captured | space_fold (not captured) | tab_0:row2:col20 |
+| PD (effect) | EC 50 — 18 | `Q321` · not captured | 1.47 | unknown | not captured | space_fold (not captured) | tab_0:row2:col21 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 0.69 | unknown | not captured | space_fold (not captured) | tab_0:row2:col22 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.3 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row2:col23 |
+| PD (effect) | E max — 1 | `Q320` · not captured | 28.2 | not captured | not captured | space_fold (not captured) | tab_0:row3:col3 |
+| PD (effect) | E max — 2 | `Q320` · not captured | 158.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col4 |
+| PD (effect) | E max — 4 | `Q320` · not captured | 40.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col5 |
+| PD (effect) | E max — 6 | `Q320` · not captured | 92.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col7 |
+| PD (effect) | E max — 19 | `Q320` · not captured | 42.0 | not captured | not captured | space_fold (not captured) | tab_0:row3:col9 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 43.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col10 |
+| PD (effect) | E max — 9 | `Q320` · not captured | 82.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col14 |
+| PD (effect) | E max — 10 | `Q320` · not captured | 89.5 | not captured | not captured | space_fold (not captured) | tab_0:row3:col15 |
+| PD (effect) | E max — 13 | `Q320` · not captured | 34.4 | not captured | not captured | space_fold (not captured) | tab_0:row3:col18 |
+| PD (effect) | E max — 16 | `Q320` · not captured | 45.8 | not captured | not captured | space_fold (not captured) | tab_0:row3:col19 |
+| PD (effect) | E max — 17 | `Q320` · not captured | 38.0 | not captured | not captured | space_fold (not captured) | tab_0:row3:col20 |
+| PD (effect) | E max — 18 | `Q320` · not captured | 144.4 | not captured | not captured | space_fold (not captured) | tab_0:row3:col21 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 57.7 | not captured | not captured | space_fold (not captured) | tab_0:row3:col22 |
+| PD (effect) | EC 50 — 2 | `Q321` · not captured | 1.32 | unknown | not captured | space_fold (not captured) | tab_0:row4:col4 |
+| PD (effect) | EC 50 — 4 | `Q321` · not captured | 0.56 | unknown | not captured | space_fold (not captured) | tab_0:row4:col5 |
+| PD (effect) | EC 50 — 6 | `Q321` · not captured | 0.43 | unknown | not captured | space_fold (not captured) | tab_0:row4:col7 |
+| PD (effect) | EC 50 — 7 | `Q321` · not captured | 2.52 | unknown | not captured | space_fold (not captured) | tab_0:row4:col8 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 1.02 | unknown | not captured | space_fold (not captured) | tab_0:row4:col10 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.8 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row4:col11 |
+| PD (effect) | EC 50 — 9 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col14 |
+| PD (effect) | EC 50 — 10 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col15 |
+| PD (effect) | EC 50 — 12 | `Q321` · not captured | 0.16 | unknown | not captured | space_fold (not captured) | tab_0:row4:col17 |
+| PD (effect) | EC 50 — 13 | `Q321` · not captured | 0.13 | unknown | not captured | space_fold (not captured) | tab_0:row4:col18 |
+| PD (effect) | EC 50 — 16 | `Q321` · not captured | 0.98 | unknown | not captured | space_fold (not captured) | tab_0:row4:col19 |
+| PD (effect) | EC 50 — 17 | `Q321` · not captured | 0.11 | unknown | not captured | space_fold (not captured) | tab_0:row4:col20 |
+| PD (effect) | EC 50 — 18 | `Q321` · not captured | 0.58 | unknown | not captured | space_fold (not captured) | tab_0:row4:col21 |
+| PD (effect) | EC 50 — Overall value mean | `Q321` · not captured | 0.09 | unknown | not captured | space_fold (not captured) | tab_0:row4:col22 |
+| PD (effect) | EC 50 — (asymptotic s.e.) | `Q321` · not captured | 0.07 | asymptotic s.e. | not captured | space_fold (not captured) | tab_0:row4:col23 |
+| PD (effect) | E max — 2 | `Q320` · not captured | 58.5 | not captured | not captured | space_fold (not captured) | tab_0:row5:col4 |
+| PD (effect) | E max — 4 | `Q320` · not captured | 26.5 | not captured | not captured | space_fold (not captured) | tab_0:row5:col5 |
+| PD (effect) | E max — 6 | `Q320` · not captured | 74.0 | not captured | not captured | space_fold (not captured) | tab_0:row5:col7 |
+| PD (effect) | E max — 7 | `Q320` · not captured | 8.3 | not captured | not captured | space_fold (not captured) | tab_0:row5:col8 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 22.2 | not captured | not captured | space_fold (not captured) | tab_0:row5:col10 |
+| PD (effect) | E max — 9 | `Q320` · not captured | 66.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col14 |
+| PD (effect) | E max — 10 | `Q320` · not captured | 62.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col15 |
+| PD (effect) | E max — 12 | `Q320` · not captured | 3.1 | not captured | not captured | space_fold (not captured) | tab_0:row5:col17 |
+| PD (effect) | E max — 13 | `Q320` · not captured | 51.7 | not captured | not captured | space_fold (not captured) | tab_0:row5:col18 |
+| PD (effect) | E max — 16 | `Q320` · not captured | 19.7 | not captured | not captured | space_fold (not captured) | tab_0:row5:col19 |
+| PD (effect) | E max — 17 | `Q320` · not captured | 35.4 | not captured | not captured | space_fold (not captured) | tab_0:row5:col20 |
+| PD (effect) | E max — 18 | `Q320` · not captured | 122.3 | not captured | not captured | space_fold (not captured) | tab_0:row5:col21 |
+| PD (effect) | E max — Overall value mean | `Q320` · not captured | 44.8 | not captured | not captured | space_fold (not captured) | tab_0:row5:col22 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

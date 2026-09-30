@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LXR agonists (compounds 7, 8, 9, 10) (measured concentrations) drive ABCA1 induction (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism or model for the menadione-related LXR agonists (compounds 7, 8, 9, 10); it only reports concentration-dependent stimulation of ABCA1 promoter-driven luciferase reporter induction (relative to 1 µM of LXR modulator compound 2 = 100%), with dose-dependency experiments at five concentrations used for EC50 estimation, but no EC50, Emax, or rate parameter values are given in the excerpts (compounds 7 and 9 required ~50 µM to show transactivation; compound 9 at 25 µM gave 49.2% induction).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `von_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

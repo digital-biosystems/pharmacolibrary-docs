@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lubiprostone (measured concentrations) drives short-circuit current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Lubiprostone (1–3000 nM, applied mucosally or serosally in Ussing chambers) directly stimulates short-circuit current (Isc) in guinea pig ileum and colon in a concentration-dependent Emax manner, acting as a chloride channel (ClC-2) activator; EC50 values were 42.5 nM (ileum, mucosal), 227.2 nM (ileum, serosal), 31.7 nM (colon, serosal), and 48.9 nM (colon, mucosal), with peak Isc increases of e.g. 0.78 to 37.8 µA/cm² (ileum, mucosal) and 3.4 to 58.9 µA/cm² (colon, mucosal); no effect-compartment delay was reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fei_2009`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

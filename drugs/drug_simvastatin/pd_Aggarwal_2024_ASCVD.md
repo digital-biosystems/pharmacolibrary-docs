@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives ASCVD events (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Simvastatin dose (not plasma concentration) acts on LDL-C reduction via a direct Emax dose-response model (baseline E0, ED50 as median dose achieving 50% LDL-C reduction, Emax as maximum LDL-C reduction), and the individual ED50/Emax estimates were related to time-to-event ASCVD events; the paper does not state the mechanism linking statin dose to ASCVD events nor give numeric potency values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

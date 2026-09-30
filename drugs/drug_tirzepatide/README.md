@@ -28,16 +28,16 @@ This drug has not been studied in patients with a history of pancreatitis. Tirze
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | — | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chigutsa_2025](drugs/drug_tirzepatide/pd_Chigutsa_2025_FAT.md) | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chigutsa_2025](drugs/drug_tirzepatide/pd_Chigutsa_2025_FFM.md) | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chigutsa_2025_FAT](drugs/drug_tirzepatide/pd_Chigutsa_2025_FAT.md) | fat mass ← tirzepatide · indirect response — drug inhibits the production of fat mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chigutsa_2025_FFM](drugs/drug_tirzepatide/pd_Chigutsa_2025_FFM.md) | fat-free mass ← tirzepatide · indirect response — drug inhibits the production of fat-free mass | — | Chigutsa E et al., A Pharmacometric Method for Quantitativ…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3750](https://doi.org/10.1002/cpt.3750) |
 
 ## Pharmacogenomics (PGx)
 

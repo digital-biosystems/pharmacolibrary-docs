@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Morpholine-containing vindoline derivatives (e.g., compounds 11, 12, 24) were tested at six concentrations (0.1–30 µM) for antiproliferative activity (MTT assay, 72 h) on HeLa, SiHa, MCF-7 and MDA-MB-231 cells, reported as IC50 values; the most potent was compound 24 with IC50 = 2.85 µM on SiHa cells, and compound 11 had IC50 = 6.01 µM on SiHa. The paper reports only IC50 endpoints and does not state a pharmacodynamic mechanism or model (no Imax, Emax, kin, kout or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Keglevich_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

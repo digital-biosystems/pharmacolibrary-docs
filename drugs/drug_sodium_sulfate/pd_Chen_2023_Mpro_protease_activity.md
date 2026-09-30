@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports in vitro inhibition of SARS-CoV-2 Mpro protease activity by screened natural-product compounds (including cholesteryl sodium sulfate), with inhibition rates measured at a single 80 μM screening dose and IC50 values derived by nonlinear regression of concentration–inhibition curves over a nM–mM range; the mechanism is direct inhibition of Mpro enzymatic activity (not an in vivo PD model), and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values specific to sodium sulfate are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,27 +30,27 @@ Chen J; Zhou X; Fu L; Xu H et al. (2023). Pharmaceuticals (Basel, Switzerland) 1
   ·  DOI: [10.3390/ph16050767](https://doi.org/10.3390/ph16050767)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Intestinal absorption (human) (% Absorbed) — Hematoxylin | `Q41` · not captured | 84.974 | % Absorbed | not captured | llm_corrected (not captured) | pharmaceuticals-16-00767-t001:row8:col1 |
-| Intestinal absorption (human) (% Absorbed) — Melanin | `Q40` · not captured | 99.755 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col2 |
-| Intestinal absorption (human) (% Absorbed) — Wedelolactone | `Q40` · not captured | 95.067 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col3 |
-| Intestinal absorption (human) (% Absorbed) — Ginkgolic Acid C15:1 | `Q40` · not captured | 88.537 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col4 |
-| Intestinal absorption (human) (% Absorbed) — β,β–Dimethylacrylalkannin | `Q40` · not captured | 63.844 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col5 |
-| Intestinal absorption (human) (% Absorbed) — Cholesteryl Sodium Sulfate | `Q40` · not captured | 100 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col6 |
-| Intestinal absorption (human) (% Absorbed) — (−)–Gallocatechin Gallate | `Q40` · not captured | 46.991 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col7 |
-| Fraction bound (%) (human) — Wedelolactone | `Q46` · not captured | 97.5 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col3 |
-| Fraction bound (%) (human) — Ginkgolic Acid C15:1 | `Q46` · not captured | 92.5 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col4 |
-| Fraction bound (%) (human) — β,β–Dimethylacrylalkannin | `Q46` · not captured | 79.6 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col5 |
-| Fraction bound (%) (human) — Cholesteryl Sodium Sulfate | `Q46` · not captured | 93.8 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col6 |
-| Fraction bound (%) (human) — (−)–Gallocatechin Gallate | `Q42` · not captured | 76.1 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col7 |
-| Total clearance (log mL/min/kg) — Hematoxylin | `Q22` · not captured | 0.046 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col1 |
-| Total clearance (log mL/min/kg) — Melanin | `Q22` · not captured | 0.521 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col2 |
-| Total clearance (log mL/min/kg) — Wedelolactone | `Q22` · not captured | 0.677 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col3 |
-| Total clearance (log mL/min/kg) — Ginkgolic Acid C15:1 | `Q22` · not captured | 1.59 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col4 |
-| Total clearance (log mL/min/kg) — β,β–Dimethylacrylalkannin | `Q22` · not captured | 0.402 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col5 |
-| Total clearance (log mL/min/kg) — Cholesteryl Sodium Sulfate | `Q22` · not captured | 0.685 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col6 |
-| Total clearance (log mL/min/kg) — (−)–Gallocatechin Gallate | `Q22` · not captured | 0.431 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — Hematoxylin | `Q41` · not captured | 84.974 | % Absorbed | not captured | llm_corrected (not captured) | pharmaceuticals-16-00767-t001:row8:col1 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — Melanin | `Q40` · not captured | 99.755 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col2 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — Wedelolactone | `Q40` · not captured | 95.067 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col3 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — Ginkgolic Acid C15:1 | `Q40` · not captured | 88.537 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col4 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — β,β–Dimethylacrylalkannin | `Q40` · not captured | 63.844 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col5 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — Cholesteryl Sodium Sulfate | `Q40` · not captured | 100 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col6 |
+| PK (driver) | Intestinal absorption (human) (% Absorbed) — (−)–Gallocatechin Gallate | `Q40` · not captured | 46.991 | % Absorbed | not captured | llm_confirmed (not captured) | pharmaceuticals-16-00767-t001:row8:col7 |
+| PK (driver) | Fraction bound (%) (human) — Wedelolactone | `Q46` · not captured | 97.5 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col3 |
+| PK (driver) | Fraction bound (%) (human) — Ginkgolic Acid C15:1 | `Q46` · not captured | 92.5 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col4 |
+| PK (driver) | Fraction bound (%) (human) — β,β–Dimethylacrylalkannin | `Q46` · not captured | 79.6 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col5 |
+| PK (driver) | Fraction bound (%) (human) — Cholesteryl Sodium Sulfate | `Q46` · not captured | 93.8 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col6 |
+| PK (driver) | Fraction bound (%) (human) — (−)–Gallocatechin Gallate | `Q42` · not captured | 76.1 | human | not captured | llm (not captured) | pharmaceuticals-16-00767-t001:row9:col7 |
+| PK (driver) | Total clearance (log mL/min/kg) — Hematoxylin | `Q22` · not captured | 0.046 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col1 |
+| PK (driver) | Total clearance (log mL/min/kg) — Melanin | `Q22` · not captured | 0.521 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col2 |
+| PK (driver) | Total clearance (log mL/min/kg) — Wedelolactone | `Q22` · not captured | 0.677 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col3 |
+| PK (driver) | Total clearance (log mL/min/kg) — Ginkgolic Acid C15:1 | `Q22` · not captured | 1.59 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col4 |
+| PK (driver) | Total clearance (log mL/min/kg) — β,β–Dimethylacrylalkannin | `Q22` · not captured | 0.402 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col5 |
+| PK (driver) | Total clearance (log mL/min/kg) — Cholesteryl Sodium Sulfate | `Q22` · not captured | 0.685 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col6 |
+| PK (driver) | Total clearance (log mL/min/kg) — (−)–Gallocatechin Gallate | `Q22` · not captured | 0.431 | log mL/min/kg | not captured | exact (not captured) | pharmaceuticals-16-00767-t001:row18:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

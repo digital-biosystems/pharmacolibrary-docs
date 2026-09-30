@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium bicarbonate drives sodium (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model: capillary blood sodium (Na+) was measured over 3 h after single oral NaHCO3 doses of 0.1, 0.2 and 0.3 g·kg−1 BM, with dose-dependent increases (Na+ AUC −48.7±195.7, 111.4±223.5 and 358.6±292.5 mmol·L−1·180min−1 for 0.1, 0.2 and 0.3 g·kg−1 BM respectively). No mechanism, Emax/IC50/EC50, kin/kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jones_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

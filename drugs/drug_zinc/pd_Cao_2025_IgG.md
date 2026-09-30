@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KJ103 drives IgG level (in g/L): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> KJ103 blood concentrations drive a fall in IgG levels (g/L), described by an effect-compartment model in which KJ103 inhibits IgG (enzymatic degradation), with IgG falling &gt;90% within 6 h at 0.25–0.40 mg/kg and recovering over 1–2 months; an IC50 (KJ103 concentration at half-maximal IgG inhibition) was identified as a model parameter and was influenced by gender, but the paper does not report its numeric value or an effect-compartment rate constant (ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cao_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -21,18 +31,18 @@ Cao M; Katial R; Liu Y; Lu X; Gu Q; Chen C; Liu K; Zhu Z; Marshall MR; Yu Y; Wan
   ·  DOI: [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cmax (ng/mL) — 50th | `Q32` · not captured | 5098.1 | ng/mL | not captured | exact (not captured) | Tab5:row2:col1 |
-| Cmax (ng/mL) — 10th | `Q32` · not captured | 4155.7 | ng/mL | not captured | exact (not captured) | Tab5:row2:col2 |
-| Cmax (ng/mL) — 90th | `Q32` · not captured | 6427.6 | ng/mL | not captured | exact (not captured) | Tab5:row2:col3 |
-| Cmax (ng/mL) — 10th/50th | `Q32` · not captured | 0.82 | ng/mL | not captured | exact (not captured) | Tab5:row2:col4 |
-| Cmax (ng/mL) — 90th/50th | `Q32` · not captured | 1.26 | ng/mL | not captured | exact (not captured) | Tab5:row2:col5 |
-| AUC0-168h (h*ng/mL) — 50th | `Q19` · not captured | 81095.3 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col1 |
-| AUC0-168h (h*ng/mL) — 10th | `Q19` · not captured | 93113.4 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col2 |
-| AUC0-168h (h*ng/mL) — 90th | `Q19` · not captured | 57493.2 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col3 |
-| AUC0-168h (h*ng/mL) — 10th/50th | `Q19` · not captured | 1.15 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col4 |
-| AUC0-168h (h*ng/mL) — 90th/50th | `Q19` · not captured | 0.71 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cmax (ng/mL) — 50th | `Q32` · not captured | 5098.1 | ng/mL | not captured | exact (not captured) | Tab5:row2:col1 |
+| PK (driver) | Cmax (ng/mL) — 10th | `Q32` · not captured | 4155.7 | ng/mL | not captured | exact (not captured) | Tab5:row2:col2 |
+| PK (driver) | Cmax (ng/mL) — 90th | `Q32` · not captured | 6427.6 | ng/mL | not captured | exact (not captured) | Tab5:row2:col3 |
+| PK (driver) | Cmax (ng/mL) — 10th/50th | `Q32` · not captured | 0.82 | ng/mL | not captured | exact (not captured) | Tab5:row2:col4 |
+| PK (driver) | Cmax (ng/mL) — 90th/50th | `Q32` · not captured | 1.26 | ng/mL | not captured | exact (not captured) | Tab5:row2:col5 |
+| PK (driver) | AUC0-168h (h*ng/mL) — 50th | `Q19` · not captured | 81095.3 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col1 |
+| PK (driver) | AUC0-168h (h*ng/mL) — 10th | `Q19` · not captured | 93113.4 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col2 |
+| PK (driver) | AUC0-168h (h*ng/mL) — 90th | `Q19` · not captured | 57493.2 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col3 |
+| PK (driver) | AUC0-168h (h*ng/mL) — 10th/50th | `Q19` · not captured | 1.15 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col4 |
+| PK (driver) | AUC0-168h (h*ng/mL) — 90th/50th | `Q19` · not captured | 0.71 | h*ng/mL | not captured | llm (not captured) | Tab5:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

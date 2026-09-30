@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for cleaved lamin; Hep2 cells were treated with CP-MgONPs at 20, 40, and 60 μg·mL−1 for 24 h and cleaved lamin was measured qualitatively by Western blotting, with no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0, or gamma values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

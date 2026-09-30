@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5F-MDMB-PICA drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model with rimonabant as the driver; rimonabant (0.01–0.1 mg/kg s.c., given 30 min before the SCRA) was used only as a CB1 antagonist in reversal studies of the mouse triad test. The measured response, analgesia expressed as %MPE, was driven by the s.c. dose of 5F-MDMB-PICA (0.001–30 mg/kg), which induced significant analgesia at 0.03, 0.1, and 0.3 mg/kg; no Emax/EC50 or turnover/kin-kout parameters for this in vivo analgesia effect are stated in the excerpts, and the mechanism beyond CB1 receptor agonism is not given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glatfelter_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives UV-B irradiation tolerance (in Jcm-2): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not model menadione concentration acting on UV-B LD50; UV-B tolerance is reported only as LD50 = 0.49 ± 0.02 versus 0.39 ± 0.01 Jcm-2 for the BbSod2-overexpressing versus wild-type strain, with no mechanism or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) given for that endpoint. Menadione (a superoxide generator) instead inhibits colony growth and conidial germination with EC50 = 2.41 ± 0.03 versus 1.25 ± 0.01 mM and 0.89 ± 0.06 versus 0.55 ± 0.07 mM, respectively, in BbSod2-transformed versus wild-type B. bassiana.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

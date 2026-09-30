@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Boron glycine monoester (measured concentrations) drives name (in ALP) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Boron glycine monoester (BGM) applied to U87MG glioblastoma cells for 48 hours inhibited alkaline phosphatase (ALP) enzyme activity, with a 48-hour IC50 of 6.6 mM; the paper does not state a specific PD mechanism (e.g., kin/kout or Emax parameters) beyond this inhibitory cytotoxic/enzyme effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koldemir-Gündüz_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

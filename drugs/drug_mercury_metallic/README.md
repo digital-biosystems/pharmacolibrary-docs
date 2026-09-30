@@ -16,9 +16,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sällsten_1994_reference](drugs/drug_mercury_metallic/MercuryMetallic_Sllsten1994_reference.md) | 1-compartment (no model) | 0 | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Sällsten_1994_reference](drugs/drug_mercury_metallic/MercuryMetallic_Sllsten1994_reference.md) | — | 1-compartment (no model) | 0 | Sällsten G et al., Clearance half life of mercury in urine…, Occupational and environmen… (1994) | [10.1136/oem.51.5.337](https://doi.org/10.1136/oem.51.5.337) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

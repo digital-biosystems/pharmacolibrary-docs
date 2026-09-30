@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amide 6 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amide 6 (µM concentrations) causes dose-dependent accumulation of ubiquitinated proteins in MM.1R cells (significant at 20 µM), consistent with inhibition of ubiquitinated protein degradation via non-covalent immunoproteasome inhibition (Ki 4.90 µM for β1i and 4.39 µM for β5i; EC50 17.8 µM against MM.1R cells). No PD model (e.g. Imax/IC50/kin/kout) is fitted for the ubiquitin accumulation response, and no mechanism beyond proteasome inhibition is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

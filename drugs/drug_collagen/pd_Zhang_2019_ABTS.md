@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PFGPD, PYGAKG, YGPM (measured concentrations) drive ABTS cation scavenging (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The collagen-derived peptides PFGPD, PYGAKG, and YGPM scavenge ABTS cation radical in a dose–effect fashion, with EC50 values of 0.86, 1.07, and 0.82 mg/mL, respectively (F7-P3 = PFGPD and F7-P8 = YGPM being the most potent); the paper does not state a pharmacodynamic mechanism or model (e.g., no Imax/IC50/kin/kout/ke0), only EC50 values from a linear concentration–scavenging-rate relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

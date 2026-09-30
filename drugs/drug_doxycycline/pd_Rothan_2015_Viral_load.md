@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxycycline (concentrations from the PK model of Altan_2024) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Doxycycline concentrations (μM) inhibit CHIKV replication (viral load) in Vero cells in a dose-dependent manner, with an EC50 of 10.95±2.12 μM (also reported as 15.51±1.62 μM in another assay); the paper does not state a formal PD model, but suggests inhibition of viral infectivity/entry (docking to viral cysteine protease and E2 envelope protein, docking energies -6.6±0.1 and -6.4±0.1 kcal/mol).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rothan_2015`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

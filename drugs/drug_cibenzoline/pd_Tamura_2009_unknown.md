@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiodarone (measured concentrations) drives HCN4 channel current (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cibenzoline concentration-dependently inhibits the HCN4 channel current (measured in HEK293 cells expressing HCN4, block assessed as percent inhibition of the current evoked by a hyperpolarizing pulse to -70 mV with cAMP in the pipette); the paper reports an IC50 of 46.8 µM but does not state a kinetic mechanism (e.g., kin/kout or effect-compartment) beyond direct channel block. Note: the record's driver compound (amiodarone) is inconsistent with the paper, which attributes this IC50 to cibenzoline.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tamura_2009`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Tamura A; Ogura T; Uemura H; Reien Y; Kishimoto T; Nagai T; et al. et al. (2009)
   ·  DOI: [10.1254/jphs.08312fp](https://doi.org/10.1254/jphs.08312fp)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (µM) | `Q322` · not captured | 78.3 | µM | not captured | exact (not captured) | tab_0:row2:col1 |
-| IC50 (µM) — Ia | `Q322` · not captured | 249 | µM | not captured | exact (not captured) | tab_0:row2:col2 |
-| IC50 (µM) | `Q322` · not captured | 46.8 | µM | not captured | exact (not captured) | tab_0:row2:col3 |
-| IC50 (µM) | `Q322` · not captured | 276 | µM | not captured | exact (not captured) | tab_0:row2:col4 |
-| IC50 (µM) — Ib | `Q322` · not captured | 309 | µM | not captured | exact (not captured) | tab_0:row2:col5 |
-| IC50 (µM) | `Q322` · not captured | 43.7 | µM | not captured | exact (not captured) | tab_0:row2:col6 |
-| IC50 (µM) — Ic | `Q322` · not captured | 14.3 | µM | not captured | exact (not captured) | tab_0:row2:col7 |
-| IC50 (µM) | `Q322` · not captured | 1700 | µM | not captured | exact (not captured) | tab_0:row2:col8 |
-| IC50 (µM) | `Q322` · not captured | 50.5 | µM | not captured | exact (not captured) | tab_0:row6:col1 |
-| IC50 (µM) — Ia | `Q322` · not captured | 4.5 | µM | not captured | exact (not captured) | tab_0:row6:col2 |
-| IC50 (µM) | `Q322` · not captured | 44.9 | µM | not captured | exact (not captured) | tab_0:row6:col4 |
-| IC50 (µM) — Ib | `Q322` · not captured | 4.9 | µM | not captured | exact (not captured) | tab_0:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 78.3 | µM | not captured | exact (not captured) | tab_0:row2:col1 |
+| PD (effect) | IC50 (µM) — Ia | `Q322` · not captured | 249 | µM | not captured | exact (not captured) | tab_0:row2:col2 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 46.8 | µM | not captured | exact (not captured) | tab_0:row2:col3 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 276 | µM | not captured | exact (not captured) | tab_0:row2:col4 |
+| PD (effect) | IC50 (µM) — Ib | `Q322` · not captured | 309 | µM | not captured | exact (not captured) | tab_0:row2:col5 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 43.7 | µM | not captured | exact (not captured) | tab_0:row2:col6 |
+| PD (effect) | IC50 (µM) — Ic | `Q322` · not captured | 14.3 | µM | not captured | exact (not captured) | tab_0:row2:col7 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 1700 | µM | not captured | exact (not captured) | tab_0:row2:col8 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 50.5 | µM | not captured | exact (not captured) | tab_0:row6:col1 |
+| PD (effect) | IC50 (µM) — Ia | `Q322` · not captured | 4.5 | µM | not captured | exact (not captured) | tab_0:row6:col2 |
+| PD (effect) | IC50 (µM) | `Q322` · not captured | 44.9 | µM | not captured | exact (not captured) | tab_0:row6:col4 |
+| PD (effect) | IC50 (µM) — Ib | `Q322` · not captured | 4.9 | µM | not captured | exact (not captured) | tab_0:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

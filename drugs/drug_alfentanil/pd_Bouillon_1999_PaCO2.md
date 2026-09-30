@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alfentanil (concentrations from the PK model of Medina-Aymerich_2025) drives arterial carbon dioxide pressure (in mmHg): indirect response — drug inhibits the production of arterial carbon dioxide pressure.
+
+**Model:** No model was generated from this record.
+
+> Alfentanil plasma concentrations (predicted from a two-compartment PK model) inhibit the elimination of carbon dioxide, raising arterial PaCO2 (mmHg), described by an indirect response model with a fractional Emax (Imax) effect form; the paper reports the Emax model was superior to a negative-slope model but the excerpts do not state the numeric Imax, EC50, kin, or kout values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bouillon_1999`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cabamiquine (measured concentrations) drives name (in parasites/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cabamiquine central compartment concentrations (ng/mL) drive parasite killing in a turnover (sigmoid Emax) model of blood-stage parasitemia (parasites/mL) in IBSM and SpzCh challenge studies, with an additional liver-stage EC50; the drug acts by stimulating parasite killing (kki) via an Emax function, with a delay rate constant kt = 0.030 /h handling the delayed onset of effect. Key potency estimates: EC50,b,IBSM = 7.60 ng/mL (RSE 10.2%), EC50,b,SpzCh = 1.29 ng/mL, and EC50,l = 0.66 ng/mL (RSE 19.9%), with baseline parasitemia P0 = 0.03 parasites/mL; the paper does not state Imax/Emax, kin, kout, ke0, or gamma values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Courlet_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,24 +30,24 @@ Courlet P; Wilkins JJ; Oeuvray C; Gao W; Khandelwal A et al. (2023). Antimicrobi
   ·  DOI: [10.1128/aac.00891-23](https://doi.org/10.1128/aac.00891-23)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline parasitemia (P0, parasites/mL)a — Estimate | `Q324` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | T1:row1:col1 |
-| EC50,b,IBSM (ng/mL) — Estimate | `Q321` · not captured | 7.60 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col1 |
-| EC50,b,IBSM (ng/mL) — Relative standard error (%) | `Q321` · not captured | 10.2 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col2 |
-| EC50,b,SpzCh (ng/mL)c — Estimate | `Q321` · not captured | 1.29 | ng/mL | not captured | llm_confirmed (not captured) | T1:row4:col1 |
-| EC50,l (ng/mL) — Estimate | `Q321` · not captured | 0.66 | ng/mL | not captured | exact (not captured) | T1:row5:col1 |
-| EC50,l (ng/mL) — Relative standard error (%) | `Q321` · not captured | 19.9 | ng/mL | not captured | exact (not captured) | T1:row5:col2 |
-| Delay rate constant (kt /h)a — Estimate | `Q47` · not captured | 0.030 | not captured | not captured | llm (not captured) | T1:row8:col1 |
-| IIV on P0a — Estimate | `Q312` · not captured | 197 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col1 |
-| IIV on kkia — Estimate | `Q312` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | T1:row15:col1 |
-| IIV on EC50,b,IBSM — Estimate | `Q312` · not captured | 45 | not captured | not captured | llm_corrected (not captured) | T1:row16:col1 |
-| IIV on EC50,b,IBSM — Relative standard error (%) | `Q321` · not captured | 16.8 | ng/mL | not captured | llm_confirmed (not captured) | T1:row16:col2 |
-| IIV on kgr,ba — Estimate | `Q312` · not captured | 12 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
-| IIV on kgr,la — Estimate | `Q312` · not captured | 11 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |
-| IIV on Fincb — Estimate | `Q312` · not captured | 14 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col1 |
-| Residual error [parasitemia, log(/mL)] — Estimate | `Q315` · not captured | 1.68 | not captured | not captured | llm (not captured) | T1:row21:col1 |
-| Residual error [parasitemia, log(/mL)] — Relative standard error (%) | `Q315` · not captured | 3.30 | not captured | not captured | llm (not captured) | T1:row21:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline parasitemia (P0, parasites/mL)a — Estimate | `Q324` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | T1:row1:col1 |
+| PD (effect) | EC50,b,IBSM (ng/mL) — Estimate | `Q321` · not captured | 7.60 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col1 |
+| PD (effect) | EC50,b,IBSM (ng/mL) — Relative standard error (%) | `Q321` · not captured | 10.2 | ng/mL | not captured | llm_confirmed (not captured) | T1:row3:col2 |
+| PD (effect) | EC50,b,SpzCh (ng/mL)c — Estimate | `Q321` · not captured | 1.29 | ng/mL | not captured | llm_confirmed (not captured) | T1:row4:col1 |
+| PD (effect) | EC50,l (ng/mL) — Estimate | `Q321` · not captured | 0.66 | ng/mL | not captured | exact (not captured) | T1:row5:col1 |
+| PD (effect) | EC50,l (ng/mL) — Relative standard error (%) | `Q321` · not captured | 19.9 | ng/mL | not captured | exact (not captured) | T1:row5:col2 |
+| PK (driver) | Delay rate constant (kt /h)a — Estimate | `Q47` · not captured | 0.030 | not captured | not captured | llm (not captured) | T1:row8:col1 |
+| variability | IIV on P0a — Estimate | `Q312` · not captured | 197 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col1 |
+| variability | IIV on kkia — Estimate | `Q312` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | T1:row15:col1 |
+| variability | IIV on EC50,b,IBSM — Estimate | `Q312` · not captured | 45 | not captured | not captured | llm_corrected (not captured) | T1:row16:col1 |
+| PD (effect) | IIV on EC50,b,IBSM — Relative standard error (%) | `Q321` · not captured | 16.8 | ng/mL | not captured | llm_confirmed (not captured) | T1:row16:col2 |
+| variability | IIV on kgr,ba — Estimate | `Q312` · not captured | 12 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
+| variability | IIV on kgr,la — Estimate | `Q312` · not captured | 11 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |
+| variability | IIV on Fincb — Estimate | `Q312` · not captured | 14 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col1 |
+| variability | Residual error [parasitemia, log(/mL)] — Estimate | `Q315` · not captured | 1.68 | not captured | not captured | llm (not captured) | T1:row21:col1 |
+| variability | Residual error [parasitemia, log(/mL)] — Relative standard error (%) | `Q315` · not captured | 3.30 | not captured | not captured | llm (not captured) | T1:row21:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

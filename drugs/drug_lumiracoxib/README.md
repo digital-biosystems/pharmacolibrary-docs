@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | general linear (no model) | 4 | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Vásquez-Bahena_2010_2_reference](drugs/drug_lumiracoxib/Lumiracoxib_VsquezBahena20102_reference.md) | — | general linear (no model) | 4 | Vásquez-Bahena DA et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of pharmaco… (2010) | [10.1111/j.1476-5381.2009.00508.x](https://doi.org/10.1111/j.1476-5381.2009.00508.x) |
 
 ## ADME sites
 

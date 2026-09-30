@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;tolazoline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tolazoline_Casbeer2013_reference&quot;,&quot;label&quot;:&quot;Casbeer_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # tolazoline
 
@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span> | [Casbeer_2013_reference](drugs/drug_tolazoline/Tolazoline_Casbeer2013_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Casbeer HC et al., Pharmacokinetics and pharmacodynamic ef…, Veterinary journal (London,… (2013) | [10.1016/j.tvjl.2012.12.006](https://doi.org/10.1016/j.tvjl.2012.12.006) |
 
 ## ADME sites
 

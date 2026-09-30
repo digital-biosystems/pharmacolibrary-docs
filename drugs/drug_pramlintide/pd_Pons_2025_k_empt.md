@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pramlintide drives gastric emptying rate (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Pramlintide plasma concentration drives a delayed inhibitory effect on gastric emptying: an effect-compartment (P_eff) with equilibration rate ka feeds a sigmoid Emax function h(P_eff)=n·P_eff^e/(d^e+P_eff^e), yielding a factor η between 0 and 1 that slows gastric emptying proportionally to pramlintide concentration. The paper does not state numeric potency values (Imax, IC50, EC50, Emax, gamma) or rate constants in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pons_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

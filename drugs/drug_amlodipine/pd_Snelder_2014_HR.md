@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive heart rate (in bpm): indirect response — drug inhibits the production of heart rate.
+
+**Model:** No model was generated from this record.
+
+> Amlodipine plasma concentrations act on heart rate (bpm) in the extended CVS turnover model, where HR is described by a turnover equation with zero-order production (Kin_HR) and first-order dissipation (kout_HR = 11.6 h⁻¹) linked to MAP, SV and TPR through negative feedback; the drug effect on HR is an Emax model with Emax fixed to 1 and EC50 = 82.8 ng mL⁻¹ (the record classifies it as an indirect response inhibition, and the excerpts do not state the mechanism beyond this Emax effect on the HR turnover equation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

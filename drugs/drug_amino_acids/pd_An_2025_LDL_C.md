@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rosuvastatin, ezetimibe drive LDL-C (in unknown): indirect response — drug inhibits the production of LDL-C.
+
+**Model:** No model was generated from this record.
+
+> An indirect response model describes LDL-C, with rosuvastatin and ezetimibe plasma concentrations additively inhibiting the LDL-C production rate (kin), while elimination (kout) is unaffected; Imax is fixed at 1 and the Hill coefficient at 1, and IC50 values for rosuvastatin and ezetimibe (concentrations giving 50% maximum inhibition of LDL-C production) are used, but their numeric values are not stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `An_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,54 +31,54 @@ An H; Shin D et al. (2025). Drug design, development and therapy 19
   ·  DOI: [10.2147/dddt.s522863](https://doi.org/10.2147/dddt.s522863)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka,R (h−1) — PK Model for Rosuvastatin | `Q49` · not captured | 0.21 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col1 |
-| ka,R (h−1) — PK Model for Rosuvastatin | `Q49` · not captured | 9.3 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col2 |
-| ka,R (h−1) — PK Model for Ezetimibe | `Q49` · not captured | 0.64 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col4 |
-| ka,R (h−1) — PK Model for Ezetimibe | `Q49` · not captured | 6.5 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col5 |
-| ka,R (h−1) — PD Model for LDL | `Q49` · not captured | 92.2 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col7 |
-| ka,R (h−1) — PD Model for LDL | `Q49` · not captured | 3.9 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col8 |
-| ClR (L/h) — PK Model for Rosuvastatin | `Q26` · not captured | 92.27 | L/h | not captured | exact (not captured) | t0002:row3:col1 |
-| ClR (L/h) — PK Model for Rosuvastatin | `Q26` · not captured | 8.5 | L/h | not captured | exact (not captured) | t0002:row3:col2 |
-| ClR (L/h) — PK Model for Ezetimibe | `Q26` · not captured | 20.04 | L/h | not captured | exact (not captured) | t0002:row3:col4 |
-| ClR (L/h) — PK Model for Ezetimibe | `Q26` · not captured | 6.7 | L/h | not captured | exact (not captured) | t0002:row3:col5 |
-| ClR (L/h) — PD Model for LDL | `Q26` · not captured | 1.9 | L/h | not captured | exact (not captured) | t0002:row3:col7 |
-| ClR (L/h) — PD Model for LDL | `Q26` · not captured | 22.2 | L/h | not captured | exact (not captured) | t0002:row3:col8 |
-| Vc,R (L) — PK Model for Rosuvastatin | `Q63` · not captured | 222.23 | L | not captured | llm_confirmed (not captured) | t0002:row4:col1 |
-| Vc,R (L) — PK Model for Rosuvastatin | `Q63` · not captured | 13.0 | L | not captured | llm_confirmed (not captured) | t0002:row4:col2 |
-| Vc,R (L) — PK Model for Ezetimibe | `Q63` · not captured | 31.98 | L | not captured | llm_confirmed (not captured) | t0002:row4:col4 |
-| Vc,R (L) — PK Model for Ezetimibe | `Q63` · not captured | 9.8 | L | not captured | llm_confirmed (not captured) | t0002:row4:col5 |
-| Vc,R (L) — PD Model for LDL | `Q63` · not captured | 4.6 | L | not captured | llm_confirmed (not captured) | t0002:row4:col7 |
-| Vc,R (L) — PD Model for LDL | `Q63` · not captured | 7.8 | L | not captured | llm_confirmed (not captured) | t0002:row4:col8 |
-| QR (L/h) — PK Model for Rosuvastatin | `Q30` · not captured | 24.16 | L/h | not captured | llm (not captured) | t0002:row5:col1 |
-| QR (L/h) — PK Model for Rosuvastatin | `Q30` · not captured | 12.9 | L/h | not captured | llm (not captured) | t0002:row5:col2 |
-| QR (L/h) — PK Model for Ezetimibe | `Q30` · not captured | 44.53 | L/h | not captured | llm (not captured) | t0002:row5:col4 |
-| QR (L/h) — PK Model for Ezetimibe | `Q30` · not captured | 8.9 | L/h | not captured | llm (not captured) | t0002:row5:col5 |
-| QR (L/h) — PD Model for LDL | `Q30` · not captured | 36.9 | L/h | not captured | llm (not captured) | t0002:row5:col7 |
-| QR (L/h) — PD Model for LDL | `Q30` · not captured | 11.8 | L/h | not captured | llm (not captured) | t0002:row5:col8 |
-| Vp,R (L) — PK Model for Rosuvastatin | `Q64` · not captured | 650.71 | L | not captured | llm_confirmed (not captured) | t0002:row6:col1 |
-| Vp,R (L) — PK Model for Rosuvastatin | `Q64` · not captured | 24.1 | L | not captured | llm_confirmed (not captured) | t0002:row6:col2 |
-| Vp,R (L) — PK Model for Ezetimibe | `Q64` · not captured | 363.06 | L | not captured | llm_confirmed (not captured) | t0002:row6:col4 |
-| Vp,R (L) — PK Model for Ezetimibe | `Q64` · not captured | 9.5 | L | not captured | llm_confirmed (not captured) | t0002:row6:col5 |
-| ωka,R — PK Model for Rosuvastatin | `Q49` · not captured | 29.21 | not captured | not captured | llm_confirmed (not captured) | t0002:row10:col1 |
-| ωka,R — PK Model for Rosuvastatin | `Q49` · not captured | 22.3 | not captured | not captured | llm_confirmed (not captured) | t0002:row10:col2 |
-| ωCLR — PK Model for Rosuvastatin | `Q26` · not captured | 43.52 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col1 |
-| ωCLR — PK Model for Rosuvastatin | `Q26` · not captured | 14.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col2 |
-| ωCLR — PK Model for Ezetimibe | `Q26` · not captured | 33.87 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col4 |
-| ωCLR — PK Model for Ezetimibe | `Q26` · not captured | 14.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col5 |
-| ωCLR — PD Model for LDL | `Q26` · not captured | 45.2 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col7 |
-| ωCLR — PD Model for LDL | `Q26` · not captured | 48.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col8 |
-| ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 43.62 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col4 |
-| ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 18.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col5 |
-| ωVc,R — PD Model for LDL | `Q63` · not captured | 38.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col7 |
-| ωVc,R — PD Model for LDL | `Q63` · not captured | 22.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col8 |
-| ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 46.13 | not captured | not captured | llm_confirmed (not captured) | t0002:row14:col4 |
-| ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 16.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row14:col5 |
-| ka,R – ClR — PK Model for Rosuvastatin | `Q26` · not captured | -0.87 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col1 |
-| ka,R – ClR — PK Model for Rosuvastatin | `Q26` · not captured | 13.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col2 |
-| ka,R – ClR — PK Model for Ezetimibe | `Q26` · not captured | 0.74 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col4 |
-| ka,R – ClR — PK Model for Ezetimibe | `Q26` · not captured | 15.7 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka,R (h−1) — PK Model for Rosuvastatin | `Q49` · not captured | 0.21 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col1 |
+| PK (driver) | ka,R (h−1) — PK Model for Rosuvastatin | `Q49` · not captured | 9.3 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col2 |
+| PK (driver) | ka,R (h−1) — PK Model for Ezetimibe | `Q49` · not captured | 0.64 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col4 |
+| PK (driver) | ka,R (h−1) — PK Model for Ezetimibe | `Q49` · not captured | 6.5 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col5 |
+| PK (driver) | ka,R (h−1) — PD Model for LDL | `Q49` · not captured | 92.2 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col7 |
+| PK (driver) | ka,R (h−1) — PD Model for LDL | `Q49` · not captured | 3.9 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0002:row2:col8 |
+| PK (driver) | ClR (L/h) — PK Model for Rosuvastatin | `Q26` · not captured | 92.27 | L/h | not captured | exact (not captured) | t0002:row3:col1 |
+| PK (driver) | ClR (L/h) — PK Model for Rosuvastatin | `Q26` · not captured | 8.5 | L/h | not captured | exact (not captured) | t0002:row3:col2 |
+| PK (driver) | ClR (L/h) — PK Model for Ezetimibe | `Q26` · not captured | 20.04 | L/h | not captured | exact (not captured) | t0002:row3:col4 |
+| PK (driver) | ClR (L/h) — PK Model for Ezetimibe | `Q26` · not captured | 6.7 | L/h | not captured | exact (not captured) | t0002:row3:col5 |
+| PK (driver) | ClR (L/h) — PD Model for LDL | `Q26` · not captured | 1.9 | L/h | not captured | exact (not captured) | t0002:row3:col7 |
+| PK (driver) | ClR (L/h) — PD Model for LDL | `Q26` · not captured | 22.2 | L/h | not captured | exact (not captured) | t0002:row3:col8 |
+| PK (driver) | Vc,R (L) — PK Model for Rosuvastatin | `Q63` · not captured | 222.23 | L | not captured | llm_confirmed (not captured) | t0002:row4:col1 |
+| PK (driver) | Vc,R (L) — PK Model for Rosuvastatin | `Q63` · not captured | 13.0 | L | not captured | llm_confirmed (not captured) | t0002:row4:col2 |
+| PK (driver) | Vc,R (L) — PK Model for Ezetimibe | `Q63` · not captured | 31.98 | L | not captured | llm_confirmed (not captured) | t0002:row4:col4 |
+| PK (driver) | Vc,R (L) — PK Model for Ezetimibe | `Q63` · not captured | 9.8 | L | not captured | llm_confirmed (not captured) | t0002:row4:col5 |
+| PK (driver) | Vc,R (L) — PD Model for LDL | `Q63` · not captured | 4.6 | L | not captured | llm_confirmed (not captured) | t0002:row4:col7 |
+| PK (driver) | Vc,R (L) — PD Model for LDL | `Q63` · not captured | 7.8 | L | not captured | llm_confirmed (not captured) | t0002:row4:col8 |
+| PK (driver) | QR (L/h) — PK Model for Rosuvastatin | `Q30` · not captured | 24.16 | L/h | not captured | llm (not captured) | t0002:row5:col1 |
+| PK (driver) | QR (L/h) — PK Model for Rosuvastatin | `Q30` · not captured | 12.9 | L/h | not captured | llm (not captured) | t0002:row5:col2 |
+| PK (driver) | QR (L/h) — PK Model for Ezetimibe | `Q30` · not captured | 44.53 | L/h | not captured | llm (not captured) | t0002:row5:col4 |
+| PK (driver) | QR (L/h) — PK Model for Ezetimibe | `Q30` · not captured | 8.9 | L/h | not captured | llm (not captured) | t0002:row5:col5 |
+| PK (driver) | QR (L/h) — PD Model for LDL | `Q30` · not captured | 36.9 | L/h | not captured | llm (not captured) | t0002:row5:col7 |
+| PK (driver) | QR (L/h) — PD Model for LDL | `Q30` · not captured | 11.8 | L/h | not captured | llm (not captured) | t0002:row5:col8 |
+| PK (driver) | Vp,R (L) — PK Model for Rosuvastatin | `Q64` · not captured | 650.71 | L | not captured | llm_confirmed (not captured) | t0002:row6:col1 |
+| PK (driver) | Vp,R (L) — PK Model for Rosuvastatin | `Q64` · not captured | 24.1 | L | not captured | llm_confirmed (not captured) | t0002:row6:col2 |
+| PK (driver) | Vp,R (L) — PK Model for Ezetimibe | `Q64` · not captured | 363.06 | L | not captured | llm_confirmed (not captured) | t0002:row6:col4 |
+| PK (driver) | Vp,R (L) — PK Model for Ezetimibe | `Q64` · not captured | 9.5 | L | not captured | llm_confirmed (not captured) | t0002:row6:col5 |
+| PK (driver) | ωka,R — PK Model for Rosuvastatin | `Q49` · not captured | 29.21 | not captured | not captured | llm_confirmed (not captured) | t0002:row10:col1 |
+| PK (driver) | ωka,R — PK Model for Rosuvastatin | `Q49` · not captured | 22.3 | not captured | not captured | llm_confirmed (not captured) | t0002:row10:col2 |
+| PK (driver) | ωCLR — PK Model for Rosuvastatin | `Q26` · not captured | 43.52 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col1 |
+| PK (driver) | ωCLR — PK Model for Rosuvastatin | `Q26` · not captured | 14.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col2 |
+| PK (driver) | ωCLR — PK Model for Ezetimibe | `Q26` · not captured | 33.87 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col4 |
+| PK (driver) | ωCLR — PK Model for Ezetimibe | `Q26` · not captured | 14.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col5 |
+| PK (driver) | ωCLR — PD Model for LDL | `Q26` · not captured | 45.2 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col7 |
+| PK (driver) | ωCLR — PD Model for LDL | `Q26` · not captured | 48.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row11:col8 |
+| PK (driver) | ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 43.62 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col4 |
+| PK (driver) | ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 18.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col5 |
+| PK (driver) | ωVc,R — PD Model for LDL | `Q63` · not captured | 38.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col7 |
+| PK (driver) | ωVc,R — PD Model for LDL | `Q63` · not captured | 22.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row12:col8 |
+| PK (driver) | ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 46.13 | not captured | not captured | llm_confirmed (not captured) | t0002:row14:col4 |
+| PK (driver) | ωVc,R — PK Model for Ezetimibe | `Q63` · not captured | 16.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row14:col5 |
+| PK (driver) | ka,R – ClR — PK Model for Rosuvastatin | `Q26` · not captured | -0.87 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col1 |
+| PK (driver) | ka,R – ClR — PK Model for Rosuvastatin | `Q26` · not captured | 13.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col2 |
+| PK (driver) | ka,R – ClR — PK Model for Ezetimibe | `Q26` · not captured | 0.74 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col4 |
+| PK (driver) | ka,R – ClR — PK Model for Ezetimibe | `Q26` · not captured | 15.7 | not captured | not captured | llm_confirmed (not captured) | t0002:row17:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

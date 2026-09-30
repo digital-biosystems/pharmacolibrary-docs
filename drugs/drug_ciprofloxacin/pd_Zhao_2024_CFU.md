@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ciprofloxacin, colistin (measured concentrations) drive bacterial counts (in cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ciprofloxacin (and colistin) concentrations (mg/L) act on bacterial counts (cfu/mL) in a sigmoid Emax kill model, where each drug contributes a concentration-dependent kill rate constant kDrug (EmaxCIP in /h for ciprofloxacin, with separate values for susceptible and resistant subpopulations) added to the bacterial growth/death dynamics; for the combination, interaction terms modifying Emax and/or EC50 of either drug were tested, but the excerpts do not report the numeric Emax, EC50 or Hill coefficient values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

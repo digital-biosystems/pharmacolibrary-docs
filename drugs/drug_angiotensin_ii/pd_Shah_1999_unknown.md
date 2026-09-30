@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives 3H-ouabain binding (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II dose-dependently stimulated specific 3H-ouabain binding to bovine adrenal zona glomerulosa cells (from ~6 to &gt;14 fmol/mg at 100 nmol/L Ang II) with an EC50 of ~1 nmol/L, acting via AT1 receptors (blocked by losartan) by increasing the binding affinity (apparent Kd from 205 to 79 nmol/L) without changing maximal binding sites (Bmax ~35.6–35.9 fmol/g protein); the paper does not state an Emax/Imax or kinetic parameters (kin, kout, ke0) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shah_1999`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

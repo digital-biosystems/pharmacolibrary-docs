@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GLP-1 drives HbA1c (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lixisenatide (GLP-1 receptor agonist) reduces HbA1c via GLP-1 receptor binding; efficacy was analyzed by receptor occupancy (Φ), with agonists acting at low occupancy (1.1–10.7% at usual dose; lixisenatide 20 µg Cmax 1.1 pM, fu 0.73). The Emax for HbA1c reduction of GLP-1 receptor agonists was 2.01%, and the paper does not state a specific Emax/IC50/kin/kout/ke0 model for lixisenatide itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Takayanagi_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ Takayanagi R; Uchida T; Kimura K; Yamada Y et al. (2018). Biological & pharmaceu
   ·  DOI: [10.1248/bpb.b17-00237](https://doi.org/10.1248/bpb.b17-00237)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Liraglutide — C max (pM) | `Q32` · not captured | 2511 | pM | not captured | llm (not captured) | tab_0:row1:col2 |
-| Exenatide — C max (pM) | `Q32` · not captured | 12.8 | pM | not captured | llm (not captured) | tab_0:row4:col2 |
-| Lixisenatide 20 µg a) — C max (pM) | `Q32` · not captured | 1.1 | pM | not captured | llm (not captured) | tab_0:row7:col2 |
-| Lixisenatide 20 µg a) — f u | `Q46` · not captured | 0.73 | not captured | not captured | llm (not captured) | tab_0:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Liraglutide — C max (pM) | `Q32` · not captured | 2511 | pM | not captured | llm (not captured) | tab_0:row1:col2 |
+| PK (driver) | Exenatide — C max (pM) | `Q32` · not captured | 12.8 | pM | not captured | llm (not captured) | tab_0:row4:col2 |
+| PK (driver) | Lixisenatide 20 µg a) — C max (pM) | `Q32` · not captured | 1.1 | pM | not captured | llm (not captured) | tab_0:row7:col2 |
+| PK (driver) | Lixisenatide 20 µg a) — f u | `Q46` · not captured | 0.73 | not captured | not captured | llm (not captured) | tab_0:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

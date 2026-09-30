@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DNL343 (measured concentrations) drives ATF4 protein (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> DNL343 (an eIF2B activator) concentration-dependently inhibits ATF4 protein levels in NaAsO2-stimulated PBMCs ex vivo; the mechanism is suppression of the integrated stress response downstream of eIF2α phosphorylation (p-eIF2α levels were unchanged), i.e. inhibition of ATF4 production/signaling rather than direct Emax on ATF4 itself. The paper reports &gt;50% inhibition of ATF4 protein at all MAD dose levels 24 h post-dose and reductions at SAD doses ≥45 mg through 48 h returning toward baseline by 168 h, but does not state Imax, IC50/EC50, kin, kout, ke0 or gamma values for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Flores_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

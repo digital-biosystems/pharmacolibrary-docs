@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GABA drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> GABA concentration drives peak whole-cell current amplitude of GABA_A receptors (α1β2γ2s) expressed in HEK293 cells via direct agonist activation (concentration-response; no kinetic/turnover model given). EC50 values were 51.6 ± 14.6 µM for WT, 144 ± 26.0 µM for IL-BAC, and 660 ± 172 µM for IL-7K α1 subunit constructs (n = 6), with no change in Hill slope but increased maximal current magnitude (~2-fold for IL-7K and ~3-fold for IL-BAC).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `OToole_2011`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -19,10 +29,10 @@
 not matched (stem OToole_2011)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| n — K337E | `Q339` · not captured | 11 | not captured | not captured | llm (not captured) | tab_0:row3:col15 |
-| n — K337E | `Q339` · not captured | 9 | not captured | not captured | llm (not captured) | tab_0:row8:col15 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | n — K337E | `Q339` · not captured | 11 | not captured | not captured | llm (not captured) | tab_0:row3:col15 |
+| PD (effect) | n — K337E | `Q339` · not captured | 9 | not captured | not captured | llm (not captured) | tab_0:row8:col15 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

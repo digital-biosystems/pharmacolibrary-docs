@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Glusa_1996](drugs/drug_pizotifen/pd_Glusa_1996_unknown.md) | Glusa E et al., Endothelial 5-HT receptors mediate rela…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15990.x](https://doi.org/10.1111/j.1476-5381.1996.tb15990.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Glusa_2000](drugs/drug_pizotifen/pd_Glusa_2000_unknown.md) | Glusa E et al., Further evidence that 5-HT-induced rela…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703341](https://doi.org/10.1038/sj.bjp.0703341) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Glusa_1996_unknown](drugs/drug_pizotifen/pd_Glusa_1996_unknown.md) | arterial relaxation ← ergotamine · stimulation effect | — | Glusa E et al., Endothelial 5-HT receptors mediate rela…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15990.x](https://doi.org/10.1111/j.1476-5381.1996.tb15990.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Glusa_2000_unknown](drugs/drug_pizotifen/pd_Glusa_2000_unknown.md) | relaxation ← 5-HT · direct Emax (saturable) effect | — | Glusa E et al., Further evidence that 5-HT-induced rela…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703341](https://doi.org/10.1038/sj.bjp.0703341) |
 
 ## ADME sites
 

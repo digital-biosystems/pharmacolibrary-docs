@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The fluorouracil record was rejected because its central volume V1 of 0.18 L and clearance CL of 256 L/h fall outside physiological plausibility, suggesting a unit or scale extraction error, and metabolites 5FUH2 and 5FDHU are unlinked.**

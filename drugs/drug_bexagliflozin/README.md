@@ -36,6 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
 | absorption | stomach | <sub>“…iflozin is taken after a meal or with medications that slow gastric emptying. Between sing…”</sub> | prose |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP2D6` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A9` substrate | DrugBank actor |

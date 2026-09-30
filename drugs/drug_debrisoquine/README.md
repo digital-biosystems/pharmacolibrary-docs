@@ -35,6 +35,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |

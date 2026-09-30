@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bioinspired magnesium oxide nanoparticles (measured concentrations) drives protein denaturation inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a protein denaturation assay, bioinspired MgO–neem nanoparticles (and comparators MgO NPs, neem extract, diclofenac sodium) inhibited protein denaturation in a concentration-dependent manner (% inhibition vs concentration in μg/mL), with IC50 values of 6.66 μg/mL (MgO–neem NPs), 102.44 μg/mL (MgO NPs), 48.56 μg/mL (neem extract), and 20.56 μg/mL (diclofenac sodium standard); the paper does not state a pharmacodynamic model or mechanism beyond attributing the anti-inflammatory effect to the nanoparticles' phenolic/flavonoid phytochemical content.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Harbi_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

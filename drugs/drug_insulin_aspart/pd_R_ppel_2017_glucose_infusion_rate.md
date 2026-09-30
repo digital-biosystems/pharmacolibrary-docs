@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin drives name (in mg/kg/min): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Exogenous insulin (TI or RHI, mU/L) drives glucose infusion rate (GIR, mg/kg/min) via a population PK/PD model in which insulin concentrations from an effect compartment act on GIR through an Emax model; the paper does not report numeric values for Emax, EC50, ke0, or slope. A separate dose–GIRAUC model (ED50/Emax) was fitted to simulated GIR AUCs, giving an ED50 for TI about 5-fold higher than for RHI.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rüppel_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

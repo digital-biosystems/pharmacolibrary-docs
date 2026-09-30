@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives cognitive decline (in seconds): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not actually describe sodium citrate; the active compound is A36 (compound 82), whose brain/plasma concentrations (μM) are linked to reduced cognitive decline in tauopathy PS19 mice. Mechanistically, A36 is a protein-protein interaction stabilizer that enhances CAST–calpain-2 binding, prevents CAST degradation, and thereby limits calpain-2 activation and mitochondrial damage; the paper does not report an Emax/IC50/EC50, kin, kout, or ke0 for the Barnes maze escape latency response (EC50 values of ~2.77 μM TMRM, ~1.55 μM MTT, and ~3.55 μM CAST up-regulation relate to in vitro endpoints, not cognition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

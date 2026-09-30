@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GCG-NH2 drives GCGR internalization (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe a pharmacodynamic model of trypsin acting on GCGR internalization; they only report that glucagon analogues G1–G3 stimulate GCGR internalization in HEK293 cells with lower efficacy than glucagon (EC50 values in Table 2, not given in the excerpts), and give cAMP EC50s (e.g. G3: 1.1 nM, ~11-fold higher than glucagon). No mechanism, Imax/IC50/Emax/kin/kout/ke0 values for trypsin on internalization are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gibadullin_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

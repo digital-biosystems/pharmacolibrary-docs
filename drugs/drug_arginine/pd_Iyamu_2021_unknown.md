@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** II757 (measured concentrations) drives H4R3me2a level (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> II757 (µM concentrations) reduces the H4R3me2a level in HEK293 cells after 48 h treatment, with a decrease observed at 10 µM; the mechanism is inhibition of PRMT-catalysed methylation (II757 is a SAM-competitive PRMT1 inhibitor, enzymatic IC50 5–555 nM across PRMTs, 5 nM for PRMT4). The paper does not report a pharmacodynamic model or parameters such as Imax, IC50 for the cellular effect, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iyamu_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

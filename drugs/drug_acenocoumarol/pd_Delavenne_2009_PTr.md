@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acenocoumarol (concentrations from this paper's PK model) drives Prothrombin time ratio (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Acenocoumarol plasma concentrations (mg/L) inhibit the production of clotting factors (CF) in a turnover model (dCF/dt = Kin·(1 − Cp^c/(Cp^c + C50^c)) − Kout·CF), with PTr linked to CF by a nested Emax function (PTr = PTr0·CF^k/(CF50^k + CF^k)); the paper does not report numerical values for Kin, Kout, C50, CF50, c, or k in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Delavenne_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

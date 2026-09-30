@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lead acetate (measured concentrations) drives detrusor muscle contraction (in g tension) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In rats given lead acetate subacutely (3 or 30 mg/kg ip, 21 days), the high dose (30 mg/kg) inhibited ATP (10−7–10−4 M)-induced contraction of isolated detrusor muscle (measured as g tension), with a maximum inhibition of 57.45 ± 0.23% at 10−4 M ATP, and also shifted the isoprenaline-induced relaxation curve upward with a significant decrease in EMAX. The paper does not report a formal PD model or potency/rate parameters (no IC50, Imax, kin, kout, ke0, or gamma values) for this effect, and the mechanism is not quantitatively characterized, though lead is suggested to interfere with muscarinic signaling and nitric oxide pathways.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taha_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Taha SS; Daabees TT; Aly RG; Senbel AM et al. (2022). Saudi pharmaceutical journ
   ·  DOI: [10.1016/j.jsps.2022.01.012](https://doi.org/10.1016/j.jsps.2022.01.012)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

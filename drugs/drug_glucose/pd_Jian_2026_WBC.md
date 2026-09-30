@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pegbing® (peginterferon alfa-2b) drives White blood cell (in unknown): indirect response — drug inhibits the loss of White blood cell.
+
+**Model:** No model was generated from this record.
+
+> Pegbing® (peginterferon alfa-2b) concentrations inhibit white blood cell (WBC) counts via an indirect response model (inhibition of production) fitted sequentially to the PopPK-predicted exposure. Key parameters: CHB patients MTT 279 h, Emax 0.197, EC50 4010 pg/mL (IIV EC50 79.2% CV); extrapolated ET patients MTT 212 h, Emax 0.0952, EC50 1940 pg/mL (IIV EC50 129.2% CV).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jian_2026`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,26 +30,26 @@ Jian W; Yin Y; Chen R; Xue J; Gu J; Du Z; He R; Zhou T et al. (2026). Clinical p
   ·  DOI: [10.1002/cpt.70079](https://doi.org/10.1002/cpt.70079)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MTT (h) — Estimate | `Q81` · not captured | 279 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row4:col1 |
-| MTT (h) — Bootstrap | `Q81` · not captured | 279 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row4:col4 |
-| E max — Estimate | `Q320` · not captured | 0.197 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row6:col1 |
-| E max — Bootstrap | `Q320` · not captured | 0.196 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row6:col4 |
-| EC50 (pg/mL) — Estimate | `Q321` · not captured | 4010 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row7:col1 |
-| EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 3971 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row7:col4 |
-| IIV EC50 (CV%) — Estimate | `Q100` · not captured | 79.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col1 |
-| IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 78.3 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col4 |
-| RUVprop (%) — Estimate | `Q316` · not captured | 17.0 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row10:col1 |
-| MTT (h) — Estimate | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col1 |
-| MTT (h) — Bootstrap | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col4 |
-| E max — Estimate | `Q320` · not captured | 0.0952 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row15:col1 |
-| E max — Bootstrap | `Q320` · not captured | 0.0962 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row15:col4 |
-| EC50 (pg/mL) — Estimate | `Q321` · not captured | 1940 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row16:col1 |
-| EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 2048 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row16:col4 |
-| IIV EC50 (CV%) — Estimate | `Q100` · not captured | 129.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col1 |
-| IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 126.9 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col4 |
-| RUVprop (%) — Estimate | `Q316` · not captured | 19.3 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row19:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 279 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row4:col1 |
+| PK (driver) | MTT (h) — Bootstrap | `Q81` · not captured | 279 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row4:col4 |
+| PD (effect) | E max — Estimate | `Q320` · not captured | 0.197 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row6:col1 |
+| PD (effect) | E max — Bootstrap | `Q320` · not captured | 0.196 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row6:col4 |
+| PD (effect) | EC50 (pg/mL) — Estimate | `Q321` · not captured | 4010 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row7:col1 |
+| PD (effect) | EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 3971 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row7:col4 |
+| — | IIV EC50 (CV%) — Estimate | `Q100` · not captured | 79.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col1 |
+| — | IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 78.3 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row9:col4 |
+| variability | RUVprop (%) — Estimate | `Q316` · not captured | 17.0 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row10:col1 |
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col1 |
+| PK (driver) | MTT (h) — Bootstrap | `Q81` · not captured | 212 | h | not captured | exact (not captured) | cpt70079-tbl-0002:row13:col4 |
+| PD (effect) | E max — Estimate | `Q320` · not captured | 0.0952 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row15:col1 |
+| PD (effect) | E max — Bootstrap | `Q320` · not captured | 0.0962 | not captured | not captured | space_fold (not captured) | cpt70079-tbl-0002:row15:col4 |
+| PD (effect) | EC50 (pg/mL) — Estimate | `Q321` · not captured | 1940 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row16:col1 |
+| PD (effect) | EC50 (pg/mL) — Bootstrap | `Q321` · not captured | 2048 | pg/mL | not captured | exact (not captured) | cpt70079-tbl-0002:row16:col4 |
+| — | IIV EC50 (CV%) — Estimate | `Q100` · not captured | 129.2 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col1 |
+| — | IIV EC50 (CV%) — Bootstrap | `Q100` · not captured | 126.9 | not captured | not captured | nil (not captured) | cpt70079-tbl-0002:row18:col4 |
+| variability | RUVprop (%) — Estimate | `Q316` · not captured | 19.3 | not captured | not captured | llm (not captured) | cpt70079-tbl-0002:row19:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

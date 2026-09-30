@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban (concentrations from this paper's PK model) drives anti-factor Xa (in IU/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Edoxaban plasma concentrations (ng/mL) directly increase anti-factor Xa activity (IU/mL) via a direct Emax model (no effect-compartment or turnover mechanism described), with Emax 8.65 IU/mL and EC50 631 ng/mL (EC50 possibly inaccurate due to sparse data above 500 ng/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zou_2025`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -21,14 +31,14 @@ Zou P; Atluri A; Chang P; Goedecke M; Leil TA et al. (2025). CPT: pharmacometric
   ·  DOI: [10.1002/psp4.13248](https://doi.org/10.1002/psp4.13248)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Apparent clearance, CL/F (L/h) a — Estimate | `Q27` · not captured | 42.87 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row1:col1 |
-| Absorption rate constant, Ka (1/h) — Estimate | `Q49` · not captured | 3.71 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row2:col1 |
-| Apparent central compartment volume, Vc/F (L) — Estimate | `Q290` · not captured | 261 | L | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row3:col1 |
-| Apparent inter‐compartmental clearance, Q/F (L/h) — Estimate | `Q69` · not captured | 8.59 | L/h | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row4:col1 |
-| Apparent peripheral compartment volume, Vp/F (L) — Estimate | `Q82` · not captured | 343.5 | L | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row5:col1 |
-| Transit rate constant, Ktr (1/h) — Estimate | `Q306` · not captured | 47.5 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row6:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Apparent clearance, CL/F (L/h) a — Estimate | `Q27` · not captured | 42.87 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row1:col1 |
+| PK (driver) | Absorption rate constant, Ka (1/h) — Estimate | `Q49` · not captured | 3.71 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row2:col1 |
+| PK (driver) | Apparent central compartment volume, Vc/F (L) — Estimate | `Q290` · not captured | 261 | L | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row3:col1 |
+| PK (driver) | Apparent inter‐compartmental clearance, Q/F (L/h) — Estimate | `Q69` · not captured | 8.59 | L/h | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row4:col1 |
+| PK (driver) | Apparent peripheral compartment volume, Vp/F (L) — Estimate | `Q82` · not captured | 343.5 | L | not captured | llm_corrected (not captured) | psp413248-tbl-0001:row5:col1 |
+| PK (driver) | Transit rate constant, Ktr (1/h) — Estimate | `Q306` · not captured | 47.5 | not captured | not captured | llm_confirmed (not captured) | psp413248-tbl-0001:row6:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

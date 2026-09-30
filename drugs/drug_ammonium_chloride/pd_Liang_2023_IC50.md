@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** C12-En-C12 and C12-Bm-C12 drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Surfactants C12-En-C12 (n = 2, 4, 6) and C12-Bm-C12 (m = 1, 2), plus monomer DTAC, inhibit HeLa cell viability (CCK8 assay), with IC50 values of 36.34, 29.36 and 21.01 μmol·L−1 for C12-E2-C12, C12-E4-C12 and C12-E6-C12, 14.55 and 12.75 μmol·L−1 for C12-B1-C12 and C12-B2-C12, and 5.04 μmol·L−1 for DTAC; the paper does not state a pharmacodynamic model or mechanism beyond this concentration–viability inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Liang Y; Li H; Ji J; Wang J; Ji Y et al. (2023). Molecules (Basel, Switzerland) 
   ·  DOI: [10.3390/molecules28145469](https://doi.org/10.3390/molecules28145469)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μmol·L−1) — C12-E2-C12 | `Q322` · not captured | 36.34 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col1 |
-| IC50 (μmol·L−1) — C12-E4-C12 | `Q322` · not captured | 29.36 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col2 |
-| IC50 (μmol·L−1) — C12-E6-C12 | `Q322` · not captured | 21.01 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col3 |
-| IC50 (μmol·L−1) — C12-B1-C12 | `Q322` · not captured | 14.55 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col4 |
-| IC50 (μmol·L−1) — C12-B2-C12 | `Q322` · not captured | 12.75 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col5 |
-| IC50 (μmol·L−1) — DTAC | `Q322` · not captured | 5.04 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μmol·L−1) — C12-E2-C12 | `Q322` · not captured | 36.34 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col1 |
+| PD (effect) | IC50 (μmol·L−1) — C12-E4-C12 | `Q322` · not captured | 29.36 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col2 |
+| PD (effect) | IC50 (μmol·L−1) — C12-E6-C12 | `Q322` · not captured | 21.01 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col3 |
+| PD (effect) | IC50 (μmol·L−1) — C12-B1-C12 | `Q322` · not captured | 14.55 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col4 |
+| PD (effect) | IC50 (μmol·L−1) — C12-B2-C12 | `Q322` · not captured | 12.75 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col5 |
+| PD (effect) | IC50 (μmol·L−1) — DTAC | `Q322` · not captured | 5.04 | μmol·L−1 | not captured | exact (not captured) | molecules-28-05469-t003:row1:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

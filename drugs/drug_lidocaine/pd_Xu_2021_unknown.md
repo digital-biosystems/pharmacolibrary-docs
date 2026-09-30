@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sufentanil (the dose) drives endotracheal intubation reflex (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Sufentanil dose (μg/kg, intravenous) acts on the binary endotracheal intubation reflex response in patients receiving lidocaine aerosol inhalation; the paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0), only an EC50 of 0.232 μg/kg (95% CI 0.187–0.270) and EC95 of 0.447 μg/kg (95% CI 0.364–0.703) estimated by Dixon's up-down method and probit regression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2021`
 - **model family:** `categorical`
 - **driver:** `dose_only`
@@ -21,9 +31,9 @@ Xu Q; Zhou Z; Ai L; Liu J; Tian X et al. (2021). BMC anesthesiology 21
   ·  DOI: [10.1186/s12871-021-01367-w](https://doi.org/10.1186/s12871-021-01367-w)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 of sufentanil with aerosol inhalation of lidocaine for endotracheal intubation | `Q321` · not captured | 0.232 | μg/kg | not captured | review_gapfill (not captured) | Xu_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 of sufentanil with aerosol inhalation of lidocaine for endotracheal intubation | `Q321` · not captured | 0.232 | μg/kg | not captured | review_gapfill (not captured) | Xu_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

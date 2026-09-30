@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | 1-compartment, oral | 2 | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Jing_2023_reference](drugs/drug_perampanel/Perampanel_Jing2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Jing S et al., A Single- and Multiple-Dose Pharmacokin…, Clinical drug investigation (2023) | [10.1007/s40261-022-01241-8](https://doi.org/10.1007/s40261-022-01241-8) |
 
 ## ADME sites
 

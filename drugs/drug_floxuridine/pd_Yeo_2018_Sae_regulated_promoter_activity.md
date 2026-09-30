@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Floxuridine (concentrations from the PK model of Port_1999) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for floxuridine; it only reports that floxuridine inhibits Sae-regulated promoter activity and protects human neutrophils from S. aureus-mediated killing (IC50 0.2 μM), without stating a mechanism or potency values for the promoter assay.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yeo_2018`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

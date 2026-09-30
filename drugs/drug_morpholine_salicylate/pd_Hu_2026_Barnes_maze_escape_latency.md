@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives cognitive decline (in seconds): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for the Barnes maze escape latency response; it only states qualitatively that A36 (morpholine salicylate, compound 82) treatment lowered cognitive decline in tauopathy PS19 mice. Mechanistically, A36 acts as a protein-protein interaction stabilizer that enhances CAST–calpain-2 binding, prevents CAST degradation, and thereby limits calpain-2 activation and mitochondrial damage; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for the cognitive endpoint (EC50 values of ~2.77 μM TMRM, ~1.55 μM MTT, and ~3.55 μM CAST up-regulation pertain to in vitro assays, not the Barnes maze).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

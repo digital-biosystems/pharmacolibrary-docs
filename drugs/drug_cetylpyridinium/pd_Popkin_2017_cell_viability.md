@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives name (in neutral red uptake) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride (CPC) acts directly on influenza virus by disrupting the viral lipid envelope (a physicochemical virucidal mechanism, independent of viral proteins), with virucidal activity measured by neutral red uptake cell viability; EC50 values were 5–12.5 μg/mL for susceptible strains and 8 μg/mL for both oseltamivir-resistant influenza A and B. No Imax, kin, kout, ke0, or gamma values are given, and no formal PD model is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Popkin_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

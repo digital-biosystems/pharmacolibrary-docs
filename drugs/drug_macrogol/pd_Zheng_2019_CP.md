@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives G2/M cell population (in unknown): indirect response — drug inhibits the production of G2/M cell population.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (PTX, delivered in PLGA-PEG micelles, 20 and 40 ng/mL) stimulates tubulin polymerization, which in turn enhances the G2/M cell population (cell cycle arrest) in MCF-7 cells; the drug-to-response link was described with a hypothetical effect compartment to capture the ~5 h distribution delay, but the paper does not state the specific PD parameter values (e.g., Emax, EC50, ke0) for the G2/M response in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

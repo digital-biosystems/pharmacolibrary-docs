@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** E-TGN and E-MTX drive name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> In this PKPD model of 6-mercaptopurine (with methotrexate) maintenance therapy in childhood ALL, erythrocyte thioguanine nucleotide (E-TGN) and E-MTX concentrations drive an indirect-response (inhibition) model of absolute neutrophil count (ANC), with proportional inhibition of ANC production; the paper does not state Imax, IC50, kin, or kout values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gebhard_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

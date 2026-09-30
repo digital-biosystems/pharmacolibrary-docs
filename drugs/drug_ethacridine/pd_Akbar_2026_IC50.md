@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethacridine lactate (EL) concentrations (serial two-fold dilutions, 6.25–200 µg/mL) were tested in a broth microdilution assay against E. coli K1, S. enterica and S. pneumoniae, with inhibition quantified as optical density at 600 nm after 18–24 h at 37 °C; the paper reports dose-dependent inhibition (91.96% for E. coli K1, 73.05% for S. enterica, 83.34% for S. pneumoniae) but does not state the EL IC50 value or any mechanism of action, and no Imax, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Docosahexaenoic acid drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal pharmacodynamic model or mechanism; it describes a dose–response of the Omega-3 Index (% of RBC fatty acids, sum of EPA and DHA) to oral DHA supplementation at 2, 4, or 6 g·d−1 over 27 wk, with each dose producing a distinct, progressively higher plateau of O3I (stimulation, no saturation up to 6 g·d−1). No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lust_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zafirlukast (measured concentrations) drives name (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Montelukast inhibits soluble epoxide hydrolase (sEH) activity, measured as conversion of deuterated 14,15-EET to 14,15-DHET in HEP-G2 cell preparations (it was excluded from the recombinant sEH/PHOME fluorescent assay due to autofluorescence); the paper states an IC50 in the nanomolar to low micromolar range but does not give the exact numeric value for montelukast (zafirlukast's IC50 was 1.97 ± 0.08 μM in the recombinant assay).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Göbel_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

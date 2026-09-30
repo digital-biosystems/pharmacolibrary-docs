@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Evacetrapib drives LDL-C (in % change from baseline): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Evacetrapib exposure (AUC, ng•hour/ml) drives percent change from baseline in LDL-C via an Emax relationship (Eq. 3: Emax × EAUC/(AUC50 + AUC)), consistent with its mechanism of CETP inhibition, with an additive statin component (simvastatin) included in the model (STAT term in Eq. 2). The excerpts do not report numerical values for Emax, AUC50, or other model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Friedrich_2014`
 - **model family:** `emax`
 - **driver:** `not_resolved`

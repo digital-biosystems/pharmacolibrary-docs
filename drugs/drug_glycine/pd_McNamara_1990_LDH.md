@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NMDA (measured concentrations) drives LDH release (in % of total LDH): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Glycine (added to the NMDA exposure solution) potentiates NMDA-induced LDH release (% of total LDH) in rat cortical neurons, with a sigmoid Emax relationship: EC50 27 µM (95% CI 15–31 µM; n = 13) and a maximum effect of doubling the NMDA neurotoxicity; glycine alone (1 mM) was ineffective. The paper states the potentiation is not via the glycine recognition site of the NMDA receptor but via activation of the strychnine-sensitive 'inhibitory' glycine receptor; no kin/kout or effect-compartment parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McNamara_1990`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

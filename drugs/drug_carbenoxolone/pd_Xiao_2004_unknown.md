@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cortisol (measured concentrations) drives uterine artery contraction (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carbenoxolone, an 11β-hydroxysteroid dehydrogenase inhibitor, was applied to isolated uterine arteries treated with cortisol (10 ng/ml for 24 h) to test its role in potentiating norepinephrine-induced contractions; it abolished the cortisol effect in pregnant (but not nonpregnant) hypoxic uterine arteries by increasing norepinephrine pD2 (−log EC50) in control tissues. The paper does not report a quantitative PD model or parameters (Imax, IC50, Emax, kin, kout, ke0) for carbenoxolone, and no mechanism beyond 11β-HSD inhibition is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiao_2004`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

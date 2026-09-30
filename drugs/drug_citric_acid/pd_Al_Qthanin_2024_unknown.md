@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Avena fatua leachates drives Triticum aestivum root length (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide full-text excerpts, so the mechanism linking Avena fatua leachate concentrations (g/100 ml) to inhibition of Triticum aestivum root length cannot be stated; the record indicates only a sigmoid Emax-type inhibitory model, with no potency or rate values available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Qthanin_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

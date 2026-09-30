@@ -26,16 +26,16 @@ Vestronidase alfa was FDA-approved on November 17th, 2017 under the trade name M
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) | 2-compartment (no model) | 4 | Qi (2019) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) | — | 2-compartment (no model) | 4 | Qi (2019) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019](drugs/drug_vestronidase_alfa/pd_Qi_2019_uCS.md) | Qi (2019) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019](drugs/drug_vestronidase_alfa/pd_Qi_2019_uDS.md) | Qi (2019) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019_uCS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019_uDS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
 
 ## ADME sites
 

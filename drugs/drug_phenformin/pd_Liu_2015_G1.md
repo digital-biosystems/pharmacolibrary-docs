@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenformin (measured concentrations) drives G1 phase percentage (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin concentrations (0–4 mM, 24 h exposure) increase the G1 phase percentage in breast cancer cells (MCF7, ZR-75-1, MDA-MB-231, SUM1315), with each cell line treated at its own IC50 for growth inhibition (1.184, 0.665, 2.347, and 1.885 mM, respectively), yielding G1 percentages of 67.7%, 35.9%, 29.5%, and 54.4%; the paper does not state a formal PD model or parameters (Imax, IC50 for G1, kin, kout, ke0, gamma), only suggesting the mechanism involves downregulation of cyclin D1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Crisaborole (measured concentrations) drives cAMP accumulation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Crisaborole concentrations (µM) stimulate cAMP accumulation in HEK293 cells expressing human A2AAR, described by an Emax model with EC50 2.8 µM and Emax 67%; paroxetine also stimulated cAMP at A2AAR (EC50 14 µM). The paper does not give a definitive mechanism, but notes crisaborole is not an orthosteric A2AAR agonist (istradefylline only minimally reduced its effect) and is a PDE4 inhibitor, which prevents cAMP hydrolysis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Puhl_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Puhl AC; Gao ZG; Jacobson KA; Ekins S et al. (2022). Frontiers in pharmacology 1
   ·  DOI: [10.3389/fphar.2022.920643](https://doi.org/10.3389/fphar.2022.920643)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 67 | % | not captured | review_gapfill (not captured) | Puhl_2022:review |
-| EC50 | `Q321` · not captured | 2.8 | µM | not captured | review_gapfill (not captured) | Puhl_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 67 | % | not captured | review_gapfill (not captured) | Puhl_2022:review |
+| PD (effect) | EC50 | `Q321` · not captured | 2.8 | µM | not captured | review_gapfill (not captured) | Puhl_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

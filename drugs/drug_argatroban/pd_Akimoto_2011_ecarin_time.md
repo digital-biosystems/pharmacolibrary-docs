@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Argatroban (concentrations from this paper's PK model) drives name (in s): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Argatroban plasma concentration (ng/mL) stimulates ecarin time (ECA-T, s) via a direct, immediate-effect Emax model with an additive increase over baseline (E = E0 + DE), which the paper found best described without a sigmoidicity factor (nonsigmoidal Emax); the paper does not state the Emax or EC50 values for ECA-T in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akimoto_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

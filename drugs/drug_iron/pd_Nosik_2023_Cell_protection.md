@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ДНК-Na-Fe drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ДНК-Na-Fe (iron) at 250–2500 µg/ml showed antiviral (cell-protective) activity against adenovirus and coronavirus in vitro, with EC50 ~1000 µg/ml for coronavirus (selectivity index 10; adenovirus EC50 reached only at 1000 µg/ml when applied 2 h before infection); the paper does not state a pharmacodynamic mechanism or model parameters such as Imax, Emax, kin, kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nosik_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BDM91531 (measured concentrations) drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BDM91531 (PyrPip efflux pump inhibitor) concentrations (0–5 µM in growth-curve assays; 7.5–30 µM in MIC potentiation tests) inhibit the activity of the AcrAB-TolC efflux pump in E. coli, measured as antibiotic (e.g. erythromycin 16 µg/mL) MIC (µg/mL); the mechanism is concentration-dependent inhibition of AcrB-mediated efflux via electrostatic binding of the divalent cationic inhibitor to carboxylates (E947, D951) at the cytoplasmic rim of the AcrB transmembrane domain. The paper does not report quantitative PD parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Börnsen_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

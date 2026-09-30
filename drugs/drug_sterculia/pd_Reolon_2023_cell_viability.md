@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 3,3'-diindolylmethane (measured concentrations) drive name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 3,3'-diindolylmethane (DIM), free or nanoencapsulated (NC-DIM), reduces MTT-measured cell viability (%) of A375 melanoma cells after 24 h incubation; the paper does not state a PD mechanism or model. Nanoencapsulation markedly increased potency, with IC50 of 2.89 µg/mL for NC-DIM versus &gt;24.00 µg/mL for free DIM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Reolon_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

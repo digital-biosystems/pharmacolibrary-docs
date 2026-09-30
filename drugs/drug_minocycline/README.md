@@ -25,19 +25,19 @@ Minocycline was granted FDA approval on 30 June 1971.[L11695]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pardos_2024_reference](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | 1-compartment, IV | 2 | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tynan_2016_reference](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | 1-compartment, IV | 7 | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025_reference](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | 1-compartment (no model) | 3 | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024_reference](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | 2-compartment (no model) | 3 | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pardos_2024_reference](drugs/drug_minocycline/Minocycline_Pardos2024_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Pardos SL et al., Population pharmacokinetics/pharmacodyn…, The Journal of antimicrobia… (2024) | [10.1093/jac/dkae363](https://doi.org/10.1093/jac/dkae363) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Tynan_2016_reference](drugs/drug_minocycline/Minocycline_Tynan2016_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Tynan BE et al., Pharmacokinetics of minocycline in dome…, Journal of feline medicine… (2016) | [10.1177/1098612X15579114](https://doi.org/10.1177/1098612X15579114) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.2567)</sub><br><sub>route_to: `human_review`</sub> | [Athanassa_2025_reference](drugs/drug_minocycline/Minocycline_Athanassa2025_reference.md) | — | 1-compartment (no model) | 3 | Athanassa Z et al., Population pharmacokinetic model of ora…, The Journal of antimicrobia… (2025) | [10.1093/jac/dkaf090](https://doi.org/10.1093/jac/dkaf090) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Barrasa_2024_reference](drugs/drug_minocycline/Minocycline_Barrasa2024_reference.md) | — | 2-compartment (no model) | 3 | Barrasa H et al., Optimizing Antibiotic Therapy for, Antibiotics (Basel, Switzer… (2024) | [10.3390/antibiotics13060553](https://doi.org/10.3390/antibiotics13060553) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Aranzana-Climent_2020](drugs/drug_minocycline/pd_Aranzana_Climent_2020_unknown.md) | Aranzana-Climent V et al., Semi-mechanistic PK/PD modelling of com…, Clinical microbiology and i… (2020) | [10.1016/j.cmi.2020.01.017](https://doi.org/10.1016/j.cmi.2020.01.017) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Vallé_2021](drugs/drug_minocycline/pd_Vall_2021_mean_inoculum_growth.md) | Vallé Q et al., Prediction of Minocycline Activity in t…, Frontiers in microbiology (2021) | [10.3389/fmicb.2021.671376](https://doi.org/10.3389/fmicb.2021.671376) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Aranzana-Climent_2020_unknown](drugs/drug_minocycline/pd_Aranzana_Climent_2020_unknown.md) | highly resistant bacteria ← minocycline · direct sigmoid Emax (Hill) effect | — | Aranzana-Climent V et al., Semi-mechanistic PK/PD modelling of com…, Clinical microbiology and i… (2020) | [10.1016/j.cmi.2020.01.017](https://doi.org/10.1016/j.cmi.2020.01.017) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Vallé_2021_mean_inoculum_growth](drugs/drug_minocycline/pd_Vall_2021_mean_inoculum_growth.md) | name ← minocycline · direct sigmoid Emax (Hill) effect | — | Vallé Q et al., Prediction of Minocycline Activity in t…, Frontiers in microbiology (2021) | [10.3389/fmicb.2021.671376](https://doi.org/10.3389/fmicb.2021.671376) |
 
 ## ADME sites
 

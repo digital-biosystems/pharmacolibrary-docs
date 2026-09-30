@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 10:21 | 3:09 | 0/0/0 | 0/0/0 | 0/0/0 | 52,465/2,851 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-09-29 22:36 | 0:54 | 0/0/0 | 0/0/0 | 0/0/0 | 1,784/194 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
@@ -65,7 +65,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Pascaud_1989.pdf` | Pascaud X et al., [Mode of action of trimebutine: involve…, Presse medicale (Paris, Fra… (1989) | pd | 4 | not captured | [2537972](https://www.ncbi.nlm.nih.gov/pubmed/2537972) | metadata signals extractable PD data (IC50) |
 | `Schuurkes_1985.pdf` | Schuurkes JA et al., A comparative study on the effects of d…, Japanese journal of pharmac… (1985) | pd | 4 | [10.1254/jjp.39.123](https://doi.org/10.1254/jjp.39.123) | [4087563](https://www.ncbi.nlm.nih.gov/pubmed/4087563) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T10:21:15.839407+00:00</sub>
+<sub>queue written 2026-09-29T22:36:54.888197+00:00</sub>
 
 ## Screened and excluded
 

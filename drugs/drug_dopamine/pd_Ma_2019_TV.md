@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Axitinib drives tumor volume (in unknown): indirect response — drug inhibits the loss of tumor volume.
+
+**Model:** No model was generated from this record.
+
+> Axitinib plasma concentrations inhibit tumor growth in MCF-7/ADR xenografts via an indirect response (Model II) mechanism, with kmax 1.60 per day and kC50 2.10 mg/L (tumor volume model); tumor growth parameters include λ0 0.229 per day and λ1 273 mm³/day, with axitinib PK described by ka 78.7 per day, V/F 16.5 L/kg, and CL/F 319 L/kg/day.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ma_2019`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,31 +30,31 @@ Ma YH; Wang SY; Ren YP; Li J; Guo TJ; Lu W; et al. et al. (2019). Acta pharmacol
   ·  DOI: [10.1038/s41401-018-0006-x](https://doi.org/10.1038/s41401-018-0006-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k a (per day) — TV | `Q49` · not captured | 78.7 | per day | not captured | space_fold (not captured) | tab_0:row2:col1 |
-| k a (per day) — IIV | `Q49` · not captured | 0 | per day | not captured | space_fold (not captured) | tab_0:row2:col3 |
-| V/F (L/kg) — TV | `Q76` · not captured | 16.5 | L/kg | not captured | exact (not captured) | tab_0:row3:col1 |
-| V/F (L/kg) — IIV | `Q76` · not captured | 0 | L/kg | not captured | exact (not captured) | tab_0:row3:col3 |
-| CL/F (L/kg/day) — TV | `Q27` · not captured | 319 | L/kg/day | not captured | exact (not captured) | tab_0:row4:col1 |
-| CL/F (L/kg/day) — IIV | `Q27` · not captured | 0 | L/kg/day | not captured | exact (not captured) | tab_0:row4:col3 |
-| N 0 (mm 3 ) — IIV | `Q312` · not captured | 29.3 | mm 3 | not captured | llm (not captured) | tab_0:row5:col3 |
-| λ 0 (per day) — TV | `Q67` · not captured | 0.229 | per day | not captured | llm (not captured) | tab_0:row6:col1 |
-| λ 0 (per day) | `Q67` · not captured | 5.7 | per day | not captured | llm (not captured) | tab_0:row6:col2 |
-| λ 0 (per day) — IIV | `Q312` · not captured | 9.2 | per day | not captured | llm (not captured) | tab_0:row6:col3 |
-| λ 0 (per day) | `Q67` · not captured | 31.2 | per day | not captured | llm (not captured) | tab_0:row6:col4 |
-| λ 1 (mm 3 /day) — TV | `Q67` · not captured | 273 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col1 |
-| λ 1 (mm 3 /day) | `Q67` · not captured | 7.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col2 |
-| λ 1 (mm 3 /day) — IIV | `Q67` · not captured | 17.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col3 |
-| λ 1 (mm 3 /day) | `Q67` · not captured | 19.6 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col4 |
-| k max (per day) — TV | `Q66` · not captured | 1.60 | per day | not captured | llm (not captured) | tab_0:row8:col1 |
-| k max (per day) — IIV | `Q320` · not captured | 0 | per day | not captured | llm (not captured) | tab_0:row8:col3 |
-| kC 50 (mg/L) — TV | `Q321` · not captured | 2.10 | mg/L | not captured | llm (not captured) | tab_0:row9:col1 |
-| kC 50 (mg/L) | `Q321` · not captured | 12.1 | mg/L | not captured | llm (not captured) | tab_0:row9:col2 |
-| kC 50 (mg/L) — IIV | `Q321` · not captured | 0 | mg/L | not captured | llm (not captured) | tab_0:row9:col3 |
-| ψ — IIV | `Q312` · not captured | 0 | unit | not captured | llm (not captured) | tab_0:row10:col3 |
-| σ ADD (mm 3 ) — TV | `Q315` · not captured | 31.5 | mm 3 | not captured | llm (not captured) | tab_0:row12:col1 |
-| σ ADD (mm 3 ) | `Q317` · not captured | 10.1 | mm 3 | not captured | llm (not captured) | tab_0:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k a (per day) — TV | `Q49` · not captured | 78.7 | per day | not captured | space_fold (not captured) | tab_0:row2:col1 |
+| PK (driver) | k a (per day) — IIV | `Q49` · not captured | 0 | per day | not captured | space_fold (not captured) | tab_0:row2:col3 |
+| PK (driver) | V/F (L/kg) — TV | `Q76` · not captured | 16.5 | L/kg | not captured | exact (not captured) | tab_0:row3:col1 |
+| PK (driver) | V/F (L/kg) — IIV | `Q76` · not captured | 0 | L/kg | not captured | exact (not captured) | tab_0:row3:col3 |
+| PK (driver) | CL/F (L/kg/day) — TV | `Q27` · not captured | 319 | L/kg/day | not captured | exact (not captured) | tab_0:row4:col1 |
+| PK (driver) | CL/F (L/kg/day) — IIV | `Q27` · not captured | 0 | L/kg/day | not captured | exact (not captured) | tab_0:row4:col3 |
+| variability | N 0 (mm 3 ) — IIV | `Q312` · not captured | 29.3 | mm 3 | not captured | llm (not captured) | tab_0:row5:col3 |
+| PK (driver) | λ 0 (per day) — TV | `Q67` · not captured | 0.229 | per day | not captured | llm (not captured) | tab_0:row6:col1 |
+| PK (driver) | λ 0 (per day) | `Q67` · not captured | 5.7 | per day | not captured | llm (not captured) | tab_0:row6:col2 |
+| variability | λ 0 (per day) — IIV | `Q312` · not captured | 9.2 | per day | not captured | llm (not captured) | tab_0:row6:col3 |
+| PK (driver) | λ 0 (per day) | `Q67` · not captured | 31.2 | per day | not captured | llm (not captured) | tab_0:row6:col4 |
+| PK (driver) | λ 1 (mm 3 /day) — TV | `Q67` · not captured | 273 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col1 |
+| PK (driver) | λ 1 (mm 3 /day) | `Q67` · not captured | 7.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col2 |
+| PK (driver) | λ 1 (mm 3 /day) — IIV | `Q67` · not captured | 17.9 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col3 |
+| PK (driver) | λ 1 (mm 3 /day) | `Q67` · not captured | 19.6 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row7:col4 |
+| PK (driver) | k max (per day) — TV | `Q66` · not captured | 1.60 | per day | not captured | llm (not captured) | tab_0:row8:col1 |
+| PD (effect) | k max (per day) — IIV | `Q320` · not captured | 0 | per day | not captured | llm (not captured) | tab_0:row8:col3 |
+| PD (effect) | kC 50 (mg/L) — TV | `Q321` · not captured | 2.10 | mg/L | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | kC 50 (mg/L) | `Q321` · not captured | 12.1 | mg/L | not captured | llm (not captured) | tab_0:row9:col2 |
+| PD (effect) | kC 50 (mg/L) — IIV | `Q321` · not captured | 0 | mg/L | not captured | llm (not captured) | tab_0:row9:col3 |
+| variability | ψ — IIV | `Q312` · not captured | 0 | unit | not captured | llm (not captured) | tab_0:row10:col3 |
+| variability | σ ADD (mm 3 ) — TV | `Q315` · not captured | 31.5 | mm 3 | not captured | llm (not captured) | tab_0:row12:col1 |
+| variability | σ ADD (mm 3 ) | `Q317` · not captured | 10.1 | mm 3 | not captured | llm (not captured) | tab_0:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

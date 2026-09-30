@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aripiprazole (concentrations from the PK model of Wang_2022) drives PANSS total score change from baseline (in points): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Aripiprazole average steady-state concentration (C avg,ss, mg/L) reduces PANSS total score change from baseline via a proportional inhibitory Emax drug effect on top of a Weibull placebo (disease) model, PANSS(t)=BSL×(1−placebo effect)×(1−drug effect); the maximum proportional drug effect was 9% in adults and 6% in adolescents, with similar Emax and EC50 between populations (no numeric EC50 given in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024_2`
 - **model family:** `emax`
 - **driver:** `cited_pk`

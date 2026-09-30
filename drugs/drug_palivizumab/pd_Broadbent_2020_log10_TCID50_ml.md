@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ALX-0171 (measured concentrations) drives RSV titer (in continuous) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Palivizumab concentrations (nM) inhibit apically released RSV titer (log10 TCID50/ml) in the WD-PBEC infection model by direct viral neutralization, with a mean IC50 of 1,048 to 1,090 nM across the two clinical isolates (BT2a and Memphis 37), making it about 3-fold less potent than ALX-0171 (IC50 346.9 to 363.6 nM); no formal PD model parameters (Imax, Emax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Broadbent_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** WIN55212-2 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> WIN55212-2 (WIN-2) and mAEA inhibit the persistent voltage-dependent K+ outward current I_M in a concentration-dependent manner (direct inhibitory effect on the current, reversible on washout); WIN-2 had an apparent EC50 of 0.6 µM with maximal inhibition of I_M by 45% at 3 µM, and mAEA had an EC50 of 1 µM with maximal inhibition of 41% at 6 µM, with the threshold response below 0.2 µM. The paper does not state a mechanistic PD model (e.g., Emax/indirect or effect-compartment) beyond this concentration-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schweitzer_2000`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Schweitzer P et al. (2000). The Journal of neuroscience : the official journal o
   ·  DOI: [10.1523/JNEUROSCI.20-01-00051.2000](https://doi.org/10.1523/JNEUROSCI.20-01-00051.2000)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| maximal effect with mAEA was obtained at | `Q320` · not captured | 6 | M | not captured | review_gapfill (not captured) | Schweitzer_2000:review |
-| apparent EC 50 | `Q321` · not captured | 0.6 | M | not captured | review_gapfill (not captured) | Schweitzer_2000:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | maximal effect with mAEA was obtained at | `Q320` · not captured | 6 | M | not captured | review_gapfill (not captured) | Schweitzer_2000:review |
+| PD (effect) | apparent EC 50 | `Q321` · not captured | 0.6 | M | not captured | review_gapfill (not captured) | Schweitzer_2000:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

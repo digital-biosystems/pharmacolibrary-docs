@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spigelia anthelmia protein fractions drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Protein fractions from Spigelia anthelmia (LPF, SPF, RPF) were fitted with an Emax-type inhibitory model against percent larval migration inhibition in H. contortus, with EC50 values ranging from 0.11 to 0.21 mg mL-1; the paper does not state Imax, Emax, kin, kout or ke0, and does not describe a specific mechanism beyond inhibition of larval migration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Araújo_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

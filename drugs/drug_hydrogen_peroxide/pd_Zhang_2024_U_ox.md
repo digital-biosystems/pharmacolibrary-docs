@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nedosiran drives 24-h urinary oxalate (in mmol): indirect response — drug inhibits the production of 24-h urinary oxalate.
+
+**Model:** No model was generated from this record.
+
+> Nedosiran concentrations (via an effect compartment linked to plasma) inhibit the production of 24-h urinary oxalate in an indirect response model with an Imax relationship and a Hill coefficient; baseline 24-h U ox was 1420 μmol/24 h and Kout was 0.338/week. The paper does not report numeric values for IC50, Imax, gamma or ke0, and notes IC50 refers to the effect compartment rather than plasma concentrations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,15 +30,15 @@ Zhang S; Amrite A; Tan B; Jamsen K; Pradhan S; Choy S; Plotkin H et al. (2024). 
   ·  DOI: [10.1111/bcp.16194](https://doi.org/10.1111/bcp.16194)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline 24‐h urinary oxalate (24‐h U ox, μmol/24 h) — Estimated value (%RSE) | `Q100` · not captured | 1420 | not captured | not captured | llm_corrected (not captured) | bcp16194-tbl-0002:row1:col1 |
-| First‐order elimination rate of 24‐h U ox (K out, 1/week) — Estimated value (%RSE) | `Q328` · not captured | 0.338 | K out, 1/week | not captured | llm_corrected (not captured) | bcp16194-tbl-0002:row2:col1 |
-| Between‐subject variability for baseline 24‐h U ox (%CV) — Estimated value (%RSE) | `Q100` · not captured | 31.7 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row7:col1 |
-| Between‐subject variability for baseline 24‐h U ox (%CV) — ƞ shrinkage (%) | `Q100` · not captured | 4.9 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row7:col2 |
-| Between‐subject variability for IC50 (%CV) — Estimated value (%RSE) | `Q100` · not captured | 86 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row8:col1 |
-| Between‐subject variability for IC50 (%CV) — ƞ shrinkage (%) | `Q100` · not captured | 28.3 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row8:col2 |
-| Residual unexplained variability (additive) (SD, μmol/24 h) — Estimated value (%RSE) | `Q315` · not captured | 205 | SD, μmol/24 h | not captured | llm_confirmed (not captured) | bcp16194-tbl-0002:row10:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Baseline 24‐h urinary oxalate (24‐h U ox, μmol/24 h) — Estimated value (%RSE) | `Q100` · not captured | 1420 | not captured | not captured | llm_corrected (not captured) | bcp16194-tbl-0002:row1:col1 |
+| PD (effect) | First‐order elimination rate of 24‐h U ox (K out, 1/week) — Estimated value (%RSE) | `Q328` · not captured | 0.338 | K out, 1/week | not captured | llm_corrected (not captured) | bcp16194-tbl-0002:row2:col1 |
+| — | Between‐subject variability for baseline 24‐h U ox (%CV) — Estimated value (%RSE) | `Q100` · not captured | 31.7 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row7:col1 |
+| — | Between‐subject variability for baseline 24‐h U ox (%CV) — ƞ shrinkage (%) | `Q100` · not captured | 4.9 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row7:col2 |
+| — | Between‐subject variability for IC50 (%CV) — Estimated value (%RSE) | `Q100` · not captured | 86 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row8:col1 |
+| — | Between‐subject variability for IC50 (%CV) — ƞ shrinkage (%) | `Q100` · not captured | 28.3 | not captured | not captured | nil (not captured) | bcp16194-tbl-0002:row8:col2 |
+| variability | Residual unexplained variability (additive) (SD, μmol/24 h) — Estimated value (%RSE) | `Q315` · not captured | 205 | SD, μmol/24 h | not captured | llm_confirmed (not captured) | bcp16194-tbl-0002:row10:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

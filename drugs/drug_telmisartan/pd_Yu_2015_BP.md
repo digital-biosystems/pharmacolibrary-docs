@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan, hydrochlorothiazide (measured concentrations) drive blood pressure (in mmHg): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan and hydrochlorothiazide plasma concentrations (ng/mL) act on blood pressure (mmHg) via a noncompetitive indirect response turnover model: telmisartan inhibits the zero-order production rate constant Kin (INH = Imax·C/(IC50+C)), reflecting AT1 receptor blockade, while hydrochlorothiazide stimulates the first-order elimination rate constant Kout (STIM = Smax·C/(SC50+C)). The paper does not report numerical values for Imax, IC50, Smax, SC50, Kin or Kout in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2015`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

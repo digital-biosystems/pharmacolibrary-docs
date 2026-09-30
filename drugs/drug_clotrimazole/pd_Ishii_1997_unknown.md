@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Calcium drives potassium current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Clotrimazole reversibly blocks the calcium-activated potassium current (hIK1 expressed in Xenopus oocytes) with a Ki of 24.8 nM; the current itself is activated by intracellular calcium with K0.5 = 0.3 µM and a Hill slope factor of 1.7. The paper does not describe a PD model (e.g., Emax/kin-kout) beyond these binding/activation constants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishii_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

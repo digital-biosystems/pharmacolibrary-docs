@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Peginesatide (concentrations from this paper's PK model) drives hemoglobin (in g/dL): indirect response — drug inhibits the loss of hemoglobin.
+
+**Model:** No model was generated from this record.
+
+> Peginesatide plasma concentrations (ng/mL) stimulate the endogenous production rate of progenitor cells, modeled with a modified precursor-dependent lifespan indirect response model of hemoglobin (g/dL), with EC50 401 ng/mL (bootstrap median 417 ng/mL, 95% CI 128 ng/mL), baseline hemoglobin 11.5 g/dL, mean transit time for progenitor cells 462 h and for red blood cells 1640 h (red cell life span ~67.5 days); the paper does not state the Emax value for peginesatide in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Naik_2013`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
@@ -21,32 +31,32 @@ Naik H; Tsai MC; Fiedler-Kelly J; Qiu P; Vakilynejad M et al. (2013). PloS one 8
   ·  DOI: [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Final Estimate (% SEM) | `Q321` · not captured | 401 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col1 |
-| Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Median Bootstrap Estimate | `Q321` · not captured | 417 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col2 |
-| Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Bootstrap 95% CI1 | `Q321` · not captured | 128 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col3 |
-| Hemoglobin at baseline, in g/dL — Final Estimate (% SEM) | `Q324` · not captured | 11.5 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row3:col1 |
-| Hemoglobin at baseline, in g/dL — Median Bootstrap Estimate | `Q100` · not captured | 11.5 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col2 |
-| Hemoglobin at baseline, in g/dL — Bootstrap 95% CI1 | `Q100` · not captured | 11.4 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col3 |
-| Mean transit time for red blood cells (MTT),in hours — Final Estimate (% SEM) | `Q81` · not captured | 1640 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col1 |
-| Mean transit time for red blood cells (MTT),in hours — Median Bootstrap Estimate | `Q81` · not captured | 1610 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col2 |
-| Mean transit time for red blood cells (MTT),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 1330 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col3 |
-| Mean transit time for progenitor cells (MTP),in hours — Final Estimate (% SEM) | `Q81` · not captured | 462 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col1 |
-| Mean transit time for progenitor cells (MTP),in hours — Median Bootstrap Estimate | `Q81` · not captured | 447 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col2 |
-| Mean transit time for progenitor cells (MTP),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 348.4 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col3 |
-| ω2 on EC50 — Final Estimate (% SEM) | `Q321` · not captured | 8.92 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col1 |
-| ω2 on EC50 — Median Bootstrap Estimate | `Q321` · not captured | 9.47 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col2 |
-| ω2 on EC50 — Bootstrap 95% CI1 | `Q321` · not captured | 3.61 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col3 |
-| ω2 on BL Hgb — Final Estimate (% SEM) | `Q312` · not captured | 0.00485 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col1 |
-| ω2 on BL Hgb — Median Bootstrap Estimate | `Q312` · not captured | 0.00476 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col2 |
-| ω2 on BL Hgb — Bootstrap 95% CI1 | `Q312` · not captured | 0.00393 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col3 |
-| ω2 on CF — Final Estimate (% SEM) | `Q312` · not captured | 10.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col1 |
-| ω2 on CF — Median Bootstrap Estimate | `Q312` · not captured | 11.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col2 |
-| ω2 on CF — Bootstrap 95% CI1 | `Q312` · not captured | 7.244 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col3 |
-| σ2 (additive component) — Final Estimate (% SEM) | `Q315` · not captured | 0.00478 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col1 |
-| σ2 (additive component) — Median Bootstrap Estimate | `Q315` · not captured | 0.00475 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col2 |
-| σ2 (additive component) — Bootstrap 95% CI1 | `Q315` · not captured | 0.0044 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Final Estimate (% SEM) | `Q321` · not captured | 401 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col1 |
+| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Median Bootstrap Estimate | `Q321` · not captured | 417 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col2 |
+| PD (effect) | Drug concentration required for 50% of maximumresponse (EC50), in ng/mL — Bootstrap 95% CI1 | `Q321` · not captured | 128 | ng/mL | not captured | llm_confirmed (not captured) | pone-0066422-t007:row1:col3 |
+| PD (effect) | Hemoglobin at baseline, in g/dL — Final Estimate (% SEM) | `Q324` · not captured | 11.5 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row3:col1 |
+| — | Hemoglobin at baseline, in g/dL — Median Bootstrap Estimate | `Q100` · not captured | 11.5 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col2 |
+| — | Hemoglobin at baseline, in g/dL — Bootstrap 95% CI1 | `Q100` · not captured | 11.4 | not captured | not captured | llm_corrected (not captured) | pone-0066422-t007:row3:col3 |
+| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Final Estimate (% SEM) | `Q81` · not captured | 1640 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col1 |
+| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Median Bootstrap Estimate | `Q81` · not captured | 1610 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col2 |
+| PK (driver) | Mean transit time for red blood cells (MTT),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 1330 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row4:col3 |
+| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Final Estimate (% SEM) | `Q81` · not captured | 462 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col1 |
+| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Median Bootstrap Estimate | `Q81` · not captured | 447 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col2 |
+| PK (driver) | Mean transit time for progenitor cells (MTP),in hours — Bootstrap 95% CI1 | `Q81` · not captured | 348.4 | not captured | not captured | llm_confirmed (not captured) | pone-0066422-t007:row5:col3 |
+| PD (effect) | ω2 on EC50 — Final Estimate (% SEM) | `Q321` · not captured | 8.92 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col1 |
+| PD (effect) | ω2 on EC50 — Median Bootstrap Estimate | `Q321` · not captured | 9.47 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col2 |
+| PD (effect) | ω2 on EC50 — Bootstrap 95% CI1 | `Q321` · not captured | 3.61 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row11:col3 |
+| variability | ω2 on BL Hgb — Final Estimate (% SEM) | `Q312` · not captured | 0.00485 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col1 |
+| variability | ω2 on BL Hgb — Median Bootstrap Estimate | `Q312` · not captured | 0.00476 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col2 |
+| variability | ω2 on BL Hgb — Bootstrap 95% CI1 | `Q312` · not captured | 0.00393 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row12:col3 |
+| variability | ω2 on CF — Final Estimate (% SEM) | `Q312` · not captured | 10.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col1 |
+| variability | ω2 on CF — Median Bootstrap Estimate | `Q312` · not captured | 11.6 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col2 |
+| variability | ω2 on CF — Bootstrap 95% CI1 | `Q312` · not captured | 7.244 | CF | not captured | llm_confirmed (not captured) | pone-0066422-t007:row13:col3 |
+| variability | σ2 (additive component) — Final Estimate (% SEM) | `Q315` · not captured | 0.00478 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col1 |
+| variability | σ2 (additive component) — Median Bootstrap Estimate | `Q315` · not captured | 0.00475 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col2 |
+| variability | σ2 (additive component) — Bootstrap 95% CI1 | `Q315` · not captured | 0.0044 | additive component | not captured | exact (not captured) | pone-0066422-t007:row14:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

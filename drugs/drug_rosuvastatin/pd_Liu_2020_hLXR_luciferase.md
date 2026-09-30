@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Berberine (measured concentrations) drives hLXRα promoter activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Berberine concentration-dependently stimulates hLXRα-mediated OATP1B1 promoter luciferase activity in HepG2-hLXRα-OATP1B1-luc cells, described as an Emax-type concentration-dependent activation (no mechanistic production/elimination model given), with EC50 = 32.15 ± 2.32 μM (vs 2.37 ± 0.36 μM for the LXRα ligand GW3965); rosuvastatin itself is not the driver of this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

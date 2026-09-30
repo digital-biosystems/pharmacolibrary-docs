@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VWF:Ag drives FVIII:C (in IU/mL): indirect response — drug inhibits the production of FVIII:C.
+
+**Model:** No model was generated from this record.
+
+> VWF:Ag concentrations inhibit the clearance (elimination) of FVIII:C in an indirect response model, with an IC50 of 1.0 IU/mL for 50% reduction of FVIII clearance; in VWD types 2N and 3 the IC50 was 54% lower (0.46 vs 1.00 IU/mL). Baseline FVIII:C was 0.53 IU/mL with clearance 598.0 mL/h, and VWF:Ag baseline was 0.32 IU/mL with clearance 74.2 mL/h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Daniel_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

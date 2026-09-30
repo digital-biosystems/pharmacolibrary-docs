@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LY354740 (measured concentrations) drives name (in nS): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> LY354740 (1 nM–1 μM), a group II mGluR agonist, had no significant effect on membrane slope conductance (nS) measured from I-V relationships in CeLC neurons, indicating the drug acts presynaptically on EPSCs rather than on postsynaptic membrane conductance; the paper does not report an Emax/IC50 for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

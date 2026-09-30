@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (measured concentrations) drives name (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Phenformin was applied in patch-clamp experiments on GBM2 and GBM4 glioma stem cell CLIC1 membrane chloride current (expressed as a ratio of the block produced by 100 µM of the chloride channel blocker used as a full-inhibition control), at two concentrations based on IC50 values from 48 h MTT viability assays; the paper states phenformin acts by direct inhibition of the CLIC1-associated chloride current, but was unable to completely block CLIC1 currents even at 1 mM, above its antiproliferative IC50 of 0.35 mM, and no IC50, Imax, or rate parameters for the CLIC1 current inhibition itself are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barbieri_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,36 +30,36 @@ Barbieri F; Würth R; Pattarozzi A; Verduci I; Mazzola C; Cattaneo MG; et al. et
   ·  DOI: [10.3389/fphar.2018.00899](https://doi.org/10.3389/fphar.2018.00899)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 12.96 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col1 |
-| GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.19 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col2 |
-| GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.16 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col3 |
-| GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.53 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col4 |
-| GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 12.30 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col1 |
-| GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.29 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col2 |
-| GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.22 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col3 |
-| GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.47 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col4 |
-| GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.043 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col5 |
-| GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 6.22 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col1 |
-| GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.60 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col2 |
-| GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.15 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col3 |
-| GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.54 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col4 |
-| GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.034 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col5 |
-| GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 12.65 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col1 |
-| GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.37 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col2 |
-| GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.21 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col3 |
-| GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.57 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col4 |
-| GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.087 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col5 |
-| GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 2.10 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col1 |
-| GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 0.20 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col2 |
-| GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 0.21 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col3 |
-| GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 9.12 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col1 |
-| GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.46 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col2 |
-| GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.81 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col3 |
-| GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.59 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col4 |
-| GBM7 — Compound (mean IC50, mM) | `Q322` · not captured | 6.65 | mean IC50, mM | not captured | llm (not captured) | T2:row8:col1 |
-| ucMSC (mean IC50 mM ± SEM) — Compound (mean IC50, mM) | `Q100` · not captured | 0.048 | mean IC50, mM | not captured | nil (not captured) | T2:row12:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 12.96 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col1 |
+| PD (effect) | GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.19 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col2 |
+| PD (effect) | GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.16 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col3 |
+| PD (effect) | GBM1 — Compound (mean IC50, mM) | `Q322` · not captured | 0.53 | mean IC50, mM | not captured | llm (not captured) | T2:row2:col4 |
+| PD (effect) | GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 12.30 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col1 |
+| PD (effect) | GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.29 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col2 |
+| PD (effect) | GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.22 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col3 |
+| PD (effect) | GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.47 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col4 |
+| PD (effect) | GBM2 — Compound (mean IC50, mM) | `Q322` · not captured | 0.043 | mean IC50, mM | not captured | llm (not captured) | T2:row3:col5 |
+| PD (effect) | GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 6.22 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col1 |
+| PD (effect) | GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.60 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col2 |
+| PD (effect) | GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.15 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col3 |
+| PD (effect) | GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.54 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col4 |
+| PD (effect) | GBM3 — Compound (mean IC50, mM) | `Q322` · not captured | 0.034 | mean IC50, mM | not captured | llm (not captured) | T2:row4:col5 |
+| PD (effect) | GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 12.65 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col1 |
+| PD (effect) | GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.37 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col2 |
+| PD (effect) | GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.21 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col3 |
+| PD (effect) | GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.57 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col4 |
+| PD (effect) | GBM4 — Compound (mean IC50, mM) | `Q322` · not captured | 0.087 | mean IC50, mM | not captured | llm (not captured) | T2:row5:col5 |
+| PD (effect) | GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 2.10 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col1 |
+| PD (effect) | GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 0.20 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col2 |
+| PD (effect) | GBM5 — Compound (mean IC50, mM) | `Q322` · not captured | 0.21 | mean IC50, mM | not captured | llm (not captured) | T2:row6:col3 |
+| PD (effect) | GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 9.12 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col1 |
+| PD (effect) | GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.46 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col2 |
+| PD (effect) | GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.81 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col3 |
+| PD (effect) | GBM6 — Compound (mean IC50, mM) | `Q322` · not captured | 0.59 | mean IC50, mM | not captured | llm (not captured) | T2:row7:col4 |
+| PD (effect) | GBM7 — Compound (mean IC50, mM) | `Q322` · not captured | 6.65 | mean IC50, mM | not captured | llm (not captured) | T2:row8:col1 |
+| — | ucMSC (mean IC50 mM ± SEM) — Compound (mean IC50, mM) | `Q100` · not captured | 0.048 | mean IC50, mM | not captured | nil (not captured) | T2:row12:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

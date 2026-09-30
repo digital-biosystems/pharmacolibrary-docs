@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxycycline (concentrations from the PK model of Altan_2024) drives antimycoplasmal effect (in log10(CFU/mL) reduction): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Doxycycline concentrations (static time–killing, 0–64 MIC, and an in vitro dynamic model) were related to the log10(CFU/mL) reduction of M. gallisepticum via a sigmoid Emax (inhibitory) model; the paper does not state a mechanistic production/elimination model beyond direct concentration–kill-rate fitting. Against AUC0-48h/MIC, Imax was 5.82 log10 CFU/mL with IC50 79.12 μg/mL (Hill slope 1.45, E0 2.30 log10 CFU/mL, R2 0.953); Cmax/MIC gave Imax 6.49 and IC50 10.90 μg/mL, and T&gt;MIC gave Imax 5.93% and IC50 44.39%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,19 +31,19 @@ Zhang N; Gu X; Ye X; Wu X; Zhang B; Zhang L; et al. et al. (2016). Frontiers in 
   ·  DOI: [10.3389/fmicb.2016.00653](https://doi.org/10.3389/fmicb.2016.00653)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Imax (log10 CFU/mL) — AUC0-48h/MIC (h) | `Q323` · not captured | 5.82 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col2 |
-| Imax (log10 CFU/mL) — Cmax/MIC | `Q323` · not captured | 6.49 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col3 |
-| Imax (log10 CFU/mL) — T &gt; MIC (%) | `Q323` · not captured | 5.93 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col4 |
-| IC50 (μg/mL) — AUC0-48h/MIC (h) | `Q322` · not captured | 79.12 | μg/mL | not captured | exact (not captured) | T3:row1:col2 |
-| IC50 (μg/mL) — Cmax/MIC | `Q322` · not captured | 10.90 | μg/mL | not captured | exact (not captured) | T3:row1:col3 |
-| IC50 (μg/mL) — T &gt; MIC (%) | `Q322` · not captured | 44.39 | μg/mL | not captured | exact (not captured) | T3:row1:col4 |
-| E0 (log10 CFU/mL) — AUC0-48h/MIC (h) | `Q324` · not captured | 2.30 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col2 |
-| E0 (log10 CFU/mL) — Cmax/MIC | `Q324` · not captured | 2.28 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col3 |
-| E0 (log10 CFU/mL) — T &gt; MIC (%) | `Q324` · not captured | 2.25 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col4 |
-| R2 — AUC0-48h/MIC (h) | `Q19` · not captured | 0.953 | h | not captured | llm (not captured) | T3:row4:col2 |
-| Hill’s slope | `Q325` · not captured | 1.45 | ± | not captured | review_gapfill (not captured) | Zhang_2016:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Imax (log10 CFU/mL) — AUC0-48h/MIC (h) | `Q323` · not captured | 5.82 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col2 |
+| PD (effect) | Imax (log10 CFU/mL) — Cmax/MIC | `Q323` · not captured | 6.49 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col3 |
+| PD (effect) | Imax (log10 CFU/mL) — T &gt; MIC (%) | `Q323` · not captured | 5.93 | log10 CFU/mL | not captured | exact (not captured) | T3:row0:col4 |
+| PD (effect) | IC50 (μg/mL) — AUC0-48h/MIC (h) | `Q322` · not captured | 79.12 | μg/mL | not captured | exact (not captured) | T3:row1:col2 |
+| PD (effect) | IC50 (μg/mL) — Cmax/MIC | `Q322` · not captured | 10.90 | μg/mL | not captured | exact (not captured) | T3:row1:col3 |
+| PD (effect) | IC50 (μg/mL) — T &gt; MIC (%) | `Q322` · not captured | 44.39 | μg/mL | not captured | exact (not captured) | T3:row1:col4 |
+| PD (effect) | E0 (log10 CFU/mL) — AUC0-48h/MIC (h) | `Q324` · not captured | 2.30 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col2 |
+| PD (effect) | E0 (log10 CFU/mL) — Cmax/MIC | `Q324` · not captured | 2.28 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col3 |
+| PD (effect) | E0 (log10 CFU/mL) — T &gt; MIC (%) | `Q324` · not captured | 2.25 | log10 CFU/mL | not captured | exact (not captured) | T3:row2:col4 |
+| PK (driver) | R2 — AUC0-48h/MIC (h) | `Q19` · not captured | 0.953 | h | not captured | llm (not captured) | T3:row4:col2 |
+| PD (effect) | Hill’s slope | `Q325` · not captured | 1.45 | ± | not captured | review_gapfill (not captured) | Zhang_2016:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

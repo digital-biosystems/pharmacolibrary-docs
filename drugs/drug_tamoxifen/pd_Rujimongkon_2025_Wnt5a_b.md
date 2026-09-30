@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ivermectin (measured concentrations) drives Wnt5a/b expression (in fold-change): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ivermectin (not tamoxifen) reduced Wnt5a/b expression (fold-change) in endocrine-resistant breast cancer cells (MCF-7/LCC2, MCF-7/LCC9) after 24 h exposure, with significant reduction at ~9 µM (the 24-h IC50; 9.35 µM for MCF-7/LCC2 and 9.06 µM for MCF-7/LCC9), proposed to reflect downregulation of Wnt ligand expression initiating Wnt pathway inhibition. The paper reports no formal PD model parameters (no Imax, Emax, kin, kout, ke0, or gamma) for the Wnt5a/b response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rujimongkon_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Rujimongkon K; Adchariyasakulchai P; Meeprasertskul P; Ketchart W et al. (2025).
   ·  DOI: [10.1371/journal.pone.0326742](https://doi.org/10.1371/journal.pone.0326742)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 24 h — Ivermectin IC50 (µM) | `Q322` · not captured | 48 | µM | not captured | llm (not captured) | pone.0326742.t001:row1:col1 |
-| 24 h — Ivermectin IC50 (µM) | `Q322` · not captured | 72 | µM | not captured | llm (not captured) | pone.0326742.t001:row1:col2 |
-| MCF-7/LCC2 — Ivermectin IC50 (µM) | `Q322` · not captured | 9.35 | µM | not captured | llm (not captured) | pone.0326742.t001:row2:col1 |
-| MCF-7/LCC9 — Ivermectin IC50 (µM) | `Q322` · not captured | 9.06 | µM | not captured | llm (not captured) | pone.0326742.t001:row3:col1 |
-| MCF-7 — Ivermectin IC50 (µM) | `Q322` · not captured | 10.14 | µM | not captured | llm (not captured) | pone.0326742.t001:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 24 h — Ivermectin IC50 (µM) | `Q322` · not captured | 48 | µM | not captured | llm (not captured) | pone.0326742.t001:row1:col1 |
+| PD (effect) | 24 h — Ivermectin IC50 (µM) | `Q322` · not captured | 72 | µM | not captured | llm (not captured) | pone.0326742.t001:row1:col2 |
+| PD (effect) | MCF-7/LCC2 — Ivermectin IC50 (µM) | `Q322` · not captured | 9.35 | µM | not captured | llm (not captured) | pone.0326742.t001:row2:col1 |
+| PD (effect) | MCF-7/LCC9 — Ivermectin IC50 (µM) | `Q322` · not captured | 9.06 | µM | not captured | llm (not captured) | pone.0326742.t001:row3:col1 |
+| PD (effect) | MCF-7 — Ivermectin IC50 (µM) | `Q322` · not captured | 10.14 | µM | not captured | llm (not captured) | pone.0326742.t001:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

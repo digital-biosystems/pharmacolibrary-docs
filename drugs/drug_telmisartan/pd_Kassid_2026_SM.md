@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives sperm motility (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Telmisartan (TEL), dosed in mg/kg/day, dose-dependently restored cyclophosphamide (CPA)-impaired sperm motility (%), with low, medium, and high doses producing progressively greater recovery and high-dose TEL nearly normalizing motility (efficacy similar to melatonin); the paper attributes this to AT1 receptor blockade plus PPAR-γ partial agonism with antioxidant/anti-apoptotic actions (reduced Bax/caspase-3, increased Bcl-2), but it does not report a quantitative PD model or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

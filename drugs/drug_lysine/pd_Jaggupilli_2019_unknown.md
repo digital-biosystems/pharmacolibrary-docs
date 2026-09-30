@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glyoxal-derived lysine dimer (GOLD) (measured concentrations) drives calcium mobilization (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> GOLD (glyoxal-derived lysine dimer) concentrations (3–200 μM) inhibit quinine-induced calcium mobilization in T2R4-expressing HEK293T cells, acting as an antagonist of quinine activation, with IC50 10.52 ± 4.7 μM (CML weaker, IC50 32.62 ± 9.5 μM); the paper does not state an Emax model or kinetic parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jaggupilli_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

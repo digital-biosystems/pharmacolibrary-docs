@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives plasma ACE activity (in % inhibition): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat, the active di-acid of cilazapril, directly inhibits plasma ACE activity (measured as % inhibition), with an in vitro IC50 of 1.9 nM against rabbit lung ACE; after oral cilazapril in rats plasma ACE activity recovered at a rate of 5-6% h-1 (vs 10% h-1 for enalapril), with peak inhibition of 76% at 0.1 mg kg-1 and &gt;95% at 0.25 mg kg-1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Waterfall_1989`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Waterfall JF et al. (1989). British journal of clinical pharmacology 27 Suppl 2
   ·  DOI: [10.1111/j.1365-2125.1989.tb03475.x](https://doi.org/10.1111/j.1365-2125.1989.tb03475.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Spirapril — IC50 (nM) | `Q322` · not captured | 0.8 | nM | not captured | llm (not captured) | tab_0:row5:col1 |
-| Benazapril — IC50 (nM) | `Q322` · not captured | 1.7 | nM | not captured | llm (not captured) | tab_0:row6:col1 |
-| Fentiapril — IC50 (nM) | `Q322` · not captured | 6.0 | nM | not captured | llm (not captured) | tab_0:row7:col1 |
-| Delapril — IC50 (nM) | `Q322` · not captured | 40.0 | nM | not captured | llm (not captured) | tab_0:row9:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Spirapril — IC50 (nM) | `Q322` · not captured | 0.8 | nM | not captured | llm (not captured) | tab_0:row5:col1 |
+| PD (effect) | Benazapril — IC50 (nM) | `Q322` · not captured | 1.7 | nM | not captured | llm (not captured) | tab_0:row6:col1 |
+| PD (effect) | Fentiapril — IC50 (nM) | `Q322` · not captured | 6.0 | nM | not captured | llm (not captured) | tab_0:row7:col1 |
+| PD (effect) | Delapril — IC50 (nM) | `Q322` · not captured | 40.0 | nM | not captured | llm (not captured) | tab_0:row9:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

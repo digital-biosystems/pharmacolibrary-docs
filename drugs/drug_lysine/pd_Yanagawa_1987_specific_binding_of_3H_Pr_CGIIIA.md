@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CGIIIA drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Unlabeled CGIIIA (and related toxins) concentration-dependently inhibit the specific binding of 3H-Pr-CGIIIA (1 nM) to Electrophorus electroplax Na-channel membranes, with IC50 values of 0.6 nM for CGIIIA, 1.1 nM for CGIIIB, 2.2 nM for saxitoxin, and 7.1 nM for tetrodotoxin; 3H-Pr-CGIIIA itself binds a single class of saturable sites with Kd 1.1 ± 0.2 nM and Bmax 11 ± 2 pmol/mg protein. The paper describes this as competitive binding-site inhibition on the Na channel rather than a production/elimination or Emax kinetic model, and gives no kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yanagawa_1987`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

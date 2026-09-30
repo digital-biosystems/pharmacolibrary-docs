@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ethacridine (measured concentrations) drives name (in PFU/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethacridine (ethacridine lactate) concentrations (μM) reduce SARS-CoV-2 viral titer (PFU/ml) in Vero E6 cells, acting mainly by direct inactivation of viral particles rather than Mpro inhibition; the paper reports an antiviral EC50 of ~0.08 μM (versus Mpro IC50 ~3.54 μM) and 5–6 log titer reduction at 5 μM, but gives no PD model structure or parameters (no Imax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

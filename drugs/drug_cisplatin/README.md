@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Urien_2004_reference](drugs/drug_cisplatin/Cisplatin_Urien2004_reference.md) | parent + metabolite (no model) | 4 | Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C7 apparent-parameter coherence violated (double correction)</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Urien_2004_reference](drugs/drug_cisplatin/Cisplatin_Urien2004_reference.md) | — | parent + metabolite (no model) | 4 | Urien S et al., Population pharmacokinetics of total an…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02082.x](https://doi.org/10.1111/j.1365-2125.2004.02082.x) |
 
 ## ADME sites
 
@@ -38,8 +38,10 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | lung | <sub>“…pancreas, and spleen; and lowest in bowel, adrenal, heart, lung, cerebrum, and cerebellum.…”</sub> | prose |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
+| absorption | prostate gland | <sub>“…g/m^2, the concentrations of platinum are highest in liver, prostate, and kidney; somewhat…”</sub> | prose |
 | absorption | skeletal muscle | <sub>“…in liver, prostate, and kidney; somewhat lower in bladder, muscle, testicle, pancreas, and…”</sub> | prose |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | blood | `BCHE` inhibitor, `GSTT1` substrate | DrugBank actor |
 | metabolism | liver | `BCHE` inhibitor, `CYP2B6` inhibitor, `CYP2C9` inhibitor, `GSTM1` substrate, `GSTP1` substrate, `GSTT1` substrate, `NQO1` substrate, `XDH` inducer | DrugBank actor |

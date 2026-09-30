@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-XL6 drives name (in %) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper models time-dependent % target engagement (%TE) of the covalent drug S-XL6 with its target protein, measured by intact protein mass spectrometry, using an 'intact protein PK/PD' (iPK/PD) model that fits %TE-time curves with the same mathematical operations as concentration-time PK curves (mechanism: covalent drug-target conjugation; no Emax/IC50/kin/kout/ke0 values are stated in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hossain_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

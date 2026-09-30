@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tropifexor drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tropifexor (FXR agonist, oral doses 30–150 μg once daily) dose-dependently decreased plasma levels of the bile acid synthesis marker C4 (7-alpha-hydroxy-4-cholesten-3-one), consistent with FXR-mediated inhibition of C4, with greater decreases on Day 28 than Day 1, though not significant vs. placebo on Day 28 (p &gt;0.05). The paper does not report a quantitative PD model or potency/rate parameters (no Imax, IC50, kin, kout, ke0) for the C4 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schramm_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

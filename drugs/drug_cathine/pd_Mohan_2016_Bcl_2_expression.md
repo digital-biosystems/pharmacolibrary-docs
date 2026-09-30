@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Catha edulis extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports that Catha edulis extract (cathine-rich) significantly decreased Bcl-2 expression in H9c2 cells at the IC50 concentration of 86.5 µg/ml after 24, 48, and 72 hours of incubation. The specific pharmacodynamic mechanism (e.g., direct inhibition of production vs. elimination) and rate constants are not described in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mohan_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

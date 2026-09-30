@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** E-TGN and E-MTX drive name (in unknown): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> In pediatric ALL maintenance therapy, erythrocyte-embedded 6-thioguanine nucleotide (E-TGN) and methotrexate polyglutamate (E-MTX) concentrations drive an indirect response (inhibition of ANC production) model of absolute neutrophil count, with a nonlinear feedback mechanism. Key parameters for the E-MTX effect chain (model PKPDlin,mm6MP) are KinMTX 0.032 1/day (0.029 in cross-validation), KeffMTX 0.019 1/day (0.018), and for the 6MP chain Vmm6MP 0.21 µmol/L/day (0.13), Kmm6MP 0.14 µmol/L (0.046), Keff6MP 0.050 1/day (0.044), and ktr 0.15 1/day (0.17); the paper does not state Imax, IC50, EC50, Emax, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gebhard_2023`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -21,22 +31,22 @@ Gebhard A; Lilienthal P; Metzler M; Rauh M; Sager S; Schmiegelow K; et al. et al
   ·  DOI: [10.1038/s41598-023-38414-0](https://doi.org/10.1038/s41598-023-38414-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| KinMTX[1/day] — PKPDlin,mm6MP | `Q327` · not captured | 0.032 | 1/day | not captured | llm (not captured) | Tab5:row2:col1 |
-| KinMTX[1/day] — PKPDlin,mm6MP, cross-validation | `Q327` · not captured | 0.029 | 1/day | not captured | llm (not captured) | Tab5:row2:col3 |
-| KeffMTX[1/day] — PKPDlin,mm6MP | `Q47` · not captured | 0.019 | 1/day | not captured | llm (not captured) | Tab5:row3:col1 |
-| KeffMTX[1/day] — PKPDlin,mm6MP, cross-validation | `Q47` · not captured | 0.018 | 1/day | not captured | llm (not captured) | Tab5:row3:col3 |
-| Vmm6MP[µmol/L/day] — PKPDlin,mm6MP | `Q66` · not captured | 0.21 | µmol/L/day | not captured | llm (not captured) | Tab5:row4:col1 |
-| Vmm6MP[µmol/L/day] — PKPDlin,mm6MP, cross-validation | `Q66` · not captured | 0.13 | µmol/L/day | not captured | llm (not captured) | Tab5:row4:col3 |
-| Kmm6MP[µmol/L] — PKPDlin,mm6MP | `Q1` · not captured | 0.14 | µmol/L | not captured | llm (not captured) | Tab5:row5:col1 |
-| Kmm6MP[µmol/L] — PKPDlin,mm6MP, cross-validation | `Q1` · not captured | 0.046 | µmol/L | not captured | llm (not captured) | Tab5:row5:col3 |
-| Keff6MP[1/day] — PKPDlin,mm6MP | `Q47` · not captured | 0.050 | 1/day | not captured | llm (not captured) | Tab5:row6:col1 |
-| Keff6MP[1/day] — PKPDlin,mm6MP, cross-validation | `Q47` · not captured | 0.044 | 1/day | not captured | llm (not captured) | Tab5:row6:col3 |
-| ktr[1/day] — PKPDlin,mm6MP | `Q306` · not captured | 0.15 | 1/day | not captured | llm_confirmed (not captured) | Tab5:row8:col1 |
-| ktr[1/day] — PKPDlin,mm6MP, cross-validation | `Q306` · not captured | 0.17 | 1/day | not captured | llm_confirmed (not captured) | Tab5:row8:col3 |
-| Proportional, MTX — PKPDlin,mm6MP | `Q316` · not captured | 0.024 | not captured | not captured | llm (not captured) | Tab5:row14:col1 |
-| Proportional, MTX — PKPDlin,mm6MP | `Q316` · not captured | 0.024 | not captured | not captured | llm (not captured) | Tab5:row14:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | KinMTX[1/day] — PKPDlin,mm6MP | `Q327` · not captured | 0.032 | 1/day | not captured | llm (not captured) | Tab5:row2:col1 |
+| PD (effect) | KinMTX[1/day] — PKPDlin,mm6MP, cross-validation | `Q327` · not captured | 0.029 | 1/day | not captured | llm (not captured) | Tab5:row2:col3 |
+| PK (driver) | KeffMTX[1/day] — PKPDlin,mm6MP | `Q47` · not captured | 0.019 | 1/day | not captured | llm (not captured) | Tab5:row3:col1 |
+| PK (driver) | KeffMTX[1/day] — PKPDlin,mm6MP, cross-validation | `Q47` · not captured | 0.018 | 1/day | not captured | llm (not captured) | Tab5:row3:col3 |
+| PK (driver) | Vmm6MP[µmol/L/day] — PKPDlin,mm6MP | `Q66` · not captured | 0.21 | µmol/L/day | not captured | llm (not captured) | Tab5:row4:col1 |
+| PK (driver) | Vmm6MP[µmol/L/day] — PKPDlin,mm6MP, cross-validation | `Q66` · not captured | 0.13 | µmol/L/day | not captured | llm (not captured) | Tab5:row4:col3 |
+| PK (driver) | Kmm6MP[µmol/L] — PKPDlin,mm6MP | `Q1` · not captured | 0.14 | µmol/L | not captured | llm (not captured) | Tab5:row5:col1 |
+| PK (driver) | Kmm6MP[µmol/L] — PKPDlin,mm6MP, cross-validation | `Q1` · not captured | 0.046 | µmol/L | not captured | llm (not captured) | Tab5:row5:col3 |
+| PK (driver) | Keff6MP[1/day] — PKPDlin,mm6MP | `Q47` · not captured | 0.050 | 1/day | not captured | llm (not captured) | Tab5:row6:col1 |
+| PK (driver) | Keff6MP[1/day] — PKPDlin,mm6MP, cross-validation | `Q47` · not captured | 0.044 | 1/day | not captured | llm (not captured) | Tab5:row6:col3 |
+| PK (driver) | ktr[1/day] — PKPDlin,mm6MP | `Q306` · not captured | 0.15 | 1/day | not captured | llm_confirmed (not captured) | Tab5:row8:col1 |
+| PK (driver) | ktr[1/day] — PKPDlin,mm6MP, cross-validation | `Q306` · not captured | 0.17 | 1/day | not captured | llm_confirmed (not captured) | Tab5:row8:col3 |
+| variability | Proportional, MTX — PKPDlin,mm6MP | `Q316` · not captured | 0.024 | not captured | not captured | llm (not captured) | Tab5:row14:col1 |
+| variability | Proportional, MTX — PKPDlin,mm6MP | `Q316` · not captured | 0.024 | not captured | not captured | llm (not captured) | Tab5:row14:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

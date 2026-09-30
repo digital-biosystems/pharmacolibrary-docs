@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Penicillin drives name (in count/ml) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Penicillin (units/ml) acts on Clostridium botulinum cultures in 8% polyethylene glycol, with a dose-response relationship in which higher concentrations (5,000–10,000 units/ml) convert bacilli into protoplast-like spheres while lower concentrations lead to lysis, leaving relatively few intact bacilli (count/ml). The paper does not state a pharmacodynamic mechanism or any potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brown_1970`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

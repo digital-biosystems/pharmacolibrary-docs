@@ -23,20 +23,20 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | 2-compartment, IV | 10 | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | 3-compartment, oral | 12 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | 3-compartment, oral | 8 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | 1-compartment (no model) | 1 (+1 cov.) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Pypendop_2021_reference](drugs/drug_butorphanol/Butorphanol_Pypendop2021_reference.md) | ▶ model + simulator | 2-compartment, IV | 10 | Pypendop BH et al., Pharmacokinetics of butorphanol in male…, Journal of veterinary pharm… (2021) | [10.1111/jvp.13014](https://doi.org/10.1111/jvp.13014) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_estimate](drugs/drug_butorphanol/Butorphanol_Knych2024_estimate.md) | ▶ model + simulator | 3-compartment, oral | 12 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_cmax</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Knych_2024_shrinkage](drugs/drug_butorphanol/Butorphanol_Knych2024_shrinkage.md) | ▶ model + simulator | 3-compartment, oral | 8 | Knych HK et al., Population pharmacokinetics of butorpha…, Journal of veterinary pharm… (2024) | [10.1111/jvp.13450](https://doi.org/10.1111/jvp.13450) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Saeed_2026_reference](drugs/drug_butorphanol/Butorphanol_Saeed2026_reference.md) | — | 1-compartment (no model) | 1 (+1 cov.) | Saeed AM et al., Butorphanol Pharmacokinetics Across Spe…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70293](https://doi.org/10.1002/psp4.70293) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2023](drugs/drug_butorphanol/pd_Guo_2023_unknown.md) | Guo F et al., Efficacy and safety of propofol target-…, World journal of clinical c… (2023) | [10.12998/wjcc.v11.i3.610](https://doi.org/10.12998/wjcc.v11.i3.610) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020](drugs/drug_butorphanol/pd_Vandeputte_2020_betaarr2.md) | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020](drugs/drug_butorphanol/pd_Vandeputte_2020_mini_Gi.md) | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Guo_2023_unknown](drugs/drug_butorphanol/pd_Guo_2023_unknown.md) | awakening ← propofol · stimulation effect | — | Guo F et al., Efficacy and safety of propofol target-…, World journal of clinical c… (2023) | [10.12998/wjcc.v11.i3.610](https://doi.org/10.12998/wjcc.v11.i3.610) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020_betaarr2](drugs/drug_butorphanol/pd_Vandeputte_2020_betaarr2.md) | beta-arrestin2 recruitment ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Vandeputte_2020_mini_Gi](drugs/drug_butorphanol/pd_Vandeputte_2020_mini_Gi.md) | G protein (mini-Gi) recruitment ← unknown · direct Emax (saturable) effect | — | Vandeputte MM et al., In vitro functional characterization of…, Archives of toxicology (2020) | [10.1007/s00204-020-02855-7](https://doi.org/10.1007/s00204-020-02855-7) |
 
 ## Pharmacogenomics (PGx)
 
@@ -61,6 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | skeletal muscle | <sub>“…Rapidly absorbed after intramuscular injection and peak plasma levels are reached in 20-40…”</sub> | prose |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | <sub>“…Extensively metabolized in the liver. The pharmacological activity of butorphanol metaboli…”</sub> | prose |
 | excretion | bile duct | <sub>“…y metabolized in the liver. Elimination occurs by urine and fecal excretion.…”</sub> | prose |
 | excretion | kidney | <sub>“…extensively metabolized in the liver. Elimination occurs by urine and fecal excretion.…”</sub> | prose |

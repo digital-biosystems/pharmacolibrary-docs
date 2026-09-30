@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PDGF-BB (measured concentrations) drives proteoglycan synthesis (in dpm/mg dwt): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> PDGF-BB (0.1–30 ng/mL) dose-dependently stimulates proteoglycan synthesis, measured as 35S-sulfate incorporation (dpm/mg dwt), in rabbit tendon segments via a direct stimulatory Emax-type concentration–response relationship; the paper does not state numeric Emax or ED50 values for proteoglycan synthesis in the excerpts, and no turnover or effect-compartment mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoshikawa_2001`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

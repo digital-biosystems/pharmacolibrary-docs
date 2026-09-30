@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tetracycline (concentrations from the PK model of Anadón_1985) drives mIL-12 levels (in relative units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Tetracycline (0.4–50 μM) stimulates secreted mIL-12 levels (relative units, ELISA) via a tetracycline-inducible −1 programmed ribosomal frameshifting (PRF) platform controlling mIL-12 translation; the paper does not state a pharmacological mechanism beyond this dose-dependent frameshifting-mediated expression increase. mIL-12 expression rose from ~0.5% of positive control (background) to 1.6% at 0.4 μM and 7.4% at 50 μM tetracycline, fitted to a sigmoidal dose-response curve with Hill slope fixed at 1.0; no IC50, EC50, or Emax values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Köse_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

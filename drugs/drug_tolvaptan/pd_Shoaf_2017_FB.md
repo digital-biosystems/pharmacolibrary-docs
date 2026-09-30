@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from this paper's PK model) drives fluid balance (in mL): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for tolvaptan's effect on fluid balance; it only reports descriptive data showing that single doses of 3.75, 7.5, and 15 mg increase urine output and free water clearance (via vasopressin V2 antagonism), producing negative fluid balance (fluid intake minus urine output, e.g. ~1 L negative in SIADH patients) that correlates with maximal serum sodium increases (r2 = 0.37). No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for the fluid-balance response are given; only PK parameters (e.g. Cmax 35.6–157 ng/mL, t1/2 4.3–6.0 h) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shoaf_2017`
 - **model family:** `linear`
 - **driver:** `pk_record`
@@ -21,32 +31,32 @@ Shoaf SE; Bricmont P; Dandurand A et al. (2017). European journal of clinical ph
   ·  DOI: [10.1007/s00228-017-2302-7](https://doi.org/10.1007/s00228-017-2302-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C max (ng/mL) — Healthy adults | `Q32` · not captured | 35.6 | ng/mL | not captured | llm (not captured) | Tab2:row2:col1 |
-| C max (ng/mL) — Healthy adults | `Q32` · not captured | 57.8 | ng/mL | not captured | llm (not captured) | Tab2:row2:col2 |
-| C max (ng/mL) — Healthy adults | `Q32` · not captured | 119 | ng/mL | not captured | llm (not captured) | Tab2:row2:col3 |
-| C max (ng/mL) — SIADH patients | `Q32` · not captured | 37.7 | ng/mL | not captured | llm (not captured) | Tab2:row2:col4 |
-| C max (ng/mL) — SIADH patients | `Q32` · not captured | 107 | ng/mL | not captured | llm (not captured) | Tab2:row2:col5 |
-| C max (ng/mL) — SIADH patients | `Q32` · not captured | 157 | ng/mL | not captured | llm (not captured) | Tab2:row2:col6 |
-| AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 222 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col1 |
-| AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 398 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col2 |
-| AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 728 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col3 |
-| AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 244 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col4 |
-| AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 655 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col5 |
-| AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 1000 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col6 |
-| t 1/2,z (h) — Healthy adults | `Q57` · not captured | 4.3 | h | not captured | llm (not captured) | Tab2:row5:col1 |
-| t 1/2,z (h) — Healthy adults | `Q57` · not captured | 5.2 | h | not captured | llm (not captured) | Tab2:row5:col2 |
-| t 1/2,z (h) — Healthy adults | `Q57` · not captured | 5.8 | h | not captured | llm (not captured) | Tab2:row5:col3 |
-| t 1/2,z (h) — SIADH patients | `Q57` · not captured | 4.6 | h | not captured | llm (not captured) | Tab2:row5:col4 |
-| t 1/2,z (h) — SIADH patients | `Q57` · not captured | 6.0 | h | not captured | llm (not captured) | Tab2:row5:col5 |
-| t 1/2,z (h) — SIADH patients | `Q57` · not captured | 5.9 | h | not captured | llm (not captured) | Tab2:row5:col6 |
-| CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 4.81 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col1 |
-| CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 5.46 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col2 |
-| CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 5.90 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col3 |
-| CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 5.00 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col4 |
-| CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 5.74 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col5 |
-| CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 4.91 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | C max (ng/mL) — Healthy adults | `Q32` · not captured | 35.6 | ng/mL | not captured | llm (not captured) | Tab2:row2:col1 |
+| PK (driver) | C max (ng/mL) — Healthy adults | `Q32` · not captured | 57.8 | ng/mL | not captured | llm (not captured) | Tab2:row2:col2 |
+| PK (driver) | C max (ng/mL) — Healthy adults | `Q32` · not captured | 119 | ng/mL | not captured | llm (not captured) | Tab2:row2:col3 |
+| PK (driver) | C max (ng/mL) — SIADH patients | `Q32` · not captured | 37.7 | ng/mL | not captured | llm (not captured) | Tab2:row2:col4 |
+| PK (driver) | C max (ng/mL) — SIADH patients | `Q32` · not captured | 107 | ng/mL | not captured | llm (not captured) | Tab2:row2:col5 |
+| PK (driver) | C max (ng/mL) — SIADH patients | `Q32` · not captured | 157 | ng/mL | not captured | llm (not captured) | Tab2:row2:col6 |
+| PK (driver) | AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 222 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col1 |
+| PK (driver) | AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 398 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col2 |
+| PK (driver) | AUC∞ (ng · h/mL) — Healthy adults | `Q17` · not captured | 728 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col3 |
+| PK (driver) | AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 244 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col4 |
+| PK (driver) | AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 655 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col5 |
+| PK (driver) | AUC∞ (ng · h/mL) — SIADH patients | `Q17` · not captured | 1000 | ng · h/mL | not captured | exact (not captured) | Tab2:row4:col6 |
+| PK (driver) | t 1/2,z (h) — Healthy adults | `Q57` · not captured | 4.3 | h | not captured | llm (not captured) | Tab2:row5:col1 |
+| PK (driver) | t 1/2,z (h) — Healthy adults | `Q57` · not captured | 5.2 | h | not captured | llm (not captured) | Tab2:row5:col2 |
+| PK (driver) | t 1/2,z (h) — Healthy adults | `Q57` · not captured | 5.8 | h | not captured | llm (not captured) | Tab2:row5:col3 |
+| PK (driver) | t 1/2,z (h) — SIADH patients | `Q57` · not captured | 4.6 | h | not captured | llm (not captured) | Tab2:row5:col4 |
+| PK (driver) | t 1/2,z (h) — SIADH patients | `Q57` · not captured | 6.0 | h | not captured | llm (not captured) | Tab2:row5:col5 |
+| PK (driver) | t 1/2,z (h) — SIADH patients | `Q57` · not captured | 5.9 | h | not captured | llm (not captured) | Tab2:row5:col6 |
+| PK (driver) | CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 4.81 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col1 |
+| PK (driver) | CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 5.46 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col2 |
+| PK (driver) | CL/F (mL/min/kg) — Healthy adults | `Q27` · not captured | 5.90 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col3 |
+| PK (driver) | CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 5.00 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col4 |
+| PK (driver) | CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 5.74 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col5 |
+| PK (driver) | CL/F (mL/min/kg) — SIADH patients | `Q27` · not captured | 4.91 | mL/min/kg | not captured | exact (not captured) | Tab2:row6:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

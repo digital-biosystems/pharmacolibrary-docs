@@ -23,16 +23,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990_reference](drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_reference.md) | 1-compartment (no model) | 3 | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Setnikar_1990_reference](drugs/drug_sodium_fluoride/SodiumFluoride_Setnikar1990_reference.md) | — | 1-compartment (no model) | 3 | Setnikar I et al., Relative bioavailability of fluoride fr…, Arzneimittel-Forschung (1990) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2010](drugs/drug_sodium_fluoride/pd_Yang_2010_Vascular_tension.md) | Yang E et al., Calcium sensitization induced by sodium…, The Korean journal of physi… (2010) | [10.4196/kjpp.2010.14.1.51](https://doi.org/10.4196/kjpp.2010.14.1.51) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Discigil_2008](drugs/drug_sodium_fluoride/pd_Discigil_2008_vascular_relaxation.md) | Discigil B et al., High-frequency ultrasonic waves cause e…, Revista brasileira de cirur… (2008) | [10.1590/s0102-76382008000200007](https://doi.org/10.1590/s0102-76382008000200007) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Yang_2010_Vascular_tension](drugs/drug_sodium_fluoride/pd_Yang_2010_Vascular_tension.md) | name ← Sodium Fluoride · direct Emax (saturable) effect | — | Yang E et al., Calcium sensitization induced by sodium…, The Korean journal of physi… (2010) | [10.4196/kjpp.2010.14.1.51](https://doi.org/10.4196/kjpp.2010.14.1.51) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Discigil_2008_vascular_relaxation](drugs/drug_sodium_fluoride/pd_Discigil_2008_vascular_relaxation.md) | name ← unknown · inhibition effect | — | Discigil B et al., High-frequency ultrasonic waves cause e…, Revista brasileira de cirur… (2008) | [10.1590/s0102-76382008000200007](https://doi.org/10.1590/s0102-76382008000200007) |
 
 ## ADME sites
 

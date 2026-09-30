@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-palmitoyl glycine (measured concentrations) drives TRPM4 current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> N-palmitoyl glycine (PalGly) inhibits TRPM4 current in a dose-dependent manner, acting as a direct channel antagonist (binding the hTRPM4 regulatory pocket involving Asn1017 and Arg964), with an IC50 of 7 nM; no Emax, kin/kout, or effect-compartment parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

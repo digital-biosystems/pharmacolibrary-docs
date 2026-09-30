@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018_pediatric patients with sickle cell anemia](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | 1-compartment, IV | 0 | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Moser_2018_pediatric patients with sickle cell anemia](drugs/drug_prasugrel/Prasugrel_Moser2018_pediatric_patients_with_sickle_cell_anem.md) | held back | 1-compartment, IV | 0 | Moser BA et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2018) | [10.1007/s40262-017-0556-y](https://doi.org/10.1007/s40262-017-0556-y) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2023](drugs/drug_prasugrel/pd_Kim_2023_maximal_platelet_aggregation.md) | Kim MJ et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1172](https://doi.org/10.1002/cpdd.1172) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Kim_2023_maximal_platelet_aggregation](drugs/drug_prasugrel/pd_Kim_2023_maximal_platelet_aggregation.md) | name ← R-138727 · inhibition effect | — | Kim MJ et al., Pharmacokinetic and Pharmacodynamic Mod…, Clinical pharmacology in dr… (2023) | [10.1002/cpdd.1172](https://doi.org/10.1002/cpdd.1172) |
 
 ## ADME sites
 

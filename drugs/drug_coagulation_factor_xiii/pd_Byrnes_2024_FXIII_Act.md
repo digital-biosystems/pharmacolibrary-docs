@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RFXIII-A2 drives FXIII activity (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a resolved PD mechanism or potency parameters for the effect of rFXIII-A2 dosing (4 or 8 mg/kg) on FXIII activity/FXIII-B levels; it reports only that rFXIII-A2 increases circulating FXIII-B levels, that F13b transcription and translation were unchanged, and that FXIII-A PK appeared non-linear (AUC0-inf 1465 vs 1590 µg*hr/mL for 4 vs 8 mg/kg), with PD estimates derived by nonlinear mixed-effects modeling per Sharma and Jusko.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Byrnes_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

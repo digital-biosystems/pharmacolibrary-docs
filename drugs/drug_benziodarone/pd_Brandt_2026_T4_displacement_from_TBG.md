@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tetrac (measured concentrations) drives name (in nM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Benziodarone was tested in the in vitro THPB-assay, where increasing concentrations of the test compound displace T4 (100 nM, with 215 nM TBG) from its binding protein, measured as protein-bound T4 (nM) by LC-MS or 125I gamma counting; the effect is a direct concentration-dependent displacement (inhibition of T4 binding), with Tetrac used as the reference compound for TBG assays. The excerpts do not state an IC50, Imax, or other potency values for benziodarone's displacement of T4 from TBG.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brandt_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

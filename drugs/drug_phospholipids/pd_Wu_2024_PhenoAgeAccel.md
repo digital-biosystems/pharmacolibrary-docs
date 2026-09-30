@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omega-3 fatty acids drives name (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> This is not a pharmacodynamic model: dietary Omega-3 fatty acid intake (grams/day) is cross-sectionally associated with PhenoAgeAccel in NHANES adults, with a significant negative linear association (β = −0.071 per gram/day, 95% CI −0.119 to −0.024) and a two-piece segmented regression identifying an inflection point at 1.103 grams/day, below which intake is negatively associated with PhenoAgeAccel (β = −0.482) and above which the association is not significant (β = −0.041). No mechanism, drug concentrations, or PD parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2024`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -21,30 +31,30 @@ Wu D; Jia Y; Liu Y; Shang M et al. (2024). Frontiers in nutrition 11
   ·  DOI: [10.3389/fnut.2024.1424156](https://doi.org/10.3389/fnut.2024.1424156)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Q1 [0.93,504] — Quantile 3(−2.83, 0.13] | `Q30` · not captured | 1672 | weighted % | not captured | llm_confirmed (not captured) | tab1:row45:col4 |
-| Q2 (504, 2,160] — Overall | `Q99` · not captured | 6787 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col1 |
-| Q2 (504, 2,160] — Quantile 1[−18.38, −5.65] | `Q99` · not captured | 1863 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col2 |
-| Q2 (504, 2,160] — Quantile 2(−5.65, −2.83] | `Q99` · not captured | 1685 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col3 |
-| Q2 (504, 2,160] — Quantile 3(−2.83, 0.13] | `Q99` · not captured | 1658 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col4 |
-| Q2 (504, 2,160] — Quantile 4(0.13, 23.38] | `Q99` · not captured | 1581 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col5 |
-| Q3 (2,160,58,320] — Overall | `Q308` · not captured | 6731 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col1 |
-| Q3 (2,160,58,320] — Quantile 1[−18.38, −5.65] | `Q308` · not captured | 1574 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col2 |
-| Q3 (2,160,58,320] — Quantile 2(−5.65, −2.83] | `Q308` · not captured | 1675 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col3 |
-| Q3 (2,160,58,320] — Quantile 3(−2.83, 0.13] | `Q308` · not captured | 1752 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col4 |
-| Q3 (2,160,58,320] — Quantile 4(0.13, 23.38] | `Q308` · not captured | 1730 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col5 |
-| Q1 [0,44.27] — Quantile 3(−2.83, 0.13] | `Q30` · not captured | 1787 | weighted % | not captured | llm_confirmed (not captured) | tab1:row49:col4 |
-| Q2 (44.27,56.38] — Overall | `Q99` · not captured | 6779 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col1 |
-| Q2 (44.27,56.38] — Quantile 1[−18.38, −5.65] | `Q99` · not captured | 1648 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col2 |
-| Q2 (44.27,56.38] — Quantile 2(−5.65, −2.83] | `Q99` · not captured | 1660 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col3 |
-| Q2 (44.27,56.38] — Quantile 3(−2.83, 0.13] | `Q99` · not captured | 1736 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col4 |
-| Q2 (44.27,56.38] — Quantile 4(0.13, 23.38] | `Q99` · not captured | 1735 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col5 |
-| Q3 (56.38,96.35] — Overall | `Q308` · not captured | 6779 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col1 |
-| Q3 (56.38,96.35] — Quantile 1[−18.38, −5.65] | `Q308` · not captured | 2121 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col2 |
-| Q3 (56.38,96.35] — Quantile 2(−5.65, −2.83] | `Q308` · not captured | 1788 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col3 |
-| Q3 (56.38,96.35] — Quantile 3(−2.83, 0.13] | `Q308` · not captured | 1559 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col4 |
-| Q3 (56.38,96.35] — Quantile 4(0.13, 23.38] | `Q308` · not captured | 1311 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Q1 [0.93,504] — Quantile 3(−2.83, 0.13] | `Q30` · not captured | 1672 | weighted % | not captured | llm_confirmed (not captured) | tab1:row45:col4 |
+| PK (driver) | Q2 (504, 2,160] — Overall | `Q99` · not captured | 6787 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col1 |
+| PK (driver) | Q2 (504, 2,160] — Quantile 1[−18.38, −5.65] | `Q99` · not captured | 1863 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col2 |
+| PK (driver) | Q2 (504, 2,160] — Quantile 2(−5.65, −2.83] | `Q99` · not captured | 1685 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col3 |
+| PK (driver) | Q2 (504, 2,160] — Quantile 3(−2.83, 0.13] | `Q99` · not captured | 1658 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col4 |
+| PK (driver) | Q2 (504, 2,160] — Quantile 4(0.13, 23.38] | `Q99` · not captured | 1581 | weighted % | not captured | llm_confirmed (not captured) | tab1:row46:col5 |
+| PK (driver) | Q3 (2,160,58,320] — Overall | `Q308` · not captured | 6731 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col1 |
+| PK (driver) | Q3 (2,160,58,320] — Quantile 1[−18.38, −5.65] | `Q308` · not captured | 1574 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col2 |
+| PK (driver) | Q3 (2,160,58,320] — Quantile 2(−5.65, −2.83] | `Q308` · not captured | 1675 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col3 |
+| PK (driver) | Q3 (2,160,58,320] — Quantile 3(−2.83, 0.13] | `Q308` · not captured | 1752 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col4 |
+| PK (driver) | Q3 (2,160,58,320] — Quantile 4(0.13, 23.38] | `Q308` · not captured | 1730 | weighted % | not captured | llm_confirmed (not captured) | tab1:row47:col5 |
+| PK (driver) | Q1 [0,44.27] — Quantile 3(−2.83, 0.13] | `Q30` · not captured | 1787 | weighted % | not captured | llm_confirmed (not captured) | tab1:row49:col4 |
+| PK (driver) | Q2 (44.27,56.38] — Overall | `Q99` · not captured | 6779 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col1 |
+| PK (driver) | Q2 (44.27,56.38] — Quantile 1[−18.38, −5.65] | `Q99` · not captured | 1648 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col2 |
+| PK (driver) | Q2 (44.27,56.38] — Quantile 2(−5.65, −2.83] | `Q99` · not captured | 1660 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col3 |
+| PK (driver) | Q2 (44.27,56.38] — Quantile 3(−2.83, 0.13] | `Q99` · not captured | 1736 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col4 |
+| PK (driver) | Q2 (44.27,56.38] — Quantile 4(0.13, 23.38] | `Q99` · not captured | 1735 | weighted % | not captured | llm_confirmed (not captured) | tab1:row50:col5 |
+| PK (driver) | Q3 (56.38,96.35] — Overall | `Q308` · not captured | 6779 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col1 |
+| PK (driver) | Q3 (56.38,96.35] — Quantile 1[−18.38, −5.65] | `Q308` · not captured | 2121 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col2 |
+| PK (driver) | Q3 (56.38,96.35] — Quantile 2(−5.65, −2.83] | `Q308` · not captured | 1788 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col3 |
+| PK (driver) | Q3 (56.38,96.35] — Quantile 3(−2.83, 0.13] | `Q308` · not captured | 1559 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col4 |
+| PK (driver) | Q3 (56.38,96.35] — Quantile 4(0.13, 23.38] | `Q308` · not captured | 1311 | weighted % | not captured | llm_confirmed (not captured) | tab1:row51:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

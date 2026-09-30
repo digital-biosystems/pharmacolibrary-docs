@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GPEGPMGLE, EGPFGPEG, GFIGPTE (measured concentrations) drive Superoxide dismutase (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The collagen peptides GPEGPMGLE (RCP2), EGPFGPEG (RCP3), and GFIGPTE (RCP5) increased intracellular SOD levels in H2O2-damaged HepG2 cells relative to the H2O2 group (p &lt; 0.05), with RCP2 showing the strongest effect; the paper does not state a PD model, potency (EC50/IC50/Emax), or rate parameters for the SOD response, and although the record labels the effect as inhibition, the paper describes an increase (upregulation) of SOD, with no mechanism given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Wang WY; Zhao YQ; Zhao GX; Chi CF; Wang B et al. (2020). Marine drugs 18
   ·  DOI: [10.3390/md18030156](https://doi.org/10.3390/md18030156)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
-| Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
+| PK (driver) | Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

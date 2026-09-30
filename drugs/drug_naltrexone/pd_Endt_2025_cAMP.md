@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carfentanil (measured concentrations) drives cAMP (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In HEK293 cells overexpressing the µOR, carfentanil concentration-dependently inhibited forskolin-induced cAMP accumulation (Emax-type inhibition), acting via µOR activation; the paper does not state kin/kout or an effect-compartment mechanism. Carfentanil was the most potent opioid with an EC50 of 0.016 ± 0.001 nM (~620-fold more potent than morphine), and naltrexone, unlike naloxone or nalmefene, effectively antagonized this cAMP inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Endt_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

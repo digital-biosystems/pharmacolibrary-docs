@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives platelet aggregation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Isoprenaline (β-adrenoceptor agonist) inhibits platelet aggregation responses to excitatory agonists (e.g. thrombin, ADP), an effect mediated via β-adrenoceptor stimulation (blocked by propranolol) and linked to inhibition of the platelet cyclic AMP increase; the record specifies an Emax (inhibitory) model, but the excerpts give no numeric IC50, Emax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kerry_1983`
 - **model family:** `emax`
 - **driver:** `not_resolved`

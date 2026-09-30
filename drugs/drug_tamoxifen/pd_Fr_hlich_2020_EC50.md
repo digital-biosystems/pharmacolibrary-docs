@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tamoxifen-artemisinin hybrids, estrogen-artemisinin hybrids (measured concentrations) drive cell viability (in μM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tamoxifen-artemisinin and estrogen-artemisinin hybrid compounds inhibit viability of PC-3 prostate and MCF-7 breast cancer cells in a dose-dependent manner, with EC50 values of 1.07–45.6 μM (PC-3) and 2.08–23.8 μM (MCF-7); the most potent were hybrids 28 (1.07 μM) and 27 (1.18 μM) against PC-3 and hybrid 23 (2.08 μM) against MCF-7, compared with afimoxifene (75.1 μM PC-3; 19.3 μM MCF-7). The paper reports only EC50 values from concentration-response testing and does not state a pharmacodynamic mechanism or Emax/Imax parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fröhlich_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GDC-0334 (measured concentrations) drives name (in DBF): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> GDC-0334 plasma concentration (ng/ml) inhibits AITC-induced dermal blood flow (DBF) via a sigmoid Emax model (direct effect; indirect-response models were not supported given the time-scale mismatch). The paper does not state numeric values for DEmax, DEC50, or gamma in the excerpts, but notes PD activity beginning above ~30 ng/ml and near-complete, saturated inhibition above ~250 ng/ml.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The verapamil record was rejected because the apparent volume of distribution unit (1/kg) is dimensionally inconsistent with the reported value.**
+
+The record lists an apparent volume of distribution of 2.51 with the unit 1/kg, which is dimensionally invalid for a volume parameter. Additionally, the record was built from the abstract alone, so the reported summary statistics stand in for a fitted model. A second reader disagreed on the parameterization, identifying it as mechanistic rather than apparent, and noted that several parameters were missing from the primary record. Extracted — verapamil: t1/2α 0.23 hour, t1/2β 4.21 hour, V/F 2.51 1/kg, CLb 501 ml/min, tmax 1.84 hour, Cmax 219 ng/ml, Fab 22.5 %.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has verapamil, the second reading unknown; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Koike Y; Shimamura K; Shudo I; Saito H et al. (1979). Research communications in chemical pathology and pharmacology 24

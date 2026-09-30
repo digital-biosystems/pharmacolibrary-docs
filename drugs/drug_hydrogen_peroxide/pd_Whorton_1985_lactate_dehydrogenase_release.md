@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydrogen peroxide drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hydrogen peroxide produced a time- and dose-dependent lactate dehydrogenase release from cultured endothelial cells, but only at doses in excess of 0.5 mM and incubation times in excess of 1 h, in contrast to its much more potent inhibition of PGI2 synthesis (IC50 35 µM, maximal within 1 min). The paper does not state a pharmacodynamic model or mechanism (e.g., Imax, IC50, kin/kout) for the LDH release response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Whorton_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

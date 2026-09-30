@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023::gs_441524) drives SARS-CoV-2 inhibition (in nM): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Remdesivir concentrations (nM) directly inhibit SARS-CoV-2 replication in Vero E6 cells measured by plaque-formation assay, with a dose-dependent inhibitory Emax-type effect and EC50 of 291 ± 91 nM (EC50 3,962 ± 303 nM by IFA); the paper does not state a formal PD model structure, but mechanistically remdesivir, a prodrug metabolized to a nucleoside triphosphate, irreversibly binds viral RdRp to block viral transcription.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsu_2021`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,13 +31,13 @@ Hsu HY; Yang CW; Lee YZ; Lin YL; Chang SY; Yang RB; et al. et al. (2021). Fronti
   ·  DOI: [10.3389/fphar.2021.706901](https://doi.org/10.3389/fphar.2021.706901)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 96 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 85 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
-| SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 3962 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
-| SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 291 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
-| HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 224 | nM | not captured | llm (not captured) | tab_0:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 96 | nM | not captured | llm (not captured) | tab_0:row2:col3 |
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 85 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
+| PD (effect) | SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 3962 | nM | not captured | llm (not captured) | tab_0:row4:col3 |
+| PD (effect) | SARS-CoV-2 — EC50 (nM) | `Q321` · not captured | 291 | nM | not captured | llm (not captured) | tab_0:row5:col3 |
+| PD (effect) | HCoV-OC43 — EC50 (nM) | `Q321` · not captured | 224 | nM | not captured | llm (not captured) | tab_0:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

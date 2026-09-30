@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carfentanil (measured concentrations) drives ERK-1/2 phosphorylation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe naltrexone acting on ERK-1/2 phosphorylation; the measured response p-ERK-1/2 in HEK293-µOR cells is driven by opioid agonists, with carfentanil producing a direct concentration–response (Emax-type) stimulation of ERK-1/2 phosphorylation via µOR G-protein signaling, EC50 = 0.21 ± 0.11 nM at 2.5 min (morphine EC50 = 41.0 ± 11.3 nM), plus a delayed β-arrestin-associated second peak at 20–30 min. No mechanism or potency values for naltrexone on this response are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Endt_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

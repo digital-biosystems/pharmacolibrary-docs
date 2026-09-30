@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliceridine (the dose) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Oliceridine bolus dose (μg/kg) suppresses the binary bronchoscopy response to fiberoptic bronchoscopy under cipepofol sedation, analyzed by Dixon's up-and-down method and probit dose-response; no mechanistic PD model (e.g., Emax, kin/kout) is given. Probit ED50 was 30.20 (95% CI 19.98–38.78) μg/kg in males and 40.47 (95% CI 29.49–51.40) μg/kg in females, with ED95 of 46.49 (95% CI 38.23–105.37) and 57.55 (95% CI 48.50–141.34) μg/kg, respectively; Dixon ED50 was 35.00 (35.00–36.00) μg/kg (males) and 45.00 (35.00–45.00) μg/kg (females).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2025`
 - **model family:** `categorical`
 - **driver:** `dose_only`

@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives ratio of 1-methyluric acid over 1-methylxanthine (in mg equivalents of 1MX) (the model form was not identified).
 
-> Steady-state plasma oxypurinol concentrations inhibit xanthine oxidase activity, measured as the urinary ratio of 1-methyluric acid to 1-methylxanthine (1MU/1MX), via a sigmoid Emax model. The C50 for oxypurinol was 26.38 mM, with a maximum effect ratio (Emax) of 2.27 and a Hill coefficient (gamma) of 8.92.
+**Model:** No model was generated from this record.
+
+> Steady-state plasma oxypurinol (the active metabolite of allopurinol, in mM) inhibits xanthine oxidase, measured as the urinary 1MU/1MX ratio after a 50 mg IV 1MX dose, described by an inhibition sigmoid Emax model with C50 = 26.38±4.87 mM (4.01 mg l−1), slope c = 8.92, and predicted Ro and Emax of 2.63 and 2.27; C90 was 33.75 mM (5.13 mg l−1).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Graham_1996`
 - **model family:** `unknown`

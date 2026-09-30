@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Laevifolin A (measured concentrations) drives name (in % apoptotic cells) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for menadione on apoptosis. Menadione (100 µM) served as a positive control, significantly increasing the percentage of apoptotic HT-29 cells (Annexin V-FITC/PI assay), while Laevifolin A at its IC50 of 21.2 µM did not induce apoptosis; no mechanism, potency (Imax/IC50/EC50/Emax) or rate parameters (kin/kout/ke0/gamma) for this response are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Siew_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vutrisiran drives serum transthyretin (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Vutrisiran (25 mg subcutaneously every 3 months) reduces serum transthyretin (TTR) by inhibiting hepatic TTR synthesis via RNAi; PK/PD modeling simulated the serum TTR time course, but the excerpts do not state the model structure (e.g., effect compartment) or any potency/rate parameters (Imax, IC50, kin, kout, ke0). Observed median TTR knockdown was 64.2% at Week 3 and 86.2% at steady-state trough in HELIOS-A, and 69.0% at Week 6 and 82.5% at steady-state trough in HELIOS-B, with model-predicted median knockdown of approximately 50% by 3 weeks after the first dose.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fontana_2026`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

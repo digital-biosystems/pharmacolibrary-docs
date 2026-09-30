@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Ansari_2022_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md) | 1-compartment, IV | 2 | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ansari_2025_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md) | 2-compartment (no model) | 3 | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Ansari_2022_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ansari JR et al., Calcium chloride for the prevention of…, Journal of clinical anesthe… (2022) | [10.1016/j.jclinane.2022.110796](https://doi.org/10.1016/j.jclinane.2022.110796) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ansari_2025_reference](drugs/drug_calcium_chloride/CalciumChloride_Ansari2025_reference.md) | — | 2-compartment (no model) | 3 | Ansari JR et al., Bioequivalence and Pharmacokinetics of…, Anesthesiology (2025) | [10.1097/ALN.0000000000005248](https://doi.org/10.1097/ALN.0000000000005248) |
 
 ## ADME sites
 

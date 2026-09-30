@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salmeterol (measured concentrations) drives relaxation of methacholine-induced tone (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In bovine tracheal smooth muscle strips, salbutamol (1 µM) directly relaxed methacholine (0.5 µM)-maintained tone, producing maximal reversal of 79.3 ± 14.0% within 5 min, a faster and larger effect than salmeterol (0.1 µM; 26.2 ± 6.0% at 33 min). The paper does not state a formal PD model or potency parameters (EC50/IC50) for the relaxation response itself; EC50 values are given only for cyclic AMP accumulation (salbutamol 169 [99–290] nM) and inhibition of histamine-stimulated inositol phosphate accumulation (salbutamol IC50 13.8 [7.0–27.4] nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ellis_1995`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 8'-hydroxy-dihydroergotamine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In rat brainstem slices, dihydroergotamine (DHE) and its metabolite 8'-hydroxy-DHE concentration-dependently inhibited the firing of serotoninergic neurons in the dorsal raphe nucleus, an effect mediated by 5-HT1A receptor stimulation (prevented by WAY 100635), with EC50 = 10.970.3 nM for DHE and 30.470.8 nM for 8'-OH-DHE; the paper does not report Emax, kin/kout, or ke0 for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanoun_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

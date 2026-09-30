@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin drives measured glomerular filtration rate (in mL/min): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In patients with T2D (RED study), dapagliflozin plasma exposure (apparent AUC0–tau,ss, geometric mean 1153.1 µg/L*h, CV 81.8%) was related to measured glomerular filtration rate (mGFR, mL/min) via a linear mixed-effects exposure–response model: each doubling of AUC0–tau,ss was associated with a decrease in mGFR of 0.83 mL/min (p = 0.03). The paper does not describe a mechanistic PD model (no Imax/IC50/EC50/Emax, kin, kout, ke0, or gamma values); the relationship is a linear association, not an explicit mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

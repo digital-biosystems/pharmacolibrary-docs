@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives coronary artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sumatriptan directly contracts isolated human coronary artery segments (expressed as % of 100 mmol/L K+-induced contraction) via a direct Emax concentration-response relationship; the paper does not state a production/elimination or effect-compartment mechanism. Reported potency/efficacy varied across 9 experiments, with EC50 ranging from 117 to 2042 nmol/L and Emax from 2.3% to 27.0% of the K+ response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives cyclic AMP (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In human platelet-rich plasma, isoprenaline (β-adrenoceptor agonist) inhibits the increase in platelet cyclic AMP induced by an inhibitory agonist (e.g. prostaglandin E1 or thrombin), an effect mediated via β-adrenoceptors (assessed with phentolamine present to block α-effects); the paper reports maximal inhibition relative to (-)-isoprenaline with thrombin (assigned 1.0, corresponding to 64% inhibition), but does not state IC50, Emax, or turnover (kin/kout) parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kerry_1983`
 - **model family:** `emax`
 - **driver:** `not_resolved`

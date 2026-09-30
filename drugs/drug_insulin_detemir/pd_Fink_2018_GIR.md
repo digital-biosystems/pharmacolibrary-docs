@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin detemir drives glucose infusion rate (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In dogs given a single subcutaneous dose of 2.4 nmol/kg (0.1 U/kg) insulin detemir, the measured response was the glucose infusion rate (GIR) during an isoglycemic clamp over 24 h; the paper reports only time-action descriptors (median onset 0.6 h [0.6–1.2 h], time to peak 4.3 h [2.9–7.4 h], duration 10.8 h [8.8–14.8 h]) and does not state a pharmacodynamic model, mechanism, or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fink_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

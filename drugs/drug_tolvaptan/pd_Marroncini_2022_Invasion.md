@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives Cell invasion (in normalized vs 0 µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan (µM concentrations) dose-dependently inhibited invasion of HCT-8, HepG2 and SK-N-AS cells through matrigel-coated membranes (response normalized vs 0 µM), an effect attributed to V2 receptor antagonism with reduced cAMP/PKA/AKT signalling, though the paper does not state a specific mechanism or PD model for invasion. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are reported for the invasion endpoint (IC50 values of 52, 38 and 40 µM after 48 h exposure were given only for cell proliferation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fish protein hydrolysates (measured concentrations) drives alpha-Amylase inhibition (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Fish protein hydrolysates inhibited α-amylase in a concentration-dependent manner, but no PD model or mechanism (e.g., Emax, IC50-based inhibition parameters) is described; only empirical IC50 values are reported, e.g., 23.86 ± 3.52 mg/mL (GB, AP, 180 min), 26.58 ± 12.83 mg/mL (GB, AP, 360 min), and 25.36 ± 5.4 mg/mL (NP, A + P, 360 min), with some samples (BS A, BS P, NP P) not reaching IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sapatinha_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

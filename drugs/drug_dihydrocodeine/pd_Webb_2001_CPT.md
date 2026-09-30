@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dihydrocodeine (concentrations from this paper's PK model) drives maximum pain score (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the PK–PD link analysis, plasma dihydrocodeine concentrations (pmol ml−1) were linked to the cold pressor test (CPT) pain score after a single 90 mg oral dose; the record describes a linear stimulatory model, but the excerpts do not state the mechanism further and provide no potency or rate parameter values (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Webb_2001`
 - **model family:** `linear`
 - **driver:** `pk_record`

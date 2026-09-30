@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking nicotinamide concentrations to tumor weight; the record's drug/response pairing is not supported by the excerpts. The excerpts instead report neomenthol's antiproliferative effects (IC50 range 16.35–99.31 µM; A431 IC50 17.3 µM in MTT, 18.53 µM in NRU, 82.06 µM in SRB) and enzyme inhibition (ODC IC50 20.2 ± 1.02 µM cell-free, 29.59 ± 2.54 µM in K562, 57.2 ± 2.85 µM in MDA-MB-231), with no mechanism, Emax/IC50 model parameters, or rate constants (kin, kout, ke0) stated for a tumor-weight response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

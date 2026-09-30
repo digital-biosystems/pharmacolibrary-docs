@@ -31,10 +31,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Pentikäinen_1985_reference](drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md) | 1-compartment (no model) | 4 | Pentikäinen PJ et al., Bumetanide kinetics in renal failure, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.91](https://doi.org/10.1038/clpt.1985.91) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Jullien_2016_reference](drugs/drug_bumetanide/Bumetanide_Jullien2016_reference.md) | 2-compartment (no model) | 4 | Jullien V et al., Pilot evaluation of the population phar…, Journal of clinical pharmac… (2016) | [10.1002/jcph.596](https://doi.org/10.1002/jcph.596) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Pentikäinen_1985_reference](drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md) | — | 1-compartment (no model) | 4 | Pentikäinen PJ et al., Bumetanide kinetics in renal failure, Clinical pharmacology and t… (1985) | [10.1038/clpt.1985.91](https://doi.org/10.1038/clpt.1985.91) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Jullien_2016_reference](drugs/drug_bumetanide/Bumetanide_Jullien2016_reference.md) | — | 2-compartment (no model) | 4 | Jullien V et al., Pilot evaluation of the population phar…, Journal of clinical pharmac… (2016) | [10.1002/jcph.596](https://doi.org/10.1002/jcph.596) |
 
 ## Pharmacogenomics (PGx)
 

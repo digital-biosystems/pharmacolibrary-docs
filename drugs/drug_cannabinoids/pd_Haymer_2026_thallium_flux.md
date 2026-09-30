@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in % response) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amprenavir directly activates the CB2 receptor, stimulating thallium flux in rat CB2/GIRK cells with EC50 = 760 nM and 49% Max (EC50 = 969 nM, 55% Max without 2-AG; EC50 = 690 nM in a PI hydrolysis assay); the paper does not describe a kinetic PD model (no Imax/IC50/kin/kout/ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haymer_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

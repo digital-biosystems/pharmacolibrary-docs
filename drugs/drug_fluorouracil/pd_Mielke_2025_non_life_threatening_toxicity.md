@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model with potency or rate parameters; it only relates simulated steady-state 5-fluorouracil concentrations (mg/L) to the binary occurrence of non-life-threatening toxicity, which was rare below 3 mg/L, rose steeply between 3 and 4 mg/L, and reached 100% between &lt;5 and 6 mg/L. No mechanism linking concentration to this toxicity endpoint (beyond 5-FU's general inhibition of thymidylate synthase) and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mielke_2025`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
@@ -21,14 +31,14 @@ Mielke H; Algharably EAE; Gundert-Remy U et al. (2025). Pharmaceuticals (Basel, 
   ·  DOI: [10.3390/ph18050653](https://doi.org/10.3390/ph18050653)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cardiac output (Qc) (L/h) [47] — Physiological Data | `Q30` · not captured | 401.7 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row1:col1 |
-| Skin — Physiological Data | `Q100` · not captured | 20 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row9:col1 |
-| Protein binding (%) [49] — Physiological Data | `Q46` · not captured | 8 | not captured | not captured | llm_confirmed (not captured) | pharmaceuticals-18-00653-t001:row16:col1 |
-| Skin — Physiological Data | `Q100` · not captured | 10.04 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row23:col1 |
-| Vmax (mg/h) — Physiological Data | `Q66` · not captured | 1221.7 | mg/h | not captured | special_case (not captured) | pharmaceuticals-18-00653-t001:row28:col1 |
-| Km (mg/L) — Physiological Data | `Q1` · not captured | 11.7 | mg/L | not captured | exact (not captured) | pharmaceuticals-18-00653-t001:row29:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cardiac output (Qc) (L/h) [47] — Physiological Data | `Q30` · not captured | 401.7 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row1:col1 |
+| — | Skin — Physiological Data | `Q100` · not captured | 20 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row9:col1 |
+| PK (driver) | Protein binding (%) [49] — Physiological Data | `Q46` · not captured | 8 | not captured | not captured | llm_confirmed (not captured) | pharmaceuticals-18-00653-t001:row16:col1 |
+| — | Skin — Physiological Data | `Q100` · not captured | 10.04 | not captured | not captured | llm (not captured) | pharmaceuticals-18-00653-t001:row23:col1 |
+| PK (driver) | Vmax (mg/h) — Physiological Data | `Q66` · not captured | 1221.7 | mg/h | not captured | special_case (not captured) | pharmaceuticals-18-00653-t001:row28:col1 |
+| PK (driver) | Km (mg/L) — Physiological Data | `Q1` · not captured | 11.7 | mg/L | not captured | exact (not captured) | pharmaceuticals-18-00653-t001:row29:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen, ibuprofen, tramadol (measured concentrations) drive name (in pain units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Effect-site concentrations of acetaminophen, ibuprofen and tramadol (mg/L) jointly reduce the Parent's Postoperative Pain Measurement score via a Greco-type fractional Emax interaction model with additive effects (β fixed at 0), each drug normalized to its C50; Emax was 0.648 (95%CI 0.542–0.739), Hill 1.48, C50 7.06 mg/L (acetaminophen), 3.95 mg/L (ibuprofen), 0.0703 mg/L (tramadol), with equilibration half-times 0.34, 1.04 and 1.77 h respectively; pain resolution was an additional disease-progression Emax model (Emax,DIS 0.983, T50,DIS 46 h, Hill,DIS 5.9).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hannam_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

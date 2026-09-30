@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tranexamic acid drives Thrombin generation area under the curve (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tranexamic acid (0.5 g and 1 g i.v. doses vs placebo) inhibits fibrinolytic activation in postpartum haemorrhage, with the 1 g dose producing smaller increases over baseline in D-dimer (38% vs 93%) and plasmin–antiplasmin (−2% vs 56%) levels; the paper reports a dose–effect relationship but does not state a PD mechanism model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ducloy-Bouthors_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

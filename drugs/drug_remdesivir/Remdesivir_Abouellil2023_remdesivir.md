@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
 ### Reviewer guidance
 
 **The remdesivir model's terminal half-life (4.3 h) fails to match the paper's 29.4 h, and the central (V1, 4.89 L) and peripheral (V2, 46.5 L) volumes were not carried into the model, so it was held for review.**

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amlodipine (concentrations from this paper's PK model) drives systolic blood pressure (in mmHg): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Amlodipine plasma concentrations (ng/mL) drive reductions in systolic blood pressure (mmHg) via an indirect-effect model with an effect compartment (elimination rate constant ke0 from the effect compartment), fitted to mean SBP from 12 hypertensive patients, with a circadian cosine function describing the dynamic SBP0 baseline; the excerpts do not report numeric values for ke0, Imax/IC50/Emax, or other potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mukherjee_2018`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

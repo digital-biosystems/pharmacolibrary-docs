@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record states an Emax-type inhibitory model in which MHV370 concentrations (nM) suppress CXCL13 levels, but the provided excerpts do not describe the CXCL13 response, its mechanism, or any potency values for it; the excerpts instead report MHV370 inhibition of TLR7-driven reporter activity (IC50 15 ± 10 nM vs CL307, 7 ± 0.1 nM vs R848), neutrophil ROS (IC50 3.8 ± 0.8 nM vs R848, 5.2 ± 1.5 nM vs TL8-506), and an ex vivo CD69 PD marker with IC50 35 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

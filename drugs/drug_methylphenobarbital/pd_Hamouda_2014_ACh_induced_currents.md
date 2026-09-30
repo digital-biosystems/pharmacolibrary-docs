@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MTFD-MPAB (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> mTFD-MPAB (driver, mM) inhibits ACh-induced currents in Torpedo nAChRs expressed in Xenopus oocytes, acting as a noncompetitive/allosteric, state-dependent inhibitor of the receptor; R- and S-mTFD-MPAB inhibited ACh (10 µM, EC20) responses with IC50 values of 10 ± 2 µM and 5 ± 1 µM, respectively. Racemic mTFD-MPAB also enhanced [3H]ACh equilibrium binding (EC50 9 µM) and inhibited [3H]tenocyclidine binding in desensitized and resting states with IC50 values of 2 and 170 µM; no PD model parameters (Emax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hamouda_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myristoyl-CM4 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the cleaved caspase 3 response; it only reports that myristoyl-CM4 concentration-dependently increased cleaved caspase 3 (about 55% of procaspase 3 activated at 2 μM in K562/MDR cells), with cytotoxicity IC50 values of 2 μM (K562/MDR) and 3 μM (Jurkat), and no mechanism such as kin/kout, IC50/Imax, or effect-compartment parameters is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

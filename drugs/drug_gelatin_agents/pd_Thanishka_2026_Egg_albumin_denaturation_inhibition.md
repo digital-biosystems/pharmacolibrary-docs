@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Peperomia pellucida aqueous extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the egg albumin denaturation assay, the aqueous extract of Peperomia pellucida inhibited protein denaturation in a concentration-dependent manner (17.36% at 62.5 μg/mL up to 81.38% at 1000 μg/mL), with an IC50 of 236.0 μg/mL (methanolic extract 832.4 μg/mL; diclofenac sodium 298.7 μg/mL). The paper reports no pharmacodynamic model, mechanism, or parameters such as Emax, kin, kout, or ke0 for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thanishka_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

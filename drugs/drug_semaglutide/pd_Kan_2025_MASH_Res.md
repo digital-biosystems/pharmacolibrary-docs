@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives MASH Resolution (in binary): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Semaglutide (dosed in mg/week) is linked to binary MASH Resolution in a linear model with an inhibitory effect direction, but the paper (a meta-analysis) does not state a mechanism and provides no potency or rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma); it only reports a pooled relative risk of 1.98 (95% CI 1.57–2.50) for MASH resolution versus control.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kan_2025`
 - **model family:** `linear`
 - **driver:** `cited_pk`

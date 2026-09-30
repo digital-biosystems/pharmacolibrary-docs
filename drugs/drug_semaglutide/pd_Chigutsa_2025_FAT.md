@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tirzepatide drives fat mass: indirect response — drug inhibits the production of fat mass.
+
+**Model:** No model was generated from this record.
+
+> Tirzepatide (not semaglutide as in the record) acts on fat mass in an indirect response (Type I) model with a proportional inhibitory effect, driven by predicted tirzepatide concentrations from a two-compartment population PK model; the paper states fat mass has a higher Imax and lower IC50 than fat-free mass (yielding ~3-fold greater fat mass reduction) but does not report the numeric Imax, IC50, kin, or kout values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chigutsa_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

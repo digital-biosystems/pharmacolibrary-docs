@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiodarone (concentrations from the PK model of Anastasiou-Nana_1982) drives K_ATP channel activity (in fraction) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amiodarone (0.1–10 µM) applied to excised inside-out patches rapidly and progressively inhibits rat ventricular sarcolemmal K_ATP channel current (fraction of initial current ~90%, 70%, and 20% at 60 s for 0.1, 1.0, and 10 µM), with higher concentrations acting faster; no formal PD model (Emax/IC50 for amiodarone, kin/kout, ke0) is given. Additionally, 10 µM amiodarone increases the ATP sensitivity of the channels, shifting the ATP IC50 from 48.7 ± 11.44 µM (control) to 11.6 ± 1.3 µM with an unchanged Hill coefficient (~1.5).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holmes_2000`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

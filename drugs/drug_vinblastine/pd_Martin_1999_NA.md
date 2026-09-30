@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** XR9576 (measured concentrations) drives paclitaxel accumulation (in NA): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> XR9576 (10^-9–10^-6 M) increases the steady-state accumulation of [3H]paclitaxel (1 µM) in CHrB30 cells by inhibiting P-gp-mediated efflux, i.e. blocking the elimination of the intracellular response; accumulation versus modulator concentration was fitted with a dose-response (Emax-type) equation, with an XR9576 EC50 of 487 nM. Binding studies suggest XR9576 interacts non-competitively with substrates such as paclitaxel and vinblastine, most likely at a distinct site on P-gp (XR9576 kinetic Kd 3.9 nM; vinblastine Kd 56.3 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Martin_1999`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Martin C; Berridge G; Mistry P; Higgins C; Charlton P; Callaghan R et al. (1999)
   ·  DOI: [10.1038/sj.bjp.0702807](https://doi.org/10.1038/sj.bjp.0702807)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vinblastine — Kinetic Kd k 71 /k 1 (nM) | `Q331` · not captured | 56.3 | nM | not captured | llm (not captured) | tab_0:row1:col3 |
-| XR9576 — Kinetic Kd k 71 /k 1 (nM) | `Q331` · not captured | 3.9 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
-| P — Association rate constant k 1 (min 71 nM 71 ) | `Q329` · not captured | 50.05 | min 71 nM 71 | not captured | llm (not captured) | tab_0:row5:col1 |
-| P — Dissociation rate constant k 71 (min 71 ) | `Q330` · not captured | 50.05 | min 71 | not captured | llm (not captured) | tab_0:row5:col2 |
-| XR9576 (EC 50 | `Q321` · not captured | 487 | nM | not captured | review_gapfill (not captured) | Martin_1999:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Vinblastine — Kinetic Kd k 71 /k 1 (nM) | `Q331` · not captured | 56.3 | nM | not captured | llm (not captured) | tab_0:row1:col3 |
+| PD (effect) | XR9576 — Kinetic Kd k 71 /k 1 (nM) | `Q331` · not captured | 3.9 | nM | not captured | llm (not captured) | tab_0:row3:col3 |
+| PD (effect) | P — Association rate constant k 1 (min 71 nM 71 ) | `Q329` · not captured | 50.05 | min 71 nM 71 | not captured | llm (not captured) | tab_0:row5:col1 |
+| PD (effect) | P — Dissociation rate constant k 71 (min 71 ) | `Q330` · not captured | 50.05 | min 71 | not captured | llm (not captured) | tab_0:row5:col2 |
+| PD (effect) | XR9576 (EC 50 | `Q321` · not captured | 487 | nM | not captured | review_gapfill (not captured) | Martin_1999:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

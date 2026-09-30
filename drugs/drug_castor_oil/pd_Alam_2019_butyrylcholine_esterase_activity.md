@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zanthoxylum armatum extracts (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Zanthoxylum armatum fruit, bark and leaves extracts inhibit butyrylcholinesterase (BChE)-mediated hydrolysis of butyrylthiocholine in vitro, with IC50 values of 60.86 ± 0.88 μg/mL (fruit, 50.75 ± 1.23% inhibition), 55.36 ± 0.98 μg/mL (bark, 82.57 ± 1.33%), and 0.00 μg/mL (leaves, 37.52 ± 1.11%), compared to eserine (IC50 0.04 ± 0.001 μmol/L); the paper does not state a kinetic mechanism (e.g. kin/kout or Emax parameters) beyond concentration-dependent inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alam_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

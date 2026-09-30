@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinidine (measured concentrations) drives name (in mV) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the in silico ten Tusscher ventricular model with N588K IKr Markov kinetics, quinidine concentrations (4, 7 and 10 μM) act on maximal transmural AP heterogeneity (δV, mV), decreasing it (and APD dispersion) via simple pore-block reduction of ion-channel conductance described by a Hill equation with literature IC50 and Hill coefficient values (N588K IKr nH = 1.07); the paper does not report an Emax/IC50 value for the δV response itself, and disopyramide (9–13 μM) had hardly noticeable effects on APD.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@
 not matched (stem Luo_2017)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| N588K IKr — nH | `Q325` · not captured | 1.07 | not captured | not captured | llm (not captured) | pone.0179515.t001:row2:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | N588K IKr — nH | `Q325` · not captured | 1.07 | not captured | not captured | llm (not captured) | pone.0179515.t001:row2:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

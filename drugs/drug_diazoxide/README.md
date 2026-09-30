@@ -35,9 +35,9 @@ In addition, extended-release diazoxide choline is indicated for the treatment o
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kizu_2017_reference](drugs/drug_diazoxide/Diazoxide_Kizu2017_reference.md) | 1-compartment (no model) | 0 | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | [10.1159/000478696](https://doi.org/10.1159/000478696) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Kizu_2017_reference](drugs/drug_diazoxide/Diazoxide_Kizu2017_reference.md) | — | 1-compartment (no model) | 0 | Kizu R et al., Population Pharmacokinetics of Diazoxid…, Hormone research in paediat… (2017) | [10.1159/000478696](https://doi.org/10.1159/000478696) |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,6 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | <sub>“…conjugation. It is estimated that, in subjects with normal renal function, 54-60% of diazo…”</sub> | prose |
 | metabolism | liver | `CYP1A2` inhibitor/substrate, `CYP3A4` substrate | DrugBank actor |

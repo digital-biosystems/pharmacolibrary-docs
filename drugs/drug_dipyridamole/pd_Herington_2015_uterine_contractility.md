@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine drive name (in frequency): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Dipyridamole, a phosphodiesterase inhibitor, was tested as a hit-antagonist that inhibits oxytocin-induced Ca2+-mobilization in murine uterine myometrial cells and, in ex vivo uterine myometrial contractility assays, inhibited uterine contractions (frequency) with a sigmoid Emax inhibitory concentration-response model. The excerpts do not report dipyridamole-specific EC50, Emax, or rate parameters, and the record's parameter list cannot be unambiguously assigned to dipyridamole.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Herington_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,78 +31,78 @@ Herington JL; Swale DR; Brown N; Shelton EL; Choi H; Williams CH; et al. et al. 
   ·  DOI: [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1388 — EC50 | `Q321` · not captured | 7.43e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row2:col2 |
-| 1388 — Emax ± SEM | `Q320` · not captured | 90.92 | not captured | not captured | llm (not captured) | pone.0143243.t002:row2:col3 |
-| 3005837 — EC50 | `Q321` · not captured | 1.65e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row3:col2 |
-| 3005837 — Emax ± SEM | `Q320` · not captured | 17.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row3:col3 |
-| 1150 — EC50 | `Q321` · not captured | 3.08e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row4:col2 |
-| 1150 — Emax ± SEM | `Q320` · not captured | 10.29 | not captured | not captured | llm (not captured) | pone.0143243.t002:row4:col3 |
-| 41684 — EC50 | `Q321` · not captured | 4.20e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row5:col2 |
-| 41684 — Emax ± SEM | `Q320` · not captured | 26.9 | not captured | not captured | llm (not captured) | pone.0143243.t002:row5:col3 |
-| 54680693 — EC50 | `Q321` · not captured | 5.68e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row6:col2 |
-| 54680693 — Emax ± SEM | `Q320` · not captured | 22.58 | not captured | not captured | llm (not captured) | pone.0143243.t002:row6:col3 |
-| 5649 — EC50 | `Q321` · not captured | 6.49e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row7:col2 |
-| 5649 — Emax ± SEM | `Q320` · not captured | 8.72 | not captured | not captured | llm (not captured) | pone.0143243.t002:row7:col3 |
-| 5265 — EC50 | `Q321` · not captured | 1.02e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row8:col2 |
-| 5265 — Emax ± SEM | `Q320` · not captured | 81.89 | not captured | not captured | llm (not captured) | pone.0143243.t002:row8:col3 |
-| 34312 — EC50 | `Q321` · not captured | 1.10e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row9:col2 |
-| 34312 — Emax ± SEM | `Q320` · not captured | 7.44 | not captured | not captured | llm (not captured) | pone.0143243.t002:row9:col3 |
-| 8397 — EC50 | `Q321` · not captured | 1.13e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row10:col2 |
-| 8397 — Emax ± SEM | `Q320` · not captured | 24.78 | not captured | not captured | llm (not captured) | pone.0143243.t002:row10:col3 |
-| 3598 — EC50 | `Q321` · not captured | 1.39e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row11:col2 |
-| 3598 — Emax ± SEM | `Q320` · not captured | 17.79 | not captured | not captured | llm (not captured) | pone.0143243.t002:row11:col3 |
-| 3397 — EC50 | `Q321` · not captured | 2.19e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row12:col2 |
-| 3397 — Emax ± SEM | `Q320` · not captured | 15.23 | not captured | not captured | llm (not captured) | pone.0143243.t002:row12:col3 |
-| 5701996 — EC50 | `Q321` · not captured | 3.03e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row13:col2 |
-| 5701996 — Emax ± SEM | `Q320` · not captured | 11.53 | not captured | not captured | llm (not captured) | pone.0143243.t002:row13:col3 |
-| 3386 — EC50 | `Q321` · not captured | 4.45e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row14:col2 |
-| 3386 — Emax ± SEM | `Q320` · not captured | 21.65 | not captured | not captured | llm (not captured) | pone.0143243.t002:row14:col3 |
-| 4993 — EC50 | `Q321` · not captured | 5.56e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row15:col2 |
-| 4993 — Emax ± SEM | `Q320` · not captured | 85.64 | not captured | not captured | llm (not captured) | pone.0143243.t002:row15:col3 |
-| 3037 — EC50 | `Q321` · not captured | 9.44e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row17:col2 |
-| 3037 — Emax ± SEM | `Q320` · not captured | 115.28 | not captured | not captured | llm (not captured) | pone.0143243.t002:row17:col3 |
-| 37123 — EC50 | `Q321` · not captured | 9.93e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row18:col2 |
-| 37123 — Emax ± SEM | `Q320` · not captured | 35.15 | not captured | not captured | llm (not captured) | pone.0143243.t002:row18:col3 |
-| 52897276 — EC50 | `Q321` · not captured | 1.07e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row19:col2 |
-| 52897276 — Emax ± SEM | `Q320` · not captured | 33.83 | not captured | not captured | llm (not captured) | pone.0143243.t002:row19:col3 |
-| 16682730 — EC50 | `Q321` · not captured | 1.13e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row20:col2 |
-| 16682730 — Emax ± SEM | `Q320` · not captured | 112.88 | not captured | not captured | llm (not captured) | pone.0143243.t002:row20:col3 |
-| 6083 — EC50 | `Q321` · not captured | 1.16e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row21:col2 |
-| 6083 — Emax ± SEM | `Q320` · not captured | 49.74 | not captured | not captured | llm (not captured) | pone.0143243.t002:row21:col3 |
-| 27924 — EC50 | `Q321` · not captured | 1.27e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row22:col2 |
-| 27924 — Emax ± SEM | `Q320` · not captured | 103.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row22:col3 |
-| 10205 — EC50 | `Q321` · not captured | 1.50e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row23:col2 |
-| 10205 — Emax ± SEM | `Q320` · not captured | 114.4 | not captured | not captured | llm (not captured) | pone.0143243.t002:row23:col3 |
-| 3352 — EC50 | `Q321` · not captured | 1.70e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row24:col2 |
-| 3352 — Emax ± SEM | `Q320` · not captured | 80.65 | not captured | not captured | llm (not captured) | pone.0143243.t002:row24:col3 |
-| 3606 — EC50 | `Q321` · not captured | 3.36e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row25:col2 |
-| 3606 — Emax ± SEM | `Q320` · not captured | 108.18 | not captured | not captured | llm (not captured) | pone.0143243.t002:row25:col3 |
-| 2333 — EC50 | `Q321` · not captured | 1.91e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row26:col2 |
-| 2333 — Emax ± SEM | `Q320` · not captured | 130.03 | not captured | not captured | llm (not captured) | pone.0143243.t002:row26:col3 |
-| 6377243 — EC50 | `Q321` · not captured | 2.83e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row27:col2 |
-| 6377243 — Emax ± SEM | `Q320` · not captured | 114.15 | not captured | not captured | llm (not captured) | pone.0143243.t002:row27:col3 |
-| 72385 — EC50 | `Q321` · not captured | 4.48e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row28:col2 |
-| 72385 — Emax ± SEM | `Q320` · not captured | 123.35 | not captured | not captured | llm (not captured) | pone.0143243.t002:row28:col3 |
-| 3492326 — EC50 | `Q321` · not captured | 5.03e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row29:col2 |
-| 3492326 — Emax ± SEM | `Q320` · not captured | 122.17 | not captured | not captured | llm (not captured) | pone.0143243.t002:row29:col3 |
-| 452550 — EC50 | `Q321` · not captured | 7.19e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row30:col2 |
-| 452550 — Emax ± SEM | `Q320` · not captured | 139.95 | not captured | not captured | llm (not captured) | pone.0143243.t002:row30:col3 |
-| 9556529 — EC50 | `Q321` · not captured | 7.44e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row31:col2 |
-| 9556529 — Emax ± SEM | `Q320` · not captured | 80.33 | not captured | not captured | llm (not captured) | pone.0143243.t002:row31:col3 |
-| 3651377 — EC50 | `Q321` · not captured | 7.92e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row32:col2 |
-| 3651377 — Emax ± SEM | `Q320` · not captured | 152.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row32:col3 |
-| 2378 — EC50 | `Q321` · not captured | 8.66e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row33:col2 |
-| 2378 — Emax ± SEM | `Q320` · not captured | 61.95 | not captured | not captured | llm (not captured) | pone.0143243.t002:row33:col3 |
-| 4499 — EC50 | `Q321` · not captured | 9.43e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row34:col2 |
-| 4499 — Emax ± SEM | `Q320` · not captured | 144.42 | not captured | not captured | llm (not captured) | pone.0143243.t002:row34:col3 |
-| 2330 — EC50 | `Q321` · not captured | 9.82e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row35:col2 |
-| 2330 — Emax ± SEM | `Q320` · not captured | 115.68 | not captured | not captured | llm (not captured) | pone.0143243.t002:row35:col3 |
-| 3503 — EC50 | `Q321` · not captured | 1.00e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row36:col2 |
-| 3503 — Emax ± SEM | `Q320` · not captured | 119.51 | not captured | not captured | llm (not captured) | pone.0143243.t002:row36:col3 |
-| 73357 — EC50 | `Q321` · not captured | 1.08e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row37:col2 |
-| 73357 — Emax ± SEM | `Q320` · not captured | 63.77 | not captured | not captured | llm (not captured) | pone.0143243.t002:row37:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1388 — EC50 | `Q321` · not captured | 7.43e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row2:col2 |
+| PD (effect) | 1388 — Emax ± SEM | `Q320` · not captured | 90.92 | not captured | not captured | llm (not captured) | pone.0143243.t002:row2:col3 |
+| PD (effect) | 3005837 — EC50 | `Q321` · not captured | 1.65e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row3:col2 |
+| PD (effect) | 3005837 — Emax ± SEM | `Q320` · not captured | 17.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row3:col3 |
+| PD (effect) | 1150 — EC50 | `Q321` · not captured | 3.08e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row4:col2 |
+| PD (effect) | 1150 — Emax ± SEM | `Q320` · not captured | 10.29 | not captured | not captured | llm (not captured) | pone.0143243.t002:row4:col3 |
+| PD (effect) | 41684 — EC50 | `Q321` · not captured | 4.20e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row5:col2 |
+| PD (effect) | 41684 — Emax ± SEM | `Q320` · not captured | 26.9 | not captured | not captured | llm (not captured) | pone.0143243.t002:row5:col3 |
+| PD (effect) | 54680693 — EC50 | `Q321` · not captured | 5.68e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row6:col2 |
+| PD (effect) | 54680693 — Emax ± SEM | `Q320` · not captured | 22.58 | not captured | not captured | llm (not captured) | pone.0143243.t002:row6:col3 |
+| PD (effect) | 5649 — EC50 | `Q321` · not captured | 6.49e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row7:col2 |
+| PD (effect) | 5649 — Emax ± SEM | `Q320` · not captured | 8.72 | not captured | not captured | llm (not captured) | pone.0143243.t002:row7:col3 |
+| PD (effect) | 5265 — EC50 | `Q321` · not captured | 1.02e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row8:col2 |
+| PD (effect) | 5265 — Emax ± SEM | `Q320` · not captured | 81.89 | not captured | not captured | llm (not captured) | pone.0143243.t002:row8:col3 |
+| PD (effect) | 34312 — EC50 | `Q321` · not captured | 1.10e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row9:col2 |
+| PD (effect) | 34312 — Emax ± SEM | `Q320` · not captured | 7.44 | not captured | not captured | llm (not captured) | pone.0143243.t002:row9:col3 |
+| PD (effect) | 8397 — EC50 | `Q321` · not captured | 1.13e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row10:col2 |
+| PD (effect) | 8397 — Emax ± SEM | `Q320` · not captured | 24.78 | not captured | not captured | llm (not captured) | pone.0143243.t002:row10:col3 |
+| PD (effect) | 3598 — EC50 | `Q321` · not captured | 1.39e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row11:col2 |
+| PD (effect) | 3598 — Emax ± SEM | `Q320` · not captured | 17.79 | not captured | not captured | llm (not captured) | pone.0143243.t002:row11:col3 |
+| PD (effect) | 3397 — EC50 | `Q321` · not captured | 2.19e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row12:col2 |
+| PD (effect) | 3397 — Emax ± SEM | `Q320` · not captured | 15.23 | not captured | not captured | llm (not captured) | pone.0143243.t002:row12:col3 |
+| PD (effect) | 5701996 — EC50 | `Q321` · not captured | 3.03e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row13:col2 |
+| PD (effect) | 5701996 — Emax ± SEM | `Q320` · not captured | 11.53 | not captured | not captured | llm (not captured) | pone.0143243.t002:row13:col3 |
+| PD (effect) | 3386 — EC50 | `Q321` · not captured | 4.45e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row14:col2 |
+| PD (effect) | 3386 — Emax ± SEM | `Q320` · not captured | 21.65 | not captured | not captured | llm (not captured) | pone.0143243.t002:row14:col3 |
+| PD (effect) | 4993 — EC50 | `Q321` · not captured | 5.56e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row15:col2 |
+| PD (effect) | 4993 — Emax ± SEM | `Q320` · not captured | 85.64 | not captured | not captured | llm (not captured) | pone.0143243.t002:row15:col3 |
+| PD (effect) | 3037 — EC50 | `Q321` · not captured | 9.44e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row17:col2 |
+| PD (effect) | 3037 — Emax ± SEM | `Q320` · not captured | 115.28 | not captured | not captured | llm (not captured) | pone.0143243.t002:row17:col3 |
+| PD (effect) | 37123 — EC50 | `Q321` · not captured | 9.93e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row18:col2 |
+| PD (effect) | 37123 — Emax ± SEM | `Q320` · not captured | 35.15 | not captured | not captured | llm (not captured) | pone.0143243.t002:row18:col3 |
+| PD (effect) | 52897276 — EC50 | `Q321` · not captured | 1.07e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row19:col2 |
+| PD (effect) | 52897276 — Emax ± SEM | `Q320` · not captured | 33.83 | not captured | not captured | llm (not captured) | pone.0143243.t002:row19:col3 |
+| PD (effect) | 16682730 — EC50 | `Q321` · not captured | 1.13e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row20:col2 |
+| PD (effect) | 16682730 — Emax ± SEM | `Q320` · not captured | 112.88 | not captured | not captured | llm (not captured) | pone.0143243.t002:row20:col3 |
+| PD (effect) | 6083 — EC50 | `Q321` · not captured | 1.16e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row21:col2 |
+| PD (effect) | 6083 — Emax ± SEM | `Q320` · not captured | 49.74 | not captured | not captured | llm (not captured) | pone.0143243.t002:row21:col3 |
+| PD (effect) | 27924 — EC50 | `Q321` · not captured | 1.27e-07 | unknown | not captured | llm (not captured) | pone.0143243.t002:row22:col2 |
+| PD (effect) | 27924 — Emax ± SEM | `Q320` · not captured | 103.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row22:col3 |
+| PD (effect) | 10205 — EC50 | `Q321` · not captured | 1.50e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row23:col2 |
+| PD (effect) | 10205 — Emax ± SEM | `Q320` · not captured | 114.4 | not captured | not captured | llm (not captured) | pone.0143243.t002:row23:col3 |
+| PD (effect) | 3352 — EC50 | `Q321` · not captured | 1.70e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row24:col2 |
+| PD (effect) | 3352 — Emax ± SEM | `Q320` · not captured | 80.65 | not captured | not captured | llm (not captured) | pone.0143243.t002:row24:col3 |
+| PD (effect) | 3606 — EC50 | `Q321` · not captured | 3.36e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row25:col2 |
+| PD (effect) | 3606 — Emax ± SEM | `Q320` · not captured | 108.18 | not captured | not captured | llm (not captured) | pone.0143243.t002:row25:col3 |
+| PD (effect) | 2333 — EC50 | `Q321` · not captured | 1.91e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row26:col2 |
+| PD (effect) | 2333 — Emax ± SEM | `Q320` · not captured | 130.03 | not captured | not captured | llm (not captured) | pone.0143243.t002:row26:col3 |
+| PD (effect) | 6377243 — EC50 | `Q321` · not captured | 2.83e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row27:col2 |
+| PD (effect) | 6377243 — Emax ± SEM | `Q320` · not captured | 114.15 | not captured | not captured | llm (not captured) | pone.0143243.t002:row27:col3 |
+| PD (effect) | 72385 — EC50 | `Q321` · not captured | 4.48e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row28:col2 |
+| PD (effect) | 72385 — Emax ± SEM | `Q320` · not captured | 123.35 | not captured | not captured | llm (not captured) | pone.0143243.t002:row28:col3 |
+| PD (effect) | 3492326 — EC50 | `Q321` · not captured | 5.03e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row29:col2 |
+| PD (effect) | 3492326 — Emax ± SEM | `Q320` · not captured | 122.17 | not captured | not captured | llm (not captured) | pone.0143243.t002:row29:col3 |
+| PD (effect) | 452550 — EC50 | `Q321` · not captured | 7.19e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row30:col2 |
+| PD (effect) | 452550 — Emax ± SEM | `Q320` · not captured | 139.95 | not captured | not captured | llm (not captured) | pone.0143243.t002:row30:col3 |
+| PD (effect) | 9556529 — EC50 | `Q321` · not captured | 7.44e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row31:col2 |
+| PD (effect) | 9556529 — Emax ± SEM | `Q320` · not captured | 80.33 | not captured | not captured | llm (not captured) | pone.0143243.t002:row31:col3 |
+| PD (effect) | 3651377 — EC50 | `Q321` · not captured | 7.92e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row32:col2 |
+| PD (effect) | 3651377 — Emax ± SEM | `Q320` · not captured | 152.43 | not captured | not captured | llm (not captured) | pone.0143243.t002:row32:col3 |
+| PD (effect) | 2378 — EC50 | `Q321` · not captured | 8.66e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row33:col2 |
+| PD (effect) | 2378 — Emax ± SEM | `Q320` · not captured | 61.95 | not captured | not captured | llm (not captured) | pone.0143243.t002:row33:col3 |
+| PD (effect) | 4499 — EC50 | `Q321` · not captured | 9.43e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row34:col2 |
+| PD (effect) | 4499 — Emax ± SEM | `Q320` · not captured | 144.42 | not captured | not captured | llm (not captured) | pone.0143243.t002:row34:col3 |
+| PD (effect) | 2330 — EC50 | `Q321` · not captured | 9.82e-06 | unknown | not captured | llm (not captured) | pone.0143243.t002:row35:col2 |
+| PD (effect) | 2330 — Emax ± SEM | `Q320` · not captured | 115.68 | not captured | not captured | llm (not captured) | pone.0143243.t002:row35:col3 |
+| PD (effect) | 3503 — EC50 | `Q321` · not captured | 1.00e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row36:col2 |
+| PD (effect) | 3503 — Emax ± SEM | `Q320` · not captured | 119.51 | not captured | not captured | llm (not captured) | pone.0143243.t002:row36:col3 |
+| PD (effect) | 73357 — EC50 | `Q321` · not captured | 1.08e-05 | unknown | not captured | llm (not captured) | pone.0143243.t002:row37:col2 |
+| PD (effect) | 73357 — Emax ± SEM | `Q320` · not captured | 63.77 | not captured | not captured | llm (not captured) | pone.0143243.t002:row37:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

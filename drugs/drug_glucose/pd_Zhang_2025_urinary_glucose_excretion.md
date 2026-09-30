@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Henagliflozin (measured concentrations) drives name (in g): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Henagliflozin plasma exposure drives urinary glucose excretion (UGE, g) via a direct Emax stimulation: for the Cmax-based relationship Emax = 48.8 g and EC50 = 62.0 ng/mL; for the AUC-based relationship Emax = 48.2 g and EC50 = 356 ng·h/mL. The paper does not describe an indirect (kin/kout) or effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

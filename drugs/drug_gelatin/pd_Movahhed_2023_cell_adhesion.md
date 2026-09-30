@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taraxasterol drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taraxasterol at its IC50 (114.68 ± 3.28 μM, 24 h exposure) reduced PC3 cell adhesion to a gelatin-coated surface by up to 76% (percent adhesion); the paper reports this as an inhibitory effect at a single concentration and does not state a pharmacodynamic mechanism or model (no Emax/IC50-on-adhesion, turnover, or effect-compartment parameters are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Movahhed_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

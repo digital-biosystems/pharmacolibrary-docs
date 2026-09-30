@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mosapride (the dose) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Mosapride, a prokinetic benzamide acting via enteric 5-HT4 receptors, was given as doses (mg/kg, e.g. starting at 0.1 mg/kg) to anesthetized guinea pigs, and its effect on the intrinsic R-R reflex index (reflex pressure curve-time integral) was evaluated in a PITH denervation model. The excerpts do not state the PD model form or any potency/rate parameters (Emax, ED50, kin, kout, ke0), and no quantitative mechanism beyond 5-HT4 receptor mediation is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kojima_2006`
 - **model family:** `emax`
 - **driver:** `dose_only`

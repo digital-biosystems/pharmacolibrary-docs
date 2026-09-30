@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023) drives SARS-CoV-2 susceptibility (in fold change): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> No pharmacodynamic model is described: the paper reports remdesivir (an RdRp-inhibiting nucleotide analog prodrug) in vitro EC50 values against SARS-CoV-2 clinical isolates, expressed as fold change in EC50 versus the WA1 reference strain (e.g., 0.75-fold for Nsp12 A16V and 2.51-fold for C799F), rather than a drug-concentration–response model with parameters such as Imax, IC50, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hedskog_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,22 +31,22 @@ Hedskog C; Rodriguez L; Roychoudhury P; Huang ML; Jerome KR; Hao L; et al. et al
   ·  DOI: [10.1093/infdis/jiad270](https://doi.org/10.1093/infdis/jiad270)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Participants with baseline sequencing data b | `Q324` · not captured | 5 | not captured | not captured | boundary (not captured) | tab_0:row3:col1 |
-| Participants with baseline sequencing data b — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q324` · not captured | 3 | not captured | not captured | boundary (not captured) | tab_0:row3:col2 |
-| Participants with baseline sequencing data b | `Q324` · not captured | 42 | not captured | not captured | boundary (not captured) | tab_0:row3:col3 |
-| Participants with baseline sequencing data b | `Q324` · not captured | 41 | not captured | not captured | boundary (not captured) | tab_0:row3:col4 |
-| Participants with baseline sequencing data b | `Q324` · not captured | 47 | not captured | not captured | boundary (not captured) | tab_0:row3:col5 |
-| Participants with baseline sequencing data b | `Q324` · not captured | 44 | not captured | not captured | boundary (not captured) | tab_0:row3:col6 |
-| Participants with baseline sequencing data b | `Q324` · not captured | 91 | not captured | not captured | boundary (not captured) | tab_0:row3:col7 |
-| B.1 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
-| B.1.333 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row5:col2 |
-| A.1 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row6:col2 |
-| A — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row7:col2 |
-| B.1.320 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
-| B.1.605 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
-| Other c — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | tab_0:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 5 | not captured | not captured | boundary (not captured) | tab_0:row3:col1 |
+| PD (effect) | Participants with baseline sequencing data b — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q324` · not captured | 3 | not captured | not captured | boundary (not captured) | tab_0:row3:col2 |
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 42 | not captured | not captured | boundary (not captured) | tab_0:row3:col3 |
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 41 | not captured | not captured | boundary (not captured) | tab_0:row3:col4 |
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 47 | not captured | not captured | boundary (not captured) | tab_0:row3:col5 |
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 44 | not captured | not captured | boundary (not captured) | tab_0:row3:col6 |
+| PD (effect) | Participants with baseline sequencing data b | `Q324` · not captured | 91 | not captured | not captured | boundary (not captured) | tab_0:row3:col7 |
+| — | B.1 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
+| — | B.1.333 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row5:col2 |
+| — | A.1 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row6:col2 |
+| — | A — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row7:col2 |
+| — | B.1.320 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
+| — | B.1.605 — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
+| — | Other c — Participants, No. (% out of Participants With Baseline Sequencing Data Available) a | `Q100` · not captured | 2 | not captured | not captured | llm (not captured) | tab_0:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Posaconazole (measured concentrations) drives mouse survival (in binary) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model linking posaconazole concentrations to mouse survival; no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given. Mechanistically, posaconazole is described as a potent inhibitor of the CYP450-dependent sterol 14α-demethylase (CYP51) in the parasite, and posaconazole-treated mice showed improved survival versus controls (e.g. log rank p = 0.008 in T. b. brucei Antat 1.1), but the record's tetracycline-driven survival response is not quantitatively modeled.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dauchy_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

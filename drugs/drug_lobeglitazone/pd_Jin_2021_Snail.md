@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lobeglitazone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lobeglitazone (LGZ, μM concentrations, e.g. 5 μM) dose-dependently decreased TGF-β1-induced Snail expression in BCPAP and K1 papillary thyroid carcinoma cells (Western blot at 24–48 h), an inhibitory effect attributed to PPAR-γ ligand activity; the paper does not state a pharmacodynamic model, mechanism of Snail suppression at the production/elimination level, or numeric potency parameters (IC50, Imax, Emax, kin, kout, ke0) for the Snail response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

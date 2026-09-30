@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Fludarabine inhibits HBV infection (percent inhibition measured in the HepG2-NTCPsec+ platform, acting as a late HBV life cycle inhibitor; the paper does not state a specific molecular mechanism). It showed an EC50 of 0.1 μM, a CC50 of 13.4 μM, a therapeutic index &gt;242, and %Imax of 96.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,33 +31,33 @@ Yang J; König A; Park S; Jo E; Sung PS; Yoon SK; et al. et al. (2021). JHEP rep
   ·  DOI: [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| %Imax — p1 inhibitor | `Q323` · not captured | 94.5 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
-| %Imax — p2 inhibitor | `Q323` · not captured | 91.8 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
-| %Imax | `Q323` · not captured | 96.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col4 |
-| %Imax | `Q323` · not captured | 97.6 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col5 |
-| %Imax | `Q323` · not captured | 91.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col6 |
-| %Imax | `Q323` · not captured | 99.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col7 |
-| %Imax | `Q323` · not captured | 96.7 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col8 |
-| %Imax | `Q323` · not captured | 94.2 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col9 |
-| %Imax | `Q323` · not captured | 99.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col10 |
-| %Imax | `Q323` · not captured | 93.7 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col11 |
-| %Imax | `Q323` · not captured | 101.5 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col12 |
-| %Imax | `Q323` · not captured | 99.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col13 |
-| %Imax | `Q323` · not captured | 100.8 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col14 |
-| %Imax | `Q323` · not captured | 99.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col15 |
-| %Imax | `Q323` · not captured | 96.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col16 |
-| EC50 — p1 inhibitor | `Q321` · not captured | 11.68 | unknown | not captured | exact (not captured) | tbl2:row2:col2 |
-| EC50 — p2 inhibitor | `Q321` · not captured | 1.06 | unknown | not captured | exact (not captured) | tbl2:row2:col3 |
-| EC50 | `Q321` · not captured | 1.27 | unknown | not captured | exact (not captured) | tbl2:row2:col4 |
-| EC50 | `Q321` · not captured | 1.53 | unknown | not captured | exact (not captured) | tbl2:row2:col5 |
-| EC50 | `Q321` · not captured | 1.33 | unknown | not captured | exact (not captured) | tbl2:row2:col6 |
-| EC50 | `Q321` · not captured | 0.23 | unknown | not captured | exact (not captured) | tbl2:row2:col10 |
-| EC50 | `Q321` · not captured | 3.21 | unknown | not captured | exact (not captured) | tbl2:row2:col13 |
-| EC50 | `Q321` · not captured | 2.02 | unknown | not captured | exact (not captured) | tbl2:row2:col14 |
-| EC50 | `Q321` · not captured | 2.24 | unknown | not captured | exact (not captured) | tbl2:row2:col15 |
-| EC50 | `Q321` · not captured | 0.22 | unknown | not captured | exact (not captured) | tbl2:row2:col16 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | %Imax — p1 inhibitor | `Q323` · not captured | 94.5 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
+| PD (effect) | %Imax — p2 inhibitor | `Q323` · not captured | 91.8 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
+| PD (effect) | %Imax | `Q323` · not captured | 96.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col4 |
+| PD (effect) | %Imax | `Q323` · not captured | 97.6 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col5 |
+| PD (effect) | %Imax | `Q323` · not captured | 91.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col6 |
+| PD (effect) | %Imax | `Q323` · not captured | 99.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col7 |
+| PD (effect) | %Imax | `Q323` · not captured | 96.7 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col8 |
+| PD (effect) | %Imax | `Q323` · not captured | 94.2 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col9 |
+| PD (effect) | %Imax | `Q323` · not captured | 99.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col10 |
+| PD (effect) | %Imax | `Q323` · not captured | 93.7 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col11 |
+| PD (effect) | %Imax | `Q323` · not captured | 101.5 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col12 |
+| PD (effect) | %Imax | `Q323` · not captured | 99.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col13 |
+| PD (effect) | %Imax | `Q323` · not captured | 100.8 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col14 |
+| PD (effect) | %Imax | `Q323` · not captured | 99.9 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col15 |
+| PD (effect) | %Imax | `Q323` · not captured | 96.4 | not captured | not captured | llm_confirmed (not captured) | tbl2:row1:col16 |
+| PD (effect) | EC50 — p1 inhibitor | `Q321` · not captured | 11.68 | unknown | not captured | exact (not captured) | tbl2:row2:col2 |
+| PD (effect) | EC50 — p2 inhibitor | `Q321` · not captured | 1.06 | unknown | not captured | exact (not captured) | tbl2:row2:col3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.27 | unknown | not captured | exact (not captured) | tbl2:row2:col4 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.53 | unknown | not captured | exact (not captured) | tbl2:row2:col5 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.33 | unknown | not captured | exact (not captured) | tbl2:row2:col6 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.23 | unknown | not captured | exact (not captured) | tbl2:row2:col10 |
+| PD (effect) | EC50 | `Q321` · not captured | 3.21 | unknown | not captured | exact (not captured) | tbl2:row2:col13 |
+| PD (effect) | EC50 | `Q321` · not captured | 2.02 | unknown | not captured | exact (not captured) | tbl2:row2:col14 |
+| PD (effect) | EC50 | `Q321` · not captured | 2.24 | unknown | not captured | exact (not captured) | tbl2:row2:col15 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.22 | unknown | not captured | exact (not captured) | tbl2:row2:col16 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

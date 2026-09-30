@@ -25,17 +25,17 @@ Clarithromycin is indicated in combination with [vonoprazan] and [amoxicillin] a
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | 1-compartment, IV | 3 | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Shah_2025_reference](drugs/drug_clarithromycin/Clarithromycin_Shah2025_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Shah RV et al., Intravenous Clarithromycin in Criticall…, Antibiotics (Basel, Switzer… (2025) | [10.3390/antibiotics14060559](https://doi.org/10.3390/antibiotics14060559) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hirai_2024](drugs/drug_clarithromycin/pd_Hirai_2024_CL_TAC.md) | Hirai T et al., Pharmacokinetic Model of Drug Interacti…, European journal of drug me… (2024) | [10.1007/s13318-024-00915-2](https://doi.org/10.1007/s13318-024-00915-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Singh_2025](drugs/drug_clarithromycin/pd_Singh_2025_relative_light_units.md) | Singh S et al., Repurposing drugs to advance the treatm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00029-25](https://doi.org/10.1128/aac.00029-25) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2023](drugs/drug_clarithromycin/pd_Zhang_2023_Microcystis_aeruginosa_growth_inhibition.md) | Zhang Q et al., The influence of pH and dissolved organ…, The Science of the total en… (2023) | [10.1016/j.scitotenv.2023.166781](https://doi.org/10.1016/j.scitotenv.2023.166781) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hirai_2024_CL_TAC](drugs/drug_clarithromycin/pd_Hirai_2024_CL_TAC.md) | tacrolimus clearance ← voriconazole · indirect response — drug inhibits the production of tacrolimus clearance | — | Hirai T et al., Pharmacokinetic Model of Drug Interacti…, European journal of drug me… (2024) | [10.1007/s13318-024-00915-2](https://doi.org/10.1007/s13318-024-00915-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Singh_2025_relative_light_units](drugs/drug_clarithromycin/pd_Singh_2025_relative_light_units.md) | name ← unknown · direct sigmoid Emax (Hill) effect | — | Singh S et al., Repurposing drugs to advance the treatm…, Antimicrobial agents and ch… (2025) | [10.1128/aac.00029-25](https://doi.org/10.1128/aac.00029-25) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2023_Microcystis_aeruginosa_growth_inhibition](drugs/drug_clarithromycin/pd_Zhang_2023_Microcystis_aeruginosa_growth_inhibition.md) | name ← ampicillin · inhibition effect | — | Zhang Q et al., The influence of pH and dissolved organ…, The Science of the total en… (2023) | [10.1016/j.scitotenv.2023.166781](https://doi.org/10.1016/j.scitotenv.2023.166781) |
 
 ## ADME sites
 
@@ -48,6 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLC22A7` inhibitor, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nedosiran drives spot urine oxalate-to-creatinine ratio (in unknown): indirect response — drug inhibits the production of spot urine oxalate-to-creatinine ratio.
+
+**Model:** No model was generated from this record.
+
+> Nedosiran plasma concentrations act on spot urine oxalate-to-creatinine ratio (Uox/Cr) via an indirect response model with an effect compartment, in which a sigmoidal Imax function inhibits the production of Uox/Cr; age was a significant covariate on baseline Uox/Cr, while body weight and eGFR were not significant on IC50. The paper excerpts do not report numeric values for Imax, IC50, ke0, or other PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

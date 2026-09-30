@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives tumor volume (in mm3): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (Ptx) free concentration (µg/mL) drives inhibition of tumor volume (mm3): the paper describes a Simeoni-type model in which Ptx damages tumor cells that pass through three transit compartments before elimination from tumor volume, with the effect refined to a sigmoid Emax function and a resistance model giving greater effect for the first treatment (Emax1 = 6.85 h−1) than subsequent treatments (Emax2); EC50 = 156.1 µg/mL. The record lists gemcitabine as the drug, but the paper describes paclitaxel.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rodallec_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Rodallec A; Lee R; Cao J; Marolleau S; Nicolas J; Benzekry S et al. (2026). Adva
   ·  DOI: [10.1002/adhm.202505872](https://doi.org/10.1002/adhm.202505872)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max1 | `Q320` · not captured | 6.85 | h−1 | not captured | review_gapfill (not captured) | Rodallec_2026:review |
-| EC50 | `Q321` · not captured | 156.1 | µg/mL | not captured | review_gapfill (not captured) | Rodallec_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max1 | `Q320` · not captured | 6.85 | h−1 | not captured | review_gapfill (not captured) | Rodallec_2026:review |
+| PD (effect) | EC50 | `Q321` · not captured | 156.1 | µg/mL | not captured | review_gapfill (not captured) | Rodallec_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

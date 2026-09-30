@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-hydroxy Saxagliptin (concentrations from this paper's PK model) drives DPP-4 inhibition ratio (in ratio): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of 5-hydroxy saxagliptin (ng/mL) drive the DPP-4 inhibition ratio (E) in T2DM rats via a sigmoidal Emax model with baseline E0 (direct concentration-effect link; no effect-compartment or turnover mechanism stated): E0 = 7.03, Emax = 60.88 (maximum inhibition ratio), EC50 = 251.74 ng/mL (SD 97.31), with a shape factor gamma mentioned but not quantified in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,17 +31,17 @@ Wang T; Tao T; Liu Y; Dong J; Ni S; Liu Y; et al. et al. (2024). BMC pharmacolog
   ·  DOI: [10.1186/s40360-024-00757-3](https://doi.org/10.1186/s40360-024-00757-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 — Mean | `Q321` · not captured | 251.74 | ng/mL | not captured | exact (not captured) | Tab10:row1:col2 |
-| EC50 — SD | `Q321` · not captured | 97.31 | ng/mL | not captured | exact (not captured) | Tab10:row1:col3 |
-| EC50 — CV | `Q321` · not captured | 38.65 | ng/mL | not captured | exact (not captured) | Tab10:row1:col4 |
-| E0 — Mean | `Q324` · not captured | 7.03 | not captured | not captured | exact (not captured) | Tab10:row3:col2 |
-| E0 — SD | `Q324` · not captured | 12.81 | not captured | not captured | exact (not captured) | Tab10:row3:col3 |
-| E0 — CV | `Q324` · not captured | 182.30 | not captured | not captured | exact (not captured) | Tab10:row3:col4 |
-| Emax — Mean | `Q320` · not captured | 60.88 | not captured | not captured | exact (not captured) | Tab10:row4:col2 |
-| Emax — SD | `Q320` · not captured | 12.54 | not captured | not captured | exact (not captured) | Tab10:row4:col3 |
-| Emax — CV | `Q320` · not captured | 20.60 | not captured | not captured | exact (not captured) | Tab10:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 — Mean | `Q321` · not captured | 251.74 | ng/mL | not captured | exact (not captured) | Tab10:row1:col2 |
+| PD (effect) | EC50 — SD | `Q321` · not captured | 97.31 | ng/mL | not captured | exact (not captured) | Tab10:row1:col3 |
+| PD (effect) | EC50 — CV | `Q321` · not captured | 38.65 | ng/mL | not captured | exact (not captured) | Tab10:row1:col4 |
+| PD (effect) | E0 — Mean | `Q324` · not captured | 7.03 | not captured | not captured | exact (not captured) | Tab10:row3:col2 |
+| PD (effect) | E0 — SD | `Q324` · not captured | 12.81 | not captured | not captured | exact (not captured) | Tab10:row3:col3 |
+| PD (effect) | E0 — CV | `Q324` · not captured | 182.30 | not captured | not captured | exact (not captured) | Tab10:row3:col4 |
+| PD (effect) | Emax — Mean | `Q320` · not captured | 60.88 | not captured | not captured | exact (not captured) | Tab10:row4:col2 |
+| PD (effect) | Emax — SD | `Q320` · not captured | 12.54 | not captured | not captured | exact (not captured) | Tab10:row4:col3 |
+| PD (effect) | Emax — CV | `Q320` · not captured | 20.60 | not captured | not captured | exact (not captured) | Tab10:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

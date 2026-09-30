@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salsolinol drives cAMP levels (in luminescence): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In CHO-K1 cells overexpressing the human μ-opioid receptor, salsolinol (SAL) acts as an agonist that inhibits forskolin-stimulated cAMP production (measured as chemiluminescence), with EC50 of 2 × 10−5 M for racemic SAL (morphine EC50 4 × 10−9 M), 9 × 10−6 M for (S)-SAL and 6 × 10−4 M for (R)-SAL. Naltrexone antagonizes the cAMP-lowering effect of racemic SAL (1.5 × 10−4 M, ~80% of maximal response) in a concentration-dependent manner, with IC50 of 1 × 10−9 M and complete antagonism at 10−8 M; no Emax, kin/kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Berríos-Cárcamo_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

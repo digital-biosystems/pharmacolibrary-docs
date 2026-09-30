@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives Bcl-2 expression (in relative expression) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Telmisartan (3, 5, and 7 mg/kg/day for 8 days) increased testicular Bcl-2 mRNA expression (relative to GAPDH, RT-PCR) in CPA-treated rats, attributed mechanistically to AT1 receptor blockade plus PPAR-γ partial agonism; the paper does not report a quantitative PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

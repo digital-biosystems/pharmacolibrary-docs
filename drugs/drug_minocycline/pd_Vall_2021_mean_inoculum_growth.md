@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Minocycline (concentrations from the PK model of Athanassa_2025) drives name (in Log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Minocycline concentrations (μg/mL) were related to mean inoculum growth ΔI (Log10 CFU/mL) over 24 h in time-kill studies via a re-parametrized sigmoid Emax model (Regoes et al.), where the concentration inhibits bacterial growth with ΔIMAX (growth without antibiotic) of 1.1 in MHB and 0.5 in SIC; potency is expressed as EC–3log, the concentration giving a 3 Log10 (99.9%) reduction of the initial inoculum, with γ as the sigmoid coefficient (no numeric EC–3log or γ values stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vallé_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Vallé Q; Roques BB; Bousquet-Mélou A; Dahlhaus D; Ramon-Portugal F; Dupouy V; 
   ·  DOI: [10.3389/fmicb.2021.671376](https://doi.org/10.3389/fmicb.2021.671376)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MHB — ΔImax | `Q323` · not captured | 1.1 | not captured | not captured | llm (not captured) | T3:row3:col6 |
-| SIC — ΔImax | `Q323` · not captured | 0.5 | not captured | not captured | llm (not captured) | T3:row6:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | MHB — ΔImax | `Q323` · not captured | 1.1 | not captured | not captured | llm (not captured) | T3:row3:col6 |
+| PD (effect) | SIC — ΔImax | `Q323` · not captured | 0.5 | not captured | not captured | llm (not captured) | T3:row6:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

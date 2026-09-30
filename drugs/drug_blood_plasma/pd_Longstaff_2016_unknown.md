@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Histones (measured concentrations) drives Factor Xa inhibition (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Histones (µg/ml) neutralise the anticoagulant activity of heparins measured as FXa-AT inhibition (0.2 nM FXa, 25 nM AT, 0.3 IU/ml LMWH): histones reduce the observed FXa-AT reaction rate (kobs) with IC50 values of 7.8 (±1.3) µg/ml for LMWH IS and 7.0 (±1.4) µg/ml for enoxaparin, and 1.2 (±1.4) µg/ml for UFH. The paper does not state a PD model family or mechanism beyond histone-mediated neutralisation of heparin activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Longstaff_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

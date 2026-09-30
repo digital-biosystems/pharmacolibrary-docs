@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Respiratory rate drives end-tidal carbon dioxide (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Respiratory rate (3–37 breaths/min) acts as the driver of end-tidal CO2 (ETCO2, 40→30 mmHg) through an effect-compartment sigmoid Emax model, where RR equilibrates to an effect-site concentration Ce with first-order rate constant ke0, and Ce decreases ETCO2 from E0 (40 mmHg) toward Emax (30 mmHg); levetiracetam/antiepileptic drug use was a covariate affecting Ce50, gamma, and ke0. The paper states Ce50 (RR at 50% of maximum decrease, i.e. 35 mmHg) was 20.5 breaths/min in non-users, with lower RR needed in antiepileptic users; no numeric ke0 or gamma values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

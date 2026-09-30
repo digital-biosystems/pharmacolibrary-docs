@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Activated carbon (AAC, PAC, CAC) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking activated carbon (AAC, PAC, CAC) concentrations to serum ALT; no mechanism, Imax/IC50/EC50/Emax, kin/kout, ke0 or gamma values for the ALT response are given (IC50 values are reported only for cytotoxicity in HCT-116 and HepG2 cells, e.g. AAC 48.7 ± 17.2 µg/ml in HCT-116).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alothaid_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clomiphene (measured concentrations) drives lesion growth (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Oral clomiphene or tamoxifen (20 mg/kg) reduced L. mexicana lesion growth in mice versus untreated controls; in vitro, growth inhibition of promastigotes and intracellular amastigotes was fitted to a sigmoid Emax equation, giving IC50 values of 1.7–3.3 µM (clomiphene) and 2.9–6.4 µM (tamoxifen) against promastigotes and 2.8 ± 0.2 µM and 3.7 ± 0.3 µM against L. mexicana amastigotes, with cytotoxicity CC50 of 19.8 µM and 18.8 µM respectively. The paper does not state a PD mechanism for the lesion-growth effect beyond antileishmanial activity (tamoxifen's proposed mode of action involves disturbance of sphingolipid metabolism, mitochondrial function, and cytoplasmic membrane potential), and no
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sifontes-Rodríguez_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,22 +31,22 @@ Sifontes-Rodríguez S; Escalona-Montaño AR; Mondragón Flores R; Mollineda-Diog
   ·  DOI: [10.3390/biomedicines12102290](https://doi.org/10.3390/biomedicines12102290)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 6.4 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col1 |
-| Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 2.9 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col2 |
-| Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 5.3 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col3 |
-| Tamoxifen — CytotoxicityCC50 ± SD (µM) | `Q322` · not captured | 18.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col4 |
-| Tamoxifen — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 3.7 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col5 |
-| Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 3.0 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col1 |
-| Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 1.7 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col2 |
-| Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 3.3 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col3 |
-| Clomiphene — CytotoxicityCC50 ± SD (µM) | `Q322` · not captured | 19.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col4 |
-| Clomiphene — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 2.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col5 |
-| Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.039 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col1 |
-| Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.030 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col2 |
-| Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.028 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col3 |
-| Amphotericin B — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 0.29 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 6.4 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col1 |
+| PD (effect) | Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 2.9 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col2 |
+| PD (effect) | Tamoxifen — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 5.3 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col3 |
+| PD (effect) | Tamoxifen — CytotoxicityCC50 ± SD (µM) | `Q322` · not captured | 18.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col4 |
+| PD (effect) | Tamoxifen — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 3.7 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row2:col5 |
+| PD (effect) | Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 3.0 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col1 |
+| PD (effect) | Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 1.7 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col2 |
+| PD (effect) | Clomiphene — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 3.3 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col3 |
+| PD (effect) | Clomiphene — CytotoxicityCC50 ± SD (µM) | `Q322` · not captured | 19.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col4 |
+| PD (effect) | Clomiphene — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 2.8 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row3:col5 |
+| PD (effect) | Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.039 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col1 |
+| PD (effect) | Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.030 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col2 |
+| PD (effect) | Amphotericin B — Promastigotes IC50 ± SD (µM) | `Q322` · not captured | 0.028 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col3 |
+| PD (effect) | Amphotericin B — AmastigotesL. mexicanaIC50 ± SD (µM) | `Q322` · not captured | 0.29 | µM | not captured | llm (not captured) | biomedicines-12-02290-t001:row4:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

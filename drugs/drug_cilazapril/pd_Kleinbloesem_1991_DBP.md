@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives Diastolic blood pressure (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cilazapril, after bioactivation to cilazaprilat, acts as a potent, reversible, competitive ACE inhibitor; the blood pressure (DBP) response is indirectly related to plasma cilazaprilat concentration (µg/L) via ACE inhibition, with more than 90% inhibition of plasma ACE needed for blood pressure reduction. The paper reports cilazaprilat potency (concentration causing 50% ACE inhibition) of approximately 1 µg/L plasma and identifies 5 mg as the dose producing maximal effect, but does not state a formal PD model with Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values for DBP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kleinbloesem_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

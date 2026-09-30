@@ -25,11 +25,11 @@ Use of the first-generation antipsychotics (including haloperidol) is considered
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Li_2022_reference](drugs/drug_haloperidol/Haloperidol_Li2022_reference.md) | 1-compartment, IV | 2 | Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4134)</sub><br><sub>route_to: `human_review`</sub> | [Franken_2017_reference](drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md) | 1-compartment (no model) | 3 | Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017) | [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Pilla_2013_reference](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | 2-compartment, oral | 13 | Pilla (2013) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Li_2022_reference](drugs/drug_haloperidol/Haloperidol_Li2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Li L et al., Pharmacokinetics of Haloperidol in Crit…, Pharmaceutics (2022) | [10.3390/pharmaceutics14030549](https://doi.org/10.3390/pharmaceutics14030549) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 1.4134)</sub><br><sub>route_to: `human_review`</sub> | [Franken_2017_reference](drugs/drug_haloperidol/Haloperidol_Franken2017_reference.md) | — | 1-compartment (no model) | 3 | Franken LG et al., Population pharmacokinetics of haloperi…, European journal of clinica… (2017) | [10.1007/s00228-017-2283-6](https://doi.org/10.1007/s00228-017-2283-6) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.895). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Pilla_2013_reference](drugs/drug_haloperidol/Haloperidol_Pilla2013_reference.md) | ▶ model + simulator | 2-compartment, oral | 13 | Pilla (2013) | — |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | skeletal muscle | <sub>“…sm decreases its oral bioavailability to 40 - 75%. After intramuscular administration, the…”</sub> | prose |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate, `UGT1A9` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` inhibitor/substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` substrate, `CYP3A7` substrate, `UGT1A9` substrate | DrugBank actor |

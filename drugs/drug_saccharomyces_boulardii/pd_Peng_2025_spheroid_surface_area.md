@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Puberulic acid (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Puberulic acid (µM concentrations) reduced the spheroid surface area of 3D-cultured human renal proximal tubular epithelial cells (3D-RPTECs) in a time-dependent manner during 1, 3, and 7 d exposure; the paper does not state a mechanism or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0) for the spheroid surface area response specifically (the record's Emax inhibition form is not confirmed by the excerpts). Relatedly, intracellular ATP decrease had a 7-d EC50 of 24.7 µM (95% CI: 20.4–30.0 µM), and puberulic acid inhibited OAT1-mediated furosemide uptake with an IC50 of 5.4 µM (95% CI: 3.26–8.71 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peng_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

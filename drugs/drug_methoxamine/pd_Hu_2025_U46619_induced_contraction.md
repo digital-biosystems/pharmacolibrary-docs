@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil (measured concentrations) drives name (in mN): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Verapamil (1 and 10 µM) inhibited methoxamine-induced contractions of human prostate tissues, decreasing Emax by 17% and 36% and increasing methoxamine EC50 by 0.36 and 1.22 orders of magnitude, respectively; the paper attributes this to antagonism of α1A-adrenoceptors (rightward EC50 shifts) with possible additional CaV1.2 inhibition contributing to Emax reduction, but no quantitative PD parameters (Imax, IC50, kin, kout, ke0) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

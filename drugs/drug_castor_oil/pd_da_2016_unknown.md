@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CG-EtOH (the dose) drives intestinal fluid accumulation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Oral CG-EtOH dose-dependently inhibited castor oil-induced intestinal fluid accumulation in mice (Emax = 67.5% ± 3.5% at 250 mg/kg; ED50 = 34.6 ± 5.4 mg/kg), an inhibitory Emax-type dose-effect; the paper does not state a mechanistic PD model beyond suggesting the antidiarrheal effect involves mainly changes in intestinal secretion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `da_2016`
 - **model family:** `emax`
 - **driver:** `dose_only`

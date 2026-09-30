@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Uncomplexed ticagrelor and uncomplexed ticagrelor active metabolite drive LTA (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Uncomplexed ticagrelor (TICA) and its active metabolite (TAM) each inhibit platelet aggregation measured as LTA (same structure as PRU/VASP) via separate sigmoid Emax terms (PRU=Base*(1−Emax1*TICA^γ/(EC501^γ+TICA^γ)−Emax2*TAM^γ/(EC502^γ+TAM^γ))), with Hill coefficients fixed at 2; the PB2452–TICA and PB2452–TAM complexes are inactive and reverse the effect by sequestering TICA/TAM. The paper does not report the final numeric estimates of EC50, Emax, or other parameters in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kathman_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

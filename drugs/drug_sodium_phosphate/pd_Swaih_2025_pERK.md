@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 (measured concentrations) drives pERK (in nmol/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AZ14289671 concentration-dependently inhibits ERK phosphorylation (pERK) in LXF2478ASV cells, assessed by HTRF after 2 h of treatment, with a mean IC50 of 32 nmol/L; the paper does not state a specific PD model (e.g., Emax or effect-compartment) for pERK, describing it only as downstream MAPK pathway inhibition following EGFR blockade.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

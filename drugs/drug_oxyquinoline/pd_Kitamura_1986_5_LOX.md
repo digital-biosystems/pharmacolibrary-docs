@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KF8940 drives 5-lipoxygenase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> KF8940 (2-n-heptyl-4-hydroxyquinoline-N-oxide) directly inhibits 5-lipoxygenase activity of RBL-1 rat basophilic leukemia cell homogenate in a dose-dependent manner, with IC50 = 1.5 x 10^-7 M; it is selective, inhibiting 12-lipoxygenase and cyclooxygenase only at higher concentrations (IC50 = 3.5 x 10^-5 M and 1.7 x 10^-4 M, respectively). The paper reports only in-vitro IC50 values and does not describe a kinetic PD model (no Imax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kitamura_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

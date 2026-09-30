@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cimicoxib (measured concentrations) drives clinical lameness score (in unknown): indirect response — drug inhibits the production of clinical lameness score.
+
+**Model:** No model was generated from this record.
+
+> Cimicoxib plasma concentrations act on the clinical lameness score (0–5) via an indirect response model in which inflammation increases the production of lameness (Kin) and cimicoxib exerts a concentration-dependent inhibition of Kin; the paper does not report the Imax, IC50 or Hill coefficient for this endpoint (the 239 μg/L potency value given is truncated and not attributable to the lameness score).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeunesse_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

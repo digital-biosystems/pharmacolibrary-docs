@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives alpha1-adrenergic receptor binding (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe methylscopolamine; it reports that saw palmetto extract (SPE, 10–200 mg/ml) directly and concentration-dependently inhibits the specific binding of [3H]prazosin to alpha1-adrenergic receptors in rat brain homogenates, with an IC50 of 106 mg/ml, and its free fatty acids (lauric, oleic, myristic, palmitic, linoleic; 10–300 mg/ml) inhibit the same binding with IC50 values of 23.8–136 mg/ml, linoleic acid being most potent. No Emax, kin/kout, ke0 or other dynamic model parameters are given; the effect is characterized only by IC50 values from radioligand displacement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abe_2009`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

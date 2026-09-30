@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ciprofloxacin, colistin (measured concentrations) drive name (in cfu/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In static time-kill experiments, ciprofloxacin and colistin concentrations (mg/L) reduce the bacterial count (cfu/mL) of Escherichia coli via a drug-dependent killing rate constant (kDrug) added to a subpopulation bacterial growth model, i.e., an Emax-type inhibitory effect on bacterial growth/killing. The combination effect was the sum of individual drug effects with altered potency: ciprofloxacin's EC50 in combination was 160% of its monodrug EC50 (EC50CIP,1,2 = 1.38 mg/L), while colistin's EC50 change was strain-dependent (54.1%–119%); no Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2024_2`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@
 not matched (stem Zhao_2024_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50CIP,1,2(mg/L) | `Q321` · not captured | 1.38 | mg/L | not captured | review_gapfill (not captured) | Zhao_2024_2:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50CIP,1,2(mg/L) | `Q321` · not captured | 1.38 | mg/L | not captured | review_gapfill (not captured) | Zhao_2024_2:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

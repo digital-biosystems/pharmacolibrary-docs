@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ALX-0171 (measured concentrations) drives Viral genomic copies (in continuous) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Palivizumab concentrations (nM) were related to RSV viral load (apically released titers/viral genomic copies) in the WD-PBEC model via a direct concentration-effect relationship fitted with a four-parameter logistic curve; the paper does not state a mechanistic PD model (e.g., kin/kout or effect compartment). Palivizumab had a mean IC50 of 1,048 to 1,090 nM, about 3-fold less potent than ALX-0171 (IC50 346.9 to 363.6 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Broadbent_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

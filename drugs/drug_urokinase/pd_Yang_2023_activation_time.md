@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thrombolytic agents (alteplase, tenecteplase, reteplase, urokinase) drive name (in min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Urokinase (along with alteplase, tenecteplase, and reteplase) was simulated with a 1D two-compartment PK-PD model combined with a local fibrinolysis model, in which the drug concentration in plasma drives clot lysis reactions; the measured response is the activation time (min) from drug administration to the start of clot lysis. The paper does not state a specific mechanism form or any potency/rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

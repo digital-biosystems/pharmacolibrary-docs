@@ -17,21 +17,21 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 08:47 | 15:47 | 1/0/0 | 2/1/0 | 0/0/0 | 203,900/4,408 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/8 | 9/1 | 0 |
+| 2026-09-29 23:44 | 0:26 | 1/0/0 | 2/1/0 | 0/0/0 | 4,630/656 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 2/8 | 9/1 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Samukawa_2017_reference](drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md) | 1-compartment, oral | 4 | Samukawa (2017) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Samukawa_2017_reference](drugs/drug_luseogliflozin/Luseogliflozin_Samukawa2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Samukawa (2017) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Samukawa_2017](drugs/drug_luseogliflozin/pd_Samukawa_2017_UGE.md) | Samukawa (2017) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Sasaki_2015](drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md) | Sasaki T et al., Pharmacokinetics, Pharmacodynamics, and…, Advances in therapy (2015) | [10.1007/s12325-015-0200-x](https://doi.org/10.1007/s12325-015-0200-x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sato_2024](drugs/drug_luseogliflozin/pd_Sato_2024_HbA1c.md) | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Samukawa_2017_UGE](drugs/drug_luseogliflozin/pd_Samukawa_2017_UGE.md) | urinary glucose excretion ← luseogliflozin · inhibition effect | — | Samukawa (2017) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Sasaki_2015_UGE](drugs/drug_luseogliflozin/pd_Sasaki_2015_UGE.md) | urinary glucose excretion ← luseogliflozin · direct sigmoid Emax (Hill) effect | — | Sasaki T et al., Pharmacokinetics, Pharmacodynamics, and…, Advances in therapy (2015) | [10.1007/s12325-015-0200-x](https://doi.org/10.1007/s12325-015-0200-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Sato_2024_HbA1c](drugs/drug_luseogliflozin/pd_Sato_2024_HbA1c.md) | HbA1c ← unknown · direct Emax (saturable) effect | — | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -42,22 +42,21 @@
 ## Coverage
 
 - **PubMed hits:** 28 matched, 28 returned
-- **screened:** 4  ·  **relevant:** 3
+- **screened:** 5  ·  **relevant:** 3
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Samukawa_2017_2.pdf` | Samukawa Y et al., Luseogliflozin, an SGLT2 Inhibitor, in…, Clinical pharmacology in dr… (2017) | popPK | 8 | [10.1002/cpdd.364](https://doi.org/10.1002/cpdd.364) | [28783873](https://pubmed.ncbi.nlm.nih.gov/28783873) | The study is a PK study of luseogliflozin, but the evidence only provides summary statistics (Cmax, AUC ratios) and lacks specific compartmental parameters like clearance (CL), volume (V), or half-life (t1/2). |
 | `Mizuno-Yasuhira_2014.pdf` | Mizuno-Yasuhira A et al., A Strategy for assessing potential drug…, Drug metabolism and disposi… (2014) | pd | 5 | [10.1124/dmd.114.058305](https://doi.org/10.1124/dmd.114.058305) | [25005603](https://www.ncbi.nlm.nih.gov/pubmed/25005603) | metadata signals extractable PD data (IC50) |
 | `Chino_2017.pdf` | Chino Y et al., In vitro evaluation of potential drug i…, Xenobiotica; the fate of fo… (2017) | pgx | 7 | [10.1080/00498254.2016.1193913](https://doi.org/10.1080/00498254.2016.1193913) | [27324291](https://www.ncbi.nlm.nih.gov/pubmed/27324291) | metadata signals extractable PGX data (CYP2C19, PK/PD-context) |
 | `Miyata_2017.pdf` | Miyata A et al., Metabolite profiling and enzyme reactio…, Xenobiotica; the fate of fo… (2017) | pgx | 7 | [10.1080/00498254.2016.1193263](https://doi.org/10.1080/00498254.2016.1193263) | [27347703](https://www.ncbi.nlm.nih.gov/pubmed/27347703) | metadata signals extractable PGX data (UGT1A1, PK/PD-context) |
 
-<sub>queue written 2026-09-22T08:44:41.487347+00:00</sub>
+<sub>queue written 2026-09-29T23:44:20.486837+00:00</sub>
 
 ## Screened and excluded
 
@@ -85,7 +84,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Samukawa_2016 | not_relevant | 3 | 2 | The paper reports descriptive pharmacodynamic changes (glucose, UGE, insulin) in responder/non-responder groups but does not provide a concentration-effect or dose-response model with numeric PD parameters like Emax or EC50. |
 | popPK | Samukawa_2017 | relevant | 8 | 2 | The paper describes a population PK-PD model for luseogliflozin and mentions PK parameters (2-compartment model), but the specific numeric values for CL, V, or ka are not present in the provided text or tables, likely residing in the full results section or supplementary material not included here. |
 | popPK | Samukawa_2017_2 | relevant | 8 | 2 | The study is a PK study of luseogliflozin, but the evidence only provides summary statistics (Cmax, AUC ratios) and lacks specific compartmental parameters like clearance (CL), volume (V), or half-life (t1/2). |
-| PD | Samukawa_2017_2 | not_relevant | 0 | 0 | The study is a pharmacokinetic evaluation in hepatic impairment subjects and does not report any pharmacodynamic parameters, exposure-response relationships, or dose-effect data. |
+| PD | Samukawa_2017_2 | not_relevant | 0 | 0 | The study is a pharmacokinetic evaluation in hepatic impairment subjects and does not report any pharmacodynamic parameters, exposure-response relationships, or dose-effect data for luseogliflozin. |
 | popPK | Sasaki_2015 | relevant | 5 | 2 | The study reports non-compartmental PK parameters (Cmax, Tmax, AUC, t1/2) for luseogliflozin, but the specific numeric values are contained in Table 2 which is not included in the provided evidence. |
 | popPK | Sato_2024 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of HbA1c reduction (pharmacodynamics) and explicitly states that luseogliflozin was excluded from the analysis due to lack of public data. |
 | popPK | Tahara_2016 | irrelevant | 2 | 0 | The study is an animal (mouse) investigation comparing SGLT2 inhibitors, and the provided evidence contains no quantitative pharmacokinetic parameter values (e.g., CL, V, ka) for luseogliflozin. |

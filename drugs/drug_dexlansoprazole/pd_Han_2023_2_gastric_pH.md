@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tegoprazan drives name (in pH units) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 are reported); it only descriptively compares single oral doses of tegoprazan (50, 100, 200 mg) and dexlansoprazole (60 mg) against measured gastric pH, showing dose-dependent increases in time with pH &gt;4 (58.55%, 70.07%, 81.73%) and pH &gt;6 (25.97%, 31.91%, 48.44%) for tegoprazan versus 60.55% and 25.85% for dexlansoprazole, with tegoprazan reaching mean pH ≥4 within 2 hours versus about 7 hours for dexlansoprazole.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2023_2`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

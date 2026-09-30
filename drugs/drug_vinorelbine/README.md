@@ -39,10 +39,10 @@ For the treatment of HER2-positive, trastuzumab-resistant, advanced breast cance
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_intravenous_vinorelbine_n_111](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_intravenous_vinorelbine_n_111.md) | 1-compartment, oral | 2 | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_oral_vinorelbine_n_222](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_oral_vinorelbine_n_222.md) | 1-compartment, oral | 2 | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_intravenous_vinorelbine_n_111](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_intravenous_vinorelbine_n_111.md) | held back | 1-compartment, oral | 2 | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl, Vd, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Pétain_2019_oral_vinorelbine_n_222](drugs/drug_vinorelbine/Vinorelbine_Ptain2019_oral_vinorelbine_n_222.md) | held back | 1-compartment, oral | 2 | Pétain A et al., Effect of ethnicity on vinorelbine phar…, Cancer chemotherapy and pha… (2019) | [10.1007/s00280-019-03872-9](https://doi.org/10.1007/s00280-019-03872-9) |
 
 ## ADME sites
 

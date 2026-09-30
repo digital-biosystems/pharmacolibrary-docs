@@ -23,16 +23,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_healthy subjects and patients with OIC](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | — (no model) | 0 | Al-Huniti (2016) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Al-Huniti_2016_healthy subjects and patients with OIC](drugs/drug_naloxegol/Naloxegol_AlHuniti2016_healthy_subjects_and_patients_with_oi.md) | — | — (no model) | 0 | Al-Huniti (2016) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Huniti_2017](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Al-Huniti_2017](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Al-Huniti_2017_SBM_response](drugs/drug_naloxegol/pd_Al_Huniti_2017_SBM_response.md) | weekly probability of response ← naloxegol · direct linear effect | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Al-Huniti_2017_dropout](drugs/drug_naloxegol/pd_Al_Huniti_2017_dropout.md) | time to discontinuation ← naloxegol · direct linear effect | — | Al-Huniti N et al., Population Exposure-Response Modeling S…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12229](https://doi.org/10.1002/psp4.12229) |
 
 ## ADME sites
 

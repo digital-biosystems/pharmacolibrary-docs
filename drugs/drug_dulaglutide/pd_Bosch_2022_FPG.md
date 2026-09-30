@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide drives glucose (in mM) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a quantitative systems pharmacology (4GI) model, the GLP-1 receptor agonist dulaglutide (GLP-1 receptor EC50 80 pM, versus 6 pM for liraglutide and 1.92 pM for GLP-1(7–36)NH2) acts on fasting plasma glucose (FPG, mM) as a stimulator of GLP-1 receptor signaling, which lowers glucose mainly by GLP-1–mediated inhibition of gastric emptying/glucose absorption (KAglc2 = KAglc × (1 − GLPGLC_AI), with Kaglc estimated at 0.853 /h) together with insulin-dependent and insulin-independent glucose elimination and endogenous glucose production (KINglc) components. The excerpts do not state an Imax, IC50, Emax, kout, or ke0 for the dulaglutide–FPG relationship, and the record does not resolve the drive
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bosch_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,12 +31,12 @@ Bosch R; Petrone M; Arends R; Vicini P; Sijbrands EJG; Hoefman S; Snelder N et a
   ·  DOI: [10.1002/psp4.12752](https://doi.org/10.1002/psp4.12752)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| GLP−1 receptor EC50 (pM) — GLP−1(7–36)NH1 | `Q321` · not captured | 1.92 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col2 |
-| GLP−1 receptor EC50 (pM) — Liraglutide | `Q321` · not captured | 6 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col4 |
-| GLP−1 receptor EC50 (pM) — Dulaglutide | `Q321` · not captured | 80 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col5 |
-| Glucagon receptor EC50 (pM) — Glucagon | `Q321` · not captured | 1.54 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | GLP−1 receptor EC50 (pM) — GLP−1(7–36)NH1 | `Q321` · not captured | 1.92 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col2 |
+| PD (effect) | GLP−1 receptor EC50 (pM) — Liraglutide | `Q321` · not captured | 6 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col4 |
+| PD (effect) | GLP−1 receptor EC50 (pM) — Dulaglutide | `Q321` · not captured | 80 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col5 |
+| PD (effect) | Glucagon receptor EC50 (pM) — Glucagon | `Q321` · not captured | 1.54 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

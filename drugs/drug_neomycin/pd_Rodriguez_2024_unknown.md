@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Castanopsis echinocarpa (measured concentrations) drives outer hair cell survival (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In neomycin (NM)-induced ototoxicity in zebrafish, Castanopsis echinocarpa extract (CAE, 0.01–10 µg/mL) was modelled with an Emax-type dose–response for outer hair cell survival, with an EC50 of 0.497 µg/mL; the paper does not state the mechanism beyond this protective concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rodriguez_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Rodriguez I; Nam YH; Shin SW; Seo GJ; Kim NW; Nuankaew W; et al. et al. (2024). 
   ·  DOI: [10.3390/nu16162716](https://doi.org/10.3390/nu16162716)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 value of CAE | `Q321` · not captured | 0.497 | µg/mL | not captured | review_gapfill (not captured) | Rodriguez_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 value of CAE | `Q321` · not captured | 0.497 | µg/mL | not captured | review_gapfill (not captured) | Rodriguez_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

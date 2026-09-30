@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lead acetate (measured concentrations) drives detrusor muscle contraction (in g tension) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Isoprenaline (concentration-response) induces relaxation of rat detrusor muscle, and in tissues from rats given lead acetate 30 mg/kg (21 days, ip) the isoprenaline relaxation curve was shifted upward with a significantly decreased EMAX; the paper does not report a PD model, potency values (IC50/EC50), or a mechanism for this interaction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taha_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Taha SS; Daabees TT; Aly RG; Senbel AM et al. (2022). Saudi pharmaceutical journ
   ·  DOI: [10.1016/j.jsps.2022.01.012](https://doi.org/10.1016/j.jsps.2022.01.012)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Control — Urinary bladder weight/Body weight, µg/g | `Q352` · not captured | 0.35 | not captured | not captured | llm (not captured) | t0005:row1:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

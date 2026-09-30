@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives trans-activation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Telmisartan concentrations (μmol/l) drive PPARγ trans-activation, measured as PGC-1 co-activator recruitment in cell-free assays, via direct PPARγ ligand/agonism (Emax-type stimulation); telmisartan gave 49% of the rosiglitazone (100%) response with an EC50 between 3 and 5 μmol/l (sartans overall 3–5 μmol/l); no kin/kout, ke0, Imax, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erbe_2006`
 - **model family:** `emax`
 - **driver:** `cited_pk`

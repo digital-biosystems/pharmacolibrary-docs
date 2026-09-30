@@ -23,16 +23,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | 1-compartment, IV | 1 | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Brain_2008_reference](drugs/drug_ifosfamide/Ifosfamide_Brain2008_reference.md) | held back | 1-compartment, IV | 1 | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008](drugs/drug_ifosfamide/pd_Brain_2008_ANC.md) | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008](drugs/drug_ifosfamide/pd_Brain_2008_BMG.md) | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008_ANC](drugs/drug_ifosfamide/pd_Brain_2008_ANC.md) | ANC ← ifosfamide · indirect response — drug inhibits the production of ANC | — | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Brain_2008_BMG](drugs/drug_ifosfamide/pd_Brain_2008_BMG.md) | BMG ← ifosfamide · indirect response — drug inhibits the production of BMG | — | Brain EG et al., Population pharmacokinetics and explora…, British journal of clinical… (2008) | [10.1111/j.1365-2125.2007.03095.x](https://doi.org/10.1111/j.1365-2125.2007.03095.x) |
 
 ## ADME sites
 

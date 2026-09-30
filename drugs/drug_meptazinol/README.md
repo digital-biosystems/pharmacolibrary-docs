@@ -20,10 +20,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017](drugs/drug_meptazinol/pd_Xie_2017_AChE_inhibition.md) | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017](drugs/drug_meptazinol/pd_Xie_2017_A_42_levels.md) | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017_AChE_inhibition](drugs/drug_meptazinol/pd_Xie_2017_AChE_inhibition.md) | name ← (−)-meptazinol phenylcarbamate (43) · inhibition effect | — | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Xie_2017_A_42_levels](drugs/drug_meptazinol/pd_Xie_2017_A_42_levels.md) | name ← (−)-meptazinol phenylcarbamate (43) · inhibition effect | — | Xie Q et al., Pharmacophore-based design and discover…, Journal of enzyme inhibitio… (2017) | [10.1080/14756366.2016.1265521](https://doi.org/10.1080/14756366.2016.1265521) |
 
 ## ADME sites
 

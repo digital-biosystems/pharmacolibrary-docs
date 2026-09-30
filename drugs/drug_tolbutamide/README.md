@@ -23,16 +23,16 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Shi_2021_reference](drugs/drug_tolbutamide/Tolbutamide_Shi2021_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Shi Y et al., Effects of Avitinib on CYP450 Enzyme Ac…, Drug design, development an… (2021) | [10.2147/DDDT.S323186](https://doi.org/10.2147/DDDT.S323186) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jonkers_2001](drugs/drug_tolbutamide/pd_Jonkers_2001_Ca2_i.md) | Jonkers FC et al., Tolbutamide stimulation of pancreatic b…, British journal of pharmaco… (2001) | [10.1038/sj.bjp.0704108](https://doi.org/10.1038/sj.bjp.0704108) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Schwanstecher_1994](drugs/drug_tolbutamide/pd_Schwanstecher_1994_unknown.md) | Schwanstecher M et al., Location of the sulphonylurea receptor…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb17078.x](https://doi.org/10.1111/j.1476-5381.1994.tb17078.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jonkers_2001_Ca2_i](drugs/drug_tolbutamide/pd_Jonkers_2001_Ca2_i.md) | cytoplasmic Ca2+ ← tolbutamide · direct Emax (saturable) effect | — | Jonkers FC et al., Tolbutamide stimulation of pancreatic b…, British journal of pharmaco… (2001) | [10.1038/sj.bjp.0704108](https://doi.org/10.1038/sj.bjp.0704108) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Schwanstecher_1994_unknown](drugs/drug_tolbutamide/pd_Schwanstecher_1994_unknown.md) | insulin release ← compound IV · inhibition effect | — | Schwanstecher M et al., Location of the sulphonylurea receptor…, British journal of pharmaco… (1994) | [10.1111/j.1476-5381.1994.tb17078.x](https://doi.org/10.1111/j.1476-5381.1994.tb17078.x) |
 
 ## ADME sites
 

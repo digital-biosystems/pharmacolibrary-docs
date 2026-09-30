@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-FU anabolites and DSBs drive tumor volume (in unknown): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> In the tumor growth inhibition (TGI) model, 5-FU anabolites (A5, pmol·mg⁻¹, from the cellular model) inhibit proliferation of tumor cells with an IC50 (concentration of 5-FU anabolites causing 50% decrease in proliferation rate), while double-strand breaks (NDSB,deviation) stimulate production of damaged quiescent cells via an Emax/EC50,damage function (Emax,damage = maximal fractional stimulatory effect, EC50,damage = level for half-maximal effect), with γTv fixed at 0.2; numeric parameter values are not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ma_2022`
 - **model family:** `disease_progression`
 - **driver:** `not_resolved`

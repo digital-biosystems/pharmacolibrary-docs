@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Activated carbon (AAC, PAC, CAC) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for TBARS: activated carbons (AAC, PAC, CAC) were given to rats and TBARS (a lipid peroxidation marker) increased significantly, which the authors attribute to oxidative stress via free-radical generation, but no mechanism model, Imax, IC50, EC50, kin, kout, ke0 or gamma values for TBARS are reported. The only potency values given are in-vitro cytotoxicity IC50s in HCT-116 and HepG2 cells after 24 h exposure (AAC 48.7 ± 17.2 and 51 ± 6.24 µg/ml; CAC 88.5 ± 8.9 and 74.6 ± 5.03 µg/ml), not for the TBARS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alothaid_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

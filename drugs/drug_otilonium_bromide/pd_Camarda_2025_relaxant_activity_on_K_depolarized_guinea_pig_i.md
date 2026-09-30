@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of 1,4-dihydropyridine methyl esters (and, per the record, otilonium bromide with IC50 = 3.43 µM and nifedipine with IC50 = 0.0019 µM) were tested against spasmolytic/relaxant activity on K+-depolarized guinea pig ileum longitudinal smooth muscle; the paper does not state a PD mechanism (no kin/kout, effect compartment, or production/elimination model is described). Reported potencies are EC50 values: compound 10 = 0.095 µM, 31 = 0.55 µM, 43 = 0.96 µM, 2 = 8.83 µM, and 21 = 0.0033 µM on ileum (0.016 µM on vascular smooth muscle, 2.33 µM for inotropic effects).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Camarda_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,16 +30,16 @@ Camarda L; Corazza I; Locatelli A; Leoni A; Frosini M; Budriesi R; et al. et al.
   ·  DOI: [10.3390/ph18101476](https://doi.org/10.3390/ph18101476)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| NIF — IC50 b(μM) | `Q322` · not captured | 0.0019 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row1:col2 |
-| OB — IC50 b(μM) | `Q322` · not captured | 3.43 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row2:col2 |
-| 2 — IC50 b(μM) | `Q322` · not captured | 0.20 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row3:col2 |
-| 10 — IC50 b(μM) | `Q322` · not captured | 2.46 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row4:col2 |
-| 31 — IC50 b(μM) | `Q322` · not captured | 0.30 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row5:col2 |
-| 43 — IC50 b(μM) | `Q322` · not captured | 0.10 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row6:col2 |
-| 62 — IC50 b(μM) | `Q322` · not captured | 1.75 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row7:col2 |
-| 65 — IC50 b(μM) | `Q322` · not captured | 0.049 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | NIF — IC50 b(μM) | `Q322` · not captured | 0.0019 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row1:col2 |
+| PD (effect) | OB — IC50 b(μM) | `Q322` · not captured | 3.43 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row2:col2 |
+| PD (effect) | 2 — IC50 b(μM) | `Q322` · not captured | 0.20 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row3:col2 |
+| PD (effect) | 10 — IC50 b(μM) | `Q322` · not captured | 2.46 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row4:col2 |
+| PD (effect) | 31 — IC50 b(μM) | `Q322` · not captured | 0.30 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row5:col2 |
+| PD (effect) | 43 — IC50 b(μM) | `Q322` · not captured | 0.10 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row6:col2 |
+| PD (effect) | 62 — IC50 b(μM) | `Q322` · not captured | 1.75 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row7:col2 |
+| PD (effect) | 65 — IC50 b(μM) | `Q322` · not captured | 0.049 | μM | not captured | llm (not captured) | pharmaceuticals-18-01476-t004:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

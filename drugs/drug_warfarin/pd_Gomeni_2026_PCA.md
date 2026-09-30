@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Warfarin (concentrations from the PK model of Gomeni_2026::deep_learning) drives Prothrombin time activity (in %): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Warfarin plasma concentrations drive the prothrombin complex activity (%PCA) response; the effect-compartment model assumes effect is driven by a hypothetical effect-site concentration Ce(t) equilibrating with plasma concentration Cp(t) with a first-order rate constant (ke0), with inhibition of PCA as the effect direction. The excerpts do not report numeric potency or rate values (e.g., IC50, ke0) for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gomeni_2026`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

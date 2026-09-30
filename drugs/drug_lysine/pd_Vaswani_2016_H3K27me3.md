@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CPI-1205 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CPI-1205, a potent EZH2 inhibitor (biochemical IC50 = 0.002 μM; cellular EC50 = 0.032 μM), reduces the H3K27me3/global H3 ratio by inhibiting EZH2, the catalytic engine of PRC2 that installs methylation on lysine 27 of histone 3; in KARPAS-422 xenografts dosed at 160 mg/kg po BID for 25 days, tumor H3K27me3 was reduced by 47% relative to vehicle. The paper does not state a specific PD model structure or parameters (Imax, kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vaswani_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

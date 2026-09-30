@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 03:37 | 8:20 | 0/0/0 | 0/0/0 | 0/0/0 | 24,860/780 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-29 13:54 | 1:46 | 0/0/0 | 0/0/0 | 0/0/0 | 1,642/116 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Krum_1992.pdf` | Krum H et al., Steady-state pharmacokinetics and pharm…, Journal of cardiovascular p… (1992) | pd | 5 | [10.1097/00005344-199209000-00017](https://doi.org/10.1097/00005344-199209000-00017) | [1279292](https://www.ncbi.nlm.nih.gov/pubmed/1279292) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-28T03:37:37.534932+00:00</sub>
+<sub>queue written 2026-09-29T13:54:21.012657+00:00</sub>
 
 ## Screened and excluded
 

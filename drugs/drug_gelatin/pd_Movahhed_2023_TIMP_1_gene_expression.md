@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taraxasterol drives name (in relative expression) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a PD model for TIMP-1 gene expression; it only states that taraxasterol (IC50 114.68 ± 3.28 μM, 24 h) decreased PC3 cell migration by ~75%, invasion by ~54%, and adhesion by ~76%, with no mechanism, potency, or rate parameters given for the TIMP-1 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Movahhed_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

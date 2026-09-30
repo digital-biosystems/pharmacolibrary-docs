@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifapentine (measured concentrations) drives name (in log10 CFU/lung) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD model mechanism (no Emax/Imax, IC50, kin/kout, or ke0 values are given); it relates steady rifapentine and rifabutin plasma concentrations (μg/mL) to M. tuberculosis lung burden (log10 CFU/lung) in mice, with rifapentine fitted average plasma concentrations of 0.54–0.63, 2.60–2.98, and 4.90–5.60 μg/mL at 0.25, 0.75, and 1.25 mg/kg BID, and rifabutin 0.07–0.16 μg/mL at 1.5 mg/kg BID, showing an exposure-dependent bactericidal (inhibitory) effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chang_2023_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@
 not matched (stem Chang_2023_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| RPT 0.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.63 | μg/mL | not captured | llm (not captured) | T3:row7:col3 |
-| RPT 0.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.54 | μg/mL | not captured | llm (not captured) | T3:row7:col4 |
-| RPT 0.75 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 2.98 | μg/mL | not captured | llm (not captured) | T3:row8:col3 |
-| RPT 0.75 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 2.60 | μg/mL | not captured | llm (not captured) | T3:row8:col4 |
-| RPT 1.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 5.60 | μg/mL | not captured | llm (not captured) | T3:row9:col3 |
-| RPT 1.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 4.90 | μg/mL | not captured | llm (not captured) | T3:row9:col4 |
-| RFB 1.5 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.16 | μg/mL | not captured | llm (not captured) | T3:row12:col3 |
-| RFB 1.5 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.07 | μg/mL | not captured | llm (not captured) | T3:row12:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | RPT 0.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.63 | μg/mL | not captured | llm (not captured) | T3:row7:col3 |
+| model term | RPT 0.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.54 | μg/mL | not captured | llm (not captured) | T3:row7:col4 |
+| model term | RPT 0.75 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 2.98 | μg/mL | not captured | llm (not captured) | T3:row8:col3 |
+| model term | RPT 0.75 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 2.60 | μg/mL | not captured | llm (not captured) | T3:row8:col4 |
+| model term | RPT 1.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 5.60 | μg/mL | not captured | llm (not captured) | T3:row9:col3 |
+| model term | RPT 1.25 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 4.90 | μg/mL | not captured | llm (not captured) | T3:row9:col4 |
+| model term | RFB 1.5 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.16 | μg/mL | not captured | llm (not captured) | T3:row12:col3 |
+| model term | RFB 1.5 mg/kg BID — Fitted plasma concnb (μg/mL) | `Q900` · not captured | 0.07 | μg/mL | not captured | llm (not captured) | T3:row12:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

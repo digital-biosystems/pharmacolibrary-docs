@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride inhibits the SARS-CoV-2 proteases PLpro and Mpro in vitro, with IC50 = 2.72 ± 0.09 μM for PLpro and IC50 = 7.25 ± 0.15 μM for Mpro; the paper reports these enzyme-inhibition potencies but does not describe a pharmacodynamic model (no Emax/kin/kout/ke0 or effect-compartment parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Puhl_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,18 +30,18 @@ Puhl AC; Godoy AS; Noske GD; Nakamura AM; Gawriljuk VO; Fernandes RS; et al. et 
   ·  DOI: [10.1021/acsomega.3c01110](https://doi.org/10.1021/acsomega.3c01110)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PLpro IC50 (μM) — raloxifene | `Q322` · not captured | 3.28 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col2 |
-| PLpro IC50 (μM) — cetylpyridinium chloride | `Q322` · not captured | 2.72 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
-| PLpro IC50 (μM) — cefonicid sodium | `Q322` · not captured | 2.17 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
-| PLpro IC50 (μM) — citicoline | `Q322` · not captured | 1.35 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
-| PLpro IC50 (μM) — colistin sulfate | `Q322` · not captured | 2.94 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
-| PLpro IC50 (μM) — β-lapachone | `Q322` · not captured | 5.30 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
-| PLpro IC50 (μM) — tanshinone iia sulfonate sodium | `Q322` · not captured | 2.76 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
-| PLpro IC50 (μM) — lobaric acid | `Q322` · not captured | 10 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col9 |
-| Mpro IC50 (μM) — raloxifene | `Q322` · not captured | 42.8 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
-| Mpro IC50 (μM) — cetylpyridinium chloride | `Q322` · not captured | 7.25 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | PLpro IC50 (μM) — raloxifene | `Q322` · not captured | 3.28 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col2 |
+| PD (effect) | PLpro IC50 (μM) — cetylpyridinium chloride | `Q322` · not captured | 2.72 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col3 |
+| PD (effect) | PLpro IC50 (μM) — cefonicid sodium | `Q322` · not captured | 2.17 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col4 |
+| PD (effect) | PLpro IC50 (μM) — citicoline | `Q322` · not captured | 1.35 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col5 |
+| PD (effect) | PLpro IC50 (μM) — colistin sulfate | `Q322` · not captured | 2.94 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col6 |
+| PD (effect) | PLpro IC50 (μM) — β-lapachone | `Q322` · not captured | 5.30 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col7 |
+| PD (effect) | PLpro IC50 (μM) — tanshinone iia sulfonate sodium | `Q322` · not captured | 2.76 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col8 |
+| PD (effect) | PLpro IC50 (μM) — lobaric acid | `Q322` · not captured | 10 | μM | not captured | llm_confirmed (not captured) | tbl1:row0:col9 |
+| PD (effect) | Mpro IC50 (μM) — raloxifene | `Q322` · not captured | 42.8 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col2 |
+| PD (effect) | Mpro IC50 (μM) — cetylpyridinium chloride | `Q322` · not captured | 7.25 | μM | not captured | llm_confirmed (not captured) | tbl1:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

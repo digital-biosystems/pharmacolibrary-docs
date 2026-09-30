@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bis(spiropyrazolone)cyclopropanes (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe a PD model for menadione; they report that bis(spiropyrazolone)cyclopropanes inhibit cell growth (IC50 49.79–113.70 µM in RKO, PC-3 and HeLa, e.g. derivative 4r: 60.70, 49.79 and 78.72 µM) and L. mexicana promastigotes (IC50 mostly &lt;1 µM; 4r/4s 0.19 µM vs amphotericin B 0.17 µM), with selectivity indices of 34.2 (4r) and 45.3 (4s); no mechanism of action, Imax, Emax, kin/kout or ke0 is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barreiro-Costa_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

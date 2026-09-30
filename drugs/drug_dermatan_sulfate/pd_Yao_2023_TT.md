@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CMG-1.0 and GMG-1.0 (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not give a PD model for thrombin time (TT); it only reports that GMG-1.0 (a glycosaminoglycan) prolongs TT, with a concentration of 12.035 μM required to double TT, while CMG-1.0 showed no TT-prolonging activity. No Imax, IC50, EC50 for TT, kin, kout, ke0, or gamma values are stated for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yao_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

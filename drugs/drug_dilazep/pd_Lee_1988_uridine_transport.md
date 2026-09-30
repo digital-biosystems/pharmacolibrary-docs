@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nitrobenzylthioinosine (measured concentrations) drives name (in pmol/s per mg of protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dilazep inhibits the uptake of [14C]uridine (pmol/s per mg of protein) into rat cerebral-cortical synaptosomes, with a biphasic concentration-response curve in which both transport components (NBMPR-sensitive and NBMPR-insensitive) are inhibited; potency was analysed via the equation Ki = IC50/(1 + L/Km), but the paper does not state specific dilazep IC50, Imax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_1988`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aditoprim (measured concentrations) drives name (in CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Aditoprim concentrations (mg/L) inhibit the susceptible S. suis subpopulation count (CFU/mL) via a sigmoid Emax kill term (Emax×C^γ/(EC50_S^γ+C^γ)) added to the natural growth rate in a two-subpopulation semi-mechanistic PD model, with EC50_S = 0.685 mg/L (R.S.E. 1.45% for Emax; EC50_R = 1.63 mg/L R.S.E. %); the paper does not state Emax or gamma values numerically.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mi_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Mi K; Sun L; Zhang L; Tang A; Tian X; Hou Y; Sun L; Huang L et al. (2024). Front
   ·  DOI: [10.3389/fphar.2024.1378034](https://doi.org/10.3389/fphar.2024.1378034)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Value (R.S.E. %) | `Q320` · not captured | 1.45 | R.S.E. % | not captured | exact (not captured) | T4:row4:col3 |
-| EC50_S — Value (R.S.E. %) | `Q321` · not captured | 0.685 | R.S.E. % | not captured | llm (not captured) | T4:row5:col3 |
-| EC50_R — Value (R.S.E. %) | `Q321` · not captured | 1.63 | R.S.E. % | not captured | llm (not captured) | T4:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Value (R.S.E. %) | `Q320` · not captured | 1.45 | R.S.E. % | not captured | exact (not captured) | T4:row4:col3 |
+| PD (effect) | EC50_S — Value (R.S.E. %) | `Q321` · not captured | 0.685 | R.S.E. % | not captured | llm (not captured) | T4:row5:col3 |
+| PD (effect) | EC50_R — Value (R.S.E. %) | `Q321` · not captured | 1.63 | R.S.E. % | not captured | llm (not captured) | T4:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

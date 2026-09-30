@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hayakawa_2025](drugs/drug_teneligliptin/pd_Hayakawa_2025_HbA1c.md) | Hayakawa T et al., Association between daily dose of dipep…, BMC pharmacology & toxicolo… (2025) | [10.1186/s40360-025-01055-2](https://doi.org/10.1186/s40360-025-01055-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hayakawa_2025_HbA1c](drugs/drug_teneligliptin/pd_Hayakawa_2025_HbA1c.md) | name ← unknown · inhibition effect | — | Hayakawa T et al., Association between daily dose of dipep…, BMC pharmacology & toxicolo… (2025) | [10.1186/s40360-025-01055-2](https://doi.org/10.1186/s40360-025-01055-2) |
 
 ## Pharmacogenomics (PGx)
 

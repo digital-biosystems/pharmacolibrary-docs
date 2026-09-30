@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluindione and S-acenocoumarol (measured concentrations) drive INR (in unknown): indirect response — drug inhibits the loss of INR.
+
+**Model:** No model was generated from this record.
+
+> S-acenocoumarol concentration (mg/L) drives the INR response via an indirect response model in which the drug inhibits the production of 1/INR (i.e. stimulates INR), described by d(1/INR)/dt = kin(1 − C^γ/(C^γ + C50^γ)) − kout(1/INR). Key parameters: baseline INR 1.13, C50 = 0.0023 mg/L (reduced by 1.29-fold in VKORC1 CC/CT carriers), kin = 0.0269 h⁻¹, kout = 0.0268 h⁻¹, γ = 1.2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Verstuyft_2012`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Verstuyft C; Delavenne X; Rousseau A; Robert A; Tod M; Diquet B; et al. et al. (
   ·  DOI: [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline INR | `Q324` · not captured | 1.13 | not captured | not captured | review_gapfill (not captured) | Verstuyft_2012:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline INR | `Q324` · not captured | 1.13 | not captured | not captured | review_gapfill (not captured) | Verstuyft_2012:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

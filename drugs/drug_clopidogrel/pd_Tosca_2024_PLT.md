@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Givinostat (measured concentrations) drives platelets (in 10^9 cells/L): indirect response — drug inhibits the loss of platelets.
+
+**Model:** No model was generated from this record.
+
+> Givinostat concentrations act on platelet counts (10^9 cells/L) in PV patients via a joint Friberg myelosuppression model in which the drug linearly inhibits proliferation of the progenitor cell compartment feeding PLT (and WBC/HCT); potency was highest for PLT (Slope 3.74 L/ng) versus WBC (1.94 L/ng) and HCT (0.313 L/ng), with a mean transit time for PLT of 297 (second MTT parameter 8.96). The excerpts do not state Imax/IC50/EC50/ke0 values or the units of the MTT parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tosca_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -21,38 +31,38 @@ Tosca EM; De Carlo A; Bartolucci R; Fiorentini F; Di Tollo S; Caserini M; Rocche
   ·  DOI: [10.1002/psp4.13087](https://doi.org/10.1002/psp4.13087)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MTT — PLT | `Q81` · not captured | 297 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col2 |
-| MTT — PLT | `Q81` · not captured | 8.96 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col3 |
-| MTT — WBC | `Q81` · not captured | 319 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col4 |
-| MTT — WBC | `Q81` · not captured | 12.48 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col5 |
-| MTT — HCT | `Q81` · not captured | 610 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col6 |
-| MTT — HCT | `Q81` · not captured | 16.7 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col7 |
-| Omega MTT — PLT | `Q81` · not captured | 0.085 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col2 |
-| Omega MTT — PLT | `Q81` · not captured | 80.8 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col3 |
-| Omega MTT — WBC | `Q81` · not captured | 0.017 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col4 |
-| Omega MTT — WBC | `Q81` · not captured | 83.3 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col5 |
-| Omega MTT — HCT | `Q81` · not captured | 0.095 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col6 |
-| Omega MTT — HCT | `Q81` · not captured | 67.8 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col7 |
-| Sigma — PLT | `Q315` · not captured | 0.088 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col2 |
-| Sigma — PLT | `Q315` · not captured | 13.4 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col3 |
-| Sigma — WBC | `Q315` · not captured | 0.062 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col4 |
-| Sigma — WBC | `Q315` · not captured | 18.3 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col5 |
-| Sigma — HCT | `Q315` · not captured | 0.004 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col6 |
-| Sigma — HCT | `Q315` · not captured | 9.26 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col7 |
-| Omega (2,1) — PLT | `Q312` · not captured | 0.038 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row15:col2 |
-| Omega (2,1) — PLT | `Q312` · not captured | 82.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row15:col3 |
-| Omega (8,7) — PLT | `Q312` · not captured | 0.1 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row16:col2 |
-| Omega (8,7) — PLT | `Q312` · not captured | 49.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row16:col3 |
-| Omega (11,10) — PLT | `Q312` · not captured | 0.106 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row17:col2 |
-| Omega (11,10) — PLT | `Q312` · not captured | 43.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row17:col3 |
-| Omega (12,10) — PLT | `Q312` · not captured | 0.238 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row18:col2 |
-| Omega (12,10) — PLT | `Q312` · not captured | 49.7 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row18:col3 |
-| Omega (12,11) — PLT | `Q312` · not captured | 0.225 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row19:col2 |
-| Omega (12,11) — PLT | `Q312` · not captured | 43.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row19:col3 |
-| Sigma (2,1) — PLT | `Q315` · not captured | 0.043 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row21:col2 |
-| Sigma (2,1) — PLT | `Q315` · not captured | 19.3 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row21:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MTT — PLT | `Q81` · not captured | 297 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col2 |
+| PK (driver) | MTT — PLT | `Q81` · not captured | 8.96 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col3 |
+| PK (driver) | MTT — WBC | `Q81` · not captured | 319 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col4 |
+| PK (driver) | MTT — WBC | `Q81` · not captured | 12.48 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col5 |
+| PK (driver) | MTT — HCT | `Q81` · not captured | 610 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col6 |
+| PK (driver) | MTT — HCT | `Q81` · not captured | 16.7 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row3:col7 |
+| PK (driver) | Omega MTT — PLT | `Q81` · not captured | 0.085 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col2 |
+| PK (driver) | Omega MTT — PLT | `Q81` · not captured | 80.8 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col3 |
+| PK (driver) | Omega MTT — WBC | `Q81` · not captured | 0.017 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col4 |
+| PK (driver) | Omega MTT — WBC | `Q81` · not captured | 83.3 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col5 |
+| PK (driver) | Omega MTT — HCT | `Q81` · not captured | 0.095 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col6 |
+| PK (driver) | Omega MTT — HCT | `Q81` · not captured | 67.8 | not captured | not captured | llm_corrected (not captured) | psp413087-tbl-0001:row8:col7 |
+| variability | Sigma — PLT | `Q315` · not captured | 0.088 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col2 |
+| variability | Sigma — PLT | `Q315` · not captured | 13.4 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col3 |
+| variability | Sigma — WBC | `Q315` · not captured | 0.062 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col4 |
+| variability | Sigma — WBC | `Q315` · not captured | 18.3 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col5 |
+| variability | Sigma — HCT | `Q315` · not captured | 0.004 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col6 |
+| variability | Sigma — HCT | `Q315` · not captured | 9.26 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row13:col7 |
+| variability | Omega (2,1) — PLT | `Q312` · not captured | 0.038 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row15:col2 |
+| variability | Omega (2,1) — PLT | `Q312` · not captured | 82.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row15:col3 |
+| variability | Omega (8,7) — PLT | `Q312` · not captured | 0.1 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row16:col2 |
+| variability | Omega (8,7) — PLT | `Q312` · not captured | 49.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row16:col3 |
+| variability | Omega (11,10) — PLT | `Q312` · not captured | 0.106 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row17:col2 |
+| variability | Omega (11,10) — PLT | `Q312` · not captured | 43.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row17:col3 |
+| variability | Omega (12,10) — PLT | `Q312` · not captured | 0.238 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row18:col2 |
+| variability | Omega (12,10) — PLT | `Q312` · not captured | 49.7 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row18:col3 |
+| variability | Omega (12,11) — PLT | `Q312` · not captured | 0.225 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row19:col2 |
+| variability | Omega (12,11) — PLT | `Q312` · not captured | 43.0 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row19:col3 |
+| variability | Sigma (2,1) — PLT | `Q315` · not captured | 0.043 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row21:col2 |
+| variability | Sigma (2,1) — PLT | `Q315` · not captured | 19.3 | not captured | not captured | exact (not captured) | psp413087-tbl-0001:row21:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

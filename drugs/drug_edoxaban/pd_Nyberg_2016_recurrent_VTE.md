@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban (concentrations from the PK model of Edwina_2025) drives recurrent venous thromboembolism (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Edoxaban average steady-state concentration (Cav, ng/mL) was linked to the time-to-event endpoint recurrent VTE via a linear exposure-response relationship (no Emax/IC50-type parameters reported); higher Cav predicted lower 1-year recurrent VTE probability (3.31%, 1.80%, and 0.89% at Cav of 36.7, 64.9, and 97.6 ng/mL), described with a Weibull distribution for edoxaban data; the paper does not state a mechanistic PD parameterization beyond this linear relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyberg_2016`
 - **model family:** `tte`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives tolbutamide hydroxylase activity (in nmol min-1 mg-1 protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In human liver microsomes, clotrimazole inhibits tolbutamide 4-hydroxylase activity (nmol min-1 mg-1 protein), with an IC50 of 2.5 µM and, by kinetic analysis, non-competitive or mixed inhibition with Ki = 1.1 µM (control Km 125 µM, Vmax 0.44 nmol min-1 mg-1 protein).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Back_1988`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,21 +30,21 @@ Back DJ; Tjia JF; Karbwang J; Colbert J et al. (1988). British journal of clinic
   ·  DOI: [10.1111/j.1365-2125.1988.tb03359.x](https://doi.org/10.1111/j.1365-2125.1988.tb03359.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 4-Methylimidazole — IC50 (AM) | `Q322` · not captured | 90 | AM | not captured | llm (not captured) | tab_0:row3:col1 |
-| Ketoconazole — IC50 (AM) | `Q322` · not captured | 16.5 | AM | not captured | llm (not captured) | tab_0:row9:col1 |
-| Clotrimazole — IC50 (AM) | `Q322` · not captured | 2.5 | AM | not captured | llm (not captured) | tab_0:row10:col1 |
-| Miconazole — IC50 (AM) | `Q322` · not captured | 0.85 | AM | not captured | llm (not captured) | tab_0:row11:col1 |
-| Fluconazole — IC50 (AM) | `Q322` · not captured | 18 | AM | not captured | llm (not captured) | tab_0:row12:col1 |
-| Terconazole — IC50 (AM) | `Q322` · not captured | 105 | AM | not captured | llm (not captured) | tab_0:row13:col1 |
-| Sulphamethizole — IC50 (AM) | `Q322` · not captured | 150 | AM | not captured | llm (not captured) | tab_0:row16:col1 |
-| Sulphadoxine (S) — IC50 (AM) | `Q322` · not captured | 76 | S | not captured | llm (not captured) | tab_0:row18:col1 |
-| Sulphaphenazole — IC50 (AM) | `Q322` · not captured | 0.5 | AM | not captured | llm (not captured) | tab_0:row19:col1 |
-| Primaquine — IC50 (AM) | `Q322` · not captured | 80 | AM | not captured | llm (not captured) | tab_0:row20:col1 |
-| Mefloquine (M) — IC50 (AM) | `Q322` · not captured | 260 | M | not captured | llm (not captured) | tab_0:row21:col1 |
-| Quinine — IC50 (AM) | `Q322` · not captured | 353 | AM | not captured | llm (not captured) | tab_0:row22:col1 |
-| MSP — IC50 (AM) | `Q322` · not captured | 20 | AM | not captured | llm (not captured) | tab_0:row25:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 4-Methylimidazole — IC50 (AM) | `Q322` · not captured | 90 | AM | not captured | llm (not captured) | tab_0:row3:col1 |
+| PD (effect) | Ketoconazole — IC50 (AM) | `Q322` · not captured | 16.5 | AM | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | Clotrimazole — IC50 (AM) | `Q322` · not captured | 2.5 | AM | not captured | llm (not captured) | tab_0:row10:col1 |
+| PD (effect) | Miconazole — IC50 (AM) | `Q322` · not captured | 0.85 | AM | not captured | llm (not captured) | tab_0:row11:col1 |
+| PD (effect) | Fluconazole — IC50 (AM) | `Q322` · not captured | 18 | AM | not captured | llm (not captured) | tab_0:row12:col1 |
+| PD (effect) | Terconazole — IC50 (AM) | `Q322` · not captured | 105 | AM | not captured | llm (not captured) | tab_0:row13:col1 |
+| PD (effect) | Sulphamethizole — IC50 (AM) | `Q322` · not captured | 150 | AM | not captured | llm (not captured) | tab_0:row16:col1 |
+| PD (effect) | Sulphadoxine (S) — IC50 (AM) | `Q322` · not captured | 76 | S | not captured | llm (not captured) | tab_0:row18:col1 |
+| PD (effect) | Sulphaphenazole — IC50 (AM) | `Q322` · not captured | 0.5 | AM | not captured | llm (not captured) | tab_0:row19:col1 |
+| PD (effect) | Primaquine — IC50 (AM) | `Q322` · not captured | 80 | AM | not captured | llm (not captured) | tab_0:row20:col1 |
+| PD (effect) | Mefloquine (M) — IC50 (AM) | `Q322` · not captured | 260 | M | not captured | llm (not captured) | tab_0:row21:col1 |
+| PD (effect) | Quinine — IC50 (AM) | `Q322` · not captured | 353 | AM | not captured | llm (not captured) | tab_0:row22:col1 |
+| PD (effect) | MSP — IC50 (AM) | `Q322` · not captured | 20 | AM | not captured | llm (not captured) | tab_0:row25:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

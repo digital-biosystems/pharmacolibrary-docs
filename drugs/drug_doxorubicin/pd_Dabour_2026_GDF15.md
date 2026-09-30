@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin (concentrations from the PK model of Augustin_2026) drives GDF15 (in pg/mL): indirect response — drug inhibits the production of GDF15.
+
+**Model:** No model was generated from this record.
+
+> Doxorubicin (driver concentrations in μg/mL) stimulates the production of GDF15 (pg/mL) via an indirect response model with an Emax stimulatory effect on GDF15 production, with four transit compartments capturing the delay between DOX exposure and GDF15 rise. Key parameters: Emax 16.84, EC50 4.05 μg/mL, Kout 9.858 h−1, and baseline R0 0.63 pg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dabour_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Dabour MS; Blaes AH; Jacobson PA; Kirstein MN; Zordoky BN; Cheng S et al. (2026)
   ·  DOI: [10.1111/cts.70595](https://doi.org/10.1111/cts.70595)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| R 0 (pg/mL) — Shrinkage (%) | `Q336` · not captured | 0.63 | pg/mL | not captured | space_fold (not captured) | cts70595-tbl-0002:row3:col3 |
-| K out (h−1) — Shrinkage (%) | `Q328` · not captured | 9.858 | h−1 | not captured | space_fold (not captured) | cts70595-tbl-0002:row4:col3 |
-| EC50 (μg/mL) — Shrinkage (%) | `Q321` · not captured | 4.05 | μg/mL | not captured | exact (not captured) | cts70595-tbl-0002:row6:col3 |
-| E max | `Q320` · not captured | 16.84 | not captured | not captured | review_gapfill (not captured) | Dabour_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | R 0 (pg/mL) — Shrinkage (%) | `Q336` · not captured | 0.63 | pg/mL | not captured | space_fold (not captured) | cts70595-tbl-0002:row3:col3 |
+| PD (effect) | K out (h−1) — Shrinkage (%) | `Q328` · not captured | 9.858 | h−1 | not captured | space_fold (not captured) | cts70595-tbl-0002:row4:col3 |
+| PD (effect) | EC50 (μg/mL) — Shrinkage (%) | `Q321` · not captured | 4.05 | μg/mL | not captured | exact (not captured) | cts70595-tbl-0002:row6:col3 |
+| PD (effect) | E max | `Q320` · not captured | 16.84 | not captured | not captured | review_gapfill (not captured) | Dabour_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

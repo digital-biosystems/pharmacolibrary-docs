@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives Peak saccadic velocity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (ng/ml) decrease peak saccadic velocity, described by a sigmoid Emax model with an effect compartment to account for equilibration delay between plasma and effect; the EC50 for PSV was 40 ± 7 ng/ml for midazolam (49 ± 10 ng/ml for α-hydroxymidazolam). The paper does not state Imax/Emax, kin, kout, ke0, or gamma values for PSV in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mandema_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

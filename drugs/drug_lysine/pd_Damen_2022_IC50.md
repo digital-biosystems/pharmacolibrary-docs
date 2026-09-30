@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** C16-KAK-C16 (measured concentrations) drives Furin activity (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The geminoid peptide amphiphile C16-KAK-C16 (and analogues) inhibits human furin activity measured with Ac-RVRR-MCA substrate, acting as a competitive inhibitor (IC50 3.57 µM for C16-KAK-C16, 2.14 µM for C16-KA2K-C16, 4.25 µM for C16-KK-C16, 1.94 µM for C16-KGK-C16, 3.69 µM for C16-KG2K-C16, 85.7 µM for C16-KK-C16 in a second assay); furin inhibition showed a non-linear, multi-phase dependence on inhibitor concentration (30–40% decrease at 0–4 µM, plateau at 4–12 µM, full inhibition above 12 µM), which the paper does not fully mechanistically resolve.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Damen_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Damen M; Izidoro MA; Okamoto DN; Oliveira LCG; Amatdjais-Groenen HIV; van Dongen
   ·  DOI: [10.3390/molecules27103217](https://doi.org/10.3390/molecules27103217)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (µM) (MCA Substrates) — C16-KK-C16 | `Q322` · not captured | 4.25 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col3 |
-| IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 0.66 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col4 |
-| IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 0.80 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col5 |
-| IC50 (µM) (MCA Substrates) — C16-KGK-C16 | `Q322` · not captured | 1.94 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col6 |
-| IC50 (µM) (MCA Substrates) — C16-KG2K-C16 | `Q322` · not captured | 3.69 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col7 |
-| IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 3.57 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row2:col4 |
-| IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 2.14 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row2:col5 |
-| IC50 (µM) (MCA Substrates) — C16-KK-C16 | `Q322` · not captured | 85.7 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col3 |
-| IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 17.18 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col4 |
-| IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 20.93 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col5 |
-| IC50 (µM) (MCA Substrates) — C16-KGK-C16 | `Q322` · not captured | 41 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col6 |
-| IC50 (µM)Tyr(3-NO2) — C16-KAK-C16 | `Q322` · not captured | 2.3 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col4 |
-| IC50 (µM)Tyr(3-NO2) — C16-KA2K-C16 | `Q322` · not captured | 1.4 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col5 |
-| IC50 (µM)Tyr(3-NO2) — C16-KGK-C16 | `Q322` · not captured | 2.1 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col6 |
-| IC50 (µM)Tyr(3-NO2) — C16-KG2K-C16 | `Q322` · not captured | 10.2 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KK-C16 | `Q322` · not captured | 4.25 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col3 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 0.66 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col4 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 0.80 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col5 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KGK-C16 | `Q322` · not captured | 1.94 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col6 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KG2K-C16 | `Q322` · not captured | 3.69 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row1:col7 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 3.57 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row2:col4 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 2.14 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row2:col5 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KK-C16 | `Q322` · not captured | 85.7 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col3 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KAK-C16 | `Q322` · not captured | 17.18 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col4 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KA2K-C16 | `Q322` · not captured | 20.93 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col5 |
+| PD (effect) | IC50 (µM) (MCA Substrates) — C16-KGK-C16 | `Q322` · not captured | 41 | MCA Substrates | not captured | space_fold (not captured) | molecules-27-03217-t001:row3:col6 |
+| PD (effect) | IC50 (µM)Tyr(3-NO2) — C16-KAK-C16 | `Q322` · not captured | 2.3 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col4 |
+| PD (effect) | IC50 (µM)Tyr(3-NO2) — C16-KA2K-C16 | `Q322` · not captured | 1.4 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col5 |
+| PD (effect) | IC50 (µM)Tyr(3-NO2) — C16-KGK-C16 | `Q322` · not captured | 2.1 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col6 |
+| PD (effect) | IC50 (µM)Tyr(3-NO2) — C16-KG2K-C16 | `Q322` · not captured | 10.2 | µM | not captured | llm_confirmed (not captured) | molecules-27-03217-t001:row4:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

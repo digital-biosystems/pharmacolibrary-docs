@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NCF-CR-NPs (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for p53 expression; no drug-concentration–response relationship, mechanism, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given for p53. The excerpts only report IC50 values (in μg/ml) for cytotoxicity of NCF-CR-NPs versus free crocin, noting lower IC50 in FR-positive HT-29 than FR-negative A549 cells, and ~50% inhibition of ABTS radicals at 46.52 μg/ml and of DPPH radicals at 369.6 μg/ml of NPs.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soltani_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

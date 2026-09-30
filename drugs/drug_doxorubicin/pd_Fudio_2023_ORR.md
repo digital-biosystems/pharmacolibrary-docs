@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lurbinectedin drives objective response rate (in percentage): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Lurbinectedin unbound plasma AUC (AUCu) drives the probability of objective response (ORR) via a sigmoid-Emax model on the logit of ORR, with CTFI (sensitive vs resistant disease) modifying Emax; doxorubicin exposure (AUC DOX) and its interaction with AUCu were not significant, so doxorubicin's contribution was marginal. Estimated EC50 was 877 ng•h/L, with Emax (acceleration factor) 10.8 for sensitive disease and 8.5 for resistant disease; no rate parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fudio_2023`
 - **model family:** `tte`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Fudio S; Pérez-Ramos L; Asín-Prieto E; Zeaiter A; Lubomirov R et al. (2023). F
   ·  DOI: [10.3389/fonc.2023.1152371](https://doi.org/10.3389/fonc.2023.1152371)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max resistant — Acceleration factor (95% CI) | `Q100` · not captured | 8.5 | ORR model | not captured | llm (not captured) | tab_2:row12:col1 |
-| E max sensitive — Acceleration factor (95% CI) | `Q100` · not captured | 10.8 | ORR model | not captured | llm (not captured) | tab_2:row13:col1 |
-| EC 50 (ng•h/L) — Acceleration factor (95% CI) | `Q321` · not captured | 877 | ng•h/L | not captured | llm (not captured) | tab_2:row14:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | E max resistant — Acceleration factor (95% CI) | `Q100` · not captured | 8.5 | ORR model | not captured | llm (not captured) | tab_2:row12:col1 |
+| — | E max sensitive — Acceleration factor (95% CI) | `Q100` · not captured | 10.8 | ORR model | not captured | llm (not captured) | tab_2:row13:col1 |
+| PD (effect) | EC 50 (ng•h/L) — Acceleration factor (95% CI) | `Q321` · not captured | 877 | ng•h/L | not captured | llm (not captured) | tab_2:row14:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

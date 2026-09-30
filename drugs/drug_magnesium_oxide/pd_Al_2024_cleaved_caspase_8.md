@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a PD model for cleaved caspase 8; it only reports that CP-MgONPs (25–2500 μg·mL−1) inhibit cancer cell viability (MTT assay) with IC50 values of 28.4, 98.3, and 138.4 μg·mL−1 at 24 h and 15.3, 74, and 96.1 μg·mL−1 at 48 h for Hep2, SH-SY5Y, and COLO 205 cells respectively, with a proposed (unquantified) mechanism of ROS-mediated apoptosis via macropinocytotic uptake.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

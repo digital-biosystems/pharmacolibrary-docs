@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Purpurin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Purpurin (an anthraquinone) concentration-dependently inhibits spermidine-induced pro-PHBP autoactivation with an IC50 of 6.6 μM, while showing no inhibition of heparin-induced autoactivation or of active PHBP; the paper does not state a quantitative mechanism (no Emax, kin/kout, or effect-compartment parameters), only that purpurin acts as a specific inhibitor of the spermidine-induced autoactivation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nishimura_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

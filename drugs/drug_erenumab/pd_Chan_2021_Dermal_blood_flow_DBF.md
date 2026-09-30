@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GDC-0334 (measured concentrations) drives name (in AUC0-10): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> GDC-0334 plasma concentrations (ng/ml) directly inhibit the AITC-induced dermal blood flow response (baseline-normalized DBF AUC0–10) via a sigmoid Emax model; the paper states no indirect-response or effect-compartment mechanism, as direct/indirect models were excluded given the mismatch between the 149 h plasma half-life and the 20-min DBF measurement. The final population PK-PD model estimated a DEC50 of 1480 ng/ml, with inhibition approaching complete (saturated at &gt;250 ng/ml, onset &gt;30 ng/ml); no Imax/Emax, kin, kout, ke0, or gamma values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chan_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,21 +31,21 @@ Chan P; Ding HT; Liederer BM; Mao J; Belloni P; Chen L; Gao SS; Joseph V; Yang X
   ·  DOI: [10.1111/cts.13049](https://doi.org/10.1111/cts.13049)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tmax (h) — Rat (5 mg/kg) | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col2 |
-| Tmax (h) — Dog (1 mg/kg) | `Q56` · not captured | 0.417 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col3 |
-| Tmax (h) — Monkey (1 mg/kg) | `Q56` · not captured | 0.833 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col4 |
-| Cmax (ng/ml) — Rat (5 mg/kg) | `Q32` · not captured | 568 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col2 |
-| Cmax (ng/ml) — Dog (1 mg/kg) | `Q32` · not captured | 291 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col3 |
-| Cmax (ng/ml) — Monkey (1 mg/kg) | `Q32` · not captured | 270 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col4 |
-| AUC0–24 h (ng•hr/ml) — Rat (5 mg/kg) | `Q19` · not captured | 9140 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col2 |
-| AUC0–24 h (ng•hr/ml) — Dog (1 mg/kg) | `Q19` · not captured | 2030 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col3 |
-| AUC0–24 h (ng•hr/ml) — Monkey (1 mg/kg) | `Q19` · not captured | 849 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col4 |
-| Oral % (F) — Rat (5 mg/kg) | `Q44` · not captured | 80.8 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col2 |
-| Oral % (F) — Dog (1 mg/kg) | `Q44` · not captured | 68.7 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col3 |
-| Oral % (F) — Monkey (1 mg/kg) | `Q44` · not captured | 85.0 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col4 |
-| The final population PK‐PD model estimated a DEC50 of 1480 ng/ml | `Q321` · not captured | 1480 | ng/ml | not captured | review_gapfill (not captured) | Chan_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Tmax (h) — Rat (5 mg/kg) | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col2 |
+| PK (driver) | Tmax (h) — Dog (1 mg/kg) | `Q56` · not captured | 0.417 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col3 |
+| PK (driver) | Tmax (h) — Monkey (1 mg/kg) | `Q56` · not captured | 0.833 | h | not captured | exact (not captured) | cts13049-tbl-0001:row0:col4 |
+| PK (driver) | Cmax (ng/ml) — Rat (5 mg/kg) | `Q32` · not captured | 568 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col2 |
+| PK (driver) | Cmax (ng/ml) — Dog (1 mg/kg) | `Q32` · not captured | 291 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col3 |
+| PK (driver) | Cmax (ng/ml) — Monkey (1 mg/kg) | `Q32` · not captured | 270 | ng/ml | not captured | exact (not captured) | cts13049-tbl-0001:row1:col4 |
+| PK (driver) | AUC0–24 h (ng•hr/ml) — Rat (5 mg/kg) | `Q19` · not captured | 9140 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col2 |
+| PK (driver) | AUC0–24 h (ng•hr/ml) — Dog (1 mg/kg) | `Q19` · not captured | 2030 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col3 |
+| PK (driver) | AUC0–24 h (ng•hr/ml) — Monkey (1 mg/kg) | `Q19` · not captured | 849 | ng•hr/ml | not captured | llm (not captured) | cts13049-tbl-0001:row2:col4 |
+| PK (driver) | Oral % (F) — Rat (5 mg/kg) | `Q44` · not captured | 80.8 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col2 |
+| PK (driver) | Oral % (F) — Dog (1 mg/kg) | `Q44` · not captured | 68.7 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col3 |
+| PK (driver) | Oral % (F) — Monkey (1 mg/kg) | `Q44` · not captured | 85.0 | F | not captured | llm (not captured) | cts13049-tbl-0001:row3:col4 |
+| PD (effect) | The final population PK‐PD model estimated a DEC50 of 1480 ng/ml | `Q321` · not captured | 1480 | ng/ml | not captured | review_gapfill (not captured) | Chan_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

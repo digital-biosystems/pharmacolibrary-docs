@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium nitroprusside drives mean arterial pressure (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In a pediatric K-PD analysis (no plasma concentrations), sodium nitroprusside dose drives an effect-compartment concentration (one-compartment, nominal V 1 L/70 kg, allometrically scaled CL and V) that inhibits MAP via an inhibitory sigmoidal Emax model: MAP = S0 − Emax·Ce^γ/(EC50^γ+Ce^γ), with baseline S0 = 76 mm Hg, Emax = 22.65 mm Hg, and a bimodal EC50 with a low subpopulation (EC50 138 μg/L, ~70% probability) and a high subpopulation (EC50 460 μg/L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barrett_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,29 +30,29 @@ Barrett JS; Hirankarn S; Holford N; Hammer GB; Drover DR; Cohane CA; Anderson B;
   ·  DOI: [10.3389/fphar.2015.00151](https://doi.org/10.3389/fphar.2015.00151)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col1 |
-| S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col2 |
-| S0(mm Hg) — Population parameters | `Q324` · not captured | 1.0 | mm Hg | not captured | llm (not captured) | T2:row5:col3 |
-| Emax (mm Hg)e — Population parameters | `Q320` · not captured | 22.65 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col1 |
-| Emax (mm Hg)e — Population parameters | `Q320` · not captured | 21.9 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col2 |
-| Emax (mm Hg)e — Population parameters | `Q320` · not captured | 7.6 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col3 |
-| Emax (mm Hg)e — Magnitude of BSV | `Q320` · not captured | 76.5 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col4 |
-| Emax (mm Hg)e — Magnitude of BSV | `Q320` · not captured | 13.7 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col5 |
-| Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.699 | not captured | not captured | llm_corrected (not captured) | T2:row8:col1 |
-| Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.701 | not captured | not captured | llm_corrected (not captured) | T2:row8:col2 |
-| Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 8.8 | not captured | not captured | llm_corrected (not captured) | T2:row8:col3 |
-| EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 460 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col1 |
-| EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 458 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col2 |
-| EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 10.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col3 |
-| EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 10.8 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col4 |
-| EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 74.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col5 |
-| EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 138 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col1 |
-| EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 104.3 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col2 |
-| EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 21.6 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col3 |
-| EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 22.1 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col4 |
-| EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 72 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col1 |
+| PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col2 |
+| PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 1.0 | mm Hg | not captured | llm (not captured) | T2:row5:col3 |
+| PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 22.65 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col1 |
+| PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 21.9 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col2 |
+| PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 7.6 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col3 |
+| PD (effect) | Emax (mm Hg)e — Magnitude of BSV | `Q320` · not captured | 76.5 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col4 |
+| PD (effect) | Emax (mm Hg)e — Magnitude of BSV | `Q320` · not captured | 13.7 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col5 |
+| — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.699 | not captured | not captured | llm_corrected (not captured) | T2:row8:col1 |
+| — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.701 | not captured | not captured | llm_corrected (not captured) | T2:row8:col2 |
+| — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 8.8 | not captured | not captured | llm_corrected (not captured) | T2:row8:col3 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 460 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col1 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 458 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col2 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 10.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col3 |
+| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 10.8 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col4 |
+| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 74.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col5 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 138 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col1 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 104.3 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col2 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 21.6 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col3 |
+| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 22.1 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col4 |
+| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 72 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

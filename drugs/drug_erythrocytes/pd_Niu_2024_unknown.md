@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucinostatin B derivatives (measured concentrations) drives Hemolysis (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for hemolysis: leucinostatin A was tested on red blood cells only at a single concentration of 100 µM, where hemolysis was not significantly different from control (p &gt; 0.9), so no Imax, IC50/EC50, or rate parameters for hemolysis are given. The concentration-dependent transmission-blocking effect on P. falciparum (IC50 1.5 nM for LB, 0.16 nM for LA, 4.2 nM for LB-Atto495, 42 nM for LB-biotin) is described, but the paper does not state a mechanism for the hemolysis response, only concluding that membrane disruption is unlikely.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Niu_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

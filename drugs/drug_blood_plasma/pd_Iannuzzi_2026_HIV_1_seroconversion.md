@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TFV-DP and FTC-TP drive HIV-1 seroconversion (in count): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> TFV-DP and FTC-TP concentrations, with rectal tissue (and alternatively PBMC) treated as the effect compartment, were used to predict the count response of HIV-1 seroconversion in a disease-progression framework; the excerpts do not state the effect form or any potency (Imax, IC50/EC50) or rate (kin, kout, ke0) values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Iannuzzi_2026`
 - **model family:** `disease_progression`
 - **driver:** `not_resolved`

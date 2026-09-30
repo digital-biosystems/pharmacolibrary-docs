@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Troglitazone concentrations inhibit cell viability (ATP-based CellTiter-Glo assay) in HL-ICOs and HepaRGs, with EC50 values of 23.13–90.83 µM in HL-ICOs and 14.89–45.17 µM in HepaRGs; the paper does not state a specific PD mechanism beyond this concentration–response cytotoxicity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bouwmeester_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Bouwmeester MC; Tao Y; Proença S; van Steenbeek FG; Samsom RA; Nijmeijer SM; et
   ·  DOI: [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Valproic Acid — PHH | `Q358` · not captured | 9885 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Valproic Acid — PHH | `Q358` · not captured | 9885 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

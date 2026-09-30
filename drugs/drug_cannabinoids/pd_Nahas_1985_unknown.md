@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A9-THC drives differential pressure (AP) (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the Langendorff perfused rat heart, A9-THC (2×10^-8 to 10^-4 M) induces a biphasic increase in heart rate (maximal at 8×10^-6 M) associated with decreases in differential pressure (AP), with cardiac toxicity at 3×10^-4 M; CBD (9×10^-6 M) increases AP and coronary flow, and CBN (8×10^-6 to 3×10^-4 M) depresses rate and AP. The paper reports only dose-response observations and does not state a pharmacodynamic mechanism or model parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nahas_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

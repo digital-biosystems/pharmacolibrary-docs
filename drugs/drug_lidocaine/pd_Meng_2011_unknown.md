@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lidocaine (concentrations from the PK model of Bursi_2017) drives HCN channel half-activation voltage (in mV): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Lidocaine concentration (M) acts on the HCN channel half-activation voltage (mV) measured in voltage-clamp recordings of cloned HCN channels; the paper describes a direct concentration-response effect (logistic/sigmoid Emax fit) whereby lidocaine causes a hyperpolarizing shift in V1/2 (ΔV1/2 of about −10 mV) only for HCN1-containing channels, with an EC50 of 67.6 M; no kin/kout or effect-compartment mechanism is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meng_2011`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Meng QT; Xia ZY; Liu J; Bayliss DA; Chen X et al. (2011). Molecular pharmacology
   ·  DOI: [10.1124/mol.110.070227](https://doi.org/10.1124/mol.110.070227)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 67.6 | M | not captured | review_gapfill (not captured) | Meng_2011:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 67.6 | M | not captured | review_gapfill (not captured) | Meng_2011:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

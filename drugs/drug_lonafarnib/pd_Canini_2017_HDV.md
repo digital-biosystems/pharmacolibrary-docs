@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lonafarnib (concentrations from this paper's PK model) drives HDV RNA (in log10 IU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Lonafarnib plasma concentrations (ng/mL) inhibit HDV RNA production (viral kinetics model with baseline V0 = 7.88 log10 IU/mL and decline rate c = 0.37/d, HDV half-life 1.87 days) via a sigmoid Emax effect (Emax = 1.0, EC50 = 227 ng/mL, Hill factor h = 1.48, average effect delay 0.56 h), with average steady-state efficacy of 87.7% (100 mg bid) and 95.2% (200 mg bid).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Canini_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,22 +31,22 @@ Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; Kleiner DE; Idilm
   ·  DOI: [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka [hr–1] — Population Estimate (rse %) | `Q49` · not captured | 0.43 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row2:col2 |
-| ka [hr–1] — Interpatient Variability % (rse %) | `Q49` · not captured | 83 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row2:col3 |
-| Vd/F [L] — Population Estimate (rse %) | `Q76` · not captured | 223 | L | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row3:col2 |
-| Vd/F [L] — Interpatient Variability % (rse %) | `Q76` · not captured | 49 | L | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row3:col3 |
-| ke [hr–1] — Population Estimate (rse %) | `Q47` · not captured | 0.045 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row4:col2 |
-| ke [hr–1] — Interpatient Variability % (rse %) | `Q47` · not captured | 39 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row4:col3 |
-| Emax — Population Estimate (rse %) | `Q320` · not captured | 1.0 | rse % | not captured | exact (not captured) | hep41043-tbl-0001:row5:col2 |
-| EC50 [ng/mL] — Population Estimate (rse %) | `Q321` · not captured | 227 | ng/mL | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row6:col2 |
-| EC50 [ng/mL] — Interpatient Variability % (rse %) | `Q321` · not captured | 62 | ng/mL | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row6:col3 |
-| V0 [log10 IU/mL] — Population Estimate (rse %) | `Q61` · not captured | 7.88 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row8:col2 |
-| V0 [log10 IU/mL] — Interpatient Variability % (rse %) | `Q312` · not captured | 5.7 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row8:col3 |
-| c [d–1] — Population Estimate (rse %) | `Q358` · not captured | 0.37 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row10:col2 |
-| c [d–1] — Interpatient Variability % (rse %) | `Q312` · not captured | 21 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row10:col3 |
-| h | `Q325` · not captured | 1.48 | Hill factor | not captured | review_gapfill (not captured) | Canini_2017:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka [hr–1] — Population Estimate (rse %) | `Q49` · not captured | 0.43 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row2:col2 |
+| PK (driver) | ka [hr–1] — Interpatient Variability % (rse %) | `Q49` · not captured | 83 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row2:col3 |
+| PK (driver) | Vd/F [L] — Population Estimate (rse %) | `Q76` · not captured | 223 | L | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row3:col2 |
+| PK (driver) | Vd/F [L] — Interpatient Variability % (rse %) | `Q76` · not captured | 49 | L | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row3:col3 |
+| PK (driver) | ke [hr–1] — Population Estimate (rse %) | `Q47` · not captured | 0.045 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row4:col2 |
+| PK (driver) | ke [hr–1] — Interpatient Variability % (rse %) | `Q47` · not captured | 39 | rse % | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row4:col3 |
+| PD (effect) | Emax — Population Estimate (rse %) | `Q320` · not captured | 1.0 | rse % | not captured | exact (not captured) | hep41043-tbl-0001:row5:col2 |
+| PD (effect) | EC50 [ng/mL] — Population Estimate (rse %) | `Q321` · not captured | 227 | ng/mL | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row6:col2 |
+| PD (effect) | EC50 [ng/mL] — Interpatient Variability % (rse %) | `Q321` · not captured | 62 | ng/mL | not captured | llm_confirmed (not captured) | hep41043-tbl-0001:row6:col3 |
+| PK (driver) | V0 [log10 IU/mL] — Population Estimate (rse %) | `Q61` · not captured | 7.88 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row8:col2 |
+| variability | V0 [log10 IU/mL] — Interpatient Variability % (rse %) | `Q312` · not captured | 5.7 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row8:col3 |
+| PK (driver) | c [d–1] — Population Estimate (rse %) | `Q358` · not captured | 0.37 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row10:col2 |
+| variability | c [d–1] — Interpatient Variability % (rse %) | `Q312` · not captured | 21 | rse % | not captured | llm (not captured) | hep41043-tbl-0001:row10:col3 |
+| PD (effect) | h | `Q325` · not captured | 1.48 | Hill factor | not captured | review_gapfill (not captured) | Canini_2017:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

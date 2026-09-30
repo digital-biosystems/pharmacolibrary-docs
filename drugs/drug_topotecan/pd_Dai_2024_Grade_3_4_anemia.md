@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trilaciclib drives Grade 3/4 anemia (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record indicates an Emax-type model in which trilaciclib exposure is linked to the binary occurrence of Grade 3/4 anemia, with an inhibitory effect direction, but the paper excerpts provide no concentrations, mechanism, or parameter values (Imax, IC50, Emax, gamma) to quantify this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dai_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

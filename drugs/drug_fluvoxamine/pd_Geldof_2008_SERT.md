@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluvoxamine (concentrations from the PK model of Geldof_2007) drives SERT occupancy (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma fluvoxamine concentrations (ng mL-1, predicted from the Geldof 2007 population PK model) drive SERT occupancy (%) in rat frontal cortex via a direct Emax (stimulation) model, reflecting blockade of the 5-HT transporter. The excerpts do not report numeric values for Emax, EC50 or gamma, and no effect-compartment or turnover mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Geldof_2008`
 - **model family:** `emax`
 - **driver:** `cited_pk`

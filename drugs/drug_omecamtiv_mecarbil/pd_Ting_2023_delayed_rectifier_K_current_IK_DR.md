@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omecamtiv mecarbil (concentrations from the PK model of Chen_2022) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative PD model for omecamtiv mecarbil's effect on the delayed-rectifier K+ current (IK(DR)); the excerpts only state that OM was tested on IK(DR) in GH3 cells, with no EC50, Emax, or mechanism given for that current. Quantitative sigmoid-Emax (Hill) stimulation is described only for the Na+ current components in GH3 cells, with EC50 values of 15.8 µM for INa(T) and 2.3 µM for INa(L).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ting_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

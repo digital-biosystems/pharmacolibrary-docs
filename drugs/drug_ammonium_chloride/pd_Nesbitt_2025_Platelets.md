@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BCT1028 (measured concentrations) drives Platelet recovery (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BCT1028 (not ammonium chloride) acts on platelet recovery by inhibiting the enzyme BLVRB (flavin reductase), with in vitro IC50 values of 195 μM (DCPIP substrate) and 530 μM (FMN substrate); in mice given 5-fluorouracil stress, a 21-day oral course of BCT1028 (100 mg/kg) significantly increased peak (Day 10/11) platelet recovery, while plasma TPO was only minimally (1.4-fold, non-significant) increased. The paper does not report a formal PD model (no Emax/IC50/kin/kout/ke0 parameters) for the platelet recovery response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nesbitt_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,26 +30,26 @@ Nesbitt NM; Araldi GL; Pennacchia L; Marchenko N; Assar Z; Muzzarelli KM; Thekke
   ·  DOI: [10.1038/s41467-025-58497-9](https://doi.org/10.1038/s41467-025-58497-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 DCPIP [M]−9 — BCT1020 | `Q322` · not captured | 352 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
-| IC50 DCPIP [M]−9 — BCT1030 | `Q322` · not captured | 250 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
-| IC50 DCPIP [M]−9 — BCT1028 | `Q322` · not captured | 195 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
-| IC50 DCPIP [M]−9 — Ataluren | `Q322` · not captured | 380 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col10 |
-| IC50 DCPIP [M]−9 — BCT2009 | `Q322` · not captured | 193 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col12 |
-| IC50 DCPIP [M]−9 — BCT2045 | `Q322` · not captured | 155 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col14 |
-| IC50 DCPIP [M]−9 — BCT2051 | `Q322` · not captured | 120 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col15 |
-| IC50 DCPIP [M]−9 — NSC379651 | `Q322` · not captured | 816 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col18 |
-| IC50 FMN [M]−9 — BCT1020 | `Q322` · not captured | 871 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
-| IC50 FMN [M]−9 — BCT1030 | `Q322` · not captured | 809 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
-| IC50 FMN [M]−9 — BCT1028 | `Q322` · not captured | 530 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
-| IC50 FMN [M]−9 — Ataluren | `Q322` · not captured | 480 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col10 |
-| IC50 FMN [M]−9 — BCT2009 | `Q322` · not captured | 474 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col12 |
-| IC50 FMN [M]−9 — BCT2029 | `Q322` · not captured | 194 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col13 |
-| IC50 FMN [M]−9 — BCT2045 | `Q322` · not captured | 677 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col14 |
-| IC50 FMN [M]−9 — BCT2051 | `Q322` · not captured | 141 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col15 |
-| IC50 FMN [M]−9 — BCT2066 | `Q322` · not captured | 209 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col17 |
-| IC50 FMN [M]−9 — NSC379651 | `Q322` · not captured | 9608 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col18 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 DCPIP [M]−9 — BCT1020 | `Q322` · not captured | 352 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
+| PD (effect) | IC50 DCPIP [M]−9 — BCT1030 | `Q322` · not captured | 250 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
+| PD (effect) | IC50 DCPIP [M]−9 — BCT1028 | `Q322` · not captured | 195 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
+| PD (effect) | IC50 DCPIP [M]−9 — Ataluren | `Q322` · not captured | 380 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col10 |
+| PD (effect) | IC50 DCPIP [M]−9 — BCT2009 | `Q322` · not captured | 193 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col12 |
+| PD (effect) | IC50 DCPIP [M]−9 — BCT2045 | `Q322` · not captured | 155 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col14 |
+| PD (effect) | IC50 DCPIP [M]−9 — BCT2051 | `Q322` · not captured | 120 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col15 |
+| PD (effect) | IC50 DCPIP [M]−9 — NSC379651 | `Q322` · not captured | 816 | μM | not captured | llm_confirmed (not captured) | Tab1:row2:col18 |
+| PD (effect) | IC50 FMN [M]−9 — BCT1020 | `Q322` · not captured | 871 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
+| PD (effect) | IC50 FMN [M]−9 — BCT1030 | `Q322` · not captured | 809 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
+| PD (effect) | IC50 FMN [M]−9 — BCT1028 | `Q322` · not captured | 530 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
+| PD (effect) | IC50 FMN [M]−9 — Ataluren | `Q322` · not captured | 480 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col10 |
+| PD (effect) | IC50 FMN [M]−9 — BCT2009 | `Q322` · not captured | 474 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col12 |
+| PD (effect) | IC50 FMN [M]−9 — BCT2029 | `Q322` · not captured | 194 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col13 |
+| PD (effect) | IC50 FMN [M]−9 — BCT2045 | `Q322` · not captured | 677 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col14 |
+| PD (effect) | IC50 FMN [M]−9 — BCT2051 | `Q322` · not captured | 141 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col15 |
+| PD (effect) | IC50 FMN [M]−9 — BCT2066 | `Q322` · not captured | 209 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col17 |
+| PD (effect) | IC50 FMN [M]−9 — NSC379651 | `Q322` · not captured | 9608 | μM | not captured | llm_confirmed (not captured) | Tab1:row3:col18 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

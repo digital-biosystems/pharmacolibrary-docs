@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mineral concentration (osmolality) drives body weight loss (in kg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In feed-deprived Holstein bulls, increasing mineral concentration (osmolality, 0–300 mOsm/kg) of the oral rehydration solution linearly decreased body weight loss (kg, % of initial BW) at 48 h, while glycerol inclusion (0–4%) showed no linear or quadratic effect on BW loss. The paper describes only a linear dose–response relationship and does not report any pharmacodynamic mechanism or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilms_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

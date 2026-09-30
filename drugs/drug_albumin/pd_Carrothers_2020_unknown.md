@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dalbavancin drives investigator assessed status at follow-up (28 days) (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism for the relationship between dalbavancin exposure (fAUC/MIC) and investigator assessed status at follow-up (28 days); the analysis was planned as logistic regression on simulated AUC at 28 days, and no potency (IC50/EC50/Emax) or rate parameters are reported for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carrothers_2020`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

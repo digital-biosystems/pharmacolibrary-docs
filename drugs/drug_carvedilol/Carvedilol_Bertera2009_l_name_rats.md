@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The record lacks distribution volume and clearance, and the terminal half-life unit could not be converted to SI, preventing a valid compartmental model.**
+
+The paper reports only exposure metrics like AUC and C0, omitting the distribution volume and clearance required for a compartmental population PK model. Additionally, the terminal half-life unit was not recognized for conversion, so the parameter lacked a standard SI value. A second reader disagreed on the clearance rate and the half-life parameter identification. Extracted — carvedilol: t1/2z 2.1 min, C0 1.32e+03 µg ml -1, AUCt 548 ng ml -1 h -1, AUC%ext 12.5.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance rates: this record has none, the second reading 83.8; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Bertera FM; Di Verniero CA; Mayer MA; Bramuglia GF; Taira CA; Höcht C et al. (2009). Journal of pharmacological and toxicological methods 59

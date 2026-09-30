@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 8-hydroxyquinoline analogs (measured concentrations) drives name (in CFU) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking oxyquinoline (8-hydroxyquinoline) concentrations to viable bacteria count; the IC50 values in the record (e.g. 0.94–19 μM across analogs) are actually HepG2 cytotoxicity IC50s, defined as the concentration reducing cell viability by 50% after 72 h exposure, with no mechanism, Emax/IC50 model fit details beyond Levenberg–Marquardt curve fitting, or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Odingo_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,30 +30,30 @@ Odingo JO; Early JV; Smith J; Johnson J; Bailey MA; Files M; et al. et al. (2019
   ·  DOI: [10.1002/ddr.21531](https://doi.org/10.1002/ddr.21531)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — Cytotoxicity (IC50) | `Q322` · not captured | 1.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row1:col2 |
-| 2 — Cytotoxicity (IC50) | `Q322` · not captured | 1.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row2:col2 |
-| 3 — Cytotoxicity (IC50) | `Q322` · not captured | 1.8 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row3:col2 |
-| 4 — Cytotoxicity (IC50) | `Q322` · not captured | 2.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row4:col2 |
-| 5 — Cytotoxicity (IC50) | `Q322` · not captured | 1.3 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row5:col2 |
-| 6 — Cytotoxicity (IC50) | `Q322` · not captured | 2.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row6:col2 |
-| 7 — Cytotoxicity (IC50) | `Q322` · not captured | 6.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row7:col2 |
-| 8 — Cytotoxicity (IC50) | `Q322` · not captured | 7.5 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row8:col2 |
-| 9 — Cytotoxicity (IC50) | `Q322` · not captured | 5.8 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row9:col2 |
-| 11 — Cytotoxicity (IC50) | `Q322` · not captured | 12 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row11:col2 |
-| 12 — Cytotoxicity (IC50) | `Q322` · not captured | 3.3 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row12:col2 |
-| 13 — Cytotoxicity (IC50) | `Q322` · not captured | 8.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row13:col2 |
-| 16 — Cytotoxicity (IC50) | `Q322` · not captured | 0.94 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row16:col2 |
-| 17 — Cytotoxicity (IC50) | `Q322` · not captured | 4.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row17:col2 |
-| 19 — Cytotoxicity (IC50) | `Q322` · not captured | 19 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row19:col2 |
-| 20 — Cytotoxicity (IC50) | `Q322` · not captured | 1.6 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row20:col2 |
-| 21 — Cytotoxicity (IC50) | `Q322` · not captured | 2.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row21:col2 |
-| 22 — Cytotoxicity (IC50) | `Q322` · not captured | 6.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row22:col2 |
-| 23 — Cytotoxicity (IC50) | `Q322` · not captured | 6.0 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row23:col2 |
-| 24 — Cytotoxicity (IC50) | `Q322` · not captured | 7.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row24:col2 |
-| 25 — Cytotoxicity (IC50) | `Q322` · not captured | 9.0 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row25:col2 |
-| 26 — Cytotoxicity (IC50) | `Q322` · not captured | 11 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row26:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — Cytotoxicity (IC50) | `Q322` · not captured | 1.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row1:col2 |
+| PD (effect) | 2 — Cytotoxicity (IC50) | `Q322` · not captured | 1.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row2:col2 |
+| PD (effect) | 3 — Cytotoxicity (IC50) | `Q322` · not captured | 1.8 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row3:col2 |
+| PD (effect) | 4 — Cytotoxicity (IC50) | `Q322` · not captured | 2.4 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row4:col2 |
+| PD (effect) | 5 — Cytotoxicity (IC50) | `Q322` · not captured | 1.3 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row5:col2 |
+| PD (effect) | 6 — Cytotoxicity (IC50) | `Q322` · not captured | 2.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row6:col2 |
+| PD (effect) | 7 — Cytotoxicity (IC50) | `Q322` · not captured | 6.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row7:col2 |
+| PD (effect) | 8 — Cytotoxicity (IC50) | `Q322` · not captured | 7.5 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row8:col2 |
+| PD (effect) | 9 — Cytotoxicity (IC50) | `Q322` · not captured | 5.8 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row9:col2 |
+| PD (effect) | 11 — Cytotoxicity (IC50) | `Q322` · not captured | 12 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row11:col2 |
+| PD (effect) | 12 — Cytotoxicity (IC50) | `Q322` · not captured | 3.3 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row12:col2 |
+| PD (effect) | 13 — Cytotoxicity (IC50) | `Q322` · not captured | 8.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row13:col2 |
+| PD (effect) | 16 — Cytotoxicity (IC50) | `Q322` · not captured | 0.94 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row16:col2 |
+| PD (effect) | 17 — Cytotoxicity (IC50) | `Q322` · not captured | 4.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row17:col2 |
+| PD (effect) | 19 — Cytotoxicity (IC50) | `Q322` · not captured | 19 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row19:col2 |
+| PD (effect) | 20 — Cytotoxicity (IC50) | `Q322` · not captured | 1.6 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row20:col2 |
+| PD (effect) | 21 — Cytotoxicity (IC50) | `Q322` · not captured | 2.9 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row21:col2 |
+| PD (effect) | 22 — Cytotoxicity (IC50) | `Q322` · not captured | 6.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row22:col2 |
+| PD (effect) | 23 — Cytotoxicity (IC50) | `Q322` · not captured | 6.0 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row23:col2 |
+| PD (effect) | 24 — Cytotoxicity (IC50) | `Q322` · not captured | 7.2 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row24:col2 |
+| PD (effect) | 25 — Cytotoxicity (IC50) | `Q322` · not captured | 9.0 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row25:col2 |
+| PD (effect) | 26 — Cytotoxicity (IC50) | `Q322` · not captured | 11 | IC50 | not captured | llm (not captured) | ddr21531-tbl-0004:row26:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

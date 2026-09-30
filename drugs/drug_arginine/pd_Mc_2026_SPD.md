@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CAR-T cells drives name (in mm2): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> The kinetic-PD model links CAR-T cell kinetics (axi-cel/brexu-cel) to tumor burden (SPD, mm2): CAR-T cells kill tumor via a second-order process (dSPD/dt = −kkill·CAR-Tcentral·SPD), while tumor burden relative to baseline drives first-order CAR-T expansion (rate ρ, with lag time tlag = 2.47 days before expansion). Key rate constants: kel = 0.120 (RSE 8.06%), k12 = 0.0465 (RSE 15.1%), k21 = 0.0108 (RSE 15.4%); ρ corresponds to a minimum doubling time of 0.257 days (log(2)/ρ). No Imax/IC50/EC50/Emax/ke0 values are given; the paper does not report a kkill point estimate in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mc_2026`
 - **model family:** `disease_progression`
 - **driver:** `not_resolved`
@@ -21,39 +31,39 @@ Mc Laughlin AM; Bergstrand M; Ruiz-Garcia A; Filosto S; Shen R et al. (2026). Cl
   ·  DOI: [10.1002/cpt.70395](https://doi.org/10.1002/cpt.70395)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k el — Value | `Q47` · not captured | 0.120 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row2:col2 |
-| k el — RSE (%) | `Q47` · not captured | 8.06 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row2:col3 |
-| k 12 — Value | `Q301` · not captured | 0.0465 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row3:col2 |
-| k 12 — RSE (%) | `Q301` · not captured | 15.1 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row3:col3 |
-| k 21 — Value | `Q302` · not captured | 0.0108 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row4:col2 |
-| k 21 — RSE (%) | `Q302` · not captured | 15.4 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row4:col3 |
-| t lag before expansion — Value | `Q83` · not captured | 2.47 | not captured | not captured | llm (not captured) | cpt70395-tbl-0002:row6:col2 |
-| t lag before expansion — RSE (%) | `Q83` · not captured | 5.24 | not captured | not captured | llm (not captured) | cpt70395-tbl-0002:row6:col3 |
-| Baseline albumin on ρ — Value | `Q324` · not captured | 0.0163 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row11:col2 |
-| Baseline albumin on ρ — RSE (%) | `Q324` · not captured | 26.3 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row11:col3 |
-| IIV ρ — Value | `Q312` · not captured | 0.264 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row14:col2 |
-| IIV ρ — RSE (%) | `Q312` · not captured | 15.3 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row14:col3 |
-| IIV ρ — SHR (%) | `Q318` · not captured | 43.6 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row14:col4 |
-| IIV k el — Value | `Q312` · not captured | 0.687 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row15:col2 |
-| IIV k el — RSE (%) | `Q312` · not captured | 9.52 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row15:col3 |
-| IIV k el — SHR (%) | `Q318` · not captured | 35.2 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row15:col4 |
-| IIV k 12 — Value | `Q312` · not captured | 1.35 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row16:col2 |
-| IIV k 12 — RSE (%) | `Q312` · not captured | 9.21 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row16:col3 |
-| IIV k 12 — SHR (%) | `Q318` · not captured | 39.7 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row16:col4 |
-| IIV k 21 — Value | `Q302` · not captured | 1.97 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col2 |
-| IIV k 21 — RSE (%) | `Q302` · not captured | 12.4 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col3 |
-| IIV k 21 — SHR (%) | `Q318` · not captured | 32.9 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col4 |
-| IIV k kill — Value | `Q312` · not captured | 0.955 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row18:col2 |
-| IIV k kill — RSE (%) | `Q312` · not captured | 9.16 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row18:col3 |
-| IIV k kill — SHR (%) | `Q318` · not captured | 37.2 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row18:col4 |
-| IIV RUV — Value | `Q312` · not captured | 0.545 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row19:col2 |
-| IIV RUV — RSE (%) | `Q312` · not captured | 6.57 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row19:col3 |
-| IIV RUV — SHR (%) | `Q318` · not captured | 29.1 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row19:col4 |
-| RUV — Value | `Q315` · not captured | 0.969 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col2 |
-| RUV — RSE (%) | `Q315` · not captured | 4.94 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col3 |
-| RUV — SHR (%) | `Q315` · not captured | 22.0 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k el — Value | `Q47` · not captured | 0.120 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row2:col2 |
+| PK (driver) | k el — RSE (%) | `Q47` · not captured | 8.06 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row2:col3 |
+| PK (driver) | k 12 — Value | `Q301` · not captured | 0.0465 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row3:col2 |
+| PK (driver) | k 12 — RSE (%) | `Q301` · not captured | 15.1 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row3:col3 |
+| PK (driver) | k 21 — Value | `Q302` · not captured | 0.0108 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row4:col2 |
+| PK (driver) | k 21 — RSE (%) | `Q302` · not captured | 15.4 | not captured | not captured | space_fold (not captured) | cpt70395-tbl-0002:row4:col3 |
+| PK (driver) | t lag before expansion — Value | `Q83` · not captured | 2.47 | not captured | not captured | llm (not captured) | cpt70395-tbl-0002:row6:col2 |
+| PK (driver) | t lag before expansion — RSE (%) | `Q83` · not captured | 5.24 | not captured | not captured | llm (not captured) | cpt70395-tbl-0002:row6:col3 |
+| PD (effect) | Baseline albumin on ρ — Value | `Q324` · not captured | 0.0163 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row11:col2 |
+| PD (effect) | Baseline albumin on ρ — RSE (%) | `Q324` · not captured | 26.3 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row11:col3 |
+| variability | IIV ρ — Value | `Q312` · not captured | 0.264 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row14:col2 |
+| variability | IIV ρ — RSE (%) | `Q312` · not captured | 15.3 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row14:col3 |
+| variability | IIV ρ — SHR (%) | `Q318` · not captured | 43.6 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row14:col4 |
+| variability | IIV k el — Value | `Q312` · not captured | 0.687 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row15:col2 |
+| variability | IIV k el — RSE (%) | `Q312` · not captured | 9.52 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row15:col3 |
+| variability | IIV k el — SHR (%) | `Q318` · not captured | 35.2 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row15:col4 |
+| variability | IIV k 12 — Value | `Q312` · not captured | 1.35 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row16:col2 |
+| variability | IIV k 12 — RSE (%) | `Q312` · not captured | 9.21 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row16:col3 |
+| variability | IIV k 12 — SHR (%) | `Q318` · not captured | 39.7 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row16:col4 |
+| PK (driver) | IIV k 21 — Value | `Q302` · not captured | 1.97 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col2 |
+| PK (driver) | IIV k 21 — RSE (%) | `Q302` · not captured | 12.4 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col3 |
+| variability | IIV k 21 — SHR (%) | `Q318` · not captured | 32.9 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row17:col4 |
+| variability | IIV k kill — Value | `Q312` · not captured | 0.955 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row18:col2 |
+| variability | IIV k kill — RSE (%) | `Q312` · not captured | 9.16 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row18:col3 |
+| variability | IIV k kill — SHR (%) | `Q318` · not captured | 37.2 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row18:col4 |
+| variability | IIV RUV — Value | `Q312` · not captured | 0.545 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row19:col2 |
+| variability | IIV RUV — RSE (%) | `Q312` · not captured | 6.57 | not captured | not captured | llm_confirmed (not captured) | cpt70395-tbl-0002:row19:col3 |
+| variability | IIV RUV — SHR (%) | `Q318` · not captured | 29.1 | not captured | not captured | llm_corrected (not captured) | cpt70395-tbl-0002:row19:col4 |
+| variability | RUV — Value | `Q315` · not captured | 0.969 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col2 |
+| variability | RUV — RSE (%) | `Q315` · not captured | 4.94 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col3 |
+| variability | RUV — SHR (%) | `Q315` · not captured | 22.0 | not captured | not captured | exact (not captured) | cpt70395-tbl-0002:row20:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

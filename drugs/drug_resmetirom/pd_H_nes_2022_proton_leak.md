@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For the proton leak response, the paper does not give a pharmacodynamic model or potency parameters; it only reports that treatment of HEK-1B1 cells with a receptor-saturating dose of 6 µM MGL-3196 (resmetirom) for 48 h significantly increased proton leak measured by oxygen consumption rate, mimicking 100 nM T3. The reported EC50 values (e.g., 0.601 µM for MGL-3196 on TRβ in OATP1B1-expressing cells) pertain to TRβ receptor activation in a luciferase assay, not to the proton leak response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hönes_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,12 +30,12 @@ Hönes GS; Sivakumar RG; Hoppe C; König J; Führer D; Moeller LC et al. (2022).
   ·  DOI: [10.3390/ijms232213714](https://doi.org/10.3390/ijms232213714)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| T3 — log(EC50) ± SD | `Q321` · not captured | -8.091 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row1:col3 |
-| T3 — EC50 [µM] | `Q321` · not captured | 0.007 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row1:col4 |
-| TRβ — log(EC50) ± SD | `Q321` · not captured | 0.009 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row3:col3 |
-| TRβ — log(EC50) ± SD | `Q321` · not captured | 0.601 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | T3 — log(EC50) ± SD | `Q321` · not captured | -8.091 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row1:col3 |
+| PD (effect) | T3 — EC50 [µM] | `Q321` · not captured | 0.007 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row1:col4 |
+| PD (effect) | TRβ — log(EC50) ± SD | `Q321` · not captured | 0.009 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row3:col3 |
+| PD (effect) | TRβ — log(EC50) ± SD | `Q321` · not captured | 0.601 | nM | not captured | llm (not captured) | ijms-23-13714-t001:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

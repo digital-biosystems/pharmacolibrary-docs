@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Decitabine (measured concentrations) drives name (in amount) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Azacitidine (and decitabine) deplete DNMT1 protein: the drugs are metabolized to AZA-dCTP, which is incorporated into DNA, trapping DNMT1 at those sites and causing its degradation via the ubiquitin-proteasome pathway; the paper does not report quantitative PD parameters (Imax, IC50, kin/kout, etc.) for the DNMT1 depletion response, only growth-inhibition IC50 values (AZA 0.5–2.39 μM; DAC 0.04–0.26 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yoshida-Sakai_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

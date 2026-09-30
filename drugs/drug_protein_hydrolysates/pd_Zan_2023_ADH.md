@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ILPHF, MFPHLPSF, LMLPHF, FDLPALRF (measured concentrations) drive ADH activation rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The chickpea protein hydrolysate peptides ILPHF, MFPHLPSF, LMLPHF and FDLPALRF directly stimulate ADH activation rate (Emax-type concentration–effect relationship, no PK model); EC50 values were 1.56 ± 0.07, 1.62 ± 0.23, 1.76 ± 0.03 and 9.11 ± 0.11 mM (abstract states µM), respectively. The paper attributes the activation to formation of stable complexes between the peptides and the active center of ADH via hydrogen bonding (docking binding energies −7.60 to −10.26 kcal/mol), and does not report Imax, kin, kout, ke0 or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zan_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,12 +30,12 @@ Zan R; Zhu L; Wu G; Zhang H et al. (2023). Foods (Basel, Switzerland) 12
   ·  DOI: [10.3390/foods12081574](https://doi.org/10.3390/foods12081574)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.56 | mM | not captured | llm (not captured) | foods-12-01574-t003:row1:col2 |
-| 2 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.62 | mM | not captured | llm (not captured) | foods-12-01574-t003:row2:col2 |
-| 3 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.76 | mM | not captured | llm (not captured) | foods-12-01574-t003:row3:col2 |
-| 4 — ADH Activation EC50 a (mM) | `Q321` · not captured | 9.11 | mM | not captured | llm (not captured) | foods-12-01574-t003:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.56 | mM | not captured | llm (not captured) | foods-12-01574-t003:row1:col2 |
+| PD (effect) | 2 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.62 | mM | not captured | llm (not captured) | foods-12-01574-t003:row2:col2 |
+| PD (effect) | 3 — ADH Activation EC50 a (mM) | `Q321` · not captured | 1.76 | mM | not captured | llm (not captured) | foods-12-01574-t003:row3:col2 |
+| PD (effect) | 4 — ADH Activation EC50 a (mM) | `Q321` · not captured | 9.11 | mM | not captured | llm (not captured) | foods-12-01574-t003:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

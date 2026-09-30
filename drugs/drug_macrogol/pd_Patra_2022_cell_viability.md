@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Genistein (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism; it reports an in vitro MTT cytotoxicity assay in SKOV-3 cells exposed for 72 h to genistein (pure drug or drug-loaded NPs) at concentrations of 1.71 to 27.24 mg/ml, with cell viability (absorbance at 570 nm) as the response showing inhibition, and an IC50 mentioned but its value is not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Patra_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

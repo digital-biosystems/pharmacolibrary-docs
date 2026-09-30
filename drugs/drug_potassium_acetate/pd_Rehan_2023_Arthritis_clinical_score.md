@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KZR-8445 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe a pharmacodynamic model linking KZR-8445 (or potassium acetate) concentrations to an arthritis clinical score; no mechanism, potency or rate values for that response are given. The only quantitative PD information provided is that KZR-8445 directly inhibits Sec61α-mediated protein secretion, blocking GLuc reporter secretion of IL-2 and TNFα constructs with IC50 ~100 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rehan_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-PTHTMR (measured concentrations) drives fractional excretion of calcium (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative pharmacodynamic model for fractional excretion of calcium (FECa); it only states that injected PEG-PTHTMR and PTHTMR reduced FECa in mice, with the effect greater and sustained up to 24 hours for PEG-PTHTMR, attributed mechanistically to PTH-mediated stimulation of renal tubular calcium reabsorption (e.g., increased distal tubular TRPV5 expression). The only quantitative concentration–response data are for PTHR1 cAMP signaling in GP2.3 cells, where PEG-PTHTMR showed an Emax (178 cps × 10−3) similar to PTH(1-34) (188) and PTHTMR (184) but an EC50 about three- to fivefold weaker than PTH(1-34) and PTHTMR; no FECa potency values (EC50/Emax) are given in
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,19 +31,19 @@ Guo J; Khatri A; Maeda A; Potts JT; Jüppner H; Gardella TJ et al. (2017). Journ
   ·  DOI: [10.1002/jbmr.2917](https://doi.org/10.1002/jbmr.2917)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| pEC50 — PTH(1-34) | `Q321` · not captured | 1.00 | nM | not captured | llm (not captured) | T1:row1:col3 |
-| pEC50 — PTHTMR | `Q321` · not captured | 0.05 | nM | not captured | llm (not captured) | T1:row1:col4 |
-| pEC50 — PEG-PTHTMR | `Q321` · not captured | 0.0014 | nM | not captured | llm (not captured) | T1:row1:col5 |
-| pEC50 — PEG-PTHTMR | `Q321` · not captured | 0.004 | nM | not captured | llm (not captured) | T1:row2:col5 |
-| Emax(cps × 10−3) — PTH(1-34) | `Q320` · not captured | 188 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col3 |
-| Emax(cps × 10−3) — PTHTMR | `Q320` · not captured | 184 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col4 |
-| Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 178 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col5 |
-| Emax(cps × 10−3) — PTH(1-34) | `Q320` · not captured | 1.00 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col3 |
-| Emax(cps × 10−3) — PTHTMR | `Q320` · not captured | 0.77 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col4 |
-| Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 0.55 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col5 |
-| Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 0.70 | cps × 10−3 | not captured | exact (not captured) | T1:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | pEC50 — PTH(1-34) | `Q321` · not captured | 1.00 | nM | not captured | llm (not captured) | T1:row1:col3 |
+| PD (effect) | pEC50 — PTHTMR | `Q321` · not captured | 0.05 | nM | not captured | llm (not captured) | T1:row1:col4 |
+| PD (effect) | pEC50 — PEG-PTHTMR | `Q321` · not captured | 0.0014 | nM | not captured | llm (not captured) | T1:row1:col5 |
+| PD (effect) | pEC50 — PEG-PTHTMR | `Q321` · not captured | 0.004 | nM | not captured | llm (not captured) | T1:row2:col5 |
+| PD (effect) | Emax(cps × 10−3) — PTH(1-34) | `Q320` · not captured | 188 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col3 |
+| PD (effect) | Emax(cps × 10−3) — PTHTMR | `Q320` · not captured | 184 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col4 |
+| PD (effect) | Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 178 | cps × 10−3 | not captured | exact (not captured) | T1:row3:col5 |
+| PD (effect) | Emax(cps × 10−3) — PTH(1-34) | `Q320` · not captured | 1.00 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col3 |
+| PD (effect) | Emax(cps × 10−3) — PTHTMR | `Q320` · not captured | 0.77 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col4 |
+| PD (effect) | Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 0.55 | cps × 10−3 | not captured | exact (not captured) | T1:row4:col5 |
+| PD (effect) | Emax(cps × 10−3) — PEG-PTHTMR | `Q320` · not captured | 0.70 | cps × 10−3 | not captured | exact (not captured) | T1:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

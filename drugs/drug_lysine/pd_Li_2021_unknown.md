@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** D6 (measured concentrations) drives Tumour volume (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking D6 concentrations to tumour volume; instead it reports in vitro inhibition of LSD1 by chalcone-dithiocarbamate derivatives, with D6 the most potent reversible, time-dependent LSD1 inhibitor (IC50 0.14 μM, ~99.3% inhibition at 400 nM, versus 2.68 μM for dithiocarbamate 26 and 15.35 μM for C3). D6 also inhibited leukaemia cell proliferation (IC50 0.87–3.85 μM across HAL-01, KE-37, P30-OHK, SUP-B15, MOLT-4 and LC4-1 cells) via LSD1 inactivation with H3K9me1/2 accumulation, and suppressed MOLT-4 xenograft tumour growth in vivo, but no Imax, kin, kout, ke0 or Hill coefficient values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Li Y; Sun Y; Zhou Y; Li X; Zhang H; Zhang G et al. (2021). Journal of enzyme inh
   ·  DOI: [10.1080/14756366.2020.1852556](https://doi.org/10.1080/14756366.2020.1852556)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) — C2 | `Q322` · not captured | 19.70 | μM | not captured | exact (not captured) | t0001:row2:col4 |
-| IC50 (μM) — C3 | `Q322` · not captured | 15.35 | μM | not captured | exact (not captured) | t0001:row2:col5 |
-| IC50 (μM) — D1 | `Q322` · not captured | 11.26 | μM | not captured | exact (not captured) | t0001:row2:col7 |
-| IC50 (μM) — D2 | `Q322` · not captured | 9.35 | μM | not captured | exact (not captured) | t0001:row2:col8 |
-| IC50 (μM) — D3 | `Q322` · not captured | 13.90 | μM | not captured | exact (not captured) | t0001:row2:col9 |
-| IC50 (μM) — D4 | `Q322` · not captured | 6.03 | μM | not captured | exact (not captured) | t0001:row2:col10 |
-| IC50 (μM) — D5 | `Q322` · not captured | 2.29 | μM | not captured | exact (not captured) | t0001:row2:col11 |
-| IC50 (μM) — D6 | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | t0001:row2:col12 |
-| IC50 (μM) — D7 | `Q322` · not captured | 3.27 | μM | not captured | exact (not captured) | t0001:row2:col13 |
-| IC50 (μM) — Dithiocarbamate 26 a | `Q322` · not captured | 2.68 | μM | not captured | exact (not captured) | t0001:row2:col14 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) — C2 | `Q322` · not captured | 19.70 | μM | not captured | exact (not captured) | t0001:row2:col4 |
+| PD (effect) | IC50 (μM) — C3 | `Q322` · not captured | 15.35 | μM | not captured | exact (not captured) | t0001:row2:col5 |
+| PD (effect) | IC50 (μM) — D1 | `Q322` · not captured | 11.26 | μM | not captured | exact (not captured) | t0001:row2:col7 |
+| PD (effect) | IC50 (μM) — D2 | `Q322` · not captured | 9.35 | μM | not captured | exact (not captured) | t0001:row2:col8 |
+| PD (effect) | IC50 (μM) — D3 | `Q322` · not captured | 13.90 | μM | not captured | exact (not captured) | t0001:row2:col9 |
+| PD (effect) | IC50 (μM) — D4 | `Q322` · not captured | 6.03 | μM | not captured | exact (not captured) | t0001:row2:col10 |
+| PD (effect) | IC50 (μM) — D5 | `Q322` · not captured | 2.29 | μM | not captured | exact (not captured) | t0001:row2:col11 |
+| PD (effect) | IC50 (μM) — D6 | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | t0001:row2:col12 |
+| PD (effect) | IC50 (μM) — D7 | `Q322` · not captured | 3.27 | μM | not captured | exact (not captured) | t0001:row2:col13 |
+| PD (effect) | IC50 (μM) — Dithiocarbamate 26 a | `Q322` · not captured | 2.68 | μM | not captured | exact (not captured) | t0001:row2:col14 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

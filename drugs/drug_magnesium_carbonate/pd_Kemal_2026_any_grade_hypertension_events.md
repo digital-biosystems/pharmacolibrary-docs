@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nemtabrutinib (measured concentrations) drives name (in hypertension): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The record links nemtabrutinib plasma concentrations (ng/mL) to any-grade hypertension events, with magnesium carbonate listed as the drug, but the paper excerpts do not describe any exposure–hypertension model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given for this endpoint); the excerpts only describe a population PK model for nemtabrutinib (two-compartment, first-order absorption with lag, e.g. CL/F 3.33 L/h, Vc/F 120 L, Ka 2.83 1/h) and logistic exposure–response analyses for efficacy endpoints, so the mechanism for the hypertension response is not stated in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kemal_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -20,28 +30,28 @@ Kemal CC; Zweers TJ; Krekels EHJ; Chatterjee MS et al. (2026). CPT: pharmacometr
   ·  DOI: [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Apparent clearance (CL/F) (L/h) — Point estimate | `Q27` · not captured | 3.33 | L/h | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row2:col1 |
-| Apparent clearance (CL/F) (L/h) — RSE% | `Q27` · not captured | 4.59 | L/h | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row2:col2 |
-| Apparent central volume (Vc/F) (L) — Point estimate | `Q290` · not captured | 120 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row3:col1 |
-| Apparent central volume (Vc/F) (L) — RSE% | `Q290` · not captured | 1.82 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row3:col2 |
-| Absorption rate (Ka) (1/h) — Point estimate | `Q49` · not captured | 2.83 | not captured | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row4:col1 |
-| Absorption rate (Ka) (1/h) — RSE% | `Q49` · not captured | 7.16 | not captured | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row4:col2 |
-| Apparent inter‐compartmental clearance (Q/F) (L/h) — Point estimate | `Q69` · not captured | 0.681 | L/h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row5:col1 |
-| Apparent inter‐compartmental clearance (Q/F) (L/h) — RSE% | `Q69` · not captured | 41.6 | L/h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row5:col2 |
-| Apparent peripheral volume 1 (Vp/F) (L) — Point estimate | `Q82` · not captured | 66.9 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row6:col1 |
-| Apparent peripheral volume 1 (Vp/F) (L) — RSE% | `Q82` · not captured | 17.3 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row6:col2 |
-| Lag on absorption (h) — Point estimate | `Q83` · not captured | 0.494 | h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row7:col1 |
-| Lag on absorption (h) — RSE% | `Q83` · not captured | 7.79 | h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row7:col2 |
-| CL/F — Point estimate | `Q27` · not captured | 39.8 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row35:col1 |
-| CL/F — RSE% | `Q27` · not captured | 4.60 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row35:col2 |
-| Vc/F — Point estimate | `Q290` · not captured | 17.1 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row36:col1 |
-| Vc/F — RSE% | `Q290` · not captured | 5.56 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row36:col2 |
-| Proportional error — Point estimate | `Q316` · not captured | 0.222 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row38:col1 |
-| Proportional error — RSE% | `Q316` · not captured | 3.19 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row38:col2 |
-| Additive error — Point estimate | `Q317` · not captured | 3.19 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row39:col1 |
-| Additive error — RSE% | `Q317` · not captured | 101 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row39:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Apparent clearance (CL/F) (L/h) — Point estimate | `Q27` · not captured | 3.33 | L/h | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row2:col1 |
+| PK (driver) | Apparent clearance (CL/F) (L/h) — RSE% | `Q27` · not captured | 4.59 | L/h | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row2:col2 |
+| PK (driver) | Apparent central volume (Vc/F) (L) — Point estimate | `Q290` · not captured | 120 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row3:col1 |
+| PK (driver) | Apparent central volume (Vc/F) (L) — RSE% | `Q290` · not captured | 1.82 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row3:col2 |
+| PK (driver) | Absorption rate (Ka) (1/h) — Point estimate | `Q49` · not captured | 2.83 | not captured | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row4:col1 |
+| PK (driver) | Absorption rate (Ka) (1/h) — RSE% | `Q49` · not captured | 7.16 | not captured | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row4:col2 |
+| PK (driver) | Apparent inter‐compartmental clearance (Q/F) (L/h) — Point estimate | `Q69` · not captured | 0.681 | L/h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row5:col1 |
+| PK (driver) | Apparent inter‐compartmental clearance (Q/F) (L/h) — RSE% | `Q69` · not captured | 41.6 | L/h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row5:col2 |
+| PK (driver) | Apparent peripheral volume 1 (Vp/F) (L) — Point estimate | `Q82` · not captured | 66.9 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row6:col1 |
+| PK (driver) | Apparent peripheral volume 1 (Vp/F) (L) — RSE% | `Q82` · not captured | 17.3 | L | not captured | llm_confirmed (not captured) | psp470257-tbl-0002:row6:col2 |
+| PK (driver) | Lag on absorption (h) — Point estimate | `Q83` · not captured | 0.494 | h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row7:col1 |
+| PK (driver) | Lag on absorption (h) — RSE% | `Q83` · not captured | 7.79 | h | not captured | llm_corrected (not captured) | psp470257-tbl-0002:row7:col2 |
+| PK (driver) | CL/F — Point estimate | `Q27` · not captured | 39.8 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row35:col1 |
+| PK (driver) | CL/F — RSE% | `Q27` · not captured | 4.60 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row35:col2 |
+| PK (driver) | Vc/F — Point estimate | `Q290` · not captured | 17.1 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row36:col1 |
+| PK (driver) | Vc/F — RSE% | `Q290` · not captured | 5.56 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row36:col2 |
+| variability | Proportional error — Point estimate | `Q316` · not captured | 0.222 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row38:col1 |
+| variability | Proportional error — RSE% | `Q316` · not captured | 3.19 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row38:col2 |
+| variability | Additive error — Point estimate | `Q317` · not captured | 3.19 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row39:col1 |
+| variability | Additive error — RSE% | `Q317` · not captured | 101 | not captured | not captured | exact (not captured) | psp470257-tbl-0002:row39:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

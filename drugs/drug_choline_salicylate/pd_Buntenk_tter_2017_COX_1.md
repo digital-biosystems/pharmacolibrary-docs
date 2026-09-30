@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetylsalicylic acid (measured concentrations) drives COX-1 inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, acetylsalicylic acid (ASA) concentrations inhibit COX-1 activity in equine blood (measured as inhibition of clot-induced TXB2 formation), by irreversible COX-1 inhibition, with an IC50 of 1.68 μmol/L (0.50 μg/mL); the metabolite salicylic acid showed insufficient inhibition (IC50 &gt; 100 μmol/L for COX-1). No PD model parameters (Emax, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Buntenkötter_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,29 +30,29 @@ Buntenkötter K; Osmers M; Schenk I; Schänzer W; Machnik M; Düe M; et al. et a
   ·  DOI: [10.1186/s12917-017-0955-1](https://doi.org/10.1186/s12917-017-0955-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cmax — 12.5 mg/kg | `Q32` · not captured | 19.75 | not captured | not captured | exact (not captured) | Tab2:row1:col2 |
-| Cmax — 25.0 mg/kg | `Q32` · not captured | 30.06 | not captured | not captured | exact (not captured) | Tab2:row1:col3 |
-| Cmax — 50.0 mg/kg | `Q32` · not captured | 51.66 | not captured | not captured | exact (not captured) | Tab2:row1:col4 |
-| Tmax — 12.5 mg/kg | `Q56` · not captured | 2.0 | not captured | not captured | exact (not captured) | Tab2:row2:col2 |
-| Tmax — 25.0 mg/kg | `Q56` · not captured | 2.5 | not captured | not captured | exact (not captured) | Tab2:row2:col3 |
-| Tmax — 50.0 mg/kg | `Q56` · not captured | 2.2 | not captured | not captured | exact (not captured) | Tab2:row2:col4 |
-| CI/F — 12.5 mg/kg | `Q27` · not captured | 82.2 | not captured | not captured | llm (not captured) | Tab2:row3:col2 |
-| CI/F — 25.0 mg/kg | `Q27` · not captured | 97.1 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
-| CI/F — 50.0 mg/kg | `Q27` · not captured | 114.0 | not captured | not captured | llm (not captured) | Tab2:row3:col4 |
-| AUClast — 12.5 mg/kg | `Q74` · not captured | 154.9 | not captured | not captured | exact (not captured) | Tab2:row4:col2 |
-| AUClast — 25.0 mg/kg | `Q74` · not captured | 264.9 | not captured | not captured | exact (not captured) | Tab2:row4:col3 |
-| AUClast — 50.0 mg/kg | `Q74` · not captured | 457.1 | not captured | not captured | exact (not captured) | Tab2:row4:col4 |
-| λZ — 12.5 mg/kg | `Q47` · not captured | 0.145 | not captured | not captured | exact (not captured) | Tab2:row5:col2 |
-| λZ — 25.0 mg/kg | `Q47` · not captured | 0.148 | not captured | not captured | exact (not captured) | Tab2:row5:col3 |
-| λZ — 50.0 mg/kg | `Q47` · not captured | 0.145 | not captured | not captured | exact (not captured) | Tab2:row5:col4 |
-| λZ T½ — 12.5 mg/kg | `Q57` · not captured | 5.1 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col2 |
-| λZ T½ — 25.0 mg/kg | `Q57` · not captured | 5.0 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col3 |
-| λZ T½ — 50.0 mg/kg | `Q57` · not captured | 5.7 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col4 |
-| MRT — 12.5 mg/kg | `Q53` · not captured | 7.26 | not captured | not captured | exact (not captured) | Tab2:row7:col2 |
-| MRT — 25.0 mg/kg | `Q53` · not captured | 7.81 | not captured | not captured | exact (not captured) | Tab2:row7:col3 |
-| MRT — 50.0 mg/kg | `Q53` · not captured | 8.39 | not captured | not captured | exact (not captured) | Tab2:row7:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cmax — 12.5 mg/kg | `Q32` · not captured | 19.75 | not captured | not captured | exact (not captured) | Tab2:row1:col2 |
+| PK (driver) | Cmax — 25.0 mg/kg | `Q32` · not captured | 30.06 | not captured | not captured | exact (not captured) | Tab2:row1:col3 |
+| PK (driver) | Cmax — 50.0 mg/kg | `Q32` · not captured | 51.66 | not captured | not captured | exact (not captured) | Tab2:row1:col4 |
+| PK (driver) | Tmax — 12.5 mg/kg | `Q56` · not captured | 2.0 | not captured | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | Tmax — 25.0 mg/kg | `Q56` · not captured | 2.5 | not captured | not captured | exact (not captured) | Tab2:row2:col3 |
+| PK (driver) | Tmax — 50.0 mg/kg | `Q56` · not captured | 2.2 | not captured | not captured | exact (not captured) | Tab2:row2:col4 |
+| PK (driver) | CI/F — 12.5 mg/kg | `Q27` · not captured | 82.2 | not captured | not captured | llm (not captured) | Tab2:row3:col2 |
+| PK (driver) | CI/F — 25.0 mg/kg | `Q27` · not captured | 97.1 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
+| PK (driver) | CI/F — 50.0 mg/kg | `Q27` · not captured | 114.0 | not captured | not captured | llm (not captured) | Tab2:row3:col4 |
+| PK (driver) | AUClast — 12.5 mg/kg | `Q74` · not captured | 154.9 | not captured | not captured | exact (not captured) | Tab2:row4:col2 |
+| PK (driver) | AUClast — 25.0 mg/kg | `Q74` · not captured | 264.9 | not captured | not captured | exact (not captured) | Tab2:row4:col3 |
+| PK (driver) | AUClast — 50.0 mg/kg | `Q74` · not captured | 457.1 | not captured | not captured | exact (not captured) | Tab2:row4:col4 |
+| PK (driver) | λZ — 12.5 mg/kg | `Q47` · not captured | 0.145 | not captured | not captured | exact (not captured) | Tab2:row5:col2 |
+| PK (driver) | λZ — 25.0 mg/kg | `Q47` · not captured | 0.148 | not captured | not captured | exact (not captured) | Tab2:row5:col3 |
+| PK (driver) | λZ — 50.0 mg/kg | `Q47` · not captured | 0.145 | not captured | not captured | exact (not captured) | Tab2:row5:col4 |
+| PK (driver) | λZ T½ — 12.5 mg/kg | `Q57` · not captured | 5.1 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col2 |
+| PK (driver) | λZ T½ — 25.0 mg/kg | `Q57` · not captured | 5.0 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col3 |
+| PK (driver) | λZ T½ — 50.0 mg/kg | `Q57` · not captured | 5.7 | not captured | not captured | llm_corrected (not captured) | Tab2:row6:col4 |
+| PK (driver) | MRT — 12.5 mg/kg | `Q53` · not captured | 7.26 | not captured | not captured | exact (not captured) | Tab2:row7:col2 |
+| PK (driver) | MRT — 25.0 mg/kg | `Q53` · not captured | 7.81 | not captured | not captured | exact (not captured) | Tab2:row7:col3 |
+| PK (driver) | MRT — 50.0 mg/kg | `Q53` · not captured | 8.39 | not captured | not captured | exact (not captured) | Tab2:row7:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

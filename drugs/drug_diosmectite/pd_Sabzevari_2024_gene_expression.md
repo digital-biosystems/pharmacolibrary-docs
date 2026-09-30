@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montmorillonite (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Montmorillonite (Mt) nanosheets inhibit proliferation of MDA-MB-231 and MCF-7 breast cancer cells (MTT assay), with IC50 values of ~50 and ~200 µg/mL in FBS-free medium and ~400 and ~2000 µg/mL in 10% FBS medium, respectively; Mt also alters expression of apoptosis- and cell cycle-related genes (e.g., up-regulation of P62 4.1-fold and down-regulation of Bcl-2 to 0.5-fold in MCF-7). The paper does not state a formal PD model (no Emax, kin/kout, or ke0 parameters), and the mechanism is described only qualitatively as induction of apoptosis, G0/G1 or sub-G1 arrest, and necrosis, possibly via mitochondrial damage.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sabzevari_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DFMO and ORI 1202 combination (measured concentrations) drive tumor growth (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The combination of DFMO (irreversible ornithine decarboxylase inhibitor blocking polyamine synthesis) and ORI 1202 (competitive inhibitor of polyamine transport) concentration-dependently inhibited growth of prostate tumor cell lines (e.g. PC-3, with 1 mM spermidine in the medium), with an EC50 of 5.3 mM for PC-3 (5.0 mM DU145, 2.6 mM LNCaP.FGC); the paper does not state a specific PD model structure or other potency/rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Devens_2000`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Devens BH; Weeks RS; Burns MR; Carlson CL; Brawer MK et al. (2000). Prostate can
   ·  DOI: [10.1038/sj.pcan.4500420](https://doi.org/10.1038/sj.pcan.4500420)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 values | `Q321` · not captured | 5.3 | mM | not captured | review_gapfill (not captured) | Devens_2000:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 values | `Q321` · not captured | 5.3 | mM | not captured | review_gapfill (not captured) | Devens_2000:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

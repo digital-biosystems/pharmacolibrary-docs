@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Modified fluoroquinolones (e.g., compound 6) (measured concentrations) drive ESKAPE bacteria growth inhibition (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Modified fluoroquinolone compounds (e.g., compound 6) were tested in vitro for inhibition of bacterial growth (MIC defined as ≥95% growth inhibition), with no PD model, mechanism, or potency parameters (Imax, IC50, EC50, kin, kout, ke0, gamma) reported for ESKAPE bacteria; the paper only states MIC values (e.g., compound 6 MIC 0.5 µM against N. gonorrhoeae, unchanged with 200 µM iron (III) citrate) and, for C. trachomatis, an EC50 of 13 nM for compound 6.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -22,15 +22,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Cao_2025_reference](drugs/drug_valoctocogene_roxaparvovec/ValoctocogeneRoxaparvovec_Cao2025_reference.md) | — | 2-compartment (no model) | 4 | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025](drugs/drug_valoctocogene_roxaparvovec/pd_Cao_2025_IgG.md) | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Cao_2025_IgG](drugs/drug_valoctocogene_roxaparvovec/pd_Cao_2025_IgG.md) | IgG ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
 
 ## ADME sites
 
@@ -39,6 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
 | absorption | kidney | <sub>“…xaparvovec administration. Blood, saliva, semen, stool, and urine showed the highest vecto…”</sub> | prose |
+| absorption | testis | <sub>“…r valoctocogene roxaparvovec administration. Blood, saliva, semen, stool, and urine showed…”</sub> | prose |
 | excretion | bile duct | <sub>“…through urine (all patients), saliva (99% of patients) and feces (84% of patients).[L43282…”</sub> | prose |
 | excretion | kidney | <sub>“…shown that valoctocogene roxaparvovec is eliminated through urine (all patients), saliva (…”</sub> | prose |
 

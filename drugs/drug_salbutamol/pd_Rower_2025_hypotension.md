@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Magnesium drives Hypotension (in event): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not establish a pharmacodynamic model for hypotension: serum magnesium exposure (total or ionized Cmax and AUC0–2 h, mg h/L) showed no correlation with blood pressure changes, and hypotension (a binary event, 4/49 subjects, 2 on placebo) was not magnesium-exposure dependent, so no mechanism, potency (IC50/EC50/Emax), or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rower_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydrogen peroxide drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hydrogen peroxide (H2O2) applied to cultured endothelial cells produced time- and dose-dependent 51Cr release (a marker of cell membrane disruption), but the paper gives no pharmacodynamic model, potency (IC50/Emax), or rate parameters for this response; notably, loss of cellular integrity required doses in excess of 0.5 mM and incubation times in excess of 1 h, in contrast to the rapid, potent inhibition of PGI2 synthesis (IC50 ~35 µM, maximal within 1 min).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Whorton_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

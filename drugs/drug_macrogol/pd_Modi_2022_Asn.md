@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-Asparaginase activity drives L-Asparagine (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In rats, PEG-nErA (and nErA) enzyme activity depletes plasma L-asparagine (Asn) by catalytic degradation of Asn (ASNase converts Asn to aspartic acid), producing a dose-dependent duration of Asn depletion rather than a stated Emax/IC50 PD model; no explicit PD model parameters (Imax, IC50, EC50, kin, kout, ke0, gamma) are given for the Asn response. Key PK/PD descriptors: PEG-nErA t1/2 of 82.2, 78.4 and 96.5 (units not stated) at 25, 100 and 400 U/kg vs 9.7 for 400 U/kg nErA, with Asn depleted below detection for ≥25 days (100 U/kg) and 31 days (400 U/kg) vs ~72 h for nErA; in vitro cytotoxicity IC50 was 0.06–0.17 U/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Modi_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,28 +31,28 @@ Modi T; Gervais D et al. (2022). Investigational new drugs 40
   ·  DOI: [10.1007/s10637-021-01173-8](https://doi.org/10.1007/s10637-021-01173-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Area Under the Curve, AUC — 25 U/kg + PEG | `Q88` · not captured | 104.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col3 |
-| Area Under the Curve, AUC — 100 U/kg + PEG | `Q88` · not captured | 283.8 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col4 |
-| Area Under the Curve, AUC — 400 U/kg + PEG | `Q88` · not captured | 1062.0 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col5 |
-| Area Under the Curve, AUC — 400U/kg -PEG | `Q88` · not captured | 8.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col6 |
-| Estimated Maximum Activity in vivo, Cmax — 25 U/kg + PEG | `Q32` · not captured | 0.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col3 |
-| Estimated Maximum Activity in vivo, Cmax — 100 U/kg + PEG | `Q32` · not captured | 1.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col4 |
-| Estimated Maximum Activity in vivo, Cmax — 400 U/kg + PEG | `Q32` · not captured | 6.1 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col5 |
-| Estimated Maximum Activity in vivo, Cmax — 400U/kg -PEG | `Q32` · not captured | 0.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col6 |
-| Half Life, t1/2 — 25 U/kg + PEG | `Q57` · not captured | 82.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col3 |
-| Half Life, t1/2 — 100 U/kg + PEG | `Q57` · not captured | 78.4 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col4 |
-| Half Life, t1/2 — 400 U/kg + PEG | `Q57` · not captured | 96.5 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col5 |
-| Half Life, t1/2 — 400U/kg -PEG | `Q57` · not captured | 9.7 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col6 |
-| Cmax theoretical — 25 U/kg + PEG | `Q32` · not captured | 0.32 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col3 |
-| Cmax theoretical — 100 U/kg + PEG | `Q32` · not captured | 1.28 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col4 |
-| Cmax theoretical — 400 U/kg + PEG | `Q32` · not captured | 5.12 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col5 |
-| Cmax theoretical — 400U/kg -PEG | `Q32` · not captured | 5.12 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col6 |
-| Clearance, CL — 25 U/kg + PEG | `Q22` · not captured | 0.24 | CL | not captured | exact (not captured) | Tab4:row4:col3 |
-| Clearance, CL — 100 U/kg + PEG | `Q22` · not captured | 0.26 | CL | not captured | exact (not captured) | Tab4:row4:col4 |
-| Clearance, CL — 400 U/kg + PEG | `Q22` · not captured | 0.17 | CL | not captured | exact (not captured) | Tab4:row4:col5 |
-| Clearance, CL — 400U/kg -PEG | `Q22` · not captured | 31.2 | CL | not captured | exact (not captured) | Tab4:row4:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Area Under the Curve, AUC — 25 U/kg + PEG | `Q88` · not captured | 104.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col3 |
+| PK (driver) | Area Under the Curve, AUC — 100 U/kg + PEG | `Q88` · not captured | 283.8 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col4 |
+| PK (driver) | Area Under the Curve, AUC — 400 U/kg + PEG | `Q88` · not captured | 1062.0 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col5 |
+| PK (driver) | Area Under the Curve, AUC — 400U/kg -PEG | `Q88` · not captured | 8.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row0:col6 |
+| PK (driver) | Estimated Maximum Activity in vivo, Cmax — 25 U/kg + PEG | `Q32` · not captured | 0.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col3 |
+| PK (driver) | Estimated Maximum Activity in vivo, Cmax — 100 U/kg + PEG | `Q32` · not captured | 1.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col4 |
+| PK (driver) | Estimated Maximum Activity in vivo, Cmax — 400 U/kg + PEG | `Q32` · not captured | 6.1 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col5 |
+| PK (driver) | Estimated Maximum Activity in vivo, Cmax — 400U/kg -PEG | `Q32` · not captured | 0.3 | not captured | not captured | llm_confirmed (not captured) | Tab4:row1:col6 |
+| PK (driver) | Half Life, t1/2 — 25 U/kg + PEG | `Q57` · not captured | 82.2 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col3 |
+| PK (driver) | Half Life, t1/2 — 100 U/kg + PEG | `Q57` · not captured | 78.4 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col4 |
+| PK (driver) | Half Life, t1/2 — 400 U/kg + PEG | `Q57` · not captured | 96.5 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col5 |
+| PK (driver) | Half Life, t1/2 — 400U/kg -PEG | `Q57` · not captured | 9.7 | not captured | not captured | llm_confirmed (not captured) | Tab4:row2:col6 |
+| PK (driver) | Cmax theoretical — 25 U/kg + PEG | `Q32` · not captured | 0.32 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col3 |
+| PK (driver) | Cmax theoretical — 100 U/kg + PEG | `Q32` · not captured | 1.28 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col4 |
+| PK (driver) | Cmax theoretical — 400 U/kg + PEG | `Q32` · not captured | 5.12 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col5 |
+| PK (driver) | Cmax theoretical — 400U/kg -PEG | `Q32` · not captured | 5.12 | not captured | not captured | llm_confirmed (not captured) | Tab4:row3:col6 |
+| PK (driver) | Clearance, CL — 25 U/kg + PEG | `Q22` · not captured | 0.24 | CL | not captured | exact (not captured) | Tab4:row4:col3 |
+| PK (driver) | Clearance, CL — 100 U/kg + PEG | `Q22` · not captured | 0.26 | CL | not captured | exact (not captured) | Tab4:row4:col4 |
+| PK (driver) | Clearance, CL — 400 U/kg + PEG | `Q22` · not captured | 0.17 | CL | not captured | exact (not captured) | Tab4:row4:col5 |
+| PK (driver) | Clearance, CL — 400U/kg -PEG | `Q22` · not captured | 31.2 | CL | not captured | exact (not captured) | Tab4:row4:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

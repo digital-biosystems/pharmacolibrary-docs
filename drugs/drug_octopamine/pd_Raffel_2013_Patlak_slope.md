@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Desipramine (the dose) drives name (in Kp): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In rhesus macaque cardiac PET, intravenous doses of the NET inhibitor desipramine (DMI, mg/kg) reduce the Patlak slope Kp (mL/min/g) of 11C-guanyl-meta-octopamine uptake, following a sigmoidal inhibitory dose-response with IC50 = 0.068 ± 0.010 mg/kg, Hill slope nH = −0.54 ± 0.05, and maximum Patlak slope Ymax = 0.104 ± 0.002 mL/min/g (r² = 0.99); the paper does not state an explicit PD mechanism beyond NET inhibition reducing tracer uptake.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raffel_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

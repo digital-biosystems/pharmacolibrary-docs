@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methyl-diazonium ion drives cell population size (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Temozolomide acts on glioblastoma cell population size (N) via its metabolite, the methyl-diazonium ion (intracellular concentration Ci), which forms DNA adducts (rate kadd/ka) leading to DNA damage and apoptosis; MGMT removes the methyl adducts, and the model links MGMT-mediated repair to the core clock by scaling adduct removal with the CRY level (anti-phasic to BMAL1). The excerpts do not state a quantitative PD effect form or any potency/rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nelson_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

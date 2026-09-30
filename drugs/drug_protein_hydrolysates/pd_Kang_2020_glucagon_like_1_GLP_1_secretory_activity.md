@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Green crab hydrolysates (measured concentrations) drives name (in level) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a GLP-1 secretory activity model; instead it reports that green crab protein hydrolysates (mg/mL) inhibit rat intestinal/porcine pancreatic α-glucosidase and α-amylase activity in vitro, with IC50 values (e.g., PR-derived hydrolysate α-glucosidase IC50 1.38 ± 0.19 mg/mL; α-amylase IC50 11.02 ± 0.69 mg/mL; acarbose control 0.027 mg/mL for α-glucosidase), and no mechanism, Emax, or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

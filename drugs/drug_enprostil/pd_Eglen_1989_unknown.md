@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enprostil drives guinea-pig aorta contraction (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Enprostil concentration-dependently contracts the guinea-pig aorta (a TP-receptor-mediated response measured as isometric tension, normalized to the maximal U46619 response), acting as a direct agonist; the paper reports potency as -log EC50 (Table 4) but the excerpts do not state the numeric EC50, Emax, or any kinetic parameters for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eglen_1989`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

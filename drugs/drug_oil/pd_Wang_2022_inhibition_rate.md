@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Litsea cubeba essential oil drives name (in %): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Litsea cubeba essential oil concentrations (µL/L) act on the inhibition rate (%) of Fof-1 mycelial growth as a direct concentration–effect relationship (toxicity equation fit, no mechanism or kinetic model given): inhibition increases with concentration, peaking around 250 µL/L then leveling off. Potency values reported as EC50 (e.g., G3: 63.3 µL/L, F9: 73.4 µL/L, L25: 213.2 µL/L, F11: 345 µL/L, polyoxin: 1,642 µL/L) and MIC (e.g., G3: 265.5 µL/L, F9: 321.1 µL/L, L25: 1,177.4 µL/L, F11: 1,284 µL/L, polyoxin: 17,581 µL/L); no Imax, Emax, kin, kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2022`
 - **model family:** `linear`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mirabegron (measured concentrations) drives name (in % of KCl-induced contractions) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Mirabegron (5 and 10 µM) inhibited EFS-induced contractions of human prostate smooth muscle (expressed as % of KCl-induced contractions), with 10 µM inhibiting contractions by 47% (16 Hz) and 59% (32 Hz) in the presence of L-NAME and by 89% at both 16 and 32 Hz in the presence of BPIPP; the paper attributes this to antagonism of α1-adrenoceptors rather than β3-activation (resistant to L-748,377), and also caused rightshifts of noradrenaline concentration-response curves. No quantitative PD model parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives ROS levels (in relative units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for temozolomide acting on ROS levels: ROS (relative units) was measured in A172 and GL261 cells treated with the ALDH inhibitors DIMATE, ABD0099 and ABD0171 (± TMZ combinations), and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values for a ROS response are given; the record's Emax/inhibition characterisation is not supported by the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiménez_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

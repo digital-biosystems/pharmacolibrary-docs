@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cefepime (measured concentrations) drives seizure stage &gt;1 (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Cefepime exposure (plasma/brain AUC and Cmax, mg/L) was related to the probability of seizure stage &gt;1 (score) via logistic regression models; the paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0). Potency (50% probability) values were TC50 of 30,658.6 mg·h/L for plasma AUC, 760.8 and 838.2 mg·h/L for cortex and hippocampus AUC, and Cmax of 45.0 mg/L (cortex) and 48.2 mg/L (hippocampus).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pais_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -20,26 +30,26 @@ Pais GM; Lesnicki E; Marianski S; Valdez K; Gibson Z; Christopher J; Lepard K; G
   ·  DOI: [10.1128/aac.01005-25](https://doi.org/10.1128/aac.01005-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k el (h -1 ) — Median | `Q47` · not captured | 0.14 | h -1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
-| k el (h -1 ) — RSE% | `Q47` · not captured | 38.7 | h -1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
-| beta_kel_logtWT — Median | `Q47` · not captured | 0.75 | not captured | not captured | llm (not captured) | tab_1:row2:col1 |
-| V central (L) — Median | `Q63` · not captured | 0.12 | L | not captured | llm (not captured) | tab_1:row3:col1 |
-| V central (L) — RSE% | `Q63` · not captured | 6.85 | L | not captured | llm (not captured) | tab_1:row3:col2 |
-| V cortex (L) — Median | `Q61` · not captured | 0.0039 | L | not captured | llm (not captured) | tab_1:row5:col1 |
-| V cortex (L) — RSE% | `Q61` · not captured | 18.6 | L | not captured | llm (not captured) | tab_1:row5:col2 |
-| V hippocampus (L) — Median | `Q61` · not captured | 0.00039 | L | not captured | llm (not captured) | tab_1:row6:col1 |
-| V hippocampus (L) — RSE% | `Q61` · not captured | 14.8 | L | not captured | llm (not captured) | tab_1:row6:col2 |
-| k 12 (h -1 ) — Median | `Q301` · not captured | 0.00013 | h -1 | not captured | space_fold (not captured) | tab_1:row7:col1 |
-| k 21 (h -1 ) — Median | `Q302` · not captured | 0.17 | h -1 | not captured | space_fold (not captured) | tab_1:row8:col1 |
-| k 21 (h -1 ) — RSE% | `Q302` · not captured | 18.5 | h -1 | not captured | space_fold (not captured) | tab_1:row8:col2 |
-| k 13 (h -1 ) — Median | `Q303` · not captured | 0.000015 | h -1 | not captured | space_fold (not captured) | tab_1:row9:col1 |
-| k 13 (h -1 ) — RSE% | `Q303` · not captured | 24.9 | h -1 | not captured | space_fold (not captured) | tab_1:row9:col2 |
-| k 31 (h -1 ) — Median | `Q304` · not captured | 0.15 | h -1 | not captured | space_fold (not captured) | tab_1:row10:col1 |
-| k 31 (h -1 ) — RSE% | `Q304` · not captured | 31.2 | h -1 | not captured | space_fold (not captured) | tab_1:row10:col2 |
-| corr_k el _V hippocampus — Median | `Q47` · not captured | 0.92 | not captured | not captured | llm (not captured) | tab_1:row12:col1 |
-| corr_k el _V hippocampus — RSE% | `Q47` · not captured | 20.8 | not captured | not captured | llm (not captured) | tab_1:row12:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k el (h -1 ) — Median | `Q47` · not captured | 0.14 | h -1 | not captured | space_fold (not captured) | tab_1:row1:col1 |
+| PK (driver) | k el (h -1 ) — RSE% | `Q47` · not captured | 38.7 | h -1 | not captured | space_fold (not captured) | tab_1:row1:col2 |
+| PK (driver) | beta_kel_logtWT — Median | `Q47` · not captured | 0.75 | not captured | not captured | llm (not captured) | tab_1:row2:col1 |
+| PK (driver) | V central (L) — Median | `Q63` · not captured | 0.12 | L | not captured | llm (not captured) | tab_1:row3:col1 |
+| PK (driver) | V central (L) — RSE% | `Q63` · not captured | 6.85 | L | not captured | llm (not captured) | tab_1:row3:col2 |
+| PK (driver) | V cortex (L) — Median | `Q61` · not captured | 0.0039 | L | not captured | llm (not captured) | tab_1:row5:col1 |
+| PK (driver) | V cortex (L) — RSE% | `Q61` · not captured | 18.6 | L | not captured | llm (not captured) | tab_1:row5:col2 |
+| PK (driver) | V hippocampus (L) — Median | `Q61` · not captured | 0.00039 | L | not captured | llm (not captured) | tab_1:row6:col1 |
+| PK (driver) | V hippocampus (L) — RSE% | `Q61` · not captured | 14.8 | L | not captured | llm (not captured) | tab_1:row6:col2 |
+| PK (driver) | k 12 (h -1 ) — Median | `Q301` · not captured | 0.00013 | h -1 | not captured | space_fold (not captured) | tab_1:row7:col1 |
+| PK (driver) | k 21 (h -1 ) — Median | `Q302` · not captured | 0.17 | h -1 | not captured | space_fold (not captured) | tab_1:row8:col1 |
+| PK (driver) | k 21 (h -1 ) — RSE% | `Q302` · not captured | 18.5 | h -1 | not captured | space_fold (not captured) | tab_1:row8:col2 |
+| PK (driver) | k 13 (h -1 ) — Median | `Q303` · not captured | 0.000015 | h -1 | not captured | space_fold (not captured) | tab_1:row9:col1 |
+| PK (driver) | k 13 (h -1 ) — RSE% | `Q303` · not captured | 24.9 | h -1 | not captured | space_fold (not captured) | tab_1:row9:col2 |
+| PK (driver) | k 31 (h -1 ) — Median | `Q304` · not captured | 0.15 | h -1 | not captured | space_fold (not captured) | tab_1:row10:col1 |
+| PK (driver) | k 31 (h -1 ) — RSE% | `Q304` · not captured | 31.2 | h -1 | not captured | space_fold (not captured) | tab_1:row10:col2 |
+| PK (driver) | corr_k el _V hippocampus — Median | `Q47` · not captured | 0.92 | not captured | not captured | llm (not captured) | tab_1:row12:col1 |
+| PK (driver) | corr_k el _V hippocampus — RSE% | `Q47` · not captured | 20.8 | not captured | not captured | llm (not captured) | tab_1:row12:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

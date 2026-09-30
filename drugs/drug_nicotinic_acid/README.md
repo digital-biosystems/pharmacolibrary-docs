@@ -32,10 +32,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iwaki_1996_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Iwaki1996_reference.md) | parent + metabolite (no model) | 3 | Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Iwaki_1996_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Iwaki1996_reference.md) | — | parent + metabolite (no model) | 3 | Iwaki M et al., Acute dose-dependent disposition studie…, Drug metabolism and disposi… (1996) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Wu_1989_reference](drugs/drug_nicotinic_acid/NicotinicAcid_Wu1989_reference.md) | — | 1-compartment (no model) | 4 | Wu Y et al., [Determination of aspirin and nicotinic…, Yao xue xue bao = Acta phar… (1989) | — |
 
 ## ADME sites
 

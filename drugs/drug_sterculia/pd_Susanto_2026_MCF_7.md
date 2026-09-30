@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sterculia coccinea Jack leaf extract (measured concentrations) drives MCF-7 cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sterculia coccinea Jack leaf extract (and its F2 nanoliposome formulation) inhibits MCF-7 cell viability in an MTT assay, with IC50 values of 578.10 µg/mL for the nonencapsulated extract and 282.06 µg/mL for the extract-loaded liposomes (doxorubicin HCl: 12.95 µg/mL); the paper does not state a pharmacodynamic mechanism or model beyond these IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Susanto_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Susanto Y; Khaerati K; Sharon N; Patala R; Sangtutu JAM et al. (2026). Journal o
   ·  DOI: [10.4103/JAPTR.JAPTR_345_25](https://doi.org/10.4103/JAPTR.JAPTR_345_25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Doxorubicin HCL — IC50 (µg/mL) | `Q322` · not captured | 12.95 | µg/mL | not captured | llm (not captured) | JAPTR.JAPTR_345_25-t002:row1:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Doxorubicin HCL — IC50 (µg/mL) | `Q322` · not captured | 12.95 | µg/mL | not captured | llm (not captured) | JAPTR.JAPTR_345_25-t002:row1:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023_reference](drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md) | 3-compartment, oral | 8 | Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023_reference](drugs/drug_dorzagliatin/Dorzagliatin_Wang2023_reference.md) | ▶ model + simulator | 3-compartment, oral | 8 | Wang K et al., Population Pharmacokinetic Analysis of…, Clinical pharmacokinetics (2023) | [10.1007/s40262-023-01286-8](https://doi.org/10.1007/s40262-023-01286-8) |
 
 ## Pharmacogenomics (PGx)
 

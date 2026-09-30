@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Daprodustat (concentrations from the PK model of Mahar_2024) drives name (in g/dL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Daprodustat doses (10–30 mg TIW) were related to the change in hemoglobin (g/dL) from baseline at day 29 via a three-parameter Bayesian Emax model (E0, Emax, ED50); the estimated target dose (0 g/dL change) was 10.48 mg TIW. The paper does not report Emax, ED50, or rate parameter values, nor a mechanistic (kin/kout or effect-compartment) description.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bailey_2019`
 - **model family:** `emax`
 - **driver:** `cited_pk`

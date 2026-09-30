@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_reference](drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md) | 1-compartment (no model) | 3 | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1989_reference](drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md) | 1-compartment (no model) | 0 | Vergin H et al., Effect of an aluminium-hydroxide contai…, Arzneimittel-Forschung (1989) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1986_reference](drugs/drug_pirenzepine/Pirenzepine_Vergin1986_reference.md) | — | 1-compartment (no model) | 3 | Vergin H et al., Pharmacokinetics and bioequivalence of…, Arzneimittel-Forschung (1986) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Vergin_1989_reference](drugs/drug_pirenzepine/Pirenzepine_Vergin1989_reference.md) | — | 1-compartment (no model) | 0 | Vergin H et al., Effect of an aluminium-hydroxide contai…, Arzneimittel-Forschung (1989) | — |
 
 ## ADME sites
 

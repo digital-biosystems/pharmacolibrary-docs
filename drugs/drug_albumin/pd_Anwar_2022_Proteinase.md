@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ajwa fruit pulp and seed methanolic extracts (measured concentrations) drive Anti-proteinase activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ajwa fruit pulp and seed methanolic extracts (600 µg/mL) inhibited proteinase activity by 68% and 60%, respectively, compared with diclofenac sodium (71.59% at 200 µg/mL); the paper reports only concentration–response data and does not state a mechanism or PD model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anwar_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Anwar S; Raut R; Alsahli MA; Almatroudi A; Alfheeaid H; Alzahrani FM; et al. et 
   ·  DOI: [10.3390/biology11010078](https://doi.org/10.3390/biology11010078)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ferulic acid — Catalase (1DGH) | `Q358` · not captured | -7.4 | not captured | not captured | llm (not captured) | biology-11-00078-t005:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ferulic acid — Catalase (1DGH) | `Q358` · not captured | -7.4 | not captured | not captured | llm (not captured) | biology-11-00078-t005:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cysteamine (measured concentrations) drives name (in nmol cystine mg-1 protein): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Cysteamine (not liquid paraffin) plasma concentrations inhibit white blood cell cystine content (nmol cystine mg-1 protein) via a fractional inhibitory Emax model linked to a hypothetical effect compartment (ke0) to account for the equilibration delay (counter-clockwise hysteresis, mean lag time 0.44 h, range 0.22–0.92 h). The paper states the model structure but the excerpts do not report the numeric values of EC50, Emax/Imax, BL or ke0; the observed mean maximum decrement in WBC cystine was 0.46 ± 0.23 nmol cystine mg-1 protein at a mean time to maximum effect of 1.8 ± 0.8 h, with mean Cmax 36.3 ± 11.7 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Belldina_2003`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

@@ -29,10 +29,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026](drugs/drug_lumasiran/pd_Fontana_2026_TTR.md) | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025](drugs/drug_lumasiran/pd_Zhang_2025_Uox_Cr.md) | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026_TTR](drugs/drug_lumasiran/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.273). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025_Uox_Cr](drugs/drug_lumasiran/pd_Zhang_2025_Uox_Cr.md) | spot urine oxalate-to-creatinine ratio ← nedosiran · indirect response — drug inhibits the production of spot urine oxalate-to-creatinine ratio | — | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
 
 ## ADME sites
 

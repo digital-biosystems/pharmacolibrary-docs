@@ -28,13 +28,13 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010](drugs/drug_taurolidine/pd_Chromik_2010_apoptotic_cells.md) | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010](drugs/drug_taurolidine/pd_Chromik_2010_necrotic_cells.md) | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010](drugs/drug_taurolidine/pd_Chromik_2010_viable_cells.md) | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Eschenburg_2014](drugs/drug_taurolidine/pd_Eschenburg_2014_unknown.md) | Eschenburg G et al., Taurolidine cooperates with antineoplas…, Genes & cancer (2014) | [10.18632/genesandcancer.36](https://doi.org/10.18632/genesandcancer.36) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lv_2023](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate_of_influenza_virus_H5N1.md) | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010_apoptotic_cells](drugs/drug_taurolidine/pd_Chromik_2010_apoptotic_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010_necrotic_cells](drugs/drug_taurolidine/pd_Chromik_2010_necrotic_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Chromik_2010_viable_cells](drugs/drug_taurolidine/pd_Chromik_2010_viable_cells.md) | name ← Taurolidine · inhibition effect | — | Chromik AM et al., Comparative analysis of cell death indu…, Journal of experimental & c… (2010) | [10.1186/1756-9966-29-21](https://doi.org/10.1186/1756-9966-29-21) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Eschenburg_2014_unknown](drugs/drug_taurolidine/pd_Eschenburg_2014_unknown.md) | Caspase-9 activity ← Taurolidine · inhibition effect | — | Eschenburg G et al., Taurolidine cooperates with antineoplas…, Genes & cancer (2014) | [10.18632/genesandcancer.36](https://doi.org/10.18632/genesandcancer.36) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lv_2023_Inhibition_rate_of_influenza_virus_H5N1](drugs/drug_taurolidine/pd_Lv_2023_Inhibition_rate_of_influenza_virus_H5N1.md) | name ← Taurolidine · direct Emax (saturable) effect | — | Lv C et al., Taurolidine improved protection against…, Virologica Sinica (2023) | [10.1016/j.virs.2022.11.010](https://doi.org/10.1016/j.virs.2022.11.010) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

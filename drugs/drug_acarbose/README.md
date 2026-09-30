@@ -28,10 +28,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Safamansouri_2014](drugs/drug_acarbose/pd_Safamansouri_2014_alpha_amylase_inhibitory_activity.md) | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Mauldina_2017](drugs/drug_acarbose/pd_Mauldina_2017_unknown.md) | Mauldina MG et al., α-Glucosidase Inhibitory Activity from…, Pharmacognosy magazine (2017) | [10.4103/pm.pm_25_17](https://doi.org/10.4103/pm.pm_25_17) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Safamansouri_2014_alpha_amylase_inhibitory_activity](drugs/drug_acarbose/pd_Safamansouri_2014_alpha_amylase_inhibitory_activity.md) | name ← herbal extracts · inhibition effect | — | Safamansouri H et al., α-Amylase inhibitory activity of some t…, Journal of diabetes and met… (2014) | [10.1186/s40200-014-0114-1](https://doi.org/10.1186/s40200-014-0114-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Mauldina_2017_unknown](drugs/drug_acarbose/pd_Mauldina_2017_unknown.md) | α-glucosidase inhibitory activity ← unknown · inhibition effect | — | Mauldina MG et al., α-Glucosidase Inhibitory Activity from…, Pharmacognosy magazine (2017) | [10.4103/pm.pm_25_17](https://doi.org/10.4103/pm.pm_25_17) |
 
 ## ADME sites
 

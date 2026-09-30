@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Baricitinib (measured concentrations) drives vIGA-AD 0 or 1 at Week 16 (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Baricitinib plasma exposure (Cav,ss, ng/mL) was related to the categorical response vIGA-AD 0 or 1 at Week 16 in pediatric atopic dermatitis patients via exposure-quartile analysis, showing an increasing response rate with higher exposure; the paper does not report a parametric PD mechanism or potency/rate values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Decker_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,31 +31,31 @@ Decker RL; Ernest CS; Radtke DB; Prakash A; Zhang X et al. (2026). Clinical phar
   ·  DOI: [10.1007/s40262-025-01563-8](https://doi.org/10.1007/s40262-025-01563-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| D1 (h) — Population mean(%SEE) | `Q310` · not captured | 0.263 | h | not captured | exact (not captured) | Tab1:row1:col1 |
-| D1 (h) — Shrinkage(SD) | `Q310` · not captured | 27.2 | h | not captured | exact (not captured) | Tab1:row1:col2 |
-| D1 (h) — BSVa (%SEE) | `Q310` · not captured | 164 | h | not captured | exact (not captured) | Tab1:row1:col3 |
-| CLnr/F(L/h)b — Population mean(%SEE) | `Q79` · not captured | 2.76 | %SEE | not captured | llm (not captured) | Tab1:row3:col1 |
-| CLnr/F(L/h)b — Shrinkage(SD) | `Q318` · not captured | 5.84 | unit | not captured | llm (not captured) | Tab1:row3:col2 |
-| CLnr/F(L/h)b — BSVa (%SEE) | `Q318` · not captured | 58.4 | %SEE | not captured | llm (not captured) | Tab1:row3:col3 |
-| CLr/F (L/h)b — Population mean(%SEE) | `Q27` · not captured | 7.9 | %SEE | not captured | llm (not captured) | Tab1:row4:col1 |
-| CLr/F (L/h)b — BSVa (%SEE) | `Q358` · not captured | 62.3 | %SEE | not captured | llm (not captured) | Tab1:row4:col3 |
-| V1/F (L)c — Population mean(%SEE) | `Q290` · not captured | 119 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row5:col1 |
-| V1/F (L)c — Shrinkage(SD) | `Q318` · not captured | 57.3 | unit | not captured | llm_corrected (not captured) | Tab1:row5:col2 |
-| V1/F (L)c — BSVa (%SEE) | `Q290` · not captured | 12.7 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
-| Q (L/h)d — Population mean(%SEE) | `Q364` · not captured | 2.4 | %SEE | not captured | space_fold (not captured) | Tab1:row6:col1 |
-| Q (L/h)d — Shrinkage(SD) | `Q364` · not captured | 88.5 | unit | not captured | space_fold (not captured) | Tab1:row6:col2 |
-| Q (L/h)d — BSVa (%SEE) | `Q364` · not captured | 15.1 | %SEE | not captured | space_fold (not captured) | Tab1:row6:col3 |
-| V2/F (L)e — Population mean(%SEE) | `Q82` · not captured | 46.8 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row7:col1 |
-| V2/F (L)e — Shrinkage(SD) | `Q318` · not captured | 79.5 | unit | not captured | llm_corrected (not captured) | Tab1:row7:col2 |
-| V2/F (L)e — BSVa (%SEE) | `Q82` · not captured | 117 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row7:col3 |
-| LAG (h) — Population mean(%SEE) | `Q83` · not captured | 0.144 | h | not captured | llm (not captured) | Tab1:row8:col1 |
-| Allometric scaling CLb — Population mean(%SEE) | `Q23` · not captured | 0.75 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row9:col1 |
-| Allometric scaling Vc,e — Population mean(%SEE) | `Q63` · not captured | 1 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row10:col1 |
-| Covariance for CLnr/F and CLr/Fg — Population mean(%SEE) | `Q314` · not captured | 0.303 | %SEE | not captured | llm (not captured) | Tab1:row12:col1 |
-| Covariance for CLr/F and V1/Fg — Population mean(%SEE) | `Q314` · not captured | -0.0265 | %SEE | not captured | llm (not captured) | Tab1:row13:col1 |
-| Proportional errorh — Population mean(%SEE) | `Q316` · not captured | 0.427 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row14:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | D1 (h) — Population mean(%SEE) | `Q310` · not captured | 0.263 | h | not captured | exact (not captured) | Tab1:row1:col1 |
+| PK (driver) | D1 (h) — Shrinkage(SD) | `Q310` · not captured | 27.2 | h | not captured | exact (not captured) | Tab1:row1:col2 |
+| PK (driver) | D1 (h) — BSVa (%SEE) | `Q310` · not captured | 164 | h | not captured | exact (not captured) | Tab1:row1:col3 |
+| PK (driver) | CLnr/F(L/h)b — Population mean(%SEE) | `Q79` · not captured | 2.76 | %SEE | not captured | llm (not captured) | Tab1:row3:col1 |
+| variability | CLnr/F(L/h)b — Shrinkage(SD) | `Q318` · not captured | 5.84 | unit | not captured | llm (not captured) | Tab1:row3:col2 |
+| variability | CLnr/F(L/h)b — BSVa (%SEE) | `Q318` · not captured | 58.4 | %SEE | not captured | llm (not captured) | Tab1:row3:col3 |
+| PK (driver) | CLr/F (L/h)b — Population mean(%SEE) | `Q27` · not captured | 7.9 | %SEE | not captured | llm (not captured) | Tab1:row4:col1 |
+| PK (driver) | CLr/F (L/h)b — BSVa (%SEE) | `Q358` · not captured | 62.3 | %SEE | not captured | llm (not captured) | Tab1:row4:col3 |
+| PK (driver) | V1/F (L)c — Population mean(%SEE) | `Q290` · not captured | 119 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row5:col1 |
+| variability | V1/F (L)c — Shrinkage(SD) | `Q318` · not captured | 57.3 | unit | not captured | llm_corrected (not captured) | Tab1:row5:col2 |
+| PK (driver) | V1/F (L)c — BSVa (%SEE) | `Q290` · not captured | 12.7 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
+| model term | Q (L/h)d — Population mean(%SEE) | `Q364` · not captured | 2.4 | %SEE | not captured | space_fold (not captured) | Tab1:row6:col1 |
+| model term | Q (L/h)d — Shrinkage(SD) | `Q364` · not captured | 88.5 | unit | not captured | space_fold (not captured) | Tab1:row6:col2 |
+| model term | Q (L/h)d — BSVa (%SEE) | `Q364` · not captured | 15.1 | %SEE | not captured | space_fold (not captured) | Tab1:row6:col3 |
+| PK (driver) | V2/F (L)e — Population mean(%SEE) | `Q82` · not captured | 46.8 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row7:col1 |
+| variability | V2/F (L)e — Shrinkage(SD) | `Q318` · not captured | 79.5 | unit | not captured | llm_corrected (not captured) | Tab1:row7:col2 |
+| PK (driver) | V2/F (L)e — BSVa (%SEE) | `Q82` · not captured | 117 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row7:col3 |
+| PK (driver) | LAG (h) — Population mean(%SEE) | `Q83` · not captured | 0.144 | h | not captured | llm (not captured) | Tab1:row8:col1 |
+| PK (driver) | Allometric scaling CLb — Population mean(%SEE) | `Q23` · not captured | 0.75 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row9:col1 |
+| PK (driver) | Allometric scaling Vc,e — Population mean(%SEE) | `Q63` · not captured | 1 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row10:col1 |
+| variability | Covariance for CLnr/F and CLr/Fg — Population mean(%SEE) | `Q314` · not captured | 0.303 | %SEE | not captured | llm (not captured) | Tab1:row12:col1 |
+| variability | Covariance for CLr/F and V1/Fg — Population mean(%SEE) | `Q314` · not captured | -0.0265 | %SEE | not captured | llm (not captured) | Tab1:row13:col1 |
+| variability | Proportional errorh — Population mean(%SEE) | `Q316` · not captured | 0.427 | %SEE | not captured | llm_confirmed (not captured) | Tab1:row14:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

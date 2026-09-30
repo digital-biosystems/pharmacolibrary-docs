@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Uvariopsine (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Uvariopsine (0.1–1 mM) cosuperfused with 1 nM angiotensin II inhibited Ang-II-induced endothelial P-selectin upregulation and leukocyte–endothelial interactions in the rat mesentery in a concentration-dependent manner (1 mM complete inhibition; 0.1 mM reduced adhesion by 75%), an effect attributed to inhibition of ROS generation (IC50 8.0 µM in the hypoxanthine–xanthine oxidase system). The paper does not state a formal PD model (no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values for the P-selectin response).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Estellés_2003`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

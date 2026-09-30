@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polymyxin B (measured concentrations) drives name (in CFU/thigh) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state the PD mechanism in the available excerpts. Polymyxin B concentrations (mg/L) are linked to Acinetobacter baumannii bacterial count (CFU/thigh) with an inhibitory, proportional effect; only Bmax = 8.00 (maximum bacterial count in tissue) and an additive residual error σ = 1.63 on the log10 scale are reported, with no potency (IC50/EC50) or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chauzy_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Chauzy A; Akrong G; Aranzana-Climent V; Moreau J; Prouvensier L; Mirfendereski H
   ·  DOI: [10.3389/fphar.2022.842921](https://doi.org/10.3389/fphar.2022.842921)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Bmax: Maximum bacterial count reached in the tissue — Estimate (%RSE) | `Q332` · not captured | 8.00 | not captured | not captured | llm_confirmed (not captured) | T2:row2:col2 |
-| σ: Additive residual error on the log10 scale for total bacterial count — Estimate (%RSE) | `Q317` · not captured | 1.63 | not captured | not captured | llm_confirmed (not captured) | T2:row6:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Bmax: Maximum bacterial count reached in the tissue — Estimate (%RSE) | `Q332` · not captured | 8.00 | not captured | not captured | llm_confirmed (not captured) | T2:row2:col2 |
+| variability | σ: Additive residual error on the log10 scale for total bacterial count — Estimate (%RSE) | `Q317` · not captured | 1.63 | not captured | not captured | llm_confirmed (not captured) | T2:row6:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

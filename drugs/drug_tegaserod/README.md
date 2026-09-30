@@ -20,7 +20,7 @@ Despite the relative complications involved in its history of regulatory approva
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 10:09 | 4:53 | 0/0/0 | 1/0/0 | 0/0/0 | 107,808/4,650 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
+| 2026-09-29 22:33 | 2:20 | 0/0/0 | 1/0/0 | 0/0/0 | 21,300/2,079 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 0/6 | 6/0 | 0 |
 
 ## popPK records
 
@@ -28,13 +28,13 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_Apoptosis.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_IC50.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_Survival.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_Tumor_volume.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Liu_2020](drugs/drug_tegaserod/pd_Liu_2020_p_S6.md) | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Liu_2020_Apoptosis](drugs/drug_tegaserod/pd_Liu_2020_Apoptosis.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Liu_2020_IC50](drugs/drug_tegaserod/pd_Liu_2020_IC50.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Liu_2020_Survival](drugs/drug_tegaserod/pd_Liu_2020_Survival.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Liu_2020_Tumor_volume](drugs/drug_tegaserod/pd_Liu_2020_Tumor_volume.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Liu_2020_p_S6](drugs/drug_tegaserod/pd_Liu_2020_p_S6.md) | name ← Tegaserod · inhibition effect | — | Liu W et al., Repurposing the serotonin agonist Tegas…, Journal of experimental & c… (2020) | [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7) |
 
 ## ADME sites
 
@@ -48,6 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` inhibitor, `CYP2C8` inhibitor, `CYP2D6` inhibitor/substrate, `CYP2E1` inhibitor | DrugBank actor |
 | metabolism | stomach | <sub>“…[F4223, A38972]. The substance is firstly hydrolyzed in the stomach [F4223, A38972]. It th…”</sub> | prose |
@@ -67,7 +68,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 48 matched, 48 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -87,7 +88,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Vickers_2001.pdf` | Vickers AE et al., In vitro metabolism of tegaserod in hum…, Drug metabolism and disposi… (2001) | pgx | 7 | not captured | [11560869](https://www.ncbi.nlm.nih.gov/pubmed/11560869) | metadata signals extractable PGX data (CYP2D6, PK/PD-context) |
 | `Zhou_2001.pdf` | Zhou H et al., Tegaserod coadministration does not alt…, Journal of clinical pharmac… (2001) | pgx | 7 | [10.1177/00912700122010979](https://doi.org/10.1177/00912700122010979) | [11549104](https://www.ncbi.nlm.nih.gov/pubmed/11549104) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-18T10:07:13.513328+00:00</sub>
+<sub>queue written 2026-09-29T22:32:23.116553+00:00</sub>
 
 ## Screened and excluded
 

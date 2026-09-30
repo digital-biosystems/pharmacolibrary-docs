@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2024](drugs/drug_sitagliptin/pd_Zhou_2024_DPP_4.md) | Zhou C et al., Safety, tolerability, pharmacokinetics…, Frontiers in endocrinology (2024) | [10.3389/fendo.2024.1359407](https://doi.org/10.3389/fendo.2024.1359407) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2024_DPP_4](drugs/drug_sitagliptin/pd_Zhou_2024_DPP_4.md) | DPP-4 inhibition ← cetagliptin · direct sigmoid Emax (Hill) effect | — | Zhou C et al., Safety, tolerability, pharmacokinetics…, Frontiers in endocrinology (2024) | [10.3389/fendo.2024.1359407](https://doi.org/10.3389/fendo.2024.1359407) |
 
 ## Pharmacogenomics (PGx)
 
@@ -54,6 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate/transport | DrugBank actor |
+| absorption | testis | `ABCB1` substrate/transport | DrugBank actor |
 | metabolism | kidney | <sub>“…ostly not metabolised, with 79% of the dose excreted in the urine as the unchanged parent…”</sub> | prose |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

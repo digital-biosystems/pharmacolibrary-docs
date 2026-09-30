@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abboud_2009_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md) | 1-compartment (no model) | 2 | Abboud I et al., Pharmacokinetics of epinephrine in pati…, Critical care (London, Engl… (2009) | [10.1186/cc7972](https://doi.org/10.1186/cc7972) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abboud_2009_reference](drugs/drug_drotrecogin_alfa/DrotrecoginAlfa_Abboud2009_reference.md) | — | 1-compartment (no model) | 2 | Abboud I et al., Pharmacokinetics of epinephrine in pati…, Critical care (London, Engl… (2009) | [10.1186/cc7972](https://doi.org/10.1186/cc7972) |
 
 ## ADME sites
 

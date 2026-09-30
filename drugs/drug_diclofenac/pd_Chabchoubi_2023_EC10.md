@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diclofenac, ibuprofen, ketoprofen, paracetamol (measured concentrations) drive name (in mg/L) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In zebrafish (Danio rerio) embryo exposure studies, diclofenac (with ibuprofen, ketoprofen and paracetamol as comparators) concentrations in mg/L were related to malformation endpoints (e.g. scoliosis, lordosis) via concentration–effect analysis yielding EC10 values (concentration causing a 10% increase in effect incidence vs controls): diclofenac EC10 was 0.86 mg/L for scoliosis and 2.8 mg/L for lordosis. The paper does not state a pharmacodynamic mechanism (no Imax/IC50/Emax/kin/kout/ke0 parameters); EC10 values were used only to rank toxicity (ketoprofen &gt; ibuprofen &gt; paracetamol &gt; diclofenac).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chabchoubi_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CP-MgONPs (magnesium oxide nanoparticles) reduce mitochondrial membrane potential in Hep2 cells, measured by rhodamine 123 fluorescence after 24 h exposure at the Hep2 IC50 concentration (28.4 μg·mL−1 for 24 h; 15.3 μg·mL−1 for 48 h); the paper attributes the effect to oxidative stress/ROS-mediated loss of membrane potential but does not report a formal PD model or parameters (no Imax, IC50 for this endpoint, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

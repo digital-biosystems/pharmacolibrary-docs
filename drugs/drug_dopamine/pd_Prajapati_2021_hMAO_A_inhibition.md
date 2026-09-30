@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Kurarinone (measured concentrations) drives name (in % inhibition): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Kurarinone (concentrations 57–456 μM) inhibits hMAO-A in a dose-dependent chemiluminescent assay, acting by competitive inhibition of the enzyme, with an IC50 of 186 ± 6.17 μM and a Ki of 65.1 ± 3.53 μM; no Emax, kin/kout, or ke0 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Prajapati_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,15 +30,15 @@ Prajapati R; Seong SH; Paudel P; Park SE; Jung HA; Choi JS et al. (2021). ACS om
   ·  DOI: [10.1021/acsomega.1c04109](https://doi.org/10.1021/acsomega.1c04109)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50c (IC50)d — hD1 | `Q322` · not captured | 42.1 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
-| EC50c (IC50)d — hD2L | `Q322` · not captured | 22.4 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
-| EC50c (IC50)d — hD4 | `Q322` · not captured | 71.3 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col4 |
-| reference EC50g (IC50)h — hD1 | `Q322` · not captured | 44 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col2 |
-| reference EC50g (IC50)h — hD2L | `Q322` · not captured | 31 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col3 |
-| reference EC50g (IC50)h — hD4 | `Q322` · not captured | 13 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col4 |
-| reference EC50g (IC50)h — h5-HT1A | `Q322` · not captured | 2.9 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50c (IC50)d — hD1 | `Q322` · not captured | 42.1 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
+| PD (effect) | EC50c (IC50)d — hD2L | `Q322` · not captured | 22.4 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
+| PD (effect) | EC50c (IC50)d — hD4 | `Q322` · not captured | 71.3 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col4 |
+| PD (effect) | reference EC50g (IC50)h — hD1 | `Q322` · not captured | 44 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col2 |
+| PD (effect) | reference EC50g (IC50)h — hD2L | `Q322` · not captured | 31 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col3 |
+| PD (effect) | reference EC50g (IC50)h — hD4 | `Q322` · not captured | 13 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col4 |
+| PD (effect) | reference EC50g (IC50)h — h5-HT1A | `Q322` · not captured | 2.9 | μM | not captured | llm_confirmed (not captured) | tbl2:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin drives name (in copies/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (Sil) concentrations (µg mL−1) inhibit viral load (copies/mL) of SARS-CoV-2 in Vero-E6 cells, with IC50 of 31 µg mL−1 in the adsorption assay and 12 µg mL−1 in the virucidal/replication assay; the paper does not state a formal PD model, but attributes the antiviral effect to inhibition of viral binding to the ACE2 receptor and inhibition of replication (e.g. blocking late mRNA synthesis and inducing JAK-STAT/interferon signaling).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Loutfy_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril, benazepril (measured concentrations) drive Lactate Dehydrogenase (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a 6-OHDA-induced PD cell model, cilazapril and benazepril (µM concentrations) decreased LDH release (a marker of membrane damage), an inhibitory effect attributed to suppression of angiotensin II–driven ROS/oxidative stress; the paper reports no PD model parameters (no Imax, IC50, Emax, kin/kout, ke0) and no quantitative concentration–response fit, only significant LDH reductions at low doses (e.g., benazepril 0.16 µM noted for viability).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Altunlu_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

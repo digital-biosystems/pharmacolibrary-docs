@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from this paper's PK model) drives diastolic blood pressure (in mmHg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for diastolic blood pressure; the excerpts only cover exposure-response analyses of HbA1c, body weight, and adverse events with semaglutide, with no DBP mechanism or potency/rate parameters stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Overgaard_2021_2`
 - **model family:** `unknown`
 - **driver:** `pk_record`

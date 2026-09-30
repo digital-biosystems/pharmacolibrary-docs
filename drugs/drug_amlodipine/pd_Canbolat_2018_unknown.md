@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil drives relaxation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cumulative verapamil (10^-9–3×10^-4 M) directly relaxed calf cardiac vein rings precontracted with 5-HT (10^-6 M), with relaxation expressed as a percentage of maximal 5-HT contraction and fitted by an Emax-type concentration–response model; pIC50 was 5.55 ± 0.14 at 37 °C, higher at 28 °C (5.98 ± 0.04), and reduced by L-NAME (10^-4 M) to 4.55 ± 0.40, with maximal relaxation 100% at both temperatures and 83% ± 4.0% with L-NAME. The paper does not state a kinetic mechanism (no kin, kout, or ke0 values), and the record's drug field (amlodipine) is not supported by the excerpts, which describe verapamil (and benidipine, pIC50 4.53 ± 0.41 at 37 °C and 5.37 ± 0.49 at 28 °C, Emax 100%/100%, 72% ± 4
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Canbolat_2018`
 - **model family:** `emax`
 - **driver:** `not_resolved`

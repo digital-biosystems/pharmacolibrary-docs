@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amlodipine, valsartan drive Diastolic blood pressure (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Amlodipine plasma concentrations act on diastolic blood pressure (mmHg) via an inhibitory Emax model with an effect-compartment delay (DBP Keq 0.316 /h; amlodipine-specific Keq not given numerically), with Imax fixed at 0.164 (borrowed from valsartan monotherapy) and DBP IC50 4.79 ng/ml for amlodipine (2.97 ng/ml overall); in combination with valsartan a proportional interaction term was added (DBP value not stated in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Heo_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,24 +31,24 @@ Heo YA; Holford N; Kim Y; Son M; Park K et al. (2016). British journal of clinic
   ·  DOI: [10.1111/bcp.13082](https://doi.org/10.1111/bcp.13082)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| I max — Amlodipine | `Q323` · not captured | 0.164 | not captured | not captured | space_fold (not captured) | tab_0:row6:col3 |
-| I max | `Q323` · not captured | 0.164 | not captured | not captured | space_fold (not captured) | tab_0:row6:col4 |
-| SBP IC 50 (ng ml | `Q322` · not captured | 8.27 | ng ml | not captured | llm (not captured) | tab_0:row7:col2 |
-| SBP IC 50 (ng ml — Amlodipine | `Q322` · not captured | 10.80 | ng ml | not captured | llm (not captured) | tab_0:row7:col3 |
-| SBP IC 50 (ng ml | `Q322` · not captured | 0 | ng ml | not captured | llm (not captured) | tab_0:row7:col4 |
-| DBP IC 50 (ng ml | `Q322` · not captured | 2.97 | ng ml | not captured | llm (not captured) | tab_0:row8:col2 |
-| DBP IC 50 (ng ml — Amlodipine | `Q322` · not captured | 4.79 | ng ml | not captured | llm (not captured) | tab_0:row8:col3 |
-| DBP IC 50 (ng ml | `Q322` · not captured | 0 | ng ml | not captured | llm (not captured) | tab_0:row8:col4 |
-| DBP Keq (/h) | `Q358` · not captured | 0.316 | /h | not captured | llm (not captured) | tab_0:row10:col4 |
-| DBP Keq (/h) | `Q358` · not captured | 0.1 | /h | not captured | llm (not captured) | tab_0:row10:col5 |
-| σ SBP additive (mmHg) | `Q315` · not captured | 2.01 | mmHg | not captured | llm (not captured) | tab_0:row12:col1 |
-| σ SBP additive (mmHg) | `Q315` · not captured | 2.92 | mmHg | not captured | llm (not captured) | tab_0:row12:col2 |
-| σ SBP additive (mmHg) — Amlodipine | `Q315` · not captured | 0.91 | mmHg | not captured | llm (not captured) | tab_0:row12:col3 |
-| σ DBP additive (mmHg) | `Q315` · not captured | 1.36 | mmHg | not captured | llm (not captured) | tab_0:row13:col1 |
-| σ DBP additive (mmHg) | `Q315` · not captured | 2.74 | mmHg | not captured | llm (not captured) | tab_0:row13:col2 |
-| σ DBP additive (mmHg) — Amlodipine | `Q315` · not captured | 0.96 | mmHg | not captured | llm (not captured) | tab_0:row13:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | I max — Amlodipine | `Q323` · not captured | 0.164 | not captured | not captured | space_fold (not captured) | tab_0:row6:col3 |
+| PD (effect) | I max | `Q323` · not captured | 0.164 | not captured | not captured | space_fold (not captured) | tab_0:row6:col4 |
+| PD (effect) | SBP IC 50 (ng ml | `Q322` · not captured | 8.27 | ng ml | not captured | llm (not captured) | tab_0:row7:col2 |
+| PD (effect) | SBP IC 50 (ng ml — Amlodipine | `Q322` · not captured | 10.80 | ng ml | not captured | llm (not captured) | tab_0:row7:col3 |
+| PD (effect) | SBP IC 50 (ng ml | `Q322` · not captured | 0 | ng ml | not captured | llm (not captured) | tab_0:row7:col4 |
+| PD (effect) | DBP IC 50 (ng ml | `Q322` · not captured | 2.97 | ng ml | not captured | llm (not captured) | tab_0:row8:col2 |
+| PD (effect) | DBP IC 50 (ng ml — Amlodipine | `Q322` · not captured | 4.79 | ng ml | not captured | llm (not captured) | tab_0:row8:col3 |
+| PD (effect) | DBP IC 50 (ng ml | `Q322` · not captured | 0 | ng ml | not captured | llm (not captured) | tab_0:row8:col4 |
+| PK (driver) | DBP Keq (/h) | `Q358` · not captured | 0.316 | /h | not captured | llm (not captured) | tab_0:row10:col4 |
+| PK (driver) | DBP Keq (/h) | `Q358` · not captured | 0.1 | /h | not captured | llm (not captured) | tab_0:row10:col5 |
+| variability | σ SBP additive (mmHg) | `Q315` · not captured | 2.01 | mmHg | not captured | llm (not captured) | tab_0:row12:col1 |
+| variability | σ SBP additive (mmHg) | `Q315` · not captured | 2.92 | mmHg | not captured | llm (not captured) | tab_0:row12:col2 |
+| variability | σ SBP additive (mmHg) — Amlodipine | `Q315` · not captured | 0.91 | mmHg | not captured | llm (not captured) | tab_0:row12:col3 |
+| variability | σ DBP additive (mmHg) | `Q315` · not captured | 1.36 | mmHg | not captured | llm (not captured) | tab_0:row13:col1 |
+| variability | σ DBP additive (mmHg) | `Q315` · not captured | 2.74 | mmHg | not captured | llm (not captured) | tab_0:row13:col2 |
+| variability | σ DBP additive (mmHg) — Amlodipine | `Q315` · not captured | 0.96 | mmHg | not captured | llm (not captured) | tab_0:row13:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

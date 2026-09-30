@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Backhousia citriodora essential oil (measured concentrations) drives Biofilm eradication (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Backhousia citriodora essential oil (BCEO) concentrations (µg/mL) were tested against biofilm eradication (%) in four bacterial strains, with an inhibitory effect, but the excerpts do not state the PD model, mechanism, or any potency values (e.g., IC50/Emax) for biofilm eradication; the paper only speculates that citral isomers (geranial 52.13%, neral 37.65%) drive antibiofilm activity, with sensitivity ordered S. epidermidis highest.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lim_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

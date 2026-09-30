@@ -20,9 +20,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2021](drugs/drug_picotamide/pd_Li_2021_unknown.md) | Li (2021) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Li_2021_unknown](drugs/drug_picotamide/pd_Li_2021_unknown.md) | smooth muscle contraction ← picotamide · direct Emax (saturable) effect | — | Li (2021) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

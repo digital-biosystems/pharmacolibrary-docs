@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** E7080 drives name (in mmHg): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> E7080 plasma concentration stimulates the production (kin) of systolic blood pressure in an indirect response model (dBP_S/dt = kin·(1+E_E7080)/(1+E_AH) − kout·BP_S), with E_E7080 as a linear slope function of concentration (E_max models not supported); kout was fixed to kin/BPS, baseline BPS was 126 mmHg, and no potency values (IC50/EC50/ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Keizer_2010`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Keizer RJ; Gupta A; Mac Gillavry MR; Jansen M; Wanders J; Beijnen JH; Schellens 
   ·  DOI: [10.1007/s10928-010-9164-2](https://doi.org/10.1007/s10928-010-9164-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| BSV: BPS — Shrinkage (%) | `Q318` · not captured | 4.9 | not captured | not captured | llm_corrected (not captured) | Tab2:row19:col4 |
-| BSV: BPD — Shrinkage (%) | `Q318` · not captured | 6.2 | not captured | not captured | llm_corrected (not captured) | Tab2:row20:col4 |
-| BSV: E E7080,S — Shrinkage (%) | `Q318` · not captured | 45 | not captured | not captured | llm_corrected (not captured) | Tab2:row22:col4 |
-| BSV: E E7080,D — Shrinkage (%) | `Q318` · not captured | 51 | not captured | not captured | llm_corrected (not captured) | Tab2:row23:col4 |
-| BSVRE — Shrinkage (%) | `Q318` · not captured | 32 | not captured | not captured | llm (not captured) | Tab2:row25:col4 |
-| RE — Shrinkage (%) | `Q318` · not captured | 28 | not captured | not captured | llm (not captured) | Tab2:row27:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | BSV: BPS — Shrinkage (%) | `Q318` · not captured | 4.9 | not captured | not captured | llm_corrected (not captured) | Tab2:row19:col4 |
+| variability | BSV: BPD — Shrinkage (%) | `Q318` · not captured | 6.2 | not captured | not captured | llm_corrected (not captured) | Tab2:row20:col4 |
+| variability | BSV: E E7080,S — Shrinkage (%) | `Q318` · not captured | 45 | not captured | not captured | llm_corrected (not captured) | Tab2:row22:col4 |
+| variability | BSV: E E7080,D — Shrinkage (%) | `Q318` · not captured | 51 | not captured | not captured | llm_corrected (not captured) | Tab2:row23:col4 |
+| variability | BSVRE — Shrinkage (%) | `Q318` · not captured | 32 | not captured | not captured | llm (not captured) | Tab2:row25:col4 |
+| variability | RE — Shrinkage (%) | `Q318` · not captured | 28 | not captured | not captured | llm (not captured) | Tab2:row27:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

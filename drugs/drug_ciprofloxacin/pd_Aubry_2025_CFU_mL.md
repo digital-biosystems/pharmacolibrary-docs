@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ceftazidime/avibactam, colistin (measured concentrations) drive total bacterial population (in count): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations of ceftazidime/avibactam and colistin (mg/L) act on the total bacterial population (CFU/mL) of a KPC-3 K. pneumoniae isolate in time-kill experiments, described by a sigmoid Emax model in which the drugs inhibit bacterial killing/growth (Emax in h−1); the paper does not state an effect-compartment or turnover mechanism. The inoculum effect was modeled by allowing Emax and EC50 to vary with inoculum size (coefficient γIE), with no interaction between the IEs of the two drugs. The only potency value given is the colistin concentration achieving 50% of Emax_CST of 0.26 mg/L at the standard 5·10^5 CFU/mL starting inoculum.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aubry_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Aubry R; Buyck JM; Chauzy A; Prouvensier L; Decousser J-W; Nordmann P; Wicha SG;
   ·  DOI: [10.1128/aac.01797-24](https://doi.org/10.1128/aac.01797-24)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CST concentration required to achieve 50% of Emax_CST (mg/L) at 5·105 CFU/mL — Estimate (RSE %) | `Q321` · not captured | 0.26 | RSE % | not captured | llm (not captured) | T1:row5:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CST concentration required to achieve 50% of Emax_CST (mg/L) at 5·105 CFU/mL — Estimate (RSE %) | `Q321` · not captured | 0.26 | RSE % | not captured | llm (not captured) | T1:row5:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

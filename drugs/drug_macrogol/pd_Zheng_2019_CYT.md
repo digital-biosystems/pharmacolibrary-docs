@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives cytotoxicity (in cell survival): indirect response — drug inhibits the production of cytotoxicity.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (PTX) delivered by PLGA-PEG micelles at 20 and 40 ng/mL acts on cytotoxicity (cell survival/cell proliferation inhibition) in MCF-7 cells; per the record this was described as an indirect response model with stimulation, though the excerpts indicate cytotoxicity resulted downstream of tubulin polymerization stimulation and G2/M arrest, with a hypothetical effect compartment (Ce) characterizing distribution delay. No potency or rate values for the cytotoxicity response (e.g., Imax, IC50, kin, kout, ke0) are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

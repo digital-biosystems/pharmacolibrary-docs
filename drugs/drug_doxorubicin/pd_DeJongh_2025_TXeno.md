@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZD7648 and olaparib (measured concentrations) drive Tumor volume (in cm3): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Tumor volume (TXeno, cm3) in ATM-knockout xenografts is described by a semi-mechanistic cell-state model (proliferating, quiescent, two dying compartments) in which olaparib drives a linear transition of proliferating cells into a quiescent state and AZD7648 inhibits the quiescent-to-proliferating transition via a saturable sigmoidal function with Emax fixed to −1 (complete inhibition) and a fitted EC50; both drug effects act through effect (biophase) concentrations Ce,Olap and Ce,AZ with a fitted transit-compartment rate constant Ktr, though the paper does not state the numeric EC50 or Ktr values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `DeJongh_2025`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
@@ -21,42 +31,42 @@ DeJongh J; Cadogan E; Davies M; Ramos-Montoya A; Smith A; van Steeg T; Richards 
   ·  DOI: [10.1007/s10928-025-09962-x](https://doi.org/10.1007/s10928-025-09962-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Abs. rate constant — Value | `Q49` · not captured | 2.77 | not captured | not captured | llm (not captured) | Tab1:row2:col3 |
-| Abs. rate constant — SE | `Q49` · not captured | 0.217 | not captured | not captured | llm (not captured) | Tab1:row2:col4 |
-| Abs. rate constant — 95% Conf. interval | `Q49` · not captured | 2.35 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
-| Abs. rate constant | `Q49` · not captured | 3.20 | not captured | not captured | llm (not captured) | Tab1:row2:col6 |
-| Abs. rate constant — RSE (%) | `Q49` · not captured | 7.83 | not captured | not captured | llm (not captured) | Tab1:row2:col7 |
-| Clearance — Value | `Q22` · not captured | 0.251 | not captured | not captured | exact (not captured) | Tab1:row3:col3 |
-| Clearance — SE | `Q22` · not captured | 0.0193 | not captured | not captured | exact (not captured) | Tab1:row3:col4 |
-| Clearance — 95% Conf. interval | `Q22` · not captured | 0.213 | not captured | not captured | exact (not captured) | Tab1:row3:col5 |
-| Clearance | `Q22` · not captured | 0.289 | not captured | not captured | exact (not captured) | Tab1:row3:col6 |
-| Clearance — RSE (%) | `Q22` · not captured | 7.69 | not captured | not captured | exact (not captured) | Tab1:row3:col7 |
-| Max. Elim. Rate | `Q66` · not captured | 5.38 | not captured | not captured | llm (not captured) | Tab1:row4:col6 |
-| Conc. at haf max.elim — SE | `Q32` · not captured | 0.310 | not captured | not captured | llm (not captured) | Tab1:row5:col4 |
-| Conc. at haf max.elim | `Q32` · not captured | 4.33 | not captured | not captured | llm (not captured) | Tab1:row5:col6 |
-| Central distrib vol — Value | `Q61` · not captured | 3.45 | not captured | not captured | llm (not captured) | Tab1:row6:col3 |
-| Central distrib vol — SE | `Q63` · not captured | 0.594 | not captured | not captured | llm (not captured) | Tab1:row6:col4 |
-| Central distrib vol — 95% Conf. interval | `Q61` · not captured | 2.28 | not captured | not captured | llm (not captured) | Tab1:row6:col5 |
-| Central distrib vol | `Q61` · not captured | 4.61 | not captured | not captured | llm (not captured) | Tab1:row6:col6 |
-| Central distrib vol — RSE (%) | `Q61` · not captured | 17.2 | not captured | not captured | llm (not captured) | Tab1:row6:col7 |
-| Intercomp. clearance — Value | `Q22` · not captured | 0.932 | not captured | not captured | boundary (not captured) | Tab1:row8:col3 |
-| Intercomp. clearance — SE | `Q22` · not captured | 0.219 | not captured | not captured | boundary (not captured) | Tab1:row8:col4 |
-| Intercomp. clearance — 95% Conf. interval | `Q22` · not captured | 0.503 | not captured | not captured | boundary (not captured) | Tab1:row8:col5 |
-| Intercomp. clearance | `Q22` · not captured | 1.36 | not captured | not captured | boundary (not captured) | Tab1:row8:col6 |
-| Intercomp. clearance — RSE (%) | `Q22` · not captured | 23.5 | not captured | not captured | boundary (not captured) | Tab1:row8:col7 |
-| Om_2 (V) — Value | `Q61` · not captured | 0.193 | V | not captured | llm (not captured) | Tab1:row12:col3 |
-| Om_2 (V) — SE | `Q61` · not captured | 0.0554 | V | not captured | llm (not captured) | Tab1:row12:col4 |
-| Om_2 (V) — 95% Conf. interval | `Q61` · not captured | 0.0848 | V | not captured | llm (not captured) | Tab1:row12:col5 |
-| Om_2 (V) | `Q61` · not captured | 0.302 | V | not captured | llm (not captured) | Tab1:row12:col6 |
-| Om_2 (V) — RSE (%) | `Q61` · not captured | 28.6 | V | not captured | llm (not captured) | Tab1:row12:col7 |
-| Proportional Residual Error (variance) — Value | `Q316` · not captured | 0.304 | variance | not captured | exact (not captured) | Tab1:row13:col3 |
-| Proportional Residual Error (variance) — SE | `Q316` · not captured | 0.0290 | variance | not captured | exact (not captured) | Tab1:row13:col4 |
-| Proportional Residual Error (variance) — 95% Conf. interval | `Q316` · not captured | 0.247 | variance | not captured | exact (not captured) | Tab1:row13:col5 |
-| Proportional Residual Error (variance) | `Q316` · not captured | 0.361 | variance | not captured | exact (not captured) | Tab1:row13:col6 |
-| Proportional Residual Error (variance) — RSE (%) | `Q316` · not captured | 9.52 | variance | not captured | exact (not captured) | Tab1:row13:col7 |
-| F1 (relative to SCID mice)* — SE | `Q87` · not captured | 0.183 | not captured | not captured | llm (not captured) | Tab1:row14:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Abs. rate constant — Value | `Q49` · not captured | 2.77 | not captured | not captured | llm (not captured) | Tab1:row2:col3 |
+| PK (driver) | Abs. rate constant — SE | `Q49` · not captured | 0.217 | not captured | not captured | llm (not captured) | Tab1:row2:col4 |
+| PK (driver) | Abs. rate constant — 95% Conf. interval | `Q49` · not captured | 2.35 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
+| PK (driver) | Abs. rate constant | `Q49` · not captured | 3.20 | not captured | not captured | llm (not captured) | Tab1:row2:col6 |
+| PK (driver) | Abs. rate constant — RSE (%) | `Q49` · not captured | 7.83 | not captured | not captured | llm (not captured) | Tab1:row2:col7 |
+| PK (driver) | Clearance — Value | `Q22` · not captured | 0.251 | not captured | not captured | exact (not captured) | Tab1:row3:col3 |
+| PK (driver) | Clearance — SE | `Q22` · not captured | 0.0193 | not captured | not captured | exact (not captured) | Tab1:row3:col4 |
+| PK (driver) | Clearance — 95% Conf. interval | `Q22` · not captured | 0.213 | not captured | not captured | exact (not captured) | Tab1:row3:col5 |
+| PK (driver) | Clearance | `Q22` · not captured | 0.289 | not captured | not captured | exact (not captured) | Tab1:row3:col6 |
+| PK (driver) | Clearance — RSE (%) | `Q22` · not captured | 7.69 | not captured | not captured | exact (not captured) | Tab1:row3:col7 |
+| PK (driver) | Max. Elim. Rate | `Q66` · not captured | 5.38 | not captured | not captured | llm (not captured) | Tab1:row4:col6 |
+| PK (driver) | Conc. at haf max.elim — SE | `Q32` · not captured | 0.310 | not captured | not captured | llm (not captured) | Tab1:row5:col4 |
+| PK (driver) | Conc. at haf max.elim | `Q32` · not captured | 4.33 | not captured | not captured | llm (not captured) | Tab1:row5:col6 |
+| PK (driver) | Central distrib vol — Value | `Q61` · not captured | 3.45 | not captured | not captured | llm (not captured) | Tab1:row6:col3 |
+| PK (driver) | Central distrib vol — SE | `Q63` · not captured | 0.594 | not captured | not captured | llm (not captured) | Tab1:row6:col4 |
+| PK (driver) | Central distrib vol — 95% Conf. interval | `Q61` · not captured | 2.28 | not captured | not captured | llm (not captured) | Tab1:row6:col5 |
+| PK (driver) | Central distrib vol | `Q61` · not captured | 4.61 | not captured | not captured | llm (not captured) | Tab1:row6:col6 |
+| PK (driver) | Central distrib vol — RSE (%) | `Q61` · not captured | 17.2 | not captured | not captured | llm (not captured) | Tab1:row6:col7 |
+| PK (driver) | Intercomp. clearance — Value | `Q22` · not captured | 0.932 | not captured | not captured | boundary (not captured) | Tab1:row8:col3 |
+| PK (driver) | Intercomp. clearance — SE | `Q22` · not captured | 0.219 | not captured | not captured | boundary (not captured) | Tab1:row8:col4 |
+| PK (driver) | Intercomp. clearance — 95% Conf. interval | `Q22` · not captured | 0.503 | not captured | not captured | boundary (not captured) | Tab1:row8:col5 |
+| PK (driver) | Intercomp. clearance | `Q22` · not captured | 1.36 | not captured | not captured | boundary (not captured) | Tab1:row8:col6 |
+| PK (driver) | Intercomp. clearance — RSE (%) | `Q22` · not captured | 23.5 | not captured | not captured | boundary (not captured) | Tab1:row8:col7 |
+| PK (driver) | Om_2 (V) — Value | `Q61` · not captured | 0.193 | V | not captured | llm (not captured) | Tab1:row12:col3 |
+| PK (driver) | Om_2 (V) — SE | `Q61` · not captured | 0.0554 | V | not captured | llm (not captured) | Tab1:row12:col4 |
+| PK (driver) | Om_2 (V) — 95% Conf. interval | `Q61` · not captured | 0.0848 | V | not captured | llm (not captured) | Tab1:row12:col5 |
+| PK (driver) | Om_2 (V) | `Q61` · not captured | 0.302 | V | not captured | llm (not captured) | Tab1:row12:col6 |
+| PK (driver) | Om_2 (V) — RSE (%) | `Q61` · not captured | 28.6 | V | not captured | llm (not captured) | Tab1:row12:col7 |
+| variability | Proportional Residual Error (variance) — Value | `Q316` · not captured | 0.304 | variance | not captured | exact (not captured) | Tab1:row13:col3 |
+| variability | Proportional Residual Error (variance) — SE | `Q316` · not captured | 0.0290 | variance | not captured | exact (not captured) | Tab1:row13:col4 |
+| variability | Proportional Residual Error (variance) — 95% Conf. interval | `Q316` · not captured | 0.247 | variance | not captured | exact (not captured) | Tab1:row13:col5 |
+| variability | Proportional Residual Error (variance) | `Q316` · not captured | 0.361 | variance | not captured | exact (not captured) | Tab1:row13:col6 |
+| variability | Proportional Residual Error (variance) — RSE (%) | `Q316` · not captured | 9.52 | variance | not captured | exact (not captured) | Tab1:row13:col7 |
+| PK (driver) | F1 (relative to SCID mice)* — SE | `Q87` · not captured | 0.183 | not captured | not captured | llm (not captured) | Tab1:row14:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

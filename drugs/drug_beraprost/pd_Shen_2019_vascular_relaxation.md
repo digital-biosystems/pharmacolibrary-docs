@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Esuberaprost (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Esuberaprost and beraprost act by direct concentration-dependent stimulation of relaxation in U46619 (100 nM)-pre-contracted rat distal pulmonary arteries, with a biphasic Emax-type curve: first-component EC50 33 nM (esuberaprost) versus 181 nM (beraprost, 5.4-fold more potent), and both equipotent on the second component (EC50 ~12–13 µM) with greater Emax for esuberaprost (88% vs 78%). In human PAH PASMCs, both directly inhibit proliferation via the IP receptor (blocked by RO1138452), with EC50 3 nM for esuberaprost versus 120 nM for beraprost (36-fold more potent) and maximal inhibition 61% vs 43% at 10 µM; the paper does not describe a formal kinetic PD model (no kin/kout/ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shen_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Shen L; Patel JA; Norel X; Moledina S; Whittle BJ; von Kessler K; et al. et al. 
   ·  DOI: [10.1016/j.bcp.2019.05.026](https://doi.org/10.1016/j.bcp.2019.05.026)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (nM) — Esuberaprost | `Q321` · not captured | 0.40 | nM | not captured | exact (not captured) | tab_0:row1:col3 |
-| EC50 (nM) — Beraprost | `Q321` · not captured | 10.35 | nM | not captured | exact (not captured) | tab_0:row1:col4 |
-| EC50 (nM) — Iloprost | `Q321` · not captured | 2.73 | nM | not captured | exact (not captured) | tab_0:row1:col5 |
-| EC50 (nM) — Treprostinil | `Q321` · not captured | 44.94 | nM | not captured | exact (not captured) | tab_0:row1:col6 |
-| EC50 (nM) — Esuberaprost | `Q321` · not captured | 183 | nM | not captured | exact (not captured) | tab_0:row1:col8 |
-| EC50 (nM) — Beraprost | `Q321` · not captured | 845 | nM | not captured | exact (not captured) | tab_0:row1:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (nM) — Esuberaprost | `Q321` · not captured | 0.40 | nM | not captured | exact (not captured) | tab_0:row1:col3 |
+| PD (effect) | EC50 (nM) — Beraprost | `Q321` · not captured | 10.35 | nM | not captured | exact (not captured) | tab_0:row1:col4 |
+| PD (effect) | EC50 (nM) — Iloprost | `Q321` · not captured | 2.73 | nM | not captured | exact (not captured) | tab_0:row1:col5 |
+| PD (effect) | EC50 (nM) — Treprostinil | `Q321` · not captured | 44.94 | nM | not captured | exact (not captured) | tab_0:row1:col6 |
+| PD (effect) | EC50 (nM) — Esuberaprost | `Q321` · not captured | 183 | nM | not captured | exact (not captured) | tab_0:row1:col8 |
+| PD (effect) | EC50 (nM) — Beraprost | `Q321` · not captured | 845 | nM | not captured | exact (not captured) | tab_0:row1:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

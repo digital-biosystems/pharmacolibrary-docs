@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives name (in unknown): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> In the SW1990 xenograft PK/PD model, DEX concentrations inhibit tumor cell proliferation via a Hill (Emax) function with E T,max 0.599 and EC T,50 0.999 μg/mL, while GEM concentrations damage tumor cells through a linear effect (potency factor K T,GEM) because only one GEM dose level was studied; tumor growth was otherwise described by Gompertz parameters λ0 0.167/day and λ1 196 mm³/day with transition rate k t 0.171/day. A parallel model described net body weight with a first-order rate k 0.00937/day and Emax effect E W,max 0.369 with EC W,50 0.673 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yao_2023`
 - **model family:** `disease_progression`
 - **driver:** `cited_pk`
@@ -21,44 +31,44 @@ Yao QY; Zhou J; Yao Y; Xue JS; Guo YC; Jian WZ; et al. et al. (2023). Acta pharm
   ·  DOI: [10.1038/s41401-022-00960-0](https://doi.org/10.1038/s41401-022-00960-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| λ 0 (1/day) | `Q67` · not captured | 0.167 | not captured | not captured | llm (not captured) | tab_0:row5:col1 |
-| λ 1 (mm 3 /day) | `Q67` · not captured | 196 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row6:col1 |
-| E T,max | `Q56` · not captured | 0.599 | not captured | not captured | llm (not captured) | tab_0:row7:col1 |
-| EC T,50 (μg/mL) | `Q321` · not captured | 0.999 | μg/mL | not captured | llm (not captured) | tab_0:row8:col1 |
-| k t (1/day) | `Q358` · not captured | 0.171 | not captured | not captured | llm (not captured) | tab_0:row11:col1 |
-| IIV T 0 (%) | `Q312` · not captured | 46.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col1 |
-| IIV T 0 (%) | `Q312` · not captured | 45.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
-| IIV T 0 (%) | `Q312` · not captured | 35.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col3 |
-| IIV λ 0 (%) | `Q312` · not captured | 102 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col1 |
-| IIV λ 0 (%) | `Q312` · not captured | 102.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col2 |
-| IIV λ 0 (%) | `Q312` · not captured | 83.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col3 |
-| IIV λ 1 (%) | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col1 |
-| IIV λ 1 (%) | `Q312` · not captured | 54.9 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col2 |
-| IIV λ 1 (%) | `Q312` · not captured | 41.3 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col3 |
-| IIV K T,GEM (%) | `Q312` · not captured | 112.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col1 |
-| IIV K T,GEM (%) | `Q312` · not captured | 110.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col2 |
-| IIV K T,GEM (%) | `Q312` · not captured | 77.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col3 |
-| Proportional | `Q316` · not captured | 21.7 | not captured | not captured | llm (not captured) | tab_0:row16:col1 |
-| Proportional | `Q316` · not captured | 21.6 | not captured | not captured | llm (not captured) | tab_0:row16:col2 |
-| Proportional | `Q316` · not captured | 16.3 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
-| k (1/day) | `Q47` · not captured | 0.00937 | not captured | not captured | exact (not captured) | tab_0:row20:col1 |
-| E W,max | `Q320` · not captured | 0.369 | not captured | not captured | llm (not captured) | tab_0:row21:col1 |
-| EC W,50 (μg/mL) | `Q321` · not captured | 0.673 | μg/mL | not captured | llm (not captured) | tab_0:row22:col1 |
-| IIV NBW 0 (%) | `Q312` · not captured | 9.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col1 |
-| IIV NBW 0 (%) | `Q312` · not captured | 9.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col2 |
-| IIV NBW 0 (%) | `Q312` · not captured | 7.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col3 |
-| IIV k (%) | `Q312` · not captured | 41.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col1 |
-| IIV k (%) | `Q312` · not captured | 39.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col2 |
-| IIV k (%) | `Q312` · not captured | 27.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col3 |
-| IIV K W,GEM (%) | `Q312` · not captured | 54.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col1 |
-| IIV K W,GEM (%) | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col2 |
-| IIV K W,GEM (%) | `Q312` · not captured | 23.9 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col3 |
-| IIV ψ W (%) | `Q312` · not captured | 62.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col1 |
-| IIV ψ W (%) | `Q312` · not captured | 60.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col2 |
-| IIV ψ W (%) | `Q312` · not captured | 26.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col3 |
-| Additive error (g) | `Q317` · not captured | 0.59 | g | not captured | exact (not captured) | tab_0:row29:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | λ 0 (1/day) | `Q67` · not captured | 0.167 | not captured | not captured | llm (not captured) | tab_0:row5:col1 |
+| PK (driver) | λ 1 (mm 3 /day) | `Q67` · not captured | 196 | mm 3 /day | not captured | space_fold (not captured) | tab_0:row6:col1 |
+| PK (driver) | E T,max | `Q56` · not captured | 0.599 | not captured | not captured | llm (not captured) | tab_0:row7:col1 |
+| PD (effect) | EC T,50 (μg/mL) | `Q321` · not captured | 0.999 | μg/mL | not captured | llm (not captured) | tab_0:row8:col1 |
+| PK (driver) | k t (1/day) | `Q358` · not captured | 0.171 | not captured | not captured | llm (not captured) | tab_0:row11:col1 |
+| variability | IIV T 0 (%) | `Q312` · not captured | 46.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col1 |
+| variability | IIV T 0 (%) | `Q312` · not captured | 45.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
+| variability | IIV T 0 (%) | `Q312` · not captured | 35.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col3 |
+| variability | IIV λ 0 (%) | `Q312` · not captured | 102 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col1 |
+| variability | IIV λ 0 (%) | `Q312` · not captured | 102.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col2 |
+| variability | IIV λ 0 (%) | `Q312` · not captured | 83.0 | not captured | not captured | llm_confirmed (not captured) | tab_0:row13:col3 |
+| variability | IIV λ 1 (%) | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col1 |
+| variability | IIV λ 1 (%) | `Q312` · not captured | 54.9 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col2 |
+| variability | IIV λ 1 (%) | `Q312` · not captured | 41.3 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col3 |
+| variability | IIV K T,GEM (%) | `Q312` · not captured | 112.7 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col1 |
+| variability | IIV K T,GEM (%) | `Q312` · not captured | 110.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col2 |
+| variability | IIV K T,GEM (%) | `Q312` · not captured | 77.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row15:col3 |
+| variability | Proportional | `Q316` · not captured | 21.7 | not captured | not captured | llm (not captured) | tab_0:row16:col1 |
+| variability | Proportional | `Q316` · not captured | 21.6 | not captured | not captured | llm (not captured) | tab_0:row16:col2 |
+| variability | Proportional | `Q316` · not captured | 16.3 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
+| PK (driver) | k (1/day) | `Q47` · not captured | 0.00937 | not captured | not captured | exact (not captured) | tab_0:row20:col1 |
+| PD (effect) | E W,max | `Q320` · not captured | 0.369 | not captured | not captured | llm (not captured) | tab_0:row21:col1 |
+| PD (effect) | EC W,50 (μg/mL) | `Q321` · not captured | 0.673 | μg/mL | not captured | llm (not captured) | tab_0:row22:col1 |
+| variability | IIV NBW 0 (%) | `Q312` · not captured | 9.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col1 |
+| variability | IIV NBW 0 (%) | `Q312` · not captured | 9.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col2 |
+| variability | IIV NBW 0 (%) | `Q312` · not captured | 7.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row25:col3 |
+| variability | IIV k (%) | `Q312` · not captured | 41.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col1 |
+| variability | IIV k (%) | `Q312` · not captured | 39.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col2 |
+| variability | IIV k (%) | `Q312` · not captured | 27.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row26:col3 |
+| variability | IIV K W,GEM (%) | `Q312` · not captured | 54.8 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col1 |
+| variability | IIV K W,GEM (%) | `Q312` · not captured | 54.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col2 |
+| variability | IIV K W,GEM (%) | `Q312` · not captured | 23.9 | not captured | not captured | llm_confirmed (not captured) | tab_0:row27:col3 |
+| variability | IIV ψ W (%) | `Q312` · not captured | 62.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col1 |
+| variability | IIV ψ W (%) | `Q312` · not captured | 60.5 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col2 |
+| variability | IIV ψ W (%) | `Q312` · not captured | 26.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row28:col3 |
+| variability | Additive error (g) | `Q317` · not captured | 0.59 | g | not captured | exact (not captured) | tab_0:row29:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

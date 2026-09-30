@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ciprofloxacin (concentrations from the PK model of Abadia_1995) drives name (in CFU/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ciprofloxacin concentrations (µg/ml, from a cited PK model) act on viable counts (CFU/ml) of susceptible (S) and resistant (R) S. aureus subpopulations via a saturating Emax killing function, where the drug increases the bacterial killing rate kC·C/(C+EC50) in a logistic growth model; the record lists K = 6 for both MRSA 8043 and MRSA 8282, but the excerpts do not state EC50 values or units for these parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Campion_2005`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,10 +31,10 @@ Campion JJ; McNamara PJ; Evans ME et al. (2005). Antimicrobial agents and chemot
   ·  DOI: [10.1128/AAC.49.1.209-219.2005](https://doi.org/10.1128/AAC.49.1.209-219.2005)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MRSA 8043 — K | `Q1` · not captured | 6 | not captured | not captured | llm (not captured) | tab_0:row1:col2 |
-| MRSA 8282 — K | `Q1` · not captured | 6 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MRSA 8043 — K | `Q1` · not captured | 6 | not captured | not captured | llm (not captured) | tab_0:row1:col2 |
+| PK (driver) | MRSA 8282 — K | `Q1` · not captured | 6 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

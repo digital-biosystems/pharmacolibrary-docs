@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin (measured concentrations) drives cell survival (in unitless): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (external concentration, pM–µM range) inhibits relative cloning efficiency (cell survival) of DC-3F cells and resistant sublines after a 3 hr exposure; the paper reports biphasic survival curves with EC50 values (e.g. 2 µM intact DC-3F, 1.6 nM electropermeabilized DC-3F, 47 nM D/BlmII) but does not state a mechanistic PD model (no Imax, kin, kout, ke0, or gamma given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pron_1994`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

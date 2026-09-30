@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rituximab drives CD19+ B lymphocytes (in cells/L): indirect response — drug inhibits the loss of CD19+ B lymphocytes.
+
+**Model:** No model was generated from this record.
+
+> Rituximab dose acts on peripheral blood CD19+ B lymphocyte counts (cells/L) via a turn-over (indirect) model in which rituximab's effect S(t) stimulates the first-order degradation of CD19+ (dCD19+/dt = Ksyn − Kdeg×(1+S(t))×CD19+), with baseline CD19+0 = Ksyn/Kdeg. Key estimates: KE = 0.06 days−1 (RSE 17%), Kdeg = 0.004 days−1 (RSE 22%), EMAX = 155 (RSE 23%) and ED50 = 0.692 mg (RSE 61%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Riva_2023`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -20,28 +30,28 @@ Riva N; Brstilo L; Sancho-Araiz A; Molina M; Savransky A; Roffé G; Sanz M; Tene
   ·  DOI: [10.3390/pharmaceutics15112534](https://doi.org/10.3390/pharmaceutics15112534)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| KE (days−1) — Estimate | `Q47` · not captured | 0.06 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row1:col1 |
-| KE (days−1) — RSE (%) | `Q47` · not captured | 17 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row1:col2 |
-| Kdeg (days−1) — Estimate | `Q328` · not captured | 0.004 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row3:col1 |
-| Kdeg (days−1) — RSE (%) | `Q328` · not captured | 22 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row3:col2 |
-| EMAX — Estimate | `Q320` · not captured | 155 | not captured | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row4:col1 |
-| EMAX — RSE (%) | `Q320` · not captured | 23 | not captured | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row4:col2 |
-| ED50 (mg) — Estimate | `Q321` · not captured | 0.692 | mg | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row5:col1 |
-| ED50 (mg) — RSE (%) | `Q321` · not captured | 61 | mg | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row5:col2 |
-| IIV KE (%) b — Estimate | `Q312` · not captured | 55.4 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row6:col1 |
-| IIV KE (%) b — RSE (%) | `Q312` · not captured | 27 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row6:col2 |
-| IIV KE (%) b — Shrinkage (%) | `Q318` · not captured | 47 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row6:col3 |
-| IIV CD19+0 (%) b — Estimate | `Q312` · not captured | 70.1 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row7:col1 |
-| IIV CD19+0 (%) b — RSE (%) | `Q312` · not captured | 32 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row7:col2 |
-| IIV CD19+0 (%) b — Shrinkage (%) | `Q318` · not captured | 35 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row7:col3 |
-| IIV Kdeg (%) b — Estimate | `Q312` · not captured | 80.7 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col1 |
-| IIV Kdeg (%) b — RSE (%) | `Q312` · not captured | 43 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col2 |
-| IIV Kdeg (%) b — Shrinkage (%) | `Q318` · not captured | 57 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col3 |
-| Residual error (Ln(106 cells/L)) — Estimate | `Q315` · not captured | 0.94 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col1 |
-| Residual error (Ln(106 cells/L)) — RSE (%) | `Q315` · not captured | 9.5 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col2 |
-| Residual error (Ln(106 cells/L)) — Shrinkage (%) | `Q318` · not captured | 24 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | KE (days−1) — Estimate | `Q47` · not captured | 0.06 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row1:col1 |
+| PK (driver) | KE (days−1) — RSE (%) | `Q47` · not captured | 17 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row1:col2 |
+| PD (effect) | Kdeg (days−1) — Estimate | `Q328` · not captured | 0.004 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row3:col1 |
+| PD (effect) | Kdeg (days−1) — RSE (%) | `Q328` · not captured | 22 | days−1 | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row3:col2 |
+| PD (effect) | EMAX — Estimate | `Q320` · not captured | 155 | not captured | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row4:col1 |
+| PD (effect) | EMAX — RSE (%) | `Q320` · not captured | 23 | not captured | not captured | exact (not captured) | pharmaceutics-15-02534-t002:row4:col2 |
+| PD (effect) | ED50 (mg) — Estimate | `Q321` · not captured | 0.692 | mg | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row5:col1 |
+| PD (effect) | ED50 (mg) — RSE (%) | `Q321` · not captured | 61 | mg | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row5:col2 |
+| variability | IIV KE (%) b — Estimate | `Q312` · not captured | 55.4 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row6:col1 |
+| variability | IIV KE (%) b — RSE (%) | `Q312` · not captured | 27 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row6:col2 |
+| variability | IIV KE (%) b — Shrinkage (%) | `Q318` · not captured | 47 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row6:col3 |
+| variability | IIV CD19+0 (%) b — Estimate | `Q312` · not captured | 70.1 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row7:col1 |
+| variability | IIV CD19+0 (%) b — RSE (%) | `Q312` · not captured | 32 | not captured | not captured | llm_confirmed (not captured) | pharmaceutics-15-02534-t002:row7:col2 |
+| variability | IIV CD19+0 (%) b — Shrinkage (%) | `Q318` · not captured | 35 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row7:col3 |
+| variability | IIV Kdeg (%) b — Estimate | `Q312` · not captured | 80.7 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col1 |
+| variability | IIV Kdeg (%) b — RSE (%) | `Q312` · not captured | 43 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col2 |
+| variability | IIV Kdeg (%) b — Shrinkage (%) | `Q318` · not captured | 57 | not captured | not captured | llm_corrected (not captured) | pharmaceutics-15-02534-t002:row8:col3 |
+| variability | Residual error (Ln(106 cells/L)) — Estimate | `Q315` · not captured | 0.94 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col1 |
+| variability | Residual error (Ln(106 cells/L)) — RSE (%) | `Q315` · not captured | 9.5 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col2 |
+| variability | Residual error (Ln(106 cells/L)) — Shrinkage (%) | `Q318` · not captured | 24 | not captured | not captured | llm (not captured) | pharmaceutics-15-02534-t002:row9:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

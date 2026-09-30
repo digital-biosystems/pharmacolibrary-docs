@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levofloxacin (measured concentrations) drives cumulative area between the growth control and the bacterial-killing and -regrowth curve (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Levofloxacin exposure (cumulative AUC, mg·h·L−1) drives the normalised cumulative area between the growth control and the killing–regrowth curve (cumABBC(t)) of three E. coli isolates in an in vitro model, described by a sigmoidal Emax model with an inhibition term representing regrowth at higher exposures. Potency values (cumAUC50) were 158, 28.6 and 49.4 mg·h·L−1 with Hill coefficients 1.02, 1.25 and 0.961, and regrowth thresholds (cumAUCreg) were 3132/248, 330/373 and 1679/473 mg·h·L−1 under static/dynamic exposure, giving static/dynamic ratios of 12.6, 0.885 and 3.55.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Seeger_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,23 +31,23 @@ Seeger J; Guenther S; Schaufler K; Heiden SE; Michelet R; Kloft C et al. (2021).
   ·  DOI: [10.3390/antibiotics10060615](https://doi.org/10.3390/antibiotics10060615)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 158 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col1 |
-| cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 28.6 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col2 |
-| cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 49.4 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col3 |
-| Hill — Estimate (RSE, %) | `Q325` · not captured | 1.02 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col1 |
-| Hill — Estimate (RSE, %) | `Q325` · not captured | 1.25 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col2 |
-| Hill — Estimate (RSE, %) | `Q325` · not captured | 0.961 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col3 |
-| cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 3132 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col1 |
-| cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 330 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col2 |
-| cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 1679 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col3 |
-| cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 248 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col1 |
-| cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 373 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col2 |
-| cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 473 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col3 |
-| cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 12.6 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col1 |
-| cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 0.885 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col2 |
-| cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 3.55 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 158 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col1 |
+| PK (driver) | cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 28.6 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col2 |
+| PK (driver) | cumAUC50 (mg·h·L−1) — Estimate (RSE, %) | `Q19` · not captured | 49.4 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row2:col3 |
+| PD (effect) | Hill — Estimate (RSE, %) | `Q325` · not captured | 1.02 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col1 |
+| PD (effect) | Hill — Estimate (RSE, %) | `Q325` · not captured | 1.25 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col2 |
+| PD (effect) | Hill — Estimate (RSE, %) | `Q325` · not captured | 0.961 | RSE, % | not captured | exact (not captured) | antibiotics-10-00615-t002:row3:col3 |
+| PK (driver) | cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 3132 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col1 |
+| PK (driver) | cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 330 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col2 |
+| PK (driver) | cumAUCreg, static (mg·h·L−1) — Estimate (RSE, %) | `Q17` · not captured | 1679 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row4:col3 |
+| PK (driver) | cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 248 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col1 |
+| PK (driver) | cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 373 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col2 |
+| PK (driver) | cumAUCreg, dynamic (mg·h·L−1) — Estimate (RSE, %) | `Q88` · not captured | 473 | mg·h·L−1 | not captured | llm (not captured) | antibiotics-10-00615-t002:row5:col3 |
+| PK (driver) | cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 12.6 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col1 |
+| PK (driver) | cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 0.885 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col2 |
+| PK (driver) | cumAUCreg,static/cumAUCreg,dynamic ratio — Estimate (RSE, %) | `Q21` · not captured | 3.55 | RSE, % | not captured | llm (not captured) | antibiotics-10-00615-t002:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

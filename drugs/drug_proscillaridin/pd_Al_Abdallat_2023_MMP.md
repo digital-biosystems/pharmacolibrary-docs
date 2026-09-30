@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Drimia maritima bulb extract (measured concentrations) drives Mitochondrial membrane potential (in arbitrary units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Drimia maritima bulb extract (predominant metabolite proscillaridin A) concentrations of 2, 2.75, and 3.5 µg/mL significantly decreased mitochondrial membrane potential (ΔΨm, TMRE assay) in COLO-205 cells (15.38 ± 0.72, 4.569 ± 0.726, and 0.666 ± 0.72 arbitrary units vs control; 1 µg/mL not significant), indicating an inhibitory effect on ΔΨm; the paper does not state a PD model, mechanism, or potency parameters (Imax, IC50, kin, kout, ke0, gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Abdallat_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

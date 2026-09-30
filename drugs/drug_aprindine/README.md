@@ -21,9 +21,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_reference](drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | 1-compartment (no model) | 1 | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kobari_1984_reference](drugs/drug_aprindine/Aprindine_Kobari1984_reference.md) | — | 1-compartment (no model) | 1 | Kobari T et al., Dose-dependent pharmacokinetics of apri…, European journal of clinica… (1984) | [10.1007/BF00546721](https://doi.org/10.1007/BF00546721) |
 
 ## Pharmacogenomics (PGx)
 

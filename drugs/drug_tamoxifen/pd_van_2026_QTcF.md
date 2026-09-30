@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paroxetine (measured concentrations) drives QTcF interval change from baseline (in ms): direct linear effect.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Paroxetine plasma concentrations (ng/mL) were related to ΔQTcF (change from baseline QTcF, ms) via a linear mixed-effects concentration–QT model with timepoint fixed effects for diurnal variation; the paper does not describe a mechanistic (kin/kout or effect-compartment) model. The concentration–ΔQTcF slope was weak and not statistically different from 0 (0.0108 [95% CI 0.00, 0.03] ms per ng/mL; record: 0.01 ms/ng/mL), with predicted ΔQTcF at the 60 mg dose mean Cmax (221.4 ng/mL) of 0.42 ms (SE 1.8, upper 90% PI 3.5 ms), indicating no clinically meaningful QTcF prolongation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2026`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ van Dijkman SC; Félices M; Pandurangavittal B; Ghorpade S; Easterbrook C; Zabie
   ·  DOI: [10.1002/bcp.70398](https://doi.org/10.1002/bcp.70398)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Intercept (off‐drug) (ms) — Estimate (SE) | `Q324` · not captured | 0.66 | ms | not captured | llm (not captured) | bcp70398-tbl-0002:row2:col1 |
-| Baseline QTcF (ms) — Estimate (SE) | `Q324` · not captured | -0.15 | ms | not captured | boundary (not captured) | bcp70398-tbl-0002:row3:col1 |
-| 40 mg (Cmax GM: 128.2 ng/mL) (n/N, 31/38) — Estimate (SE) | `Q32` · not captured | -0.58 | n/N, 31/38 | not captured | boundary (not captured) | bcp70398-tbl-0002:row6:col1 |
-| 60 mg (Cmax GM: 221.4 ng/mL) (n/N, 29/38) — Estimate (SE) | `Q32` · not captured | 0.42 | n/N, 29/38 | not captured | boundary (not captured) | bcp70398-tbl-0002:row7:col1 |
-| Paroxetine slope (ms/ng/mL) | `Q335` · not captured | 0.01 | ms/ng/mL | not captured | review_gapfill (not captured) | van_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Intercept (off‐drug) (ms) — Estimate (SE) | `Q324` · not captured | 0.66 | ms | not captured | llm (not captured) | bcp70398-tbl-0002:row2:col1 |
+| PD (effect) | Baseline QTcF (ms) — Estimate (SE) | `Q324` · not captured | -0.15 | ms | not captured | boundary (not captured) | bcp70398-tbl-0002:row3:col1 |
+| PK (driver) | 40 mg (Cmax GM: 128.2 ng/mL) (n/N, 31/38) — Estimate (SE) | `Q32` · not captured | -0.58 | n/N, 31/38 | not captured | boundary (not captured) | bcp70398-tbl-0002:row6:col1 |
+| PK (driver) | 60 mg (Cmax GM: 221.4 ng/mL) (n/N, 29/38) — Estimate (SE) | `Q32` · not captured | 0.42 | n/N, 29/38 | not captured | boundary (not captured) | bcp70398-tbl-0002:row7:col1 |
+| PD (effect) | Paroxetine slope (ms/ng/mL) | `Q335` · not captured | 0.01 | ms/ng/mL | not captured | review_gapfill (not captured) | van_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

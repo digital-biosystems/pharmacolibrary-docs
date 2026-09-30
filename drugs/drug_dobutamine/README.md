@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Hallik_2020_reference](drugs/drug_dobutamine/Dobutamine_Hallik2020_reference.md) | 1-compartment, IV | 2 | Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020) | [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146) |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Šíma_2015_reference](drugs/drug_dobutamine/Dobutamine_ma2015_reference.md) | 1-compartment, IV | 2 | Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research (2015) | [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span> | [Hallik_2020_reference](drugs/drug_dobutamine/Dobutamine_Hallik2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hallik M et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2020) | [10.1111/bcp.14146](https://doi.org/10.1111/bcp.14146) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span> | [Šíma_2015_reference](drugs/drug_dobutamine/Dobutamine_ma2015_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Šíma M et al., Effect of co-medication on the pharmaco…, Physiological research (2015) | [10.33549/physiolres.933213](https://doi.org/10.33549/physiolres.933213) |
 
 ## ADME sites
 

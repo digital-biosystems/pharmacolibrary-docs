@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Torasemide (the dose) drives natriuresis (in mEq/h) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Urinary torasemide excretion (Qurine, μg) acts on daily natriuresis (mEq) via an indirect response model in which torasemide increases the zero-order formation rate constant kforNa (mEq/h²), with natriuresis dissipated by a first-order rate constant kabsNa (h⁻¹); the effect was fitted with a Sigmoid-Emax function (EmaxNa as unitless proportional increase, EC50_apparent as urinary torasemide quantity in μg, Hill coefficient αToraNa), but the paper does not report numeric values for these parameters. A diuretic-resistance mechanism was modeled as a fractional reduction of Emax triggered reversibly when the torasemide effect ENaTora exceeded a threshold of 0.055 (5.5% of baseline), which outper
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pelligand_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

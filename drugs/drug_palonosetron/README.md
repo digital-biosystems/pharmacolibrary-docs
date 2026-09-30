@@ -23,20 +23,20 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2019_reference](drugs/drug_palonosetron/Palonosetron_Lee2019_reference.md) | 1-compartment (no model) | 0 | Lee S et al., Population pharmacokinetics of palonose…, Journal of anesthesia (2019) | [10.1007/s00540-019-02641-5](https://doi.org/10.1007/s00540-019-02641-5) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_healthy_control](drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md) | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_moderate_hepatic_impairment](drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md) | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_palonosetron](drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md) | general linear (no model) | 6 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Lee_2019_reference](drugs/drug_palonosetron/Palonosetron_Lee2019_reference.md) | — | 1-compartment (no model) | 0 | Lee S et al., Population pharmacokinetics of palonose…, Journal of anesthesia (2019) | [10.1007/s00540-019-02641-5](https://doi.org/10.1007/s00540-019-02641-5) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_healthy_control](drugs/drug_palonosetron/Palonosetron_Li2026_healthy_control.md) | — | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_moderate_hepatic_impairment](drugs/drug_palonosetron/Palonosetron_Li2026_moderate_hepatic_impairment.md) | — | general linear (no model) | 5 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Li_2026_palonosetron](drugs/drug_palonosetron/Palonosetron_Li2026_palonosetron.md) | — | general linear (no model) | 6 | Li Q et al., Pharmacokinetics, safety, and populatio…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1833170](https://doi.org/10.3389/fphar.2026.1833170) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021](drugs/drug_palonosetron/pd_Gil_2021_EC50.md) | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021](drugs/drug_palonosetron/pd_Gil_2021_EC95.md) | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021](drugs/drug_palonosetron/pd_Gil_2021_unknown.md) | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021_EC50](drugs/drug_palonosetron/pd_Gil_2021_EC50.md) | emergence cough ← remifentanil · categorical (graded) response model | — | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021_EC95](drugs/drug_palonosetron/pd_Gil_2021_EC95.md) | emergence cough ← remifentanil · categorical (graded) response model | — | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Gil_2021_unknown](drugs/drug_palonosetron/pd_Gil_2021_unknown.md) | emergence cough suppression ← remifentanil · categorical (graded) response model | — | Gil HY et al., Impact of Palonosetron on Cough Suppres…, Journal of personalized med… (2021) | [10.3390/jpm11090887](https://doi.org/10.3390/jpm11090887) |
 
 ## Pharmacogenomics (PGx)
 
@@ -64,6 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2D6` metabolism/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

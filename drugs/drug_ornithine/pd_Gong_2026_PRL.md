@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Deguelin (measured concentrations) drives prolactin secretion (in ng/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Deguelin (µM concentrations in vitro; 4 mg/kg i.p. every other day in mice) inhibits prolactin (PRL) secretion in GH3 cells and reduces circulating PRL in serum, acting via inhibition of ODC-mediated putrescine synthesis, which reduces RAC1 activity and PI3K/AKT/CREB3L1/PIT-1 signaling. The paper does not report a quantitative PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values) for the PRL response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gong_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

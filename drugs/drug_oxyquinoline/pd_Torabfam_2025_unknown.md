@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** QPABA (measured concentrations) drives DPP4-MERS-CoV spike complex inhibition (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In ELISA assays, QPABA (and QPP) concentrations (25–300 µM) concentration-dependently inhibit the DPP4–MERS-CoV spike protein–receptor complex (% of control), a direct binding/blocking effect with no PD model or rate parameters given; QPABA was most potent with IC50 = 12.02 µM for DPP4–MERS-CoV (and 14.4 µM for ACE2–SARS-CoV-2 spike).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Torabfam_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,26 +30,26 @@ Torabfam M; Celebi Torabfam G; Osonga F; Dias C; Sadik O et al. (2025). Scientif
   ·  DOI: [10.1038/s41598-025-27374-2](https://doi.org/10.1038/s41598-025-27374-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| QCR — Drug-likeness[b] | `Q100` · not captured | 0.28 | not captured | not captured | llm (not captured) | Tab1:row2:col10 |
-| QCR — Drug-likeness[b] | `Q100` · not captured | 0.36 | not captured | not captured | llm (not captured) | Tab1:row2:col11 |
-| QCR — Drug-likeness[b] | `Q100` · not captured | 0.28 | not captured | not captured | llm (not captured) | Tab1:row2:col13 |
-| QPP — Drug-likeness[b] | `Q100` · not captured | 0.2 | not captured | not captured | llm (not captured) | Tab1:row4:col8 |
-| QPP — Drug-likeness[b] | `Q100` · not captured | 0.36 | not captured | not captured | llm (not captured) | Tab1:row4:col10 |
-| QPP — Drug-likeness[b] | `Q100` · not captured | 0.4 | not captured | not captured | llm (not captured) | Tab1:row4:col11 |
-| QPP — Drug-likeness[b] | `Q100` · not captured | 0.15 | not captured | not captured | llm (not captured) | Tab1:row4:col12 |
-| QPP — Drug-likeness[b] | `Q100` · not captured | 0.27 | not captured | not captured | llm (not captured) | Tab1:row4:col13 |
-| Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.14 | not captured | not captured | llm (not captured) | Tab1:row5:col8 |
-| Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.22 | not captured | not captured | llm (not captured) | Tab1:row5:col10 |
-| Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.27 | not captured | not captured | llm (not captured) | Tab1:row5:col11 |
-| Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.13 | not captured | not captured | llm (not captured) | Tab1:row5:col12 |
-| Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.3 | not captured | not captured | llm (not captured) | Tab1:row5:col13 |
-| Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.09 | not captured | not captured | llm (not captured) | Tab1:row6:col8 |
-| Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.17 | not captured | not captured | llm (not captured) | Tab1:row6:col10 |
-| Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.2 | not captured | not captured | llm (not captured) | Tab1:row6:col11 |
-| Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.19 | not captured | not captured | llm (not captured) | Tab1:row6:col12 |
-| Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.23 | not captured | not captured | llm (not captured) | Tab1:row6:col13 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | QCR — Drug-likeness[b] | `Q100` · not captured | 0.28 | not captured | not captured | llm (not captured) | Tab1:row2:col10 |
+| — | QCR — Drug-likeness[b] | `Q100` · not captured | 0.36 | not captured | not captured | llm (not captured) | Tab1:row2:col11 |
+| — | QCR — Drug-likeness[b] | `Q100` · not captured | 0.28 | not captured | not captured | llm (not captured) | Tab1:row2:col13 |
+| — | QPP — Drug-likeness[b] | `Q100` · not captured | 0.2 | not captured | not captured | llm (not captured) | Tab1:row4:col8 |
+| — | QPP — Drug-likeness[b] | `Q100` · not captured | 0.36 | not captured | not captured | llm (not captured) | Tab1:row4:col10 |
+| — | QPP — Drug-likeness[b] | `Q100` · not captured | 0.4 | not captured | not captured | llm (not captured) | Tab1:row4:col11 |
+| — | QPP — Drug-likeness[b] | `Q100` · not captured | 0.15 | not captured | not captured | llm (not captured) | Tab1:row4:col12 |
+| — | QPP — Drug-likeness[b] | `Q100` · not captured | 0.27 | not captured | not captured | llm (not captured) | Tab1:row4:col13 |
+| — | Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.14 | not captured | not captured | llm (not captured) | Tab1:row5:col8 |
+| — | Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.22 | not captured | not captured | llm (not captured) | Tab1:row5:col10 |
+| — | Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.27 | not captured | not captured | llm (not captured) | Tab1:row5:col11 |
+| — | Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.13 | not captured | not captured | llm (not captured) | Tab1:row5:col12 |
+| — | Resveratrol — Drug-likeness[b] | `Q100` · not captured | 0.3 | not captured | not captured | llm (not captured) | Tab1:row5:col13 |
+| — | Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.09 | not captured | not captured | llm (not captured) | Tab1:row6:col8 |
+| — | Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.17 | not captured | not captured | llm (not captured) | Tab1:row6:col10 |
+| — | Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.2 | not captured | not captured | llm (not captured) | Tab1:row6:col11 |
+| — | Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.19 | not captured | not captured | llm (not captured) | Tab1:row6:col12 |
+| — | Toremifene — Drug-likeness[b] | `Q100` · not captured | 0.23 | not captured | not captured | llm (not captured) | Tab1:row6:col13 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

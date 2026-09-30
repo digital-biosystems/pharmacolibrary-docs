@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anaesthetised CD1 mice, intravenous angiotensin II (Ang II, doses up to 100 nmol/kg i.v.) dose-dependently increased total peripheral resistance (and systemic arterial pressure) via stimulation of AT1 receptors, an effect antagonised by the AT1 antagonist candesartan (20–100 µg/kg i.v.) but not by AT2, alpha- or beta-receptor antagonists. The paper does not state a quantitative PD model or parameters (no Emax, EC50, kin, kout or ke0 values are given); it reports only that candesartan shifted the Ang II dose-response curve rightward in a parallel manner at 20 µg/kg and non-parallel, insurmountably at 40–100 µg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bivalacqua_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

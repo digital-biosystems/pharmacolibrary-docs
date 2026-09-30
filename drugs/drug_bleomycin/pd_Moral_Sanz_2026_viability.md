@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** StnIG (measured concentrations) drives cell viability (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> StnIG concentrations (0.1 nM–3 µM) concentration-dependently reduce viability (%) of palbociclib-senescent SKMel-147 cells, modelled as a sigmoid Emax inhibitory response; the paper does not state an explicit PD mechanism for the curve itself, though senolysis involves calcium influx, BKCa activation and caspase-dependent apoptosis. Potency is reported as 13 times greater than navitoclax, with IC50 ≈ 30 nM in senescent versus ≈ 240 nM in proliferating cells (senolytic index 8).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Moral-Sanz_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Moral-Sanz J; Fernández-Carrasco I; Ramponi V; Garrido A; Karbat I; Cabezas-Sai
   ·  DOI: [10.1038/s43587-025-01030-w](https://doi.org/10.1038/s43587-025-01030-w)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| potency | `Q321` · not captured | 13 | times | not captured | review_gapfill (not captured) | Moral-Sanz_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | potency | `Q321` · not captured | 13 | times | not captured | review_gapfill (not captured) | Moral-Sanz_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

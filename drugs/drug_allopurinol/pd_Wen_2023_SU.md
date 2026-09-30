@@ -14,6 +14,12 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives serum urate (in mg/dL): direct Emax (saturable) effect.
 
+**Model:** No model was generated from this record.
+
+> Steady-state oxypurinol concentrations (mg/L) directly inhibit serum urate (mg/dL) via an inhibitory Emax model, with Imax 7.6 mg/dL and IC50 17.6 mg/L (reduced by −0.27 mg/L per PDZK1 rs12129861 A allele; IC50 17.6/12.8/8.1 mg/L for GG/GA/AA), on a baseline SU of 9 mg/dL scaled by (CrCL/100)^−0.175; the paper states the mechanism as inhibition of xanthine dehydrogenase.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wen_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`

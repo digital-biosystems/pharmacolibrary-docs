@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anti-rat C2 antibody (measured concentrations) drives name (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> In rats, the anti-rat C2 antibody (hIgG1) reduces serum free C2 via a target-binding (TMDD) mechanism in which the antibody binds free C2 (blocking C4bC2 complex formation); the PK/PD model captured C2 synthesis, degradation, and antibody–target interaction, with the 50 mg/kg IV dose sustaining ≥95% free C2 reduction for up to 21 days. In vitro, the antibody inhibited rat complement CP and LP with IC50 values of 7.45 µg/mL and 16.10 µg/mL, respectively, without affecting AP; no Imax, IC50, kin, kout, or ke0 for the in vivo free C2 response are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bracke_2025`
 - **model family:** `tmdd`
 - **driver:** `conc_no_pk`

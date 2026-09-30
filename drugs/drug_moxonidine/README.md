@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) | 1-compartment, IV | 2 | Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> | [Hempel_1998_reference](drugs/drug_moxonidine/Moxonidine_Hempel1998_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Hempel G et al., Population pharmacokinetic-pharmacodyna…, Clinical pharmacology and t… (1998) | [10.1016/S0009-9236(98)90053-4](https://doi.org/10.1016/S0009-9236(98)90053-4) |
 
 ## ADME sites
 

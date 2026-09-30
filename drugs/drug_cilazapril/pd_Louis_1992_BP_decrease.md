@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Perindoprilat, cilazaprilat, enalaprilat drive blood pressure decrease (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of the active diacids (cilazaprilat, perindoprilat, enalaprilat) were related to ACE inhibition and blood pressure reduction using a sigmoid Emax (Hill) model with slope factor S and EC50 defined as the plasma concentration producing 50% reduction in ACE activity; the paper does not report specific EC50, Emax or S values for cilazapril, but notes long-term antihypertensive activity requires plasma levels above about 7–10 pmol/L for cilazaprilat (and enalaprilat) and 2–3 pmol/L for perindoprilat, with hysteresis analysis used to check for lag between concentration and response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Louis_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

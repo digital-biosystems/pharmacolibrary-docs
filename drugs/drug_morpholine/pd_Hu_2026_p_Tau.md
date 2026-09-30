@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives phosphorylated tau (in intensity): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (a CAST–calpain-2 complex stabilizer) reduced phosphorylated tau (AT8) intensity in the hippocampus of tauopathy PS19 mice, acting indirectly by stabilizing CAST, preventing its degradation, and thereby limiting calpain-2 activation; the paper does not state an Emax/IC50/EC50 or other potency or rate values, and no quantitative PD model parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

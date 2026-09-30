@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The dabrafenib parent–metabolite model was held back because only 4 of 10 expected parameters were covered; the peripheral volumes and intercompartmental clearances (V2/F 5.23 L, Q/F 3.85 L/h, and hydroxy-dabrafenib V1/F 19.6 L, V2/F 25.7 L, Q/F 7.39 L/h) were neither emitted nor defaulted.**

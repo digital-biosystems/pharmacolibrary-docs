@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ACI-5891.9 (measured concentrations) drives TDP-43 seed amplification (in rfu) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide excerpts, so the mechanism linking ACI-5891.9 concentrations (ng/mL) to inhibition of TDP-43 seed amplification (rfu) cannot be confirmed; no potency or rate values are available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Audrain_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

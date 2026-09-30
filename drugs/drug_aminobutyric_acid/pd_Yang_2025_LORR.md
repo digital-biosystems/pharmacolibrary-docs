@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S9 drives Loss of righting reflex (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For loss of righting reflex (LORR) in rats, the paper does not describe a pharmacodynamic model linking S9 concentrations to the response; instead it reports a threshold intragastric dose, with S9 requiring 38.9 μmol/kg versus 9.8 μmol/kg for Zuranolone (about 4-fold higher), indicating less central inhibitory effect. The record's Emax model with an EC50 in nmol/L is not supported by the excerpts for LORR; the EC50/Emax values in the paper refer to in vitro GABAA receptor potentiation, not to the LORR response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

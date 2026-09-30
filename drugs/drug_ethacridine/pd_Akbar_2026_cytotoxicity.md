@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for ethacridine (EL); cytotoxicity in HBEC-5i cells was measured as % LDH release after a single 24 h exposure to 100 µg/mL, where EL alone caused 45.37% cytotoxicity and the EL-GA-OMC conjugate 14.41%. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given, and no mechanism (e.g. Emax or effect-compartment) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

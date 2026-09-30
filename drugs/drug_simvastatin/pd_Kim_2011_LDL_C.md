@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Simvastatin acid drives Low-density lipoprotein-cholesterol (in mg/dL): indirect response — drug inhibits the production of Low-density lipoprotein-cholesterol.
+
+**Model:** No model was generated from this record.
+
+> Simvastatin acid concentrations inhibit the production of LDL-C in an indirect response (turnover) model, with Emax 0.489, EC50 0.0868 ng/mL, Kin 1.14 mg/dL·hr, and baseline LDL-C 92 mg/dL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2011`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,28 +31,28 @@ Kim J; Ahn BJ; Chae HS; Han S; Doh K; Choi J; et al. et al. (2011). Basic & clin
   ·  DOI: [10.1111/j.1742-7843.2011.00700.x](https://doi.org/10.1111/j.1742-7843.2011.00700.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL2 (SV, L ⁄ hr) — Estimate | `Q30` · not captured | 1740 | SV, L ⁄ hr | not captured | special_case (not captured) | tab_1:row2:col1 |
-| V2 (SV, L) — Estimate | `Q64` · not captured | 8980 | SV, L | not captured | exact (not captured) | tab_1:row3:col1 |
-| CL3 (SVA, L ⁄ hr) — Estimate | `Q358` · not captured | 383 | SVA, L ⁄ hr | not captured | llm (not captured) | tab_1:row4:col1 |
-| V3 (SVA, L) — Estimate | `Q77` · not captured | 1190 | SVA, L | not captured | exact (not captured) | tab_1:row5:col1 |
-| KA (per hour) — Estimate | `Q49` · not captured | 2.76 | per hour | not captured | exact (not captured) | tab_1:row6:col1 |
-| LAG (hr) — Estimate | `Q83` · not captured | 0.212 | hr | not captured | llm (not captured) | tab_1:row7:col1 |
-| K in (mg ⁄ dL • hr) — Estimate | `Q327` · not captured | 1.14 | mg ⁄ dL • hr | not captured | space_fold (not captured) | tab_1:row8:col1 |
-| E max — Estimate | `Q320` · not captured | 0.489 | not captured | not captured | space_fold (not captured) | tab_1:row9:col1 |
-| EC 50 (ng ⁄ mL) — Estimate | `Q321` · not captured | 0.0868 | ng ⁄ mL | not captured | space_fold (not captured) | tab_1:row10:col1 |
-| Baseline (LDL, mg ⁄ dL) — Estimate | `Q324` · not captured | 92 | LDL, mg ⁄ dL | not captured | exact (not captured) | tab_1:row11:col1 |
-| x CL2 — Estimate | `Q358` · not captured | 43.1 | IIV | not captured | llm (not captured) | tab_1:row14:col1 |
-| x V2 — Estimate | `Q64` · not captured | 46.5 | IIV | not captured | llm_confirmed (not captured) | tab_1:row15:col1 |
-| x CL3 — Estimate | `Q358` · not captured | 48.6 | IIV | not captured | llm (not captured) | tab_1:row16:col1 |
-| x V3 — Estimate | `Q77` · not captured | 66.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row17:col1 |
-| x KA — Estimate | `Q312` · not captured | 75.7 | IIV | not captured | llm_corrected (not captured) | tab_1:row18:col1 |
-| x LAG — Estimate | `Q83` · not captured | 32.7 | IIV | not captured | llm (not captured) | tab_1:row19:col1 |
-| x Kin — Estimate | `Q327` · not captured | 50.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row20:col1 |
-| x Emax — Estimate | `Q320` · not captured | 15.7 | IIV | not captured | llm_confirmed (not captured) | tab_1:row21:col1 |
-| x EC50 — Estimate | `Q321` · not captured | 93.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row22:col1 |
-| x Baseline LDL — Estimate | `Q324` · not captured | 20.5 | IIV | not captured | llm_confirmed (not captured) | tab_1:row23:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL2 (SV, L ⁄ hr) — Estimate | `Q30` · not captured | 1740 | SV, L ⁄ hr | not captured | special_case (not captured) | tab_1:row2:col1 |
+| PK (driver) | V2 (SV, L) — Estimate | `Q64` · not captured | 8980 | SV, L | not captured | exact (not captured) | tab_1:row3:col1 |
+| PK (driver) | CL3 (SVA, L ⁄ hr) — Estimate | `Q358` · not captured | 383 | SVA, L ⁄ hr | not captured | llm (not captured) | tab_1:row4:col1 |
+| PK (driver) | V3 (SVA, L) — Estimate | `Q77` · not captured | 1190 | SVA, L | not captured | exact (not captured) | tab_1:row5:col1 |
+| PK (driver) | KA (per hour) — Estimate | `Q49` · not captured | 2.76 | per hour | not captured | exact (not captured) | tab_1:row6:col1 |
+| PK (driver) | LAG (hr) — Estimate | `Q83` · not captured | 0.212 | hr | not captured | llm (not captured) | tab_1:row7:col1 |
+| PD (effect) | K in (mg ⁄ dL • hr) — Estimate | `Q327` · not captured | 1.14 | mg ⁄ dL • hr | not captured | space_fold (not captured) | tab_1:row8:col1 |
+| PD (effect) | E max — Estimate | `Q320` · not captured | 0.489 | not captured | not captured | space_fold (not captured) | tab_1:row9:col1 |
+| PD (effect) | EC 50 (ng ⁄ mL) — Estimate | `Q321` · not captured | 0.0868 | ng ⁄ mL | not captured | space_fold (not captured) | tab_1:row10:col1 |
+| PD (effect) | Baseline (LDL, mg ⁄ dL) — Estimate | `Q324` · not captured | 92 | LDL, mg ⁄ dL | not captured | exact (not captured) | tab_1:row11:col1 |
+| PK (driver) | x CL2 — Estimate | `Q358` · not captured | 43.1 | IIV | not captured | llm (not captured) | tab_1:row14:col1 |
+| PK (driver) | x V2 — Estimate | `Q64` · not captured | 46.5 | IIV | not captured | llm_confirmed (not captured) | tab_1:row15:col1 |
+| PK (driver) | x CL3 — Estimate | `Q358` · not captured | 48.6 | IIV | not captured | llm (not captured) | tab_1:row16:col1 |
+| PK (driver) | x V3 — Estimate | `Q77` · not captured | 66.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row17:col1 |
+| variability | x KA — Estimate | `Q312` · not captured | 75.7 | IIV | not captured | llm_corrected (not captured) | tab_1:row18:col1 |
+| PK (driver) | x LAG — Estimate | `Q83` · not captured | 32.7 | IIV | not captured | llm (not captured) | tab_1:row19:col1 |
+| PD (effect) | x Kin — Estimate | `Q327` · not captured | 50.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row20:col1 |
+| PD (effect) | x Emax — Estimate | `Q320` · not captured | 15.7 | IIV | not captured | llm_confirmed (not captured) | tab_1:row21:col1 |
+| PD (effect) | x EC50 — Estimate | `Q321` · not captured | 93.2 | IIV | not captured | llm_confirmed (not captured) | tab_1:row22:col1 |
+| PD (effect) | x Baseline LDL — Estimate | `Q324` · not captured | 20.5 | IIV | not captured | llm_confirmed (not captured) | tab_1:row23:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

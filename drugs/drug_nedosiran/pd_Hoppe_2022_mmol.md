@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nedosiran (concentrations from the PK model of Zhang_2025) drives Uox (in 24-hour urinary oxalate excretion): indirect response — drug inhibits the production of Uox.
+
+**Model:** No model was generated from this record.
+
+> Nedosiran plasma concentrations (from a sequential population PK model) were linked to 24-hour urinary oxalate excretion via an indirect response model in which nedosiran inhibits the production of Uox, consistent with hepatic LDHA mRNA inhibition; the paper does not report Imax, IC50, kin, kout, or other potency/rate parameter values, only noting a mean maximum Uox reduction of 55.0% (range 22–100%) at a mean (SD) time of 45.9 (9.5) days after single doses.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoppe_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,11 +31,11 @@ Hoppe B; Koch A; Cochat P; Garrelfs SF; Baum MA; Groothoff JW; et al. et al. (20
   ·  DOI: [10.1016/j.kint.2021.08.015](https://doi.org/10.1016/j.kint.2021.08.015)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Disease progression d | `Q340` · not captured | 0 | not captured | not captured | llm (not captured) | tab_1:row10:col1 |
-| Disease progression d | `Q340` · not captured | 1 | not captured | not captured | llm (not captured) | tab_1:row10:col3 |
-| Disease progression d | `Q340` · not captured | 3 | not captured | not captured | llm (not captured) | tab_1:row10:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Disease progression d | `Q340` · not captured | 0 | not captured | not captured | llm (not captured) | tab_1:row10:col1 |
+| PD (effect) | Disease progression d | `Q340` · not captured | 1 | not captured | not captured | llm (not captured) | tab_1:row10:col3 |
+| PD (effect) | Disease progression d | `Q340` · not captured | 3 | not captured | not captured | llm (not captured) | tab_1:row10:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

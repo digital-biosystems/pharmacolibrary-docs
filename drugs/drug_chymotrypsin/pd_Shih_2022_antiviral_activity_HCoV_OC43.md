@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pentarlandir UPPTA (measured concentrations) drives name (in μM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pentarlandir UPPTA concentrations inhibit antiviral activity against HCoV-OC43 in HCT8 cells, with EC50 ≈ 1.3 μM (CC50 ≈ 206 μM); the mechanism is direct inhibition of viral proteases (3CLpro, IC50 0.474 μM, and possibly TMPRSS2), and the concentration–inhibition data were fitted with a five-parameter logistic dose–response curve; no PD rate parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shih_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,33 +30,33 @@ Shih PC; Mao YW; Hu JW; Hsieh HY; Shih TM; Lu LP; et al. et al. (2022). ACS phar
   ·  DOI: [10.1021/acsptsci.1c00264](https://doi.org/10.1021/acsptsci.1c00264)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tmax (h) — fed, single dose/1000 mg/kg | `Q56` · not captured | 3.40 | h | not captured | exact (not captured) | tbl2:row0:col2 |
-| Tmax (h) — fasting, single dose/350 mg/kg | `Q56` · not captured | 5.33 | h | not captured | exact (not captured) | tbl2:row0:col3 |
-| Tmax (h) — fasting, single dose/750 mg/kg | `Q56` · not captured | 2.60 | h | not captured | exact (not captured) | tbl2:row0:col4 |
-| Tmax (h) — fasting, single dose/1000 mg/kg | `Q56` · not captured | 3.71 | h | not captured | exact (not captured) | tbl2:row0:col5 |
-| Tmax (h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q56` · not captured | 4.83 | h | not captured | exact (not captured) | tbl2:row0:col6 |
-| Cmax(μM) — fed, single dose/1000 mg/kg | `Q32` · not captured | 0.91 | μM | not captured | exact (not captured) | tbl2:row1:col2 |
-| Cmax(μM) — fasting, single dose/350 mg/kg | `Q32` · not captured | 0.69 | μM | not captured | exact (not captured) | tbl2:row1:col3 |
-| Cmax(μM) — fasting, single dose/750 mg/kg | `Q32` · not captured | 2.12 | μM | not captured | exact (not captured) | tbl2:row1:col4 |
-| Cmax(μM) — fasting, single dose/1000 mg/kg | `Q32` · not captured | 4.59 | μM | not captured | exact (not captured) | tbl2:row1:col5 |
-| Cmax(μM) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q32` · not captured | 3.62 | μM | not captured | exact (not captured) | tbl2:row1:col6 |
-| T1/2 (h) — fed, single dose/1000 mg/kg | `Q57` · not captured | 3.90 | h | not captured | exact (not captured) | tbl2:row2:col2 |
-| T1/2 (h) — fasting, single dose/350 mg/kg | `Q57` · not captured | 3.48 | h | not captured | exact (not captured) | tbl2:row2:col3 |
-| T1/2 (h) — fasting, single dose/750 mg/kg | `Q57` · not captured | 2.58 | h | not captured | exact (not captured) | tbl2:row2:col4 |
-| T1/2 (h) — fasting, single dose/1000 mg/kg | `Q57` · not captured | 2.74 | h | not captured | exact (not captured) | tbl2:row2:col5 |
-| T1/2 (h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q57` · not captured | 6.01 | h | not captured | exact (not captured) | tbl2:row2:col6 |
-| AUC0-t (μM·h) — fed, single dose/1000 mg/kg | `Q19` · not captured | 4.84 | μM·h | not captured | exact (not captured) | tbl2:row3:col2 |
-| AUC0-t (μM·h) — fasting, single dose/350 mg/kg | `Q19` · not captured | 2.39 | μM·h | not captured | exact (not captured) | tbl2:row3:col3 |
-| AUC0-t (μM·h) — fasting, single dose/750 mg/kg | `Q19` · not captured | 13.82 | μM·h | not captured | exact (not captured) | tbl2:row3:col4 |
-| AUC0-t (μM·h) — fasting, single dose/1000 mg/kg | `Q19` · not captured | 26.06 | μM·h | not captured | exact (not captured) | tbl2:row3:col5 |
-| AUC0-t (μM·h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q19` · not captured | 34.13 | μM·h | not captured | exact (not captured) | tbl2:row3:col6 |
-| AUC0-∞ (μM·h) — fed, single dose/1000 mg/kg | `Q17` · not captured | 6.73 | μM·h | not captured | exact (not captured) | tbl2:row4:col2 |
-| AUC0-∞ (μM·h) — fasting, single dose/350 mg/kg | `Q17` · not captured | 4.10 | μM·h | not captured | exact (not captured) | tbl2:row4:col3 |
-| AUC0-∞ (μM·h) — fasting, single dose/750 mg/kg | `Q17` · not captured | 13.94 | μM·h | not captured | exact (not captured) | tbl2:row4:col4 |
-| AUC0-∞ (μM·h) — fasting, single dose/1000 mg/kg | `Q17` · not captured | 30.16 | μM·h | not captured | exact (not captured) | tbl2:row4:col5 |
-| AUC0-∞ (μM·h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q17` · not captured | 36.73 | μM·h | not captured | exact (not captured) | tbl2:row4:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Tmax (h) — fed, single dose/1000 mg/kg | `Q56` · not captured | 3.40 | h | not captured | exact (not captured) | tbl2:row0:col2 |
+| PK (driver) | Tmax (h) — fasting, single dose/350 mg/kg | `Q56` · not captured | 5.33 | h | not captured | exact (not captured) | tbl2:row0:col3 |
+| PK (driver) | Tmax (h) — fasting, single dose/750 mg/kg | `Q56` · not captured | 2.60 | h | not captured | exact (not captured) | tbl2:row0:col4 |
+| PK (driver) | Tmax (h) — fasting, single dose/1000 mg/kg | `Q56` · not captured | 3.71 | h | not captured | exact (not captured) | tbl2:row0:col5 |
+| PK (driver) | Tmax (h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q56` · not captured | 4.83 | h | not captured | exact (not captured) | tbl2:row0:col6 |
+| PK (driver) | Cmax(μM) — fed, single dose/1000 mg/kg | `Q32` · not captured | 0.91 | μM | not captured | exact (not captured) | tbl2:row1:col2 |
+| PK (driver) | Cmax(μM) — fasting, single dose/350 mg/kg | `Q32` · not captured | 0.69 | μM | not captured | exact (not captured) | tbl2:row1:col3 |
+| PK (driver) | Cmax(μM) — fasting, single dose/750 mg/kg | `Q32` · not captured | 2.12 | μM | not captured | exact (not captured) | tbl2:row1:col4 |
+| PK (driver) | Cmax(μM) — fasting, single dose/1000 mg/kg | `Q32` · not captured | 4.59 | μM | not captured | exact (not captured) | tbl2:row1:col5 |
+| PK (driver) | Cmax(μM) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q32` · not captured | 3.62 | μM | not captured | exact (not captured) | tbl2:row1:col6 |
+| PK (driver) | T1/2 (h) — fed, single dose/1000 mg/kg | `Q57` · not captured | 3.90 | h | not captured | exact (not captured) | tbl2:row2:col2 |
+| PK (driver) | T1/2 (h) — fasting, single dose/350 mg/kg | `Q57` · not captured | 3.48 | h | not captured | exact (not captured) | tbl2:row2:col3 |
+| PK (driver) | T1/2 (h) — fasting, single dose/750 mg/kg | `Q57` · not captured | 2.58 | h | not captured | exact (not captured) | tbl2:row2:col4 |
+| PK (driver) | T1/2 (h) — fasting, single dose/1000 mg/kg | `Q57` · not captured | 2.74 | h | not captured | exact (not captured) | tbl2:row2:col5 |
+| PK (driver) | T1/2 (h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q57` · not captured | 6.01 | h | not captured | exact (not captured) | tbl2:row2:col6 |
+| PK (driver) | AUC0-t (μM·h) — fed, single dose/1000 mg/kg | `Q19` · not captured | 4.84 | μM·h | not captured | exact (not captured) | tbl2:row3:col2 |
+| PK (driver) | AUC0-t (μM·h) — fasting, single dose/350 mg/kg | `Q19` · not captured | 2.39 | μM·h | not captured | exact (not captured) | tbl2:row3:col3 |
+| PK (driver) | AUC0-t (μM·h) — fasting, single dose/750 mg/kg | `Q19` · not captured | 13.82 | μM·h | not captured | exact (not captured) | tbl2:row3:col4 |
+| PK (driver) | AUC0-t (μM·h) — fasting, single dose/1000 mg/kg | `Q19` · not captured | 26.06 | μM·h | not captured | exact (not captured) | tbl2:row3:col5 |
+| PK (driver) | AUC0-t (μM·h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q19` · not captured | 34.13 | μM·h | not captured | exact (not captured) | tbl2:row3:col6 |
+| PK (driver) | AUC0-∞ (μM·h) — fed, single dose/1000 mg/kg | `Q17` · not captured | 6.73 | μM·h | not captured | exact (not captured) | tbl2:row4:col2 |
+| PK (driver) | AUC0-∞ (μM·h) — fasting, single dose/350 mg/kg | `Q17` · not captured | 4.10 | μM·h | not captured | exact (not captured) | tbl2:row4:col3 |
+| PK (driver) | AUC0-∞ (μM·h) — fasting, single dose/750 mg/kg | `Q17` · not captured | 13.94 | μM·h | not captured | exact (not captured) | tbl2:row4:col4 |
+| PK (driver) | AUC0-∞ (μM·h) — fasting, single dose/1000 mg/kg | `Q17` · not captured | 30.16 | μM·h | not captured | exact (not captured) | tbl2:row4:col5 |
+| PK (driver) | AUC0-∞ (μM·h) — fasting, 14-day repeated dose/1000 mg/kg/day | `Q17` · not captured | 36.73 | μM·h | not captured | exact (not captured) | tbl2:row4:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

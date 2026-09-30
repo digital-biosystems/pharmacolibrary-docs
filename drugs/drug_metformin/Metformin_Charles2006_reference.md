@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
 ### Reviewer guidance
@@ -32,7 +34,7 @@ Charles B; Norris R; Xiao X; Hague W et al. (2006). Therapeutic drug monitoring 
 ## Model component
 <dbs-pgx drug="metformin" model-id="Metformin_Charles2006_reference" status="accepted_with_caveats" stale="false" population="women in late pregnancy with gestational diabetes or type 2 diabetes" measured-compound="metformin" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
@@ -52,9 +54,6 @@ Charles B; Norris R; Xiao X; Hague W et al. (2006). Therapeutic drug monitoring 
 </details>
 
 ## Departures & gaps
-
-**Deviations:**
-- `defaulted_parameters`: ['F']
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'Mean (range) metformin concentrations in cord plasma' — extend the ontology if this is a real PK parameter (source ['Charles_2006:abstract'])
@@ -116,8 +115,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Choi_2025:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chae_2012:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Charles_2006:abstract'] |
@@ -159,23 +157,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_modelica.zip" download>Metformin_Charles2006_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_fmi.zip" download>Metformin_Charles2006_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_fmi.zip" download>Metformin_Charles2006_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_matlab.zip" download>Metformin_Charles2006_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_matlab_simbio.zip" download>Metformin_Charles2006_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_sbml.zip" download>Metformin_Charles2006_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_cellml.zip" download>Metformin_Charles2006_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference.svg" alt="Metformin_Charles2006_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 2000 mg, single dose, first-order absorption (ka 0.41 /h, lag 20.4 min, F 0.9). _The paper's dose was not captured; the default is the WHO ATC DDD 2000 mg oral (A10BA02) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_metformin/Metformin_Charles2006_reference/Metformin_Charles2006_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Metformin_Charles2006_reference_params.json` · controls `Metformin_Charles2006_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

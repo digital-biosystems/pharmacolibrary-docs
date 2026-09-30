@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Detemir (measured concentrations) drives name (in mg/kg): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism linking detemir concentrations to the glucose infusion rate response (GIR AUC0-24, mg/kg); it only reports a clear dose-response relationship, with single subcutaneous doses of 0.8 U/kg (LD) and 1.6 U/kg (HD) producing a significant dose-dependent increase in total GIRAUC sustained for at least 24 hours, and no potency (IC50/EC50/Emax) or rate (kin/kout/ke0/gamma) values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bilz_2018`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives phosphorylated tau (in intensity): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative concentration–response model for phosphorylated tau (AT8 intensity) versus A36; it only states that A36 treatment significantly diminished hippocampal p-Tau in PS19 mice, with no IC50, EC50, Emax, or rate constants given. Mechanistically, A36 stabilizes the CAST–calpain-2 protein–protein interaction, preventing CAST degradation and limiting calpain-2 activation, thereby reducing phosphorylated tau.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

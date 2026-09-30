@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BDM91531 (measured concentrations) drives name (in °C) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BDM91531 (µM concentrations) acts on the thermal shift (differential scanning fluorimetry) response of AcrB, with an inhibitory effect direction; the paper describes the mechanism as trapping AcrB protomers in an O-to-L transitional state via electrostatic interactions (D408, E947, D951), blocking conformational cycling of the trimer, but no quantitative PD parameters (Imax, IC50, Emax, kin, kout, ke0, gamma) or explicit model family are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Börnsen_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

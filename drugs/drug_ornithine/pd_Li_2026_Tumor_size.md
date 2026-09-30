@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PF-06804103 drives name (in tumor volume): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> PF-06804103 exposure drives changes in tumor size via an exposure-dependent tumor dynamics model with resistance and a first-order treatment effect, with parameters for tumor cell growth rate (KG), death rate (KD), and drug resistance (λ); baseline body weight and baseline tumor burden were significant covariates on KG. The excerpts do not report the numerical values of KG, KD, or λ, nor an explicit Emax/IC50-type mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2026`
 - **model family:** `tte`
 - **driver:** `not_resolved`
@@ -21,18 +31,18 @@ Li J; Zhou L; Leung ACF; Yin D; Chen X et al. (2026). CPT: pharmacometrics & sys
   ·  DOI: [10.1002/psp4.70261](https://doi.org/10.1002/psp4.70261)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ΘCL (L/h) — Estimate | `Q358` · not captured | 0.03089 | L/h | not captured | llm_corrected (not captured) | psp470261-tbl-0001:row1:col1 |
-| ΘCL (L/h) — RSE (%) | `Q358` · not captured | 9.211 | L/h | not captured | llm_corrected (not captured) | psp470261-tbl-0001:row1:col2 |
-| ΘVc (L) — Estimate | `Q63` · not captured | 1.681 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row2:col1 |
-| ΘVc (L) — RSE (%) | `Q63` · not captured | 9.406 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row2:col2 |
-| ΘVp (L) — Estimate | `Q64` · not captured | 3.005 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row3:col1 |
-| ΘVp (L) — RSE (%) | `Q64` · not captured | 9.418 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row3:col2 |
-| ΘQ (L/h) — Estimate | `Q358` · not captured | 24.86 | L/h | not captured | llm (not captured) | psp470261-tbl-0001:row4:col1 |
-| ΘQ (L/h) — RSE (%) | `Q30` · not captured | 21.5 | L/h | not captured | llm (not captured) | psp470261-tbl-0001:row4:col2 |
-| ΘMale‐V1 — Estimate | `Q63` · not captured | -0.3186 | not captured | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row6:col1 |
-| ΘMale‐V1 — RSE (%) | `Q63` · not captured | 16.36 | not captured | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row6:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ΘCL (L/h) — Estimate | `Q358` · not captured | 0.03089 | L/h | not captured | llm_corrected (not captured) | psp470261-tbl-0001:row1:col1 |
+| PK (driver) | ΘCL (L/h) — RSE (%) | `Q358` · not captured | 9.211 | L/h | not captured | llm_corrected (not captured) | psp470261-tbl-0001:row1:col2 |
+| PK (driver) | ΘVc (L) — Estimate | `Q63` · not captured | 1.681 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row2:col1 |
+| PK (driver) | ΘVc (L) — RSE (%) | `Q63` · not captured | 9.406 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row2:col2 |
+| PK (driver) | ΘVp (L) — Estimate | `Q64` · not captured | 3.005 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row3:col1 |
+| PK (driver) | ΘVp (L) — RSE (%) | `Q64` · not captured | 9.418 | L | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row3:col2 |
+| PK (driver) | ΘQ (L/h) — Estimate | `Q358` · not captured | 24.86 | L/h | not captured | llm (not captured) | psp470261-tbl-0001:row4:col1 |
+| PK (driver) | ΘQ (L/h) — RSE (%) | `Q30` · not captured | 21.5 | L/h | not captured | llm (not captured) | psp470261-tbl-0001:row4:col2 |
+| PK (driver) | ΘMale‐V1 — Estimate | `Q63` · not captured | -0.3186 | not captured | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row6:col1 |
+| PK (driver) | ΘMale‐V1 — RSE (%) | `Q63` · not captured | 16.36 | not captured | not captured | llm_confirmed (not captured) | psp470261-tbl-0001:row6:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

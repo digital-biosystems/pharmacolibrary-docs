@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ICPD47 (measured concentrations) drives cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ICPD47 (an Hsp90 inhibitor) concentration-dependently inhibits MTT-measured cell viability of pancreatic cancer cells, with 72 h EC50 values of 3.91 ± 0.25 µM in MIA PaCa-2 and 2.38 ± 0.25 µM in PANC-1 cells; the paper does not state a pharmacodynamic model or mechanism (no Imax, kin/kout, or ke0 given). Gemcitabine reduced viability to about 40% and showed strong synergy with ICPD47 in MIA PaCa-2 cells (combination index &lt; 0.5).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Daunys_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

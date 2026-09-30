@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VK2809A drives ANGPTL4 (in RQ): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In Huh-7 human hepatic cells, increasing concentrations of the THRβ agonists dose-dependently stimulate ANGPTL4 transcript levels (RQ) via direct Emax-type gene-expression dose-response curves; the paper does not state a separate production/elimination (kin/kout) mechanism. For MGL-3196 (resmetirom), the mean ANGPTL4 EC50 was 508.4 nM (vs 1.3 nM for T3 and 6.2 nM for GC-1); the excerpts do not report an ANGPTL4 EC50 for VK2809A, the driver listed in the record, and no Emax, gamma, or rate constants are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

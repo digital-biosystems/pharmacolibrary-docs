@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The tamoxifen-to-endoxifen metabolism link parameter CL23/F has no value in the record (a second reader read 0.459), and its reported unit could not be converted to SI, so this structural parameter failed a dimension check and the model was rejected.**

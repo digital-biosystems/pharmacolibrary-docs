@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Talisomycin drives cell survival (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (and talisomycin) concentrations (1, 3, 10, 25 µM, 1-h exposure) act directly on HeLa cell survival (colony survival inhibition), producing biphasic dose-response curves attributed to differential killing of a sensitive and a resistant cell subpopulation rather than to a stated PD mechanism such as Emax or effect-compartment; potency is expressed as primary and secondary mean lethal doses Do' and Do'' (inverse slopes of the two linear portions, e.g. Do' = 2.0 µM with 82% sensitive cells for asynchronous cells) with no IC50, Emax, kin, kout or ke0 reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mirabelli_1981`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,12 +31,12 @@ Mirabelli CK; Crooke ST et al. (1981). Cancer chemotherapy and pharmacology 5
   ·  DOI: [10.1007/BF00434393](https://doi.org/10.1007/BF00434393)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| S — Do' (IxM) a | `Q335` · not captured | 2.0 | not captured | not captured | exact (not captured) | tab_0:row8:col2 |
-| S — % Sensitive | `Q335` · not captured | 82 | not captured | not captured | exact (not captured) | tab_0:row8:col3 |
-| S — Do" (~M) c % Survivors at | `Q335` · not captured | 26 | not captured | not captured | exact (not captured) | tab_0:row8:col4 |
-| S | `Q335` · not captured | 8 | not captured | not captured | exact (not captured) | tab_0:row8:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | S — Do' (IxM) a | `Q335` · not captured | 2.0 | not captured | not captured | exact (not captured) | tab_0:row8:col2 |
+| PD (effect) | S — % Sensitive | `Q335` · not captured | 82 | not captured | not captured | exact (not captured) | tab_0:row8:col3 |
+| PD (effect) | S — Do" (~M) c % Survivors at | `Q335` · not captured | 26 | not captured | not captured | exact (not captured) | tab_0:row8:col4 |
+| PD (effect) | S | `Q335` · not captured | 8 | not captured | not captured | exact (not captured) | tab_0:row8:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifaximin (concentrations from this paper's PK model) drives name (in log10CFU/gland): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the mouse mastitis model, rifaximin (intramammary doses 25–800 μg/gland) inhibits S. aureus growth in mammary glands, with effect measured as Δlog10CFU/gland; the paper does not state a mechanistic kin/kout or effect-compartment model, but links PK to PD via a sigmoid inhibitory Emax model driven by AUC24/MIC90 (R2 = 0.97; %T&gt;MIC was poor, R2 = 0.57). Key values: a 2 log10CFU/gland reduction (Emax plateau) corresponded to AUC24/MIC of 14,281.63 h, and a 1.5 log10CFU/gland effect corresponded to AUC24/MIC of 8,173.48 h; PK parameters included V1 = 2.15, V2 = 0.46, Cl1 = 0.29, Cl2 = 0.89, and α = 2.38 (units not stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`
@@ -21,23 +31,23 @@ Wang H; Chen C; Chen X; Zhang J; Liu Y; Li X et al. (2021). Frontiers in veterin
   ·  DOI: [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V1 — Estimate | `Q63` · not captured | 2.15 | not captured | not captured | exact (not captured) | T4:row1:col1 |
-| V1 — SD | `Q63` · not captured | 0.07 | not captured | not captured | exact (not captured) | T4:row1:col3 |
-| V1 — CV% | `Q63` · not captured | 3.22 | not captured | not captured | exact (not captured) | T4:row1:col4 |
-| V2 — Estimate | `Q64` · not captured | 0.46 | not captured | not captured | exact (not captured) | T4:row2:col1 |
-| V2 — SD | `Q64` · not captured | 0.09 | not captured | not captured | exact (not captured) | T4:row2:col3 |
-| V2 — CV% | `Q64` · not captured | 18.84 | not captured | not captured | exact (not captured) | T4:row2:col4 |
-| Cl1 — Estimate | `Q358` · not captured | 0.29 | not captured | not captured | llm (not captured) | T4:row3:col1 |
-| Cl1 — SD | `Q358` · not captured | 0.00 | not captured | not captured | llm (not captured) | T4:row3:col3 |
-| Cl1 — CV% | `Q358` · not captured | 1.57 | not captured | not captured | llm (not captured) | T4:row3:col4 |
-| Cl2 — Estimate | `Q30` · not captured | 0.89 | not captured | not captured | special_case (not captured) | T4:row4:col1 |
-| Cl2 — SD | `Q30` · not captured | 0.34 | not captured | not captured | special_case (not captured) | T4:row4:col3 |
-| Cl2 — CV% | `Q30` · not captured | 37.77 | not captured | not captured | special_case (not captured) | T4:row4:col4 |
-| α — Estimate | `Q67` · not captured | 2.38 | not captured | not captured | exact (not captured) | T4:row5:col1 |
-| α — SD | `Q67` · not captured | 0.84 | not captured | not captured | exact (not captured) | T4:row5:col3 |
-| α — CV% | `Q67` · not captured | 35.39 | not captured | not captured | exact (not captured) | T4:row5:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V1 — Estimate | `Q63` · not captured | 2.15 | not captured | not captured | exact (not captured) | T4:row1:col1 |
+| PK (driver) | V1 — SD | `Q63` · not captured | 0.07 | not captured | not captured | exact (not captured) | T4:row1:col3 |
+| PK (driver) | V1 — CV% | `Q63` · not captured | 3.22 | not captured | not captured | exact (not captured) | T4:row1:col4 |
+| PK (driver) | V2 — Estimate | `Q64` · not captured | 0.46 | not captured | not captured | exact (not captured) | T4:row2:col1 |
+| PK (driver) | V2 — SD | `Q64` · not captured | 0.09 | not captured | not captured | exact (not captured) | T4:row2:col3 |
+| PK (driver) | V2 — CV% | `Q64` · not captured | 18.84 | not captured | not captured | exact (not captured) | T4:row2:col4 |
+| PK (driver) | Cl1 — Estimate | `Q358` · not captured | 0.29 | not captured | not captured | llm (not captured) | T4:row3:col1 |
+| PK (driver) | Cl1 — SD | `Q358` · not captured | 0.00 | not captured | not captured | llm (not captured) | T4:row3:col3 |
+| PK (driver) | Cl1 — CV% | `Q358` · not captured | 1.57 | not captured | not captured | llm (not captured) | T4:row3:col4 |
+| PK (driver) | Cl2 — Estimate | `Q30` · not captured | 0.89 | not captured | not captured | special_case (not captured) | T4:row4:col1 |
+| PK (driver) | Cl2 — SD | `Q30` · not captured | 0.34 | not captured | not captured | special_case (not captured) | T4:row4:col3 |
+| PK (driver) | Cl2 — CV% | `Q30` · not captured | 37.77 | not captured | not captured | special_case (not captured) | T4:row4:col4 |
+| PK (driver) | α — Estimate | `Q67` · not captured | 2.38 | not captured | not captured | exact (not captured) | T4:row5:col1 |
+| PK (driver) | α — SD | `Q67` · not captured | 0.84 | not captured | not captured | exact (not captured) | T4:row5:col3 |
+| PK (driver) | α — CV% | `Q67` · not captured | 35.39 | not captured | not captured | exact (not captured) | T4:row5:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

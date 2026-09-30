@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide drives GLP-1 (in pM) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a direct PD model of dulaglutide on a measured GLP-1 concentration; instead, GLP-1 receptor agonist potency is characterized by in vitro EC50s at the GLP-1 receptor — endogenous GLP-1(7–36)NH2 1.92 pM, liraglutide 6 pM, and dulaglutide 80 pM — which are used to derive in vivo EC50s by assuming the ratio of in vitro EC50s equals the ratio of in vivo EC50s relative to the estimated endogenous GLP-1 in vivo EC50 (EMAX_1, EC50_1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bosch_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,12 +31,12 @@ Bosch R; Petrone M; Arends R; Vicini P; Sijbrands EJG; Hoefman S; Snelder N et a
   ·  DOI: [10.1002/psp4.12752](https://doi.org/10.1002/psp4.12752)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| GLP−1 receptor EC50 (pM) — GLP−1(7–36)NH1 | `Q321` · not captured | 1.92 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col2 |
-| GLP−1 receptor EC50 (pM) — Liraglutide | `Q321` · not captured | 6 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col4 |
-| GLP−1 receptor EC50 (pM) — Dulaglutide | `Q321` · not captured | 80 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col5 |
-| Glucagon receptor EC50 (pM) — Glucagon | `Q321` · not captured | 1.54 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row1:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | GLP−1 receptor EC50 (pM) — GLP−1(7–36)NH1 | `Q321` · not captured | 1.92 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col2 |
+| PD (effect) | GLP−1 receptor EC50 (pM) — Liraglutide | `Q321` · not captured | 6 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col4 |
+| PD (effect) | GLP−1 receptor EC50 (pM) — Dulaglutide | `Q321` · not captured | 80 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row0:col5 |
+| PD (effect) | Glucagon receptor EC50 (pM) — Glucagon | `Q321` · not captured | 1.54 | pM | not captured | llm_confirmed (not captured) | psp412752-tbl-0002:row1:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

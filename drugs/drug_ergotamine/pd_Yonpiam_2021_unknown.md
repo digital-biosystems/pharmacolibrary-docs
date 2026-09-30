@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenylephrine drives arterial contractile response (in % of max): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model for ergotamine itself; instead, sigmoidal dose-response curves of phenylephrine (PE) driving the arterial contractile response (% of maximum PE effect) were fitted, and prior oral ergot sclerotia exposure significantly decreased the PE EC50 (increased vascular sensitivity, p = 0.0462), with the PE response first observed at 1 × 10−7 M in controls (0.5 × 10−7 M after exposure) and maximum contractions of 22.8 g (control) versus 18.0 g (exposed) at the highest PE concentration; no IC50, Emax, kin, kout, or ke0 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yonpiam_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

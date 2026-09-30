@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Rejected: the potassium chloride record from Li_2025 reports only exposure summary statistics (Cmax 4.15 mmol/L, Tmax 6.11 h, t1/2 6.55 h, AUC∞ 141.74 mmol·h/L) with no distribution volume and no clearance, so it is not a compartmental population PK model.**
@@ -45,7 +47,7 @@ Li X; Qu M; Li H; Li T et al. (2025). Frontiers in cardiovascular medicine 12
 | C0(mmol/L) | `Q86` · C0 | 3.34 | mmol/L | not captured | [mM] / [l] | not captured | exact (1.0) | T2:row0:col4 | — | not captured |
 | Tmax(h) | `Q56` · tmax | 6.11 | h | 21996.0 | [h] | not captured | exact (1.0) | T2:row1:col4 | — | not captured |
 | Cmax(mmol/L) | `Q32` · Cmax | 4.15 | mmol/L | not captured | [mM] / [l] | not captured | exact (1.0) | T2:row2:col4 | — | not captured |
-| Ka(per hour) | `Q49` · kabs | 0.32 | per hour | not captured | [perhour] | not captured | exact (1.0) | T2:row4:col4 | — | not captured |
+| Ka(per hour) | `Q49` · kabs | 0.32 | per hour | 8.888888888888889e-05 | 1/h | not captured | exact (1.0) | T2:row4:col4 | — | not captured |
 | t1/2(h) | `Q57` · t1/2z | 6.55 | h | 23580.0 | [h] | not captured | exact (1.0) | T2:row5:col4 | — | not captured |
 | AUClimit(mmol·h/L) | `Q17` · AUC∞ | 141.74 | mmol·h/L | not captured | [[h] · [mM]] / [l] | not captured | llm (0.6) | T2:row6:col4 | — | not captured |
 
@@ -67,6 +69,7 @@ Li X; Qu M; Li H; Li T et al. (2025). Frontiers in cardiovascular medicine 12
 - status held at route_to_review — not promoted
 - population split: '3-dose administration group(extended-release tablets 1.5735 g and granules 1.6767 g)' subgroup of Li_2025 (paper reports 5 populations: 1-dose administration group(extended-release tablets 0.5245 g and granules 0.5589 g), 2-dose administration group(extended-release tablets 1.049 g and granules 1.1178 g), 3-dose administration group(extended-release tablets 1.5735 g and granules 1.6767 g), literature 1(granules 64 meq), literature 2(granules 50 meq))
 - review gap-fill skipped: this record measures 'potassium', not potassium_chloride — the review values are the parent's
+- unit re-normalised: kabs 'per hour' now converts (value unchanged)
 
 **Extraction notes:**
 - transposed table T2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing

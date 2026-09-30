@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aminoglycosides (streptomycin, kanamycin, gentamicin, tobramycin, amikacin) (measured concentrations) drive net bacterial growth rate (in log10 change in bacterial density per hour): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Kanamycin concentrations (μg/mL) inhibit the net bacterial growth rate ψ (log10 change in bacterial density per hour) via a sigmoid Emax/Hill-type function with parameters ψmax = 0.7290 (CI 0.5889–1.022), ψmin = −0.9728 (CI −1.213 to −0.8488), Hill coefficient −0.5324 (CI −0.7153 to −0.3553), and EC50 = 1.374 μg/mL (CI 0.8118–2.202); the paper does not state a mechanism beyond this direct concentration–effect (Hill) relationship, and reports a zMIC of 0.89 ± 0.52 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

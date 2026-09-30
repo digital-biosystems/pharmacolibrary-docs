@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives total peripheral resistance (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for cilazapril's effect on total peripheral resistance; TPR was only measured descriptively, being nonsignificantly decreased versus placebo after 3 weeks of cilazapril 2.5 mg/day. ACE inhibition was instead quantified via the diastolic blood pressure response to angiotensin I infusion, attributed to competitive antagonism between angiotensin I and ACE inhibitors, with a pharmacological half-life of about 4 hours for cilazapril.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erb_1991`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

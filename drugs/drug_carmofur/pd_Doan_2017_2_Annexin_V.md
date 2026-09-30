@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carmofur (measured concentrations) drives apoptosis (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carmofur concentrations (μM) act on apoptosis measured as Annexin V binding in U87MG cells and GSC lines; the paper states the mechanism is inhibition of ASAH1, which increases cellular ceramide and induces apoptosis, but it does not report a pharmacodynamic model or parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for the Annexin V response; the only potency values given are MTT-based IC50s of 11–104 mM (as printed in the excerpts) for ASAH1 inhibitors killing U87MG cells and GSCs.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Doan_2017_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

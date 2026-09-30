@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KR-12-NH2 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for the TNF-α response. It reports only that in AOM/DSS mice, prophylactic administration of KR-12-NH2 and C3-KR-12-NH2 significantly lowered TNF-α levels versus AOM/DSS-only controls (p = 0.02 and p = 0.01, respectively), with no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values stated; the mechanism is not quantitatively described, though the effect is discussed as inhibition of TNF-α production consistent with known LL-37 anti-inflammatory activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Włodarczyk_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride (CPC) inhibits proliferation of HCC cells (HepG2, MHCC97H) measured by CCK8 and colony-formation assays in a dose- and time-dependent manner, with less effect on normal LO2 liver cells; the paper reports screening for IC50 values but does not state a numeric IC50, Emax, or any PD model parameters, and no mechanism (e.g., Emax or turnover model) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cai_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

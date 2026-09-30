@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trofinetide drives Rett Syndrome Clinician Rating of Ability to Communicate Choices (in score): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In the RTT-COMC exposure–response analysis (181 participants, 672 records), trofinetide Cmax (range 0–270 μg/mL) acts on the categorical RTT-COMC score via a proportional odds model with an exponential drug-effect term added to the baseline logit, such that higher Cmax increases the probability of lower (improved) scores; no potency parameters (EC50/Emax) or rate constants are given, and the model predicts a cumulative probability of score ≤3 of 0.55 at the median Cmax of 147 μg/mL versus 0.49 for placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Darwish_2024`
 - **model family:** `linear`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives ABCB1 mRNA expression (in relative units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Rifampicin (not rifabutin) concentration-dependently induced ABCB1 mRNA expression in LS180 cells via PXR-mediated gene induction, described by an Emax model; when normalized to intracellular concentrations after 24 h exposure, rifampicin induced ABCB1 with an EC50 of 37.4 ± 2.0 µM and an Emax of 2.6-fold (± 0.1) versus untreated control, whereas corresponding Emax parameters for rifabutin could not be computed because of a lacking sigmoidal character, making rifampicin the more potent ABCB1 inducer. The paper does not state kin, kout, ke0, or gamma values for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

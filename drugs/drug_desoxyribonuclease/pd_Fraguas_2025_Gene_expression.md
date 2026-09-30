@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BAY-3827 (measured concentrations) drives name (in FC): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes an Emax-type inhibitory model in which BAY-3827 concentrations (μM) drive a gene-expression response measured as fold change (FC), but the paper excerpts do not report this gene-expression PD model, its mechanism, or any Emax/IC50 parameters for it; the excerpts only give cell-free AMPK inhibition IC50 values for BAY-3827 (e.g., 1.4 nM at 10 μM ATP and 15 nM at 2 mM ATP, and 1.8–57 nM across AMPK complexes depending on ATP), with BAY-3827 characterized as a mixed-type, ATP-competitive-context AMPK inhibitor.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fraguas_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

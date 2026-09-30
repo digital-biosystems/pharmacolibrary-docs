@@ -44,17 +44,17 @@ Off-label uses: irritable bowel syndrome, sleep disorders, diabetic neuropathy, 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | 1-compartment, IV | 10 | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | 1-compartment, IV | 3 | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | 1-compartment, oral | 2 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Koh_2019_reference](drugs/drug_amitriptyline/Amitriptyline_Koh2019_reference.md) | held back | 1-compartment, IV | 10 | Koh A et al., Quantitative Modeling Analysis Demonstr…, Journal of clinical pharmac… (2019) | [10.1002/jcph.1344](https://doi.org/10.1002/jcph.1344) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q30 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Ratajczak-Enselme_2015_reference](drugs/drug_amitriptyline/Amitriptyline_RatajczakEnselme2015_reference.md) | held back | 1-compartment, IV | 3 | Ratajczak-Enselme M et al., Population Pharmacokinetics of Amitript…, Regional anesthesia and pai… (2015) | [10.1097/AAP.0000000000000322](https://doi.org/10.1097/AAP.0000000000000322) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yukawa_2002_reference](drugs/drug_amitriptyline/Amitriptyline_Yukawa2002_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yukawa E et al., Population pharmacokinetics of haloperi…, Clinical pharmacokinetics (2002) | [10.2165/00003088-200241020-00006](https://doi.org/10.2165/00003088-200241020-00006) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tylutki_2018](drugs/drug_amitriptyline/pd_Tylutki_2018_RR.md) | Tylutki (2018) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tylutki_2018_RR](drugs/drug_amitriptyline/pd_Tylutki_2018_RR.md) | RR interval length ← amitriptyline · direct Emax (saturable) effect | — | Tylutki (2018) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -127,6 +127,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | skeletal muscle | <sub>“…plasma concentrations are reached 2-12 hours after oral or intramuscular administration [F…”</sub> | prose |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` metabolism/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |

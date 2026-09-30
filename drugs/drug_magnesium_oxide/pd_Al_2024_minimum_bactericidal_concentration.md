@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CP-MgONPs drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CP-MgONPs (25–2500 μg·mL−1) were applied to six bacterial strains in an agar-well diffusion assay, with inhibition of microbial growth measured as inhibition zones (e.g. 20.72 ± 0.33 mm for E. coli and 19.52 ± 0.05 mm for S. aureus at 2500 μg·mL−1); MICs were 625 μg·mL−1 (E. coli, S. aureus), 0.64 μg·mL−1 (B. cereus, P. aeruginosa), 0.78 μg·mL−1 (K. pneumoniae) and 0.88 μg·mL−1 (S. pneumoniae), and MBCs were 1.74, 1025, 1.96, 1012, 2.11 and 1.89 μg·mL−1 for B. cereus, E. coli, K. pneumoniae, S. aureus, S. pneumoniae and P. aeruginosa respectively. The paper does not state a pharmacodynamic model (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma for the antibacterial response); it only suggests the
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

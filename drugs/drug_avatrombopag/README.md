@@ -27,9 +27,9 @@ In July 2025, the FDA expanded approval to include a new pediatric formulation, 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | 1-compartment (no model) | 4 | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C1_half_life_beta failed (ratio 0.6843)</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_2_reference](drugs/drug_avatrombopag/Avatrombopag_Liu2025v2_reference.md) | — | 1-compartment (no model) | 4 | Liu X et al., Investigation of the ABCB1 Gene Polymor…, Pharmaceuticals (Basel, Swi… (2025) | [10.3390/ph18060903](https://doi.org/10.3390/ph18060903) |
 
 ## Pharmacogenomics (PGx)
 
@@ -55,6 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate/transport | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate/transport, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` substrate/transport, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C8` inducer, `CYP2C9` inducer/safety_allele/substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…Fecal excretion accounted for 88% of the administered dose, with…”</sub> | prose |

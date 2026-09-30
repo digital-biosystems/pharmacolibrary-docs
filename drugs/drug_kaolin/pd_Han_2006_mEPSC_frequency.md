@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LY354740 (measured concentrations) drives name (in events/s): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> LY354740 (group II mGluR agonist) concentration-dependently inhibits mEPSC frequency (events/s) in CeLC neurons via a presynaptic, receptor-mediated mechanism (no effect on mEPSC amplitude); the paper does not state a formal Emax/IC50 model, but reports LY354740 is 25-fold more potent in arthritic than normal rats, with maximal effect at 1 μM reducing mEPSC frequency to 53.4 ± 12.8% of predrug.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2006`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

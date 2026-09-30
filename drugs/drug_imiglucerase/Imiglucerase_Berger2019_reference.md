@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **No volume or clearance — not a compartmental population PK model.**
@@ -40,8 +42,8 @@ Berger J; Vigan M; Pereira B; Nguyen TT; Froissart R; Belmatoug N; et al. et al.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| fast phase half-life | `Q59` · t1/2α | 0.36 | days | not captured | [d] | not captured | llm (0.6) | Berger_2019:abstract | — | not captured |
-| slow phase half-life | `Q57` · t1/2z | 9.7 | days | not captured | [d] | not captured | llm (0.6) | Berger_2019:abstract | — | not captured |
+| fast phase half-life | `Q59` · t1/2α | 0.36 | days | 31104.0 | h | not captured | llm (0.6) | Berger_2019:abstract | — | not captured |
+| slow phase half-life | `Q57` · t1/2z | 9.7 | days | 838079.9999999999 | h | not captured | llm (0.6) | Berger_2019:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,6 +58,8 @@ Berger J; Vigan M; Pereira B; Nguyen TT; Froissart R; Belmatoug N; et al. et al.
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - molar mass: none found for 'imiglucerase' — its concentrations stay mass-only
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- unit re-normalised: t1/2α 'days' now converts (value unchanged)
+- unit re-normalised: t1/2z 'days' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Berger_2019_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model

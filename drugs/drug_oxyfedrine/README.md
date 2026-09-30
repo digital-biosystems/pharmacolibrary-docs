@@ -20,11 +20,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026](drugs/drug_oxyfedrine/pd_Dings_2026_Heart_rate.md) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026](drugs/drug_oxyfedrine/pd_Dings_2026_Mean_arterial_pressure.md) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026](drugs/drug_oxyfedrine/pd_Dings_2026_Systolic_blood_pressure.md) | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Heart_rate](drugs/drug_oxyfedrine/pd_Dings_2026_Heart_rate.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Mean_arterial_pressure](drugs/drug_oxyfedrine/pd_Dings_2026_Mean_arterial_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dings_2026_Systolic_blood_pressure](drugs/drug_oxyfedrine/pd_Dings_2026_Systolic_blood_pressure.md) | name ← cafedrine/theodrenaline or ephedrine · direct Emax (saturable) effect | — | Dings C et al., Pharmacometric Analysis of Cafedrine/Th…, Pharmaceutics (2026) | [10.3390/pharmaceutics18030296](https://doi.org/10.3390/pharmaceutics18030296) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

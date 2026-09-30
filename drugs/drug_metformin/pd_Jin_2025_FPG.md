@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dorzagliatin drives fasting plasma glucose (in mg/dL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dorzagliatin plasma concentrations drive a reduction in fasting plasma glucose (expressed as percent change from control, ΔFPG) in tumor-bearing mice, described by a sigmoid Emax model (E = E0 + Emax·Ce^γ/(EC50^γ + Ce^γ)); for dorzagliatin monotherapy EC50 = 740 ng/mL with Hill coefficient γ = 0.80 (combination with WX390: EC50 490 ng/mL, γ 1.35; with BYL719: EC50 660 ng/mL, γ 0.95). The paper does not state Emax, E0, or a mechanistic turnover (kin/kout) description beyond the direct Emax concentration–effect relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Jin G; Zheng K; Liu S; Yi H; Wei W; Xu C; et al. et al. (2025). Pharmaceuticals 
   ·  DOI: [10.3390/ph18060927](https://doi.org/10.3390/ph18060927)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (Dorz) | `Q321` · not captured | 740 | ng/mL | not captured | review_gapfill (not captured) | Jin_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (Dorz) | `Q321` · not captured | 740 | ng/mL | not captured | review_gapfill (not captured) | Jin_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

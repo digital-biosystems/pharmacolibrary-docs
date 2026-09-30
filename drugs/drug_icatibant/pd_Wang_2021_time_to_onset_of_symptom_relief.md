@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Icatibant (concentrations from the PK model of Wang_2021::typical_value) drives name (in hours): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper links icatibant plasma exposure (ng/mL, from a 2-compartment popPK model with first-order absorption, ka = 3.27 h–1, tlag = 0.0426 h, Cl/F = 15.4 L/h, Vc/F = 20.4 L) to the time to onset of symptom relief (TOSR, hours) in pediatric HAE patients, but it does not state a mechanistic PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given); only a flat exposure–response relationship with a plateau at observed pediatric exposures and a mean TOSR of 1.38 hours is reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2021`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
@@ -21,29 +31,29 @@ Wang Y; Jomphe C; Marier JF; Martin P et al. (2021). Journal of clinical pharmac
   ·  DOI: [10.1002/jcph.1768](https://doi.org/10.1002/jcph.1768)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ka, h–1 — Typical Value | `Q49` · not captured | 3.27 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col1 |
-| ka, h–1 — % RSE | `Q49` · not captured | 3.50 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col2 |
-| ka, h–1 — Between‐Subject Variability, % (%RSE) | `Q49` · not captured | 35.3 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col3 |
-| ka, h–1 — Shrinkage (%) | `Q49` · not captured | 19.1 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col4 |
-| tlag, h — Typical Value | `Q83` · not captured | 0.0426 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col1 |
-| tlag, h — % RSE | `Q83` · not captured | 10.6 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col2 |
-| tlag, h — Between‐Subject Variability, % (%RSE) | `Q83` · not captured | 55.6 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col3 |
-| tlag, h — Shrinkage (%) | `Q83` · not captured | 34.2 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col4 |
-| Cl/F, L/h — Between‐Subject Variability, % (%RSE) | `Q27` · not captured | 22.7 | L/h | not captured | exact (not captured) | jcph1768-tbl-0002:row3:col3 |
-| Cl/F, L/h — Shrinkage (%) | `Q27` · not captured | 2.0 | L/h | not captured | exact (not captured) | jcph1768-tbl-0002:row3:col4 |
-| Vc/F, L — Between‐Subject Variability, % (%RSE) | `Q290` · not captured | 26.9 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row7:col3 |
-| Vc/F, L — Shrinkage (%) | `Q290` · not captured | 5.8 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row7:col4 |
-| Clp/F, L/h — Typical Value | `Q27` · not captured | 0.398 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col1 |
-| Clp/F, L/h — % RSE | `Q27` · not captured | 9.40 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col2 |
-| Clp/F, L/h — Between‐Subject Variability, % (%RSE) | `Q27` · not captured | 107.8 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col3 |
-| Clp/F, L/h — Shrinkage (%) | `Q27` · not captured | 19.2 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col4 |
-| Vp/F, L — Typical Value | `Q82` · not captured | 1.75 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col1 |
-| Vp/F, L — % RSE | `Q82` · not captured | 5.50 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col2 |
-| Vp/F, L — Between‐Subject Variability, % (%RSE) | `Q82` · not captured | 53.9 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col3 |
-| Vp/F, L — Shrinkage (%) | `Q82` · not captured | 23.5 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col4 |
-| Proportional error, % — Typical Value | `Q316` · not captured | 13.0 | not captured | not captured | llm_confirmed (not captured) | jcph1768-tbl-0002:row14:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | ka, h–1 — Typical Value | `Q49` · not captured | 3.27 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col1 |
+| PK (driver) | ka, h–1 — % RSE | `Q49` · not captured | 3.50 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col2 |
+| PK (driver) | ka, h–1 — Between‐Subject Variability, % (%RSE) | `Q49` · not captured | 35.3 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col3 |
+| PK (driver) | ka, h–1 — Shrinkage (%) | `Q49` · not captured | 19.1 | h–1 | not captured | exact (not captured) | jcph1768-tbl-0002:row1:col4 |
+| PK (driver) | tlag, h — Typical Value | `Q83` · not captured | 0.0426 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col1 |
+| PK (driver) | tlag, h — % RSE | `Q83` · not captured | 10.6 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col2 |
+| PK (driver) | tlag, h — Between‐Subject Variability, % (%RSE) | `Q83` · not captured | 55.6 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col3 |
+| PK (driver) | tlag, h — Shrinkage (%) | `Q83` · not captured | 34.2 | h | not captured | exact (not captured) | jcph1768-tbl-0002:row2:col4 |
+| PK (driver) | Cl/F, L/h — Between‐Subject Variability, % (%RSE) | `Q27` · not captured | 22.7 | L/h | not captured | exact (not captured) | jcph1768-tbl-0002:row3:col3 |
+| PK (driver) | Cl/F, L/h — Shrinkage (%) | `Q27` · not captured | 2.0 | L/h | not captured | exact (not captured) | jcph1768-tbl-0002:row3:col4 |
+| PK (driver) | Vc/F, L — Between‐Subject Variability, % (%RSE) | `Q290` · not captured | 26.9 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row7:col3 |
+| PK (driver) | Vc/F, L — Shrinkage (%) | `Q290` · not captured | 5.8 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row7:col4 |
+| PK (driver) | Clp/F, L/h — Typical Value | `Q27` · not captured | 0.398 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col1 |
+| PK (driver) | Clp/F, L/h — % RSE | `Q27` · not captured | 9.40 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col2 |
+| PK (driver) | Clp/F, L/h — Between‐Subject Variability, % (%RSE) | `Q27` · not captured | 107.8 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col3 |
+| PK (driver) | Clp/F, L/h — Shrinkage (%) | `Q27` · not captured | 19.2 | L/h | not captured | special_case (not captured) | jcph1768-tbl-0002:row10:col4 |
+| PK (driver) | Vp/F, L — Typical Value | `Q82` · not captured | 1.75 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col1 |
+| PK (driver) | Vp/F, L — % RSE | `Q82` · not captured | 5.50 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col2 |
+| PK (driver) | Vp/F, L — Between‐Subject Variability, % (%RSE) | `Q82` · not captured | 53.9 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col3 |
+| PK (driver) | Vp/F, L — Shrinkage (%) | `Q82` · not captured | 23.5 | L | not captured | exact (not captured) | jcph1768-tbl-0002:row12:col4 |
+| variability | Proportional error, % — Typical Value | `Q316` · not captured | 13.0 | not captured | not captured | llm_confirmed (not captured) | jcph1768-tbl-0002:row14:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

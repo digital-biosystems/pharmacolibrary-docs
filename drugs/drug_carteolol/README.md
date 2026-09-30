@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;carteolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Carteolol_Ishizaki1983_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # carteolol
 
@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: partial</span> | [Ishizaki_1983_reference](drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md) | 2-compartment, IV | 7 | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: partial</span> | [Ishizaki_1983_reference](drugs/drug_carteolol/Carteolol_Ishizaki1983_reference.md) | model (no simulator) | 2-compartment, IV | 7 | Ishizaki T et al., Pharmacokinetics and absolute bioavaila…, European journal of clinica… (1983) | [10.1007/BF00544023](https://doi.org/10.1007/BF00544023) |
 
 ## ADME sites
 

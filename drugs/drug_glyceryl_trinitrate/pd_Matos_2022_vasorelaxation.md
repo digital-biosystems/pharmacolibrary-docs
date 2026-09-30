@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Coumarin-7-yl-methyl nitrate (4) (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Coumarin-7-yl-methyl nitrate (4) concentration-dependently stimulates vasorelaxation of rat aorta rings precontracted with phenylephrine or KCl, acting as an NO donor that activates sGC (effect reduced by the sGC inhibitor ODQ) and involves K+ channel opening; the paper reports an IC50 of 1.92 nM (vs glyceryl trinitrate IC50 12.73 nM and sodium nitroprusside IC50 4.32 nM), but does not state a formal PD model (no Emax/kin/kout/ke0 parameters).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Matos_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

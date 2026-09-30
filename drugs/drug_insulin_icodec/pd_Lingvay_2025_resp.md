@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin icodec drives clinically significant hypoglycemia (in events per person-year of exposure): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Insulin icodec (once-weekly basal insulin analog) concentrations were modeled against clinically significant hypoglycemia rate (events per person-year of exposure) in ONWARDS 2 and 4; the record classifies this as an effect-compartment inhibition model, but the paper excerpts do not state the mechanism or any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lingvay_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

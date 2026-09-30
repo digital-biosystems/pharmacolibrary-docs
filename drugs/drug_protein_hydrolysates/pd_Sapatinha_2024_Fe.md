@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fish protein hydrolysates (measured concentrations) drives Iron chelation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links fish protein hydrolysate concentrations (mg/mL) to an inhibitory effect on iron chelation, but the paper excerpts do not report any iron chelation data, mechanism, or potency values (no Imax, IC50, EC50, kin, kout, or ke0 for this response), so the mechanism cannot be stated from the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sapatinha_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

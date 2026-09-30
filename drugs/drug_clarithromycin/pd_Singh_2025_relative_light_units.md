@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in RLU): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Clarithromycin concentrations (mg/L) inhibit the bioluminescent signal (RLU) of Mycobacterium ulcerans strain MuAL, a surrogate for bacterial viability, described by a four-parameter inhibitory sigmoid Emax model with EC50 = 0.20 mg/L; the paper does not state a clarithromycin Emax value or a mechanistic production/elimination model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Singh S; Yotsu R; Nuremberger E; Srivastava S et al. (2025). Antimicrobial agent
   ·  DOI: [10.1128/aac.00029-25](https://doi.org/10.1128/aac.00029-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Rifampin Emax (log10 RLU) | `Q320` · not captured | 3.0 | log10 RLU | not captured | review_gapfill (not captured) | Singh_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Rifampin Emax (log10 RLU) | `Q320` · not captured | 3.0 | log10 RLU | not captured | review_gapfill (not captured) | Singh_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

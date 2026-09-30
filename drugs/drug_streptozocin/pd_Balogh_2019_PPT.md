@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 14-O-methymorphine-6-O-sulfate drives hind paw withdrawal threshold (in grams): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In streptozocin (STZ)-induced diabetic rats, the opioid agonist 14-O-methymorphine-6-O-sulfate (14-O-MeM6SU) was given subcutaneously and hind paw withdrawal threshold (PPT, in grams) was measured before and after treatment, with effect expressed as percent change of PPT; dose-response curves were fitted with an Emax model, and EC50 values were reported in nM (with Emax in %) for 14-O-MeM6SU, fentanyl, and morphine. The excerpts do not state the numeric Emax/EC50 values for the PPT response or the mechanism beyond a direct Emax-type concentration/dose–effect relationship (no kin/kout/ke0 given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Balogh_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`

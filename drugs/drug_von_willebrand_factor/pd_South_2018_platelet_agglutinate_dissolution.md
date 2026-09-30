@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ADAMTS-13 concentration (nM) drives dissolution of preformed VWF–platelet aggregates (% platelet coverage) under arterial shear; the paper does not state a mechanistic PD model form, only EC50 values from titration: 10.2 ± 5.6 nM for WT ADAMTS-13 and 2.5 ± 1.1 nM for GoF ADAMTS-13.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

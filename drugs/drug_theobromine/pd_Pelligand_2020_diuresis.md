@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Torasemide (the dose) drives diuresis (in mL/day) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oral torasemide dose (0.1–0.8 mg/kg/day) drives daily diuresis (mL/day) in dogs via a direct response model with a baseline (natural diuresis ~220 ± 53 mL/day for 10 kg dogs); a power model with a baseline effect parameter was selected among tested models (sigmoid-Emax, Emax, power, linear). The paper does not state Imax, IC50/EC50, kin, kout, ke0 or gamma values; diuresis increased from baseline to 730 ± 120 mL after the first dose and up to 1150 ± 252 mL, with torasemide/furosemide dose ratios of ~1/10 to 1/20 for equivalent diuresis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pelligand_2020`
 - **model family:** `unknown`
 - **driver:** `dose_only`

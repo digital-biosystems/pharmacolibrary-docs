@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;timolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Timolol_Ji1993_reference&quot;,&quot;label&quot;:&quot;Ji_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ji1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Ishizaki1978_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ishizaki1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Chiang1996_reference&quot;,&quot;label&quot;:&quot;Chiang_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Chiang1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Timolol_Ishizaki1978_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ishizaki1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Ji1993_reference&quot;,&quot;label&quot;:&quot;Ji_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ji1993_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Chiang1996_reference&quot;,&quot;label&quot;:&quot;Chiang_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Chiang1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # timolol
 
@@ -31,11 +31,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Ji_1993_reference](drugs/drug_timolol/Timolol_Ji1993_reference.md) | 1-compartment, IV | 5 | Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993) | — |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ishizaki_1978_reference](drugs/drug_timolol/Timolol_Ishizaki1978_reference.md) | 1-compartment (no model) | 4 | Ishizaki T et al., Clinical pharmacologic observations on…, Journal of clinical pharmac… (1978) | [10.1002/j.1552-4604.1978.tb01580.x](https://doi.org/10.1002/j.1552-4604.1978.tb01580.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chiang_1996_reference](drugs/drug_timolol/Timolol_Chiang1996_reference.md) | 1-compartment (no model) | 1 | Chiang CH et al., Pharmacokinetics and intraocular pressu…, Journal of ocular pharmacol… (1996) | [10.1089/jop.1996.12.471](https://doi.org/10.1089/jop.1996.12.471) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ishizaki_1978_reference](drugs/drug_timolol/Timolol_Ishizaki1978_reference.md) | — | 1-compartment (no model) | 4 | Ishizaki T et al., Clinical pharmacologic observations on…, Journal of clinical pharmac… (1978) | [10.1002/j.1552-4604.1978.tb01580.x](https://doi.org/10.1002/j.1552-4604.1978.tb01580.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Ji_1993_reference](drugs/drug_timolol/Timolol_Ji1993_reference.md) | held back | 1-compartment, IV | 5 | Ji XF et al., [The bioavailability of transdermal the…, Yao xue xue bao = Acta phar… (1993) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Chiang_1996_reference](drugs/drug_timolol/Timolol_Chiang1996_reference.md) | — | 1-compartment (no model) | 1 | Chiang CH et al., Pharmacokinetics and intraocular pressu…, Journal of ocular pharmacol… (1996) | [10.1089/jop.1996.12.471](https://doi.org/10.1089/jop.1996.12.471) |
 
 ## Pharmacogenomics (PGx)
 
@@ -78,7 +78,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 98 matched, 60 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

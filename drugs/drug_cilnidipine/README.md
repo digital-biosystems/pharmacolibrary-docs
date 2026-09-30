@@ -33,9 +33,9 @@ Hypertension is the term used to describe the presence of high blood pressure. T
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Suryawanshi_2026_reference](drugs/drug_cilnidipine/Cilnidipine_Suryawanshi2026_reference.md) | 1-compartment (no model) | 5 | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Suryawanshi_2026_reference](drugs/drug_cilnidipine/Cilnidipine_Suryawanshi2026_reference.md) | — | 1-compartment (no model) | 5 | Suryawanshi A et al., Preclinical evaluation of cilnidipine n…, Annales pharmaceutiques fra… (2026) | [10.1016/j.pharma.2026.05.010](https://doi.org/10.1016/j.pharma.2026.05.010) |
 
 ## ADME sites
 

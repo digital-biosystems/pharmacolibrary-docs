@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ALX-0171 (measured concentrations) drives RSV titers (in log10 TCID50/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> ALX-0171 concentrations (100–900 nM) reduce apically released RSV titers (log10 TCID50/ml) in WD-PBEC cultures, with a 4.74 log10 reduction for BT2a and 4.2 log10 for Memphis 37 at 900 nM by 24 h; the record classifies this as an inhibitory Emax model, but the paper does not report a mechanism beyond viral neutralization or any potency parameters (Imax, IC50, Emax, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Broadbent_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

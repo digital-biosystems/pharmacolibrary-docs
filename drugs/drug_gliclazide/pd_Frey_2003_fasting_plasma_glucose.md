@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gliclazide (concentrations from the PK model of Adiwidjaja_2021) drives name (in mmol l -1): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In responders, gliclazide exposure (AUC, mg·h·ml⁻¹) reduces fasting plasma glucose (mmol l⁻¹) via an Emax model with an effect compartment (equilibration rate constant Keq, half-life ln(2)/Keq) linking PK to the delayed FPG response; the paper does not state the numeric Emax, AUC50 or Keq values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Frey_2003`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,27 +31,27 @@ Frey N; Laveille C; Paraire M; Francillard M; Holford NH; Jochemsen R et al. (20
   ·  DOI: [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Male — Simulation database | `Q358` · not captured | 365 | ml min -1 | not captured | llm (not captured) | tab_0:row11:col5 |
-| Female — Simulation database | `Q358` · not captured | 269 | ml min -1 | not captured | llm (not captured) | tab_0:row12:col5 |
-| Others — Simulation database | `Q358` · not captured | 24 | ml min -1 | not captured | llm (not captured) | tab_0:row15:col5 |
-| Diet alone | `Q358` · not captured | 30 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col1 |
-| Diet alone | `Q358` · not captured | 56 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col3 |
-| Diet alone | `Q358` · not captured | 38 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col4 |
-| Diet alone | `Q358` · not captured | 51 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col6 |
-| 1 OHA class | `Q358` · not captured | 122 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col1 |
-| 1 OHA class — PKPD database | `Q22` · not captured | 38 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col2 |
-| 1 OHA class | `Q358` · not captured | 152 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col3 |
-| 1 OHA class | `Q358` · not captured | 108 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col4 |
-| 1 OHA class — Simulation database | `Q358` · not captured | 420 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col5 |
-| 1 OHA class | `Q358` · not captured | 158 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col6 |
-| 2 OHA classes | `Q358` · not captured | 24 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col1 |
-| 2 OHA classes — PKPD database | `Q22` · not captured | 11 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col2 |
-| 2 OHA classes | `Q358` · not captured | 34 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col3 |
-| 2 OHA classes | `Q358` · not captured | 20 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col4 |
-| 2 OHA classes — Simulation database | `Q358` · not captured | 89 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col5 |
-| 2 OHA classes | `Q358` · not captured | 23 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Male — Simulation database | `Q358` · not captured | 365 | ml min -1 | not captured | llm (not captured) | tab_0:row11:col5 |
+| PK (driver) | Female — Simulation database | `Q358` · not captured | 269 | ml min -1 | not captured | llm (not captured) | tab_0:row12:col5 |
+| PK (driver) | Others — Simulation database | `Q358` · not captured | 24 | ml min -1 | not captured | llm (not captured) | tab_0:row15:col5 |
+| PK (driver) | Diet alone | `Q358` · not captured | 30 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col1 |
+| PK (driver) | Diet alone | `Q358` · not captured | 56 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col3 |
+| PK (driver) | Diet alone | `Q358` · not captured | 38 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col4 |
+| PK (driver) | Diet alone | `Q358` · not captured | 51 | ml min -1 | not captured | llm (not captured) | tab_0:row20:col6 |
+| PK (driver) | 1 OHA class | `Q358` · not captured | 122 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col1 |
+| PK (driver) | 1 OHA class — PKPD database | `Q22` · not captured | 38 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col2 |
+| PK (driver) | 1 OHA class | `Q358` · not captured | 152 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col3 |
+| PK (driver) | 1 OHA class | `Q358` · not captured | 108 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col4 |
+| PK (driver) | 1 OHA class — Simulation database | `Q358` · not captured | 420 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col5 |
+| PK (driver) | 1 OHA class | `Q358` · not captured | 158 | ml min -1 | not captured | llm (not captured) | tab_0:row21:col6 |
+| PK (driver) | 2 OHA classes | `Q358` · not captured | 24 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col1 |
+| PK (driver) | 2 OHA classes — PKPD database | `Q22` · not captured | 11 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col2 |
+| PK (driver) | 2 OHA classes | `Q358` · not captured | 34 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col3 |
+| PK (driver) | 2 OHA classes | `Q358` · not captured | 20 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col4 |
+| PK (driver) | 2 OHA classes — Simulation database | `Q358` · not captured | 89 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col5 |
+| PK (driver) | 2 OHA classes | `Q358` · not captured | 23 | ml min -1 | not captured | llm (not captured) | tab_0:row22:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clopidogrel H4 (concentrations from this paper's PK model) drives P2Y12 reaction unit (in unknown): indirect response — drug inhibits the loss of P2Y12 reaction unit.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Clopidogrel H4 concentrations drive changes in PRU via an indirect response model in which clopidogrel H4 stimulates the fractional turnover rate of PRU (effect as stimulation of the response's turnover, i.e., increased elimination of PRU); the paper does not state Imax, IC50/EC50, kin, kout, or gamma values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jung_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`
@@ -21,46 +31,46 @@ Jung YS; Jin BH; Park MS; Kim CO; Chae D et al. (2024). CPT: pharmacometrics & s
   ·  DOI: [10.1002/psp4.13053](https://doi.org/10.1002/psp4.13053)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V c (=VH) (L) — Population mean | `Q63` · not captured | 1463.92 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row2:col1 |
-| V c (=VH) (L) — Standard deviation | `Q63` · not captured | 0.331 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row2:col2 |
-| V p (L) — Population mean | `Q64` · not captured | 2823.98 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row3:col1 |
-| CLc (L/h) — Population mean | `Q22` · not captured | 9257.28 | L/h | not captured | central_subscript (not captured) | psp413053-tbl-0002:row4:col1 |
-| CLc (L/h) — Standard deviation | `Q22` · not captured | 0.343 | L/h | not captured | central_subscript (not captured) | psp413053-tbl-0002:row4:col2 |
-| Cor(Vc, CLc) — Standard deviation | `Q314` · not captured | 0.702 | Vc, CLc | not captured | llm (not captured) | psp413053-tbl-0002:row5:col2 |
-| Q c (L/h) — Population mean | `Q358` · not captured | 845.70 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row6:col1 |
-| Q c (L/h) — Standard deviation | `Q358` · not captured | 0.307 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row6:col2 |
-| Q p (L/h) — Population mean | `Q30` · not captured | 587.93 | L/h | not captured | exact (not captured) | psp413053-tbl-0002:row7:col1 |
-| k a (h−1) — Population mean | `Q49` · not captured | 19.64 | h−1 | not captured | space_fold (not captured) | psp413053-tbl-0002:row8:col1 |
-| T lag (h) — Population mean | `Q83` · not captured | 0.196 | h | not captured | space_fold (not captured) | psp413053-tbl-0002:row9:col1 |
-| σ clopidogrel — Population mean | `Q315` · not captured | 0.357 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row10:col1 |
-| fm1 — Population mean | `Q45` · not captured | 0.125 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row12:col1 |
-| fm1 — Standard deviation | `Q45` · not captured | 0.255 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row12:col2 |
-| fm1~IM — Population mean | `Q45` · not captured | -0.450 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row13:col1 |
-| fm1~PM — Population mean | `Q45` · not captured | -0.996 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row14:col1 |
-| fm2 — Population mean | `Q45` · not captured | 0.960 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row15:col1 |
-| fm2 — Standard deviation | `Q45` · not captured | 1.130 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row15:col2 |
-| fm2~IM — Population mean | `Q45` · not captured | -1.428 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row16:col1 |
-| fm2~PM — Population mean | `Q45` · not captured | -2.432 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row17:col1 |
-| V m1 (L) — Population mean | `Q63` · not captured | 51.45 | L | not captured | llm (not captured) | psp413053-tbl-0002:row18:col1 |
-| CLm1 (L/h) — Population mean | `Q358` · not captured | 74.25 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row19:col1 |
-| V m2 (L) — Population mean | `Q367` · not captured | 17.34 | L | not captured | llm (not captured) | psp413053-tbl-0002:row20:col1 |
-| V p2 (L) — Population mean | `Q77` · not captured | 51.89 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row21:col1 |
-| V p2 (L) — Standard deviation | `Q77` · not captured | 0.285 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row21:col2 |
-| CLm2 (L/h) — Population mean | `Q358` · not captured | 7.248 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row22:col1 |
-| CLm2 (L/h) — Standard deviation | `Q358` · not captured | 0.123 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row22:col2 |
-| Q m2 (L/h) — Population mean | `Q358` · not captured | 4.476 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row23:col1 |
-| σ H4 — Population mean | `Q315` · not captured | 0.363 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row24:col1 |
-| σ carbo — Population mean | `Q315` · not captured | 0.209 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row25:col1 |
-| K in — Population mean | `Q327` · not captured | 1.225 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row27:col1 |
-| K in — Standard deviation | `Q327` · not captured | 0.120 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row27:col2 |
-| K out (h−1) — Population mean | `Q328` · not captured | 0.006 | h−1 | not captured | space_fold (not captured) | psp413053-tbl-0002:row28:col1 |
-| E max — Population mean | `Q320` · not captured | 57.84 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row29:col1 |
-| E max — Standard deviation | `Q320` · not captured | 0.501 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row29:col2 |
-| EC50 (ng/mL) — Population mean | `Q321` · not captured | 67.32 | ng/mL | not captured | exact (not captured) | psp413053-tbl-0002:row30:col1 |
-| Hill — Population mean | `Q325` · not captured | 1.851 | not captured | not captured | exact (not captured) | psp413053-tbl-0002:row31:col1 |
-| σ PRU — Population mean | `Q315` · not captured | 13.69 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row32:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V c (=VH) (L) — Population mean | `Q63` · not captured | 1463.92 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row2:col1 |
+| PK (driver) | V c (=VH) (L) — Standard deviation | `Q63` · not captured | 0.331 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row2:col2 |
+| PK (driver) | V p (L) — Population mean | `Q64` · not captured | 2823.98 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row3:col1 |
+| PK (driver) | CLc (L/h) — Population mean | `Q22` · not captured | 9257.28 | L/h | not captured | central_subscript (not captured) | psp413053-tbl-0002:row4:col1 |
+| PK (driver) | CLc (L/h) — Standard deviation | `Q22` · not captured | 0.343 | L/h | not captured | central_subscript (not captured) | psp413053-tbl-0002:row4:col2 |
+| variability | Cor(Vc, CLc) — Standard deviation | `Q314` · not captured | 0.702 | Vc, CLc | not captured | llm (not captured) | psp413053-tbl-0002:row5:col2 |
+| PK (driver) | Q c (L/h) — Population mean | `Q358` · not captured | 845.70 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row6:col1 |
+| PK (driver) | Q c (L/h) — Standard deviation | `Q358` · not captured | 0.307 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row6:col2 |
+| PK (driver) | Q p (L/h) — Population mean | `Q30` · not captured | 587.93 | L/h | not captured | exact (not captured) | psp413053-tbl-0002:row7:col1 |
+| PK (driver) | k a (h−1) — Population mean | `Q49` · not captured | 19.64 | h−1 | not captured | space_fold (not captured) | psp413053-tbl-0002:row8:col1 |
+| PK (driver) | T lag (h) — Population mean | `Q83` · not captured | 0.196 | h | not captured | space_fold (not captured) | psp413053-tbl-0002:row9:col1 |
+| variability | σ clopidogrel — Population mean | `Q315` · not captured | 0.357 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row10:col1 |
+| PK (driver) | fm1 — Population mean | `Q45` · not captured | 0.125 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row12:col1 |
+| PK (driver) | fm1 — Standard deviation | `Q45` · not captured | 0.255 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row12:col2 |
+| PK (driver) | fm1~IM — Population mean | `Q45` · not captured | -0.450 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row13:col1 |
+| PK (driver) | fm1~PM — Population mean | `Q45` · not captured | -0.996 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row14:col1 |
+| PK (driver) | fm2 — Population mean | `Q45` · not captured | 0.960 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row15:col1 |
+| PK (driver) | fm2 — Standard deviation | `Q45` · not captured | 1.130 | not captured | not captured | special_case (not captured) | psp413053-tbl-0002:row15:col2 |
+| PK (driver) | fm2~IM — Population mean | `Q45` · not captured | -1.428 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row16:col1 |
+| PK (driver) | fm2~PM — Population mean | `Q45` · not captured | -2.432 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row17:col1 |
+| PK (driver) | V m1 (L) — Population mean | `Q63` · not captured | 51.45 | L | not captured | llm (not captured) | psp413053-tbl-0002:row18:col1 |
+| PK (driver) | CLm1 (L/h) — Population mean | `Q358` · not captured | 74.25 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row19:col1 |
+| PK (driver) | V m2 (L) — Population mean | `Q367` · not captured | 17.34 | L | not captured | llm (not captured) | psp413053-tbl-0002:row20:col1 |
+| PK (driver) | V p2 (L) — Population mean | `Q77` · not captured | 51.89 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row21:col1 |
+| PK (driver) | V p2 (L) — Standard deviation | `Q77` · not captured | 0.285 | L | not captured | space_fold (not captured) | psp413053-tbl-0002:row21:col2 |
+| PK (driver) | CLm2 (L/h) — Population mean | `Q358` · not captured | 7.248 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row22:col1 |
+| PK (driver) | CLm2 (L/h) — Standard deviation | `Q358` · not captured | 0.123 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row22:col2 |
+| PK (driver) | Q m2 (L/h) — Population mean | `Q358` · not captured | 4.476 | L/h | not captured | llm (not captured) | psp413053-tbl-0002:row23:col1 |
+| variability | σ H4 — Population mean | `Q315` · not captured | 0.363 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row24:col1 |
+| variability | σ carbo — Population mean | `Q315` · not captured | 0.209 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row25:col1 |
+| PD (effect) | K in — Population mean | `Q327` · not captured | 1.225 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row27:col1 |
+| PD (effect) | K in — Standard deviation | `Q327` · not captured | 0.120 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row27:col2 |
+| PD (effect) | K out (h−1) — Population mean | `Q328` · not captured | 0.006 | h−1 | not captured | space_fold (not captured) | psp413053-tbl-0002:row28:col1 |
+| PD (effect) | E max — Population mean | `Q320` · not captured | 57.84 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row29:col1 |
+| PD (effect) | E max — Standard deviation | `Q320` · not captured | 0.501 | not captured | not captured | space_fold (not captured) | psp413053-tbl-0002:row29:col2 |
+| PD (effect) | EC50 (ng/mL) — Population mean | `Q321` · not captured | 67.32 | ng/mL | not captured | exact (not captured) | psp413053-tbl-0002:row30:col1 |
+| PD (effect) | Hill — Population mean | `Q325` · not captured | 1.851 | not captured | not captured | exact (not captured) | psp413053-tbl-0002:row31:col1 |
+| variability | σ PRU — Population mean | `Q315` · not captured | 13.69 | not captured | not captured | llm (not captured) | psp413053-tbl-0002:row32:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

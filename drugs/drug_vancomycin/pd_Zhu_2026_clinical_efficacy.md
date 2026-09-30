@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vancomycin (concentrations from the PK model of Goyal_2022::final_pk_model) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> This is not a mechanistic PD model: vancomycin exposure (AUC24h, Cmin, Cmax from a cited PK model) was related to binary clinical efficacy in Enterococcus infections by logistic regression, with AUC24h &gt; 380 mg·h/L an independent predictor of efficacy (P = 0.001; effective 75/111 vs failure 16/43) and Cmin also significant (P = 0.001; Cmin &gt; 9.5 mg/L: 86/111 effective vs 19/43 failure), while Cmax was not (P = 0.148). No Imax/IC50/EC50/Emax/kin/kout/ke0 or mechanism of drug action on the response is given in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2026`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
@@ -21,17 +31,17 @@ Zhu H; Liao J; Wu W; Gu F; Zhu T; Huang X; et al. et al. (2026). Microbiology sp
   ·  DOI: [10.1128/spectrum.00937-26](https://doi.org/10.1128/spectrum.00937-26)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cmin, mg/L — P value | `Q36` · not captured | 0.001 | mg/L | not captured | exact (not captured) | T2:row37:col4 |
-| Cmin &gt; 9.5 vs ≤9.5 — Effective n = 111 | `Q36` · not captured | 86 | not captured | not captured | llm_confirmed (not captured) | T2:row38:col1 |
-| Cmin &gt; 9.5 vs ≤9.5 — Failure n = 43 | `Q36` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | T2:row38:col2 |
-| AUC24h, mg·h/L — P value | `Q19` · not captured | 0.011 | mg·h/L | not captured | llm (not captured) | T2:row39:col4 |
-| AUC24h &gt; 380 vs ≤380 — Effective n = 111 | `Q19` · not captured | 75 | not captured | not captured | llm (not captured) | T2:row40:col1 |
-| AUC24h &gt; 380 vs ≤380 — Failure n = 43 | `Q19` · not captured | 16 | not captured | not captured | llm (not captured) | T2:row40:col2 |
-| AUC24h &gt; 380 vs ≤380 — P value | `Q19` · not captured | 0.001 | not captured | not captured | llm (not captured) | T2:row40:col4 |
-| Cmax, mg/L — P value | `Q32` · not captured | 0.148 | mg/L | not captured | exact (not captured) | T2:row42:col4 |
-| AUC24h &gt; 380 vs ≤380 — P value | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | T2:row54:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cmin, mg/L — P value | `Q36` · not captured | 0.001 | mg/L | not captured | exact (not captured) | T2:row37:col4 |
+| PK (driver) | Cmin &gt; 9.5 vs ≤9.5 — Effective n = 111 | `Q36` · not captured | 86 | not captured | not captured | llm_confirmed (not captured) | T2:row38:col1 |
+| PK (driver) | Cmin &gt; 9.5 vs ≤9.5 — Failure n = 43 | `Q36` · not captured | 19 | not captured | not captured | llm_confirmed (not captured) | T2:row38:col2 |
+| PK (driver) | AUC24h, mg·h/L — P value | `Q19` · not captured | 0.011 | mg·h/L | not captured | llm (not captured) | T2:row39:col4 |
+| PK (driver) | AUC24h &gt; 380 vs ≤380 — Effective n = 111 | `Q19` · not captured | 75 | not captured | not captured | llm (not captured) | T2:row40:col1 |
+| PK (driver) | AUC24h &gt; 380 vs ≤380 — Failure n = 43 | `Q19` · not captured | 16 | not captured | not captured | llm (not captured) | T2:row40:col2 |
+| PK (driver) | AUC24h &gt; 380 vs ≤380 — P value | `Q19` · not captured | 0.001 | not captured | not captured | llm (not captured) | T2:row40:col4 |
+| PK (driver) | Cmax, mg/L — P value | `Q32` · not captured | 0.148 | mg/L | not captured | exact (not captured) | T2:row42:col4 |
+| PK (driver) | AUC24h &gt; 380 vs ≤380 — P value | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | T2:row54:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

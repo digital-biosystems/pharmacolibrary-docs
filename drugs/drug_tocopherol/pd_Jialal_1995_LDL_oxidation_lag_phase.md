@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A-tocopherol drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> a-Tocopherol supplementation (0–1200 IU/d for 8 weeks) decreased the susceptibility of LDL to oxidation, prolonging the LDL oxidation lag phase and decreasing the oxidation rate; no significant effect was seen at 60 or 200 IU/d, and the minimum effective dose was 400 IU/d. The paper does not provide a formal PD model (no Imax, IC50, kin, kout, or ke0 values), only reporting that plasma and LDL a-tocopherol levels correlated significantly with the lag phase and inversely with the oxidation rate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jialal_1995`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

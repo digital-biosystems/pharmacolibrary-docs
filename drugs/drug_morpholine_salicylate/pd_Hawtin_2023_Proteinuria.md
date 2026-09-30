@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in mg/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MHV370 (morpholine salicylate) concentrations act on proteinuria (mg/mL) in NZB/W F1 lupus mice, where dosed food (inhibition already at 0.01% MHV370) prevented proteinuria progression; the paper does not state an Emax/IC50 model or mechanism for the proteinuria response itself. Related potency values reported are inhibition of CL307- and R848-driven NF-κB reporter activity with IC50 of 15 ± 10 nM and 7 ± 0.1 nM, and an ex vivo blood CD69 PD marker IC50 of 35 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

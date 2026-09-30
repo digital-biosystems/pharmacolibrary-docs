@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives plasma urate (in mmol/L): direct linear effect.
 
-> The paper describes a dose-response relationship where allopurinol dose inhibits plasma urate production, characterized by an ID50 of 226 mg and a 'resistant' urate concentration (UR) of 0.20 mmol/L. The provided record lists PK parameters for oxypurinol (half-lives of 1.2 h and 23 h; CL/F of 15.8 and 0.31 mL/min/kg; Vd/F of 1.31 and 0.59 L/kg) but does not specify the mechanism of action or direct potency values for the drug concentration-response relationship.
+**Model:** No model was generated from this record.
+
+> Allopurinol (via its metabolite oxypurinol, an XOR inhibitor) lowers plasma urate (mmol/L); the paper models the dose–response as an inhibitory Emax-type relationship U_T = U_R + (U_P − U_R)·(1 − D/(D+ID50))-like function with best-fit ID50 = 226 mg and a 'resistant' urate concentration U_R = 0.20 mmol/L that cannot be lowered by allopurinol, so the dose needed to reach a target urate (e.g. 0.36 mmol/L) is Dose = 1413·(U_P − 0.36), depending on pre-treatment urate U_P. A concentration–response relationship between plasma urate and plasma oxypurinol in healthy individuals is also shown (Graham et al.), but no IC50/EC50, kin/kout or ke0 values are given.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Day_2017`
 - **model family:** `linear`

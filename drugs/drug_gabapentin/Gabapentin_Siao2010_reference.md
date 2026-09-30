@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **Every check that could be run on this record passed.**
@@ -41,7 +43,7 @@ Siao KT; Pypendop BH; Ilkiw JE et al. (2010). American journal of veterinary res
 | apparent volume of the central compartment | `Q76` · V/F | 90.4 | mL/kg | 0.006328 | [ml] / [kg] | not captured | exact (1.0) | Siao_2010:abstract | — | not captured |
 | apparent volume of distribution at steady state | `Q65` · Vss | 650 | mL/kg | 0.0455 | [ml] / [kg] | not captured | llm_corrected (0.6) | Siao_2010:abstract | — | not captured |
 | clearance | `Q22` · CL | 3 | mL/min/kg | 3.5000000000000004e-06 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Siao_2010:abstract | — | not captured |
-| terminal half-life | `Q57` · t1/2z | 170 | minutes | not captured | [min] | not captured | llm (0.6) | Siao_2010:abstract, Siao_2010:abstract | — | not captured |
+| terminal half-life | `Q57` · t1/2z | 170 | minutes | 10200.0 | h | not captured | llm (0.6) | Siao_2010:abstract, Siao_2010:abstract | — | not captured |
 | systemic availability | `Q40` · Fab | 88.7 | % | not captured | not captured | not captured | exact (1.0) | Siao_2010:abstract | — | not captured |
 | K01 (1/hr) | `Q49` · kabs | 5.24 | 1/hr | 0.0014555555555555556 | 1/h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
 | TLAG (hr) | `Q83` · tlag | 0.45 | hr | 1620.0 | h | not captured | review_gapfill (0.7) | Adrian_2018:review | — | not captured |
@@ -66,6 +68,7 @@ Siao KT; Pypendop BH; Ilkiw JE et al. (2010). American journal of veterinary res
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Adrian_2018's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Adrian_2018's review values (primary lacked it)
+- unit re-normalised: t1/2z 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Siao_2010_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model

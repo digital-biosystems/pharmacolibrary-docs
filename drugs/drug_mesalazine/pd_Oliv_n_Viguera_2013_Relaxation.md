@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 13b (measured concentrations) drives Coronary artery relaxation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a formal PD model for coronary artery relaxation; it reports that the KCa3.1/KCa2.3 blocker 13b (0.5 µM) inhibits endothelium-dependent vasorelaxation, promoting contraction (e.g. +1% contraction vs +10% with vehicle in U46619-precontracted rings) and antagonizing SKA-31-potentiated bradykinin-induced relaxation. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for the relaxation response (the reported EC50s, e.g. caffeic acid 1.3 µM, flufenamic acid 1.6 µM, mesalamine ≥10 µM, refer to KCa3.1 channel blockade in electrophysiology, not to relaxation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oliván-Viguera_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

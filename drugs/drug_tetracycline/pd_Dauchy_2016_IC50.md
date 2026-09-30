@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Posaconazole (measured concentrations) drives parasite growth inhibition (in μM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Posaconazole concentrations (μM) inhibit in vitro growth of T. brucei/T. gambiense parasites over 24 h, with a direct concentration–effect relationship expressed as IC50 (WT strain 10 μM; non-induced 12.3 μM, CYP51RNAi-induced 16.5 μM; IC50 2.5 μM and IC90 5 μM in the ergosterol-rescue assay). The paper suggests the mechanism is inhibition of the CYP51-dependent ergosterol biosynthesis pathway (CYP51 knockdown reduces sensitivity, and ergosterol reverses the effect), but no formal PD model parameters (Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dauchy_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

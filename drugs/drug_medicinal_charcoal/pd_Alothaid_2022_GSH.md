@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Activated carbon (AAC, PAC, CAC) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for GSH; it only shows that in rats exposed for 48 h, activated carbons PAC and CAC significantly decreased GSH levels (in liver and kidney) while AAC significantly increased hepatic GSH, attributed to oxidative stress via free-radical generation, with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values stated for this response (IC50 values of 48.7 ± 17.2 µg/ml for AAC on HCT-116 and 51 ± 6.24 µg/ml on HepG2 refer to cell viability, not GSH).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alothaid_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

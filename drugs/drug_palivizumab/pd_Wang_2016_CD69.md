@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syn-Vm24-CDR3L (measured concentrations) drives CD69 expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for CD69 expression; CD69 was measured by flow cytometry ~24 h after OKT3 stimulation of human T cells treated with serially diluted Syn-Vm24-CDR3L (an antibody-toxin CDR fusion targeting Kv1.3), not palivizumab. No Imax, IC50/EC50, Emax, kin, kout, ke0, or slope values for this response are stated, and the mechanism of effect on CD69 is not given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

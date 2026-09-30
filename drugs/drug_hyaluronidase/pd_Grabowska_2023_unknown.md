@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atriplex sagittata flower extract (measured concentrations) drives hyaluronidase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atriplex sagittata extracts and isolated triterpene saponins inhibit hyaluronidase enzyme activity in vitro in a dose-dependent manner (mechanism not further specified). The flower extract was most potent (IC50 = 84.67 µg/mL vs quercetin control IC50 = 514.28 µg/mL), and the isolated saponins calenduloside E and chikusetsusaponin IVa inhibited with IC50 = 33.77 and 168.15 µg/mL, respectively (escin control IC50 = 307.38 µg/mL); other extract IC50 values were 216.2, 244.5 and 272.5 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Grabowska_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Grabowska K; Pietrzak W; Paśko P; Sołtys A; Galanty A; Żmudzki P; et al. et a
   ·  DOI: [10.3390/molecules28030982](https://doi.org/10.3390/molecules28030982)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 514.28 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col1 |
-| IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 84.67 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col2 |
-| IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 216.2 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col3 |
-| IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 244.5 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col4 |
-| IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 272.5 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 514.28 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col1 |
+| PD (effect) | IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 84.67 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col2 |
+| PD (effect) | IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 216.2 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col3 |
+| PD (effect) | IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 244.5 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col4 |
+| PD (effect) | IC50 — Hyaluronidase Inhibition [%] | `Q322` · not captured | 272.5 | µg/mL | not captured | exact (not captured) | molecules-28-00982-t004:row12:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Colistin (measured concentrations) drives name (in log10 CFU/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Colistin concentrations (mg/L) act on Pseudomonas aeruginosa bacterial density (log10 CFU/mL) in biofilm and planktonic states via an inhibitory Emax model, with biofilm Emax 54.6 and EC50 170, and planktonic Emax 9.33 and EC50 35.1 (RSE%); biofilm additionally shows a delayed drug effect via a transit compartment (ktr 4.27 and 1.57, RSE%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Guo Y; Yin J; Aulin LBS; Ciofu O; Moser C; Upadhyay PJ; Høiby N; Wang H; Guo T;
   ·  DOI: [10.1016/j.bioflm.2026.100387](https://doi.org/10.1016/j.bioflm.2026.100387)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EmaxS — Biofilm (RSE%) | `Q320` · not captured | 54.6 | RSE% | not captured | llm (not captured) | tbl1:row9:col6 |
-| EC50S — Biofilm (RSE%) | `Q321` · not captured | 170 | RSE% | not captured | llm (not captured) | tbl1:row10:col6 |
-| EmaxR — Planktonic (RSE%) | `Q100` · not captured | 9.33 | RSE% | not captured | llm (not captured) | tbl1:row12:col3 |
-| EC50R — Planktonic (RSE%) | `Q321` · not captured | 35.1 | RSE% | not captured | llm (not captured) | tbl1:row13:col3 |
-| ktr — Biofilm (RSE%) | `Q306` · not captured | 4.27 | RSE% | not captured | exact (not captured) | tbl1:row14:col5 |
-| ktr — Biofilm (RSE%) | `Q306` · not captured | 1.57 | RSE% | not captured | exact (not captured) | tbl1:row14:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EmaxS — Biofilm (RSE%) | `Q320` · not captured | 54.6 | RSE% | not captured | llm (not captured) | tbl1:row9:col6 |
+| PD (effect) | EC50S — Biofilm (RSE%) | `Q321` · not captured | 170 | RSE% | not captured | llm (not captured) | tbl1:row10:col6 |
+| — | EmaxR — Planktonic (RSE%) | `Q100` · not captured | 9.33 | RSE% | not captured | llm (not captured) | tbl1:row12:col3 |
+| PD (effect) | EC50R — Planktonic (RSE%) | `Q321` · not captured | 35.1 | RSE% | not captured | llm (not captured) | tbl1:row13:col3 |
+| PK (driver) | ktr — Biofilm (RSE%) | `Q306` · not captured | 4.27 | RSE% | not captured | exact (not captured) | tbl1:row14:col5 |
+| PK (driver) | ktr — Biofilm (RSE%) | `Q306` · not captured | 1.57 | RSE% | not captured | exact (not captured) | tbl1:row14:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

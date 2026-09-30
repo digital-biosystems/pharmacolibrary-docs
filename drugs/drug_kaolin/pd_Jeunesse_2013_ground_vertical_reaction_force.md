@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cimicoxib (measured concentrations) drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Cimicoxib plasma concentrations (μg/L) act on the kaolin-induced ground vertical reaction force in dogs via an indirect response model in which the drug inhibits the production of the response (Imax function on Kin, dR/dT = Kin − Kout×(1 − Imax×C^n/(IC50^n + C^n))×R). The paper reports the plasma concentration corresponding to half the maximum indirect effect as 239 μg/L, but the excerpts do not state the Imax or Hill coefficient values for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeunesse_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

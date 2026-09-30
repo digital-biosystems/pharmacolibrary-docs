@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 39 (measured concentrations) drives CYP2C9 mRNA (in fold induction): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Compound 39 (recorded drug: sodium sulfate) acts as a CAR agonist that stimulates CYP2C9 mRNA expression (fold induction) in primary human hepatocytes, with induction similar to CITCO, but the paper does not report an EC50, Emax, or rate parameters for the CYP2C9 mRNA response (dose–response curves up to 30 μM did not reach a plateau). The reported potencies are for CAR activation assays, not the mRNA response: compound 39's CAR TR-FRET EC50 is 0.009 μM and CAR LBD assembly (CAR AA) EC50 values are 1.16 μM (CAR2), 1.35 μM (CAR3), and 0.05 μM (compound 15a reference), with CITCO at 0.012 μM in the TR-FRET assay.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mejdrová_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,45 +30,45 @@ Mejdrová I; Dušek J; Škach K; Stefela A; Skoda J; Chalupský K; Dohnalová K;
   ·  DOI: [10.1021/acs.jmedchem.2c01140](https://doi.org/10.1021/acs.jmedchem.2c01140)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CAR TR-FRET EC50 (μM) — 2 | `Q321` · not captured | 0.003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col2 |
-| CAR TR-FRET EC50 (μM) — 3 | `Q321` · not captured | 0.005 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col3 |
-| CAR TR-FRET EC50 (μM) — 12g | `Q321` · not captured | 0.016 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col4 |
-| CAR TR-FRET EC50 (μM) — 13b | `Q321` · not captured | 0.0003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col5 |
-| CAR TR-FRET EC50 (μM) — 13c | `Q321` · not captured | 0.0003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col6 |
-| CAR TR-FRET EC50 (μM) — 13d | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col7 |
-| CAR TR-FRET EC50 (μM) — 13e | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col8 |
-| CAR TR-FRET EC50 (μM) — 13f | `Q321` · not captured | 0.062 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col9 |
-| CAR TR-FRET EC50 (μM) — 13g | `Q321` · not captured | 0.002 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col10 |
-| CAR TR-FRET EC50 (μM) — 14a | `Q321` · not captured | 0.007 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col13 |
-| CAR TR-FRET EC50 (μM) — 14b | `Q321` · not captured | 0.432 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col14 |
-| CAR TR-FRET EC50 (μM) — 14c | `Q321` · not captured | 0.656 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col15 |
-| CAR TR-FRET EC50 (μM) — 14d | `Q321` · not captured | 0.007 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col16 |
-| CAR TR-FRET EC50 (μM) — 14e | `Q321` · not captured | 0.01 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col17 |
-| CAR TR-FRET EC50 (μM) — 15a | `Q321` · not captured | 0.002 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col19 |
-| CAR TR-FRET EC50 (μM) — 15b | `Q321` · not captured | 0.019 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col20 |
-| CAR TR-FRET EC50 (μM) — 15c | `Q321` · not captured | 0.040 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col21 |
-| CAR TR-FRET EC50 (μM) — 15d | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col22 |
-| CAR TR-FRET EC50 (μM) — 15e | `Q321` · not captured | 1.38 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col23 |
-| CAR TR-FRET EC50 (μM) — 15f | `Q321` · not captured | 0.06 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col24 |
-| CAR TR-FRET EC50 (μM) — 15g | `Q321` · not captured | 0.011 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col25 |
-| CAR TR-FRET EC50 (μM) — 15h | `Q321` · not captured | 0.08 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col26 |
-| CAR TR-FRET EC50 (μM) — 15i | `Q321` · not captured | 0.009 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col27 |
-| CAR TR-FRET EC50 (μM) — CITCO | `Q321` · not captured | 0.012 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col32 |
-| CAR AA EC50 (μM) — 2 | `Q321` · not captured | 1.16 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
-| CAR AA EC50 (μM) — 3 | `Q321` · not captured | 1.35 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
-| CAR AA EC50 (μM) — 13e | `Q321` · not captured | 1.34 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col8 |
-| CAR AA EC50 (μM) — 14b | `Q321` · not captured | 0.15 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col14 |
-| CAR AA EC50 (μM) — 15a | `Q321` · not captured | 0.05 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col19 |
-| CAR AA EC50 (μM) — 15c | `Q321` · not captured | 0.12 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col21 |
-| CAR AA EC50 (μM) — 15d | `Q321` · not captured | 0.46 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col22 |
-| CAR AA EC50 (μM) — 15f | `Q321` · not captured | 0.12 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col24 |
-| CAR AA EC50 (μM) — 15g | `Q321` · not captured | 2.76 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col25 |
-| CAR AA EC50 (μM) — 15h | `Q321` · not captured | 0.04 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col26 |
-| CAR AA EC50 (μM) — 15i | `Q321` · not captured | 3.05 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col27 |
-| CAR AA EC50 (μM) — 15l | `Q321` · not captured | 0.50 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col30 |
-| CAR AA EC50 (μM) — CITCO | `Q321` · not captured | 0.69 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col32 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CAR TR-FRET EC50 (μM) — 2 | `Q321` · not captured | 0.003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col2 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 3 | `Q321` · not captured | 0.005 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col3 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 12g | `Q321` · not captured | 0.016 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col4 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13b | `Q321` · not captured | 0.0003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col5 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13c | `Q321` · not captured | 0.0003 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col6 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13d | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col7 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13e | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col8 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13f | `Q321` · not captured | 0.062 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col9 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 13g | `Q321` · not captured | 0.002 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col10 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 14a | `Q321` · not captured | 0.007 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col13 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 14b | `Q321` · not captured | 0.432 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col14 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 14c | `Q321` · not captured | 0.656 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col15 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 14d | `Q321` · not captured | 0.007 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col16 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 14e | `Q321` · not captured | 0.01 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col17 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15a | `Q321` · not captured | 0.002 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col19 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15b | `Q321` · not captured | 0.019 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col20 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15c | `Q321` · not captured | 0.040 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col21 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15d | `Q321` · not captured | 0.001 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col22 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15e | `Q321` · not captured | 1.38 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col23 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15f | `Q321` · not captured | 0.06 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col24 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15g | `Q321` · not captured | 0.011 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col25 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15h | `Q321` · not captured | 0.08 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col26 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — 15i | `Q321` · not captured | 0.009 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col27 |
+| PD (effect) | CAR TR-FRET EC50 (μM) — CITCO | `Q321` · not captured | 0.012 | μM | not captured | llm_confirmed (not captured) | tbl2:row0:col32 |
+| PD (effect) | CAR AA EC50 (μM) — 2 | `Q321` · not captured | 1.16 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col2 |
+| PD (effect) | CAR AA EC50 (μM) — 3 | `Q321` · not captured | 1.35 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col3 |
+| PD (effect) | CAR AA EC50 (μM) — 13e | `Q321` · not captured | 1.34 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col8 |
+| PD (effect) | CAR AA EC50 (μM) — 14b | `Q321` · not captured | 0.15 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col14 |
+| PD (effect) | CAR AA EC50 (μM) — 15a | `Q321` · not captured | 0.05 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col19 |
+| PD (effect) | CAR AA EC50 (μM) — 15c | `Q321` · not captured | 0.12 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col21 |
+| PD (effect) | CAR AA EC50 (μM) — 15d | `Q321` · not captured | 0.46 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col22 |
+| PD (effect) | CAR AA EC50 (μM) — 15f | `Q321` · not captured | 0.12 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col24 |
+| PD (effect) | CAR AA EC50 (μM) — 15g | `Q321` · not captured | 2.76 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col25 |
+| PD (effect) | CAR AA EC50 (μM) — 15h | `Q321` · not captured | 0.04 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col26 |
+| PD (effect) | CAR AA EC50 (μM) — 15i | `Q321` · not captured | 3.05 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col27 |
+| PD (effect) | CAR AA EC50 (μM) — 15l | `Q321` · not captured | 0.50 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col30 |
+| PD (effect) | CAR AA EC50 (μM) — CITCO | `Q321` · not captured | 0.69 | μM | not captured | llm_confirmed (not captured) | tbl2:row1:col32 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

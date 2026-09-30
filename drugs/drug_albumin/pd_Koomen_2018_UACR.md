@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atrasentan (measured concentrations) drives name (in mg/g) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atrasentan plasma exposure (Ctrough, Css, Cmax, 24-hour AUC on day 14, in ng/mL) was related to the change in urinary albumin-to-creatinine ratio (UACR, mg/g) after 2 weeks in 161 patients given 0.75 or 1.25 mg/d; individual exposure parameters correlated significantly with UACR reduction (34.0% and 40.1% for 0.75 and 1.25 mg, respectively), with the albuminuria and bodyweight exposure-response curves crossing near the mean Ctrough of the 0.75 mg dose. The paper does not state a PD mechanism or model form, and no potency (IC50/EC50/Emax) or rate parameters are reported; the values in the record (0.003–0.019) are P-values for the exposure-response correlations, not PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Koomen JV; Stevens J; Mostafa NM; Parving HH; de Zeeuw D; Heerspink HJL et al. (
   ·  DOI: [10.1111/dom.13312](https://doi.org/10.1111/dom.13312)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ctrough — P | `Q37` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col2 |
-| Ctrough — P | `Q37` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col4 |
-| Css — P | `Q34` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col2 |
-| Css — P | `Q34` · not captured | 0.008 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col4 |
-| Cmax — P | `Q32` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col2 |
-| Cmax — P | `Q32` · not captured | 0.019 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col4 |
-| 24‐hour AUCd14 — P | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col2 |
-| 24‐hour AUCd14 — P | `Q19` · not captured | 0.008 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ctrough — P | `Q37` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col2 |
+| PK (driver) | Ctrough — P | `Q37` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col4 |
+| PK (driver) | Css — P | `Q34` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col2 |
+| PK (driver) | Css — P | `Q34` · not captured | 0.008 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col4 |
+| PK (driver) | Cmax — P | `Q32` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col2 |
+| PK (driver) | Cmax — P | `Q32` · not captured | 0.019 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col4 |
+| PK (driver) | 24‐hour AUCd14 — P | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col2 |
+| PK (driver) | 24‐hour AUCd14 — P | `Q19` · not captured | 0.008 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** YLVN, EEHLCFR, TFY (measured concentrations) drive name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptides YLVN, EEHLCFR and TFY (from pea protein hydrolysates) were tested on LO2 cell viability (%), where all three significantly elevated viability at 0.025 mg/mL (53.42 ± 1.19%, 55.78 ± 1.03%, 51.09 ± 1.06% vs 48.35 ± 0.96% in the H2O2 injury group), acting by preventing ROS accumulation; the paper does not state a PD model or parameters (Emax/IC50) for the cell viability response. Radical scavenging IC50 values (mg/mL) were: DPPH EEHLCFR 0.027, TFY 1.492, GSH 0.081; OH· EEHLCFR 2.796, GSH 0.102; ABTS+ YLVN 0.002, EEHLCFR 0.019; O2−· YLVN 1.357, EEHLCFR 1.247, GSH 0.667.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Zhao D; Liu X et al. (2023). Molecules (Basel, Switzerland) 28
   ·  DOI: [10.3390/molecules28072952](https://doi.org/10.3390/molecules28072952)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| DPPH·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 0.027 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col3 |
-| DPPH·IC50 (mg/mL) — TFY | `Q322` · not captured | 1.492 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col4 |
-| DPPH·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.081 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col5 |
-| OH·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 2.796 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row1:col3 |
-| OH·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.102 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row1:col5 |
-| ABTS+IC50 (mg/mL) — YLVN | `Q322` · not captured | 0.002 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row2:col2 |
-| ABTS+IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 0.019 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row2:col3 |
-| O2−·IC50 (mg/mL) — YLVN | `Q322` · not captured | 1.357 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col2 |
-| O2−·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 1.247 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col3 |
-| O2−·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.667 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | DPPH·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 0.027 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col3 |
+| PD (effect) | DPPH·IC50 (mg/mL) — TFY | `Q322` · not captured | 1.492 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col4 |
+| PD (effect) | DPPH·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.081 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row0:col5 |
+| PD (effect) | OH·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 2.796 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row1:col3 |
+| PD (effect) | OH·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.102 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row1:col5 |
+| PD (effect) | ABTS+IC50 (mg/mL) — YLVN | `Q322` · not captured | 0.002 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row2:col2 |
+| PD (effect) | ABTS+IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 0.019 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row2:col3 |
+| PD (effect) | O2−·IC50 (mg/mL) — YLVN | `Q322` · not captured | 1.357 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col2 |
+| PD (effect) | O2−·IC50 (mg/mL) — EEHLCFR | `Q322` · not captured | 1.247 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col3 |
+| PD (effect) | O2−·IC50 (mg/mL) — GSH | `Q322` · not captured | 0.667 | mg/mL | not captured | llm_confirmed (not captured) | molecules-28-02952-t002:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

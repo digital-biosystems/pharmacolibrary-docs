@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rugonersen (measured concentrations) drives UBE3A-ATS knock-down (in % of vehicle): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Rugonersen (RO7248824) concentrations (nM) were related to UBE3A-ATS knock-down (% of vehicle) with a direct sigmoid Imax (Emax-type) response model fitted to data from two NHP studies, with no delay observable (first sampling at day 7); mechanistically the ASO recruits RNase H to cleave UBE3A-ATS. The excerpts do not report numeric potency values (Imax, IC50/EC50, gamma) or rate constants for this model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jagasia_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

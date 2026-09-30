@@ -20,11 +20,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023](drugs/drug_cymarin/pd_Carucci_2023_asexual_parasite_killing.md) | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_killing.md) | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_stiffening.md) | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_asexual_parasite_killing](drugs/drug_cymarin/pd_Carucci_2023_asexual_parasite_killing.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_gametocyte_killing](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_killing.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Carucci_2023_gametocyte_stiffening](drugs/drug_cymarin/pd_Carucci_2023_gametocyte_stiffening.md) | name ← TD-6450 · inhibition effect | — | Carucci M et al., Safe drugs with high potential to block…, Nature communications (2023) | [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

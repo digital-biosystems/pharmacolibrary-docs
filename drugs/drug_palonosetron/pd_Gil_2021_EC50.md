@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remifentanil (measured concentrations) drives emergence cough (in ng/mL): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Remifentanil effect-site concentration (ng/mL) was related to suppression of emergence cough (categorical response) in female patients, with or without a single 0.075 mg intravenous dose of palonosetron given at the end of surgery; the paper does not state a pharmacodynamic mechanism or model (no Imax/IC50/EC50-of-effect, kin/kout, ke0, or gamma values). Estimated remifentanil Ce for 50% suppression (EC50) by Dixon's up-and-down method was 1.33 ± 0.38 ng/mL (control) versus 1.42 ± 0.75 ng/mL (palonosetron, p = 0.813), and by isotonic regression EC50 was 1.17 (83% CI 0.86–1.43) ng/mL (control) versus 0.88 (0.78–1.23) ng/mL (palonosetron), with EC95 of 1.90 (95% CI 1.45–1.96) ng/mL (control) v
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gil_2021`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

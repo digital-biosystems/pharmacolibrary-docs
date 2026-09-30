@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Floctafenic acid drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Floctafenine (rapidly hydrolyzed to floctafenic acid) inhibits platelet thromboxane A2 generation via inhibition of COX (COX-1/COX-2) activity, measured ex vivo as serum TXB2 after 200 mg TID for 4 days; the paper reports inhibition degrees (e.g., ~90% and ~86% inhibition of whole blood COX-1 and COX-2 activities in vitro) but does not provide a formal PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maenthaisong_2013`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

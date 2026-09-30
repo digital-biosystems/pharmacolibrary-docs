@@ -30,9 +30,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.576). The first reading is what the record holds.">cross-check: disputed</span> | [Atkinson_2015](drugs/drug_phentolamine/pd_Atkinson_2015_MAP.md) | Atkinson HC et al., Potential cardiovascular adverse events…, European journal of clinica… (2015) | [10.1007/s00228-015-1876-1](https://doi.org/10.1007/s00228-015-1876-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.576). The first reading is what the record holds.">cross-check: disputed</span> | [Atkinson_2015_MAP](drugs/drug_phentolamine/pd_Atkinson_2015_MAP.md) | mean arterial pressure ← phenylephrine · direct Emax (saturable) effect | — | Atkinson HC et al., Potential cardiovascular adverse events…, European journal of clinica… (2015) | [10.1007/s00228-015-1876-1](https://doi.org/10.1007/s00228-015-1876-1) |
 
 ## ADME sites
 

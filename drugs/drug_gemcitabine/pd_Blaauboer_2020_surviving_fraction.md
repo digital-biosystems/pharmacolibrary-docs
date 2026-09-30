@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives colony formation (in percentage of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine (0.1–5 ng/ml) inhibits colony formation (surviving fraction, % of control) in BxPC-3, CFPAC-1, and Panc-1 cells; the paper does not state a specific PD model structure or parameters (Imax, kin, kout, ke0) for this response. Reported EC50 values for gemcitabine on cell growth after 7 days were 0.81 ng/ml (BxPC-3), 0.19 ng/ml (CFPAC-1), and 1.0 ng/ml (Panc-1), with IFN-β pre-treatment reducing gemcitabine EC50 by 4-, 7.7-, and 1.7-fold respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blaauboer_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

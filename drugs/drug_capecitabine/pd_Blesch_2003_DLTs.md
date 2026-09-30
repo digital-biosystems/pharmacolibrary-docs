@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-FU drives dose-limiting toxicities (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> In Phase I logistic regression modeling, the probability of dose-limiting toxicities (diarrhea, vomiting, nausea, neutropenia, dizziness, hand-foot syndrome) within 6 weeks was related to model-derived plasma AUC and Cmax of capecitabine metabolites, with 5'-DFUR and FBAL exposure predictive of DLTs while 5-FU exposure was poorly predictive; the relationship was a shallow dose-response curve, and no potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0) are stated in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blesch_2003`
 - **model family:** `tte`
 - **driver:** `not_resolved`
@@ -20,35 +30,35 @@ Blesch KS; Gieschke R; Tsukamoto Y; Reigner BG; Burger HU; Steimer JL et al. (20
   ·  DOI: [10.1023/a:1023525513696](https://doi.org/10.1023/a:1023525513696)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| KA — TV | `Q49` · not captured | 1.09 | not captured | not captured | exact (not captured) | tab_0:row1:col2 |
-| KA — SE | `Q49` · not captured | 0.166 | not captured | not captured | exact (not captured) | tab_0:row1:col3 |
-| KA — ISV (%CV) | `Q49` · not captured | 70 | %CV | not captured | exact (not captured) | tab_0:row1:col4 |
-| KA — SE | `Q49` · not captured | 0.166 | not captured | not captured | exact (not captured) | tab_0:row1:col5 |
-| V1 — TV | `Q63` · not captured | 90.6 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
-| V1 — SE | `Q63` · not captured | 14.1 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
-| V1 — ISV (%CV) | `Q63` · not captured | 30 | %CV | not captured | exact (not captured) | tab_0:row3:col4 |
-| CL1 — TV | `Q22` · not captured | 75.8 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
-| CL1 — SE | `Q22` · not captured | 1.8 | not captured | not captured | llm (not captured) | tab_0:row4:col3 |
-| CL1 — SE | `Q22` · not captured | 0.00952 | not captured | not captured | llm (not captured) | tab_0:row4:col5 |
-| V2 — TV | `Q64` · not captured | 17.8 | not captured | not captured | exact (not captured) | tab_0:row5:col2 |
-| CL2 — TV | `Q30` · not captured | 1190 | not captured | not captured | special_case (not captured) | tab_0:row6:col2 |
-| CL2 — SE | `Q30` · not captured | 39.3 | not captured | not captured | special_case (not captured) | tab_0:row6:col3 |
-| CL2 — ISV (%CV) | `Q30` · not captured | 33 | %CV | not captured | special_case (not captured) | tab_0:row6:col4 |
-| CL2 — SE | `Q30` · not captured | 0.0337 | not captured | not captured | special_case (not captured) | tab_0:row6:col5 |
-| V3 — TV | `Q77` · not captured | 73.6 | not captured | not captured | exact (not captured) | tab_0:row7:col2 |
-| V3 — SE | `Q77` · not captured | 2.35 | not captured | not captured | exact (not captured) | tab_0:row7:col3 |
-| V3 — ISV (%CV) | `Q77` · not captured | 26 | %CV | not captured | exact (not captured) | tab_0:row7:col4 |
-| V3 — SE | `Q77` · not captured | 0.0213 | not captured | not captured | exact (not captured) | tab_0:row7:col5 |
-| CL3 — TV | `Q22` · not captured | 27.5 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
-| KA — ISV (%CV) | `Q49` · not captured | 70 | %CV | not captured | exact (not captured) | tab_0:row10:col4 |
-| KA — SE | `Q49` · not captured | 0.0788 | not captured | not captured | exact (not captured) | tab_0:row10:col5 |
-| CLRCL3 — TV | `Q26` · not captured | 0.615 | not captured | not captured | llm (not captured) | tab_0:row14:col2 |
-| CLRCL3 — SE | `Q26` · not captured | 0.0769 | not captured | not captured | llm (not captured) | tab_0:row14:col3 |
-| CLRV3 — TV | `Q26` · not captured | 0.394 | not captured | not captured | llm (not captured) | tab_0:row16:col2 |
-| CLRV3 — SE | `Q26` · not captured | 0.109 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
-| Res. Error 5-FU — SE | `Q46` · not captured | 0.0885 | not captured | not captured | boundary (not captured) | tab_0:row25:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | KA — TV | `Q49` · not captured | 1.09 | not captured | not captured | exact (not captured) | tab_0:row1:col2 |
+| PK (driver) | KA — SE | `Q49` · not captured | 0.166 | not captured | not captured | exact (not captured) | tab_0:row1:col3 |
+| PK (driver) | KA — ISV (%CV) | `Q49` · not captured | 70 | %CV | not captured | exact (not captured) | tab_0:row1:col4 |
+| PK (driver) | KA — SE | `Q49` · not captured | 0.166 | not captured | not captured | exact (not captured) | tab_0:row1:col5 |
+| PK (driver) | V1 — TV | `Q63` · not captured | 90.6 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
+| PK (driver) | V1 — SE | `Q63` · not captured | 14.1 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
+| PK (driver) | V1 — ISV (%CV) | `Q63` · not captured | 30 | %CV | not captured | exact (not captured) | tab_0:row3:col4 |
+| PK (driver) | CL1 — TV | `Q22` · not captured | 75.8 | not captured | not captured | llm (not captured) | tab_0:row4:col2 |
+| PK (driver) | CL1 — SE | `Q22` · not captured | 1.8 | not captured | not captured | llm (not captured) | tab_0:row4:col3 |
+| PK (driver) | CL1 — SE | `Q22` · not captured | 0.00952 | not captured | not captured | llm (not captured) | tab_0:row4:col5 |
+| PK (driver) | V2 — TV | `Q64` · not captured | 17.8 | not captured | not captured | exact (not captured) | tab_0:row5:col2 |
+| PK (driver) | CL2 — TV | `Q30` · not captured | 1190 | not captured | not captured | special_case (not captured) | tab_0:row6:col2 |
+| PK (driver) | CL2 — SE | `Q30` · not captured | 39.3 | not captured | not captured | special_case (not captured) | tab_0:row6:col3 |
+| PK (driver) | CL2 — ISV (%CV) | `Q30` · not captured | 33 | %CV | not captured | special_case (not captured) | tab_0:row6:col4 |
+| PK (driver) | CL2 — SE | `Q30` · not captured | 0.0337 | not captured | not captured | special_case (not captured) | tab_0:row6:col5 |
+| PK (driver) | V3 — TV | `Q77` · not captured | 73.6 | not captured | not captured | exact (not captured) | tab_0:row7:col2 |
+| PK (driver) | V3 — SE | `Q77` · not captured | 2.35 | not captured | not captured | exact (not captured) | tab_0:row7:col3 |
+| PK (driver) | V3 — ISV (%CV) | `Q77` · not captured | 26 | %CV | not captured | exact (not captured) | tab_0:row7:col4 |
+| PK (driver) | V3 — SE | `Q77` · not captured | 0.0213 | not captured | not captured | exact (not captured) | tab_0:row7:col5 |
+| PK (driver) | CL3 — TV | `Q22` · not captured | 27.5 | not captured | not captured | llm (not captured) | tab_0:row8:col2 |
+| PK (driver) | KA — ISV (%CV) | `Q49` · not captured | 70 | %CV | not captured | exact (not captured) | tab_0:row10:col4 |
+| PK (driver) | KA — SE | `Q49` · not captured | 0.0788 | not captured | not captured | exact (not captured) | tab_0:row10:col5 |
+| PK (driver) | CLRCL3 — TV | `Q26` · not captured | 0.615 | not captured | not captured | llm (not captured) | tab_0:row14:col2 |
+| PK (driver) | CLRCL3 — SE | `Q26` · not captured | 0.0769 | not captured | not captured | llm (not captured) | tab_0:row14:col3 |
+| PK (driver) | CLRV3 — TV | `Q26` · not captured | 0.394 | not captured | not captured | llm (not captured) | tab_0:row16:col2 |
+| PK (driver) | CLRV3 — SE | `Q26` · not captured | 0.109 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
+| PK (driver) | Res. Error 5-FU — SE | `Q46` · not captured | 0.0885 | not captured | not captured | boundary (not captured) | tab_0:row25:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

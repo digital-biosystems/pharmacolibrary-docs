@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MGL-3196 (resmetirom) stimulates CPT1A mRNA expression in Huh-7 human hepatocyte cells in a direct dose-dependent (Emax) manner via THRβ agonism; the paper does not state an explicit PD mechanism model beyond dose-response stimulation. Its mean EC50 for CPT1A upregulation was 308.0 nM, making it ~1,000-fold less potent than T3 (CPT1A EC50 = 0.7 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

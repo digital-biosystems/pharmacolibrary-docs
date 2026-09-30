@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methoxamine drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Methoxamine (10^-6 to 10^-3 M) directly increases the tension of the rat vas deferens via alpha1-adrenoceptor stimulation, and in the presence of lymphocytes (8 x 10^6 ml^-1) the dose-response curve shifts to the left with enhanced efficacy, apparently through release of soluble lipoxygenase-derived factors from lymphocytes activated at alpha1-adrenoceptors. The paper reports no pharmacodynamic model parameters (no Emax, EC50, kin, kout or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Borda_1984`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

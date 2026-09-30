@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean](drugs/drug_etoposide/Etoposide_Toffoli2001_mean.md) | held back | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Toffoli_2001_mean_with_covariables](drugs/drug_etoposide/Etoposide_Toffoli2001_mean_with_covariables.md) | held back | 1-compartment, IV | 5 | Toffoli G et al., Population pharmacokinetics and pharmac…, British journal of clinical… (2001) | [10.1046/j.0306-5251.2001.01468.x](https://doi.org/10.1046/j.0306-5251.2001.01468.x) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood-brain barrier | `ABCC1` inhibitor/substrate | DrugBank actor |
 | distribution | lung | `ABCC1` inhibitor/substrate | DrugBank actor |
 | metabolism | blood | `GSTT1` substrate | DrugBank actor |

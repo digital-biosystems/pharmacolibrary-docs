@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-BA (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG–BA (µM concentrations, 0.4–100 µM, 72 h) acts on apoptotic cell death (%) in MIA PaCa-2 pancreatic cancer cells via a direct concentration-dependent cytotoxic effect (no mechanism or PD model parameters such as Imax/IC50 of a production/elimination model are given); potency is reported as an IC50 of 1.35 ± 0.11 µM for PEG–BA versus 12.70 ± 0.34 µM for free BA, with a selectivity index of 7.28 in MIA PaCa-2 versus Vero cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fru_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

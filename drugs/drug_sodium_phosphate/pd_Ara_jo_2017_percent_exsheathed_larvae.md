@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spigelia anthelmia protein fractions drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Protein fractions from Spigelia anthelmia (LPF, SPF, RPF; concentrations in mg mL-1) inhibit larval exsheathment of Haemonchus contortus (percent exsheathed larvae) in an Emax-type concentration–response model; the paper reports EC50 values of 0.47 mg mL-1 for LPF and 0.78 mg mL-1 for RPF in the larval exsheathment inhibition assay, while SPF at 1.2 mg mL-1 inhibited only 7.9% of exsheathment after 60 minutes. The paper does not state Imax, Emax, kin, kout, ke0 or gamma, and does not give a mechanistic explanation for the exsheathment inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Araújo_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

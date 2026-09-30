@@ -23,18 +23,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979_healthy adults](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | — (no model) | 0 | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980_isolated rabbit hearts](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | — (no model) | 0 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1979_healthy adults](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1979_healthy_adults.md) | — | — (no model) | 0 | Nielsen-Kudsk F et al., Pharmacokinetics of dipyridamole, Acta pharmacologica et toxi… (1979) | [10.1111/j.1600-0773.1979.tb02350.x](https://doi.org/10.1111/j.1600-0773.1979.tb02350.x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nielsen-Kudsk_1980_isolated rabbit hearts](drugs/drug_dipyridamole/Dipyridamole_NielsenKudsk1980_isolated_rabbit_hearts.md) | — | — (no model) | 0 | Nielsen-Kudsk F et al., Myocardial pharmacokinetics and pharmac…, Acta pharmacologica et toxi… (1980) | [10.1111/j.1600-0773.1980.tb01559.x](https://doi.org/10.1111/j.1600-0773.1980.tb01559.x) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.324). The first reading is what the record holds.">cross-check: disputed</span> | [Gesztelyi_2003](drugs/drug_dipyridamole/pd_Gesztelyi_2003_unknown.md) | Gesztelyi R et al., Special sensitization pattern in adenos…, Journal of pharmacological… (2003) | [10.1254/jphs.91.295](https://doi.org/10.1254/jphs.91.295) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Herington_2015](drugs/drug_dipyridamole/pd_Herington_2015_Ca2_mobilization.md) | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Herington_2015](drugs/drug_dipyridamole/pd_Herington_2015_uterine_contractility.md) | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.324). The first reading is what the record holds.">cross-check: disputed</span> | [Gesztelyi_2003_unknown](drugs/drug_dipyridamole/pd_Gesztelyi_2003_unknown.md) | mechanical activity ← adenosine · direct Emax (saturable) effect | — | Gesztelyi R et al., Special sensitization pattern in adenos…, Journal of pharmacological… (2003) | [10.1254/jphs.91.295](https://doi.org/10.1254/jphs.91.295) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Herington_2015_Ca2_mobilization](drugs/drug_dipyridamole/pd_Herington_2015_Ca2_mobilization.md) | name ← benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine · direct sigmoid Emax (Hill) effect | — | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Herington_2015_uterine_contractility](drugs/drug_dipyridamole/pd_Herington_2015_uterine_contractility.md) | name ← benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine · direct sigmoid Emax (Hill) effect | — | Herington JL et al., High-Throughput Screening of Myometrial…, PloS one (2015) | [10.1371/journal.pone.0143243](https://doi.org/10.1371/journal.pone.0143243) |
 
 ## ADME sites
 
@@ -47,6 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ORM1` binder | DrugBank actor |
 | metabolism | liver | `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | excretion | bile duct | <sub>“…iver to the glucuronic acid conjugate and excreted with the bile.…”</sub> | prose |

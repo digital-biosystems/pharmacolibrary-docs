@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 04:05 | 27:47 | 0/0/0 | 0/0/0 | 0/0/0 | 122,930/6,629 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 4/2 | 6/0 | 0 |
+| 2026-09-29 14:05 | 10:47 | 0/0/0 | 0/0/0 | 0/0/0 | 34,235/2,048 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 6/2 | 8/0 | 0 |
 
 ## popPK records
 
@@ -42,19 +42,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 308 matched, 99 returned
+- **PubMed hits:** 308 matched, 126 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_15 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Nooney_1995.pdf` | Nooney JM et al., Inhibition by cyclothiazide of neuronal…, British journal of pharmaco… (1995) | pd | 5 | [10.1111/j.1476-5381.1995.tb17188.x](https://doi.org/10.1111/j.1476-5381.1995.tb17188.x) | [7735691](https://www.ncbi.nlm.nih.gov/pubmed/7735691) | metadata signals extractable PD data (EC50) |
 | `Aleu_1999.pdf` | Aleu J et al., Guanine nucleotides, including GMP, ant…, Journal of neurochemistry (1999) | pd | 4 | [10.1046/j.1471-4159.1999.0722170.x](https://doi.org/10.1046/j.1471-4159.1999.0722170.x) | [10217299](https://www.ncbi.nlm.nih.gov/pubmed/10217299) | metadata signals extractable PD data (EC50) |
+| `Arai_1996.pdf` | Arai A et al., Effects of a centrally active benzoylpy…, Neuroscience (1996) | pd | 4 | [10.1016/0306-4522(96)00263-1](https://doi.org/10.1016/0306-4522(96)00263-1) | [8931020](https://www.ncbi.nlm.nih.gov/pubmed/8931020) | metadata signals extractable PD data (EC50) |
+| `Baltrons_1997.pdf` | Baltrons MA et al., AMPA receptors are coupled to the nitri…, The European journal of neu… (1997) | pd | 4 | [10.1111/j.1460-9568.1997.tb01667.x](https://doi.org/10.1111/j.1460-9568.1997.tb01667.x) | [9464944](https://www.ncbi.nlm.nih.gov/pubmed/9464944) | metadata signals extractable PD data (EC50) |
 | `Barnes-Davies_1995.pdf` | Barnes-Davies M et al., Pre- and postsynaptic glutamate recepto…, The Journal of physiology (1995) | pd | 4 | [10.1113/jphysiol.1995.sp020974](https://doi.org/10.1113/jphysiol.1995.sp020974) | [8568678](https://www.ncbi.nlm.nih.gov/pubmed/8568678) | metadata signals extractable PD data (EC50) |
 | `Dorofeeva_2005.pdf` | Dorofeeva NA et al., Action of extracellular divalent cation…, Journal of neurochemistry (2005) | pd | 4 | [10.1111/j.1471-4159.2005.03533.x](https://doi.org/10.1111/j.1471-4159.2005.03533.x) | [16269006](https://www.ncbi.nlm.nih.gov/pubmed/16269006) | metadata signals extractable PD data (EC50) |
 | `Fukushima_2014.pdf` | Fukushima K et al., Characterization of Human Hippocampal N…, Journal of biomolecular scr… (2014) | pd | 4 | [10.1177/1087057114541149](https://doi.org/10.1177/1087057114541149) | [24980597](https://www.ncbi.nlm.nih.gov/pubmed/24980597) | metadata signals extractable PD data (EC50) |
@@ -67,9 +69,11 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Mitchell_2007.pdf` | Mitchell NA et al., Targeting AMPA receptor gating processe…, Biophysical journal (2007) | pd | 4 | [10.1529/biophysj.106.095091](https://doi.org/10.1529/biophysj.106.095091) | [17208968](https://www.ncbi.nlm.nih.gov/pubmed/17208968) | metadata signals extractable PD data (EC50) |
 | `Mørkve_2002.pdf` | Mørkve SH et al., Functional characteristics of non-NMDA-…, The Journal of physiology (2002) | pd | 4 | [10.1113/jphysiol.2002.020305](https://doi.org/10.1113/jphysiol.2002.020305) | [12096058](https://www.ncbi.nlm.nih.gov/pubmed/12096058) | metadata signals extractable PD data (EC50) |
 | `Petitet_1995.pdf` | Petitet F et al., Effects of non-NMDA receptor modulators…, Journal of neurochemistry (1995) | pd | 4 | [10.1046/j.1471-4159.1995.64031410.x](https://doi.org/10.1046/j.1471-4159.1995.64031410.x) | [7532212](https://www.ncbi.nlm.nih.gov/pubmed/7532212) | metadata signals extractable PD data (EC50) |
+| `Pittaluga_1999.pdf` | Pittaluga A et al., Aniracetam, 1-BCP and cyclothiazide dif…, Naunyn-Schmiedeberg's archi… (1999) | pd | 4 | [10.1007/pl00005352](https://doi.org/10.1007/pl00005352) | [10344525](https://www.ncbi.nlm.nih.gov/pubmed/10344525) | metadata signals extractable PD data (EC50) |
+| `Toms_1997.pdf` | Toms NJ et al., Inhibition of AMPA receptor-stimulated…, Neuropharmacology (1997) | pd | 4 | [10.1016/s0028-3908(97)00012-9](https://doi.org/10.1016/s0028-3908(97)00012-9) | [9175612](https://www.ncbi.nlm.nih.gov/pubmed/9175612) | metadata signals extractable PD data (IC50) |
 | `Zorumski_1996.pdf` | Zorumski CF et al., Modulation of excitatory synaptic trans…, The Journal of physiology (1996) | pd | 4 | [10.1113/jphysiol.1996.sp021506](https://doi.org/10.1113/jphysiol.1996.sp021506) | [8842005](https://www.ncbi.nlm.nih.gov/pubmed/8842005) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-28T04:00:36.616326+00:00</sub>
+<sub>queue written 2026-09-29T14:03:09.816656+00:00</sub>
 
 ## Screened and excluded
 
@@ -80,11 +84,15 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Aleu_1999 | not_relevant | 0 | 0 | The paper investigates the effect of guanine nucleotides on kainate responses and does not mention cyclothiazide or report any exposure-response or dose-response data for it. |
 | popPK | Arai_1995 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on AMPA receptors where cyclothiazide is used only as a pharmacological tool to characterize receptor kinetics, not as a subject for pharmacokinetic analysis. |
 | PD | Arai_1995 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50) for thiocyanate, not cyclothiazide; cyclothiazide is only mentioned qualitatively as an enhancer of AMPA receptor responses. |
+| PD | Arai_1996 | not_relevant | 0 | 0 | The paper studies a benzoylpyrrolidine drug, not cyclothiazide, and does not report PD parameters for the target compound. |
 | popPK | Arai_2000 | irrelevant | 0 | 0 | The study is a mechanistic electrophysiology and binding study of AMPA receptor modulators, not a pharmacokinetic study, and reports no disposition parameters for cyclothiazide. |
 | popPK | Arai_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study of AMPA receptor biophysics and does not report any pharmacokinetic parameters for cyclothiazide. |
+| PD | Baltrons_1997 | not_relevant | 0 | 0 | The paper investigates the coupling of AMPA receptors to the NO/cGMP pathway in astroglial cells and does not report any pharmacodynamic or exposure-response analysis for cyclothiazide. |
 | popPK | Barnes-Davies_1995 | irrelevant | 0 | 0 | no_text gate: only 104 chars of text extracted (&lt; 400) |
 | PD | Barnes-Davies_1995 | not_relevant | 0 | 0 | The paper focuses on the physiological characterization of glutamate receptors in brain slices and does not report any pharmacodynamic or exposure-response analysis for cyclothiazide. |
 | PD | Barygin_2016 | not_relevant | 0 | 0 | The paper reports PD parameters (IC50) for perampanel, not cyclothiazide; cyclothiazide is only used as a modulator to alter perampanel's potency. |
+| popPK | Blanco_1999 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of glutamate receptors in rabbit retina where cyclothiazide is used as a pharmacological tool to block desensitization, not a pharmacokinetic study. |
+| PD | Blanco_1999 | not_relevant | 3 | 2 | The paper reports qualitative effects of cyclothiazide (blocking desensitization) and provides EC50 values for agonists (AMPA, GLU, KA), but does not provide numeric PD parameters (e.g., Emax, EC50) for cyclothiazide itself or a quantitative exposure-response curve for CTZ. |
 | popPK | DAmico_2010 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of glutamate release where cyclothiazide is used as a tool compound to prevent receptor desensitization, not as the subject of pharmacokinetic analysis. |
 | PD | DAmico_2010 | not_relevant | 0 | 0 | The paper reports dose-response parameters for AMPA and ATP, but cyclothiazide is only used as a fixed-concentration tool compound (10 μM) to prevent desensitization, with no exposure-response or dose-response analysis performed for it. |
 | popPK | Dai_2001 | irrelevant | 0 | 0 | The paper is an electrophysiological study of AMPA receptors where cyclothiazide is used as a mechanistic tool to block desensitization, not a pharmacokinetic study reporting disposition parameters. |
@@ -98,11 +106,15 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Fukushima_2014 | irrelevant | 0 | 0 | no_text gate: only 167 chars of text extracted (&lt; 400) |
 | PD | Fukushima_2014 | not_relevant | 0 | 0 | The paper focuses on characterizing human hippocampal neural stem/progenitor cells and their application to ionotropic glutamate receptor assays; it does not report pharmacodynamic or exposure-response data for cyclothiazide. |
 | PD | Fukushima_2020 | not_relevant | 0 | 0 | Cyclothiazide is used as a positive modulator to elicit AMPA currents in the assay, but the paper does not report a concentration-effect relationship or PD parameters for cyclothiazide itself. |
+| popPK | Goforth_1999 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study using cyclothiazide as a tool compound to block AMPA receptor desensitization, not a pharmacokinetic study. |
+| PD | Goforth_1999 | not_relevant | 1 | 0 | The paper uses cyclothiazide as a qualitative tool to inhibit desensitization and does not report a concentration-effect curve or numeric PD parameters for the drug itself. |
 | popPK | Hald_2009 | irrelevant | 0 | 0 | The paper is a structural and electrophysiological study of cyclothiazide's mechanism of action on ionotropic glutamate receptors, containing no pharmacokinetic or disposition parameters. |
 | popPK | Hennegriff_1997 | irrelevant | 0 | 0 | no_text gate: only 112 chars of text extracted (&lt; 400) |
 | PD | Hennegriff_1997 | not_relevant | 0 | 0 | The paper focuses on the stable expression of AMPA receptor subunits and binding affinities, with no mention of cyclothiazide or any pharmacodynamic/exposure-response analysis. |
 | popPK | Hoyt_1995 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of receptor modulation and does not report any pharmacokinetic parameters for cyclothiazide. |
 | PD | Häusser_1997 | not_relevant | 0 | 0 | The paper focuses on the biophysical properties of glutamate receptors in Purkinje cells and does not report pharmacodynamic or exposure-response relationships for cyclothiazide. |
+| PD | Jin_1997 | not_relevant | 2 | 1 | The paper reports a qualitative effect of cyclothiazide (increased DA release) but provides no numeric PD parameters (e.g., Emax, EC50) or concentration-response curve for cyclothiazide itself. |
+| popPK | Johansen_1995 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study examining receptor interactions, not a pharmacokinetic study reporting disposition parameters. |
 | popPK | Kertész_2004 | irrelevant | 0 | 0 | The study is a pharmacodynamic investigation of AMPA receptor modulation in the retina, reporting IC50/EC50 values rather than pharmacokinetic disposition parameters. |
 | popPK | Kessler_1998 | irrelevant | 0 | 0 | no_text gate: only 99 chars of text extracted (&lt; 400) |
 | PD | Kessler_1998 | not_relevant | 0 | 0 | The paper focuses on agonist binding autoradiography to determine regional preferences of AMPA receptor modulators, not on pharmacodynamic exposure-response or dose-response relationships for cyclothiazide. |
@@ -128,6 +140,7 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Noda_2000 | not_relevant | 0 | 0 | The paper reports electrophysiological characterization of glutamate receptors (KA/AMPA) and mentions cyclothiazide as a potentiator, but does not provide a concentration-effect curve or numeric PD parameters (e.g., EC50, Emax) for cyclothiazide itself. |
 | popPK | Nooney_1995 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study examining the mechanism of action of cyclothiazide on nicotinic receptors, not a pharmacokinetic study. |
 | popPK | Ohno_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on neurotoxicity in cell cultures and does not report any pharmacokinetic parameters for cyclothiazide. |
+| popPK | Okada_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study characterizing AMPA receptor antagonists, with cyclothiazide used only as a modulator, and it reports no pharmacokinetic parameters. |
 | popPK | Palma_2002 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study using cyclothiazide as a pharmacological tool to modulate AMPA receptors, not a pharmacokinetic study. |
 | PD | Palma_2002 | not_relevant | 1 | 0 | The paper reports a qualitative observation that cyclothiazide potentiates AMPA currents in Xenopus oocytes, but it does not provide a concentration-effect curve, dose-response data, or numeric PD parameters (e.g., EC50, Emax) for cyclothiazide. |
 | popPK | Partin_1994 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on AMPA receptor modulation and does not report any pharmacokinetic parameters for cyclothiazide. |
@@ -135,20 +148,30 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Patneau_1993 | not_relevant | 4 | 3 | The paper reports electrophysiological effects of cyclothiazide (potentiation of peak current, block of desensitization) and mentions fitting dose-response curves for agonists, but it does not provide numeric PD parameters (e.g., Emax, EC50) for cyclothiazide itself, nor does it present a concentration-effect curve for cyclothiazide in the provided text. |
 | popPK | Pellerin_2005 | irrelevant | 0 | 0 | The paper is a mechanistic study on astrocyte energetics and AMPA receptor modulation, not a pharmacokinetic study, and contains no PK parameters for cyclothiazide. |
 | popPK | Phillips_2002 | irrelevant | 0 | 0 | The paper is a mechanistic study of AMPA receptor modulation and structure-activity relationships, not a pharmacokinetic study, and contains no disposition parameters for cyclothiazide. |
+| popPK | Pittaluga_1999 | irrelevant | 0 | 0 | no_text gate: only 172 chars of text extracted (&lt; 400) |
 | popPK | Puia_2000 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology experiment investigating receptor modulation and toxicity, not a pharmacokinetic study, and reports no disposition parameters for cyclothiazide. |
 | popPK | Rammes_1996 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study focusing on receptor kinetics and interactions, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | popPK | Salonen_1982 | irrelevant | 0 | 0 | The paper is a clinical efficacy study comparing antihypertensive effects and does not report pharmacokinetic parameters such as clearance or volume of distribution. |
 | PD | Salonen_1982 | not_relevant | 1 | 0 | The paper reports clinical efficacy comparisons at fixed doses but does not provide concentration-effect data, PK/PD modeling, or numeric PD parameters like Emax or EC50. |
 | popPK | Shen_1999 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study of AMPA receptors in carp retina where cyclothiazide is used as a modulator, not a pharmacokinetic study. |
+| PD | Shen_2004 | not_relevant | 1 | 0 | The paper mentions cyclothiazide only qualitatively as an enhancer of AMPA currents to identify receptor subtypes, without providing any numeric dose-response data, IC50, or concentration-effect curve for cyclothiazide itself. |
 | popPK | Sinclair_2003 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on AMPA receptor agonists where cyclothiazide is used only as a co-administered tool compound, with no pharmacokinetic parameters reported. |
 | popPK | Szárics_2008 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic binding study of cyclothiazide to GABA receptors and does not report any pharmacokinetic disposition parameters. |
 | popPK | Takatsuru_2007 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study using cyclothiazide as a pharmacological tool to modulate AMPA receptors, not a pharmacokinetic study reporting disposition parameters for the drug. |
 | popPK | Telgkamp_1996 | irrelevant | 0 | 0 | The study is an electrophysiological investigation of AMPA receptor modulation in astrocytes and does not report any pharmacokinetic parameters for cyclothiazide. |
 | PD | Telgkamp_1996 | not_relevant | 0 | 0 | The paper studies the pharmacology of nickel and kainate on AMPA receptors; cyclothiazide is only mentioned qualitatively as a potentiator to confirm receptor subtype, with no concentration-effect data or PD parameters reported for it. |
+| PD | Thomas_1998 | not_relevant | 4 | 2 | The paper reports EC50 values for agonists and KD values for antagonists, but only provides qualitative descriptions (enhanced/blocked) for cyclothiazide without numeric PD parameters or a concentration-effect curve. |
 | popPK | Thomas_2000 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of mGlu5 receptors where cyclothiazide is used as a desensitization inhibitor, not as a subject drug for pharmacokinetic analysis. |
 | PD | Thomas_2000 | not_relevant | 1 | 0 | The paper reports pharmacological characterization of mGlu5 receptors using cyclothiazide as a desensitization inhibitor, but does not provide a concentration-effect curve or numeric PD parameters (e.g., EC50, Emax) for cyclothiazide itself. |
+| popPK | Toms_1997 | irrelevant | 0 | 0 | no_text gate: only 182 chars of text extracted (&lt; 400) |
+| PD | Toms_1997 | not_relevant | 0 | 0 | The paper investigates the effects of D- and L-AP4 and L-SOP on AMPA receptors, not cyclothiazide. |
+| popPK | Varney_1998 | irrelevant | 0 | 0 | The paper is a pharmacological study of AMPA receptors using cyclothiazide as a modulator, not a pharmacokinetic study of cyclothiazide disposition. |
+| PD | Varney_1998 | not_relevant | 0 | 0 | The paper characterizes the pharmacology of the GluR3 receptor using agonists and antagonists, but does not report a pharmacokinetic or exposure-response relationship for cyclothiazide; cyclothiazide is used only as a tool compound to block desensitization. |
 | popPK | Wall_2002 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study using cyclothiazide as a pharmacological tool to modulate receptor desensitization, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Waters_1998 | irrelevant | 0 | 0 | The paper is an electrophysiological study of glutamate receptors where cyclothiazide is used as a pharmacological modulator, not a pharmacokinetic study of the drug's disposition. |
+| PD | Waters_1998 | not_relevant | 0 | 0 | The paper reports pharmacological characterization of glutamate receptors (EC50 for agonists, IC50 for antagonists) but does not report a pharmacodynamic exposure-response or dose-response relationship for the drug cyclothiazide itself. |
 | PD | Wimmer_1977 | not_relevant | 1 | 0 | The text describes a clinical trial comparing fixed-dose combinations for efficacy and side effects but does not report any concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50). |
+| PD | Xu_1999 | not_relevant | 0 | 0 | The paper reports qualitative potentiation by cyclothiazide but provides no numeric concentration-effect data, EC50, or dose-response parameters for this specific drug. |
 | popPK | Yamada_1998 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of IDRA21's effect on synaptic currents, with cyclothiazide serving only as a comparator agent, and contains no pharmacokinetic parameters. |
 | popPK | Zhang_2002 | irrelevant | 0 | 0 | The paper is a mechanistic electrophysiology study on zinc modulation of AMPA receptors, using cyclothiazide only as a pharmacological tool to block desensitization, with no pharmacokinetic parameters reported. |
 | PD | Zhang_2002 | not_relevant | 0 | 0 | The paper reports dose-response parameters for zinc and glutamate, but cyclothiazide is used only as a tool compound to block desensitization, and no exposure-response or dose-response relationship for cyclothiazide itself is reported. |

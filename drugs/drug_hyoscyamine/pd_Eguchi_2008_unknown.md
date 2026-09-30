@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ACh (measured concentrations) drives intracellular Ca 2+ level (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ACh applied to the basolateral membrane of mouse fungiform taste bud cells stimulates intracellular Ca2+ ([Ca2+]i, fura-2 F340/F380 ratio) in a concentration-dependent manner via M3 muscarinic receptors (responses occur even in Ca2+-free solution, indicating release from intracellular stores, and are blocked by atropine); responses appear below 0.01 µM ACh and saturate above 1 µM with an EC50 of 0.6 µM. The paper does not state a formal PD model (no Imax, Emax, kin, kout, ke0, or Hill coefficient), and hyoscyamine is not mentioned in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eguchi_2008`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

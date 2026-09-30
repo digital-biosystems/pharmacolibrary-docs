@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampicin (measured concentrations) drives ABCB1 mRNA expression (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Rifampicin concentration-dependently induces ABCB1 (P-gp) mRNA expression in LS180 cells via PXR activation; when normalized to actual intracellular concentrations after 24 h exposure, ABCB1 induction followed an Emax model with EC50 of 37.4 ± 2.0 µM and Emax of 2.6-fold (± 0.1) versus untreated control, with potency and efficacy increasing with longer exposure (24 h vs 144 h, P &lt; 0.05).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilles_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

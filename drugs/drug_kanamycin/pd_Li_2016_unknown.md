@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 3 (measured concentrations) drives persister fraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Compound 3 (a HipA toxin inhibitor) concentration-dependently reduces the E. coli persister fraction measured in ex vivo screens with 50 μg/mL kanamycin, acting by inhibition of HipA toxin-antitoxin-mediated persister formation (Emax-type inhibition); the paper reports an EC50 of 28 ± 1 μM for the kanamycin screen (46 ± 2 μM with ampicillin) and an in vitro HipA KD of 270 ± 90 nM, but gives no Imax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Li T; Yin N; Liu H; Pei J; Lai L et al. (2016). ACS medicinal chemistry letters 
   ·  DOI: [10.1021/acsmedchemlett.5b00420](https://doi.org/10.1021/acsmedchemlett.5b00420)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 46 | μM | not captured | review_gapfill (not captured) | Li_2016:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 46 | μM | not captured | review_gapfill (not captured) | Li_2016:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

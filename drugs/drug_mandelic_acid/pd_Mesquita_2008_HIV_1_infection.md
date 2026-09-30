@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PPCM (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PPCM (formed from D,L-mandelic acid) concentrations inhibit HIV-1 infection of cell cultures and cervical tissue explants, acting by direct inactivation/blockade of viral particles rather than a described PD model (no Emax/kin/kout/ke0 parameters are given). Reported IC50s include 0.63 ± 0.3 g/ml (HIV-1 RF, compound present throughout), 1.82 ± 0.5 g/ml (HIV-1 RF virion pretreatment), 2.02 ± 0.5 g/ml (HIV-1 BaL, compound present), &gt;1 mg/ml (HIV-1 BaL pretreatment), and 3.1–3.9 g/ml (explants) and 35.7–54.6 g/ml (migratory-cell transfer) for HIV-1 BaL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mesquita_2008`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

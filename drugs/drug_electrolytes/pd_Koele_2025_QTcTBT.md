@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bedaquiline M2 metabolite drives QTcTBT (in ms): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> QTcTBT (ms) was described by a linear exposure–response model in which QTcTBT prolongation increased linearly with bedaquiline M2 metabolite AUC0–24, with a treatment-related increase of 13.2 ms (95% CI: 10.9–15.3) from a baseline of 400 ms within the first week and no further increase thereafter; no slope, potency (IC50/EC50/Emax) or rate parameters are reported, and no effect of sutezolid or delpazolid exposure was identified.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koele_2025`
 - **model family:** `linear`
 - **driver:** `not_resolved`

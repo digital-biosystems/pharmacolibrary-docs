@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizic acid (measured concentrations) drives Hyal-1 activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid (0–1 mM) inhibits Hyal-1 activity in an E. coli whole-cell assay, with an IC50 of 177 µM (39.4 µM in an ELISA-like assay with partially purified Hyal-1); the paper reports IC50 values from sigmoid dose-response fitting but does not describe a mechanistic PD model (no Imax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Orlando_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,12 +30,12 @@ Orlando Z; Lengers I; Melzig MF; Buschauer A; Hensel A; Jose J et al. (2015). Mo
   ·  DOI: [10.3390/molecules200915449](https://doi.org/10.3390/molecules200915449)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Equiseti herba — IC50 Value [mg/mL] | `Q322` · not captured | 1.5 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row2:col2 |
-| Ononidis radix — IC50 Value [mg/mL] | `Q322` · not captured | 1.7 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row4:col2 |
-| Malvae sylvestris flos — IC50 Value [mg/mL] | `Q322` · not captured | 1.4 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row7:col2 |
-| Solidaginis herba — IC50 Value [mg/mL] | `Q322` · not captured | 4.9 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Equiseti herba — IC50 Value [mg/mL] | `Q322` · not captured | 1.5 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row2:col2 |
+| PD (effect) | Ononidis radix — IC50 Value [mg/mL] | `Q322` · not captured | 1.7 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row4:col2 |
+| PD (effect) | Malvae sylvestris flos — IC50 Value [mg/mL] | `Q322` · not captured | 1.4 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row7:col2 |
+| PD (effect) | Solidaginis herba — IC50 Value [mg/mL] | `Q322` · not captured | 4.9 | mg/mL | not captured | llm (not captured) | molecules-20-15449-t002:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

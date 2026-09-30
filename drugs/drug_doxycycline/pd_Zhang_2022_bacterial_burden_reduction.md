@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Florfenicol (measured concentrations) drives name (in log10CFU/ml): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the in vitro dynamic PK/PD model, florfenicol (combined with doxycycline) concentrations, summarized by the PK/PD indices AUC24h/MIC and Cmax/MIC, were related to reduction in bacterial burden (log10CFU/ml) of Riemerella anatipestifer by an inhibitory sigmoidal Emax model; the paper does not state a mechanistic kin/kout or effect-compartment description. For the combination, E0 was -6.43 log10CFU/ml (AUC24h/MIC) and -7.67 log10CFU/ml (Cmax/MIC), with EC50 of 58.78 h (AUC24h/MIC, R2 = 0.861) and 7.8 mg/L (Cmax/MIC); the AUC24h/MIC needed for a 3 log10CFU/ml reduction was 34.84 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,24 +31,24 @@ Zhang H; Huang Y; Yu J; Liu X; Ding H et al. (2022). Frontiers in veterinary sci
   ·  DOI: [10.3389/fvets.2022.975673](https://doi.org/10.3389/fvets.2022.975673)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (log10CFU/ml) — AUC24h/MIC (h) | `Q320` · not captured | 0.04 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col3 |
-| Emax (log10CFU/ml) — Cmax/MIC | `Q320` · not captured | 0.05 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col4 |
-| Emax (log10CFU/ml) — AUC24h/MIC (h) | `Q320` · not captured | 0 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col6 |
-| Emax (log10CFU/ml) — Cmax/MIC | `Q320` · not captured | 0 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col7 |
-| EC50 — AUC24h/MIC (h) | `Q321` · not captured | 41.69 | h | not captured | exact (not captured) | T3:row1:col3 |
-| EC50 — Cmax/MIC | `Q321` · not captured | 5.62 | mg/L | not captured | exact (not captured) | T3:row1:col4 |
-| EC50 — AUC24h/MIC (h) | `Q321` · not captured | 58.78 | h | not captured | exact (not captured) | T3:row1:col6 |
-| EC50 — Cmax/MIC | `Q321` · not captured | 7.8 | mg/L | not captured | exact (not captured) | T3:row1:col7 |
-| E0 (log10CFU/ml) — AUC24h/MIC (h) | `Q324` · not captured | -6.43 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col3 |
-| E0 (log10CFU/ml) — Cmax/MIC | `Q324` · not captured | -6.43 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col4 |
-| E0 (log10CFU/ml) — AUC24h/MIC (h) | `Q324` · not captured | -7.73 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col6 |
-| E0 (log10CFU/ml) — Cmax/MIC | `Q324` · not captured | -7.67 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col7 |
-| R 2 — AUC24h/MIC (h) | `Q19` · not captured | 0.991 | h | not captured | llm (not captured) | T3:row4:col3 |
-| R 2 — AUC24h/MIC (h) | `Q19` · not captured | 0.861 | h | not captured | llm (not captured) | T3:row4:col6 |
-| Three reductions of log10CFU/ml — AUC24h/MIC (h) | `Q19` · not captured | 40.10 | h | not captured | llm (not captured) | T3:row5:col3 |
-| Three reductions of log10CFU/ml — AUC24h/MIC (h) | `Q19` · not captured | 34.84 | h | not captured | llm (not captured) | T3:row5:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (log10CFU/ml) — AUC24h/MIC (h) | `Q320` · not captured | 0.04 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col3 |
+| PD (effect) | Emax (log10CFU/ml) — Cmax/MIC | `Q320` · not captured | 0.05 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col4 |
+| PD (effect) | Emax (log10CFU/ml) — AUC24h/MIC (h) | `Q320` · not captured | 0 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col6 |
+| PD (effect) | Emax (log10CFU/ml) — Cmax/MIC | `Q320` · not captured | 0 | log10CFU/ml | not captured | exact (not captured) | T3:row0:col7 |
+| PD (effect) | EC50 — AUC24h/MIC (h) | `Q321` · not captured | 41.69 | h | not captured | exact (not captured) | T3:row1:col3 |
+| PD (effect) | EC50 — Cmax/MIC | `Q321` · not captured | 5.62 | mg/L | not captured | exact (not captured) | T3:row1:col4 |
+| PD (effect) | EC50 — AUC24h/MIC (h) | `Q321` · not captured | 58.78 | h | not captured | exact (not captured) | T3:row1:col6 |
+| PD (effect) | EC50 — Cmax/MIC | `Q321` · not captured | 7.8 | mg/L | not captured | exact (not captured) | T3:row1:col7 |
+| PD (effect) | E0 (log10CFU/ml) — AUC24h/MIC (h) | `Q324` · not captured | -6.43 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col3 |
+| PD (effect) | E0 (log10CFU/ml) — Cmax/MIC | `Q324` · not captured | -6.43 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col4 |
+| PD (effect) | E0 (log10CFU/ml) — AUC24h/MIC (h) | `Q324` · not captured | -7.73 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col6 |
+| PD (effect) | E0 (log10CFU/ml) — Cmax/MIC | `Q324` · not captured | -7.67 | log10CFU/ml | not captured | exact (not captured) | T3:row2:col7 |
+| PK (driver) | R 2 — AUC24h/MIC (h) | `Q19` · not captured | 0.991 | h | not captured | llm (not captured) | T3:row4:col3 |
+| PK (driver) | R 2 — AUC24h/MIC (h) | `Q19` · not captured | 0.861 | h | not captured | llm (not captured) | T3:row4:col6 |
+| PK (driver) | Three reductions of log10CFU/ml — AUC24h/MIC (h) | `Q19` · not captured | 40.10 | h | not captured | llm (not captured) | T3:row5:col3 |
+| PK (driver) | Three reductions of log10CFU/ml — AUC24h/MIC (h) | `Q19` · not captured | 34.84 | h | not captured | llm (not captured) | T3:row5:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

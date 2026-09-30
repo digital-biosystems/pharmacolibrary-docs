@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Histones (measured concentrations) drives Thrombin inhibition (in IU/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Histones (µg/ml) neutralise the anti-IIa (thrombin inhibitory) activity of heparins measured as % heparin activity in a purified thrombin–antithrombin chromogenic (S2288) system; the paper does not state a kinetic PD mechanism, only a four-parameter binding isotherm giving IC50 values of 4.8 (±1.0) µg/ml histones against 0.6 IU/ml UFH, 6.1 (±1.1) µg/ml against Enoxaparin and 11.0 (±1.1) µg/ml against LMWH IS (both 0.6 IU/ml anti-IIa), comparable to the plasma APTT IC50 of 1.8 µg/ml with 0.2 IU/ml UFH.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Longstaff_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

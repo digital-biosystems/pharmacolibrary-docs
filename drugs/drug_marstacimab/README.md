@@ -25,17 +25,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nayak_2026_reference](drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md) | 3-compartment, IV | 7 | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Nayak_2026_reference](drugs/drug_marstacimab/Marstacimab_Nayak2026_reference.md) | ▶ model + simulator | 3-compartment, IV | 7 | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Jin_2026](drugs/drug_marstacimab/pd_Jin_2026_Inh_EFF.md) | Jin M et al., Discovery and optimization of marstacim…, mAbs (2026) | [10.1080/19420862.2026.2685362](https://doi.org/10.1080/19420862.2026.2685362) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Jin_2026](drugs/drug_marstacimab/pd_Jin_2026_RO.md) | Jin M et al., Discovery and optimization of marstacim…, mAbs (2026) | [10.1080/19420862.2026.2685362](https://doi.org/10.1080/19420862.2026.2685362) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span> | [Nayak_2026](drugs/drug_marstacimab/pd_Nayak_2026_peak_thrombin.md) | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Jin_2026_Inh_EFF](drugs/drug_marstacimab/pd_Jin_2026_Inh_EFF.md) | Inhibition effect ← anti-TFPI antibody · target-mediated drug disposition | — | Jin M et al., Discovery and optimization of marstacim…, mAbs (2026) | [10.1080/19420862.2026.2685362](https://doi.org/10.1080/19420862.2026.2685362) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Jin_2026_RO](drugs/drug_marstacimab/pd_Jin_2026_RO.md) | TFPI receptor occupancy ← anti-TFPI antibody · target-mediated drug disposition | — | Jin M et al., Discovery and optimization of marstacim…, mAbs (2026) | [10.1080/19420862.2026.2685362](https://doi.org/10.1080/19420862.2026.2685362) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.9). The first reading is what the record holds.">cross-check: disputed</span> | [Nayak_2026_peak_thrombin](drugs/drug_marstacimab/pd_Nayak_2026_peak_thrombin.md) | peak thrombin ← free TFPI · direct Emax (saturable) effect | — | Nayak S et al., Clinical Pharmacokinetics and Pharmacod…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01695-5](https://doi.org/10.1007/s40262-026-01695-5) |
 
 ## ADME sites
 

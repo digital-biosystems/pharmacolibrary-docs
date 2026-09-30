@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Irbesartan drives blood pressure (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Irbesartan plasma concentrations drive blood pressure reduction (SBP and DBP) in renal hypertensive dogs via a sigmoid Emax model with an effect compartment (counterclockwise hysteresis between effect and plasma concentration after single dosing, disappearing at steady state); HCTZ (10 mg/kg/d) had no BP effect alone at non-steady-state but enhanced irbesartan's effect. The paper reports Emax (kPa), EC50 (mg/mL), gamma, and ke0 (min^-1) for irbesartan alone and with HCTZ (Table 2), but the excerpt does not state the numeric values of these parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2005`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isobruceine B (measured concentrations) drives cytotoxicity (in μg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for tocopherol; α-tocopherol (compound 8) was only tested in a cytotoxicity assay against KB, LU-1, LNCaP, and HL-60 cancer cell lines, with IC50 values determined by nonlinear regression of concentration versus % growth, and no IC50 value for tocopherol is given in the excerpts (the reported IC50s of 0.23–3.73 μg/mL belong to isobruceine B (2), 9-methoxycanthin-6-one (3), niloticine (5), and ellipticine).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tung_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,24 +31,24 @@ Tung MH; Duc HV; Huong TT; Duong NT; Phuong do T; Thao do T; et al. et al. (2013
   ·  DOI: [10.3797/scipharm.1206-02](https://doi.org/10.3797/scipharm.1206-02)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μg/ml) — 2 | `Q322` · not captured | 0.39 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col5 |
-| IC50 (μg/ml) — 3 | `Q322` · not captured | 3.73 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col6 |
-| IC50 (μg/ml) — 5 | `Q322` · not captured | 2.22 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col8 |
-| IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.89 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col14 |
-| IC50 (μg/ml) — 2 | `Q322` · not captured | 0.40 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col5 |
-| IC50 (μg/ml) — 3 | `Q322` · not captured | 1.61 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col6 |
-| IC50 (μg/ml) — 5 | `Q322` · not captured | 1.22 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col8 |
-| IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.72 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col14 |
-| IC50 (μg/ml) — 2 | `Q322` · not captured | 0.34 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col5 |
-| IC50 (μg/ml) — 3 | `Q322` · not captured | 1.01 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col6 |
-| IC50 (μg/ml) — 5 | `Q322` · not captured | 1.10 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col8 |
-| IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.70 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col14 |
-| IC50 (μg/ml) — 2 | `Q322` · not captured | 0.23 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col5 |
-| IC50 (μg/ml) — 3 | `Q322` · not captured | 0.91 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col6 |
-| IC50 (μg/ml) — 5 | `Q322` · not captured | 1.00 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col8 |
-| IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.66 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col14 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μg/ml) — 2 | `Q322` · not captured | 0.39 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col5 |
+| PD (effect) | IC50 (μg/ml) — 3 | `Q322` · not captured | 3.73 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col6 |
+| PD (effect) | IC50 (μg/ml) — 5 | `Q322` · not captured | 2.22 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col8 |
+| PD (effect) | IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.89 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row0:col14 |
+| PD (effect) | IC50 (μg/ml) — 2 | `Q322` · not captured | 0.40 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col5 |
+| PD (effect) | IC50 (μg/ml) — 3 | `Q322` · not captured | 1.61 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col6 |
+| PD (effect) | IC50 (μg/ml) — 5 | `Q322` · not captured | 1.22 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col8 |
+| PD (effect) | IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.72 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row1:col14 |
+| PD (effect) | IC50 (μg/ml) — 2 | `Q322` · not captured | 0.34 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col5 |
+| PD (effect) | IC50 (μg/ml) — 3 | `Q322` · not captured | 1.01 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col6 |
+| PD (effect) | IC50 (μg/ml) — 5 | `Q322` · not captured | 1.10 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col8 |
+| PD (effect) | IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.70 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row2:col14 |
+| PD (effect) | IC50 (μg/ml) — 2 | `Q322` · not captured | 0.23 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col5 |
+| PD (effect) | IC50 (μg/ml) — 3 | `Q322` · not captured | 0.91 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col6 |
+| PD (effect) | IC50 (μg/ml) — 5 | `Q322` · not captured | 1.00 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col8 |
+| PD (effect) | IC50 (μg/ml) — Ellipticine | `Q322` · not captured | 0.66 | μg/ml | not captured | exact (not captured) | t1-scipharm.2013.81.819:row3:col14 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

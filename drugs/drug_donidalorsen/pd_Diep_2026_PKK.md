@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Donidalorsen (concentrations from this paper's PK model) drives prekallikrein (in mg/L): indirect response — drug inhibits the production of prekallikrein.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Plasma donidalorsen concentration inhibits the zero-order production rate of prekallikrein (PKK, mg/L) in an indirect response model (Imax proportional inhibition, no Hill coefficient), with Imax 0.992, IC50 0.158 ng/mL, and kout 0.00266 h−1 (baseline estimated as kin/kout).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Diep_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
@@ -21,22 +31,22 @@ Diep JK; Liu M; Singh P; Dorow S; Cohn DM; Bordone L; et al. et al. (2026). CPT:
   ·  DOI: [10.1002/psp4.70206](https://doi.org/10.1002/psp4.70206)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k out (h−1) — Estimate | `Q328` · not captured | 0.00266 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col1 |
-| k out (h−1) — %RSE | `Q328` · not captured | 4.70 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col2 |
-| I max — Estimate | `Q323` · not captured | 0.992 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col1 |
-| I max — %RSE | `Q323` · not captured | 1.19 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col2 |
-| IC50 (ng/mL) b — Estimate | `Q322` · not captured | 0.158 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col1 |
-| IC50 (ng/mL) b — %RSE | `Q322` · not captured | 11.0 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col2 |
-| BSV% BL (Sh%) — Estimate | `Q318` · not captured | 25.9 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col1 |
-| BSV% BL (Sh%) — %RSE | `Q318` · not captured | 16.4 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col2 |
-| BSV% k out (Sh%) — Estimate | `Q318` · not captured | 36.6 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col1 |
-| BSV% k out (Sh%) — %RSE | `Q318` · not captured | 21.0 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col2 |
-| BSV% IC50 (Sh%) — Estimate | `Q322` · not captured | 83.1 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col1 |
-| BSV% IC50 (Sh%) — %RSE | `Q322` · not captured | 16.4 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col2 |
-| σprop — Estimate | `Q316` · not captured | 0.159 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col1 |
-| σprop — %RSE | `Q316` · not captured | 6.13 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | k out (h−1) — Estimate | `Q328` · not captured | 0.00266 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col1 |
+| PD (effect) | k out (h−1) — %RSE | `Q328` · not captured | 4.70 | h−1 | not captured | space_fold (not captured) | psp470206-tbl-0002:row3:col2 |
+| PD (effect) | I max — Estimate | `Q323` · not captured | 0.992 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col1 |
+| PD (effect) | I max — %RSE | `Q323` · not captured | 1.19 | not captured | not captured | space_fold (not captured) | psp470206-tbl-0002:row4:col2 |
+| PD (effect) | IC50 (ng/mL) b — Estimate | `Q322` · not captured | 0.158 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col1 |
+| PD (effect) | IC50 (ng/mL) b — %RSE | `Q322` · not captured | 11.0 | unknown | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row5:col2 |
+| variability | BSV% BL (Sh%) — Estimate | `Q318` · not captured | 25.9 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col1 |
+| variability | BSV% BL (Sh%) — %RSE | `Q318` · not captured | 16.4 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row7:col2 |
+| variability | BSV% k out (Sh%) — Estimate | `Q318` · not captured | 36.6 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col1 |
+| variability | BSV% k out (Sh%) — %RSE | `Q318` · not captured | 21.0 | Sh% | not captured | llm_corrected (not captured) | psp470206-tbl-0002:row8:col2 |
+| PD (effect) | BSV% IC50 (Sh%) — Estimate | `Q322` · not captured | 83.1 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col1 |
+| PD (effect) | BSV% IC50 (Sh%) — %RSE | `Q322` · not captured | 16.4 | Sh% | not captured | llm_confirmed (not captured) | psp470206-tbl-0002:row9:col2 |
+| variability | σprop — Estimate | `Q316` · not captured | 0.159 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col1 |
+| variability | σprop — %RSE | `Q316` · not captured | 6.13 | not captured | not captured | llm (not captured) | psp470206-tbl-0002:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

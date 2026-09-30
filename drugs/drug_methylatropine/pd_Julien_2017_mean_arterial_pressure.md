@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phenylephrine (the dose) drives name (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Methylatropine (2 mg/kg iv followed by 2 mg/kg/h, with atenolol) was used only as background cardiac autonomic blockade, not as a modeled driver; the modeled relationship is the pressor dose–response of phenylephrine (bolus doses 0.19–12 μg/kg iv) on mean arterial pressure (mmHg), a direct α1-adrenoceptor stimulation effect fitted as a sigmoid Emax curve. LPS shifted the phenylephrine ED50 from 1.02 ± 0.09 to 4.76 ± 0.? μg/kg (4–5-fold increase, P = 0.005), with baseline MAP 115 ± 1 mmHg; the paper does not state Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values or an effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Julien_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`
@@ -20,16 +30,16 @@ Julien C; Oréa V; Quintin L; Piriou V; Barrès C et al. (2017). Physiological r
   ·  DOI: [10.14814/phy2.13139](https://doi.org/10.14814/phy2.13139)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SAL Group (n = 5) — Baseline | `Q100` · not captured | 115 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row2:col1 |
-| DEX Group (n = 5) — Baseline | `Q100` · not captured | 116 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row3:col1 |
-| P — Baseline | `Q100` · not captured | 0.917 | not captured | not captured | llm (not captured) | phy213139-tbl-0001:row4:col1 |
-| SAL Group (n = 5) — Baseline | `Q100` · not captured | 371 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row6:col1 |
-| DEX Group (n = 5) — Baseline | `Q100` · not captured | 378 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row7:col1 |
-| P — Baseline | `Q100` · not captured | 0.753 | not captured | not captured | llm (not captured) | phy213139-tbl-0001:row8:col1 |
-| SAL Group (n = 5) — Baseline | `Q100` · not captured | 100 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row10:col1 |
-| DEX Group (n = 5) — Baseline | `Q100` · not captured | 100 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | SAL Group (n = 5) — Baseline | `Q100` · not captured | 115 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row2:col1 |
+| — | DEX Group (n = 5) — Baseline | `Q100` · not captured | 116 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row3:col1 |
+| — | P — Baseline | `Q100` · not captured | 0.917 | not captured | not captured | llm (not captured) | phy213139-tbl-0001:row4:col1 |
+| — | SAL Group (n = 5) — Baseline | `Q100` · not captured | 371 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row6:col1 |
+| — | DEX Group (n = 5) — Baseline | `Q100` · not captured | 378 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row7:col1 |
+| — | P — Baseline | `Q100` · not captured | 0.753 | not captured | not captured | llm (not captured) | phy213139-tbl-0001:row8:col1 |
+| — | SAL Group (n = 5) — Baseline | `Q100` · not captured | 100 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row10:col1 |
+| — | DEX Group (n = 5) — Baseline | `Q100` · not captured | 100 | n = 5 | not captured | llm (not captured) | phy213139-tbl-0001:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

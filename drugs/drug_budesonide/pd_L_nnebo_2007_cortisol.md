@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Budesonide (concentrations from this paper's PK model) drives cortisol (in unknown): indirect response — drug inhibits the production of cortisol.
+
+**Model:** No model was generated from this record.
+
+> Budesonide plasma concentrations (mg l-1) were modelled as inhibiting the production of cortisol in an indirect response model, with cortisol production driven by ACTH and described by an endogenous substance model combining indirect response functions with a sum of cosine functions; the excerpts do not state potency (IC50/Imax) or rate (kin/kout) values or units for cortisol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lönnebo_2007`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

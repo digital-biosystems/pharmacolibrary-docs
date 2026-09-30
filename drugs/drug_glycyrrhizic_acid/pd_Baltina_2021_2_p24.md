@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 3-O-{2-O-[N-(β-D-glucopyranosyluronyl)-L-cysteine-S-benzyl]-N-(β-D-glucopyranosyluronyl)-L-cysteine-S-benzyl}-(3β,20β)-11-oxo-30-(N-carbonyl-L-cysteine-S-benzyl)-30-norolean-12-ene (measured concentrations) drive HIV-1 protein p24 accumulation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The glycyrrhizic acid conjugate III (3-O-{2-O-[N-(β-D-glucopyranosyluronyl)-L-cysteine-S-benzyl]-N-(β-D-glucopyranosyluronyl)-L-cysteine-S-benzyl}-(3β,20β)-11-oxo-30-(N-carbonyl-L-cysteine-S-benzyl)-30-norolean-12-ene) concentration-dependently inhibits accumulation of HIV-1 protein p24 in HIV-1/EVK-infected MT-4 cells (tested 0.1–100 μg/mL, p24 measured by immunoenzyme assay on day 4), with ID50 = 3 μg/mL (2.2 μM) and ID90 = 100 μg/mL; the paper does not state a mechanistic PD model (no Imax/EC50/kin/kout/ke0), and cytotoxicity CD50 was 270 μg/mL giving SI = 90.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baltina_2021_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

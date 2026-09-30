@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives name (in cell index): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Paclitaxel (delivered as PLGA-PEG micelles, PTX-PM) at 20 and 40 ng/mL acts on MCF-7 cell cytotoxicity (cell index) via a semimechanistic chain: intracellular PTX (3-compartment cellular PK: membrane/organelle, nucleus, cytoskeleton) stimulates tubulin polymerization (indirect response model), causing G2/M arrest and cell death; the PD delay was best described by a hypothetical effect compartment rather than transit or gamma models. The excerpts do not report the potency/rate parameter values (e.g., IC50, ke0, kin, kout) for the cytotoxicity endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zheng_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

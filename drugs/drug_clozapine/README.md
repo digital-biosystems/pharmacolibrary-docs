@@ -27,10 +27,10 @@ Clozapine is also indicated for reducing the risk of recurrent suicidal behavior
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Geers_2022_reference](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | 1-compartment, oral | 4 | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reeves_2024_reference](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | 1-compartment, oral | 2 | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Geers_2022_reference](drugs/drug_clozapine/Clozapine_Geers2022_reference.md) | held back | 1-compartment, oral | 4 | Geers LM et al., Population pharmacokinetic model and li…, Therapeutic advances in psy… (2022) | [10.1177/20451253211065857](https://doi.org/10.1177/20451253211065857) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl, ka, Tlag left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Reeves_2024_reference](drugs/drug_clozapine/Clozapine_Reeves2024_reference.md) | held back | 1-compartment, oral | 2 | Reeves S et al., A population pharmacokinetic model to g…, British journal of clinical… (2024) | [10.1111/bcp.15691](https://doi.org/10.1111/bcp.15691) |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder, `ORM1` binder | DrugBank actor |
 | distribution | liver | `SLC22A3` substrate | DrugBank actor |
 | distribution | placenta | `SLC22A3` substrate | DrugBank actor |

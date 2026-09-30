@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives phenylephrine PD20 (in ug kg-1 min-1): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> The record describes doxazosin plasma concentrations (ng ml-1, from a cited PK model) inhibiting the phenylephrine PD20 pressor response (ug kg-1 min-1) via an effect-compartment model, but the paper excerpts do not describe this PD model or its mechanism, and no potency (IC50/EC50/Imax/Emax) or rate (ke0, gamma) values for it are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Elliott_1986`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

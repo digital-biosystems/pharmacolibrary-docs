@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RP-1776 drives PDGF beta-receptor phosphorylation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> RP-1776 inhibits PDGFBB-induced phosphorylation of the PDGF beta-receptor by directly binding PDGFBB and thereby blocking its binding to the PDGF beta-receptor extracellular domain, with an IC50 of 11±6 µM (n=4) for inhibition of PDGFBB binding; no PD model parameters (Emax, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Toki_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

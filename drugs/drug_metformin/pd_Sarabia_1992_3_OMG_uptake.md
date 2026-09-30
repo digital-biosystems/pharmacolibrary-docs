@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (concentrations from the PK model of Ailabouni_2026::250_mg) drives 3-0-methylglucose uptake (in pmol/min * mg protein) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports that metformin was tested on 3-O-methylglucose uptake (pmol/min·mg protein) in primary human myotube cultures, but the excerpts do not state the metformin concentration–response relationship, mechanism, or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 for metformin is given); the only quantitative PD values reported concern other aspects (cytochalasin B inhibition of 2-deoxyglucose uptake, IC50 = 400 nM, and insulin stimulation with half-maximal effect at 3.5 nM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarabia_1992`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

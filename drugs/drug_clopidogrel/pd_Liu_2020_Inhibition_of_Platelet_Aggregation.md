@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AM-H4 drives name (in %): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> The PD model links plasma AM-H4 (the active metabolite of clopidogrel/vicagrel) concentrations to 20 µM ADP-induced maximal platelet aggregation (MPA, %) via a modified indirect response model in which AM-H4 irreversibly inactivates platelets (P2Y12 receptor binding) with a second-order rate constant kirre, while platelet turnover is described by zero-order formation (kin) and first-order degradation (kout); parameter values are given only in Supplementary Table 2 and are not stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

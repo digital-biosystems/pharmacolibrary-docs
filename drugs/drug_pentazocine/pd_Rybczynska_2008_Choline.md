@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (1)-pentazocine, AC915, rimcazole, haloperidol (measured concentrations) drive 11C-choline uptake (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In C6 glioma cells, sigma-receptor ligands ((1)-pentazocine, AC915, rimcazole, haloperidol) dose-dependently inhibited cellular 11C-choline uptake after 24 h incubation (Fig. 5), an effect associated with cytotoxicity and sigma-receptor occupancy; the paper does not state a specific mechanism for the choline uptake decrease and provides no IC50, Imax, Emax, kin, kout, or ke0 values for this response (only IC50 values for inhibition of 11C-SA4503 binding: 6.5, 7.4, 0.36, and 0.27 µM for (1)-pentazocine, AC915, rimcazole, and haloperidol, respectively).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rybczynska_2008`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

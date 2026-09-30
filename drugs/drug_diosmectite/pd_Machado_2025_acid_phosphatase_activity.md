@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Satureja montana essential oil drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model for acid phosphatase activity: no concentrations are linked to this response by a quantitative mechanism, and no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are reported for it. Qualitatively, the nanoclay-EO formulation (SM EO + Tween 20 + MMT) stimulated soil acid phosphatase activity in a concentration-related manner (greatest at the highest concentrations), which the paper attributes plausibly to the EO acting as a carbon source for soil microbes; individual components alone had no significant effect — a stimulatory direction that contradicts the record's 'inhibition'.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Machado_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

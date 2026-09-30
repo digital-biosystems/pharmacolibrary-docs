@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amlodipine, fasudil, enalapril, propranolol, hydrochlorothiazide, prazosin drive total peripheral resistance (in unknown): indirect response — drug inhibits the production of total peripheral resistance.
+
+**Model:** No model was generated from this record.
+
+> Amlodipine acts on total peripheral resistance (TPR) within a mechanism-based turnover (indirect response) model in which TPR is governed by a zero-order production rate (Kin_TPR) and first-order dissipation rate (kout_TPR), with feedback (FB2) linking MAP = CO × TPR; amlodipine's effect is an inhibition of TPR production. The excerpts do not state the drug concentrations, potency values (IC50/Imax), or rate constants for amlodipine.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2013`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

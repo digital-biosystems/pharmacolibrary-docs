@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Epinephrine and norepinephrine (measured concentrations) drive name (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In dogs, intravenous infusion of epinephrine or norepinephrine (0.1, 0.5, and 2.5 nmol/kg/min) raised plasma concentrations of the infused amine by 2.5, 13, and 63 nM above resting levels (2.4 nM epinephrine, 3.6 nM norepinephrine), and plasma glycerol increased with norepinephrine being more potent than epinephrine for this response; the paper does not state a pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values) for plasma glycerol.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hjemdahl_1979`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

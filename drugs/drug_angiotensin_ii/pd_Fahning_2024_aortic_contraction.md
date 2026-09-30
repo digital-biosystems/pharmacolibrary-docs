@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ang II drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ang II concentration-dependently contracts endothelium-intact rat aortic rings (2K and 2K-1C) via AT1 receptor activation, a direct stimulatory concentration–effect relationship (no PD turnover/kin-kout model given). In 2K aortas Emax was 0.35 ± 0.10 g with pD2 8.52 ± 0.09, and in 2K-1C Emax 0.23 ± 0.08 g with pD2 8.37 ± 0.14; the AT1 antagonist losartan abolished the response (2K Emax 0.30 ± 0.12 to −0.002 ± 0.004 g; 2K-1C 0.15 ± 0.03 to −0.01 ± 0.01 g), while L-NAME increased Emax in 2K (0.38 ± 0.12 to 1.01 ± 0.15 g) without changing pD2, indicating endothelial NO counteracts the contraction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fahning_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

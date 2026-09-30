@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Heavy metal compounds (cadmium nitrate, copper sulphate, iron sulphate, lead nitrate, manganese chloride, zinc chloride) (measured concentrations) drive name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Zinc chloride concentrations (mM) applied to cress seedlings inhibit total seedling length after 5 days of growth, described by a Hill (Emax) equation f(x)=Max−Max/(1+(x/EC50)^Hill); the paper gives an EC50 for total length of 2.90 mM (95% CI 2.61–3.19) but does not state a mechanistic PD model (e.g. kin/kout or effect compartment) or the Hill coefficient.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schulz_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

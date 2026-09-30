@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alfentanil (measured concentrations) drives Probability of no response to stimulus (in probability): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes an Emax-type model in which alfentanil plasma concentrations (µg/L) act on the binary probability of no response to stimulus (Cp50) for fentanyl, with an inhibitory effect direction; however, the paper excerpts do not describe this specific model or provide its potency (IC50/EC50/Emax) or rate parameters, and no mechanism is stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lemmens_1995`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

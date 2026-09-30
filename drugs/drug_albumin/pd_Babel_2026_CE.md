@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telisotuzumab vedotin conjugate (measured concentrations) drives Grade &gt;= 2 Corneal Epitheliopathy (in proportion): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for Grade ≥ 2 corneal epitheliopathy; the excerpts only mention albumin as a covariate on Teliso-V conjugate clearance and give no mechanism, potency, or rate parameters linking Telisotuzumab vedotin conjugate concentrations to this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Babel_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GNE inhibitors drives GNE activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In this screening study, GNE inhibitor compounds (at 10 μM in the screen) act on GNE enzymatic activity measured as UDP release (UDP-Glo luminescence) from conversion of UDP-GlcNAc (KM 27 ± 5 μM) to ManNAc; C1, C2, C17 and C18 completely inhibited GNE while C5, C11, C13, C15 and C20 partially inhibited it, and C5, C13 and C15 additionally blocked UDP-GlcNAc-induced tetramer formation. The paper does not report a pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values), and the mechanism is described only qualitatively as direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gorenflos_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

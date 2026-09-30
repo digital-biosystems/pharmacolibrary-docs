@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Hirose_2010::interindividual_variability) drives blood platelet count (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD mechanism for the platelet-count response; it only reports a weak correlation between blood platelet count and plasma 5-FU concentrations after multiple oral UFT administrations (30 mg/kg as tegafur for 14 days) in colorectal cancer model rats, with no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kobuchi_2023`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

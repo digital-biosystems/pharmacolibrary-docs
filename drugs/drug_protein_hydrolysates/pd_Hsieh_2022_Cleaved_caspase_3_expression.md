@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Soy protein isolate hydrolysates (SB and ST) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Soy protein isolate hydrolysates SB and ST (0.5–2 mg/mL) inhibit HSC-3 oral cancer cell growth in a concentration- and time-dependent manner, with IC50 values at 48 h of 4.01 mg/mL (SB) and 1.69 mg/mL (ST), and at 72 h of 0.74 mg/mL (SB) and 0.60 mg/mL (ST). The paper does not give a formal PD model; mechanistically, ST increased cleaved caspase 3 expression (with p53 upregulation and Bcl-2, PARP, caspase 3 and 9 downregulation) at 0.5–1 mg/mL, suggesting mitochondria-mediated apoptosis, while SB showed no effect on cleaved caspase 3 and was suggested to induce necrosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsieh_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,12 +30,12 @@ Hsieh CH; Wang TY; Tung BC; Liu HP; Yeh LT; Hsu KC et al. (2022). Molecules (Bas
   ·  DOI: [10.3390/molecules27092839](https://doi.org/10.3390/molecules27092839)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mg/mL) — 48 | `Q322` · not captured | 4.01 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row0:col3 |
-| IC50 (mg/mL) — 72 | `Q322` · not captured | 0.74 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row0:col4 |
-| IC50 (mg/mL) — 48 | `Q322` · not captured | 1.69 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row1:col3 |
-| IC50 (mg/mL) — 72 | `Q322` · not captured | 0.60 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row1:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mg/mL) — 48 | `Q322` · not captured | 4.01 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row0:col3 |
+| PD (effect) | IC50 (mg/mL) — 72 | `Q322` · not captured | 0.74 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row0:col4 |
+| PD (effect) | IC50 (mg/mL) — 48 | `Q322` · not captured | 1.69 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row1:col3 |
+| PD (effect) | IC50 (mg/mL) — 72 | `Q322` · not captured | 0.60 | mg/mL | not captured | exact (not captured) | molecules-27-02839-t001:row1:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

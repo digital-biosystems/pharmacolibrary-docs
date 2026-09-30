@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** O-demethyltramadol drives pupillary constriction (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper relates plasma concentrations of tramadol and its active metabolite O-demethyltramadol (M1) to pupillary constriction (Emax in Δ mm) in CYP2D6 genotype groups, but does not state a pharmacodynamic model or mechanism (no Emax, IC50/EC50, kin/kout, ke0 or gamma values are given). M1 Emax correlated positively with M1 Cmax (Spearman 0.59) and AUC0-24 (0.55), while tramadol Emax correlated negatively with tramadol Cmax (-0.39), and the authors note that pupillary constriction does not correspond well with tramadol or M1 plasma concentrations, especially in heterozygous extensive metabolisers.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Slanar_2007`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,32 +31,32 @@ Slanar O; Nobilis M; Kvetina J; Mikoviny R; Zima T; Idle JR; et al. et al. (2007
   ·  DOI: [10.33549/physiolres.930872](https://doi.org/10.33549/physiolres.930872)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C max (nmol) — Homozygous EMs | `Q32` · not captured | 413 | nmol | not captured | space_fold (not captured) | tab_0:row0:col3 |
-| C max (nmol) — Heterozygous EMs | `Q32` · not captured | 547 | nmol | not captured | space_fold (not captured) | tab_0:row0:col4 |
-| C max (nmol) — PMs | `Q32` · not captured | 699 | nmol | not captured | space_fold (not captured) | tab_0:row0:col5 |
-| C max (nmol) — Homozygous EMs | `Q32` · not captured | 151 | nmol | not captured | space_fold (not captured) | tab_0:row0:col7 |
-| C max (nmol) — Heterozygous EMs | `Q32` · not captured | 158 | nmol | not captured | space_fold (not captured) | tab_0:row0:col8 |
-| C max (nmol) — PMs | `Q32` · not captured | 41 | nmol | not captured | space_fold (not captured) | tab_0:row0:col9 |
-| t max (h) — Homozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col3 |
-| t max (h) — Heterozygous EMs | `Q56` · not captured | 8 | h | not captured | space_fold (not captured) | tab_0:row1:col4 |
-| t max (h) — PMs | `Q56` · not captured | 8 | h | not captured | space_fold (not captured) | tab_0:row1:col5 |
-| t max (h) — Homozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col7 |
-| t max (h) — Heterozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col8 |
-| t max (h) — PMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col9 |
-| Half-life (h) — Homozygous EMs | `Q57` · not captured | 6.31 | h | not captured | llm (not captured) | tab_0:row2:col3 |
-| Half-life (h) — Heterozygous EMs | `Q57` · not captured | 9.23 | h | not captured | llm (not captured) | tab_0:row2:col4 |
-| Half-life (h) — PMs | `Q57` · not captured | 25.89 | h | not captured | llm (not captured) | tab_0:row2:col5 |
-| Half-life (h) — Homozygous EMs | `Q57` · not captured | 7.87 | h | not captured | llm (not captured) | tab_0:row2:col7 |
-| Half-life (h) — Heterozygous EMs | `Q57` · not captured | 10.71 | h | not captured | llm (not captured) | tab_0:row2:col8 |
-| Half-life (h) — PMs | `Q57` · not captured | 24.96 | h | not captured | llm (not captured) | tab_0:row2:col9 |
-| AUC 0-24 (nmol x h/l) — Homozygous EMs | `Q19` · not captured | 4986 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col3 |
-| AUC 0-24 (nmol x h/l) — Heterozygous EMs | `Q19` · not captured | 7408 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col4 |
-| AUC 0-24 (nmol x h/l) — PMs | `Q19` · not captured | 11544 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col5 |
-| AUC 0-24 (nmol x h/l) — Homozygous EMs | `Q19` · not captured | 2382 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col7 |
-| AUC 0-24 (nmol x h/l) — Heterozygous EMs | `Q19` · not captured | 2553 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col8 |
-| AUC 0-24 (nmol x h/l) — PMs | `Q19` · not captured | 768 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | C max (nmol) — Homozygous EMs | `Q32` · not captured | 413 | nmol | not captured | space_fold (not captured) | tab_0:row0:col3 |
+| PK (driver) | C max (nmol) — Heterozygous EMs | `Q32` · not captured | 547 | nmol | not captured | space_fold (not captured) | tab_0:row0:col4 |
+| PK (driver) | C max (nmol) — PMs | `Q32` · not captured | 699 | nmol | not captured | space_fold (not captured) | tab_0:row0:col5 |
+| PK (driver) | C max (nmol) — Homozygous EMs | `Q32` · not captured | 151 | nmol | not captured | space_fold (not captured) | tab_0:row0:col7 |
+| PK (driver) | C max (nmol) — Heterozygous EMs | `Q32` · not captured | 158 | nmol | not captured | space_fold (not captured) | tab_0:row0:col8 |
+| PK (driver) | C max (nmol) — PMs | `Q32` · not captured | 41 | nmol | not captured | space_fold (not captured) | tab_0:row0:col9 |
+| PK (driver) | t max (h) — Homozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col3 |
+| PK (driver) | t max (h) — Heterozygous EMs | `Q56` · not captured | 8 | h | not captured | space_fold (not captured) | tab_0:row1:col4 |
+| PK (driver) | t max (h) — PMs | `Q56` · not captured | 8 | h | not captured | space_fold (not captured) | tab_0:row1:col5 |
+| PK (driver) | t max (h) — Homozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col7 |
+| PK (driver) | t max (h) — Heterozygous EMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col8 |
+| PK (driver) | t max (h) — PMs | `Q56` · not captured | 4 | h | not captured | space_fold (not captured) | tab_0:row1:col9 |
+| PK (driver) | Half-life (h) — Homozygous EMs | `Q57` · not captured | 6.31 | h | not captured | llm (not captured) | tab_0:row2:col3 |
+| PK (driver) | Half-life (h) — Heterozygous EMs | `Q57` · not captured | 9.23 | h | not captured | llm (not captured) | tab_0:row2:col4 |
+| PK (driver) | Half-life (h) — PMs | `Q57` · not captured | 25.89 | h | not captured | llm (not captured) | tab_0:row2:col5 |
+| PK (driver) | Half-life (h) — Homozygous EMs | `Q57` · not captured | 7.87 | h | not captured | llm (not captured) | tab_0:row2:col7 |
+| PK (driver) | Half-life (h) — Heterozygous EMs | `Q57` · not captured | 10.71 | h | not captured | llm (not captured) | tab_0:row2:col8 |
+| PK (driver) | Half-life (h) — PMs | `Q57` · not captured | 24.96 | h | not captured | llm (not captured) | tab_0:row2:col9 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — Homozygous EMs | `Q19` · not captured | 4986 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col3 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — Heterozygous EMs | `Q19` · not captured | 7408 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col4 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — PMs | `Q19` · not captured | 11544 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col5 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — Homozygous EMs | `Q19` · not captured | 2382 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col7 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — Heterozygous EMs | `Q19` · not captured | 2553 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col8 |
+| PK (driver) | AUC 0-24 (nmol x h/l) — PMs | `Q19` · not captured | 768 | nmol x h/l | not captured | llm_corrected (not captured) | tab_0:row3:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

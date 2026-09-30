@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BT200 (measured concentrations) drives Thrombus formation time (in seconds) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> BT200, a pegylated aptamer antagonist of von Willebrand factor, binds human VWF with an EC50 of 5.0 nmol/L and concentration-dependently inhibits VWF A1 domain activity (IC50 183 nmol/L in cynomolgus monkey plasma, 70 nmol/L in human plasma), thereby inhibiting VWF-mediated platelet binding; in the monkey FeCl3 femoral artery thrombosis model, subcutaneous BT200 (0.1 and 1 mg/kg, but not 0.05 mg/kg) dose-dependently prolonged thrombus formation time, though the paper reports no Emax/IC50-type PD model parameters for the TTF response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhu_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,34 +31,34 @@ Zhu S; Gilbert JC; Hatala P; Harvey W; Liang Z; Gao S; et al. et al. (2020). Jou
   ·  DOI: [10.1111/jth.14755](https://doi.org/10.1111/jth.14755)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUC∞‐OBS (h·μg/mL) — Intravenous | `Q17` · not captured | 4750 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col1 |
-| AUC∞‐OBS (h·μg/mL) — Subcutaneous | `Q17` · not captured | 1080 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col2 |
-| AUC∞‐OBS (h·μg/mL) — Subcutaneous | `Q17` · not captured | 3680 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col3 |
-| AUClast (h·μg/mL) — Intravenous | `Q74` · not captured | 4570 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col1 |
-| AUClast (h·μg/mL) — Subcutaneous | `Q74` · not captured | 924 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col2 |
-| AUClast (h·μg/mL) — Subcutaneous | `Q74` · not captured | 3490 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col3 |
-| C 0 (μg/mL) — Intravenous | `Q86` · not captured | 61.6 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row4:col1 |
-| Clobs (mL/h/kg) — Intravenous | `Q358` · not captured | 0.437 | mL/h/kg | not captured | llm (not captured) | jth14755-tbl-0002:row5:col1 |
-| C max (μg/mL) — Subcutaneous | `Q32` · not captured | 7.01 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col2 |
-| C max (μg/mL) — Subcutaneous | `Q32` · not captured | 27.4 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col3 |
-| C max (μg/mL) — Subcutaneous | `Q32` · not captured | 152 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col4 |
-| MRTlast (h) — Intravenous | `Q53` · not captured | 93.1 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col1 |
-| MRTlast (h) — Subcutaneous | `Q53` · not captured | 88.7 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col2 |
-| MRTlast (h) — Subcutaneous | `Q53` · not captured | 104 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col3 |
-| MRTlast (h) — Subcutaneous | `Q53` · not captured | 129 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col4 |
-| T max (h) — Subcutaneous | `Q56` · not captured | 28.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col2 |
-| T max (h) — Subcutaneous | `Q56` · not captured | 28.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col3 |
-| T max (h) — Subcutaneous | `Q56` · not captured | 30.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col4 |
-| Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.466 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col2 |
-| Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.554 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col3 |
-| Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.426 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col4 |
-| Vssobs (mL/kg) — Intravenous | `Q65` · not captured | 46.8 | mL/kg | not captured | llm (not captured) | jth14755-tbl-0002:row11:col1 |
-| Vzobs (mL/kg) — Intravenous | `Q352` · not captured | 54.1 | mL/kg | not captured | llm (not captured) | jth14755-tbl-0002:row12:col1 |
-| Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 55.3 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col2 |
-| Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 65.4 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col3 |
-| Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 63.5 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUC∞‐OBS (h·μg/mL) — Intravenous | `Q17` · not captured | 4750 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col1 |
+| PK (driver) | AUC∞‐OBS (h·μg/mL) — Subcutaneous | `Q17` · not captured | 1080 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col2 |
+| PK (driver) | AUC∞‐OBS (h·μg/mL) — Subcutaneous | `Q17` · not captured | 3680 | h·μg/mL | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row2:col3 |
+| PK (driver) | AUClast (h·μg/mL) — Intravenous | `Q74` · not captured | 4570 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col1 |
+| PK (driver) | AUClast (h·μg/mL) — Subcutaneous | `Q74` · not captured | 924 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col2 |
+| PK (driver) | AUClast (h·μg/mL) — Subcutaneous | `Q74` · not captured | 3490 | h·μg/mL | not captured | exact (not captured) | jth14755-tbl-0002:row3:col3 |
+| PK (driver) | C 0 (μg/mL) — Intravenous | `Q86` · not captured | 61.6 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row4:col1 |
+| PK (driver) | Clobs (mL/h/kg) — Intravenous | `Q358` · not captured | 0.437 | mL/h/kg | not captured | llm (not captured) | jth14755-tbl-0002:row5:col1 |
+| PK (driver) | C max (μg/mL) — Subcutaneous | `Q32` · not captured | 7.01 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col2 |
+| PK (driver) | C max (μg/mL) — Subcutaneous | `Q32` · not captured | 27.4 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col3 |
+| PK (driver) | C max (μg/mL) — Subcutaneous | `Q32` · not captured | 152 | μg/mL | not captured | space_fold (not captured) | jth14755-tbl-0002:row6:col4 |
+| PK (driver) | MRTlast (h) — Intravenous | `Q53` · not captured | 93.1 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col1 |
+| PK (driver) | MRTlast (h) — Subcutaneous | `Q53` · not captured | 88.7 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col2 |
+| PK (driver) | MRTlast (h) — Subcutaneous | `Q53` · not captured | 104 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col3 |
+| PK (driver) | MRTlast (h) — Subcutaneous | `Q53` · not captured | 129 | h | not captured | exact (not captured) | jth14755-tbl-0002:row7:col4 |
+| PK (driver) | T max (h) — Subcutaneous | `Q56` · not captured | 28.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col2 |
+| PK (driver) | T max (h) — Subcutaneous | `Q56` · not captured | 28.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col3 |
+| PK (driver) | T max (h) — Subcutaneous | `Q56` · not captured | 30.0 | h | not captured | space_fold (not captured) | jth14755-tbl-0002:row9:col4 |
+| PK (driver) | Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.466 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col2 |
+| PK (driver) | Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.554 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col3 |
+| PK (driver) | Cl/F obs (mL/h/kg) — Subcutaneous | `Q27` · not captured | 0.426 | mL/h/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row10:col4 |
+| PK (driver) | Vssobs (mL/kg) — Intravenous | `Q65` · not captured | 46.8 | mL/kg | not captured | llm (not captured) | jth14755-tbl-0002:row11:col1 |
+| PK (driver) | Vzobs (mL/kg) — Intravenous | `Q352` · not captured | 54.1 | mL/kg | not captured | llm (not captured) | jth14755-tbl-0002:row12:col1 |
+| PK (driver) | Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 55.3 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col2 |
+| PK (driver) | Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 65.4 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col3 |
+| PK (driver) | Vz/F obs (mL/kg) — Subcutaneous | `Q76` · not captured | 63.5 | mL/kg | not captured | llm_confirmed (not captured) | jth14755-tbl-0002:row13:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

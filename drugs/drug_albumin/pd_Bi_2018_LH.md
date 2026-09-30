@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Total testosterone (measured concentrations) drives luteinizing hormone (in IU/L): indirect response — drug inhibits the loss of luteinizing hormone.
+
+**Model:** No model was generated from this record.
+
+> Total testosterone concentrations (ng/mL) inhibit LH30 synthesis via an indirect response model with an effect compartment: dLH30/dt = Kin(1−INH) − Kout·LH30, where INH = Ce^λ/(Ce^λ+TC50^λ) is a sigmoid Emax function (Emax fixed to 1) on the effect-compartment testosterone concentration Ce. Final estimates: TC50 = 9.33 ng/mL, λ = 18.3, Kin = 1.7 IU/day, Kout = 0.11 L/day, ke0 = 0.0321 mL/day; body weight was a covariate on TC50 (θ = −1.14 ng/mL) and thyroxin on Kin (θ = 1.19).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bi_2018`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -20,67 +30,67 @@ Bi Y; Perry PJ; Ellerby M; Murry DJ et al. (2018). CPT: pharmacometrics & system
   ·  DOI: [10.1002/psp4.12287](https://doi.org/10.1002/psp4.12287)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kin, IU/day — Final model | `Q327` · not captured | 1.7 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col1 |
-| Kin, IU/day — Bootstrapa | `Q327` · not captured | 1.7 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col2 |
-| Kin, IU/day — Bootstrapa | `Q327` · not captured | 14.4 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col3 |
-| Kin, IU/day — Bootstrapa | `Q327` · not captured | 1.36 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col4 |
-| Kout, L/day — Final model | `Q328` · not captured | 0.11 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col1 |
-| Kout, L/day — Bootstrapa | `Q328` · not captured | 0.11 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col2 |
-| Kout, L/day — Bootstrapa | `Q328` · not captured | 10.8 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col3 |
-| Kout, L/day — Bootstrapa | `Q328` · not captured | 0.093 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col4 |
-| Test50, ng/mL — Final model | `Q321` · not captured | 9.33 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col1 |
-| Test50, ng/mL — Bootstrapa | `Q321` · not captured | 9.35 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col2 |
-| Test50, ng/mL — Bootstrapa | `Q321` · not captured | 5.62 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col3 |
-| Test50, ng/mL — Bootstrapa | `Q321` · not captured | 8.55 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col4 |
-| Lambda, λ — Final model | `Q342` · not captured | 18.3 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col1 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 18.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col2 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 21.6 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col3 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 13.6 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col4 |
-| ke0, mL/day — Final model | `Q326` · not captured | 0.0321 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col1 |
-| ke0, mL/day — Bootstrapa | `Q326` · not captured | 0.0318 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col2 |
-| ke0, mL/day — Bootstrapa | `Q326` · not captured | 11.2 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col3 |
-| ke0, mL/day — Bootstrapa | `Q326` · not captured | 0.0261 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col4 |
-| σ2 additive — Final model | `Q315` · not captured | 0.397 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row8:col1 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 0.395 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col2 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col3 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 0.331 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col4 |
-| θBwt−IC50 — Final model | `Q322` · not captured | -1.14 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col1 |
-| θBwt−IC50 — Bootstrapa | `Q322` · not captured | -1.13 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col2 |
-| θBwt−IC50 — Bootstrapa | `Q322` · not captured | 38.9 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col3 |
-| θBthyroxin−Kin — Final model | `Q327` · not captured | 1.19 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col1 |
-| θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 1.22 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col2 |
-| θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 27.1 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col3 |
-| θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 0.916 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col4 |
-| IIV_Kinb — Bootstrapa | `Q312` · not captured | 51.4 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row11:col3 |
-| IIV_ IC50 — Bootstrapa | `Q322` · not captured | 32.2 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row12:col3 |
-| IIV_ λ — Bootstrapa | `Q312` · not captured | 103 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row13:col3 |
-| IIV_ ke0 — Bootstrapa | `Q326` · not captured | 43.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row14:col3 |
-| Kin,/day — Final model | `Q327` · not captured | 6.17 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col1 |
-| Kin,/day — Bootstrapa | `Q327` · not captured | 6.40 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col2 |
-| Kin,/day — Bootstrapa | `Q327` · not captured | 58.5 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col3 |
-| Kin,/day — Bootstrapa | `Q327` · not captured | 4.92 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col4 |
-| Kout,/day — Final model | `Q328` · not captured | 0.0696 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col1 |
-| Kout,/day — Bootstrapa | `Q328` · not captured | 0.0714 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col2 |
-| Kout,/day — Bootstrapa | `Q328` · not captured | 59.3 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col3 |
-| Kout,/day — Bootstrapa | `Q328` · not captured | 0.0616 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col4 |
-| Cavg50, ng/mL — Final model | `Q71` · not captured | 8.68 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col1 |
-| Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 8.74 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col2 |
-| Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 10.5 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col3 |
-| Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 7.3 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col4 |
-| Lambda, λ — Final model | `Q342` · not captured | 11.3 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col1 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 11.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col2 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 31.5 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col3 |
-| Lambda, λ — Bootstrapa | `Q342` · not captured | 6.89 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col4 |
-| σ2 additive — Final model | `Q315` · not captured | 0.429 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row22:col1 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 0.421 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col2 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 19 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col3 |
-| σ2 additive — Bootstrapa | `Q317` · not captured | 0.311 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col4 |
-| IIV_Kin b — Bootstrapa | `Q312` · not captured | 35.2 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row23:col3 |
-| IIV_ Phi(ϕ) — Bootstrapa | `Q312` · not captured | 73.6 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row24:col3 |
-| IIV_ Cavg50 — Bootstrapa | `Q312` · not captured | 57.4 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row25:col3 |
-| IIV_ λ — Bootstrapa | `Q312` · not captured | 60.6 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row26:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kin, IU/day — Final model | `Q327` · not captured | 1.7 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col1 |
+| PD (effect) | Kin, IU/day — Bootstrapa | `Q327` · not captured | 1.7 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col2 |
+| PD (effect) | Kin, IU/day — Bootstrapa | `Q327` · not captured | 14.4 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col3 |
+| PD (effect) | Kin, IU/day — Bootstrapa | `Q327` · not captured | 1.36 | IU/day | not captured | exact (not captured) | psp412287-tbl-0003:row3:col4 |
+| PD (effect) | Kout, L/day — Final model | `Q328` · not captured | 0.11 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col1 |
+| PD (effect) | Kout, L/day — Bootstrapa | `Q328` · not captured | 0.11 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col2 |
+| PD (effect) | Kout, L/day — Bootstrapa | `Q328` · not captured | 10.8 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col3 |
+| PD (effect) | Kout, L/day — Bootstrapa | `Q328` · not captured | 0.093 | L/day | not captured | exact (not captured) | psp412287-tbl-0003:row4:col4 |
+| PD (effect) | Test50, ng/mL — Final model | `Q321` · not captured | 9.33 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col1 |
+| PD (effect) | Test50, ng/mL — Bootstrapa | `Q321` · not captured | 9.35 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col2 |
+| PD (effect) | Test50, ng/mL — Bootstrapa | `Q321` · not captured | 5.62 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col3 |
+| PD (effect) | Test50, ng/mL — Bootstrapa | `Q321` · not captured | 8.55 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row5:col4 |
+| PD (effect) | Lambda, λ — Final model | `Q342` · not captured | 18.3 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col1 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 18.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col2 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 21.6 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col3 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 13.6 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row6:col4 |
+| PD (effect) | ke0, mL/day — Final model | `Q326` · not captured | 0.0321 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col1 |
+| PD (effect) | ke0, mL/day — Bootstrapa | `Q326` · not captured | 0.0318 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col2 |
+| PD (effect) | ke0, mL/day — Bootstrapa | `Q326` · not captured | 11.2 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col3 |
+| PD (effect) | ke0, mL/day — Bootstrapa | `Q326` · not captured | 0.0261 | mL/day | not captured | exact (not captured) | psp412287-tbl-0003:row7:col4 |
+| variability | σ2 additive — Final model | `Q315` · not captured | 0.397 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row8:col1 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 0.395 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col2 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col3 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 0.331 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row8:col4 |
+| PD (effect) | θBwt−IC50 — Final model | `Q322` · not captured | -1.14 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col1 |
+| PD (effect) | θBwt−IC50 — Bootstrapa | `Q322` · not captured | -1.13 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col2 |
+| PD (effect) | θBwt−IC50 — Bootstrapa | `Q322` · not captured | 38.9 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row9:col3 |
+| PD (effect) | θBthyroxin−Kin — Final model | `Q327` · not captured | 1.19 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col1 |
+| PD (effect) | θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 1.22 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col2 |
+| PD (effect) | θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 27.1 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col3 |
+| PD (effect) | θBthyroxin−Kin — Bootstrapa | `Q327` · not captured | 0.916 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row10:col4 |
+| variability | IIV_Kinb — Bootstrapa | `Q312` · not captured | 51.4 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row11:col3 |
+| PD (effect) | IIV_ IC50 — Bootstrapa | `Q322` · not captured | 32.2 | ng/mL | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row12:col3 |
+| variability | IIV_ λ — Bootstrapa | `Q312` · not captured | 103 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row13:col3 |
+| PD (effect) | IIV_ ke0 — Bootstrapa | `Q326` · not captured | 43.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row14:col3 |
+| PD (effect) | Kin,/day — Final model | `Q327` · not captured | 6.17 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col1 |
+| PD (effect) | Kin,/day — Bootstrapa | `Q327` · not captured | 6.40 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col2 |
+| PD (effect) | Kin,/day — Bootstrapa | `Q327` · not captured | 58.5 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col3 |
+| PD (effect) | Kin,/day — Bootstrapa | `Q327` · not captured | 4.92 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row16:col4 |
+| PD (effect) | Kout,/day — Final model | `Q328` · not captured | 0.0696 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col1 |
+| PD (effect) | Kout,/day — Bootstrapa | `Q328` · not captured | 0.0714 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col2 |
+| PD (effect) | Kout,/day — Bootstrapa | `Q328` · not captured | 59.3 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col3 |
+| PD (effect) | Kout,/day — Bootstrapa | `Q328` · not captured | 0.0616 | /day | not captured | exact (not captured) | psp412287-tbl-0003:row17:col4 |
+| PK (driver) | Cavg50, ng/mL — Final model | `Q71` · not captured | 8.68 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col1 |
+| PK (driver) | Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 8.74 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col2 |
+| PK (driver) | Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 10.5 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col3 |
+| PK (driver) | Cavg50, ng/mL — Bootstrapa | `Q71` · not captured | 7.3 | ng/mL | not captured | llm (not captured) | psp412287-tbl-0003:row18:col4 |
+| PD (effect) | Lambda, λ — Final model | `Q342` · not captured | 11.3 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col1 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 11.7 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col2 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 31.5 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col3 |
+| PD (effect) | Lambda, λ — Bootstrapa | `Q342` · not captured | 6.89 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row19:col4 |
+| variability | σ2 additive — Final model | `Q315` · not captured | 0.429 | not captured | not captured | llm_confirmed (not captured) | psp412287-tbl-0003:row22:col1 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 0.421 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col2 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 19 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col3 |
+| variability | σ2 additive — Bootstrapa | `Q317` · not captured | 0.311 | not captured | not captured | llm_corrected (not captured) | psp412287-tbl-0003:row22:col4 |
+| variability | IIV_Kin b — Bootstrapa | `Q312` · not captured | 35.2 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row23:col3 |
+| variability | IIV_ Phi(ϕ) — Bootstrapa | `Q312` · not captured | 73.6 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row24:col3 |
+| variability | IIV_ Cavg50 — Bootstrapa | `Q312` · not captured | 57.4 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row25:col3 |
+| variability | IIV_ λ — Bootstrapa | `Q312` · not captured | 60.6 | not captured | not captured | llm (not captured) | psp412287-tbl-0003:row26:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

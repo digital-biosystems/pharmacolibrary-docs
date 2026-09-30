@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Stachys macrostachya essential oil (measured concentrations) drives antibacterial activity (in μg/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not actually fit a pharmacodynamic model: Stachys macrostachya essential oil (SMEO, 3.91–250 µg/mL two-fold dilutions) was tested for antibacterial activity against seven bacterial strains, with the response reported only as a MIC of 62.5 µg/mL against Acinetobacter baumannii (20 mm inhibition zone); no mechanism, Emax, IC50/EC50, kin/kout or other model parameters are given for the antibacterial effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Karaoglan_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

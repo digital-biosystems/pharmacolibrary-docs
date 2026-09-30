@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buformin (measured concentrations) drives lactate production (in concentration) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for buformin's effect on lactate production; it only reports that 24-h buformin treatment of U-2 OS cells significantly increased lactate production (P = 0.029) via increased LDH activity (P = 0.017), with no potency (IC50/EC50/Emax) or rate parameters given for this response (the reported IC50 of 69.1 µM pertains to growth inhibition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ding_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

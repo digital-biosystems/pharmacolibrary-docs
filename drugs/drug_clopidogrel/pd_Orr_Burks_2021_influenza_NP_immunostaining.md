@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clopidogrel (concentrations from the PK model of Danielak_2017) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Clopidogrel concentrations (uM) inhibit influenza replication measured by influenza NP immunostaining, acting via P2RY12 blockade that inhibits the Raf/MEK/Erk pathway and retains NP-coated vRNPs in the nucleus; reported EC50 values are 5.84 uM (A/WSN/33), 6.432 uM (A/CA/04/09), and 0.28 uM (B/Yamagata/16/1988). The paper does not state a formal PD model structure (no Imax, Emax, kin, kout, or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Orr-Burks_2021`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

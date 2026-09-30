@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alginate (measured concentrations) drives COX-1 activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alginate (from Turbinaria ornata, TA, IC50 = 69.61 µg/mL; from Hormophysa cuneiformis, HA, IC50 = 360.22 µg/mL) inhibits COX-1 enzyme activity in vitro in a dose-dependent manner, with both being less potent than diclofenac (IC50 = 3.63 µg/mL); the paper does not state a PD model beyond this direct inhibition, though docking suggests binding to catalytic residues (GLU 524, PRO 84, ARG 120, ARG 83; docking energy −6.1609 kcal/mol).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `El-Sheekh_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

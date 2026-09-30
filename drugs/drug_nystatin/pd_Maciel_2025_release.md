@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nystatin (measured concentrations) drives trypomastigote release (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (μM) inhibit the release of trypomastigotes from infected Vero cells, measured at day 9 post-infection after 24 h drug exposure, with an IC50 of 4.83 μM (95% CI 3.50–6.65), more potent than benznidazole (IC50 8.60 μM). The paper does not state a PD model structure (no Imax, Emax, kin, kout, ke0, or gamma values); mechanistically it suggests nystatin inhibits membrane uptake processes (arginine transport IC50 1.02 μM, 95% CI 0.87–1.21), affecting progression of the intracellular life cycle.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maciel_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

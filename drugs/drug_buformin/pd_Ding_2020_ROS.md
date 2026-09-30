@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buformin (measured concentrations) drives reactive oxygen species (in fluorescence) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Buformin concentrations (µM) increased ROS fluorescence in U-2 OS cells after a 6-h treatment (P = 0.011); the paper reports no PD model, no mechanism, and no potency or rate parameters for ROS (the IC50 of 69.1 µM refers to growth suppression, not ROS).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ding_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking drug concentrations to a measured response over time; it reports in vitro/cellular enzyme inhibition of PARP enzymes by TBT compounds competing with nicotinamide in the binding pocket. Compound 27 (OUL232) inhibits PARP10 with IC50 = 7.8 nM (enzymatic) and EC50 = 150 nM (intracellular PARP10 inhibition), PARP15 with IC50 = 56 nM, and PARP12 at 160 nM; compound 16 (OUL245) inhibits PARP2 with IC50 = 44 nM (13-fold selective over PARP1). No Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Murthy_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

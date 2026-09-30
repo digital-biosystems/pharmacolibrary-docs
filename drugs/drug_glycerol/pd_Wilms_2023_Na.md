@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mineral concentration (osmolality) drives blood sodium (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In feed-deprived bulls, increasing mineral concentration of the oral rehydration solution (0–300 mOsm/kg) linearly increased blood Na+ at 48 h (Study I); the paper describes this as a linear dose–response without any pharmacodynamic mechanism, potency (IC50/EC50/Emax) or rate parameters. Glycerol itself was studied only as a separate factor (0–4%) in Study III and is not linked to blood Na+ in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilms_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

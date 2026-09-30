@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-(4-tolyl)sparteine (measured concentrations) drives force of contraction (in % of basal force): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated guinea pig atria, 2-(4-tolyl)sparteine (7e) concentrations (µM, up to 300 µM) were tested against force of contraction (% of basal force), showing a steep concentration-dependent positive inotropic effect with an Emax of 116.5 ± 3.4% of basal force; the paper does not state an EC50 or a mechanistic model, only suggesting possible sigma-1 receptor involvement.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boido_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

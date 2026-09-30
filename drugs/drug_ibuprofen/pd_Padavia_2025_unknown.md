@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives ductus arteriosus diameter (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen concentrations act on ductus arteriosus diameter via an effect-compartment model with an inhibitory effect, but the excerpts provide no parameter values (no IC50, Emax, ke0, or units) and do not state the mechanism beyond the effect-compartment link.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Padavia_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

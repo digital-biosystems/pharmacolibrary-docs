@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bivalirudin (measured concentrations) drives name (in s): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bivalirudin plasma concentration (central compartment) directly stimulates activated clotting time (ACT, s) via a sigmoid Emax model without delay (direct thrombin inhibition, no effect compartment). Key estimates: E0 = 134 s, Emax = 318 s, EC50 = 2.44 mg/L (bootstrap 2.51 mg/L), with a red blood cell covariate effect on EC50 (θRBC = 1.70).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,32 +30,32 @@ Zhang DM; Wang K; Zhao X; Li YF; Zheng QS; Wang ZN; Cui YM et al. (2012). Acta p
   ·  DOI: [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (s) — Estimates of the model parameters | `Q320` · not captured | 318 | s | not captured | space_fold (not captured) | tab_2:row3:col1 |
-| E max (s) | `Q320` · not captured | 2.39 | s | not captured | space_fold (not captured) | tab_2:row3:col2 |
-| E max (s) — Bootstrap | `Q320` · not captured | 320 | s | not captured | space_fold (not captured) | tab_2:row3:col3 |
-| EC 50 (mg/L) — Estimates of the model parameters | `Q321` · not captured | 2.44 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col1 |
-| EC 50 (mg/L) | `Q321` · not captured | 11.8 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col2 |
-| EC 50 (mg/L) — Bootstrap | `Q321` · not captured | 2.51 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col3 |
-| E 0 (s) — Estimates of the model parameters | `Q324` · not captured | 134 | s | not captured | space_fold (not captured) | tab_2:row5:col1 |
-| E 0 (s) | `Q324` · not captured | 0.98 | s | not captured | space_fold (not captured) | tab_2:row5:col2 |
-| E 0 (s) — Bootstrap | `Q324` · not captured | 134 | s | not captured | space_fold (not captured) | tab_2:row5:col3 |
-| θ RBC for EC 50 — Estimates of the model parameters | `Q321` · not captured | 1.70 | mg/L | not captured | llm (not captured) | tab_2:row6:col1 |
-| θ RBC for EC 50 | `Q321` · not captured | 3.54 | mg/L | not captured | llm (not captured) | tab_2:row6:col2 |
-| θ RBC for EC 50 — Bootstrap | `Q321` · not captured | 1.69 | mg/L | not captured | llm (not captured) | tab_2:row6:col3 |
-| E max (%) — Estimates of the model parameters | `Q320` · not captured | 6.80 | not captured | not captured | space_fold (not captured) | tab_2:row8:col1 |
-| E max (%) | `Q320` · not captured | 28.5 | not captured | not captured | space_fold (not captured) | tab_2:row8:col2 |
-| E max (%) — Bootstrap | `Q320` · not captured | 6.33 | not captured | not captured | space_fold (not captured) | tab_2:row8:col3 |
-| EC 50 (%) — Estimates of the model parameters | `Q321` · not captured | 46.4 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col1 |
-| EC 50 (%) | `Q321` · not captured | 28.6 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col2 |
-| EC 50 (%) — Bootstrap | `Q321` · not captured | 27.1 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col3 |
-| E 0 (%) — Estimates of the model parameters | `Q324` · not captured | 4.10 | not captured | not captured | space_fold (not captured) | tab_2:row10:col1 |
-| E 0 (%) | `Q324` · not captured | 19.2 | not captured | not captured | space_fold (not captured) | tab_2:row10:col2 |
-| E 0 (%) — Bootstrap | `Q324` · not captured | 4.17 | not captured | not captured | space_fold (not captured) | tab_2:row10:col3 |
-| Proportional error, % — Estimates of the model parameters | `Q316` · not captured | 4.67 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col1 |
-| Proportional error, % | `Q316` · not captured | 17.0 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col2 |
-| Proportional error, % — Bootstrap | `Q316` · not captured | 4.56 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (s) — Estimates of the model parameters | `Q320` · not captured | 318 | s | not captured | space_fold (not captured) | tab_2:row3:col1 |
+| PD (effect) | E max (s) | `Q320` · not captured | 2.39 | s | not captured | space_fold (not captured) | tab_2:row3:col2 |
+| PD (effect) | E max (s) — Bootstrap | `Q320` · not captured | 320 | s | not captured | space_fold (not captured) | tab_2:row3:col3 |
+| PD (effect) | EC 50 (mg/L) — Estimates of the model parameters | `Q321` · not captured | 2.44 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col1 |
+| PD (effect) | EC 50 (mg/L) | `Q321` · not captured | 11.8 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col2 |
+| PD (effect) | EC 50 (mg/L) — Bootstrap | `Q321` · not captured | 2.51 | mg/L | not captured | space_fold (not captured) | tab_2:row4:col3 |
+| PD (effect) | E 0 (s) — Estimates of the model parameters | `Q324` · not captured | 134 | s | not captured | space_fold (not captured) | tab_2:row5:col1 |
+| PD (effect) | E 0 (s) | `Q324` · not captured | 0.98 | s | not captured | space_fold (not captured) | tab_2:row5:col2 |
+| PD (effect) | E 0 (s) — Bootstrap | `Q324` · not captured | 134 | s | not captured | space_fold (not captured) | tab_2:row5:col3 |
+| PD (effect) | θ RBC for EC 50 — Estimates of the model parameters | `Q321` · not captured | 1.70 | mg/L | not captured | llm (not captured) | tab_2:row6:col1 |
+| PD (effect) | θ RBC for EC 50 | `Q321` · not captured | 3.54 | mg/L | not captured | llm (not captured) | tab_2:row6:col2 |
+| PD (effect) | θ RBC for EC 50 — Bootstrap | `Q321` · not captured | 1.69 | mg/L | not captured | llm (not captured) | tab_2:row6:col3 |
+| PD (effect) | E max (%) — Estimates of the model parameters | `Q320` · not captured | 6.80 | not captured | not captured | space_fold (not captured) | tab_2:row8:col1 |
+| PD (effect) | E max (%) | `Q320` · not captured | 28.5 | not captured | not captured | space_fold (not captured) | tab_2:row8:col2 |
+| PD (effect) | E max (%) — Bootstrap | `Q320` · not captured | 6.33 | not captured | not captured | space_fold (not captured) | tab_2:row8:col3 |
+| PD (effect) | EC 50 (%) — Estimates of the model parameters | `Q321` · not captured | 46.4 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col1 |
+| PD (effect) | EC 50 (%) | `Q321` · not captured | 28.6 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col2 |
+| PD (effect) | EC 50 (%) — Bootstrap | `Q321` · not captured | 27.1 | mg/L | not captured | space_fold (not captured) | tab_2:row9:col3 |
+| PD (effect) | E 0 (%) — Estimates of the model parameters | `Q324` · not captured | 4.10 | not captured | not captured | space_fold (not captured) | tab_2:row10:col1 |
+| PD (effect) | E 0 (%) | `Q324` · not captured | 19.2 | not captured | not captured | space_fold (not captured) | tab_2:row10:col2 |
+| PD (effect) | E 0 (%) — Bootstrap | `Q324` · not captured | 4.17 | not captured | not captured | space_fold (not captured) | tab_2:row10:col3 |
+| variability | Proportional error, % — Estimates of the model parameters | `Q316` · not captured | 4.67 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col1 |
+| variability | Proportional error, % | `Q316` · not captured | 17.0 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col2 |
+| variability | Proportional error, % — Bootstrap | `Q316` · not captured | 4.56 | not captured | not captured | llm_confirmed (not captured) | tab_2:row12:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

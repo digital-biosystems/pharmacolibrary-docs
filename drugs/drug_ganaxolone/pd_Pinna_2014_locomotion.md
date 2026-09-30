@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ganaxolone (the dose) drives locomotion (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Subcutaneous ganaxolone (3.75–30 mg/kg) was tested against horizontal and vertical locomotor activity in mice, but it did not impair exploratory locomotion at these doses; the paper does not report an Emax/IC50 model or parameter values for locomotion (an EC50 of 10 mg/kg s.c. is mentioned only for effects on contextual fear), and no mechanism for a locomotor effect is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pinna_2014`
 - **model family:** `emax`
 - **driver:** `dose_only`

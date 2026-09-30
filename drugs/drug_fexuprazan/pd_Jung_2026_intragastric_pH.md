@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tegoprazan, YH4808, fexuprazan, vonoprazan drive name (in pH units): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of the PCABs (tegoprazan, YH4808, fexuprazan, vonoprazan) stimulate the production rate (Kin) of intragastric pH in an indirect response model, with drug effect, food intake, and a 24-h cosine circadian function all modulating Kin. Model-derived potency indices (PPI) ranked vonoprazan (24.2 nM) &gt; fexuprazan (45.6 nM) &gt; YH4808 (80.7 nM) &gt; tegoprazan (286 nM), paralleling in vitro H+/K+-ATPase IC50 values (vonoprazan 19 nM, fexuprazan 25 nM, tegoprazan 520 nM); no Imax, Emax, kout, or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jung_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

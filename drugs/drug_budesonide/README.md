@@ -25,20 +25,20 @@ Budesonide was granted FDA approval on 14 February 1994.[L10598] It is also avai
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Lönnebo_2007_reference](drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md) | 1-compartment, IV | 3 | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Rubin_2015_reference](drugs/drug_budesonide/Budesonide_Rubin2015_reference.md) | 1-compartment (no model) | 5 | Rubin DT et al., Budesonide Foam Has a Favorable Safety…, Digestive diseases and scie… (2015) | [10.1007/s10620-015-3868-5](https://doi.org/10.1007/s10620-015-3868-5) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Back_2020_reference](drugs/drug_budesonide/Budesonide_Back2020_reference.md) | 2-compartment (no model) | 4 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Lönnebo_2007_reference](drugs/drug_budesonide/Budesonide_Lnnebo2007_reference.md) | held back | 1-compartment, IV | 3 | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q88 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Rubin_2015_reference](drugs/drug_budesonide/Budesonide_Rubin2015_reference.md) | — | 1-compartment (no model) | 5 | Rubin DT et al., Budesonide Foam Has a Favorable Safety…, Digestive diseases and scie… (2015) | [10.1007/s10620-015-3868-5](https://doi.org/10.1007/s10620-015-3868-5) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Back_2020_reference](drugs/drug_budesonide/Budesonide_Back2020_reference.md) | — | 2-compartment (no model) | 4 | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2020](drugs/drug_budesonide/pd_Back_2020_ECP.md) | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2020](drugs/drug_budesonide/pd_Back_2020_FEV1.md) | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lönnebo_2007](drugs/drug_budesonide/pd_L_nnebo_2007_ACTH.md) | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Lönnebo_2007](drugs/drug_budesonide/pd_L_nnebo_2007_cortisol.md) | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2020_ECP](drugs/drug_budesonide/pd_Back_2020_ECP.md) | sputum eosinophil cationic proteins ← budesonide · indirect response — drug inhibits the production of sputum eosinophil cationic proteins | — | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Back_2020_FEV1](drugs/drug_budesonide/pd_Back_2020_FEV1.md) | forced expiratory volume ← budesonide · indirect response — drug inhibits the production of forced expiratory volume | — | Back HM et al., Exposure-Response and Clinical Outcome…, Pharmaceutics (2020) | [10.3390/pharmaceutics12040336](https://doi.org/10.3390/pharmaceutics12040336) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lönnebo_2007_ACTH](drugs/drug_budesonide/pd_L_nnebo_2007_ACTH.md) | ACTH ← budesonide · indirect response — drug inhibits the production of ACTH | — | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Lönnebo_2007_cortisol](drugs/drug_budesonide/pd_L_nnebo_2007_cortisol.md) | cortisol ← budesonide · indirect response — drug inhibits the production of cortisol | — | Lönnebo A et al., An integrated model for the effect of b…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02867.x](https://doi.org/10.1111/j.1365-2125.2007.02867.x) |
 
 ## Pharmacogenomics (PGx)
 
@@ -63,6 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | lung | <sub>“…etered inhaled doses of budesonide are 34% deposited in the lungs, 39% bioavailable, and r…”</sub> | prose |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `SLCO1A2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP2A6` inducer, `CYP2B6` inducer, `CYP2C19` inducer, `CYP2C8` inducer, `CYP2C9` inducer, `CYP3A4` inducer/substrate, `CYP3A5` inducer | DrugBank actor |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In A431 cells, neomenthol (10–100 µM) increased intracellular ROS level in a concentration-dependent manner, with a percent increase of 20.45 ± 0.35% at the highest concentration (mean DCF-positive cells 255.5 ± 0.71 at 100 µM vs 201 ± 1.41 in untreated control); the paper does not state a PD model, mechanism, or potency parameters (no Imax/IC50/EC50/kin/kout/ke0) for the ROS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

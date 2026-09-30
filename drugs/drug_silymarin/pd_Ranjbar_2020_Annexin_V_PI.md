@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives Apoptosis (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (μg/ml) concentration-dependently induced apoptosis in Ramos cells measured by annexin V/PI (%) after 48 hr, with an IC50 of 100 μg/ml from the MTT viability assay; the paper does not state a PD model or parameters (Imax, kin, kout, ke0, gamma), and no mechanism beyond increased caspase-3 activity and reduced TLR8 expression is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ranjbar_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

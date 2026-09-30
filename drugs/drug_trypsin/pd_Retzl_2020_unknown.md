@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BevuTI-I drives human prolyl oligopeptidase inhibition (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BevuTI-I inhibits human prolyl oligopeptidase activity in a concentration-dependent manner, with an IC50 of 11 μM; the paper does not describe a kinetic mechanism (e.g., kin/kout or Emax parameters) beyond this IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Retzl_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

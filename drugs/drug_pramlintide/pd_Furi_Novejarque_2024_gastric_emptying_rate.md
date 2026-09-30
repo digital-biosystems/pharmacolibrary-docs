@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pramlintide drives name (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Pramlintide plasma concentration acts on gastric emptying (measured as glucose rate of appearance after a meal) via an effect-compartment model with inhibitory, proportional effect; the effect-compartment rate constant ke0 is 0.0322 (units not stated). The paper does not report Imax/IC50/EC50/Emax/gamma values, and the excerpts do not state the exact PD mechanism beyond pramlintide slowing gastric emptying.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Furió-Novejarque_2024`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Furió-Novejarque C; Sala-Mira I; Díez JL; Bondia J et al. (2024). Computer met
   ·  DOI: [10.1016/j.cmpb.2023.107968](https://doi.org/10.1016/j.cmpb.2023.107968)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 𝑘 𝑞1 — Value | `Q30` · not captured | 0.0974 | not captured | not captured | llm_confirmed (not captured) | tab_5:row8:col2 |
-| 𝑘 𝑞12 — Value | `Q301` · not captured | 0.1667 | not captured | not captured | llm (not captured) | tab_5:row9:col2 |
-| 𝑘 𝑞2 — Value | `Q99` · not captured | 0.0109 | not captured | not captured | llm_confirmed (not captured) | tab_5:row10:col2 |
-| 𝑘 𝑒 — Value | `Q47` · not captured | 0.0322 | not captured | not captured | space_fold (not captured) | tab_5:row11:col2 |
-| 𝑉 𝑃 — Value | `Q64` · not captured | 31.549 | not captured | not captured | space_fold (not captured) | tab_5:row12:col2 |
-| 𝑓 — Value | `Q40` · not captured | 0.9 | 𝑄 sto | not captured | exact (not captured) | tab_5:row23:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 𝑘 𝑞1 — Value | `Q30` · not captured | 0.0974 | not captured | not captured | llm_confirmed (not captured) | tab_5:row8:col2 |
+| PK (driver) | 𝑘 𝑞12 — Value | `Q301` · not captured | 0.1667 | not captured | not captured | llm (not captured) | tab_5:row9:col2 |
+| PK (driver) | 𝑘 𝑞2 — Value | `Q99` · not captured | 0.0109 | not captured | not captured | llm_confirmed (not captured) | tab_5:row10:col2 |
+| PK (driver) | 𝑘 𝑒 — Value | `Q47` · not captured | 0.0322 | not captured | not captured | space_fold (not captured) | tab_5:row11:col2 |
+| PK (driver) | 𝑉 𝑃 — Value | `Q64` · not captured | 31.549 | not captured | not captured | space_fold (not captured) | tab_5:row12:col2 |
+| PK (driver) | 𝑓 — Value | `Q40` · not captured | 0.9 | 𝑄 sto | not captured | exact (not captured) | tab_5:row23:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

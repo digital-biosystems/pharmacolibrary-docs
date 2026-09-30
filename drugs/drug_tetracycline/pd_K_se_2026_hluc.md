@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tetracycline (concentrations from the PK model of Anadón_1985) drives hluc+ activity (in relative units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Tetracycline (μM concentrations) stimulates hluc+ activity by binding a tetracycline aptamer embedded in the −1 PRF platform, activating tetracycline-inducible −1 frameshifting that places the hluc+ gene in frame; the record models this as a sigmoid Emax stimulation, but the paper excerpts give no numeric potency (EC50/Emax/gamma) or rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Köse_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

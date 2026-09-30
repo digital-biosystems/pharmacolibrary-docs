@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+
 ### Reviewer guidance
 
 **No value for carmustine's clearance.**
@@ -38,8 +40,8 @@ Levin VA; Hoffman W; Weinkam RJ et al. (1978). Cancer treatment reports 62
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of distribution | `Q61` · V | 3.25 | liters/kg | 0.2275 | [l] / [kg] | not captured | exact (1.0) | Levin_1978:abstract | — | not captured |
-| clearance | `Q22` · CL | 56 | ml/minute/kg | not captured | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Levin_1978:abstract | — | not captured |
-| transfer constant from the central compartment to the outside (K10) | `Q47` · kel | 0.0324 | MINUTE-1 | not captured | [1] / [min] | not captured | llm (0.6) | Levin_1978:abstract | — | not captured |
+| clearance | `Q22` · CL | 56 | ml/minute/kg | 6.533333333333333e-05 | L/h | not captured | exact (1.0) | Levin_1978:abstract | — | not captured |
+| transfer constant from the central compartment to the outside (K10) | `Q47` · kel | 0.0324 | MINUTE-1 | 0.00054 | 1/h | not captured | llm (0.6) | Levin_1978:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,6 +53,8 @@ Levin VA; Hoffman W; Weinkam RJ et al. (1978). Cancer treatment reports 62
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=BCNU
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- unit re-normalised: CL 'ml/minute/kg' now converts (value unchanged)
+- unit re-normalised: kel 'MINUTE-1' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Levin_1978_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model

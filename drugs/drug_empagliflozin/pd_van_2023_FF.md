@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin drives filtration fraction (in %): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin plasma exposure (apparent AUC0–tau,ss, µg/L*h, log2-transformed) was related to filtration fraction (%) via a linear mixed-effects model in patients with T2D, with higher exposure per doubling associated with a decrease in filtration fraction; the paper does not state a PD mechanism (e.g., Imax/IC50 or kin/kout) and no slope or potency values for filtration fraction are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

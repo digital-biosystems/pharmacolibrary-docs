@@ -24,16 +24,16 @@ Nedosiran was approved by the FDA on October 2<sup>nd</sup>, 2023, under the bra
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.808). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66, Q22, Q61 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) | 3-compartment (no model) | 10 | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.808). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q66, Q22, Q61 — no SI value to buil…</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2025_reference](drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md) | — | 3-compartment (no model) | 10 | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.269). The first reading is what the record holds.">cross-check: disputed</span> | [Hoppe_2022](drugs/drug_nedosiran/pd_Hoppe_2022_mmol.md) | Hoppe B et al., Safety, pharmacodynamics, and exposure-…, Kidney international (2022) | [10.1016/j.kint.2021.08.015](https://doi.org/10.1016/j.kint.2021.08.015) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025](drugs/drug_nedosiran/pd_Zhang_2025_Uox_Cr.md) | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.269). The first reading is what the record holds.">cross-check: disputed</span> | [Hoppe_2022_mmol](drugs/drug_nedosiran/pd_Hoppe_2022_mmol.md) | Uox ← nedosiran · indirect response — drug inhibits the production of Uox | — | Hoppe B et al., Safety, pharmacodynamics, and exposure-…, Kidney international (2022) | [10.1016/j.kint.2021.08.015](https://doi.org/10.1016/j.kint.2021.08.015) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span> | [Zhang_2025_Uox_Cr](drugs/drug_nedosiran/pd_Zhang_2025_Uox_Cr.md) | spot urine oxalate-to-creatinine ratio ← nedosiran · indirect response — drug inhibits the production of spot urine oxalate-to-creatinine ratio | — | Zhang S et al., Population Pharmacokinetic and Pharmaco…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01540-1](https://doi.org/10.1007/s40262-025-01540-1) |
 
 ## ADME sites
 

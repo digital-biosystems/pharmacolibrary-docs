@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DNA-bound Doxorubicin (measured concentrations) drives number of living cells (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In MM1R cells, DNA-bound doxorubicin (nM) drives a drug-induced death rate k_d modeled as a saturating Michaelis-Menten function of DNA-bound DOXO, which acts on the number of living cells N(t) described by a logistic growth equation balancing proliferation rate k_p, death rate k_d, and well capacity θ; the paper does not report numeric potency values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Andrean_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

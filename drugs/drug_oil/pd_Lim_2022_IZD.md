@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Backhousia citriodora essential oil (measured concentrations) drives Inhibition zone diameter (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking Backhousia citriodora essential oil concentrations to inhibition zone diameter; it only reports agar disk diffusion results (S. epidermidis most sensitive) and MIC-based biofilm inhibition percentages, with no Imax, IC50, EC50, kin, kout, ke0, or gamma values for the IZD response. The only potency values given are for antioxidant assays (DPPH IC50 42.57 µg/mL; FRAP EC50 20.03 µg/mL), not for the antibacterial response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lim_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

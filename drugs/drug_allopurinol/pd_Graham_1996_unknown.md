@@ -14,9 +14,11 @@
 
 **As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives urine urate excretion rate (in mol min-1) (the model form was not identified).
 
-> Steady-state plasma oxypurinol concentrations inhibit urine urate excretion rate via a sigmoid Emax model, with a C50 of 24.61 ± 9.08 mM. The paper does not specify the underlying physiological mechanism (e.g., production vs. elimination) or rate constants (kin, kout, ke0) for this specific response.
+**Model:** No model was generated from this record.
+
+> Plasma oxypurinol (mM) inhibits urine urate excretion rate via inhibition of xanthine oxidase (reduced urate production), described by an inhibition sigmoid Emax model with C50 = 24.61±9.08 mM (exponent/gamma not reported for this endpoint).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Graham_1996`
 - **model family:** `unknown`

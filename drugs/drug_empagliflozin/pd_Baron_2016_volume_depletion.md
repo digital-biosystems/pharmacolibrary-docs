@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Empagliflozin (concentrations from this paper's PK model) drives name (in -): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> The paper describes the binary volume depletion endpoint as being related to empagliflozin exposure (AUC, nM·h) via a logistic regression model, not an indirect-response model; no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given. Covariates increased volume depletion risk (renal impairment eGFR &lt;60 mL/min/1.73 m2: OR 2.78 (0.829, 9.34); insulin therapy: OR 2.60 (1.21, 5.61)), and overall empagliflozin showed no significant exposure-dependent change in volume depletion risk versus placebo.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baron_2016`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

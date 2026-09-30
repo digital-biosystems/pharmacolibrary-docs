@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ficus deltoidea aqueous extract (measured concentrations) drives uterine contraction tension (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ficus deltoidea aqueous extract (FDA, 0.125–4.0 mg/ml) stimulates uterine contraction tension in a dose-dependent manner, with maximum contraction (Emax) at 2 mg/ml, though lower than that of acetylcholine, oxytocin and PGF2α; the paper does not report IC50, EC50, kin, kout or ke0 values. The mechanism, per the paper, is receptor-mediated stimulation (mainly via the oxytocin receptor, with lesser contributions from PGF2α and muscarinic receptors) triggering extracellular Ca2+ influx, as shown by antagonist and blocker experiments rather than a formal PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salleh_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

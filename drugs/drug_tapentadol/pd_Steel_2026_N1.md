@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tapentadol (concentrations from the PK model of Jończyk_2022) drives N1 amplitude (in % of baseline) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anaesthetised rats, tapentadol plasma concentrations were related to the reduction of the N1 somatosensory evoked potential amplitude (expressed as % of baseline) evoked by low-intensity stimulation, with dose–response data fitted by least squares regression; the paper does not state a specific PD model, mechanism, or potency parameters (no Imax, IC50/EC50, Emax, kin, kout, or ke0 values are given for this relationship).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Steel_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AeaTMOF (measured concentrations) drives name (in % luminescence): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> AeaTMOF (0.001–750 μM) concentration-dependently inhibits luciferase biosynthesis in an E. coli S30 in vitro translation system (measured as % luminescence), with an IC50 of 1 μM and complete inhibition at 250–750 μM; the mechanism is inhibition of protein translation by binding to the bacterial ribosome (high affinity KD = 23 ± 3.4 nM, Bmax = 0.553 ± 0.023 pmol/μg ribosome), not inhibition of luciferase activity itself. No kin/kout, ke0, Emax, or Hill coefficient values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Borovsky_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

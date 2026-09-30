@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-indobufen and R-indobufen (measured concentrations) drive platelet aggregation inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In vitro, S- and R-indobufen concentrations (0–128 mg/L) inhibit collagen-induced platelet aggregation (MPA, %) in platelet-rich plasma from 24 healthy subjects, described by an inhibitory sigmoid Imax response-surface model with no enantiomer interaction (ISR fixed at 0). S-indobufen was more potent (C50 6.75 mg/L, RSE 26.8%) than R-indobufen (C50 48.7 mg/L, RSE 3.6%), with Imax 6.38 (RSE 28.8%); the paper does not state gamma, kin/kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Noh_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,31 +30,31 @@ Noh YH; Han S; Choe S; Jung JA; Jung JA; Hwang AK; Lim HS et al. (2018). Transla
   ·  DOI: [10.12793/tcp.2018.26.4.160](https://doi.org/10.12793/tcp.2018.26.4.160)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| C50, S — Estimate | `Q321` · not captured | 6.75 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col1 |
-| C50, S — RSE (%) | `Q321` · not captured | 26.8 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col2 |
-| C50, S — Median | `Q321` · not captured | 5.66 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col3 |
-| C50, R — Estimate | `Q321` · not captured | 48.7 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col1 |
-| C50, R — RSE (%) | `Q321` · not captured | 3.6 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col2 |
-| C50, R — Median | `Q321` · not captured | 48.33 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col3 |
-| Imax — Estimate | `Q323` · not captured | 6.38 | not captured | not captured | exact (not captured) | T1:row4:col1 |
-| Imax — RSE (%) | `Q323` · not captured | 28.8 | not captured | not captured | exact (not captured) | T1:row4:col2 |
-| Imax — Median | `Q323` · not captured | 8.52 | not captured | not captured | exact (not captured) | T1:row4:col3 |
-| IIV of C50, S — Estimate | `Q312` · not captured | 200.1 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col1 |
-| IIV of C50, S — RSE (%) | `Q312` · not captured | 13.4 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col2 |
-| IIV of C50, S — Median | `Q312` · not captured | 195.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col3 |
-| IIV of C50,R — Estimate | `Q312` · not captured | 8.4 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col1 |
-| IIV of C50,R — RSE (%) | `Q312` · not captured | 85.8 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col2 |
-| IIV of C50,R — Median | `Q312` · not captured | 7.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col3 |
-| IIV of γ — Estimate | `Q312` · not captured | 45.5 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col1 |
-| IIV of γ — RSE (%) | `Q312` · not captured | 26.0 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col2 |
-| IIV of γ — Median | `Q312` · not captured | 44.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col3 |
-| IIV of Imax — Estimate | `Q312` · not captured | 98.4 | CV, % | not captured | llm_corrected (not captured) | T1:row9:col1 |
-| IIV of Imax — RSE (%) | `Q312` · not captured | 43.1 | CV, % | not captured | llm_corrected (not captured) | T1:row9:col2 |
-| IIV of Imax — Median | `Q323` · not captured | 86.9 | CV, % | not captured | llm_confirmed (not captured) | T1:row9:col3 |
-| ε (additive) — Estimate | `Q317` · not captured | 12.10 | additive | not captured | llm (not captured) | T1:row11:col1 |
-| ε (additive) — RSE (%) | `Q317` · not captured | 7.2 | additive | not captured | llm (not captured) | T1:row11:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | C50, S — Estimate | `Q321` · not captured | 6.75 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col1 |
+| PD (effect) | C50, S — RSE (%) | `Q321` · not captured | 26.8 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col2 |
+| PD (effect) | C50, S — Median | `Q321` · not captured | 5.66 | mg/L | not captured | llm_confirmed (not captured) | T1:row1:col3 |
+| PD (effect) | C50, R — Estimate | `Q321` · not captured | 48.7 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col1 |
+| PD (effect) | C50, R — RSE (%) | `Q321` · not captured | 3.6 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col2 |
+| PD (effect) | C50, R — Median | `Q321` · not captured | 48.33 | mg/L | not captured | llm_confirmed (not captured) | T1:row2:col3 |
+| PD (effect) | Imax — Estimate | `Q323` · not captured | 6.38 | not captured | not captured | exact (not captured) | T1:row4:col1 |
+| PD (effect) | Imax — RSE (%) | `Q323` · not captured | 28.8 | not captured | not captured | exact (not captured) | T1:row4:col2 |
+| PD (effect) | Imax — Median | `Q323` · not captured | 8.52 | not captured | not captured | exact (not captured) | T1:row4:col3 |
+| variability | IIV of C50, S — Estimate | `Q312` · not captured | 200.1 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col1 |
+| variability | IIV of C50, S — RSE (%) | `Q312` · not captured | 13.4 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col2 |
+| variability | IIV of C50, S — Median | `Q312` · not captured | 195.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row6:col3 |
+| variability | IIV of C50,R — Estimate | `Q312` · not captured | 8.4 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col1 |
+| variability | IIV of C50,R — RSE (%) | `Q312` · not captured | 85.8 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col2 |
+| variability | IIV of C50,R — Median | `Q312` · not captured | 7.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row7:col3 |
+| variability | IIV of γ — Estimate | `Q312` · not captured | 45.5 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col1 |
+| variability | IIV of γ — RSE (%) | `Q312` · not captured | 26.0 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col2 |
+| variability | IIV of γ — Median | `Q312` · not captured | 44.2 | CV, % | not captured | llm_confirmed (not captured) | T1:row8:col3 |
+| variability | IIV of Imax — Estimate | `Q312` · not captured | 98.4 | CV, % | not captured | llm_corrected (not captured) | T1:row9:col1 |
+| variability | IIV of Imax — RSE (%) | `Q312` · not captured | 43.1 | CV, % | not captured | llm_corrected (not captured) | T1:row9:col2 |
+| PD (effect) | IIV of Imax — Median | `Q323` · not captured | 86.9 | CV, % | not captured | llm_confirmed (not captured) | T1:row9:col3 |
+| variability | ε (additive) — Estimate | `Q317` · not captured | 12.10 | additive | not captured | llm (not captured) | T1:row11:col1 |
+| variability | ε (additive) — RSE (%) | `Q317` · not captured | 7.2 | additive | not captured | llm (not captured) | T1:row11:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

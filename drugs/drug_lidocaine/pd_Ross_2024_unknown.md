@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lidocaine (concentrations from the PK model of Bursi_2017) drives Electrocutaneous stimulation response score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Tissue lidocaine concentrations were related to the electrocutaneous stimulation response score (a categorical measure of local anesthetic effect) in lambs after ring-block injection or lidocaine-loaded band (LLB) application, with a sigmoid Emax inhibitory relationship; the paper reports EC50 values of 0.174 mg/g (scrotum) and 0.0765 mg/g (tail) and EC95 values of 2.08 mg/g (scrotum) and 0.608 mg/g (tail), but does not describe a mechanistic PD model (e.g., kin/kout or effect compartment) beyond this direct concentration–effect fit.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ross_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -20,9 +30,9 @@
 not matched (stem Ross_2024)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 0.174 | mg/g | not captured | review_gapfill (not captured) | Ross_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 0.174 | mg/g | not captured | review_gapfill (not captured) | Ross_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives Apoptosis (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan (µM concentrations) increased the percentage of apoptotic cells in HCT-8, HepG2 and SK-N-AS cells at all tested concentrations, with caspase-3 upregulation, attributed to V2 receptor antagonism and downstream inhibition of cAMP/PKA/AKT signalling; the paper does not state a quantitative PD model for apoptosis (no Imax, IC50, Emax, kin, kout or ke0 for this response), and the reported IC50 values (52, 38 and 40 µM) refer to inhibition of cell proliferation, not apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

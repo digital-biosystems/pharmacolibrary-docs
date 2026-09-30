@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vancomycin (concentrations from the PK model of Goyal_2022::final_pk_model) drives Nephrotoxicity (in binary): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model or mechanism linking vancomycin to nephrotoxicity; it only reports that nephrotoxicity (binary, occurring in 21.5% of patients, median time to onset 11 days) was more frequent with vancomycin trough concentrations (Ctrough) ≥ 13.94 μg/mL during the initial 72 h (39.3% vs. 8.1%, p = 0.022), with no potency (IC50/EC50/Emax) or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nham_2022`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

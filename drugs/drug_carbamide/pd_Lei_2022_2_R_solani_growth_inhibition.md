@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 6a16 (measured concentrations) drives name (in EC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The pyrazole carbamide derivative 6a16 inhibits mycelial growth of Rhizoctonia solani (mycelial growth rate method on PDA), with an EC50 of 9.06 mg/L, compared with fluconazole (EC50 = 12.29 mg/L) and bixafen (EC50 = 0.34 mg/L); the paper does not state a pharmacodynamic model or mechanism beyond reporting EC50 values and SEM observations of altered mycelial morphology.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lei_2022_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,11 +29,11 @@
 not matched (stem Lei_2022_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 6a16 — EC50 (mg/L) | `Q321` · not captured | 9.06 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row1:col2 |
-| fluconazole — EC50 (mg/L) | `Q321` · not captured | 12.29 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row2:col2 |
-| bixafen — EC50 (mg/L) | `Q321` · not captured | 0.34 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 6a16 — EC50 (mg/L) | `Q321` · not captured | 9.06 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row1:col2 |
+| PD (effect) | fluconazole — EC50 (mg/L) | `Q321` · not captured | 12.29 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row2:col2 |
+| PD (effect) | bixafen — EC50 (mg/L) | `Q321` · not captured | 0.34 | mg/L | not captured | llm (not captured) | cimb-44-00380-t002:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

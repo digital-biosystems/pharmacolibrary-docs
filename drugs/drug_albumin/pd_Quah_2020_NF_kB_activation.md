@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cornus officinalis Ethanolic Extract (COFE) (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cornus officinalis ethanolic extract (COFE) concentration-dependently inhibits LPS-induced NF-κB activation in RAW 264.7 cells, thereby suppressing NO production and iNOS, IL-1β, IL-6, and TNF-α mRNA expression; the paper does not state an Emax, IC50/EC50, or rate parameters specifically for NF-κB activation (related endpoints: NO EC50 = 0.74 mg/mL; cytokine EC50 = 0.0007–0.039 mg/mL with Emax 73–90%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Quah_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

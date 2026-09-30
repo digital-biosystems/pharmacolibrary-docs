@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin, 5-Fluorouracil, Camptothecin, OLA, I-BET762 (measured concentrations) drive name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations of doxorubicin, 5-fluorouracil, camptothecin/cyclophosphamide, olaparib, and I-BET762 (µM) act on cell viability (%) measured by LIVE/DEAD assay in MCF-7 spheroids and patient-derived organoids, with an inhibitory (viability-reducing) effect analyzed via a sigmoid Emax-type relationship and Bliss-based combination index; the excerpts do not state the mechanism beyond empirical viability reduction and give no potency or rate values (no IC50, Emax, gamma, kin, kout, or ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yakavets_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dihydrogambogic acid (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dihydrogambogic acid (D-GA) directly inhibits gap junctional intercellular communication (GJIC, %) in a concentration-dependent manner (IC50: 5.1 ± 1.1 μM for Cx40, 13.1 ± 1.1 μM for Cx43, 81.1 ± 1.1 μM for Cx30); carbenoxolone (CBX) was tested as a comparator broad-spectrum GJIC inhibitor with IC50 values of 5.6 ± 1.1 μM (Cx43), 105.2 ± 1.0 μM (Cx40), and 748.2 ± 1.3 μM (Cx30). The paper does not identify the molecular mechanism of inhibition, ruling out changes in Cx43 surface expression or S368 phosphorylation, intracellular calcium, and redox state, and the inhibition was rapidly reversible.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Choi_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

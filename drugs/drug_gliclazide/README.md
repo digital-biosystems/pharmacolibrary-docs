@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_intersubject_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_intersubject_variability.md) | 1-compartment, oral | 3 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_parameters](drugs/drug_gliclazide/Gliclazide_Frey2003_parameters.md) | 1-compartment, oral | 4 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_residual_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability.md) | 1-compartment, oral | 3 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_intersubject_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_intersubject_variability.md) | ▶ model + simulator | 1-compartment, oral | 3 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_parameters](drugs/drug_gliclazide/Gliclazide_Frey2003_parameters.md) | ▶ model + simulator | 1-compartment, oral | 4 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Frey_2003_residual_variability](drugs/drug_gliclazide/Gliclazide_Frey2003_residual_variability.md) | ▶ model + simulator | 1-compartment, oral | 3 | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Frey_2003](drugs/drug_gliclazide/pd_Frey_2003_fasting_plasma_glucose.md) | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Frey_2003_fasting_plasma_glucose](drugs/drug_gliclazide/pd_Frey_2003_fasting_plasma_glucose.md) | name ← gliclazide · direct Emax (saturable) effect | — | Frey N et al., Population PKPD modelling of the long-t…, British journal of clinical… (2003) | [10.1046/j.1365-2125.2003.01751.x](https://doi.org/10.1046/j.1365-2125.2003.01751.x) |
 
 ## ADME sites
 

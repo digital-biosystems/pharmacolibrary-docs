@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montelukast (concentrations from the PK model of Li_2019) drives number of synaptic vesicles released (in count) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model or any potency or rate parameters; it only suggests, via docking and MD, that montelukast may bind Cav3.1 and is likely an inhibitor (which would reduce calcium influx and synaptic vesicle release), but no quantitative drug-concentration–response relationship is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fong_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

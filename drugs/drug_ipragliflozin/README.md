@@ -17,29 +17,29 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 08:16 | 4:58 | 0/0/1 | 1/3/0 | 0/0/0 | 140,181/6,870 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
+| 2026-09-29 23:31 | 2:59 | 0/0/1 | 1/3/0 | 0/0/0 | 35,163/11,886 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | 1-compartment (no model) | 2 | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Saito_2019_reference](drugs/drug_ipragliflozin/Ipragliflozin_Saito2019_reference.md) | — | 1-compartment (no model) | 2 | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_Bcl_2.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_MTT.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_SGLT2.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_VEGF.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_annexin_V_FITC_PI.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_colony_formation.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bardaweel_2022](drugs/drug_ipragliflozin/pd_Bardaweel_2022_wound_healing.md) | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Demin_2014](drugs/drug_ipragliflozin/pd_Demin_2014_inhibition_of_glucose_reabsorption_mediated_by_SG.md) | Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014) | [10.3389/fphar.2014.00218](https://doi.org/10.3389/fphar.2014.00218) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Saito_2020](drugs/drug_ipragliflozin/pd_Saito_2020_FPG.md) | Saito M et al., Model-based Prediction of the Long-term…, Diabetes therapy : research… (2020) | [10.1007/s13300-020-00785-2](https://doi.org/10.1007/s13300-020-00785-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Saito_2020](drugs/drug_ipragliflozin/pd_Saito_2020_HbA1c.md) | Saito M et al., Model-based Prediction of the Long-term…, Diabetes therapy : research… (2020) | [10.1007/s13300-020-00785-2](https://doi.org/10.1007/s13300-020-00785-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Sato_2024](drugs/drug_ipragliflozin/pd_Sato_2024_HbA1c.md) | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_Bcl_2](drugs/drug_ipragliflozin/pd_Bardaweel_2022_Bcl_2.md) | Bcl-2 gene expression ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_MTT](drugs/drug_ipragliflozin/pd_Bardaweel_2022_MTT.md) | cell proliferation ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_SGLT2](drugs/drug_ipragliflozin/pd_Bardaweel_2022_SGLT2.md) | SGLT2 gene expression ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_VEGF](drugs/drug_ipragliflozin/pd_Bardaweel_2022_VEGF.md) | VEGF gene expression ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_annexin_V_FITC_PI](drugs/drug_ipragliflozin/pd_Bardaweel_2022_annexin_V_FITC_PI.md) | apoptosis ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Bardaweel_2022_colony_formation](drugs/drug_ipragliflozin/pd_Bardaweel_2022_colony_formation.md) | colony formation ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Bardaweel_2022_wound_healing](drugs/drug_ipragliflozin/pd_Bardaweel_2022_wound_healing.md) | cell migration ← canagliflozin · inhibition effect | — | Bardaweel S et al., Exploring the Role of Sodium-Glucose Co…, Journal of pharmacy & pharm… (2022) | [10.18433/jpps32879](https://doi.org/10.18433/jpps32879) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Demin_2014_inhibition_of_glucose_reabsorption_mediated_by_SGLT2](drugs/drug_ipragliflozin/pd_Demin_2014_inhibition_of_glucose_reabsorption_mediated_by_SG.md) | name ← dapagliflozin · direct Emax (saturable) effect | — | Demin O et al., Analysis of the efficacy of SGLT2 inhib…, Frontiers in pharmacology (2014) | [10.3389/fphar.2014.00218](https://doi.org/10.3389/fphar.2014.00218) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Saito_2020_FPG](drugs/drug_ipragliflozin/pd_Saito_2020_FPG.md) | FPG ← ipragliflozin · delayed effect through an effect compartment | — | Saito M et al., Model-based Prediction of the Long-term…, Diabetes therapy : research… (2020) | [10.1007/s13300-020-00785-2](https://doi.org/10.1007/s13300-020-00785-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Saito_2020_HbA1c](drugs/drug_ipragliflozin/pd_Saito_2020_HbA1c.md) | HbA1c ← ipragliflozin · delayed effect through an effect compartment | — | Saito M et al., Model-based Prediction of the Long-term…, Diabetes therapy : research… (2020) | [10.1007/s13300-020-00785-2](https://doi.org/10.1007/s13300-020-00785-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.815). The first reading is what the record holds.">cross-check: disputed</span> | [Sato_2024_HbA1c](drugs/drug_ipragliflozin/pd_Sato_2024_HbA1c.md) | HbA1c ← unknown · direct Emax (saturable) effect | — | Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2024) | [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6) |
 
 ## ADME sites
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 42 matched, 40 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -71,7 +71,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Saito_2019.pdf` | Saito M et al., Pharmacokinetic and pharmacodynamic mod…, British journal of clinical… (2019) | popPK | 10 | [10.1111/bcp.13972](https://doi.org/10.1111/bcp.13972) | [31026084](https://pubmed.ncbi.nlm.nih.gov/31026084) | The paper reports a population PK model for ipragliflozin with a specific numeric value for oral clearance (9.47 L/h) and describes a 2-compartment model, though other parameters like volume and half-life are not explicitly listed in the provided text. |
 | `Choi_2020.pdf` | Choi MK et al., Comparative Pharmacokinetics and Pharma…, Pharmaceutics (2020) | pd | 5 | [10.3390/pharmaceutics12030268](https://doi.org/10.3390/pharmaceutics12030268) | [32183468](https://www.ncbi.nlm.nih.gov/pubmed/32183468) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-22T08:11:58.526406+00:00</sub>
+<sub>queue written 2026-09-29T23:28:48.201782+00:00</sub>
 
 ## Screened and excluded
 

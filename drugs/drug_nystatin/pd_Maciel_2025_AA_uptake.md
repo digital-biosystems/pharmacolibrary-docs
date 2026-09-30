@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nystatin (measured concentrations) drives arginine uptake (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Nystatin concentrations (μM) inhibit arginine uptake in T. cruzi epimastigotes, fitted by a dose-response logistic (sigmoid Emax-type) function, with IC50 1.02 μM (95% CI 0.87–1.21); the paper does not state Imax, Emax, kin, kout, ke0, or gamma, and notes the trypanocidal effect is unlikely to be caused by arginine uptake inhibition alone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maciel_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

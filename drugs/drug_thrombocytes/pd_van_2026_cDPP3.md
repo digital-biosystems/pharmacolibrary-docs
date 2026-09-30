@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Procizumab (measured concentrations) drives DPP3 activity (in U/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Procizumab (PCZ) concentrations (µg/mL) inhibit cDPP3 enzyme activity (U/L, change from baseline) via a turnover PD model with an Imax–IC50 function, in which PCZ concentration-dependently inhibits cDPP3 activity (not cDPP3 concentration). The IC50 was 3.85 µg/mL; no Imax, kin, kout, or gamma values are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ van Lier D; Mourisse L; Hollander H; Santos K; Bergmann A; van Herwaarden AE; Ko
   ·  DOI: [10.1080/19420862.2026.2671468](https://doi.org/10.1080/19420862.2026.2671468)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Fibrinogen [g/L] — PCZ3 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col2 |
-| Fibrinogen [g/L] — PCZ6 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col3 |
-| Fibrinogen [g/L] — PCZ12 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Fibrinogen [g/L] — PCZ3 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col2 |
+| PK (driver) | Fibrinogen [g/L] — PCZ6 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col3 |
+| PK (driver) | Fibrinogen [g/L] — PCZ12 mg/kg(n = 6) | `Q41` · not captured | 2 | g/L | not captured | llm (not captured) | t0001:row29:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

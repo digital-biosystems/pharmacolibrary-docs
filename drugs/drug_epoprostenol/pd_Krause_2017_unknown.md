@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Selexipag and ACT-333679 (measured concentrations) drive adverse events denoting hemorrhage (in unknown): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a PD model for adverse events denoting hemorrhage: log-linear regression of model-predicted steady-state selexipag and ACT-333679 exposure (ng/mL) found no statistically significant effect on hemorrhage-type adverse events, and no potency (IC50/EC50/Emax) or rate parameters are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Krause_2017`
 - **model family:** `log_linear`
 - **driver:** `conc_no_pk`
@@ -21,12 +31,12 @@ Krause A; Machacek M; Lott D; Hurst N; Bruderer S; Dingemanse J et al. (2017). C
   ·  DOI: [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vp — Coefficient | `Q64` · not captured | 1.2 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row1:col2 |
-| Vm — Coefficient | `Q66` · not captured | 0.88 | not captured | not captured | special_case (not captured) | psp412202-tbl-0002:row2:col2 |
-| CL — Coefficient | `Q22` · not captured | -0.40 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row3:col2 |
-| CL — Coefficient | `Q22` · not captured | 0.61 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vp — Coefficient | `Q64` · not captured | 1.2 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row1:col2 |
+| PK (driver) | Vm — Coefficient | `Q66` · not captured | 0.88 | not captured | not captured | special_case (not captured) | psp412202-tbl-0002:row2:col2 |
+| PK (driver) | CL — Coefficient | `Q22` · not captured | -0.40 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row3:col2 |
+| PK (driver) | CL — Coefficient | `Q22` · not captured | 0.61 | not captured | not captured | exact (not captured) | psp412202-tbl-0002:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

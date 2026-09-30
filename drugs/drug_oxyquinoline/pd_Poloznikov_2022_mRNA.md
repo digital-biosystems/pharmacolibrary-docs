@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** HIF PHD inhibitors (roxadustat, vadadustat, DMOG, oxyquinolines) (measured concentrations) drive Gene expression (in fold change) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oxyquinoline HIF PHD inhibitors (e.g. #4896-3249, #5704-0720) act on HIF1/HIF2-linked gene expression (fold change) by inhibiting HIF prolyl hydroxylase, which prevents proteasomal degradation of HIF and thereby activates HIF pathways; the two novel oxyquinolines at 2 μM matched the effect of 30 μM roxadustat and 500 μM DMOG, with oxyquinoline IC50 values in the 1–3 μM range versus ca. 25 μM for roxadustat. No PD model parameters (Imax, EC50, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poloznikov_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

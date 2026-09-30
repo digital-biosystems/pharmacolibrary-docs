@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in fluorescence intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ADAMTS-13 concentration (nM) drives dose-dependent platelet clearance (residual platelet fluorescence) in an in vitro thrombosis perfusion assay; WT ADAMTS-13 acts on VWF-mediated platelet capture (maximal ~50% decrease in platelet coverage), while the GoF variant additionally clears platelets, likely via fibrinogen proteolysis removing an αIIbβ3 binding site. EC50 values were 11.2 ± 2.8 nM (WT) and 1.5 ± 0.9 nM (GoF); no formal PD model structure (e.g. Emax/Imax, kin/kout) is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

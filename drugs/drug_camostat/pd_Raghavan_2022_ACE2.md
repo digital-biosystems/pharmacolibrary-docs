@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metadichol (measured concentrations) drives ACE2 inhibition (in ng/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Metadichol was tested in an ACE2 inhibitor screening assay measuring ACE2 exopeptidase activity (fluorescence RFU) at concentrations of 0.125–40 μg/mL, with IC50 values calculated from these measurements; however, the paper states that Metadichol does not, for all practical purposes, inhibit ACE2, and no numeric IC50, Imax, or rate parameters are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raghavan_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

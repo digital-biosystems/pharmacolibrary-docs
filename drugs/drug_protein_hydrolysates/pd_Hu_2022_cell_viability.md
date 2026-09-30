@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PGPTY (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptide PGPTY (100 μg/mL, also tested at 100–400 μg/mL without toxicity) was used to pretreat HepG2 cells for 4 h before 800 μM H2O2 exposure, protecting cell viability (%), which fell to 56.71% with H2O2 alone and was significantly restored by PGPTY to a degree comparable with 100 μg/mL glutathione; the paper does not state a pharmacodynamic model or mechanism (no Emax/IC50/kin/kout values for this response), and the reported IC50 values (e.g. PGPTY 0.24 mg/mL) refer to ABTS radical scavenging, not cell viability.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Hu X; Liu J; Li J; Song Y; Chen S; Zhou S; et al. et al. (2022). Frontiers in nu
   ·  DOI: [10.3389/fnut.2022.971419](https://doi.org/10.3389/fnut.2022.971419)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Allophycocyanin α chain (18th–23th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 5.35 | IC50, mg/mL | not captured | llm (not captured) | T4:row1:col3 |
-| Phycocyanin β subunit (162th–166th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 1.21 | IC50, mg/mL | not captured | llm (not captured) | T4:row2:col3 |
-| Phycocyanin α subunit (70th–74th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 0.24 | IC50, mg/mL | not captured | llm (not captured) | T4:row3:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Allophycocyanin α chain (18th–23th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 5.35 | IC50, mg/mL | not captured | llm (not captured) | T4:row1:col3 |
+| PD (effect) | Phycocyanin β subunit (162th–166th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 1.21 | IC50, mg/mL | not captured | llm (not captured) | T4:row2:col3 |
+| PD (effect) | Phycocyanin α subunit (70th–74th) — ABTS free radical scavenging activity (IC50, mg/mL) | `Q322` · not captured | 0.24 | IC50, mg/mL | not captured | llm (not captured) | T4:row3:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

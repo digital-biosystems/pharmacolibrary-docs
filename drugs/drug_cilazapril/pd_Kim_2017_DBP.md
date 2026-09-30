@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fimasartan drives diastolic blood pressure (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Fimasartan plasma concentrations inhibit the production (Kin) of diastolic blood pressure in an inhibitory sigmoid Emax turnover model (with circadian rhythm overlay); for DBP, Kin = 33.1, Emax = 33.8 mmHg, EC50 = 4.82 (healthy + mild, H+A) and 47.3 (moderate, B) in unknown units, and Kout = 0.40. The paper does not state the driver concentration units, and notes EC50 was increased in hepatic impairment rather than effect saturation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,33 +31,33 @@ Kim CO; Jeon S; Han S; Hong T; Park MS; Yoon YR; Yim DS et al. (2017). Translati
   ·  DOI: [10.12793/tcp.2017.25.1.43](https://doi.org/10.12793/tcp.2017.25.1.43)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kin — Estimate | `Q327` · not captured | 90.3 | not captured | not captured | exact (not captured) | T4:row3:col2 |
-| Kin — RSE | `Q327` · not captured | 17.7 | not captured | not captured | exact (not captured) | T4:row3:col3 |
-| Emax — Estimate | `Q320` · not captured | 21.3 | not captured | not captured | exact (not captured) | T4:row4:col2 |
-| Emax — RSE | `Q320` · not captured | 5.8 | not captured | not captured | exact (not captured) | T4:row4:col3 |
-| EC50,H — Estimate | `Q321` · not captured | 2.28 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col2 |
-| EC50,H — RSE | `Q321` · not captured | 20.7 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col3 |
-| EC50, A+B — Estimate | `Q321` · not captured | 9.19 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col2 |
-| EC50, A+B — RSE | `Q321` · not captured | 53.8 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col3 |
-| Koutb — Estimate | `Q328` · not captured | 0.69 | not captured | not captured | llm (not captured) | T4:row9:col2 |
-| σprop — Estimate | `Q316` · not captured | 0.063 | not captured | not captured | llm (not captured) | T4:row13:col2 |
-| σprop — RSE | `Q316` · not captured | 6.2 | not captured | not captured | llm (not captured) | T4:row13:col3 |
-| Kin — Estimate | `Q327` · not captured | 33.1 | not captured | not captured | exact (not captured) | T4:row16:col2 |
-| Kin — RSE | `Q327` · not captured | 19.7 | not captured | not captured | exact (not captured) | T4:row16:col3 |
-| Emax — Estimate | `Q320` · not captured | 33.8 | not captured | not captured | exact (not captured) | T4:row17:col2 |
-| Emax — RSE | `Q320` · not captured | 8.7 | not captured | not captured | exact (not captured) | T4:row17:col3 |
-| EC50,H+A — Estimate | `Q321` · not captured | 4.82 | unknown | not captured | llm_confirmed (not captured) | T4:row20:col2 |
-| EC50,H+A — RSE | `Q321` · not captured | 40.5 | unknown | not captured | llm_confirmed (not captured) | T4:row20:col3 |
-| EC50, B — Estimate | `Q321` · not captured | 47.3 | unknown | not captured | llm_confirmed (not captured) | T4:row21:col2 |
-| EC50, B — RSE | `Q321` · not captured | 51.8 | unknown | not captured | llm_confirmed (not captured) | T4:row21:col3 |
-| Koutb — Estimate | `Q328` · not captured | 0.40 | not captured | not captured | llm (not captured) | T4:row22:col2 |
-| ωEC50 — Estimate | `Q321` · not captured | 56.8 | unknown | not captured | llm_confirmed (not captured) | T4:row25:col2 |
-| ωEC50 — RSE | `Q321` · not captured | 55.3 | unknown | not captured | llm_confirmed (not captured) | T4:row25:col3 |
-| σadd — Estimate | `Q317` · not captured | 6.27 | not captured | not captured | llm (not captured) | T4:row27:col2 |
-| σadd — RSE | `Q317` · not captured | 6.8 | not captured | not captured | llm (not captured) | T4:row27:col3 |
-| σprop — Estimate | `Q316` · not captured | 0.0001 | not captured | not captured | llm (not captured) | T4:row28:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kin — Estimate | `Q327` · not captured | 90.3 | not captured | not captured | exact (not captured) | T4:row3:col2 |
+| PD (effect) | Kin — RSE | `Q327` · not captured | 17.7 | not captured | not captured | exact (not captured) | T4:row3:col3 |
+| PD (effect) | Emax — Estimate | `Q320` · not captured | 21.3 | not captured | not captured | exact (not captured) | T4:row4:col2 |
+| PD (effect) | Emax — RSE | `Q320` · not captured | 5.8 | not captured | not captured | exact (not captured) | T4:row4:col3 |
+| PD (effect) | EC50,H — Estimate | `Q321` · not captured | 2.28 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col2 |
+| PD (effect) | EC50,H — RSE | `Q321` · not captured | 20.7 | unknown | not captured | llm_confirmed (not captured) | T4:row7:col3 |
+| PD (effect) | EC50, A+B — Estimate | `Q321` · not captured | 9.19 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col2 |
+| PD (effect) | EC50, A+B — RSE | `Q321` · not captured | 53.8 | unknown | not captured | llm_confirmed (not captured) | T4:row8:col3 |
+| PD (effect) | Koutb — Estimate | `Q328` · not captured | 0.69 | not captured | not captured | llm (not captured) | T4:row9:col2 |
+| variability | σprop — Estimate | `Q316` · not captured | 0.063 | not captured | not captured | llm (not captured) | T4:row13:col2 |
+| variability | σprop — RSE | `Q316` · not captured | 6.2 | not captured | not captured | llm (not captured) | T4:row13:col3 |
+| PD (effect) | Kin — Estimate | `Q327` · not captured | 33.1 | not captured | not captured | exact (not captured) | T4:row16:col2 |
+| PD (effect) | Kin — RSE | `Q327` · not captured | 19.7 | not captured | not captured | exact (not captured) | T4:row16:col3 |
+| PD (effect) | Emax — Estimate | `Q320` · not captured | 33.8 | not captured | not captured | exact (not captured) | T4:row17:col2 |
+| PD (effect) | Emax — RSE | `Q320` · not captured | 8.7 | not captured | not captured | exact (not captured) | T4:row17:col3 |
+| PD (effect) | EC50,H+A — Estimate | `Q321` · not captured | 4.82 | unknown | not captured | llm_confirmed (not captured) | T4:row20:col2 |
+| PD (effect) | EC50,H+A — RSE | `Q321` · not captured | 40.5 | unknown | not captured | llm_confirmed (not captured) | T4:row20:col3 |
+| PD (effect) | EC50, B — Estimate | `Q321` · not captured | 47.3 | unknown | not captured | llm_confirmed (not captured) | T4:row21:col2 |
+| PD (effect) | EC50, B — RSE | `Q321` · not captured | 51.8 | unknown | not captured | llm_confirmed (not captured) | T4:row21:col3 |
+| PD (effect) | Koutb — Estimate | `Q328` · not captured | 0.40 | not captured | not captured | llm (not captured) | T4:row22:col2 |
+| PD (effect) | ωEC50 — Estimate | `Q321` · not captured | 56.8 | unknown | not captured | llm_confirmed (not captured) | T4:row25:col2 |
+| PD (effect) | ωEC50 — RSE | `Q321` · not captured | 55.3 | unknown | not captured | llm_confirmed (not captured) | T4:row25:col3 |
+| variability | σadd — Estimate | `Q317` · not captured | 6.27 | not captured | not captured | llm (not captured) | T4:row27:col2 |
+| variability | σadd — RSE | `Q317` · not captured | 6.8 | not captured | not captured | llm (not captured) | T4:row27:col3 |
+| variability | σprop — Estimate | `Q316` · not captured | 0.0001 | not captured | not captured | llm (not captured) | T4:row28:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

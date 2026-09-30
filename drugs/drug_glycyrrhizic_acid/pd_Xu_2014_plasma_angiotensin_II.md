@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhetic acid (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Kidney exposure to glycyrrhetic acid (GA, µM) reversibly inhibits 11β-HSD 2 (Imax model, IC50GA = 0.000234 µmol/ml), raising cortisol, which activates the mineralocorticoid receptor and, via the RAAS feedback module, drives aldosterone generation (Kgen_aldo = 62.8 ng/dl/h; SC50AngII = 94.129 pg/ml; SC50K+ = 4.577 mmol/l; Kdeg_aldo = 18.67 h−1) and plasma angiotensin II as part of the compensatory renin-angiotensin-aldosterone response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2014`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Xu R; Liu X; Yang J et al. (2014). PloS one 9
   ·  DOI: [10.1371/journal.pone.0114049](https://doi.org/10.1371/journal.pone.0114049)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kgen_aldo (ng/dl/h) — Optimized value | `Q327` · not captured | 62.8 | ng/dl/h | not captured | llm (not captured) | pone-0114049-t005:row1:col1 |
-| SC50K + (mmol/l) — Optimized value | `Q321` · not captured | 4.577 | mmol/l | not captured | llm (not captured) | pone-0114049-t005:row3:col1 |
-| SC50AngII (pg/ml) — Optimized value | `Q322` · not captured | 94.129 | pg/ml | not captured | llm (not captured) | pone-0114049-t005:row4:col1 |
-| Kdeg_aldo (h−1) — Optimized value | `Q328` · not captured | 18.67 | h−1 | not captured | llm (not captured) | pone-0114049-t005:row5:col1 |
-| Vapp (l) — Optimized value | `Q61` · not captured | 5.2 | l | not captured | llm (not captured) | pone-0114049-t005:row6:col1 |
-| IC50GA (µmol/ml) — Optimized value | `Q322` · not captured | 0.000234 | µmol/ml | not captured | llm (not captured) | pone-0114049-t005:row7:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Kgen_aldo (ng/dl/h) — Optimized value | `Q327` · not captured | 62.8 | ng/dl/h | not captured | llm (not captured) | pone-0114049-t005:row1:col1 |
+| PD (effect) | SC50K + (mmol/l) — Optimized value | `Q321` · not captured | 4.577 | mmol/l | not captured | llm (not captured) | pone-0114049-t005:row3:col1 |
+| PD (effect) | SC50AngII (pg/ml) — Optimized value | `Q322` · not captured | 94.129 | pg/ml | not captured | llm (not captured) | pone-0114049-t005:row4:col1 |
+| PD (effect) | Kdeg_aldo (h−1) — Optimized value | `Q328` · not captured | 18.67 | h−1 | not captured | llm (not captured) | pone-0114049-t005:row5:col1 |
+| PK (driver) | Vapp (l) — Optimized value | `Q61` · not captured | 5.2 | l | not captured | llm (not captured) | pone-0114049-t005:row6:col1 |
+| PD (effect) | IC50GA (µmol/ml) — Optimized value | `Q322` · not captured | 0.000234 | µmol/ml | not captured | llm (not captured) | pone-0114049-t005:row7:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

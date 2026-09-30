@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remifentanil (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Remifentanil effect-site concentration (ng/mL) acts on the binary cough response at tracheal extubation, with an inhibitory EC50 of 1.46 ng/mL in female thyroid surgery patients; with intravenous lidocaine (1.5 mg/kg then 2 mg/kg/h) the EC50 was 0.83 ng/mL, about 40% lower than control (1.40 ng/mL, 95% CI 1.15–1.65). The paper does not give a formal PD model (no Imax/IC50/kin/kout/ke0), but suggests lidocaine reduces airway reactivity by inhibiting excitation of airway C-fiber receptors.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lin_2024`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Lin ZL; Liu L; Shi K; Chen TJ; Chen LM; Cai HD et al. (2024). Drug design, devel
   ·  DOI: [10.2147/DDDT.S496608](https://doi.org/10.2147/DDDT.S496608)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 of remifentanil inhibiting extubation response in female patients undergoing thyroid surgery | `Q321` · not captured | 1.46 | ng/mL | not captured | review_gapfill (not captured) | Lin_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 of remifentanil inhibiting extubation response in female patients undergoing thyroid surgery | `Q321` · not captured | 1.46 | ng/mL | not captured | review_gapfill (not captured) | Lin_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

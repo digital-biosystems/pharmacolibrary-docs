@@ -28,10 +28,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tongluan_2017](drugs/drug_orlistat/pd_Tongluan_2017_unknown.md) | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Steketee_2021](drugs/drug_orlistat/pd_Steketee_2021_unknown.md) | Steketee PC et al., Divergent metabolism between Trypanosom…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009734](https://doi.org/10.1371/journal.ppat.1009734) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Tongluan_2017_unknown](drugs/drug_orlistat/pd_Tongluan_2017_unknown.md) | virus titer ← orlistat · inhibition effect | — | Tongluan N et al., Involvement of fatty acid synthase in d…, Virology journal (2017) | [10.1186/s12985-017-0685-9](https://doi.org/10.1186/s12985-017-0685-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Steketee_2021_unknown](drugs/drug_orlistat/pd_Steketee_2021_unknown.md) | name ← unknown · inhibition effect | — | Steketee PC et al., Divergent metabolism between Trypanosom…, PLoS pathogens (2021) | [10.1371/journal.ppat.1009734](https://doi.org/10.1371/journal.ppat.1009734) |
 
 ## ADME sites
 

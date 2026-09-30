@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopamine (measured concentrations) drives name (in nA): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Octopamine acts as an agonist on the A. mellifera α5 nAChR expressed in Xenopus oocytes, directly eliciting concentration-dependent current responses (nA) fitted with a Hill/Emax equation; its EC50 is 378 (354.3–403.5) µM with a maximum current response at 1 mM of 899% of the response to 5 mM ACh. The paper does not describe any indirect production/elimination mechanism or effect-compartment; this is a direct agonist Emax model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mitchell_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Mitchell EL; Armstrong EB; Viscarra F; Bermudez I; Biggin PC; Goodchild JA; et a
   ·  DOI: [10.1038/s42003-025-09143-z](https://doi.org/10.1038/s42003-025-09143-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Maximum response relative to 5 mM ACh (%) — Acetylcholinea | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | Tab1:row2:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Maximum response relative to 5 mM ACh (%) — Acetylcholinea | `Q320` · not captured | 100 | not captured | not captured | llm (not captured) | Tab1:row2:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dehydroabietic acid (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe pectin or endoglucanase activity; instead it reports that dehydroabietic acid (DHA) concentration-dependently inhibits mycelial growth of Alternaria alternata (80.33% inhibition at 800 mg/L) and spore germination (44.49% and 70.55% inhibition at EC30 and EC50, respectively), with no PD model, mechanism parameters (Imax, IC50, kin, kout, ke0, gamma) or effect-compartment description given; the proposed qualitative mechanism is inhibition of protective antioxidant enzymes (SOD, CAT, POD) and cell membrane disruption.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2025_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

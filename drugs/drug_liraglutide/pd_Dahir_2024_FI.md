@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Carlsson_2021::estimate) drives food intake (in g): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide (0.05–0.4 mg/kg s.c.) inhibits 24-hour food intake (g) in mice in a concentration-dependent manner, analyzed with a sigmoid Emax inhibition model driven by cited PK estimates; the paper does not state the mechanism in PD-model terms (no kin/kout/ke0) and reports no numeric Imax, IC50, EC50, Emax, or gamma values in the excerpts, only that Mc3r–/– mice show hypersensitivity (reduced food intake at 0.05 mg/kg).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dahir_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

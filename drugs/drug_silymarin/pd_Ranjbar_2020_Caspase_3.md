@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives Caspase-3 activity (in fold change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (100 µg/ml, the IC50 from the 48-hr MTT assay) increased caspase-3 activity in Ramos cells in a time-dependent manner (measured at 0, 6, 12 and 24 hr by colorimetric assay, expressed as fold change vs untreated control); the paper reports no PD model, no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values for this response, and no quantitative mechanism beyond apoptosis induction.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ranjbar_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

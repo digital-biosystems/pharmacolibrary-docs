@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetagliptin drives DPP-4 inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cetagliptin (and sitagliptin) plasma concentrations directly inhibit DPP-4 enzyme activity (measured as % inhibition relative to baseline), described by an Emax model with Emax 92.47% (cetagliptin) and 91.68% (sitagliptin) and EC50 5.37 and 6.73 ng/mL, respectively; the paper does not state an indirect production/elimination or effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Zhou C; Zhou S; Wang J; Xie L; Lv Z; Zhao Y; et al. et al. (2024). Frontiers in 
   ·  DOI: [10.3389/fendo.2024.1359407](https://doi.org/10.3389/fendo.2024.1359407)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 1820 | h*% | not captured | llm (not captured) | T3:row4:col1 |
-| AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row4:col2 |
-| AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 1970 | h*% | not captured | llm (not captured) | T3:row4:col3 |
-| AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 2010 | h*% | not captured | llm (not captured) | T3:row10:col1 |
-| AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2090 | h*% | not captured | llm (not captured) | T3:row10:col2 |
-| AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row10:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 1820 | h*% | not captured | llm (not captured) | T3:row4:col1 |
+| PK (driver) | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row4:col2 |
+| PK (driver) | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 1970 | h*% | not captured | llm (not captured) | T3:row4:col3 |
+| PK (driver) | AUEC0-24h (h*%) — Parameters | `Q19` · not captured | 2010 | h*% | not captured | llm (not captured) | T3:row10:col1 |
+| PK (driver) | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2090 | h*% | not captured | llm (not captured) | T3:row10:col2 |
+| PK (driver) | AUEC0-24h (h*%) — Cetagliptin | `Q19` · not captured | 2000 | h*% | not captured | llm (not captured) | T3:row10:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

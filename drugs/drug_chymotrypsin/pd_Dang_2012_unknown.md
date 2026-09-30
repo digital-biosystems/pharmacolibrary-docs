@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 3α-O-pimeloyl-lithocholic acid methyl ester (measured concentrations) drives chymotrypsin-like activity of the proteasome (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 3α-O-pimeloyl-lithocholic acid methyl ester (compound 2) directly stimulates the chymotrypsin-like activity of the 20S proteasome, with an EC50 of 7.8 μM; the paper does not state a quantitative pharmacodynamic model (no Emax, kin, kout, or ke0), and the mechanism is described only as activation distinct from PA28, with compound 2 also antagonizing Aβ1-42 inhibition of the proteasome.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dang_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

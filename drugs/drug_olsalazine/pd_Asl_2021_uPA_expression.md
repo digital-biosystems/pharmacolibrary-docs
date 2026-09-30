@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Olsalazine (measured concentrations) drives name (in fold change) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for uPA expression; olsalazine (concentrations below IC50, tested up to ~300–4000 μM) did not increase uPA expression in MDA-MB-231 cells at 24–48 h, so no effect form, potency (IC50/EC50/Emax) or rate parameters for this response are given. Mechanistically, olsalazine is described as a DNA methyltransferase inhibitor, but the paper states no quantitative PD mechanism for uPA.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Asl_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

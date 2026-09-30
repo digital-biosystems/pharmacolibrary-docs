@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amikacin (concentrations from this paper's PK model) drives bacterial count (in continuous): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Amikacin plasma concentration (mg/liter) acts on bacterial counts (CFU/ml) in a logistic growth model with adaptive resistance: the drug effect DE is an Emax killing term (DE = Emax·Cp/(EC50+Cp)) added to the bacterial death rate, modulated by an adaptive-resistance factor AD = 1 + β[1 − e^(−αCp·t)]; the paper does not state the numeric values of Emax, EC50, α, or β in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alhadab_2018`
 - **model family:** `disease_progression`
 - **driver:** `pk_record`

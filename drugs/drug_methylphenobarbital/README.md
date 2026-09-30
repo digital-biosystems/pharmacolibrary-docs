@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_ACh_binding.md) | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_tenocyclidine_binding.md) | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014](drugs/drug_methylphenobarbital/pd_Hamouda_2014_ACh_induced_currents.md) | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014_3H_ACh_binding](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_ACh_binding.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014_3H_tenocyclidine_binding](drugs/drug_methylphenobarbital/pd_Hamouda_2014_3H_tenocyclidine_binding.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Hamouda_2014_ACh_induced_currents](drugs/drug_methylphenobarbital/pd_Hamouda_2014_ACh_induced_currents.md) | name ← mTFD-MPAB · inhibition effect | — | Hamouda AK et al., Identifying barbiturate binding sites i…, Molecular pharmacology (2014) | [10.1124/mol.113.090985](https://doi.org/10.1124/mol.113.090985) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GPEGPMGLE, EGPFGPEG, GFIGPTE (measured concentrations) drive Catalase (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for catalase (CAT): no drug-concentration–response relationship, mechanism, or potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for CAT are given; only degree-of-hydrolysis values for pepsin (14.93%) and trypsin (16.87%) appear, and the excerpts report only qualitative upregulation of CAT activity by collagen peptides.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Wang WY; Zhao YQ; Zhao GX; Chi CF; Wang B et al. (2020). Marine drugs 18
   ·  DOI: [10.3390/md18030156](https://doi.org/10.3390/md18030156)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
-| Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Pepsin — DH (%) | `Q358` · not captured | 14.93 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row1:col1 |
+| PK (driver) | Trypsin — DH (%) | `Q358` · not captured | 16.87 | not captured | not captured | llm (not captured) | marinedrugs-18-00156-t001:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -23,18 +23,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | — | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kasuya_2013](drugs/drug_diflunisal/pd_Kasuya_2013_unknown.md) | Kasuya F et al., Effect of the non-steroidal anti-inflam…, Journal of enzyme inhibitio… (2013) | [10.3109/14756366.2011.636742](https://doi.org/10.3109/14756366.2011.636742) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Serlin_1980](drugs/drug_diflunisal/pd_Serlin_1980_free_fraction_of_warfarin.md) | Serlin MJ et al., The effect of diflunisal on the steady…, British journal of clinical… (1980) | [10.1111/j.1365-2125.1980.tb04847.x](https://doi.org/10.1111/j.1365-2125.1980.tb04847.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2](drugs/drug_diflunisal/pd_enkarde_2016_2_anti_HCV_activity.md) | Şenkardeş (2016) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2](drugs/drug_diflunisal/pd_enkarde_2016_2_antiproliferative_activity.md) | Şenkardeş (2016) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kasuya_2013_unknown](drugs/drug_diflunisal/pd_Kasuya_2013_unknown.md) | acyl-CoA synthetase activity toward docosahexaenoic acid ← diflunisal · inhibition effect | — | Kasuya F et al., Effect of the non-steroidal anti-inflam…, Journal of enzyme inhibitio… (2013) | [10.3109/14756366.2011.636742](https://doi.org/10.3109/14756366.2011.636742) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Serlin_1980_free_fraction_of_warfarin](drugs/drug_diflunisal/pd_Serlin_1980_free_fraction_of_warfarin.md) | name ← diflunisal · direct linear effect | — | Serlin MJ et al., The effect of diflunisal on the steady…, British journal of clinical… (1980) | [10.1111/j.1365-2125.1980.tb04847.x](https://doi.org/10.1111/j.1365-2125.1980.tb04847.x) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2_anti_HCV_activity](drugs/drug_diflunisal/pd_enkarde_2016_2_anti_HCV_activity.md) | name ← 2',4'-difluoro-4-hydroxy-N'-(2-pyridyl methylidene)biphenyl-3-carbohydrazide 3b · inhibition effect | — | Şenkardeş (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2_antiproliferative_activity](drugs/drug_diflunisal/pd_enkarde_2016_2_antiproliferative_activity.md) | name ← 2',4'-difluoro-4-hydroxy-N'-(2-pyridyl methylidene)biphenyl-3-carbohydrazide 3b · inhibition effect | — | Şenkardeş (2016) | — |
 
 ## ADME sites
 

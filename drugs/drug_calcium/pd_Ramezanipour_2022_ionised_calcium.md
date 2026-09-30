@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cinacalcet drives name (in iCa): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Cinacalcet lowers serum ionised calcium (iCa, mmol/L) in rats, described by an indirect response model in which cinacalcet inhibits the production of iCa (via a fall in endogenous PTH); the paper does not state the mechanism in more detail. Key parameters: kin = 30.3, kout = 0.303, Imax = 0.415, and IC50 = 31.7 (units not stated in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ramezanipour_2022`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,16 +31,16 @@ Ramezanipour N; Esfahani SHZ; Eastell R; Newell-Price J; Trevitt G; Ross RJ; et 
   ·  DOI: [10.1210/endocr/bqab239](https://doi.org/10.1210/endocr/bqab239)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| tvKin — Value | `Q327` · not captured | 30.3 | not captured | not captured | tv_prefix (not captured) | tab_1:row1:col1 |
-| tvKin — CV% | `Q327` · not captured | 138 | not captured | not captured | tv_prefix (not captured) | tab_1:row1:col3 |
-| tvKout — Value | `Q328` · not captured | 0.303 | not captured | not captured | tv_prefix (not captured) | tab_1:row2:col1 |
-| tvKout — CV% | `Q328` · not captured | 133 | not captured | not captured | tv_prefix (not captured) | tab_1:row2:col3 |
-| tvImax — Value | `Q323` · not captured | 0.415 | not captured | not captured | tv_prefix (not captured) | tab_1:row3:col1 |
-| tvImax — CV% | `Q323` · not captured | 139 | not captured | not captured | tv_prefix (not captured) | tab_1:row3:col3 |
-| tvIC50 — Value | `Q322` · not captured | 31.7 | unknown | not captured | tv_prefix (not captured) | tab_1:row4:col1 |
-| tvIC50 — CV% | `Q322` · not captured | 306 | unknown | not captured | tv_prefix (not captured) | tab_1:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | tvKin — Value | `Q327` · not captured | 30.3 | not captured | not captured | tv_prefix (not captured) | tab_1:row1:col1 |
+| PD (effect) | tvKin — CV% | `Q327` · not captured | 138 | not captured | not captured | tv_prefix (not captured) | tab_1:row1:col3 |
+| PD (effect) | tvKout — Value | `Q328` · not captured | 0.303 | not captured | not captured | tv_prefix (not captured) | tab_1:row2:col1 |
+| PD (effect) | tvKout — CV% | `Q328` · not captured | 133 | not captured | not captured | tv_prefix (not captured) | tab_1:row2:col3 |
+| PD (effect) | tvImax — Value | `Q323` · not captured | 0.415 | not captured | not captured | tv_prefix (not captured) | tab_1:row3:col1 |
+| PD (effect) | tvImax — CV% | `Q323` · not captured | 139 | not captured | not captured | tv_prefix (not captured) | tab_1:row3:col3 |
+| PD (effect) | tvIC50 — Value | `Q322` · not captured | 31.7 | unknown | not captured | tv_prefix (not captured) | tab_1:row4:col1 |
+| PD (effect) | tvIC50 — CV% | `Q322` · not captured | 306 | unknown | not captured | tv_prefix (not captured) | tab_1:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

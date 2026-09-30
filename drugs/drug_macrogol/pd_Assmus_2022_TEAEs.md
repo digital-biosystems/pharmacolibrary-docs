@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Emodepside (measured concentrations) drives drug-related treatment-emergent adverse events (in count): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Emodepside plasma Cmax (ng/mL) was linked via binary logistic regression to the probability of drug-related TEAEs of interest (eye and nervous system disorders), with each 1 ng/mL increase in Cmax raising the odds by 0.77% (95% CI 0.47–1.08%) overall, 0.86% (0.53–1.19%) for eye disorders and 0.62% (0.35–0.91%) for nervous system disorders; the paper does not state a mechanistic PD model (no Imax/IC50/Emax/ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Assmus_2022`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

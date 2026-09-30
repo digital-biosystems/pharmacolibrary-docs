@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** JW-98 (measured concentrations) drives tumor volume (in mm3) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model linking JW-98 concentrations to tumor volume; no IC50, Emax, kin, kout or ke0 values are reported. In OVCAR3 xenograft mice, oral JW-98 (100 mg/kg) alone or GMX1778 (30 mg/kg) alone each only modestly (~35%) reduced tumor volume by Day 14, while the combination abrogated tumor growth and caused a significant 70% reduction versus vehicle, attributed mechanistically to disruption of NAD-dependent CtBP dimerization rather than to a quantified concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chougoni_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -16,12 +16,12 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026_review reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kwack_2026_review reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) | 1-compartment, oral | 4 | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhao_2017_rat and occupational population](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | 1-compartment, oral | 4 | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [van_2026_review reference](drugs/toxin_nickel/Nickel_van2026_reference.md) | 2-compartment, IV | 4 | van der Zeeuw SL et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Jia_2026_review reference](drugs/toxin_nickel/Nickel_Jia2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Jia M et al., Population pharmacokinetics of rivaroxa…, European journal of clinica… (2026) | [10.1007/s00228-026-04034-6](https://doi.org/10.1007/s00228-026-04034-6) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Kwack_2026_review reference](drugs/toxin_nickel/Nickel_Kwack2026_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Kwack H et al., PKGPT: Expert-Orchestrated Recursive LL…, Pharmaceutics (2026) | [10.3390/pharmaceutics18040501](https://doi.org/10.3390/pharmaceutics18040501) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Zhao_2017_rat and occupational population](drugs/toxin_nickel/Nickel_Zhao2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Zhao H et al., [Physiologically based toxicokinetic mo…, Wei sheng yan jiu = Journal… (2017) | — |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [van_2026_review reference](drugs/toxin_nickel/Nickel_van2026_reference.md) | ▶ model + simulator | 2-compartment, IV | 4 | van der Zeeuw SL et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01641-5](https://doi.org/10.1007/s40262-026-01641-5) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018) drives Liver Stiffness (in kPa): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism for semaglutide's effect on Liver Stiffness (kPa); it is a meta-analysis using weekly-equivalent semaglutide doses (mg/week) in a linear, inhibitory dose-response framework, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kan_2025`
 - **model family:** `linear`
 - **driver:** `cited_pk`

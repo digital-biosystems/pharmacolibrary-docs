@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remimazolam (measured concentrations) drives Bispectral Index (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Remimazolam plasma concentrations (ng/mL) drive inhibition of the BIS via an effect-compartment inhibitory sigmoid Emax model: BIS = BISbaseline − Imax×CE^Hill/(IC50^Hill+CE^Hill), with effect-compartment concentrations driven by first-order ke0. Reported values: Imax 54.1, IC50 496.4 ng/mL, ke0 1.09 min−1 (Hill estimated with IIV 17%); the paper does not state the final Hill value or Emax/IC50 units beyond ng/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Chen Y; Gong C; Liu F; Jiao Z; Zheng X et al. (2024). Pharmaceutics 16
   ·  DOI: [10.3390/pharmaceutics16091122](https://doi.org/10.3390/pharmaceutics16091122)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IIV_Imax (%) — Shrinkage (%) | `Q318` · not captured | 28 | IIV | not captured | llm (not captured) | pharmaceutics-16-01122-t004:row8:col2 |
-| IIV_HILL (%) — Shrinkage (%) | `Q318` · not captured | 17 | IIV | not captured | llm (not captured) | pharmaceutics-16-01122-t004:row9:col2 |
-| prop RUV pd (%) — Shrinkage (%) | `Q318` · not captured | 4 | RUV | not captured | llm_corrected (not captured) | pharmaceutics-16-01122-t004:row11:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | IIV_Imax (%) — Shrinkage (%) | `Q318` · not captured | 28 | IIV | not captured | llm (not captured) | pharmaceutics-16-01122-t004:row8:col2 |
+| variability | IIV_HILL (%) — Shrinkage (%) | `Q318` · not captured | 17 | IIV | not captured | llm (not captured) | pharmaceutics-16-01122-t004:row9:col2 |
+| variability | prop RUV pd (%) — Shrinkage (%) | `Q318` · not captured | 4 | RUV | not captured | llm_corrected (not captured) | pharmaceutics-16-01122-t004:row11:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

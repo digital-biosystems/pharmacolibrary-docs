@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Varenicline (measured concentrations) drives name (in CAR9-12): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper models varenicline plasma concentrations (ng/mL) as the driver of the binary continuous abstinence rate during weeks 9–12 (CAR9-12) using a categorical (sequential PK–PD) model, but the record contains no PD parameters (no Imax/IC50/EC50/Emax/ke0/gamma) and no excerpts are available, so the mechanism and potency values cannot be stated. Only varenicline PK estimates are given: CL/F 12.5 L/h (RSE 5.06%), V/F 231 L (RSE 5.02%), and ka 0.860 h−1 (RSE 12.3%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fediuk_2021`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -20,22 +30,22 @@ Fediuk DJ; Sweeney K; Sahasrabudhe V; McRae T; Byon W et al. (2021). CPT: pharma
   ·  DOI: [10.1002/psp4.12645](https://doi.org/10.1002/psp4.12645)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F (L/h) — Estimate | `Q27` · not captured | 12.5 | L/h | not captured | exact (not captured) | psp412645-tbl-0003:row1:col1 |
-| CL/F (L/h) — RSE, % | `Q27` · not captured | 5.06 | L/h | not captured | exact (not captured) | psp412645-tbl-0003:row1:col2 |
-| V/F (L) — Estimate | `Q76` · not captured | 231 | L | not captured | exact (not captured) | psp412645-tbl-0003:row6:col1 |
-| V/F (L) — RSE, % | `Q76` · not captured | 5.02 | L | not captured | exact (not captured) | psp412645-tbl-0003:row6:col2 |
-| ka (h−1) — Estimate | `Q49` · not captured | 0.860 | h−1 | not captured | exact (not captured) | psp412645-tbl-0003:row11:col1 |
-| ka (h−1) — RSE, % | `Q49` · not captured | 12.3 | h−1 | not captured | exact (not captured) | psp412645-tbl-0003:row11:col2 |
-| ω2 CL/F — Estimate | `Q358` · not captured | 0.102 | unit | not captured | llm_corrected (not captured) | psp412645-tbl-0003:row12:col1 |
-| ω2 CL/F — RSE, % | `Q27` · not captured | 26.3 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row12:col2 |
-| ω2 ka — Estimate | `Q49` · not captured | 0.174 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row14:col1 |
-| ω2 ka — RSE, % | `Q49` · not captured | 48.5 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row14:col2 |
-| COVCL/F,ka — Estimate | `Q49` · not captured | -0.0582 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row16:col1 |
-| COVCL/F,ka — RSE, % | `Q49` · not captured | 71.0 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row16:col2 |
-| COVV/F,ka — Estimate | `Q49` · not captured | 0.0307 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row17:col1 |
-| COVV/F,ka — RSE, % | `Q49` · not captured | 73.3 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row17:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F (L/h) — Estimate | `Q27` · not captured | 12.5 | L/h | not captured | exact (not captured) | psp412645-tbl-0003:row1:col1 |
+| PK (driver) | CL/F (L/h) — RSE, % | `Q27` · not captured | 5.06 | L/h | not captured | exact (not captured) | psp412645-tbl-0003:row1:col2 |
+| PK (driver) | V/F (L) — Estimate | `Q76` · not captured | 231 | L | not captured | exact (not captured) | psp412645-tbl-0003:row6:col1 |
+| PK (driver) | V/F (L) — RSE, % | `Q76` · not captured | 5.02 | L | not captured | exact (not captured) | psp412645-tbl-0003:row6:col2 |
+| PK (driver) | ka (h−1) — Estimate | `Q49` · not captured | 0.860 | h−1 | not captured | exact (not captured) | psp412645-tbl-0003:row11:col1 |
+| PK (driver) | ka (h−1) — RSE, % | `Q49` · not captured | 12.3 | h−1 | not captured | exact (not captured) | psp412645-tbl-0003:row11:col2 |
+| PK (driver) | ω2 CL/F — Estimate | `Q358` · not captured | 0.102 | unit | not captured | llm_corrected (not captured) | psp412645-tbl-0003:row12:col1 |
+| PK (driver) | ω2 CL/F — RSE, % | `Q27` · not captured | 26.3 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row12:col2 |
+| PK (driver) | ω2 ka — Estimate | `Q49` · not captured | 0.174 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row14:col1 |
+| PK (driver) | ω2 ka — RSE, % | `Q49` · not captured | 48.5 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row14:col2 |
+| PK (driver) | COVCL/F,ka — Estimate | `Q49` · not captured | -0.0582 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row16:col1 |
+| PK (driver) | COVCL/F,ka — RSE, % | `Q49` · not captured | 71.0 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row16:col2 |
+| PK (driver) | COVV/F,ka — Estimate | `Q49` · not captured | 0.0307 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row17:col1 |
+| PK (driver) | COVV/F,ka — RSE, % | `Q49` · not captured | 73.3 | unit | not captured | llm_confirmed (not captured) | psp412645-tbl-0003:row17:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

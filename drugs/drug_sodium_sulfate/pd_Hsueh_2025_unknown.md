@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 12 (measured concentrations) drives TUNEL+ cells (in count/HPF): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Compound 12 concentrations (µm) inhibit the count of TUNEL+ apoptotic cells (count/HPF) via an Emax-type inhibitory relationship; the paper does not state the mechanism for this endpoint, and no IC50, Emax, or gamma values for the TUNEL response are given in the excerpts (compound 12 is described as a PANX1 channel inhibitor, e.g. 93.8% ± 2.3% inhibition of To-Pro-3 uptake and 87.0% ± 2.8% inhibition of PANX1 currents at 3 µm).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hsueh_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

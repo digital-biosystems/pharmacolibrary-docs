@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives CAR target gene expression (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for liquid paraffin; instead, compound 39 (a 3-(1H-1,2,3-triazol-4-yl)imidazo[1,2-a]pyridine derivative) acts as a direct human CAR agonist stimulating CAR target gene expression in humanized PXR/CAR/CYP3A mice after a single i.p. dose and in human hepatocytes. No EC50 or Emax could be determined, as dose–response curves for CAR2/CAR3 activation did not reach a plateau up to 30 μM; the paper gives no kin/kout or ke0 values for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mejdrová_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

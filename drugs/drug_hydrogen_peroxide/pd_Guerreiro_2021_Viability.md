@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** FucoPol (measured concentrations) drives Vero cell metabolic viability (in absorbance): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> FucoPol (0.25% w/v = 2500 µg/mL) protects Vero cell metabolic viability against 300 µM H2O2-induced acute exposure, attenuating the viability decay ~7-fold and enhancing post-stress proliferation ~2.5-fold, presumably via antioxidant (H2O2/Fe3+ species) scavenging, though the paper does not state a formal PD mechanism for the cell model. Hill (sigmoid Emax) fitting of Fe3+-reduction dose–response gave EC50 of 896 µg/mL (ferricyanide) and 602 µg/mL (Fe3+-TPTZ) with positive cooperativity (H 2.52–4.85); no EC50, Emax, kin, kout, or ke0 values are reported for the Vero viability response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guerreiro_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

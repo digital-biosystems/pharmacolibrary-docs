@@ -30,9 +30,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | general linear (no model) | 1 | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | — | general linear (no model) | 1 | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
 
 ## Pharmacogenomics (PGx)
 
@@ -55,8 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `UGT2B7` metabolism | paper PGx gene |
 | metabolism | liver | `UGT2B15` metabolism, `UGT2B7` metabolism | paper PGx gene |
 | metabolism | small intestine | `UGT2B7` metabolism | paper PGx gene |
-
-<sub>Actors without a tissue in the table: AR (target).</sub>
+| target | prostate gland | `AR` target | DrugBank actor |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

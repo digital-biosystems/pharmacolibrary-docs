@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin, canagliflozin, empagliflozin (concentrations from the PK model of Yao_2023::estimates) drive name (in FPG): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> In this PK/PD/end point model, plasma exposures (AUC, ng/mL·h) of dapagliflozin, canagliflozin, and empagliflozin drive fasting plasma glucose (FPG) via a Hill/Emax stimulation of glucose excretion (ΔUGEc biomarker bridging to FPG), with Emax 0.606 and EC50 values of 56.6 (dapagliflozin), 2310 (canagliflozin), and 841 (empagliflozin) ng/mL·h; FPG changes then propagate to HbA1c with turnover rate constants Kfp 0.340 week−1 and Khp 0.240 week−1.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yao_2023`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,47 +31,47 @@ Yao X; Zhou J; Song L; Ren Y; Hu P; Liu D et al. (2023). CPT: pharmacometrics & 
   ·  DOI: [10.1002/psp4.12934](https://doi.org/10.1002/psp4.12934)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (g/(mg/dL)) — Estimates | `Q320` · not captured | 0.606 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row2:col2 |
-| Emax (g/(mg/dL)) — RSE (%) | `Q320` · not captured | 4.40 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row2:col3 |
-| Dapa‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 56.6 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row3:col2 |
-| Dapa‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 27.1 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row3:col3 |
-| Cana‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 2310 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row4:col2 |
-| Cana‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 23.3 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row4:col3 |
-| Empa‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 841 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row5:col2 |
-| Empa‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 30.4 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row5:col3 |
-| σ2 pro — Estimates | `Q315` · not captured | 0.222 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row6:col2 |
-| σ2 add — Estimates | `Q315` · not captured | 0.0646 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row7:col2 |
-| FPGbaseline (mg/dL) — Estimates | `Q100` · not captured | 160 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col2 |
-| FPGbaseline (mg/dL) — RSE (%) | `Q100` · not captured | 1.00 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col3 |
-| FPGbaseline (mg/dL) — IIV (%) | `Q312` · not captured | 5.40 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col4 |
-| Pfmax1 (mg/dL) — Estimates | `Q32` · not captured | 1.45 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col2 |
-| Pfmax1 (mg/dL) — RSE (%) | `Q32` · not captured | 26.0 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col3 |
-| Pfmax1 (mg/dL) — IIV (%) | `Q32` · not captured | 5.74 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col4 |
-| Pfmax3 (mg/dL) — IIV (%) | `Q32` · not captured | 6.83 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row12:col4 |
-| Pfmax4 (mg/dL) — Estimates | `Q32` · not captured | 4.30 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row13:col2 |
-| Pfmax4 (mg/dL) — IIV (%) | `Q32` · not captured | 0.87 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row13:col4 |
-| K fp (week−1) — Estimates | `Q358` · not captured | 0.340 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col2 |
-| K fp (week−1) — RSE (%) | `Q358` · not captured | 55.0 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col3 |
-| K fp (week−1) — IIV (%) | `Q328` · not captured | 42.7 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col4 |
-| σ2 add, FPG — Estimates | `Q315` · not captured | 0.0330 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row17:col2 |
-| HbA1cbaseline (%) — Estimates | `Q100` · not captured | 7.92 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col2 |
-| HbA1cbaseline (%) — RSE (%) | `Q100` · not captured | 1.00 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col3 |
-| HbA1cbaseline (%) — IIV (%) | `Q312` · not captured | 3.90 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col4 |
-| Phmax1 (%) — IIV (%) | `Q312` · not captured | 0.08 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row19:col4 |
-| Phmax3 (%) — IIV (%) | `Q312` · not captured | 0.13 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row21:col4 |
-| Phmax4 (%) — IIV (%) | `Q312` · not captured | 0.20 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row22:col4 |
-| K hp (week−1) — Estimates | `Q358` · not captured | 0.240 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col2 |
-| K hp (week−1) — RSE (%) | `Q358` · not captured | 21.0 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col3 |
-| K hp (week−1) — IIV (%) | `Q358` · not captured | 29.4 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col4 |
-| DIShp (%/100 weeks) — IIV (%) | `Q312` · not captured | 136.7 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row24:col4 |
-| K out (week−1) — Estimates | `Q328` · not captured | 0.200 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col2 |
-| K out (week−1) — RSE (%) | `Q328` · not captured | 3.00 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col3 |
-| K out (week−1) — IIV (%) | `Q328` · not captured | 16.4 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col4 |
-| K in2 (%/week) — Estimates | `Q328` · not captured | 0.500 | %/week | not captured | llm (not captured) | psp412934-tbl-0002:row26:col2 |
-| K in2 (%/week) — RSE (%) | `Q328` · not captured | 5.00 | %/week | not captured | llm (not captured) | psp412934-tbl-0002:row26:col3 |
-| σ2 add, HbA1c — Estimates | `Q315` · not captured | 0.006 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row27:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (g/(mg/dL)) — Estimates | `Q320` · not captured | 0.606 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row2:col2 |
+| PD (effect) | Emax (g/(mg/dL)) — RSE (%) | `Q320` · not captured | 4.40 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row2:col3 |
+| PD (effect) | Dapa‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 56.6 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row3:col2 |
+| PD (effect) | Dapa‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 27.1 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row3:col3 |
+| PD (effect) | Cana‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 2310 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row4:col2 |
+| PD (effect) | Cana‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 23.3 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row4:col3 |
+| PD (effect) | Empa‐EC50 (ng/mL·h) — Estimates | `Q321` · not captured | 841 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row5:col2 |
+| PD (effect) | Empa‐EC50 (ng/mL·h) — RSE (%) | `Q321` · not captured | 30.4 | ng/mL·h | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row5:col3 |
+| variability | σ2 pro — Estimates | `Q315` · not captured | 0.222 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row6:col2 |
+| variability | σ2 add — Estimates | `Q315` · not captured | 0.0646 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row7:col2 |
+| — | FPGbaseline (mg/dL) — Estimates | `Q100` · not captured | 160 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col2 |
+| — | FPGbaseline (mg/dL) — RSE (%) | `Q100` · not captured | 1.00 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col3 |
+| variability | FPGbaseline (mg/dL) — IIV (%) | `Q312` · not captured | 5.40 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row9:col4 |
+| PK (driver) | Pfmax1 (mg/dL) — Estimates | `Q32` · not captured | 1.45 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col2 |
+| PK (driver) | Pfmax1 (mg/dL) — RSE (%) | `Q32` · not captured | 26.0 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col3 |
+| PK (driver) | Pfmax1 (mg/dL) — IIV (%) | `Q32` · not captured | 5.74 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row10:col4 |
+| PK (driver) | Pfmax3 (mg/dL) — IIV (%) | `Q32` · not captured | 6.83 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row12:col4 |
+| PK (driver) | Pfmax4 (mg/dL) — Estimates | `Q32` · not captured | 4.30 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row13:col2 |
+| PK (driver) | Pfmax4 (mg/dL) — IIV (%) | `Q32` · not captured | 0.87 | mg/dL | not captured | llm (not captured) | psp412934-tbl-0002:row13:col4 |
+| PK (driver) | K fp (week−1) — Estimates | `Q358` · not captured | 0.340 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col2 |
+| PK (driver) | K fp (week−1) — RSE (%) | `Q358` · not captured | 55.0 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col3 |
+| PD (effect) | K fp (week−1) — IIV (%) | `Q328` · not captured | 42.7 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row14:col4 |
+| variability | σ2 add, FPG — Estimates | `Q315` · not captured | 0.0330 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row17:col2 |
+| — | HbA1cbaseline (%) — Estimates | `Q100` · not captured | 7.92 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col2 |
+| — | HbA1cbaseline (%) — RSE (%) | `Q100` · not captured | 1.00 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col3 |
+| variability | HbA1cbaseline (%) — IIV (%) | `Q312` · not captured | 3.90 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row18:col4 |
+| variability | Phmax1 (%) — IIV (%) | `Q312` · not captured | 0.08 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row19:col4 |
+| variability | Phmax3 (%) — IIV (%) | `Q312` · not captured | 0.13 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row21:col4 |
+| variability | Phmax4 (%) — IIV (%) | `Q312` · not captured | 0.20 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row22:col4 |
+| PK (driver) | K hp (week−1) — Estimates | `Q358` · not captured | 0.240 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col2 |
+| PK (driver) | K hp (week−1) — RSE (%) | `Q358` · not captured | 21.0 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col3 |
+| PK (driver) | K hp (week−1) — IIV (%) | `Q358` · not captured | 29.4 | week−1 | not captured | llm (not captured) | psp412934-tbl-0002:row23:col4 |
+| variability | DIShp (%/100 weeks) — IIV (%) | `Q312` · not captured | 136.7 | unit | not captured | llm (not captured) | psp412934-tbl-0002:row24:col4 |
+| PD (effect) | K out (week−1) — Estimates | `Q328` · not captured | 0.200 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col2 |
+| PD (effect) | K out (week−1) — RSE (%) | `Q328` · not captured | 3.00 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col3 |
+| PD (effect) | K out (week−1) — IIV (%) | `Q328` · not captured | 16.4 | week−1 | not captured | space_fold (not captured) | psp412934-tbl-0002:row25:col4 |
+| PD (effect) | K in2 (%/week) — Estimates | `Q328` · not captured | 0.500 | %/week | not captured | llm (not captured) | psp412934-tbl-0002:row26:col2 |
+| PD (effect) | K in2 (%/week) — RSE (%) | `Q328` · not captured | 5.00 | %/week | not captured | llm (not captured) | psp412934-tbl-0002:row26:col3 |
+| variability | σ2 add, HbA1c — Estimates | `Q315` · not captured | 0.006 | unit | not captured | llm_confirmed (not captured) | psp412934-tbl-0002:row27:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

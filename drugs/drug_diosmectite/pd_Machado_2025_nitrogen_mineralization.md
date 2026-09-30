@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Satureja montana essential oil drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for nitrogen mineralization: the nanoclay-EO formulation (SM EO + Tween 20 + MMT) showed no significant effect on soil nitrogen mineralization at most tested concentrations, with only a significant stimulatory (not inhibitory) effect at two of the highest concentrations, attributed to phenolic compounds and MMT-enhanced substrate bioavailability. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for this response, and the record's drug (diosmectite) and inhibition direction are not supported by the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Machado_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

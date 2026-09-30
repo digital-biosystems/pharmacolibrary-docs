@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives name (in TCID50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride (CPC) concentrations (μg/mL) directly reduce influenza viral infectivity measured as TCID50, acting as a virucidal agent by disrupting the viral lipid envelope (a physicochemical mechanism independent of viral proteins); the effect occurs within 10 minutes, with EC50 values of 5–12.5 μg/mL for susceptible isolates and 8 μg/mL for both oseltamivir-resistant influenza A and B, and mean EC50/EC2log of 5–20 μg/mL across most strains. No Emax, kin/kout, or ke0 parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Popkin_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

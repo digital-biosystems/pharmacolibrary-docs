@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives beta-arrestin2 recruitment (in fractional response): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> Oliceridine concentration stimulates beta-arrestin2 recruitment (fractional response) via a direct hyperbolic/SABRE concentration-response (Emax-type) model, not a production/elimination turnover mechanism. Reported logEC50,βArr values range from −6.54 to −6.00 with Emax,βArr from 7.5% to 99.2% across McPherson et al. (2010), Hothersall et al. (2017), and Pedersen et al. (2019); Pedersen et al. also report transduction parameters κβArr = 0.058–0.095 (right-shifted, κ&lt;1) and, for the G-protein pathway, κGprt = 14.13–18.62 with γGprt = 15.51.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Buchwald_2023`
 - **model family:** `transduction`
 - **driver:** `not_resolved`
@@ -20,44 +30,44 @@ Buchwald P et al. (2023). Frontiers in pharmacology 14
   ·  DOI: [10.3389/fphar.2023.1274065](https://doi.org/10.3389/fphar.2023.1274065)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.95 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col1 |
-| log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.01 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col2 |
-| log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.72 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col3 |
-| log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.24 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col4 |
-| log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.61 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col5 |
-| log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.17 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col6 |
-| logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.38 | unknown | not captured | llm (not captured) | T1:row5:col1 |
-| logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.49 | unknown | not captured | llm (not captured) | T1:row5:col2 |
-| logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.02 | unknown | not captured | llm (not captured) | T1:row5:col3 |
-| logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.54 | unknown | not captured | llm (not captured) | T1:row5:col4 |
-| logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.10 | unknown | not captured | llm (not captured) | T1:row5:col5 |
-| logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.00 | unknown | not captured | llm (not captured) | T1:row5:col6 |
-| E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 100.0 | not captured | not captured | llm (not captured) | T1:row6:col1 |
-| E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 94.2 | not captured | not captured | llm (not captured) | T1:row6:col2 |
-| E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 96.8 | not captured | not captured | llm (not captured) | T1:row6:col3 |
-| E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 92.9 | not captured | not captured | llm (not captured) | T1:row6:col4 |
-| E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row6:col5 |
-| E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 98.0 | not captured | not captured | llm (not captured) | T1:row6:col6 |
-| E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 99.2 | not captured | not captured | llm (not captured) | T1:row7:col1 |
-| E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 15.2 | not captured | not captured | llm (not captured) | T1:row7:col2 |
-| E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 77.7 | not captured | not captured | llm (not captured) | T1:row7:col3 |
-| E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 7.5 | not captured | not captured | llm (not captured) | T1:row7:col4 |
-| E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row7:col5 |
-| E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 25.0 | not captured | not captured | llm (not captured) | T1:row7:col6 |
-| κGprt — Pedersen et al. (2019) | `Q358` · not captured | 18.62 | not captured | not captured | llm (not captured) | T1:row8:col5 |
-| κGprt — Pedersen et al. (2019) | `Q358` · not captured | 14.13 | not captured | not captured | llm (not captured) | T1:row8:col6 |
-| κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.058 | not captured | not captured | llm (not captured) | T1:row9:col5 |
-| κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.095 | not captured | not captured | llm (not captured) | T1:row9:col6 |
-| γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col5 |
-| γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col6 |
-| γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col5 |
-| γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col6 |
-| κGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.49 | not captured | not captured | llm (not captured) | T1:row14:col5 |
-| κGprt — Pedersen et al. (2019) | `Q358` · not captured | 12.94 | not captured | not captured | llm (not captured) | T1:row14:col6 |
-| κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.06 | not captured | not captured | llm (not captured) | T1:row15:col5 |
-| κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.226 | not captured | not captured | llm (not captured) | T1:row15:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.95 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col1 |
+| PD (effect) | log EC50,Gprt — McPherson et al. (2010) | `Q321` · not captured | -7.01 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col2 |
+| PD (effect) | log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.72 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col3 |
+| PD (effect) | log EC50,Gprt — Hothersall et al. (2017) | `Q321` · not captured | -7.24 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col4 |
+| PD (effect) | log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.61 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col5 |
+| PD (effect) | log EC50,Gprt — Pedersen et al. (2019) | `Q321` · not captured | -8.17 | unknown | not captured | llm_confirmed (not captured) | T1:row4:col6 |
+| PD (effect) | logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.38 | unknown | not captured | llm (not captured) | T1:row5:col1 |
+| PD (effect) | logEC50,βArr — McPherson et al. (2010) | `Q321` · not captured | -6.49 | unknown | not captured | llm (not captured) | T1:row5:col2 |
+| PD (effect) | logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.02 | unknown | not captured | llm (not captured) | T1:row5:col3 |
+| PD (effect) | logEC50,βArr — Hothersall et al. (2017) | `Q321` · not captured | -6.54 | unknown | not captured | llm (not captured) | T1:row5:col4 |
+| PD (effect) | logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.10 | unknown | not captured | llm (not captured) | T1:row5:col5 |
+| PD (effect) | logEC50,βArr — Pedersen et al. (2019) | `Q321` · not captured | -6.00 | unknown | not captured | llm (not captured) | T1:row5:col6 |
+| PD (effect) | E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 100.0 | not captured | not captured | llm (not captured) | T1:row6:col1 |
+| PD (effect) | E max, Gprt — McPherson et al. (2010) | `Q320` · not captured | 94.2 | not captured | not captured | llm (not captured) | T1:row6:col2 |
+| PD (effect) | E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 96.8 | not captured | not captured | llm (not captured) | T1:row6:col3 |
+| PD (effect) | E max, Gprt — Hothersall et al. (2017) | `Q320` · not captured | 92.9 | not captured | not captured | llm (not captured) | T1:row6:col4 |
+| PD (effect) | E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row6:col5 |
+| PD (effect) | E max, Gprt — Pedersen et al. (2019) | `Q320` · not captured | 98.0 | not captured | not captured | llm (not captured) | T1:row6:col6 |
+| PD (effect) | E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 99.2 | not captured | not captured | llm (not captured) | T1:row7:col1 |
+| PD (effect) | E max,βArr — McPherson et al. (2010) | `Q320` · not captured | 15.2 | not captured | not captured | llm (not captured) | T1:row7:col2 |
+| PD (effect) | E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 77.7 | not captured | not captured | llm (not captured) | T1:row7:col3 |
+| PD (effect) | E max,βArr — Hothersall et al. (2017) | `Q320` · not captured | 7.5 | not captured | not captured | llm (not captured) | T1:row7:col4 |
+| PD (effect) | E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 99.0 | not captured | not captured | llm (not captured) | T1:row7:col5 |
+| PD (effect) | E max,βArr — Pedersen et al. (2019) | `Q320` · not captured | 25.0 | not captured | not captured | llm (not captured) | T1:row7:col6 |
+| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 18.62 | not captured | not captured | llm (not captured) | T1:row8:col5 |
+| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 14.13 | not captured | not captured | llm (not captured) | T1:row8:col6 |
+| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.058 | not captured | not captured | llm (not captured) | T1:row9:col5 |
+| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.095 | not captured | not captured | llm (not captured) | T1:row9:col6 |
+| PK (driver) | γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col5 |
+| PK (driver) | γGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.51 | not captured | not captured | llm (not captured) | T1:row11:col6 |
+| PK (driver) | γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col5 |
+| PK (driver) | γβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.059 | not captured | not captured | llm (not captured) | T1:row12:col6 |
+| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 15.49 | not captured | not captured | llm (not captured) | T1:row14:col5 |
+| PK (driver) | κGprt — Pedersen et al. (2019) | `Q358` · not captured | 12.94 | not captured | not captured | llm (not captured) | T1:row14:col6 |
+| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.06 | not captured | not captured | llm (not captured) | T1:row15:col5 |
+| PK (driver) | κβArr — Pedersen et al. (2019) | `Q358` · not captured | 0.226 | not captured | not captured | llm (not captured) | T1:row15:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

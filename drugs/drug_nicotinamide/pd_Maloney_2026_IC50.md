@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AG-670 (measured concentrations) drives SCC-4 cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AG-670 concentration (µM) inhibits SCC-4 cell viability, with an IC50 of 41.8 µM (95% CI: 33.5–65.3) fitted by a four-parameter logistic model; the paper states AG-670 is a direct inhibitor of NNMT enzyme activity (EC50 2.7 µM, 95% CI: 1.4–5.8) but does not describe a specific PD model mechanism linking concentration to viability.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maloney_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

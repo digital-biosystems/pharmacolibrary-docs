@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> MHV370 concentrations inhibit R848-stimulated CD69 expression on human/mouse B cells, attributed to TLR7 inhibition (B cells express TLR7, not TLR8); after a single 5 mg/kg oral dose in mice, CD69 was inhibited for ~8 h and returned to pre-dose levels as blood exposure declined. The paper does not state a PD model or potency values (Imax/IC50/EC50/kin/kout/ke0) specifically for the CD69 response; related TLR7 potencies reported include IC50 of 15 ± 10 nM (Ramos reporter, CL307) and 58 nM (mouse whole blood IFN-α).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

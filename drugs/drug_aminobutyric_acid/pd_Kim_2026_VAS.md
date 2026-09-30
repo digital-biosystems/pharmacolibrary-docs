@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zolpidem (measured concentrations) drives Visual analog scale (in mm): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Zolpidem plasma concentrations (μg/L) act on VAS (mm) via a sigmoid Emax direct response model (an effect-compartment model did not improve fit), with the drug effect added to a linear-spline time-varying baseline and bounded by (100 − VASbaseline). The estimated EC50 was 146 μg/L with a Hill coefficient of 1.92; the paper does not state Emax, kin, kout, or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

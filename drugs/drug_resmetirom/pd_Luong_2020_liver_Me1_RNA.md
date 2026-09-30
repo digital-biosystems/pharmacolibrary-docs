@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the paper, MGL-3196 (resmetirom) concentrations stimulate hepatic THR target gene transcription (e.g., ANGPTL4, CPT1A, DIO1) in Huh-7 cells via THRβ agonism, modeled as a direct stimulatory Emax dose-response; the excerpts do not describe a Me1 RNA endpoint or an indirect production/elimination mechanism. Reported mean EC50 values for MGL-3196 were 508.4 nM (ANGPTL4), 308.0 nM (CPT1A), and 245.8 nM (DIO1), and in the TR-FRET assay its EC50 was 73.1 nM for THRβ versus 993.8 nM for THRα (α:β = 12.8); no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

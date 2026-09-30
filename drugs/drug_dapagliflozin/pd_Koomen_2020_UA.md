@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from the PK model of Kobuchi_2025) drives uric acid (in mg/dL): indirect response — drug inhibits the production of uric acid.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin exposure (AUC0–24, ng·h/mL) was modelled against serum uric acid (mg/dL) in a population PD analysis; the record describes an indirect response model with dapagliflozin inhibiting (proportional effect) the response, while the paper states exposure–response relationships were described by Emax or log-linear functions and does not report UA-specific mechanism parameters (Imax, IC50, kin, kout). The paper notes the UA effect did not approach the maximum, with 10 mg dapagliflozin inducing &lt;10% of the estimated maximum effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

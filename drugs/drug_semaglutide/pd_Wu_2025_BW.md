@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (concentrations from the PK model of Carlsson_2018::base) drives body weight (in kg) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic model or mechanism linking semaglutide concentrations to body weight; it only reports that once-weekly semaglutide (e.g., 2.4 mg) reduces body weight, with predicted placebo-adjusted BW loss plateauing by 120 weeks and reduced dosing frequency (e.g., every 2 weeks) maintaining 72% of the 17% steady-state BW loss. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syzygium aromaticum aqueous extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Syzygium aromaticum aqueous extract (SAAE, µg/mL) concentration-dependently inhibited luminol-amplified chemiluminescence in human neutrophils (resting, fMLF- and PMA-stimulated) with IC50 values of 0.5, 1.5 and 0.5 µg/mL respectively; the paper attributes this inhibition to inhibition of MPO activity (itself inhibited with IC50 0.5 µg/mL), not to effects on NADPH oxidase, superoxide anion or H2O2, though no formal PD model (Imax/Emax, kin/kout, ke0) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chniguir_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

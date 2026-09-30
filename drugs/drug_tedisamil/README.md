@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Wettwer_1998](drugs/drug_tedisamil/pd_Wettwer_1998_transient_outward_current_Ito_amplitude.md) | Wettwer E et al., Mechanism of block by tedisamil of tran…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702110](https://doi.org/10.1038/sj.bjp.0702110) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Zitron_2002](drugs/drug_tedisamil/pd_Zitron_2002_unknown.md) | Zitron E et al., Bertosamil blocks HERG potassium channe…, British journal of pharmaco… (2002) | [10.1038/sj.bjp.0704859](https://doi.org/10.1038/sj.bjp.0704859) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Sarraf_2003](drugs/drug_tedisamil/pd_Sarraf_2003_unknown.md) | Sarraf G et al., Tedisamil and lidocaine enhance each ot…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705373](https://doi.org/10.1038/sj.bjp.0705373) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Wettwer_1998_transient_outward_current_Ito_amplitude](drugs/drug_tedisamil/pd_Wettwer_1998_transient_outward_current_Ito_amplitude.md) | name ← tedisamil · inhibition effect | — | Wettwer E et al., Mechanism of block by tedisamil of tran…, British journal of pharmaco… (1998) | [10.1038/sj.bjp.0702110](https://doi.org/10.1038/sj.bjp.0702110) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Zitron_2002_unknown](drugs/drug_tedisamil/pd_Zitron_2002_unknown.md) | HERG tail current ← bertosamil · direct sigmoid Emax (Hill) effect | — | Zitron E et al., Bertosamil blocks HERG potassium channe…, British journal of pharmaco… (2002) | [10.1038/sj.bjp.0704859](https://doi.org/10.1038/sj.bjp.0704859) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Sarraf_2003_unknown](drugs/drug_tedisamil/pd_Sarraf_2003_unknown.md) | ischaemia-induced arrhythmias ← tedisamil · inhibition effect | — | Sarraf G et al., Tedisamil and lidocaine enhance each ot…, British journal of pharmaco… (2003) | [10.1038/sj.bjp.0705373](https://doi.org/10.1038/sj.bjp.0705373) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

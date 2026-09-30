@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-BA (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> PEG-BA (µM concentrations, tested at 1, 1.7 and 4 µM around the IC50) induces dose-dependent apoptosis in MIA PaCa-2 pancreatic cancer cells, measured by Annexin V-FITC/PI flow cytometry; at 4 µM PEG-BA gave 88.03 ± 6.5% apoptosis (mainly late apoptosis), versus 31.43 ± 16.7% for BA. The paper does not state a pharmacodynamic model or parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma); mechanistically it attributes the effect to BA-mediated suppression of NF-kB activation via IkB inhibition and mitochondrial membrane permeabilisation activating caspase 3.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fru_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

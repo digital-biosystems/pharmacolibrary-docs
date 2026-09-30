@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol (μM concentrations) acts on Bcl-2 expression in HL-60 AML cells, with an inhibitory direction; the excerpts do not state the PD mechanism or any potency/rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this response. Related viability IC50 values in HL-60, Kasumi-1 and U937 cells were 40.32, 56.68 and 50.69 μM, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

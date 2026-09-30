@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thrombin (measured concentrations) drives de-stacked peak area percentage (in %) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Thrombin concentrations (nM) are related to a measured de-stacked peak area percentage (%), with reported binding affinities Kd of 33.4 nM overall and 37.6–50.1 nM in capillary electrophoresis experiments with 3 s and 5 s injections; the excerpts provide no mechanism (e.g., production/elimination inhibition or Emax form) and no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `De_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ De Silva M; Aruna S; Samarakoon B; Whelan RJ et al. (2025). Journal of separatio
   ·  DOI: [10.1002/jssc.70288](https://doi.org/10.1002/jssc.70288)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| K d (nM) | `Q331` · not captured | 33.4 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col1 |
-| K d (nM) — CE (3 s injection) | `Q331` · not captured | 38.2 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col2 |
-| K d (nM) — CE (3 s injection) | `Q331` · not captured | 37.6 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col3 |
-| K d (nM) — CE (5 s injection) | `Q331` · not captured | 50.1 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col4 |
-| K d (nM) — CE (5 s injection) | `Q331` · not captured | 45.4 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | K d (nM) | `Q331` · not captured | 33.4 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col1 |
+| PD (effect) | K d (nM) — CE (3 s injection) | `Q331` · not captured | 38.2 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col2 |
+| PD (effect) | K d (nM) — CE (3 s injection) | `Q331` · not captured | 37.6 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col3 |
+| PD (effect) | K d (nM) — CE (5 s injection) | `Q331` · not captured | 50.1 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col4 |
+| PD (effect) | K d (nM) — CE (5 s injection) | `Q331` · not captured | 45.4 | nM | not captured | space_fold (not captured) | jssc70288-tbl-0001:row3:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

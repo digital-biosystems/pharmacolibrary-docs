@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Conjugate A4 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Albumin–drug conjugates (AVM, A1–A6) inhibit cell viability of SKBR3, SKOV3 and NCI-N87 cells in 96 h exposure assays, with EC50 values reported per conjugate and cell line (e.g. A4: 23.39, 71.78 and 98.09 nM; AVM: 77.61, 286.00 and 376.10 nM), the paper not stating a mechanistic PD model (no Imax/kin/kout/ke0). In vivo, AVM and A4 dosed at 33 mg/kg (Days 0, 4, 7) significantly inhibited NCI-N87 xenograft tumor volume, while 17 mg/kg showed no significant difference.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yi_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,32 +30,32 @@ Yi C; Xie F; Xu X; Xiao D; Zhou X; Cheng M et al. (2023). Drug delivery 30
   ·  DOI: [10.1080/10717544.2023.2219433](https://doi.org/10.1080/10717544.2023.2219433)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (nM) — AVM | `Q321` · not captured | 77.61 | nM | not captured | exact (not captured) | t0002:row0:col3 |
-| EC50 (nM) — A1 | `Q321` · not captured | 72.25 | nM | not captured | exact (not captured) | t0002:row0:col4 |
-| EC50 (nM) — A2 | `Q321` · not captured | 43.55 | nM | not captured | exact (not captured) | t0002:row0:col5 |
-| EC50 (nM) — A3 | `Q321` · not captured | 40.38 | nM | not captured | exact (not captured) | t0002:row0:col6 |
-| EC50 (nM) — A4 | `Q321` · not captured | 23.39 | nM | not captured | exact (not captured) | t0002:row0:col7 |
-| EC50 (nM) — A5 | `Q321` · not captured | 107.20 | nM | not captured | exact (not captured) | t0002:row0:col8 |
-| EC50 (nM) — A6 | `Q321` · not captured | 114.50 | nM | not captured | exact (not captured) | t0002:row0:col9 |
-| EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row1:col3 |
-| EC50 (nM) — AVM | `Q321` · not captured | 286.00 | nM | not captured | exact (not captured) | t0002:row2:col3 |
-| EC50 (nM) — A1 | `Q321` · not captured | 242.00 | nM | not captured | exact (not captured) | t0002:row2:col4 |
-| EC50 (nM) — A2 | `Q321` · not captured | 130.90 | nM | not captured | exact (not captured) | t0002:row2:col5 |
-| EC50 (nM) — A3 | `Q321` · not captured | 115.60 | nM | not captured | exact (not captured) | t0002:row2:col6 |
-| EC50 (nM) — A4 | `Q321` · not captured | 71.78 | nM | not captured | exact (not captured) | t0002:row2:col7 |
-| EC50 (nM) — A5 | `Q321` · not captured | 357.10 | nM | not captured | exact (not captured) | t0002:row2:col8 |
-| EC50 (nM) — A6 | `Q321` · not captured | 456.60 | nM | not captured | exact (not captured) | t0002:row2:col9 |
-| EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row3:col3 |
-| EC50 (nM) — AVM | `Q321` · not captured | 376.10 | nM | not captured | exact (not captured) | t0002:row4:col3 |
-| EC50 (nM) — A1 | `Q321` · not captured | 322.60 | nM | not captured | exact (not captured) | t0002:row4:col4 |
-| EC50 (nM) — A2 | `Q321` · not captured | 233.50 | nM | not captured | exact (not captured) | t0002:row4:col5 |
-| EC50 (nM) — A3 | `Q321` · not captured | 163.90 | nM | not captured | exact (not captured) | t0002:row4:col6 |
-| EC50 (nM) — A4 | `Q321` · not captured | 98.09 | nM | not captured | exact (not captured) | t0002:row4:col7 |
-| EC50 (nM) — A5 | `Q321` · not captured | 524.80 | nM | not captured | exact (not captured) | t0002:row4:col8 |
-| EC50 (nM) — A6 | `Q321` · not captured | 541.20 | nM | not captured | exact (not captured) | t0002:row4:col9 |
-| EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row5:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 77.61 | nM | not captured | exact (not captured) | t0002:row0:col3 |
+| PD (effect) | EC50 (nM) — A1 | `Q321` · not captured | 72.25 | nM | not captured | exact (not captured) | t0002:row0:col4 |
+| PD (effect) | EC50 (nM) — A2 | `Q321` · not captured | 43.55 | nM | not captured | exact (not captured) | t0002:row0:col5 |
+| PD (effect) | EC50 (nM) — A3 | `Q321` · not captured | 40.38 | nM | not captured | exact (not captured) | t0002:row0:col6 |
+| PD (effect) | EC50 (nM) — A4 | `Q321` · not captured | 23.39 | nM | not captured | exact (not captured) | t0002:row0:col7 |
+| PD (effect) | EC50 (nM) — A5 | `Q321` · not captured | 107.20 | nM | not captured | exact (not captured) | t0002:row0:col8 |
+| PD (effect) | EC50 (nM) — A6 | `Q321` · not captured | 114.50 | nM | not captured | exact (not captured) | t0002:row0:col9 |
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row1:col3 |
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 286.00 | nM | not captured | exact (not captured) | t0002:row2:col3 |
+| PD (effect) | EC50 (nM) — A1 | `Q321` · not captured | 242.00 | nM | not captured | exact (not captured) | t0002:row2:col4 |
+| PD (effect) | EC50 (nM) — A2 | `Q321` · not captured | 130.90 | nM | not captured | exact (not captured) | t0002:row2:col5 |
+| PD (effect) | EC50 (nM) — A3 | `Q321` · not captured | 115.60 | nM | not captured | exact (not captured) | t0002:row2:col6 |
+| PD (effect) | EC50 (nM) — A4 | `Q321` · not captured | 71.78 | nM | not captured | exact (not captured) | t0002:row2:col7 |
+| PD (effect) | EC50 (nM) — A5 | `Q321` · not captured | 357.10 | nM | not captured | exact (not captured) | t0002:row2:col8 |
+| PD (effect) | EC50 (nM) — A6 | `Q321` · not captured | 456.60 | nM | not captured | exact (not captured) | t0002:row2:col9 |
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row3:col3 |
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 376.10 | nM | not captured | exact (not captured) | t0002:row4:col3 |
+| PD (effect) | EC50 (nM) — A1 | `Q321` · not captured | 322.60 | nM | not captured | exact (not captured) | t0002:row4:col4 |
+| PD (effect) | EC50 (nM) — A2 | `Q321` · not captured | 233.50 | nM | not captured | exact (not captured) | t0002:row4:col5 |
+| PD (effect) | EC50 (nM) — A3 | `Q321` · not captured | 163.90 | nM | not captured | exact (not captured) | t0002:row4:col6 |
+| PD (effect) | EC50 (nM) — A4 | `Q321` · not captured | 98.09 | nM | not captured | exact (not captured) | t0002:row4:col7 |
+| PD (effect) | EC50 (nM) — A5 | `Q321` · not captured | 524.80 | nM | not captured | exact (not captured) | t0002:row4:col8 |
+| PD (effect) | EC50 (nM) — A6 | `Q321` · not captured | 541.20 | nM | not captured | exact (not captured) | t0002:row4:col9 |
+| PD (effect) | EC50 (nM) — AVM | `Q321` · not captured | 1.0 | nM | not captured | exact (not captured) | t0002:row5:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Palbociclib (measured concentrations) drives name (in ANC): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> Palbociclib plasma concentration (nM) drives a semi-mechanistic (Friberg-type) myelosuppression model of ANC, in which palbociclib inhibits proliferating bone marrow stem cell production of neutrophils (cytostatic effect) with potency described by IC50 (nM) and Hill coefficient n; the model includes kin (1/days), kbp (1/days, mean transit time 4/kbp), kout (1/days), and KM (10^3/µL) for G-CSF feedback, but the paper excerpts do not report the numeric values of these parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Panetta_2024`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`

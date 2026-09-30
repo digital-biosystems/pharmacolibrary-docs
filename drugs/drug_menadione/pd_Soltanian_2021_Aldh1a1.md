@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cisplatin (measured concentrations) drives Aldh1a1 (in fold-change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for Aldh1a1; it only states that menadione treatment reduced Aldh1a1 mRNA expression (fold-change, normalized to Gapdh) by 97% in A549 cells, with no mechanism, Imax/IC50/EC50/Emax, kin/kout, or ke0 values given for this response (menadione's growth-inhibition IC50 was 16 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Soltanian_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

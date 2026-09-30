@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II drives name (in InsP3) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II (10^-9 to 10^-7 M) stimulates inositol triphosphate (InsP3) production in rat anterior pituitary cells via AT1 receptor activation of PLC; after a 10-min pretreatment with 10^-7 M ANG II, InsP3 production in response to a second ANG II stimulus was reduced (homologous desensitization), while basal InsP3 levels were elevated (52.65 vs 32.63 cpm/g DNA). The paper does not report a formal PD model (no Imax/IC50/EC50/kin/kout values) for the InsP3 response; desensitization EC50 values are given only for the [Ca2+]i response (1.1 nM for desensitization, 2.3 nM for peak amplitude).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `González_2001`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

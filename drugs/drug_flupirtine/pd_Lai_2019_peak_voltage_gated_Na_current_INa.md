@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Perampanel (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Perampanel (PER) concentration-dependently suppresses peak voltage-gated Na+ current (INa) in mHippoE-14 cells with a direct inhibitory (Emax/IC50) relationship, IC50 = 4.12 μM for peak INa (0.78 μM for late INa); the paper does not state Emax, nH, or kinetic (kin/kout/ke0) values. The record's drug field (flupirtine) is inconsistent with the paper, which describes PER as the inhibitor; flupirtine only attenuated PER's suppression of IK(M).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lai_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

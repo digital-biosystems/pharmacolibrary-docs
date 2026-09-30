@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Guanabenz (measured concentrations) drives name (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Hallucinations in pediatric VWM patients receiving guanabenz were described by a Weibull cumulative hazard model (λ = 0.0276) in which the hazard was associated with estimated brain guanabenz Cmax on day 1 (hazard ratio β = 0.53) and with the maximum MAP decrease on day 1 (β = 1.07); the paper does not state a direct Emax/IC50-type mechanism for hallucinations — the effect-compartment Emax model (EC50,BL 1.31 µg/L, ke 0.21 h⁻¹, tolerance via increasing EC50, TOL 0.43) was developed for MAP as a biomarker of brain guanabenz concentration, whose metrics were then linked to hallucination occurrence.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Franken_2026`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`
@@ -20,21 +30,21 @@ Franken LG; van Lieshout B; Eugenio J; Verbeek R; Voermans M; van den Berg E; Be
   ·  DOI: [10.1038/s41598-026-47959-9](https://doi.org/10.1038/s41598-026-47959-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Parameter | `Q320` · not captured | 0.797 | not captured | not captured | exact (not captured) | Tab3:row2:col1 |
-| Emax — Estimate | `Q320` · not captured | 15.7 | not captured | not captured | exact (not captured) | Tab3:row2:col2 |
-| EC50,BL (µg/L) — Parameter | `Q321` · not captured | 1.31 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row3:col1 |
-| EC50,BL (µg/L) — Estimate | `Q321` · not captured | 29.7 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row3:col2 |
-| ke (h−) — Parameter | `Q47` · not captured | 0.21 | h− | not captured | exact (not captured) | Tab3:row4:col1 |
-| ke (h−) — Estimate | `Q47` · not captured | 30.8 | h− | not captured | exact (not captured) | Tab3:row4:col2 |
-| TOL — Parameter | `Q337` · not captured | 0.43 | not captured | not captured | llm (not captured) | Tab3:row5:col1 |
-| CV% MAPBL [shr%] — Estimate | `Q318` · not captured | 19.1 | not captured | not captured | llm (not captured) | Tab3:row6:col2 |
-| CV% EC50 [shr%] — Estimate | `Q321` · not captured | 41.3 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row7:col2 |
-| CV% ke [shr%] — Estimate | `Q47` · not captured | 22.6 | not captured | not captured | llm_confirmed (not captured) | Tab3:row8:col2 |
-| CV% proportional error [shr%] — Estimate | `Q316` · not captured | 6.2 | not captured | not captured | llm_confirmed (not captured) | Tab3:row9:col2 |
-| Additive error [shr%] — Estimate | `Q317` · not captured | 15.3 | not captured | not captured | llm_confirmed (not captured) | Tab3:row10:col2 |
-| λ — Parameter | `Q47` · not captured | 0.0276 | not captured | not captured | exact (not captured) | Tab3:row13:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Parameter | `Q320` · not captured | 0.797 | not captured | not captured | exact (not captured) | Tab3:row2:col1 |
+| PD (effect) | Emax — Estimate | `Q320` · not captured | 15.7 | not captured | not captured | exact (not captured) | Tab3:row2:col2 |
+| PD (effect) | EC50,BL (µg/L) — Parameter | `Q321` · not captured | 1.31 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row3:col1 |
+| PD (effect) | EC50,BL (µg/L) — Estimate | `Q321` · not captured | 29.7 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row3:col2 |
+| PK (driver) | ke (h−) — Parameter | `Q47` · not captured | 0.21 | h− | not captured | exact (not captured) | Tab3:row4:col1 |
+| PK (driver) | ke (h−) — Estimate | `Q47` · not captured | 30.8 | h− | not captured | exact (not captured) | Tab3:row4:col2 |
+| PD (effect) | TOL — Parameter | `Q337` · not captured | 0.43 | not captured | not captured | llm (not captured) | Tab3:row5:col1 |
+| variability | CV% MAPBL [shr%] — Estimate | `Q318` · not captured | 19.1 | not captured | not captured | llm (not captured) | Tab3:row6:col2 |
+| PD (effect) | CV% EC50 [shr%] — Estimate | `Q321` · not captured | 41.3 | µg/L | not captured | llm_confirmed (not captured) | Tab3:row7:col2 |
+| PK (driver) | CV% ke [shr%] — Estimate | `Q47` · not captured | 22.6 | not captured | not captured | llm_confirmed (not captured) | Tab3:row8:col2 |
+| variability | CV% proportional error [shr%] — Estimate | `Q316` · not captured | 6.2 | not captured | not captured | llm_confirmed (not captured) | Tab3:row9:col2 |
+| variability | Additive error [shr%] — Estimate | `Q317` · not captured | 15.3 | not captured | not captured | llm_confirmed (not captured) | Tab3:row10:col2 |
+| PK (driver) | λ — Parameter | `Q47` · not captured | 0.0276 | not captured | not captured | exact (not captured) | Tab3:row13:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

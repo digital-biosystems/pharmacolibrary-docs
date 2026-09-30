@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remifentanil (measured concentrations) drives cardiovascular response to tracheal intubation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Remifentanil effect-site/infusion concentrations (ng/mL) were titrated (Dixon up-and-down, probit regression) against the binary cardiovascular response to tracheal intubation (≥15% change in HR or MAP), with IV bolus oliceridine 0.015 or 0.03 mg/kg given before induction; the paper does not state a mechanistic PD model (no Emax/IC50/kin/kout/ke0), only that oliceridine reduced the EC50 of remifentanil for inhibiting the intubation response from 3.728 ng/mL (95% CI 3.536–3.943) in controls to 3.045 ng/mL (95% CI 2.852–3.239) with 0.015 mg/kg oliceridine (high-dose EC50 not reported in the excerpts), versus 2.824 ng/mL (95% CI 2.620–3.015) with sufentanil 0.15 μg/kg.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Zhao Z; Ge L; Wang X; Wang X; Huang J; Xiao Y; et al. et al. (2026). Drug design
   ·  DOI: [10.2147/DDDT.S571007](https://doi.org/10.2147/DDDT.S571007)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| PACU — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row1:col4 |
-| PACU — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row1:col5 |
-| Hoarseness n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row2:col4 |
-| Hoarseness n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.251 | not captured | not captured | llm (not captured) | t0002:row2:col5 |
-| Sore throat n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 12 | not captured | not captured | llm (not captured) | t0002:row3:col4 |
-| Sore throat n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.194 | not captured | not captured | llm (not captured) | t0002:row3:col5 |
-| Difficulty pronouncing n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | t0002:row4:col4 |
-| Postoperative 24 h — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row5:col4 |
-| Postoperative 24 h — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 3 | not captured | not captured | llm (not captured) | t0002:row5:col5 |
-| Hoarseness n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row6:col4 |
-| Hoarseness n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.101 | not captured | not captured | llm (not captured) | t0002:row6:col5 |
-| Sore throat n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 13 | not captured | not captured | llm (not captured) | t0002:row7:col4 |
-| Sore throat n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.636 | not captured | not captured | llm (not captured) | t0002:row7:col5 |
-| Difficulty pronouncing n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | t0002:row8:col4 |
-| Difficulty pronouncing n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.102 | not captured | not captured | llm (not captured) | t0002:row8:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | PACU — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row1:col4 |
+| — | PACU — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row1:col5 |
+| — | Hoarseness n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row2:col4 |
+| — | Hoarseness n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.251 | not captured | not captured | llm (not captured) | t0002:row2:col5 |
+| — | Sore throat n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 12 | not captured | not captured | llm (not captured) | t0002:row3:col4 |
+| — | Sore throat n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.194 | not captured | not captured | llm (not captured) | t0002:row3:col5 |
+| — | Difficulty pronouncing n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | t0002:row4:col4 |
+| — | Postoperative 24 h — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row5:col4 |
+| — | Postoperative 24 h — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 3 | not captured | not captured | llm (not captured) | t0002:row5:col5 |
+| — | Hoarseness n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 1 | not captured | not captured | llm (not captured) | t0002:row6:col4 |
+| — | Hoarseness n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.101 | not captured | not captured | llm (not captured) | t0002:row6:col5 |
+| — | Sore throat n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 13 | not captured | not captured | llm (not captured) | t0002:row7:col4 |
+| — | Sore throat n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.636 | not captured | not captured | llm (not captured) | t0002:row7:col5 |
+| — | Difficulty pronouncing n (%) — Oliceridine0.015 mg/kg Group | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | t0002:row8:col4 |
+| — | Difficulty pronouncing n (%) — Oliceridine0.03 mg/kg Group | `Q100` · not captured | 0.102 | not captured | not captured | llm (not captured) | t0002:row8:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

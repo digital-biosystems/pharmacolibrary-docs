@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Retinol (concentrations from the PK model of Adams_1995::4_hpr) drives fluorescence emission (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Retinol (nM) binding to purified ErRBP1 (500 nM) increases retinol fluorescence emission at 485 nm (with a corresponding decrease in tryptophan fluorescence at 340 nm via FRET), a direct binding effect; the paper does not state an Emax/IC50/EC50 or other model parameters, so potency and rate values are not available.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yee_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`

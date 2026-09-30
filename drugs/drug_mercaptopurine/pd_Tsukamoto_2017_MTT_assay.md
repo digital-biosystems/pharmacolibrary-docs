@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Azathioprine drives cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In an MTT cell-viability assay, 6-mercaptopurine (and other anticancer drugs) were applied at concentrations up to 100 μM for 72 h, and viability (percent of control) was inhibited in a concentration-dependent manner; the paper reports an EC50 of 1.9 μM for 6-mercaptopurine but does not describe a specific PD mechanism or model beyond this direct inhibitory concentration–response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsukamoto_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,37 +31,37 @@ Tsukamoto M; Sato S; Satake K; Miyake M; Nakagawa H et al. (2017). International
   ·  DOI: [10.3390/ijms18071435](https://doi.org/10.3390/ijms18071435)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 — ATRA (μM) | `Q321` · not captured | 40.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col3 |
-| EC50 — Azathioprine (μM) | `Q321` · not captured | 4.2 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col4 |
-| EC50 — Etoposide (nM) | `Q321` · not captured | 204.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col5 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 7.7 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col6 |
-| EC50 — 6-Mercaptopurine (μM) | `Q321` · not captured | 1.9 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col7 |
-| EC50 — SN-38 (nM) | `Q321` · not captured | 8.7 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col8 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 2.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 42.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col3 |
-| EC50 — Etoposide (nM) | `Q321` · not captured | 256.6 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col5 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 6.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 1.6 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 43.4 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col3 |
-| EC50 — Etoposide (nM) | `Q321` · not captured | 210.3 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col5 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 11.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 2.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 48.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col3 |
-| EC50 — Etoposide (nM) | `Q321` · not captured | 254.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col5 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 4.5 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 2.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 40.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col3 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 11.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 2.3 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 41.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col3 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 4.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 1.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col9 |
-| EC50 — ATRA (μM) | `Q321` · not captured | 42.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col3 |
-| EC50 — Etoposide (nM) | `Q321` · not captured | 208.4 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col5 |
-| EC50 — 5-FU (μM) | `Q321` · not captured | 5.9 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col6 |
-| EC50 — Vincristine (nM) | `Q321` · not captured | 1.7 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col9 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 40.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col3 |
+| PD (effect) | EC50 — Azathioprine (μM) | `Q321` · not captured | 4.2 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col4 |
+| PD (effect) | EC50 — Etoposide (nM) | `Q321` · not captured | 204.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col5 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 7.7 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col6 |
+| PD (effect) | EC50 — 6-Mercaptopurine (μM) | `Q321` · not captured | 1.9 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col7 |
+| PD (effect) | EC50 — SN-38 (nM) | `Q321` · not captured | 8.7 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col8 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 2.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row0:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 42.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col3 |
+| PD (effect) | EC50 — Etoposide (nM) | `Q321` · not captured | 256.6 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col5 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 6.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 1.6 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row1:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 43.4 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col3 |
+| PD (effect) | EC50 — Etoposide (nM) | `Q321` · not captured | 210.3 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col5 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 11.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 2.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row2:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 48.1 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col3 |
+| PD (effect) | EC50 — Etoposide (nM) | `Q321` · not captured | 254.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col5 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 4.5 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 2.1 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row3:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 40.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col3 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 11.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 2.3 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row4:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 41.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col3 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 4.3 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 1.9 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row5:col9 |
+| PD (effect) | EC50 — ATRA (μM) | `Q321` · not captured | 42.0 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col3 |
+| PD (effect) | EC50 — Etoposide (nM) | `Q321` · not captured | 208.4 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col5 |
+| PD (effect) | EC50 — 5-FU (μM) | `Q321` · not captured | 5.9 | μM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col6 |
+| PD (effect) | EC50 — Vincristine (nM) | `Q321` · not captured | 1.7 | nM | not captured | exact (not captured) | ijms-18-01435-t002:row6:col9 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

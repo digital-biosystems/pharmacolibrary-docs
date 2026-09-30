@@ -19,10 +19,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Demarque_2018](drugs/drug_cascara/pd_Demarque_2018_apoptosis.md) | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Demarque_2018](drugs/drug_cascara/pd_Demarque_2018_cell_viability.md) | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Demarque_2018_apoptosis](drugs/drug_cascara/pd_Demarque_2018_apoptosis.md) | name ← cascarosides · inhibition effect | — | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Demarque_2018_cell_viability](drugs/drug_cascara/pd_Demarque_2018_cell_viability.md) | name ← cascarosides · inhibition effect | — | Demarque DP et al., Cytotoxicity of Structurally Diverse An…, Journal of pharmacy & pharm… (2018) | [10.18433/jpps30077](https://doi.org/10.18433/jpps30077) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

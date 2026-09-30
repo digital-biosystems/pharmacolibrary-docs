@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salbutamol (concentrations from this paper's PK model) drives heart rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Salbutamol plasma concentrations (ng/ml) were linked to heart rate in a sequential population PKPD analysis (two-compartment PK, Emax stimulation model); the paper states only that heart rate increased with salbutamol concentrations and does not report the HR model's mechanism details or any parameter values (EC50, Emax, Hill) for heart rate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2023`
 - **model family:** `emax`
 - **driver:** `pk_record`

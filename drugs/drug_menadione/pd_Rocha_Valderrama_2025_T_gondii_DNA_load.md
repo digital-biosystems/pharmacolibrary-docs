@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 6-nitrocoumarin-3-thiosemicarbazone derivatives (specifically compound 7 for T. cruzi and compound 1 for T. gondii) (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Compound 7 (a 6-nitrocoumarin-3-thiosemicarbazone derivative) reduced T. cruzi parasite DNA load in infected trophoblast cells by more than 50% at its IC50 of 22.4 µM (CC50 128.6 µM in EA.hy926 and 277.9 µM in BeWo cells), while compound 1 inhibited T. gondii with IC50 17.3 µM (CC50 386.9 µM in BeWo cells); the paper does not state a formal PD model or mechanism, suggesting only possible inhibition of invasion/virulence or impaired parasite energy metabolism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rocha-Valderrama_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,17 +30,17 @@ Rocha-Valderrama E; Rostán S; Fernández M; Liempi A; Castillo C; Mahler G; Gal
   ·  DOI: [10.1128/aac.00454-25](https://doi.org/10.1128/aac.00454-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 7 — IC50T. cruzi (μM) | `Q322` · not captured | 22.4 | μM | not captured | llm (not captured) | T4:row1:col1 |
-| 7 — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 128.6 | μM | not captured | llm (not captured) | T4:row1:col3 |
-| 7 — CC50 BeWo cells (μM) | `Q322` · not captured | 277.9 | μM | not captured | llm (not captured) | T4:row1:col4 |
-| NFX — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 348.5 | μM | not captured | llm (not captured) | T4:row2:col3 |
-| 1 — IC50T. gondii (μM) | `Q322` · not captured | 17.3 | μM | not captured | llm (not captured) | T4:row3:col2 |
-| 1 — CC50 BeWo cells (μM) | `Q322` · not captured | 386.9 | μM | not captured | llm (not captured) | T4:row3:col4 |
-| PMN — IC50T. gondii (μM) | `Q322` · not captured | 20.8 | μM | not captured | llm (not captured) | T4:row4:col2 |
-| PMN — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 287.5 | μM | not captured | llm (not captured) | T4:row4:col3 |
-| PMN — CC50 BeWo cells (μM) | `Q322` · not captured | 125.5 | μM | not captured | llm (not captured) | T4:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 7 — IC50T. cruzi (μM) | `Q322` · not captured | 22.4 | μM | not captured | llm (not captured) | T4:row1:col1 |
+| PD (effect) | 7 — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 128.6 | μM | not captured | llm (not captured) | T4:row1:col3 |
+| PD (effect) | 7 — CC50 BeWo cells (μM) | `Q322` · not captured | 277.9 | μM | not captured | llm (not captured) | T4:row1:col4 |
+| PD (effect) | NFX — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 348.5 | μM | not captured | llm (not captured) | T4:row2:col3 |
+| PD (effect) | 1 — IC50T. gondii (μM) | `Q322` · not captured | 17.3 | μM | not captured | llm (not captured) | T4:row3:col2 |
+| PD (effect) | 1 — CC50 BeWo cells (μM) | `Q322` · not captured | 386.9 | μM | not captured | llm (not captured) | T4:row3:col4 |
+| PD (effect) | PMN — IC50T. gondii (μM) | `Q322` · not captured | 20.8 | μM | not captured | llm (not captured) | T4:row4:col2 |
+| PD (effect) | PMN — CC50 EA.hy926 cells (μM) | `Q322` · not captured | 287.5 | μM | not captured | llm (not captured) | T4:row4:col3 |
+| PD (effect) | PMN — CC50 BeWo cells (μM) | `Q322` · not captured | 125.5 | μM | not captured | llm (not captured) | T4:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

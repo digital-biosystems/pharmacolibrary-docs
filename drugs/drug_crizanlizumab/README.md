@@ -24,15 +24,15 @@ Currently, patients are prescribed [hydroxyurea] to raise levels of fetal hemogl
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023_reference](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | 2-compartment (no model) | 4 | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sy_2023_reference](drugs/drug_crizanlizumab/Crizanlizumab_Sy2023_reference.md) | — | 2-compartment (no model) | 4 | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Sy_2023](drugs/drug_crizanlizumab/pd_Sy_2023_sP_selectin.md) | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Sy_2023_sP_selectin](drugs/drug_crizanlizumab/pd_Sy_2023_sP_selectin.md) | soluble P-selectin ← crizanlizumab · target-mediated drug disposition | — | Sy SKB et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2023) | [10.1007/s40262-022-01193-4](https://doi.org/10.1007/s40262-022-01193-4) |
 
 ## ADME sites
 

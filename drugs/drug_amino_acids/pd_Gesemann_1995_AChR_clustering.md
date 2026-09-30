@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Agrin isoforms (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Agrin isoforms (concentrations in pM–nM) stimulate AChR clustering on chick myotubes via a direct concentration–response effect; EC50 values were ~35 pM for agrinA4B8 (95-kD COOH-terminal fragment), ~110 pM for agrinA4B19, ~5 nM for agrinA4B11, ~130 pM for the 45-kD agrinA4B8 fragment, with agrinA4B0 showing some clustering at 64 nM and agrinA0B0 inactive; no mechanism beyond direct induction, and no Emax, kin/kout, ke0, or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gesemann_1995`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

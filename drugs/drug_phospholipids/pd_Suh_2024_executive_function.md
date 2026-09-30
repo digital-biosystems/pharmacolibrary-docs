@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** N-3 polyunsaturated fatty acids drives name (in standardized mean difference) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> This is a dose–response meta-analysis, not a mechanistic PD model: daily n-3 PUFA intake (mg/d) is associated with improved executive function (standardized mean difference) via restricted cubic splines, with a beneficial upward trend up to 12 months of intervention (coefficient 0.0449 [0.0101, 0.0796]), a significant ascending curve above 500 mg/d PUFA (coefficient 0.0013 [0.0002, 0.0025]), and an incremental benefit up to 420 mg/d EPA (coefficient 0.0016 [0.0001, 0.0031]). No pharmacodynamic mechanism (e.g. Imax/IC50/kin/kout) is given; the paper only speculates effects may be mediated via synaptic plasticity, neurogenesis, or reduced cerebrovascular lesions.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Suh_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

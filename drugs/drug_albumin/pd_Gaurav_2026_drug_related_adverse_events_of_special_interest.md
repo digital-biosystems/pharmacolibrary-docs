@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Favezelimab (measured concentrations) drives name (in AEOSI) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking favezelimab concentrations to drug-related adverse events of special interest (AEOSI); the record lists only population PK parameters for favezelimab (e.g. Vc 3.08 L, Vmax 13.6 μg/h, Km 49.5 μg/L, CL 0.0195 L/h), so no mechanism, potency, or rate values for the AEOSI response are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gaurav_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,40 +30,40 @@ Gaurav M; Barcomb H; Maxwell KF; Kandala B; Chatterjee MS et al. (2026). Clinica
   ·  DOI: [10.1111/cts.70658](https://doi.org/10.1111/cts.70658)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vc (L) — Population parameter estimate | `Q63` · not captured | 3.08 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col1 |
-| Vc (L) — Stochastic approximation | `Q63` · not captured | 0.0665 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col2 |
-| Vc (L) — Stochastic approximation | `Q63` · not captured | 2.16 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col3 |
-| Vc (L) — Stochastic approximation | `Q63` · not captured | 2.95 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col4 |
-| Vc (L) — Stochastic approximation | `Q63` · not captured | 3.21 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col5 |
-| Vc (L) — Conditional mode | `Q63` · not captured | 24.4 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col6 |
-| Vmax (μg/h) — Population parameter estimate | `Q66` · not captured | 13.6 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col1 |
-| Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 1.64 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col2 |
-| Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 12.1 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col3 |
-| Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 10.7 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col4 |
-| Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 17.1 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col5 |
-| Km (μg/L) — Population parameter estimate | `Q1` · not captured | 49.5 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col1 |
-| Km (μg/L) — Stochastic approximation | `Q1` · not captured | 32.4 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col2 |
-| Km (μg/L) — Stochastic approximation | `Q1` · not captured | 65.4 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col3 |
-| Km (μg/L) — Stochastic approximation | `Q1` · not captured | 17.5 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col4 |
-| Km (μg/L) — Stochastic approximation | `Q1` · not captured | 140 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col5 |
-| CL (L/h) — Population parameter estimate | `Q22` · not captured | 0.0195 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col1 |
-| CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.000764 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col2 |
-| CL (L/h) — Stochastic approximation | `Q22` · not captured | 3.93 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col3 |
-| CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.0180 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col4 |
-| CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.0210 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col5 |
-| CL (L/h) — Conditional mode | `Q22` · not captured | 2.90 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col6 |
-| Q (L/h) — Population parameter estimate | `Q30` · not captured | 0.0322 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col1 |
-| Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.00233 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col2 |
-| Q (L/h) — Stochastic approximation | `Q30` · not captured | 7.23 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col3 |
-| Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.0280 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col4 |
-| Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.0371 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col5 |
-| Vp (L) — Population parameter estimate | `Q64` · not captured | 1.22 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col1 |
-| Vp (L) — Stochastic approximation | `Q64` · not captured | 0.0384 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col2 |
-| Vp (L) — Stochastic approximation | `Q64` · not captured | 3.15 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col3 |
-| Vp (L) — Stochastic approximation | `Q64` · not captured | 1.15 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col4 |
-| Vp (L) — Stochastic approximation | `Q64` · not captured | 1.30 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vc (L) — Population parameter estimate | `Q63` · not captured | 3.08 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col1 |
+| PK (driver) | Vc (L) — Stochastic approximation | `Q63` · not captured | 0.0665 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col2 |
+| PK (driver) | Vc (L) — Stochastic approximation | `Q63` · not captured | 2.16 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col3 |
+| PK (driver) | Vc (L) — Stochastic approximation | `Q63` · not captured | 2.95 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col4 |
+| PK (driver) | Vc (L) — Stochastic approximation | `Q63` · not captured | 3.21 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col5 |
+| PK (driver) | Vc (L) — Conditional mode | `Q63` · not captured | 24.4 | L | not captured | exact (not captured) | cts70658-tbl-0001:row3:col6 |
+| PK (driver) | Vmax (μg/h) — Population parameter estimate | `Q66` · not captured | 13.6 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col1 |
+| PK (driver) | Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 1.64 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col2 |
+| PK (driver) | Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 12.1 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col3 |
+| PK (driver) | Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 10.7 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col4 |
+| PK (driver) | Vmax (μg/h) — Stochastic approximation | `Q66` · not captured | 17.1 | μg/h | not captured | special_case (not captured) | cts70658-tbl-0001:row11:col5 |
+| PK (driver) | Km (μg/L) — Population parameter estimate | `Q1` · not captured | 49.5 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col1 |
+| PK (driver) | Km (μg/L) — Stochastic approximation | `Q1` · not captured | 32.4 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col2 |
+| PK (driver) | Km (μg/L) — Stochastic approximation | `Q1` · not captured | 65.4 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col3 |
+| PK (driver) | Km (μg/L) — Stochastic approximation | `Q1` · not captured | 17.5 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col4 |
+| PK (driver) | Km (μg/L) — Stochastic approximation | `Q1` · not captured | 140 | μg/L | not captured | exact (not captured) | cts70658-tbl-0001:row12:col5 |
+| PK (driver) | CL (L/h) — Population parameter estimate | `Q22` · not captured | 0.0195 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col1 |
+| PK (driver) | CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.000764 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col2 |
+| PK (driver) | CL (L/h) — Stochastic approximation | `Q22` · not captured | 3.93 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col3 |
+| PK (driver) | CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.0180 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col4 |
+| PK (driver) | CL (L/h) — Stochastic approximation | `Q22` · not captured | 0.0210 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col5 |
+| PK (driver) | CL (L/h) — Conditional mode | `Q22` · not captured | 2.90 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row13:col6 |
+| PK (driver) | Q (L/h) — Population parameter estimate | `Q30` · not captured | 0.0322 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col1 |
+| PK (driver) | Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.00233 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col2 |
+| PK (driver) | Q (L/h) — Stochastic approximation | `Q30` · not captured | 7.23 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col3 |
+| PK (driver) | Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.0280 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col4 |
+| PK (driver) | Q (L/h) — Stochastic approximation | `Q30` · not captured | 0.0371 | L/h | not captured | exact (not captured) | cts70658-tbl-0001:row22:col5 |
+| PK (driver) | Vp (L) — Population parameter estimate | `Q64` · not captured | 1.22 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col1 |
+| PK (driver) | Vp (L) — Stochastic approximation | `Q64` · not captured | 0.0384 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col2 |
+| PK (driver) | Vp (L) — Stochastic approximation | `Q64` · not captured | 3.15 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col3 |
+| PK (driver) | Vp (L) — Stochastic approximation | `Q64` · not captured | 1.15 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col4 |
+| PK (driver) | Vp (L) — Stochastic approximation | `Q64` · not captured | 1.30 | L | not captured | exact (not captured) | cts70658-tbl-0001:row23:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nifuroxazide (measured concentrations) drives tumor volume (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking nifuroxazide concentrations to tumor volume; no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for tumor volume are given. Mechanistically, nifuroxazide inhibits ERG (blocking the ERG–PARP1 interaction and overly activating PARP1, causing parthanatic cell death), with an in vitro growth-inhibition IC50 in VCaP cells of 2.65 ± 0.08 μmol/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

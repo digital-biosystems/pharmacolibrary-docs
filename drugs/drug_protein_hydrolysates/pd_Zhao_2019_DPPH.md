@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives DPPH radical scavenging activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Protein hydrolysates/peptides from Spanish mackerel (SMP-3, SMP-7, SMP-10, SMP-11) directly scavenge DPPH radical in a dose-dependent manner (0.25–10.0 mg/mL), with EC50 values of 1.53, 0.70, 0.53, and 0.97 mg/mL, respectively (GSH control 0.22 mg/mL); no kinetic PD model (e.g., kin/kout, ke0) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

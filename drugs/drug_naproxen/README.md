@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | 1-compartment, oral | 2 | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Björnsson_2011_reference](drugs/drug_naproxen/Naproxen_Bjrnsson2011_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Björnsson MA et al., Modelling of pain intensity and informa…, British journal of clinical… (2011) | [10.1111/j.1365-2125.2011.03924.x](https://doi.org/10.1111/j.1365-2125.2011.03924.x) |
 
 ## ADME sites
 
@@ -38,6 +38,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | kidney | `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `UGT1A3` substrate, `UGT1A6` substrate, `UGT1A9` substrate, `UGT2B7` substrate | DrugBank actor |

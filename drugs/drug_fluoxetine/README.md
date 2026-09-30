@@ -23,19 +23,19 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wilens_2002_reference](drugs/drug_fluoxetine/Fluoxetine_Wilens2002_reference.md) | parent + metabolite (no model) | 0 | Wilens TE et al., Fluoxetine pharmacokinetics in pediatri…, Journal of clinical psychop… (2002) | [10.1097/00004714-200212000-00006](https://doi.org/10.1097/00004714-200212000-00006) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2024_reference](drugs/drug_fluoxetine/Fluoxetine_van2024_reference.md) | parent + metabolite (no model) | 0 | van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024) | [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Wilens_2002_reference](drugs/drug_fluoxetine/Fluoxetine_Wilens2002_reference.md) | — | parent + metabolite (no model) | 0 | Wilens TE et al., Fluoxetine pharmacokinetics in pediatri…, Journal of clinical psychop… (2002) | [10.1097/00004714-200212000-00006](https://doi.org/10.1097/00004714-200212000-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [van_2024_reference](drugs/drug_fluoxetine/Fluoxetine_van2024_reference.md) | — | parent + metabolite (no model) | 0 | van der Most MA et al., Toxicokinetics of the Antidepressant Fl…, Environmental science & tec… (2024) | [10.1021/acs.est.3c07744](https://doi.org/10.1021/acs.est.3c07744) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> | [Burlot_2026](drugs/drug_fluoxetine/pd_Burlot_2026_Bcl2_Bim.md) | Burlot C et al., PK and PK/PD Modeling of Bcl2 Inhibitor…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70288](https://doi.org/10.1002/psp4.70288) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Wojtovich_2010](drugs/drug_fluoxetine/pd_Wojtovich_2010_IS.md) | Wojtovich AP et al., A novel mitochondrial K(ATP) channel as…, Circulation research (2010) | [10.1161/CIRCRESAHA.109.215400](https://doi.org/10.1161/CIRCRESAHA.109.215400) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wojtovich_2010](drugs/drug_fluoxetine/pd_Wojtovich_2010_mKATP.md) | Wojtovich AP et al., A novel mitochondrial K(ATP) channel as…, Circulation research (2010) | [10.1161/CIRCRESAHA.109.215400](https://doi.org/10.1161/CIRCRESAHA.109.215400) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Maringwa_2025](drugs/drug_fluoxetine/pd_Maringwa_2025_HAMD.md) | Maringwa J et al., Partial Residual Plots as an Integrated…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3418](https://doi.org/10.1002/cpt.3418) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> | [Burlot_2026_Bcl2_Bim](drugs/drug_fluoxetine/pd_Burlot_2026_Bcl2_Bim.md) | Bcl2/Bim complex ← S65487 · indirect response — drug inhibits the production of Bcl2/Bim complex | — | Burlot C et al., PK and PK/PD Modeling of Bcl2 Inhibitor…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70288](https://doi.org/10.1002/psp4.70288) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Wojtovich_2010_IS](drugs/drug_fluoxetine/pd_Wojtovich_2010_IS.md) | Infarct size ← fluoxetine · direct Emax (saturable) effect | — | Wojtovich AP et al., A novel mitochondrial K(ATP) channel as…, Circulation research (2010) | [10.1161/CIRCRESAHA.109.215400](https://doi.org/10.1161/CIRCRESAHA.109.215400) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wojtovich_2010_mKATP](drugs/drug_fluoxetine/pd_Wojtovich_2010_mKATP.md) | mKATP activity ← fluoxetine · direct Emax (saturable) effect | — | Wojtovich AP et al., A novel mitochondrial K(ATP) channel as…, Circulation research (2010) | [10.1161/CIRCRESAHA.109.215400](https://doi.org/10.1161/CIRCRESAHA.109.215400) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Maringwa_2025_HAMD](drugs/drug_fluoxetine/pd_Maringwa_2025_HAMD.md) | Hamilton Depression Rating Scale ← venlafaxine · direct Emax (saturable) effect | — | Maringwa J et al., Partial Residual Plots as an Integrated…, Clinical pharmacology and t… (2025) | [10.1002/cpt.3418](https://doi.org/10.1002/cpt.3418) |
 
 ## ADME sites
 
@@ -49,6 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` substrate, `ORM1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives LDL-C (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Simvastatin dose acts on LDL-C via a nonlinear mixed-effects Emax dose-response model, with baseline E0, potency ED50 (median dose achieving 50% LDL-C reduction) and efficacy Emax (maximum LDL-C reduction); the paper does not state numeric ED50/Emax values or units for simvastatin, nor a concentration-driven mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

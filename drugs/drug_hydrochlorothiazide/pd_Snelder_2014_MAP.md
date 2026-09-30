@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiloride, amlodipine, atropine, enalapril, fasudil, hydrochlorothiazide, prazosin, propranolol drive mean arterial pressure (in mmHg): indirect response — drug inhibits the production of mean arterial pressure.
+
+**Model:** No model was generated from this record.
+
+> In the extended CVS turnover model, predicted hydrochlorothiazide plasma concentrations (PK not measured; derived from literature) act on MAP (mmHg) through linked turnover equations for HR, SV and TPR with negative MAP-mediated feedback, but the paper does not state the specific site of action or effect form for hydrochlorothiazide, and no potency (IC50/EC50/Emax) or rate (kin, kout, ke0) values for hydrochlorothiazide are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Snelder_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

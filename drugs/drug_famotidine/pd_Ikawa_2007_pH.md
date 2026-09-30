@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lafutidine drives intragastric pH (in unit): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Lafutidine plasma concentrations drive the increase in intragastric pH (expressed as DpH, the pH difference vs. control) via a sigmoid Emax model with an effect-site compartment, needed because of an anticlockwise hysteresis loop indicating equilibration delay; key values are Emax 7.2 (pH), EC50 26.5 ng/ml, and Hill factor 11.9. The paper does not state the mechanism in terms of inhibition of production or elimination of the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ikawa_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Ikawa K; Shimatani T; Hayato S; Morikawa N; Tazuma S et al. (2007). Biological &
   ·  DOI: [10.1248/bpb.30.1003](https://doi.org/10.1248/bpb.30.1003)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (pH) | `Q320` · not captured | 7.2 | pH | not captured | review_gapfill (not captured) | Ikawa_2007:review |
-| EC 50 | `Q321` · not captured | 26.5 | ng/ml | not captured | review_gapfill (not captured) | Ikawa_2007:review |
-| g | `Q325` · not captured | 11.9 | Hill factor | not captured | review_gapfill (not captured) | Ikawa_2007:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (pH) | `Q320` · not captured | 7.2 | pH | not captured | review_gapfill (not captured) | Ikawa_2007:review |
+| PD (effect) | EC 50 | `Q321` · not captured | 26.5 | ng/ml | not captured | review_gapfill (not captured) | Ikawa_2007:review |
+| PD (effect) | g | `Q325` · not captured | 11.9 | Hill factor | not captured | review_gapfill (not captured) | Ikawa_2007:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

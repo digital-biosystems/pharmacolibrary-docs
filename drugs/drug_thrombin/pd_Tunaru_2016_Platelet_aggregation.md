@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 19(S)-HETE (measured concentrations) drives Platelet aggregation (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 19(S)-HETE, acting as an agonist at the prostacyclin (IP) receptor (EC50 567 nM for IP-mediated cAMP in COS-1 cells; EC50 520 nM for cAMP accumulation in MEG-01 cells; Ki 660 nM displacing 3H-iloprost), blocks thrombin-induced platelet aggregation in isolated murine platelets, an effect absent in platelets lacking the IP receptor. The paper does not report a formal pharmacodynamic model (no Imax, kin, kout, ke0 or Hill coefficient), only these concentration-dependent potency values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tunaru_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

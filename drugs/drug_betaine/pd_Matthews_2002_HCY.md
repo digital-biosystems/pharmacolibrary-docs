@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Betaine drives total homocysteine (in mmol l-1): indirect response — drug inhibits the production of total homocysteine.
+
+**Model:** No model was generated from this record.
+
+> Plasma betaine concentrations (mmol l-1) were linked to total homocysteine (HCY, mmol l-1) after a single oral dose of 100 mg kg-1 in six patients with classical homocystinuria, using an indirect response model in which betaine suppresses (inhibits) homocysteine. The excerpts do not state whether the inhibition acts on production or elimination of HCY, nor do they report potency (IC50/Imax) or rate (kin/kout) values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Matthews_2002`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

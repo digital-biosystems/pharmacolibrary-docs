@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in B/B0) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In HepG2 cells, 18β-glycyrrhetinic acid (18β-GA) competitively inhibited FITC-GA binding, reducing the specific binding ratio (B/B0) with an EC50 of 100.1 nM; B/B0 fell to 10% at 200 nM 18β-GA (18α-GA was weaker, EC50 563.1 nM). The paper describes this as competitive binding at GA receptors rather than a production/elimination mechanism, and no kinetic parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sun_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Sun Y; Dai C; Yin M; Lu J; Hu H; Chen D et al. (2018). International journal of 
   ·  DOI: [10.2147/IJN.S153944](https://doi.org/10.2147/IJN.S153944)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 of 18β-GA | `Q321` · not captured | 100.1 | nM | not captured | review_gapfill (not captured) | Sun_2018:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 of 18β-GA | `Q321` · not captured | 100.1 | nM | not captured | review_gapfill (not captured) | Sun_2018:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pacific herring protein hydrolysates (PHPH) (measured concentrations) drives cellular antioxidant activity (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pacific herring protein hydrolysate concentrations (mg/mL) were related to cellular antioxidant activity (%) by nonlinear concentration–response fitting, yielding IC50 values (concentration inhibiting 50% of the measured activity): PHPH-III 7.90 ± 0.33 mg/mL, fraction F5 3.21 ± 0.15 mg/mL, and purified peptides P1 (Leu-His-Asp-Glu-Leu-Thr) 1.19 ± 0.05 mg/mL and P2 (Lys-Glu-Glu-Lys-Phe-Glu) 1.04 ± 0.06 mg/mL. The paper does not state a pharmacodynamic mechanism (no Emax/kin/kout/ke0 model), only empirical IC50 values from concentration–response plots.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Wang X; Yu H; Xing R; Liu S; Chen X; Li P et al. (2019). Molecules (Basel, Switz
   ·  DOI: [10.3390/molecules24101946](https://doi.org/10.3390/molecules24101946)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mg/mL) — P1 | `Q322` · not captured | 4.57 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row0:col3 |
-| IC50 (mg/mL) — P2 | `Q322` · not captured | 3.78 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row0:col4 |
-| IC50 (mg/mL) — P1 | `Q322` · not captured | 5.14 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row1:col3 |
-| IC50 (mg/mL) — P2 | `Q322` · not captured | 4.37 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row1:col4 |
-| IC50 (mg/mL) — P1 | `Q322` · not captured | 1.19 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row2:col3 |
-| IC50 (mg/mL) — P2 | `Q322` · not captured | 1.04 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row2:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mg/mL) — P1 | `Q322` · not captured | 4.57 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row0:col3 |
+| PD (effect) | IC50 (mg/mL) — P2 | `Q322` · not captured | 3.78 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row0:col4 |
+| PD (effect) | IC50 (mg/mL) — P1 | `Q322` · not captured | 5.14 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row1:col3 |
+| PD (effect) | IC50 (mg/mL) — P2 | `Q322` · not captured | 4.37 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row1:col4 |
+| PD (effect) | IC50 (mg/mL) — P1 | `Q322` · not captured | 1.19 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row2:col3 |
+| PD (effect) | IC50 (mg/mL) — P2 | `Q322` · not captured | 1.04 | mg/mL | not captured | exact (not captured) | molecules-24-01946-t004:row2:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives name (in cm3): disease-progression model.
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine plasma concentration (mg/L, from a cited PK model) acts on tumor volume (cm3) in a Simeoni TGI disease-progression model: the drug exerts a direct anticancer effect proportional to concentration, inhibiting the exponential tumor growth rate λ0,human with potency k2,human; the paper does not report numeric values for k2,human or λ0,human in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ronchi_2025`
 - **model family:** `disease_progression`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Ronchi D; Tosca EM; Magni P et al. (2025). Journal of pharmacokinetics and pharm
   ·  DOI: [10.1007/s10928-025-09970-x](https://doi.org/10.1007/s10928-025-09970-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Kindler [30] — Number of patients in the gemcitabine group | `Q100` · not captured | 316 | not captured | not captured | llm (not captured) | Tab1:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Kindler [30] — Number of patients in the gemcitabine group | `Q100` · not captured | 316 | not captured | not captured | llm (not captured) | Tab1:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

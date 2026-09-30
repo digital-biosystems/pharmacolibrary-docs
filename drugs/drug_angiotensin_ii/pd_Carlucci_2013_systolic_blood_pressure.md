@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Irbesartan (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In Beagle dogs given oral irbesartan (2 and 5 mg/kg), plasma irbesartan concentrations (ng/mL) were related to systolic blood pressure; a counter-clockwise hysteresis indicated no direct concentration–effect correlation, and the minimum effective concentration was theorized to be 550–800 ng/mL, with 5 mg/kg producing significant SBP reduction. The paper does not state a specific PD model structure or parameter values (Imax, IC50, ke0, etc.).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carlucci_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

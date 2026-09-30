@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives coronary artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In human isolated coronary artery segments, rizatriptan concentration directly elicits contraction (expressed as % of the 100 mmol/L K+-induced contraction), analyzed with an Emax concentration-response model; the paper does not report the specific EC50 and Emax values for rizatriptan (only that its EC50 was lower than sumatriptan's, whose EC50 ranged 117–2042 nmol/L and Emax 2.3–27.0% of the K+ response), and no mechanism beyond this direct contractile effect is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

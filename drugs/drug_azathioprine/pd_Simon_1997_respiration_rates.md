@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cyclosporine A, prednisolone, azathioprine drive name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Azathioprine (with cyclosporine A and prednisolone) concentration-dependently decreased succinate-induced respiration (respiratory control ratio) of rat kidney mitochondria, described as a monophasic inhibitory Emax-type relationship with maximal inhibition of about 10.3% and IC50 of 5.8 ± 2.5 × 10⁻⁹ M; the paper states azathioprine acts by a Ca²⁺-independent mechanism but gives no further mechanistic detail.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simon_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

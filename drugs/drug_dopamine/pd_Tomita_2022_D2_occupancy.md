@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Blonanserin (measured concentrations) drives D2 occupancy (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Striatal D2 receptor occupancy (%) is related to plasma blonanserin concentration (ng/mL) by a direct Emax model (no effect compartment or turnover mechanism described). The estimated C50 for oral tablets was 0.112 (95% CI 0.0568–0.168) ng/mL, with a previously reported C50 of 0.17 ng/mL; a separate C50 was estimated for the transdermal patch, but the paper does not state the Emax value or the patch C50 numerically in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tomita_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

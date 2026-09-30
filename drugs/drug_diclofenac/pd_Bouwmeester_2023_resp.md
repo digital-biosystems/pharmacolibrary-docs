@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetaminophen, diclofenac, perhexiline, troglitazone, valproic acid drive cell viability (in continuous): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Diclofenac concentrations (µM) reduce cell viability in primary human hepatocytes (PHH), described by a sigmoid Emax inhibition model with an EC50 of 421.2 µM; the paper does not state a mechanism beyond direct cytotoxicity, and no Imax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bouwmeester_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Bouwmeester MC; Tao Y; Proença S; van Steenbeek FG; Samsom RA; Nijmeijer SM; et
   ·  DOI: [10.3390/molecules28020621](https://doi.org/10.3390/molecules28020621)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Acetaminophen — PHH | `Q25` · not captured | 4186 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row1:col5 |
-| Diclofenac — PHH | `Q25` · not captured | 421.2 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row2:col5 |
-| Valproic Acid — PHH | `Q25` · not captured | 9885 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Acetaminophen — PHH | `Q25` · not captured | 4186 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row1:col5 |
+| PK (driver) | Diclofenac — PHH | `Q25` · not captured | 421.2 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row2:col5 |
+| PK (driver) | Valproic Acid — PHH | `Q25` · not captured | 9885 | not captured | not captured | llm (not captured) | molecules-28-00621-t002:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

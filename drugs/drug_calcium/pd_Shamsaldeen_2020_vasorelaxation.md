@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 4αPDD (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model with drug acting on a response via a mechanism; it reports direct concentration–response (Emax) fits of vasorelaxation (%) in noradrenaline (300 nM)-constricted rat aortic rings. The values in the record (EC50 = 0.8 µM, Emax = 29.6 ± 9.3%) correspond to carbachol-induced vasorelaxation in STZ-diabetic rings (control: EC50 = 0.7 µM, Emax = 77.2 ± 2.5%), not to 4αPDD (STZ-diabetic 4αPDD: EC50 = 0.5 µM, Emax = 56.0 ± 5.5%; control: EC50 = 0.1 µM, Emax = 81.1 ± 2.1%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shamsaldeen_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Shamsaldeen YA; Lione LA; Benham CD et al. (2020). European journal of pharmacol
   ·  DOI: [10.1016/j.ejphar.2020.173441](https://doi.org/10.1016/j.ejphar.2020.173441)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 29.6 | % | not captured | review_gapfill (not captured) | Shamsaldeen_2020:review |
-| EC50 | `Q321` · not captured | 0.8 | µM | not captured | review_gapfill (not captured) | Shamsaldeen_2020:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 29.6 | % | not captured | review_gapfill (not captured) | Shamsaldeen_2020:review |
+| PD (effect) | EC50 | `Q321` · not captured | 0.8 | µM | not captured | review_gapfill (not captured) | Shamsaldeen_2020:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

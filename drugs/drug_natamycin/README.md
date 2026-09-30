@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Saito_2023](drugs/drug_natamycin/pd_Saito_2023_unknown.md) | Saito S et al., Sensitivity of Mucor piriformis to Nata…, Plant disease (2023) | [10.1094/PDIS-04-23-0796-RE](https://doi.org/10.1094/PDIS-04-23-0796-RE) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Saito_2023_unknown](drugs/drug_natamycin/pd_Saito_2023_unknown.md) | Mucor rot incidence ← Natamycin · inhibition effect | — | Saito S et al., Sensitivity of Mucor piriformis to Nata…, Plant disease (2023) | [10.1094/PDIS-04-23-0796-RE](https://doi.org/10.1094/PDIS-04-23-0796-RE) |
 
 ## ADME sites
 

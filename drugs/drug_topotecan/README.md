@@ -23,21 +23,21 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004_reference](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | 1-compartment, IV | 2 (+1 cov.) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Léger_2004_reference](drugs/drug_topotecan/Topotecan_Lger2004_reference.md) | held back | 1-compartment, IV | 2 (+1 cov.) | Léger F et al., Factors affecting pharmacokinetic varia…, British journal of cancer (2004) | [10.1038/sj.bjc.6601469](https://doi.org/10.1038/sj.bjc.6601469) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025](drugs/drug_topotecan/pd_Jiang_2025_CCK_8.md) | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025](drugs/drug_topotecan/pd_Jiang_2025_Caspase_3.md) | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025](drugs/drug_topotecan/pd_Jiang_2025_TUNEL.md) | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024](drugs/drug_topotecan/pd_Dai_2024_ANC.md) | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024](drugs/drug_topotecan/pd_Dai_2024_Grade_3_4_anemia.md) | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024](drugs/drug_topotecan/pd_Dai_2024_Grade_4_neutropenia.md) | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2018](drugs/drug_topotecan/pd_Lee_2018_Ube3a.md) | Lee HM et al., Characterization and structure-activity…, Molecular autism (2018) | [10.1186/s13229-018-0228-2](https://doi.org/10.1186/s13229-018-0228-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025_CCK_8](drugs/drug_topotecan/pd_Jiang_2025_CCK_8.md) | cell viability ← topotecan · inhibition effect | — | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025_Caspase_3](drugs/drug_topotecan/pd_Jiang_2025_Caspase_3.md) | apoptosis ← topotecan · inhibition effect | — | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Jiang_2025_TUNEL](drugs/drug_topotecan/pd_Jiang_2025_TUNEL.md) | apoptosis ← topotecan · inhibition effect | — | Jiang J et al., Loss of ELF2 drives topotecan resistanc…, Cell death & disease (2025) | [10.1038/s41419-025-08335-z](https://doi.org/10.1038/s41419-025-08335-z) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024_ANC](drugs/drug_topotecan/pd_Dai_2024_ANC.md) | ANC ← trilaciclib · direct Emax (saturable) effect | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024_Grade_3_4_anemia](drugs/drug_topotecan/pd_Dai_2024_Grade_3_4_anemia.md) | Grade 3/4 anemia ← trilaciclib · direct Emax (saturable) effect | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Dai_2024_Grade_4_neutropenia](drugs/drug_topotecan/pd_Dai_2024_Grade_4_neutropenia.md) | Severe neutropenia ← trilaciclib · direct Emax (saturable) effect | — | Dai HR et al., Trilaciclib dosage in Chinese patients…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01297-6](https://doi.org/10.1038/s41401-024-01297-6) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2018_Ube3a](drugs/drug_topotecan/pd_Lee_2018_Ube3a.md) | paternal Ube3a unsilencing ← indotecan · direct Emax (saturable) effect | — | Lee HM et al., Characterization and structure-activity…, Molecular autism (2018) | [10.1186/s13229-018-0228-2](https://doi.org/10.1186/s13229-018-0228-2) |
 
 ## Pharmacogenomics (PGx)
 
@@ -62,6 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate/transport | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate/transport | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate/transport | DrugBank actor |
 | excretion | bile duct | <sub>“…total topotecan and its N-desmethyl metabolite in urine and feces over 9 days averaged 73.…”</sub> | prose |
 | excretion | kidney | `SLC47A1` inhibitor/substrate, `SLC47A2` substrate | DrugBank actor |
 | excretion | liver | `SLC47A1` inhibitor/substrate | DrugBank actor |

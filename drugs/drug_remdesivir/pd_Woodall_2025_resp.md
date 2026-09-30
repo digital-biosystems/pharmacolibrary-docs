@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023::gs_441524) drives viral inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Remdesivir concentrations (mg/L) act directly on in vitro viral inhibition (absorbance-based assay) via a sigmoid Emax model with estimated Emax and λ; the paper does not describe a turnover/kin-kout or effect-compartment mechanism. The reported EC50 for remdesivir against the ancestral strain was 4.34 ± 0.30 mg/L (4.34 ± 1.21 mg/L, n = 3 in the strain comparison), reduced 8-fold to 0.54 ± 0.042 mg/L with the Pgp inhibitor CP-100356 (0.25 mg/L); no Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Woodall_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Woodall M; Ellis S; Zhang S; Kembou-Ringert J; Kite K-A; Buggiotti L; Jacobs AI;
   ·  DOI: [10.1128/aac.01233-24](https://doi.org/10.1128/aac.01233-24)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 0.24 | mg/L | not captured | review_gapfill (not captured) | Woodall_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 0.24 | mg/L | not captured | review_gapfill (not captured) | Woodall_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

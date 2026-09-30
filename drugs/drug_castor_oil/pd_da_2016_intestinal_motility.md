@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Croton grewioides crude ethanolic extract (the dose) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Oral doses of Croton grewioides crude ethanolic extract (CG-EtOH, mg/kg) reduce castor oil-induced intestinal motility in mice by an inhibitory dose-effect (Emax-type) relationship; the paper gives no mechanism beyond this. At 125 mg/kg motility decreased by 22.7% ± 4.4%, while gastrointestinal transit was reduced by 65.1 ± 3.7% and 66.7% ± 1.5% at 125 and 250 mg/kg (maximum effect ~65%); no IC50/EC50/kin/kout/ke0 values are reported for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `da_2016`
 - **model family:** `emax`
 - **driver:** `dose_only`

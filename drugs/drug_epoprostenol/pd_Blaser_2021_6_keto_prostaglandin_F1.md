@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 4-methylaminoantipyrine (4-MAA) (measured concentrations) drives name (in pg/mg creatinine): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Urinary 6-keto-prostaglandin F1α excretion (pg/mg creatinine) is inhibited by metamizole via its effect-compartment concentration of the metabolite 4-methylaminoantipyrine (4-MAA), described by a sigmoid Emax (Hill) inhibitory model with an effect compartment linked to the 4-MAA central compartment by a first-order equilibration rate constant (ke0 = 0.012 1/h for metamizole, n = 8); the paper does not state numeric EC50, Emax or gamma values, only noting 4-MAA was a less potent inhibitor (higher EC50) than naproxen, whose EC50 was about 20-fold lower.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blaser_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,41 +31,41 @@ Blaser LS; Duthaler U; Bouitbir J; Leuppi-Taegtmeyer AB; Liakoni E; Dolf R; et a
   ·  DOI: [10.3389/fphar.2021.620635](https://doi.org/10.3389/fphar.2021.620635)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ka (1/h) — Metamizole (n = 8) | `Q49` · not captured | 2.528 | n = 8 | not captured | exact (not captured) | T3:row1:col1 |
-| Ka (1/h) — Naproxen (n = 7) | `Q49` · not captured | 0.538 | n = 7 | not captured | exact (not captured) | T3:row1:col3 |
-| V1/F (L) — Metamizole (n = 8) | `Q290` · not captured | 71.2 | L | not captured | exact (not captured) | T3:row2:col1 |
-| V1/F (L) — Naproxen (n = 7) | `Q290` · not captured | 3.27 | L | not captured | exact (not captured) | T3:row2:col3 |
-| k12 (1/h) — Metamizole (n = 8) | `Q301` · not captured | 0.030 | n = 8 | not captured | exact (not captured) | T3:row3:col1 |
-| k12 (1/h) — Naproxen (n = 7) | `Q301` · not captured | 0.185 | n = 7 | not captured | exact (not captured) | T3:row3:col3 |
-| k14 (1/h) — Metamizole (n = 8) | `Q347` · not captured | 0.006 | n = 8 | not captured | exact (not captured) | T3:row4:col1 |
-| k14 (1/h) — Naproxen (n = 7) | `Q347` · not captured | 1.334 | n = 7 | not captured | exact (not captured) | T3:row4:col3 |
-| k10 (1/h) — Metamizole (n = 8) | `Q47` · not captured | 0.178 | n = 8 | not captured | exact (not captured) | T3:row5:col1 |
-| k10 (1/h) — Naproxen (n = 7) | `Q47` · not captured | 0.213 | n = 7 | not captured | exact (not captured) | T3:row5:col3 |
-| V2/F (L) — Metamizole (n = 8) | `Q82` · not captured | 35.6 | L | not captured | exact (not captured) | T3:row6:col1 |
-| k23 (1/h) — Metamizole (n = 8) | `Q48` · not captured | 0.552 | n = 8 | not captured | exact (not captured) | T3:row7:col1 |
-| k23 (1/h) — Naproxen (n = 7) | `Q48` · not captured | 0.009 | n = 7 | not captured | exact (not captured) | T3:row7:col3 |
-| k24 (1/h) — Metamizole (n = 8) | `Q48` · not captured | 0.033 | n = 8 | not captured | exact (not captured) | T3:row8:col1 |
-| k24 (1/h) — Naproxen (n = 7) | `Q48` · not captured | 2.275 | n = 7 | not captured | exact (not captured) | T3:row8:col3 |
-| k20 (1/h) — Metamizole (n = 8) | `Q358` · not captured | 0.008 | n = 8 | not captured | llm (not captured) | T3:row9:col1 |
-| V3/F (L) — Metamizole (n = 8) | `Q78` · not captured | 55.1 | L | not captured | exact (not captured) | T3:row10:col1 |
-| V4/F (L) — Metamizole (n = 8) | `Q78` · not captured | 11.5 | L | not captured | llm (not captured) | T3:row12:col1 |
-| ke0 (1/h) — Metamizole (n = 8) | `Q326` · not captured | 0.012 | n = 8 | not captured | exact (not captured) | T3:row14:col1 |
-| T1/2 K01 (h) — Metamizole (n = 8) | `Q57` · not captured | 0.36 | h | not captured | llm_confirmed (not captured) | T3:row15:col1 |
-| T1/2 K01 (h) — Naproxen (n = 7) | `Q57` · not captured | 1.708 | h | not captured | llm_confirmed (not captured) | T3:row15:col3 |
-| T1/2 4-MAA (h) — Metamizole (n = 8) | `Q57` · not captured | 3.43 | h | not captured | llm_confirmed (not captured) | T3:row16:col1 |
-| T1/2 4-AA (h) — Metamizole (n = 8) | `Q57` · not captured | 2.39 | h | not captured | llm_confirmed (not captured) | T3:row17:col1 |
-| T1/2 4-AA (h) — Naproxen (n = 7) | `Q57` · not captured | 2.14 | h | not captured | llm_confirmed (not captured) | T3:row17:col3 |
-| T1/2 4-AAA (h) — Metamizole (n = 8) | `Q57` · not captured | 10.33 | h | not captured | llm_confirmed (not captured) | T3:row18:col1 |
-| T1/2 4-AAA (h) — Naproxen (n = 7) | `Q57` · not captured | 1.00 | h | not captured | llm_confirmed (not captured) | T3:row18:col3 |
-| T1/2 4-FAA (h) — Metamizole (n = 8) | `Q57` · not captured | 6.95 | h | not captured | llm_confirmed (not captured) | T3:row19:col1 |
-| EC50 (µM) — Metamizole (n = 8) | `Q321` · not captured | 0.69 | µM | not captured | exact (not captured) | T3:row20:col1 |
-| EC50 (µM) — Naproxen (n = 7) | `Q321` · not captured | 0.034 | µM | not captured | exact (not captured) | T3:row20:col3 |
-| E0 b — Metamizole (n = 8) | `Q324` · not captured | 101.6 | n = 8 | not captured | llm_confirmed (not captured) | T3:row22:col1 |
-| E0 b — Naproxen (n = 7) | `Q324` · not captured | 167.16 | n = 7 | not captured | llm_confirmed (not captured) | T3:row22:col3 |
-| Emax b — Metamizole (n = 8) | `Q320` · not captured | 61.3 | n = 8 | not captured | llm_confirmed (not captured) | T3:row23:col1 |
-| Emax b — Naproxen (n = 7) | `Q320` · not captured | 133.56 | n = 7 | not captured | llm_confirmed (not captured) | T3:row23:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ka (1/h) — Metamizole (n = 8) | `Q49` · not captured | 2.528 | n = 8 | not captured | exact (not captured) | T3:row1:col1 |
+| PK (driver) | Ka (1/h) — Naproxen (n = 7) | `Q49` · not captured | 0.538 | n = 7 | not captured | exact (not captured) | T3:row1:col3 |
+| PK (driver) | V1/F (L) — Metamizole (n = 8) | `Q290` · not captured | 71.2 | L | not captured | exact (not captured) | T3:row2:col1 |
+| PK (driver) | V1/F (L) — Naproxen (n = 7) | `Q290` · not captured | 3.27 | L | not captured | exact (not captured) | T3:row2:col3 |
+| PK (driver) | k12 (1/h) — Metamizole (n = 8) | `Q301` · not captured | 0.030 | n = 8 | not captured | exact (not captured) | T3:row3:col1 |
+| PK (driver) | k12 (1/h) — Naproxen (n = 7) | `Q301` · not captured | 0.185 | n = 7 | not captured | exact (not captured) | T3:row3:col3 |
+| PK (driver) | k14 (1/h) — Metamizole (n = 8) | `Q347` · not captured | 0.006 | n = 8 | not captured | exact (not captured) | T3:row4:col1 |
+| PK (driver) | k14 (1/h) — Naproxen (n = 7) | `Q347` · not captured | 1.334 | n = 7 | not captured | exact (not captured) | T3:row4:col3 |
+| PK (driver) | k10 (1/h) — Metamizole (n = 8) | `Q47` · not captured | 0.178 | n = 8 | not captured | exact (not captured) | T3:row5:col1 |
+| PK (driver) | k10 (1/h) — Naproxen (n = 7) | `Q47` · not captured | 0.213 | n = 7 | not captured | exact (not captured) | T3:row5:col3 |
+| PK (driver) | V2/F (L) — Metamizole (n = 8) | `Q82` · not captured | 35.6 | L | not captured | exact (not captured) | T3:row6:col1 |
+| PK (driver) | k23 (1/h) — Metamizole (n = 8) | `Q48` · not captured | 0.552 | n = 8 | not captured | exact (not captured) | T3:row7:col1 |
+| PK (driver) | k23 (1/h) — Naproxen (n = 7) | `Q48` · not captured | 0.009 | n = 7 | not captured | exact (not captured) | T3:row7:col3 |
+| PK (driver) | k24 (1/h) — Metamizole (n = 8) | `Q48` · not captured | 0.033 | n = 8 | not captured | exact (not captured) | T3:row8:col1 |
+| PK (driver) | k24 (1/h) — Naproxen (n = 7) | `Q48` · not captured | 2.275 | n = 7 | not captured | exact (not captured) | T3:row8:col3 |
+| PK (driver) | k20 (1/h) — Metamizole (n = 8) | `Q358` · not captured | 0.008 | n = 8 | not captured | llm (not captured) | T3:row9:col1 |
+| PK (driver) | V3/F (L) — Metamizole (n = 8) | `Q78` · not captured | 55.1 | L | not captured | exact (not captured) | T3:row10:col1 |
+| PK (driver) | V4/F (L) — Metamizole (n = 8) | `Q78` · not captured | 11.5 | L | not captured | llm (not captured) | T3:row12:col1 |
+| PD (effect) | ke0 (1/h) — Metamizole (n = 8) | `Q326` · not captured | 0.012 | n = 8 | not captured | exact (not captured) | T3:row14:col1 |
+| PK (driver) | T1/2 K01 (h) — Metamizole (n = 8) | `Q57` · not captured | 0.36 | h | not captured | llm_confirmed (not captured) | T3:row15:col1 |
+| PK (driver) | T1/2 K01 (h) — Naproxen (n = 7) | `Q57` · not captured | 1.708 | h | not captured | llm_confirmed (not captured) | T3:row15:col3 |
+| PK (driver) | T1/2 4-MAA (h) — Metamizole (n = 8) | `Q57` · not captured | 3.43 | h | not captured | llm_confirmed (not captured) | T3:row16:col1 |
+| PK (driver) | T1/2 4-AA (h) — Metamizole (n = 8) | `Q57` · not captured | 2.39 | h | not captured | llm_confirmed (not captured) | T3:row17:col1 |
+| PK (driver) | T1/2 4-AA (h) — Naproxen (n = 7) | `Q57` · not captured | 2.14 | h | not captured | llm_confirmed (not captured) | T3:row17:col3 |
+| PK (driver) | T1/2 4-AAA (h) — Metamizole (n = 8) | `Q57` · not captured | 10.33 | h | not captured | llm_confirmed (not captured) | T3:row18:col1 |
+| PK (driver) | T1/2 4-AAA (h) — Naproxen (n = 7) | `Q57` · not captured | 1.00 | h | not captured | llm_confirmed (not captured) | T3:row18:col3 |
+| PK (driver) | T1/2 4-FAA (h) — Metamizole (n = 8) | `Q57` · not captured | 6.95 | h | not captured | llm_confirmed (not captured) | T3:row19:col1 |
+| PD (effect) | EC50 (µM) — Metamizole (n = 8) | `Q321` · not captured | 0.69 | µM | not captured | exact (not captured) | T3:row20:col1 |
+| PD (effect) | EC50 (µM) — Naproxen (n = 7) | `Q321` · not captured | 0.034 | µM | not captured | exact (not captured) | T3:row20:col3 |
+| PD (effect) | E0 b — Metamizole (n = 8) | `Q324` · not captured | 101.6 | n = 8 | not captured | llm_confirmed (not captured) | T3:row22:col1 |
+| PD (effect) | E0 b — Naproxen (n = 7) | `Q324` · not captured | 167.16 | n = 7 | not captured | llm_confirmed (not captured) | T3:row22:col3 |
+| PD (effect) | Emax b — Metamizole (n = 8) | `Q320` · not captured | 61.3 | n = 8 | not captured | llm_confirmed (not captured) | T3:row23:col1 |
+| PD (effect) | Emax b — Naproxen (n = 7) | `Q320` · not captured | 133.56 | n = 7 | not captured | llm_confirmed (not captured) | T3:row23:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Imatinib drives total pulmonary resistance (in Wood units) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a formal pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are reported). It describes oral imatinib (100–400 mg daily, recommended starting dose 200 mg daily) reducing total pulmonary resistance (TPR, Wood units) in a dose- and exposure-dependent manner, with a gradual reduction over the first 28 days (mean −2.4 Wood units; 95% CI −1.7 to −3.1) and a −20.3% (95% CI −14.4 to −26.3) reduction from baseline at 200 mg q.d.; after withdrawal, TPR rose gradually, stabilizing at 47 days (95% CI 37–58).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rothman_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,11 +30,11 @@ Rothman AMK; Villar SS; Middleton J; Roussakis AA; Varian F; Zafar H; Law M; App
   ·  DOI: [10.1164/rccm.202410-1929oc](https://doi.org/10.1164/rccm.202410-1929oc)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 2 | n = 17 | not captured | llm (not captured) | tbl2:row27:col1 |
-| Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 1 | n = 17 | not captured | llm (not captured) | tbl2:row27:col2 |
-| Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 0 | n = 17 | not captured | llm (not captured) | tbl2:row27:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 2 | n = 17 | not captured | llm (not captured) | tbl2:row27:col1 |
+| — | Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 1 | n = 17 | not captured | llm (not captured) | tbl2:row27:col2 |
+| — | Skin infection — Imatinib Patients, Various Doses (n = 17) | `Q100` · not captured | 0 | n = 17 | not captured | llm (not captured) | tbl2:row27:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

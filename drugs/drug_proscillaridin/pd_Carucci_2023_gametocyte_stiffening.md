@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TD-6450 (measured concentrations) drives name (in retention rate) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TD-6450 concentrations (nM) were related to gametocyte retention rate (stiffening) in a dose-response (log concentration vs response, variable slope) analysis, with IC50 values determined for stiffening/retention, but the paper does not state a mechanistic PD model (e.g., Emax parameters, kin/kout, or effect compartment) or give the TD-6450 stiffening IC50 value in the excerpts; the mechanism of the stiffening effect is not described beyond TD-6450 being an NS5A inhibitor.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carucci_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,33 +30,33 @@ Carucci M; Duez J; Tarning J; García-Barbazán I; Fricot-Monsinjon A; Sissoko A
   ·  DOI: [10.1038/s41467-023-37359-2](https://doi.org/10.1038/s41467-023-37359-2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 0.5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 0.5 | not captured | not captured | llm (not captured) | Tab2:row2:col6 |
-| 1.5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 1.5 | not captured | not captured | llm (not captured) | Tab2:row3:col6 |
-| 1.5 — t1/2Mean ± SD | `Q57` · not captured | 84.3 | not captured | not captured | llm (not captured) | Tab2:row3:col7 |
-| 5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 5.37 | not captured | not captured | llm (not captured) | Tab2:row4:col6 |
-| 5 — t1/2Mean ± SD | `Q57` · not captured | 71.7 | not captured | not captured | llm (not captured) | Tab2:row4:col7 |
-| 15 — Cmax (nM)Mean ± SD | `Q32` · not captured | 21 | not captured | not captured | llm (not captured) | Tab2:row5:col6 |
-| 15 — t1/2Mean ± SD | `Q57` · not captured | 77 | not captured | not captured | llm (not captured) | Tab2:row5:col7 |
-| 30 — Cmax (nM)Mean ± SD | `Q32` · not captured | 37.4 | not captured | not captured | llm (not captured) | Tab2:row6:col6 |
-| 30 — t1/2Mean ± SD | `Q57` · not captured | 66.9 | not captured | not captured | llm (not captured) | Tab2:row6:col7 |
-| 60 — Cmax (nM)Mean ± SD | `Q32` · not captured | 123 | not captured | not captured | llm (not captured) | Tab2:row7:col6 |
-| 60 — t1/2Mean ± SD | `Q60` · not captured | 61.4 | not captured | not captured | llm (not captured) | Tab2:row7:col7 |
-| 120 — Cmax (nM)Mean ± SD | `Q32` · not captured | 173.6 | not captured | not captured | llm (not captured) | Tab2:row8:col6 |
-| 120 — t1/2Mean ± SD | `Q57` · not captured | 78.4 | not captured | not captured | llm (not captured) | Tab2:row8:col7 |
-| 240 — Cmax (nM)Mean ± SD | `Q32` · not captured | 278 | not captured | not captured | llm (not captured) | Tab2:row9:col6 |
-| 240 — t1/2Mean ± SD | `Q57` · not captured | 64.7 | not captured | not captured | llm (not captured) | Tab2:row9:col7 |
-| 500 — Cmax (nM)Mean ± SD | `Q32` · not captured | 243.9 | not captured | not captured | llm (not captured) | Tab2:row10:col6 |
-| 500 — t1/2Mean ± SD | `Q57` · not captured | 54.9 | not captured | not captured | llm (not captured) | Tab2:row10:col7 |
-| Placebo — N | `Q341` · not captured | 20 | not captured | not captured | llm_confirmed (not captured) | Tab2:row11:col1 |
-| 60 — Cmax (nM)Mean ± SD | `Q32` · not captured | 97.4 | not captured | not captured | llm (not captured) | Tab2:row14:col6 |
-| 60 — t1/2Mean ± SD | `Q60` · not captured | 398 | not captured | not captured | llm (not captured) | Tab2:row14:col7 |
-| 120 — Cmax (nM)Mean ± SD | `Q32` · not captured | 215.8 | not captured | not captured | llm (not captured) | Tab2:row15:col6 |
-| 120 — t1/2Mean ± SD | `Q57` · not captured | 1014 | not captured | not captured | llm (not captured) | Tab2:row15:col7 |
-| 240 — Cmax (nM)Mean ± SD | `Q32` · not captured | 458.7 | not captured | not captured | llm (not captured) | Tab2:row16:col6 |
-| 240 — t1/2Mean ± SD | `Q57` · not captured | 1767 | not captured | not captured | llm (not captured) | Tab2:row16:col7 |
-| Placebo — N | `Q341` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | Tab2:row17:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 0.5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 0.5 | not captured | not captured | llm (not captured) | Tab2:row2:col6 |
+| PK (driver) | 1.5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 1.5 | not captured | not captured | llm (not captured) | Tab2:row3:col6 |
+| PK (driver) | 1.5 — t1/2Mean ± SD | `Q57` · not captured | 84.3 | not captured | not captured | llm (not captured) | Tab2:row3:col7 |
+| PK (driver) | 5 — Cmax (nM)Mean ± SD | `Q32` · not captured | 5.37 | not captured | not captured | llm (not captured) | Tab2:row4:col6 |
+| PK (driver) | 5 — t1/2Mean ± SD | `Q57` · not captured | 71.7 | not captured | not captured | llm (not captured) | Tab2:row4:col7 |
+| PK (driver) | 15 — Cmax (nM)Mean ± SD | `Q32` · not captured | 21 | not captured | not captured | llm (not captured) | Tab2:row5:col6 |
+| PK (driver) | 15 — t1/2Mean ± SD | `Q57` · not captured | 77 | not captured | not captured | llm (not captured) | Tab2:row5:col7 |
+| PK (driver) | 30 — Cmax (nM)Mean ± SD | `Q32` · not captured | 37.4 | not captured | not captured | llm (not captured) | Tab2:row6:col6 |
+| PK (driver) | 30 — t1/2Mean ± SD | `Q57` · not captured | 66.9 | not captured | not captured | llm (not captured) | Tab2:row6:col7 |
+| PK (driver) | 60 — Cmax (nM)Mean ± SD | `Q32` · not captured | 123 | not captured | not captured | llm (not captured) | Tab2:row7:col6 |
+| PK (driver) | 60 — t1/2Mean ± SD | `Q60` · not captured | 61.4 | not captured | not captured | llm (not captured) | Tab2:row7:col7 |
+| PK (driver) | 120 — Cmax (nM)Mean ± SD | `Q32` · not captured | 173.6 | not captured | not captured | llm (not captured) | Tab2:row8:col6 |
+| PK (driver) | 120 — t1/2Mean ± SD | `Q57` · not captured | 78.4 | not captured | not captured | llm (not captured) | Tab2:row8:col7 |
+| PK (driver) | 240 — Cmax (nM)Mean ± SD | `Q32` · not captured | 278 | not captured | not captured | llm (not captured) | Tab2:row9:col6 |
+| PK (driver) | 240 — t1/2Mean ± SD | `Q57` · not captured | 64.7 | not captured | not captured | llm (not captured) | Tab2:row9:col7 |
+| PK (driver) | 500 — Cmax (nM)Mean ± SD | `Q32` · not captured | 243.9 | not captured | not captured | llm (not captured) | Tab2:row10:col6 |
+| PK (driver) | 500 — t1/2Mean ± SD | `Q57` · not captured | 54.9 | not captured | not captured | llm (not captured) | Tab2:row10:col7 |
+| PD (effect) | Placebo — N | `Q341` · not captured | 20 | not captured | not captured | llm_confirmed (not captured) | Tab2:row11:col1 |
+| PK (driver) | 60 — Cmax (nM)Mean ± SD | `Q32` · not captured | 97.4 | not captured | not captured | llm (not captured) | Tab2:row14:col6 |
+| PK (driver) | 60 — t1/2Mean ± SD | `Q60` · not captured | 398 | not captured | not captured | llm (not captured) | Tab2:row14:col7 |
+| PK (driver) | 120 — Cmax (nM)Mean ± SD | `Q32` · not captured | 215.8 | not captured | not captured | llm (not captured) | Tab2:row15:col6 |
+| PK (driver) | 120 — t1/2Mean ± SD | `Q57` · not captured | 1014 | not captured | not captured | llm (not captured) | Tab2:row15:col7 |
+| PK (driver) | 240 — Cmax (nM)Mean ± SD | `Q32` · not captured | 458.7 | not captured | not captured | llm (not captured) | Tab2:row16:col6 |
+| PK (driver) | 240 — t1/2Mean ± SD | `Q57` · not captured | 1767 | not captured | not captured | llm (not captured) | Tab2:row16:col7 |
+| PD (effect) | Placebo — N | `Q341` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | Tab2:row17:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

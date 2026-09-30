@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Khaya grandifoliola fraction KgF25 and Entada africana fraction EaF10 (measured concentrations) drive name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In paracetamol-intoxicated rat hepatocytes, the plant fractions KgF25 and EaF10 (µg/ml, no PK model) concentration-dependently restored/increased cellular glutathione (GSH) content; the paper does not state a specific PD mechanism or model for GSH, reporting only EC50 values of 10.30 ± 1.66 µg/ml (KgF25) and 13.47 ± 2.06 µg/ml (EaF10), with the combination KgF25 100 µg/ml + EaF10 130 µg/ml increasing GSH about 2-fold (CDI 0.653).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Njayou_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

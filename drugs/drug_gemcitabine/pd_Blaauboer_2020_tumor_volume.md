@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives tumor volume (in mm3) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative PD model for gemcitabine's effect on tumor volume; it only reports that gemcitabine (40 mg/kg i.p. on days 2 and 4) inhibits growth of subcutaneous BxPC-3 pancreatic tumors in nude mice, with no significant tumor volume reduction for gemcitabine alone and a 45% reduction after 4 weeks of combined IFN-β plus gemcitabine treatment. No mechanism, Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are stated for this in vivo effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blaauboer_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

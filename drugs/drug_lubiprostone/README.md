@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Fei_2009](drugs/drug_lubiprostone/pd_Fei_2009_Isc.md) | Fei G et al., Stimulation of mucosal secretion by lub…, American journal of physiol… (2009) | [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Fei_2009](drugs/drug_lubiprostone/pd_Fei_2009_short_circuit_current.md) | Fei G et al., Stimulation of mucosal secretion by lub…, American journal of physiol… (2009) | [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Fei_2009_Isc](drugs/drug_lubiprostone/pd_Fei_2009_Isc.md) | short-circuit current ← lubiprostone · direct Emax (saturable) effect | — | Fei G et al., Stimulation of mucosal secretion by lub…, American journal of physiol… (2009) | [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Fei_2009_short_circuit_current](drugs/drug_lubiprostone/pd_Fei_2009_short_circuit_current.md) | name ← lubiprostone · direct sigmoid Emax (Hill) effect | — | Fei G et al., Stimulation of mucosal secretion by lub…, American journal of physiol… (2009) | [10.1152/ajpgi.90447.2008](https://doi.org/10.1152/ajpgi.90447.2008) |
 
 ## ADME sites
 

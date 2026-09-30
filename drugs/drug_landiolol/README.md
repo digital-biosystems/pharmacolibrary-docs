@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;landiolol&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Honda2008_reference&quot;,&quot;label&quot;:&quot;Honda_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Honda2008_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Landiolol_Honda2008_reference&quot;,&quot;label&quot;:&quot;Honda_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Honda2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Landiolol_Kunisawa2015v2_reference&quot;,&quot;label&quot;:&quot;Kunisawa_2015_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # landiolol
 
@@ -34,11 +34,11 @@ First approved in Japan in 2002 [A264758] for the treatment of intraoperative ta
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span> | [Honda_2008_reference](drugs/drug_landiolol/Landiolol_Honda2008_reference.md) | 2-compartment, IV | 5 | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Kunisawa_2015_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md) | 2-compartment, IV | 5 | Kunisawa (2015) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span> | [Kunisawa_2015_2_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md) | 2-compartment, IV | 5 | Kunisawa (2015) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Honda_2008_reference](drugs/drug_landiolol/Landiolol_Honda2008_reference.md) | model (no simulator) | 2-compartment, IV | 5 | Honda N et al., Population pharmacokinetics of landiolo…, Drug metabolism and pharmac… (2008) | [10.2133/dmpk.23.447](https://doi.org/10.2133/dmpk.23.447) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Kunisawa_2015_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015_reference.md) | model (no simulator) | 2-compartment, IV | 5 | Kunisawa (2015) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Kunisawa_2015_2_reference](drugs/drug_landiolol/Landiolol_Kunisawa2015v2_reference.md) | model (no simulator) | 2-compartment, IV | 5 | Kunisawa (2015) | — |
 
 ## ADME sites
 
@@ -64,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 23 matched, 16 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 3  ·  extracted 3  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

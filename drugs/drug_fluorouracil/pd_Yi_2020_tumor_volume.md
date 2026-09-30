@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-Fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in mm3) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative pharmacodynamic model linking 5-fluorouracil concentrations to tumor volume; it only reports that 5-FU (20 mg/kg, tail vein, three times weekly) inhibited tumor growth in a dose-dependent manner in vitro and in vivo, with the mechanism (per the paper) being TS downregulation and pyrotinib-mediated restoration of 5-FU sensitivity via pAkt/ABCG2 suppression. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for this drug-response relationship are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yi_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

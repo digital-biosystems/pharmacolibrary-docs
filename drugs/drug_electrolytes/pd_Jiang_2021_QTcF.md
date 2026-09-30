@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ivosidenib (measured concentrations) drives name (in msec): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma ivosidenib concentrations (ng/ml) act directly (no hysteresis, no effect compartment) on the change from baseline in QTcF (msec) via a linear concentration–response relationship with a slope of 0.00258 msec/(ng/ml); at the geometric mean Cmax of 6551 ng/ml for the 500 mg q.d. dose, ΔQTcF was predicted to be 17.2 msec (90% CI 14.7–19.7). Lower electrolyte levels (calcium, magnesium), increased age, and lower baseline QTcF were associated with increased ΔQTcF; no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiang_2021`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`
@@ -20,47 +30,47 @@ Jiang X; Wada R; Poland B; Kleijn HJ; Fan B; Liu G; et al. et al. (2021). Clinic
   ·  DOI: [10.1111/cts.12959](https://doi.org/10.1111/cts.12959)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Steady‐state CL/F, L/h — Fixed effect | `Q27` · not captured | 5.39 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row2:col1 |
-| Steady‐state CL/F, L/h — Fixed effect | `Q27` · not captured | 4 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row2:col2 |
-| Steady‐state CL/F, L/h — Between‐patient variability | `Q312` · not captured | 35 | L/h | not captured | llm_corrected (not captured) | cts12959-tbl-0001:row2:col3 |
-| Steady‐state CL/F, L/h — Between‐patient variability | `Q312` · not captured | 6 | L/h | not captured | llm_corrected (not captured) | cts12959-tbl-0001:row2:col4 |
-| Steady‐state CL/F, L/h — Shrinkage (%) | `Q27` · not captured | 5 | L/h | not captured | boundary_llm_dim_refused (not captured) | cts12959-tbl-0001:row2:col5 |
-| Steady‐state Vc/F, L — Fixed effect | `Q290` · not captured | 234 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col1 |
-| Steady‐state Vc/F, L — Fixed effect | `Q290` · not captured | 7 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col2 |
-| Steady‐state Vc/F, L — Between‐patient variability | `Q290` · not captured | 47 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col3 |
-| Steady‐state Vc/F, L — Between‐patient variability | `Q290` · not captured | 6 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col4 |
-| Steady‐state Vc/F, L — Shrinkage (%) | `Q290` · not captured | 11 | L | not captured | boundary_llm_dim_refused (not captured) | cts12959-tbl-0001:row3:col5 |
-| Steady‐state Q/F, L/h — Fixed effect | `Q69` · not captured | 15.8 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row4:col1 |
-| Steady‐state Q/F, L/h — Fixed effect | `Q69` · not captured | 19 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row4:col2 |
-| Steady‐state Vp/F, L — Fixed effect | `Q82` · not captured | 151 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row5:col1 |
-| Steady‐state Vp/F, L — Fixed effect | `Q82` · not captured | 22 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row5:col2 |
-| First‐dose CL/F, L/h — Fixed effect | `Q27` · not captured | 1.63 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row6:col1 |
-| First‐dose Vc/F, L — Fixed effect | `Q290` · not captured | 71 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row7:col1 |
-| First‐dose Q/F, L/h — Fixed effect | `Q69` · not captured | 4.8 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row8:col1 |
-| First‐dose Vp/F, L — Fixed effect | `Q82` · not captured | 46 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row9:col1 |
-| ka, 1/h — Fixed effect | `Q49` · not captured | 1.38 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col1 |
-| ka, 1/h — Fixed effect | `Q49` · not captured | 10 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col2 |
-| ka, 1/h — Between‐patient variability | `Q49` · not captured | 108 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col3 |
-| ka, 1/h — Between‐patient variability | `Q49` · not captured | 7 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col4 |
-| ka, 1/h — Shrinkage (%) | `Q49` · not captured | 32 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col5 |
-| Tlag, h — Fixed effect | `Q83` · not captured | 0.27 | h | not captured | exact (not captured) | cts12959-tbl-0001:row11:col1 |
-| Tlag, h — Fixed effect | `Q83` · not captured | 11 | h | not captured | exact (not captured) | cts12959-tbl-0001:row11:col2 |
-| Steady‐state fold change in Frel — Fixed effect | `Q87` · not captured | 0.50 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row12:col1 |
-| Steady‐state fold change in Frel — Fixed effect | `Q87` · not captured | 7 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row12:col2 |
-| Steady‐state fold change in CL — Fixed effect | `Q22` · not captured | 1.66 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row13:col1 |
-| Steady‐state fold change in CL — Fixed effect | `Q22` · not captured | 11 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row13:col2 |
-| Fold change in CL with voriconazole — Fixed effect | `Q22` · not captured | 0.64 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row20:col1 |
-| Fold change in CL with voriconazole — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row20:col2 |
-| Fold change in CL with fluconazole — Fixed effect | `Q22` · not captured | 0.59 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row21:col1 |
-| Fold change in CL with fluconazole — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row21:col2 |
-| Fold change in CL with posaconazole — Fixed effect | `Q22` · not captured | 0.65 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row22:col1 |
-| Fold change in CL with posaconazole — Fixed effect | `Q22` · not captured | 12 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row22:col2 |
-| Fold change in CL with other moderate/strong CYP3A inhibitors — Fixed effect | `Q22` · not captured | 0.92 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row23:col1 |
-| Fold change in CL with other moderate/strong CYP3A inhibitors — Fixed effect | `Q22` · not captured | 17 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row23:col2 |
-| Fold change in CL with mild CYP3A inhibitors — Fixed effect | `Q22` · not captured | 1.04 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row24:col1 |
-| Fold change in CL with mild CYP3A inhibitors — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row24:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Steady‐state CL/F, L/h — Fixed effect | `Q27` · not captured | 5.39 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row2:col1 |
+| PK (driver) | Steady‐state CL/F, L/h — Fixed effect | `Q27` · not captured | 4 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row2:col2 |
+| variability | Steady‐state CL/F, L/h — Between‐patient variability | `Q312` · not captured | 35 | L/h | not captured | llm_corrected (not captured) | cts12959-tbl-0001:row2:col3 |
+| variability | Steady‐state CL/F, L/h — Between‐patient variability | `Q312` · not captured | 6 | L/h | not captured | llm_corrected (not captured) | cts12959-tbl-0001:row2:col4 |
+| PK (driver) | Steady‐state CL/F, L/h — Shrinkage (%) | `Q27` · not captured | 5 | L/h | not captured | boundary_llm_dim_refused (not captured) | cts12959-tbl-0001:row2:col5 |
+| PK (driver) | Steady‐state Vc/F, L — Fixed effect | `Q290` · not captured | 234 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col1 |
+| PK (driver) | Steady‐state Vc/F, L — Fixed effect | `Q290` · not captured | 7 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col2 |
+| PK (driver) | Steady‐state Vc/F, L — Between‐patient variability | `Q290` · not captured | 47 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col3 |
+| PK (driver) | Steady‐state Vc/F, L — Between‐patient variability | `Q290` · not captured | 6 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row3:col4 |
+| PK (driver) | Steady‐state Vc/F, L — Shrinkage (%) | `Q290` · not captured | 11 | L | not captured | boundary_llm_dim_refused (not captured) | cts12959-tbl-0001:row3:col5 |
+| PK (driver) | Steady‐state Q/F, L/h — Fixed effect | `Q69` · not captured | 15.8 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row4:col1 |
+| PK (driver) | Steady‐state Q/F, L/h — Fixed effect | `Q69` · not captured | 19 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row4:col2 |
+| PK (driver) | Steady‐state Vp/F, L — Fixed effect | `Q82` · not captured | 151 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row5:col1 |
+| PK (driver) | Steady‐state Vp/F, L — Fixed effect | `Q82` · not captured | 22 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row5:col2 |
+| PK (driver) | First‐dose CL/F, L/h — Fixed effect | `Q27` · not captured | 1.63 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row6:col1 |
+| PK (driver) | First‐dose Vc/F, L — Fixed effect | `Q290` · not captured | 71 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row7:col1 |
+| PK (driver) | First‐dose Q/F, L/h — Fixed effect | `Q69` · not captured | 4.8 | L/h | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row8:col1 |
+| PK (driver) | First‐dose Vp/F, L — Fixed effect | `Q82` · not captured | 46 | L | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row9:col1 |
+| PK (driver) | ka, 1/h — Fixed effect | `Q49` · not captured | 1.38 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col1 |
+| PK (driver) | ka, 1/h — Fixed effect | `Q49` · not captured | 10 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col2 |
+| PK (driver) | ka, 1/h — Between‐patient variability | `Q49` · not captured | 108 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col3 |
+| PK (driver) | ka, 1/h — Between‐patient variability | `Q49` · not captured | 7 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col4 |
+| PK (driver) | ka, 1/h — Shrinkage (%) | `Q49` · not captured | 32 | 1/h | not captured | exact (not captured) | cts12959-tbl-0001:row10:col5 |
+| PK (driver) | Tlag, h — Fixed effect | `Q83` · not captured | 0.27 | h | not captured | exact (not captured) | cts12959-tbl-0001:row11:col1 |
+| PK (driver) | Tlag, h — Fixed effect | `Q83` · not captured | 11 | h | not captured | exact (not captured) | cts12959-tbl-0001:row11:col2 |
+| PK (driver) | Steady‐state fold change in Frel — Fixed effect | `Q87` · not captured | 0.50 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row12:col1 |
+| PK (driver) | Steady‐state fold change in Frel — Fixed effect | `Q87` · not captured | 7 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row12:col2 |
+| PK (driver) | Steady‐state fold change in CL — Fixed effect | `Q22` · not captured | 1.66 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row13:col1 |
+| PK (driver) | Steady‐state fold change in CL — Fixed effect | `Q22` · not captured | 11 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row13:col2 |
+| PK (driver) | Fold change in CL with voriconazole — Fixed effect | `Q22` · not captured | 0.64 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row20:col1 |
+| PK (driver) | Fold change in CL with voriconazole — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row20:col2 |
+| PK (driver) | Fold change in CL with fluconazole — Fixed effect | `Q22` · not captured | 0.59 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row21:col1 |
+| PK (driver) | Fold change in CL with fluconazole — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row21:col2 |
+| PK (driver) | Fold change in CL with posaconazole — Fixed effect | `Q22` · not captured | 0.65 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row22:col1 |
+| PK (driver) | Fold change in CL with posaconazole — Fixed effect | `Q22` · not captured | 12 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row22:col2 |
+| PK (driver) | Fold change in CL with other moderate/strong CYP3A inhibitors — Fixed effect | `Q22` · not captured | 0.92 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row23:col1 |
+| PK (driver) | Fold change in CL with other moderate/strong CYP3A inhibitors — Fixed effect | `Q22` · not captured | 17 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row23:col2 |
+| PK (driver) | Fold change in CL with mild CYP3A inhibitors — Fixed effect | `Q22` · not captured | 1.04 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row24:col1 |
+| PK (driver) | Fold change in CL with mild CYP3A inhibitors — Fixed effect | `Q22` · not captured | 6 | not captured | not captured | llm_confirmed (not captured) | cts12959-tbl-0001:row24:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

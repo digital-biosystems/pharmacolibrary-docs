@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Minocycline (measured concentrations) drives caspase activation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a mechanism linking minocycline concentration to caspase activation; the EC50 of 78.6 µM reported in the record corresponds to the cytotoxicity/viability endpoint (EC50 values of 78.6, 31.7, and 13.9 µM after 24, 48, and 72 h exposure, respectively), not to a modelled caspase-activation response, and no Emax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rok_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Rok J; Rzepka Z; Beberok A; Pawlik J; Wrześniok D et al. (2020). International 
   ·  DOI: [10.3390/ijms21186917](https://doi.org/10.3390/ijms21186917)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 values | `Q321` · not captured | 78.6 | µM | not captured | review_gapfill (not captured) | Rok_2020:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 values | `Q321` · not captured | 78.6 | µM | not captured | review_gapfill (not captured) | Rok_2020:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

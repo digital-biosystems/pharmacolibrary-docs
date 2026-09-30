@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record's PD model cannot be substantiated from the excerpts: methylcellulose is only mentioned as the vehicle in a colony-formation assay, not as a drug acting on CD11b expression, and the excerpts do not report any CD11b expression data, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma for this response). The only quantitative values given concern notopterol's inhibition of cell viability (IC50 40.32, 56.68 and 50.69 μM for HL-60, Kasumi-1 and U937 respectively), with no mechanism stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

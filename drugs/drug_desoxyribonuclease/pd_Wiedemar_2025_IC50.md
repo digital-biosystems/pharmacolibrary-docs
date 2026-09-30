@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gamhépathiopine (measured concentrations) drives Complex III activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Gamhépathiopine directly inhibits P. falciparum complex III (cytochrome bc1) activity, measured as cytochrome c reduction in parasite membrane lysates, with a dose-dependent reduction reaching &gt;93% inhibition at the highest tested concentration of 20 μM; the paper does not report an IC50, Emax, or other model parameter values for this effect, and no mechanism beyond direct enzyme inhibition is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wiedemar_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Wiedemar N; Milne R; Carvalho S; Patterson S; Bodkin M; Masurier N; Lisowski V; 
   ·  DOI: [10.1021/acsinfecdis.5c00259](https://doi.org/10.1021/acsinfecdis.5c00259)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Gam-R1 — atovaquone | `Q307` · not captured | 2 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col4 |
-| Gam-R1 — atovaquone | `Q307` · not captured | 4.5 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col5 |
-| Gam-R1 — atovaquone | `Q307` · not captured | 3 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Gam-R1 — atovaquone | `Q307` · not captured | 2 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col4 |
+| PK (driver) | Gam-R1 — atovaquone | `Q307` · not captured | 4.5 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col5 |
+| PK (driver) | Gam-R1 — atovaquone | `Q307` · not captured | 3 | not captured | not captured | llm_confirmed (not captured) | tbl1:row3:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

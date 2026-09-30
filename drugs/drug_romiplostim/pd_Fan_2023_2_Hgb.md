@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive hemoglobin (in g/dL): indirect response — drug inhibits the production of hemoglobin.
+
+**Model:** No model was generated from this record.
+
+> Romiplostim (combined with rHuEPO) acts on hemoglobin (g/dL) via an indirect response model in which the drugs stimulate Hgb production (effectively correcting EPO hyporesponsiveness); the paper does not state the mechanism in quantitative Imax/IC50 terms and provides no potency or rate values (e.g., no EC50, Emax, kin, kout) in the excerpts, only the recommended regimen of EPO 50 IU/kg three times weekly plus romiplostim 1 μg/kg once every 4 weeks.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

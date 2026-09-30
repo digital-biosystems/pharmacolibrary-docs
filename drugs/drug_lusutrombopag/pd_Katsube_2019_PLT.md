@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lusutrombopag (concentrations from this paper's PK model) drives platelet count (in /uL): indirect response — drug inhibits the production of platelet count.
+
+**Model:** No model was generated from this record.
+
+> Lusutrombopag plasma concentrations stimulate the production of platelet precursors (KPR) in a precursor-chain indirect response model (P1–P4 maturing with rate KM to platelets eliminated with rate KL), with the drug effect entering via a slope parameter SLOP; the paper does not report numeric values for SLOP, KM, KL, or an Imax/IC50/EC50/Emax.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Katsube_2019`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

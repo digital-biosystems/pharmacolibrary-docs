@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clazakizumab drives name (in mg/L): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Serum clazakizumab concentrations inhibit the zero-order production rate (kin) of hs-CRP in an indirect-response model (dE/dt = kin*(1 − Imax*Cp^γ/(IC50^γ + Cp^γ)) − kout*E), which fit better than an effect-compartment model. The final model gave Imax fixed to 1 (fraction), IC50 of 3.39 or 69.5 ng/mL, kin of 3.76 or 2.76 [mg/L]/day, kout of 0.381 or 1.98 1/day, and a Hill factor γ (shape parameter) of −0.143 or 40.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Muthukrishnan_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ Muthukrishnan VY; Kerbusch T; Strong LE; Kleijn HJ; Pfister M; Chang AM; Acharya
   ·  DOI: [10.1111/cts.70381](https://doi.org/10.1111/cts.70381)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k out (1/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q328` · not captured | 0.381 | not captured | not captured | space_fold (not captured) | cts70381-tbl-0002:row2:col1 |
-| k out (1/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q328` · not captured | 1.98 | not captured | not captured | space_fold (not captured) | cts70381-tbl-0002:row2:col2 |
-| k in ([mg/L]/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q327` · not captured | 3.76 | [mg/L]/day | not captured | space_fold (not captured) | cts70381-tbl-0002:row3:col1 |
-| k in ([mg/L]/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q327` · not captured | 2.76 | [mg/L]/day | not captured | space_fold (not captured) | cts70381-tbl-0002:row3:col2 |
-| IC50 (ng/mL) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q322` · not captured | 3.39 | ng/mL | not captured | exact (not captured) | cts70381-tbl-0002:row4:col1 |
-| IC50 (ng/mL) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q322` · not captured | 69.5 | ng/mL | not captured | exact (not captured) | cts70381-tbl-0002:row4:col2 |
-| I max (fraction) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q323` · not captured | 1.00 | fraction | not captured | space_fold (not captured) | cts70381-tbl-0002:row5:col1 |
-| Shape parameter (on IC50 IIV) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q343` · not captured | -0.143 | on IC50 IIV | not captured | exact (not captured) | cts70381-tbl-0002:row8:col1 |
-| Shape parameter (on IC50 IIV) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q343` · not captured | 40 | on IC50 IIV | not captured | exact (not captured) | cts70381-tbl-0002:row8:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | k out (1/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q328` · not captured | 0.381 | not captured | not captured | space_fold (not captured) | cts70381-tbl-0002:row2:col1 |
+| PD (effect) | k out (1/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q328` · not captured | 1.98 | not captured | not captured | space_fold (not captured) | cts70381-tbl-0002:row2:col2 |
+| PD (effect) | k in ([mg/L]/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q327` · not captured | 3.76 | [mg/L]/day | not captured | space_fold (not captured) | cts70381-tbl-0002:row3:col1 |
+| PD (effect) | k in ([mg/L]/day) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q327` · not captured | 2.76 | [mg/L]/day | not captured | space_fold (not captured) | cts70381-tbl-0002:row3:col2 |
+| PD (effect) | IC50 (ng/mL) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q322` · not captured | 3.39 | ng/mL | not captured | exact (not captured) | cts70381-tbl-0002:row4:col1 |
+| PD (effect) | IC50 (ng/mL) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q322` · not captured | 69.5 | ng/mL | not captured | exact (not captured) | cts70381-tbl-0002:row4:col2 |
+| PD (effect) | I max (fraction) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q323` · not captured | 1.00 | fraction | not captured | space_fold (not captured) | cts70381-tbl-0002:row5:col1 |
+| PD (effect) | Shape parameter (on IC50 IIV) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q343` · not captured | -0.143 | on IC50 IIV | not captured | exact (not captured) | cts70381-tbl-0002:row8:col1 |
+| PD (effect) | Shape parameter (on IC50 IIV) — Parameter estimates for the final PK‐PD model of serum hs‐CRP | `Q343` · not captured | 40 | on IC50 IIV | not captured | exact (not captured) | cts70381-tbl-0002:row8:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

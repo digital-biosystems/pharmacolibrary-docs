@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives beta-arrestin2 recruitment (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Butorphanol acts as a partial agonist at the µ-opioid receptor, directly stimulating β-arrestin2 recruitment in a cell-based split nanoluciferase assay, described by an Emax model; the excerpts do not report specific EC50, Emax, or rate values for butorphanol, only that it was a partial agonist compared with hydromorphone and showed no significant biased agonism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vandeputte_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

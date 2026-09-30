@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Garadacimab (concentrations from this paper's PK model) drives FXIIa-mediated kallikrein activity (in %): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Garadacimab plasma concentrations (nmol/mL) inhibit FXIIa-mediated kallikrein activity (%) via target-mediated drug disposition: garadacimab binds and suppresses FXIIa, with the TMDD binding complex described by a target degradation rate kdeg = 0.0058 1/h and internalization rate kint = 0.004 1/h; the paper does not state an Imax, IC50, or Emax for the inhibition. Predicted inhibition ranged from &lt;10% at 0.1 mg/kg i.v. to &gt;95% (near maximal) at 10 mg/kg i.v.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pawaskar_2022`
 - **model family:** `tmdd`
 - **driver:** `pk_record`
@@ -21,20 +31,20 @@ Pawaskar D; Chen X; Glassman F; May F; Roberts A; Biondo M; et al. et al. (2022)
   ·  DOI: [10.1111/cts.13192](https://doi.org/10.1111/cts.13192)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| F — Estimate | `Q40` · not captured | 0.529 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row2:col2 |
-| ka (h−1) — Estimate | `Q49` · not captured | 0.0227 | h−1 | not captured | exact (not captured) | cts13192-tbl-0001:row3:col2 |
-| σ 1 — Estimate | `Q315` · not captured | 0.98 | not captured | not captured | llm (not captured) | cts13192-tbl-0001:row4:col2 |
-| σ 2 — Estimate | `Q315` · not captured | 0.426 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row5:col2 |
-| CLp (ml/h/kg) — Estimate | `Q22` · not captured | 0.215 | ml/h/kg | not captured | exact (not captured) | cts13192-tbl-0001:row6:col2 |
-| k deg (1/h) — Estimate | `Q328` · not captured | 0.0058 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row8:col2 |
-| k int (1/h) — Estimate | `Q334` · not captured | 0.004 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row9:col2 |
-| α — Estimate | `Q67` · not captured | 1.59 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row10:col2 |
-| Kp — Estimate | `Q410` · not captured | 0.4 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row17:col2 |
-| VP (ml/kg) — Estimate | `Q64` · not captured | 44.9 | ml/kg | not captured | exact (not captured) | cts13192-tbl-0001:row18:col2 |
-| VL (ml/kg) — Estimate | `Q352` · not captured | 89.7 | ml/kg | not captured | llm (not captured) | cts13192-tbl-0001:row19:col2 |
-| L (ml/h/kg) — Estimate | `Q358` · not captured | 3.51 | ml/h/kg | not captured | llm (not captured) | cts13192-tbl-0001:row20:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | F — Estimate | `Q40` · not captured | 0.529 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row2:col2 |
+| PK (driver) | ka (h−1) — Estimate | `Q49` · not captured | 0.0227 | h−1 | not captured | exact (not captured) | cts13192-tbl-0001:row3:col2 |
+| variability | σ 1 — Estimate | `Q315` · not captured | 0.98 | not captured | not captured | llm (not captured) | cts13192-tbl-0001:row4:col2 |
+| variability | σ 2 — Estimate | `Q315` · not captured | 0.426 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row5:col2 |
+| PK (driver) | CLp (ml/h/kg) — Estimate | `Q22` · not captured | 0.215 | ml/h/kg | not captured | exact (not captured) | cts13192-tbl-0001:row6:col2 |
+| PD (effect) | k deg (1/h) — Estimate | `Q328` · not captured | 0.0058 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row8:col2 |
+| PD (effect) | k int (1/h) — Estimate | `Q334` · not captured | 0.004 | not captured | not captured | space_fold (not captured) | cts13192-tbl-0001:row9:col2 |
+| PK (driver) | α — Estimate | `Q67` · not captured | 1.59 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row10:col2 |
+| model term | Kp — Estimate | `Q410` · not captured | 0.4 | not captured | not captured | exact (not captured) | cts13192-tbl-0001:row17:col2 |
+| PK (driver) | VP (ml/kg) — Estimate | `Q64` · not captured | 44.9 | ml/kg | not captured | exact (not captured) | cts13192-tbl-0001:row18:col2 |
+| PK (driver) | VL (ml/kg) — Estimate | `Q352` · not captured | 89.7 | ml/kg | not captured | llm (not captured) | cts13192-tbl-0001:row19:col2 |
+| PK (driver) | L (ml/h/kg) — Estimate | `Q358` · not captured | 3.51 | ml/h/kg | not captured | llm (not captured) | cts13192-tbl-0001:row20:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

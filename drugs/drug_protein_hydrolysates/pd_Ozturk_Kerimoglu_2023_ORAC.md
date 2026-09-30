@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CF drives ORAC (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The dipeptide CF (from chicken feet protein hydrolysates) was tested in vitro against ORAC (Trolox equivalents, µmol L-1), with a reported IC50 of 69.63 µmol L-1 (and 145.41 µmol L-1, the second value likely corresponding to the ABTS assay); the paper does not describe a pharmacodynamic mechanism or model (no Imax, kin, kout, ke0 or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ozturk-Kerimoglu_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

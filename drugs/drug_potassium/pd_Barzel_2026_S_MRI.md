@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vestronidase alfa drives bone marrow infiltration stage (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the vestronidase alfa popPD model (MPS VII, Qi et al. 2018), vestronidase alfa exposure (µg×h/mL) was related to bone marrow infiltration stage (S-MRI) via an Emax-type inhibitory model, but the excerpts do not state the mechanism beyond this or report any potency/rate parameter values (Imax, IC50/EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barzel_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

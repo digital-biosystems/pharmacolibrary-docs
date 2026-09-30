@@ -24,11 +24,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019](drugs/drug_creatinolfosfate/pd_Hu_2019_NO.md) | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019](drugs/drug_creatinolfosfate/pd_Hu_2019_TNF.md) | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019](drugs/drug_creatinolfosfate/pd_Hu_2019_iNOS.md) | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019_NO](drugs/drug_creatinolfosfate/pd_Hu_2019_NO.md) | NO ← coptisine · direct linear effect | — | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019_TNF](drugs/drug_creatinolfosfate/pd_Hu_2019_TNF.md) | TNF-α ← coptisine · direct linear effect | — | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Hu_2019_iNOS](drugs/drug_creatinolfosfate/pd_Hu_2019_iNOS.md) | iNOS ← coptisine · direct linear effect | — | Hu Y et al., Pharmacokinetic-Pharmacodynamic Modelin…, Scientific reports (2019) | [10.1038/s41598-018-38164-4](https://doi.org/10.1038/s41598-018-38164-4) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

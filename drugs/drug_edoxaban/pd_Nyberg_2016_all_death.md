@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban (concentrations from the PK model of Edwina_2025) drives all death (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> In edoxaban-treated patients, all-death time-to-event was described by a Weibull distribution with a linear exposure-response relationship driven by edoxaban Cmax (ng/mL), with hazard ratio 0.99 per 1 ng/mL increase in Cmax (risk of death decreasing with increasing exposure); no Imax/IC50/EC50/Emax/kin/kout/ke0 values are given, and no mechanistic production/elimination inhibition is described beyond this direct linear exposure effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nyberg_2016`
 - **model family:** `tte`
 - **driver:** `cited_pk`

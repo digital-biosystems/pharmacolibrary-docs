@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tacrolimus (measured concentrations) drives FPG (in mmol/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tacrolimus trough concentration (C0, ng/mL) acts on fasting plasma glucose (FPG, mmol/L) via a linear direct-effect model (FPG = FPG0 + β·C0) with slope β fixed at 0.264; the paper does not state an Imax/IC50/Emax/kin/kout/ke0 for FPG (those parameters, Imax 30 mL/min/1.73 m2 and IC50 10 ng/mL, apply to the eGFR model).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiang_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,83 +30,83 @@ Xiang Q; Yang Y; Li G; Chen S; Yang Y; Liu L; et al. et al. (2025). Drug design,
   ·  DOI: [10.2147/DDDT.S542786](https://doi.org/10.2147/DDDT.S542786)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ka (h−1) — Base Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col1 |
-| Ka (h−1) — Final Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col3 |
-| Ka (h−1) — Bootstrap Results of the Final Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col5 |
-| V/F (L) — Base Model | `Q76` · not captured | 1497 | L | not captured | exact (not captured) | t0002:row4:col1 |
-| V/F (L) — Base Model | `Q76` · not captured | 11.1 | L | not captured | exact (not captured) | t0002:row4:col2 |
-| V/F (L) — Final Model | `Q76` · not captured | 2248 | L | not captured | exact (not captured) | t0002:row4:col3 |
-| V/F (L) — Final Model | `Q76` · not captured | 10.4 | L | not captured | exact (not captured) | t0002:row4:col4 |
-| V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 2217 | L | not captured | exact (not captured) | t0002:row4:col5 |
-| V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 12.9 | L | not captured | exact (not captured) | t0002:row4:col6 |
-| V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 1660 | L | not captured | exact (not captured) | t0002:row4:col7 |
-| CL/F (L/h) — Base Model | `Q27` · not captured | 24.7 | L/h | not captured | exact (not captured) | t0002:row5:col1 |
-| CL/F (L/h) — Base Model | `Q27` · not captured | 4.2 | L/h | not captured | exact (not captured) | t0002:row5:col2 |
-| CL/F (L/h) — Final Model | `Q27` · not captured | 33.7 | L/h | not captured | exact (not captured) | t0002:row5:col3 |
-| CL/F (L/h) — Final Model | `Q27` · not captured | 6.9 | L/h | not captured | exact (not captured) | t0002:row5:col4 |
-| CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 33.4 | L/h | not captured | exact (not captured) | t0002:row5:col5 |
-| CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 9.3 | L/h | not captured | exact (not captured) | t0002:row5:col6 |
-| CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 27.3 | L/h | not captured | exact (not captured) | t0002:row5:col7 |
-| IIV CL/F (%) — Base Model | `Q312` · not captured | 35.7 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col1 |
-| IIV CL/F (%) — Base Model | `Q312` · not captured | 18.7 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col2 |
-| IIV CL/F (%) — Final Model | `Q312` · not captured | 32.6 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col3 |
-| IIV CL/F (%) — Final Model | `Q312` · not captured | 17.1 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col4 |
-| IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 32.6 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col5 |
-| IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 15.9 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col6 |
-| IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 27.0 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col7 |
-| IIV V/F (%) — Base Model | `Q312` · not captured | 89.6 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col1 |
-| IIV V/F (%) — Base Model | `Q312` · not captured | 25.1 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col2 |
-| IIV V/F (%) — Final Model | `Q312` · not captured | 88.6 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col3 |
-| IIV V/F (%) — Final Model | `Q312` · not captured | 19.3 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col4 |
-| IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 88.5 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col5 |
-| IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 22.8 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col6 |
-| IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 65.5 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col7 |
-| Residual errorAdditive (ng/mL) — Base Model | `Q317` · not captured | 2.31 | ng/mL | not captured | llm (not captured) | t0002:row11:col1 |
-| Residual errorAdditive (ng/mL) — Base Model | `Q317` · not captured | 0.7 | ng/mL | not captured | llm (not captured) | t0002:row11:col2 |
-| Residual errorAdditive (ng/mL) — Final Model | `Q317` · not captured | 2.20 | ng/mL | not captured | llm (not captured) | t0002:row11:col3 |
-| Residual errorAdditive (ng/mL) — Final Model | `Q317` · not captured | 1.0 | ng/mL | not captured | llm (not captured) | t0002:row11:col4 |
-| Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 2.19 | ng/mL | not captured | llm (not captured) | t0002:row11:col5 |
-| Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 3.6 | ng/mL | not captured | llm (not captured) | t0002:row11:col6 |
-| Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 2.02 | ng/mL | not captured | llm (not captured) | t0002:row11:col7 |
-| β — Base Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col1 |
-| β — Final Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col3 |
-| β — Bootstrap Results of the Final Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col5 |
-| IIV FPG0 ((%) — Base Model | `Q312` · not captured | 18.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col1 |
-| IIV FPG0 ((%) — Base Model | `Q312` · not captured | 19.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col2 |
-| IIV FPG0 ((%) — Final Model | `Q312` · not captured | 17.0 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col3 |
-| IIV FPG0 ((%) — Final Model | `Q312` · not captured | 19.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col4 |
-| IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 16.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col5 |
-| IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 17.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col6 |
-| IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 13.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col7 |
-| Residual errorProportional (%) — Base Model | `Q316` · not captured | 23.2 | not captured | not captured | llm (not captured) | t0002:row17:col1 |
-| Residual errorProportional (%) — Base Model | `Q316` · not captured | 1.2 | not captured | not captured | llm (not captured) | t0002:row17:col2 |
-| Residual errorProportional (%) — Final Model | `Q316` · not captured | 23.1 | not captured | not captured | llm (not captured) | t0002:row17:col3 |
-| Residual errorProportional (%) — Final Model | `Q316` · not captured | 1.2 | not captured | not captured | llm (not captured) | t0002:row17:col4 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 23.1 | not captured | not captured | llm (not captured) | t0002:row17:col5 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 3.2 | not captured | not captured | llm (not captured) | t0002:row17:col6 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 21.7 | not captured | not captured | llm (not captured) | t0002:row17:col7 |
-| IC50 (ng/mL) — Base Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col1 |
-| IC50 (ng/mL) — Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col3 |
-| IC50 (ng/mL) — Bootstrap Results of the Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col5 |
-| Imax (mL/min/1.73 m2) — Base Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col1 |
-| Imax (mL/min/1.73 m2) — Final Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col3 |
-| Imax (mL/min/1.73 m2) — Bootstrap Results of the Final Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col5 |
-| IIV eGFR0 (%) — Base Model | `Q312` · not captured | 26.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col1 |
-| IIV eGFR0 (%) — Base Model | `Q312` · not captured | 12.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col2 |
-| IIV eGFR0 (%) — Final Model | `Q312` · not captured | 22.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col3 |
-| IIV eGFR0 (%) — Final Model | `Q312` · not captured | 13.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col4 |
-| IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 21.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col5 |
-| IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 16.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col6 |
-| IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 18.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col7 |
-| Residual errorProportional (%) — Base Model | `Q316` · not captured | 17.4 | not captured | not captured | llm (not captured) | t0002:row25:col1 |
-| Residual errorProportional (%) — Base Model | `Q316` · not captured | 0.5 | not captured | not captured | llm (not captured) | t0002:row25:col2 |
-| Residual errorProportional (%) — Final Model | `Q316` · not captured | 17.2 | not captured | not captured | llm (not captured) | t0002:row25:col3 |
-| Residual errorProportional (%) — Final Model | `Q316` · not captured | 0.6 | not captured | not captured | llm (not captured) | t0002:row25:col4 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 17.1 | not captured | not captured | llm (not captured) | t0002:row25:col5 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 4.6 | not captured | not captured | llm (not captured) | t0002:row25:col6 |
-| Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 15.6 | not captured | not captured | llm (not captured) | t0002:row25:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ka (h−1) — Base Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col1 |
+| PK (driver) | Ka (h−1) — Final Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col3 |
+| PK (driver) | Ka (h−1) — Bootstrap Results of the Final Model | `Q49` · not captured | 3.09 | h−1 | not captured | exact (not captured) | t0002:row3:col5 |
+| PK (driver) | V/F (L) — Base Model | `Q76` · not captured | 1497 | L | not captured | exact (not captured) | t0002:row4:col1 |
+| PK (driver) | V/F (L) — Base Model | `Q76` · not captured | 11.1 | L | not captured | exact (not captured) | t0002:row4:col2 |
+| PK (driver) | V/F (L) — Final Model | `Q76` · not captured | 2248 | L | not captured | exact (not captured) | t0002:row4:col3 |
+| PK (driver) | V/F (L) — Final Model | `Q76` · not captured | 10.4 | L | not captured | exact (not captured) | t0002:row4:col4 |
+| PK (driver) | V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 2217 | L | not captured | exact (not captured) | t0002:row4:col5 |
+| PK (driver) | V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 12.9 | L | not captured | exact (not captured) | t0002:row4:col6 |
+| PK (driver) | V/F (L) — Bootstrap Results of the Final Model | `Q76` · not captured | 1660 | L | not captured | exact (not captured) | t0002:row4:col7 |
+| PK (driver) | CL/F (L/h) — Base Model | `Q27` · not captured | 24.7 | L/h | not captured | exact (not captured) | t0002:row5:col1 |
+| PK (driver) | CL/F (L/h) — Base Model | `Q27` · not captured | 4.2 | L/h | not captured | exact (not captured) | t0002:row5:col2 |
+| PK (driver) | CL/F (L/h) — Final Model | `Q27` · not captured | 33.7 | L/h | not captured | exact (not captured) | t0002:row5:col3 |
+| PK (driver) | CL/F (L/h) — Final Model | `Q27` · not captured | 6.9 | L/h | not captured | exact (not captured) | t0002:row5:col4 |
+| PK (driver) | CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 33.4 | L/h | not captured | exact (not captured) | t0002:row5:col5 |
+| PK (driver) | CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 9.3 | L/h | not captured | exact (not captured) | t0002:row5:col6 |
+| PK (driver) | CL/F (L/h) — Bootstrap Results of the Final Model | `Q27` · not captured | 27.3 | L/h | not captured | exact (not captured) | t0002:row5:col7 |
+| variability | IIV CL/F (%) — Base Model | `Q312` · not captured | 35.7 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col1 |
+| variability | IIV CL/F (%) — Base Model | `Q312` · not captured | 18.7 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col2 |
+| variability | IIV CL/F (%) — Final Model | `Q312` · not captured | 32.6 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col3 |
+| variability | IIV CL/F (%) — Final Model | `Q312` · not captured | 17.1 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col4 |
+| variability | IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 32.6 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col5 |
+| variability | IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 15.9 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col6 |
+| variability | IIV CL/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 27.0 | not captured | not captured | llm_corrected (not captured) | t0002:row9:col7 |
+| variability | IIV V/F (%) — Base Model | `Q312` · not captured | 89.6 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col1 |
+| variability | IIV V/F (%) — Base Model | `Q312` · not captured | 25.1 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col2 |
+| variability | IIV V/F (%) — Final Model | `Q312` · not captured | 88.6 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col3 |
+| variability | IIV V/F (%) — Final Model | `Q312` · not captured | 19.3 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col4 |
+| variability | IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 88.5 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col5 |
+| variability | IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 22.8 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col6 |
+| variability | IIV V/F (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 65.5 | not captured | not captured | llm_corrected (not captured) | t0002:row10:col7 |
+| variability | Residual errorAdditive (ng/mL) — Base Model | `Q317` · not captured | 2.31 | ng/mL | not captured | llm (not captured) | t0002:row11:col1 |
+| variability | Residual errorAdditive (ng/mL) — Base Model | `Q317` · not captured | 0.7 | ng/mL | not captured | llm (not captured) | t0002:row11:col2 |
+| variability | Residual errorAdditive (ng/mL) — Final Model | `Q317` · not captured | 2.20 | ng/mL | not captured | llm (not captured) | t0002:row11:col3 |
+| variability | Residual errorAdditive (ng/mL) — Final Model | `Q317` · not captured | 1.0 | ng/mL | not captured | llm (not captured) | t0002:row11:col4 |
+| variability | Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 2.19 | ng/mL | not captured | llm (not captured) | t0002:row11:col5 |
+| variability | Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 3.6 | ng/mL | not captured | llm (not captured) | t0002:row11:col6 |
+| variability | Residual errorAdditive (ng/mL) — Bootstrap Results of the Final Model | `Q317` · not captured | 2.02 | ng/mL | not captured | llm (not captured) | t0002:row11:col7 |
+| PK (driver) | β — Base Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col1 |
+| PK (driver) | β — Final Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col3 |
+| PK (driver) | β — Bootstrap Results of the Final Model | `Q47` · not captured | 0.264 | not captured | not captured | exact (not captured) | t0002:row14:col5 |
+| variability | IIV FPG0 ((%) — Base Model | `Q312` · not captured | 18.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col1 |
+| variability | IIV FPG0 ((%) — Base Model | `Q312` · not captured | 19.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col2 |
+| variability | IIV FPG0 ((%) — Final Model | `Q312` · not captured | 17.0 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col3 |
+| variability | IIV FPG0 ((%) — Final Model | `Q312` · not captured | 19.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col4 |
+| variability | IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 16.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col5 |
+| variability | IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 17.4 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col6 |
+| variability | IIV FPG0 ((%) — Bootstrap Results of the Final Model | `Q312` · not captured | 13.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row16:col7 |
+| variability | Residual errorProportional (%) — Base Model | `Q316` · not captured | 23.2 | not captured | not captured | llm (not captured) | t0002:row17:col1 |
+| variability | Residual errorProportional (%) — Base Model | `Q316` · not captured | 1.2 | not captured | not captured | llm (not captured) | t0002:row17:col2 |
+| variability | Residual errorProportional (%) — Final Model | `Q316` · not captured | 23.1 | not captured | not captured | llm (not captured) | t0002:row17:col3 |
+| variability | Residual errorProportional (%) — Final Model | `Q316` · not captured | 1.2 | not captured | not captured | llm (not captured) | t0002:row17:col4 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 23.1 | not captured | not captured | llm (not captured) | t0002:row17:col5 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 3.2 | not captured | not captured | llm (not captured) | t0002:row17:col6 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 21.7 | not captured | not captured | llm (not captured) | t0002:row17:col7 |
+| PD (effect) | IC50 (ng/mL) — Base Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col1 |
+| PD (effect) | IC50 (ng/mL) — Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col3 |
+| PD (effect) | IC50 (ng/mL) — Bootstrap Results of the Final Model | `Q322` · not captured | 10 | ng/mL | not captured | exact (not captured) | t0002:row20:col5 |
+| PD (effect) | Imax (mL/min/1.73 m2) — Base Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col1 |
+| PD (effect) | Imax (mL/min/1.73 m2) — Final Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col3 |
+| PD (effect) | Imax (mL/min/1.73 m2) — Bootstrap Results of the Final Model | `Q323` · not captured | 30 | mL/min/1.73 m2 | not captured | exact (not captured) | t0002:row21:col5 |
+| variability | IIV eGFR0 (%) — Base Model | `Q312` · not captured | 26.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col1 |
+| variability | IIV eGFR0 (%) — Base Model | `Q312` · not captured | 12.9 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col2 |
+| variability | IIV eGFR0 (%) — Final Model | `Q312` · not captured | 22.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col3 |
+| variability | IIV eGFR0 (%) — Final Model | `Q312` · not captured | 13.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col4 |
+| variability | IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 21.8 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col5 |
+| variability | IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 16.6 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col6 |
+| variability | IIV eGFR0 (%) — Bootstrap Results of the Final Model | `Q312` · not captured | 18.1 | not captured | not captured | llm_confirmed (not captured) | t0002:row24:col7 |
+| variability | Residual errorProportional (%) — Base Model | `Q316` · not captured | 17.4 | not captured | not captured | llm (not captured) | t0002:row25:col1 |
+| variability | Residual errorProportional (%) — Base Model | `Q316` · not captured | 0.5 | not captured | not captured | llm (not captured) | t0002:row25:col2 |
+| variability | Residual errorProportional (%) — Final Model | `Q316` · not captured | 17.2 | not captured | not captured | llm (not captured) | t0002:row25:col3 |
+| variability | Residual errorProportional (%) — Final Model | `Q316` · not captured | 0.6 | not captured | not captured | llm (not captured) | t0002:row25:col4 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 17.1 | not captured | not captured | llm (not captured) | t0002:row25:col5 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 4.6 | not captured | not captured | llm (not captured) | t0002:row25:col6 |
+| variability | Residual errorProportional (%) — Bootstrap Results of the Final Model | `Q316` · not captured | 15.6 | not captured | not captured | llm (not captured) | t0002:row25:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

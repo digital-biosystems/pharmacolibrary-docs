@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eltrombopag (concentrations from this paper's PK model) drives platelet count (in unknown): indirect response — drug inhibits the loss of platelet count.
+
+**Model:** No model was generated from this record.
+
+> Eltrombopag plasma concentrations (ng ml-1) stimulate platelet count via an indirect response model in which the drug linearly increases the production rate of platelet precursors (KIN 0.211 Gi l-1 h-1, KT 0.0214 h-1), with a slope SLOP of 0.648 ml μg-1, i.e. a 64.8% increase in production rate per 1 μg ml-1 increase in plasma eltrombopag concentration; no Emax/IC50/ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Farrell_2014`
 - **model family:** `indirect_response_ii`
 - **driver:** `pk_record`

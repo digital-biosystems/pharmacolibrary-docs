@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ETP drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the kaolin/carrageenan monoarthritis model, IL-4 concentrations in joint and spleen (measured by ELISA) increased significantly with all S. schiedeana treatments (SsEtOAc, F-14, ETP) and control drugs versus vehicle, but the paper gives no quantitative PD model, potency (IC50/EC50/Imax), or rate parameters for IL-4; the reported ETP values (ED50 = 0.25 mg/ear, Emax = 52.9%) refer to TPA ear edema inhibition, not IL-4. The mechanism for the IL-4 increase is not stated beyond a proposed immunomodulatory shift toward a Th2 (IL-4/IL-10) response counterbalancing Th1-driven inflammation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salinas-Sánchez_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

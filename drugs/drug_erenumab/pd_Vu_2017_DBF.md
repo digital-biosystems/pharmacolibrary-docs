@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erenumab (concentrations from this paper's PK model) drives dermal blood flow (in perfusion units): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Erenumab serum concentrations (ng/mL) directly and immediately inhibit the capsaicin-induced increase in dermal blood flow (DBF, perfusion units) via a simple inhibitory sigmoid Emax model, consistent with peripheral attenuation of CGRP action; an indirect response model was not superior, indicating no delay. Maximum inhibition (Imax) was 89% (95% CI 87–91%), with IC50 255 ng/mL and IC99 1134 ng/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vu_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

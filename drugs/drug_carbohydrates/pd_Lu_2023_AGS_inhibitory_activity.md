@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> This is an in vitro enzyme-inhibition study, not a pharmacodynamic model: 28 natural compounds (concentrations in µM) were tested for inhibition of α-glucosidase (AGS), with IC50 values of 35.76 ± 0.40 to 164.5 ± 15.5 µM for compounds 3, 8, 9, 11, 14, 16, and 17 versus acarbose (IC50 = 422.3 ± 8.44 µM); autolytimycin (3) was most potent and inhibited AGS non-competitively (decreased Vmax, unchanged Km), while 9, 11, and 16 showed mixed-type inhibition (increased Km, reduced Vmax). No PD model parameters (Emax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lu_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

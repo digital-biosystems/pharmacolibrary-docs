@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cibenzoline drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In voltage-clamped isolated guinea-pig cardiac myocytes, cibenzoline (1, 2 and 5 µM) directly and concentration-dependently inhibited the peak myocardial Ca2+ inward current (ICa) with an IC50 of 14 µM; block was use-dependent (about -50% at 2 Hz vs -15% at 0.2 Hz with 2 µM) and potential-dependent. Consistent with this Ca2+ channel blocking mechanism, cibenzoline also inhibited contractile force with IC50 values of 35 µM in guinea-pig papillary muscles and 55 µM in KCl-contracted rat aortic strips; no kinetic parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holck_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

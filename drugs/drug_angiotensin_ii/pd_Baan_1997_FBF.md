@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Angiotensin II (measured concentrations) drives forearm blood flow (in % change): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Angiotensin II infused into the forearm acts directly (concentration–response, sigmoid Emax) on forearm blood flow, producing a concentration-dependent vasoconstriction (decrease in FBF, % change) mediated by AT1-receptors. The paper reports a maximal decrease in FBFi of -78 ± 2% (control) with EC50 ≈ -9.5 ± 0.14 log M (value given under indomethacin, where Emax was -84 ± 3%); losartan reduced the maximal effect to -17 ± 6%. No kin, kout, ke0, or effect-compartment parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Baan_1997`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

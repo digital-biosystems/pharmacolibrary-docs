@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RUC-4 (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In citrate-anticoagulated blood, increasing RUC-4 concentrations (µM) progressively inhibited the VerifyNow ADP + PGE1 assay response (reaction units, % inhibition), consistent with αIIbβ3 receptor occupancy; the record fits this as a sigmoid Emax concentration–response with IC50 ≈ 0.12 µM for the ADP + PGE1 assay (other reported IC50 values 0.07–0.14 µM across assays/conditions). The paper does not state an explicit mechanistic model (no Imax/Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bentur_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,15 +30,15 @@ Bentur OS; Li J; Jiang CS; Martin LH; Kereiakes DJ; Coller BS et al. (2021). TH 
   ·  DOI: [10.1055/s-0041-1732343](https://doi.org/10.1055/s-0041-1732343)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.14 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col3 |
-| IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.12 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col4 |
-| IC 50 (µM) — p value | `Q322` · not captured | 0.08 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col5 |
-| IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.09 | µM | not captured | space_fold (not captured) | TB210031-1:row1:col3 |
-| IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.07 | µM | not captured | space_fold (not captured) | TB210031-1:row1:col4 |
-| IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.10 | µM | not captured | space_fold (not captured) | TB210031-1:row2:col3 |
-| IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.08 | µM | not captured | space_fold (not captured) | TB210031-1:row2:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.14 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col3 |
+| PD (effect) | IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.12 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col4 |
+| PD (effect) | IC 50 (µM) — p value | `Q322` · not captured | 0.08 | µM | not captured | space_fold (not captured) | TB210031-1:row0:col5 |
+| PD (effect) | IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.09 | µM | not captured | space_fold (not captured) | TB210031-1:row1:col3 |
+| PD (effect) | IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.07 | µM | not captured | space_fold (not captured) | TB210031-1:row1:col4 |
+| PD (effect) | IC 50 (µM) — iso-TRAP | `Q322` · not captured | 0.10 | µM | not captured | space_fold (not captured) | TB210031-1:row2:col3 |
+| PD (effect) | IC 50 (µM) — ADP + PGE 1 | `Q322` · not captured | 0.08 | µM | not captured | space_fold (not captured) | TB210031-1:row2:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

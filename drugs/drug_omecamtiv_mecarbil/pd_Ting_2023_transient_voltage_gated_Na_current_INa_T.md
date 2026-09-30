@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omecamtiv mecarbil (concentrations from the PK model of Chen_2022) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Omecamtiv mecarbil (0.3–100 µM) directly stimulates the transient voltage-gated Na+ current (INa(T)) in GH3 pituitary cells, described by a Hill (sigmoid Emax) concentration–response equation with an EC50 of 15.8 µM; the paper does not state Emax or nH values for INa(T), and the mechanism is a direct stimulatory effect on current amplitude (with a depolarizing shift of the steady-state inactivation curve), not an effect on production or elimination rates.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ting_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

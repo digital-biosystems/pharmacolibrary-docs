@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | — | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
 
 ## ADME sites
 

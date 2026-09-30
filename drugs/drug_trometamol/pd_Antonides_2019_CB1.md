@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AB-FUBINACA, AMB-FUBINACA, 5F-MDMB-PINACA, AB-CHMINACA drive CB1 receptor activation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Synthetic cannabinoid agonists (AB-FUBINACA, AMB-FUBINACA, 5F-MDMB-PINACA, AB-CHMINACA and their enantiomers) directly activate CB1 and CB2 receptors (β-arrestin2 recruitment in a NanoLuc live-cell reporter assay), with concentration-effect curves fitted by a four-parameter logistic (Emax) model; trometamol itself is not described as acting on the response. For the AB-FUBINACA 2-fluorobenzyl isomers at CB2, EC50 values were 14.1 ((S)-isomer) and 0.627 ((R)-isomer), units not stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Antonides_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Antonides LH; Cannaert A; Norman C; Vives L; Harrison A; Costello A; et al. et a
   ·  DOI: [10.3389/fchem.2019.00321](https://doi.org/10.3389/fchem.2019.00321)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| (S)-AB-FUBINACA 2-fluorobenzyl isomer (8) — CB2 | `Q358` · not captured | 14.1 | not captured | not captured | llm (not captured) | T1:row20:col3 |
-| (R)-AB-FUBINACA 2-fluorobenzyl isomer (8) — CB2 | `Q358` · not captured | 0.627 | not captured | not captured | llm (not captured) | T1:row21:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | (S)-AB-FUBINACA 2-fluorobenzyl isomer (8) — CB2 | `Q358` · not captured | 14.1 | not captured | not captured | llm (not captured) | T1:row20:col3 |
+| PK (driver) | (R)-AB-FUBINACA 2-fluorobenzyl isomer (8) — CB2 | `Q358` · not captured | 0.627 | not captured | not captured | llm (not captured) | T1:row21:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

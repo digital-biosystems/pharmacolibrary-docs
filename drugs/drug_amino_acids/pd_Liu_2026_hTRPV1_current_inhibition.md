@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** P5 drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> P5 (DQKNC) concentration-dependently inhibits TRPV1 (hTRPV1) currents in whole-cell patch-clamp recordings, fitted to a Hill/sigmoid Emax equation; the IC50 is 0.71 μM (86.57 ± 6.05% inhibition at 100 μM), with negligible inhibition of Nav1.5, Nav1.7, Kv4.2 (38.6 ± 7.1% at 100 μM) and hERG (28.6 ± 12.8% at 100 μM). The paper does not state Imax, Hill coefficient, or any kinetic (kin/kout/ke0) values, and the mechanism is direct channel blockade (blocking Ca2+ influx through TRPV1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

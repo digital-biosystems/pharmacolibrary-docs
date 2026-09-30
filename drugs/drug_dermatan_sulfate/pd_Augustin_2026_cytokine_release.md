@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MAGE-A4-TCB (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> MAGE-A4-TCB concentrations (0.05–50 nM) were applied to whole blood to measure cytokine release (IFN-gamma, IL-2, IL-4, IL-6, IL-8, IL-10, TNF-alpha, GM-CSF), analyzed as a sigmoid Emax (stimulatory) concentration-effect relationship; the paper does not state the mechanism beyond T-cell engagement via CD3, and no potency or rate values (EC50, Emax, gamma, ke0) are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Augustin_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

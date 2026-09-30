@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** R-138727 drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plasma R-138727 (active metabolite of prasugrel) concentrations were linked to maximal platelet aggregation (measured by light transmittance) via an association–dissociation model between R-138727 and its platelet receptor, describing prasugrel's inhibitory effect on platelet aggregation; the excerpts do not state potency (IC50/Imax) or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

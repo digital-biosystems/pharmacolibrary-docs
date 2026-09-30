@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Calicheamicin (measured concentrations) drives name (in MRD neg) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking drug concentrations to MRD status; it only reports in vitro calicheamicin (the cytotoxic payload of inotuzumab ozogamicin) MTT IC50 values (range 0.035–27.27 ng/ml) which were lower in MRD-negative than MRD-positive patients (median 0.26 vs 3.12 ng/ml, p = 0.032, n = 10), with no mechanism, Imax/Emax, kin/kout, ke0, or gamma stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pennesi_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

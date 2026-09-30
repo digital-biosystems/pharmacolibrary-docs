@@ -25,9 +25,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_1992](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Martin_1992_thrombolysis](drugs/drug_alteplase/pd_Martin_1992_thrombolysis.md) | name ← BM 06.021 · stimulation effect | — | Martin U et al., Pharmacokinetic and thrombolytic proper…, Naunyn-Schmiedeberg's archi… (1992) | [10.1007/BF00167579](https://doi.org/10.1007/BF00167579) |
 
 ## ADME sites
 

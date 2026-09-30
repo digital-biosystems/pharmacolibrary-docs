@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> | [Dorantes_1992_reference](drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md) | 1-compartment, IV | 5 | Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992) | [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.133). The first reading is what the record holds.">cross-check: disputed</span> | [Dorantes_1992_reference](drugs/drug_chloroxylenol/Chloroxylenol_Dorantes1992_reference.md) | model (no simulator) | 1-compartment, IV | 5 | Dorantes A et al., Pharmacokinetic and metabolic dispositi…, Pharmaceutical research (1992) | [10.1023/a:1015814513373](https://doi.org/10.1023/a:1015814513373) |
 
 ## ADME sites
 

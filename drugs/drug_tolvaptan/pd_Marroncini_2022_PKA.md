@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives PKA (in normalized vs 0 µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan, acting as a V2 receptor antagonist, reduced cAMP and thereby decreased the expression of the catalytic α subunit of PKA (measured by Western blot, normalized vs 0 µM tolvaptan) in HCT-8, HepG2 and SK-N-AS cancer cell lines; the paper does not state a quantitative PD model for the PKA response, but reports antiproliferative IC50 values of 52 µM (HCT-8), 38 µM (HepG2) and 40 µM (SK-N-AS).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

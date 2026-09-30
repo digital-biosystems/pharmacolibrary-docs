@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omeprazole (measured concentrations) drives PGF2alpha (in pg 10^-6 cells h^-1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In guinea-pig gastric mucosal cells, acid-activated omeprazole (dissolved in PEG 400, pH 2) was tested against spontaneous PGF2alpha release (pg 10^-6 cells h^-1), but the paper reports that no significant changes could be detected in spontaneous PGF2alpha release, so no potency values (IC50/Imax) or mechanism are given for this response; the concentration-dependent inhibition with IC50 14.3 ± 4.8 µM applied to PGI2, not PGF2alpha.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hell_1987`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

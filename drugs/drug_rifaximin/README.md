@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Francis_2019_reference](drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md) | 1-compartment, IV | 2 | Francis J et al., A Population Pharmacokinetic Analysis S…, Antimicrobial agents and ch… (2019) | [10.1128/aac.01964-18](https://doi.org/10.1128/aac.01964-18) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_reference](drugs/drug_rifaximin/Rifaximin_Wang2021_reference.md) | 2-compartment (no model) | 10 | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span> | [Francis_2019_reference](drugs/drug_rifaximin/Rifaximin_Francis2019_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Francis J et al., A Population Pharmacokinetic Analysis S…, Antimicrobial agents and ch… (2019) | [10.1128/aac.01964-18](https://doi.org/10.1128/aac.01964-18) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Wang_2021_reference](drugs/drug_rifaximin/Rifaximin_Wang2021_reference.md) | — | 2-compartment (no model) | 10 | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.63). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2021](drugs/drug_rifaximin/pd_Wang_2021_log10CFU_gland.md) | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023](drugs/drug_rifaximin/pd_Wang_2023_bacterial_colony_count_reduction.md) | Wang H et al., A PK/PD model for the evaluation of cli…, BMC veterinary research (2023) | [10.1186/s12917-022-03564-2](https://doi.org/10.1186/s12917-022-03564-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.63). The first reading is what the record holds.">cross-check: disputed</span> | [Wang_2021_log10CFU_gland](drugs/drug_rifaximin/pd_Wang_2021_log10CFU_gland.md) | name ← rifaximin · direct sigmoid Emax (Hill) effect | — | Wang H et al., PK/PD Modeling to Assess Rifaximin Clin…, Frontiers in veterinary sci… (2021) | [10.3389/fvets.2021.651369](https://doi.org/10.3389/fvets.2021.651369) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Wang_2023_bacterial_colony_count_reduction](drugs/drug_rifaximin/pd_Wang_2023_bacterial_colony_count_reduction.md) | name ← rifaximin · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Wang H et al., A PK/PD model for the evaluation of cli…, BMC veterinary research (2023) | [10.1186/s12917-022-03564-2](https://doi.org/10.1186/s12917-022-03564-2) |
 
 ## ADME sites
 

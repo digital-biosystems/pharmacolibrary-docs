@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulodexide (measured concentrations) drives vimentin expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In FGF-2-stimulated HK2 tubular cells, sulodexide (50 μg/ml, 6 h) completely prevented the FGF-2-induced overexpression of vimentin (VIM) measured by real-time PCR, without affecting basal levels; the paper attributes this to inhibition of heparanase-1 (HPSE), an effect due exclusively to the heparin component, with an HPSE IC50 of 5 μg/ml and complete inhibition at 20 μg/ml. No quantitative PD model (e.g., Emax/IC50 for the VIM response itself) is given for the vimentin endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Masola_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

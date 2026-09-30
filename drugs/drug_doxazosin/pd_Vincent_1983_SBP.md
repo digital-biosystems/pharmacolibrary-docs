@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from this paper's PK model) drives systolic blood pressure (in mmHg): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Doxazosin plasma concentrations (ng/ml) were related to the fall in systolic blood pressure (mmHg) in six normotensive volunteers after 1 mg i.v. and 2 mg oral doses, using an effect-compartment model; a significant correlation was found between effect-compartment doxazosin concentration and hypotensive effect, but the paper does not report potency (IC50/EC50/Emax) or ke0 values, nor a specific effect form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vincent_1983`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

@@ -24,11 +24,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehan_2023](drugs/drug_potassium_acetate/pd_Rehan_2023_Arthritis_clinical_score.md) | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehan_2023](drugs/drug_potassium_acetate/pd_Rehan_2023_Cytokine_secretion.md) | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Rehan_2023](drugs/drug_potassium_acetate/pd_Rehan_2023_GLuc_activity.md) | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehan_2023_Arthritis_clinical_score](drugs/drug_potassium_acetate/pd_Rehan_2023_Arthritis_clinical_score.md) | name ← KZR-8445 · inhibition effect | — | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Rehan_2023_Cytokine_secretion](drugs/drug_potassium_acetate/pd_Rehan_2023_Cytokine_secretion.md) | name ← KZR-8445 · inhibition effect | — | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Rehan_2023_GLuc_activity](drugs/drug_potassium_acetate/pd_Rehan_2023_GLuc_activity.md) | name ← KZR-8445 · inhibition effect | — | Rehan S et al., Signal peptide mimicry primes Sec61 for…, Nature chemical biology (2023) | [10.1038/s41589-023-01326-1](https://doi.org/10.1038/s41589-023-01326-1) |
 
 ## ADME sites
 

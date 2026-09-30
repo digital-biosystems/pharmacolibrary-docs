@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Rejected: the cannabinoids (cannabigerol) record is internally inconsistent — elimination rate constant kel = 1.43 1/h contradicts the reported terminal half-life t1/2z = 29.22 h, and Vmax is reported as 0.0041 L/kg, a volume unit for a metabolic rate parameter.**

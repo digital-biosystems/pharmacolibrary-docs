@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diflunisal (concentrations from the PK model of Gao_1998) drives acyl-CoA synthetase activity toward docosahexaenoic acid (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Diflunisal directly inhibits acyl-CoA synthetase activity toward docosahexaenoic acid (DHA) in mouse liver and brain mitochondria in vitro; the paper gives no PD model, mechanism beyond direct enzyme inhibition, or IC50 for DHA, reporting only weak inhibition of docosahexaenoyl-CoA formation at 1 mM diflunisal (tested range 0.01–1 mM, up to 3 mM for some drugs), with IC50 values stated only for other substrates (e.g. octanoic acid 78.7 µM, palmitic acid 236.5 µM in liver).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kasuya_2013`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

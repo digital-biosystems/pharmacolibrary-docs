@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives mitochondrial oxygen consumption rate (in relative units): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking morpholine salicylate (or A36/compound 82) concentrations to mitochondrial oxygen consumption rate (OCR); no OCR potency values (EC50, Emax, etc.) are given. Mechanistically, A36 is described as a CAST–calpain-2 protein-protein interaction stabilizer that prevents CAST degradation, suppresses Drp1-mediated mitochondrial fragmentation, and preserves mitochondrial function, with reported EC50s of ~2.77 μM (TMRM), ~1.55 μM (MTT), and ~3.55 μM (CAST protein up-regulation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

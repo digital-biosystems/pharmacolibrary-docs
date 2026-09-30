@@ -23,22 +23,22 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011_patients undergoing elective percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | — (no model) | 0 | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004_patients undergoing percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | — (no model) | 0 | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Akimoto_2011_patients undergoing elective percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md) | — | — (no model) | 0 | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--neutral">not modelled</span> | [Cox_2004_patients undergoing percutaneous coronary intervention](drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md) | — | — (no model) | 0 | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_activated_clotting_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_activated_partial_thromboplastin_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_ecarin_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_endogenous_thrombin_potential.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011](drugs/drug_argatroban/pd_Akimoto_2011_prothrombinase_induced_clotting_time.md) | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
-| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Cox_2004](drugs/drug_argatroban/pd_Cox_2004_ACT.md) | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Chang_2016](drugs/drug_argatroban/pd_Chang_2016_unknown.md) | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011_activated_clotting_time](drugs/drug_argatroban/pd_Akimoto_2011_activated_clotting_time.md) | name ← argatroban · direct sigmoid Emax (Hill) effect | — | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011_activated_partial_thromboplastin_time](drugs/drug_argatroban/pd_Akimoto_2011_activated_partial_thromboplastin_time.md) | name ← argatroban · direct sigmoid Emax (Hill) effect | — | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011_ecarin_time](drugs/drug_argatroban/pd_Akimoto_2011_ecarin_time.md) | name ← argatroban · direct sigmoid Emax (Hill) effect | — | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011_endogenous_thrombin_potential](drugs/drug_argatroban/pd_Akimoto_2011_endogenous_thrombin_potential.md) | name ← argatroban · direct sigmoid Emax (Hill) effect | — | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Akimoto_2011_prothrombinase_induced_clotting_time](drugs/drug_argatroban/pd_Akimoto_2011_prothrombinase_induced_clotting_time.md) | name ← argatroban · direct sigmoid Emax (Hill) effect | — | Akimoto K et al., Anticoagulation with argatroban for ele…, Journal of clinical pharmac… (2011) | [10.1177/0091270010372627](https://doi.org/10.1177/0091270010372627) |
+| <span class="pk-badge pk-badge--green">accepted (caveats)</span> | [Cox_2004_ACT](drugs/drug_argatroban/pd_Cox_2004_ACT.md) | activated clotting time ← argatroban · direct sigmoid Emax (Hill) effect | — | Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004) | [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Chang_2016_unknown](drugs/drug_argatroban/pd_Chang_2016_unknown.md) | coagulation activity ← argatroban, dabigatran, rivaroxaban, apixaban, fondaparinux · direct sigmoid Emax (Hill) effect | — | Chang JB et al., A novel, rapid method to compare the th…, Scientific reports (2016) | [10.1038/srep29387](https://doi.org/10.1038/srep29387) |
 
 ## ADME sites
 

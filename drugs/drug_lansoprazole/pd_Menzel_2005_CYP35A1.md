@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives CYP35A1 mRNA expression (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lansoprazole concentration-dependently induces CYP35A1 mRNA expression in C. elegans (semi-quantitative RT-PCR, normalized to act-1); a two-fold expression increase was reached at 2.2% of the EC50 for reproduction. The paper does not state a PD mechanism or model (no Imax/IC50/EC50/Emax/kin/kout/ke0 values for this effect).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Menzel_2005`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Triptans (sumatriptan, zolmitriptan, eletriptan, rizatriptan, naratriptan) drive name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Triptans (including rizatriptan) were related to headache recurrence rate (percent) via receptor occupancy of serotonin 5-HT1B (Φ1B) and 5-HT1D (Φ1D), with higher Φ1D at 12 h post-dose correlating with greater inhibition of recurrence; the paper does not state a formal PD model (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma). Reported values include rizatriptan t1/2 1.60 h, fu 0.86, and Ki 7.24 nM (5-HT1B) and 2.34 nM (5-HT1D).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tokuoka_2015`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,23 +30,23 @@ Tokuoka K; Takayanagi R; Toyabe M; Watanabe M; Kitagawa Y; Yamada Y et al. (2015
   ·  DOI: [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| t1/2 (hr) — Sumatriptan (subcutaneous injection) [19] | `Q57` · not captured | 1.46 | hr | not captured | exact (not captured) | Tab1:row1:col3 |
-| t1/2 (hr) — Zolmitriptan (oral tablet) | `Q57` · not captured | 2.40 | hr | not captured | exact (not captured) | Tab1:row1:col4 |
-| t1/2 (hr) — Active metabolite [12, 20, 21] | `Q57` · not captured | 273.36 | hr | not captured | exact (not captured) | Tab1:row1:col5 |
-| t1/2 (hr) — Eletriptan (oral tablet) [22] | `Q57` · not captured | 3.20 | hr | not captured | exact (not captured) | Tab1:row1:col6 |
-| t1/2 (hr) — Rizatriptan (oral tablet) [23, 24] | `Q57` · not captured | 1.60 | hr | not captured | exact (not captured) | Tab1:row1:col7 |
-| t1/2 (hr) — Naratriptan (oral tablet) [15] | `Q57` · not captured | 5.05 | hr | not captured | exact (not captured) | Tab1:row1:col8 |
-| fu — Sumatriptan (subcutaneous injection) [19] | `Q46` · not captured | 0.66 | not captured | not captured | exact (not captured) | Tab1:row3:col3 |
-| fu — Zolmitriptan (oral tablet) | `Q46` · not captured | 0.75 | oral tablet | not captured | exact (not captured) | Tab1:row3:col4 |
-| fu — Eletriptan (oral tablet) [22] | `Q46` · not captured | 0.13 | not captured | not captured | exact (not captured) | Tab1:row3:col6 |
-| fu — Rizatriptan (oral tablet) [23, 24] | `Q46` · not captured | 0.86 | not captured | not captured | exact (not captured) | Tab1:row3:col7 |
-| fu — Naratriptan (oral tablet) [15] | `Q46` · not captured | 0.71 | not captured | not captured | exact (not captured) | Tab1:row3:col8 |
-| Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row4:col3 |
-| Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 7.24 | nM | not captured | llm (not captured) | Tab1:row4:col7 |
-| Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row5:col3 |
-| Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 2.34 | nM | not captured | llm (not captured) | Tab1:row5:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | t1/2 (hr) — Sumatriptan (subcutaneous injection) [19] | `Q57` · not captured | 1.46 | hr | not captured | exact (not captured) | Tab1:row1:col3 |
+| PK (driver) | t1/2 (hr) — Zolmitriptan (oral tablet) | `Q57` · not captured | 2.40 | hr | not captured | exact (not captured) | Tab1:row1:col4 |
+| PK (driver) | t1/2 (hr) — Active metabolite [12, 20, 21] | `Q57` · not captured | 273.36 | hr | not captured | exact (not captured) | Tab1:row1:col5 |
+| PK (driver) | t1/2 (hr) — Eletriptan (oral tablet) [22] | `Q57` · not captured | 3.20 | hr | not captured | exact (not captured) | Tab1:row1:col6 |
+| PK (driver) | t1/2 (hr) — Rizatriptan (oral tablet) [23, 24] | `Q57` · not captured | 1.60 | hr | not captured | exact (not captured) | Tab1:row1:col7 |
+| PK (driver) | t1/2 (hr) — Naratriptan (oral tablet) [15] | `Q57` · not captured | 5.05 | hr | not captured | exact (not captured) | Tab1:row1:col8 |
+| PK (driver) | fu — Sumatriptan (subcutaneous injection) [19] | `Q46` · not captured | 0.66 | not captured | not captured | exact (not captured) | Tab1:row3:col3 |
+| PK (driver) | fu — Zolmitriptan (oral tablet) | `Q46` · not captured | 0.75 | oral tablet | not captured | exact (not captured) | Tab1:row3:col4 |
+| PK (driver) | fu — Eletriptan (oral tablet) [22] | `Q46` · not captured | 0.13 | not captured | not captured | exact (not captured) | Tab1:row3:col6 |
+| PK (driver) | fu — Rizatriptan (oral tablet) [23, 24] | `Q46` · not captured | 0.86 | not captured | not captured | exact (not captured) | Tab1:row3:col7 |
+| PK (driver) | fu — Naratriptan (oral tablet) [15] | `Q46` · not captured | 0.71 | not captured | not captured | exact (not captured) | Tab1:row3:col8 |
+| PD (effect) | Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row4:col3 |
+| PK (driver) | Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 7.24 | nM | not captured | llm (not captured) | Tab1:row4:col7 |
+| PD (effect) | Ki (nM) — Sumatriptan (subcutaneous injection) [19] | `Q322` · not captured | 12.59 | nM | not captured | llm (not captured) | Tab1:row5:col3 |
+| PK (driver) | Ki (nM) — Rizatriptan (oral tablet) [23, 24] | `Q1` · not captured | 2.34 | nM | not captured | llm (not captured) | Tab1:row5:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

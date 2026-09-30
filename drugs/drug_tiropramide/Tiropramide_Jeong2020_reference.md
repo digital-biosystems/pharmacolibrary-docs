@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Only clearance was extracted — no volume.**
@@ -122,6 +124,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Jeong_2020_table_3:row1:col2', 'Jeong_2020_table_3:row1:col3', 'Jeong_2020_table_3:row1:col4', 'Jeong_2020_table_3:row1:col6', 'Jeong_2020_table_3:row1:col7', 'Jeong_2020_table_3:row1:col8', 'Jeong_2020_table_3:row1:col10', 'Jeong_2020_table_3:row1:col11', 'Jeong_2020_table_3:row1:col12', 'Jeong_2020_table_3:row1:col14', 'Jeong_2020_table_3:row1:col15', 'Jeong_2020_table_3:row1:col16', 'Jeong_2020_table_3:row1:col18', 'Jeong_2020_table_3:row1:col19', 'Jeong_2020_table_3:row1:col21', 'Jeong_2020_table_3:row1:col22', 'Jeong_2020_table_3:row1:col23'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Jeong_2020_table_3:row2:col2', 'Jeong_2020_table_3:row2:col3', 'Jeong_2020_table_3:row2:col4', 'Jeong_2020_table_3:row2:col6', 'Jeong_2020_table_3:row2:col7', 'Jeong_2020_table_3:row2:col8', 'Jeong_2020_table_3:row2:col10', 'Jeong_2020_table_3:row2:col11', 'Jeong_2020_table_3:row2:col12', 'Jeong_2020_table_3:row2:col14', 'Jeong_2020_table_3:row2:col15', 'Jeong_2020_table_3:row2:col16', 'Jeong_2020_table_3:row2:col18', 'Jeong_2020_table_3:row2:col19', 'Jeong_2020_table_3:row2:col21', 'Jeong_2020_table_3:row2:col22', 'Jeong_2020_table_3:row2:col23'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['pharmaceutics-12-00374-t006:row6:col1', 'pharmaceutics-12-00374-t006:row6:col2', 'pharmaceutics-12-00374-t006:row6:col3', 'pharmaceutics-12-00374-t006:row18:col1', 'pharmaceutics-12-00374-t006:row18:col2', 'pharmaceutics-12-00374-t006:row18:col3'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-12-00374-t006:row2:col1', 'pharmaceutics-12-00374-t006:row2:col2', 'pharmaceutics-12-00374-t006:row2:col3', 'pharmaceutics-12-00374-t006:row14:col1', 'pharmaceutics-12-00374-t006:row14:col2', 'pharmaceutics-12-00374-t006:row14:col3'] |
+| C5_unit_missing_Q95 | fail | [time] | not captured | not captured | not captured | ['pharmaceutics-12-00374-t006:row3:col1', 'pharmaceutics-12-00374-t006:row3:col2', 'pharmaceutics-12-00374-t006:row3:col3', 'pharmaceutics-12-00374-t006:row15:col1', 'pharmaceutics-12-00374-t006:row15:col2', 'pharmaceutics-12-00374-t006:row15:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 467 L/h | not captured | not captured | ['pharmaceutics-12-00374-t006:row5:col1', 'pharmaceutics-12-00374-t006:row5:col2', 'pharmaceutics-12-00374-t006:row5:col3', 'pharmaceutics-12-00374-t006:row17:col1', 'pharmaceutics-12-00374-t006:row17:col2', 'pharmaceutics-12-00374-t006:row17:col3'] |

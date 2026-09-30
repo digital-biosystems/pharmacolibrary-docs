@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Chae_2018) drives PPARg activation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In a COS-7 cell dual-luciferase PPARγ transactivation assay, telmisartan concentrations directly stimulate PPARγ activation (reported as % of pioglitazone's maximum set to 100%), acting as a partial agonist with EC50 = 4.3 µM and Amax = 60.5% (pioglitazone EC50 = 1.6 µM; candesartan cilexetil EC50 = 4.2 µM, Amax 59.8%; compound 1 EC50 = 9.1 µM). The paper describes a direct concentration–activation (Emax) relationship and does not state kin/kout or an effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schoepf_2020`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Schoepf AM; Salcher S; Obexer P; Gust R et al. (2020). European journal of medic
   ·  DOI: [10.1016/j.ejmech.2020.112258](https://doi.org/10.1016/j.ejmech.2020.112258)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| candesartan cilexetil — EC 50 [mM] b,c | `Q321` · not captured | 4.2 | mM | not captured | llm (not captured) | tab_0:row1:col2 |
-| 1 — EC 50 [mM] b,c | `Q321` · not captured | 9.1 | mM | not captured | llm (not captured) | tab_0:row7:col2 |
-| pioglitazone — EC 50 [mM] b,c | `Q321` · not captured | 1.6 | mM | not captured | llm (not captured) | tab_0:row13:col2 |
-| telmisartan — EC 50 [mM] b,c | `Q321` · not captured | 4.3 | mM | not captured | llm (not captured) | tab_0:row14:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | candesartan cilexetil — EC 50 [mM] b,c | `Q321` · not captured | 4.2 | mM | not captured | llm (not captured) | tab_0:row1:col2 |
+| PD (effect) | 1 — EC 50 [mM] b,c | `Q321` · not captured | 9.1 | mM | not captured | llm (not captured) | tab_0:row7:col2 |
+| PD (effect) | pioglitazone — EC 50 [mM] b,c | `Q321` · not captured | 1.6 | mM | not captured | llm (not captured) | tab_0:row13:col2 |
+| PD (effect) | telmisartan — EC 50 [mM] b,c | `Q321` · not captured | 4.3 | mM | not captured | llm (not captured) | tab_0:row14:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tumor necrosis factor alpha (measured concentrations) drives IL-1β effect on CRBP1 (in % of expression remaining): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> TNF-α (pg/mL) dose-dependently downregulates CRBP1 mRNA expression (reported as % of expression remaining relative to vehicle control) in quiescent LX-2 stellate cells, described by an inhibitory Emax exposure-response model; the paper does not state the numeric EC50 or Emax values for CRBP1 (they are in Table 2, not in the excerpts), and no turnover (kin/kout) or effect-compartment parameters are given. The paper does not describe retinol concentrations acting on this response, and the record's response label (IL-1β effect on CRBP1) does not match the paper, which attributes the CRBP1 downregulation to TNF-α.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Czuba_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

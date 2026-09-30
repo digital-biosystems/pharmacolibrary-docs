@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ERX-208 (measured concentrations) drives name (in % positive cells) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links trometamol to inhibition of Ki67 expression (% positive cells) driven by ERX-208 concentrations in nM, but the excerpts do not describe a Ki67 response or any PD model for it, so no mechanism, effect-form, or potency parameters for Ki67 are given. The excerpts only report ERX-208 reducing OCa cell viability with an IC50 of ~100 nM (vs ~500 nM for ERX-41), without stating a quantitative pharmacodynamic mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Viswanadhapalli_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

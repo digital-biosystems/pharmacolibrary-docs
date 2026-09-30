@@ -38,9 +38,9 @@ Chlorthalidone has also been found useful in edema due to various forms of renal
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Fleuren_1979_reference](drugs/drug_chlortalidone/Chlortalidone_Fleuren1979_reference.md) | 1-compartment (no model) | 3 | Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal of clinica… (1979) | [10.1007/BF00563556](https://doi.org/10.1007/BF00563556) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Fleuren_1979_reference](drugs/drug_chlortalidone/Chlortalidone_Fleuren1979_reference.md) | — | 1-compartment (no model) | 3 | Fleuren HL et al., Absolute bioavailability of chlorthalid…, European journal of clinica… (1979) | [10.1007/BF00563556](https://doi.org/10.1007/BF00563556) |
 
 ## Pharmacogenomics (PGx)
 

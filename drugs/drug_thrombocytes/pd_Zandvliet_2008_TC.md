@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Indisulam, carboplatin (measured concentrations) drive thrombocyte count (in unknown): indirect response — drug inhibits the production of thrombocyte count.
+
+**Model:** No model was generated from this record.
+
+> Thrombocyte counts (241 measurements) were described by a semiphysiological Friberg-type myelosuppression model in which indisulam and carboplatin concentrations inhibit the proliferation rate of thrombocyte progenitor cells (indirect inhibition of production); the indisulam slope was fixed to its previously estimated monotherapy value and the data did not support estimating the carboplatin slope independently. The paper reports a mean transit time (MTT) of 178 h (range 175 h) with gamma 0.147 (range 0.143) in one fit and MTT 142 h (range 125 h) with gamma 0.176 (range 0.155) in another, but the excerpts do not state which set corresponds to thrombocytes nor give numeric potency values (IC50
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zandvliet_2008`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Zandvliet AS; Schellens JH; Dittrich C; Wanders J; Beijnen JH; Huitema AD et al.
   ·  DOI: [10.1111/j.1365-2125.2008.03230.x](https://doi.org/10.1111/j.1365-2125.2008.03230.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MTT (h) — Estimate | `Q81` · not captured | 178 | h | not captured | exact (not captured) | tab_1:row2:col1 |
-| MTT (h) — (Range)* | `Q81` · not captured | 175 | h | not captured | exact (not captured) | tab_1:row2:col3 |
-| Gamma — Estimate | `Q325` · not captured | 0.147 | not captured | not captured | exact (not captured) | tab_1:row3:col1 |
-| Gamma — (Range)* | `Q325` · not captured | 0.143 | not captured | not captured | exact (not captured) | tab_1:row3:col3 |
-| Residual error (%) — Estimate | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row6:col1 |
-| Residual error (%) — (Range)* | `Q315` · not captured | 42 | not captured | not captured | llm (not captured) | tab_1:row6:col3 |
-| MTT (h) — Estimate | `Q81` · not captured | 142 | h | not captured | exact (not captured) | tab_1:row9:col1 |
-| MTT (h) — (Range)* | `Q81` · not captured | 125 | h | not captured | exact (not captured) | tab_1:row9:col3 |
-| Gamma — Estimate | `Q325` · not captured | 0.176 | not captured | not captured | exact (not captured) | tab_1:row10:col1 |
-| Gamma — (Range)* | `Q325` · not captured | 0.155 | not captured | not captured | exact (not captured) | tab_1:row10:col3 |
-| Residual error (%) — Estimate | `Q315` · not captured | 56 | not captured | not captured | llm (not captured) | tab_1:row13:col1 |
-| Residual error (%) — (Range)* | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row13:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 178 | h | not captured | exact (not captured) | tab_1:row2:col1 |
+| PK (driver) | MTT (h) — (Range)* | `Q81` · not captured | 175 | h | not captured | exact (not captured) | tab_1:row2:col3 |
+| PD (effect) | Gamma — Estimate | `Q325` · not captured | 0.147 | not captured | not captured | exact (not captured) | tab_1:row3:col1 |
+| PD (effect) | Gamma — (Range)* | `Q325` · not captured | 0.143 | not captured | not captured | exact (not captured) | tab_1:row3:col3 |
+| variability | Residual error (%) — Estimate | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row6:col1 |
+| variability | Residual error (%) — (Range)* | `Q315` · not captured | 42 | not captured | not captured | llm (not captured) | tab_1:row6:col3 |
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 142 | h | not captured | exact (not captured) | tab_1:row9:col1 |
+| PK (driver) | MTT (h) — (Range)* | `Q81` · not captured | 125 | h | not captured | exact (not captured) | tab_1:row9:col3 |
+| PD (effect) | Gamma — Estimate | `Q325` · not captured | 0.176 | not captured | not captured | exact (not captured) | tab_1:row10:col1 |
+| PD (effect) | Gamma — (Range)* | `Q325` · not captured | 0.155 | not captured | not captured | exact (not captured) | tab_1:row10:col3 |
+| variability | Residual error (%) — Estimate | `Q315` · not captured | 56 | not captured | not captured | llm (not captured) | tab_1:row13:col1 |
+| variability | Residual error (%) — (Range)* | `Q315` · not captured | 48 | not captured | not captured | llm (not captured) | tab_1:row13:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

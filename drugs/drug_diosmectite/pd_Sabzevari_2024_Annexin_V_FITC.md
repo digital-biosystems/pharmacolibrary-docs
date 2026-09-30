@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Montmorillonite (measured concentrations) drives apoptosis rate (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> No pharmacodynamic model is described: montmorillonite (Mt, diosmectite) was given as fixed concentrations (450 µg/mL for MDA-MB-231, 1000 µg/mL for MCF-7) for 24 h, and apoptosis measured by Annexin V-FITC rose from 11% to 49% (MDA-MB-231) and from 9.6% to 71% (MCF-7); the paper gives no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma for this response, and states no mechanism beyond Mt inducing apoptosis.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sabzevari_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

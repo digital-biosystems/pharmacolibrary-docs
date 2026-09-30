@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Verapamil (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In KGN spheroids incubated with calcein-AM, carbenoxolone (CBX) concentration-dependently inhibits gap junction intercellular communication, measured as the drug's ability to increase the fraction of calcein compartmentalized to the outer shell after 75 min; the paper does not state a mechanistic PD model (e.g., Emax/kin-kout), only dose-response curves, with a half-maximal GJIC inhibition concentration of 9.4 μM (vs 81 μM for its Pgp inhibition), making CBX more potent at GJIC inhibition than verapamil (8.6 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Achilli_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

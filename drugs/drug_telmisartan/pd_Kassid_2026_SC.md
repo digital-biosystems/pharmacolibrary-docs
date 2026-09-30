@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives sperm count (in million/ml) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for telmisartan on sperm count; it only describes telmisartan dosed in mg/kg/day as a protective agent against cyclophosphamide-induced testicular toxicity, with proposed antioxidant/anti-apoptotic mechanisms (AT1 antagonism, PPAR-γ partial agonism, Nrf2 signaling), and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

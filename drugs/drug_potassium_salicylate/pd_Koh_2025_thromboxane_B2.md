@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetylsalicylic acid (measured concentrations) drives name (in μg/L): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma ASA concentration inhibits serum thromboxane B2 (TXB2) via a turnover model in which ASA inhibits TXB2 production (kin = kout × R0) with an Emax function: Imax fixed at 1, IC50 fixed at 0.0036 mol/L, gamma fixed at 1, and estimated kout of 0.023 h−1 with baseline R0 of 26.4 μg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koh_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,48 +30,48 @@ Koh J; Khwarg J; Yu KS; Lee S; Jang IJ; Lee S et al. (2025). Drug design, develo
   ·  DOI: [10.2147/dddt.s533428](https://doi.org/10.2147/dddt.s533428)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| fr — Estimate | `Q43` · not captured | 0.69 | not captured | not captured | exact (not captured) | t0001:row2:col1 |
-| fr — RSE (%) | `Q43` · not captured | 4.99 | not captured | not captured | exact (not captured) | t0001:row2:col2 |
-| ka capsule (h−1) — Estimate | `Q49` · not captured | 0.22 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0001:row3:col1 |
-| ka capsule (h−1) — RSE (%) | `Q49` · not captured | 21.8 | h−1 | not captured | llm_confirmed (not captured) | t0001:row3:col2 |
-| ka tablet (h−1) — Estimate | `Q49` · not captured | 0.053 | h−1 | not captured | llm_confirmed (not captured) | t0001:row4:col1 |
-| Tk0 (h) — Estimate | `Q56` · not captured | 1.58 | h | not captured | llm (not captured) | t0001:row5:col1 |
-| Lag0 (h) — Estimate | `Q83` · not captured | 2.81 | h | not captured | llm (not captured) | t0001:row6:col1 |
-| Lag0 (h) — RSE (%) | `Q83` · not captured | 8.26 | h | not captured | llm (not captured) | t0001:row6:col2 |
-| k23 (h−1) — Estimate | `Q48` · not captured | 2.32 | h−1 | not captured | exact (not captured) | t0001:row7:col1 |
-| k23 (h−1) — RSE (%) | `Q48` · not captured | 4.11 | h−1 | not captured | exact (not captured) | t0001:row7:col2 |
-| k24 (h−1) — Estimate | `Q48` · not captured | 0.57 | h−1 | not captured | exact (not captured) | t0001:row8:col1 |
-| k34 (h−1) — Estimate | `Q48` · not captured | 2.97 | h−1 | not captured | exact (not captured) | t0001:row9:col1 |
-| k34 (h−1) — RSE (%) | `Q48` · not captured | 11.7 | h−1 | not captured | exact (not captured) | t0001:row9:col2 |
-| CLm/F (L/h) — Estimate | `Q351` · not captured | 2.76 | L/h | not captured | exact (not captured) | t0001:row11:col1 |
-| CLm/F (L/h) — RSE (%) | `Q351` · not captured | 3.86 | L/h | not captured | exact (not captured) | t0001:row11:col2 |
-| Q/F (L/h) — Estimate | `Q69` · not captured | 0.08 | L/h | not captured | exact (not captured) | t0001:row13:col1 |
-| V3/F (L) — Estimate | `Q78` · not captured | 23.51 | L | not captured | exact (not captured) | t0001:row14:col1 |
-| V3/F (L) — RSE (%) | `Q78` · not captured | 12.3 | L | not captured | exact (not captured) | t0001:row14:col2 |
-| V4/F (L) — Estimate | `Q78` · not captured | 7.5 | L | not captured | llm (not captured) | t0001:row15:col1 |
-| V4/F (L) — RSE (%) | `Q78` · not captured | 2.6 | L | not captured | llm (not captured) | t0001:row15:col2 |
-| V5/F (L) — Estimate | `Q78` · not captured | 1.98 | L | not captured | llm (not captured) | t0001:row16:col1 |
-| R0 (μg/L) — Estimate | `Q336` · not captured | 26.4 | μg/L | not captured | exact (not captured) | t0001:row17:col1 |
-| R0 (μg/L) — RSE (%) | `Q336` · not captured | 7.67 | μg/L | not captured | exact (not captured) | t0001:row17:col2 |
-| kout (h−1) — Estimate | `Q328` · not captured | 0.023 | h−1 | not captured | exact (not captured) | t0001:row18:col1 |
-| kout (h−1) — RSE (%) | `Q328` · not captured | 5.51 | h−1 | not captured | exact (not captured) | t0001:row18:col2 |
-| Imax — Estimate | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row19:col1 |
-| IC50 (mol/L) — Estimate | `Q322` · not captured | 0.0036 | mol/L | not captured | exact (not captured) | t0001:row20:col1 |
-| Gamma — Estimate | `Q325` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row21:col1 |
-| Ωka — Estimate | `Q49` · not captured | 1.09 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col1 |
-| Ωka — RSE (%) | `Q49` · not captured | 14.7 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col2 |
-| ΩCLm/F — Estimate | `Q351` · not captured | 0.24 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col1 |
-| ΩCLm/F — RSE (%) | `Q351` · not captured | 11.9 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col2 |
-| ΩR0 — Estimate | `Q336` · not captured | 0.49 | not captured | not captured | llm_confirmed (not captured) | t0001:row29:col1 |
-| ΩR0 — RSE (%) | `Q336` · not captured | 12.1 | not captured | not captured | llm_confirmed (not captured) | t0001:row29:col2 |
-| Proportional error (ASA) — Estimate | `Q316` · not captured | 0.41 | ASA | not captured | exact (not captured) | t0001:row31:col1 |
-| Proportional error (ASA) — RSE (%) | `Q316` · not captured | 5.52 | ASA | not captured | exact (not captured) | t0001:row31:col2 |
-| Proportional error (SA) — Estimate | `Q316` · not captured | 0.17 | SA | not captured | exact (not captured) | t0001:row32:col1 |
-| Proportional error (SA) — RSE (%) | `Q316` · not captured | 5.2 | SA | not captured | exact (not captured) | t0001:row32:col2 |
-| Additive error (TXB2) — Estimate | `Q317` · not captured | 2.58 | TXB2 | not captured | exact (not captured) | t0001:row33:col1 |
-| Additive error (TXB2) — RSE (%) | `Q317` · not captured | 12.1 | TXB2 | not captured | exact (not captured) | t0001:row33:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | fr — Estimate | `Q43` · not captured | 0.69 | not captured | not captured | exact (not captured) | t0001:row2:col1 |
+| PK (driver) | fr — RSE (%) | `Q43` · not captured | 4.99 | not captured | not captured | exact (not captured) | t0001:row2:col2 |
+| PK (driver) | ka capsule (h−1) — Estimate | `Q49` · not captured | 0.22 | h−1 | not captured | boundary_llm_dim_refused (not captured) | t0001:row3:col1 |
+| PK (driver) | ka capsule (h−1) — RSE (%) | `Q49` · not captured | 21.8 | h−1 | not captured | llm_confirmed (not captured) | t0001:row3:col2 |
+| PK (driver) | ka tablet (h−1) — Estimate | `Q49` · not captured | 0.053 | h−1 | not captured | llm_confirmed (not captured) | t0001:row4:col1 |
+| PK (driver) | Tk0 (h) — Estimate | `Q56` · not captured | 1.58 | h | not captured | llm (not captured) | t0001:row5:col1 |
+| PK (driver) | Lag0 (h) — Estimate | `Q83` · not captured | 2.81 | h | not captured | llm (not captured) | t0001:row6:col1 |
+| PK (driver) | Lag0 (h) — RSE (%) | `Q83` · not captured | 8.26 | h | not captured | llm (not captured) | t0001:row6:col2 |
+| PK (driver) | k23 (h−1) — Estimate | `Q48` · not captured | 2.32 | h−1 | not captured | exact (not captured) | t0001:row7:col1 |
+| PK (driver) | k23 (h−1) — RSE (%) | `Q48` · not captured | 4.11 | h−1 | not captured | exact (not captured) | t0001:row7:col2 |
+| PK (driver) | k24 (h−1) — Estimate | `Q48` · not captured | 0.57 | h−1 | not captured | exact (not captured) | t0001:row8:col1 |
+| PK (driver) | k34 (h−1) — Estimate | `Q48` · not captured | 2.97 | h−1 | not captured | exact (not captured) | t0001:row9:col1 |
+| PK (driver) | k34 (h−1) — RSE (%) | `Q48` · not captured | 11.7 | h−1 | not captured | exact (not captured) | t0001:row9:col2 |
+| PK (driver) | CLm/F (L/h) — Estimate | `Q351` · not captured | 2.76 | L/h | not captured | exact (not captured) | t0001:row11:col1 |
+| PK (driver) | CLm/F (L/h) — RSE (%) | `Q351` · not captured | 3.86 | L/h | not captured | exact (not captured) | t0001:row11:col2 |
+| PK (driver) | Q/F (L/h) — Estimate | `Q69` · not captured | 0.08 | L/h | not captured | exact (not captured) | t0001:row13:col1 |
+| PK (driver) | V3/F (L) — Estimate | `Q78` · not captured | 23.51 | L | not captured | exact (not captured) | t0001:row14:col1 |
+| PK (driver) | V3/F (L) — RSE (%) | `Q78` · not captured | 12.3 | L | not captured | exact (not captured) | t0001:row14:col2 |
+| PK (driver) | V4/F (L) — Estimate | `Q78` · not captured | 7.5 | L | not captured | llm (not captured) | t0001:row15:col1 |
+| PK (driver) | V4/F (L) — RSE (%) | `Q78` · not captured | 2.6 | L | not captured | llm (not captured) | t0001:row15:col2 |
+| PK (driver) | V5/F (L) — Estimate | `Q78` · not captured | 1.98 | L | not captured | llm (not captured) | t0001:row16:col1 |
+| PD (effect) | R0 (μg/L) — Estimate | `Q336` · not captured | 26.4 | μg/L | not captured | exact (not captured) | t0001:row17:col1 |
+| PD (effect) | R0 (μg/L) — RSE (%) | `Q336` · not captured | 7.67 | μg/L | not captured | exact (not captured) | t0001:row17:col2 |
+| PD (effect) | kout (h−1) — Estimate | `Q328` · not captured | 0.023 | h−1 | not captured | exact (not captured) | t0001:row18:col1 |
+| PD (effect) | kout (h−1) — RSE (%) | `Q328` · not captured | 5.51 | h−1 | not captured | exact (not captured) | t0001:row18:col2 |
+| PD (effect) | Imax — Estimate | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row19:col1 |
+| PD (effect) | IC50 (mol/L) — Estimate | `Q322` · not captured | 0.0036 | mol/L | not captured | exact (not captured) | t0001:row20:col1 |
+| PD (effect) | Gamma — Estimate | `Q325` · not captured | 1 | not captured | not captured | exact (not captured) | t0001:row21:col1 |
+| PK (driver) | Ωka — Estimate | `Q49` · not captured | 1.09 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col1 |
+| PK (driver) | Ωka — RSE (%) | `Q49` · not captured | 14.7 | not captured | not captured | llm_confirmed (not captured) | t0001:row24:col2 |
+| PK (driver) | ΩCLm/F — Estimate | `Q351` · not captured | 0.24 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col1 |
+| PK (driver) | ΩCLm/F — RSE (%) | `Q351` · not captured | 11.9 | not captured | not captured | llm_confirmed (not captured) | t0001:row28:col2 |
+| PD (effect) | ΩR0 — Estimate | `Q336` · not captured | 0.49 | not captured | not captured | llm_confirmed (not captured) | t0001:row29:col1 |
+| PD (effect) | ΩR0 — RSE (%) | `Q336` · not captured | 12.1 | not captured | not captured | llm_confirmed (not captured) | t0001:row29:col2 |
+| variability | Proportional error (ASA) — Estimate | `Q316` · not captured | 0.41 | ASA | not captured | exact (not captured) | t0001:row31:col1 |
+| variability | Proportional error (ASA) — RSE (%) | `Q316` · not captured | 5.52 | ASA | not captured | exact (not captured) | t0001:row31:col2 |
+| variability | Proportional error (SA) — Estimate | `Q316` · not captured | 0.17 | SA | not captured | exact (not captured) | t0001:row32:col1 |
+| variability | Proportional error (SA) — RSE (%) | `Q316` · not captured | 5.2 | SA | not captured | exact (not captured) | t0001:row32:col2 |
+| variability | Additive error (TXB2) — Estimate | `Q317` · not captured | 2.58 | TXB2 | not captured | exact (not captured) | t0001:row33:col1 |
+| variability | Additive error (TXB2) — RSE (%) | `Q317` · not captured | 12.1 | TXB2 | not captured | exact (not captured) | t0001:row33:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

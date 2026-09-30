@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dermatan sulfate drives arginine amidase activity (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Dermatan sulfate added to isolated rabbit arteries (ear artery and upper and lower aorta) stimulates the release of arginine amidase activity (Val-CHA-Arg-pNA amidolytic activity, nmol/min/g wet artery weight), with linear dose-response relationships between released activity and dermatan sulfate concentration; the paper gives no potency (IC50/EC50/Emax) or rate parameters and describes no specific mechanism beyond induction of secretion.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Takeuchi_2001`
 - **model family:** `linear`
 - **driver:** `not_resolved`

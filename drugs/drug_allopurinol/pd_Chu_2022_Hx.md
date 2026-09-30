@@ -14,9 +14,11 @@
 
 **As extracted:** Allopurinol and oxypurinol (concentrations from the PK model of Chu_2024) drive hypoxanthine (in mg/L): indirect response — drug inhibits the production of hypoxanthine.
 
-> Allopurinol and oxypurinol concentrations inhibit the elimination of hypoxanthine (measured in mg/L) by blocking its conversion to xanthine via xanthine oxidase inhibition, using a turnover model where the elimination rate is modulated by an effect term (EFF) derived from linear or saturable effect models. The paper does not provide specific numerical values for potency (e.g., IC50) or rate constants (e.g., kout, ke0) for the pharmacodynamic component, only listing PK parameter estimates for allopurinol and oxypurinol clearance and volume.
+**Model:** No model was generated from this record.
+
+> Allopurinol and its metabolite oxypurinol inhibit xanthine oxidase, reducing the conversion (elimination turnover) of hypoxanthine to xanthine in an indirect-response turnover model; the paper does not report Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`

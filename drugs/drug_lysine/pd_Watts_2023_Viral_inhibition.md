@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MAP30 (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> MAP30 (and Momordin) concentrations (μM) inhibit SARS-CoV-2 replication in A549-ACE2 cells measured as percent viral inhibition in a nanoluciferase reporter virus assay, with a direct concentration–response (sigmoid Emax-type) relationship; the mechanism is attributed to RNA N-glycosylase (rRNA/genomic RNA depurination) activity, since the Y70A catalytic mutant is completely inactive. The paper reports an overall mean IC50 of 5.7 μg/ml (~0.2 μM) and mean CC50 of 72 μg/ml (~2.4 μM); no kin, kout, ke0, or Hill coefficient values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watts_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Watts NR; Eren E; Palmer I; Huang PL; Huang PL; Shoemaker RH; et al. et al. (202
   ·  DOI: [10.1371/journal.pone.0286370](https://doi.org/10.1371/journal.pone.0286370)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — IC50 (μg/ml)b | `Q322` · not captured | 6.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col2 |
-| 1 — CC50 (μg/ml)c | `Q322` · not captured | 100.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col3 |
-| 2 f — IC50 (μg/ml)b | `Q322` · not captured | 5.9 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col2 |
-| 2 f — CC50 (μg/ml)c | `Q322` · not captured | 50.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col3 |
-| 3 — IC50 (μg/ml)b | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col2 |
-| 3 — CC50 (μg/ml)c | `Q322` · not captured | 96.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col3 |
-| 4 — IC50 (μg/ml)b | `Q322` · not captured | 7.4 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col2 |
-| 4 — CC50 (μg/ml)c | `Q322` · not captured | 101.7 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 1 — IC50 (μg/ml)b | `Q322` · not captured | 6.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col2 |
+| PD (effect) | 1 — CC50 (μg/ml)c | `Q322` · not captured | 100.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row1:col3 |
+| PD (effect) | 2 f — IC50 (μg/ml)b | `Q322` · not captured | 5.9 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col2 |
+| PD (effect) | 2 f — CC50 (μg/ml)c | `Q322` · not captured | 50.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row6:col3 |
+| PD (effect) | 3 — IC50 (μg/ml)b | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col2 |
+| PD (effect) | 3 — CC50 (μg/ml)c | `Q322` · not captured | 96.8 | μM | not captured | llm (not captured) | pone.0286370.t001:row10:col3 |
+| PD (effect) | 4 — IC50 (μg/ml)b | `Q322` · not captured | 7.4 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col2 |
+| PD (effect) | 4 — CC50 (μg/ml)c | `Q322` · not captured | 101.7 | μM | not captured | llm (not captured) | pone.0286370.t001:row13:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

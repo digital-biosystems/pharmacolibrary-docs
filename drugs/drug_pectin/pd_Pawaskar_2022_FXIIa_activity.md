@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Garadacimab drives FXIIa-mediated kallikrein activity (in %): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Garadacimab plasma concentrations (nmol/mL) inhibit FXIIa-mediated kallikrein activity (%), reflecting suppression of free FXIIa via binding of FXIIa to garadacimab, modeled with TMDD kinetics in the plasma compartment of a second-generation mPBPK model; the paper does not state Imax, IC50/EC50, or rate parameters in the excerpts, but predicted 0.1 mg/kg i.v. gives &lt;10% inhibition and 10 mg/kg i.v. gives &gt;95% inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pawaskar_2022`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

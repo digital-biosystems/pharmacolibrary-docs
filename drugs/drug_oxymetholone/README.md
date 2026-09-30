@@ -35,8 +35,11 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | kidney | `CYP3A5` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor, `CYP3A4` inhibitor, `CYP3A5` inhibitor, `CYP3A7` inhibitor, `MAOA` inducer | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor, `CYP3A5` inhibitor, `MAOA` inducer | DrugBank actor |
+| target | liver | `SRD5A1` activator/substrate | DrugBank actor |
+| target | prostate gland | `AR` activator/target, `SRD5A1` activator/substrate | DrugBank actor |
+| target | skin | `SRD5A1` activator/substrate | DrugBank actor |
 
-<sub>Actors without a tissue in the table: AR (activator), AR (target), CYP3A43 (inhibitor), SHBG (unknown), SRD5A1 (activator), SRD5A1 (substrate).</sub>
+<sub>Actors without a tissue in the table: CYP3A43 (inhibitor), SHBG (unknown).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

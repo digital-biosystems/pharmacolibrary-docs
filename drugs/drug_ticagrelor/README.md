@@ -35,21 +35,21 @@ Ticagrelor was granted FDA approval on 20 July 2011.[L14201]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span> | [Henrich_2021_reference](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | 2-compartment, oral | 5 | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Åstrand_2019_reference](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | parent 2-cmt + 1 metabolite (2-cmt) | 12 (+1 cov.) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022_reference](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | parent + metabolite (no model) | 1 (+5 cov.) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span> | [Henrich_2021_reference](drugs/drug_ticagrelor/Ticagrelor_Henrich2021_reference.md) | ▶ model + simulator | 2-compartment, oral | 5 | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Åstrand_2019_reference](drugs/drug_ticagrelor/Ticagrelor_strand2019_reference.md) | ▶ model + simulator | parent 2-cmt + 1 metabolite (2-cmt) | 12 (+1 cov.) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Kathman_2022_reference](drugs/drug_ticagrelor/Ticagrelor_Kathman2022_reference.md) | — | parent + metabolite (no model) | 1 (+5 cov.) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021](drugs/drug_ticagrelor/pd_Henrich_2021_PRU.md) | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_LTA.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022](drugs/drug_ticagrelor/pd_Kathman_2022_VASP.md) | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Åstrand_2019](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Henrich_2021_PRU](drugs/drug_ticagrelor/pd_Henrich_2021_PRU.md) | Platelet reactivity units ← selatogrel, active metabolite of clopidogrel, active metabolite of prasugrel, ticagrelor, active metabolite of ticagrelor · direct sigmoid Emax (Hill) effect | — | Henrich A et al., Pharmacokinetic/pharmacodynamic modelin…, CPT: pharmacometrics & syst… (2021) | [10.1002/psp4.12641](https://doi.org/10.1002/psp4.12641) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022_LTA](drugs/drug_ticagrelor/pd_Kathman_2022_LTA.md) | LTA ← uncomplexed ticagrelor and uncomplexed ticagrelor active metabolite · direct sigmoid Emax (Hill) effect | — | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022_PRU](drugs/drug_ticagrelor/pd_Kathman_2022_PRU.md) | PRU ← uncomplexed ticagrelor and uncomplexed ticagrelor active metabolite · direct sigmoid Emax (Hill) effect | — | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Kathman_2022_VASP](drugs/drug_ticagrelor/pd_Kathman_2022_VASP.md) | VASP ← uncomplexed ticagrelor and uncomplexed ticagrelor active metabolite · direct sigmoid Emax (Hill) effect | — | Kathman SJ et al., Population pharmacokinetic-pharmacodyna…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12734](https://doi.org/10.1002/psp4.12734) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Åstrand_2019_PRU](drugs/drug_ticagrelor/pd_strand_2019_PRU.md) | P2Y12 reaction units ← ticagrelor · direct sigmoid Emax (Hill) effect | ▶ model + simulator | Åstrand M et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2019) | [10.1111/bcp.13812](https://doi.org/10.1111/bcp.13812) |
 
 ## ADME sites
 
@@ -62,6 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `CYP3A5` activator/substrate | DrugBank actor |
 | metabolism | liver | `CYP2B6` inducer, `CYP2C9` inducer/inhibitor, `CYP3A4` inhibitor/substrate, `CYP3A5` activator/substrate | DrugBank actor |

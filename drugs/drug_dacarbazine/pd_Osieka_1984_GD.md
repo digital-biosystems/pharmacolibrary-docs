@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dacarbazine (the dose) drives growth delay (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (DTIC) doses, expressed as fractions of the LD10/30 value, act on tumor growth delay (GD) in human melanoma xenografts; the dose-response curves were fitted by linear regression, and the paper does not state a mechanism (e.g., no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Osieka_1984`
 - **model family:** `linear`
 - **driver:** `dose_only`

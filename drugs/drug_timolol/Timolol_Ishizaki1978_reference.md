@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;timolol&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/&quot;},{&quot;label&quot;:&quot;Ishizaki_1978 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Timolol_Ji1993_reference&quot;,&quot;label&quot;:&quot;Ji_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ji1993_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Ishizaki1978_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ishizaki1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Timolol_Chiang1996_reference&quot;,&quot;label&quot;:&quot;Chiang_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Chiang1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Timolol_Ishizaki1978_reference&quot;,&quot;label&quot;:&quot;Ishizaki_1978_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ishizaki1978_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Timolol_Ji1993_reference&quot;,&quot;label&quot;:&quot;Ji_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Ji1993_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Timolol_Chiang1996_reference&quot;,&quot;label&quot;:&quot;Chiang_1996_reference&quot;,&quot;href&quot;:&quot;drugs/drug_timolol/Timolol_Chiang1996_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**The clearance plausibility check could not be computed.**
+
+The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — timolol: t1/2z 3.2 hours, tmax 2 hours, V 1.81 liter/kg, CL 557 ml/min.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has timolol, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Ishizaki T; Tawara K; Oyama Y; Nakaya H et al. (1978). Journal of clinical pharmacology 18

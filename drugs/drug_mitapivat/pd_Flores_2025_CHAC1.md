@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DNL343 (measured concentrations) drives CHAC1 transcript (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> DNL343 concentration-dependently inhibits NaAsO2-stimulated CHAC1 transcript expression in human PBMCs (ISR pathway), with a geometric mean unbound EC50 of 3.53 nM; the paper does not state a full PD mechanism beyond this dose-dependent inhibition (fitted as a four-parameter log-inhibitor vs response curve).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Flores_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

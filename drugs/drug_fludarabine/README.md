@@ -32,18 +32,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | 1-compartment, IV | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) | parent + metabolite (no model) | 5 (+1 cov.) | Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017) | [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_estimates_rse](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_estimates_rse.md) | 1-compartment (no model) | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Varela-González-Aller_2025_shrinkage](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_shrinkage.md) | held back | 1-compartment, IV | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Ivaturi_2017_reference](drugs/drug_fludarabine/Fludarabine_Ivaturi2017_reference.md) | — | parent + metabolite (no model) | 5 (+1 cov.) | Ivaturi V et al., Pharmacokinetics and Model-Based Dosing…, Biology of blood and marrow… (2017) | [10.1016/j.bbmt.2017.06.021](https://doi.org/10.1016/j.bbmt.2017.06.021) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Varela-González-Aller_2025_estimates_rse](drugs/drug_fludarabine/Fludarabine_VarelaGonzlezAller2025_estimates_rse.md) | — | 1-compartment (no model) | 1 | Varela-González-Aller J et al., Towards Personalized Lymphodepletion: A…, Pharmaceutics (2025) | [10.3390/pharmaceutics17121592](https://doi.org/10.3390/pharmaceutics17121592) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021](drugs/drug_fludarabine/pd_Yang_2021_cell_viability.md) | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021](drugs/drug_fludarabine/pd_Yang_2021_percent_inhibition_of_HBV_infection.md) | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021_cell_viability](drugs/drug_fludarabine/pd_Yang_2021_cell_viability.md) | name ← unknown · inhibition effect | — | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2021_percent_inhibition_of_HBV_infection](drugs/drug_fludarabine/pd_Yang_2021_percent_inhibition_of_HBV_infection.md) | name ← unknown · inhibition effect | — | Yang J et al., A new high-content screening assay of t…, JHEP reports : innovation i… (2021) | [10.1016/j.jhepr.2021.100296](https://doi.org/10.1016/j.jhepr.2021.100296) |
 
 ## ADME sites
 

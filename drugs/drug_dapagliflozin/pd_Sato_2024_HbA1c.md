@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives HbA1c reduction (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dapagliflozin dose (normalized by urinary glucose excretion, reference dose at UGE = 51.4 g/day) acts on HbA1c reduction (%) via a direct Emax dose–response model, with an estimated maximum HbA1c reduction (Emax) of 0.796 points shared across SGLT2 inhibitors (canagliflozin 1.33-fold higher); the paper does not state IC50/EC50 or rate constants for dapagliflozin.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sato_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

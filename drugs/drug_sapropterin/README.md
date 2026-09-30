@@ -32,11 +32,11 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Feillet_2008_reference](drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md) | 1-compartment, oral | 3 | Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Muntau_2017_reference](drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | 1-compartment (no model) | 6 (+2 cov.) | Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017) | [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2015_reference](drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md) | 1-compartment (no model) | 5 (+2 cov.) | Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Feillet_2008_reference](drugs/drug_sapropterin/Sapropterin_Feillet2008_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Feillet F et al., Pharmacokinetics of sapropterin in pati…, Clinical pharmacokinetics (2008) | [10.2165/0003088-200847120-00006](https://doi.org/10.2165/0003088-200847120-00006) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Muntau_2017_reference](drugs/drug_sapropterin/Sapropterin_Muntau2017_reference.md) | — | 1-compartment (no model) | 6 (+2 cov.) | Muntau AC et al., Efficacy, safety and population pharmac…, Orphanet journal of rare di… (2017) | [10.1186/s13023-017-0600-x](https://doi.org/10.1186/s13023-017-0600-x) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2015_reference](drugs/drug_sapropterin/Sapropterin_Qi2015_reference.md) | — | 1-compartment (no model) | 5 (+2 cov.) | Qi Y et al., A prospective population pharmacokineti…, Clinical pharmacokinetics (2015) | [10.1007/s40262-014-0196-4](https://doi.org/10.1007/s40262-014-0196-4) |
 
 ## ADME sites
 
@@ -49,6 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: NOS3 (cofactor), PAH (cofactor), PTGS2 (inducer), TH (cofactor), TPH1 (cofactor).</sub>
 

@@ -14,9 +14,11 @@
 
 **As extracted:** Apramycin (measured concentrations) drives name (in log10 cfu/organ): direct linear effect.
 
-> The paper does not describe the mechanism of action or provide the specific parameter values listed in the record, stating only that allopurinol reduced bacterial burden in the kidney by at least 2-log compared to vehicle control at doses of 3.2, 12.8, and 51.2 mg/kg.
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism linking drug concentrations to the kidney bacterial burden response (log10 cfu/organ); it only reports that apramycin doses of 3.2, 12.8 and 51.2 mg/kg reduced bacterial burden by at least 2-log at 72 h after start of treatment versus vehicle control. The record's parameters (e.g. kd 0.179 mg/L, Bmax 9.18, kada×1000 0.080) are not supported by the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `linear`

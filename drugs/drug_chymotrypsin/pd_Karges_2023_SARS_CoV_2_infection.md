@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (A)-19 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The rhenium tricarbonyl complex (A)-19 (an enantiomer of compound 19) inhibits the 3-chymotrypsin-like protease (3CLpro/Mpro) of SARS-CoV-2, thereby disrupting viral replication; the paper reports enzyme inhibition (e.g., 19_DMSO IC50 = 6.2 ± 1.1 mM) and antiviral activity in infected cells, but does not state a specific PD model structure or parameters (no Imax, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Karges_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

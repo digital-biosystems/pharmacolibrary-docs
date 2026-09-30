@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omeprazole (measured concentrations) drives TXA2 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In isolated guinea-pig gastric mucosal cells, omeprazole (µM concentrations) was tested against spontaneous prostanoid release measured as TXB2 (TXA2); the paper reports no significant changes in spontaneous TXA2 release, so no potency or mechanism for the TXA2 response is given. Mechanistically, acid-activated omeprazole concentration-dependently inhibited lysophosphatide acyltransferase (LAT, a prostanoid biosynthesis step) with IC50 values of 12.9 ± 2.5, 16.3 ± 1.4 and 9.4 ± 1.4 µM in gastric, parietal and mucous cells respectively, and inhibited PGI2 release with an IC50 of 14.3 ± 4.8 µM, while PLA2 was unaffected.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hell_1987`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

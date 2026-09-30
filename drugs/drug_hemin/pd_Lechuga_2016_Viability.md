@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 4-arylaminoquinoline-3-carbonitrile derivative 1g (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In T. cruzi viability assays, hemin (30 μM) is added to the culture medium to enhance the inhibitory effect of 4-arylaminoquinoline-3-carbonitrile derivatives on parasite viability/growth, with compound 1g reaching IC50c of 0.9 μM (IC50 &lt; 1 μM) against epimastigotes and 11.7 μM against trypomastigotes with hemin, versus benznidazole IC50c of 5.6 μM; the paper suggests a heme-complexation mechanism similar to Plasmodium spp. but does not state a formal PD model or parameters such as Emax, kin, kout, or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lechuga_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Lechuga GC; Borges JC; Calvet CM; de Araújo HP; Zuma AA; do Nascimento SB; et a
   ·  DOI: [10.1016/j.ijpddr.2016.07.001](https://doi.org/10.1016/j.ijpddr.2016.07.001)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Bz — IC50c | `Q322` · not captured | 5.6 | μM | not captured | llm (not captured) | tbl1:row1:col3 |
-| 1a — IC50c | `Q322` · not captured | 17.6 | μM | not captured | llm (not captured) | tbl1:row2:col3 |
-| 1b — CC50a | `Q321` · not captured | 69 | μM | not captured | llm (not captured) | tbl1:row3:col1 |
-| 1b — CC50b | `Q322` · not captured | 67 | μM | not captured | llm (not captured) | tbl1:row3:col2 |
-| 1b — IC50c | `Q322` · not captured | 16.6 | μM | not captured | llm (not captured) | tbl1:row3:col3 |
-| 1c — IC50c | `Q322` · not captured | 8.8 | μM | not captured | llm (not captured) | tbl1:row4:col3 |
-| 1d — CC50a | `Q321` · not captured | 64 | μM | not captured | llm (not captured) | tbl1:row5:col1 |
-| 1d — CC50b | `Q322` · not captured | 47.7 | μM | not captured | llm (not captured) | tbl1:row5:col2 |
-| 1d — IC50c | `Q322` · not captured | 40 | μM | not captured | llm (not captured) | tbl1:row5:col3 |
-| 1e — CC50a | `Q322` · not captured | 89 | μM | not captured | llm (not captured) | tbl1:row6:col1 |
-| 1e — CC50b | `Q322` · not captured | 65.2 | μM | not captured | llm (not captured) | tbl1:row6:col2 |
-| 1e — IC50c | `Q322` · not captured | 15.4 | μM | not captured | llm (not captured) | tbl1:row6:col3 |
-| 1f — CC50a | `Q321` · not captured | 71 | μM | not captured | llm (not captured) | tbl1:row7:col1 |
-| 1f — IC50c | `Q322` · not captured | 21.2 | μM | not captured | llm (not captured) | tbl1:row7:col3 |
-| 1g — IC50c | `Q322` · not captured | 0.9 | μM | not captured | llm (not captured) | tbl1:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Bz — IC50c | `Q322` · not captured | 5.6 | μM | not captured | llm (not captured) | tbl1:row1:col3 |
+| PD (effect) | 1a — IC50c | `Q322` · not captured | 17.6 | μM | not captured | llm (not captured) | tbl1:row2:col3 |
+| PD (effect) | 1b — CC50a | `Q321` · not captured | 69 | μM | not captured | llm (not captured) | tbl1:row3:col1 |
+| PD (effect) | 1b — CC50b | `Q322` · not captured | 67 | μM | not captured | llm (not captured) | tbl1:row3:col2 |
+| PD (effect) | 1b — IC50c | `Q322` · not captured | 16.6 | μM | not captured | llm (not captured) | tbl1:row3:col3 |
+| PD (effect) | 1c — IC50c | `Q322` · not captured | 8.8 | μM | not captured | llm (not captured) | tbl1:row4:col3 |
+| PD (effect) | 1d — CC50a | `Q321` · not captured | 64 | μM | not captured | llm (not captured) | tbl1:row5:col1 |
+| PD (effect) | 1d — CC50b | `Q322` · not captured | 47.7 | μM | not captured | llm (not captured) | tbl1:row5:col2 |
+| PD (effect) | 1d — IC50c | `Q322` · not captured | 40 | μM | not captured | llm (not captured) | tbl1:row5:col3 |
+| PD (effect) | 1e — CC50a | `Q322` · not captured | 89 | μM | not captured | llm (not captured) | tbl1:row6:col1 |
+| PD (effect) | 1e — CC50b | `Q322` · not captured | 65.2 | μM | not captured | llm (not captured) | tbl1:row6:col2 |
+| PD (effect) | 1e — IC50c | `Q322` · not captured | 15.4 | μM | not captured | llm (not captured) | tbl1:row6:col3 |
+| PD (effect) | 1f — CC50a | `Q321` · not captured | 71 | μM | not captured | llm (not captured) | tbl1:row7:col1 |
+| PD (effect) | 1f — IC50c | `Q322` · not captured | 21.2 | μM | not captured | llm (not captured) | tbl1:row7:col3 |
+| PD (effect) | 1g — IC50c | `Q322` · not captured | 0.9 | μM | not captured | llm (not captured) | tbl1:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

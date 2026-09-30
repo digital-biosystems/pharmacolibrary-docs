@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metformin (concentrations from this paper's PK model) drives antihyperglycaemic effect (in unknown): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> Metformin plasma concentrations from a one-compartment PK model (CL/F 52.6 l h⁻¹, V/F 113 l, Ka 0.41 h⁻¹) drive the antihyperglycaemic effect via a signal transduction model, in which drug-receptor complex formation initiates a cascade of second messengers (M1–M3, mean transit/production time 0.5 h) rather than a simple biophase delay. The effect is inhibitory on glucose with Emax 19.8, EC50 3.68 mg ml⁻¹ and Hill coefficient 0.547.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chae_2012`
 - **model family:** `transduction`
 - **driver:** `pk_record`
@@ -21,18 +31,18 @@ Chae JW; Baek IH; Lee BY; Cho SK; Kwon KI et al. (2012). British journal of clin
   ·  DOI: [10.1111/j.1365-2125.2012.04260.x](https://doi.org/10.1111/j.1365-2125.2012.04260.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (l h -1 ) — Population | `Q22` · not captured | 52.6 | l h -1 | not captured | exact (not captured) | tab_1:row4:col2 |
-| CL (l h -1 ) — Interindividual | `Q22` · not captured | 29.7 | l h -1 | not captured | exact (not captured) | tab_1:row4:col4 |
-| V (l) — Population | `Q61` · not captured | 113 | l | not captured | exact (not captured) | tab_1:row5:col2 |
-| V (l) — Interindividual | `Q61` · not captured | 22.1 | l | not captured | exact (not captured) | tab_1:row5:col4 |
-| Ka (h -1 ) — Population | `Q49` · not captured | 0.41 | h -1 | not captured | exact (not captured) | tab_1:row6:col2 |
-| Residual error (ng ml -1 ) — Population | `Q315` · not captured | 23.0 | ng ml -1 | not captured | llm (not captured) | tab_1:row7:col2 |
-| Emax — Population | `Q320` · not captured | 19.8 | not captured | not captured | exact (not captured) | tab_1:row10:col2 |
-| EC50 — Population | `Q321` · not captured | 3.68 | unknown | not captured | exact (not captured) | tab_1:row11:col2 |
-| r — Interindividual | `Q312` · not captured | 4.05 | not captured | not captured | llm (not captured) | tab_1:row12:col4 |
-| Residual error, % — Population | `Q315` · not captured | 40.4 | not captured | not captured | llm (not captured) | tab_1:row13:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (l h -1 ) — Population | `Q22` · not captured | 52.6 | l h -1 | not captured | exact (not captured) | tab_1:row4:col2 |
+| PK (driver) | CL (l h -1 ) — Interindividual | `Q22` · not captured | 29.7 | l h -1 | not captured | exact (not captured) | tab_1:row4:col4 |
+| PK (driver) | V (l) — Population | `Q61` · not captured | 113 | l | not captured | exact (not captured) | tab_1:row5:col2 |
+| PK (driver) | V (l) — Interindividual | `Q61` · not captured | 22.1 | l | not captured | exact (not captured) | tab_1:row5:col4 |
+| PK (driver) | Ka (h -1 ) — Population | `Q49` · not captured | 0.41 | h -1 | not captured | exact (not captured) | tab_1:row6:col2 |
+| variability | Residual error (ng ml -1 ) — Population | `Q315` · not captured | 23.0 | ng ml -1 | not captured | llm (not captured) | tab_1:row7:col2 |
+| PD (effect) | Emax — Population | `Q320` · not captured | 19.8 | not captured | not captured | exact (not captured) | tab_1:row10:col2 |
+| PD (effect) | EC50 — Population | `Q321` · not captured | 3.68 | unknown | not captured | exact (not captured) | tab_1:row11:col2 |
+| variability | r — Interindividual | `Q312` · not captured | 4.05 | not captured | not captured | llm (not captured) | tab_1:row12:col4 |
+| variability | Residual error, % — Population | `Q315` · not captured | 40.4 | not captured | not captured | llm (not captured) | tab_1:row13:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

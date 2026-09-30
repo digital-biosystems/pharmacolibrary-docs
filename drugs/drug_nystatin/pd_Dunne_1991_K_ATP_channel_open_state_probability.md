@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phentolamine (measured concentrations) drives name (in P/P0): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Phentolamine (applied to either side of the plasma membrane, up to 100 µM) inhibits the open-state probability of ATP-regulated K+ (K+ATP) channels in RINm5F insulin-secreting cells (recorded as P/P0 in nystatin-perforated/open-cell and outside-out patch experiments); the block is rapid, sustained and fully reversible, but the paper gives no Emax, IC50/EC50 or quantitative mechanism beyond direct channel blockade.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dunne_1991`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

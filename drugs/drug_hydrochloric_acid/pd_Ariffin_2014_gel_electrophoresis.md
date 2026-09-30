@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Degraded kappa carrageenan drives DNA fragmentation (in categorical) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide full-text excerpts, so no pharmacodynamic model can be described: the record only indicates degraded kappa-carrageenan concentrations (μg mL−1) associated with inhibition of DNA fragmentation (categorical, gel electrophoresis), with no mechanism, model family, or potency/rate parameters stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ariffin_2014`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

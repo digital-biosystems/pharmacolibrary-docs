@@ -32,9 +32,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) | 1-compartment (no model) | 9 | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Abshagen_1982_reference](drugs/drug_metipranolol/Metipranolol_Abshagen1982_reference.md) | — | 1-compartment (no model) | 9 | Abshagen U et al., Pharmacokinetics of metipranolol in nor…, European journal of clinica… (1982) | [10.1007/BF00637616](https://doi.org/10.1007/BF00637616) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol concentrations (μM) inhibit HL-60 cell viability/proliferation with IC50 values of 40.32 μM (HL-60), 56.68 μM (Kasumi-1) and 50.69 μM (U937); 10–80 μM inhibited proliferation concentration-dependently over 120 hrs, and 5–40 µM reduced colony size in methylcellulose over 2 weeks. The paper does not state a PD model or mechanism for the c-Jun expression response, and no Imax, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

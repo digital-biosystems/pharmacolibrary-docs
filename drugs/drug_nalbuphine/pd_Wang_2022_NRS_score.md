@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nalbuphine (concentrations from the PK model of Bressolle_2011::basic_model) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model; nalbuphine doses (0.070–0.280 mg/kg, groups P1–P5, plus saline control) were given prophylactically and the NRS pain score 30 min after extubation was used to compute a median effective dose (ED50) by the dose-response (log-dose, response-rate) method, but the ED50 value and its 95% CI are not stated in the excerpts, and no mechanism (e.g., Imax/IC50, kin/kout, effect compartment) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,14 +31,14 @@ Wang M; Wang D; Zuo J; Liu T; Niu Z; Xie J; et al. et al. (2022). Drug design, d
   ·  DOI: [10.2147/DDDT.S356582](https://doi.org/10.2147/DDDT.S356582)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Chills — Group C (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col1 |
-| Chills — Group P1 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col2 |
-| Chills — Group P2 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col3 |
-| Chills — Group P3 (n=20) | `Q100` · not captured | 1 | n=20 | not captured | llm (not captured) | t0005:row4:col4 |
-| Chills — Group P4 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col5 |
-| Chills — Group P5 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Chills — Group C (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col1 |
+| — | Chills — Group P1 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col2 |
+| — | Chills — Group P2 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col3 |
+| — | Chills — Group P3 (n=20) | `Q100` · not captured | 1 | n=20 | not captured | llm (not captured) | t0005:row4:col4 |
+| — | Chills — Group P4 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col5 |
+| — | Chills — Group P5 (n=20) | `Q100` · not captured | 0 | n=20 | not captured | llm (not captured) | t0005:row4:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

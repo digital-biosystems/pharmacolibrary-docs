@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The macitentan record was rejected because its structure does not match the parent–metabolite topology: the model is a one-compartment enteral model whose output is the parent compartment, not the measured macitentan analyte compartment, and the aprocitentan metabolite is unlinked.**
@@ -41,7 +43,7 @@ Bartolucci R; Dosne AG; Csonka D; Pérez-Ruixo JJ; Magni P; Poggesi I et al. (20
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | maximum concentration after | `Q56` · tmax | 9 | h | 32400.0 | [h] | not captured | llm_corrected (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
-| steady state after | `Q72` · tss | 3 | days | not captured | [d] | not captured | llm (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
+| steady state after | `Q72` · tss | 3 | days | 259200.0 | h | not captured | llm (0.6) | Bartolucci_2021:abstract, Bartolucci_2021:abstract | — | not captured |
 | apparent volume of distribution | `Q76` · V/F | 34 | L | 0.034 | [l] | not captured | exact (1.0) | Bartolucci_2021:abstract | — | not captured |
 | clearance | `Q22` · CL | 1.39 | L/h | 3.861111111111111e-07 | [l] / [h] | not captured | exact (1.0) | Bartolucci_2021:abstract | — | not captured |
 | ka (h−1) | `Q49` · kabs | 13.92 | h−1 | 0.0038666666666666667 | 1/h | not captured | review_gapfill (0.7) | Liu_2020:review | — | not captured |
@@ -66,6 +68,7 @@ Bartolucci R; Dosne AG; Csonka D; Pérez-Ruixo JJ; Magni P; Poggesi I et al. (20
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Liu_2020's review values (primary lacked it)
+- unit re-normalised: tss 'days' now converts (value unchanged)
 - engineer: parent → metabolite not buildable on PK_3M_9C (None) — the measured compound's 1-compartment model instead
 
 **Extraction notes:**

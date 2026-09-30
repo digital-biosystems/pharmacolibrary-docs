@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5' phosphate (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model linking pyridoxal 5′-phosphate (PLP) concentrations to respiratory frequency; it only shows that PLP attenuated carotid body sensory firing (50 µM infusion) and chemoreflex-evoked sympathetic responses (1–5 mM boluses), with in vitro antagonism of human P2X3/P2X2/3 receptors (IC50 8.7 ± 0.7 µM, allosteric, reducing maximal α,β-methylene ATP response by 63%). No Imax, EC50, kin, kout, ke0 or Hill coefficient for the respiratory frequency response is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Felippe_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

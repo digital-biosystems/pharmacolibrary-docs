@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (S)-carvedilol (concentrations from this paper's PK model) drives exercise-induced heart rate (in beats/min): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> (S)-carvedilol plasma concentrations (ng/mL) were linked to exercise-induced heart rate (beats/min) via a direct-effect inhibitory Emax model, in which (S)-carvedilol proportionally reduces heart rate; the excerpts do not report the Emax, IC50/EC50, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yamamoto_2024`
 - **model family:** `emax`
 - **driver:** `pk_record`

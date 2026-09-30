@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives relaxation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Isoprenaline concentration-dependently relaxed K+-precontracted rat mesenteric resistance arteries (pEC50 8.03 ± 0.40 M; maximum relaxation 66.79 ± 2.43%, n = 7), a direct Emax-type concentration–response relationship; the paper does not state a kinetic (kin/kout/ke0) mechanism, but indicates the relaxation is mediated via β-adrenoceptors (blocked by propranolol 10⁻⁶ M) and partly NO/endothelium-dependent, since L-NAME (10⁻⁴ M) reduced maximum relaxation to 27.64 ± 7.64%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Graves_1993`
 - **model family:** `emax`
 - **driver:** `not_resolved`

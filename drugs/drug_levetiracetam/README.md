@@ -25,22 +25,22 @@ Levetiracetam is also available as an orally dissolvable tablet that is indicate
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schoemaker_2018_reference](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | 1-compartment, oral | 3 | Schoemaker (2018) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_aed_apparent_clearance_l_h_1](drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md) | 1-compartment, IV | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_number_of_subjects](drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md) | 1-compartment, IV | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Onos_2022_reference](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | 1-compartment, oral | 2 | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_base](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_final](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'variability' is a table statistic/structure column, not a study p…</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_variability](drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md) | 1-compartment (no model) | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Schoemaker_2018_reference](drugs/drug_levetiracetam/Levetiracetam_Schoemaker2018_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Schoemaker (2018) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_aed_apparent_clearance_l_h_1](drugs/drug_levetiracetam/Levetiracetam_Majid2016_aed_apparent_clearance_l_h_1.md) | held back | 1-compartment, IV | 2 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Majid_2016_number_of_subjects](drugs/drug_levetiracetam/Levetiracetam_Majid2016_number_of_subjects.md) | held back | 1-compartment, IV | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Onos_2022_reference](drugs/drug_levetiracetam/Levetiracetam_Onos2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Onos KD et al., Pharmacokinetic, pharmacodynamic, and t…, Alzheimer's & dementia (New… (2022) | [10.1002/trc2.12329](https://doi.org/10.1002/trc2.12329) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_base](drugs/drug_levetiracetam/Levetiracetam_Li2023_base.md) | — | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Li_2023_final](drugs/drug_levetiracetam/Levetiracetam_Li2023_final.md) | — | 1-compartment (no model) | 1 | Li Y et al., Population pharmacokinetics and dosing…, British journal of clinical… (2023) | [10.1111/bcp.15572](https://doi.org/10.1111/bcp.15572) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: split column 'variability' is a table statistic/structure column, not a study p…</sub><br><sub>route_to: `human_review`</sub> | [Majid_2016_variability](drugs/drug_levetiracetam/Levetiracetam_Majid2016_variability.md) | — | 1-compartment (no model) | 1 | Majid O et al., Impact of perampanel on pharmacokinetic…, British journal of clinical… (2016) | [10.1111/bcp.12951](https://doi.org/10.1111/bcp.12951) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018](drugs/drug_levetiracetam/pd_Schoemaker_2018_seizure_count.md) | Schoemaker (2018) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019](drugs/drug_levetiracetam/pd_Lee_2019_ETCO2.md) | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Schoemaker_2018_seizure_count](drugs/drug_levetiracetam/pd_Schoemaker_2018_seizure_count.md) | name ← levetiracetam · direct Emax (saturable) effect | — | Schoemaker (2018) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Lee_2019_ETCO2](drugs/drug_levetiracetam/pd_Lee_2019_ETCO2.md) | end-tidal carbon dioxide ← respiratory rate · direct sigmoid Emax (Hill) effect | — | Lee JH et al., A pharmacodynamic model of respiratory…, Acta pharmacologica Sinica (2019) | [10.1038/s41401-018-0156-x](https://doi.org/10.1038/s41401-018-0156-x) |
 
 ## ADME sites
 
@@ -53,6 +53,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | liver | <sub>“…are unclear, but this pathway is known to be independent of hepatic CYP enzymes and has be…”</sub> | prose |
 | excretion | bile duct | <sub>“…8600] while only 0.3% of the total dose is excreted via the feces.[L8615] The primary inac…”</sub> | prose |
 | excretion | kidney | <sub>“…f the administered dose of levetiracetam is excreted in the urine as unchanged drug,[L8606…”</sub> | prose |

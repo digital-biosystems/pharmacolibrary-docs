@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The fentanyl record was rejected because its two-compartment structure leaves the third peripheral compartment (V3 = 0.351 L/kg, t1/2γ = 1.85 h) unlinked, and the AUClast value 5243.4 h*pg/ml could not be converted to SI units.**

@@ -26,10 +26,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026](drugs/drug_elafibranor/pd_Ooi_2026_ALP.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026](drugs/drug_elafibranor/pd_Ooi_2026_TB.md) | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026_ALP](drugs/drug_elafibranor/pd_Ooi_2026_ALP.md) | Alkaline phosphatase ← elafibranor and GFT1007 (sum of AUC) · indirect response — drug inhibits the production of Alkaline phosphatase | — | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Ooi_2026_TB](drugs/drug_elafibranor/pd_Ooi_2026_TB.md) | Total bilirubin ← elafibranor and GFT1007 (sum of AUC) · indirect response — drug inhibits the production of Total bilirubin | — | Ooi QX et al., Population Pharmacokinetics and Pharmac…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70247](https://doi.org/10.1002/psp4.70247) |
 
 ## ADME sites
 
@@ -41,6 +41,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` inhibitor/substrate | DrugBank actor |
 | absorption | mammary gland | `ABCG2` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCG2` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | heart | `CYP2J2` substrate | DrugBank actor |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |

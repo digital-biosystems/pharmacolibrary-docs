@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MDL-801 (measured concentrations) drives SIRT6 deacetylation activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MDL-801 (not nicotinamide) acts as an allosteric activator of SIRT6 deacetylation activity measured in the FDL assay, directly stimulating catalysis by stabilizing the NAD+ catalytic site (ΔG = −0.71 kcal/mol at the NAD+ site upon MDL-801 binding); the Emax-type concentration–response gave EC50 = 4.14 ± 0.059 μmol/L for wild-type SIRT6 with ~24-fold activity increase at 100 μmol/L, while the M136A variant showed a reduced EC50 of 28.07 ± 0.96 μmol/L and ~7-fold lower activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lu_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

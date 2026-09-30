@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril, benazepril (measured concentrations) drive Transforming Growth Factor-beta (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a 6-OHDA Parkinson's model, cilazapril and benazepril dose-dependently suppressed the 6-OHDA-induced increase in TGF-β levels (cilazapril effective at high doses 1.28 and 2.56 µM, benazepril already at low doses 0.04 and 0.08 µM), attributed mechanistically to inhibition of angiotensin II–driven inflammatory cytokine production; the paper reports no pharmacodynamic model parameters (no Imax, IC50, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Altunlu_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

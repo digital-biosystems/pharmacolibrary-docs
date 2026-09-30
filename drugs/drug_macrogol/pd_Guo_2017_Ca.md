@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PEG-PTH(TMR) (measured concentrations) drives urine calcium (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> PEG-PTH(TMR) (given iv at 50 nmol/kg) acts on urine calcium (fractional excretion index, FEICa), which decreased in a sustained manner, consistent with PTH stimulating renal tubular calcium reabsorption (accompanied by increased renal TRPV5 expression). The paper does not report an Emax/IC50/EC50 or kinetic parameters for this response, and no quantitative PD model values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

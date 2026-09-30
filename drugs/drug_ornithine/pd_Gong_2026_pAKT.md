@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Deguelin (measured concentrations) drives AKT phosphorylation (in level) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Deguelin (µM concentrations) reduces AKT phosphorylation (pAKT, level) in prolactinoma cells and xenografts; the paper states no quantitative PD model or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for pAKT. Mechanistically, deguelin competitively inhibits ODC (the enzyme converting ornithine to putrescine), lowering putrescine, which inhibits Rac1 activity and thereby indirectly reduces AKT phosphorylation; the only IC50 values given are for cell viability (0.1518 µM in GH3 and 0.2381 µM in MMQ), not for pAKT.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gong_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-(4-tolyl)sparteine (measured concentrations) drives frequency rate (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Digoxin concentration (µM) acts on the measured heart frequency rate (chronotropism) in mice, producing a positive chronotropic effect of up to +25% over basal at 3 µM, while higher concentrations caused toxicity with arrhythmias and atrial block; the paper does not state a mechanism or any Emax/EC50/Imax parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boido_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

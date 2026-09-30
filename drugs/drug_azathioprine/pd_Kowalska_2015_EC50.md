@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-Chloro-7-methyl-6pyrrolidinobutynylthiopurine (5b) drives anticancer activity (in lg/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper reports in vitro anticancer activity of thiopurines, including azathioprine analogs, as EC50 values against SNB-19, C-32, and T47D cell lines; the most potent compound, 2-chloro-7-methyl-6-pyrrolidinobutynylthiopurine (5b), had EC50 values of 5.00 and 7.58 lg/ml against SNB-19 and C-32, respectively, similar to cisplatin. No pharmacodynamic mechanism (e.g., Emax parameters, kin/kout, or effect-compartment model) is described in the paper.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kowalska_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atomoxetine, duloxetine, edivoxetine drive 3,4-Dihydroxyphenylglycol (in ng/mL): indirect response — drug inhibits the production of 3,4-Dihydroxyphenylglycol.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of atomoxetine (and duloxetine, edivoxetine) inhibit the production (Kin) of DHPG in an indirect response model, since NET inhibition reduces intraneuronal NE metabolism to DHPG; for atomoxetine the unbound IC50 was 0.136 nM (plasma DHPG) and 2.72 nM (CSF DHPG) with Imax 33%–37% (plasma) and 53% (CSF), and the fitted Kout was 0.777 h⁻¹ with baseline plasma DHPG 1240 pg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kielbasa_2015_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -19,83 +29,83 @@
 not matched (stem Kielbasa_2015_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k a (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q95` · not captured | 1.55 | h À1 | not captured | llm (not captured) | tab_1:row5:col3 |
-| k a (h À1 ) | `Q95` · not captured | 1.30 | h À1 | not captured | llm (not captured) | tab_1:row5:col5 |
-| k a (h À1 ) | `Q95` · not captured | 1.13 | h À1 | not captured | llm (not captured) | tab_1:row5:col6 |
-| CL/F (L/h) — ATX Estimate (%SEE) | `Q27` · not captured | 17.7 | L/h | not captured | exact (not captured) | tab_1:row6:col1 |
-| CL/F (L/h) — ATX 95%CI | `Q27` · not captured | 12.8 | L/h | not captured | exact (not captured) | tab_1:row6:col2 |
-| CL/F (L/h) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q27` · not captured | 53.4 | L/h | not captured | exact (not captured) | tab_1:row6:col3 |
-| CL/F (L/h) | `Q27` · not captured | 44.6 | L/h | not captured | exact (not captured) | tab_1:row6:col5 |
-| CL/F (L/h) | `Q27` · not captured | 40.9 | L/h | not captured | exact (not captured) | tab_1:row6:col6 |
-| V/F (L) — ATX Estimate (%SEE) | `Q76` · not captured | 95.5 | L | not captured | exact (not captured) | tab_1:row7:col1 |
-| V/F (L) — ATX 95%CI | `Q76` · not captured | 76.5 | L | not captured | exact (not captured) | tab_1:row7:col2 |
-| V/F (L) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q76` · not captured | 954 | L | not captured | exact (not captured) | tab_1:row7:col3 |
-| V/F (L) | `Q76` · not captured | 542 | L | not captured | exact (not captured) | tab_1:row7:col5 |
-| V/F (L) | `Q76` · not captured | 504 | L | not captured | exact (not captured) | tab_1:row7:col6 |
-| ka IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q49` · not captured | 47 | %SEE | not captured | boundary (not captured) | tab_1:row8:col3 |
-| ka IPV (%) | `Q49` · not captured | 74 | not captured | not captured | boundary (not captured) | tab_1:row8:col5 |
-| CL IPV (%) — ATX Estimate (%SEE) | `Q22` · not captured | 75 | %SEE | not captured | boundary (not captured) | tab_1:row9:col1 |
-| CL IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q22` · not captured | 67 | %SEE | not captured | boundary (not captured) | tab_1:row9:col3 |
-| CL IPV (%) | `Q22` · not captured | 37 | not captured | not captured | boundary (not captured) | tab_1:row9:col5 |
-| Residual error, additive (ng/mL) — ATX Estimate (%SEE) | `Q317` · not captured | 1.23 | ng/mL | not captured | llm (not captured) | tab_1:row12:col1 |
-| Residual error, additive (ng/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 3.18 | ng/mL | not captured | llm (not captured) | tab_1:row12:col3 |
-| Residual error, additive (ng/mL) | `Q317` · not captured | 0.0874 | ng/mL | not captured | llm (not captured) | tab_1:row12:col5 |
-| Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 36 | %SEE | not captured | llm (not captured) | tab_1:row13:col1 |
-| Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 68 | %SEE | not captured | llm (not captured) | tab_1:row13:col3 |
-| Residual error, proportional (%) | `Q316` · not captured | 18 | not captured | not captured | llm (not captured) | tab_1:row13:col5 |
-| Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 1240 | pg/mL | not captured | exact (not captured) | tab_1:row16:col1 |
-| Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col2 |
-| Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 1160 | pg/mL | not captured | exact (not captured) | tab_1:row16:col3 |
-| Baseline (pg/mL) | `Q324` · not captured | 1130 | pg/mL | not captured | exact (not captured) | tab_1:row16:col5 |
-| Baseline (pg/mL) | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col6 |
-| K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.777 | h À1 | not captured | llm (not captured) | tab_1:row17:col1 |
-| K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.525 | h À1 | not captured | llm (not captured) | tab_1:row17:col2 |
-| K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 1.37 | h À1 | not captured | llm (not captured) | tab_1:row17:col3 |
-| K out (h À1 ) | `Q328` · not captured | 0.507 | h À1 | not captured | llm (not captured) | tab_1:row17:col5 |
-| K out (h À1 ) | `Q328` · not captured | 0.411 | h À1 | not captured | llm (not captured) | tab_1:row17:col6 |
-| I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.367 | %SEE | not captured | llm (not captured) | tab_1:row18:col1 |
-| I max — ATX 95%CI | `Q323` · not captured | 0.313 | not captured | not captured | llm (not captured) | tab_1:row18:col2 |
-| I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.329 | %SEE | not captured | llm (not captured) | tab_1:row18:col3 |
-| I max | `Q323` · not captured | 0.334 | not captured | not captured | llm (not captured) | tab_1:row18:col5 |
-| I max | `Q323` · not captured | 0.309 | not captured | not captured | llm (not captured) | tab_1:row18:col6 |
-| Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 0.895 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col2 |
-| Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 0.235 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col6 |
-| Baseline IPV (%) — ATX Estimate (%SEE) | `Q324` · not captured | 29 | %SEE | not captured | boundary (not captured) | tab_1:row21:col1 |
-| Baseline IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 15 | %SEE | not captured | boundary (not captured) | tab_1:row21:col3 |
-| Baseline IPV (%) | `Q324` · not captured | 23 | not captured | not captured | boundary (not captured) | tab_1:row21:col5 |
-| I max IPV (%) — ATX Estimate (%SEE) | `Q323` · not captured | 24 | %SEE | not captured | llm (not captured) | tab_1:row22:col1 |
-| I max IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 25 | %SEE | not captured | llm (not captured) | tab_1:row22:col3 |
-| I max IPV (%) | `Q323` · not captured | 25 | not captured | not captured | llm (not captured) | tab_1:row22:col5 |
-| IC50 IPV (%) — ATX Estimate (%SEE) | `Q322` · not captured | 177 | %SEE | not captured | boundary (not captured) | tab_1:row23:col1 |
-| IC50 IPV (%) | `Q322` · not captured | 241 | nM | not captured | boundary (not captured) | tab_1:row23:col5 |
-| Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.0839 | pg/mL | not captured | llm (not captured) | tab_1:row24:col3 |
-| Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 13 | %SEE | not captured | llm (not captured) | tab_1:row25:col1 |
-| Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 8 | %SEE | not captured | llm (not captured) | tab_1:row25:col3 |
-| Residual error, proportional (%) | `Q316` · not captured | 11 | not captured | not captured | llm (not captured) | tab_1:row25:col5 |
-| Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 2180 | pg/mL | not captured | exact (not captured) | tab_1:row27:col1 |
-| Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1880 | pg/mL | not captured | exact (not captured) | tab_1:row27:col2 |
-| Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 2260 | pg/mL | not captured | exact (not captured) | tab_1:row27:col3 |
-| Baseline (pg/mL) | `Q324` · not captured | 1850 | pg/mL | not captured | exact (not captured) | tab_1:row27:col5 |
-| Baseline (pg/mL) | `Q324` · not captured | 1678 | pg/mL | not captured | exact (not captured) | tab_1:row27:col6 |
-| K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col1 |
-| K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.0979 | h À1 | not captured | llm (not captured) | tab_1:row28:col2 |
-| K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 0.0850 | h À1 | not captured | llm (not captured) | tab_1:row28:col3 |
-| K out (h À1 ) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col5 |
-| K out (h À1 ) | `Q328` · not captured | 0.0413 | h À1 | not captured | llm (not captured) | tab_1:row28:col6 |
-| I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.529 | %SEE | not captured | llm (not captured) | tab_1:row29:col1 |
-| I max — ATX 95%CI | `Q323` · not captured | 0.415 | not captured | not captured | llm (not captured) | tab_1:row29:col2 |
-| I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.378 | %SEE | not captured | llm (not captured) | tab_1:row29:col3 |
-| I max | `Q323` · not captured | 0.747 | not captured | not captured | llm (not captured) | tab_1:row29:col5 |
-| I max | `Q323` · not captured | 0.514 | not captured | not captured | llm (not captured) | tab_1:row29:col6 |
-| Plasma IC50 (ng/mL, nM) — ATX Estimate (%SEE) | `Q322` · not captured | 53.3209 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col1 |
-| Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 18.3 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col2 |
-| Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 2.37 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col6 |
-| Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.481 | pg/mL | not captured | llm (not captured) | tab_1:row33:col3 |
-| Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col1 |
-| Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col3 |
-| Residual error, proportional (%) | `Q316` · not captured | 12 | not captured | not captured | llm (not captured) | tab_1:row34:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k a (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q95` · not captured | 1.55 | h À1 | not captured | llm (not captured) | tab_1:row5:col3 |
+| PK (driver) | k a (h À1 ) | `Q95` · not captured | 1.30 | h À1 | not captured | llm (not captured) | tab_1:row5:col5 |
+| PK (driver) | k a (h À1 ) | `Q95` · not captured | 1.13 | h À1 | not captured | llm (not captured) | tab_1:row5:col6 |
+| PK (driver) | CL/F (L/h) — ATX Estimate (%SEE) | `Q27` · not captured | 17.7 | L/h | not captured | exact (not captured) | tab_1:row6:col1 |
+| PK (driver) | CL/F (L/h) — ATX 95%CI | `Q27` · not captured | 12.8 | L/h | not captured | exact (not captured) | tab_1:row6:col2 |
+| PK (driver) | CL/F (L/h) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q27` · not captured | 53.4 | L/h | not captured | exact (not captured) | tab_1:row6:col3 |
+| PK (driver) | CL/F (L/h) | `Q27` · not captured | 44.6 | L/h | not captured | exact (not captured) | tab_1:row6:col5 |
+| PK (driver) | CL/F (L/h) | `Q27` · not captured | 40.9 | L/h | not captured | exact (not captured) | tab_1:row6:col6 |
+| PK (driver) | V/F (L) — ATX Estimate (%SEE) | `Q76` · not captured | 95.5 | L | not captured | exact (not captured) | tab_1:row7:col1 |
+| PK (driver) | V/F (L) — ATX 95%CI | `Q76` · not captured | 76.5 | L | not captured | exact (not captured) | tab_1:row7:col2 |
+| PK (driver) | V/F (L) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q76` · not captured | 954 | L | not captured | exact (not captured) | tab_1:row7:col3 |
+| PK (driver) | V/F (L) | `Q76` · not captured | 542 | L | not captured | exact (not captured) | tab_1:row7:col5 |
+| PK (driver) | V/F (L) | `Q76` · not captured | 504 | L | not captured | exact (not captured) | tab_1:row7:col6 |
+| PK (driver) | ka IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q49` · not captured | 47 | %SEE | not captured | boundary (not captured) | tab_1:row8:col3 |
+| PK (driver) | ka IPV (%) | `Q49` · not captured | 74 | not captured | not captured | boundary (not captured) | tab_1:row8:col5 |
+| PK (driver) | CL IPV (%) — ATX Estimate (%SEE) | `Q22` · not captured | 75 | %SEE | not captured | boundary (not captured) | tab_1:row9:col1 |
+| PK (driver) | CL IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q22` · not captured | 67 | %SEE | not captured | boundary (not captured) | tab_1:row9:col3 |
+| PK (driver) | CL IPV (%) | `Q22` · not captured | 37 | not captured | not captured | boundary (not captured) | tab_1:row9:col5 |
+| variability | Residual error, additive (ng/mL) — ATX Estimate (%SEE) | `Q317` · not captured | 1.23 | ng/mL | not captured | llm (not captured) | tab_1:row12:col1 |
+| variability | Residual error, additive (ng/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 3.18 | ng/mL | not captured | llm (not captured) | tab_1:row12:col3 |
+| variability | Residual error, additive (ng/mL) | `Q317` · not captured | 0.0874 | ng/mL | not captured | llm (not captured) | tab_1:row12:col5 |
+| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 36 | %SEE | not captured | llm (not captured) | tab_1:row13:col1 |
+| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 68 | %SEE | not captured | llm (not captured) | tab_1:row13:col3 |
+| variability | Residual error, proportional (%) | `Q316` · not captured | 18 | not captured | not captured | llm (not captured) | tab_1:row13:col5 |
+| PD (effect) | Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 1240 | pg/mL | not captured | exact (not captured) | tab_1:row16:col1 |
+| PD (effect) | Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col2 |
+| PD (effect) | Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 1160 | pg/mL | not captured | exact (not captured) | tab_1:row16:col3 |
+| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1130 | pg/mL | not captured | exact (not captured) | tab_1:row16:col5 |
+| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1080 | pg/mL | not captured | exact (not captured) | tab_1:row16:col6 |
+| PD (effect) | K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.777 | h À1 | not captured | llm (not captured) | tab_1:row17:col1 |
+| PD (effect) | K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.525 | h À1 | not captured | llm (not captured) | tab_1:row17:col2 |
+| PD (effect) | K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 1.37 | h À1 | not captured | llm (not captured) | tab_1:row17:col3 |
+| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.507 | h À1 | not captured | llm (not captured) | tab_1:row17:col5 |
+| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.411 | h À1 | not captured | llm (not captured) | tab_1:row17:col6 |
+| PD (effect) | I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.367 | %SEE | not captured | llm (not captured) | tab_1:row18:col1 |
+| PD (effect) | I max — ATX 95%CI | `Q323` · not captured | 0.313 | not captured | not captured | llm (not captured) | tab_1:row18:col2 |
+| PD (effect) | I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.329 | %SEE | not captured | llm (not captured) | tab_1:row18:col3 |
+| PD (effect) | I max | `Q323` · not captured | 0.334 | not captured | not captured | llm (not captured) | tab_1:row18:col5 |
+| PD (effect) | I max | `Q323` · not captured | 0.309 | not captured | not captured | llm (not captured) | tab_1:row18:col6 |
+| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 0.895 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col2 |
+| PD (effect) | Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 0.235 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row19:col6 |
+| PD (effect) | Baseline IPV (%) — ATX Estimate (%SEE) | `Q324` · not captured | 29 | %SEE | not captured | boundary (not captured) | tab_1:row21:col1 |
+| PD (effect) | Baseline IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 15 | %SEE | not captured | boundary (not captured) | tab_1:row21:col3 |
+| PD (effect) | Baseline IPV (%) | `Q324` · not captured | 23 | not captured | not captured | boundary (not captured) | tab_1:row21:col5 |
+| PD (effect) | I max IPV (%) — ATX Estimate (%SEE) | `Q323` · not captured | 24 | %SEE | not captured | llm (not captured) | tab_1:row22:col1 |
+| PD (effect) | I max IPV (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 25 | %SEE | not captured | llm (not captured) | tab_1:row22:col3 |
+| PD (effect) | I max IPV (%) | `Q323` · not captured | 25 | not captured | not captured | llm (not captured) | tab_1:row22:col5 |
+| PD (effect) | IC50 IPV (%) — ATX Estimate (%SEE) | `Q322` · not captured | 177 | %SEE | not captured | boundary (not captured) | tab_1:row23:col1 |
+| PD (effect) | IC50 IPV (%) | `Q322` · not captured | 241 | nM | not captured | boundary (not captured) | tab_1:row23:col5 |
+| variability | Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.0839 | pg/mL | not captured | llm (not captured) | tab_1:row24:col3 |
+| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 13 | %SEE | not captured | llm (not captured) | tab_1:row25:col1 |
+| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 8 | %SEE | not captured | llm (not captured) | tab_1:row25:col3 |
+| variability | Residual error, proportional (%) | `Q316` · not captured | 11 | not captured | not captured | llm (not captured) | tab_1:row25:col5 |
+| PD (effect) | Baseline (pg/mL) — ATX Estimate (%SEE) | `Q324` · not captured | 2180 | pg/mL | not captured | exact (not captured) | tab_1:row27:col1 |
+| PD (effect) | Baseline (pg/mL) — ATX 95%CI | `Q324` · not captured | 1880 | pg/mL | not captured | exact (not captured) | tab_1:row27:col2 |
+| PD (effect) | Baseline (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q324` · not captured | 2260 | pg/mL | not captured | exact (not captured) | tab_1:row27:col3 |
+| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1850 | pg/mL | not captured | exact (not captured) | tab_1:row27:col5 |
+| PD (effect) | Baseline (pg/mL) | `Q324` · not captured | 1678 | pg/mL | not captured | exact (not captured) | tab_1:row27:col6 |
+| PD (effect) | K out (h À1 ) — ATX Estimate (%SEE) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col1 |
+| PD (effect) | K out (h À1 ) — ATX 95%CI | `Q328` · not captured | 0.0979 | h À1 | not captured | llm (not captured) | tab_1:row28:col2 |
+| PD (effect) | K out (h À1 ) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q328` · not captured | 0.0850 | h À1 | not captured | llm (not captured) | tab_1:row28:col3 |
+| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.166 | h À1 | not captured | llm (not captured) | tab_1:row28:col5 |
+| PD (effect) | K out (h À1 ) | `Q328` · not captured | 0.0413 | h À1 | not captured | llm (not captured) | tab_1:row28:col6 |
+| PD (effect) | I max — ATX Estimate (%SEE) | `Q323` · not captured | 0.529 | %SEE | not captured | llm (not captured) | tab_1:row29:col1 |
+| PD (effect) | I max — ATX 95%CI | `Q323` · not captured | 0.415 | not captured | not captured | llm (not captured) | tab_1:row29:col2 |
+| PD (effect) | I max — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q323` · not captured | 0.378 | %SEE | not captured | llm (not captured) | tab_1:row29:col3 |
+| PD (effect) | I max | `Q323` · not captured | 0.747 | not captured | not captured | llm (not captured) | tab_1:row29:col5 |
+| PD (effect) | I max | `Q323` · not captured | 0.514 | not captured | not captured | llm (not captured) | tab_1:row29:col6 |
+| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX Estimate (%SEE) | `Q322` · not captured | 53.3209 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col1 |
+| PD (effect) | Plasma IC50 (ng/mL, nM) — ATX 95%CI | `Q322` · not captured | 18.3 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col2 |
+| PD (effect) | Plasma IC50 (ng/mL, nM) | `Q322` · not captured | 2.37 | ng/mL, nM | not captured | boundary (not captured) | tab_1:row30:col6 |
+| variability | Residual error, additive (pg/mL) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q317` · not captured | 0.481 | pg/mL | not captured | llm (not captured) | tab_1:row33:col3 |
+| variability | Residual error, proportional (%) — ATX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col1 |
+| variability | Residual error, proportional (%) — DLX Estimate (%SEE) DLX 95%CI EDX Estimate (%SEE) | `Q316` · not captured | 9 | %SEE | not captured | llm (not captured) | tab_1:row34:col3 |
+| variability | Residual error, proportional (%) | `Q316` · not captured | 12 | not captured | not captured | llm (not captured) | tab_1:row34:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

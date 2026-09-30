@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Operculina turpethum black variety (OTB) crude extract (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> OTB crude extract (300–1000 mg/kg, oral) dose-dependently protected mice from castor oil-induced diarrhoea, giving 66% protection at 1000 mg/kg (loperamide 10 mg/kg: 96%); the paper does not state a quantitative PD mechanism for the in vivo effect, but suggests inhibition of gut motility and/or electrolyte out flux, consistent with in vitro inhibition of spontaneous and K+ (80 mM)-induced rabbit jejunum contractions with EC50 values of 1.04 mg/ml (0.59–1.54) and 0.12 mg/ml (0.10–0.15), respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shareef_2014`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapagliflozin (concentrations from this paper's PK model) drives HbA1c (in %): indirect response — drug inhibits the production of HbA1c.
+
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
+> Dapagliflozin plasma concentration (ng/mL) drives an indirect response (turnover) model of HbA1c (%), in which dapagliflozin inhibits HbA1c production (glycation) via an Emax function (with a lower boundary correction at 5.0%); final-model estimates were Emax 0.034 HbA1c %/day (3.1 for the baseline-corrected component), EC50 23.7 ng/mL (5.8 ng/mL for the second component), and HbA1c half-life t1/2 16.1 day (4.1 day), with inter-individual variability in t1/2 of 103.9%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kobuchi_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
@@ -21,28 +31,28 @@ Kobuchi S; Sakai S; Terada R; Kato KI; Hayakawa T; Sakaeda T et al. (2025). Inte
   ·  DOI: [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| t1/2HbA1c (day) — Final model | `Q57` · not captured | 16.1 | day | not captured | llm (not captured) | T3:row3:col1 |
-| t1/2HbA1c (day) — Final model | `Q57` · not captured | 4.1 | day | not captured | llm (not captured) | T3:row3:col2 |
-| t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 16.0 | day | not captured | llm (not captured) | T3:row3:col4 |
-| t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 15.3 | day | not captured | llm (not captured) | T3:row3:col5 |
-| Emax (HbA1c %/day) — Final model | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col1 |
-| Emax (HbA1c %/day) — Final model | `Q320` · not captured | 3.1 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col2 |
-| Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col4 |
-| Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.031 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col5 |
-| EC50 (ng/mL) — Final model | `Q321` · not captured | 23.7 | ng/mL | not captured | exact (not captured) | T3:row5:col1 |
-| EC50 (ng/mL) — Final model | `Q321` · not captured | 5.8 | ng/mL | not captured | exact (not captured) | T3:row5:col2 |
-| EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 21.9 | ng/mL | not captured | exact (not captured) | T3:row5:col4 |
-| EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 13.5 | ng/mL | not captured | exact (not captured) | T3:row5:col5 |
-| ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 103.9 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col1 |
-| ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 11.2 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
-| ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 104.1 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col4 |
-| ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 101.7 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col5 |
-| σ (HbA1c %) — Final model | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col1 |
-| σ (HbA1c %) — Final model | `Q315` · not captured | 5.2 | HbA1c % | not captured | llm (not captured) | T3:row9:col2 |
-| σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col4 |
-| σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.21 | HbA1c % | not captured | llm (not captured) | T3:row9:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | t1/2HbA1c (day) — Final model | `Q57` · not captured | 16.1 | day | not captured | llm (not captured) | T3:row3:col1 |
+| PK (driver) | t1/2HbA1c (day) — Final model | `Q57` · not captured | 4.1 | day | not captured | llm (not captured) | T3:row3:col2 |
+| PK (driver) | t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 16.0 | day | not captured | llm (not captured) | T3:row3:col4 |
+| PK (driver) | t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 15.3 | day | not captured | llm (not captured) | T3:row3:col5 |
+| PD (effect) | Emax (HbA1c %/day) — Final model | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col1 |
+| PD (effect) | Emax (HbA1c %/day) — Final model | `Q320` · not captured | 3.1 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col2 |
+| PD (effect) | Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col4 |
+| PD (effect) | Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.031 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col5 |
+| PD (effect) | EC50 (ng/mL) — Final model | `Q321` · not captured | 23.7 | ng/mL | not captured | exact (not captured) | T3:row5:col1 |
+| PD (effect) | EC50 (ng/mL) — Final model | `Q321` · not captured | 5.8 | ng/mL | not captured | exact (not captured) | T3:row5:col2 |
+| PD (effect) | EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 21.9 | ng/mL | not captured | exact (not captured) | T3:row5:col4 |
+| PD (effect) | EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 13.5 | ng/mL | not captured | exact (not captured) | T3:row5:col5 |
+| PK (driver) | ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 103.9 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col1 |
+| PK (driver) | ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 11.2 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
+| PK (driver) | ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 104.1 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col4 |
+| PK (driver) | ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 101.7 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col5 |
+| variability | σ (HbA1c %) — Final model | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col1 |
+| variability | σ (HbA1c %) — Final model | `Q315` · not captured | 5.2 | HbA1c % | not captured | llm (not captured) | T3:row9:col2 |
+| variability | σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col4 |
+| variability | σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.21 | HbA1c % | not captured | llm (not captured) | T3:row9:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

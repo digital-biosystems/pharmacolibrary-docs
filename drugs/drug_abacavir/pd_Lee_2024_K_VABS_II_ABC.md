@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AST-001 (the dose) drives K-VABS-II-ABC score (in score): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> AST-001 (L-serine) acts on the K-VABS-II-ABC score via an effect-compartment model in which the increase in score is linearly related to the effect-site concentration (not an Emax model), with a baseline E0 of 48.51, a linear drug-effect slope Deff of 0.0022 L/μg, effect-compartment equilibration rate Ke0 of 0.0065 1/day, and a linear progression rate Kprog of 0.015 1/day describing the placebo-group score increase over time.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lee_2024`
 - **model family:** `effect_compartment`
 - **driver:** `dose_only`
@@ -21,43 +31,43 @@ Lee S; Hwang SK; Cho JS; Ryu HC; Chung JY et al. (2024). Frontiers in pharmacolo
   ·  DOI: [10.3389/fphar.2024.1452526](https://doi.org/10.3389/fphar.2024.1452526)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ke0 (1/day) — Estimates | `Q326` · not captured | 0.0065 | not captured | not captured | exact (not captured) | tab_0:row3:col1 |
-| Ke0 (1/day) — RSE (%) | `Q326` · not captured | 7.92 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
-| Ke0 (1/day) — Bootstrap (n = 200) a | `Q326` · not captured | 0.0070 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
-| Ke0 (1/day) | `Q326` · not captured | 0.0043 | not captured | not captured | exact (not captured) | tab_0:row3:col4 |
-| E0 — Estimates | `Q324` · not captured | 48.51 | not captured | not captured | exact (not captured) | tab_0:row4:col1 |
-| E0 — RSE (%) | `Q324` · not captured | 1.66 | not captured | not captured | exact (not captured) | tab_0:row4:col2 |
-| E0 — Bootstrap (n = 200) a | `Q324` · not captured | 48.48 | not captured | not captured | exact (not captured) | tab_0:row4:col3 |
-| E0 | `Q324` · not captured | 46.8 | not captured | not captured | exact (not captured) | tab_0:row4:col4 |
-| Deff (L/μg) — Estimates | `Q358` · not captured | 0.0022 | L/μg | not captured | llm (not captured) | tab_0:row6:col1 |
-| Deff (L/μg) — RSE (%) | `Q358` · not captured | 37.5 | L/μg | not captured | llm (not captured) | tab_0:row6:col2 |
-| Deff (L/μg) | `Q358` · not captured | 0.0008 | L/μg | not captured | llm (not captured) | tab_0:row6:col4 |
-| Kprog (1/day) — Estimates | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | tab_0:row7:col1 |
-| Kprog (1/day) — RSE (%) | `Q340` · not captured | 12.0 | not captured | not captured | exact (not captured) | tab_0:row7:col2 |
-| Kprog (1/day) — Bootstrap (n = 200) a | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | tab_0:row7:col3 |
-| Kprog (1/day) | `Q340` · not captured | 0.012 | not captured | not captured | exact (not captured) | tab_0:row7:col4 |
-| ΩKe0 — Estimates | `Q326` · not captured | 0.21 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col1 |
-| ΩKe0 — RSE (%) | `Q326` · not captured | 22.3 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col2 |
-| ΩKe0 — Bootstrap (n = 200) a | `Q326` · not captured | 0.25 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col3 |
-| ΩKe0 | `Q326` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col4 |
-| ΩE0 — Estimates | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col1 |
-| ΩE0 — RSE (%) | `Q324` · not captured | 6.01 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col2 |
-| ΩE0 — Bootstrap (n = 200) a | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col3 |
-| ΩE0 | `Q324` · not captured | 0.17 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col4 |
-| ΩKprog — Estimates | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col1 |
-| ΩKprog — RSE (%) | `Q340` · not captured | 8.27 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
-| ΩKprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col3 |
-| ΩKprog | `Q340` · not captured | 0.014 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col4 |
-| Correlation E0-Kprog — Estimates | `Q340` · not captured | 0.48 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col1 |
-| Correlation E0-Kprog — RSE (%) | `Q100` · not captured | 16.9 | not captured | not captured | llm_corrected (not captured) | tab_0:row14:col2 |
-| Correlation E0-Kprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.49 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col3 |
-| Correlation E0-Kprog | `Q100` · not captured | 0.34 | not captured | not captured | llm_corrected (not captured) | tab_0:row14:col4 |
-| additive error — Estimates | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | tab_0:row16:col1 |
-| additive error — RSE (%) | `Q317` · not captured | 4.56 | not captured | not captured | exact (not captured) | tab_0:row16:col2 |
-| additive error — Bootstrap (n = 200) a | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | tab_0:row16:col3 |
-| additive error | `Q317` · not captured | 1.39 | not captured | not captured | exact (not captured) | tab_0:row16:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Ke0 (1/day) — Estimates | `Q326` · not captured | 0.0065 | not captured | not captured | exact (not captured) | tab_0:row3:col1 |
+| PD (effect) | Ke0 (1/day) — RSE (%) | `Q326` · not captured | 7.92 | not captured | not captured | exact (not captured) | tab_0:row3:col2 |
+| PD (effect) | Ke0 (1/day) — Bootstrap (n = 200) a | `Q326` · not captured | 0.0070 | not captured | not captured | exact (not captured) | tab_0:row3:col3 |
+| PD (effect) | Ke0 (1/day) | `Q326` · not captured | 0.0043 | not captured | not captured | exact (not captured) | tab_0:row3:col4 |
+| PD (effect) | E0 — Estimates | `Q324` · not captured | 48.51 | not captured | not captured | exact (not captured) | tab_0:row4:col1 |
+| PD (effect) | E0 — RSE (%) | `Q324` · not captured | 1.66 | not captured | not captured | exact (not captured) | tab_0:row4:col2 |
+| PD (effect) | E0 — Bootstrap (n = 200) a | `Q324` · not captured | 48.48 | not captured | not captured | exact (not captured) | tab_0:row4:col3 |
+| PD (effect) | E0 | `Q324` · not captured | 46.8 | not captured | not captured | exact (not captured) | tab_0:row4:col4 |
+| PK (driver) | Deff (L/μg) — Estimates | `Q358` · not captured | 0.0022 | L/μg | not captured | llm (not captured) | tab_0:row6:col1 |
+| PK (driver) | Deff (L/μg) — RSE (%) | `Q358` · not captured | 37.5 | L/μg | not captured | llm (not captured) | tab_0:row6:col2 |
+| PK (driver) | Deff (L/μg) | `Q358` · not captured | 0.0008 | L/μg | not captured | llm (not captured) | tab_0:row6:col4 |
+| PD (effect) | Kprog (1/day) — Estimates | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | tab_0:row7:col1 |
+| PD (effect) | Kprog (1/day) — RSE (%) | `Q340` · not captured | 12.0 | not captured | not captured | exact (not captured) | tab_0:row7:col2 |
+| PD (effect) | Kprog (1/day) — Bootstrap (n = 200) a | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | tab_0:row7:col3 |
+| PD (effect) | Kprog (1/day) | `Q340` · not captured | 0.012 | not captured | not captured | exact (not captured) | tab_0:row7:col4 |
+| PD (effect) | ΩKe0 — Estimates | `Q326` · not captured | 0.21 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col1 |
+| PD (effect) | ΩKe0 — RSE (%) | `Q326` · not captured | 22.3 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col2 |
+| PD (effect) | ΩKe0 — Bootstrap (n = 200) a | `Q326` · not captured | 0.25 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col3 |
+| PD (effect) | ΩKe0 | `Q326` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | tab_0:row9:col4 |
+| PD (effect) | ΩE0 — Estimates | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col1 |
+| PD (effect) | ΩE0 — RSE (%) | `Q324` · not captured | 6.01 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col2 |
+| PD (effect) | ΩE0 — Bootstrap (n = 200) a | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col3 |
+| PD (effect) | ΩE0 | `Q324` · not captured | 0.17 | not captured | not captured | llm_confirmed (not captured) | tab_0:row10:col4 |
+| PD (effect) | ΩKprog — Estimates | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col1 |
+| PD (effect) | ΩKprog — RSE (%) | `Q340` · not captured | 8.27 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col2 |
+| PD (effect) | ΩKprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col3 |
+| PD (effect) | ΩKprog | `Q340` · not captured | 0.014 | not captured | not captured | llm_confirmed (not captured) | tab_0:row12:col4 |
+| PD (effect) | Correlation E0-Kprog — Estimates | `Q340` · not captured | 0.48 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col1 |
+| — | Correlation E0-Kprog — RSE (%) | `Q100` · not captured | 16.9 | not captured | not captured | llm_corrected (not captured) | tab_0:row14:col2 |
+| PD (effect) | Correlation E0-Kprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.49 | not captured | not captured | llm_confirmed (not captured) | tab_0:row14:col3 |
+| — | Correlation E0-Kprog | `Q100` · not captured | 0.34 | not captured | not captured | llm_corrected (not captured) | tab_0:row14:col4 |
+| variability | additive error — Estimates | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | tab_0:row16:col1 |
+| variability | additive error — RSE (%) | `Q317` · not captured | 4.56 | not captured | not captured | exact (not captured) | tab_0:row16:col2 |
+| variability | additive error — Bootstrap (n = 200) a | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | tab_0:row16:col3 |
+| variability | additive error | `Q317` · not captured | 1.39 | not captured | not captured | exact (not captured) | tab_0:row16:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

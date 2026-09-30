@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tramadol (concentrations from the PK model of Al-Qurain_2022::base) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tramadol inhibits the uptake of [3H]-noradrenaline into purified rat hypothalamic synaptosomes with an IC50 of 2.8 pM (the (-)-enantiomer about ten times more potent than the (+)-enantiomer); the paper does not state an Imax, Emax, kin, kout, ke0 or gamma, and no dynamic model beyond this direct uptake inhibition is given. Consistently, tramadol (1 and 10 µM) enhanced stimulation-evoked [3H]-noradrenaline overflow from rat occipital cortex slices by 25% and 69%, an effect attributed to uptake blockade since it disappeared when uptake sites were blocked by cocaine.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Driessen_1993`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

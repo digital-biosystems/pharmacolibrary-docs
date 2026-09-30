@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Antibiotic drives name (in h−1): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Antibiotic (kanamycin) concentrations a [ng ml−1] reduce the net bacterial growth rate N(a) [h−1] via a Hill (sigmoid Emax) death-rate term D_ab(a) = kmax·a^κ/(a^κ+EC50^κ), i.e. direct inhibition of growth with maximum antibiotic-induced death rate kmax [h−1], half-maximal concentration EC50 [ng ml−1], and Hill coefficient κ; the paper does not report numeric values of kmax, EC50 or κ for kanamycin in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Greenfield_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

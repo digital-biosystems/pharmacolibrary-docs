@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in fold-change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for CAT (catalase gene expression, fold-change); no mechanism, Imax/IC50/EC50/Emax/kin/kout/ke0 values are given for this response. The only quantitative findings are that CNFs up-regulated CAT gene expression at 20 and 40 µg/mL in HaCaT cells, while the reported EC50 values (581.9 µg/mL for AgNPs and 608.1 µg/mL for CNFs at 24 h) refer to cytotoxicity (cell viability), not to CAT expression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salesa_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Salesa B; Assis M; Andrés J; Serrano-Aroca Á et al. (2021). Biomedicines 9
   ·  DOI: [10.3390/biomedicines9091155](https://doi.org/10.3390/biomedicines9091155)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AgNPs — EC50 (µg/mL) | `Q321` · not captured | 581.9 | µg/mL | not captured | llm (not captured) | biomedicines-09-01155-t002:row1:col1 |
-| CNFs — EC50 (µg/mL) | `Q321` · not captured | 608.1 | µg/mL | not captured | llm (not captured) | biomedicines-09-01155-t002:row2:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | AgNPs — EC50 (µg/mL) | `Q321` · not captured | 581.9 | µg/mL | not captured | llm (not captured) | biomedicines-09-01155-t002:row1:col1 |
+| PD (effect) | CNFs — EC50 (µg/mL) | `Q321` · not captured | 608.1 | µg/mL | not captured | llm (not captured) | biomedicines-09-01155-t002:row2:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

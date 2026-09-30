@@ -33,9 +33,9 @@ Guanfacine was granted FDA approval on 27 October 1986.[L11274]
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Knebel_2015_reference](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md) | 1-compartment, oral | 4 | Knebel (2015) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span> | [Knebel_2015_reference](drugs/drug_guanfacine/Guanfacine_Knebel2015_reference.md) | ▶ model + simulator | 1-compartment, oral | 4 | Knebel (2015) | — |
 
 ## ADME sites
 

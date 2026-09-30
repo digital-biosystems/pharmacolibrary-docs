@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nepeta ruderalis crude extract (measured concentrations) drives name (in % relaxation): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated rabbit jejunum, Nepeta ruderalis crude extract (0.01–10 mg/mL) concentration-dependently relaxed spontaneous contractions (EC50 5.85, 95% CI 5.45–6.27 mg/mL, n=5), high K+ (80 mM)-induced contractions (EC50 4.0, 3.80–4.23 mg/mL, n=4) and carbachol (1 μM)-induced contractions (EC50 2.86, 2.48–3.29 mg/mL, n=4), with complete relaxation at 10 mg/mL, comparable to verapamil. The paper does not give a formal PD model; mechanistically it suggests calcium channel blockade, as the extract shifted calcium CRCs rightward at 0.1 mg/mL and suppressed maximum responses at 0.3 mg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahmood_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

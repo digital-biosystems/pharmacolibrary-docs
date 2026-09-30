@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5' phosphate (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In humans, oral vitamin B6 (600 mg, converted to pyridoxal 5′ phosphate, PLP) was given before measuring the hypoxic ventilatory response (HVR); the paper does not state a PD model or mechanism for the HVR effect itself. Mechanistically, PLP acts as an allosteric antagonist of P2X3/P2X2/3 receptors, inhibiting α,β-methylene ATP-evoked Ca2+ responses with an IC50 of 8.7 ± 0.7 µM, right-shifting the agonist EC50 from 433 ± 92 nM to 1706 ± 189 nM and reducing maximal response by 63%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Felippe_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

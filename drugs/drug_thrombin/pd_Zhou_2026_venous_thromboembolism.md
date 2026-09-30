@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Milvexian (measured concentrations) drives name (in VTE): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a concentration-driven PD mechanism for VTE; instead, a nonlinear mixed-effects dose–response model (Emax with drug-specific ED50, shared Emax, placebo component) linked milvexian dose to VTE rate, with VTE rates of 21%, 11%, 9%, and 8% at 25, 50, 100, and 200 mg BID vs 21% with enoxaparin 40 mg QD; no ED50, Emax, or potency values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

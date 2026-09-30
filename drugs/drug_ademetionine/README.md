@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Rühs_2012](drugs/drug_ademetionine/pd_R_hs_2012_HCY.md) | Rühs H et al., Population PK/PD model of homocysteine…, PloS one (2012) | [10.1371/journal.pone.0046015](https://doi.org/10.1371/journal.pone.0046015) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Rühs_2012_HCY](drugs/drug_ademetionine/pd_R_hs_2012_HCY.md) | homocysteine ← methotrexate · indirect response — drug inhibits the production of homocysteine | — | Rühs H et al., Population PK/PD model of homocysteine…, PloS one (2012) | [10.1371/journal.pone.0046015](https://doi.org/10.1371/journal.pone.0046015) |
 
 ## ADME sites
 

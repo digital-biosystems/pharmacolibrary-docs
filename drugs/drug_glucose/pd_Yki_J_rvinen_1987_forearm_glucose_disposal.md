@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Forearm glucose disposal was measured as a function of plasma insulin concentration (mU/ml) during euglycemic-to-hyperglycemic clamps, with a sigmoid Emax-type stimulatory dose-response; the paper states the ED50s for insulin stimulation of forearm glucose disposal were comparable across glucose levels and independent of glycemia, but does not report their numeric values or a mechanism beyond direct insulin stimulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yki-Järvinen_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

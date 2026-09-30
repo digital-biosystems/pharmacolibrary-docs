@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The ibuprofen record was rejected because the clearance parameter (CL = 0.062) carries the unit '3', which cannot be converted to SI, and the R-ibuprofen to S-ibuprofen interconversion link has no defined parameter, leaving an unlinked metabolite.**

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vinblastine (concentrations from the PK model of Levêque_1996) drives brain flux J net (in pmol s -1 g -1): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine perfusate concentration (M) acts on its own brain flux J net (pmol s-1 g-1) measured by in situ rat brain perfusion, modeled with a Hill (sigmoid Emax) equation in which rising vinblastine concentration saturates P-gp-mediated efflux, so J net = Kin,max·C minus a saturable efflux component (Kin,max − Kin,min)·IC50^n·C/(IC50^n + C^n); the paper does not state numeric IC50, Emax, or Hill coefficient values in the excerpts, but reports Kin,min = 0.24 ± 0.01 l s-1 g-1 and a PSC833-inhibited Kin of 0.43 ± 0.03 l s-1 g-1 for [3H]vinblastine.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cisternino_2003`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

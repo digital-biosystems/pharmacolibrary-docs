@@ -25,9 +25,9 @@ Miconazole was first synthesized in 1969 and first granted FDA approval on Janua
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | 1-compartment (no model) | 3 | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Mikamo_1997_reference](drugs/drug_miconazole/Miconazole_Mikamo1997_reference.md) | — | 1-compartment (no model) | 3 | Mikamo H et al., Pharmacokinetics of miconazole in serum…, International journal of an… (1997) | [10.1016/s0924-8579(97)00050-2](https://doi.org/10.1016/s0924-8579(97)00050-2) |
 
 ## ADME sites
 
@@ -40,6 +40,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2A6` inhibitor, `CYP2B6` inhibitor, `CYP2C19` inhibitor, `CYP2C8` inhibitor, `CYP2C9` inhibitor, `CYP2D6` inhibitor, `CYP2E1` inhibitor, `CYP3A4` inhibitor | DrugBank actor |
@@ -49,6 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | target | adipose tissue | `CYP19A1` inhibitor | DrugBank actor |
 | target | adrenal gland | `CYP11B1` inhibitor | DrugBank actor |
 | target | ovary | `CYP19A1` inhibitor | DrugBank actor |
+| target | testis | `CYP19A1` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CACNA1C (inhibitor), CYP51A1 (inhibitor), KCND1 (inhibitor), KCNJ12 (inhibitor), KCNMA1 (inhibitor), NOS2 (inhibitor), NOS3 (inhibitor), NR1I2 (partial agonist).</sub>
 

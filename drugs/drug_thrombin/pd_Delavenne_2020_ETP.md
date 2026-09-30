@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** FVIII:C drives Endogenous thrombin potential (in nmol/L·min): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> FVIII:C (human-cl rhFVIII, Nuwiq) acts as a direct stimulator of endogenous thrombin potential (ETP, nmol/L·min) via a sigmoid Emax model: ETP = ETP0 + ETPmax × C^n/(EC50^n + C^n), where C is FVIII:C and EC50 is the FVIII:C producing half of ETPmax. The paper does not report numerical values for ETP0, ETPmax, EC50 or the sigmoidicity coefficient n in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Delavenne_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

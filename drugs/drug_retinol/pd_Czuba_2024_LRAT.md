@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tumor necrosis factor alpha (measured concentrations) drives LRAT mRNA (in % of expression remaining): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> TNF-α (pg/mL) dose-dependently downregulates LRAT mRNA expression (reported as % of expression remaining) in quiescent LX-2 stellate cells, described by an inhibitory Emax model; the paper does not state the LRAT EC50, Imax, or any rate parameters in the provided text, nor a mechanistic link to retinol concentrations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Czuba_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

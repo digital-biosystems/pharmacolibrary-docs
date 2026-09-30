@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Human regular insulin drives glucose infusion rate (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Serum concentrations of human regular insulin (U-100R/U-500R, PK from a 1-compartment model with first-order absorption and elimination) were modeled to stimulate the glucose infusion rate (GIR) measured during euglycemic clamps, using an effect-compartment PD model with an Emax (BMI was a significant covariate on Emax); the excerpts do not report numeric values for Emax, EC50, or ke0, and the paper does not state a mechanism beyond this direct stimulatory effect-compartment link.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2014`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

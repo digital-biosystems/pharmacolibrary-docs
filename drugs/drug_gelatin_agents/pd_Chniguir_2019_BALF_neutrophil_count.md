@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syzygium aromaticum aqueous extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for BALF neutrophil count; it only shows that intraperitoneal Syzygium aromaticum aqueous extract (SAAE) 200 mg/kg reduced LPS-induced BALF neutrophil recruitment in mice, with no potency or rate parameters given for this response. In vitro, SAAE inhibited neutrophil ROS-dependent luminol chemiluminescence (IC50 0.5 µg/mL resting and PMA-stimulated, 1.5 µg/mL fMLF-stimulated) by inhibiting MPO activity (IC50 0.5 µg/mL), but no mechanism for the BALF neutrophil effect is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chniguir_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

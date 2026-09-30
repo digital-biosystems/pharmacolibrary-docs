@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Apolipoprotein E (measured concentrations) drives LC3 levels (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Apolipoprotein E (apoE3, 0–~nM concentrations) acts on LC3 levels/LC3 puncta formation in N27 neuronal cells, inhibiting autophagic flux (ferritinophagy) via activation of the PI3K/AKT pathway; the paper reports an apoE potency of EC50 ≈ 7–13 nM against cystine-depletion-inducing ferroptosis triggers, but does not state an Emax, IC50, or kinetic parameters (kin, kout, ke0) for the LC3 response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Belaidi_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

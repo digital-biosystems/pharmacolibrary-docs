@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trehalose (the dose) drives name (in prevalence): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Lactulose (doses 10–40 g, expressed as g/kg body weight) acts on the binary response of diarrhea (prevalence/cumulative incidence) in 20 healthy female subjects via a dose-response (regression) relation; the paper does not state a pharmacodynamic mechanism model (no Emax/IC50/kin-kout parameters). The maximal noneffective dose (transitory laxative threshold) was 0.26 g/kg body weight for lactulose (vs 0.65 g/kg for trehalose), and up to 40 g lactulose caused diarrhea in 75% of subjects.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oku_1998`
 - **model family:** `categorical`
 - **driver:** `dose_only`

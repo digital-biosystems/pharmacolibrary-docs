@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** IGP-1 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> iGP-1 and iGP-5 inhibit mGPDH enzymatic activity and mGPDH-driven H2O2 production (ΔΨm powered by glycerol phosphate) by mixed inhibition with respect to glycerol 3-phosphate, with greater affinity for the free enzyme (Kic &lt; Kiu) and Hill slopes near unity, consistent with a single allosteric binding site. iGP-5 is more potent than iGP-1: mGPDH activity IC50 1.0 vs 6.3 µM, H2O2 production IC50 1.0 vs 13.6 µM, with Kic 0.7 vs 9.5 µM and Kiu 1.1 vs 14.6 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Orr_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,16 +31,16 @@ Orr AL; Ashok D; Sarantos MR; Ng R; Shi T; Gerencser AA; et al. et al. (2014). P
   ·  DOI: [10.1371/journal.pone.0089938](https://doi.org/10.1371/journal.pone.0089938)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| mGPDH Activity IC50 (µM) — iGP-1 | `Q322` · not captured | 6.3 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row1:col2 |
-| mGPDH Activity IC50 (µM) — iGP-5 | `Q322` · not captured | 1.0 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row1:col3 |
-| mGPDH H2O2 Production IC50 (µM) — iGP-1 | `Q322` · not captured | 13.6 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row2:col2 |
-| mGPDH H2O2 Production IC50 (µM) — iGP-5 | `Q322` · not captured | 1.0 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row2:col3 |
-| K ic (µM) — iGP-1 | `Q350` · not captured | 9.5 | µM | not captured | space_fold (not captured) | pone-0089938-t001:row3:col2 |
-| K ic (µM) — iGP-5 | `Q350` · not captured | 0.7 | µM | not captured | space_fold (not captured) | pone-0089938-t001:row3:col3 |
-| K iu (µM) — iGP-1 | `Q322` · not captured | 14.6 | µM | not captured | llm (not captured) | pone-0089938-t001:row4:col2 |
-| K iu (µM) — iGP-5 | `Q322` · not captured | 1.1 | µM | not captured | llm (not captured) | pone-0089938-t001:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | mGPDH Activity IC50 (µM) — iGP-1 | `Q322` · not captured | 6.3 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row1:col2 |
+| PD (effect) | mGPDH Activity IC50 (µM) — iGP-5 | `Q322` · not captured | 1.0 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row1:col3 |
+| PD (effect) | mGPDH H2O2 Production IC50 (µM) — iGP-1 | `Q322` · not captured | 13.6 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row2:col2 |
+| PD (effect) | mGPDH H2O2 Production IC50 (µM) — iGP-5 | `Q322` · not captured | 1.0 | µM | not captured | llm_confirmed (not captured) | pone-0089938-t001:row2:col3 |
+| PK (driver) | K ic (µM) — iGP-1 | `Q350` · not captured | 9.5 | µM | not captured | space_fold (not captured) | pone-0089938-t001:row3:col2 |
+| PK (driver) | K ic (µM) — iGP-5 | `Q350` · not captured | 0.7 | µM | not captured | space_fold (not captured) | pone-0089938-t001:row3:col3 |
+| PD (effect) | K iu (µM) — iGP-1 | `Q322` · not captured | 14.6 | µM | not captured | llm (not captured) | pone-0089938-t001:row4:col2 |
+| PD (effect) | K iu (µM) — iGP-5 | `Q322` · not captured | 1.1 | µM | not captured | llm (not captured) | pone-0089938-t001:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

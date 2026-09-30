@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydroxyurea (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Hydroxyurea (HYD) and eflornithine (DFMO) concentrations (50–1000 µM) inhibit parasite multiplication (cell viability, CCK-8 assay) of Babesia and Theileria species in a dose-related manner, with HYD IC50 values of 85.2, 68.7, 57.3, 49.5, and 19.6 µM and DFMO IC50 values of 98, 79, 46.9, 71, and 97 µM across the tested parasites; the paper does not state a pharmacodynamic mechanism for the viability effect (DFMO's known mechanism is ornithine decarboxylase inhibition). In cytotoxicity assays, HYD reduced MDBK cell viability with EC50 887.5 ± 14.4 µM, while DFMO showed no cytotoxicity up to 1000 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `El-Saber_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,23 +31,23 @@ El-Saber Batiha G; Magdy Beshbishy A; Stephen Adeyemi O; Nadwa E; Rashwan E; Yok
   ·  DOI: [10.1371/journal.pone.0228996](https://doi.org/10.1371/journal.pone.0228996)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM)a — HYD | `Q322` · not captured | 85.2 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col3 |
-| IC50 (μM)a | `Q322` · not captured | 68.7 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col4 |
-| IC50 (μM)a | `Q322` · not captured | 57.3 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col5 |
-| IC50 (μM)a | `Q322` · not captured | 49.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col6 |
-| IC50 (μM)a | `Q322` · not captured | 19.6 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col7 |
-| IC50 (μM)a — DFMO | `Q322` · not captured | 98 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col8 |
-| IC50 (μM)a | `Q322` · not captured | 79 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col9 |
-| IC50 (μM)a | `Q322` · not captured | 46.9 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col10 |
-| IC50 (μM)a | `Q322` · not captured | 71 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col11 |
-| IC50 (μM)a | `Q322` · not captured | 97 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col12 |
-| EC50 (μM)b — HYD | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col3 |
-| EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col4 |
-| EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col5 |
-| EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col6 |
-| EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM)a — HYD | `Q322` · not captured | 85.2 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col3 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 68.7 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col4 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 57.3 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col5 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 49.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col6 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 19.6 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col7 |
+| PD (effect) | IC50 (μM)a — DFMO | `Q322` · not captured | 98 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col8 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 79 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col9 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 46.9 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col10 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 71 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col11 |
+| PD (effect) | IC50 (μM)a | `Q322` · not captured | 97 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row1:col12 |
+| PD (effect) | EC50 (μM)b — HYD | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col3 |
+| PD (effect) | EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col4 |
+| PD (effect) | EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col5 |
+| PD (effect) | EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col6 |
+| PD (effect) | EC50 (μM)b | `Q321` · not captured | 887.5 | µM | not captured | llm_confirmed (not captured) | pone.0228996.t001:row2:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

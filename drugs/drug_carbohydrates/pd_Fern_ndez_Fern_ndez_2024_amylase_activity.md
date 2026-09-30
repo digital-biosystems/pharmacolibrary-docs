@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mandarin pomace extracts (measured concentrations) drives name (in mg/mL (IC50)) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Mandarin (Clemenule and Ortanique) pomace and hydro-alcoholic-acid extracts inhibit α-amylase activity in vitro, with IC50 values reported in mg/mL (e.g., Clemenule pomace 4.92, Clemenule extract 2.08, Ortanique pomace 3.42, Ortanique extract 1.72 mg/mL); the paper does not state a pharmacodynamic model or mechanism beyond attributing inhibition to phenolic compounds interacting with the enzyme's active site, and no rate parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fernández-Fernández_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,31 +30,31 @@ Fernández-Fernández AM; Dellacassa E; Curbelo R; Nardin T; Larcher R; Medrano-
   ·  DOI: [10.3390/nu16142370](https://doi.org/10.3390/nu16142370)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 4.92 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col4 |
-| IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 2.08 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col5 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 3.42 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 1.72 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col7 |
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 3.97 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col4 |
-| IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 13.50 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col5 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 4.93 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 11.07 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col7 |
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 70.19 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col4 |
-| IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 16.23 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col5 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 50.07 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 19.15 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col7 |
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 58.04 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col4 |
-| IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 28.79 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col5 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 105.68 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 69.64 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col7 |
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 3.25 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col4 |
-| IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 1.00 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col5 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 5.37 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 1.19 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col7 |
-| IC50 (mg/mL) — Clemenule | `Q322` · not captured | 31.23 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col4 |
-| IC50 (mg/mL) — Ortanique | `Q322` · not captured | 18.60 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col6 |
-| IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 12.77 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 4.92 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col4 |
+| PD (effect) | IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 2.08 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col5 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 3.42 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 1.72 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row0:col7 |
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 3.97 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col4 |
+| PD (effect) | IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 13.50 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col5 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 4.93 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 11.07 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row1:col7 |
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 70.19 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col4 |
+| PD (effect) | IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 16.23 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col5 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 50.07 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 19.15 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row2:col7 |
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 58.04 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col4 |
+| PD (effect) | IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 28.79 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col5 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 105.68 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 69.64 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row3:col7 |
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 3.25 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col4 |
+| PD (effect) | IC50 (mg/mL) — Clemenule extract | `Q322` · not captured | 1.00 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col5 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 5.37 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 1.19 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row4:col7 |
+| PD (effect) | IC50 (mg/mL) — Clemenule | `Q322` · not captured | 31.23 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col4 |
+| PD (effect) | IC50 (mg/mL) — Ortanique | `Q322` · not captured | 18.60 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col6 |
+| PD (effect) | IC50 (mg/mL) — Ortanique extract | `Q322` · not captured | 12.77 | mg/mL | not captured | exact (not captured) | nutrients-16-02370-t006:row5:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

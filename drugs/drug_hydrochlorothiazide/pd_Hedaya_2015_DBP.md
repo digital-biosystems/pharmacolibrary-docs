@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Irbesartan drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Irbesartan plasma concentrations drive the reduction in DBP (and SBP) from baseline; HCT 25 mg alone produced no measurable BP change, so the PD model describes only irbesartan's effect. The paper does not state an inhibition-of-production/elimination mechanism; instead, because of the delayed (anticlockwise hysteresis) antihypertensive effect attributed to delayed equilibrium with the angiotensin receptor site of action, an effect-compartment approach with a sigmoidal Emax model was used. With co-administered HCT, Emax increased by 25% and EC50 decreased by 40% versus irbesartan alone, suggesting synergistic BP lowering; no numeric Emax, EC50, ke0, or gamma values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hedaya_2015`
 - **model family:** `emax`
 - **driver:** `not_resolved`

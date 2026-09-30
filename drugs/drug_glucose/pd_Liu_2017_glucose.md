@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mitiglinide drives plasma glucose (in mg/mL): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> After a single 10 mg oral dose of mitiglinide, plasma glucose (mg/mL) was described by an effect-compartment (biophase) Emax model in which the effect-site concentration Ce inhibits glucose from a baseline E0 of 4.65 mmol/L, with IC50 1.13 μg/mL, Ke0 7.47 /h, and gamma 1.66; the paper does not state an Imax/Emax value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2017`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -20,25 +30,25 @@ Liu S; Chen P; Zhao Y; Dai G; Sun B; Wang Y; et al. et al. (2017). BMC pharmacol
   ·  DOI: [10.1186/s40360-017-0161-6](https://doi.org/10.1186/s40360-017-0161-6)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ka (/h) — Mean ± SD | `Q49` · not captured | 9.57 | /h | not captured | exact (not captured) | Tab2:row1:col1 |
-| Ka (/h) — Inter-individual variability (CV %) | `Q49` · not captured | 91.95 | /h | not captured | exact (not captured) | Tab2:row1:col2 |
-| Tlag (h) — Mean ± SD | `Q83` · not captured | 0.09 | h | not captured | exact (not captured) | Tab2:row2:col1 |
-| Tlag (h) — Inter-individual variability (CV %) | `Q83` · not captured | 70.71 | h | not captured | exact (not captured) | Tab2:row2:col2 |
-| V (L) — Mean ± SD | `Q61` · not captured | 6.15 | L | not captured | exact (not captured) | Tab2:row3:col1 |
-| V (L) — Inter-individual variability (CV %) | `Q61` · not captured | 17.61 | L | not captured | exact (not captured) | Tab2:row3:col2 |
-| CL (L/h) — Mean ± SD | `Q22` · not captured | 0.03 | L/h | not captured | exact (not captured) | Tab2:row4:col1 |
-| V2 (L) — Mean ± SD | `Q64` · not captured | 104.69 | L | not captured | exact (not captured) | Tab2:row5:col1 |
-| Cl2 (L/h) — Mean ± SD | `Q30` · not captured | 9.85 | L/h | not captured | special_case (not captured) | Tab2:row6:col1 |
-| Cl2 (L/h) — Inter-individual variability (CV %) | `Q30` · not captured | 22.18 | L/h | not captured | special_case (not captured) | Tab2:row6:col2 |
-| IC50 (μg/mL) — Mean ± SD | `Q322` · not captured | 1.13 | μg/mL | not captured | exact (not captured) | Tab2:row7:col1 |
-| E0 (mmol/L) — Mean ± SD | `Q324` · not captured | 4.65 | mmol/L | not captured | exact (not captured) | Tab2:row8:col1 |
-| E0 (mmol/L) — Inter-individual variability (CV %) | `Q324` · not captured | 4.35 | mmol/L | not captured | exact (not captured) | Tab2:row8:col2 |
-| Ke0 (/h) — Mean ± SD | `Q326` · not captured | 7.47 | /h | not captured | exact (not captured) | Tab2:row9:col1 |
-| Ke0 (/h) — Inter-individual variability (CV %) | `Q326` · not captured | 90.61 | /h | not captured | exact (not captured) | Tab2:row9:col2 |
-| Gamma — Mean ± SD | `Q325` · not captured | 1.66 | not captured | not captured | exact (not captured) | Tab2:row10:col1 |
-| Gamma — Inter-individual variability (CV %) | `Q325` · not captured | 18.67 | not captured | not captured | exact (not captured) | Tab2:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ka (/h) — Mean ± SD | `Q49` · not captured | 9.57 | /h | not captured | exact (not captured) | Tab2:row1:col1 |
+| PK (driver) | Ka (/h) — Inter-individual variability (CV %) | `Q49` · not captured | 91.95 | /h | not captured | exact (not captured) | Tab2:row1:col2 |
+| PK (driver) | Tlag (h) — Mean ± SD | `Q83` · not captured | 0.09 | h | not captured | exact (not captured) | Tab2:row2:col1 |
+| PK (driver) | Tlag (h) — Inter-individual variability (CV %) | `Q83` · not captured | 70.71 | h | not captured | exact (not captured) | Tab2:row2:col2 |
+| PK (driver) | V (L) — Mean ± SD | `Q61` · not captured | 6.15 | L | not captured | exact (not captured) | Tab2:row3:col1 |
+| PK (driver) | V (L) — Inter-individual variability (CV %) | `Q61` · not captured | 17.61 | L | not captured | exact (not captured) | Tab2:row3:col2 |
+| PK (driver) | CL (L/h) — Mean ± SD | `Q22` · not captured | 0.03 | L/h | not captured | exact (not captured) | Tab2:row4:col1 |
+| PK (driver) | V2 (L) — Mean ± SD | `Q64` · not captured | 104.69 | L | not captured | exact (not captured) | Tab2:row5:col1 |
+| PK (driver) | Cl2 (L/h) — Mean ± SD | `Q30` · not captured | 9.85 | L/h | not captured | special_case (not captured) | Tab2:row6:col1 |
+| PK (driver) | Cl2 (L/h) — Inter-individual variability (CV %) | `Q30` · not captured | 22.18 | L/h | not captured | special_case (not captured) | Tab2:row6:col2 |
+| PD (effect) | IC50 (μg/mL) — Mean ± SD | `Q322` · not captured | 1.13 | μg/mL | not captured | exact (not captured) | Tab2:row7:col1 |
+| PD (effect) | E0 (mmol/L) — Mean ± SD | `Q324` · not captured | 4.65 | mmol/L | not captured | exact (not captured) | Tab2:row8:col1 |
+| PD (effect) | E0 (mmol/L) — Inter-individual variability (CV %) | `Q324` · not captured | 4.35 | mmol/L | not captured | exact (not captured) | Tab2:row8:col2 |
+| PD (effect) | Ke0 (/h) — Mean ± SD | `Q326` · not captured | 7.47 | /h | not captured | exact (not captured) | Tab2:row9:col1 |
+| PD (effect) | Ke0 (/h) — Inter-individual variability (CV %) | `Q326` · not captured | 90.61 | /h | not captured | exact (not captured) | Tab2:row9:col2 |
+| PD (effect) | Gamma — Mean ± SD | `Q325` · not captured | 1.66 | not captured | not captured | exact (not captured) | Tab2:row10:col1 |
+| PD (effect) | Gamma — Inter-individual variability (CV %) | `Q325` · not captured | 18.67 | not captured | not captured | exact (not captured) | Tab2:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

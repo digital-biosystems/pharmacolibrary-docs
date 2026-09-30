@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Neomenthol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In EAC-bearing mice, neomenthol (75 mg/kg body weight) was associated with a decline in body weight after day 12 (versus continuous increase in untreated mice), attributed to reduced tumor cell growth, presumably via ODC inhibition (cell-free IC50 20.2 ± 1.02 µM; K562 29.59 ± 2.54 µM; MDA-MB-231 57.2 ± 2.85 µM). The paper does not report a pharmacodynamic model for the body-weight response, and no Imax, EC50, kin, kout, ke0, or gamma values are given for it.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fatima_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paroxetine (concentrations from the PK model of Chen_2025) drives enhancement rate in depression severity (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Paroxetine plasma AUC0–1week (cumulative exposure) acts on the percentage reduction in MADRS score (enhancement rate) via an Emax model, with AUC0–1week significantly affecting Emax and MADRSW1 affecting ET50; the paper does not state numeric Emax, EC50/ET50, or gamma values in the excerpts, and the mechanism is described only qualitatively as SERT inhibition with delayed 5-HT1A autoreceptor desensitization.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shigetome_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

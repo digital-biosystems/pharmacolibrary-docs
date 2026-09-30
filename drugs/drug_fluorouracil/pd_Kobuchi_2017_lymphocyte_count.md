@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-Fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> The record describes an indirect response (inhibition) model for 5-fluorouracil's effect on lymphocyte count driven by cited PK (Arshad_2020), but the paper excerpts do not describe a lymphocyte count model or its mechanism or potency parameters; the excerpts instead detail modified indirect response models for body weight (with a hypothetical 1.0 mg/kg placebo dose, k_bw,in, k_bw,out, EC50,placebo) and for erythrocyte counts (precursor production k_in, transition k_tr, elimination k_circ = k_in/Circ0, with a linear drug effect E_drug = k_slope × C2(t) on precursor production from peripheral-compartment concentrations).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kobuchi_2017`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
@@ -21,48 +31,48 @@ Kobuchi S; Ito Y; Sakaeda T et al. (2017). European journal of drug metabolism a
   ·  DOI: [10.1007/s13318-016-0389-3](https://doi.org/10.1007/s13318-016-0389-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V 1 — Final model | `Q63` · not captured | 0.39 | h | not captured | space_fold (not captured) | tab_0:row3:col2 |
-| V 1 | `Q63` · not captured | 11.1 | h | not captured | space_fold (not captured) | tab_0:row3:col3 |
-| V 1 — Bootstrap (n = 1000) | `Q63` · not captured | 0.39 | n = 1000 | not captured | space_fold (not captured) | tab_0:row3:col4 |
-| V 1 | `Q63` · not captured | 0.39 | h | not captured | space_fold (not captured) | tab_0:row3:col5 |
-| V 1 | `Q63` · not captured | 0.34 | h | not captured | space_fold (not captured) | tab_0:row3:col6 |
-| V 2 — Final model | `Q64` · not captured | 0.59 | h | not captured | space_fold (not captured) | tab_0:row4:col2 |
-| V 2 | `Q64` · not captured | 19.2 | h | not captured | space_fold (not captured) | tab_0:row4:col3 |
-| V 2 — Bootstrap (n = 1000) | `Q64` · not captured | 0.59 | n = 1000 | not captured | space_fold (not captured) | tab_0:row4:col4 |
-| V 2 | `Q64` · not captured | 0.58 | h | not captured | space_fold (not captured) | tab_0:row4:col5 |
-| V 2 | `Q64` · not captured | 0.46 | h | not captured | space_fold (not captured) | tab_0:row4:col6 |
-| K m — Final model | `Q1` · not captured | 6.9 | h | not captured | space_fold (not captured) | tab_0:row5:col2 |
-| K m | `Q1` · not captured | 37.4 | h | not captured | space_fold (not captured) | tab_0:row5:col3 |
-| K m — Bootstrap (n = 1000) | `Q1` · not captured | 7.2 | n = 1000 | not captured | space_fold (not captured) | tab_0:row5:col4 |
-| K m | `Q1` · not captured | 6.8 | h | not captured | space_fold (not captured) | tab_0:row5:col5 |
-| K m | `Q1` · not captured | 3.7 | h | not captured | space_fold (not captured) | tab_0:row5:col6 |
-| V max — Final model | `Q66` · not captured | 37.3 | h | not captured | special_case (not captured) | tab_0:row6:col2 |
-| V max | `Q66` · not captured | 23.2 | h | not captured | special_case (not captured) | tab_0:row6:col3 |
-| V max — Bootstrap (n = 1000) | `Q66` · not captured | 38.2 | n = 1000 | not captured | special_case (not captured) | tab_0:row6:col4 |
-| V max | `Q66` · not captured | 37.0 | h | not captured | special_case (not captured) | tab_0:row6:col5 |
-| V max | `Q66` · not captured | 25.8 | h | not captured | special_case (not captured) | tab_0:row6:col6 |
-| CL D — Final model | `Q30` · not captured | 2.5 | h | not captured | space_fold (not captured) | tab_0:row7:col2 |
-| CL D | `Q30` · not captured | 14.2 | h | not captured | space_fold (not captured) | tab_0:row7:col3 |
-| CL D — Bootstrap (n = 1000) | `Q30` · not captured | 2.5 | n = 1000 | not captured | space_fold (not captured) | tab_0:row7:col4 |
-| CL D | `Q30` · not captured | 2.5 | h | not captured | space_fold (not captured) | tab_0:row7:col5 |
-| CL D | `Q30` · not captured | 1.7 | h | not captured | space_fold (not captured) | tab_0:row7:col6 |
-| V 2 — Final model | `Q64` · not captured | 47.5 | h | not captured | space_fold (not captured) | tab_0:row9:col2 |
-| V 2 | `Q64` · not captured | 43.4 | h | not captured | space_fold (not captured) | tab_0:row9:col3 |
-| V 2 — Bootstrap (n = 1000) | `Q64` · not captured | 48.6 | n = 1000 | not captured | space_fold (not captured) | tab_0:row9:col4 |
-| V 2 | `Q64` · not captured | 47.4 | h | not captured | space_fold (not captured) | tab_0:row9:col5 |
-| V 2 | `Q64` · not captured | 34.8 | h | not captured | space_fold (not captured) | tab_0:row9:col6 |
-| CL D — Final model | `Q30` · not captured | 18.0 | h | not captured | space_fold (not captured) | tab_0:row10:col2 |
-| CL D | `Q30` · not captured | 120.0 | h | not captured | space_fold (not captured) | tab_0:row10:col3 |
-| CL D — Bootstrap (n = 1000) | `Q30` · not captured | 16.6 | n = 1000 | not captured | space_fold (not captured) | tab_0:row10:col4 |
-| CL D | `Q30` · not captured | 15.9 | h | not captured | space_fold (not captured) | tab_0:row10:col5 |
-| CL D | `Q30` · not captured | 0 | h | not captured | space_fold (not captured) | tab_0:row10:col6 |
-| V max — Final model | `Q66` · not captured | 8.1 | h | not captured | special_case (not captured) | tab_0:row11:col2 |
-| V max | `Q66` · not captured | 56.5 | h | not captured | special_case (not captured) | tab_0:row11:col3 |
-| V max — Bootstrap (n = 1000) | `Q66` · not captured | 7.4 | n = 1000 | not captured | special_case (not captured) | tab_0:row11:col4 |
-| V max | `Q66` · not captured | 7.5 | h | not captured | special_case (not captured) | tab_0:row11:col5 |
-| V max | `Q66` · not captured | 0 | h | not captured | special_case (not captured) | tab_0:row11:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V 1 — Final model | `Q63` · not captured | 0.39 | h | not captured | space_fold (not captured) | tab_0:row3:col2 |
+| PK (driver) | V 1 | `Q63` · not captured | 11.1 | h | not captured | space_fold (not captured) | tab_0:row3:col3 |
+| PK (driver) | V 1 — Bootstrap (n = 1000) | `Q63` · not captured | 0.39 | n = 1000 | not captured | space_fold (not captured) | tab_0:row3:col4 |
+| PK (driver) | V 1 | `Q63` · not captured | 0.39 | h | not captured | space_fold (not captured) | tab_0:row3:col5 |
+| PK (driver) | V 1 | `Q63` · not captured | 0.34 | h | not captured | space_fold (not captured) | tab_0:row3:col6 |
+| PK (driver) | V 2 — Final model | `Q64` · not captured | 0.59 | h | not captured | space_fold (not captured) | tab_0:row4:col2 |
+| PK (driver) | V 2 | `Q64` · not captured | 19.2 | h | not captured | space_fold (not captured) | tab_0:row4:col3 |
+| PK (driver) | V 2 — Bootstrap (n = 1000) | `Q64` · not captured | 0.59 | n = 1000 | not captured | space_fold (not captured) | tab_0:row4:col4 |
+| PK (driver) | V 2 | `Q64` · not captured | 0.58 | h | not captured | space_fold (not captured) | tab_0:row4:col5 |
+| PK (driver) | V 2 | `Q64` · not captured | 0.46 | h | not captured | space_fold (not captured) | tab_0:row4:col6 |
+| PK (driver) | K m — Final model | `Q1` · not captured | 6.9 | h | not captured | space_fold (not captured) | tab_0:row5:col2 |
+| PK (driver) | K m | `Q1` · not captured | 37.4 | h | not captured | space_fold (not captured) | tab_0:row5:col3 |
+| PK (driver) | K m — Bootstrap (n = 1000) | `Q1` · not captured | 7.2 | n = 1000 | not captured | space_fold (not captured) | tab_0:row5:col4 |
+| PK (driver) | K m | `Q1` · not captured | 6.8 | h | not captured | space_fold (not captured) | tab_0:row5:col5 |
+| PK (driver) | K m | `Q1` · not captured | 3.7 | h | not captured | space_fold (not captured) | tab_0:row5:col6 |
+| PK (driver) | V max — Final model | `Q66` · not captured | 37.3 | h | not captured | special_case (not captured) | tab_0:row6:col2 |
+| PK (driver) | V max | `Q66` · not captured | 23.2 | h | not captured | special_case (not captured) | tab_0:row6:col3 |
+| PK (driver) | V max — Bootstrap (n = 1000) | `Q66` · not captured | 38.2 | n = 1000 | not captured | special_case (not captured) | tab_0:row6:col4 |
+| PK (driver) | V max | `Q66` · not captured | 37.0 | h | not captured | special_case (not captured) | tab_0:row6:col5 |
+| PK (driver) | V max | `Q66` · not captured | 25.8 | h | not captured | special_case (not captured) | tab_0:row6:col6 |
+| PK (driver) | CL D — Final model | `Q30` · not captured | 2.5 | h | not captured | space_fold (not captured) | tab_0:row7:col2 |
+| PK (driver) | CL D | `Q30` · not captured | 14.2 | h | not captured | space_fold (not captured) | tab_0:row7:col3 |
+| PK (driver) | CL D — Bootstrap (n = 1000) | `Q30` · not captured | 2.5 | n = 1000 | not captured | space_fold (not captured) | tab_0:row7:col4 |
+| PK (driver) | CL D | `Q30` · not captured | 2.5 | h | not captured | space_fold (not captured) | tab_0:row7:col5 |
+| PK (driver) | CL D | `Q30` · not captured | 1.7 | h | not captured | space_fold (not captured) | tab_0:row7:col6 |
+| PK (driver) | V 2 — Final model | `Q64` · not captured | 47.5 | h | not captured | space_fold (not captured) | tab_0:row9:col2 |
+| PK (driver) | V 2 | `Q64` · not captured | 43.4 | h | not captured | space_fold (not captured) | tab_0:row9:col3 |
+| PK (driver) | V 2 — Bootstrap (n = 1000) | `Q64` · not captured | 48.6 | n = 1000 | not captured | space_fold (not captured) | tab_0:row9:col4 |
+| PK (driver) | V 2 | `Q64` · not captured | 47.4 | h | not captured | space_fold (not captured) | tab_0:row9:col5 |
+| PK (driver) | V 2 | `Q64` · not captured | 34.8 | h | not captured | space_fold (not captured) | tab_0:row9:col6 |
+| PK (driver) | CL D — Final model | `Q30` · not captured | 18.0 | h | not captured | space_fold (not captured) | tab_0:row10:col2 |
+| PK (driver) | CL D | `Q30` · not captured | 120.0 | h | not captured | space_fold (not captured) | tab_0:row10:col3 |
+| PK (driver) | CL D — Bootstrap (n = 1000) | `Q30` · not captured | 16.6 | n = 1000 | not captured | space_fold (not captured) | tab_0:row10:col4 |
+| PK (driver) | CL D | `Q30` · not captured | 15.9 | h | not captured | space_fold (not captured) | tab_0:row10:col5 |
+| PK (driver) | CL D | `Q30` · not captured | 0 | h | not captured | space_fold (not captured) | tab_0:row10:col6 |
+| PK (driver) | V max — Final model | `Q66` · not captured | 8.1 | h | not captured | special_case (not captured) | tab_0:row11:col2 |
+| PK (driver) | V max | `Q66` · not captured | 56.5 | h | not captured | special_case (not captured) | tab_0:row11:col3 |
+| PK (driver) | V max — Bootstrap (n = 1000) | `Q66` · not captured | 7.4 | n = 1000 | not captured | special_case (not captured) | tab_0:row11:col4 |
+| PK (driver) | V max | `Q66` · not captured | 7.5 | h | not captured | special_case (not captured) | tab_0:row11:col5 |
+| PK (driver) | V max | `Q66` · not captured | 0 | h | not captured | special_case (not captured) | tab_0:row11:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

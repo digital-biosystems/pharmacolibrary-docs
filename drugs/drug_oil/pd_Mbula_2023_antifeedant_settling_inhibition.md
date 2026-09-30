@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Benzyl isothiocyanate (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The essential oil of Drypetes gossweileri (96.23% benzyl isothiocyanate) was applied to leaf fragments and antifeedant settling/feeding inhibition (%SI/%FI, calculated as 1 − T/C × 100) was measured in insects; the paper gives only empirical dose–response EC50 values of 29.4 μg/cm² (Spodoptera littoralis), 14.744 μg/cm² (Myzus persicae), and 8.3 μg/cm² (Rhopalosiphum padi), and does not state a pharmacodynamic mechanism or model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mbula_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

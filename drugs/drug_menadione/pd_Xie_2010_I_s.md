@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives fungal viability (in ratio): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Menadione concentrations (mM) reduce fungal viability, expressed as a survival index I_s (ratio of stressed to control conidial germination or colony growth), fitted to a logistic survival equation I_s = 1/[1+exp(a+bC)]; the paper does not describe a pharmacodynamic mechanism beyond superoxide generation. Potency values are EC50 for colony growth of 2.41 ± 0.03 mM (BbSod2-overexpressing T4) versus 1.25 ± 0.01 mM (wild-type), and for conidial germination 0.89 ± 0.06 mM versus 0.55 ± 0.07 mM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xie_2010`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

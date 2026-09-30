@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan (concentrations from the PK model of Bertin_2025) drives heart rate (in beats/min): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In rabbit isolated spontaneously beating hearts, levosimendan concentration-dependently increased heart rate (beats/min) via a direct stimulatory concentration-response (Emax-type) relationship, with maximal chronotropic effect lower than amrinone or milrinone; the chronotropic potency (EC50) was not determined because the maximal heart-rate increase could not be ascertained. The paper attributes the reduced chronotropic/inotropic efficacy to an inhibitory action of levosimendan on the voltage-sensitive Ca2+ current counteracting PDE-inhibition at higher concentrations, but gives no numeric HR potency or rate parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rump_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

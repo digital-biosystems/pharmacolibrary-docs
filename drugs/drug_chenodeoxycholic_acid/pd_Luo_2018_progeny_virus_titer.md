@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chenodeoxycholic acid (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chenodeoxycholic acid (CDCA) concentrations inhibit progeny influenza A virus titers in A549 and MDCK cells in a dose-dependent manner, acting post-entry by blocking vRNP nuclear export during late infection stages (4–8 hpi); the paper does not state a formal PD model. IC50 values for CDCA ranged from 5.5 to 11.5 µM across three IAV subtypes, and 60 µM CDCA post-treatment reduced progeny virus yield by more than 90%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

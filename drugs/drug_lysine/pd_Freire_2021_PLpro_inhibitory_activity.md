@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (pBthTX-I)2K (measured concentrations) drives name (in IC50): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The peptide (pBthTX-I)2K and its analogs inhibit SARS-CoV-2 PLpro activity in vitro (direct enzyme inhibition, blocking substrate entry to the catalytic cleft), with IC50 values of 1.0–3.5 µM ((pBthTX-I)2K 2.4 µM; A12 1.30 µM; A11 1.40 µM) and binding affinities Kd of 0.9–7 µM ((pBthTX-I)2K 0.9 µM), while antiviral EC50 values against SARS-CoV-2 infection were 28–65 µM ((pBthTX-I)2K 65 µM; A12 28 µM; A11 51 µM) with mostly low cytotoxicity (CC50 &gt; 100 µM, e.g. CQ 76 µM, Hy-a1 81 µM); no Mpro inhibition was detected (IC50 &gt; 10 µM). The paper does not state a formal PD model (no Imax, kin, kout, ke0 or gamma values), but the correlation between antiviral EC50 and PLpro IC50 suggests PLpro inhi
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Freire_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,39 +30,39 @@ Freire MCLC; Noske GD; Bitencourt NV; Sanches PRS; Santos-Filho NA; Gawriljuk VO
   ·  DOI: [10.3390/molecules26164896](https://doi.org/10.3390/molecules26164896)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50(µM) — (pBthTX-I)2K | `Q321` · not captured | 65 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col2 |
-| EC50(µM) — A8 | `Q321` · not captured | 67 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col9 |
-| EC50(µM) — A11 | `Q321` · not captured | 51 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col11 |
-| EC50(µM) — A12 | `Q321` · not captured | 28 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col12 |
-| EC50(µM) — CQ | `Q321` · not captured | 7 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col13 |
-| EC50(µM) — BREQ | `Q321` · not captured | 0.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col14 |
-| EC50(µM) — Hy-a1 | `Q321` · not captured | 4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col15 |
-| CC50(µM) — A11 | `Q322` · not captured | 2.0 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col11 |
-| CC50(µM) — A12 | `Q322` · not captured | 58 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col12 |
-| CC50(µM) — CQ | `Q322` · not captured | 76 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col13 |
-| CC50(µM) — Hy-a1 | `Q322` · not captured | 81 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col15 |
-| IC50(µM) — (pBthTX-I)2K | `Q322` · not captured | 2.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col2 |
-| IC50(µM) — A1 | `Q322` · not captured | 3.5 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col3 |
-| IC50(µM) — A2 | `Q322` · not captured | 2.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col4 |
-| IC50(µM) — A3 | `Q322` · not captured | 1.00 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col5 |
-| IC50(µM) — A4 | `Q322` · not captured | 2.00 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col6 |
-| IC50(µM) — A5 | `Q322` · not captured | 1.90 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col7 |
-| IC50(µM) — A6 | `Q322` · not captured | 1.80 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col8 |
-| IC50(µM) — A8 | `Q322` · not captured | 2.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col9 |
-| IC50(µM) — A10 | `Q322` · not captured | 2.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col10 |
-| IC50(µM) — A11 | `Q322` · not captured | 1.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col11 |
-| IC50(µM) — A12 | `Q322` · not captured | 1.30 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col12 |
-| Kd(µM) — (pBthTX-I)2K | `Q331` · not captured | 0.9 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col2 |
-| Kd(µM) — A1 | `Q331` · not captured | 6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col3 |
-| Kd(µM) — A2 | `Q331` · not captured | 7 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col4 |
-| Kd(µM) — A3 | `Q331` · not captured | 6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col5 |
-| Kd(µM) — A4 | `Q331` · not captured | 3 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col6 |
-| Kd(µM) — A5 | `Q331` · not captured | 3 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col7 |
-| Kd(µM) — A6 | `Q331` · not captured | 5 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col8 |
-| Kd(µM) — A11 | `Q331` · not captured | 1.0 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col11 |
-| Kd(µM) — A12 | `Q331` · not captured | 1.6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col12 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50(µM) — (pBthTX-I)2K | `Q321` · not captured | 65 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col2 |
+| PD (effect) | EC50(µM) — A8 | `Q321` · not captured | 67 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col9 |
+| PD (effect) | EC50(µM) — A11 | `Q321` · not captured | 51 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col11 |
+| PD (effect) | EC50(µM) — A12 | `Q321` · not captured | 28 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col12 |
+| PD (effect) | EC50(µM) — CQ | `Q321` · not captured | 7 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col13 |
+| PD (effect) | EC50(µM) — BREQ | `Q321` · not captured | 0.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col14 |
+| PD (effect) | EC50(µM) — Hy-a1 | `Q321` · not captured | 4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row2:col15 |
+| PD (effect) | CC50(µM) — A11 | `Q322` · not captured | 2.0 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col11 |
+| PD (effect) | CC50(µM) — A12 | `Q322` · not captured | 58 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col12 |
+| PD (effect) | CC50(µM) — CQ | `Q322` · not captured | 76 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col13 |
+| PD (effect) | CC50(µM) — Hy-a1 | `Q322` · not captured | 81 | µM | not captured | llm (not captured) | molecules-26-04896-t001:row3:col15 |
+| PD (effect) | IC50(µM) — (pBthTX-I)2K | `Q322` · not captured | 2.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col2 |
+| PD (effect) | IC50(µM) — A1 | `Q322` · not captured | 3.5 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col3 |
+| PD (effect) | IC50(µM) — A2 | `Q322` · not captured | 2.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col4 |
+| PD (effect) | IC50(µM) — A3 | `Q322` · not captured | 1.00 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col5 |
+| PD (effect) | IC50(µM) — A4 | `Q322` · not captured | 2.00 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col6 |
+| PD (effect) | IC50(µM) — A5 | `Q322` · not captured | 1.90 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col7 |
+| PD (effect) | IC50(µM) — A6 | `Q322` · not captured | 1.80 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col8 |
+| PD (effect) | IC50(µM) — A8 | `Q322` · not captured | 2.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col9 |
+| PD (effect) | IC50(µM) — A10 | `Q322` · not captured | 2.4 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col10 |
+| PD (effect) | IC50(µM) — A11 | `Q322` · not captured | 1.40 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col11 |
+| PD (effect) | IC50(µM) — A12 | `Q322` · not captured | 1.30 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row5:col12 |
+| PD (effect) | Kd(µM) — (pBthTX-I)2K | `Q331` · not captured | 0.9 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col2 |
+| PD (effect) | Kd(µM) — A1 | `Q331` · not captured | 6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col3 |
+| PD (effect) | Kd(µM) — A2 | `Q331` · not captured | 7 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col4 |
+| PD (effect) | Kd(µM) — A3 | `Q331` · not captured | 6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col5 |
+| PD (effect) | Kd(µM) — A4 | `Q331` · not captured | 3 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col6 |
+| PD (effect) | Kd(µM) — A5 | `Q331` · not captured | 3 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col7 |
+| PD (effect) | Kd(µM) — A6 | `Q331` · not captured | 5 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col8 |
+| PD (effect) | Kd(µM) — A11 | `Q331` · not captured | 1.0 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col11 |
+| PD (effect) | Kd(µM) — A12 | `Q331` · not captured | 1.6 | µM | not captured | exact (not captured) | molecules-26-04896-t001:row6:col12 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

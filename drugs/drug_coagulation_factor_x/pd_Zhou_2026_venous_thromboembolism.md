@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Milvexian (measured concentrations) drives name (in VTE): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Milvexian, a direct reversible FXIa inhibitor, reduces the VTE rate (clinical endpoint, % of participants) in TKR patients via an Emax dose–response model with a parametric placebo component, in which treatments share a common Emax and differ in drug-specific ED50; the paper does not report numeric Emax or ED50 values. Observed VTE rates were 21%, 11%, 9%, and 8% for milvexian 25, 50, 100, and 200 mg BID versus 21% with enoxaparin 40 mg QD, and the record's concentration-driven (ng/mL) characterization is not supported by the excerpts, which describe a dose–response rather than a concentration–response mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

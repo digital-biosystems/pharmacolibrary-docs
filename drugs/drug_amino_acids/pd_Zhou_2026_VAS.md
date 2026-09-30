@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gabapentin drives pain score (in 0-10): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Gabapentin plasma concentrations inhibit the VAS pain score (0–10) via an inhibitory Imax model with an effect compartment linked to the central compartment by first-order rate constants ke1 = 0.53 h⁻¹ (into) and ke2 = 1 h⁻¹ (out of the effect compartment); full inhibition was assumed (Imax = 1), with baseline pain E0 = 7.31 and IC50 = 263.11 ng/mL (fixed to reduce parameter uncertainty).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2026`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`
@@ -21,25 +31,25 @@ Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; Schmidt S;
   ·  DOI: [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| tlag (h) — Final estimate (%RSE) | `Q83` · not captured | 0.34 | h | not captured | exact (not captured) | T1:row2:col1 |
-| ka (h-1) — Final estimate (%RSE) | `Q49` · not captured | 0.14 | h-1 | not captured | exact (not captured) | T1:row3:col1 |
-| CL/F (L/h) — Final estimate (%RSE) | `Q27` · not captured | 10.16 | L/h | not captured | exact (not captured) | T1:row4:col1 |
-| V1/F (L) — Final estimate (%RSE) | `Q290` · not captured | 18.16 | L | not captured | exact (not captured) | T1:row6:col1 |
-| Q (L/h) — Final estimate (%RSE) | `Q30` · not captured | 6.58 | L/h | not captured | exact (not captured) | T1:row7:col1 |
-| V2/F (L) — Final estimate (%RSE) | `Q82` · not captured | 357.67 | L | not captured | exact (not captured) | T1:row8:col1 |
-| ke1 (h-1) — Final estimate (%RSE) | `Q47` · not captured | 0.53 | h-1 | not captured | llm (not captured) | T1:row9:col1 |
-| E0 — Final estimate (%RSE) | `Q324` · not captured | 7.31 | not captured | not captured | exact (not captured) | T1:row11:col1 |
-| IC50 (ng/mL) — Final estimate (%RSE) | `Q322` · not captured | 263.11 | ng/mL | not captured | exact (not captured) | T1:row12:col1 |
-| ke2 (h-1) — Final estimate (%RSE) | `Q68` · not captured | 1 | h-1 | not captured | llm (not captured) | T1:row13:col1 |
-| Imax — Final estimate (%RSE) | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | T1:row14:col1 |
-| ωTlag — Final estimate (%RSE) | `Q83` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T1:row16:col1 |
-| ωka — Final estimate (%RSE) | `Q49` · not captured | 0.15 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
-| ωCL — Final estimate (%RSE) | `Q22` · not captured | 0.46 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |
-| ωV1 — Final estimate (%RSE) | `Q63` · not captured | 0.54 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col1 |
-| ωE0 — Final estimate (%RSE) | `Q324` · not captured | 0.98 | not captured | not captured | llm_confirmed (not captured) | T1:row22:col1 |
-| Proportional (b) — Final estimate (%RSE) | `Q900` · not captured | 0.30 | b | not captured | llm (not captured) | T1:row27:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | tlag (h) — Final estimate (%RSE) | `Q83` · not captured | 0.34 | h | not captured | exact (not captured) | T1:row2:col1 |
+| PK (driver) | ka (h-1) — Final estimate (%RSE) | `Q49` · not captured | 0.14 | h-1 | not captured | exact (not captured) | T1:row3:col1 |
+| PK (driver) | CL/F (L/h) — Final estimate (%RSE) | `Q27` · not captured | 10.16 | L/h | not captured | exact (not captured) | T1:row4:col1 |
+| PK (driver) | V1/F (L) — Final estimate (%RSE) | `Q290` · not captured | 18.16 | L | not captured | exact (not captured) | T1:row6:col1 |
+| PK (driver) | Q (L/h) — Final estimate (%RSE) | `Q30` · not captured | 6.58 | L/h | not captured | exact (not captured) | T1:row7:col1 |
+| PK (driver) | V2/F (L) — Final estimate (%RSE) | `Q82` · not captured | 357.67 | L | not captured | exact (not captured) | T1:row8:col1 |
+| PK (driver) | ke1 (h-1) — Final estimate (%RSE) | `Q47` · not captured | 0.53 | h-1 | not captured | llm (not captured) | T1:row9:col1 |
+| PD (effect) | E0 — Final estimate (%RSE) | `Q324` · not captured | 7.31 | not captured | not captured | exact (not captured) | T1:row11:col1 |
+| PD (effect) | IC50 (ng/mL) — Final estimate (%RSE) | `Q322` · not captured | 263.11 | ng/mL | not captured | exact (not captured) | T1:row12:col1 |
+| PK (driver) | ke2 (h-1) — Final estimate (%RSE) | `Q68` · not captured | 1 | h-1 | not captured | llm (not captured) | T1:row13:col1 |
+| PD (effect) | Imax — Final estimate (%RSE) | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | T1:row14:col1 |
+| PK (driver) | ωTlag — Final estimate (%RSE) | `Q83` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T1:row16:col1 |
+| PK (driver) | ωka — Final estimate (%RSE) | `Q49` · not captured | 0.15 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
+| PK (driver) | ωCL — Final estimate (%RSE) | `Q22` · not captured | 0.46 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |
+| PK (driver) | ωV1 — Final estimate (%RSE) | `Q63` · not captured | 0.54 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col1 |
+| PD (effect) | ωE0 — Final estimate (%RSE) | `Q324` · not captured | 0.98 | not captured | not captured | llm_confirmed (not captured) | T1:row22:col1 |
+| model term | Proportional (b) — Final estimate (%RSE) | `Q900` · not captured | 0.30 | b | not captured | llm (not captured) | T1:row27:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

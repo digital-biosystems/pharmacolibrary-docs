@@ -25,15 +25,15 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dabour_2026](drugs/drug_nesiritide/pd_Dabour_2026_GDF15.md) | Dabour MS et al., Evaluation of Growth Differentiation Fa…, Clinical and translational… (2026) | [10.1111/cts.70595](https://doi.org/10.1111/cts.70595) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Krause_2017](drugs/drug_nesiritide/pd_Krause_2017_unknown.md) | Krause A et al., Population Modeling of Selexipag Pharma…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Steichert_2025](drugs/drug_nesiritide/pd_Steichert_2025_unknown.md) | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Addisu_2008](drugs/drug_nesiritide/pd_Addisu_2008_unknown.md) | Addisu A et al., B-type natriuretic peptide decreases ga…, Experimental biology and me… (2008) | [10.3181/0708-RM-216](https://doi.org/10.3181/0708-RM-216) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Fontana_2026](drugs/drug_nesiritide/pd_Fontana_2026_TTR.md) | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rothman_2025](drugs/drug_nesiritide/pd_Rothman_2025_TPR.md) | Rothman AMK et al., Positioning Imatinib for Pulmonary Arte…, American journal of respira… (2025) | [10.1164/rccm.202410-1929oc](https://doi.org/10.1164/rccm.202410-1929oc) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2017](drugs/drug_nesiritide/pd_Zhang_2017_unknown.md) | Zhang MY et al., DanHong injection targets endothelin re…, Oncotarget (2017) | [10.18632/oncotarget.21900](https://doi.org/10.18632/oncotarget.21900) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Dabour_2026_GDF15](drugs/drug_nesiritide/pd_Dabour_2026_GDF15.md) | GDF15 ← doxorubicin · indirect response — drug inhibits the production of GDF15 | — | Dabour MS et al., Evaluation of Growth Differentiation Fa…, Clinical and translational… (2026) | [10.1111/cts.70595](https://doi.org/10.1111/cts.70595) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Krause_2017_unknown](drugs/drug_nesiritide/pd_Krause_2017_unknown.md) | adverse events denoting hemorrhage ← selexipag and ACT-333679 · direct log-linear effect | — | Krause A et al., Population Modeling of Selexipag Pharma…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12202](https://doi.org/10.1002/psp4.12202) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Steichert_2025_unknown](drugs/drug_nesiritide/pd_Steichert_2025_unknown.md) | angiotensin II/angiotensin I ratio ← enalaprilat · direct sigmoid Emax (Hill) effect | — | Steichert M et al., Angiotensin II/Angiotensin I Ratio as a…, Pharmaceutics (2025) | [10.3390/pharmaceutics17101345](https://doi.org/10.3390/pharmaceutics17101345) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Addisu_2008_unknown](drugs/drug_nesiritide/pd_Addisu_2008_unknown.md) | Absorption ← B-type Natriuretic Peptide · inhibition effect | — | Addisu A et al., B-type natriuretic peptide decreases ga…, Experimental biology and me… (2008) | [10.3181/0708-RM-216](https://doi.org/10.3181/0708-RM-216) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Fontana_2026_TTR](drugs/drug_nesiritide/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rothman_2025_TPR](drugs/drug_nesiritide/pd_Rothman_2025_TPR.md) | total pulmonary resistance ← imatinib · inhibition effect | — | Rothman AMK et al., Positioning Imatinib for Pulmonary Arte…, American journal of respira… (2025) | [10.1164/rccm.202410-1929oc](https://doi.org/10.1164/rccm.202410-1929oc) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhang_2017_unknown](drugs/drug_nesiritide/pd_Zhang_2017_unknown.md) | AT1R antagonism ← DanHong injection · inhibition effect | — | Zhang MY et al., DanHong injection targets endothelin re…, Oncotarget (2017) | [10.18632/oncotarget.21900](https://doi.org/10.18632/oncotarget.21900) |
 
 ## ADME sites
 

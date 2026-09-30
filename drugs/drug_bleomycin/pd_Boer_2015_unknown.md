@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Platinum drives Raynaud's phenomenon (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not provide a PD model for Raynaud's phenomenon: it was scored as a binary outcome (present/absent) at median 9 years after cisplatin/bleomycin chemotherapy, and circulating platinum exposure (Pt AUC1–3 years, µg/l months) was not associated with Raynaud's phenomenon in logistic regression; the authors suggest bleomycin, not platinum, is the likely causative agent. No potency (IC50/EC50/Emax) or rate (kin/kout/ke0) values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boer_2015`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

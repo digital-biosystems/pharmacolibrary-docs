@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tulathromycin (measured concentrations) drives bacterial numbers (in continuous): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> In vitro time-kill data for tulathromycin against M. hyopneumoniae were fitted with a sigmoid inhibitory Emax model relating bacterial numbers (Log10 CFU/mL) to exposure indices (AUC0-72h/MIC, Cmax/MIC, %T&gt;MIC); the effect is a direct concentration-dependent inhibition of bacterial numbers (no kin/kout or effect-compartment mechanism given). For AUC0-72h/MIC, Emax = -0.47 Log10 CFU/mL, E0 = -6.05 Log10 CFU/mL, EC50 = 1303.91 h, slope N = 0.38 (R2 = 0.9929); for Cmax/MIC, Emax = -0.47, E0 = -6.32, EC50 = 8.21, N = 0.41; for %T&gt;MIC, Emax = -0.46 Log10 CFU/mL, E0 = -4.12 Log10 CFU/mL, EC50 = 17.45, N = 0.80.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xia_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,21 +31,21 @@ Xia X; Yang L; Ling Y; Yu J; Ding H et al. (2022). Frontiers in veterinary scien
   ·  DOI: [10.3389/fvets.2022.801800](https://doi.org/10.3389/fvets.2022.801800)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AUC 0-72 /MIC (h) — E max (Log 10 CFU/mL) | `Q88` · not captured | -0.47 | h | not captured | boundary (not captured) | tab_1:row1:col1 |
-| AUC 0-72 /MIC (h) — EC 50 | `Q88` · not captured | 1303.91 | h | not captured | boundary (not captured) | tab_1:row1:col2 |
-| AUC 0-72 /MIC (h) — E 0 (Log 10 CFU/mL) | `Q88` · not captured | -6.05 | h | not captured | boundary (not captured) | tab_1:row1:col3 |
-| AUC 0-72 /MIC (h) — Slope (N) | `Q88` · not captured | 0.38 | h | not captured | boundary (not captured) | tab_1:row1:col4 |
-| AUC 0-72 /MIC (h) — R 2 | `Q88` · not captured | 0.9929 | h | not captured | boundary (not captured) | tab_1:row1:col5 |
-| C max /MIC — E max (Log 10 CFU/mL) | `Q100` · not captured | -0.47 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row2:col1 |
-| C max /MIC — EC 50 | `Q100` · not captured | 8.21 | not captured | not captured | llm (not captured) | tab_1:row2:col2 |
-| C max /MIC — E 0 (Log 10 CFU/mL) | `Q324` · not captured | -6.32 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row2:col3 |
-| C max /MIC — Slope (N) | `Q335` · not captured | 0.41 | N | not captured | llm (not captured) | tab_1:row2:col4 |
-| %T&gt;MIC — E max (Log 10 CFU/mL) | `Q320` · not captured | -0.46 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row3:col1 |
-| %T&gt;MIC — EC 50 | `Q321` · not captured | 17.45 | µg/mL | not captured | llm (not captured) | tab_1:row3:col2 |
-| %T&gt;MIC — E 0 (Log 10 CFU/mL) | `Q324` · not captured | -4.12 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row3:col3 |
-| %T&gt;MIC — Slope (N) | `Q335` · not captured | 0.80 | N | not captured | llm (not captured) | tab_1:row3:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | AUC 0-72 /MIC (h) — E max (Log 10 CFU/mL) | `Q88` · not captured | -0.47 | h | not captured | boundary (not captured) | tab_1:row1:col1 |
+| PK (driver) | AUC 0-72 /MIC (h) — EC 50 | `Q88` · not captured | 1303.91 | h | not captured | boundary (not captured) | tab_1:row1:col2 |
+| PK (driver) | AUC 0-72 /MIC (h) — E 0 (Log 10 CFU/mL) | `Q88` · not captured | -6.05 | h | not captured | boundary (not captured) | tab_1:row1:col3 |
+| PK (driver) | AUC 0-72 /MIC (h) — Slope (N) | `Q88` · not captured | 0.38 | h | not captured | boundary (not captured) | tab_1:row1:col4 |
+| PK (driver) | AUC 0-72 /MIC (h) — R 2 | `Q88` · not captured | 0.9929 | h | not captured | boundary (not captured) | tab_1:row1:col5 |
+| — | C max /MIC — E max (Log 10 CFU/mL) | `Q100` · not captured | -0.47 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row2:col1 |
+| — | C max /MIC — EC 50 | `Q100` · not captured | 8.21 | not captured | not captured | llm (not captured) | tab_1:row2:col2 |
+| PD (effect) | C max /MIC — E 0 (Log 10 CFU/mL) | `Q324` · not captured | -6.32 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row2:col3 |
+| PD (effect) | C max /MIC — Slope (N) | `Q335` · not captured | 0.41 | N | not captured | llm (not captured) | tab_1:row2:col4 |
+| PD (effect) | %T&gt;MIC — E max (Log 10 CFU/mL) | `Q320` · not captured | -0.46 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row3:col1 |
+| PD (effect) | %T&gt;MIC — EC 50 | `Q321` · not captured | 17.45 | µg/mL | not captured | llm (not captured) | tab_1:row3:col2 |
+| PD (effect) | %T&gt;MIC — E 0 (Log 10 CFU/mL) | `Q324` · not captured | -4.12 | Log 10 CFU/mL | not captured | llm (not captured) | tab_1:row3:col3 |
+| PD (effect) | %T&gt;MIC — Slope (N) | `Q335` · not captured | 0.80 | N | not captured | llm (not captured) | tab_1:row3:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

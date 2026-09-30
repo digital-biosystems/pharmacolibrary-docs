@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T1_t_half_beta</sub><br><sub>blocking: T1_tmax</sub><br><sub>route_to: `scholar`</sub> | [Baker_2020_reference](drugs/drug_eptinezumab/Eptinezumab_Baker2020_reference.md) | ▶ model + simulator | 1-compartment, IV | 7 | Baker B et al., Population pharmacokinetic and exposure…, Pharmacology research & per… (2020) | [10.1002/prp2.567](https://doi.org/10.1002/prp2.567) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ZOT5-1-Me (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ZOT5-1-Me concentrations (µM) inhibit cell viability (%) in U-87 MG cells (CCK-8 assay), with IC50 of 9.57 µM at 24 h and 8.70 µM at 48 h; the paper does not state a formal PD model, but mechanistically the cytotoxicity is attributed to ROS upregulation, since the ROS scavenger NAC abrogated the effect. In the NCI-60 five-dose screen, an LC50 of 305.5 µM is reported for SNB-19.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wołodkiewicz_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Wołodkiewicz P; Juszczak M; Tokarz P; Woźniak K; Tokarz P et al. (2025). Scien
   ·  DOI: [10.1038/s41598-025-22754-0](https://doi.org/10.1038/s41598-025-22754-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LC50 — SNB-19 | `Q322` · not captured | 305.5 | µM | not captured | llm (not captured) | Tab1:row12:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | LC50 — SNB-19 | `Q322` · not captured | 305.5 | µM | not captured | llm (not captured) | Tab1:row12:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

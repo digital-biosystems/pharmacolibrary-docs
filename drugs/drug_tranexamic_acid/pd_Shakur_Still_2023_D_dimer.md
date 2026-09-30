@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tranexamic acid (concentrations from the PK model of Dowd_2002) drives D-dimer (in unknown): indirect response — drug inhibits the production of D-dimer.
+
+**Model:** No model was generated from this record.
+
+> Tranexamic acid concentrations (mg/L, from a two-compartment PK model with one effect compartment) act on maternal D-dimer via an indirect response model in which TXA inhibits D-dimer production: dR/dt = Kin + Stim·A(Cc) − Kout·R, with A(Cc) = 1 − Imax·Cc/(Cc + IC50). The paper does not report numerical values for Imax, IC50, Kin or Kout.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shakur-Still_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulfated polysaccharide (SP) (measured concentrations) drives hyaluronidase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulfated polysaccharides (SP) from algae inhibit hyaluronidase activity in vitro, with IC50 values ranging from 2.9 µg/mL (Fucus vesiculosus) to 210 µg/mL (Porphyridium purpureum); SP from Caulerpa lentillifera had an IC50 of 163 µg/mL and was predicted to inhibit allosterically based on a sigmoid dose–response curve. No Emax, kin/kout, or ke0 values are given, and inhibition depended on sulfate content and molecular weight of the SP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Awanthi_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Awanthi MGG; Nagamoto S; Oku H; Kitahara K; Konishi T et al. (2023). Journal of 
   ·  DOI: [10.5458/jag.jag.JAG-2022_0004](https://doi.org/10.5458/jag.jag.JAG-2022_0004)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Caulerpa lentillifera — IC50 (µg/mL) | `Q322` · not captured | 163.3 | µg/mL | not captured | llm (not captured) | T2:row2:col1 |
-| Undaria pinnatifida — IC50 (µg/mL) | `Q322` · not captured | 13.0 | µg/mL | not captured | llm (not captured) | T2:row3:col1 |
-| Cladosiphon okamuranus — IC50 (µg/mL) | `Q322` · not captured | 25.6 | µg/mL | not captured | llm (not captured) | T2:row4:col1 |
-| Fucus vesiculosus — IC50 (µg/mL) | `Q322` · not captured | 2.9 | µg/mL | not captured | llm (not captured) | T2:row5:col1 |
-| Porphyridium purpureum — IC50 (µg/mL) | `Q322` · not captured | 210.0 | µg/mL | not captured | llm (not captured) | T2:row6:col1 |
-| Monostroma nitidum — IC50 (µg/mL) | `Q322` · not captured | 145.0 | µg/mL | not captured | llm (not captured) | T2:row7:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Caulerpa lentillifera — IC50 (µg/mL) | `Q322` · not captured | 163.3 | µg/mL | not captured | llm (not captured) | T2:row2:col1 |
+| PD (effect) | Undaria pinnatifida — IC50 (µg/mL) | `Q322` · not captured | 13.0 | µg/mL | not captured | llm (not captured) | T2:row3:col1 |
+| PD (effect) | Cladosiphon okamuranus — IC50 (µg/mL) | `Q322` · not captured | 25.6 | µg/mL | not captured | llm (not captured) | T2:row4:col1 |
+| PD (effect) | Fucus vesiculosus — IC50 (µg/mL) | `Q322` · not captured | 2.9 | µg/mL | not captured | llm (not captured) | T2:row5:col1 |
+| PD (effect) | Porphyridium purpureum — IC50 (µg/mL) | `Q322` · not captured | 210.0 | µg/mL | not captured | llm (not captured) | T2:row6:col1 |
+| PD (effect) | Monostroma nitidum — IC50 (µg/mL) | `Q322` · not captured | 145.0 | µg/mL | not captured | llm (not captured) | T2:row7:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -24,10 +24,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.073). The first reading is what the record holds.">cross-check: disputed</span> | [Courlet_2023](drugs/drug_centhaquine/pd_Courlet_2023_parasitemia.md) | Courlet P et al., Semi-mechanistic population pharmacokin…, Antimicrobial agents and ch… (2023) | [10.1128/aac.00891-23](https://doi.org/10.1128/aac.00891-23) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.484). The first reading is what the record holds.">cross-check: disputed</span> | [Phee_2019](drugs/drug_centhaquine/pd_Phee_2019_cfu.md) | Phee LM et al., Pharmacokinetic-pharmacodynamic modelli…, The Journal of antimicrobia… (2019) | [10.1093/jac/dky524](https://doi.org/10.1093/jac/dky524) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.073). The first reading is what the record holds.">cross-check: disputed</span> | [Courlet_2023_parasitemia](drugs/drug_centhaquine/pd_Courlet_2023_parasitemia.md) | name ← cabamiquine · direct sigmoid Emax (Hill) effect | — | Courlet P et al., Semi-mechanistic population pharmacokin…, Antimicrobial agents and ch… (2023) | [10.1128/aac.00891-23](https://doi.org/10.1128/aac.00891-23) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.484). The first reading is what the record holds.">cross-check: disputed</span> | [Phee_2019_cfu](drugs/drug_centhaquine/pd_Phee_2019_cfu.md) | Acinetobacter baumannii cfu ← colistin and fusidic acid · direct sigmoid Emax (Hill) effect | — | Phee LM et al., Pharmacokinetic-pharmacodynamic modelli…, The Journal of antimicrobia… (2019) | [10.1093/jac/dky524](https://doi.org/10.1093/jac/dky524) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

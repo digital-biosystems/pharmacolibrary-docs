@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** HIF PHD inhibitors (roxadustat, vadadustat, DMOG, oxyquinolines) (measured concentrations) drive Cell viability (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a formal PD model for the cell viability (MTT) response; oxyquinoline HIF PHD inhibitors act by iron-chelating inhibition of HIF prolyl hydroxylases, and their neuroprotective concentrations in the oxygen-glucose deprivation model (1–3 μM) closely match their reporter-assay IC50 values, whereas roxadustat has an IC50 of ca. 25 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Poloznikov_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

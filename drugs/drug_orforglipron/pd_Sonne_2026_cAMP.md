@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Orforglipron (measured concentrations) drives cAMP production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Orforglipron acts as a direct GLP1R agonist stimulating cAMP production in cultured pancreatic islet β-cells (10-point concentration-response, top concentration 10 μM), modelled as an Emax relationship; it was inactive in WT mouse β-cells up to 10 μM but in hGLP1R mouse β-cells showed potency comparable to GLP-1(7–37) and semaglutide without achieving full agonist efficacy. The excerpts do not report numeric EC50, Emax, or potency values for orforglipron.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sonne_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

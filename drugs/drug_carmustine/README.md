@@ -23,19 +23,19 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981_reference](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | 1-compartment, IV | 3 | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
-| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978_reference](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | 1-compartment, IV | 3 | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988_reference](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | 1-compartment (no model) | 3 | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Russo_1981_reference](drugs/drug_carmustine/Carmustine_Russo1981_reference.md) | ▶ model + simulator | 1-compartment, IV | 3 | Russo R et al., Differential pulse polarographic determ…, Cancer treatment reports (1981) | — |
+| <span class="pk-badge pk-badge--orange">built, not shipped</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Levin_1978_reference](drugs/drug_carmustine/Carmustine_Levin1978_reference.md) | held back | 1-compartment, IV | 3 | Levin VA et al., Pharmacokinetics of BCNU in man: a prel…, Cancer treatment reports (1978) | — |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [El-Yazigi_1988_reference](drugs/drug_carmustine/Carmustine_ElYazigi1988_reference.md) | — | 1-compartment (no model) | 3 | El-Yazigi A et al., Capillary gas chromatography and thermi…, Pharmaceutical research (1988) | [10.1023/a:1015989612562](https://doi.org/10.1023/a:1015989612562) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018](drugs/drug_carmustine/pd_Rubino_2018_Coulter_count.md) | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018](drugs/drug_carmustine/pd_Rubino_2018_FACS.md) | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018](drugs/drug_carmustine/pd_Rubino_2018_MTT_signal.md) | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018_Coulter_count](drugs/drug_carmustine/pd_Rubino_2018_Coulter_count.md) | cell proliferation ← temozolomide · inhibition effect | — | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018_FACS](drugs/drug_carmustine/pd_Rubino_2018_FACS.md) | cell cycle distribution ← temozolomide · inhibition effect | — | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Rubino_2018_MTT_signal](drugs/drug_carmustine/pd_Rubino_2018_MTT_signal.md) | cell viability ← temozolomide · inhibition effect | — | Rubino S et al., Downregulation of Leucine-Rich Repeat-C…, Frontiers in oncology (2018) | [10.3389/fonc.2018.00142](https://doi.org/10.3389/fonc.2018.00142) |
 
 ## ADME sites
 

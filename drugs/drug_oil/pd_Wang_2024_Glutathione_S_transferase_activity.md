@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thymus serpyllum essential oil (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Thymus serpyllum essential oil (mg/mL) acts on S. litura larvae with toxicity (48 h LC50 = 0.606 mg/mL for 2nd instar and 0.664 mg/mL for 3rd instar), with the paper attributing the mechanism to substantial in vivo inhibition of acetylcholinesterase; no pharmacodynamic model parameters (Imax, IC50, kin, kout, etc.) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

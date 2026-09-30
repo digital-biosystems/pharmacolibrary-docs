@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aspirin and ibuprofen (measured concentrations) drive ex vivo platelet aggregation (in unknown): indirect response — drug inhibits the production of ex vivo platelet aggregation.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen (with aspirin) acts on ex vivo collagen- or arachidonic acid-induced whole blood platelet aggregation via a mechanism-based COX-1 enzyme turnover model: ibuprofen reversibly binds COX-1 by mass action (association rate kon, dissociation rate koff), while aspirin irreversibly inactivates the enzyme, and the resulting free enzyme level drives the time course of aggregation. The paper does not report numeric values for kon, koff, IC50, Emax or other potency/rate parameters in the excerpts provided.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hong_2008`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exenatide (concentrations from the PK model of Admiraal_2023) drives hNav1.5 current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Exenatide (3 μM tested) inhibits hNav1.5 current (INav1.5) in HEK 293 cells expressing human SCN5A, reaching steady state after ~7 min and partially reversing on washout; the concentration–response was fitted by a Hill equation with IC50 of 3.30 μM. The paper does not state an Emax/Imax value or an explicit PD mechanism beyond electrophysiological evidence that exenatide acts as an open-channel blocker, slowing recovery from inactivation (time constant 34.18 ± 1.45 ms to 68.03 ± 2.67 ms at 3 μM) and producing use-dependent inhibition (48.73 ± 12.81% at 10 Hz).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`

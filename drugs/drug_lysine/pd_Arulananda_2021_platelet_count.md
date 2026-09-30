@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZD4320 (measured concentrations) drives name (in units per μL blood) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model linking AZD4320 concentrations to platelet count; it only reports that AZD4320 (as the nanoparticle AZD0466) reduced platelet counts on-target via BCL-XL inhibition, with mild thrombocytopenia (mean 597/μL vs 1066/μL in controls) 48 h post-dose and rebound one week after treatment cessation. No Imax, IC50, EC50, kin, kout, ke0 or gamma values for the platelet response are given (the EC50 values of 150–220 nM refer to tumor cell killing in vitro, not platelets).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arulananda_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

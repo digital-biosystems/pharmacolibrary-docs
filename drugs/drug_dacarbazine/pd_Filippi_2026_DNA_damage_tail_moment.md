@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking dacarbazine (DTIC) concentrations to the DNA damage (tail moment) response; no mechanism, Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for that endpoint. The only quantitative PD data are cell viability IC50 values 24 h after treatment (e.g., DTIC IC50 45.25 ± 0.5 µM in WM115 and 23.21 ± 1.83 µM in WM266-4 melanoma cells, decreasing to 7.95 ± 2.9 µM and 0.58 ± 0.07 µM with ERCC8/CSA ASO silencing), which the paper attributes to impaired transcription-coupled nucleotide excision repair rather than to a formal PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Filippi_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

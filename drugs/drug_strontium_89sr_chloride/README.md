@@ -22,9 +22,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Blake_1986_reference](drugs/drug_strontium_89sr_chloride/Strontium89srChloride_Blake1986_reference.md) | — | 1-compartment (no model) | 0 | Blake GM et al., Sr-89 therapy: strontium kinetics in di…, European journal of nuclear… (1986) | [10.1007/BF00254749](https://doi.org/10.1007/BF00254749) |
 
 ## ADME sites
 

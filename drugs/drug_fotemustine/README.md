@@ -17,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | — (no model) | 0 | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Hartmann_1997_patients with liver metastases from colorectal carcinoma](drugs/drug_fotemustine/Fotemustine_Hartmann1997_patients_with_liver_metastases_from.md) | — | — (no model) | 0 | Hartmann J et al., Hepatic arterial infusion of the nitros…, Oncology reports (1997) | [10.3892/or.4.1.167](https://doi.org/10.3892/or.4.1.167) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** RHuEPO, romiplostim drive platelets (in 10^12/L): indirect response — drug inhibits the production of platelets.
+
+**Model:** No model was generated from this record.
+
+> Romiplostim (together with rHuEPO) drives platelet counts (10^12/L) in a mechanism-based, cell-lifespan catenary indirect response model that mimics thrombopoiesis from bone marrow progenitor (MEP) cells to peripheral platelets, stimulating platelet production; the paper does not state Imax, IC50/EC50, kin, kout, or ke0 values in the excerpts, but reports lifespan parameters (e.g., rat model TMP and TPLT, with allometrically scaled human TMP 137.1 h and TPLT 10.6 days).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fan_2023_2`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

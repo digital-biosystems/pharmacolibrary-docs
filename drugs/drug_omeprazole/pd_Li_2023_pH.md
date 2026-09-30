@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omeprazole (concentrations from the PK model of Ala_2013) drives stomach pH (in unknown): indirect response — drug inhibits the production of stomach pH.
+
+**Model:** No model was generated from this record.
+
+> Omeprazole plasma concentrations inhibit gastric acid secretion, described by a turnover (indirect response) model predicting stomach pH, with a meal effect on acid secretion incorporated; the excerpts give no numeric potency (Imax/IC50) or turnover rate values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

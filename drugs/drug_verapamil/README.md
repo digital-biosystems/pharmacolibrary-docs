@@ -33,9 +33,9 @@ Verapamil is commonly used off-label for prophylaxis of cluster headaches.[A1398
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.105). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Koike_1979_reference](drugs/drug_verapamil/Verapamil_Koike1979_reference.md) | — | 1-compartment (no model) | 7 | Koike Y et al., Pharmacokinetics of verapamil in man, Research communications in… (1979) | — |
 
 ## Pharmacogenomics (PGx)
 

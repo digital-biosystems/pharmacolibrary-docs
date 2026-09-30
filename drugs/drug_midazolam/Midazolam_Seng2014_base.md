@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
 ### Reviewer guidance
 
 **The midazolam parent–metabolite model was not published because the shared clearance and volume parameters (CL, V) appear duplicated rather than bound to one value across the parent and metabolite compartments, so the structure could not be simulated.**

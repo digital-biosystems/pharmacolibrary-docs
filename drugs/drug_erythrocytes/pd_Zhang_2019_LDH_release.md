@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myristoyl-CM4 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Myristoyl-CM4 concentrations (3–30 μM) act on LDH release (membrane disruption marker) from leukemia cells; the paper does not state a formal PD model or parameters (no Imax, IC50 for LDH, kin, kout, ke0, gamma). Observed LDH release was &lt;10% in Jurkat cells at all concentrations, but ~20% at 3 μM and ~30% at 30 μM after 16 h in K562/MDR cells, consistent with concentration-dependent membrane disruption (necrosis); cytotoxicity IC50 values were 2 μM (K562/MDR) and 3 μM (Jurkat).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

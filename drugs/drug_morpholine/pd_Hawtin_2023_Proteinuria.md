@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in mg/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MHV370 (a TLR7 inhibitor) given orally to NZB/W F1 lupus mice prevented proteinuria (mg/mL, dipstick score 0–5); the paper does not state an Emax/IC50 fit for proteinuria itself, but reports MHV370 inhibiting TLR7-driven responses with IC50 of 15 ± 10 nM (CL307 reporter) and 7 ± 0.1 nM (R848 reporter), and an ex vivo blood PD marker (CD69) IC50 of 35 nM; proteinuria inhibition was achieved at 0.01% MHV370 in food even when blood levels periodically fell below full TLR7 inhibition. The mechanism linking drug concentration to proteinuria is not quantitatively modeled in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -23,10 +23,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Cuomo_2026_2_reference](drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference.md) | 1-compartment, IV | 2 | Cuomo (2026) | — |
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Knych_2017_reference](drugs/drug_trazodone/Trazodone_Knych2017_reference.md) | 1-compartment, IV | 4 | Knych HK et al., Pharmacokinetics and selected pharmacod…, American journal of veterin… (2017) | [10.2460/ajvr.78.10.1182](https://doi.org/10.2460/ajvr.78.10.1182) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span> | [Cuomo_2026_2_reference](drugs/drug_trazodone/Trazodone_Cuomo2026v2_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Cuomo (2026) | — |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span> | [Knych_2017_reference](drugs/drug_trazodone/Trazodone_Knych2017_reference.md) | ▶ model + simulator | 1-compartment, IV | 4 | Knych HK et al., Pharmacokinetics and selected pharmacod…, American journal of veterin… (2017) | [10.2460/ajvr.78.10.1182](https://doi.org/10.2460/ajvr.78.10.1182) |
 
 ## ADME sites
 
@@ -39,6 +39,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer | DrugBank actor |
+| absorption | testis | `ABCB1` inducer | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` inhibitor/substrate, `CYP3A4` substrate, `CYP3A5` substrate, `CYP3A7` substrate | DrugBank actor |

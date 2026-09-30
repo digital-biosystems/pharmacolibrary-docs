@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Crofelemer (measured concentrations) drives Short-circuit current (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Crofelemer (µM concentrations) inhibits forskolin-stimulated short-circuit current (mainly CFTR Cl− current) with a maximum inhibition of ~60% and IC50 ~7 µM, acting by voltage-independent extracellular block that stabilizes the CFTR channel closed state; inhibition was slow, weak, and partial, with &lt;50% reversal after 4 h washout. No Emax/kin/kout/ke0 parameters are stated for the SCC response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tradtrantip_2010`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

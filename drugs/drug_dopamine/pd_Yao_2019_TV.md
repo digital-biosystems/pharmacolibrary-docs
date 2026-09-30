@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexamethasone drives tumor volume (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the PK/PD model for MCF-7/Adr breast cancer xenografts, dexamethasone (DEX) plasma concentrations inhibit tumor cell proliferation (not eradication) in a sigmoid Emax/Hill function applied to the natural tumor growth (Gompertz-like with λ0 = 0.0065 h−1, λ1 = 28.1 mm3·h−1), with Imax fixed to 1 and EC50 = 61.6 ng/mL; sulpiride (SUL) has no direct effect on tumor growth but enhances sensitivity to DEX by reducing the apparent EC50, captured by an additive IC50 = 61.9 ng/mL in the Hill function.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yao_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ Yao QY; Li J; Chen R; Yao Y; Xue JS; Chen WJ; et al. et al. (2019). Acta pharmac
   ·  DOI: [10.1038/s41401-019-0251-7](https://doi.org/10.1038/s41401-019-0251-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| λ0 (h−1)a — Estimates (%RSE) | `Q67` · not captured | 0.0065 | not captured | not captured | llm (not captured) | Tab2:row1:col2 |
-| λ0 (h−1)a — IIV (%CV) | `Q67` · not captured | 0 | not captured | not captured | llm (not captured) | Tab2:row1:col3 |
-| λ1 (mm3·h−1)a — Estimates (%RSE) | `Q67` · not captured | 28.1 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| λ1 (mm3·h−1)a — IIV (%CV) | `Q67` · not captured | 21.1 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
-| ω0 (mm3)a — IIV (%CV) | `Q312` · not captured | 23.5 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
-| EC50 (ng/mL)a — Estimates (%RSE) | `Q321` · not captured | 61.6 | unknown | not captured | llm_confirmed (not captured) | Tab2:row4:col2 |
-| EC50 (ng/mL)a — IIV (%CV) | `Q321` · not captured | 72.6 | unknown | not captured | llm_confirmed (not captured) | Tab2:row4:col3 |
-| IC50 (ng/mL) — Estimates (%RSE) | `Q322` · not captured | 61.9 | ng/mL | not captured | exact (not captured) | Tab2:row5:col2 |
-| IC50 (ng/mL) — IIV (%CV) | `Q322` · not captured | 138.2 | ng/mL | not captured | exact (not captured) | Tab2:row5:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | λ0 (h−1)a — Estimates (%RSE) | `Q67` · not captured | 0.0065 | not captured | not captured | llm (not captured) | Tab2:row1:col2 |
+| PK (driver) | λ0 (h−1)a — IIV (%CV) | `Q67` · not captured | 0 | not captured | not captured | llm (not captured) | Tab2:row1:col3 |
+| PK (driver) | λ1 (mm3·h−1)a — Estimates (%RSE) | `Q67` · not captured | 28.1 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
+| PK (driver) | λ1 (mm3·h−1)a — IIV (%CV) | `Q67` · not captured | 21.1 | not captured | not captured | llm_confirmed (not captured) | Tab2:row2:col3 |
+| variability | ω0 (mm3)a — IIV (%CV) | `Q312` · not captured | 23.5 | not captured | not captured | llm (not captured) | Tab2:row3:col3 |
+| PD (effect) | EC50 (ng/mL)a — Estimates (%RSE) | `Q321` · not captured | 61.6 | unknown | not captured | llm_confirmed (not captured) | Tab2:row4:col2 |
+| PD (effect) | EC50 (ng/mL)a — IIV (%CV) | `Q321` · not captured | 72.6 | unknown | not captured | llm_confirmed (not captured) | Tab2:row4:col3 |
+| PD (effect) | IC50 (ng/mL) — Estimates (%RSE) | `Q322` · not captured | 61.9 | ng/mL | not captured | exact (not captured) | Tab2:row5:col2 |
+| PD (effect) | IC50 (ng/mL) — IIV (%CV) | `Q322` · not captured | 138.2 | ng/mL | not captured | exact (not captured) | Tab2:row5:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

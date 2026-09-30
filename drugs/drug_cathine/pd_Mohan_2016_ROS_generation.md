@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Catha edulis extract (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports that Catha edulis extract inhibits cell viability in H9c2 cardiomyoblasts with an IC50 of 86.5 µg/ml at 48 hours, and notes that ROS generation is associated with the resulting apoptosis, but it does not provide a specific pharmacodynamic model or rate constants for the effect of cathine on ROS generation.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mohan_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

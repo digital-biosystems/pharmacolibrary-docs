@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulprostone (measured concentrations) drives firing rate (in Hz): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Misoprostol (0.31–320 nM) directly inhibits the firing rate (Hz) of LC neurons in a concentration-dependent manner via EP3 receptor activation coupled to Gi/o proteins and GIRK channels (PTX-sensitive, blocked by barium and SCH-23390); the paper gives no Emax/IC50/kin/kout/ke0 values for misoprostol, only stating its EC50 is in the intermediate nanomolar range, while the record's potency value is the sulprostone control pEC50 of 7.83 (M).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nazabal_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Nazabal A; Mendiguren A; Pineda J et al. (2023). Frontiers in pharmacology 14
   ·  DOI: [10.3389/fphar.2023.1290605](https://doi.org/10.3389/fphar.2023.1290605)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Sulprostone Control pEC50 (M) | `Q321` · not captured | 7.83 | M | not captured | review_gapfill (not captured) | Nazabal_2023:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Sulprostone Control pEC50 (M) | `Q321` · not captured | 7.83 | M | not captured | review_gapfill (not captured) | Nazabal_2023:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

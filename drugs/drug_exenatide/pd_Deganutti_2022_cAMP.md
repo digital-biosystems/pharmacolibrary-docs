@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GLP-1, oxyntomodulin, exendin-4, exendin-P5 drive cAMP accumulation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not study exenatide; it measures cAMP accumulation in CHOFlpIn GLP-1R cells stimulated for 30 min with increasing molar concentrations of GLP-1, oxyntomodulin, exendin-4 and exendin-P5, analysed with sigmoid concentration-response (Emax-type) curves from which pIC50 values and transduction ratios (log τc/KA) were calculated, but no numeric potency values are given in the excerpts. The mechanism is direct agonist stimulation of GLP-1R-mediated Gs/cAMP production, with ligand-specific kinetics (exendin-P5 and oxyntomodulin showing faster Gs activation/dissociation kinetics than GLP-1 and exendin-4).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deganutti_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Silymarin (58 μM, 24-hour treatment) increased lipid peroxidation in A549 lung cancer cells (MDA rising to 3.4 nM/mg protein) via a prooxidant mechanism elevating ROS, while reducing SOD and CAT antioxidant enzyme activities; no PD model, potency (Imax/IC50/EC50), or rate parameters are given for this response (the 58 μM IC50 refers to cell proliferation inhibition).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Srinivasan_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliveria decumbens essential oil (measured concentrations) drives name (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Oliveria decumbens essential oil (µg/mL) was tested in vitro against acetylcholinesterase activity (Ellman's method), showing direct inhibitory effect with IC50 = 0.117 ± 0.049 µg/mL; BuChE inhibition was not observed (IC50 &gt; 0.5 µg/mL). The paper attributes the effect to the major constituents thymol (38.79%) and carvacrol (36.30%) but does not state a specific PD model or mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eftekhari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;tetracaine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Cacek2017_reference&quot;,&quot;label&quot;:&quot;Cacek_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracaine_Cacek2017_reference&quot;,&quot;label&quot;:&quot;Cacek_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # tetracaine
 
@@ -34,9 +34,9 @@ The combination lidocaine and tetracaine patch is indicated for local dermal ana
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Cacek_2017_reference](drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md) | 1-compartment, oral | 5 | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_param_coverage</sub><br><sub>route_to: `engineer`</sub> | [Cacek_2017_reference](drugs/drug_tetracaine/Tetracaine_Cacek2017_reference.md) | model (no simulator) | 1-compartment, oral | 5 | Cacek AT et al., Population Pharmacokinetics of an Intra…, Journal of clinical pharmac… (2017) | [10.1002/jcph.799](https://doi.org/10.1002/jcph.799) |
 
 ## ADME sites
 
@@ -58,7 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 23 matched, 12 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 1  ·  needs_review 0  ·  rejected 0  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted

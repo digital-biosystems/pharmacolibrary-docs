@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Apitolisib (measured concentrations) drives tumor volume (in mm3): indirect response — drug inhibits the production of tumor volume.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for apitolisib's effect on tumor volume (mm3) in 786-O RCC xenograft mice; the only PD model given is an indirect response model in which apitolisib plasma concentration (Cp, µg/L) inhibits the production (kin) of pAkt, with first-order pAkt loss (kout), yielding an IC50 of 403 µg/L in xenograft tumor tissue (vs 9.32 µg/L in patient surrogate plasma); no Imax, gamma, kin, or kout values are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Moein_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chloroquine (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a fitted pharmacodynamic model for isoprenaline (isoproterenol) on early afterdepolarization incidence; isoproterenol was applied as a simulated beta-adrenergic stimulation condition (via experimentally validated changes in ion-channel function, notably PKA-mediated phosphorylation of ICa,L and IKs) in in silico ventricular models exposed to chloroquine (5 and 20 μM) and azithromycin, and no potency (IC50/EC50/Emax) or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sutanto_2020_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

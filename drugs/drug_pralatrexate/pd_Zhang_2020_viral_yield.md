@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pralatrexate (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pralatrexate concentrations (μM) inhibit SARS-CoV-2 replication in Vero cells, measured as viral copy numbers in the cell supernatant by qRT-PCR, with an EC50 of 0.008 μM; the paper does not state a PD model form (e.g., Imax/IC50, kin/kout), only noting the drug is a DHFR-inhibiting folate analogue and that its plasma Cmax (10.5 μM) is ~800-fold higher than the EC90 of antiviral activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

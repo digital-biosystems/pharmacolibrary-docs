@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ETP drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for IL-17: IL-17 was measured by ELISA in joint and spleen homogenates of kaolin/carrageenan-monoarthritic mice, and ETP (10 mg/kg), F-14, and SsEtOAc (200 and 400 mg/kg) significantly decreased IL-17 concentration, with a suggested (unproven) indirect mechanism via increased IL-10. The only quantitative PD values given are for the TPA ear-edema response, where ETP (2.0 mg/ear) produced 72% edema inhibition with ED50 = 0.25 mg/ear and Emax = 52.9%; no Imax, IC50, kin, kout, ke0, or gamma values are stated for IL-17.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salinas-Sánchez_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BTZ-043total drives time to positivity (in days): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> BTZ-043total AUC0–24 (ng/mL*h) drives the first-2-day decrease in bacterial load measured as log10 TTP (days) via an Emax model on the initial slope (EC50 16 900 ng/mL*h, 95% CI 5510–44 300); the paper describes this as an exposure–response effect on the killing slope rather than a production/elimination mechanism, and no Imax, kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koele_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Koele SE; Heinrich N; De Jager VR; Dreisbach J; Phillips PPJ; Gross-Demel P; et 
   ·  DOI: [10.1093/jac/dkaf076](https://doi.org/10.1093/jac/dkaf076)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Baseline chance negative culture cfu (%) — Best estimate (SIR 95% CI) | `Q324` · not captured | 0.90 | −log10h/h | not captured | llm_confirmed (not captured) | dkaf076-T3:row9:col1 |
-| Baseline chance negative culture TTP (%) — Best estimate (SIR 95% CI) | `Q324` · not captured | 0.00 | −log10h/h | not captured | llm_confirmed (not captured) | dkaf076-T3:row10:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Baseline chance negative culture cfu (%) — Best estimate (SIR 95% CI) | `Q324` · not captured | 0.90 | −log10h/h | not captured | llm_confirmed (not captured) | dkaf076-T3:row9:col1 |
+| PD (effect) | Baseline chance negative culture TTP (%) — Best estimate (SIR 95% CI) | `Q324` · not captured | 0.00 | −log10h/h | not captured | llm_confirmed (not captured) | dkaf076-T3:row10:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NKS-3 (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links NKS-3 concentrations (mmol/L) to body weight gain, but the excerpts do not describe this response; they only report in vitro receptor assays (NKS-3 tested up to 5 μmol/L, cytotoxic at ≥10 μmol/L) and gustatory preference (NKS-3 at 50 μmol/L, ~142 times more potent than a natural LCFA). No mechanism, model family, or PD parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for body weight gain are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Khan_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The exenatide record was rejected because a structural parameter failed a dimension check — the total clearance is reported as 12.3 L/h while the other rate parameters (kabs 2.98 1/day, Q 89.3 L/day, CLint 110 L/day) use per-day units, giving an inconsistent dimension.**

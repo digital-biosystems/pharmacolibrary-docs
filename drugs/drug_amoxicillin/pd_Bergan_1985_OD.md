@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amoxicillin, ampicillin, benzylpenicillin, carbenicillin, cefazolin, chloramphenicol, flucloxacillin, gentamicin, oxytetracycline drive bacterial number (in optical density) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In an in-vitro one-compartment model with first-order antibiotic elimination, amoxicillin (together with ampicillin, benzylpenicillin, carbenicillin, cefazolin, chloramphenicol, flucloxacillin, gentamicin, and oxytetracycline) was added at initial concentrations as multiples of the MIC and eliminated exponentially, and its effect on bacterial number (optical density) was inhibitory, with bacteria killed or maintained at initial density depending on drug and concentration. The paper does not state a quantitative PD mechanism or parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bergan_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

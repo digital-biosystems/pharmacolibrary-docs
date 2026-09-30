@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** WIN 55,212-2 (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> WIN 55,212-2 concentration-dependently inhibited GABA_A-mediated evoked IPSCs recorded from NAc medium spiny neurons, an effect attributed to presynaptic CB1 receptor activation on GABAergic interneuron terminals (completely antagonized by SR141716A), with EC50 = 123 nM; the inhibition developed over time, reaching a maximum at 8–10 min of agonist application, but no Imax, kin/kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoffman_2001`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

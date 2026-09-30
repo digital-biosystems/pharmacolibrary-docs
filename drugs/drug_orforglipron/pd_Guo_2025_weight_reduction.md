@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Orforglipron's dose acts on weight reduction (kg) at 52 weeks via an Emax dose-response model; the paper does not state a mechanism (e.g., kin/kout or effect compartment) or potency parameters such as ED50/Emax in absolute units. It reports that the dose reaching 80% of maximum efficacy is 59.5 mg, while the maximum administered dose of 45 mg corresponds to 75.2% of Emax, and 24 mg yields a weight reduction of 8–9 kg at 52 weeks.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

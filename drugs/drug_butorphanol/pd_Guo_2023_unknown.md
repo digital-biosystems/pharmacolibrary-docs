@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Propofol (measured concentrations) drives awakening (in binary) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Propofol target-controlled infusion concentrations (μg/mL) were related to the binary response/non-response to sedation (awakening), with EC50 estimated by the up-and-down sequential method: 4.05 μg/mL (95%CI 3.78–4.34) with saline, 3.41 μg/mL (3.20–3.62) with 5 μg/kg butorphanol, and 3.03 μg/mL (2.83–3.23) with 10 μg/kg butorphanol, showing butorphanol reduces the propofol concentration needed. The paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Guo F; Sun DF; Feng Y; Yang L; Li JL; Sun ZL et al. (2023). World journal of cli
   ·  DOI: [10.12998/wjcc.v11.i3.610](https://doi.org/10.12998/wjcc.v11.i3.610)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Group C — EC50 (μg/mL) | `Q321` · not captured | 4.05 | μg/mL | not captured | llm (not captured) | T2:row1:col2 |
-| Group B1 — EC50 (μg/mL) | `Q321` · not captured | 3.411 | μg/mL | not captured | llm (not captured) | T2:row2:col2 |
-| Group B2 — EC50 (μg/mL) | `Q321` · not captured | 3.031.2 | μg/mL | not captured | llm (not captured) | T2:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Group C — EC50 (μg/mL) | `Q321` · not captured | 4.05 | μg/mL | not captured | llm (not captured) | T2:row1:col2 |
+| PD (effect) | Group B1 — EC50 (μg/mL) | `Q321` · not captured | 3.411 | μg/mL | not captured | llm (not captured) | T2:row2:col2 |
+| PD (effect) | Group B2 — EC50 (μg/mL) | `Q321` · not captured | 3.031.2 | μg/mL | not captured | llm (not captured) | T2:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

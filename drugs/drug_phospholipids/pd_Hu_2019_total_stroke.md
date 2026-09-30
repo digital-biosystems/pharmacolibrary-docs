@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Marine omega-3 drives name (in rate ratio): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> This is a meta-analysis using a linear dose–response (meta-regression) model of marine omega-3 dose (mg/d, EPA+DHA combined) against total stroke risk expressed as rate ratio; no pharmacodynamic mechanism is given. For total stroke no significant association was found (RR 1.05 [0.98, 1.14]; P=0.183), and no potency or rate parameters (Imax, IC50, EC50, kin, kout, ke0) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2019`
 - **model family:** `linear`
 - **driver:** `not_resolved`

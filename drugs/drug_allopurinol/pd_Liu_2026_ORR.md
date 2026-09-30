@@ -14,9 +14,11 @@
 
 **As extracted:** Venetoclax (measured concentrations) drives overall response (in unknown): categorical (graded) response model.
 
-> The paper describes a positive exposure-response relationship where venetoclax average concentration (Cave) stimulates the binary overall response rate (ORR), with ORR increasing from 42% at 100 mg to 68% at 200 mg and plateauing at higher doses. The paper does not specify a mechanistic model (e.g., Emax, indirect response) or provide potency parameters (IC50, EC50, Imax) or rate constants (kin, kout, ke0) for the effect, only noting that remission rates no longer significantly increased when average plasma concentration exceeded 1777 ng/mL.
+**Model:** No model was generated from this record.
+
+> Venetoclax exposure (Cave, ng/mL) was related to binary overall response rate (ORR) by logistic regression, with ORR rising from 42% at 100 mg/day to 68% at 200 mg/day and a suggested optimal exposure range of 1000–2000 ng/mL (plateau above ~1777 ng/mL); no Emax/IC50/kin/kout/ke0 parameters are given. The Chinese PopPK model estimated CL/F 7.33 L/h, Vd/F 181 L, and Ka 0.16 /h.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Liu_2026`
 - **model family:** `categorical`

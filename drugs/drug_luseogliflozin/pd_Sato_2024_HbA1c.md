@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives HbA1c (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Luseogliflozin dose (normalized by urinary glucose excretion, with 1.0 corresponding to UGE = 51.4 g/day) reduces HbA1c (%) in a sigmoid Emax dose–response model shared across six SGLT2 inhibitors, with an estimated maximum HbA1c reduction Emax of 0.796 points (recorded as -0.796%); the paper does not state an IC50/EC50 for the HbA1c response or an effect-compartment/kin-kout mechanism, and the reported t1/2 of 11.2 h and IC50 values (2.26 and 2900, units not given) are drug properties rather than HbA1c-model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sato_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,27 +31,27 @@ Sato H; Ishikawa A; Yoshioka H; Jin R; Sano Y; Hisaka A et al. (2024). Scientifi
   ·  DOI: [10.1038/s41598-024-76256-6](https://doi.org/10.1038/s41598-024-76256-6)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| t1/2(h) — Canagliflozin | `Q57` · not captured | 10.2 | h | not captured | exact (not captured) | Tab1:row2:col3 |
-| t1/2(h) — Dapagliflozin | `Q57` · not captured | 12.1 | h | not captured | exact (not captured) | Tab1:row2:col4 |
-| t1/2(h) — Empagliflozin | `Q57` · not captured | 9.88 | h | not captured | exact (not captured) | Tab1:row2:col5 |
-| t1/2(h) — Ipragliflozin | `Q57` · not captured | 11.7 | h | not captured | exact (not captured) | Tab1:row2:col6 |
-| t1/2(h) — Luseogliflozin | `Q57` · not captured | 11.2 | h | not captured | exact (not captured) | Tab1:row2:col7 |
-| t1/2(h) — Tofogliflozin | `Q57` · not captured | 5.29 | h | not captured | exact (not captured) | Tab1:row2:col8 |
-| IC50 — Canagliflozin | `Q322` · not captured | 4.2 | unknown | not captured | exact (not captured) | Tab1:row3:col3 |
-| IC50 — Dapagliflozin | `Q322` · not captured | 1.12 | unknown | not captured | exact (not captured) | Tab1:row3:col4 |
-| IC50 — Empagliflozin | `Q322` · not captured | 1.3 | unknown | not captured | exact (not captured) | Tab1:row3:col5 |
-| IC50 — Ipragliflozin | `Q322` · not captured | 7.38 | unknown | not captured | exact (not captured) | Tab1:row3:col6 |
-| IC50 — Luseogliflozin | `Q322` · not captured | 2.26 | unknown | not captured | exact (not captured) | Tab1:row3:col7 |
-| IC50 — Tofogliflozin | `Q322` · not captured | 14.5 | unknown | not captured | exact (not captured) | Tab1:row3:col8 |
-| IC50 — Canagliflozin | `Q322` · not captured | 663 | unknown | not captured | exact (not captured) | Tab1:row4:col3 |
-| IC50 — Dapagliflozin | `Q322` · not captured | 1391 | unknown | not captured | exact (not captured) | Tab1:row4:col4 |
-| IC50 — Empagliflozin | `Q322` · not captured | 6278 | unknown | not captured | exact (not captured) | Tab1:row4:col5 |
-| IC50 — Ipragliflozin | `Q322` · not captured | 1880 | unknown | not captured | exact (not captured) | Tab1:row4:col6 |
-| IC50 — Luseogliflozin | `Q322` · not captured | 2900 | unknown | not captured | exact (not captured) | Tab1:row4:col7 |
-| IC50 — Tofogliflozin | `Q322` · not captured | 8200 | unknown | not captured | exact (not captured) | Tab1:row4:col8 |
-| Emax [%] | `Q320` · not captured | -0.796 | % | not captured | review_gapfill (not captured) | Sato_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | t1/2(h) — Canagliflozin | `Q57` · not captured | 10.2 | h | not captured | exact (not captured) | Tab1:row2:col3 |
+| PK (driver) | t1/2(h) — Dapagliflozin | `Q57` · not captured | 12.1 | h | not captured | exact (not captured) | Tab1:row2:col4 |
+| PK (driver) | t1/2(h) — Empagliflozin | `Q57` · not captured | 9.88 | h | not captured | exact (not captured) | Tab1:row2:col5 |
+| PK (driver) | t1/2(h) — Ipragliflozin | `Q57` · not captured | 11.7 | h | not captured | exact (not captured) | Tab1:row2:col6 |
+| PK (driver) | t1/2(h) — Luseogliflozin | `Q57` · not captured | 11.2 | h | not captured | exact (not captured) | Tab1:row2:col7 |
+| PK (driver) | t1/2(h) — Tofogliflozin | `Q57` · not captured | 5.29 | h | not captured | exact (not captured) | Tab1:row2:col8 |
+| PD (effect) | IC50 — Canagliflozin | `Q322` · not captured | 4.2 | unknown | not captured | exact (not captured) | Tab1:row3:col3 |
+| PD (effect) | IC50 — Dapagliflozin | `Q322` · not captured | 1.12 | unknown | not captured | exact (not captured) | Tab1:row3:col4 |
+| PD (effect) | IC50 — Empagliflozin | `Q322` · not captured | 1.3 | unknown | not captured | exact (not captured) | Tab1:row3:col5 |
+| PD (effect) | IC50 — Ipragliflozin | `Q322` · not captured | 7.38 | unknown | not captured | exact (not captured) | Tab1:row3:col6 |
+| PD (effect) | IC50 — Luseogliflozin | `Q322` · not captured | 2.26 | unknown | not captured | exact (not captured) | Tab1:row3:col7 |
+| PD (effect) | IC50 — Tofogliflozin | `Q322` · not captured | 14.5 | unknown | not captured | exact (not captured) | Tab1:row3:col8 |
+| PD (effect) | IC50 — Canagliflozin | `Q322` · not captured | 663 | unknown | not captured | exact (not captured) | Tab1:row4:col3 |
+| PD (effect) | IC50 — Dapagliflozin | `Q322` · not captured | 1391 | unknown | not captured | exact (not captured) | Tab1:row4:col4 |
+| PD (effect) | IC50 — Empagliflozin | `Q322` · not captured | 6278 | unknown | not captured | exact (not captured) | Tab1:row4:col5 |
+| PD (effect) | IC50 — Ipragliflozin | `Q322` · not captured | 1880 | unknown | not captured | exact (not captured) | Tab1:row4:col6 |
+| PD (effect) | IC50 — Luseogliflozin | `Q322` · not captured | 2900 | unknown | not captured | exact (not captured) | Tab1:row4:col7 |
+| PD (effect) | IC50 — Tofogliflozin | `Q322` · not captured | 8200 | unknown | not captured | exact (not captured) | Tab1:row4:col8 |
+| PD (effect) | Emax [%] | `Q320` · not captured | -0.796 | % | not captured | review_gapfill (not captured) | Sato_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

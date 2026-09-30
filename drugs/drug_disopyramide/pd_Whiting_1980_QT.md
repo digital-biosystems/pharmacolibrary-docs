@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Disopyramide (concentrations from the PK model of Aso_2001) drives QT prolongation (in ms): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Plasma disopyramide concentrations drive prolongation of the QT interval (ms) via an effect-compartment (Sheiner et al.) model in which effect is linearly proportional to the hypothetical effect-compartment concentration, with keq (min^-1) expressing the plasma-effect disequilibrium (individual estimates 0.2907-0.7115 for Model IV and 0.2465-0.9768 for Model VI). The concentration-effect relationship is linear with individual slopes of 7.02-21.94 ms/µg ml^-1 (Model IV) and 7.78-22.27 ms/µg ml^-1 (Model VI), with a common oral slope of 12.25 ms/µg ml^-1; no Emax, IC50, kin or kout values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Whiting_1980`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

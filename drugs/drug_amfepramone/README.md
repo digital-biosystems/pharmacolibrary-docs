@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 06:32 | 2:38 | 0/0/0 | 0/0/0 | 0/0/2 | 56,687/1,533 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-09-29 22:50 | 0:58 | 0/0/0 | 0/0/0 | 0/0/2 | 3,602/818 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -46,6 +46,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | liver | `CYP3A4` metabolism | paper PGx gene |
 | metabolism | small intestine | `CYP3A4` metabolism | paper PGx gene |
 | excretion | brain | <sub>“…ion and/or its active metabolites are believed to cross the blood-brain barrier and the pl…”</sub> | prose |
@@ -78,7 +79,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Dangor_1987.pdf` | Dangor CM et al., Bioavailability of amfepramone hydrochl…, Arzneimittel-Forschung (1987) | popPK | 8 | not captured | [3663274](https://pubmed.ncbi.nlm.nih.gov/3663274) | The paper is a pharmacokinetic study of amfepramone in humans, but the provided evidence contains only qualitative descriptions of the profile without specific numeric parameter values. |
 
-<sub>queue written 2026-09-22T06:31:51.445296+00:00</sub>
+<sub>queue written 2026-09-29T22:50:08.442296+00:00</sub>
 
 ## Screened and excluded
 

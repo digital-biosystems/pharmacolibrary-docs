@@ -9,6 +9,12 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Blood toxic metals (Al, Cr, Cu, Zn, As, Se, Cd, Pb) drive {'name': 'serum iron (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
 - **paper:** `Zhang_2024`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -20,9 +26,9 @@ Zhang H; Yan J; Nie G; Xie D; Zhu X; Niu J; et al. et al. (2024). Scientific rep
   ·  DOI: [10.1038/s41598-024-58607-5](https://doi.org/10.1038/s41598-024-58607-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Cl (mmol/L) — P value | `Q22` · not captured | 0.364 | mmol/L | not captured | exact (not captured) | Tab1:row39:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Cl (mmol/L) — P value | `Q22` · not captured | 0.364 | mmol/L | not captured | exact (not captured) | Tab1:row39:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

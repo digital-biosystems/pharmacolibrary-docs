@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S(-)-atenolol drives heart rate (in b.p.m.): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> S(-)-atenolol plasma concentrations (ng ml⁻¹) reduce heart rate (b.p.m.) during continuous isoprenaline-induced tachycardia via β-adrenoceptor antagonism, described by a sigmoid Emax model with an effect compartment to resolve hysteresis; in the non-isoprenaline group Emax was 43718 b.p.m. and EC50 28727 ng ml⁻¹, but the potency estimate was unreliable because heart rate variability (30 b.p.m.) approximated the maximal effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2007`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isavuconazole (measured concentrations) drives name (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for alginic acid; it only performed exploratory logistic regression analyses relating isavuconazole trough concentration (mg/L) or AUC to binary treatment success, finding a non-significant trend, with no mechanism, potency, or rate parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guidi_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

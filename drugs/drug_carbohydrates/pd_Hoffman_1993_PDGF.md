@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carrageenans (measured concentrations) drives PDGF binding (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carrageenans (polysulphated carbohydrates) directly inhibit binding of radiolabelled PDGF to cells in vitro; κ-carrageenan was the most potent PDGF antagonist with IC50 = 1.7 ± 1.3 µg/ml (n = 3, concentration reducing specific binding to 50% of control). No PD model beyond this direct concentration-dependent inhibition (no kin/kout/ke0 or Emax parameters) is reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hoffman_1993`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

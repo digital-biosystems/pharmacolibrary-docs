@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LumiPK (compound IV) (measured concentrations) drives name (in % of control): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Mitapivat was included as a cell-permeable control in a functional PKL NanoBRET assay, where its effect on PKL activity (% of DMSO vehicle control) was measured in lysates of HepG2 PKM2 knock-out cells after 48 h incubation; the paper does not state the mechanism, and no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given for mitapivat.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilsson_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

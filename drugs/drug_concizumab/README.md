@@ -26,16 +26,16 @@ Concizumab-mtci (Alhemo) was approved by the FDA in December 2024 for use in pat
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_reference](drugs/drug_concizumab/Concizumab_Agers2014_reference.md) | 1-compartment (no model) | 2 | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Agersø_2014_reference](drugs/drug_concizumab/Concizumab_Agers2014_reference.md) | — | 1-compartment (no model) | 2 | Agersø H et al., Pharmacokinetics of an anti-TFPI monocl…, European journal of pharmac… (2014) | [10.1016/j.ejps.2014.02.009](https://doi.org/10.1016/j.ejps.2014.02.009) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019](drugs/drug_concizumab/pd_Eichler_2019_free_TFPI.md) | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019](drugs/drug_concizumab/pd_Eichler_2019_peak_TG.md) | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019_free_TFPI](drugs/drug_concizumab/pd_Eichler_2019_free_TFPI.md) | free TFPI ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Eichler_2019_peak_TG](drugs/drug_concizumab/pd_Eichler_2019_peak_TG.md) | peak thrombin generation ← concizumab · direct sigmoid Emax (Hill) effect | — | Eichler H et al., Concizumab restores thrombin generation…, Haemophilia : the official… (2019) | [10.1111/hae.13627](https://doi.org/10.1111/hae.13627) |
 
 ## ADME sites
 

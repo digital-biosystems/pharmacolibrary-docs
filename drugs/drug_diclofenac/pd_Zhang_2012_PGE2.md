@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diclofenac (concentrations from the PK model of Karunanidhi_2026) drives prostaglandin E2 (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Diclofenac plasma concentration directly inhibits PGE2 production (no delay, effect in central compartment), described by an inhibitory sigmoid Emax model: in vivo IC50 0.5±0.2 µg/mL (normal) and 0.7±0.3 µg/mL (FCA arthritic) with ~98% maximum inhibition; in vitro whole blood IC50 1.3±0.7 µg/mL (normal) and 0.4±0.2 µg/mL (arthritic), with Imax 85.8% and 74.6% respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2012`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,28 +31,28 @@ Zhang J; Li P; Guo HF; Liu L; Liu XD et al. (2012). Acta pharmacologica Sinica 3
   ·  DOI: [10.1038/aps.2012.67](https://doi.org/10.1038/aps.2012.67)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC 50 (µg/mL) — Model parameter estimates | `Q322` · not captured | 0.5 | µg/mL | not captured | llm (not captured) | tab_1:row3:col1 |
-| IC 50 (µg/mL) | `Q322` · not captured | 1.3 | µg/mL | not captured | llm (not captured) | tab_1:row3:col2 |
-| IC 80 (µg/mL) — Model parameter estimates | `Q322` · not captured | 2.8 | µg/mL | not captured | llm (not captured) | tab_1:row4:col1 |
-| IC 80 (µg/mL) | `Q322` · not captured | 2.3 | µg/mL | not captured | llm (not captured) | tab_1:row4:col2 |
-| E 0 (ng/mL) — Model parameter estimates | `Q324` · not captured | 11.7 | ng/mL | not captured | llm (not captured) | tab_1:row5:col1 |
-| E 0 (ng/mL) | `Q324` · not captured | 63.9 | ng/mL | not captured | llm (not captured) | tab_1:row5:col2 |
-| I max (ng/mL) — Model parameter estimates | `Q323` · not captured | 11.4 | ng/mL | not captured | llm (not captured) | tab_1:row6:col1 |
-| I max (ng/mL) | `Q323` · not captured | 54.8 | ng/mL | not captured | llm (not captured) | tab_1:row6:col2 |
-| γ — Model parameter estimates | `Q89` · not captured | 1.1 | not captured | not captured | llm (not captured) | tab_1:row7:col1 |
-| γ | `Q89` · not captured | 2.0 | not captured | not captured | llm (not captured) | tab_1:row7:col2 |
-| IC 50 (µg/mL) — Model parameter estimates | `Q322` · not captured | 0.7 | µg/mL | not captured | llm (not captured) | tab_1:row10:col1 |
-| IC 50 (µg/mL) | `Q322` · not captured | 0.4 | µg/mL | not captured | llm (not captured) | tab_1:row10:col2 |
-| IC 80 (µg/mL) — Model parameter estimates | `Q322` · not captured | 10.9 | µg/mL | not captured | llm (not captured) | tab_1:row11:col1 |
-| IC 80 (µg/mL) | `Q322` · not captured | 1.4 | µg/mL | not captured | llm (not captured) | tab_1:row11:col2 |
-| E 0 (ng/mL) — Model parameter estimates | `Q324` · not captured | 21.0 | ng/mL | not captured | llm (not captured) | tab_1:row12:col1 |
-| E 0 (ng/mL) | `Q324` · not captured | 54.5 | ng/mL | not captured | llm (not captured) | tab_1:row12:col2 |
-| I max (ng/mL) — Model parameter estimates | `Q323` · not captured | 22.1 | ng/mL | not captured | llm (not captured) | tab_1:row13:col1 |
-| I max (ng/mL) | `Q323` · not captured | 40.7 | ng/mL | not captured | llm (not captured) | tab_1:row13:col2 |
-| γ — Model parameter estimates | `Q89` · not captured | 1.5 | not captured | not captured | llm (not captured) | tab_1:row14:col1 |
-| γ | `Q89` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_1:row14:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC 50 (µg/mL) — Model parameter estimates | `Q322` · not captured | 0.5 | µg/mL | not captured | llm (not captured) | tab_1:row3:col1 |
+| PD (effect) | IC 50 (µg/mL) | `Q322` · not captured | 1.3 | µg/mL | not captured | llm (not captured) | tab_1:row3:col2 |
+| PD (effect) | IC 80 (µg/mL) — Model parameter estimates | `Q322` · not captured | 2.8 | µg/mL | not captured | llm (not captured) | tab_1:row4:col1 |
+| PD (effect) | IC 80 (µg/mL) | `Q322` · not captured | 2.3 | µg/mL | not captured | llm (not captured) | tab_1:row4:col2 |
+| PD (effect) | E 0 (ng/mL) — Model parameter estimates | `Q324` · not captured | 11.7 | ng/mL | not captured | llm (not captured) | tab_1:row5:col1 |
+| PD (effect) | E 0 (ng/mL) | `Q324` · not captured | 63.9 | ng/mL | not captured | llm (not captured) | tab_1:row5:col2 |
+| PD (effect) | I max (ng/mL) — Model parameter estimates | `Q323` · not captured | 11.4 | ng/mL | not captured | llm (not captured) | tab_1:row6:col1 |
+| PD (effect) | I max (ng/mL) | `Q323` · not captured | 54.8 | ng/mL | not captured | llm (not captured) | tab_1:row6:col2 |
+| PK (driver) | γ — Model parameter estimates | `Q89` · not captured | 1.1 | not captured | not captured | llm (not captured) | tab_1:row7:col1 |
+| PK (driver) | γ | `Q89` · not captured | 2.0 | not captured | not captured | llm (not captured) | tab_1:row7:col2 |
+| PD (effect) | IC 50 (µg/mL) — Model parameter estimates | `Q322` · not captured | 0.7 | µg/mL | not captured | llm (not captured) | tab_1:row10:col1 |
+| PD (effect) | IC 50 (µg/mL) | `Q322` · not captured | 0.4 | µg/mL | not captured | llm (not captured) | tab_1:row10:col2 |
+| PD (effect) | IC 80 (µg/mL) — Model parameter estimates | `Q322` · not captured | 10.9 | µg/mL | not captured | llm (not captured) | tab_1:row11:col1 |
+| PD (effect) | IC 80 (µg/mL) | `Q322` · not captured | 1.4 | µg/mL | not captured | llm (not captured) | tab_1:row11:col2 |
+| PD (effect) | E 0 (ng/mL) — Model parameter estimates | `Q324` · not captured | 21.0 | ng/mL | not captured | llm (not captured) | tab_1:row12:col1 |
+| PD (effect) | E 0 (ng/mL) | `Q324` · not captured | 54.5 | ng/mL | not captured | llm (not captured) | tab_1:row12:col2 |
+| PD (effect) | I max (ng/mL) — Model parameter estimates | `Q323` · not captured | 22.1 | ng/mL | not captured | llm (not captured) | tab_1:row13:col1 |
+| PD (effect) | I max (ng/mL) | `Q323` · not captured | 40.7 | ng/mL | not captured | llm (not captured) | tab_1:row13:col2 |
+| PK (driver) | γ — Model parameter estimates | `Q89` · not captured | 1.5 | not captured | not captured | llm (not captured) | tab_1:row14:col1 |
+| PK (driver) | γ | `Q89` · not captured | 1.3 | not captured | not captured | llm (not captured) | tab_1:row14:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

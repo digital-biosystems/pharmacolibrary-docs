@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pereskia aculeata extracts (measured concentrations) drives Antifungal activity (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Pereskia aculeata extracts (petroleum ether, chloroform, methanol; 1–4 µg/mL applied to disks) were tested against fungal strains with antifungal activity measured as inhibition halo width (mm); the paper reports only dose-dependent halo sizes (e.g. petroleum ether and methanol extracts against Aspergillus versicolor, halos 2.33–9.33 mm and 2.33–6.66 mm) and does not state a pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for the antifungal response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Souza_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

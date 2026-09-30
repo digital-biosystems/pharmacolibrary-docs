@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MHV370 (measured concentrations) drives name (in pg/ml): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> MHV370 (a TLR7/8 inhibitor) given in food to NZB/W F1 mice reduced serum CXCL13 (pg/ml, ELISA at termination); the paper does not state an Emax/IC50 fit for CXCL13, but attributes the effect to TLR7 inhibition, with a reported IC50 of 35 nM for the ex vivo blood PD marker CD69.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hawtin_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

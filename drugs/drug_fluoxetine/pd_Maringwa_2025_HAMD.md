@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Venlafaxine drives Hamilton Depression Rating Scale (in score): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Venlafaxine daily dose (mg/day) acts on change from baseline in HAMD score via an Emax dose–response model with additive drug effect (Emax −1.75, %RSE 34; ED50 29.1 mg/day, log ED50 3.37, %RSE 27), while fluoxetine showed a constant (dose-independent) drug effect; larger mean baseline HAMD scores were associated with larger drug effect (baseline slope 0.0986).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maringwa_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,12 +31,12 @@ Maringwa J; Diderichsen PM; Valiathan C et al. (2025). Clinical pharmacology and
   ·  DOI: [10.1002/cpt.3418](https://doi.org/10.1002/cpt.3418)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Log ED50 venlafaxine — Transformed parameter estimate (standard error) | `Q321` · not captured | 3.37 | standard error | not captured | llm (not captured) | cpt3418-tbl-0002:row2:col1 |
-| Log ED50 venlafaxine — % Relative standard error of transformed estimate (%RSE) | `Q321` · not captured | 27 | mg/day | not captured | llm (not captured) | cpt3418-tbl-0002:row2:col2 |
-| E max venlafaxine — Transformed parameter estimate (standard error) | `Q320` · not captured | -1.75 | standard error | not captured | llm (not captured) | cpt3418-tbl-0002:row3:col1 |
-| E max venlafaxine — % Relative standard error of transformed estimate (%RSE) | `Q320` · not captured | 34 | not captured | not captured | llm (not captured) | cpt3418-tbl-0002:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Log ED50 venlafaxine — Transformed parameter estimate (standard error) | `Q321` · not captured | 3.37 | standard error | not captured | llm (not captured) | cpt3418-tbl-0002:row2:col1 |
+| PD (effect) | Log ED50 venlafaxine — % Relative standard error of transformed estimate (%RSE) | `Q321` · not captured | 27 | mg/day | not captured | llm (not captured) | cpt3418-tbl-0002:row2:col2 |
+| PD (effect) | E max venlafaxine — Transformed parameter estimate (standard error) | `Q320` · not captured | -1.75 | standard error | not captured | llm (not captured) | cpt3418-tbl-0002:row3:col1 |
+| PD (effect) | E max venlafaxine — % Relative standard error of transformed estimate (%RSE) | `Q320` · not captured | 34 | not captured | not captured | llm (not captured) | cpt3418-tbl-0002:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

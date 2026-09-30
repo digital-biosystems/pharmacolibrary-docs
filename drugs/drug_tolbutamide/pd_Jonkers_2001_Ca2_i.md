@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolbutamide (concentrations from the PK model of Kirchheiner_2002) drives cytoplasmic Ca2+ (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tolbutamide (5–100 µM) stimulates cytoplasmic Ca2+ ([Ca2+]i) in mouse pancreatic β-cells by closing K+-ATP channels, causing membrane depolarization and Ca2+ influx through voltage-dependent Ca2+ channels; the paper does not report an Emax/IC50 model fit, but gives recruitment EC50 values of ~14 µM tolbutamide at 4 mM glucose and ~4 µM at 5 mM glucose, with individual response thresholds of 5–50 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jonkers_2001`
 - **model family:** `emax`
 - **driver:** `cited_pk`

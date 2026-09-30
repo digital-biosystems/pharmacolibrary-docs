@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizic acid derivatives (e.g., GL-D-ValOMe3, GL-PheOEt11) (measured concentrations) drive name (in Inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid derivatives GL-D-ValOMe 3 and GL-PheOEt 11 inhibit DENV E protein-mediated attachment of chimeric DENV2 CprME/JEV and DENV2 prME/ZIKV SRIPs in Vero E6 cells in a concentration-dependent manner (µM concentrations); the paper reports IC50 values for DENV2 infectivity of 0.17–0.50 µM for compounds 3 and 11 (compound 3: 0.12–2.81 µM infectivity, 0.50 µM virus yield; compound 6: 5.98 µM; compound 21: 2.7 µM; GL: 8.1 µM), but does not state a pharmacodynamic model or parameters such as Imax, Emax, kin, kout, ke0, or gamma.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hour_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

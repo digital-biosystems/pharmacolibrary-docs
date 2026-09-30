@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dopamine (measured concentrations) drives cytosolic calcium rise (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Bath-applied dopamine (3–1000 µM) evokes a dose-dependent cytosolic calcium rise (ΔF, % change in Fluo-8 fluorescence) in olfactory bulb astrocytes, with EC50 = 76 µM; the paper does not fit an explicit PD model but attributes the response to D1- and D2-class receptor stimulation of the PLC/IP3 pathway causing internal (ER) calcium release, with both receptor antagonists partly reducing the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fischer_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

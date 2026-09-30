@@ -22,15 +22,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) | 1-compartment (no model) | 8 (+5 cov.) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Naik_2013_reference](drugs/drug_peginesatide/Peginesatide_Naik2013_reference.md) | — | 1-compartment (no model) | 8 (+5 cov.) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Naik_2013](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> | [Naik_2013_Hgb](drugs/drug_peginesatide/pd_Naik_2013_Hgb.md) | hemoglobin ← peginesatide · indirect response — drug inhibits the loss of hemoglobin | — | Naik H et al., A Population Pharmacokinetic and Pharma…, PloS one (2013) | [10.1371/journal.pone.0066422](https://doi.org/10.1371/journal.pone.0066422) |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5'-phosphate drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> This cross-sectional (NHANES 2005–2010) study reports associations, not a pharmacodynamic model: serum pyridoxal 5′-phosphate (PLP) concentrations (quartiles, HPLC-measured) were negatively associated with the risk of very short (Q4 RRR 0.58, 95% CI 0.43–0.81), short (Q4 RRR 0.71, 95% CI 0.61–0.83), and long (Q3 RRR 0.62, 95% CI 0.34–0.94) sleep duration versus normal sleep (7–&lt;9 h), with a non-linear inverted U-shaped dose–response. No mechanism, potency (IC50/EC50/Emax), or rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ge_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

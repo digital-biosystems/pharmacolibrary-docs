@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tamoxifen and its metabolites (NDT, 4-OHT, Y, Z) inhibit tritiated thymidine incorporation (cytostatic effect) in MCF-7 (ER+, PR+) and CAL-18 B (ER-, PR-) breast cancer cell lines, with IC50 values 4-250-fold higher in CAL-18 B than in MCF-7; the paper does not state a specific PD model structure or numeric IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Etienne_1989`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

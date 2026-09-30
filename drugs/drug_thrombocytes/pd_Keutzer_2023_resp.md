@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linezolid (measured concentrations) drives dropout (in days): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> In the time-to-event dropout model, linezolid Cmin (mg/L) was associated with dropout (defined as stopping treatment &lt;3 months), with higher exposure stimulating the hazard; the paper does not report the effect form or potency parameters (e.g., Emax, EC50) for this relationship in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Keutzer_2023`
 - **model family:** `tte`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Keutzer L; Mockeliunas L; Sturkenboom MGG; Bolhuis MS; Akkerman OW; Simonsson US
   ·  DOI: [10.3390/ph16111575](https://doi.org/10.3390/ph16111575)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| No. Smoking — All Patients | `Q100` · not captured | 28 | not captured | not captured | llm (not captured) | pharmaceuticals-16-01575-t001:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | No. Smoking — All Patients | `Q100` · not captured | 28 | not captured | not captured | llm (not captured) | pharmaceuticals-16-01575-t001:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

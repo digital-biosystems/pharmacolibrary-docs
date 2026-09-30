@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spectinomycin drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a cell-free translation system, tetracycline concentrations inhibit luciferase reporter activity (protein synthesis output) by directly inhibiting translation, with an IC50 of ~2 μg/ml for the mycobacterial system versus ~40 μg/ml for the E. coli system; the paper does not describe a kinetic PD model (no Imax, kin, kout, ke0, or gamma reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Srivastava_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

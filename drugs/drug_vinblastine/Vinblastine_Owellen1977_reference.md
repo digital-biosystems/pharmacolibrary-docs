@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The vinblastine record was rejected because its three-compartment structure contains an unreachable compartment, and it was built from the abstract only, so reported summary statistics (e.g. t1/2γ 1173 min, V 1656 L) stood in for a fitted model.**

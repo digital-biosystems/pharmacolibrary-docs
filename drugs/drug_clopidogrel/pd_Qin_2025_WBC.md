@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ropeginterferon alfa-2b (measured concentrations) drives white blood cell count (in 10^9/L): indirect response — drug inhibits the production of white blood cell count.
+
+**Model:** No model was generated from this record.
+
+> Serum ropeginterferon alfa-2b concentrations inhibit the production (kin) of white blood cell count (WBC, 10^9/L) in an indirect-response model with Imax fixed at 1 (100% maximal inhibition of production); the IC50,W was 152 ng/mL (record estimate 102 ng/mL), with typical initial WBC 12.1 × 10^9/L and equilibrium value 7.32 × 10^9/L. The paper does not report a Hill coefficient for WBC (fixed at 1, as inclusion did not improve fit) and the record gives no kout estimate for WBC.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qin_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`
@@ -21,47 +31,47 @@ Qin A; Shimoda K; Suo S; Fu R; Kirito K; Wu D; Liao J; Chen H; Wu L; Su X; Gao Y
   ·  DOI: [10.1002/prp2.70109](https://doi.org/10.1002/prp2.70109)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| HCT — IIV% (RSE%) | `Q312` · not captured | 20 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row1:col3 |
-| HCT — Shrinkage% | `Q318` · not captured | 14.8 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row1:col4 |
-| IC 50 (ng mL−1) — Definition (units) | `Q322` · not captured | 137 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col1 |
-| IC 50 (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 430 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col2 |
-| IC 50 (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 15.1 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col3 |
-| k tr (h−1) — Definition (units) | `Q306` · not captured | 0.023 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col1 |
-| k tr (h−1) — Estimates (RSE%) | `Q306` · not captured | 113 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col2 |
-| k tr (h−1) — IIV% (RSE%) | `Q306` · not captured | 17.8 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col3 |
-| I max — Definition (units) | `Q323` · not captured | 0.592 | units | not captured | space_fold (not captured) | prp270109-tbl-0003:row4:col1 |
-| HCT0 (%) — IIV% (RSE%) | `Q312` · not captured | 1.05 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row5:col3 |
-| Covariance of IIV_HCTss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.298 | units | not captured | llm (not captured) | prp270109-tbl-0003:row6:col1 |
-| Proportional residual error (%) — Definition (units) | `Q316` · not captured | 4.09 | units | not captured | exact (not captured) | prp270109-tbl-0003:row7:col1 |
-| Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 5.64 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row7:col3 |
-| PLT — IIV% (RSE%) | `Q312` · not captured | 67.6 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row8:col3 |
-| PLT — Shrinkage% | `Q318` · not captured | 6.83 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row8:col4 |
-| IC 50,P (ng mL−1) — Definition (units) | `Q322` · not captured | 72.4 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col1 |
-| IC 50,P (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 162 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col2 |
-| IC 50,P (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 19 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col3 |
-| k out,P (h−1) — Definition (units) | `Q346` · not captured | 0.0299 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col1 |
-| k out,P (h−1) — Estimates (RSE%) | `Q346` · not captured | 135 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col2 |
-| k out,P (h−1) — IIV% (RSE%) | `Q328` · not captured | 9.21 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col3 |
-| I max,P — Definition (units) | `Q323` · not captured | 1 | units | not captured | llm (not captured) | prp270109-tbl-0003:row11:col1 |
-| PLT0 (109 L−1 day−1) — IIV% (RSE%) | `Q312` · not captured | 1.36 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row12:col3 |
-| Covariance of IIV_PLTss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.486 | units | not captured | llm (not captured) | prp270109-tbl-0003:row13:col1 |
-| Proportional residual error (%) — Definition (units) | `Q316` · not captured | 12.1 | units | not captured | exact (not captured) | prp270109-tbl-0003:row14:col1 |
-| Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 6.18 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row14:col3 |
-| WBC — IIV% (RSE%) | `Q312` · not captured | 47.4 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row15:col3 |
-| WBC — Shrinkage% | `Q318` · not captured | 0 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row15:col4 |
-| IC 50,W (ng mL−1) — Definition (units) | `Q322` · not captured | 152 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col1 |
-| IC 50,W (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 102 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col2 |
-| IC 50,W (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 16 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col3 |
-| k out,W (h−1) — Definition (units) | `Q328` · not captured | 0.0475 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col1 |
-| k out,W (h−1) — Estimates (RSE%) | `Q328` · not captured | 131 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col2 |
-| k out,W (h−1) — IIV% (RSE%) | `Q328` · not captured | 9.44 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col3 |
-| I max,W — Definition (units) | `Q323` · not captured | 1 | units | not captured | llm (not captured) | prp270109-tbl-0003:row18:col1 |
-| WBC0 (109 L−1 day−1) — IIV% (RSE%) | `Q312` · not captured | 1.44 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row19:col3 |
-| Covariance of IIV_WBCss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.19 | units | not captured | llm (not captured) | prp270109-tbl-0003:row20:col1 |
-| Proportional residual error (%) — Definition (units) | `Q316` · not captured | 16 | units | not captured | exact (not captured) | prp270109-tbl-0003:row21:col1 |
-| Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 5.29 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row21:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | HCT — IIV% (RSE%) | `Q312` · not captured | 20 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row1:col3 |
+| variability | HCT — Shrinkage% | `Q318` · not captured | 14.8 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row1:col4 |
+| PD (effect) | IC 50 (ng mL−1) — Definition (units) | `Q322` · not captured | 137 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col1 |
+| PD (effect) | IC 50 (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 430 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col2 |
+| PD (effect) | IC 50 (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 15.1 | ng mL−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row2:col3 |
+| PK (driver) | k tr (h−1) — Definition (units) | `Q306` · not captured | 0.023 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col1 |
+| PK (driver) | k tr (h−1) — Estimates (RSE%) | `Q306` · not captured | 113 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col2 |
+| PK (driver) | k tr (h−1) — IIV% (RSE%) | `Q306` · not captured | 17.8 | h−1 | not captured | space_fold (not captured) | prp270109-tbl-0003:row3:col3 |
+| PD (effect) | I max — Definition (units) | `Q323` · not captured | 0.592 | units | not captured | space_fold (not captured) | prp270109-tbl-0003:row4:col1 |
+| variability | HCT0 (%) — IIV% (RSE%) | `Q312` · not captured | 1.05 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row5:col3 |
+| variability | Covariance of IIV_HCTss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.298 | units | not captured | llm (not captured) | prp270109-tbl-0003:row6:col1 |
+| variability | Proportional residual error (%) — Definition (units) | `Q316` · not captured | 4.09 | units | not captured | exact (not captured) | prp270109-tbl-0003:row7:col1 |
+| variability | Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 5.64 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row7:col3 |
+| variability | PLT — IIV% (RSE%) | `Q312` · not captured | 67.6 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row8:col3 |
+| variability | PLT — Shrinkage% | `Q318` · not captured | 6.83 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row8:col4 |
+| PD (effect) | IC 50,P (ng mL−1) — Definition (units) | `Q322` · not captured | 72.4 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col1 |
+| PD (effect) | IC 50,P (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 162 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col2 |
+| PD (effect) | IC 50,P (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 19 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row9:col3 |
+| PK (driver) | k out,P (h−1) — Definition (units) | `Q346` · not captured | 0.0299 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col1 |
+| PK (driver) | k out,P (h−1) — Estimates (RSE%) | `Q346` · not captured | 135 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col2 |
+| PD (effect) | k out,P (h−1) — IIV% (RSE%) | `Q328` · not captured | 9.21 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row10:col3 |
+| PD (effect) | I max,P — Definition (units) | `Q323` · not captured | 1 | units | not captured | llm (not captured) | prp270109-tbl-0003:row11:col1 |
+| variability | PLT0 (109 L−1 day−1) — IIV% (RSE%) | `Q312` · not captured | 1.36 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row12:col3 |
+| variability | Covariance of IIV_PLTss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.486 | units | not captured | llm (not captured) | prp270109-tbl-0003:row13:col1 |
+| variability | Proportional residual error (%) — Definition (units) | `Q316` · not captured | 12.1 | units | not captured | exact (not captured) | prp270109-tbl-0003:row14:col1 |
+| variability | Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 6.18 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row14:col3 |
+| variability | WBC — IIV% (RSE%) | `Q312` · not captured | 47.4 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row15:col3 |
+| variability | WBC — Shrinkage% | `Q318` · not captured | 0 | not captured | not captured | llm (not captured) | prp270109-tbl-0003:row15:col4 |
+| PD (effect) | IC 50,W (ng mL−1) — Definition (units) | `Q322` · not captured | 152 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col1 |
+| PD (effect) | IC 50,W (ng mL−1) — Estimates (RSE%) | `Q322` · not captured | 102 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col2 |
+| PD (effect) | IC 50,W (ng mL−1) — IIV% (RSE%) | `Q322` · not captured | 16 | ng mL−1 | not captured | llm (not captured) | prp270109-tbl-0003:row16:col3 |
+| PD (effect) | k out,W (h−1) — Definition (units) | `Q328` · not captured | 0.0475 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col1 |
+| PD (effect) | k out,W (h−1) — Estimates (RSE%) | `Q328` · not captured | 131 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col2 |
+| PD (effect) | k out,W (h−1) — IIV% (RSE%) | `Q328` · not captured | 9.44 | h−1 | not captured | llm (not captured) | prp270109-tbl-0003:row17:col3 |
+| PD (effect) | I max,W — Definition (units) | `Q323` · not captured | 1 | units | not captured | llm (not captured) | prp270109-tbl-0003:row18:col1 |
+| variability | WBC0 (109 L−1 day−1) — IIV% (RSE%) | `Q312` · not captured | 1.44 | RSE% | not captured | llm (not captured) | prp270109-tbl-0003:row19:col3 |
+| variability | Covariance of IIV_WBCss and IIV_IC 50 — Definition (units) | `Q314` · not captured | -0.19 | units | not captured | llm (not captured) | prp270109-tbl-0003:row20:col1 |
+| variability | Proportional residual error (%) — Definition (units) | `Q316` · not captured | 16 | units | not captured | exact (not captured) | prp270109-tbl-0003:row21:col1 |
+| variability | Proportional residual error (%) — IIV% (RSE%) | `Q316` · not captured | 5.29 | RSE% | not captured | exact (not captured) | prp270109-tbl-0003:row21:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -30,10 +30,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Fediuk_2021_3](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_HbA1c.md) | Fediuk (2021) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Fediuk_2021_3](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_UGE24.md) | Fediuk (2021) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Fediuk_2021_3_HbA1c](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_HbA1c.md) | HbA1c ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk (2021) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Fediuk_2021_3_UGE24](drugs/drug_ertugliflozin/pd_Fediuk_2021_3_UGE24.md) | Urinary Glucose Excretion ← ertugliflozin · direct Emax (saturable) effect | — | Fediuk (2021) | — |
 
 ## Pharmacogenomics (PGx)
 
@@ -58,6 +58,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | bile duct | <sub>“…ism.[L48466] Several metabolites have been found in plasma, feces, and urine. In plasma, t…”</sub> | prose |
 | metabolism | kidney | `UGT1A9` metabolism/substrate, `UGT2B7` substrate | DrugBank actor |

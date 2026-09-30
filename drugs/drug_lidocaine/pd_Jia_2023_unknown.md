@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sufentanil (measured concentrations) drives hemodynamic response to tracheal intubation (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Sufentanil effect-site concentration (ng/mL) was used to inhibit the binary hemodynamic response (HR or MAP increase ≥20% of baseline) to tracheal intubation in obese patients; the EC50 determined by probit regression was 0.50 ng/mL with saline and 0.36 ng/mL with intravenous lidocaine 1.5 mg/kg, indicating lidocaine reduces the sufentanil concentration needed. The paper does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jia_2023`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,10 +31,10 @@ Jia D; Yuan X; He C; Tu F et al. (2023). Drug design, development and therapy 17
   ·  DOI: [10.2147/DDDT.S415872](https://doi.org/10.2147/DDDT.S415872)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (ng/mL) — Lidocaine Group | `Q321` · not captured | 0.36 | ng/mL | not captured | exact (not captured) | t0003:row1:col1 |
-| EC50 (ng/mL) — Saline Group | `Q321` · not captured | 0.50 | ng/mL | not captured | exact (not captured) | t0003:row1:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (ng/mL) — Lidocaine Group | `Q321` · not captured | 0.36 | ng/mL | not captured | exact (not captured) | t0003:row1:col1 |
+| PD (effect) | EC50 (ng/mL) — Saline Group | `Q321` · not captured | 0.50 | ng/mL | not captured | exact (not captured) | t0003:row1:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

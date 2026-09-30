@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cyclosporine A, prednisolone, azathioprine drive name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Azathioprine (with cyclosporine A and prednisolone) was tested for its concentration-dependent effect on the respiratory control ratio (RCR) of mitochondrial respiration, expressed as percent RCR decrease; the paper does not state a mechanistic PD model beyond a dose-dependent inhibitory (Emax-type) curve. For azathioprine the maximal inhibition (Imax) was 10.3% with an IC50 of 5.8 ± 2.5 × 10⁻⁹ M (monophasic curve), compared with IC50 values of 3.7 ± 0.9 × 10⁻⁸ M for CsA and 9.2 ± 3.4 × 10⁻¹² M for prednisolone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Simon_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Buprenorphine (concentrations from the PK model of Nelson_2024) drives MOTHER NAS scores (in score): indirect response — drug inhibits the production of MOTHER NAS scores.
+
+**Model:** No model was generated from this record.
+
+> Buprenorphine plasma concentrations (C2, ng/ml) act on MOTHER NAS scores via an indirect response model: the drug effect (EFFECT drug, with EMAX and EC50) modulates the natural improvement of withdrawal symptoms with postnatal age (NOWST, rate NOWSM), within a NOWS turnover structure with rate constants Kin and Kout. The excerpts do not report numeric values for EMAX, EC50, Kin, or Kout, and the paper does not state whether the drug effect inhibits production or elimination of the response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eudy-Byrne_2021`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

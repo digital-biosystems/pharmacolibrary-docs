@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trivalent inhibitor (AS31 + Ex1-16 + Ex2-1) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The trivalent thrombin inhibitor (AS-31 + Ex1-16 + Ex2-1) inhibits thrombin activity, measured as aPTT prolongation; 120 nM inhibitor produced a nearly three-fold prolongation of clotting time, reversible to about twofold with antidote, while the active site fragment alone gave only a 1.5-fold extension. The paper reports an apparent Ki of 4.6 pM (Morrison tight-binding, regarded as near-stoichiometric; boundary ~5 pM) versus 17.2 and 12.4 pM for the bivalent assemblies and 600 pM for AS-31 alone, but does not state a specific PD model structure (no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dockerill_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

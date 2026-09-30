@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Seaweed extracts drives lipase activity (in % change in turbidity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Seaweed extracts (A. nodosum, F. vesiculosus, P. canaliculata; whole homogenate, ethanol pellet/supernatant, sodium carbonate preparations) inhibit pancreatic lipase activity in vitro (measured as % change in turbidity vs control), with IC50 values ranging from 0.119 mg mL−1 (F. vesiculosus homogenate, most potent) to 2.098 mg mL−1 (sodium carbonate extract). The paper states the mechanism of inhibition is unknown, though it proposes possibilities such as physical blocking of substrate–enzyme interaction at the water–oil interface or binding near the lipase active site; no kinetic model parameters (Imax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chater_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Chater PI; Wilcox M; Cherry P; Herford A; Mustar S; Wheater H; et al. et al. (20
   ·  DOI: [10.1007/s10811-015-0619-0](https://doi.org/10.1007/s10811-015-0619-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.748 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col3 |
-| IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.238 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col4 |
-| IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 1.932 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col5 |
-| IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 2.098 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col6 |
-| IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.119 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col3 |
-| IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.360 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col4 |
-| IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 0.159 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col5 |
-| IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 0.969 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col6 |
-| IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.379 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col3 |
-| IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.228 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col4 |
-| IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 1.822 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col5 |
-| IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 0.789 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.748 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col3 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.238 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col4 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 1.932 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col5 |
+| PD (effect) | IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 2.098 | mg mL−1 | not captured | exact (not captured) | Tab2:row0:col6 |
+| PD (effect) | IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.119 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col3 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.360 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col4 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 0.159 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col5 |
+| PD (effect) | IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 0.969 | mg mL−1 | not captured | exact (not captured) | Tab2:row1:col6 |
+| PD (effect) | IC50 (mg mL−1) — Homogenate | `Q322` · not captured | 0.379 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col3 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol pellet | `Q322` · not captured | 0.228 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col4 |
+| PD (effect) | IC50 (mg mL−1) — Ethanol supernatant | `Q322` · not captured | 1.822 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col5 |
+| PD (effect) | IC50 (mg mL−1) — Sodium carbonate | `Q322` · not captured | 0.789 | mg mL−1 | not captured | exact (not captured) | Tab2:row2:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

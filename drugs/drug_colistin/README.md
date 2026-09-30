@@ -22,12 +22,12 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ma_2026_reference](drugs/drug_colistin/Colistin_Ma2026_reference.md) | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/DDDT.S600942](https://doi.org/10.2147/DDDT.S600942) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Boonyasiri_2025_reference](drugs/drug_colistin/Colistin_Boonyasiri2025_reference.md) | 1-compartment, oral | 2 | Boonyasiri A et al., Disposition of colistin in critically-i…, Clinical microbiology and i… (2025) | [10.1016/j.cmi.2025.05.021](https://doi.org/10.1016/j.cmi.2025.05.021) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_reference](drugs/drug_colistin/Colistin_Yu2022_reference.md) | 1-compartment (no model) | 1 (+1 cov.) | Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Xie_2022_reference](drugs/drug_colistin/Colistin_Xie2022_reference.md) | 2-compartment (no model) | 3 | Xie YL et al., Population pharmacokinetics of intraven…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.967412](https://doi.org/10.3389/fphar.2022.967412) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Ma_2026_reference](drugs/drug_colistin/Colistin_Ma2026_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ma Y et al., Optimizing Colistin Sulfate Dosing in S…, Drug design, development an… (2026) | [10.2147/DDDT.S600942](https://doi.org/10.2147/DDDT.S600942) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Boonyasiri_2025_reference](drugs/drug_colistin/Colistin_Boonyasiri2025_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Boonyasiri A et al., Disposition of colistin in critically-i…, Clinical microbiology and i… (2025) | [10.1016/j.cmi.2025.05.021](https://doi.org/10.1016/j.cmi.2025.05.021) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Yu_2022_reference](drugs/drug_colistin/Colistin_Yu2022_reference.md) | — | 1-compartment (no model) | 1 (+1 cov.) | Yu XB et al., Population Pharmacokinetics of Colistin…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.915958](https://doi.org/10.3389/fphar.2022.915958) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Xie_2022_reference](drugs/drug_colistin/Colistin_Xie2022_reference.md) | — | 2-compartment (no model) | 3 | Xie YL et al., Population pharmacokinetics of intraven…, Frontiers in pharmacology (2022) | [10.3389/fphar.2022.967412](https://doi.org/10.3389/fphar.2022.967412) |
 
 ## ADME sites
 

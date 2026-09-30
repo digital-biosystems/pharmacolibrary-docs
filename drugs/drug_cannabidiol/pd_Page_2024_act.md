@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cannabidiol (concentrations from the PK model of Eichler_2023::first_trial_0_2_mg_kg_n_3) drives Activation kinetics (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cannabidiol (in vitro, µM concentrations; 5 µM shown) speeds the activation kinetics (τact) of mHCN4 channels, decreasing τact from 1,270 ± 160 ms (vehicle) to 404 ± 59 ms at 5 µM and −120 mV, consistent with CBD binding the closed state and stabilizing the transition to the activated state; the paper does not give a quantitative PD model for τact (sigmoid Emax parameters not stated), only noting the EC50 for the τact decrease could not be calculated but is expected to be &lt;1 µM (EC50 for ΔV1/2 was 1.59 µM with Hill slope &gt;1).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Page_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

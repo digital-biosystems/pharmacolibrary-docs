@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tobramycin drives CFU/mL (in CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Tobamycin (TOB) concentrations, expressed as multiples of MIC, were related to P. aeruginosa CFU/mL measured after 40 h of exposure using an inhibitory Hill (sigmoid Emax) equation, in which CFU declines from CFU0 toward CFU∞ with EC50 defined as the TOB concentration achieving 50% of CFU0 and gamma as the Hill slope; the paper does not report numeric EC50, Emax, or gamma values in the excerpts provided.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Awad_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

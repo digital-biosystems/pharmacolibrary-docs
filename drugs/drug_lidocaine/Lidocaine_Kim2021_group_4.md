@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The lidocaine record was rejected because the paper reports only exposure statistics (t1/2z 0.94 h, Cmax 2034.27 ng/mL, tmax 0.54 h, AUC∞ 3088.04 h·ng/mL) with no distribution volume or clearance, and the metabolite GX is unreachable from the dose.**

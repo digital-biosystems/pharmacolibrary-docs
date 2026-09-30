@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PFOA (measured concentrations) drives free thyroxine (in pmol/l): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Plasma PFOA concentrations (μM) were related to free thyroxine (fT4, pmol/l) in a 2-compartment PK/PD analysis; fT4 increased with PFOA at an average rate of 2.66×10−3 pmol/l/μM (GEE: 2.8×10−3 pmol/l/μM), with no effect on TSH. The paper does not state a formal PD mechanism or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given); it proposes the increase may reflect displacement of thyroxine from binding proteins by PFOA.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Convertino_2018`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-Fluorouracil (concentrations from the PK model of Arshad_2020) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model: oral 5-fluorouracil doses (300–1,200 mg/m2) were related to percent improvement in psoriasis only by correlation, with no Emax/IC50/kin/kout/ke0 parameters reported; group-level dose–response (r = -0.07) and AUC–response (r = -0.08) correlations were absent, though dose and AUC correlated with response in 11 of 14 individual patients.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abernethy_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,24 +31,24 @@ Abernethy DR; Alper JC; Wiemann MC; McDonald CJ; Calabresi P et al. (1989). Phar
   ·  DOI: [10.1159/000138581](https://doi.org/10.1159/000138581)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 1 — Body | `Q414` · not captured | 2.27 | not captured | not captured | llm (not captured) | tab_0:row3:col3 |
-| 2 — Body | `Q414` · not captured | 2.15 | not captured | not captured | llm (not captured) | tab_0:row4:col3 |
-| 3 — Body | `Q414` · not captured | 2.47 | not captured | not captured | llm (not captured) | tab_0:row5:col3 |
-| 4 — Body | `Q414` · not captured | 2.01 | not captured | not captured | llm (not captured) | tab_0:row6:col3 |
-| 5 — Body | `Q414` · not captured | 1.77 | not captured | not captured | llm (not captured) | tab_0:row7:col3 |
-| 6 — Body | `Q414` · not captured | 2.04 | not captured | not captured | llm (not captured) | tab_0:row8:col3 |
-| 7 — Body | `Q414` · not captured | 1.71 | not captured | not captured | llm (not captured) | tab_0:row9:col3 |
-| 8 — Body | `Q414` · not captured | 2.14 | not captured | not captured | llm (not captured) | tab_0:row10:col3 |
-| 9 — Body | `Q414` · not captured | 2.33 | not captured | not captured | llm (not captured) | tab_0:row11:col3 |
-| 10 — Body | `Q414` · not captured | 2.34 | not captured | not captured | llm (not captured) | tab_0:row12:col3 |
-| 11 — Body | `Q414` · not captured | 2.18 | not captured | not captured | llm (not captured) | tab_0:row13:col3 |
-| 12 — Body | `Q414` · not captured | 2.51 | not captured | not captured | llm (not captured) | tab_0:row14:col3 |
-| 13 — Body | `Q414` · not captured | 1.53 | not captured | not captured | llm (not captured) | tab_0:row15:col3 |
-| 14 — Body | `Q414` · not captured | 1.84 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
-| 15 — Body | `Q414` · not captured | 2.72 | not captured | not captured | llm (not captured) | tab_0:row17:col3 |
-| 16 — Body | `Q414` · not captured | 1.96 | not captured | not captured | llm (not captured) | tab_0:row18:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | 1 — Body | `Q414` · not captured | 2.27 | not captured | not captured | llm (not captured) | tab_0:row3:col3 |
+| model term | 2 — Body | `Q414` · not captured | 2.15 | not captured | not captured | llm (not captured) | tab_0:row4:col3 |
+| model term | 3 — Body | `Q414` · not captured | 2.47 | not captured | not captured | llm (not captured) | tab_0:row5:col3 |
+| model term | 4 — Body | `Q414` · not captured | 2.01 | not captured | not captured | llm (not captured) | tab_0:row6:col3 |
+| model term | 5 — Body | `Q414` · not captured | 1.77 | not captured | not captured | llm (not captured) | tab_0:row7:col3 |
+| model term | 6 — Body | `Q414` · not captured | 2.04 | not captured | not captured | llm (not captured) | tab_0:row8:col3 |
+| model term | 7 — Body | `Q414` · not captured | 1.71 | not captured | not captured | llm (not captured) | tab_0:row9:col3 |
+| model term | 8 — Body | `Q414` · not captured | 2.14 | not captured | not captured | llm (not captured) | tab_0:row10:col3 |
+| model term | 9 — Body | `Q414` · not captured | 2.33 | not captured | not captured | llm (not captured) | tab_0:row11:col3 |
+| model term | 10 — Body | `Q414` · not captured | 2.34 | not captured | not captured | llm (not captured) | tab_0:row12:col3 |
+| model term | 11 — Body | `Q414` · not captured | 2.18 | not captured | not captured | llm (not captured) | tab_0:row13:col3 |
+| model term | 12 — Body | `Q414` · not captured | 2.51 | not captured | not captured | llm (not captured) | tab_0:row14:col3 |
+| model term | 13 — Body | `Q414` · not captured | 1.53 | not captured | not captured | llm (not captured) | tab_0:row15:col3 |
+| model term | 14 — Body | `Q414` · not captured | 1.84 | not captured | not captured | llm (not captured) | tab_0:row16:col3 |
+| model term | 15 — Body | `Q414` · not captured | 2.72 | not captured | not captured | llm (not captured) | tab_0:row17:col3 |
+| model term | 16 — Body | `Q414` · not captured | 1.96 | not captured | not captured | llm (not captured) | tab_0:row18:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

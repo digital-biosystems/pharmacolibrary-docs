@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-(1-(5-chlorothiophen-2-yl)ethylidene)-N-(2-morpholinoethyl)hydrazinecarbothioamide (5g) (measured concentrations) drives urease activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Morpholine-thiophene thiosemicarbazone derivatives (5a–i) inhibit urease activity in vitro (indophenol method), with the lead compound 5g inhibiting urease uncompetitively with an IC50 of 3.80 ± 1.9 µM; other derivatives showed IC50 values of 3.90–5.77 µM versus 22.3 µM for thiourea. No PD model beyond the IC50 (e.g., Emax, kin/kout) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Munir_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,18 +30,18 @@ Munir R; Zaib S; Zia-Ur-Rehman M; Javed H; Roohi A; Zaheer M; et al. et al. (202
   ·  DOI: [10.3389/fchem.2024.1403127](https://doi.org/10.3389/fchem.2024.1403127)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 5a — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.94 | µM | not captured | llm (not captured) | T1:row1:col2 |
-| 5b — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.96 | µM | not captured | llm (not captured) | T1:row2:col2 |
-| 5c — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.00 | µM | not captured | llm (not captured) | T1:row3:col2 |
-| 5d — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.60 | µM | not captured | llm (not captured) | T1:row4:col2 |
-| 5e — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.81 | µM | not captured | llm (not captured) | T1:row5:col2 |
-| 5f — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 5.77 | µM | not captured | llm (not captured) | T1:row6:col2 |
-| 5g — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.80 | µM | not captured | llm (not captured) | T1:row7:col2 |
-| 5h — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.98 | µM | not captured | llm (not captured) | T1:row8:col2 |
-| 5i — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.90 | µM | not captured | llm (not captured) | T1:row9:col2 |
-| Thiourea — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 22.3 | µM | not captured | llm (not captured) | T1:row10:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 5a — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.94 | µM | not captured | llm (not captured) | T1:row1:col2 |
+| PD (effect) | 5b — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.96 | µM | not captured | llm (not captured) | T1:row2:col2 |
+| PD (effect) | 5c — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.00 | µM | not captured | llm (not captured) | T1:row3:col2 |
+| PD (effect) | 5d — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.60 | µM | not captured | llm (not captured) | T1:row4:col2 |
+| PD (effect) | 5e — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 4.81 | µM | not captured | llm (not captured) | T1:row5:col2 |
+| PD (effect) | 5f — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 5.77 | µM | not captured | llm (not captured) | T1:row6:col2 |
+| PD (effect) | 5g — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.80 | µM | not captured | llm (not captured) | T1:row7:col2 |
+| PD (effect) | 5h — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.98 | µM | not captured | llm (not captured) | T1:row8:col2 |
+| PD (effect) | 5i — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 3.90 | µM | not captured | llm (not captured) | T1:row9:col2 |
+| PD (effect) | Thiourea — Urease inhibition[a] IC50 ± SEM µM | `Q322` · not captured | 22.3 | µM | not captured | llm (not captured) | T1:row10:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

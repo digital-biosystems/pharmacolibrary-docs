@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polymyxin B (concentrations from the PK model of Chauzy_2022) drives serum creatinine (in mg/dL): indirect response — drug inhibits the production of serum creatinine.
+
+**Model:** No model was generated from this record.
+
+> Unbound plasma polymyxin B (mg/L, from the population PK model) drives structural kidney damage via nine transit compartments (transit time τ per compartment); the concentration in the final transit compartment T9 inhibits the elimination of serum creatinine (SCr, mg/dL) in an indirect response model, with SCr produced at zero-order rate kin (mg/dL/hour). The paper defines IC50 (mg/L) as the T9 signal intensity producing 50% of maximal inhibition of SCr elimination but does not report its numeric value in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanafin_2025`
 - **model family:** `indirect_response_i`
 - **driver:** `cited_pk`

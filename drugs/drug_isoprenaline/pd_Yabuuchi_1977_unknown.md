@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** OPC-2009 drives left atrial contractile force (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In guinea-pig isolated left atria, cumulative concentrations of OPC-2009 (and isoprenaline) increased contractile force, described as a direct stimulatory concentration-response (Emax-type) effect mediated via β-adrenoceptors, since responses were blocked by propranolol and unaffected by reserpine treatment; the excerpts do not report specific potency values (EC50/Emax) for the left atrial contractile force response, and no indirect PD parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yabuuchi_1977`
 - **model family:** `emax`
 - **driver:** `not_resolved`

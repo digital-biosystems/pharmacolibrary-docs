@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naproxen-sulfa drug conjugates (measured concentrations) drives urease inhibition (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The naproxen-sulfaguanidine conjugate (compound 10) inhibits jack bean urease in vitro (concentration range 250–0.49 µM), acting as a competitive inhibitor of the enzyme (Lineweaver-Burk kinetics), with IC50 = 5.06 ± 0.29 µM and Ki = 3.56 µM (Vmax(app) 1.96, Km(app) 4.32); the reference thiourea had IC50 22.61 µM and Ki 18.18 µM. No pharmacodynamic turnover or effect-compartment model is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmad_2023_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -19,29 +29,29 @@
 not matched (stem Ahmad_2023_2)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| a Vmax (app) — 3 | `Q66` · not captured | 2.57 | app | not captured | llm_confirmed (not captured) | T1:row1:col3 |
-| a Vmax (app) — 5 | `Q66` · not captured | 0.714 | app | not captured | llm_confirmed (not captured) | T1:row1:col5 |
-| a Vmax (app) — 6 | `Q66` · not captured | 0.363 | app | not captured | llm_confirmed (not captured) | T1:row1:col6 |
-| a Vmax (app) — 7 | `Q66` · not captured | 0.602 | app | not captured | llm_confirmed (not captured) | T1:row1:col7 |
-| a Vmax (app) — 9 | `Q66` · not captured | 0.66 | app | not captured | llm_confirmed (not captured) | T1:row1:col9 |
-| a Vmax (app) — 10 | `Q66` · not captured | 1.96 | app | not captured | llm_confirmed (not captured) | T1:row1:col10 |
-| a Vmax (app) — d Thiourea | `Q66` · not captured | 18.61 | app | not captured | llm_confirmed (not captured) | T1:row1:col11 |
-| b Km (app) — 3 | `Q1` · not captured | 8.33 | app | not captured | llm_confirmed (not captured) | T1:row2:col3 |
-| b Km (app) — 5 | `Q1` · not captured | 3.03 | app | not captured | llm_confirmed (not captured) | T1:row2:col5 |
-| b Km (app) — 6 | `Q1` · not captured | 1.58 | app | not captured | llm_confirmed (not captured) | T1:row2:col6 |
-| b Km (app) — 7 | `Q1` · not captured | 2.96 | app | not captured | llm_confirmed (not captured) | T1:row2:col7 |
-| b Km (app) — 9 | `Q1` · not captured | 1.14 | app | not captured | llm_confirmed (not captured) | T1:row2:col9 |
-| b Km (app) — 10 | `Q1` · not captured | 4.32 | app | not captured | llm_confirmed (not captured) | T1:row2:col10 |
-| b Km (app) — d Thiourea | `Q1` · not captured | 2.18 | app | not captured | llm_confirmed (not captured) | T1:row2:col11 |
-| c Ki (µM) — 3 | `Q321` · not captured | 2.40 | µM | not captured | llm (not captured) | T1:row3:col3 |
-| c Ki (µM) — 5 | `Q321` · not captured | 5.05 | µM | not captured | llm (not captured) | T1:row3:col5 |
-| c Ki (µM) — 6 | `Q321` · not captured | 5.58 | µM | not captured | llm (not captured) | T1:row3:col6 |
-| c Ki (µM) — 7 | `Q321` · not captured | 9.98 | µM | not captured | llm (not captured) | T1:row3:col7 |
-| c Ki (µM) — 9 | `Q321` · not captured | 2.61 | µM | not captured | llm (not captured) | T1:row3:col9 |
-| c Ki (µM) — 10 | `Q321` · not captured | 3.56 | µM | not captured | llm (not captured) | T1:row3:col10 |
-| c Ki (µM) — d Thiourea | `Q322` · not captured | 18.18 | µM | not captured | llm (not captured) | T1:row3:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | a Vmax (app) — 3 | `Q66` · not captured | 2.57 | app | not captured | llm_confirmed (not captured) | T1:row1:col3 |
+| PK (driver) | a Vmax (app) — 5 | `Q66` · not captured | 0.714 | app | not captured | llm_confirmed (not captured) | T1:row1:col5 |
+| PK (driver) | a Vmax (app) — 6 | `Q66` · not captured | 0.363 | app | not captured | llm_confirmed (not captured) | T1:row1:col6 |
+| PK (driver) | a Vmax (app) — 7 | `Q66` · not captured | 0.602 | app | not captured | llm_confirmed (not captured) | T1:row1:col7 |
+| PK (driver) | a Vmax (app) — 9 | `Q66` · not captured | 0.66 | app | not captured | llm_confirmed (not captured) | T1:row1:col9 |
+| PK (driver) | a Vmax (app) — 10 | `Q66` · not captured | 1.96 | app | not captured | llm_confirmed (not captured) | T1:row1:col10 |
+| PK (driver) | a Vmax (app) — d Thiourea | `Q66` · not captured | 18.61 | app | not captured | llm_confirmed (not captured) | T1:row1:col11 |
+| PK (driver) | b Km (app) — 3 | `Q1` · not captured | 8.33 | app | not captured | llm_confirmed (not captured) | T1:row2:col3 |
+| PK (driver) | b Km (app) — 5 | `Q1` · not captured | 3.03 | app | not captured | llm_confirmed (not captured) | T1:row2:col5 |
+| PK (driver) | b Km (app) — 6 | `Q1` · not captured | 1.58 | app | not captured | llm_confirmed (not captured) | T1:row2:col6 |
+| PK (driver) | b Km (app) — 7 | `Q1` · not captured | 2.96 | app | not captured | llm_confirmed (not captured) | T1:row2:col7 |
+| PK (driver) | b Km (app) — 9 | `Q1` · not captured | 1.14 | app | not captured | llm_confirmed (not captured) | T1:row2:col9 |
+| PK (driver) | b Km (app) — 10 | `Q1` · not captured | 4.32 | app | not captured | llm_confirmed (not captured) | T1:row2:col10 |
+| PK (driver) | b Km (app) — d Thiourea | `Q1` · not captured | 2.18 | app | not captured | llm_confirmed (not captured) | T1:row2:col11 |
+| PD (effect) | c Ki (µM) — 3 | `Q321` · not captured | 2.40 | µM | not captured | llm (not captured) | T1:row3:col3 |
+| PD (effect) | c Ki (µM) — 5 | `Q321` · not captured | 5.05 | µM | not captured | llm (not captured) | T1:row3:col5 |
+| PD (effect) | c Ki (µM) — 6 | `Q321` · not captured | 5.58 | µM | not captured | llm (not captured) | T1:row3:col6 |
+| PD (effect) | c Ki (µM) — 7 | `Q321` · not captured | 9.98 | µM | not captured | llm (not captured) | T1:row3:col7 |
+| PD (effect) | c Ki (µM) — 9 | `Q321` · not captured | 2.61 | µM | not captured | llm (not captured) | T1:row3:col9 |
+| PD (effect) | c Ki (µM) — 10 | `Q321` · not captured | 3.56 | µM | not captured | llm (not captured) | T1:row3:col10 |
+| PD (effect) | c Ki (µM) — d Thiourea | `Q322` · not captured | 18.18 | µM | not captured | llm (not captured) | T1:row3:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

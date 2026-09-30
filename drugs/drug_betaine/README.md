@@ -26,12 +26,12 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022](drugs/drug_betaine/pd_Rehman_2022_AChE_inhibition.md) | Rehman S et al., The Insight of In Silico and In Vitro e…, PloS one (2022) | [10.1371/journal.pone.0264074](https://doi.org/10.1371/journal.pone.0264074) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Badal_2025](drugs/drug_betaine/pd_Badal_2025_unknown.md) | Badal S et al., Novel Afro-Caribbean Prostate Cancer Mo…, Cancer research communicati… (2025) | [10.1158/2767-9764.CRC-25-0254](https://doi.org/10.1158/2767-9764.CRC-25-0254) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Matthews_2002](drugs/drug_betaine/pd_Matthews_2002_HCY.md) | Matthews A et al., An indirect response model of homocyste…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01620.x](https://doi.org/10.1046/j.1365-2125.2002.01620.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Rankovic_2023](drugs/drug_betaine/pd_Rankovic_2023_unknown.md) | Rankovic A et al., Serum metabolomic analysis of the dose-…, PloS one (2023) | [10.1371/journal.pone.0280734](https://doi.org/10.1371/journal.pone.0280734) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Rehman_2022_AChE_inhibition](drugs/drug_betaine/pd_Rehman_2022_AChE_inhibition.md) | acetylcholinesterase inhibition ← betanin · inhibition effect | — | Rehman S et al., The Insight of In Silico and In Vitro e…, PloS one (2022) | [10.1371/journal.pone.0264074](https://doi.org/10.1371/journal.pone.0264074) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Badal_2025_unknown](drugs/drug_betaine/pd_Badal_2025_unknown.md) | cell viability ← unknown · inhibition effect | — | Badal S et al., Novel Afro-Caribbean Prostate Cancer Mo…, Cancer research communicati… (2025) | [10.1158/2767-9764.CRC-25-0254](https://doi.org/10.1158/2767-9764.CRC-25-0254) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Matthews_2002_HCY](drugs/drug_betaine/pd_Matthews_2002_HCY.md) | total homocysteine ← betaine · indirect response — drug inhibits the production of total homocysteine | — | Matthews A et al., An indirect response model of homocyste…, British journal of clinical… (2002) | [10.1046/j.1365-2125.2002.01620.x](https://doi.org/10.1046/j.1365-2125.2002.01620.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Rankovic_2023_unknown](drugs/drug_betaine/pd_Rankovic_2023_unknown.md) | sphingomyelin ← choline · stimulation effect | — | Rankovic A et al., Serum metabolomic analysis of the dose-…, PloS one (2023) | [10.1371/journal.pone.0280734](https://doi.org/10.1371/journal.pone.0280734) |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin (concentrations from the PK model of Giri_1986) drives cell survival (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (external concentration, µM–nM) reduces clonogenic cell survival (%) of DC-3F cells and bleomycin-resistant sublines after 3 hr exposure, with biphasic survival response curves; the paper gives EC50 values (e.g. 2 µM parental, 100 µM D/BlmII, 45 µM D/Blm40, 3.5 µM D/BlmI intact cells; 1.6 nM parental, 47 nM D/BlmII, 4.5 nM D/BlmI, 6.3 µM D/BlmIR electropermeabilized cells) but does not state a pharmacodynamic mechanism or model (no Imax, kin, kout, ke0, or gamma reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pron_1994`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

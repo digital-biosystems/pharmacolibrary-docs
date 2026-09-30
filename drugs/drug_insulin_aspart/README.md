@@ -26,17 +26,17 @@ M
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006_reference](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | 1-compartment, IV | 5 | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: model_quarantined: Cl left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Clausen_2006_reference](drugs/drug_insulin_aspart/InsulinAspart_Clausen2006_reference.md) | held back | 1-compartment, IV | 5 | Clausen WH et al., Within-patient variation of the pharmac…, Diabetologia (2006) | [10.1007/s00125-006-0327-z](https://doi.org/10.1007/s00125-006-0327-z) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haahr_2016](drugs/drug_insulin_aspart/pd_Haahr_2016_GIR.md) | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Heise_2014](drugs/drug_insulin_aspart/pd_Heise_2014_glucose_infusion_rate.md) | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Rüppel_2017](drugs/drug_insulin_aspart/pd_R_ppel_2017_glucose_infusion_rate.md) | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Haahr_2016_GIR](drugs/drug_insulin_aspart/pd_Haahr_2016_GIR.md) | glucose infusion rate ← insulin degludec and insulin aspart · delayed effect through an effect compartment | — | Haahr H et al., Insulin degludec/insulin aspart in Japa…, Journal of diabetes investi… (2016) | [10.1111/jdi.12461](https://doi.org/10.1111/jdi.12461) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Heise_2014_glucose_infusion_rate](drugs/drug_insulin_aspart/pd_Heise_2014_glucose_infusion_rate.md) | name ← insulin degludec and insulin aspart · delayed effect through an effect compartment | — | Heise T et al., Distinct Prandial and Basal Glucose-Low…, Diabetes therapy : research… (2014) | [10.1007/s13300-014-0070-2](https://doi.org/10.1007/s13300-014-0070-2) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Rüppel_2017_glucose_infusion_rate](drugs/drug_insulin_aspart/pd_R_ppel_2017_glucose_infusion_rate.md) | name ← insulin · direct Emax (saturable) effect | — | Rüppel D et al., A Population Dose-Response Model for In…, CPT: pharmacometrics & syst… (2017) | [10.1002/psp4.12189](https://doi.org/10.1002/psp4.12189) |
 
 ## ADME sites
 

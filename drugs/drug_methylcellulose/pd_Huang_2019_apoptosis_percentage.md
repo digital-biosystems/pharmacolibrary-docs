@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol (5–40 µM, 2 weeks) concentration-dependently reduced colony formation of HL-60 cells in a methylcellulose assay, an inhibitory effect; the paper reports IC50 values for cell viability of 40.32 (HL-60), 56.68 (Kasumi-1) and 50.69 µM (U937), but does not state a PD model, mechanism, or parameters (Imax/Emax, kin, kout, ke0, gamma) for the apoptosis/colony response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

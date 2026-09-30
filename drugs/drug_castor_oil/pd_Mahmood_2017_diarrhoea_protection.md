@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nepeta ruderalis crude extract (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For castor oil-induced diarrhoea in mice, Nepeta ruderalis crude extract was given orally at 300 and 500 mg; the paper reports antidiarrhoeal protection at these doses but gives no Emax/IC50/EC50 parameters or mechanism for the diarrhoea response. The proposed mechanism (calcium channel blockade) is described only for the in vitro spasmolytic effect in rabbit jejunum and trachea, where the extract (0.01–10 mg/mL) relaxed spontaneous, high K+ (80 mM)- and carbachol (1 μM)-induced contractions with EC50 values of 5.85 (5.45–6.27), 4.0 (3.80–4.23) and 2.86 (2.48–3.29) mg/mL (jejunum) and 2.37 (2.11–2.67) and 3.26 (2.9–3.67) mg/mL (trachea).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahmood_2017`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

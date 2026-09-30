@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Morphine (concentrations from this paper's PK model) drives ventilation (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Fentanyl plasma concentrations depress minute ventilation in neonatal dogs, modeled with an effect-compartment (inhibitory) PD model yielding a steady-state concentration depressing ventilation by 50% (C50) and an equilibration rate constant ke0; the paper reports only a small maturational increase in C50 and no change in ke0 for fentanyl, without stating numeric values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bragg_1995`
 - **model family:** `effect_compartment`
 - **driver:** `pk_record`

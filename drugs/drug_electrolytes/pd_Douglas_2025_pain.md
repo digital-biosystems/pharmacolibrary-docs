@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** White cell count drives pain score (in score (0-10)): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Pain score (0–10) in children with chemotherapy-induced mucositis is described by a sigmoid fractional Emax model in which rising white cell count (a surrogate for neutrophil recovery) reduces pain, with a delayed effect (equilibration half-time 0.29 days, ~1 day delay): ED50 WCC 0.25 × 10^9/L, EMAX pain 0.58–0.59, Hill exponent 1.84, baseline pain E0 6.4. Morphine and ketamine provide additional fractional pain reductions (multiplicative inhibition of pain score) with EMAX 0.38 (ED50 8.3 μg/kg/h, Hill 0.13) and 0.11 (ED50 1.5 mg/kg/h, Hill 0.26), respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Douglas_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Douglas C; Morse JD; Anderson BJ et al. (2025). Paediatric anaesthesia 35
   ·  DOI: [10.1111/pan.15063](https://doi.org/10.1111/pan.15063)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E 0 (pain units (0–10) — Estimate | `Q324` · not captured | 6.4 | pain units (0–10 | not captured | space_fold (not captured) | pan15063-tbl-0002:row1:col1 |
-| E 0 (pain units (0–10) — PPV | `Q324` · not captured | 20 | pain units (0–10 | not captured | space_fold (not captured) | pan15063-tbl-0002:row1:col2 |
-| EMAX PAIN (fractional pain units) — Estimate | `Q320` · not captured | 0.58 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row2:col1 |
-| EMAX PAIN (fractional pain units) — PPV | `Q320` · not captured | 314 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row2:col2 |
-| ED50 WCC × 109/L — Estimate | `Q321` · not captured | 0.25 | unknown | not captured | llm (not captured) | pan15063-tbl-0002:row3:col1 |
-| HILLe — Estimate | `Q325` · not captured | 1.84 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row4:col1 |
-| EMAX MORPHINE (fractional pain units) — Estimate | `Q320` · not captured | 0.38 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row6:col1 |
-| ED50 MORPHINE (μg/kg/h) — Estimate | `Q321` · not captured | 8.3 | μg/kg/h | not captured | llm (not captured) | pan15063-tbl-0002:row7:col1 |
-| HILLm — Estimate | `Q325` · not captured | 0.13 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row8:col1 |
-| EMAX KETAMINE (fractional pain units) — Estimate | `Q320` · not captured | 0.11 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row9:col1 |
-| ED50 KETAMINE (mg/kg/h) — Estimate | `Q321` · not captured | 1.5 | mg/kg/h | not captured | llm (not captured) | pan15063-tbl-0002:row10:col1 |
-| HILLk — Estimate | `Q325` · not captured | 0.26 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row11:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E 0 (pain units (0–10) — Estimate | `Q324` · not captured | 6.4 | pain units (0–10 | not captured | space_fold (not captured) | pan15063-tbl-0002:row1:col1 |
+| PD (effect) | E 0 (pain units (0–10) — PPV | `Q324` · not captured | 20 | pain units (0–10 | not captured | space_fold (not captured) | pan15063-tbl-0002:row1:col2 |
+| PD (effect) | EMAX PAIN (fractional pain units) — Estimate | `Q320` · not captured | 0.58 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row2:col1 |
+| PD (effect) | EMAX PAIN (fractional pain units) — PPV | `Q320` · not captured | 314 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row2:col2 |
+| PD (effect) | ED50 WCC × 109/L — Estimate | `Q321` · not captured | 0.25 | unknown | not captured | llm (not captured) | pan15063-tbl-0002:row3:col1 |
+| PD (effect) | HILLe — Estimate | `Q325` · not captured | 1.84 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row4:col1 |
+| PD (effect) | EMAX MORPHINE (fractional pain units) — Estimate | `Q320` · not captured | 0.38 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row6:col1 |
+| PD (effect) | ED50 MORPHINE (μg/kg/h) — Estimate | `Q321` · not captured | 8.3 | μg/kg/h | not captured | llm (not captured) | pan15063-tbl-0002:row7:col1 |
+| PD (effect) | HILLm — Estimate | `Q325` · not captured | 0.13 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row8:col1 |
+| PD (effect) | EMAX KETAMINE (fractional pain units) — Estimate | `Q320` · not captured | 0.11 | fractional pain units | not captured | llm_confirmed (not captured) | pan15063-tbl-0002:row9:col1 |
+| PD (effect) | ED50 KETAMINE (mg/kg/h) — Estimate | `Q321` · not captured | 1.5 | mg/kg/h | not captured | llm (not captured) | pan15063-tbl-0002:row10:col1 |
+| PD (effect) | HILLk — Estimate | `Q325` · not captured | 0.26 | not captured | not captured | llm (not captured) | pan15063-tbl-0002:row11:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

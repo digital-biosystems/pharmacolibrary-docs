@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cefepime (measured concentrations) drives time to seizure (in time): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> In folic acid-induced AKI rats, cefepime exposure (plasma AUC, brain Cmax/AUC) was related to seizure stage &gt;1 and time to seizure via logistic regression and Kaplan-Meier survival analysis, with 50% probability toxicity concentrations (TC50) of 30,658.6 mg·h/L (plasma AUC), 760.8 mg·h/L (cortex AUC), 838.2 mg·h/L (hippocampus AUC), and Cmax TC50 of 45.0 mg/L (cortex) and 48.2 mg/L (hippocampus); the mechanism of cefepime-induced neurotoxicity is not established by the paper, which only notes a proposed competitive binding to GABAergic receptors suppressing inhibitory neurotransmission.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pais_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`
@@ -21,12 +31,12 @@ Pais GM; Lesnicki E; Marianski S; Valdez K; Gibson Z; Christopher J; Lepard K; G
   ·  DOI: [10.1128/aac.01005-25](https://doi.org/10.1128/aac.01005-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Four-compartment with peripheral compartment (k14 and k41) — −2LL | `Q347` · not captured | 2246.7 | k14 and k41 | not captured | llm (not captured) | T1:row5:col1 |
-| Four-compartment with peripheral compartment (k14 and k41) — BIC | `Q347` · not captured | 2332.5 | k14 and k41 | not captured | llm (not captured) | T1:row5:col2 |
-| Four-compartment with lag compartment to hippocampus (k14 and k43) — −2LL | `Q347` · not captured | 2247.6 | k14 and k43 | not captured | llm (not captured) | T1:row6:col1 |
-| Four-compartment with lag compartment to hippocampus (k14 and k43) — BIC | `Q347` · not captured | 2325.3 | k14 and k43 | not captured | llm (not captured) | T1:row6:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Four-compartment with peripheral compartment (k14 and k41) — −2LL | `Q347` · not captured | 2246.7 | k14 and k41 | not captured | llm (not captured) | T1:row5:col1 |
+| PK (driver) | Four-compartment with peripheral compartment (k14 and k41) — BIC | `Q347` · not captured | 2332.5 | k14 and k41 | not captured | llm (not captured) | T1:row5:col2 |
+| PK (driver) | Four-compartment with lag compartment to hippocampus (k14 and k43) — −2LL | `Q347` · not captured | 2247.6 | k14 and k43 | not captured | llm (not captured) | T1:row6:col1 |
+| PK (driver) | Four-compartment with lag compartment to hippocampus (k14 and k43) — BIC | `Q347` · not captured | 2325.3 | k14 and k43 | not captured | llm (not captured) | T1:row6:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

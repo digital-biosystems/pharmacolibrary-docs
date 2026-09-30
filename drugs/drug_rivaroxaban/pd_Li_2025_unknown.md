@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rivaroxaban (concentrations from this paper's PK model) drives bleeding risk (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Rivaroxaban AUC24,ss (ng•h/mL, from the popPK model) was related to binary bleeding risk (all clinically relevant non-major bleeding, no major bleeding) using a categorical/ROC-based exposure-response model; the excerpts do not state a mechanistic PD model or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2025`
 - **model family:** `categorical`
 - **driver:** `pk_record`

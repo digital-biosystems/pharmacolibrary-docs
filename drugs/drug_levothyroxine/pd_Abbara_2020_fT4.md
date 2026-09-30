@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbimazole (the dose) drives free thyroxine (in pmol/l): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Carbimazole (daily dose in mg) inhibits free thyroxine (fT4) levels via a linear dose-response model: fT4(n+1) = fT4(n) − (m·Dose^p·fT4(n) + c), i.e. the daily percentage fall in fT4 is proportional to the current fT4 level and to dose raised to an exponent p, with slope and intercept adjusted for body weight; no Imax/IC50/EC50/kin/kout values are given, and the paper does not state a mechanistic effect-compartment or Emax form.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abbara_2020`
 - **model family:** `linear`
 - **driver:** `dose_only`
@@ -21,9 +31,9 @@ Abbara A; Clarke SA; Brewster R; Simonnard A; Eng PC; Phylactou M; et al. et al.
   ·  DOI: [10.3389/fendo.2020.00286](https://doi.org/10.3389/fendo.2020.00286)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Smoking status — P-value | `Q100` · not captured | 0.41 | not captured | not captured | llm (not captured) | T2:row9:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Smoking status — P-value | `Q100` · not captured | 0.41 | not captured | not captured | llm (not captured) | T2:row9:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

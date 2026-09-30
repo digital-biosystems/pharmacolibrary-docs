@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Puberulic acid (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Puberulic acid (0–1000 µM) concentration-dependently decreased intracellular ATP levels in 3D-RPTECs over 1, 3, and 7 d of exposure, with an EC50 of 24.7 µM (95% CI: 20.4–30.0 µM) at 7 d; the paper does not state a mechanistic PD model (no Imax, kin, kout, or ke0), though the ATP-decreasing effect was partially alleviated by the OAT inhibitor probenecid (1 mM), and puberulic acid inhibited OAT1-mediated furosemide uptake with an IC50 of 5.4 µM (95% CI: 3.26–8.71 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Peng_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

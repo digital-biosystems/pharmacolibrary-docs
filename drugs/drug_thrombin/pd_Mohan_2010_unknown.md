@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PD3, PD4, RW3 drive viral titer (in pfu/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptides PD3, PD4 (μg/ml) and RW3 (μM) were incubated directly with vaccinia virus (WR) before infection of B-SC-1 cells, and viral titer (pfu/ml) was measured by plaque assay; the paper does not state a pharmacodynamic mechanism beyond direct virucidal/inhibitory action on the virus (no effect when peptides were added after virus binding or post-infection). Dose–response analysis gave EC50 values of 40 μg/ml for PD3 and PD4 and 6.5 μM for RW3; in spiked plasma PD3 achieved 100% inhibition at 100 μg/ml, PD4 a 90-fold titer reduction at 100 μg/ml, and RW3 ~90% inhibition at 10 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mohan_2010`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

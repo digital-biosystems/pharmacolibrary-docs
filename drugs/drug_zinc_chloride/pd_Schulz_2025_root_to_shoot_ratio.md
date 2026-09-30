@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Heavy metal compounds (cadmium nitrate, copper sulphate, iron sulphate, lead nitrate, manganese chloride, zinc chloride) (measured concentrations) drive name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Zinc chloride (tested among heavy metal compounds) reduced the root-to-shoot ratio of cress seedlings, with effects starting at 1 mM; the paper fits a Hill (Emax-type) concentration–response equation but does not state a specific EC50 value for zinc chloride on root-to-shoot ratio, only ranking zinc as less toxic than copper, cadmium, iron and lead but more toxic than manganese. No mechanism (e.g. production/elimination inhibition) is given beyond direct concentration-dependent inhibition of growth.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schulz_2025`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

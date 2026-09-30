@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives Ramsay sedation score (in score): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Midazolam plasma concentrations (μg l-1) act directly (Emax model, no effect compartment; ke0 could not be estimated) on the probability of each Ramsay sedation score in a differential odds (categorical) model, with a shared Emax of 4.08 and score-specific EC50 values of 30.1, 62.8 and 111.6 μg l-1 for Ramsay scores 2, 3-5 and 6 (structural model). Concomitant haloperidol was associated with a lower midazolam response (shrinkage parameter 1.74).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Franken_2018`
 - **model family:** `categorical`
 - **driver:** `cited_pk`
@@ -21,33 +31,33 @@ Franken LG; de Winter BCM; Masman AD; van Dijk M; Baar FPM; Tibboel D; et al. et
   ·  DOI: [10.1111/bcp.13442](https://doi.org/10.1111/bcp.13442)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Structural | `Q320` · not captured | 4.08 | not captured | not captured | exact (not captured) | tab_2:row7:col3 |
-| Emax — Final | `Q320` · not captured | 4.62 | not captured | not captured | exact (not captured) | tab_2:row7:col4 |
-| Emax — RSE | `Q320` · not captured | 24 | not captured | not captured | exact (not captured) | tab_2:row7:col5 |
-| Emax — Bootstrap of the final model | `Q320` · not captured | 4.54 | not captured | not captured | exact (not captured) | tab_2:row7:col7 |
-| Emax | `Q320` · not captured | 3.57 | not captured | not captured | exact (not captured) | tab_2:row7:col8 |
-| Emax | `Q320` · not captured | 6.30 | not captured | not captured | exact (not captured) | tab_2:row7:col9 |
-| EC50 2 (μg l | `Q321` · not captured | 30.1 | μg l | not captured | boundary (not captured) | tab_2:row8:col2 |
-| EC50 2 (μg l — Structural | `Q321` · not captured | 39.5 | μg l | not captured | boundary (not captured) | tab_2:row8:col3 |
-| EC50 2 (μg l — Final | `Q321` · not captured | 69 | μg l | not captured | boundary (not captured) | tab_2:row8:col4 |
-| EC50 2 (μg l — Shrinkage | `Q321` · not captured | 33.4 | μg l | not captured | boundary (not captured) | tab_2:row8:col6 |
-| EC50 2 (μg l — Bootstrap of the final model | `Q321` · not captured | 7.1 | μg l | not captured | boundary (not captured) | tab_2:row8:col7 |
-| EC50 2 (μg l | `Q321` · not captured | 109.3 | μg l | not captured | boundary (not captured) | tab_2:row8:col8 |
-| EC50 3-5 (μg l | `Q321` · not captured | 62.8 | μg l | not captured | boundary (not captured) | tab_2:row9:col2 |
-| EC50 3-5 (μg l — Structural | `Q321` · not captured | 68.7 | μg l | not captured | boundary (not captured) | tab_2:row9:col3 |
-| EC50 3-5 (μg l — Final | `Q321` · not captured | 51 | μg l | not captured | boundary (not captured) | tab_2:row9:col4 |
-| EC50 3-5 (μg l — Shrinkage | `Q321` · not captured | 62.8 | μg l | not captured | boundary (not captured) | tab_2:row9:col6 |
-| EC50 3-5 (μg l — Bootstrap of the final model | `Q321` · not captured | 10.9 | μg l | not captured | boundary (not captured) | tab_2:row9:col7 |
-| EC50 3-5 (μg l | `Q321` · not captured | 165.0 | μg l | not captured | boundary (not captured) | tab_2:row9:col8 |
-| EC50 6 (μg l | `Q321` · not captured | 111.6 | μg l | not captured | boundary (not captured) | tab_2:row10:col2 |
-| EC50 6 (μg l — Structural | `Q321` · not captured | 117.1 | μg l | not captured | boundary (not captured) | tab_2:row10:col3 |
-| EC50 6 (μg l — Final | `Q321` · not captured | 50 | μg l | not captured | boundary (not captured) | tab_2:row10:col4 |
-| EC50 6 (μg l — Shrinkage | `Q321` · not captured | 109.4 | μg l | not captured | boundary (not captured) | tab_2:row10:col6 |
-| EC50 6 (μg l — Bootstrap of the final model | `Q321` · not captured | 23.6 | μg l | not captured | boundary (not captured) | tab_2:row10:col7 |
-| EC50 6 (μg l | `Q321` · not captured | 280.0 | μg l | not captured | boundary (not captured) | tab_2:row10:col8 |
-| haloperidol — Shrinkage | `Q318` · not captured | 1.74 | not captured | not captured | llm (not captured) | tab_2:row12:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Structural | `Q320` · not captured | 4.08 | not captured | not captured | exact (not captured) | tab_2:row7:col3 |
+| PD (effect) | Emax — Final | `Q320` · not captured | 4.62 | not captured | not captured | exact (not captured) | tab_2:row7:col4 |
+| PD (effect) | Emax — RSE | `Q320` · not captured | 24 | not captured | not captured | exact (not captured) | tab_2:row7:col5 |
+| PD (effect) | Emax — Bootstrap of the final model | `Q320` · not captured | 4.54 | not captured | not captured | exact (not captured) | tab_2:row7:col7 |
+| PD (effect) | Emax | `Q320` · not captured | 3.57 | not captured | not captured | exact (not captured) | tab_2:row7:col8 |
+| PD (effect) | Emax | `Q320` · not captured | 6.30 | not captured | not captured | exact (not captured) | tab_2:row7:col9 |
+| PD (effect) | EC50 2 (μg l | `Q321` · not captured | 30.1 | μg l | not captured | boundary (not captured) | tab_2:row8:col2 |
+| PD (effect) | EC50 2 (μg l — Structural | `Q321` · not captured | 39.5 | μg l | not captured | boundary (not captured) | tab_2:row8:col3 |
+| PD (effect) | EC50 2 (μg l — Final | `Q321` · not captured | 69 | μg l | not captured | boundary (not captured) | tab_2:row8:col4 |
+| PD (effect) | EC50 2 (μg l — Shrinkage | `Q321` · not captured | 33.4 | μg l | not captured | boundary (not captured) | tab_2:row8:col6 |
+| PD (effect) | EC50 2 (μg l — Bootstrap of the final model | `Q321` · not captured | 7.1 | μg l | not captured | boundary (not captured) | tab_2:row8:col7 |
+| PD (effect) | EC50 2 (μg l | `Q321` · not captured | 109.3 | μg l | not captured | boundary (not captured) | tab_2:row8:col8 |
+| PD (effect) | EC50 3-5 (μg l | `Q321` · not captured | 62.8 | μg l | not captured | boundary (not captured) | tab_2:row9:col2 |
+| PD (effect) | EC50 3-5 (μg l — Structural | `Q321` · not captured | 68.7 | μg l | not captured | boundary (not captured) | tab_2:row9:col3 |
+| PD (effect) | EC50 3-5 (μg l — Final | `Q321` · not captured | 51 | μg l | not captured | boundary (not captured) | tab_2:row9:col4 |
+| PD (effect) | EC50 3-5 (μg l — Shrinkage | `Q321` · not captured | 62.8 | μg l | not captured | boundary (not captured) | tab_2:row9:col6 |
+| PD (effect) | EC50 3-5 (μg l — Bootstrap of the final model | `Q321` · not captured | 10.9 | μg l | not captured | boundary (not captured) | tab_2:row9:col7 |
+| PD (effect) | EC50 3-5 (μg l | `Q321` · not captured | 165.0 | μg l | not captured | boundary (not captured) | tab_2:row9:col8 |
+| PD (effect) | EC50 6 (μg l | `Q321` · not captured | 111.6 | μg l | not captured | boundary (not captured) | tab_2:row10:col2 |
+| PD (effect) | EC50 6 (μg l — Structural | `Q321` · not captured | 117.1 | μg l | not captured | boundary (not captured) | tab_2:row10:col3 |
+| PD (effect) | EC50 6 (μg l — Final | `Q321` · not captured | 50 | μg l | not captured | boundary (not captured) | tab_2:row10:col4 |
+| PD (effect) | EC50 6 (μg l — Shrinkage | `Q321` · not captured | 109.4 | μg l | not captured | boundary (not captured) | tab_2:row10:col6 |
+| PD (effect) | EC50 6 (μg l — Bootstrap of the final model | `Q321` · not captured | 23.6 | μg l | not captured | boundary (not captured) | tab_2:row10:col7 |
+| PD (effect) | EC50 6 (μg l | `Q321` · not captured | 280.0 | μg l | not captured | boundary (not captured) | tab_2:row10:col8 |
+| variability | haloperidol — Shrinkage | `Q318` · not captured | 1.74 | not captured | not captured | llm (not captured) | tab_2:row12:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

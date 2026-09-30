@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Salbutamol (100 nM) directly inhibits methacholine (10 μM)-induced contraction of airway smooth muscle, producing 44.1 ± 6.2% inhibition (n = 6); the paper does not state a formal PD model or EC50/Emax values for salbutamol itself (the tabulated EC50/Emax values concern tiotropium, atropine and glycopyrronium, e.g. tiotropium EC50 3.3 nM with Emax 100%).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kume_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,23 +31,23 @@ Kume H; Nishiyama O; Isoya T; Higashimoto Y; Tohda Y; Noda Y et al. (2018). Inte
   ·  DOI: [10.3390/ijms19071999](https://doi.org/10.3390/ijms19071999)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (nM) — Tiotropium | `Q321` · not captured | 3.3 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col5 |
-| EC50 (nM) — Atropine | `Q321` · not captured | 5.7 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col6 |
-| EC50 (nM) — Glycopyrronium | `Q321` · not captured | 8.2 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col7 |
-| EC50 (nM) — Tiotropium | `Q321` · not captured | 2.78 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col5 |
-| EC50 (nM) — Atropine | `Q321` · not captured | 4.55 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col6 |
-| EC50 (nM) — Glycopyrronium | `Q321` · not captured | 7.05 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col7 |
-| EC50 (nM) — Tiotropium | `Q321` · not captured | 9.82 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col5 |
-| EC50 (nM) — Atropine | `Q321` · not captured | 12.57 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col6 |
-| EC50 (nM) — Glycopyrronium | `Q321` · not captured | 13.26 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col7 |
-| Emax (%) — Tiotropium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col5 |
-| Emax (%) — Atropine | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col6 |
-| Emax (%) — Glycopyrronium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col7 |
-| Emax (%) — Tiotropium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col5 |
-| Emax (%) — Atropine | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col6 |
-| Emax (%) — Glycopyrronium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (nM) — Tiotropium | `Q321` · not captured | 3.3 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col5 |
+| PD (effect) | EC50 (nM) — Atropine | `Q321` · not captured | 5.7 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col6 |
+| PD (effect) | EC50 (nM) — Glycopyrronium | `Q321` · not captured | 8.2 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row0:col7 |
+| PD (effect) | EC50 (nM) — Tiotropium | `Q321` · not captured | 2.78 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col5 |
+| PD (effect) | EC50 (nM) — Atropine | `Q321` · not captured | 4.55 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col6 |
+| PD (effect) | EC50 (nM) — Glycopyrronium | `Q321` · not captured | 7.05 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row1:col7 |
+| PD (effect) | EC50 (nM) — Tiotropium | `Q321` · not captured | 9.82 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col5 |
+| PD (effect) | EC50 (nM) — Atropine | `Q321` · not captured | 12.57 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col6 |
+| PD (effect) | EC50 (nM) — Glycopyrronium | `Q321` · not captured | 13.26 | nM | not captured | exact (not captured) | ijms-19-01999-t001:row3:col7 |
+| PD (effect) | Emax (%) — Tiotropium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col5 |
+| PD (effect) | Emax (%) — Atropine | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col6 |
+| PD (effect) | Emax (%) — Glycopyrronium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row4:col7 |
+| PD (effect) | Emax (%) — Tiotropium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col5 |
+| PD (effect) | Emax (%) — Atropine | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col6 |
+| PD (effect) | Emax (%) — Glycopyrronium | `Q320` · not captured | 100 | not captured | not captured | exact (not captured) | ijms-19-01999-t001:row5:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -56,6 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` transport | paper PGx gene |
 | absorption | placenta | `ABCB1` transport | paper PGx gene |
 | absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | brain | `COMT` target, `CYP2D6` formation | paper PGx gene |
 | metabolism | kidney | `COMT` target | paper PGx gene |
 | metabolism | liver | `COMT` target, `CYP2D6` formation, `CYP3A4` metabolism | paper PGx gene |

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Von Willebrand factor (concentrations from the PK model of Bukkems_2021::base) drives name (in seconds) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper describes an assay in which von Willebrand factor (test plasma percentage) shortens the ristocetin platelet aggregation time (seconds; e.g. normal plasma shortened 33 to 20 sec, vWF inhibitor plasma prolonged it to 120 sec in a dose-dependent manner), but it does not state a pharmacodynamic model, mechanism, or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarji_1974`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

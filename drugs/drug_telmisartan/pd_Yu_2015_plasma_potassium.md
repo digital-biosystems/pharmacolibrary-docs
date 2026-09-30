@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Chae_2018) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Telmisartan plasma concentrations (ng/mL, from the cited Chae_2018 PK model) were linked to plasma potassium in spontaneously hypertensive rats via an indirect response (turnover) model, the same noncompetitive indirect framework used for blood pressure (dR/dt = Kin·(1−INH) − Kout·(1+STIM)·R, with INH = Imax·C/(IC50+C) and STIM = Smax·C/(SC50+C)). The paper states the potassium time course was successfully characterized by this indirect response model (steady-state potassium 4.64 mmol/L with hydrochlorothiazide alone, rising to 4.84 mmol/L with co-administered telmisartan), but the excerpts do not explicitly state whether telmisartan acts on Kin or Kout for potassium, and no Imax, IC50, Kin,
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2015`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

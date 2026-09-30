@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alpha-tocopherol (concentrations from the PK model of Violet_2020::iv_d6_tocopherol) drives cell viability (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Alpha-tocopherol (1, 3, 5, and 10 mM, pretreatment for 1, 4, 8, or 24 h) protected MDPC-23 dental pulp cell viability (MTT, % of negative control) against cytotoxicity from a 0.018% hydrogen peroxide exposure (30 min, an IC50-level concentration); the paper does not state a pharmacodynamic model or parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma), describing the effect only qualitatively as a protective (antioxidant) effect, with the greatest protection at 10 mM for 1 h and at 1–3 mM for 24 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vargas_2014`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -28,16 +28,16 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Choi_2026](drugs/drug_cenobamate/pd_Choi_2026_seizure_activity.md) | Choi YM et al., The Discovery of Cenobamate: A Drug wit…, CNS drugs (2026) | [10.1007/s40263-026-01290-z](https://doi.org/10.1007/s40263-026-01290-z) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_APD90.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_ICaL.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_IKr.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_IKs.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_late_INa.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024](drugs/drug_cenobamate/pd_Mateias_2024_peak_INa.md) | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Bettio_2025](drugs/drug_cenobamate/pd_Bettio_2025_unknown.md) | Bettio L et al., The Pharmacokinetic and Pharmacodynamic…, International journal of mo… (2025) | [10.3390/ijms26157029](https://doi.org/10.3390/ijms26157029) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Choi_2026_seizure_activity](drugs/drug_cenobamate/pd_Choi_2026_seizure_activity.md) | name ← cenobamate · direct Emax (saturable) effect | — | Choi YM et al., The Discovery of Cenobamate: A Drug wit…, CNS drugs (2026) | [10.1007/s40263-026-01290-z](https://doi.org/10.1007/s40263-026-01290-z) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_APD90](drugs/drug_cenobamate/pd_Mateias_2024_APD90.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_ICaL](drugs/drug_cenobamate/pd_Mateias_2024_ICaL.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_IKr](drugs/drug_cenobamate/pd_Mateias_2024_IKr.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_IKs](drugs/drug_cenobamate/pd_Mateias_2024_IKs.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_late_INa](drugs/drug_cenobamate/pd_Mateias_2024_late_INa.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mateias_2024_peak_INa](drugs/drug_cenobamate/pd_Mateias_2024_peak_INa.md) | name ← cenobamate · direct sigmoid Emax (Hill) effect | — | Mateias AL et al., Inhibitory Effects of Cenobamate on Mul…, Biomolecules (2024) | [10.3390/biom14121582](https://doi.org/10.3390/biom14121582) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Bettio_2025_unknown](drugs/drug_cenobamate/pd_Bettio_2025_unknown.md) | seizure protection ← carbamazepine, phenytoin, valproic acid, lacosamide, cenobamate, retigabine · direct Emax (saturable) effect | — | Bettio L et al., The Pharmacokinetic and Pharmacodynamic…, International journal of mo… (2025) | [10.3390/ijms26157029](https://doi.org/10.3390/ijms26157029) |
 
 ## Pharmacogenomics (PGx)
 

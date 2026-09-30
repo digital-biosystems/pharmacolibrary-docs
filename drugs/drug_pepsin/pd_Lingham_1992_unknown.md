@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-696,474 (measured concentrations) drive HIV-1 protease activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> L-696,474 concentrations (µM) inhibit HIV-1 protease activity (pepsin used as the enzyme in the assay), described by an Emax-type inhibitory model; the paper excerpts provide no mechanism detail and no potency or rate values (no IC50, Imax, Emax, or gamma are stated).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lingham_1992`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

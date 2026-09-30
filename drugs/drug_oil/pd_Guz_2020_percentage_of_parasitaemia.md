@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Essential oils (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Essential oils (tested at 0.008–80.0 μg/mL) inhibit in vitro growth of B. canis, measured as percentage of parasitaemia; the paper reports IC50 values (e.g. A. millefolium 51.0, E. caryophyllus 60.3, C. grandis 61.3, A. sibirica 134.3, R. officinalis 237.3, E. globulus 239.3 μg/mL) but does not state a PD mechanism or model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guz_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

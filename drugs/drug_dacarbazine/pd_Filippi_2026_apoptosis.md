@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for dacarbazine (DTIC); it reports IC50 values for DTIC-induced loss of viability (measured 24 h after treatment, concentrations 105–0.3 µM), which decrease upon ASO-mediated ERCC8/CSA silencing from 45.25 ± 0.5 µM to 7.95 ± 2.9 µM in WM115 and from 23.21 ± 1.83 µM to 0.58 ± 0.07 µM in WM266-4 cells, with apoptosis reaching ~70% in WM266-4 cells under ASO plus low-dose DTIC. No mechanism (e.g., Emax, IC50-based inhibition of production/elimination, or effect compartment) is stated for the apoptosis response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Filippi_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

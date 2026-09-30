@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Morphine and morphine-6-glucuronide drive analgesia (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the PBPK-PD model, analgesia is stimulated by free brain parenchyma concentrations of morphine and M6G via mu-opioid receptor activation, described by an Emax model, while naloxone acts antagonistically against this morphine-induced effect. The excerpts do not state the specific mechanism of naloxone's antagonism beyond antagonistic effects, and no numeric potency or rate parameters (Emax, EC50, IC50, ke0, kin, kout) for the analgesia model are provided; only EC66 brain concentrations for a respiratory rate of 10 breaths/min are given (morphine 4.3 ng/mL, M6G 0.11 ng/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mu_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

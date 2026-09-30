@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tramadol (concentrations from the PK model of Al-Qurain_2022::base) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Intraplantar tramadol inhibits glutamate-induced paw allodynia in mice, with an EC50 of 46 ± 13 mM (lidocaine was more potent, EC50 13 ± 5 mM); tramadol also blocks nerve conduction in the tail-flick test with EC50 84 ± 24 mM. The paper does not state an explicit PD model structure (e.g., Emax parameters, kin/kout, ke0); the EC50s were determined by a random double-staircase (up-and-down) method, and the proposed mechanism is peripheral inhibition of glutamate-mediated nociception (possibly via NMDA receptor blockade) plus local anesthetic nerve conduction block.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2010`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GCG-NH2 drives PTH1R cAMP production (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The excerpts do not describe trypsin acting on PTH1R cAMP production; instead they report direct Emax-type concentration–response stimulation of cAMP production by glucagon (GCG-NH2) and heterochiral analogues G1–G3 at the GCGR in HEK293 cells via Gs activation, with G3 having EC50 1.1 nM (~11-fold higher than glucagon) and near-glucagon maximal cAMP levels; no mechanism involving trypsin, nor Imax, kin, kout, ke0 or gamma values, are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gibadullin_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5F-MDMB-PICA drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model of rimonabant acting on hypothermia; rather, 5F-MDMB-PICA (s.c. 0.001–30 mg/kg) induces hypothermia in the mouse triad test via CB1 receptor agonism, and rimonabant (0.01–0.1 mg/kg s.c., 30 min pretreatment) was used only as a CB1 antagonist in reversal studies. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for the hypothermia response are stated in the excerpts (in vitro CB1 values for 5F-MDMB-PICA are Ki = 1.24 nM and EC50 = 1.46 nM in [35S]GTPγS assays).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Glatfelter_2022`
 - **model family:** `emax`
 - **driver:** `not_resolved`

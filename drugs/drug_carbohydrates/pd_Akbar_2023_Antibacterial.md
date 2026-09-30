@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ethanolic grape peduncles (EGP) extract (measured concentrations) drives Antibacterial activity (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not present a pharmacodynamic model or mechanism for the antibacterial response; it only reports agar well diffusion zones of inhibition (mm) for ethanolic grape peduncles (EGP) extract, with the largest zone against S. typhi (27.2 ± 1.60 mm), followed by S. aureus (25.21 ± 1.2 mm), E. coli (22.15 ± 1.6 mm) and K. pneumoniae (20.33 ± 1.51 mm). No IC50, Emax, or rate parameters are given for the antibacterial effect (the only IC50, 159.3 μg/mL, is for DPPH radical scavenging).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

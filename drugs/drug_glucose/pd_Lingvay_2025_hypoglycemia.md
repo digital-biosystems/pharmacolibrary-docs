@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin icodec drives clinically significant hypoglycemia (in events): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Clinically significant hypoglycemia events are not modeled by a direct drug–response PD model: insulin icodec acts (via an effect compartment introducing a delay between icodec PK and insulin action, linked to prebreakfast SMBG by a simple nonlinear regression) on self-measured blood glucose, and hypoglycemia events are counted as simulated daily prebreakfast SMBG levels &lt;54 mg/dL (&lt;3.0 mmol/L), adjusted by a calibration factor. The paper does not state Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values for this relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lingvay_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

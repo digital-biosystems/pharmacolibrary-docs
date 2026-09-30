@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Maprotiline concentration-dependently inhibited carbachol-induced acetylcholine receptor-operated potassium current (I K.ACh) in guinea-pig atrial myocytes with an IC50 of 1.81 µM, and inhibited GTPγS-activated I K.ACh with an IC50 of 5.93 µM (IC50 ratio 3.28), suggesting preferential action at the muscarinic M2 receptor; no Emax, kin/kout, ke0 or other rate parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Okada_2013`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ Okada M; Watanabe S; Matada T; Asao Y; Hamatani R; Yamawaki H; et al. et al. (20
   ·  DOI: [10.1292/jvms.12-0511](https://doi.org/10.1292/jvms.12-0511)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Chlorpromazine — IC 50 value (μM) | `Q322` · not captured | 0.53 | μM | not captured | llm (not captured) | tab_0:row4:col1 |
-| Clozapine — IC 50 value (μM) | `Q322` · not captured | 0.06 | μM | not captured | llm (not captured) | tab_0:row5:col1 |
-| Fluphenazine — IC 50 value (μM) | `Q322` · not captured | 2.69 | μM | not captured | llm (not captured) | tab_0:row6:col1 |
-| Haloperidol — IC 50 value (μM) | `Q322` · not captured | 2.66 | μM | not captured | llm (not captured) | tab_0:row7:col1 |
-| Sulpiride — IC 50 value (μM) | `Q322` · not captured | 42.3 | μM | not captured | llm (not captured) | tab_0:row8:col1 |
-| Thioridazine — IC 50 value (μM) | `Q322` · not captured | 0.07 | μM | not captured | llm (not captured) | tab_0:row9:col1 |
-| Amitriptyline — IC 50 value (μM) | `Q322` · not captured | 0.03 | μM | not captured | llm (not captured) | tab_0:row11:col1 |
-| Imipramine — IC 50 value (μM) | `Q322` · not captured | 0.22 | μM | not captured | llm (not captured) | tab_0:row12:col1 |
-| Maprotiline — IC 50 value (μM) | `Q322` · not captured | 1.81 | μM | not captured | llm (not captured) | tab_0:row13:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Chlorpromazine — IC 50 value (μM) | `Q322` · not captured | 0.53 | μM | not captured | llm (not captured) | tab_0:row4:col1 |
+| PD (effect) | Clozapine — IC 50 value (μM) | `Q322` · not captured | 0.06 | μM | not captured | llm (not captured) | tab_0:row5:col1 |
+| PD (effect) | Fluphenazine — IC 50 value (μM) | `Q322` · not captured | 2.69 | μM | not captured | llm (not captured) | tab_0:row6:col1 |
+| PD (effect) | Haloperidol — IC 50 value (μM) | `Q322` · not captured | 2.66 | μM | not captured | llm (not captured) | tab_0:row7:col1 |
+| PD (effect) | Sulpiride — IC 50 value (μM) | `Q322` · not captured | 42.3 | μM | not captured | llm (not captured) | tab_0:row8:col1 |
+| PD (effect) | Thioridazine — IC 50 value (μM) | `Q322` · not captured | 0.07 | μM | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | Amitriptyline — IC 50 value (μM) | `Q322` · not captured | 0.03 | μM | not captured | llm (not captured) | tab_0:row11:col1 |
+| PD (effect) | Imipramine — IC 50 value (μM) | `Q322` · not captured | 0.22 | μM | not captured | llm (not captured) | tab_0:row12:col1 |
+| PD (effect) | Maprotiline — IC 50 value (μM) | `Q322` · not captured | 1.81 | μM | not captured | llm (not captured) | tab_0:row13:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

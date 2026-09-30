@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salbutamol (concentrations from this paper's PK model) drives Paediatric Asthma Severity Score (in score): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Salbutamol plasma concentrations (ng/ml) were linked to the Paediatric Asthma Severity Score (PASS) via an Emax (stimulation) model in a sequential PKPD analysis; the EC50 and Hill slope could not be estimated from the data and were fixed to literature-based FEV1 values of 0.15 ng/ml (1.15 ng/ml in the limitations section) and 3.2, respectively, with current maintenance dosing achieving concentrations above the 90% maximal effect. The paper does not report Imax, kin, kout or ke0 values for the PASS model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2023`
 - **model family:** `emax`
 - **driver:** `pk_record`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chenodeoxycholic acid (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chenodeoxycholic acid (CDCA) concentrations (μM) reduce cell viability (%) in an MTT cytotoxicity assay after 48 h or 72 h incubation, with CC50 values reported (e.g., CDCA 372.5 μM and 121.2 μM, HDCA 485.7 and 413.5 μM, UDCA 814.7 and 596.5 μM); the paper does not state a pharmacodynamic model or mechanism for the viability effect, only that CC50 was estimated from dose–response curves.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Luo L; Han W; Du J; Yang X; Duan M; Xu C; et al. et al. (2018). Molecules (Basel
   ·  DOI: [10.3390/molecules23123315](https://doi.org/10.3390/molecules23123315)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CDCA — CC50 a (μM) | `Q322` · not captured | 372.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row3:col1 |
-| HDCA — CC50 a (μM) | `Q322` · not captured | 485.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row4:col1 |
-| UDCA — CC50 a (μM) | `Q322` · not captured | 814.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row5:col1 |
-| CDCA — CC50 a (μM) | `Q322` · not captured | 121.2 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row7:col1 |
-| HDCA — CC50 a (μM) | `Q322` · not captured | 413.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row8:col1 |
-| UDCA — CC50 a (μM) | `Q322` · not captured | 596.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row9:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CDCA — CC50 a (μM) | `Q322` · not captured | 372.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row3:col1 |
+| PD (effect) | HDCA — CC50 a (μM) | `Q322` · not captured | 485.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row4:col1 |
+| PD (effect) | UDCA — CC50 a (μM) | `Q322` · not captured | 814.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row5:col1 |
+| PD (effect) | CDCA — CC50 a (μM) | `Q322` · not captured | 121.2 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row7:col1 |
+| PD (effect) | HDCA — CC50 a (μM) | `Q322` · not captured | 413.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row8:col1 |
+| PD (effect) | UDCA — CC50 a (μM) | `Q322` · not captured | 596.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row9:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

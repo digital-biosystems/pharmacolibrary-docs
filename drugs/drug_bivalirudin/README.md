@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | 2-compartment (no model) | 4 | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Zhang_2012_reference](drugs/drug_bivalirudin/Bivalirudin_Zhang2012_reference.md) | — | 2-compartment (no model) | 4 | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2012](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Zhang_2012_ACT](drugs/drug_bivalirudin/pd_Zhang_2012_ACT.md) | activated clotting time ← bivalirudin · direct sigmoid Emax (Hill) effect | — | Zhang DM et al., Population pharmacokinetics and pharmac…, Acta pharmacologica Sinica (2012) | [10.1038/aps.2012.37](https://doi.org/10.1038/aps.2012.37) |
 
 ## ADME sites
 

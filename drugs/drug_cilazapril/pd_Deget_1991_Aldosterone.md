@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives plasma aldosterone (in concentration): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat (the active metabolite of cilazapril) inhibits ACE, reducing angiotensin II and thereby decreasing plasma aldosterone concentrations; the paper describes this mechanism qualitatively but does not report an Emax/IC50-type PD model or potency parameters (Imax, IC50, EC50, kin, kout, ke0) for aldosterone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Deget_1991`
 - **model family:** `emax`
 - **driver:** `cited_pk`

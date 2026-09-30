@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Quinoa protein hydrolysates (PEP-120) (measured concentrations) drives LPL protein expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Quinoa protein hydrolysate PEP-120 (0–1,600 μg/ml) inhibited adipogenesis in 3T3-L1 cells, downregulating LPL gene and protein expression via suppression of the PPARγ/C/EBPα pathway; the paper does not state a PD model form, and the reported IC50 of 786.58 μg/ml refers to inhibition of lipid accumulation, not LPL expression specifically.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shi_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

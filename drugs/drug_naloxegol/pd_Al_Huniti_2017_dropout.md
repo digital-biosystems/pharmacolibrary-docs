@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naloxegol (concentrations from the PK model of Al-Huniti_2016) drives time to discontinuation (in days): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Naloxegol daily dose (mg) was modeled against time to study discontinuation (days) using a Weibull distribution for dropout time, with the median time to discontinuation a linear function of dose (t~ = B + β×Dose); the paper does not describe a mechanistic PD pathway, only that the hazard of dropout increased with dose. Median time to dropout was 110 days on placebo, decreasing by 12 days per 10 mg increase in naloxegol dose (e.g. predicted dropout rates of 13.3%, 16.7%, and 23.3% for 12.5, 25, and 37.5 mg).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Huniti_2017`
 - **model family:** `linear`
 - **driver:** `cited_pk`

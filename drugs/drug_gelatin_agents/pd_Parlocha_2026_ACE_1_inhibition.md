@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Coleus scutellarioides Benth (Mayana) crude ethanolic dehydrated leaf extract (measured concentrations) drives ACE-1 inhibitory activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of crude ethanolic dehydrated leaf extract of Coleus scutellarioides Benth (Mayana) (10–1000 µg/mL) were tested in vitro against percent ACE-1 inhibition, fitted with a three-parameter logistic (Hill) model; the paper does not describe a mechanistic PD model beyond direct enzyme inhibition. Mayana had an IC50 of 55.9154 µg/mL versus 7.7232 µg/mL for captopril, with maximum observed inhibition of 40.12 ± 2.44% (Mayana) and 99.05 ± 0.4% (captopril) at 1000 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Parlocha_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Parlocha EMD; Matuco JL; Argana JS; Muaña CG; Gabucan VJMG et al. (2026). Acta 
   ·  DOI: [10.47895/amp.vi0.13351](https://doi.org/10.47895/amp.vi0.13351)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Captopril — IC50 (µg/mL) | `Q322` · not captured | 7.7232 | µg/mL | not captured | llm (not captured) | t0002:row1:col1 |
-| Mayana — IC50 (µg/mL) | `Q322` · not captured | 55.9154 | µg/mL | not captured | llm (not captured) | t0002:row3:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Captopril — IC50 (µg/mL) | `Q322` · not captured | 7.7232 | µg/mL | not captured | llm (not captured) | t0002:row1:col1 |
+| PD (effect) | Mayana — IC50 (µg/mL) | `Q322` · not captured | 55.9154 | µg/mL | not captured | llm (not captured) | t0002:row3:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

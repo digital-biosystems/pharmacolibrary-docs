@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** M6495 drives ARGS (in nM): indirect response — drug inhibits the production of ARGS.
+
+**Model:** No model was generated from this record.
+
+> M6495 plasma concentrations inhibit the synthesis of the serum biomarker ARGS (nM) in an indirect response model, where kin is the ARGS synthesis rate, kout the ARGS elimination rate constant, Imax the maximal inhibition of ARGS synthesis (0.725) and IC50 the concentration giving 50% of maximal inhibition; the record lists IC50 in mg/L and kout in /h but the excerpts give no numeric values for IC50, kin or kout.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pereira_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,15 +31,15 @@ Pereira JNS; Ottevaere I; Serruys B; Guehring H; Ladel C; Lindemann S et al. (20
   ·  DOI: [10.1007/s10928-024-09958-z](https://doi.org/10.1007/s10928-024-09958-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| V1 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q63` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row2:col2 |
-| Q (L/kg/h) — IIV (CV%) (Relative Standard Error %) | `Q30` · not captured | 0 | L/kg/h | not captured | exact (not captured) | Tab1:row3:col2 |
-| V2 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q64` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row4:col2 |
-| Km (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q1` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row6:col2 |
-| Kout (/h) — IIV (CV%) (Relative Standard Error %) | `Q328` · not captured | 0 | /h | not captured | exact (not captured) | Tab1:row9:col2 |
-| IC50 (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q322` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row11:col2 |
-| IMax | `Q323` · not captured | 0.725 | NA | not captured | review_gapfill (not captured) | Pereira_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | V1 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q63` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row2:col2 |
+| PK (driver) | Q (L/kg/h) — IIV (CV%) (Relative Standard Error %) | `Q30` · not captured | 0 | L/kg/h | not captured | exact (not captured) | Tab1:row3:col2 |
+| PK (driver) | V2 (L/kg) — IIV (CV%) (Relative Standard Error %) | `Q64` · not captured | 0 | L/kg | not captured | exact (not captured) | Tab1:row4:col2 |
+| PK (driver) | Km (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q1` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row6:col2 |
+| PD (effect) | Kout (/h) — IIV (CV%) (Relative Standard Error %) | `Q328` · not captured | 0 | /h | not captured | exact (not captured) | Tab1:row9:col2 |
+| PD (effect) | IC50 (mg/L) — IIV (CV%) (Relative Standard Error %) | `Q322` · not captured | 0 | mg/L | not captured | exact (not captured) | Tab1:row11:col2 |
+| PD (effect) | IMax | `Q323` · not captured | 0.725 | NA | not captured | review_gapfill (not captured) | Pereira_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

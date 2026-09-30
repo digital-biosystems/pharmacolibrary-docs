@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mandelic acid drives acute neuro-irritative symptoms (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper relates styrene exposure (quartiles, &lt;8.2 to &gt;19.5 ppm) to the binary presence of acute neuro-irritative symptoms, with prevalence rising from 19.0% to 71.4% across quartiles and an odds ratio of 5.60 (95% CI 2.60-12.00, p&lt;0.001) for the highest versus lowest quartile; no pharmacodynamic mechanism (e.g. Emax, inhibition of production or elimination) or potency/rate parameters are given, only a categorical/logistic-regression description (smoking status p=0.623).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kwon_2025`
 - **model family:** `categorical`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Kwon OH; Kim KY et al. (2025). PloS one 20
   ·  DOI: [10.1371/journal.pone.0334962](https://doi.org/10.1371/journal.pone.0334962)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Smoking Status — p-value | `Q100` · not captured | 0.623 | not captured | not captured | llm (not captured) | pone.0334962.t001:row7:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Smoking Status — p-value | `Q100` · not captured | 0.623 | not captured | not captured | llm (not captured) | pone.0334962.t001:row7:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

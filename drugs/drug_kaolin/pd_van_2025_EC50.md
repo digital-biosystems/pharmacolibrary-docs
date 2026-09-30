@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbendazim drives biomass (in mg kg-1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carbendazim (mg kg−1 dry soil) decreased the final individual biomass of Eisenia andrei in artificial soil containing kaolin, described by a three-parameter log-logistic dose-response model; the paper does not state a pharmacodynamic mechanism beyond this direct dose-response. The biomass EC50 in kaolin soil was significantly lower than in bentonite soil (χ2df=1 = 4.88; p = 0.03), but the numeric EC50 value for biomass in kaolin soil is not given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2025`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Brazilein (measured concentrations) drives p120 expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for p120 expression; the excerpts only report that brazilein (µM concentrations) synergistically inhibits MCF-7/HER2 cell growth with doxorubicin, with half-IC50 values of 24.8 µM for brazilein and 13.5 µM for doxorubicin, and no mechanism, Imax, IC50 for p120, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Handayani_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Handayani S; Susidarti RA; Utomo RY; Meiyanto E; Jenie RII et al. (2022). Asian 
   ·  DOI: [10.31557/APJCP.2022.23.8.2623](https://doi.org/10.31557/APJCP.2022.23.8.2623)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ½ IC50 (1.5 µM) Dox — S | `Q322` · not captured | 13.5 | µM | not captured | llm_confirmed (not captured) | T1:row1:col3 |
-| ½ IC50 (25 µM) Be — S | `Q322` · not captured | 24.8 | µM | not captured | llm_confirmed (not captured) | T1:row2:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ½ IC50 (1.5 µM) Dox — S | `Q322` · not captured | 13.5 | µM | not captured | llm_confirmed (not captured) | T1:row1:col3 |
+| PD (effect) | ½ IC50 (25 µM) Be — S | `Q322` · not captured | 24.8 | µM | not captured | llm_confirmed (not captured) | T1:row2:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

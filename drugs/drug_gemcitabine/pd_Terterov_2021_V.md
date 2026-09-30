@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives tumor volume (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine plasma concentration (from a cited one-compartment mouse PK model, kPK = 1/0.0167 day^-1, VPK = 0.115 L/kg) drives tumor volume V via an effect-compartment Minimal model: dCeff/dt = -α(Ceff - C), and dV/dt combines a proportional growth-suppression term (1 - Ceff/(Ceff + IC50)) with a linear cell-kill term (-k·Ceff·V). Fitted values include IC50 = 0.0043 µM, k = 0.24 (day·µM)^-1, and α = 0.45 day^-1 (with variant estimates such as IC50 = 67 µM for the Heaviside extension and IC50 = 0.0042 µM, k = 0.25, α = 0.46 for the Cooperative extension).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Terterov_2021`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`
@@ -21,31 +31,31 @@ Terterov IN; Chubenko VA; Knyazev NA; Klimenko VV; Bogdanov AA; Moiseyenko VM; e
   ·  DOI: [10.1007/s00280-021-04326-x](https://doi.org/10.1007/s00280-021-04326-x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.24 | not captured | not captured | llm (not captured) | tab_0:row2:col1 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] — MM Cooperative | `Q1` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col4 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 131 | not captured | not captured | llm (not captured) | tab_0:row2:col5 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col7 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 230 | not captured | not captured | llm (not captured) | tab_0:row2:col8 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.11 | not captured | not captured | llm (not captured) | tab_0:row2:col10 |
-| 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 307 | not captured | not captured | llm (not captured) | tab_0:row2:col11 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.45 | not captured | not captured | llm (not captured) | tab_0:row3:col1 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] — MM Heavisidel | `Q59` · not captured | 16 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] — MM Cooperative | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col4 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 29 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.40 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 435 | not captured | not captured | llm (not captured) | tab_0:row3:col8 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col10 |
-| 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 83 | not captured | not captured | llm (not captured) | tab_0:row3:col11 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0043 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col1 |
-| 𝐼𝐶50 [𝜇𝑀 ] — MM Heavisidel | `Q322` · not captured | 67 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col2 |
-| 𝐼𝐶50 [𝜇𝑀 ] — MM Cooperative | `Q322` · not captured | 0.0042 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 129 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0065 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col7 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 1422 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col8 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0153 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col10 |
-| 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 4656 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.24 | not captured | not captured | llm (not captured) | tab_0:row2:col1 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] — MM Cooperative | `Q1` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col4 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 131 | not captured | not captured | llm (not captured) | tab_0:row2:col5 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.25 | not captured | not captured | llm (not captured) | tab_0:row2:col7 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 230 | not captured | not captured | llm (not captured) | tab_0:row2:col8 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 0.11 | not captured | not captured | llm (not captured) | tab_0:row2:col10 |
+| PK (driver) | 𝑘 [(𝑑𝑎𝑦 • 𝜇𝑀 ) -1 ] | `Q358` · not captured | 307 | not captured | not captured | llm (not captured) | tab_0:row2:col11 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.45 | not captured | not captured | llm (not captured) | tab_0:row3:col1 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] — MM Heavisidel | `Q59` · not captured | 16 | not captured | not captured | llm (not captured) | tab_0:row3:col2 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] — MM Cooperative | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col4 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 29 | not captured | not captured | llm (not captured) | tab_0:row3:col5 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.40 | not captured | not captured | llm (not captured) | tab_0:row3:col7 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 435 | not captured | not captured | llm (not captured) | tab_0:row3:col8 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 0.46 | not captured | not captured | llm (not captured) | tab_0:row3:col10 |
+| PK (driver) | 𝛼 [𝑑𝑎𝑦 -1 ] | `Q59` · not captured | 83 | not captured | not captured | llm (not captured) | tab_0:row3:col11 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0043 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col1 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] — MM Heavisidel | `Q322` · not captured | 67 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col2 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] — MM Cooperative | `Q322` · not captured | 0.0042 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 129 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0065 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col7 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 1422 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col8 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 0.0153 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col10 |
+| PD (effect) | 𝐼𝐶50 [𝜇𝑀 ] | `Q322` · not captured | 4656 | unknown | not captured | llm_confirmed (not captured) | tab_0:row4:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

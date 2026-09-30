@@ -35,6 +35,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` unknown | DrugBank actor |
 | absorption | placenta | `ABCB1` unknown | DrugBank actor |
 | absorption | small intestine | `ABCB1` unknown | DrugBank actor |
+| absorption | testis | `ABCB1` unknown | DrugBank actor |
 | metabolism | bile duct | <sub>“…tabolite, M20, and its predominant metabolite excreted into feces, M19, by CYP3A4 and CYP…”</sub> | prose |
 | metabolism | heart | `CYP2J2` substrate | DrugBank actor |
 | metabolism | liver | `CYP3A4` substrate | DrugBank actor |

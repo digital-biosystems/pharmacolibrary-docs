@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adrenaline drives amylase secretion (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, prenalterol (H 133/22) concentration directly stimulates amylase secretion from incubated rat parotid gland pieces, acting directly on acinar cells via β1-adrenoceptors (effect persisted after reserpine treatment); the paper reports dose-response curves and ED50 values (Table 1) but the listed ED50 numbers are garbled in the excerpt, and no mechanistic PD model (e.g. Imax/IC50, kin/kout, ke0) is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carlsöö_1981`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

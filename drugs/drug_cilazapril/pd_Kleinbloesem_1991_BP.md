@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives Blood pressure (in mmHg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazapril, after bioactivation to cilazaprilat, acts as a reversible, competitive ACE inhibitor; cilazaprilat plasma concentration correlates closely with ACE inhibition (IC50 approximately 1 µg/L plasma), but the blood pressure-lowering effect is indirectly related to concentration via ACE inhibition, requiring more than 90% ACE inhibition for BP reduction, with 5 mg identified as the dose producing maximal effect. The paper does not state an explicit Emax/IC50 model for blood pressure itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kleinbloesem_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

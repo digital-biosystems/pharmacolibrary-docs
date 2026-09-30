@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amycretin drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a concentration-driven PD mechanism; it models amycretin subcutaneous dose versus weight loss with a direct Emax dose-response (Hill coefficient fixed at 1.0), giving Emax 24.66 % weight loss (95 % CI 23.03–26.30), ED50 2.22 mg (1.53–3.22), ED80 8.88 mg (7.12–11.08) and ED90 19.98 mg (16.34–24.42); a transportability-weighted fit gave Emax ≈ 23 % and ED50 ≈ 3.6 mg. For oral amycretin, exposure (AUC, h·nmol/L) related linearly to weight loss with slope −1.17 % per 100 h·nmol/L (95 % CI −1.8 to −0.5, R² = 0.89).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Al-Harbi_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

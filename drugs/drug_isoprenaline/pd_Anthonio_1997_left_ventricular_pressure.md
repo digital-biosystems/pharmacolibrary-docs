@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Isoprenaline drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In isolated perfused rat hearts, isoprenaline was used to maximally stimulate left ventricular contractile pressure (mmHg), analyzed with an Emax-type stimulation model; the excerpts do not state the mechanism beyond direct inotropic stimulation and provide no numeric potency or rate values (no IC50, EC50, Emax, kin, kout, ke0, or gamma), only noting that Emax was significantly decreased in myocardial infarction rats.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anthonio_1997`
 - **model family:** `emax`
 - **driver:** `not_resolved`

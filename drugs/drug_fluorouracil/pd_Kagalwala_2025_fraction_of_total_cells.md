@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine, 5-fluorouracil, cytarabine, bromodeoxyuridine, zidovudine, lamivudine (measured concentrations) drive DNA mis-segregation (in proportion): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In rad3∆ (ATR-deficient) S. pombe cells, nucleoside analogues such as gemcitabine (with 5-fluorouracil among the tested analogues) were applied at concentrations in µM and the measured response was the proportion of cells showing DNA mis-segregation, analysed with a sigmoid Emax-type (IC50) relationship. The paper does not state a mechanistic PD model (e.g. kin/kout or effect compartment); it reports that the IC50 dose — approximately 1 µM for gemcitabine in rad3∆ cells (record value 10.7 µM) — produced the maximal DNA mis-segregation, while higher doses (500 µM) showed less mis-segregation, and no Imax, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kagalwala_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,11 +31,11 @@ Kagalwala ZB; Chhipa MA; Kianfard Z; Karam E; Magalage SP; Sabatinos SA et al. (
   ·  DOI: [10.3390/cimb47090756](https://doi.org/10.3390/cimb47090756)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 — Gem Dose (µM) | `Q322` · not captured | 10.7 | µM | not captured | exact (not captured) | cimb-47-00756-t003:row4:col1 |
-| IC50 — Mean Length ± SD (µm) | `Q322` · not captured | 312 | µm | not captured | exact (not captured) | cimb-47-00756-t003:row4:col2 |
-| IC50 — Number of Cells (n) | `Q322` · not captured | 0.01 | n | not captured | exact (not captured) | cimb-47-00756-t003:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 — Gem Dose (µM) | `Q322` · not captured | 10.7 | µM | not captured | exact (not captured) | cimb-47-00756-t003:row4:col1 |
+| PD (effect) | IC50 — Mean Length ± SD (µm) | `Q322` · not captured | 312 | µm | not captured | exact (not captured) | cimb-47-00756-t003:row4:col2 |
+| PD (effect) | IC50 — Number of Cells (n) | `Q322` · not captured | 0.01 | n | not captured | exact (not captured) | cimb-47-00756-t003:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

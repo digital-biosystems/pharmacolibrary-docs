@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Proscillaridin A (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Proscillaridin A concentrations (nM) inhibit HBV infection of HepG2/NTCPA3 cells, measured as intracellular HBV RNA, in a dose-dependent manner when the compound is present from 1 h pre-infection to 1 dpi; the paper reports an IC50 of 7.2 ± 2.5 nM (SI = 75.5 ± 26.7) but does not state a specific PD model or mechanism beyond interaction with NTCP at the bile acid binding pocket.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Okuyama-Dobashi_2015`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

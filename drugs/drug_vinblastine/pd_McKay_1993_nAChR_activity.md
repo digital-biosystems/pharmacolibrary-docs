@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vinblastine (concentrations from the PK model of Levêque_1996) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine inhibits acetylcholine-stimulated catecholamine release from cultured bovine adrenal chromaffin cells via noncompetitive antagonism of neuronal-type nAChR, with inhibition fitted by a sigmoid Emax model (IC50 values interpolated from log concentration-response curves but not stated numerically in the excerpts). Vinblastine did not inhibit rat diaphragm response to phrenic nerve stimulation up to 200 pM, though 10–200 pM produced a concentration-related, calcium-dependent, nAChR-independent increase in baseline muscle tension (ECW −88 plbf).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McKay_1993`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

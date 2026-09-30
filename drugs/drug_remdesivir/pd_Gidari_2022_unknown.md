@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nelfinavir drives viral replication (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nelfinavir concentrations inhibit SARS-CoV-2 viral replication in vitro (plaque-reduction assay), with an EC50 of 4.99 μM, EC90 of 5.43 μM, and EC99 of 5.92 μM (slope 26.2); complete inhibition of all VOCs was achieved at 50 μM. The paper reports only concentration-response (EC50/EC90/EC99) values and does not describe a dynamic mechanism (e.g., kin/kout or effect-compartment) for the inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gidari_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -21,14 +31,14 @@ Gidari A; Sabbatini S; Pallotto C; Bastianelli S; Pierucci S; Busti C; et al. et
   ·  DOI: [10.3390/microorganisms10122471](https://doi.org/10.3390/microorganisms10122471)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 20A.EU1 2.00 — EC50 (μM) | `Q321` · not captured | 1.56 | μM | not captured | llm (not captured) | tab_0:row2:col2 |
-| 20A.EU1 2.00 — EC99 (μM) | `Q321` · not captured | 2.28 | μM | not captured | llm (not captured) | tab_0:row2:col8 |
-| B.1.1.7 — EC50 (μM) | `Q321` · not captured | 0.45 | μM | not captured | llm (not captured) | tab_0:row3:col2 |
-| P.1 — EC50 (μM) | `Q321` · not captured | 0.37 | μM | not captured | llm (not captured) | tab_0:row4:col2 |
-| B.1.617.2 4.39 — EC50 (μM) | `Q321` · not captured | 1.37 | μM | not captured | llm (not captured) | tab_0:row5:col2 |
-| B.1.617.2 4.39 — EC90 (μM) | `Q321` · not captured | 2.97 | μM | not captured | llm (not captured) | tab_0:row5:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 20A.EU1 2.00 — EC50 (μM) | `Q321` · not captured | 1.56 | μM | not captured | llm (not captured) | tab_0:row2:col2 |
+| PD (effect) | 20A.EU1 2.00 — EC99 (μM) | `Q321` · not captured | 2.28 | μM | not captured | llm (not captured) | tab_0:row2:col8 |
+| PD (effect) | B.1.1.7 — EC50 (μM) | `Q321` · not captured | 0.45 | μM | not captured | llm (not captured) | tab_0:row3:col2 |
+| PD (effect) | P.1 — EC50 (μM) | `Q321` · not captured | 0.37 | μM | not captured | llm (not captured) | tab_0:row4:col2 |
+| PD (effect) | B.1.617.2 4.39 — EC50 (μM) | `Q321` · not captured | 1.37 | μM | not captured | llm (not captured) | tab_0:row5:col2 |
+| PD (effect) | B.1.617.2 4.39 — EC90 (μM) | `Q321` · not captured | 2.97 | μM | not captured | llm (not captured) | tab_0:row5:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

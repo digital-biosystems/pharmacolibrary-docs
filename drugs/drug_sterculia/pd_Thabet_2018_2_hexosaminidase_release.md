@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Brachychiton rupestris dichloromethane fraction (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The Brachychiton rupestris dichloromethane fraction (BRD) concentration-dependently inhibits A23187-induced β-hexosaminidase release in RBL-2H3 mast cells, with 19.0% inhibition at 100 μg/mL; the paper reports only percent inhibition at this single concentration and gives no PD model, mechanism, or potency parameters (no IC50, Imax, Emax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Thabet_2018_2`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telisotuzumab vedotin conjugate (measured concentrations) drives Overall Response Rate (in proportion): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Telisotuzumab vedotin conjugate exposure (Cavg, in µg/mL) was correlated with the binary overall response rate (ORR) in c-Met–overexpressing non-squamous NSCLC using a categorical exposure-response model; the paper describes only a significant positive correlation (no Emax/IC50/kin/kout parameters or mechanism are given), with a predicted ORR of 31.4% (24.2%–39.0%) at the median simulated conjugate Cavg for the 1.9 mg/kg Q2W regimen versus an observed ORR of 29%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Babel_2026`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

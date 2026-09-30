@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Trazodone and gabapentin drive name (in count): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Gabapentin (i.p., 1.5–15 mg/kg) and trazodone concentrations act on the acetic-acid stimulus entering the first transit compartment (a0) of a nine-transit-compartment model of writhing counts, reducing the stimulus amplitude by a factor k2·C(t) (linear inhibition, additive for the combination: k2A·CA + k2B·CB). Potency (k2) was 0.0459 L/μmoles/min for gabapentin (trazodone 10.9 L/μmoles/min); transit and elimination rate constants were ktr = 1.36 and k = 0.104 (units not stated), with stimulus S = 26.10.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Oggianu_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`
@@ -21,21 +31,21 @@ Oggianu L; Garrone B; Fiorentini F; Del Bene F; Rosignoli MT; Di Giorgio FP; et 
   ·  DOI: [10.1111/cts.13472](https://doi.org/10.1111/cts.13472)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k tr — Estimate | `Q306` · not captured | 1.36 | not captured | not captured | space_fold (not captured) | cts13472-tbl-0002:row1:col2 |
-| k tr — %SE | `Q306` · not captured | 2.12 | not captured | not captured | space_fold (not captured) | cts13472-tbl-0002:row1:col4 |
-| S — Estimate | `Q335` · not captured | 26.10 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row2:col2 |
-| S — %SE | `Q335` · not captured | 4.29 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row2:col4 |
-| k — Estimate | `Q47` · not captured | 0.104 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row3:col2 |
-| k — %SE | `Q47` · not captured | 5.83 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row3:col4 |
-| ω¯S2 — %CV | `Q314` · not captured | 15.2 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row6:col3 |
-| ω¯S2 — %SE | `Q314` · not captured | 36.1 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row6:col4 |
-| ω¯k2 — %CV | `Q314` · not captured | 18.7 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row7:col3 |
-| ω¯k2 — %SE | `Q314` · not captured | 49.3 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row7:col4 |
-| ω¯n2 — %CV | `Q314` · not captured | 9.2 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row8:col3 |
-| σadd2 — Estimate | `Q315` · not captured | 2.79 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row10:col2 |
-| σadd2 — %SE | `Q317` · not captured | 14.4 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row10:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k tr — Estimate | `Q306` · not captured | 1.36 | not captured | not captured | space_fold (not captured) | cts13472-tbl-0002:row1:col2 |
+| PK (driver) | k tr — %SE | `Q306` · not captured | 2.12 | not captured | not captured | space_fold (not captured) | cts13472-tbl-0002:row1:col4 |
+| PD (effect) | S — Estimate | `Q335` · not captured | 26.10 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row2:col2 |
+| PD (effect) | S — %SE | `Q335` · not captured | 4.29 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row2:col4 |
+| PK (driver) | k — Estimate | `Q47` · not captured | 0.104 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row3:col2 |
+| PK (driver) | k — %SE | `Q47` · not captured | 5.83 | not captured | not captured | exact (not captured) | cts13472-tbl-0002:row3:col4 |
+| variability | ω¯S2 — %CV | `Q314` · not captured | 15.2 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row6:col3 |
+| variability | ω¯S2 — %SE | `Q314` · not captured | 36.1 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row6:col4 |
+| variability | ω¯k2 — %CV | `Q314` · not captured | 18.7 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row7:col3 |
+| variability | ω¯k2 — %SE | `Q314` · not captured | 49.3 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row7:col4 |
+| variability | ω¯n2 — %CV | `Q314` · not captured | 9.2 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row8:col3 |
+| variability | σadd2 — Estimate | `Q315` · not captured | 2.79 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row10:col2 |
+| variability | σadd2 — %SE | `Q317` · not captured | 14.4 | not captured | not captured | llm (not captured) | cts13472-tbl-0002:row10:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dasotraline (measured concentrations) drives Study discontinuation (in probability): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Time to study discontinuation (dropout) was modeled with a semi-parametric Cox proportional hazard survival model relating dasotraline average concentration (Cav, ng/ml) and a Cav-by-time interaction to the log of the survival function; the hazard of dropout increased with increasing Cav (hazard ratio 1.24, 95% CI 1.12–1.36), with an interaction term of −0.0063 (42.7% SEM) indicating increasing dropout risk over time. No Emax/IC50-type potency parameters are given for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hopkins_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

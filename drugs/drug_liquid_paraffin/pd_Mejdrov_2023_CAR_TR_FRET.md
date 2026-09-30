@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives CAR TR-FRET coactivator assay (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for liquid paraffin on the CAR TR-FRET coactivator assay; the record's sigmoid Emax stimulation fit cannot be supported with numbers, as no EC50, Emax, or mechanism for liquid paraffin appears in the excerpts (the excerpts instead describe direct agonist/partial agonist effects of various test compounds on CAR, e.g. nanomolar EC50 for phenyl-substituted compounds and CYP3A4/CYP1A2 inhibition by compound 39 with IC50 = 16.08 and 21.07 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mejdrová_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

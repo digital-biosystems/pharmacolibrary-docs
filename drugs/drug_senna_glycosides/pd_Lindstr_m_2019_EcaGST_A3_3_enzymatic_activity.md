@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Anthralin (measured concentrations) drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Sennoside A (and other screened inhibitors) inhibit the enzymatic activity (%) of EcaGST A3-3 in vitro, measured with substrates CDNB or Δ5-AD; the paper does not state a kinetic mechanism beyond inhibition curves with Hill coefficients near 2 (apparent positive cooperativity). Sennoside A IC50 was 2.8 μM with CDNB and 0.11 μM with Δ5-AD (anthralin: 2.1 and 0.085 μM; tannic acid: 0.33 and 0.22 μM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lindström_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,25 +30,25 @@ Lindström H; Mazari AMA; Musdal Y; Mannervik B et al. (2019). PloS one 14
   ·  DOI: [10.1371/journal.pone.0214160](https://doi.org/10.1371/journal.pone.0214160)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) — Ethacrynic acid | `Q322` · not captured | 0.18 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col3 |
-| IC50 (μM) — Hexachlorophene | `Q322` · not captured | 0.32 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col4 |
-| IC50 (μM) — Tannic acid | `Q322` · not captured | 0.33 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col5 |
-| IC50 (μM) — Aurothioglucose | `Q322` · not captured | 0.85 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col6 |
-| IC50 (μM) — Bithionate Na | `Q322` · not captured | 1.9 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col7 |
-| IC50 (μM) — Chlorophyllide Cu-complex Na salt | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col8 |
-| IC50 (μM) — Anthralin | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col9 |
-| IC50 (μM) — Merbromin | `Q322` · not captured | 2.6 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col10 |
-| IC50 (μM) — Sennoside A | `Q322` · not captured | 2.8 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col11 |
-| IC50 (μM) — Erythrosine Na | `Q322` · not captured | 8.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col12 |
-| IC50 (μM) — Ethacrynic acid | `Q322` · not captured | 0.25 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col3 |
-| IC50 (μM) — Hexachlorophene | `Q322` · not captured | 0.44 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col4 |
-| IC50 (μM) — Tannic acid | `Q322` · not captured | 0.22 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col5 |
-| IC50 (μM) — Bithionate Na | `Q322` · not captured | 1.6 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col7 |
-| IC50 (μM) — Anthralin | `Q322` · not captured | 0.085 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col9 |
-| IC50 (μM) — Merbromin | `Q322` · not captured | 2.5 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col10 |
-| IC50 (μM) — Sennoside A | `Q322` · not captured | 0.11 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) — Ethacrynic acid | `Q322` · not captured | 0.18 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col3 |
+| PD (effect) | IC50 (μM) — Hexachlorophene | `Q322` · not captured | 0.32 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col4 |
+| PD (effect) | IC50 (μM) — Tannic acid | `Q322` · not captured | 0.33 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col5 |
+| PD (effect) | IC50 (μM) — Aurothioglucose | `Q322` · not captured | 0.85 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col6 |
+| PD (effect) | IC50 (μM) — Bithionate Na | `Q322` · not captured | 1.9 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col7 |
+| PD (effect) | IC50 (μM) — Chlorophyllide Cu-complex Na salt | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col8 |
+| PD (effect) | IC50 (μM) — Anthralin | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col9 |
+| PD (effect) | IC50 (μM) — Merbromin | `Q322` · not captured | 2.6 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col10 |
+| PD (effect) | IC50 (μM) — Sennoside A | `Q322` · not captured | 2.8 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col11 |
+| PD (effect) | IC50 (μM) — Erythrosine Na | `Q322` · not captured | 8.1 | μM | not captured | exact (not captured) | pone.0214160.t002:row0:col12 |
+| PD (effect) | IC50 (μM) — Ethacrynic acid | `Q322` · not captured | 0.25 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col3 |
+| PD (effect) | IC50 (μM) — Hexachlorophene | `Q322` · not captured | 0.44 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col4 |
+| PD (effect) | IC50 (μM) — Tannic acid | `Q322` · not captured | 0.22 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col5 |
+| PD (effect) | IC50 (μM) — Bithionate Na | `Q322` · not captured | 1.6 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col7 |
+| PD (effect) | IC50 (μM) — Anthralin | `Q322` · not captured | 0.085 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col9 |
+| PD (effect) | IC50 (μM) — Merbromin | `Q322` · not captured | 2.5 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col10 |
+| PD (effect) | IC50 (μM) — Sennoside A | `Q322` · not captured | 0.11 | μM | not captured | exact (not captured) | pone.0214160.t002:row1:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

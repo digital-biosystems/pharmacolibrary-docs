@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives hypotension (in mmHg*min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> GTN (and comparator ISDN) administered cumulatively to anesthetized rabbits produces hypotension quantified as AUC below control blood pressure (mmHg·min, initial 3 min); the ALDH2 inhibitor cyanamide (100 mg/kg) shifts the dose–AUC relationship rightward, i.e. it inhibits GTN bioactivation (mechanism: reduced NO/nitrite formation, ΔNO2− ratio 15.01 for ISDN vs GTN). Potency is expressed as AUC50 dose: dose ratio (AUC50 with cyanamide/control) 2.29 for GTN-induced hypotension versus 7.68 for ISDN; ex vivo aortic EC50 for GTN relaxation was 30.9±2.5 nM (control) versus 47.6±10.7 nM with 30 µM cyanamide (concentration ratio 5.61). No PD model parameters (Imax, IC50, kin, kout, ke0, gamma) are
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ishibashi_2013`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

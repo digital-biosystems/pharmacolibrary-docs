@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibuprofen (concentrations from the PK model of Albert_1984) drives name (in °C): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen plasma concentrations (after an 8 mg/kg oral dose) were linked to the antipyretic effect (temperature, °C) via an effect-compartment model, with a 1–3 hour delay between peak plasma concentration and peak temperature decrement; the mean elimination rate constant from the effect compartment was 0.6 h⁻¹ (half-life 1.1 h), and the mean slope of effect-compartment concentration versus temperature was −0.242 °C per mg/L (a linear inhibitory relationship; no IC50/Emax values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kauffman_1992`
 - **model family:** `effect_compartment`
 - **driver:** `cited_pk`

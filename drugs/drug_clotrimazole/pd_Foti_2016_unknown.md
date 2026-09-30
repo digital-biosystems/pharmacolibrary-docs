@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives tazarotenic acid sulfoxide formation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, clotrimazole inhibits CYP26A1- and CYP26B1-catalyzed tazarotenic acid sulfoxide formation (200 nM tazarotenic acid substrate, 10-min incubations), with IC50 values of 20 nM (CYP26A1) and 50 nM (CYP26B1), making it the most potent inhibitor tested; the paper does not state a kinetic (kin/kout/ke0) model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Foti_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,36 +30,36 @@ Foti RS; Diaz P; Douguet D et al. (2016). Journal of enzyme inhibition and medic
   ·  DOI: [10.1080/14756366.2016.1193734](https://doi.org/10.1080/14756366.2016.1193734)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) — CD437 | `Q322` · not captured | 0.01 | μM | not captured | exact (not captured) | T1:row0:col5 |
-| IC50 (μM) — MM11253 | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row0:col6 |
-| IC50 (μM) — Talarazole | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row0:col7 |
-| IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.13 | μM | not captured | exact (not captured) | T1:row0:col8 |
-| IC50 (μM) — SR11237 | `Q322` · not captured | 0.81 | μM | not captured | exact (not captured) | T1:row0:col9 |
-| IC50 (μM) — Liarazole | `Q322` · not captured | 0.84 | μM | not captured | exact (not captured) | T1:row0:col10 |
-| IC50 (μM) — Bexarotene | `Q322` · not captured | 1.31 | μM | not captured | exact (not captured) | T1:row0:col11 |
-| IC50 (μM) — EC23 | `Q322` · not captured | 1.60 | μM | not captured | exact (not captured) | T1:row0:col12 |
-| IC50 (μM) — AM80 | `Q322` · not captured | 2.89 | μM | not captured | exact (not captured) | T1:row0:col13 |
-| IC50 (μM) — Talarazole | `Q322` · not captured | 0.005 | μM | not captured | exact (not captured) | T1:row1:col7 |
-| IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.55 | μM | not captured | exact (not captured) | T1:row1:col8 |
-| IC50 (μM) — Liarazole | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | T1:row1:col10 |
-| IC50 (μM) — EC23 | `Q322` · not captured | 8.3 | μM | not captured | exact (not captured) | T1:row1:col12 |
-| IC50 (μM) — AM80 | `Q322` · not captured | 12 | μM | not captured | exact (not captured) | T1:row1:col13 |
-| IC50 (μM) — CD437 | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | T1:row2:col5 |
-| IC50 (μM) — MM11253 | `Q322` · not captured | 1.25 | μM | not captured | exact (not captured) | T1:row2:col6 |
-| IC50 (μM) — Talarazole | `Q322` · not captured | 0.001 | μM | not captured | exact (not captured) | T1:row2:col7 |
-| IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.19 | μM | not captured | exact (not captured) | T1:row2:col8 |
-| IC50 (μM) — SR11237 | `Q322` · not captured | 6.86 | μM | not captured | exact (not captured) | T1:row2:col9 |
-| IC50 (μM) — Liarazole | `Q322` · not captured | 0.01 | μM | not captured | exact (not captured) | T1:row2:col10 |
-| IC50 (μM) — Bexarotene | `Q322` · not captured | 1.60 | μM | not captured | exact (not captured) | T1:row2:col11 |
-| IC50 (μM) — EC23 | `Q322` · not captured | 3.45 | μM | not captured | exact (not captured) | T1:row2:col12 |
-| IC50 (μM) — AM80 | `Q322` · not captured | 9.21 | μM | not captured | exact (not captured) | T1:row2:col13 |
-| IC50 (μM) — Talarazole | `Q322` · not captured | 0.0005 | μM | not captured | exact (not captured) | T1:row3:col7 |
-| IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | T1:row3:col8 |
-| IC50 (μM) — Liarazole | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row3:col10 |
-| IC50 (μM) — EC23 | `Q322` · not captured | 0.94 | μM | not captured | exact (not captured) | T1:row3:col12 |
-| IC50 (μM) — AM80 | `Q322` · not captured | 6.6 | μM | not captured | exact (not captured) | T1:row3:col13 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) — CD437 | `Q322` · not captured | 0.01 | μM | not captured | exact (not captured) | T1:row0:col5 |
+| PD (effect) | IC50 (μM) — MM11253 | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row0:col6 |
+| PD (effect) | IC50 (μM) — Talarazole | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row0:col7 |
+| PD (effect) | IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.13 | μM | not captured | exact (not captured) | T1:row0:col8 |
+| PD (effect) | IC50 (μM) — SR11237 | `Q322` · not captured | 0.81 | μM | not captured | exact (not captured) | T1:row0:col9 |
+| PD (effect) | IC50 (μM) — Liarazole | `Q322` · not captured | 0.84 | μM | not captured | exact (not captured) | T1:row0:col10 |
+| PD (effect) | IC50 (μM) — Bexarotene | `Q322` · not captured | 1.31 | μM | not captured | exact (not captured) | T1:row0:col11 |
+| PD (effect) | IC50 (μM) — EC23 | `Q322` · not captured | 1.60 | μM | not captured | exact (not captured) | T1:row0:col12 |
+| PD (effect) | IC50 (μM) — AM80 | `Q322` · not captured | 2.89 | μM | not captured | exact (not captured) | T1:row0:col13 |
+| PD (effect) | IC50 (μM) — Talarazole | `Q322` · not captured | 0.005 | μM | not captured | exact (not captured) | T1:row1:col7 |
+| PD (effect) | IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.55 | μM | not captured | exact (not captured) | T1:row1:col8 |
+| PD (effect) | IC50 (μM) — Liarazole | `Q322` · not captured | 2.1 | μM | not captured | exact (not captured) | T1:row1:col10 |
+| PD (effect) | IC50 (μM) — EC23 | `Q322` · not captured | 8.3 | μM | not captured | exact (not captured) | T1:row1:col12 |
+| PD (effect) | IC50 (μM) — AM80 | `Q322` · not captured | 12 | μM | not captured | exact (not captured) | T1:row1:col13 |
+| PD (effect) | IC50 (μM) — CD437 | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | T1:row2:col5 |
+| PD (effect) | IC50 (μM) — MM11253 | `Q322` · not captured | 1.25 | μM | not captured | exact (not captured) | T1:row2:col6 |
+| PD (effect) | IC50 (μM) — Talarazole | `Q322` · not captured | 0.001 | μM | not captured | exact (not captured) | T1:row2:col7 |
+| PD (effect) | IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.19 | μM | not captured | exact (not captured) | T1:row2:col8 |
+| PD (effect) | IC50 (μM) — SR11237 | `Q322` · not captured | 6.86 | μM | not captured | exact (not captured) | T1:row2:col9 |
+| PD (effect) | IC50 (μM) — Liarazole | `Q322` · not captured | 0.01 | μM | not captured | exact (not captured) | T1:row2:col10 |
+| PD (effect) | IC50 (μM) — Bexarotene | `Q322` · not captured | 1.60 | μM | not captured | exact (not captured) | T1:row2:col11 |
+| PD (effect) | IC50 (μM) — EC23 | `Q322` · not captured | 3.45 | μM | not captured | exact (not captured) | T1:row2:col12 |
+| PD (effect) | IC50 (μM) — AM80 | `Q322` · not captured | 9.21 | μM | not captured | exact (not captured) | T1:row2:col13 |
+| PD (effect) | IC50 (μM) — Talarazole | `Q322` · not captured | 0.0005 | μM | not captured | exact (not captured) | T1:row3:col7 |
+| PD (effect) | IC50 (μM) — Ketoconazole | `Q322` · not captured | 0.14 | μM | not captured | exact (not captured) | T1:row3:col8 |
+| PD (effect) | IC50 (μM) — Liarazole | `Q322` · not captured | 0.02 | μM | not captured | exact (not captured) | T1:row3:col10 |
+| PD (effect) | IC50 (μM) — EC23 | `Q322` · not captured | 0.94 | μM | not captured | exact (not captured) | T1:row3:col12 |
+| PD (effect) | IC50 (μM) — AM80 | `Q322` · not captured | 6.6 | μM | not captured | exact (not captured) | T1:row3:col13 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

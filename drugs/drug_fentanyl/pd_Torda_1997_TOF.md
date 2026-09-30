@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Suxamethonium drives neuromuscular transmission (in unknown): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Suxamethonium (doses 15–30 mg initially, 5–20 mg subsequently, i.e. 0.24–0.37 and 0.07–0.32 mg.kg-1) inhibits neuromuscular transmission measured as the train-of-four ratio (TOFR); the dose–response relation is modelled as sigmoid (Hill equation) on the effect-compartment concentration, with a plasma elimination rate constant and an effect-compartment equilibration rate constant. The paper does not report numeric values for potency (EC50), Emax, gamma, or the rate constants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Torda_1997`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

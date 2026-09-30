@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menadione (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Menadione concentrations (μM) directly inhibit ongoing DNA synthesis (%), measured as [methyl-3H]-thymidine incorporation, with a dose-dependent effect in 5-day-old rat cerebral cortex mini-units (IC50 ≈ 10 μM) and IC50 of 10–25 μM in DBTRG.05MG and patient-derived glioma cells, while 50 μM had no effect in adult rat tissue; the effect is time-dependent (50 μM gave 34.66 ± 2.90% inhibition at 30 min and 84.36 ± 2.25% at 60 min), irreversible after drug removal, and not due to inhibited thymidine uptake; the paper does not state a formal PD model (no Imax, kin, kout, ke0 or gamma), though mechanistically menadione's cytotoxicity is attributed to ROS generation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vita_2011`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

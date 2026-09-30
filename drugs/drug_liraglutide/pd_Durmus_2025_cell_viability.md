@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Overgaard_2016::total) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide (0.156–10 µM) stimulates cell viability (MTT) in hyperglycemic H9c2 cardiomyocytes with a direct concentration–response (Emax-type) relationship; the paper reports EC50 values of 9.01 ± 0.08 µM (24 h), 1.07 ± 0.13 µM (48 h; also cited as 1.05 ± 0.06 µM), and 0.81 ± 0.05 µM (72 h), but does not state Emax or a mechanistic PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Durmus_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

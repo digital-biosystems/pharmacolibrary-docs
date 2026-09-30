@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulodexide (measured concentrations) drives cell migration (in μm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulodexide (tested at 50 μg/ml in the migration assay) inhibited the increased migration of FGF-2-stimulated (10 ng/ml) HK-2 tubular cells, without affecting basal migration; the paper attributes this to sulodexide's heparinase-1 (HPSE) inhibitory activity (IC50 5 μg/ml, complete inhibition at 20 μg/ml, due exclusively to the heparin component), but no PD model or parameters (Imax, IC50, kin, kout, etc.) are given for the migration response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Masola_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

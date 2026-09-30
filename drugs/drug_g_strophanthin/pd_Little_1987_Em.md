@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dobutamine drives End-systolic pressure-volume relation slope (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model (no Emax/IC50/kin-kout/ke0 parameters are given); it reports descriptively that intravenous dobutamine (2-10 µg/kg, including 10 µg/kg per min infusion) stimulates the left ventricular end-systolic pressure-volume relation slope (Emax), increasing it from 7.24±4.40 to 13.61±5.80 mmHg/ml (184±57% of control), with dose-related effects also on dE/dtmax, tmax, and T.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Little_1987`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

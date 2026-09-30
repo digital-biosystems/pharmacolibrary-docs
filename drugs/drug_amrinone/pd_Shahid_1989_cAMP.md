@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amrinone (concentrations from the PK model of Park_1983) drives cyclic AMP concentration (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Amrinone (2.4 x 10^-4 M to 2 x 10^-3 M) concentration-dependently increased intracellular cyclic AMP concentrations in rabbit papillary muscle and right atria, an effect attributed to inhibition of cardiac phosphodiesterase (cAMP hydrolysis); amrinone was the least potent of the three drugs tested (rank order carbazeran = IBMX &gt; amrinone, at least 30-fold less potent than IBMX, whose right-atrial PDE IC50 was 7.6 x 10^-6 M). The paper does not report a formal PD model (no Imax/EC50/kin/kout/ke0 values for the cAMP response), and the cAMP unit is not stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shahid_1989`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydrogen peroxide, hypochlorite, peracetic acid (measured concentrations) drive β-glucuronidase activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Hydrogen peroxide, hypochlorite, and peracetic acid (PAA) concentrations (μM) were tested for direct inhibition of β-glucuronidase activity in dose–response (IC50) experiments: H2O2 showed no inhibition of β-glucuronidase, while hypochlorite and PAA inhibited it with IC50 values of 704.90 ± 41.40 μM and 23.26 ± 0.82 μM, respectively; PAA's maximum inhibition of β-glucuronidase was only about 60%. Mechanistically, hypochlorite's inhibition of β-glucuronidase was irreversible (and pH-dependent, stronger at acidic pH), whereas PAA's inhibition was reversible and noncompetitive (Vmax decreased, Km unchanged, Km = 0.736 mM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhong_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

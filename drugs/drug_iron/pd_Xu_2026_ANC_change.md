@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sarilumab (measured concentrations) drives Percentage change in absolute neutrophil count from baseline (in %): direct log-linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper relates sarilumab exposure (Ctrough, mg/L) to clinical and safety responses in pcJIA via log-linear exposure–response models; for the absolute neutrophil count reduction (ANC), the excerpts do not state a mechanism (e.g., no Imax/IC50, kin/kout, or effect-compartment parameters are given), and no potency or rate values for the ANC response are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2026`
 - **model family:** `log_linear`
 - **driver:** `conc_no_pk`
@@ -21,17 +31,17 @@ Xu C; Zhang M; Liu Y; Baret-Cormel L; De Benedetti F; Abdallah H; Kanamaluru V; 
   ·  DOI: [10.1007/s10928-026-10024-z](https://doi.org/10.1007/s10928-026-10024-z)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vmd — Shrinkage (%) | `Q318` · not captured | 20.7 | not captured | not captured | llm (not captured) | Tab1:row13:col4 |
-| CL0/Fd — Estimate | `Q27` · not captured | 73.2 | not captured | not captured | llm (not captured) | Tab1:row14:col1 |
-| CL0/Fd — RSE (%) | `Q27` · not captured | 14 | not captured | not captured | llm (not captured) | Tab1:row14:col2 |
-| CL0/Fd — Shrinkage (%) | `Q318` · not captured | 25.3 | not captured | not captured | llm (not captured) | Tab1:row14:col4 |
-| Vc/Fd — Estimate | `Q76` · not captured | 29.9 | not captured | not captured | llm (not captured) | Tab1:row15:col1 |
-| Vc/Fd — Shrinkage (%) | `Q318` · not captured | 49.4 | not captured | not captured | llm (not captured) | Tab1:row15:col4 |
-| Kad — Shrinkage (%) | `Q318` · not captured | 16.7 | not captured | not captured | llm (not captured) | Tab1:row16:col4 |
-| σ2 — Estimate | `Q315` · not captured | 0.460 | not captured | not captured | exact (not captured) | Tab1:row19:col1 |
-| σ2 — RSE (%) | `Q315` · not captured | 0.92 | not captured | not captured | exact (not captured) | Tab1:row19:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| variability | Vmd — Shrinkage (%) | `Q318` · not captured | 20.7 | not captured | not captured | llm (not captured) | Tab1:row13:col4 |
+| PK (driver) | CL0/Fd — Estimate | `Q27` · not captured | 73.2 | not captured | not captured | llm (not captured) | Tab1:row14:col1 |
+| PK (driver) | CL0/Fd — RSE (%) | `Q27` · not captured | 14 | not captured | not captured | llm (not captured) | Tab1:row14:col2 |
+| variability | CL0/Fd — Shrinkage (%) | `Q318` · not captured | 25.3 | not captured | not captured | llm (not captured) | Tab1:row14:col4 |
+| PK (driver) | Vc/Fd — Estimate | `Q76` · not captured | 29.9 | not captured | not captured | llm (not captured) | Tab1:row15:col1 |
+| variability | Vc/Fd — Shrinkage (%) | `Q318` · not captured | 49.4 | not captured | not captured | llm (not captured) | Tab1:row15:col4 |
+| variability | Kad — Shrinkage (%) | `Q318` · not captured | 16.7 | not captured | not captured | llm (not captured) | Tab1:row16:col4 |
+| variability | σ2 — Estimate | `Q315` · not captured | 0.460 | not captured | not captured | exact (not captured) | Tab1:row19:col1 |
+| variability | σ2 — RSE (%) | `Q315` · not captured | 0.92 | not captured | not captured | exact (not captured) | Tab1:row19:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

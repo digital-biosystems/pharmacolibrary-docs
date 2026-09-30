@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cascarosides (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cascarosides A and B (tested at 0.1–1000 μM) inhibit cell viability (%) in tumor cell lines measured by alamarBlue assay, with cascaroside B showing high cytotoxicity in HL-60 cells (IC50 20.81 μM) and moderate cytotoxicity in K-562 but no significant effect in HeLa and T98G; the paper does not state a pharmacodynamic mechanism or model parameters beyond the IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Demarque_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

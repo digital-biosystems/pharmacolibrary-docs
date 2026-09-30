@@ -17,9 +17,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.842). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sandbaumhüter_2021_2_reference](drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md) | general linear (no model) | 15 | Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electrophoresis (2021) | [10.1002/elps.202100115](https://doi.org/10.1002/elps.202100115) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.842). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Sandbaumhüter_2021_2_reference](drugs/drug_levomethadone/Levomethadone_Sandbaumhter20212_reference.md) | — | general linear (no model) | 15 | Sandbaumhüter FA et al., Stereoselective methadone disposition a…, Electrophoresis (2021) | [10.1002/elps.202100115](https://doi.org/10.1002/elps.202100115) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

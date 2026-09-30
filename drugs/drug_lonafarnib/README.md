@@ -33,15 +33,15 @@ Merck originally developed Lonafarnib and subsequently licensed it to Eiger Biop
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Canini_2017_reference](drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference.md) | 2-compartment (no model) | 4 | Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017) | [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q61 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Canini_2017_reference](drugs/drug_lonafarnib/Lonafarnib_Canini2017_reference.md) | — | 2-compartment (no model) | 4 | Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017) | [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Canini_2017](drugs/drug_lonafarnib/pd_Canini_2017_HDV.md) | Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017) | [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Canini_2017_HDV](drugs/drug_lonafarnib/pd_Canini_2017_HDV.md) | HDV RNA ← lonafarnib · direct sigmoid Emax (Hill) effect | — | Canini L et al., Pharmacokinetics and pharmacodynamics m…, Hepatology communications (2017) | [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043) |
 
 ## ADME sites
 
@@ -55,6 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate, `ABCG2` inhibitor | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inhibitor/substrate | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2A6` substrate, `CYP2C19` inhibitor/substrate, `CYP2C8` inhibitor/substrate, `CYP2C9` substrate, `CYP2E1` substrate, `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `CYP3A5` inhibitor/substrate | DrugBank actor |

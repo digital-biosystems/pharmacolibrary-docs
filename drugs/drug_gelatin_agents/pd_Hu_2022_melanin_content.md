@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DLGFLARGF (measured concentrations) drives name (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DLGFLARGF concentrations (mM) inhibit melanin content in B16F10 cells in a concentration-dependent manner, acting via tyrosinase inhibition (hydrogen-bond driven binding per docking); the paper gives an IC50 of 3.09 mM for tyrosinase inhibition and reports melanin content reduced to 61.7% of control at 1.6 mg/ml, but no PD model parameters (Imax, Emax, kin, kout, ke0, gamma) are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

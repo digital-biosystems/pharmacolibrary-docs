@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5-fluorouracil (concentrations from the PK model of Brooks_2025) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> 5-fluorouracil (0–80 µM, 72 h exposure) inhibits cell survival in SW480 and HCT116 CRC cells measured by CCK-8, with potency expressed as IC50 from concentration-effect curves; HADHB knockdown (siRNA340/siRNA643) reduces the IC50, i.e. increases 5FU sensitivity, via a HADHB–DUOX2/ROS mechanism. The paper reports no numeric IC50, Emax, kin/kout, ke0 or other PD model parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ST004 (measured concentrations) drives name (in score) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ST004 acts on AQP3-mediated glycerol permeability (glycerol transport response) by inhibiting AQP3 function; the paper reports an IC50 of 1.69 ± 0.48 µM for inhibition of glycerol permeation in RBCs, but does not state a PD model structure or kinetic parameters (e.g., kin, kout, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pinho_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,25 +31,25 @@ Pinho JO; Coelho M; Pimpão C; Konwar J; Godinho-Santos A; Noiva RM; et al. et a
   ·  DOI: [10.3390/pharmaceutics16121566](https://doi.org/10.3390/pharmaceutics16121566)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col3 |
-| EC50 (μM) — B16F10 | `Q321` · not captured | 47 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col4 |
-| EC50 (μM) — A375 | `Q321` · not captured | 27 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col5 |
-| EC50 (μM) — MNT-1 | `Q321` · not captured | 37 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col6 |
-| EC50 (μM) — Cell line | `Q321` · not captured | 48 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col3 |
-| EC50 (μM) — B16F10 | `Q321` · not captured | 58 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col4 |
-| EC50 (μM) — A375 | `Q321` · not captured | 17 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col5 |
-| EC50 (μM) — MNT-1 | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col6 |
-| EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col3 |
-| EC50 (μM) — B16F10 | `Q321` · not captured | 87 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col4 |
-| EC50 (μM) — A375 | `Q321` · not captured | 49 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col5 |
-| EC50 (μM) — MNT-1 | `Q321` · not captured | 95 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col6 |
-| EC50 (μM) — Cell line | `Q321` · not captured | 48 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col3 |
-| EC50 (μM) — B16F10 | `Q321` · not captured | 78 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col4 |
-| EC50 (μM) — A375 | `Q321` · not captured | 31 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col5 |
-| EC50 (μM) — MNT-1 | `Q321` · not captured | 55 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col6 |
-| EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row4:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col3 |
+| PD (effect) | EC50 (μM) — B16F10 | `Q321` · not captured | 47 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col4 |
+| PD (effect) | EC50 (μM) — A375 | `Q321` · not captured | 27 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col5 |
+| PD (effect) | EC50 (μM) — MNT-1 | `Q321` · not captured | 37 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row0:col6 |
+| PD (effect) | EC50 (μM) — Cell line | `Q321` · not captured | 48 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col3 |
+| PD (effect) | EC50 (μM) — B16F10 | `Q321` · not captured | 58 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col4 |
+| PD (effect) | EC50 (μM) — A375 | `Q321` · not captured | 17 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col5 |
+| PD (effect) | EC50 (μM) — MNT-1 | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row1:col6 |
+| PD (effect) | EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col3 |
+| PD (effect) | EC50 (μM) — B16F10 | `Q321` · not captured | 87 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col4 |
+| PD (effect) | EC50 (μM) — A375 | `Q321` · not captured | 49 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col5 |
+| PD (effect) | EC50 (μM) — MNT-1 | `Q321` · not captured | 95 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row2:col6 |
+| PD (effect) | EC50 (μM) — Cell line | `Q321` · not captured | 48 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col3 |
+| PD (effect) | EC50 (μM) — B16F10 | `Q321` · not captured | 78 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col4 |
+| PD (effect) | EC50 (μM) — A375 | `Q321` · not captured | 31 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col5 |
+| PD (effect) | EC50 (μM) — MNT-1 | `Q321` · not captured | 55 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row3:col6 |
+| PD (effect) | EC50 (μM) — Cell line | `Q321` · not captured | 24 | μM | not captured | exact (not captured) | pharmaceutics-16-01566-t002:row4:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

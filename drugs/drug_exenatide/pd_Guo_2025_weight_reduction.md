@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Exenatide (0.01–2 mg) acts on weight reduction (kg) via a direct dose-response (Emax) model stimulating weight loss; the paper does not describe a mechanistic production/elimination (kin/kout) process. Across the 12 GLP-1RAs, Emax values ranged up to 4.25 kg, and the effective dose achieving 50% of Emax (ED50) for Cotadutide was 0.219 mg; no significant dose-response relationship was observed for exenatide within its studied dose range, indicating an efficacy plateau.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,10 +31,10 @@ Guo H; Yang J; Huang J; Xu L; Lv Y; Wang Y; Ren J; Feng Y; Zheng Q; Li L et al. 
   ·  DOI: [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax values for 12 GLP-1RA drugs ranged from | `Q320` · not captured | 4.25 | kg | not captured | review_gapfill (not captured) | Guo_2025:review |
-| effective doses (doses achieving 50 % of the Emax value) of Cotadutide | `Q321` · not captured | 0.219 | mg | not captured | review_gapfill (not captured) | Guo_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax values for 12 GLP-1RA drugs ranged from | `Q320` · not captured | 4.25 | kg | not captured | review_gapfill (not captured) | Guo_2025:review |
+| PD (effect) | effective doses (doses achieving 50 % of the Emax value) of Cotadutide | `Q321` · not captured | 0.219 | mg | not captured | review_gapfill (not captured) | Guo_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

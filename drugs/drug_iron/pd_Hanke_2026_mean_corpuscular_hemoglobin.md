@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Iclepertin drives name (in unknown): indirect response — drug inhibits the production of name.
+
+**Model:** No model was generated from this record.
+
+> Iclepertin exposure (AUC, nmol·h/L) acts on mean corpuscular hemoglobin (MCH) via an Emax-model proportional inhibition of the MCH production rate (Kin_MCH): dMCH1/dt = Kin_MCH × (1 − Emax × AUC/(AUC50 + AUC)) − Ktr × MCH1, with feedback of hemoglobin on RBC proliferation in a transit-compartment structure. The paper does not state numerical values for Emax, AUC50, Kin_MCH or Ktr in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanke_2026`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

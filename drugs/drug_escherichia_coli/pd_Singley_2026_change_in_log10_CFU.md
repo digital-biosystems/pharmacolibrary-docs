@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gepotidacin (measured concentrations) drives name (in log10 CFU): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the murine neutropenic thigh infection model, gepotidacin plasma exposure summarized as fAUC/MIC was related to the change in log10 CFU of Escherichia coli using a 3-parameter inhibitory sigmoid Imax model; the paper does not state a mechanistic kin/kout or effect-compartment description beyond this direct inhibitory exposure-response fit. fAUC/MIC ratios associated with stasis, 1-log10, and 2-log10 CFU reductions were reported per isolate (e.g., EC ALL: 2.9, 6.7, 14.8; EC ATCC25922: 13.7, 23.1, 37.7), with a median fAUC/MIC of 13 for response across isolates.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singley_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,48 +31,48 @@ Singley CM; Kurumaddali A; Hoover JL et al. (2026). Antimicrobial agents and che
   ·  DOI: [10.1128/aac.01176-25](https://doi.org/10.1128/aac.01176-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC Y6702902277A — Change in VTCb | `Q61` · not captured | +1.26 | not captured | not captured | llm (not captured) | T2:row2:col2 |
-| EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 0.6 | not captured | not captured | llm (not captured) | T2:row2:col3 |
-| EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 1.4 | not captured | not captured | llm (not captured) | T2:row2:col4 |
-| EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 2.9 | not captured | not captured | llm (not captured) | T2:row2:col5 |
-| EC Y6702665868B — Change in VTCb | `Q61` · not captured | +2.04 | not captured | not captured | llm (not captured) | T2:row3:col2 |
-| EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 7.7 | not captured | not captured | llm (not captured) | T2:row3:col3 |
-| EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 18.3 | not captured | not captured | llm (not captured) | T2:row3:col4 |
-| EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 37.9 | not captured | not captured | llm (not captured) | T2:row3:col5 |
-| EC Y6700050509B — Change in VTCb | `Q61` · not captured | +1.38 | not captured | not captured | llm (not captured) | T2:row4:col2 |
-| EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 1.5 | not captured | not captured | llm (not captured) | T2:row4:col3 |
-| EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 3.2 | not captured | not captured | llm (not captured) | T2:row4:col4 |
-| EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 5.9 | not captured | not captured | llm (not captured) | T2:row4:col5 |
-| EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 13.7 | not captured | not captured | llm (not captured) | T2:row5:col3 |
-| EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 23.1 | not captured | not captured | llm (not captured) | T2:row5:col4 |
-| EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 37.7 | not captured | not captured | llm (not captured) | T2:row5:col5 |
-| EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 17.1 | not captured | not captured | llm (not captured) | T2:row6:col3 |
-| EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 28.3 | not captured | not captured | llm (not captured) | T2:row6:col4 |
-| EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 47.2 | not captured | not captured | llm (not captured) | T2:row6:col5 |
-| EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 10.5 | not captured | not captured | llm (not captured) | T2:row7:col3 |
-| EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 18.4 | not captured | not captured | llm (not captured) | T2:row7:col4 |
-| EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 32.5 | not captured | not captured | llm (not captured) | T2:row7:col5 |
-| EC ALL — fAUC/MIC ratios | `Q21` · not captured | 2.9 | not captured | not captured | llm (not captured) | T2:row8:col3 |
-| EC ALL — fAUC/MIC ratios | `Q21` · not captured | 6.7 | not captured | not captured | llm (not captured) | T2:row8:col4 |
-| EC ALL — fAUC/MIC ratios | `Q21` · not captured | 14.8 | not captured | not captured | llm (not captured) | T2:row8:col5 |
-| EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 2.5 | not captured | not captured | llm (not captured) | T2:row9:col3 |
-| EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 4.9 | not captured | not captured | llm (not captured) | T2:row9:col4 |
-| EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 10.2 | not captured | not captured | llm (not captured) | T2:row9:col5 |
-| EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 2 | not captured | not captured | llm (not captured) | T2:row10:col3 |
-| EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 4.8 | not captured | not captured | llm (not captured) | T2:row10:col4 |
-| EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 9.8 | not captured | not captured | llm (not captured) | T2:row10:col5 |
-| EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 22.6 | not captured | not captured | llm (not captured) | T2:row11:col3 |
-| EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 37.2 | not captured | not captured | llm (not captured) | T2:row11:col4 |
-| EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 63 | not captured | not captured | llm (not captured) | T2:row11:col5 |
-| EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 1.2 | not captured | not captured | llm (not captured) | T2:row12:col3 |
-| EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 2.2 | not captured | not captured | llm (not captured) | T2:row12:col4 |
-| EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 4.4 | not captured | not captured | llm (not captured) | T2:row12:col5 |
-| EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 21.4 | not captured | not captured | llm (not captured) | T2:row13:col3 |
-| EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 29.9 | not captured | not captured | llm (not captured) | T2:row13:col4 |
-| EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 39.5 | not captured | not captured | llm (not captured) | T2:row13:col5 |
-| KP 1478677 — Change in VTCb | `Q61` · not captured | +1.73 | not captured | not captured | llm_corrected (not captured) | T2:row15:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | EC Y6702902277A — Change in VTCb | `Q61` · not captured | +1.26 | not captured | not captured | llm (not captured) | T2:row2:col2 |
+| PK (driver) | EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 0.6 | not captured | not captured | llm (not captured) | T2:row2:col3 |
+| PK (driver) | EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 1.4 | not captured | not captured | llm (not captured) | T2:row2:col4 |
+| PK (driver) | EC Y6702902277A — fAUC/MIC ratios | `Q21` · not captured | 2.9 | not captured | not captured | llm (not captured) | T2:row2:col5 |
+| PK (driver) | EC Y6702665868B — Change in VTCb | `Q61` · not captured | +2.04 | not captured | not captured | llm (not captured) | T2:row3:col2 |
+| PK (driver) | EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 7.7 | not captured | not captured | llm (not captured) | T2:row3:col3 |
+| PK (driver) | EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 18.3 | not captured | not captured | llm (not captured) | T2:row3:col4 |
+| PK (driver) | EC Y6702665868B — fAUC/MIC ratios | `Q21` · not captured | 37.9 | not captured | not captured | llm (not captured) | T2:row3:col5 |
+| PK (driver) | EC Y6700050509B — Change in VTCb | `Q61` · not captured | +1.38 | not captured | not captured | llm (not captured) | T2:row4:col2 |
+| PK (driver) | EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 1.5 | not captured | not captured | llm (not captured) | T2:row4:col3 |
+| PK (driver) | EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 3.2 | not captured | not captured | llm (not captured) | T2:row4:col4 |
+| PK (driver) | EC Y6700050509B — fAUC/MIC ratios | `Q21` · not captured | 5.9 | not captured | not captured | llm (not captured) | T2:row4:col5 |
+| PK (driver) | EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 13.7 | not captured | not captured | llm (not captured) | T2:row5:col3 |
+| PK (driver) | EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 23.1 | not captured | not captured | llm (not captured) | T2:row5:col4 |
+| PK (driver) | EC ATCC25922 — fAUC/MIC ratios | `Q21` · not captured | 37.7 | not captured | not captured | llm (not captured) | T2:row5:col5 |
+| PK (driver) | EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 17.1 | not captured | not captured | llm (not captured) | T2:row6:col3 |
+| PK (driver) | EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 28.3 | not captured | not captured | llm (not captured) | T2:row6:col4 |
+| PK (driver) | EC NCTC13441 — fAUC/MIC ratios | `Q21` · not captured | 47.2 | not captured | not captured | llm (not captured) | T2:row6:col5 |
+| PK (driver) | EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 10.5 | not captured | not captured | llm (not captured) | T2:row7:col3 |
+| PK (driver) | EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 18.4 | not captured | not captured | llm (not captured) | T2:row7:col4 |
+| PK (driver) | EC 997577 — fAUC/MIC ratios | `Q21` · not captured | 32.5 | not captured | not captured | llm (not captured) | T2:row7:col5 |
+| PK (driver) | EC ALL — fAUC/MIC ratios | `Q21` · not captured | 2.9 | not captured | not captured | llm (not captured) | T2:row8:col3 |
+| PK (driver) | EC ALL — fAUC/MIC ratios | `Q21` · not captured | 6.7 | not captured | not captured | llm (not captured) | T2:row8:col4 |
+| PK (driver) | EC ALL — fAUC/MIC ratios | `Q21` · not captured | 14.8 | not captured | not captured | llm (not captured) | T2:row8:col5 |
+| PK (driver) | EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 2.5 | not captured | not captured | llm (not captured) | T2:row9:col3 |
+| PK (driver) | EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 4.9 | not captured | not captured | llm (not captured) | T2:row9:col4 |
+| PK (driver) | EC IR5 — fAUC/MIC ratios | `Q21` · not captured | 10.2 | not captured | not captured | llm (not captured) | T2:row9:col5 |
+| PK (driver) | EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 2 | not captured | not captured | llm (not captured) | T2:row10:col3 |
+| PK (driver) | EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 4.8 | not captured | not captured | llm (not captured) | T2:row10:col4 |
+| PK (driver) | EC 1139570 — fAUC/MIC ratios | `Q21` · not captured | 9.8 | not captured | not captured | llm (not captured) | T2:row10:col5 |
+| PK (driver) | EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 22.6 | not captured | not captured | llm (not captured) | T2:row11:col3 |
+| PK (driver) | EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 37.2 | not captured | not captured | llm (not captured) | T2:row11:col4 |
+| PK (driver) | EC 771034 — fAUC/MIC ratios | `Q21` · not captured | 63 | not captured | not captured | llm (not captured) | T2:row11:col5 |
+| PK (driver) | EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 1.2 | not captured | not captured | llm (not captured) | T2:row12:col3 |
+| PK (driver) | EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 2.2 | not captured | not captured | llm (not captured) | T2:row12:col4 |
+| PK (driver) | EC 764023 — fAUC/MIC ratios | `Q21` · not captured | 4.4 | not captured | not captured | llm (not captured) | T2:row12:col5 |
+| PK (driver) | EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 21.4 | not captured | not captured | llm (not captured) | T2:row13:col3 |
+| PK (driver) | EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 29.9 | not captured | not captured | llm (not captured) | T2:row13:col4 |
+| PK (driver) | EC 1032890 — fAUC/MIC ratios | `Q21` · not captured | 39.5 | not captured | not captured | llm (not captured) | T2:row13:col5 |
+| PK (driver) | KP 1478677 — Change in VTCb | `Q61` · not captured | +1.73 | not captured | not captured | llm_corrected (not captured) | T2:row15:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

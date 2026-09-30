@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives Cell viability (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Temozolomide concentrations (µM, tested from 0 to 20 mM over 48 h) act on cell viability (%) measured by PrestoBlue assay, with an inhibitory direct sigmoidal Emax-type concentration-effect relationship (4-parameter equation with EC50, range and background); the paper does not state numeric EC50, Emax, or any turnover/kin (kin, kout, ke0) parameters, and no effect-compartment or production/elimination mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiménez_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

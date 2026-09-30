@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C04A&quot;,&quot;href&quot;:&quot;atc/C04A.md&quot;},{&quot;label&quot;:&quot;dihydroergocristine&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergocristine_Grognet1992_reference&quot;,&quot;label&quot;:&quot;Grognet_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dihydroergocristine_Grognet1992_reference&quot;,&quot;label&quot;:&quot;Grognet_1992_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # dihydroergocristine
 
@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Grognet_1992_reference](drugs/drug_dihydroergocristine/Dihydroergocristine_Grognet1992_reference.md) | model (no simulator) | 1-compartment, IV | 3 | Grognet JM et al., [The pharmacokinetics of dihydroergocri…, Arzneimittel-Forschung (1992) | — |
 
 ## ADME sites
 

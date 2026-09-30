@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rosuvastatin (concentrations from the PK model of Aoyama_2010) drives LDL-C reduction (%) (in %): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Rosuvastatin dose (mg) acts directly on the percentage reduction in LDL-C via a simple Emax dose-response model with fixed placebo effect E0 = -0.802%, giving Emax = 57.0% (SE 2.2) and ED50 = 1.74 mg (SE 0.38); race affects ED50 (θ = 0.564 for Asians vs 1 for Westerners, i.e. ~2-fold lower ED50 in Asians), and no mechanism beyond this direct Emax effect (no kin/kout or effect compartment) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2011`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,19 +31,19 @@ Yang J; Li LJ; Wang K; He YC; Sheng YC; Xu L; et al. et al. (2011). Acta pharmac
   ·  DOI: [10.1038/aps.2010.169](https://doi.org/10.1038/aps.2010.169)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max (%) — TVP | `Q320` · not captured | 57.0 | not captured | not captured | space_fold (not captured) | tab_3:row1:col1 |
-| E max (%) — SE | `Q320` · not captured | 2.2 | not captured | not captured | space_fold (not captured) | tab_3:row1:col2 |
-| E max (%) — RSE (%) | `Q320` · not captured | 3.86 | not captured | not captured | space_fold (not captured) | tab_3:row1:col3 |
-| ED 50 (mg) — TVP | `Q321` · not captured | 1.74 | mg | not captured | llm (not captured) | tab_3:row2:col1 |
-| ED 50 (mg) — SE | `Q321` · not captured | 0.38 | mg | not captured | llm (not captured) | tab_3:row2:col2 |
-| ED 50 (mg) — RSE (%) | `Q321` · not captured | 21.8 | mg | not captured | llm (not captured) | tab_3:row2:col3 |
-| E 0 (%) — TVP | `Q324` · not captured | -0.802 | not captured | not captured | space_fold (not captured) | tab_3:row4:col1 |
-| θ (race on ED 50 ) — TVP | `Q321` · not captured | 0.564 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col1 |
-| θ (race on ED 50 ) — SE | `Q321` · not captured | 0.161 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col2 |
-| θ (race on ED 50 ) — RSE (%) | `Q321` · not captured | 28.55 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col3 |
-| Inter-trial variability — TVP | `Q313` · not captured | 3.0 | not captured | not captured | llm (not captured) | tab_3:row6:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max (%) — TVP | `Q320` · not captured | 57.0 | not captured | not captured | space_fold (not captured) | tab_3:row1:col1 |
+| PD (effect) | E max (%) — SE | `Q320` · not captured | 2.2 | not captured | not captured | space_fold (not captured) | tab_3:row1:col2 |
+| PD (effect) | E max (%) — RSE (%) | `Q320` · not captured | 3.86 | not captured | not captured | space_fold (not captured) | tab_3:row1:col3 |
+| PD (effect) | ED 50 (mg) — TVP | `Q321` · not captured | 1.74 | mg | not captured | llm (not captured) | tab_3:row2:col1 |
+| PD (effect) | ED 50 (mg) — SE | `Q321` · not captured | 0.38 | mg | not captured | llm (not captured) | tab_3:row2:col2 |
+| PD (effect) | ED 50 (mg) — RSE (%) | `Q321` · not captured | 21.8 | mg | not captured | llm (not captured) | tab_3:row2:col3 |
+| PD (effect) | E 0 (%) — TVP | `Q324` · not captured | -0.802 | not captured | not captured | space_fold (not captured) | tab_3:row4:col1 |
+| PD (effect) | θ (race on ED 50 ) — TVP | `Q321` · not captured | 0.564 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col1 |
+| PD (effect) | θ (race on ED 50 ) — SE | `Q321` · not captured | 0.161 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col2 |
+| PD (effect) | θ (race on ED 50 ) — RSE (%) | `Q321` · not captured | 28.55 | race on ED 50 | not captured | llm (not captured) | tab_3:row5:col3 |
+| variability | Inter-trial variability — TVP | `Q313` · not captured | 3.0 | not captured | not captured | llm (not captured) | tab_3:row6:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

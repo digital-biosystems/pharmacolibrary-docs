@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives mustard green root growth (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Salicylic acid (recorded as potassium salicylate) inhibited mustard green root growth in a concentration-dependent manner, with inhibitory effects noted at 0.05 and 0.5 mM; the paper does not state a pharmacodynamic mechanism (e.g., Emax/IC50 parameters, kin/kout, or effect compartment) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ho_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

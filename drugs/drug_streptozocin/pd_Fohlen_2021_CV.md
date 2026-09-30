@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives cell viability (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Streptozocin concentrations (mg/mL) applied for 30 min to colorectal cancer cell lines were related to cell viability (%) measured by WST-1 assay at Day 4, fitted with a sigmoid Emax (Hill-type) dose-response model from which IC50 and IC90 (mg/mL) were extracted; the paper does not state a mechanism (e.g., kin/kout or effect-compartment) and no specific IC50/IC90 values for streptozocin appear in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fohlen_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

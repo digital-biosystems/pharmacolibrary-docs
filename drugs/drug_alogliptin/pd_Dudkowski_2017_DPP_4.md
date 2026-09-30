@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Alogliptin (concentrations from the PK model of Dudkowski_2017::14_to_18_years) drives DPP-4 inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Alogliptin (single oral 12.5 or 25 mg) directly inhibits plasma DPP-4 activity (%), with a sigmoid Emax-type relationship; the paper does not state a mechanism beyond direct DPP-4 enzyme inhibition and gives no IC50, EC50, kin, kout, ke0 or gamma. Observed Emax was approximately 80% (12.5 mg) and 90% (25 mg) in pediatric subjects and similar in adults, with median time to Emax of 2–4 h and inhibition remaining at least 50% at 24 h; AUEC0–24 was 55.4 and 70.4 %·hr in the two pediatric groups and 72.8 %·hr in adults.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dudkowski_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,21 +31,21 @@ Dudkowski C; Tsai M; Liu J; Zhao Z; Schmidt E; Xie J et al. (2017). European jou
   ·  DOI: [10.1007/s00228-016-2175-1](https://doi.org/10.1007/s00228-016-2175-1)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Time to Emax (hr) — 14 to &lt;18 years | `Q56` · not captured | 81.6 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
-| Time to Emax (hr) — 14 to &lt;18 years | `Q56` · not captured | 90.4 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
-| Time to Emax (hr) — Adults | `Q56` · not captured | 92.7 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
-| Emax (%) — ALO 12.5 mg | `Q320` · not captured | 83.7 | not captured | not captured | exact (not captured) | Tab3:row3:col3 |
-| Emax (%) — 14 to &lt;18 years | `Q320` · not captured | 1558 | not captured | not captured | exact (not captured) | Tab3:row3:col4 |
-| Emax (%) — ALO 25 mg | `Q320` · not captured | 89.3 | not captured | not captured | exact (not captured) | Tab3:row3:col5 |
-| Emax (%) — 14 to &lt;18 years | `Q320` · not captured | 1854 | not captured | not captured | exact (not captured) | Tab3:row3:col6 |
-| Emax (%) — Adults | `Q320` · not captured | 1890 | not captured | not captured | exact (not captured) | Tab3:row3:col7 |
-| AUEC0–24 (%·hr) — ALO 12.5 mg | `Q19` · not captured | 1570 | %·hr | not captured | llm (not captured) | Tab3:row4:col3 |
-| AUEC0–24 (%·hr) — 14 to &lt;18 years | `Q19` · not captured | 55.4 | %·hr | not captured | llm (not captured) | Tab3:row4:col4 |
-| AUEC0–24 (%·hr) — ALO 25 mg | `Q19` · not captured | 1699 | %·hr | not captured | llm (not captured) | Tab3:row4:col5 |
-| AUEC0–24 (%·hr) — 14 to &lt;18 years | `Q19` · not captured | 70.4 | %·hr | not captured | llm (not captured) | Tab3:row4:col6 |
-| AUEC0–24 (%·hr) — Adults | `Q19` · not captured | 72.8 | %·hr | not captured | llm (not captured) | Tab3:row4:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Time to Emax (hr) — 14 to &lt;18 years | `Q56` · not captured | 81.6 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
+| PK (driver) | Time to Emax (hr) — 14 to &lt;18 years | `Q56` · not captured | 90.4 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
+| PK (driver) | Time to Emax (hr) — Adults | `Q56` · not captured | 92.7 | hr | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
+| PD (effect) | Emax (%) — ALO 12.5 mg | `Q320` · not captured | 83.7 | not captured | not captured | exact (not captured) | Tab3:row3:col3 |
+| PD (effect) | Emax (%) — 14 to &lt;18 years | `Q320` · not captured | 1558 | not captured | not captured | exact (not captured) | Tab3:row3:col4 |
+| PD (effect) | Emax (%) — ALO 25 mg | `Q320` · not captured | 89.3 | not captured | not captured | exact (not captured) | Tab3:row3:col5 |
+| PD (effect) | Emax (%) — 14 to &lt;18 years | `Q320` · not captured | 1854 | not captured | not captured | exact (not captured) | Tab3:row3:col6 |
+| PD (effect) | Emax (%) — Adults | `Q320` · not captured | 1890 | not captured | not captured | exact (not captured) | Tab3:row3:col7 |
+| PK (driver) | AUEC0–24 (%·hr) — ALO 12.5 mg | `Q19` · not captured | 1570 | %·hr | not captured | llm (not captured) | Tab3:row4:col3 |
+| PK (driver) | AUEC0–24 (%·hr) — 14 to &lt;18 years | `Q19` · not captured | 55.4 | %·hr | not captured | llm (not captured) | Tab3:row4:col4 |
+| PK (driver) | AUEC0–24 (%·hr) — ALO 25 mg | `Q19` · not captured | 1699 | %·hr | not captured | llm (not captured) | Tab3:row4:col5 |
+| PK (driver) | AUEC0–24 (%·hr) — 14 to &lt;18 years | `Q19` · not captured | 70.4 | %·hr | not captured | llm (not captured) | Tab3:row4:col6 |
+| PK (driver) | AUEC0–24 (%·hr) — Adults | `Q19` · not captured | 72.8 | %·hr | not captured | llm (not captured) | Tab3:row4:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

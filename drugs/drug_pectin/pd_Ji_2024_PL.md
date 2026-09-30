@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nerol drives pectin lyase activity (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nerol (concentration in μL/mL) inhibits pectin lyase (PL) activity (%) in F. oxysporum: PL activity was unchanged after 12 h of nerol exposure but significantly reduced at 24–60 h, suggesting a delayed effect on cell wall-degrading enzyme activity. The paper does not state a pharmacodynamic model, mechanism of inhibition, or potency/rate parameters (no Imax, IC50, EC50 for PL, kin, kout, or ke0); the only EC50 given (0.46 μL/mL) pertains to mycelial growth inhibition, not PL activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sibutramine (measured concentrations) drives hERG current (in pA): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Sibutramine directly and concentration-dependently inhibits hERG (IKr) current in hERG-transfected HEK293 cells measured by whole-cell patch clamp, with an IC50 of 3.92 μM (Hillslope 1.9768); inhibition was 25.26 ± 1.71%, 52.62 ± 10.92%, and 96.51 ± 1.38% at 1, 3, and 10 μM. The paper does not state a full Emax/Imax value or any kinetic parameters (kin, kout, ke0) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yun_2015`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

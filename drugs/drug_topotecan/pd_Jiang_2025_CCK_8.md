@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Topotecan (concentrations from the PK model of Gallo_2000) drives cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Topotecan concentrations (nM, PK from Gallo_2000) drive inhibition of cell viability measured by CCK-8 (%); the paper excerpts provide no model family, mechanism, or parameter values (Imax, IC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jiang_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

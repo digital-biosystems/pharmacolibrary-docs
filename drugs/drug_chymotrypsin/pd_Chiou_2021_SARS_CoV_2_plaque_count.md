@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ugonin J (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ugonin J (UJ) concentrations (µM) inhibit the proteolytic activity of SARS-CoV-2 3CLpro, with an IC50 of 0.94 ± 0.19 µM (Lu, Kae and Ikae &gt;20 µM; reference boceprevir 2.53 ± 0.17 µM); at 12.5 µM UJ reduced relative 3CLpro activity from 100% to about 15%. The paper does not state a PD model structure (no Emax/kin/kout/ke0 values), but attributes inhibition to binding of UJ in the 3CLpro active site (hydrogen bonding with C145 and interactions with M165, E166 and H164).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chiou_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

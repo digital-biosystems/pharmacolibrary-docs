@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **Rejected: the alverine record reports only exposure statistics (tmax 0.7 h, Cmax 0.0021 μmol/L, AUClast 0.0036 μmol·h/L, AUC ratio 0.0064 for M3) with no distribution volume and no clearance, so it is not a compartmental population PK model.**

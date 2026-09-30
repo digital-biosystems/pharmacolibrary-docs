@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin and ciprofloxacin (measured concentrations) drive bacterial growth inhibition (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Enrofloxacin (and ciprofloxacin) concentrations (μg/mL) inhibit growth of E. coli, with effect measured as change in bacterial count (log10CFU/mL) over 24 h; the paper describes a sigmoid Emax model in which the driver is AUC/MIC in the ex vivo effect compartment (serum), with EC50 defined as the AUC/MIC producing 50% of maximum effect and N (Hill coefficient) describing curve steepness, but no numeric values for Emax, EC50, or N are given in the excerpts (MIC50 0.05 μg/mL; MIC of strain Anhui 112 for enrofloxacin 0.25 μg/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sang_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

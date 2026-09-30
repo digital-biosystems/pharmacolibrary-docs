@@ -27,9 +27,9 @@ Vildagliptin is also marketed in a combination product with [metformin] for the 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tatosian_2013_reference](drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md) | 1-compartment (no model) | 2 | Tatosian DA et al., Dipeptidyl peptidase-4 inhibition in pa…, Diabetes therapy : research… (2013) | [10.1007/s13300-013-0045-8](https://doi.org/10.1007/s13300-013-0045-8) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Tatosian_2013_reference](drugs/drug_vildagliptin/Vildagliptin_Tatosian2013_reference.md) | — | 1-compartment (no model) | 2 | Tatosian DA et al., Dipeptidyl peptidase-4 inhibition in pa…, Diabetes therapy : research… (2013) | [10.1007/s13300-013-0045-8](https://doi.org/10.1007/s13300-013-0045-8) |
 
 ## Pharmacogenomics (PGx)
 
@@ -53,6 +53,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | kidney | <sub>“…ctive cyano (57%) and amide (4%) hydrolysis products in the kidney.[A232488] LAY 151 (M20.…”</sub> | prose |
 | excretion | bile duct | <sub>“…xcreted in urine and about 15% of the dose was recovered in feces. Of the recovered dose i…”</sub> | prose |
 | excretion | kidney | <sub>“…85% of the radiolabelled vildagliptin dose was excreted in urine and about 15% of the dose…”</sub> | prose |

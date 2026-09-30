@@ -26,9 +26,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Biosca_2019](drugs/drug_domiphen/pd_Biosca_2019_unknown.md) | Biosca A et al., An ImmunoPEGliposome for Targeted Antim…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070341](https://doi.org/10.3390/pharmaceutics11070341) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Biosca_2019_unknown](drugs/drug_domiphen/pd_Biosca_2019_unknown.md) | parasite growth inhibition ← pyronaridine · inhibition effect | — | Biosca A et al., An ImmunoPEGliposome for Targeted Antim…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070341](https://doi.org/10.3390/pharmaceutics11070341) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

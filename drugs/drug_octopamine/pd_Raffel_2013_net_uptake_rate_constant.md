@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Desipramine (the dose) drives name (in Ki): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In rhesus macaque PET studies, intravenous desipramine (DMI) doses inhibit the cardiac net uptake rate constant Ki (mL/min/g) of the NET substrate 11C-GMO (Ki = K1k3/(k2+k3)), with Ki declining along a sigmoidal dose-response (Hill slope) model: IC50 = 0.087 ± 0.012 mg/kg DMI, Ymax = 0.130 ± 0.003 mL/min/g (r2 = 0.99), with a shallow negative Hill slope (nH of about 0.70 in magnitude); the paper does not state an explicit PD mechanism beyond DMI blocking available cardiac NET.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Raffel_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `dose_only`

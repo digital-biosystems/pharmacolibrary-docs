@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linezolid drives platelet count (in unknown): indirect response — drug inhibits the production of platelet count.
+
+**Model:** No model was generated from this record.
+
+> Linezolid concentrations act on circulating platelet count (PLTCIRC) via a semi-mechanistic myelosuppression (indirect response) model in which linezolid inhibits platelet formation/proliferation in the bone marrow (PDI, linear PD model; a small fraction, F_POPinhib 0.97 vs 0.03, was better described by stimulated platelet loss with an Emax model). The model comprises a progenitor/formation compartment, three transit compartments (Ktr = (1+Ntr)/MTT) and first-order circulating platelet elimination with Kcirc = ln2/PLTHALF (assumed equal to Ktr), with feedback; no numeric PD potency values (slope, MTT, PLTHALF) are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tsuji_2017`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -20,73 +30,73 @@ Tsuji Y; Holford NHG; Kasai H; Ogami C; Heo YA; Higashi Y; Mizoguchi A; To H; Ya
   ·  DOI: [10.1111/bcp.13262](https://doi.org/10.1111/bcp.13262)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL nonrenal | `Q79` · not captured | -1 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col3 |
-| CL nonrenal | `Q79` · not captured | 1.86 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col6 |
-| CL nonrenal | `Q79` · not captured | 1.76 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col7 |
-| CL nonrenal | `Q79` · not captured | 1.29 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col8 |
-| CL nonrenal — Bootstrap sample estimates | `Q79` · not captured | 2.17 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col9 |
-| CL renal | `Q26` · not captured | -1 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col4 |
-| CL renal | `Q26` · not captured | 1.44 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col7 |
-| CL renal | `Q26` · not captured | 1.42 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col8 |
-| CL renal — Bootstrap sample estimates | `Q26` · not captured | 0.83 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col9 |
-| CL renal | `Q26` · not captured | 2.20 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col10 |
-| VC | `Q63` · not captured | 22.9 | not captured | not captured | exact (not captured) | tab_0:row7:col7 |
-| VC | `Q63` · not captured | 19.3 | not captured | not captured | exact (not captured) | tab_0:row7:col8 |
-| VC — Bootstrap sample estimates | `Q63` · not captured | 8.1 | not captured | not captured | exact (not captured) | tab_0:row7:col9 |
-| VC | `Q63` · not captured | 29.4 | not captured | not captured | exact (not captured) | tab_0:row7:col10 |
-| VP | `Q64` · not captured | 24.7 | not captured | not captured | exact (not captured) | tab_0:row8:col7 |
-| VP | `Q64` · not captured | 24.4 | not captured | not captured | exact (not captured) | tab_0:row8:col8 |
-| VP — Bootstrap sample estimates | `Q64` · not captured | 16.7 | not captured | not captured | exact (not captured) | tab_0:row8:col9 |
-| VP | `Q64` · not captured | 34.2 | not captured | not captured | exact (not captured) | tab_0:row8:col10 |
-| Q | `Q30` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row9:col3 |
-| Q | `Q30` · not captured | 10.9 | not captured | not captured | exact (not captured) | tab_0:row9:col6 |
-| Q | `Q30` · not captured | 10.5 | not captured | not captured | exact (not captured) | tab_0:row9:col7 |
-| Q | `Q30` · not captured | 2.3 | not captured | not captured | exact (not captured) | tab_0:row9:col8 |
-| Q — Bootstrap sample estimates | `Q30` · not captured | 23.5 | not captured | not captured | exact (not captured) | tab_0:row9:col9 |
-| F | `Q40` · not captured | 0.922 | not captured | not captured | exact (not captured) | tab_0:row11:col7 |
-| F | `Q40` · not captured | 0.895 | not captured | not captured | exact (not captured) | tab_0:row11:col8 |
-| F — Bootstrap sample estimates | `Q40` · not captured | 0.747 | not captured | not captured | exact (not captured) | tab_0:row11:col9 |
-| F | `Q40` · not captured | 0.999 | not captured | not captured | exact (not captured) | tab_0:row11:col10 |
-| FU | `Q46` · not captured | 0.823 | not captured | not captured | exact (not captured) | tab_0:row13:col7 |
-| FU | `Q46` · not captured | 0.823 | not captured | not captured | exact (not captured) | tab_0:row13:col8 |
-| FU — Bootstrap sample estimates | `Q46` · not captured | 0.809 | not captured | not captured | exact (not captured) | tab_0:row13:col9 |
-| FU | `Q46` · not captured | 0.836 | not captured | not captured | exact (not captured) | tab_0:row13:col10 |
-| MTT | `Q81` · not captured | 113.0 | not captured | not captured | exact (not captured) | tab_0:row17:col7 |
-| MTT | `Q81` · not captured | 103.5 | not captured | not captured | exact (not captured) | tab_0:row17:col8 |
-| MTT — Bootstrap sample estimates | `Q81` · not captured | 65.4 | not captured | not captured | exact (not captured) | tab_0:row17:col9 |
-| MTT | `Q81` · not captured | 130.0 | not captured | not captured | exact (not captured) | tab_0:row17:col10 |
-| SC50 | `Q322` · not captured | -1 | unknown | not captured | llm (not captured) | tab_0:row23:col3 |
-| SC50 | `Q322` · not captured | 0.00364 | unknown | not captured | llm (not captured) | tab_0:row23:col5 |
-| SC50 | `Q322` · not captured | 0.324 | unknown | not captured | llm (not captured) | tab_0:row23:col6 |
-| SC50 | `Q322` · not captured | 0.00004 | unknown | not captured | llm (not captured) | tab_0:row23:col7 |
-| SC50 | `Q322` · not captured | 1.405 | unknown | not captured | llm (not captured) | tab_0:row23:col8 |
-| CL — Bootstrap sample estimates | `Q22` · not captured | 0.369 | not captured | not captured | exact (not captured) | tab_0:row27:col9 |
-| CL | `Q22` · not captured | 0.366 | not captured | not captured | exact (not captured) | tab_0:row27:col10 |
-| CL | `Q22` · not captured | 0.267 | not captured | not captured | exact (not captured) | tab_0:row27:col11 |
-| CL | `Q22` · not captured | 0.464 | not captured | not captured | exact (not captured) | tab_0:row27:col12 |
-| VC — Bootstrap sample estimates | `Q63` · not captured | 1.421 | not captured | not captured | exact (not captured) | tab_0:row28:col9 |
-| VC | `Q63` · not captured | 1.518 | not captured | not captured | exact (not captured) | tab_0:row28:col10 |
-| VC | `Q63` · not captured | 1.065 | not captured | not captured | exact (not captured) | tab_0:row28:col11 |
-| VC | `Q63` · not captured | 2.348 | not captured | not captured | exact (not captured) | tab_0:row28:col12 |
-| VP — Bootstrap sample estimates | `Q64` · not captured | 0.050 | not captured | not captured | exact (not captured) | tab_0:row29:col9 |
-| VP | `Q64` · not captured | 0.206 | not captured | not captured | exact (not captured) | tab_0:row29:col10 |
-| VP | `Q64` · not captured | 0.024 | not captured | not captured | exact (not captured) | tab_0:row29:col11 |
-| VP | `Q64` · not captured | 0.629 | not captured | not captured | exact (not captured) | tab_0:row29:col12 |
-| Q — Bootstrap sample estimates | `Q30` · not captured | 1.822 | not captured | not captured | exact (not captured) | tab_0:row30:col9 |
-| Q | `Q30` · not captured | 1.624 | not captured | not captured | exact (not captured) | tab_0:row30:col10 |
-| Q | `Q30` · not captured | 0.585 | not captured | not captured | exact (not captured) | tab_0:row30:col11 |
-| Q | `Q30` · not captured | 2.447 | not captured | not captured | exact (not captured) | tab_0:row30:col12 |
-| F — Bootstrap sample estimates | `Q40` · not captured | 0 | not captured | not captured | exact (not captured) | tab_0:row32:col9 |
-| MTT — Bootstrap sample estimates | `Q81` · not captured | 0.239 | not captured | not captured | exact (not captured) | tab_0:row33:col9 |
-| MTT | `Q81` · not captured | 0.205 | not captured | not captured | exact (not captured) | tab_0:row33:col10 |
-| MTT | `Q81` · not captured | 0.002 | not captured | not captured | exact (not captured) | tab_0:row33:col11 |
-| MTT | `Q81` · not captured | 0.444 | not captured | not captured | exact (not captured) | tab_0:row33:col12 |
-| RUV PROP_TOTAL | `Q316` · not captured | 0.318 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col7 |
-| RUV PROP_TOTAL | `Q316` · not captured | 0.311 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col8 |
-| RUV PROP_TOTAL — Bootstrap sample estimates | `Q315` · not captured | 0.258 | not captured | not captured | llm_confirmed (not captured) | tab_0:row40:col9 |
-| RUV PROP_TOTAL | `Q316` · not captured | 0.356 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col10 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL nonrenal | `Q79` · not captured | -1 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col3 |
+| PK (driver) | CL nonrenal | `Q79` · not captured | 1.86 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col6 |
+| PK (driver) | CL nonrenal | `Q79` · not captured | 1.76 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col7 |
+| PK (driver) | CL nonrenal | `Q79` · not captured | 1.29 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col8 |
+| PK (driver) | CL nonrenal — Bootstrap sample estimates | `Q79` · not captured | 2.17 | not captured | not captured | llm_corrected (not captured) | tab_0:row5:col9 |
+| PK (driver) | CL renal | `Q26` · not captured | -1 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col4 |
+| PK (driver) | CL renal | `Q26` · not captured | 1.44 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col7 |
+| PK (driver) | CL renal | `Q26` · not captured | 1.42 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col8 |
+| PK (driver) | CL renal — Bootstrap sample estimates | `Q26` · not captured | 0.83 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col9 |
+| PK (driver) | CL renal | `Q26` · not captured | 2.20 | not captured | not captured | llm_corrected (not captured) | tab_0:row6:col10 |
+| PK (driver) | VC | `Q63` · not captured | 22.9 | not captured | not captured | exact (not captured) | tab_0:row7:col7 |
+| PK (driver) | VC | `Q63` · not captured | 19.3 | not captured | not captured | exact (not captured) | tab_0:row7:col8 |
+| PK (driver) | VC — Bootstrap sample estimates | `Q63` · not captured | 8.1 | not captured | not captured | exact (not captured) | tab_0:row7:col9 |
+| PK (driver) | VC | `Q63` · not captured | 29.4 | not captured | not captured | exact (not captured) | tab_0:row7:col10 |
+| PK (driver) | VP | `Q64` · not captured | 24.7 | not captured | not captured | exact (not captured) | tab_0:row8:col7 |
+| PK (driver) | VP | `Q64` · not captured | 24.4 | not captured | not captured | exact (not captured) | tab_0:row8:col8 |
+| PK (driver) | VP — Bootstrap sample estimates | `Q64` · not captured | 16.7 | not captured | not captured | exact (not captured) | tab_0:row8:col9 |
+| PK (driver) | VP | `Q64` · not captured | 34.2 | not captured | not captured | exact (not captured) | tab_0:row8:col10 |
+| PK (driver) | Q | `Q30` · not captured | -1 | not captured | not captured | exact (not captured) | tab_0:row9:col3 |
+| PK (driver) | Q | `Q30` · not captured | 10.9 | not captured | not captured | exact (not captured) | tab_0:row9:col6 |
+| PK (driver) | Q | `Q30` · not captured | 10.5 | not captured | not captured | exact (not captured) | tab_0:row9:col7 |
+| PK (driver) | Q | `Q30` · not captured | 2.3 | not captured | not captured | exact (not captured) | tab_0:row9:col8 |
+| PK (driver) | Q — Bootstrap sample estimates | `Q30` · not captured | 23.5 | not captured | not captured | exact (not captured) | tab_0:row9:col9 |
+| PK (driver) | F | `Q40` · not captured | 0.922 | not captured | not captured | exact (not captured) | tab_0:row11:col7 |
+| PK (driver) | F | `Q40` · not captured | 0.895 | not captured | not captured | exact (not captured) | tab_0:row11:col8 |
+| PK (driver) | F — Bootstrap sample estimates | `Q40` · not captured | 0.747 | not captured | not captured | exact (not captured) | tab_0:row11:col9 |
+| PK (driver) | F | `Q40` · not captured | 0.999 | not captured | not captured | exact (not captured) | tab_0:row11:col10 |
+| PK (driver) | FU | `Q46` · not captured | 0.823 | not captured | not captured | exact (not captured) | tab_0:row13:col7 |
+| PK (driver) | FU | `Q46` · not captured | 0.823 | not captured | not captured | exact (not captured) | tab_0:row13:col8 |
+| PK (driver) | FU — Bootstrap sample estimates | `Q46` · not captured | 0.809 | not captured | not captured | exact (not captured) | tab_0:row13:col9 |
+| PK (driver) | FU | `Q46` · not captured | 0.836 | not captured | not captured | exact (not captured) | tab_0:row13:col10 |
+| PK (driver) | MTT | `Q81` · not captured | 113.0 | not captured | not captured | exact (not captured) | tab_0:row17:col7 |
+| PK (driver) | MTT | `Q81` · not captured | 103.5 | not captured | not captured | exact (not captured) | tab_0:row17:col8 |
+| PK (driver) | MTT — Bootstrap sample estimates | `Q81` · not captured | 65.4 | not captured | not captured | exact (not captured) | tab_0:row17:col9 |
+| PK (driver) | MTT | `Q81` · not captured | 130.0 | not captured | not captured | exact (not captured) | tab_0:row17:col10 |
+| PD (effect) | SC50 | `Q322` · not captured | -1 | unknown | not captured | llm (not captured) | tab_0:row23:col3 |
+| PD (effect) | SC50 | `Q322` · not captured | 0.00364 | unknown | not captured | llm (not captured) | tab_0:row23:col5 |
+| PD (effect) | SC50 | `Q322` · not captured | 0.324 | unknown | not captured | llm (not captured) | tab_0:row23:col6 |
+| PD (effect) | SC50 | `Q322` · not captured | 0.00004 | unknown | not captured | llm (not captured) | tab_0:row23:col7 |
+| PD (effect) | SC50 | `Q322` · not captured | 1.405 | unknown | not captured | llm (not captured) | tab_0:row23:col8 |
+| PK (driver) | CL — Bootstrap sample estimates | `Q22` · not captured | 0.369 | not captured | not captured | exact (not captured) | tab_0:row27:col9 |
+| PK (driver) | CL | `Q22` · not captured | 0.366 | not captured | not captured | exact (not captured) | tab_0:row27:col10 |
+| PK (driver) | CL | `Q22` · not captured | 0.267 | not captured | not captured | exact (not captured) | tab_0:row27:col11 |
+| PK (driver) | CL | `Q22` · not captured | 0.464 | not captured | not captured | exact (not captured) | tab_0:row27:col12 |
+| PK (driver) | VC — Bootstrap sample estimates | `Q63` · not captured | 1.421 | not captured | not captured | exact (not captured) | tab_0:row28:col9 |
+| PK (driver) | VC | `Q63` · not captured | 1.518 | not captured | not captured | exact (not captured) | tab_0:row28:col10 |
+| PK (driver) | VC | `Q63` · not captured | 1.065 | not captured | not captured | exact (not captured) | tab_0:row28:col11 |
+| PK (driver) | VC | `Q63` · not captured | 2.348 | not captured | not captured | exact (not captured) | tab_0:row28:col12 |
+| PK (driver) | VP — Bootstrap sample estimates | `Q64` · not captured | 0.050 | not captured | not captured | exact (not captured) | tab_0:row29:col9 |
+| PK (driver) | VP | `Q64` · not captured | 0.206 | not captured | not captured | exact (not captured) | tab_0:row29:col10 |
+| PK (driver) | VP | `Q64` · not captured | 0.024 | not captured | not captured | exact (not captured) | tab_0:row29:col11 |
+| PK (driver) | VP | `Q64` · not captured | 0.629 | not captured | not captured | exact (not captured) | tab_0:row29:col12 |
+| PK (driver) | Q — Bootstrap sample estimates | `Q30` · not captured | 1.822 | not captured | not captured | exact (not captured) | tab_0:row30:col9 |
+| PK (driver) | Q | `Q30` · not captured | 1.624 | not captured | not captured | exact (not captured) | tab_0:row30:col10 |
+| PK (driver) | Q | `Q30` · not captured | 0.585 | not captured | not captured | exact (not captured) | tab_0:row30:col11 |
+| PK (driver) | Q | `Q30` · not captured | 2.447 | not captured | not captured | exact (not captured) | tab_0:row30:col12 |
+| PK (driver) | F — Bootstrap sample estimates | `Q40` · not captured | 0 | not captured | not captured | exact (not captured) | tab_0:row32:col9 |
+| PK (driver) | MTT — Bootstrap sample estimates | `Q81` · not captured | 0.239 | not captured | not captured | exact (not captured) | tab_0:row33:col9 |
+| PK (driver) | MTT | `Q81` · not captured | 0.205 | not captured | not captured | exact (not captured) | tab_0:row33:col10 |
+| PK (driver) | MTT | `Q81` · not captured | 0.002 | not captured | not captured | exact (not captured) | tab_0:row33:col11 |
+| PK (driver) | MTT | `Q81` · not captured | 0.444 | not captured | not captured | exact (not captured) | tab_0:row33:col12 |
+| variability | RUV PROP_TOTAL | `Q316` · not captured | 0.318 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col7 |
+| variability | RUV PROP_TOTAL | `Q316` · not captured | 0.311 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col8 |
+| variability | RUV PROP_TOTAL — Bootstrap sample estimates | `Q315` · not captured | 0.258 | not captured | not captured | llm_confirmed (not captured) | tab_0:row40:col9 |
+| variability | RUV PROP_TOTAL | `Q316` · not captured | 0.356 | not captured | not captured | llm_corrected (not captured) | tab_0:row40:col10 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

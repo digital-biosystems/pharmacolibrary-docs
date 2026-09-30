@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Overgaard_2016::total) drives name (in proportion) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Liraglutide exposure (plasma concentration, nmol/L, from the population PK model) was related to the proportion of participants achieving at least 5% weight loss via an Emax exposure-response model (direct Emax-type relationship; the paper does not state a mechanistic production/elimination link). No numeric Emax, EC50 or gamma values for this binary response are given in the excerpts; the underlying PK had absorption rate constant 0.0813 (unit not stated), apparent clearance 1.01 L/h and apparent volume of distribution 13.8 L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Carlsson_2021`
 - **model family:** `unknown`
 - **driver:** `cited_pk`
@@ -21,19 +31,19 @@ Carlsson Petri KC; Hale PM; Hesse D; Rathor N; Mastrandrea LD et al. (2021). Ped
   ·  DOI: [10.1111/ijpo.12799](https://doi.org/10.1111/ijpo.12799)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Absorption rate constant — Estimate | `Q49` · not captured | 0.0813 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row1:col2 |
-| Apparent clearance — Estimate | `Q27` · not captured | 1.01 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col2 |
-| Apparent clearance — 95% CI lower bound | `Q27` · not captured | 0.922 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col3 |
-| Apparent clearance — 95% CI upper bound | `Q27` · not captured | 1.09 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col4 |
-| Apparent clearance — RSE (%) | `Q27` · not captured | 4.25 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col5 |
-| Apparent clearance — IIV (%CV) | `Q27` · not captured | 31.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col6 |
-| Apparent clearance — Shrinkage (%) | `Q27` · not captured | 10.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col7 |
-| Apparent volume of distribution — Estimate | `Q76` · not captured | 13.8 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col2 |
-| Apparent volume of distribution — IIV (%CV) | `Q76` · not captured | 31.7 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col6 |
-| Apparent volume of distribution — Shrinkage (%) | `Q76` · not captured | 19.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col7 |
-| NA — Shrinkage (%) | `Q318` · not captured | 6.4 | not captured | not captured | llm (not captured) | ijpo12799-tbl-0003:row9:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Absorption rate constant — Estimate | `Q49` · not captured | 0.0813 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row1:col2 |
+| PK (driver) | Apparent clearance — Estimate | `Q27` · not captured | 1.01 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col2 |
+| PK (driver) | Apparent clearance — 95% CI lower bound | `Q27` · not captured | 0.922 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col3 |
+| PK (driver) | Apparent clearance — 95% CI upper bound | `Q27` · not captured | 1.09 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col4 |
+| PK (driver) | Apparent clearance — RSE (%) | `Q27` · not captured | 4.25 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col5 |
+| PK (driver) | Apparent clearance — IIV (%CV) | `Q27` · not captured | 31.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col6 |
+| PK (driver) | Apparent clearance — Shrinkage (%) | `Q27` · not captured | 10.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row2:col7 |
+| PK (driver) | Apparent volume of distribution — Estimate | `Q76` · not captured | 13.8 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col2 |
+| PK (driver) | Apparent volume of distribution — IIV (%CV) | `Q76` · not captured | 31.7 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col6 |
+| PK (driver) | Apparent volume of distribution — Shrinkage (%) | `Q76` · not captured | 19.2 | not captured | not captured | exact (not captured) | ijpo12799-tbl-0003:row3:col7 |
+| variability | NA — Shrinkage (%) | `Q318` · not captured | 6.4 | not captured | not captured | llm (not captured) | ijpo12799-tbl-0003:row9:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

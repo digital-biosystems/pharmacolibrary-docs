@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rolipram drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Salbutamol concentration-dependently relaxes the human isolated bronchus (direct concentration-response under resting tone), acting as a beta-adrenoceptor agonist that elevates tissue cyclic AMP leading to airway smooth muscle relaxation; the paper reports pD2 = 7.12 ± 0.17 (n = 10) and Emax = 83 ± 2.4% of the maximal relaxation induced by theophylline 3 mM, with no kinetic (kin/kout/ke0) parameters given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qian_1993`
 - **model family:** `emax`
 - **driver:** `not_resolved`

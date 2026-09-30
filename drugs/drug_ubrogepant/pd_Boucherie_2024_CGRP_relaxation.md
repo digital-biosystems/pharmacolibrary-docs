@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zavegepant (measured concentrations) drives CGRP-induced relaxation (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In human isolated middle meningeal arteries, zavegepant (10 nM, 30 min pre-incubation) acts as a competitive antagonist of CGRP-induced vasorelaxation (Emax 75.1 ± 11.6%), shifting the CGRP concentration–response curve rightward (pEC50 from 8.40 ± 0.09 to 6.38 ± 0.07), with pKB 10.02 ± 0.07; no Imax/IC50, kin/kout or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boucherie_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,24 +30,24 @@ Boucherie DM; Dammers R; Vincent A; Danser AHJ; MaassenVanDenBrink A et al. (202
   ·  DOI: [10.1186/s10194-024-01846-8](https://doi.org/10.1186/s10194-024-01846-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Free fraction — Rimegepant | `Q46` · not captured | 56.8 | not captured | not captured | exact (not captured) | Tab1:row7:col3 |
-| Free fraction | `Q46` · not captured | 64.5 | not captured | not captured | exact (not captured) | Tab1:row7:col4 |
-| Free fraction — Atogepant | `Q46` · not captured | 17.6 | not captured | not captured | exact (not captured) | Tab1:row7:col5 |
-| Free fraction — Ubrogepant | `Q46` · not captured | 36.8 | not captured | not captured | exact (not captured) | Tab1:row7:col6 |
-| Free fraction | `Q46` · not captured | 33.8 | not captured | not captured | exact (not captured) | Tab1:row7:col7 |
-| Free fraction | `Q46` · not captured | 79.0 | not captured | not captured | exact (not captured) | Tab1:row7:col8 |
-| Free fraction — Zavegepant | `Q46` · not captured | 2.1 | not captured | not captured | exact (not captured) | Tab1:row7:col9 |
-| Free fraction | `Q46` · not captured | 2.6 | not captured | not captured | exact (not captured) | Tab1:row7:col10 |
-| Free fraction — Rimegepant | `Q46` · not captured | 5.87 | not captured | not captured | exact (not captured) | Tab1:row8:col3 |
-| Free fraction | `Q46` · not captured | 5.82 | not captured | not captured | exact (not captured) | Tab1:row8:col4 |
-| Free fraction — Atogepant | `Q46` · not captured | 5.18 | not captured | not captured | exact (not captured) | Tab1:row8:col5 |
-| Free fraction — Ubrogepant | `Q46` · not captured | 6.11 | not captured | not captured | exact (not captured) | Tab1:row8:col6 |
-| Free fraction | `Q46` · not captured | 6.15 | not captured | not captured | exact (not captured) | Tab1:row8:col7 |
-| Free fraction | `Q46` · not captured | 5.78 | not captured | not captured | exact (not captured) | Tab1:row8:col8 |
-| Free fraction — Zavegepant | `Q46` · not captured | 7.04 | not captured | not captured | exact (not captured) | Tab1:row8:col9 |
-| Free fraction | `Q46` · not captured | 6.95 | not captured | not captured | exact (not captured) | Tab1:row8:col10 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Free fraction — Rimegepant | `Q46` · not captured | 56.8 | not captured | not captured | exact (not captured) | Tab1:row7:col3 |
+| PK (driver) | Free fraction | `Q46` · not captured | 64.5 | not captured | not captured | exact (not captured) | Tab1:row7:col4 |
+| PK (driver) | Free fraction — Atogepant | `Q46` · not captured | 17.6 | not captured | not captured | exact (not captured) | Tab1:row7:col5 |
+| PK (driver) | Free fraction — Ubrogepant | `Q46` · not captured | 36.8 | not captured | not captured | exact (not captured) | Tab1:row7:col6 |
+| PK (driver) | Free fraction | `Q46` · not captured | 33.8 | not captured | not captured | exact (not captured) | Tab1:row7:col7 |
+| PK (driver) | Free fraction | `Q46` · not captured | 79.0 | not captured | not captured | exact (not captured) | Tab1:row7:col8 |
+| PK (driver) | Free fraction — Zavegepant | `Q46` · not captured | 2.1 | not captured | not captured | exact (not captured) | Tab1:row7:col9 |
+| PK (driver) | Free fraction | `Q46` · not captured | 2.6 | not captured | not captured | exact (not captured) | Tab1:row7:col10 |
+| PK (driver) | Free fraction — Rimegepant | `Q46` · not captured | 5.87 | not captured | not captured | exact (not captured) | Tab1:row8:col3 |
+| PK (driver) | Free fraction | `Q46` · not captured | 5.82 | not captured | not captured | exact (not captured) | Tab1:row8:col4 |
+| PK (driver) | Free fraction — Atogepant | `Q46` · not captured | 5.18 | not captured | not captured | exact (not captured) | Tab1:row8:col5 |
+| PK (driver) | Free fraction — Ubrogepant | `Q46` · not captured | 6.11 | not captured | not captured | exact (not captured) | Tab1:row8:col6 |
+| PK (driver) | Free fraction | `Q46` · not captured | 6.15 | not captured | not captured | exact (not captured) | Tab1:row8:col7 |
+| PK (driver) | Free fraction | `Q46` · not captured | 5.78 | not captured | not captured | exact (not captured) | Tab1:row8:col8 |
+| PK (driver) | Free fraction — Zavegepant | `Q46` · not captured | 7.04 | not captured | not captured | exact (not captured) | Tab1:row8:col9 |
+| PK (driver) | Free fraction | `Q46` · not captured | 6.95 | not captured | not captured | exact (not captured) | Tab1:row8:col10 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

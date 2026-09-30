@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives Mean arterial pressure (in mmHg): indirect response — drug inhibits the loss of Mean arterial pressure.
+
+**Model:** No model was generated from this record.
+
+> For salbutamol acting on mean arterial pressure (MAP, mmHg) in dogs, the record identifies an indirect response model (indirect response II), but the paper excerpts do not state the specific mechanism, effect direction, or any potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for salbutamol; the driver concentration is unresolved.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatasubramanian_2020`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

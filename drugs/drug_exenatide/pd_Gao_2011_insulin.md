@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Exendin-4-GLP-1R complex drives name (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> Exendin-4, acting through its GLP-1R binding (TMDD model with k_on/k_off receptor binding and k_int internalization), stimulates insulin secretion in GK rats; the paper does not report numeric PD potency or rate values (e.g., Imax, IC50, kin, kout) in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gao_2011`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

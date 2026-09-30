@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cafedrine/theodrenaline or ephedrine drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Intravenous boluses of cafedrine/theodrenaline (10–200 mg) or ephedrine (5–40 mg) stimulate mean arterial pressure (MAP, mmHg) in parturients with spinal hypotension, modeled with a population K/PD NLME framework in which a hypothetical kinetic (exposure) component drives a delayed effect via transit compartments linked to the response by Emax-type (also testing linear and Hill) models; the paper does not report numeric potency (EC50/Emax) or rate (ktr/ke0) values in the excerpts, and kinetic parameters are empirical descriptors of effect delay/persistence rather than true PK quantities.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dings_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

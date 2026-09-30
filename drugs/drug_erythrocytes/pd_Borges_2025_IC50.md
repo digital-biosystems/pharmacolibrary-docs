@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carvacrol (measured concentrations) drives Leishmania infantum inhibition (in µg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carvacrol (free Car, IC50 11.86 µg/mL; HC50 0.098 µg/mL) and its chitosan nanoparticle formulations (NPChi IC50 4.51 µg/mL; NPCar IC50 2.659 µg/mL) inhibit Leishmania infantum promastigote growth in vitro (MTT assay, 72 h), with amphotericin B as reference (IC50 1.42 µg/mL, HC50 1.94 µg/mL); IC50/HC50 were obtained by nonlinear regression in GraphPad Prism, and the paper does not describe a pharmacodynamic mechanism or model beyond these inhibitory concentrations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Borges_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Borges JC; Barros ABC; Cardoso LL; Keesen TLS; Campos LAA; Cavalcanti IMF; et al
   ·  DOI: [10.1002/cbdv.202403341](https://doi.org/10.1002/cbdv.202403341)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| NPChi — IC50 (µg/mL) | `Q322` · not captured | 4.51 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row1:col1 |
-| Car — IC50 (µg/mL) | `Q322` · not captured | 11.86 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row3:col1 |
-| Car — HC50 (µg/mL) | `Q321` · not captured | 0.098 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row3:col2 |
-| AmB — IC50 (µg/mL) | `Q322` · not captured | 1.42 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row4:col1 |
-| AmB — HC50 (µg/mL) | `Q322` · not captured | 1.94 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | NPChi — IC50 (µg/mL) | `Q322` · not captured | 4.51 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row1:col1 |
+| PD (effect) | Car — IC50 (µg/mL) | `Q322` · not captured | 11.86 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row3:col1 |
+| PD (effect) | Car — HC50 (µg/mL) | `Q321` · not captured | 0.098 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row3:col2 |
+| PD (effect) | AmB — IC50 (µg/mL) | `Q322` · not captured | 1.42 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row4:col1 |
+| PD (effect) | AmB — HC50 (µg/mL) | `Q322` · not captured | 1.94 | µg/mL | not captured | llm (not captured) | cbdv202403341-tbl-0003:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

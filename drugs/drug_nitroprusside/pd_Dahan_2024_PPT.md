@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-ketamine, R-ketamine, S-norketamine, R-norketamine drive pain pressure threshold: direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> S- and R-ketamine effect-site concentrations (nmol/mL) increase pain pressure threshold (PPT, Newton) via a direct sigmoid Emax model (with an effect-compartment equilibrating with plasma, t1/2ke0 = ln(2)/ke0), with potency expressed as C100,SK and C100,RK (effect-site concentrations increasing PPT by 100% relative to baseline) and a shape factor γ; the paper does not state the fitted values of these parameters in the excerpts. SNP (nitroprusside) reduced the analgesic effect, with peak PPT increases of 86 N (racemic) and 70 N (esketamine) without SNP versus 70 N and 72 N with SNP.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dahan_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

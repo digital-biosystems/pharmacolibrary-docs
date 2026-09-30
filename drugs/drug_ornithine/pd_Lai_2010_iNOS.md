@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** CMA, CEA, MG-H1, CML (measured concentrations) drive iNOS activity (in % control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> CMA, CEA, MG-H1 and CML (5–5000 µM) directly inhibit iNOS activity (conversion of L-[14C]-arginine to citrulline, % control) in vitro in a concentration-dependent manner; iNOS IC50 values are CMA 1160 ± 40 µM, MG-H1 2970 ± 560 µM, and &gt;5000 µM for CEA and CML, versus L-NMMA 10 ± 3 µM and ADMA 24 ± 1 µM. The paper does not state a mechanistic model (e.g. kin/kout or Emax parameters), only these IC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lai_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,21 +31,21 @@ Lai YL; Aoyama S; Nagai R; Miyoshi N; Ohshima H et al. (2010). Journal of clinic
   ·  DOI: [10.3164/jcbn.09-104](https://doi.org/10.3164/jcbn.09-104)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (µM) — L-NMMA | `Q322` · not captured | 5 | µM | not captured | exact (not captured) | T1:row0:col3 |
-| IC50 (µM) — ADMA | `Q322` · not captured | 16 | µM | not captured | exact (not captured) | T1:row0:col4 |
-| IC50 (µM) — CMA | `Q322` · not captured | 830 | µM | not captured | exact (not captured) | T1:row0:col5 |
-| IC50 (µM) — CEA | `Q322` · not captured | 3870 | µM | not captured | exact (not captured) | T1:row0:col6 |
-| IC50 (µM) — MG-H1 | `Q322` · not captured | 1280 | µM | not captured | exact (not captured) | T1:row0:col7 |
-| IC50 (µM) — L-NMMA | `Q322` · not captured | 10 | µM | not captured | exact (not captured) | T1:row1:col3 |
-| IC50 (µM) — ADMA | `Q322` · not captured | 24 | µM | not captured | exact (not captured) | T1:row1:col4 |
-| IC50 (µM) — CMA | `Q322` · not captured | 1160 | µM | not captured | exact (not captured) | T1:row1:col5 |
-| IC50 (µM) — MG-H1 | `Q322` · not captured | 2970 | µM | not captured | exact (not captured) | T1:row1:col7 |
-| IC50 (µM) — L-NMMA | `Q322` · not captured | 8 | µM | not captured | exact (not captured) | T1:row2:col3 |
-| IC50 (µM) — ADMA | `Q322` · not captured | 23 | µM | not captured | exact (not captured) | T1:row2:col4 |
-| IC50 (µM) — MG-H1 | `Q322` · not captured | 4170 | µM | not captured | exact (not captured) | T1:row2:col7 |
-| IC50 (µM) — CML | `Q322` · not captured | 1930 | µM | not captured | exact (not captured) | T1:row2:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (µM) — L-NMMA | `Q322` · not captured | 5 | µM | not captured | exact (not captured) | T1:row0:col3 |
+| PD (effect) | IC50 (µM) — ADMA | `Q322` · not captured | 16 | µM | not captured | exact (not captured) | T1:row0:col4 |
+| PD (effect) | IC50 (µM) — CMA | `Q322` · not captured | 830 | µM | not captured | exact (not captured) | T1:row0:col5 |
+| PD (effect) | IC50 (µM) — CEA | `Q322` · not captured | 3870 | µM | not captured | exact (not captured) | T1:row0:col6 |
+| PD (effect) | IC50 (µM) — MG-H1 | `Q322` · not captured | 1280 | µM | not captured | exact (not captured) | T1:row0:col7 |
+| PD (effect) | IC50 (µM) — L-NMMA | `Q322` · not captured | 10 | µM | not captured | exact (not captured) | T1:row1:col3 |
+| PD (effect) | IC50 (µM) — ADMA | `Q322` · not captured | 24 | µM | not captured | exact (not captured) | T1:row1:col4 |
+| PD (effect) | IC50 (µM) — CMA | `Q322` · not captured | 1160 | µM | not captured | exact (not captured) | T1:row1:col5 |
+| PD (effect) | IC50 (µM) — MG-H1 | `Q322` · not captured | 2970 | µM | not captured | exact (not captured) | T1:row1:col7 |
+| PD (effect) | IC50 (µM) — L-NMMA | `Q322` · not captured | 8 | µM | not captured | exact (not captured) | T1:row2:col3 |
+| PD (effect) | IC50 (µM) — ADMA | `Q322` · not captured | 23 | µM | not captured | exact (not captured) | T1:row2:col4 |
+| PD (effect) | IC50 (µM) — MG-H1 | `Q322` · not captured | 4170 | µM | not captured | exact (not captured) | T1:row2:col7 |
+| PD (effect) | IC50 (µM) — CML | `Q322` · not captured | 1930 | µM | not captured | exact (not captured) | T1:row2:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

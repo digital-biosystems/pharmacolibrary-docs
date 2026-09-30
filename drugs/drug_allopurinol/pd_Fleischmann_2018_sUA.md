@@ -14,9 +14,11 @@
 
 **As extracted:** Verinurad drives serum urate (in mg/dL) (inhibition; the model form was not identified).
 
-> The paper describes a direct dose-dependent Emax effect of verinurad (2.5–20 mg) combined with allopurinol (300 mg) on serum urate, with maximum percent decreases (Emax) ranging from 47% to 74% depending on the verinurad dose. The mechanism is identified as verinurad inhibiting the URAT1 transporter, while allopurinol inhibits urate production, but the paper does not provide specific potency parameters (IC50/EC50) or rate constants (ke0, kin, kout) for the pharmacodynamic model.
+**Model:** No model was generated from this record.
+
+> In gout patients on allopurinol 300 mg once daily, verinurad doses of 2.5–20 mg produced dose-dependent maximum decreases in serum urate (sUA) from baseline (Emax) at 7–12 hours postdose, with least-squares mean Emax of 47%, 59%, 60%, 67%, 68% and 74% for 2.5, 5, 7.5, 10, 15 and 20 mg, versus 40%, 54% and 54% for allopurinol 300 mg once daily, 600 mg once daily and 300 mg twice daily alone. Mechanistically, verinurad is a potent selective URAT1 inhibitor (uricosuric, increasing uric acid excretion) combined with allopurinol, a xanthine oxidase inhibitor that reduces urate production; the paper reports no formal PD model parameters (no Imax, IC50, EC50, kin, kout or ke0 values).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Fleischmann_2018`
 - **model family:** `unknown`

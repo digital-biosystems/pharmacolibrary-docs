@@ -30,11 +30,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Ferris_2012](drugs/drug_phentermine/pd_Ferris_2012_apparent_Km.md) | Ferris MJ et al., Cocaine self-administration produces ph…, Neuropsychopharmacology : o… (2012) | [10.1038/npp.2012.17](https://doi.org/10.1038/npp.2012.17) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Han_2015](drugs/drug_phentermine/pd_Han_2015_BW.md) | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Sharma_2018](drugs/drug_phentermine/pd_Sharma_2018_BW.md) | Sharma VD et al., Model-Based Approach to Predict Adheren…, Journal of clinical pharmac… (2018) | [10.1002/jcph.994](https://doi.org/10.1002/jcph.994) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Ferris_2012_apparent_Km](drugs/drug_phentermine/pd_Ferris_2012_apparent_Km.md) | dopamine uptake inhibition ← cocaine · direct Emax (saturable) effect | — | Ferris MJ et al., Cocaine self-administration produces ph…, Neuropsychopharmacology : o… (2012) | [10.1038/npp.2012.17](https://doi.org/10.1038/npp.2012.17) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> | [Han_2015_BW](drugs/drug_phentermine/pd_Han_2015_BW.md) | body weight ← M1 and M2 (sibutramine metabolites) · direct sigmoid Emax (Hill) effect | — | Han S et al., Exposure-response model for sibutramine…, Drug design, development an… (2015) | [10.2147/dddt.s85435](https://doi.org/10.2147/dddt.s85435) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Sharma_2018_BW](drugs/drug_phentermine/pd_Sharma_2018_BW.md) | body weight ← naltrexone/bupropion · indirect response — drug inhibits the production of body weight | — | Sharma VD et al., Model-Based Approach to Predict Adheren…, Journal of clinical pharmac… (2018) | [10.1002/jcph.994](https://doi.org/10.1002/jcph.994) |
 
 ## Pharmacogenomics (PGx)
 

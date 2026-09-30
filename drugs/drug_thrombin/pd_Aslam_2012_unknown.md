@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Intermedin (measured concentrations) drives albumin permeability (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Intermedin concentration-dependently reduced basal albumin permeability in HUVECs and antagonized thrombin-induced hyperpermeability, acting via CLR/RAMP2 (AM1) receptors through cAMP/PKA (and Rac1-mediated barrier stabilization); the paper does not state a formal PD model, but reports an inhibitory concentration-response with EC50 1.29 ± 0.12 nM for intermedin (adrenomedullin EC50 0.24 ± 0.07 nM), and antagonism by AM22-52 (IC50 ~500 nM) and aCGRP8-37 (pA2 6.4).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aslam_2012`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

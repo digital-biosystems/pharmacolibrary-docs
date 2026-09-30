@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in SI) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for the selectivity index; it is a systematic review reporting in vitro antileishmanial IC50/EC50, CC50, and SI values for A. indica and Cnidoscolus spp. preparations (e.g., A. indica seed oil: amastigote IC50 15.3–17.6 μg/mL, CC50 710.5 μg/mL, SI 46 and 40), with no mechanism, Imax, kin/kout, ke0, or gamma values stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yaima-Yate_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

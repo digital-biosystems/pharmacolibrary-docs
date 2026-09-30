@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.025). The first reading is what the record holds.">cross-check: disputed</span> | [Mandema_2005](drugs/drug_eletriptan/pd_Mandema_2005_unknown.md) | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.029). The first reading is what the record holds.">cross-check: disputed</span> | [Tokuoka_2014](drugs/drug_eletriptan/pd_Tokuoka_2014_headache_relief.md) | Tokuoka K et al., Theory-based analysis of clinical effic…, The journal of headache and… (2014) | [10.1186/1129-2377-15-85](https://doi.org/10.1186/1129-2377-15-85) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tokuoka_2015](drugs/drug_eletriptan/pd_Tokuoka_2015_headache_recurrence_rate.md) | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.025). The first reading is what the record holds.">cross-check: disputed</span> | [Mandema_2005_unknown](drugs/drug_eletriptan/pd_Mandema_2005_unknown.md) | pain free ← unknown · direct Emax (saturable) effect | — | Mandema JW et al., Therapeutic benefit of eletriptan compa…, Cephalalgia : an internatio… (2005) | [10.1111/j.1468-2982.2004.00939.x](https://doi.org/10.1111/j.1468-2982.2004.00939.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.029). The first reading is what the record holds.">cross-check: disputed</span> | [Tokuoka_2014_headache_relief](drugs/drug_eletriptan/pd_Tokuoka_2014_headache_relief.md) | name ← triptans (sumatriptan, zolmitriptan, eletriptan, rizatriptan, naratriptan) · stimulation effect | — | Tokuoka K et al., Theory-based analysis of clinical effic…, The journal of headache and… (2014) | [10.1186/1129-2377-15-85](https://doi.org/10.1186/1129-2377-15-85) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Tokuoka_2015_headache_recurrence_rate](drugs/drug_eletriptan/pd_Tokuoka_2015_headache_recurrence_rate.md) | name ← triptans (sumatriptan, zolmitriptan, eletriptan, rizatriptan, naratriptan) · inhibition effect | — | Tokuoka K et al., Theoretical analysis of headache recurr…, The journal of headache and… (2015) | [10.1186/s10194-015-0558-9](https://doi.org/10.1186/s10194-015-0558-9) |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2A6` inducer, `CYP2C19` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |

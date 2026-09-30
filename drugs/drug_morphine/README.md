@@ -27,16 +27,16 @@ Opiods, including morphine, are effective for the short term management of pain.
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yalcin_2022_reference](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | 1-compartment, IV | 0 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yang_2024_reference](drugs/drug_morphine/Morphine_Yang2024_reference.md) | 1-compartment, oral | 2 | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: model_quarantined: Cl, Vd left at base-class defaults</sub><br><sub>route_to: `scholar`</sub> | [Yalcin_2022_reference](drugs/drug_morphine/Morphine_Yalcin2022_reference.md) | held back | 1-compartment, IV | 0 | Yalcin N et al., Population pharmacokinetics in critical…, BMJ paediatrics open (2022) | [10.1136/bmjpo-2022-001512](https://doi.org/10.1136/bmjpo-2022-001512) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Yang_2024_reference](drugs/drug_morphine/Morphine_Yang2024_reference.md) | ▶ model + simulator | 1-compartment, oral | 2 | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Simons_2023](drugs/drug_morphine/pd_Simons_2023_V_E55.md) | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Simons_2023_V_E55](drugs/drug_morphine/pd_Simons_2023_V_E55.md) | V̇E55 ← oliceridine · inhibition effect | — | Simons P et al., Respiratory Effects of Biased Ligand Ol…, Anesthesiology (2023) | [10.1097/ALN.0000000000004473](https://doi.org/10.1097/ALN.0000000000004473) |
 
 ## ADME sites
 
@@ -49,6 +49,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | kidney | `UGT2B7` substrate | DrugBank actor |
 | metabolism | liver | `CYP2C8` substrate, `CYP3A4` substrate, `UGT1A1` substrate, `UGT1A3` substrate, `UGT2B15` substrate, `UGT2B7` substrate | DrugBank actor |

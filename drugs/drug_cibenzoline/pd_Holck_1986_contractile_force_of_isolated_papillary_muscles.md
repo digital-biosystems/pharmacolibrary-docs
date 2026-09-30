@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cibenzoline drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cibenzoline directly and concentration-dependently inhibited the development of contractile force in electrically-stimulated guinea-pig papillary muscles, with an IC50 of 35 µM; the paper attributes this negative inotropic effect to inhibition of the myocardial Ca2+ inward current (IC50 14 µM), but gives no kinetic parameters (Imax, kin, kout, ke0, gamma) or formal PD model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Holck_1986`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

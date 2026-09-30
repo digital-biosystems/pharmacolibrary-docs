@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin drives plasma glucose (in mg/dL): indirect response — drug inhibits the production of plasma glucose.
+
+**Model:** No model was generated from this record.
+
+> Insulin (intravenous bolus doses 0.05–0.5 IU/kg, and 0.5 IU/kg infusions/pulses) lowers plasma glucose, described by an indirect response model in which insulin's signal (SIG, with maximum effect Smax, SC50 producing 50% of Smax, and Hill constant r) inhibits endogenous glucose production (zero-order rate constant KGin), while glucose elimination proceeds with first-order rate constant kGout (min−1); the baseline glucose G00 is 105.12 mg/dL, maintained by KGin = kGout·G00. The paper does not state the numerical values of Smax, SC50, r, KGin or kGout in the excerpts (they are in Supplementary Tables), and an IR-GT model combining insulin receptor binding and GLUT4 translocation best described
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Miyazaki_2020`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

@@ -25,15 +25,15 @@ In September 2015, lusutrombopag received its first global approval in Japan to 
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | 1-compartment, oral | 9 | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.643). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Katsube_2019_reference](drugs/drug_lusutrombopag/Lusutrombopag_Katsube2019_reference.md) | held back | 1-compartment, oral | 9 | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Katsube_2019_PLT](drugs/drug_lusutrombopag/pd_Katsube_2019_PLT.md) | platelet count ← lusutrombopag · indirect response — drug inhibits the production of platelet count | — | Katsube T et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacokinetics (2019) | [10.1007/s40262-019-00770-4](https://doi.org/10.1007/s40262-019-00770-4) |
 
 ## ADME sites
 
@@ -47,6 +47,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
+| absorption | testis | `ABCB1` substrate, `ABCG2` substrate | DrugBank actor |
 | excretion | bile duct | <sub>“…nistered dose of lusutrombopag undergoes urinary excretion. Fecal excretion accounted for…”</sub> | prose |
 | excretion | kidney | <sub>“…bout 1% of the administered dose of lusutrombopag undergoes urinary excretion. Fecal excre…”</sub> | prose |
 

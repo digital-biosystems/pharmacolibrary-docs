@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZD4320 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> AZD4320, a BCL-XL (and BCL-2) inhibitor, reduces cell viability of MPM cell lines after 72 h treatment, with EC50 values of 150–220 nM (200 nM range); the paper does not state a specific PD model form (e.g., Emax parameters, kin/kout, or effect compartment), only EC50 values from non-linear regression.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Arulananda_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

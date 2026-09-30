@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cafedrine/theodrenaline or ephedrine drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Intravenous bolus doses of cafedrine/theodrenaline (10–200 mg) or ephedrine (5–40 mg) stimulate systolic blood pressure (SBP, mmHg) in parturients with spinal anesthesia-induced hypotension; the hemodynamic effects (SBP, MAP, HR) were best described by an Emax model driven by concentrations in the final transit compartment of a delayed-effect (transit compartment) structure, with no PK data so kinetic parameters are empirical descriptors of effect delay/persistence. The paper does not state IC50/EC50 or gamma values; population maximum effect for SBP (MAXSBP) was 169 mmHg (MAXMAP 120 mmHg; MAXHR 77.9 bpm after C/T vs 89.6 bpm after ephedrine).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dings_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`

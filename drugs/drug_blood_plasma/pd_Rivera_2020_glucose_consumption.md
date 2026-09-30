@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin (measured concentrations) drives glucose consumption (in nmol/ml/min): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Insulin (0–200 nM) stimulates glucose consumption (nmol/ml/min) in 3T3-L1 adipocytes, described by a 4-parameter logistic (sigmoid Emax) concentration-response model with an EC50 of 18.4 ± 1.1 nM; insulin increases Vmax from 4.1 to 5.9 nmol/ml/min without changing Km (1.1 mM), indicating stimulation of maximal glucose consumption capacity. The paper does not state a mechanistic PD model beyond this direct concentration-response relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rivera_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,13 +31,13 @@ Rivera Diaz PA; Gómez Camargo DE; Ondo-Méndez A; Gómez-Alegría CJ et al. (20
   ·  DOI: [10.1016/j.heliyon.2020.e03422](https://doi.org/10.1016/j.heliyon.2020.e03422)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vmax (nmol/ml/min) — -Ins | `Q66` · not captured | 4.1 | nmol/ml/min | not captured | special_case (not captured) | tbl1:row1:col1 |
-| Vmax (nmol/ml/min) — +Ins | `Q66` · not captured | 5.9 | nmol/ml/min | not captured | special_case (not captured) | tbl1:row1:col2 |
-| Km (mM) — -Ins | `Q1` · not captured | 1.1 | mM | not captured | exact (not captured) | tbl1:row2:col1 |
-| Km (mM) — +Ins | `Q1` · not captured | 1.1 | mM | not captured | exact (not captured) | tbl1:row2:col2 |
-| EC50 | `Q321` · not captured | 18.4 | nM | not captured | review_gapfill (not captured) | Rivera_2020:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vmax (nmol/ml/min) — -Ins | `Q66` · not captured | 4.1 | nmol/ml/min | not captured | special_case (not captured) | tbl1:row1:col1 |
+| PK (driver) | Vmax (nmol/ml/min) — +Ins | `Q66` · not captured | 5.9 | nmol/ml/min | not captured | special_case (not captured) | tbl1:row1:col2 |
+| PK (driver) | Km (mM) — -Ins | `Q1` · not captured | 1.1 | mM | not captured | exact (not captured) | tbl1:row2:col1 |
+| PK (driver) | Km (mM) — +Ins | `Q1` · not captured | 1.1 | mM | not captured | exact (not captured) | tbl1:row2:col2 |
+| PD (effect) | EC50 | `Q321` · not captured | 18.4 | nM | not captured | review_gapfill (not captured) | Rivera_2020:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

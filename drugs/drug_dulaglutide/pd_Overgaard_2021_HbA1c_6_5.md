@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Semaglutide (measured concentrations) drives Proportion of subjects reaching HbA1c &lt;=6.5% (in proportion) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Plasma semaglutide concentration (nmol/L) was related to the binary proportion of subjects reaching HbA1c ≤6.5% after 26 weeks via an exposure-response analysis of oral semaglutide trials; the paper excerpts do not state the model form, mechanism, or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Overgaard_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

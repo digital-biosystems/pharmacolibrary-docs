@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin, fluvastatin drive systolic blood pressure (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In hypertensive Wistar rats, atorvastatin and fluvastatin (administered at their respective EC50 values) were given together with amlodipine and the measured response was systolic blood pressure (mmHg), which fell; the paper attributes the vasorelaxant effect to inhibition of voltage-gated calcium channels, supported by rightward shifts in calcium concentration-response curves (EC50 shifted from −2.81 to −1.97 Log [Ca++] M with atorvastatin 7.6 × 10−7 M and from −3.02 to −2.5 Log [Ca++] M with fluvastatin 1.3 × 10−6 M). The paper does not report an Emax model with numeric Imax/IC50/EC50/kin/kout/ke0 values for the SBP response itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ali_2023`
 - **model family:** `emax`
 - **driver:** `not_resolved`

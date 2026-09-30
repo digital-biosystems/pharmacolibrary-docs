@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Norfenfluramine drives antiseizure activity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper describes a direct concentration-response relationship where brain and plasma concentrations of fenfluramine and norfenfluramine enantiomers correlate with antiseizure activity in the DBA/2 mouse audiogenic seizure model, without specifying a distinct pharmacodynamic mechanism such as an effect compartment or indirect response model. Key potency values include brain EC50s of 101 ng/g for l-norfenfluramine and 1940 ng/g for l-fenfluramine, and ED50s of 1.18 mg/kg for l-norfenfluramine and 20.5 mg/kg for l-fenfluramine.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Erenburg_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,20 +30,20 @@ Erenburg N; Perucca E; Bechard J; Dube C; Weishaupt N; Sherrington R; et al. et 
   ·  DOI: [10.3390/ijms25052522](https://doi.org/10.3390/ijms25052522)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ED50(mg/kg) — l-Norfenfluramine | `Q321` · not captured | 1.18 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col3 |
-| ED50(mg/kg) — d,l-Norfenfluramine | `Q321` · not captured | 1.28 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col4 |
-| ED50(mg/kg) — l-Fenfluramine | `Q321` · not captured | 20.5 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col5 |
-| ED50(mg/kg) — d,l-Fenfluramine | `Q321` · not captured | 11.8 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col6 |
-| EC50 — l-Norfenfluramine | `Q321` · not captured | 101 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row1:col3 |
-| EC50 — d,l-Norfenfluramine | `Q321` · not captured | 81 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row1:col4 |
-| EC50 — l-Norfenfluramine | `Q321` · not captured | 1940 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col3 |
-| EC50 — d,l-Norfenfluramine | `Q321` · not captured | 1350 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col4 |
-| EC50 — l-Fenfluramine | `Q321` · not captured | 25400 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col5 |
-| EC50 — d,l-Fenfluramine | `Q321` · not captured | 13200 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col6 |
-| EC50 — l-Norfenfluramine (as metabolite of l-fenfluramine) | `Q321` · not captured | 2330 | as metabolite of l-fenfluramine | not captured | exact (not captured) | ijms-25-02522-t004:row2:col7 |
-| EC50 — d,l-Norfenfluramine (as metabolite of d,l-fenfluramine) | `Q321` · not captured | 1270 | as metabolite of d,l-fenfluramine | not captured | exact (not captured) | ijms-25-02522-t004:row2:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ED50(mg/kg) — l-Norfenfluramine | `Q321` · not captured | 1.18 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col3 |
+| PD (effect) | ED50(mg/kg) — d,l-Norfenfluramine | `Q321` · not captured | 1.28 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col4 |
+| PD (effect) | ED50(mg/kg) — l-Fenfluramine | `Q321` · not captured | 20.5 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col5 |
+| PD (effect) | ED50(mg/kg) — d,l-Fenfluramine | `Q321` · not captured | 11.8 | mg/kg | not captured | llm (not captured) | ijms-25-02522-t004:row0:col6 |
+| PD (effect) | EC50 — l-Norfenfluramine | `Q321` · not captured | 101 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row1:col3 |
+| PD (effect) | EC50 — d,l-Norfenfluramine | `Q321` · not captured | 81 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row1:col4 |
+| PD (effect) | EC50 — l-Norfenfluramine | `Q321` · not captured | 1940 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col3 |
+| PD (effect) | EC50 — d,l-Norfenfluramine | `Q321` · not captured | 1350 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col4 |
+| PD (effect) | EC50 — l-Fenfluramine | `Q321` · not captured | 25400 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col5 |
+| PD (effect) | EC50 — d,l-Fenfluramine | `Q321` · not captured | 13200 | ng/g | not captured | exact (not captured) | ijms-25-02522-t004:row2:col6 |
+| PD (effect) | EC50 — l-Norfenfluramine (as metabolite of l-fenfluramine) | `Q321` · not captured | 2330 | as metabolite of l-fenfluramine | not captured | exact (not captured) | ijms-25-02522-t004:row2:col7 |
+| PD (effect) | EC50 — d,l-Norfenfluramine (as metabolite of d,l-fenfluramine) | `Q321` · not captured | 1270 | as metabolite of d,l-fenfluramine | not captured | exact (not captured) | ijms-25-02522-t004:row2:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

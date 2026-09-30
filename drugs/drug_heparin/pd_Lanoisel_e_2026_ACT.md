@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** UFH drives ACT (in s): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Unfractionated heparin (UFH), measured by anti-factor Xa activity, drives the activated clotting time (ACT, s) through a sigmoid Emax relationship, with protamine neutralising UFH by second-order binding (rate constant kant) to form an irreversibly eliminated UFH-protamine complex. The paper does not state numeric Emax, EC50, gamma, or kant values in the excerpts; it reports that a protamine-to-heparin ratio of 0.625:1 achieved anti-Xa activity below 0.10 IU ml-1 in 95% of patients.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lanoiselée_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Lanoiselée J; Gibert A; Gouin-Thibault I; Mansour A; Pontis A; Morizot C; et al
   ·  DOI: [10.1016/j.bja.2025.11.057](https://doi.org/10.1016/j.bja.2025.11.057)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CABG | `Q358` · not captured | 35 | kg | not captured | llm (not captured) | tab_0:row12:col1 |
-| CABG + valve | `Q358` · not captured | 11 | kg | not captured | llm (not captured) | tab_0:row14:col1 |
-| Heparin rebound, n (%) | `Q366` · not captured | 41 | IU ml -1 | not captured | llm (not captured) | tab_0:row29:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CABG | `Q358` · not captured | 35 | kg | not captured | llm (not captured) | tab_0:row12:col1 |
+| PK (driver) | CABG + valve | `Q358` · not captured | 11 | kg | not captured | llm (not captured) | tab_0:row14:col1 |
+| model term | Heparin rebound, n (%) | `Q366` · not captured | 41 | IU ml -1 | not captured | llm (not captured) | tab_0:row29:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

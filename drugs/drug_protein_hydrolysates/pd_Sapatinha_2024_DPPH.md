@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fish protein hydrolysates (measured concentrations) drives Antioxidant activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Fish protein hydrolysates (FPH) concentrations (mg/mL) were tested for DPPH radical scavenging, which showed concentration-dependent behavior without a stated mechanistic model; the best EC50 was 2.23 ± 0.09 mg/mL (BS with Protana), with GB-AP EC50 of 3.68 ± 0.2 mg/mL at 180 min decreasing to 3.24 ± 0 (value truncated) at 360 min. No Imax, Emax, kin, kout, ke0, or gamma values are given for DPPH.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sapatinha_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

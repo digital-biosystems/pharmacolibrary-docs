@@ -14,9 +14,11 @@
 
 **As extracted:** Allopurinol and oxypurinol (concentrations from the PK model of Chu_2024) drive xanthine (in mg/L): indirect response — drug inhibits the production of xanthine.
 
-> Allopurinol and oxypurinol concentrations inhibit the conversion of hypoxanthine to xanthine and xanthine to uric acid via a turnover model where the effect (EFF) is described by linear or saturable effect models. The paper does not provide specific numerical values for potency or rate parameters (e.g., IC50, EC50, kin, kout) in the provided excerpts.
+**Model:** No model was generated from this record.
+
+> Allopurinol and oxypurinol concentrations inhibit the conversion (elimination) of xanthine to uric acid in a turnover model of the purine cascade (xanthine amount A(3): dA(3)/dt = kin3 − k34 × A(3) × EFF), reflecting xanthine oxidase inhibition; the paper does not state Imax, IC50, or other potency/rate parameter values for this response in the excerpts.
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Chu_2022`
 - **model family:** `indirect_response_i`

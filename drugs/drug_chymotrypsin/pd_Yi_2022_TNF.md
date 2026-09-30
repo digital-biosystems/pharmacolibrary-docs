@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Schaftoside (measured concentrations) drives TNF-α level (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking schaftoside concentrations to TNF-α levels; the excerpts only report schaftoside's inhibition of SARS-CoV-2 3CLpro (IC50 1.73 ± 0.22 μmol/L) and PLpro (IC50 3.91 ± 0.19 μmol/L) and antiviral EC50 of 11.83 ± 3.23 μmol/L in Vero E6 cells, with anti-inflammatory activity noted qualitatively but no mechanism, potency, or rate parameters (Imax, kin, kout, ke0) for TNF-α.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yi_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

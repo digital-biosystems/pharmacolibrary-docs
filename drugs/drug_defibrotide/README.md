@@ -25,10 +25,10 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Bianchi_1993](drugs/drug_defibrotide/pd_Bianchi_1993_trachealis_muscle_relaxation.md) | Bianchi G et al., Defibrotide, a single-stranded polydeox…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90864-e](https://doi.org/10.1016/0014-2999(93)90864-e) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pennesi_2022](drugs/drug_defibrotide/pd_Pennesi_2022_minimal_residual_disease_status.md) | Pennesi E et al., Inotuzumab ozogamicin as single agent i…, Leukemia (2022) | [10.1038/s41375-022-01576-3](https://doi.org/10.1038/s41375-022-01576-3) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Bianchi_1993_trachealis_muscle_relaxation](drugs/drug_defibrotide/pd_Bianchi_1993_trachealis_muscle_relaxation.md) | name ← defibrotide · direct Emax (saturable) effect | — | Bianchi G et al., Defibrotide, a single-stranded polydeox…, European journal of pharmac… (1993) | [10.1016/0014-2999(93)90864-e](https://doi.org/10.1016/0014-2999(93)90864-e) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Pennesi_2022_minimal_residual_disease_status](drugs/drug_defibrotide/pd_Pennesi_2022_minimal_residual_disease_status.md) | name ← calicheamicin · inhibition effect | — | Pennesi E et al., Inotuzumab ozogamicin as single agent i…, Leukemia (2022) | [10.1038/s41375-022-01576-3](https://doi.org/10.1038/s41375-022-01576-3) |
 
 ## ADME sites
 

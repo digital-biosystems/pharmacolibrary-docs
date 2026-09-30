@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Intragastric pH &gt;4 holding time ratio drives name (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cimetidine (an H2RA) is not modeled via its own plasma concentrations; instead, the paper models the intragastric pH &gt;4 holding time ratio (HTR, mean time/24 h with pH &gt;4) as the driver of erosive esophagitis healing rate (%) at weeks 4 and 8, using an Emax model with a logit link (parameters E0, Emax, EHTR,50, gamma), with drug class and approval status as covariates on EHTR,50. The excerpts do not report numeric values for Emax, EHTR,50 or gamma, and no direct mechanism (e.g., inhibition of acid production) is quantified in the model beyond the HTR–healing rate relationship.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Howden_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

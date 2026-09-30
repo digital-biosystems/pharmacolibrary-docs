@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Notopterol (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Notopterol (10–80 µM, 24-h exposure) reduced the mitochondrial membrane potential (Δψm, JC-1 assay) of HL-60 cells as part of its apoptosis-inducing effect; the paper reports no PD model, no mechanism for the Δψm change, and no potency or rate parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this response — the IC50 of 40.32 µM refers to inhibition of HL-60 cell viability, not membrane potential.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Huang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

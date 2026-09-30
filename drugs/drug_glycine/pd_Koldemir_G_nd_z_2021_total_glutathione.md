@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Boron glycine monoester (measured concentrations) drives name (in GSH) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Boron glycine monoester (BGM) concentrations (500 µM–50 mM, 48 h exposure) reduced total glutathione (GSH) levels in U87MG glioblastoma cells, with an IC50 of 6.6 mM for cytotoxicity; the paper does not state a PD mechanism (e.g., kin/kout or Emax parameters) for the GSH response, only reporting that GSH was reduced, especially with BGD (IC50 26 mM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koldemir-Gündüz_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Linezolid, vancomycin (measured concentrations) drive name (in cfu/total lung): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Vancomycin concentrations (mg/L) act on MRSA bacterial load (log10 cfu/total lung) in a semi-mechanistic model where the drug increases the bacterial killing rate (inhibition of growth) via a sigmoid Emax function with Emax,VAN = 1.74 h−1 and an adaptive-resistance mechanism whereby the potency EC50,VAN,0 = 0.245 mg/L increases over time at rate kON,VAN = 0.0635 h−1·mg−1·L; bacterial growth and natural death rates were kg = 1.47 h−1 and kd = 0.179 h−1, and regrowth under vancomycin was described by this adaptive resistance model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vera-Yunca_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,26 +31,26 @@ Vera-Yunca D; Matias C; Vingsbo Lundberg C; Friberg LE et al. (2025). The Journa
   ·  DOI: [10.1093/jac/dkaf140](https://doi.org/10.1093/jac/dkaf140)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| k g (h−1) — Value | `Q47` · not captured | 1.47 | h−1 | not captured | llm (not captured) | dkaf140-T1:row1:col2 |
-| k g (h−1) — RSE (%) | `Q47` · not captured | 3.40 | h−1 | not captured | llm (not captured) | dkaf140-T1:row1:col3 |
-| B max [log10 (cfu/mL)] — Value | `Q332` · not captured | 12.3 | not captured | not captured | llm (not captured) | dkaf140-T1:row2:col2 |
-| B max [log10 (cfu/mL)] — RSE (%) | `Q332` · not captured | 1.20 | not captured | not captured | llm (not captured) | dkaf140-T1:row2:col3 |
-| k d (h−1) — Value | `Q331` · not captured | 0.179 | h−1 | not captured | space_fold (not captured) | dkaf140-T1:row3:col2 |
-| E max,LZD (h−1) — Value | `Q47` · not captured | 1.97 | h−1 | not captured | llm (not captured) | dkaf140-T1:row5:col2 |
-| E max,LZD (h−1) — RSE (%) | `Q326` · not captured | 8.50 | h−1 | not captured | llm (not captured) | dkaf140-T1:row5:col3 |
-| EC50,LZD (mg/L) — Value | `Q321` · not captured | 0.560 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row6:col2 |
-| EC50,LZD (mg/L) — RSE (%) | `Q321` · not captured | 3.80 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row6:col3 |
-| t 50,eff,LZD (h) — Value | `Q57` · not captured | 2.24 | h | not captured | llm (not captured) | dkaf140-T1:row8:col2 |
-| t 50,eff,LZD (h) — RSE (%) | `Q57` · not captured | 9.90 | h | not captured | llm (not captured) | dkaf140-T1:row8:col3 |
-| E max,VAN (h−1) — Value | `Q326` · not captured | 1.74 | h−1 | not captured | llm (not captured) | dkaf140-T1:row10:col2 |
-| E max,VAN (h−1) — RSE (%) | `Q326` · not captured | 3.00 | h−1 | not captured | llm (not captured) | dkaf140-T1:row10:col3 |
-| EC50,VAN,0 (mg/L) — Value | `Q321` · not captured | 0.245 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row11:col2 |
-| EC50,VAN,0 (mg/L) — RSE (%) | `Q321` · not captured | 2.00 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row11:col3 |
-| k ON,VAN (h−1 × mg−1 × L) — Value | `Q329` · not captured | 0.0635 | h−1 × mg−1 × L | not captured | llm (not captured) | dkaf140-T1:row13:col2 |
-| k ON,VAN (h−1 × mg−1 × L) — RSE (%) | `Q329` · not captured | 5.30 | h−1 × mg−1 × L | not captured | llm (not captured) | dkaf140-T1:row13:col3 |
-| E max,VAN (h−1) | `Q320` · not captured | 1.74 | h−1 | not captured | review_gapfill (not captured) | Vera-Yunca_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | k g (h−1) — Value | `Q47` · not captured | 1.47 | h−1 | not captured | llm (not captured) | dkaf140-T1:row1:col2 |
+| PK (driver) | k g (h−1) — RSE (%) | `Q47` · not captured | 3.40 | h−1 | not captured | llm (not captured) | dkaf140-T1:row1:col3 |
+| PD (effect) | B max [log10 (cfu/mL)] — Value | `Q332` · not captured | 12.3 | not captured | not captured | llm (not captured) | dkaf140-T1:row2:col2 |
+| PD (effect) | B max [log10 (cfu/mL)] — RSE (%) | `Q332` · not captured | 1.20 | not captured | not captured | llm (not captured) | dkaf140-T1:row2:col3 |
+| PD (effect) | k d (h−1) — Value | `Q331` · not captured | 0.179 | h−1 | not captured | space_fold (not captured) | dkaf140-T1:row3:col2 |
+| PK (driver) | E max,LZD (h−1) — Value | `Q47` · not captured | 1.97 | h−1 | not captured | llm (not captured) | dkaf140-T1:row5:col2 |
+| PD (effect) | E max,LZD (h−1) — RSE (%) | `Q326` · not captured | 8.50 | h−1 | not captured | llm (not captured) | dkaf140-T1:row5:col3 |
+| PD (effect) | EC50,LZD (mg/L) — Value | `Q321` · not captured | 0.560 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row6:col2 |
+| PD (effect) | EC50,LZD (mg/L) — RSE (%) | `Q321` · not captured | 3.80 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row6:col3 |
+| PK (driver) | t 50,eff,LZD (h) — Value | `Q57` · not captured | 2.24 | h | not captured | llm (not captured) | dkaf140-T1:row8:col2 |
+| PK (driver) | t 50,eff,LZD (h) — RSE (%) | `Q57` · not captured | 9.90 | h | not captured | llm (not captured) | dkaf140-T1:row8:col3 |
+| PD (effect) | E max,VAN (h−1) — Value | `Q326` · not captured | 1.74 | h−1 | not captured | llm (not captured) | dkaf140-T1:row10:col2 |
+| PD (effect) | E max,VAN (h−1) — RSE (%) | `Q326` · not captured | 3.00 | h−1 | not captured | llm (not captured) | dkaf140-T1:row10:col3 |
+| PD (effect) | EC50,VAN,0 (mg/L) — Value | `Q321` · not captured | 0.245 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row11:col2 |
+| PD (effect) | EC50,VAN,0 (mg/L) — RSE (%) | `Q321` · not captured | 2.00 | mg/L | not captured | llm_confirmed (not captured) | dkaf140-T1:row11:col3 |
+| PD (effect) | k ON,VAN (h−1 × mg−1 × L) — Value | `Q329` · not captured | 0.0635 | h−1 × mg−1 × L | not captured | llm (not captured) | dkaf140-T1:row13:col2 |
+| PD (effect) | k ON,VAN (h−1 × mg−1 × L) — RSE (%) | `Q329` · not captured | 5.30 | h−1 × mg−1 × L | not captured | llm (not captured) | dkaf140-T1:row13:col3 |
+| PD (effect) | E max,VAN (h−1) | `Q320` · not captured | 1.74 | h−1 | not captured | review_gapfill (not captured) | Vera-Yunca_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Elobixibat, linerixibat, maralixibat, odevixibat (measured concentrations) drive NTCP transport inhibition (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Odevixibat (together with elobixibat, linerixibat, and maralixibat) was tested as an inhibitor of NTCP-mediated transport (e.g., [3H]TC, [3H]DHEAS, [3H]rosuvastatin uptake) in stably transfected NTCP-HEK293 cells, i.e., a direct in vitro inhibition experiment with concentrations in μM; the excerpts do not report the NTCP IC50 values, Emax/Imax, or any kinetic parameters, and no PD model (e.g., Emax, kin/kout, effect compartment) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Billo_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

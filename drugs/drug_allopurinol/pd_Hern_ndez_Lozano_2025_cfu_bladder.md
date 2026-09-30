@@ -14,9 +14,11 @@
 
 **As extracted:** Apramycin (measured concentrations) drives bacterial burden in bladder (in log10 cfu/organ): indirect response — drug inhibits the production of bacterial burden in bladder.
 
-> The paper excerpt does not describe the mechanism of the indirect response model or provide the specific parameter values listed in the record. It only notes that simulations of apramycin treatment in a mouse model slightly underpredicted bacterial burden in the bladder for specific doses.
+**Model:** No model was generated from this record.
+
+> The paper does not state the mechanism in the excerpts; per the record, apramycin concentrations (mg/L) inhibit bacterial burden in bladder (log10 cfu/organ) in an indirect response model, with kd 0.179 mg/L, Bmax 9.18 log10 cfu/organ, gamma 1, and adaptation rate kada 0.080 (×1000).
 >
-> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hernández-Lozano_2025`
 - **model family:** `indirect_response_i`

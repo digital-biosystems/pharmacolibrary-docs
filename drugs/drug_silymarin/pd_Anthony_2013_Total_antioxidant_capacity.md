@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taxifolin (measured concentrations) drives name (in uric acid equivalent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taxifolin (a purified silymarin component) was tested in vitro for antioxidant activity against total antioxidant capacity-type assays; the paper does not state a PD mechanism beyond direct radical scavenging, and no Imax, IC50, kin, kout or ke0 values are given. The key potency value reported is an EC50 of 32 µM for taxifolin in the DPPH free radical scavenging assay, the most potent of the components (others ranged 115–855 µM).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Anthony_2013`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

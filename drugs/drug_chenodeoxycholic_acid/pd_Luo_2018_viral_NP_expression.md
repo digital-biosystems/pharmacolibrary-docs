@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chenodeoxycholic acid (measured concentrations) drives name (in fluorescence optical density) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chenodeoxycholic acid (CDCA) concentrations (μM) inhibit influenza A virus replication in A549/MDCK cells, measured as viral NP expression (fluorescence optical density) and virus titer; the paper states the mechanism is blockade of vRNP nuclear export during late infection stages (4–8 hpi), not a kin/kout or Emax model. CDCA showed IC50 values of 5.5–11.5 μM against the three IAV strains, versus 31.0–73.7 μM for HDCA and UDCA; the record lists CC50 values (μM) of 372.5/485.7/814.7 (CDCA/HDCA/UDCA) and 121.2/413.5/596.5 in a second setting, but no IC50, Emax, gamma, kin, kout, or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luo_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Luo L; Han W; Du J; Yang X; Duan M; Xu C; et al. et al. (2018). Molecules (Basel
   ·  DOI: [10.3390/molecules23123315](https://doi.org/10.3390/molecules23123315)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CDCA — CC50 a (μM) | `Q322` · not captured | 372.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row3:col1 |
-| HDCA — CC50 a (μM) | `Q322` · not captured | 485.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row4:col1 |
-| UDCA — CC50 a (μM) | `Q322` · not captured | 814.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row5:col1 |
-| CDCA — CC50 a (μM) | `Q322` · not captured | 121.2 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row7:col1 |
-| HDCA — CC50 a (μM) | `Q322` · not captured | 413.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row8:col1 |
-| UDCA — CC50 a (μM) | `Q322` · not captured | 596.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row9:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | CDCA — CC50 a (μM) | `Q322` · not captured | 372.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row3:col1 |
+| PD (effect) | HDCA — CC50 a (μM) | `Q322` · not captured | 485.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row4:col1 |
+| PD (effect) | UDCA — CC50 a (μM) | `Q322` · not captured | 814.7 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row5:col1 |
+| PD (effect) | CDCA — CC50 a (μM) | `Q322` · not captured | 121.2 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row7:col1 |
+| PD (effect) | HDCA — CC50 a (μM) | `Q322` · not captured | 413.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row8:col1 |
+| PD (effect) | UDCA — CC50 a (μM) | `Q322` · not captured | 596.5 | μM | not captured | llm (not captured) | molecules-23-03315-t001:row9:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -14,6 +14,12 @@
 
 **As extracted:** 2-arylquinazolin-4(3H)-one derivatives and allopurinol drive xanthine oxidase inhibitory activity (in unknown) (inhibition; the model form was not identified).
 
+**Model:** No model was generated from this record.
+
+> This is an in vitro enzyme-inhibition study rather than a pharmacodynamic model: 2-arylquinazolin-4(3H)-one derivatives and allopurinol were tested for direct inhibition of xanthine oxidase activity, with IC50 values of 2.80–112.60 M for the derivatives versus allopurinol (IC50 = 2.01 ± 0.01 M), the most potent being compound 2 (IC50 = 2.80 ± 0.70 M). Kinetic studies of the most active compounds (2, 7, 9, 14, 15, 19, 20) showed concentration-dependent inhibition with Ki values from 7.90 M, with competitive inhibition for 7 and 19, mixed-type for 14 and 20, and non-competitive for 2, 9, and 15; no PD model parameters (Emax, kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zafar_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

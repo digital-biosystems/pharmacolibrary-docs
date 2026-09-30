@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erastin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulfasalazine inhibits LPS-induced glutamate release (and cystine uptake) in CCF-STTG-1 cells and primary microglia by inhibiting the SXC (system xc-) transporter; the paper gives no explicit PD model or numeric EC50/IC50 for sulfasalazine itself, while the erastin analog 13MEW76/erastin inhibited glutamate release with EC50 values of 0.16±0.02 and 0.13±0.04 µM respectively, and cystine uptake EC50 values ranged 0.5–5 µM (4–30-fold less potent).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Figuera-Losada_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

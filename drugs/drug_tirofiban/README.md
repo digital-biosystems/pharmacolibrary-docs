@@ -23,9 +23,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Emani_2020_pediatric patients undergoing aortopulmonary shunting](drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md) | — (no model) | 0 | Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Emani_2020_pediatric patients undergoing aortopulmonary shunting](drugs/drug_tirofiban/Tirofiban_Emani2020_pediatric_patients_undergoing_aortopulmo.md) | — | — (no model) | 0 | Emani S et al., Platelet Inhibition With IV Glycoprotei…, Pediatric critical care med… (2020) | [10.1097/PCC.0000000000002292](https://doi.org/10.1097/PCC.0000000000002292) |
 
 ## ADME sites
 

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;s-atenolol&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/&quot;},{&quot;label&quot;:&quot;Mason_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SAtenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SAtenolol_Mason1979_reference&quot;,&quot;label&quot;:&quot;Mason_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Mason1979_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;SAtenolol_Buck1989_reference&quot;,&quot;label&quot;:&quot;Buck_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Buck1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SAtenolol_Kir2025_reference&quot;,&quot;label&quot;:&quot;Kir_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Kir2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;SAtenolol_Mason1979_reference&quot;,&quot;label&quot;:&quot;Mason_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_s_atenolol/SAtenolol_Mason1979_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**MAT has no unit.**
+
+Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — s atenolol: t1/2z 6.06 hr, V 0.173 L/kg, fe 94.1 %, CL 10.7 L/hr, CLR 10.4 L/hr, Fab 0.52 mg, tmax 3 hr, MAT 2 hr.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of absolute bioavailability: this record has none, the second reading 0.52; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Mason WD; Winer N; Kochak G; Cohen I; Bell R et al. (1979). Clinical pharmacology and therapeutics 25
@@ -43,7 +49,7 @@ Mason WD; Winer N; Kochak G; Cohen I; Bell R et al. (1979). Clinical pharmacolog
 | renal plasma clearance | `Q26` · CLR | 10.4 | L/hr | 2.8888888888888894e-06 | [l] / [h] | not captured | llm_corrected (0.6) | Mason_1979:abstract | — | not captured |
 | absolute bioavailability for the 25-... oral doses | `Q40` · Fab | 0.52 | mg | not captured | not captured | not captured | llm_confirmed (0.6) | Mason_1979:abstract, Mason_1979:abstract, Mason_1979:abstract | — | not captured |
 | Time to mean maximum plasma concentration | `Q56` · tmax | 3.0 | hr | 10800.0 | [h] | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
-| time for half of the bioavailable dose to be absorbed | `Q73` · MAT | 2.0 | hr | not captured | not captured | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
+| time for half of the bioavailable dose to be absorbed | `Q73` · MAT | 2.0 | hr | 7200.0 | h | not captured | llm (0.6) | Mason_1979:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +66,7 @@ Mason WD; Winer N; Kochak G; Cohen I; Bell R et al. (1979). Clinical pharmacolog
 - status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures 'atenolol', not s_atenolol — the review values are the parent's
+- unit re-normalised: MAT 'hr' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Mason_1979_metadata.yaml (11 record(s)); values are summary statistics, not a fitted model

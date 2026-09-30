@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adapalene drives pilosebaceous unit area (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a PD model for diclofenac; the modeled drug is adapalene, whose stratum corneum concentrations (infundibular concentrations taken as 0.1% of SC concentrations) drive a direct, sigmoid Emax inhibitory effect on pilosebaceous (infundibular) unit area measured by LC-OCT; indirect response models were rejected for poor fit, and no numeric Emax, EC50, or rate values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Matharoo_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

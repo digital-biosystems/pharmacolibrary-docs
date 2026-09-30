@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-22 04:04 | 4:18 | 0/0/0 | 0/0/0 | 0/0/0 | 70,091/3,518 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-09-29 22:40 | 1:05 | 0/0/0 | 0/0/0 | 0/0/0 | 1,962/136 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
@@ -42,7 +42,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 30 matched, 32 returned
+- **PubMed hits:** 34 matched, 32 returned
 - **screened:** 1  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -58,7 +58,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Armstrong_2009.pdf` | Armstrong SC et al., Pharmacokinetic drug interactions of sy…, Psychosomatics (2009) | pgx | 7 | [10.1176/appi.psy.50.2.169](https://doi.org/10.1176/appi.psy.50.2.169) | [19377028](https://www.ncbi.nlm.nih.gov/pubmed/19377028) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Geng_2015.pdf` | Geng P et al., Effect of diphenoxylate on CYP450 isofo…, International journal of cl… (2015) | pgx | 7 | not captured | [26770498](https://www.ncbi.nlm.nih.gov/pubmed/26770498) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-09-22T04:03:56.481164+00:00</sub>
+<sub>queue written 2026-09-29T22:40:12.472592+00:00</sub>
 
 ## Screened and excluded
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tranexamic acid drives Plasmin-antiplasmin (in ng/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tranexamic acid (0.5 g and 1 g i.v.) reduced the increase over baseline in plasmin–antiplasmin (PAP) complex levels (ng/mL) versus placebo in postpartum haemorrhage; the 1 g dose abolished the 30-min increase (−2% vs 56% in placebo, P=0.009), while 0.5 g did not (13%, P=0.051). The paper reports no pharmacodynamic model, mechanism, or potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ducloy-Bouthors_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

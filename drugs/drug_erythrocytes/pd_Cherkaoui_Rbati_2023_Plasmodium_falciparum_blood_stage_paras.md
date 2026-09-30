@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DSM265 (measured concentrations) drives name (in parasites/ml): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> DSM265 concentrations (μg/ml) act on Plasmodium falciparum blood-stage parasitemia (parasites/ml) via a turnover (kill) model in which the DHODH inhibitor's Emax killing rate reduces parasite turnover (kin), with a lag; the paper does not state numeric blood-stage Emax, EC50, or kin values in the excerpts, but fixing liver-stage Emax, h, and kin to blood-stage values allowed estimation of a liver-stage EC50,L of 1.6 μg/ml (IIV 0.45), corresponding to a liver-stage MICL of 1.5 μg/ml (90% range 0.7–3.2), expressed as blood concentrations.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Cherkaoui-Rbati_2023`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Cherkaoui-Rbati MH; Andenmatten N; Burgert L; Egbelowo OF; Fendel R; Fornari C; 
   ·  DOI: [10.1002/psp4.12875](https://doi.org/10.1002/psp4.12875)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| F — Value | `Q40` · not captured | 1 | not captured | not captured | exact (not captured) | psp412875-tbl-0002:row2:col2 |
-| Q1 — IIV a | `Q30` · not captured | 0 | not captured | not captured | exact (not captured) | psp412875-tbl-0002:row5:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | F — Value | `Q40` · not captured | 1 | not captured | not captured | exact (not captured) | psp412875-tbl-0002:row2:col2 |
+| PK (driver) | Q1 — IIV a | `Q30` · not captured | 0 | not captured | not captured | exact (not captured) | psp412875-tbl-0002:row5:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

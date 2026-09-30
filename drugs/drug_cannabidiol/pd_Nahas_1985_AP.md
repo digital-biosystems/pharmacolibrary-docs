@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A9-THC drives differential pressure (in unknown) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the Langendorff perfused rat heart, cannabidiol (CBD) at concentrations of 9 × 10⁻⁶ M (concentration garbled in excerpt) increases differential pressure (AP, an index of cardiac performance) and coronary flow with limited effect on rate; no mechanism (e.g., Emax, inhibition of production/elimination) or potency parameters (IC50, Emax, kin, kout, ke0) are stated in the paper. Simultaneous equimolar THC with CBD antagonizes or mitigates THC's cardiac effects on rate, AP, and coronary flow.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nahas_1985`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

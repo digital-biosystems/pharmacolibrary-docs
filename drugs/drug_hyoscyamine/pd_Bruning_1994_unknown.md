@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methacholine (measured concentrations) drives forearm blood flow (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Hyoscyamine (a muscarinic antagonist) acts on forearm blood flow (expressed as percent change in forearm vascular resistance) evoked by the agonist methacholine; the paper does not state a kinetic mechanism, but fits concentration-response curves with an Emax/Hill relation E = Emax·[A]^P/([A]^P+EC50^P), with EC50 in negative log mol/L and slope P, and uses Schild analysis to derive antagonist affinity values; no numeric IC50, Emax, or rate constants are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bruning_1994`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives Qmax (in unknown): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> Doxazosin plasma concentrations (from cited PK of doxazosin GITS, e.g. Cmax 15.3 ng/ml at day 7) drive the change in Qmax (maximum urinary flow rate) via an α1-receptor occupancy/transduction model, where receptor occupancy (computed from receptor affinity and unbound plasma concentration) predicts the clinical effect; the paper does not state an explicit Imax/IC50/kin/kout/ke0 for doxazosin, but reports an EBSL of 0.0953 ml s−1 (SE 0.467) and a tamsulosin KI of 0.04 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ito_2007`
 - **model family:** `transduction`
 - **driver:** `cited_pk`
@@ -21,11 +31,11 @@ Ito K; Ohtani H; Sawada Y et al. (2007). British journal of clinical pharmacolog
   ·  DOI: [10.1111/j.1365-2125.2006.02783.x](https://doi.org/10.1111/j.1365-2125.2006.02783.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EBSL (ml s -1 ) — Estimate | `Q358` · not captured | 0.0953 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col1 |
-| EBSL (ml s -1 ) — Standard error | `Q358` · not captured | 0.467 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col2 |
-| Tamsulosin KI | `Q322` · not captured | 0.04 | nm | not captured | review_gapfill (not captured) | Ito_2007:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | EBSL (ml s -1 ) — Estimate | `Q358` · not captured | 0.0953 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col1 |
+| PK (driver) | EBSL (ml s -1 ) — Standard error | `Q358` · not captured | 0.467 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col2 |
+| PD (effect) | Tamsulosin KI | `Q322` · not captured | 0.04 | nm | not captured | review_gapfill (not captured) | Ito_2007:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

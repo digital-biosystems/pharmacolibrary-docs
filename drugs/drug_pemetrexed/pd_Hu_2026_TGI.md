@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pemetrexed, osimertinib drive tumor growth inhibition (in %): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
+> In a QSP–PK–PD model, pemetrexed (PEM) and osimertinib (OSI) concentrations drive tumor growth inhibition (TGI, %) in a Simeoni-type four-compartment TGI module: PEM acts via reduced folate levels (cytotoxicity parameters Emax,pem, γenzyme, Emax,folate estimated from 300 nM PEM MTT data) and OSI via EGFR signaling inhibition, with EC50,OSI,plasma of 48.86 μg/L (medium EC50 14.49 nM) and predicted EC50,pem,plasma of 0.47315 mg/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `transduction`
 - **driver:** `not_resolved`

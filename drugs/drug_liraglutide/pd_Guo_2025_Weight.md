@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GLP-1 receptor agonists (various) (the dose) drives weight reduction (in kg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide doses (1.8–3 mg) act on weight reduction (kg) in a dose-response (Emax-type) model, but no significant dose-response relationship was observed within 1.2–3 mg, indicating the doses have reached the efficacy plateau; the paper does not state a mechanism (e.g., Imax/IC50/kin/kout) or potency parameters for liraglutide, only that its weight reduction versus placebo was about 4.03 kg over 52 weeks.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2025`
 - **model family:** `emax`
 - **driver:** `dose_only`

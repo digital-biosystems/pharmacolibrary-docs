@@ -24,11 +24,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015](drugs/drug_taspoglutide/pd_Li_2015_FPG.md) | Li (2015) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015](drugs/drug_taspoglutide/pd_Li_2015_HbA1c.md) | Li (2015) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015_2](drugs/drug_taspoglutide/pd_Li_2015_2_WT.md) | Li (2015) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015_FPG](drugs/drug_taspoglutide/pd_Li_2015_FPG.md) | FPG ← taspoglutide · direct Emax (saturable) effect | — | Li (2015) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015_HbA1c](drugs/drug_taspoglutide/pd_Li_2015_HbA1c.md) | HbA1c ← taspoglutide · direct Emax (saturable) effect | — | Li (2015) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Li_2015_2_WT](drugs/drug_taspoglutide/pd_Li_2015_2_WT.md) | body weight loss ← taspoglutide · direct Emax (saturable) effect | — | Li (2015) | — |
 
 ## ADME sites
 

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levetiracetam (concentrations from this paper's PK model) drives name (in count): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Levetiracetam plasma concentrations (mg/L) inhibit the expected daily/period seizure count in a negative-binomial count model via an Emax-type concentration-dependent decrease added to the placebo effect in a responder subpopulation (mixture model), with EC50 23.7 mg/L and Emax 45.4% change; the paper does not describe a kin/kout or effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schoemaker_2018`
 - **model family:** `emax`
 - **driver:** `pk_record`
@@ -20,15 +30,15 @@
 not matched (stem Schoemaker_2018)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SE (%CV) — E max (% change) | `Q100` · not captured | 45.4 | % change | not captured | nil (not captured) | Tab4:row1:col6 |
-| SE (%CV) — EC50 (mg/L) | `Q100` · not captured | 23.7 | mg/L | not captured | nil (not captured) | Tab4:row1:col7 |
-| IIV (%) — S 0 adults (day−1) | `Q312` · not captured | 86.9 | day−1 | not captured | exact (not captured) | Tab4:row2:col2 |
-| IIV (%) — Smax (% increase) | `Q312` · not captured | 119.8 | % increase | not captured | exact (not captured) | Tab4:row2:col4 |
-| IIV (%) — Placebo (% change) | `Q312` · not captured | 40.7 | % change | not captured | exact (not captured) | Tab4:row2:col5 |
-| IIV (%) — E max (% change) | `Q312` · not captured | 80.0 | % change | not captured | exact (not captured) | Tab4:row2:col6 |
-| IIV (%) — Overdispersion | `Q312` · not captured | 291.0 | not captured | not captured | exact (not captured) | Tab4:row2:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | SE (%CV) — E max (% change) | `Q100` · not captured | 45.4 | % change | not captured | nil (not captured) | Tab4:row1:col6 |
+| — | SE (%CV) — EC50 (mg/L) | `Q100` · not captured | 23.7 | mg/L | not captured | nil (not captured) | Tab4:row1:col7 |
+| variability | IIV (%) — S 0 adults (day−1) | `Q312` · not captured | 86.9 | day−1 | not captured | exact (not captured) | Tab4:row2:col2 |
+| variability | IIV (%) — Smax (% increase) | `Q312` · not captured | 119.8 | % increase | not captured | exact (not captured) | Tab4:row2:col4 |
+| variability | IIV (%) — Placebo (% change) | `Q312` · not captured | 40.7 | % change | not captured | exact (not captured) | Tab4:row2:col5 |
+| variability | IIV (%) — E max (% change) | `Q312` · not captured | 80.0 | % change | not captured | exact (not captured) | Tab4:row2:col6 |
+| variability | IIV (%) — Overdispersion | `Q312` · not captured | 291.0 | not captured | not captured | exact (not captured) | Tab4:row2:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

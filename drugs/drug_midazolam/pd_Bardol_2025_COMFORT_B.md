@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clonidine, midazolam drive COMFORT-B score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Midazolam (with clonidine as a co-driver in a joint additive model) drives the COMFORT-B sedation score via an inhibitory sigmoid Emax model, with Emax 6 (score points), EC50 186 ng/mL, and Hill coefficient 2.42; the paper does not state a rate parameter (e.g., ke0) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bardol_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,11 +31,11 @@ Bardol M; Sheng Y; Baarslag M; Ceci A; Dörje F; Ilmoja ML; Larsson P; Lönnqvis
   ·  DOI: [10.1111/pan.70050](https://doi.org/10.1111/pan.70050)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 6 | not captured | not captured | review_gapfill (not captured) | Bardol_2025:review |
-| EC 50 (ng/mL) | `Q321` · not captured | 186.0 | ng/mL | not captured | review_gapfill (not captured) | Bardol_2025:review |
-| Hill clon | `Q325` · not captured | 2.42 | not captured | not captured | review_gapfill (not captured) | Bardol_2025:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 6 | not captured | not captured | review_gapfill (not captured) | Bardol_2025:review |
+| PD (effect) | EC 50 (ng/mL) | `Q321` · not captured | 186.0 | ng/mL | not captured | review_gapfill (not captured) | Bardol_2025:review |
+| PD (effect) | Hill clon | `Q325` · not captured | 2.42 | not captured | not captured | review_gapfill (not captured) | Bardol_2025:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

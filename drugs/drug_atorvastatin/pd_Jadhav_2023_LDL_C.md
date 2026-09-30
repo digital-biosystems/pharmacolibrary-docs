@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bempedoic acid (measured concentrations) drives low-density lipoprotein cholesterol (in unknown): indirect response — drug inhibits the production of low-density lipoprotein cholesterol.
+
+**Model:** No model was generated from this record.
+
+> Bempedoic acid plasma concentrations (µg/mL) inhibit the production rate (kin) of serum LDL-C in a type 1 indirect response model, dLDLC/dt = kin*[1 − Imax*C/(IC50 + C)] − kout*LDLC; the paper does not state numeric Imax or IC50 values in the excerpts, but reports kout ≈ 0.3 day−1, consistent with a predicted 28% median LDL-C reduction at steady state with bempedoic acid 180 mg once daily.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jadhav_2023`
 - **model family:** `indirect_response_i`
 - **driver:** `conc_no_pk`

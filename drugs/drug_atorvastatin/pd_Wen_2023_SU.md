@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oxypurinol (measured concentrations) drives serum urate (in mg/dL): direct Emax (saturable) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Steady-state oxypurinol (the active metabolite of allopurinol) concentrations inhibit serum urate via a direct inhibitory Emax model (oxypurinol inhibits urate production through xanthine dehydrogenase inhibition), with final-model Imax 7.6 mg/dL and IC50 17.6 mg/L (12.8 mg/L for PDZK1 rs12129861 GA, 8.1 mg/L for AA; −0.27 per A allele), and baseline SU 9 mg/dL scaled by (CrCL/100)^−0.175.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wen_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,17 +31,17 @@ Wen YF; Brundage RC; Roman YM; Culhane-Pera KA; Straka RJ et al. (2023). British
   ·  DOI: [10.1111/bcp.15792](https://doi.org/10.1111/bcp.15792)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/fm (L/h) — Base model | `Q27` · not captured | 1 | L/h | not captured | llm (not captured) | T2:row2:col1 |
-| CL/fm (L/h) — Final model | `Q27` · not captured | 1.05 | L/h | not captured | llm (not captured) | T2:row2:col2 |
-| V/fm (L) — Base model | `Q76` · not captured | 47.7 | L | not captured | llm (not captured) | T2:row3:col1 |
-| V/fm (L) — Final model | `Q76` · not captured | 59.3 | L | not captured | llm (not captured) | T2:row3:col2 |
-| Imax (mg/dL) — Base model | `Q323` · not captured | 6.1 | mg/dL | not captured | exact (not captured) | T2:row6:col1 |
-| Imax (mg/dL) — Final model | `Q323` · not captured | 7.6 | mg/dL | not captured | exact (not captured) | T2:row6:col2 |
-| IC50 (mg/L) — Base model | `Q322` · not captured | 8.0 | mg/L | not captured | exact (not captured) | T2:row7:col1 |
-| IC50 (mg/L) — Final model | `Q322` · not captured | 17.6 | mg/L | not captured | exact (not captured) | T2:row7:col2 |
-| PDZK1 rs12129861 A allele on IC50a — Final model | `Q322` · not captured | -0.27 | /h | not captured | llm (not captured) | T2:row13:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/fm (L/h) — Base model | `Q27` · not captured | 1 | L/h | not captured | llm (not captured) | T2:row2:col1 |
+| PK (driver) | CL/fm (L/h) — Final model | `Q27` · not captured | 1.05 | L/h | not captured | llm (not captured) | T2:row2:col2 |
+| PK (driver) | V/fm (L) — Base model | `Q76` · not captured | 47.7 | L | not captured | llm (not captured) | T2:row3:col1 |
+| PK (driver) | V/fm (L) — Final model | `Q76` · not captured | 59.3 | L | not captured | llm (not captured) | T2:row3:col2 |
+| PD (effect) | Imax (mg/dL) — Base model | `Q323` · not captured | 6.1 | mg/dL | not captured | exact (not captured) | T2:row6:col1 |
+| PD (effect) | Imax (mg/dL) — Final model | `Q323` · not captured | 7.6 | mg/dL | not captured | exact (not captured) | T2:row6:col2 |
+| PD (effect) | IC50 (mg/L) — Base model | `Q322` · not captured | 8.0 | mg/L | not captured | exact (not captured) | T2:row7:col1 |
+| PD (effect) | IC50 (mg/L) — Final model | `Q322` · not captured | 17.6 | mg/L | not captured | exact (not captured) | T2:row7:col2 |
+| PD (effect) | PDZK1 rs12129861 A allele on IC50a — Final model | `Q322` · not captured | -0.27 | /h | not captured | llm (not captured) | T2:row13:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

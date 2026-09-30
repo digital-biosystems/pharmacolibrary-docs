@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sennoside A drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sennoside A (SA), dosed at 15, 30, and 45 mg/kg/day via drinking water for 5 weeks, lowered blood glucose in the oral glucose tolerance test in mice, with a significant reduction only at 45 mg/kg/day (15, 30, and 60 min after glucose). The paper does not give a quantitative PD model (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma); mechanistically, SA directly stimulates intestinal L-cells to increase GLP-1 secretion (via ERK1/2 phosphorylation), which promotes insulin secretion and thereby lowers blood glucose.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ma_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

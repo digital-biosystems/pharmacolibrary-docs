@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Raphanus sativus methanol extract (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ceratonia siliqua (carob) methanol extract concentrations (0.78–100 µg/ml) inhibit T. gondii RH tachyzoite growth (% inhibition), with an IC50 of 13.52 µg/ml versus sulfadiazine (94.41 µg/ml); the paper does not state a mechanism, and no Emax, kin, kout, ke0 or gamma values are given. Cytotoxicity on Vero cells gave IC50 392.8 ± 66 µg/ml, yielding a selectivity index of 29.05.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Elazab_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AZ14289671 (measured concentrations) drives Tumor growth rate (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record links AZ14289671 concentrations (nmol/L) to tumor growth rate (derived from tumor volume profiles in mice), with inhibition as the effect direction, but the paper does not state a specific PD mechanism or potency parameters (Imax, IC50, EC50, kin, kout, ke0, gamma) for the tumor growth rate response itself. The only quantitative PD model described is for EGFR phosphorylation in H2073WT xenografts, using a simple irreversible binding turnover model with a saturable inactivation (Kbind, IC50) and EGFR protein turnover rate Krec fixed at 0.0231 h−1 (t1/2 of 30 h); in vitro IC50 values for AZ14289671 ranged 17–41 nmol/L in EGFR Exon20Ins cells and 480–832 nmol/L in EGFRWT cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swaih_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

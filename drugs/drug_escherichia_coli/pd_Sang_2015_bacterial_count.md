@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin and ciprofloxacin (measured concentrations) drive name (in log10CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Ex vivo sigmoid inhibitory Emax model relating the AUC24/MIC ratio of enrofloxacin (against E. coli strain Anhui 112) to the change in bacterial count (log10CFU/mL) after 24 h incubation in intestinal contents of healthy and infected broilers; the drug inhibits bacterial growth (antibacterial effect E = change in log10CFU/mL vs initial count), with Emax 2.35 (healthy) and 2.91 (infected), E0 −5.62 and −5.69, EC50 (AUC24/MIC for 50% of maximal effect) 348.51 (healthy) and 802.26 (infected), and AUC24/MIC targets of 258.73/624.94 for bacteriostasis (E=0), 451.35/1065.93 for bactericidal action (E=−3), and 567.39/1343.81 for eradication (E=−4).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sang_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,22 +31,22 @@ Sang K; Hao H; Huang L; Wang X; Yuan Z et al. (2015). Frontiers in veterinary sc
   ·  DOI: [10.3389/fvets.2015.00080](https://doi.org/10.3389/fvets.2015.00080)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Healthy | `Q320` · not captured | 2.35 | not captured | not captured | exact (not captured) | T4:row1:col2 |
-| Emax — Infected | `Q320` · not captured | 2.91 | not captured | not captured | exact (not captured) | T4:row1:col3 |
-| E0 — Healthy | `Q324` · not captured | -5.62 | not captured | not captured | exact (not captured) | T4:row2:col2 |
-| E0 — Infected | `Q324` · not captured | -5.69 | not captured | not captured | exact (not captured) | T4:row2:col3 |
-| Emax−E0 — Healthy | `Q38` · not captured | 7.97 | not captured | not captured | llm_corrected (not captured) | T4:row3:col2 |
-| Emax−E0 — Infected | `Q38` · not captured | 8.60 | not captured | not captured | llm_corrected (not captured) | T4:row3:col3 |
-| EC50 — Healthy | `Q321` · not captured | 348.51 | μg/mL | not captured | exact (not captured) | T4:row4:col2 |
-| EC50 — Infected | `Q321` · not captured | 802.26 | μg/mL | not captured | exact (not captured) | T4:row4:col3 |
-| AUC24/MIC for bacteriostatic action (E = 0) — Healthy | `Q19` · not captured | 258.73 | E = 0 | not captured | llm (not captured) | T4:row6:col2 |
-| AUC24/MIC for bacteriostatic action (E = 0) — Infected | `Q19` · not captured | 624.94 | E = 0 | not captured | llm (not captured) | T4:row6:col3 |
-| AUC24/MIC for bactericidal action (E = −3) — Healthy | `Q19` · not captured | 451.35 | E = −3 | not captured | llm (not captured) | T4:row7:col2 |
-| AUC24/MIC for bactericidal action (E = −3) — Infected | `Q19` · not captured | 1065.93 | E = −3 | not captured | llm (not captured) | T4:row7:col3 |
-| AUC24/MIC for bacterial eradication (E = −4) — Healthy | `Q19` · not captured | 567.39 | E = −4 | not captured | llm (not captured) | T4:row8:col2 |
-| AUC24/MIC for bacterial eradication (E = −4) — Infected | `Q19` · not captured | 1343.81 | E = −4 | not captured | llm (not captured) | T4:row8:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Healthy | `Q320` · not captured | 2.35 | not captured | not captured | exact (not captured) | T4:row1:col2 |
+| PD (effect) | Emax — Infected | `Q320` · not captured | 2.91 | not captured | not captured | exact (not captured) | T4:row1:col3 |
+| PD (effect) | E0 — Healthy | `Q324` · not captured | -5.62 | not captured | not captured | exact (not captured) | T4:row2:col2 |
+| PD (effect) | E0 — Infected | `Q324` · not captured | -5.69 | not captured | not captured | exact (not captured) | T4:row2:col3 |
+| PK (driver) | Emax−E0 — Healthy | `Q38` · not captured | 7.97 | not captured | not captured | llm_corrected (not captured) | T4:row3:col2 |
+| PK (driver) | Emax−E0 — Infected | `Q38` · not captured | 8.60 | not captured | not captured | llm_corrected (not captured) | T4:row3:col3 |
+| PD (effect) | EC50 — Healthy | `Q321` · not captured | 348.51 | μg/mL | not captured | exact (not captured) | T4:row4:col2 |
+| PD (effect) | EC50 — Infected | `Q321` · not captured | 802.26 | μg/mL | not captured | exact (not captured) | T4:row4:col3 |
+| PK (driver) | AUC24/MIC for bacteriostatic action (E = 0) — Healthy | `Q19` · not captured | 258.73 | E = 0 | not captured | llm (not captured) | T4:row6:col2 |
+| PK (driver) | AUC24/MIC for bacteriostatic action (E = 0) — Infected | `Q19` · not captured | 624.94 | E = 0 | not captured | llm (not captured) | T4:row6:col3 |
+| PK (driver) | AUC24/MIC for bactericidal action (E = −3) — Healthy | `Q19` · not captured | 451.35 | E = −3 | not captured | llm (not captured) | T4:row7:col2 |
+| PK (driver) | AUC24/MIC for bactericidal action (E = −3) — Infected | `Q19` · not captured | 1065.93 | E = −3 | not captured | llm (not captured) | T4:row7:col3 |
+| PK (driver) | AUC24/MIC for bacterial eradication (E = −4) — Healthy | `Q19` · not captured | 567.39 | E = −4 | not captured | llm (not captured) | T4:row8:col2 |
+| PK (driver) | AUC24/MIC for bacterial eradication (E = −4) — Infected | `Q19` · not captured | 1343.81 | E = −4 | not captured | llm (not captured) | T4:row8:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

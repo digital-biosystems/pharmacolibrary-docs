@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluindione drives INR (in ratio): indirect response — drug inhibits the loss of INR.
+
+**Model:** No model was generated from this record.
+
+> Fluindione concentrations act on INR (ratio) via an indirect response model in which INR is produced and eliminated; among tested models, the paper selected (by log-likelihood ratio test) inhibition of INR elimination by fluindione. The excerpts do not report potency (IC50/Imax) or rate (kin, kout) values with units.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Comets_1998`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`

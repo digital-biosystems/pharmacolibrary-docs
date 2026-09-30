@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salmeterol (measured concentrations) drives inhibition of methacholine-induced bronchoconstriction (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Salmeterol concentrations inhibit methacholine-induced bronchoconstriction via a direct Emax model (Emax = 100%), with an EC50 of 36 nM (total lung concentration) from Hendrickx et al., scaled to an unbound EC50,free of 0.0271 nM using plasma fu and bronchi Kp; no effect-compartment or turnover parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Himstedt_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Syzygium aromaticum aqueous extract (measured concentrations) drives name (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Syzygium aromaticum aqueous extract (SAAE, µg/mL) concentration-dependently inhibited MMP-9 activity (measured as % of control) in the LPS lung inflammation model, but the paper does not state the mechanism beyond direct inhibition of MMP-2/-9 activity and gives no IC50, Imax, Emax, or rate parameters for MMP-9; the only potency values reported are for other endpoints (e.g. MPO activity IC50 0.5 µg/mL, ROS luminol chemiluminescence IC50 0.5–1.5 µg/mL).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chniguir_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

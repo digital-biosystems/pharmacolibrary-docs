@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Nocodazole (measured concentrations) drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Nocodazole concentration-dependently inhibits polar body extrusion (PBE) in mouse oocytes (measured as percent PBE, assessed 16–18 h post-transfer) by depolymerizing the spindle and activating the spindle assembly checkpoint; the paper reports EC50 values of 50.7 nM in oil-free culture, 88.4 nM in a 1:100 media:oil dish, and 785 nM in a 1:1000 dish (100 nM nocodazole giving a 100% PBE block oil-free). No PD model parameters (Imax, kin, kout, ke0, gamma) are given; the paper does not fit a formal PD model, only EC50 shifts with media:oil ratio.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rémillard-Labrosse_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

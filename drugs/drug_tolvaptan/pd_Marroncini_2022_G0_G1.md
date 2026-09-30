@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tolvaptan (concentrations from the PK model of Bhatt_2014) drives Cell cycle G0/G1 (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tolvaptan (µM concentrations, 48 h exposure) dose-dependently decreased the percentage of HCT-8, HepG2 and SK-N-AS cells in G0/G1 (with S-phase decrease and G2/M increase), an effect the paper attributes to V2-receptor-mediated reductions in cAMP, PKA catalytic α subunit and pAKT/AKT; no quantitative PD model or IC50/Emax values are given for the G0/G1 response itself (IC50 values of 52, 38 and 40 µM are reported only for inhibition of cell proliferation).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marroncini_2022`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Edoxaban and M4 drive PT (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Edoxaban and its active metabolite M4 concentrations act on prothrombin time (PT), modeled with a linear additive model describing the drug effect as the difference from baseline PT; the paper does not state potency (IC50/EC50) or rate parameters for the PT response, though in vitro IC50 values on factor Xa are 3 nmol/L (edoxaban) and 1.8 nmol/L (M4).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xu_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

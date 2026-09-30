@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chloroquine + desethylchloroquine (measured concentrations) drives QRS duration (in msec): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> The paper describes chloroquine (not sulfasalazine) acting on QRS duration: whole blood chloroquine concentration prolongs ventricular depolarization via a direct Bayesian sigmoid Emax model (no effect-compartment or turnover mechanism), with Emax ~180 msec, Emin ~90 msec, and E50 at log10 concentration ~1.3 (prior mean). A concentration of 3 µmol/L caused a QRS prolongation of 6.7 msec (95% CrI 5.5–7.8), and QRS durations &gt;150 msec were strongly associated with concentrations above 10 µmol/L.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Watson_2020`
 - **model family:** `categorical`
 - **driver:** `conc_no_pk`

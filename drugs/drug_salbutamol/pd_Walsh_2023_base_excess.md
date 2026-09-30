@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salbutamol (concentrations from this paper's PK model) drives base excess (in mmol/L): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Salbutamol plasma concentrations (ng/ml) were linked to base excess (mmol/L) via a sequential population PKPD approach (two-compartment PK, clearance 16.3 L/h) with a sigmoid Emax concentration-effect model showing stimulation of the response; the paper excerpts do not state the mechanism beyond this direct concentration-effect link and give no potency or rate parameters (EC50, Emax, Hill slope) for base excess.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Walsh_2023`
 - **model family:** `sigmoid_emax`
 - **driver:** `pk_record`

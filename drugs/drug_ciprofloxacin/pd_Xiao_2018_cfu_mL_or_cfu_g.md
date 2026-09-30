@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin and ciprofloxacin drive bacterial load reduction (in Log10): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Enrofloxacin (with its metabolite ciprofloxacin, expressed as the AUC0–24/MIC ratio) acts directly on E. coli bacterial load (log10 cfu/mL or cfu/g) in blood, liver, and lung of chicks via a sigmoid Emax inhibitory relationship (no turnover/kin-kout or effect-compartment model is described). Potency (EC50, AUC0–24/MIC) was 16.61 (blood), 16.93 (liver), and 10.33 (lung), with Emax of −5.8, E0 1.78 (blood), E0 1.68 (liver), and −4.4, E0 2.29 (lung) log10 cfu/mL; Hill slopes were 2.58, 2.36, and 3.01 for blood, liver, and lung, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiao_2018`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,25 +31,25 @@ Xiao X; Jiang L; Lan W; Jiang Y; Wang Z et al. (2018). BMC veterinary research 1
   ·  DOI: [10.1186/s12917-018-1698-3](https://doi.org/10.1186/s12917-018-1698-3)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (Log 10 cfu/mL) — Blood | `Q320` · not captured | -5.8 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row1:col1 |
-| Emax (Log 10 cfu/mL) — Lung | `Q320` · not captured | -4.4 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row1:col3 |
-| EC50 — Blood | `Q321` · not captured | 16.61 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col1 |
-| EC50 — Liver | `Q321` · not captured | 16.93 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col2 |
-| EC50 — Lung | `Q321` · not captured | 10.33 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col3 |
-| E0 (Log 10 cfu/mL) — Blood | `Q324` · not captured | 1.78 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col1 |
-| E0 (Log 10 cfu/mL) — Liver | `Q324` · not captured | 1.68 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col2 |
-| E0 (Log 10 cfu/mL) — Lung | `Q324` · not captured | 2.29 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col3 |
-| AUC0–24/MIC for 1 log10 cfu/mL killing — Blood | `Q88` · not captured | 9.29 | not captured | not captured | llm (not captured) | Tab4:row4:col1 |
-| AUC0–24/MIC for 1 log10 cfu/mL killing — Liver | `Q88` · not captured | 12.42 | not captured | not captured | llm (not captured) | Tab4:row4:col2 |
-| AUC0–24/MIC for 1 log10 cfu/mL killing — Lung | `Q88` · not captured | 9.1 | not captured | not captured | llm (not captured) | Tab4:row4:col3 |
-| AUC0–24/MIC for 3 log10 cfu/mL killing — Blood | `Q88` · not captured | 19.32 | not captured | not captured | llm (not captured) | Tab4:row5:col1 |
-| AUC0–24/MIC for 3 log10 cfu/mL killing — Liver | `Q88` · not captured | 32.15 | not captured | not captured | llm (not captured) | Tab4:row5:col2 |
-| AUC0–24/MIC for 3 log10 cfu/mL killing — Lung | `Q88` · not captured | 23.41 | not captured | not captured | llm (not captured) | Tab4:row5:col3 |
-| AUC0–24/MIC for 4 log10 cfu/mL killing — Blood | `Q88` · not captured | 28.17 | not captured | not captured | llm (not captured) | Tab4:row6:col1 |
-| AUC0–24/MIC for 4 log10 cfu/mL killing — Liver | `Q88` · not captured | 52.52 | not captured | not captured | llm (not captured) | Tab4:row6:col2 |
-| AUC0–24/MIC for 4 log10 cfu/mL killing — Lung | `Q88` · not captured | 56.36 | not captured | not captured | llm (not captured) | Tab4:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (Log 10 cfu/mL) — Blood | `Q320` · not captured | -5.8 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row1:col1 |
+| PD (effect) | Emax (Log 10 cfu/mL) — Lung | `Q320` · not captured | -4.4 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row1:col3 |
+| PD (effect) | EC50 — Blood | `Q321` · not captured | 16.61 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col1 |
+| PD (effect) | EC50 — Liver | `Q321` · not captured | 16.93 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col2 |
+| PD (effect) | EC50 — Lung | `Q321` · not captured | 10.33 | AUC0–24/MIC | not captured | exact (not captured) | Tab4:row2:col3 |
+| PD (effect) | E0 (Log 10 cfu/mL) — Blood | `Q324` · not captured | 1.78 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col1 |
+| PD (effect) | E0 (Log 10 cfu/mL) — Liver | `Q324` · not captured | 1.68 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col2 |
+| PD (effect) | E0 (Log 10 cfu/mL) — Lung | `Q324` · not captured | 2.29 | Log 10 cfu/mL | not captured | exact (not captured) | Tab4:row3:col3 |
+| PK (driver) | AUC0–24/MIC for 1 log10 cfu/mL killing — Blood | `Q88` · not captured | 9.29 | not captured | not captured | llm (not captured) | Tab4:row4:col1 |
+| PK (driver) | AUC0–24/MIC for 1 log10 cfu/mL killing — Liver | `Q88` · not captured | 12.42 | not captured | not captured | llm (not captured) | Tab4:row4:col2 |
+| PK (driver) | AUC0–24/MIC for 1 log10 cfu/mL killing — Lung | `Q88` · not captured | 9.1 | not captured | not captured | llm (not captured) | Tab4:row4:col3 |
+| PK (driver) | AUC0–24/MIC for 3 log10 cfu/mL killing — Blood | `Q88` · not captured | 19.32 | not captured | not captured | llm (not captured) | Tab4:row5:col1 |
+| PK (driver) | AUC0–24/MIC for 3 log10 cfu/mL killing — Liver | `Q88` · not captured | 32.15 | not captured | not captured | llm (not captured) | Tab4:row5:col2 |
+| PK (driver) | AUC0–24/MIC for 3 log10 cfu/mL killing — Lung | `Q88` · not captured | 23.41 | not captured | not captured | llm (not captured) | Tab4:row5:col3 |
+| PK (driver) | AUC0–24/MIC for 4 log10 cfu/mL killing — Blood | `Q88` · not captured | 28.17 | not captured | not captured | llm (not captured) | Tab4:row6:col1 |
+| PK (driver) | AUC0–24/MIC for 4 log10 cfu/mL killing — Liver | `Q88` · not captured | 52.52 | not captured | not captured | llm (not captured) | Tab4:row6:col2 |
+| PK (driver) | AUC0–24/MIC for 4 log10 cfu/mL killing — Lung | `Q88` · not captured | 56.36 | not captured | not captured | llm (not captured) | Tab4:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid derivatives (compounds 11, 17, 19) inhibit DENV-2 NS2B-NS3 protease activity measured by a FRET trans-cleavage assay (CFP-trrg-YFP substrate) in a dose-dependent manner, with IC50 values of 0.0134 ± 0.002 μM (compound 11), 0.34 ± 0.002 μM (compound 17), and 0.52 ± 0.02 μM (compound 19); the same compounds also inhibited DENV-2 infectivity with EC50 values of 0.034 μM (11), 4.34 μM (17), and 2.34 μM (19). The paper does not state a formal PD model (no Imax/Emax, kin/kout, or ke0 parameters), only IC50/EC50 inhibition potencies.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lin_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,14 +30,14 @@ Lin YF; Lai HC; Lin CS; Hung PY; Kan JY; Chiu SW; et al. et al. (2024). Viruses 
   ·  DOI: [10.3390/v16121926](https://doi.org/10.3390/v16121926)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 11 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.0134 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row1:col2 |
-| 11 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 0.034 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row1:col3 |
-| 17 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.34 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row2:col2 |
-| 17 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 4.34 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row2:col3 |
-| 19 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.52 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row3:col2 |
-| 19 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 2.34 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row3:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 11 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.0134 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row1:col2 |
+| PD (effect) | 11 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 0.034 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row1:col3 |
+| PD (effect) | 17 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.34 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row2:col2 |
+| PD (effect) | 17 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 4.34 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row2:col3 |
+| PD (effect) | 19 — NS2B-NS3 Protease a(IC50, μM) | `Q322` · not captured | 0.52 | IC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row3:col2 |
+| PD (effect) | 19 — Inhibition of DENV-2 Infectivity b(EC50, μM) | `Q322` · not captured | 2.34 | EC50, μM | not captured | llm (not captured) | viruses-16-01926-t001:row3:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

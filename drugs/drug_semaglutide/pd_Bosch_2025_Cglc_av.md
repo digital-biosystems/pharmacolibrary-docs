@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cotadutide drives glucose (in mg/dL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a simple direct PD (Emax/IC50) model for semaglutide; instead it uses the 4GI systems glucose homeostasis model, coupled to the IGRH HbA1c model, to predict 24-h average glucose (Cglc,av, mg/dL) from cotadutide (GLP-1/glucagon dual agonist) PK and in vitro potency, with minimal calibration to Ph2a CGM glucose data. Key fitted values include a glucose-related rate constant Kaglc of 1.38 h−1, a lag of 26.8 days (LSClag, RSE 0.21%), LSCI of −0.0933 (fraction), and TVLSP of 8.2 days; the interstitial/plasma glucose ratio was fixed at 0.874, and the model predicted median Cglc,av with an RMSPE of 5.6%.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bosch_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,22 +31,22 @@ Bosch R; Petrone M; Arends R; Sijbrands EJG; Hoefman S; Snelder N et al. (2025).
   ·  DOI: [10.1002/psp4.70074](https://doi.org/10.1002/psp4.70074)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LSCI (fraction) — Estimate | `Q87` · not captured | -0.0933 | fraction | not captured | llm (not captured) | psp470074-tbl-0002:row3:col2 |
-| LSClag (days) — Estimate | `Q83` · not captured | 26.8 | days | not captured | llm (not captured) | psp470074-tbl-0002:row4:col2 |
-| LSClag (days) — RSE (%) | `Q83` · not captured | 0.21 | days | not captured | llm (not captured) | psp470074-tbl-0002:row4:col3 |
-| Kaglc (h−1) — Estimate | `Q47` · not captured | 1.38 | h−1 | not captured | llm (not captured) | psp470074-tbl-0002:row5:col2 |
-| Kaglc (h−1) — RSE (%) | `Q47` · not captured | 31 | h−1 | not captured | llm (not captured) | psp470074-tbl-0002:row5:col3 |
-| Fb — Estimate | `Q40` · not captured | 0.427 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row6:col2 |
-| Fb — RSE (%) | `Q40` · not captured | 38 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row6:col3 |
-| Fl,d — Estimate | `Q87` · not captured | 0.299 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row7:col2 |
-| Fl,d — RSE (%) | `Q87` · not captured | 36 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row7:col3 |
-| BSLins (pmol/L) — RSE (%) | `Q75` · not captured | 44 | pmol/L | not captured | llm (not captured) | psp470074-tbl-0002:row8:col3 |
-| BSLglp (pmol/L) — RSE (%) | `Q75` · not captured | 30 | pmol/L | not captured | llm (not captured) | psp470074-tbl-0002:row9:col3 |
-| TVLSP (days) — Estimate | `Q57` · not captured | 8.2 | days | not captured | llm (not captured) | psp470074-tbl-0002:row13:col2 |
-| ω2 OMEGA LS (1) — Estimate | `Q312` · not captured | 0.0145 | dL/mg/day | not captured | llm_confirmed (not captured) | psp470074-tbl-0002:row18:col2 |
-| ω2 OMEGA LS (1) — RSE (%) | `Q312` · not captured | 16.5 | dL/mg/day | not captured | llm_confirmed (not captured) | psp470074-tbl-0002:row18:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | LSCI (fraction) — Estimate | `Q87` · not captured | -0.0933 | fraction | not captured | llm (not captured) | psp470074-tbl-0002:row3:col2 |
+| PK (driver) | LSClag (days) — Estimate | `Q83` · not captured | 26.8 | days | not captured | llm (not captured) | psp470074-tbl-0002:row4:col2 |
+| PK (driver) | LSClag (days) — RSE (%) | `Q83` · not captured | 0.21 | days | not captured | llm (not captured) | psp470074-tbl-0002:row4:col3 |
+| PK (driver) | Kaglc (h−1) — Estimate | `Q47` · not captured | 1.38 | h−1 | not captured | llm (not captured) | psp470074-tbl-0002:row5:col2 |
+| PK (driver) | Kaglc (h−1) — RSE (%) | `Q47` · not captured | 31 | h−1 | not captured | llm (not captured) | psp470074-tbl-0002:row5:col3 |
+| PK (driver) | Fb — Estimate | `Q40` · not captured | 0.427 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row6:col2 |
+| PK (driver) | Fb — RSE (%) | `Q40` · not captured | 38 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row6:col3 |
+| PK (driver) | Fl,d — Estimate | `Q87` · not captured | 0.299 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row7:col2 |
+| PK (driver) | Fl,d — RSE (%) | `Q87` · not captured | 36 | not captured | not captured | llm (not captured) | psp470074-tbl-0002:row7:col3 |
+| PK (driver) | BSLins (pmol/L) — RSE (%) | `Q75` · not captured | 44 | pmol/L | not captured | llm (not captured) | psp470074-tbl-0002:row8:col3 |
+| PK (driver) | BSLglp (pmol/L) — RSE (%) | `Q75` · not captured | 30 | pmol/L | not captured | llm (not captured) | psp470074-tbl-0002:row9:col3 |
+| PK (driver) | TVLSP (days) — Estimate | `Q57` · not captured | 8.2 | days | not captured | llm (not captured) | psp470074-tbl-0002:row13:col2 |
+| variability | ω2 OMEGA LS (1) — Estimate | `Q312` · not captured | 0.0145 | dL/mg/day | not captured | llm_confirmed (not captured) | psp470074-tbl-0002:row18:col2 |
+| variability | ω2 OMEGA LS (1) — RSE (%) | `Q312` · not captured | 16.5 | dL/mg/day | not captured | llm_confirmed (not captured) | psp470074-tbl-0002:row18:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

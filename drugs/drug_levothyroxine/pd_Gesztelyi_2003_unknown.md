@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Adenosine drives mechanical activity (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Adenosine concentration-dependently decreases contractile force (mechanical activity) in electrically driven guinea pig atrial myocardium, fitted to a direct Emax/EC50 logistic model (E = Emax·[A]^nH/([A]^nH+EC50^nH)); after 8-day levothyroxine (thyroxine) treatment, adenosine potency and maximum effect were reduced (pD2 from 4.93 ± 0.08 to 4.09 ± 0.08; Emax from 90 ± 1 to 79 ± 4, % reduction of contractile force), with no kin/kout/ke0 or effect-compartment parameters reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gesztelyi_2003`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,17 +31,17 @@ Gesztelyi R; Zsuga J; Cseppentõ A; Bajza A; Varga A; Szabó JZ; et al. et al. (
   ·  DOI: [10.1254/jphs.91.295](https://doi.org/10.1254/jphs.91.295)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax — Solvent-treated | `Q320` · not captured | 89 | not captured | not captured | exact (not captured) | tab_1:row4:col1 |
-| Emax | `Q320` · not captured | 84 | not captured | not captured | exact (not captured) | tab_1:row4:col4 |
-| Emax — Solvent-treated | `Q320` · not captured | 91 | not captured | not captured | exact (not captured) | tab_1:row9:col1 |
-| Emax | `Q320` · not captured | 83 | not captured | not captured | exact (not captured) | tab_1:row9:col4 |
-| Emax — Solvent-treated | `Q320` · not captured | 89 | not captured | not captured | exact (not captured) | tab_1:row14:col1 |
-| Emax | `Q320` · not captured | 75 | not captured | not captured | exact (not captured) | tab_1:row14:col3 |
-| Emax | `Q320` · not captured | 95 | not captured | not captured | exact (not captured) | tab_1:row14:col4 |
-| Emax — Solvent-treated | `Q320` · not captured | 91 | not captured | not captured | exact (not captured) | tab_1:row19:col1 |
-| Emax | `Q320` · not captured | 93 | not captured | not captured | exact (not captured) | tab_1:row19:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax — Solvent-treated | `Q320` · not captured | 89 | not captured | not captured | exact (not captured) | tab_1:row4:col1 |
+| PD (effect) | Emax | `Q320` · not captured | 84 | not captured | not captured | exact (not captured) | tab_1:row4:col4 |
+| PD (effect) | Emax — Solvent-treated | `Q320` · not captured | 91 | not captured | not captured | exact (not captured) | tab_1:row9:col1 |
+| PD (effect) | Emax | `Q320` · not captured | 83 | not captured | not captured | exact (not captured) | tab_1:row9:col4 |
+| PD (effect) | Emax — Solvent-treated | `Q320` · not captured | 89 | not captured | not captured | exact (not captured) | tab_1:row14:col1 |
+| PD (effect) | Emax | `Q320` · not captured | 75 | not captured | not captured | exact (not captured) | tab_1:row14:col3 |
+| PD (effect) | Emax | `Q320` · not captured | 95 | not captured | not captured | exact (not captured) | tab_1:row14:col4 |
+| PD (effect) | Emax — Solvent-treated | `Q320` · not captured | 91 | not captured | not captured | exact (not captured) | tab_1:row19:col1 |
+| PD (effect) | Emax | `Q320` · not captured | 93 | not captured | not captured | exact (not captured) | tab_1:row19:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

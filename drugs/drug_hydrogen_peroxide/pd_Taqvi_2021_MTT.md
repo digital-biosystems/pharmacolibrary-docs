@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Vanillic acid (measured concentrations) drives cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Hydrogen peroxide reduces D.Mel-2 cell viability (MTT assay) in a concentration-dependent manner via oxidative stress; the paper reports an IC50 of 125 μg/ml for H2O2 (and 250 μg/ml for vanillic acid) but does not state a pharmacodynamic model or mechanism parameters (no Imax, kin, kout, ke0, or gamma given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Taqvi_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

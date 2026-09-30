@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DLGFLARGF (measured concentrations) drives name (in % of control) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The peptide DLGFLARGF inhibits tyrosinase activity (reported as % of control) in B16F10 melanoma cells, with activity decreasing dose-dependently; the paper reports an IC50 of 3.09 mM and 23.19% inhibition at 1.6 mg/ml (tyrosinase activity 76.81% of control), attributing the effect to binding of the peptide to amino acid residue sites on the D chain of tyrosinase, mainly via hydrogen bonds. No formal PD model (e.g., Emax, Imax, kin/kout, ke0) or its parameters are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

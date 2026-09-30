@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tyramine (measured concentrations) drives intracellular Ca2+ concentration (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In HEK-293 cells expressing the Plutella xylostella tyramine receptor PxTAR1, octopamine acts as an agonist that stimulates the receptor, but the paper reports its potency only for inhibition of forskolin-stimulated intracellular cAMP (IC50 ≈ 13.7 μM, less potent than tyramine's ~446 nM); for the intracellular Ca2+ concentration response, only tyramine (EC50 13.1 nM), DPMF (EC50 84.5 nM) and L(-)-carvone (EC50 1.15 nM) were quantified, and no EC50/Emax or mechanism values are given for octopamine's Ca2+ effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ma_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Salicylate drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Salicylate (applied extracellularly, co-applied with glycine) inhibited the maximal glycine-induced current (IGly) in cultured rat inferior colliculus neurones in a non-competitive manner, depressing Emax without altering glycine EC50 (48.5, 42.5 and 49.0 µM in the absence, presence of 1 mM and 10 mM salicylate respectively) or the Hill coefficient (1.48, 1.54, 1.40); the paper does not report an IC50, Imax or kinetic parameters for the salicylate inhibition, which was rapid and fully reversible after ~100 s washout.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lu_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

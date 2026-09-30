@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erlotinib (measured concentrations) drives name (in μM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Erlotinib concentrations (0–100 μM) were applied to A549 and BZR lung carcinoma cells cultured on or in adult vs old type I collagen, and cell viability (counted after 72 h) was used to determine erlotinib IC50; the paper does not state a PD model or mechanism, but reports that old 3D collagen increased the erlotinib IC50 (e.g. ~10 and 8 μM in 2D for A549 and BZR) and reduced sensitivity to erlotinib-induced apoptosis, associated with increased EGFR expression/phosphorylation in 3D old collagen.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sarazin_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

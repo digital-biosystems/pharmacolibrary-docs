@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zolpidem (measured concentrations) drives Choice reaction time (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Zolpidem plasma concentrations (μg/L) were modeled as a sigmoid Emax direct response on choice reaction time (CRT, ms), with Edrug = C^HILL/(EC50^HILL + C^HILL) multiplying the baseline CRT; the paper does not describe an effect-compartment or turnover mechanism for CRT. The estimated EC50 was 282 μg/L with a Hill coefficient of 6, and MAXdrug was fixed at 5.6.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kim_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

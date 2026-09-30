@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diammonium glycyrrhizinate (measured concentrations) drives name (in visualized by immunofluorescence) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Diammonium glycyrrhizinate (DG) concentrations (µg/mL) dose-dependently inhibit viral dsRNA (visualized by immunofluorescence) in coronavirus-infected cells, acting by inhibition of viral entry; the paper does not state a PD model form. Reported EC50 values are 360 ± 21 µg/mL (HCoV-OC43) and 277 ± 4 µg/mL (HCoV-229E), with CC50 &gt; 4000 µg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

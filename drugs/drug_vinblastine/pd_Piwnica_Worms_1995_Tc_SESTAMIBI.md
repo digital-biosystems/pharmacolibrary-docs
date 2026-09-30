@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tc-SESTAMIBI (measured concentrations) drives Tc-SESTAMIBI accumulation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the paper, vinblastine is listed among cytotoxic agents tested for enhancing steady-state Tc-SESTAMIBI accumulation in P-glycoprotein-expressing cells (Table 1), an assay measuring inhibition of P-gp-mediated Tc-SESTAMIBI efflux; however, the excerpts provide no specific potency values (EC50, Imax) or mechanism details for vinblastine itself. For the assay generally, reversal agents enhance Tc-SESTAMIBI accumulation by inhibiting P-glycoprotein efflux (e.g., quinidine acting as a noncompetitive allosteric inhibitor at a maximal inhibitory concentration of 100 µM), but the paper does not state vinblastine's mechanism or parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Piwnica-Worms_1995`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

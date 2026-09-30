@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07A&quot;,&quot;href&quot;:&quot;atc/C07A.md&quot;},{&quot;label&quot;:&quot;propranolol&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/&quot;},{&quot;label&quot;:&quot;Salehifar_2017 \u00b7 this_study&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_female&quot;,&quot;label&quot;:&quot;Salehifar_2017_female&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_female.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_male&quot;,&quot;label&quot;:&quot;Salehifar_2017_male&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_male.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Propranolol_Salehifar2017_mean_of_differences&quot;,&quot;label&quot;:&quot;Salehifar_2017_mean_of_differences&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_mean_of_differences.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_other_sources&quot;,&quot;label&quot;:&quot;Salehifar_2017_other_sources&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_other_sources.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_this_study&quot;,&quot;label&quot;:&quot;Salehifar_2017_this_study&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_this_study.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Propranolol_Takechi2018_reference&quot;,&quot;label&quot;:&quot;Takechi_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Takechi2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_female&quot;,&quot;label&quot;:&quot;Salehifar_2017_female&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_female.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Propranolol_Salehifar2017_male&quot;,&quot;label&quot;:&quot;Salehifar_2017_male&quot;,&quot;href&quot;:&quot;drugs/drug_propranolol/Propranolol_Salehifar2017_male.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # propranolol — `Propranolol_Salehifar2017_this_study`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,18 +13,22 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
 ### Reviewer guidance
+
+**Every check that could be run on this record passed.**
 
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Salehifar E; Ebrahim S; Shiran MR; Faramarzi F; Askari Rad H; Avan R; et al. et al. (2017). Advanced pharmaceutical bulletin 7
   ·  DOI: [10.15171/apb.2017.024](https://doi.org/10.15171/apb.2017.024)
 
 ## Model component
-<dbs-pgx drug="propranolol" model-id="Propranolol_Salehifar2017_this_study" status="extracted" stale="false" population="healthy adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="propranolol" model-id="Propranolol_Salehifar2017_this_study" status="curated_candidate" stale="false" population="healthy adults" measured-compound="propranolol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -96,6 +100,21 @@ _Every reader agrees on every compared field of this record._
 | C9_phys_window_Q22 | pass | clearance within physiological range | 138 L/h | not captured | not captured | ['Salehifar_2017_table_4:row0:col1'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 358 L | not captured | not captured | ['Salehifar_2017_table_4:row1:col1'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=propranolol) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 2 scholar param(s) emitted or defaulted | 2 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | not captured | not captured | no engineer deviations to adjudicate |
+| T1_t_half_alpha | reference | skipped | not captured | not captured | not captured | no simulated metric for this quantity (single reference sim) |
+| T1_t_half_beta | reference | skipped | not captured | 1.793928312122302 | not captured | non-numeric value |
+| T1_t_half_terminal | reference | skipped | not captured | 1.793928312122302 | not captured | non-numeric value |
+| T1_tmax | reference | skipped | not captured | 0.18333333335172464 | not captured | non-numeric value |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -104,6 +123,9 @@ _Every reader agrees on every compared field of this record._
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_propranolol/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Salehifar_2017` / `Salehifar_2017::this_study`)
+- model: `../../../knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_this_study.mo`
+- deviation: `../../../knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_this_study.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_propranolol/models/modelica/Propranolol_Salehifar2017_this_study.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

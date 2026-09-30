@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DEET (measured concentrations) drives CNS nerve discharge rate (in Hz) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DEET concentrations (µM–mM) were applied to house fly larval CNS preparations and the measured response was the descending neuronal discharge rate (Hz); DEET was neuroexcitatory with a threshold of about 50 µM and EC50 values of 0.12 (0.05–0.29) mM on transected CNS and 0.21 (0.08–0.56) mM on intact CNS. The paper does not state a specific PD mechanism (e.g., Emax/turnover parameters) for this excitatory effect, noting only that it differed from toluene and lidocaine and did not correlate with in vitro AChE inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Swale_2014`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

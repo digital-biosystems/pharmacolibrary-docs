@@ -24,9 +24,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yoshii_2016](drugs/drug_acotiamide/pd_Yoshii_2016_acetylcholine.md) | Yoshii (2016) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yoshii_2016_acetylcholine](drugs/drug_acotiamide/pd_Yoshii_2016_acetylcholine.md) | name ← acotiamide · indirect response — drug inhibits the loss of name | — | Yoshii (2016) | — |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives mutant huntingtin aggregation (in count per 300 μm2): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (compound 82) concentration-dependently reduces mutant huntingtin aggregation (count per 300 μm2) in HD models by stabilizing the CAST–calpain-2 protein-protein interaction, protecting CAST from degradation and thereby limiting calpain-2 hyperactivation and mitochondrial damage; the paper does not report an Emax/IC50 fit for the aggregation response itself. Related potency values are EC50 ~2.77 μM (TMRM mitochondrial protection), ~1.55 μM (MTT viability), and ~3.55 μM for dose-dependent CAST protein up-regulation.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

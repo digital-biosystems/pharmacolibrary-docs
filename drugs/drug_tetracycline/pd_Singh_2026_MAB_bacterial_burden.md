@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eravacycline (measured concentrations) drives name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In static concentration-response studies, eravacycline concentrations (mg/L) acting on MAB bacterial burden (log10 CFU/mL) were described by an inhibitory sigmoid Emax model, with Emax 5.58 ± 0.34 log10 CFU/mL versus an Econ of 5.31 ± 0.25 log10 CFU/mL, EC50 0.05 ± 0.01 mg/L (0.33× the MIC of 0.15 mg/L), and Hill coefficient H 0.87 ± 0.12; the paper does not state a mechanism beyond direct inhibitory kill.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Singh S; Shrivastava A; Boorgula GD; Long MC; Robbins B; Gumbo T; et al. et al. 
   ·  DOI: [10.1128/spectrum.03432-25](https://doi.org/10.1128/spectrum.03432-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| MIC50 — MIC (mg/L) | `Q100` · not captured | 0.15 | mg/L | not captured | llm (not captured) | T3:row62:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | MIC50 — MIC (mg/L) | `Q100` · not captured | 0.15 | mg/L | not captured | llm (not captured) | T3:row62:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

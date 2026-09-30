@@ -10,6 +10,12 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Warfarin (concentrations from this paper's PK model) drives prothrombin time-international normalized ratio (in unitless): delayed effect through transit (transduction) compartments.
+
+**Model:** No model was generated from this record.
+
 - **paper:** `Hirai_2024`
 - **model family:** `transduction`
 - **driver:** `pk_record`

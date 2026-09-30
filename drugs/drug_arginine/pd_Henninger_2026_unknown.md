@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DNDI-6148 (measured concentrations) drives lesion size (in mm2): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> DNDI-6148 free skin concentrations (μg/L) drive parasite clearance at the L. major infection site via a direct sigmoidal Emax model (fEC50 165 μg/L [95% CI 125–236]); lesion size is then modeled with a growth rate proportional to parasite burden (slope 0.0029/photons) and a first-order healing rate kheal of 0.027 h−1 [0.010–0.044], with baseline lesion size 31 mm2.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Henninger_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,16 +31,16 @@ Henninger RH; Schouten WM; Arana B; Gillon JY; Mowbray CE; Kratz JM; Van Bocxlae
   ·  DOI: [10.1111/cts.70535](https://doi.org/10.1111/cts.70535)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E max — Estimate | `Q320` · not captured | 0.049 | not captured | not captured | space_fold (not captured) | cts70535-tbl-0002:row3:col3 |
-| E max — 95% CI a | `Q320` · not captured | 0.042 | not captured | not captured | space_fold (not captured) | cts70535-tbl-0002:row3:col4 |
-| fEC 50 — Estimate | `Q321` · not captured | 165 | μg/L | not captured | llm (not captured) | cts70535-tbl-0002:row4:col3 |
-| fEC 50 — 95% CI a | `Q321` · not captured | 125 | μg/L | not captured | llm (not captured) | cts70535-tbl-0002:row4:col4 |
-| γ — 95% CI a | `Q89` · not captured | 1.1 | not captured | not captured | llm (not captured) | cts70535-tbl-0002:row5:col4 |
-| k heal — Estimate | `Q337` · not captured | 0.027 | not captured | not captured | llm (not captured) | cts70535-tbl-0002:row8:col3 |
-| add lesion — Estimate | `Q317` · not captured | 0.39 | RUV | not captured | llm (not captured) | cts70535-tbl-0002:row14:col3 |
-| baseline | `Q324` · not captured | 8.01 | log10 photons/s | not captured | review_gapfill (not captured) | Henninger_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E max — Estimate | `Q320` · not captured | 0.049 | not captured | not captured | space_fold (not captured) | cts70535-tbl-0002:row3:col3 |
+| PD (effect) | E max — 95% CI a | `Q320` · not captured | 0.042 | not captured | not captured | space_fold (not captured) | cts70535-tbl-0002:row3:col4 |
+| PD (effect) | fEC 50 — Estimate | `Q321` · not captured | 165 | μg/L | not captured | llm (not captured) | cts70535-tbl-0002:row4:col3 |
+| PD (effect) | fEC 50 — 95% CI a | `Q321` · not captured | 125 | μg/L | not captured | llm (not captured) | cts70535-tbl-0002:row4:col4 |
+| PK (driver) | γ — 95% CI a | `Q89` · not captured | 1.1 | not captured | not captured | llm (not captured) | cts70535-tbl-0002:row5:col4 |
+| PD (effect) | k heal — Estimate | `Q337` · not captured | 0.027 | not captured | not captured | llm (not captured) | cts70535-tbl-0002:row8:col3 |
+| variability | add lesion — Estimate | `Q317` · not captured | 0.39 | RUV | not captured | llm (not captured) | cts70535-tbl-0002:row14:col3 |
+| PD (effect) | baseline | `Q324` · not captured | 8.01 | log10 photons/s | not captured | review_gapfill (not captured) | Henninger_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

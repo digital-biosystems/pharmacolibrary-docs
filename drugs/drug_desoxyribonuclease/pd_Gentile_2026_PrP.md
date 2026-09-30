@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2439-s4 drives name (in ng/g): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The record describes a sigmoid Emax inhibition model in which brain concentrations of divalent siRNA 2439-s4 (µg/g) drive reduction of PrP (ng/g, measured by ELISA in whole brain hemisphere), but the paper excerpts do not state the mechanism (e.g., inhibition of PrP production or elimination) and provide no model parameters (Imax, IC50, Emax, kin, kout, ke0, gamma); only residual PrP levels such as 49.4% for 1682-s4 and 17% residual PrP for a human PRNP-targeting candidate are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gentile_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

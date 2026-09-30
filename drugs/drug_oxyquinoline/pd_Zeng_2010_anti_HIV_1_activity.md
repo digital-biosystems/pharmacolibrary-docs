@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 5,5-(p-phenylenebisazo)-8-hydroxyquinoline p-ethylbenzenesulfonate (measured concentrations) drive name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of 5,5'-(p-phenylenebisazo)-8-hydroxyquinoline sulfonates (4a-j) and parent compound 3 inhibit HIV-1 replication in infected C8166 cells, measured as 50% reduction of syncytia formation (EC50); the paper reports only EC50 values (e.g. 4g 2.59 mg/ml, 4i 4.01 mg/ml, 3 0.45 mg/ml, AZT control 1139.47 mg/ml per record) and does not state a PD mechanism or model (no Imax, kin, kout, ke0, or gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zeng_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Zeng XW; Huang N; Xu H; Yang WB; Yang LM; Qu H; et al. et al. (2010). Chemical &
   ·  DOI: [10.1248/cpb.58.976](https://doi.org/10.1248/cpb.58.976)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 3 — EC 50 c) (mg/ml) | `Q321` · not captured | 8.51 | mg/ml | not captured | llm (not captured) | tab_0:row1:col1 |
-| 4a — EC 50 c) (mg/ml) | `Q321` · not captured | 47.56 | mg/ml | not captured | llm (not captured) | tab_0:row2:col1 |
-| 4b — EC 50 c) (mg/ml) | `Q321` · not captured | 40.36 | mg/ml | not captured | llm (not captured) | tab_0:row3:col1 |
-| 4c — EC 50 c) (mg/ml) | `Q321` · not captured | 83.66 | mg/ml | not captured | llm (not captured) | tab_0:row4:col1 |
-| 4d — EC 50 c) (mg/ml) | `Q321` · not captured | 102.02 | mg/ml | not captured | llm (not captured) | tab_0:row5:col1 |
-| 4e — EC 50 c) (mg/ml) | `Q321` · not captured | 7.55 | mg/ml | not captured | llm (not captured) | tab_0:row6:col1 |
-| 4f — EC 50 c) (mg/ml) | `Q321` · not captured | 61.62 | mg/ml | not captured | llm (not captured) | tab_0:row7:col1 |
-| 4g — EC 50 c) (mg/ml) | `Q321` · not captured | 82.29 | mg/ml | not captured | llm (not captured) | tab_0:row8:col1 |
-| 4h — EC 50 c) (mg/ml) | `Q321` · not captured | 13.14 | mg/ml | not captured | llm (not captured) | tab_0:row9:col1 |
-| 4i — EC 50 c) (mg/ml) | `Q321` · not captured | 98.31 | mg/ml | not captured | llm (not captured) | tab_0:row10:col1 |
-| 4j — EC 50 c) (mg/ml) | `Q321` · not captured | 37.69 | mg/ml | not captured | llm (not captured) | tab_0:row11:col1 |
-| AZT e) — EC 50 c) (mg/ml) | `Q321` · not captured | 1139.47 | mg/ml | not captured | llm (not captured) | tab_0:row12:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 3 — EC 50 c) (mg/ml) | `Q321` · not captured | 8.51 | mg/ml | not captured | llm (not captured) | tab_0:row1:col1 |
+| PD (effect) | 4a — EC 50 c) (mg/ml) | `Q321` · not captured | 47.56 | mg/ml | not captured | llm (not captured) | tab_0:row2:col1 |
+| PD (effect) | 4b — EC 50 c) (mg/ml) | `Q321` · not captured | 40.36 | mg/ml | not captured | llm (not captured) | tab_0:row3:col1 |
+| PD (effect) | 4c — EC 50 c) (mg/ml) | `Q321` · not captured | 83.66 | mg/ml | not captured | llm (not captured) | tab_0:row4:col1 |
+| PD (effect) | 4d — EC 50 c) (mg/ml) | `Q321` · not captured | 102.02 | mg/ml | not captured | llm (not captured) | tab_0:row5:col1 |
+| PD (effect) | 4e — EC 50 c) (mg/ml) | `Q321` · not captured | 7.55 | mg/ml | not captured | llm (not captured) | tab_0:row6:col1 |
+| PD (effect) | 4f — EC 50 c) (mg/ml) | `Q321` · not captured | 61.62 | mg/ml | not captured | llm (not captured) | tab_0:row7:col1 |
+| PD (effect) | 4g — EC 50 c) (mg/ml) | `Q321` · not captured | 82.29 | mg/ml | not captured | llm (not captured) | tab_0:row8:col1 |
+| PD (effect) | 4h — EC 50 c) (mg/ml) | `Q321` · not captured | 13.14 | mg/ml | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | 4i — EC 50 c) (mg/ml) | `Q321` · not captured | 98.31 | mg/ml | not captured | llm (not captured) | tab_0:row10:col1 |
+| PD (effect) | 4j — EC 50 c) (mg/ml) | `Q321` · not captured | 37.69 | mg/ml | not captured | llm (not captured) | tab_0:row11:col1 |
+| PD (effect) | AZT e) — EC 50 c) (mg/ml) | `Q321` · not captured | 1139.47 | mg/ml | not captured | llm (not captured) | tab_0:row12:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

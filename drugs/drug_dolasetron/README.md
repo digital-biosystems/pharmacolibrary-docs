@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Dow_1996_reference](drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md) | 1-compartment, oral | 8 | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T3_output_variable</sub><br><sub>blocking: T3_topology_template</sub><br><sub>route_to: `engineer`</sub> | [Dow_1996_reference](drugs/drug_dolasetron/Dolasetron_Dow1996_reference.md) | ▶ model + simulator | 1-compartment, oral | 8 | Dow J et al., Comparison of the pharmacokinetics of d…, Journal of pharmaceutical s… (1996) | [10.1021/js960041m](https://doi.org/10.1021/js960041m) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [George_2021](drugs/drug_dolasetron/pd_George_2021_ASP.md) | George B et al., In Vitro Inhibition of Renal OCT2 and M…, International journal of mo… (2021) | [10.3390/ijms22126439](https://doi.org/10.3390/ijms22126439) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [George_2021_ASP](drugs/drug_dolasetron/pd_George_2021_ASP.md) | ASP+ intracellular accumulation ← ondansetron · inhibition effect | — | George B et al., In Vitro Inhibition of Renal OCT2 and M…, International journal of mo… (2021) | [10.3390/ijms22126439](https://doi.org/10.3390/ijms22126439) |
 
 ## Pharmacogenomics (PGx)
 

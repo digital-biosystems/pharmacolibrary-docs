@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pyridoxal 5' phosphate (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Pyridoxal 5′-phosphate (PLP) concentration drives inhibition of sympathetic nerve activity (and carotid body sensory firing) via non-selective/allosteric antagonism of P2X3 receptors, with an IC50 of 8.7 ± 0.7 µM against α,β-methylene ATP-evoked Ca2+ responses in hP2X2/3R-expressing cells; the paper does not report a formal sigmoid-Emax fit for the sympathetic response (experiments used PLP 50 µM infusion and 1–5 mM injections).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Felippe_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

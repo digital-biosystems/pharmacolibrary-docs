@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel drives CD54 expression (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Vinblastine (like paclitaxel) acts on CD54 cell-surface expression on P815 mastocytoma (and Yac-1) cells, producing a dose-dependent reduction after 24 h of culture, measured by flow cytometry; the paper does not state a mechanism beyond an anti-microtubule drug effect and gives no Emax/IC50/EC50 or rate parameters (only EC25/EC50 concentrations are mentioned for cytotoxicity resistance, without values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_2003`
 - **model family:** `emax`
 - **driver:** `not_resolved`

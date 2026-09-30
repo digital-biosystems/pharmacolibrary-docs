@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in min) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Reteplase plasma concentrations (from a two-compartment PK-PD model with elimination constant kel,D and central-peripheral distribution constants kcp/kpc) drive clot lysis time (min) through fibrinolytic reactions in a combined systemic PK-PD and local fibrinolysis model; the paper states reteplase had the slowest fibrinolysis rate of the four drugs simulated but did not affect systemic fibrinogen. No Imax, IC50/EC50, Emax, kin, kout, ke0, or gamma values are reported for reteplase, and no explicit Emax-type or effect-compartment PD mechanism is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

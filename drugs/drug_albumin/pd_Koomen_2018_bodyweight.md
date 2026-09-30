@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atrasentan (measured concentrations) drives name (in kg) (the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atrasentan plasma exposure (Ctrough, Css, Cmax, 24-hour AUCd14, in ng/mL) was correlated with the change in bodyweight (kg) after 2 weeks of treatment with 0.75 or 1.25 mg/d, with bodyweight increase (sodium retention) of 0.9 kg and 1.1 kg at the two doses; the paper does not state a mechanistic PD model or potency parameters (no Imax/IC50/EC50/Emax/kin/kout/ke0), only that individual PK parameters correlated significantly with bodyweight response (P &lt; .01), with exposure-response curves for albuminuria and bodyweight crossing near the mean Ctrough of the 0.75 mg dose.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koomen_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Koomen JV; Stevens J; Mostafa NM; Parving HH; de Zeeuw D; Heerspink HJL et al. (
   ·  DOI: [10.1111/dom.13312](https://doi.org/10.1111/dom.13312)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Ctrough — P | `Q37` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col2 |
-| Ctrough — P | `Q37` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col4 |
-| Css — P | `Q34` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col2 |
-| Css — P | `Q34` · not captured | 0.008 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col4 |
-| Cmax — P | `Q32` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col2 |
-| Cmax — P | `Q32` · not captured | 0.019 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col4 |
-| 24‐hour AUCd14 — P | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col2 |
-| 24‐hour AUCd14 — P | `Q19` · not captured | 0.008 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Ctrough — P | `Q37` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col2 |
+| PK (driver) | Ctrough — P | `Q37` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row1:col4 |
+| PK (driver) | Css — P | `Q34` · not captured | 0.003 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col2 |
+| PK (driver) | Css — P | `Q34` · not captured | 0.008 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row2:col4 |
+| PK (driver) | Cmax — P | `Q32` · not captured | 0.004 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col2 |
+| PK (driver) | Cmax — P | `Q32` · not captured | 0.019 | not captured | not captured | exact (not captured) | dom13312-tbl-0001:row3:col4 |
+| PK (driver) | 24‐hour AUCd14 — P | `Q19` · not captured | 0.004 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col2 |
+| PK (driver) | 24‐hour AUCd14 — P | `Q19` · not captured | 0.008 | not captured | not captured | llm (not captured) | dom13312-tbl-0001:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

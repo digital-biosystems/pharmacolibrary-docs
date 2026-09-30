@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Artemisia aragonensis essential oil (measured concentrations) drives Total antioxidant capacity (in mg EAA/g) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> No pharmacodynamic model is described for total antioxidant capacity: the paper reports only a single TAC value of 7.299 ± 1.774 mg EAA/g for Artemisia aragonensis essential oil from an in vitro phosphomolybdenum assay, with no concentration-response relationship, mechanism, or potency parameters (IC50/EC50/Emax) given for TAC; the IC50 (0.034 ± 0.004 mg/mL) and EC50 (0.118 ± 0.008 mg/mL) values reported relate to the separate DPPH and FRAP assays, respectively.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chebbac_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

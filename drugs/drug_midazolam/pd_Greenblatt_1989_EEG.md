@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diazepam (measured concentrations) drives EEG 13-30 Hz activity (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma midazolam concentration (ng/ml) was related to the percentage of total EEG amplitude in the 13–30 Hz range by a direct Emax (sigmoid) model, with Emax 22.4 ± 2.4 %, EC50 40.0 ± 2.8 ng/ml, and exponent 2.50 ± 0.42 (individual fits); the paper does not describe an effect-compartment or turnover mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Greenblatt_1989`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

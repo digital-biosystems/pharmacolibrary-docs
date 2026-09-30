@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> ADAMTS-13 (WT or GoF variant) concentrations reduce VWF-mediated platelet capture (% surface coverage) in parallel-flow whole-blood assays by proteolytically dissolving VWF–platelet aggregates; EC50 values were 10.2 ± 5.6 nm for WT and 2.5 ± 1.1 nm for GoF ADAMTS-13. The paper does not state a formal PD model (no Imax/IC50/kin/kout/ke0), and WT activity is enhanced by conformational activation with 100 nm VWF D4-CK.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2018`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

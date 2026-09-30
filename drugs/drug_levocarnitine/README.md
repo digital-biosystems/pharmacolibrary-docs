@@ -32,10 +32,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | — | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | — | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
 
 ## ADME sites
 

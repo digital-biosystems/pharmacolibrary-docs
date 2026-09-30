@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazapril (concentrations from the PK model of Gross_1993) drives noradrenaline (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for cilazapril on plasma noradrenaline; it reports that plasma noradrenaline concentrations were unaffected by cilazapril (single oral doses of 5, 10 and 20 mg) even at the time of maximal blood pressure fall at 6 h, with postural and exercise-induced noradrenaline rises preserved (e.g. exercise rise 4.7 ± 3.3 nmol l−1 on cilazapril vs 5.6 ± 4.1 nmol l−1 on placebo). No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ajayi_1986`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

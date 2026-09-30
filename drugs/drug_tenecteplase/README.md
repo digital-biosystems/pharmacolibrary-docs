@@ -22,18 +22,18 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yang_2023_reference](drugs/drug_tenecteplase/Tenecteplase_Yang2023_reference.md) | 1-compartment (no model) | 3 | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Yang_2023_reference](drugs/drug_tenecteplase/Tenecteplase_Yang2023_reference.md) | — | 1-compartment (no model) | 3 | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_tenecteplase/pd_Yang_2023_PAI_1_concentration.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_tenecteplase/pd_Yang_2023_clot_lysis_time.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_tenecteplase/pd_Yang_2023_fibrinogen_concentration.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023](drugs/drug_tenecteplase/pd_Yang_2023_intracranial_hemorrhage_risk.md) | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023_PAI_1_concentration](drugs/drug_tenecteplase/pd_Yang_2023_PAI_1_concentration.md) | name ← unknown · stimulation effect | — | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023_clot_lysis_time](drugs/drug_tenecteplase/pd_Yang_2023_clot_lysis_time.md) | name ← unknown · stimulation effect | — | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023_fibrinogen_concentration](drugs/drug_tenecteplase/pd_Yang_2023_fibrinogen_concentration.md) | name ← unknown · stimulation effect | — | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yang_2023_intracranial_hemorrhage_risk](drugs/drug_tenecteplase/pd_Yang_2023_intracranial_hemorrhage_risk.md) | name ← unknown · stimulation effect | — | Yang Y et al., In Silico Study of Different Thrombolyt…, Pharmaceutics (2023) | [10.3390/pharmaceutics15030797](https://doi.org/10.3390/pharmaceutics15030797) |
 
 ## ADME sites
 

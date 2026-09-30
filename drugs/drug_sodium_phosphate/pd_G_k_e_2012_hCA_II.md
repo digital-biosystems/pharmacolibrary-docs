@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dexketoprofen trometamol (measured concentrations) drives carbonic anhydrase II activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dexamethasone sodium phosphate inhibits purified human carbonic anhydrase II (hCA II) activity in vitro in a concentration-dependent manner, with an IC50 of 6200 μM (compared with 950 μM for dexketoprofen trometamol on hCA II); the paper reports IC50 values from activity percentage diagrams and does not describe a kinetic PD mechanism (no Imax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gökçe_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cu–Cr–Co-NPs@GLN-HEC drives IC50 (in μg mL−1) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The nanocomposite Cu–Cr–Co-NPs@GLN-HEC inhibits cell viability in vitro: against MCF7 cancer cells the IC50 was 30.4 μg mL−1 (viability 50.69–90.9% at 31.25–125 μg mL−1; selectivity index 5.61), while against normal Wi38 cells the IC50 was 170.8 μg mL−1. The paper reports only IC50 values and does not state a pharmacodynamic mechanism (e.g., Emax/IC50 model parameters, kin/kout) for the inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hasanin_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

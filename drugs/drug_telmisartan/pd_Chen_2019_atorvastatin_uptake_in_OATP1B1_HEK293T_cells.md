@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methylophiopogonanone A, ophiopogonin D', methylophiopogonanone B, ophiopogonin D (measured concentrations) drive name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Concentrations of the Radix Ophiopogonis components methylophiopogonanone A (MA), methylophiopogonanone B (MB), ophiopogonin D (OPD) and ophiopogonin D′ (OPD′) stimulate atorvastatin uptake in OATP1B1-HEK293T cells, i.e. a direct stimulatory (Emax-type) effect on transporter-mediated uptake, with EC50 values of 6.00±1.60, 13.64±4.07, 10.41±1.28 and 3.68±0.85 μM, respectively; the paper does not state Imax/Emax, kin, kout or ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chen_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

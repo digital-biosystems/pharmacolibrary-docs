@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin detemir drives endogenous insulin (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Subcutaneous insulin detemir (2.4 nmol/kg, 0.1 U/kg) in dogs was associated with suppression of endogenous insulin secretion (a concurrent rise in exogenous insulin correlated with a decline in endogenous insulin), used as a PD readout alongside glucose infusion rate; the paper does not state a formal PD model structure or any potency/rate parameters (no Imax, IC50, EC50, Emax, kin, kout, or ke0 values are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fink_2018`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

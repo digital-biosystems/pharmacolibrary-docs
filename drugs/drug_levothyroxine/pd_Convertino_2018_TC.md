@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** PFOA (measured concentrations) drives total cholesterol (in mmol/l): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> In the paper, plasma PFOA (from APFO dosing, not levothyroxine) is linked to decreased total cholesterol (mmol/l) via an effect-compartment PK/PD model representing the target-site concentration; the paper does not state an explicit mechanism (e.g., Imax/IC50, kin/kout) or potency parameters, giving only a GEE-estimated average change of about −1.2×10−3 mmol/l/μM and a clear transition in the cholesterol decrease at PFOA levels of roughly 420–565 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Convertino_2018`
 - **model family:** `effect_compartment`
 - **driver:** `conc_no_pk`

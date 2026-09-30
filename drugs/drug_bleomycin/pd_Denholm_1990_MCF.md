@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin A2 (measured concentrations) drives monocyte chemotactic factor secretion (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (bleomycin A2) directly stimulates rat alveolar macrophage secretion of monocyte chemotactic factor (MCF) in a concentration-dependent (Emax-type) manner, with the ED50 of the dose-response curve (~528 nM, matching the high-affinity binding site Kd of 528 nM; low-affinity sites Kd 65 µM) suggesting mediation by specific saturable macrophage surface binding sites; the paper does not state Imax, Emax, kin, kout, ke0, or gamma values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Denholm_1990`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

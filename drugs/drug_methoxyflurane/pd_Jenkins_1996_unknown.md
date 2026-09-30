@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methoxyflurane drives 5-HT3 receptor peak inward current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Methoxyflurane potentiates the 5-HT3 receptor peak inward current elicited by low concentrations of 5-HT (a stimulation/direct potentiation of the 5-HT-evoked current; no production/elimination or effect-compartment mechanism is described). The paper reports EC50 values of 14 and 26 µM for this potentiation, with methoxyflurane showing the largest potentiation among the volatile anaesthetics tested.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jenkins_1996`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,10 +30,10 @@ Jenkins A; Franks NP; Lieb WR et al. (1996). British journal of pharmacology 117
   ·  DOI: [10.1111/j.1476-5381.1996.tb15314.x](https://doi.org/10.1111/j.1476-5381.1996.tb15314.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 119 + 13 — General anaesthesia ECso Animal | `Q321` · not captured | 26 | gM | not captured | llm (not captured) | tab_0:row1:col2 |
-| 1.82+0.19 — General anaesthesia ECso Animal | `Q321` · not captured | 14 | gM | not captured | llm (not captured) | tab_0:row4:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 119 + 13 — General anaesthesia ECso Animal | `Q321` · not captured | 26 | gM | not captured | llm (not captured) | tab_0:row1:col2 |
+| PD (effect) | 1.82+0.19 — General anaesthesia ECso Animal | `Q321` · not captured | 14 | gM | not captured | llm (not captured) | tab_0:row4:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

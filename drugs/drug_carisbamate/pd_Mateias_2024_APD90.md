@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cenobamate (measured concentrations) drives name (in ms): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In the paper, cenobamate (not carisbamate) shortens APD90 in ventricular cardiomyocytes (28.6 ± 13.5% reduction at 200 µM; simulated APD90 270.5 ms vs 304.0 ms control at 1×Cmax = 170 µM), attributed to inhibition of depolarizing currents (peak INa IC50 87.6 µM, late INa IC50 46.5 µM, ICaL IC50 509.75 µM) with negligible IKr/IKs effects; the paper does not report a sigmoid Emax model for APD90 (no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma for this response), and the record's τinact value of 1.21 ms is not described as an APD90 potency parameter in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mateias_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,9 +30,9 @@ Mateias AL; Armasescu F; Amuzescu B; Corlan AD; Radu BM et al. (2024). Biomolecu
   ·  DOI: [10.3390/biom14121582](https://doi.org/10.3390/biom14121582)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 23321 * — τinact Cenobamate (ms) | `Q362` · not captured | 1.21 | ms | not captured | llm (not captured) | biomolecules-14-01582-t002:row3:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| model term | 23321 * — τinact Cenobamate (ms) | `Q362` · not captured | 1.21 | ms | not captured | llm (not captured) | biomolecules-14-01582-t002:row3:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

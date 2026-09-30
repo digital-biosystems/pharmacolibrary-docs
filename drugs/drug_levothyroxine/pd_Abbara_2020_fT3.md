@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbimazole (the dose) drives free triiodothyronine (in pmol/l): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Daily carbimazole dose (mg) acts on serum free triiodothyronine (fT3, pmol/l) as a linear dose-dependent inhibition of hormone levels, modelled as fT3(n+1) = fT3(n) − (m*Dose^p*fT3(day n) + c), i.e. a proportional daily percentage fall in fT3 associated with dose (P &lt; 0.0001), with a dose exponent p accounting for a larger fall between early visits; the paper does not report Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values, and smoking status was not associated with baseline fT4 (P = 0.41).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abbara_2020`
 - **model family:** `linear`
 - **driver:** `dose_only`
@@ -21,9 +31,9 @@ Abbara A; Clarke SA; Brewster R; Simonnard A; Eng PC; Phylactou M; et al. et al.
   ·  DOI: [10.3389/fendo.2020.00286](https://doi.org/10.3389/fendo.2020.00286)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Smoking status — P-value | `Q100` · not captured | 0.41 | not captured | not captured | llm (not captured) | T2:row9:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Smoking status — P-value | `Q100` · not captured | 0.41 | not captured | not captured | llm (not captured) | T2:row9:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

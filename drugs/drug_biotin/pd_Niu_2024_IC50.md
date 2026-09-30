@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucinostatin B derivatives (measured concentrations) drives Cytotoxicity (in nM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In the paper, LB-biotin (a leucinostatin B C-terminal derivative) is not itself the subject of a cytotoxicity model; it concentration-dependently inhibits Plasmodium falciparum transmission to mosquitoes in the SMFA with an IC50 of 42 nM (weakest of the derivatives: LA 0.16 nM, LB 1.5 nM, LB-Atto495 4.2 nM), with mitochondria as the apparent target. Cytotoxicity was instead measured for leucinostatin A (LB-CH3) on HEK293 and K562 cells, giving IC50 values of 89.6 nM and 47.3 nM respectively; no PD mechanism model (e.g. Imax/IC50 parameters of an inhibitory production or elimination effect) is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Niu_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

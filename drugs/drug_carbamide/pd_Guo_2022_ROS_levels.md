@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Compound 5d (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In MCF-7 breast cancer cells, compound 5d (a pomalidomide urea derivative) increased cellular ROS levels in a concentration-dependent manner (0–20 μM, 24 h, DCFH-DA probe), with no mechanistic PD model (e.g., Imax/IC50 for ROS) stated; the paper's only potency value is an IC50 of 20.2 μM for inhibition of cell growth in MCF-7 (5c: 26.93 μM), not for the ROS response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Guo_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,17 +30,17 @@ Guo Y; Wang X; Wang Z; Mao L; Wang J; Peng L; et al. et al. (2022). Pharmaceutic
   ·  DOI: [10.3390/ph15121479](https://doi.org/10.3390/ph15121479)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (μM) — 5a | `Q322` · not captured | 86.57 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col3 |
-| IC50 (μM) — 5b | `Q322` · not captured | 114.13 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col4 |
-| IC50 (μM) — 5c | `Q322` · not captured | 26.93 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col5 |
-| IC50 (μM) — 5d | `Q322` · not captured | 20.2 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col6 |
-| IC50 (μM) — 5e | `Q322` · not captured | 53.44 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col7 |
-| IC50 (μM) — 6c | `Q322` · not captured | 150.73 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col10 |
-| IC50 (μM) — 6d | `Q322` · not captured | 107.60 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col11 |
-| IC50 (μM) — 6e | `Q322` · not captured | 99.14 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col12 |
-| IC50 (μM) — 5c | `Q322` · not captured | 132.27 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row1:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (μM) — 5a | `Q322` · not captured | 86.57 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col3 |
+| PD (effect) | IC50 (μM) — 5b | `Q322` · not captured | 114.13 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col4 |
+| PD (effect) | IC50 (μM) — 5c | `Q322` · not captured | 26.93 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col5 |
+| PD (effect) | IC50 (μM) — 5d | `Q322` · not captured | 20.2 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col6 |
+| PD (effect) | IC50 (μM) — 5e | `Q322` · not captured | 53.44 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col7 |
+| PD (effect) | IC50 (μM) — 6c | `Q322` · not captured | 150.73 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col10 |
+| PD (effect) | IC50 (μM) — 6d | `Q322` · not captured | 107.60 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col11 |
+| PD (effect) | IC50 (μM) — 6e | `Q322` · not captured | 99.14 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row0:col12 |
+| PD (effect) | IC50 (μM) — 5c | `Q322` · not captured | 132.27 | μM | not captured | exact (not captured) | pharmaceuticals-15-01479-t001:row1:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

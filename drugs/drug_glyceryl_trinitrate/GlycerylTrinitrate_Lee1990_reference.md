@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
 
 **The glyceryl trinitrate record was rejected because apparent parameters (CL/F 16 ml/min/kg, V/F 6.5 L) were combined with an explicit bioavailability Fab of 0.015, double-correcting for F; Fab's unit is also given as mg/kg instead of a fraction.**

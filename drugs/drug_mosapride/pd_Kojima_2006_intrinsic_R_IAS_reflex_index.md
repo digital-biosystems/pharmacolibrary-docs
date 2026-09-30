@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mosapride (the dose) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Mosapride (0.1 mg/kg and higher doses, i.v.) stimulates the intrinsic R-IAS reflex relaxation index in PITH guinea pigs, acting via enteric 5-HT4 receptors; the record models this as a dose-only Emax-type stimulation, but the excerpts give no Emax, ED50/EC50, or other potency or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kojima_2006`
 - **model family:** `emax`
 - **driver:** `dose_only`

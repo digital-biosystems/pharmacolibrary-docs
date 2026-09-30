@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Menthofuran (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Menthofuran (orally, 25, 50 and 100 mg/kg) reduced castor oil-related gastric emptying measured by the phenol red method (vehicle 72.3 ± 0.9% vs 59.8 ± 4.4, 51.6 ± 4.1 and 50.8 ± 3.1%), an effect similar to scopolamine 10 mg/kg; the paper does not give an Emax/IC50 model for this response, only in vitro ileum relaxation EC50 values of 0.059 ± 0.008 μg/mL (KCl) and 0.068 ± 0.007 μg/mL (carbachol), with a possible mechanism of reduced calcium influx (or M3 antagonism, opioid agonism, or Ca2+ channel blockade).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Santos_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

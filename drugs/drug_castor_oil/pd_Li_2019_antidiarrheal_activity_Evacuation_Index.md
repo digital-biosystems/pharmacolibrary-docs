@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methanol extract of Sophora tonkinensis (measured concentrations) drives name (in score): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The methanol extract of Sophora tonkinensis (STR, 0.01–10 mg/mL) concentration-dependently inhibited spontaneous contraction of isolated rabbit jejunum (Emax-type inhibition), with EC50 0.66 mg/mL (95% CI 0.49–0.96, n=6), and fully relaxed Ach (10−5 M)- and K+ (60 mM)-induced contractions at 10 mg/mL with EC50 values of 0.39 mg/mL (0.28–0.44) and 0.17 mg/mL (0.10–0.21), respectively; the paper does not state a specific molecular mechanism, though the pattern resembled the calcium-channel blocker verapamil (EC50 0.51 μM spontaneous, 0.25 μM Ach-, 0.041 μM K+-induced contraction).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Li_2019`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

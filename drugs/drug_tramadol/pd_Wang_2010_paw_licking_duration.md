@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tramadol (concentrations from the PK model of Al-Qurain_2022::base) drives name (in sec): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Peripheral tramadol reduced glutamate-induced paw licking duration from 33 ± 12 sec to 4 ± 4 sec (mean ± SD, n = 6 per group); the paper does not state a specific PD mechanism for this response beyond suggesting inhibition of glutamate-mediated nociception (possibly via NMDA receptor blockade and local anesthetic sodium-channel blockade). Reported potencies are EC50 46 ± 13 mM for glutamate-induced allodynia and EC50 84 ± 24 mM for tail nerve conduction block; no Imax, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2010`
 - **model family:** `emax`
 - **driver:** `cited_pk`

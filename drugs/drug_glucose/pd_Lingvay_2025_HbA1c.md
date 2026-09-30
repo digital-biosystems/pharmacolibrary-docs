@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin icodec drives glycated hemoglobin (in %): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> HbA1c is described by an indirect response turnover model driven by the weekly mean of simulated daily prebreakfast SMBG levels, which in turn is linked to insulin icodec concentrations via an effect compartment and a nonlinear regression of insulin action on SMBG; the paper does not report potency or rate parameters (e.g., Imax, IC50, kin, kout, ke0) for the HbA1c model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lingvay_2025`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

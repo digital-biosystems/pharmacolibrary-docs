@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 2-thiazolylethylamine drives arteriolar diameter (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cimetidine, an H2-receptor antagonist, competitively blocks the concentration-dependent vasodilator (arteriolar diameter increase) responses to the H2 agonist impromidine in rat stomach submucosal arterioles, shifting the agonist concentration-response curves rightward; the paper reports a pA2 of 5.98 ± 0.033 (representative Schild plot pA2 6.08, Schild slope 0.97) and does not describe a pharmacodynamic model with parameters such as IC50, Emax, kin, kout or ke0.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Koo_1983`
 - **model family:** `emax`
 - **driver:** `not_resolved`

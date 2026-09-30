@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives cell viability (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cetylpyridinium chloride (CPC) acts directly on primary human neonatal melanocyte viability (MTS assay after 2 min exposure and 24 h recovery), causing concentration-dependent cytotoxicity with IC50 = 54.33 µM; the paper does not state a mechanistic PD model (no Imax, kin/kout, or ke0). Toothpaste IC50 values (% w/v) were #2 = 1.25, #3 = 0.62, and #4 = 1.60.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Goenka_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Goenka S; Lee HM et al. (2023). Dentistry journal 11
   ·  DOI: [10.3390/dj11120287](https://doi.org/10.3390/dj11120287)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| #2 — IC50 (% w/v) | `Q322` · not captured | 1.25 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row2:col1 |
-| #3 — IC50 (% w/v) | `Q322` · not captured | 0.62 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row3:col1 |
-| #4 — IC50 (% w/v) | `Q322` · not captured | 1.60 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row4:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | #2 — IC50 (% w/v) | `Q322` · not captured | 1.25 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row2:col1 |
+| PD (effect) | #3 — IC50 (% w/v) | `Q322` · not captured | 0.62 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row3:col1 |
+| PD (effect) | #4 — IC50 (% w/v) | `Q322` · not captured | 1.60 | % w/v | not captured | llm (not captured) | dentistry-11-00287-t004:row4:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

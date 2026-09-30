@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ethanolic grape peduncles (EGP) extract (measured concentrations) drives DPPH free radical scavenging (in % inhibition) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethanolic grape peduncles (EGP) extract concentrations (µg/mL) were tested for direct DPPH free radical scavenging (% inhibition), fitted by non-linear regression; the paper does not describe a mechanistic PD model (no kin/kout/ke0/Emax parameters). The IC50 was 159.3 µg/mL (95% CI 138.8–185.5), compared with ascorbic acid at 121.8 µg/mL (101.7–145.7), with lower IC50 indicating greater scavenging activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Myricetin (measured concentrations) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Myricetin concentrations (μM) inhibit S. aureus NDH-2 enzyme activity (% NADH oxidation at 340 nm), acting as a competitive inhibitor with respect to the substrate menadione; the IC50 is 0.7 μg/mL (2 μM), about 4.5-fold lower than HQNO (9 μM). No Emax, kin/kout, or ke0 values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhou_2024_2`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

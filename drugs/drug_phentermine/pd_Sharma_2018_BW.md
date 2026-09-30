@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Naltrexone/bupropion drives body weight (in kg): indirect response — drug inhibits the production of body weight.
+
+**Model:** No model was generated from this record.
+
+> In the Contrave (naltrexone/bupropion) trial data, naltrexone and bupropion exposures act on body weight (kg) via an inhibitory Emax model that reduces the disease-progression component of body weight (BWprog,1), with a combined maximal effect (Emax) and individual ED50 values for naltrexone and bupropion, plus a time-driven term with ET50 capturing time-dependent weight change; the underlying PopPD model is an indirect response model with zero-order weight gain (kin) and first-order weight loss (kout), a Bateman-like LSI effect (DSTIM, kde, krel), and disease progression fixed at 0.7 kg/year (kpro) in non-T2DM subjects. The paper does not report numerical values for Emax, ED50, or ET50, and
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sharma_2018`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`

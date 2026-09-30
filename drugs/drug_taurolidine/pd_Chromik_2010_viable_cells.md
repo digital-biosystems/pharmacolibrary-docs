@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Taurolidine (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Taurolidine (TRD, 100–1000 μM) reduces the percentage of viable cells in vitro in several cell lines (e.g. 24 h: 66.2% ± 5.6% viable in HT29 and 33.2% ± 1.0% in Chang Liver at 250 μM; 26.8% ± 3.7% in HT1080 at 100 μM; 36.8% ± 5.2% in AsPC-1 and 25.7% ± 4.3% in BxPC-3 at 1000 μM), with dose-response patterns that are non-uniform (proportional in BxPC-3, V-shaped in HT29/Chang Liver, anti-proportional in HT1080) and mediated by apoptosis and/or necrosis; the paper does not state a pharmacodynamic model or potency parameters (no Imax, IC50, EC50, Emax, kin, kout, ke0, gamma).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chromik_2010`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

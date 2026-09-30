@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampin, rifapentine, rifabutin (measured concentrations) drive name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In HFS-MAC static-concentration studies, rifampin, rifapentine, and rifabutin concentrations (as AUC/MIC exposures) were related to MAC bacterial burden (log10 CFU/mL) via a three-parameter inhibitory sigmoid Emax model (Hill slope fixed at 1), a direct concentration-effect (kill) relationship with no effect-compartment or turnover component described. Potency was virtually identical across drugs: EC50 0.023 mg/L (rifampin), 0.070 mg/L (rifapentine), and 0.072 mg/L (rifabutin), with Emax of 5.674, 5.480, and 5.76 log10 CFU/mL, respectively; time-course fits by study day gave Emax values such as 2.07 (day 4) and 1.26 (day 21) log10 CFU/mL and EC50 values such as 6.65 (day 4) and 154.66 (day 7
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boorgula_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,32 +30,32 @@ Boorgula GD; Jakkula LUMR; Gumbo T; Jung B; Srivastava S et al. (2021). Frontier
   ·  DOI: [10.3389/fphar.2021.645264](https://doi.org/10.3389/fphar.2021.645264)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax log10 CFU/mL — 4 | `Q320` · not captured | 2.07 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col3 |
-| Emax log10 CFU/mL — 7 | `Q320` · not captured | 2.69 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col4 |
-| Emax log10 CFU/mL — 10 | `Q320` · not captured | 2.23 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col5 |
-| Emax log10 CFU/mL — 14 | `Q320` · not captured | 1.32 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col6 |
-| Emax log10 CFU/mL — 21 | `Q320` · not captured | 1.26 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col7 |
-| Emax log10 CFU/mL — 26 | `Q320` · not captured | 1.46 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col8 |
-| Emax log10 CFU/mL — 4 | `Q320` · not captured | 0.19 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col3 |
-| Emax log10 CFU/mL — 7 | `Q320` · not captured | 0.50 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col4 |
-| Emax log10 CFU/mL — 10 | `Q320` · not captured | 0.88 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col5 |
-| Emax log10 CFU/mL — 14 | `Q320` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col6 |
-| Emax log10 CFU/mL — 21 | `Q320` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col7 |
-| Emax log10 CFU/mL — 26 | `Q320` · not captured | 1.16 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col8 |
-| EC50 fAUC/MIC — 4 | `Q321` · not captured | 6.65 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col3 |
-| EC50 fAUC/MIC — 7 | `Q321` · not captured | 154.66 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col4 |
-| EC50 fAUC/MIC — 10 | `Q321` · not captured | 294.18 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col5 |
-| EC50 fAUC/MIC — 14 | `Q321` · not captured | 197.34 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col6 |
-| EC50 fAUC/MIC — 21 | `Q321` · not captured | 0.00 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col7 |
-| EC50 fAUC/MIC — 26 | `Q321` · not captured | 0.00 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col8 |
-| EC50 fAUC/MIC — 4 | `Q321` · not captured | 20.64 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col3 |
-| EC50 fAUC/MIC — 7 | `Q321` · not captured | 110.15 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col4 |
-| EC50 fAUC/MIC — 10 | `Q321` · not captured | 390.79 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col5 |
-| EC50 fAUC/MIC — 14 | `Q321` · not captured | 16.58 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col6 |
-| EC50 fAUC/MIC — 21 | `Q321` · not captured | 74.35 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col7 |
-| EC50 fAUC/MIC — 26 | `Q321` · not captured | 173.21 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col8 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax log10 CFU/mL — 4 | `Q320` · not captured | 2.07 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col3 |
+| PD (effect) | Emax log10 CFU/mL — 7 | `Q320` · not captured | 2.69 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col4 |
+| PD (effect) | Emax log10 CFU/mL — 10 | `Q320` · not captured | 2.23 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col5 |
+| PD (effect) | Emax log10 CFU/mL — 14 | `Q320` · not captured | 1.32 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col6 |
+| PD (effect) | Emax log10 CFU/mL — 21 | `Q320` · not captured | 1.26 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col7 |
+| PD (effect) | Emax log10 CFU/mL — 26 | `Q320` · not captured | 1.46 | not captured | not captured | llm_confirmed (not captured) | T3:row2:col8 |
+| PD (effect) | Emax log10 CFU/mL — 4 | `Q320` · not captured | 0.19 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col3 |
+| PD (effect) | Emax log10 CFU/mL — 7 | `Q320` · not captured | 0.50 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col4 |
+| PD (effect) | Emax log10 CFU/mL — 10 | `Q320` · not captured | 0.88 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col5 |
+| PD (effect) | Emax log10 CFU/mL — 14 | `Q320` · not captured | 0.03 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col6 |
+| PD (effect) | Emax log10 CFU/mL — 21 | `Q320` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col7 |
+| PD (effect) | Emax log10 CFU/mL — 26 | `Q320` · not captured | 1.16 | not captured | not captured | llm_confirmed (not captured) | T3:row3:col8 |
+| PD (effect) | EC50 fAUC/MIC — 4 | `Q321` · not captured | 6.65 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col3 |
+| PD (effect) | EC50 fAUC/MIC — 7 | `Q321` · not captured | 154.66 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col4 |
+| PD (effect) | EC50 fAUC/MIC — 10 | `Q321` · not captured | 294.18 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col5 |
+| PD (effect) | EC50 fAUC/MIC — 14 | `Q321` · not captured | 197.34 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col6 |
+| PD (effect) | EC50 fAUC/MIC — 21 | `Q321` · not captured | 0.00 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col7 |
+| PD (effect) | EC50 fAUC/MIC — 26 | `Q321` · not captured | 0.00 | mg/L | not captured | llm_confirmed (not captured) | T3:row4:col8 |
+| PD (effect) | EC50 fAUC/MIC — 4 | `Q321` · not captured | 20.64 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col3 |
+| PD (effect) | EC50 fAUC/MIC — 7 | `Q321` · not captured | 110.15 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col4 |
+| PD (effect) | EC50 fAUC/MIC — 10 | `Q321` · not captured | 390.79 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col5 |
+| PD (effect) | EC50 fAUC/MIC — 14 | `Q321` · not captured | 16.58 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col6 |
+| PD (effect) | EC50 fAUC/MIC — 21 | `Q321` · not captured | 74.35 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col7 |
+| PD (effect) | EC50 fAUC/MIC — 26 | `Q321` · not captured | 173.21 | mg/L | not captured | llm_confirmed (not captured) | T3:row5:col8 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

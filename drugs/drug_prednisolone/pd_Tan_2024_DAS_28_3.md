@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ery-MTX-PG 3-5 (measured concentrations) drives DAS-28-3 (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Erythrocyte methotrexate polyglutamate (ery-MTX-PG 3-5) concentrations (nmol/L) directly and linearly reduce DAS-28-3 (additive model: Et = E0 − Slope·Ct); indirect and Emax/sigmoid-Emax models did not improve fit, and the tested proportional Emax model gave an EC50 of 504.58 nmol/L, over two-fold above observed maximum concentrations, indicating the relationship is far below saturation. No Imax, kin, kout or ke0 values are reported; the paper does not state a mechanistic production/elimination pathway beyond this direct effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2024`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

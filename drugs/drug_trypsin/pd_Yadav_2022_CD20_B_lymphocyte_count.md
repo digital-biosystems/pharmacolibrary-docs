@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ternary complex (Complex3) (measured concentrations) drives name (in cells/µL): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> Ternary complex (Complex3) concentration (nM) from anti-cyCD79b/CD3 TDB drives depletion of peripheral CD20+ B lymphocyte counts (cells/µL) via an indirect response model in which the complex stimulates the loss/elimination rate of B cells, with Emax 221 (% maximum increase in elimination rate) and EC50 1.20 nM; B cell turnover was fixed at kout = 0.0126 1/day (half-life 55 days), with baseline given by kin/kout.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yadav_2022`
 - **model family:** `indirect_response_ii`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Yadav R; Sukumaran S; Zabka TS; Li J; Oldendorp A; Morrow G; Reyes A; Cheu M; Li
   ·  DOI: [10.3390/pharmaceutics14050970](https://doi.org/10.3390/pharmaceutics14050970)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL — Estimate (%RSE) | `Q22` · not captured | 20.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row1:col3 |
-| CLd — Estimate (%RSE) | `Q30` · not captured | 22.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row2:col3 |
-| V1 — Estimate (%RSE) | `Q63` · not captured | 51.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row3:col3 |
-| kon_CD3 — Estimate (%RSE) | `Q329` · not captured | 4.45 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row5:col3 |
-| Kd_CD3 — Estimate (%RSE) | `Q331` · not captured | 12.8 | nM | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row6:col3 |
-| kon_CD79b — Estimate (%RSE) | `Q329` · not captured | 2.96 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row7:col3 |
-| Kd_CD79b — Estimate (%RSE) | `Q331` · not captured | 1.0 | nM | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row8:col3 |
-| ln(2)/kint_complex1 — Estimate (%RSE) | `Q334` · not captured | 346.5 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row11:col3 |
-| ln(2)/kint_complex2 — Estimate (%RSE) | `Q334` · not captured | 7.79 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row12:col3 |
-| ln(2)/kint_complex3 — Estimate (%RSE) | `Q334` · not captured | 5.77 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row13:col3 |
-| ka — Estimate (%RSE) | `Q49` · not captured | 0.31 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row14:col3 |
-| F — Estimate (%RSE) | `Q40` · not captured | 0.84 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row15:col3 |
-| Emax — Estimate (%RSE) | `Q320` · not captured | 221 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row16:col3 |
-| EC50 — Estimate (%RSE) | `Q321` · not captured | 1.20 | nM | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row17:col3 |
-| ln(2)/kout_B-lymphocyte — Estimate (%RSE) | `Q328` · not captured | 55 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row19:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL — Estimate (%RSE) | `Q22` · not captured | 20.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row1:col3 |
+| PK (driver) | CLd — Estimate (%RSE) | `Q30` · not captured | 22.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row2:col3 |
+| PK (driver) | V1 — Estimate (%RSE) | `Q63` · not captured | 51.0 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row3:col3 |
+| PD (effect) | kon_CD3 — Estimate (%RSE) | `Q329` · not captured | 4.45 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row5:col3 |
+| PD (effect) | Kd_CD3 — Estimate (%RSE) | `Q331` · not captured | 12.8 | nM | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row6:col3 |
+| PD (effect) | kon_CD79b — Estimate (%RSE) | `Q329` · not captured | 2.96 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row7:col3 |
+| PD (effect) | Kd_CD79b — Estimate (%RSE) | `Q331` · not captured | 1.0 | nM | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row8:col3 |
+| PD (effect) | ln(2)/kint_complex1 — Estimate (%RSE) | `Q334` · not captured | 346.5 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row11:col3 |
+| PD (effect) | ln(2)/kint_complex2 — Estimate (%RSE) | `Q334` · not captured | 7.79 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row12:col3 |
+| PD (effect) | ln(2)/kint_complex3 — Estimate (%RSE) | `Q334` · not captured | 5.77 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row13:col3 |
+| PK (driver) | ka — Estimate (%RSE) | `Q49` · not captured | 0.31 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row14:col3 |
+| PK (driver) | F — Estimate (%RSE) | `Q40` · not captured | 0.84 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row15:col3 |
+| PD (effect) | Emax — Estimate (%RSE) | `Q320` · not captured | 221 | not captured | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row16:col3 |
+| PD (effect) | EC50 — Estimate (%RSE) | `Q321` · not captured | 1.20 | nM | not captured | exact (not captured) | pharmaceutics-14-00970-t006:row17:col3 |
+| PD (effect) | ln(2)/kout_B-lymphocyte — Estimate (%RSE) | `Q328` · not captured | 55 | not captured | not captured | llm (not captured) | pharmaceutics-14-00970-t006:row19:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

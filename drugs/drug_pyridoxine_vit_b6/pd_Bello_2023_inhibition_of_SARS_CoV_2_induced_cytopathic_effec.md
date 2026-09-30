@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Erythromycin, retapamulin, pyridoxine, folic acid, ivermectin (measured concentrations) drive name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Pyridoxine (vitamin B6) concentrations (µM) inhibit SARS-CoV-2-induced cytopathic effect (%) in Vero cells, described by an Emax-type inhibitory model; the paper does not state a mechanistic production/elimination or effect-compartment model. Reported values: Emax 63% at 20 µM and IC50 9.29 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bello_2023`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,23 +30,23 @@ Bello SO; Imam MU; Bello MB; Yunusa A; Ahmed Adamu A; Shuaibu A; et al. et al. (
   ·  DOI: [10.3389/fcimb.2023.1273982](https://doi.org/10.3389/fcimb.2023.1273982)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Maximal inhibition of CPE (%) — Erythromycin | `Q323` · not captured | 76 | not captured | not captured | llm (not captured) | T1:row0:col2 |
-| Maximal inhibition of CPE (%) — Retapamulin | `Q323` · not captured | 75 | not captured | not captured | llm (not captured) | T1:row0:col3 |
-| Maximal inhibition of CPE (%) — Pyridoxine | `Q323` · not captured | 63 | not captured | not captured | llm (not captured) | T1:row0:col4 |
-| Maximal inhibition of CPE (%) — Folic Acid | `Q323` · not captured | 42 | not captured | not captured | llm (not captured) | T1:row0:col5 |
-| Maximal inhibition of CPE (%) — Ivermectin | `Q323` · not captured | 10 | not captured | not captured | llm (not captured) | T1:row0:col6 |
-| Dose at maximal observed* inhibition of CPE (µM) — Erythromycin | `Q322` · not captured | 10 | µM | not captured | llm (not captured) | T1:row1:col2 |
-| Dose at maximal observed* inhibition of CPE (µM) — Retapamulin | `Q322` · not captured | 7.5 | µM | not captured | llm (not captured) | T1:row1:col3 |
-| Dose at maximal observed* inhibition of CPE (µM) — Pyridoxine | `Q322` · not captured | 20 | µM | not captured | llm (not captured) | T1:row1:col4 |
-| Dose at maximal observed* inhibition of CPE (µM) — Folic Acid | `Q322` · not captured | 5 | µM | not captured | llm (not captured) | T1:row1:col5 |
-| Dose at maximal observed* inhibition of CPE (µM) — Ivermectin | `Q322` · not captured | 7.5 | µM | not captured | llm (not captured) | T1:row1:col6 |
-| IC50 (µM) — Erythromycin | `Q322` · not captured | 3.27 | µM | not captured | exact (not captured) | T1:row2:col2 |
-| IC50 (µM) — Retapamulin | `Q322` · not captured | 4.23 | µM | not captured | exact (not captured) | T1:row2:col3 |
-| IC50 (µM) — Pyridoxine | `Q322` · not captured | 9.29 | µM | not captured | exact (not captured) | T1:row2:col4 |
-| IC50 (µM) — Folic Acid | `Q322` · not captured | 3.19 | µM | not captured | exact (not captured) | T1:row2:col5 |
-| IC50 (µM) — Ivermectin | `Q322` · not captured | 84.31 | µM | not captured | exact (not captured) | T1:row2:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Maximal inhibition of CPE (%) — Erythromycin | `Q323` · not captured | 76 | not captured | not captured | llm (not captured) | T1:row0:col2 |
+| PD (effect) | Maximal inhibition of CPE (%) — Retapamulin | `Q323` · not captured | 75 | not captured | not captured | llm (not captured) | T1:row0:col3 |
+| PD (effect) | Maximal inhibition of CPE (%) — Pyridoxine | `Q323` · not captured | 63 | not captured | not captured | llm (not captured) | T1:row0:col4 |
+| PD (effect) | Maximal inhibition of CPE (%) — Folic Acid | `Q323` · not captured | 42 | not captured | not captured | llm (not captured) | T1:row0:col5 |
+| PD (effect) | Maximal inhibition of CPE (%) — Ivermectin | `Q323` · not captured | 10 | not captured | not captured | llm (not captured) | T1:row0:col6 |
+| PD (effect) | Dose at maximal observed* inhibition of CPE (µM) — Erythromycin | `Q322` · not captured | 10 | µM | not captured | llm (not captured) | T1:row1:col2 |
+| PD (effect) | Dose at maximal observed* inhibition of CPE (µM) — Retapamulin | `Q322` · not captured | 7.5 | µM | not captured | llm (not captured) | T1:row1:col3 |
+| PD (effect) | Dose at maximal observed* inhibition of CPE (µM) — Pyridoxine | `Q322` · not captured | 20 | µM | not captured | llm (not captured) | T1:row1:col4 |
+| PD (effect) | Dose at maximal observed* inhibition of CPE (µM) — Folic Acid | `Q322` · not captured | 5 | µM | not captured | llm (not captured) | T1:row1:col5 |
+| PD (effect) | Dose at maximal observed* inhibition of CPE (µM) — Ivermectin | `Q322` · not captured | 7.5 | µM | not captured | llm (not captured) | T1:row1:col6 |
+| PD (effect) | IC50 (µM) — Erythromycin | `Q322` · not captured | 3.27 | µM | not captured | exact (not captured) | T1:row2:col2 |
+| PD (effect) | IC50 (µM) — Retapamulin | `Q322` · not captured | 4.23 | µM | not captured | exact (not captured) | T1:row2:col3 |
+| PD (effect) | IC50 (µM) — Pyridoxine | `Q322` · not captured | 9.29 | µM | not captured | exact (not captured) | T1:row2:col4 |
+| PD (effect) | IC50 (µM) — Folic Acid | `Q322` · not captured | 3.19 | µM | not captured | exact (not captured) | T1:row2:col5 |
+| PD (effect) | IC50 (µM) — Ivermectin | `Q322` · not captured | 84.31 | µM | not captured | exact (not captured) | T1:row2:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

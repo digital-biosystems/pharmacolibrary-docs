@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives LDL-C (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> For rosuvastatin, dose acts on LDL-C via an Emax dose-response model (inhibition of LDL-C from baseline E0), with potency ED50 (median dose achieving 50% LDL-C reduction) and efficacy Emax (maximum LDL-C reduction) estimated by nonlinear mixed effects modelling; the excerpts give no numeric values for ED50, Emax, or E0, and no mechanism beyond the direct dose-response relationship is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Aggarwal_2024`
 - **model family:** `emax`
 - **driver:** `not_resolved`

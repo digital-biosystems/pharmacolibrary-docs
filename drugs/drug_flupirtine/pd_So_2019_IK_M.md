@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bisoprolol (measured concentrations) drives IK(M) amplitude (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Bisoprolol (BIS) directly suppresses the amplitude of M-type K+ current (IK(M)) in pituitary GH3 and hippocampal mHippoE-14 cells; the concentration-response relationship (0.01–30 μM) fitted with a Hill equation yielded an IC50 of 1.21 μM and a slope coefficient of 1.2, with 30 μM nearly abolishing the current. The mechanism is direct channel block (decreased open probability of KM channels), not β1-receptor-mediated, and the paper does not report an effect-compartment or turnover model; flupirtine (10 μM) attenuated the BIS-induced suppression but no potency values for flupirtine are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `So_2019`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | 1-compartment (no model) | 2 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 2 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
 
 ## ADME sites
 

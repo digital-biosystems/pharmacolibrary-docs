@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glutamine drives name (in ratio) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not state a pharmacodynamic mechanism or model; it only reports that acute oral glutamine doses of 0.25, 0.5 and 0.9 g kg−1 of fat-free mass, taken 2 h before a 60-min treadmill run in the heat, lowered the post-exercise serum lactulose:rhamnose (L:R) GI permeability ratio relative to placebo (moderate, small and moderate effect sizes, respectively), with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pugh_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

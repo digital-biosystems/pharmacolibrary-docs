@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ethanolic grape peduncles (EGP) extract (measured concentrations) drives Antileishmanial activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Ethanolic grape peduncles (EGP) extract was tested in vitro against Leishmania major promastigotes over serial dilutions (1–0.062 mg/mL, 72 h), with inhibition of parasite viability as the response; the paper reports no antileishmanial effect, with IC50 ≥ 100 mg/mL (versus pentamidine standard IC50 = 3.16 ± 0.15 mg/mL), and no PD mechanism (e.g., Imax/IC50 model structure, kin/kout) is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Akbar_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

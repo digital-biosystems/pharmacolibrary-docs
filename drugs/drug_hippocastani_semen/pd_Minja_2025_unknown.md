@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Delpazolid drives time to sustained conversion to negative sputum culture (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Delpazolid plasma exposure (AUC0-24, mg/L per h) was modelled with an Emax-type inhibitory effect on the time to sustained conversion to negative sputum culture in the PanACEA-DECODE-01 trial; the excerpts do not state the mechanism beyond this inhibitory exposure-response relationship, and no Imax, IC50/EC50, Emax, gamma, or rate parameters are given, only an efficacy plateau at an AUC0-24 of 50 mg/L per h, close to the median exposure at 1200 mg once daily.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Minja_2025`
 - **model family:** `emax`
 - **driver:** `not_resolved`

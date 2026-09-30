@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Perindoprilat, cilazaprilat, enalaprilat drive plasma angiotensin-converting enzyme (ACE) activity (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma concentrations of the active diacids (cilazaprilat, perindoprilat, enalaprilat) inhibit plasma ACE activity, described by a sigmoid Emax (Hill) model with EC50 defined as the concentration producing 50% reduction in ACE activity and slope factor S; potency ranked perindoprilat &gt; cilazaprilat &gt; enalaprilat. A small hysteresis between active drug level and ACE effect was observed acutely, disappearing after 4 weeks; no numeric EC50, Emax, kin/kout or ke0 values are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Louis_1992`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

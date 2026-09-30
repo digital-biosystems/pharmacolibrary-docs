@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Olive biophenols (measured concentrations) drives name (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking concentrations to a measured response; it reports H2O2 scavenging EC50s (e.g. verbascoside 0.66 mM, hydroxytyrosol 0.775 mM, oleuropein 0.713 mM) and neuroprotection in SH-SY5Y cells pre-treated with olive biophenols then exposed to 700 μM H2O2 (LD50 654.6 μM), with maximum cell viability 77% for caffeic acid, 71% for verbascoside, and 69% for oleuropein and hydroxytyrosol; no mechanism, Emax/IC50 model, or rate parameters (kin, kout, ke0) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Omar_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,27 +30,27 @@ Omar SH; Kerr PG; Scott CJ; Hamlin AS; Obied HK et al. (2017). Molecules (Basel,
   ·  DOI: [10.3390/molecules22111858](https://doi.org/10.3390/molecules22111858)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| SOR EC50 (μM) — Non-flavonoids | `Q321` · not captured | 436.3 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col2 |
-| SOR EC50 (μM) — HT (3) | `Q321` · not captured | 1.02 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col3 |
-| SOR EC50 (μM) — OL (4) | `Q321` · not captured | 1.02 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col4 |
-| SOR EC50 (μM) — VB (6) | `Q321` · not captured | 0.66 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col5 |
-| SOR EC50 (μM) — Flavonoids | `Q321` · not captured | 93.97 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col7 |
-| SOR EC50 (μM) — Extracts | `Q321` · not captured | 1.89 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col11 |
-| SOR EC50 (μM) — OFE | `Q321` · not captured | 217 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col12 |
-| SOR EC50 (μM) — HTE | `Q321` · not captured | 115.8 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col13 |
-| SOR EC50 (μM) — OLP | `Q321` · not captured | 280.3 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col14 |
-| H2O2 EC50 (mM) — Non-flavonoids | `Q321` · not captured | 1.01 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col2 |
-| H2O2 EC50 (mM) — HT (3) | `Q321` · not captured | 0.775 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col3 |
-| H2O2 EC50 (mM) — OL (4) | `Q321` · not captured | 0.713 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col4 |
-| H2O2 EC50 (mM) — VB (6) | `Q321` · not captured | 1.173 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col5 |
-| H2O2 EC50 (mM) — RU (10) | `Q321` · not captured | 0.957 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col8 |
-| H2O2 EC50 (mM) — LU (8) | `Q321` · not captured | 1.011 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col9 |
-| H2O2 EC50 (mM) — Extracts | `Q321` · not captured | 120.6 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col11 |
-| H2O2 EC50 (mM) — OFE | `Q321` · not captured | 1.708 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col12 |
-| H2O2 EC50 (mM) — HTE | `Q321` · not captured | 2.824 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col13 |
-| H2O2 EC50 (mM) — OLP | `Q321` · not captured | 1.421 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col14 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | SOR EC50 (μM) — Non-flavonoids | `Q321` · not captured | 436.3 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col2 |
+| PD (effect) | SOR EC50 (μM) — HT (3) | `Q321` · not captured | 1.02 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col3 |
+| PD (effect) | SOR EC50 (μM) — OL (4) | `Q321` · not captured | 1.02 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col4 |
+| PD (effect) | SOR EC50 (μM) — VB (6) | `Q321` · not captured | 0.66 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col5 |
+| PD (effect) | SOR EC50 (μM) — Flavonoids | `Q321` · not captured | 93.97 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col7 |
+| PD (effect) | SOR EC50 (μM) — Extracts | `Q321` · not captured | 1.89 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col11 |
+| PD (effect) | SOR EC50 (μM) — OFE | `Q321` · not captured | 217 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col12 |
+| PD (effect) | SOR EC50 (μM) — HTE | `Q321` · not captured | 115.8 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col13 |
+| PD (effect) | SOR EC50 (μM) — OLP | `Q321` · not captured | 280.3 | μM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row1:col14 |
+| PD (effect) | H2O2 EC50 (mM) — Non-flavonoids | `Q321` · not captured | 1.01 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col2 |
+| PD (effect) | H2O2 EC50 (mM) — HT (3) | `Q321` · not captured | 0.775 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col3 |
+| PD (effect) | H2O2 EC50 (mM) — OL (4) | `Q321` · not captured | 0.713 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col4 |
+| PD (effect) | H2O2 EC50 (mM) — VB (6) | `Q321` · not captured | 1.173 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col5 |
+| PD (effect) | H2O2 EC50 (mM) — RU (10) | `Q321` · not captured | 0.957 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col8 |
+| PD (effect) | H2O2 EC50 (mM) — LU (8) | `Q321` · not captured | 1.011 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col9 |
+| PD (effect) | H2O2 EC50 (mM) — Extracts | `Q321` · not captured | 120.6 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col11 |
+| PD (effect) | H2O2 EC50 (mM) — OFE | `Q321` · not captured | 1.708 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col12 |
+| PD (effect) | H2O2 EC50 (mM) — HTE | `Q321` · not captured | 2.824 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col13 |
+| PD (effect) | H2O2 EC50 (mM) — OLP | `Q321` · not captured | 1.421 | mM | not captured | llm_confirmed (not captured) | molecules-22-01858-t002:row2:col14 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

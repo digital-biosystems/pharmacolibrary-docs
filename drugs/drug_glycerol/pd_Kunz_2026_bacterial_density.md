@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aztreonam (measured concentrations) drives name (in CFU/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Aztreonam (as ATM–AVI or ATM–CZA, concentrations in mg/L) drives a sigmoidal Emax kill effect on Stenotrophomonas maltophilia bacterial density (CFU/mL), modeled as logistic growth with antibiotic-mediated killing; resistance determinants (blaL1, blaL2, smeABC) dynamically scale EC50 via β-factors, and avibactam potentiates by proportionally lowering the effective EC50. The paper states Emax (maximum kill rate) and EC50 (concentration for 50% of Emax) were estimated per regimen and genetic background but does not report their numeric values in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kunz_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

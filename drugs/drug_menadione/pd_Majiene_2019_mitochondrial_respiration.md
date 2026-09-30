@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Plumbagin (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Menadione (not plumbagin) acts on mitochondrial respiration in C6 cells, increasing both the non-phosphorylating (VL) and ADP-stimulated (VADP) respiration rates (nmol O/s × 10^6 cells × mL) concentration-dependently: 1 µM increased VL and VADP by 38% and 33%, 2 µM raised VADP by 70% to the maximal uncoupled respiration capacity, and 3 µM raised VL to the uncoupler level. The paper attributes this to complete uncoupling of oxidation from phosphorylation (reduced ATP production) and gives no Emax, IC50, EC50, kin, kout, ke0 or gamma values for this respiration effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Majiene_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

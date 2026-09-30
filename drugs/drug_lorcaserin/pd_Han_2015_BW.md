@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** M1 and M2 (sibutramine metabolites) (measured concentrations) drive body weight (in kg): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper describes a turnover model where the AUC of sibutramine metabolites (M1 and M2) inhibits the baseline rate of weight gain (kin) via a sigmoidal Emax mechanism, while weight loss follows first-order kinetics (kout). The record lists lorcaserin, but the paper explicitly models sibutramine; the paper does not provide specific numerical values for Emax, AUC50, kin, or kout in the provided excerpts.
+>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
+
 - **paper:** `Han_2015`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

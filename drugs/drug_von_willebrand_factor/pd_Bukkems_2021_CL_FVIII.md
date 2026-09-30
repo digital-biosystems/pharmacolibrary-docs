@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** VWF:Act drives FVIII clearance (in mL/h): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> VWF:Act concentrations (IU/mL) inhibit the clearance of FVIII (mL/h) via an Imax/IC50 inhibitory Emax relationship on FVIII elimination, with Imax fixed to 1 and IC50 = 1.65 IU/mL; FVIII half-life without VWF presence was 6.6 hours.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Bukkems_2021`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,13 +31,13 @@ Bukkems LH; Heijdra JM; de Jager NCB; Hazendonk HCAM; Fijnvandraat K; Meijer K; 
   ·  DOI: [10.1182/bloodadvances.2020003891](https://doi.org/10.1182/bloodadvances.2020003891)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Historical baseline FVIII level, IU/mL | `Q324` · not captured | 118 | IU/mL | not captured | llm_confirmed (not captured) | tab_0:row6:col2 |
-| Historical baseline VWF:Act level, IU/ | `Q324` · not captured | 118 | IU/ | not captured | llm_confirmed (not captured) | tab_0:row7:col2 |
-| Historical baseline VWF:Ag level, IU/mL | `Q324` · not captured | 118 | IU/mL | not captured | llm_confirmed (not captured) | tab_0:row9:col2 |
-| IC 50 , IU/mL | `Q322` · not captured | 1.65 | IU/mL | not captured | review_gapfill (not captured) | Bukkems_2021:review |
-| I max | `Q323` · not captured | 1 | (fixed) | not captured | review_gapfill (not captured) | Bukkems_2021:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Historical baseline FVIII level, IU/mL | `Q324` · not captured | 118 | IU/mL | not captured | llm_confirmed (not captured) | tab_0:row6:col2 |
+| PD (effect) | Historical baseline VWF:Act level, IU/ | `Q324` · not captured | 118 | IU/ | not captured | llm_confirmed (not captured) | tab_0:row7:col2 |
+| PD (effect) | Historical baseline VWF:Ag level, IU/mL | `Q324` · not captured | 118 | IU/mL | not captured | llm_confirmed (not captured) | tab_0:row9:col2 |
+| PD (effect) | IC 50 , IU/mL | `Q322` · not captured | 1.65 | IU/mL | not captured | review_gapfill (not captured) | Bukkems_2021:review |
+| PD (effect) | I max | `Q323` · not captured | 1 | (fixed) | not captured | review_gapfill (not captured) | Bukkems_2021:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

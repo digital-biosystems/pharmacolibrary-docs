@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ibuprofen (concentrations from the PK model of Albert_1984) drives toxicity (in mg/L): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Ibuprofen concentrations (mg/L) inhibit growth of Bacillus thuringiensis B1(2015b), measured by OD600 in a 96-well toxicity assay; the paper does not state a mechanistic PD model, only an EC50 of 1175 mg/L for the free strain (1190 mg/L when immobilized on the loofah carrier).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Marchlewicz_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,9 +31,9 @@ Marchlewicz A; Dzionek A; Wojcieszyńska D; Borgulat J; Jałowiecki Ł; Guzik U 
   ·  DOI: [10.3390/molecules29235680](https://doi.org/10.3390/molecules29235680)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC 50 | `Q321` · not captured | 1175 | mg/L | not captured | review_gapfill (not captured) | Marchlewicz_2024:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 1175 | mg/L | not captured | review_gapfill (not captured) | Marchlewicz_2024:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

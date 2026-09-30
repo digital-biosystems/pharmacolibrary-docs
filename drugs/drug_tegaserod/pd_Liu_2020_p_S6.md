@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tegaserod (measured concentrations) drives name (in fold change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Tegaserod (TM) concentration-dependently inhibits phosphorylation of ribosomal protein S6 (Ser235/236, and Ser240/244 in some lines) in human melanoma cells, an effect the paper attributes to blunting of PI3K/Akt/mTOR signaling rather than a formal PD model; no IC50, Emax, or rate parameters for TM on p-S6 are stated. The tabulated IC50 values (e.g. MK-2206 0.29 µM in B16.F10, ZSTK474 0.95 µM, KU-0063794 0.68 µM) refer to comparator PI3K/Akt/mTOR inhibitors, not to TM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,26 +30,26 @@ Liu W; Stachura P; Xu HC; Umesh Ganesh N; Cox F; Wang R; et al. et al. (2020). J
   ·  DOI: [10.1186/s13046-020-1539-7](https://doi.org/10.1186/s13046-020-1539-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50±SEM — MK-2206 | `Q322` · not captured | 0.29 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 0.95 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 0.68 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 4.76 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 2.69 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.90 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 1.92 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 0.51 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.63 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 3.11 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 2.80 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.71 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 1.26 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 1.06 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 0.97 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col5 |
-| IC50±SEM — MK-2206 | `Q322` · not captured | 3.03 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col3 |
-| IC50±SEM — ZSTK474 | `Q322` · not captured | 3.47 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col4 |
-| IC50±SEM — KU-0063794 | `Q322` · not captured | 1.84 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 0.29 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 0.95 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 0.68 | µM | not captured | llm_confirmed (not captured) | Tab1:row1:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 4.76 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 2.69 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.90 | µM | not captured | llm_confirmed (not captured) | Tab1:row2:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 1.92 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 0.51 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.63 | µM | not captured | llm_confirmed (not captured) | Tab1:row3:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 3.11 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 2.80 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.71 | µM | not captured | llm_confirmed (not captured) | Tab1:row4:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 1.26 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 1.06 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 0.97 | µM | not captured | llm_confirmed (not captured) | Tab1:row5:col5 |
+| PD (effect) | IC50±SEM — MK-2206 | `Q322` · not captured | 3.03 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col3 |
+| PD (effect) | IC50±SEM — ZSTK474 | `Q322` · not captured | 3.47 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col4 |
+| PD (effect) | IC50±SEM — KU-0063794 | `Q322` · not captured | 1.84 | µM | not captured | llm_confirmed (not captured) | Tab1:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

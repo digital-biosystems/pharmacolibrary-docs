@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levofloxacin drives name (in cumABBC(t)/cumAUGC(t)): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Levofloxacin cumulative AUC exposure (mg·h·L−1) drives the normalised cumulative antibacterial effect (cumABBC(t)/cumAUGC(t)) on E. coli in an in vitro infection model, described by a sigmoidal Emax model with an inhibition term: the sigmoidal Emax part (potency cumAUC50, Hill factor n) captures killing, while the inhibition term, governed by cumAUCreg, captures bacterial regrowth (a reverse/decrease in antibiotic effect) at higher exposures at later time points. No numeric values for cumAUC50, cumAUCreg, n or Emax are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Seeger_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

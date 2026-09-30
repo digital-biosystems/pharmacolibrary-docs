@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lobeglitazone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Lobeglitazone (μM concentrations) reduced TGF-β1-induced p38 MAPK phosphorylation in BCPAP and K1 papillary thyroid carcinoma cells within 15 minutes, without affecting total p38 or ERK1/2 phosphorylation; the paper does not state a pharmacodynamic model, mechanism of inhibition, or potency/rate parameters (no IC50, Emax, kin, kout, ke0, or gamma values are given for this response).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jin_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

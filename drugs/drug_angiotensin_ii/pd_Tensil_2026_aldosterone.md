@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** E3174 drives name (in unknown): indirect response — drug inhibits the loss of name.
+
+**Model:** No model was generated from this record.
+
+> In the losartan PBPK/PD model, the active metabolite E3174 inhibits aldosterone secretion (an indirect-response inhibition of production, with aldosterone undergoing first-order degradation), while angiotensin II physiologically stimulates aldosterone secretion; higher losartan doses (simulated 10–100 mg, e.g. 25 mg) produce stronger aldosterone suppression. The paper does not report numeric potency or rate parameters (Imax, IC50, kin, kout) for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tensil_2026`
 - **model family:** `indirect_response_ii`
 - **driver:** `not_resolved`
@@ -21,9 +31,9 @@ Tensil E; Myshkina M; König M et al. (2026). Pharmaceutics 18
   ·  DOI: [10.3390/pharmaceutics18020262](https://doi.org/10.3390/pharmaceutics18020262)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Sekino2003 [37] — Dose [mg] | `Q100` · not captured | 25 | mg | not captured | llm (not captured) | pharmaceutics-18-00262-t001:row21:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | Sekino2003 [37] — Dose [mg] | `Q100` · not captured | 25 | mg | not captured | llm (not captured) | pharmaceutics-18-00262-t001:row21:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

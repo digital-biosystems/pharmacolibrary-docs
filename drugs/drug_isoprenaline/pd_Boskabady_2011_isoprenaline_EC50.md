@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carvacrol (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Carvacrol (μg/mL) concentration-dependently shifted isoprenaline log concentration-response curves on guinea pig tracheal β-adrenoceptors leftward, lowering isoprenaline EC50 versus saline (negative CR-1) with unchanged maximum response, indicating a stimulatory (agonist-like) effect on β2-adrenoceptors rather than a direct Emax or turnover model; no Imax, IC50, kin, kout, ke0, or gamma values are given, and no quantitative PD model parameters are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boskabady_2011`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

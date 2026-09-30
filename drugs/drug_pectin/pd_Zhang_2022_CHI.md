@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thymol (measured concentrations) drives chitinase activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not model thymol concentrations acting on chitinase (CHI) activity via a PD model; instead, treatment with the TKL edible coating (TKL100) induced CHI activity in Mucor circinelloides, which rose to about 1.84 times the control level, reaching 5.05 U/L, promoting cell wall chitin degradation. No Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are reported for this CHI response (the EC50 of 113.55 mg/L refers to inhibition of mycelial growth, not CHI activity).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

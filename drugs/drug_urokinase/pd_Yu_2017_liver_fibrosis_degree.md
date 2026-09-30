@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Toddalolactone (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Toddalolactone, the main active component of Zanthoxylum nitidum var. tomentosum extract, directly inhibits the activity of recombinant human PAI-1 (the inhibitor of tPA/uPA, including prevention of PAI-1/uPA complex formation) in a dose-dependent manner, with an IC50 of 37.31 ± 3.23 μM by chromogenic assay; no PD model structure, Emax, or kinetic parameters are given. The record's listed IC50 values (e.g. XR5118 3.6 μM, TM5275 6.9 μM, PAI-039 8.8 μM) refer to other PAI-1 inhibitors, not toddalolactone.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yu_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,14 +30,14 @@ Yu B; Zhang G; Jin L; Zhang B; Yan D; Yang H; et al. et al. (2017). Frontiers in
   ·  DOI: [10.3389/fphar.2017.00489](https://doi.org/10.3389/fphar.2017.00489)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| AR-H029953XX — IC50 (μM) | `Q322` · not captured | 6.3 | μM | not captured | llm (not captured) | T2:row1:col2 |
-| XR330 — IC50 (μM) | `Q322` · not captured | 30 | μM | not captured | llm (not captured) | T2:row5:col2 |
-| XR334 — IC50 (μM) | `Q322` · not captured | 51 | μM | not captured | llm (not captured) | T2:row7:col2 |
-| XR5118 — IC50 (μM) | `Q322` · not captured | 3.6 | μM | not captured | llm (not captured) | T2:row9:col2 |
-| TM5275 — IC50 (μM) | `Q322` · not captured | 6.9 | μM | not captured | llm (not captured) | T2:row11:col2 |
-| PAI-039 — IC50 (μM) | `Q322` · not captured | 8.8 | μM | not captured | llm (not captured) | T2:row13:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | AR-H029953XX — IC50 (μM) | `Q322` · not captured | 6.3 | μM | not captured | llm (not captured) | T2:row1:col2 |
+| PD (effect) | XR330 — IC50 (μM) | `Q322` · not captured | 30 | μM | not captured | llm (not captured) | T2:row5:col2 |
+| PD (effect) | XR334 — IC50 (μM) | `Q322` · not captured | 51 | μM | not captured | llm (not captured) | T2:row7:col2 |
+| PD (effect) | XR5118 — IC50 (μM) | `Q322` · not captured | 3.6 | μM | not captured | llm (not captured) | T2:row9:col2 |
+| PD (effect) | TM5275 — IC50 (μM) | `Q322` · not captured | 6.9 | μM | not captured | llm (not captured) | T2:row11:col2 |
+| PD (effect) | PAI-039 — IC50 (μM) | `Q322` · not captured | 8.8 | μM | not captured | llm (not captured) | T2:row13:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

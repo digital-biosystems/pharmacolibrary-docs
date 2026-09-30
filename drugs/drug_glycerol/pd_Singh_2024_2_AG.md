@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ATP drives 2-arachidonoyl glycerol (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Extracellular ATP (e.g. 300 μM) stimulates production of 2-arachidonoyl glycerol (2-AG) in Neuro2a cells, measured as GRABeCB2.0 fluorescence (ΔF/F0) and by LC-MS, via P2X7 receptor activation with contributions from intracellular calcium and PLC-dependent signalling (U73122 inhibited the ATP-induced activation phase by 58%); the paper does not state a quantitative PD model (no Imax, IC50, kin, kout, ke0 or gamma for this ATP–2-AG relationship), though 2-AG itself activates the GRABeCB2.0 sensor with an EC50 of 81 nM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Singh_2024`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

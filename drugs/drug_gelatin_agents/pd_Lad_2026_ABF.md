@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Eucalyptus globulus essential oil drives Antibiofilm activity (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Eucalyptus globulus essential oil (EGEO) concentrations (200–1000 µL/mL) inhibit biofilm formation by Tannerella forsythia in a concentration-dependent manner, with inhibition rising from 29.57% to 46.09% (less than metronidazole's 34.35–74.06%). The paper does not state a pharmacodynamic mechanism or an IC50/Emax for the antibiofilm effect; the only potency value reported is a DPPH radical-scavenging IC50 of 604.01 µg/mL (excerpts state 604.01 µl/mL), which pertains to antioxidant activity, not antibiofilm activity.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lad_2026`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,9 +30,9 @@ Lad D; Khalate M; Bhavikatti SK; Abullais SS; Albariqi AA; Fareed M; Venkataiah 
   ·  DOI: [10.1038/s41598-026-48038-9](https://doi.org/10.1038/s41598-026-48038-9)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| E. globulus essential oil — IC50 of DPPH (µg/mL) | `Q322` · not captured | 604.01 | µg/mL | not captured | llm (not captured) | Tab6:row1:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | E. globulus essential oil — IC50 of DPPH (µg/mL) | `Q322` · not captured | 604.01 | µg/mL | not captured | llm (not captured) | Tab6:row1:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

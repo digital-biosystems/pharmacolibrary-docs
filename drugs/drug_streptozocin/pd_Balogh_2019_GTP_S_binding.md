@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 14-O-methymorphine-6-O-sulfate drives G-protein activation (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In [35S]GTPγS binding assays on rat spinal cord homogenates, increasing concentrations of the MOR agonists 14-O-MeM6SU, fentanyl and morphine directly stimulate Gαi/o G-protein activation (GDP→GTP exchange), described by concentration-response (Emax/EC50) curves; the paper reports Emax (%, with SEM) and EC50 (nM, with SEM) values in Table 1 but the excerpts give no numeric parameter values, and no kinetic (kin/kout/ke0) mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Balogh_2019`
 - **model family:** `emax`
 - **driver:** `not_resolved`

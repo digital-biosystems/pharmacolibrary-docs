@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dacarbazine (measured concentrations) drives cytotoxicity (in mg/ml) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Dacarbazine (free drug, DZNP nanoparticles, DZNC nanocream) concentrations (0.2–1 mg/ml) were applied to B16F1 mouse melanoma cells for 24 and 72 h, with cytotoxicity measured by MTT assay and expressed as IC50 (concentration killing 50% of cells): 0.48 mg/ml for dacarbazine, 0.19 mg/ml for DZNP, and 0.63 mg/ml for DZNC. The paper does not state a pharmacodynamic model or mechanism (no Emax/Imax, kin/kout, or ke0 parameters are given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hafeez_2017`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

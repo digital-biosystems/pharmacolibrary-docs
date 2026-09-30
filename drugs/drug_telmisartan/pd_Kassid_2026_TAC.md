@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan (concentrations from the PK model of Hao_2007) drives total antioxidant capacity (in mmol TE/g tissue) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for telmisartan's effect on testicular total antioxidant capacity (TAC, mmol TE/g tissue); TAC was measured by ELISA in testicular tissue of cyclophosphamide-exposed rats given telmisartan orally at low, medium and high mg/kg/day doses, with TAC increasing dose-dependently toward normal values, but no mechanism, Emax/IC50/EC50, or rate constants are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kassid_2026`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

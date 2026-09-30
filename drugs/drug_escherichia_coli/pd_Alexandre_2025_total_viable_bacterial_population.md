@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Delafloxacin (measured concentrations) drives name (in CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Delafloxacin concentrations (mg/L) inhibit the total viable E. coli population (CFU/mL) in time-kill assays, described by a sigmoid Emax model (Emax, EC50, Hill coefficient h) with free drug concentration in a one-compartment model (ke fixed to 0.0005 h⁻¹ due to chemical stability); the paper does not state specific EC50, Emax, or h values in the excerpts, but EC50 ratios (ciprofloxacin/delafloxacin) rose from pH 7.3 to 5.0 up to 33-fold for the WT strain (95% CI: 21.0–52.9) and 92-fold for the GyrA mutant (95% CI: 87.8–97.3), with delafloxacin activity improving 2- to 3-fold at acidic pH.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Alexandre_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

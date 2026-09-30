@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Suomilide (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Suomilide directly inhibits recombinant human trypsin-2 (IC50 4.7 ± 0.6 nM), with weaker inhibition of trypsin-3 (11.5 ± 2.4 nM) and trypsin-1 (104 ± 7 nM), measured with a chromogenic substrate; the paper does not state a PD model (no Imax/Emax/kin/kout/ke0), but reports binding residence times of 1.5 min (trypsin-1) and 57 min (trypsin-3).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ahmed_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

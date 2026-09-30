@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Midazolam (concentrations from the PK model of Aarons_1991) drives unconsciousness (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Midazolam (dose in mg/kg, ED50 0.22 mg/kg alone) acts on unconsciousness (failure to respond to verbal command), with the interaction with alfentanil described as synergistic (supra-additive): a fixed midazolam dose of 0.07 mg/kg shifted the alfentanil dose-response curve left, reducing the alfentanil ED50 from 0.13 mg/kg to 0.028 mg/kg. The paper reports dose-response (probit) analysis but does not state a mechanistic PD model (no Imax/IC50/kin/kout/ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Vinik_1991`
 - **model family:** `categorical`
 - **driver:** `cited_pk`

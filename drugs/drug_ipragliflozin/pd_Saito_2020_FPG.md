@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Ipragliflozin drives FPG (in mg/dL): delayed effect through an effect compartment.
+
+**Model:** No model was generated from this record.
+
+> Ipragliflozin's effect on fasting plasma glucose (FPG) was modeled with an Emax model driven by predicted 24-h urinary glucose excretion (ΔUGE24h, in g/24 h) entering an effect compartment (Keq = 0.283/week, ~12 weeks to maximum response), rather than by drug exposure; the effect is inhibitory (glucose-lowering) with a population Emax of 45.3 mg/dL at reference baseline FPG 162 mg/dL (Emax scaling ~25% larger per 10% higher baseline FPG) and EC50 = 39.4 g/24 h (IIV 277% CV).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Saito_2020`
 - **model family:** `effect_compartment`
 - **driver:** `not_resolved`

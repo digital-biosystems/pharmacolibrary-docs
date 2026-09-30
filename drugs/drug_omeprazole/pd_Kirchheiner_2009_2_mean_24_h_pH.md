@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Proton-pump inhibitors drives mean 24-h intragastric pH (in pH): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Omeprazole dose (mg/day) was related to mean 24-h intragastric pH by a direct Emax model: pH = pH_basal + Emax·dose/(ED50 + dose), where Emax is the maximum increase in pH above baseline and ED50 the dose giving half-maximal increase. For omeprazole the model gave ED50 = 3.06 mg/day and Emax = 3.46 pH units; no kinetic (e.g. ke0) or turnover mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kirchheiner_2009_2`
 - **model family:** `emax`
 - **driver:** `not_resolved`
@@ -21,12 +31,12 @@ Kirchheiner J; Glatt S; Fuhr U; Klotz U; Meineke I; Seufferlein T; et al. et al.
   ·  DOI: [10.1007/s00228-008-0576-5](https://doi.org/10.1007/s00228-008-0576-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Basal pH b — ED 50 (mg/day) a | `Q321` · not captured | 3.06 | unknown | not captured | llm (not captured) | tab_0:row8:col1 |
-| E max (pH) c — ED 50 (mg/day) a | `Q321` · not captured | 3.46 | unknown | not captured | llm (not captured) | tab_0:row9:col1 |
-| E max (pH) c | `Q320` · not captured | 3.46 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
-| E max (pH) c | `Q320` · not captured | 3.46 | not captured | not captured | llm (not captured) | tab_0:row9:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Basal pH b — ED 50 (mg/day) a | `Q321` · not captured | 3.06 | unknown | not captured | llm (not captured) | tab_0:row8:col1 |
+| PD (effect) | E max (pH) c — ED 50 (mg/day) a | `Q321` · not captured | 3.46 | unknown | not captured | llm (not captured) | tab_0:row9:col1 |
+| PD (effect) | E max (pH) c | `Q320` · not captured | 3.46 | not captured | not captured | llm (not captured) | tab_0:row9:col2 |
+| PD (effect) | E max (pH) c | `Q320` · not captured | 3.46 | not captured | not captured | llm (not captured) | tab_0:row9:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

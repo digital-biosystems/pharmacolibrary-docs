@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phloretin (measured concentrations) drives Glucose diffusion capacity (in μL min−1): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Intraperitoneal phloretin (mg/L) was modeled with a sigmoidal Hill (Emax) equation against glucose transport responses in experimental peritoneal dialysis; the only significant fit was for 18F-deoxyglucose mass transfer area coefficient, with EC50 4.3 mg/L (95% CI 0.27–8.3). The paper does not state a mechanism beyond phloretin being a nonselective facilitative glucose transporter (GLUT) inhibitor, and Emax was not statistically determined (assumed dose for 100% effect).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Björk_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

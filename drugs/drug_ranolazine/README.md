@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Cellière_2025](drugs/drug_ranolazine/pd_Celli_re_2025_QTc.md) | Cellière G et al., Beyond the linear model in concentratio…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09975-6](https://doi.org/10.1007/s10928-025-09975-6) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> | [Cellière_2025_QTc](drugs/drug_ranolazine/pd_Celli_re_2025_QTc.md) | placebo-corrected QTc change from baseline ← quinidine · direct Emax (saturable) effect | — | Cellière G et al., Beyond the linear model in concentratio…, Journal of pharmacokinetics… (2025) | [10.1007/s10928-025-09975-6](https://doi.org/10.1007/s10928-025-09975-6) |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | placenta | `ABCB1` inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inhibitor/substrate | DrugBank actor |
+| absorption | testis | `ABCB1` inhibitor/substrate | DrugBank actor |
 | distribution | blood | `ORM1` binder | DrugBank actor |
 | metabolism | brain | `CYP2D6` inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | <sub>“…a and more than 100 metabolites have been identified in the urine.[A174946] Ranolazine and…”</sub> | prose |

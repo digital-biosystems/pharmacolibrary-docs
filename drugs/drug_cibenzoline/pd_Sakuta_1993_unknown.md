@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Clofilium drives Y-26763-induced K+ current (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cibenzoline concentration-dependently and reversibly suppresses the K+ current elicited by Y-26763 (50 μM) in voltage-clamped Xenopus oocytes, i.e. a direct inhibitory (blocking) effect on the glibenclamide-sensitive ATP-sensitive K+ current, with an IC50 of 6.6 μM (most potent class I antiarrhythmic tested; effect seen below 1 μM). The paper does not state a PD model with kinetic parameters (kin, kout, ke0, Emax, gamma); Y-26763 itself induced the current with an apparent EC50 of 58 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Sakuta_1993`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

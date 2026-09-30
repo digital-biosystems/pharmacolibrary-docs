@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Omeprazole (measured concentrations) drives PGI2 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In isolated guinea-pig gastric mucosal cells, acid-activated omeprazole (dissolved in PEG 400, pH 2) concentration-dependently inhibited spontaneous PGI2 release (measured as 6-keto PGF1α) with an IC50 of 14.3 ± 4.8 µM, while PGE2 release was only significantly reduced (~60%) at 100 µM; the paper attributes the effect to inhibition of lysophosphatide acyltransferase (LAT, IC50 ~9.4–16.3 µM in gastric, parietal and mucous cells) with no effect on PLA2, and no kinetic PD model parameters (Imax, kin, kout, ke0, gamma) are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hell_1987`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -21,10 +21,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | 1-compartment (no model) | 1 | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | 1-compartment, oral | 3 (+2 cov.) | Sunkaraneni (2018) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Falcão_2012_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Falco2012_reference.md) | — | 1-compartment (no model) | 1 | Falcão A et al., Pharmacokinetics, drug interactions and…, CNS drugs (2012) | [10.2165/11596290-000000000-00000](https://doi.org/10.2165/11596290-000000000-00000) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>caveat: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only…</sub><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Sunkaraneni_2018_2_reference](drugs/drug_eslicarbazepine/Eslicarbazepine_Sunkaraneni2018v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 (+2 cov.) | Sunkaraneni (2018) | — |
 
 ## ADME sites
 

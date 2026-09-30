@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Interferon-alpha drives neopterin (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Plasma IFN-α concentrations from the sustained-release formulation stimulate neopterin production, described by a turnover model with a single transit compartment (MTT 14.6 h) and KOUT 0.0311 h⁻¹, using a sigmoid Emax function with EMAX 16.1 and a time-dependent (attenuating) EC50 with baseline value 2.17; the paper states this time-varying EC50 is descriptive, not mechanistic.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jeon_2013`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -21,36 +31,36 @@ Jeon S; Juhn JH; Han S; Lee J; Hong T; Paek J; et al. et al. (2013). Journal of 
   ·  DOI: [10.1186/1479-5876-11-240](https://doi.org/10.1186/1479-5876-11-240)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL/F (L/h) — Estimate | `Q27` · not captured | 12.2 | L/h | not captured | exact (not captured) | T4:row2:col2 |
-| CL/F (L/h) — %RSE | `Q27` · not captured | 7.39 | L/h | not captured | exact (not captured) | T4:row2:col3 |
-| V/F (L) — Estimate | `Q76` · not captured | 691 | L | not captured | exact (not captured) | T4:row3:col2 |
-| V/F (L) — %RSE | `Q76` · not captured | 6.54 | L | not captured | exact (not captured) | T4:row3:col3 |
-| KA (h-1) — Estimate | `Q49` · not captured | 0.00653 | h-1 | not captured | exact (not captured) | T4:row5:col2 |
-| KA (h-1) — %RSE | `Q49` · not captured | 16.23 | h-1 | not captured | exact (not captured) | T4:row5:col3 |
-| ALAG (h) — Estimate | `Q83` · not captured | 85.7 | h | not captured | exact (not captured) | T4:row6:col2 |
-| ALAG (h) — %RSE | `Q83` · not captured | 3.92 | h | not captured | exact (not captured) | T4:row6:col3 |
-| ωCL (%) — Estimate | `Q358` · not captured | 26.1 | not captured | not captured | llm_corrected (not captured) | T4:row8:col2 |
-| ωCL (%) — %RSE | `Q22` · not captured | 35.1 | not captured | not captured | llm_confirmed (not captured) | T4:row8:col3 |
-| ωV (%) — %RSE | `Q314` · not captured | 58.0 | not captured | not captured | llm (not captured) | T4:row9:col3 |
-| ωRF (%) — %RSE | `Q318` · not captured | 64.1 | not captured | not captured | llm (not captured) | T4:row11:col3 |
-| σadd (pg/mL) — Estimate | `Q317` · not captured | 3.92 | pg/mL | not captured | llm (not captured) | T4:row13:col2 |
-| σadd (pg/mL) — %RSE | `Q317` · not captured | 12.65 | pg/mL | not captured | llm (not captured) | T4:row13:col3 |
-| σprop (%) — Estimate | `Q316` · not captured | 7.8 | not captured | not captured | llm (not captured) | T4:row14:col2 |
-| σprop (%) — %RSE | `Q316` · not captured | 26.06 | not captured | not captured | llm (not captured) | T4:row14:col3 |
-| KOUT (h-1) — Estimate | `Q328` · not captured | 0.0311 | h-1 | not captured | exact (not captured) | T4:row17:col2 |
-| KOUT (h-1) — %RSE | `Q328` · not captured | 17.20 | h-1 | not captured | exact (not captured) | T4:row17:col3 |
-| EMAX — Estimate | `Q320` · not captured | 16.1 | not captured | not captured | exact (not captured) | T4:row18:col2 |
-| EMAX — %RSE | `Q320` · not captured | 53.19 | not captured | not captured | exact (not captured) | T4:row18:col3 |
-| MTT (h) — Estimate | `Q81` · not captured | 14.6 | h | not captured | exact (not captured) | T4:row23:col2 |
-| MTT (h) — %RSE | `Q81` · not captured | 11.37 | h | not captured | exact (not captured) | T4:row23:col3 |
-| ωBASE (%) — %RSE | `Q314` · not captured | 51.84 | not captured | not captured | llm (not captured) | T4:row24:col3 |
-| ωMTT (%) — Estimate | `Q81` · not captured | 13.36 | not captured | not captured | llm_confirmed (not captured) | T4:row28:col2 |
-| ωMTT (%) — %RSE | `Q81` · not captured | 94.92 | not captured | not captured | llm_confirmed (not captured) | T4:row28:col3 |
-| σadd (nmol/L) — Estimate | `Q317` · not captured | 1.14 | nmol/L | not captured | llm (not captured) | T4:row29:col2 |
-| σadd (nmol/L) — %RSE | `Q317` · not captured | 11.05 | nmol/L | not captured | llm (not captured) | T4:row29:col3 |
-| ECBc | `Q321` · not captured | 2.17 | Baseline of EC50 | not captured | review_gapfill (not captured) | Jeon_2013:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL/F (L/h) — Estimate | `Q27` · not captured | 12.2 | L/h | not captured | exact (not captured) | T4:row2:col2 |
+| PK (driver) | CL/F (L/h) — %RSE | `Q27` · not captured | 7.39 | L/h | not captured | exact (not captured) | T4:row2:col3 |
+| PK (driver) | V/F (L) — Estimate | `Q76` · not captured | 691 | L | not captured | exact (not captured) | T4:row3:col2 |
+| PK (driver) | V/F (L) — %RSE | `Q76` · not captured | 6.54 | L | not captured | exact (not captured) | T4:row3:col3 |
+| PK (driver) | KA (h-1) — Estimate | `Q49` · not captured | 0.00653 | h-1 | not captured | exact (not captured) | T4:row5:col2 |
+| PK (driver) | KA (h-1) — %RSE | `Q49` · not captured | 16.23 | h-1 | not captured | exact (not captured) | T4:row5:col3 |
+| PK (driver) | ALAG (h) — Estimate | `Q83` · not captured | 85.7 | h | not captured | exact (not captured) | T4:row6:col2 |
+| PK (driver) | ALAG (h) — %RSE | `Q83` · not captured | 3.92 | h | not captured | exact (not captured) | T4:row6:col3 |
+| PK (driver) | ωCL (%) — Estimate | `Q358` · not captured | 26.1 | not captured | not captured | llm_corrected (not captured) | T4:row8:col2 |
+| PK (driver) | ωCL (%) — %RSE | `Q22` · not captured | 35.1 | not captured | not captured | llm_confirmed (not captured) | T4:row8:col3 |
+| variability | ωV (%) — %RSE | `Q314` · not captured | 58.0 | not captured | not captured | llm (not captured) | T4:row9:col3 |
+| variability | ωRF (%) — %RSE | `Q318` · not captured | 64.1 | not captured | not captured | llm (not captured) | T4:row11:col3 |
+| variability | σadd (pg/mL) — Estimate | `Q317` · not captured | 3.92 | pg/mL | not captured | llm (not captured) | T4:row13:col2 |
+| variability | σadd (pg/mL) — %RSE | `Q317` · not captured | 12.65 | pg/mL | not captured | llm (not captured) | T4:row13:col3 |
+| variability | σprop (%) — Estimate | `Q316` · not captured | 7.8 | not captured | not captured | llm (not captured) | T4:row14:col2 |
+| variability | σprop (%) — %RSE | `Q316` · not captured | 26.06 | not captured | not captured | llm (not captured) | T4:row14:col3 |
+| PD (effect) | KOUT (h-1) — Estimate | `Q328` · not captured | 0.0311 | h-1 | not captured | exact (not captured) | T4:row17:col2 |
+| PD (effect) | KOUT (h-1) — %RSE | `Q328` · not captured | 17.20 | h-1 | not captured | exact (not captured) | T4:row17:col3 |
+| PD (effect) | EMAX — Estimate | `Q320` · not captured | 16.1 | not captured | not captured | exact (not captured) | T4:row18:col2 |
+| PD (effect) | EMAX — %RSE | `Q320` · not captured | 53.19 | not captured | not captured | exact (not captured) | T4:row18:col3 |
+| PK (driver) | MTT (h) — Estimate | `Q81` · not captured | 14.6 | h | not captured | exact (not captured) | T4:row23:col2 |
+| PK (driver) | MTT (h) — %RSE | `Q81` · not captured | 11.37 | h | not captured | exact (not captured) | T4:row23:col3 |
+| variability | ωBASE (%) — %RSE | `Q314` · not captured | 51.84 | not captured | not captured | llm (not captured) | T4:row24:col3 |
+| PK (driver) | ωMTT (%) — Estimate | `Q81` · not captured | 13.36 | not captured | not captured | llm_confirmed (not captured) | T4:row28:col2 |
+| PK (driver) | ωMTT (%) — %RSE | `Q81` · not captured | 94.92 | not captured | not captured | llm_confirmed (not captured) | T4:row28:col3 |
+| variability | σadd (nmol/L) — Estimate | `Q317` · not captured | 1.14 | nmol/L | not captured | llm (not captured) | T4:row29:col2 |
+| variability | σadd (nmol/L) — %RSE | `Q317` · not captured | 11.05 | nmol/L | not captured | llm (not captured) | T4:row29:col3 |
+| PD (effect) | ECBc | `Q321` · not captured | 2.17 | Baseline of EC50 | not captured | review_gapfill (not captured) | Jeon_2013:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

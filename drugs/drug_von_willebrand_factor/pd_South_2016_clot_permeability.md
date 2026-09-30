@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ADAMTS-13 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a quantitative pharmacodynamic model for clot permeability; it shows qualitatively that constitutively active (gain-of-function) ADAMTS-13 variants, or WT ADAMTS-13 opened by VWF D4CK binding, proteolyse the fibrinogen Aα chain (releasing 40 kDa fragments), whereas WT ADAMTS-13 alone does not. No Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `South_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

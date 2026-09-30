@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** IR794-Morph-Mpip (measured concentrations) drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> IR794-Morph-Mpip (morpholine salicylate derivative) concentrations (µM) inhibit relative viability (%) of HepG2 cells in MTT assays, with an IC50 of 4.69 µM; the paper does not state a PD model or mechanism beyond this direct cytotoxicity (IC50 8.88 µM for IR794-Morph and &gt;20 µM for IR794-COOH).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wangngae_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,10 +30,10 @@ Wangngae S; Chansaenpak K; Weeranantanapan O; Piyanuch P; Sumphanapai T; Yamabha
   ·  DOI: [10.1038/s41598-022-07533-5](https://doi.org/10.1038/s41598-022-07533-5)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (µM) — AML12 | `Q322` · not captured | 12.01 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
-| IC50 (µM) — AML12 | `Q322` · not captured | 19.68 | µM | not captured | exact (not captured) | Tab2:row2:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (µM) — AML12 | `Q322` · not captured | 12.01 | µM | not captured | exact (not captured) | Tab2:row1:col3 |
+| PD (effect) | IC50 (µM) — AML12 | `Q322` · not captured | 19.68 | µM | not captured | exact (not captured) | Tab2:row2:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

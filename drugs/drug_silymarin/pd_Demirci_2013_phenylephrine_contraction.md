@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Silymarin (measured concentrations) drives name (in mg/dry tissue weight): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Silymarin (SM, 50 mg/L incubation) acted on phenylephrine-induced contraction of aged rat aortic rings, tending to shift PE concentration-response curves rightward and decrease Emax and sensitivity, an effect abolished by L-NAME and unaffected by INDO, suggesting NO-mediated endothelial modulation; the paper does not state an Emax/IC50/EC50 model fit or potency values for SM itself.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Demirci_2013`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

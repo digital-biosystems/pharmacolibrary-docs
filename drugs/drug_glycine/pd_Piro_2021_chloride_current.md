@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Glycine (μM) applied to HEK-293 cells expressing heteromeric GlyR α1β (WT or β variants Y252S, S321F, A455P) directly activates glycine-gated chloride currents, described by an Emax model (direct agonist effect; no turnover/compartment mechanism stated). EC50 values were 99 μM (α1β), 146 μM (α1βY252S), 104 μM (α1βS321F), and 91 μM (α1βA455P), with maximal currents (Imax) of 4.1, 4.7, 5.1, and 9.5 nA respectively; the A455P variant showed a gain-of-function with more than doubled current amplitude.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Piro_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Piro I; Eckes AL; Kasaragod VB; Sommer C; Harvey RJ; Schaefer N; et al. et al. (
   ·  DOI: [10.3389/fnmol.2021.745275](https://doi.org/10.3389/fnmol.2021.745275)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Glycine EC50 (μM) — GlyR α1β | `Q321` · not captured | 99 | μM | not captured | llm_confirmed (not captured) | T2:row0:col2 |
-| Glycine EC50 (μM) — GlyR α1βY252S | `Q321` · not captured | 146 | μM | not captured | llm_confirmed (not captured) | T2:row0:col3 |
-| Glycine EC50 (μM) — GlyR α1βS321F | `Q321` · not captured | 104 | μM | not captured | llm_confirmed (not captured) | T2:row0:col4 |
-| Glycine EC50 (μM) — GlyR α1βA455P | `Q321` · not captured | 91 | μM | not captured | llm_confirmed (not captured) | T2:row0:col5 |
-| Imax (nA) — GlyR α1β | `Q323` · not captured | 4.1 | nA | not captured | exact (not captured) | T2:row1:col2 |
-| Imax (nA) — GlyR α1βY252S | `Q323` · not captured | 4.7 | nA | not captured | exact (not captured) | T2:row1:col3 |
-| Imax (nA) — GlyR α1βS321F | `Q323` · not captured | 5.1 | nA | not captured | exact (not captured) | T2:row1:col4 |
-| Imax (nA) — GlyR α1βA455P | `Q323` · not captured | 9.5 | nA | not captured | exact (not captured) | T2:row1:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Glycine EC50 (μM) — GlyR α1β | `Q321` · not captured | 99 | μM | not captured | llm_confirmed (not captured) | T2:row0:col2 |
+| PD (effect) | Glycine EC50 (μM) — GlyR α1βY252S | `Q321` · not captured | 146 | μM | not captured | llm_confirmed (not captured) | T2:row0:col3 |
+| PD (effect) | Glycine EC50 (μM) — GlyR α1βS321F | `Q321` · not captured | 104 | μM | not captured | llm_confirmed (not captured) | T2:row0:col4 |
+| PD (effect) | Glycine EC50 (μM) — GlyR α1βA455P | `Q321` · not captured | 91 | μM | not captured | llm_confirmed (not captured) | T2:row0:col5 |
+| PD (effect) | Imax (nA) — GlyR α1β | `Q323` · not captured | 4.1 | nA | not captured | exact (not captured) | T2:row1:col2 |
+| PD (effect) | Imax (nA) — GlyR α1βY252S | `Q323` · not captured | 4.7 | nA | not captured | exact (not captured) | T2:row1:col3 |
+| PD (effect) | Imax (nA) — GlyR α1βS321F | `Q323` · not captured | 5.1 | nA | not captured | exact (not captured) | T2:row1:col4 |
+| PD (effect) | Imax (nA) — GlyR α1βA455P | `Q323` · not captured | 9.5 | nA | not captured | exact (not captured) | T2:row1:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

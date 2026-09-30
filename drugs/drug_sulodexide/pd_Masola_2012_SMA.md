@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sulodexide (measured concentrations) drives alpha-smooth muscle actin expression (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Sulodexide (50 μg/ml) completely prevented the FGF-2 (10 ng/ml)-induced overexpression of αSMA in HK2 tubular cells without affecting basal levels, an effect attributed to its inhibition of heparanase-1 (IC50 5 μg/ml; complete inhibition at 20 μg/ml), due exclusively to its heparin component. The paper does not state a formal PD model (no Imax/EC50/kin/kout/ke0) for the αSMA response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Masola_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

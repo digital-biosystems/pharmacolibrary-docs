@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Farrell_2014_reference](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | 2-compartment, oral | 7 | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Gibiansky_2011_reference](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md) | 2-compartment, oral | 4 | Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011) | [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2019_reference](drugs/drug_eltrombopag/Eltrombopag_Saleh2019_reference.md) | 1-compartment (no model) | 3 | Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019) | [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Farrell_2014_reference](drugs/drug_eltrombopag/Eltrombopag_Farrell2014_reference.md) | ▶ model + simulator | 2-compartment, oral | 7 | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T6_deviations</sub><br><sub>route_to: `engineer`</sub> | [Gibiansky_2011_reference](drugs/drug_eltrombopag/Eltrombopag_Gibiansky2011_reference.md) | ▶ model + simulator | 2-compartment, oral | 4 | Gibiansky E et al., Population pharmacokinetics of eltrombo…, Journal of clinical pharmac… (2011) | [10.1177/0091270010375427](https://doi.org/10.1177/0091270010375427) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Saleh_2019_reference](drugs/drug_eltrombopag/Eltrombopag_Saleh2019_reference.md) | — | 1-compartment (no model) | 3 | Saleh MI et al., Bayesian Population Pharmacokinetic Mod…, European journal of drug me… (2019) | [10.1007/s13318-018-0490-x](https://doi.org/10.1007/s13318-018-0490-x) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Farrell_2014](drugs/drug_eltrombopag/pd_Farrell_2014_unknown.md) | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> | [Farrell_2014_unknown](drugs/drug_eltrombopag/pd_Farrell_2014_unknown.md) | platelet count ← eltrombopag · indirect response — drug inhibits the loss of platelet count | — | Farrell C et al., Population pharmacokinetic/pharmacodyna…, British journal of clinical… (2014) | [10.1111/bcp.12244](https://doi.org/10.1111/bcp.12244) |
 
 ## ADME sites
 
@@ -45,6 +45,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCG2` inhibitor | DrugBank actor |
 | absorption | mammary gland | `ABCG2` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCG2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCG2` inhibitor | DrugBank actor |
 | metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP1A2` substrate, `CYP2C8` inhibitor/substrate, `SLCO1B1` inhibitor, `UGT1A1` inhibitor/substrate, `UGT1A3` substrate, `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | small intestine | `UGT1A1` inhibitor/substrate | DrugBank actor |

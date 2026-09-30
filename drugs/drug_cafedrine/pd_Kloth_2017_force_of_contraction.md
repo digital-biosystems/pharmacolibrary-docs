@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** AkrinorTM (measured concentrations) drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> AkrinorTM (cafedrine/theodrenaline 20:1, 4.2–420 mg/l) concentration-dependently increased force of contraction in human atrial trabeculae via direct β1-adrenoceptor activation (β2 involvement assessed with CGP 20712A and ICI 118,551) plus PDE-inhibition, measured as a leftward shift of the forskolin concentration-response curve in the presence of CGP 20712A (300 nM); the excerpts do not state the sigmoid Emax model parameters (Emax, EC50, gamma) or any rate constants.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kloth_2017`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

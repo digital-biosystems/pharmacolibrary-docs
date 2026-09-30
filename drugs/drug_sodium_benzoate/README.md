@@ -30,9 +30,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kubota_1991_reference](drugs/drug_sodium_benzoate/SodiumBenzoate_Kubota1991_reference.md) | nonlinear / manual (no model) | 1 | Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of clinica… (1991) | [10.1007/BF00314969](https://doi.org/10.1007/BF00314969) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kubota_1991_reference](drugs/drug_sodium_benzoate/SodiumBenzoate_Kubota1991_reference.md) | — | nonlinear / manual (no model) | 1 | Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of clinica… (1991) | [10.1007/BF00314969](https://doi.org/10.1007/BF00314969) |
 
 ## ADME sites
 

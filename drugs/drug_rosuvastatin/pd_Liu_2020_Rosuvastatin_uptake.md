@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Berberine (measured concentrations) drives Rosuvastatin uptake (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In HepG2 cells, berberine (2–50 μM, 24 h pre-treatment) stimulates rosuvastatin uptake (20 μM rosuvastatin, 10 min) via upregulation of OATP1B1 expression mediated by FXR and LXRα nuclear translocation; the effect followed an Emax relationship with EC50 = 19.01 ± 1.21 μM, and rosuvastatin uptake itself had Km = 21.50 ± 1.77 μM. No Imax, kin, kout, or ke0 values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2020`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

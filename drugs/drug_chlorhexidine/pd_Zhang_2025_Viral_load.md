@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Chlorhexidine (concentrations from the PK model of Sherertz_1993) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Chlorhexidine concentrations (2.5–320 µM) inhibit ZIKV replication in Vero cells in a dose-dependent manner, with an EC50 of 16.41 µM and CC50 of 57.56 µM (SI 3.51); the paper does not state a specific PD mechanism (e.g., Emax/kin-kout parameters), only that inhibition diminishes with decreasing concentration, and in AG6 mice dosed at 50 mg/kg/day viral load was reduced in tissues (e.g., 85.45% in heart, 94.68% in kidney).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2025`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

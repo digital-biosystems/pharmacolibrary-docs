@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Samidorphan (measured concentrations) drives MOR occupancy (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In rats, naltrexone (subcutaneous doses 0.01–1.0 mg/kg) produced a dose-dependent increase in brain MOR occupancy measured 30 minutes post-dose by tracer displacement; occupancy plotted against unbound brain concentrations followed a sigmoid Emax relationship with an EC50 of 15.5 nM at MOR (79.4% occupancy at the clinically relevant unbound brain concentration of 33.5 nM). The paper does not describe a mechanistic production/elimination (kin/kout) model for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tan_2022`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

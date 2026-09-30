@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tapentadol (measured concentrations) drives N1 amplitude (in % of baseline) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In anaesthetised rats, lacosamide reduced the amplitude of the N1 somatosensory evoked potential (expressed as % of baseline) evoked by low-intensity electrical stimulation, and increased the EC50 of the Inn-Nox stimulus–response curve (EC50 = 0.25 mA in vehicle, the current for half-maximal N1 response) without affecting the peak amplitude; the paper does not state a pharmacodynamic mechanism or drug concentration–response parameters (no Imax/IC50/EC50 in nM, Emax, kin, kout or ke0 are given), and the record's attribution of the effect to tapentadol concentrations is not supported by the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Steel_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Steel KAJ; Dunham JP; Leone C; Truini A; Treede RD; Phillips KG; et al. et al. (
   ·  DOI: [10.1097/j.pain.0000000000003810](https://doi.org/10.1097/j.pain.0000000000003810)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 0.25 | mA | not captured | review_gapfill (not captured) | Steel_2026:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 0.25 | mA | not captured | review_gapfill (not captured) | Steel_2026:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

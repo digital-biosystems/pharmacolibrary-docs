@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** ETP drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In the TPA ear edema model, topical ETP (1.0–2.0 mg/ear) inhibited ear edema (72% at 2.0 mg/ear), described by an inhibitory Emax model with ED50 = 0.25 mg/ear and Emax = 52.9%; the paper does not state a pharmacodynamic mechanism for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Salinas-Sánchez_2017`
 - **model family:** `emax`
 - **driver:** `not_resolved`

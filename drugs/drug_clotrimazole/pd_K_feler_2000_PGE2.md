@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Econazole (measured concentrations) drives PGE2 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Clotrimazole concentration-dependently inhibited ionomycin-stimulated PGE2 production in osteoblast-like MC3T3-E1 cells with an IC50 of 9.3±1.8 µM (weaker than econazole or bifonazole), acting by inhibition of prostanoid biosynthesis at the level of PGHS-1 (cyclo-oxygenase); no Imax, Emax, kin/kout, ke0 or Hill coefficient values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Köfeler_2000`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

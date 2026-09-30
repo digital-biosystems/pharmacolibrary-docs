@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from this paper's PK model) drives name (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat plasma concentrations (ng ml-1) were related to plasma ACE inhibition (%) by a one-compartment model with saturable binding of cilazaprilat to ACE, an inhibitory effect approaching total (&gt;95%) inhibition at peak concentrations; the paper does not report numeric IC50, Imax or rate constants in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Meredith_1989`
 - **model family:** `emax`
 - **driver:** `pk_record`

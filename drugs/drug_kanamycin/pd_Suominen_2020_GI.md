@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives growth inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Kanamycin concentrations (μg/mL) inhibit E. coli-lux growth, quantified as growth inhibition (GI%) from optical density after 10 h exposure and fitted by a sigmoid Emax (logistic) concentration–response model; the paper does not state a specific mechanism beyond noting kanamycin affects protein synthesis, and no EC50 value for kanamycin is given in the excerpts (only that protein/DNA synthesis inhibitors showed relatively similar 10-h EC50 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Suominen_2020`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

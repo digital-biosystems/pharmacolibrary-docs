@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dasotraline (measured concentrations) drives ADHD RS-IV total score (in score): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Dasotraline plasma concentrations (ng/ml) reduce ADHD RS-IV total score in an exposure-response (sigmoid Emax-type) relationship; the paper does not state a mechanistic production/elimination model. Reported parameters: typical baseline ADHD RS-IV score 36.8, Emax 10.2 (maximum reduction from baseline due to time alone), and T50 of 0.762 weeks (placebo) and 1.08 weeks (dasotraline arms); no EC50/IC50 or Hill coefficient is given. Predicted reductions were ~11 points at ~7 ng/ml (4 mg) and ~14 points at 16.5 ng/ml (8 mg) after 4 weeks.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hopkins_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** (A)-19 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The Re(I) tricarbonyl complex (A)-19 (enantiomer of compound 19) inhibits SARS-CoV-2 main protease (3CLpro/Mpro) activity measured in a fluorescence-based assay, acting as a covalent inhibitor of the protease; the paper does not describe a formal PD model (no Emax/IC50 fit, kin/kout, or ke0 reported for (A)-19). The only potency values given are for the DMSO adducts, e.g. 19_DMSO with IC50 = 6.2 ± 1.1 mM (µM as stated) and 1_DMSO with IC50 = 16.5 ± 3.4 mM, with 1_DMSO's inhibition increasing with preincubation time due to slow aquation of the metal complex.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Karges_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

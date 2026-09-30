@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TAFEMgO NPs (the dose) drives Total thiol content (in units/mg protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TAFEMgO NPs (dose in μg) restored total thiol content (units/mg protein) in NaNO2-stressed RBCs and lowered elevated TT in diclofenac (50 mg/kg)-treated rat tissues at 100 mg/kg, acting as an antioxidant/protective effect; the paper does not state a PD model, mechanism parameters, or potency values (Imax, IC50, kin, kout) for TT.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Venkatappa_2022`
 - **model family:** `unknown`
 - **driver:** `dose_only`

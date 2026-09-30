@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Spacer-linked 1-thioglucuronide analogues of glycyrrhizin (measured concentrations) drives antiviral activity (in µM) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations of glycyrrhizin (GL) and spacer-linked 1-thioglucuronide analogues were tested against influenza A (H3N2)-induced cytopathicity in MDCK cells, with cell viability as the measured response; the paper reports IC50 values (GL 1026 µM; analogues 12: 220.4 µM, 15: 87 µM, 18: 125 µM, 23: 54 µM) but does not describe a pharmacodynamic mechanism or model. Cytotoxicity (CC50) was 7.4 µM for glycyrrhetinic acid (GA) and 17.8 µM for carbenoxolone (CBX).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Stanetty_2012`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,15 +30,15 @@ Stanetty C; Wolkerstorfer A; Amer H; Hofinger A; Jordis U; Claßen-Houben D; et 
   ·  DOI: [10.3762/bjoc.8.79](https://doi.org/10.3762/bjoc.8.79)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| GL — IC50 [µM] | `Q322` · not captured | 1026 | µM | not captured | llm (not captured) | T1:row2:col3 |
-| GA — CC50 [µM] | `Q322` · not captured | 7.4 | µM | not captured | llm (not captured) | T1:row3:col2 |
-| CBX — CC50 [µM] | `Q322` · not captured | 17.8 | µM | not captured | llm (not captured) | T1:row4:col2 |
-| 12 — IC50 [µM] | `Q322` · not captured | 220.4 | µM | not captured | llm (not captured) | T1:row5:col3 |
-| 15 — IC50 [µM] | `Q322` · not captured | 87 | µM | not captured | llm (not captured) | T1:row8:col3 |
-| 18 — IC50 [µM] | `Q322` · not captured | 125 | µM | not captured | llm (not captured) | T1:row10:col3 |
-| 23 — IC50 [µM] | `Q322` · not captured | 54 | µM | not captured | llm (not captured) | T1:row12:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | GL — IC50 [µM] | `Q322` · not captured | 1026 | µM | not captured | llm (not captured) | T1:row2:col3 |
+| PD (effect) | GA — CC50 [µM] | `Q322` · not captured | 7.4 | µM | not captured | llm (not captured) | T1:row3:col2 |
+| PD (effect) | CBX — CC50 [µM] | `Q322` · not captured | 17.8 | µM | not captured | llm (not captured) | T1:row4:col2 |
+| PD (effect) | 12 — IC50 [µM] | `Q322` · not captured | 220.4 | µM | not captured | llm (not captured) | T1:row5:col3 |
+| PD (effect) | 15 — IC50 [µM] | `Q322` · not captured | 87 | µM | not captured | llm (not captured) | T1:row8:col3 |
+| PD (effect) | 18 — IC50 [µM] | `Q322` · not captured | 125 | µM | not captured | llm (not captured) | T1:row10:col3 |
+| PD (effect) | 23 — IC50 [µM] | `Q322` · not captured | 54 | µM | not captured | llm (not captured) | T1:row12:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

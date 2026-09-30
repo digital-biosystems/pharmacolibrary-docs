@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Hydrogen peroxide (measured concentrations) drives reproductive ability (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Exogenous hydrogen peroxide (2.5–100 mmol/L) acts on S. cerevisiae reproductive ability (% of plated cells forming colonies) with a biphasic hormetic concentration–response: stimulation at low concentrations (peak 155% at 25 mmol/L in glucose-grown wild type, 130% at 50 mmol/L in fructose-grown wild type; 122%/136% at 2.5 mmol/L for TOR1/TOR2 single knockouts; 130% at 5 mmol/L for the TOR1 TOR2 double mutant) and inhibition at high concentration (100 mmol/L: 54% and 33% of control in glucose- and fructose-grown wild type). The paper attributes the hormetic effect to H2O2-induced, monosaccharide- and TOR-dependent activation of cellular defensive mechanisms, notably glutathione reductase acti
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Semchyshyn_2016`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

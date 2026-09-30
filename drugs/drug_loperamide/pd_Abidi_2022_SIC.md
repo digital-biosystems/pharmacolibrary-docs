@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Zingiber officinale aqueous extract (measured concentrations) drives spontaneous intestinal contraction amplitude (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The aqueous Zingiber officinale extract (ZOAE) concentration-dependently increased the amplitude of spontaneous intestinal contractions of mouse jejunum (1–1000 μg/mL), fitted with a Hill/Emax-type equation giving an EC50 of 10.52 μg/mL; the paper does not state a precise mechanism, only suggesting membrane depolarization of ICCs with activation of voltage-dependent calcium channels.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abidi_2022`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,9 +31,9 @@ Abidi C; Rtibi K; Boutahiri S; Tounsi H; Abdellaoui A; Wahabi S; et al. et al. (
   ·  DOI: [10.1177/15593258221127556](https://doi.org/10.1177/15593258221127556)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 | `Q321` · not captured | 10.52 | μg/mL | not captured | review_gapfill (not captured) | Abidi_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 | `Q321` · not captured | 10.52 | μg/mL | not captured | review_gapfill (not captured) | Abidi_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

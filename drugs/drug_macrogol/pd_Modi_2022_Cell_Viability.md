@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** L-Asparaginase drives name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In vitro, L-Asparaginase (nErA and PEG-nErA, serially diluted 50 U/mL to 5 × 10–5 U/mL) inhibited cell viability (%) of human ALL cell lines (Jurkat, CCRF-CEM, CCRF-HSB2) measured at 72 h by MTT assay, with IC50 values of 0.06–0.17 U/mL; the paper does not state a specific PD model, attributing cytotoxicity to asparagine depletion in ASNS-negative ALL cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Modi_2022`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

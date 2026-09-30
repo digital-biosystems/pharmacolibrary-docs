@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gallic acid (measured concentrations) drives platelet aggregation (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gallic acid (12.50, 25.00 and 50.00 μmol/L) directly inhibits thrombin, thereby inhibiting thrombin-induced platelet aggregation in washed platelets; at 25.00 μmol/L the inhibition rate was 23% for platelet aggregation (vs 12% for thrombin activity). The paper reports an IC50 of 9.07 μmol/L for thrombin inhibition and an SPR KD of 8.29 μmol/L, but does not state a formal PD model (no Imax, Emax, kin, kout or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

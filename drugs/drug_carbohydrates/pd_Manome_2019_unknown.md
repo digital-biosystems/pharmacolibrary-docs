@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Fluoride drives acid production (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Fluoride (0–80 mM) inhibits acid production from glucose or lactose (10 mM substrate) by Bifidobacterium and S. mutans in a concentration-dependent manner, acting via inhibition of enolase in glycolysis (reducing pyruvate supply); IC50 values for S. mutans were 2.7 mM (52 ppm F) at pH 7.0 and 0.3 mM (5.7 ppm F) at pH 5.5, while Bifidobacterium IC50 was 6.0–14.2 times higher.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Manome_2019`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

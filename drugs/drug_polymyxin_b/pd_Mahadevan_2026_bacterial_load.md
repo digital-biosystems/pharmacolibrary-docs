@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polymyxin B (measured concentrations) drives name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> In static concentration time-kill assays of six CRKP isolates, polymyxin B (0.5–64 mg/L), meropenem (10–120 mg/L) and fosfomycin (75–500 mg/L) concentrations drive the log10 CFU/mL bacterial load in a mechanism-based model where polymyxin B kills via a sigmoid Emax function on susceptible (I) and resistant (R) subpopulations (KC50,PMB,I 0.82–6.56 mg/L; KC50,PMB,R 38.34–96.78 mg/L; replication rate constant k21 fixed at 50 h−1) and additionally exerts mechanistic synergy by disrupting the bacterial outer membrane, i.e. reducing the meropenem and fosfomycin KC50 values (Imax,M,PMB 0.83–0.88 and Imax,F,PMB 0.81–0.99 for porin-mutant isolates, with IC50 for this synergy of 0.49–0.51 mg/L for mer
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mahadevan_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,66 +31,66 @@ Mahadevan R; Garcia E; Sharma R; Qiu H; Elsheikh A; Parambi R; et al. et al. (20
   ·  DOI: [10.1128/aac.00782-25](https://doi.org/10.1128/aac.00782-25)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Replication rate constant (k21) [h−1] — BRKP61 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col1 |
-| Replication rate constant (k21) [h−1] — BRKP76 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col2 |
-| Replication rate constant (k21) [h−1] — KP0016-1 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col3 |
-| Replication rate constant (k21) [h−1] — KP0052-1 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col4 |
-| Replication rate constant (k21) [h−1] — BRKP67 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col5 |
-| Replication rate constant (k21) [h−1] — BRKP28 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col6 |
-| Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP61 | `Q322` · not captured | 0.82 | mg/L | not captured | llm (not captured) | T2:row16:col1 |
-| Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP76 | `Q322` · not captured | 2.20 | mg/L | not captured | llm (not captured) | T2:row16:col2 |
-| Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — KP0016-1 | `Q322` · not captured | 6.56 | mg/L | not captured | llm (not captured) | T2:row16:col3 |
-| Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — KP0052-1 | `Q322` · not captured | 2.68 | mg/L | not captured | llm (not captured) | T2:row16:col4 |
-| Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP67 | `Q322` · not captured | 2.77 | mg/L | not captured | llm (not captured) | T2:row16:col5 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP61 | `Q322` · not captured | 41.03 | mg/L | not captured | llm (not captured) | T2:row17:col1 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP76 | `Q322` · not captured | 79.2 | mg/L | not captured | llm (not captured) | T2:row17:col2 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — KP0016-1 | `Q322` · not captured | 61.16 | mg/L | not captured | llm (not captured) | T2:row17:col3 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — KP0052-1 | `Q322` · not captured | 38.34 | mg/L | not captured | llm (not captured) | T2:row17:col4 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP67 | `Q322` · not captured | 96.78 | mg/L | not captured | llm (not captured) | T2:row17:col5 |
-| Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP28 | `Q322` · not captured | 38.82 | mg/L | not captured | llm (not captured) | T2:row17:col6 |
-| Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP61 | `Q321` · not captured | 24.7 | mg/L | not captured | llm (not captured) | T2:row21:col1 |
-| Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP76 | `Q321` · not captured | 18.9 | mg/L | not captured | llm (not captured) | T2:row21:col2 |
-| Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — KP0016-1 | `Q322` · not captured | 112 | mg/L | not captured | llm (not captured) | T2:row21:col3 |
-| Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — KP0052-1 | `Q322` · not captured | 44.2 | mg/L | not captured | llm (not captured) | T2:row21:col4 |
-| Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP67 | `Q321` · not captured | 8.91 | mg/L | not captured | llm (not captured) | T2:row21:col5 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP61 | `Q321` · not captured | 61.4 | mg/L | not captured | llm (not captured) | T2:row22:col1 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP76 | `Q321` · not captured | 328 | mg/L | not captured | llm (not captured) | T2:row22:col2 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — KP0016-1 | `Q321` · not captured | 424 | mg/L | not captured | llm (not captured) | T2:row22:col3 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — KP0052-1 | `Q321` · not captured | 284 | mg/L | not captured | llm (not captured) | T2:row22:col4 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP67 | `Q321` · not captured | 227 | mg/L | not captured | llm (not captured) | T2:row22:col5 |
-| Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP28 | `Q321` · not captured | 228 | mg/L | not captured | llm (not captured) | T2:row22:col6 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP61 | `Q322` · not captured | 42.5 | mg/L | not captured | llm (not captured) | T2:row26:col1 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP76 | `Q322` · not captured | 21.1 | mg/L | not captured | llm (not captured) | T2:row26:col2 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — KP0016-1 | `Q321` · not captured | 20.2 | mg/L | not captured | llm (not captured) | T2:row26:col3 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — KP0052-1 | `Q321` · not captured | 26.1 | mg/L | not captured | llm (not captured) | T2:row26:col4 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP67 | `Q322` · not captured | 20.4 | mg/L | not captured | llm (not captured) | T2:row26:col5 |
-| Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP28 | `Q322` · not captured | 22.0 | mg/L | not captured | llm (not captured) | T2:row26:col6 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP61 | `Q321` · not captured | 44.71 | mg/L | not captured | llm (not captured) | T2:row27:col1 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP76 | `Q321` · not captured | 647.5 | mg/L | not captured | llm (not captured) | T2:row27:col2 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — KP0016-1 | `Q321` · not captured | 448 | mg/L | not captured | llm (not captured) | T2:row27:col3 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — KP0052-1 | `Q321` · not captured | 761.7 | mg/L | not captured | llm (not captured) | T2:row27:col4 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP67 | `Q321` · not captured | 1000 | mg/L | not captured | llm (not captured) | T2:row27:col5 |
-| Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP28 | `Q321` · not captured | 1342 | mg/L | not captured | llm (not captured) | T2:row27:col6 |
-| Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — BRKP61 | `Q323` · not captured | 0.84 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col1 |
-| Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — BRKP76 | `Q323` · not captured | 0.83 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col2 |
-| Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — KP0016-1 | `Q323` · not captured | 0.88 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col3 |
-| Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — BRKP61 | `Q322` · not captured | 0.51 | mg/L | not captured | llm (not captured) | T2:row31:col1 |
-| Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — BRKP76 | `Q322` · not captured | 0.49 | mg/L | not captured | llm (not captured) | T2:row31:col2 |
-| Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — KP0016-1 | `Q322` · not captured | 0.50 | mg/L | not captured | llm (not captured) | T2:row31:col3 |
-| Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — BRKP61 | `Q323` · not captured | 0.99 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col1 |
-| Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — BRKP76 | `Q323` · not captured | 0.81 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col2 |
-| Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — KP0016-1 | `Q323` · not captured | 0.89 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col3 |
-| Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — BRKP61 | `Q322` · not captured | 0.64 | mg/L | not captured | llm (not captured) | T2:row35:col1 |
-| Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — BRKP76 | `Q322` · not captured | 0.58 | mg/L | not captured | llm (not captured) | T2:row35:col2 |
-| Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — KP0016-1 | `Q322` · not captured | 0.59 | mg/L | not captured | llm (not captured) | T2:row35:col3 |
-| Additive residual variability [log10 CFU/mL] — BRKP61 | `Q317` · not captured | 0.39 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col1 |
-| Additive residual variability [log10 CFU/mL] — BRKP76 | `Q317` · not captured | 0.54 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col2 |
-| Additive residual variability [log10 CFU/mL] — KP0016-1 | `Q317` · not captured | 0.45 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col3 |
-| Additive residual variability [log10 CFU/mL] — KP0052-1 | `Q317` · not captured | 0.77 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col4 |
-| Additive residual variability [log10 CFU/mL] — BRKP67 | `Q317` · not captured | 0.52 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col5 |
-| Additive residual variability [log10 CFU/mL] — BRKP28 | `Q317` · not captured | 0.25 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Replication rate constant (k21) [h−1] — BRKP61 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col1 |
+| PK (driver) | Replication rate constant (k21) [h−1] — BRKP76 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col2 |
+| PK (driver) | Replication rate constant (k21) [h−1] — KP0016-1 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col3 |
+| PK (driver) | Replication rate constant (k21) [h−1] — KP0052-1 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col4 |
+| PK (driver) | Replication rate constant (k21) [h−1] — BRKP67 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col5 |
+| PK (driver) | Replication rate constant (k21) [h−1] — BRKP28 | `Q302` · not captured | 50 | not captured | not captured | llm_confirmed (not captured) | T2:row4:col6 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP61 | `Q322` · not captured | 0.82 | mg/L | not captured | llm (not captured) | T2:row16:col1 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP76 | `Q322` · not captured | 2.20 | mg/L | not captured | llm (not captured) | T2:row16:col2 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — KP0016-1 | `Q322` · not captured | 6.56 | mg/L | not captured | llm (not captured) | T2:row16:col3 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — KP0052-1 | `Q322` · not captured | 2.68 | mg/L | not captured | llm (not captured) | T2:row16:col4 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in I (KC50,PMB,I) [mg/L] — BRKP67 | `Q322` · not captured | 2.77 | mg/L | not captured | llm (not captured) | T2:row16:col5 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP61 | `Q322` · not captured | 41.03 | mg/L | not captured | llm (not captured) | T2:row17:col1 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP76 | `Q322` · not captured | 79.2 | mg/L | not captured | llm (not captured) | T2:row17:col2 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — KP0016-1 | `Q322` · not captured | 61.16 | mg/L | not captured | llm (not captured) | T2:row17:col3 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — KP0052-1 | `Q322` · not captured | 38.34 | mg/L | not captured | llm (not captured) | T2:row17:col4 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP67 | `Q322` · not captured | 96.78 | mg/L | not captured | llm (not captured) | T2:row17:col5 |
+| PD (effect) | Polymyxin B concentration causing 50% of KmaxPMB in R (KC50,PMB,R) [mg/L] — BRKP28 | `Q322` · not captured | 38.82 | mg/L | not captured | llm (not captured) | T2:row17:col6 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP61 | `Q321` · not captured | 24.7 | mg/L | not captured | llm (not captured) | T2:row21:col1 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP76 | `Q321` · not captured | 18.9 | mg/L | not captured | llm (not captured) | T2:row21:col2 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — KP0016-1 | `Q322` · not captured | 112 | mg/L | not captured | llm (not captured) | T2:row21:col3 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — KP0052-1 | `Q322` · not captured | 44.2 | mg/L | not captured | llm (not captured) | T2:row21:col4 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in I (KC50,MEM,I) [mg/L] — BRKP67 | `Q321` · not captured | 8.91 | mg/L | not captured | llm (not captured) | T2:row21:col5 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP61 | `Q321` · not captured | 61.4 | mg/L | not captured | llm (not captured) | T2:row22:col1 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP76 | `Q321` · not captured | 328 | mg/L | not captured | llm (not captured) | T2:row22:col2 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — KP0016-1 | `Q321` · not captured | 424 | mg/L | not captured | llm (not captured) | T2:row22:col3 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — KP0052-1 | `Q321` · not captured | 284 | mg/L | not captured | llm (not captured) | T2:row22:col4 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP67 | `Q321` · not captured | 227 | mg/L | not captured | llm (not captured) | T2:row22:col5 |
+| PD (effect) | Meropenem concentration causing 50% of KmaxMEM in R (KC50,MEM,R) [mg/L] — BRKP28 | `Q321` · not captured | 228 | mg/L | not captured | llm (not captured) | T2:row22:col6 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP61 | `Q322` · not captured | 42.5 | mg/L | not captured | llm (not captured) | T2:row26:col1 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP76 | `Q322` · not captured | 21.1 | mg/L | not captured | llm (not captured) | T2:row26:col2 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — KP0016-1 | `Q321` · not captured | 20.2 | mg/L | not captured | llm (not captured) | T2:row26:col3 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — KP0052-1 | `Q321` · not captured | 26.1 | mg/L | not captured | llm (not captured) | T2:row26:col4 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP67 | `Q322` · not captured | 20.4 | mg/L | not captured | llm (not captured) | T2:row26:col5 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in I (KC50,FOF,I) [mg/L] — BRKP28 | `Q322` · not captured | 22.0 | mg/L | not captured | llm (not captured) | T2:row26:col6 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP61 | `Q321` · not captured | 44.71 | mg/L | not captured | llm (not captured) | T2:row27:col1 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP76 | `Q321` · not captured | 647.5 | mg/L | not captured | llm (not captured) | T2:row27:col2 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — KP0016-1 | `Q321` · not captured | 448 | mg/L | not captured | llm (not captured) | T2:row27:col3 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — KP0052-1 | `Q321` · not captured | 761.7 | mg/L | not captured | llm (not captured) | T2:row27:col4 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP67 | `Q321` · not captured | 1000 | mg/L | not captured | llm (not captured) | T2:row27:col5 |
+| PD (effect) | Fosfomycin concentration causing 50% of KmaxFOF in R (KC50,FOF,R) [mg/L] — BRKP28 | `Q321` · not captured | 1342 | mg/L | not captured | llm (not captured) | T2:row27:col6 |
+| PD (effect) | Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — BRKP61 | `Q323` · not captured | 0.84 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col1 |
+| PD (effect) | Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — BRKP76 | `Q323` · not captured | 0.83 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col2 |
+| PD (effect) | Maximum fractional decrease of KC50,MEM,I and/or KC50,MEM,R by polymyxin B via outer membrane disruption (ImaxM,PMB) — KP0016-1 | `Q323` · not captured | 0.88 | ImaxM,PMB | not captured | llm (not captured) | T2:row30:col3 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — BRKP61 | `Q322` · not captured | 0.51 | mg/L | not captured | llm (not captured) | T2:row31:col1 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — BRKP76 | `Q322` · not captured | 0.49 | mg/L | not captured | llm (not captured) | T2:row31:col2 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxM,PMB (IC50M,PMB) [mg/L] — KP0016-1 | `Q322` · not captured | 0.50 | mg/L | not captured | llm (not captured) | T2:row31:col3 |
+| PD (effect) | Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — BRKP61 | `Q323` · not captured | 0.99 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col1 |
+| PD (effect) | Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — BRKP76 | `Q323` · not captured | 0.81 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col2 |
+| PD (effect) | Maximum fractional decrease of KC50,FOF,I and/or KC50,FOF,R by polymyxin B via outer membrane disruption (ImaxF,PMB) — KP0016-1 | `Q323` · not captured | 0.89 | ImaxF,PMB | not captured | llm (not captured) | T2:row34:col3 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — BRKP61 | `Q322` · not captured | 0.64 | mg/L | not captured | llm (not captured) | T2:row35:col1 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — BRKP76 | `Q322` · not captured | 0.58 | mg/L | not captured | llm (not captured) | T2:row35:col2 |
+| PD (effect) | Polymyxin B concentration causing 50% of ImaxF,PMB (IC50F,PMB) [mg/L] — KP0016-1 | `Q322` · not captured | 0.59 | mg/L | not captured | llm (not captured) | T2:row35:col3 |
+| variability | Additive residual variability [log10 CFU/mL] — BRKP61 | `Q317` · not captured | 0.39 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col1 |
+| variability | Additive residual variability [log10 CFU/mL] — BRKP76 | `Q317` · not captured | 0.54 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col2 |
+| variability | Additive residual variability [log10 CFU/mL] — KP0016-1 | `Q317` · not captured | 0.45 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col3 |
+| variability | Additive residual variability [log10 CFU/mL] — KP0052-1 | `Q317` · not captured | 0.77 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col4 |
+| variability | Additive residual variability [log10 CFU/mL] — BRKP67 | `Q317` · not captured | 0.52 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col5 |
+| variability | Additive residual variability [log10 CFU/mL] — BRKP28 | `Q317` · not captured | 0.25 | log10 MF | not captured | llm_corrected (not captured) | T2:row38:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

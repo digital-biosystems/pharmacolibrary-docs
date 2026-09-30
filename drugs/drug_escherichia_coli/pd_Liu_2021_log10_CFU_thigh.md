@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Enrofloxacin (measured concentrations) drives name (in log10 CFU/thigh): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Enrofloxacin plasma exposure (PK-PD index AUC0–24/MIC, best index R2 = 0.9928) was related to the change in log10 CFU/thigh of E. coli (Heilong 15) in neutropenic mice via an inhibitory sigmoid Emax model, with Emax 3.86 log10 CFU/thigh, E0 −4.95 log10 CFU/thigh, and EC50 9.05 (recorded in h). Bacteriostasis, 2-log10 and 3-log10 reductions occurred at AUC0–24/MIC divided by 24 h of 0.325, 0.63 and 0.95, respectively; the paper does not describe a kin/kout or effect-compartment mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Liu_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -21,14 +31,14 @@ Liu X; Yang Q; Fan Y; Du Y; Lei L; Wang D; et al. et al. (2021). BMC veterinary 
   ·  DOI: [10.1186/s12917-021-02908-8](https://doi.org/10.1186/s12917-021-02908-8)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax (log10 CFU/thigh) — Values | `Q320` · not captured | 3.86 | log10 CFU/thigh | not captured | exact (not captured) | Tab4:row1:col1 |
-| E0 (log10 CFU/thigh) — Values | `Q324` · not captured | -4.95 | log10 CFU/thigh | not captured | exact (not captured) | Tab4:row2:col1 |
-| EC50 (h) — Values | `Q321` · not captured | 9.05 | h | not captured | exact (not captured) | Tab4:row3:col1 |
-| Dividing AUC0–24/MIC by 24 h for bacteriostatic action — Values | `Q19` · not captured | 0.325 | not captured | not captured | llm (not captured) | Tab4:row5:col1 |
-| Dividing AUC0–24/MIC by 24 h for 2-log10 reduction — Values | `Q19` · not captured | 0.63 | not captured | not captured | llm (not captured) | Tab4:row7:col1 |
-| Dividing AUC0–24/MIC by 24 h for 3-log10 reduction — Values | `Q19` · not captured | 0.95 | not captured | not captured | llm (not captured) | Tab4:row8:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax (log10 CFU/thigh) — Values | `Q320` · not captured | 3.86 | log10 CFU/thigh | not captured | exact (not captured) | Tab4:row1:col1 |
+| PD (effect) | E0 (log10 CFU/thigh) — Values | `Q324` · not captured | -4.95 | log10 CFU/thigh | not captured | exact (not captured) | Tab4:row2:col1 |
+| PD (effect) | EC50 (h) — Values | `Q321` · not captured | 9.05 | h | not captured | exact (not captured) | Tab4:row3:col1 |
+| PK (driver) | Dividing AUC0–24/MIC by 24 h for bacteriostatic action — Values | `Q19` · not captured | 0.325 | not captured | not captured | llm (not captured) | Tab4:row5:col1 |
+| PK (driver) | Dividing AUC0–24/MIC by 24 h for 2-log10 reduction — Values | `Q19` · not captured | 0.63 | not captured | not captured | llm (not captured) | Tab4:row7:col1 |
+| PK (driver) | Dividing AUC0–24/MIC by 24 h for 3-log10 reduction — Values | `Q19` · not captured | 0.95 | not captured | not captured | llm (not captured) | Tab4:row8:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

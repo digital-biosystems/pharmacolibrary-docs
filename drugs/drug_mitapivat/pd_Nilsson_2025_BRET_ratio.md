@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** LumiPK (compound IV) (measured concentrations) drives name (in ratio): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Mitapivat concentrations (competitor, µM range; KD = 11 nM) decrease the NanoBRET ratio measured with tracer IV (compound IV) bound to PKLNluc, i.e. a competitive displacement effect rather than a stimulatory drug effect; the BRET ratio fell dose-dependently with EC50 values of 11, 20, and 57 nM at 10, 20, and 40 nM tracer, giving Cheng–Prusoff-corrected affinities of 7.2, 9.6, and 18 nM. The paper does not state an Emax/Imax, kin/kout, or ke0, and no mechanism beyond competitive tracer displacement is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nilsson_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

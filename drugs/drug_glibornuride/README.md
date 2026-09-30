@@ -24,11 +24,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glibornuride/pd_Haupt_1971_2_blood_glucose.md) | Haupt (1971) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glibornuride/pd_Haupt_1971_2_free_fatty_acids.md) | Haupt (1971) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2](drugs/drug_glibornuride/pd_Haupt_1971_2_serum_insulin.md) | Haupt (1971) | — |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_blood_glucose](drugs/drug_glibornuride/pd_Haupt_1971_2_blood_glucose.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt (1971) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_free_fatty_acids](drugs/drug_glibornuride/pd_Haupt_1971_2_free_fatty_acids.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt (1971) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Haupt_1971_2_serum_insulin](drugs/drug_glibornuride/pd_Haupt_1971_2_serum_insulin.md) | name ← tolbutamide, glibenclamide, glibornuride, glisoxepide · stimulation effect | — | Haupt (1971) | — |
 
 ## ADME sites
 

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Stachys macrostachya essential oil (measured concentrations) drives tyrosinase inhibition (in μg/mL): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Stachys macrostachya essential oil concentrations (25–200 µg/mL) inhibit mushroom tyrosinase activity measured as percent inhibition of L-DOPA oxidation; the paper reports an IC50 of 22.86 ± 0.82 µg/mL (kojic acid control: 3.86 ± 0.94 µg/mL) but does not describe a mechanism or an Emax/kin-kout model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Karaoglan_2021`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

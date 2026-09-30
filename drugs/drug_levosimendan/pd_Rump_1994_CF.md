@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levosimendan (concentrations from the PK model of Bertin_2025) drives coronary flow (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Levosimendan concentration (M) stimulates coronary flow (%) in regionally ischaemic isolated hearts, modelled as an Emax-type concentration-response relationship; the excerpts do not state the mechanism for the coronary flow effect and give no numeric potency or rate parameters (no EC50, Emax, kin, kout, or ke0) for this endpoint.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rump_1994`
 - **model family:** `emax`
 - **driver:** `cited_pk`

@@ -19,9 +19,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Saeed_2021](drugs/drug_docusate_sodium/pd_Saeed_2021_cell_viability.md) | Saeed HK et al., Synthesis and Characterization of Lipop…, ACS omega (2021) | [10.1021/acsomega.0c04779](https://doi.org/10.1021/acsomega.0c04779) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Saeed_2021_cell_viability](drugs/drug_docusate_sodium/pd_Saeed_2021_cell_viability.md) | name ← metformin docusate · inhibition effect | — | Saeed HK et al., Synthesis and Characterization of Lipop…, ACS omega (2021) | [10.1021/acsomega.0c04779](https://doi.org/10.1021/acsomega.0c04779) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>

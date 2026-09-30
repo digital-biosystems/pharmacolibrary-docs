@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C05A&quot;,&quot;href&quot;:&quot;atc/C05A.md&quot;},{&quot;label&quot;:&quot;procaine&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/&quot;},{&quot;label&quot;:&quot;Seifen_1979 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Procaine_Seifen1979_reference&quot;,&quot;label&quot;:&quot;Seifen_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_procaine/Procaine_Seifen1979_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # procaine — `Procaine_Seifen1979_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,18 +13,24 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+
 ### Reviewer guidance
+
+**Every check that could be run on this record passed.**
+
+Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
 A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has procaine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
 Seifen AB; Ferrari AA; Seifen EE; Thompson DS; Chapman J et al. (1979). Anesthesia and analgesia 58
   ·  DOI: [10.1213/00000539-197909000-00007](https://doi.org/10.1213/00000539-197909000-00007)
 
 ## Model component
-<dbs-pgx drug="procaine" model-id="Procaine_Seifen1979_reference" status="extracted" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="procaine" model-id="Procaine_Seifen1979_reference" status="curated_candidate" stale="false" population="women undergoing hysterectomy" measured-compound="procaine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 4 extracted.
@@ -34,8 +40,8 @@ Seifen AB; Ferrari AA; Seifen EE; Thompson DS; Chapman J et al. (1979). Anesthes
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| distribution half-life (t1/2 alpha) | `Q59` · t1/2α | 2.49 | minutes | not captured | [min] | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
-| elimination half-life (t1/2 beta) | `Q60` · t1/2β | 7.69 | minutes | not captured | [min] | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
+| distribution half-life (t1/2 alpha) | `Q59` · t1/2α | 2.49 | minutes | 149.4 | h | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
+| elimination half-life (t1/2 beta) | `Q60` · t1/2β | 7.69 | minutes | 461.40000000000003 | h | not captured | llm (0.6) | Seifen_1979:abstract | — | not captured |
 | volume of distribution at steady-state | `Q65` · Vss | 0.79 | L/kg | 0.0553 | [l] / [kg] | not captured | llm_corrected (0.6) | Seifen_1979:abstract, Seifen_1979:abstract | — | not captured |
 | total body clearance | `Q22` · CL | 0.08 | L/kg/min | 9.333333333333334e-05 | [l] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Seifen_1979:abstract, Seifen_1979:abstract | — | not captured |
 
@@ -56,6 +62,8 @@ Seifen AB; Ferrari AA; Seifen EE; Thompson DS; Chapman J et al. (1979). Anesthes
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- unit re-normalised: t1/2α 'minutes' now converts (value unchanged)
+- unit re-normalised: t1/2β 'minutes' now converts (value unchanged)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Seifen_1979_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -108,6 +116,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C9_phys_window_Q22 | pass | clearance within physiological range | 336 L/h | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 55.3 L | not captured | not captured | ['Seifen_1979:abstract', 'Seifen_1979:abstract'] |
 
+**Reviewer per-scenario checks:**
+
+| check | scenario | status | expected | obtained | ratio | note |
+|---|---|---|---|---|---|---|
+| T0_analyte_identity | not captured | pass | not captured | not captured | not captured | V/CL labels are the drug's (or a metabolite's), no biomarker signal |
+| T2_covariates | not captured | skipped | not captured | not captured | not captured | no covariate effects in record |
+| T3_output_variable | not captured | pass | C_central (measured=procaine) | central.C | not captured | output must be the measured/analyte compartment |
+| T3_param_coverage | not captured | pass | 1 scholar param(s) emitted or defaulted | 1 covered | not captured | all structural parameters accounted for |
+| T3_topology_template | not captured | pass | 1C → PK_1C* | PK_1C | not captured | engineer template must match the scholar topology |
+| T6_deviations | not captured | pass | not captured | all deviations documented+quantified | not captured | LLM adjudication → deterministic rule |
+
 <details class="legend">
 <summary>Check legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>check</code></td><td>the check id. C0_has_structural_params = at least one numeric structural parameter; C0b_disposition_core = a volume OR a clearance/elimination term (neither means an exposure/outcome paper, not popPK — rejected); C0c_disposition_complete = BOTH a volume AND a clearance/elimination term, which is what the engineer needs to build (one without the other routes to review, never to the engineer); C1_half_life(_beta) = reported half-life against V and CL; C2_reference = covariate scenarios are sign-plausible; C3_cl_dose_auc = CL against dose/AUC; C4_auc_closed_form = AUC recomputed in closed form; C5_dimension_&lt;Qcode&gt; = the parameter's units carry the dimension its Q-code requires.</td></tr><tr><td><code>status</code></td><td>pass, fail, or skipped. A skipped check had nothing to compare — the paper did not report the input it needs — and is not evidence against the record. The scholar table lists only pass and fail; the reviewer table also shows skipped, with the reason in note.</td></tr><tr><td><code>expected</code></td><td>the value the check required, from the paper or from the ontology.</td></tr><tr><td><code>obtained</code></td><td>what the record actually yields.</td></tr><tr><td><code>ratio</code></td><td>obtained / expected, where the check is a numeric comparison.</td></tr><tr><td><code>tol</code></td><td>the tolerance the ratio had to fall within to pass.</td></tr><tr><td><code>source</code></td><td>the artifact the expected value was taken from.</td></tr><tr><td><code>scenario</code></td><td>reviewer table only — the covariate scenario the check was run under.</td></tr><tr><td><code>note</code></td><td>why a check was skipped, or how it was judged.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
@@ -116,6 +135,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 ## Raw artifacts
 
 - scholar stages: `../../../knowledgebase/drugs/drug_procaine/papers/_screenv2.yaml`, `_locatev2.yaml`, `_transcribev2.yaml`, `_interpretv2.yaml`, `_validatev2.yaml`, `_reviewv2.yaml` (keys `Seifen_1979` / `Seifen_1979::reference`)
+- model: `../../../knowledgebase/drugs/drug_procaine/models/modelica/Procaine_Seifen1979_reference.mo`
+- deviation: `../../../knowledgebase/drugs/drug_procaine/models/modelica/Procaine_Seifen1979_reference.deviation.json`
+- sim: `../../../knowledgebase/drugs/drug_procaine/models/modelica/Procaine_Seifen1979_reference.json`
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

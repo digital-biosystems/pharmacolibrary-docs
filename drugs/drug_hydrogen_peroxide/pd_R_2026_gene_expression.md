@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rucaparib drives name (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative pharmacodynamic model for the recorded drug-response pair; it reports that rucaparib (a fluorescent PARP inhibitor) accumulation drives DNA damage response measured as γH2AX accumulation, with cells dosed at their IC50 concentration showing heterogeneous, cell-cycle-dependent γH2AX responses, and lysosomal sequestration acting as a reservoir that sustains nuclear rucaparib levels. No Imax, IC50 value, EC50, Emax, kin, kout, ke0 or gamma values are stated in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `R_2026`
 - **model family:** `linear`
 - **driver:** `not_resolved`

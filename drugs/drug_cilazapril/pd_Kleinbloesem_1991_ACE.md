@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cilazaprilat (concentrations from the PK model of Meredith_1989) drives ACE inhibition (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Cilazaprilat plasma concentration (µg/L) drives ACE inhibition (%) via a sigmoid Emax-type inhibitory relationship; cilazaprilat is a potent, reversible, competitive ACE inhibitor, with IC50 (concentration causing 50% ACE inhibition) approximately 1 µg/L plasma. The paper does not state Imax, gamma, kin, kout, or ke0 values, and no effect-compartment or indirect production/elimination mechanism is described.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Kleinbloesem_1991`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

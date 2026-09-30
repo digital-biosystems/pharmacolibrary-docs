@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Metaraminol drives hypotension (in unknown): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Prophylactic metaraminol infusion (0–2.5 μg/kg/min) acts on the binary occurrence of spinal-anesthesia-induced hypotension (SBP decrease ≥20% from baseline and/or &lt;90 mm Hg) in Caesarean delivery; the paper does not state a mechanistic PD model, only a probit dose-response, with ED50 = 0.64 (95% CI 0.04–1.00) μg/kg/min and ED90 = 2.00 (95% CI 1.58–2.95) μg/kg/min.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Xiao_2021`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

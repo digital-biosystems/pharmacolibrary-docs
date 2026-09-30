@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** MGL-3196 drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a quantitative PD model for the LDL-C response; it only reports that MGL-3196 (resmetirom) dose-dependently decreased LDL-C in HFD-fed rats (similar to total cholesterol, with 5 mg/kg giving a maximal 33.6% decrease in total cholesterol and 0.5 mg/kg having no significant effect), with no mechanism, Emax/EC50, or rate parameters stated for LDL-C.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Luong_2020`
 - **model family:** `emax`
 - **driver:** `not_resolved`

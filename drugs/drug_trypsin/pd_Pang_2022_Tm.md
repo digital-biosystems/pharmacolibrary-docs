@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cysteinyl-sulfonamides (7b, 7d) (measured concentrations) drive thermal stabilization (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a thermal shift assay, cysteinyl-sulfonamides 7b and 7d (concentrations in µM) increase the melting temperature (Tm) of Ms-MshC, indicating direct binding in the catalytic site; the paper reports Kiapp/EC50 values of 219 µM (7b), 231 µM (7d), and 107 µM for the natural intermediate Cys-AMP, but does not state a formal PD model (no Imax, Emax, kin/kout, or ke0 values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pang_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,11 +30,11 @@ Pang L; Lenders S; Osipov EM; Weeks SD; Rozenski J; Piller T; et al. et al. (202
   ·  DOI: [10.3390/ijms232315095](https://doi.org/10.3390/ijms232315095)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| 7b — EC50 | `Q321` · not captured | 219.29 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row6:col6 |
-| 7d — EC50 | `Q321` · not captured | 230.60 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row10:col6 |
-| Cys-AMP — EC50 | `Q321` · not captured | 106.64 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row18:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | 7b — EC50 | `Q321` · not captured | 219.29 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row6:col6 |
+| PD (effect) | 7d — EC50 | `Q321` · not captured | 230.60 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row10:col6 |
+| PD (effect) | Cys-AMP — EC50 | `Q321` · not captured | 106.64 | µM | not captured | llm (not captured) | ijms-23-15095-t001:row18:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

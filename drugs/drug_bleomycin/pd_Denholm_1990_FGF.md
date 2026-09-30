@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin A2 (measured concentrations) drives fibroblast growth factor secretion (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (bleomycin A2) concentrations directly stimulate fibroblast growth factor secretion by rat alveolar macrophages, an effect attributed to saturable, reversible membrane binding sites; the high-affinity site Kd of 528 nM (6.7 x 10^4 sites/cell; low-affinity Kd 65 µM) closely matches the ED50 of the dose-response curves. The paper does not report an explicit Emax model with Imax/IC50/EC50/kin/kout/ke0 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Denholm_1990`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

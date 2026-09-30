@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Laevifolin A (measured concentrations) drives name (in % viability) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Laevifolin A concentrations (µM) reduce HT-29 cell viability (% viability, SRB assay) after 48 h in a concentration-dependent manner, with an IC50 of 21.2 µM (59.5 µM in CCD-18Co cells); the paper does not state a pharmacodynamic mechanism or model (no Emax/kin/kout parameters). Menadione appears only as a redox-cycling agent used to induce oxidative DNA damage when probing Laevifolin A's genoprotective potential, not as the driver of the cytotoxicity model.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Siew_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

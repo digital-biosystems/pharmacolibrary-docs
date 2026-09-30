@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Lubiprostone (measured concentrations) drives name (in µA/cm2): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Lubiprostone concentration-dependently stimulates electrogenic Cl− secretion measured as short-circuit current (Isc, µA/cm2) in guinea pig intestinal preparations, acting directly (not via PKA/cAMP or CFTR) on chloride channels believed to be ClC-2; EC50 values were 227.2 nM (ileum, serosal), 42.5 nM (ileum, mucosal), 31.7 nM (colon, serosal) and 48.9 nM (colon, mucosal) over 1–3000 nM, with no significant time lag to peak (no effect-compartment delay reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Fei_2009`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

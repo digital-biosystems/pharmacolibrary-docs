@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The carbamazepine parent–metabolite model was rejected because its structure is a one-compartment enteral model instead of the required parent–metabolite topology, and the model output is the parent compartment rather than the measured carbamazepine and carbamazepine-10,11-epoxide analyte.**

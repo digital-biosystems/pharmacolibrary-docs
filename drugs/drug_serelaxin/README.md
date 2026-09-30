@@ -30,9 +30,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Soubret_2018_reference](drugs/drug_serelaxin/Serelaxin_Soubret2018_reference.md) | 1-compartment (no model) | 2 | Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018) | [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Soubret_2018_reference](drugs/drug_serelaxin/Serelaxin_Soubret2018_reference.md) | — | 1-compartment (no model) | 2 | Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018) | [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714) |
 
 ## ADME sites
 

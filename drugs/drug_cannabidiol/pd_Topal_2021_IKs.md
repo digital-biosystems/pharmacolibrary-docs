@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cannabidiol (concentrations from the PK model of Eichler_2023::first_trial_0_2_mg_kg_n_3) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cannabidiol (CBD) concentration-dependently inhibited the slow delayed rectifier potassium current (IKs) in rabbit ventricular myocytes, measured as tail current after 5 s depolarizing pulses, with an estimated EC50 of 3.1 µM; the paper does not state an explicit PD model structure (e.g., Emax form, kin/kout, or effect compartment), only this EC50 value.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Topal_2021`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -21,12 +31,12 @@ Topal L; Naveed M; Orvos P; Pászti B; Prorok J; Bajtel Á; et al. et al. (2021)
   ·  DOI: [10.1007/s00204-021-03086-0](https://doi.org/10.1007/s00204-021-03086-0)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Vmax (V/s) — Rabbit ventricular muscle(n = 8) | `Q66` · not captured | 120.3 | V/s | not captured | special_case (not captured) | Tab1:row4:col1 |
-| Vmax (V/s) — Rabbit ventricular muscle(n = 8) | `Q66` · not captured | 113.0 | V/s | not captured | special_case (not captured) | Tab1:row4:col2 |
-| Vmax (V/s) — Dog ventricular muscle(n = 6) | `Q66` · not captured | 186.4 | V/s | not captured | special_case (not captured) | Tab1:row4:col3 |
-| Vmax (V/s) — Dog ventricular muscle(n = 6) | `Q66` · not captured | 201.0 | V/s | not captured | special_case (not captured) | Tab1:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Vmax (V/s) — Rabbit ventricular muscle(n = 8) | `Q66` · not captured | 120.3 | V/s | not captured | special_case (not captured) | Tab1:row4:col1 |
+| PK (driver) | Vmax (V/s) — Rabbit ventricular muscle(n = 8) | `Q66` · not captured | 113.0 | V/s | not captured | special_case (not captured) | Tab1:row4:col2 |
+| PK (driver) | Vmax (V/s) — Dog ventricular muscle(n = 6) | `Q66` · not captured | 186.4 | V/s | not captured | special_case (not captured) | Tab1:row4:col3 |
+| PK (driver) | Vmax (V/s) — Dog ventricular muscle(n = 6) | `Q66` · not captured | 201.0 | V/s | not captured | special_case (not captured) | Tab1:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

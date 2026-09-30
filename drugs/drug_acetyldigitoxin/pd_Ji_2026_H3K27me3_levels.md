@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Acetyldigitoxin (measured concentrations) drives name (in relative protein) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Acetyldigitoxin (ADT) concentration-dependently reduces global H3K27me3 levels (relative protein) in A549 NSCLC cells by inhibiting EZH2 methyltransferase activity (and reducing EZH2 expression to 0.52-fold), though the paper notes direct biochemical enzyme inhibition was not proven; no PD model parameters (Imax, IC50/EC50 for H3K27me3, kin, kout, ke0) are reported for this response. For context, ADT cytotoxicity in A549 cells had an IC50 of 32.4 nM (190 nM in Beas-2B cells), versus 1.92 μM for GSK126.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ji_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

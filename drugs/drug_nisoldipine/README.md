@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_1990_reference](drugs/drug_nisoldipine/Nisoldipine_Huang1990_reference.md) | 1-compartment (no model) | 7 | Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990) | — |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Huang_1990_reference](drugs/drug_nisoldipine/Nisoldipine_Huang1990_reference.md) | — | 1-compartment (no model) | 7 | Huang Y et al., Pharmacokinetics of m-nisoldipine in ra…, Zhongguo yao li xue bao = A… (1990) | — |
 
 ## ADME sites
 

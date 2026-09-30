@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amiodarone (concentrations from the PK model of Anastasiou-Nana_1982) drives active tension (in gram force): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Amiodarone (µM) applied cumulatively to preconstricted human pulmonary artery rings produced a direct vasodilatory (relaxation) effect on active tension (gram force), with maximal vasodilation at 100 µM (−0.494 gf) and an EC50 of 9.42 µM (95% CI 6.44–14.9 µM); the paper does not state a mechanistic pathway beyond this direct Emax-type concentration–response effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Makam_2022`
 - **model family:** `emax`
 - **driver:** `cited_pk`
@@ -20,9 +30,9 @@
 Makam R; Tajmohamed N; Qadri S; Chaudhry M; Cowen M; Loubani M; et al. et al. (2022). Journal of clinical and translational research 8
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 for amiodarone | `Q321` · not captured | 9.42 | μM | not captured | review_gapfill (not captured) | Makam_2022:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 for amiodarone | `Q321` · not captured | 9.42 | μM | not captured | review_gapfill (not captured) | Makam_2022:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

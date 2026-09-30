@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Remimazolam drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Remimazolam effect-site concentrations (mcg/mL) inhibit the Narcotrend Index via a sigmoid inhibitory Emax model (sequential PK/PD fit), extended with a second sigmoid term to capture an initial plateau during continuous infusion. Reported parameters: first sigmoid E0 94, Emax,1 17, EC50,1 0.457 mcg/mL, Hill 10.1, ke0,1 0.24 min−1; second sigmoid Emin 56, EC50,2 0.601 mcg/mL, Hill 9.3, ke0,2 0.027 min−1 (Eisenreid et al. [39]).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `de_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,12 +30,12 @@ de Jong BT; Eleveld DJ; Mason KP; Struys MMRF et al. (2025). Clinical pharmacoki
   ·  DOI: [10.1007/s40262-025-01548-7](https://doi.org/10.1007/s40262-025-01548-7)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| ke0 (min−1) — Vellinga (2025) [40] | `Q326` · not captured | 0.135 | min−1 | not captured | exact (not captured) | Tab3:row0:col6 |
-| γ (Hill) — Vellinga (2024) [23] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col4 |
-| γ (Hill) — Eleveld (2024) [20] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col5 |
-| γ (Hill) — Vellinga (2025) [40] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | ke0 (min−1) — Vellinga (2025) [40] | `Q326` · not captured | 0.135 | min−1 | not captured | exact (not captured) | Tab3:row0:col6 |
+| PD (effect) | γ (Hill) — Vellinga (2024) [23] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col4 |
+| PD (effect) | γ (Hill) — Eleveld (2024) [20] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col5 |
+| PD (effect) | γ (Hill) — Vellinga (2025) [40] | `Q325` · not captured | 1 | Hill | not captured | llm (not captured) | Tab3:row4:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -25,9 +25,9 @@ Thiazolidinediones, including pioglitazone, have fallen out of favor in recent y
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | 2-compartment, oral | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | held back | 2-compartment, oral | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
 
 ## Pharmacogenomics (PGx)
 

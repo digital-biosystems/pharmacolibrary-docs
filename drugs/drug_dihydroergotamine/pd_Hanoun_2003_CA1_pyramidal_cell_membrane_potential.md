@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 8'-hydroxy-dihydroergotamine (measured concentrations) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> In rat hippocampal slices, 8'-hydroxy-dihydroergotamine (and DHE) concentration-dependently hyperpolarized CA1 pyramidal cell membrane potential via 5-HT1A receptor stimulation (blocked by WAY 100635); 8'-OH-DHE was more potent than DHE, but the paper gives no EC50/Emax for this endpoint, and no potency or rate parameters are stated for it.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hanoun_2003`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

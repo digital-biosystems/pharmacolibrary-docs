@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Insulin drives name (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Insulin (plasma concentration, mU/ml) stimulates whole body glucose disposal (Rd), described by a four-parameter logistic (sigmoid Emax) dose-response with ED50 values independent of glycemia; the paper does not state a specific ED50 for whole body disposal in the excerpts (ED50s for glycogen synthase activation were 47±8, 74±36, 60±14, and 47±9 mU/ml at glucose 90, 160, 250, and 400 mg/dl), and no mechanism beyond direct stimulation of glucose disposal is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yki-Järvinen_1987`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

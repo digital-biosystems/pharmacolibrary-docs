@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Mineral concentration drives name (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> In feed-deprived bulls, increasing mineral concentration of the oral rehydration solution (0–300 mOsm/kg) linearly decreased serum urea at 24 and 48 h (p = 0.02), a dose–response described only as linear with no mechanism, Emax/IC50, or rate parameters given. Glycerol inclusion (0–4%) also tended to linearly decrease serum urea at 24 h (p = 0.06), attributed only speculatively to reduced protein catabolism, again without quantitative PD parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilms_2023`
 - **model family:** `linear`
 - **driver:** `not_resolved`

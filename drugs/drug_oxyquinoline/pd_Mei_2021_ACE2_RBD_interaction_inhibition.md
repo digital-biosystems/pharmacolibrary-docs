@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 4-hydroxyquinoline-2-carboxylic acid (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model; it reports direct inhibition of the ACE2–SARS-CoV-2 RBD interaction in a biotinylated binding assay, where the Ephedra sinica extract (ESE) inhibited binding with an IC50 of 95.01 μg/mL, and the pseudovirus entry assay gave IC50 values of 1.09 μM, 0.44 μM and 0.7 μM (truncated) for compounds 1–3, with recombinant ACE2 as positive control (IC50 69.62 nM). No Imax, Emax, kin, kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Mei_2021`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

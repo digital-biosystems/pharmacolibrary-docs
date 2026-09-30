@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Thrombolytic agents (alteplase, tenecteplase, reteplase, urokinase) drive name (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a two-compartment PK-PD model of intravenous thrombolysis, the thrombolytic drugs (alteplase, urokinase, tenecteplase, reteplase) act on intracranial hemorrhage (ICH) risk indirectly: ICH risk was assessed by monitoring plasma fibrinogen (FBG) concentration, i.e., via the drugs' fibrinolytic degradation of fibrinogen rather than a direct Emax effect. The paper does not state a specific mechanism linking drug concentration to ICH risk and gives no potency or rate values (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2023`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

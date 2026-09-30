@@ -29,10 +29,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) | 1-compartment (no model) | 5 | Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1987) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Marone_1984_reference](drugs/drug_piretanide/Piretanide_Marone1984_reference.md) | 1-compartment (no model) | 1 | Marone C et al., Pharmacokinetics of high doses of piret…, European journal of clinica… (1984) | [10.1007/BF00556897](https://doi.org/10.1007/BF00556897) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Trenk_1987_reference](drugs/drug_piretanide/Piretanide_Trenk1987_reference.md) | — | 1-compartment (no model) | 5 | Trenk D et al., Pharmacokinetics and bioavailability of…, Arzneimittel-Forschung (1987) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Marone_1984_reference](drugs/drug_piretanide/Piretanide_Marone1984_reference.md) | — | 1-compartment (no model) | 1 | Marone C et al., Pharmacokinetics of high doses of piret…, European journal of clinica… (1984) | [10.1007/BF00556897](https://doi.org/10.1007/BF00556897) |
 
 ## ADME sites
 

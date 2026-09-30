@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Phencyclidine drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Pentazocine concentration-dependently contracts dog basilar and middle cerebral arteries in vitro, with concentration-effect curves parallel to phencyclidine (PCP) but reduced maximal contractile tension (lower intrinsic activity), which the authors attribute to interaction with a distinct PCP receptor on cerebral blood vessels; the excerpts give no numeric EC50, Emax, or rate constants, only the potency ordering pentazocine &gt; cyclazocine &gt; N-allylnorcyclazocine among the benzomorphans.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Altura_1983`
 - **model family:** `emax`
 - **driver:** `not_resolved`

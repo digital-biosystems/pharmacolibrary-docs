@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The flucytosine absorption rate constant (Ka) was not reported in Hope_2006, so a default value was substituted for it, along with defaults for bioavailability (F) and lag time (Tlag), making the record unacceptable.**
@@ -42,7 +44,7 @@ Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Ant
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of the central compartment | `Q61` · V | 0.022 | liter | 2.2e-05 | L | not captured | boundary (0.8) | Hope_2006:other_prose | — | not captured |
 | clearance | `Q22` · CL | 0.021 | liter/h | 5.833333333333334e-09 | L/h | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
-| Ka | `Q49` · kabs | 19.58 | h Ϫ1 | not captured | h Ϫ1 | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
+| Ka | `Q49` · kabs | 19.58 | h Ϫ1 | 0.005438888888888888 | 1/h | not captured | exact (1.0) | Hope_2006:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,6 +66,7 @@ Hope WW; Warn PA; Sharp A; Howard S; Kasai M; Louie A; et al. et al. (2006). Ant
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - unit re-normalised: CL 'liter/h' now converts (value unchanged)
+- unit re-normalised: kabs 'h Ϫ1' now converts (value unchanged)
 
 **Extraction notes:**
 - unparsed cell tab_1:row0:col2 = 'Growth constant K g (h Ϫ1 )'

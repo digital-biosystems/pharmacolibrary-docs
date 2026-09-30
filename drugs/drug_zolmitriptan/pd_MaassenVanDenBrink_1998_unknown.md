@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives coronary artery contraction (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Zolmitriptan concentration-dependently contracts human isolated coronary artery segments, with responses expressed as a percentage of the contraction to 100 mmol/L K+ and fitted to a direct Emax model; the excerpts do not report the specific EC50 or Emax values for zolmitriptan, only that its EC50 was lower (more potent) than that of sumatriptan (EC50 117–2042 nmol/L) with similar efficacy, and that its clinical Cmax remains &lt;10% of its EC50. No mechanism beyond a direct contractile (Emax) effect is given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `MaassenVanDenBrink_1998`
 - **model family:** `emax`
 - **driver:** `not_resolved`

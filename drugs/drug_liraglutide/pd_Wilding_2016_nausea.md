@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Liraglutide (concentrations from the PK model of Carlsson_2021::estimate) drives proportion of individuals with nausea (in %): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Liraglutide exposure (nM) was related to the proportion of individuals reporting at least one nausea episode (any severity) during 56 weeks of treatment, which increased with increasing exposure (slope p = 0.04); the record describes a sigmoid Emax inhibitory model, but the paper does not state the mechanism or report any potency or rate parameters (no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values are given), and no exposure–response relationship was seen for moderate/severe nausea (p = 0.90).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`

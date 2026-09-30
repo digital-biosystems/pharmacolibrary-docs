@@ -16,12 +16,12 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_exposure](drugs/toxin_lead/Lead_Dede2017_exposure.md) | nonlinear / manual (no model) | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_exposure::adult humans](drugs/toxin_lead/Lead_Dede2017_exposure_adult_humans.md) | — (no model) | 0 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_optimal](drugs/toxin_lead/Lead_Dede2017_optimal.md) | nonlinear / manual (no model) | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_optimal::adult humans](drugs/toxin_lead/Lead_Dede2017_optimal_adult_humans.md) | — (no model) | 0 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_exposure](drugs/toxin_lead/Lead_Dede2017_exposure.md) | — | nonlinear / manual (no model) | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_exposure::adult humans](drugs/toxin_lead/Lead_Dede2017_exposure_adult_humans.md) | — | — (no model) | 0 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_optimal](drugs/toxin_lead/Lead_Dede2017_optimal.md) | — | nonlinear / manual (no model) | 2 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: nonlinear topology</sub><br><sub>route_to: `manual_model_class`</sub> | [Dede_2017_optimal::adult humans](drugs/toxin_lead/Lead_Dede2017_optimal_adult_humans.md) | — | — (no model) | 0 | Dede E et al., Physiologically-based pharmacokinetic a… (2017) | [10.1016/j.etap.2017.12.003](https://doi.org/10.1016/j.etap.2017.12.003) |
 
 ## Pharmacogenomics (PGx)
 

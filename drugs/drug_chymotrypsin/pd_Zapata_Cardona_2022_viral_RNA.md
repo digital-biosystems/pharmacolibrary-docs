@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Atorvastatin (measured concentrations) drives name (in copies/μl) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Atorvastatin (ATV) concentrations (μM, no PK model) inhibit SARS-CoV-2 viral RNA (copies/μl, RT-qPCR) in Vero E6 cells under post-infection treatment, acting by reducing viral replication/assembly, proposed via blockade of cholesterol-dependent lipid droplet formation; the paper does not state a formal PD model (e.g., Emax/kin-kout). Reported potency values are EC50 = 15.4 μM (D614G viral RNA; 8.7 μM in Caco-2) with CC50 = 50.3 μM, and EC50 = 16.8 μM (Delta, SI 3) and 21.1 μM (Mu, SI 2.4); CC50 values of 4.2 μM (pre-infection) and 4.5 μM (post-infection) are also listed in the record.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zapata-Cardona_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,15 +30,15 @@ Zapata-Cardona MI; Flórez-Álvarez L; Zapata-Builes W; Guerra-Sandoval AL; Guer
   ·  DOI: [10.3389/fmicb.2022.721103](https://doi.org/10.3389/fmicb.2022.721103)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Atorvastatin — CC50 (μM) | `Q322` · not captured | 50.3 | μM | not captured | llm (not captured) | tab2:row1:col2 |
-| Atorvastatin — EC50 (μM) | `Q321` · not captured | 15.4 | μM | not captured | llm (not captured) | tab2:row1:col5 |
-| Pre-infection treatment — CC50 (μM) | `Q322` · not captured | 4.2 | μM | not captured | llm (not captured) | tab2:row2:col2 |
-| Post-infection treatment — CC50 (μM) | `Q322` · not captured | 4.5 | μM | not captured | llm (not captured) | tab2:row3:col2 |
-| Delta variant — CC50 (μM) | `Q322` · not captured | 16.8 | μM | not captured | llm (not captured) | tab2:row4:col2 |
-| Mu variant — CC50 (μM) | `Q322` · not captured | 21.1 | μM | not captured | llm (not captured) | tab2:row5:col2 |
-| Caco-2 — EC50 (μM) | `Q321` · not captured | 8.7 | μM | not captured | llm (not captured) | tab2:row6:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Atorvastatin — CC50 (μM) | `Q322` · not captured | 50.3 | μM | not captured | llm (not captured) | tab2:row1:col2 |
+| PD (effect) | Atorvastatin — EC50 (μM) | `Q321` · not captured | 15.4 | μM | not captured | llm (not captured) | tab2:row1:col5 |
+| PD (effect) | Pre-infection treatment — CC50 (μM) | `Q322` · not captured | 4.2 | μM | not captured | llm (not captured) | tab2:row2:col2 |
+| PD (effect) | Post-infection treatment — CC50 (μM) | `Q322` · not captured | 4.5 | μM | not captured | llm (not captured) | tab2:row3:col2 |
+| PD (effect) | Delta variant — CC50 (μM) | `Q322` · not captured | 16.8 | μM | not captured | llm (not captured) | tab2:row4:col2 |
+| PD (effect) | Mu variant — CC50 (μM) | `Q322` · not captured | 21.1 | μM | not captured | llm (not captured) | tab2:row5:col2 |
+| PD (effect) | Caco-2 — EC50 (μM) | `Q321` · not captured | 8.7 | μM | not captured | llm (not captured) | tab2:row6:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Bleomycin A2, bleomycin B2, pingyangmycin (bleomycin A5) (measured concentrations) drive cell viability (in %): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Bleomycin (as bleomycin A2, B2, pingyangmycin/A5, and combinations) concentrations (μM) inhibit cell viability (%) with an Emax-type inhibitory model; the paper excerpts do not state the mechanism beyond this concentration-effect inhibition. Reported IC50 values range widely across cell lines/compounds, e.g. BLM 13.35–446.6 μM, A2 28.1–138.4 μM, B2 77.3–218.3 μM, A5 9.6–327.7 μM, A2A5 5.7–159.5 μM, B2A5 8.9–227.8 μM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `He_2016`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`
@@ -21,35 +31,35 @@ He Y; Lan Y; Liu Y; Yu H; Han Z; Li X; et al. et al. (2016). Molecules (Basel, S
   ·  DOI: [10.3390/molecules21070862](https://doi.org/10.3390/molecules21070862)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| BLM — IC50 (μM) | `Q322` · not captured | 17.47 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col1 |
-| BLM — IC50 (μM) | `Q322` · not captured | 233.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col2 |
-| BLM — IC50 (μM) | `Q322` · not captured | 13.35 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col3 |
-| BLM — IC50 (μM) | `Q322` · not captured | 71.20 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col4 |
-| BLM — IC50 (μM) | `Q322` · not captured | 446.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col6 |
-| A2 — IC50 (μM) | `Q322` · not captured | 44.8 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col1 |
-| A2 — IC50 (μM) | `Q322` · not captured | 28.1 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col3 |
-| A2 — IC50 (μM) | `Q322` · not captured | 138.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col4 |
-| B2 — IC50 (μM) | `Q322` · not captured | 118.5 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col1 |
-| B2 — IC50 (μM) | `Q322` · not captured | 77.3 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col3 |
-| B2 — IC50 (μM) | `Q322` · not captured | 218.3 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col4 |
-| A5 — IC50 (μM) | `Q322` · not captured | 11.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col1 |
-| A5 — IC50 (μM) | `Q322` · not captured | 71.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col2 |
-| A5 — IC50 (μM) | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col3 |
-| A5 — IC50 (μM) | `Q322` · not captured | 55.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col4 |
-| A5 — IC50 (μM) | `Q322` · not captured | 327.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col5 |
-| A5 — IC50 (μM) | `Q322` · not captured | 126.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col6 |
-| A2A5 — IC50 (μM) | `Q322` · not captured | 9.0 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col1 |
-| A2A5 — IC50 (μM) | `Q322` · not captured | 159.5 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col2 |
-| A2A5 — IC50 (μM) | `Q322` · not captured | 5.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col3 |
-| A2A5 — IC50 (μM) | `Q322` · not captured | 66.0 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col4 |
-| A2A5 — IC50 (μM) | `Q322` · not captured | 125.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col6 |
-| B2A5 — IC50 (μM) | `Q322` · not captured | 13.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col1 |
-| B2A5 — IC50 (μM) | `Q322` · not captured | 147.2 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col2 |
-| B2A5 — IC50 (μM) | `Q322` · not captured | 8.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col3 |
-| B2A5 — IC50 (μM) | `Q322` · not captured | 79.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col4 |
-| B2A5 — IC50 (μM) | `Q322` · not captured | 227.8 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col6 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | BLM — IC50 (μM) | `Q322` · not captured | 17.47 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col1 |
+| PD (effect) | BLM — IC50 (μM) | `Q322` · not captured | 233.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col2 |
+| PD (effect) | BLM — IC50 (μM) | `Q322` · not captured | 13.35 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col3 |
+| PD (effect) | BLM — IC50 (μM) | `Q322` · not captured | 71.20 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col4 |
+| PD (effect) | BLM — IC50 (μM) | `Q322` · not captured | 446.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row2:col6 |
+| PD (effect) | A2 — IC50 (μM) | `Q322` · not captured | 44.8 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col1 |
+| PD (effect) | A2 — IC50 (μM) | `Q322` · not captured | 28.1 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col3 |
+| PD (effect) | A2 — IC50 (μM) | `Q322` · not captured | 138.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row3:col4 |
+| PD (effect) | B2 — IC50 (μM) | `Q322` · not captured | 118.5 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col1 |
+| PD (effect) | B2 — IC50 (μM) | `Q322` · not captured | 77.3 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col3 |
+| PD (effect) | B2 — IC50 (μM) | `Q322` · not captured | 218.3 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row4:col4 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 11.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col1 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 71.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col2 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 9.6 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col3 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 55.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col4 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 327.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col5 |
+| PD (effect) | A5 — IC50 (μM) | `Q322` · not captured | 126.4 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row5:col6 |
+| PD (effect) | A2A5 — IC50 (μM) | `Q322` · not captured | 9.0 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col1 |
+| PD (effect) | A2A5 — IC50 (μM) | `Q322` · not captured | 159.5 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col2 |
+| PD (effect) | A2A5 — IC50 (μM) | `Q322` · not captured | 5.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col3 |
+| PD (effect) | A2A5 — IC50 (μM) | `Q322` · not captured | 66.0 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col4 |
+| PD (effect) | A2A5 — IC50 (μM) | `Q322` · not captured | 125.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row6:col6 |
+| PD (effect) | B2A5 — IC50 (μM) | `Q322` · not captured | 13.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col1 |
+| PD (effect) | B2A5 — IC50 (μM) | `Q322` · not captured | 147.2 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col2 |
+| PD (effect) | B2A5 — IC50 (μM) | `Q322` · not captured | 8.9 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col3 |
+| PD (effect) | B2A5 — IC50 (μM) | `Q322` · not captured | 79.7 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col4 |
+| PD (effect) | B2A5 — IC50 (μM) | `Q322` · not captured | 227.8 | μM | not captured | llm (not captured) | molecules-21-00862-t001:row7:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

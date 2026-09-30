@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Polymyxin B drives acute kidney injury (in unknown): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Polymyxin B exposure (AUCss,24h, in μg•h/mL) drives the time-to-event hazard of acute kidney injury in a time-to-event model; the paper does not state a pharmacodynamic mechanism or any potency/rate parameter values (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma are reported).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Qin_2026`
 - **model family:** `tte`
 - **driver:** `not_resolved`

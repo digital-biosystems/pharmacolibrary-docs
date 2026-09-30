@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** BI 836880 drives name (in unknown): target-mediated drug disposition.
+
+**Model:** No model was generated from this record.
+
+> BI 836880 plasma concentrations (from a sequential PopPK model) drive a TMDD-type PD model of free and total Ang-2 in patients with solid tumors, in which the drug binds/eliminates Ang-2 (inhibition of free Ang-2), while total Ang-2 rises dose-dependently, likely from prolonged target half-life when bound to drug; IOV was included on Ang-2 synthesis. The excerpts give no numeric potency or rate parameters (no IC50/EC50/kin/kout/ke0), only predictions that at 360–720 mg q3w most patients reach &gt;90% free Ang-2 inhibition over the cycle at steady state (e.g., &gt;90% inhibition in 91.4% and 95.6% of patients at 500 and 720 mg q3w).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Keller_2024`
 - **model family:** `tmdd`
 - **driver:** `not_resolved`

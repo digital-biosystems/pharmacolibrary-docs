@@ -23,17 +23,17 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | — (no model) | 0 | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Port_1999_rats with Morris hepatoma M3924A](drugs/drug_floxuridine/Floxuridine_Port1999_rats_with_morris_hepatoma_m3924a.md) | — | — (no model) | 0 | Port R et al., Local disposition kinetics of floxuridi…, Cancer chemotherapy and pha… (1999) | [10.1007/s002800050946](https://doi.org/10.1007/s002800050946) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018](drugs/drug_floxuridine/pd_Yeo_2018_Human_neutrophil_viability.md) | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018](drugs/drug_floxuridine/pd_Yeo_2018_Murine_survival.md) | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018](drugs/drug_floxuridine/pd_Yeo_2018_Sae_regulated_promoter_activity.md) | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018_Human_neutrophil_viability](drugs/drug_floxuridine/pd_Yeo_2018_Human_neutrophil_viability.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018_Murine_survival](drugs/drug_floxuridine/pd_Yeo_2018_Murine_survival.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Yeo_2018_Sae_regulated_promoter_activity](drugs/drug_floxuridine/pd_Yeo_2018_Sae_regulated_promoter_activity.md) | name ← floxuridine · inhibition effect | — | Yeo WS et al., The FDA-approved anti-cancer drugs, str…, Scientific reports (2018) | [10.1038/s41598-018-20617-5](https://doi.org/10.1038/s41598-018-20617-5) |
 
 ## ADME sites
 

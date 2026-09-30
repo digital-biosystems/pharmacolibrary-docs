@@ -31,9 +31,9 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ferguson-Sells_2022_reference](drugs/drug_tadalafil/Tadalafil_FergusonSells2022_reference.md) | 1-compartment (no model) | 2 | Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Ferguson-Sells_2022_reference](drugs/drug_tadalafil/Tadalafil_FergusonSells2022_reference.md) | — | 1-compartment (no model) | 2 | Ferguson-Sells L et al., Population Pharmacokinetics of Tadalafi…, Clinical pharmacokinetics (2022) | [10.1007/s40262-021-01052-8](https://doi.org/10.1007/s40262-021-01052-8) |
 
 ## ADME sites
 

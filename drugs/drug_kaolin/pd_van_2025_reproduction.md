@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Carbendazim drives name (in number of juveniles): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Carbendazim (soil concentration, mg kg−1 dry soil) dose-dependently decreases reproduction (number of juveniles) of Eisenia andrei in kaolin artificial soil, fitted with a three-parameter log-logistic (sigmoid Emax-type) dose-response model; the paper gives an EC50 for reproduction of 1.80 (1.02–2.57) mg kg−1 dry soil in kaolin soil (record lists 2.33 mg kg−1), and no mechanism beyond direct dose-dependent toxicity, no Imax/kin/kout/ke0, is stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `van_2025`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`
@@ -20,17 +30,17 @@ van Hall BG; Meijer S; Pelser AC; van Gestel CAM et al. (2025). Ecotoxicology (L
   ·  DOI: [10.1007/s10646-025-02889-6](https://doi.org/10.1007/s10646-025-02889-6)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| LC50 — Carbendazim (mg kg−1 dry soil) | `Q322` · not captured | 1.50 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row2:col3 |
-| LC50 — Imidacloprid (mg kg−1 dry soil) | `Q322` · not captured | 1.48 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row2:col6 |
-| EC50 – Biomass — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 1.41 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row4:col3 |
-| EC50 – Biomass — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 1.17 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row4:col6 |
-| EC10 – Biomass — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 1.17 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row5:col3 |
-| EC10 – Biomass — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 1.20 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row5:col6 |
-| EC50 - Reproduction — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 2.33 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row6:col3 |
-| EC50 - Reproduction — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 3.20 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row6:col6 |
-| EC10 – Reproduction — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 5.63 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row7:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | LC50 — Carbendazim (mg kg−1 dry soil) | `Q322` · not captured | 1.50 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row2:col3 |
+| PD (effect) | LC50 — Imidacloprid (mg kg−1 dry soil) | `Q322` · not captured | 1.48 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row2:col6 |
+| PD (effect) | EC50 – Biomass — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 1.41 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row4:col3 |
+| PD (effect) | EC50 – Biomass — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 1.17 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row4:col6 |
+| PD (effect) | EC10 – Biomass — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 1.17 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row5:col3 |
+| PD (effect) | EC10 – Biomass — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 1.20 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row5:col6 |
+| PD (effect) | EC50 - Reproduction — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 2.33 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row6:col3 |
+| PD (effect) | EC50 - Reproduction — Imidacloprid (mg kg−1 dry soil) | `Q321` · not captured | 3.20 | mg kg−1 dry soil | not captured | llm_confirmed (not captured) | Tab4:row6:col6 |
+| PD (effect) | EC10 – Reproduction — Carbendazim (mg kg−1 dry soil) | `Q321` · not captured | 5.63 | mg kg−1 dry soil | not captured | llm (not captured) | Tab4:row7:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

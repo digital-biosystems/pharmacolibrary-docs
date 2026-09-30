@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Gemcitabine (concentrations from the PK model of Doi_2017) drives cell cycle (in percentage) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gemcitabine (0.1–5 ng/ml, cell growth EC50 0.19–1.0 ng/ml after 7 days) altered cell cycle distribution in BxPC-3, CFPAC-1, and Panc-1 cells (e.g. S-phase increase in CFPAC-1 and Panc-1, −4% S-phase in BxPC-3 after 72 h at 1–2.5 ng/ml), but the paper does not state a pharmacodynamic model or mechanism for the concentration–cell cycle relationship, and no Imax, IC50, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Blaauboer_2020`
 - **model family:** `unknown`
 - **driver:** `cited_pk`

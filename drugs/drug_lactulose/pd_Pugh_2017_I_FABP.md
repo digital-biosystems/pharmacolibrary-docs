@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glutamine drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model or mechanism for glutamine's effect on I-FABP; it only reports that pre-exercise glutamine doses of 0.25, 0.5 and 0.9 g kg−1 FFM were associated with possible/likely small reductions in plasma I-FABP versus placebo, with post-exercise reductions at 0.5 g kg−1 (ES = 0.46 ± 0.54) and 0.9 g kg−1 (ES = 0.44 ± 0.42) but an unclear effect at 0.25 g kg−1 (ES = 0.02 ± 0.38). No Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pugh_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Flecainide (concentrations from the PK model of Doki_2006) drives Na+ channel block (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Flecainide (mol/L) inhibits peak Na+ current in HEK cells expressing WT or D1790G (DG) mutant Na+ channels, with a direct concentration-dependent block fitted to 1/(1+[drug]/EC50)^n; during repetitive stimulation (use-dependent block, 5 Hz), flecainide blocks DG channels selectively with EC50 of 1.7 mol/L (DG) versus 11.0 mol/L (WT), whereas tonic block EC50 values are 48.2 (DG) and 59.3 mol/L (WT). The paper does not state Imax, kin, kout, ke0, or gamma, and describes no effect-compartment or turnover mechanism.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Abriel_2000`
 - **model family:** `emax`
 - **driver:** `cited_pk`

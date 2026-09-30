@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Amide 6 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The record's 'Caspase-3' response is not modelled pharmacodynamically in the paper: Amide 6 concentrations (µM) were tested against immunoproteasome chymotrypsin-like (β5i, β1i) activities and cell viability, and Caspase-3 (and PARP) expression showed no significant change, so no PD model, mechanism, or potency values for Caspase-3 are given. Reported potency values instead are Ki = 4.39 µM (β5i) and 4.90 µM (β1i) for inhibition of immunoproteasome ChT-L activity, and EC50 = 17.8 µM against MM.1R cells.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ettari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

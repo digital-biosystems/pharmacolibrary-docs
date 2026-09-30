@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** A36 (measured concentrations) drives neuronal survival (in percentage): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> A36 (morpholine) concentration (μM; e.g. 1 μM for 5 days in HD-MSNs) stimulates neuronal survival (percentage), acting as a protein–protein interaction stabilizer of the CAST–calpain-2 complex, which prevents aberrant calpain-2 activation and preserves mitochondrial integrity; the paper does not report Emax, EC50, or other potency or rate parameters for this effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hu_2026`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

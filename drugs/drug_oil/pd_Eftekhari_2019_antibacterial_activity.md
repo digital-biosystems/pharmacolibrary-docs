@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Oliveria decumbens essential oil (measured concentrations) drives name (in mm) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports antibacterial activity of Oliveria decumbens essential oil as disc diffusion inhibition zone diameters (mm) against S. aureus, S. epidermidis and E. coli, with no activity against P. aeruginosa up to 20.4 µg/mL and an MIC against H. pylori of 20.4 µg/mL; no pharmacodynamic model, mechanism, or potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Eftekhari_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

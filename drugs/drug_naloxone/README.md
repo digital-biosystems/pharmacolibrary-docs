@@ -31,16 +31,16 @@ Naloxone has been used off-label for the treatment of neuraxial opioid-induced p
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | parent + metabolite (no model) | 0 | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Gu_2023_reference](drugs/drug_naloxone/Naloxone_Gu2023_reference.md) | — | parent + metabolite (no model) | 0 | Gu M et al., Population pharmacokinetics of buprenor…, Frontiers in pharmacology (2023) | [10.3389/fphar.2023.1089862](https://doi.org/10.3389/fphar.2023.1089862) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yang_2024](drugs/drug_naloxone/pd_Yang_2024_ventilation.md) | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Mu_2024](drugs/drug_naloxone/pd_Mu_2024_unknown.md) | Mu RJ et al., PBPK-PD model for predicting morphine p…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01255-2](https://doi.org/10.1038/s41401-024-01255-2) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Yang_2024_ventilation](drugs/drug_naloxone/pd_Yang_2024_ventilation.md) | name ← naloxone · delayed effect through an effect compartment | — | Yang TE et al., Mechanistic pharmacokinetic-pharmacodyn…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13215](https://doi.org/10.1002/psp4.13215) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | [Mu_2024_unknown](drugs/drug_naloxone/pd_Mu_2024_unknown.md) | analgesia ← morphine and morphine-6-glucuronide · direct Emax (saturable) effect | — | Mu RJ et al., PBPK-PD model for predicting morphine p…, Acta pharmacologica Sinica (2024) | [10.1038/s41401-024-01255-2](https://doi.org/10.1038/s41401-024-01255-2) |
 
 ## ADME sites
 
@@ -54,6 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` substrate | DrugBank actor |
 | absorption | skeletal muscle | <sub>“…5 hours, and an AUC of 16.7-19.0 h\*ng/mL.[L33694] A 0.4 mg intramuscular dose reaches a C…”</sub> | prose |
 | absorption | small intestine | `ABCB1` substrate, `SLCO1A2` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` substrate | DrugBank actor |
 | distribution | blood | `ALB` binder | DrugBank actor |
 | metabolism | liver | `CES1` binder, `CYP2C19` substrate, `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inhibitor/substrate, `UGT1A1` substrate | DrugBank actor |

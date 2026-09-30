@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Dapivirine drives cumulative p24 (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Dapivirine concentrations suppress ex vivo HIV replication measured as cumulative p24 in cervical tissue cultures; the paper describes this as a nonlinear Emax dose–response with inhibitory effect, with DPV concentrations above ~100 ng/mL (&gt;300 nM) needed to suppress 50% or more of HIV growth versus placebo tissue. No Imax, Emax, kin, kout, ke0, or slope (gamma) values are given; note the record lists blood plasma as the driver, but the paper found the significant correlation with cervical tissue DPV (plasma DPV showed no correlation, P = 0.65).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dezzutti_2016`
 - **model family:** `emax`
 - **driver:** `not_resolved`

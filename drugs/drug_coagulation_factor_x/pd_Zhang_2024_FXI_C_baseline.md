@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Frunexian (measured concentrations) drives FXI clotting activity ratio to baseline (in ratio): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Frunexian plasma concentrations (ng/mL) directly inhibit FXI clotting activity (FXI:C/baseline) via an inhibitory Hill (Emax) equation, consistent with its mechanism as a small-molecule FXIa inhibitor; the paper reports an EC50 of 1300 ng/mL for the FXI:C/baseline model (baseline fixed to 1), while the record lists EC50 = 34.6 ng/mL and Emax = 0; no Emax, gamma, kin, kout, or ke0 values for this endpoint are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhang_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Zhang JY; Ruan ZR; Jiang B; Yang DD; Wang JY; Hu Y; Wang YR; Wang YM; Lin YF; Wa
   ·  DOI: [10.1111/cts.13787](https://doi.org/10.1111/cts.13787)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| BSLN — Model for aPTT/baseline | `Q100` · not captured | 1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col1 |
-| BSLN — Model for aPTT/baseline | `Q100` · not captured | 0 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col2 |
-| BSLN — Model for FXI:C/baseline | `Q100` · not captured | 1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col3 |
-| BSLN — Model for FXI:C/baseline | `Q100` · not captured | 0 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col4 |
-| E max — Model for aPTT/baseline | `Q320` · not captured | 8.4 | RSE% | not captured | space_fold (not captured) | cts13787-tbl-0003:row3:col2 |
-| E max — Model for FXI:C/baseline | `Q320` · not captured | 0 | RSE% | not captured | space_fold (not captured) | cts13787-tbl-0003:row3:col4 |
-| EC50 (ng/mL) — Model for aPTT/baseline | `Q321` · not captured | 0 | ng/mL | not captured | exact (not captured) | cts13787-tbl-0003:row4:col2 |
-| EC50 (ng/mL) — Model for FXI:C/baseline | `Q321` · not captured | 34.6 | ng/mL | not captured | exact (not captured) | cts13787-tbl-0003:row4:col4 |
-| γ — Model for aPTT/baseline | `Q100` · not captured | 23.2 | not captured | not captured | llm (not captured) | cts13787-tbl-0003:row5:col2 |
-| γ — Model for FXI:C/baseline | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13787-tbl-0003:row5:col4 |
-| Sigmaprop (%) — Model for aPTT/baseline | `Q100` · not captured | 6.1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row6:col1 |
-| Sigmaprop (%) — Model for FXI:C/baseline | `Q100` · not captured | 37.7 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row6:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | BSLN — Model for aPTT/baseline | `Q100` · not captured | 1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col1 |
+| — | BSLN — Model for aPTT/baseline | `Q100` · not captured | 0 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col2 |
+| — | BSLN — Model for FXI:C/baseline | `Q100` · not captured | 1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col3 |
+| — | BSLN — Model for FXI:C/baseline | `Q100` · not captured | 0 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row2:col4 |
+| PD (effect) | E max — Model for aPTT/baseline | `Q320` · not captured | 8.4 | RSE% | not captured | space_fold (not captured) | cts13787-tbl-0003:row3:col2 |
+| PD (effect) | E max — Model for FXI:C/baseline | `Q320` · not captured | 0 | RSE% | not captured | space_fold (not captured) | cts13787-tbl-0003:row3:col4 |
+| PD (effect) | EC50 (ng/mL) — Model for aPTT/baseline | `Q321` · not captured | 0 | ng/mL | not captured | exact (not captured) | cts13787-tbl-0003:row4:col2 |
+| PD (effect) | EC50 (ng/mL) — Model for FXI:C/baseline | `Q321` · not captured | 34.6 | ng/mL | not captured | exact (not captured) | cts13787-tbl-0003:row4:col4 |
+| — | γ — Model for aPTT/baseline | `Q100` · not captured | 23.2 | not captured | not captured | llm (not captured) | cts13787-tbl-0003:row5:col2 |
+| — | γ — Model for FXI:C/baseline | `Q100` · not captured | 0 | not captured | not captured | llm (not captured) | cts13787-tbl-0003:row5:col4 |
+| — | Sigmaprop (%) — Model for aPTT/baseline | `Q100` · not captured | 6.1 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row6:col1 |
+| — | Sigmaprop (%) — Model for FXI:C/baseline | `Q100` · not captured | 37.7 | RSE% | not captured | llm (not captured) | cts13787-tbl-0003:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

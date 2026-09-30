@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glycyrrhizic acid derivatives (Compounds 3, 6, 11, 21) (measured concentrations) drive name (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Glycyrrhizic acid derivatives (Compounds 3, 6, 11, 21) at μM concentrations concentration-dependently inhibit DENV2 infectivity (% NS4B-positive cells) in Vero E6 and A549 cells, reducing viral protein expression; the paper does not state a specific PD mechanism model (e.g., Emax/kin-kout parameters). Reported IC50 values against DENV2 infectivity in Vero E6 cells were 0.17–0.50 µM for Compound 3, 6.0 µM for Compound 6, 0.2 µM for Compound 11, and 2.7 µM for Compound 21, versus 8.1 µM for GL; CC50 exceeded 100 µM.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hour_2022`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

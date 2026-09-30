@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prednisolone (concentrations from this paper's PK model) drives T-lymphocyte cell counts (in unknown): indirect response — drug inhibits the production of T-lymphocyte cell counts.
+
+**Model:** No model was generated from this record.
+
+> Prednisolone (formed from oral prednisone 0.27 mg kg−1) was modeled as inhibiting lymphocyte cell trafficking via a precursor-dependent indirect response model with a first-order periodic influx rate for lymphocyte trafficking, accounting for rebound and circadian rhythm; the excerpts do not state potency (IC50/Imax) or rate parameter values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Magee_2002`
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`

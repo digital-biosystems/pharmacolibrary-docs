@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** GADIVA (measured concentrations) drives Superoxide anion radical scavenging (in mg/mL) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Gelatin hydrolysate fractions (STB-GH and its subfractions) inhibit the DPPH radical in a concentration-dependent manner, with potency reported as EC50 values (mg protein/mL): STB-GH 3.28, STB-GH-I 1.84, GH-I-1 8.73, GH-I-3 1.32, GH-I-3B 1.08, GH-I-3B2 0.87, and GH-I-3B3 5.74; the paper does not state a pharmacodynamic mechanism or model beyond these EC50 values.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Yang_2019`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Yang XR; Zhao YQ; Qiu YT; Chi CF; Wang B et al. (2019). Marine drugs 17
   ·  DOI: [10.3390/md17020078](https://doi.org/10.3390/md17020078)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| EC50 Value(mg protein/mL) — STB-GH | `Q321` · not captured | 3.28 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col2 |
-| EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 1.84 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col3 |
-| EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 4.36 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col4 |
-| EC50 Value(mg protein/mL) — GH-I-1 | `Q321` · not captured | 8.73 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col6 |
-| EC50 Value(mg protein/mL) — STB-GH | `Q321` · not captured | 3.47 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col2 |
-| EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 1.32 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col3 |
-| EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 3.41 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col4 |
-| EC50 Value(mg protein/mL) — STB-GH-III | `Q321` · not captured | 3.69 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col5 |
-| EC50 Value(mg protein/mL) — GH-I-1 | `Q321` · not captured | 1.08 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col6 |
-| EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 2.68 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col3 |
-| EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 0.87 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col4 |
-| EC50 Value(mg protein/mL) — STB-GH-III | `Q321` · not captured | 5.74 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col5 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH | `Q321` · not captured | 3.28 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col2 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 1.84 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col3 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 4.36 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col4 |
+| PD (effect) | EC50 Value(mg protein/mL) — GH-I-1 | `Q321` · not captured | 8.73 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row0:col6 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH | `Q321` · not captured | 3.47 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col2 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 1.32 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col3 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 3.41 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col4 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-III | `Q321` · not captured | 3.69 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col5 |
+| PD (effect) | EC50 Value(mg protein/mL) — GH-I-1 | `Q321` · not captured | 1.08 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row2:col6 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-I | `Q321` · not captured | 2.68 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col3 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-II | `Q321` · not captured | 0.87 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col4 |
+| PD (effect) | EC50 Value(mg protein/mL) — STB-GH-III | `Q321` · not captured | 5.74 | mg protein/mL | not captured | llm_confirmed (not captured) | marinedrugs-17-00078-t002:row4:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** KR-12-NH2 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for the microscopic score; KR-12-NH2 (and C3-KR-12-NH2) administration in the AOM/DSS colitis-associated colorectal cancer model lowered the microscopic score versus AOM/DSS-only (p = 0.005 and p = 0.01, respectively), an effect attributed to suppression of inflammatory cytokines (IL-6, TNF-α), but no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values are given for this response.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Włodarczyk_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Prodrugs 1-8 (measured concentrations) drives cellular uptake (in %) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Concentrations (5–400 μM) of levothyroxine (T4) and prodrugs 1–8 were incubated with human U-87MG glioma cells (expressing OATP1C1) and mouse primary astrocytes, and cellular uptake (%) was measured after 30 min; uptake followed Michaelis–Menten (saturable) kinetics via OATP1C1-mediated transport, with Km and Vmax reported for each compound (e.g. T4 in U-87MG cells: Km 111 μM, Vmax 8.86 nmol/min/mg; prodrug 8: Km 221 μM, Vmax 21.5 nmol/min/mg), while naproxen prodrugs 5 and 6 showed linear uptake with no calculable Michaelis–Menten parameters.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Tonduru_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -21,36 +31,36 @@ Tonduru AK; Maljaei SH; Adla SK; Anamea L; Tampio J; Králová A; Jalkanen AJ; E
   ·  DOI: [10.1021/acs.jmedchem.3c01026](https://doi.org/10.1021/acs.jmedchem.3c01026)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Km (μM) — PD2 | `Q1` · not captured | 118 | μM | not captured | exact (not captured) | tbl3:row0:col4 |
-| Km (μM) — PD3 | `Q1` · not captured | 539 | μM | not captured | exact (not captured) | tbl3:row0:col5 |
-| Km (μM) — PD4 | `Q1` · not captured | 106 | μM | not captured | exact (not captured) | tbl3:row0:col6 |
-| Km (μM) — PD5 | `Q1` · not captured | 138 | μM | not captured | exact (not captured) | tbl3:row0:col7 |
-| Km (μM) — PD6 | `Q1` · not captured | 138 | μM | not captured | exact (not captured) | tbl3:row0:col8 |
-| Km (μM) — PD7 | `Q1` · not captured | 381 | μM | not captured | exact (not captured) | tbl3:row0:col9 |
-| Km (μM) — PD8 | `Q1` · not captured | 221 | μM | not captured | exact (not captured) | tbl3:row0:col10 |
-| Km (μM) — l-thyroxine, T | `Q1` · not captured | 111 | μM | not captured | exact (not captured) | tbl3:row0:col11 |
-| Km (μM) — PD2 | `Q1` · not captured | 123 | μM | not captured | exact (not captured) | tbl3:row1:col4 |
-| Km (μM) — PD3 | `Q1` · not captured | 685 | μM | not captured | exact (not captured) | tbl3:row1:col5 |
-| Km (μM) — PD4 | `Q1` · not captured | 86 | μM | not captured | exact (not captured) | tbl3:row1:col6 |
-| Km (μM) — PD7 | `Q1` · not captured | 360 | μM | not captured | exact (not captured) | tbl3:row1:col9 |
-| Km (μM) — PD8 | `Q1` · not captured | 58 | μM | not captured | exact (not captured) | tbl3:row1:col10 |
-| Km (μM) — l-thyroxine, T | `Q1` · not captured | 1248 | μM | not captured | exact (not captured) | tbl3:row1:col11 |
-| Vmax (nmol/min/mg) — PD2 | `Q66` · not captured | 13.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col4 |
-| Vmax (nmol/min/mg) — PD3 | `Q66` · not captured | 9.9 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col5 |
-| Vmax (nmol/min/mg) — PD4 | `Q66` · not captured | 9.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col6 |
-| Vmax (nmol/min/mg) — PD5 | `Q66` · not captured | 9.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col7 |
-| Vmax (nmol/min/mg) — PD6 | `Q66` · not captured | 13.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col8 |
-| Vmax (nmol/min/mg) — PD7 | `Q66` · not captured | 19.8 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col9 |
-| Vmax (nmol/min/mg) — PD8 | `Q66` · not captured | 21.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col10 |
-| Vmax (nmol/min/mg) — l-thyroxine, T | `Q66` · not captured | 8.86 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col11 |
-| Vmax (nmol/min/mg) — PD2 | `Q66` · not captured | 5.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col4 |
-| Vmax (nmol/min/mg) — PD3 | `Q66` · not captured | 13.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col5 |
-| Vmax (nmol/min/mg) — PD4 | `Q66` · not captured | 5.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col6 |
-| Vmax (nmol/min/mg) — PD7 | `Q66` · not captured | 10.3 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col9 |
-| Vmax (nmol/min/mg) — PD8 | `Q66` · not captured | 3.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col10 |
-| Vmax (nmol/min/mg) — l-thyroxine, T | `Q66` · not captured | 9.7 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col11 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Km (μM) — PD2 | `Q1` · not captured | 118 | μM | not captured | exact (not captured) | tbl3:row0:col4 |
+| PK (driver) | Km (μM) — PD3 | `Q1` · not captured | 539 | μM | not captured | exact (not captured) | tbl3:row0:col5 |
+| PK (driver) | Km (μM) — PD4 | `Q1` · not captured | 106 | μM | not captured | exact (not captured) | tbl3:row0:col6 |
+| PK (driver) | Km (μM) — PD5 | `Q1` · not captured | 138 | μM | not captured | exact (not captured) | tbl3:row0:col7 |
+| PK (driver) | Km (μM) — PD6 | `Q1` · not captured | 138 | μM | not captured | exact (not captured) | tbl3:row0:col8 |
+| PK (driver) | Km (μM) — PD7 | `Q1` · not captured | 381 | μM | not captured | exact (not captured) | tbl3:row0:col9 |
+| PK (driver) | Km (μM) — PD8 | `Q1` · not captured | 221 | μM | not captured | exact (not captured) | tbl3:row0:col10 |
+| PK (driver) | Km (μM) — l-thyroxine, T | `Q1` · not captured | 111 | μM | not captured | exact (not captured) | tbl3:row0:col11 |
+| PK (driver) | Km (μM) — PD2 | `Q1` · not captured | 123 | μM | not captured | exact (not captured) | tbl3:row1:col4 |
+| PK (driver) | Km (μM) — PD3 | `Q1` · not captured | 685 | μM | not captured | exact (not captured) | tbl3:row1:col5 |
+| PK (driver) | Km (μM) — PD4 | `Q1` · not captured | 86 | μM | not captured | exact (not captured) | tbl3:row1:col6 |
+| PK (driver) | Km (μM) — PD7 | `Q1` · not captured | 360 | μM | not captured | exact (not captured) | tbl3:row1:col9 |
+| PK (driver) | Km (μM) — PD8 | `Q1` · not captured | 58 | μM | not captured | exact (not captured) | tbl3:row1:col10 |
+| PK (driver) | Km (μM) — l-thyroxine, T | `Q1` · not captured | 1248 | μM | not captured | exact (not captured) | tbl3:row1:col11 |
+| PK (driver) | Vmax (nmol/min/mg) — PD2 | `Q66` · not captured | 13.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col4 |
+| PK (driver) | Vmax (nmol/min/mg) — PD3 | `Q66` · not captured | 9.9 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col5 |
+| PK (driver) | Vmax (nmol/min/mg) — PD4 | `Q66` · not captured | 9.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col6 |
+| PK (driver) | Vmax (nmol/min/mg) — PD5 | `Q66` · not captured | 9.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col7 |
+| PK (driver) | Vmax (nmol/min/mg) — PD6 | `Q66` · not captured | 13.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col8 |
+| PK (driver) | Vmax (nmol/min/mg) — PD7 | `Q66` · not captured | 19.8 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col9 |
+| PK (driver) | Vmax (nmol/min/mg) — PD8 | `Q66` · not captured | 21.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col10 |
+| PK (driver) | Vmax (nmol/min/mg) — l-thyroxine, T | `Q66` · not captured | 8.86 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row2:col11 |
+| PK (driver) | Vmax (nmol/min/mg) — PD2 | `Q66` · not captured | 5.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col4 |
+| PK (driver) | Vmax (nmol/min/mg) — PD3 | `Q66` · not captured | 13.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col5 |
+| PK (driver) | Vmax (nmol/min/mg) — PD4 | `Q66` · not captured | 5.5 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col6 |
+| PK (driver) | Vmax (nmol/min/mg) — PD7 | `Q66` · not captured | 10.3 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col9 |
+| PK (driver) | Vmax (nmol/min/mg) — PD8 | `Q66` · not captured | 3.0 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col10 |
+| PK (driver) | Vmax (nmol/min/mg) — l-thyroxine, T | `Q66` · not captured | 9.7 | nmol/min/mg | not captured | special_case (not captured) | tbl3:row3:col11 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

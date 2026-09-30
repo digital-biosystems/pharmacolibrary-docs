@@ -26,11 +26,11 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026](drugs/drug_magnesium_carbonate/pd_Kemal_2026_any_grade_drug_related_adverse_events.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026](drugs/drug_magnesium_carbonate/pd_Kemal_2026_any_grade_hypertension_events.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026](drugs/drug_magnesium_carbonate/pd_Kemal_2026_best_overall_response.md) | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026_any_grade_drug_related_adverse_events](drugs/drug_magnesium_carbonate/pd_Kemal_2026_any_grade_drug_related_adverse_events.md) | name ← nemtabrutinib · categorical (graded) response model | — | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026_any_grade_hypertension_events](drugs/drug_magnesium_carbonate/pd_Kemal_2026_any_grade_hypertension_events.md) | name ← nemtabrutinib · categorical (graded) response model | — | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Kemal_2026_best_overall_response](drugs/drug_magnesium_carbonate/pd_Kemal_2026_best_overall_response.md) | name ← nemtabrutinib · categorical (graded) response model | — | Kemal CC et al., Population Pharmacokinetic Modeling and…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70257](https://doi.org/10.1002/psp4.70257) |
 
 ## ADME sites
 

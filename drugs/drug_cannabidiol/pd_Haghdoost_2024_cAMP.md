@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-CBE (measured concentrations) drives cAMP accumulation (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> S-CBE (a CBD metabolite) acts as a weak CB1 agonist in the cAMP assay, where it inhibits forskolin-stimulated cAMP accumulation via Gi-mediated signaling, with EC50 = 3.72 µM (1.23 µg/mL) and ~60% Emax relative to CP55940 (EC50 0.3 nM) at the maximum tested concentration of 12 µM; no antagonist or β-arrestin agonist activity was observed.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Haghdoost_2024`
 - **model family:** `emax`
 - **driver:** `conc_no_pk`

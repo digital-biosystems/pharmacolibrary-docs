@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 03:28 | 10:48 | 0/0/0 | 0/0/0 | 0/0/0 | 52,352/3,082 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
+| 2026-09-29 13:51 | 2:16 | 0/0/0 | 0/0/0 | 0/0/0 | 1,852/218 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
 
 ## popPK records
 
@@ -59,7 +59,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Roch-Ramel_1997.pdf` | Roch-Ramel F et al., Effects of uricosuric and antiuricosuri…, The Journal of pharmacology… (1997) | pd | 4 | not captured | [9023298](https://www.ncbi.nlm.nih.gov/pubmed/9023298) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-28T03:26:49.939459+00:00</sub>
+<sub>queue written 2026-09-29T13:51:37.996152+00:00</sub>
 
 ## Screened and excluded
 

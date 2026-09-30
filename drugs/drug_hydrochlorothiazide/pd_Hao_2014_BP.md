@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Telmisartan drives blood pressure (in mmHg): indirect response — drug inhibits the production of blood pressure.
+
+**Model:** No model was generated from this record.
+
+> In hypertensive rats, plasma telmisartan and hydrochlorothiazide concentrations (one-compartment absorption PK) were linked to the blood pressure response (mmHg) with a noncompetitive indirect response model in which the two drugs act noncompetitively on different system factors (Kin or Kout); the paper does not state numeric PD parameters (Imax, IC50, kin, kout) in the excerpts. Observed maximum BP decreases were 9 mmHg (2 mg/kg telmisartan), 4 mmHg (7.5 mg/kg HCTZ), 16 mmHg (combination), 23 mmHg (8 mg/kg telmisartan), 12 mmHg (30 mg/kg HCTZ) and 44 mmHg (high-dose combination), with Tmax around 6–6.67 h.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Hao_2014`
 - **model family:** `indirect_response_i`
 - **driver:** `not_resolved`
@@ -21,16 +31,16 @@ Hao K; Chen Y; Zhao X; Liu X et al. (2014). The Journal of pharmacy and pharmaco
   ·  DOI: [10.1111/jphp.12230](https://doi.org/10.1111/jphp.12230)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Tmax (h) — TEL (2 mg/kg) + | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col1 |
-| Tmax (h) — TEL | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col2 |
-| Tmax (h) — HCTZ | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col3 |
-| Tmax (h) — TEL (8 mg/kg) + | `Q56` · not captured | 6.67 | h | not captured | exact (not captured) | tab_1:row3:col4 |
-| Tmax (h) — TEL | `Q56` · not captured | 6.33 | h | not captured | exact (not captured) | tab_1:row3:col5 |
-| Tmax (h) — HCTZ | `Q56` · not captured | 6.33 | h | not captured | exact (not captured) | tab_1:row3:col6 |
-| △Cmax (mmHg) — TEL (2 mg/kg) + | `Q32` · not captured | 16 | mmHg | not captured | llm_confirmed (not captured) | tab_1:row4:col1 |
-| △Cmax (mmHg) — TEL (8 mg/kg) + | `Q32` · not captured | 44 | mmHg | not captured | llm_confirmed (not captured) | tab_1:row4:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Tmax (h) — TEL (2 mg/kg) + | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col1 |
+| PK (driver) | Tmax (h) — TEL | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col2 |
+| PK (driver) | Tmax (h) — HCTZ | `Q56` · not captured | 6.00 | h | not captured | exact (not captured) | tab_1:row3:col3 |
+| PK (driver) | Tmax (h) — TEL (8 mg/kg) + | `Q56` · not captured | 6.67 | h | not captured | exact (not captured) | tab_1:row3:col4 |
+| PK (driver) | Tmax (h) — TEL | `Q56` · not captured | 6.33 | h | not captured | exact (not captured) | tab_1:row3:col5 |
+| PK (driver) | Tmax (h) — HCTZ | `Q56` · not captured | 6.33 | h | not captured | exact (not captured) | tab_1:row3:col6 |
+| PK (driver) | △Cmax (mmHg) — TEL (2 mg/kg) + | `Q32` · not captured | 16 | mmHg | not captured | llm_confirmed (not captured) | tab_1:row4:col1 |
+| PK (driver) | △Cmax (mmHg) — TEL (8 mg/kg) + | `Q32` · not captured | 44 | mmHg | not captured | llm_confirmed (not captured) | tab_1:row4:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

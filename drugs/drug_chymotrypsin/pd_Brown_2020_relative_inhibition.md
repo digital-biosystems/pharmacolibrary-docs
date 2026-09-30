@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Unknown drives name (in percent) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> In a FRET-biosensor assay, test compounds inhibit the cleavage of the eCFP-Venus biosensor by SARS-CoV-2 3CLpro (chymotrypsin-like cysteine protease), measured as percent inhibition at a 4 h endpoint; the top 20 hits showed sub-micromolar potency with EC50 values of 27–990 nM (ebselen 27 nM, PD 404,182 81 nM, 4-chloromercuribenzoic acid 85 nM). The paper does not state a quantitative pharmacodynamic model (no Imax, Emax, kin, kout or ke0), and mechanisms are only proposed qualitatively, e.g. thiol reactivity of ebselen and possible cysteine binding by PD 404,182.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Brown_2020`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

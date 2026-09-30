@@ -13,11 +13,17 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** No model was generated from this record.
+
 ### Reviewer guidance
+
+**Vincamine record lacks volume and clearance, and Cmax units are dimensionally inconsistent with concentration.**
+
+The record contains no distribution volume or clearance parameters, indicating it is not a compartmental population PK model. The Cmax value of 155 is reported in micrograms, which is a mass unit rather than a concentration unit. Additionally, the record was built from the abstract alone, so summary statistics stand in for a fitted model. Extracted — vincamine: tmax 1.4 h-1, Cmax 155 micrograms, AUC 443 micrograms.
 
 Independently confirmed by `gpt-oss:120b`.
 
-> ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
+<sub>reviewed by qwen3.8:27b-mtp-q8_0</sub>
 
 ## Citation
 Millart H; Lamiable D; Houin G; Plat M; Choisy H; Tillement JP et al. (1983). International journal of clinical pharmacology, therapy, and toxicology 21

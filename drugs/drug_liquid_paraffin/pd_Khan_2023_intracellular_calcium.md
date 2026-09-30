@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** NKS-3 (measured concentrations) drives name (in F340/F380 ratio) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper reports that NKS-3 (a CD36 agonist) stimulates intracellular calcium signaling (F340/F380 ratio) in mouse and human taste bud cells, but it does not state a quantitative PD model or mechanism (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values are given for this response); the only potency information is that NKS-3 at 50 μmol/L elicited gustatory attraction in mice, suggested to be about 142 times more potent than a natural long-chain fatty acid.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Khan_2023`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,16 +30,16 @@ Khan AS; Hichami A; Murtaza B; Louillat-Habermeyer ML; Ramseyer C; Azadi M; Yesy
   ·  DOI: [10.1016/j.jcmgh.2022.11.003](https://doi.org/10.1016/j.jcmgh.2022.11.003)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Clearance (L/h) — Estimation mean | `Q22` · not captured | 0.202 | L/h | not captured | exact (not captured) | tbl17:row1:col1 |
-| Clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q22` · not captured | 44.1 | L/h | not captured | exact (not captured) | tbl17:row1:col2 |
-| Volume of central compartment (L) — Estimation mean | `Q63` · not captured | 0.0634 | L | not captured | llm_corrected (not captured) | tbl17:row2:col1 |
-| Intercompartmental clearance (L/h) — Estimation mean | `Q30` · not captured | 0.739 | L/h | not captured | exact (not captured) | tbl17:row3:col1 |
-| Intercompartmental clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q30` · not captured | 66.7 | L/h | not captured | exact (not captured) | tbl17:row3:col2 |
-| Volume of peripheral compartment (L) — Estimation mean | `Q64` · not captured | 2.24 | L | not captured | llm_corrected (not captured) | tbl17:row4:col1 |
-| Volume of peripheral compartment (L) — Interindividual variability (coefficient of variation, %) | `Q64` · not captured | 24.8 | L | not captured | llm_corrected (not captured) | tbl17:row4:col2 |
-| Proportional residual error (%) — Estimation mean | `Q316` · not captured | 1.89 | not captured | not captured | exact (not captured) | tbl17:row5:col1 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | Clearance (L/h) — Estimation mean | `Q22` · not captured | 0.202 | L/h | not captured | exact (not captured) | tbl17:row1:col1 |
+| PK (driver) | Clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q22` · not captured | 44.1 | L/h | not captured | exact (not captured) | tbl17:row1:col2 |
+| PK (driver) | Volume of central compartment (L) — Estimation mean | `Q63` · not captured | 0.0634 | L | not captured | llm_corrected (not captured) | tbl17:row2:col1 |
+| PK (driver) | Intercompartmental clearance (L/h) — Estimation mean | `Q30` · not captured | 0.739 | L/h | not captured | exact (not captured) | tbl17:row3:col1 |
+| PK (driver) | Intercompartmental clearance (L/h) — Interindividual variability (coefficient of variation, %) | `Q30` · not captured | 66.7 | L/h | not captured | exact (not captured) | tbl17:row3:col2 |
+| PK (driver) | Volume of peripheral compartment (L) — Estimation mean | `Q64` · not captured | 2.24 | L | not captured | llm_corrected (not captured) | tbl17:row4:col1 |
+| PK (driver) | Volume of peripheral compartment (L) — Interindividual variability (coefficient of variation, %) | `Q64` · not captured | 24.8 | L | not captured | llm_corrected (not captured) | tbl17:row4:col2 |
+| variability | Proportional residual error (%) — Estimation mean | `Q316` · not captured | 1.89 | not captured | not captured | exact (not captured) | tbl17:row5:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

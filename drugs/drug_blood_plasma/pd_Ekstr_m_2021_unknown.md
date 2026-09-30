@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** C-reactive protein (measured concentrations) drives odor identification score (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Baseline blood plasma C-reactive protein (mg/L) was linearly associated with lower odor identification scores (0–16, Sniffin' Sticks) in a negative dose–response relationship; CRP 11–20 mg/L gave β = −0.811 (95% CI −1.503 to −0.118, p = .022), with lower scores also at CRP &gt;20 mg/L. The paper reports an association via linear mixed models and does not describe a pharmacodynamic mechanism (no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Ekström_2021`
 - **model family:** `linear`
 - **driver:** `conc_no_pk`

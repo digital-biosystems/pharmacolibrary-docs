@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DDABT1 (measured concentrations) drives name (in relative intensity) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> DDABT1 (ester conjugate of telmisartan and salicylic acid) concentrations (10–100 μM) inhibit CHIKV viral protein (E2, relative intensity) and viral RNA levels in Vero cells post-treatment; the paper does not state a PD model or mechanism beyond indicating DDABT1 predominantly interferes with early stages of infection (with some late-stage effects), possibly partly via modulation of the AT1 receptor. Potency: IC50 14.53 μM (abstract), and 21.07 μM (MOI 0.1) and 14.59 μM (MOI 0.01) for virus yield; CC50 &gt;700 μM (SI &gt;33). No Imax, Emax, kin, kout, ke0, or gamma values are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dash_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

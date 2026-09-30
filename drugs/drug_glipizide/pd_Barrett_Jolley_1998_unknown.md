@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Levcromakalim (measured concentrations) drives whole-cell chord conductance (in mS/cm^2): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Glipizide is one of the classical sulphonylurea inhibitors tested against the whole-cell chord conductance (mS/cm^2) of rat skeletal muscle K ATP channels that had been activated by levcromakalim (100 µM); it antagonizes the levcromakalim-induced current back toward baseline, i.e. it inhibits the opener-stimulated conductance rather than acting on a basal response. The excerpts do not report a specific IC50 for glipizide (only glibenclamide's ~5 nM IC50 is given), and no Emax, kin, kout, ke0 or Hill coefficient values are stated.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Barrett-Jolley_1998`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

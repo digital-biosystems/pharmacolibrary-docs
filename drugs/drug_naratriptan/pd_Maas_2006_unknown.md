@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sumatriptan drives headache intensity score (in 4-point scale): categorical (graded) response model.
+
+**Model:** No model was generated from this record.
+
+> Plasma triptan concentration (sumatriptan or naratriptan) acts as a time-varying covariate in a three-state hidden Markov model of the 4-point headache intensity score, increasing the forward (pain-resolving) transition rates via an Emax function r(t)=r(0)·(1+Emax·C/(EC50+C)) per transition, while backward transitions are drug-unaffected; naratriptan was about three times more potent than sumatriptan in shortening these transitions, with specific Emax and EC50 values given in Table 2 (not shown in the excerpts).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Maas_2006`
 - **model family:** `categorical`
 - **driver:** `not_resolved`

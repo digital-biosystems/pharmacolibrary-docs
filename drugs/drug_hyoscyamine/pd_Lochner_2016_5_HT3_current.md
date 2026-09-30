@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Scopolamine (measured concentrations) drives 5-HT3 receptor current (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Scopolamine (recorded driver; the record's 'drug' field hyoscyamine is not the compound tested in the excerpts) concentration-dependently and competitively inhibits 5-HT3A receptor-mediated peak currents (response to 2 μM 5-HT) in Xenopus oocytes, with IC50 = 2.09 μM (pIC50 5.68 ± 0.05, Hill slope 1.06 ± 0.05), Schild pA2 = 5.02, and kinetic rates kon = 2.60 × 10^4 M−1 s−1 and koff = 0.32 s−1 giving Kd = 12.3 μM; the record's EC50 values (2.24–43.6 μM) are the 5-HT EC50 shifts at increasing scopolamine concentrations, consistent with competitive antagonism rather than a direct Emax effect.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Lochner_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
@@ -20,20 +30,20 @@ Lochner M; Thompson AJ et al. (2016). Neuropharmacology 108
   ·  DOI: [10.1016/j.neuropharm.2016.04.027](https://doi.org/10.1016/j.neuropharm.2016.04.027)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Control — pEC50 | `Q321` · not captured | 5.65 | μM | not captured | llm (not captured) | tbl1:row1:col1 |
-| Control — EC50 (μM) | `Q321` · not captured | 2.24 | μM | not captured | llm (not captured) | tbl1:row1:col2 |
-| 10 — pEC50 | `Q321` · not captured | 5.49 | μM | not captured | llm (not captured) | tbl1:row2:col1 |
-| 10 — EC50 (μM) | `Q321` · not captured | 3.23 | μM | not captured | llm (not captured) | tbl1:row2:col2 |
-| 30 — pEC50 | `Q321` · not captured | 5.15 | μM | not captured | llm (not captured) | tbl1:row3:col1 |
-| 30 — EC50 (μM) | `Q321` · not captured | 7.08 | μM | not captured | llm (not captured) | tbl1:row3:col2 |
-| 60 — pEC50 | `Q321` · not captured | 4.87 | μM | not captured | llm (not captured) | tbl1:row4:col1 |
-| 60 — EC50 (μM) | `Q321` · not captured | 13.5 | μM | not captured | llm (not captured) | tbl1:row4:col2 |
-| 100 — pEC50 | `Q321` · not captured | 4.84 | μM | not captured | llm (not captured) | tbl1:row5:col1 |
-| 100 — EC50 (μM) | `Q321` · not captured | 14.4 | μM | not captured | llm (not captured) | tbl1:row5:col2 |
-| 300 — pEC50 | `Q321` · not captured | 4.36 | μM | not captured | llm (not captured) | tbl1:row6:col1 |
-| 300 — EC50 (μM) | `Q321` · not captured | 43.6 | μM | not captured | llm (not captured) | tbl1:row6:col2 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Control — pEC50 | `Q321` · not captured | 5.65 | μM | not captured | llm (not captured) | tbl1:row1:col1 |
+| PD (effect) | Control — EC50 (μM) | `Q321` · not captured | 2.24 | μM | not captured | llm (not captured) | tbl1:row1:col2 |
+| PD (effect) | 10 — pEC50 | `Q321` · not captured | 5.49 | μM | not captured | llm (not captured) | tbl1:row2:col1 |
+| PD (effect) | 10 — EC50 (μM) | `Q321` · not captured | 3.23 | μM | not captured | llm (not captured) | tbl1:row2:col2 |
+| PD (effect) | 30 — pEC50 | `Q321` · not captured | 5.15 | μM | not captured | llm (not captured) | tbl1:row3:col1 |
+| PD (effect) | 30 — EC50 (μM) | `Q321` · not captured | 7.08 | μM | not captured | llm (not captured) | tbl1:row3:col2 |
+| PD (effect) | 60 — pEC50 | `Q321` · not captured | 4.87 | μM | not captured | llm (not captured) | tbl1:row4:col1 |
+| PD (effect) | 60 — EC50 (μM) | `Q321` · not captured | 13.5 | μM | not captured | llm (not captured) | tbl1:row4:col2 |
+| PD (effect) | 100 — pEC50 | `Q321` · not captured | 4.84 | μM | not captured | llm (not captured) | tbl1:row5:col1 |
+| PD (effect) | 100 — EC50 (μM) | `Q321` · not captured | 14.4 | μM | not captured | llm (not captured) | tbl1:row5:col2 |
+| PD (effect) | 300 — pEC50 | `Q321` · not captured | 4.36 | μM | not captured | llm (not captured) | tbl1:row6:col1 |
+| PD (effect) | 300 — EC50 (μM) | `Q321` · not captured | 43.6 | μM | not captured | llm (not captured) | tbl1:row6:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

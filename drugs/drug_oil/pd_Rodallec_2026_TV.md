@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paclitaxel (measured concentrations) drives tumor volume (in mm3): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Free paclitaxel concentration (µg/mL) from the PK model drives a Simeoni-type PD model of tumor volume (mm3), in which Ptx damages tumor cells that pass through three transit compartments and are eliminated from the tumor volume upon reaching the last compartment; the killing effect was refined with a sigmoid Emax function plus a resistance model giving greater efficacy for the first treatment (Emax1) than subsequent treatments (Emax2). The paper does not state numerical values for Emax1, Emax2, EC50, or the transit rate in the excerpts provided.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Rodallec_2026`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

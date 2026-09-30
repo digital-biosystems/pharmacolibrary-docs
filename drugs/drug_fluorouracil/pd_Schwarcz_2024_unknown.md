@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Doxorubicin drives cell proliferation (in unknown): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a PD model for fluorouracil (it is only mentioned in the discussion as an antimetabolite); the model actually described is doxorubicin inhibiting 4T1 breast cancer cell proliferation (MTT assay after 48 h), fitted with a four-parameter inhibitory sigmoid Emax curve to obtain IC50 and Hill slope values, with CAD increasing and IPA decreasing the Hill coefficient and IS not affecting DOX kinetics; no numeric IC50, Emax, or rate constants are given in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Schwarcz_2024`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

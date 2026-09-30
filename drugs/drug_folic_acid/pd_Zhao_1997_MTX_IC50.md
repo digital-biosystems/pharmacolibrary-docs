@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Methotrexate drives methotrexate IC50 (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking folic acid to a methotrexate IC50 response; it characterizes MTX membrane transport in L1210 cells (e.g., steady-state intracellular MTX approaching 8.8 and 41.4 µM in L1210 and MTXr A-R16 cells, influx ~9-fold higher and efflux rate constant 0.64 vs 0.13 min−1 in MTXr A-R16), but no Imax, IC50, EC50, Emax, kin, kout, ke0, or gamma values for such a model are given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zhao_1997`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

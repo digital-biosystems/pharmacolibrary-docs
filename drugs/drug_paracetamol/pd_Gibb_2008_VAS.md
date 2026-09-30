@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Paracetamol (concentrations from the PK model of Allegaert_2015) drives pain relief (in 0-10): direct sigmoid Emax (Hill) effect.
+
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
+> Paracetamol plasma concentrations (mg/l) drive pain relief measured on a 0–10 VAS via a sigmoid Emax (inhibitory) relationship, with Emax 10 VAS units, EC50 9.98 mg/l and Hill coefficient 1. The paper does not state a fitted mechanism for this specific model, but discusses that paracetamol's central cyclooxygenase-mediated effect on prostaglandin synthesis could suit an indirect-response (turnover) model, and describes effect-compartment equilibration half-times (Teq) increasing with size (predicted 0.9 h in neonates to 1.93 h in adults).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gibb_2008`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
@@ -21,11 +31,11 @@ Gibb IA; Anderson BJ et al. (2008). Archives of disease in childhood 93
   ·  DOI: [10.1136/adc.2007.126896](https://doi.org/10.1136/adc.2007.126896)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| Emax | `Q320` · not captured | 10 | VAS of 0-10 | not captured | review_gapfill (not captured) | Gibb_2008:review |
-| EC 50 | `Q321` · not captured | 9.98 | mg/l | not captured | review_gapfill (not captured) | Gibb_2008:review |
-| Hill coefficient | `Q325` · not captured | 1 | dimensionless | not captured | review_gapfill (not captured) | Gibb_2008:review |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | Emax | `Q320` · not captured | 10 | VAS of 0-10 | not captured | review_gapfill (not captured) | Gibb_2008:review |
+| PD (effect) | EC 50 | `Q321` · not captured | 9.98 | mg/l | not captured | review_gapfill (not captured) | Gibb_2008:review |
+| PD (effect) | Hill coefficient | `Q325` · not captured | 1 | dimensionless | not captured | review_gapfill (not captured) | Gibb_2008:review |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

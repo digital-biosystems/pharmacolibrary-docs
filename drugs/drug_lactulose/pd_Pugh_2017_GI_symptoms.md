@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Glutamine drives name (in score) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model: acute oral glutamine (0.25, 0.5 and 0.9 g kg−1 of fat-free mass, taken 2 h pre-exercise) was compared with placebo for effects on GI permeability (serum lactulose:rhamnose ratio, where lactulose is a permeability marker rather than a drug) and subjective GI symptom scores, with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values reported; the record's identification of lactulose as the drug and of an inhibitory effect form is not supported by a quantitative model in the excerpts.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Pugh_2017`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

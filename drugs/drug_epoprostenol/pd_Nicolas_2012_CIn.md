@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** 6-keto-prostacyclin F1a (concentrations from this paper's PK model) drives cardiac index (in unknown): direct linear effect.
+
+**Model:** No model was generated from this record.
+
+> Epoprostenol (infused at 2–8 ng kg−1 min−1) stimulates cardiac index, with the effect linked to plasma concentrations of the metabolite 6,15-diketo-13,14-dihydro-prostacyclin F1a (record: 6-keto-prostacyclin F1a, pg/ml) in a linear stimulation model; the paper notes a time lag of approximately 2 h for metabolite appearance in plasma, and no potency parameters (Imax, IC50, EC50, Emax, kin, kout, ke0, gamma) are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Nicolas_2012`
 - **model family:** `linear`
 - **driver:** `pk_record`
@@ -21,14 +31,14 @@ Nicolas LB; Krause A; Gutierrez MM; Dingemanse J et al. (2012). British journal 
   ·  DOI: [10.1111/j.1365-2125.2012.04301.x](https://doi.org/10.1111/j.1365-2125.2012.04301.x)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| CL (l h -1 ) — Estimate | `Q22` · not captured | 84.92 | l h -1 | not captured | exact (not captured) | tab_0:row1:col1 |
-| CL (l h -1 ) — SD. | `Q22` · not captured | 3.07 | l h -1 | not captured | exact (not captured) | tab_0:row1:col2 |
-| CL (l h -1 ) — % CV | `Q22` · not captured | 3.61 | l h -1 | not captured | exact (not captured) | tab_0:row1:col3 |
-| V (l) — Estimate | `Q61` · not captured | 23.74 | l | not captured | exact (not captured) | tab_0:row2:col1 |
-| V (l) — SD. | `Q61` · not captured | 2.88 | l | not captured | exact (not captured) | tab_0:row2:col2 |
-| V (l) — % CV | `Q61` · not captured | 12.12 | l | not captured | exact (not captured) | tab_0:row2:col3 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CL (l h -1 ) — Estimate | `Q22` · not captured | 84.92 | l h -1 | not captured | exact (not captured) | tab_0:row1:col1 |
+| PK (driver) | CL (l h -1 ) — SD. | `Q22` · not captured | 3.07 | l h -1 | not captured | exact (not captured) | tab_0:row1:col2 |
+| PK (driver) | CL (l h -1 ) — % CV | `Q22` · not captured | 3.61 | l h -1 | not captured | exact (not captured) | tab_0:row1:col3 |
+| PK (driver) | V (l) — Estimate | `Q61` · not captured | 23.74 | l | not captured | exact (not captured) | tab_0:row2:col1 |
+| PK (driver) | V (l) — SD. | `Q61` · not captured | 2.88 | l | not captured | exact (not captured) | tab_0:row2:col2 |
+| PK (driver) | V (l) — % CV | `Q61` · not captured | 12.12 | l | not captured | exact (not captured) | tab_0:row2:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

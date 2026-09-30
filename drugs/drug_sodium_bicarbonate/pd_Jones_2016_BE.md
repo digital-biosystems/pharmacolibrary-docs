@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium bicarbonate drives base excess (in unknown) (stimulation; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model for base excess; it only reports that single oral doses of 0.1, 0.2 and 0.3 g·kg⁻¹ BM sodium bicarbonate produced dose-dependent increases in blood base excess (AUC over 180 min: 379.6±122.0, 824.4±156.7 and 1078.6±210.3 mEq·L⁻¹·180min⁻¹, respectively), with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values given.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Jones_2016`
 - **model family:** `unknown`
 - **driver:** `not_resolved`

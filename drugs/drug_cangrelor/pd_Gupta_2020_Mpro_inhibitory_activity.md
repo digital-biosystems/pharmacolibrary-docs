@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cobicistat (measured concentrations) drives name (in IC50) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Cangrelor inhibits SARS-CoV-2 Mpro protease activity in vitro, with an IC50 of 0.9 mM and an SPR dissociation constant of ~0.7 mM; the paper does not state a pharmacodynamic model or mechanism beyond direct enzyme inhibition.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Gupta_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`
@@ -20,13 +30,13 @@ Gupta A; Rani C; Pant P; Vijayan V; Vikram N; Kaur P; et al. et al. (2020). ACS 
   ·  DOI: [10.1021/acsomega.0c04808](https://doi.org/10.1021/acsomega.0c04808)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| co-crystal (O6K) α-ketoamide — docking score (kcal/mol) | `Q100` · not captured | -10.983 | kcal/mol | not captured | llm (not captured) | tbl2:row1:col4 |
-| DB04158 (6-(adenosine tetraphosphate-methyl)-7,8-dihydropterin) — docking score (kcal/mol) | `Q100` · not captured | -9.958 | kcal/mol | not captured | llm (not captured) | tbl2:row7:col4 |
-| DB02338(NADPH) — docking score (kcal/mol) | `Q100` · not captured | -10.303 | NADPH | not captured | llm (not captured) | tbl2:row17:col4 |
-| DB04983 (Denufosol) — docking score (kcal/mol) | `Q100` · not captured | -11.884 | Denufosol | not captured | llm (not captured) | tbl2:row30:col4 |
-| DB01753 (−oxo-nicotinamide-adenine dinucleotide phosphate) — docking score (kcal/mol) | `Q100` · not captured | -11.154 | −oxo-nicotinamide-adenine dinucleotide phosphate | not captured | llm (not captured) | tbl2:row40:col4 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| — | co-crystal (O6K) α-ketoamide — docking score (kcal/mol) | `Q100` · not captured | -10.983 | kcal/mol | not captured | llm (not captured) | tbl2:row1:col4 |
+| — | DB04158 (6-(adenosine tetraphosphate-methyl)-7,8-dihydropterin) — docking score (kcal/mol) | `Q100` · not captured | -9.958 | kcal/mol | not captured | llm (not captured) | tbl2:row7:col4 |
+| — | DB02338(NADPH) — docking score (kcal/mol) | `Q100` · not captured | -10.303 | NADPH | not captured | llm (not captured) | tbl2:row17:col4 |
+| — | DB04983 (Denufosol) — docking score (kcal/mol) | `Q100` · not captured | -11.884 | Denufosol | not captured | llm (not captured) | tbl2:row30:col4 |
+| — | DB01753 (−oxo-nicotinamide-adenine dinucleotide phosphate) — docking score (kcal/mol) | `Q100` · not captured | -11.154 | −oxo-nicotinamide-adenine dinucleotide phosphate | not captured | llm (not captured) | tbl2:row40:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

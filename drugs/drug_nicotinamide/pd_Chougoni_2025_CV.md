@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** JW-98 (measured concentrations) drives cell viability (in %) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> JW-98 (µM concentrations) reduces cell viability (%) of HGSOC cell lines in a direct concentration-effect manner (no PK or effect-compartment model given), with single-agent IC50 values of ~50–150 µM in OVCAR3, OVCAR4, and Kuramochi cells and IC50 &gt;200 µM in resistant hTERT-FT-282 cells; the mechanism is inhibition of CtBP dehydrogenase/dimerization, and NAD depletion by GMX1778 (1 nM) potentiates this effect, e.g. ~threefold viability loss (75% to 25%) at 25 µM JW-98 in OVCAR3 and 95%/50% loss at 100 µM in OVCAR8/OVCA429.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Chougoni_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Leucinostatin B derivatives (measured concentrations) drives Malaria transmission blocking (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Leucinostatin B derivatives (LB, LA, LB-Atto495, LB-Biotin) inhibit P. falciparum transmission to mosquitoes in a concentration-dependent manner in the SMFA, with IC50/EC50 values of 1.5 nM (LB), 0.16 nM (LA), 4.2 nM (LB-Atto495), and 42 nM (LB-Biotin); 10 nM LB completely blocked transmission. The paper does not state a PD model form, but fluorescence microscopy showed LB-Atto495 colocalized with gametocyte mitochondria, suggesting a mitochondrial mechanism of action.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Niu_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

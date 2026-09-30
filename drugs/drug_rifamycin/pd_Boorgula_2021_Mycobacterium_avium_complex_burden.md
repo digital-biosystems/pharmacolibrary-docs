@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Rifampin, rifapentine, rifabutin (measured concentrations) drive name (in log10 CFU/mL): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> In static concentration-response studies against Mycobacterium avium complex (laboratory strain MIC 0.032 mg/L), rifamycin concentrations (mg/L) inhibited MAC burden (log10 CFU/mL) via a three-parameter inhibitory sigmoid Emax model (H fixed at 1); Emax/EC50 were 5.674 log10 CFU/mL / 0.023 mg/L for rifampin, 5.480 / 0.070 mg/L for rifapentine, and 5.76 / 0.072 mg/L for rifabutin, with no significant difference among drugs. The paper does not describe a mechanism beyond direct inhibitory Emax kill (no kin/kout/ke0 given).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Boorgula_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`

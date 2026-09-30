@@ -26,19 +26,19 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Dias_2026](drugs/drug_cimetidine/pd_Dias_2026_DPP_4_inhibition.md) | Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165) |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Mody_2022](drugs/drug_cimetidine/pd_Mody_2022_R.md) | Mody H et al., Pharmacodynamic Modeling to Evaluate th…, Cells (2022) | [10.3390/cells12010057](https://doi.org/10.3390/cells12010057) |
-| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhou_2020](drugs/drug_cimetidine/pd_Zhou_2020_neutropenia_grade_1.md) | Zhou H et al., Population Pharmacokinetics and Exposur…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01731](https://doi.org/10.3389/fonc.2020.01731) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Grossmann_1999](drugs/drug_cimetidine/pd_Grossmann_1999_unknown.md) | Grossmann M et al., Histamine response and local cooling in…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00994.x](https://doi.org/10.1046/j.1365-2125.1999.00994.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Howden_2025](drugs/drug_cimetidine/pd_Howden_2025_erosive_esophagitis_healing_rate.md) | Howden CW et al., Mathematical model of the relationship…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13235](https://doi.org/10.1002/psp4.13235) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jansen-Olesen_1997](drugs/drug_cimetidine/pd_Jansen_Olesen_1997_contraction.md) | Jansen-Olesen I et al., Role of endothelium and nitric oxide in…, British journal of pharmaco… (1997) | [10.1038/sj.bjp.0701097](https://doi.org/10.1038/sj.bjp.0701097) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Jansen-Olesen_1997](drugs/drug_cimetidine/pd_Jansen_Olesen_1997_relaxation.md) | Jansen-Olesen I et al., Role of endothelium and nitric oxide in…, British journal of pharmaco… (1997) | [10.1038/sj.bjp.0701097](https://doi.org/10.1038/sj.bjp.0701097) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Koo_1983](drugs/drug_cimetidine/pd_Koo_1983_unknown.md) | Koo A, In vivo characterization of histamine H…, British journal of pharmaco… (1983) | [10.1111/j.1476-5381.1983.tb09379.x](https://doi.org/10.1111/j.1476-5381.1983.tb09379.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yagita_1988](drugs/drug_cimetidine/pd_Yagita_1988_serum_gastrin.md) | Yagita M, [Effect of histamine H2-antagonists on…, Journal of UOEH (1988) | [10.7888/juoeh.10.189](https://doi.org/10.7888/juoeh.10.189) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Yagita_1988](drugs/drug_cimetidine/pd_Yagita_1988_total_acid_output.md) | Yagita M, [Effect of histamine H2-antagonists on…, Journal of UOEH (1988) | [10.7888/juoeh.10.189](https://doi.org/10.7888/juoeh.10.189) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2026](drugs/drug_cimetidine/pd_Zhou_2026_VAS.md) | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Dias_2026_DPP_4_inhibition](drugs/drug_cimetidine/pd_Dias_2026_DPP_4_inhibition.md) | DPP-4 inhibition ← vildagliptin · direct Emax (saturable) effect | — | Dias BB et al., Preclinical Modeling and Simulation to…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70165](https://doi.org/10.1002/psp4.70165) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Mody_2022_R](drugs/drug_cimetidine/pd_Mody_2022_R.md) | cellular viability ← cisplatin · direct sigmoid Emax (Hill) effect | — | Mody H et al., Pharmacodynamic Modeling to Evaluate th…, Cells (2022) | [10.3390/cells12010057](https://doi.org/10.3390/cells12010057) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Zhou_2020_neutropenia_grade_1](drugs/drug_cimetidine/pd_Zhou_2020_neutropenia_grade_1.md) | name ← paclitaxel · categorical (graded) response model | — | Zhou H et al., Population Pharmacokinetics and Exposur…, Frontiers in oncology (2020) | [10.3389/fonc.2020.01731](https://doi.org/10.3389/fonc.2020.01731) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Grossmann_1999_unknown](drugs/drug_cimetidine/pd_Grossmann_1999_unknown.md) | cutaneous vascular conductance ← histamine · stimulation effect | — | Grossmann M et al., Histamine response and local cooling in…, British journal of clinical… (1999) | [10.1046/j.1365-2125.1999.00994.x](https://doi.org/10.1046/j.1365-2125.1999.00994.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Howden_2025_erosive_esophagitis_healing_rate](drugs/drug_cimetidine/pd_Howden_2025_erosive_esophagitis_healing_rate.md) | name ← intragastric pH &gt;4 holding time ratio · direct sigmoid Emax (Hill) effect | — | Howden CW et al., Mathematical model of the relationship…, CPT: pharmacometrics & syst… (2025) | [10.1002/psp4.13235](https://doi.org/10.1002/psp4.13235) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Jansen-Olesen_1997_contraction](drugs/drug_cimetidine/pd_Jansen_Olesen_1997_contraction.md) | name ← histamine · direct Emax (saturable) effect | — | Jansen-Olesen I et al., Role of endothelium and nitric oxide in…, British journal of pharmaco… (1997) | [10.1038/sj.bjp.0701097](https://doi.org/10.1038/sj.bjp.0701097) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Jansen-Olesen_1997_relaxation](drugs/drug_cimetidine/pd_Jansen_Olesen_1997_relaxation.md) | name ← histamine · direct Emax (saturable) effect | — | Jansen-Olesen I et al., Role of endothelium and nitric oxide in…, British journal of pharmaco… (1997) | [10.1038/sj.bjp.0701097](https://doi.org/10.1038/sj.bjp.0701097) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Koo_1983_unknown](drugs/drug_cimetidine/pd_Koo_1983_unknown.md) | arteriolar diameter ← 2-thiazolylethylamine · direct Emax (saturable) effect | — | Koo A, In vivo characterization of histamine H…, British journal of pharmaco… (1983) | [10.1111/j.1476-5381.1983.tb09379.x](https://doi.org/10.1111/j.1476-5381.1983.tb09379.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yagita_1988_serum_gastrin](drugs/drug_cimetidine/pd_Yagita_1988_serum_gastrin.md) | name ← cimetidine · stimulation effect | — | Yagita M, [Effect of histamine H2-antagonists on…, Journal of UOEH (1988) | [10.7888/juoeh.10.189](https://doi.org/10.7888/juoeh.10.189) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Yagita_1988_total_acid_output](drugs/drug_cimetidine/pd_Yagita_1988_total_acid_output.md) | name ← cimetidine · stimulation effect | — | Yagita M, [Effect of histamine H2-antagonists on…, Journal of UOEH (1988) | [10.7888/juoeh.10.189](https://doi.org/10.7888/juoeh.10.189) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zhou_2026_VAS](drugs/drug_cimetidine/pd_Zhou_2026_VAS.md) | pain score ← gabapentin · delayed effect through an effect compartment | — | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
 ## ADME sites
 
@@ -52,6 +52,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | placenta | `ABCB1` inducer/substrate | DrugBank actor |
 | absorption | skeletal muscle | `SLC22A5` inhibitor | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/substrate, `SLC22A4` inhibitor, `SLC22A5` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/substrate | DrugBank actor |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | distribution | liver | `SLC22A3` inhibitor/substrate | DrugBank actor |
 | distribution | placenta | `SLC22A3` inhibitor/substrate | DrugBank actor |

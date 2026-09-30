@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Pralatrexate (measured concentrations) drives Ki67 staining (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for pralatrexate concentration acting on Ki67 staining; no Ki67-specific potency (IC50/Emax) or rate values are given. Mechanistically, pralatrexate is described as a folate analogue inhibitor of dihydrofolate reductase with high affinity for RFC-1 (SLC19A1) and FPGS, inhibiting DNA replication and cell growth, with in vitro growth inhibition in the low nanomolar range (tested 0.1 nM–25 μM) and roughly ten-fold lower IC50 than methotrexate.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Clark_2020`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** TLex (Turmeric and Liquorice extract combination) (measured concentrations) drive name (in fold change) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> TLex (turmeric–liquorice extract, containing glycyrrhizic acid) at 133.4 μg/mL for 24 h was applied to HINAE cells to measure fold-change expression of antiviral genes (Mx, ISG15, IFN-I, IRF3, IRF8), which increased but not significantly; the paper does not state a PD model or mechanism for this gene-expression response, and no Imax/IC50/EC50/Emax/kin/kout/ke0/gamma values are given for it (the EC50 of 149.4 ± 2.34 μg/mL refers to VHSV CPE inhibition, not gene expression).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Shin_2026`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

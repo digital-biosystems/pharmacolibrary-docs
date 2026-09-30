@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cetylpyridinium chloride, chlorhexidine, triclosan, povidone-iodine, sodium bicarbonate drive name (in NCI) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> Antiseptic concentrations (including sodium bicarbonate, plus cetylpyridinium chloride, chlorhexidine, triclosan, povidone-iodine) inhibit the normalized cell index (NCI) measured by xCELLigence impedance over 48 h; IC50 values at 48 h were 2.4 and 7.4 mg/ml for sodium bicarbonate (two assays), 0.0022/0.001 mg/ml for cetylpyridinium chloride, 0.0037/0.0014 mg/ml for chlorhexidine, 1.25/0.57 mg/ml for triclosan, and 1.4/0.7 mg/ml for povidone-iodine. The paper does not state a pharmacodynamic mechanism or model beyond half-maximal inhibitory concentration.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Khorolsuren_2021`
 - **model family:** `unknown`
 - **driver:** `not_resolved`
@@ -20,18 +30,18 @@ Khorolsuren Z; Lang O; Vag J; Kohidai L et al. (2021). The Saudi dental journal 
   ·  DOI: [10.1016/j.sdentj.2021.09.016](https://doi.org/10.1016/j.sdentj.2021.09.016)
 
 ## Parameters
-| label (paper) | Q-code · name | value | unit | value_si | link | source |
-|---|---|---|---|---|---|---|
-| IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.0022 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col3 |
-| IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0037 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col4 |
-| IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 1.25 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col5 |
-| IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 1.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col6 |
-| IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 2.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col7 |
-| IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.001 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col3 |
-| IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0014 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col4 |
-| IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 0.57 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col5 |
-| IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 0.7 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col6 |
-| IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 7.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col7 |
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.0022 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col3 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0037 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col4 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 1.25 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col5 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 1.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col6 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 2.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col7 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.001 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col3 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0014 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col4 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 0.57 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col5 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 0.7 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col6 |
+| PD (effect) | IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 7.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col7 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

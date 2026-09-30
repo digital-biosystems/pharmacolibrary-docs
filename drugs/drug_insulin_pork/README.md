@@ -22,10 +22,10 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nosadini_1988_normal and insulin-dependent diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Nosadini1988_normal_and_insulin_dependent_diabet.md) | — (no model) | 0 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Thorsteinsson_1987_normal and type I diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Thorsteinsson1987_normal_and_type_i_diabetic_sub.md) | — (no model) | 0 | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nosadini_1988_normal and insulin-dependent diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Nosadini1988_normal_and_insulin_dependent_diabet.md) | — | — (no model) | 0 | Nosadini R et al., Porcine and human insulin absorption fr…, The Journal of clinical end… (1988) | [10.1210/jcem-67-3-551](https://doi.org/10.1210/jcem-67-3-551) |
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Thorsteinsson_1987_normal and type I diabetic subjects](drugs/drug_insulin_pork/InsulinPork_Thorsteinsson1987_normal_and_type_i_diabetic_sub.md) | — | — (no model) | 0 | Thorsteinsson B et al., Kinetics of human and porcine insulins…, European journal of clinica… (1987) | [10.1007/BF00544563](https://doi.org/10.1007/BF00544563) |
 
 ## ADME sites
 

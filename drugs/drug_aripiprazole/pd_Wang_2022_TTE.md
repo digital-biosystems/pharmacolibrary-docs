@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Aripiprazole (concentrations from this paper's PK model) drives time to relapse (in days): time-to-event model.
+
+**Model:** No model was generated from this record.
+
+> Aripiprazole model-predicted minimum concentration (Cmin, ng/mL) acts on time to impending relapse (days) via an exponential hazard function; the paper does not state an Imax/IC50 or other effect-form parameters, though placebo vs 400-/300-mg AOM gave a hazard ratio of 8.009 (P &lt; .0001).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wang_2022`
 - **model family:** `tte`
 - **driver:** `pk_record`

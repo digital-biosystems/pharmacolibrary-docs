@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Diammonium glycyrrhizinate (measured concentrations) drives name (in binary) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not report a pharmacodynamic model for mouse survival; it only states qualitatively that diammonium glycyrrhizinate (DG, a glycyrrhizic acid derivative) inhibited HCoV-OC43-induced brain inflammation/death in suckling mice, attributed to inhibition of viral entry, with no Imax, IC50, EC50, Emax, kin, kout, ke0 or gamma values given for this response. For the measured viral RNA response in vitro, DG inhibited HCoV-OC43 and HCoV-229E RNA levels dose-dependently with EC50 of 360 ± 21 μg/mL and 277 ± 4 μg/mL, respectively, and CC50 &gt; 4000 μg/mL.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Wu_2025`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

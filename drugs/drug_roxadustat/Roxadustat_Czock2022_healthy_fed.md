@@ -13,6 +13,8 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+
 ### Reviewer guidance
 
 **The roxadustat record was held back because the model fails to reproduce the paper's terminal half-life (13.790322088242254 h simulated vs reported values from 0.74 to 13 h) and Cmax (0.001388428718536485 vs 0.01 µg/mL per mg), and the absorption rate constant ka was invented rather than reported.**

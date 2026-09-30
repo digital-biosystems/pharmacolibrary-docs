@@ -28,9 +28,9 @@ _not available_
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.644). The first reading is what the record holds.">cross-check: disputed</span> | [Alfosea-Cuadrado_2024](drugs/drug_reserpine/pd_Alfosea_Cuadrado_2024_MA.md) | Alfosea-Cuadrado GM et al., Population Pharmacokinetic-Pharmacodyna…, Pharmaceutics (2024) | [10.3390/pharmaceutics16081101](https://doi.org/10.3390/pharmaceutics16081101) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.644). The first reading is what the record holds.">cross-check: disputed</span> | [Alfosea-Cuadrado_2024_MA](drugs/drug_reserpine/pd_Alfosea_Cuadrado_2024_MA.md) | monoamines ← reserpine · indirect response — drug inhibits the loss of monoamines | — | Alfosea-Cuadrado GM et al., Population Pharmacokinetic-Pharmacodyna…, Pharmaceutics (2024) | [10.3390/pharmaceutics16081101](https://doi.org/10.3390/pharmaceutics16081101) |
 
 ## ADME sites
 
@@ -43,6 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | liver | `ABCB1` inducer/inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
 | absorption | placenta | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | absorption | small intestine | `ABCB1` inducer/inhibitor/substrate, `SLCO2B1` inhibitor | DrugBank actor |
+| absorption | testis | `ABCB1` inducer/inhibitor/substrate | DrugBank actor |
 | metabolism | kidney | `CYP3A5` inducer | DrugBank actor |
 | metabolism | liver | `CYP3A5` inducer, `SLC22A1` inhibitor, `SLCO1B1` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP3A5` inducer | DrugBank actor |

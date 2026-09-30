@@ -23,15 +23,15 @@
 
 ## popPK records
 
-| status | detail | model structure | params | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Alvarez-Jimenez_2017_reference](drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_reference.md) | 1-compartment (no model) | 0 | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Alvarez-Jimenez_2017_reference](drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_reference.md) | — | 1-compartment (no model) | 0 | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 
 ## Pharmacodynamics (PD)
 
-| status | detail | citation | doi |
-|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.068). The first reading is what the record holds.">cross-check: disputed</span> | [Alvarez-Jimenez_2017](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_unknown.md) | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.068). The first reading is what the record holds.">cross-check: disputed</span> | [Alvarez-Jimenez_2017_unknown](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_unknown.md) | Diastolic blood pressure ← mecamylamine · direct Emax (saturable) effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 
 ## ADME sites
 

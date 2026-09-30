@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Tranexamic acid (concentrations from the PK model of Dowd_2002) drives relative perioperative haemoglobin drop (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Tranexamic acid (intravenous doses 300–3000 mg; total dose range 750–4000 mg in the meta-analysis) acts on relative perioperative haemoglobin drop at postoperative day 3 via an inhibitory Emax model, with TXA concentrations predicted from a population pharmacokinetic model. The maximum effect (Emax) is 40% (95% CrI 31–58%) blood loss reduction and EC50 is 9.5 mg L−1 (95% CrI 2–27 mg L−1); the paper does not describe kin/kout or effect-compartment mechanisms.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Zufferey_2025`
 - **model family:** `emax`
 - **driver:** `cited_pk`

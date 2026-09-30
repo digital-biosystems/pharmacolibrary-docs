@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** DDABT1 (measured concentrations) drives name (in unknown) (inhibition; the model form was not identified).
+
+**Model:** No model was generated from this record.
+
+> The paper does not describe a pharmacodynamic model linking DDABT1 concentrations to ESR; ESR (measured by Westergren's method, reported as 4.86 mm/h after DDABT1 treatment, the lowest among treatments) was only a group-level endpoint in the CFA-induced arthritis rat study at a fixed dose (0.0194 mmol/kg once daily), with no concentration-response relationship, mechanism, or potency parameters (Imax, IC50, EC50, kin, kout, ke0) stated for ESR. The only potency values given are anti-CHIKV IC50s of 14.53 μM (abstract), 21.07 μM (MOI 0.1) and 14.59 μM (MOI 0.01) in Vero cells, which relate to viral infection, not ESR.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dash_2024`
 - **model family:** `unknown`
 - **driver:** `conc_no_pk`

@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** S-warfarin (concentrations from the PK model of Aoyama_2022) drives name (in unknown): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> S-warfarin plasma concentration (μM) drives the INR response via an indirect inhibitory Imax/IC50 model (E = Imax·C_Swar/(IC50 + C_Swar)), reflecting warfarin's inhibition of coagulation factor production through VKORC1; the paper does not state numeric values for Imax or IC50.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Geng_2024`
 - **model family:** `emax`
 - **driver:** `cited_pk`

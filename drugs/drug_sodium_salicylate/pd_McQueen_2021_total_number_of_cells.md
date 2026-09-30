@@ -10,6 +10,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Sodium Salicylate drives name (in count): direct sigmoid Emax (Hill) effect.
+
+**Model:** No model was generated from this record.
+
+> Sodium salicylate (SAL) concentrations (low 0.1 mM, medium 1 mM, high 5 mM in the Marra et al. (2000) in vitro experiments) act on the total number of cells, inhibiting smooth muscle cell proliferation in a dose-dependent, cytostatic manner, modelled as a sigmoid Emax-type inhibitory effect. The excerpts do not state the mechanism in PD terms (e.g. kin/kout or an effect compartment) and give no numeric potency or rate values (no IC50, Imax, Emax, gamma, ke0).
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `McQueen_2021`
 - **model family:** `sigmoid_emax`
 - **driver:** `not_resolved`

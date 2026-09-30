@@ -9,6 +9,16 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+## What this record describes
+
+**As extracted:** Cafedrine/theodrenaline drives name (in mmHg): direct Emax (saturable) effect.
+
+**Model:** No model was generated from this record.
+
+> Cafedrine/theodrenaline bolus doses (10–200 mg) drive systolic blood pressure (SBP, mmHg) via an Emax model linked to a hypothetical exposure passing through transit compartments (no PK data; kinetic parameters are empirical delay/persistence descriptors). Population maximum effect (Emax) for SBP was 169 mmHg; no IC50/EC50, ke0, kin, kout, or gamma values are reported.
+>
+> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+
 - **paper:** `Dings_2026`
 - **model family:** `emax`
 - **driver:** `not_resolved`
