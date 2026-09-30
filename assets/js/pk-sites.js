@@ -594,7 +594,9 @@
     // drug the way an inhibitor of that gene would (\u22A3), an increased-function one the way an
     // inducer would (\u2191); \u2691 marks a guideline recommendation without a PK direction
     pgxRows.forEach(function (p) {
-      h += '<tr class="pks-pgxrow' + (focus ? ' dim' : '') + '"><th class="perp"><i class="pgx"></i>' + esc(p.gene) + ' <span class="pks-meta">' + esc(p.label) + '</span></th>';
+      var none = !Object.keys(p.byDrug).length;
+      h += '<tr class="pks-pgxrow' + (focus ? ' dim' : '') + '"><th class="perp"><i class="pgx"></i>' + esc(p.gene) + ' <span class="pks-meta">' + esc(p.label) + '</span>' +
+           (none ? '<br><span class="pks-meta">no drug of this set affected</span>' : '') + '</th>';
       M.drugs.forEach(function (v) {
         var e = p.byDrug[v.slug];
         if (!e) { h += '<td class="none' + (focus && focus !== v.slug ? ' dim' : '') + '"></td>'; return; }
@@ -637,12 +639,17 @@
     root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pkq-meta">\u25B2/\u25BC mark the same direction on the heat-map cells and anatomogram slots where the gene acts. Guideline text is quoted from CPIC/DPWG via ClinPGx \u2014 read the guideline before a clinical decision. The phenotypes stay in this page\u2019s link; nothing is stored or sent.</p>';
   }
 
-  // one row per chosen patient phenotype that acts on at least one drug of the set
+  // one row per chosen patient phenotype, in the order chosen — also when it changes nothing
+  // for this set (a normal phenotype, or a gene none of these drugs depends on), so every
+  // chip has its row and the reader sees that it was considered
+  function pgxLabel(M, sel) {
+    var w = { UM: 'ultrarapid', RM: 'rapid', NM: 'normal', IM: 'intermediate', PM: 'poor' }[sel.code];
+    return w || sel.code;
+  }
   function pgxPerpetrators(M, opts) {
     var rows = [];
     (opts.pgx || []).forEach(function (sel) {
       var hits = (M.pgx || []).filter(function (e) { return e.gene === sel.gene && e.code === sel.code; });
-      if (!hits.length) return;
       var byDrug = {};
       hits.forEach(function (e) {
         var a = ACT[e.code], gl = (e.guidelines || []).length;
@@ -650,6 +657,9 @@
         if (e.dir && e.dir.sign) {
           glyph = a < 0 ? '\u22A3' : '\u2191';
           words = e.dir.words;
+        } else if (e.dir) {
+          glyph = '=';
+          words = 'normal activity \u2014 no change';
         } else if (gl) {
           glyph = '\u2691';
           words = 'guideline recommendation (no PK direction)';
@@ -659,7 +669,7 @@
                            guidelines: (e.guidelines || []).map(function (g) { return (g.source || '') + (g.avoid ? ' alternative/avoid' : ''); })
                                      .filter(function (x, i, arr) { return x && arr.indexOf(x) === i; }).join(', ') };
       });
-      if (Object.keys(byDrug).length) rows.push({ gene: sel.gene, label: hits[0].label || sel.code, byDrug: byDrug });
+      rows.push({ gene: sel.gene, label: (hits[0] && hits[0].label) || pgxLabel(M, sel), byDrug: byDrug });
     });
     return rows;
   }

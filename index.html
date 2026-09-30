@@ -880,7 +880,12 @@
           if (t.dataset && t.dataset.rm) { SEL = SEL.filter(function (d) { return d.slug !== t.dataset.rm; }); if (focus === t.dataset.rm) focus = null; draw(); ev.stopPropagation(); return; }
           if (t.id === 'pks-pgx-add') {
             var g = (el('pks-pgx-gene') || {}).value, c = (el('pks-pgx-pheno') || {}).value;
-            if (g && c) { PGX = PGX.filter(function (p) { return p.gene !== g; }).concat([{ gene: g, code: c }]); draw(); }
+            // a gene already chosen keeps its place, with the new phenotype; a new gene is appended
+            if (g && c) {
+              var at = PGX.map(function (p) { return p.gene; }).indexOf(g);
+              if (at >= 0) PGX[at] = { gene: g, code: c }; else PGX.push({ gene: g, code: c });
+              draw();
+            }
             return;
           }
           if (t.dataset && t.dataset.pgxrm) { PGX = PGX.filter(function (p) { return p.gene !== t.dataset.pgxrm; }); draw(); return; }
@@ -905,9 +910,10 @@
               var msg;
               try {
                 var r = pkSites.pharmcatImport(DB, String(rd.result || ''));
-                var genes = r.picked.map(function (p) { return p.gene; });
-                PGX = PGX.filter(function (p) { return genes.indexOf(p.gene) < 0; })
-                         .concat(r.picked.map(function (p) { return { gene: p.gene, code: p.code }; }));
+                r.picked.forEach(function (p) {
+                  var at = PGX.map(function (x) { return x.gene; }).indexOf(p.gene);
+                  if (at >= 0) PGX[at] = { gene: p.gene, code: p.code }; else PGX.push({ gene: p.gene, code: p.code });
+                });
                 msg = 'PharmCAT ' + (r.meta.format || 'report') + (r.meta.version ? ' ' + r.meta.version : '') + ': ' +
                       (r.picked.length ? r.picked.length + ' non-normal phenotype(s) added \u2014 ' + r.picked.map(function (p) { return p.gene + ' ' + p.phenotype + (p.diplotype ? ' (' + p.diplotype + ')' : ''); }).join(', ') : 'no non-normal phenotype') +
                       '; ' + r.skipped.length + ' gene(s) normal / indeterminate / not called' +
