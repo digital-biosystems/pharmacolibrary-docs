@@ -20,7 +20,7 @@ Acoramidis has been in development since at least 2013.[A264808] It was brought 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 17:09 | 19:07 | 0/0/0 | 0/1/0 | 0/0/0 | 105,561/3,929 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 4/5 | 8/1 | 0 |
+| 2026-09-30 03:49 | 3:18 | 0/0/0 | 0/1/0 | 0/0/0 | 18,219/1,784 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 4/5 | 8/1 | 0 |
 
 ## popPK records
 
@@ -30,7 +30,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026_TTR](drugs/drug_acoramidis/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Fontana_2026_TTR](drugs/drug_acoramidis/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
 
 ## ADME sites
 
@@ -59,8 +59,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 348 matched, 51 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 354 matched, 55 returned
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -72,7 +72,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Yu_2026.pdf` | Yu J et al., Understanding Pharmacokinetic-Drug Inte…, Current therapeutic researc… (2026) | pgx | 7 | [10.1016/j.curtheres.2025.100818](https://doi.org/10.1016/j.curtheres.2025.100818) | [41567854](https://www.ncbi.nlm.nih.gov/pubmed/41567854) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-09-27T17:06:29.247609+00:00</sub>
+<sub>queue written 2026-09-30T03:49:08.724381+00:00</sub>
 
 ## Screened and excluded
 
@@ -106,11 +106,14 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Matsumoto_2026 | irrelevant | 0 | 0 | The study focuses on amenamevir, not acoramidis, and reports a single CSF concentration rather than population PK parameters. |
 | popPK | Maurer_2025 | irrelevant | 2 | 0 | The study focuses on the prognostic value of serum transthyretin (sTTR) levels as a biomarker for mortality, not on reporting quantitative pharmacokinetic parameters (CL, V, ka) for acoramidis. |
 | PGx | Maurer_2025 | not_relevant | 0 | 0 | The paper reports a pharmacodynamic effect of acoramidis on survival and TTR levels, but does not report a pharmacogenomic effect (gene variant/genotype) on PK or PD parameters. |
+| popPK | Methven_2026 | irrelevant | 0 | 0 | The paper is a mechanistic mathematical model of TTR dissociation and amyloid formation, not a pharmacokinetic study, and contains no PK parameters for acoramidis. |
 | PD | Methven_2026 | not_relevant | 3 | 2 | The paper presents a mechanistic disease model comparing treatment modalities and reports a predicted percentage reduction in a proxy metric (monomer efflux), but it does not provide an exposure-response or dose-response curve with numeric PD parameters (e.g., EC50, Emax) for acoramidis. |
 | popPK | Nair_2016 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of acyclovir, not acoramidis. |
 | popPK | Orr_1995 | irrelevant | 0 | 0 | The paper studies uridine phosphorylase inhibitors (5-benzyluracils) and does not involve the drug acoramidis. |
 | popPK | Owens_1996 | irrelevant | 0 | 0 | no_text gate: only 40 chars of text extracted (&lt; 400) |
+| popPK | Preston_1995 | irrelevant | 0 | 0 | The paper discusses dosage adjustment for 10 antimicrobials (including acyclovir, ceftazidime, imipenem) but does not mention acoramidis or report any pharmacokinetic parameters for it. |
 | popPK | Ramirez_2018 | irrelevant | 0 | 0 | The paper is a clinical study on HSV encephalitis and does not involve acoramidis or report any pharmacokinetic parameters. |
+| popPK | Samies_2025 | irrelevant | 0 | 0 | The study reports pharmacokinetic parameters for valacyclovir and acyclovir, not acoramidis. |
 | popPK | Schaller-Ammann_2022 | irrelevant | 0 | 0 | The study is an in-vitro dermal penetration study using acyclovir, lidocaine, and diclofenac, and does not involve acoramidis or report population pharmacokinetic parameters. |
 | popPK | Seth_1985 | irrelevant | 0 | 0 | no_text gate: only 84 chars of text extracted (&lt; 400) |
 | popPK | Shakiba_1995 | irrelevant | 0 | 0 | The study investigates acyclovir diphosphate dimyristoylglycerol (ACVDP-DG), not acoramidis. |
@@ -124,6 +127,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Testani_2026 | irrelevant | 0 | 0 | The paper reports renal function outcomes (eGFR, albumin-to-creatinine ratio) rather than pharmacokinetic parameters (CL, V, ka) for acoramidis. |
 | popPK | Voigt_2016 | irrelevant | 0 | 0 | The paper discusses brincidofovir and acyclovir, not acoramidis, and contains no relevant pharmacokinetic data for the target drug. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a case report on peginterferon alfa-2b and does not involve acoramidis or report any pharmacokinetic parameters. |
+| popPK | Yu_2026 | irrelevant | 0 | 0 | no_text gate: only 244 chars of text extracted (&lt; 400) |
 | PGx | Yu_2026 | not_relevant | 0 | 0 | The paper reviews drug-drug interactions (DDIs) for 2024 FDA approvals and does not report pharmacogenomic effects (gene variants) on acoramidis PK/PD. |
 | PD | unknown_2025 | not_relevant | 0 | 0 | The provided text is only a title and contains no data, analysis, or numeric parameters to derive a pharmacodynamic relationship. |
 | PD | unknown_2025_2 | not_relevant | 0 | 0 | The provided text is a title for a paper on vutrisiran, not acoramidis, and contains no pharmacodynamic data or parameters. |

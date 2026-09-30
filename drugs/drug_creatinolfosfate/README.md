@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 21:50 | 46:51 | 0/0/0 | 0/1/0 | 0/0/0 | 312,138/18,463 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 7/20 | 27/0 | 0 |
+| 2026-09-30 05:47 | 11:46 | 0/0/0 | 0/1/0 | 0/0/0 | 80,173/11,688 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 7/20 | 27/0 | 0 |
 
 ## popPK records
 
@@ -38,8 +38,8 @@ _not available_
 
 ## Coverage
 
-- **PubMed hits:** 161 matched, 116 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 161 matched, 120 returned
+- **screened:** 12  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -56,7 +56,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Wu_2020.pdf` | Wu Q et al., Purification, structural characterizati…, Carbohydrate polymers (2020) | pd | 4 | [10.1016/j.carbpol.2020.116020](https://doi.org/10.1016/j.carbpol.2020.116020) | [32172840](https://www.ncbi.nlm.nih.gov/pubmed/32172840) | metadata signals extractable PD data (IC50) |
 | `Li_2023.pdf` | Li SC et al., Coptisine modulates the pharmacokinetic…, Xenobiotica; the fate of fo… (2023) | pgx | 7 | [10.1080/00498254.2023.2211135](https://doi.org/10.1080/00498254.2023.2211135) | [37144948](https://www.ncbi.nlm.nih.gov/pubmed/37144948) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 
-<sub>queue written 2026-09-27T21:36:54.993443+00:00</sub>
+<sub>queue written 2026-09-30T05:45:26.290186+00:00</sub>
 
 ## Screened and excluded
 
@@ -89,6 +89,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Diack_2024 | not_relevant | 0 | 0 | The paper reports pharmacodynamics for faricimab, not creatinolfosfate. |
 | PGx | Ding_2024 | not_relevant | 0 | 0 | The paper studies zosuquidar's effect on PD-L1 and tumor immunity, not the pharmacokinetics or pharmacodynamics of creatinolfosfate. |
 | PD | Epstein_2014 | not_relevant | 0 | 0 | The paper studies hydroxyethyl starch in horses and does not mention creatinolfosfate or report any exposure-response relationship. |
+| PD | Epstein_2017 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics of hydroxyethyl starch in horses and does not report any pharmacodynamic data or exposure-response relationships for creatinolfosfate. |
 | popPK | Farhat_2013 | irrelevant | 0 | 0 | The paper is a mechanistic study on Hepatitis C virus replication and Golgi function, and does not involve creatinolfosfate or pharmacokinetic parameters. |
 | PD | Farhat_2013 | not_relevant | 0 | 0 | The paper studies the effect of Brefeldin A (BFA) on HCV replication and Golgi function, not creatinolfosfate. |
 | popPK | Felicio_2014 | irrelevant | 0 | 0 | The paper is a biomechanical study on postural control in patellofemoral pain syndrome and does not involve creatinolfosfate or pharmacokinetics. |
@@ -135,6 +136,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Li_2019 | irrelevant | 0 | 0 | The study focuses on the toxicokinetics of aconitine in CaoWu, not the pharmacokinetics of creatinolfosfate. |
 | PD | Li_2023 | not_relevant | 0 | 0 | The paper investigates environmental contaminants (phenols, phthalates, PAHs) and frailty, not the drug creatinolfosfate. |
 | PGx | Li_2023_2 | not_relevant | 0 | 0 | The paper studies the effect of co-administered coptisine on florfenicol pharmacokinetics in rats, not the effect of a genetic variant on creatinolfosfate. |
+| popPK | Linares_2011 | irrelevant | 0 | 0 | The paper focuses on pharmacokinetic modeling for opioids, not creatinolfosfate. |
 | popPK | Liu_2026 | irrelevant | 0 | 0 | The paper is a biomechanics study on sitting balance and center of pressure, containing no pharmacokinetic data for creatinolfosfate. |
 | PD | Lucinde_2021 | not_relevant | 0 | 0 | The paper is a systematic review of pneumococcal conjugate vaccines and does not contain any data, analysis, or mention of creatinolfosfate. |
 | popPK | Lutonsky_2023 | irrelevant | 0 | 0 | The study investigates postural stability in dogs and does not involve creatinolfosfate or pharmacokinetic parameters. |

@@ -146,7 +146,9 @@
         var rel = (safeQ(db, 'SELECT relation FROM adme_pgx_relation WHERE drug_slug = ? AND gene = ?', [d.slug, s.gene])[0] || {}).relation || null;
         var sub = (ph.kind === 'metabolizer' || ph.kind === 'transporter') &&
             safeQ(db, "SELECT 1 FROM adme_actor WHERE drug_slug = ? AND gene = ? AND role = 'substrate' LIMIT 1", [d.slug, s.gene]).length > 0;
-        var gl = safeQ(db, 'SELECT label, source, guideline_id, recommendation, avoid FROM adme_pgx_guideline WHERE drug_slug = ? AND gene = ? AND code = ?', [d.slug, s.gene, s.code]);
+        // the guideline's row for this phenotype; a guideline without a phenotype table ('*')
+        // applies to any non-normal phenotype of the gene
+        var gl = safeQ(db, "SELECT label, source, guideline_id, recommendation, avoid FROM adme_pgx_guideline WHERE drug_slug = ? AND gene = ? AND (code = ? OR (code = '*' AND ? <> 'NM'))", [d.slug, s.gene, s.code, s.code]);
         var ef = safeQ(db, 'SELECT parameter, form, theta, stem, page, doi FROM adme_pgx_effect WHERE drug_slug = ? AND gene = ? AND code = ?', [d.slug, s.gene, s.code]);
         // a paper's 'clears' call alone is an evidence_only LLM reading (simvastatin–CYP2D6):
         // it counts when DrugBank, a guideline or a paper effect size supports the pair
@@ -626,7 +628,7 @@
       }).join('<br>') || '<span class="pkq-meta">\u2014</span>';
       var gl = e.guidelines.map(function (g) {
         var t = g.recommendation || '';
-        return '<div class="pks-gl"><span class="pks-glsrc">' + esc(g.source || '') + '</span>' + (g.avoid ? ' <b class="warn">alternative / avoid</b>' : '') +
+        return '<div class="pks-gl"><span class="pks-glsrc">' + esc(g.source || '') + '</span>' + (g.label ? '' : ' <span class="pkq-meta">(general, no phenotype table)</span>') + (g.avoid ? ' <b class="warn">alternative / avoid</b>' : '') +
                ' <span title="' + esc(t) + '">' + esc(t.length > 260 ? t.slice(0, 260) + '\u2026' : t) + '</span>' +
                (g.guideline_id ? ' <a href="https://www.clinpgx.org/guidelineAnnotation/' + esc(g.guideline_id) + '" target="_blank" rel="noopener">' + esc(g.guideline_id) + '</a>' : '') + '</div>';
       }).join('') || '<span class="pkq-meta">\u2014</span>';

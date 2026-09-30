@@ -29,7 +29,7 @@ First introduced in 1960 as an antihypertensive agent, methyldopa was considered
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 19:49 | 11:01 | 0/1/0 | 0/0/0 | 0/0/0 | 36,051/5,538 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-30 05:22 | 1:50 | 0/1/0 | 0/0/0 | 0/0/0 | 5,073/2,703 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -82,7 +82,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Yamamoto_2021.pdf` | Yamamoto J et al., Impact of the catechol-O-methyltransfer…, Journal of neural transmiss… (2021) | pgx | 8 | [10.1007/s00702-020-02267-y](https://doi.org/10.1007/s00702-020-02267-y) | [33136226](https://www.ncbi.nlm.nih.gov/pubmed/33136226) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Weinshilboum_1984.pdf` | Weinshilboum RM, Human pharmacogenetics of methyl conjug…, Federation proceedings (1984) | pgx | 5 | not captured | [6714437](https://www.ncbi.nlm.nih.gov/pubmed/6714437) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-09-27T19:45:41.497837+00:00</sub>
+<sub>queue written 2026-09-30T05:21:13.051315+00:00</sub>
 
 ## Screened and excluded
 
