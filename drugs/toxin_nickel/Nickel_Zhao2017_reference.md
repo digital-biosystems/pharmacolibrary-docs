@@ -114,7 +114,7 @@ Zhao H; Ge P; Chang X; Ren X; Chen L; Gao J; et al. et al. (2017). Wei sheng yan
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/toxin_nickel/Nickel_Zhao2017_reference/Nickel_Zhao2017_reference.svg" alt="Nickel_Zhao2017_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

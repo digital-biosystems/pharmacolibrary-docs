@@ -143,7 +143,7 @@ _Every reader agrees on every compared field of this record._
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set.svg" alt="Midazolam_Burtin1994_mean_estimate_se_index_data_set diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_midazolam/Midazolam_Burtin1994_mean_estimate_se_index_data_set/Midazolam_Burtin1994_mean_estimate_se_index_data_set.svg" alt="Midazolam_Burtin1994_mean_estimate_se_index_data_set diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

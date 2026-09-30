@@ -137,7 +137,7 @@ Knych HK; Weiner D; McKemie DS; Traynham M; Blea J et al. (2024). Journal of vet
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_3C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_butorphanol/Butorphanol_Knych2024_estimate/Butorphanol_Knych2024_estimate.svg" alt="Butorphanol_Knych2024_estimate diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_butorphanol/Butorphanol_Knych2024_estimate/Butorphanol_Knych2024_estimate.svg" alt="Butorphanol_Knych2024_estimate diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
