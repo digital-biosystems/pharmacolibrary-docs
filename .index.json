@@ -10909,14 +10909,14 @@
   ],
   "dir": "drug_doxazosin",
   "extracted": 3,
-  "last_change": "2026-09-28T14:37:50.205767+00:00",
+  "last_change": "2026-09-30T06:13:06.288992+00:00",
   "name": "doxazosin",
   "needs_review": 0,
   "records": 6,
   "rejected": 3,
   "rendered": true,
   "slug": "doxazosin",
-  "stale": 0
+  "stale": 1
  },
  "drug_doxepin": {
   "atc_codes": [

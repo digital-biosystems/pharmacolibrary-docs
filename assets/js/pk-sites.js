@@ -122,21 +122,23 @@
   }
   function inList(n) { return '(' + new Array(n + 1).join('?,').slice(0, -1) + ')'; }
   function safeQ(db, sql, params) { try { return q(db, sql, params); } catch (e) { return []; } }
-  // genes a phenotype can be chosen for, most relevant to THIS set first: a guideline or a
-  // paper relation for one of its drugs, then any gene one of them is a substrate of
+  // every gene a phenotype can be chosen for (all pharmacogenes the guidelines name), in
+  // alphabetical order; rank marks its relevance to THIS set: 0 a guideline for one of its
+  // drugs, 1 a paper relation, 2 one of them is its substrate, 3 none
   function pgxGenes(db, drugs) {
     var slugs = drugs.map(function (d) { return d.slug; });
-    if (!slugs.length) return [];
     var rank = {};
+    safeQ(db, 'SELECT DISTINCT gene FROM adme_phenotype').forEach(function (r) { rank[r.gene] = 3; });
+    if (!slugs.length) slugs = ['\u0000'];
     safeQ(db, 'SELECT DISTINCT gene FROM adme_pgx_guideline WHERE drug_slug IN ' + inList(slugs.length), slugs).forEach(function (r) { rank[r.gene] = 0; });
-    safeQ(db, 'SELECT DISTINCT gene FROM adme_pgx_relation WHERE drug_slug IN ' + inList(slugs.length), slugs).forEach(function (r) { if (!(r.gene in rank)) rank[r.gene] = 1; });
-    safeQ(db, "SELECT DISTINCT gene FROM adme_actor WHERE role = 'substrate' AND drug_slug IN " + inList(slugs.length), slugs).forEach(function (r) { if (!(r.gene in rank)) rank[r.gene] = 2; });
+    safeQ(db, 'SELECT DISTINCT gene FROM adme_pgx_relation WHERE drug_slug IN ' + inList(slugs.length), slugs).forEach(function (r) { if (!(rank[r.gene] < 1)) rank[r.gene] = 1; });
+    safeQ(db, "SELECT DISTINCT gene FROM adme_actor WHERE role = 'substrate' AND drug_slug IN " + inList(slugs.length), slugs).forEach(function (r) { if (!(rank[r.gene] < 2)) rank[r.gene] = 2; });
     var out = [];
     Object.keys(rank).forEach(function (g) {
       var ph = safeQ(db, 'SELECT code, label, activity, kind FROM adme_phenotype WHERE gene = ? ORDER BY activity DESC, label', [g]);
       if (ph.length) out.push({ gene: g, rank: rank[g], kind: ph[0].kind, phenos: ph });
     });
-    return out.sort(function (a, b) { return a.rank - b.rank || a.gene.localeCompare(b.gene); });
+    return out.sort(function (a, b) { return a.gene.localeCompare(b.gene); });
   }
   function pgxEffects(db, drugs, sel) {
     var out = [];

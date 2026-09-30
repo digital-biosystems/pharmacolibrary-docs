@@ -33,7 +33,7 @@ Prazosin does not negatively impact lung function, and therefore may be used to 
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 23:51 | 22:51 | 1/0/2 | 0/0/0 | 0/0/0 | 122,760/19,419 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 3/1 | 0 |
+| 2026-09-30 06:23 | 0:20 | 1/0/2 | 0/0/0 | 0/0/0 | 5,877/581 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 0/4 | 3/1 | 0 |
 
 ## popPK records
 
@@ -74,7 +74,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 471 matched, 50 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 5  ·  **relevant:** 3
 - **records:** 3  ·  extracted 0  ·  needs_review 3  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

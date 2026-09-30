@@ -5,7 +5,7 @@
 
 # trimazosin — `Trimazosin_Reid1983_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has trimazosin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[terminal elimination half-life of trimazosin].parameter_id`: this record has Q57, the second reading Q60. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -71,18 +71,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability of oral trimazosin]` | 61 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[bioavailability of oral trimazosin]` | not captured | 61 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[mean (+/- sd) terminal elimination half-life of trimazosin]` | not captured | 2.73 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination half-life of trimazosin]` | 2.73 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | trimazosin | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | trimazosin | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[terminal elimination half-life of trimazosin].parameter_id` | Q57 | Q60 | mismatch |
 
 </details>
 

@@ -18,13 +18,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 22:07 | 2:13 | 0/1/0 | 0/0/0 | 0/0/0 | 8,970/2,286 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 5/0 | 0/0 | 0 |
+| 2026-09-30 05:57 | 0:43 | 0/1/0 | 0/0/0 | 0/0/0 | 2,195/1,788 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 5/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | — | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Corder_1979_reference](drugs/drug_betanidine/Betanidine_Corder1979_reference.md) | — | 1-compartment (no model) | 0 | Corder CN, Bethanidine elimination from plasma, Journal of clinical pharmac… (1979) | [10.1002/j.1552-4604.1979.tb02504.x](https://doi.org/10.1002/j.1552-4604.1979.tb02504.x) |
 
 ## ADME sites
 
@@ -59,7 +59,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Shen_1975.pdf` | Shen D et al., Pharmacokinetics of bethanidine in hype…, Clinical pharmacology and t… (1975) | popPK | 9 | [10.1002/cpt1975173363](https://doi.org/10.1002/cpt1975173363) | [1120401](https://pubmed.ncbi.nlm.nih.gov/1120401) | The study reports quantitative pharmacokinetic parameters for bethanidine, including terminal half-lives (7-11 hr), renal clearance relative to plasma flow, and urinary excretion percentages, all of which are explicitly stated in the provided text. |
 | `Chremos_1976.pdf` | Chremos AN et al., Time-dependent change in renal clearanc…, Journal of pharmaceutical s… (1976) | popPK | 8 | [10.1002/jps.2600650136](https://doi.org/10.1002/jps.2600650136) | [1255421](https://pubmed.ncbi.nlm.nih.gov/1255421) | The paper describes a pharmacokinetic study of bethanidine in humans, but the provided evidence contains only qualitative descriptions and no numeric parameter values. |
 
-<sub>queue written 2026-09-27T22:06:39.556215+00:00</sub>
+<sub>queue written 2026-09-30T05:56:47.334707+00:00</sub>
 
 ## Screened and excluded
 

@@ -5,7 +5,7 @@
 
 # trimazosin — `Trimazosin_Meredith1985_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — trimazosin: t1/2z 2 h, CL 327 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has trimazosin → 1-hydroxy trimazosin (metabolism), the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has trimazosin, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,16 +68,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.222 (2/9 fields) | 7 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['trimazosin', '1-hydroxy trimazosin', 'metabolism']] | [] | mismatch |
+| `gpt-oss:120b` | `parameters[clearance of doxazosin]` | not captured | 139 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance of prazosin]` | not captured | 327 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance of trimazosin]` | not captured | 67 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 327 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mean terminal elimination half-life]` | 2.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | trimazosin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | trimazosin | unknown | mismatch |
 
 </details>
 

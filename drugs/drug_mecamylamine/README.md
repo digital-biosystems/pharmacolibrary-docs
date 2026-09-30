@@ -19,19 +19,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 21:56 | 16:25 | 0/1/0 | 1/0/0 | 0/0/0 | 215,919/19,671 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/3 | 4/0 | 0 |
+| 2026-09-30 05:55 | 2:21 | 0/1/0 | 1/0/0 | 0/0/0 | 33,573/7,158 | ollama / qwen3.8:27b-mtp-q8_0 | 4 | 1/3 | 4/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Alvarez-Jimenez_2017_reference](drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_reference.md) | — | 1-compartment (no model) | 0 | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Alvarez-Jimenez_2017_reference](drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_reference.md) | — | 1-compartment (no model) | 0 | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.068). The first reading is what the record holds.">cross-check: disputed</span> | [Alvarez-Jimenez_2017_unknown](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_unknown.md) | Diastolic blood pressure ← mecamylamine · direct Emax (saturable) effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Alvarez-Jimenez_2017_unknown](drugs/drug_mecamylamine/pd_Alvarez_Jimenez_2017_unknown.md) | Diastolic blood pressure ← mecamylamine · direct Emax (saturable) effect | — | Alvarez-Jimenez R et al., Pharmacokinetics and pharmacodynamics o…, Journal of psychopharmacolo… (2017) | [10.1177/0269881116681417](https://doi.org/10.1177/0269881116681417) |
 
 ## ADME sites
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 110 matched, 22 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -70,7 +70,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Reuben_2000.pdf` | Reuben M et al., Nicotine-evoked [3H]5-hydroxytryptamine…, Neuropharmacology (2000) | pd | 4 | [10.1016/s0028-3908(99)00147-1](https://doi.org/10.1016/s0028-3908(99)00147-1) | [10670424](https://www.ncbi.nlm.nih.gov/pubmed/10670424) | metadata signals extractable PD data (EC50) |
 | `Salgado_2016.pdf` | Salgado VL, Antagonist pharmacology of desensitizin…, Neurotoxicology (2016) | pd | 4 | [10.1016/j.neuro.2016.08.003](https://doi.org/10.1016/j.neuro.2016.08.003) | [27514662](https://www.ncbi.nlm.nih.gov/pubmed/27514662) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-27T21:46:18.096445+00:00</sub>
+<sub>queue written 2026-09-30T05:53:27.549297+00:00</sub>
 
 ## Screened and excluded
 

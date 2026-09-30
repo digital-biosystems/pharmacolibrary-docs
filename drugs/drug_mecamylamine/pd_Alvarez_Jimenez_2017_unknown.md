@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Mecamylamine_AlvarezJimenez2017_reference&quot;,&quot;label&quot;:&quot;Alvarez-Jimenez_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_mecamylamine/Mecamylamine_AlvarezJimenez2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Diastolic blood pressure — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.068). The first reading is what the record holds.">cross-check: disputed</span>
+# Diastolic blood pressure — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -48,58 +48,29 @@ Alvarez-Jimenez R; Baakman AC; Stevens J; Goulooze SC; Hart EP; Rissmann R; et a
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.068 (3/44 fields) | 41 |
+| `gpt-oss:120b` | secondary_empty | 0.0 (0/12 fields) | 12 |
 
-<details><summary>41 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model_family` | emax | sigmoid_emax | mismatch |
-| `gpt-oss:120b` | `parameters[Q100]` | not captured | 26.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | not captured | 1.04 | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | mecamylamine | not captured | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | not captured | mismatch |
+| `gpt-oss:120b` | `effect_form` | unknown | not captured | mismatch |
+| `gpt-oss:120b` | `model_family` | emax | not captured | mismatch |
 | `gpt-oss:120b` | `parameters[Q100]` | 26.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q100]` | 1.04 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.885 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.150 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 6.91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.326 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | 0.885 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | 0.150 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | 6.91 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | 0.326 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 70.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 29.0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.58 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 11.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 3.66 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.00174 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.568 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.000763 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0132 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 121 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.81 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.12 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 8e-04 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 802 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 676 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 833 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0227 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0284 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.229 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0109 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.00615 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0335 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.279 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 291 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.794 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0.0328 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 12.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q320]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | 17.1 | not captured | only_one_extracted |
 
 </details>
 

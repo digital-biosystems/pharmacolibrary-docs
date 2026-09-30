@@ -26,14 +26,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 00:05 | 13:46 | 0/1/1 | 0/0/0 | 0/0/0 | 31,315/10,464 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-30 06:26 | 2:41 | 0/1/1 | 0/0/0 | 0/0/0 | 17,662/8,949 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Meredith_1985_reference](drugs/drug_trimazosin/Trimazosin_Meredith1985_reference.md) | — | parent + metabolite (no model) | 2 | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Reid_1983_reference](drugs/drug_trimazosin/Trimazosin_Reid1983_reference.md) | — | parent + metabolite (no model) | 3 | Reid JL et al., Pharmacokinetics and pharmacodynamics o…, American heart journal (1983) | [10.1016/0002-8703(83)90179-5](https://doi.org/10.1016/0002-8703(83)90179-5) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Meredith_1985_reference](drugs/drug_trimazosin/Trimazosin_Meredith1985_reference.md) | — | parent + metabolite (no model) | 2 | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Reid_1983_reference](drugs/drug_trimazosin/Trimazosin_Reid1983_reference.md) | — | parent + metabolite (no model) | 3 | Reid JL et al., Pharmacokinetics and pharmacodynamics o…, American heart journal (1983) | [10.1016/0002-8703(83)90179-5](https://doi.org/10.1016/0002-8703(83)90179-5) |
 
 ## ADME sites
 
@@ -67,7 +67,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Meredith_1985.pdf` | Meredith PA et al., Application of pharmacokinetic-pharmaco…, Journal of cardiovascular p… (1985) | popPK | 9 | [10.1097/00005344-198505000-00019](https://doi.org/10.1097/00005344-198505000-00019) | [2410686](https://pubmed.ncbi.nlm.nih.gov/2410686) | The study reports quantitative pharmacokinetic parameters (clearance and half-life) for trimazosin in human subjects, with specific numeric values provided in the text. |
 | `Meredith_1983.pdf` | Meredith PA et al., Pharmacokinetic and pharmacodynamic mod…, Journal of pharmacokinetics… (1983) | pd | 5 | [10.1007/BF01058953](https://doi.org/10.1007/BF01058953) | [6668546](https://www.ncbi.nlm.nih.gov/pubmed/6668546) | metadata signals extractable PD data (pharmacodynamicmodel) |
 
-<sub>queue written 2026-09-27T23:52:34.291296+00:00</sub>
+<sub>queue written 2026-09-30T06:23:40.511938+00:00</sub>
 
 ## Screened and excluded
 

@@ -763,7 +763,10 @@
         if (!gs || !ps || !window.pkSites) return;
         PGXGENES = pkSites.pgxGenes(DB, SEL);
         var cur = gs.value;
-        gs.innerHTML = PGXGENES.map(function (g) { return '<option value="' + pkSites.esc(g.gene) + '">' + pkSites.esc(g.gene) + (g.rank === 0 ? ' — guideline' : '') + '</option>'; }).join('') ||
+        // all pharmacogenes, alphabetical; the ones that matter for this set say why
+        var why = { 0: ' — guideline for this set', 1: ' — in this set (papers)', 2: ' — in this set' };
+        // ● marks a gene relevant to the drugs chosen, with the reason after the name
+        gs.innerHTML = PGXGENES.map(function (g) { return '<option value="' + pkSites.esc(g.gene) + '">' + (why[g.rank] ? '\u25CF ' : '\u00A0\u00A0\u00A0') + pkSites.esc(g.gene) + (why[g.rank] || '') + '</option>'; }).join('') ||
                        '<option value="">no pharmacogene for this set</option>';
         if (cur && PGXGENES.some(function (g) { return g.gene === cur; })) gs.value = cur;
         pgxPhenos();
