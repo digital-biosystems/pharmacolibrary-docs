@@ -26,13 +26,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 10:43 | 3:22 | 0/1/0 | 0/0/0 | 0/0/0 | 50,158/3,494 | ollama / glm-5.3-flash | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-30 02:59 | 1:13 | 0/1/0 | 0/0/0 | 0/0/0 | 8,329/5,533 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kubota_1991_reference](drugs/drug_sodium_benzoate/SodiumBenzoate_Kubota1991_reference.md) | — | nonlinear / manual (no model) | 1 | Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of clinica… (1991) | [10.1007/BF00314969](https://doi.org/10.1007/BF00314969) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Kubota_1991_reference](drugs/drug_sodium_benzoate/SodiumBenzoate_Kubota1991_reference.md) | — | nonlinear / manual (no model) | 1 | Kubota K et al., Dose-dependent pharmacokinetics of benz…, European journal of clinica… (1991) | [10.1007/BF00314969](https://doi.org/10.1007/BF00314969) |
 
 ## ADME sites
 
@@ -71,7 +71,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Esimbekova_2017.pdf` | Esimbekova EN et al., Inhibition effect of food preservatives…, Food chemistry (2017) | pd | 5 | [10.1016/j.foodchem.2017.05.059](https://doi.org/10.1016/j.foodchem.2017.05.059) | [28554639](https://www.ncbi.nlm.nih.gov/pubmed/28554639) | metadata signals extractable PD data (EC50) |
 | `Gartiser_2007.pdf` | Gartiser S et al., Anaerobic inhibition and biodegradation…, Chemosphere (2007) | pd | 5 | [10.1016/j.chemosphere.2006.08.040](https://doi.org/10.1016/j.chemosphere.2006.08.040) | [17097129](https://www.ncbi.nlm.nih.gov/pubmed/17097129) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-27T10:42:57.668116+00:00</sub>
+<sub>queue written 2026-09-30T02:58:24.208650+00:00</sub>
 
 ## Screened and excluded
 

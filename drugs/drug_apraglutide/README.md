@@ -12,7 +12,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 00:59 | 4:03 | 0/1/0 | 0/0/0 | 0/0/0 | 26,605/4,161 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
+| 2026-09-30 02:10 | 0:56 | 0/1/0 | 0/0/0 | 0/0/0 | 1,452/258 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/1 | 1/0 | 0 |
 
 ## popPK records
 
@@ -42,7 +42,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Bolognani_2023.pdf` | Bolognani F et al., Characterization of the Pharmacokinetic…, The Journal of pharmacology… (2023) | popPK | 10 | [10.1124/jpet.123.001582](https://doi.org/10.1124/jpet.123.001582) | [37316329](https://pubmed.ncbi.nlm.nih.gov/37316329) | The paper reports quantitative PK parameters (clearance and volume of distribution) for apraglutide in the text, though specific values for half-life or intercompartmental clearance are not explicitly listed in the provided evidence. |
 | `Hargrove_2020.pdf` | Hargrove DM et al., Pharmacological Characterization of Apr…, The Journal of pharmacology… (2020) | popPK | 9 | [10.1124/jpet.119.262238](https://doi.org/10.1124/jpet.119.262238) | [32075870](https://pubmed.ncbi.nlm.nih.gov/32075870) | The paper reports quantitative PK parameters (clearance and half-life) for apraglutide in rat IV studies, with values explicitly provided in the text. |
 
-<sub>queue written 2026-09-27T00:57:36.000855+00:00</sub>
+<sub>queue written 2026-09-30T02:10:54.995462+00:00</sub>
 
 ## Screened and excluded
 

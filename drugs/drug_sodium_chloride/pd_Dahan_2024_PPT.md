@@ -44,7 +44,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | S-ketamine, R-ketamine, S-norketamine, R-norketamine | S- and R-ketamine and S- and R-norketamine | mismatch |
+| `gpt-oss:120b` | `model_family` | sigmoid_emax | effect_compartment | mismatch |
 
 </details>
 

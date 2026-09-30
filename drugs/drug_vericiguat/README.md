@@ -29,14 +29,14 @@ Vericiguat was approved by the FDA in January 2021 - developed by Merck under th
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 15:58 | 6:39 | 0/0/2 | 0/0/0 | 0/0/0 | 101,661/21,024 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-27 15:58 | 6:39 | 1/0/1 | 0/0/0 | 0/0/0 | 101,661/21,024 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Fritsch_2024_reference](drugs/drug_vericiguat/Vericiguat_Fritsch2024_reference.md) | — | 1-compartment (no model) | 1 | Fritsch A et al., Clinical Pharmacokinetic and Pharmacody…, Clinical pharmacokinetics (2024) | [10.1007/s40262-024-01384-1](https://doi.org/10.1007/s40262-024-01384-1) |
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ruehs_2021_reference](drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md) | — | 1-compartment (no model) | 3 (+4 cov.) | Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.583). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C2_reference failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Ruehs_2021_reference](drugs/drug_vericiguat/Vericiguat_Ruehs2021_reference.md) | model (no simulator) | 1-compartment, oral | 3 (+4 cov.) | Ruehs H et al., Population Pharmacokinetics and Pharmac…, Clinical pharmacokinetics (2021) | [10.1007/s40262-021-01024-y](https://doi.org/10.1007/s40262-021-01024-y) |
 
 ## ADME sites
 

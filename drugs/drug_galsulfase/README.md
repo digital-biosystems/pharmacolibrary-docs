@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 08:15 | 3:06 | 0/0/0 | 0/1/0 | 0/0/0 | 13,959/2,938 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
+| 2026-09-30 02:17 | 1:33 | 0/0/0 | 0/1/0 | 0/0/0 | 5,613/1,680 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 0/2 | 2/0 | 0 |
 
 ## popPK records
 
@@ -61,7 +61,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Jones_1998.pdf` | Jones MZ et al., Recombinant caprine 3H-[N-acetylglucosa…, Journal of molecular neuros… (1998) | popPK | 10 | [10.1385/JMN:11:3:223](https://doi.org/10.1385/JMN:11:3:223) | [10344792](https://pubmed.ncbi.nlm.nih.gov/10344792) | The paper reports quantitative pharmacokinetic parameters (half-lives) for human N-acetylgalactosamine-4-sulfatase (galsulfase) in rats. |
 | `Ruane_2016.pdf` | Ruane T et al., Pharmacodynamics, pharmacokinetics and…, Molecular genetics and meta… (2016) | popPK | 8 | [10.1016/j.ymgme.2015.10.006](https://doi.org/10.1016/j.ymgme.2015.10.006) | [26776148](https://pubmed.ncbi.nlm.nih.gov/26776148) | The study reports PK parameters (AUC, Cmax) for galsulfase in cats, but specific numeric values are not provided in the text, only relative comparisons. |
 
-<sub>queue written 2026-09-27T08:14:48.820220+00:00</sub>
+<sub>queue written 2026-09-30T02:17:17.244999+00:00</sub>
 
 ## Screened and excluded
 

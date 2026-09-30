@@ -25,13 +25,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 15:41 | 7:59 | 0/1/0 | 0/0/0 | 0/0/0 | 38,267/7,111 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-30 03:40 | 1:40 | 0/1/0 | 0/0/0 | 0/0/0 | 7,002/3,108 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Paar_1990_reference](drugs/drug_prenylamine/Prenylamine_Paar1990_reference.md) | — | 1-compartment (no model) | 5 | Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschung (1990) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Paar_1990_reference](drugs/drug_prenylamine/Prenylamine_Paar1990_reference.md) | — | 1-compartment (no model) | 5 | Paar WD et al., Pharmacokinetics of prenylamine racemat…, Arzneimittel-Forschung (1990) | — |
 
 ## ADME sites
 
@@ -72,7 +72,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Itoh_1986.pdf` | Itoh H et al., The binding of the calcium channel bloc…, Biochemical pharmacology (1986) | pd | 4 | [10.1016/0006-2952(86)90516-2](https://doi.org/10.1016/0006-2952(86)90516-2) | [3484629](https://www.ncbi.nlm.nih.gov/pubmed/3484629) | metadata signals extractable PD data (IC50) |
 | `Movsesian_1985.pdf` | Movsesian MA et al., Stimulation of canine cardiac sarcoplas…, Biochemical pharmacology (1985) | pd | 4 | [10.1016/0006-2952(85)90124-8](https://doi.org/10.1016/0006-2952(85)90124-8) | [3155615](https://www.ncbi.nlm.nih.gov/pubmed/3155615) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-27T15:38:57.025972+00:00</sub>
+<sub>queue written 2026-09-30T03:39:08.802439+00:00</sub>
 
 ## Screened and excluded
 

@@ -28,14 +28,14 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 12:34 | 42:35 | 0/2/0 | 0/0/0 | 0/0/0 | 227,767/20,313 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/12 | 13/2 | 0 |
+| 2026-09-30 02:39 | 3:02 | 0/2/0 | 0/0/0 | 0/0/0 | 48,705/7,490 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 3/12 | 13/2 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | — | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | — | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Fornasini_2007_reference](drugs/drug_levocarnitine/Levocarnitine_Fornasini2007_reference.md) | — | 1-compartment (no model) | 0 | Fornasini G et al., A pharmacokinetic model for L-carnitine…, British journal of clinical… (2007) | [10.1111/j.1365-2125.2007.02926.x](https://doi.org/10.1111/j.1365-2125.2007.02926.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Uematsu_1988_reference](drugs/drug_levocarnitine/Levocarnitine_Uematsu1988_reference.md) | — | 1-compartment (no model) | 0 | Uematsu T et al., Pharmacokinetics and safety of l-carnit…, European journal of clinica… (1988) | [10.1007/BF00614562](https://doi.org/10.1007/BF00614562) |
 
 ## ADME sites
 
@@ -62,7 +62,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 400 matched, 61 returned
-- **screened:** 3  ·  **relevant:** 3
+- **screened:** 14  ·  **relevant:** 3
 - **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -81,7 +81,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Robinson_2017.pdf` | Robinson BL et al., Cyclosporine exacerbates ketamine toxic…, Journal of applied toxicolo… (2017) | pgx | 7 | [10.1002/jat.3488](https://doi.org/10.1002/jat.3488) | [28569378](https://www.ncbi.nlm.nih.gov/pubmed/28569378) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Zhang_2025.pdf` | Zhang W et al., Multi-functional Chitosan Polymeric Mic…, Drug delivery and translati… (2025) | pgx | 5 | [10.1007/s13346-024-01597-8](https://doi.org/10.1007/s13346-024-01597-8) | [38643258](https://www.ncbi.nlm.nih.gov/pubmed/38643258) | metadata signals extractable PGX data (CYP3A4) |
 
-<sub>queue written 2026-09-27T12:17:35.808908+00:00</sub>
+<sub>queue written 2026-09-30T02:37:40.769900+00:00</sub>
 
 ## Screened and excluded
 

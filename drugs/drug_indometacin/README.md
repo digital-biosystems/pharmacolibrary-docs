@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;indometacin&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indometacin_Smyth2004v2_reference&quot;,&quot;label&quot;:&quot;Smyth_2004_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Indometacin_Smyth2004_1000_bootstrap_samples&quot;,&quot;label&quot;:&quot;Smyth_2004_1000_bootstrap_samples&quot;,&quot;href&quot;:&quot;drugs/drug_indometacin/Indometacin_Smyth2004_1000_bootstrap_samples.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indometacin_Smyth2004_original_dataset&quot;,&quot;label&quot;:&quot;Smyth_2004_original_dataset&quot;,&quot;href&quot;:&quot;drugs/drug_indometacin/Indometacin_Smyth2004_original_dataset.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Indometacin_Smyth2004v2_reference&quot;,&quot;label&quot;:&quot;Smyth_2004_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # indometacin
 
@@ -18,16 +18,26 @@ Most commonly used in rheumatoid arthritis, ankylosing spondylitis, osteoarthrit
  
 Intravenous indometacin is indicated to induce closure of a hemodynamically significant patent ductus arteriosus in premature infants weighing between 500 and 1750 g when after 48 hours usual medical management (e.g., fluid restriction, diuretics, digitalis, respiratory support, etc.) is ineffective.[L10553]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| indometacin | parent | 357.79 | C19H16ClNO4 | PubChem | [3715](https://pubchem.ncbi.nlm.nih.gov/compound/3715) | Smyth_2004 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 16:46 | 3:39 | 0/1/0 | 0/0/0 | 0/0/0 | 32,524/9,935 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 2/0 | 2/0 | 0 |
+| 2026-09-30 04:35 | 7:08 | 0/1/2 | 0/0/0 | 0/0/0 | 66,155/23,061 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 12/0 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_1000_bootstrap_samples](drugs/drug_indometacin/Indometacin_Smyth2004_1000_bootstrap_samples.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_original_dataset](drugs/drug_indometacin/Indometacin_Smyth2004_original_dataset.md) | — | 1-compartment (no model) | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Smyth_2004_2_reference](drugs/drug_indometacin/Indometacin_Smyth2004v2_reference.md) | held back | 1-compartment, IV | 2 | Smyth JM et al., Intravenous indometacin in preterm infa…, British journal of clinical… (2004) | [10.1111/j.1365-2125.2004.02139.x](https://doi.org/10.1111/j.1365-2125.2004.02139.x) |
 
 ## ADME sites
@@ -64,8 +74,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 10 matched, 10 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 11  ·  **relevant:** 1
+- **records:** 3  ·  extracted 0  ·  needs_review 2  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -76,7 +86,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Tanaka_2016.pdf` | Tanaka S et al., Prediction of fetal ductus arteriosus c…, International journal of cl… (2016) | popPK | 8 | [10.5414/CP202532](https://doi.org/10.5414/CP202532) | [27285464](https://pubmed.ncbi.nlm.nih.gov/27285464) | The study is a PK/PD modeling paper that includes indometacin as a subject drug, but the specific numeric PK parameter values are not present in the provided evidence (abstract only). |
 
-<sub>queue written 2026-09-27T16:43:11.234855+00:00</sub>
+<sub>queue written 2026-09-30T04:33:11.923741+00:00</sub>
 
 ## Screened and excluded
 
@@ -99,4 +109,4 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Uchôa_2009 | irrelevant | 0 | 0 | Indometacin is only a comparator in the anti-inflammatory assay; the PK model and numeric parameters are for PG15, not indometacin. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-07-15 12:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 04:29 UTC</sub>

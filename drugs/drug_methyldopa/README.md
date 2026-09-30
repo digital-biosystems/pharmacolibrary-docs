@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02A&quot;,&quot;href&quot;:&quot;atc/C02A.md&quot;},{&quot;label&quot;:&quot;Methyldopa&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Barnett1977_reference&quot;,&quot;label&quot;:&quot;Barnett_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Methyldopa_Barnett1977_reference&quot;,&quot;label&quot;:&quot;Barnett_1977_reference&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Methyldopa_Liu2025_reference&quot;,&quot;label&quot;:&quot;Liu_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_methyldopa/Methyldopa_Liu2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # Methyldopa
 
@@ -28,13 +28,14 @@ First introduced in 1960 as an antihypertensive agent, methyldopa was considered
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 19:37 | 14:38 | 0/1/0 | 0/0/0 | 0/0/0 | 48,958/6,225 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
+| 2026-09-30 05:19 | 2:45 | 0/2/0 | 0/0/0 | 0/0/0 | 31,820/5,839 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 1/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Barnett_1977_reference](drugs/drug_methyldopa/Methyldopa_Barnett1977_reference.md) | — | 1-compartment (no model) | 3 | Barnett AJ et al., Pharmacokinetics of methyldopa. Plasma…, Clinical and experimental p… (1977) | [10.1111/j.1440-1681.1977.tb02670.x](https://doi.org/10.1111/j.1440-1681.1977.tb02670.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Liu_2025_reference](drugs/drug_methyldopa/Methyldopa_Liu2025_reference.md) | — | 1-compartment (no model) | 0 | Liu X et al., Determining the Optimal Dosing of Methy…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01523-2](https://doi.org/10.1007/s40262-025-01523-2) |
 
 ## ADME sites
 
@@ -62,8 +63,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 112 matched, 46 returned
-- **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **screened:** 3  ·  **relevant:** 1
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -83,7 +84,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Yamamoto_2021.pdf` | Yamamoto J et al., Impact of the catechol-O-methyltransfer…, Journal of neural transmiss… (2021) | pgx | 8 | [10.1007/s00702-020-02267-y](https://doi.org/10.1007/s00702-020-02267-y) | [33136226](https://www.ncbi.nlm.nih.gov/pubmed/33136226) | metadata signals extractable PGX data (COMT, PK/PD-context) |
 | `Weinshilboum_1984.pdf` | Weinshilboum RM, Human pharmacogenetics of methyl conjug…, Federation proceedings (1984) | pgx | 5 | not captured | [6714437](https://www.ncbi.nlm.nih.gov/pubmed/6714437) | metadata signals extractable PGX data (COMT) |
 
-<sub>queue written 2026-09-27T19:32:00.062490+00:00</sub>
+<sub>queue written 2026-09-30T05:18:59.737378+00:00</sub>
 
 ## Screened and excluded
 
@@ -135,4 +136,4 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | van_1988 | not_relevant | 4 | 2 | The paper describes a dose-response relationship and antagonist shift but does not provide numeric PD parameters (e.g., ED50, Emax) or data points in the text to derive them. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 19:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 05:17 UTC</sub>

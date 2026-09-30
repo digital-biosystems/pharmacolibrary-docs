@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Glutamine_Sadaf2024v2_reference&quot;,&quot;label&quot;:&quot;Sadaf_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor volume — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+# tumor volume — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -52,14 +52,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.667 (8/12 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | Plasma asparaginase activity (PAA) | mismatch |
+| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | asparaginase activity (PAA) | mismatch |
 | `gpt-oss:120b` | `model_family` | linear | disease_progression | mismatch |
+| `gpt-oss:120b` | `parameters[Q321]` | 107 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 70.0 | only_one_extracted |
 
 </details>

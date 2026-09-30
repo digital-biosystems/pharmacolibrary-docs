@@ -5,7 +5,7 @@
 
 # potassium chloride — `PotassiumChloride_Li2025_2_dose_administration_group_extende`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.818). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper (Li_2025, cardiovascular emergencies) provides no distribution volume and no clearance or elimination rate for potassium; it is an exposure/outcome study, not a compartmental population PK model. A dimension mismatch was also flagged on a structural parameter, and a reported unit could not be converted to SI, so one parameter reached model assembly without an SI value. A second reader disagreed on the dose compound, reading it as potassium chloride extended-release tablets and potassium citrate granules rather than potassium chloride, and on the identifier assigned to the AUC parameter. Extracted — potassium chloride: C0 3.56 mmol/L, tmax 6 h, Cmax 4.14 mmol/L, kabs 0.37 per hour, t1/2z 13.5 h, AUC∞ 107 mmol·h/L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has potassium chloride, the second reading potassium chloride extended-release tablets and potassium citrate granules; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auclimit].parameter_id`: this record has Q17, the second reading Q88. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -68,8 +68,8 @@ Li X; Qu M; Li H; Li T et al. (2025). Frontiers in cardiovascular medicine 12
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
 - population split: '2-dose administration group(extended-release tablets 1.049 g and granules 1.1178 g)' subgroup of Li_2025 (paper reports 5 populations: 1-dose administration group(extended-release tablets 0.5245 g and granules 0.5589 g), 2-dose administration group(extended-release tablets 1.049 g and granules 1.1178 g), 3-dose administration group(extended-release tablets 1.5735 g and granules 1.6767 g), literature 1(granules 64 meq), literature 2(granules 50 meq))
-- review gap-fill skipped: this record measures 'potassium', not potassium_chloride — the review values are the parent's
 - unit re-normalised: kabs 'per hour' now converts (value unchanged)
+- review gap-fill skipped: this record measures 'potassium', not potassium_chloride — the review values are the parent's
 
 **Extraction notes:**
 - transposed table T2: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
@@ -82,14 +82,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.818 (9/11 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[auclimit].parameter_id` | Q17 | Q19 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | potassium chloride | potassium chloride extended-release tablets and potassium citrate granules | mismatch |
+| `gpt-oss:120b` | `parameters[auclimit].parameter_id` | Q17 | Q88 | mismatch |
 
 </details>
 
@@ -110,7 +109,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['T2:row1:col3'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['T2:row5:col3'] |
 | C5_dimension_Q86 | fail | [substance] / [length] ** 3 | mmol/L | not captured | not captured | ['T2:row0:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | per hour | not captured | not captured | ['T2:row4:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">

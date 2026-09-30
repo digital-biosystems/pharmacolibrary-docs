@@ -5,7 +5,7 @@
 
 # prenylamine — `Prenylamine_Paar1990_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The record for prenylamine in healthy volunteers carries a terminal elimination half-life of 14.1 h, apparent total clearance of 5.8 l/min, relative bioavailability of 82.2%, absolute bioavailability of 15%, and an AUC of the (+)-enantiomer of 20%. The refusal rests on a dimension mismatch on a structural parameter, and the second reader could not confirm the dose compound, primary analyte, or any of the five parameter values, leaving the absolute bioavailability disputed between 15 and null. Because only the paper's abstract was read, these reported summary statistics stand in for a fitted model, so the findings are inconclusive on the fitted values themselves. Extracted — prenylamine: t1/2z 14.1 h, CL 5.8 l/min, Frel 82.2 %, Fab 15 %, AUC 20 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prenylamine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[auc of the (+)-enantiomer].parameter_id`: this record has Q88, the second reading Q21. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -71,24 +71,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (3/15 fields) | 12 |
+| `gpt-oss:120b` | not confirmed | 0.909 (10/11 fields) | 1 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | 15 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absolute bioavailability]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent total clearance]` | 5.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent total clearance]` | not captured | 5.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc of the (+)-enantiomer]` | 20 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[auc of the (+)-enantiomer]` | not captured | 20 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability of prenylamine]` | 82.2 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[relative bioavailability of prenylamine]` | not captured | 82.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 14.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | not captured | 14.1 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | prenylamine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | prenylamine | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[auc of the (+)-enantiomer].parameter_id` | Q88 | Q21 | mismatch |
 
 </details>
 

@@ -27,13 +27,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 09:54 | 11:56 | 0/1/0 | 0/0/0 | 0/0/0 | 80,779/26,253 | openai / gpt-5.6-luna | 6 | 2/4 | 5/1 | 0 |
+| 2026-09-30 03:04 | 1:25 | 0/1/0 | 0/0/0 | 0/0/0 | 14,639/3,296 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 2 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Field_2021_reference](drugs/drug_thioctic_acid/ThiocticAcid_Field2021_reference.md) | — | 1-compartment (no model) | 2 | Field CL et al., PHARMACOKINETICS OF SUBCUTANEOUS ALPHA…, Journal of zoo and wildlife… (2021) | [10.1638/2020-0223](https://doi.org/10.1638/2020-0223) |
 
 ## ADME sites
 
@@ -56,7 +56,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 24 matched, 24 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 5  ·  **relevant:** 2
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -70,7 +70,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Nobakht-Haghighi_2018.pdf` | Nobakht-Haghighi N et al., Regulation of aging and oxidative stres…, Molecular and cellular bioc… (2018) | pd | 4 | [10.1007/s11010-018-3363-3](https://doi.org/10.1007/s11010-018-3363-3) | [29696608](https://www.ncbi.nlm.nih.gov/pubmed/29696608) | metadata signals extractable PD data (EC50) |
 | `Walimbe_2025.pdf` | Walimbe AS et al., Expanded Clinical Phenotype and the Rol…, American journal of medical… (2025) | pgx | 5 | [10.1002/ajmg.a.64014](https://doi.org/10.1002/ajmg.a.64014) | [39898461](https://www.ncbi.nlm.nih.gov/pubmed/39898461) | metadata signals extractable PGX data (SLC5A6) |
 
-<sub>queue written 2026-09-27T09:49:39.424224+00:00</sub>
+<sub>queue written 2026-09-30T03:03:51.319395+00:00</sub>
 
 ## Screened and excluded
 

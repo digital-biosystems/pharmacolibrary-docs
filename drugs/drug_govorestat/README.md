@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 11:08 | 35:01 | 0/0/0 | 0/3/0 | 0/0/0 | 238,546/11,058 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 2/8 | 8/2 | 0 |
+| 2026-09-30 02:36 | 5:02 | 0/0/0 | 0/3/0 | 0/0/0 | 52,919/7,203 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/9 | 9/2 | 0 |
 
 ## popPK records
 
@@ -26,11 +26,11 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span> | [Cao_2025_IgG](drugs/drug_govorestat/pd_Cao_2025_IgG.md) | IgG level ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Darwish_2024_CGI_I](drugs/drug_govorestat/pd_Darwish_2024_CGI_I.md) | Clinical Global Impression–Improvement ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Darwish_2024_CSBS_DP_IT_Social_Composite](drugs/drug_govorestat/pd_Darwish_2024_CSBS_DP_IT_Social_Composite.md) | Communication and Symbolic Behavior Scales Developmental Profile Infant–Toddler Checklist Social Composite ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Darwish_2024_RSBQ](drugs/drug_govorestat/pd_Darwish_2024_RSBQ.md) | Rett Syndrome Behaviour Questionnaire total score ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Darwish_2024_RTT_COMC](drugs/drug_govorestat/pd_Darwish_2024_RTT_COMC.md) | Rett Syndrome Clinician Rating of Ability to Communicate Choices ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.867). The first reading is what the record holds.">cross-check: disputed</span> | [Cao_2025_IgG](drugs/drug_govorestat/pd_Cao_2025_IgG.md) | IgG level ← KJ103 · delayed effect through an effect compartment | — | Cao M et al., Safety, efficacy, and immunogenicity of…, Gene therapy (2025) | [10.1038/s41434-025-00512-1](https://doi.org/10.1038/s41434-025-00512-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_CGI_I](drugs/drug_govorestat/pd_Darwish_2024_CGI_I.md) | Clinical Global Impression–Improvement ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_CSBS_DP_IT_Social_Composite](drugs/drug_govorestat/pd_Darwish_2024_CSBS_DP_IT_Social_Composite.md) | Communication and Symbolic Behavior Scales Developmental Profile Infant–Toddler Checklist Social Composite ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_RSBQ](drugs/drug_govorestat/pd_Darwish_2024_RSBQ.md) | Rett Syndrome Behaviour Questionnaire total score ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span> | [Darwish_2024_RTT_COMC](drugs/drug_govorestat/pd_Darwish_2024_RTT_COMC.md) | Rett Syndrome Clinician Rating of Ability to Communicate Choices ← trofinetide · direct linear effect | — | Darwish M et al., Exposure-Response Efficacy Modeling to…, Advances in therapy (2024) | [10.1007/s12325-024-02796-y](https://doi.org/10.1007/s12325-024-02796-y) |
 | <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Parra-Guillen_2025_titer](drugs/drug_govorestat/pd_Parra_Guillen_2025_titer.md) | ADA ← V937 · indirect response — drug inhibits the production of ADA | — | Parra-Guillen ZP et al., Role of Antidrug Antibodies in Oncolyti…, Clinical pharmacokinetics (2025) | [10.1007/s40262-025-01546-9](https://doi.org/10.1007/s40262-025-01546-9) |
 
 ## ADME sites
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 222 matched, 35 returned
+- **PubMed hits:** 222 matched, 36 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -63,12 +63,14 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Perfetti_2024.pdf` | Perfetti R et al., Safety, Pharmacokinetics, and Pharmacod…, Journal of clinical pharmac… (2024) | popPK | 9 | [10.1002/jcph.2495](https://doi.org/10.1002/jcph.2495) | [38988185](https://pubmed.ncbi.nlm.nih.gov/38988185) | The paper describes a population PK study for govorestat with a 2-compartment model, but specific numeric parameter values (CL, V, Q, ka) are not present in the provided text, only the half-life (~10 h) and qualitative model description. |
 
-<sub>queue written 2026-09-27T11:02:34.430889+00:00</sub>
+<sub>queue written 2026-09-30T02:34:19.225842+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Abulfathi_2021 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for meropenem, not govorestat. |
+| PD | Abulfathi_2021 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PK) model for meropenem, not govorestat, and contains no pharmacodynamic (PD) or exposure-response analysis. |
 | popPK | Aljanabi_2026 | irrelevant | 0 | 0 | The paper describes a computational web server for retrosynthesis and ADMET prediction and does not report any pharmacokinetic parameters for govorestat. |
 | PD | Aljanabi_2026 | not_relevant | 0 | 0 | The paper describes a computational tool for retrosynthesis and ADMET prediction and does not report any pharmacodynamic or exposure-response data for govorestat. |
 | PD | Bailey_2025 | not_relevant | 2 | 1 | The study reports group-level mean changes and a Pearson correlation between galactitol levels and clinical outcomes, but does not provide individual concentration-effect data, dose-response curves, or numeric PD parameters (e.g., Emax, EC50) for govorestat. |

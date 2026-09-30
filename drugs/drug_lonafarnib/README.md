@@ -29,7 +29,7 @@ Merck originally developed Lonafarnib and subsequently licensed it to Eiger Biop
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 13:04 | 29:38 | 0/0/1 | 1/0/0 | 0/0/0 | 299,039/29,092 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 3/5 | 6/2 | 0 |
+| 2026-09-30 02:46 | 7:26 | 0/0/1 | 1/0/0 | 0/0/0 | 74,222/5,687 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 3/5 | 6/2 | 0 |
 
 ## popPK records
 
@@ -74,32 +74,35 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 54 matched, 47 returned
-- **screened:** 1  ·  **relevant:** 1
+- **PubMed hits:** 50 matched, 53 returned
+- **screened:** 5  ·  **relevant:** 2
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Awada_2002.pdf` | Awada A et al., Phase I and pharmacological study of th…, European journal of cancer… (2002) | popPK | 8 | [10.1016/s0959-8049(02)00379-9](https://doi.org/10.1016/s0959-8049(02)00379-9) | [12441264](https://pubmed.ncbi.nlm.nih.gov/12441264) | The paper reports PK parameters for lonafarnib (SCH 66336) including half-life and qualitative descriptions of volume, but specific numeric values for clearance, volume, or compartmental model parameters are not present in the provided text. |
 | `Castaneda_2011.pdf` | Castaneda C et al., Phase I and pharmacokinetic study of lo…, Cancer chemotherapy and pha… (2011) | popPK | 8 | [10.1007/s00280-010-1488-5](https://doi.org/10.1007/s00280-010-1488-5) | [20972873](https://pubmed.ncbi.nlm.nih.gov/20972873) | The paper is a Phase I PK study of lonafarnib, but the provided evidence contains only qualitative descriptions (e.g., "exposure increased with dose") without specific numeric parameter values like CL, V, or t1/2. |
+| `Kieran_2007.pdf` | Kieran MW et al., Phase I and pharmacokinetic study of th…, Journal of clinical oncolog… (2007) | popPK | 8 | [10.1200/JCO.2006.09.4243](https://doi.org/10.1200/JCO.2006.09.4243) | [17634493](https://pubmed.ncbi.nlm.nih.gov/17634493) | The paper is a Phase I PK study of lonafarnib, but the provided evidence contains only the abstract and lacks specific quantitative PK parameter values (e.g., CL, V, t1/2). |
 | `Hahn_2020.pdf` | Hahn HJ et al., In Vitro Evaluation of Farnesyltransfer…, Pathogens (Basel, Switzerla… (2020) | pd | 4 | [10.3390/pathogens9090689](https://doi.org/10.3390/pathogens9090689) | [32842691](https://www.ncbi.nlm.nih.gov/pubmed/32842691) | metadata signals extractable PD data (EC50) |
 | `Yu_2022.pdf` | Yu J et al., Pharmacokinetic Drug-Drug Interactions…, Drug metabolism and disposi… (2022) | pgx | 8 | [10.1124/dmd.121.000401](https://doi.org/10.1124/dmd.121.000401) | [34620694](https://www.ncbi.nlm.nih.gov/pubmed/34620694) | metadata signals extractable PGX data (CYP3A, PK/PD-context) |
 
-<sub>queue written 2026-09-27T12:51:25.246498+00:00</sub>
+<sub>queue written 2026-09-30T02:45:20.991376+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
+| popPK | Appels_2011 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic characterization of a different drug (AZD3409) where lonafarnib serves only as a comparator, and no pharmacokinetic parameters are reported. |
 | popPK | Asselah_2020 | irrelevant | 0 | 0 | The paper is a review of HDV treatments and does not report any quantitative pharmacokinetic parameters for lonafarnib. |
 | popPK | Awada_2002 | relevant | 8 | 2 | The paper reports PK parameters for lonafarnib (SCH 66336) including half-life and qualitative descriptions of volume, but specific numeric values for clearance, volume, or compartmental model parameters are not present in the provided text. |
 | popPK | Balmus_2018 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of Remodelin (a NAT10 inhibitor), while lonafarnib is only mentioned as a standard-of-care comparator in the discussion without any reported PK parameters. |
 | PD | Balmus_2018 | not_relevant | 0 | 0 | The paper studies Remodelin (a NAT10 inhibitor), not lonafarnib, and reports only qualitative efficacy and basic PK data without any exposure-response or dose-response modeling. |
+| popPK | Bjorkli_2022 | irrelevant | 0 | 0 | The study is a mechanistic/therapeutic efficacy trial in mice focusing on Alzheimer's pathology, not a pharmacokinetic study, and no PK parameters for lonafarnib are reported. |
 | popPK | Castaneda_2011 | relevant | 8 | 0 | The paper is a Phase I PK study of lonafarnib, but the provided evidence contains only qualitative descriptions (e.g., "exposure increased with dose") without specific numeric parameter values like CL, V, or t1/2. |
 | popPK | Caviglia_2020 | irrelevant | 0 | 0 | The paper is a narrative review of hepatitis D therapies that discusses lonafarnib's mechanism of action but does not report any quantitative pharmacokinetic parameters. |
 | popPK | Chow_2008 | irrelevant | 2 | 0 | The study mentions pharmacokinetic analysis but the provided evidence contains no quantitative PK parameter values (CL, V, t1/2, etc.) for lonafarnib. |
@@ -107,15 +110,23 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Feldman_2008 | not_relevant | 3 | 1 | The paper reports PK data and a binary pharmacodynamic marker (HDJ-2 farnesylation shift) but explicitly states that no clear correlation between the PD marker and clinical effect could be made, and no numeric PD parameters (Emax, EC50, etc.) are provided. |
 | popPK | Foo_2024 | irrelevant | 0 | 0 | The paper is a mechanistic cellular study on lamin A farnesylation and does not report any pharmacokinetic parameters for lonafarnib. |
 | popPK | Gabriel_2017 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on cellular homeostasis and does not report any pharmacokinetic parameters for lonafarnib. |
+| popPK | Ghosal_2006 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study identifying CYP enzymes responsible for lonafarnib metabolism and does not report quantitative pharmacokinetic disposition parameters (CL, V, etc.). |
 | PD | Ghosal_2006 | not_relevant | 0 | 0 | The paper describes in vitro metabolic pathways and CYP enzyme identification, not pharmacodynamic exposure-response or dose-response relationships. |
 | PGx | Ghosal_2006 | not_relevant | 0 | 0 | The paper identifies the CYP enzymes responsible for lonafarnib metabolism but does not report any pharmacogenomic effects (gene variants) on PK or PD parameters. |
 | popPK | Hahn_2020 | irrelevant | 0 | 0 | no_text gate: only 165 chars of text extracted (&lt; 400) |
 | PD | Hahn_2020 | not_relevant | 0 | 0 | The paper evaluates a farnesyltransferase inhibitor against Naegleria fowleri in vitro and does not mention lonafarnib or report any pharmacodynamic parameters for it. |
+| popPK | Hongnak_2023 | irrelevant | 0 | 0 | The paper is a structure-activity relationship (SAR) and in-vitro cytotoxicity study of lonafarnib derivatives, reporting no pharmacokinetic parameters such as clearance, volume, or half-life. |
 | PD | Hongnak_2023 | not_relevant | 3 | 3 | The paper reports IC50 values for lonafarnib and its derivatives in cell lines, which are single-point potency metrics rather than a full exposure-response or dose-response curve with derived PD parameters (e.g., Emax, slope, EC50 from a fitted model). |
+| popPK | Hsieh_2003 | irrelevant | 2 | 0 | The paper is a method development study for HPLC-APPI-MS/MS that uses lonafarnib only as a test compound to validate the analytical method, and no specific quantitative PK parameter values for lonafarnib are reported in the provided evidence. |
 | PGx | Jung_2023 | not_relevant | 0 | 0 | The paper is a review on the regulation of protein prenylation and does not report pharmacogenomic effects on lonafarnib PK/PD parameters. |
+| popPK | Keskin_2023 | irrelevant | 0 | 0 | The paper is a narrative review of emerging drugs for hepatitis D and does not report original quantitative pharmacokinetic parameters for lonafarnib. |
 | popPK | Khuri_2004 | irrelevant | 2 | 0 | The study mentions pharmacokinetics but provides no quantitative disposition parameters (CL, V, t1/2) for lonafarnib in the evidence. |
+| popPK | Kieran_2007 | relevant | 8 | 0 | The paper is a Phase I PK study of lonafarnib, but the provided evidence contains only the abstract and lacks specific quantitative PK parameter values (e.g., CL, V, t1/2). |
 | popPK | Kim_1999 | irrelevant | 0 | 0 | The paper studies SCH 66336, not lonafarnib. |
+| popPK | Lempp_2019 | irrelevant | 0 | 0 | The paper is an in-vitro virology study reporting antiviral IC50 values for lonafarnib in cell culture, not pharmacokinetic disposition parameters (CL, V, etc.). |
+| popPK | Medeiros_2007 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of tipifarnib's P-glycoprotein inhibitory properties, and lonafarnib is only mentioned as a comparator in the introduction without any pharmacokinetic data. |
 | popPK | Milojkovic_2013 | irrelevant | 2 | 0 | The study mentions pharmacokinetics but the provided evidence contains no quantitative PK parameters (CL, V, t1/2, etc.) for lonafarnib. |
+| popPK | Moorthy_2013 | irrelevant | 0 | 0 | The paper is a comprehensive review of farnesyltransferase inhibitors focusing on structural analysis and does not report original quantitative pharmacokinetic parameters for lonafarnib. |
 | PD | Moorthy_2013 | not_relevant | 1 | 0 | The text is a structural review of farnesyltransferase inhibitors that mentions lonafarnib clinical studies but provides no numeric pharmacodynamic parameters, exposure-response data, or dose-effect curves. |
 | popPK | Negro_2023 | irrelevant | 0 | 0 | The paper is a clinical review of Hepatitis D that mentions lonafarnib only as a therapeutic agent with efficacy data, containing no pharmacokinetic parameters. |
 | PGx | Okawa_2025 | not_relevant | 0 | 0 | The paper is an epidemiological survey of HGPS prevalence and clinical features in Japan, not a pharmacogenomic study of lonafarnib PK/PD. |
@@ -128,6 +139,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Soriano_2017 | irrelevant | 0 | 0 | The paper is a review of hepatitis delta and HIV infection that mentions lonafarnib only as a therapeutic class (prenylation inhibitor) without reporting any pharmacokinetic parameters. |
 | popPK | Soriano_2023 | irrelevant | 0 | 0 | The paper is a review of bulevirtide (BLV) for hepatitis delta, and lonafarnib is only mentioned as a future combination therapy agent without any pharmacokinetic data. |
 | popPK | Soriano_2023_2 | irrelevant | 0 | 0 | The paper is a narrative review discussing the clinical management of Hepatitis Delta and HIV, mentioning lonafarnib only as a therapeutic agent without reporting any pharmacokinetic parameters or quantitative disposition data. |
+| popPK | Taylor_2008 | irrelevant | 0 | 0 | The study focuses on pharmacodynamic effects (growth inhibition, apoptosis, biomarkers) and does not report quantitative pharmacokinetic parameters for lonafarnib. |
 | PD | Taylor_2008 | not_relevant | 2 | 1 | The paper reports qualitative pharmacodynamic effects (growth inhibition, apoptosis, biomarker shifts) of a drug combination but does not provide numeric concentration-effect curves, dose-response parameters (Emax, EC50), or a formal PK/PD model fit. |
 | popPK | Theodore_2005 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of gemcitabine and the efficacy of SCH66336 (tipifarnib), not the quantitative PK parameters of lonafarnib. |
 | PGx | Tong_2006 | not_relevant | 0 | 0 | The paper describes the analytical identification of unstable metabolites of lonafarnib using mass spectrometry and does not report any pharmacogenomic effects on PK or PD parameters. |
@@ -136,6 +148,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Wong_2011 | relevant | 4 | 2 | The study reports qualitative PK parameters (half-life, Tmax) for lonafarnib but lacks quantitative disposition parameters like clearance (CL) or volume (V) required for population-PK modeling. |
 | PD | Wong_2011 | not_relevant | 1 | 0 | The text mentions pharmacodynamics as an endpoint but provides no numeric PD parameters, concentration-effect data, or dose-response curves. |
 | PGx | Yu_2022 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (DDIs) involving lonafarnib, not pharmacogenomic effects (gene variants) on its PK/PD parameters. |
+| popPK | Zhu_2007 | irrelevant | 4 | 0 | The study reports relative bioavailability and variability percentages but does not provide absolute quantitative disposition parameters (CL, V, t1/2) or a compartmental model for lonafarnib. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-27 12:51 UTC</sub>

@@ -563,7 +563,8 @@
   function renderDdi(root, M, opts) {
     var focus = opts.focus, showDDI = opts.ddi !== false;
     if (!showDDI) { root.innerHTML = '<p class="pks-empty">co-administration layer is off.</p>'; return; }
-    if (!M.affected.length) { root.innerHTML = '<p class="pks-empty">No perpetrator \u2192 victim pair in this set: no drug here inhibits or induces an actor another one is a substrate of.</p>'; return; }
+    var pgxRows = pgxPerpetrators(M, opts);
+    if (!M.affected.length && !pgxRows.length) { root.innerHTML = '<p class="pks-empty">No perpetrator \u2192 victim pair in this set: no drug here inhibits or induces an actor another one is a substrate of, and no patient phenotype acts on one.</p>'; return; }
     var cell = {};
     M.affected.forEach(function (a) {
       var k = a.perpetrator + '|' + a.victim, c = cell[k] = cell[k] || {};
@@ -587,7 +588,22 @@
       });
       h += '</tr>';
     });
-    root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pks-meta">\u22A3 inhibits the actor \u00b7 \u2191 induces it; the column drug is that actor\u2019s substrate. Hover a cell for the tissue.</p>';
+    // the patient's phenotypes as perpetrators: a reduced-function phenotype acts on a victim
+    // drug the way an inhibitor of that gene would (\u22A3), an increased-function one the way an
+    // inducer would (\u2191); \u2691 marks a guideline recommendation without a PK direction
+    pgxRows.forEach(function (p) {
+      h += '<tr class="pks-pgxrow' + (focus ? ' dim' : '') + '"><th class="perp"><i class="pgx"></i>' + esc(p.gene) + ' <span class="pks-meta">' + esc(p.label) + '</span></th>';
+      M.drugs.forEach(function (v) {
+        var e = p.byDrug[v.slug];
+        if (!e) { h += '<td class="none' + (focus && focus !== v.slug ? ' dim' : '') + '"></td>'; return; }
+        var glyph = e.glyph, tip = p.gene + ' ' + p.label + ' \u2192 ' + v.name + ': ' + e.words +
+            (e.guidelines ? ' \u00b7 guideline: ' + e.guidelines : '');
+        h += '<td class="hit' + (focus && focus !== v.slug ? ' dim' : '') + '"><span class="pks-act" title="' + esc(tip) + '"><span class="mono">' + esc(p.gene) + '</span> ' + glyph + '</span></td>';
+      });
+      h += '</tr>';
+    });
+    root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pks-meta">\u22A3 inhibits the actor \u00b7 \u2191 induces it; the column drug is that actor\u2019s substrate. Hover a cell for the tissue.' +
+      (pgxRows.length ? ' Shaded rows are the patient\u2019s phenotypes: a reduced-function phenotype acts like an inhibitor of the gene (\u22A3), an increased-function one like an inducer (\u2191); \u2691 is a guideline recommendation without a PK direction. Hover for the effect.' : '') + '</p>';
   }
 
   // "Pharmacogenomics for this patient": per drug and chosen phenotype — the direction, a
@@ -617,6 +633,33 @@
       h += '<tr><td><i style="background:' + COLORS[i] + '"></i>' + esc(nameOf(M, e.drug)) + '</td><td class="mono">' + esc(e.gene) + '<br><span class="pkq-meta">' + esc(e.label) + '</span></td><td>' + eff + '</td><td>' + pap + '</td><td>' + gl + '</td></tr>';
     });
     root.innerHTML = '<div class="pks-scroll">' + h + '</table></div><p class="pkq-meta">\u25B2/\u25BC mark the same direction on the heat-map cells and anatomogram slots where the gene acts. Guideline text is quoted from CPIC/DPWG via ClinPGx \u2014 read the guideline before a clinical decision. The phenotypes stay in this page\u2019s link; nothing is stored or sent.</p>';
+  }
+
+  // one row per chosen patient phenotype that acts on at least one drug of the set
+  function pgxPerpetrators(M, opts) {
+    var rows = [];
+    (opts.pgx || []).forEach(function (sel) {
+      var hits = (M.pgx || []).filter(function (e) { return e.gene === sel.gene && e.code === sel.code; });
+      if (!hits.length) return;
+      var byDrug = {};
+      hits.forEach(function (e) {
+        var a = ACT[e.code], gl = (e.guidelines || []).length;
+        var glyph = null, words = '';
+        if (e.dir && e.dir.sign) {
+          glyph = a < 0 ? '\u22A3' : '\u2191';
+          words = e.dir.words;
+        } else if (gl) {
+          glyph = '\u2691';
+          words = 'guideline recommendation (no PK direction)';
+        }
+        if (!glyph) return;
+        byDrug[e.drug] = { glyph: glyph, words: words,
+                           guidelines: (e.guidelines || []).map(function (g) { return (g.source || '') + (g.avoid ? ' alternative/avoid' : ''); })
+                                     .filter(function (x, i, arr) { return x && arr.indexOf(x) === i; }).join(', ') };
+      });
+      if (Object.keys(byDrug).length) rows.push({ gene: sel.gene, label: hits[0].label || sel.code, byDrug: byDrug });
+    });
+    return rows;
   }
 
   function renderShared(root, M) {

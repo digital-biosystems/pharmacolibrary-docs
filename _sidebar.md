@@ -829,7 +829,7 @@
         - [galsulfase <sub>(0/0/0)</sub>](drugs/drug_galsulfase/)
         - [givosiran <sub>(0/0/0)</sub>](drugs/drug_givosiran/)
         - glepaglutide <sub>(0/0/0)</sub>
-        - [glutamine <sub>(1/0/0)</sub>](drugs/drug_glutamine/)
+        - [glutamine <sub>(0/0/0)</sub>](drugs/drug_glutamine/)
         - [glycerol phenylbutyrate <sub>(0/0/0)</sub>](drugs/drug_glycerol_phenylbutyrate/)
         - [govorestat <sub>(0/0/0)</sub>](drugs/drug_govorestat/)
         - [idursulfase <sub>(0/2/0)</sub>](drugs/drug_idursulfase/)
@@ -1297,7 +1297,7 @@
         - [trapidil <sub>(0/0/0)</sub>](drugs/drug_trapidil/)
         - trolnitrate <sub>(0/0/0)</sub>
         - trolnitrate combinations <sub>(0/0/0)</sub>
-        - [vericiguat <sub>(0/0/0)</sub>](drugs/drug_vericiguat/)
+        - [vericiguat <sub>(1/0/0)</sub>](drugs/drug_vericiguat/)
       - [C01E Other Cardiac Preparations](atc/C01E.md)
         - [acadesine <sub>(0/0/0)</sub>](drugs/drug_acadesine/)
         - [acoramidis <sub>(0/0/0)</sub>](drugs/drug_acoramidis/)

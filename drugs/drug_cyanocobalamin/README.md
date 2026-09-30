@@ -42,13 +42,13 @@ Vitamin B12 supplements are widely available and indicated in patients who requi
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 00:05 | 1:59 | 0/1/0 | 0/0/0 | 0/0/0 | 38,712/2,091 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
+| 2026-09-30 03:27 | 1:34 | 0/1/0 | 0/0/0 | 0/0/0 | 21,287/4,299 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 5/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | — | 1-compartment (no model) | 0 | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Nava-Ocampo_2005_reference](drugs/drug_cyanocobalamin/Cyanocobalamin_NavaOcampo2005_reference.md) | — | 1-compartment (no model) | 0 | Nava-Ocampo AA et al., Pharmacokinetics of high doses of cyano…, Clinical and experimental p… (2005) | [10.1111/j.1440-1681.2005.04145.x](https://doi.org/10.1111/j.1440-1681.2005.04145.x) |
 
 ## ADME sites
 
@@ -80,7 +80,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 25 matched, 24 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 7  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -96,7 +96,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Kurpad_2023.pdf` | Kurpad AV et al., Bioavailability and daily requirement o…, The American journal of cli… (2023) | popPK | 8 | [10.1016/j.ajcnut.2023.08.020](https://doi.org/10.1016/j.ajcnut.2023.08.020) | [38044024](https://pubmed.ncbi.nlm.nih.gov/38044024) | The study reports bioavailability and excretion rates using a 2-compartment model, but specific PK parameters like clearance (CL) or volume (V) are not explicitly listed in the provided text. |
 | `Egler_2023.pdf` | Egler SG et al., Acute toxicity of single and combined r…, Ecotoxicology and environme… (2023) | pd | 5 | [10.1016/j.ecoenv.2023.114538](https://doi.org/10.1016/j.ecoenv.2023.114538) | [36652740](https://www.ncbi.nlm.nih.gov/pubmed/36652740) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-19T00:03:20.462167+00:00</sub>
+<sub>queue written 2026-09-30T03:26:15.520151+00:00</sub>
 
 ## Screened and excluded
 

@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 08:28 | 12:39 | 0/0/0 | 0/1/0 | 0/0/0 | 44,858/3,290 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 4/2 | 0 |
+| 2026-09-30 02:21 | 3:57 | 0/0/0 | 0/1/0 | 0/0/0 | 9,007/1,336 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 1/5 | 4/2 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Fontana_2026_TTR](drugs/drug_givosiran/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span> | [Fontana_2026_TTR](drugs/drug_givosiran/pd_Fontana_2026_TTR.md) | serum transthyretin ← vutrisiran · delayed effect through an effect compartment | — | Fontana M et al., Vutrisiran-Mediated Knockdown of Transt…, Clinical pharmacokinetics (2026) | [10.1007/s40262-026-01651-3](https://doi.org/10.1007/s40262-026-01651-3) |
 
 ## ADME sites
 
@@ -48,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 37 matched, 35 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -64,7 +64,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Fan_2026.pdf` | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | popPK | 8 | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) | [42112102](https://pubmed.ncbi.nlm.nih.gov/42112102) | The paper describes a computational PK/PD model for givosiran, but the specific numeric parameter values are not present in the provided evidence. |
 | `Vassiliou_2021.pdf` | Vassiliou D et al., A Drug-Drug Interaction Study Evaluatin…, Clinical pharmacology and t… (2021) | pgx | 7 | [10.1002/cpt.2419](https://doi.org/10.1002/cpt.2419) | [34510420](https://www.ncbi.nlm.nih.gov/pubmed/34510420) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-09-27T08:24:46.031961+00:00</sub>
+<sub>queue written 2026-09-30T02:21:21.050433+00:00</sub>
 
 ## Screened and excluded
 

@@ -22,20 +22,20 @@ Vestronidase alfa was FDA-approved on November 17th, 2017 under the trade name M
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 11:23 | 3:46 | 0/1/0 | 1/0/0 | 0/0/0 | 43,477/26,549 | openai / gpt-5.6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-30 03:22 | 2:59 | 0/1/0 | 1/0/0 | 0/0/0 | 23,835/12,438 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) | — | 2-compartment (no model) | 4 | Qi (2019) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Qi_2019_reference](drugs/drug_vestronidase_alfa/VestronidaseAlfa_Qi2019_reference.md) | — | 2-compartment (no model) | 4 | Qi (2019) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019_uCS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> | [Qi_2019_uDS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uCS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uCS.md) | urinary chondroitin sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | [Qi_2019_uDS](drugs/drug_vestronidase_alfa/pd_Qi_2019_uDS.md) | urinary dermatan sulfate ← vestronidase alfa · direct Emax (saturable) effect | — | Qi (2019) | — |
 
 ## ADME sites
 

@@ -85,7 +85,7 @@ Muntau AC; Burlina A; Eyskens F; Freisinger P; De Laet C; Leuzzi V; et al. et al
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab3:row1:col1', 'Tab3:row1:col2', 'Muntau_2017_table_4:row0:col1', 'Muntau_2017_table_4:row0:col2', 'Muntau_2017_table_4:row0:col3', 'Muntau_2017_table_4:row0:col4'] |

@@ -26,13 +26,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 09:38 | 3:46 | 0/0/1 | 0/0/0 | 0/0/0 | 16,245/4,918 | openai / gpt-5.6-luna | 2 | 1/1 | 2/0 | 0 |
+| 2026-09-30 03:02 | 1:02 | 0/0/1 | 0/0/0 | 0/0/0 | 9,555/2,871 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marier_2010_reference](drugs/drug_teduglutide/Teduglutide_Marier2010_reference.md) | — | 1-compartment (no model) | 1 | Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010) | [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Marier_2010_reference](drugs/drug_teduglutide/Teduglutide_Marier2010_reference.md) | — | 1-compartment (no model) | 1 | Marier JF et al., Population pharmacokinetics of teduglut…, Journal of clinical pharmac… (2010) | [10.1177/0091270009342252](https://doi.org/10.1177/0091270009342252) |
 
 ## ADME sites
 
@@ -53,7 +53,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 8 matched, 8 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -67,7 +67,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Roepcke_2014.pdf` | Roepcke S et al., Utility of a population pharmacokinetic…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP201942](https://doi.org/10.5414/CP201942) | [25066226](https://pubmed.ncbi.nlm.nih.gov/25066226) | This is a teduglutide population-PK study, but no numeric disposition parameters are provided in the evidence. |
 | `Marier_2021.pdf` | Marier JF et al., Population pharmacokinetics and exposur…, Clinical and translational… (2021) | pd | 5 | [10.1111/cts.13117](https://doi.org/10.1111/cts.13117) | [34402197](https://www.ncbi.nlm.nih.gov/pubmed/34402197) | metadata signals extractable PD data (exposure-response) |
 
-<sub>queue written 2026-09-27T09:37:50.431696+00:00</sub>
+<sub>queue written 2026-09-30T03:01:49.725375+00:00</sub>
 
 ## Screened and excluded
 

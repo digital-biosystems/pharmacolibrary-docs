@@ -20,7 +20,7 @@ In February 2014, metreleptin was approved by the FDA for the treatment of compl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 13:42 | 14:54 | 0/1/0 | 0/0/0 | 0/0/0 | 76,373/6,978 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
+| 2026-09-30 02:53 | 2:06 | 0/1/0 | 0/0/0 | 0/0/0 | 23,415/6,309 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
 
 ## popPK records
 
@@ -48,7 +48,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 35 matched, 31 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 6  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -62,7 +62,7 @@ _3 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Wong_2004.pdf` | Wong SL et al., Leptin hormonal kinetics in the fed sta…, The Journal of clinical end… (2004) | popPK | 10 | [10.1210/jc.2003-031931](https://doi.org/10.1210/jc.2003-031931) | [15181040](https://pubmed.ncbi.nlm.nih.gov/15181040) | The paper reports quantitative pharmacokinetic parameters (half-life, clearance, volume of distribution) for metreleptin (r-metHuLeptin) with specific numeric values provided in the text. |
 | `Chan_2008.pdf` | Chan JL et al., Pharmacokinetics of subcutaneous recomb…, Clinical pharmacokinetics (2008) | popPK | 9 | [10.2165/00003088-200847110-00006](https://doi.org/10.2165/00003088-200847110-00006) | [18840030](https://pubmed.ncbi.nlm.nih.gov/18840030) | The study is a PK study of metreleptin (r-metHuLeptin) reporting qualitative changes in clearance and half-life, but specific numeric parameter values (CL, V, t1/2) are not present in the provided text. |
 
-<sub>queue written 2026-09-27T13:37:02.953805+00:00</sub>
+<sub>queue written 2026-09-30T02:52:04.182708+00:00</sub>
 
 ## Screened and excluded
 

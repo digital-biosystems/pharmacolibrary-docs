@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nedosiran_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# spot urine oxalate-to-creatinine ratio — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.231). The first reading is what the record holds.">cross-check: disputed</span>
+# spot urine oxalate-to-creatinine ratio — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -46,16 +46,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.231 (3/13 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | unknown | proportional | mismatch |
 | `gpt-oss:120b` | `parameters[Q30]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q311]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q37]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q322]` | 34 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | not captured | only_one_extracted |

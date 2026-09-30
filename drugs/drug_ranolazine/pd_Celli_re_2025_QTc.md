@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01E&quot;,&quot;href&quot;:&quot;atc/C01E.md&quot;},{&quot;label&quot;:&quot;ranolazine&quot;,&quot;href&quot;:&quot;drugs/drug_ranolazine/&quot;},{&quot;label&quot;:&quot;Celli\u00e8re_2025 \u00b7 PD placebo-corrected QTc change from baseline&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# placebo-corrected QTc change from baseline — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+# placebo-corrected QTc change from baseline — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -38,14 +38,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | quinidine | active compound | mismatch |
+| `gpt-oss:120b` | `driver_compound` | quinidine | unknown | mismatch |
 | `gpt-oss:120b` | `model_family` | emax | linear | mismatch |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | not captured | only_one_extracted |
 
 </details>
 

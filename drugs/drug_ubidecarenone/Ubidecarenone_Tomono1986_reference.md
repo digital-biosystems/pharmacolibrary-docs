@@ -5,7 +5,7 @@
 
 # ubidecarenone — `Ubidecarenone_Tomono1986_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.1). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The paper reports no distribution volume and no clearance or elimination rate; it is an exposure/outcome paper. Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has deuterium-labelled coenzyme Q10, the second reading d5-CoQ10; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has deuterium-labelled coenzyme Q10, the second reading d5-CoQ10; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -70,20 +70,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.1 (1/10 fields) | 9 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[at]` | not captured | 6.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral administration of]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [] | [['none', '', '']] | mismatch |
+| `gpt-oss:120b` | `parameters[100 mg of d5-coq10]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean plasma coq10 level attained a peak]` | not captured | 1.004 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak]` | 1.004 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peak]` | not captured | 1.004 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 33.19 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal elimination half-life]` | not captured | 33.19 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 33.19 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[time to peak]` | not captured | 6.5 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | deuterium-labelled coenzyme Q10 | d5-CoQ10 | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | coenzyme Q10 | d5-CoQ10 | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | coenzyme Q10 | CoQ10 | mismatch |
 
 </details>
 

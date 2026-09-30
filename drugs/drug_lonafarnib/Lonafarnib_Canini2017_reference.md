@@ -26,7 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
-Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; Kleiner DE; Idilman R; Yurdaydin C; Glenn JS; Heller T; Dahari H et al. (2017). Hepatology communications 1
+Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; et al. et al. (2017). Hepatology communications 1
   ·  DOI: [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043)
 
 ## Model component

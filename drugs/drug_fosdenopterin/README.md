@@ -22,7 +22,7 @@ Fosdenopterin was approved by the FDA on Februrary 26, 2021, for the reduction o
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 08:12 | 4:14 | 0/0/0 | 0/1/0 | 0/0/0 | 21,072/3,779 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 0/21 | 19/2 | 0 |
+| 2026-09-30 02:16 | 3:21 | 0/0/0 | 0/1/0 | 0/0/0 | 31,315/4,435 | ollama / qwen3.8:27b-mtp-q8_0 | 21 | 0/21 | 19/2 | 0 |
 
 ## popPK records
 
@@ -55,8 +55,8 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 10962 matched, 71 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 11015 matched, 72 returned
+- **screened:** 3  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -68,7 +68,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Stahl_2002.pdf` | Stahl M et al., Human microdialysis, Current pharmaceutical biot… (2002) | pd | 5 | [10.2174/1389201023378373](https://doi.org/10.2174/1389201023378373) | [12022259](https://www.ncbi.nlm.nih.gov/pubmed/12022259) | metadata signals extractable PD data (PK-PD) |
 
-<sub>queue written 2026-09-27T08:10:22.434088+00:00</sub>
+<sub>queue written 2026-09-30T02:15:04.012370+00:00</sub>
 
 ## Screened and excluded
 
@@ -159,6 +159,8 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Trijzelaar_1993 | irrelevant | 0 | 0 | The paper is a regulatory review on virus removal validation and contains no pharmacokinetic data for fosdenopterin. |
 | popPK | Vajo_2017 | irrelevant | 0 | 0 | The paper is a clinical trial regarding influenza vaccine immunogenicity and does not involve fosdenopterin or pharmacokinetic parameters. |
 | PD | Vajo_2017 | not_relevant | 0 | 0 | The paper studies influenza vaccine dose-response, not fosdenopterin pharmacodynamics. |
+| popPK | Vicente_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for infliximab, not fosdenopterin. |
+| PD | Vicente_2026 | not_relevant | 0 | 0 | The paper reports a population pharmacokinetic (PopPK) model for subcutaneous infliximab, not fosdenopterin, and contains no pharmacodynamic or exposure-response analysis. |
 | popPK | Vinnemeier_2014 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the immunogenicity and safety of an influenza vaccine, not a pharmacokinetic study of fosdenopterin. |
 | popPK | Walenga_2002 | irrelevant | 0 | 0 | The paper discusses fondaparinux, not fosdenopterin. |
 | popPK | Wang_2026 | irrelevant | 0 | 0 | The paper is a population pharmacokinetic model library for polymyxin B, not fosdenopterin. |

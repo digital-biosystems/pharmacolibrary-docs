@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Nedosiran_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_nedosiran/Nedosiran_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Uox — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.269). The first reading is what the record holds.">cross-check: disputed</span>
+# Uox — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.304). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -48,31 +48,28 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.269 (7/26 fields) | 19 |
+| `gpt-oss:120b` | not confirmed | 0.304 (7/23 fields) | 16 |
 
-<details><summary>19 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[Q30]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q30]` | not captured | 8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q340]` | not captured | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q342]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q342]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q342]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 11 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 0 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q49]` | not captured | 7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q91]` | not captured | 84 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q91]` | not captured | 1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q91]` | not captured | 2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q91]` | not captured | 5 | only_one_extracted |
 
 </details>
 

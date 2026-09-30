@@ -12,7 +12,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-19 00:34 | 12:41 | 0/0/0 | 1/0/0 | 0/0/0 | 290,736/5,118 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 0/11 | 12/1 | 0 |
+| 2026-09-30 03:34 | 1:48 | 0/0/0 | 1/0/0 | 0/0/0 | 15,108/1,544 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 0/13 | 12/1 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 55 matched, 35 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -55,7 +55,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Hotta_2024.pdf` | Hotta K et al., Pharmacokinetic profiles of methylcobal…, Journal of pharmacological… (2024) | popPK | 9 | [10.1016/j.vascn.2024.107552](https://doi.org/10.1016/j.vascn.2024.107552) | [39245417](https://pubmed.ncbi.nlm.nih.gov/39245417) | The paper is a primary PK study for methylcobalamin (mecobalamin) in rats, but the provided evidence contains only qualitative descriptions (e.g., "complete bioavailability") and lacks specific numeric parameter values like CL, V, or t1/2. |
 
-<sub>queue written 2026-09-19T00:33:10.514520+00:00</sub>
+<sub>queue written 2026-09-30T03:34:26.879711+00:00</sub>
 
 ## Screened and excluded
 

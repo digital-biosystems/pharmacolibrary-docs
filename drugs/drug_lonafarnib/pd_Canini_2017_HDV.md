@@ -27,7 +27,7 @@
 - **effect:** inhibition/proportional
 
 ## Citation
-Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; Kleiner DE; Idilman R; Yurdaydin C; Glenn JS; Heller T; Dahari H et al. (2017). Hepatology communications 1
+Canini L; Koh C; Cotler SJ; Uprichard SL; Winters MA; Han MAT; et al. et al. (2017). Hepatology communications 1
   ·  DOI: [10.1002/hep4.1043](https://doi.org/10.1002/hep4.1043)
 
 ## Parameters
@@ -59,9 +59,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.0 (0/17 fields) | 17 |
+| `gpt-oss:120b` | secondary_empty | 0.0 (0/18 fields) | 18 |
 
-<details><summary>17 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -74,6 +74,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q320]` | 1.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | 227 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | 62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q325]` | 1.48 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.37 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q47]` | 0.045 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q47]` | 39 | not captured | only_one_extracted |

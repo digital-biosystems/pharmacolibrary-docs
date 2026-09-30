@@ -21,7 +21,7 @@ Lumasiran was granted FDA approval on 23 November 2020.[L23394]
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 13:23 | 19:26 | 0/0/0 | 0/2/0 | 0/0/0 | 127,750/10,945 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 4/1 | 0 |
+| 2026-09-30 02:50 | 3:59 | 0/0/0 | 0/2/0 | 0/0/0 | 27,986/8,950 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 4/1 | 0 |
 
 ## popPK records
 
@@ -55,7 +55,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 ## Coverage
 
-- **PubMed hits:** 24 matched, 22 returned
+- **PubMed hits:** 25 matched, 23 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -68,7 +68,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Fan_2026.pdf` | Fan X et al., A computational model-powered platform…, Molecular therapy. Nucleic… (2026) | pd | 5 | [10.1016/j.omtn.2026.102936](https://doi.org/10.1016/j.omtn.2026.102936) | [42112102](https://www.ncbi.nlm.nih.gov/pubmed/42112102) | metadata signals extractable PD data (PK/PD) |
 
-<sub>queue written 2026-09-27T13:19:14.136096+00:00</sub>
+<sub>queue written 2026-09-30T02:48:05.220072+00:00</sub>
 
 ## Screened and excluded
 
@@ -100,6 +100,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Michael_2023 | not_relevant | 2 | 1 | The paper reports clinical efficacy outcomes (percent change in plasma oxalate) but does not provide a concentration-effect or dose-response analysis with numeric PD parameters (e.g., Emax, EC50) or a PK/PD model fit. |
 | popPK | Ranasinghe_2023 | irrelevant | 0 | 0 | The paper is a general introductory review of siRNA technology and does not report specific quantitative pharmacokinetic parameters for lumasiran. |
 | PD | Ranasinghe_2023 | not_relevant | 1 | 0 | The text is a general introductory review of siRNA technology and mentions lumasiran only as a licensed example without providing specific pharmacodynamic data, exposure-response curves, or numeric PD parameters. |
+| PGx | Soncin_2026 | not_relevant | 2 | 5 | The study assesses the association between AGXT genotype and clinical response (PD) to lumasiran but finds no significant association, reporting only a non-significant trend. |
 | popPK | Sten_2023 | relevant | 8 | 2 | The paper analyzes lumasiran PK as part of a class effect study and mentions compartmental models, but specific numeric parameter values (CL, V, Ka) for lumasiran are not present in the provided text, appearing only in supplementary tables or figures. |
 | PD | Sten_2023 | not_relevant | 0 | 0 | The paper focuses exclusively on the pharmacokinetics (PK) of GalNAc-siRNAs, including dose-proportionality and compartmental models, but does not report any pharmacodynamic (PD) or exposure-response relationships for lumasiran. |
 | popPK | Yue_2019 | irrelevant | 0 | 0 | The paper is a review of substrate reduction therapy for inborn errors of metabolism and does not report pharmacokinetic parameters for lumasiran. |

@@ -98,7 +98,7 @@ Qi Y; Mould DR; Zhou H; Merilainen M; Musson DG et al. (2015). Clinical pharmaco
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | pass | 0.78 | 0.77 | 0.9872 | 0.25 | reported t½β |

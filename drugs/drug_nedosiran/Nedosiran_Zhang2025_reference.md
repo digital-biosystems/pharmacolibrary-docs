@@ -5,7 +5,7 @@
 
 # nedosiran — `Nedosiran_Zhang2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.808). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.885). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (Km), so that value has no SI equivalent. Extracted — nedosiran: CL/F 6.1 L/h, V1/F 148 L, kabs 0.212 1/h, FR 0.692, V2/F 6.56e+03 L, Q/F 2.79 L/h, Vmax 3.37, Km 248 ng/mL, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has nedosiran, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading nedosiran → spot urine oxalate-to-creatinine ratio (none); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -129,17 +129,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.808 (21/26 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.885 (23/26 fields) | 3 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [] | [['nedosiran', 'uox/cr', 'none']] | mismatch |
+| `gpt-oss:120b` | `model.links` | [] | [['nedosiran', 'spot urine oxalate-to-creatinine ratio', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[v.bw]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc.egfr].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | nedosiran | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | nedosiran | unknown | mismatch |
 
 </details>
 

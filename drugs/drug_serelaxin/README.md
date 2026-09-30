@@ -26,13 +26,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 15:45 | 3:02 | 0/1/0 | 0/0/0 | 0/0/0 | 22,577/6,022 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-30 03:42 | 1:30 | 0/1/0 | 0/0/0 | 0/0/0 | 12,017/5,301 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Soubret_2018_reference](drugs/drug_serelaxin/Serelaxin_Soubret2018_reference.md) | — | 1-compartment (no model) | 2 | Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018) | [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Soubret_2018_reference](drugs/drug_serelaxin/Serelaxin_Soubret2018_reference.md) | — | 1-compartment (no model) | 2 | Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018) | [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714) |
 
 ## ADME sites
 
@@ -64,7 +64,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Soubret_2018.pdf` | Soubret A et al., Population pharmacokinetics of serelaxi…, British journal of clinical… (2018) | popPK | 10 | [10.1111/bcp.13714](https://doi.org/10.1111/bcp.13714) | [30014598](https://pubmed.ncbi.nlm.nih.gov/30014598) | The paper is a population PK study for serelaxin and provides specific numeric values for Vss and clearance changes, though primary CL and Q values are not explicitly listed in the abstract text. |
 
-<sub>queue written 2026-09-27T15:43:18.879255+00:00</sub>
+<sub>queue written 2026-09-30T03:41:01.141528+00:00</sub>
 
 ## Screened and excluded
 

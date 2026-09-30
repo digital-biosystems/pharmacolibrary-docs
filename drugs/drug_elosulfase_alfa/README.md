@@ -17,7 +17,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 08:08 | 2:20 | 0/0/0 | 0/1/0 | 0/0/0 | 5,703/1,619 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
+| 2026-09-30 02:12 | 1:46 | 0/0/0 | 0/1/0 | 0/0/0 | 8,397/1,777 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 7/0 | 0 |
 
 ## popPK records
 
@@ -39,7 +39,7 @@ _not available_
 ## Coverage
 
 - **PubMed hits:** 51 matched, 47 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -51,7 +51,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `Yan_2025.pdf` | Yan G et al., Depolymerization of oyster glycosaminog…, Food research international… (2025) | pd | 4 | [10.1016/j.foodres.2025.116008](https://doi.org/10.1016/j.foodres.2025.116008) | [40032484](https://www.ncbi.nlm.nih.gov/pubmed/40032484) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-27T08:07:09.352404+00:00</sub>
+<sub>queue written 2026-09-30T02:12:21.578458+00:00</sub>
 
 ## Screened and excluded
 

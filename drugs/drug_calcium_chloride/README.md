@@ -19,7 +19,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 11:30 | 9:29 | 1/1/0 | 0/0/0 | 0/0/0 | 80,987/10,364 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
+| 2026-09-29 23:50 | 0:18 | 1/1/0 | 0/0/0 | 0/0/0 | 6,039/359 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -50,7 +50,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 48 matched, 23 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 4  ·  **relevant:** 2
 - **records:** 2  ·  extracted 1  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 

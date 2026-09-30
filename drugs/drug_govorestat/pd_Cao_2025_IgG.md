@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;govorestat&quot;,&quot;href&quot;:&quot;drugs/drug_govorestat/&quot;},{&quot;label&quot;:&quot;Cao_2025 \u00b7 PD IgG level&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# IgG level — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.786). The first reading is what the record holds.">cross-check: disputed</span>
+# IgG level — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.867). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -54,15 +54,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.786 (11/14 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.867 (13/15 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | KJ103 | unknown | mismatch |
-| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | effect_compartment | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q19]` | 1.15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q88]` | not captured | 1.15 | only_one_extracted |
 
 </details>
 

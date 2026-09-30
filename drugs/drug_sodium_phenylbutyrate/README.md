@@ -32,7 +32,7 @@ Phenylbutyric acid, as sodium phenylbutyrate, is used in combination with [tauro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 11:12 | 28:06 | 2/1/0 | 0/0/0 | 0/0/0 | 397,767/24,733 | ollama / glm-5.3-flash | 15 | 2/12 | 15/0 | 0 |
+| 2026-09-30 03:00 | 0:42 | 2/1/0 | 0/0/0 | 0/0/0 | 14,018/597 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 2/13 | 15/0 | 0 |
 
 ## popPK records
 
@@ -63,7 +63,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 168 matched, 61 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 6  ·  **relevant:** 2
 - **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 

@@ -5,7 +5,7 @@
 
 # serelaxin — `Serelaxin_Soubret2018_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The abstract-only source reports serelaxin clearance as a 9.2% decrease, but the record stored 9.2 '%' as the total clearance value, a dimensionless fraction where a flow (e.g. volume per time) is required; this dimension mismatch on a structural parameter caused rejection. The steady-state volume of distribution (544 ml kg-1) was extracted consistently. A second reader instead assigned the 9.2% value to a 'clearance decrease' parameter and left clearance empty, disagreeing with this record's placement of the value. Extracted — serelaxin: Vss 544 ml kg-1, CL 9.2 %.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance decrease: this record has none, the second reading 9.2; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has serelaxin, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -65,21 +65,23 @@ Soubret A; Pang Y; Yu J; Dahlke M et al. (2018). British journal of clinical pha
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[clearance decrease]` | not captured | 9.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance decrease due to bmi]` | not captured | 9.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[serelaxin clearance]` | 9.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady-state volume of distribution]` | 544 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vss]` | not captured | 544 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | serelaxin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | serelaxin | unknown | mismatch |
 
 </details>
 

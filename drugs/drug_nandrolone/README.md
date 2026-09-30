@@ -26,13 +26,13 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 17:59 | 49:53 | 0/1/0 | 0/0/0 | 0/0/2 | 304,928/17,894 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/12 | 12/1 | 0 |
+| 2026-09-30 00:48 | 2:00 | 0/1/0 | 0/0/0 | 0/0/2 | 15,990/6,233 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 1/12 | 12/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | — | general linear (no model) | 1 | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Wijnand_1985_reference](drugs/drug_nandrolone/Nandrolone_Wijnand1985_reference.md) | — | general linear (no model) | 1 | Wijnand HP et al., Pharmacokinetic parameters of nandrolon…, Acta endocrinologica. Suppl… (1985) | [10.1530/acta.0.109s00019](https://doi.org/10.1530/acta.0.109s00019) |
 
 ## Pharmacogenomics (PGx)
 
@@ -66,7 +66,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 144 matched, 76 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -86,7 +86,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Chowdhury_2017.pdf` | Chowdhury P et al., Analysis of Elevated Levels of Nandrolo…, Drug metabolism letters (2017) | pgx | 7 | [10.2174/1872312811666171114145535](https://doi.org/10.2174/1872312811666171114145535) | [29141576](https://www.ncbi.nlm.nih.gov/pubmed/29141576) | metadata signals extractable PGX data (CYP1, PK/PD-context) |
 | `Gårevik_2011.pdf` | Gårevik N et al., Long term perturbation of endocrine par…, The Journal of steroid bioc… (2011) | pgx | 5 | [10.1016/j.jsbmb.2011.08.005](https://doi.org/10.1016/j.jsbmb.2011.08.005) | [21884791](https://www.ncbi.nlm.nih.gov/pubmed/21884791) | metadata signals extractable PGX data (UGT2B17) |
 
-<sub>queue written 2026-09-26T17:50:10.426874+00:00</sub>
+<sub>queue written 2026-09-30T00:46:52.910402+00:00</sub>
 
 ## Screened and excluded
 

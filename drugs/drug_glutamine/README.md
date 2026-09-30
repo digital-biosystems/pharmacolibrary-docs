@@ -28,19 +28,19 @@ Used to reduce the acute complications of sickle cell disease in adult and pedia
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 10:16 | 1:44:50 | 1/0/0 | 0/1/0 | 0/0/0 | 582,319/56,422 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 8/19 | 20/7 | 0 |
+| 2026-09-30 02:28 | 5:55 | 0/0/1 | 0/1/0 | 0/0/0 | 75,737/19,084 | ollama / qwen3.8:27b-mtp-q8_0 | 27 | 8/19 | 20/7 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Sadaf (2024) | — |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: T1_tmax</sub><br><sub>blocking: T1_t_half_terminal</sub><br><sub>route_to: `scholar`</sub> | [Sadaf_2024_2_reference](drugs/drug_glutamine/Glutamine_Sadaf2024v2_reference.md) | — | 1-compartment (no model) | 3 | Sadaf (2024) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span> | [Hoeben_2026_TV](drugs/drug_glutamine/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · direct linear effect | — | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span> | [Hoeben_2026_TV](drugs/drug_glutamine/pd_Hoeben_2026_TV.md) | tumor volume ← plasma asparaginase activity · direct linear effect | — | Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026) | [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4) |
 
 ## ADME sites
 
@@ -61,7 +61,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 1985 matched, 173 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 13  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -82,7 +82,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Yang_2021.pdf` | Yang X et al., The responses of the growth, cytochrome…, Ecotoxicology and environme… (2021) | pgx | 7 | [10.1016/j.ecoenv.2020.111547](https://doi.org/10.1016/j.ecoenv.2020.111547) | [33254406](https://www.ncbi.nlm.nih.gov/pubmed/33254406) | metadata signals extractable PGX data (CYP1A2, PK/PD-context) |
 | `Sparreboom_2005.pdf` | Sparreboom A et al., Effect of ABCG2 genotype on the oral bi…, Cancer biology & therapy (2005) | pgx | 5 | [10.4161/cbt.4.6.1731](https://doi.org/10.4161/cbt.4.6.1731) | [15908806](https://www.ncbi.nlm.nih.gov/pubmed/15908806) | metadata signals extractable PGX data (ABCG2) |
 
-<sub>queue written 2026-09-27T09:38:38.208374+00:00</sub>
+<sub>queue written 2026-09-30T02:24:32.551249+00:00</sub>
 
 ## Screened and excluded
 

@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 10:33 | 17:43 | 0/0/0 | 0/1/0 | 0/0/0 | 183,037/8,171 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 4/7 | 11/0 | 0 |
+| 2026-09-30 02:31 | 2:44 | 0/0/0 | 0/1/0 | 0/0/0 | 23,685/5,006 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 4/7 | 11/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.484). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2026_VAS](drugs/drug_glycerol_phenylbutyrate/pd_Zhou_2026_VAS.md) | pain intensity ← gabapentin · delayed effect through an effect compartment | — | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span> | [Zhou_2026_VAS](drugs/drug_glycerol_phenylbutyrate/pd_Zhou_2026_VAS.md) | pain intensity ← gabapentin · delayed effect through an effect compartment | — | Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026) | [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901) |
 
 ## ADME sites
 
@@ -54,7 +54,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 ## Coverage
 
 - **PubMed hits:** 42 matched, 33 returned
-- **screened:** 0  ·  **relevant:** 0
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -69,7 +69,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Greenberg_1996.pdf` | Greenberg JW et al., Influence of lipoteichoic acid structur…, Infection and immunity (1996) | pd | 4 | [10.1128/iai.64.8.3318-3325.1996](https://doi.org/10.1128/iai.64.8.3318-3325.1996) | [8757870](https://www.ncbi.nlm.nih.gov/pubmed/8757870) | metadata signals extractable PD data (IC50) |
 | `Zernig_1988.pdf` | Zernig G et al., The mitochondrial high-capacity low-aff…, European journal of pharmac… (1988) | pd | 4 | [10.1016/0014-2999(88)90472-4](https://doi.org/10.1016/0014-2999(88)90472-4) | [2853075](https://www.ncbi.nlm.nih.gov/pubmed/2853075) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-27T10:29:47.933588+00:00</sub>
+<sub>queue written 2026-09-30T02:29:52.966229+00:00</sub>
 
 ## Screened and excluded
 

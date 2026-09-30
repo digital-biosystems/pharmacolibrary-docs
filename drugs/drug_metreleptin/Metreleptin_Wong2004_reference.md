@@ -81,10 +81,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[cl]` | 79 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose of r-methuleptin]` | not captured | 0.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[elimination half-life (t(1/2))]` | not captured | 3.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 79 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[r-methuleptin dose]` | not captured | 0.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t]` | 3.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 79 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t]` | not captured | 3.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 150 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | not captured | 150 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | r-metHuLeptin | unknown | mismatch |

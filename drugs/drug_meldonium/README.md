@@ -13,7 +13,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 17:09 | 1:47 | 0/1/0 | 0/0/0 | 0/0/0 | 7,758/1,779 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
+| 2026-09-30 04:38 | 0:44 | 0/1/0 | 0/0/0 | 0/0/0 | 1,871/1,058 | ollama / qwen3.8:27b-mtp-q8_0 | 0 | 0/0 | 0/0 | 0 |
 
 ## popPK records
 
@@ -43,7 +43,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Forsdahl_2018.pdf` | Forsdahl G et al., Urinary excretion studies of meldonium…, Journal of pharmaceutical a… (2018) | popPK | 9 | [10.1016/j.jpba.2018.08.053](https://doi.org/10.1016/j.jpba.2018.08.053) | [30189410](https://pubmed.ncbi.nlm.nih.gov/30189410) | The study reports a three-compartment model and specific half-life values (alpha, beta, gamma) for meldonium in humans, which are quantitative PK parameters present in the text. |
 | `Knych_2017.pdf` | Knych HK et al., Pharmacokinetics and pharmacodynamics o…, Drug testing and analysis (2017) | popPK | 8 | [10.1002/dta.2214](https://doi.org/10.1002/dta.2214) | [28513092](https://pubmed.ncbi.nlm.nih.gov/28513092) | The study reports quantitative PK parameters (Cmax, t1/2) for meldonium in horses, but lacks specific values for clearance (CL) or volume of distribution (V) in the provided text. |
 
-<sub>queue written 2026-09-27T17:08:18.270752+00:00</sub>
+<sub>queue written 2026-09-30T04:38:18.458218+00:00</sub>
 
 ## Screened and excluded
 
