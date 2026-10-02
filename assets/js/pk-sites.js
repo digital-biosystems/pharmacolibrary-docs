@@ -13,7 +13,9 @@
                  'brain', 'placenta', 'mammary gland', 'lung', 'skin', 'skeletal muscle', 'adipose tissue',
                  'stomach', 'ileum', 'heart', 'adrenal gland', 'platelet', 'ovary', 'testis', 'prostate gland',
                  'neuromuscular junction'];
-  var W = { drugbank_actor: 3, paper_pgx: 2, drugbank_text: 1 };
+  // evidence weight on the heat map: curated actor 3; a paper or a ClinPGx clinical annotation
+  // or label 2; a ClinPGx relationship or DrugBank's prose 1
+  var W = { drugbank_actor: 3, paper_pgx: 2, clinpgx_annotation: 2, clinpgx_label: 2, clinpgx_relation: 1, drugbank_text: 1 };
   var COLORS = ['#2a78d6', '#eb6834', '#1baf7a', '#eda100', '#e87ba4', '#008300', '#4a3aa7', '#e34948'];
   var MAX = 8;
 
@@ -57,12 +59,16 @@
     var rows = [];                            // {drug, process, tissue, actor, role, evidence, quote}
     var byActor = {};                         // gene -> {slug -> Set(role)}   (drugbank actors only)
     drugs.forEach(function (d) {
-      q(db, 'SELECT gene, kind, role, evidence, source, page, doi FROM adme_actor WHERE drug_slug = ?', [d.slug]).forEach(function (a) {
+      // url (ClinPGx links) is newer than some published databases: fall back without it
+      var acts;
+      try { acts = q(db, 'SELECT gene, kind, role, evidence, source, page, doi, url FROM adme_actor WHERE drug_slug = ?', [d.slug]); }
+      catch (e) { acts = q(db, 'SELECT gene, kind, role, evidence, source, page, doi FROM adme_actor WHERE drug_slug = ?', [d.slug]); }
+      acts.forEach(function (a) {
         var site = sites[a.gene];
         var proc = site ? site.process : (a.kind === 'target' ? 'target' : a.kind === 'enzyme' ? 'metabolism' : 'distribution');
         var tissues = site ? site.tissues : [[null, null]];
         tissues.forEach(function (t) {
-          rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi });
+          rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi, url: a.url });
         });
         if (a.evidence === 'drugbank_actor') {
           var m = byActor[a.gene] = byActor[a.gene] || {};
@@ -698,20 +704,25 @@
       if (r.doi) h += ' <a class="pks-doi" href="https://doi.org/' + esc(r.doi) + '" target="_blank" rel="noopener" title="' + esc(r.doi) + '">doi</a>';
       return h;
     }
+    if (r.evidence === 'clinpgx_annotation' || r.evidence === 'clinpgx_label' || r.evidence === 'clinpgx_relation') {
+      var what = { clinpgx_annotation: 'ClinPGx clinical annotation', clinpgx_label: 'ClinPGx drug label', clinpgx_relation: 'ClinPGx relationship' }[r.evidence];
+      var txt = what + (r.source ? ' \u00b7 ' + esc(r.source) : '');
+      return r.url ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + txt + '</a>' : txt;
+    }
     if (r.evidence === 'drugbank_actor') return 'DrugBank actor';
     if (r.evidence === 'drugbank_text') return 'DrugBank ADME prose';
     return esc(r.evidence);
   }
-  // Per drug, the paper evidence leads: paper PGx, then any other source, then DrugBank's
-  // actors, then DrugBank's ADME prose. Drugs keep their order, rows their order within a rank.
-  var EVIDENCE_RANK = { paper_pgx: 0, drugbank_actor: 2, drugbank_text: 3 };
+  // Per drug, the paper evidence leads: paper PGx, then ClinPGx (clinical annotation, label,
+  // relationship), any other source, DrugBank's actors, DrugBank's ADME prose. Drugs keep their order, rows their order within a rank.
+  var EVIDENCE_RANK = { paper_pgx: 0, clinpgx_annotation: 1, clinpgx_label: 2, clinpgx_relation: 3, drugbank_actor: 5, drugbank_text: 6 };
   function tableRows(rows) {
     var drugAt = {};
     rows.forEach(function (r, i) { if (!(r.drug in drugAt)) drugAt[r.drug] = i; });
     return rows.map(function (r, i) { return { r: r, i: i }; }).sort(function (a, b) {
       var ra = EVIDENCE_RANK[a.r.evidence], rb = EVIDENCE_RANK[b.r.evidence];
       return (drugAt[a.r.drug] - drugAt[b.r.drug])
-          || ((ra === undefined ? 1 : ra) - (rb === undefined ? 1 : rb))
+          || ((ra === undefined ? 4 : ra) - (rb === undefined ? 4 : rb))
           || (a.i - b.i);
     }).map(function (x) { return x.r; });
   }
