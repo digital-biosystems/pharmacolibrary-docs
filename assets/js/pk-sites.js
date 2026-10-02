@@ -65,7 +65,7 @@
       catch (e) { acts = q(db, 'SELECT gene, kind, role, evidence, source, page, doi FROM adme_actor WHERE drug_slug = ?', [d.slug]); }
       acts.forEach(function (a) {
         var site = sites[a.gene];
-        var proc = site ? site.process : (a.kind === 'target' ? 'target' : a.kind === 'enzyme' ? 'metabolism' : 'distribution');
+        var proc = processOf(site, a.kind, a.role);
         var tissues = site ? site.tissues : [[null, null]];
         tissues.forEach(function (t) {
           rows.push({ drug: d.slug, process: proc, tissue: t[0], actor: a.gene, role: a.role, evidence: a.evidence, cell: site ? site.cell : null, source: a.source, page: a.page, doi: a.doi, url: a.url });
@@ -266,6 +266,17 @@
   }
   function pgxTitle(M, hits) {
     return hits.map(function (e) { return nameOf(M, e.drug) + ': ' + e.gene + ' ' + e.label + ' \u2192 ' + e.dir.words; }).join('; ');
+  }
+  // The ADME process of an actor row — adme_sites.actor_process, the same rule: the hand
+  // table's ADME process wins; else the kind or the role (enzyme / PGx metabolism or
+  // formation → metabolism, transporter / carrier / PGx transport → distribution). A drug
+  // target, a safety allele or an unknown role has none (null, shown '—'), never a guess.
+  var KIND_PROCESS = { enzyme: 'metabolism', transporter: 'distribution', carrier: 'distribution' };
+  var ROLE_PROCESS = { metabolism: 'metabolism', formation: 'metabolism', transport: 'distribution' };
+  function processOf(site, kind, role) {
+    if (site && site.process !== 'target') return site.process;
+    if (kind === 'target' || site) return null;
+    return KIND_PROCESS[kind] || ROLE_PROCESS[role] || null;
   }
   function cellOf(M, slug, proc, tissue) {
     var rs = M.rows.filter(function (r) { return r.drug === slug && r.process === proc && r.tissue === tissue; });
@@ -524,7 +535,7 @@
     root.querySelectorAll('.slotg').forEach(function (g) {
       var d = g.dataset.d, t = g.dataset.t;
       var rs = M.rows.filter(function (r) { return r.drug === d && r.tissue === t; });
-      var procs = []; rs.forEach(function (r) { if (procs.indexOf(r.process) < 0) procs.push(r.process); });
+      var procs = []; rs.forEach(function (r) { if (r.process && procs.indexOf(r.process) < 0) procs.push(r.process); });
       var html = tipText(nameOf(M, d), procs.join('/') || '—', t, rs, showDDI ? affectedAt(M, d, null, t) : []);
       g.onmouseenter = function (e) { tip(html, e); if (opts.onOrgan) opts.onOrgan(d, t, false); };
       g.onmousemove = function (e) { tip(html, e); }; g.onmouseleave = function () { tip(null); };
@@ -560,7 +571,7 @@
     var aff = M.affected.filter(function (a) { return a.victim === slug && (!tissue || a.tissue === tissue); });
     var h = '<h4>' + esc(nameOf(M, slug)) + (tissue ? ' · ' + esc(tissue) : '') + (pinned ? ' <span class="pks-meta">pinned — click another organ to change, double-click to release</span>' : '') + '</h4>';
     var keys = Object.keys(acts).sort();
-    h += keys.length ? '<table class="pks-detail"><tr><th>actor</th><th>role</th><th>process</th><th>tissues</th></tr>' + keys.map(function (a) { var v = acts[a]; return '<tr><td class="mono">' + esc(a) + '</td><td>' + Object.keys(v.roles).map(function (r) { return '<span class="pks-role ' + esc(r) + '">' + esc(r) + '</span>'; }).join('') + '</td><td>' + esc(v.process) + '</td><td>' + esc(Object.keys(v.tissues).join(', ') || 'not in the tissue table') + '</td></tr>'; }).join('') + '</table>' : '<p class="pks-meta">no curated actor here</p>';
+    h += keys.length ? '<table class="pks-detail"><tr><th>actor</th><th>role</th><th>process</th><th>tissues</th></tr>' + keys.map(function (a) { var v = acts[a]; return '<tr><td class="mono">' + esc(a) + '</td><td>' + Object.keys(v.roles).map(function (r) { return '<span class="pks-role ' + esc(r) + '">' + esc(r) + '</span>'; }).join('') + '</td><td>' + esc(v.process || '—') + '</td><td>' + esc(Object.keys(v.tissues).join(', ') || 'not in the tissue table') + '</td></tr>'; }).join('') + '</table>' : '<p class="pks-meta">no curated actor here</p>';
     if (aff.length) h += '<h4 class="warn">can be affected</h4><table class="pks-detail">' + aff.map(function (a) { return '<tr><td><b>' + esc(nameOf(M, a.perpetrator)) + '</b> ' + esc(a.effect) + 's <span class="mono">' + esc(a.actor) + '</span></td><td>' + esc(a.process || '') + ' · ' + esc(a.tissue || 'site unmapped') + '</td></tr>'; }).join('') + '</table>';
     root.innerHTML = h;
   }
@@ -733,7 +744,7 @@
         // sentence on hover — a 200-character quote used to push role and evidence off screen
         var actor = r.actor ? '<span class="mono">' + esc(r.actor) + '</span>'
                   : (r.quote ? '<span class="pks-quote" title="' + esc(r.quote) + '">“' + esc(r.quote) + '”</span>' : '');
-        return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process) + '</td><td>' + esc(r.tissue || '—') + '</td><td>' + actor + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>';
+        return '<tr><td>' + esc(nameOf(M, r.drug)) + '</td><td>' + esc(r.process || '—') + '</td><td>' + esc(r.tissue || '—') + '</td><td>' + actor + '</td><td>' + esc(r.role || '') + '</td><td>' + evidenceCell(r) + '</td></tr>';
       }).join('') + '</table>';
   }
 
