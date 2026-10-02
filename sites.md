@@ -64,10 +64,10 @@ DrugBank's curated actors + a tissue table), downloaded once; nothing is sent an
 | `adme_drug` | every KB drug with a curated actor, an ADME paragraph or an extracted record (~11k) |
 | `adme_actor` | DrugBank enzymes / transporters / carriers / targets with the drug's **role** (substrate, inhibitor, inducer …); the genes named by the KB's own PGx records, each with the paper it came from (its page here and its DOI) |
 | `adme_site` | the actor → process / tissue (UBERON) / cell hand table (~75 ADME genes) |
-| `adme_text` | organ words found in DrugBank's absorption / metabolism / elimination prose, with the quote |
+| `adme_text` | the sites DrugBank's absorption / metabolism / elimination prose states — read by an LLM that tells a site ("3.2 % was exhaled" → lung) from a mere mention ("hepatic impairment does not affect clearance"), with the phrase that states it; organ keywords where the paragraph has not been read (`pk_knowledge_scripts.adme_text_llm`) |
 
 Evidence tiers, strongest first: a curated DrugBank actor mapped through the tissue table (3);
-a gene a paper's pharmacogenomic record ties to this drug (2); an organ word in the prose (1).
+a gene a paper's pharmacogenomic record ties to this drug (2); a site the prose states (1).
 Curated ≠ clinically relevant: DrugBank roles carry no potency and no fraction metabolised,
 and the tissue of an actor is a property of the protein, not of the paper. An actor the hand
 table does not know appears in the tables with no tissue and is absent from the maps.
