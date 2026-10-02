@@ -702,9 +702,22 @@
     if (r.evidence === 'drugbank_text') return 'DrugBank ADME prose';
     return esc(r.evidence);
   }
+  // Per drug, the paper evidence leads: paper PGx, then any other source, then DrugBank's
+  // actors, then DrugBank's ADME prose. Drugs keep their order, rows their order within a rank.
+  var EVIDENCE_RANK = { paper_pgx: 0, drugbank_actor: 2, drugbank_text: 3 };
+  function tableRows(rows) {
+    var drugAt = {};
+    rows.forEach(function (r, i) { if (!(r.drug in drugAt)) drugAt[r.drug] = i; });
+    return rows.map(function (r, i) { return { r: r, i: i }; }).sort(function (a, b) {
+      var ra = EVIDENCE_RANK[a.r.evidence], rb = EVIDENCE_RANK[b.r.evidence];
+      return (drugAt[a.r.drug] - drugAt[b.r.drug])
+          || ((ra === undefined ? 1 : ra) - (rb === undefined ? 1 : rb))
+          || (a.i - b.i);
+    }).map(function (x) { return x.r; });
+  }
   function renderTable(root, M) {
     root.innerHTML = '<table class="pks-tbl"><tr><th>drug</th><th>process</th><th>tissue</th><th>actor</th><th>role</th><th>evidence</th></tr>' +
-      M.rows.map(function (r) {
+      tableRows(M.rows).map(function (r) {
         // a prose row's actor cell is the quote: clipped to one short line, the whole
         // sentence on hover — a 200-character quote used to push role and evidence off screen
         var actor = r.actor ? '<span class="mono">' + esc(r.actor) + '</span>'
