@@ -1044,18 +1044,34 @@
       var promise = null, DB = null;
       var CACHE = 'pharmacolibrary-db-v1';
 
+      // The cache is a speed-up only. caches.open/match can themselves fail — "Failed to
+      // execute 'open' on 'CacheStorage': Unexpected internal error" with a corrupted or
+      // over-quota cache, cleared site data, some private modes — and that rejection used to
+      // reach the page, so /sites and /query showed the error instead of loading. Any cache
+      // failure now falls back to a plain download.
+      function plain(url) {
+        return fetch(url).then(function (r) {
+          if (!r.ok) throw new Error('database not found: ' + url);
+          return r.arrayBuffer();
+        });
+      }
       function bytes(url) {
-        if (!window.caches) return fetch(url).then(function (r) { return r.arrayBuffer(); });
-        return caches.open(CACHE).then(function (c) {
-          return c.match(url).then(function (hit) {
+        if (!window.caches) return plain(url);
+        var store = null;
+        return Promise.resolve()
+          .then(function () { return caches.open(CACHE); })
+          .then(function (c) { store = c; return c.match(url); })
+          .catch(function () { store = null; return null; })   // cache unusable: download
+          .then(function (hit) {
             if (hit) return hit.arrayBuffer();
             return fetch(url).then(function (r) {
               if (!r.ok) throw new Error('database not found: ' + url);
-              c.put(url, r.clone()).catch(function () {});   // caching is best-effort
+              if (store) {
+                try { store.put(url, r.clone()).catch(function () {}); } catch (e) { /* best-effort */ }
+              }
               return r.arrayBuffer();
             });
           });
-        });
       }
 
       function load(onStatus) {
