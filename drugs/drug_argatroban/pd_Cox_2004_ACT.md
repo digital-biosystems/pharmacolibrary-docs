@@ -1,12 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;argatroban&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/&quot;},{&quot;label&quot;:&quot;Cox_2004 \u00b7 PD activated clotting time&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Argatroban_Akimoto2011_patients_undergoing_elective_percutan&quot;,&quot;label&quot;:&quot;Akimoto_2011_patients undergoing elective percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Akimoto2011_patients_undergoing_elective_percutan.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Argatroban_Cox2004_patients_undergoing_percutaneous_coronary&quot;,&quot;label&quot;:&quot;Cox_2004_patients undergoing percutaneous coronary intervention&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/Argatroban_Cox2004_patients_undergoing_percutaneous_coronary.md&quot;,&quot;status&quot;:&quot;not modelled&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Cox_2004_ACT&quot;,&quot;label&quot;:&quot;Cox_2004 \u00b7 ACT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_argatroban/pd_Cox_2004_ACT.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # activated clotting time — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -14,7 +14,7 @@
 
 **As extracted:** Argatroban (concentrations from this paper's PK model) drives activated clotting time (in sec): direct sigmoid Emax (Hill) effect.
 
-**Model:** No model was generated from this record.
+**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 > Argatroban plasma concentration (ng/mL) was related to activated clotting time (sec) by a sigmoid Emax model (direct effect; no effect-compartment or turnover mechanism described), with E0 = 148 sec, Emax = 316 sec, EC50 = 1920 ng/mL; gamma is not reported in the excerpts.
 >
@@ -27,7 +27,7 @@
 - **effect:** stimulation/unknown
 
 ## Citation
-Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (2004). Journal of clinical pharmacology 44
+Cox DS et al., Pharmacokinetics and pharmacodynamics o…, Journal of clinical pharmac… (2004)
   ·  DOI: [10.1177/0091270004267651](https://doi.org/10.1177/0091270004267651)
 
 ## Parameters
@@ -43,6 +43,41 @@ Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (
 </details>
 
 
+## Exposure-response model
+
+`Argatroban_Cox2004_PD_act` — sigmoid_emax, `response = E0 + Emax*frac`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 148 sec | 148 s |
+| Emax | 316 sec | 316 s |
+| EC50 | 1920 ng/mL | 0.00192 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 148, `at_EC50` = 306, `at_inf` = 464
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
+| `T2_direction` | pass | curve direction matches effect_direction |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | advisory | only convention defaults (gamma = 1) |
+
+Advisory:
+
+- defaulted: gamma (convention)
+
+
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Downloadable models
@@ -50,7 +85,7 @@ Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
@@ -61,7 +96,9 @@ Cox DS; Kleiman NS; Boyle DA; Aluri J; Parchman LG; Holdbrook F; et al. et al. (
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+<dbs-fmusim paramsurl="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_argatroban/Argatroban_Cox2004_PD_act/Argatroban_Cox2004_PD_act_sim_controls.json"></dbs-fmusim>
+
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Argatroban_Cox2004_PD_act_params.json` · controls `Argatroban_Cox2004_PD_act_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

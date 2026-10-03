@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024 \u00b7 geometric_mean&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_estimate&quot;,&quot;label&quot;:&quot;Marques_2024_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_estimate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Marques2024_geometric_mean&quot;,&quot;label&quot;:&quot;Marques_2024_geometric_mean&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_geometric_mean.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Salbutamol_Marques2024_value&quot;,&quot;label&quot;:&quot;Marques_2024_value&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Courlet2022_reference&quot;,&quot;label&quot;:&quot;Courlet_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Courlet2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Valenzuela2006_reference&quot;,&quot;label&quot;:&quot;Valenzuela_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Valenzuela2006_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Vet2020_reference&quot;,&quot;label&quot;:&quot;Vet_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Vet2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_HR_Z_score&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 HR Z-score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_HR_Z_score.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Marques2024_geometric_mean`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,15 +21,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Simulated as the paper dosed it, the model's terminal half-life differs from the value the paper reports by more than the tolerance. Extracted — salbutamol: MTT 0.21, V 226, CL 77.9, kabs 3.71 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 0.94-1.60: this record has none, the second reading 2.28. That field does not shape the model.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:28.883077+00:00) predates the upstream re-run (2026-10-01 09:36:11.372409+00:00). Current validate status: `needs_review`.
+
 ## Citation
-not matched (stem Marques_2024)
+Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (2024)
+  ·  DOI: [10.3390/pharmaceutics17010039](https://doi.org/10.3390/pharmaceutics17010039)
 
 ## Model component
-<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_geometric_mean" status="needs_review" stale="false" population="virtual patients (healthy and cirrhosis)" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_geometric_mean" status="needs_review" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -42,8 +45,8 @@ not matched (stem Marques_2024)
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Mtt | `Q81` · MTT | 0.21 | not captured | not captured | not captured | not captured | exact (1.0) | Marques_2024_table_7:row0:col3 | — | not captured |
-| V1 | `Q61` · V | 226 | not captured | not captured | not captured | not captured | exact (1.0) | Marques_2024_table_7:row3:col3 | — | not captured |
-| Cl | `Q22` · CL | 77.9 | not captured | not captured | not captured | not captured | exact (1.0) | Marques_2024_table_7:row6:col3 | — | not captured |
+| V1 | `Q61` · V | 226 | L | 0.226 | L | not captured | exact (1.0) | Marques_2024_table_7:row3:col3 | — | not captured |
+| Cl | `Q22` · CL | 77.9 | L/h | 2.163888888888889e-05 | L/h | not captured | exact (1.0) | Marques_2024_table_7:row6:col3 | — | not captured |
 | ka (h−1) | `Q49` · kabs | 3.71 | h−1 | 0.0010305555555555556 | 1/h | not captured | review_gapfill (0.7) | Marques_2024_2:review | — | not captured |
 
 <details class="legend">
@@ -56,6 +59,8 @@ not matched (stem Marques_2024)
 **Interpretation flags:**
 - dropped unlinked row (NIL): '0.94–1.60' — extend the ontology if this is a real PK parameter (source ['Marques_2024_table_7:row4:col3', 'Marques_2024_table_7:row7:col3'])
 - dropped unlinked row (NIL): '1.60–2.37' — extend the ontology if this is a real PK parameter (source ['Marques_2024_table_7:row5:col3', 'Marques_2024_table_7:row8:col3'])
+- implicit units: 'V1' → L (from the paper text: "The text states: '...V1 was 226 L.' and '...V1 was increased to 276 L.'")
+- implicit units: 'Cl' → L/h (from the paper text: "The text states: '...Cl was observed to be 78 L/h...' and '...Cl decreased to 69 L/h...'")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'V1' is the general volume)
 - population split: 'geometric mean' subgroup of Marques_2024 (paper reports 3 populations: estimate, geometric mean, value)
@@ -69,27 +74,19 @@ not matched (stem Marques_2024)
 - unparsed cell Marques_2024_table_3:row6:col2 = 'Optimized value. Reference value for Cl: 46.38'
 - unparsed cell Marques_2024_table_3:row7:col2 = 'Optimized value. Reference value: 3.36'
 - companion parameter table 3 transcribed (9 record(s))
-- transposed table Marques_2024_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- companion parameter table 4 transcribed (15 record(s))
 - companion parameter table 7 transcribed (24 record(s))
-- LLM selected parameter table(s) 3, 4, 6, 7
+- LLM selected parameter table(s) 3, 6, 7
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.875 (7/8 fields) | 1 |
+| `gpt-oss:120b` | confirmed | 1.0 (7/7 fields) | none |
 
-<details><summary>1 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[0.94-1.60]` | not captured | 2.28 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -105,11 +102,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C1_half_life_beta | fail | 2.78 | 2.011 | 0.7234 | 0.25 | reported t½β |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_7:row3:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_7:row3:col3'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 77.9 | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 77.9 L/h | not captured | not captured | ['Marques_2024_table_7:row6:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 226 L | not captured | not captured | ['Marques_2024_table_7:row3:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -144,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 09:36 UTC</sub>

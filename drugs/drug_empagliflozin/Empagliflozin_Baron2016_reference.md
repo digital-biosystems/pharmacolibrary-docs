@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Baron_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Empagliflozin_Baron2016_reference&quot;,&quot;label&quot;:&quot;Baron_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Baron2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_bulk_ess&quot;,&quot;label&quot;:&quot;Rascher_2025_bulk_ess&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_bulk_ess.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_median&quot;,&quot;label&quot;:&quot;Rascher_2025_median&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_median.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_pop&quot;,&quot;label&quot;:&quot;Rascher_2025_pop&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_pop.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_tail_ess&quot;,&quot;label&quot;:&quot;Rascher_2025_tail_ess&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_tail_ess.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # empagliflozin — `Empagliflozin_Baron2016_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.933). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,16 +20,18 @@
 
 Although the record lists CL 0.0110, V2 1.27, Q/F 6.34, V3 0.959 and kabs 1.23, the coverage check found only 2 of 4 expected parameters emitted or defaulted, with V2 and Q/F neither emitted nor defaulted. The model builder substituted generic placeholder values for empagliflozin's clearance, volume of distribution, absorption rate constant and absorption lag time, and the absorption rate constant was flagged as invented since it was not reported in the source. Bioavailability was assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. A second reader assigned an absorption lag time of 0.500 where this record has none. Extracted — empagliflozin: CL 0.011, V2 1.27, Q/F 6.34, V3 0.959, kabs 1.23.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of alag1: this record has none, the second reading 0.500. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has empagliflozin, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.947879+00:00) predates the upstream re-run (2026-10-01 18:32:48.972875+00:00). Current validate status: `extracted`.
+
 ## Citation
-Baron KT; Macha S; Broedl UC; Nock V; Retlich S; Riggs M et al. (2016). Diabetes therapy : research, treatment and education of diabetes and related disorders 7
+Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : research… (2016)
   ·  DOI: [10.1007/s13300-016-0174-y](https://doi.org/10.1007/s13300-016-0174-y)
 
 ## Model component
-<dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Baron2016_reference" status="model_quarantined" stale="false" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="empagliflozin" model-id="Empagliflozin_Baron2016_reference" status="extracted" stale="true" population="patients with type 2 diabetes" measured-compound="empagliflozin" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -38,15 +39,13 @@ Baron KT; Macha S; Broedl UC; Nock V; Retlich S; Riggs M et al. (2016). Diabetes
 **Parameterization:** Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL | `Q22` · CL | 0.0110 | not captured | not captured | not captured | 199 | exact (1.0) | Baron_2016_table_S1:row1:col1, Baron_2016_table_S1:row1:col3, Baron_2016_table_S1:row2:col1, Baron_2016_table_S1:row2:col3, Baron_2016_table_S1:row3:col1, Baron_2016_table_S1:row3:col3, Baron_2016_table_S1:row4:col1, Baron_2016_table_S1:row4:col3, Baron_2016_table_S1:row5:col1, Baron_2016_table_S1:row5:col3, Baron_2016_table_S1:row6:col1, Baron_2016_table_S1:row6:col3, Baron_2016_table_S1:row7:col1, Baron_2016_table_S1:row7:col3, Baron_2016_table_S1:row8:col1, Baron_2016_table_S1:row8:col3, Baron_2016_table_S1:row9:col1, Baron_2016_table_S1:row9:col3, Baron_2016_table_S1:row10:col1, Baron_2016_table_S1:row10:col3, Baron_2016_table_S1:row11:col1, Baron_2016_table_S1:row11:col3, Baron_2016_table_S1:row12:col1, Baron_2016_table_S1:row12:col3 | — | not captured |
-| V2 | `Q64` · V2 | 1.27 | not captured | not captured | not captured | 15.3 | exact (1.0) | Baron_2016_table_S1:row14:col1, Baron_2016_table_S1:row14:col3, Baron_2016_table_S1:row15:col1, Baron_2016_table_S1:row15:col3, Baron_2016_table_S1:row16:col1, Baron_2016_table_S1:row16:col3, Baron_2016_table_S1:row17:col1, Baron_2016_table_S1:row17:col3, Baron_2016_table_S1:row18:col1, Baron_2016_table_S1:row18:col3 | — | not captured |
-| Q/F | `Q69` · Q/F | 6.34 | not captured | not captured | not captured | 4.22 | exact (1.0) | Baron_2016_table_S1:row19:col1, Baron_2016_table_S1:row19:col3 | — | not captured |
-| V3 | `Q77` · V3 | 0.959 | not captured | not captured | not captured | 5.04 | exact (1.0) | Baron_2016_table_S1:row21:col1, Baron_2016_table_S1:row21:col3, Baron_2016_table_S1:row22:col1, Baron_2016_table_S1:row22:col3, Baron_2016_table_S1:row23:col1, Baron_2016_table_S1:row23:col3, Baron_2016_table_S1:row24:col1, Baron_2016_table_S1:row24:col3, Baron_2016_table_S1:row25:col1, Baron_2016_table_S1:row25:col3 | — | not captured |
-| ka | `Q49` · kabs | 1.23 | not captured | not captured | not captured | 2.21 | exact (1.0) | Baron_2016_table_S1:row27:col1, Baron_2016_table_S1:row27:col3, Baron_2016_table_S1:row28:col1, Baron_2016_table_S1:row28:col3, Baron_2016_table_S1:row29:col1, Baron_2016_table_S1:row29:col3 | — | not captured |
+| CL | `Q22` · CL | 0.0110 | L/h | 3.0555555555555555e-09 | L/h | 199 | exact (1.0) | Baron_2016_table_S1:row1:col1, Baron_2016_table_S1:row1:col3, Baron_2016_table_S1:row2:col1, Baron_2016_table_S1:row2:col3, Baron_2016_table_S1:row3:col1, Baron_2016_table_S1:row3:col3, Baron_2016_table_S1:row4:col1, Baron_2016_table_S1:row4:col3, Baron_2016_table_S1:row5:col1, Baron_2016_table_S1:row5:col3, Baron_2016_table_S1:row6:col1, Baron_2016_table_S1:row6:col3, Baron_2016_table_S1:row7:col1, Baron_2016_table_S1:row7:col3, Baron_2016_table_S1:row8:col1, Baron_2016_table_S1:row8:col3, Baron_2016_table_S1:row9:col1, Baron_2016_table_S1:row9:col3, Baron_2016_table_S1:row10:col1, Baron_2016_table_S1:row10:col3, Baron_2016_table_S1:row11:col1, Baron_2016_table_S1:row11:col3, Baron_2016_table_S1:row12:col1, Baron_2016_table_S1:row12:col3 | — | not captured |
+| V2 | `Q64` · V2 | 1.27 | L | 0.00127 | L | 15.3 | exact (1.0) | Baron_2016_table_S1:row14:col1, Baron_2016_table_S1:row14:col3, Baron_2016_table_S1:row15:col1, Baron_2016_table_S1:row15:col3, Baron_2016_table_S1:row16:col1, Baron_2016_table_S1:row16:col3, Baron_2016_table_S1:row17:col1, Baron_2016_table_S1:row17:col3, Baron_2016_table_S1:row18:col1, Baron_2016_table_S1:row18:col3 | — | not captured |
+| Q/F | `Q69` · Q/F | 6.34 | L/h | 1.7611111111111112e-06 | L/h | 4.22 | exact (1.0) | Baron_2016_table_S1:row19:col1, Baron_2016_table_S1:row19:col3 | — | not captured |
+| V3 | `Q77` · V3 | 0.959 | L | 0.000959 | L | 5.04 | exact (1.0) | Baron_2016_table_S1:row21:col1, Baron_2016_table_S1:row21:col3, Baron_2016_table_S1:row22:col1, Baron_2016_table_S1:row22:col3, Baron_2016_table_S1:row23:col1, Baron_2016_table_S1:row23:col3, Baron_2016_table_S1:row24:col1, Baron_2016_table_S1:row24:col3, Baron_2016_table_S1:row25:col1, Baron_2016_table_S1:row25:col3 | — | not captured |
+| ka | `Q49` · kabs | 1.23 | 1/h | 0.00034166666666666666 | 1/h | 2.21 | exact (1.0) | Baron_2016_table_S1:row27:col1, Baron_2016_table_S1:row27:col3, Baron_2016_table_S1:row28:col1, Baron_2016_table_S1:row28:col3, Baron_2016_table_S1:row29:col1, Baron_2016_table_S1:row29:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,6 +57,11 @@ Baron KT; Macha S; Broedl UC; Nock V; Retlich S; Riggs M et al. (2016). Diabetes
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'ALAG1' — extend the ontology if this is a real PK parameter (source ['Baron_2016_table_S1:row30:col1'])
 - dropped value-less row: '*'
+- implicit units: 'CL' → L/h (from the paper text: "The text states: 'Typical population PK parameters ... were: CL/F, 10.6 L/h'")
+- implicit units: 'V2' → L (from the paper text: "The text states: 'V 2/F, 3.14 L'")
+- implicit units: 'Q/F' → L/h (from the paper text: "The text states: 'apparent intercompartmental clearance (Q/F), 6.34 L/h'")
+- implicit units: 'V3' → L (from the paper text: "The text states: 'V 3/F, 70.6 L'")
+- implicit units: 'ka' → 1/h (from the popPK convention: "The text lists 'first-order k a' but provides a value with unit 'L/h' which is dimensionally incorrect for a first-order")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=empagliflozin
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -102,13 +106,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.933 (14/15 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.8 (12/15 fields) | 3 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[alag1]` | not captured | 0.500 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | empagliflozin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | empagliflozin | unknown | mismatch |
 
 </details>
 
@@ -124,8 +130,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baron_2016_table_S1:row1:col1', 'Baron_2016_table_S1:row1:col3', 'Baron_2016_table_S1:row2:col1', 'Baron_2016_table_S1:row2:col3', 'Baron_2016_table_S1:row3:col1', 'Baron_2016_table_S1:row3:col3', 'Baron_2016_table_S1:row4:col1', 'Baron_2016_table_S1:row4:col3', 'Baron_2016_table_S1:row5:col1', 'Baron_2016_table_S1:row5:col3', 'Baron_2016_table_S1:row6:col1', 'Baron_2016_table_S1:row6:col3', 'Baron_2016_table_S1:row7:col1', 'Baron_2016_table_S1:row7:col3', 'Baron_2016_table_S1:row8:col1', 'Baron_2016_table_S1:row8:col3', 'Baron_2016_table_S1:row9:col1', 'Baron_2016_table_S1:row9:col3', 'Baron_2016_table_S1:row10:col1', 'Baron_2016_table_S1:row10:col3', 'Baron_2016_table_S1:row11:col1', 'Baron_2016_table_S1:row11:col3', 'Baron_2016_table_S1:row12:col1', 'Baron_2016_table_S1:row12:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Baron_2016_table_S1:row27:col1', 'Baron_2016_table_S1:row27:col3', 'Baron_2016_table_S1:row28:col1', 'Baron_2016_table_S1:row28:col3', 'Baron_2016_table_S1:row29:col1', 'Baron_2016_table_S1:row29:col3'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Baron_2016_table_S1:row14:col1', 'Baron_2016_table_S1:row14:col3', 'Baron_2016_table_S1:row15:col1', 'Baron_2016_table_S1:row15:col3', 'Baron_2016_table_S1:row16:col1', 'Baron_2016_table_S1:row16:col3', 'Baron_2016_table_S1:row17:col1', 'Baron_2016_table_S1:row17:col3', 'Baron_2016_table_S1:row18:col1', 'Baron_2016_table_S1:row18:col3'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Baron_2016_table_S1:row19:col1', 'Baron_2016_table_S1:row19:col3'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Baron_2016_table_S1:row21:col1', 'Baron_2016_table_S1:row21:col3', 'Baron_2016_table_S1:row22:col1', 'Baron_2016_table_S1:row22:col3', 'Baron_2016_table_S1:row23:col1', 'Baron_2016_table_S1:row23:col3', 'Baron_2016_table_S1:row24:col1', 'Baron_2016_table_S1:row24:col3', 'Baron_2016_table_S1:row25:col1', 'Baron_2016_table_S1:row25:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.011 L/h | not captured | not captured | ['Baron_2016_table_S1:row1:col1', 'Baron_2016_table_S1:row1:col3', 'Baron_2016_table_S1:row2:col1', 'Baron_2016_table_S1:row2:col3', 'Baron_2016_table_S1:row3:col1', 'Baron_2016_table_S1:row3:col3', 'Baron_2016_table_S1:row4:col1', 'Baron_2016_table_S1:row4:col3', 'Baron_2016_table_S1:row5:col1', 'Baron_2016_table_S1:row5:col3', 'Baron_2016_table_S1:row6:col1', 'Baron_2016_table_S1:row6:col3', 'Baron_2016_table_S1:row7:col1', 'Baron_2016_table_S1:row7:col3', 'Baron_2016_table_S1:row8:col1', 'Baron_2016_table_S1:row8:col3', 'Baron_2016_table_S1:row9:col1', 'Baron_2016_table_S1:row9:col3', 'Baron_2016_table_S1:row10:col1', 'Baron_2016_table_S1:row10:col3', 'Baron_2016_table_S1:row11:col1', 'Baron_2016_table_S1:row11:col3', 'Baron_2016_table_S1:row12:col1', 'Baron_2016_table_S1:row12:col3'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.27 L | not captured | not captured | ['Baron_2016_table_S1:row14:col1', 'Baron_2016_table_S1:row14:col3', 'Baron_2016_table_S1:row15:col1', 'Baron_2016_table_S1:row15:col3', 'Baron_2016_table_S1:row16:col1', 'Baron_2016_table_S1:row16:col3', 'Baron_2016_table_S1:row17:col1', 'Baron_2016_table_S1:row17:col3', 'Baron_2016_table_S1:row18:col1', 'Baron_2016_table_S1:row18:col3'] |
 
 **Reviewer per-scenario checks:**
 
@@ -174,4 +188,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-15 17:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:32 UTC</sub>

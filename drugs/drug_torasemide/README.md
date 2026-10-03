@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03C&quot;,&quot;href&quot;:&quot;atc/C03C.md&quot;},{&quot;label&quot;:&quot;torasemide&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Torasemide_Pelligand2020_reference&quot;,&quot;label&quot;:&quot;Pelligand_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_torasemide/Torasemide_Pelligand2020_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # torasemide
 
@@ -29,13 +28,13 @@ As well, torasemide is approved to be used as an antihypertensive agent either a
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 10:28 | 12:30 | 0/0/1 | 0/0/0 | 0/0/1 | 65,811/9,519 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
+| 2026-09-30 08:18 | 2:11 | 0/0/1 | 0/0/0 | 0/0/1 | 22,699/7,595 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/3 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Pelligand_2020_reference](drugs/drug_torasemide/Torasemide_Pelligand2020_reference.md) | — | 1-compartment (no model) | 1 | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>blocking: C5 dimensioned parameter(s) without a unit: Q22 — no SI value to build from</sub><br><sub>route_to: `human_review`</sub> | [Pelligand_2020_reference](drugs/drug_torasemide/Torasemide_Pelligand2020_reference.md) | — | 1-compartment (no model) | 1 | Pelligand L et al., Population Pharmacokinetics and Pharmac…, Frontiers in veterinary sci… (2020) | [10.3389/fvets.2020.00151](https://doi.org/10.3389/fvets.2020.00151) |
 
 ## Pharmacogenomics (PGx)
 
@@ -54,25 +53,26 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | <sub>“…est oral bioavailability even in advanced stages of chronic kidney disease.[A174463] This…”</sub> | prose |
+| absorption | small intestine | <sub>“…Torasemide is the diuretic with the highest oral bioavailability…”</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…0% of the dose remains unchanged and it is recovered in the urine.[A174475] Metabolized vi…”</sub> | prose |
+| metabolism | kidney | <sub>“…recovered in the urine…”</sub> | prose |
 | metabolism | liver | `CYP2C8` substrate, `CYP2C9` inhibitor/substrate, `SLCO1B1` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…asemide is mainly hepatically processed and excreted in the feces from which about 70-80%…”</sub> | prose |
-| excretion | kidney | <sub>“…hand, about 20-30% of the administered dose is found in the urine.[L5257]…”</sub> | prose |
+| excretion | bile duct | <sub>“…excreted in the feces…”</sub> | prose |
+| excretion | kidney | <sub>“…about 20-30% of the administered dose is found in the urine…”</sub> | prose |
+| excretion | liver | <sub>“…mainly hepatically processed…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: SLC12A1 (inhibitor), SLC12A2 (inhibitor), UMOD (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
 - **PubMed hits:** 28 matched, 28 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** not captured
 
@@ -92,7 +92,7 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Li_2020.pdf` | Li Y et al., Quality of oral anticoagulation control…, Current medical research an… (2020) | pgx | 5 | [10.1080/03007995.2020.1796611](https://doi.org/10.1080/03007995.2020.1796611) | [32677855](https://www.ncbi.nlm.nih.gov/pubmed/32677855) | metadata signals extractable PGX data (CYP2C9*3) |
 | `Yasar_1999.pdf` | Yasar U et al., Validation of methods for CYP2C9 genoty…, Biochemical and biophysical… (1999) | pgx | 5 | [10.1006/bbrc.1998.9992](https://doi.org/10.1006/bbrc.1998.9992) | [9920790](https://www.ncbi.nlm.nih.gov/pubmed/9920790) | metadata signals extractable PGX data (CYP2C9) |
 
-<sub>queue written 2026-09-28T10:23:11.970588+00:00</sub>
+<sub>queue written 2026-09-30T08:16:06.803744+00:00</sub>
 
 ## Screened and excluded
 

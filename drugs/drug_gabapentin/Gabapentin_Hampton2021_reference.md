@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Hampton_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # gabapentin — `Gabapentin_Hampton2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from the paper's title and abstract).">pig</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.267). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (pig), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">pig</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the paper's title and abstract).
+> **Species: pig.** This record comes from an animal study (pig), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 **Model:** No model was generated from this record.
 
@@ -28,7 +28,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavai
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
-Hampton CE; Queiroz-Williams P; Oubre MJ; Martin A; Gisclair AT; Pypendop BH et al. (2021). Journal of veterinary pharmacology and therapeutics 44
+Hampton CE et al., Pharmacokinetics of oral and compounded…, Journal of veterinary pharm… (2021)
   ·  DOI: [10.1111/jvp.12977](https://doi.org/10.1111/jvp.12977)
 
 ## Model component
@@ -114,7 +114,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | fail | [mass] * [time] | kg*min | not captured | not captured | ['Hampton_2021:abstract'] |
@@ -129,6 +129,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.2 | not captured | not captured | ['Hampton_2021:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | pass | volume within physiological range | 11.9 L | not captured | not captured | ['Hampton_2021:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 41.6 L | not captured | not captured | ['Hampton_2021:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

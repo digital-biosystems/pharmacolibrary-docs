@@ -1,0 +1,141 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Fukamatsu_2026 \u00b7 PD coagulation factor concentration&quot;}]"></div>
+<div class="pk-tab-mark" data-tab="Information"></div>
+
+# coagulation factor concentration — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (other animal), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">other animal</span>
+
+<details class="legend">
+<summary>What the badges above mean</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+> **Species: other animal.** This record comes from an animal study (other animal), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from keyword rules on the title and abstract — no LLM answer yet).
+
+## What this record describes
+
+**As extracted:** Warfarin/diphacinone (parent anticoagulant rodenticide, hepatic concentration Ch) (measured concentrations) drive coagulation factor concentration (in unknown): indirect response — drug stimulates the loss of coagulation factor concentration.
+
+**Model:** No model was generated from this record.
+
+- **paper:** `Fukamatsu_2026`
+- **model family:** `indirect_response_iv`
+- **driver:** `conc_no_pk`
+- **tier:** descriptive
+- **effect:** inhibition/additive
+
+## Citation
+Fukamatsu M et al., An ordinary differential equation-based…, The Journal of veterinary m… (2026)
+  ·  DOI: [10.1292/jvms.26-0177](https://doi.org/10.1292/jvms.26-0177)
+
+## Parameters
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PK (driver) | CLh — Diphacinone | `Q25` · not captured | 0.645 | not captured | not captured | exact (not captured) | tbl_003:row1:col2 |
+| PK (driver) | CLh | `Q25` · not captured | 0.581 | not captured | not captured | exact (not captured) | tbl_003:row1:col3 |
+| PK (driver) | CLh | `Q25` · not captured | 0.384 | not captured | not captured | exact (not captured) | tbl_003:row1:col4 |
+| PK (driver) | CLh | `Q25` · not captured | 0.330 | not captured | not captured | exact (not captured) | tbl_003:row1:col5 |
+| PK (driver) | CLh — Warfarin | `Q25` · not captured | 0.243 | not captured | not captured | exact (not captured) | tbl_003:row1:col7 |
+| PK (driver) | CLh | `Q25` · not captured | 0.805 | not captured | not captured | exact (not captured) | tbl_003:row1:col8 |
+| PK (driver) | CLh | `Q25` · not captured | 0.174 | not captured | not captured | exact (not captured) | tbl_003:row1:col9 |
+| PK (driver) | CLh | `Q25` · not captured | 0.311 | not captured | not captured | exact (not captured) | tbl_003:row1:col10 |
+| PK (driver) | Vh — Diphacinone | `Q368` · not captured | 0.518 | not captured | not captured | exact (not captured) | tbl_003:row2:col2 |
+| PK (driver) | Vh | `Q368` · not captured | 0.443 | not captured | not captured | exact (not captured) | tbl_003:row2:col3 |
+| PK (driver) | Vh | `Q368` · not captured | 0.224 | not captured | not captured | exact (not captured) | tbl_003:row2:col4 |
+| PK (driver) | Vh | `Q368` · not captured | 0.237 | not captured | not captured | exact (not captured) | tbl_003:row2:col5 |
+| PK (driver) | Vh — Warfarin | `Q368` · not captured | 0.178 | not captured | not captured | exact (not captured) | tbl_003:row2:col7 |
+| PK (driver) | Vh | `Q368` · not captured | 0.602 | not captured | not captured | exact (not captured) | tbl_003:row2:col8 |
+| PK (driver) | Vh | `Q368` · not captured | 0.031 | not captured | not captured | exact (not captured) | tbl_003:row2:col9 |
+| PK (driver) | Vh | `Q368` · not captured | 0.172 | not captured | not captured | exact (not captured) | tbl_003:row2:col10 |
+| PD (effect) | IC50 — Diphacinone | `Q322` · not captured | 0.189 | nM | not captured | exact (not captured) | tbl_003:row3:col2 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.301 | nM | not captured | exact (not captured) | tbl_003:row3:col3 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.495 | nM | not captured | exact (not captured) | tbl_003:row3:col4 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.194 | nM | not captured | exact (not captured) | tbl_003:row3:col5 |
+| PD (effect) | IC50 — Warfarin | `Q322` · not captured | 0.229 | nM | not captured | exact (not captured) | tbl_003:row3:col7 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.208 | nM | not captured | exact (not captured) | tbl_003:row3:col8 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.138 | nM | not captured | exact (not captured) | tbl_003:row3:col9 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.252 | nM | not captured | exact (not captured) | tbl_003:row3:col10 |
+| PK (driver) | γ — Diphacinone | `Q89` · not captured | 0.132 | not captured | not captured | llm (not captured) | tbl_003:row4:col2 |
+| PK (driver) | γ | `Q89` · not captured | 0.273 | not captured | not captured | llm (not captured) | tbl_003:row4:col3 |
+| PK (driver) | γ | `Q89` · not captured | 0.758 | not captured | not captured | llm (not captured) | tbl_003:row4:col4 |
+| PK (driver) | γ | `Q89` · not captured | 0.153 | not captured | not captured | llm (not captured) | tbl_003:row4:col5 |
+| PK (driver) | γ — Warfarin | `Q89` · not captured | 0.168 | not captured | not captured | llm (not captured) | tbl_003:row4:col7 |
+| PK (driver) | γ | `Q89` · not captured | 0.202 | not captured | not captured | llm (not captured) | tbl_003:row4:col8 |
+| PK (driver) | γ | `Q89` · not captured | 0.029 | not captured | not captured | llm (not captured) | tbl_003:row4:col9 |
+| PK (driver) | γ | `Q89` · not captured | 0.220 | not captured | not captured | llm (not captured) | tbl_003:row4:col10 |
+| PK (driver) | CL — Diphacinone | `Q22` · not captured | 0.109 | not captured | not captured | exact (not captured) | tbl_003:row5:col2 |
+| PK (driver) | CL | `Q22` · not captured | 0.289 | not captured | not captured | exact (not captured) | tbl_003:row5:col3 |
+| PK (driver) | CL | `Q22` · not captured | 0.193 | not captured | not captured | exact (not captured) | tbl_003:row5:col4 |
+| PK (driver) | CL | `Q22` · not captured | 0.084 | not captured | not captured | exact (not captured) | tbl_003:row5:col5 |
+| PK (driver) | CL — Warfarin | `Q22` · not captured | 0.122 | not captured | not captured | exact (not captured) | tbl_003:row5:col7 |
+| PK (driver) | CL | `Q22` · not captured | 0.081 | not captured | not captured | exact (not captured) | tbl_003:row5:col8 |
+| PK (driver) | CL | `Q22` · not captured | 0.022 | not captured | not captured | exact (not captured) | tbl_003:row5:col9 |
+| PK (driver) | CL | `Q22` · not captured | 0.156 | not captured | not captured | exact (not captured) | tbl_003:row5:col10 |
+| PK (driver) | Vc — Diphacinone | `Q63` · not captured | 0.059 | not captured | not captured | exact (not captured) | tbl_003:row6:col2 |
+| PK (driver) | Vc | `Q63` · not captured | 0.149 | not captured | not captured | exact (not captured) | tbl_003:row6:col3 |
+| PK (driver) | Vc | `Q63` · not captured | 0.057 | not captured | not captured | exact (not captured) | tbl_003:row6:col4 |
+| PK (driver) | Vc | `Q63` · not captured | 0.025 | not captured | not captured | exact (not captured) | tbl_003:row6:col5 |
+| PK (driver) | Vc — Warfarin | `Q63` · not captured | 0.023 | not captured | not captured | exact (not captured) | tbl_003:row6:col7 |
+| PK (driver) | Vc | `Q63` · not captured | 0.069 | not captured | not captured | exact (not captured) | tbl_003:row6:col8 |
+| PK (driver) | Vc | `Q63` · not captured | 0.032 | not captured | not captured | exact (not captured) | tbl_003:row6:col9 |
+| PK (driver) | Vc | `Q63` · not captured | 0.087 | not captured | not captured | exact (not captured) | tbl_003:row6:col10 |
+| PK (driver) | ka — Diphacinone | `Q49` · not captured | 0.032 | not captured | not captured | exact (not captured) | tbl_003:row7:col2 |
+| PK (driver) | ka | `Q49` · not captured | 0.051 | not captured | not captured | exact (not captured) | tbl_003:row7:col3 |
+| PK (driver) | ka | `Q49` · not captured | 0.048 | not captured | not captured | exact (not captured) | tbl_003:row7:col4 |
+| PK (driver) | ka | `Q49` · not captured | 0.023 | not captured | not captured | exact (not captured) | tbl_003:row7:col5 |
+| PK (driver) | ka — Warfarin | `Q49` · not captured | 0.021 | not captured | not captured | exact (not captured) | tbl_003:row7:col7 |
+| PK (driver) | ka | `Q49` · not captured | 0.057 | not captured | not captured | exact (not captured) | tbl_003:row7:col8 |
+| PK (driver) | ka | `Q49` · not captured | 0.057 | not captured | not captured | exact (not captured) | tbl_003:row7:col9 |
+| PK (driver) | ka | `Q49` · not captured | 0.045 | not captured | not captured | exact (not captured) | tbl_003:row7:col10 |
+| PK (driver) | Qh — Diphacinone | `Q369` · not captured | 0.001 | not captured | not captured | exact (not captured) | tbl_003:row8:col2 |
+| PK (driver) | Qh | `Q369` · not captured | 0.002 | not captured | not captured | exact (not captured) | tbl_003:row8:col3 |
+| PK (driver) | Qh | `Q369` · not captured | 0.003 | not captured | not captured | exact (not captured) | tbl_003:row8:col4 |
+| PK (driver) | Qh | `Q369` · not captured | 0.002 | not captured | not captured | exact (not captured) | tbl_003:row8:col5 |
+| PK (driver) | Qh — Warfarin | `Q369` · not captured | 0.002 | not captured | not captured | exact (not captured) | tbl_003:row8:col7 |
+| PK (driver) | Qh | `Q369` · not captured | 0.001 | not captured | not captured | exact (not captured) | tbl_003:row8:col8 |
+| PK (driver) | Qh | `Q369` · not captured | 0.001 | not captured | not captured | exact (not captured) | tbl_003:row8:col9 |
+| PK (driver) | Qh | `Q369` · not captured | 0.002 | not captured | not captured | exact (not captured) | tbl_003:row8:col10 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+
+## Biomarker turnover model
+
+This page models **coagulation factor concentration** as an endogenous turnover response, separately from the drug's pharmacokinetics.
+
+- **driver tier:** `none`
+- **turnover quantities linked:** none
+- **effect blocks:** 1
+  - warfarin/diphacinone (parent anticoagulant rodenticide, hepatic concentration Ch): indirect_response_iv on loss; linked values: concentration_50, gamma
+- **turnover review:** <span class="pk-badge pk-badge--orange">needs review</span>
+  - `B4_steady_state` — skipped: production and loss/clearance parameters are incomplete
+  - `B4_effect_1` — skipped: the perturbing compound has no resolved concentration source
+  - `B4_driver_link` — skipped: no driver PK source is available
+
+
+<div class="pk-tab-mark" data-tab="Models"></div>
+
+## Downloadable models
+
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
+
+<div class="pk-tab-mark" data-tab="Simulation"></div>
+
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
+
+<div class="pk-tab-end"></div>
+
+---
+<sub>← back to [Potassium](drugs/drug_potassium/)</sub>

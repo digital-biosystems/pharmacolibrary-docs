@@ -1,0 +1,141 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;perindopril&quot;}]"></div>
+
+# perindopril
+
+- **generic name:** perindopril
+- **ATC codes:** `C09AA04`, `C09BA04`, `C09BB04`, `C09BX02`, `C10BX11`, `C10BX12`, `C10BX13`, `C10BX14`, `C10BX15`, `C10BX21`
+- **DrugBank:** [DB00790](https://go.drugbank.com/drugs/DB00790) · **PubChem:** [CID 107807](https://pubchem.ncbi.nlm.nih.gov/compound/107807)
+- **molar mass:** 368.4678 g/mol (C19H32N2O5) — DrugBank
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Perindopril is a nonsulfhydryl prodrug that belongs to the angiotensin-converting enzyme (ACE) inhibitor class of medications. It is rapidly metabolized in the liver to perindoprilat, its active metabolite, following oral administration. Perindoprilat is a potent, competitive inhibitor of ACE, the enzyme responsible for the conversion of angiotensin I (ATI) to angiotensin II (ATII). ATII regulates blood pressure and is a key component of the renin-angiotensin-aldosterone system (RAAS). Perindopril may be used to treat mild to moderate essential hypertension, mild to moderate congestive heart failure, and to reduce the cardiovascular risk of individuals with hypertension or post-myocardial infarction and stable coronary disease.
+
+**Indication.** For the treatment of mild to moderate essential hypertension, mild to moderate congestive heart failure, and to reduce the cardiovascular risk of individuals with hypertension or post-myocardial infarction and stable coronary disease.
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| perindopril | parent | 368.468 | C19H32N2O5 | DrugBank | [107807](https://pubchem.ncbi.nlm.nih.gov/compound/107807) | Parker_2005 |
+| perindoprilat | metabolite | 340.42 | C17H28N2O5 | PubChem | [72022](https://pubchem.ncbi.nlm.nih.gov/compound/72022) | Parker_2005 |
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-30 23:40 | 6:05 | 0/5/0 | 0/0/0 | 1/0/20 | 170,871/39,028 | ollama / glm-5.3-flash | 19 | 15/3 | 5/14 | 0 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Meyrier_1998_reference](drugs/drug_perindopril/Perindopril_Meyrier1998_reference.md) | — | general linear (no model) | 0 | Meyrier A et al., Fixed low-dose perindopril-indapamide c…, American journal of hyperte… (1998) | [10.1016/s0895-7061(98)00128-9](https://doi.org/10.1016/s0895-7061(98)00128-9) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Parker_2005_model_1](drugs/drug_perindopril/Perindopril_Parker2005_model_1.md) | — | 1-compartment (no model) | 5 | Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of pharmac… (2005) | [10.1016/j.ejps.2005.05.006](https://doi.org/10.1016/j.ejps.2005.05.006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Parker_2005_model_2](drugs/drug_perindopril/Perindopril_Parker2005_model_2.md) | — | 1-compartment (no model) | 6 | Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of pharmac… (2005) | [10.1016/j.ejps.2005.05.006](https://doi.org/10.1016/j.ejps.2005.05.006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Parker_2005_multiple_dose](drugs/drug_perindopril/Perindopril_Parker2005_multiple_dose.md) | — | 1-compartment (no model) | 4 | Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of pharmac… (2005) | [10.1016/j.ejps.2005.05.006](https://doi.org/10.1016/j.ejps.2005.05.006) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.444). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: C5 dimension mismatch on a structural parameter</sub><br><sub>route_to: `human_review`</sub> | [Parker_2005_single_dose](drugs/drug_perindopril/Perindopril_Parker2005_single_dose.md) | — | 1-compartment (no model) | 4 | Parker E et al., The pharmacokinetics of perindoprilat i…, European journal of pharmac… (2005) | [10.1016/j.ejps.2005.05.006](https://doi.org/10.1016/j.ejps.2005.05.006) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | **CYP2C9** | `safety` — adverse-reaction risk (HLA / safety allele) — no parameter shift | safety_allele | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_CYP2C9_safety.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ACE** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Brugts_2011](drugs/drug_perindopril/pgx_Brugts_2011_ACE_Q100.md) | Brugts JJ et al., A pharmacogenetic analysis of determina…, Journal of hypertension (2011) | [10.1097/HJH.0b013e328341d117](https://doi.org/10.1097/HJH.0b013e328341d117) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **AGT** | `Q38` · E | target | [Brugts_2011](drugs/drug_perindopril/pgx_Brugts_2011_AGT_Q38.md) | Brugts JJ et al., A pharmacogenetic analysis of determina…, Journal of hypertension (2011) | [10.1097/HJH.0b013e328341d117](https://doi.org/10.1097/HJH.0b013e328341d117) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ATP6AP2 ((pro)renin receptor)** | `Q38` · E | target | [Brugts_2011](drugs/drug_perindopril/pgx_Brugts_2011_ATP6AP2_pro_renin_receptor_Q38.md) | Brugts JJ et al., A pharmacogenetic analysis of determina…, Journal of hypertension (2011) | [10.1097/HJH.0b013e328341d117](https://doi.org/10.1097/HJH.0b013e328341d117) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ACE** | `Q38` · E | target | [Ha_2000](drugs/drug_perindopril/pgx_Ha_2000_ACE_Q38.md) | Ha SK et al., ACE DD genotype is more susceptible tha…, Nephrology, dialysis, trans… (2000) | [10.1093/ndt/15.10.1617](https://doi.org/10.1093/ndt/15.10.1617) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ACE** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Lin_2019](drugs/drug_perindopril/pgx_Lin_2019_ACE_Q100.md) | Lin P et al., The Effect of Angiotensin-Converting En…, Genetic testing and molecul… (2019) | [10.1089/gtmb.2018.0232](https://doi.org/10.1089/gtmb.2018.0232) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ACE** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_ACE_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ADRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_ADRB1_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **AGTR1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_AGTR1_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **APOC1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_APOC1_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **APOE** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_APOE_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **BDKRB1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_BDKRB1_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CETP** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_CETP_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CLMN** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_CLMN_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2C19** | `Q45` · fm | metabolism | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_CYP2C19_Q45.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **CYP2D6** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_CYP2D6_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **HMGCR** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_HMGCR_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **PTGS1 (COX-1)** | `Q322` · IC50 | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_PTGS1_COX_1_Q322.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **SLCO1B1** | `Q22` · CL | transport | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_SLCO1B1_Q22.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **VKORC1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Yip_2013](drugs/drug_perindopril/pgx_Yip_2013_VKORC1_Q100.md) | Yip VL et al., Expanding role of pharmacogenomics in t…, American journal of cardiov… (2013) | [10.1007/s40256-013-0024-5](https://doi.org/10.1007/s40256-013-0024-5) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ACE** | `Q335` · slope | target | [de_2014](drugs/drug_perindopril/pgx_de_2014_ACE_Q335.md) | de Oliveira FF et al., Brain-penetrating angiotensin-convertin…, Journal of Alzheimer's dise… (2014) | [10.3233/JAD-132189](https://doi.org/10.3233/JAD-132189) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=perindopril) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | small intestine | `SLC15A1` substrate | DrugBank actor |
+| metabolism | blood | `BCHE` inhibitor | DrugBank actor |
+| metabolism | brain | `CYP2D6` metabolism | paper PGx gene |
+| metabolism | liver | `BCHE` inhibitor, `CYP2C19` metabolism, `CYP2C9` safety_allele, `CYP2D6` metabolism, `SLCO1B1` transport | DrugBank actor |
+| excretion | kidney | `SLC15A2` substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: ACE (inhibitor), ACE (target), ADRB1 (target), AGT (target), AGTR1 (target), APOC1 (unknown), APOE (unknown), ATP6AP2 ((PRO)RENIN RECEPTOR) (target), BDKRB1 (target), CETP (unknown), CLMN (unknown), HMGCR (target), PTGS1 (COX-1) (target), SFRP4 (inhibitor), VKORC1 (target).</sub>
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 32 matched, 32 returned
+- **screened:** 19  ·  **relevant:** 1
+- **records:** 5  ·  extracted 0  ·  needs_review 0  ·  rejected 5  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Bellissant_1990.pdf` | Bellissant E et al., [Modeling of the relation between plasm…, Archives des maladies du co… (1990) | pd | 5 | not captured | [2175584](https://www.ncbi.nlm.nih.gov/pubmed/2175584) | metadata signals extractable PD data (effectcompartment) |
+| `Bellissant_2001.pdf` | Bellissant E et al., Pharmacokinetic-pharmacodynamic model f…, British journal of clinical… (2001) | pd | 5 | [10.1046/j.0306-5251.2001.01410.x](https://doi.org/10.1046/j.0306-5251.2001.01410.x) | [11453887](https://www.ncbi.nlm.nih.gov/pubmed/11453887) | metadata signals extractable PD data (pharmacodynamicmodel) |
+| `Sennesael_1992.pdf` | Sennesael J et al., The pharmacokinetics of perindopril and…, British journal of clinical… (1992) | pd | 5 | [10.1111/j.1365-2125.1992.tb04006.x](https://doi.org/10.1111/j.1365-2125.1992.tb04006.x) | [1311597](https://www.ncbi.nlm.nih.gov/pubmed/1311597) | metadata signals extractable PD data (IC50) |
+| `Zhou_2012.pdf` | Zhou X et al., Modeling of angiotensin II-angiotensin-…, Pharmacological research (2012) | pd | 4 | [10.1016/j.phrs.2012.04.001](https://doi.org/10.1016/j.phrs.2012.04.001) | [22513176](https://www.ncbi.nlm.nih.gov/pubmed/22513176) | metadata signals extractable PD data (turnovermodel) |
+
+<sub>queue written 2026-09-30T23:34:37.126911+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PGx | Anfinogenova_2024 | not_relevant | 0 | 0 | The paper examines potential drug-drug interactions of aspirin with ACE inhibitors including perindopril, but reports no gene variant/genotype/phenotype effects on any PK or PD parameter. |
+| PGx | Bahi_2004 | not_relevant | 1 | 3 | The study examines pharmacological ACE inhibition by perindopril in rats, not a gene variant/genotype/phenotype effect on perindopril PK or PD parameters. |
+| popPK | Bellissant_1990 | relevant | 4 | 5 | This is a pharmacodynamic (PK/PD link) modeling study of perindoprilat; only keo, Emax, EC50 are reported numerically, with no disposition parameters (CL, V, half-life) for perindopril. |
+| popPK | Bellissant_2001 | irrelevant | 0 | 0 | no_text gate: only 148 chars of text extracted (&lt; 400) |
+| PGx | Brugts_2009 | not_relevant | 8 | 0 | Study design/protocol only; no genotype effect results on perindopril PK/PD parameters are reported. |
+| PGx | Brugts_2010 | not_relevant | 3 | 4 | The paper reports genetic modifiers of perindopril's clinical outcome benefit (HR for CV events), not an effect on a PK or PD parameter such as AUC, clearance, or a measured drug-response biomarker. |
+| PGx | Brugts_2010_2 | not_relevant | 3 | 4 | The paper reports pharmacogenetic effects on clinical outcomes (CV events) of perindopril, not on PK/PD parameters; the only PD-related finding (ACE genotype not predicting BP reduction in PROGRESS) is a negative result without effect sizes, and the quantitative BP-response genotype association concerns benazepril, not perindopril. |
+| PGx | Ding_2000 | not_relevant | 3 | 2 | Discusses ethnic (Chinese vs Caucasian) differences and ACE I/D polymorphism generally, but no gene variant/genotype effect on perindopril PK or PD parameters is reported. |
+| PGx | Duke_2003 | not_relevant | 0 | 0 | Study examines drug combination effects in SHR rats with no gene variant/genotype/phenotype-based pharmacogenomic analysis of perindopril PK or PD parameters. |
+| popPK | Fang_1996 | irrelevant | 0 | 0 | This is an in-vitro vascular reactivity study with no pharmacokinetic disposition parameters for perindopril. |
+| popPK | Lees_1987 | relevant | 5 | 4 | Study reports PK of S-9780 (perindoprilat, the active diacid metabolite of perindopril) in humans with a three-compartment model and terminal half-life of 31 h, but no clearance or volume values are given in the evidence. |
+| PGx | Luzum_2016 | not_relevant | 3 | 1 | The paper discusses pharmacogenetic risk scores for perindopril, but the provided text contains only a title, a table caption on FDA/CPIC drug labeling, and a pathway figure caption—no gene variant effect on a perindopril PK or PD parameter is reported or quantified. |
+| popPK | Meyrier_1998 | relevant | 6 | 2 | Population PK analysis of perindoprilat in renal failure patients is mentioned, but no numeric disposition parameter values appear in the evidence. |
+| popPK | Morgan_1997 | irrelevant | 2 | 0 | A narrative review discussing perindopril's pharmacokinetics qualitatively (T:P ratio) with no quantitative PK parameters reported. |
+| PD | Morgan_1997 | not_relevant | 0 | 0 | not captured |
+| PGx | Oemrawsingh_2016 | not_relevant | 3 | 4 | The paper reports gene variants (AGTR1/BDKRB1 SNPs) modifying perindopril's clinical efficacy (cardiovascular event risk reduction), not a PK or PD parameter such as drug levels, clearance, or blood pressure response. |
+| popPK | Sennesael_1992 | irrelevant | 0 | 0 | no_text gate: only 151 chars of text extracted (&lt; 400) |
+| PGx | Sun_2009 | not_relevant | 0 | 0 | The paper studies indapamide metabolism by CYP3A4 in vitro; perindopril is only mentioned as part of a combination trial, with no gene variant effect on perindopril PK/PD reported. |
+| popPK | Wiel_2004 | irrelevant | 0 | 0 | This is a pharmacodynamic animal study of perindopril's effects on endothelial dysfunction, with no PK parameters (CL, V, ka, half-life, or PK model) reported. |
+| PD | Wiel_2004 | not_relevant | 2 | 1 | Animal study with a single fixed perindopril dose comparing groups; Emax values refer to vascular relaxation responses, not a drug exposure- or dose-response relationship, so no drug PD parameters are extractable. |
+| PGx | Wu_2014 | not_relevant | 3 | 4 | The paper measures genotype effects on endogenous bradykinin B1 receptor-mediated vasodilation and mononuclear cell responses, not on any PK/PD parameter of perindopril itself; the perindopril efficacy association (EUROPA) is only cited as motivation. |
+| popPK | Zhou_2012 | irrelevant | 3 | 2 | This is a biomarker/disease-progression turnover model (Ang II, Ang-(1-7), SBP) in rats, not a PK study reporting disposition parameters (CL, V, ka, half-life) for perindopril, and no numeric parameter values appear in the evidence. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 23:36 UTC</sub>

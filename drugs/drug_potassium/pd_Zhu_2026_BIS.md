@@ -1,23 +1,23 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Zhu_2026 \u00b7 PD Bispectral Index&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Bispectral Index — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+# Bispectral Index — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.72). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Ciprofol drives Bispectral Index (in unknown): direct sigmoid Emax (Hill) effect.
+**As extracted:** Ciprofol drives Bispectral Index: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Ciprofol effect-site concentrations (ng·mL⁻¹) reduce the Bispectral Index via an effect-compartment model (ke0 = 1.09 min⁻¹, bootstrap median 1.12 min⁻¹) linked to a sigmoidal inhibitory Emax model, with baseline BIS E0 = 93.40, maximum suppression Imax = 45.77, and IC50/EC50 = 233.91 ng·mL⁻¹; γ is reported as a shape parameter but its estimate is not given in the record or excerpts.
+> Ciprofol plasma concentrations drive a decrease in the Bispectral Index (BIS) via an effect-site compartment model linked by a first-order rate constant (Ke0) of 1.09 min⁻¹. The concentration-effect relationship follows a sigmoidal Emax inhibition model with a baseline (E0) of 93.40, a maximum effect (Imax) of 45.77, and an IC50 of 233.91 ng·mL⁻¹.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Zhu_2026`
 - **model family:** `sigmoid_emax`
@@ -26,7 +26,7 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-Zhu J; He J; Zhong B; Cao Y; Zhang X; Xu B et al. (2026). Frontiers in pharmacology 17
+Zhu J et al., From pharmacokinetics to precision dosi…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1764590](https://doi.org/10.3389/fphar.2026.1764590)
 
 ## Parameters
@@ -44,11 +44,8 @@ Zhu J; He J; Zhong B; Cao Y; Zhang X; Xu B et al. (2026). Frontiers in pharmacol
 | PD (effect) | IC50 (ng·ml-1) — Estimate (RSE%) | `Q322` · not captured | 233.91 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col1 |
 | PD (effect) | IC50 (ng·ml-1) — Bootstrap median | `Q322` · not captured | 235.62 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col2 |
 | PD (effect) | IC50 (ng·ml-1) — η-shrinkage (%) | `Q322` · not captured | 28.33 | ng·ml-1 | not captured | exact (not captured) | T3:row5:col4 |
-| variability | γ — η-shrinkage (%) | `Q318` · not captured | 29.23 | not captured | not captured | llm (not captured) | T3:row6:col4 |
 | PD (effect) | ω(IC50) — Estimate (RSE%) | `Q322` · not captured | 0.09 | IC50 | not captured | llm (not captured) | T3:row8:col1 |
 | PD (effect) | ω(IC50) — Bootstrap median | `Q322` · not captured | 0.08 | IC50 | not captured | llm (not captured) | T3:row8:col2 |
-| variability | σ — Estimate (RSE%) | `Q315` · not captured | 7.70 | RSE% | not captured | llm (not captured) | T3:row11:col1 |
-| variability | σ — ε-shrinkage (%) | `Q318` · not captured | 29.10 | WSV | not captured | llm (not captured) | T3:row11:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,13 +58,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (20/25 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.72 (18/25 fields) | 7 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
+| `gpt-oss:120b` | `driver_compound` | ciprofol | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | sigmoid_emax | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.02 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.02 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 3.00 | only_one_extracted |

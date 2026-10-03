@@ -1,12 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Goulooze_2022 \u00b7 PD estimated glomerular filtration rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_van2022_reference&quot;,&quot;label&quot;:&quot;van_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_van2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.45). The first reading is what the record holds.">cross-check: disputed</span>
+# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.316). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -16,9 +16,9 @@
 
 **Model:** No model was generated from this record.
 
-> Finerenone exposure slows chronic eGFR decline (eGFR in mL/min/1.73 m2) in a disease-progression model, acting indirectly by reducing UACR, whose model-predicted longitudinal values are linked to the chronic eGFR slope; no additional UACR-independent finerenone effect on eGFR decline was identified. The paper does not state Imax/IC50/EC50/Emax/kin/kout/ke0 values; the stabilisation point of eGFR decline was estimated at 16.2 mL/min/1.73 m2.
+> Finerenone exposure reduces UACR, which in turn slows the chronic eGFR decline, with the model indicating that the drug's effect on eGFR is completely mediated by its immediate effect on UACR rather than an independent mechanism. The paper does not provide specific potency or rate parameter values (e.g., IC50, EC50, ke0) for the finerenone effect, though it notes a stabilisation point for eGFR decline at 16.2 mL/min/1.73 m2.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Goulooze_2022`
 - **model family:** `disease_progression`
@@ -27,14 +27,16 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Goulooze_2022)
+Goulooze SC et al., Dose-Exposure-Response Analysis of the…, Clinical pharmacokinetics (2022)
+  ·  DOI: [10.1007/s40262-022-01124-3](https://doi.org/10.1007/s40262-022-01124-3)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 140 | UACR | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
-| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 26.7 | UACR | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| — | Baseline eGFR (eGFR) — 5th–95th percentile | `Q100` · not captured | 26.7 | eGFR | not captured | llm_corrected (not captured) | Tab2:row9:col2 |
+| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 140 | UACR | not captured | baseline_identity (not captured) | Tab2:row1:col2 |
+| PD (effect) | Baseline UACR (UACR) — 5th–95th percentile | `Q324` · not captured | 26.7 | UACR | not captured | baseline_identity (not captured) | Tab2:row2:col2 |
+| PD (effect) | UACR progression rate (UACR) — 5th–95th percentile | `Q340` · not captured | 26.7 | UACR | not captured | llm (not captured) | Tab2:row4:col2 |
+| PD (effect) | Baseline eGFR (eGFR) — 5th–95th percentile | `Q324` · not captured | 26.7 | eGFR | not captured | llm_confirmed (not captured) | Tab2:row9:col2 |
 | variability | Inter-individual variability eGFR decline (eGFR) — 5th–95th percentile | `Q312` · not captured | 140 | eGFR | not captured | llm_confirmed (not captured) | Tab2:row14:col2 |
 
 <details class="legend">
@@ -48,21 +50,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.45 (9/20 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.316 (6/19 fields) | 13 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | finerenone | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | disease_progression | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q100]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q100]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q100]` | 26.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 26.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q340]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q340]` | not captured | 26.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 26.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 140 | only_one_extracted |
 

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Higashi2025_reference&quot;,&quot;label&quot;:&quot;Higashi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Higashi2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # brexpiprazole — `Brexpiprazole_Wang2023_reference`
 
-> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -23,31 +23,33 @@
 
 The base model was simulated, not the covariate effects the record defines.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has brexpiprazole, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has brexpiprazole, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `accepted_with_caveats` (reviewed 2026-09-28 14:36:20.730300+00:00) predates the upstream re-run (2026-10-01 19:08:49.100643+00:00). Current validate status: `extracted`.
+
 ## Citation
-not matched (stem Wang_2023)
+Wang Y et al., Population Pharmacokinetic Analysis of…, Journal of clinical pharmac… (2023)
+  ·  DOI: [10.1002/jcph.2307](https://doi.org/10.1002/jcph.2307)
 
 ## Model component
-<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="accepted_with_caveats" stale="false" population="adults, adolescents, and children with CNS disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="brexpiprazole" model-id="Brexpiprazole_Wang2023_reference" status="extracted" stale="true" population="adults, adolescents, and children with CNS disorders" measured-compound="brexpiprazole" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 6 extracted, plus 1 covariate effect.
+**Parameters:** 6 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| D 1 (hour) | `Q310` · D1 | 0.931 | hour | 3351.6000000000004 | [h] | 5 | space_fold (0.95) | tab_1:row3:col2, tab_1:row3:col3 | — | 58.7 (17% RSE) |
-| k a (1/h) | `Q49` · kabs | 1.49 | 1/h | 0.0004138888888888889 | 1/h | 7 | space_fold (0.95) | tab_1:row5:col2, tab_1:row5:col3 | — | 71.0 (16% RSE) |
-| CL (L/h) | `Q22` · CL | 1.34 | L/h | 3.722222222222222e-07 | [l] / [h] | 5 | exact (1.0) | tab_1:row6:col2, tab_1:row6:col3 | — | 57.1 (15% RSE) |
-| V c (L) | `Q63` · V1 | 78.0 | L | 0.078 | [l] | 3 | space_fold (0.95) | tab_1:row8:col2, tab_1:row8:col3 | — | 33.3 (16% RSE) |
+| D 1 (hour) | `Q310` · D1 | 0.931 | hour | 3351.6000000000004 | [h] | 5 | space_fold (0.95) | tab_1:row3:col2, tab_1:row3:col3 | — | not captured |
+| k a (1/h) | `Q49` · kabs | 1.49 | 1/h | 0.0004138888888888889 | 1/h | 7 | space_fold (0.95) | tab_1:row5:col2, tab_1:row5:col3 | — | not captured |
+| CL (L/h) | `Q22` · CL | 1.34 | L/h | 3.722222222222222e-07 | [l] / [h] | 5 | exact (1.0) | tab_1:row6:col2, tab_1:row6:col3 | — | not captured |
+| V c (L) | `Q63` · V1 | 78.0 | L | 0.078 | [l] | 3 | space_fold (0.95) | tab_1:row8:col2, tab_1:row8:col3 | — | not captured |
 | Q (L/h) | `Q30` · Q | 0.844 | L/h | 2.3444444444444446e-07 | [l] / [h] | 18 | exact (1.0) | tab_1:row9:col2, tab_1:row9:col3 | — | not captured |
-| V p (L) | `Q64` · V2 | 27.5 | L | 0.0275 | [l] | 11 | space_fold (0.95) | tab_1:row10:col2, tab_1:row10:col3 | — | 48.5 (30% RSE) |
-| CYP2D6 | `Q900` · CYP2D6 | {'EM': 0.0, 'IM': 0.6364} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
+| V p (L) | `Q64` · V2 | 27.5 | L | 0.0275 | [l] | 11 | space_fold (0.95) | tab_1:row10:col2, tab_1:row10:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,14 +62,21 @@ not matched (stem Wang_2023)
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
+- table section iiv: 'IIV_D 1 (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
+- table section iiv: 'IIV_k a (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
+- table section iiv: 'IIV_CL (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
+- table section iiv: 'IIV_V c (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
+- table section iiv: 'IIV_V p (%)' routed out of structural estimates ('Random effects: interindividual variability (CV)')
+- table section residual_error: 'Error 1' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'Error 2' routed out of structural estimates ('Residual variability')
 - dropped duplicate Q22 ('CL_weight', value '0.75') — already have one for this compound
 - dropped unlinked row (NIL): 'V_weight' — extend the ontology if this is a real PK parameter (source ['tab_1:row12:col1', 'tab_1:row12:col2'])
-- dropped unlinked row (NIL): 'Error 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col2', 'tab_1:row20:col3'])
-- dropped unlinked row (NIL): 'Error 2' — extend the ontology if this is a real PK parameter (source ['tab_1:row21:col2', 'tab_1:row21:col3'])
 - implicit units: 'k a (1/h)' → 1/h (from the popPK convention: 'The parameter is the absorption rate constant (ka). In population pharmacokinetics, first-order rate constants are conve')
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL (L/h)); Q63 (V c (L)); Q30 (Q (L/h)); Q64 (V p (L))
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=brexpiprazole
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- dropped unlinked row (NIL): 'Error 1' — extend the ontology if this is a real PK parameter (source ['tab_1:row20:col2', 'tab_1:row20:col3'])
+- dropped unlinked row (NIL): 'Error 2' — extend the ontology if this is a real PK parameter (source ['tab_1:row21:col2', 'tab_1:row21:col3'])
 
 **Extraction notes:**
 - unparsed cell tab_1:row14:col1 = 'IIV on D 1'
@@ -79,13 +88,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.824 (14/17 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.875 (14/16 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[error 2]` | not captured | 0.003 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | brexpiprazole | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | brexpiprazole | unknown | mismatch |
 
@@ -104,7 +112,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col2', 'tab_1:row6:col3'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row9:col2', 'tab_1:row9:col3'] |
 | C5_dimension_Q310 | pass | [time] | not captured | not captured | not captured | ['tab_1:row3:col2', 'tab_1:row3:col3'] |
@@ -156,7 +163,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference/Brexpiprazole_Wang2023_reference.svg" alt="Brexpiprazole_Wang2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v25.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference/Brexpiprazole_Wang2023_reference.svg" alt="Brexpiprazole_Wang2023_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -169,4 +176,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-27 10:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 19:08 UTC</sub>

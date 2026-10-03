@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;hydrochlorothiazide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/&quot;},{&quot;label&quot;:&quot;Van_2013 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Commander2021_reference&quot;,&quot;label&quot;:&quot;Commander_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Commander2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Van2013_reference&quot;,&quot;label&quot;:&quot;Van_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Van2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Hydrochlorothiazide_Hedaya2015_reference&quot;,&quot;label&quot;:&quot;Hedaya_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Hedaya2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Shimizu2012_reference&quot;,&quot;label&quot;:&quot;Shimizu_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Shimizu2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Hydrochlorothiazide_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Prichard1985_reference&quot;,&quot;label&quot;:&quot;Prichard_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Prichard1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Hydrochlorothiazide_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/Hydrochlorothiazide_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hao_2014_MBP&quot;,&quot;label&quot;:&quot;Hao_2014 \u00b7 MBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Hao_2014_MBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Shimizu_2012_SBP&quot;,&quot;label&quot;:&quot;Shimizu_2012 \u00b7 SBP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_hydrochlorothiazide/pd_Shimizu_2012_SBP.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # hydrochlorothiazide — `Hydrochlorothiazide_Van2013_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,16 +21,18 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Extracted — hydrochlorothiazide: kabs 1.34 h -1, CLNR 2.44 l/h, V1 97.3 l, Q 17.2 l/h, V2 178 l.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of theta_q22_weight_power: this record has 1.38, the second reading none; it also differs on 1 more field. That field does not shape the model.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:13.209180+00:00) predates the upstream re-run (2026-10-02 18:16:17.505597+00:00). Current validate status: `needs_review`.
+
 ## Citation
-Van Wart SA; Shoaf SE; Mallikaarjun S; Mager DE et al. (2013). Biopharmaceutics & drug disposition 34
+Van Wart SA et al., Population-based meta-analysis of hydro…, Biopharmaceutics & drug dis… (2013)
   ·  DOI: [10.1002/bdd.1863](https://doi.org/10.1002/bdd.1863)
 
 ## Model component
-<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="needs_review" stale="false" population="healthy subjects and patients with CHF, renal failure, or hypertension" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="hydrochlorothiazide" model-id="Hydrochlorothiazide_Van2013_reference" status="needs_review" stale="true" population="healthy subjects and CHF patients" measured-compound="hydrochlorothiazide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 5 extracted, plus 2 covariate effects.
@@ -58,7 +60,8 @@ Van Wart SA; Shoaf SE; Mallikaarjun S; Mager DE et al. (2013). Biopharmaceutics 
 ## Departures & gaps
 
 **Interpretation flags:**
-- NIL: refused to back-fill base 'CLR' from footnote/prose loose number None (source ['tab_1:footnote']); the table cell was unparseable — needs review
+- table section iov: 'plasma PK data Covariance (CL R ,V c ) σ 2 CCV for individual' routed out of structural estimates ('IOV for k a ω 2 for γ ω 2 for CL R ω 2 for V c ω 2 for V p ω 2 in σ 2 CCV for aggregate')
+- table section residual_error: 'Population mean CL R' routed out of structural estimates ('a Population mean CL R ¼ 18:3Á CLCR 120 À Á 1:38 b Residual variability determined by dividing σ')
 - covariate effect for Q22 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q315 has no base parameter row (kept as unattached equation-variable)
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q63 (V c (l)); Q30 (CL d (l/h)); Q64 (V p (l))
@@ -72,21 +75,14 @@ Van Wart SA; Shoaf SE; Mallikaarjun S; Mager DE et al. (2013). Biopharmaceutics 
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.889 (16/18 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (18/18 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[theta_q22_weight_power]` | 1.38 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q31_weight_power]` | not captured | 1.38 | only_one_extracted |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -98,7 +94,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_1:row6:col1', 'tab_1:row6:col2'] |
@@ -143,4 +139,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 03:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 18:16 UTC</sub>

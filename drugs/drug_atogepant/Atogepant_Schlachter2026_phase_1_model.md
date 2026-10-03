@@ -1,19 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;atogepant&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/&quot;},{&quot;label&quot;:&quot;Schlachter_2026 \u00b7 phase_1_model&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_1_model&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_1_model&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_1_model.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_2_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_2_modela&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_2_modela.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atogepant_Schlachter2026_phase_3_modela&quot;,&quot;label&quot;:&quot;Schlachter_2026_phase_3_modela&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/Atogepant_Schlachter2026_phase_3_modela.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Schlachter_2026_2_MMD&quot;,&quot;label&quot;:&quot;Schlachter_2026_2 \u00b7 MMD&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atogepant/pd_Schlachter_2026_2_MMD.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # atogepant — `Atogepant_Schlachter2026_phase_1_model`
 
-> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange" title="covariates_not_exercised: the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 > **Caveat** (`covariates_not_exercised`): the record defines covariate effects (weight on clearance, renal function …) but the engineer simulated only the reference individual, so those scenarios were never run. The base model still reproduces the paper; what is missing is the covariate curves.
 
@@ -23,17 +23,18 @@
 
 Although the paper reports apparent parameters for atogepant (CL/F 19.82 L/h, V1/F 73.52 L, Q/F 2.75 L/h, V2/F 47.97 L, ka 2.44 /h, ALAG 0.30 h), the model builder substituted placeholder values for the missing clearance, volume of distribution, absorption rate constant, lag time and both intercompartmental rate constants, so the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 without molar correction, and defaulted ka even though it was not reported in the source, which was judged not acceptable. The covariate effects defined in the record, such as the female sex effect on CL/F (-0.19) and the famotidine pre-treatment effect on relative bioavailability (-0.15), were not exercised in simulation; only the reference individual was simulated. A second reader disagreed on where the -0.19 female sex effect belongs, reading it as an effect on CL/F sex covariate rather than on female_sex_on_cl_f, and read no value for the absolute bioavailability parameter. Extracted — atogepant: kabs 2.44, CL/F 19.8, V1/F 73.5, Q/F 2.75, V2/F 48, tlag 0.3, Frel -0.15.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of f: this record has none, the second reading none; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has atogepant, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
-not matched (stem Schlachter_2026)
+Schlachter L et al., Population Pharmacokinetics of Atogepan…, Clinical pharmacokinetics (2026)
+  ·  DOI: [10.1007/s40262-025-01566-5](https://doi.org/10.1007/s40262-025-01566-5)
 
 ## Model component
 <dbs-pgx drug="atogepant" model-id="Atogepant_Schlachter2026_phase_1_model" status="model_quarantined" stale="false" population="healthy participants and patients with migraine" measured-compound="atogepant" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
+**Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 2 covariate effects.
 
 **Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -87,20 +88,23 @@ not matched (stem Schlachter_2026)
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.824 (14/17 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.667 (12/18 fields) | 6 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[apparent first peripheral volume of distribution [v2/f (l)]].parameter_id` | Q82 | Q64 | mismatch |
 | `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[female_sex_on_cl_f]` | -0.19 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_cl_f_sex]` | not captured | -0.19 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | atogepant | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | atogepant | unknown | mismatch |
 
 </details>
 
@@ -114,10 +118,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col1'] |
+| C5_unit_missing_Q290 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row6:col1'] |
+| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tab2:row2:col1'] |
+| C5_unit_missing_Q69 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row7:col1'] |
+| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row8:col1'] |
+| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Tab2:row11:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 

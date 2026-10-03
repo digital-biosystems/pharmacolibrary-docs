@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;simvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/&quot;},{&quot;label&quot;:&quot;Friedrich_2014 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Lohitnavy2015_reference&quot;,&quot;label&quot;:&quot;Lohitnavy_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Lohitnavy2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Methaneethorn2014v2_reference&quot;,&quot;label&quot;:&quot;Methaneethorn_2014_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Methaneethorn2014v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Ogungbenro2019_reference&quot;,&quot;label&quot;:&quot;Ogungbenro_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Ogungbenro2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2014_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Tsamandouras2015_reference&quot;,&quot;label&quot;:&quot;Tsamandouras_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Tsamandouras2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Simvastatin_Devineni2015_reference&quot;,&quot;label&quot;:&quot;Devineni_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Devineni2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Friedrich2014_reference&quot;,&quot;label&quot;:&quot;Friedrich_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Friedrich2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Simvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kim2021_reference&quot;,&quot;label&quot;:&quot;Kim_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kim2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Kovalenko2025_reference&quot;,&quot;label&quot;:&quot;Kovalenko_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Kovalenko2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Mauro1993_reference&quot;,&quot;label&quot;:&quot;Mauro_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Mauro1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_Sun2022_reference&quot;,&quot;label&quot;:&quot;Sun_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_Sun2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Simvastatin_wierczek2024_reference&quot;,&quot;label&quot;:&quot;\u015awierczek_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/Simvastatin_wierczek2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wei_2014_LDL_C&quot;,&quot;label&quot;:&quot;Wei_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Wei_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_HDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 HDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_HDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Friedrich_2014_LDL_C&quot;,&quot;label&quot;:&quot;Friedrich_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_simvastatin/pd_Friedrich_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # simvastatin — `Simvastatin_Friedrich2014_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.545). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,30 +21,32 @@
 
 The record reports CL/F 15.3 l/hour, V 228.0 l and Q/F 9.79 l/hour for simvastatin, but the absorption rate constant ka is absent from the source and a library placeholder was used instead, together with defaulted Tlag and k21. The model also assumes F=1 and Fm=1 without molar correction, giving an apparent (/F) parameterization with first-order depot input. A second reader disagreed on which values correspond to which quantities, assigning 50.2, 0.3, 827 and 228 to different parameters than this record does. Extracted — simvastatin: CL/F 15.3 (l/hour), V 228 (l), Q 9.79 (l/hour).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of Q: this record has 9.79, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q30: this record has none, the second reading 9.79; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:40:30.662138+00:00) predates the upstream re-run (2026-10-02 19:08:31.051364+00:00). Current validate status: `extracted`.
+
 ## Citation
-Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al. et al. (2014). CPT: pharmacometrics & systems pharmacology 3
+Friedrich S et al., The pharmacokinetics and pharmacokineti…, CPT: pharmacometrics & syst… (2014)
   ·  DOI: [10.1038/psp.2013.70](https://doi.org/10.1038/psp.2013.70)
 
 ## Model component
-<dbs-pgx drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="needs_review" stale="false" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="simvastatin" model-id="Simvastatin_Friedrich2014_reference" status="extracted" stale="true" population="" measured-compound="simvastatin" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 5 extracted.
 
-**Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Oral clearance (CL/F) | `Q27` · CL/F | 15.3 | (l/hour) | 4.25e-06 | L/h | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
-| Central volume of distribution (V2/F) | `Q61` · V | 228.0 | (l) | 0.228 | L | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
-| Intercompartmental clearance (Q/F) | `Q30` · Q | 9.79 | (l/hour) | 2.7194444444444446e-06 | L/h | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
+| Oral clearance (CL/F) (l/hour) | `Q27` · CL/F | 15.3 | l/hour | 4.25e-06 | L/h | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
+| Central volume of distribution (V2/F) (l) | `Q63` · V1 | 228.0 | l | 0.228 | L | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
+| Peripheral volume of distribution (V3/F) (l) | `Q64` · V2 | 827.0 | l | 0.8270000000000001 | L | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
+| Intercompartmental clearance (Q/F) (l/hour) | `Q69` · Q/F | 9.79 | l/hour | 2.7194444444444446e-06 | L/h | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
+| Rate of absorption (Ka) (hour -1 ) | `Q49` · kabs | 0.3 | hour -1 | 8.333333333333333e-05 | 1/h | not captured | review (0.7) | Friedrich_2014:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,24 +67,22 @@ Friedrich S; Kastelein JJ; James D; Waterhouse T; Nissen SE; Nicholls SJ; et al.
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.222 (2/9 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.545 (6/11 fields) | 5 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q30]` | 9.79 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q30]` | not captured | 9.79 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 39.4 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q314]` | not captured | 50.2 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` | not captured | 0.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 228 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q69]` | not captured | 9.79 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q78]` | not captured | 827 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q82]` | not captured | 228 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q316]` | 33 | 33 | mismatch |
+| `gpt-oss:120b` | `values[Q69]` | 9.79 | not captured | only_one_extracted |
 
 </details>
 
@@ -96,16 +96,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Friedrich_2014:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Friedrich_2014:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Friedrich_2014:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Friedrich_2014:review'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Friedrich_2014:review'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Friedrich_2014:review'] |
+| C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Friedrich_2014:review'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 15.3 L/h | not captured | not captured | ['Friedrich_2014:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 228 L | not captured | not captured | ['Friedrich_2014:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 228 L | not captured | not captured | ['Friedrich_2014:review'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 827 L | not captured | not captured | ['Friedrich_2014:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -160,4 +163,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 03:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 19:08 UTC</sub>

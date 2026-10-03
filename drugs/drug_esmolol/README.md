@@ -20,11 +20,21 @@ The FDA withdrew its approval for the use of all parenteral dosage form drug pro
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 03:48 | 32:51 | 0/0/0 | 0/0/0 | 0/0/0 | 157,828/7,005 | ollama / qwen3.8:27b-mtp-q8_0 | 24 | 12/1 | 13/0 | 0 |
+| 2026-10-01 16:22 | 6:45 | 0/0/0 | 2/2/0 | 0/0/0 | 128,929/5,355 | ollama / glm-5.3-flash | 17 | 21/3 | 6/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Gökçe_2026_PON1](drugs/drug_esmolol/pd_G_k_e_2026_PON1.md) | PON1 activity ← esmolol · inhibition effect | — | Gökçe B et al., Inhibitory effects and molecular intera…, Archives of physiology and… (2026) | [10.1080/13813455.2026.2628184](https://doi.org/10.1080/13813455.2026.2628184) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Volz-Zang_1994_2_HR](drugs/drug_esmolol/pd_Volz_Zang_1994_2_HR.md) | Exercise-induced heart rate reduction ← esmolol · direct Emax (saturable) effect | — | Volz-Zang C et al., Esmolol, an ultrashort-acting, selectiv…, European journal of clinica… (1994) | [10.1007/BF00191900](https://doi.org/10.1007/BF00191900) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Volz-Zang_1994_2_SBP](drugs/drug_esmolol/pd_Volz_Zang_1994_2_SBP.md) | Exercise-induced systolic blood pressure reduction ← esmolol · direct Emax (saturable) effect | — | Volz-Zang C et al., Esmolol, an ultrashort-acting, selectiv…, European journal of clinica… (1994) | [10.1007/BF00191900](https://doi.org/10.1007/BF00191900) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">sheep</span> | [Li_2017_SV](drugs/drug_esmolol/pd_Li_2017_SV.md) | Change in stroke volume since the onset of fluid infusion biomarker turnover ← Ringer's lactate (fractional plasma dilution) | — | Li Y et al., Effects of vasoactive drugs on crystall…, PloS one (2017) | [10.1371/journal.pone.0172361](https://doi.org/10.1371/journal.pone.0172361) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 0.95).">dog</span> | [Shaffer_1988_HR_response_inhibition](drugs/drug_esmolol/pd_Shaffer_1988_HR_response_inhibition.md) | Inhibition of heart rate response to isoproterenol ← ASL-8123 · direct linear effect | — | Shaffer JE et al., Beta-adrenoreceptor antagonist potency…, Journal of cardiovascular p… (1988) | — |
 
 ## ADME sites
 
@@ -32,23 +42,24 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | blood | <sub>“…age which is catalyzed by esterases found in the cytosol of red blood cells (RBCs). The pl…”</sub> | prose |
+| metabolism | blood | <sub>“…esterases found in the cytosol of red blood cells…”</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
-| excretion | kidney | <sub>“…ride, less than 2% of the drug is excreted unchanged in the urine. The acid metabolite has…”</sub> | prose |
+| excretion | blood | <sub>“…high rate of blood-based metabolism of esmolol hydrochloride…”</sub> | prose |
+| excretion | kidney | <sub>“…excreted in the urine with a clearance approximately equivalent to the glomerular filtrati…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRB1 (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 80 matched, 64 returned
-- **screened:** 2  ·  **relevant:** 2
+- **PubMed hits:** 80 matched, 72 returned
+- **screened:** 15  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -67,7 +78,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Sidi_2008.pdf` | Sidi A et al., Administration of milrinone before isch…, Acta anaesthesiologica Scan… (2008) | pd | 4 | [10.1111/j.1399-6576.2007.01554.x](https://doi.org/10.1111/j.1399-6576.2007.01554.x) | [18269389](https://www.ncbi.nlm.nih.gov/pubmed/18269389) | metadata signals extractable PD data (Emax) |
 | `Tanahashi_2009.pdf` | Tanahashi S et al., Comparative effects of ultra-short-acti…, European journal of anaesth… (2009) | pd | 4 | [10.1097/EJA.0b013e32831ac268](https://doi.org/10.1097/EJA.0b013e32831ac268) | [19237982](https://www.ncbi.nlm.nih.gov/pubmed/19237982) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-29T03:43:05.395919+00:00</sub>
+<sub>queue written 2026-10-01T16:22:21.047904+00:00</sub>
 
 ## Screened and excluded
 
@@ -92,6 +103,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Dan_2022 | irrelevant | 0 | 0 | The paper is a clinical review discussing rate control strategies in atrial fibrillation and does not report any quantitative pharmacokinetic parameters for esmolol. |
 | PD | Dan_2022 | not_relevant | 1 | 0 | The text is a qualitative review discussing the clinical utility of esmolol and landiolol for rate control without providing any numeric pharmacodynamic parameters or exposure-response data. |
 | popPK | Deng_2006 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of sodium channel inhibition, not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Ede_1997 | irrelevant | 1 | 0 | This is a pharmacodynamic cardioplegia efficacy study in isolated hearts and pigs; no PK disposition parameters (CL, V, half-life, model) are reported. |
 | popPK | Fan_1991 | irrelevant | 1 | 0 | The paper describes an analytical method (HPLC assay) for measuring esmolol concentrations and does not report any quantitative pharmacokinetic parameters (e.g., clearance, volume, half-life). |
 | PD | Fan_1991 | not_relevant | 0 | 0 | The paper describes a validation of an HPLC assay for esmolol and does not report any pharmacodynamic data, exposure-response relationships, or numeric PD parameters. |
 | PGx | Fletcher_2024 | not_relevant | 0 | 0 | The paper is a narrative review on the management of cardiogenic shock and arrhythmias caused by milrinone and dobutamine; it does not report pharmacogenomic effects on the PK or PD of esmolol. |
@@ -101,6 +113,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ghallab_2024 | not_relevant | 1 | 0 | The paper is a state-of-the-art review of landiolol that qualitatively compares it to esmolol but does not report specific numeric PD parameters or exposure-response data for esmolol. |
 | popPK | Gorczynski_1984 | irrelevant | 0 | 0 | The study focuses on hemodynamic and pharmacodynamic effects (heart rate, blood pressure) in dogs and does not report quantitative pharmacokinetic parameters such as clearance or volume of distribution. |
 | PD | Gorczynski_1984 | not_relevant | 4 | 2 | The paper describes qualitative dose-dependent effects and parallel shifts in isoproterenol dose-response curves but does not provide numeric PD parameters (e.g., EC50, Emax) or specific concentration-effect data in the text. |
+| popPK | Goyagi_2012 | irrelevant | 1 | 0 | This is a dose-response neuroprotection study in rats with no PK parameters (CL, V, half-life, or model) reported. |
 | popPK | Greenberg_2002 | irrelevant | 0 | 0 | The study is a hemodynamic/echocardiographic assessment of LV contractility where esmolol is used only as a pharmacological agent to alter inotropic state, not as the subject of a pharmacokinetic analysis. |
 | PD | Greenberg_2002 | not_relevant | 2 | 1 | The study uses esmolol only to create a low-inotropy state for validating an echocardiographic index against peak elastance; it does not model or report a concentration-effect or dose-response relationship for esmolol itself. |
 | popPK | Grémain_2021 | irrelevant | 0 | 0 | The study focuses on caffeine toxicokinetics, with esmolol serving only as a co-administered therapeutic agent for cardiovascular effects rather than the subject of PK analysis. |
@@ -111,6 +124,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Jackman_2002 | irrelevant | 1 | 0 | The study focuses on a different drug (D140S.HCl) with esmolol serving only as a comparator, and no quantitative PK parameters for esmolol are provided. |
 | PD | Jackman_2002 | not_relevant | 2 | 1 | The paper compares the pharmacodynamic half-life and relative potency of a new compound to esmolol but does not provide a concentration-effect curve or numeric PD parameters (Emax, EC50) for esmolol itself. |
 | popPK | Kim_1998 | irrelevant | 0 | 0 | The study focuses on neuromuscular interactions and cholinesterase activity, reporting no pharmacokinetic parameters (CL, V, etc.) for esmolol. |
+| popPK | Kim_2015 | irrelevant | 1 | 0 | This is a clinical inflammatory-response dose-response study with cytokine/CRP outcomes; no PK parameters (CL, V, half-life, model) for esmolol are reported. |
 | popPK | Krumpl_2017 | relevant | 8 | 4 | The study reports PK parameters for esmolol, but only provides half-life and Tmax values, lacking the comprehensive quantitative disposition parameters (CL, V, Q) typically required for population-PK extraction. |
 | popPK | Krumpl_2018 | relevant | 9 | 2 | The study reports PK parameters for esmolol, but only the half-life (6.9 minutes) is explicitly provided in the text, while clearance and volume of distribution are described qualitatively without numeric values. |
 | PD | Krumpl_2018 | not_relevant | 4 | 2 | The abstract describes qualitative PD comparisons (heart rate reduction) and PK parameters but does not provide numeric PD parameters (e.g., EC50, Emax) or specific concentration-effect data points in the provided text. |
@@ -127,6 +141,7 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Polsky_2020 | not_relevant | 2 | 1 | The paper describes an analytical interference (pseudohypernatremia) rather than a pharmacodynamic effect, and while it mentions a dose-response trend, it does not provide extractable numeric PD parameters like Emax or EC50. |
 | popPK | Quintana-Villamandos_2016 | irrelevant | 0 | 0 | The study is a pharmacodynamic/vascular remodeling study in rats that does not report quantitative pharmacokinetic parameters (CL, V, etc.) for esmolol. |
 | PD | Quintana-Villamandos_2016 | not_relevant | 2 | 1 | The study reports a single fixed dose of esmolol and qualitative changes in vascular remodeling and 5-HT response curves, but does not provide a concentration-effect or dose-response analysis for esmolol itself with numeric PD parameters. |
+| popPK | Quon_1986 | irrelevant | 4 | 2 | Dog PK study but only half-life (~15 min) reported without CL/V or model parameters, and no numeric concentration values in the evidence. |
 | popPK | Rose_2004 | irrelevant | 0 | 0 | The paper is a clinical review on blood pressure management in neurological emergencies and does not report any pharmacokinetic parameters for esmolol. |
 | PD | Rose_2004 | not_relevant | 1 | 0 | The text is a clinical review discussing blood pressure management guidelines and drug selection criteria, mentioning esmolol only as a suitable agent without providing any specific pharmacodynamic data, dose-response curves, or numeric PD parameters. |
 | popPK | Shaffer_1988 | irrelevant | 1 | 0 | The study focuses on the pharmacodynamics and receptor potency of the metabolite ASL-8123, not the population pharmacokinetic parameters (CL, V, etc.) of esmolol. |
@@ -148,10 +163,13 @@ _8 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Vogel_2003 | irrelevant | 0 | 0 | The study is a hemodynamic/echocardiographic investigation of left ventricular contractility in pigs, using esmolol only as a negative inotrope to modulate contractility, and reports no pharmacokinetic parameters for esmolol. |
 | PD | Vogel_2003 | not_relevant | 2 | 1 | The study uses esmolol only as a qualitative agent to modulate contractility for validation purposes and does not report plasma concentrations, dose-response curves, or numeric PD parameters (e.g., EC50, Emax) for esmolol. |
 | popPK | Volz-Zang_1994_2 | irrelevant | 2 | 0 | The study focuses on pharmacodynamics and receptor occupancy, mentioning only the qualitative property of a short half-life without reporting quantitative PK parameters like clearance or volume. |
+| popPK | Wang_1999 | irrelevant | 1 | 0 | This is a clinical efficacy/dose-response study of bolus esmolol with only hemodynamic outcomes; no PK parameters (CL, V, half-life) are reported. |
+| popPK | Wang_2014 | irrelevant | 1 | 0 | This is a PK study of landiolol, not esmolol; esmolol is only mentioned as a comparator and no esmolol parameter values are present. |
 | popPK | Wiest_2012_2 | irrelevant | 2 | 1 | The paper is a review article that summarizes findings from other studies rather than reporting original quantitative population pharmacokinetic parameters or compartmental models for esmolol. |
 | PD | Wiest_2012_2 | not_relevant | 2 | 1 | The text is a narrative review summarizing clinical efficacy and general PK properties (half-life, clearance) but does not report specific numeric PD parameters (e.g., EC50, Emax) or an extractable concentration-effect curve. |
 | popPK | Wong_2016 | irrelevant | 0 | 0 | This is a systematic review of blood pressure efficacy for beta-blockers, not a pharmacokinetic study, and it does not report any PK parameters for esmolol. |
 | PD | Wong_2016 | not_relevant | 2 | 1 | The paper is a systematic review and meta-analysis that reports average treatment effects (mean differences) rather than a pharmacodynamic model or individual-level concentration/dose-response curve with specific PD parameters (e.g., Emax, EC50) for esmolol. |
+| popPK | Yamakage_2009 | irrelevant | 0 | 0 | This is a pharmacodynamic safety/efficacy study of esmolol on airway hyperreactivity with no PK parameters or numeric disposition values reported. |
 | popPK | Zhou_2013 | irrelevant | 0 | 0 | The study is a cardiac mechanics investigation using esmolol as a pharmacological tool to alter inotropy, not a pharmacokinetic study, and reports no PK parameters for esmolol. |
 | PD | Zhou_2013 | not_relevant | 2 | 1 | The study uses esmolol only to induce a low-inotropy state for comparison with dobutamine and ischemia; it reports correlations between rotational mechanics and hemodynamic indices (e.g., Emax) but does not provide a concentration-effect or dose-response model with numeric PD parameters for esmolol. |
 | popPK | Zhu_2017_2 | irrelevant | 0 | 0 | The paper is a systematic review of analgesic efficacy that explicitly states no studies were found for esmolol, and it contains no pharmacokinetic parameters. |

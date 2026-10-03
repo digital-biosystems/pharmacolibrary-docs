@@ -18,18 +18,11 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 07:22 | 4:46 | 0/0/0 | 0/2/0 | 0/0/0 | 75,923/3,739 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-01 22:11 | 1:40 | 0/0/0 | 0/0/0 | 0/0/0 | 29,087/368 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Glusa_1996_unknown](drugs/drug_pizotifen/pd_Glusa_1996_unknown.md) | arterial relaxation ← ergotamine · stimulation effect | — | Glusa E et al., Endothelial 5-HT receptors mediate rela…, British journal of pharmaco… (1996) | [10.1111/j.1476-5381.1996.tb15990.x](https://doi.org/10.1111/j.1476-5381.1996.tb15990.x) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> | [Glusa_2000_unknown](drugs/drug_pizotifen/pd_Glusa_2000_unknown.md) | relaxation ← 5-HT · direct Emax (saturable) effect | — | Glusa E et al., Further evidence that 5-HT-induced rela…, British journal of pharmaco… (2000) | [10.1038/sj.bjp.0703341](https://doi.org/10.1038/sj.bjp.0703341) |
 
 ## ADME sites
 
@@ -37,22 +30,22 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | kidney | <sub>“…e accounts for at least 50% of the plasma and 60-70% of the urinary-excreted radioactivity…”</sub> | prose |
-| metabolism | liver | <sub>“…Pizotifen is extensively metabolized in the liver, where it primarily undergoes N-glucuron…”</sub> | prose |
-| excretion | bile duct | <sub>“…of the total orally administered dose is excreted into the feces. Less than 1% of the tota…”</sub> | prose |
-| excretion | kidney | <sub>“…he feces. Less than 1% of the total dose is excreted in the urine as the unchanged parent…”</sub> | prose |
+| absorption | small intestine | <sub>“…following oral administration…”</sub> | prose |
+| metabolism | liver | <sub>“…extensively metabolized in the liver…”</sub> | prose |
+| excretion | bile duct | <sub>“…excreted into the feces…”</sub> | prose |
+| excretion | kidney | <sub>“…excreted in the urine as the unchanged parent drug…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1B (target), ADRA1D (target), ADRA2A (target), ADRA2B (target), ADRA2C (target), CHRM1 (target), CHRM2 (target), CHRM3 (target), HRH1 (target), HTR1A (partial agonist), HTR1B (target), HTR2A (target), HTR2B (target), HTR2C (target), UGT2B10 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 33 matched, 31 returned
+- **PubMed hits:** 42 matched, 40 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
@@ -68,7 +61,7 @@ _4 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hiner_1986.pdf` | Hiner BC et al., Antimigraine drug interactions with 5-h…, Annals of neurology (1986) | pd | 4 | [10.1002/ana.410190518](https://doi.org/10.1002/ana.410190518) | [2940961](https://www.ncbi.nlm.nih.gov/pubmed/2940961) | metadata signals extractable PD data (IC50) |
 | `Peters_1990.pdf` | Peters W et al., The chemotherapy of rodent malaria. XLV…, Annals of tropical medicine… (1990) | pd | 4 | [10.1080/00034983.1990.11812509](https://doi.org/10.1080/00034983.1990.11812509) | [1981663](https://www.ncbi.nlm.nih.gov/pubmed/1981663) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-21T07:21:01.735547+00:00</sub>
+<sub>queue written 2026-10-01T22:10:41.092816+00:00</sub>
 
 ## Screened and excluded
 

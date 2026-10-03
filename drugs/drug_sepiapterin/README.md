@@ -20,7 +20,7 @@ Sepiapterin was granted marketing authorization by the European Commission in Ju
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 10:40 | 20:21 | 0/0/0 | 0/0/0 | 0/0/2 | 72,177/3,732 | ollama / glm-5.3-flash | 5 | 1/4 | 5/0 | 0 |
+| 2026-09-30 02:58 | 5:36 | 0/0/0 | 0/0/0 | 0/0/2 | 15,409/1,933 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 1/4 | 5/0 | 0 |
 
 ## popPK records
 
@@ -30,8 +30,8 @@ _not available_
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **ABCG2 (BCRP)** | `Q74` · AUClast | transport | [Gao_2024_2](drugs/drug_sepiapterin/pgx_Gao_2024_2_ABCG2_BCRP_Q74.md) | Gao (2024) | — |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> | **PAH** | `Q321` · EC50 | target | [Lah_2026](drugs/drug_sepiapterin/pgx_Lah_2026_PAH_Q321.md) | Lah M et al., Sepiapterin: A Distinct, Dual Mechanism…, Advances in therapy (2026) | [10.1007/s12325-026-03607-2](https://doi.org/10.1007/s12325-026-03607-2) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **ABCG2 (BCRP)** | `Q74` · AUClast | transport | [Gao_2024_2](drugs/drug_sepiapterin/pgx_Gao_2024_2_ABCG2_BCRP_Q74.md) | Gao L et al., Clinical Assessment of Breast Cancer Re…, Drugs in R&D (2024) | [10.1007/s40268-024-00488-0](https://doi.org/10.1007/s40268-024-00488-0) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **PAH** | `Q321` · EC50 | target | [Lah_2026](drugs/drug_sepiapterin/pgx_Lah_2026_PAH_Q321.md) | Lah M et al., Sepiapterin: A Distinct, Dual Mechanism…, Advances in therapy (2026) | [10.1007/s12325-026-03607-2](https://doi.org/10.1007/s12325-026-03607-2) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -49,22 +49,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | absorption | mammary gland | `ABCG2` substrate | DrugBank actor |
 | absorption | small intestine | `ABCG2` substrate | DrugBank actor |
 | absorption | testis | `ABCG2` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…nsively metabolized, with metabolites primarily excreted in feces.[L53593] A single oral d…”</sub> | prose |
-| excretion | kidney | <sub>“…in a mean of 6.71% of the dosed radioactivity recovered in urine and 26.18% in feces, with…”</sub> | prose |
-| excretion | small intestine | <sub>“…part to the formation of volatile metabolites in the human intestine.[L53593] Sepiapterin…”</sub> | prose |
+| excretion | bile duct | <sub>“…metabolites primarily excreted in feces…”</sub> | prose |
+| excretion | kidney | <sub>“…6.71% of the dosed radioactivity recovered in urine…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ABCG2 (BCRP) (transport), DHFR (substrate), PAH (binder), PAH (target), SPR (substrate), Tetrahydrobiopterin (other).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
 - **PubMed hits:** 49 matched, 47 returned
-- **screened:** 2  ·  **relevant:** 2
+- **screened:** 5  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -80,7 +79,7 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Gunnett_2005.pdf` | Gunnett CA et al., Mechanisms of inducible nitric oxide sy…, Arteriosclerosis, thrombosi… (2005) | pd | 4 | [10.1161/01.ATV.0000172626.00296.ba](https://doi.org/10.1161/01.ATV.0000172626.00296.ba) | [15933248](https://www.ncbi.nlm.nih.gov/pubmed/15933248) | metadata signals extractable PD data (EC50) |
 | `Gao_2024.pdf` | Gao L et al., A Phase 1 Study to Assess the Pharmacok…, Pharmaceuticals (Basel, Swi… (2024) | pgx | 7 | [10.3390/ph17111411](https://doi.org/10.3390/ph17111411) | [39598323](https://www.ncbi.nlm.nih.gov/pubmed/39598323) | metadata signals extractable PGX data (ABCG2, PK/PD-context) |
 
-<sub>queue written 2026-09-27T10:37:41.190353+00:00</sub>
+<sub>queue written 2026-09-30T02:57:52.072374+00:00</sub>
 
 ## Screened and excluded
 

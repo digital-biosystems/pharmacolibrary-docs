@@ -19,7 +19,7 @@ TETA has been investigated in clinical trials for the treatment of heart failure
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-27 10:38 | 40:46 | 0/0/0 | 0/0/0 | 0/0/0 | 209,247/20,896 | openai / gpt-5.6-luna | 16 | 3/13 | 14/2 | 0 |
+| 2026-09-30 03:11 | 6:25 | 0/0/0 | 0/0/0 | 0/0/0 | 24,030/1,218 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 3/13 | 4/1 | 0 |
 
 ## popPK records
 
@@ -31,21 +31,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…TETA is poorly absorbed from the gastrointestinal tract with an oral bioavailability rangi…”</sub> | prose |
-| excretion | kidney | <sub>“…nd its metabolites, MAT and DAT, are mainly excreted in the urine.[L41730] Approximately l…”</sub> | prose |
+| absorption | small intestine | <sub>“…TETA is poorly absorbed from the gastrointestinal tract…”</sub> | prose |
+| excretion | kidney | <sub>“…mainly excreted in the urine…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: CA14 (inhibitor), SAT1 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 550 matched, 114 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 550 matched, 123 returned
+- **screened:** 5  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -68,7 +68,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Pitt_2005.pdf` | Pitt SJ et al., Potentiation of P2Y receptors by physio…, Molecular pharmacology (2005) | pd | 4 | [10.1124/mol.104.009902](https://doi.org/10.1124/mol.104.009902) | [15710744](https://www.ncbi.nlm.nih.gov/pubmed/15710744) | metadata signals extractable PD data (EC50) |
 | `Soria-Jasso_1996.pdf` | Soria-Jasso LE et al., Histamine H1 receptor activation stimul…, European journal of pharmac… (1996) | pd | 4 | [10.1016/s0014-2999(96)00782-0](https://doi.org/10.1016/s0014-2999(96)00782-0) | [9007531](https://www.ncbi.nlm.nih.gov/pubmed/9007531) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-27T10:30:13.862942+00:00</sub>
+<sub>queue written 2026-09-30T03:11:39.725395+00:00</sub>
 
 ## Screened and excluded
 
@@ -86,6 +86,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Biancani_1994 | not_relevant | 0 | 0 | The paper studies acetylcholine and intracellular signaling in cat lower esophageal sphincter, not trientine, and reports no trientine exposure- or dose-response relationship or numeric PD parameters. |
 | popPK | Billesbølle_2023 | irrelevant | 0 | 0 | This is a structural odorant-receptor study of propionate and reports no trientine pharmacokinetic parameters. |
 | PD | Billesbølle_2023 | not_relevant | 0 | 0 | The paper concerns propionate activation of the odorant receptor OR51E2 and reports no pharmacodynamic or exposure-response relationship for trientine. |
+| PD | Bleasdale_1990 | not_relevant | 0 | 0 | The paper studies the pharmacology of U-73122 (a phospholipase C inhibitor) and does not mention trientine or report any exposure-response relationship for it. |
 | popPK | Borda_1999 | irrelevant | 0 | 0 | no_text gate: only 125 chars of text extracted (&lt; 400) |
 | PD | Borda_1999 | not_relevant | 0 | 0 | The paper investigates haloperidol-mediated phosphoinositide hydrolysis, not trientine, and reports no trientine PD or exposure-response relationship. |
 | PD | Chawengrum_2021 | not_relevant | 0 | 0 | The paper concerns diterpenoids from Kaempferia elegans and reports no pharmacodynamic or exposure-response relationship for trientine. |
@@ -97,6 +98,8 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Cheng_2000 | not_relevant | 0 | 0 | The study reports a histamine concentration-[Ca2+]i response (EC50 about 1 microM), but does not evaluate trientine or provide trientine-specific pharmacodynamic parameters. |
 | popPK | Cheng_2001 | irrelevant | 0 | 0 | This is an in-vitro calcium-signaling study of fendiline, not a pharmacokinetic study of trientine. |
 | PD | Cheng_2001 | not_relevant | 0 | 0 | The paper reports a concentration-response relationship with an EC50 of 25 micromol/L for fendiline, not trientine. |
+| popPK | Cheng_2002 | irrelevant | 0 | 0 | The paper studies the mechanism of gossypol on calcium levels in liver cells and does not involve trientine or pharmacokinetic parameters. |
+| PD | Cheng_2002 | not_relevant | 0 | 0 | The paper studies gossypol, not trientine. |
 | popPK | Cho_2009 | relevant | 9 | 1 | A two-compartment population-PK model is reported, but no numeric trientine PK parameter estimates are provided in the supplied evidence. |
 | popPK | Choi_2003 | irrelevant | 0 | 0 | This is an in-vitro ginsenoside ion-channel study with no trientine pharmacokinetic parameters. |
 | PD | Choi_2003 | not_relevant | 0 | 0 | The paper reports an EC50 for ginsenoside in Xenopus oocytes, not a pharmacodynamic or exposure-response relationship for trientine. |
@@ -169,6 +172,8 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Neurath_1995 | irrelevant | 0 | 0 | This is an antiviral porphyrin-binding study with no trientine or quantitative pharmacokinetic parameters. |
 | PD | Neurath_1995 | not_relevant | 0 | 0 | The paper concerns MTCPP and other porphyrin derivatives, not trientine, and reports no trientine dose- or exposure-response relationship or numeric PD parameters. |
 | PD | Nguyen_2017 | not_relevant | 0 | 0 | The paper evaluates cytotoxic dose-response effects of isolated pregnane steroids, not trientine, and reports no trientine PD or exposure-response parameters. |
+| popPK | Noriyama_2006 | irrelevant | 0 | 0 | The paper is a neurophysiology study on dopamine receptors in rat hippocampus and does not involve trientine or pharmacokinetic parameters. |
+| PD | Noriyama_2006 | not_relevant | 0 | 0 | The paper studies dopamine in neonatal rat hippocampus and does not mention trientine or report any pharmacodynamic parameters for it. |
 | PGx | Palan_2026 | not_relevant | 0 | 0 | The ATP7B variants are reported for Wilson disease diagnosis, not as modifying a pharmacokinetic or pharmacodynamic parameter of trientine. |
 | PGx | Pandit_2002 | not_relevant | 0 | 0 | The text discusses Wilson disease genetics and trientine therapy generally but reports no genotype-related pharmacokinetic or pharmacodynamic effect. |
 | PGx | Parr_2012 | not_relevant | 0 | 0 | The paper concerns CYP-mediated metabolism of metandienone/NorMD, not trientine, and reports no genetic variant, genotype, or phenotype effect on a trientine PK/PD parameter. |
@@ -214,6 +219,7 @@ _12 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Thompson_1991 | not_relevant | 0 | 0 | The paper reports IC50 values for U-73122, not trientine, so it provides no trientine PD or exposure-response relationship. |
 | PD | Tredway_1974 | not_relevant | 0 | 0 | The paper concerns oral contraceptive effects on gonadotrophins and gonadal steroids, not trientine, and reports no trientine exposure-response or dose-response relationship. |
 | PD | Urbina_1995 | not_relevant | 0 | 0 | The paper does not study trientine; its IC50 values concern unrelated sterol analog inhibitors of T. cruzi sterol methyltransferase. |
+| PD | Vickers_1993 | not_relevant | 0 | 0 | The paper studies the pharmacology of U73122, not trientine, and does not report any exposure-response or dose-response relationship for trientine. |
 | PD | Wang_1997 | not_relevant | 0 | 0 | The paper reports concentration-effect IC50 values for acetylshikonin, not trientine. |
 | PD | Wang_1997_2 | not_relevant | 0 | 0 | The paper reports concentration-effect IC50 values for abruquinone A, not for trientine. |
 | popPK | Wang_2001 | irrelevant | 0 | 0 | This is a cellular bradykinin signaling study with no trientine pharmacokinetic parameters. |

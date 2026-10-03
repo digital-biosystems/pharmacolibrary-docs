@@ -18,11 +18,17 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 01:31 | 22:31 | 0/0/0 | 0/0/0 | 0/0/0 | 65,394/4,212 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/0 | 2/0 | 0 |
+| 2026-10-01 15:56 | 3:05 | 0/0/0 | 0/1/0 | 0/0/0 | 44,660/1,505 | ollama / glm-5.3-flash | 2 | 2/0 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> | [Gauthier_1996_peak_tension](drugs/drug_bupranolol/pd_Gauthier_1996_peak_tension.md) | peak twitch tension (negative inotropic effect, % decrease vs control) ← BRL 37344 (in presence of bupranolol) · direct sigmoid Emax (Hill) effect | — | Gauthier C et al., Functional beta3-adrenoceptor in the hu…, The Journal of clinical inv… (1996) | [10.1172/JCI118823](https://doi.org/10.1172/JCI118823) |
 
 ## ADME sites
 
@@ -30,7 +36,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Quickly and completely absorbed from the gut with less than 10% oral bioavailability.…”</sub> | prose |
+| absorption | small intestine | <sub>“…Quickly and completely absorbed from the gut…”</sub> | prose |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
 
@@ -38,20 +44,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 62 matched, 55 returned
+- **PubMed hits:** 62 matched, 60 returned
 - **screened:** 0  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_9 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_10 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -61,11 +67,12 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Gille_1985.pdf` | Gille E et al., The affinity of (-)-propranolol for bet…, Naunyn-Schmiedeberg's archi… (1985) | pd | 4 | [10.1007/BF00498852](https://doi.org/10.1007/BF00498852) | [2999616](https://www.ncbi.nlm.nih.gov/pubmed/2999616) | metadata signals extractable PD data (Concentration-effect) |
 | `Hicks_2007.pdf` | Hicks A et al., GW427353 (solabegron), a novel, selecti…, The Journal of pharmacology… (2007) | pd | 4 | [10.1124/jpet.107.125757](https://doi.org/10.1124/jpet.107.125757) | [17626794](https://www.ncbi.nlm.nih.gov/pubmed/17626794) | metadata signals extractable PD data (EC50) |
 | `Kaumann_1976.pdf` | Kaumann AJ et al., Desensitization of kitten atria to chro…, Naunyn-Schmiedeberg's archi… (1976) | pd | 4 | [10.1007/BF00499230](https://doi.org/10.1007/BF00499230) | [8737](https://www.ncbi.nlm.nih.gov/pubmed/8737) | metadata signals extractable PD data (EC50) |
+| `Kaumann_1986.pdf` | Kaumann AJ et al., Mode of action of (-)-pindolol on felin…, British journal of pharmaco… (1986) | pd | 4 | [10.1111/j.1476-5381.1986.tb11137.x](https://doi.org/10.1111/j.1476-5381.1986.tb11137.x) | [2879589](https://www.ncbi.nlm.nih.gov/pubmed/2879589) | metadata signals extractable PD data (concentration-effect) |
 | `Kohi_1993.pdf` | Kohi M et al., Myocardial alpha 1A-adrenoceptor subtyp…, European journal of pharmac… (1993) | pd | 4 | [10.1016/0014-2999(93)90625-r](https://doi.org/10.1016/0014-2999(93)90625-r) | [7907026](https://www.ncbi.nlm.nih.gov/pubmed/7907026) | metadata signals extractable PD data (IC50) |
 | `Lemoine_1982.pdf` | Lemoine H et al., A novel analysis of concentration-depen…, Naunyn-Schmiedeberg's archi… (1982) | pd | 4 | [10.1007/BF00506313](https://doi.org/10.1007/BF00506313) | [6289139](https://www.ncbi.nlm.nih.gov/pubmed/6289139) | metadata signals extractable PD data (concentration-effect) |
 | `Walter_1984.pdf` | Walter M et al., Stimulant and blocking effects of optic…, Naunyn-Schmiedeberg's archi… (1984) | pd | 4 | [10.1007/BF00500912](https://doi.org/10.1007/BF00500912) | [6092972](https://www.ncbi.nlm.nih.gov/pubmed/6092972) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-09-29T01:28:13.816696+00:00</sub>
+<sub>queue written 2026-10-01T15:56:01.345750+00:00</sub>
 
 ## Screened and excluded
 
@@ -105,8 +112,10 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Ishihata_1993 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of angiotensin II, using bupranolol only as a background blocker; it does not report a PD or exposure-response relationship for bupranolol itself. |
 | popPK | Kaumann_1976 | irrelevant | 0 | 0 | no_text gate: only 118 chars of text extracted (&lt; 400) |
 | PD | Kaumann_1976 | not_relevant | 0 | 0 | The paper focuses on the desensitization of kitten atria to isoprenaline and does not report any pharmacodynamic or exposure-response data for bupranolol. |
+| popPK | Kaumann_1986 | irrelevant | 0 | 0 | no_text gate: only 61 chars of text extracted (&lt; 400) |
 | popPK | Kaumann_1996 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of beta-adrenoceptor antagonism, not a pharmacokinetic study, and reports no disposition parameters for bupranolol. |
 | popPK | Kemken_1991 | irrelevant | 2 | 0 | The study reports pharmacodynamic effects (heart rate) rather than quantitative pharmacokinetic parameters (CL, V, ka) for bupranolol. |
+| popPK | Kemken_1992 | irrelevant | 2 | 0 | Pharmacodynamic (not PK) study in rabbits with no quantitative disposition parameters and no numeric values in the evidence. |
 | popPK | Kitamura_2000 | irrelevant | 0 | 0 | The study is a mechanistic pharmacology experiment in guinea pig hearts where bupranolol is used only as a non-selective antagonist to block beta-adrenoceptors, not as a subject drug for PK analysis. |
 | popPK | Kohi_1993 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of alpha-adrenoceptor subtypes in rabbit muscle where bupranolol is used only as a non-selective blocker, not as the subject of a pharmacokinetic analysis. |
 | PD | Kohi_1993 | not_relevant | 0 | 0 | The paper studies the pharmacology of a new antagonist (HV723) on alpha-adrenoceptors; bupranolol is used only as a fixed concentration (0.3 microM) to block beta-receptors, and no exposure-response or dose-response relationship for bupranolol is reported. |
@@ -122,9 +131,11 @@ _9 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PGx | Pressacco_1993 | not_relevant | 4 | 5 | The paper reports in vitro enzyme kinetics (Ki values) and qualitative metabolic differences in liver microsomes, but does not report in vivo pharmacokinetic or pharmacodynamic parameters (e.g., AUC, Cmax, BP response) in humans stratified by genotype. |
 | popPK | Simard_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of lipolytic effects in adipocytes where bupranolol is used only as a beta-blocker antagonist, not as the subject drug for pharmacokinetic analysis. |
 | PD | Simard_1994 | not_relevant | 3 | 2 | The paper reports EC50 values for agonists (norepinephrine and BRL 37344) and qualitative antagonist potency ratios for bupranolol, but does not provide a quantitative concentration-effect curve or specific numeric PD parameters (like Ki or IC50) for bupranolol itself. |
+| popPK | Tawfik_1986 | irrelevant | 0 | 0 | Bupranolol is only used as a blocking agent in an in vitro pharmacodynamic study; no PK parameters reported. |
 | popPK | Totsuka_1979 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | popPK | Walter_1984 | irrelevant | 0 | 0 | no_text gate: only 199 chars of text extracted (&lt; 400) |
 | PD | Walter_1984 | not_relevant | 0 | 0 | The paper studies pindolol, not bupranolol. |
+| popPK | Weisser_1989 | irrelevant | 1 | 0 | Pharmacodynamic beta-blocking study in humans with no PK disposition parameters or numeric values reported. |
 | popPK | Wellstein_1986 | relevant | 4 | 2 | The study reports a half-life (2.0 h) and maximal plasma concentration for bupranolol, but lacks explicit clearance, volume of distribution, or compartmental model parameters required for population PK extraction. |
 
 ---

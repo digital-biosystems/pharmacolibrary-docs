@@ -1,0 +1,54 @@
+{
+ "model_id": "Morpholine_Tsuji2017_PD_plt",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 3.64e-06,
+  "Emax": 2.55,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "3.6399999999999995e-06": 0.0
+ },
+ "stop_time": 0.037,
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg l -1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg l -1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "×10 3 μl -1"
+ },
+ "x_axis": {
+  "display_unit": "mg l -1",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "×10 3 μl -1",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

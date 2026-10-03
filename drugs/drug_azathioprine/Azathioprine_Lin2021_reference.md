@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Lin_2021 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Ding1979_reference&quot;,&quot;label&quot;:&quot;Ding_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,33 +21,33 @@
 
 The record describes a one-compartment structure for azathioprine with the measured compound 6-thioguanine nucleotides, carrying parameters CL 11.6 L/h, V2 809 L, an allometric weight exponent of 0.625, a TPMT covariate effect of 0.515, and a θ MESA coefficient of 0.802. The rejection rests on an orphan compartment or unlinked metabolite: the measured 6-thioguanine nucleotide entity has no connection from the administered dose, so the clearance and volume values cannot be interpreted within the model. The second reader's disagreements concern only naming of the analyte (6-TGN versus 6-thioguanine nucleotides) and whether the θ MESA coefficient of 0.802 belongs in the record, not the structural defect. Extracted — 6-thioguanine nucleotides: CL 11.6 L/h, allometric_exponent 0.625, V2 809 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGN; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:15.297219+00:00) predates the upstream re-run (2026-09-30 15:43:10.774264+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-thioguanine nucleotides`.
 
 ## Citation
-Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & clinical pharmacology & toxicology 128
+Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharmacolo… (2021)
   ·  DOI: [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="rejected" stale="false" population="adults with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="extracted" stale="true" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 3 extracted, plus 1 covariate effect.
+**Parameters:** 2 extracted, plus 1 covariate effect.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL p (L/h) | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | space_fold (0.95) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | not captured |
-| θ BW | `Q319` · allometric_exponent | 0.625 | not captured | not captured | not captured | not captured | llm (0.6) | tab_2:row6:col1, tab_2:row6:col2, tab_2:row6:col3, tab_2:row6:col4, tab_2:row6:col5 | — | not captured |
+| CL p (L/h) | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | 0.342 (None% RSE) |
 | tpmt | `Q900` · tpmt | 0.515 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5 | — | not captured |
-| V p (L) | `Q64` · V2 | 809 | L | 0.809 | [l] | not captured | space_fold (0.95) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
+| V p (L) | `Q61` · V | 809 | L | 0.809 | [l] | not captured | exact (1.0) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
+| θ BW | `Q900` · θ BW | 0.625 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 | θ MESA | `Q900` · θ MESA | 0.802 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
 
 <details class="legend">
@@ -58,14 +58,19 @@ Lin R; Lin W; Wang C; Dong J; Zheng W; Zeng D; et al. et al. (2021). Basic & cli
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'η CL' routed out of structural estimates ('Between-subject variability')
+- table section iiv: 'η CL -shrinkage (%)' routed out of structural estimates ('Between-subject variability')
+- table section residual_error: 'ε' routed out of structural estimates ('Residual variability')
+- table section residual_error: 'ε-shrinkage (%)' routed out of structural estimates ('Residual variability')
+- kept covariate coefficient θ BW=0.625 (covariate BW) — not an ontology parameter
 - kept covariate coefficient θ MESA=0.802 (covariate MESA) — not an ontology parameter
 - covariate level 'θ TPMT' → Q900:tpmt = 0.515 (linear_fractional on Q22)
-- dropped duplicate Q22 ('η CL', value '0.342') — already have one for this compound
-- dropped diagnostic row 'η CL -shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
-- dropped unlinked row (NIL): 'ε' — extend the ontology if this is a real PK parameter (source ['tab_2:row14:col1', 'tab_2:row14:col2', 'tab_2:row14:col3', 'tab_2:row14:col4', 'tab_2:row14:col5'])
-- dropped diagnostic row 'ε-shrinkage (%)' → Q318 (shrinkage) — reported statistic, not a parameter
+- metabolite volume: 'V p (L)' Q63→Q61 for 6-thioguanine nucleotides — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-thioguanine nucleotides
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
+- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
+- row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 10 linked by role
+- molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
+- molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
 - review gap-fill skipped: this record measures '6-thioguanine nucleotides', not azathioprine — the review values are the parent's
 
 **Extraction notes:**
@@ -78,15 +83,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[θ mesa]` | not captured | 0.802 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl p]` | 11.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl p]` | not captured | 11.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tpmt]` | 0.515 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tpmt]` | not captured | 0.515 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v p]` | 809 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v p]` | not captured | 809 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ bw]` | 0.625 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ bw]` | not captured | 0.625 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θ mesa]` | 0.802 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | 6-TGN | mismatch |
+| `gpt-oss:120b` | `parameters[θ mesa]` | not captured | 0.802 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | unknown | mismatch |
 
 </details>
 
@@ -100,16 +114,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.6 | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
-| C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 11.6 L/h | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 809 L | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 809 L | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -123,9 +137,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -134,4 +158,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 14:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 15:43 UTC</sub>

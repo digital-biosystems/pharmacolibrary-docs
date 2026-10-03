@@ -1,23 +1,23 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Li_2022_2 \u00b7 PD Psoriasis Area and Severity Index&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Li_2022_2 \u00b7 PD Psoriasis Area and Severity Index score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Psoriasis Area and Severity Index — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.723). The first reading is what the record holds.">cross-check: disputed</span>
+# Psoriasis Area and Severity Index score — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.684). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** AK111 drives Psoriasis Area and Severity Index (in score): indirect response — drug inhibits the production of Psoriasis Area and Severity Index.
+**As extracted:** AK111 drives Psoriasis Area and Severity Index score (in score): indirect response — drug inhibits the production of Psoriasis Area and Severity Index score.
 
 **Model:** No model was generated from this record.
 
-> AK111 serum concentrations act on the PASI score via an indirect response (IDR) model with inhibition, chosen because PASI reduction showed a lag relative to peak concentration; the paper does not state the specific inhibited production/elimination process or any PD potency parameters (Imax, IC50, kin, kout) in the excerpts. Only PK parameters are reported (Ka 0.463 1/day, CL 0.182 L/day, V 6.65 L).
+> The paper describes an indirect response model where AK111 concentrations inhibit the production of the Psoriasis Area and Severity Index (PASI) score to account for the observed lag between peak concentration and maximal effect. The provided excerpts do not state specific potency or rate parameter values (such as IC50, Imax, kin, or kout) for the pharmacodynamic component.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Li_2022_2`
 - **model family:** `indirect_response_i`
@@ -26,83 +26,51 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-not matched (stem Li_2022_2)
+Li Q et al., Population pharmacokinetic/pharmacodyna…, Frontiers in pharmacology (2022)
+  ·  DOI: [10.3389/fphar.2022.966176](https://doi.org/10.3389/fphar.2022.966176)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | Ka (1/day) — Point estimate | `Q49` · not captured | 0.463 | unit | not captured | exact (not captured) | T2:row2:col2 |
-| PK (driver) | Ka (1/day) — RSE% | `Q49` · not captured | 9.3 | unit | not captured | exact (not captured) | T2:row2:col3 |
-| PK (driver) | Ka (1/day) — Bootstrap of estimates median | `Q49` · not captured | 0.461 | unit | not captured | exact (not captured) | T2:row2:col4 |
-| PK (driver) | Ka (1/day) — Bootstrap of estimates 90%CI | `Q49` · not captured | 0.392 | unit | not captured | exact (not captured) | T2:row2:col5 |
-| PK (driver) | CL (L/day) — Point estimate | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col2 |
-| PK (driver) | CL (L/day) — RSE% | `Q22` · not captured | 7.2 | L/day | not captured | exact (not captured) | T2:row3:col3 |
-| PK (driver) | CL (L/day) — Bootstrap of estimates median | `Q22` · not captured | 0.182 | L/day | not captured | exact (not captured) | T2:row3:col4 |
-| PK (driver) | CL (L/day) — Bootstrap of estimates 90%CI | `Q22` · not captured | 0.159 | L/day | not captured | exact (not captured) | T2:row3:col5 |
-| PK (driver) | V (L) — Point estimate | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col2 |
-| PK (driver) | V (L) — RSE% | `Q61` · not captured | 7.8 | L | not captured | exact (not captured) | T2:row4:col3 |
-| PK (driver) | V (L) — Bootstrap of estimates median | `Q61` · not captured | 6.65 | L | not captured | exact (not captured) | T2:row4:col4 |
-| PK (driver) | V (L) — Bootstrap of estimates 90%CI | `Q61` · not captured | 5.77 | L | not captured | exact (not captured) | T2:row4:col5 |
-| variability | IIV Ka (%) — Point estimate | `Q312` · not captured | 50.1 | unit | not captured | llm_confirmed (not captured) | T2:row5:col2 |
-| variability | IIV Ka (%) — RSE% | `Q312` · not captured | 13.5 | unit | not captured | llm_confirmed (not captured) | T2:row5:col3 |
-| variability | IIV Ka (%) — Bootstrap of estimates median | `Q312` · not captured | 48.9 | unit | not captured | llm_confirmed (not captured) | T2:row5:col4 |
-| variability | IIV Ka (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 36.6 | unit | not captured | llm_confirmed (not captured) | T2:row5:col5 |
-| variability | IIV Ka (%) — Shrinkage% | `Q318` · not captured | 5.7 | unit | not captured | llm_corrected (not captured) | T2:row5:col6 |
-| variability | IIV CL (%) — Point estimate | `Q312` · not captured | 42.2 | unit | not captured | llm_confirmed (not captured) | T2:row6:col2 |
-| variability | IIV CL (%) — RSE% | `Q312` · not captured | 12.4 | unit | not captured | llm_confirmed (not captured) | T2:row6:col3 |
-| variability | IIV CL (%) — Bootstrap of estimates median | `Q312` · not captured | 41.5 | unit | not captured | llm_confirmed (not captured) | T2:row6:col4 |
-| variability | IIV CL (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 33.0 | unit | not captured | llm_confirmed (not captured) | T2:row6:col5 |
-| variability | IIV CL (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row6:col6 |
-| variability | IIV V (%) — Point estimate | `Q312` · not captured | 46.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col2 |
-| variability | IIV V (%) — RSE% | `Q312` · not captured | 13.4 | unit | not captured | llm_confirmed (not captured) | T2:row7:col3 |
-| variability | IIV V (%) — Bootstrap of estimates median | `Q312` · not captured | 45.6 | unit | not captured | llm_confirmed (not captured) | T2:row7:col4 |
-| variability | IIV V (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 35.1 | unit | not captured | llm_confirmed (not captured) | T2:row7:col5 |
-| variability | IIV V (%) — Shrinkage% | `Q318` · not captured | 0.1 | unit | not captured | llm_corrected (not captured) | T2:row7:col6 |
-| variability | σprop — Point estimate | `Q316` · not captured | 0.0144 | unit | not captured | llm (not captured) | T2:row8:col2 |
-| variability | σprop — RSE% | `Q316` · not captured | 9.4 | unit | not captured | llm (not captured) | T2:row8:col3 |
-| variability | σprop — Bootstrap of estimates median | `Q316` · not captured | 0.0146 | unit | not captured | llm (not captured) | T2:row8:col4 |
-| variability | σprop — Bootstrap of estimates 90%CI | `Q316` · not captured | 0.012 | unit | not captured | llm (not captured) | T2:row8:col5 |
-| variability | σprop — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row8:col6 |
-| variability | σaddi — RSE% | `Q315` · not captured | 42.4 | unit | not captured | llm (not captured) | T2:row9:col3 |
-| variability | σaddi — Bootstrap of estimates median | `Q317` · not captured | 1.372 | unit | not captured | llm (not captured) | T2:row9:col4 |
-| variability | σaddi — Bootstrap of estimates 90%CI | `Q317` · not captured | 0.442 | unit | not captured | llm (not captured) | T2:row9:col5 |
-| variability | σaddi — Shrinkage% | `Q318` · not captured | 10 | unit | not captured | llm (not captured) | T2:row9:col6 |
 | PD (effect) | Kin (PASI/day) — Point estimate | `Q327` · not captured | 0.474 | PASI/day | not captured | exact (not captured) | T2:row11:col2 |
 | PD (effect) | Kin (PASI/day) — RSE% | `Q327` · not captured | 21.3 | PASI/day | not captured | exact (not captured) | T2:row11:col3 |
 | PD (effect) | Kin (PASI/day) — Bootstrap of estimates median | `Q327` · not captured | 0.481 | PASI/day | not captured | exact (not captured) | T2:row11:col4 |
 | PD (effect) | Kin (PASI/day) — Bootstrap of estimates 90%CI | `Q327` · not captured | 0.305 | PASI/day | not captured | exact (not captured) | T2:row11:col5 |
-| PD (effect) | Kout (1/day) — Point estimate | `Q328` · not captured | 0.024 | unit | not captured | exact (not captured) | T2:row12:col2 |
-| PD (effect) | Kout (1/day) — RSE% | `Q328` · not captured | 21.5 | unit | not captured | exact (not captured) | T2:row12:col3 |
-| PD (effect) | Kout (1/day) — Bootstrap of estimates median | `Q328` · not captured | 0.025 | unit | not captured | exact (not captured) | T2:row12:col4 |
-| PD (effect) | Kout (1/day) — Bootstrap of estimates 90%CI | `Q328` · not captured | 0.015 | unit | not captured | exact (not captured) | T2:row12:col5 |
-| PD (effect) | Imax — Point estimate | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col2 |
-| PD (effect) | Imax — Bootstrap of estimates median | `Q323` · not captured | 1 | unit | not captured | exact (not captured) | T2:row13:col4 |
+| PD (effect) | Kout (1/day) — Point estimate | `Q328` · not captured | 0.024 | not captured | not captured | exact (not captured) | T2:row12:col2 |
+| PD (effect) | Kout (1/day) — RSE% | `Q328` · not captured | 21.5 | not captured | not captured | exact (not captured) | T2:row12:col3 |
+| PD (effect) | Kout (1/day) — Bootstrap of estimates median | `Q328` · not captured | 0.025 | not captured | not captured | exact (not captured) | T2:row12:col4 |
+| PD (effect) | Kout (1/day) — Bootstrap of estimates 90%CI | `Q328` · not captured | 0.015 | not captured | not captured | exact (not captured) | T2:row12:col5 |
+| PD (effect) | Imax — Point estimate | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | T2:row13:col2 |
+| PD (effect) | Imax — Bootstrap of estimates median | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | T2:row13:col4 |
 | PD (effect) | IC50 (ug/mL) — Point estimate | `Q322` · not captured | 0.52 | ug/mL | not captured | exact (not captured) | T2:row14:col2 |
 | PD (effect) | IC50 (ug/mL) — RSE% | `Q322` · not captured | 66.4 | ug/mL | not captured | exact (not captured) | T2:row14:col3 |
 | PD (effect) | IC50 (ug/mL) — Bootstrap of estimates median | `Q322` · not captured | 0.566 | ug/mL | not captured | exact (not captured) | T2:row14:col4 |
 | PD (effect) | IC50 (ug/mL) — Bootstrap of estimates 90%CI | `Q322` · not captured | 0 | ug/mL | not captured | exact (not captured) | T2:row14:col5 |
-| model term | Kplb — Point estimate | `Q410` · not captured | 0 | unit | not captured | llm (not captured) | T2:row16:col2 |
-| variability | IIV Kin (%) — Point estimate | `Q312` · not captured | 16.0 | unit | not captured | llm_confirmed (not captured) | T2:row18:col2 |
-| variability | IIV Kin (%) — RSE% | `Q312` · not captured | 38.7 | unit | not captured | llm_confirmed (not captured) | T2:row18:col3 |
-| variability | IIV Kin (%) — Bootstrap of estimates median | `Q312` · not captured | 16.8 | unit | not captured | llm_confirmed (not captured) | T2:row18:col4 |
-| variability | IIV Kin (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 5.90 | unit | not captured | llm_confirmed (not captured) | T2:row18:col5 |
-| variability | IIV Kin (%) — Shrinkage% | `Q318` · not captured | 98.8 | unit | not captured | llm_corrected (not captured) | T2:row18:col6 |
-| PD (effect) | IIV Kout (%) — Point estimate | `Q328` · not captured | 23.3 | unit | not captured | llm_confirmed (not captured) | T2:row19:col2 |
-| PD (effect) | IIV Kout (%) — RSE% | `Q328` · not captured | 13.8 | unit | not captured | llm_confirmed (not captured) | T2:row19:col3 |
-| PD (effect) | IIV Kout (%) — Bootstrap of estimates median | `Q328` · not captured | 22.2 | unit | not captured | llm_confirmed (not captured) | T2:row19:col4 |
-| PD (effect) | IIV Kout (%) — Bootstrap of estimates 90%CI | `Q328` · not captured | 15.5 | unit | not captured | llm_confirmed (not captured) | T2:row19:col5 |
-| variability | IIV Kout (%) — Shrinkage% | `Q318` · not captured | 18.3 | unit | not captured | llm_corrected (not captured) | T2:row19:col6 |
-| PD (effect) | IIV IC50 (%) — Point estimate | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col2 |
-| PD (effect) | IIV IC50 (%) — RSE% | `Q322` · not captured | 33.5 | unit | not captured | llm_confirmed (not captured) | T2:row20:col3 |
-| PD (effect) | IIV IC50 (%) — Bootstrap of estimates median | `Q322` · not captured | 161.2 | unit | not captured | llm_confirmed (not captured) | T2:row20:col4 |
-| PD (effect) | IIV IC50 (%) — Bootstrap of estimates 90%CI | `Q322` · not captured | 67.6 | unit | not captured | llm_confirmed (not captured) | T2:row20:col5 |
-| variability | IIV IC50 (%) — Shrinkage% | `Q318` · not captured | 47.8 | unit | not captured | llm_corrected (not captured) | T2:row20:col6 |
-| variability | IIV PLBmax (%) — Point estimate | `Q312` · not captured | 98.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col2 |
-| variability | IIV PLBmax (%) — RSE% | `Q312` · not captured | 15.0 | unit | not captured | llm_confirmed (not captured) | T2:row21:col3 |
-| variability | IIV PLBmax (%) — Bootstrap of estimates median | `Q312` · not captured | 96.4 | unit | not captured | llm_confirmed (not captured) | T2:row21:col4 |
-| variability | IIV PLBmax (%) — Bootstrap of estimates 90%CI | `Q312` · not captured | 64.7 | unit | not captured | llm_confirmed (not captured) | T2:row21:col5 |
-| variability | IIV PLBmax (%) — Shrinkage% | `Q318` · not captured | 20.8 | unit | not captured | llm_corrected (not captured) | T2:row21:col6 |
-| variability | σPASI — Shrinkage% | `Q318` · not captured | 11.5 | unit | not captured | llm (not captured) | T2:row22:col6 |
+| PD (effect) | PLBmax — Point estimate | `Q341` · not captured | 0.429 | not captured | not captured | llm (not captured) | T2:row15:col2 |
+| PD (effect) | PLBmax — RSE% | `Q341` · not captured | 78.2 | not captured | not captured | llm (not captured) | T2:row15:col3 |
+| PD (effect) | PLBmax — Bootstrap of estimates median | `Q341` · not captured | 0.394 | not captured | not captured | llm (not captured) | T2:row15:col4 |
+| PD (effect) | PLBmax — Bootstrap of estimates 90%CI | `Q341` · not captured | 0 | not captured | not captured | llm (not captured) | T2:row15:col5 |
+| PD (effect) | Kplb — Bootstrap of estimates median | `Q328` · not captured | 0 | not captured | not captured | llm (not captured) | T2:row16:col4 |
+| variability | IIV Kin (%) — Point estimate | `Q312` · not captured | 16.0 | not captured | not captured | llm_confirmed (not captured) | T2:row18:col2 |
+| PD (effect) | IIV Kin (%) — RSE% | `Q327` · not captured | 38.7 | not captured | not captured | llm_corrected (not captured) | T2:row18:col3 |
+| PD (effect) | IIV Kin (%) — Bootstrap of estimates median | `Q327` · not captured | 16.8 | not captured | not captured | llm_corrected (not captured) | T2:row18:col4 |
+| PD (effect) | IIV Kin (%) — Bootstrap of estimates 90%CI | `Q327` · not captured | 5.90 | not captured | not captured | llm_corrected (not captured) | T2:row18:col5 |
+| variability | IIV Kin (%) — Shrinkage% | `Q318` · not captured | 98.8 | not captured | not captured | llm_corrected (not captured) | T2:row18:col6 |
+| variability | IIV Kout (%) — Point estimate | `Q312` · not captured | 23.3 | not captured | not captured | llm_corrected (not captured) | T2:row19:col2 |
+| PD (effect) | IIV Kout (%) — RSE% | `Q328` · not captured | 13.8 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col3 |
+| PD (effect) | IIV Kout (%) — Bootstrap of estimates median | `Q328` · not captured | 22.2 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col4 |
+| PD (effect) | IIV Kout (%) — Bootstrap of estimates 90%CI | `Q328` · not captured | 15.5 | not captured | not captured | llm_confirmed (not captured) | T2:row19:col5 |
+| variability | IIV Kout (%) — Shrinkage% | `Q318` · not captured | 18.3 | not captured | not captured | llm_corrected (not captured) | T2:row19:col6 |
+| PD (effect) | IIV IC50 (%) — Point estimate | `Q322` · not captured | 161.2 | unknown | not captured | llm_confirmed (not captured) | T2:row20:col2 |
+| PD (effect) | IIV IC50 (%) — RSE% | `Q322` · not captured | 33.5 | unknown | not captured | llm_confirmed (not captured) | T2:row20:col3 |
+| PD (effect) | IIV IC50 (%) — Bootstrap of estimates median | `Q322` · not captured | 161.2 | unknown | not captured | llm_confirmed (not captured) | T2:row20:col4 |
+| PD (effect) | IIV IC50 (%) — Bootstrap of estimates 90%CI | `Q322` · not captured | 67.6 | unknown | not captured | llm_confirmed (not captured) | T2:row20:col5 |
+| variability | IIV IC50 (%) — Shrinkage% | `Q318` · not captured | 47.8 | not captured | not captured | llm_corrected (not captured) | T2:row20:col6 |
+| PD (effect) | IIV PLBmax (%) — Bootstrap of estimates median | `Q341` · not captured | 96.4 | not captured | not captured | llm_corrected (not captured) | T2:row21:col4 |
+| PD (effect) | IIV PLBmax (%) — Bootstrap of estimates 90%CI | `Q341` · not captured | 64.7 | not captured | not captured | llm_corrected (not captured) | T2:row21:col5 |
+| variability | σPASI — Point estimate | `Q315` · not captured | 4.53 | not captured | not captured | llm (not captured) | T2:row22:col2 |
+| variability | σPASI — RSE% | `Q315` · not captured | 21.6 | not captured | not captured | llm (not captured) | T2:row22:col3 |
+| variability | σPASI — Shrinkage% | `Q318` · not captured | 11.5 | not captured | not captured | llm (not captured) | T2:row22:col6 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -115,38 +83,42 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.723 (68/94 fields) | 26 |
+| `gpt-oss:120b` | not confirmed | 0.684 (65/95 fields) | 30 |
 
-<details><summary>26 field(s) a reader read differently</summary>
+<details><summary>30 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 98.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 18.3 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 33.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 161.2 | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | AK111 | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q312]` | 5.90 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | not captured | 5.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 13.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 4.53 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 21.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 4.49 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 2.92 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 0.0144 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | not captured | 0.012 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 1.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q315]` | 42.4 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q316]` | 0.0144 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q316]` | 0.012 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q317]` | not captured | 1.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q317]` | not captured | 42.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q318]` | 98.8 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q318]` | 18.3 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q318]` | 5.7 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 0.394 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 33.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q322]` | 161.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q318]` | 0.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | not captured | 5.90 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q327]` | not captured | 98.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q328]` | not captured | 18.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q332]` | not captured | 0.429 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q332]` | not captured | 78.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q332]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q341]` | not captured | 0.394 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | -7.68 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q410]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q61]` | not captured | 13.4 | only_one_extracted |
 
 </details>
 

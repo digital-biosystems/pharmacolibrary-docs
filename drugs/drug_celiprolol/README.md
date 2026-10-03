@@ -18,11 +18,30 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-29 03:01 | 41:22 | 0/0/0 | 0/0/0 | 0/0/0 | 54,623/4,345 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-01 16:13 | 2:32 | 0/0/0 | 0/1/0 | 0/0/3 | 42,565/2,132 | ollama / glm-5.3-flash | 2 | 1/1 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by glm-5.3-flash, p(non-human) 1.00).">rat</span> | [Sauvaget_2010_E_max](drugs/drug_celiprolol/pd_Sauvaget_2010_E_max.md) | celiprolol-induced vasodilatation (aortic relaxation) ← celiprolol · direct Emax (saturable) effect | — | Sauvaget F et al., Positive influence of AT(1) receptor an…, European journal of pharmac… (2010) | [10.1016/j.ejphar.2010.07.003](https://doi.org/10.1016/j.ejphar.2010.07.003) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ABCB1** | `Q17` · AUC∞ | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_ABCB1_Q17.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **SLCO1A2** | `Q17` · AUC∞ | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_SLCO1A2_Q17.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **SLCO2B1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | transport | [Hirvensalo_2022](drugs/drug_celiprolol/pgx_Hirvensalo_2022_SLCO2B1_Q100.md) | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## ADME sites
 
@@ -30,7 +49,12 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…lete (55% for 200 mg dose and 74% for 400 mg dose) from the gastrointestinal tract. The bi…”</sub> | prose |
+| absorption | blood-brain barrier | `ABCB1` transport, `SLCO1A2` transport | paper PGx gene |
+| absorption | kidney | `ABCB1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport, `SLCO2B1` transport | paper PGx gene |
+| absorption | placenta | `ABCB1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport, `SLCO1A2` transport, `SLCO2B1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
 | metabolism | brain | `CYP2D6` substrate | DrugBank actor |
 | metabolism | liver | `CYP2D6` substrate | DrugBank actor |
 
@@ -38,20 +62,20 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 63 matched, 61 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 63 matched, 63 returned
+- **screened:** 2  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
 ## Full text wanted
 
-_13 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
@@ -64,12 +88,11 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Ohlstein_1998.pdf` | Ohlstein EH et al., Carvedilol inhibits endothelin-1 biosyn…, Journal of molecular and ce… (1998) | pd | 4 | [10.1006/jmcc.1997.0582](https://doi.org/10.1006/jmcc.1997.0582) | [9500873](https://www.ncbi.nlm.nih.gov/pubmed/9500873) | metadata signals extractable PD data (IC50) |
 | `Yue_1992.pdf` | Yue TL et al., Carvedilol, a new beta-adrenoceptor ant…, European journal of pharmac… (1992) | pd | 4 | [10.1016/0014-2999(92)90130-v](https://doi.org/10.1016/0014-2999(92)90130-v) | [1355437](https://www.ncbi.nlm.nih.gov/pubmed/1355437) | metadata signals extractable PD data (IC50) |
 | `Yue_1994.pdf` | Yue TL et al., Carvedilol, a new vasodilating beta adr…, Cardiovascular research (1994) | pd | 4 | [10.1093/cvr/28.3.400](https://doi.org/10.1093/cvr/28.3.400) | [7909721](https://www.ncbi.nlm.nih.gov/pubmed/7909721) | metadata signals extractable PD data (IC50) |
-| `Hirvensalo_2022.pdf` | Hirvensalo P et al., Pharmacogenomics of celiprolol - eviden…, Clinical and translational… (2022) | pgx | 8 | [10.1111/cts.13159](https://doi.org/10.1111/cts.13159) | [34585840](https://www.ncbi.nlm.nih.gov/pubmed/34585840) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
 | `Kashihara_2017.pdf` | Kashihara Y et al., Small-Dosing Clinical Study: Pharmacoki…, Journal of pharmaceutical s… (2017) | pgx | 8 | [10.1016/j.xphs.2017.03.010](https://doi.org/10.1016/j.xphs.2017.03.010) | [28322941](https://www.ncbi.nlm.nih.gov/pubmed/28322941) | metadata signals extractable PGX data (ABCG2, PK/PD-context) |
 | `Huang_2008.pdf` | Huang J et al., Effect of pluronic F68 block copolymer…, International journal of ph… (2008) | pgx | 7 | [10.1016/j.ijpharm.2007.12.028](https://doi.org/10.1016/j.ijpharm.2007.12.028) | [18242899](https://www.ncbi.nlm.nih.gov/pubmed/18242899) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `de_2024.pdf` | de Vries M et al., Evaluation of the Clinical Drug-Drug In…, Clinical pharmacology in dr… (2024) | pgx | 7 | [10.1002/cpdd.1408](https://doi.org/10.1002/cpdd.1408) | [38752475](https://www.ncbi.nlm.nih.gov/pubmed/38752475) | metadata signals extractable PGX data (CYP450, PK/PD-context) |
 
-<sub>queue written 2026-09-29T02:58:13.696164+00:00</sub>
+<sub>queue written 2026-10-01T16:13:41.971731+00:00</sub>
 
 ## Screened and excluded
 
@@ -112,6 +135,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Milne_1991 | not_relevant | 2 | 1 | The text is a qualitative review summarizing therapeutic efficacy and general pharmacodynamic properties without providing specific numeric PD parameters, concentration-effect curves, or formal PK/PD modeling data. |
 | popPK | Morales_2014 | irrelevant | 0 | 0 | The paper is a systematic review and meta-analysis of respiratory safety in asthma, not a pharmacokinetic study, and contains no PK parameters for celiprolol. |
 | PD | Morales_2014 | not_relevant | 3 | 2 | The paper is a meta-analysis reporting pooled mean effects and a qualitative mention of a dose-response relationship, but it does not provide specific numeric PD parameters (e.g., EC50, Emax) or an extractable concentration-effect curve for celiprolol. |
+| popPK | Neve_1985 | irrelevant | 0 | 0 | In-vitro receptor binding study with no pharmacokinetic disposition parameters for celiprolol. |
 | popPK | Ohlstein_1998 | irrelevant | 0 | 0 | no_text gate: only 97 chars of text extracted (&lt; 400) |
 | PD | Ohlstein_1998 | not_relevant | 0 | 0 | The paper investigates carvedilol, not celiprolol, and focuses on endothelin-1 biosynthesis in cell culture rather than a pharmacodynamic exposure-response relationship for the target drug. |
 | popPK | Riddell_1987 | irrelevant | 1 | 0 | The paper is a review article that summarizes pharmacodynamic and pharmacokinetic properties qualitatively but does not provide specific quantitative PK parameter values (e.g., CL, V, t1/2) in the provided evidence. |

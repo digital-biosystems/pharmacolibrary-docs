@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;abacavir&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/&quot;},{&quot;label&quot;:&quot;Chandasana_2024_2 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Chandasana2024v2_reference&quot;,&quot;label&quot;:&quot;Chandasana_2024_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chandasana2024v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Abacavir_Fauchet2014_reference&quot;,&quot;label&quot;:&quot;Fauchet_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Fauchet2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Hurwitz2008_reference&quot;,&quot;label&quot;:&quot;Hurwitz_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Hurwitz2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhao2013_reference&quot;,&quot;label&quot;:&quot;Zhao_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhao2013_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Abacavir_Chupradit2024_reference&quot;,&quot;label&quot;:&quot;Chupradit_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Chupradit2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Abacavir_Zhang2015_reference&quot;,&quot;label&quot;:&quot;Zhang_2015_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_abacavir/Abacavir_Zhang2015_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # abacavir — `Abacavir_Chandasana2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.767). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,43 +21,43 @@
 
 Kabs and V/F have no unit; without a unit the values cannot be converted, so the model cannot use them. The record also lists conflicting weight-exponent values for the same covariate effects (0.794, 0.455, 0.758 for clearance; 0.556 versus 0.698 for volume), and a second reader assigned 0.698 to the volume exponent while this record gives 0.556. The weight-based consistency check could not compute a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. The dose compound is also disputed: abacavir versus abacavir/dolutegravir/lamivudine. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir/dolutegravir/lamivudine, the second reading abacavir; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir, the second reading abacavir/dolutegravir/lamivudine; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> **Dose compound ≠ measured compound:** dosed `abacavir/dolutegravir/lamivudine`, measured `abacavir`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:50.746810+00:00) predates the upstream re-run (2026-09-30 16:21:24.932298+00:00). Current validate status: `needs_review`.
 
 ## Citation
-Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (2024). Infectious diseases and therapy 13
+Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious diseases and the… (2024)
   ·  DOI: [10.1007/s40121-024-01008-y](https://doi.org/10.1007/s40121-024-01008-y)
 
 ## Model component
-<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="false" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="3C"></dbs-pgx>
+<dbs-pgx drug="abacavir" model-id="Abacavir_Chandasana2024v2_reference" status="needs_review" stale="true" population="children with HIV-1" measured-compound="abacavir" parameterization="apparent" topology="2C"></dbs-pgx>
 
-**Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 9 extracted, plus 5 covariate effects.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 8 extracted, plus 6 covariate effects.
 
-**Parameterization:** CL/F, Q/F, V/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F, V2/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Apparent clearance, CL/F [L/h] | `Q27` · CL/F | 16.3 | L/h | 4.527777777777778e-06 | [l] / [h] | 3.62 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row0:col1 | — | not captured |
-| Apparent central volume of distribution, V2/F [l] | `Q82` · V2/F | 10.1 | l | 0.0101 | [l] | 7.56 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row1:col1 | — | not captured |
-| Absorption rate constant, KA [h−1] | `Q49` · kabs | 2.08 | not captured | not captured | not captured | 2.31 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row2:col1, Chandasana_2024_2_table_3:row0:col1 | — | not captured |
-| Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | 1.69 | l/h | 4.694444444444444e-07 | [l] / [h] | 7.87 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row3:col1 | — | not captured |
-| Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | 23.0 | l | 0.023 | [l] | 17.4 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | — | not captured |
+| Apparent clearance, CL/F [L/h] | `Q27` · CL/F | 16.3 | L/h | 4.527777777777778e-06 | [l] / [h] | 3.62 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row0:col1 | — | 36.3 (None% RSE) |
+| Apparent central volume of distribution, V2/F [l] | `Q82` · V2/F | 10.1 | l | 0.0101 | [l] | 7.56 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row1:col1 | — | 51.9 (None% RSE) |
+| Absorption rate constant, KA [h−1] | `Q49` · kabs | 2.08 | 1/h | 0.0005777777777777778 | 1/h | 2.31 | llm_confirmed (0.6) | Chandasana_2024_2_table_1:row2:col1, Chandasana_2024_2_table_3:row0:col1 | — | 107 (None% RSE) |
+| Intercompartment clearance, Q/F [l/h] | `Q69` · Q/F | 1.69 | l/h | 4.694444444444444e-07 | [l] / [h] | 7.87 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row3:col1 | — | 67.9 (None% RSE) |
+| Apparent peripheral compartment volume of distribution, V3/F [l] | `Q78` · V3/F | 23.0 | l | 0.023 | [l] | 17.4 | llm_corrected (0.6) | Chandasana_2024_2_table_1:row4:col1 | — | 91.9 (None% RSE) |
 | F, tablet ARROW PK Substudy Part 2 | `Q40` · Fab | 1.62 | not captured | not captured | not captured | 8.02 | llm (0.6) | Chandasana_2024_2_table_1:row5:col1 | — | not captured |
 | Apparent central volume of distribution, V/F [l] | `Q290` · V1/F | 23.1 | l | 0.023100000000000002 | [l] | 2.42 | llm_confirmed (0.6) | Chandasana_2024_2_table_2:row1:col1, Chandasana_2024_2_table_3:row2:col1 | — | not captured |
-| V/F | `Q76` · V/F | 32.7 | not captured | not captured | not captured | not captured | exact (1.0) | Chandasana_2024_2_table_2:row14:col1, Chandasana_2024_2_table_3:row11:col1 | — | not captured |
 | Lag time ALAG1 (h) | `Q83` · tlag | 0.297 | h | 1069.2 | [h] | 12.1 | llm_confirmed (0.6) | Chandasana_2024_2_table_3:row1:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.794 | not captured | not captured | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row7:col1 | — | not captured |
 | theta_q61_wt_power | `Q900` · theta_q61_wt_power | 0.698 | not captured | not captured | not captured | not captured | not captured (not captured) | Chandasana_2024_2_table_1:row8:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.455 | not captured | not captured | not captured | 4.15 | not captured (not captured) | Chandasana_2024_2_table_2:row7:col1 | — | not captured |
-| theta_v_f_wt_power | `Q900` · theta_v_f_wt_power | 0.556 | not captured | not captured | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
+| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.556 | not captured | not captured | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.758 | not captured | not captured | not captured | 7.07 | not captured (not captured) | Chandasana_2024_2_table_3:row6:col1 | — | not captured |
+| theta_q353_wt_power | `Q900` · theta_q353_wt_power | 0.677 | not captured | not captured | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -67,20 +67,29 @@ Chandasana H; van Dijkman SC; Mehta R; Bush M; Rabie H; Flynn P; et al. et al. (
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'Q/F' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'V2/F' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'V3/F' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability')
+- table section iov: 'IOV-CL/F' routed out of structural estimates ('Interoccasion variability')
+- table section iiv: 'V/F' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'KA' routed out of structural estimates ('Interindividual variability')
+- table section iov: 'IOV-KA' routed out of structural estimates ('Interoccasion variability')
+- table section iov: 'IOV-V/F' routed out of structural estimates ('Interoccasion variability')
+- table section iov: 'IOVKA' routed out of structural estimates ('Interoccasion variability')
+- table section residual_error: 'Additive error [mg/l]' routed out of structural estimates ('Residual error')
 - dropped unlinked row (NIL): 'Weight bands' — extend the ontology if this is a real PK parameter (source ['Tab4:row0:col3', 'Tab4:row0:col4'])
-- dropped duplicate Q69 ('Q/F', value '67.9') — already have one for this compound
-- dropped duplicate Q82 ('V2/F', value '51.9') — already have one for this compound
-- dropped duplicate Q78 ('V3/F', value '91.9') — already have one for this compound
-- dropped duplicate Q27 ('CL/F', value '28.6') — already have one for this compound
 - dropped duplicate Q27 ('Apparent clearance, CL/F [l/h]', value '9.16') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA, FCT [h−1]', value '0.854') — already have one for this compound
 - dropped duplicate Q49 ('Absorption rate constant, KA ~ DT and granules [h−1]', value '2.04') — already have one for this compound
 - dropped unlinked row (NIL): 'Maturation half time, TM50 [PMA weeks]' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_2_table_2:row10:col1'])
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row11:col1'])
-- dropped duplicate Q49 ('KA', value '76.5') — already have one for this compound
-- dropped unlinked row (NIL): 'VL/F ~ (WT/18.5)' — extend the ontology if this is a real PK parameter (source ['Chandasana_2024_2_table_3:row7:col1'])
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
+- covariate effect for Q353 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (KA). In population pharmacokinetics, first-order rate constants are conven')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
+- structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 
 **Extraction notes:**
 - companion parameter table 1 transcribed (14 record(s))
@@ -95,19 +104,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.767 (23/30 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.667 (20/30 fields) | 10 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[f, fasted fct]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[absorption rate constant, ka [h-1]].value` | 2.08 | 0.85 | mismatch |
+| `gpt-oss:120b` | `parameters[apparent central volume of distribution, v/f [l]].value` | 23.1 | 13.6 | mismatch |
 | `gpt-oss:120b` | `parameters[f, tablet arrow pk substudy part 2].parameter_id` | Q40 | Q87 | mismatch |
+| `gpt-oss:120b` | `parameters[f, without regard to food fct]` | not captured | 1.10 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[maturation half time, tm50 [pma weeks]]` | not captured | 52.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q353_wt_power]` | 0.677 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_wt_power]` | 0.698 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_v_f_wt_power].rse_percent` | 3.87 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[theta_v_f_wt_power].value` | 0.556 | 0.698 | mismatch |
-| `gpt-oss:120b` | `parameters[v/f].covariate_forms` | ['power'] | ['power', 'power', 'power'] | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | abacavir/dolutegravir/lamivudine | abacavir | mismatch |
+| `gpt-oss:120b` | `parameters[theta_q76_wt_power].rse_percent` | 3.87 | not captured | mismatch |
+| `gpt-oss:120b` | `parameters[theta_q76_wt_power].value` | 0.556 | 0.698 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | abacavir | abacavir/dolutegravir/lamivudine | mismatch |
 
 </details>
 
@@ -121,18 +133,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 14 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_center_consistency_wt | fail | not captured | [15.6, 18.5, 70.0] | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row0:col1'] |
 | C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_2:row1:col1', 'Chandasana_2024_2_table_3:row2:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row2:col1', 'Chandasana_2024_2_table_3:row0:col1'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row3:col1'] |
 | C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row4:col1'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row1:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_3:row1:col1'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Chandasana_2024_2_table_1:row2:col1', 'Chandasana_2024_2_table_3:row0:col1'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['Chandasana_2024_2_table_2:row14:col1', 'Chandasana_2024_2_table_3:row11:col1'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 16.3 L/h | not captured | not captured | ['Chandasana_2024_2_table_1:row0:col1'] |
@@ -172,4 +183,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 18:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 16:21 UTC</sub>

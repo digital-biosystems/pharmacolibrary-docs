@@ -1,43 +1,40 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Hoeben_2026 \u00b7 PD tumor volume&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# tumor volume — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.727). The first reading is what the record holds.">cross-check: disputed</span>
+# tumor volume — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
+
 ## What this record describes
 
-**As extracted:** Plasma asparaginase activity drives tumor volume (in mm3): direct linear effect.
+**As extracted:** Calaspargase pegol (plasma asparaginase activity, PAA) drive tumor volume (in mm3): direct linear effect.
 
 **Model:** No model was generated from this record.
 
-> In the tumor growth inhibition (TGI) model, plasma L-asparaginase activity (IU/L) from calaspargase pegol acts on tumor volume (mm3) in mice, with a linear exposure–response relationship inhibiting tumor growth; the excerpts do not state the specific mechanism (e.g., effect on kin or kout) or any potency values (IC50/EC50/Imax), and the human model assumed the same linear PKPD relationship, potency, and growth characteristics as in mice.
+> The paper describes a linear PKPD tumor growth inhibition model where plasma asparaginase activity (IU/L) inhibits tumor volume (mm3), but the specific mechanism of action (e.g., inhibition of production vs. elimination) and key potency parameters (such as IC50 or Emax) are not explicitly stated in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hoeben_2026`
 - **model family:** `linear`
 - **driver:** `not_resolved`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
-Hoeben E; Madelain V; Acharya C; Barbier Saint Hilaire P; Tyagi E; Okour M; Fouliard S et al. (2026). European journal of drug metabolism and pharmacokinetics 51
+Hoeben E et al., PKPD-Based Translational Modeling of Ca…, European journal of drug me… (2026)
   ·  DOI: [10.1007/s13318-026-01010-4](https://doi.org/10.1007/s13318-026-01010-4)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| variability | Mice PK — IIV (SD) | `Q312` · not captured | 0.0765 | not captured | not captured | llm (not captured) | Tab1:row1:col5 |
-| variability | Model — IIV (SD) | `Q312` · not captured | 0.164 | not captured | not captured | llm (not captured) | Tab1:row2:col5 |
-| variability | Human PK — IIV (SD) | `Q312` · not captured | 0.150 | not captured | not captured | llm (not captured) | Tab1:row6:col5 |
-| variability | Model — IIV (SD) | `Q312` · not captured | 0.441 | not captured | not captured | llm (not captured) | Tab1:row7:col5 |
-| variability | Mice PKPD — IIV (SD) | `Q312` · not captured | 0.224 | not captured | not captured | llm (not captured) | Tab1:row20:col5 |
-| variability | Mice PKPD — Shrinkage (%) | `Q318` · not captured | 37.4 | not captured | not captured | llm (not captured) | Tab1:row20:col7 |
+| model term | Human PK — Fixed effect estimate | `Q900` · not captured | 1.78 | not captured | not captured | llm (not captured) | Tab1:row6:col3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -50,14 +47,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.727 (8/11 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.636 (7/11 fields) | 4 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | asparaginase activity (PAA) | mismatch |
-| `gpt-oss:120b` | `model_family` | linear | disease_progression | mismatch |
+| `gpt-oss:120b` | `driver_compound` | plasma asparaginase activity | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | linear | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 70.0 | only_one_extracted |
 
 </details>

@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;diflunisal&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diflunisal_Gao1998_reference&quot;,&quot;label&quot;:&quot;Gao_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 # diflunisal
 
@@ -19,22 +18,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-21 02:18 | 12:58 | 0/1/0 | 3/0/0 | 0/0/0 | 180,859/18,058 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 7/4 | 9/2 | 0 |
+| 2026-10-01 21:02 | 2:28 | 0/1/0 | 1/0/0 | 0/0/0 | 75,648/3,716 | ollama / qwen3.8:27b-mtp-q8_0 | 9 | 7/4 | 8/1 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | — | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gao_1998_reference](drugs/drug_diflunisal/Diflunisal_Gao1998_reference.md) | — | 1-compartment (no model) | 2 | Gao L et al., [Determination of diflunisal in plasma…, Yao xue xue bao = Acta phar… (1998) | — |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Kasuya_2013_unknown](drugs/drug_diflunisal/pd_Kasuya_2013_unknown.md) | acyl-CoA synthetase activity toward docosahexaenoic acid ← diflunisal · inhibition effect | — | Kasuya F et al., Effect of the non-steroidal anti-inflam…, Journal of enzyme inhibitio… (2013) | [10.3109/14756366.2011.636742](https://doi.org/10.3109/14756366.2011.636742) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Serlin_1980_free_fraction_of_warfarin](drugs/drug_diflunisal/pd_Serlin_1980_free_fraction_of_warfarin.md) | name ← diflunisal · direct linear effect | — | Serlin MJ et al., The effect of diflunisal on the steady…, British journal of clinical… (1980) | [10.1111/j.1365-2125.1980.tb04847.x](https://doi.org/10.1111/j.1365-2125.1980.tb04847.x) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2_anti_HCV_activity](drugs/drug_diflunisal/pd_enkarde_2016_2_anti_HCV_activity.md) | name ← 2',4'-difluoro-4-hydroxy-N'-(2-pyridyl methylidene)biphenyl-3-carbohydrazide 3b · inhibition effect | — | Şenkardeş (2016) | — |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> | [Şenkardeş_2016_2_antiproliferative_activity](drugs/drug_diflunisal/pd_enkarde_2016_2_antiproliferative_activity.md) | name ← 2',4'-difluoro-4-hydroxy-N'-(2-pyridyl methylidene)biphenyl-3-carbohydrazide 3b · inhibition effect | — | Şenkardeş (2016) | — |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by qwen3.8:27b-mtp-q8_0, p(non-human) 0.00).">in vitro</span> | [Pacifici_1991_rate_of_hippuric_acid_formation](drugs/drug_diflunisal/pd_Pacifici_1991_rate_of_hippuric_acid_formation.md) | rate of hippuric acid formation ← diflunisal · inhibition effect | — | Pacifici GM et al., Conjugation of benzoic acid with glycin…, Developmental pharmacology… (1991) | [10.1159/000457499](https://doi.org/10.1159/000457499) |
 
 ## ADME sites
 
@@ -42,24 +38,24 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
+| absorption | small intestine | <sub>“…Rapidly and completely absorbed following oral administration…”</sub> | prose |
 | distribution | blood | `ALB` unknown | DrugBank actor |
 | metabolism | kidney | `UGT1A9` inhibitor | DrugBank actor |
 | metabolism | liver | `UGT1A9` inhibitor | DrugBank actor |
-| excretion | bile duct | <sub>“…ministered dose. Little or no diflunisal is excreted in the feces.…”</sub> | prose |
 | excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
 
 <sub>Actors without a tissue in the table: PTGS1 (inhibitor), PTGS2 (inhibitor), TTR (unknown), UGT1A8 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
 - **PubMed hits:** 81 matched, 60 returned
-- **screened:** 1  ·  **relevant:** 1
+- **screened:** 3  ·  **relevant:** 1
 - **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -83,7 +79,7 @@ _13 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Ghosal_2011.pdf` | Ghosal A et al., Characterization of human liver enzymes…, Drug metabolism and disposi… (2011) | pgx | 7 | [10.1124/dmd.110.036996](https://doi.org/10.1124/dmd.110.036996) | [21123164](https://www.ncbi.nlm.nih.gov/pubmed/21123164) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 | `Kiang_2005.pdf` | Kiang TK et al., UDP-glucuronosyltransferases and clinic…, Pharmacology & therapeutics (2005) | pgx | 5 | [10.1016/j.pharmthera.2004.10.013](https://doi.org/10.1016/j.pharmthera.2004.10.013) | [15781124](https://www.ncbi.nlm.nih.gov/pubmed/15781124) | metadata signals extractable PGX data (UGT1A7) |
 
-<sub>queue written 2026-09-21T02:06:00.730176+00:00</sub>
+<sub>queue written 2026-10-01T21:00:08.735168+00:00</sub>
 
 ## Screened and excluded
 

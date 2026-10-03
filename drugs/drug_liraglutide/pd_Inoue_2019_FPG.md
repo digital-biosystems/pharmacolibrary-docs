@@ -1,18 +1,17 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Inoue_2019 \u00b7 PD FPG&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_estimate&quot;,&quot;label&quot;:&quot;Carlsson_2021_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_estimate.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Carlsson2021_shrinkage&quot;,&quot;label&quot;:&quot;Carlsson_2021_shrinkage&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Carlsson2021_shrinkage.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Jacobsen2016_reference&quot;,&quot;label&quot;:&quot;Jacobsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Jacobsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_total&quot;,&quot;label&quot;:&quot;Overgaard_2016_total&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_total.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_trial_1&quot;,&quot;label&quot;:&quot;Overgaard_2016_trial_1&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_1.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Liraglutide_Overgaard2016_trial_2&quot;,&quot;label&quot;:&quot;Overgaard_2016_trial_2&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/Liraglutide_Overgaard2016_trial_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Inoue_2019 \u00b7 PD fasting plasma glucose&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# FPG — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.398). The first reading is what the record holds.">cross-check: disputed</span>
+# fasting plasma glucose — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.357). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Unknown drives FPG (in mg/dl): indirect response — drug inhibits the production of FPG.
+**As extracted:** Liraglutide (the dose) drives fasting plasma glucose (in mg dl⁻¹): indirect response — drug inhibits the production of fasting plasma glucose.
 
 **Model:** No model was generated from this record.
 
@@ -22,76 +21,24 @@
 
 - **paper:** `Inoue_2019`
 - **model family:** `indirect_response_i`
-- **driver:** `not_resolved`
+- **driver:** `dose_only`
 - **tier:** population
 - **effect:** inhibition/proportional
 
 ## Citation
-Inoue H; Tamaki Y; Kashihara Y; Muraki S; Kakara M; Hirota T; et al. et al. (2019). British journal of clinical pharmacology 85
+Inoue H et al., Efficacy of DPP-4 inhibitors, GLP-1 ana…, British journal of clinical… (2019)
   ·  DOI: [10.1111/bcp.13807](https://doi.org/10.1111/bcp.13807)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline FPG (mg dl | `Q324` · not captured | 165 | mg dl | not captured | llm_confirmed (not captured) | tab_0:row2:col4 |
-| PD (effect) | Baseline FPG (mg dl | `Q324` · not captured | 1.0 | mg dl | not captured | llm_confirmed (not captured) | tab_0:row2:col5 |
-| PD (effect) | K out, FPG (/day) | `Q328` · not captured | 0.0936 | /day | not captured | llm (not captured) | tab_0:row3:col4 |
-| PD (effect) | K out, FPG (/day) | `Q328` · not captured | 33.9 | /day | not captured | llm (not captured) | tab_0:row3:col5 |
-| PD (effect) | Baseline HbA1c (%) | `Q324` · not captured | 7.96 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col4 |
-| PD (effect) | Baseline HbA1c (%) | `Q324` · not captured | 0.6 | not captured | not captured | llm_confirmed (not captured) | tab_0:row4:col5 |
-| PD (effect) | K out, HbA1c (/day) | `Q328` · not captured | 0.0393 | /day | not captured | llm (not captured) | tab_0:row5:col4 |
-| PD (effect) | K out, HbA1c (/day) | `Q328` · not captured | 14.3 | /day | not captured | llm (not captured) | tab_0:row5:col5 |
-| PD (effect) | E placebo | `Q341` · not captured | 0.0168 | not captured | not captured | llm_confirmed (not captured) | tab_0:row6:col4 |
-| PD (effect) | E placebo | `Q341` · not captured | 23.2 | not captured | not captured | llm_confirmed (not captured) | tab_0:row6:col5 |
-| PK (driver) | DP FPG (/year) | `Q358` · not captured | 0.0204 | /year | not captured | llm (not captured) | tab_0:row8:col4 |
-| PK (driver) | DP FPG (/year) | `Q358` · not captured | 17.9 | /year | not captured | llm (not captured) | tab_0:row8:col5 |
-| PD (effect) | E max, DPP-4i | `Q320` · not captured | 0.116 | not captured | not captured | llm (not captured) | tab_0:row10:col4 |
-| PD (effect) | E max, DPP-4i | `Q320` · not captured | 5.2 | not captured | not captured | llm (not captured) | tab_0:row10:col5 |
-| PD (effect) | ED 50, sitagliptin (mg day | `Q322` · not captured | 11.0 | mg day | not captured | llm (not captured) | tab_0:row11:col2 |
-| PD (effect) | ED 50, sitagliptin (mg day | `Q322` · not captured | 41.9 | mg day | not captured | llm (not captured) | tab_0:row11:col3 |
-| PD (effect) | ED 50, vildagliptin (mg day | `Q322` · not captured | 9.51 | mg day | not captured | llm (not captured) | tab_0:row12:col2 |
-| PD (effect) | ED 50, vildagliptin (mg day | `Q322` · not captured | 55.6 | mg day | not captured | llm (not captured) | tab_0:row12:col3 |
-| PD (effect) | ED 50, alogliptin (mg day | `Q322` · not captured | 2.36 | mg day | not captured | llm (not captured) | tab_0:row13:col2 |
-| PD (effect) | ED 50, alogliptin (mg day | `Q322` · not captured | 52.1 | mg day | not captured | llm (not captured) | tab_0:row13:col3 |
-| PD (effect) | ED 50, linagliptin (mg day | `Q322` · not captured | 1.80 | mg day | not captured | llm (not captured) | tab_0:row14:col2 |
-| PD (effect) | ED 50, linagliptin (mg day | `Q322` · not captured | 26.7 | mg day | not captured | llm (not captured) | tab_0:row14:col3 |
-| PD (effect) | ED 50, teneligliptin (mg day | `Q322` · not captured | 0 | mg day | not captured | llm (not captured) | tab_0:row15:col2 |
-| PD (effect) | ED 50, anagliptin (mg day | `Q322` · not captured | 31.4 | mg day | not captured | llm (not captured) | tab_0:row16:col2 |
-| PD (effect) | ED 50, anagliptin (mg day | `Q322` · not captured | 33.8 | mg day | not captured | llm (not captured) | tab_0:row16:col3 |
-| PD (effect) | ED 50, saxagliptin (mg day | `Q322` · not captured | 1.47 | mg day | not captured | llm (not captured) | tab_0:row17:col2 |
-| PD (effect) | ED 50, saxagliptin (mg day | `Q322` · not captured | 48.2 | mg day | not captured | llm (not captured) | tab_0:row17:col3 |
-| PD (effect) | ED 50, omarigliptin (mg day | `Q322` · not captured | 3.15 | mg day | not captured | llm (not captured) | tab_0:row18:col2 |
-| PD (effect) | ED 50, omarigliptin (mg day | `Q322` · not captured | 66.7 | mg day | not captured | llm (not captured) | tab_0:row18:col3 |
-| PD (effect) | E max, GLP-1r | `Q320` · not captured | 0.266 | not captured | not captured | llm (not captured) | tab_0:row21:col4 |
-| PD (effect) | E max, GLP-1r | `Q320` · not captured | 6.4 | not captured | not captured | llm (not captured) | tab_0:row21:col5 |
-| PD (effect) | ED 50, liraglutide (mg day | `Q322` · not captured | 0.377 | mg day | not captured | llm (not captured) | tab_0:row22:col2 |
-| PD (effect) | ED 50, liraglutide (mg day | `Q322` · not captured | 34.7 | mg day | not captured | llm (not captured) | tab_0:row22:col3 |
-| PD (effect) | ED 50, exenatide BID (mg day | `Q321` · not captured | 0.0120 | mg day | not captured | llm (not captured) | tab_0:row23:col2 |
-| PD (effect) | ED 50, exenatide BID (mg day | `Q321` · not captured | 12.7 | mg day | not captured | llm (not captured) | tab_0:row23:col3 |
-| PD (effect) | ED 50 , exenatide QW (mg week | `Q321` · not captured | 0.498 | mg week | not captured | llm (not captured) | tab_0:row24:col2 |
-| PD (effect) | ED 50 , exenatide QW (mg week | `Q321` · not captured | 9.2 | mg week | not captured | llm (not captured) | tab_0:row24:col3 |
-| PD (effect) | ED 50, lixisenatide (mg day | `Q322` · not captured | 0.0392 | mg day | not captured | llm (not captured) | tab_0:row25:col2 |
-| PD (effect) | ED 50, lixisenatide (mg day | `Q322` · not captured | 21.8 | mg day | not captured | llm (not captured) | tab_0:row25:col3 |
-| PD (effect) | ED 50, dulaglutide (mg week | `Q321` · not captured | 0.328 | mg week | not captured | llm (not captured) | tab_0:row26:col2 |
-| PD (effect) | ED 50, dulaglutide (mg week | `Q321` · not captured | 5.4 | mg week | not captured | llm (not captured) | tab_0:row26:col3 |
-| PD (effect) | E max, SGLT2i | `Q320` · not captured | 0.199 | not captured | not captured | llm (not captured) | tab_0:row29:col4 |
-| PD (effect) | E max, SGLT2i | `Q320` · not captured | 13.6 | not captured | not captured | llm (not captured) | tab_0:row29:col5 |
-| PD (effect) | ED 50, ipragliflozin (mg day | `Q321` · not captured | 14.3 | mg day | not captured | llm (not captured) | tab_0:row30:col2 |
-| PD (effect) | ED 50, ipragliflozin (mg day | `Q321` · not captured | 52.5 | mg day | not captured | llm (not captured) | tab_0:row30:col3 |
-| PD (effect) | ED 50, dapagliflozin (mg day | `Q321` · not captured | 4.06 | mg day | not captured | llm (not captured) | tab_0:row31:col2 |
-| PD (effect) | ED 50, dapagliflozin (mg day | `Q321` · not captured | 35.5 | mg day | not captured | llm (not captured) | tab_0:row31:col3 |
-| PD (effect) | ED 50, canagliflozin (mg day | `Q321` · not captured | 30.0 | mg day | not captured | llm (not captured) | tab_0:row32:col2 |
-| PD (effect) | ED 50, canagliflozin (mg day | `Q321` · not captured | 28.1 | mg day | not captured | llm (not captured) | tab_0:row32:col3 |
-| PD (effect) | ED 50, empagliflozin (mg day | `Q321` · not captured | 4.54 | mg day | not captured | llm (not captured) | tab_0:row33:col2 |
-| PD (effect) | ED 50, empagliflozin (mg day | `Q321` · not captured | 62.3 | mg day | not captured | llm (not captured) | tab_0:row33:col3 |
-| — | ISV on Baseline FPG (%) | `Q100` · not captured | 8.4 | not captured | not captured | llm_corrected (not captured) | tab_0:row36:col1 |
-| — | ISV on Baseline FPG (%) | `Q100` · not captured | 13.2 | not captured | not captured | llm_corrected (not captured) | tab_0:row36:col2 |
-| PD (effect) | ISV on K out, FPG (%) | `Q328` · not captured | 105.4 | not captured | not captured | llm (not captured) | tab_0:row37:col3 |
-| PD (effect) | ISV on K out, FPG (%) | `Q328` · not captured | 19.0 | not captured | not captured | llm (not captured) | tab_0:row37:col4 |
-| PD (effect) | ISV on Baseline HbA1c (%) | `Q324` · not captured | 4.4 | not captured | not captured | llm_confirmed (not captured) | tab_0:row38:col1 |
-| PD (effect) | ISV on Baseline HbA1c (%) | `Q324` · not captured | 10.1 | not captured | not captured | llm_confirmed (not captured) | tab_0:row38:col2 |
-| PD (effect) | ISV on K out, HbA1c (%) | `Q328` · not captured | 48.3 | not captured | not captured | llm (not captured) | tab_0:row39:col3 |
-| PD (effect) | ISV on K out, HbA1c (%) | `Q328` · not captured | 67.6 | not captured | not captured | llm (not captured) | tab_0:row39:col4 |
+| PD (effect) | Baseline FPG | `Q324` · not captured | 165 | mg dl⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | K out, FPG | `Q328` · not captured | 0.0936 | /day | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | E max, GLP-1r | `Q323` · not captured | 0.266 | not captured | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | ED 50, liraglutide | `Q321` · not captured | 0.377 | mg day⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | E placebo | `Q341` · not captured | 0.0168 | not captured | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | DP FPG | `Q340` · not captured | 0.0204 | /year | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| variability | Additive error FPG | `Q315` · not captured | 3.35 | mg dl⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -104,15 +51,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.398 (37/93 fields) | 56 |
+| `gpt-oss:120b` | not confirmed | 0.357 (35/98 fields) | 63 |
 
-<details><summary>56 field(s) a reader read differently</summary>
+<details><summary>63 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
 | `gpt-oss:120b` | `effect_form` | proportional | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q100]` | 8.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q100]` | 13.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 14.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 52.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 11.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 41.9 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 9.51 | only_one_extracted |
@@ -121,10 +72,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 52.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 1.80 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 26.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 31.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 33.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 1.47 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 48.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 3.15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 66.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.377 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 34.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.0392 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q321]` | not captured | 21.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | 14.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | 52.5 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | 11.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | 41.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | 9.51 | not captured | only_one_extracted |
@@ -144,28 +104,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q322]` | 34.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | 0.0392 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q322]` | 21.8 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 165 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | 1.0 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | 8.4 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | 13.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 0.777 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q328]` | not captured | 8.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q341]` | not captured | 113.1 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q341]` | not captured | 16.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q342]` | not captured | 0.777 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q342]` | not captured | 8.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q342]` | not captured | 0.654 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q342]` | not captured | 5.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q342]` | not captured | 0.893 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q342]` | not captured | 15.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.0204 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 17.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 113.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 16.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 92.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 22.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q41]` | not captured | 165 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q41]` | not captured | 1.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q67]` | not captured | 0.831 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q67]` | not captured | 3.7 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q67]` | not captured | 0.654 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q67]` | not captured | 5.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q99]` | not captured | 3.15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q99]` | not captured | 66.7 | only_one_extracted |
 
 </details>
 
@@ -177,9 +131,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

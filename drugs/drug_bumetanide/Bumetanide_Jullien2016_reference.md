@@ -1,15 +1,14 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03C&quot;,&quot;href&quot;:&quot;atc/C03C.md&quot;},{&quot;label&quot;:&quot;bumetanide&quot;,&quot;href&quot;:&quot;drugs/drug_bumetanide/&quot;},{&quot;label&quot;:&quot;Jullien_2016 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Bumetanide_Pentikinen1985_reference&quot;,&quot;label&quot;:&quot;Pentik\u00e4inen_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bumetanide/Bumetanide_Pentikinen1985_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Bumetanide_Jullien2016_reference&quot;,&quot;label&quot;:&quot;Jullien_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_bumetanide/Bumetanide_Jullien2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # bumetanide — `Bumetanide_Jullien2016_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,12 +20,12 @@
 
 The record was built from the paper's abstract alone, so reported summary statistics stood in for a fitted model. The plausibility check flagged the clearance/volume magnitudes as implausible, consistent with a unit or scale extraction error. A second reader returned null for all four parameter values (clearance 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h), leaving the extracted numbers unconfirmed, and also disagreed on the dose compound and primary analyte fields. Extracted — bumetanide: CL 0.063 L/h, V1 0.28 L, V2 0.44 L, Q 0.59 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has bumetanide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
-Jullien V; Pressler RM; Boylan G; Blennow M; Marlow N; Chiron C; et al. et al. (2016). Journal of clinical pharmacology 56
+Jullien V et al., Pilot evaluation of the population phar…, Journal of clinical pharmac… (2016)
   ·  DOI: [10.1002/jcph.596](https://doi.org/10.1002/jcph.596)
 
 ## Model component
@@ -68,19 +67,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[central distribution volume]` | not captured | 0.28 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central distribution volumes]` | 0.28 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[clearance]` | 0.063 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | not captured | 0.063 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[distribution clearance]` | 0.59 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[distribution clearance]` | not captured | 0.59 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[peripheral distribution volume]` | not captured | 0.44 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peripheral distribution volumes]` | 0.44 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | bumetanide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | bumetanide | unknown | mismatch |

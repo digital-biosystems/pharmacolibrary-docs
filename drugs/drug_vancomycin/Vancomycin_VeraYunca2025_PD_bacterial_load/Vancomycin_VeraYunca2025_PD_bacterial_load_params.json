@@ -6,7 +6,10 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "exposure_per_s": 0.0009999999999999998
+  "EC50": 0.00056,
+  "Emax": -0.000483333333333,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
@@ -40,7 +43,7 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
-  "per_s": 0.0009999999999999998,
+  "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;telmisartan&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/&quot;},{&quot;label&quot;:&quot;Tatami_2003 \u00b7 hypothesized_value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Chae2018_reference&quot;,&quot;label&quot;:&quot;Chae_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Chae2018_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Huang2019_reference&quot;,&quot;label&quot;:&quot;Huang_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Huang2019_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_parameters&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_parameters.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_estimated_value&quot;,&quot;label&quot;:&quot;Tatami_2003_estimated_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_estimated_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_final_estimates_of_the_model_paramete&quot;,&quot;label&quot;:&quot;Tatami_2003_final_estimates_of_the_model_parameters&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_final_estimates_of_the_model_paramete.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_hypothesized_value&quot;,&quot;label&quot;:&quot;Tatami_2003_hypothesized_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_hypothesized_value.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Telmisartan_Hao2007_reference&quot;,&quot;label&quot;:&quot;Hao_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Hao2007_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Liu2023_reference&quot;,&quot;label&quot;:&quot;Liu_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Liu2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Tatami2003_value&quot;,&quot;label&quot;:&quot;Tatami_2003_value&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Tatami2003_value.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Telmisartan_Ieiri2011_reference&quot;,&quot;label&quot;:&quot;Ieiri_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Ieiri2011_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Jeong2025_reference&quot;,&quot;label&quot;:&quot;Jeong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Jeong2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Telmisartan_Petersen2024_reference&quot;,&quot;label&quot;:&quot;Petersen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/Telmisartan_Petersen2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Yu_2015_K&quot;,&quot;label&quot;:&quot;Yu_2015 \u00b7 K+&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_telmisartan/pd_Yu_2015_K.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # telmisartan — `Telmisartan_Tatami2003_hypothesized_value`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -23,15 +23,17 @@ Without a unit the value cannot be converted, so the model cannot use it. Extrac
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:41:35.958086+00:00) predates the upstream re-run (2026-10-02 17:26:36.725573+00:00). Current validate status: `needs_review`.
+
 ## Citation
-Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug metabolism and pharmacokinetics 18
+Tatami S et al., Population pharmacokinetics of an angio…, Drug metabolism and pharmac… (2003)
   ·  DOI: [10.2133/dmpk.18.203](https://doi.org/10.2133/dmpk.18.203)
 
 ## Model component
-<dbs-pgx drug="telmisartan" model-id="Telmisartan_Tatami2003_hypothesized_value" status="needs_review" stale="false" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="telmisartan" model-id="Telmisartan_Tatami2003_hypothesized_value" status="needs_review" stale="true" population="healthy volunteers and hypertensive patients" measured-compound="telmisartan" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 7 extracted, plus 1 covariate effect.
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -40,14 +42,12 @@ Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| u 14 | `Q347` · k14 | 1 | not captured | not captured | not captured | not captured | llm (0.6) | Tatami_2003_table_2:row7:col4 | — | not captured |
-| V 1 W F | `Q290` · V1/F | 105.6 | not captured | not captured | not captured | not captured | llm (0.6) | Tatami_2003_table_4:row1:col4 | — | not captured |
-| Q W F | `Q30` · Q | 103.9 | not captured | not captured | not captured | not captured | llm (0.6) | Tatami_2003_table_4:row2:col4 | — | not captured |
-| V 2 W F | `Q82` · V2/F | 106.4 | not captured | not captured | not captured | not captured | llm (0.6) | Tatami_2003_table_4:row3:col4 | — | not captured |
-| Ka | `Q49` · kabs | 102.2 | not captured | not captured | not captured | not captured | exact (1.0) | Tatami_2003_table_4:row4:col4 | — | not captured |
-| Absorption lag time | `Q83` · tlag | 101.2 | not captured | not captured | not captured | not captured | exact (1.0) | Tatami_2003_table_4:row5:col4 | — | not captured |
+| V 1 W F | `Q290` · V1/F | 192.0 | L | 0.192 | L | not captured | llm (0.6) | Tatami_2003_table_4:row1:col1, Tatami_2003_table_4:row1:col2, Tatami_2003_table_4:row1:col4 | — | not captured |
+| Q W F | `Q30` · Q | 79.7 | L/h | 2.213888888888889e-05 | L/h | not captured | llm (0.6) | Tatami_2003_table_4:row2:col1, Tatami_2003_table_4:row2:col2, Tatami_2003_table_4:row2:col4 | — | not captured |
+| V 2 W F | `Q82` · V2/F | 996 | L | 0.996 | L | not captured | llm (0.6) | Tatami_2003_table_4:row3:col1, Tatami_2003_table_4:row3:col2, Tatami_2003_table_4:row3:col4 | — | not captured |
+| Ka | `Q49` · kabs | 0.330 | 1/h | 9.166666666666667e-05 | 1/h | not captured | exact (1.0) | Tatami_2003_table_4:row4:col1, Tatami_2003_table_4:row4:col2, Tatami_2003_table_4:row4:col4 | — | not captured |
+| Absorption lag time | `Q83` · tlag | 0.404 | h | 1454.4 | h | not captured | exact (1.0) | Tatami_2003_table_4:row5:col1, Tatami_2003_table_4:row5:col2, Tatami_2003_table_4:row5:col4 | — | not captured |
 | CL/F (L/h) | `Q27` · CL/F | 18.3 | L/h | 5.0833333333333335e-06 | L/h | not captured | review_gapfill (0.7) | Jeong_2025:review | — | not captured |
-| ABCC2 | `Q900` · ABCC2 | {'C/C': 0.0, 'C/T': -0.0269, 'T/T': -0.0853} | not captured | not captured | not captured | not captured | not captured (not captured) | pgx | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,18 +57,6 @@ Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug 
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'u 6' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row0:col4'])
-- dropped unlinked row (NIL): 'u 8' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row1:col4'])
-- dropped unlinked row (NIL): 'u 9' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row2:col4'])
-- dropped unlinked row (NIL): 'u 10' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row3:col4'])
-- dropped unlinked row (NIL): 'u 11' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row4:col4'])
-- dropped unlinked row (NIL): 'u 12' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row5:col4'])
-- dropped unlinked row (NIL): 'u 13' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row6:col4'])
-- dropped unlinked row (NIL): 'u 15' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row8:col4'])
-- dropped unlinked row (NIL): 'u 16' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row9:col4'])
-- dropped unlinked row (NIL): 'u 17' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row10:col4'])
-- dropped unlinked row (NIL): 'u 18' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row11:col4'])
-- dropped unlinked row (NIL): 'u 19' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_2:row12:col4'])
 - dropped unlinked row (NIL): '1' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row1:col2', 'Tatami_2003_table_3:row1:col3', 'Tatami_2003_table_3:row1:col6', 'Tatami_2003_table_3:row1:col7', 'Tatami_2003_table_3:row1:col8', 'Tatami_2003_table_3:row1:col10', 'Tatami_2003_table_3:row1:col11', 'Tatami_2003_table_3:row1:col12', 'Tatami_2003_table_3:row1:col13', 'Tatami_2003_table_3:row1:col14'])
 - dropped unlinked row (NIL): '2' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row2:col2', 'Tatami_2003_table_3:row2:col3', 'Tatami_2003_table_3:row2:col6', 'Tatami_2003_table_3:row2:col7', 'Tatami_2003_table_3:row2:col8', 'Tatami_2003_table_3:row2:col10', 'Tatami_2003_table_3:row2:col11', 'Tatami_2003_table_3:row2:col12', 'Tatami_2003_table_3:row2:col13', 'Tatami_2003_table_3:row2:col14'])
 - dropped unlinked row (NIL): '3M a l e80' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row3:col3', 'Tatami_2003_table_3:row3:col4', 'Tatami_2003_table_3:row3:col6', 'Tatami_2003_table_3:row3:col7', 'Tatami_2003_table_3:row3:col8', 'Tatami_2003_table_3:row3:col10', 'Tatami_2003_table_3:row3:col11', 'Tatami_2003_table_3:row3:col12'])
@@ -77,28 +65,18 @@ Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug 
 - dropped unlinked row (NIL): '6M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row6:col2', 'Tatami_2003_table_3:row6:col3', 'Tatami_2003_table_3:row6:col4', 'Tatami_2003_table_3:row6:col6', 'Tatami_2003_table_3:row6:col7', 'Tatami_2003_table_3:row6:col8', 'Tatami_2003_table_3:row6:col10', 'Tatami_2003_table_3:row6:col11'])
 - dropped unlinked row (NIL): '7M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row7:col2', 'Tatami_2003_table_3:row7:col3', 'Tatami_2003_table_3:row7:col4', 'Tatami_2003_table_3:row7:col6', 'Tatami_2003_table_3:row7:col7', 'Tatami_2003_table_3:row7:col8', 'Tatami_2003_table_3:row7:col10', 'Tatami_2003_table_3:row7:col11'])
 - dropped unlinked row (NIL): '8M a l e6 0' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_3:row8:col2', 'Tatami_2003_table_3:row8:col3', 'Tatami_2003_table_3:row8:col4', 'Tatami_2003_table_3:row8:col6', 'Tatami_2003_table_3:row8:col7', 'Tatami_2003_table_3:row8:col8', 'Tatami_2003_table_3:row8:col10', 'Tatami_2003_table_3:row8:col11'])
-- dropped unlinked row (NIL): 'CLW F' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row0:col4'])
-- dropped unlinked row (NIL): 's 2' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row7:col4'])
+- dropped unlinked row (NIL): 'CLW F' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row0:col1', 'Tatami_2003_table_4:row0:col2', 'Tatami_2003_table_4:row0:col4'])
+- dropped unlinked row (NIL): 's 2' — extend the ontology if this is a real PK parameter (source ['Tatami_2003_table_4:row7:col1', 'Tatami_2003_table_4:row7:col2', 'Tatami_2003_table_4:row7:col4'])
+- implicit units: 'V 1 W F' → L (from the paper text: "The paper text states: 'volume of distribution for the central compartment (V1 W F, L)'")
+- implicit units: 'Q W F' → L/h (from the paper text: "The paper text states: 'inter-compartmen- tal clearance (Q W F, L W hr)'")
+- implicit units: 'V 2 W F' → L (from the paper text: "The paper text states: 'volume of distribution for the peripheral compartment (V 2 W F, L)'")
+- implicit units: 'Ka' → 1/h (from the paper text: "The paper text states: 'ˆrst-order ab- sorption rate constant (Ka, hr -1 )'")
+- implicit units: 'Absorption lag time' → h (from the paper text: "The paper text states: 'absorption lag time (ALAG, hr)'")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=telmisartan
-- population split: 'hypothesized value' subgroup of Tatami_2003 (paper reports 5 populations: estimated parameters, estimated value, final estimates of the model parameters, hypothesized value, value)
+- population split: 'final estimates of the model parameters' subgroup of Tatami_2003 (paper reports 3 populations: estimated parameters, final estimates of the model parameters, value)
 - gap-filled Q27 (CL/F) from Jeong_2025's review values (primary lacked it)
 
 **Extraction notes:**
-- unparsed cell Tatami_2003_table_2:row0:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row2:col2 = 'V 2 W F'
-- unparsed cell Tatami_2003_table_2:row2:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row3:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row4:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row5:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row8:col2 = 'V 1 W F'
-- unparsed cell Tatami_2003_table_2:row8:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row9:col2 = 'V 1 W F'
-- unparsed cell Tatami_2003_table_2:row9:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row10:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row11:col2 = 'V 2 W F'
-- unparsed cell Tatami_2003_table_2:row11:col6 = 'pº0.01'
-- unparsed cell Tatami_2003_table_2:row12:col2 = 'V 2 W F'
-- companion parameter table 2 transcribed (39 record(s))
 - unparsed cell Tatami_2003_table_3:row6:col1 = '5 0No'
 - unparsed cell Tatami_2003_table_3:row7:col1 = '5 0Y e s'
 - unparsed cell Tatami_2003_table_3:row8:col1 = '5 0Y e s'
@@ -111,7 +89,7 @@ Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug 
 - unparsed cell Tatami_2003_table_4:row5:col3 = '(0.345, 0.484)'
 - unparsed cell Tatami_2003_table_4:row7:col3 = '(0.140, 0.742)'
 - companion parameter table 4 transcribed (21 record(s))
-- LLM selected parameter table(s) 2, 3, 4
+- LLM selected parameter table(s) 3, 4
 
 ## Validation
 
@@ -119,20 +97,20 @@ Tatami S; Sarashina A; Yamamura N; Igarashi T; Tanigawara Y et al. (2003). Drug 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Jeong_2025:review'] |
-| C5_unit_missing_Q290 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tatami_2003_table_4:row1:col4'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row2:col4'] |
-| C5_unit_missing_Q347 | fail | 1 / [time] | not captured | not captured | not captured | ['Tatami_2003_table_2:row7:col4'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row4:col4'] |
-| C5_unit_missing_Q82 | fail | [length] ** 3 | not captured | not captured | not captured | ['Tatami_2003_table_4:row3:col4'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row5:col4'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tatami_2003_table_4:row1:col1', 'Tatami_2003_table_4:row1:col2', 'Tatami_2003_table_4:row1:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row2:col1', 'Tatami_2003_table_4:row2:col2', 'Tatami_2003_table_4:row2:col4'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row4:col1', 'Tatami_2003_table_4:row4:col2', 'Tatami_2003_table_4:row4:col4'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tatami_2003_table_4:row3:col1', 'Tatami_2003_table_4:row3:col2', 'Tatami_2003_table_4:row3:col4'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tatami_2003_table_4:row5:col1', 'Tatami_2003_table_4:row5:col2', 'Tatami_2003_table_4:row5:col4'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 18.3 L/h | not captured | not captured | ['Jeong_2025:review'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 192 L | not captured | not captured | ['Tatami_2003_table_4:row1:col1', 'Tatami_2003_table_4:row1:col2', 'Tatami_2003_table_4:row1:col4'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 996 L | not captured | not captured | ['Tatami_2003_table_4:row3:col1', 'Tatami_2003_table_4:row3:col2', 'Tatami_2003_table_4:row3:col4'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -167,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 02:24 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 17:26 UTC</sub>

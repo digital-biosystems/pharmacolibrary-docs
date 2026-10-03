@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01D&quot;,&quot;href&quot;:&quot;atc/L01D.md&quot;},{&quot;label&quot;:&quot;doxorubicin&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/&quot;},{&quot;label&quot;:&quot;Mody_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Taylor2026_reference&quot;,&quot;label&quot;:&quot;Taylor_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Taylor2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Augustin2026_reference&quot;,&quot;label&quot;:&quot;Augustin_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Augustin2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mody2023_reference&quot;,&quot;label&quot;:&quot;Mody_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mody2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Doxorubicin_PrezBlanco2016_reference&quot;,&quot;label&quot;:&quot;P\u00e9rez-Blanco_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_PrezBlanco2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Bressolle1991_reference&quot;,&quot;label&quot;:&quot;Bressolle_1991_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bressolle1991_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Choi2021_reference&quot;,&quot;label&quot;:&quot;Choi_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Choi2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Eksborg1989_reference&quot;,&quot;label&quot;:&quot;Eksborg_1989_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Eksborg1989_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Embree1993_reference&quot;,&quot;label&quot;:&quot;Embree_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Embree1993_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Harashima1999_reference&quot;,&quot;label&quot;:&quot;Harashima_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Harashima1999_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Liang2016_reference&quot;,&quot;label&quot;:&quot;Liang_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Liang2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mc2024_reference&quot;,&quot;label&quot;:&quot;Mc_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mc2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxorubicin_Bguin2024_reference&quot;,&quot;label&quot;:&quot;B\u00e9guin_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Bguin2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_DeJongh2025_reference&quot;,&quot;label&quot;:&quot;DeJongh_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_DeJongh2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Mohmaed2024_reference&quot;,&quot;label&quot;:&quot;Mohmaed_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Mohmaed2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Olivo2024_reference&quot;,&quot;label&quot;:&quot;Olivo_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Olivo2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sallustio2021_reference&quot;,&quot;label&quot;:&quot;Sallustio_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sallustio2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Taylor2026_reference&quot;,&quot;label&quot;:&quot;Taylor_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Taylor2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxorubicin_Sinha2026_reference&quot;,&quot;label&quot;:&quot;Sinha_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/Doxorubicin_Sinha2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Mody_2023_R&quot;,&quot;label&quot;:&quot;Mody_2023 \u00b7 R&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxorubicin/pd_Mody_2023_R.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxorubicin — `Doxorubicin_Mody2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.091). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
+
+> **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 0.00).
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
@@ -21,16 +23,18 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL, V, Q and V2), so that value has no SI equivalent. Extracted — doxorubicin: CL 53.3 L/h/1.8m2, V 17.7 L/1.8m2, Q 58.7 L/h/1.8m2, V2 1.83e+03 L/1.8m2, Q3 21.8 L/h/1.8m2, V3 71.6 L/1.8m2, kel 1 h−1, k12 1 h−1, … (+2).
 
-Independently confirmed by `gpt-oss:120b`.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has doxorubicin, the second reading unknown; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:50.920807+00:00) predates the upstream re-run (2026-10-02 20:20:51.925005+00:00). Current validate status: `extracted`.
+
 ## Citation
-Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
+Mody H et al., In vitro to clinical translational phar…, Scientific reports (2023)
   ·  DOI: [10.1038/s41598-023-29964-4](https://doi.org/10.1038/s41598-023-29964-4)
 
 ## Model component
-<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="needs_review" stale="false" population="adults with cancer" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="doxorubicin" model-id="Doxorubicin_Mody2023_reference" status="extracted" stale="true" population="adults" measured-compound="doxorubicin" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, IV mammillary model — template `PK_2C`.  
 **Parameters:** 10 extracted.
@@ -38,16 +42,14 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (L/h/1.8m2) | `Q22` · CL | 53.3 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | 4 | exact (1.0) | Tab2:row2:col2 | — | not captured |
-| V (L/1.8m2) | `Q61` · V | 17.7 | L/1.8m2 | not captured | [l] / [1.8m2] | 8 | exact (1.0) | Tab2:row3:col2 | — | not captured |
-| Q2 (L/h/1.8m2) | `Q30` · Q | 58.7 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | 8 | special_case (0.95) | Tab2:row4:col2 | — | not captured |
-| V2 (L/1.8m2) | `Q64` · V2 | 1830 | L/1.8m2 | not captured | [l] / [1.8m2] | 7 | exact (1.0) | Tab2:row5:col2 | — | not captured |
-| Q3 (L/h/1.8m2) | `Q308` · Q3 | 21.8 | L/h/1.8m2 | not captured | [l] / [[h] · [1.8m2]] | 13 | exact (1.0) | Tab2:row6:col2 | — | not captured |
-| V3 (L/1.8m2) | `Q77` · V3 | 71.6 | L/1.8m2 | not captured | [l] / [1.8m2] | 15 | exact (1.0) | Tab2:row7:col2 | — | not captured |
+| CL (L/h/1.8m2) | `Q22` · CL | 53.3 | L/h | 1.4805555555555555e-05 | L/h | 4 | exact (1.0) | Tab2:row2:col2 | — | not captured |
+| V (L/1.8m2) | `Q61` · V | 17.7 | L | 0.0177 | L | 8 | exact (1.0) | Tab2:row3:col2 | — | not captured |
+| Q2 (L/h/1.8m2) | `Q30` · Q | 58.7 | L/h | 1.6305555555555556e-05 | L/h | 8 | special_case (0.95) | Tab2:row4:col2 | — | not captured |
+| V2 (L/1.8m2) | `Q64` · V2 | 1830 | L | 1.83 | L | 7 | exact (1.0) | Tab2:row5:col2 | — | not captured |
+| Q3 (L/h/1.8m2) | `Q308` · Q3 | 21.8 | L/h | 6.055555555555555e-06 | L/h | 13 | exact (1.0) | Tab2:row6:col2 | — | not captured |
+| V3 (L/1.8m2) | `Q77` · V3 | 71.6 | L | 0.0716 | L | 15 | exact (1.0) | Tab2:row7:col2 | — | not captured |
 | kel (h−1) | `Q47` · kel | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | 4 | exact (1.0) | Tab2:row9:col2 | — | not captured |
 | k12 (h−1) | `Q301` · k12 | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | 3 | exact (1.0) | Tab2:row10:col2 | — | not captured |
 | k21 (h−1) | `Q302` · k21 | 1 | h−1 | 0.0002777777777777778 | [1] / [h] | 8 | exact (1.0) | Tab2:row11:col2 | — | not captured |
@@ -68,10 +70,14 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
 - unit_dimension_unknown: 'L/h/1.8m2' (Q3)
 - unit_dimension_unknown: 'L/1.8m2' (V3)
 - dropped duplicate Q61 ('V (L)', value '14.6') — already have one for this compound
+- implicit units: 'CL (L/h/1.8m2)' → L/h (from the popPK convention: 'The parameter is Total Clearance (CL). The paper text does not explicitly state the unit in the provided excerpts, but t')
+- implicit units: 'V (L/1.8m2)' → L (from the popPK convention: 'The parameter is Volume of Distribution (V). The paper text does not explicitly state the unit in the provided excerpts,')
+- implicit units: 'Q2 (L/h/1.8m2)' → L/h (from the popPK convention: 'The parameter is Intercompartmental Clearance (Q2). The paper text does not explicitly state the unit in the provided ex')
+- implicit units: 'V2 (L/1.8m2)' → L (from the popPK convention: 'The parameter is Volume of Distribution of the peripheral compartment (V2). The paper text does not explicitly state the')
+- implicit units: 'Q3 (L/h/1.8m2)' → L/h (from the popPK convention: 'The parameter is Intercompartmental Clearance (Q3). The paper text does not explicitly state the unit in the provided ex')
+- implicit units: 'V3 (L/1.8m2)' → L (from the popPK convention: 'The parameter is Volume of Distribution of the second peripheral compartment (V3). The paper text does not explicitly st')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=doxorubicin
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
-- status held at route_to_review — not promoted
 - gap-filled Q83 (tlag) from Bérczi_1993's review values (primary lacked it)
 
 **Extraction notes:**
@@ -83,14 +89,39 @@ Mody H; Vaidya TR; Ait-Oudhia S et al. (2023). Scientific reports 13
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | confirmed | 1.0 (22/22 fields) | none |
+| `gpt-oss:120b` | not confirmed | 0.091 (2/22 fields) | 20 |
 
-_Every reader agrees on every compared field of this record._
+<details><summary>20 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl]` | 53.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 53.3 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k12]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kel]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kel]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q2]` | 58.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q2]` | not captured | 58.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3]` | 21.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q3]` | not captured | 21.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2]` | 1830 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v2]` | not captured | 1830 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3]` | 71.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v3]` | not captured | 71.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v]` | 17.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v]` | not captured | 17.7 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | doxorubicin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | doxorubicin | unknown | mismatch |
+
+</details>
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -105,18 +136,21 @@ _Every reader agrees on every compared field of this record._
 | C0_has_structural_params | pass | not captured | 9 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col2'] |
 | C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row10:col2'] |
 | C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row11:col2'] |
+| C5_dimension_Q308 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row6:col2'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Tab2:row9:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row3:col2'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row5:col2'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row7:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Bérczi_1993:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | L/h/1.8m2 | not captured | not captured | ['Tab2:row2:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | L/h/1.8m2 | not captured | not captured | ['Tab2:row4:col2'] |
-| C5_unit_missing_Q308 | fail | [length] ** 3 / [time] | L/h/1.8m2 | not captured | not captured | ['Tab2:row6:col2'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | L/1.8m2 | not captured | not captured | ['Tab2:row3:col2'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | L/1.8m2 | not captured | not captured | ['Tab2:row5:col2'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | L/1.8m2 | not captured | not captured | ['Tab2:row7:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 53.3 | not captured | not captured | ['Tab2:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 53.3 L/h | not captured | not captured | ['Tab2:row2:col2'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 17.7 L | not captured | not captured | ['Tab2:row3:col2'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 1.83e+03 L | not captured | not captured | ['Tab2:row5:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -151,4 +185,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 04:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-02 20:20 UTC</sub>

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J06B&quot;,&quot;href&quot;:&quot;atc/J06B.md&quot;},{&quot;label&quot;:&quot;palivizumab&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/&quot;},{&quot;label&quot;:&quot;Robbie_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_Robbie2012_reference&quot;,&quot;label&quot;:&quot;Robbie_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Robbie2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Palivizumab_Madhi2025_reference&quot;,&quot;label&quot;:&quot;Madhi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Madhi2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Palivizumab_Reuter2019_reference&quot;,&quot;label&quot;:&quot;Reuter_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Reuter2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Palivizumab_Li2021_reference&quot;,&quot;label&quot;:&quot;Li_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_palivizumab/Palivizumab_Li2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # palivizumab — `Palivizumab_Robbie2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.538). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,33 +21,34 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (CL), so that value has no SI equivalent. Extracted — palivizumab: Q 2.3, Fab 3.13, CL 9.95 mo, kabs 0.373 day Ϫ1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of q_wt_70_0.75: this record has 8.37, the second reading none; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has palivizumab, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:17.237393+00:00) predates the upstream re-run (2026-10-01 16:35:27.279319+00:00). Current validate status: `rejected`.
+
 ## Citation
-Robbie GJ; Zhao L; Mondick J; Losonsky G; Roskos LK et al. (2012). Antimicrobial agents and chemotherapy 56
-  ·  DOI: [10.1128/aac.06446-11](https://doi.org/10.1128/aac.06446-11)
+Robbie GJ et al., Population pharmacokinetics of palivizu…, Antimicrobial agents and ch… (2012)
+  ·  DOI: [10.1128/AAC.06446-11](https://doi.org/10.1128/AAC.06446-11)
 
 ## Model component
-<dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="needs_review" stale="false" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="palivizumab" model-id="Palivizumab_Robbie2012_reference" status="rejected" stale="true" population="adults and children" measured-compound="palivizumab" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted, plus 2 covariate effects.
+**Model structure:** 2-compartment; no model was built for this record.  
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CLD | `Q30` · Q | 2.30 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row7:col1, tab_2:row7:col2 | — | not captured |
-| q_wt_70_0.75 | `Q900` · q_wt_70_0.75 | 8.37 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row15:col1, tab_2:row15:col2 | — | not captured |
-| F1 | `Q40` · Fab | 3.13 | not captured | not captured | not captured | not captured | exact (1.0) | tab_2:row18:col1, tab_2:row18:col2 | — | not captured |
-| T CL , mo | `Q22` · CL | 9.95 | mo | not captured | [m] · [o] | not captured | llm_confirmed (0.6) | tab_2:row20:col1, tab_2:row20:col2 | — | not captured |
-| theta_q354_wt_power | `Q900` · theta_q354_wt_power | 3.96 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row1:col1, tab_2:row1:col2 | — | not captured |
-| k a | `Q49` · kabs | 0.373 | day Ϫ1 | 4.31712962962963e-06 | 1/h | not captured | review_gapfill (0.7) | Robbie_2012:review | — | not captured |
+| CL | `Q22` · CL | 197 | ml/day | 2.2800925925925924e-09 | L/h | not captured | exact (1.0) | Robbie_2012:results_prose | — | not captured |
+| V c | `Q63` · V1 | 4 | ml | 4e-06 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
+| V p | `Q64` · V2 | 2 | ml | 2e-06 | L | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
+| Q | `Q30` · Q | 874 | ml/day | 1.011574074074074e-08 | L/h | not captured | exact (1.0) | Robbie_2012:results_prose | — | not captured |
+| k a | `Q49` · kabs | 1.03 | day Ϫ1 | 1.1921296296296295e-05 | 1/h | not captured | space_fold (0.95) | Robbie_2012:results_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,31 +58,48 @@ Robbie GJ; Zhao L; Mondick J; Losonsky G; Roskos LK et al. (2012). Antimicrobial
 ## Departures & gaps
 
 **Interpretation flags:**
-- column 'iiv' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped unlinked row (NIL): 'RACE ϭ black' — extend the ontology if this is a real PK parameter (source ['tab_2:row3:col1', 'tab_2:row3:col2'])
+- table section iiv: 'CL ϫ (WT/70) 0.75 ,' routed out of structural estimates ('IIV')
+- table section iiv: 'RACE ϭ black' routed out of structural estimates ('IIV')
+- table section iiv: 'RACE ϭ Asian' routed out of structural estimates ('IIV')
+- table section iiv: 'RACE ϭ other' routed out of structural estimates ('IIV')
+- table section iiv: 'CLD' routed out of structural estimates ('IIV')
+- table section iiv: 'titer ϭ 20' routed out of structural estimates ('IIV')
+- table section iiv: 'titer Ն 80' routed out of structural estimates ('IIV')
+- table section iiv: 'Q ϫ (WT/70) 0.75 ,' routed out of structural estimates ('IIV')
+- table section iiv: 'F1' routed out of structural estimates ('IIV')
+- table section iiv: '␤' routed out of structural estimates ('IIV')
+- table section iiv: 'T CL , mo' routed out of structural estimates ('IIV')
+- table section iiv: '2 prop' routed out of structural estimates ('IIV')
+- dropped value-less row: 'CL ϫ (WT/70) 0.75 ,'
+- dropped value-less row: 'RACE ϭ black'
 - dropped value-less row: 'RACE ϭ Hispanic 1.05'
-- dropped unlinked row (NIL): 'RACE ϭ Asian' — extend the ontology if this is a real PK parameter (source ['tab_2:row5:col1', 'tab_2:row5:col2'])
-- dropped unlinked row (NIL): 'RACE ϭ other' — extend the ontology if this is a real PK parameter (source ['tab_2:row6:col1', 'tab_2:row6:col2'])
+- dropped value-less row: 'RACE ϭ Asian'
+- dropped value-less row: 'RACE ϭ other'
+- dropped value-less row: 'CLD'
 - dropped value-less row: 'titer ϭ 10'
-- dropped unlinked row (NIL): 'titer ϭ 20' — extend the ontology if this is a real PK parameter (source ['tab_2:row9:col1', 'tab_2:row9:col2'])
+- dropped value-less row: 'titer ϭ 20'
 - dropped value-less row: 'titer ϭ 40'
-- dropped unlinked row (NIL): 'titer Ն 80' — extend the ontology if this is a real PK parameter (source ['tab_2:row11:col1', 'tab_2:row11:col2'])
+- dropped value-less row: 'titer Ն 80'
 - dropped value-less row: 'V c ϫ (WT/70) 1.0 , ml 4,090'
 - dropped value-less row: 'RACE ϭ Hispanic 1.06'
 - dropped value-less row: 'V p ϫ (WT/70) 1.0 , ml 2,230'
-- covariate level 'Q ϫ (WT/70) 0.75 ,' → Q900:q_wt_70_0.75 = 8.37 (power on Q30)
+- dropped value-less row: 'Q ϫ (WT/70) 0.75 ,'
 - dropped value-less row: 'k a , day Ϫ1'
-- dropped unlinked row (NIL): '␤' — extend the ontology if this is a real PK parameter (source ['tab_2:row19:col1', 'tab_2:row19:col2'])
-- unit_dimension_unknown: 'mo' (CL)
-- routed '2 prop' → Q316 (prop_error) to residual_error — variability estimate, not a structural parameter
-- covariate effect for Q354 has no base parameter row (kept as unattached equation-variable)
+- dropped value-less row: 'F1'
+- dropped value-less row: '␤'
+- dropped value-less row: 'T CL , mo'
+- dropped value-less row: '2 prop'
+- salvaged Q22 ('CL'=197) from results prose — parameter table was unreadable
+- salvaged Q63 ('V c'=4) from results prose — parameter table was unreadable
+- salvaged Q64 ('V p'=2) from results prose — parameter table was unreadable
+- salvaged Q30 ('Q'=874) from results prose — parameter table was unreadable
+- salvaged Q49 ('k a'=1.03) from results prose — parameter table was unreadable
+- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL); Q63 (V c); Q64 (V p); Q30 (Q)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=palivizumab
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
-- skipped review gap-fill of V from Madhi_2025: its label names a different analyte ('clesrovimab') — 'volume of distribution of clesrovimab'
-- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Robbie_2012's review values (primary lacked it)
+- molar mass: none found for 'palivizumab' — its concentrations stay mass-only
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell tab_2:row1:col3 = '197, 198'
@@ -115,18 +133,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.538 (7/13 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[q_wt_70_0.75]` | 8.37 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t cl]` | 9.95 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q22_wt_power]` | not captured | 3.96 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q354_wt_power]` | 3.96 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q_wt_power]` | not captured | 8.37 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[␤]` | not captured | 5.40 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central volume of distribution]` | not captured | 4.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 197 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 197 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | 1.03 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a]` | not captured | 1.03 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q]` | 874 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q]` | not captured | 874 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v c]` | 4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v p]` | 2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | palivizumab | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | palivizumab | unknown | mismatch |
 
 </details>
 
@@ -140,15 +163,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Robbie_2012:review'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | mo | not captured | not captured | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
-| C5_unit_missing_Q30 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row7:col1', 'tab_2:row7:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 9.95 | not captured | not captured | ['tab_2:row20:col1', 'tab_2:row20:col2'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q22 | fail | 197.0 | 0.438 | 0.0022 | 0.05 | footnote reference category |
+| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 197.0 | not captured | not captured | ['Robbie_2012:results_prose'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 0.00821 L/h | not captured | not captured | ['Robbie_2012:results_prose'] |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.004 L | not captured | not captured | ['Robbie_2012:results_prose'] |
+| C9_phys_window_Q64 | fail | volume within physiological range | 0.002 L | not captured | not captured | ['Robbie_2012:results_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -162,19 +185,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -183,4 +196,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 09:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 16:35 UTC</sub>

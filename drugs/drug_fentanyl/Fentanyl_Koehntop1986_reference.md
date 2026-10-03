@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Koehntop_1986 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Hagos2019_reference&quot;,&quot;label&quot;:&quot;Hagos_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Hagos2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_SEF&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 SEF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_SEF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Koehntop1986_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,30 +21,31 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fentanyl: V 1.45 L/kg, Vss 5.1 L/kg, CL 17.9 ml X kg-1 X min-1, t1/2β 317 min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of clearance: this record has 17.94, the second reading none; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:00.207281+00:00) predates the upstream re-run (2026-10-01 18:07:35.517885+00:00). Current validate status: `extracted`.
+
 ## Citation
-Koehntop DE; Rodman JH; Brundage DM; Hegland MG; Buckley JJ et al. (1986). Anesthesia and analgesia 65
+Koehntop DE et al., Pharmacokinetics of fentanyl in neonates, Anesthesia and analgesia (1986)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Koehntop1986_reference" status="needs_review" stale="false" population="neonates undergoing major surgical procedures" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Koehntop1986_reference" status="extracted" stale="true" population="neonates undergoing major surgical procedures" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | volume of the central compartment | `Q61` · V | 1.45 | L/kg | 0.10149999999999999 | [l] / [kg] | not captured | exact (1.0) | Koehntop_1986:abstract | — | not captured |
 | volume of distribution at steady state | `Q65` · Vss | 5.1 | L/kg | 0.357 | [l] / [kg] | not captured | llm_corrected (0.6) | Koehntop_1986:abstract | — | not captured |
-| clearance | `Q22` · CL | 17.94 | ml X kg-1 X min-1 | not captured | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Koehntop_1986:abstract | — | not captured |
+| clearance | `Q22` · CL | 17.94 | L/h | 4.983333333333334e-06 | L/h | not captured | exact (1.0) | Koehntop_1986:abstract | — | not captured |
 | terminal elimination half-life (t 1/2 beta) | `Q60` · t1/2β | 317 | min | 19020.0 | [min] | not captured | llm (0.6) | Koehntop_1986:abstract | — | not captured |
+| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,14 +56,14 @@ Koehntop DE; Rodman JH; Brundage DM; Hegland MG; Buckley JJ et al. (1986). Anest
 
 **Interpretation flags:**
 - unit_dimension_unknown: 'ml X kg-1 X min-1' (CL)
+- implicit units: 'clearance' → L/h (from the popPK convention: 'No unit is stated in the provided text or table captions. For a total clearance parameter with a value of 17.94, the sta')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - 1C volume normalization: Q63→Q61 (single-compartment model has no central/peripheral split; 'volume of the central compartment' is the general volume)
-- status held at route_to_review — not promoted
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Koehntop_1986_metadata.yaml (4 record(s)); values are summary statistics, not a fitted model
@@ -74,16 +75,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.167 (2/12 fields) | 10 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[clearance]` | 17.94 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance]` | not captured | 17.94 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[terminal elimination half-life]` | 317 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[terminal elimination half-life]` | not captured | 317 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | 5.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution at steady state]` | not captured | 5.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[volume of the central compartment]` | 1.45 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of the central compartment]` | not captured | 1.45 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
 
 </details>
 
@@ -100,12 +107,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Koehntop_1986:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Koehntop_1986:abstract'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | ml X kg-1 X min-1 | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 17.94 | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 17.9 L/h | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 102 L | not captured | not captured | ['Koehntop_1986:abstract'] |
 | C9_phys_window_Q65 | pass | volume within physiological range | 357 L | not captured | not captured | ['Koehntop_1986:abstract'] |
 
@@ -142,4 +151,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 11:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:07 UTC</sub>

@@ -1,0 +1,60 @@
+{
+ "model_id": "Midazolam_Koopmans1988_PD_eeg_alpha",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 4.62e-05,
+  "Emax": 0.0,
+  "exposure_per_s": 1e-06,
+  "gamma": 3.7
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "4.62e-05": 0.0
+ },
+ "stop_time": 470.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "% of baseline"
+ },
+ "x_axis": {
+  "display_unit": "ng/ml",
+  "factor": 1e-06,
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "response"
+ }
+}

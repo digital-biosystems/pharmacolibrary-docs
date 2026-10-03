@@ -1,0 +1,66 @@
+{
+ "model_id": "Ciprofloxacin_Xiao2018_PD_log10_cfu_g_reduction_liver_enr_ci",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.68,
+  "EC50": 17.66,
+  "Emax": -4.7,
+  "exposure_per_s": 1.0,
+  "gamma": 2.67
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.68,
+  "17.66": -0.6700000000000002
+ },
+ "stop_time": 180.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "Log 10 cfu/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": true,
+   "display_unit": "h (AUC0–24/MIC ratio)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "Log 10 cfu/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "h (AUC0–24/MIC ratio)",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "Log10 cfu/g"
+ },
+ "x_axis": {
+  "display_unit": "h (AUC0–24/MIC ratio)",
+  "factor": 1.0,
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "Log 10 cfu/mL",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

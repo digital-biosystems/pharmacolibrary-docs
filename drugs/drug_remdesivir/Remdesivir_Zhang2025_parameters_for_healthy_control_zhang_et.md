@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Zhang_2025 \u00b7 parameters_for_healthy_control_zhang_et_al_2020&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,19 +21,21 @@
 
 Kic has no unit. Without a unit the value cannot be converted, so the model cannot use it. The clearance plausibility check could not be computed: the check had no reference to compare the reported total clearance of 1171.0 mL/min against, so the value is unverified rather than shown to be wrong. A second reader additionally read a further metabolic step from nucleoside monophosphate to GS-443902 and two parameters (2.99 and 12.53) that this record lacks, so the extracted model structure and parameters are incomplete relative to that reading. Extracted — remdesivir: kic 2.44 Zhang et al., 2020, CL 1.17e+03 mL/min, V 93 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism); nucleoside monophosphate → gs-443902 (metabolism); it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.569677+00:00) predates the upstream re-run (2026-10-01 15:47:14.766632+00:00). Current validate status: `needs_review`.
+
 ## Citation
-Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16
+Zhang S et al., Pharmacokinetic simulations for remdesi…, Frontiers in pharmacology (2025)
   ·  DOI: [10.3389/fphar.2025.1488961](https://doi.org/10.3389/fphar.2025.1488961)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="needs_review" stale="false" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et" status="needs_review" stale="true" population="healthy subjects and patients with renal impairment" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 3 extracted, plus 2 covariate effects.
+**Parameters:** 7 extracted, plus 2 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -42,11 +44,15 @@ Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| KP,NUC | `Q350` · kic | 2.44 | Zhang et al., 2020 | not captured | [zhangetal] | not captured | exact (1.0) | T1:row5:col2 | — | not captured |
-| theta_kic_im | `Q900` · theta_kic_im | 0.31 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row4:col2 | — | not captured |
-| theta_kic_im | `Q900` · theta_kic_im | 0.22 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row8:col2 | — | not captured |
-| Mean total clearance | `Q22` · CL | 1171.0 | mL/min | 1.9516666666666666e-05 | L/h | not captured | review_gapfill (0.7) | Humeniuk_2021:review | — | not captured |
-| volume of distribution | `Q61` · V | 93.0 | L | 0.093 | L | not captured | review_gapfill (0.7) | Humeniuk_2021:review | — | not captured |
+| QRDV | `Q30` · Q | 0.19 | L/h | 5.277777777777778e-08 | L/h | not captured | exact (1.0) | T1:row1:col2 | — | not captured |
+| QIM | `Q30` · Q | 12.53 | L/h | 3.4805555555555554e-06 | L/h | not captured | exact (1.0) | T1:row2:col2 | — | not captured |
+| QNUC | `Q30` · Q | 0.039 | L/h | 1.0833333333333333e-08 | L/h | not captured | exact (1.0) | T1:row3:col2 | — | not captured |
+| KP,NUC | `Q370` · CLfm | 2.44 | L/h | 6.777777777777778e-07 | L/h | not captured | exact (1.0) | T1:row5:col2 | — | not captured |
+| KP,NTP | `Q350` · kic | 3.28E10 | 1/h | 9111111.111111112 | 1/h | not captured | exact (1.0) | T1:row6:col2 | — | not captured |
+| CLC,RDV | `Q22` · CL | 2.99 | L/h | 8.305555555555556e-07 | L/h | not captured | exact (1.0) | T1:row9:col2 | — | not captured |
+| theta_q370_im | `Q900` · theta_q370_im | 0.31 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row4:col2 | — | not captured |
+| theta_q370_im | `Q900` · theta_q370_im | 0.22 | not captured | not captured | not captured | not captured | not captured (not captured) | T1:row8:col2 | — | not captured |
+| mean volume of distribution | `Q61` · V | 93.0 | L | 0.093 | L | not captured | review_gapfill (0.7) | Humeniuk_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,22 +62,31 @@ Zhang S; Jeong S; Jiang B; Ho H et al. (2025). Frontiers in pharmacology 16
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'QRDV' — extend the ontology if this is a real PK parameter (source ['T1:row1:col2'])
-- dropped unlinked row (NIL): 'QIM' — extend the ontology if this is a real PK parameter (source ['T1:row2:col2'])
-- dropped unlinked row (NIL): 'QNUC' — extend the ontology if this is a real PK parameter (source ['T1:row3:col2'])
+- linked 'QRDV' as 'Q' → Q30 (Q) for  — compound marker removed
+- unit_dimension_unknown: 'Zhang et al., 2020' (Q)
+- unit_dimension_unknown: 'Zhang et al., 2020' (CLfm)
 - unit_dimension_unknown: 'Zhang et al., 2020' (kic)
-- dropped duplicate Q350 ('KP,NTP', value '3.28E10') — already have one for this compound
-- dropped duplicate Q350 ('KC,NUC', value '0.38') — already have one for this compound
-- dropped unlinked row (NIL): 'CLC,RDV' — extend the ontology if this is a real PK parameter (source ['T1:row9:col2'])
+- dropped duplicate Q370 ('KC,NUC', value '0.38') — already have one for this compound
+- linked 'CLC,RDV' as 'CL' → Q22 (CL) for  — compound marker removed
+- unit_dimension_unknown: 'Zhang et al., 2020' (CL)
+- covariate effect for Q370 has no base parameter row (kept as unattached equation-variable)
+- implicit units: 'QRDV' → L/h (from the popPK convention: 'The paper does not state a unit for QRDV. QRDV is an intercompartmental clearance (Q). In population PK, intercompartmen')
+- implicit units: 'QIM' → L/h (from the popPK convention: 'The paper does not state a unit for QIM. QIM is an intercompartmental clearance (Q). In population PK, intercompartmenta')
+- implicit units: 'QNUC' → L/h (from the popPK convention: 'The paper does not state a unit for QNUC. QNUC is an intercompartmental clearance (Q). In population PK, intercompartmen')
+- implicit units: 'KP,NUC' → L/h (from the popPK convention: 'The paper does not state a unit for KP,NUC. KP,NUC is a formation clearance (CLfm). In population PK, clearances are con')
+- implicit units: 'KP,NTP' → 1/h (from the popPK convention: "The paper does not state a unit for KP,NTP. The parameter description identifies it as a 'First-order rate constant'. Fi")
+- implicit units: 'CLC,RDV' → L/h (from the popPK convention: 'The paper does not state a unit for CLC,RDV. CLC,RDV is a total clearance (CL). In population PK, clearances are convent')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- status held at route_to_review — not promoted
+- template fit: none — a metabolite is formed from another metabolite (a chain)
 - population split: 'parameters for healthy control (zhang et al., 2020)' subgroup of Zhang_2025 (paper reports 3 populations: parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021), parameters for healthy control (zhang et al., 2020), parameters for severe renal-impaired patients (zhang et al., 2020))
-- gap-filled Q22 (CL) from Humeniuk_2021's review values (primary lacked it)
+- row roles (LLM): model_class=compartmental; 10/10 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites ×9, parent→nucleoside monophosphate ×9
+- molar mass: no plausible PubChem entry for 'intermediate metabolites' ('Remdesivir Alanine Metabolite (Ala-Met; GS-704277)') — left in mass units
+- molar mass: none of 1 PubChem candidate(s) is 'nucleoside monophosphate' (LLM) — left in mass units
+- molar mass: none found for 'intermediate metabolites' — its concentrations stay mass-only
+- molar mass: none found for 'nucleoside monophosphate' — its concentrations stay mass-only
 - gap-filled Q61 (V) from Humeniuk_2021's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
-- skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 
 **Extraction notes:**
 - unparsed cell T1:row0:col2 = 'Parameters for healthy control (Zhang et al., 2020)'
@@ -85,15 +100,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (6/9 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.75 (9/12 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism'], ['nucleoside monophosphate', 'gs-443902', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[clc,rdv]` | not captured | 2.99 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[qim]` | not captured | 12.53 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clc,rdv].parameter_id` | Q22 | Q26 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | remdesivir | unknown | mismatch |
 
 </details>
 
@@ -107,16 +122,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row9:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row1:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row2:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row3:col2'] |
+| C5_dimension_Q350 | pass | 1 / [time] | not captured | not captured | not captured | ['T1:row6:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T1:row5:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Humeniuk_2021:review'] |
-| C5_unit_missing_Q350 | fail | 1 / [time] | Zhang et al., 2020 | not captured | not captured | ['T1:row5:col2'] |
-| C6_cl_magnitude | fail | &lt;= 90.0 L/h | 1171.0 | not captured | not captured | ['Humeniuk_2021:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.99 | not captured | not captured | ['T1:row9:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 70.3 L/h | not captured | not captured | ['Humeniuk_2021:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 2.99 L/h | not captured | not captured | ['T1:row9:col2'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 93 L | not captured | not captured | ['Humeniuk_2021:review'] |
 
 <details class="legend">
@@ -152,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 08:58 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:47 UTC</sub>

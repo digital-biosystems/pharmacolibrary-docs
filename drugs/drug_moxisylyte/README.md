@@ -22,11 +22,21 @@ Moxisylyte is also approved in France as the first drug for the treatment of imp
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 17:14 | 46:49 | 0/0/0 | 0/0/0 | 0/0/0 | 154,445/5,948 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 6/2 | 0 |
+| 2026-09-30 09:43 | 2:16 | 0/0/0 | 1/1/0 | 0/0/0 | 25,640/564 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/6 | 2/1 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from keyword rules on the title and abstract — no LLM answer yet).">human + animal</span> | [Cantwell_2026_normalized_ratio](drugs/drug_moxisylyte/pd_Cantwell_2026_normalized_ratio.md) | glycine transport current (fraction of control) ← RPI-GLYT2-82 · direct Emax (saturable) effect | — | Cantwell Chater RP et al., A reversible allosteric inhibitor of Gl…, Nature communications (2026) | [10.1038/s41467-026-69616-5](https://doi.org/10.1038/s41467-026-69616-5) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCl_induced_bladder_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_KCl_induced_bladder_contraction.md) | KCl-induced bladder contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_KCl_induced_urethral_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_KCl_induced_urethral_contraction.md) | KCl-induced urethral contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_acetylcholine_induced_bladder_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_acetylcholine_induced_bladder_contraction.md) | acetylcholine-induced bladder contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rabbit</span> | [Watanabe_1991_phenylephrine_induced_urethral_contraction](drugs/drug_moxisylyte/pd_Watanabe_1991_phenylephrine_induced_urethral_contraction.md) | phenylephrine-induced urethral contraction ← moxisylyte · direct Emax (saturable) effect | — | Watanabe K et al., [Effect of moxisylyte on the lower urin…, Nihon yakurigaku zasshi. Fo… (1991) | [10.1254/fpj.97.3_145](https://doi.org/10.1254/fpj.97.3_145) |
 
 ## ADME sites
 
@@ -34,26 +44,25 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| metabolism | bile duct | <sub>“…e. The pharmacokinetic studies with moxisylyte in urine and feces have shown the presence…”</sub> | prose |
+| absorption | small intestine | <sub>“…rapidly absorbed after oral administration…”</sub> | prose |
 | metabolism | blood | `BCHE` substrate | DrugBank actor |
-| metabolism | kidney | <sub>“…ally active. The pharmacokinetic studies with moxisylyte in urine and feces have shown the…”</sub> | prose |
 | metabolism | liver | `BCHE` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…onodemethyl-desacetyl-thymoxamine respectively.[A31648] The fecal elimination corresponded…”</sub> | prose |
-| excretion | kidney | <sub>“…The major elimination route of moxisylyte is via the kidneys.[L1174] The complete eliminat…”</sub> | prose |
+| excretion | bile duct | <sub>“…The fecal elimination corresponded only to the 14% of the administered dose…”</sub> | prose |
+| excretion | kidney | <sub>“…The major elimination route of moxisylyte is via the kidneys…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADRA1A (target), ADRA1D (modulator).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 67 matched, 59 returned
-- **screened:** 2  ·  **relevant:** 2
+- **PubMed hits:** 63 matched, 59 returned
+- **screened:** 3  ·  **relevant:** 2
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -71,7 +80,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Humphrey_1978.pdf` | Humphrey PP, The effects of alpha-adrenoceptor antag…, British journal of pharmaco… (1978) | pd | 4 | [10.1111/j.1476-5381.1978.tb17281.x](https://doi.org/10.1111/j.1476-5381.1978.tb17281.x) | [28807](https://www.ncbi.nlm.nih.gov/pubmed/28807) | metadata signals extractable PD data (concentration-effect) |
 | `Peters_1983.pdf` | Peters JR et al., Alpha 1-adrenoreceptors on intact rat a…, Endocrinology (1983) | pd | 4 | [10.1210/endo-113-1-133](https://doi.org/10.1210/endo-113-1-133) | [6305631](https://www.ncbi.nlm.nih.gov/pubmed/6305631) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-28T17:12:02.257118+00:00</sub>
+<sub>queue written 2026-09-30T09:43:08.438356+00:00</sub>
 
 ## Screened and excluded
 
@@ -104,9 +113,11 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not involve the drug moxisylyte or any pharmacokinetic parameters. |
 | PD | EFSA_2023 | not_relevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not contain any pharmacodynamic or exposure-response data for moxisylyte. |
 | popPK | Gentile_2026 | irrelevant | 0 | 0 | The paper describes a siRNA drug for prion disease and does not involve moxisylyte or report its pharmacokinetic parameters. |
+| popPK | Harris_1973 | irrelevant | 0 | 0 | no_text gate: only 113 chars of text extracted (&lt; 400) |
 | PD | Harris_1973 | not_relevant | 0 | 0 | The paper studies GABA uptake in rat cortex and does not mention moxisylyte or report any pharmacodynamic parameters for it. |
 | popPK | Hong_2026 | irrelevant | 0 | 0 | The paper is a computational chemistry study on molecular property prediction models and does not report pharmacokinetic parameters for moxisylyte. |
 | PD | Hong_2026 | not_relevant | 0 | 0 | The paper describes a deep learning model (HimNet) for predicting molecular properties and does not contain any pharmacodynamic data, exposure-response analysis, or numeric PD parameters for moxisylyte. |
+| popPK | Humphrey_1978 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
 | PD | Humphrey_1978 | not_relevant | 0 | 0 | The paper studies alpha-adrenoceptor antagonists on 5-HT responses in dog saphenous vein and does not mention moxisylyte or report any PD parameters for it. |
 | popPK | Iuga_2026 | irrelevant | 0 | 0 | The paper focuses on SARS-CoV-2 protease inhibitors and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Iuga_2026 | not_relevant | 0 | 0 | The paper reports biochemical IC50 and antiviral EC50 values for SARS-CoV-2 PLpro inhibitors, but does not contain any pharmacodynamic or exposure-response data for moxisylyte. |
@@ -130,6 +141,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Novotná_2023 | not_relevant | 0 | 0 | The paper focuses on the synthesis, stability, and pharmacokinetics of DON prodrugs, reporting no pharmacodynamic or exposure-response data. |
 | popPK | Orth_2025 | irrelevant | 0 | 0 | The paper is a mechanistic study on the ubiquitination of small molecule inhibitors (BI8622/BI8626) by HUWE1 and does not involve the drug moxisylyte or report any pharmacokinetic parameters. |
 | PD | Orth_2025 | not_relevant | 0 | 0 | The paper investigates the biochemical mechanism of ubiquitination of small molecules by HUWE1 and does not report any pharmacodynamic (exposure-response or dose-response) relationship for moxisylyte or any other drug in a physiological or clinical context. |
+| popPK | Peters_1983 | irrelevant | 0 | 0 | The paper is an in-vitro receptor binding study on rat pituitary cells and does not involve moxisylyte or pharmacokinetic parameters. |
 | PD | Peters_1983 | not_relevant | 0 | 0 | The paper studies adrenergic agonists (epinephrine, norepinephrine, etc.) on rat pituitary cells and does not mention or study moxisylyte. |
 | popPK | Rai_2026 | irrelevant | 0 | 0 | The paper studies NIRF theranostic probes for Alzheimer's disease (compound I-43) and does not mention moxisylyte or report its pharmacokinetic parameters. |
 | popPK | Roquebert_1981 | irrelevant | 0 | 0 | The paper studies the pharmacodynamics of thymoxamine in rat vas deferens and does not involve moxisylyte or pharmacokinetic parameters. |
@@ -150,6 +162,7 @@ _7 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Tavares_2023 | not_relevant | 0 | 0 | The paper reports in vitro IC50 values for HDAC inhibitors against malaria parasites, which is a pharmacological potency assay, not a pharmacodynamic (exposure-response) model for moxisylyte or any other drug in a biological system. |
 | popPK | Vogel_2024 | irrelevant | 0 | 0 | The paper is a wastewater-based epidemiology study focused on analytical methods for substance use assessment and does not report pharmacokinetic parameters for moxisylyte. |
 | PD | Vogel_2024 | not_relevant | 0 | 0 | The paper focuses on wastewater-based epidemiology and analytical method validation for substance detection, containing no pharmacokinetic or pharmacodynamic data for moxisylyte. |
+| popPK | Watanabe_1991 | irrelevant | 0 | 0 | The paper is an in-vitro pharmacodynamic study reporting IC50 values for smooth muscle contraction, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 
 ---
 <sub>Generated by `docs.py` (scholarv2)</sub>

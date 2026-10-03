@@ -46,6 +46,9 @@
 .pklg .cbox table { width:100%; margin-top:8px; font-size:11px; border-collapse:collapse; }
 .pklg .cbox td { padding:3px 0; vertical-align:top; border-top:1px solid rgba(128,128,128,.14); }
 .pklg .cbox td:first-child { color:var(--pklg-faint); white-space:nowrap; padding-right:8px; }
+.pklg .cbox table.csp { margin-top:0; }
+.pklg .cbox table.csp td.n { text-align:right; font-variant-numeric:tabular-nums; padding-left:8px; }
+.pklg .cbox table.csp i { font-style:normal; color:var(--pklg-faint); }
 .pklg .chip { display:inline-block; padding:1px 6px; margin:0 3px 2px 0; border-radius:9px;
   font-size:10px; line-height:1.5; white-space:nowrap; background:rgba(128,128,128,.12); }
 .pklg .chip.ok { color:var(--pklg-ok); } .pklg .chip.bad { color:var(--pklg-bad); }

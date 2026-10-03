@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-20 22:45 | 20:52 | 0/0/0 | 0/0/0 | 0/0/0 | 168,777/7,133 | ollama / qwen3.8:27b-mtp-q8_0 | 13 | 7/5 | 10/3 | 0 |
+| 2026-10-01 20:03 | 4:51 | 0/0/0 | 0/0/0 | 0/0/0 | 30,949/1,728 | ollama / qwen3.8:27b-mtp-q8_0 | 15 | 9/6 | 12/3 | 0 |
 
 ## popPK records
 
@@ -34,21 +34,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | metabolism | liver | `CYP1A2` substrate, `CYP2C19` substrate, `CYP2C8` substrate, `CYP2C9` substrate, `CYP2D6` substrate, `CYP3A4` substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` substrate | DrugBank actor |
 | excretion | kidney | `SLC22A6` inhibitor | DrugBank actor |
-| target | adrenal gland | `CYP17A1` substrate | DrugBank actor |
-| target | testis | `CYP17A1` substrate | DrugBank actor |
+| — | adrenal gland | `CYP17A1` substrate | DrugBank actor |
+| — | testis | `CYP17A1` substrate | DrugBank actor |
 
 <sub>Actors without a tissue in the table: CYP2C18 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 244 matched, 63 returned
-- **screened:** 1  ·  **relevant:** 1
+- **PubMed hits:** 244 matched, 89 returned
+- **screened:** 2  ·  **relevant:** 1
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -61,7 +61,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Brune_1983.pdf` | Brune K et al., Non-acidic pyrazoles: inhibition of pro…, Agents and actions (1983) | pd | 4 | [10.1007/BF01971489](https://doi.org/10.1007/BF01971489) | [6604402](https://www.ncbi.nlm.nih.gov/pubmed/6604402) | metadata signals extractable PD data (IC50) |
 | `Wang_1999.pdf` | Wang H et al., Demethylation capacity of human fetal a…, Zhongguo yao li xue bao = A… (1999) | pd | 4 | not captured | [10452125](https://www.ncbi.nlm.nih.gov/pubmed/10452125) | metadata signals extractable PD data (concentration-effect) |
 
-<sub>queue written 2026-09-20T22:44:06.600715+00:00</sub>
+<sub>queue written 2026-10-01T20:03:32.432102+00:00</sub>
 
 ## Screened and excluded
 
@@ -69,8 +69,10 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Anliker-Ort_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metamizole (dipyrone) and its metabolites, not aminophenazone. |
 | popPK | Araújo-Silva_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of tramadol and metamizole (dipyrone) in donkeys, not aminophenazone. |
+| popPK | Arora_1989 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for hepatic function and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Asmardi_1985 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of dipyrone and its metabolite MAA, not aminophenazone. |
 | popPK | Baan_2025 | irrelevant | 0 | 0 | The study investigates the pharmacokinetic interaction between metamizole and voriconazole, and does not report any parameters for aminophenazone. |
+| popPK | Bianco_1996 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for liver function and does not report PK parameters for aminophenazone. |
 | popPK | Bilir_2000 | irrelevant | 0 | 0 | The study uses antipyrine and caffeine as probe drugs to assess liver function, not aminophenazone, and does not report PK parameters for aminophenazone. |
 | PD | Bluth_1982 | not_relevant | 3 | 0 | The paper mentions dose-response relationships qualitatively to compare activities but does not provide numeric PD parameters, curves, or specific dose-effect data for aminophenazone in the text. |
 | popPK | Bochenek_1971 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
@@ -78,6 +80,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Brody_1979 | irrelevant | 0 | 0 | The paper is a review of liver function tests and does not report quantitative pharmacokinetic parameters for aminophenazone. |
 | popPK | Brogden_1986 | irrelevant | 0 | 0 | The paper is a review of pyrazolone derivatives (dipyrone, antipyrine, etc.) and does not report quantitative pharmacokinetic parameters for aminophenazone. |
 | popPK | Bukowskyj_1984 | irrelevant | 0 | 0 | The study focuses on theophylline pharmacokinetics, and aminophenazone is not the subject drug (aminopyrine is mentioned only as a comparator in the background). |
+| popPK | Caille_1977 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of lidocaine, not aminophenazone. |
 | popPK | Cang_2019 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of alkaloids from Compound Kushen Injection (matrine, oxymatrine, etc.) in rats, and aminophenazone is not the subject drug (aminopyrine is used as an internal standard). |
 | popPK | Cazottes_1979 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for gastric mucosal blood flow, and does not report PK parameters for aminophenazone. |
 | popPK | Cuny_1979 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of salicylates (acetylsalicylic acid), not aminophenazone. |
@@ -85,23 +88,34 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Davenport_1973 | irrelevant | 0 | 0 | no_text gate: only 87 chars of text extracted (&lt; 400) |
 | popPK | Døssing_1985 | irrelevant | 0 | 0 | The paper is a review discussing the effect of exercise on drug metabolism and does not report original quantitative pharmacokinetic parameters for aminophenazone. |
 | popPK | Eichelbaum_1976 | irrelevant | 0 | 0 | The paper is a review discussing drug metabolism in thyroid disease and does not report quantitative pharmacokinetic parameters for aminophenazone. |
+| popPK | Fazakas_2006 | irrelevant | 0 | 0 | The paper is a review of liver function tests for hepatic resection and does not report pharmacokinetic parameters for aminophenazone. |
+| popPK | Fichtl_1978 | irrelevant | 1 | 0 | The study reports in vitro binding fractions to muscle tissue, not quantitative pharmacokinetic disposition parameters like clearance or volume. |
+| popPK | Forestier_2010 | irrelevant | 0 | 0 | The study uses aminopyrine (aminophenazone) as a diagnostic probe in a breath test for liver cirrhosis and does not report pharmacokinetic disposition parameters (CL, V, etc.) for the drug. |
 | popPK | Fux_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of metamizole (dipyrone) and its metabolites (4-MAA, 4-AA), not aminophenazone. |
 | popPK | Gaginella_1985 | irrelevant | 0 | 0 | The study focuses on the pharmacological effects of Ro 22-6923 on gastric secretion in dogs, using aminopyrine (not aminophenazone) as a probe for blood flow, and does not report PK parameters for aminophenazone. |
 | popPK | Goldberg_1987 | irrelevant | 0 | 0 | The paper is a review of biochemical liver tests and does not report quantitative pharmacokinetic parameters for aminophenazone. |
 | popPK | Hanew_1984 | irrelevant | 0 | 0 | The study investigates aminopyrine (antipyrine), not aminophenazone, which is a different drug. |
 | popPK | Harris_1988 | irrelevant | 0 | 0 | The study focuses on doxorubicin pharmacokinetics in rabbits, and aminophenazone is not mentioned (aminopyrine is used as a diagnostic probe, which is a different compound). |
+| popPK | Hashimoto_2001 | irrelevant | 0 | 0 | The study focuses on liver functional capacity after portal branch ligation in rats using aminopyrine (not aminophenazone) and indocyanine green, with no PK parameters for the target drug. |
+| popPK | Hashimoto_2005 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe drug to assess liver function in rats, and does not report PK parameters for aminophenazone. |
 | popPK | Herold_2000 | irrelevant | 0 | 0 | The study focuses on liver function tests (including aminopyrine, not aminophenazone) and Doppler sonography, containing no pharmacokinetic parameters for aminophenazone. |
 | popPK | Herold_2001 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for liver function and does not report pharmacokinetic parameters for aminophenazone. |
+| popPK | Herold_2003 | irrelevant | 0 | 0 | The study uses aminopyrine (aminophenazone) as a probe drug for liver function testing (breath test) and does not report pharmacokinetic parameters (CL, V, etc.) for the drug itself. |
 | popPK | Herz_1978 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of aminopyrine (dimethylaminoantipyrine), not aminophenazone. |
 | popPK | Huang_2018 | irrelevant | 0 | 0 | The study investigates the metabolism of protopine and allocryptopine, not aminophenazone. |
 | popPK | Humphries_1987 | irrelevant | 0 | 0 | The paper is a review of famotidine's drug interactions and does not report quantitative pharmacokinetic parameters for aminophenazone. |
+| popPK | Humphries_1991 | irrelevant | 0 | 0 | The paper is a review of omeprazole interactions and mentions aminopyrine (a different drug) only as a probe, with no quantitative PK parameters for aminophenazone. |
 | popPK | Jeyaraman_2024 | irrelevant | 0 | 0 | The paper is a review of metamizole (dipyrone) and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Juan_1986 | irrelevant | 0 | 0 | The study focuses on theophylline pharmacokinetics, with aminopyrine (aminophenazone) used only as a diagnostic probe in a breath test, not as the subject drug for PK parameter estimation. |
+| popPK | Kawasaki_1992 | irrelevant | 0 | 0 | The study investigates aminopyrine and antipyrine, not aminophenazone. |
 | PD | Khurshid_2021 | not_relevant | 3 | 5 | The paper reports in vitro enzyme inhibition IC50 values for derivatives of aminophenazone, which is a biochemical potency metric rather than a pharmacodynamic (exposure-response) relationship for the drug itself in a biological system. |
+| popPK | Klinger_1969 | irrelevant | 0 | 0 | no_text gate: only 98 chars of text extracted (&lt; 400) |
 | popPK | Koch_1976 | irrelevant | 0 | 0 | The study focuses on gastric mucosal blood flow measurement using aminopyrine clearance as a comparative method, not on the pharmacokinetic parameters of aminophenazone. |
+| popPK | Koizumi_1974 | irrelevant | 0 | 0 | The provided evidence contains only software metadata and no scientific content regarding aminophenazone pharmacokinetics. |
 | popPK | Krishnaswamy_1984 | irrelevant | 0 | 0 | The study investigates antipyrine and aminopyrine, not aminophenazone. |
 | popPK | Lane_1988 | irrelevant | 0 | 0 | The paper discusses aminopyrine (a different drug) and compares it to caffeine and methacetin, with no quantitative PK parameters reported for aminophenazone. |
 | popPK | Lau_1997 | irrelevant | 0 | 0 | The study evaluates hepatic function using ICG and aminopyrine (not aminophenazone) and does not report pharmacokinetic parameters for aminophenazone. |
+| popPK | Leclercq_1999 | irrelevant | 0 | 0 | The study investigates chlorzoxazone and aminopyrine as probe drugs for CYP2E1 and CYP1A2/3A activity, not aminophenazone. |
 | popPK | Limlomwongse_1976 | irrelevant | 0 | 0 | The study focuses on gastric acid secretion mechanisms in rats using aminopyrine (not aminophenazone) as a marker, and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Limlomwongse_1979 | irrelevant | 0 | 0 | The study focuses on capsaicin's effect on gastric acid secretion and uses aminopyrine (not aminophenazone) as a probe for mucosal blood flow, with no PK parameters reported for the target drug. |
 | popPK | Lotterer_1992 | irrelevant | 0 | 0 | The paper investigates serum markers for collagen and basement membrane metabolism in cirrhosis and does not report pharmacokinetic parameters for aminophenazone. |
@@ -111,25 +125,37 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | popPK | Mehta_1990 | irrelevant | 0 | 0 | The paper discusses aminopyrine (a different drug) and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Merkel_1991 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for liver function and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Müller-Lissner_1981 | irrelevant | 0 | 0 | The study focuses on aminopyrine (a different drug) as a diagnostic probe for gastric function, not aminophenazone. |
+| popPK | Nadai_1998 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antipyrine (not aminophenazone) in rats. |
+| popPK | Noordhoek_1978 | irrelevant | 0 | 0 | no_text gate: only 178 chars of text extracted (&lt; 400) |
 | popPK | OMalley_1975 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antipyrine (and in-vitro aminopyrine), not aminophenazone. |
 | popPK | Ocker_2005 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for liver function testing and does not report pharmacokinetic parameters for aminophenazone. |
+| popPK | Ohno_1993 | irrelevant | 0 | 0 | The study investigates aminopyrine (a different drug) as a probe for hepatic function in rats, not aminophenazone. |
 | popPK | Parker_1996 | irrelevant | 0 | 0 | The study investigates mycophenolate mofetil, and aminophenazone is not the subject drug (aminopyrine is used only as a diagnostic probe). |
 | popPK | Pelkonen_1991 | irrelevant | 0 | 0 | The study focuses on medetomidine's effects on aminopyrine (not aminophenazone) metabolism and does not report PK parameters for aminophenazone. |
+| popPK | Pimstone_1994 | irrelevant | 0 | 0 | The study focuses on liver function imaging using Tc-galactosyl-neoglycoalbumin and uses aminopyrine (not aminophenazone) only as a comparator test, with no PK parameters for aminophenazone reported. |
 | popPK | Powell_1983 | irrelevant | 0 | 0 | The paper is a review of H2-antagonist drug interactions and does not report quantitative pharmacokinetic parameters for aminophenazone. |
 | popPK | Regårdh_1986 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of omeprazole, and aminophenazone is not the subject drug (aminopyrine/antipyrine are mentioned as comparators, but no PK parameters for aminophenazone are reported). |
+| popPK | Ruppin_1984 | irrelevant | 0 | 0 | no_text gate: only 53 chars of text extracted (&lt; 400) |
 | popPK | Sato_1986 | irrelevant | 0 | 0 | The paper focuses on gastric mucosal hemodynamics and ulceration, using aminopyrine (not aminophenazone) as a probe, and contains no pharmacokinetic parameters for aminophenazone. |
 | popPK | Sato_1994 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of imipramine and desipramine, not aminophenazone. |
+| popPK | Schwenk_1992 | irrelevant | 0 | 0 | The study is an in-vitro methodological paper on colonic crypt isolation and does not report pharmacokinetic parameters for aminophenazone. |
+| popPK | Semb_1972 | irrelevant | 0 | 0 | no_text gate: only 124 chars of text extracted (&lt; 400) |
 | popPK | Sensing_1983 | irrelevant | 0 | 0 | The study investigates aminopyrine (dimethylaminoantipyrine), not aminophenazone. |
 | popPK | Sewing_1975 | irrelevant | 0 | 0 | no_text gate: only 43 chars of text extracted (&lt; 400) |
 | popPK | Sonnenberg_1980 | irrelevant | 0 | 0 | The study investigates aminopyrine (dimethylaminoantipyrine), not aminophenazone, and focuses on breath test kinetics rather than standard PK parameters for the target drug. |
+| popPK | Stintzing_2009 | irrelevant | 0 | 0 | The study uses aminopyrine (not aminophenazone) as a probe for liver function and does not report pharmacokinetic parameters for aminophenazone. |
 | PD | Strubelt_1980 | not_relevant | 0 | 0 | The paper reports a dose-response relationship for lanthanides (praseodymium, etc.) and the protective effect of silybin, but aminophenazone is only mentioned as a substrate for a liver enzyme (demethylase) whose activity was measured; no PD or exposure-response relationship for aminophenazone itself is reported. |
 | PD | Tarachowski_1991 | not_relevant | 1 | 0 | The text mentions aminophenazone only as a marker for metabolic classification and discusses general forecasting models without providing specific numeric PD parameters or concentration-effect data. |
 | popPK | Uetrecht_1995 | irrelevant | 0 | 0 | The paper is a mechanistic in-vitro study on the oxidation of aminopyrine (a different drug) and does not report pharmacokinetic parameters for aminophenazone. |
 | popPK | Van_1987 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of antipyrine (a different drug) in mice, not aminophenazone. |
 | popPK | Vesell_1976 | irrelevant | 0 | 0 | The study focuses on antipyrine pharmacokinetics and the interaction with aminopyrine (a different drug), not aminophenazone. |
+| popPK | Wagner_1970 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | popPK | Walter-Sack_1996 | irrelevant | 1 | 0 | The paper is a review discussing the influence of diet on drug metabolism and mentions aminophenazone (phenazone) only as a model drug with qualitative changes in clearance, without providing specific quantitative PK parameter values. |
 | PD | Wang_1999 | not_relevant | 0 | 0 | The paper reports in vitro metabolic capacity (demethylation rates) for aminophenazone, not a pharmacodynamic exposure-response or dose-response relationship. |
 | popPK | Watermeyer_2024 | irrelevant | 0 | 0 | The study investigates the pharmacokinetic interaction between metamizole and quetiapine, and does not report any parameters for aminophenazone. |
+| popPK | Werner_1982 | irrelevant | 0 | 0 | no_text gate: only 115 chars of text extracted (&lt; 400) |
+| popPK | Windorfer_1973 | irrelevant | 0 | 0 | no_text gate: only 135 chars of text extracted (&lt; 400) |
+| popPK | Zysset_1986 | irrelevant | 0 | 0 | no_text gate: only 72 chars of text extracted (&lt; 400) |
 | popPK | Zysset_1991 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of caffeine, not aminophenazone. |
 | popPK | unknown_1991 | irrelevant | 0 | 0 | no_text gate: only 109 chars of text extracted (&lt; 400) |
 | PD | unknown_1991 | not_relevant | 0 | 0 | The provided text is only a header for a conference abstract collection and contains no specific data, results, or PD parameters for aminophenazone. |

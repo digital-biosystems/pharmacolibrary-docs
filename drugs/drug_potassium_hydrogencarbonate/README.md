@@ -18,11 +18,19 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 13:59 | 19:36 | 0/0/0 | 0/0/0 | 0/0/0 | 115,297/3,810 | ollama / qwen3.8:27b-mtp-q8_0 | 7 | 2/5 | 6/1 | 0 |
+| 2026-09-30 00:14 | 1:01 | 0/0/0 | 1/0/0 | 0/0/0 | 2,236/198 | ollama / qwen3.8:27b-mtp-q8_0 | 2 | 2/5 | 2/0 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_citraturia_change_from_baseline](drugs/drug_potassium_hydrogencarbonate/pd_Guittet_2020_citraturia_change_from_baseline.md) | citraturia change from baseline ← potassium citrate dose (CK, mg/kg) · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_pH](drugs/drug_potassium_hydrogencarbonate/pd_Guittet_2020_pH.md) | pH ← potassium citrate dose (CK, mg/kg) · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Guittet_2020_proportion_of_urine_samples_with_pH_7_0](drugs/drug_potassium_hydrogencarbonate/pd_Guittet_2020_proportion_of_urine_samples_with_pH_7_0.md) | proportion of urine samples with pH &gt;= 7.0 ← potassium citrate dose (CK, mg/kg) · direct Emax (saturable) effect | — | Guittet C et al., Innovative prolonged-release oral alkal…, Scientific reports (2020) | [10.1038/s41598-020-70549-2](https://doi.org/10.1038/s41598-020-70549-2) |
 
 ## ADME sites
 
@@ -30,15 +38,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…Potassium bicarbonate intake is done mainly in the small intestine in which approximately…”</sub> | prose |
-| excretion | bile duct | <sub>“…med is lost in the urine while the other 10% is excreted in feces and a very small amount…”</sub> | prose |
-| excretion | kidney | <sub>“…tely 90% of the exogenous potassium consumed is lost in the urine while the other 10% is e…”</sub> | prose |
+| absorption | small intestine | <sub>“…mainly in the small intestine in which approximately 90% of the potassium will be absorbed…”</sub> | prose |
+| excretion | kidney | — | prose |
+| excretion | skin | <sub>“…a very small amount can be found in the sweat…”</sub> | prose |
+| excretion | small intestine | <sub>“…the other 10% is excreted in feces…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: Hydrogen ions (neutralizer), SLC12A1 (substrate), SLC12A2 (substrate).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -58,7 +67,7 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Hill_1985.pdf` | Hill DR, The influence of bicarbonate ions on th…, Neuropharmacology (1985) | pd | 4 | [10.1016/0028-3908(85)90174-1](https://doi.org/10.1016/0028-3908(85)90174-1) | [2986032](https://www.ncbi.nlm.nih.gov/pubmed/2986032) | metadata signals extractable PD data (IC50) |
 | `Richter_1989.pdf` | Richter KE et al., L-beta-methylaminoalanine inhibits [3H]…, Brain research (1989) | pd | 4 | [10.1016/0006-8993(89)90925-6](https://doi.org/10.1016/0006-8993(89)90925-6) | [2568879](https://www.ncbi.nlm.nih.gov/pubmed/2568879) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-26T13:58:11.974065+00:00</sub>
+<sub>queue written 2026-09-30T00:14:09.050013+00:00</sub>
 
 ## Screened and excluded
 

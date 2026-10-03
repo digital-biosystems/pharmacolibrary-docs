@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Craft_1983 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fentanyl_Hagos2019_reference&quot;,&quot;label&quot;:&quot;Hagos_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Hagos2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_SEF&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 SEF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_SEF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Craft1983_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (sheep), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">sheep</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
+
+> **Species: sheep.** This record comes from an animal study (sheep), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 **Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
 
@@ -21,29 +23,32 @@
 
 The model was built, but fentanyl's clearance had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Only the abstract was available, so reported summary statistics stand in for a fitted model. Extracted — fentanyl: t1/2z 42 min, kel 0.21 min-1, V 4.7 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of half-life of the maternal elimination phase: this record has 42, the second reading none; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:38:00.119079+00:00) predates the upstream re-run (2026-10-01 18:07:29.719308+00:00). Current validate status: `needs_review`.
+
 ## Citation
-Craft JB; Coaldrake LA; Bolan JC; Mondino M; Mazel P; Gilman RM; et al. et al. (1983). Anesthesia and analgesia 62
+Craft JB et al., Placental passage and uterine effects o…, Anesthesia and analgesia (1983)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Craft1983_reference" status="model_quarantined" stale="false" population="pregnant ewes" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Craft1983_reference" status="needs_review" stale="true" population="pregnant ewes" measured-compound="fentanyl" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 3 extracted.
+**Parameters:** 4 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | half-life of the maternal elimination phase | `Q57` · t1/2z | 42 | min | 2520.0 | [min] | not captured | llm (0.6) | Craft_1983:abstract | — | not captured |
 | overall elimination constant (K) | `Q47` · kel | 0.21 | min-1 | 0.0034999999999999996 | [1] / [min] | not captured | llm (0.6) | Craft_1983:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Cavallaro_2026:review | — | not captured |
+| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,25 +64,30 @@ Craft JB; Coaldrake LA; Bolan JC; Mondino M; Mazel P; Gilman RM; et al. et al. (
 - gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Craft_1983_metadata.yaml (2 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[half-life of the maternal elimination phase]` | 42 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[half-life of the maternal elimination phase]` | not captured | 42 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[overall elimination constant]` | 0.21 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[overall elimination constant]` | not captured | 0.21 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
 
 </details>
 
@@ -93,8 +103,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Craft_1983:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Craft_1983:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cavallaro_2026:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -145,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 11:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:07 UTC</sub>

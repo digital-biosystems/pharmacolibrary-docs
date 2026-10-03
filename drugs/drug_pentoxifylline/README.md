@@ -20,17 +20,28 @@ Pentoxifylline has been marketed in Europe since 1972; PTX extended-release tabl
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 15:47 | 40:08 | 0/0/0 | 0/0/0 | 0/0/1 | 189,478/11,972 | ollama / qwen3.8:27b-mtp-q8_0 | 11 | 2/9 | 9/2 | 0 |
+| 2026-09-30 09:28 | 4:28 | 0/0/0 | 1/0/1 | 0/0/1 | 18,566/2,965 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/9 | 2/1 | 0 |
 
 ## popPK records
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Selli_2022_PDE3](drugs/drug_pentoxifylline/pd_Selli_2022_PDE3.md) | PDE3 activity ← pentoxifylline · direct sigmoid Emax (Hill) effect | — | Selli AL et al., Pharmacodynamic properties for inhibiti…, Scandinavian journal of tra… (2022) | [10.1186/s13049-022-01060-y](https://doi.org/10.1186/s13049-022-01060-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Selli_2022_PDE5](drugs/drug_pentoxifylline/pd_Selli_2022_PDE5.md) | PDE5 activity ← pentoxifylline · direct sigmoid Emax (Hill) effect | — | Selli AL et al., Pharmacodynamic properties for inhibiti…, Scandinavian journal of tra… (2022) | [10.1186/s13049-022-01060-y](https://doi.org/10.1186/s13049-022-01060-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Selli_2022_cAMP_efflux](drugs/drug_pentoxifylline/pd_Selli_2022_cAMP_efflux.md) | cAMP efflux ← pentoxifylline · direct sigmoid Emax (Hill) effect | — | Selli AL et al., Pharmacodynamic properties for inhibiti…, Scandinavian journal of tra… (2022) | [10.1186/s13049-022-01060-y](https://doi.org/10.1186/s13049-022-01060-y) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Selli_2022_cGMP_efflux](drugs/drug_pentoxifylline/pd_Selli_2022_cGMP_efflux.md) | cGMP efflux ← pentoxifylline · direct sigmoid Emax (Hill) effect | — | Selli AL et al., Pharmacodynamic properties for inhibiti…, Scandinavian journal of tra… (2022) | [10.1186/s13049-022-01060-y](https://doi.org/10.1186/s13049-022-01060-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Świerczek_2017_TNF](drugs/drug_pentoxifylline/pd_wierczek_2017_TNF.md) | tumor necrosis factor-alpha biomarker turnover ← pentoxifylline and (±)-lisofylline (additive interaction) | — | Świerczek A et al., PK/PD studies on non-selective PDE inhi…, Naunyn-Schmiedeberg's archi… (2017) | [10.1007/s00210-017-1406-z](https://doi.org/10.1007/s00210-017-1406-z) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Świerczek_2017_cAMP](drugs/drug_pentoxifylline/pd_wierczek_2017_cAMP.md) | cyclic AMP biomarker turnover ← pentoxifylline and (±)-lisofylline (additive interaction) | — | Świerczek A et al., PK/PD studies on non-selective PDE inhi…, Naunyn-Schmiedeberg's archi… (2017) | [10.1007/s00210-017-1406-z](https://doi.org/10.1007/s00210-017-1406-z) |
+
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP1A2** | `Q17` · AUC∞ | metabolism | [Guo_2026](drugs/drug_pentoxifylline/pgx_Guo_2026_CYP1A2_Q17.md) | Guo (2026) | — |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP1A2** | `Q17` · AUC∞ | metabolism | [Guo_2026](drugs/drug_pentoxifylline/pgx_Guo_2026_CYP1A2_Q17.md) | Guo L et al., Effects of CYP1A2 genetic polymorphisms…, BMC pharmacology & toxicolo… (2026) | [10.1186/s40360-026-01106-2](https://doi.org/10.1186/s40360-026-01106-2) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -43,25 +54,25 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | kidney | <sub>“…s of pentoxifylline or other measured metabolites.[A226555] Renal impairment increases the…”</sub> | prose |
-| absorption | liver | <sub>“…rbed but has low bioavailability of 20-30% due to extensive first-pass metabolism; three o…”</sub> | prose |
-| metabolism | blood | <sub>“…preciably different in cirrhotic patients, it is clear that erythrocytes are the main site…”</sub> | prose |
+| absorption | liver | <sub>“…extensive first-pass metabolism…”</sub> | prose |
+| absorption | small intestine | <sub>“…Oral pentoxifylline (PTX) is almost completely absorbed…”</sub> | prose |
+| metabolism | blood | <sub>“…erythrocytes are the main site of PTX-M1 interconversion…”</sub> | prose |
 | metabolism | liver | `CYP1A2` metabolism/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…ompound account for less than 1% of the recovered dose. The fecal route accounts for less…”</sub> | prose |
-| excretion | kidney | <sub>“…Pentoxifylline is eliminated almost entirely in the urine and predominantly as M5, which a…”</sub> | prose |
+| excretion | bile duct | <sub>“…The fecal route accounts for less than 4% of the administered dose…”</sub> | prose |
+| excretion | kidney | <sub>“…eliminated almost entirely in the urine…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ADORA1 (target), ADORA2A (target), NT5E (inhibitor), Phosphodiesterase enzymes (inhibitor), TNF (other/unknown).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 151 matched, 107 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 151 matched, 114 returned
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -82,7 +93,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Morita_2016.pdf` | Morita M et al., Inhibition of plasma lipid oxidation in…, Bioorganic & medicinal chem… (2016) | pd | 4 | [10.1016/j.bmcl.2016.10.033](https://doi.org/10.1016/j.bmcl.2016.10.033) | [27777006](https://www.ncbi.nlm.nih.gov/pubmed/27777006) | metadata signals extractable PD data (IC50) |
 | `Wen_2021.pdf` | Wen Z et al., Inhibition of human sperm motility and…, Ecotoxicology and environme… (2021) | pd | 4 | [10.1016/j.ecoenv.2021.112281](https://doi.org/10.1016/j.ecoenv.2021.112281) | [33984659](https://www.ncbi.nlm.nih.gov/pubmed/33984659) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-28T15:41:37.708855+00:00</sub>
+<sub>queue written 2026-09-30T09:27:12.999756+00:00</sub>
 
 ## Screened and excluded
 
@@ -119,16 +130,20 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PD | Dantas_2021 | not_relevant | 0 | 0 | The paper is a review on okra mucilage and does not mention pentoxifylline or report any pharmacodynamic data. |
 | popPK | De-Oliveira_2015 | irrelevant | 0 | 0 | The study investigates the modulation of CYP2A5 enzyme activity by LPS and pentoxifylline, with pentoxifylline serving as a pharmacological inhibitor rather than the subject of pharmacokinetic analysis. |
 | PD | De-Oliveira_2015 | not_relevant | 0 | 0 | The paper investigates the dose-response of LPS on CYP2A5 activity and the modulatory effect of pentoxifylline, but does not report a pharmacodynamic model or numeric PD parameters (e.g., Emax, EC50) for pentoxifylline itself. |
+| popPK | Doherty_1991 | irrelevant | 0 | 0 | The study is mechanistic (in-vitro/in-vivo TNF transcription) and does not report pharmacokinetic parameters for pentoxifylline. |
 | popPK | Dua_2006 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of antiproliferative effects in cell cultures and does not report pharmacokinetic parameters. |
 | popPK | El-Lakkany_2007 | irrelevant | 0 | 0 | The study is a pharmacodynamic/therapeutic investigation in mice and does not report any quantitative pharmacokinetic parameters for pentoxifylline. |
 | PD | El-Lakkany_2007 | not_relevant | 2 | 1 | The study reports qualitative outcomes (worm burden, fibrosis) for fixed dose groups but does not provide concentration-effect data, PK parameters, or numeric PD model parameters (e.g., Emax, EC50). |
 | popPK | Escolar_2012 | irrelevant | 0 | 0 | The paper is a clinical efficacy trial for Duchenne muscular dystrophy and does not report any pharmacokinetic parameters for pentoxifylline. |
 | popPK | Gapińska_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of SSR504734, not pentoxifylline. |
 | PD | Gapińska_2025 | not_relevant | 0 | 0 | The paper investigates SSR504734, not pentoxifylline, and does not report a PD model or numeric exposure-response parameters for the target drug. |
+| popPK | Graninger_1995 | irrelevant | 0 | 0 | The paper is a review discussing the therapeutic potential of pentoxifylline in SIRS and does not report any quantitative pharmacokinetic parameters. |
+| PD | Graninger_1995 | not_relevant | 1 | 0 | The text is a qualitative review discussing the potential of pentoxifylline in SIRS and mentions the need for dose-response studies, but it does not report any specific numeric PD parameters, concentration-effect data, or PK/PD models. |
 | popPK | Grossmann_1998 | irrelevant | 0 | 0 | The study is a pharmacodynamic assessment of venodilatory potency (ED50) and does not report any pharmacokinetic parameters such as clearance, volume, or half-life for pentoxifylline. |
 | popPK | Hall_1995 | irrelevant | 0 | 0 | The paper is a pharmacodynamic study of boron derivatives where pentoxifylline is used only as a comparator drug, with no pharmacokinetic parameters reported. |
 | PD | Hall_1995 | not_relevant | 0 | 0 | The paper focuses on boron derivatives and only mentions pentoxifylline as a qualitative comparator without providing any exposure-response data or numeric PD parameters for it. |
 | popPK | Hansen_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of vasorelaxant properties and does not report pharmacokinetic parameters. |
+| popPK | Honess_1995 | irrelevant | 0 | 0 | The study focuses on tumor perfusion and oxygenation (pO2) rather than pharmacokinetic disposition parameters like clearance or volume. |
 | popPK | Hung_2008 | irrelevant | 0 | 0 | The study investigates the molecular mechanisms of pentoxifylline in preventing peritoneal fibrosis and does not report any pharmacokinetic parameters. |
 | PD | Hung_2008 | not_relevant | 2 | 1 | The study reports qualitative and semi-quantitative effects of fixed doses/concentrations (e.g., 72-81% reduction, P-values) but does not provide a concentration-effect curve, dose-response model, or numeric PD parameters (Emax, EC50) for pentoxifylline. |
 | popPK | Jankiewicz_2007 | irrelevant | 0 | 0 | The paper is a review of caffeine interactions with antiepileptic drugs, and pentoxifylline is only mentioned as a comparator methylxanthine without any pharmacokinetic data. |
@@ -169,6 +184,7 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Peterson_1994 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic assay assessing the effect of pentoxifylline on fibroblast proliferation, not a pharmacokinetic study reporting disposition parameters. |
 | PGx | Peterson_1998 | not_relevant | 0 | 0 | The paper investigates drug-metabolizing enzymes in rat liver myofibroblasts and does not report any human gene variants or genotypes affecting pentoxifylline PK/PD. |
 | popPK | Pinzani_1996 | irrelevant | 0 | 0 | The study is a mechanistic in-vitro investigation of pentoxifylline's effect on cell signaling and does not report any pharmacokinetic parameters. |
+| popPK | Prabhakar_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cytokine inhibition and does not report any pharmacokinetic parameters for pentoxifylline. |
 | PGx | Prandota_2005 | not_relevant | 0 | 0 | The paper is a review discussing the general role of cytokines and genetic polymorphisms in drug-induced hepatotoxicity; it mentions pentoxifylline only as a potential therapeutic agent to reduce inflammation, not as the subject of a pharmacogenomic study on its own PK/PD parameters. |
 | popPK | Pérez-Ruixo_2013 | irrelevant | 0 | 0 | The paper is a meta-analysis of erythropoiesis-stimulating agents in dialysis patients and does not involve pentoxifylline or report any pharmacokinetic parameters. |
 | PD | Pérez-Ruixo_2013 | not_relevant | 0 | 0 | The paper is a meta-analysis of erythropoiesis-stimulating agents (ESAs) in dialysis patients and does not involve pentoxifylline or report any pharmacodynamic parameters. |
@@ -187,7 +203,11 @@ _10 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Selli_2024 | irrelevant | 0 | 0 | The paper is a correction to an in-vitro pharmacodynamic study and does not report quantitative pharmacokinetic disposition parameters for pentoxifylline. |
 | PD | Selli_2024 | not_relevant | 0 | 0 | The text is a correction notice for a typo in the Methods section of a previous paper and contains no data, results, or PD parameters. |
 | popPK | Semmler_1993 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of TNF-alpha suppression and PDE inhibition, reporting no pharmacokinetic parameters for pentoxifylline. |
+| popPK | Shtok_1982 | irrelevant | 0 | 0 | The paper is a clinical efficacy study focusing on hemodynamic and rheographic effects, reporting no quantitative pharmacokinetic parameters (CL, V, t1/2, etc.) for pentoxifylline. |
+| PD | Shtok_1982 | not_relevant | 2 | 1 | The paper describes clinical outcomes and qualitative vascular effects (vasodilation/vasoconstriction) but does not provide numeric concentration-effect data, dose-response curves, or specific PD parameters like Emax or EC50. |
 | popPK | Sinha_1995 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of cAMP accumulation and TNF-alpha suppression, not a pharmacokinetic study reporting disposition parameters for pentoxifylline. |
+| popPK | Stanek_1995 | irrelevant | 0 | 0 | The paper is a clinical recommendation regarding drug interactions with myocardial imaging, not a pharmacokinetic study, and contains no quantitative PK parameters for pentoxifylline. |
+| PD | Stanek_1995 | not_relevant | 1 | 0 | The text is a qualitative discussion/recommendation regarding potential drug interactions and lacks any numeric PD parameters, concentration-effect data, or dose-response analysis. |
 | popPK | Svensson_1995 | irrelevant | 0 | 0 | The paper is an immunological study investigating cytokine expression in macrophages, where pentoxifylline is used only as a pharmacological inhibitor/comparator, and no pharmacokinetic parameters are reported. |
 | PD | Svensson_1995 | not_relevant | 1 | 0 | The paper explicitly states that pentoxifylline did not inhibit bacteria-induced cytokine expression, and no numeric PD parameters or dose-response curves for pentoxifylline are provided. |
 | popPK | Szombathelyi_1991 | irrelevant | 0 | 0 | The study focuses on the vasodilator activity of vintoperol, using pentoxifylline only as a comparator drug without reporting any pharmacokinetic parameters for it. |

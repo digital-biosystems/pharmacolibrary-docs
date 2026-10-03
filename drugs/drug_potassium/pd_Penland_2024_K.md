@@ -1,32 +1,32 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Penland_2024 \u00b7 PD Serum Potassium&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Penland_2024 \u00b7 PD serum potassium&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Serum Potassium — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: disputed</span>
+# serum potassium — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.591). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Sodium zirconium cyclosilicate (the dose) drives Serum Potassium (in mmol/L): indirect response — drug inhibits the production of Serum Potassium.
+**As extracted:** Sodium zirconium cyclosilicate (virtual exposure) (the dose) drives serum potassium (in mmol/L): indirect response — drug inhibits the production of serum potassium.
 
 **Model:** No model was generated from this record.
 
-> Sodium zirconium cyclosilicate (SZC) doses (g) drive, via a virtual PK exposure compartment, an indirect-response model of serum K+ (mmol/L) in which a sigmoid Emax function inhibits the zero-order K+ input/production rate (Kin); K+ elimination is governed by Kout. Key estimates (full model): Emax 63.3% inhibition, EC50 32.8 g, Kout 0.548 1/h, SZC mean transit time (MTT) 137 h.
+> Sodium zirconium cyclosilicate (SZC) dose inhibits the zero-order production rate (Kin) of serum potassium (K+) via a sigmoid Emax function, with a virtual first-order elimination rate (MTT) of 137 h for the drug exposure. The full model estimates a maximum inhibition (Emax) of 63.3% and an EC50 of 32.8 g, while the elimination rate constant for serum K+ (Kout) is 0.548 1/h.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Penland_2024`
 - **model family:** `indirect_response_i`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
-Penland RC; Åstrand M; Boulton DW; Någård M et al. (2024). Clinical pharmacokinetics 63
+Penland RC et al., Population Pharmacodynamic Dose-Respons…, Clinical pharmacokinetics (2024)
   ·  DOI: [10.1007/s40262-024-01360-9](https://doi.org/10.1007/s40262-024-01360-9)
 
 ## Parameters
@@ -36,13 +36,14 @@ Penland RC; Åstrand M; Boulton DW; Någård M et al. (2024). Clinical pharmacok
 | PK (driver) | SZC MTT, h — Full model, estimate (RSE %) | `Q81` · not captured | 137 | h | not captured | llm_confirmed (not captured) | Tab2:row1:col2 |
 | PD (effect) | Serum K+ Kout, 1/h — Base model, estimate (RSE %) | `Q328` · not captured | 0.644 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col1 |
 | PD (effect) | Serum K+ Kout, 1/h — Full model, estimate (RSE %) | `Q328` · not captured | 0.548 | 1/h | not captured | llm_confirmed (not captured) | Tab2:row2:col2 |
-| PD (effect) | Emax, % inhibition — Base model, estimate (RSE %) | `Q320` · not captured | 43.4 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col1 |
-| PD (effect) | Emax, % inhibition — Full model, estimate (RSE %) | `Q320` · not captured | 63.3 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row4:col2 |
+| PD (effect) | Emax, % inhibition — Base model, estimate (RSE %) | `Q323` · not captured | 43.4 | RSE % | not captured | llm_corrected (not captured) | Tab2:row4:col1 |
+| PD (effect) | Emax, % inhibition — Full model, estimate (RSE %) | `Q323` · not captured | 63.3 | RSE % | not captured | llm_corrected (not captured) | Tab2:row4:col2 |
 | PD (effect) | EC50, g — Base model, estimate (RSE %) | `Q321` · not captured | 15.3 | g | not captured | exact (not captured) | Tab2:row5:col1 |
 | PD (effect) | EC50, g — Full model, estimate (RSE %) | `Q321` · not captured | 32.8 | g | not captured | exact (not captured) | Tab2:row5:col2 |
 | PD (effect) | BPV of EC50 variance — Base model, estimate (RSE %) | `Q321` · not captured | 0.33 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col1 |
 | PD (effect) | BPV of EC50 variance — Full model, estimate (RSE %) | `Q321` · not captured | 0.171 | RSE % | not captured | llm_confirmed (not captured) | Tab2:row7:col2 |
-| variability | BPV of placebo variance — Base model, estimate (RSE %) | `Q312` · not captured | 0.036 | RSE % | not captured | llm (not captured) | Tab2:row8:col1 |
+| PD (effect) | BPV of placebo variance — Base model, estimate (RSE %) | `Q341` · not captured | 0.036 | RSE % | not captured | llm (not captured) | Tab2:row8:col1 |
+| variability | BPV of placebo variance — Full model, estimate (RSE %) | `Q312` · not captured | 0.00296 | RSE % | not captured | llm (not captured) | Tab2:row8:col2 |
 | variability | Residual error variance — Base model, estimate (RSE %) | `Q315` · not captured | 0.34 | RSE % | not captured | exact (not captured) | Tab2:row9:col1 |
 | variability | Residual error variance — Full model, estimate (RSE %) | `Q315` · not captured | 0.118 | RSE % | not captured | exact (not captured) | Tab2:row9:col2 |
 
@@ -52,19 +53,40 @@ Penland RC; Åstrand M; Boulton DW; Någård M et al. (2024). Clinical pharmacok
 </details>
 
 
+## Biomarker turnover model
+
+This page models **serum potassium** as an endogenous turnover response, separately from the drug's pharmacokinetics.
+
+- **driver tier:** `none`
+- **turnover quantities linked:** loss_rate
+- **effect blocks:** 1
+  - sodium zirconium cyclosilicate (virtual exposure): indirect_response_i on production; linked values: concentration_50, effect_max
+- **turnover review:** <span class="pk-badge pk-badge--orange">needs review</span>
+  - `B4_steady_state` — skipped: production and loss/clearance parameters are incomplete
+  - `B4_effect_1` — skipped: the perturbing compound has no resolved concentration source
+  - `B4_driver_link` — skipped: no driver PK source is available
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.889 (16/18 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.591 (13/22 fields) | 9 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_form` | proportional | additive | mismatch |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 0.00296 | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | Sodium zirconium cyclosilicate | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `effect_form` | proportional | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 0.00296 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321].ec50_unit_system` | driver_dose | driver_concentration | mismatch |
+| `gpt-oss:120b` | `parameters[Q321].ec50_unit_system` | driver_dose | driver_concentration | mismatch |
+| `gpt-oss:120b` | `parameters[Q321].ec50_unit_system` | driver_dose | driver_concentration | mismatch |
+| `gpt-oss:120b` | `parameters[Q321].ec50_unit_system` | driver_dose | driver_concentration | mismatch |
 
 </details>
 

@@ -1,41 +1,43 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C02C&quot;,&quot;href&quot;:&quot;atc/C02C.md&quot;},{&quot;label&quot;:&quot;doxazosin&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/&quot;},{&quot;label&quot;:&quot;Ito_2007 \u00b7 PD Qmax&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Aljaeid2019_reference&quot;,&quot;label&quot;:&quot;Aljaeid_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Aljaeid2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Meredith1985_reference&quot;,&quot;label&quot;:&quot;Meredith_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Meredith1985_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Vincent1983_reference&quot;,&quot;label&quot;:&quot;Vincent_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Vincent1983_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxazosin_Chrisp1990_reference&quot;,&quot;label&quot;:&quot;Chrisp_1990_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Chrisp1990_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_Young1988_reference&quot;,&quot;label&quot;:&quot;Young_1988_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_Young1988_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxazosin_unknown2023_reference&quot;,&quot;label&quot;:&quot;unknown_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxazosin/Doxazosin_unknown2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Qmax — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+# Qmax — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.556), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives Qmax (in unknown): delayed effect through transit (transduction) compartments.
+**As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives Qmax (in ml s -1) (stimulation; the model form was not identified).
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Doxazosin plasma concentrations (from cited PK of doxazosin GITS, e.g. Cmax 15.3 ng/ml at day 7) drive the change in Qmax (maximum urinary flow rate) via an α1-receptor occupancy/transduction model, where receptor occupancy (computed from receptor affinity and unbound plasma concentration) predicts the clinical effect; the paper does not state an explicit Imax/IC50/kin/kout/ke0 for doxazosin, but reports an EBSL of 0.0953 ml s−1 (SE 0.467) and a tamsulosin KI of 0.04 nM.
+> The paper describes a receptor occupancy model where doxazosin plasma concentrations drive the improvement in maximum urinary flow rate (Qmax) by competitively inhibiting physiological agonists at the alpha-1 adrenoceptor, although the specific mechanism of the transduction step is not fully detailed in the provided excerpts. The record lists an EBSL estimate of 0.0953 ml s-1 and a Tamsulosin KI of 0.04 nm, but the paper does not provide specific potency values (such as IC50 or EC50) or rate constants (such as ke0) for doxazosin.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ito_2007`
-- **model family:** `transduction`
+- **model family:** `unknown`
 - **driver:** `cited_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
 
 ## Citation
-Ito K; Ohtani H; Sawada Y et al. (2007). British journal of clinical pharmacology 63
+Ito K et al., Assessment of alpha1-adrenoceptor antag…, British journal of clinical… (2007)
   ·  DOI: [10.1111/j.1365-2125.2006.02783.x](https://doi.org/10.1111/j.1365-2125.2006.02783.x)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | EBSL (ml s -1 ) — Estimate | `Q358` · not captured | 0.0953 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col1 |
-| PK (driver) | EBSL (ml s -1 ) — Standard error | `Q358` · not captured | 0.467 | ml s -1 | not captured | llm (not captured) | tab_1:row1:col2 |
-| PD (effect) | Tamsulosin KI | `Q322` · not captured | 0.04 | nm | not captured | review_gapfill (not captured) | Ito_2007:review |
+| PD (effect) | EBSL | `Q324` · not captured | 0.963 | ml s -1 | not captured | llm (not captured) | Ito_2007:pdv3 |
+| PD (effect) | EBmax | `Q320` · not captured | 8.86 | ml s -1 | not captured | llm (not captured) | Ito_2007:pdv3 |
+| PD (effect) | R0 | `Q333` · not captured | 4260 | nm | not captured | llm (not captured) | Ito_2007:pdv3 |
+| — | T0 | `Q100` · not captured | 0 . 0 1 | nm | not captured | nil (not captured) | Ito_2007:pdv3 |
+| — | KAR | `Q100` · not captured | 5.17 | h -1 | not captured | nil (not captured) | Ito_2007:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -43,14 +45,27 @@ Ito K; Ohtani H; Sawada Y et al. (2007). British journal of clinical pharmacolog
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+## Exposure-response model
+
+`Doxazosin_Ito2007_PD_qmax` — linear, `response = E0 + slope*exposure`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 0.0953 ml s -1 | 9.53e-08 m3/s |
+| slope | 0.0297 ml s -1 % | 2.97e-10 meter ** 3 / second |
+
+Closed-form check points (response, SI): `at_0` = 9.53e-08, `per_exposure_unit` = 2.97e-10
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
+| `openai:gpt-6-luna` | not confirmed | 0.556 (5/9 fields) | 4 |
 | `gpt-oss:120b` | not confirmed | 0.5 (4/8 fields) | 4 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -58,6 +73,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q22]` | not captured | 0.467 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.0953 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.467 | not captured | only_one_extracted |
+| `openai:gpt-6-luna` | `driver_compound` | doxazosin (via receptor occupancy ratio) | doxazosin | mismatch |
+| `openai:gpt-6-luna` | `effect_form` | unknown | additive | mismatch |
+| `openai:gpt-6-luna` | `parameters[Q100].value` | 0.01 | 5.17 | mismatch |
+| `openai:gpt-6-luna` | `parameters[Q331]` | 5.17 | not captured | only_one_extracted |
 
 </details>
 

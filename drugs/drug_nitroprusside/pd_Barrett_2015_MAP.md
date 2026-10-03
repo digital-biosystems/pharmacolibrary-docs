@@ -5,19 +5,19 @@
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Sodium nitroprusside drives mean arterial pressure (in mmHg): direct sigmoid Emax (Hill) effect.
+**As extracted:** Sodium nitroprusside (effect compartment concentration, K-PD) drive mean arterial pressure (in mmHg): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> In a pediatric K-PD analysis (no plasma concentrations), sodium nitroprusside dose drives an effect-compartment concentration (one-compartment, nominal V 1 L/70 kg, allometrically scaled CL and V) that inhibits MAP via an inhibitory sigmoidal Emax model: MAP = S0 − Emax·Ce^γ/(EC50^γ+Ce^γ), with baseline S0 = 76 mm Hg, Emax = 22.65 mm Hg, and a bimodal EC50 with a low subpopulation (EC50 138 μg/L, ~70% probability) and a high subpopulation (EC50 460 μg/L).
+> Sodium nitroprusside concentrations in a one-compartment effect compartment (with allometrically scaled clearance and volume) inhibit mean arterial pressure via a direct inhibitory sigmoidal Emax model. The model estimates a baseline MAP (S0) of 76 mmHg, a maximal effect (Emax) of 22.65 mmHg, and two distinct EC50 subpopulations (low: 138 μg/L; high: 460 μg/L) with a probability of 0.699 for the high EC50 group.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Barrett_2015`
 - **model family:** `sigmoid_emax`
@@ -26,7 +26,7 @@
 - **effect:** inhibition/proportional
 
 ## Citation
-Barrett JS; Hirankarn S; Holford N; Hammer GB; Drover DR; Cohane CA; Anderson B; Dombrowski E; Reece T; Zajicek A; Schulman SR et al. (2015). Frontiers in pharmacology 6
+Barrett JS et al., A hemodynamic model to guide blood pres…, Frontiers in pharmacology (2015)
   ·  DOI: [10.3389/fphar.2015.00151](https://doi.org/10.3389/fphar.2015.00151)
 
 ## Parameters
@@ -35,6 +35,8 @@ Barrett JS; Hirankarn S; Holford N; Hammer GB; Drover DR; Cohane CA; Anderson B;
 | PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col1 |
 | PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 76 | mm Hg | not captured | llm (not captured) | T2:row5:col2 |
 | PD (effect) | S0(mm Hg) — Population parameters | `Q324` · not captured | 1.0 | mm Hg | not captured | llm (not captured) | T2:row5:col3 |
+| PD (effect) | S0(mm Hg) — Magnitude of BSV | `Q324` · not captured | 13.2 | mm Hg | not captured | llm (not captured) | T2:row5:col4 |
+| PD (effect) | S0(mm Hg) — Magnitude of BSV | `Q324` · not captured | 5.4 | mm Hg | not captured | llm (not captured) | T2:row5:col5 |
 | PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 22.65 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col1 |
 | PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 21.9 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col2 |
 | PD (effect) | Emax (mm Hg)e — Population parameters | `Q320` · not captured | 7.6 | not captured | not captured | llm_confirmed (not captured) | T2:row7:col3 |
@@ -43,16 +45,16 @@ Barrett JS; Hirankarn S; Holford N; Hammer GB; Drover DR; Cohane CA; Anderson B;
 | — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.699 | not captured | not captured | llm_corrected (not captured) | T2:row8:col1 |
 | — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 0.701 | not captured | not captured | llm_corrected (not captured) | T2:row8:col2 |
 | — | Probability of high EC50 subpopulation — Population parameters | `Q100` · not captured | 8.8 | not captured | not captured | llm_corrected (not captured) | T2:row8:col3 |
-| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 460 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col1 |
-| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 458 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col2 |
-| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 10.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col3 |
-| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 10.8 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col4 |
-| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 74.3 | unknown | not captured | llm_confirmed (not captured) | T2:row9:col5 |
-| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 138 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col1 |
-| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 104.3 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col2 |
-| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 21.6 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col3 |
-| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 22.1 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col4 |
-| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 72 | unknown | not captured | llm_confirmed (not captured) | T2:row10:col5 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 460 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row9:col1 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 458 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row9:col2 |
+| PD (effect) | EC50 (μg/L)—High — Population parameters | `Q321` · not captured | 10.3 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row9:col3 |
+| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 10.8 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row9:col4 |
+| PD (effect) | EC50 (μg/L)—High — Magnitude of BSV | `Q321` · not captured | 74.3 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row9:col5 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 138 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row10:col1 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 104.3 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row10:col2 |
+| PD (effect) | EC50 (μg/L) —Low — Population parameters | `Q321` · not captured | 21.6 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row10:col3 |
+| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 22.1 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row10:col4 |
+| PD (effect) | EC50 (μg/L) —Low — Magnitude of BSV | `Q321` · not captured | 72 | μg/kg/min | not captured | llm_confirmed (not captured) | T2:row10:col5 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -1,0 +1,60 @@
+{
+ "model_id": "Hydrochlorothiazide_Hao2014_PD_mbp",
+ "note": "Values for the shared PD_IndirectTurnoverSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 185.588235294,
+  "EC50": 0.0004034,
+  "Emax": 1.23,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 185.58823529411765,
+  "0.00040339999999999994": 114.91531597158988
+ },
+ "stop_time": 1900.0,
+ "template": "PD_IndirectTurnoverSweep",
+ "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mmHg",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "ng/ml",
+   "factor": 1e-06,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mmHg"
+ },
+ "x_axis": {
+  "display_unit": "ng/ml",
+  "factor": 1e-06,
+  "per_s": 1e-06,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmHg",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

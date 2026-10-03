@@ -1,18 +1,17 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Rascher_2025 \u00b7 PD HbA1c&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Empagliflozin_Baron2016_reference&quot;,&quot;label&quot;:&quot;Baron_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Baron2016_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_bulk_ess&quot;,&quot;label&quot;:&quot;Rascher_2025_bulk_ess&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_bulk_ess.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_median&quot;,&quot;label&quot;:&quot;Rascher_2025_median&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_median.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_pop&quot;,&quot;label&quot;:&quot;Rascher_2025_pop&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_pop.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Empagliflozin_Rascher2025_tail_ess&quot;,&quot;label&quot;:&quot;Rascher_2025_tail_ess&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/Empagliflozin_Rascher2025_tail_ess.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;empagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_empagliflozin/&quot;},{&quot;label&quot;:&quot;Rascher_2025 \u00b7 PD glycosylated haemoglobin&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HbA1c — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.353). The first reading is what the record holds.">cross-check: disputed</span>
+# glycosylated haemoglobin — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Empagliflozin (concentrations from the PK model of Baron_2016) drives HbA1c (in %): indirect response — drug inhibits the production of HbA1c.
+**As extracted:** Empagliflozin (concentrations from this paper's PK model) drives glycosylated haemoglobin (in %): indirect response — drug inhibits the production of glycosylated haemoglobin.
 
 **Model:** No model was generated from this record.
 
@@ -22,33 +21,25 @@
 
 - **paper:** `Rascher_2025`
 - **model family:** `indirect_response_i`
-- **driver:** `cited_pk`
+- **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
-Rascher J; Cheng S; Johnston C; Härtter S; Jan-Georg W; Marquard J; et al. et al. (2025). British journal of clinical pharmacology 91
+Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2025)
   ·  DOI: [10.1002/bcp.70096](https://doi.org/10.1002/bcp.70096)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Kout (1/day) — Median | `Q328` · not captured | 0.0489 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col3 |
-| PD (effect) | Kout (1/day) — Bulk ESS | `Q328` · not captured | 5125 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col5 |
-| PD (effect) | Kout (1/day) — Tail ESS | `Q328` · not captured | 3498 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col6 |
-| PD (effect) | Kout (1/day) — Ȓ | `Q328` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row2:col7 |
-| PD (effect) | PROG (%/h/h) — Ȓ | `Q340` · not captured | 1.00 | %/h/h | not captured | llm (not captured) | bcp70096-tbl-0004:row4:col7 |
-| PD (effect) | IMAX (%) — Median | `Q323` · not captured | 10.1 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col3 |
-| PD (effect) | IMAX (%) — Bulk ESS | `Q323` · not captured | 6062 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col5 |
-| PD (effect) | IMAX (%) — Tail ESS | `Q323` · not captured | 4750 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col6 |
-| PD (effect) | IMAX (%) — Ȓ | `Q323` · not captured | 1.00 | not captured | not captured | exact (not captured) | bcp70096-tbl-0004:row5:col7 |
-| PK (driver) | AUC50 (nmol*hr/L) — Median | `Q19` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | bcp70096-tbl-0004:row6:col3 |
-| variability | ΩBASE (CV(%)) — Median | `Q312` · not captured | 16.1 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col3 |
-| variability | ΩBASE (CV(%)) — Bulk ESS | `Q312` · not captured | 2373 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col5 |
-| variability | ΩBASE (CV(%)) — Ȓ | `Q312` · not captured | 1.00 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col7 |
-| variability | ΩBASE (CV(%)) — Shrinkage (%) | `Q318` · not captured | 14.9 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row12:col8 |
-| variability | ΩPROG (CV(%)) — Shrinkage (%) | `Q318` · not captured | 19.0 | not captured | not captured | llm (not captured) | bcp70096-tbl-0004:row13:col8 |
-| PD (effect) | BASE (%) exp(Ɵ 2) Baseline HbA1c | `Q324` · not captured | 7.35 | % | not captured | review_gapfill (not captured) | Rascher_2025:review |
+| PD (effect) | Kout | `Q328` · not captured | 0.0489 | 1/day | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | BASE | `Q324` · not captured | 7.35 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | PROG | `Q340` · not captured | 5.64e‐07 | %/h/h | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | IMAX | `Q323` · not captured | 10.1 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | AUC50 | `Q321` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| model term | INSBASE | `Q900` · not captured | 1.15 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| model term | EGFRIMAX | `Q900` · not captured | 1.03 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| model term | HbA1cIMAX | `Q900` · not captured | 2.04 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,44 +52,53 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.353 (18/51 fields) | 33 |
+| `gpt-oss:120b` | not confirmed | 0.222 (12/54 fields) | 42 |
 
-<details><summary>33 field(s) a reader read differently</summary>
+<details><summary>42 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | empagliflozin | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q19]` | 703 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 16.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | 2373 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 3950 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | 1.00 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 7.35 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 3070 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q312]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 2682 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 16.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 2373 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 3488 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 7.35 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 3070 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 3950 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.00112 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 2525 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q314]` | not captured | 3366 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q315]` | not captured | 6.32 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 8205 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 1.03 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q320]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q315]` | not captured | 4283 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q315]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q320]` | not captured | 8834 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q323]` | not captured | 2.04 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q323]` | not captured | 8205 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q323]` | not captured | 5127 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q323]` | not captured | 8834 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.03 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q323]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | 7.35 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 7.35 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | 1765 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 2624 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q324]` | not captured | 2531 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.15 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | not captured | 1.00 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q336]` | not captured | 1.00 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q340]` | not captured | 2937 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | not captured | 2198 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q340]` | 1.00 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2624 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2198 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.00 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 2531 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q38]` | not captured | 5348 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | not captured | 1.15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | not captured | 1595 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q88]` | not captured | 703 | only_one_extracted |
 
 </details>

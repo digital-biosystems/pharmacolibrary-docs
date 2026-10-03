@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C07F&quot;,&quot;href&quot;:&quot;atc/C07F.md&quot;},{&quot;label&quot;:&quot;amlodipine&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/&quot;},{&quot;label&quot;:&quot;Morgan_2018 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Jeppesen1998_reference&quot;,&quot;label&quot;:&quot;Jeppesen_1998_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Morgan2018_reference&quot;,&quot;label&quot;:&quot;Morgan_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Morgan2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mukherjee2018_reference&quot;,&quot;label&quot;:&quot;Mukherjee_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mukherjee2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Vlachou2021_reference&quot;,&quot;label&quot;:&quot;Vlachou_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Vlachou2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amlodipine_Angeloni2016_reference&quot;,&quot;label&quot;:&quot;Angeloni_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Angeloni2016_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Chen2024_reference&quot;,&quot;label&quot;:&quot;Chen_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Chen2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Courlet2021_reference&quot;,&quot;label&quot;:&quot;Courlet_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Courlet2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Flynn2006_reference&quot;,&quot;label&quot;:&quot;Flynn_2006_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Flynn2006_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Heo2016_reference&quot;,&quot;label&quot;:&quot;Heo_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Heo2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Karalis2023_reference&quot;,&quot;label&quot;:&quot;Karalis_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Karalis2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Mao2024_reference&quot;,&quot;label&quot;:&quot;Mao_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Mao2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Snelder2014_reference&quot;,&quot;label&quot;:&quot;Snelder_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Snelder2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Zheng2024_reference&quot;,&quot;label&quot;:&quot;Zheng_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Zheng2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Jeppesen1998_reference&quot;,&quot;label&quot;:&quot;Jeppesen_1998_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Jeppesen1998_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amlodipine_Morgan2018_reference&quot;,&quot;label&quot;:&quot;Morgan_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amlodipine/Amlodipine_Morgan2018_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amlodipine — `Amlodipine_Morgan2018_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,18 +21,20 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amlodipine besylate, the second reading amlodipine; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amlodipine besylate, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:36:06.995086+00:00) predates the upstream re-run (2026-09-30 20:49:50.308983+00:00). Current validate status: `needs_review`.
 
 > **Dose compound ≠ measured compound:** dosed `amlodipine besylate`, measured `amlodipine`.
 
 ## Citation
-Morgan JL; Kogutt BK; Meek C; Stehel EK; McIntire DD; Sheffield JS; et al. et al. (2018). Pregnancy hypertension 11
+Morgan JL et al., Pharmacokinetics of amlodipine besylate…, Pregnancy hypertension (2018)
   ·  DOI: [10.1016/j.preghy.2018.01.002](https://doi.org/10.1016/j.preghy.2018.01.002)
 
 ## Model component
-<dbs-pgx drug="amlodipine" model-id="Amlodipine_Morgan2018_reference" status="curated_candidate" stale="false" population="pregnant women with chronic hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="amlodipine" model-id="Amlodipine_Morgan2018_reference" status="needs_review" stale="true" population="pregnant women with chronic hypertension" measured-compound="amlodipine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 7 extracted.
@@ -40,15 +42,17 @@ Morgan JL; Kogutt BK; Meek C; Stehel EK; McIntire DD; Sheffield JS; et al. et al
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | amlodipine elimination half-life | `Q57` · t1/2z | 13.7 | h | 49320.0 | [h] | not captured | llm (0.6) | Morgan_2018:abstract | — | not captured |
 | area under the curve | `Q88` · AUC | 53.4 | ng*h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Morgan_2018:abstract | — | not captured |
 | peak concentration | `Q32` · Cmax | 2.0 | ng/mL | not captured | [ng] / [ml] | not captured | exact (1.0) | Morgan_2018:abstract | — | not captured |
 | clearance | `Q22` · CL | 2.3 | mL/min | 3.8333333333333326e-08 | L/h | not captured | review_gapfill (0.7) | Angeloni_2016:review | — | not captured |
-| volume of distribution | `Q61` · V | 980.0 | L | 0.98 | L | not captured | review_gapfill (0.7) | Courlet_2021:review | — | not captured |
+| Vd threshold | `Q61` · V | 5.0 | L/kg | 0.35000000000000003 | L | not captured | review_gapfill (0.7) | Hernández-Gago_2026:review | — | not captured |
 | Ka | `Q49` · kabs | 1.46 | /h | 0.00040555555555555554 | 1/h | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
-| ALAG | `Q83` · tlag | 0.86 | h | 3096.0 | h | not captured | review_gapfill (0.7) | Courlet_2021:review | — | not captured |
+| ALAG (h) | `Q83` · tlag | 0.87 | h | 3132.0 | h | not captured | review_gapfill (0.7) | Courlet_2021:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -64,11 +68,12 @@ Morgan JL; Kogutt BK; Meek C; Stehel EK; McIntire DD; Sheffield JS; et al. et al
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amlodipine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q22 (CL) from Angeloni_2016's review values (primary lacked it)
-- gap-filled Q61 (V) from Courlet_2021's review values (primary lacked it)
+- gap-filled Q61 (V) from Hernández-Gago_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Chen_2024's review values (primary lacked it)
 - gap-filled Q83 (tlag) from Courlet_2021's review values (primary lacked it)
+- gap-filled Q61 (V) from Courlet_2021's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Morgan_2018_metadata.yaml (3 record(s)); values are summary statistics, not a fitted model
@@ -80,16 +85,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.429 (3/7 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[amlodipine elimination half-life]` | 13.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[area under the curve]` | 53.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[area under the curve]` | not captured | 53.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination half-life]` | not captured | 13.7 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peak concentration]` | 2.0 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | amlodipine besylate | amlodipine | mismatch |
+| `gpt-oss:120b` | `parameters[peak concentration]` | not captured | 2.0 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | amlodipine besylate | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | amlodipine | unknown | mismatch |
 
 </details>
 
@@ -104,19 +113,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Angeloni_2016:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Morgan_2018:abstract'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Chen_2024:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Morgan_2018:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Courlet_2021:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Hernández-Gago_2026:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Courlet_2021:review'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['Morgan_2018:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 2.3 | not captured | not captured | ['Angeloni_2016:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.138 L/h | not captured | not captured | ['Angeloni_2016:review'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 980 L | not captured | not captured | ['Courlet_2021:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 350 L | not captured | not captured | ['Hernández-Gago_2026:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -170,4 +178,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 22:45 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 20:49 UTC</sub>

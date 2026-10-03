@@ -18,17 +18,26 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-26 18:53 | 28:27 | 0/0/0 | 0/0/0 | 0/0/1 | 125,985/6,648 | ollama / qwen3.8:27b-mtp-q8_0 | 8 | 2/6 | 8/0 | 0 |
+| 2026-09-30 01:55 | 3:19 | 0/0/0 | 1/1/0 | 0/0/1 | 9,269/1,390 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 2/6 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
 
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nusetti_2010_Ks](drugs/drug_zinc_sulfate/pd_Nusetti_2010_Ks.md) | taurine transport affinity ← zinc (zinc sulfate) · direct Emax (saturable) effect | — | Nusetti S et al., Effects of zinc ex vivo on taurine upta…, Journal of biomedical scien… (2010) | [10.1186/1423-0127-17-S1-S13](https://doi.org/10.1186/1423-0127-17-S1-S13) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nusetti_2010_Vmax](drugs/drug_zinc_sulfate/pd_Nusetti_2010_Vmax.md) | taurine uptake (high affinity transport capacity) ← zinc (zinc sulfate) · direct Emax (saturable) effect | — | Nusetti S et al., Effects of zinc ex vivo on taurine upta…, Journal of biomedical scien… (2010) | [10.1186/1423-0127-17-S1-S13](https://doi.org/10.1186/1423-0127-17-S1-S13) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Chen_2026_EPO](drugs/drug_zinc_sulfate/pd_Chen_2026_EPO.md) | plasma erythropoietin ← zinc · stimulation effect | — | Chen YH et al., Oyster-derived Zinc Exhibits Superior A…, Biological trace element re… (2026) | [10.1007/s12011-026-05073-x](https://doi.org/10.1007/s12011-026-05073-x) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Chen_2026_RBC](drugs/drug_zinc_sulfate/pd_Chen_2026_RBC.md) | red blood cell count ← zinc · stimulation effect | — | Chen YH et al., Oyster-derived Zinc Exhibits Superior A…, Biological trace element re… (2026) | [10.1007/s12011-026-05073-x](https://doi.org/10.1007/s12011-026-05073-x) |
+
 ## Pharmacogenomics (PGx)
 
 | status | gene | affects | mechanism | detail | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **miR-146a** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Li_2023](drugs/drug_zinc_sulfate/pgx_Li_2023_miR_146a_Q100.md) | Li (2023) | — |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **miR-146a** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Li_2023](drugs/drug_zinc_sulfate/pgx_Li_2023_miR_146a_Q100.md) | Li Y et al., Effect of miR-146a polymorphism on lipo…, Cellular and molecular biol… (2023) | [10.14715/cmb/2023.69.12.7](https://doi.org/10.14715/cmb/2023.69.12.7) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -41,22 +50,23 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | small intestine | <sub>“…y 20 to 30% of dietary zinc is absorbed, primarily from the duodenum and ileum. The amount…”</sub> | prose |
-| excretion | bile duct | <sub>“…Primarily fecal (approximately 90%); to a lesser extent in the urine and in…”</sub> | prose |
-| excretion | kidney | <sub>“…marily fecal (approximately 90%); to a lesser extent in the urine and in perspiration.…”</sub> | prose |
+| absorption | small intestine | <sub>“…absorbed, primarily from the duodenum and ileum…”</sub> | prose |
+| excretion | bile duct | <sub>“…Primarily fecal (approximately 90%)…”</sub> | prose |
+| excretion | kidney | <sub>“…to a lesser extent in the urine…”</sub> | prose |
+| excretion | skin | <sub>“…in perspiration…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: MIR-146A (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
-- **PubMed hits:** 64 matched, 57 returned
-- **screened:** 0  ·  **relevant:** 0
+- **PubMed hits:** 64 matched, 59 returned
+- **screened:** 1  ·  **relevant:** 0
 - **records:** 0  ·  extracted 0  ·  needs_review 0  ·  rejected 0  ·  stale 0
 - **scholar-agent fallback query used:** True
 
@@ -73,7 +83,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Jorge_2005.pdf` | Jorge RA et al., Use of sodium dodecyl sulfate and zinc…, Ecotoxicology and environme… (2005) | pd | 4 | [10.1016/j.ecoenv.2004.09.005](https://doi.org/10.1016/j.ecoenv.2004.09.005) | [15883100](https://www.ncbi.nlm.nih.gov/pubmed/15883100) | metadata signals extractable PD data (IC50) |
 | `Shabbir_2023.pdf` | Shabbir Awan S et al., Ailanthus altissima leaf extract mediat…, Saudi journal of biological… (2023) | pd | 4 | [10.1016/j.sjbs.2022.103487](https://doi.org/10.1016/j.sjbs.2022.103487) | [36387031](https://www.ncbi.nlm.nih.gov/pubmed/36387031) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-26T18:50:18.286725+00:00</sub>
+<sub>queue written 2026-09-30T01:54:34.697519+00:00</sub>
 
 ## Screened and excluded
 
@@ -116,6 +126,7 @@ _6 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | PD | Lin_2021 | not_relevant | 2 | 1 | The paper reports a lack of significant dose-response for zinc sulfate and focuses on qualitative phytohormone dynamics rather than extractable numeric PD parameters (e.g., EC50, Emax) for the drug. |
 | popPK | Liu_2019 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cyclosporine A, and zinc sulfate is only mentioned as a reagent for sample preparation, not as the subject drug. |
 | PD | Liu_2019 | not_relevant | 0 | 0 | The paper investigates the pharmacokinetics of Cyclosporine A and the effect of Baicalin on it; it does not study Zinc Sulfate or report any pharmacodynamic (exposure-response) parameters. |
+| popPK | Ma_1989 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of vascular smooth muscle contraction, not a pharmacokinetic study, and reports no disposition parameters. |
 | PGx | Nagamine_2000 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of zinc sulfate in hepatitis C patients but does not report any pharmacogenomic effects on the pharmacokinetic or pharmacodynamic parameters of the drug. |
 | popPK | Noreikaitė_2017 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mycophenolate mofetil (MMF) and mycophenolic acid (MPA), not zinc sulfate. |
 | PD | Noreikaitė_2017 | not_relevant | 0 | 0 | The paper analyzes the effect of cyclosporine and everolimus on mycophenolate mofetil pharmacokinetics, not the pharmacodynamics of zinc sulfate. |

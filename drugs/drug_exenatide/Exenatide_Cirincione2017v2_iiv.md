@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;exenatide&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/&quot;},{&quot;label&quot;:&quot;Cirincione_2017_2 \u00b7 iiv&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_iiv&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_iiv&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Exenatide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_iv&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_single_dose_model_iv&quot;,&quot;label&quot;:&quot;Cirincione_2017_single_dose_model_iv&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Gao2011_reference&quot;,&quot;label&quot;:&quot;Gao_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Gao2011_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Choi2025_reference&quot;,&quot;label&quot;:&quot;Choi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Choi2025_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_parameter_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_single_dose_model_parameter_estimat&quot;,&quot;label&quot;:&quot;Cirincione_2017_single_dose_model_parameter_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_parameter_estimat.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_parameter_estimate&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_parameter_estimate&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_parameter_estimate.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Gao2012_reference&quot;,&quot;label&quot;:&quot;Gao_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Gao2012_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Exenatide_Admiraal2023_reference&quot;,&quot;label&quot;:&quot;Admiraal_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Admiraal2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Li2012_reference&quot;,&quot;label&quot;:&quot;Li_2012_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Li2012_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Ng2018_reference&quot;,&quot;label&quot;:&quot;Ng_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Ng2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_combined_single_and_multiple_dose_m&quot;,&quot;label&quot;:&quot;Cirincione_2017_combined_single_and_multiple_dose_models_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_combined_single_and_multiple_dose_m.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017_single_dose_model_iv&quot;,&quot;label&quot;:&quot;Cirincione_2017_single_dose_model_iv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017_single_dose_model_iv.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_iiv&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_iiv&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_parameter_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Cirincione2017v2_reference&quot;,&quot;label&quot;:&quot;Cirincione_2017_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Cirincione2017v2_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Exenatide_Gao2011_reference&quot;,&quot;label&quot;:&quot;Gao_2011_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_exenatide/Exenatide_Gao2011_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # exenatide — `Exenatide_Cirincione2017v2_iiv`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -19,26 +19,39 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q3: this record has 4.58, the second reading none; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:59.323114+00:00) predates the upstream re-run (2026-10-01 15:30:35.240732+00:00). Current validate status: `rejected`.
+
 ## Citation
-not matched (stem Cirincione_2017_2)
+Cirincione B et al., Population pharmacokinetics of exenatide, British journal of clinical… (2017)
+  ·  DOI: [10.1111/bcp.13135](https://doi.org/10.1111/bcp.13135)
 
 ## Model component
-<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_iiv" status="curated_candidate" stale="false" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_iiv" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 3 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| linear clearance | `Q22` · CL | 5.06 | l h−1 | 1.4055555555555553e-06 | L/h | not captured | boundary (0.8) | Cirincione_2017_2:other_prose | — | not captured |
-| volume of distribution | `Q61` · V | 10.0 | L | 0.01 | L | not captured | review_gapfill (0.7) | Admiraal_2023:review | — | not captured |
+| Cl_int (l h −1 ) | `Q3` · CLint | 4.58 | l h −1 | not captured | [l] / [h] | 19.1 | exact (1.0) | bcp13135-tbl-0002:row1:col1, bcp13135-tbl-0002:row1:col2, bcp13135-tbl-0002:row1:col4 | — | 33.9 (None% RSE) |
+| Cl_eGFR | `Q22` · CL | 0.838 | unit | not captured | [unit] | 12.3 | llm (0.6) | bcp13135-tbl-0002:row2:col1, bcp13135-tbl-0002:row2:col2 | — | None (None% RSE) |
+| Cl d (l h −1 ) | `Q30` · Q | 3.72 | l h −1 | 1.0333333333333333e-06 | [l] / [h] | 21.7 | space_fold (0.95) | bcp13135-tbl-0002:row4:col1, bcp13135-tbl-0002:row4:col2 | — | not captured |
+| K m (pg ml −1 ) | `Q1` · Km | 567 | pg ml −1 | not captured | [pg] / [ml] | 21.9 | space_fold (0.95) | bcp13135-tbl-0002:row5:col1, bcp13135-tbl-0002:row5:col2, bcp13135-tbl-0002:row5:col4 | — | 95.7 (None% RSE) |
+| V max (μg h −1 ) | `Q66` · Vmax | 1.55 | μg h −1 | not captured | [µg] / [h] | 22.1 | special_case (0.95) | bcp13135-tbl-0002:row6:col1, bcp13135-tbl-0002:row6:col2 | — | not captured |
+| V p (l) | `Q64` · V2 | 7.04 | l | 0.00704 | [l] | 9.49 | space_fold (0.95) | bcp13135-tbl-0002:row7:col1, bcp13135-tbl-0002:row7:col2, bcp13135-tbl-0002:row11:col1, bcp13135-tbl-0002:row11:col2 | — | not captured |
+| Vc_int (l) | `Q63` · V1 | 7.03 | l | 0.007030000000000001 | [l] | 13.2 | llm (0.6) | bcp13135-tbl-0002:row8:col1, bcp13135-tbl-0002:row8:col2, bcp13135-tbl-0002:row8:col4 | — | None (None% RSE) |
+| Vc_wtkg | `Q352` · Vnorm | 2.67 | unit | not captured | [unit] | 13.3 | llm (0.6) | bcp13135-tbl-0002:row9:col1, bcp13135-tbl-0002:row9:col2 | — | not captured |
+| F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | bcp13135-tbl-0002:row15:col1 | — | not captured |
+| fr | `Q43` · FR | 0.628 | not captured | not captured | not captured | 3.5 | exact (1.0) | bcp13135-tbl-0002:row16:col1, bcp13135-tbl-0002:row16:col2 | — | not captured |
 | ka | `Q49` · kabs | 0.006 | h-1 | 1.6666666666666667e-06 | 1/h | not captured | review_gapfill (0.7) | Choi_2025:review | — | not captured |
 
 <details class="legend">
@@ -52,20 +65,41 @@ not matched (stem Cirincione_2017_2)
 - `defaulted_parameters`: ['F', 'Tlag']
 
 **Interpretation flags:**
+- table section iiv: 'Cl_int (l h −1 )' routed out of structural estimates ('IIV(%)')
+- table section iiv: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR' routed out of structural estimates ('IIV(%)')
+- table section iiv: 'K m (pg ml −1 )' routed out of structural estimates ('IIV(%)')
+- table section iiv: 'Vc_int (l)' routed out of structural estimates ('IIV(%)')
+- table section iiv: 'Vc=Vc_int⋅weight84.8Vc_wtkg' routed out of structural estimates ('IIV(%)')
+- unit_dimension_mismatch: 'Cl_int (l h −1 )' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
+- unit_dimension_mismatch: 'Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
+- unit_dimension_mismatch: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
+- dropped duplicate Q22 ('Cl = Cl_int ⋅eGFR80 Cl_eGFR', value None) — already have one for this compound
+- unit_dimension_mismatch: 'V max (μg h −1 )' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Vc_wtkg' → Q352 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Vc=Vc_int⋅weight84.8Vc_wtkg' → Q63 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q63 ('Vc=Vc_int⋅weight84.8Vc_wtkg', value None) — already have one for this compound
+- dropped unlinked row (NIL): 'k a_max (μg h −1 )' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row12:col1', 'bcp13135-tbl-0002:row12:col2'])
+- unit_dimension_mismatch: 'K m_ka (μg)' → Q1 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
+- dropped duplicate Q1 ('K m_ka (μg)', value '16.9') — already have one for this compound
+- dropped unlinked row (NIL): 'τ (h)' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row14:col1'])
+- dropped unlinked row (NIL): 'RV (log units) SD' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row17:col1'])
+- dropped unlinked row (NIL): 'Study 1' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row18:col1', 'bcp13135-tbl-0002:row18:col2'])
+- dropped unlinked row (NIL): 'Study 5' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row19:col1', 'bcp13135-tbl-0002:row19:col2'])
+- dropped unlinked row (NIL): 'All other studies' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row20:col1', 'bcp13135-tbl-0002:row20:col2'])
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=exenatide
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- status held at route_to_review — not promoted
+- gap-filled Q49 (kabs) from Choi_2025's review values (primary lacked it)
 - dropped value-less row: 'Cl_int (l h −1 )' (captured trailing unit 'l h −1' for child rows)
 - dropped value-less row: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR'
 - dropped value-less row: 'K m (pg ml −1 )' (captured trailing unit 'pg ml −1' for child rows)
 - dropped value-less row: 'Vc_int (l)' (captured trailing unit 'l' for child rows)
 - dropped value-less row: 'Vc=Vc_int⋅weight84.8Vc_wtkg'
 - salvaged Q22 ('linear clearance'=5.06) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=exenatide
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - population split: 'iiv(%)' subgroup of Cirincione_2017_2 (paper reports 2 populations: iiv(%), parameter estimate)
 - gap-filled Q61 (V) from Admiraal_2023's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q49 (kabs) from Choi_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -77,17 +111,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.833 (20/24 fields) | 4 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q310]` | not captured | 1.35 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | not captured | 96 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q3]` | 4.58 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q40]` | 1 | 100 | mismatch |
-| `gpt-oss:120b` | `values[Q61]` | 7.04 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k a_max]` | not captured | 12.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc_wtkg]` | 2.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | exenatide | unknown | mismatch |
 
 </details>
 
@@ -101,14 +134,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 10 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row5:col1', 'bcp13135-tbl-0002:row5:col2', 'bcp13135-tbl-0002:row5:col4'] |
+| C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp13135-tbl-0002:row2:col1', 'bcp13135-tbl-0002:row2:col2'] |
+| C5_dimension_Q3 | fail | [length] ** 3 / [time] | l h −1 | not captured | not captured | ['bcp13135-tbl-0002:row1:col1', 'bcp13135-tbl-0002:row1:col2', 'bcp13135-tbl-0002:row1:col4'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13135-tbl-0002:row4:col1', 'bcp13135-tbl-0002:row4:col2'] |
+| C5_dimension_Q352 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp13135-tbl-0002:row9:col1', 'bcp13135-tbl-0002:row9:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Choi_2025:review'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Admiraal_2023:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 5.06 | not captured | not captured | ['Cirincione_2017_2:other_prose'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row7:col1', 'bcp13135-tbl-0002:row7:col2', 'bcp13135-tbl-0002:row11:col1', 'bcp13135-tbl-0002:row11:col2'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | μg h −1 | not captured | not captured | ['bcp13135-tbl-0002:row6:col1', 'bcp13135-tbl-0002:row6:col2'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.838 | not captured | not captured | ['bcp13135-tbl-0002:row2:col1', 'bcp13135-tbl-0002:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 5.06 L/h | not captured | not captured | ['Cirincione_2017_2:other_prose'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 10 L | not captured | not captured | ['Admiraal_2023:review'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 7.03 L | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 7.04 L | not captured | not captured | ['bcp13135-tbl-0002:row7:col1', 'bcp13135-tbl-0002:row7:col2', 'bcp13135-tbl-0002:row11:col1', 'bcp13135-tbl-0002:row11:col2'] |
 
 **Reviewer per-scenario checks:**
 
@@ -148,20 +189,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_modelica.zip" download>Exenatide_Cirincione2017v2_iiv_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_fmi.zip" download>Exenatide_Cirincione2017v2_iiv_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_matlab.zip" download>Exenatide_Cirincione2017v2_iiv_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_matlab_simbio.zip" download>Exenatide_Cirincione2017v2_iiv_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_sbml.zip" download>Exenatide_Cirincione2017v2_iiv_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv_cellml.zip" download>Exenatide_Cirincione2017v2_iiv_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
-</tbody></table>
-<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_exenatide/Exenatide_Cirincione2017v2_iiv/Exenatide_Cirincione2017v2_iiv.svg" alt="Exenatide_Cirincione2017v2_iiv diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -174,4 +204,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-08-26 19:00 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:30 UTC</sub>

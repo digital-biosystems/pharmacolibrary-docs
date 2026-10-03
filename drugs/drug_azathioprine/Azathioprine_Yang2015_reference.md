@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Yang_2015 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Yang2015_reference&quot;,&quot;label&quot;:&quot;Yang_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Yang2015_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Azathioprine_Ding1979_reference&quot;,&quot;label&quot;:&quot;Ding_1979_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Ding1979_reference.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Lin2021_reference&quot;,&quot;label&quot;:&quot;Lin_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Lin2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Azathioprine_Rosario2017_reference&quot;,&quot;label&quot;:&quot;Rosario_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_Rosario2017_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # azathioprine — `Azathioprine_Yang2015_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.071). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.889). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,18 +21,18 @@
 
 A model needs both clearance and volume; without the clearance it could only be built on a library default, so it was not. Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V/F), so that value has no SI equivalent. Extracted — azathioprine: V 0.18 l/kg, V/F 0.78 1/kg, tlag 0.349 h, kabs 0.869 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has mycophenolate mofetil, the second reading unknown; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of oral cl: this record has none, the second reading 0.19. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `unknown`, measured `azathioprine`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:15.307354+00:00) predates the upstream re-run (2026-09-30 15:43:17.096813+00:00). Current validate status: `needs_review`.
 
 ## Citation
-Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Expert review of clinical pharmacology 8
+Yang X et al., Pharmacokinetic modeling of therapies f…, Expert review of clinical p… (2015)
   ·  DOI: [10.1586/17512433.2015.1059751](https://doi.org/10.1586/17512433.2015.1059751)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="false" population="unknown" measured-compound="azathioprine" parameterization="apparent" topology="2C"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Yang2015_reference" status="needs_review" stale="true" population="systemic lupus erythematosus patients" measured-compound="unknown" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 4 extracted.
@@ -83,10 +83,12 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 - salvaged Q76 ('apparent volume of distribution following oral administration (Vd/F)'=0.78) from results prose — parameter table was unreadable
 - salvaged Q83 ('absorption lag time'=0.349) from results prose — parameter table was unreadable
 - salvaged Q49 ('absorption rate constant (Ka)'=0.869) from results prose — parameter table was unreadable
-- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=azathioprine
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=unknown
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 1C — review compartment count
 - status held at route_to_review — not promoted
+- molar mass: none found for 'unknown' — its concentrations stay mass-only
+- review gap-fill skipped: this record measures 'unknown', not azathioprine — the review values are the parent's
 
 **Extraction notes:**
 - unparsed cell T1:row1:col1 = '15 children (12 ± 3 years)'
@@ -129,30 +131,18 @@ Yang X; Sherwin CM; Yu T; Yellepeddi VK; Brunner HI; Vinks AA et al. (2015). Exp
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.071 (1/14 fields) | 13 |
+| `gpt-oss:120b` | partly confirmed | 0.889 (8/9 fields) | 1 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['mycophenolate mofetil', 'mycophenolic acid', 'metabolism'], ['mycophenolic acid', '7-o-mpa-glucuronide', 'metabolism']] | [['mycophenolate mofetil', 'mycophenolic acid', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[absorption lag time]` | 0.349 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption lag time]` | not captured | 0.349 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[absorption rate constant]` | 0.869 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[apparent volume of distribution following oral administration]` | 0.78 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 0.19 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[initial volume of distribution]` | 0.18 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[initial volume of distribution]` | not captured | 0.18 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.869 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[oral cl]` | 0.19 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vd/f]` | not captured | 0.78 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | mycophenolate mofetil | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | mycophenolic acid | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[oral cl]` | not captured | 0.19 | only_one_extracted |
 
 </details>
 
@@ -207,4 +197,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 14:54 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 15:43 UTC</sub>

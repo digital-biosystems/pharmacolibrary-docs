@@ -1,17 +1,17 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;isopropanol&quot;,&quot;href&quot;:&quot;drugs/drug_isopropanol/&quot;},{&quot;label&quot;:&quot;Arshad_2020 \u00b7 PD total WBC count&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D08A&quot;,&quot;href&quot;:&quot;atc/D08A.md&quot;},{&quot;label&quot;:&quot;isopropanol&quot;,&quot;href&quot;:&quot;drugs/drug_isopropanol/&quot;},{&quot;label&quot;:&quot;Arshad_2020 \u00b7 PD absolute leukocyte count&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# total WBC count — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.664). The first reading is what the record holds.">cross-check: disputed</span>
+# absolute leukocyte count — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.664). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** 5-fluorouracil (measured concentrations) drives total WBC count (in 10^9/L): indirect response — drug stimulates the production of total WBC count.
+**As extracted:** 5-fluorouracil (5FU) (measured concentrations) drives absolute leukocyte count (in 10^9/L): indirect response — drug stimulates the production of absolute leukocyte count.
 
 **Model:** No model was generated from this record.
 
@@ -23,104 +23,29 @@
 - **model family:** `indirect_response_iii`
 - **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** inhibition/unknown
+- **effect:** inhibition/linear
 
 ## Citation
-Arshad U; Ploylearmsaeng SA; Karlsson MO; Doroshyenko O; Langer D; Schömig E; Kunze S; Güner SA; Skripnichenko R; Ullah S; Jaehde U; Fuhr U; Jetter A; Taubert M et al. (2020). Cancer chemotherapy and pharmacology 85
+Arshad U et al., Prediction of exposure-driven myelotoxi…, Cancer chemotherapy and pha… (2020)
   ·  DOI: [10.1007/s00280-019-04028-5](https://doi.org/10.1007/s00280-019-04028-5)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | CL5FU (L/h) — NONMEM estimates | `Q358` · not captured | 256 | L/h | not captured | llm (not captured) | Tab3:row2:col1 |
-| PK (driver) | CL5FU (L/h) — NONMEM estimates | `Q358` · not captured | 5.47 | L/h | not captured | llm (not captured) | Tab3:row2:col2 |
-| PK (driver) | CL5FU (L/h) — NONMEM RSE (%) | `Q22` · not captured | 5.47 | L/h | not captured | llm (not captured) | Tab3:row2:col3 |
-| PK (driver) | CL5FU (L/h) — Bootstrap estimates | `Q22` · not captured | 249 | L/h | not captured | llm (not captured) | Tab3:row2:col4 |
-| PK (driver) | CL5FU (L/h) — Bootstrap estimates | `Q22` · not captured | 6.36 | L/h | not captured | llm (not captured) | Tab3:row2:col5 |
-| PK (driver) | CL5FU (L/h) — Bootstrap RSE (%) | `Q22` · not captured | 6.36 | L/h | not captured | llm (not captured) | Tab3:row2:col6 |
-| PK (driver) | CL5FU (L/h) — 95% CI | `Q22` · not captured | 224 | L/h | not captured | llm (not captured) | Tab3:row2:col7 |
-| PK (driver) | VC,5FU (L) — NONMEM estimates | `Q63` · not captured | 5.85 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col1 |
-| PK (driver) | VC,5FU (L) — NONMEM estimates | `Q63` · not captured | 39.3 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col2 |
-| PK (driver) | VC,5FU (L) — NONMEM RSE (%) | `Q63` · not captured | 39.3 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col3 |
-| PK (driver) | VC,5FU (L) — Bootstrap estimates | `Q63` · not captured | 5.56 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col4 |
-| PK (driver) | VC,5FU (L) — Bootstrap estimates | `Q63` · not captured | 42.0 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col5 |
-| PK (driver) | VC,5FU (L) — Bootstrap RSE (%) | `Q63` · not captured | 42.0 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col6 |
-| PK (driver) | VC,5FU (L) — 95% CI | `Q63` · not captured | 2.41 | L | not captured | llm_confirmed (not captured) | Tab3:row3:col7 |
-| PK (driver) | VP,5FU (L) — NONMEM estimates | `Q64` · not captured | 24.0 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col1 |
-| PK (driver) | VP,5FU (L) — NONMEM estimates | `Q64` · not captured | 22.9 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col2 |
-| PK (driver) | VP,5FU (L) — NONMEM RSE (%) | `Q64` · not captured | 22.9 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col3 |
-| PK (driver) | VP,5FU (L) — Bootstrap estimates | `Q64` · not captured | 28.5 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col4 |
-| PK (driver) | VP,5FU (L) — Bootstrap estimates | `Q64` · not captured | 81.5 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col5 |
-| PK (driver) | VP,5FU (L) — Bootstrap RSE (%) | `Q64` · not captured | 81.5 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col6 |
-| PK (driver) | VP,5FU (L) — 95% CI | `Q64` · not captured | 13.3 | L | not captured | llm_confirmed (not captured) | Tab3:row4:col7 |
-| PK (driver) | Q (L/h) — NONMEM estimates | `Q30` · not captured | 17.3 | L/h | not captured | exact (not captured) | Tab3:row5:col1 |
-| PK (driver) | Q (L/h) — NONMEM estimates | `Q30` · not captured | 30.7 | L/h | not captured | exact (not captured) | Tab3:row5:col2 |
-| PK (driver) | Q (L/h) — NONMEM RSE (%) | `Q30` · not captured | 30.7 | L/h | not captured | exact (not captured) | Tab3:row5:col3 |
-| PK (driver) | Q (L/h) — Bootstrap estimates | `Q30` · not captured | 14.8 | L/h | not captured | exact (not captured) | Tab3:row5:col4 |
-| PK (driver) | Q (L/h) — Bootstrap estimates | `Q30` · not captured | 29.8 | L/h | not captured | exact (not captured) | Tab3:row5:col5 |
-| PK (driver) | Q (L/h) — Bootstrap RSE (%) | `Q30` · not captured | 29.8 | L/h | not captured | exact (not captured) | Tab3:row5:col6 |
-| PK (driver) | Q (L/h) — 95% CI | `Q30` · not captured | 9.66 | L/h | not captured | exact (not captured) | Tab3:row5:col7 |
-| PK (driver) | AUC24,5FU (mg h/L)b — NONMEM estimates | `Q19` · not captured | 6.72 | not captured | not captured | llm (not captured) | Tab3:row7:col1 |
-| PK (driver) | AUC24,5FU (mg h/L)b — Bootstrap estimates | `Q19` · not captured | 6.72 | not captured | not captured | llm (not captured) | Tab3:row7:col4 |
-| PK (driver) | AUC24,5FU (mg h/L)b — 95% CI | `Q19` · not captured | 4.76 | not captured | not captured | llm (not captured) | Tab3:row7:col7 |
-| PK (driver) | Fm (%) — NONMEM estimates | `Q45` · not captured | 85 | not captured | not captured | exact (not captured) | Tab3:row9:col1 |
-| PK (driver) | Fm (%) — Bootstrap estimates | `Q45` · not captured | 85 | not captured | not captured | exact (not captured) | Tab3:row9:col4 |
-| PK (driver) | CL5FUH2 (L/h) — NONMEM estimates | `Q358` · not captured | 124 | L/h | not captured | llm (not captured) | Tab3:row10:col1 |
-| PK (driver) | CL5FUH2 (L/h) — NONMEM estimates | `Q358` · not captured | 6.61 | L/h | not captured | llm (not captured) | Tab3:row10:col2 |
-| PK (driver) | CL5FUH2 (L/h) — NONMEM RSE (%) | `Q22` · not captured | 6.61 | L/h | not captured | llm (not captured) | Tab3:row10:col3 |
-| PK (driver) | CL5FUH2 (L/h) — Bootstrap estimates | `Q22` · not captured | 121 | L/h | not captured | llm (not captured) | Tab3:row10:col4 |
-| PK (driver) | CL5FUH2 (L/h) — Bootstrap estimates | `Q22` · not captured | 7.11 | L/h | not captured | llm (not captured) | Tab3:row10:col5 |
-| PK (driver) | CL5FUH2 (L/h) — Bootstrap RSE (%) | `Q22` · not captured | 7.11 | L/h | not captured | llm (not captured) | Tab3:row10:col6 |
-| PK (driver) | CL5FUH2 (L/h) — 95% CI | `Q22` · not captured | 108 | L/h | not captured | llm (not captured) | Tab3:row10:col7 |
-| PK (driver) | VC,5FUH2 (L) — NONMEM estimates | `Q63` · not captured | 100 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col1 |
-| PK (driver) | VC,5FUH2 (L) — NONMEM estimates | `Q63` · not captured | 13.0 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col2 |
-| PK (driver) | VC,5FUH2 (L) — NONMEM RSE (%) | `Q63` · not captured | 13.0 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col3 |
-| PK (driver) | VC,5FUH2 (L) — Bootstrap estimates | `Q63` · not captured | 96.7 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col4 |
-| PK (driver) | VC,5FUH2 (L) — Bootstrap estimates | `Q63` · not captured | 14.37 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col5 |
-| PK (driver) | VC,5FUH2 (L) — Bootstrap RSE (%) | `Q63` · not captured | 14.37 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col6 |
-| PK (driver) | VC,5FUH2 (L) — 95% CI | `Q63` · not captured | 74.8 | L | not captured | llm_confirmed (not captured) | Tab3:row11:col7 |
-| PK (driver) | AUC24,5FUH2 (mg h/L)b — NONMEM estimates | `Q19` · not captured | 12.2 | not captured | not captured | llm (not captured) | Tab3:row12:col1 |
-| PK (driver) | AUC24,5FUH2 (mg h/L)b — Bootstrap estimates | `Q19` · not captured | 12.2 | not captured | not captured | llm (not captured) | Tab3:row12:col4 |
-| PK (driver) | MTT (h) — NONMEM estimates | `Q81` · not captured | 261 | h | not captured | exact (not captured) | Tab3:row15:col1 |
-| PK (driver) | MTT (h) — NONMEM estimates | `Q81` · not captured | 6.70 | h | not captured | exact (not captured) | Tab3:row15:col2 |
-| PK (driver) | MTT (h) — NONMEM RSE (%) | `Q81` · not captured | 6.70 | h | not captured | exact (not captured) | Tab3:row15:col3 |
-| PK (driver) | MTT (h) — Bootstrap estimates | `Q81` · not captured | 281 | h | not captured | exact (not captured) | Tab3:row15:col4 |
-| PK (driver) | MTT (h) — Bootstrap estimates | `Q81` · not captured | 13.1 | h | not captured | exact (not captured) | Tab3:row15:col5 |
-| PK (driver) | MTT (h) — Bootstrap RSE (%) | `Q81` · not captured | 13.1 | h | not captured | exact (not captured) | Tab3:row15:col6 |
-| PK (driver) | MTT (h) — 95% CI | `Q81` · not captured | 224 | h | not captured | exact (not captured) | Tab3:row15:col7 |
-| PK (driver) | γ — NONMEM estimates | `Q89` · not captured | 0.17 | not captured | not captured | llm (not captured) | Tab3:row18:col1 |
-| PK (driver) | CL5FU — NONMEM estimates | `Q22` · not captured | 24.9 | not captured | not captured | llm (not captured) | Tab3:row20:col1 |
-| PK (driver) | CL5FU — NONMEM estimates | `Q22` · not captured | 17.2 | not captured | not captured | llm (not captured) | Tab3:row20:col2 |
-| PK (driver) | CL5FU — NONMEM RSE (%) | `Q22` · not captured | 17.2 | not captured | not captured | llm (not captured) | Tab3:row20:col3 |
-| PK (driver) | CL5FU — Bootstrap estimates | `Q22` · not captured | 23.0 | not captured | not captured | llm (not captured) | Tab3:row20:col4 |
-| PK (driver) | CL5FU — Bootstrap estimates | `Q22` · not captured | 43.1 | not captured | not captured | llm (not captured) | Tab3:row20:col5 |
-| PK (driver) | CL5FU — 95% CI | `Q22` · not captured | 12.3 | not captured | not captured | llm (not captured) | Tab3:row20:col7 |
-| PK (driver) | VC,5FU — NONMEM estimates | `Q63` · not captured | 130 | not captured | not captured | llm_confirmed (not captured) | Tab3:row21:col1 |
-| PK (driver) | VC,5FU — NONMEM estimates | `Q63` · not captured | 45.4 | not captured | not captured | llm_confirmed (not captured) | Tab3:row21:col2 |
-| PK (driver) | VC,5FU — 95% CI | `Q63` · not captured | 75.3 | not captured | not captured | llm_confirmed (not captured) | Tab3:row21:col7 |
-| PK (driver) | CL5FUH2 — NONMEM estimates | `Q22` · not captured | 30.5 | not captured | not captured | llm (not captured) | Tab3:row22:col1 |
-| PK (driver) | CL5FUH2 — NONMEM estimates | `Q22` · not captured | 27.1 | not captured | not captured | llm (not captured) | Tab3:row22:col2 |
-| PK (driver) | CL5FUH2 — NONMEM RSE (%) | `Q22` · not captured | 27.1 | not captured | not captured | llm (not captured) | Tab3:row22:col3 |
-| PK (driver) | CL5FUH2 — Bootstrap estimates | `Q22` · not captured | 28.9 | not captured | not captured | llm (not captured) | Tab3:row22:col4 |
-| PK (driver) | CL5FUH2 — Bootstrap estimates | `Q22` · not captured | 28.0 | not captured | not captured | llm (not captured) | Tab3:row22:col5 |
-| PK (driver) | CL5FUH2 — 95% CI | `Q22` · not captured | 21.8 | not captured | not captured | llm (not captured) | Tab3:row22:col7 |
-| PK (driver) | VC,5FUH2 — NONMEM estimates | `Q63` · not captured | 58.9 | not captured | not captured | llm_confirmed (not captured) | Tab3:row23:col1 |
-| PK (driver) | VC,5FUH2 — NONMEM estimates | `Q63` · not captured | 62.7 | not captured | not captured | llm_confirmed (not captured) | Tab3:row23:col2 |
-| PK (driver) | VC,5FUH2 — NONMEM RSE (%) | `Q63` · not captured | 62.7 | not captured | not captured | llm_confirmed (not captured) | Tab3:row23:col3 |
-| variability | Proportional error 5FU — NONMEM estimates | `Q316` · not captured | 0.36 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col1 |
-| variability | Proportional error 5FU — NONMEM estimates | `Q316` · not captured | 10.2 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col2 |
-| variability | Proportional error 5FU — NONMEM RSE (%) | `Q316` · not captured | 10.2 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col3 |
-| variability | Proportional error 5FU — Bootstrap estimates | `Q316` · not captured | 0.32 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col4 |
-| variability | Proportional error 5FU — Bootstrap estimates | `Q316` · not captured | 9.37 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col5 |
-| variability | Proportional error 5FU — Bootstrap RSE (%) | `Q316` · not captured | 9.37 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col6 |
-| variability | Proportional error 5FU — 95% CI | `Q316` · not captured | 0.23 | not captured | not captured | llm_confirmed (not captured) | Tab3:row26:col7 |
-| variability | Proportional error 5FUH2 — NONMEM estimates | `Q316` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col1 |
-| variability | Proportional error 5FUH2 — NONMEM estimates | `Q316` · not captured | 8.06 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col2 |
-| variability | Proportional error 5FUH2 — NONMEM RSE (%) | `Q316` · not captured | 8.06 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col3 |
-| variability | Proportional error 5FUH2 — Bootstrap estimates | `Q316` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col4 |
-| variability | Proportional error 5FUH2 — Bootstrap estimates | `Q316` · not captured | 9.61 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col5 |
-| variability | Proportional error 5FUH2 — Bootstrap RSE (%) | `Q316` · not captured | 9.61 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col6 |
-| variability | Proportional error 5FUH2 — 95% CI | `Q316` · not captured | 0.10 | not captured | not captured | llm_confirmed (not captured) | Tab3:row27:col7 |
+| PD (effect) | CIRC0 (× 109/L) — NONMEM estimates | `Q324` · not captured | 7.16 | not captured | not captured | llm (not captured) | Tab3:row14:col1 |
+| PD (effect) | CIRC0 (× 109/L) — NONMEM estimates | `Q324` · not captured | 5.23 | not captured | not captured | llm (not captured) | Tab3:row14:col2 |
+| PD (effect) | CIRC0 (× 109/L) — NONMEM RSE (%) | `Q324` · not captured | 5.23 | not captured | not captured | llm (not captured) | Tab3:row14:col3 |
+| PD (effect) | CIRC0 (× 109/L) — Bootstrap estimates | `Q324` · not captured | 6.86 | not captured | not captured | llm (not captured) | Tab3:row14:col4 |
+| PD (effect) | CIRC0 (× 109/L) — Bootstrap estimates | `Q324` · not captured | 4.50 | not captured | not captured | llm (not captured) | Tab3:row14:col5 |
+| PD (effect) | CIRC0 (× 109/L) — Bootstrap RSE (%) | `Q324` · not captured | 4.50 | not captured | not captured | llm (not captured) | Tab3:row14:col6 |
+| PD (effect) | CIRC0 (× 109/L) — 95% CI | `Q336` · not captured | 6.38 | not captured | not captured | llm (not captured) | Tab3:row14:col7 |
+| PD (effect) | CIRC0 — NONMEM estimates | `Q336` · not captured | 16.8 | not captured | not captured | llm (not captured) | Tab3:row24:col1 |
+| PD (effect) | CIRC0 — NONMEM estimates | `Q336` · not captured | 69.6 | not captured | not captured | llm (not captured) | Tab3:row24:col2 |
+| PD (effect) | CIRC0 — NONMEM RSE (%) | `Q336` · not captured | 69.6 | not captured | not captured | llm (not captured) | Tab3:row24:col3 |
+| PD (effect) | CIRC0 — Bootstrap estimates | `Q324` · not captured | 16.4 | not captured | not captured | llm (not captured) | Tab3:row24:col4 |
+| PD (effect) | CIRC0 — Bootstrap estimates | `Q324` · not captured | 52.0 | not captured | not captured | llm (not captured) | Tab3:row24:col5 |
+| PD (effect) | CIRC0 — Bootstrap RSE (%) | `Q324` · not captured | 52.0 | not captured | not captured | llm (not captured) | Tab3:row24:col6 |
+| PD (effect) | CIRC0 — 95% CI | `Q324` · not captured | 8.29 | not captured | not captured | llm (not captured) | Tab3:row24:col7 |
 | variability | Proportional error total WBC count — NONMEM estimates | `Q316` · not captured | 0.08 | not captured | not captured | llm_confirmed (not captured) | Tab3:row28:col1 |
 | variability | Proportional error total WBC count — NONMEM estimates | `Q316` · not captured | 8.70 | not captured | not captured | llm_confirmed (not captured) | Tab3:row28:col2 |
 | variability | Proportional error total WBC count — NONMEM RSE (%) | `Q316` · not captured | 8.70 | not captured | not captured | llm_confirmed (not captured) | Tab3:row28:col3 |

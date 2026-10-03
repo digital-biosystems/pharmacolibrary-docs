@@ -1,40 +1,41 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;M04A&quot;,&quot;href&quot;:&quot;atc/M04A.md&quot;},{&quot;label&quot;:&quot;allopurinol&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/&quot;},{&quot;label&quot;:&quot;Leander_2021 \u00b7 PD serum uric acid&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Jonkman1984_reference&quot;,&quot;label&quot;:&quot;Jonkman_1984_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Stocker2012_reference&quot;,&quot;label&quot;:&quot;Stocker_2012_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Stocker2012_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2017_reference&quot;,&quot;label&quot;:&quot;Wright_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Chu2022_reference&quot;,&quot;label&quot;:&quot;Chu_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Chu2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Chu2024_reference&quot;,&quot;label&quot;:&quot;Chu_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Chu2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Hishe2023_reference&quot;,&quot;label&quot;:&quot;Hishe_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Hishe2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Vora2021_reference&quot;,&quot;label&quot;:&quot;Vora_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Vora2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2013_base&quot;,&quot;label&quot;:&quot;Wright_2013_base&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2013_base.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2013_final&quot;,&quot;label&quot;:&quot;Wright_2013_final&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2013_final.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2016_reference&quot;,&quot;label&quot;:&quot;Wright_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Allopurinol_Ekobena2025_reference&quot;,&quot;label&quot;:&quot;Ekobena_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Ekobena2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Jonkman1984_reference&quot;,&quot;label&quot;:&quot;Jonkman_1984_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Jonkman1984_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Liu2026_reference&quot;,&quot;label&quot;:&quot;Liu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Liu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_base&quot;,&quot;label&quot;:&quot;Wen_2023_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wen2023_final&quot;,&quot;label&quot;:&quot;Wen_2023_final&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wen2023_final.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Wright2024_reference&quot;,&quot;label&quot;:&quot;Wright_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Wright2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2007_reference&quot;,&quot;label&quot;:&quot;Day_2007_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2007_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Allopurinol_Day2016_reference&quot;,&quot;label&quot;:&quot;Day_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/Allopurinol_Day2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX_2&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX_2.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX_3&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX_3.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX_4&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX_4.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Day_2007_1_MU_1_MX_5&quot;,&quot;label&quot;:&quot;Day_2007 \u00b7 1-MU/1-MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Day_2007_1_MU_1_MX_5.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_1MU_1MX&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 1MU/1MX&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_1MU_1MX.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_plasma_urate_concentration&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 plasma urate concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_plasma_urate_concentration.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Graham_1996_urine_urate_excretion_rate&quot;,&quot;label&quot;:&quot;Graham_1996 \u00b7 urine urate excretion rate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Graham_1996_urine_urate_excretion_rate.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wen_2023_SU&quot;,&quot;label&quot;:&quot;Wen_2023 \u00b7 SU&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wen_2023_SU.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aksenov_2018_kP&quot;,&quot;label&quot;:&quot;Aksenov_2018 \u00b7 kP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Aksenov_2018_kP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wright_2024_urate&quot;,&quot;label&quot;:&quot;Wright_2024 \u00b7 urate&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_allopurinol/pd_Wright_2024_urate.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum uric acid — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.095). The first reading is what the record holds.">cross-check: disputed</span>
+# serum uric acid — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.5), gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Verinurad (measured concentrations) drives serum uric acid (in mg/L): direct Emax (saturable) effect.
+**As extracted:** Oxypurinol (concentrations from the PK model of Hishe_2023) drives serum uric acid (in mg/dL): indirect response — drug inhibits the production of serum uric acid.
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 > Verinurad concentrations (ng/mL) drive a semimechanistic uric acid disposition model in which verinurad inhibits renal URAT1-mediated reabsorption (increasing fractional excretion of uric acid, baseline FEUA 7.7%), while febuxostat or oxypurinol (the active metabolite of allopurinol) inhibit uric acid production rate via xanthine oxidase inhibition; the model describes serum uric acid (mg/L) and urinary uric acid excretion. The reported EC50 for verinurad was 29.3 ng/mL (with hyperuricemic covariate effects), and the paper does not state Imax, kout, ke0, or gamma values in the excerpts.
 >
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Leander_2021`
-- **model family:** `emax`
-- **driver:** `conc_no_pk`
+- **model family:** `indirect_response_i`
+- **driver:** `cited_pk`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
-Leander J; Sunnåker M; Rekić D; Aksenov S; Eriksson UG; Johansson S; et al. et al. (2021). Journal of pharmacokinetics and pharmacodynamics 48
+Leander J et al., A semi-mechanistic exposure-response mo…, Journal of pharmacokinetics… (2021)
   ·  DOI: [10.1007/s10928-021-09747-y](https://doi.org/10.1007/s10928-021-09747-y)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
+| PD (effect) | Oxypurinol EC50 | `Q322` · not captured | 13,030 | ng/mL | not captured | llm (not captured) | Leander_2021:pdv3 |
+| variability | Oxypurinol EC50, IIV | `Q312` · not captured | 65.44 | CV% | not captured | llm (not captured) | Leander_2021:pdv3 |
 | PD (effect) | Emax for febuxostat | `Q320` · not captured | 1 | 2018 | not captured | review_gapfill (not captured) | Leander_2021:review |
-| PD (effect) | EC50s of verinurad, febuxostat, and oxypurinol | `Q321` · not captured | 29.3 | ng/mL | not captured | review_gapfill (not captured) | Leander_2021:review |
 | PD (effect) | baseline FEUA | `Q324` · not captured | 7.7 | % | not captured | review_gapfill (not captured) | Leander_2021:review |
 
 <details class="legend">
@@ -43,19 +44,57 @@ Leander J; Sunnåker M; Rekić D; Aksenov S; Eriksson UG; Johansson S; et al. et
 </details>
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+## Exposure-response model
+
+`Allopurinol_Leander2021_PD_sua` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
+
+| parameter | value (paper units) | SI |
+|---|---|---|
+| E0 | 7.7 % | 0.077 1 |
+| Emax | 1 | — |
+| EC50 | 1.303e+04 ng/mL | 0.01303 kg/m3 |
+| gamma | 1 | — |
+
+Closed-form check points (response, SI): `at_0` = 0.077, `at_EC50` = 0.0385, `at_inf` = 0
+
+Deviations:
+
+- `defaulted_parameters` — gamma
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T2_direction` | skipped | effect_direction 'inhibition' |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.095 (2/21 fields) | 19 |
+| `openai:gpt-6-luna` | not confirmed | 0.5 (5/10 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.0 (0/20 fields) | 20 |
 
-<details><summary>19 field(s) a reader read differently</summary>
+<details><summary>25 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | verinurad | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
 | `gpt-oss:120b` | `effect_form` | additive | unknown | mismatch |
-| `gpt-oss:120b` | `model_family` | emax | indirect_response_i | mismatch |
+| `gpt-oss:120b` | `model_family` | emax | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 23 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 12 | only_one_extracted |
@@ -65,14 +104,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 64 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 72 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 40 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 23 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 15 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 64 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 72 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 39 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q75]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q34]` | not captured | 0 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 23 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 31 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 64 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 72 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q75]` | not captured | 39 | only_one_extracted |
+| `openai:gpt-6-luna` | `driver_compound` | oxypurinol (active metabolite of allopurinol) | oxypurinol | mismatch |
+| `openai:gpt-6-luna` | `parameters[Q100]` | not captured | 0.761 | only_one_extracted |
+| `openai:gpt-6-luna` | `parameters[Q321]` | not captured | 13,030 | only_one_extracted |
+| `openai:gpt-6-luna` | `parameters[Q322]` | 13,030 | not captured | only_one_extracted |
+| `openai:gpt-6-luna` | `parameters[Q323]` | 0.84 | not captured | only_one_extracted |
 
 </details>
 

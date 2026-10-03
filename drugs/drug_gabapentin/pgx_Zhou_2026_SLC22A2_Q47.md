@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Zhou_2026 \u00b7 PGx SLC22A2&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # SLC22A2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
@@ -10,17 +10,24 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-- **paper:** `Zhou_2026`
+- **what it is:** association only — the paper links the gene to the drug, but no quantitative effect was extracted, so it changes no model
+- **source:** this paper, `Zhou_2026` — [doi](https://doi.org/10.3389/fphar.2026.1760901)
 - **gene:** SLC22A2
-- **mechanism:** transport
-- **applies to:** pk
-- **target:** `Q47` kel
-- **effect (θ / form):** categorical_fractional
-- **phenotype map:** unresolved
-- **evidence:** not captured
+- **mechanism:** transport — the gene's transporter moves the drug
+- **applies to:** pharmacokinetics (exposure)
+- **parameter it changes:** kel (`Q47`)
+- **effect:** not quantified
+- **phenotype groups:** the paper's genotype groups were not mapped to standard phenotypes
+
+### Notes from the extraction
+
+- association-only evidence (no extracted θ) — not a covariate
+- relevance flagged quantitative but no per-genotype θ table reached
+- genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
+- reference category (θ=0) not captured — must not be inferred
 
 ## Citation
-Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; et al. et al. (2026). Frontiers in pharmacology 17
+Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901)
 
 

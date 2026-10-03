@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L02B&quot;,&quot;href&quot;:&quot;atc/L02B.md&quot;},{&quot;label&quot;:&quot;tamoxifen&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/&quot;},{&quot;label&quot;:&quot;Mc_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_ter2014_reference&quot;,&quot;label&quot;:&quot;ter_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_ter2014_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Centanni2024_reference&quot;,&quot;label&quot;:&quot;Centanni_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Centanni2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Mc2024_reference&quot;,&quot;label&quot;:&quot;Mc_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Mc2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tamoxifen_MuellerSchoell2020_reference&quot;,&quot;label&quot;:&quot;Mueller-Schoell_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_MuellerSchoell2020_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tamoxifen_Xu2026_reference&quot;,&quot;label&quot;:&quot;Xu_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Xu2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tamoxifen_Dilli2022_reference&quot;,&quot;label&quot;:&quot;Dilli_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tamoxifen/Tamoxifen_Dilli2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tamoxifen — `Tamoxifen_Mc2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.571). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.4). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,18 +21,20 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of intermediate_metabolizer: this record has none, the second reading 446; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has tamoxifen, the second reading unknown; it also differs on 2 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.442542+00:00) predates the upstream re-run (2026-09-30 17:04:35.752235+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `tamoxifen`, measured `Z-endoxifen`.
 
 ## Citation
-Mc Laughlin AM; Helland T; Klima F; Koolen SLW; van Schaik RHN; Mathijssen RHJ; et al. et al. (2024). Clinical pharmacology and therapeutics 116
+Mc Laughlin AM et al., Nonlinear Mixed-Effects Model of Z-Endo…, Clinical pharmacology and t… (2024)
   ·  DOI: [10.1002/cpt.3238](https://doi.org/10.1002/cpt.3238)
 
 ## Model component
-<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="false" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="tamoxifen" model-id="Tamoxifen_Mc2024_reference" status="rejected" stale="true" population="tamoxifen-treated patients" measured-compound="Z-endoxifen" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 0 extracted.
@@ -51,6 +53,8 @@ _No resolved parameters._
 - dropped unlinked row (NIL): 'Fixed effects' — extend the ontology if this is a real PK parameter (source ['tab_2:row1:col1', 'tab_2:row1:col3'])
 - dropped unlinked row (NIL): 'Random effects' — extend the ontology if this is a real PK parameter (source ['tab_2:row26:col1', 'tab_2:row26:col4'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=Z-endoxifen
+- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- row roles (LLM): model_class=compartmental; 2/2 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record measures 'Z-endoxifen', not tamoxifen — the review values are the parent's
 
 **Extraction notes:**
@@ -64,15 +68,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.571 (4/7 fields) | 3 |
+| `gpt-oss:120b` | primary re-run | 0.4 (2/5 fields) | 3 |
 
 <details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[intermediate_metabolizer]` | not captured | 446 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[normal_metabolizer]` | not captured | 1100 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[poor_metabolizer]` | not captured | 28 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | tamoxifen | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | Z-endoxifen | unknown | mismatch |
 
 </details>
 
@@ -113,4 +117,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 19:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 17:04 UTC</sub>

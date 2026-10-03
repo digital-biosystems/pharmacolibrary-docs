@@ -1,0 +1,54 @@
+{
+ "model_id": "Omeprazole_Kato2005_PD_cyp3a_induction_ratio",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 0.000225,
+  "Emax": 2.36,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "0.00022499999999999997": 1.18
+ },
+ "stop_time": 2.3,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "micromol/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "mol/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "micromol/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "mol/m3"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "micromol/L",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;Klotz_1976 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Huang2025v2_reference&quot;,&quot;label&quot;:&quot;Huang_2025_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Huang2025v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Ku2018_reference&quot;,&quot;label&quot;:&quot;Ku_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Ku2018_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Lscher1981_reference&quot;,&quot;label&quot;:&quot;L\u00f6scher_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Lscher1981_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2020v2_reference&quot;,&quot;label&quot;:&quot;Wang_2020_2_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2020v2_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Greenblatt_1989_13_30_Hz&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 % 13-30 Hz&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_13_30_Hz.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Klotz1976_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="The paper reports both human and animal data (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">human + animal</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
+
+> **Species: human + animal.** The paper reports both human and animal data; check which group this record describes before reading it as human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -21,15 +23,17 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of rates of drug clearance: this record has 81.6, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diazepam, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:32.286487+00:00) predates the upstream re-run (2026-10-01 03:14:56.467836+00:00). Current validate status: `needs_review`.
+
 ## Citation
-Klotz U; Antonin KH; Bieck PR et al. (1976). The Journal of pharmacology and experimental therapeutics 199
+Klotz U et al., Pharmacokinetics and plasma binding of…, The Journal of pharmacology… (1976)
 
 ## Model component
-<dbs-pgx drug="diazepam" model-id="Diazepam_Klotz1976_reference" status="curated_candidate" stale="false" population="man, dog, rabbit, guinea pig and rat" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diazepam" model-id="Diazepam_Klotz1976_reference" status="needs_review" stale="true" population="man, dog, rabbit, guinea pig and rat" measured-compound="diazepam" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -37,9 +41,11 @@ Klotz U; Antonin KH; Bieck PR et al. (1976). The Journal of pharmacology and exp
 **Parameterization:** mechanistic.
 
 ## Parameters
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| T1/2(beta) | `Q57` · t1/2z | 1.1 | hours | 3960.0000000000005 | [h] | not captured | exact (1.0) | Klotz_1976:abstract, Klotz_1976:abstract, Klotz_1976:abstract | — | not captured |
+| T1/2(beta) | `Q57` · t1/2z | 1.1 | hours | 3960.0000000000005 | [h] | not captured | exact (1.0) | Klotz_1976:abstract, Klotz_1976:abstract | — | not captured |
 | rates of drug clearance | `Q22` · CL | 81.6 | ml/min/kg | 9.52e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Klotz_1976:abstract, Klotz_1976:abstract | — | not captured |
 | volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Cavallaro_2026:review | — | not captured |
 
@@ -51,16 +57,16 @@ Klotz U; Antonin KH; Bieck PR et al. (1976). The Journal of pharmacology and exp
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped value-less row: 'Cl'
 - dropped duplicate Q57 ('T1/2(alpha)', value None) — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diazepam
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- dropped value-less row: 'Cl'
 
 **Extraction notes:**
-- no GROBID TEI available — transcribed from abstract in Klotz_1976_metadata.yaml (7 record(s)); values are summary statistics, not a fitted model
+- no GROBID TEI available — transcribed from abstract in Klotz_1976_metadata.yaml (5 record(s)); values are summary statistics, not a fitted model
 
 ## Validation
 
@@ -69,14 +75,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.25 (2/8 fields) | 6 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 81.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[rates of drug clearance]` | 81.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2]` | 1.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2]` | not captured | 1.1 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | diazepam | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | diazepam | unknown | mismatch |
 
 </details>
 
@@ -92,9 +102,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Klotz_1976:abstract', 'Klotz_1976:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Klotz_1976:abstract', 'Klotz_1976:abstract', 'Klotz_1976:abstract'] |
+| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Klotz_1976:abstract', 'Klotz_1976:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cavallaro_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 81.6 | not captured | not captured | ['Klotz_1976:abstract', 'Klotz_1976:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
@@ -153,4 +163,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 04:16 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 03:14 UTC</sub>

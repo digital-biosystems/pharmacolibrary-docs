@@ -1,0 +1,54 @@
+{
+ "model_id": "Simvastatin_Wei2014_PD_ldl_c",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 8.56481481481e-11,
+  "Emax": -0.61,
+  "exposure_per_s": 1.15740740741e-11,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "8.564814814814815e-11": -0.30499999999999994
+ },
+ "stop_time": 74.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "kg/s"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mg/dl",
+   "factor": 0.009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "kg/s"
+  },
+  "response_unit": "mg/dl"
+ },
+ "x_axis": {
+  "display_unit": "mg/day",
+  "factor": 1.1574074074074074e-11,
+  "per_s": 1.15740740741e-11,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mg/dl",
+  "factor": 0.009999999999999998,
+  "label": "response"
+ }
+}

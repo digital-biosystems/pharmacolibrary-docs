@@ -1,24 +1,24 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Snelder_2020 \u00b7 PD estimated glomerular filtration rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_van2022_reference&quot;,&quot;label&quot;:&quot;van_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_van2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Snelder_2020 \u00b7 PD estimated glomerular filtration rate (CKD-EPI)&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# estimated glomerular filtration rate — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
+# estimated glomerular filtration rate (CKD-EPI) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.271). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives estimated glomerular filtration rate (in mL/min/1.73m2): indirect response — drug inhibits the production of estimated glomerular filtration rate.
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives estimated glomerular filtration rate (CKD-EPI): indirect response — drug inhibits the production of estimated glomerular filtration rate (CKD-EPI).
 
 **Model:** No model was generated from this record.
 
-> Finerenone plasma concentration (µg/L, via AUCss from the cited popPK model) acts on eGFR-EPI (mL/min/1.73 m2); the paper describes the concentration–effect relationship as a direct power model (eGFR-EPI decreases with increasing finerenone concentration), which was superior to linear, log-linear and (sigmoid) Imax models, and the record's indirect-response characterization is not supported by the excerpts. The excerpts give no numeric potency or rate parameters (no Imax, IC50/EC50, Emax, kin, kout, ke0 or gamma values) for this model.
+> Finerenone plasma concentrations (µg/L) inhibit estimated glomerular filtration rate (eGFR-EPI, mL/min/1.73m2) via a power concentration–effect relationship, which the paper states is significantly better than linear, log-linear, or sigmoid Imax models. The paper does not specify the underlying mechanism (e.g., production vs. elimination) or provide specific potency values (IC50, EC50) or rate constants (kin, kout, ke0) for this relationship.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Snelder_2020`
 - **model family:** `indirect_response_i`
@@ -27,54 +27,54 @@
 - **effect:** inhibition/unknown
 
 ## Citation
-Snelder N; Heinig R; Drenth HJ; Joseph A; Kolkhof P; Lippert J; et al. et al. (2020). Clinical pharmacokinetics 59
+Snelder N et al., Population Pharmacokinetic and Exposure…, Clinical pharmacokinetics (2020)
   ·  DOI: [10.1007/s40262-019-00820-x](https://doi.org/10.1007/s40262-019-00820-x)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 64.1 | kg | not captured | llm_corrected (not captured) | Tab3:row0:col4 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 64.1 | kg | not captured | llm_corrected (not captured) | Tab3:row0:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 24.2 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row0:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 49 | years | not captured | llm_corrected (not captured) | Tab3:row0:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 33.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 33.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 33.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row0:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row0:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 33.7 | g/kg | not captured | llm_corrected (not captured) | Tab3:row0:col10 |
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 54 | kg | not captured | llm_corrected (not captured) | Tab3:row1:col4 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 3.6 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row0:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 33.7 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row0:col10 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 54 | kg | not captured | llm_corrected (not captured) | Tab3:row1:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 21.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row1:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 44 | years | not captured | llm_corrected (not captured) | Tab3:row1:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 41.0 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 41.0 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 42.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row1:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 3.6 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row1:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 38.5 | g/kg | not captured | llm_corrected (not captured) | Tab3:row1:col10 |
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 90.6 | kg | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 3.6 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row1:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 38.5 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row1:col10 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 90.6 | kg | not captured | llm_corrected (not captured) | Tab3:row2:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 31.1 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row2:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 65 | years | not captured | llm_corrected (not captured) | Tab3:row2:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 63.9 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 63.9 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 66.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row2:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.3 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row2:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 192.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row2:col10 |
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 71.6 | kg | not captured | llm_corrected (not captured) | Tab3:row3:col4 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.3 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row2:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 192.4 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row2:col10 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 71.6 | kg | not captured | llm_corrected (not captured) | Tab3:row3:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 26.5 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row3:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 64 | years | not captured | llm_corrected (not captured) | Tab3:row3:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 61.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 61.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 64.6 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row3:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.2 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row3:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 216.4 | g/kg | not captured | llm_corrected (not captured) | Tab3:row3:col10 |
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 126.3 | kg | not captured | llm_corrected (not captured) | Tab3:row4:col4 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.2 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row3:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 216.4 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row3:col10 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 126.3 | kg | not captured | llm_corrected (not captured) | Tab3:row4:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 41.7 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row4:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row4:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 102.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 102.5 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 101.3 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row4:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 5.0 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row4:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1626 | g/kg | not captured | llm_corrected (not captured) | Tab3:row4:col10 |
-| — | Variable baseline percentiles — Body weight (kg) | `Q100` · not captured | 100 | kg | not captured | llm_corrected (not captured) | Tab3:row5:col4 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 5.0 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row4:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 1626 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row4:col10 |
+| model term | Variable baseline percentiles — Body weight (kg) | `Q900` · not captured | 100 | kg | not captured | llm_corrected (not captured) | Tab3:row5:col4 |
 | — | Variable baseline percentiles — BMI (kg/m2) | `Q100` · not captured | 34.6 | kg/m2 | not captured | llm_corrected (not captured) | Tab3:row5:col5 |
 | — | Variable baseline percentiles — Age (years) | `Q100` · not captured | 78 | years | not captured | llm_corrected (not captured) | Tab3:row5:col6 |
-| — | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q100` · not captured | 87.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col7 |
+| model term | Variable baseline percentiles — eGFR-MDRD (mL/min/1.73 m2) | `Q900` · not captured | 87.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col7 |
 | — | Variable baseline percentiles — eGFR-EPI (mL/min/1.73 m2) | `Q100` · not captured | 85.2 | mL/min/1.73 m2 | not captured | llm_corrected (not captured) | Tab3:row5:col8 |
-| — | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q100` · not captured | 4.8 | mmol/L | not captured | llm_corrected (not captured) | Tab3:row5:col9 |
-| — | Variable baseline percentiles — UACR (combined) (g/kg) | `Q100` · not captured | 1345 | g/kg | not captured | llm_corrected (not captured) | Tab3:row5:col10 |
+| PD (effect) | Variable baseline percentiles — Serum potassium concentration (mmol/L) | `Q324` · not captured | 4.8 | mmol/L | not captured | llm_confirmed (not captured) | Tab3:row5:col9 |
+| PD (effect) | Variable baseline percentiles — UACR (combined) (g/kg) | `Q324` · not captured | 1345 | g/kg | not captured | llm_confirmed (not captured) | Tab3:row5:col10 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -87,13 +87,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.3 (21/70 fields) | 49 |
+| `gpt-oss:120b` | not confirmed | 0.271 (19/70 fields) | 51 |
 
-<details><summary>49 field(s) a reader read differently</summary>
+<details><summary>51 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | finerenone | unknown | mismatch |
 | `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
 | `gpt-oss:120b` | `parameters[Q100]` | 33.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q100]` | 24.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q100]` | 49 | not captured | only_one_extracted |

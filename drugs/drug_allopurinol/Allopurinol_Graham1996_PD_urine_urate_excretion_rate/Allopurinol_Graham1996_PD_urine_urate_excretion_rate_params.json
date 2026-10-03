@@ -1,0 +1,66 @@
+{
+ "model_id": "Allopurinol_Graham1996_PD_urine_urate_excretion_rate",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.53,
+  "EC50": 0.00374,
+  "Emax": -3.26,
+  "exposure_per_s": 0.001,
+  "gamma": 1.08
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.53,
+  "0.0037399999999999994": 1.9
+ },
+ "stop_time": 38.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "mol min-1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg l-1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "mol min-1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg l-1",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "mol min-1"
+ },
+ "x_axis": {
+  "display_unit": "mg l-1",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mol min-1",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

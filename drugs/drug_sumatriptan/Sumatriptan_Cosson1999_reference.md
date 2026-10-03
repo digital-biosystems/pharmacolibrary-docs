@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02C&quot;,&quot;href&quot;:&quot;atc/N02C.md&quot;},{&quot;label&quot;:&quot;sumatriptan&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/&quot;},{&quot;label&quot;:&quot;Cosson_1999 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Sumatriptan_Christensen2004_reference&quot;,&quot;label&quot;:&quot;Christensen_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Christensen2004_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sumatriptan_Cosson1999_reference&quot;,&quot;label&quot;:&quot;Cosson_1999_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Sumatriptan_Christensen2003_reference&quot;,&quot;label&quot;:&quot;Christensen_2003_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Christensen2003_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Sumatriptan_Ohk2022_reference&quot;,&quot;label&quot;:&quot;Ohk_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_sumatriptan/Sumatriptan_Ohk2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -9,11 +8,11 @@
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** No model was generated from this record.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 ### Reviewer guidance
 
@@ -26,13 +25,13 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 <sub>reviewed by rule template (no LLM)</sub>
 
 ## Citation
-Cosson VF; Fuseau E et al. (1999). Journal of pharmacokinetics and biopharmaceutics 27
+Cosson VF et al., Mixed effect modeling of sumatriptan ph…, Journal of pharmacokinetics… (1999)
   ·  DOI: [10.1023/a:1020601906027](https://doi.org/10.1023/a:1020601906027)
 
 ## Model component
 <dbs-pgx drug="sumatriptan" model-id="Sumatriptan_Cosson1999_reference" status="needs_review" stale="false" population="healthy subjects and migraine patients" measured-compound="sumatriptan" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment; no model was built for this record.  
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
@@ -51,6 +50,9 @@ Cosson VF; Fuseau E et al. (1999). Journal of pharmacokinetics and biopharmaceut
 </details>
 
 ## Departures & gaps
+
+**Deviations:**
+- `vss_as_v`: Vss (Q65) used as the distribution volume — no Vc/V reported
 
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=sumatriptan
@@ -91,12 +93,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Cosson_1999:abstract'] |
 | C5_dimension_Q65 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cosson_1999:abstract'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 71.2 | not captured | not captured | ['Cosson_1999:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 71.2 L/h | not captured | not captured | ['Cosson_1999:abstract'] |
+| C9_phys_window_Q65 | pass | volume within physiological range | 94.5 L | not captured | not captured | ['Cosson_1999:abstract'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -114,14 +117,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_modelica.zip" download>Sumatriptan_Cosson1999_reference_modelica.zip</a> <span class="pk-size">(3.7 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_matlab.zip" download>Sumatriptan_Cosson1999_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_matlab_simbio.zip" download>Sumatriptan_Cosson1999_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_sbml.zip" download>Sumatriptan_Cosson1999_reference_sbml.zip</a> <span class="pk-size">(2.5 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_sumatriptan/Sumatriptan_Cosson1999_reference/Sumatriptan_Cosson1999_reference_cellml.zip" download>Sumatriptan_Cosson1999_reference_cellml.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>

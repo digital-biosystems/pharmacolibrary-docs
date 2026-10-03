@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;gabapentin&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/&quot;},{&quot;label&quot;:&quot;Silvola_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Adrian2018_reference&quot;,&quot;label&quot;:&quot;Adrian_2018_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Adrian2018_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Ahmed2017_reference&quot;,&quot;label&quot;:&quot;Ahmed_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Ahmed2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Silvola2025_reference&quot;,&quot;label&quot;:&quot;Silvola_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Silvola2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Gabapentin_Hampton2021_reference&quot;,&quot;label&quot;:&quot;Hampton_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Hampton2021_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Larsen2016_reference&quot;,&quot;label&quot;:&quot;Larsen_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Larsen2016_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Zhou2026_reference&quot;,&quot;label&quot;:&quot;Zhou_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Zhou2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Gabapentin_AlZubaydi2024_reference&quot;,&quot;label&quot;:&quot;Al-Zubaydi_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_AlZubaydi2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Gabapentin_Siao2010_reference&quot;,&quot;label&quot;:&quot;Siao_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_gabapentin/Gabapentin_Siao2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -26,7 +26,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 <sub>reviewed by glm-5.3-flash</sub>
 
 ## Citation
-Silvola R; O'Kane A; Heathman M; Marotta H; Trussel H; Ray B; et al. et al. (2025). CPT: pharmacometrics & systems pharmacology 14
+Silvola R et al., Population Pharmacokinetics and Transfe…, CPT: pharmacometrics & syst… (2025)
   ·  DOI: [10.1002/psp4.13295](https://doi.org/10.1002/psp4.13295)
 
 ## Model component
@@ -93,8 +93,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
-| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Adrian_2018:review'] |

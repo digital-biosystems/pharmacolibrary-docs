@@ -1,0 +1,30 @@
+{
+ "dose_source": "library default",
+ "model_id": "Irbesartan_Carlucci2013_reference",
+ "molar_masses": {
+  "central.C": 0.4285294
+ },
+ "note": "Values for the shared PK_1C.fmu. Vd/Vdp appear as VdPerKg/VdpPerKg because the template computes the absolute volume from body weight and FMI cannot set a calculated parameter.",
+ "observables": [
+  "central.C"
+ ],
+ "parameters": {
+  "Cl": 6.805555555555556e-06,
+  "F": 1.0,
+  "MM": 0.4285294,
+  "VdPerKg": 0.00254,
+  "adminCount": 1.0,
+  "adminDuration": 600.0,
+  "adminMass": 1e-05,
+  "weight": 70.0
+ },
+ "reference_peak_times": {
+  "central.C": 660.0000000662026
+ },
+ "reference_peaks": {
+  "central.C": 5.560210310697687e-05
+ },
+ "stop_time": 93600.0,
+ "template": "PK_1C",
+ "template_fmu": "PK_1C.fmu"
+}

@@ -1,38 +1,40 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03D&quot;,&quot;href&quot;:&quot;atc/C03D.md&quot;},{&quot;label&quot;:&quot;finerenone&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/&quot;},{&quot;label&quot;:&quot;Goulooze_2022_2 \u00b7 PD serum potassium&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_van2022_reference&quot;,&quot;label&quot;:&quot;van_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_van2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Finerenone_Heinig2023_reference&quot;,&quot;label&quot;:&quot;Heinig_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_finerenone/Finerenone_Heinig2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# serum potassium — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.65). The first reading is what the record holds.">cross-check: disputed</span>
+# serum potassium — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.522). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium (in mmol/L): indirect response — drug inhibits the production of serum potassium.
+**As extracted:** Finerenone (concentrations from the PK model of van_2022) drives serum potassium (in mmol/L): indirect response — drug stimulates the production of serum potassium.
 
 **Model:** No model was generated from this record.
 
-> Finerenone plasma exposure (cited PK) stimulates serum potassium in an indirect response (turnover) model: an Emax function acts on kout of the potassium turnover system, with baseline 4.50 mmol/L, kin 0.00981 mmol/L/h (RSE 14.2%), Emax 0.0905 (a 9.95% increase, ~0.44 mmol/L at 4.4 mmol/L baseline; RSE 16.2%), and EC50 0.512 mg·h/L (RSE 33.3%); a disease-progression slope increasing potassium over time was also included.
+> Finerenone exposure (AUC) stimulates serum potassium by increasing the elimination rate constant (kout) in an indirect response model, with a maximum effect (Emax) of 0.0905 and an EC50 of 0.512 mg × h/L. The model also estimates a baseline (BSL) of 4.50 mmol/L and a production rate (kin) of 0.00981 mmol/L/h.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Goulooze_2022_2`
-- **model family:** `indirect_response_i`
+- **model family:** `indirect_response_iii`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
 
 ## Citation
-not matched (stem Goulooze_2022_2)
+Goulooze SC et al., Finerenone Dose-Exposure-Serum Potassiu…, Clinical pharmacokinetics (2022)
+  ·  DOI: [10.1007/s40262-021-01083-1](https://doi.org/10.1007/s40262-021-01083-1)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | θpop, BSL, BSL (mmol/L) — Estimate | `Q324` · not captured | 4.50 | mmol/L | not captured | llm (not captured) | Tab1:row1:col1 |
+| PD (effect) | θpop, BSL, BSL (mmol/L) — RSE (%) | `Q324` · not captured | 0.140 | mmol/L | not captured | llm (not captured) | Tab1:row1:col2 |
 | PD (effect) | θpop,kin, kin (mmol/L/h) — Estimate | `Q327` · not captured | 0.00981 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col1 |
 | PD (effect) | θpop,kin, kin (mmol/L/h) — RSE (%) | `Q327` · not captured | 14.2 | mmol/L/h | not captured | llm_confirmed (not captured) | Tab1:row3:col2 |
 | PD (effect) | θpop,EMAX, Emax — Estimate | `Q320` · not captured | 0.0905 | not captured | not captured | llm_confirmed (not captured) | Tab1:row4:col1 |
@@ -41,11 +43,13 @@ not matched (stem Goulooze_2022_2)
 | PD (effect) | θpop,EC50, EC50 (mg × h/L) — RSE (%) | `Q321` · not captured | 33.3 | mg × h/L | not captured | llm_confirmed (not captured) | Tab1:row5:col2 |
 | variability | θJAP,σ, relative σ with Japanese ethnicity (%) — Estimate | `Q315` · not captured | 87.0 | not captured | not captured | llm (not captured) | Tab1:row8:col1 |
 | variability | θJAP,σ, relative σ with Japanese ethnicity (%) — RSE (%) | `Q315` · not captured | 3.64 | not captured | not captured | llm (not captured) | Tab1:row8:col2 |
-| PD (effect) | ω2 proportional Emax — Estimate | `Q320` · not captured | 1.49 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col1 |
-| PD (effect) | ω2 proportional Emax — RSE (%) | `Q320` · not captured | 10.2 | not captured | not captured | llm_confirmed (not captured) | Tab1:row19:col2 |
+| variability | ω2 proportional Emax — Estimate | `Q312` · not captured | 1.49 | not captured | not captured | llm_corrected (not captured) | Tab1:row19:col1 |
+| variability | ω2 proportional Emax — RSE (%) | `Q316` · not captured | 10.2 | not captured | not captured | llm_corrected (not captured) | Tab1:row19:col2 |
 | variability | ω2 covariance BSL/Emax — RSE (%) | `Q314` · not captured | 10.8 | not captured | not captured | llm_corrected (not captured) | Tab1:row20:col2 |
 | variability | σ2, scalar of residual error — Estimate | `Q315` · not captured | 0.00447 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col1 |
 | variability | σ2, scalar of residual error — RSE (%) | `Q315` · not captured | 0.986 | not captured | not captured | llm_confirmed (not captured) | Tab1:row22:col2 |
+| variability | v, degrees of freedom of t-distributed residual error — Estimate | `Q315` · not captured | 6.60 | not captured | not captured | llm (not captured) | Tab1:row23:col1 |
+| variability | v, degrees of freedom of t-distributed residual error — RSE (%) | `Q315` · not captured | 1.81 | not captured | not captured | llm (not captured) | Tab1:row23:col2 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,14 +57,28 @@ not matched (stem Goulooze_2022_2)
 </details>
 
 
+## Biomarker turnover model
+
+This page models **serum potassium** as an endogenous turnover response, separately from the drug's pharmacokinetics.
+
+- **driver tier:** `cited_driver`
+- **turnover quantities linked:** production_rate
+- **effect blocks:** 1
+  - finerenone: indirect_response_iii on production; linked values: concentration_50, effect_max
+- **turnover review:** <span class="pk-badge pk-badge--green">accepted (caveats)</span>
+  - `B4_steady_state` — skipped: production and loss/clearance parameters are incomplete
+  - `B4_effect_1` — skipped: effect size, potency, baseline or driver Css unavailable
+  - `B4_driver_link` — pass: driver source is linked
+
+
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.65 (13/20 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.522 (12/23 fields) | 11 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -68,9 +86,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `effect_direction` | stimulation | unknown | mismatch |
 | `gpt-oss:120b` | `effect_form` | proportional | unknown | mismatch |
 | `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 1.49 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q320]` | 1.49 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q324]` | 4.50 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 0.140 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | not captured | 10.1 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q86]` | not captured | 4.50 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q86]` | not captured | 0.140 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q87]` | not captured | 0.0204 | only_one_extracted |
 
 </details>
 
@@ -82,9 +104,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

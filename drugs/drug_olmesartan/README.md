@@ -1,0 +1,178 @@
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09C&quot;,&quot;href&quot;:&quot;atc/C09C.md&quot;},{&quot;label&quot;:&quot;Olmesartan&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Olmesartan_Kodati2017_reference&quot;,&quot;label&quot;:&quot;Kodati_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Ren2022_reference&quot;,&quot;label&quot;:&quot;Ren_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Olmesartan_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+
+# Olmesartan
+
+- **generic name:** Olmesartan
+- **ATC codes:** `C09CA08`, `C09DA08`, `C09DB02`, `C09DX03`
+- **DrugBank:** [DB00275](https://go.drugbank.com/drugs/DB00275) · **PubChem:** not captured
+- **groups:** approved, investigational
+
+## About
+
+**Description.** Olmesartan belongs to the angiotensin II receptor blocker (ARB) family of drugs, which also includes [telmisartan], [candesartan], [losartan], [valsartan], and [irbesartan]. ARBs selectively bind to angiotensin receptor 1 (AT1) and prevent the protein angiotensin II from binding and exerting its hypertensive effects, which include vasoconstriction, stimulation and synthesis of aldosterone and ADH, cardiac stimulation, and renal reabsorption of sodium, among others. Overall, olmesartan's physiologic effects lead to reduced blood pressure, lower aldosterone levels, reduced cardiac activity, and increased excretion of sodium. 
+
+Olmesartan also affects the renin-angiotensin aldosterone system (RAAS), which plays an important role in hemostasis and regulation of kidney, vascular, and cardiac functions. Pharmacological blockade of RAAS via  AT1 receptor blockade inhibits negative regulatory feedback within RAAS, which is a contributing factor to the pathogenesis and progression of cardiovascular disease, heart failure, and renal disease. In particular, heart failure is associated with chronic activation of RAAS, leading to inappropriate fluid retention, vasoconstriction, and ultimately a further decline in left ventricular function. ARBs have been shown to have a protective effect on the heart by improving cardiac function, reducing afterload, increasing cardiac output and preventing ventricular hypertrophy and remodelling.[A174154] 
+
+By comparison, the angiotensin-converting enzyme inhibitor (ACEi) class of medications (which includes drugs such as [ramipril], [lisinopril], and [perindopril]) inhibit the conversion of angiotensin I to angiotensin II through inhibition of the ACE enzyme. However, this does not prevent the formation of all angiotensin II within the body. The angiotensin II receptor blocker (ARB) family of drugs unique in that it blocks all angiotensin II activity, regardless of where or how it was synthesized. 
+
+Olmesartan is commonly used for the ma
+
+**Indication.** Olmesartan is indicated for the treatment of hypertension either alone or in combination with other antihypertensive agents.[F4709,F4712,A173869] 
+
+Olmesartan is also used off-label for the management Type 2 Diabetes-associated nephropathy, heart failure, and post-myocardial infarction, particularly in patients who are unable to tolerate ACE inhibitors.[A178153,A185912,A185915] ARBs such as olmesartan have been shown in a number of large-scale clinical outcomes trials to improve cardiovascular outcomes including reducing risk of myocardial infarction, stroke, the progression of heart failure, and hospitalization.[A174124,A178153,A173869,A185324,A185327,A185333,A185342,A185345] Like other ARBs, olmesartan blockade of RAAS slows the progression of diabetic nephropathy due to its renoprotective effects.[A185906,A185909,A185912]
+
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| olmesartan (olmesartan (RNH-6270)) | parent | 446.511 | C24H26N6O3 | PubChem | [158781](https://pubchem.ncbi.nlm.nih.gov/compound/158781) | Kodati_2017, Yoshihara_2005 |
+| olmesartan medoxomil | metabolite | 558.595 | C29H30N6O6 | PubChem | [130881](https://pubchem.ncbi.nlm.nih.gov/compound/130881) | Kodati_2017, Yoshihara_2005 |
+
+## Extraction summary
+
+| extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-30 18:38 | 18:30 | 2/0/2 | 1/0/0 | 2/0/0 | 144,192/36,626 | openai / gpt-6-luna | 12 | 2/11 | 10/2 | 0 |
+
+## popPK records
+
+| status | detail | model | model structure | params | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> | [Kodati_2017_reference](drugs/drug_olmesartan/Olmesartan_Kodati2017_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) |
+| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">in vitro</span> | [Ren_2022_reference](drugs/drug_olmesartan/Olmesartan_Ren2022_reference.md) | ▶ model + simulator | 1-compartment, IV | 2 | Ren T et al., Pharmacodynamic model of slow reversibl…, Journal of pharmacokinetics… (2022) | [10.1007/s10928-022-09822-y](https://doi.org/10.1007/s10928-022-09822-y) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: unreported model parameter default(s): F</sub><br><sub>route_to: `scholar`</sub> | [Thoueille_2023_reference](drugs/drug_olmesartan/Olmesartan_Thoueille2023_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Thoueille P et al., Population pharmacokinetic modelling to…, The Journal of antimicrobia… (2023) | [10.1093/jac/dkad103](https://doi.org/10.1093/jac/dkad103) |
+| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Yoshihara_2005_reference](drugs/drug_olmesartan/Olmesartan_Yoshihara2005_reference.md) | — | 1-compartment (no model) | 6 | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Zakrocka_2019_KAT_II](drugs/drug_olmesartan/pd_Zakrocka_2019_KAT_II.md) | kynurenine aminotransferase II activity ← irbesartan · direct Emax (saturable) effect | — | Zakrocka I et al., Angiotensin II type 1 receptor blockers…, Naunyn-Schmiedeberg's archi… (2019) | [10.1007/s00210-018-1572-7](https://doi.org/10.1007/s00210-018-1572-7) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span> | [Zakrocka_2019_KYNA](drugs/drug_olmesartan/pd_Zakrocka_2019_KYNA.md) | kynurenic acid production ← irbesartan · direct Emax (saturable) effect | — | Zakrocka I et al., Angiotensin II type 1 receptor blockers…, Naunyn-Schmiedeberg's archi… (2019) | [10.1007/s00210-018-1572-7](https://doi.org/10.1007/s00210-018-1572-7) |
+
+## Pharmacogenomics (PGx)
+
+| status | gene | affects | mechanism | detail | citation | doi |
+|---|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | **ABCB1** | `Q22` · CL | transport | [Soria-Chacartegui_2023](drugs/drug_olmesartan/pgx_Soria_Chacartegui_2023_ABCB1_Q22.md) | Soria-Chacartegui P et al., Impact of Sex and Genetic Variation in…, International journal of mo… (2023) | [10.3390/ijms242015265](https://doi.org/10.3390/ijms242015265) |
+| <span class="pk-badge pk-badge--green">extracted</span> | **SLC22A1** | `Q22` · CL | transport | [Soria-Chacartegui_2023](drugs/drug_olmesartan/pgx_Soria_Chacartegui_2023_SLC22A1_Q22.md) | Soria-Chacartegui P et al., Impact of Sex and Genetic Variation in…, International journal of mo… (2023) | [10.3390/ijms242015265](https://doi.org/10.3390/ijms242015265) |
+
+<details class="legend">
+<summary>What the PGx columns mean</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>gene</code></td><td>the gene whose variants the record is about. One record per gene, so a paper reporting several genes appears on several rows.</td></tr><tr><td><code>affects</code></td><td>the PK or PD parameter the genotype SHIFTS, as an ontology Q-code plus its name — Q22 = clearance, Q27 = CL/F (apparent clearance), Q32 = Cmax, Q88 = AUC, Q40 = Fab, Q321 = EC50, Q322 = IC50, Q305 = kfm. The record's per-phenotype theta is a multiplier ON that parameter: a poor-metaboliser theta shifts this value, it does not supply one. Two values are NOT parameters — Q100 (NIL) is an association or risk finding with no parameter target, and `safety` is an adverse-reaction risk such as an HLA allele. A PA… id instead of a Q-code marks a record derived from a ClinPGx/PharmGKB guideline lookup rather than read out of the paper.</td></tr><tr><td><code>mechanism</code></td><td>how the gene acts: metabolism, transport, target, formation, safety_allele, or unknown.</td></tr><tr><td><code>detail</code></td><td>the paper stem, linking to the full record page.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
+
+## ADME sites
+
+Where this drug is handled, from DrugBank's curated enzymes / transporters / carriers and the KB's PGx genes, mapped to tissue through the ADME gene table. Compare it with other drugs on the [Sites & interactions](sites?drugs=olmesartan) page (add drugs there; the set becomes a link).
+
+| process | tissue | actors (role) | evidence |
+|---|---|---|---|
+| absorption | blood-brain barrier | `ABCB1` transport | paper PGx gene |
+| absorption | kidney | `ABCB1` transport | paper PGx gene |
+| absorption | liver | `ABCB1` transport | paper PGx gene |
+| absorption | placenta | `ABCB1` transport | paper PGx gene |
+| absorption | small intestine | `ABCB1` transport | paper PGx gene |
+| absorption | testis | `ABCB1` transport | paper PGx gene |
+| metabolism | liver | `SLC22A1` transport, `SLCO1B1` substrate, `SLCO1B3` substrate | DrugBank actor |
+| metabolism | small intestine | <sub>“…bioactivated by ester hydrolysis to olmesartan during absorption from the gastrointestinal…”</sub> | prose |
+| excretion | bile duct | <sub>“…elimination route of olmesartan is in the unchanged form through the feces…”</sub> | prose |
+| excretion | kidney | `ABCC2` inducer/substrate | DrugBank actor |
+| excretion | liver | `ABCB11` inhibitor, `ABCC2` inducer/substrate | DrugBank actor |
+| excretion | small intestine | `ABCC2` inducer/substrate | DrugBank actor |
+
+<sub>Actors without a tissue in the table: AGTR1 (target).</sub>
+
+<details class="legend">
+<summary>Badge legend — what each badge means</summary>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
+<p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
+</details>
+
+## Coverage
+
+- **PubMed hits:** 121 matched, 57 returned
+- **screened:** 2  ·  **relevant:** 2
+- **records:** 4  ·  extracted 2  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **scholar-agent fallback query used:** not captured
+
+## Full text wanted
+
+_12 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+
+| save as | citation | domain | score | DOI | PubMed | why wanted |
+|---|---|---|---|---|---|---|
+| `Chae_2014.pdf` | Chae JW et al., Development of a population pharmacokin…, International journal of cl… (2014) | popPK | 10 | [10.5414/CP202046](https://doi.org/10.5414/CP202046) | [24849193](https://pubmed.ncbi.nlm.nih.gov/24849193) | This is a population-PK study of olmesartan medoxomil, but no numeric parameter values are provided in the evidence. |
+| `Kodati_2017.pdf` | Kodati D et al., Population Pharmacokinetic Modeling of…, European journal of drug me… (2017) | popPK | 10 | [10.1007/s13318-016-0371-0](https://doi.org/10.1007/s13318-016-0371-0) | [27535556](https://pubmed.ncbi.nlm.nih.gov/27535556) | The evidence reports numeric olmesartan CL/F and V/F values from a population-PK model. |
+| `Yoshihara_2005.pdf` | Yoshihara K et al., Population pharmacokinetics of olmesart…, Clinical pharmacokinetics (2005) | popPK | 10 | [10.2165/00003088-200544120-00011](https://doi.org/10.2165/00003088-200544120-00011) | [16372830](https://pubmed.ncbi.nlm.nih.gov/16372830) | The evidence reports a population two-compartment model and numeric olmesartan disposition parameters. |
+| `Rohatagi_2008.pdf` | Rohatagi S et al., Evaluation of population pharmacokineti…, Journal of clinical pharmac… (2008) | popPK | 9 | [10.1177/0091270008317847](https://doi.org/10.1177/0091270008317847) | [18490496](https://pubmed.ncbi.nlm.nih.gov/18490496) | Olmesartan population-PK models are described, but no numeric parameter values are included in the provided evidence. |
+| `Tanigawara_2009.pdf` | Tanigawara Y et al., Comparative pharmacodynamics of olmesar…, Drug metabolism and pharmac… (2009) | popPK | 9 | [10.2133/dmpk.24.376](https://doi.org/10.2133/dmpk.24.376) | [19745564](https://pubmed.ncbi.nlm.nih.gov/19745564) | Olmesartan is modeled as a study drug, but no numeric disposition parameter values are provided in the evidence. |
+| `Derobertmasure_2023.pdf` | Derobertmasure A et al., Dried Urine Spot Analysis for assessing…, Journal of chromatography.… (2023) | pd | 5 | [10.1016/j.jchromb.2022.123539](https://doi.org/10.1016/j.jchromb.2022.123539) | [36867996](https://www.ncbi.nlm.nih.gov/pubmed/36867996) | metadata signals extractable PD data (PK/PD) |
+| `Floerl_2022.pdf` | Floerl S et al., Functional characterization and compari…, European journal of pharmac… (2022) | pd | 4 | [10.1016/j.ejps.2022.106217](https://doi.org/10.1016/j.ejps.2022.106217) | [35644507](https://www.ncbi.nlm.nih.gov/pubmed/35644507) | metadata signals extractable PD data (IC50) |
+| `Endo_2012.pdf` | Endo S et al., Association study of genetic polymorphi…, Journal of human genetics (2012) | pgx | 8 | [10.1038/jhg.2012.63](https://doi.org/10.1038/jhg.2012.63) | [22695893](https://www.ncbi.nlm.nih.gov/pubmed/22695893) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Kim_2012.pdf` | Kim CO et al., Influence of ABCC2, SLCO1B1, and ABCG2…, Journal of cardiovascular p… (2012) | pgx | 8 | [10.1097/FJC.0b013e3182576098](https://doi.org/10.1097/FJC.0b013e3182576098) | [22494992](https://www.ncbi.nlm.nih.gov/pubmed/22494992) | metadata signals extractable PGX data (ABCC2, PK/PD-context) |
+| `Pei_2018.pdf` | Pei Q et al., Repaglinide-irbesartan drug interaction…, European journal of clinica… (2018) | pgx | 8 | [10.1007/s00228-018-2477-6](https://doi.org/10.1007/s00228-018-2477-6) | [29748863](https://www.ncbi.nlm.nih.gov/pubmed/29748863) | metadata signals extractable PGX data (SLCO1B1, PK/PD-context) |
+| `Weiss_2010.pdf` | Weiss J et al., Interaction of angiotensin receptor typ…, Biopharmaceutics & drug dis… (2010) | pgx | 7 | [10.1002/bdd.699](https://doi.org/10.1002/bdd.699) | [20222053](https://www.ncbi.nlm.nih.gov/pubmed/20222053) | metadata signals extractable PGX data (ABCB1, PK/PD-context) |
+| `Yang_2016.pdf` | Yang R et al., Drug Interactions with Angiotensin Rece…, Current drug metabolism (2016) | pgx | 7 | [10.2174/1389200217666160524143843](https://doi.org/10.2174/1389200217666160524143843) | [27216792](https://www.ncbi.nlm.nih.gov/pubmed/27216792) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
+
+<sub>queue written 2026-09-30T18:31:59.549499+00:00</sub>
+
+## Screened and excluded
+
+| domain | paper | verdict | relevance | extractability | reason |
+|---|---|---|---|---|---|
+| PD | Abd_2026 | not_relevant | 2 | 1 | The study reports antihypertensive effect-time summaries for two formulations, but no dose- or exposure-response analysis or numeric concentration-effect parameters. |
+| popPK | Battini_2024 | irrelevant | 0 | 0 | This is a drug-interaction signal-detection study and reports no olmesartan disposition parameters. |
+| PD | Battini_2024 | not_relevant | 0 | 0 | This FAERS DDI signal-detection study does not analyze an olmesartan dose- or concentration-effect relationship or report derivable PD parameters. |
+| PD | Busby_2018 | not_relevant | 0 | 0 | The study reports an observational, class-level association between ARB prescription duration and cancer mortality, not an Olmesartan-specific pharmacodynamic or dose-response relationship. |
+| popPK | Cabré_2026 | irrelevant | 0 | 0 | This is a narrative review with no olmesartan pharmacokinetic parameters or numeric values. |
+| PD | Cabré_2026 | not_relevant | 0 | 0 | The text reports no Olmesartan exposure- or dose-response analysis or numeric PD parameters. |
+| popPK | Chae_2014 | relevant | 10 | 0 | This is a population-PK study of olmesartan medoxomil, but no numeric parameter values are provided in the evidence. |
+| PD | Derobertmasure_2023 | not_relevant | 0 | 0 | The paper assesses olmesartan exposure using dried urine spot analysis but reports no dose- or concentration-effect relationship or numeric PD parameters. |
+| popPK | Erbe_2006 | irrelevant | 0 | 0 | Olmesartan is only mentioned as a negative comparator, and no pharmacokinetic parameters or values are reported. |
+| PD | Erbe_2006 | not_relevant | 0 | 0 | Olmesartan showed no PPARγ ligand activity, and the paper reports no olmesartan-specific dose- or exposure-response relationship or numeric PD parameters. |
+| PD | Floerl_2022 | not_relevant | 0 | 0 | The paper characterizes OAT1-mediated drug uptake, not an olmesartan pharmacodynamic or dose/exposure-response relationship. |
+| PGx | Floerl_2025 | not_relevant | 0 | 0 | The paper does not report an olmesartan-related pharmacogenomic effect on any PK or PD parameter. |
+| PD | Hsieh_2017 | not_relevant | 1 | 0 | A single case reports improvement after stopping fixed-dose Sevikar and speculates about causation, but provides no dose- or concentration-response analysis or derivable numeric PD parameters for olmesartan. |
+| PGx | Kamiyama_2007 | not_relevant | 0 | 0 | No gene variant, genotype, or phenotype is evaluated; the study reports olmesartan’s in vitro inhibition of CYP2C9. |
+| popPK | Kim_2022 | irrelevant | 0 | 0 | Olmesartan is tested for neuroprotection, with no pharmacokinetic disposition parameters or values reported. |
+| PD | Kim_2022 | not_relevant | 1 | 0 | Olmesartan is reported to protect dopamine neurons, but no dose- or concentration-response relationship or numeric PD parameters are provided. |
+| popPK | Kitamura_2007 | irrelevant | 0 | 0 | This is a glucose-outcomes study, not a PK study, and reports no olmesartan disposition parameters. |
+| PGx | Kwon_2018 | not_relevant | 0 | 0 | The study reports no gene variant, genotype, or phenotype effects on olmesartan PK or PD parameters. |
+| PGx | Lambert_2016 | not_relevant | 0 | 0 | The report describes a drug interaction involving ibrutinib and verapamil, not a pharmacogenomic effect on olmesartan. |
+| popPK | Morita_2026 | irrelevant | 0 | 0 | The study models pemetrexed, not olmesartan, and reports no olmesartan parameters. |
+| PD | Morita_2026 | not_relevant | 0 | 0 | The model relates pemetrexed exposure to neutrophil dynamics; renin-angiotensin system inhibitors are only a covariate, with no Olmesartan-specific exposure- or dose-response relationship. |
+| PD | Nakamura_2005 | not_relevant | 3 | 0 | Reports dose-dependent retinal effects and a dose associated with near-normalization, but provides no numeric effect-versus-dose or exposure relationship or derivable PD parameters. |
+| PGx | Pei_2018 | not_relevant | 0 | 0 | The paper studies SLCO1B1 genotype effects on repaglinide pharmacokinetics/pharmacodynamics; it reports no genotype-dependent PK or PD parameter for olmesartan. |
+| popPK | Ren_2022 | irrelevant | 1 | 0 | This review mentions olmesartan qualitatively but provides no numeric olmesartan disposition parameters in the evidence. |
+| PD | Ren_2022 | not_relevant | 1 | 0 | The PK/PD fits and numeric response parameters are for candesartan and noberastine, not olmesartan; any mention or binding-kinetic listing for olmesartan does not provide an olmesartan exposure- or dose-response relationship. |
+| popPK | Rohatagi_2008 | relevant | 9 | 0 | Olmesartan population-PK models are described, but no numeric parameter values are included in the provided evidence. |
+| PGx | Senda_2017 | not_relevant | 0 | 0 | The paper reports in vitro inhibition of arachidonic acid metabolism by olmesartan, not a genetic effect on its PK or PD. |
+| PD | Shimizu_2021 | not_relevant | 3 | 1 | The study reports an inverse olmesartan dose-response direction, but provides no olmesartan dose-specific effect estimates, dose levels, or trend-test statistic; the ARB-class OR is not an extractable olmesartan dose-response parameter. |
+| PD | Shukla_2023 | not_relevant | 0 | 0 | The study reports only in-silico docking and molecular-dynamics binding results for olmesartan medoxomil; it provides no dose- or exposure-effect analysis or numeric PD parameters. |
+| popPK | Song_2016 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
+| popPK | Srinivas_2017 | irrelevant | 0 | 0 | no_text gate: only 142 chars of text extracted (&lt; 400) |
+| PGx | Suwannakul_2008 | not_relevant | 0 | 0 | not captured |
+| PGx | Tang_2026 | not_relevant | 0 | 0 | No pharmacogenomic effect of a gene variant, genotype, or phenotype on an olmesartan PK/PD parameter is reported. |
+| popPK | Tanigawara_2009 | relevant | 9 | 0 | Olmesartan is modeled as a study drug, but no numeric disposition parameter values are provided in the evidence. |
+| PD | Tanigawara_2009 | not_relevant | 8 | 1 | A population PK/PD model and an olmesartan Emax effect are described, but no numeric PD parameters or effect-versus-exposure values are stated or derivable from the text. |
+| popPK | Tharmalingam_2026 | irrelevant | 0 | 0 | The paper studies candesartan cilexetil, not olmesartan, and reports no olmesartan disposition parameters. |
+| PD | Tharmalingam_2026 | not_relevant | 0 | 0 | The paper studies candesartan cilexetil, not olmesartan, and reports no olmesartan exposure- or dose-response relationship. |
+| popPK | Thoueille_2023 | irrelevant | 0 | 0 | The study models tenofovir, not olmesartan, and provides no olmesartan parameter values. |
+| PD | Thoueille_2023 | not_relevant | 0 | 0 | The paper models tenofovir pharmacokinetics and renal-function effects on exposure; it contains no olmesartan analysis or pharmacodynamic exposure-response relationship. |
+| popPK | Tonial_2025 | irrelevant | 0 | 0 | This is an outcomes study and reports no quantitative olmesartan pharmacokinetic parameters. |
+| PD | Tonial_2025 | not_relevant | 0 | 0 | The study reports clinical outcome risk ratios for co-prescribed ARBs and antibiotics, not an olmesartan dose- or concentration-effect relationship or numeric PD parameters. |
+| PGx | Weiss_2010 | not_relevant | 0 | 0 | The study examines olmesartan’s in-vitro induction of MRP2 expression, not a genetic variant, genotype, or phenotype effect on an olmesartan PK/PD parameter. |
+| PGx | Yang_2016 | not_relevant | 0 | 0 | This review discusses CYP-mediated drug interactions but reports no gene variant, genotype, or phenotype effect on olmesartan PK or PD. |
+| popPK | Yang_2025 | irrelevant | 0 | 0 | This review reports no olmesartan disposition parameters, and no numeric values are provided. |
+| PD | Yang_2025 | not_relevant | 0 | 0 | The text does not mention olmesartan or report an olmesartan exposure–response or dose–response relationship. |
+| popPK | Yatabe_2009 | irrelevant | 0 | 0 | This is an in-vitro mechanistic study with no olmesartan disposition parameters; the reported EC50 is pharmacodynamic. |
+| popPK | Zannad_2007 | irrelevant | 0 | 0 | This is an efficacy overview and reports no quantitative olmesartan pharmacokinetic disposition parameters. |
+| popPK | Zhang_2024 | irrelevant | 0 | 0 | This is a PDE5-inhibitor safety study and provides no olmesartan pharmacokinetic parameters. |
+| PD | Zhang_2024 | not_relevant | 0 | 0 | The paper analyzes FAERS hearing-impairment signals for PDE5 inhibitors, not olmesartan, and reports no numeric PD or exposure-response relationship. |
+
+---
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-30 18:32 UTC</sub>

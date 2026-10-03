@@ -1,5 +1,4 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;pioglitazone&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Pioglitazone_Kadam2013_reference&quot;,&quot;label&quot;:&quot;Kadam_2013_reference&quot;,&quot;href&quot;:&quot;drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 # pioglitazone
 
@@ -17,17 +16,40 @@ Thiazolidinediones, including pioglitazone, have fallen out of favor in recent y
 
 **Indication.** Pioglitazone is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.[L11416] It is also available in combination with [metformin],[L11419] [glimepiride],[L11422] or [alogliptin][L11425] for the same indication.
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| pioglitazone | parent | 356.439 | C19H20N2O3S | DrugBank | [4829](https://pubchem.ncbi.nlm.nih.gov/compound/4829) | Kadam_2013 |
+| carboxylic acid metabolite | metabolite | — (mass units only) | — | — | — | — |
+| enzalutamide | metabolite | 464.437 | C21H16F4N4O2S | PubChem | [15951529](https://pubchem.ncbi.nlm.nih.gov/compound/15951529) | Gibbons_2015 |
+| N-desmethyl enzalutamide | metabolite | 450.41 | C20H14F4N4O2S | PubChem | [70678916](https://pubchem.ncbi.nlm.nih.gov/compound/70678916) | Gibbons_2015 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 18:55 | 4:12 | 0/0/1 | 0/0/0 | 0/0/4 | 82,244/5,369 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
+| 2026-10-01 17:59 | 7:36 | 0/2/0 | 0/0/1 | 0/0/5 | 128,733/19,275 | ollama / qwen3.8:27b-mtp-q8_0 | 6 | 2/4 | 6/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: disposition incomplete — only volume extracted — the engineer needs both; the m…</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | held back | 2-compartment, oral | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Gibbons_2015_reference](drugs/drug_pioglitazone/Pioglitazone_Gibbons2015_reference.md) | — | general linear (no model) | 5 | Gibbons JA et al., Pharmacokinetic Drug Interaction Studie…, Clinical pharmacokinetics (2015) | [10.1007/s40262-015-0283-1](https://doi.org/10.1007/s40262-015-0283-1) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.7). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C8 unreachable/orphan compartment or unlinked metabolite</sub><br><sub>route_to: `human_review`</sub> | [Kadam_2013_reference](drugs/drug_pioglitazone/Pioglitazone_Kadam2013_reference.md) | held back | 2-compartment, oral | 3 | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_ALT](drugs/drug_pioglitazone/pd_Tran_2026_ALT.md) | ALT ← pioglitazone · time-to-event model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_AST](drugs/drug_pioglitazone/pd_Tran_2026_AST.md) | AST ← pioglitazone · time-to-event model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_ballooning](drugs/drug_pioglitazone/pd_Tran_2026_ballooning.md) | ballooning ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_fibrosis](drugs/drug_pioglitazone/pd_Tran_2026_fibrosis.md) | fibrosis ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_inflammation](drugs/drug_pioglitazone/pd_Tran_2026_inflammation.md) | inflammation ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Tran_2026_steatosis](drugs/drug_pioglitazone/pd_Tran_2026_steatosis.md) | steatosis ← pioglitazone · categorical (graded) response model | — | Tran QT et al., Model-Based Meta-Analysis of the Relati…, CPT: pharmacometrics & syst… (2026) | [10.1002/psp4.70034](https://doi.org/10.1002/psp4.70034) |
 
 ## Pharmacogenomics (PGx)
 
@@ -36,7 +58,8 @@ Thiazolidinediones, including pioglitazone, have fallen out of favor in recent y
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **CYP2C8** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | metabolism | [Kadam_2013](drugs/drug_pioglitazone/pgx_Kadam_2013_CYP2C8_Q100.md) | Kadam R et al., Effect of Cytochrome P450 2C8*3 on the…, Biological & pharmaceutical… (2013) | [10.1248/bpb.b12-00657](https://doi.org/10.1248/bpb.b12-00657) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **ADORA1** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Kawaguchi-Suzuki_2018](drugs/drug_pioglitazone/pgx_Kawaguchi_Suzuki_2018_ADORA1_Q100.md) | Kawaguchi-Suzuki M et al., A Genetic Score Associates With Pioglit…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00752](https://doi.org/10.3389/fphar.2018.00752) |
 | <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **CYP2C8** | `Q27` · CL/F | metabolism | [Kawaguchi-Suzuki_2018](drugs/drug_pioglitazone/pgx_Kawaguchi_Suzuki_2018_CYP2C8_Q27.md) | Kawaguchi-Suzuki M et al., A Genetic Score Associates With Pioglit…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00752](https://doi.org/10.3389/fphar.2018.00752) |
-| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> | **LPL** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Kawaguchi-Suzuki_2018](drugs/drug_pioglitazone/pgx_Kawaguchi_Suzuki_2018_LPL_Q100.md) | Kawaguchi-Suzuki M et al., A Genetic Score Associates With Pioglit…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00752](https://doi.org/10.3389/fphar.2018.00752) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span> | **LPL** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | unknown | [Kawaguchi-Suzuki_2018](drugs/drug_pioglitazone/pgx_Kawaguchi_Suzuki_2018_LPL_Q100.md) | Kawaguchi-Suzuki M et al., A Genetic Score Associates With Pioglit…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00752](https://doi.org/10.3389/fphar.2018.00752) |
+| <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span> | **PPARG** | `Q100` — no parameter target — an association/risk finding, not a parameter shift | target | [Kawaguchi-Suzuki_2018](drugs/drug_pioglitazone/pgx_Kawaguchi_Suzuki_2018_PPARG_Q100.md) | Kawaguchi-Suzuki M et al., A Genetic Score Associates With Pioglit…, Frontiers in pharmacology (2018) | [10.3389/fphar.2018.00752](https://doi.org/10.3389/fphar.2018.00752) |
 
 <details class="legend">
 <summary>What the PGx columns mean</summary>
@@ -49,38 +72,39 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
+| absorption | small intestine | <sub>“…Following oral administration of pioglitazone…”</sub> | prose |
 | distribution | blood | `ALB` substrate | DrugBank actor |
 | metabolism | brain | `MAOB` inhibitor | DrugBank actor |
 | metabolism | liver | `CYP2C8` inhibitor/metabolism/substrate, `CYP3A4` inducer/substrate, `SLCO1B1` inhibitor, `SLCO1B3` inhibitor | DrugBank actor |
 | metabolism | lung | `CYP1A1` substrate | DrugBank actor |
 | metabolism | platelet | `MAOB` inhibitor | DrugBank actor |
 | metabolism | small intestine | `CYP1A1` substrate, `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | bile duct | <sub>“…esumed to be through the excretion of unchanged drug in the bile or as metabolites in the…”</sub> | prose |
-| excretion | kidney | <sub>“…30% of orally administered pioglitazone is recovered in the urine. The bulk of its elimina…”</sub> | prose |
+| excretion | bile duct | <sub>“…excretion of unchanged drug in the bile…”</sub> | prose |
+| excretion | kidney | <sub>“…Approximately 15-30% of orally administered pioglitazone is recovered in the urine…”</sub> | prose |
+| excretion | small intestine | <sub>“…as metabolites in the feces…”</sub> | prose |
 
-<sub>Actors without a tissue in the table: ADORA1 (target), LPL (target), PPARG (target).</sub>
+<sub>Actors without a tissue in the table: ADORA1 (target), LPL (unknown), PPARG (target).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## Coverage
 
 - **PubMed hits:** 231 matched, 62 returned
-- **screened:** 2  ·  **relevant:** 2
-- **records:** 1  ·  extracted 0  ·  needs_review 1  ·  rejected 0  ·  stale 0
+- **screened:** 6  ·  **relevant:** 2
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_20 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_19 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Clark_2012.pdf` | Clark MH et al., Pharmacokinetics of pioglitazone in lea…, Journal of veterinary pharm… (2012) | popPK | 9 | [10.1111/j.1365-2885.2011.01341.x](https://doi.org/10.1111/j.1365-2885.2011.01341.x) | [22612529](https://pubmed.ncbi.nlm.nih.gov/22612529) | The study reports quantitative pharmacokinetic parameters (bioavailability, half-life, Tmax, Cmax, AUC) for pioglitazone in cats, with values explicitly listed in the abstract text. |
-| `Sherwin_2011.pdf` | Sherwin CM et al., Optimal study design for pioglitazone i…, Journal of pharmacokinetics… (2011) | popPK | 8 | [10.1007/s10928-011-9202-8](https://doi.org/10.1007/s10928-011-9202-8) | [21667139](https://pubmed.ncbi.nlm.nih.gov/21667139) | The paper describes a population PK modeling study for pioglitazone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text, which only mentions that estimates were comparable to literature values. |
+| `Clark_2012.pdf` | Clark MH et al., Pharmacokinetics of pioglitazone in lea…, Journal of veterinary pharm… (2012) | popPK | 10 | [10.1111/j.1365-2885.2011.01341.x](https://doi.org/10.1111/j.1365-2885.2011.01341.x) | [22612529](https://pubmed.ncbi.nlm.nih.gov/22612529) | The study reports quantitative pharmacokinetic parameters (bioavailability, half-life, Tmax, Cmax, AUC) for pioglitazone in cats, though specific clearance and volume values are not explicitly listed in the provided text. |
 | `El-Shoukrofy_2025.pdf` | El-Shoukrofy MS et al., Novel thiazolones for the simultaneous…, European journal of medicin… (2025) | pd | 5 | [10.1016/j.ejmech.2025.117415](https://doi.org/10.1016/j.ejmech.2025.117415) | [40022874](https://www.ncbi.nlm.nih.gov/pubmed/40022874) | metadata signals extractable PD data (IC50) |
 | `Goto_2017.pdf` | Goto A et al., Influence of the pharmacokinetic profil…, Biopharmaceutics & drug dis… (2017) | pd | 5 | [10.1002/bdd.2076](https://doi.org/10.1002/bdd.2076) | [28294376](https://www.ncbi.nlm.nih.gov/pubmed/28294376) | metadata signals extractable PD data (PK/PD) |
 | `Matthews_2009.pdf` | Matthews L et al., Thiazolidinediones are partial agonists…, Endocrinology (2009) | pd | 4 | [10.1210/en.2008-0196](https://doi.org/10.1210/en.2008-0196) | [18801908](https://www.ncbi.nlm.nih.gov/pubmed/18801908) | metadata signals extractable PD data (EC50) |
@@ -100,19 +124,19 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Takanohashi_2007.pdf` | Takanohashi T et al., Prediction of the metabolic interaction…, Drug metabolism and pharmac… (2007) | pgx | 7 | [10.2133/dmpk.22.409](https://doi.org/10.2133/dmpk.22.409) | [18159128](https://www.ncbi.nlm.nih.gov/pubmed/18159128) | metadata signals extractable PGX data (CYP2C9, PK/PD-context) |
 | `Yates_2012.pdf` | Yates P et al., Statistical methods for analysis of tim…, Drug metabolism and disposi… (2012) | pgx | 7 | [10.1124/dmd.112.047233](https://doi.org/10.1124/dmd.112.047233) | [22942318](https://www.ncbi.nlm.nih.gov/pubmed/22942318) | metadata signals extractable PGX data (CYP3A4, PK/PD-context) |
 
-<sub>queue written 2026-09-18T18:52:04.924206+00:00</sub>
+<sub>queue written 2026-10-01T17:52:41.891635+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Abushammala_2015 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for carbamazepine (the subject drug), while pioglitazone is only a co-administered agent used to test for drug-drug interactions. |
+| popPK | Abushammala_2015 | irrelevant | 1 | 0 | The study reports pharmacokinetic parameters for carbamazepine (the subject drug), while pioglitazone is only a co-administered agent used to test for drug-drug interactions, and no PK parameters for pioglitazone itself are provided. |
 | PGx | Abushammala_2015 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction in rabbits and does not report any pharmacogenomic effects or genetic variants. |
 | popPK | Aftab_2019 | irrelevant | 0 | 0 | The study is a clinical efficacy trial for bipolar depression and does not report any pharmacokinetic parameters for pioglitazone. |
 | PGx | Albassam_2019 | not_relevant | 0 | 0 | The paper studies the effect of pterostilbene on enzyme activity and does not involve pioglitazone or any genetic variants. |
-| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence assessment using non-compartmental analysis (AUC, Cmax) and does not report compartmental PK parameters (CL, V, ka) or population PK model values for pioglitazone. |
+| popPK | Almeida_2011 | irrelevant | 2 | 0 | The study is a bioequivalence assessment using non-compartmental analysis (AUC, Cmax) and does not report compartmental PK parameters (CL, V, ka) or population PK model values. |
 | PGx | Choi_2016 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (pioglitazone affecting nifedipine PK) in rats, not the effect of a gene variant on pioglitazone's PK/PD. |
-| PGx | Cui_2008 | not_relevant | 0 | 0 | The paper discusses pioglitazone only as a positive control in a PXR reporter assay to validate CYP3A4 induction prediction, and does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
+| PGx | Cui_2008 | not_relevant | 0 | 0 | The paper validates a PXR assay for CYP3A4 induction and mentions pioglitazone as a false positive in the assay, but it does not report any pharmacogenomic effect (gene variant/genotype) on pioglitazone's PK or PD parameters. |
 | PGx | Dawed_2016 | not_relevant | 0 | 0 | The study explicitly states that neither CYP2C8 nor SLCO1B1 variants had a significant impact on pioglitazone response. |
 | PGx | Dey_2020 | not_relevant | 0 | 0 | The paper describes a drug-drug interaction (pioglitazone inhibiting nateglinide metabolism) and a method development study, but does not report any pharmacogenomic effects (gene variants) on pioglitazone PK/PD. |
 | popPK | El-Shoukrofy_2025 | irrelevant | 0 | 0 | no_text gate: only 136 chars of text extracted (&lt; 400) |
@@ -120,43 +144,43 @@ _20 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | PGx | Gibbons_2015 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (enzalutamide with CYP substrates) but does not investigate the effect of gene variants or genotypes on pharmacokinetic or pharmacodynamic parameters. |
 | popPK | Goto_2017 | irrelevant | 0 | 0 | no_text gate: only 133 chars of text extracted (&lt; 400) |
 | PD | Goto_2017 | not_relevant | 0 | 0 | The provided text is only the title of the paper and does not contain the full text, data, or numeric PD parameters required to assess the exposure-response relationship. |
-| popPK | Gupta_2023 | irrelevant | 0 | 0 | The study focuses on the design and in vivo/in vitro efficacy of novel thiazolidine derivatives, using pioglitazone only as a reference comparator without reporting any pharmacokinetic parameters. |
+| popPK | Gupta_2023 | irrelevant | 0 | 0 | The study focuses on the design and antidiabetic efficacy of novel thiazolidine derivatives, using pioglitazone only as a reference drug for docking scores and biological activity, with no pharmacokinetic parameters reported. |
 | popPK | Hamrén_2012 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tesaglitazar, with pioglitazone serving only as a comparator arm without reported PK parameters. |
 | PD | Hamrén_2012 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetic-pharmacodynamic modeling of tesaglitazar, not pioglitazone; pioglitazone is only mentioned as a comparator arm without specific PD parameter analysis. |
 | PGx | He_2012 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics and pharmacodynamics of vildagliptin, not pioglitazone, and does not report any pharmacogenomic effects on pioglitazone. |
-| popPK | Hwang_2020 | irrelevant | 2 | 0 | The study is a drug-drug interaction trial reporting only relative geometric mean ratios (GMRs) for pioglitazone, not absolute quantitative disposition parameters (CL, V, ka, etc.). |
+| popPK | Hwang_2020 | irrelevant | 2 | 0 | The study reports only geometric mean ratios (GMRs) for interaction assessment and does not provide absolute quantitative disposition parameters (CL, V, t1/2) for pioglitazone. |
 | PD | Hwang_2020 | not_relevant | 2 | 1 | The study reports qualitative changes in glucose levels and PK parameters (Cmax, AUC) but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect model for pioglitazone. |
 | PGx | Jaakkola_2005 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (gemfibrozil/itraconazole) rather than the effect of a specific gene variant or genotype on pioglitazone pharmacokinetics. |
 | PGx | Jaakkola_2006 | not_relevant | 0 | 0 | The study investigates in vitro metabolism and drug-drug interactions with CYP inhibitors, not the effect of genetic variants (pharmacogenomics) on pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Kalliokoski_2010 | not_relevant | 0 | 0 | The paper explicitly states that SLCO1B1 genotype has no effect on the pharmacokinetics of pioglitazone. |
-| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Pioglitazone is a co-administered comparator drug in a study focused on tofogliflozin, and no quantitative PK parameters for pioglitazone are reported in the evidence. |
+| popPK | Kasahara_2016 | irrelevant | 1 | 0 | Pioglitazone is a co-administered comparator drug in a study focused on tofogliflozin, and no specific quantitative PK parameters (CL, V, etc.) for pioglitazone are reported in the evidence. |
 | PD | Kasahara_2016 | not_relevant | 0 | 0 | The study evaluates drug-drug interactions on tofogliflozin's PK/PD and co-administered drugs' PK, but does not report a concentration- or dose-response relationship for pioglitazone itself. |
-| PGx | Kawaguchi-Suzuki_2018 | not_relevant | 5 | 5 | The study reports associations between genetic variants and clinical outcomes (PD), but does not report fitted effect sizes for PK parameters or specific quantitative PD parameter changes. |
-| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of centchroman, with pioglitazone serving only as a co-administered drug for interaction testing. |
+| PGx | Kawaguchi-Suzuki_2018 | not_relevant | 5 | 5 | The paper reports pharmacodynamic associations (clinical response/histology) but does not report changes in pharmacokinetic parameters (e.g., AUC, Cmax) or fitted effect sizes for PK. |
+| popPK | Kumar_2006 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of centchroman in rats, with pioglitazone serving only as a co-administered drug for interaction testing, not as the subject drug. |
 | PD | Kumar_2006 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions on the pharmacokinetics of centchroman, not the pharmacodynamics of pioglitazone; pioglitazone is only a co-administered agent in a PK interaction study. |
-| PGx | Loer_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of clopidogrel and its interactions; pioglitazone is only mentioned as a co-administered drug in a DDI prediction, not as the subject of a pharmacogenomic study. |
+| PGx | Loer_2022 | not_relevant | 0 | 0 | The paper focuses on the pharmacokinetics of clopidogrel; pioglitazone is only mentioned as a co-administered drug in a drug-drug interaction (DDI) simulation, not as the subject of a pharmacogenomic study. |
 | PGx | Ly_2021 | not_relevant | 0 | 0 | The paper investigates CYP3A induction by pioglitazone in a transgenic mouse model, not the effect of a human gene variant on pioglitazone's PK/PD. |
 | PGx | Mamindla_2017 | not_relevant | 0 | 0 | The study investigates a drug-herb interaction (cinnamon) rather than a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Matthews_2009 | irrelevant | 0 | 0 | no_text gate: only 71 chars of text extracted (&lt; 400) |
 | PD | Matthews_2009 | not_relevant | 0 | 0 | The provided text is a title/abstract snippet regarding the mechanism of action (glucocorticoid receptor partial agonism) and does not contain any PK/PD data, exposure-response analysis, or numeric PD parameters for pioglitazone. |
 | PGx | Nowak_2002 | not_relevant | 0 | 0 | The study evaluates the effect of pioglitazone on CYP3A4 activity in a general population without stratifying by genotype or reporting pharmacogenomic effects. |
-| PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of a drug-drug interaction (gemfibrozil inhibiting CYP2C8) and mentions pioglitazone only as a substrate, without reporting any pharmacogenomic effects (gene variants) on its PK/PD parameters. |
-| popPK | Ormseth_2013 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of pioglitazone on rheumatoid arthritis disease activity and inflammation, not a pharmacokinetic study, and reports no PK parameters. |
-| popPK | Ormseth_2014 | irrelevant | 0 | 0 | The study is a clinical trial assessing vascular function and does not report any pharmacokinetic parameters for pioglitazone. |
+| PGx | Ogilvie_2006 | not_relevant | 0 | 0 | The paper investigates the mechanism of gemfibrozil's inhibition of CYP2C8 and its implications for drug-drug interactions, but it does not report any pharmacogenomic effects (gene variants) on the PK or PD of pioglitazone. |
+| popPK | Ormseth_2013 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of pioglitazone on rheumatoid arthritis disease activity and inflammation, reporting no pharmacokinetic parameters. |
+| popPK | Ormseth_2014 | irrelevant | 0 | 0 | The study is a clinical trial assessing vascular function and blood pressure outcomes, not a pharmacokinetic study, and reports no PK parameters. |
 | PGx | Pradeepkumar_2022 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (trazodone) rather than a pharmacogenomic effect (gene variant/genotype). |
 | popPK | Sears_2007 | irrelevant | 0 | 0 | no_text gate: only 86 chars of text extracted (&lt; 400) |
 | PD | Sears_2007 | not_relevant | 0 | 0 | The paper focuses on the molecular mechanism of PPARgamma promoter recruitment and transcriptional activity, not on pharmacokinetic or pharmacodynamic exposure-response modeling for pioglitazone. |
-| popPK | Sherwin_2011 | relevant | 8 | 0 | The paper describes a population PK modeling study for pioglitazone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided text, which only mentions that estimates were comparable to literature values. |
+| popPK | Sherwin_2011 | irrelevant | 2 | 0 | The paper describes a simulation-based optimal study design methodology and does not report original quantitative PK parameter values (CL, V, etc.) for pioglitazone in the provided evidence. |
 | PGx | Singh_2019 | not_relevant | 0 | 0 | The paper evaluates the PXR activation potential of pioglitazone to predict drug-drug interactions, but does not report pharmacogenomic effects of gene variants on PK or PD parameters. |
 | PGx | Spence_2020 | not_relevant | 0 | 0 | The paper discusses the clinical efficacy of pioglitazone in stroke prevention but does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
-| PGx | Sun_2017 | not_relevant | 0 | 0 | The paper discusses CYP3A4 induction and drug-drug interaction prediction models using pioglitazone as a perpetrator, but does not report any pharmacogenomic effects (gene variants) on its PK or PD parameters. |
-| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions involving nateglinide and does not report pharmacogenomic effects on pioglitazone. |
+| PGx | Sun_2017 | not_relevant | 0 | 0 | The paper focuses on in-vitro CYP3A4 induction modeling and perpetrator concentration corrections, not on pharmacogenomic effects of gene variants on pioglitazone PK/PD. |
+| PGx | Takanohashi_2007 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (inhibition of nateglinide metabolism by pioglitazone) in vitro, not pharmacogenomic effects of genetic variants on pioglitazone PK/PD. |
 | popPK | Tran_2026 | irrelevant | 0 | 0 | The study is a model-based meta-analysis of efficacy (histological outcomes and liver enzymes) rather than a pharmacokinetic study, and no PK parameters are reported. |
-| PGx | Türk_2020 | not_relevant | 2 | 0 | The paper focuses on a PBPK model for trimethoprim; pioglitazone is only mentioned as a co-administered drug for DDI validation, and no specific pharmacogenomic effect on pioglitazone PK/PD is reported. |
+| PGx | Türk_2020 | not_relevant | 0 | 0 | The paper focuses on a PBPK model for trimethoprim and its interactions; pioglitazone is only mentioned as a co-administered drug for validation, and no specific pharmacogenomic effect on pioglitazone PK/PD is reported. |
 | PGx | Wu_2025 | not_relevant | 0 | 0 | The paper investigates the effect of pioglitazone on kidney stone risk and lipid metabolism, not how genetic variants alter the pharmacokinetic or pharmacodynamic parameters of the drug itself. |
 | PGx | Yang_2020 | not_relevant | 0 | 0 | The paper uses pioglitazone as an example of a drug identified by a network-based discovery strategy for aging, but does not report any pharmacogenomic effects on its PK or PD parameters. |
 | PGx | Yates_2012 | not_relevant | 0 | 0 | The paper describes statistical methods for analyzing time-dependent inhibition of CYP3A4 and does not report any pharmacogenomic effects (gene variants) on pioglitazone PK/PD. |
 | PGx | van_2013 | not_relevant | 0 | 0 | The study investigates drug-drug interactions (pioglitazone inhibiting rosuvastatin transport) and does not report how a gene variant affects the PK/PD of pioglitazone. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 18:52 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-01 17:52 UTC</sub>

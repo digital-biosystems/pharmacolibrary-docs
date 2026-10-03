@@ -5,15 +5,18 @@
   "response"
  ],
  "parameters": {
-  "E0": 204.16666666666669,
-  "exposure_per_s": 1e-06
+  "E0": 212.67,
+  "EC50": 6.732e-05,
+  "Emax": 57.84,
+  "exposure_per_s": 1e-06,
+  "gamma": 1.851
  },
  "reference_peaks": {},
  "reference_points": {
-  "0": 204.16666666666669,
-  "6.731999999999999e-05": 6.823752228163993
+  "0": 212.67,
+  "6.731999999999999e-05": 7.107954545454545
  },
- "stop_time": 673.2,
+ "stop_time": 110.0,
  "template": "PD_IndirectTurnoverSweep",
  "template_fmu": "PD_IndirectTurnoverSweep.fmu",
  "units": {

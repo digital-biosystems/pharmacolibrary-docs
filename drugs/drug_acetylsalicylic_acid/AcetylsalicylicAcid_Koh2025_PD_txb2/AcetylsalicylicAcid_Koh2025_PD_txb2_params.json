@@ -5,8 +5,11 @@
   "response"
  ],
  "parameters": {
-  "E0": 2.639999999999999e-05,
-  "exposure_per_s": 999.9999999999999
+  "E0": 2.64e-05,
+  "EC50": 3.6,
+  "Emax": -1e-06,
+  "exposure_per_s": 1000.0,
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
@@ -52,7 +55,7 @@
  "x_axis": {
   "display_unit": "mol/L",
   "factor": 999.9999999999999,
-  "per_s": 999.9999999999999,
+  "per_s": 1000.0,
   "variable": "exposure"
  },
  "y_axis": {

@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Standing_2011 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Rahal2008_reference&quot;,&quot;label&quot;:&quot;Rahal_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Rahal2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Karunanidhi2026_reference&quot;,&quot;label&quot;:&quot;Karunanidhi_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Karunanidhi2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Standing2008_reference&quot;,&quot;label&quot;:&quot;Standing_2008_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2008_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diclofenac_Standing2011_reference&quot;,&quot;label&quot;:&quot;Standing_2011_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Standing2011_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Diclofenac_van2004_reference&quot;,&quot;label&quot;:&quot;van_2004_reference&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_van2004_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diclofenac — `Diclofenac_Standing2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,16 +21,18 @@
 
 The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The clearance value 16.5 with unit l·h(-1)·70 kg(-1) and the volume of distribution 0.23 L fell outside the physiological window, flagged as an implausible magnitude consistent with a unit/scale extraction error. A second reader recorded no value for the clearance (16.5) and for the bioavailability parameter (0.36), disagreeing with both entries in this record. Extracted — diclofenac: CL 16.5 l·h(-1) ·70 kg(-1), V 0.23 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on bioavailability: this record has 0.36, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability: this record has none, the second reading 0.36; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.525654+00:00) predates the upstream re-run (2026-10-01 02:33:26.100056+00:00). Current validate status: `rejected`.
+
 ## Citation
-Standing JF; Tibboel D; Korpela R; Olkkola KT et al. (2011). Paediatric anaesthesia 21
+Standing JF et al., Diclofenac pharmacokinetic meta-analysi…, Paediatric anaesthesia (2011)
   ·  DOI: [10.1111/j.1460-9592.2010.03509.x](https://doi.org/10.1111/j.1460-9592.2010.03509.x)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="rejected" stale="false" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="rejected" stale="true" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -43,7 +45,7 @@ Standing JF; Tibboel D; Korpela R; Olkkola KT et al. (2011). Paediatric anaesthe
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 16.5 | l·h(-1) ·70 kg(-1) | 0.00032083333333333334 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Standing_2011:abstract | — | not captured |
-| Vd | `Q61` · V | 0.23 | L | 0.00023 | L | not captured | review_gapfill (0.7) | Karunanidhi_2026:review | — | not captured |
+| essential oil volume | `Q61` · V | 1.0 | mL | 1e-06 | L | not captured | review_gapfill (0.7) | Lad_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,7 +58,7 @@ Standing JF; Tibboel D; Korpela R; Olkkola KT et al. (2011). Paediatric anaesthe
 - dropped unlinked row (NIL): 'Single doses' — extend the ontology if this is a real PK parameter (source ['Standing_2011:abstract', 'Standing_2011:abstract', 'Standing_2011:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Karunanidhi_2026's review values (primary lacked it)
+- gap-filled Q61 (V) from Lad_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -65,19 +67,19 @@ Standing JF; Tibboel D; Korpela R; Olkkola KT et al. (2011). Paediatric anaesthe
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (4/6 fields) | 2 |
+| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
 
 <details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.bioavailability.theta` | 0.36 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[clearance]` | 16.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 0.36 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose]` | not captured | 0.5 | only_one_extracted |
 
 </details>
 
@@ -93,13 +95,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 1 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Standing_2011:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Karunanidhi_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lad_2026:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.5 | not captured | not captured | ['Standing_2011:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.16e+03 L/h | not captured | not captured | ['Standing_2011:abstract'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.23 L | not captured | not captured | ['Karunanidhi_2026:review'] |
+| C9_phys_window_Q61 | fail | volume within physiological range | 0.001 L | not captured | not captured | ['Lad_2026:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -124,4 +126,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 03:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 02:33 UTC</sub>

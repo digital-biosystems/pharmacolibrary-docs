@@ -1,17 +1,19 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Reed_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bardol2025_reference&quot;,&quot;label&quot;:&quot;Bardol_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bardol2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Choi2016_reference&quot;,&quot;label&quot;:&quot;Choi_2016_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Choi2016_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Craft1983_reference&quot;,&quot;label&quot;:&quot;Craft_1983_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Craft1983_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Hagos2019_reference&quot;,&quot;label&quot;:&quot;Hagos_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Hagos2019_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Koehntop1986_reference&quot;,&quot;label&quot;:&quot;Koehntop_1986_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Koehntop1986_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Langley1988_reference&quot;,&quot;label&quot;:&quot;Langley_1988_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Langley1988_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1995_reference&quot;,&quot;label&quot;:&quot;Lemmens_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1995_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Bragg1995_reference&quot;,&quot;label&quot;:&quot;Bragg_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Bragg1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Egan1995_reference&quot;,&quot;label&quot;:&quot;Egan_1995_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Egan1995_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Lemmens1994_reference&quot;,&quot;label&quot;:&quot;Lemmens_1994_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Lemmens1994_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Reed2024_reference&quot;,&quot;label&quot;:&quot;Reed_2024_reference&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Reed2024_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_SEF&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 SEF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_SEF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fentanyl — `Fentanyl_Reed2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.96). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
+
+> **Species: horse.** This record comes from an animal study (horse), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
 **Model:** No model was generated from this record.
 
@@ -21,19 +23,21 @@
 
 The model structure is stated as two compartments, yet the record carries three-compartment parameters — V3 (0.351 L/kg) and the gamma half-life t1/2γ (1.85 h) — so that peripheral compartment has no path from the dose. Additionally, the reported AUClast (5243.4 h*pg/ml) uses a unit that could not be converted to SI, so the parameter was passed on without an SI value. A second reader also extracted different values for two parameters (0.104 and 6613.1) where this record has none, indicating unresolved extraction disagreement. Extracted — fentanyl: λ1 17.8, kel 2.12, t1/2α 0.039 h, t1/2β 0.327 h, t1/2γ 1.85 h, AUClast 5.24e+03 h*pg/ml, CL 722 ml/h/kg, V1 0.191 L/kg, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of a: this record has none, the second reading 0.104; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tvb: this record has none, the second reading 6613.1. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.255991+00:00) predates the upstream re-run (2026-10-01 18:07:24.586114+00:00). Current validate status: `rejected`.
+
 ## Citation
-Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et al. (2024). Frontiers in pain research (Lausanne, Switzerland) 5
+Reed RA et al., The pharmacokinetics and pharmacodynami…, Frontiers in pain research… (2024)
   ·  DOI: [10.3389/fpain.2024.1373759](https://doi.org/10.3389/fpain.2024.1373759)
 
 ## Model component
-<dbs-pgx drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="false" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="fentanyl" model-id="Fentanyl_Reed2024_reference" status="rejected" stale="true" population="healthy adult horses" measured-compound="fentanyl" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
-**Parameters:** 10 extracted.
+**Parameters:** 11 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -42,8 +46,8 @@ Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et 
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvAlpha (1/h) | `Q67` · λ1 | 17.8 | not captured | not captured | not captured | 34.8 | tv_prefix (0.95) | T2:row4:col1, T2:row4:col2 | — | not captured |
-| tvBeta (1/h) | `Q47` · kel | 2.12 | not captured | not captured | not captured | 15.4 | tv_prefix (0.95) | T2:row5:col1, T2:row5:col2 | — | not captured |
+| tvAlpha (1/h) | `Q67` · λ1 | 17.8 | not captured | not captured | not captured | 34.8 | tv_prefix (0.95) | T2:row4:col1, T2:row4:col2 | — | 0.12 (None% RSE) |
+| tvBeta (1/h) | `Q47` · kel | 2.12 | 1/h | 0.0005888888888888889 | 1/h | 15.4 | tv_prefix (0.95) | T2:row5:col1, T2:row5:col2 | — | 0.004 (None% RSE) |
 | t1/2α (h) | `Q59` · t1/2α | 0.039 | h | 140.4 | [h] | 34.8 | exact (1.0) | T2:row7:col1, T2:row7:col2 | — | not captured |
 | t1/2β (h) | `Q60` · t1/2β | 0.327 | h | 1177.2 | [h] | 15.4 | exact (1.0) | T2:row8:col1, T2:row8:col2 | — | not captured |
 | t1/2γ (h) | `Q89` · t1/2γ | 1.85 | h | 6660.0 | [h] | 12.5 | exact (1.0) | T2:row9:col1, T2:row9:col2 | — | not captured |
@@ -52,6 +56,7 @@ Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et 
 | V1 (L/kg) | `Q63` · V1 | 0.191 | L/kg | 0.01337 | [l] / [kg] | 17.1 | exact (1.0) | T2:row12:col1, T2:row12:col2 | — | not captured |
 | V2 (L/kg) | `Q64` · V2 | 0.185 | L/kg | 0.01295 | [l] / [kg] | 10.1 | exact (1.0) | T2:row13:col1, T2:row13:col2 | — | not captured |
 | V3 (L/kg) | `Q77` · V3 | 0.351 | L/kg | 0.024569999999999998 | [l] / [kg] | 21.3 | exact (1.0) | T2:row14:col1, T2:row14:col2 | — | not captured |
+| absorption rate | `Q49` · kabs | 1.0 | h−1 | 0.0002777777777777778 | 1/h | not captured | review_gapfill (0.7) | Eleveld_2026:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,20 +66,23 @@ Reed RA; Berghaus LJ; Reynolds RM; Holmes BT; Krikorian AM; Sakai DM; et al. et 
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'A' routed out of structural estimates ('Between subject variability (%CV)')
+- table section iiv: 'B' routed out of structural estimates ('Between subject variability (%CV)')
+- table section iiv: 'C' routed out of structural estimates ('Between subject variability (%CV)')
+- table section iiv: 'Alpha' routed out of structural estimates ('Between subject variability (%CV)')
+- table section iiv: 'Beta' routed out of structural estimates ('Between subject variability (%CV)')
+- table section iiv: 'Gamma' routed out of structural estimates ('Between subject variability (%CV)')
 - dropped unlinked row (NIL): 'tvA (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row1:col1', 'T2:row1:col2'])
 - dropped unlinked row (NIL): 'tvB (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row2:col1', 'T2:row2:col2'])
 - dropped unlinked row (NIL): 'tvC (pg/ml)' — extend the ontology if this is a real PK parameter (source ['T2:row3:col1', 'T2:row3:col2'])
 - dropped PD-category row 'tvGamma (1/h)' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row6:col1', 'T2:row6:col2'])
 - dropped unlinked row (NIL): 'stdev0' — extend the ontology if this is a real PK parameter (source ['T2:row15:col1', 'T2:row15:col2'])
-- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['T2:row17:col1', 'T2:row17:col2'])
-- dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['T2:row18:col1', 'T2:row18:col2'])
-- dropped unlinked row (NIL): 'C' — extend the ontology if this is a real PK parameter (source ['T2:row19:col1', 'T2:row19:col2'])
-- dropped value-less row: 'Alpha'
-- dropped duplicate Q47 ('Beta', value '0.004') — already have one for this compound
-- dropped PD-category row 'Gamma' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['T2:row22:col1', 'T2:row22:col2'])
+- implicit units: 'tvAlpha (1/h)' — the LLM proposed '1/h', whose dimension does not fit Q67; left unset
+- implicit units: 'tvBeta (1/h)' → 1/h (from the popPK convention: 'The parameter is the elimination rate constant (terminal/beta phase). In population pharmacokinetics, first-order rate c')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q49 (kabs) from Eleveld_2026's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell T2:row20:col1 = '1.48 × 10−6'
@@ -87,13 +95,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.923 (24/26 fields) | 2 |
+| `gpt-oss:120b` | partly confirmed | 0.96 (24/25 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[a]` | not captured | 0.104 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tvb]` | not captured | 6613.1 | only_one_extracted |
 
 </details>
@@ -112,6 +119,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['T2:row11:col1', 'T2:row11:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Eleveld_2026:review'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['T2:row7:col1', 'T2:row7:col2'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['T2:row8:col1', 'T2:row8:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row12:col1', 'T2:row12:col2'] |
@@ -119,7 +128,6 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q74 | pass | [time] * [mass] / [length] ** 3 | not captured | not captured | not captured | ['T2:row10:col1', 'T2:row10:col2'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['T2:row14:col1', 'T2:row14:col2'] |
 | C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['T2:row9:col1', 'T2:row9:col2'] |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['T2:row5:col1', 'T2:row5:col2'] |
 | C5_unit_missing_Q67 | fail | [mass] / [time] | not captured | not captured | not captured | ['T2:row4:col1', 'T2:row4:col2'] |
 | C6_cl_magnitude | fail | &lt;= 90.0 L/h | 722.4 | not captured | not captured | ['T2:row11:col1', 'T2:row11:col2'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
@@ -150,4 +158,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 11:12 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:07 UTC</sub>

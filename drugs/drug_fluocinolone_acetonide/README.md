@@ -30,11 +30,20 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 19:15 | 6:56 | 0/0/0 | 0/0/0 | 0/0/0 | 53,099/1,984 | ollama / qwen3.8:27b-mtp-q8_0 | 5 | 0/5 | 4/1 | 0 |
+| 2026-09-30 10:01 | 0:36 | 0/0/0 | 1/1/0 | 0/0/0 | 2,864/220 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 0/5 | 2/1 | 0 |
 
 ## popPK records
 
 _not available_
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nehmé_2009_GeneBLAzer_response_ratio](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_GeneBLAzer_response_ratio.md) | GR-mediated transactivation (beta-lactamase reporter response ratio) ← dexamethasone, fluocinolone acetonide, triamcinolone acetonide · direct Emax (saturable) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nehmé_2009_mRNA_fold_change](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_mRNA_fold_change.md) | differentially expressed gene transcript levels ← dexamethasone, fluocinolone acetonide, triamcinolone acetonide · direct Emax (saturable) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
+| <span class="pk-badge pk-badge--green">extracted</span> | [Nehmé_2009_nM](drugs/drug_fluocinolone_acetonide/pd_Nehm_2009_nM.md) | GR binding affinity ← dexamethasone, fluocinolone acetonide, triamcinolone acetonide · direct Emax (saturable) effect | — | Nehmé A et al., Glucocorticoids with different chemical…, BMC medical genomics (2009) | [10.1186/1755-8794-2-58](https://doi.org/10.1186/1755-8794-2-58) |
+| <span class="pk-badge pk-badge--red">rejected</span> | [Zvidzayi_2021_AUEC_a_scale](drugs/drug_fluocinolone_acetonide/pd_Zvidzayi_2021_AUEC_a_scale.md) | skin blanching response (AUEC of chromameter a-scale) ← topical corticosteroid API (clobetasol propionate, halcinonide, mometasone furoate, fluocinolone acetonide) · direct Emax (saturable) effect | — | Zvidzayi M et al., A Novel Approach to Assess the Potency…, Pharmaceutics (2021) | [10.3390/pharmaceutics13091456](https://doi.org/10.3390/pharmaceutics13091456) |
 
 ## ADME sites
 
@@ -42,16 +51,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | process | tissue | actors (role) | evidence |
 |---|---|---|---|
-| absorption | skin | <sub>“…rption which is determined by the vehicle, integrity of the epidermal barrier and the use…”</sub> | prose |
+| absorption | skin | <sub>“…topical administration of fluocinolone acetonide produces a percutaneous absorption…”</sub> | prose |
 | metabolism | liver | `CYP3A4` inducer/substrate | DrugBank actor |
 | metabolism | small intestine | `CYP3A4` inducer/substrate | DrugBank actor |
-| excretion | kidney | <sub>“…Fluocinolone acetonide is mainly excreted by the kidneys.[F1956] It is important to mentio…”</sub> | prose |
+| excretion | kidney | <sub>“…mainly excreted by the kidneys…”</sub> | prose |
 
 <sub>Actors without a tissue in the table: ANXA1 (inducer), ANXA2 (inducer), ANXA3 (inducer), ANXA4 (inducer), ANXA5 (inducer), NR3C1 (target), PLA2G1B (inhibitor), SERPINA6 (binder).</sub>
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -70,7 +79,7 @@ _1 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|---|
 | `dArgy_1989.pdf` | d'Argy R et al., Effects of immunosuppressive chemicals…, Pharmacology & toxicology (1989) | pd | 4 | [10.1111/j.1600-0773.1989.tb00596.x](https://doi.org/10.1111/j.1600-0773.1989.tb00596.x) | [2755908](https://www.ncbi.nlm.nih.gov/pubmed/2755908) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-28T19:14:30.974872+00:00</sub>
+<sub>queue written 2026-09-30T10:01:09.339116+00:00</sub>
 
 ## Screened and excluded
 

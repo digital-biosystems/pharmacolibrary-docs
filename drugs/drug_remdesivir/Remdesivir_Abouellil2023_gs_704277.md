@@ -1,15 +1,15 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Abouellil_2023 \u00b7 gs_704277&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_remdesivir&quot;,&quot;label&quot;:&quot;Abouellil_2023_remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_remdesivir.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Humeniuk2021_reference&quot;,&quot;label&quot;:&quot;Humeniuk_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Humeniuk2021_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Leegwater2022_reference&quot;,&quot;label&quot;:&quot;Leegwater_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Leegwater2022_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Roberts2025_reference&quot;,&quot;label&quot;:&quot;Roberts_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Roberts2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_a_renal_impaired_patient_with_egfr_0_s_rgel_et_al_2021&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_a_renal_impaired_patient.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_healthy_control_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa&quot;,&quot;label&quot;:&quot;Zhang_2025_parameters_for_severe_renal_impaired_patients_zhang_et_al_2020&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Zhang2025_parameters_for_severe_renal_impaired_pa.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_441524&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_441524&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_441524.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Abouellil2023_gs_704277&quot;,&quot;label&quot;:&quot;Abouellil_2023_gs_704277&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Abouellil2023_gs_704277.md&quot;,&quot;status&quot;:&quot;not simulated&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Remdesivir_Sukeishi2022_reference&quot;,&quot;label&quot;:&quot;Sukeishi_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Sukeishi2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Remdesivir_Tamura2023_reference&quot;,&quot;label&quot;:&quot;Tamura_2023_reference&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Tamura2023_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # remdesivir — `Remdesivir_Abouellil2023_gs_704277`
 
-> ## <span class="pk-badge pk-badge--neutral">not simulated</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -21,31 +21,32 @@
 
 The model was built but has not been simulated yet. The parameter-coverage check found only 2 of the expected 4 parameters emitted or defaulted, with V1 (central volume of distribution, 96.4 L) and V2 (peripheral volume of distribution, 8.64 L) missing. A second reader returned entirely different values for all four parameters (V1 4.89 L, V2 46.5 L, Q 13.2 L/h, CL 18.1 L/h) while recording null for the record's values, so the parameter set is disputed. Extracted — remdesivir: V1 96.4 L, V2 8.64 L, Q 0.12 L/h, CL 36.9 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 96.4, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
+> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:39:31.417554+00:00) predates the upstream re-run (2026-10-01 15:46:19.256046+00:00). Current validate status: `extracted`.
+
 ## Citation
-Abouellil A; Bilal M; Taubert M; Fuhr U et al. (2023). Naunyn-Schmiedeberg's archives of pharmacology 396
+Abouellil A et al., A population pharmacokinetic model of r…, Naunyn-Schmiedeberg's archi… (2023)
   ·  DOI: [10.1007/s00210-022-02292-6](https://doi.org/10.1007/s00210-022-02292-6)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_704277" status="not_simulated" stale="false" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Abouellil2023_gs_704277" status="extracted" stale="true" population="healthy adults" measured-compound="remdesivir" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 2-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not_simulated`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Central compartment volume of distribution (L) | `Q63` · V1 | 96.4 | L | 0.09640000000000001 | [l] | not captured | llm_confirmed (0.6) | Tab2:row1:col2 | — | not captured |
 | Peripheral compartment volume of distribution (L) | `Q64` · V2 | 8.64 | L | 0.00864 | [l] | not captured | llm_confirmed (0.6) | Tab2:row2:col2 | — | not captured |
-| Inter-compartmental clearance (L/h) | `Q30` · Q | 0.12 | L/h | 3.3333333333333334e-08 | [l] / [h] | not captured | llm_corrected (0.6) | Tab2:row3:col2 | — | not captured |
+| Inter-compartmental clearance (L/h) | `Q30` · Q | 0.12 | L/h | 3.3333333333333334e-08 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row3:col2 | — | not captured |
 | Total body clearance (L/h) | `Q22` · CL | 36.9 | L/h | 1.025e-05 | [l] / [h] | not captured | llm_confirmed (0.6) | Tab2:row4:col2 | — | not captured |
+| Central formation clearance (L/h) | `Q370` · CLfm | 16.9 | L/h | 4.694444444444444e-06 | [l] / [h] | not captured | exact (1.0) | Tab2:row5:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,11 +56,14 @@ Abouellil A; Bilal M; Taubert M; Fuhr U et al. (2023). Naunyn-Schmiedeberg's arc
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q22 ('Central formation clearance (L/h)', value '16.9') — already have one for this compound
-- dropped duplicate Q22 ('Peripheral formation clearance (L/h)', value '18.9') — already have one for this compound
+- dropped duplicate Q370 ('Peripheral formation clearance (L/h)', value '18.9') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
+- template fit: none — a metabolite is formed from another metabolite (a chain)
 - population split: 'gs‐704277' subgroup of Abouellil_2023 (paper reports 3 populations: gs‐441524, gs‐704277, remdesivir)
+- row roles (LLM): model_class=compartmental; 6/6 row label(s) assigned, 15 linked by role; re-tagged remdesivir→parent ×4, parent→GS-704277 ×3
+- dropped duplicate Q22 ('Central formation clearance (L/h)', value '16.9') — already have one for this compound
+- dropped duplicate Q22 ('Peripheral formation clearance (L/h)', value '18.9') — already have one for this compound
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
@@ -71,20 +75,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.333 (4/12 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `parameters[central compartment volume of distribution]` | 96.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[central compartment volume of distribution]` | not captured | 4.89 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[central formation clearance]` | 16.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[inter-compartmental clearance]` | 0.12 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[inter-compartmental clearance]` | not captured | 13.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peripheral compartment volume of distribution]` | 8.64 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peripheral compartment volume of distribution]` | not captured | 46.5 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance]` | 36.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[total body clearance]` | not captured | 18.1 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | remdesivir | unknown | mismatch |
 
 </details>
 
@@ -98,11 +105,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row4:col2'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row3:col2'] |
+| C5_dimension_Q370 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Tab2:row5:col2'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row1:col2'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tab2:row2:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 36.9 | not captured | not captured | ['Tab2:row4:col2'] |
@@ -163,4 +171,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-23 08:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:46 UTC</sub>

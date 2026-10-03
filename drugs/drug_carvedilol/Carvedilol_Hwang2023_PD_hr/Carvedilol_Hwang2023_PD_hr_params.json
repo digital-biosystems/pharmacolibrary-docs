@@ -6,14 +6,17 @@
  ],
  "parameters": {
   "E0": 60.4,
-  "exposure_per_s": 1e-09
+  "EC50": 6.85e-10,
+  "Emax": -30.7,
+  "exposure_per_s": 1e-09,
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 60.4,
   "6.850000000000001e-10": 45.05
  },
- "stop_time": 6.85,
+ "stop_time": 6.9,
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "units": {

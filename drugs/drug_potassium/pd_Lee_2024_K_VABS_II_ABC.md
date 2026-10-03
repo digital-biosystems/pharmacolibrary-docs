@@ -1,32 +1,32 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Lee_2024 \u00b7 PD Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C03A&quot;,&quot;href&quot;:&quot;atc/C03A.md&quot;},{&quot;label&quot;:&quot;Potassium&quot;,&quot;href&quot;:&quot;drugs/drug_potassium/&quot;},{&quot;label&quot;:&quot;Lee_2024 \u00b7 PD Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite score&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+# Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite score — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.652). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** AST-001 (the dose) drives Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite (in score): delayed effect through an effect compartment.
+**As extracted:** L-serine (AST-001) (measured concentrations) drives Korean-Vineland Adaptive Behavior Scale-II Adaptive Behavior Composite score (in score): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> AST-001 (L-serine syrup) dose, linked via a published population PK model, stimulates K-VABS-II-ABC scores in children with ASD through an effect-compartment model with a linear concentration-effect relationship (Deff 0.0022 L/μg; equilibration half-life ~15 weeks, Ke0 0.0065 1/day), plus linear disease progression (Kprog 0.015 1/day) from baseline E0 48.51; no Emax/IC50 values are given.
+> The paper describes an effect compartment model where the concentration of AST-001 (L-serine) at the effect site stimulates the K-VABS-II-ABC score via a linear relationship, with a baseline score (E0) of 48.51 and a linear progression rate (Kprog) of 0.015 day⁻¹. The equilibration rate constant (Ke0) was estimated at 0.0065 day⁻¹ (corresponding to an equilibration half-life of approximately 15 weeks), and the linear drug effect coefficient (Deff) was 0.0022 L/μg.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Lee_2024`
 - **model family:** `effect_compartment`
-- **driver:** `dose_only`
+- **driver:** `conc_no_pk`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** stimulation/proportional
 
 ## Citation
-Lee S; Hwang SK; Cho JS; Ryu HC; Chung JY et al. (2024). Frontiers in pharmacology 15
+Lee S et al., Population pharmacokinetic and pharmaco…, Frontiers in pharmacology (2024)
   ·  DOI: [10.3389/fphar.2024.1452526](https://doi.org/10.3389/fphar.2024.1452526)
 
 ## Parameters
@@ -40,8 +40,6 @@ Lee S; Hwang SK; Cho JS; Ryu HC; Chung JY et al. (2024). Frontiers in pharmacolo
 | PD (effect) | E0 — RSE (%) | `Q324` · not captured | 1.66 | not captured | not captured | exact (not captured) | T1:row4:col2 |
 | PD (effect) | E0 — Bootstrap (n = 200) a | `Q324` · not captured | 48.48 | not captured | not captured | exact (not captured) | T1:row4:col3 |
 | PD (effect) | E0 — Bootstrap (n = 200) a | `Q324` · not captured | 46.8 | not captured | not captured | exact (not captured) | T1:row4:col4 |
-| PK (driver) | Deff (L/μg) — Estimates | `Q358` · not captured | 0.0022 | L/μg | not captured | llm (not captured) | T1:row6:col1 |
-| PK (driver) | Deff (L/μg) — RSE (%) | `Q358` · not captured | 37.5 | L/μg | not captured | llm (not captured) | T1:row6:col2 |
 | PD (effect) | Kprog (1/day) — Estimates | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | T1:row7:col1 |
 | PD (effect) | Kprog (1/day) — RSE (%) | `Q340` · not captured | 12.0 | not captured | not captured | exact (not captured) | T1:row7:col2 |
 | PD (effect) | Kprog (1/day) — Bootstrap (n = 200) a | `Q340` · not captured | 0.015 | not captured | not captured | exact (not captured) | T1:row7:col3 |
@@ -50,22 +48,14 @@ Lee S; Hwang SK; Cho JS; Ryu HC; Chung JY et al. (2024). Frontiers in pharmacolo
 | PD (effect) | ΩKe0 — RSE (%) | `Q326` · not captured | 22.3 | not captured | not captured | llm_confirmed (not captured) | T1:row9:col2 |
 | PD (effect) | ΩKe0 — Bootstrap (n = 200) a | `Q326` · not captured | 0.25 | not captured | not captured | llm_confirmed (not captured) | T1:row9:col3 |
 | PD (effect) | ΩKe0 — Bootstrap (n = 200) a | `Q326` · not captured | 0.14 | not captured | not captured | llm_confirmed (not captured) | T1:row9:col4 |
-| PD (effect) | ΩE0 — Estimates | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | T1:row10:col1 |
-| PD (effect) | ΩE0 — RSE (%) | `Q324` · not captured | 6.01 | not captured | not captured | llm_confirmed (not captured) | T1:row10:col2 |
 | PD (effect) | ΩE0 — Bootstrap (n = 200) a | `Q324` · not captured | 0.2 | not captured | not captured | llm_confirmed (not captured) | T1:row10:col3 |
 | PD (effect) | ΩE0 — Bootstrap (n = 200) a | `Q324` · not captured | 0.17 | not captured | not captured | llm_confirmed (not captured) | T1:row10:col4 |
-| PD (effect) | ΩKprog — Estimates | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | T1:row12:col1 |
-| PD (effect) | ΩKprog — RSE (%) | `Q340` · not captured | 8.27 | not captured | not captured | llm_confirmed (not captured) | T1:row12:col2 |
 | PD (effect) | ΩKprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.018 | not captured | not captured | llm_confirmed (not captured) | T1:row12:col3 |
 | PD (effect) | ΩKprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.014 | not captured | not captured | llm_confirmed (not captured) | T1:row12:col4 |
-| PD (effect) | Correlation E0-Kprog — Estimates | `Q340` · not captured | 0.48 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col1 |
-| — | Correlation E0-Kprog — RSE (%) | `Q100` · not captured | 16.9 | not captured | not captured | llm_corrected (not captured) | T1:row14:col2 |
+| — | Correlation E0-Kprog — Estimates | `Q100` · not captured | 0.48 | not captured | not captured | llm_corrected (not captured) | T1:row14:col1 |
+| model term | Correlation E0-Kprog — RSE (%) | `Q900` · not captured | 16.9 | not captured | not captured | llm_corrected (not captured) | T1:row14:col2 |
 | PD (effect) | Correlation E0-Kprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.49 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col3 |
 | PD (effect) | Correlation E0-Kprog — Bootstrap (n = 200) a | `Q340` · not captured | 0.34 | not captured | not captured | llm_confirmed (not captured) | T1:row14:col4 |
-| variability | additive error — Estimates | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | T1:row16:col1 |
-| variability | additive error — RSE (%) | `Q317` · not captured | 4.56 | not captured | not captured | exact (not captured) | T1:row16:col2 |
-| variability | additive error — Bootstrap (n = 200) a | `Q317` · not captured | 1.6 | not captured | not captured | exact (not captured) | T1:row16:col3 |
-| variability | additive error — Bootstrap (n = 200) a | `Q317` · not captured | 1.39 | not captured | not captured | exact (not captured) | T1:row16:col4 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -78,21 +68,26 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (33/44 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.652 (30/46 fields) | 16 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>16 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `driver_compound` | AST-001 | AST-001 (L-serine) | mismatch |
-| `gpt-oss:120b` | `effect_form` | unknown | additive | mismatch |
-| `gpt-oss:120b` | `parameters[Q312]` | not captured | 1.4 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 1.31 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.89 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.48 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 20.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q321]` | not captured | 37.5 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q340]` | 0.48 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | AST-001 | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | stimulation | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | effect_compartment | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q30]` | not captured | 37.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q312]` | not captured | 6.01 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 0.17 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 1.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 1.31 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.89 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q321]` | not captured | 0.0022 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | 6.01 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | 0.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q324]` | 0.17 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 0.0022 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q358]` | 37.5 | not captured | only_one_extracted |
 

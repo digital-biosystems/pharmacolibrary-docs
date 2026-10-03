@@ -1,0 +1,66 @@
+{
+ "model_id": "HippocastaniSemen_Wang2024_PD_i",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 1.04,
+  "EC50": 1623312.0,
+  "Emax": -1.04,
+  "exposure_per_s": 3600.0,
+  "gamma": 0.43
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 1.04,
+  "1623312.0": 0.52
+ },
+ "stop_time": 4600.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "Log10 CFU/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "h",
+   "factor": 3600.0,
+   "si_unit": "s"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "Log10 CFU/mL",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "h",
+   "factor": 3600.0,
+   "si_unit": "s"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "Log10 CFU/mL"
+ },
+ "x_axis": {
+  "display_unit": "h",
+  "factor": 3600.0,
+  "per_s": 3600.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "Log10 CFU/mL",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

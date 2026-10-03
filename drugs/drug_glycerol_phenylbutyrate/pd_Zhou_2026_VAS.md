@@ -1,54 +1,40 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A16A&quot;,&quot;href&quot;:&quot;atc/A16A.md&quot;},{&quot;label&quot;:&quot;glycerol phenylbutyrate&quot;,&quot;href&quot;:&quot;drugs/drug_glycerol_phenylbutyrate/&quot;},{&quot;label&quot;:&quot;Zhou_2026 \u00b7 PD pain intensity&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# pain intensity — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span>
+# pain intensity — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.679). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Gabapentin drives pain intensity (in 0-10 scale): delayed effect through an effect compartment.
+**As extracted:** Gabapentin (measured concentrations) drives pain intensity (in score 0-10): delayed effect through an effect compartment.
 
 **Model:** No model was generated from this record.
 
-> Gabapentin plasma concentrations inhibit pain intensity (VAS 0–10) via an Imax effect-compartment model with full inhibition (Imax = 1), linked to the central compartment by first-order rate constants ke1 = 0.53 h⁻¹ (in) and ke2 = 1 h⁻¹ (out); the fixed IC50 was 263.11 ng/mL and baseline pain E0 was 7.31.
+> Gabapentin plasma concentrations inhibit pain intensity (VAS) via an effect compartment model linked to the central compartment by first-order rate constants ke1 (0.53 h⁻¹) and ke2 (1 h⁻¹). The inhibitory Imax model assumes full inhibition (Imax = 1) with a fixed IC50 of 263.11 ng/mL and a baseline effect (E0) of 7.31.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Zhou_2026`
 - **model family:** `effect_compartment`
-- **driver:** `not_resolved`
+- **driver:** `conc_no_pk`
 - **tier:** population
 - **effect:** inhibition/unknown
 
 ## Citation
-Zhou L; Yamamoto PA; Walker M; Conchon Costa AC; Lauretti GR; Dach F; Schmidt S; de Moraes NV et al. (2026). Frontiers in pharmacology 17
+Zhou L et al., Gabapentin CNS exposure and analgesic r…, Frontiers in pharmacology (2026)
   ·  DOI: [10.3389/fphar.2026.1760901](https://doi.org/10.3389/fphar.2026.1760901)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | tlag (h) — Final estimate (%RSE) | `Q83` · not captured | 0.34 | h | not captured | exact (not captured) | T1:row2:col1 |
-| PK (driver) | ka (h-1) — Final estimate (%RSE) | `Q49` · not captured | 0.14 | h-1 | not captured | exact (not captured) | T1:row3:col1 |
-| PK (driver) | CL/F (L/h) — Final estimate (%RSE) | `Q27` · not captured | 10.16 | L/h | not captured | exact (not captured) | T1:row4:col1 |
-| PK (driver) | V1/F (L) — Final estimate (%RSE) | `Q290` · not captured | 18.16 | L | not captured | exact (not captured) | T1:row6:col1 |
-| PK (driver) | Q (L/h) — Final estimate (%RSE) | `Q30` · not captured | 6.58 | L/h | not captured | exact (not captured) | T1:row7:col1 |
-| PK (driver) | V2/F (L) — Final estimate (%RSE) | `Q82` · not captured | 357.67 | L | not captured | exact (not captured) | T1:row8:col1 |
-| PK (driver) | ke1 (h-1) — Final estimate (%RSE) | `Q47` · not captured | 0.53 | h-1 | not captured | llm (not captured) | T1:row9:col1 |
 | PD (effect) | E0 — Final estimate (%RSE) | `Q324` · not captured | 7.31 | not captured | not captured | exact (not captured) | T1:row11:col1 |
 | PD (effect) | IC50 (ng/mL) — Final estimate (%RSE) | `Q322` · not captured | 263.11 | ng/mL | not captured | exact (not captured) | T1:row12:col1 |
-| PK (driver) | ke2 (h-1) — Final estimate (%RSE) | `Q68` · not captured | 1 | h-1 | not captured | llm (not captured) | T1:row13:col1 |
 | PD (effect) | Imax — Final estimate (%RSE) | `Q323` · not captured | 1 | not captured | not captured | exact (not captured) | T1:row14:col1 |
-| PK (driver) | ωTlag — Final estimate (%RSE) | `Q83` · not captured | 0.52 | not captured | not captured | llm_confirmed (not captured) | T1:row16:col1 |
-| PK (driver) | ωka — Final estimate (%RSE) | `Q49` · not captured | 0.15 | not captured | not captured | llm_confirmed (not captured) | T1:row17:col1 |
-| PK (driver) | ωCL — Final estimate (%RSE) | `Q22` · not captured | 0.46 | not captured | not captured | llm_confirmed (not captured) | T1:row18:col1 |
-| PK (driver) | ωV1 — Final estimate (%RSE) | `Q63` · not captured | 0.54 | not captured | not captured | llm_confirmed (not captured) | T1:row19:col1 |
-| PD (effect) | ωE0 — Final estimate (%RSE) | `Q324` · not captured | 0.98 | not captured | not captured | llm_confirmed (not captured) | T1:row22:col1 |
-| model term | Proportional (b) — Final estimate (%RSE) | `Q900` · not captured | 0.30 | b | not captured | llm (not captured) | T1:row27:col1 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -87,9 +73,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

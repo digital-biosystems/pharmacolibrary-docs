@@ -6,14 +6,17 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "exposure_per_s": 0.0009999999999999998
+  "EC50": 0.00998,
+  "Emax": -5.17,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "0.00998": -5.0
+  "0.00998": -2.585
  },
- "stop_time": 99.8,
+ "stop_time": 100.0,
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "units": {
@@ -25,7 +28,7 @@
   },
   "Emax": {
    "display_only": true,
-   "display_unit": "VAS of 0-10",
+   "display_unit": "pain units",
    "factor": 1.0,
    "si_unit": "1"
   },
@@ -41,16 +44,16 @@
    "factor": 1.0,
    "si_unit": "1"
   },
-  "response_unit": "0-10"
+  "response_unit": "pain units"
  },
  "x_axis": {
   "display_unit": "mg/l",
   "factor": 0.0009999999999999998,
-  "per_s": 0.0009999999999999998,
+  "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
-  "display_unit": "VAS of 0-10",
+  "display_unit": "pain units",
   "factor": 1.0,
   "label": "response"
  }

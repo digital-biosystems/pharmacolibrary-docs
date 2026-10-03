@@ -1,12 +1,12 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;dapagliflozin&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/&quot;},{&quot;label&quot;:&quot;Kobuchi_2025 \u00b7 PD HbA1c&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dapagliflozin_Kobuchi2025_reference&quot;,&quot;label&quot;:&quot;Kobuchi_2025_reference&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/Dapagliflozin_Kobuchi2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Sato_2024_HbA1c&quot;,&quot;label&quot;:&quot;Sato_2024 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sato_2024_HbA1c.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_HbA1c&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 HbA1c&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_HbA1c.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_basal_insulin&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 basal insulin&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_basal_insulin.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sokolov_2023_glucose&quot;,&quot;label&quot;:&quot;Sokolov_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_dapagliflozin/pd_Sokolov_2023_glucose.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# HbA1c — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.958). The first reading is what the record holds.">cross-check: disputed</span>
+# HbA1c — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
@@ -24,35 +24,19 @@
 - **model family:** `indirect_response_i`
 - **driver:** `pk_record`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** inhibition/proportional
 
 ## Citation
-Kobuchi S; Sakai S; Terada R; Kato KI; Hayakawa T; Sakaeda T et al. (2025). International journal of medical sciences 22
+Kobuchi S et al., Population Pharmacokinetic-pharmacodyna…, International journal of me… (2025)
   ·  DOI: [10.7150/ijms.111519](https://doi.org/10.7150/ijms.111519)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | t1/2HbA1c (day) — Final model | `Q57` · not captured | 16.1 | day | not captured | llm (not captured) | T3:row3:col1 |
-| PK (driver) | t1/2HbA1c (day) — Final model | `Q57` · not captured | 4.1 | day | not captured | llm (not captured) | T3:row3:col2 |
-| PK (driver) | t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 16.0 | day | not captured | llm (not captured) | T3:row3:col4 |
-| PK (driver) | t1/2HbA1c (day) — Bootstrap (n = 1000) | `Q57` · not captured | 15.3 | day | not captured | llm (not captured) | T3:row3:col5 |
-| PD (effect) | Emax (HbA1c %/day) — Final model | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col1 |
-| PD (effect) | Emax (HbA1c %/day) — Final model | `Q320` · not captured | 3.1 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col2 |
-| PD (effect) | Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.034 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col4 |
-| PD (effect) | Emax (HbA1c %/day) — Bootstrap (n = 1000) | `Q320` · not captured | 0.031 | HbA1c %/day | not captured | exact (not captured) | T3:row4:col5 |
-| PD (effect) | EC50 (ng/mL) — Final model | `Q321` · not captured | 23.7 | ng/mL | not captured | exact (not captured) | T3:row5:col1 |
-| PD (effect) | EC50 (ng/mL) — Final model | `Q321` · not captured | 5.8 | ng/mL | not captured | exact (not captured) | T3:row5:col2 |
-| PD (effect) | EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 21.9 | ng/mL | not captured | exact (not captured) | T3:row5:col4 |
-| PD (effect) | EC50 (ng/mL) — Bootstrap (n = 1000) | `Q321` · not captured | 13.5 | ng/mL | not captured | exact (not captured) | T3:row5:col5 |
-| PK (driver) | ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 103.9 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col1 |
-| PK (driver) | ωt1/2 HbA1c (%) — Final model | `Q57` · not captured | 11.2 | not captured | not captured | llm_confirmed (not captured) | T3:row7:col2 |
-| PK (driver) | ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 104.1 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col4 |
-| PK (driver) | ωt1/2 HbA1c (%) — Bootstrap (n = 1000) | `Q57` · not captured | 101.7 | n = 1000 | not captured | llm_confirmed (not captured) | T3:row7:col5 |
-| variability | σ (HbA1c %) — Final model | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col1 |
-| variability | σ (HbA1c %) — Final model | `Q315` · not captured | 5.2 | HbA1c % | not captured | llm (not captured) | T3:row9:col2 |
-| variability | σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.24 | HbA1c % | not captured | llm (not captured) | T3:row9:col4 |
-| variability | σ (HbA1c %) — Bootstrap (n = 1000) | `Q315` · not captured | 0.21 | HbA1c % | not captured | llm (not captured) | T3:row9:col5 |
+| PD (effect) | t1/2HbA1c | `Q328` · not captured | 16.1 | day | not captured | llm (not captured) | Kobuchi_2025:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | 0.034 | HbA1c %/day | not captured | llm (not captured) | Kobuchi_2025:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 23.7 | ng/mL | not captured | llm (not captured) | Kobuchi_2025:pdv3 |
+| variability | ωt1/2 HbA1c | `Q312` · not captured | 103.9 | % | not captured | llm (not captured) | Kobuchi_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -100,13 +84,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.958 (23/24 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.692 (18/26 fields) | 8 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `driver_compound` | dapagliflozin | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | inhibition | unknown | mismatch |
 | `gpt-oss:120b` | `effect_form` | additive | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | indirect_response_i | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 104.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q314]` | not captured | 101.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q57]` | 104.1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q57]` | 101.7 | not captured | only_one_extracted |
 
 </details>
 

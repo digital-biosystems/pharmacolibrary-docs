@@ -1,18 +1,18 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2024 \u00b7 PD INR&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Aoyama2022_reference&quot;,&quot;label&quot;:&quot;Aoyama_2022_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_prior_values&quot;,&quot;label&quot;:&quot;Hirai_2024_prior_values&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_prior_values.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Mungall1985_reference&quot;,&quot;label&quot;:&quot;Mungall_1985_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Mungall1985_reference.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_NeffDavis1981_reference&quot;,&quot;label&quot;:&quot;Neff-Davis_1981_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_NeffDavis1981_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Yuen2010_reference&quot;,&quot;label&quot;:&quot;Yuen_2010_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Yuen2010_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_deep_learning&quot;,&quot;label&quot;:&quot;Gomeni_2026_deep_learning&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_deep_learning.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gomeni2026_one_compartment&quot;,&quot;label&quot;:&quot;Gomeni_2026_one_compartment&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gomeni2026_one_compartment.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_estimates&quot;,&quot;label&quot;:&quot;Hirai_2024_estimates&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_estimates.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_median&quot;,&quot;label&quot;:&quot;Hirai_2024_median&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_median.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Kubo2017_reference&quot;,&quot;label&quot;:&quot;Kubo_2017_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kubo2017_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_r_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_r_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_r_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Lane2012_s_warfarin&quot;,&quot;label&quot;:&quot;Lane_2012_s_warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Lane2012_s_warfarin.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Gibbons2015_reference&quot;,&quot;label&quot;:&quot;Gibbons_2015_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Gibbons2015_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ohara2014_reference&quot;,&quot;label&quot;:&quot;Ohara_2014_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ohara2014_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Ohara2019_reference&quot;,&quot;label&quot;:&quot;Ohara_2019_reference&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Ohara2019_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;warfarin&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/&quot;},{&quot;label&quot;:&quot;Rodr\u00edguez-Fern\u00e1ndez_2024 \u00b7 PD international normalized ratio&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Warfarin_Kwack2026_reference&quot;,&quot;label&quot;:&quot;Kwack_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Kwack2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Sridharan2021_reference&quot;,&quot;label&quot;:&quot;Sridharan_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Sridharan2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Zhu2017_reference&quot;,&quot;label&quot;:&quot;Zhu_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Zhu2017_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Hirai2024_prior_values&quot;,&quot;label&quot;:&quot;Hirai_2024_prior_values&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Hirai2024_prior_values.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_NeffDavis1981_reference&quot;,&quot;label&quot;:&quot;Neff-Davis_1981_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_NeffDavis1981_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Yuen2010_reference&quot;,&quot;label&quot;:&quot;Yuen_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Yuen2010_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Aoyama2022_reference&quot;,&quot;label&quot;:&quot;Aoyama_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Aoyama2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Warfarin_Mungall1985_reference&quot;,&quot;label&quot;:&quot;Mungall_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/Warfarin_Mungall1985_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Aoyama_2022_PT_INR&quot;,&quot;label&quot;:&quot;Aoyama_2022 \u00b7 PT-INR&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_warfarin/pd_Aoyama_2022_PT_INR.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# INR — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.483). The first reading is what the record holds.">cross-check: disputed</span>
+# international normalized ratio — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.778), gpt-oss:120b (not confirmed, agreement 0.448). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
-<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr></tbody></table>
+<table><thead><tr><th>badge</th><th>what it means</th></tr></thead><tbody><tr><td><span class="pk-badge pk-badge--green">curated</span></td><td>hand-authored by a person — an exemplar, not an extraction.</td></tr><tr><td><span class="pk-badge pk-badge--green">extracted</span></td><td>the pipeline accepted the record: every closed-form check it could run passed.</td></tr><tr><td><span class="pk-badge pk-badge--green">reviewed — candidate</span></td><td>the reviewer ran the built model against the paper's own reported values and they agree — the best automatic verdict there is.</td></tr><tr><td><span class="pk-badge pk-badge--green">accepted (caveats)</span></td><td>the model replicates the paper, but an advisory check failed — the record page names the caveat under the badge and the drug page shows it under the status.</td></tr><tr><td><span class="pk-badge pk-badge--orange">needs review</span></td><td>extracted, then a check failed or a value looks implausible. The numbers are shown as read, not endorsed.</td></tr><tr><td><span class="pk-badge pk-badge--orange">built, not shipped</span></td><td>a model was built, but a core parameter fell back to a library default, so it is not shipped.</td></tr><tr><td><span class="pk-badge pk-badge--red">rejected</span></td><td>not accepted — the record is not a compartmental model, or nothing usable was extracted.</td></tr><tr><td><span class="pk-badge pk-badge--neutral">not modelled</span></td><td>pipeline state, not a judgement: no model has been built for this record yet (likewise `not simulated`).</td></tr><tr><td><span class="pk-badge pk-badge--stale">stale</span></td><td>the reviewer's verdict predates the latest re-run of the paper — treat the status as out of date, not as current.</td></tr><tr><td><span class="pk-badge pk-badge--green">cross-checked ✓</span></td><td>every independent reader agreed on every compared field. With more than one reader the badge counts them, e.g. 'cross-checked ✓ 2/2'.</td></tr><tr><td><span class="pk-badge pk-badge--orange">cross-check: partial</span></td><td>a reader differs on a non-structural field (a population label, a flag), or the readers do not all agree with each other.</td></tr><tr><td><span class="pk-badge pk-badge--red">cross-check: disputed</span></td><td>at least one reader differs on a structural parameter — a clearance, a volume, ka, a lag. The record still holds the FIRST reading; the disagreement is a signal for a reviewer, never an automatic correction.</td></tr><tr><td><span class="pk-badge pk-badge--species">rat</span></td><td>the data come from an animal (or in-vitro) study, not from people. The record, its model and its simulation are kept — they describe that species.</td></tr></tbody></table>
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
 ## What this record describes
 
-**As extracted:** Warfarin (concentrations from the PK model of Gomeni_2026::deep_learning) drives INR (in unknown): indirect response — drug inhibits the loss of INR.
+**As extracted:** Warfarin (concentrations from the PK model of Gomeni_2026::deep_learning) drives international normalized ratio: indirect response — drug inhibits the production of international normalized ratio.
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
@@ -21,31 +21,26 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Rodríguez-Fernández_2024`
-- **model family:** `indirect_response_ii`
+- **model family:** `indirect_response_i`
 - **driver:** `cited_pk`
 - **tier:** population
-- **effect:** stimulation/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
-Rodríguez-Fernández K; Reynaldo-Fernández G; Reyes-González S; de Las Barreras C; Rodríguez-Vera L; Vlaar C; et al. et al. (2024). Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie 170
+Rodríguez-Fernández K et al., New insights into the role of VKORC1 po…, Biomedicine & pharmacothera… (2024)
   ·  DOI: [10.1016/j.biopha.2023.115977](https://doi.org/10.1016/j.biopha.2023.115977)
 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PK (driver) | MTT1 (d) — Population PK Model Estimates | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col1 |
-| PK (driver) | MTT1 (d) — Bootstrap Results | `Q81` · not captured | 1.13 | d | not captured | llm (not captured) | T2:row3:col3 |
-| PK (driver) | MTT2 (d) — Population PK Model Estimates | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col1 |
-| PK (driver) | MTT2 (d) — Bootstrap Results | `Q81` · not captured | 4.62 | d | not captured | llm (not captured) | T2:row4:col3 |
-| PK (driver) | γ — Population PK Model Estimates | `Q89` · not captured | 1.47 | not captured | not captured | llm (not captured) | T2:row12:col1 |
-| PD (effect) | Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 23 | not captured | not captured | exact (not captured) | T2:row14:col1 |
-| PD (effect) | Baseline (%) — Population PK Model Estimates | `Q324` · not captured | 13 | not captured | not captured | exact (not captured) | T2:row14:col2 |
-| PD (effect) | Baseline (%) — Bootstrap Results | `Q324` · not captured | 24 | not captured | not captured | exact (not captured) | T2:row14:col3 |
-| PD (effect) | Baseline (%) — Bootstrap Results | `Q324` · not captured | 19 | not captured | not captured | exact (not captured) | T2:row14:col4 |
-| PD (effect) | IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col1 |
-| PD (effect) | IC50 (%) — Population PK Model Estimates | `Q322` · not captured | 44 | mg/L | not captured | exact (not captured) | T2:row15:col2 |
-| PD (effect) | IC50 (%) — Bootstrap Results | `Q322` · not captured | 34 | mg/L | not captured | exact (not captured) | T2:row15:col3 |
-| PD (effect) | IC50 (%) — Bootstrap Results | `Q322` · not captured | 28 | mg/L | not captured | exact (not captured) | T2:row15:col4 |
+| PD (effect) | INRbase | `Q336` · not captured | 1.78 | not captured | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| PD (effect) | INRbase | `Q336` · not captured | 1.84 | not captured | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| PD (effect) | INRbase | `Q336` · not captured | 2.18 | not captured | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 5.88 | mg/L | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 4.61 | mg/L | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| PD (effect) | gamma | `Q325` · not captured | 1.47 | not captured | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| variability | Inter-individual variability on Baseline | `Q312` · not captured | 23 | % | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
+| variability | Inter-individual variability on IC50 | `Q312` · not captured | 34 | % | not captured | llm (not captured) | Rodríguez-Fernández_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -55,20 +50,20 @@ Rodríguez-Fernández K; Reynaldo-Fernández G; Reyes-González S; de Las Barrer
 
 ## Exposure-response model
 
-`Warfarin_RodrguezFernndez2024_PD_inr` — turnover (indirect response type II), `response = E0/(1 - Emax*frac)`
+`Warfarin_RodrguezFernndez2024_PD_inr` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
-| E0 | 23 | — |
+| E0 | 1.78 | — |
 | Emax | 1 | — |
-| EC50 | 34 mg/L | 0.034 kg/m3 |
-| gamma | 1 | — |
+| EC50 | 5.88 mg/L | 0.00588 kg/m3 |
+| gamma | 1.47 | — |
 
-Closed-form check points (response, SI): `at_0` = 23, `at_EC50` = 46, `at_inf` = inf
+Closed-form check points (response, SI): `at_0` = 1.78, `at_EC50` = 0.89, `at_inf` = 0
 
 Deviations:
 
-- `defaulted_parameters` — Emax, gamma
+- `defaulted_parameters` — Emax
 
 ## Review
 
@@ -79,7 +74,7 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | skipped | effect_direction 'stimulation' |
+| `T2_direction` | pass | curve direction matches effect_direction |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: Emax |
 
@@ -88,20 +83,23 @@ Advisory:
 - defaulted: Emax — a row the paper has and the record lacks
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  
+first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.483 (14/29 fields) | 15 |
+| `openai:gpt-6-luna` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.448 (13/29 fields) | 16 |
 
-<details><summary>15 field(s) a reader read differently</summary>
+<details><summary>18 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `effect_direction` | stimulation | inhibition | mismatch |
-| `gpt-oss:120b` | `model_family` | indirect_response_ii | indirect_response_i | mismatch |
-| `gpt-oss:120b` | `parameters[Q21]` | not captured | 2.18 | only_one_extracted |
+| `gpt-oss:120b` | `driver_compound` | warfarin | unknown | mismatch |
+| `gpt-oss:120b` | `effect_direction` | stimulation | unknown | mismatch |
+| `gpt-oss:120b` | `model_family` | sigmoid_emax | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[Q21]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q21]` | not captured | 1.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q21]` | not captured | 2.14 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q21]` | not captured | 1.97 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q316]` | not captured | 27 | only_one_extracted |
@@ -111,9 +109,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 1.47 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 1.48 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q325]` | not captured | 1.27 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.91 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[Q38]` | not captured | 5.61 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[Q38]` | not captured | 1.78 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[Q89]` | 1.47 | not captured | only_one_extracted |
+| `openai:gpt-6-luna` | `parameters[Q324]` | not captured | 2.18 | only_one_extracted |
+| `openai:gpt-6-luna` | `parameters[Q336]` | 2.18 | not captured | only_one_extracted |
 
 </details>
 
