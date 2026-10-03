@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_Ding1979_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (monkey), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">monkey</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 Only the abstract was available, so reported summary statistics stand in for a fitted model. None of the extracted parameters is azathioprine's own; they describe 6-mercaptopurine.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has azathioprine → 6-mercaptopurine (metabolism); azathioprine → 8-hydroxymercaptopurine (metabolism), the second reading none. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:36:15.291051+00:00) predates the upstream re-run (2026-09-30 15:43:26.001959+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `not_simulated` (reviewed 2026-09-28 14:36:15.291051+00:00) predates the upstream re-run (2026-10-03 10:36:32.761780+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-mercaptopurine`.
 
@@ -35,12 +35,12 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the lin
 Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and disposi… (1979)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Ding1979_reference" status="rejected" stale="true" population="rhesus monkeys" measured-compound="6-mercaptopurine" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 1-compartment general linear model (non-mammillary edges) — template `PK_General_Linear`.  
 **Parameters:** 3 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm,norm/F, Vm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -48,8 +48,8 @@ Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | mean terminal half-life | `Q57` · t1/2z | 41.6 | min | 2496.0 | [min] | not captured | llm (0.6) | Ding_1979:abstract | — | not captured |
-| plasma clearance (CLp) | `Q22` · CL | 48.4 | ml/min/kg | 5.6466666666666666e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Ding_1979:abstract | — | not captured |
-| volume of distribution (Vdss) | `Q61` · V | 1.76 | liters/kg | 0.1232 | [l] / [kg] | not captured | exact (1.0) | Ding_1979:abstract | — | not captured |
+| plasma clearance (CLp) | `Q375` · CLm,norm/F | 48.4 | ml/min/kg | 5.6466666666666666e-05 | [ml] / [[min] · [kg]] | not captured | llm_confirmed (0.6) | Ding_1979:abstract | — | not captured |
+| volume of distribution (Vdss) | `Q376` · Vm,norm/F | 1.76 | liters/kg | 0.1232 | [l] / [kg] | not captured | exact (1.0) | Ding_1979:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,13 +59,16 @@ Ding TL et al., Comparative bioavailability and pharmac…, Drug metabolism and 
 ## Departures & gaps
 
 **Interpretation flags:**
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-mercaptopurine
+- metabolite 6-mercaptopurine: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- metabolite 6-mercaptopurine: Q61→Q376 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-mercaptopurine
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=noncompartmental; 3/3 row label(s) assigned, 0 linked by role
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
 - review gap-fill skipped: this record measures '6-mercaptopurine', not azathioprine — the review values are the parent's
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-mercaptopurine
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
 
 **Extraction notes:**
@@ -78,13 +81,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.857 (6/7 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.0 (0/10 fields) | 10 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['azathioprine', '6-mercaptopurine', 'metabolism'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | [] | mismatch |
+| `gpt-oss:120b` | `model.links` | [['azathioprine', '6-mercaptopurine', 'metabolism'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | [['azathioprine', '6-mercaptopurine', 'hydrolysis'], ['azathioprine', '8-hydroxymercaptopurine', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[mean terminal half-life]` | 41.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean terminal half-life]` | not captured | 41.6 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | 48.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[plasma clearance]` | not captured | 48.4 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | 1.76 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution]` | not captured | 1.76 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | 6-mercaptopurine | unknown | mismatch |
 
 </details>
 
@@ -101,13 +113,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 3 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ding_1979:abstract'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Ding_1979:abstract'] |
+| C5_dimension_Q376 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ding_1979:abstract'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Ding_1979:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Ding_1979:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 48.4 | not captured | not captured | ['Ding_1979:abstract'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | fail | ontology-linked transfer parameter on every edge | ['none'] | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 203 L/h | not captured | not captured | ['Ding_1979:abstract'] |
-| C9_phys_window_Q61 | pass | volume within physiological range | 123 L | not captured | not captured | ['Ding_1979:abstract'] |
 
 **Reviewer per-scenario checks:**
 
@@ -145,4 +155,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 15:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:36 UTC</sub>

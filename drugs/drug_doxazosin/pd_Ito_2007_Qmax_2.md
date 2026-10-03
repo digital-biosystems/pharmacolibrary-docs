@@ -40,7 +40,7 @@ Ito K et al., Assessment of alpha1-adrenoceptor antag…, British journal of cli
 
 ## Exposure-response model
 
-`Doxazosin_Ito2007_PD_qmax` — linear, `response = E0 + slope*exposure`
+`Doxazosin_Ito2007_PD_qmax_2` — linear, `response = E0 + slope*exposure`
 
 | parameter | value (paper units) | SI |
 |---|---|---|

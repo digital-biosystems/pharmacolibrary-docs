@@ -26,7 +26,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Zhou Q et al., Exenatide reduces atrial fibrillation s…, The Journal of biological c… (2024)

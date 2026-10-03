@@ -6,17 +6,17 @@
  ],
  "parameters": {
   "E0": 0.0,
-  "EC50": 4.63e-05,
-  "Emax": 0.0138,
+  "EC50": 4.81e-05,
+  "Emax": 0.0118,
   "exposure_per_s": 1e-06,
-  "gamma": 1.0
+  "gamma": 2.9
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 0.0,
-  "4.6299999999999994e-05": 0.006900000000000001
+  "4.81e-05": 0.005900000000000001
  },
- "stop_time": 470.0,
+ "stop_time": 490.0,
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "units": {
@@ -37,6 +37,12 @@
    "display_unit": "ng/ml",
    "factor": 1e-06,
    "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "response_unit": "msec"
  },

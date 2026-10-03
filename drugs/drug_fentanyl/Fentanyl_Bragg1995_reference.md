@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N01A&quot;,&quot;href&quot;:&quot;atc/N01A.md&quot;},{&quot;label&quot;:&quot;fentanyl&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/&quot;},{&quot;label&quot;:&quot;Bragg_1995 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_SEF&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 SEF&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_SEF.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fentanyl_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Davis1986_reference&quot;,&quot;label&quot;:&quot;Davis_1986_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Davis1986_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Tulbah2026_reference&quot;,&quot;label&quot;:&quot;Tulbah_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Tulbah2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fentanyl_Ueshima2025_reference&quot;,&quot;label&quot;:&quot;Ueshima_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/Fentanyl_Ueshima2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Lemmens_1994_EEG&quot;,&quot;label&quot;:&quot;Lemmens_1994 \u00b7 EEG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Lemmens_1994_EEG.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Veng_Pedersen_1995_pCO2&quot;,&quot;label&quot;:&quot;Veng-Pedersen_1995 \u00b7 pCO2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fentanyl/pd_Veng_Pedersen_1995_pCO2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -23,11 +23,11 @@
 
 The record lists CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg and Vss 7.11 l/kg for fentanyl, but V1 carries no value, so a library placeholder would have been used. The refusal cause is an unreachable or orphan compartment, i.e. a compartment with no path from the administered dose. A second reader also disagreed on the primary analyte, reading morphine where this record states fentanyl. Extracted — fentanyl: CL 88.8 ml·kg⁻¹·min⁻¹, V2 1.43 l/kg, V3 5.19 l/kg, Vss 7.11 l/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fentanyl, the second reading morphine; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.042661+00:00) predates the upstream re-run (2026-10-01 18:06:59.812122+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:00.042661+00:00) predates the upstream re-run (2026-10-03 13:15:11.932655+00:00). Current validate status: `rejected`.
 
 ## Citation
 Bragg P et al., Opioid pharmacodynamics in neonatal dog…, Journal of applied physiolo… (1995)
@@ -46,7 +46,7 @@ Bragg P et al., Opioid pharmacodynamics in neonatal dog…, Journal of applied p
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cl, ml·kg⁻¹·min⁻¹ | `Q22` · CL | 88.8 | ml·kg⁻¹·min⁻¹ | 0.00010359999999999998 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Bragg_1995_table_1:row1:col2 | — | not captured |
+| Cl, ml·kg-1·min-1 | `Q22` · CL | 88.8 | ml·kg-1·min-1 | 0.00010359999999999998 | [ml] / [[min] · [kg]] | not captured | exact (1.0) | Bragg_1995_table_1:row1:col2 | — | not captured |
 | V2, l/kg | `Q64` · V2 | 1.43 | l/kg | 0.10010000000000001 | [l] / [kg] | not captured | exact (1.0) | Bragg_1995_table_1:row5:col2 | — | not captured |
 | V3, l/kg | `Q77` · V3 | 5.19 | l/kg | 0.3633 | [l] / [kg] | not captured | exact (1.0) | Bragg_1995_table_1:row6:col2 | — | not captured |
 | Vss, l/kg | `Q65` · Vss | 7.11 | l/kg | 0.4977000000000001 | [l] / [kg] | not captured | exact (1.0) | Bragg_1995_table_1:row7:col2 | — | not captured |
@@ -66,8 +66,8 @@ Bragg P et al., Opioid pharmacodynamics in neonatal dog…, Journal of applied p
 
 **Interpretation flags:**
 - dropped unlinked row (NIL): 'n' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row0:col2'])
-- dropped duplicate Q22 ('Clrapid, ml·kg⁻¹·min⁻¹', value '182') — already have one for this compound
-- dropped unlinked row (NIL): 'Clslow, ml·kg⁻¹·min⁻¹' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row3:col2'])
+- dropped unlinked row (NIL): 'Clrapid, ml·kg-1·min-1' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row2:col2'])
+- dropped unlinked row (NIL): 'Clslow, ml·kg-1·min-1' — extend the ontology if this is a real PK parameter (source ['Bragg_1995_table_1:row3:col2'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fentanyl
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
@@ -90,8 +90,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | fentanyl | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fentanyl | unknown | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | fentanyl | morphine | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | fentanyl | morphine | mismatch |
 
 </details>
 
@@ -143,4 +143,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:06 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 13:15 UTC</sub>

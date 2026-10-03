@@ -31,13 +31,13 @@ This drug has not been studied in patients with a history of pancreatitis. Tirze
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:03 | 6:49 | 0/1/0 | 1/0/0 | 0/0/5 | 151,208/13,262 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 0/10 | 10/0 | 1 |
+| 2026-10-03 18:35 | 7:23 | 0/1/0 | 1/0/0 | 0/0/5 | 160,735/15,006 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 0/10 | 10/0 | 1 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | — | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Schneck_2024_reference](drugs/drug_tirzepatide/Tirzepatide_Schneck2024_reference.md) | — | 2-compartment (no model) | 0 | Schneck K et al., Population pharmacokinetics of the GIP/…, CPT: pharmacometrics & syst… (2024) | [10.1002/psp4.13099](https://doi.org/10.1002/psp4.13099) |
 
 ## Pharmacodynamics (PD)
 
@@ -93,16 +93,16 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 | popPK | Aminorroaya_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of cardiometabolic efficacy outcomes (metabolic syndrome, BMI, lipids) and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for tirzepatide. |
 | popPK | Barrett_2025 | irrelevant | 0 | 0 | The study is a health economics and outcomes research analysis comparing weight loss and costs, containing no pharmacokinetic parameters for tirzepatide. |
 | popPK | Borlaug_2025 | irrelevant | 0 | 0 | The paper is a clinical outcome analysis of the SUMMIT trial focusing on heart failure endpoints and weight loss, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for tirzepatide. |
-| popPK | Chigutsa_2025 | relevant | 8 | 2 | The paper describes a population PK/PD model for tirzepatide in humans and provides the NONMEM code with fixed allometric exponents, but the specific numeric population parameter estimates (PCL, PV2, etc.) are in Table 1 which is not included in the evidence. |
+| popPK | Chigutsa_2025 | relevant | 8 | 2 | The paper describes a population PK/PD model for tirzepatide in humans and provides the NONMEM code with structural parameters (allometric exponents, fixed fractions), but the specific numeric estimates for Clearance (CL), Volume (V), and Absorption Rate (ka) are not present in the provided text or code (they are referenced as being in a separate publication or Table 1 which is not included). |
 | popPK | Garg_2025 | irrelevant | 0 | 0 | The study is a retrospective chart review of clinical outcomes (weight, HbA1c, biomarkers) and does not report any pharmacokinetic parameters for tirzepatide. |
-| popPK | Gonzalez_2026 | irrelevant | 0 | 0 | The study is a clinical retrospective cohort analyzing glycemic and weight outcomes, not a pharmacokinetic study reporting disposition parameters for tirzepatide. |
-| PGx | Kuryłowicz_2026 | not_relevant | 2 | 0 | The paper is a narrative review that mentions a GWAS finding regarding GLP1R/GIPR variants and response/tolerability, but it does not report specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, receptor binding) for tirzepatide, nor does it provide fitted effect sizes. |
+| popPK | Gonzalez_2026 | irrelevant | 0 | 0 | The study is a clinical outcomes analysis of glycemic and weight changes, not a pharmacokinetic study, and reports no PK parameters for tirzepatide. |
+| PGx | Kuryłowicz_2026 | not_relevant | 2 | 0 | The paper is a narrative review that mentions a GWAS on GLP1R/GIPR variants but explicitly states the findings are hypothesis-generating and unreplicated, without providing specific quantitative PK/PD effect sizes for tirzepatide. |
 | PGx | Lang_2026 | not_relevant | 0 | 0 | The paper is a clinical case series reporting weight loss outcomes in patients with hypothalamic obesity and does not report any pharmacogenomic effects on PK or PD parameters. |
 | PGx | Nicze_2026 | not_relevant | 2 | 3 | The paper is a narrative review discussing general factors in obesity treatment failure and mentions pharmacogenomic variants qualitatively, but it does not report specific quantitative PK/PD parameter changes for tirzepatide. |
-| PGx | Shin_2026 | not_relevant | 3 | 2 | The paper is a narrative review discussing genetic predictors of clinical efficacy (glycemic/weight response) rather than reporting specific pharmacokinetic or pharmacodynamic parameter changes (e.g., AUC, Cmax, receptor occupancy) linked to genotypes. |
+| PGx | Shin_2026 | not_relevant | 5 | 5 | The paper is a narrative review summarizing genetic predictors of clinical efficacy (glycemic/weight response) rather than reporting a specific pharmacokinetic or pharmacodynamic parameter change driven by a gene variant. |
 | popPK | Sikorska_2026 | irrelevant | 0 | 0 | The paper is a clinical service evaluation reporting weight loss and metabolic outcomes, containing no pharmacokinetic parameters (CL, V, ka, etc.) for tirzepatide. |
-| PGx | Song_2025 | not_relevant | 2 | 2 | The paper is a review that discusses hypothetical gene-disease-drug interaction models and qualitative associations (e.g., reduced weight loss) without reporting fitted quantitative pharmacokinetic or pharmacodynamic effect sizes for specific variants. |
+| PGx | Song_2025 | not_relevant | 2 | 2 | The paper is a review that discusses hypothetical gene-disease-drug interaction models and qualitative associations (e.g., reduced weight loss) without reporting fitted quantitative pharmacokinetic or pharmacodynamic effect sizes for specific genotypes. |
 | PGx | Yamanouchi_2025 | not_relevant | 0 | 0 | The paper is a comprehensive review of incretin physiology and cardiovascular effects, mentioning tirzepatide only as a therapeutic example without reporting any pharmacogenomic data or genotype-specific PK/PD parameters. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-01 16:57 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-03 18:28 UTC</sub>

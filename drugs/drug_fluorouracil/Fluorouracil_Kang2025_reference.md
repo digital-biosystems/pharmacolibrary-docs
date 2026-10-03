@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Kang_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Blesch2003_reference&quot;,&quot;label&quot;:&quot;Blesch_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_DIP_tumor_volume&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 DIP / tumor volume&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_DIP_tumor_volume.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Blesch2003_reference&quot;,&quot;label&quot;:&quot;Blesch_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_V&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 V&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_V.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2022_T&quot;,&quot;label&quot;:&quot;Ma_2022 \u00b7 T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Ma_2022_T.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Kang2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.417). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The record reports apparent fluorouracil parameters (CL/F 37.9 L/h, V/F 902.0 L, V2/F 519.0 L, Q/F 132.0 L/h) from a two-compartment structure with first-order depot input, assuming F=1 and Fm=1 without molar correction. The absorption parameters ka and Tlag were left at library defaults because the source gave no values, so the absorption input is partly invented rather than fitted. A second reader also disagreed on several extracted values, reading 1551 and 960 where this record has none, and leaving Q/F (132) unread where this record has a value; the 1.88 value agreed. Extracted — fluorouracil: CL/F 37.9 L/h, V/F 902 L, V2/F 519 L, Q/F 132 L/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 29669, the second reading none; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 29669, the second reading none; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:05.723085+00:00) predates the upstream re-run (2026-10-01 14:01:26.861719+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:38:05.723085+00:00) predates the upstream re-run (2026-10-03 08:56:58.986807+00:00). Current validate status: `extracted`.
 
 ## Citation
 Kang M et al., Population Pharmacokinetics of Radotini…, Pharmaceuticals (Basel, Swi… (2025)
@@ -35,7 +35,7 @@ Kang M et al., Population Pharmacokinetics of Radotini…, Pharmaceuticals (Base
 <dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Kang2025_reference" status="extracted" stale="true" population="" measured-compound="fluorouracil" parameterization="apparent" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 4 extracted.
+**Parameters:** 5 extracted.
 
 **Parameterization:** CL/F, Q/F, V/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
@@ -46,6 +46,7 @@ Kang M et al., Population Pharmacokinetics of Radotini…, Pharmaceuticals (Base
 | Vc/Fi | `Q76` · V/F | 383.0 | L | 0.383 | L | not captured | review (0.7) | Kang_2025:review | — | not captured |
 | Vp/F | `Q82` · V2/F | 519.0 | L | 0.519 | L | not captured | review (0.7) | Kang_2025:review | — | not captured |
 | Q/Fi | `Q69` · Q/F | 132.0 | L/h | 3.6666666666666666e-05 | L/h | not captured | review (0.7) | Kang_2025:review | — | not captured |
+| kai | `Q49` · kabs | 1.59 | 1/h | 0.0004416666666666667 | 1/h | not captured | review (0.7) | Kang_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -66,24 +67,28 @@ Kang M et al., Population Pharmacokinetics of Radotini…, Pharmaceuticals (Base
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.417 (5/12 fields) | 7 |
+| `gpt-oss:120b` | partly confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q19]` | 29669 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q27]` | 23.0 | 37.9 | mismatch |
+| `gpt-oss:120b` | `values[Q22]` | not captured | 132 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | 23.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q290]` | 383 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q32]` | 1551 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q37]` | 960 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 18.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | not captured | 519 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q69]` | 132 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q76]` | 383 | 902 | mismatch |
-| `gpt-oss:120b` | `values[Q81]` | 1.88 | 1.88 | mismatch |
+| `gpt-oss:120b` | `values[Q76]` | 383 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q82]` | 519 | not captured | only_one_extracted |
 
 </details>
 
@@ -97,10 +102,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kang_2025:review'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Kang_2025:review'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Kang_2025:review'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kang_2025:review'] |
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['Kang_2025:review'] |
@@ -163,4 +169,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 14:01 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 08:56 UTC</sub>

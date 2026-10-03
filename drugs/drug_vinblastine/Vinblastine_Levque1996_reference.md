@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Lev\u00eaque_1996 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension_of_diaphragm_muscle&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension of diaphragm muscle&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension_of_diaphragm_muscle.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Piwnica_Worms_1995_Tc_SESTAMIBI&quot;,&quot;label&quot;:&quot;Piwnica-Worms_1995 \u00b7 Tc-SESTAMIBI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_Piwnica_Worms_1995_Tc_SESTAMIBI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Levque1996_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 90; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 46.2, the second reading 72.54; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,18 +61,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q21]` | not captured | 90 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q32]` | 1.49 | 114.3 | mismatch |
+| `gpt-oss:120b` | `values[Q22]` | 46.2 | 72.54 | mismatch |
+| `gpt-oss:120b` | `values[Q32]` | 1.49 | 70.9 | mismatch |
 | `gpt-oss:120b` | `values[Q56]` | not captured | 1.49 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | not captured | 4.7 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q61]` | 70 | 75 | mismatch |
+| `gpt-oss:120b` | `values[Q61]` | 70 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q76]` | not captured | 70 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 90 | only_one_extracted |
 
 </details>
 

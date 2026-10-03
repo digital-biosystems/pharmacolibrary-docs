@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Thigpen2019_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,7 +19,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 86, the second reading 86; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 86, the second reading 86; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -61,14 +61,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q19]` | 86 | 86 | mismatch |
-| `gpt-oss:120b` | `values[Q45]` | not captured | 10 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q310]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q352]` | not captured | 2.4 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q364]` | not captured | 0.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q63]` | 2.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q84]` | not captured | 68 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q88]` | 68 | not captured | only_one_extracted |
 

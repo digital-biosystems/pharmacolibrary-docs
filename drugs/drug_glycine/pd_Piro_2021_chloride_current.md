@@ -78,13 +78,13 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | fail | curve direction contradicts effect_direction — sign error |
+| `T2_direction` | fail | the response falls but direct effect predicts it rises — sign error |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 
 Blocking:
 
-- T2 curve falls but the record says stimulation
+- T2 curve falls but direct effect predicts it rises
 
 Advisory:
 

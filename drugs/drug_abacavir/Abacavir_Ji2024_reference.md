@@ -5,7 +5,7 @@
 
 # abacavir — `Abacavir_Ji2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.571). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has 23, the second reading 5747; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q17: this record has 62, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -59,21 +59,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.571 (12/21 fields) | 9 |
+| `gpt-oss:120b` | not confirmed | 0.6 (12/20 fields) | 8 |
 
-<details><summary>9 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q19]` | 23 | 5747 | mismatch |
+| `gpt-oss:120b` | `values[Q17]` | 62 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q19]` | 23 | 1920 | mismatch |
 | `gpt-oss:120b` | `values[Q21]` | 1.03 | 1.03 | mismatch |
-| `gpt-oss:120b` | `values[Q38]` | not captured | 1.9 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q46]` | 0.3 | 0.3 | mismatch |
-| `gpt-oss:120b` | `values[Q65]` | 1010 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 62.5 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q45]` | not captured | 8.60 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q46]` | 0.3 | 0.30 | mismatch |
 | `gpt-oss:120b` | `values[Q72]` | not captured | 8 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q76]` | not captured | 1010 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q84]` | not captured | 66.0 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q88]` | not captured | 1920 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 8 | only_one_extracted |
 
 </details>
 

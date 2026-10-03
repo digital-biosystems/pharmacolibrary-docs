@@ -1,0 +1,60 @@
+{
+ "model_id": "Metformin_Chae2012_PD_antihyperglycaemic_effect",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 3.68,
+  "Emax": -0.198,
+  "exposure_per_s": 1.0,
+  "gamma": 0.55
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "3.6799999999999997": -0.099
+ },
+ "stop_time": 37.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg ml -1",
+   "factor": 0.9999999999999999,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "%",
+   "factor": 0.01,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg ml -1",
+   "factor": 0.9999999999999999,
+   "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "%"
+ },
+ "x_axis": {
+  "display_unit": "mg ml -1",
+  "factor": 0.9999999999999999,
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "%",
+  "factor": 0.01,
+  "label": "response"
+ }
+}

@@ -9,7 +9,7 @@
   "EC50": 0.000186,
   "Emax": -6.0,
   "exposure_per_s": 1e-06,
-  "gamma": 1.0
+  "gamma": 2.42
  },
  "reference_peaks": {},
  "reference_points": {
@@ -43,6 +43,12 @@
    "display_unit": "ng/mL",
    "factor": 1e-06,
    "si_unit": "kg/m3"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "response_unit": ""
  },

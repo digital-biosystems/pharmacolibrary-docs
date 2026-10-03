@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 PD PANSS total score change from baseline&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wang_2024 \u00b7 PD PANSS total score&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PANSS total score change from baseline — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.909), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+# PANSS total score — PD  <span class="pk-badge pk-badge--green">accepted (caveats)</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.909), gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 
 ## What this record describes
 
-**As extracted:** Brexpiprazole (concentrations from the PK model of Frederiksen_2023_3) drives PANSS total score change from baseline: disease-progression model.
+**As extracted:** Brexpiprazole (concentrations from the PK model of Frederiksen_2023_3) drives PANSS total score: direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -21,7 +21,7 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Wang_2024`
-- **model family:** `disease_progression`
+- **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/proportional
@@ -37,9 +37,9 @@ Wang X et al., Exposure-Response Modeling in Adults an…, Journal of clinical p
 | PD (effect) | Maximum placebo response (P max ) | `Q341` · not captured | 0.107 | not captured | not captured | llm (not captured) | Wang_2024:pdv3 |
 | — | Time to reach 63.2% of P max (TD) | `Q100` · not captured | 3.44 | weeks | not captured | nil (not captured) | Wang_2024:pdv3 |
 | PD (effect) | Shape parameter (POW) | `Q343` · not captured | 1.44 | not captured | not captured | exact (not captured) | Wang_2024:pdv3 |
-| PD (effect) | Maximum drug effect (E max ) | `Q320` · not captured | 0.173 | not captured | not captured | llm (not captured) | Wang_2024:pdv3 |
+| PD (effect) | Maximum drug effect (E max ) | `Q323` · not captured | 0.173 | not captured | not captured | direction (not captured) | Wang_2024:pdv3 |
 | PD (effect) | EC 50 | `Q321` · not captured | 3.87 | ng/mL | not captured | llm (not captured) | Wang_2024:pdv3 |
-| — | Delayed drug effect constant (k T ) | `Q100` · not captured | 0.247 | 1/week | not captured | nil (not captured) | Wang_2024:pdv3 |
+| PD (effect) | Delayed drug effect constant (k T ) | `Q326` · not captured | 0.247 | 1/week | not captured | llm (not captured) | Wang_2024:pdv3 |
 | variability | IIV on E max , SD [%CV] | `Q312` · not captured | 0.101 | not captured | not captured | llm (not captured) | Wang_2024:pdv3 |
 
 <details class="legend">
@@ -64,8 +64,7 @@ Closed-form check points (response, SI): `at_0` = 94, `at_EC50` = 93.91, `at_inf
 Deviations:
 
 - `defaulted_parameters` — gamma
-- `pd_binding_family_inferred` — the record's model family is disease_progression; read from the parameters: Emax/Imax and EC50/IC50 without a Hill coefficient — Emax
-- `pd_binding_inhibition_sign` — effect_direction=inhibition with a positive Emax (Q320) — sign flipped
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -76,7 +75,7 @@ Verdict <span class="pk-badge pk-badge--green">accepted (caveats)</span>
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | advisory | only convention defaults (gamma = 1) |
 

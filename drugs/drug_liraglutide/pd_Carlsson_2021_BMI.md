@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Carlsson_2021 \u00b7 PD change from baseline in BMI&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10A&quot;,&quot;href&quot;:&quot;atc/A10A.md&quot;},{&quot;label&quot;:&quot;liraglutide&quot;,&quot;href&quot;:&quot;drugs/drug_liraglutide/&quot;},{&quot;label&quot;:&quot;Carlsson_2021 \u00b7 PD changes from baseline in BMI (%)&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# change from baseline in BMI — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# changes from baseline in BMI (%) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -11,7 +11,7 @@
 
 ## What this record describes
 
-**As extracted:** Liraglutide (concentrations from this paper's PK model) drives change from baseline in BMI (in %): direct sigmoid Emax (Hill) effect.
+**As extracted:** Liraglutide (concentrations from this paper's PK model) drives changes from baseline in BMI (%) (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 

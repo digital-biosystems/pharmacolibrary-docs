@@ -4,7 +4,7 @@
 
 # liraglutide — `Liraglutide_Woodward2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -16,7 +16,7 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q364: this record has none, the second reading 25; it also differs on 3 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q364: this record has none, the second reading 25; it also differs on 1 more field. That field does not shape the model.
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -58,16 +58,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q364]` | not captured | 25 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q54]` | not captured | 16 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q60]` | not captured | 5 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q88]` | not captured | 50 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q54]` | not captured | 0.5 | only_one_extracted |
 
 </details>
 

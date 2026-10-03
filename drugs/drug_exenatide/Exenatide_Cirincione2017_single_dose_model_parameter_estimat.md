@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017_single_dose_model_parameter_estimat`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.722). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.684). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The model is a two-compartment structure for exenatide in type 2 diabetes patients with transit-compartment absorption (ktr 0.0872 1/day) and Michaelis-Menten elimination (Vmax 0.037 mg/day, Km 567 pg/mL). The clearance parameter carries the unit L/h, which could not be converted to a consistent per-day scale, so the parameter entered the model without a value on the same time basis as the other parameters and the dimension check on the structural parameter failed. A second reader also disagreed on several extracted values, reading 2.4 where this record has no value, and leaving null where this record lists 567, 110, 0.0872, 7.03 and 0.037. Extracted — exenatide: kabs 2.98, CLint 110 L/day, V 7.03 L, Fab 1.13, ktr 0.0872, Km 567 pg/mL, Vmax 0.037 mg/day, Q 89.3 L/day, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:59.252672+00:00) predates the upstream re-run (2026-10-01 15:30:27.962693+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:59.252672+00:00) predates the upstream re-run (2026-10-03 16:57:25.728561+00:00). Current validate status: `rejected`.
 
 ## Citation
 Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journal (2017)
@@ -64,7 +64,7 @@ Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journa
 ## Departures & gaps
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'CLint (L/day)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
+- unit_dimension_mismatch: 'CLint (L/day)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [mass] / [time]') — route to review
 - dropped unlinked row (NIL): 'f2 (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row4:col1'])
 - dropped unlinked row (NIL): 'f3 (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row5:col1'])
 - dropped unlinked row (NIL): 'fret(single-dose study) (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row6:col1'])
@@ -75,8 +75,8 @@ Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journa
 - covariate level 'CL eGFR' → Q900:cl_egfr = 0.838 (power on Q3)
 - unit_dimension_mismatch: 'Vmax (mg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped unlinked row (NIL): 'RVS D study (Log SD)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row18:col1'])
-- implicit units: 'ka (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ka (1/day) = 2.98'. Additionally, the text describes the model using")
-- implicit units: 'ktr1 (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ktr1 (1/day) = 0.0872'. The value is consistent with a slow transit ")
+- implicit units: 'ka (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ka (1/day) = 2.98'. Additionally, the context of exenatide extended-")
+- implicit units: 'ktr1 (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ktr1 (1/day) = 0.0872'. The magnitude (0.0872) is consistent with a ")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=exenatide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -91,15 +91,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.722 (13/18 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.684 (13/19 fields) | 6 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[f2]` | not captured | 46.3 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fret(single-dose study)]` | not captured | 10.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[n1]` | not captured | 0.722 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vcint].parameter_id` | Q61 | Q63 | mismatch |
+| `gpt-oss:120b` | `parameters[vctwkg]` | not captured | 2.67 | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | exenatide | unknown | mismatch |
 
@@ -157,4 +158,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:57 UTC</sub>

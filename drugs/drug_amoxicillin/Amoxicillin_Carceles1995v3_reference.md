@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;amoxicillin&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/&quot;},{&quot;label&quot;:&quot;Carceles_1995_3 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Cattrall2019_reference&quot;,&quot;label&quot;:&quot;Cattrall_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Cattrall2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_1&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_1.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_2&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_3&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_3.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_4&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_4.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_5&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_5.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_median&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_typical_value&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_typical_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Lacampagne2026_reference&quot;,&quot;label&quot;:&quot;Lacampagne_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_reference&quot;,&quot;label&quot;:&quot;Spyker_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_1994_K&quot;,&quot;label&quot;:&quot;Li_1994 \u00b7 K&#x27;&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/pd_Li_1994_K.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amoxicillin_AlbanellFernndez2025_reference&quot;,&quot;label&quot;:&quot;Albanell-Fern\u00e1ndez_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_AlbanellFernndez2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Bardhi2026_reference&quot;,&quot;label&quot;:&quot;Bardhi_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Bardhi2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Cattrall2019_reference&quot;,&quot;label&quot;:&quot;Cattrall_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Cattrall2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_1&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_1&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_1.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_2&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_2&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_2.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_3&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_3&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_3.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_4&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_4&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_4.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_cat_5&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_cat_5&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_cat_5.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_median&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_median&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_median.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Dubbelboer2025_typical_value&quot;,&quot;label&quot;:&quot;Dubbelboer_2025_typical_value&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Dubbelboer2025_typical_value.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Echizen2016_reference&quot;,&quot;label&quot;:&quot;Echizen_2016_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Echizen2016_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Lacampagne2026_reference&quot;,&quot;label&quot;:&quot;Lacampagne_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Lacampagne2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Wu2021_reference&quot;,&quot;label&quot;:&quot;Wu_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Wu2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amoxicillin_Spyker1977_reference&quot;,&quot;label&quot;:&quot;Spyker_1977_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/Amoxicillin_Spyker1977_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Li_1994_N&quot;,&quot;label&quot;:&quot;Li_1994 \u00b7 N&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amoxicillin/pd_Li_1994_N.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amoxicillin — `Amoxicillin_Carceles1995v3_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5), gpt-5.6-luna (not confirmed, agreement 0.08). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.05), gpt-5.6-luna (not confirmed, agreement 0.08). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (goat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">goat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (AUC and Cmax), so that value has no SI equivalent. Extracted — amoxicillin: t1/2α 143, k21 3.04 1/h, CL 0.11 L/h, AUC 186 mg*h/L, MRT 1.57 h, kabs 1 1/h, tlag 0.209 h, Cmax 5.75 mg/L, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading amoxicillin and clavulanic acid; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has amoxicillin, the second reading unknown; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:08.201293+00:00) predates the upstream re-run (2026-09-30 23:29:25.224998+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:08.201293+00:00) predates the upstream re-run (2026-10-03 17:42:25.102361+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary quarterly (1995)
@@ -46,9 +46,9 @@ Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary q
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| A | `Q59` · t1/2α | 143.1401 | not captured | not captured | not captured | not captured | llm (0.6) | tab_0:row2:col2 | — | not captured |
 | k21 | `Q302` · k21 | 3.0391 | 1/h | 0.0008441944444444444 | 1/h | not captured | exact (1.0) | tab_0:row8:col2 | — | not captured |
 | CL | `Q22` · CL | 0.1097 | L/h | 3.0472222222222225e-08 | L/h | not captured | exact (1.0) | tab_0:row10:col2 | — | not captured |
+| t1/2a | `Q59` · t1/2α | 0.1014 | h | 365.04 | h | not captured | llm_corrected (0.6) | tab_0:row11:col2 | — | not captured |
 | AUC | `Q88` · AUC | 185.51 | mg*h/L | not captured | mg*h/L | not captured | exact (1.0) | tab_0:row14:col2, Carceles_1995_3_table_2:row14:col2, Carceles_1995_3_table_2:row14:col4 | — | not captured |
 | MRT | `Q53` · MRT | 1.57 | h | 5652.0 | h | not captured | exact (1.0) | tab_0:row15:col2, Carceles_1995_3_table_2:row15:col4 | — | not captured |
 | ka | `Q49` · kabs | 0.9996 | 1/h | 0.0002776666666666667 | 1/h | not captured | exact (1.0) | Carceles_1995_3_table_2:row2:col4 | — | not captured |
@@ -65,8 +65,8 @@ Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary q
 ## Departures & gaps
 
 **Interpretation flags:**
+- dropped unlinked row (NIL): 'A' — extend the ontology if this is a real PK parameter (source ['tab_0:row2:col2'])
 - dropped unlinked row (NIL): '1(12' — extend the ontology if this is a real PK parameter (source ['tab_0:row7:col2'])
-- dropped duplicate Q59 ('t1/2a', value '0.1014') — already have one for this compound
 - dropped unlinked row (NIL): 'tina' — extend the ontology if this is a real PK parameter (source ['tab_0:row12:col2'])
 - dropped unlinked row (NIL): 'Ca' — extend the ontology if this is a real PK parameter (source ['Carceles_1995_3_table_2:row1:col4'])
 - dropped unlinked row (NIL): 'B' — extend the ontology if this is a real PK parameter (source ['Carceles_1995_3_table_2:row3:col2', 'Carceles_1995_3_table_2:row3:col4'])
@@ -76,15 +76,15 @@ Carceles CM et al., Pharmacokinetics of amoxicillin/clavula…, The veterinary q
 - dropped duplicate Q83 ('tn.+ tIag', value '2.0825') — already have one for this compound
 - dropped unlinked row (NIL): 'ka`(b)' — extend the ontology if this is a real PK parameter (source ['Carceles_1995_3_table_2:row11:col2'])
 - dropped unlinked row (NIL): 't I ,2a,' — extend the ontology if this is a real PK parameter (source ['Carceles_1995_3_table_2:row12:col4'])
-- implicit units: 'A' — the LLM proposed 'mg/L', whose dimension does not fit Q59; left unset
-- implicit units: 'k21' → 1/h (from the popPK convention: 'k21 is a first-order transfer rate constant. The standard unit for first-order rate constants in population PK is 1/h (o')
-- implicit units: 'CL' → L/h (from the popPK convention: 'CL is total clearance. The standard unit for clearance in population PK is L/h. The value 0.1097 is consistent with L/h ')
-- implicit units: 'AUC' → mg*h/L (from the popPK convention: 'AUC is the area under the concentration-time curve. The standard unit is concentration * time, typically mg*h/L (or mg*h')
-- implicit units: 'MRT' → h (from the popPK convention: 'MRT is mean residence time, a time parameter. The standard unit is hours (h).')
-- implicit units: 'ka' → 1/h (from the popPK convention: 'ka is the absorption rate constant, a first-order rate constant. The standard unit is 1/h (or h^-1).')
-- implicit units: 'tlag' → h (from the popPK convention: 'tlag is the lag time, a time parameter. The standard unit is hours (h). The text mentions latencies of 10-12 minutes, wh')
-- implicit units: 'Cmax' → mg/L (from the popPK convention: 'Cmax is the maximum plasma concentration. The standard unit is mg/L (or mg/mL). Given the context of amoxicillin in goat')
-- implicit units: 'MAT' → h (from the popPK convention: 'MAT is mean absorption time, a time parameter. The standard unit is hours (h).')
+- implicit units: 'k21' → 1/h (from the popPK convention: 'k21 is a first-order transfer rate constant; standard unit is 1/h.')
+- implicit units: 'CL' → L/h (from the popPK convention: 'CL is total clearance; standard unit is L/h.')
+- implicit units: 't1/2a' → h (from the popPK convention: 't1/2a is a half-life; standard unit is h.')
+- implicit units: 'AUC' → mg*h/L (from the popPK convention: 'AUC is area under the concentration-time curve; standard unit is concentration * time (mg*h/L).')
+- implicit units: 'MRT' → h (from the popPK convention: 'MRT is mean residence time; standard unit is h.')
+- implicit units: 'ka' → 1/h (from the popPK convention: 'ka is a first-order absorption rate constant; standard unit is 1/h.')
+- implicit units: 'tlag' → h (from the popPK convention: 'tlag is a lag time; standard unit is h.')
+- implicit units: 'Cmax' → mg/L (from the popPK convention: 'Cmax is maximum concentration; standard unit is mg/L.')
+- implicit units: 'MAT' → h (from the popPK convention: 'MAT is mean absorption time; standard unit is h.')
 - apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q22 (CL)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=amoxicillin
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
@@ -111,10 +111,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.5 (8/16 fields) | 8 |
+| `gpt-oss:120b` | not confirmed | 0.05 (1/20 fields) | 19 |
 | `gpt-5.6-luna` | not confirmed | 0.08 (2/25 fields) | 23 |
 
-<details><summary>31 field(s) a reader read differently</summary>
+<details><summary>42 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -141,14 +141,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-5.6-luna` | `parameters[vd]` | 1.73 | not captured | only_one_extracted |
 | `gpt-5.6-luna` | `screen.dose_compound` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
 | `gpt-5.6-luna` | `screen.primary_analyte` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
 | `gpt-oss:120b` | `parameters[1(12]` | not captured | 3.0803 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[a].parameter_id` | Q59 | Q67 | mismatch |
+| `gpt-oss:120b` | `parameters[a]` | not captured | 143.1401 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | 185.51 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[auc]` | not captured | 185.51 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | 0.1097 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl]` | not captured | 0.1097 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cmax]` | 5.7500 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | 3.0391 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k21]` | not captured | 3.0391 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[ka]` | 0.9996 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[mat]` | 2.60 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | 1.57 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mrt]` | not captured | 1.57 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t1/2a]` | 0.1014 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[t1/2a]` | not captured | 0.1014 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tlag]` | 0.2094 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | amoxicillin | amoxicillin and clavulanic acid | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | amoxicillin | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | amoxicillin | unknown | mismatch |
 
 </details>
 
@@ -170,11 +181,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Carceles_1995_3_table_2:row9:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Carceles_1995_3_table_2:row2:col4'] |
 | C5_dimension_Q53 | pass | [time] | not captured | not captured | not captured | ['tab_0:row15:col2', 'Carceles_1995_3_table_2:row15:col4'] |
+| C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['tab_0:row11:col2'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Albanell-Fernández_2025:review'] |
 | C5_dimension_Q73 | pass | [time] | not captured | not captured | not captured | ['Carceles_1995_3_table_2:row16:col4'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Carceles_1995_3_table_2:row7:col4'] |
 | C5_dimension_Q88 | pass | [mass] * [time] / [length] ** 3 | not captured | not captured | not captured | ['tab_0:row14:col2', 'Carceles_1995_3_table_2:row14:col2', 'Carceles_1995_3_table_2:row14:col4'] |
-| C5_unit_missing_Q59 | fail | [time] | not captured | not captured | not captured | ['tab_0:row2:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.1097 | not captured | not captured | ['tab_0:row10:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 0.11 L/h | not captured | not captured | ['tab_0:row10:col2'] |
@@ -213,4 +224,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 23:29 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 17:42 UTC</sub>

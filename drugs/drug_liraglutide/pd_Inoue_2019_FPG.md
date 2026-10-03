@@ -11,7 +11,7 @@
 
 ## What this record describes
 
-**As extracted:** Liraglutide (the dose) drives fasting plasma glucose (in mg dl⁻¹): indirect response — drug inhibits the production of fasting plasma glucose.
+**As extracted:** Liraglutide (the dose) drives fasting plasma glucose (in mg dl À1): indirect response — drug inhibits the production of fasting plasma glucose.
 
 **Model:** No model was generated from this record.
 
@@ -32,13 +32,13 @@ Inoue H et al., Efficacy of DPP-4 inhibitors, GLP-1 ana…, British journal of c
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Baseline FPG | `Q324` · not captured | 165 | mg dl⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | Baseline FPG | `Q324` · not captured | 165 | mg dl À1 | not captured | llm (not captured) | Inoue_2019:pdv3 |
 | PD (effect) | K out, FPG | `Q328` · not captured | 0.0936 | /day | not captured | llm (not captured) | Inoue_2019:pdv3 |
 | PD (effect) | E max, GLP-1r | `Q323` · not captured | 0.266 | not captured | not captured | llm (not captured) | Inoue_2019:pdv3 |
-| PD (effect) | ED 50, liraglutide | `Q321` · not captured | 0.377 | mg day⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| PD (effect) | ED 50, liraglutide | `Q321` · not captured | 0.377 | mg day À1 | not captured | llm (not captured) | Inoue_2019:pdv3 |
 | PD (effect) | E placebo | `Q341` · not captured | 0.0168 | not captured | not captured | llm (not captured) | Inoue_2019:pdv3 |
 | PD (effect) | DP FPG | `Q340` · not captured | 0.0204 | /year | not captured | llm (not captured) | Inoue_2019:pdv3 |
-| variability | Additive error FPG | `Q315` · not captured | 3.35 | mg dl⁻¹ | not captured | llm (not captured) | Inoue_2019:pdv3 |
+| variability | Additive error FPG | `Q315` · not captured | 3.35 | mg dl À1 | not captured | llm (not captured) | Inoue_2019:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

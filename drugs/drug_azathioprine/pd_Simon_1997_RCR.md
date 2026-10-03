@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Simon_1997 \u00b7 PD Respiratory control ratio decrease (RCR, state 3/state 4 oxygen consumption)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L04A&quot;,&quot;href&quot;:&quot;atc/L04A.md&quot;},{&quot;label&quot;:&quot;azathioprine&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/&quot;},{&quot;label&quot;:&quot;Simon_1997 \u00b7 PD respiratory control ratio (RCR)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Respiratory control ratio decrease (RCR, state 3/state 4 oxygen consumption) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+# respiratory control ratio (RCR) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.429), gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Azathioprine (concentrations from the PK model of Rosario_2017) drives Respiratory control ratio decrease (RCR, state 3/state 4 oxygen consumption) (in %): direct Emax (saturable) effect.
+**As extracted:** Azathioprine (concentrations from the PK model of Rosario_2017) drives respiratory control ratio (RCR): direct Emax (saturable) effect.
 
 **Model:** No model was generated from this record.
 
@@ -26,7 +26,7 @@
 - **model family:** `emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
@@ -35,8 +35,8 @@ Simon N et al., Prednisolone and azathioprine worsen th…, Life sciences (1997)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 | `Q322` · not captured | 5.8 ± 2.5 x 10-9 | M | not captured | llm (not captured) | Simon_1997:pdv3 |
-| PD (effect) | maximal inhibition | `Q323` · not captured | 10.3 | % | not captured | llm (not captured) | Simon_1997:pdv3 |
+| PD (effect) | Imax | `Q323` · not captured | 10.3 | % | not captured | llm (not captured) | Simon_1997:pdv3 |
+| PD (effect) | IC50 | `Q322` · not captured | 5.8 f 2.5 x 10e9 | M | not captured | llm (not captured) | Simon_1997:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

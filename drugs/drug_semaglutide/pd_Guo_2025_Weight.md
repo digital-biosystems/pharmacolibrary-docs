@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Guo_2025 \u00b7 PD Change in weight from baseline relative to placebo (pure drug-induced weight reduction)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;semaglutide&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/&quot;},{&quot;label&quot;:&quot;Guo_2025 \u00b7 PD weight reduction&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_base&quot;,&quot;label&quot;:&quot;Carlsson_2018_base&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_base.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Carlsson2018_full&quot;,&quot;label&quot;:&quot;Carlsson_2018_full&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Carlsson2018_full.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Langeskov2022_reference&quot;,&quot;label&quot;:&quot;Langeskov_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Langeskov2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Min2025_reference&quot;,&quot;label&quot;:&quot;Min_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Min2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_estimate&quot;,&quot;label&quot;:&quot;Overgaard_2019_estimate&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_estimate.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Yu2024_reference&quot;,&quot;label&quot;:&quot;Yu_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Yu2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_one_compartment_model_from_phase_3&quot;,&quot;label&quot;:&quot;Overgaard_2019_one_compartment_model_from_phase_3a_trialsa&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_one_compartment_model_from_phase_3.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Semaglutide_Overgaard2019_two_compartment_final_model&quot;,&quot;label&quot;:&quot;Overgaard_2019_two_compartment_final_model&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/Semaglutide_Overgaard2019_two_compartment_final_model.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Guo_2025_Weight&quot;,&quot;label&quot;:&quot;Guo_2025 \u00b7 \u0394\u0394Weight&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_semaglutide/pd_Guo_2025_Weight.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Change in weight from baseline relative to placebo (pure drug-induced weight reduction) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
+# weight reduction — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.25), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 
 ## What this record describes
 
-**As extracted:** Semaglutide (injectable) (the dose) drives Change in weight from baseline relative to placebo (pure drug-induced weight reduction) (in kg): direct Emax (saturable) effect.
+**As extracted:** Semaglutide_injection (the dose) drives weight reduction (in kg): direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -24,7 +24,7 @@
 - **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/proportional
+- **effect:** inhibition/additive
 
 ## Citation
 Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025)
@@ -33,9 +33,8 @@ Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025)
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax_Semaglutide_injection | `Q320` · not captured | -11.7 | kg | not captured | llm (not captured) | Guo_2025:pdv3 |
-| PD (effect) | ED50 (dose achieving 50% of Emax) | `Q321` · not captured | 0.384 | mg | not captured | llm (not captured) | Guo_2025:pdv3 |
-| model term | age covariate coefficient on Emax | `Q900` · not captured | -0.0304 | 1/year | not captured | llm (not captured) | Guo_2025:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -11.7 | kg | not captured | direction (not captured) | Guo_2025:pdv3 |
+| PD (effect) | ED50 | `Q321` · not captured | 0.384 | mg | not captured | llm (not captured) | Guo_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,6 +58,7 @@ Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -5.85, `at_inf`
 Deviations:
 
 - `defaulted_parameters` — E0, gamma
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -68,8 +68,8 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.23%) |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 

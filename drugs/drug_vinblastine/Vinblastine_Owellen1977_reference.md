@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Owellen_1977 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension_of_diaphragm_muscle&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension of diaphragm muscle&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension_of_diaphragm_muscle.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Piwnica_Worms_1995_Tc_SESTAMIBI&quot;,&quot;label&quot;:&quot;Piwnica-Worms_1995 \u00b7 Tc-SESTAMIBI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_Piwnica_Worms_1995_Tc_SESTAMIBI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -34,7 +34,7 @@ Owellen RJ et al., Pharmacokinetics and metabolism of vinb…, Cancer research (
 <dbs-pgx drug="vinblastine" model-id="Vinblastine_Owellen1977_reference" status="rejected" stale="true" population="humans" measured-compound="vinblastine" parameterization="mechanistic" topology="3C"></dbs-pgx>
 
 **Model structure:** 3-compartment; no model was built for this record.  
-**Parameters:** 6 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -49,6 +49,7 @@ Owellen RJ et al., Pharmacokinetics and metabolism of vinb…, Cancer research (
 | Vbeta | `Q64` · V2 | 79.0 | liters | 0.079 | [l] | not captured | llm_corrected (0.6) | Owellen_1977:abstract | — | not captured |
 | gamma phase:t1/2 | `Q89` · t1/2γ | 1173.0 | min | 70380.0 | [min] | not captured | llm_corrected (0.6) | Owellen_1977:abstract | — | not captured |
 | Vgamma | `Q61` · V | 1656.0 | liters | 1.6560000000000001 | [l] | not captured | llm_confirmed (0.6) | Owellen_1977:abstract | — | not captured |
+| Systemic clearance | `Q22` · CL | 46.2 | L/h | 1.2833333333333335e-05 | L/h | not captured | review_gapfill (0.7) | Levêque_1996:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -60,6 +61,7 @@ Owellen RJ et al., Pharmacokinetics and metabolism of vinb…, Cancer research (
 **Interpretation flags:**
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=vinblastine
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
+- gap-filled Q22 (CL) from Levêque_1996's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Owellen_1977_metadata.yaml (6 record(s)); values are summary statistics, not a fitted model
@@ -105,13 +107,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Levêque_1996:review'] |
 | C5_dimension_Q59 | pass | [time] | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
 | C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
 | C5_dimension_Q89 | pass | [time] | not captured | not captured | not captured | ['Owellen_1977:abstract'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.2 | not captured | not captured | ['Levêque_1996:review'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | not captured | not captured | ['Levêque_1996:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 1.66e+03 L | not captured | not captured | ['Owellen_1977:abstract'] |
 | C9_phys_window_Q63 | pass | volume within physiological range | 16.8 L | not captured | not captured | ['Owellen_1977:abstract'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 79 L | not captured | not captured | ['Owellen_1977:abstract'] |

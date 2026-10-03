@@ -102,7 +102,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 | `T0_driver` | fail | off-target driver — the curve belongs to that compound |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | advisory | only convention defaults (gamma = 1) |
 

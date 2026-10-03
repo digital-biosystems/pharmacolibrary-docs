@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01C&quot;,&quot;href&quot;:&quot;atc/L01C.md&quot;},{&quot;label&quot;:&quot;vinblastine&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/&quot;},{&quot;label&quot;:&quot;Zhou_1990 \u00b7 estimated_parameters_vt_l_kg&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;None \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--neutral&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Vinblastine_Levque1996_reference&quot;,&quot;label&quot;:&quot;Lev\u00eaque_1996_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Levque1996_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_cls_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_cls_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_cls_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vt_l_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vt_l_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg&quot;,&quot;label&quot;:&quot;Zhou_1990_estimated_parameters_vc_l_h_kg&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_McKay_1993_baseline_tension_of_diaphragm_muscle&quot;,&quot;label&quot;:&quot;McKay_1993 \u00b7 baseline tension of diaphragm muscle&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_McKay_1993_baseline_tension_of_diaphragm_muscle.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Piwnica_Worms_1995_Tc_SESTAMIBI&quot;,&quot;label&quot;:&quot;Piwnica-Worms_1995 \u00b7 Tc-SESTAMIBI&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_vinblastine/pd_Piwnica_Worms_1995_Tc_SESTAMIBI.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # vinblastine — `Vinblastine_Zhou1990_estimated_parameters_vt_l_kg`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -25,27 +25,28 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.857311+00:00) predates the upstream re-run (2026-10-03 08:04:47.204479+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.857311+00:00) predates the upstream re-run (2026-10-03 08:04:47.204479+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of drug me… (1990)
   ·  DOI: [10.1007/BF03190222](https://doi.org/10.1007/BF03190222)
 
 ## Model component
-<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg" status="rejected" stale="true" population="rats" measured-compound="vinblastine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="vinblastine" model-id="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg" status="needs_review" stale="true" population="rats" measured-compound="vinblastine" parameterization="mechanistic" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
-**Parameters:** 2 extracted.
+**Parameters:** 3 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | VLB | `Q352` · Vnorm | 5.86 | l/kg | 0.41020000000000006 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row0:col6, Zhou_1990_table_1:row0:col8 | — | not captured |
 | VCR | `Q61` · V | 0.20 | l/kg | 0.014 | [l] / [kg] | not captured | llm (0.6) | Zhou_1990_table_1:row1:col6, Zhou_1990_table_1:row1:col8 | — | not captured |
+| Systemic clearance | `Q22` · CL | 46.2 | L/h | 1.2833333333333335e-05 | L/h | not captured | review_gapfill (0.7) | Levêque_1996:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,9 +60,11 @@ Zhou XJ et al., In vivo and in vitro pharmacokinetics a…, European journal of 
 - topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
 - status held at route_to_review — not promoted
 - population split: 'estimated parameters vt (l/kg)' subgroup of Zhou_1990 (paper reports 3 populations: estimated parameters cls (l/kg), estimated parameters vc (l/h/kg), estimated parameters vt (l/kg))
+- gap-filled Q22 (CL) from Levêque_1996's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - dropped duplicate Q61 ('VCR 0.1', value '0.41') — already have one for this compound
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- gap-filled Q22 (CL) from Levêque_1996's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q83 (tlag) from Petric_2023's review values (primary lacked it)
@@ -100,9 +103,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
-| C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Levêque_1996:review'] |
+| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhou_1990_table_1:row0:col6', 'Zhou_1990_table_1:row0:col8'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Zhou_1990_table_1:row1:col6', 'Zhou_1990_table_1:row1:col8'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 46.2 | not captured | not captured | ['Levêque_1996:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 46.2 L/h | not captured | not captured | ['Levêque_1996:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 14 L | not captured | not captured | ['Zhou_1990_table_1:row1:col6', 'Zhou_1990_table_1:row1:col8'] |
 
 **Reviewer per-scenario checks:**
 
@@ -130,9 +140,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div><figure class="pk-models-diagram"><img src="drugs/drug_vinblastine/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg/Vinblastine_Zhou1990_estimated_parameters_vt_l_kg.svg" alt="Vinblastine_Zhou1990_estimated_parameters_vt_l_kg diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

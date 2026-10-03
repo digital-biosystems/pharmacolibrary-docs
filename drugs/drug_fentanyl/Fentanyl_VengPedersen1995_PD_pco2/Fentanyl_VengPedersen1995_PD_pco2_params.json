@@ -6,15 +6,15 @@
  ],
  "parameters": {
   "E0": 39.6,
-  "EC50": 4.73e-07,
+  "EC50": 0.473,
   "Emax": 31.5,
-  "exposure_per_s": 1e-06,
+  "exposure_per_s": 1.0,
   "gamma": 1.33
  },
  "reference_peaks": {},
  "reference_points": {
   "0": 39.6,
-  "4.7299999999999996e-07": 55.35
+  "0.473": 55.35
  },
  "stop_time": 4.8,
  "template": "PD_SigmoidEmaxSweep",
@@ -22,27 +22,27 @@
  "units": {
   "E0": {
    "display_only": true,
-   "display_unit": "mmHg",
+   "display_unit": "",
    "factor": 1.0,
    "si_unit": "1"
   },
   "EC50": {
-   "display_only": false,
-   "display_unit": "ng/mL",
-   "factor": 1e-06,
-   "si_unit": "kg/m3"
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "Emax": {
    "display_only": true,
-   "display_unit": "mmHg",
+   "display_unit": "",
    "factor": 1.0,
    "si_unit": "1"
   },
   "exposure": {
-   "display_only": false,
-   "display_unit": "ng/mL",
-   "factor": 1e-06,
-   "si_unit": "kg/m3"
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
   },
   "gamma": {
    "display_only": true,
@@ -50,16 +50,16 @@
    "factor": 1.0,
    "si_unit": "1"
   },
-  "response_unit": "mmHg"
+  "response_unit": ""
  },
  "x_axis": {
-  "display_unit": "ng/mL",
-  "factor": 1e-06,
-  "per_s": 1e-06,
+  "display_unit": "",
+  "factor": 1.0,
+  "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
-  "display_unit": "mmHg",
+  "display_unit": "",
   "factor": 1.0,
   "label": "response"
  }

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Gidari_2022 \u00b7 PD Viral titer reduction (plaque-forming units) of SARS-CoV-2 20A.EU1&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;J05A&quot;,&quot;href&quot;:&quot;atc/J05A.md&quot;},{&quot;label&quot;:&quot;remdesivir&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/&quot;},{&quot;label&quot;:&quot;Gidari_2022 \u00b7 PD SARS-CoV-2 viral titer (plaque-forming units)&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Remdesivir_Morrisette2020_reference&quot;,&quot;label&quot;:&quot;Morrisette_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_remdesivir/Remdesivir_Morrisette2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Viral titer reduction (plaque-forming units) of SARS-CoV-2 20A.EU1 — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by openai:gpt-6-luna (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# SARS-CoV-2 viral titer (plaque-forming units) — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--orange" title="re-read by openai:gpt-6-luna (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023::gs_441524) drives Viral titer reduction (plaque-forming units) of SARS-CoV-2 20A.EU1 (in PFU/mL): direct sigmoid Emax (Hill) effect.
+**As extracted:** Remdesivir (concentrations from the PK model of Abouellil_2023::gs_441524) drives SARS-CoV-2 viral titer (plaque-forming units) (in PFU/mL): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -32,7 +32,13 @@ Gidari A et al., Nelfinavir: An Old Ally in the COVID-19…, Microorganisms (202
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | EC50 | `Q321` · not captured | 1.56 | µM | not captured | llm (not captured) | Gidari_2022:pdv3 |
-| PD (effect) | slope | `Q325` · not captured | 11.91 | not captured | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 0.63 | µM | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.24 | µM | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | EC50 | `Q321` · not captured | 1.37 | µM | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 11.91 | not captured | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 3.02 | not captured | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 4.32 | not captured | not captured | llm (not captured) | Gidari_2022:pdv3 |
+| PD (effect) | slope | `Q335` · not captured | 2.83 | not captured | not captured | llm (not captured) | Gidari_2022:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

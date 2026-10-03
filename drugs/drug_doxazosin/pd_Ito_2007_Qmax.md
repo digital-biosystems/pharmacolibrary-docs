@@ -14,7 +14,7 @@
 
 **As extracted:** Doxazosin (concentrations from the PK model of Aljaeid_2019) drives Qmax (in ml s -1) (stimulation; the model form was not identified).
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 > The paper describes a receptor occupancy model where doxazosin plasma concentrations drive the improvement in maximum urinary flow rate (Qmax) by competitively inhibiting physiological agonists at the alpha-1 adrenoceptor, although the specific mechanism of the transduction step is not fully detailed in the provided excerpts. The record lists an EBSL estimate of 0.0953 ml s-1 and a Tamsulosin KI of 0.04 nm, but the paper does not provide specific potency values (such as IC50 or EC50) or rate constants (such as ke0) for doxazosin.
 >
@@ -43,18 +43,6 @@ Ito K et al., Assessment of alpha1-adrenoceptor antag…, British journal of cli
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Doxazosin_Ito2007_PD_qmax` — linear, `response = E0 + slope*exposure`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0.0953 ml s -1 | 9.53e-08 m3/s |
-| slope | 0.0297 ml s -1 % | 2.97e-10 meter ** 3 / second |
-
-Closed-form check points (response, SI): `at_0` = 9.53e-08, `per_exposure_unit` = 2.97e-10
 
 
 **Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  ·  0 of 2 readers agree  

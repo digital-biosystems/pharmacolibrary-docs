@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wong_2021 \u00b7 PD Striatal D2/D3 receptor occupancy (caudate nucleus)&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05A&quot;,&quot;href&quot;:&quot;atc/N05A.md&quot;},{&quot;label&quot;:&quot;brexpiprazole&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/&quot;},{&quot;label&quot;:&quot;Wong_2021 \u00b7 PD D2/D3 receptor occupancy in the caudate nucleus&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Brexpiprazole_Frederiksen2023v3_reference&quot;,&quot;label&quot;:&quot;Frederiksen_2023_3_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Frederiksen2023v3_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Mauri2018_reference&quot;,&quot;label&quot;:&quot;Mauri_2018_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Mauri2018_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wang2023_reference&quot;,&quot;label&quot;:&quot;Wang_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wang2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Brexpiprazole_Wong2021_reference&quot;,&quot;label&quot;:&quot;Wong_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wang_2024_PANSS&quot;,&quot;label&quot;:&quot;Wang_2024 \u00b7 PANSS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wang_2024_PANSS.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Wong_2021_occupancy_2&quot;,&quot;label&quot;:&quot;Wong_2021 \u00b7 occupancy&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_brexpiprazole/pd_Wong_2021_occupancy_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Striatal D2/D3 receptor occupancy (caudate nucleus) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by openai:gpt-6-luna (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
+# D2/D3 receptor occupancy in the caudate nucleus — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--orange" title="re-read by openai:gpt-6-luna (?, agreement 0.0). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 
 ## What this record describes
 
-**As extracted:** Brexpiprazole (concentrations from this paper's PK model) drives Striatal D2/D3 receptor occupancy (caudate nucleus) (in %): direct Emax (saturable) effect.
+**As extracted:** Brexpiprazole (concentrations from this paper's PK model) drives D2/D3 receptor occupancy in the caudate nucleus (in %): direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -20,7 +20,7 @@
 - **model family:** `emax`
 - **driver:** `pk_record`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** stimulation/proportional
 
 ## Citation
 Wong DF et al., An open-label, positron emission tomogr…, European journal of clinica… (2021)
@@ -31,7 +31,6 @@ Wong DF et al., An open-label, positron emission tomogr…, European journal of 
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Omax | `Q320` · not captured | 95.4 | % | not captured | llm (not captured) | Wong_2021:pdv3 |
 | PD (effect) | EC50 | `Q321` · not captured | 7.75 | ng/mL | not captured | llm (not captured) | Wong_2021:pdv3 |
-| PD (effect) | EC50 (Omax fixed at 100%) | `Q321` · not captured | 8.99 | ng/mL | not captured | llm (not captured) | Wong_2021:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -41,21 +40,20 @@ Wong DF et al., An open-label, positron emission tomogr…, European journal of 
 
 ## Exposure-response model
 
-`Brexpiprazole_Wong2021_PD_occupancy` — sigmoid_emax, `response = E0 + Emax*frac`
+`Brexpiprazole_Wong2021_PD_occupancy_2` — sigmoid_emax, `response = E0 + Emax*frac`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
 | E0 | 0 | — |
-| Emax | -95.4 % | -0.954 1 |
+| Emax | 95.4 % | 0.954 1 |
 | EC50 | 7.75 ng/mL | 7.75e-06 kg/m3 |
 | gamma | 1 | — |
 
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.477, `at_inf` = -0.954
+Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.477, `at_inf` = 0.954
 
 Deviations:
 
 - `defaulted_parameters` — E0, gamma
-- `pd_binding_inhibition_sign` — effect_direction=inhibition with a positive Emax (Q320) — sign flipped
 
 ## Review
 
@@ -65,8 +63,8 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.32%) |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 
@@ -119,9 +117,9 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_PD_occupancy/Brexpiprazole_Wong2021_PD_occupancy_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_PD_occupancy/Brexpiprazole_Wong2021_PD_occupancy_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_PD_occupancy_2/Brexpiprazole_Wong2021_PD_occupancy_2_params.json" metaurl="assets/fmu/PD_SigmoidEmaxSweep.vr.json" wasmurl="assets/fmu/PD_SigmoidEmaxSweep.js" controlsurl="drugs/drug_brexpiprazole/Brexpiprazole_Wong2021_PD_occupancy_2/Brexpiprazole_Wong2021_PD_occupancy_2_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Brexpiprazole_Wong2021_PD_occupancy_params.json` · controls `Brexpiprazole_Wong2021_PD_occupancy_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_SigmoidEmaxSweep` · parameters `Brexpiprazole_Wong2021_PD_occupancy_2_params.json` · controls `Brexpiprazole_Wong2021_PD_occupancy_2_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

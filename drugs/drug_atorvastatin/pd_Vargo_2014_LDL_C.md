@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Vargo_2014 \u00b7 PD LDL-C percentage change from pretreatment&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C10A&quot;,&quot;href&quot;:&quot;atc/C10A.md&quot;},{&quot;label&quot;:&quot;atorvastatin&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/&quot;},{&quot;label&quot;:&quot;Vargo_2014 \u00b7 PD low-density-lipoprotein cholesterol&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Atorvastatin_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Jadhav2023_reference&quot;,&quot;label&quot;:&quot;Jadhav_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Jadhav2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Kong2025_reference&quot;,&quot;label&quot;:&quot;Kong_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Kong2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Li2024_reference&quot;,&quot;label&quot;:&quot;Li_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Li2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Malekinejad2014_reference&quot;,&quot;label&quot;:&quot;Malekinejad_2014_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Malekinejad2014_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Atorvastatin_Wen2023_reference&quot;,&quot;label&quot;:&quot;Wen_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/Atorvastatin_Wen2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Vargo_2014_LDL_C&quot;,&quot;label&quot;:&quot;Vargo_2014 \u00b7 LDL-C&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_atorvastatin/pd_Vargo_2014_LDL_C.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# LDL-C percentage change from pretreatment — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
+# low-density-lipoprotein cholesterol — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.667), gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-check: disputed 1/2</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,7 +12,7 @@
 
 ## What this record describes
 
-**As extracted:** Atorvastatin (the dose) drives LDL-C percentage change from pretreatment (in % change from pretreatment): direct sigmoid Emax (Hill) effect.
+**As extracted:** Atorvastatin (the dose) drives low-density-lipoprotein cholesterol (in % change from pretreatment): direct sigmoid Emax (Hill) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
@@ -33,18 +33,9 @@ Vargo R et al., Prediction of clinical irrelevance of P…, Clinical pharmacolog
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max,1 (statin) | `Q320` · not captured | -0.758 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max,2 (LDL.base) | `Q320` · not captured | -0.14 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max,3 (TG.base) | `Q320` · not captured | 0.0506 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max,3 (CHD %) | `Q320` · not captured | -0.000649 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max,3 (ACS) | `Q320` · not captured | -0.117 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max,3 (HeFH) | `Q320` · not captured | 0.127 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
+| PD (effect) | E max,1 (statin) | `Q323` · not captured | -0.758 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
 | PD (effect) | ED 50,atorvastatin | `Q321` · not captured | 15.2 | mg/day | not captured | llm (not captured) | Vargo_2014:pdv3 |
 | PD (effect) | N | `Q325` · not captured | 0.417 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | E max (ezetimibe) | `Q320` · not captured | -0.184 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| PD (effect) | ED 50,ezetimibe | `Q321` · not captured | 0.228 | mg/day | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| model term | γ (Interaction coefficient) | `Q900` · not captured | 0.523 | not captured | not captured | llm (not captured) | Vargo_2014:pdv3 |
-| — | ρ (Correlation within arm by time) | `Q100` · not captured | 0.667 | not captured | not captured | nil (not captured) | Vargo_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -68,6 +59,7 @@ Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = -0.379, `at_inf
 Deviations:
 
 - `defaulted_parameters` — E0
+- `pd_binding_imax_as_negative_emax` — Imax (Q323) enters SigmoidEmaxSweep as −Emax
 
 ## Review
 
@@ -77,8 +69,8 @@ Verdict <span class="pk-badge pk-badge--orange">needs review</span> · route to 
 |---|---|---|
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.00%) |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.22%) |
+| `T2_direction` | pass | the response falls, as direct effect predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
 

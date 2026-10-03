@@ -28,10 +28,10 @@ Furió-Novejarque C et al., A model of subcutaneous pramlintide pha…, Computer
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ka | `Q326` · not captured | 0.0798 | min -1 | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | n | `Q320` · not captured | 76.662 | not captured | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | d | `Q321` · not captured | 960.87 | pmol | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
-| PD (effect) | e | `Q325` · not captured | 4.5363 | not captured | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Rate in the pramlintide eect compartment | `Q326` · not captured | 0.0798 | min -1 | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Numerator coecient in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 76.662 | - | not captured | boundary (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Denominator in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 960.87 | pmol | not captured | boundary (not captured) | Furió-Novejarque_2024:pdv3 |
+| PD (effect) | Exponent in Hill equation from ℎ(𝑃 e ) | `Q325` · not captured | 4.5363 | - | not captured | llm (not captured) | Furió-Novejarque_2024:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

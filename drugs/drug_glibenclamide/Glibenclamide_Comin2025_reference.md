@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;glibenclamide&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/&quot;},{&quot;label&quot;:&quot;Comin_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile_2.md&quot;,&quot;status&quot;:&quot;extracted&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration_2.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_FBG_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 FBG&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_FBG_2.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_full_glucose_profile_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 full glucose profile&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_full_glucose_profile_2.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Rambiritch_2016_mean_glucose_concentration_2&quot;,&quot;label&quot;:&quot;Rambiritch_2016 \u00b7 mean glucose concentration&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_glibenclamide/pd_Rambiritch_2016_mean_glucose_concentration_2.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # glibenclamide — `Glibenclamide_Comin2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -17,7 +17,7 @@
 
 ### Reviewer guidance
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has glyburide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of k_k1k2_pop: this record has 0.15, the second reading none; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 > ℹ️ No reviewer record yet — status shown is the scholar **validate** result; simulation-based reviewer checks have not been run.
 
@@ -38,10 +38,10 @@ Comin L et al., Modeling Whole-Body Dynamic PET Microdo…, Clinical pharmacokin
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| VBpop (L) | `Q61` · V | 0.062 | L | 6.2e-05 | [l] | 6.2 | llm (0.6) | Comin_2025_table_2:row0:col1, Comin_2025_table_2:row0:col2, Comin_2025_table_2:row0:col4, Comin_2025_table_2:row0:col5, Comin_2025_table_2:row0:col6, Comin_2025_table_2:row0:col8, Comin_2025_table_2:row0:col9 | — | not captured |
-| kepop (h-1) | `Q47` · kel | 0.35 | h-1 | 9.722222222222222e-05 | [1] / [h] | 36 | llm (0.6) | Comin_2025_table_2:row1:col1, Comin_2025_table_2:row1:col2, Comin_2025_table_2:row1:col4, Comin_2025_table_2:row1:col5, Comin_2025_table_2:row1:col6 | — | not captured |
-| kL1L2pop (h-1) | `Q301` · k12 | 8.2 | h-1 | 0.0022777777777777774 | [1] / [h] | 9.6 | llm (0.6) | Comin_2025_table_2:row7:col1, Comin_2025_table_2:row7:col2 | — | not captured |
-| kL2L1pop (h-1) | `Q302` · k21 | 0.22 | h-1 | 6.111111111111111e-05 | [1] / [h] | 22 | llm (0.6) | Comin_2025_table_2:row8:col1, Comin_2025_table_2:row8:col2, Comin_2025_table_2:row8:col4, Comin_2025_table_2:row8:col5, Comin_2025_table_2:row8:col6 | — | not captured |
+| V_B_pop (L) | `Q61` · V | 0.062 | L | 6.2e-05 | [l] | 6.2 | llm (0.6) | Comin_2025_table_2:row0:col1, Comin_2025_table_2:row0:col2, Comin_2025_table_2:row0:col4, Comin_2025_table_2:row0:col5, Comin_2025_table_2:row0:col6, Comin_2025_table_2:row0:col8, Comin_2025_table_2:row0:col9 | — | not captured |
+| k_e_pop (h⁻¹) | `Q47` · kel | 0.26 | h⁻¹ | 7.222222222222222e-05 | [1] / [h] | 0.72 | llm (0.6) | Comin_2025_table_2:row1:col1, Comin_2025_table_2:row1:col2, Comin_2025_table_2:row1:col4, Comin_2025_table_2:row1:col5, Comin_2025_table_2:row1:col6, Comin_2025_table_2:row1:col8, Comin_2025_table_2:row1:col9 | — | not captured |
+| k_L1L2_pop (h⁻¹) | `Q302` · k21 | 8.2 | h⁻¹ | 0.0022777777777777774 | [1] / [h] | 9.6 | llm (0.6) | Comin_2025_table_2:row7:col1, Comin_2025_table_2:row7:col2 | — | not captured |
+| k_K1K2_pop (h⁻¹) | `Q301` · k12 | 0.15 | h⁻¹ | 4.1666666666666665e-05 | [1] / [h] | 15 | llm (0.6) | Comin_2025_table_2:row12:col1, Comin_2025_table_2:row12:col2, Comin_2025_table_2:row12:col4, Comin_2025_table_2:row12:col5, Comin_2025_table_2:row12:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,22 +51,22 @@ Comin L et al., Modeling Whole-Body Dynamic PET Microdo…, Clinical pharmacokin
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped unlinked row (NIL): 'Tk0pop (h)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row2:col1', 'Comin_2025_table_2:row2:col2', 'Comin_2025_table_2:row2:col4', 'Comin_2025_table_2:row2:col5', 'Comin_2025_table_2:row2:col6', 'Comin_2025_table_2:row2:col8', 'Comin_2025_table_2:row2:col9'])
-- dropped duplicate Q61 ('VLpop (L)', value '0.12') — already have one for this compound
-- dropped unlinked row (NIL): 'kL1Bpop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row4:col1', 'Comin_2025_table_2:row4:col2', 'Comin_2025_table_2:row4:col4', 'Comin_2025_table_2:row4:col5', 'Comin_2025_table_2:row4:col6'])
-- dropped unlinked row (NIL): 'βL1Brif' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row5:col1', 'Comin_2025_table_2:row5:col2'])
-- dropped unlinked row (NIL): 'kBL1pop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row6:col1', 'Comin_2025_table_2:row6:col2', 'Comin_2025_table_2:row6:col4', 'Comin_2025_table_2:row6:col5', 'Comin_2025_table_2:row6:col6'])
-- dropped duplicate Q61 ('VKpop (L)', value '0.23') — already have one for this compound
-- dropped unlinked row (NIL): 'kK1Bpop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row10:col1', 'Comin_2025_table_2:row10:col2'])
-- dropped unlinked row (NIL): 'kBK1pop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row11:col1', 'Comin_2025_table_2:row11:col2', 'Comin_2025_table_2:row11:col4', 'Comin_2025_table_2:row11:col5', 'Comin_2025_table_2:row11:col6'])
-- dropped unlinked row (NIL): 'kK1K2pop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row12:col1', 'Comin_2025_table_2:row12:col2', 'Comin_2025_table_2:row12:col4', 'Comin_2025_table_2:row12:col5', 'Comin_2025_table_2:row12:col6'])
-- dropped unlinked row (NIL): 'kK2K1pop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row13:col1', 'Comin_2025_table_2:row13:col2', 'Comin_2025_table_2:row13:col4', 'Comin_2025_table_2:row13:col5', 'Comin_2025_table_2:row13:col6'])
-- dropped duplicate Q61 ('VSpop (L)', value '0.038') — already have one for this compound
-- dropped unlinked row (NIL): 'kBSpop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row15:col1', 'Comin_2025_table_2:row15:col2', 'Comin_2025_table_2:row15:col4', 'Comin_2025_table_2:row15:col5', 'Comin_2025_table_2:row15:col6'])
-- dropped unlinked row (NIL): 'kSBpop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row16:col1', 'Comin_2025_table_2:row16:col2', 'Comin_2025_table_2:row16:col8', 'Comin_2025_table_2:row16:col9'])
-- dropped duplicate Q61 ('VPpop (L)', value '0.026') — already have one for this compound
-- dropped duplicate Q47 ('kBPpop (h-1)', value '0.38') — already have one for this compound
-- dropped unlinked row (NIL): 'kPBpop (h-1)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row19:col1', 'Comin_2025_table_2:row19:col2', 'Comin_2025_table_2:row19:col4', 'Comin_2025_table_2:row19:col5', 'Comin_2025_table_2:row19:col6', 'Comin_2025_table_2:row19:col8', 'Comin_2025_table_2:row19:col9'])
+- dropped unlinked row (NIL): 'Tk0_pop (h)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row2:col1', 'Comin_2025_table_2:row2:col2', 'Comin_2025_table_2:row2:col4', 'Comin_2025_table_2:row2:col5', 'Comin_2025_table_2:row2:col6'])
+- dropped duplicate Q61 ('V_L_pop (L)', value '0.12') — already have one for this compound
+- dropped unlinked row (NIL): 'k_L1B_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row4:col1', 'Comin_2025_table_2:row4:col2', 'Comin_2025_table_2:row4:col4', 'Comin_2025_table_2:row4:col5', 'Comin_2025_table_2:row4:col6'])
+- dropped unlinked row (NIL): 'β_L1B_ref' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row5:col1', 'Comin_2025_table_2:row5:col2'])
+- dropped unlinked row (NIL): 'k_B_L_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row6:col1', 'Comin_2025_table_2:row6:col2', 'Comin_2025_table_2:row6:col4', 'Comin_2025_table_2:row6:col5', 'Comin_2025_table_2:row6:col6'])
+- dropped duplicate Q302 ('k_L2L1_pop (h⁻¹)', value '0.22') — already have one for this compound
+- dropped duplicate Q61 ('V_K_pop (L)', value '0.23') — already have one for this compound
+- dropped unlinked row (NIL): 'k_K1B_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row10:col1', 'Comin_2025_table_2:row10:col2'])
+- dropped unlinked row (NIL): 'k_BK1_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row11:col1', 'Comin_2025_table_2:row11:col2', 'Comin_2025_table_2:row11:col4', 'Comin_2025_table_2:row11:col5', 'Comin_2025_table_2:row11:col6'])
+- dropped duplicate Q302 ('k_K2K1_pop (h⁻¹)', value '0.12') — already have one for this compound
+- dropped duplicate Q61 ('V_S_pop (L)', value '0.038') — already have one for this compound
+- dropped unlinked row (NIL): 'k_BS_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row15:col1', 'Comin_2025_table_2:row15:col2', 'Comin_2025_table_2:row15:col4', 'Comin_2025_table_2:row15:col5', 'Comin_2025_table_2:row15:col6', 'Comin_2025_table_2:row15:col8', 'Comin_2025_table_2:row15:col9'])
+- dropped unlinked row (NIL): 'k_SB_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row16:col1', 'Comin_2025_table_2:row16:col2'])
+- dropped duplicate Q61 ('V_P_pop (L)', value '0.026') — already have one for this compound
+- dropped unlinked row (NIL): 'k_BP_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row18:col1', 'Comin_2025_table_2:row18:col2', 'Comin_2025_table_2:row18:col4', 'Comin_2025_table_2:row18:col5', 'Comin_2025_table_2:row18:col6', 'Comin_2025_table_2:row18:col8', 'Comin_2025_table_2:row18:col9'])
+- dropped unlinked row (NIL): 'k_PB_pop (h⁻¹)' — extend the ontology if this is a real PK parameter (source ['Comin_2025_table_2:row19:col1', 'Comin_2025_table_2:row19:col2', 'Comin_2025_table_2:row19:col4', 'Comin_2025_table_2:row19:col5', 'Comin_2025_table_2:row19:col6'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=glyburide
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
@@ -75,13 +75,12 @@ Comin L et al., Modeling Whole-Body Dynamic PET Microdo…, Clinical pharmacokin
 
 **Extraction notes:**
 - final table Tab2: grid unusable → re-running vision table extraction for Comin_2025
-- unparsed cell Comin_2025_table_2:row2:col3 = 'wTK0'
-- unparsed cell Comin_2025_table_2:row4:col3 = 'wL1B'
-- unparsed cell Comin_2025_table_2:row6:col3 = 'wBL1'
-- unparsed cell Comin_2025_table_2:row8:col3 = 'wL2L1'
-- unparsed cell Comin_2025_table_2:row11:col3 = 'wBK1'
-- unparsed cell Comin_2025_table_2:row12:col3 = 'wK1K2'
-- unparsed cell Comin_2025_table_2:row13:col3 = 'wK2K1'
+- unparsed cell Comin_2025_table_2:row2:col3 = 'ω_TK0'
+- unparsed cell Comin_2025_table_2:row4:col3 = 'ω_L1B'
+- unparsed cell Comin_2025_table_2:row8:col3 = 'ω_L2L1'
+- unparsed cell Comin_2025_table_2:row11:col3 = 'ω_BK1'
+- unparsed cell Comin_2025_table_2:row12:col3 = 'ω_K1K2'
+- unparsed cell Comin_2025_table_2:row13:col3 = 'ω_K2K1'
 - LLM selected parameter table(s) 2
 
 ## Validation
@@ -91,16 +90,20 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.714 (10/14 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.556 (10/18 fields) | 8 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[kl1bpop]` | not captured | 0.22 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ksbpop]` | not captured | 0.24 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | glyburide | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | glyburide | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[k_k1k2_pop]` | 0.15 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k_l1b_pop]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k_l1l2_pop].parameter_id` | Q302 | Q301 | mismatch |
+| `gpt-oss:120b` | `parameters[k_l2l1_pop]` | not captured | 0.22 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k_sb_pop]` | not captured | 131 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tk0_pop]` | not captured | 0.46 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v_p_pop]` | not captured | 0.026 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v_s_pop]` | not captured | 0.038 | only_one_extracted |
 
 </details>
 
@@ -117,9 +120,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row7:col1', 'Comin_2025_table_2:row7:col2'] |
-| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row8:col1', 'Comin_2025_table_2:row8:col2', 'Comin_2025_table_2:row8:col4', 'Comin_2025_table_2:row8:col5', 'Comin_2025_table_2:row8:col6'] |
-| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row1:col1', 'Comin_2025_table_2:row1:col2', 'Comin_2025_table_2:row1:col4', 'Comin_2025_table_2:row1:col5', 'Comin_2025_table_2:row1:col6'] |
+| C5_dimension_Q301 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row12:col1', 'Comin_2025_table_2:row12:col2', 'Comin_2025_table_2:row12:col4', 'Comin_2025_table_2:row12:col5', 'Comin_2025_table_2:row12:col6'] |
+| C5_dimension_Q302 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row7:col1', 'Comin_2025_table_2:row7:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Comin_2025_table_2:row1:col1', 'Comin_2025_table_2:row1:col2', 'Comin_2025_table_2:row1:col4', 'Comin_2025_table_2:row1:col5', 'Comin_2025_table_2:row1:col6', 'Comin_2025_table_2:row1:col8', 'Comin_2025_table_2:row1:col9'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Comin_2025_table_2:row0:col1', 'Comin_2025_table_2:row0:col2', 'Comin_2025_table_2:row0:col4', 'Comin_2025_table_2:row0:col5', 'Comin_2025_table_2:row0:col6', 'Comin_2025_table_2:row0:col8', 'Comin_2025_table_2:row0:col9'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q61 | fail | volume within physiological range | 0.062 L | not captured | not captured | ['Comin_2025_table_2:row0:col1', 'Comin_2025_table_2:row0:col2', 'Comin_2025_table_2:row0:col4', 'Comin_2025_table_2:row0:col5', 'Comin_2025_table_2:row0:col6', 'Comin_2025_table_2:row0:col8', 'Comin_2025_table_2:row0:col9'] |
@@ -147,4 +150,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 17:32 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 18:54 UTC</sub>

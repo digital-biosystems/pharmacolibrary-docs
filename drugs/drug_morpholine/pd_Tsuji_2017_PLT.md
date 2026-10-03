@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;Morpholine&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine/&quot;},{&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PD platelet count&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine/pd_Tsuji_2017_PLT.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT_2&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine/pd_Tsuji_2017_PLT_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT_2&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine/pd_Tsuji_2017_PLT_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # platelet count — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -14,7 +14,7 @@
 
 **As extracted:** Linezolid drives platelet count (in ×10 3 μl -1): indirect response — drug inhibits the production of platelet count.
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 > Linezolid plasma concentrations (mg/L) inhibit the formation of circulating platelets (×10^3/μL) via a linear pharmacodynamic effect on the production rate in a semi-mechanistic turnover model with three transit compartments. The estimated slope for this inhibition is 0.00566 1/(mg/L), with a baseline platelet count (PLTZERO) of 206,000/μL.
 >
@@ -44,25 +44,6 @@ Tsuji Y et al., Population pharmacokinetics and pharmac…, British journal of c
 </details>
 
 
-## Exposure-response model
-
-`Morpholine_Tsuji2017_PD_plt` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 0 | — |
-| Emax | 2.55 | — |
-| EC50 | 0.00364 mg l -1 | 3.64e-06 kg/m3 |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — E0, gamma
-- `pd_binding_off_target_driver` — driver compound 'linezolid' is not 'morpholine' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
-
-
 <div class="pk-tab-mark" data-tab="Models"></div>
 
 ## Models
@@ -71,9 +52,7 @@ Deviations:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_morpholine/Morpholine_Tsuji2017_PD_plt/Morpholine_Tsuji2017_PD_plt_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_morpholine/Morpholine_Tsuji2017_PD_plt/Morpholine_Tsuji2017_PD_plt_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_IndirectTurnoverSweep` · parameters `Morpholine_Tsuji2017_PD_plt_params.json` · controls `Morpholine_Tsuji2017_PD_plt_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 

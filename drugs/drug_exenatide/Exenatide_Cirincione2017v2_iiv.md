@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017v2_iiv`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.741). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,11 +19,11 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:59.323114+00:00) predates the upstream re-run (2026-10-01 15:30:35.240732+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:37:59.323114+00:00) predates the upstream re-run (2026-10-03 16:57:32.767596+00:00). Current validate status: `rejected`.
 
 ## Citation
 Cirincione B et al., Population pharmacokinetics of exenatide, British journal of clinical… (2017)
@@ -33,7 +33,7 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 <dbs-pgx drug="exenatide" model-id="Exenatide_Cirincione2017v2_iiv" status="rejected" stale="true" population="adults with type 2 diabetes mellitus" measured-compound="exenatide" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 11 extracted.
+**Parameters:** 10 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -48,16 +48,20 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 | K m (pg ml −1 ) | `Q1` · Km | 567 | pg ml −1 | not captured | [pg] / [ml] | 21.9 | space_fold (0.95) | bcp13135-tbl-0002:row5:col1, bcp13135-tbl-0002:row5:col2, bcp13135-tbl-0002:row5:col4 | — | 95.7 (None% RSE) |
 | V max (μg h −1 ) | `Q66` · Vmax | 1.55 | μg h −1 | not captured | [µg] / [h] | 22.1 | special_case (0.95) | bcp13135-tbl-0002:row6:col1, bcp13135-tbl-0002:row6:col2 | — | not captured |
 | V p (l) | `Q64` · V2 | 7.04 | l | 0.00704 | [l] | 9.49 | space_fold (0.95) | bcp13135-tbl-0002:row7:col1, bcp13135-tbl-0002:row7:col2, bcp13135-tbl-0002:row11:col1, bcp13135-tbl-0002:row11:col2 | — | not captured |
-| Vc_int (l) | `Q63` · V1 | 7.03 | l | 0.007030000000000001 | [l] | 13.2 | llm (0.6) | bcp13135-tbl-0002:row8:col1, bcp13135-tbl-0002:row8:col2, bcp13135-tbl-0002:row8:col4 | — | None (None% RSE) |
-| Vc_wtkg | `Q352` · Vnorm | 2.67 | unit | not captured | [unit] | 13.3 | llm (0.6) | bcp13135-tbl-0002:row9:col1, bcp13135-tbl-0002:row9:col2 | — | not captured |
+| Vc_int (l) | `Q61` · V | 7.03 | l | 0.007030000000000001 | [l] | 13.2 | llm (0.6) | bcp13135-tbl-0002:row8:col1, bcp13135-tbl-0002:row8:col2, bcp13135-tbl-0002:row8:col4 | — | not captured |
+| k a_max (μg h −1 ) | `Q49` · kabs | 12.8 | μg h −1 | not captured | [µg] / [h] | 42.5 | llm (0.6) | bcp13135-tbl-0002:row12:col1, bcp13135-tbl-0002:row12:col2 | — | not captured |
 | F | `Q40` · Fab | 1 | not captured | not captured | not captured | not captured | exact (1.0) | bcp13135-tbl-0002:row15:col1 | — | not captured |
 | fr | `Q43` · FR | 0.628 | not captured | not captured | not captured | 3.5 | exact (1.0) | bcp13135-tbl-0002:row16:col1, bcp13135-tbl-0002:row16:col2 | — | not captured |
-| ka | `Q49` · kabs | 0.006 | h-1 | 1.6666666666666667e-06 | 1/h | not captured | review_gapfill (0.7) | Choi_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
+
+### Unresolved rows _(no Q-code or no value — not parameters)_
+| label (paper) | Q-code | value | link |
+|---|---|---|---|
+| Vc=Vc_int⋅weight84.8Vc_wtkg | Q63 | not captured | llm_confirmed |
 
 ## Departures & gaps
 
@@ -70,15 +74,15 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 - table section iiv: 'K m (pg ml −1 )' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'Vc_int (l)' routed out of structural estimates ('IIV(%)')
 - table section iiv: 'Vc=Vc_int⋅weight84.8Vc_wtkg' routed out of structural estimates ('IIV(%)')
-- unit_dimension_mismatch: 'Cl_int (l h −1 )' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
+- unit_dimension_mismatch: 'Cl_int (l h −1 )' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [mass] / [time]') — route to review
 - unit_dimension_mismatch: 'Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
 - unit_dimension_mismatch: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR' → Q22 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3 / [time]') — route to review
 - dropped duplicate Q22 ('Cl = Cl_int ⋅eGFR80 Cl_eGFR', value None) — already have one for this compound
 - unit_dimension_mismatch: 'V max (μg h −1 )' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
-- unit_dimension_mismatch: 'Vc_wtkg' → Q352 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- unit_dimension_mismatch: 'Vc_wtkg' → Q61 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
+- dropped duplicate Q61 ('Vc_wtkg', value '2.67') — already have one for this compound
 - unit_dimension_mismatch: 'Vc=Vc_int⋅weight84.8Vc_wtkg' → Q63 (unit '[luminosity] / [length] ** 2' vs ontology '[length] ** 3') — route to review
-- dropped duplicate Q63 ('Vc=Vc_int⋅weight84.8Vc_wtkg', value None) — already have one for this compound
-- dropped unlinked row (NIL): 'k a_max (μg h −1 )' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row12:col1', 'bcp13135-tbl-0002:row12:col2'])
+- unit_dimension_mismatch: 'k a_max (μg h −1 )' → Q49 (unit '[mass] / [time]' vs ontology '1 / [time]') — route to review
 - unit_dimension_mismatch: 'K m_ka (μg)' → Q1 (unit '[mass]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped duplicate Q1 ('K m_ka (μg)', value '16.9') — already have one for this compound
 - dropped unlinked row (NIL): 'τ (h)' — extend the ontology if this is a real PK parameter (source ['bcp13135-tbl-0002:row14:col1'])
@@ -89,7 +93,7 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=exenatide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
-- gap-filled Q49 (kabs) from Choi_2025's review values (primary lacked it)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 - dropped value-less row: 'Cl_int (l h −1 )' (captured trailing unit 'l h −1' for child rows)
 - dropped value-less row: 'Cl = Cl_int ⋅eGFR80 Cl_eGFR'
 - dropped value-less row: 'K m (pg ml −1 )' (captured trailing unit 'pg ml −1' for child rows)
@@ -100,6 +104,7 @@ Cirincione B et al., Population pharmacokinetics of exenatide, British journal o
 - gap-filled Q61 (V) from Admiraal_2023's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Choi_2025's review values (primary lacked it)
 
 **Extraction notes:**
 - LLM selected parameter table(s) 3
@@ -111,14 +116,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.833 (20/24 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.741 (20/27 fields) | 7 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k a_max]` | not captured | 12.8 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[vc_wtkg]` | 2.67 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl = cl_int ⋅egfr80 cl_egfr]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl_egfr].parameter_id` | Q22 | Q31 | mismatch |
+| `gpt-oss:120b` | `parameters[k a_max]` | 12.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc=vc_int⋅weight84.8vc_wtkg]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc_int].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | exenatide | unknown | mismatch |
 
@@ -141,14 +149,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q22 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp13135-tbl-0002:row2:col1', 'bcp13135-tbl-0002:row2:col2'] |
 | C5_dimension_Q3 | fail | [length] ** 3 / [time] | l h −1 | not captured | not captured | ['bcp13135-tbl-0002:row1:col1', 'bcp13135-tbl-0002:row1:col2', 'bcp13135-tbl-0002:row1:col4'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp13135-tbl-0002:row4:col1', 'bcp13135-tbl-0002:row4:col2'] |
-| C5_dimension_Q352 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp13135-tbl-0002:row9:col1', 'bcp13135-tbl-0002:row9:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Choi_2025:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
+| C5_dimension_Q49 | fail | [mass] / [time] | μg h −1 | not captured | not captured | ['bcp13135-tbl-0002:row12:col1', 'bcp13135-tbl-0002:row12:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
+| C5_dimension_Q63 | fail | [luminosity] / [length] ** 2 | unit | not captured | not captured | ['bcp13135-tbl-0002:row10:col1', 'bcp13135-tbl-0002:row10:col2', 'bcp13135-tbl-0002:row10:col4'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp13135-tbl-0002:row7:col1', 'bcp13135-tbl-0002:row7:col2', 'bcp13135-tbl-0002:row11:col1', 'bcp13135-tbl-0002:row11:col2'] |
 | C5_dimension_Q66 | fail | [mass] / [time] | μg h −1 | not captured | not captured | ['bcp13135-tbl-0002:row6:col1', 'bcp13135-tbl-0002:row6:col2'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.838 | not captured | not captured | ['bcp13135-tbl-0002:row2:col1', 'bcp13135-tbl-0002:row2:col2'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q63 | pass | volume within physiological range | 7.03 L | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 7.03 L | not captured | not captured | ['bcp13135-tbl-0002:row8:col1', 'bcp13135-tbl-0002:row8:col2', 'bcp13135-tbl-0002:row8:col4'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 7.04 L | not captured | not captured | ['bcp13135-tbl-0002:row7:col1', 'bcp13135-tbl-0002:row7:col2', 'bcp13135-tbl-0002:row11:col1', 'bcp13135-tbl-0002:row11:col2'] |
 
 **Reviewer per-scenario checks:**
@@ -204,4 +212,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:57 UTC</sub>

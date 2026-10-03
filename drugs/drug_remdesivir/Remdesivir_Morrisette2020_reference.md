@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Morrisette2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.455). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.714). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q321: this record has 2.71, the second reading 1.13; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q322: this record has 100, the second reading 4.7; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -63,18 +63,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.455 (5/11 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.714 (5/7 fields) | 2 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q321]` | 2.71 | 1.13 | mismatch |
-| `gpt-oss:120b` | `values[Q322]` | 100 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q364]` | not captured | 29.0 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q54]` | not captured | 200 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q60]` | not captured | 43.3 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q99]` | not captured | 15 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q322]` | 100 | 4.7 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 32 | 43.3 | mismatch |
 
 </details>
 

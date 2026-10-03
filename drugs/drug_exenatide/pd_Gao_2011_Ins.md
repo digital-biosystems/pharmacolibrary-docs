@@ -31,11 +31,11 @@ Gao W et al., Pharmacokinetic and pharmacodynamic mod…, The Journal of pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | koutI | `Q328` · not captured | 0.483 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | kp | `Q327` · not captured | 0.135 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | Ins0 | `Q324` · not captured | 2.82, 3.66, 2.83, 3.06, 3.71 | ng/ml | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | Smax | `Q320` · not captured | 6.91 | not captured | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | SC50 | `Q321` · not captured | 1.29 | nM | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Insulin output rate constant | `Q328` · not captured | 0.483 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Insulin precursor release rate constant | `Q327` · not captured | 0.135 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Basal insulin | `Q324` · not captured | 2.82, 3.66, 2.83, 3.06, 3.71 | ng/ml | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Maximum insulintropic response factor | `Q320` · not captured | 6.91 | not captured | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Concentration for 50% of insulintropic effect | `Q321` · not captured | 1.29 | nM | not captured | llm (not captured) | Gao_2011:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

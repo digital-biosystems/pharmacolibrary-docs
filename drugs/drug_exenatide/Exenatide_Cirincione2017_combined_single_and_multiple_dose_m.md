@@ -5,7 +5,7 @@
 
 # exenatide — `Exenatide_Cirincione2017_combined_single_and_multiple_dose_m`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.762). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.636). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The paper reports exenatide clearance as 12.3 L/h, while the two-compartment model's clearance parameters (CLint 110 L/day, Q 89.3 L/day) are on a per-day scale, so the value could not be reconciled dimensionally. Because the per-hour unit could not be converted to the model's per-day scale, the clearance value arrived without a usable SI value. A second reader additionally disagreed on several extracted values, reading Km as null versus 567 pg/mL, CLint as null versus 110 L/day, and Vmax as null versus 0.0372 mg/day, and read a value of 2.4 where this record had none; these disagreements were inconclusive. Extracted — exenatide: kabs 3.85, CLint 110 L/day, V 7.03 L, Fab 1.18, ktr 0.105, Km 567 pg/mL, Vmax 0.0372 mg/day, Q 89.3 L/day, … (+2).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has exenatide, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:59.206664+00:00) predates the upstream re-run (2026-10-01 15:30:27.962693+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:59.206664+00:00) predates the upstream re-run (2026-10-03 16:57:25.728561+00:00). Current validate status: `rejected`.
 
 ## Citation
 Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journal (2017)
@@ -68,7 +68,7 @@ Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journa
 - `invented_absorption`: ka defaulted — not reported in source
 
 **Interpretation flags:**
-- unit_dimension_mismatch: 'CLint (L/day)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [time] / [mass]') — route to review
+- unit_dimension_mismatch: 'CLint (L/day)' → Q3 (unit '[length] ** 3 / [time]' vs ontology '[length] ** 3 / [mass] / [time]') — route to review
 - dropped unlinked row (NIL): 'f2 (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row4:col5', 'Cirincione_2017_table_p6_1:row4:col6'])
 - dropped unlinked row (NIL): 'f3 (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row5:col5'])
 - dropped unlinked row (NIL): 'fret(single-dose study) (%)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row6:col5', 'Cirincione_2017_table_p6_1:row6:col6', 'Cirincione_2017_table_p6_1:row6:col8'])
@@ -81,8 +81,8 @@ Cirincione B et al., Population Pharmacokinetics of an Exten…, The AAPS journa
 - unit_dimension_mismatch: 'Vmax (mg/day)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
 - dropped unlinked row (NIL): 'RVS D study (Log SD)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row18:col5', 'Cirincione_2017_table_p6_1:row18:col6'])
 - dropped unlinked row (NIL): 'RVM D study (Log SD)' — extend the ontology if this is a real PK parameter (source ['Cirincione_2017_table_p6_1:row19:col5', 'Cirincione_2017_table_p6_1:row19:col6'])
-- implicit units: 'ka (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ka (1/day) = 3.85', and the table caption defines 'ka' as the 'first")
-- implicit units: 'ktr1 (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ktr1 (1/day) = 0.105', and the table caption defines 'ktr1' as a 'fi")
+- implicit units: 'ka (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ka (1/day) = 3.85'. Additionally, the context of exenatide extended-")
+- implicit units: 'ktr1 (1/day)' → 1/day (from the paper text: "The parameter is explicitly listed in the input as 'ktr1 (1/day) = 0.105'. The magnitude (0.105) is consistent with a da")
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=exenatide
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -103,14 +103,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.762 (16/21 fields) | 5 |
+| `gpt-oss:120b` | not confirmed | 0.636 (14/22 fields) | 8 |
 
-<details><summary>5 field(s) a reader read differently</summary>
+<details><summary>8 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[cl_egfr]` | 0.838 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clint].covariate_forms` | ['power'] | [] | mismatch |
 | `gpt-oss:120b` | `parameters[fret(single-dose study)]` | not captured | 8.86 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[n1]` | not captured | 0.591 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q22_egfr_power]` | not captured | 0.838 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vcint].parameter_id` | Q61 | Q63 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | exenatide | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | exenatide | unknown | mismatch |
@@ -173,4 +176,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:30 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:57 UTC</sub>

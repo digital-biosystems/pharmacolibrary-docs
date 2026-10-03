@@ -67,7 +67,7 @@ Verdict <span class="pk-badge pk-badge--green">reviewed — candidate</span>
 | `T0_driver` | pass | driver is the drug, a synonym or one of its metabolites (or unnamed) |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
 | `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
-| `T2_direction` | pass | curve direction matches effect_direction |
+| `T2_direction` | pass | the response falls, as IDR-I predicts |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | pass | nothing defaulted |
 

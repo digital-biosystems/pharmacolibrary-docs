@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;L01B&quot;,&quot;href&quot;:&quot;atc/L01B.md&quot;},{&quot;label&quot;:&quot;fluorouracil&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/&quot;},{&quot;label&quot;:&quot;Deyme_2019 \u00b7 bastian_26&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Blesch2003_reference&quot;,&quot;label&quot;:&quot;Blesch_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_DIP_tumor_volume&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 DIP / tumor volume&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_DIP_tumor_volume.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Fluorouracil_Bae2026_reference&quot;,&quot;label&quot;:&quot;Bae_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Bae2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Blesch2003_reference&quot;,&quot;label&quot;:&quot;Blesch_2003_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Blesch2003_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Kang2025_reference&quot;,&quot;label&quot;:&quot;Kang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Kang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lubomirov2025_reference&quot;,&quot;label&quot;:&quot;Lubomirov_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lubomirov2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Lvi2000_reference&quot;,&quot;label&quot;:&quot;L\u00e9vi_2000_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Lvi2000_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Fluorouracil_Yang2025_reference&quot;,&quot;label&quot;:&quot;Yang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/Fluorouracil_Yang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Pierik_2024_V&quot;,&quot;label&quot;:&quot;Pierik_2024 \u00b7 V&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Pierik_2024_V.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Daryani_2016_bioluminescence&quot;,&quot;label&quot;:&quot;Daryani_2016 \u00b7 bioluminescence&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Daryani_2016_bioluminescence.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Ma_2022_T&quot;,&quot;label&quot;:&quot;Ma_2022 \u00b7 T&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_fluorouracil/pd_Ma_2022_T.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # fluorouracil — `Fluorouracil_Deyme2019_bastian_26`
 
-> ## <span class="pk-badge pk-badge--neutral">None</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,107 +21,134 @@
 
 The total clearance for fluorouracil is recorded as 256.0 L/h, which the plausibility check flagged as an implausible magnitude consistent with a unit or scale extraction error. The structure check also found unreachable or unlinked metabolites: 5FUH2 and 5FDHU are listed as formed from fluorouracil by metabolism, but their link parameters are recorded as 'none' with unknown kind, leaving them without a quantified path from the dose. A second reader additionally disagreed on the model structure, attributing APC formation to irinotecan rather than to SN38, though the record itself lists SN38 as APC's precursor. Extracted — fluorouracil: V3 161 L, Q 0.57 L/h, V2 1.4 L, V1 0.26 L, CL 256 L/h, kabs 0.757 h−1, tlag 0.000552 h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluorouracil, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:04.998747+00:00) predates the upstream re-run (2026-10-01 14:07:33.156267+00:00). Current validate status: `not captured`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:38:04.998747+00:00) predates the upstream re-run (2026-10-03 09:02:58.144294+00:00). Current validate status: `rejected`.
 
 ## Citation
 Deyme L et al., Population pharmacokinetics of FOLFIRIN…, Cancer chemotherapy and pha… (2019)
   ·  DOI: [10.1007/s00280-018-3722-5](https://doi.org/10.1007/s00280-018-3722-5)
 
 ## Model component
-<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Deyme2019_bastian_26" status="" stale="true" population="adults with digestive cancers" measured-compound="" parameterization="" topology=""></dbs-pgx>
+<dbs-pgx drug="fluorouracil" model-id="Fluorouracil_Deyme2019_bastian_26" status="rejected" stale="true" population="adults with digestive cancers" measured-compound="fluorouracil" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
-**Model structure:** —; no model was built for this record.  
-**Parameters:** 0 extracted.
+**Model structure:** general linear; no model was built for this record.  
+**Parameters:** 7 extracted.
 
-**Parameterization:** not captured.
+**Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `not captured`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
-_No resolved parameters._
+| label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Vmax (mg/h) | `Q66` · Vmax | 160.9 | mg/h | not captured | [mg] / [h] | not captured | special_case (0.95) | Deyme_2019_table_4:row4:col16 | — | not captured |
+| Q1 (L/h) | `Q30` · Q | 0.57 | L/h | 1.5833333333333333e-07 | [l] / [h] | not captured | exact (1.0) | Deyme_2019_table_4:row7:col16 | — | not captured |
+| Q2 (L/h) | `Q99` · Q2 | 1.4 | L/h | 3.888888888888889e-07 | [l] / [h] | not captured | exact (1.0) | Deyme_2019_table_4:row8:col16 | — | not captured |
+| k10 (h⁻¹) | `Q47` · kel | 0.26 | h⁻¹ | 7.222222222222222e-05 | [1] / [h] | not captured | exact (1.0) | Deyme_2019_table_4:row9:col16 | — | not captured |
+| total volume of distribution | `Q61` · V | 160.9 | L | 0.16090000000000002 | L | not captured | review_gapfill (0.7) | Deyme_2019:review | — | not captured |
+| Ka, Absorption rate constant (h−1) | `Q49` · kabs | 0.757 | h−1 | 0.0002102777777777778 | 1/h | not captured | review_gapfill (0.7) | Bae_2026:review | — | not captured |
+| TLAG | `Q83` · tlag | 0.000552 | h | 1.9871999999999999 | h | not captured | review_gapfill (0.7) | Blesch_2003:review | — | not captured |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>unit_canonical</code></td><td>the canonical unit for that Q-code, i.e. what value_si is expressed in.</td></tr><tr><td><code>RSE%</code></td><td>relative standard error of the estimate, when the paper reports one.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><td><code>covariates</code></td><td>covariate effects attached to this parameter (e.g. weight on CL).</td></tr><tr><td><code>IIV</code></td><td>inter-individual variability reported for this parameter.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 ## Departures & gaps
+
+**Interpretation flags:**
+- column 'bastian (2003) [26]' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- unit_dimension_mismatch: 'Vmax (mg/h)' → Q66 (unit '[mass] / [time]' vs ontology '[length] ** 3') — route to review
+- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluorouracil
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
+- population split: 'bastian (2003) [26]' subgroup of Deyme_2019 (paper reports 15 populations: bastian (2003) [26], beaty (2010) [31], berg (2015) [37], bressolle (1999) [33], deford (2003) [25], fouladi (2006) [30], kho (2006) [24], kimura (2010) [29], klein (2003) [38], nikanjan (2015) [32], poujol (2007) [27], poulol (2007) [27], terret (2000) [23], thompson (2008) [28], van kuilenburg (2012) [36])
+- row roles (LLM): model_class=compartmental; 17/17 row label(s) assigned, 61 linked by role; re-tagged parent→irinotecan ×67, parent→SN38 ×14
+- molar mass: none of 1 PubChem candidate(s) is 'APC' (LLM) — left in mass units
+- molar mass: none found for 'APC' — its concentrations stay mass-only
+- skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
+- gap-filled Q61 (V) from Deyme_2019's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Bae_2026's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Blesch_2003's review values (primary lacked it)
 
 **Extraction notes:**
 - no TEI final-model table id; trying text-pointer table recovery
 - LLM selected parameter table(s) 4, 5
 - transposed table Deyme_2019_table_4: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
-- unparsed cell Deyme_2019_table_4:row0:col3 = '126 (20%)'
-- unparsed cell Deyme_2019_table_4:row0:col4 = '51 (43%)'
-- unparsed cell Deyme_2019_table_4:row0:col5 = '16 (68%)'
-- unparsed cell Deyme_2019_table_4:row0:col6 = '65.3 (77%)'
-- unparsed cell Deyme_2019_table_4:row0:col9 = '22.83ᶜ'
-- unparsed cell Deyme_2019_table_4:row0:col10 = '41.6 (0.26%)'
-- unparsed cell Deyme_2019_table_4:row0:col11 = '306.9 (16%)'
-- unparsed cell Deyme_2019_table_4:row0:col12 = '346.69ᵇ'
-- unparsed cell Deyme_2019_table_4:row0:col13 = '21.7ᵈ'
-- unparsed cell Deyme_2019_table_4:row0:col14 = '24.9 (65%)'
-- unparsed cell Deyme_2019_table_4:row0:col16 = '43.8 (32%)'
-- unparsed cell Deyme_2019_table_4:row0:col19 = '34.2 (34%)'
-- unparsed cell Deyme_2019_table_4:row0:col20 = '31.7 (22%)'
-- unparsed cell Deyme_2019_table_4:row1:col3 = '120 (29%)'
-- unparsed cell Deyme_2019_table_4:row1:col4 = '22 (50%)'
-- unparsed cell Deyme_2019_table_4:row1:col5 = '22ᵃ'
-- unparsed cell Deyme_2019_table_4:row1:col6 = '14.7 (82%)'
-- unparsed cell Deyme_2019_table_4:row1:col7 = '21.9 (36%)'
-- unparsed cell Deyme_2019_table_4:row1:col9 = '367.0ᶜ'
-- unparsed cell Deyme_2019_table_4:row1:col10 = '452.5 (34%)'
-- unparsed cell Deyme_2019_table_4:row1:col13 = '188ᵈ'
-- unparsed cell Deyme_2019_table_4:row1:col14 = '136 (66%)'
-- unparsed cell Deyme_2019_table_4:row1:col16 = '153 (44%)'
-- unparsed cell Deyme_2019_table_4:row1:col17 = '12.3 (9.4%)'
-- unparsed cell Deyme_2019_table_4:row1:col18 = '5.52 (26%)'
-- unparsed cell Deyme_2019_table_4:row1:col19 = '95.5 (44%)'
-- unparsed cell Deyme_2019_table_4:row1:col20 = '79.1ᶜ'
-- unparsed cell Deyme_2019_table_4:row2:col6 = '334 (138%)'
-- unparsed cell Deyme_2019_table_4:row2:col7 = '17.7 (26%)'
-- unparsed cell Deyme_2019_table_4:row2:col9 = '997.1ᶜ'
-- unparsed cell Deyme_2019_table_4:row2:col16 = '147 (39%)'
-- unparsed cell Deyme_2019_table_4:row3:col6 = '1512 (23%)'
-- unparsed cell Deyme_2019_table_4:row3:col7 = '794 (27%)'
-- unparsed cell Deyme_2019_table_4:row3:col20 = '186.2 (21%)'
-- unparsed cell Deyme_2019_table_4:row4:col3 = '25 (60%)'
-- unparsed cell Deyme_2019_table_4:row4:col6 = '4.55 (14%)'
-- unparsed cell Deyme_2019_table_4:row4:col7 = '3.69 (22%)'
-- unparsed cell Deyme_2019_table_4:row4:col9 = '67.48ᶜ'
-- unparsed cell Deyme_2019_table_4:row4:col10 = '68 (36%)'
-- unparsed cell Deyme_2019_table_4:row4:col13 = '33.2ᵃ'
-- unparsed cell Deyme_2019_table_4:row4:col14 = '34.8 (56%)'
-- unparsed cell Deyme_2019_table_4:row4:col16 = '27.6 (67%)'
-- unparsed cell Deyme_2019_table_4:row4:col20 = '6.2ᶜ'
-- unparsed cell Deyme_2019_table_4:row5:col3 = '12.7 (31%)'
-- unparsed cell Deyme_2019_table_4:row5:col6 = '15.3 (42%)'
-- unparsed cell Deyme_2019_table_4:row5:col7 = '58.3 (26%)'
-- unparsed cell Deyme_2019_table_4:row5:col9 = '4.68ᶜ'
-- unparsed cell Deyme_2019_table_4:row6:col6 = '18.8 (18%)'
-- unparsed cell Deyme_2019_table_4:row6:col17 = '2.58ᵈ'
-- unparsed cell Deyme_2019_table_4:row6:col18 = '4.56 (31%)'
-- unparsed cell Deyme_2019_table_4:row7:col4 = '6 (82%)'
-- unparsed cell Deyme_2019_table_4:row7:col6 = '19.6 (118%)'
-- unparsed cell Deyme_2019_table_4:row7:col7 = '68.8 (26%)'
-- unparsed cell Deyme_2019_table_4:row7:col17 = '0.698 (39%)'
-- unparsed cell Deyme_2019_table_4:row9:col3 = '5.69 (27%)'
-- unparsed cell Deyme_2019_table_4:row9:col16 = '0.698 (39%)'
-- unparsed cell Deyme_2019_table_4:row10:col16 = '0.0842 (14%)'
-- unparsed cell Deyme_2019_table_4:row11:col16 = '15.7 (35%)'
+- unparsed cell Deyme_2019_table_4:row0:col3 = '5FU'
+- unparsed cell Deyme_2019_table_4:row0:col4 = '5FUH₂'
+- unparsed cell Deyme_2019_table_4:row0:col5 = '5FU'
+- unparsed cell Deyme_2019_table_4:row0:col6 = '5FDHU'
+- unparsed cell Deyme_2019_table_4:row0:col11 = '11.76ᶜ'
+- unparsed cell Deyme_2019_table_4:row0:col12 = '25.2 (39%)'
+- unparsed cell Deyme_2019_table_4:row0:col13 = '12.2 (17%)'
+- unparsed cell Deyme_2019_table_4:row0:col15 = '17ᵈ'
+- unparsed cell Deyme_2019_table_4:row0:col16 = '14.1 (62%)'
+- unparsed cell Deyme_2019_table_4:row0:col18 = '43.8 (32%)'
+- unparsed cell Deyme_2019_table_4:row0:col21 = '34.2 (34%)'
+- unparsed cell Deyme_2019_table_4:row0:col22 = '31.7 (22%)'
+- unparsed cell Deyme_2019_table_4:row2:col5 = '120 (29%)'
+- unparsed cell Deyme_2019_table_4:row2:col6 = '22 (50%)'
+- unparsed cell Deyme_2019_table_4:row2:col7 = '14.7 (82%)'
+- unparsed cell Deyme_2019_table_4:row2:col8 = '21.9 (36%)'
+- unparsed cell Deyme_2019_table_4:row2:col9 = '18.4 (114%)'
+- unparsed cell Deyme_2019_table_4:row2:col11 = '367.0ᶜ'
+- unparsed cell Deyme_2019_table_4:row2:col12 = '452.5 (34%)'
+- unparsed cell Deyme_2019_table_4:row2:col15 = '188ᵈ'
+- unparsed cell Deyme_2019_table_4:row2:col16 = '136 (66%)'
+- unparsed cell Deyme_2019_table_4:row2:col18 = '147 (39%)'
+- unparsed cell Deyme_2019_table_4:row3:col2 = '1390 (20%)'
+- unparsed cell Deyme_2019_table_4:row3:col5 = '763 (63%)'
+- unparsed cell Deyme_2019_table_4:row3:col7 = '1512 (23%)'
+- unparsed cell Deyme_2019_table_4:row3:col8 = '794 (27%)'
+- unparsed cell Deyme_2019_table_4:row3:col11 = '997.1ᶜ'
+- unparsed cell Deyme_2019_table_4:row3:col22 = '186.2 (21%)'
+- unparsed cell Deyme_2019_table_4:row4:col2 = '5.57 (22%)'
+- unparsed cell Deyme_2019_table_4:row4:col5 = '25 (60%)'
+- unparsed cell Deyme_2019_table_4:row4:col7 = '4.55 (14%)'
+- unparsed cell Deyme_2019_table_4:row4:col8 = '3.69 (22%)'
+- unparsed cell Deyme_2019_table_4:row5:col5 = '70ᵃ'
+- unparsed cell Deyme_2019_table_4:row5:col7 = '334 (138%)'
+- unparsed cell Deyme_2019_table_4:row5:col8 = '17.8 (18%)'
+- unparsed cell Deyme_2019_table_4:row5:col11 = '67.48ᶜ'
+- unparsed cell Deyme_2019_table_4:row5:col12 = '68 (36%)'
+- unparsed cell Deyme_2019_table_4:row5:col15 = '33.2ᵈ'
+- unparsed cell Deyme_2019_table_4:row5:col16 = '34.8 (56%)'
+- unparsed cell Deyme_2019_table_4:row5:col18 = '27.6 (67%)'
+- unparsed cell Deyme_2019_table_4:row5:col22 = '6.2ᶜ'
+- unparsed cell Deyme_2019_table_4:row6:col5 = '6 (82%)'
+- unparsed cell Deyme_2019_table_4:row6:col7 = '19.6 (18%)'
+- unparsed cell Deyme_2019_table_4:row6:col8 = '68.8 (26%)'
+- unparsed cell Deyme_2019_table_4:row6:col9 = '58.3 (26%)'
+- unparsed cell Deyme_2019_table_4:row6:col11 = '4.68ᶜ'
+- unparsed cell Deyme_2019_table_4:row6:col19 = '2.58ᵈ'
+- unparsed cell Deyme_2019_table_4:row6:col20 = '4.56 (31%)'
+- unparsed cell Deyme_2019_table_4:row7:col19 = '0.698 (39%)'
+- unparsed cell Deyme_2019_table_4:row8:col2 = '5.69 (27%)'
+- unparsed cell Deyme_2019_table_4:row8:col19 = '0.0842 (14%)'
+- unparsed cell Deyme_2019_table_4:row10:col2 = '0.85ᵃ'
+- unparsed cell Deyme_2019_table_4:row10:col19 = '1.26 (20%)'
+- transposed table Deyme_2019_table_5: parameters were across the columns, populations/subgroups down the first column — transposed for parsing
 - unparsed cell Deyme_2019_table_5:row0:col1 = '17.60 (47%)'
-- unparsed cell Deyme_2019_table_5:row0:col3 = '26.300 (79%)'
-- unparsed cell Deyme_2019_table_5:row0:col4 = '2650 (68%)'
-- unparsed cell Deyme_2019_table_5:row1:col2 = '349 (37%)'
-- unparsed cell Deyme_2019_table_5:row1:col5 = '2.52 (28%)'
-- unparsed cell Deyme_2019_table_5:row1:col6 = '2.58 (13%)'
-- unparsed cell Deyme_2019_table_5:row1:col7 = '0.0426 (61%)'
-- unparsed cell Deyme_2019_table_5:row2:col2 = '311.7 (25%)'
-- unparsed cell Deyme_2019_table_5:row2:col5 = '2.52 (33%)'
-- unparsed cell Deyme_2019_table_5:row2:col6 = '2.6 (52%)'
-- unparsed cell Deyme_2019_table_5:row3:col1 = '302.7d (46%)'
-- unparsed cell Deyme_2019_table_5:row3:col2 = '132.7f (47%)'
-- unparsed cell Deyme_2019_table_5:row3:col3 = '4913f'
+- unparsed cell Deyme_2019_table_5:row0:col4 = '302.7f (46%)'
+- unparsed cell Deyme_2019_table_5:row1:col2 = '3.49 (37%)'
+- unparsed cell Deyme_2019_table_5:row1:col3 = '311.7 (25%)'
+- unparsed cell Deyme_2019_table_5:row1:col4 = '132.7f (47%)'
+- unparsed cell Deyme_2019_table_5:row2:col1 = '26.300 (79%)'
+- unparsed cell Deyme_2019_table_5:row2:col4 = '4913f'
+- unparsed cell Deyme_2019_table_5:row3:col1 = '2650 (68%)'
 - unparsed cell Deyme_2019_table_5:row3:col4 = '285f'
+- unparsed cell Deyme_2019_table_5:row4:col2 = '2.52 (28%)'
+- unparsed cell Deyme_2019_table_5:row4:col3 = '2.52 (33%)'
+- unparsed cell Deyme_2019_table_5:row5:col2 = '2.58 (13%)'
+- unparsed cell Deyme_2019_table_5:row5:col3 = '2.6 (52%)'
+- unparsed cell Deyme_2019_table_5:row6:col2 = '0.0426 (61%)'
 
 ## Validation
 
@@ -130,13 +157,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.625 (5/8 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.125 (1/8 fields) | 7 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `model.links` | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['sn38', 'apc', 'metabolism']] | [['5-fluorouracil', '5fuh2', 'metabolism'], ['5-fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `model.links` | [['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['sn38', 'apc', 'metabolism']] | [['fluorouracil', '5fuh2', 'metabolism'], ['fluorouracil', '5fdhu', 'metabolism'], ['irinotecan', 'sn38', 'metabolism'], ['sn38', 'sn38g', 'metabolism'], ['irinotecan', 'apc', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[k10]` | 0.26 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q1]` | 0.57 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q2]` | 1.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vmax]` | 160.9 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `screen.dose_compound` | fluorouracil | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | fluorouracil | unknown | mismatch |
 
@@ -147,6 +178,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
 </details>
 
+
+**Scholar closed-form checks:**
+
+| check | status | expected | obtained | ratio | tol | source |
+|---|---|---|---|---|---|---|
+| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Deyme_2019_table_4:row7:col16'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Deyme_2019_table_4:row9:col16'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Bae_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Deyme_2019:review'] |
+| C5_dimension_Q66 | fail | [mass] / [time] | mg/h | not captured | not captured | ['Deyme_2019_table_4:row4:col16'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Blesch_2003:review'] |
+| C5_dimension_Q99 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Deyme_2019_table_4:row8:col16'] |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C9_phys_window_Q61 | pass | volume within physiological range | 161 L | not captured | not captured | ['Deyme_2019:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -160,19 +208,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -181,4 +219,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 14:07 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 09:02 UTC</sub>

@@ -1,0 +1,60 @@
+{
+ "model_id": "Glibenclamide_Rambiritch2016_PD_fbg_2",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 14.3,
+  "EC50": 0.0852,
+  "Emax": -0.39,
+  "exposure_per_s": 0.001,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 14.299999999999999,
+  "0.08519999999999998": 14.104999999999999
+ },
+ "stop_time": 860.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": false,
+   "display_unit": "mmol/L",
+   "factor": 0.9999999999999999,
+   "si_unit": "mol/m3"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "mmol/L",
+   "factor": 0.9999999999999999,
+   "si_unit": "mol/m3"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/L",
+   "factor": 0.0009999999999999998,
+   "si_unit": "kg/m3"
+  },
+  "response_unit": "mmol/L"
+ },
+ "x_axis": {
+  "display_unit": "mg/L",
+  "factor": 0.0009999999999999998,
+  "per_s": 0.001,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "mmol/L",
+  "factor": 0.9999999999999999,
+  "label": "response"
+ }
+}

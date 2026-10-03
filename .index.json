@@ -75,7 +75,7 @@
   ],
   "dir": "drug_abacavir",
   "extracted": 4,
-  "last_change": "2026-09-30T16:21:38.330217+00:00",
+  "last_change": "2026-10-03T11:12:09.079977+00:00",
   "name": "abacavir",
   "needs_review": 2,
   "records": 7,
@@ -850,7 +850,7 @@
    "M04AA01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 6,
    "pgx": 22,
    "pk": 7
   },
@@ -1734,7 +1734,7 @@
    "C10BX19"
   ],
   "counts": {
-   "pd": 11,
+   "pd": 7,
    "pgx": 2,
    "pk": 11
   },
@@ -1803,7 +1803,7 @@
   ],
   "dir": "drug_amlodipine",
   "extracted": 11,
-  "last_change": "2026-09-30T20:49:50.308983+00:00",
+  "last_change": "2026-10-03T15:13:21.458433+00:00",
   "name": "amlodipine",
   "needs_review": 4,
   "records": 15,
@@ -1875,7 +1875,7 @@
    "J01CA04"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 0,
    "pgx": 0,
    "pk": 16
   },
@@ -1984,7 +1984,7 @@
   ],
   "dir": "drug_amoxicillin",
   "extracted": 16,
-  "last_change": "2026-09-30T23:29:54.876361+00:00",
+  "last_change": "2026-10-03T17:42:55.624932+00:00",
   "name": "amoxicillin",
   "needs_review": 7,
   "records": 25,
@@ -2834,7 +2834,7 @@
    "C10BX15"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 3,
    "pgx": 4,
    "pk": 7
   },
@@ -2895,7 +2895,7 @@
   ],
   "dir": "drug_atorvastatin",
   "extracted": 7,
-  "last_change": "2026-09-30T22:02:00.542234+00:00",
+  "last_change": "2026-10-03T16:07:34.974880+00:00",
   "name": "atorvastatin",
   "needs_review": 3,
   "records": 13,
@@ -3057,7 +3057,7 @@
    "L04AX01"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 1,
    "pgx": 25,
    "pk": 1
   },
@@ -3086,7 +3086,7 @@
   ],
   "dir": "drug_azathioprine",
   "extracted": 1,
-  "last_change": "2026-09-30T15:43:26.001959+00:00",
+  "last_change": "2026-10-03T10:36:32.761780+00:00",
   "name": "azathioprine",
   "needs_review": 2,
   "records": 5,
@@ -4604,7 +4604,7 @@
    "N05AX16"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 1,
    "pgx": 1,
    "pk": 4
   },
@@ -4633,7 +4633,7 @@
   ],
   "dir": "drug_brexpiprazole",
   "extracted": 4,
-  "last_change": "2026-10-01T19:08:49.100643+00:00",
+  "last_change": "2026-10-03T14:17:41.339973+00:00",
   "name": "brexpiprazole",
   "needs_review": 1,
   "records": 5,
@@ -7541,7 +7541,7 @@
   ],
   "dir": "drug_ciprofloxacin",
   "extracted": 11,
-  "last_change": "2026-10-01T00:44:36.039138+00:00",
+  "last_change": "2026-10-03T18:51:47.715177+00:00",
   "name": "ciprofloxacin",
   "needs_review": 12,
   "records": 26,
@@ -8050,7 +8050,7 @@
    "B01AC04"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 3,
    "pgx": 11,
    "pk": 13
   },
@@ -8127,7 +8127,7 @@
   ],
   "dir": "drug_clopidogrel",
   "extracted": 12,
-  "last_change": "2026-09-30T17:26:49.558876+00:00",
+  "last_change": "2026-10-03T08:51:25.331339+00:00",
   "name": "clopidogrel",
   "needs_review": 1,
   "records": 17,
@@ -8495,7 +8495,7 @@
    "R05DA04"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 1,
    "pgx": 0,
    "pk": 2
   },
@@ -8528,7 +8528,7 @@
   ],
   "dir": "drug_codeine",
   "extracted": 2,
-  "last_change": "2026-09-30T15:09:36.269351+00:00",
+  "last_change": "2026-10-03T10:03:44.651323+00:00",
   "name": "codeine",
   "needs_review": 1,
   "records": 6,
@@ -9162,7 +9162,7 @@
    "L01AX04"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 1,
    "pgx": 0,
    "pk": 0
   },
@@ -9175,7 +9175,7 @@
   ],
   "dir": "drug_dacarbazine",
   "extracted": 0,
-  "last_change": "2026-10-01T10:47:58.751145+00:00",
+  "last_change": "2026-10-03T08:43:07.321354+00:00",
   "name": "dacarbazine",
   "needs_review": 0,
   "records": 1,
@@ -9225,7 +9225,7 @@
    "A10BK01"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
@@ -11252,7 +11252,7 @@
    "G04CA55"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 3,
    "pgx": 1,
    "pk": 3
   },
@@ -11418,7 +11418,7 @@
    "J01AA02"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 1,
    "pgx": 0,
    "pk": 2
   },
@@ -11648,7 +11648,7 @@
   ],
   "dir": "drug_dulaglutide",
   "extracted": 5,
-  "last_change": "2026-10-01T14:49:25.851433+00:00",
+  "last_change": "2026-10-03T16:21:38.319271+00:00",
   "name": "dulaglutide",
   "needs_review": 0,
   "records": 7,
@@ -12091,7 +12091,7 @@
   ],
   "dir": "drug_empagliflozin",
   "extracted": 5,
-  "last_change": "2026-10-01T18:33:00.181163+00:00",
+  "last_change": "2026-10-03T19:12:24.614514+00:00",
   "name": "empagliflozin",
   "needs_review": 0,
   "records": 5,
@@ -13473,7 +13473,7 @@
   ],
   "dir": "drug_exenatide",
   "extracted": 4,
-  "last_change": "2026-10-01T15:30:59.312554+00:00",
+  "last_change": "2026-10-03T16:57:56.045273+00:00",
   "name": "exenatide",
   "needs_review": 0,
   "records": 16,
@@ -13748,7 +13748,7 @@
    "N02AB03"
   ],
   "counts": {
-   "pd": 9,
+   "pd": 7,
    "pgx": 0,
    "pk": 7
   },
@@ -13821,7 +13821,7 @@
   ],
   "dir": "drug_fentanyl",
   "extracted": 7,
-  "last_change": "2026-10-01T18:07:35.517885+00:00",
+  "last_change": "2026-10-03T13:15:47.234617+00:00",
   "name": "fentanyl",
   "needs_review": 5,
   "records": 16,
@@ -14490,7 +14490,7 @@
    "L01BC02"
   ],
   "counts": {
-   "pd": 10,
+   "pd": 7,
    "pgx": 46,
    "pk": 6
   },
@@ -14561,14 +14561,6 @@
     "model_id": "Fluorouracil_van2012_reference"
    },
    {
-    "label": "Deyme_2019 \u00b7 bastian_26",
-    "model_id": "Fluorouracil_Deyme2019_bastian_26"
-   },
-   {
-    "label": "Deyme_2019 \u00b7 beaty_31",
-    "model_id": "Fluorouracil_Deyme2019_beaty_31"
-   },
-   {
     "label": "Arshad_2020 \u00b7 reference",
     "model_id": "Fluorouracil_Arshad2020_reference"
    },
@@ -14581,12 +14573,12 @@
     "model_id": "Fluorouracil_Daryani2016_reference"
    },
    {
-    "label": "Deyme_2019 \u00b7 bastien_26",
-    "model_id": "Fluorouracil_Deyme2019_bastien_26"
+    "label": "Deyme_2019 \u00b7 bastian_26",
+    "model_id": "Fluorouracil_Deyme2019_bastian_26"
    },
    {
-    "label": "Deyme_2019 \u00b7 beary_31",
-    "model_id": "Fluorouracil_Deyme2019_beary_31"
+    "label": "Deyme_2019 \u00b7 beaty_31",
+    "model_id": "Fluorouracil_Deyme2019_beaty_31"
    },
    {
     "label": "Deyme_2019 \u00b7 berg_37",
@@ -14595,6 +14587,10 @@
    {
     "label": "Deyme_2019 \u00b7 bressolle_33",
     "model_id": "Fluorouracil_Deyme2019_bressolle_33"
+   },
+   {
+    "label": "Deyme_2019 \u00b7 deford_25",
+    "model_id": "Fluorouracil_Deyme2019_deford_25"
    },
    {
     "label": "Deyme_2019 \u00b7 delord_25",
@@ -14625,14 +14621,6 @@
     "model_id": "Fluorouracil_Deyme2019_klo_24"
    },
    {
-    "label": "Deyme_2019 \u00b7 mueller_22",
-    "model_id": "Fluorouracil_Deyme2019_mueller_22"
-   },
-   {
-    "label": "Deyme_2019 \u00b7 nikanjam_32",
-    "model_id": "Fluorouracil_Deyme2019_nikanjam_32"
-   },
-   {
     "label": "Deyme_2019 \u00b7 nikanjan_32",
     "model_id": "Fluorouracil_Deyme2019_nikanjan_32"
    },
@@ -14645,6 +14633,10 @@
     "model_id": "Fluorouracil_Deyme2019_poujol_27"
    },
    {
+    "label": "Deyme_2019 \u00b7 poulol_27",
+    "model_id": "Fluorouracil_Deyme2019_poulol_27"
+   },
+   {
     "label": "Deyme_2019 \u00b7 terret_23",
     "model_id": "Fluorouracil_Deyme2019_terret_23"
    },
@@ -14655,6 +14647,10 @@
    {
     "label": "Deyme_2019 \u00b7 van_kuijlenburg_36",
     "model_id": "Fluorouracil_Deyme2019_van_kuijlenburg_36"
+   },
+   {
+    "label": "Deyme_2019 \u00b7 van_kuilenburg_36",
+    "model_id": "Fluorouracil_Deyme2019_van_kuilenburg_36"
    },
    {
     "label": "Gieschke_2003 \u00b7 reference",
@@ -14683,6 +14679,10 @@
    {
     "label": "Yamada_2025 \u00b7 reference",
     "model_id": "Fluorouracil_Yamada2025_reference"
+   },
+   {
+    "label": "el-Tahtawy_1991 \u00b7 reference",
+    "model_id": "Fluorouracil_elTahtawy1991_reference"
    },
    {
     "label": "van_2013 \u00b7 bresole_et_al_1999",
@@ -14731,11 +14731,11 @@
   ],
   "dir": "drug_fluorouracil",
   "extracted": 6,
-  "last_change": "2026-10-01T14:08:39.280131+00:00",
+  "last_change": "2026-10-03T09:04:12.914518+00:00",
   "name": "fluorouracil",
   "needs_review": 10,
   "records": 58,
-  "rejected": 40,
+  "rejected": 42,
   "rendered": true,
   "slug": "fluorouracil",
   "stale": 33
@@ -15736,7 +15736,7 @@
   ],
   "dir": "drug_glibenclamide",
   "extracted": 3,
-  "last_change": "2026-10-01T17:32:31.380951+00:00",
+  "last_change": "2026-10-03T18:54:43.641571+00:00",
   "name": "glibenclamide",
   "needs_review": 2,
   "records": 8,
@@ -17331,7 +17331,7 @@
    "R02AX02"
   ],
   "counts": {
-   "pd": 6,
+   "pd": 2,
    "pgx": 8,
    "pk": 7
   },
@@ -19626,7 +19626,7 @@
    "H03AA51"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 1,
    "pgx": 0,
    "pk": 2
   },
@@ -19715,7 +19715,7 @@
   ],
   "dir": "drug_levothyroxine",
   "extracted": 2,
-  "last_change": "2026-09-30T22:45:55.594182+00:00",
+  "last_change": "2026-10-03T16:54:18.601705+00:00",
   "name": "Levothyroxine",
   "needs_review": 12,
   "records": 20,
@@ -20036,7 +20036,7 @@
   ],
   "dir": "drug_liraglutide",
   "extracted": 3,
-  "last_change": "2026-10-01T14:01:38.889876+00:00",
+  "last_change": "2026-10-03T15:30:30.219509+00:00",
   "name": "liraglutide",
   "needs_review": 3,
   "records": 7,
@@ -20089,7 +20089,7 @@
    "A10BJ03"
   ],
   "counts": {
-   "pd": 2,
+   "pd": 0,
    "pgx": 0,
    "pk": 0
   },
@@ -22021,7 +22021,7 @@
    "A10BD28"
   ],
   "counts": {
-   "pd": 10,
+   "pd": 3,
    "pgx": 6,
    "pk": 18
   },
@@ -22112,6 +22112,10 @@
     "model_id": "Metformin_Charles2006_reference"
    },
    {
+    "label": "Goglia_2024 \u00b7 reference",
+    "model_id": "Metformin_Goglia2024_reference"
+   },
+   {
     "label": "Jacobs_2026 \u00b7 oral",
     "model_id": "Metformin_Jacobs2026_oral"
    },
@@ -22130,6 +22134,10 @@
    {
     "label": "Sinnappah_2020 \u00b7 parameter_estimates_rse",
     "model_id": "Metformin_Sinnappah2020_parameter_estimates_rse"
+   },
+   {
+    "label": "Sun_2011 \u00b7 reference",
+    "model_id": "Metformin_Sun2011_reference"
    },
    {
     "label": "Yoon_2013 \u00b7 estimate_rse",
@@ -22174,10 +22182,10 @@
   ],
   "dir": "drug_metformin",
   "extracted": 18,
-  "last_change": "2026-09-30T17:45:47.118060+00:00",
+  "last_change": "2026-10-03T12:31:14.670865+00:00",
   "name": "metformin",
-  "needs_review": 9,
-  "records": 36,
+  "needs_review": 11,
+  "records": 38,
   "rejected": 9,
   "rendered": true,
   "slug": "metformin",
@@ -23063,7 +23071,7 @@
    "N05CD08"
   ],
   "counts": {
-   "pd": 15,
+   "pd": 9,
    "pgx": 1,
    "pk": 12
   },
@@ -23236,7 +23244,7 @@
   ],
   "dir": "drug_midazolam",
   "extracted": 12,
-  "last_change": "2026-10-01T17:05:19.113433+00:00",
+  "last_change": "2026-10-03T12:11:01.236535+00:00",
   "name": "midazolam",
   "needs_review": 10,
   "records": 41,
@@ -24585,7 +24593,7 @@
    "A16AX25"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 2,
    "pgx": 0,
    "pk": 0
   },
@@ -25783,7 +25791,7 @@
   ],
   "dir": "drug_omeprazole",
   "extracted": 14,
-  "last_change": "2026-09-30T19:34:30.911014+00:00",
+  "last_change": "2026-10-03T14:09:20.354288+00:00",
   "name": "omeprazole",
   "needs_review": 6,
   "records": 23,
@@ -26534,7 +26542,7 @@
   ],
   "dir": "drug_palivizumab",
   "extracted": 1,
-  "last_change": "2026-10-01T16:35:27.279319+00:00",
+  "last_change": "2026-10-03T11:38:59.561112+00:00",
   "name": "palivizumab",
   "needs_review": 0,
   "records": 5,
@@ -26710,7 +26718,7 @@
    "N02BE01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 4,
    "pgx": 0,
    "pk": 3
   },
@@ -28742,7 +28750,7 @@
    "A10BX05"
   ],
   "counts": {
-   "pd": 1,
+   "pd": 3,
    "pgx": 0,
    "pk": 0
   },
@@ -30018,7 +30026,7 @@
    "J05AB16"
   ],
   "counts": {
-   "pd": 4,
+   "pd": 2,
    "pgx": 0,
    "pk": 5
   },
@@ -30075,7 +30083,7 @@
   ],
   "dir": "drug_remdesivir",
   "extracted": 5,
-  "last_change": "2026-10-01T15:47:14.766632+00:00",
+  "last_change": "2026-10-03T10:49:04.604809+00:00",
   "name": "remdesivir",
   "needs_review": 5,
   "records": 12,
@@ -30808,7 +30816,7 @@
    "C10BX22"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 3,
    "pgx": 0,
    "pk": 7
   },
@@ -30865,7 +30873,7 @@
   ],
   "dir": "drug_rosuvastatin",
   "extracted": 7,
-  "last_change": "2026-10-01T19:07:19.149652+00:00",
+  "last_change": "2026-10-03T19:29:26.729766+00:00",
   "name": "rosuvastatin",
   "needs_review": 5,
   "records": 12,
@@ -31376,7 +31384,7 @@
    "A10BJ06"
   ],
   "counts": {
-   "pd": 9,
+   "pd": 4,
    "pgx": 0,
    "pk": 6
   },
@@ -31433,7 +31441,7 @@
   ],
   "dir": "drug_semaglutide",
   "extracted": 6,
-  "last_change": "2026-10-01T10:55:56.905727+00:00",
+  "last_change": "2026-10-03T14:47:19.440473+00:00",
   "name": "semaglutide",
   "needs_review": 3,
   "records": 12,
@@ -31657,7 +31665,7 @@
    "C10BX01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 3,
    "pgx": 5,
    "pk": 10
   },
@@ -32863,7 +32871,7 @@
    "L02BA01"
   ],
   "counts": {
-   "pd": 9,
+   "pd": 1,
    "pgx": 1,
    "pk": 1
   },
@@ -32896,7 +32904,7 @@
   ],
   "dir": "drug_tamoxifen",
   "extracted": 1,
-  "last_change": "2026-09-30T17:04:35.752235+00:00",
+  "last_change": "2026-10-03T11:50:16.949179+00:00",
   "name": "tamoxifen",
   "needs_review": 1,
   "records": 6,
@@ -34209,7 +34217,7 @@
   ],
   "dir": "drug_tirzepatide",
   "extracted": 0,
-  "last_change": "2026-10-01T16:57:43.191554+00:00",
+  "last_change": "2026-10-03T18:28:41.435566+00:00",
   "name": "tirzepatide",
   "needs_review": 0,
   "records": 1,
@@ -34426,7 +34434,7 @@
   ],
   "dir": "drug_tolbutamide",
   "extracted": 1,
-  "last_change": "2026-10-01T17:21:30.794851+00:00",
+  "last_change": "2026-10-03T18:51:56.064710+00:00",
   "name": "tolbutamide",
   "needs_review": 1,
   "records": 2,
@@ -36106,7 +36114,7 @@
    "L01CA01"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 2,
    "pgx": 0,
    "pk": 2
   },
@@ -36125,6 +36133,10 @@
     "model_id": "Vinblastine_Zhou1990_estimated_parameters_cls_l_kg"
    },
    {
+    "label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg",
+    "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"
+   },
+   {
     "label": "Owellen_1977 \u00b7 reference",
     "model_id": "Vinblastine_Owellen1977_reference"
    },
@@ -36135,19 +36147,15 @@
    {
     "label": "Zhou_1990 \u00b7 estimated_parameters_vc_l_h_kg",
     "model_id": "Vinblastine_Zhou1990_estimated_parameters_vc_l_h_kg"
-   },
-   {
-    "label": "Zhou_1990 \u00b7 estimated_parameters_vt_l_kg",
-    "model_id": "Vinblastine_Zhou1990_estimated_parameters_vt_l_kg"
    }
   ],
   "dir": "drug_vinblastine",
   "extracted": 2,
   "last_change": "2026-10-03T08:04:53.646817+00:00",
   "name": "vinblastine",
-  "needs_review": 0,
+  "needs_review": 2,
   "records": 7,
-  "rejected": 4,
+  "rejected": 3,
   "rendered": true,
   "slug": "vinblastine",
   "stale": 7
@@ -36581,7 +36589,7 @@
    "B01AA03"
   ],
   "counts": {
-   "pd": 13,
+   "pd": 4,
    "pgx": 17,
    "pk": 5
   },
@@ -36632,6 +36640,10 @@
     "model_id": "Warfarin_Kubo2017_reference"
    },
    {
+    "label": "Mungall_1985 \u00b7 reference",
+    "model_id": "Warfarin_Mungall1985_reference"
+   },
+   {
     "label": "Neff-Davis_1981 \u00b7 reference",
     "model_id": "Warfarin_NeffDavis1981_reference"
    },
@@ -36648,10 +36660,6 @@
     "model_id": "Warfarin_Gibbons2015_reference"
    },
    {
-    "label": "Mungall_1985 \u00b7 reference",
-    "model_id": "Warfarin_Mungall1985_reference"
-   },
-   {
     "label": "Ohara_2014 \u00b7 reference",
     "model_id": "Warfarin_Ohara2014_reference"
    },
@@ -36664,9 +36672,9 @@
   "extracted": 5,
   "last_change": "2026-10-03T08:06:31.301883+00:00",
   "name": "warfarin",
-  "needs_review": 8,
+  "needs_review": 9,
   "records": 18,
-  "rejected": 5,
+  "rejected": 4,
   "rendered": true,
   "slug": "warfarin",
   "stale": 14

@@ -24,7 +24,7 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which c
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.994866+00:00) predates the upstream re-run (2026-10-01 18:33:00.181163+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:52.994866+00:00) predates the upstream re-run (2026-10-03 19:12:24.614514+00:00). Current validate status: `extracted`.
 
 ## Citation
 Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of clinical… (2025)
@@ -41,12 +41,12 @@ Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F (L/h) | `Q27` · CL/F | 1.00 | L/h | 2.7777777777777776e-07 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row2:col3, bcp70096-tbl-0003:row2:col5, bcp70096-tbl-0003:row2:col6, bcp70096-tbl-0003:row2:col7 | — | 33.3 (None% RSE) |
-| V2/F (L) | `Q82` · V2/F | 1.00 | L | 0.001 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row3:col3, bcp70096-tbl-0003:row3:col5, bcp70096-tbl-0003:row3:col6, bcp70096-tbl-0003:row3:col7 | — | not captured |
-| KA (1/h) | `Q49` · kabs | 1.00 | 1/h | 0.0002777777777777778 | 1/h | not captured | exact (1.0) | bcp70096-tbl-0003:row4:col3, bcp70096-tbl-0003:row4:col5, bcp70096-tbl-0003:row4:col6, bcp70096-tbl-0003:row4:col7 | — | not captured |
-| Q/F (L/h) | `Q69` · Q/F | 1.00 | L/h | 2.7777777777777776e-07 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row5:col3, bcp70096-tbl-0003:row5:col5, bcp70096-tbl-0003:row5:col6, bcp70096-tbl-0003:row5:col7 | — | not captured |
-| V3/F (L) | `Q78` · V3/F | 1.00 | L | 0.001 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row6:col3, bcp70096-tbl-0003:row6:col5, bcp70096-tbl-0003:row6:col6, bcp70096-tbl-0003:row6:col7 | — | not captured |
-| D1 (h) | `Q310` · D1 | 1.00 | h | 3600.0 | [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row7:col3, bcp70096-tbl-0003:row7:col5, bcp70096-tbl-0003:row7:col6, bcp70096-tbl-0003:row7:col7 | — | not captured |
+| CL/F (L/h) | `Q27` · CL/F | 6.74 | L/h | 1.8722222222222222e-06 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row2:col3, bcp70096-tbl-0003:row2:col5, bcp70096-tbl-0003:row2:col6, bcp70096-tbl-0003:row2:col7 | — | 33.3 (None% RSE) |
+| V2/F (L) | `Q82` · V2/F | 4.12 | L | 0.00412 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row3:col3, bcp70096-tbl-0003:row3:col5, bcp70096-tbl-0003:row3:col6, bcp70096-tbl-0003:row3:col7 | — | not captured |
+| KA (1/h) | `Q49` · kabs | 0.239 | 1/h | 6.638888888888889e-05 | 1/h | not captured | exact (1.0) | bcp70096-tbl-0003:row4:col3, bcp70096-tbl-0003:row4:col5, bcp70096-tbl-0003:row4:col6, bcp70096-tbl-0003:row4:col7 | — | not captured |
+| Q/F (L/h) | `Q69` · Q/F | 5.51 | L/h | 1.5305555555555556e-06 | [l] / [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row5:col3, bcp70096-tbl-0003:row5:col5, bcp70096-tbl-0003:row5:col6, bcp70096-tbl-0003:row5:col7 | — | not captured |
+| V3/F (L) | `Q78` · V3/F | 71.7 | L | 0.0717 | [l] | not captured | exact (1.0) | bcp70096-tbl-0003:row6:col3, bcp70096-tbl-0003:row6:col5, bcp70096-tbl-0003:row6:col6, bcp70096-tbl-0003:row6:col7 | — | not captured |
+| D1 (h) | `Q310` · D1 | 0.326 | h | 1173.6000000000001 | [h] | not captured | exact (1.0) | bcp70096-tbl-0003:row7:col3, bcp70096-tbl-0003:row7:col5, bcp70096-tbl-0003:row7:col6, bcp70096-tbl-0003:row7:col7 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -62,7 +62,8 @@ Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of
 - table section residual_error: 'Σ33' routed out of structural estimates ('Residual variability')
 - column 'bulk ess' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'tail ess' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
-- dropped duplicate Q27 ('EGFRCL/F', value '1.00') — already have one for this compound
+- column 'ȓ' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- dropped duplicate Q27 ('EGFRCL/F', value '0.407') — already have one for this compound
 - dropped unlinked row (NIL): 'BLACKCL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row10:col3', 'bcp70096-tbl-0003:row10:col5', 'bcp70096-tbl-0003:row10:col6', 'bcp70096-tbl-0003:row10:col7'])
 - dropped unlinked row (NIL): 'ASIANCL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row11:col3', 'bcp70096-tbl-0003:row11:col5', 'bcp70096-tbl-0003:row11:col6', 'bcp70096-tbl-0003:row11:col7'])
 - dropped unlinked row (NIL): 'FEMALECL/F' — extend the ontology if this is a real PK parameter (source ['bcp70096-tbl-0003:row12:col3', 'bcp70096-tbl-0003:row12:col5', 'bcp70096-tbl-0003:row12:col6', 'bcp70096-tbl-0003:row12:col7'])
@@ -147,8 +148,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 1 L/h | not captured | not captured | ['bcp70096-tbl-0003:row2:col3', 'bcp70096-tbl-0003:row2:col5', 'bcp70096-tbl-0003:row2:col6', 'bcp70096-tbl-0003:row2:col7'] |
-| C9_phys_window_Q82 | pass | volume within physiological range | 1 L | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 6.74 L/h | not captured | not captured | ['bcp70096-tbl-0003:row2:col3', 'bcp70096-tbl-0003:row2:col5', 'bcp70096-tbl-0003:row2:col6', 'bcp70096-tbl-0003:row2:col7'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 4.12 L | not captured | not captured | ['bcp70096-tbl-0003:row3:col3', 'bcp70096-tbl-0003:row3:col5', 'bcp70096-tbl-0003:row3:col6', 'bcp70096-tbl-0003:row3:col7'] |
 
 **Reviewer per-scenario checks:**
 
@@ -196,4 +197,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 18:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 19:12 UTC</sub>

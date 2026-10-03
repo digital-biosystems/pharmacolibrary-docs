@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Codeine_Thigpen2019_reference&quot;,&quot;label&quot;:&quot;Thigpen_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_codeine/Codeine_Thigpen2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# body temperature — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from keyword rules on the title and abstract — no LLM answer yet).">rat</span>
+# body temperature — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -10,11 +10,11 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from keyword rules on the title and abstract — no LLM answer yet).
+> **Species: rat.** This record comes from an animal study (rat), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM relevance screen, p(non-human) 1.00).
 
 ## What this record describes
 
-**As extracted:** Morphine (concentrations from the PK model of Anderson_2026) drives body temperature (in degrees C): direct sigmoid Emax (Hill) effect.
+**As extracted:** Morphine (concentrations from the PK model of Anderson_2026) drives body temperature: direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
@@ -22,7 +22,7 @@
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
 - **tier:** descriptive
-- **effect:** inhibition/proportional
+- **effect:** inhibition/unknown
 
 ## Citation
 Chew M et al., Precipitated withdrawal following codei…, European journal of pharmac… (2001)
@@ -31,8 +31,8 @@ Chew M et al., Precipitated withdrawal following codei…, European journal of p
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | EC50 | `Q321` · not captured | 556 +/- 121 | ng/ml | not captured | llm (not captured) | Chew_2001:pdv3 |
-| PD (effect) | n | `Q325` · not captured | 2.9 +/- 1.5 | not captured | not captured | llm (not captured) | Chew_2001:pdv3 |
+| PD (effect) | EC(50) | `Q321` · not captured | 556 | ng/ml | not captured | llm (not captured) | Chew_2001:pdv3 |
+| PD (effect) | n | `Q325` · not captured | 2.9 | not captured | not captured | llm (not captured) | Chew_2001:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

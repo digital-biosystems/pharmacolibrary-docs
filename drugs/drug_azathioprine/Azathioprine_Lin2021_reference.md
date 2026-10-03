@@ -5,7 +5,7 @@
 
 # azathioprine — `Azathioprine_Lin2021_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.143). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The record describes a one-compartment structure for azathioprine with the measured compound 6-thioguanine nucleotides, carrying parameters CL 11.6 L/h, V2 809 L, an allometric weight exponent of 0.625, a TPMT covariate effect of 0.515, and a θ MESA coefficient of 0.802. The rejection rests on an orphan compartment or unlinked metabolite: the measured 6-thioguanine nucleotide entity has no connection from the administered dose, so the clearance and volume values cannot be interpreted within the model. The second reader's disagreements concern only naming of the analyte (6-TGN versus 6-thioguanine nucleotides) and whether the θ MESA coefficient of 0.802 belongs in the record, not the structural defect. Extracted — 6-thioguanine nucleotides: CL 11.6 L/h, allometric_exponent 0.625, V2 809 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has azathioprine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which molecule was measured: this record has 6-thioguanine nucleotides, the second reading 6-TGN; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:15.297219+00:00) predates the upstream re-run (2026-09-30 15:43:10.774264+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:36:15.297219+00:00) predates the upstream re-run (2026-10-03 10:36:18.240294+00:00). Current validate status: `extracted`.
 
 > **Dose compound ≠ measured compound:** dosed `azathioprine`, measured `6-thioguanine nucleotides`.
 
@@ -34,17 +34,17 @@ Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharm
   ·  DOI: [10.1111/bcpt.13530](https://doi.org/10.1111/bcpt.13530)
 
 ## Model component
-<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="extracted" stale="true" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="azathioprine" model-id="Azathioprine_Lin2021_reference" status="extracted" stale="true" population="adult patients with inflammatory bowel disease" measured-compound="6-thioguanine nucleotides" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted, plus 1 covariate effect.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL p (L/h) | `Q22` · CL | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | 0.342 (None% RSE) |
+| CL p (L/h) | `Q351` · CLm/F | 11.6 | L/h | 3.222222222222222e-06 | [l] / [h] | not captured | exact (1.0) | tab_2:row5:col1, tab_2:row5:col2, tab_2:row5:col3, tab_2:row5:col4, tab_2:row5:col5 | — | 0.342 (None% RSE) |
 | tpmt | `Q900` · tpmt | 0.515 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_2:row8:col1, tab_2:row8:col2, tab_2:row8:col3, tab_2:row8:col4, tab_2:row8:col5 | — | not captured |
 | V p (L) | `Q61` · V | 809 | L | 0.809 | [l] | not captured | exact (1.0) | tab_2:row9:col1, tab_2:row9:col2, tab_2:row9:col3, tab_2:row9:col4, tab_2:row9:col5 | — | not captured |
 | θ BW | `Q900` · θ BW | 0.625 | not captured | not captured | not captured | not captured | not captured (not captured) | not captured | — | not captured |
@@ -65,9 +65,10 @@ Lin R et al., Population pharmacokinetics of azathiop…, Basic & clinical pharm
 - kept covariate coefficient θ BW=0.625 (covariate BW) — not an ontology parameter
 - kept covariate coefficient θ MESA=0.802 (covariate MESA) — not an ontology parameter
 - covariate level 'θ TPMT' → Q900:tpmt = 0.515 (linear_fractional on Q22)
+- metabolite 6-thioguanine nucleotides: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'V p (L)' Q63→Q61 for 6-thioguanine nucleotides — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=6-thioguanine nucleotides
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [1]
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=6-thioguanine nucleotides
+- template fit: none — only the metabolite is modelled — no parent compartment
 - row roles (LLM): model_class=compartmental; 9/9 row label(s) assigned, 10 linked by role
 - molar mass: no plausible PubChem entry for '6-thioguanine nucleotides' ('6-thioguanine nucleotides') — left in mass units
 - molar mass: none found for '6-thioguanine nucleotides' — its concentrations stay mass-only
@@ -83,24 +84,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.143 (2/14 fields) | 12 |
+| `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl p]` | 11.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[cl p]` | not captured | 11.6 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tpmt]` | 0.515 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl p]` | 11.6 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tpmt]` | not captured | 0.515 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v p]` | 809 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[tpmt]` | 0.515 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[v p]` | not captured | 809 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θ bw]` | 0.625 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v p]` | 809 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θ bw]` | not captured | 0.625 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[θ mesa]` | 0.802 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ bw]` | 0.625 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[θ mesa]` | not captured | 0.802 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | azathioprine | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[θ mesa]` | 0.802 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.primary_analyte` | 6-thioguanine nucleotides | 6-TGN | mismatch |
 
 </details>
 
@@ -117,12 +117,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 11.6 | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 11.6 L/h | not captured | not captured | ['tab_2:row5:col1', 'tab_2:row5:col2', 'tab_2:row5:col3', 'tab_2:row5:col4', 'tab_2:row5:col5'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 809 L | not captured | not captured | ['tab_2:row9:col1', 'tab_2:row9:col2', 'tab_2:row9:col3', 'tab_2:row9:col4', 'tab_2:row9:col5'] |
 
 <details class="legend">
@@ -158,4 +156,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 15:43 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:36 UTC</sub>

@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N02B&quot;,&quot;href&quot;:&quot;atc/N02B.md&quot;},{&quot;label&quot;:&quot;morpholine salicylate&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine_salicylate/&quot;},{&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PD platelet count&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine_salicylate/pd_Tsuji_2017_PLT.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT_2&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine_salicylate/pd_Tsuji_2017_PLT_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;pd_Tsuji_2017_PLT_2&quot;,&quot;label&quot;:&quot;Tsuji_2017 \u00b7 PLT&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_morpholine_salicylate/pd_Tsuji_2017_PLT_2.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # platelet count — PD  <span class="pk-badge pk-badge--red">rejected</span>
@@ -47,7 +47,7 @@ Tsuji Y et al., Population pharmacokinetics and pharmac…, British journal of c
 
 ## Exposure-response model
 
-`MorpholineSalicylate_Tsuji2017_PD_plt` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
+`MorpholineSalicylate_Tsuji2017_PD_plt_2` — turnover (indirect response type IV), `response = E0/(1 + Emax*frac)`
 
 | parameter | value (paper units) | SI |
 |---|---|---|
@@ -71,7 +71,7 @@ Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `schola
 |---|---|---|
 | `T0_driver` | fail | off-target driver — the curve belongs to that compound |
 | `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
-| `T1b_fmu` | skipped | template FMU / fmpy not available — advisory only |
+| `T1b_fmu` | skipped | FMU check not run: fmi2GetReal failed with status 3 (error). |
 | `T2_direction` | skipped | effect_direction 'stimulation' |
 | `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
 | `T4_defaults` | fail | a core parameter took a library default: E0 |
@@ -93,9 +93,9 @@ Advisory:
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-<dbs-fmusim paramsurl="drugs/drug_morpholine_salicylate/MorpholineSalicylate_Tsuji2017_PD_plt/MorpholineSalicylate_Tsuji2017_PD_plt_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_morpholine_salicylate/MorpholineSalicylate_Tsuji2017_PD_plt/MorpholineSalicylate_Tsuji2017_PD_plt_sim_controls.json"></dbs-fmusim>
+<dbs-fmusim paramsurl="drugs/drug_morpholine_salicylate/MorpholineSalicylate_Tsuji2017_PD_plt_2/MorpholineSalicylate_Tsuji2017_PD_plt_2_params.json" metaurl="assets/fmu/PD_IndirectTurnoverSweep.vr.json" wasmurl="assets/fmu/PD_IndirectTurnoverSweep.js" controlsurl="drugs/drug_morpholine_salicylate/MorpholineSalicylate_Tsuji2017_PD_plt_2/MorpholineSalicylate_Tsuji2017_PD_plt_2_sim_controls.json"></dbs-fmusim>
 
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_IndirectTurnoverSweep` · parameters `MorpholineSalicylate_Tsuji2017_PD_plt_params.json` · controls `MorpholineSalicylate_Tsuji2017_PD_plt_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PD_IndirectTurnoverSweep` · parameters `MorpholineSalicylate_Tsuji2017_PD_plt_2_params.json` · controls `MorpholineSalicylate_Tsuji2017_PD_plt_2_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
 
 <div class="pk-tab-end"></div>
 

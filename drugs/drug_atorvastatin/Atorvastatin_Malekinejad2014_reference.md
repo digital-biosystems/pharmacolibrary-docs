@@ -5,7 +5,7 @@
 
 # atorvastatin — `Atorvastatin_Malekinejad2014_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.909). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.056). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 The source reports only CL/F (767.7 ml/h/kg) and V/F (22267.2 ml/kg) for atorvastatin; ka and Tlag were left at library defaults because no values were extracted, and the invented ka was judged not acceptable. The model builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent, and used first-order depot input consistent with extravascular dosing. A second reader recorded no value for the volume of distribution, disagreeing with the extracted 22267.2 ml/kg. Extracted — atorvastatin: CL/F 768 ml/h/kg, V/F 2.23e+04 ml/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of V/F: this record has 22267.2, the second reading none. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q1: this record has 4.6, the second reading none; it also differs on 16 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:14.567521+00:00) predates the upstream re-run (2026-09-30 21:59:02.508054+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:14.567521+00:00) predates the upstream re-run (2026-10-03 16:04:34.871479+00:00). Current validate status: `extracted`.
 
 ## Citation
 Malekinejad H et al., Effects of silymarin on the pharmacokin…, European journal of drug me… (2014)
@@ -66,18 +66,34 @@ Malekinejad H et al., Effects of silymarin on the pharmacokin…, European journ
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.909 (10/11 fields) | 1 |
+| `gpt-oss:120b` | not confirmed | 0.056 (1/18 fields) | 17 |
 
-<details><summary>1 field(s) a reader read differently</summary>
+<details><summary>17 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q1]` | 4.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | not captured | 767.7 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q27]` | 767.7 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q310]` | not captured | 77.1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q32]` | 0.52 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q34]` | not captured | 4.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q3]` | not captured | 45.8 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q47]` | not captured | 6.98 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q53]` | 33.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q56]` | 3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 20.24 | 3 | mismatch |
+| `gpt-oss:120b` | `values[Q66]` | 45.8 | 59.4 | mismatch |
+| `gpt-oss:120b` | `values[Q75]` | not captured | 4.6 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q76]` | 22267.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q83]` | not captured | 3 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q88]` | 6.98 | not captured | only_one_extracted |
 
 </details>
 
@@ -154,4 +170,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 21:59 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 16:04 UTC</sub>

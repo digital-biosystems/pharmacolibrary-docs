@@ -5,7 +5,7 @@
 
 # codeine — `Codeine_Ashraf2024_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.824). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.421). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 The codeine model lists total clearance CL as 0.18 ml/h, which falls outside the physiological window and suggests the unit or scale was mis-extracted. The structure check also found an unreachable compartment or unlinked metabolite in the codeine–morphine–codeine-6-glucuronide metabolism network. A second reader further disputed the parameterization, calling it apparent rather than mechanistic, and reported different values for several parameters (e.g., 832, 59.6, 4.67, 0.019) that are absent from this record. Extracted — codeine: kabs 6.49, V1 231, fm 0.108, CL 0.18 ml/h.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of fcod: this record has none, the second reading 0.4556; it also differs on 2 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has codeine, the second reading unknown; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.526911+00:00) predates the upstream re-run (2026-09-30 15:09:15.457341+00:00). Current validate status: `extracted`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:17.526911+00:00) predates the upstream re-run (2026-10-03 10:03:26.514238+00:00). Current validate status: `extracted`.
 
 ## Citation
 Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacokinetics (2024)
@@ -43,7 +43,7 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | ka,cod | `Q49` · kabs | 6.49 | 1/h | 0.001802777777777778 | 1/h | not captured | llm_confirmed (0.6) | Tab2:row2:col2, Tab2:row2:col3, Tab2:row2:col4, Tab2:row2:col5 | — | not captured |
-| CLcod | `Q22` · CL | 59.6 | L/h | 1.6555555555555556e-05 | L/h | not captured | llm (0.6) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5 | — | not captured |
+| CLcod | `Q22` · CL | 59.6 | L/h | 1.6555555555555556e-05 | L/h | not captured | exact (1.0) | Tab2:row3:col2, Tab2:row3:col3, Tab2:row3:col4, Tab2:row3:col5 | — | not captured |
 | Vc,cod | `Q63` · V1 | 231.2 | L | 0.2312 | L | not captured | llm_confirmed (0.6) | Tab2:row4:col2, Tab2:row4:col3, Tab2:row4:col4, Tab2:row4:col5 | — | not captured |
 | CLmor | `Q22` · CL | 178.2 | L/h | 4.95e-05 | L/h | not captured | exact (1.0) | Tab2:row6:col2, Tab2:row6:col3, Tab2:row6:col4, Tab2:row6:col5 | — | not captured |
 | Vc,mor | `Q61` · V | 9.447 | L | 0.009446999999999999 | L | not captured | exact (1.0) | Tab2:row7:col2, Tab2:row7:col3, Tab2:row7:col4, Tab2:row7:col5 | — | not captured |
@@ -63,6 +63,7 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 **Interpretation flags:**
 - column 'sir results' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - column 'descriptiona' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
+- linked 'CLcod' as 'CL' → Q22 (CL) for  — compound marker removed
 - dropped unlinked row (NIL): 'Fcod' — extend the ontology if this is a real PK parameter (source ['Tab2:row5:col2', 'Tab2:row5:col3', 'Tab2:row5:col4', 'Tab2:row5:col5'])
 - dropped unlinked row (NIL): 'GENeff' — extend the ontology if this is a real PK parameter (source ['Tab2:row9:col2', 'Tab2:row9:col3', 'Tab2:row9:col4', 'Tab2:row9:col5'])
 - dropped duplicate Q49 ('ηka,cod', value '2.96') — already have one for this compound
@@ -77,7 +78,7 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 - implicit units: 'ka,cod' → 1/h (from the popPK convention: 'Absorption rate constants (ka) are first-order rate constants, conventionally expressed in 1/h. The value 6.49 is consis')
 - implicit units: 'CLcod' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 59.6 L/h is consistent with the high clearance of cod')
 - implicit units: 'Vc,cod' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 231.2 L is consistent with the large volume of di')
-- implicit units: 'CLmor' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 178.2 L/h is consistent with the high clearance of mo')
+- implicit units: 'CLmor' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 178.2 L/h is consistent with the high renal clearance')
 - implicit units: 'Vc,mor' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 9.447 L is consistent with the volume of distribu')
 - implicit units: 'CLC6G' → L/h (from the popPK convention: 'Total clearance (CL) is conventionally expressed in L/h. The value 4.28 L/h is consistent with the clearance of codeine-')
 - implicit units: 'Vc,C6G' → L (from the popPK convention: 'Volume of distribution (V) is conventionally expressed in L. The value 5.36 L is consistent with the volume of distribut')
@@ -106,20 +107,28 @@ Ashraf MW et al., Population Pharmacokinetic Quantificati…, Clinical pharmacok
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.824 (14/17 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.421 (8/19 fields) | 11 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[f]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.links` | [['codeine', 'morphine', 'metabolism'], ['codeine', 'codeine-6-glucuronide', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism']] | [['codeine', 'morphine', 'metabolism'], ['codeine', 'codeine-6-glucuronide', 'metabolism'], ['morphine', 'morphine-3-glucuronide', 'metabolism'], ['codeine-6-glucuronide', 'morphine-3-glucuronide', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[clcod]` | 59.6 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clcod]` | not captured | 59.6 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fcod]` | not captured | 0.4556 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ηfcod]` | not captured | 0.019 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka,cod]` | 6.49 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka,cod]` | not captured | 6.49 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc,cod]` | 231.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[vc,cod]` | not captured | 231.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ηrmor]` | not captured | 0.306 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | codeine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | codeine | unknown | mismatch |
 
 </details>
 
@@ -189,4 +198,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 15:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:03 UTC</sub>

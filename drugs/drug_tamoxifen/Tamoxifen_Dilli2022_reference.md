@@ -5,7 +5,7 @@
 
 # tamoxifen — `Tamoxifen_Dilli2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (primary re-run, agreement 0.8). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="a second model re-read this paper; the two readings agree on 0.0 of the compared fields. The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,9 @@
 
 The parameter labeled as tamoxifen's clearance carries the verbatim label 'creatinine clearance of &lt;' with value 50.0 ml/min, and the analyte-identity check expected tamoxifen (or a metabolite) but obtained this creatinine-clearance label, indicating a biomarker's kinetics were recorded as drug pharmacokinetics. The volume of distribution (724 L, tamoxifen, steady-state central compartment of the four-compartment model) is present, but a second reader left the volume and the metabolite links (tamoxifen to 4-hydroxytamoxifen and N-desmethyltamoxifen, 4-hydroxytamoxifen to endoxifen, N-desmethyltamoxifen to 4-hydroxy-N-desmethyltamoxifen, all via Kfm) unconfirmed, and disagreed on the dose compound and primary analyte. Extracted — tamoxifen: V 724 L, CL 50 ml/min.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tamoxifen’s volume of distribution (vd) during the steady state in the central compartment for the four-compartment model: this record has none, the second reading 724. That field does not shape the model.
-
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.435996+00:00) predates the upstream re-run (2026-09-30 17:04:28.773272+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:40:39.435996+00:00) predates the upstream re-run (2026-10-03 11:50:09.996534+00:00). Current validate status: `rejected`.
 
 ## Citation
 Dilli Batcha JS et al., Factors Influencing Pharmacokinetics of…, Biology (2022)
@@ -58,7 +56,7 @@ _No resolved parameters._
 - dropped unlinked row (NIL): 'Dahmane et al. [35]' — extend the ontology if this is a real PK parameter (source ['biology-12-00051-t003:row74:col4'])
 - table mostly unlinked (7/7 table-cell rows NIL) — likely the wrong table was located, not 0 genuinely-missing ontology parameter(s); route_to_review instead of building a model from the residual linked cell(s)
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=tamoxifen
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 7/7 row label(s) assigned, 0 linked by role
 - review gap-fill skipped: this record carries no value of its own, and a model assembled entirely from other papers is not this paper's model
@@ -74,27 +72,6 @@ _No resolved parameters._
 - LLM selected parameter table(s) 3
 
 ## Validation
-
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
-first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
-
-| second reader | verdict | agreement | disagreements |
-|---|---|---|---|
-| `gpt-oss:120b` | primary re-run | 0.8 (4/5 fields) | 1 |
-
-<details><summary>1 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[tamoxifen’s volume of distribution (vd) during the steady state in the central compartment for the four-compartment model]` | not captured | 724 | only_one_extracted |
-
-</details>
-
-<details class="legend">
-<summary>Cross-check legend</summary>
-<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
-</details>
-
 
 **Scholar closed-form checks:**
 
@@ -146,4 +123,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 17:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 11:50 UTC</sub>

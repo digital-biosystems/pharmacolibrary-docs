@@ -51,16 +51,38 @@ Tokuoka K et al., Theory-based analysis of clinical effic…, The journal of hea
 |---|---|---|
 | E0 | 0 | — |
 | Emax | 92.5 % | 0.925 1 |
-| EC50 | 4740 | — |
-| gamma | 1.11 | — |
+| EC50 | 3530 | — |
+| gamma | 0.97 | — |
 
 Closed-form check points (response, SI): `at_0` = 0, `at_EC50` = 0.4625, `at_inf` = 0.925
 
 Deviations:
 
 - `defaulted_parameters` — E0
-- `pd_binding_off_target_driver` — driver compound 'A Φ 1D · AUC Φ 1D' is not 'naratriptan' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
+- `pd_binding_off_target_driver` — driver compound 'A Φ 1B · AUC Φ 1B' is not 'naratriptan' nor one of its metabolites — the curve belongs to that compound's exposure (S12)
 - `pd_binding_exposure_unit_unresolved` — '' — the x axis is in the paper's unit, not SI
+
+## Review
+
+Verdict <span class="pk-badge pk-badge--red">rejected</span> · route to `scholar`
+
+| check | status | note |
+|---|---|---|
+| `T0_driver` | fail | off-target driver — the curve belongs to that compound |
+| `T1_closed_form` | pass | engineer's check points reproduced from the bound parameters |
+| `T1b_fmu` | pass | shared PD_SigmoidEmaxSweep FMU reproduces the reference points (worst 0.02%) |
+| `T2_direction` | pass | the response rises, as direct effect predicts |
+| `T3_plausibility` | pass | EC50, gamma, Imax and baseline in range |
+| `T4_defaults` | fail | a core parameter took a library default: E0 |
+
+Blocking:
+
+- off_target_driver: 'A Φ 1B · AUC Φ 1B' is not 'naratriptan' (S12)
+
+Advisory:
+
+- defaulted: E0 — a row the paper has and the record lacks
+- exposure unit not resolved to SI — the x axis is in the paper's unit
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

@@ -1,0 +1,60 @@
+{
+ "model_id": "Vinblastine_PiwnicaWorms1995_PD_tc_sestamibi",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 13.0,
+  "Emax": -72.0,
+  "exposure_per_s": 1.0,
+  "gamma": 1.1
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "13.0": -36.0
+ },
+ "stop_time": 130.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": true,
+   "display_unit": "pM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "fmol (mg of protein)-1 (nM,)-1",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": true,
+   "display_unit": "pM",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": "fmol (mg of protein)-1 (nM,)-1"
+ },
+ "x_axis": {
+  "display_unit": "pM",
+  "factor": 1.0,
+  "per_s": 1.0,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "fmol (mg of protein)-1 (nM,)-1",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

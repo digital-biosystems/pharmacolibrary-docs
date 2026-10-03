@@ -15,7 +15,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:09 | 5:57 | 0/0/0 | 1/0/0 | 0/0/0 | 183,889/3,831 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/9 | 12/0 | 0 |
+| 2026-10-03 18:40 | 5:30 | 0/0/0 | 1/0/0 | 0/0/0 | 187,423/3,800 | ollama / qwen3.8:27b-mtp-q8_0 | 12 | 3/9 | 12/0 | 0 |
 
 ## popPK records
 
@@ -45,28 +45,28 @@ _not available_
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Concepción-Zavaleta_2025 | irrelevant | 0 | 0 | The paper is a narrative review of anti-obesity drugs in MASLD and does not report original quantitative pharmacokinetic parameters for retatrutide. |
-| popPK | Doggrell_2023 | irrelevant | 1 | 0 | The paper is a review/expert opinion discussing a clinical trial but does not report original quantitative pharmacokinetic parameter values (CL, V, etc.) for retatrutide. |
-| popPK | Drucker_2024 | irrelevant | 0 | 0 | The paper is a narrative review discussing efficacy and safety, containing no original quantitative pharmacokinetic parameter values for retatrutide. |
+| popPK | Doggrell_2023 | irrelevant | 2 | 0 | The paper is a review/expert opinion that mentions PK supports dosing but does not report quantitative disposition parameters or model values. |
+| popPK | Drucker_2024 | irrelevant | 0 | 0 | The paper is a narrative review of GLP-1 medicines that mentions retatrutide only as an investigational molecule without reporting any quantitative pharmacokinetic parameters. |
 | PD | Drucker_2024 | not_relevant | 1 | 0 | The text is a narrative review discussing the development and safety of GLP-1 medicines, including retatrutide, but it does not report specific pharmacokinetic or pharmacodynamic data, models, or numeric parameters. |
-| popPK | Groothof_2025 | irrelevant | 0 | 0 | The paper is a perspective article on tolvaptan and ADPKD, discussing methodological biases in eGFR estimation, and does not report any pharmacokinetic parameters for retatrutide. |
+| popPK | Groothof_2025 | irrelevant | 0 | 0 | The paper is a perspective article discussing tolvaptan and ADPKD, with no mention of retatrutide or its pharmacokinetic parameters. |
 | PD | Groothof_2025 | not_relevant | 0 | 0 | The paper is a perspective article discussing methodological biases in clinical trials for tolvaptan and other drugs, and does not report any pharmacodynamic or exposure-response data for Retatrutide. |
-| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of pharmacodynamic efficacy (weight reduction) and safety, not a pharmacokinetic study, and does not report PK parameters like clearance or volume for retatrutide. |
-| popPK | Heerspink_2026 | irrelevant | 0 | 0 | The paper is a study design and baseline characteristics report for a clinical trial measuring kidney function (GFR) and does not report pharmacokinetic parameters (CL, V, ka) for retatrutide. |
-| popPK | Jastreboff_2023 | irrelevant | 0 | 0 | The paper is a Phase 2 clinical trial reporting efficacy (weight loss) and safety, with no pharmacokinetic parameters (CL, V, ka, etc.) reported in the evidence. |
-| popPK | Li_2026 | irrelevant | 0 | 0 | The study is a mechanistic multi-omic analysis of adipose tissue remodeling in mice and does not report pharmacokinetic parameters (CL, V, ka, etc.) for retatrutide. |
-| popPK | Mateus-Gomes_2026 | irrelevant | 0 | 0 | The paper is a review of metabolic inflammation and neuroinflammation in obesity, mentioning retatrutide only as a therapeutic class without providing any pharmacokinetic parameters. |
+| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of pharmacodynamic efficacy (weight reduction) and safety, not a pharmacokinetic study reporting disposition parameters like clearance or volume for retatrutide. |
+| popPK | Heerspink_2026 | irrelevant | 0 | 0 | The paper is a clinical trial design and baseline characteristics report for a kidney function study (measuring GFR via iohexol clearance), not a pharmacokinetic study of retatrutide itself, and contains no PK parameters for the drug. |
+| popPK | Jastreboff_2023 | irrelevant | 0 | 0 | The paper is a Phase 2 clinical trial focused on efficacy (weight loss) and safety, with no report of quantitative pharmacokinetic parameters such as clearance, volume, or half-life. |
+| popPK | Li_2026 | irrelevant | 0 | 0 | The study is a mechanistic multi-omic analysis of adipose tissue remodeling in mice and does not report any pharmacokinetic parameters (CL, V, ka, etc.) for retatrutide. |
+| popPK | Mateus-Gomes_2026 | irrelevant | 0 | 0 | The paper is a review of metabolic inflammation and neuroinflammation in obesity, mentioning retatrutide only as a therapeutic agent without providing any pharmacokinetic data. |
 | popPK | Min_2025 | irrelevant | 0 | 0 | The paper is a review of GLP-1 RAs (exenatide, liraglutide, dulaglutide, semaglutide) and tirzepatide, and does not contain any data or parameters for retatrutide. |
 | PD | Min_2025 | not_relevant | 0 | 0 | The paper is a review of pharmacokinetics and drug-drug interactions for GLP-1 RAs and tirzepatide; it does not mention retatrutide or report any pharmacodynamic (exposure-response) parameters for it. |
-| popPK | Naeem_2024 | irrelevant | 2 | 0 | This is a review/correspondence paper that discusses clinical trial outcomes (weight loss) and mentions a half-life of ~6 days, but it does not report quantitative population PK parameters (CL, V, Q, ka) or a compartmental model. |
-| popPK | Nong_2026 | irrelevant | 0 | 0 | This is a network meta-analysis of clinical efficacy and safety outcomes (weight loss, adverse events) for obesity drugs, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Naeem_2024 | irrelevant | 2 | 0 | This is a review/correspondence that discusses retatrutide's clinical efficacy and mentions a half-life of ~6 days, but it does not report quantitative disposition parameters (CL, V, Q, ka) or a compartmental/population-PK model. |
+| popPK | Nong_2026 | irrelevant | 0 | 0 | The paper is a network meta-analysis of clinical efficacy and safety outcomes (weight loss, adverse events) for obesity drugs, not a pharmacokinetic study, and contains no PK parameters for retatrutide. |
 | PD | Nong_2026 | not_relevant | 1 | 0 | The paper is a systematic review and network meta-analysis of clinical outcomes (benefits/harms) for obesity drugs, not a pharmacokinetic/pharmacodynamic modeling study; it does not report specific exposure-response or dose-response PD parameters (e.g., Emax, EC50) for retatrutide. |
-| popPK | Paceana_2026 | irrelevant | 0 | 0 | This is a narrative review discussing pathophysiology and clinical outcomes, containing no original quantitative pharmacokinetic parameter values for retatrutide. |
+| popPK | Paceana_2026 | irrelevant | 0 | 0 | This is a narrative review of pathophysiology and clinical outcomes for GLP-1 agonists in stroke, containing no original pharmacokinetic data or quantitative disposition parameters for retatrutide. |
 | popPK | Pallavi_2025 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy (HbA1c, weight) and safety, containing no pharmacokinetic parameters (CL, V, ka, etc.) for retatrutide. |
 | PD | Pallavi_2025 | not_relevant | 2 | 1 | The paper is a systematic review and meta-analysis that reports aggregate clinical outcomes (HbA1c, weight) and a qualitative dose-dependent trend, but it does not provide individual-level exposure data, concentration-effect curves, or specific pharmacodynamic parameters (e.g., Emax, EC50) for retatrutide. |
-| popPK | Roskoski_2026 | irrelevant | 0 | 0 | The paper is a general review of incretin receptor agonists that mentions retatrutide only as a drug in clinical trials, without reporting any quantitative pharmacokinetic parameters. |
+| popPK | Roskoski_2026 | irrelevant | 0 | 0 | The paper is a general review of incretin receptor agonists and does not report any quantitative pharmacokinetic parameters for retatrutide. |
 | popPK | Schifano_2026 | irrelevant | 0 | 0 | The paper is a review of neuropsychiatric outcomes associated with GLP-1 RAs and does not report any pharmacokinetic parameters for retatrutide. |
-| popPK | Tetelbaun_2024 | irrelevant | 2 | 0 | This is a narrative review that summarizes clinical trial findings without providing original quantitative PK parameter values (CL, V, Q, ka) or compartmental model details. |
-| popPK | Urva_2022 | irrelevant | 2 | 0 | The study reports only a qualitative description of dose proportionality and an approximate half-life (~6 days) without providing quantitative compartmental parameters (CL, V, Q, ka) or a population PK model. |
+| popPK | Tetelbaun_2024 | irrelevant | 2 | 0 | This is a narrative review that summarizes clinical trial findings without providing original quantitative PK parameter values (CL, V, Q, ka) or compartmental models. |
+| popPK | Urva_2022 | irrelevant | 2 | 0 | The study investigates LY3437943, not retatrutide, and only reports a half-life without compartmental parameters. |
 | popPK | Vishnoi_2026 | irrelevant | 0 | 0 | The paper is an in-silico molecular dynamics study focusing on binding enthalpies and receptor interactions, not pharmacokinetic disposition parameters. |
 | PD | Vishnoi_2026 | not_relevant | 0 | 0 | The paper is a computational molecular dynamics study reporting binding enthalpies and structural interactions, not a pharmacodynamic or exposure-response analysis with numeric PD parameters. |
 

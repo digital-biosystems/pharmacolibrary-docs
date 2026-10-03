@@ -19,7 +19,7 @@
 - **model family:** `emax`
 - **driver:** `dose_only`
 - **tier:** population
-- **effect:** inhibition/additive
+- **effect:** stimulation/additive
 
 ## Citation
 Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025)

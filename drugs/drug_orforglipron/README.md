@@ -16,7 +16,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-01 17:14 | 4:59 | 0/0/0 | 1/1/0 | 0/0/0 | 172,550/2,805 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/10 | 12/2 | 0 |
+| 2026-10-03 18:44 | 4:25 | 0/0/0 | 1/0/0 | 0/0/0 | 172,462/2,375 | ollama / qwen3.8:27b-mtp-q8_0 | 14 | 4/10 | 12/2 | 0 |
 
 ## popPK records
 
@@ -27,7 +27,6 @@ _not available_
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
 | <span class="pk-badge pk-badge--green">extracted</span> | [Guo_2025_Weight](drugs/drug_orforglipron/pd_Guo_2025_Weight.md) | weight reduction ← orforglipron · direct Emax (saturable) effect | — | Guo H et al., Comparative efficacy and safety of GLP-…, Obesity pillars (2025) | [10.1016/j.obpill.2025.100162](https://doi.org/10.1016/j.obpill.2025.100162) |
-| <span class="pk-badge pk-badge--red">rejected</span> | [Pratt_2023_2_QTcF](drugs/drug_orforglipron/pd_Pratt_2023_2_QTcF.md) | QTcF ← orforglipron · direct linear effect | — | Pratt E et al., Orforglipron (LY3502970), a novel, oral…, Diabetes, obesity & metabol… (2023) | [10.1111/dom.15150](https://doi.org/10.1111/dom.15150) |
 
 ## ADME sites
 
@@ -55,29 +54,29 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Emara_2026 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy and safety outcomes (weight, HbA1c) and does not report pharmacokinetic parameters such as clearance or volume. |
+| popPK | Emara_2026 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy and safety outcomes (weight, HbA1c) and does not report pharmacokinetic parameters. |
 | PD | Emara_2026 | not_relevant | 3 | 2 | The paper is a meta-analysis reporting pooled mean differences for dose subgroups (dose-response trend) but does not provide individual-level concentration-effect data, PK/PD modeling, or specific PD parameters like Emax or EC50. |
-| popPK | Frias_2023 | irrelevant | 0 | 0 | The paper is a Phase 2 efficacy and safety study reporting HbA1c and body weight changes, with no quantitative pharmacokinetic parameters (CL, V, ka, etc.) provided. |
-| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of pharmacodynamic efficacy (weight reduction) and safety, not a pharmacokinetic study, and does not report PK parameters like clearance or volume for orforglipron. |
+| popPK | Frias_2023 | irrelevant | 0 | 0 | The paper is a Phase 2 efficacy and safety trial reporting HbA1c and body weight changes, with no quantitative pharmacokinetic parameters (CL, V, ka, etc.) provided. |
+| popPK | Guo_2025 | irrelevant | 0 | 0 | The paper is a model-based meta-analysis of pharmacodynamic efficacy (weight reduction) for GLP-1 receptor agonists, not a pharmacokinetic study reporting disposition parameters (CL, V, ka) for orforglipron. |
 | popPK | Hageen_2026 | irrelevant | 0 | 0 | The paper is a network meta-analysis of clinical efficacy outcomes (weight and glycemic control) and does not report pharmacokinetic parameters. |
 | PD | Hageen_2026 | not_relevant | 3 | 2 | The paper is a network meta-analysis reporting dose-response trends (mean differences and odds ratios) across discrete doses, but it does not provide a pharmacodynamic model, concentration-effect relationship, or specific PD parameters like Emax or EC50. |
-| popPK | Hageen_2026_2 | irrelevant | 0 | 0 | The paper is a network meta-analysis of gastrointestinal and hepatic safety outcomes (adverse events and enzyme levels), not a pharmacokinetic study, and reports no PK parameters. |
+| popPK | Hageen_2026_2 | irrelevant | 0 | 0 | The paper is a network meta-analysis of gastrointestinal and hepatic safety outcomes (adverse events and enzyme levels), not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PD | Hageen_2026_2 | not_relevant | 3 | 2 | The paper is a network meta-analysis reporting dose-response trends for adverse events and enzyme changes (ORs/MDs) but does not provide pharmacodynamic parameters (Emax, EC50) or concentration-effect relationships. |
 | popPK | Ismaiel_2025 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of gastrointestinal adverse events, not a pharmacokinetic study, and contains no PK parameters for orforglipron. |
 | PD | Ismaiel_2025 | not_relevant | 1 | 0 | The paper is a systematic review and network meta-analysis of adverse event risks (relative risks) and does not report pharmacokinetic or pharmacodynamic modeling, concentration-effect curves, or numeric PD parameters like Emax or EC50. |
 | popPK | Jamal_2026 | irrelevant | 0 | 0 | The paper is a meta-analysis of efficacy and safety outcomes (HbA1c, weight, BP) and does not report pharmacokinetic parameters. |
 | PD | Jamal_2026 | not_relevant | 2 | 1 | The paper is a meta-analysis reporting pooled mean differences for dose groups, but it does not provide a pharmacodynamic model, concentration-effect relationship, or specific numeric PD parameters (e.g., Emax, EC50) for orforglipron. |
-| popPK | Li_2026 | irrelevant | 2 | 0 | The paper focuses on the discovery of new analogs (17-P1, 24-P1) using orforglipron as a reference, and does not report quantitative compartmental PK parameters (CL, V, Q, ka) for orforglipron itself. |
+| popPK | Li_2026 | irrelevant | 2 | 0 | The paper focuses on the discovery of new analogs (17-P1 and 24-P1) using orforglipron as a lead/comparator, and does not report quantitative compartmental PK parameters (CL, V, Q, ka) for orforglipron itself. |
 | PD | Li_2026 | not_relevant | 3 | 2 | The paper reports in vitro potency (EC50) and qualitative in vivo efficacy (glucose lowering) for analogs, but does not provide an exposure-response or dose-response analysis with numeric PD parameters for Orforglipron itself. |
 | PGx | Malluhi_2026 | not_relevant | 0 | 0 | The paper is a narrative review on ocular safety and pharmacokinetic exposure of GLP-1 RAs, and it does not report any pharmacogenomic effects on PK or PD parameters for orforglipron. |
 | PGx | Morse_2026 | not_relevant | 0 | 0 | The paper reports drug-drug interactions (DDIs) involving enzyme/transporter precipitants, not pharmacogenomic effects (gene variants/genotypes). |
-| popPK | Niazi_2026 | irrelevant | 0 | 0 | The paper is a review of oral peptide delivery that mentions orforglipron only as a small molecule GLP-1 agonist in the context of competitive landscape, without providing any specific pharmacokinetic parameters for it. |
+| popPK | Niazi_2026 | irrelevant | 0 | 0 | The paper is a review of oral peptide delivery that mentions orforglipron only as a small molecule GLP-1 agonist in the context of competitive landscape, without providing any quantitative PK parameters for it. |
 | PD | Niazi_2026 | not_relevant | 1 | 0 | The paper is a review on oral peptide delivery strategies and mentions orforglipron only as an emerging small molecule GLP-1 agonist without providing any specific pharmacodynamic data, exposure-response analysis, or numeric PD parameters for it. |
 | popPK | Nong_2026 | irrelevant | 0 | 0 | This is a network meta-analysis of clinical efficacy and safety outcomes (weight loss, adverse events) for obesity drugs, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
 | PD | Nong_2026 | not_relevant | 1 | 0 | The paper is a systematic review and network meta-analysis of clinical outcomes (weight loss) for obesity drugs, not a pharmacokinetic/pharmacodynamic modeling study; it does not report exposure-response relationships or numeric PD parameters (e.g., Emax, EC50) for orforglipron. |
 | PD | Pratt_2023 | not_relevant | 3 | 1 | The abstract reports qualitative dose-dependent effects (weight loss, glucose reduction) but does not provide numeric PD parameters (Emax, EC50) or a formal concentration-effect model. |
-| popPK | Pratt_2023_2 | relevant | 8 | 4 | The study reports non-compartmental PK parameters (tmax, half-life) for orforglipron in humans, but detailed numeric values for Cmax and AUC are in Table S1 which is not provided. |
-| popPK | Tantoush_2026 | irrelevant | 0 | 0 | This is a systematic review and network meta-analysis of efficacy and safety outcomes (HbA1c, weight, adverse events), not a pharmacokinetic study reporting disposition parameters. |
+| popPK | Pratt_2023_2 | relevant | 8 | 4 | The study reports non-compartmental PK parameters (tmax, half-life) for orforglipron in humans, but detailed numeric values for Cmax and AUC are referenced in Table S1 which is not included in the evidence. |
+| popPK | Tantoush_2026 | irrelevant | 0 | 0 | The paper is a systematic review and network meta-analysis of efficacy and safety outcomes (HbA1c, weight, adverse events) and does not report pharmacokinetic parameters. |
 | PD | Tantoush_2026 | not_relevant | 3 | 2 | The paper is a network meta-analysis reporting mean differences in clinical outcomes (HbA1c, weight) across fixed doses, but it does not provide a pharmacodynamic model, concentration-effect curve, or specific PD parameters (Emax, EC50) for orforglipron. |
 
 ---

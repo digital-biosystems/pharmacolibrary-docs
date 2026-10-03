@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Zhang2025_parameters_for_healthy_control_zhang_et`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.375). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 Kic has no unit. Without a unit the value cannot be converted, so the model cannot use it. The clearance plausibility check could not be computed: the check had no reference to compare the reported total clearance of 1171.0 mL/min against, so the value is unverified rather than shown to be wrong. A second reader additionally read a further metabolic step from nucleoside monophosphate to GS-443902 and two parameters (2.99 and 12.53) that this record lacks, so the extracted model structure and parameters are incomplete relative to that reading. Extracted — remdesivir: kic 2.44 Zhang et al., 2020, CL 1.17e+03 mL/min, V 93 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has remdesivir → intermediate metabolites (metabolism); intermediate metabolites → nucleoside monophosphate (metabolism), the second reading remdesivir → intermediate metabolites (im) (metabolism); intermediate metabolites (im) → nucleoside monophosphate (nuc) (metabolism); nucleoside monophosphate (nuc) → gs-443902 (metabolism); it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.569677+00:00) predates the upstream re-run (2026-10-01 15:47:14.766632+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:31.569677+00:00) predates the upstream re-run (2026-10-03 10:49:04.604809+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Zhang S et al., Pharmacokinetic simulations for remdesi…, Frontiers in pharmacology (2025)
@@ -78,7 +78,7 @@ Zhang S et al., Pharmacokinetic simulations for remdesi…, Frontiers in pharmac
 - implicit units: 'CLC,RDV' → L/h (from the popPK convention: 'The paper does not state a unit for CLC,RDV. CLC,RDV is a total clearance (CL). In population PK, clearances are convent')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=remdesivir
 - topology: 2 first-order transfer(s) across 3 compounds → general_linear
-- template fit: none — a metabolite is formed from another metabolite (a chain)
+- template fit: none — only the metabolite is modelled — no parent compartment
 - population split: 'parameters for healthy control (zhang et al., 2020)' subgroup of Zhang_2025 (paper reports 3 populations: parameters for a renal-impaired patient with egfr = 0 (sörgel et al., 2021), parameters for healthy control (zhang et al., 2020), parameters for severe renal-impaired patients (zhang et al., 2020))
 - row roles (LLM): model_class=compartmental; 10/10 row label(s) assigned, 24 linked by role; re-tagged parent→intermediate metabolites ×9, parent→nucleoside monophosphate ×9
 - molar mass: no plausible PubChem entry for 'intermediate metabolites' ('Remdesivir Alanine Metabolite (Ala-Met; GS-704277)') — left in mass units
@@ -100,15 +100,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.75 (9/12 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.375 (6/16 fields) | 10 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [['remdesivir', 'intermediate metabolites', 'metabolism'], ['intermediate metabolites', 'nucleoside monophosphate', 'metabolism']] | [['remdesivir', 'intermediate metabolites (im)', 'metabolism'], ['intermediate metabolites (im)', 'nucleoside monophosphate (nuc)', 'metabolism'], ['nucleoside monophosphate (nuc)', 'gs-443902', 'metabolism']] | mismatch |
 | `gpt-oss:120b` | `parameters[clc,rdv].parameter_id` | Q22 | Q26 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | remdesivir | unknown | mismatch |
+| `gpt-oss:120b` | `parameters[kp,nuc]` | 2.44 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kp,nuc]` | not captured | 2.44 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[qim]` | 12.53 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[qim]` | not captured | 12.53 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[qnuc]` | 0.039 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[qnuc]` | not captured | 0.039 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q370_im]` | 0.31 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q370_im]` | not captured | 0.31 | only_one_extracted |
 
 </details>
 
@@ -170,4 +177,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:49 UTC</sub>

@@ -35,10 +35,10 @@ Gao W et al., Target-mediated pharmacokinetic and pha…, Drug metabolism and di
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | k_outI | `Q328` · not captured | 0.483 | 1/min | not captured | llm (not captured) | Gao_2012:pdv3 |
-| PD (effect) | S_max | `Q320` · not captured | 4.67 | not captured | not captured | llm (not captured) | Gao_2012:pdv3 |
-| PD (effect) | k_1 | `Q321` · not captured | 0.826 | nM | not captured | llm (not captured) | Gao_2012:pdv3 |
-| — | k_2 | `Q100` · not captured | 0.0153 | nM^-1 | not captured | nil (not captured) | Gao_2012:pdv3 |
+| PD (effect) | Insulin elimination rate constant | `Q328` · not captured | 0.483 | 1/min | not captured | llm (not captured) | Gao_2012:pdv3 |
+| PD (effect) | Maximal response factor | `Q320` · not captured | 4.67 | not captured | not captured | llm (not captured) | Gao_2012:pdv3 |
+| PD (effect) | First receptor binding constant | `Q321` · not captured | 0.826 | nM | not captured | llm (not captured) | Gao_2012:pdv3 |
+| — | Second receptor binding constant | `Q100` · not captured | 0.0153 | nM-1 | not captured | nil (not captured) | Gao_2012:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

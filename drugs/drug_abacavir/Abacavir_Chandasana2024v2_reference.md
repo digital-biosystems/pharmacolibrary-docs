@@ -5,7 +5,7 @@
 
 # abacavir — `Abacavir_Chandasana2024v2_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.667). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.893). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 Kabs and V/F have no unit; without a unit the values cannot be converted, so the model cannot use them. The record also lists conflicting weight-exponent values for the same covariate effects (0.794, 0.455, 0.758 for clearance; 0.556 versus 0.698 for volume), and a second reader assigned 0.698 to the volume exponent while this record gives 0.556. The weight-based consistency check could not compute a comparison (ratio None), so it is inconclusive rather than a demonstrated fault. The dose compound is also disputed: abacavir versus abacavir/dolutegravir/lamivudine. Extracted — abacavir: CL/F 16.3 L/h, V2/F 10.1 l, kabs 2.08, Q/F 1.69 l/h, V3/F 23 l, Fab 1.62, V1/F 23.1 l, V/F 32.7, … (+1).
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir, the second reading abacavir/dolutegravir/lamivudine; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has abacavir, the second reading abacavir/dolutegravir/lamivudine fixed-dose combination; it also differs on 2 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:50.746810+00:00) predates the upstream re-run (2026-09-30 16:21:24.932298+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:50.746810+00:00) predates the upstream re-run (2026-10-03 11:11:55.355617+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious diseases and the… (2024)
@@ -57,7 +57,7 @@ Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious disea
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.455 | not captured | not captured | not captured | 4.15 | not captured (not captured) | Chandasana_2024_2_table_2:row7:col1 | — | not captured |
 | theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.556 | not captured | not captured | not captured | 3.87 | not captured (not captured) | Chandasana_2024_2_table_2:row8:col1 | — | not captured |
 | theta_cl_f_wt_power | `Q900` · theta_cl_f_wt_power | 0.758 | not captured | not captured | not captured | 7.07 | not captured (not captured) | Chandasana_2024_2_table_3:row6:col1 | — | not captured |
-| theta_q353_wt_power | `Q900` · theta_q353_wt_power | 0.677 | not captured | not captured | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
+| theta_q76_wt_power | `Q900` · theta_q76_wt_power | 0.677 | not captured | not captured | not captured | 8.98 | not captured (not captured) | Chandasana_2024_2_table_3:row7:col1 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -86,7 +86,6 @@ Chandasana H et al., Population Pharmacokinetic Modeling of…, Infectious disea
 - dropped PD-category row 'Hill coefficient related to the slope of the enzyme maturation process' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Chandasana_2024_2_table_2:row11:col1'])
 - covariate effect for Q61 has no base parameter row (kept as unattached equation-variable)
 - covariate effect for Q76 has no base parameter row (kept as unattached equation-variable)
-- covariate effect for Q353 has no base parameter row (kept as unattached equation-variable)
 - implicit units: 'Absorption rate constant, KA [h−1]' → 1/h (from the popPK convention: 'The parameter is an absorption rate constant (KA). In population pharmacokinetics, first-order rate constants are conven')
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=abacavir
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
@@ -104,22 +103,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.667 (20/30 fields) | 10 |
+| `gpt-oss:120b` | not confirmed | 0.893 (25/28 fields) | 3 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>3 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[absorption rate constant, ka [h-1]].value` | 2.08 | 0.85 | mismatch |
-| `gpt-oss:120b` | `parameters[apparent central volume of distribution, v/f [l]].value` | 23.1 | 13.6 | mismatch |
+| `gpt-oss:120b` | `parameters[absolute bioavailability (f1) solution po]` | not captured | 0.496 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[f, tablet arrow pk substudy part 2].parameter_id` | Q40 | Q87 | mismatch |
-| `gpt-oss:120b` | `parameters[f, without regard to food fct]` | not captured | 1.10 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[maturation half time, tm50 [pma weeks]]` | not captured | 52.2 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q353_wt_power]` | 0.677 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q61_wt_power]` | 0.698 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_q76_wt_power].rse_percent` | 3.87 | not captured | mismatch |
-| `gpt-oss:120b` | `parameters[theta_q76_wt_power].value` | 0.556 | 0.698 | mismatch |
-| `gpt-oss:120b` | `screen.dose_compound` | abacavir | abacavir/dolutegravir/lamivudine | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | abacavir | abacavir/dolutegravir/lamivudine fixed-dose combination | mismatch |
 
 </details>
 
@@ -183,4 +175,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-30 16:21 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 11:11 UTC</sub>

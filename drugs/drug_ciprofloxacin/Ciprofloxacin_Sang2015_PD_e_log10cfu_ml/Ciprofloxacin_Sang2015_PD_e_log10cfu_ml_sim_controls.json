@@ -43,9 +43,9 @@
   "label": "Exposure range",
   "unit": "h",
   "scale": 1.0,
-  "min": 810.0,
-  "max": 40500.0,
-  "step": 81.0,
+  "min": 350.0,
+  "max": 17500.0,
+  "step": 35.0,
   "sim": true
  }
 ]

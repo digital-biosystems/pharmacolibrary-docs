@@ -18,7 +18,7 @@
 - **paper:** `Wilding_2016`
 - **model family:** `sigmoid_emax`
 - **driver:** `cited_pk`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** inhibition/additive
 
 ## Citation

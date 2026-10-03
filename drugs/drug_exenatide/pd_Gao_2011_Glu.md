@@ -31,10 +31,9 @@ Gao W et al., Pharmacokinetic and pharmacodynamic mod…, The Journal of pharmac
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | koutG | `Q328` · not captured | 0.0224 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | Glu0 | `Q324` · not captured | 330, 280, 245, 197, 262 | mg/dl | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | SRC | `Q335` · not captured | 0.112 | l/nM | not captured | llm (not captured) | Gao_2011:pdv3 |
-| PD (effect) | SIns | `Q335` · not captured | 0.708 | ml/ng | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Glucose output rate constant | `Q328` · not captured | 0.0224 | min-1 | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Basal glucose | `Q324` · not captured | 330, 280, 245, 197, 262 | mg/dl | not captured | llm (not captured) | Gao_2011:pdv3 |
+| PD (effect) | Stimulation factor on glucose production | `Q335` · not captured | 0.112 | l/nM | not captured | llm (not captured) | Gao_2011:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

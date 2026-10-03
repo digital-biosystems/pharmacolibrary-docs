@@ -19,7 +19,7 @@
 - **paper:** `Wang_2022`
 - **model family:** `emax`
 - **driver:** `dose_only`
-- **tier:** descriptive
+- **tier:** population
 - **effect:** stimulation/unknown
 
 ## Citation
@@ -29,7 +29,7 @@ Wang X et al., Associations between statins and advers…, Frontiers in cardiova
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | ORmax | `Q320` · not captured | 19.72 (5.54 to 164.95) | not captured | not captured | llm (not captured) | Wang_2022:pdv3 |
+| PD (effect) | OR max | `Q320` · not captured | 19.72 | not captured | not captured | llm (not captured) | Wang_2022:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

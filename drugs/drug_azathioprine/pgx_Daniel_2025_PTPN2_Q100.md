@@ -2,7 +2,7 @@
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Azathioprine_elYazigi1993_reference&quot;,&quot;label&quot;:&quot;el-Yazigi_1993_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_azathioprine/Azathioprine_elYazigi1993_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# PTPN2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (?, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
+# PTPN2 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,7 +22,7 @@
 
 ### Notes from the extraction
 
-- SNP→adverse drug reaction association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
+- SNP→toxicity association (adverse outcome, not a PK/PD parameter effect) — risk_association, not a covariate θ
 - genotype→phenotype map unresolved (no paper/CPIC/genotype mapping)
 - reference category (θ=0) not captured — must not be inferred
 
@@ -31,20 +31,19 @@ Daniel LL et al., PTPN2 and Leukopenia in Individuals Wit…, Clinical and trans
   ·  DOI: [10.1111/cts.70220](https://doi.org/10.1111/cts.70220)
 
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | secondary_empty | 0.25 (1/4 fields) | 3 |
+| `gpt-oss:120b` | not confirmed | 0.5 (2/4 fields) | 2 |
 
-<details><summary>3 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `applies_to` | pd | not captured | mismatch |
-| `gpt-oss:120b` | `mechanism` | target | not captured | mismatch |
-| `gpt-oss:120b` | `target_parameter_id` | Q100 | not captured | mismatch |
+| `gpt-oss:120b` | `applies_to` | pd | unknown | mismatch |
+| `gpt-oss:120b` | `mechanism` | target | unknown | mismatch |
 
 </details>
 

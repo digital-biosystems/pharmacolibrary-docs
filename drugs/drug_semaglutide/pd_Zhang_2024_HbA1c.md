@@ -19,8 +19,8 @@
 - **paper:** `Zhang_2024`
 - **model family:** `emax`
 - **driver:** `dose_only`
-- **tier:** descriptive
-- **effect:** inhibition/unknown
+- **tier:** population
+- **effect:** inhibition/additive
 
 ## Citation
 Zhang K et al., Time-Efficacy Relationship of Semagluti…, Clinical pharmacokinetics (2024)
@@ -29,8 +29,8 @@ Zhang K et al., Time-Efficacy Relationship of Semagluti…, Clinical pharmacokin
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax | `Q320` · not captured | -1.58 | % | not captured | llm (not captured) | Zhang_2024:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | -1.87 | % | not captured | llm (not captured) | Zhang_2024:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -1.58 | % | not captured | direction (not captured) | Zhang_2024:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -1.87 | % | not captured | direction (not captured) | Zhang_2024:pdv3 |
 | — | rebound rate | `Q100` · not captured | 0.018 | not captured | not captured | nil (not captured) | Zhang_2024:pdv3 |
 
 <details class="legend">

@@ -1,0 +1,60 @@
+{
+ "model_id": "Warfarin_Hirai2024_PD_pt_inr",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 0.0,
+  "EC50": 2.94444444444e-10,
+  "Emax": -1.0,
+  "exposure_per_s": 2.77777777778e-10,
+  "gamma": 1.18
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 0.0,
+  "2.9444444444444443e-10": -0.5
+ },
+ "stop_time": 11.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/h",
+   "factor": 2.7777777777777777e-10,
+   "si_unit": "kg/s"
+  },
+  "Emax": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/h",
+   "factor": 2.7777777777777777e-10,
+   "si_unit": "kg/s"
+  },
+  "gamma": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "mg/h",
+  "factor": 2.7777777777777777e-10,
+  "per_s": 2.77777777778e-10,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "",
+  "factor": 1.0,
+  "label": "response"
+ }
+}

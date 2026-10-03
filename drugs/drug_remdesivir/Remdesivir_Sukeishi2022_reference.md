@@ -5,7 +5,7 @@
 
 # remdesivir — `Remdesivir_Sukeishi2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.556). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.3). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 No clearance, volume or rate constant of the model is reported in it. No parameter values were extracted.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of 1485: this record has none, the second reading 1485; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has remdesivir, the second reading unknown; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:31.525776+00:00) predates the upstream re-run (2026-10-01 15:46:52.127377+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:31.525776+00:00) predates the upstream re-run (2026-10-03 10:48:43.348787+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `remdesivir`, measured `GS-441524`.
 
@@ -34,12 +34,12 @@ Sukeishi A et al., Population pharmacokinetic modeling of…, CPT: pharmacometri
   ·  DOI: [10.1002/psp4.12736](https://doi.org/10.1002/psp4.12736)
 
 ## Model component
-<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="true" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="remdesivir" model-id="Remdesivir_Sukeishi2022_reference" status="rejected" stale="true" population="Japanese adults with COVID-19 and renal dysfunction" measured-compound="GS-441524" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 0 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -49,7 +49,7 @@ _No resolved parameters._
 ### Unresolved rows _(no Q-code or no value — not parameters)_
 | label (paper) | Q-code | value | link |
 |---|---|---|---|
-| CL (L/h) = θ CL × (eGFRnon‐indexed/74.7) θ eGFRnon−idexed,CL | Q22 | not captured | exact |
+| CL (L/h) = θ CL × (eGFRnon‐indexed/74.7) θ eGFRnon−idexed,CL | Q351 | not captured | exact |
 | V d (L) = θV × (1 + θAge ≥ 75,V × AGE) | Q61 | not captured | exact |
 
 ## Departures & gaps
@@ -66,10 +66,11 @@ _No resolved parameters._
 - unit_dimension_unknown: 'N = 500' (V1)
 - dropped duplicate Q63 ('θV (L)', value '382') — already have one for this compound
 - dropped unlinked row (NIL): 'θ Age ≥ 75,V' — extend the ontology if this is a real PK parameter (source ['psp412736-tbl-0002:row8:col1', 'psp412736-tbl-0002:row8:col2', 'psp412736-tbl-0002:row8:col4'])
+- metabolite gs-441524: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - metabolite volume: 'V d (L) = θV × (1 + θAge ≥ 75,V × AGE)' Q63→Q61 for GS-441524 — it is 1-compartment, so its central volume is its only volume
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=GS-441524
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=GS-441524
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- template fit: PK_3M_9C — formed from central; parent 0, metabolites [0]
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
 - row roles (LLM): model_class=compartmental; 11/11 row label(s) assigned, 18 linked by role
 - review gap-fill skipped: this record measures 'GS-441524', not remdesivir — the review values are the parent's
@@ -85,16 +86,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.556 (5/9 fields) | 4 |
+| `gpt-oss:120b` | not confirmed | 0.3 (3/10 fields) | 7 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
 | `gpt-oss:120b` | `parameters[1485]` | not captured | 1485 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[cl (l/h) = θ cl × (egfrnon‐indexed/74.7) θ egfrnon-idexed]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl (l/h) = θ cl × (egfrnon‐indexed/74.7) θ egfrnon-idexed].parameter_id` | Q351 | Q22 | mismatch |
 | `gpt-oss:120b` | `parameters[v d (l) = θv ×].parameter_id` | Q61 | Q63 | mismatch |
-| `gpt-oss:120b` | `parameters[θ age ≥ 75,v]` | not captured | -0.429 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θ age ≥ 75,v]` | not captured | -0.427 | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | remdesivir | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | GS-441524 | unknown | mismatch |
 
 </details>
 
@@ -110,7 +114,8 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | fail | not captured | 0 | not captured | not captured | not captured |
 | C0b_disposition_core | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | fail | [length] ** 3 | CL | not captured | not captured | ['psp412736-tbl-0002:row3:col1', 'psp412736-tbl-0002:row3:col2', 'psp412736-tbl-0002:row3:col3', 'psp412736-tbl-0002:row3:col4', 'psp412736-tbl-0002:row3:col5'] |
+| C5_dimension_Q351 | fail | [length] ** 3 | CL | not captured | not captured | ['psp412736-tbl-0002:row3:col1', 'psp412736-tbl-0002:row3:col2', 'psp412736-tbl-0002:row3:col3', 'psp412736-tbl-0002:row3:col4', 'psp412736-tbl-0002:row3:col5'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 
 <details class="legend">
@@ -136,4 +141,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 15:46 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 10:48 UTC</sub>

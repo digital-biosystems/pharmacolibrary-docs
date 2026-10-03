@@ -5,18 +5,18 @@
   "response"
  ],
  "parameters": {
-  "E0": -5.69,
-  "EC50": 2888136.0,
-  "Emax": -2.91,
+  "E0": -5.62,
+  "EC50": 1254636.0,
+  "Emax": -2.35,
   "exposure_per_s": 3600.0,
-  "gamma": 2.72
+  "gamma": 2.85
  },
  "reference_peaks": {},
  "reference_points": {
-  "0": -5.69,
-  "2888136.0": -7.1450000000000005
+  "0": -5.62,
+  "1254636.0": -6.795
  },
- "stop_time": 8100.0,
+ "stop_time": 3500.0,
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
  "units": {

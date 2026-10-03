@@ -33,9 +33,9 @@
   "label": "Exposure range",
   "unit": "ng/mL",
   "scale": 1.0,
-  "min": 7.8,
-  "max": 390.0,
-  "step": 0.78,
+  "min": 8.2,
+  "max": 410.0,
+  "step": 0.82,
   "sim": true
  }
 ]

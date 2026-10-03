@@ -1,0 +1,60 @@
+{
+ "model_id": "Omeprazole_Kirchheiner2009_PD_ph",
+ "note": "Values for the shared PD_SigmoidEmaxSweep.fmu. A sweep is a static map: simulated time is the exposure (exposure = exposure_per_s * time), so plot `response` against `exposure`, not time. reference_points are the record's own algebra at exposure 0, EC50 and the end of the sweep.",
+ "observables": [
+  "response"
+ ],
+ "parameters": {
+  "E0": 3.06,
+  "EC50": 6.27314814815e-10,
+  "Emax": 1.2456e-08,
+  "exposure_per_s": 1.15740740741e-11,
+  "gamma": 1.0
+ },
+ "reference_peaks": {},
+ "reference_points": {
+  "0": 3.06,
+  "6.273148148148149e-10": 3.060000006228
+ },
+ "stop_time": 550.0,
+ "template": "PD_SigmoidEmaxSweep",
+ "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "units": {
+  "E0": {
+   "display_only": true,
+   "display_unit": "",
+   "factor": 1.0,
+   "si_unit": "1"
+  },
+  "EC50": {
+   "display_only": false,
+   "display_unit": "mg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "kg/s"
+  },
+  "Emax": {
+   "display_only": false,
+   "display_unit": "pH",
+   "factor": 3.6e-09,
+   "si_unit": "s"
+  },
+  "exposure": {
+   "display_only": false,
+   "display_unit": "mg/day",
+   "factor": 1.1574074074074074e-11,
+   "si_unit": "kg/s"
+  },
+  "response_unit": ""
+ },
+ "x_axis": {
+  "display_unit": "mg/day",
+  "factor": 1.1574074074074074e-11,
+  "per_s": 1.15740740741e-11,
+  "variable": "exposure"
+ },
+ "y_axis": {
+  "display_unit": "pH",
+  "factor": 3.6e-09,
+  "label": "response"
+ }
+}

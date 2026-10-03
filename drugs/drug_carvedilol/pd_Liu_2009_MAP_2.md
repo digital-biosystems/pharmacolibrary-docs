@@ -14,7 +14,7 @@
 
 **As extracted:** Carvedilol (concentrations from the PK model of Albers_2008) drives mean arterial blood pressure (in %): delayed effect through an effect compartment.
 
-**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
+**Model:** No model was generated from this record.
 
 > Carvedilol plasma concentrations (ng/mL) were linked to mean arterial blood pressure (% change) via an effect-compartment (inhibitory) model, with an equilibration rate constant Ke0 of 0.35 h⁻¹ and an EC50 of 24.30 ng/mL; the paper excerpts do not state the precise effect form or mechanism beyond this.
 >
@@ -39,26 +39,6 @@ Liu XY et al., Comparison of different pharmacodynamic…, Yao xue xue bao = Act
 <summary>Column legend — what each column means</summary>
 <table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
 </details>
-
-
-## Exposure-response model
-
-`Carvedilol_Liu2009_PD_map` — turnover (indirect response type I), `response = E0*(1 - Emax*frac)`
-
-| parameter | value (paper units) | SI |
-|---|---|---|
-| E0 | 1.025 % | — |
-| Emax | 1 | — |
-| EC50 | 24.4 ng x mL(-1) | — |
-| gamma | 1 | — |
-
-Closed-form check points (response, SI): `at_0` = 1.025, `at_EC50` = 0.5125, `at_inf` = 0
-
-Deviations:
-
-- `defaulted_parameters` — Emax, gamma
-- `pd_binding_e0_from_kin_kout` — no baseline row; E0 = kin/kout (0.41/0.4 = 1.025) — the paper's stated baseline may differ
-- `pd_binding_exposure_unit_unresolved` — 'ng x mL(-1)' — the x axis is in the paper's unit, not SI
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

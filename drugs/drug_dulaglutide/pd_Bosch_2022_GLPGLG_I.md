@@ -29,8 +29,8 @@ Bosch R et al., A novel integrated QSP model of in vivo…, CPT: pharmacometrics
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | GLPGLG_I_MAX, EMAX_3 | `Q320` · not captured | 1 | not captured | not captured | llm (not captured) | Bosch_2022:pdv3 |
-| PD (effect) | GLPGLG_I_EC50, EC50_3 | `Q321` · not captured | 99.5 | pM | not captured | llm (not captured) | Bosch_2022:pdv3 |
+| PD (effect) | GLPGLG_I_MAX, EMAX_3 | `Q323` · not captured | 1 | not captured | not captured | llm (not captured) | Bosch_2022:pdv3 |
+| PD (effect) | GLPGLG_I_EC50, EC50_3 | `Q322` · not captured | 99.5 | pM | not captured | llm (not captured) | Bosch_2022:pdv3 |
 | PD (effect) | GLPGLG_I_HILL, HILL_3 | `Q325` · not captured | 1 | not captured | not captured | llm (not captured) | Bosch_2022:pdv3 |
 
 <details class="legend">
