@@ -25,6 +25,56 @@
   "ka": 0.0005555555555555556,
   "weight": 70.0
  },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "pregabalin",
+     "parameter": "u 1 Typical value of apparent clearance (L/h)",
+     "reference": 1.16,
+     "scale": "categorical_fractional",
+     "theta": -0.0496,
+     "value": 1.1024639999999999
+    }
+   ],
+   "Poor": [
+    {
+     "compound": "pregabalin",
+     "parameter": "u 1 Typical value of apparent clearance (L/h)",
+     "reference": 1.16,
+     "scale": "categorical_fractional",
+     "theta": -0.0594,
+     "value": 1.0910959999999998
+    }
+   ]
+  },
+  "gene": "NAT2",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)",
+   "Poor": "Poor metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Poor",
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "Cl": 3.0624e-07
+   },
+   "Normal": {},
+   "Poor": {
+    "Cl": 3.0308222222222216e-07
+   }
+  },
+  "record": "Bae_2016",
+  "reference": "Normal",
+  "sources": [
+   "Bae_2016 covariate NAT2"
+  ]
+ },
  "reference_peak_times": {
   "central.C": 9696.19238476954
  },

@@ -36,8 +36,6 @@ Courlet P et al., Pharmacokinetic/Pharmacodynamic Modelli…, Clinical pharmacok
 | PD (effect) | kin | `Q327` · not captured | 0.02 | mmol·L−1·h−1 | not captured | llm (not captured) | Courlet_2021:pdv3 |
 | PD (effect) | Baseline | `Q324` · not captured | 3.6 | mmol·L−1 | not captured | llm (not captured) | Courlet_2021:pdv3 |
 | PD (effect) | IC50 | `Q322` · not captured | 15.8 | ng/mL | not captured | llm (not captured) | Courlet_2021:pdv3 |
-| variability | ωbaseline | `Q312` · not captured | 20 | CV% | not captured | llm (not captured) | Courlet_2021:pdv3 |
-| variability | ωIC50 | `Q312` · not captured | 101 | CV% | not captured | llm (not captured) | Courlet_2021:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

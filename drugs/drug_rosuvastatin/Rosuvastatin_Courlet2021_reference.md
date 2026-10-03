@@ -5,7 +5,7 @@
 
 # rosuvastatin — `Rosuvastatin_Courlet2021_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.154). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The check had no reference to compare the clearance against, so the value is unverified rather than shown to be wrong. Extracted — rosuvastatin: CL 122 L·h−1, V1 144 L, V2 1.61e+03 L, Q 69 L·h−1, kabs 0.306 h−1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has none, the second reading 41; it also differs on 5 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q19: this record has none, the second reading 41; it also differs on 10 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
@@ -68,18 +68,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.25 (2/8 fields) | 6 |
+| `gpt-oss:120b` | partly confirmed | 0.154 (2/13 fields) | 11 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q19]` | not captured | 41 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q21]` | not captured | 93 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 122 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q30]` | 69 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q317]` | 0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q31]` | not captured | 22 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q33]` | not captured | 143 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q54]` | not captured | 5 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q63]` | 144 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q64]` | 1610 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q84]` | not captured | 48 | only_one_extracted |
 
 </details>
 

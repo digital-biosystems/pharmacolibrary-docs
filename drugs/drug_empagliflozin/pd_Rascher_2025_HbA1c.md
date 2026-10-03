@@ -32,14 +32,11 @@ Rascher J et al., Pharmacokinetics and pharmacodynamics o…, British journal of
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Kout | `Q328` · not captured | 0.0489 | 1/day | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| PD (effect) | BASE | `Q324` · not captured | 7.35 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| PD (effect) | PROG | `Q340` · not captured | 5.64e‐07 | %/h/h | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| PD (effect) | IMAX | `Q323` · not captured | 10.1 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| PD (effect) | AUC50 | `Q321` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| model term | INSBASE | `Q900` · not captured | 1.15 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| model term | EGFRIMAX | `Q900` · not captured | 1.03 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
-| model term | HbA1cIMAX | `Q900` · not captured | 2.04 | not captured | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | HbA1c degradation rate constant | `Q328` · not captured | 0.0489 | 1/day | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | Baseline HbA1c | `Q324` · not captured | 7.35 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | Zero‐order disease progression rate constant | `Q340` · not captured | 5.64e‐07 | %/h/h | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | Maximum inhibition | `Q323` · not captured | 10.1 | % | not captured | llm (not captured) | Rascher_2025:pdv3 |
+| PD (effect) | AUC at 50% IMAX | `Q322` · not captured | 703 | nmol*hr/L | not captured | llm (not captured) | Rascher_2025:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

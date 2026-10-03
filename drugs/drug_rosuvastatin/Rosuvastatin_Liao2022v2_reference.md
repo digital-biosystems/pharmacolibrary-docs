@@ -5,7 +5,7 @@
 
 # rosuvastatin — `Rosuvastatin_Liao2022v2_reference`
 
-> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.214). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.308). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The source reports only unbound clearance (CLu, 11.4 L/h) and an apparent volume of distribution (V/F, 425.9701 L) for rosuvastatin; the absorption rate constant ka and lag time Tlag were missing from the source, so library placeholder values were used in their place, and the invented ka was judged not acceptable. The model builder also assumed F=1 and Fm=1 without molar correction, giving an apparent parameterization with first-order depot input implying extravascular dosing. Several extracted values (e.g., 38, 11.4, 3.21, 3.7, 0.92) had no second-reader confirmation, and one value the second reader reported as 20 was absent from this record. Extracted — rosuvastatin: CLu 11.4 L/h, V/F 426 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q189: this record has none, the second reading 54; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has 0.781, the second reading 0.781; it also differs on 8 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -69,23 +69,21 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.214 (3/14 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.308 (4/13 fields) | 9 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>9 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q189]` | not captured | 54 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q19]` | 38 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q21]` | 0.781 | 0.781 | mismatch |
 | `gpt-oss:120b` | `values[Q24]` | 11.4 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q26]` | 3.21 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q312]` | 54 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | 54 | 54 | mismatch |
 | `gpt-oss:120b` | `values[Q335]` | 0.92 | 0.92 | mismatch |
 | `gpt-oss:120b` | `values[Q33]` | not captured | 20 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q44]` | 3.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q57]` | 25.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q84]` | not captured | 38 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q72]` | not captured | 1 | only_one_extracted |
 
 </details>
 

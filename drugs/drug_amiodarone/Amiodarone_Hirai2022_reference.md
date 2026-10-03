@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C01B&quot;,&quot;href&quot;:&quot;atc/C01B.md&quot;},{&quot;label&quot;:&quot;amiodarone&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/&quot;},{&quot;label&quot;:&quot;Hirai_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amiodarone_Gaete1995_reference&quot;,&quot;label&quot;:&quot;Gaete_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Gaete1995_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Kolowrat2025_reference&quot;,&quot;label&quot;:&quot;Kolowrat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Lesko1989_reference&quot;,&quot;label&quot;:&quot;Lesko_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lesko1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Lehnert2022_reference&quot;,&quot;label&quot;:&quot;Lehnert_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sermsappasuk_2006_LVDP&quot;,&quot;label&quot;:&quot;Sermsappasuk_2006 \u00b7 LVDP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/pd_Sermsappasuk_2006_LVDP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Amiodarone_Gaete1995_reference&quot;,&quot;label&quot;:&quot;Gaete_1995_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Gaete1995_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Kolowrat2025_reference&quot;,&quot;label&quot;:&quot;Kolowrat_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Kolowrat2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Lesko1989_reference&quot;,&quot;label&quot;:&quot;Lesko_1989_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lesko1989_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Morath2025_reference&quot;,&quot;label&quot;:&quot;Morath_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Morath2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Amiodarone_Lehnert2022_reference&quot;,&quot;label&quot;:&quot;Lehnert_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/Amiodarone_Lehnert2022_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Sermsappasuk_2006_LVDP&quot;,&quot;label&quot;:&quot;Sermsappasuk_2006 \u00b7 LVDP&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_amiodarone/pd_Sermsappasuk_2006_LVDP.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # amiodarone — `Amiodarone_Hirai2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.692). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.833). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,32 +21,33 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V, Fab and kabs), so that value has no SI equivalent. Extracted — amiodarone: CL 7.9 L/h, V 14 fixed, Fab 54 fixed, kabs 1 fixed, CL/F 10.3.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on `parameters[k a , /h].parameter_id`: this record has Q95, the second reading Q49; it also differs on 3 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of daily dose mg: this record has none, the second reading 200; it also differs on 1 more field. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:02.283902+00:00) predates the upstream re-run (2026-10-03 20:01:01.703065+00:00). Current validate status: `extracted`.
 
 ## Citation
 Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmaceutical… (2022)
   ·  DOI: [10.1248/bpb.b21-00940](https://doi.org/10.1248/bpb.b21-00940)
 
 ## Model component
-<dbs-pgx drug="amiodarone" model-id="Amiodarone_Hirai2022_reference" status="needs_review" stale="false" population="adult patients" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="amiodarone" model-id="Amiodarone_Hirai2022_reference" status="extracted" stale="true" population="adult patients" measured-compound="amiodarone" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL AMD , L/h | `Q22` · CL | 7.9 | L/h | 2.1944444444444445e-06 | [l] / [h] | not captured | llm_confirmed (0.6) | tab_0:row4:col1, tab_0:row4:col2, tab_0:row4:col3 | — | 43.3 (None% RSE) |
-| Vd AMD , L/kg (fixed) | `Q61` · V | 14.0 | fixed | not captured | [fixed] | not captured | llm_confirmed (0.6) | tab_0:row5:col1, tab_0:row5:col3 | — | not captured |
+| Vd AMD , L/kg (fixed) | `Q61` · V | 14.0 | L/kg | 0.98 | L | not captured | llm_confirmed (0.6) | tab_0:row5:col1, tab_0:row5:col3 | — | not captured |
 | F oral , % (fixed) | `Q40` · Fab | 54.0 | fixed | not captured | [fixed] | not captured | llm (0.6) | tab_0:row6:col1, tab_0:row6:col3 | — | not captured |
-| k a , /h (fixed) | `Q49` · kabs | 1.0 | fixed | not captured | [fixed] | not captured | space_fold (0.95) | tab_0:row7:col1, tab_0:row7:col3 | — | not captured |
-| CL DEA /f m , L/h Glucocorticoids on CL DEA /f m | `Q27` · CL/F | 10.3 | not captured | not captured | not captured | not captured | llm_corrected (0.6) | tab_0:row14:col1, tab_0:row14:col3 | — | not captured |
+| k a , /h (fixed) | `Q49` · kabs | 1.0 | 1/h | 0.0002777777777777778 | 1/h | not captured | space_fold (0.95) | tab_0:row7:col1, tab_0:row7:col3 | — | not captured |
+| CL DEA /f m , L/h Glucocorticoids on CL DEA /f m | `Q27` · CL/F | 10.3 | L/h | 2.861111111111111e-06 | L/h | not captured | llm_corrected (0.6) | tab_0:row14:col1, tab_0:row14:col3 | — | not captured |
+| Vd DEA , L/kg (fixed) | `Q61` · V | 14.0 | L/kg | 0.98 | L | not captured | exact (1.0) | tab_0:row15:col1, tab_0:row15:col3 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -56,16 +57,26 @@ Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'ωCL AMD , %' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'ωCL DEA , %' routed out of structural estimates ('Interindividual variability')
 - unit_dimension_unknown: 'fixed' (V)
 - unit_dimension_unknown: 'fixed' (Fab)
 - unit_dimension_unknown: 'fixed' (kabs)
-- dropped duplicate Q61 ('Vd DEA , L/kg (fixed)', value '14.0') — already have one for this compound
-- documentation only: 'CL AMD' → Q22 (CL) comes from ['fig_0:caption'], not from a located parameter table — not emitted as a model parameter
+- unit_dimension_unknown: 'fixed' (V1)
+- dropped duplicate Q22 ('CL AMD', value 7.9) — already have one for this compound
 - NIL: refused to back-fill base 'V' from footnote/prose loose number 14.0 (source ['fig_0:caption']); the table cell was unparseable — needs review
 - NIL: refused to back-fill base 'CL/F' from footnote/prose loose number 10.3 (source ['fig_0:caption']); the table cell was unparseable — needs review
+- NIL: refused to back-fill base 'V1' from footnote/prose loose number 14.0 (source ['fig_0:caption']); the table cell was unparseable — needs review
+- implicit units: 'Vd AMD , L/kg (fixed)' → L/kg (from the paper text: "The text under 'Figures and Tables' states the final model equation: 'Vd _AMD = 14.0 × Body weight'. Since Body weight i")
+- implicit units: 'k a , /h (fixed)' → 1/h (from the popPK convention: 'The parameter is the absorption rate constant (ka). In population pharmacokinetics, first-order rate constants are conve')
+- implicit units: 'CL DEA /f m , L/h Glucocorticoids on CL DEA /f m' → L/h (from the paper text: "The text under 'Figures and Tables' states the final model equation: 'CL DEA /f m = 10.3 × (1-0.35 × [if glucocorticoid]")
+- implicit units: 'Vd DEA , L/kg (fixed)' → L/kg (from the paper text: "The text under 'Figures and Tables' states the final model equation: 'Vd DEA = 14.0 × Body weight'. Since Body weight is")
+- metabolite volume: 'Vd DEA , L/kg (fixed)' Q63→Q61 for N-desethylamiodarone — it is 1-compartment, so its central volume is its only volume
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=amiodarone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: PK_3M_9C — formed from central; parent 1, metabolites [1]
 - status held at route_to_review — not promoted
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 13 linked by role; re-tagged parent→N-desethylamiodarone ×7, amiodarone→parent ×2, amiodarone→N-desethylamiodarone ×2
 - skipped review gap-fill of V2: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is PARENT_METABOLITE (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
@@ -82,21 +93,19 @@ Hirai T et al., Population Pharmacokinetic Model of Ami…, Biological & pharmac
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.692 (9/13 fields) | 4 |
+| `gpt-oss:120b` | partly confirmed | 0.833 (10/12 fields) | 2 |
 
-<details><summary>4 field(s) a reader read differently</summary>
+<details><summary>2 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[cl amd].value` | not captured | 7.9 | mismatch |
-| `gpt-oss:120b` | `parameters[k a , /h].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[vd _amd]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[η‐shrinkage]` | not captured | 21.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[daily dose mg]` | not captured | 200 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[mean trough amd ug/ml]` | not captured | 1.08 | only_one_extracted |
 
 </details>
 
@@ -110,16 +119,20 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row14:col1', 'tab_0:row14:col3'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | fixed | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col3'] |
-| C5_unit_missing_Q61 | fail | [length] ** 3 | fixed | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_0:row14:col1', 'tab_0:row14:col3'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_0:row7:col1', 'tab_0:row7:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_0:row15:col1', 'tab_0:row15:col3'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 7.9 L/h | not captured | not captured | ['tab_0:row4:col1', 'tab_0:row4:col2', 'tab_0:row4:col3'] |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 10.3 L/h | not captured | not captured | ['tab_0:row14:col1', 'tab_0:row14:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 980 L | not captured | not captured | ['tab_0:row5:col1', 'tab_0:row5:col3'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 980 L | not captured | not captured | ['tab_0:row15:col1', 'tab_0:row15:col3'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -154,4 +167,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-19 14:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 20:01 UTC</sub>

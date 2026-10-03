@@ -28,8 +28,9 @@ Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | G max | `Q323` · not captured | 22% | not captured | not captured | llm (not captured) | Baron_2016:pdv3 |
+| PD (effect) | G max | `Q320` · not captured | 22 | % | not captured | llm (not captured) | Baron_2016:pdv3 |
 | PD (effect) | AUC50 | `Q321` · not captured | 704 | nM*h | not captured | llm (not captured) | Baron_2016:pdv3 |
+| PD (effect) | BFPG | `Q324` · not captured | 8.38 | mM | not captured | llm (not captured) | Baron_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

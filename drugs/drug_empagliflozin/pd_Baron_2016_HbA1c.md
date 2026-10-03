@@ -28,7 +28,8 @@ Baron KT et al., Population Pharmacokinetics and Exposur…, Diabetes therapy : 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | k HbA1c,out | `Q328` · not captured | 2.6 weeks | not captured | not captured | llm (not captured) | Baron_2016:pdv3 |
+| PD (effect) | k HbA1c,out | `Q328` · not captured | 0.26 | 1/week | not captured | llm (not captured) | Baron_2016:pdv3 |
+| PD (effect) | Baseline HbA1c | `Q324` · not captured | 7.90 | % | not captured | llm (not captured) | Baron_2016:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

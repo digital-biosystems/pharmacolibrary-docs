@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N05B&quot;,&quot;href&quot;:&quot;atc/N05B.md&quot;},{&quot;label&quot;:&quot;diazepam&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/&quot;},{&quot;label&quot;:&quot;L\u00f6scher_1981 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Greenblatt_1989_13_30_Hz&quot;,&quot;label&quot;:&quot;Greenblatt_1989 \u00b7 % 13-30 Hz&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/pd_Greenblatt_1989_13_30_Hz.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diazepam_Cavallaro2026_reference&quot;,&quot;label&quot;:&quot;Cavallaro_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Cavallaro2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Helfer2026_reference&quot;,&quot;label&quot;:&quot;Helfer_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Helfer2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1976_reference&quot;,&quot;label&quot;:&quot;Klotz_1976_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1976_reference.md&quot;,&quot;status&quot;:&quot;needs review \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Diazepam_Klotz1975_reference&quot;,&quot;label&quot;:&quot;Klotz_1975_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diazepam/Diazepam_Klotz1975_reference.md&quot;,&quot;status&quot;:&quot;rejected \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # diazepam — `Diazepam_Lscher1981_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.125). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.312). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,11 +23,11 @@
 
 The record, built from the paper's abstract only, carries summary statistics (t1/2β 3.2 hr, t1/2z 5.7 hr, Cmax 100 ng/ml, CL 3.8 L/h, V 4.7 L/kg) rather than a fitted model, and several parameters (Fab, AUC%ext, Css) have no values. The structure check flagged oxazepam as unreachable from the dose under the recorded metabolism links. A second reader also disputed the link structure, proposing direct diazepam → oxazepam and diazepam → 3-hydroxydiazepam metabolism, and could not confirm the reported half-life and Cmax values. Extracted — diazepam: t1/2β 3.2 hr, Cmax 100 ng/ml, t1/2z 5.7 hr, CL 3.8 L/h, V 4.7 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has diazepam, the second reading unknown; it also differs on 13 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has diazepam → desmethyldiazepam (metabolism); desmethyldiazepam → oxazepam (metabolism), the second reading diazepam → desmethyldiazepam (metabolism); diazepam → oxazepam (metabolism); diazepam → 3-hydroxydiazepam (metabolism); it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.251903+00:00) predates the upstream re-run (2026-10-01 03:15:04.689684+00:00). Current validate status: `needs_review`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.251903+00:00) predates the upstream re-run (2026-10-03 21:12:03.635555+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internationales de… (1981)
@@ -36,7 +36,7 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 <dbs-pgx drug="diazepam" model-id="Diazepam_Lscher1981_reference" status="needs_review" stale="true" population="dogs" measured-compound="diazepam" parameterization="mechanistic" topology="general_linear"></dbs-pgx>
 
 **Model structure:** general linear; no model was built for this record.  
-**Parameters:** 5 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -48,8 +48,10 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 | average elimination half-life t0.5(beta) | `Q60` · t1/2β | 3.2 | hr | 11520.0 | [h] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
 | maximal plasma concentrations | `Q32` · Cmax | 100 | ng/ml | not captured | [ng] / [ml] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
 | half-life | `Q57` · t1/2z | 5.7 | hr | 20520.0 | [h] | not captured | llm (0.6) | Löscher_1981:abstract | — | not captured |
-| apparent total CL in a 9-year-old child weighing 29 kg | `Q22` · CL | 3.8 | L/h | 1.0555555555555555e-06 | L/h | not captured | review_gapfill (0.7) | Carrascosa-Arteaga_2025:review | — | not captured |
+| CL (L/h) | `Q22` · CL | 1.236 | L/h | 3.4333333333333336e-07 | L/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
 | volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Cavallaro_2026:review | — | not captured |
+| Ka (h−1) | `Q49` · kabs | 1.21 | h−1 | 0.0003361111111111111 | 1/h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
+| Tlag (h) | `Q83` · tlag | 84.2 | h | 303120.0 | h | not captured | review_gapfill (0.7) | Aurélie_2023:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,10 +74,12 @@ Löscher W et al., Pharmacokinetics of diazepam in the dog, Archives internation
 - template fit: none — noncompartmental model — not a compartmental parent–metabolite model
 - row roles (LLM): model_class=noncompartmental; 7/7 row label(s) assigned, 0 linked by role; re-tagged diazepam→parent ×8
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q22 (CL) from Carrascosa-Arteaga_2025's review values (primary lacked it)
+- gap-filled Q22 (CL) from Aurélie_2023's review values (primary lacked it)
 - gap-filled Q61 (V) from Cavallaro_2026's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is GENERAL_LINEAR (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Aurélie_2023's review values (primary lacked it)
+- gap-filled Q83 (tlag) from Aurélie_2023's review values (primary lacked it)
 
 **Extraction notes:**
 - no GROBID TEI available — transcribed from abstract in Löscher_1981_metadata.yaml (8 record(s)); values are summary statistics, not a fitted model
@@ -87,26 +91,23 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.125 (2/16 fields) | 14 |
+| `gpt-oss:120b` | not confirmed | 0.312 (5/16 fields) | 11 |
 
-<details><summary>14 field(s) a reader read differently</summary>
+<details><summary>11 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['desmethyldiazepam', 'oxazepam', 'metabolism']] | [['diazepam', 'desmethyldiazepam', 'metabolism'], ['diazepam', 'oxazepam', 'metabolism'], ['diazepam', '3-hydroxydiazepam', 'metabolism']] | mismatch |
-| `gpt-oss:120b` | `parameters[average elimination half-life t0.5]` | 3.2 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | 5.7 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[half-life]` | not captured | 5.7 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[i.v. administration dose]` | not captured | 2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maximal diazepam concentrations]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maximal plasma concentrations]` | 100 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[maximal plasma concentrations]` | not captured | 100 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[share of unmetabolized diazepam in the total area under curve after oral administration]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[share of unmetabolized diazepam in the total area under curve]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[share of unmetabolized diazepam in the total area under curve]` | not captured | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[steady state plasma concentrations of desmethyldiazepam]` | not captured | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[steady state plasma concentrations]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[steady state plasma concentrations]` | not captured | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[t0.5]` | not captured | 3.2 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | diazepam | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | diazepam | unknown | mismatch |
 
 </details>
 
@@ -122,16 +123,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
 | C5_dimension_Q34 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
 | C5_dimension_Q60 | pass | [time] | not captured | not captured | not captured | ['Löscher_1981:abstract'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Cavallaro_2026:review'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Aurélie_2023:review'] |
 | C5_dimension_Q84 | pass | dimensionless | not captured | not captured | not captured | ['Löscher_1981:abstract', 'Löscher_1981:abstract'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 3.8 | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
+| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 1.236 | not captured | not captured | ['Aurélie_2023:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q22 | pass | clearance within physiological range | 3.8 L/h | not captured | not captured | ['Carrascosa-Arteaga_2025:review'] |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 1.24 L/h | not captured | not captured | ['Aurélie_2023:review'] |
 | C9_phys_window_Q61 | pass | volume within physiological range | 329 L | not captured | not captured | ['Cavallaro_2026:review'] |
 
 <details class="legend">
@@ -167,4 +170,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 03:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 21:12 UTC</sub>

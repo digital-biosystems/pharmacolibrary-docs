@@ -46,6 +46,77 @@
   "qm21_m22": 0.00016331388888888887,
   "qm22_m21": 0.00016331388888888887
  },
+ "pgx": {
+  "effects": {
+   "Intermediate": [
+    {
+     "compound": "clopidogrel H4",
+     "parameter": "fm1",
+     "reference": 0.125,
+     "scale": "logit",
+     "theta": -0.45,
+     "value": 0.08348510021221434
+    },
+    {
+     "compound": "clopidogrel carboxylic acid",
+     "parameter": "fm2",
+     "reference": 0.96,
+     "scale": "logit",
+     "theta": -1.428,
+     "value": 0.8519595914197555
+    }
+   ],
+   "Poor": [
+    {
+     "compound": "clopidogrel H4",
+     "parameter": "fm1",
+     "reference": 0.125,
+     "scale": "logit",
+     "theta": -0.996,
+     "value": 0.0501202562145836
+    },
+    {
+     "compound": "clopidogrel carboxylic acid",
+     "parameter": "fm2",
+     "reference": 0.96,
+     "scale": "logit",
+     "theta": -2.432,
+     "value": 0.6783182412767059
+    }
+   ]
+  },
+  "gene": "CYP2C19",
+  "labels": {
+   "Intermediate": "Intermediate metabolizer",
+   "Normal": "Normal metabolizer (reference)",
+   "Poor": "Poor metabolizer"
+  },
+  "note": "Each phenotype runs the same template with the parameters the gene acts on changed as the paper states (a fraction on the logit scale), and every parameter the template derives from them recomputed; the reference phenotype is the record's own model.",
+  "order": [
+   "Poor",
+   "Intermediate",
+   "Normal"
+  ],
+  "phenotypes": {
+   "Intermediate": {
+    "CL1": 0.00038068097603461337,
+    "q1_m11": 0.00018289796292105106,
+    "q1_m21": 0.002007887727711003
+   },
+   "Normal": {},
+   "Poor": {
+    "CL1": 0.0008271939197717603,
+    "q1_m11": 8.742339697449321e-05,
+    "q1_m21": 0.0016568493499204136
+   }
+  },
+  "record": "Jung_2024",
+  "reference": "Normal",
+  "sources": [
+   "Jung_2024 covariate theta_fm_im_power",
+   "Jung_2024 covariate theta_fm_pm_power"
+  ]
+ },
  "reference_peak_times": {
   "C_M1": 2373.308252493937,
   "C_M2": 3375.396613592702,

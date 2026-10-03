@@ -1546,15 +1546,19 @@
    "C01BD01"
   ],
   "counts": {
-   "pd": 5,
+   "pd": 2,
    "pgx": 0,
-   "pk": 4
+   "pk": 9
   },
   "curated": 0,
   "details": [
    {
     "label": "Gaete_1995 \u00b7 reference",
     "model_id": "Amiodarone_Gaete1995_reference"
+   },
+   {
+    "label": "Hirai_2022 \u00b7 reference",
+    "model_id": "Amiodarone_Hirai2022_reference"
    },
    {
     "label": "Kolowrat_2025 \u00b7 reference",
@@ -1565,14 +1569,6 @@
     "model_id": "Amiodarone_Lesko1989_reference"
    },
    {
-    "label": "Morath_2025 \u00b7 reference",
-    "model_id": "Amiodarone_Morath2025_reference"
-   },
-   {
-    "label": "Hirai_2022 \u00b7 reference",
-    "model_id": "Amiodarone_Hirai2022_reference"
-   },
-   {
     "label": "Li_2025 \u00b7 base",
     "model_id": "Amiodarone_Li2025_base"
    },
@@ -1581,12 +1577,20 @@
     "model_id": "Amiodarone_Li2025_final"
    },
    {
-    "label": "Sermsappasuk_2006 \u00b7 cv_mean_s_d",
-    "model_id": "Amiodarone_Sermsappasuk2006_cv_mean_s_d"
+    "label": "Morath_2025 \u00b7 reference",
+    "model_id": "Amiodarone_Morath2025_reference"
    },
    {
-    "label": "Sermsappasuk_2006 \u00b7 estimate_mean_s_d",
-    "model_id": "Amiodarone_Sermsappasuk2006_estimate_mean_s_d"
+    "label": "Pollak_2000 \u00b7 aminodarone",
+    "model_id": "Amiodarone_Pollak2000_aminodarone"
+   },
+   {
+    "label": "Pollak_2000 \u00b7 desethylaminodarone",
+    "model_id": "Amiodarone_Pollak2000_desethylaminodarone"
+   },
+   {
+    "label": "Sermsappasuk_2006 \u00b7 cva_mean_s_d",
+    "model_id": "Amiodarone_Sermsappasuk2006_cva_mean_s_d"
    },
    {
     "label": "Yonezawa_2002 \u00b7 mex_amd_group_1",
@@ -1605,14 +1609,6 @@
     "model_id": "Amiodarone_Yonezawa2002_mex_group"
    },
    {
-    "label": "Anastasiou-Nana_1982 \u00b7 reference",
-    "model_id": "Amiodarone_AnastasiouNana1982_reference"
-   },
-   {
-    "label": "Lehnert_2022 \u00b7 reference",
-    "model_id": "Amiodarone_Lehnert2022_reference"
-   },
-   {
     "label": "Pollak_2000 \u00b7 amiodarone_typical_value",
     "model_id": "Amiodarone_Pollak2000_amiodarone_typical_value"
    },
@@ -1621,20 +1617,36 @@
     "model_id": "Amiodarone_Pollak2000_desethylamiodarone_typical_value"
    },
    {
+    "label": "Sermsappasuk_2006 \u00b7 cv_mean_s_d",
+    "model_id": "Amiodarone_Sermsappasuk2006_cv_mean_s_d"
+   },
+   {
+    "label": "Anastasiou-Nana_1982 \u00b7 reference",
+    "model_id": "Amiodarone_AnastasiouNana1982_reference"
+   },
+   {
+    "label": "Lehnert_2022 \u00b7 reference",
+    "model_id": "Amiodarone_Lehnert2022_reference"
+   },
+   {
     "label": "Riva_1982 \u00b7 reference",
     "model_id": "Amiodarone_Riva1982_reference"
+   },
+   {
+    "label": "Sermsappasuk_2006 \u00b7 estimate_mean_s_d",
+    "model_id": "Amiodarone_Sermsappasuk2006_estimate_mean_s_d"
    }
   ],
   "dir": "drug_amiodarone",
-  "extracted": 4,
-  "last_change": "2026-09-28T14:36:06.127553+00:00",
+  "extracted": 9,
+  "last_change": "2026-10-03T20:01:31.637804+00:00",
   "name": "amiodarone",
-  "needs_review": 9,
-  "records": 18,
-  "rejected": 5,
+  "needs_review": 5,
+  "records": 21,
+  "rejected": 4,
   "rendered": true,
   "slug": "amiodarone",
-  "stale": 0
+  "stale": 13
  },
  "drug_amitriptyline": {
   "atc_codes": [
@@ -6042,11 +6054,15 @@
   ],
   "counts": {
    "pd": 0,
-   "pgx": 23,
-   "pk": 6
+   "pgx": 24,
+   "pk": 10
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Banach_2015 \u00b7 reference",
+    "model_id": "Carbamazepine_Banach2015_reference"
+   },
    {
     "label": "Djordjevic_2016 \u00b7 reference",
     "model_id": "Carbamazepine_Djordjevic2016_reference"
@@ -6056,8 +6072,16 @@
     "model_id": "Carbamazepine_Djordjevic2025_reference"
    },
    {
+    "label": "Li_2021 \u00b7 reference",
+    "model_id": "Carbamazepine_Li2021_reference"
+   },
+   {
     "label": "Milovanovic_2016 \u00b7 reference",
     "model_id": "Carbamazepine_Milovanovic2016_reference"
+   },
+   {
+    "label": "Naik_2021 \u00b7 reference",
+    "model_id": "Carbamazepine_Naik2021_reference"
    },
    {
     "label": "Punyawudho_2012 \u00b7 reference",
@@ -6072,12 +6096,12 @@
     "model_id": "Carbamazepine_Yip2021_reference"
    },
    {
-    "label": "Kudo_1999 \u00b7 reference",
-    "model_id": "Carbamazepine_Kudo1999_reference"
+    "label": "Yu_2025 \u00b7 reference",
+    "model_id": "Carbamazepine_Yu2025_reference"
    },
    {
-    "label": "Naik_2021 \u00b7 reference",
-    "model_id": "Carbamazepine_Naik2021_reference"
+    "label": "Kudo_1999 \u00b7 reference",
+    "model_id": "Carbamazepine_Kudo1999_reference"
    },
    {
     "label": "Rambeck_1993 \u00b7 reference",
@@ -6086,10 +6110,6 @@
    {
     "label": "Roberti_2021 \u00b7 reference",
     "model_id": "Carbamazepine_Roberti2021_reference"
-   },
-   {
-    "label": "Yu_2025 \u00b7 reference",
-    "model_id": "Carbamazepine_Yu2025_reference"
    },
    {
     "label": "Lukic_2024 \u00b7 reference",
@@ -6105,15 +6125,15 @@
    }
   ],
   "dir": "drug_carbamazepine",
-  "extracted": 6,
-  "last_change": "2026-09-28T14:36:48.610130+00:00",
+  "extracted": 10,
+  "last_change": "2026-10-03T20:49:47.434927+00:00",
   "name": "carbamazepine",
-  "needs_review": 5,
-  "records": 14,
+  "needs_review": 3,
+  "records": 16,
   "rejected": 3,
   "rendered": true,
   "slug": "carbamazepine",
-  "stale": 0
+  "stale": 5
  },
  "drug_carbamide": {
   "atc_codes": [
@@ -7428,7 +7448,7 @@
    "S03AA07"
   ],
   "counts": {
-   "pd": 8,
+   "pd": 7,
    "pgx": 1,
    "pk": 11
   },
@@ -7523,6 +7543,10 @@
     "model_id": "Ciprofloxacin_Hffken1985_750_mg_orally"
    },
    {
+    "label": "Lode_1988 \u00b7 reference",
+    "model_id": "Ciprofloxacin_Lode1988_reference"
+   },
+   {
     "label": "\u0160\u00edma_2022 \u00b7 reference",
     "model_id": "Ciprofloxacin_ma2022_reference"
    },
@@ -7533,19 +7557,15 @@
    {
     "label": "Junkert_2024 \u00b7 reference",
     "model_id": "Ciprofloxacin_Junkert2024_reference"
-   },
-   {
-    "label": "Lode_1988 \u00b7 reference",
-    "model_id": "Ciprofloxacin_Lode1988_reference"
    }
   ],
   "dir": "drug_ciprofloxacin",
   "extracted": 11,
   "last_change": "2026-10-03T18:51:47.715177+00:00",
   "name": "ciprofloxacin",
-  "needs_review": 12,
+  "needs_review": 13,
   "records": 26,
-  "rejected": 3,
+  "rejected": 2,
   "rendered": true,
   "slug": "ciprofloxacin",
   "stale": 22
@@ -10069,12 +10089,16 @@
    "N05BA01"
   ],
   "counts": {
-   "pd": 7,
+   "pd": 3,
    "pgx": 0,
    "pk": 4
   },
   "curated": 0,
   "details": [
+   {
+    "label": "Aur\u00e9lie_2023 \u00b7 reference",
+    "model_id": "Diazepam_Aurlie2023_reference"
+   },
    {
     "label": "Cavallaro_2026 \u00b7 reference",
     "model_id": "Diazepam_Cavallaro2026_reference"
@@ -10082,10 +10106,6 @@
    {
     "label": "Helfer_2026 \u00b7 reference",
     "model_id": "Diazepam_Helfer2026_reference"
-   },
-   {
-    "label": "Klotz_1975 \u00b7 reference",
-    "model_id": "Diazepam_Klotz1975_reference"
    },
    {
     "label": "Wang_2022 \u00b7 reference",
@@ -10104,6 +10124,10 @@
     "model_id": "Diazepam_Huang2025v2_reference"
    },
    {
+    "label": "Klotz_1975 \u00b7 reference",
+    "model_id": "Diazepam_Klotz1975_reference"
+   },
+   {
     "label": "Ku_2018 \u00b7 reference",
     "model_id": "Diazepam_Ku2018_reference"
    },
@@ -10114,11 +10138,11 @@
   ],
   "dir": "drug_diazepam",
   "extracted": 4,
-  "last_change": "2026-10-01T03:15:11.484544+00:00",
+  "last_change": "2026-10-03T21:12:10.490706+00:00",
   "name": "diazepam",
   "needs_review": 2,
-  "records": 9,
-  "rejected": 3,
+  "records": 10,
+  "rejected": 4,
   "rendered": true,
   "slug": "diazepam",
   "stale": 9
@@ -10183,7 +10207,7 @@
    "S01CC01"
   ],
   "counts": {
-   "pd": 8,
+   "pd": 5,
    "pgx": 3,
    "pk": 1
   },
@@ -10198,6 +10222,14 @@
     "model_id": "Diclofenac_Rahal2008_reference"
    },
    {
+    "label": "Standing_2011 \u00b7 reference",
+    "model_id": "Diclofenac_Standing2011_reference"
+   },
+   {
+    "label": "Evans_1993 \u00b7 reference",
+    "model_id": "Diclofenac_Evans1993_reference"
+   },
+   {
     "label": "Karunanidhi_2026 \u00b7 reference",
     "model_id": "Diclofenac_Karunanidhi2026_reference"
    },
@@ -10210,20 +10242,16 @@
     "model_id": "Diclofenac_Standing2008_reference"
    },
    {
-    "label": "Standing_2011 \u00b7 reference",
-    "model_id": "Diclofenac_Standing2011_reference"
-   },
-   {
     "label": "van_2004 \u00b7 reference",
     "model_id": "Diclofenac_van2004_reference"
    }
   ],
   "dir": "drug_diclofenac",
   "extracted": 1,
-  "last_change": "2026-10-01T02:33:34.509555+00:00",
+  "last_change": "2026-10-03T20:31:53.521706+00:00",
   "name": "diclofenac",
-  "needs_review": 1,
-  "records": 7,
+  "needs_review": 2,
+  "records": 8,
   "rejected": 5,
   "rendered": true,
   "slug": "diclofenac",
@@ -22268,7 +22296,7 @@
    "L04AX03"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 0,
    "pgx": 4,
    "pk": 7
   },
@@ -22381,7 +22409,7 @@
   ],
   "dir": "drug_methotrexate",
   "extracted": 7,
-  "last_change": "2026-10-01T01:44:15.012959+00:00",
+  "last_change": "2026-10-03T19:49:41.721979+00:00",
   "name": "methotrexate",
   "needs_review": 12,
   "records": 26,
@@ -30816,7 +30844,7 @@
    "C10BX22"
   ],
   "counts": {
-   "pd": 3,
+   "pd": 2,
    "pgx": 0,
    "pk": 7
   },
@@ -30873,7 +30901,7 @@
   ],
   "dir": "drug_rosuvastatin",
   "extracted": 7,
-  "last_change": "2026-10-03T19:29:26.729766+00:00",
+  "last_change": "2026-10-03T19:31:07.301401+00:00",
   "name": "rosuvastatin",
   "needs_review": 5,
   "records": 12,
@@ -31114,14 +31142,10 @@
   "counts": {
    "pd": 13,
    "pgx": 0,
-   "pk": 3
+   "pk": 2
   },
   "curated": 0,
   "details": [
-   {
-    "label": "Courlet_2022 \u00b7 reference",
-    "model_id": "Salbutamol_Courlet2022_reference"
-   },
    {
     "label": "Marques_2024_2 \u00b7 reference",
     "model_id": "Salbutamol_Marques2024v2_reference"
@@ -31143,6 +31167,10 @@
     "model_id": "Salbutamol_Marques2024_value"
    },
    {
+    "label": "Courlet_2022 \u00b7 reference",
+    "model_id": "Salbutamol_Courlet2022_reference"
+   },
+   {
     "label": "Valenzuela_2006 \u00b7 reference",
     "model_id": "Salbutamol_Valenzuela2006_reference"
    },
@@ -31152,12 +31180,12 @@
    }
   ],
   "dir": "drug_salbutamol",
-  "extracted": 3,
-  "last_change": "2026-10-01T09:36:49.378429+00:00",
+  "extracted": 2,
+  "last_change": "2026-10-03T21:43:03.984633+00:00",
   "name": "salbutamol",
   "needs_review": 3,
   "records": 8,
-  "rejected": 2,
+  "rejected": 3,
   "rendered": true,
   "slug": "salbutamol",
   "stale": 8
@@ -34722,29 +34750,33 @@
   "counts": {
    "pd": 3,
    "pgx": 2,
-   "pk": 3
+   "pk": 4
   },
   "curated": 0,
   "details": [
    {
-    "label": "Bailey_2019 \u00b7 reference",
-    "model_id": "Tramadol_Bailey2019_reference"
+    "label": "Dziubina_2026 \u00b7 reference",
+    "model_id": "Tramadol_Dziubina2026_reference"
    },
    {
     "label": "Ekstrand_2026 \u00b7 reference",
     "model_id": "Tramadol_Ekstrand2026_reference"
    },
    {
-    "label": "Yoo_2022 \u00b7 reference",
-    "model_id": "Tramadol_Yoo2022_reference"
+    "label": "Garrido_2006 \u00b7 reference",
+    "model_id": "Tramadol_Garrido2006_reference"
+   },
+   {
+    "label": "Pypendop_2008 \u00b7 reference",
+    "model_id": "Tramadol_Pypendop2008_reference"
+   },
+   {
+    "label": "Bailey_2019 \u00b7 reference",
+    "model_id": "Tramadol_Bailey2019_reference"
    },
    {
     "label": "Bao_2023 \u00b7 reference",
     "model_id": "Tramadol_Bao2023_reference"
-   },
-   {
-    "label": "Dziubina_2026 \u00b7 reference",
-    "model_id": "Tramadol_Dziubina2026_reference"
    },
    {
     "label": "Elghazali_2008 \u00b7 reference",
@@ -34757,6 +34789,10 @@
    {
     "label": "Soria-Chacartegui_2026 \u00b7 reference",
     "model_id": "Tramadol_SoriaChacartegui2026_reference"
+   },
+   {
+    "label": "Yoo_2022 \u00b7 reference",
+    "model_id": "Tramadol_Yoo2022_reference"
    },
    {
     "label": "Al-Qurain_2022 \u00b7 base",
@@ -34779,10 +34815,6 @@
     "model_id": "Tramadol_Chun2025_reference"
    },
    {
-    "label": "Garrido_2006 \u00b7 reference",
-    "model_id": "Tramadol_Garrido2006_reference"
-   },
-   {
     "label": "Giorgi_2010 \u00b7 reference",
     "model_id": "Tramadol_Giorgi2010_reference"
    },
@@ -34793,22 +34825,18 @@
    {
     "label": "Itami_2016 \u00b7 reference",
     "model_id": "Tramadol_Itami2016_reference"
-   },
-   {
-    "label": "Pypendop_2008 \u00b7 reference",
-    "model_id": "Tramadol_Pypendop2008_reference"
    }
   ],
   "dir": "drug_tramadol",
-  "extracted": 3,
-  "last_change": "2026-09-28T14:42:00.655841+00:00",
+  "extracted": 4,
+  "last_change": "2026-10-03T21:49:07.559095+00:00",
   "name": "tramadol",
-  "needs_review": 5,
+  "needs_review": 6,
   "records": 18,
-  "rejected": 10,
+  "rejected": 8,
   "rendered": true,
   "slug": "tramadol",
-  "stale": 0
+  "stale": 16
  },
  "drug_trandolapril": {
   "atc_codes": [

@@ -5,7 +5,7 @@
 
 # diclofenac — `Diclofenac_Standing2011_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.75). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,18 +21,18 @@
 
 The record was built from the paper's abstract only, so reported summary statistics stood in for a fitted model. The clearance value 16.5 with unit l·h(-1)·70 kg(-1) and the volume of distribution 0.23 L fell outside the physiological window, flagged as an implausible magnitude consistent with a unit/scale extraction error. A second reader recorded no value for the clearance (16.5) and for the bioavailability parameter (0.36), disagreeing with both entries in this record. Extracted — diclofenac: CL 16.5 l·h(-1) ·70 kg(-1), V 0.23 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailability: this record has none, the second reading 0.36; it also differs on 1 more field. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of bioavailabilities: this record has none, the second reading 0.36. That field does not shape the model.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
-> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.525654+00:00) predates the upstream re-run (2026-10-01 02:33:26.100056+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:34.525654+00:00) predates the upstream re-run (2026-10-03 20:31:44.450902+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Standing JF et al., Diclofenac pharmacokinetic meta-analysi…, Paediatric anaesthesia (2011)
   ·  DOI: [10.1111/j.1460-9592.2010.03509.x](https://doi.org/10.1111/j.1460-9592.2010.03509.x)
 
 ## Model component
-<dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="rejected" stale="true" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="diclofenac" model-id="Diclofenac_Standing2011_reference" status="needs_review" stale="true" population="children aged 1-12 years" measured-compound="diclofenac" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 2 extracted.
@@ -40,12 +40,12 @@ Standing JF et al., Diclofenac pharmacokinetic meta-analysi…, Paediatric anaes
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | clearance | `Q22` · CL | 16.5 | l·h(-1) ·70 kg(-1) | 0.00032083333333333334 | [l] / [[h] · [kg]] | not captured | exact (1.0) | Standing_2011:abstract | — | not captured |
-| essential oil volume | `Q61` · V | 1.0 | mL | 1e-06 | L | not captured | review_gapfill (0.7) | Lad_2026:review | — | not captured |
+| volume of distribution | `Q61` · V | 12.0 | L | 0.012 | L | not captured | review_gapfill (0.7) | Scavone_2016:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -58,7 +58,7 @@ Standing JF et al., Diclofenac pharmacokinetic meta-analysi…, Paediatric anaes
 - dropped unlinked row (NIL): 'Single doses' — extend the ontology if this is a real PK parameter (source ['Standing_2011:abstract', 'Standing_2011:abstract', 'Standing_2011:abstract'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=diclofenac
 - abstract-only: no full text was available, so these values were read from the abstract's prose — reported summary statistics, not a fitted model
-- gap-filled Q61 (V) from Lad_2026's review values (primary lacked it)
+- gap-filled Q61 (V) from Scavone_2016's review values (primary lacked it)
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -72,14 +72,13 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.75 (6/8 fields) | 2 |
+| `gpt-oss:120b` | partly confirmed | 0.857 (6/7 fields) | 1 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>1 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[bioavailability]` | not captured | 0.36 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[dose]` | not captured | 0.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[bioavailabilities]` | not captured | 0.36 | only_one_extracted |
 
 </details>
 
@@ -97,11 +96,11 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Standing_2011:abstract'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lad_2026:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Scavone_2016:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 16.5 | not captured | not captured | ['Standing_2011:abstract'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 1.16e+03 L/h | not captured | not captured | ['Standing_2011:abstract'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.001 L | not captured | not captured | ['Lad_2026:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 12 L | not captured | not captured | ['Scavone_2016:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -115,9 +114,19 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -126,4 +135,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 02:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 20:31 UTC</sub>

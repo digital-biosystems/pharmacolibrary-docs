@@ -33,7 +33,7 @@ Yang J et al., Race differences: modeling the pharmaco…, Acta pharmacologica S
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | E max | `Q320` · not captured | 57.0 | % | not captured | llm (not captured) | Yang_2011:pdv3 |
+| PD (effect) | E max | `Q323` · not captured | 57.0 | % | not captured | direction (not captured) | Yang_2011:pdv3 |
 | PD (effect) | ED 50 | `Q321` · not captured | 1.74 | mg | not captured | llm (not captured) | Yang_2011:pdv3 |
 | PD (effect) | E 0 | `Q324` · not captured | -0.802 | % | not captured | llm (not captured) | Yang_2011:pdv3 |
 | model term | θ (race on ED 50) | `Q900` · not captured | 0.564 | not captured | not captured | llm (not captured) | Yang_2011:pdv3 |

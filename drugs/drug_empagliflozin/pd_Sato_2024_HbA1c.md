@@ -33,7 +33,7 @@ Sato H et al., Model-based meta-analysis of HbA1c redu…, Scientific reports (2
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
 | PD (effect) | Base | `Q324` · not captured | -0.124 | % | not captured | llm (not captured) | Sato_2024:pdv3 |
-| PD (effect) | Emax | `Q320` · not captured | -0.796 | % | not captured | llm (not captured) | Sato_2024:pdv3 |
+| PD (effect) | Emax | `Q323` · not captured | -0.796 | % | not captured | direction (not captured) | Sato_2024:pdv3 |
 | PD (effect) | ED50 | `Q321` · not captured | 0.251 | normalized dose | not captured | llm (not captured) | Sato_2024:pdv3 |
 | PD (effect) | n | `Q325` · not captured | 0.662 | not captured | not captured | llm (not captured) | Sato_2024:pdv3 |
 

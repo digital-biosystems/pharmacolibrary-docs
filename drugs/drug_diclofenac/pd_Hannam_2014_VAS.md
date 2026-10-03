@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD postoperative pain (visual analogue score)&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;D11A&quot;,&quot;href&quot;:&quot;atc/D11A.md&quot;},{&quot;label&quot;:&quot;diclofenac&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/&quot;},{&quot;label&quot;:&quot;Hannam_2014 \u00b7 PD visual analogue score&quot;}]"></div>
 <div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Diclofenac_Yuan2017_reference&quot;,&quot;label&quot;:&quot;Yuan_2017_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/Diclofenac_Yuan2017_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Hannam_2014_VAS&quot;,&quot;label&quot;:&quot;Hannam_2014 \u00b7 VAS&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_diclofenac/pd_Hannam_2014_VAS.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# postoperative pain (visual analogue score) — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+# visual analogue score — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -12,13 +12,13 @@
 
 ## What this record describes
 
-**As extracted:** Diclofenac (with acetaminophen) drives postoperative pain (visual analogue score) (in VAS 0-10): direct sigmoid Emax (Hill) effect.
+**As extracted:** Diclofenac (concentrations from the PK model of Evans_1993) drives visual analogue score: direct Emax (saturable) effect.
 
 **Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
 
 - **paper:** `Hannam_2014`
-- **model family:** `sigmoid_emax`
-- **driver:** `not_resolved`
+- **model family:** `emax`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** inhibition/additive
 
@@ -29,10 +29,9 @@ Hannam JA et al., Postoperative analgesia using diclofena…, Paediatric anaesth
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | equilibration half-time | `Q326` · not captured | 0.23 | h | not captured | llm (not captured) | Hannam_2014:pdv3 |
-| PD (effect) | maximum effect | `Q320` · not captured | 4.9 | not captured | not captured | llm (not captured) | Hannam_2014:pdv3 |
-| PD (effect) | concentration resulting in 50% of EMAX | `Q321` · not captured | 1.23 | mg·l(-1) | not captured | llm (not captured) | Hannam_2014:pdv3 |
-| PD (effect) | peak placebo effect | `Q341` · not captured | 6.8 | not captured | not captured | llm (not captured) | Hannam_2014:pdv3 |
+| PD (effect) | EMAX | `Q323` · not captured | 4.9 | not captured | not captured | direction (not captured) | Hannam_2014:pdv3 |
+| PD (effect) | C50 | `Q321` · not captured | 1.23 | mg·l(-1) | not captured | llm (not captured) | Hannam_2014:pdv3 |
+| PD (effect) | placebo_Emax | `Q341` · not captured | 6.8 | not captured | not captured | llm (not captured) | Hannam_2014:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
