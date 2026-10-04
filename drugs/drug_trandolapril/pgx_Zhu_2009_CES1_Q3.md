@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;C09A&quot;,&quot;href&quot;:&quot;atc/C09A.md&quot;},{&quot;label&quot;:&quot;trandolapril&quot;,&quot;href&quot;:&quot;drugs/drug_trandolapril/&quot;},{&quot;label&quot;:&quot;Zhu_2009 \u00b7 PGx CES1&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CES1 — PGx  <span class="pk-badge pk-badge--neutral">evidence_only</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM popPK screen).">in vitro</span>
+# CES1 — PGx  <span class="pk-badge pk-badge--neutral" title="the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.">qualitative</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM popPK screen).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -11,7 +11,7 @@
 
 > **Species: in vitro.** This record comes from an in-vitro study (cells, tissue or microsomes), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from the LLM popPK screen).
 
-- **what it is:** association only — the paper links the gene to the drug, but no quantitative effect was extracted, so it changes no model
+- **what it is:** qualitative — the paper links the gene to the drug but states no effect size on a model parameter, so it changes no model.
 - **source:** this paper, `Zhu_2009` — [doi](https://doi.org/10.1016/j.bcp.2008.12.017)
 - **gene:** CES1
 - **mechanism:** formation — the gene's enzyme forms an active metabolite

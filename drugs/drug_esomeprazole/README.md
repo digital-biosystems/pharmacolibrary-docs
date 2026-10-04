@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A02B&quot;,&quot;href&quot;:&quot;atc/A02B.md&quot;},{&quot;label&quot;:&quot;esomeprazole&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Esomeprazole_Chung2022_reference&quot;,&quot;label&quot;:&quot;Chung_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 # esomeprazole
 
@@ -19,6 +19,14 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 **Indication.** Esomeprazole is indicated for the treatment of acid-reflux disorders including healing and maintenance of erosive esophagitis, and symptomatic gastroesophageal reflux disease (GERD), peptic ulcer disease, H. pylori eradication, prevention of gastrointestinal bleeds with NSAID use, and for the long-term treatment of pathological hypersecretory conditions including Zollinger-Ellison Syndrome.
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| esomeprazole | parent | 345.416 | C17H19N3O3S | DrugBank | [9568614](https://pubchem.ncbi.nlm.nih.gov/compound/9568614) | Gebreyesus_2022, Nagase_2020 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
@@ -29,9 +37,9 @@ PPIs such as esomeprazole have also been shown to inhibit the activity of dimeth
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | — | 1-compartment (no model) | 2 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | — | 1-compartment (no model) | 1 | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Chung_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Chung2022_reference.md) | ▶ model + simulator | 1-compartment, oral | 3 | Chung TK et al., A population PK-PD model of YH4808, a n…, CPT: pharmacometrics & syst… (2022) | [10.1002/psp4.12839](https://doi.org/10.1002/psp4.12839) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Nagase_2020_reference](drugs/drug_esomeprazole/Esomeprazole_Nagase2020_reference.md) | — | 1-compartment (no model) | 1 | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.6). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Gebreyesus_2022_reference](drugs/drug_esomeprazole/Esomeprazole_Gebreyesus2022_reference.md) | — | 1-compartment (no model) | 0 | Gebreyesus MS et al., Population pharmacokinetics of esomepra…, British journal of clinical… (2022) | [10.1111/bcp.15416](https://doi.org/10.1111/bcp.15416) |
 
 ## Pharmacodynamics (PD)
 
@@ -68,38 +76,39 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 29 matched, 16 returned
 - **screened:** 13  ·  **relevant:** 4
-- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 0
+- **records:** 3  ·  extracted 1  ·  needs_review 1  ·  rejected 1  ·  stale 3
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_3 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Liu_2016.pdf` | Liu D et al., Pharmacokinetic and Pharmacodynamic Mod…, Journal of clinical pharmac… (2016) | popPK | 10 | [10.1002/jcph.733](https://doi.org/10.1002/jcph.733) | [26970404](https://pubmed.ncbi.nlm.nih.gov/26970404) | The paper describes a population PK study of esomeprazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Nagase_2020.pdf` | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | popPK | 10 | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) | [32227647](https://pubmed.ncbi.nlm.nih.gov/32227647) | The paper is a population PK study of esomeprazole and provides specific numeric values for apparent clearance (CL) for different CYP2C19 phenotypes in the text. |
-| `Earp_2017.pdf` | Earp JC et al., Esomeprazole FDA Approval in Children W…, Journal of pediatric gastro… (2017) | popPK | 9 | [10.1097/MPG.0000000000001467](https://doi.org/10.1097/MPG.0000000000001467) | [27875488](https://pubmed.ncbi.nlm.nih.gov/27875488) | The paper describes a population PK study for esomeprazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Nagase_2020.pdf` | Nagase M et al., Population pharmacokinetic analysis of…, Journal of clinical pharmac… (2020) | popPK | 10 | [10.1111/jcpt.13129](https://doi.org/10.1111/jcpt.13129) | [32227647](https://pubmed.ncbi.nlm.nih.gov/32227647) | The paper reports a population PK model for esomeprazole in humans and provides specific numeric values for apparent clearance (CL) across different CYP2C19 phenotypes in the abstract. |
+| `Earp_2017.pdf` | Earp JC et al., Esomeprazole FDA Approval in Children W…, Journal of pediatric gastro… (2017) | popPK | 9 | [10.1097/MPG.0000000000001467](https://doi.org/10.1097/MPG.0000000000001467) | [27875488](https://pubmed.ncbi.nlm.nih.gov/27875488) | The paper describes a population PK model for esomeprazole in children and adults, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Andersson_2001.pdf` | Andersson T et al., Pharmacokinetics and pharmacodynamics o…, Alimentary pharmacology & t… (2001) | popPK | 8 | [10.1046/j.1365-2036.2001.01087.x](https://doi.org/10.1046/j.1365-2036.2001.01087.x) | [11563995](https://pubmed.ncbi.nlm.nih.gov/11563995) | The study reports PK/PD for esomeprazole in humans, but the evidence provided only contains qualitative statements about AUC and PD inhibition percentages, lacking specific numeric values for clearance, volume, or half-life. |
 
-<sub>queue written 2026-09-18T04:34:35.851576+00:00</sub>
+<sub>queue written 2026-10-04T08:49:33.905536+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Andersson_2001 | irrelevant | 2 | 0 | The study reports pharmacodynamic effects (acid inhibition) and qualitative PK trends (AUC increase) but lacks quantitative disposition parameters (CL, V, ka) or a compartmental model for esomeprazole. |
+| popPK | Andersson_2001 | relevant | 8 | 2 | The study reports PK/PD for esomeprazole in humans, but the evidence provided only contains qualitative statements about AUC and PD inhibition percentages, lacking specific numeric values for clearance, volume, or half-life. |
 | popPK | Boinpally_2023 | irrelevant | 1 | 0 | The study focuses on the pharmacokinetics of atogepant, with esomeprazole serving only as a co-administered agent to test for interactions, and no quantitative PK parameters for esomeprazole are reported. |
-| popPK | Chung_2022 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of YH4808, with esomeprazole serving only as a comparator for pharmacodynamic effects (time at pH &gt; 4) without reporting PK parameters for esomeprazole. |
-| popPK | Earp_2017 | relevant | 9 | 0 | The paper describes a population PK study for esomeprazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| popPK | Chung_2022 | irrelevant | 0 | 0 | The study models the pharmacokinetics of YH4808, with esomeprazole serving only as an active comparator for pharmacodynamic effects. |
+| popPK | Earp_2017 | relevant | 9 | 0 | The paper describes a population PK model for esomeprazole in children and adults, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | PD | Earp_2017 | not_relevant | 3 | 1 | The paper describes exposure-matching and qualitative similarity of exposure-response relationships but does not provide numeric PD parameters (e.g., Emax, EC50) or a quantitative concentration-effect curve in the provided text. |
-| popPK | Kirchheiner_2009_2 | irrelevant | 0 | 0 | The paper is a pharmacodynamic meta-analysis focusing on gastric pH and dose equivalence, not a pharmacokinetic study reporting disposition parameters like clearance or volume for esomeprazole. |
-| popPK | Lacy_2017_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cabozantinib, and esomeprazole is only mentioned as a co-administered agent that did not affect cabozantinib exposure. |
-| popPK | Lee_2025 | relevant | 4 | 2 | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for esomeprazole, but lacks the specific compartmental/population parameters (CL, V, Q, ka) required for high relevance, and key numeric values for Cmax and t1/2 are likely in tables not fully provided in the evidence. |
-| popPK | Litalien_2005 | irrelevant | 0 | 0 | The paper is a review that explicitly states no pharmacokinetic data are available for esomeprazole in children, and it does not report any quantitative parameters for esomeprazole. |
+| popPK | Kirchheiner_2009_2 | irrelevant | 0 | 0 | The paper is a pharmacodynamic meta-analysis of gastric pH effects and does not report pharmacokinetic parameters (CL, V, ka) for esomeprazole. |
+| popPK | Lacy_2017_2 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of cabozantinib, and esomeprazole is only mentioned as a co-administered agent that did not affect cabozantinib levels. |
+| popPK | Lee_2025 | relevant | 5 | 4 | The study reports non-compartmental PK parameters (AUC, Cmax, t1/2) for esomeprazole, but lacks compartmental model parameters (CL, V, Q) and specific numeric values for Cmax and t1/2 are not explicitly listed in the provided text. |
+| popPK | Litalien_2005 | irrelevant | 0 | 0 | The paper is a review that explicitly states no pharmacokinetic data are available for esomeprazole in children, and it does not report quantitative parameters for esomeprazole. |
 | popPK | Liu_2016 | relevant | 10 | 0 | The paper describes a population PK study of esomeprazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| popPK | Schlachter_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for atogepant, not esomeprazole, which is only mentioned as a concomitant medication. |
-| popPK | Simon_2015 | irrelevant | 0 | 0 | The study focuses on clopidogrel pharmacokinetics and pharmacodynamics, with esomeprazole serving only as a co-administered comparator agent rather than the subject drug. |
+| popPK | Schlachter_2026 | irrelevant | 0 | 0 | The study reports population pharmacokinetic parameters for atogepant, not esomeprazole (which is only mentioned as a concomitant medication). |
+| popPK | Simon_2015 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics and pharmacodynamics of clopidogrel, with esomeprazole serving only as a co-administered comparator agent. |
 | popPK | Zhang_2025 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of tacrolimus, with esomeprazole serving only as a co-administered drug affecting tacrolimus bioavailability. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 04:34 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 08:49 UTC</sub>

@@ -13196,14 +13196,14 @@
   ],
   "dir": "drug_esomeprazole",
   "extracted": 1,
-  "last_change": "2026-09-28T14:37:58.555926+00:00",
+  "last_change": "2026-10-04T08:49:44.334359+00:00",
   "name": "esomeprazole",
   "needs_review": 1,
   "records": 3,
   "rejected": 1,
   "rendered": true,
   "slug": "esomeprazole",
-  "stale": 0
+  "stale": 3
  },
  "drug_etacrynic_acid": {
   "atc_codes": [

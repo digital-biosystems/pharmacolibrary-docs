@@ -18,9 +18,9 @@
 
 **Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
-> Oral calcium (400 mg elemental calcium as calcium carbonate tablets or Geumjin thermal spring water) was modeled via an indirect response (K-PD) model in which absorbed but unobserved ionized calcium inhibits the secretion (zero-order input, kinPTH) of PTH, with PTH eliminated by first-order koutPTH; no potency values (Imax, IC50) are stated in the excerpts.
+> The model describes how absorbed calcium (driver) inhibits the zero-order production (kin) of parathyroid hormone (PTH) via a proportional indirect response mechanism, with a kout of 0.849 hr-1 and an EC50 of 0.158 mmol/L. The paper states that the net absorbed calcium inhibits the secretion of PTH, consistent with the record's inhibition of production.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Ahn_2014`
 - **model family:** `indirect_response_i`

@@ -1,5 +1,5 @@
 {
- "kb_mtime": 1791103168.708956,
+ "kb_mtime": 1791104503.4002042,
  "rows": {
   "13c_urea": {
    "abstract_only": 3,
@@ -1840,14 +1840,14 @@
   "acetoxolone": {
    "abstract_only": 27,
    "backend": "ollama",
-   "calls": 107,
+   "calls": 35,
    "combination": null,
    "curated_models": 0,
    "drug": "acetoxolone",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 372.5,
+   "elapsed_s": 143.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 6,
    "has_truth": false,
@@ -1880,8 +1880,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 2,
-   "tokens_in": 232289,
-   "tokens_out": 5787
+   "tokens_in": 84143,
+   "tokens_out": 2320
   },
   "acetrizoic_acid": {
    "abstract_only": 4,
@@ -5516,7 +5516,7 @@
   "alginic_acid": {
    "abstract_only": 79,
    "backend": "ollama",
-   "calls": 435,
+   "calls": 126,
    "combination": null,
    "curated_models": 0,
    "drug": "alginic_acid",
@@ -5525,7 +5525,7 @@
     "investigational",
     "withdrawn"
    ],
-   "elapsed_s": 2313.9,
+   "elapsed_s": 534.7,
    "eu_status": "not_centrally_authorised",
    "grobid": 7,
    "has_truth": false,
@@ -5562,8 +5562,8 @@
    "supp_other": 23,
    "supp_pd_none": 2,
    "supp_pd_other": 2,
-   "tokens_in": 1250296,
-   "tokens_out": 20105
+   "tokens_in": 313678,
+   "tokens_out": 10486
   },
   "alglucerase": {
    "abstract_only": 5,
@@ -10282,7 +10282,7 @@
    "pgx_other": 0,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 19,
+   "pk_gapfill": 11,
    "pk_review_models": 6,
    "poppk_extracted": 16,
    "poppk_other": 7,
@@ -32542,14 +32542,14 @@
   "calcium_silicate": {
    "abstract_only": 43,
    "backend": "ollama",
-   "calls": 16,
+   "calls": 67,
    "combination": null,
    "curated_models": 0,
    "drug": "calcium_silicate",
    "drugbank_groups": [
     "investigational"
    ],
-   "elapsed_s": 143.4,
+   "elapsed_s": 315.8,
    "eu_status": "not_centrally_authorised",
    "grobid": 8,
    "has_truth": false,
@@ -32582,8 +32582,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 4,
-   "tokens_in": 51724,
-   "tokens_out": 847
+   "tokens_in": 212833,
+   "tokens_out": 4795
   },
   "camazepam": {
    "abstract_only": 3,
@@ -48863,9 +48863,9 @@
    "pd_rejected": 23,
    "pd_review_models": 0,
    "pdftext": 0,
-   "pgx_extracted": 14,
+   "pgx_extracted": 15,
    "pgx_gapfill": null,
-   "pgx_other": 84,
+   "pgx_other": 83,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
    "pk_gapfill": 0,
@@ -48880,14 +48880,14 @@
    "src_pd_abstract_only": 3,
    "src_pd_jats": 29,
    "src_pgx_grobid": 3,
-   "src_pgx_jats": 11,
+   "src_pgx_jats": 12,
    "src_pk_jats": 13,
    "supp_nonmem": 6,
    "supp_other": 20,
    "supp_pd_none": 8,
    "supp_pd_nonmem": 9,
    "supp_pd_other": 15,
-   "supp_pgx_none": 4,
+   "supp_pgx_none": 5,
    "supp_pgx_other": 10,
    "supp_pk_none": 8,
    "supp_pk_nonmem": 1,
@@ -64234,12 +64234,12 @@
   "dihydroxialumini_sodium_carbonate": {
    "abstract_only": 29,
    "backend": "ollama",
-   "calls": 37,
+   "calls": 34,
    "combination": null,
    "curated_models": 0,
    "drug": "dihydroxialumini_sodium_carbonate",
    "drugbank_groups": [],
-   "elapsed_s": 583.1,
+   "elapsed_s": 109.3,
    "eu_status": "not_centrally_authorised",
    "grobid": 3,
    "has_truth": false,
@@ -64272,8 +64272,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 4,
-   "tokens_in": 59259,
-   "tokens_out": 2242
+   "tokens_in": 65113,
+   "tokens_out": 2225
   },
   "diiodohydroxypropane": {
    "abstract_only": 0,
@@ -75536,14 +75536,14 @@
   "enprostil": {
    "abstract_only": 24,
    "backend": "ollama",
-   "calls": 6,
+   "calls": 30,
    "combination": null,
    "curated_models": 0,
    "drug": "enprostil",
    "drugbank_groups": [
     "experimental"
    ],
-   "elapsed_s": 86.0,
+   "elapsed_s": 113.6,
    "eu_status": "not_centrally_authorised",
    "grobid": 4,
    "has_truth": false,
@@ -75576,8 +75576,8 @@
    "review_records": 0,
    "supp_nonmem": 0,
    "supp_other": 1,
-   "tokens_in": 6378,
-   "tokens_out": 2612
+   "tokens_in": 67661,
+   "tokens_out": 2597
   },
   "ensifentrine": {
    "abstract_only": 3,
@@ -78724,7 +78724,7 @@
   "esomeprazole": {
    "abstract_only": 9,
    "backend": "ollama",
-   "calls": 9,
+   "calls": 76,
    "combination": null,
    "curated_models": 0,
    "drug": "esomeprazole",
@@ -78732,7 +78732,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 89.8,
+   "elapsed_s": 637.7,
    "eu_status": "authorised_eu_central",
    "grobid": 4,
    "has_truth": false,
@@ -78743,8 +78743,8 @@
    "non_oa": 0,
    "oa": 7,
    "papers": 16,
-   "pd_extracted": 0,
-   "pd_gapfill": 1,
+   "pd_extracted": 1,
+   "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 1,
    "pd_review_models": 0,
@@ -78754,21 +78754,23 @@
    "pgx_other": 0,
    "pgx_rejected": 0,
    "pgx_review_models": 0,
-   "pk_gapfill": 2,
+   "pk_gapfill": 1,
    "pk_review_models": 1,
    "poppk_extracted": 1,
    "poppk_other": 1,
    "poppk_rejected": 1,
    "relevant": 10,
    "reused_cache": false,
-   "review_papers": 4,
-   "review_records": 134,
+   "review_papers": 3,
+   "review_records": 47,
+   "src_pd_abstract_only": 1,
    "src_pk_jats": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
+   "supp_pd_none": 1,
    "supp_pk_none": 1,
-   "tokens_in": 18827,
-   "tokens_out": 1947
+   "tokens_in": 162968,
+   "tokens_out": 29730
   },
   "esomeprazole_amoxicillin_and_clarithromycin": {
    "abstract_only": 9,
@@ -78785,9 +78787,9 @@
    "interactions": 0,
    "jats": 0,
    "model": null,
-   "no_pdf": 8,
+   "no_pdf": 7,
    "non_oa": 1,
-   "oa": 1,
+   "oa": 2,
    "papers": 10,
    "pd_extracted": 0,
    "pd_gapfill": 0,
@@ -83184,7 +83186,7 @@
   "famotidine": {
    "abstract_only": 5,
    "backend": "ollama",
-   "calls": 20,
+   "calls": 45,
    "combination": null,
    "curated_models": 0,
    "drug": "famotidine",
@@ -83192,7 +83194,7 @@
     "approved",
     "investigational"
    ],
-   "elapsed_s": 100.7,
+   "elapsed_s": 392.5,
    "eu_status": "not_centrally_authorised",
    "grobid": 1,
    "has_truth": false,
@@ -83203,8 +83205,8 @@
    "non_oa": 0,
    "oa": 2,
    "papers": 7,
-   "pd_extracted": 0,
-   "pd_gapfill": 3,
+   "pd_extracted": 1,
+   "pd_gapfill": 0,
    "pd_other": 0,
    "pd_rejected": 1,
    "pd_review_models": 0,
@@ -83223,17 +83225,19 @@
    "reused_cache": false,
    "review_papers": 2,
    "review_records": 54,
+   "src_pd_grobid": 1,
    "src_pk_abstract_only": 1,
    "src_pk_grobid": 1,
    "src_pk_jats": 1,
    "supp_nonmem": 0,
    "supp_other": 0,
+   "supp_pd_none": 1,
    "supp_pk_none": 3,
-   "tokens_in": 27548,
-   "tokens_out": 4746
+   "tokens_in": 64813,
+   "tokens_out": 21976
   },
   "famotidine_combinations": {
-   "abstract_only": 23,
+   "abstract_only": 27,
    "backend": null,
    "calls": null,
    "combination": "resolved",
@@ -83247,10 +83251,10 @@
    "interactions": 0,
    "jats": 4,
    "model": null,
-   "no_pdf": 20,
+   "no_pdf": 23,
    "non_oa": 0,
-   "oa": 9,
-   "papers": 29,
+   "oa": 10,
+   "papers": 33,
    "pd_extracted": 0,
    "pd_gapfill": 0,
    "pd_other": 0,
@@ -83272,7 +83276,7 @@
    "review_papers": 0,
    "review_records": 0,
    "supp_nonmem": 0,
-   "supp_other": 3,
+   "supp_other": 4,
    "tokens_in": null,
    "tokens_out": null
   },

@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A10B&quot;,&quot;href&quot;:&quot;atc/A10B.md&quot;},{&quot;label&quot;:&quot;teneligliptin&quot;,&quot;href&quot;:&quot;drugs/drug_teneligliptin/&quot;},{&quot;label&quot;:&quot;Park_2021 \u00b7 PGx CYP3A4&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP3A4 — PGx  <span class="pk-badge pk-badge--red">rejected</span>
+# CYP3A4 — PGx  <span class="pk-badge pk-badge--red" title="not accepted.">rejected</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -9,7 +9,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-- **what it is:** needs review — the extraction is incomplete or inconsistent
+- **what it is:** rejected — not accepted.
 - **source:** this paper, `Park_2021` — [doi](https://doi.org/10.3389/fphar.2021.736317)
 - **gene:** CYP3A4
 - **mechanism:** metabolism — the gene's enzyme clears the drug

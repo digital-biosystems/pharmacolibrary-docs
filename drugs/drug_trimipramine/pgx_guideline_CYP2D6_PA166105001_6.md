@@ -1,7 +1,7 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;trimipramine&quot;,&quot;href&quot;:&quot;drugs/drug_trimipramine/&quot;},{&quot;label&quot;:&quot;guideline \u00b7 PGx CYP2D6&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral">guideline_estimate</span>
+# CYP2D6 — PGx  <span class="pk-badge pk-badge--neutral" title="the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.">guideline estimate</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -9,7 +9,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-- **what it is:** from a CPIC/DPWG guideline, not from this paper's numbers
+- **what it is:** guideline estimate — the effect comes from a CPIC / DPWG dosing guideline, not from this paper's numbers.
 - **source:** the CPIC dosing guideline ([ClinPGx PA166105001](https://www.clinpgx.org/guidelineAnnotation/PA166105001))
 - **gene:** CYP2D6
 - **mechanism:** metabolism — the gene's enzyme clears the drug
