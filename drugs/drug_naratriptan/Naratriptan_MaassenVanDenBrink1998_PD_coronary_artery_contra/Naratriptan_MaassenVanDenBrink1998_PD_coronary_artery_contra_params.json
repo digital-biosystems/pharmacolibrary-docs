@@ -17,8 +17,10 @@
   "0.00017099999999999998": 5.05
  },
  "stop_time": 1800.0,
+ "subtitle": "coronary artery contraction against naratriptan concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

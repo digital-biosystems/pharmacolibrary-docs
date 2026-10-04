@@ -17,8 +17,10 @@
   "4.77": -0.5
  },
  "stop_time": 48.0,
+ "subtitle": "relaxation against amlodipine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

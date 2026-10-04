@@ -17,8 +17,10 @@
   "8.269999999999999e-06": 118.918
  },
  "stop_time": 83.0,
+ "subtitle": "Systolic blood pressure (SBP) against amlodipine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "0.00056": -0.00024166666666666667
  },
  "stop_time": 5.6,
+ "subtitle": "name (bacterial load) against linezolid, vancomycin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

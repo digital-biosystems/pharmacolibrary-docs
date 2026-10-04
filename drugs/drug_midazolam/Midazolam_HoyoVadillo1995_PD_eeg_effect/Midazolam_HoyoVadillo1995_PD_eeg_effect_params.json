@@ -17,8 +17,10 @@
   "8.499999999999999e-05": 146.0
  },
  "stop_time": 850.0,
+ "subtitle": "Amplitudes in the 11.5-30 Hz (beta) frequency band of the EEG (EEG effect) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

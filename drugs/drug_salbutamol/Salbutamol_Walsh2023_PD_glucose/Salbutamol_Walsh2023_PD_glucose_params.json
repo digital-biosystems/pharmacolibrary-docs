@@ -17,8 +17,10 @@
   "1.08e-06": 6.959999999999999
  },
  "stop_time": 11.0,
+ "subtitle": "Blood glucose (glucose) against salbutamol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

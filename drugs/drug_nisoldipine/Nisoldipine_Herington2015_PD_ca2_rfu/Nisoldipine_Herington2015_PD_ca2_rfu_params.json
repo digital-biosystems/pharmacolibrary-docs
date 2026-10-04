@@ -17,8 +17,10 @@
   "7.43e-07": -45.46
  },
  "stop_time": 7.5e-06,
+ "subtitle": "intracellular Ca2+-mobilization (Ca2+ (RFU)) against hit compounds (benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine) concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

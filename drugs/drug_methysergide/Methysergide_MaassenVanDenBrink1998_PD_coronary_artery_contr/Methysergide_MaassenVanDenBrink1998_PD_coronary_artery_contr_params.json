@@ -17,8 +17,10 @@
   "0.000243": 3.9
  },
  "stop_time": 2500.0,
+ "subtitle": "coronary artery contraction against methysergide concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

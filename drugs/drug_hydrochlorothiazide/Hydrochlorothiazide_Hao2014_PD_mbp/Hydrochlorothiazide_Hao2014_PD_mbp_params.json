@@ -17,8 +17,10 @@
   "0.00040339999999999994": 114.91531597158988
  },
  "stop_time": 1900.0,
+ "subtitle": "mean arterial blood pressure (MBP) against hydrochlorothiazide concentration",
  "template": "PD_IndirectTurnoverSweep",
  "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

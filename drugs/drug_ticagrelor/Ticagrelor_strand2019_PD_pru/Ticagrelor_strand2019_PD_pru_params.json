@@ -17,8 +17,10 @@
   "0.000116": -49.25
  },
  "stop_time": 1200.0,
+ "subtitle": "P2Y12 reaction units (PRU) against ticagrelor concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

@@ -17,8 +17,10 @@
   "7.499999999999998e-05": 6.01
  },
  "stop_time": 0.75,
+ "subtitle": "CYP1A enzyme induction ratio (CYP1A induction ratio) against omeprazole concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

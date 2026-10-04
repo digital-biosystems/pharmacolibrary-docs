@@ -17,8 +17,10 @@
   "0.000186": 3.0
  },
  "stop_time": 1900.0,
+ "subtitle": "COMFORT-B score (COMFORT-B) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

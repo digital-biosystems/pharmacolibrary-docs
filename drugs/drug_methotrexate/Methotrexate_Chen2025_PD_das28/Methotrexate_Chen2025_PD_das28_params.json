@@ -17,8 +17,10 @@
   "12458880.0": -0.2745
  },
  "stop_time": 210.0,
+ "subtitle": "Disease Activity Score 28 (percentage change from baseline) (DAS28) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

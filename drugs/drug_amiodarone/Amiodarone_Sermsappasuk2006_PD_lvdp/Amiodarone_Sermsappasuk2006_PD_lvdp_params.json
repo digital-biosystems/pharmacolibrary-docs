@@ -17,8 +17,10 @@
   "0.53": -0.185
  },
  "stop_time": 5.3,
+ "subtitle": "left ventricular developed pressure (LVDP) against amiodarone concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "0.00998": -2.585
  },
  "stop_time": 100.0,
+ "subtitle": "pain score reduction (VAS) against paracetamol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

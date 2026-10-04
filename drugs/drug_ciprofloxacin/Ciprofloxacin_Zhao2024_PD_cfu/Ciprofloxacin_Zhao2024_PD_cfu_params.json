@@ -17,8 +17,10 @@
   "0.0015299999999999997": 0.0009375
  },
  "stop_time": 16.0,
+ "subtitle": "Bacterial counts (CFU) under ciprofloxacin exposure, described by a killing rate constant in a semi-mechanistic subpopulation PKPD model (CFU) against ciprofloxacin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

@@ -17,8 +17,10 @@
   "3.6399999999999995e-06": 0.0
  },
  "stop_time": 0.037,
+ "subtitle": "platelet count (PLT) against linezolid concentration",
  "template": "PD_IndirectTurnoverSweep",
  "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

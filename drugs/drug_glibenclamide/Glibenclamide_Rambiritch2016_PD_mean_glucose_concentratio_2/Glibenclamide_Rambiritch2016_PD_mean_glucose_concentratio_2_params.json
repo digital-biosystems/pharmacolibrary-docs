@@ -17,8 +17,10 @@
   "0.03599999999999999": 16.529999999999994
  },
  "stop_time": 360.0,
+ "subtitle": "mean glucose concentration against glibenclamide concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

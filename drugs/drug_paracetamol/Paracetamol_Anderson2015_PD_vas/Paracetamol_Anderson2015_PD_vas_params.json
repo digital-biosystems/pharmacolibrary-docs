@@ -17,8 +17,10 @@
   "0.009799999999999998": -2.6
  },
  "stop_time": 98.0,
+ "subtitle": "VAS pain score (VAS) against paracetamol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

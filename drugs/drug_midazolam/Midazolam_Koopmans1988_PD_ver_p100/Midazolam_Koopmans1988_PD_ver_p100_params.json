@@ -17,8 +17,10 @@
   "4.81e-05": 0.005900000000000001
  },
  "stop_time": 490.0,
+ "subtitle": "VER P-100 latency (VER-P100) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

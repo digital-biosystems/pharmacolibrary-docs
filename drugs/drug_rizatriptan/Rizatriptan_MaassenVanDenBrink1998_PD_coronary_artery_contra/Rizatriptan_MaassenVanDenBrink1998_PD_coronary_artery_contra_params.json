@@ -17,8 +17,10 @@
   "0.000448": 5.05
  },
  "stop_time": 4500.0,
+ "subtitle": "coronary artery contraction against rizatriptan concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

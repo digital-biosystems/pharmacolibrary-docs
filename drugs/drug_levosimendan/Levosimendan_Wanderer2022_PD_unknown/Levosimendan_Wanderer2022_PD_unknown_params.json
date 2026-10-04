@@ -17,8 +17,10 @@
   "5.38": 0.515
  },
  "stop_time": 54.0,
+ "subtitle": "vasorelaxation (unknown) against levosimendan concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "6.273148148148149e-10": 3.060000006228
  },
  "stop_time": 550.0,
+ "subtitle": "mean 24-h intragastric pH (pH) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "1.02": 11.1
  },
  "stop_time": 11.0,
+ "subtitle": "contraction of human isolated coronary artery against rizatriptan concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

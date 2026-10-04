@@ -17,8 +17,10 @@
   "4046112.0000000005": 0.3515
  },
  "stop_time": 67.0,
+ "subtitle": "ACR20 response (ACR20) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

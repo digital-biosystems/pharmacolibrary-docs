@@ -17,8 +17,10 @@
   "18.28": -1.1199999999999999
  },
  "stop_time": 190.0,
+ "subtitle": "Bacterial loading reduction in blood (E. coli O78), combined enrofloxacin + ciprofloxacin exposure (log10 cfu/mL reduction (blood, ENR+CIP)) against enrofloxacin + ciprofloxacin (combined AUC0–24/MIC) concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

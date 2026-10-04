@@ -17,8 +17,10 @@
   "1.7e-05": 10.25
  },
  "stop_time": 170.0,
+ "subtitle": "coronary artery contraction against ergotamine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

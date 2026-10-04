@@ -17,8 +17,10 @@
   "4740.0": 0.4625
  },
  "stop_time": 48000.0,
+ "subtitle": "headache relief rate (E) against A Φ 1D · AUC Φ 1D concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

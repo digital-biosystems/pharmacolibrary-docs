@@ -17,8 +17,10 @@
   "1.85e-06": 16.529999999999994
  },
  "stop_time": 19.0,
+ "subtitle": "mean glucose concentration against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

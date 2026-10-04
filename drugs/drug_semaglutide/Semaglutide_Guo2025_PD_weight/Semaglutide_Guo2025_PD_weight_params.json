@@ -17,8 +17,10 @@
   "3.84e-07": -5.85
  },
  "stop_time": 3.9,
+ "subtitle": "weight reduction (ΔΔWeight) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

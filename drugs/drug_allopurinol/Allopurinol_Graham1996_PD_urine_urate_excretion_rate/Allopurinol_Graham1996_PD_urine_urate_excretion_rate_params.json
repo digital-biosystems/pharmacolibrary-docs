@@ -17,8 +17,10 @@
   "0.0037399999999999994": 1.9
  },
  "stop_time": 38.0,
+ "subtitle": "urine urate excretion rate against oxypurinol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

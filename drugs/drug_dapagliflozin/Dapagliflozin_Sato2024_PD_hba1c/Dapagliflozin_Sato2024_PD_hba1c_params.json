@@ -17,8 +17,10 @@
   "0.251": -0.00522
  },
  "stop_time": 2.6,
+ "subtitle": "HbA1c change (HbA1c) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

@@ -17,8 +17,10 @@
   "16511040.0": 0.247
  },
  "stop_time": 280.0,
+ "subtitle": "ACR50 response (ACR50) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

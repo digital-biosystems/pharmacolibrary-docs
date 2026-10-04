@@ -17,8 +17,10 @@
   "2.9444444444444443e-10": -0.5
  },
  "stop_time": 11.0,
+ "subtitle": "prothrombin time-international normalized ratio (PT-INR) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

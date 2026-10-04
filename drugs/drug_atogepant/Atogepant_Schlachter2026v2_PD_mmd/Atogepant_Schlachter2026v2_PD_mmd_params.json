@@ -17,8 +17,10 @@
   "0.412": -1.2643547037797553e-07
  },
  "stop_time": 4.2,
+ "subtitle": "monthly migraine days (MMD) against atogepant concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

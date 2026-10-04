@@ -17,8 +17,10 @@
   "1.7399999999999999e-06": -0.29302000000000006
  },
  "stop_time": 18.0,
+ "subtitle": "LDL-C reduction (%) (LDL-C) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

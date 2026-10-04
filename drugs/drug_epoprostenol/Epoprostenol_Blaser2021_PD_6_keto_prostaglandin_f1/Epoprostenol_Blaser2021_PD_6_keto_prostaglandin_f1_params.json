@@ -17,8 +17,10 @@
   "0.69": 70.94999999999999
  },
  "stop_time": 6.9,
+ "subtitle": "name (6-keto-prostaglandin F1α) against 4-methylaminoantipyrine (4-MAA) concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

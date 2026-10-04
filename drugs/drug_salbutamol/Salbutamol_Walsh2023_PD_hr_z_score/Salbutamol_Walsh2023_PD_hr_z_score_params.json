@@ -17,8 +17,10 @@
   "0.000385": 5.16
  },
  "stop_time": 3900.0,
+ "subtitle": "Heart rate (age-standardised Z-score) (HR Z-score) against salbutamol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

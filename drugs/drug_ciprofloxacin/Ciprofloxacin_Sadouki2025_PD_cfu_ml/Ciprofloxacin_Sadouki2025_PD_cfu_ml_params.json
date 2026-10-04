@@ -17,8 +17,10 @@
   "1.0599999999999998e-05": -2.275
  },
  "stop_time": 0.11,
+ "subtitle": "Bacterial load (colony forming units, CFU/mL) of E. coli NCTC 12,241 under ciprofloxacin exposure (CFU/mL) against ciprofloxacin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

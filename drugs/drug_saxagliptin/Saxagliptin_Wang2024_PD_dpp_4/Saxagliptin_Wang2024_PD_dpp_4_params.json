@@ -17,8 +17,10 @@
   "0.00025173999999999997": -23.41
  },
  "stop_time": 2600.0,
+ "subtitle": "DPP-4 inhibition ratio (DPP-4) against 5-hydroxy Saxagliptin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

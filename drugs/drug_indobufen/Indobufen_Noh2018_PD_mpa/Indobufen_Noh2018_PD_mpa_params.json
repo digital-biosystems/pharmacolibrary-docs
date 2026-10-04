@@ -17,8 +17,10 @@
   "0.006749999999999999": -0.0319
  },
  "stop_time": 68.0,
+ "subtitle": "platelet aggregation inhibition (MPA) against S-indobufen and R-indobufen concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

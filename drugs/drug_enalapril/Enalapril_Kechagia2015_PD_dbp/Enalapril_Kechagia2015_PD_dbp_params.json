@@ -17,8 +17,10 @@
   "4e-06": -9.0
  },
  "stop_time": 40.0,
+ "subtitle": "diastolic blood pressure (DBP) against enalaprilat concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

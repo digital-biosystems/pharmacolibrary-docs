@@ -17,8 +17,10 @@
   "1.9999999999999998e-05": 6.5
  },
  "stop_time": 200.0,
+ "subtitle": "coronary artery contraction against dihydroergotamine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

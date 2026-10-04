@@ -17,8 +17,10 @@
   "6.66": 0.4995
  },
  "stop_time": 67.0,
+ "subtitle": "Norepinephrine normalized percent contractile response (NE-normalized % contraction) against ergotamine tartrate concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

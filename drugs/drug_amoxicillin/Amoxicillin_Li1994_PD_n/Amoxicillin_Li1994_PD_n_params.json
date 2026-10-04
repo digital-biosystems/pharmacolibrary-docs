@@ -17,8 +17,10 @@
   "0.0029499999999999995": -2.745
  },
  "stop_time": 30.0,
+ "subtitle": "bacterial count (N) against amoxicillin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

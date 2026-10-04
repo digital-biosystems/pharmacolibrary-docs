@@ -17,8 +17,10 @@
   "13.57": 57.586000000000006
  },
  "stop_time": 140.0,
+ "subtitle": "Bispectral Index (BIS) against midazolam concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "2.0899999999999996e-05": -7.675000000000001
  },
  "stop_time": 210.0,
+ "subtitle": "pain free against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

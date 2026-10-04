@@ -17,8 +17,10 @@
   "4.5599999999999995e-06": 13.914999999999997
  },
  "stop_time": 46.0,
+ "subtitle": "fasting blood glucose (FBG) against dose",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Dose–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": false,

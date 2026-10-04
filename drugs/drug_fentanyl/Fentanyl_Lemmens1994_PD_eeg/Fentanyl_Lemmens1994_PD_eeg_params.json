@@ -17,8 +17,10 @@
   "9.800000000000001e-06": 13.0
  },
  "stop_time": 98.0,
+ "subtitle": "spectral edge (EEG) against fentanyl concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

@@ -17,8 +17,10 @@
   "3.6799999999999997": -0.099
  },
  "stop_time": 37.0,
+ "subtitle": "antihyperglycaemic effect against metformin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

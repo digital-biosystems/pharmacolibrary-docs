@@ -17,8 +17,10 @@
   "6.731999999999999e-05": 6.823752228163993
  },
  "stop_time": 110.0,
+ "subtitle": "P2Y12 reaction unit (PRU) against clopidogrel H4 concentration",
  "template": "PD_IndirectTurnoverSweep",
  "template_fmu": "PD_IndirectTurnoverSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

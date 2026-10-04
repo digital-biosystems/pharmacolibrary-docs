@@ -17,8 +17,10 @@
   "0.00020999999999999995": 1.0597833333333333
  },
  "stop_time": 2.1,
+ "subtitle": "viable count of ciprofloxacin-susceptible (S) and -resistant (R) subpopulations (viable count (S, R)) against ciprofloxacin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

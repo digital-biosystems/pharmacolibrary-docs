@@ -17,8 +17,10 @@
   "0.013999999999999999": -1.1666666666666665e-10
  },
  "stop_time": 140000.0,
+ "subtitle": "production rate of uric acid (kP) against oxypurinol concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

@@ -17,8 +17,10 @@
   "67.4": -0.0007499999999999999
  },
  "stop_time": 680.0,
+ "subtitle": "plasma glucose (glucose) against dapagliflozin concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

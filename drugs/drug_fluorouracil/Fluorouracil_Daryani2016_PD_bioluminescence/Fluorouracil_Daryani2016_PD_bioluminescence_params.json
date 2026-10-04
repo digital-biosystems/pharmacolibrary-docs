@@ -17,8 +17,10 @@
   "2.12": -9.138888888888889e-05
  },
  "stop_time": 22.0,
+ "subtitle": "tumor growth (bioluminescence) against 5-FU concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

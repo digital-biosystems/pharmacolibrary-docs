@@ -17,8 +17,10 @@
   "7.999999999999999e-09": 0.035
  },
  "stop_time": 0.08,
+ "subtitle": "QTF interval (QTF) against ibutilide concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": false,

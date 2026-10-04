@@ -17,8 +17,10 @@
   "7.5e-08": 44.8
  },
  "stop_time": 0.75,
+ "subtitle": "desire to use VAS against buprenorphine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "E0": {
    "display_only": true,

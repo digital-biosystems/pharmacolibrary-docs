@@ -17,8 +17,10 @@
   "99.0": -0.06469307999999999
  },
  "stop_time": 990.0,
+ "subtitle": "name (chloride current) against glycine concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Exposure–response simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,

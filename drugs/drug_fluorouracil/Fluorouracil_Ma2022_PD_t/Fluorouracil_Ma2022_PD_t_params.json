@@ -17,8 +17,10 @@
   "5.142": -0.336935
  },
  "stop_time": 52.0,
+ "subtitle": "tumor volume (T) against 5-FU anabolites concentration",
  "template": "PD_SigmoidEmaxSweep",
  "template_fmu": "PD_SigmoidEmaxSweep.fmu",
+ "title": "Concentration–effect simulated by the PD model",
  "units": {
   "EC50": {
    "display_only": true,
