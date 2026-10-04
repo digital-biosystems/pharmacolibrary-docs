@@ -112,6 +112,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </details>
 
 
+**Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (expected: no popPK params — 3 false positives)
+
+> Clinical-outcome paper on standard vs high-dose ibuprofen for PDA closure in neonates — reports exposure/outcome metrics (AUC, closure rate, ligation, feeding intolerance, GI bleeding) but NO distribution volume and NO clearance/elimination. Not a compartmental popPK model even though popPK is mentioned. The pipeline must REJECT it (validate C0b: no disposition core → provisional_status=rejected), so nothing is extracted for scoring.
+
+| o_id | agreement | extracted | truth | fold |
+|---|---|---|---|---|
+| `['Q19', '']` | false_positive | 486 | None | not captured |
+| `['Q49', '']` | false_positive | 1.1 | None | not captured |
+| `['Q61', '']` | false_positive | 22.37 | None | not captured |
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |

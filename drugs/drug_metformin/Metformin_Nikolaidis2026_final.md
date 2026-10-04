@@ -107,6 +107,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </details>
 
 
+**Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (0/5 matched, agreement 0.0, tol 0.25)
+
+| o_id | agreement | extracted | truth | fold |
+|---|---|---|---|---|
+| `Q27` · CL/F | missing_in_extraction | None | 83.6 | not captured |
+| `Q353` · Vnorm/F | missing_in_extraction | None | 136.0 | not captured |
+| `Q355` · CLnorm/F | missing_in_extraction | None | 71.1 | not captured |
+| `Q49` · kabs | missing_in_extraction | None | 0.35 | not captured |
+| `Q76` · V/F | missing_in_extraction | None | 168.8 | not captured |
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |

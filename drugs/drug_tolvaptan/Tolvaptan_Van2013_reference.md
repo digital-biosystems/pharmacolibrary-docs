@@ -120,6 +120,28 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </details>
 
 
+**Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (13/16 matched, agreement 0.812, tol 0.25)
+
+| o_id | agreement | extracted | truth | fold |
+|---|---|---|---|---|
+| `Q27` · CL/F | match | 16.0 l/h | 16.0 l/h | 1.0 |
+| `Q290` · V1/F | match | 111 l | 111 l | 1.0 |
+| `Q49` · kabs | match | 0.832 h^-1 | 0.832 h-1 | 1.0 |
+| `Q69` · Q/F | match | 2.93 l/h | 2.93 l/h | 1.0 |
+| `Q82` · V2/F | match | 31.2 l | 31.2 l | 1.0 |
+| `Q83` · tlag | match | 0.154 h | 0.154 h | 1.0 |
+| `Q87` · Frel | missing_in_extraction | None | None | not captured |
+| `Q900:theta_cl_f_chf_nyha_class_1_or_2` | match | -6.69 l/h | -6.69 l/h | 1.0 |
+| `Q900:theta_cl_f_chf_nyha_class_3_or_4` | match | -8.72 l/h | -8.72 l/h | 1.0 |
+| `Q900:theta_cl_f_cirrhosis_child_pugh_score_ge_6_l_h` | match | -6.72 l/h | -6.72 l/h | 1.0 |
+| `Q900:theta_cl_f_hyponatremia_moderate_hyponatremia` | match | -2.92 l/h | -2.92 l/h | 1.0 |
+| `Q900:theta_cl_f_weight_power` | missing_in_extraction | None | 0.372 | not captured |
+| `Q900:theta_q319_weight_power` | extra_in_extraction | 0.678 | None | not captured |
+| `Q900:theta_v1_f_chf_nyha_class_1_or_2` | match | -44.5 l | -44.5 l | 1.0 |
+| `Q900:theta_v1_f_chf_nyha_class_3_or_4` | match | -54.1 l | -54.1 l | 1.0 |
+| `Q900:theta_v1_f_cirrhosis_child_pugh_score_ge_10_l` | match | 71.9 l | 71.9 l | 1.0 |
+| `Q900:theta_v1_f_weight_power` | missing_in_extraction | None | 0.678 | not captured |
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |

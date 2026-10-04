@@ -120,22 +120,31 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 </details>
 
 
-**Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (3/10 matched, agreement 0.3, tol 0.25)
+**Ground-truth comparison:** <span class="pk-badge pk-badge--orange">unconfirmed</span>  (13/15 matched, agreement 0.867, tol 0.25)
 
 | o_id | agreement | extracted | truth | fold |
 |---|---|---|---|---|
-| `Q22` · CL | value_mismatch | 7.248 L/h | 9257.28 L/h | 1277.219 |
-| `Q30` · Q | value_mismatch | 4.476 L/h | 587.93 L/h | 131.352 |
-| `Q351` · CLm/F | missing_in_extraction | None | 74.25 | not captured |
-| `Q367` · Vm/F | missing_in_extraction | None | 51.45 | not captured |
-| `Q369` · QH | extra_in_extraction | 845.70 | None | not captured |
-| `Q45` · fm | value_mismatch | 0.960 | 0.125 | 7.68 |
+| `Q22` · CL | match | 9257.28 L/h | 9257.28 L/h | 1.0 |
+| `Q22@clopidogrel carboxylic acid` | match | 7.248 L/h | 7.248 L/h | 1.0 |
+| `Q22@clopidogrel h4` | match | 74.25 L/h | 74.25 L/h | 1.0 |
+| `Q30` · Q | match | 587.93 L/h | 587.93 L/h | 1.0 |
+| `Q30@clopidogrel carboxylic acid` | match | 4.476 L/h | 4.476 L/h | 1.0 |
+| `Q369` · QH | match | 845.70 L/h | 845.70 L/h | 1.0 |
+| `Q45` · fm | missing_in_extraction | None | 0.125 | not captured |
+| `Q45@clopidogrel carboxylic acid` | extra_in_extraction | 0.960 | None | not captured |
+| `Q45@clopidogrel h4` | extra_in_extraction | 0.125 | None | not captured |
 | `Q49` · kabs | match | 19.64 h−1 | 19.64 1/h | 1.0 |
-| `Q61` · V | extra_in_extraction | 51.45 | None | not captured |
-| `Q63` · V1 | value_mismatch | 17.34 L | 1463.92 L | 84.424 |
-| `Q64` · V2 | value_mismatch | 51.89 L | 2823.98 L | 54.422 |
+| `Q61@clopidogrel h4` | match | 51.45 L | 51.45 L | 1.0 |
+| `Q63` · V1 | match | 1463.92 L | 1463.92 L | 1.0 |
+| `Q63@clopidogrel carboxylic acid` | match | 17.34 L | 17.34 L | 1.0 |
+| `Q64` · V2 | match | 2823.98 L | 2823.98 L | 1.0 |
+| `Q64@clopidogrel carboxylic acid` | match | 51.89 L | 51.89 L | 1.0 |
 | `Q83` · tlag | match | 0.196 h | 0.196 h | 1.0 |
-| `Q900` · equation variable | match | -2.432 | 4.476 L/h | -0.543 |
+| `Q900:fm2` | missing_in_extraction | None | 0.960 | not captured |
+| `Q900:theta_fm_im_power@clopidogrel carboxylic acid` | extra_in_extraction | -1.428 | None | not captured |
+| `Q900:theta_fm_im_power@clopidogrel h4` | extra_in_extraction | -0.450 | None | not captured |
+| `Q900:theta_fm_pm_power@clopidogrel carboxylic acid` | extra_in_extraction | -2.432 | None | not captured |
+| `Q900:theta_fm_pm_power@clopidogrel h4` | extra_in_extraction | -0.996 | None | not captured |
 
 **Scholar closed-form checks:**
 
