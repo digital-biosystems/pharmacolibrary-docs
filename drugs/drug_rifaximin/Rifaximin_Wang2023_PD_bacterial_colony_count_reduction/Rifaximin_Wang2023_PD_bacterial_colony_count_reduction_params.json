@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "log10 CFU/gland",
   "factor": 1.0,
+  "label": "rifaximin concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "log10 CFU/gland",
   "factor": 1.0,
-  "label": "response"
+  "label": "name (bacterial colony count reduction)"
  }
 }

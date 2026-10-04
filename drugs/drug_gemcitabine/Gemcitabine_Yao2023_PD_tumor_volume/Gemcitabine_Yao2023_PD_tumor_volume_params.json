@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "μg/mL",
   "factor": 0.0009999999999999998,
+  "label": "gemcitabine concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "",
   "factor": 1.0,
-  "label": "response"
+  "label": "name (tumor volume)"
  }
 }

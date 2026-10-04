@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/mL",
   "factor": 1e-06,
+  "label": "5-hydroxy Saxagliptin concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "ratio",
   "factor": 1.0,
-  "label": "response"
+  "label": "DPP-4 inhibition ratio (DPP-4)"
  }
 }

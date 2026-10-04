@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Amlodipine concentration range",
   "unit": "ng ml-1",
   "scale": 1.0,
   "min": 8.3,

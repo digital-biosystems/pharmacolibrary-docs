@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "4-methylaminoantipyrine (4-MAA) concentration range",
   "unit": "µM",
   "scale": 1.0,
   "min": 0.69,

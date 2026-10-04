@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "",
   "factor": 1.0,
+  "label": "fentanyl concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "",
   "factor": 1.0,
-  "label": "response"
+  "label": "transcutaneous pCO2 (pCO2)"
  }
 }

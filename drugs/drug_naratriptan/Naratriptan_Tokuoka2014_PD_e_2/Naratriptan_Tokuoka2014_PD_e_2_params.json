@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "",
   "factor": 1.0,
+  "label": "A Φ 1D · AUC Φ 1D concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "headache relief rate (E)"
  }
 }

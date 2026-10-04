@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "ngmlP-1",
   "factor": 1.0,
+  "label": "midazolam concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "uV s-1",
   "factor": 1.0,
-  "label": "response"
+  "label": "amplitudes in the 11.5-30 Hz (beta) frequency band (EEG beta)"
  }
 }

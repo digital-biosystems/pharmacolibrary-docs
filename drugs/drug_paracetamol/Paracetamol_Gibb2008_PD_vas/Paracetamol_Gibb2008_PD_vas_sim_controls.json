@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Paracetamol concentration range",
   "unit": "mg/l",
   "scale": 1.0000000000000002,
   "min": 10.0,

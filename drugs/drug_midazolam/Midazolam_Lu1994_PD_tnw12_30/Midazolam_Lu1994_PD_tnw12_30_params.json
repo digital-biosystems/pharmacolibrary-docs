@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "micrograms.L-1",
   "factor": 9.999999999999997e-07,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "TNW12-30",
   "factor": 1.0,
-  "label": "response"
+  "label": "total number of waves per second within the frequency range of 12-30 Hz (TNW12-30) in the central-occipital (C1-O1) lead EEG (TNW12-30)"
  }
 }

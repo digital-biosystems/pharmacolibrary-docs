@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "ng/mL",
   "factor": 1e-06,
+  "label": "brexpiprazole concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "D2/D3 receptor occupancy in the putamen (occupancy)"
  }
 }

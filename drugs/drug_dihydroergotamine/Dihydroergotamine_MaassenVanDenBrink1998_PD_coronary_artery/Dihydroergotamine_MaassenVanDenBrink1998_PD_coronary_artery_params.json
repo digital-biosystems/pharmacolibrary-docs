@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "nmol/L",
   "factor": 1e-06,
+  "label": "dihydroergotamine concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%K+",
   "factor": 1.0,
-  "label": "response"
+  "label": "coronary artery contraction"
  }
 }

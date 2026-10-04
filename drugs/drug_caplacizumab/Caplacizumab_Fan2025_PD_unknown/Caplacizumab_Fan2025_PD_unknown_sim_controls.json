@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Nb457-NbHSA-Nb457 concentration range",
   "unit": "μg/mL",
   "scale": 1.0000000000000002,
   "min": 0.035,

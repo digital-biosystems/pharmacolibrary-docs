@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "µM",
   "factor": 1.0,
+  "label": "erythromycin, retapamulin, pyridoxine, folic acid, ivermectin concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "name (inhibition of SARS-CoV-2 papain-like protease)"
  }
 }

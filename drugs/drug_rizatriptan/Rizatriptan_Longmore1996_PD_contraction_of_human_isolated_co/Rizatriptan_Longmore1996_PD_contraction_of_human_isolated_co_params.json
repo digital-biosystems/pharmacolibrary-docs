@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "mM",
   "factor": 1.0,
+  "label": "rizatriptan concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "% 45 mM KCl",
   "factor": 1.0,
-  "label": "response"
+  "label": "contraction of human isolated coronary artery"
  }
 }

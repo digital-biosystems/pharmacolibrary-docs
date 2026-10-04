@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "ng/mL",
   "factor": 1e-06,
+  "label": "oxypurinol concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mg/h",
   "factor": 2.7777777777777777e-10,
-  "label": "response"
+  "label": "production rate of uric acid (kP)"
  }
 }

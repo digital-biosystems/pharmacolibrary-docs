@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "μg",
   "factor": 1e-09,
+  "label": "carvedilol concentration",
   "per_s": 1e-09,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "bpm",
   "factor": 1.0,
-  "label": "response"
+  "label": "Heart rate (isoproterenol-induced, with carvedilol inhibition) (HR)"
  }
 }

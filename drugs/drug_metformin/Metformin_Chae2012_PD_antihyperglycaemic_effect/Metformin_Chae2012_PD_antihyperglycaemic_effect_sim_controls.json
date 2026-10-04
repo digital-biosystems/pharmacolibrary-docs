@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Metformin concentration range",
   "unit": "mg ml -1",
   "scale": 1.0000000000000002,
   "min": 3.7,

@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "h•ng/ml",
   "factor": 1.0,
+  "label": "evacetrapib concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "% change from baseline",
   "factor": 1.0,
-  "label": "response"
+  "label": "HDL-C"
  }
 }

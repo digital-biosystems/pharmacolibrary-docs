@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "nmol l –1",
   "factor": 1e-06,
+  "label": "ticagrelor concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "PRU",
   "factor": 1.0,
-  "label": "response"
+  "label": "P2Y12 reaction units (PRU)"
  }
 }

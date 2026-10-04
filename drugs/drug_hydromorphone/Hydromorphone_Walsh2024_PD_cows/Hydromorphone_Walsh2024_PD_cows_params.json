@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/mL",
   "factor": 1e-06,
+  "label": "buprenorphine concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "score",
   "factor": 1.0,
-  "label": "response"
+  "label": "Clinical Opiate Withdrawal Scale (COWS)"
  }
 }

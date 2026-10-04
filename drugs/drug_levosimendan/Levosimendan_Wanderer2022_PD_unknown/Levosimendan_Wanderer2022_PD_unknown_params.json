@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "-log10EC50",
   "factor": 1.0,
+  "label": "levosimendan concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "vasorelaxation (unknown)"
  }
 }

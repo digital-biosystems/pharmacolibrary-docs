@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "pV/s",
   "factor": 1.0,
-  "label": "response"
+  "label": "Amplitudes in the 11.5-30 Hz (beta) frequency band of the EEG (EEG effect)"
  }
 }

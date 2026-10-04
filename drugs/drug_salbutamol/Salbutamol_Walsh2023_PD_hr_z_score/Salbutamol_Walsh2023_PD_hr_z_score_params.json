@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "salbutamol concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "z-score",
   "factor": 1.0,
-  "label": "response"
+  "label": "Heart rate (age-standardised Z-score) (HR Z-score)"
  }
 }

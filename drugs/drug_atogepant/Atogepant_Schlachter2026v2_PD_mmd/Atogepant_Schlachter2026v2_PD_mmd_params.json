@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "nM",
   "factor": 1.0,
+  "label": "atogepant concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "counts/month",
   "factor": 3.802570537683474e-07,
-  "label": "response"
+  "label": "monthly migraine days (MMD)"
  }
 }

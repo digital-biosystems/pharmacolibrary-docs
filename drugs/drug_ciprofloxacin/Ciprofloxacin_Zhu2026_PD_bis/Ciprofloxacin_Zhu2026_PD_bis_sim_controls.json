@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Ciprofol concentration range",
   "unit": "ng·ml-1",
   "scale": 1.0,
   "min": 240.0,

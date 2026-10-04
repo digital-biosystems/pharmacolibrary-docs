@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Oxypurinol concentration range",
   "unit": "μmol L À1",
   "scale": 1.0000000000000002,
   "min": 140.0,

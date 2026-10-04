@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/mL",
   "factor": 1e-06,
+  "label": "brexpiprazole concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "",
   "factor": 1.0,
-  "label": "response"
+  "label": "PANSS total score (PANSS)"
  }
 }

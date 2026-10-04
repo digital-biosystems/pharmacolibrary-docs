@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "μM",
   "factor": 1.0,
+  "label": "glycine concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "nA",
   "factor": 0.0315576,
-  "label": "response"
+  "label": "name (chloride current)"
  }
 }

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Polymyxin B concentration range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 1.5,

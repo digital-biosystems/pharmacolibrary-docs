@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "h*μg/L",
   "factor": 1.0,
+  "label": "dose",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "inhibition of platelet aggregation (IPA)"
  }
 }

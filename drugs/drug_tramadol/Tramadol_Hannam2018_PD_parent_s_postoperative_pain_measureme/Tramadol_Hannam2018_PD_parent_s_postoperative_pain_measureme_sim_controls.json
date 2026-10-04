@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Acetaminophen, ibuprofen, tramadol concentration range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 7.1,

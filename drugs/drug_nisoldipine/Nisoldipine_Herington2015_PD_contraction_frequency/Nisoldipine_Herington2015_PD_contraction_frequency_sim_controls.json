@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Hit compounds (benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine) concentration range",
   "unit": "μM",
   "scale": 1.0,
   "min": 1e-06,

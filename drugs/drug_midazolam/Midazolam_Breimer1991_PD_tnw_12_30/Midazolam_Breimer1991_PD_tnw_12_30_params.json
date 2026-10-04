@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "µg/L",
   "factor": 9.999999999999997e-07,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "Hz",
   "factor": 1.0,
-  "label": "response"
+  "label": "TNW 12-30"
  }
 }

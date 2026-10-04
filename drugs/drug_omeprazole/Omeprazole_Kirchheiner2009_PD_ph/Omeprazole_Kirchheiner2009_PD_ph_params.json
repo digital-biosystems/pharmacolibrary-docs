@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "mg/day",
   "factor": 1.1574074074074074e-11,
+  "label": "dose",
   "per_s": 1.15740740741e-11,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "pH",
   "factor": 3.6e-09,
-  "label": "response"
+  "label": "mean 24-h intragastric pH (pH)"
  }
 }

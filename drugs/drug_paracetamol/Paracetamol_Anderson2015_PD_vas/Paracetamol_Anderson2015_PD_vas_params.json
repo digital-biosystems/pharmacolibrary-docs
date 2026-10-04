@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "mg/l",
   "factor": 0.0009999999999999998,
+  "label": "paracetamol concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "0--10",
   "factor": 1.0,
-  "label": "response"
+  "label": "VAS pain score (VAS)"
  }
 }

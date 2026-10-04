@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "pmol⋅mg−1",
   "factor": 1.0,
+  "label": "5-FU anabolites concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "cm3",
   "factor": 1.0,
-  "label": "response"
+  "label": "tumor volume (T)"
  }
 }

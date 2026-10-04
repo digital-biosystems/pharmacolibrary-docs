@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "mg/h",
   "factor": 2.7777777777777777e-10,
+  "label": "dose",
   "per_s": 2.77777777778e-10,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "",
   "factor": 1.0,
-  "label": "response"
+  "label": "prothrombin time-international normalized ratio (PT-INR)"
  }
 }

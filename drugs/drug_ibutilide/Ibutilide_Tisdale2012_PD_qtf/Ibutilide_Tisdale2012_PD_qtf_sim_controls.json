@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Ibutilide concentration range",
   "unit": "μg/L",
   "scale": 1.0000000000000002,
   "min": 0.008,

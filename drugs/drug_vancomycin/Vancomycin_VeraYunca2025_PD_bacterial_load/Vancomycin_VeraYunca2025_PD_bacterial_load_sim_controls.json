@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Linezolid, vancomycin concentration range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 0.56,

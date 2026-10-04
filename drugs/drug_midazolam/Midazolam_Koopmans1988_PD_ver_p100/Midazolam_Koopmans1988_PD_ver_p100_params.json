@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "msec",
   "factor": 0.001,
-  "label": "response"
+  "label": "VER P-100 latency (VER-P100)"
  }
 }

@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "µg/ml",
   "factor": 0.0009999999999999998,
+  "label": "ciprofloxacin concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "CFU/ml",
   "factor": 1.0,
-  "label": "response"
+  "label": "viable count of ciprofloxacin-susceptible (S) and -resistant (R) subpopulations (viable count (S, R))"
  }
 }

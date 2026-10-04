@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng ml-1",
   "factor": 1e-06,
+  "label": "amlodipine concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mmHg",
   "factor": 1.0,
-  "label": "response"
+  "label": "Diastolic blood pressure (DBP)"
  }
 }

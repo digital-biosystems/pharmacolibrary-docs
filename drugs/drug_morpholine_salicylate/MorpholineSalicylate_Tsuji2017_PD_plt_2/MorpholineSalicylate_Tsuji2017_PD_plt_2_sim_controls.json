@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Linezolid concentration range",
   "unit": "mg l -1",
   "scale": 1.0000000000000002,
   "min": 0.0037,

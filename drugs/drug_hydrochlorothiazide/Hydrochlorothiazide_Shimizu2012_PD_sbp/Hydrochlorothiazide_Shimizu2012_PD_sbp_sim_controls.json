@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Plasma renin activity concentration range",
   "unit": "ng Ang I/mL/h",
   "scale": 1.0,
   "min": 86.0,

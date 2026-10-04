@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "mg l -1",
   "factor": 0.0009999999999999998,
+  "label": "linezolid concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "×10 3 μl -1",
   "factor": 1.0,
-  "label": "response"
+  "label": "platelet count (PLT)"
  }
 }

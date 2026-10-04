@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Enalaprilat concentration range",
   "unit": "ng mt'",
   "scale": 1.0,
   "min": 1.9,

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Erythromycin, retapamulin, pyridoxine, folic acid, ivermectin concentration range",
   "unit": "µM",
   "scale": 1.0,
   "min": 10.0,

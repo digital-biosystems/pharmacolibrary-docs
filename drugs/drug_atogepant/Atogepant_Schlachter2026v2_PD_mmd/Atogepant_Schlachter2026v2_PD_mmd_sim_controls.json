@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Atogepant concentration range",
   "unit": "nM",
   "scale": 1.0,
   "min": 0.42,

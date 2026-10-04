@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "h",
   "factor": 3600.0,
+  "label": "tulathromycin concentration",
   "per_s": 3600.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "Log10 CFU/mL",
   "factor": 1.0,
-  "label": "response"
+  "label": "antibacterial effect (change in bacterial count over 168 h) (I)"
  }
 }

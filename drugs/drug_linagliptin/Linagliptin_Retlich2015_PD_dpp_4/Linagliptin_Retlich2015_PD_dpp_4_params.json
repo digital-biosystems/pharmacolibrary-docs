@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "nmol/L",
   "factor": 1e-06,
+  "label": "linagliptin concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "",
   "factor": 1.0,
-  "label": "response"
+  "label": "DPP-4 activity (DPP-4)"
  }
 }

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Gemcitabine concentration range",
   "unit": "ng/ml",
   "scale": 1.0,
   "min": 1.5,

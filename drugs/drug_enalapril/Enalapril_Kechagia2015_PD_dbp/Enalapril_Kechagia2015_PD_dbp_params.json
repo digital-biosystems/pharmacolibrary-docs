@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "enalaprilat concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mmHg",
   "factor": 1.0,
-  "label": "response"
+  "label": "diastolic blood pressure (DBP)"
  }
 }

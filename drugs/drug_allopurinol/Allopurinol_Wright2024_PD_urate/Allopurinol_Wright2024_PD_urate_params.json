@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "μmol L À1",
   "factor": 0.0009999999999999998,
+  "label": "oxypurinol concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mmol L À1",
   "factor": 0.9999999999999999,
-  "label": "response"
+  "label": "serum urate (urate)"
  }
 }

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Diclofenac (with acetaminophen) concentration range",
   "unit": "mg·l(-1)",
   "scale": 1.0000000000000002,
   "min": 1.3,

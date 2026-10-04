@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Enrofloxacin + ciprofloxacin (combined AUC0–24/MIC) concentration range",
   "unit": "h (AUC0–24/MIC ratio)",
   "scale": 1.0,
   "min": 14.0,

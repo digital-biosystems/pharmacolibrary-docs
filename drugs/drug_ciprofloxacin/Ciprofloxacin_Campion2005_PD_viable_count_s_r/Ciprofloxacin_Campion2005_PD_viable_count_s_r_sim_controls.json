@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Ciprofloxacin concentration range",
   "unit": "µg/ml",
   "scale": 1.0000000000000002,
   "min": 0.21,

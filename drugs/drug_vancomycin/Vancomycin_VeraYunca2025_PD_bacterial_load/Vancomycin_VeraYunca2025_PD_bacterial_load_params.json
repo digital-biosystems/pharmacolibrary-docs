@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
+  "label": "linezolid, vancomycin concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "h−1",
   "factor": 0.0002777777777777778,
-  "label": "response"
+  "label": "name (bacterial load)"
  }
 }

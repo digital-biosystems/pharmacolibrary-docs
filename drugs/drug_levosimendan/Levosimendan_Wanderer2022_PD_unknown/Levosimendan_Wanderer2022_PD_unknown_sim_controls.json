@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Levosimendan concentration range",
   "unit": "-log10EC50",
   "scale": 1.0,
   "min": 5.4,

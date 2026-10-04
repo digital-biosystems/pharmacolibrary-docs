@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "5-hydroxy Saxagliptin concentration range",
   "unit": "ng/mL",
   "scale": 1.0,
   "min": 260.0,

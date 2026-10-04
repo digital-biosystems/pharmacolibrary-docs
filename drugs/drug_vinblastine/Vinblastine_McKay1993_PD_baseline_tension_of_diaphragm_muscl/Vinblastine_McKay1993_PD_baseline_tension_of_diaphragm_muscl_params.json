@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "pM",
   "factor": 1.0,
+  "label": "vinblastine concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "g",
   "factor": 0.001,
-  "label": "response"
+  "label": "baseline tension of diaphragm muscle"
  }
 }

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Vinblastine concentration range",
   "unit": "pM",
   "scale": 1.0,
   "min": 88.0,

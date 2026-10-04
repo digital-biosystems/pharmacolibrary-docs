@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "mg/L",
   "factor": 0.0009999999999999998,
+  "label": "glibenclamide concentration",
   "per_s": 0.001,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mmol/L",
   "factor": 0.9999999999999999,
-  "label": "response"
+  "label": "fasting blood glucose (FBG)"
  }
 }

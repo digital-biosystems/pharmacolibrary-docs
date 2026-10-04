@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Dapagliflozin concentration range",
   "unit": "ng/mL*h",
   "scale": 1.0,
   "min": 39.0,

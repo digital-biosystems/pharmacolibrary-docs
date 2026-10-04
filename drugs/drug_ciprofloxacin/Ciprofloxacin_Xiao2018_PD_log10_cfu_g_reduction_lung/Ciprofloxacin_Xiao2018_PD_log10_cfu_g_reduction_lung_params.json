@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "h (AUC0–24/MIC ratio)",
   "factor": 1.0,
+  "label": "enrofloxacin concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "Log 10 cfu/mL",
   "factor": 1.0,
-  "label": "response"
+  "label": "Bacterial loading reduction in lung (E. coli O78) (log10 cfu/g reduction (lung))"
  }
 }

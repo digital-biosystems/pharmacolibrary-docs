@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "h",
   "factor": 3600.0,
+  "label": "enrofloxacin + ciprofloxacin (sum of concentrations) concentration",
   "per_s": 3600.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "Log10CFU/mL",
   "factor": 1.0,
-  "label": "response"
+  "label": "Change in bacterial count of E. coli Anhui112 after 24 h ex vivo incubation in intestinal contents (infected broilers) (E (log10CFU/mL))"
  }
 }

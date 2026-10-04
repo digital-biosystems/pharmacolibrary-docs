@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Rizatriptan concentration range",
   "unit": "nmol/L",
   "scale": 1.0,
   "min": 450.0,

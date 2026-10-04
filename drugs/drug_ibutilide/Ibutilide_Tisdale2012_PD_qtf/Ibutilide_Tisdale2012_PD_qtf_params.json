@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "μg/L",
   "factor": 9.999999999999997e-07,
+  "label": "ibutilide concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "s",
   "factor": 1.0,
-  "label": "response"
+  "label": "QTF interval (QTF)"
  }
 }

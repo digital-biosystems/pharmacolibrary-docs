@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "A Φ 1B · AUC Φ 1B concentration range",
   "unit": "",
   "scale": 1.0,
   "min": 3600.0,

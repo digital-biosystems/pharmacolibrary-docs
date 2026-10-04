@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "ng/ml",
   "factor": 1e-06,
+  "label": "midazolam concentration",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "percentage of total EEG amplitude occurring in the 13 to 30 Hz range (EEG 13-30 Hz)"
  }
 }

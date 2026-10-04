@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "mg/day",
   "factor": 1.1574074074074074e-11,
+  "label": "dose",
   "per_s": 1.15740740741e-11,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mg/dl",
   "factor": 0.009999999999999998,
-  "label": "response"
+  "label": "LDL-C"
  }
 }

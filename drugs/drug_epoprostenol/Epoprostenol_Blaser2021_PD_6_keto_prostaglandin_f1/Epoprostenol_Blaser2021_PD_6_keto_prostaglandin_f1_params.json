@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "µM",
   "factor": 1.0,
+  "label": "4-methylaminoantipyrine (4-MAA) concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "n = 8",
   "factor": 1.0,
-  "label": "response"
+  "label": "name (6-keto-prostaglandin F1α)"
  }
 }

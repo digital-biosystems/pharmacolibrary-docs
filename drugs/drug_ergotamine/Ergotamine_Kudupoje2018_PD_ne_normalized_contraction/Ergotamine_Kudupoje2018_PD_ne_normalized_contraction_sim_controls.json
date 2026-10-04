@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Ergotamine tartrate concentration range",
   "unit": "−Log [ETA]",
   "scale": 1.0,
   "min": 6.7,

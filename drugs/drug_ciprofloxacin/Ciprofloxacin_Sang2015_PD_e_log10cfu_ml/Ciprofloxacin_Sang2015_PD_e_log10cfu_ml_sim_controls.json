@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Enrofloxacin + ciprofloxacin (sum of concentrations) concentration range",
   "unit": "h",
   "scale": 1.0,
   "min": 350.0,

@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Amiodarone concentration range",
   "unit": "M",
   "scale": 1.0,
   "min": 0.53,

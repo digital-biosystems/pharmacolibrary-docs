@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Ticagrelor concentration range",
   "unit": "nmol l –1",
   "scale": 1.0,
   "min": 120.0,

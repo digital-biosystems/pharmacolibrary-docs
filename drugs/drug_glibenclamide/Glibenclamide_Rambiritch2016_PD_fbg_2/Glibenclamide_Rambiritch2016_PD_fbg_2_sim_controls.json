@@ -40,7 +40,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Glibenclamide concentration range",
   "unit": "mg/L",
   "scale": 1.0000000000000002,
   "min": 86.0,

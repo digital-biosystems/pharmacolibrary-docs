@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "week",
   "factor": 604800.0,
+  "label": "dose",
   "per_s": 604800.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "%",
   "factor": 0.01,
-  "label": "response"
+  "label": "ACR50 response (ACR50)"
  }
 }

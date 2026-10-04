@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "5-FU anabolites concentration range",
   "unit": "pmol⋅mg−1",
   "scale": 1.0,
   "min": 5.2,

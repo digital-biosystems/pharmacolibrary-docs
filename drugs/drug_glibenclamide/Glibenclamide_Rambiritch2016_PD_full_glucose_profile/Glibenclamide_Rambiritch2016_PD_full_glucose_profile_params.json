@@ -51,12 +51,13 @@
  "x_axis": {
   "display_unit": "mg",
   "factor": 1e-06,
+  "label": "dose",
   "per_s": 1e-06,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "mmol/L",
   "factor": 0.9999999999999999,
-  "label": "response"
+  "label": "full glucose profile"
  }
 }

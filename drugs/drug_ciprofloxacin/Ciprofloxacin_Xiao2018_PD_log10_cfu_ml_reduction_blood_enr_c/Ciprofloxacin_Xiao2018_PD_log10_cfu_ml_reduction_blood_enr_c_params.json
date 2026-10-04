@@ -57,12 +57,13 @@
  "x_axis": {
   "display_unit": "h (AUC0–24/MIC ratio)",
   "factor": 1.0,
+  "label": "enrofloxacin + ciprofloxacin (combined AUC0–24/MIC) concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "Log 10 cfu/mL",
   "factor": 1.0,
-  "label": "response"
+  "label": "Bacterial loading reduction in blood (E. coli O78), combined enrofloxacin + ciprofloxacin exposure (log10 cfu/mL reduction (blood, ENR+CIP))"
  }
 }

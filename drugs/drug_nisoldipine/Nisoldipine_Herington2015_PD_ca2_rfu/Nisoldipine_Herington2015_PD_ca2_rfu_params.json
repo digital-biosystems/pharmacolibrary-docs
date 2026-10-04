@@ -45,12 +45,13 @@
  "x_axis": {
   "display_unit": "μM",
   "factor": 1.0,
+  "label": "hit compounds (benzbromarone, dipyridamole, fenoterol hydrobromide, nisoldipine) concentration",
   "per_s": 1.0,
   "variable": "exposure"
  },
  "y_axis": {
   "display_unit": "% inhibition / % stimulation",
   "factor": 1.0,
-  "label": "response"
+  "label": "intracellular Ca2+-mobilization (Ca2+ (RFU))"
  }
 }

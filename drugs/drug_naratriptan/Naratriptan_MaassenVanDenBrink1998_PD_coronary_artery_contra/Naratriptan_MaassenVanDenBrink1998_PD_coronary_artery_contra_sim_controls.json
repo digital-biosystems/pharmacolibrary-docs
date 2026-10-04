@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Naratriptan concentration range",
   "unit": "nmol/L",
   "scale": 1.0,
   "min": 180.0,

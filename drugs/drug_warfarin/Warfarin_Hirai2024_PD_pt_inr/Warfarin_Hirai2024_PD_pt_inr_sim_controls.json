@@ -30,7 +30,7 @@
  },
  {
   "key": "stop_time",
-  "label": "Exposure range",
+  "label": "Dose range",
   "unit": "mg/h",
   "scale": 1.0000000000008,
   "min": 1.1,
