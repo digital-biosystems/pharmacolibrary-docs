@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrogen peroxide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrogen_peroxide/&quot;},{&quot;label&quot;:&quot;Hornberger_1989 \u00b7 PD name&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;hydrogen peroxide&quot;,&quot;href&quot;:&quot;drugs/drug_hydrogen_peroxide/&quot;},{&quot;label&quot;:&quot;Hornberger_1989 \u00b7 PD aggregation&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--green">extracted</span>
+# aggregation — PD  <span class="pk-badge pk-badge--green">extracted</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -11,16 +11,16 @@
 
 ## What this record describes
 
-**As extracted:** Hydrogen Peroxide (measured concentrations) drives name (in unknown) (stimulation; the model form was not identified).
+**As extracted:** Hydrogen_peroxide (measured concentrations) drives aggregation (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Hydrogen peroxide (H2O2, μmol/l–mmol/l concentrations) stimulates platelet activation measured as shape change, aggregation and [3H]serotonin release; the paper does not state a formal PD model (no Imax, IC50/EC50, kin/kout or ke0 values are given). Mechanistically, H2O2 triggers eicosanoid (TXA2) formation from endogenous arachidonate — optimal TXB2 formation at about 1 mmol/l H2O2, liberating 4.5 ± 0.4% of platelet-bound radioactivity — and the platelet responses are prevented by cyclooxygenase inhibition (indomethacin) or thromboxane receptor antagonism (daltroban), indicating mediation via the PGH2/TXA2 pathway.
+> Hydrogen peroxide concentrations (mmol/l) directly stimulate platelet aggregation (measured in %) via a sigmoid Emax model, with an EC50 of 850 (unit illegible in record, likely µmol/l based on context). The paper describes the mechanism as direct stimulation of platelet activation (shape change and aggregation) by H2O2, but does not explicitly state the specific kinetic parameters (e.g., kin, kout, ke0) or the exact Emax value for aggregation in the provided excerpts.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Hornberger_1989`
-- **model family:** `unknown`
+- **model family:** `sigmoid_emax`
 - **driver:** `conc_no_pk`
 - **tier:** descriptive
 - **effect:** stimulation/unknown
@@ -30,7 +30,14 @@ Hornberger W et al., Hydrogen peroxide and methyl mercury ar…, Journal of clin
   ·  DOI: [10.1515/cclm.1989.27.9.567](https://doi.org/10.1515/cclm.1989.27.9.567)
 
 ## Parameters
-_No resolved parameters._
+| role | label (paper) | Q-code · name | value | unit | value_si | link | source |
+|---|---|---|---|---|---|---|---|
+| PD (effect) | EC 50 | `Q321` · not captured | 850 | μπιοΐ/ΐ | not captured | llm (not captured) | Hornberger_1989:pdv3 |
+
+<details class="legend">
+<summary>Column legend — what each column means</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>label (paper)</code></td><td>the row or statistic label exactly as printed in the paper (label_verbatim) — never normalised, so it can be found in the PDF.</td></tr><tr><td><code>Q-code · name</code></td><td>the ontology parameter this label was matched to (Q22 = clearance, Q27 = CL/F, Q49 = ka, Q57 = half-life, …) and its canonical name. The Q-code, not the label, is what scoring and cross-paper merging use.</td></tr><tr><td><code>value</code></td><td>the estimate as reported in the paper.</td></tr><tr><td><code>unit</code></td><td>the unit as printed (unit_verbatim).</td></tr><tr><td><code>value_si</code></td><td>the value converted to the canonical unit. Empty when no conversion was possible — usually an unparseable or missing unit.</td></tr><tr><td><code>link</code></td><td>how the label was matched to the Q-code, with confidence. exact / boundary / fuzzy / tv_prefix / caption_compartment / special_case are deterministic string matches; llm, llm_confirmed, llm_corrected involved the model; review and review_gapfill come from the secondary review tier, the latter filling a parameter the primary extraction missed; boundary_relink is a corrected match.</td></tr><tr><td><code>source</code></td><td>where in the paper the number came from: colN = that column of the located table, other_prose = running text, review = the secondary tier, pgx = a pharmacogenomic record.</td></tr><tr><th colspan="2" style="text-align:left;padding-top:10px">placeholders</th></tr><tr><td><code>not captured</code></td><td>the field is absent from the KB artifact — nothing was recorded. This is NOT the same as zero or empty: the value is unknown, not measured to be nothing.</td></tr><tr><td><code>—</code></td><td>deliberately not shown: the column does not apply to this row.</td></tr><tr><td><code>not verified</code></td><td>the record is not in an accepted state (see the badge and the note above the table); the numbers are shown as extracted, not endorsed.</td></tr></tbody></table>
+</details>
 
 
 <div class="pk-tab-mark" data-tab="Models"></div>

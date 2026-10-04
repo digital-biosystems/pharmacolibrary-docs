@@ -1,5 +1,5 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Marques_2024 \u00b7 value&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_HR_Z_score&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 HR Z-score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_HR_Z_score.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
@@ -33,7 +33,7 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Marques2024_value" status="needs_review" stale="true" population="virtual patients" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 6 extracted.
+**Parameters:** 7 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -48,6 +48,7 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 | Tmax (h) | `Q56` · tmax | 2.35 | h | 8460.0 | [h] | not captured | exact (1.0) | Marques_2024_table_3:row4:col1 | — | not captured |
 | AUC (ng·h/mL) | `Q88` · AUC | 31.75 | ng·h/mL | not captured | [[h] · [ng]] / [ml] | not captured | exact (1.0) | Marques_2024_table_3:row5:col1 | — | not captured |
 | t1/2 (h) | `Q57` · t1/2z | 2.78 | h | 10008.0 | [h] | not captured | exact (1.0) | Marques_2024_table_3:row7:col1 | — | not captured |
+| ka (h−1) | `Q49` · kabs | 3.71 | h−1 | 0.0010305555555555556 | 1/h | not captured | review_gapfill (0.7) | Marques_2024_2:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -65,6 +66,9 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 - dropped unlinked row (NIL): 'Fa (%)' — extend the ontology if this is a real PK parameter (source ['Marques_2024_table_3:row0:col1'])
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=salbutamol
 - population split: 'value' subgroup of Marques_2024 (paper reports 3 populations: estimate, geometric mean, value)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- gap-filled Q49 (kabs) from Marques_2024_2's review values (primary lacked it)
 
 **Extraction notes:**
 - unparsed cell pharmaceutics-17-00039-t006:row18:col1 = '0.19×10−4'
@@ -88,6 +92,7 @@ Marques L et al., Improving Individualized Salbutamol Tre…, Pharmaceutics (202
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row6:col1'] |
 | C5_dimension_Q32 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_3:row3:col1'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Marques_2024_2:review'] |
 | C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row4:col1'] |
 | C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Marques_2024_table_3:row7:col1'] |
 | C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024_table_3:row2:col1'] |

@@ -1,8 +1,8 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD Heart rate&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_HR_Z_score&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 HR Z-score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_HR_Z_score.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Venkatasubramanian_2020 \u00b7 PD HR&quot;}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# Heart rate — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
+# HR — PD  <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by openai:gpt-6-luna (not confirmed, agreement 0.308), gpt-oss:120b (not confirmed, agreement 0.5). The first reading is what the record holds.">cross-check: disputed 0/2</span> <span class="pk-badge pk-badge--species" title="Animal study (dog), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">dog</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -14,7 +14,7 @@
 
 ## What this record describes
 
-**As extracted:** Salbutamol (albuterol) drives Heart rate (in bpm): direct Emax (saturable) effect.
+**As extracted:** Salbutamol (concentrations from the PK model of Courlet_2022) drives HR (in bpm): indirect response — drug stimulates the production of HR.
 
 **Model:** No model was generated from this record.
 
@@ -23,8 +23,8 @@
 > <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
 
 - **paper:** `Venkatasubramanian_2020`
-- **model family:** `emax`
-- **driver:** `not_resolved`
+- **model family:** `indirect_response_iii`
+- **driver:** `cited_pk`
 - **tier:** population
 - **effect:** stimulation/proportional
 
@@ -35,13 +35,10 @@ Venkatasubramanian R et al., Semi-mechanistic modelling platform to…, British 
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | Emax,HR | `Q323` · not captured | 0.10 | not captured | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | EC50,HR | `Q321` · not captured | 11.3 | not captured | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | Base HR | `Q324` · not captured | 72.6 | bpm | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| PD (effect) | kout,HR | `Q328` · not captured | 10 | h-1 | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| model term | FB | `Q900` · not captured | 7.55 | mmHg-1 | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| variability | IIV Base,HR | `Q312` · not captured | 0.01 | not captured | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
-| variability | E HR (residual error) | `Q315` · not captured | 11.60 | bpm | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | BaseHR | `Q324` · not captured | 72.6 | bpm | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | kout, HR | `Q328` · not captured | 10 | h -1 | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | E max,HR | `Q320` · not captured | 0.10 | not captured | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
+| PD (effect) | EC 50,HR | `Q321` · not captured | 11.3 | not captured | not captured | llm (not captured) | Venkatasubramanian_2020:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;venlafaxine&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/&quot;},{&quot;label&quot;:&quot;Wang_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venlafaxine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Venlafaxine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Venlafaxine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Liu2022_reference&quot;,&quot;label&quot;:&quot;Liu_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Liu2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Venlafaxine_Wang2022_reference&quot;,&quot;label&quot;:&quot;Wang_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Wang2022_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Venlafaxine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_venlafaxine/Venlafaxine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # venlafaxine — `Venlafaxine_Wang2022_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.8). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.188). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,16 +19,18 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading venlafaxine → o-desmethyl venlafaxine (metabolism); it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the links between molecules: this record has none, the second reading venlafaxine → o-desmethyl venlafaxine (metabolism); it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:42:06.457159+00:00) predates the upstream re-run (2026-10-04 00:18:34.499113+00:00). Current validate status: `extracted`.
 
 ## Citation
 Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmacology (2022)
   ·  DOI: [10.3389/fphar.2022.978202](https://doi.org/10.3389/fphar.2022.978202)
 
 ## Model component
-<dbs-pgx drug="venlafaxine" model-id="Venlafaxine_Wang2022_reference" status="curated_candidate" stale="false" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="venlafaxine" model-id="Venlafaxine_Wang2022_reference" status="extracted" stale="true" population="healthy volunteers and psychiatric patients" measured-compound="venlafaxine" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 5 extracted.
@@ -38,10 +40,10 @@ Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmaco
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL/F, L/h | `Q27` · CL/F | 80.9 | L/h | 2.2472222222222226e-05 | [l] / [h] | not captured | exact (1.0) | T2:row1:col1 | — | not captured |
-| V/F, L | `Q76` · V/F | 628 | L | 0.628 | [l] | not captured | exact (1.0) | T2:row2:col1 | — | not captured |
-| CLM/F, L/h | `Q351` · CLm/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1 | — | not captured |
-| V M/F, L | `Q367` · Vm/F | 238 | L | 0.23800000000000002 | [l] | not captured | space_fold (0.95) | T2:row4:col1 | — | not captured |
+| CL/F, L/h | `Q27` · CL/F | 80.9 | L/h | 2.2472222222222226e-05 | [l] / [h] | not captured | exact (1.0) | T2:row1:col1 | — | 0.219 (None% RSE) |
+| V/F, L | `Q76` · V/F | 628 | L | 0.628 | [l] | not captured | exact (1.0) | T2:row2:col1 | — | 0.106 (None% RSE) |
+| CLM/F, L/h | `Q351` · CLm/F | 22.1 | L/h | 6.138888888888889e-06 | [l] / [h] | not captured | exact (1.0) | T2:row3:col1 | — | 0.156 (None% RSE) |
+| V M/F, L | `Q367` · Vm/F | 238 | L | 0.23800000000000002 | [l] | not captured | space_fold (0.95) | T2:row4:col1 | — | 1.38 (None% RSE) |
 | Ka, 1/h | `Q49` · kabs | 0.63 | 1/h | 0.000175 | [1] / [h] | not captured | exact (1.0) | T2:row5:col1 | — | not captured |
 
 <details class="legend">
@@ -56,18 +58,25 @@ Wang Z et al., Joint population pharmacokinetic modeli…, Frontiers in pharmaco
 - `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
 
 **Interpretation flags:**
+- table section iiv: 'CL/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'V/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'CLM/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section iiv: 'V M/F' routed out of structural estimates ('Interindividual variability, %CV')
+- table section residual_error: 'Proportional error on VEN' routed out of structural estimates ('Residual variability, % CV')
+- table section residual_error: 'Proportional error on ODV' routed out of structural estimates ('Residual variability, % CV')
 - dropped unlinked row (NIL): 'FP' — extend the ontology if this is a real PK parameter (source ['T2:row6:col1'])
 - dropped unlinked row (NIL): 'θmorbid state on CL/F' — extend the ontology if this is a real PK parameter (source ['T2:row7:col1'])
-- dropped unlinked row (NIL): 'θamisulpride on CL/F' — extend the ontology if this is a real PK parameter (source ['T2:row8:col1'])
+- dropped duplicate Q27 ('θamisulpride on CL/F', value '0.392') — already have one for this compound
 - dropped duplicate Q351 ('θamisulpride on CLM/F', value '0.593') — already have one for this compound
-- dropped duplicate Q27 ('CL/F', value '0.219') — already have one for this compound
-- dropped duplicate Q76 ('V/F', value '0.106') — already have one for this compound
-- dropped duplicate Q351 ('CLM/F', value '0.156') — already have one for this compound
-- dropped duplicate Q367 ('V M/F', value '1.38') — already have one for this compound
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=venlafaxine
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- dropped unlinked row (NIL): 'θamisulpride on CL/F' — extend the ontology if this is a real PK parameter (source ['T2:row8:col1'])
+- dropped duplicate Q27 ('CL/F', value '0.219') — already have one for this compound
+- dropped duplicate Q76 ('V/F', value '0.106') — already have one for this compound
+- dropped duplicate Q351 ('CLM/F', value '0.156') — already have one for this compound
+- dropped duplicate Q367 ('V M/F', value '1.38') — already have one for this compound
 
 **Extraction notes:**
 - unparsed cell T2:row1:col2 = '9.7%'
@@ -93,14 +102,25 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.8 (8/10 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.188 (3/16 fields) | 13 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>13 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.links` | [] | [['venlafaxine', 'o-desmethyl venlafaxine', 'metabolism']] | mismatch |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 80.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | 80.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm/f]` | not captured | 22.1 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clm/f]` | 22.1 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[fp]` | not captured | 0.048 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | not captured | 0.63 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ka]` | 0.63 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v m/f]` | not captured | 238 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v m/f]` | 238 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | not captured | 628 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | 628 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[θamisulpride on clm/f]` | not captured | 0.593 | only_one_extracted |
 
 </details>
 
@@ -180,4 +200,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 20:47 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:18 UTC</sub>

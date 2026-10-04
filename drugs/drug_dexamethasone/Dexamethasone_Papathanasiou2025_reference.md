@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;dexamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/&quot;},{&quot;label&quot;:&quot;Papathanasiou_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexamethasone — `Dexamethasone_Papathanasiou2025_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.533). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record lists dexamethasone clearance of 0.926 L/day, but the central volume of distribution (12.3 L) carries the label 'cys-mcMMAF Vc' and the peripheral volume (6.63 L) the label 'ADC Vp', suggesting values taken from antibody-drug conjugate parameters rather than dexamethasone. The structural check found an unreachable or orphan compartment, i.e. a compartment with no path from the dose. A second reader also disagreed on the structure, reading a one-compartment model instead of two, and read three values (33.2, 2.03, 13.2) where this record has none, while this record assigns 6.63 and 2.03 to fields the second reader left empty. Extracted — dexamethasone: CL 0.926 L/day, V1 12.3 L, V2 6.63 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q31: this record has none, the second reading 33.2; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 0.926, the second reading 0.901; it also differs on 6 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:31.950905+00:00) predates the upstream re-run (2026-10-04 00:15:07.827391+00:00). Current validate status: `rejected`.
 
 ## Citation
 Papathanasiou T et al., Population Pharmacokinetics for Belanta…, Clinical pharmacokinetics (2025)
   ·  DOI: [10.1007/s40262-025-01508-1](https://doi.org/10.1007/s40262-025-01508-1)
 
 ## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="false" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Papathanasiou2025_reference" status="rejected" stale="true" population="" measured-compound="dexamethasone" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -64,15 +66,16 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.625 (10/16 fields) | 6 |
+| `gpt-oss:120b` | not confirmed | 0.533 (8/15 fields) | 7 |
 
-<details><summary>6 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.topology_template` | 2C | 1C | mismatch |
-| `gpt-oss:120b` | `values[Q31]` | not captured | 33.2 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q22]` | 0.926 | 0.901 | mismatch |
 | `gpt-oss:120b` | `values[Q37]` | not captured | 2.03 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q57]` | 13.0 | 17.0 | mismatch |
 | `gpt-oss:120b` | `values[Q60]` | not captured | 13.2 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q64]` | 6.63 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `values[Q75]` | 2.03 | not captured | only_one_extracted |
@@ -124,4 +127,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:15 UTC</sub>

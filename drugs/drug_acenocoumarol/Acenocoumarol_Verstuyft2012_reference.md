@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;B01A&quot;,&quot;href&quot;:&quot;atc/B01A.md&quot;},{&quot;label&quot;:&quot;acenocoumarol&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/&quot;},{&quot;label&quot;:&quot;Verstuyft_2012 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acenocoumarol_Delavenne2009_reference&quot;,&quot;label&quot;:&quot;Delavenne_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Haustein1999_reference&quot;,&quot;label&quot;:&quot;Haustein_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Ufer2005_reference&quot;,&quot;label&quot;:&quot;Ufer_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Acenocoumarol_Delavenne2009_reference&quot;,&quot;label&quot;:&quot;Delavenne_2009_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Delavenne2009_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Haustein1999_reference&quot;,&quot;label&quot;:&quot;Haustein_1999_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Haustein1999_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Acenocoumarol_Ufer2005_reference&quot;,&quot;label&quot;:&quot;Ufer_2005_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acenocoumarol/Acenocoumarol_Ufer2005_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acenocoumarol — `Acenocoumarol_Verstuyft2012_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.917). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,35 +21,37 @@
 
 The model was built, but acenocoumarol's bioavailability, clearance and absorption lag time had no value, so a library placeholder stood in and the model was held back rather than published with an invented number. Extracted — acenocoumarol: kabs 1.83 h-1, Q 0.173 L/h, V2 2.77 L, CL 0.18; fluindione, S-acenocoumarol: V 4.7 L/kg.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has fluindione and acenocoumarol, the second reading fluindione, acenocoumarol; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+Independently confirmed by `gpt-oss:120b`.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> **Dose compound ≠ measured compound:** dosed `fluindione, acenocoumarol`, measured `fluindione, S-acenocoumarol`.
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:35:51.099823+00:00) predates the upstream re-run (2026-10-03 22:50:28.878173+00:00). Current validate status: `rejected`.
+
+> **Dose compound ≠ measured compound:** dosed `acenocoumarol`, measured `S-acenocoumarol`.
 
 ## Citation
 Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmacokinetics (2012)
   ·  DOI: [10.2165/11595560-000000000-00000](https://doi.org/10.2165/11595560-000000000-00000)
 
 ## Model component
-<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Verstuyft2012_reference" status="model_quarantined" stale="false" population="healthy adults" measured-compound="fluindione, S-acenocoumarol" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="acenocoumarol" model-id="Acenocoumarol_Verstuyft2012_reference" status="rejected" stale="true" population="healthy adults" measured-compound="S-acenocoumarol" parameterization="apparent" topology="general_linear"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 5 extracted.
+**Parameters:** 6 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
+> ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ka (h-1) | `Q49` · kabs | 1.83 | h-1 | 0.0005083333333333334 | [1] / [h] | 26 | exact (1.0) | Verstuyft_2012_table_p7_1:row1:col1, Verstuyft_2012_table_p7_1:row1:col2 | — | not captured |
-| θ2 | `Q900` · equation variable | 0.17 | not captured | not captured | not captured | 8 | llm (0.6) | Verstuyft_2012_table_p7_1:row3:col1, Verstuyft_2012_table_p7_1:row3:col2 | — | not captured |
-| Q (L/h) | `Q30` · Q | 0.173 | L/h | 4.8055555555555554e-08 | [l] / [h] | 27 | exact (1.0) | Verstuyft_2012_table_p7_1:row10:col1, Verstuyft_2012_table_p7_1:row10:col2 | — | not captured |
-| V2 (L) | `Q64` · V2 | 2.77 | L | 0.00277 | [l] | 20 | exact (1.0) | Verstuyft_2012_table_p7_1:row11:col1, Verstuyft_2012_table_p7_1:row11:col2 | — | not captured |
-| ωCL | `Q22` · CL | 0.18 | not captured | not captured | not captured | 40 | llm_confirmed (0.6) | Verstuyft_2012_table_p7_1:row20:col1, Verstuyft_2012_table_p7_1:row20:col2 | — | not captured |
-| volume of distribution | `Q61` · V | 4.7 | L/kg | 0.329 | L | not captured | review_gapfill (0.7) | Chen_2024:review | — | not captured |
+| k a (h -1 ) | `Q49` · kabs | 1.83 | h -1 | 0.0005083333333333334 | 1/h | not captured | space_fold (0.95) | Verstuyft_2012:other_prose | — | not captured |
+| Q (L h) | `Q30` · Q | 0.173 | L/h | 4.8055555555555554e-08 | L/h | not captured | exact (1.0) | Verstuyft_2012:other_prose | — | not captured |
+| V 2 (L) | `Q64` · V2 | 2.77 | L | 0.00277 | L | not captured | space_fold (0.95) | Verstuyft_2012:other_prose | — | not captured |
+| o CL | `Q351` · CLm/F | 0.18 | L h | not captured | L h | not captured | boundary (0.8) | Verstuyft_2012:other_prose | — | not captured |
+| o V1 | `Q63` · V1 | 0.2 | L | 0.0002 | L | not captured | boundary (0.8) | Verstuyft_2012:other_prose | — | not captured |
+| Lag time | `Q83` · tlag | 0.269 | h | 968.4000000000001 | h | not captured | exact (1.0) | Verstuyft_2012:other_prose | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,43 +61,34 @@ Verstuyft C et al., A pharmacokinetic-pharmacodynamic model…, Clinical pharmac
 ## Departures & gaps
 
 **Interpretation flags:**
-- dropped duplicate Q900 ('θ3', value '0.75') — already have one for this compound
-- dropped duplicate Q900 ('θ4', value '0.617') — already have one for this compound
-- dropped duplicate Q900 ('θ5', value '-0.363') — already have one for this compound
-- dropped unlinked row (NIL): 'θ6' — extend the ontology if this is a real PK parameter (source ['Verstuyft_2012_table_p7_1:row8:col1', 'Verstuyft_2012_table_p7_1:row8:col2'])
-- dropped unlinked row (NIL): 'θ7' — extend the ontology if this is a real PK parameter (source ['Verstuyft_2012_table_p7_1:row9:col1'])
-- dropped unlinked row (NIL): 'θ10' — extend the ontology if this is a real PK parameter (source ['Verstuyft_2012_table_p7_1:row13:col1', 'Verstuyft_2012_table_p7_1:row13:col2'])
-- dropped duplicate Q900 ('θ11', value '0.3') — already have one for this compound
-- dropped PD-category row 'kin (h-1)' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Verstuyft_2012_table_p7_1:row15:col1', 'Verstuyft_2012_table_p7_1:row15:col2'])
-- dropped PD-category row 'kout (h-1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Verstuyft_2012_table_p7_1:row16:col1', 'Verstuyft_2012_table_p7_1:row16:col2'])
-- dropped PD-category row 'γ' → Q343 (weibull_shape, category G14) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Verstuyft_2012_table_p7_1:row17:col1', 'Verstuyft_2012_table_p7_1:row17:col2'])
-- routed 'ωka' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- routed 'ωV1' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
-- dropped PD-category row 'ωC50' → Q321 (EC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Verstuyft_2012_table_p7_1:row22:col1', 'Verstuyft_2012_table_p7_1:row22:col2'])
-- dropped PD-category row 'ωkin' → Q327 (kin, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['Verstuyft_2012_table_p7_1:row23:col1', 'Verstuyft_2012_table_p7_1:row23:col2'])
-- apparent-by-design (ADVISORY, codes unchanged): extravascular dosing with no identifiable F, so these reported disposition parameters are likely apparent unless the model puts first-pass in its structure — Q30 (Q (L/h)); Q64 (V2 (L)); Q22 (ωCL)
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=fluindione, S-acenocoumarol
-- structure disagreement: deterministic 1C vs LLM 2C — review compartment count
-- gap-filled Q61 (V) from Chen_2024's review values (primary lacked it)
-- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
+- salvaged Q49 ('k a (h -1 )'=1.83) from results prose — parameter table was unreadable
+- salvaged Q30 ('Q (L h)'=0.173) from results prose — parameter table was unreadable
+- salvaged Q64 ('V 2 (L)'=2.77) from results prose — parameter table was unreadable
+- salvaged Q22 ('o CL'=0.18) from results prose — parameter table was unreadable
+- salvaged Q63 ('o V1'=0.2) from results prose — parameter table was unreadable
+- salvaged Q83 ('Lag time'=0.269) from results prose — parameter table was unreadable
+- implicit units: 'Q (L h)' → L/h (from the paper text: "The table caption and footnotes define 'Q = inter-compartmental clearance'. In the provided text for Table III (which sh")
+- metabolite s-acenocoumarol: Q22→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=S-acenocoumarol
+- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- topology: transfer parameter unlinked (Q100) — add Kfm/formation-rate/rate-constant to the ontology; routing to review
+- template fit: none — only the metabolite is modelled — no parent compartment
+- status held at route_to_review — not promoted
+
+**Extraction notes:**
+- no TEI final-model table id; trying text-pointer table recovery
+- text-pointer recovery found no readable extracted parameter table
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--green">cross-checked ✓</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.917 (22/24 fields) | 2 |
+| `gpt-oss:120b` | confirmed | 1.0 (10/10 fields) | none |
 
-<details><summary>2 field(s) a reader read differently</summary>
-
-| second reader | field | first reading | second reading | agreement |
-|---|---|---|---|---|
-| `gpt-oss:120b` | `screen.dose_compound` | fluindione and acenocoumarol | fluindione, acenocoumarol | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | fluindione and S-acenocoumarol | fluindione, S-acenocoumarol | mismatch |
-
-</details>
+_Every reader agrees on every compared field of this record._
 
 <details class="legend">
 <summary>Cross-check legend</summary>
@@ -107,18 +100,15 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Verstuyft_2012_table_p7_1:row10:col1', 'Verstuyft_2012_table_p7_1:row10:col2'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Verstuyft_2012_table_p7_1:row1:col1', 'Verstuyft_2012_table_p7_1:row1:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Chen_2024:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Verstuyft_2012_table_p7_1:row11:col1', 'Verstuyft_2012_table_p7_1:row11:col2'] |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | not captured | not captured | not captured | ['Verstuyft_2012_table_p7_1:row20:col1', 'Verstuyft_2012_table_p7_1:row20:col2'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.18 | not captured | not captured | ['Verstuyft_2012_table_p7_1:row20:col1', 'Verstuyft_2012_table_p7_1:row20:col2'] |
-| C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 329 L | not captured | not captured | ['Chen_2024:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 2.77 L | not captured | not captured | ['Verstuyft_2012_table_p7_1:row11:col1', 'Verstuyft_2012_table_p7_1:row11:col2'] |
+| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Verstuyft_2012:other_prose'] |
+| C5_unit_missing_Q351 | fail | [length] ** 3 / [time] | L h | not captured | not captured | ['Verstuyft_2012:other_prose'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
+| C8_topology | fail | ontology-linked transfer parameter on every edge | ['none', 'none'] | not captured | not captured | not captured |
+| C9_phys_window_Q63 | fail | volume within physiological range | 0.2 L | not captured | not captured | ['Verstuyft_2012:other_prose'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 2.77 L | not captured | not captured | ['Verstuyft_2012:other_prose'] |
 
 **Reviewer per-scenario checks:**
 
@@ -144,19 +134,9 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Downloadable models
+## Models
 
-<div class="pk-models-grid"><div class="pk-models-table">
-<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
-</tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
-</div></div>
+<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
@@ -165,4 +145,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-05 15:14 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 22:50 UTC</sub>

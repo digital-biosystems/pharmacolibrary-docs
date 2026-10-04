@@ -4,7 +4,7 @@
 
 # oxytetracycline — `Oxytetracycline_Winter2024_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.13). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.136). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -22,16 +22,18 @@
 
 The structure check found an unreachable or orphan compartment in the two-compartment oxytetracycline model, so the record was refused. Volumes and clearance carry the unit 'adult' instead of a physical unit, leaving them without SI values. A second reader also disagreed on several values, reading CL as 62.67 (with 68.35 as the relative standard error in percent) rather than 68.35, and on whether the parameterization is apparent or mechanistic; the covariate effects on tlag and clearance differ between readers (15.74 vs none, 14.96 vs none). Extracted — oxytetracycline: V1 143 adult, V2 973 adult, V3 2.46e+03 adult, CL 68.3 adult, kabs 0.235, Fab 1.42, tlag 1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 19 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on how the model is parameterised: this record has mechanistic, the second reading apparent; it also differs on 18 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:16.990327+00:00) predates the upstream re-run (2026-10-04 02:53:06.981348+00:00). Current validate status: `rejected`.
 
 ## Citation
 Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in microbiology (2024)
   ·  DOI: [10.3389/fmicb.2024.1498219](https://doi.org/10.3389/fmicb.2024.1498219)
 
 ## Model component
-<dbs-pgx drug="oxytetracycline" model-id="Oxytetracycline_Winter2024_reference" status="rejected" stale="false" population="calves and adult cattle" measured-compound="oxytetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="oxytetracycline" model-id="Oxytetracycline_Winter2024_reference" status="rejected" stale="true" population="calves and adult cattle" measured-compound="oxytetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
 
 **Model structure:** 2-compartment; no model was built for this record.  
 **Parameters:** 7 extracted, plus 1 covariate effect.
@@ -43,14 +45,14 @@ Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in micro
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvV1 (adult) | `Q63` · V1 | 143 | adult | not captured | [adult] | not captured | tv_prefix (0.95) | tab1:row3:col1, tab1:row3:col3, tab1:row3:col4, tab1:row3:col5, tab1:row3:col6 | — | not captured |
-| tvV2 (adult) | `Q64` · V2 | 973 | adult | not captured | [adult] | not captured | tv_prefix (0.95) | tab1:row4:col1, tab1:row4:col3, tab1:row4:col4, tab1:row4:col5, tab1:row4:col6 | — | not captured |
-| tvV3 (adult) | `Q77` · V3 | 2458 | adult | not captured | [adult] | not captured | tv_prefix (0.95) | tab1:row5:col1, tab1:row5:col3, tab1:row5:col4, tab1:row5:col5, tab1:row5:col6 | — | not captured |
-| tvCl (adult) | `Q22` · CL | 68.35 | adult | not captured | [adult] | not captured | tv_prefix (0.95) | tab1:row6:col1, tab1:row6:col3, tab1:row6:col4, tab1:row6:col5, tab1:row6:col6 | — | not captured |
-| tvKa1 | `Q49` · kabs | 0.235 | not captured | not captured | not captured | not captured | llm (0.6) | tab1:row9:col1, tab1:row9:col2, tab1:row9:col3, tab1:row9:col4, tab1:row9:col5, tab1:row9:col6 | — | not captured |
+| tvV1 (adult) | `Q63` · V1 | 143 | L | 0.14300000000000002 | L | not captured | tv_prefix (0.95) | tab1:row3:col1, tab1:row3:col3, tab1:row3:col4, tab1:row3:col5, tab1:row3:col6 | — | not captured |
+| tvV2 (adult) | `Q64` · V2 | 973 | L | 0.973 | L | not captured | tv_prefix (0.95) | tab1:row4:col1, tab1:row4:col3, tab1:row4:col4, tab1:row4:col5, tab1:row4:col6 | — | not captured |
+| tvV3 (adult) | `Q77` · V3 | 2458 | L | 2.458 | L | not captured | tv_prefix (0.95) | tab1:row5:col1, tab1:row5:col3, tab1:row5:col4, tab1:row5:col5, tab1:row5:col6 | — | not captured |
+| tvCl (adult) | `Q22` · CL | 68.35 | L/h | 1.898611111111111e-05 | L/h | not captured | tv_prefix (0.95) | tab1:row6:col1, tab1:row6:col3, tab1:row6:col4, tab1:row6:col5, tab1:row6:col6 | — | not captured |
+| tvKa1 | `Q49` · kabs | 0.235 | 1/h | 6.527777777777778e-05 | 1/h | not captured | llm (0.6) | tab1:row9:col1, tab1:row9:col2, tab1:row9:col3, tab1:row9:col4, tab1:row9:col5, tab1:row9:col6 | — | not captured |
 | tvF1 | `Q40` · Fab | 1.422 | not captured | not captured | not captured | not captured | tv_prefix (0.95) | tab1:row13:col1, tab1:row13:col3, tab1:row13:col4, tab1:row13:col5, tab1:row13:col6, tab1:row13:col7 | — | not captured |
 | dadult_calfCla | `Q900` · equation variable | 0.570 | not captured | not captured | not captured | not captured | llm (0.6) | tab1:row14:col1, tab1:row14:col3, tab1:row14:col4, tab1:row14:col5, tab1:row14:col6 | — | not captured |
-| nTlag | `Q83` · tlag | 1 | not captured | not captured | not captured | not captured | llm (0.6) | Winter_2024_table_2:row4:col1, Winter_2024_table_2:row4:col2, Winter_2024_table_2:row4:col3, Winter_2024_table_2:row4:col4, Winter_2024_table_2:row17:col1, Winter_2024_table_2:row17:col2, Winter_2024_table_2:row17:col3, Winter_2024_table_2:row17:col4 | — | not captured |
+| nTlag | `Q83` · tlag | 0.040549 | h | 145.9764 | h | not captured | llm (0.6) | Winter_2024_table_2:row4:col1, Winter_2024_table_2:row4:col2, Winter_2024_table_2:row4:col3, Winter_2024_table_2:row4:col4 | — | not captured |
 | theta_tlag_category | `Q900` · theta_tlag_category | 15.74 | not captured | not captured | not captured | not captured | not captured (not captured) | tab1:row11:col1, tab1:row11:col3, tab1:row11:col4, tab1:row11:col5, tab1:row11:col6 | — | not captured |
 
 <details class="legend">
@@ -61,6 +63,17 @@ Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in micro
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section covariance: 'nKa1' routed out of structural estimates ('Correlation')
+- table section covariance: 'nKa2' routed out of structural estimates ('Correlation')
+- table section covariance: 'nF1' routed out of structural estimates ('Correlation')
+- table section covariance: 'nTlag' routed out of structural estimates ('Correlation')
+- table section covariance: 'nFrapid' routed out of structural estimates ('Correlation')
+- table section covariance: 'nV1' routed out of structural estimates ('Correlation')
+- table section covariance: 'nV2' routed out of structural estimates ('Correlation')
+- table section covariance: 'nV3' routed out of structural estimates ('Correlation')
+- table section covariance: 'nCl' routed out of structural estimates ('Correlation')
+- table section covariance: 'nCl2' routed out of structural estimates ('Correlation')
+- table section covariance: 'nCl3' routed out of structural estimates ('Correlation')
 - column 'definition' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - unit_dimension_unknown: 'adult' (V1)
 - unit_dimension_unknown: 'adult' (V2)
@@ -69,7 +82,7 @@ Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in micro
 - dropped duplicate Q22 ('tvCld2 (adult)', value '549') — already have one for this compound
 - dropped duplicate Q22 ('tvCld3 (adult)', value '23.20') — already have one for this compound
 - dropped duplicate Q49 ('tvKa2', value '0.0491') — already have one for this compound
-- dropped duplicate Q63 ('tvFrapid', value '0.783') — already have one for this compound
+- dropped unlinked row (NIL): 'tvFrapid' — extend the ontology if this is a real PK parameter (source ['tab1:row12:col1', 'tab1:row12:col3', 'tab1:row12:col4', 'tab1:row12:col5', 'tab1:row12:col6', 'tab1:row12:col7'])
 - dropped duplicate Q900 ('dadult_calfCld2b', value '0.201') — already have one for this compound
 - dropped duplicate Q900 ('dadult_calfCld3c', value '0.228') — already have one for this compound
 - dropped duplicate Q900 ('dadult_calfV1d', value '0.353') — already have one for this compound
@@ -77,24 +90,28 @@ Winter EA et al., Determination of pharmacokinetic-pharma…, Frontiers in micro
 - dropped duplicate Q900 ('dadult_calfV3f', value '0.535') — already have one for this compound
 - routed 'tvCMultStdev' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'stdev0' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
-- dropped unlinked row (NIL): 'nKa1' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row1:col1', 'Winter_2024_table_2:row14:col1'])
-- dropped unlinked row (NIL): 'nKa2' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row2:col1', 'Winter_2024_table_2:row2:col2', 'Winter_2024_table_2:row15:col1', 'Winter_2024_table_2:row15:col2'])
-- dropped unlinked row (NIL): 'nF1' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row3:col1', 'Winter_2024_table_2:row3:col2', 'Winter_2024_table_2:row3:col3', 'Winter_2024_table_2:row16:col1', 'Winter_2024_table_2:row16:col2', 'Winter_2024_table_2:row16:col3'])
-- dropped unlinked row (NIL): 'nFrapid' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row5:col1', 'Winter_2024_table_2:row5:col2', 'Winter_2024_table_2:row5:col3', 'Winter_2024_table_2:row5:col4', 'Winter_2024_table_2:row5:col5', 'Winter_2024_table_2:row18:col1', 'Winter_2024_table_2:row18:col2', 'Winter_2024_table_2:row18:col3', 'Winter_2024_table_2:row18:col4', 'Winter_2024_table_2:row18:col5'])
-- dropped duplicate Q63 ('nV1', value '1') — already have one for this compound
-- dropped duplicate Q64 ('nV2', value '1') — already have one for this compound
-- dropped duplicate Q77 ('nV3', value '1') — already have one for this compound
-- dropped unlinked row (NIL): 'nCl' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row9:col6', 'Winter_2024_table_2:row9:col7', 'Winter_2024_table_2:row9:col8', 'Winter_2024_table_2:row9:col9', 'Winter_2024_table_2:row22:col6', 'Winter_2024_table_2:row22:col7', 'Winter_2024_table_2:row22:col8', 'Winter_2024_table_2:row22:col9'])
-- dropped unlinked row (NIL): 'nCl2' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row10:col6', 'Winter_2024_table_2:row10:col7', 'Winter_2024_table_2:row10:col8', 'Winter_2024_table_2:row10:col9', 'Winter_2024_table_2:row10:col10', 'Winter_2024_table_2:row23:col6', 'Winter_2024_table_2:row23:col7', 'Winter_2024_table_2:row23:col8', 'Winter_2024_table_2:row23:col9', 'Winter_2024_table_2:row23:col10'])
-- dropped unlinked row (NIL): 'nCl3' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row11:col6', 'Winter_2024_table_2:row11:col7', 'Winter_2024_table_2:row11:col8', 'Winter_2024_table_2:row11:col9', 'Winter_2024_table_2:row11:col10', 'Winter_2024_table_2:row11:col11', 'Winter_2024_table_2:row24:col6', 'Winter_2024_table_2:row24:col7', 'Winter_2024_table_2:row24:col8', 'Winter_2024_table_2:row24:col9', 'Winter_2024_table_2:row24:col10', 'Winter_2024_table_2:row24:col11'])
-- covariate category for CL from footnote/prose kept as documentation only (['tab1:footnote'])
-- covariate category for V1 from footnote/prose kept as documentation only (['tab1:footnote'])
-- covariate category for V2 from footnote/prose kept as documentation only (['tab1:footnote'])
-- covariate category for V3 from footnote/prose kept as documentation only (['tab1:footnote'])
+- dropped unlinked row (NIL): 'nKa1' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row1:col1'])
+- dropped unlinked row (NIL): 'nKa2' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row2:col1', 'Winter_2024_table_2:row2:col2'])
+- dropped unlinked row (NIL): 'nF1' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row3:col1', 'Winter_2024_table_2:row3:col2', 'Winter_2024_table_2:row3:col3'])
+- dropped unlinked row (NIL): 'nFrapid' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row5:col1', 'Winter_2024_table_2:row5:col2', 'Winter_2024_table_2:row5:col3', 'Winter_2024_table_2:row5:col4', 'Winter_2024_table_2:row5:col5'])
+- dropped duplicate Q63 ('nV1', value '0.527444') — already have one for this compound
+- dropped duplicate Q64 ('nV2', value '0.031032') — already have one for this compound
+- dropped duplicate Q77 ('nV3', value '0.107616') — already have one for this compound
+- dropped unlinked row (NIL): 'nCl' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row9:col6', 'Winter_2024_table_2:row9:col7', 'Winter_2024_table_2:row9:col8', 'Winter_2024_table_2:row9:col9'])
+- dropped unlinked row (NIL): 'nCl2' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row10:col6', 'Winter_2024_table_2:row10:col7', 'Winter_2024_table_2:row10:col8', 'Winter_2024_table_2:row10:col9', 'Winter_2024_table_2:row10:col10'])
+- dropped unlinked row (NIL): 'nCl3' — extend the ontology if this is a real PK parameter (source ['Winter_2024_table_2:row11:col6', 'Winter_2024_table_2:row11:col7', 'Winter_2024_table_2:row11:col8', 'Winter_2024_table_2:row11:col9', 'Winter_2024_table_2:row11:col10', 'Winter_2024_table_2:row11:col11'])
+- covariate category for CL from footnote/prose kept as documentation only (['tab1:footnote', 'tab1:footnote'])
+- covariate category for V1 from footnote/prose kept as documentation only (['tab1:footnote', 'tab1:footnote'])
+- covariate category for V2 from footnote/prose kept as documentation only (['tab1:footnote', 'tab1:footnote'])
+- covariate category for V3 from footnote/prose kept as documentation only (['tab1:footnote', 'tab1:footnote'])
+- implicit units: 'tvV1 (adult)' → L (from the popPK convention: 'V1 is a volume of distribution. In population PK modeling for cattle, volumes are typically expressed in liters (L). The')
+- implicit units: 'tvV2 (adult)' → L (from the popPK convention: 'V2 is a volume of distribution. In population PK modeling for cattle, volumes are typically expressed in liters (L). The')
+- implicit units: 'tvV3 (adult)' → L (from the popPK convention: 'V3 is a volume of distribution. In population PK modeling for cattle, volumes are typically expressed in liters (L). The')
+- implicit units: 'tvCl (adult)' → L/h (from the popPK convention: 'Cl is total clearance. In population PK modeling, clearances are typically expressed in L/h. The magnitude (68.35) is co')
+- implicit units: 'tvKa1' → 1/h (from the popPK convention: 'Ka1 is an absorption rate constant. First-order rate constants are typically expressed in 1/h. The magnitude (0.235) is ')
+- implicit units: 'nTlag' → h (from the popPK convention: 'nTlag is a lag time. Lag times are typically expressed in hours (h). The magnitude (0.040549) is consistent with a lag t')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=oxytetracycline
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 2C vs LLM 3C — review compartment count
-- status held at route_to_review — not promoted
 
 **Extraction notes:**
 - unparsed cell tab1:row7:col7 = 'Clearance of distribution to V2 (adult)'
@@ -118,23 +135,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.13 (3/23 fields) | 20 |
+| `gpt-oss:120b` | not confirmed | 0.136 (3/22 fields) | 19 |
 
-<details><summary>20 field(s) a reader read differently</summary>
+<details><summary>19 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `model.parameterization` | mechanistic | apparent | mismatch |
 | `gpt-oss:120b` | `parameters[dadult_calfcla]` | 0.570 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[dadult_calfv3f]` | not captured | 0.358 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ntlag]` | 1 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ntlag]` | 0.040549 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q83_category]` | not captured | 14.96 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_tlag_category]` | 15.74 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tvcl].rse_percent` | not captured | 68.35 | mismatch |
 | `gpt-oss:120b` | `parameters[tvcl].value` | 68.35 | 62.67 | mismatch |
 | `gpt-oss:120b` | `parameters[tvcld2]` | not captured | 485 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[tvf1].rse_percent` | not captured | 1.422 | mismatch |
-| `gpt-oss:120b` | `parameters[tvf1].value` | 1.422 | 1.281 | mismatch |
+| `gpt-oss:120b` | `parameters[tvf1]` | 1.422 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tvfrapid]` | not captured | 0.757 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[tvka1].rse_percent` | not captured | 0.235 | mismatch |
 | `gpt-oss:120b` | `parameters[tvka1].value` | 0.235 | 0.214 | mismatch |
@@ -161,14 +177,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C2_reference | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q22 | fail | [length] ** 3 / [time] | adult | not captured | not captured | ['tab1:row6:col1', 'tab1:row6:col3', 'tab1:row6:col4', 'tab1:row6:col5', 'tab1:row6:col6'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['tab1:row9:col1', 'tab1:row9:col2', 'tab1:row9:col3', 'tab1:row9:col4', 'tab1:row9:col5', 'tab1:row9:col6'] |
-| C5_unit_missing_Q63 | fail | [length] ** 3 | adult | not captured | not captured | ['tab1:row3:col1', 'tab1:row3:col3', 'tab1:row3:col4', 'tab1:row3:col5', 'tab1:row3:col6'] |
-| C5_unit_missing_Q64 | fail | [length] ** 3 | adult | not captured | not captured | ['tab1:row4:col1', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
-| C5_unit_missing_Q77 | fail | [length] ** 3 | adult | not captured | not captured | ['tab1:row5:col1', 'tab1:row5:col3', 'tab1:row5:col4', 'tab1:row5:col5', 'tab1:row5:col6'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['Winter_2024_table_2:row4:col1', 'Winter_2024_table_2:row4:col2', 'Winter_2024_table_2:row4:col3', 'Winter_2024_table_2:row4:col4', 'Winter_2024_table_2:row17:col1', 'Winter_2024_table_2:row17:col2', 'Winter_2024_table_2:row17:col3', 'Winter_2024_table_2:row17:col4'] |
+| C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab1:row6:col1', 'tab1:row6:col3', 'tab1:row6:col4', 'tab1:row6:col5', 'tab1:row6:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab1:row9:col1', 'tab1:row9:col2', 'tab1:row9:col3', 'tab1:row9:col4', 'tab1:row9:col5', 'tab1:row9:col6'] |
+| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab1:row3:col1', 'tab1:row3:col3', 'tab1:row3:col4', 'tab1:row3:col5', 'tab1:row3:col6'] |
+| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab1:row4:col1', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
+| C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab1:row5:col1', 'tab1:row5:col3', 'tab1:row5:col4', 'tab1:row5:col5', 'tab1:row5:col6'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Winter_2024_table_2:row4:col1', 'Winter_2024_table_2:row4:col2', 'Winter_2024_table_2:row4:col3', 'Winter_2024_table_2:row4:col4'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 68.35 | not captured | not captured | ['tab1:row6:col1', 'tab1:row6:col3', 'tab1:row6:col4', 'tab1:row6:col5', 'tab1:row6:col6'] |
 | C8_topology | fail | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q22 | pass | clearance within physiological range | 68.3 L/h | not captured | not captured | ['tab1:row6:col1', 'tab1:row6:col3', 'tab1:row6:col4', 'tab1:row6:col5', 'tab1:row6:col6'] |
+| C9_phys_window_Q63 | pass | volume within physiological range | 143 L | not captured | not captured | ['tab1:row3:col1', 'tab1:row3:col3', 'tab1:row3:col4', 'tab1:row3:col5', 'tab1:row3:col6'] |
+| C9_phys_window_Q64 | pass | volume within physiological range | 973 L | not captured | not captured | ['tab1:row4:col1', 'tab1:row4:col3', 'tab1:row4:col4', 'tab1:row4:col5', 'tab1:row4:col6'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -193,4 +212,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:38 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 02:53 UTC</sub>

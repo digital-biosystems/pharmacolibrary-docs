@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;dexamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/&quot;},{&quot;label&quot;:&quot;Yu_2026 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexamethasone — `Dexamethasone_Yu2026_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.368). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.286). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (horse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">horse</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,16 +23,18 @@
 
 The unbound clearance CLu is recorded as 494.0 mL/h and the volume of distribution V as 16.9 mL for dexamethasone; these magnitudes are physiologically implausible, and the review attributed the failure to a unit/scale extraction error. The parameter labels in the source (V u, V SF) do not match the assigned meanings, further suggesting misread values. Several other extracted values (e.g. 473.6, 338, 5.69, 0.269, 140.1, 1.09, 0.175, 30) were read by only one reader, with no second-reader confirmation. Extracted — dexamethasone: CLu 494 mL/h, V 16.9 mL, kabs 2.95 h -1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q22: this record has 473.6, the second reading none; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CLu: this record has 494, the second reading none; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:37:31.957779+00:00) predates the upstream re-run (2026-10-04 00:15:29.462154+00:00). Current validate status: `rejected`.
 
 ## Citation
 Yu R et al., Meta-Analysis and Physiologically-Based…, Pharmaceutical research (2026)
   ·  DOI: [10.1007/s11095-026-04120-5](https://doi.org/10.1007/s11095-026-04120-5)
 
 ## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="false" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_Yu2026_reference" status="rejected" stale="true" population="horses" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
@@ -66,24 +68,22 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.368 (7/19 fields) | 12 |
+| `gpt-oss:120b` | not confirmed | 0.286 (4/14 fields) | 10 |
 
-<details><summary>12 field(s) a reader read differently</summary>
+<details><summary>10 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `values[Q22]` | 473.6 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q25]` | 338 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q26]` | 5.69 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q331]` | 0.269 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q332]` | 140.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q410]` | 1.09 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q46]` | 0.175 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q47]` | 30 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `values[Q24]` | 494 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q305]` | 16 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 37.2 | 52.1 | mismatch |
+| `gpt-oss:120b` | `values[Q41]` | 52.1 | 68.2 | mismatch |
 | `gpt-oss:120b` | `values[Q56]` | 0.23 | 2.2 | mismatch |
 | `gpt-oss:120b` | `values[Q57]` | 2.6 | 14 | mismatch |
 | `gpt-oss:120b` | `values[Q59]` | not captured | 2.6 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q60]` | not captured | 11 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q87]` | not captured | 37.2 | only_one_extracted |
 
 </details>
 
@@ -131,4 +131,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:15 UTC</sub>

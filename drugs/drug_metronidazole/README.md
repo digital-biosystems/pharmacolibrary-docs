@@ -16,17 +16,25 @@
 
 It is also used off-label in the treatment of Crohn's disease, as a prophylactic agent after surgery[A181039], and in the treatment of Helicobacter pylori infection.[A181045] It has also been studied in the prevention of preterm births and to treat periodontal disease.[A1391,A181078]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| metronidazole | parent | 171.154 | C6H9N3O3 | DrugBank | [4173](https://pubchem.ncbi.nlm.nih.gov/compound/4173) | Suyagh_2011 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 01:38 | 4:19 | 0/1/0 | 0/0/0 | 0/0/0 | 92,107/6,617 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
+| 2026-10-04 01:57 | 4:35 | 0/1/0 | 0/0/0 | 0/0/0 | 89,641/8,858 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 2/15 | 17/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | — | 1-compartment (no model) | 0 | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: missing key parameters — none reported by this paper</sub><br><sub>route_to: `human_review`</sub> | [Suyagh_2011_reference](drugs/drug_metronidazole/Metronidazole_Suyagh2011_reference.md) | — | 1-compartment (no model) | 0 | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) |
 
 ## ADME sites
 
@@ -59,7 +67,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 267 matched, 63 returned
 - **screened:** 1  ·  **relevant:** 1
-- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 0
+- **records:** 1  ·  extracted 0  ·  needs_review 0  ·  rejected 1  ·  stale 1
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -68,10 +76,10 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Randell_2024.pdf` | Randell RL et al., Opportunistic dried blood spot sampling…, Antimicrobial agents and ch… (2024) | popPK | 10 | [10.1128/aac.01533-23](https://doi.org/10.1128/aac.01533-23) | [38477706](https://pubmed.ncbi.nlm.nih.gov/38477706) | The paper describes a population PK model for metronidazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
-| `Ryan_2026.pdf` | Ryan R et al., Population pharmacokinetics of cefazoli…, International journal of an… (2026) | popPK | 10 | [10.1016/j.ijantimicag.2026.107742](https://doi.org/10.1016/j.ijantimicag.2026.107742) | [41690639](https://pubmed.ncbi.nlm.nih.gov/41690639) | The paper is a population PK study for metronidazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
-| `Suyagh_2011.pdf` | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | popPK | 10 | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) | [21220396](https://pubmed.ncbi.nlm.nih.gov/21220396) | The paper reports a population PK model for metronidazole with explicit numeric equations for clearance and volume of distribution. |
-| `Child_2019.pdf` | Child J et al., Pharmacokinetic and Pharmacodynamic Pro…, Journal of the Pediatric In… (2019) | popPK | 9 | [10.1093/jpids/piy040](https://doi.org/10.1093/jpids/piy040) | [29788329](https://pubmed.ncbi.nlm.nih.gov/29788329) | The study is a relevant PK/PD investigation of metronidazole in children, but the specific quantitative parameter values (CL, V, etc.) from the NONMEM model are not explicitly listed in the provided text, only AUC target attainment percentages and qualitative comparisons. |
+| `Child_2019.pdf` | Child J et al., Pharmacokinetic and Pharmacodynamic Pro…, Journal of the Pediatric In… (2019) | popPK | 10 | [10.1093/jpids/piy040](https://doi.org/10.1093/jpids/piy040) | [29788329](https://pubmed.ncbi.nlm.nih.gov/29788329) | The study is a population PK/PD analysis of metronidazole in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract text, only AUC target attainment percentages. |
+| `Randell_2024.pdf` | Randell RL et al., Opportunistic dried blood spot sampling…, Antimicrobial agents and ch… (2024) | popPK | 10 | [10.1128/aac.01533-23](https://doi.org/10.1128/aac.01533-23) | [38477706](https://pubmed.ncbi.nlm.nih.gov/38477706) | The paper describes a population pharmacokinetic model for metronidazole in infants, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract text. |
+| `Ryan_2026.pdf` | Ryan R et al., Population pharmacokinetics of cefazoli…, International journal of an… (2026) | popPK | 10 | [10.1016/j.ijantimicag.2026.107742](https://doi.org/10.1016/j.ijantimicag.2026.107742) | [41690639](https://pubmed.ncbi.nlm.nih.gov/41690639) | The study reports a population PK model for metronidazole, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| `Suyagh_2011.pdf` | Suyagh M et al., Metronidazole population pharmacokineti…, Pediatrics (2011) | popPK | 10 | [10.1542/peds.2010-0807](https://doi.org/10.1542/peds.2010-0807) | [21220396](https://pubmed.ncbi.nlm.nih.gov/21220396) | The paper reports a population pharmacokinetic model for metronidazole in preterm neonates with explicit numeric equations for clearance and volume of distribution. |
 | `Cao_2007.pdf` | Cao YG et al., Warfarin maintenance dose adjustment wi…, European journal of pharmac… (2007) | pd | 5 | [10.1016/j.ejps.2006.10.009](https://doi.org/10.1016/j.ejps.2006.10.009) | [17169538](https://www.ncbi.nlm.nih.gov/pubmed/17169538) | metadata signals extractable PD data (pharmacodynamicmodel) |
 | `Isla_2005.pdf` | Isla A et al., [Pharmacokinetic/pharmacodynamic analys…, Enfermedades infecciosas y… (2005) | pd | 5 | [10.1157/13072159](https://doi.org/10.1157/13072159) | [15757581](https://www.ncbi.nlm.nih.gov/pubmed/15757581) | metadata signals extractable PD data (PK/PD) |
 | `Isla_2008.pdf` | Isla A et al., [Antibiotic therapy in odontogenic infe…, Enfermedades infecciosas y… (2008) | pd | 5 | [10.1016/s0213-005x(08)75278-9](https://doi.org/10.1016/s0213-005x(08)75278-9) | [19100192](https://www.ncbi.nlm.nih.gov/pubmed/19100192) | metadata signals extractable PD data (PK/PD) |
@@ -84,7 +92,7 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | `Kurzawski_2006.pdf` | Kurzawski M et al., Effect of CYP2C19*17 gene variant on He…, European journal of clinica… (2006) | pgx | 5 | [10.1007/s00228-006-0183-2](https://doi.org/10.1007/s00228-006-0183-2) | [16912869](https://www.ncbi.nlm.nih.gov/pubmed/16912869) | metadata signals extractable PGX data (CYP2C19*17) |
 | `Sezgin_2014.pdf` | Sezgin O et al., Modified sequential Helicobacter pylori…, Acta gastro-enterologica Be… (2014) | pgx | 5 | not captured | [24761684](https://www.ncbi.nlm.nih.gov/pubmed/24761684) | metadata signals extractable PGX data (CYP2C19) |
 
-<sub>queue written 2026-09-18T01:35:21.517403+00:00</sub>
+<sub>queue written 2026-10-04T01:53:58.421367+00:00</sub>
 
 ## Screened and excluded
 
@@ -96,60 +104,60 @@ _15 paper(s) judged relevant from the abstract, with no full text on disk — pa
 | popPK | Cao_2007 | irrelevant | 0 | 0 | no_text gate: only 80 chars of text extracted (&lt; 400) |
 | PD | Cao_2007 | not_relevant | 0 | 0 | The paper focuses on warfarin pharmacodynamics in rats and does not report any exposure-response or dose-response data for metronidazole. |
 | PGx | Cheng_2026 | not_relevant | 0 | 0 | The paper investigates the therapeutic effect of a bacterium (Dubosiella newyorkensis) on hyperuricemia and does not report any pharmacogenomic effects on the PK or PD of metronidazole. |
-| popPK | Child_2019 | relevant | 9 | 2 | The study is a relevant PK/PD investigation of metronidazole in children, but the specific quantitative parameter values (CL, V, etc.) from the NONMEM model are not explicitly listed in the provided text, only AUC target attainment percentages and qualitative comparisons. |
-| popPK | Commander_2023 | irrelevant | 2 | 0 | The study uses an existing population PK model to simulate exposure for an exposure-response analysis but does not report original quantitative PK parameter values (CL, V, etc.) for metronidazole. |
+| popPK | Child_2019 | relevant | 10 | 2 | The study is a population PK/PD analysis of metronidazole in humans, but the specific numeric parameter values (CL, V, etc.) are not listed in the provided abstract text, only AUC target attainment percentages. |
+| popPK | Commander_2023 | irrelevant | 2 | 0 | The study uses an existing population PK model to simulate exposure for an exposure-response analysis of seizures, but does not report the quantitative PK parameter values (CL, V, etc.) for metronidazole itself. |
 | PGx | Early_2016 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction between metronidazole and tacrolimus, not a pharmacogenomic effect on metronidazole's PK/PD parameters. |
 | PGx | Fernandez_2026 | not_relevant | 0 | 0 | The paper reports a case of metronidazole resistance in H. pylori due to antibiotic susceptibility testing, not a pharmacogenomic effect on the patient's PK or PD parameters. |
 | PGx | Fernández-Reyes_2019 | not_relevant | 0 | 0 | The paper reports bacterial antimicrobial resistance rates and virulence factor prevalence, not human pharmacogenomic effects on metronidazole PK/PD. |
-| PGx | Furuta_2007 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for PPIs (CYP2C19) and drug interactions involving clarithromycin, but does not report any pharmacogenomic effect on the PK or PD of metronidazole. |
-| popPK | Hakkers_2026 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of metronidazole as an adjunctive antibiotic for peri-implantitis, not a pharmacokinetic study, and contains no PK parameters. |
+| PGx | Furuta_2007 | not_relevant | 0 | 0 | The paper discusses pharmacogenomics for PPIs (CYP2C19) and drug interactions involving clarithromycin, but does not report any genetic effect on the PK or PD of metronidazole. |
+| popPK | Hakkers_2026 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of metronidazole as an adjunctive antibiotic for peri-implantitis, not a pharmacokinetic study, and reports no PK parameters. |
 | PGx | Hao_2021 | not_relevant | 0 | 0 | The paper focuses on predicting drug-drug interactions for busulfan using network pharmacology and does not report pharmacogenomic effects on metronidazole PK/PD parameters. |
 | PGx | Hersh_2015 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (metronidazole inhibiting warfarin metabolism) but does not report pharmacogenomic effects (gene variants) on metronidazole's PK or PD parameters. |
-| popPK | Ho_2022 | irrelevant | 0 | 0 | The paper is a systematic review of antibiotic resistance rates in H. pylori, not a pharmacokinetic study, and contains no PK parameters for metronidazole. |
-| PGx | Imane_2022 | not_relevant | 0 | 0 | The study examines bacterial resistance to metronidazole (rdxA gene) and bacterial virulence factors, not human pharmacogenomics affecting drug PK/PD. |
+| popPK | Ho_2022 | irrelevant | 0 | 0 | The paper is a systematic review of antibiotic resistance rates in H. pylori, not a pharmacokinetic study of metronidazole. |
+| PGx | Imane_2022 | not_relevant | 0 | 0 | The study examines bacterial resistance to metronidazole (rdxA gene) and bacterial virulence factors (CagA/VacA), not human pharmacogenomics affecting drug PK/PD. |
 | popPK | Isla_2005 | irrelevant | 0 | 0 | no_text gate: only 93 chars of text extracted (&lt; 400) |
 | PD | Isla_2005 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric data, models, or parameters to assess PD relationships. |
-| popPK | Isla_2005_2 | irrelevant | 2 | 0 | The paper is a retrospective literature review and simulation study that does not report original quantitative PK parameter values (CL, V, etc.) for metronidazole. |
+| popPK | Isla_2005_2 | irrelevant | 2 | 0 | The study is a retrospective literature review and simulation that uses metronidazole as a comparator for efficacy indices, but it does not report original quantitative PK parameter values (CL, V, etc.) for metronidazole in the provided evidence. |
 | PD | Isla_2005_2 | not_relevant | 3 | 2 | The paper is a retrospective literature review and simulation study that calculates PK/PD indices (AUC/MIC, %T&gt;MIC) for comparison with breakpoints, but it does not report a concentration-effect curve or specific PD parameters (Emax, EC50) for metronidazole. |
 | popPK | Isla_2008 | irrelevant | 0 | 0 | no_text gate: only 116 chars of text extracted (&lt; 400) |
 | PD | Isla_2008 | not_relevant | 0 | 0 | The provided text is only a title and does not contain the full text or any numeric PD parameters, curves, or analysis results. |
 | PGx | Kaur_2019 | not_relevant | 0 | 0 | The paper is a case report of metronidazole neurotoxicity and does not report any pharmacogenomic effects on PK or PD parameters. |
-| PGx | Kita_2001 | not_relevant | 0 | 0 | The study investigates the effect of CYP2C19 genotype on omeprazole PK and intragastric pH, not on the pharmacokinetic or pharmacodynamic parameters of metronidazole itself. |
+| PGx | Kita_2001 | not_relevant | 0 | 0 | The paper investigates the effect of CYP2C19 genotype on omeprazole PK and intragastric pH, not on the PK or PD parameters of metronidazole. |
 | PGx | Kudo_2015 | not_relevant | 0 | 0 | The paper investigates drug-drug interactions (metronidazole downregulating CYP enzymes) in vitro, not the effect of a gene variant on metronidazole's PK/PD. |
-| PGx | Kurzawski_2006 | not_relevant | 0 | 0 | The study investigates the effect of CYP2C19 variants on the efficacy of H. pylori eradication (a clinical outcome) in a regimen containing metronidazole, but it does not report pharmacokinetic or pharmacodynamic parameters of metronidazole itself. |
+| PGx | Kurzawski_2006 | not_relevant | 0 | 0 | The study investigates the effect of CYP2C19 variants on H. pylori eradication efficacy (clinical outcome) in a regimen containing metronidazole, but does not report pharmacokinetic or pharmacodynamic parameters of metronidazole itself. |
 | PGx | Lang_2025 | not_relevant | 0 | 0 | The paper evaluates the effect of a dietary intervention on biochemical markers in patients with a genetic disease, not the effect of a gene variant on the pharmacokinetics or pharmacodynamics of metronidazole. |
 | PGx | Levy_1995 | not_relevant | 0 | 0 | The paper discusses CYP450-mediated drug interactions for antiepileptics and mentions metronidazole only as an inhibitor, without reporting pharmacogenomic effects on metronidazole's PK/PD. |
 | PGx | Lippi_2014 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions between antibiotics and DOACs, not pharmacogenomic effects on metronidazole. |
 | PGx | Maev_2017 | not_relevant | 0 | 0 | The paper discusses microbial genetic resistance to metronidazole and host genetics affecting PPIs, but does not report a pharmacogenomic effect on the PK or PD of metronidazole itself. |
 | popPK | McKellar_2004 | irrelevant | 1 | 0 | The paper is a review discussing general PK/PD principles and classifying metronidazole as concentration-dependent, but it does not report specific quantitative disposition parameters (CL, V, etc.) for metronidazole. |
 | PD | McKellar_2004 | not_relevant | 2 | 1 | The text is a general review that qualitatively classifies metronidazole as concentration-dependent and provides general PK/PD index thresholds (AUC/MIC, Cmax/MIC) for the class, but it does not report specific numeric PD parameters (e.g., Emax, EC50) or a derived concentration-effect curve for metronidazole. |
-| PGx | Pizarro_2025 | not_relevant | 0 | 0 | The study investigates extracellular vesicle-mediated phenotypic adaptation in Giardia lamblia, not human pharmacogenomics. |
-| popPK | Randell_2024 | relevant | 10 | 0 | The paper describes a population PK model for metronidazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
+| PGx | Pizarro_2025 | not_relevant | 0 | 0 | The study investigates extracellular vesicle-mediated drug resistance in the parasite Giardia lamblia, not human pharmacogenomics or PK/PD parameters. |
+| popPK | Randell_2024 | relevant | 10 | 0 | The paper describes a population pharmacokinetic model for metronidazole in infants, but the specific numeric parameter values (clearance, volume, etc.) are not present in the provided abstract text. |
 | PD | Randell_2024 | not_relevant | 0 | 0 | The paper focuses exclusively on the validation and optimization of a population pharmacokinetic (PK) model using dried blood spots, with no mention of pharmacodynamic (PD) modeling, exposure-response relationships, or numeric PD parameters. |
-| popPK | Randell_2025 | irrelevant | 4 | 2 | The paper is an exposure-response analysis using simulated data from a popPK model, reporting exposure metrics (AUC, Cmax) rather than the underlying quantitative PK parameters (CL, V, Q) which are in a separate referenced publication. |
+| popPK | Randell_2025 | relevant | 8 | 2 | The study uses a population PK model for metronidazole in infants to simulate exposures, but the specific model parameter values (CL, V, Q) are not reported in the text, only the resulting exposure metrics (AUC, Cmax). |
 | PGx | Ranek_1993 | not_relevant | 0 | 0 | The study reports that metronidazole metabolism was within normal range in all subjects and does not report any gene variant or genotype associated with altered PK/PD parameters. |
-| popPK | Ryan_2026 | relevant | 10 | 0 | The paper is a population PK study for metronidazole, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence text. |
+| popPK | Ryan_2026 | relevant | 10 | 2 | The study reports a population PK model for metronidazole, but specific numeric parameter values (CL, V, etc.) are not present in the provided abstract text. |
 | PGx | Saghaug_2019 | not_relevant | 0 | 0 | The paper investigates genetic variation in the parasite (Giardia) that affects drug resistance, not human pharmacogenomics affecting drug PK/PD. |
 | PGx | Saghaug_2020 | not_relevant | 0 | 0 | The paper analyzes genetic diversity of a parasite gene (Giardia gFlHb) and its potential role in drug tolerance, but does not report human pharmacogenomic effects on metronidazole PK or PD parameters. |
 | PGx | Sezgin_2014 | not_relevant | 0 | 0 | The paper investigates the effect of CYP2C19 polymorphism on H. pylori eradication rates (clinical outcome), not on the pharmacokinetic or pharmacodynamic parameters of metronidazole. |
 | PGx | Shelton_2000 | not_relevant | 0 | 0 | The paper describes a case of hyperventilation associated with quetiapine and mentions metronidazole as a potential CYP3A4 inhibitor, but it does not report a pharmacogenomic effect (gene variant) on a PK or PD parameter of metronidazole. |
-| popPK | Sher_2022 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract, using metronidazole only as an agent to induce constipation in an animal model, and does not report any pharmacokinetic parameters for metronidazole. |
+| popPK | Sher_2022 | irrelevant | 0 | 0 | The study investigates the pharmacological effects of a plant extract, using metronidazole only as an agent to induce constipation in pigeons, and does not report any pharmacokinetic parameters for metronidazole. |
 | PD | Sher_2022 | not_relevant | 0 | 0 | The paper studies the pharmacodynamics of Chrozophora tinctoria extract, not metronidazole; metronidazole is only used as a tool to induce constipation in the animal model. |
 | PGx | Spielberg_1984 | not_relevant | 2 | 1 | The paper reports in vitro cellular toxicity susceptibility to metronidazole metabolites, not changes in pharmacokinetic or pharmacodynamic parameters in vivo. |
 | PGx | Sugimoto_2020 | not_relevant | 0 | 0 | The paper investigates the effect of CYP genotypes on the clinical outcome (eradication rate) of vonoprazan-containing therapy, not on the pharmacokinetic or pharmacodynamic parameters of metronidazole. |
-| PGx | Sukkamolsantiporn_2025 | not_relevant | 0 | 0 | The study evaluates H. pylori eradication efficacy and does not report pharmacokinetic or pharmacodynamic parameters of metronidazole. |
+| PGx | Sukkamolsantiporn_2025 | not_relevant | 0 | 0 | The study evaluates H. pylori eradication efficacy and does not report pharmacokinetic or pharmacodynamic parameters for metronidazole. |
 | PGx | Sweiss_2019 | not_relevant | 0 | 0 | The paper reports a drug-drug interaction between busulfan and blinatumomab, not a pharmacogenomic effect on metronidazole. |
-| popPK | Tan_2017 | irrelevant | 0 | 0 | The paper is a meta-analysis of clinical efficacy for bacterial vaginosis treatment and contains no pharmacokinetic parameters for metronidazole. |
-| PGx | Tungtrongchitr_2024 | not_relevant | 0 | 0 | The study evaluates the efficacy of an H. pylori eradication regimen and reports CYP3A4/5 genotypes, but it does not report pharmacokinetic or pharmacodynamic parameters of metronidazole. |
+| popPK | Tan_2017 | irrelevant | 0 | 0 | This is a meta-analysis of clinical efficacy (cure rates) for bacterial vaginosis, not a pharmacokinetic study, and contains no PK parameters. |
+| PGx | Tungtrongchitr_2024 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of an H. pylori eradication regimen and does not report pharmacokinetic or pharmacodynamic parameters of metronidazole. |
 | PGx | Wang_2000 | not_relevant | 0 | 0 | The study investigates a drug-drug interaction (metronidazole affecting midazolam) and does not report any pharmacogenomic effects (gene variants) on the PK or PD of metronidazole. |
-| PGx | Wang_2017 | not_relevant | 0 | 0 | The study investigates the effect of metronidazole on CYP450 enzyme activity in rats exposed to high altitude, rather than the effect of a gene variant on metronidazole pharmacokinetics or pharmacodynamics. |
-| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates bacterial gene mutations (H. pylori) causing antibiotic resistance, not human pharmacogenomics affecting drug PK/PD. |
+| PGx | Wang_2017 | not_relevant | 0 | 0 | The study investigates the effect of metronidazole on CYP450 enzymes in rats exposed to high altitude, rather than the effect of a gene variant on metronidazole pharmacokinetics or pharmacodynamics. |
+| PGx | Wang_2020 | not_relevant | 0 | 0 | The paper investigates bacterial gene mutations (H. pylori) causing antibiotic resistance, not human pharmacogenomics affecting metronidazole PK/PD. |
 | PGx | Yu_2021 | not_relevant | 0 | 0 | The paper discusses drug-drug interactions (DDI) involving enzymes and transporters, not pharmacogenomic effects (gene variants) on metronidazole PK/PD. |
-| popPK | Zelenitsky_2016 | irrelevant | 2 | 0 | The study is a PK-PD simulation using existing models to evaluate prophylaxis regimens, and it does not report original quantitative PK parameter values (CL, V, etc.) for metronidazole in the provided evidence. |
+| popPK | Zelenitsky_2016 | irrelevant | 2 | 0 | The study is a PK-PD simulation using existing models for antimicrobial prophylaxis, and it does not report original quantitative PK parameter values (CL, V, etc.) for metronidazole in the provided evidence. |
 | PD | Zelenitsky_2016 | not_relevant | 4 | 2 | The study uses PK-PD modeling (target attainment) but reports only binary coverage percentages (e.g., 99% of subjects) rather than continuous numeric PD parameters like Emax, EC50, or dose-response curves for metronidazole. |
-| PGx | Zemanová_2021 | not_relevant | 0 | 0 | The study investigates the effect of gut microbiome presence (germ-free vs. specific-pathogen-free mice) on metronidazole metabolism, not the effect of a specific gene variant or genotype. |
-| popPK | Zhanel_2013 | irrelevant | 0 | 0 | The paper is a review of ceftazidime-avibactam pharmacokinetics and does not report quantitative PK parameters for metronidazole, which is only mentioned as a potential combination therapy. |
-| popPK | Zhanel_2014 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of ceftolozane/tazobactam, and metronidazole is only mentioned as a comparator agent in clinical trials without any PK parameter reporting. |
+| PGx | Zemanová_2021 | not_relevant | 0 | 0 | The study investigates the effect of gut microbiome presence (germ-free vs. specific-pathogen-free) on metronidazole metabolism, not a specific human gene variant or genotype. |
+| popPK | Zhanel_2013 | irrelevant | 0 | 0 | The paper is a review of ceftazidime-avibactam pharmacokinetics and does not report quantitative PK parameters for metronidazole. |
+| popPK | Zhanel_2014 | irrelevant | 0 | 0 | The paper focuses on the pharmacokinetics of ceftolozane/tazobactam, and metronidazole is only mentioned as a comparator agent in a clinical trial without any PK parameters reported for it. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 01:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 01:54 UTC</sub>

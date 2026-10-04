@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Bouazza_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_Bouazza2025_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.929). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -23,6 +23,8 @@ A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the val
 
 <sub>reviewed by rule template (no LLM)</sub>
 
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 15:42:51.224675+00:00) predates the upstream re-run (2026-10-04 03:03:39.028919+00:00). Current validate status: `extracted`.
+
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
 ## Citation
@@ -30,20 +32,20 @@ Bouazza N et al., Population pharmacokinetic modelling of…, British journal of
   ·  DOI: [10.1002/bcp.70103](https://doi.org/10.1002/bcp.70103)
 
 ## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_Bouazza2025_reference" status="curated_candidate" stale="false" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisolone" model-id="Prednisolone_Bouazza2025_reference" status="extracted" stale="true" population="systemic lupus erythematosus patients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
 
-**Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CLm/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Tlag (h) | `Q83` · tlag | 0.17 | h | 612.0 | [h] | 2 | exact (1.0) | bcp70103-tbl-0002:row1:col2 | — | not captured |
 | ka (h−1) | `Q49` · kabs | 1.19 | h−1 | 0.00033055555555555556 | [1] / [h] | 1 | exact (1.0) | bcp70103-tbl-0002:row2:col2 | — | not captured |
-| CLU/F (L.h−1.70 kg−1) | `Q27` · CL/F | 54.3 | L.h−1.70 kg−1 | 0.0010558333333333333 | [l] / [[h] · [kg]] | 7 | llm (0.6) | bcp70103-tbl-0002:row5:col1, bcp70103-tbl-0002:row5:col2 | — | not captured |
-| VU/F (L.70 kg−1) | `Q76` · V/F | 235 | L.70 kg−1 | 16.45 | [l] / [kg] | 8 | llm (0.6) | bcp70103-tbl-0002:row6:col1, bcp70103-tbl-0002:row6:col2 | — | not captured |
+| CLU/F (L.h−1.70 kg−1) | `Q351` · CLm/F | 54.3 | L.h−1.70 kg−1 | 0.0010558333333333333 | [l] / [[h] · [kg]] | 7 | exact (1.0) | bcp70103-tbl-0002:row5:col1, bcp70103-tbl-0002:row5:col2 | — | not captured |
+| VU/F (L.70 kg−1) | `Q76` · V/F | 235 | L.70 kg−1 | 16.45 | [l] / [kg] | 8 | exact (1.0) | bcp70103-tbl-0002:row6:col1, bcp70103-tbl-0002:row6:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -63,7 +65,11 @@ Bouazza N et al., Population pharmacokinetic modelling of…, British journal of
 **Interpretation flags:**
 - column 'covariate effect' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'βFdose' — extend the ontology if this is a real PK parameter (source ['bcp70103-tbl-0002:row4:col2'])
+- metabolite prednisolone: Q27→Q351 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided)
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=prednisolone
+- template fit: none — only the metabolite is modelled — no parent compartment
+- 1C volume normalization: Q290→Q76 (single-compartment model has no central/peripheral split; 'VU/F (L.70 kg−1)' is the general volume)
+- row roles (LLM): model_class=compartmental; 8/8 row label(s) assigned, 6 linked by role
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 
@@ -101,13 +107,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70103-tbl-0002:row5:col1', 'bcp70103-tbl-0002:row5:col2'] |
+| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['bcp70103-tbl-0002:row5:col1', 'bcp70103-tbl-0002:row5:col2'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['bcp70103-tbl-0002:row2:col2'] |
 | C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['bcp70103-tbl-0002:row6:col1', 'bcp70103-tbl-0002:row6:col2'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['bcp70103-tbl-0002:row1:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q27 | pass | clearance within physiological range | 3.8e+03 L/h | not captured | not captured | ['bcp70103-tbl-0002:row5:col1', 'bcp70103-tbl-0002:row5:col2'] |
 | C9_phys_window_Q76 | pass | volume within physiological range | 1.64e+04 L | not captured | not captured | ['bcp70103-tbl-0002:row6:col1', 'bcp70103-tbl-0002:row6:col2'] |
 
 **Reviewer per-scenario checks:**
@@ -141,7 +146,7 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_modelica.zip" download>Prednisolone_Bouazza2025_reference_modelica.zip</a> <span class="pk-size">(3.9 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_modelica.zip" download>Prednisolone_Bouazza2025_reference_modelica.zip</a> <span class="pk-size">(4.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_fmi.zip" download>Prednisolone_Bouazza2025_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_matlab.zip" download>Prednisolone_Bouazza2025_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference/Prednisolone_Bouazza2025_reference_matlab_simbio.zip" download>Prednisolone_Bouazza2025_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
@@ -163,4 +168,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 03:03 UTC</sub>

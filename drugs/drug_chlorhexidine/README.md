@@ -16,29 +16,32 @@ Chlorhexidine was developed in the UK by Imperial Chemical Industries in the ear
 
 **Indication.** Chlorhexidine is available over-the-counter in various formulations (e.g. solution, sponge, cloth, swab) as a topical antiseptic to sanitize prior to surgeries and/or medical procedures.[L11518,L11521,L11527,L11533] Dental formulations, available by prescription only, include an oral rinse indicated for the treatment of gingivitis[L11512] and a slow-release "chip" which is inserted into periodontal pockets and is indicated for the reduction of pocket depth in adult patients with periodontitis as an adjunct therapy to dental scaling and root planing procedures.[L11536]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| chlorhexidine | parent | 505.447 | C22H30Cl2N10 | DrugBank | [9552079](https://pubchem.ncbi.nlm.nih.gov/compound/9552079) | Sherertz_1993, Xue_2009 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 01:39 | 5:52 | 0/2/0 | 1/1/0 | 0/0/0 | 152,582/8,096 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 5/14 | 17/0 | 0 |
+| 2026-10-04 00:00 | 7:57 | 0/2/0 | 1/0/0 | 0/0/0 | 191,574/17,496 | ollama / qwen3.8:27b-mtp-q8_0 | 17 | 5/14 | 17/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | — | 1-compartment (no model) | 2 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>blocking: no structural parameters extracted (nothing to build)</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | — | 1-compartment (no model) | 0 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--green" title="re-read by gpt-oss:120b (confirmed, agreement 1.0). The first reading is what the record holds.">cross-checked ✓</span> <span class="pk-badge pk-badge--species" title="Animal study (rabbit), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rabbit</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Sherertz_1993_reference](drugs/drug_chlorhexidine/Chlorhexidine_Sherertz1993_reference.md) | — | 1-compartment (no model) | 3 | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.222). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (rat), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">rat</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: C9 clearance/volume outside physiological window (implausible magnitude — unit/…</sub><br><sub>route_to: `human_review`</sub> | [Xue_2009_reference](drugs/drug_chlorhexidine/Chlorhexidine_Xue2009_reference.md) | — | 1-compartment (no model) | 3 | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhang_2025_Body_weight](drugs/drug_chlorhexidine/pd_Zhang_2025_Body_weight.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhang_2025_Survival](drugs/drug_chlorhexidine/pd_Zhang_2025_Survival.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhang_2025_Viral_load](drugs/drug_chlorhexidine/pd_Zhang_2025_Viral_load.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Zhang_2025_ZIKV_replication_inhibition](drugs/drug_chlorhexidine/pd_Zhang_2025_ZIKV_replication_inhibition.md) | name ← chlorhexidine · inhibition effect | — | Zhang HT et al., From virtual screening to animal models…, Frontiers in cellular and i… (2025) | [10.3389/fcimb.2025.1699057](https://doi.org/10.3389/fcimb.2025.1699057) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Martin_2023_trophozoite_survival](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_survival.md) | name ← chlorhexidine gluconate · inhibition effect | — | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Martin_2023_trophozoite_viability](drugs/drug_chlorhexidine/pd_Martin_2023_trophozoite_viability.md) | name ← chlorhexidine gluconate · inhibition effect | — | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Martin_2023_percent_killing](drugs/drug_chlorhexidine/pd_Martin_2023_percent_killing.md) | percent killing ← chlorhexidine gluconate · direct sigmoid Emax (Hill) effect | — | Martin KA et al., Assessment of, Frontiers in veterinary sci… (2023) | [10.3389/fvets.2023.1282274](https://doi.org/10.3389/fvets.2023.1282274) |
 
 ## ADME sites
 
@@ -61,7 +64,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 37 matched, 37 returned
 - **screened:** 3  ·  **relevant:** 3
-- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 0
+- **records:** 2  ·  extracted 0  ·  needs_review 0  ·  rejected 2  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -70,55 +73,55 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Xuguang_2006.pdf` | Xuguang S et al., Pharmacokinetics of chlorhexidine gluco…, Journal of ocular pharmacol… (2006) | popPK | 9 | [10.1089/jop.2006.22.227](https://doi.org/10.1089/jop.2006.22.227) | [16910862](https://pubmed.ncbi.nlm.nih.gov/16910862) | The study reports quantitative pharmacokinetic parameters (clearance, half-lives, Tmax, Cmax) for chlorhexidine in rabbit cornea using a two-compartment model, with all values explicitly listed in the text. |
-| `Sherertz_1993.pdf` | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | popPK | 8 | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) | [7734001](https://pubmed.ncbi.nlm.nih.gov/7734001) | The study reports quantitative in vivo half-lives for chlorhexidine in a rabbit model, indicating compartmental kinetics, with values explicitly present in the text. |
-| `Xue_2009.pdf` | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | popPK | 8 | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) | [19239733](https://pubmed.ncbi.nlm.nih.gov/19239733) | The paper reports a two-compartment model and specific half-life values (alpha 0.05 h, beta 0.55 h) for chlorhexidine in rats, but lacks other quantitative parameters like clearance or volume of distribution. |
+| `Xuguang_2006.pdf` | Xuguang S et al., Pharmacokinetics of chlorhexidine gluco…, Journal of ocular pharmacol… (2006) | popPK | 10 | [10.1089/jop.2006.22.227](https://doi.org/10.1089/jop.2006.22.227) | [16910862](https://pubmed.ncbi.nlm.nih.gov/16910862) | The study reports quantitative pharmacokinetic parameters (clearance, half-lives, Tmax, Cmax) for chlorhexidine in rabbit cornea. |
+| `Xue_2009.pdf` | Xue Y et al., High-performance liquid chromatographic…, Journal of analytical toxic… (2009) | popPK | 9 | [10.1093/jat/33.2.85](https://doi.org/10.1093/jat/33.2.85) | [19239733](https://pubmed.ncbi.nlm.nih.gov/19239733) | The study reports quantitative pharmacokinetic parameters (two-compartment model, alpha and beta half-lives) for chlorhexidine in rats following intravenous infusion. |
+| `Sherertz_1993.pdf` | Sherertz RJ et al., Efficacy of antibiotic-coated catheters…, The Journal of infectious d… (1993) | popPK | 8 | [10.1093/infdis/167.1.98](https://doi.org/10.1093/infdis/167.1.98) | [7734001](https://pubmed.ncbi.nlm.nih.gov/7734001) | The study reports quantitative pharmacokinetic parameters (two-compartment half-lives) for chlorhexidine in a rabbit model. |
 | `Jesus_2013.pdf` | Jesus FT et al., Lethal and sub lethal effects of the bi…, Ecotoxicology (London, Engl… (2013) | pd | 4 | [10.1007/s10646-013-1121-6](https://doi.org/10.1007/s10646-013-1121-6) | [24026526](https://www.ncbi.nlm.nih.gov/pubmed/24026526) | metadata signals extractable PD data (EC50) |
 | `Louis_1985.pdf` | Louis SM et al., A comparison of the effects of nonoxyno…, Contraception (1985) | pd | 4 | [10.1016/0010-7824(85)90108-8](https://doi.org/10.1016/0010-7824(85)90108-8) | [3000690](https://www.ncbi.nlm.nih.gov/pubmed/3000690) | metadata signals extractable PD data (EC50) |
 
-<sub>queue written 2026-09-18T01:35:24.227881+00:00</sub>
+<sub>queue written 2026-10-03T23:53:56.032296+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| PGx | Abdulkareem_2026 | not_relevant | 0 | 0 | The study investigates the association between ENAM polymorphism and dental caries susceptibility, and compares the in silico binding affinity of phytochemicals to chlorhexidine against a bacterial enzyme, but does not report any pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of chlorhexidine. |
+| PGx | Abdulkareem_2026 | not_relevant | 0 | 0 | The paper investigates the association between ENAM polymorphism and dental caries susceptibility, and compares the in silico binding affinity of eugenol/cinnamic acid to chlorhexidine against a bacterial target, but does not report any pharmacogenomic effect on the pharmacokinetic or pharmacodynamic parameters of chlorhexidine. |
 | PGx | Anwar_2020 | not_relevant | 0 | 0 | The paper investigates the efficacy of synthetic tetrazoles against Acanthamoeba and does not report any pharmacogenomic effects on the PK or PD of chlorhexidine. |
-| popPK | Ashfaq_2023 | irrelevant | 0 | 0 | The paper is a formulation development study focusing on in vitro drug release and gel characteristics, not a pharmacokinetic study reporting disposition parameters like clearance or volume. |
+| popPK | Ashfaq_2023 | irrelevant | 0 | 0 | The study focuses on the formulation and in vitro release of a chlorhexidine gel, not on pharmacokinetic parameters like clearance or volume of distribution. |
 | PGx | Aydamirov_2023 | not_relevant | 0 | 0 | The paper evaluates the in vitro antiviral efficacy of chlorhexidine against adenovirus and does not report any pharmacogenomic effects on its pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Baldo_2023 | not_relevant | 0 | 0 | The paper is a general review of adverse drug reactions in anesthesia and does not report specific pharmacogenomic effects on the PK or PD of chlorhexidine. |
-| PGx | Campos_2012 | not_relevant | 0 | 0 | The study evaluates the efficacy of chlorhexidine against bacterial strains based on their resistance genotypes (mecA), which is a microbiological susceptibility study, not a human pharmacogenomic study of PK/PD parameters. |
+| PGx | Campos_2012 | not_relevant | 0 | 0 | The study evaluates the efficacy of chlorhexidine against bacterial strains based on their resistance genotypes (mecA), not the effect of human gene variants on chlorhexidine pharmacokinetics or pharmacodynamics. |
 | PGx | Chen_2026 | not_relevant | 0 | 0 | The paper investigates the impact of cyst maturity on drug resistance in Acanthamoeba, not the effect of human gene variants on chlorhexidine pharmacokinetics or pharmacodynamics. |
-| popPK | Cintra_2025 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial/antibiofilm investigation of rosemary extract where chlorhexidine is used only as a positive control, with no pharmacokinetic parameters reported. |
+| popPK | Cintra_2025 | irrelevant | 0 | 0 | The study is an in-vitro antimicrobial/antibiofilm assay where chlorhexidine is used only as a positive control, not a pharmacokinetic study. |
 | PD | Cintra_2025 | not_relevant | 0 | 0 | The paper focuses on the phytochemical composition and antimicrobial activity of rosemary extract, using chlorhexidine only as a positive control without reporting any pharmacodynamic or exposure-response parameters for it. |
-| popPK | Engel_2022 | irrelevant | 0 | 0 | The paper is a quality improvement study on infection control using chlorhexidine for bathing, not a pharmacokinetic study, and contains no PK parameters. |
-| popPK | Enger_2016 | irrelevant | 0 | 0 | The paper is a meta-analysis of teat dip efficacy trials focusing on infection rates, not a pharmacokinetic study reporting disposition parameters for chlorhexidine. |
-| popPK | Eraydin-Tufek_2026 | irrelevant | 0 | 0 | The paper is a clinical trial evaluating the efficacy of nonsurgical treatments for peri-implantitis, not a pharmacokinetic study, and contains no disposition parameters for chlorhexidine. |
-| popPK | Hahn_2020 | irrelevant | 0 | 0 | The paper is an in-vitro study on Acanthamoeba keratitis where chlorhexidine is used only as a positive control/comparator, and no pharmacokinetic parameters for chlorhexidine are reported. |
+| popPK | Engel_2022 | irrelevant | 0 | 0 | The paper is a quality improvement study on infection control using chlorhexidine for bathing, not a pharmacokinetic study. |
+| popPK | Enger_2016 | irrelevant | 0 | 0 | The study is a meta-analysis of teat dip efficacy trials in cattle, focusing on infection rates rather than the pharmacokinetic disposition parameters of chlorhexidine. |
+| popPK | Eraydin-Tufek_2026 | irrelevant | 0 | 0 | The study is a clinical trial evaluating the efficacy of chlorhexidine as an adjunctive treatment for peri-implantitis, not a pharmacokinetic study, and reports no disposition parameters. |
+| popPK | Hahn_2020 | irrelevant | 0 | 0 | The study is an in-vitro pharmacological investigation of statins against Acanthamoeba, where chlorhexidine is used only as a positive control and no pharmacokinetic parameters for chlorhexidine are reported. |
 | PD | Hahn_2020 | not_relevant | 0 | 0 | The paper investigates the PD of pitavastatin and isavuconazole, not chlorhexidine; chlorhexidine is only mentioned as part of the current standard of care. |
 | PGx | Hsieh_2020 | not_relevant | 0 | 0 | The paper reports the minimal algaecide concentration of chlorhexidine against Prototheca isolates, which is an antimicrobial susceptibility test, not a pharmacogenomic effect on human PK or PD parameters. |
 | popPK | Jesus_2013 | irrelevant | 0 | 0 | no_text gate: only 79 chars of text extracted (&lt; 400) |
 | PGx | Kampf_1999 | not_relevant | 0 | 0 | The paper investigates the effect of bacterial genotypes (vanA/vanB) on susceptibility to chlorhexidine, which is a microbiological resistance study, not a human pharmacogenomic study of PK/PD parameters. |
-| popPK | Kar_2025 | irrelevant | 0 | 0 | The study is an in-vitro materials science investigation into the color stability of dental restorations exposed to chlorhexidine, containing no pharmacokinetic data or disposition parameters. |
+| popPK | Kar_2025 | irrelevant | 0 | 0 | The study investigates the color stability of dental restorative materials exposed to chlorhexidine mouthwash, not the pharmacokinetics of chlorhexidine. |
 | PD | Kar_2025 | not_relevant | 0 | 0 | The study is an in vitro materials science experiment measuring color stability (ΔE) of dental restoratives, not a pharmacodynamic or exposure-response analysis of chlorhexidine's biological effect. |
 | PGx | Landelle_2016 | not_relevant | 0 | 0 | The study evaluates the clinical efficacy of polyhexanide for MRSA decolonization and does not investigate pharmacogenomic effects on the PK or PD of chlorhexidine. |
 | PGx | Latifi_2023 | not_relevant | 0 | 0 | The paper reports in vitro antimicrobial efficacy and cytotoxicity of chlorhexidine against Acanthamoeba, but contains no pharmacogenomic data or analysis of gene variants affecting PK/PD parameters. |
 | popPK | Louis_1985 | irrelevant | 0 | 0 | no_text gate: only 78 chars of text extracted (&lt; 400) |
-| popPK | Martin_2023 | irrelevant | 0 | 0 | The study is an in-vitro efficacy assessment of disinfectants against a parasite, reporting EC50 values rather than pharmacokinetic disposition parameters. |
-| PGx | Niyyati_2018 | not_relevant | 0 | 0 | The paper investigates the anti-Acanthamoeba efficacy of contact lens solutions and nanoparticles, with no mention of pharmacogenomics or gene variants affecting chlorhexidine PK/PD. |
+| popPK | Martin_2023 | irrelevant | 0 | 0 | The study is an in vitro efficacy assessment of chlorhexidine against a parasite, reporting EC50 values rather than pharmacokinetic disposition parameters. |
+| PGx | Niyyati_2018 | not_relevant | 0 | 0 | The paper investigates the anti-Acanthamoeba efficacy of contact lens solutions and nanoparticles, with no mention of gene variants or pharmacogenomics. |
 | PGx | Padzik_2018 | not_relevant | 0 | 0 | The study investigates the in vitro anti-amoebic activity of chlorhexidine on Acanthamoeba strains and does not report any pharmacogenomic effects on human pharmacokinetic or pharmacodynamic parameters. |
 | PGx | Padzik_2018_2 | not_relevant | 0 | 0 | The paper investigates the in vitro anti-amoebic activity of chlorhexidine on Acanthamoeba strains and does not report any pharmacogenomic effects on human PK or PD parameters. |
-| popPK | Plata_2023 | irrelevant | 0 | 0 | The study is a clinical trial comparing antimicrobial efficacy (plaque/bacterial reduction) of HOCl and chlorhexidine, reporting no pharmacokinetic parameters (CL, V, t1/2) for chlorhexidine. |
-| popPK | Popovich_2012 | irrelevant | 2 | 0 | The study measures surface skin concentrations and microbial density rather than systemic pharmacokinetic parameters (CL, V, ka) for chlorhexidine. |
+| popPK | Plata_2023 | irrelevant | 0 | 0 | The study is a clinical trial comparing the antimicrobial efficacy of hypochlorous acid and chlorhexidine in periodontitis, reporting clinical and microbiological outcomes rather than pharmacokinetic parameters. |
+| popPK | Popovich_2012 | irrelevant | 2 | 0 | The study measures surface chlorhexidine concentrations on skin to correlate with microbial density, rather than reporting systemic pharmacokinetic parameters (CL, V, ka) for the drug. |
 | PGx | Raghav_2025 | not_relevant | 0 | 0 | The paper is a clinical trial comparing the antimicrobial efficacy of silver nanoparticles and chlorhexidine mouthwashes, with no mention of pharmacogenomics, gene variants, or PK/PD parameters. |
-| PGx | Schabauer_2018 | not_relevant | 0 | 0 | The paper evaluates the antimicrobial activity of new compounds against bacteria and does not report any pharmacogenomic effects on the PK or PD of chlorhexidine. |
+| PGx | Schabauer_2018 | not_relevant | 0 | 0 | The paper evaluates the antimicrobial activity of new compounds against bacteria and does not report any human pharmacogenomic effects on the PK or PD of chlorhexidine. |
 | PGx | Simau_2024 | not_relevant | 0 | 0 | The paper investigates the interaction between lactase and chlorhexidine against Acanthamoeba, not the effect of human gene variants on chlorhexidine pharmacokinetics or pharmacodynamics. |
 | PGx | Sobukawa_2011 | not_relevant | 0 | 0 | The study evaluates the algaecide efficacy of disinfectants on microbial genotypes, not the pharmacokinetics or pharmacodynamics of chlorhexidine in humans or animals. |
 | PGx | Terlecky_2026 | not_relevant | 0 | 0 | The paper analyzes bacterial genomic diversity and resistance to chlorhexidine, not human pharmacogenomics. |
 | popPK | Woessner_2016 | irrelevant | 0 | 0 | The study investigates the effect of chlorhexidine mouthwash on nitrate/nitrite metabolism and blood pressure, not the pharmacokinetic disposition parameters of chlorhexidine itself. |
-| popPK | Zakir_2020 | irrelevant | 0 | 0 | The study is an in-vitro investigation of surface roughness of dental ceramics exposed to chlorhexidine mouthwash, not a pharmacokinetic study. |
+| popPK | Zakir_2020 | irrelevant | 0 | 0 | The study investigates the effect of chlorhexidine mouthwash on dental ceramic surface roughness, not the pharmacokinetics of chlorhexidine. |
 | PD | Zakir_2020 | not_relevant | 0 | 0 | The study is an in vitro materials science experiment measuring surface roughness changes of dental ceramics after immersion in various solutions, not a pharmacodynamic or exposure-response analysis of chlorhexidine. |
-| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study is an antiviral efficacy and molecular docking study that explicitly states no pharmacokinetic analysis was performed, reporting only EC50/CC50 values rather than disposition parameters. |
+| popPK | Zhang_2025 | irrelevant | 0 | 0 | The study is an antiviral efficacy and molecular docking study that explicitly states no pharmacokinetic analysis was performed. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 01:35 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-03 23:54 UTC</sub>

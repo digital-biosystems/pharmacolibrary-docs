@@ -5,7 +5,7 @@
 
 # montelukast — `Montelukast_Li2019_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.364). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,11 +21,11 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. A reported unit could not be converted (V1 and V), so that value has no SI equivalent. Extracted — montelukast: V1 14 %CV, V 45.4 %CV, CL 0.87 L/h, kabs 0.357 h-1.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has montelukast, the second reading unknown; it also differs on 7 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of central compartment volume of distribution: this record has 14.0, the second reading none; it also differs on 6 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
 
-> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:05.850029+00:00) predates the upstream re-run (2026-10-01 10:15:44.864179+00:00). Current validate status: `rejected`.
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:39:05.850029+00:00) predates the upstream re-run (2026-10-03 22:16:42.751452+00:00). Current validate status: `rejected`.
 
 ## Citation
 Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, development an… (2019)
@@ -47,7 +47,7 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 | central compartment volume of distribution (Vc) | `Q63` · V1 | 14.0 | L | 0.014 | L | not captured | boundary (0.8) | Li_2019:results_prose | — | not captured |
 | peripheral volume of distribution (Vp) | `Q64` · V2 | 45.4 | L | 0.0454 | L | not captured | boundary_compartment (0.9) | Li_2019:results_prose | — | not captured |
 | Montelukast clearance (L/h) | `Q22` · CL | 0.87 | L/h | 2.4166666666666665e-07 | L/h | not captured | boundary (0.8) | Li_2019:results_prose | — | not captured |
-| Ka | `Q49` · kabs | 0.357 | h−1 | 9.916666666666666e-05 | 1/h | not captured | review_gapfill (0.7) | Zhu_2024:review | — | not captured |
+| KAh−1 | `Q49` · kabs | 0.357 | h−1 | 9.916666666666666e-05 | 1/h | not captured | review_gapfill (0.7) | Zhu_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -67,8 +67,8 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 - salvaged Q63 ('central compartment volume of distribution (Vc)'=14.0) from results prose — parameter table was unreadable
 - salvaged Q64 ('peripheral volume of distribution (Vp)'=45.4) from results prose — parameter table was unreadable
 - salvaged Q22 ('Montelukast clearance (L/h)'=0.87) from results prose — parameter table was unreadable
-- implicit units: 'central compartment volume of distribution (Vc)' → L (from the popPK convention: 'The paper does not explicitly state the unit for Vc in the provided text, but the value 14.0 represents the %CV (coeffic')
-- implicit units: 'peripheral volume of distribution (Vp)' → L (from the popPK convention: 'The paper does not explicitly state the unit for Vp in the provided text. The value 45.4 represents the %CV of the param')
+- implicit units: 'central compartment volume of distribution (Vc)' → L (from the popPK convention: 'The paper does not explicitly state the unit for Vc in the provided text (it only lists the %CV). However, Vc is a volum')
+- implicit units: 'peripheral volume of distribution (Vp)' → L (from the popPK convention: 'The paper does not explicitly state the unit for Vp in the provided text (it only lists the %CV). However, Vp is a volum')
 - apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=montelukast
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -83,14 +83,14 @@ Li Q et al., Developmental Pharmacogenetics of SLCO2…, Drug design, developmen
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.2 (2/10 fields) | 8 |
+| `gpt-oss:120b` | partly confirmed | 0.364 (4/11 fields) | 7 |
 
-<details><summary>8 field(s) a reader read differently</summary>
+<details><summary>7 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
@@ -98,10 +98,9 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | `gpt-oss:120b` | `parameters[cl]` | not captured | 24.2 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[montelukast clearance]` | 0.87 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[peripheral volume of distribution]` | 45.4 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[q1]` | not captured | 0.256 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vc]` | not captured | 14.0 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[vp]` | not captured | 45.4 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | montelukast | unknown | mismatch |
-| `gpt-oss:120b` | `screen.primary_analyte` | montelukast | unknown | mismatch |
 
 </details>
 
@@ -150,4 +149,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-01 10:15 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-03 22:16 UTC</sub>

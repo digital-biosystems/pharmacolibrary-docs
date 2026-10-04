@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;de_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_de2023_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.875). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.688). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,9 +21,11 @@
 
 The clearance/volume check flagged an implausible magnitude attributed to a unit or scale extraction error, and a structural parameter failed the dimension check. A reported unit could not be converted to SI, so the parameter arrived without an SI value. The second reader could not confirm the oral absorption lag time (0.36 h) or the volume V Glu1 (0.3 L), recording no value for either. Extracted — prednisolone: ktr 12.5 h-1, MTT 0.63 h, Vnorm 101 L/70 kg, CLu 27.6 L/h/70 kg, Bmax 6.77, KD 0.0095 nmol, V 0.3 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of t lag,oral: this record has 0.36, the second reading none; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has prednisone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 15:42:51.282021+00:00) predates the upstream re-run (2026-10-04 03:04:04.286506+00:00). Current validate status: `rejected`.
 
 > **Dose compound ≠ measured compound:** dosed `prednisone`, measured `prednisolone`.
 
@@ -32,26 +34,24 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
   ·  DOI: [10.1111/bcp.15610](https://doi.org/10.1111/bcp.15610)
 
 ## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="false" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisolone" model-id="Prednisolone_de2023_reference" status="rejected" stale="true" population="paediatric kidney transplant recipients" measured-compound="prednisolone" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 8 extracted.
+**Parameters:** 6 extracted.
 
-**Parameterization:** mechanistic.
+**Parameterization:** CLm,norm/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `rejected`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Ktr (h-1) | `Q306` · ktr | 12.5 | h-1 | 0.003472222222222222 | [1] / [h] | 4 | exact (1.0) | de_2023_table_p5_1:row1:col1, de_2023_table_p5_1:row1:col2 | — | not captured |
-| Mtt (h) | `Q81` · MTT | 0.63 | h | not captured | [h] | 37 | exact (1.0) | de_2023_table_p5_1:row2:col1, de_2023_table_p5_1:row2:col2 | — | 0.755 (35% RSE) |
-| VU (L/70 kg) | `Q352` · Vnorm | 101 | L/70 kg | 0.101 | [l] / [70kg] | 9 | llm (0.6) | de_2023_table_p5_1:row3:col1, de_2023_table_p5_1:row3:col2 | — | not captured |
-| CLU (L/h/70 kg) | `Q24` · CLu | 27.6 | L/h/70 kg | 7.666666666666667e-06 | [l] / [[h] · [70kg]] | 11 | exact (1.0) | de_2023_table_p5_1:row4:col1, de_2023_table_p5_1:row4:col2 | — | 0.429 (22% RSE) |
+| Ktr (h-1) | `Q49` · kabs | 12.5 | h-1 | 0.003472222222222222 | [1] / [h] | 4 | exact (1.0) | de_2023_table_p5_1:row1:col1, de_2023_table_p5_1:row1:col2 | — | not captured |
+| Mtt (h) | `Q83` · tlag | 0.63 | h | 2268.0 | [h] | 37 | exact (1.0) | de_2023_table_p5_1:row2:col1, de_2023_table_p5_1:row2:col2 | — | not captured |
+| VU (L/70 kg) | `Q61` · V | 101 | L/70 kg | 0.101 | [l] / [70kg] | 9 | exact (1.0) | de_2023_table_p5_1:row3:col1, de_2023_table_p5_1:row3:col2 | — | not captured |
+| CLU (L/h/70 kg) | `Q375` · CLm,norm/F | 27.6 | L/h/70 kg | 7.666666666666667e-06 | [l] / [[h] · [70kg]] | 11 | exact (1.0) | de_2023_table_p5_1:row4:col1, de_2023_table_p5_1:row4:col2 | — | not captured |
 | Bmax | `Q332` · Bmax | 6.77 | not captured | not captured | not captured | not captured | exact (1.0) | de_2023_table_p5_1:row5:col1 | — | not captured |
 | K1 (nmol) | `Q331` · KD | 0.0095 | nmol | not captured | [nM] | not captured | llm (0.6) | de_2023_table_p5_1:row6:col1 | — | not captured |
-| V Glu1 | `Q61` · V | 0.3 | L | 0.0003 | L | not captured | review_gapfill (0.7) | Tan_2024:review | — | not captured |
-| t lag,oral | `Q83` · tlag | 0.36 | hour | 1296.0 | h | not captured | review_gapfill (0.7) | Tan_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -61,16 +61,23 @@ de Truchis C et al., Prednisolone pharmacokinetics after ora…, British journal
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section iiv: 'Ω Mtt' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'Ω CLU' routed out of structural estimates ('Interindividual variability')
+- table section iiv: 'Ω K1' routed out of structural estimates ('Interindividual variability')
+- table section residual_error: 'Residual variability, additive (nmol/L)' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Residual variability, proportional' routed out of structural estimates ('Residual error')
 - unit_dimension_mismatch: 'K1 (nmol)' → Q331 (unit '[substance]' vs ontology '[mass] / [length] ** 3') — route to review
 - dropped unlinked row (NIL): 'Kns' — extend the ontology if this is a real PK parameter (source ['de_2023_table_p5_1:row7:col1'])
 - dropped unlinked row (NIL): 'βciclosporine/CLU' — extend the ontology if this is a real PK parameter (source ['de_2023_table_p5_1:row8:col1', 'de_2023_table_p5_1:row8:col2'])
-- apparent-ness (ontology-grounded): parameterization=mechanistic, measured_compound=prednisolone
+- metabolite prednisolone: Q22→Q375 — only the metabolite is measured and fm is not identifiable, so its CL/V are apparent (fm-divided), normalised to a standard size
+- metabolite volume: 'VU (L/70 kg)' Q63→Q61 for prednisolone — it is 1-compartment, so its central volume is its only volume
+- apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=prednisolone
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
+- template fit: none — only the metabolite is modelled — no parent compartment
 - status held at route_to_review — not promoted
-- gap-filled Q61 (V) from Tan_2024's review values (primary lacked it)
+- row roles (LLM): model_class=compartmental; 13/13 row label(s) assigned, 8 linked by role
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
-- gap-filled Q83 (tlag) from Tan_2024's review values (primary lacked it)
 
 **Extraction notes:**
 - no LLM table selection; kept 2 deterministically-scored parameter table(s)
@@ -82,14 +89,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.875 (14/16 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.688 (11/16 fields) | 5 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[t lag,oral]` | 0.36 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v glu1]` | 0.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `model.parameterization` | apparent | mechanistic | mismatch |
+| `gpt-oss:120b` | `parameters[clu].parameter_id` | Q375 | Q22 | mismatch |
+| `gpt-oss:120b` | `parameters[mtt].parameter_id` | Q83 | Q81 | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | prednisone | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | prednisolone | unknown | mismatch |
 
 </details>
 
@@ -105,19 +115,17 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 |---|---|---|---|---|---|---|
 | C0_has_structural_params | pass | not captured | 6 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
-| C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
-| C2_base_Q24 | pass | 27.6 | 27.6 | 1.0 | 0.05 | footnote reference category |
-| C2_base_Q352 | pass | 101.0 | 101.0 | 1.0 | 0.05 | footnote reference category |
-| C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_2023_table_p5_1:row4:col1', 'de_2023_table_p5_1:row4:col2'] |
-| C5_dimension_Q306 | pass | 1 / [time] | not captured | not captured | not captured | ['de_2023_table_p5_1:row1:col1', 'de_2023_table_p5_1:row1:col2'] |
+| C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
+| C2_base_Q375 | pass | 27.6 | 27.6 | 1.0 | 0.05 | footnote reference category |
+| C2_base_Q61 | pass | 101.0 | 101.0 | 1.0 | 0.05 | footnote reference category |
 | C5_dimension_Q331 | fail | [substance] | nmol | not captured | not captured | ['de_2023_table_p5_1:row6:col1'] |
-| C5_dimension_Q352 | pass | [length] ** 3 | not captured | not captured | not captured | ['de_2023_table_p5_1:row3:col1', 'de_2023_table_p5_1:row3:col2'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Tan_2024:review'] |
-| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Tan_2024:review'] |
-| C6_cl_magnitude | pass | &lt;= 90.0 L/h | 27.6 | not captured | not captured | ['de_2023_table_p5_1:row4:col1', 'de_2023_table_p5_1:row4:col2'] |
+| C5_dimension_Q375 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['de_2023_table_p5_1:row4:col1', 'de_2023_table_p5_1:row4:col2'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['de_2023_table_p5_1:row1:col1', 'de_2023_table_p5_1:row1:col2'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['de_2023_table_p5_1:row3:col1', 'de_2023_table_p5_1:row3:col2'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['de_2023_table_p5_1:row2:col1', 'de_2023_table_p5_1:row2:col2'] |
+| C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q24 | pass | clearance within physiological range | 27.6 L/h | not captured | not captured | ['de_2023_table_p5_1:row4:col1', 'de_2023_table_p5_1:row4:col2'] |
-| C9_phys_window_Q61 | fail | volume within physiological range | 0.3 L | not captured | not captured | ['Tan_2024:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 101 L | not captured | not captured | ['de_2023_table_p5_1:row3:col1', 'de_2023_table_p5_1:row3:col2'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -142,4 +150,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:50 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 03:04 UTC</sub>

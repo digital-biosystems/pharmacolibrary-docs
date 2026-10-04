@@ -12,21 +12,11 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 01:19 | 3:36 | 0/0/0 | 1/0/0 | 0/0/0 | 124,990/1,889 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/4 | 3/0 | 0 |
+| 2026-10-03 23:46 | 0:50 | 0/0/0 | 0/0/0 | 0/0/0 | 33,212/452 | ollama / qwen3.8:27b-mtp-q8_0 | 3 | 1/4 | 3/0 | 0 |
 
 ## popPK records
 
 _not available_
-
-## Pharmacodynamics (PD)
-
-| status | detail | about | model | citation | doi |
-|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hakimi_2019_IL_10_expression](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_10_expression.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hakimi_2019_IL_12_expression](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_IL_12_expression.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hakimi_2019_amastigote_inhibition](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_amastigote_inhibition.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hakimi_2019_apoptosis_rate](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_apoptosis_rate.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Hakimi_2019_promastigote_inhibition](drugs/drug_benzoxonium_chloride/pd_Hakimi_2019_promastigote_inhibition.md) | name ← benzoxonium chloride · inhibition effect | — | Hakimi Parizi M et al., Antileishmanial activity and immune mod…, Journal of parasitic diseas… (2019) | [10.1007/s12639-019-01105-7](https://doi.org/10.1007/s12639-019-01105-7) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -45,17 +35,17 @@ _not available_
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper describes a QSP model for hUGT1A1-modRNA (an mRNA therapeutic) and does not study benzoxonium_chloride. |
-| popPK | Belenichev_2025 | irrelevant | 0 | 0 | The paper studies the neuroprotective efficacy of Angiolin gel in rats and does not report pharmacokinetic parameters for benzoxonium chloride. |
+| popPK | Apgar_2018 | irrelevant | 0 | 0 | The paper describes a QSP model for hUGT1A1-modRNA (an mRNA therapeutic) in Gunn rats, not benzoxonium_chloride. |
+| popPK | Belenichev_2025 | irrelevant | 0 | 0 | The study investigates the neuroprotective efficacy of Angiolin gel in rats and does not involve benzoxonium_chloride or report any pharmacokinetic parameters. |
 | PD | Belenichev_2025 | not_relevant | 0 | 0 | The paper reports group-level biochemical and behavioral outcomes for a single dose of Angiolin gel (benzoxonium chloride) compared to controls, but it does not provide concentration-effect data, dose-response curves, or any numeric pharmacodynamic parameters (e.g., Emax, EC50). |
-| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not involve benzoxonium_chloride or report any pharmacokinetic parameters. |
+| popPK | EFSA_2023 | irrelevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not contain any pharmacokinetic data for benzoxonium chloride. |
 | PD | EFSA_2023 | not_relevant | 0 | 0 | The paper is a risk assessment of N-nitrosamines in food and does not mention benzoxonium chloride or report any pharmacodynamic or exposure-response data. |
-| popPK | Futane_2023 | irrelevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnostics and does not contain any pharmacokinetic data or parameters for benzoxonium_chloride. |
+| popPK | Futane_2023 | irrelevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnosis and does not contain any pharmacokinetic data for benzoxonium_chloride. |
 | PD | Futane_2023 | not_relevant | 0 | 0 | The paper is a review on aptamer-based biosensors for point-of-care diagnosis and does not contain any pharmacodynamic or exposure-response data for benzoxonium chloride. |
 | popPK | Hakimi_2019 | irrelevant | 0 | 0 | The study is an in-vitro investigation of antileishmanial activity and drug release from niosomes, reporting no pharmacokinetic parameters (CL, V, ka, etc.) for benzoxonium chloride. |
-| popPK | Kayukova_2026 | irrelevant | 0 | 0 | The paper is a medicinal chemistry study on the synthesis and in vitro biological activity of new amidoxime derivatives, not a pharmacokinetic study of benzoxonium chloride. |
+| popPK | Kayukova_2026 | irrelevant | 0 | 0 | The paper describes the synthesis and in vitro biological activity of novel benzimidazole derivatives, not the pharmacokinetics of benzoxonium chloride. |
 | PD | Kayukova_2026 | not_relevant | 0 | 0 | The paper reports the synthesis and in vitro biological screening (MIC/MIC90 or similar activity comparisons) of new chemical compounds, but does not contain any pharmacokinetic data, exposure-response analysis, or numeric PD parameters (Emax, EC50, etc.) for benzoxonium chloride or the synthesized derivatives. |
-| popPK | Mertes_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of transcrocetin (TC) in a liposomal formulation, not benzoxonium_chloride. |
+| popPK | Mertes_2022 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics and efficacy of LEAF-4L6715 (transcrocetin), not benzoxonium_chloride. |
 | PD | Mertes_2022 | not_relevant | 0 | 0 | The paper reports clinical outcomes (PaO2/FiO2, SOFA) and dose selection for a different drug (LEAF-4L6715/transcrocetin), not benzoxonium chloride, and contains no PD modeling or numeric PD parameters. |
 
 ---

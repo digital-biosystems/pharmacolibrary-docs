@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;dexamethasone&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/&quot;},{&quot;label&quot;:&quot;\u015awierczek_2023 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Dexamethasone_Calderin2025_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Dexamethasone_Calderin2025v2_reference&quot;,&quot;label&quot;:&quot;Calderin_2025_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_dexamethasone/Dexamethasone_Calderin2025v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # dexamethasone — `Dexamethasone_wierczek2023_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.167). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,16 +21,20 @@
 
 A model needs both clearance and volume; without the volume it could only be built on a library default, so it was not. A reported unit could not be converted (CL/F), so that value has no SI equivalent. Extracted — dexamethasone: CL/F 0.077 L h−1 kg−1, kabs 0.773 day -1, tlag 0.29 h.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has dexamethasone, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:37:31.963597+00:00) predates the upstream re-run (2026-10-04 00:16:36.523072+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Świerczek A et al., Anti-inflammatory effects of dexamethas…, Clinical and translational… (2023)
   ·  DOI: [10.1111/cts.13577](https://doi.org/10.1111/cts.13577)
 
 ## Model component
-<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_wierczek2023_reference" status="needs_review" stale="false" population="adults with COVID-19" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="dexamethasone" model-id="Dexamethasone_wierczek2023_reference" status="needs_review" stale="true" population="adults with COVID-19" measured-compound="dexamethasone" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 3 extracted.
 
 **Parameterization:** CL/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -40,7 +44,7 @@ A model needs both clearance and volume; without the volume it could only be bui
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| apparent weight‐normalized total apparent clearance (CL/F) value ... in patients with COVID‐19 | `Q27` · CL/F | 0.077 | L h−1 kg−1 | not captured | L h−1 kg−1 | not captured | boundary (0.8) | Świerczek_2023:other_prose | — | not captured |
+| apparent weight‐normalized total apparent clearance (CL/F) value ... in patients with COVID‐19 | `Q27` · CL/F | 0.077 | L/h/kg | 1.4972222222222222e-06 | L/h | not captured | boundary (0.8) | Świerczek_2023:other_prose | — | not captured |
 | K a | `Q49` · kabs | 0.773 | day -1 | 8.946759259259258e-06 | 1/h | not captured | review_gapfill (0.7) | Luo_2022:review | — | not captured |
 | t lag (h) | `Q83` · tlag | 0.29 | h | 1044.0 | h | not captured | review_gapfill (0.7) | Świerczek_2023:review | — | not captured |
 
@@ -52,17 +56,16 @@ A model needs both clearance and volume; without the volume it could only be bui
 ## Departures & gaps
 
 **Interpretation flags:**
+- table section residual_error: 'a (ng/mL)' routed out of structural estimates ('Residual variability')
 - dropped value-less row: 't lag (h)' (captured trailing unit 'h' for child rows)
 - dropped value-less row: 'k a (h−1)' (captured trailing unit 'h−1' for child rows)
 - dropped value-less row: 'CL/F (L/h)' (captured trailing unit 'L/h' for child rows)
 - dropped value-less row: 'V c/F (L)' (captured trailing unit 'L' for child rows)
 - dropped value-less row: 'CLd/F (L/h)' (captured trailing unit 'L/h' for child rows)
 - dropped value-less row: 'V p/F (L)' (captured trailing unit 'L' for child rows)
-- dropped value-less row: 'a (ng/mL)' (captured trailing unit 'ng/mL' for child rows)
 - salvaged Q27 ('apparent weight‐normalized total apparent clearance (CL/F) value ... in patients with COVID‐19'=0.077) from results prose — parameter table was unreadable
+- implicit units: 'apparent weight‐normalized total apparent clearance (CL/F) value ... in patients with COVID‐19' → L/h/kg (from the popPK convention: "The parameter is described in the text as 'apparent weight-normalized CL/F'. In population pharmacokinetics, weight-norm")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=dexamethasone
-- held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
-- status held at route_to_review — not promoted
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
 - gap-filled Q49 (kabs) from Luo_2022's review values (primary lacked it)
@@ -73,6 +76,31 @@ A model needs both clearance and volume; without the volume it could only be bui
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.167 (1/6 fields) | 5 |
+
+<details><summary>5 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `model.links` | [] | [['none', 'none', 'none']] | mismatch |
+| `gpt-oss:120b` | `parameters[apparent weight‐normalized total apparent clearance (cl/f) value (considering mean body weight of 81 kg) in patients with covid‐19]` | not captured | 0.077 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[apparent weight‐normalized total apparent clearance (cl/f) value ... in patients with covid‐19]` | 0.077 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | dexamethasone | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | dexamethasone | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -80,11 +108,12 @@ A model needs both clearance and volume; without the volume it could only be bui
 | C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | fail | not captured | not captured | not captured | not captured | not captured |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Świerczek_2023:other_prose'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Luo_2022:review'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['Świerczek_2023:review'] |
-| C5_unit_missing_Q27 | fail | [length] ** 3 / [time] | L h−1 kg−1 | not captured | not captured | ['Świerczek_2023:other_prose'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 5.39 L/h | not captured | not captured | ['Świerczek_2023:other_prose'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -119,4 +148,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:09 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:16 UTC</sub>

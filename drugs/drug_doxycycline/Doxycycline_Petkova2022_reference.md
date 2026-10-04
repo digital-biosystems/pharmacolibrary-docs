@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;doxycycline&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/&quot;},{&quot;label&quot;:&quot;Petkova_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxycycline_Altan2024_reference&quot;,&quot;label&quot;:&quot;Altan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Altan2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Thompson2019_reference&quot;,&quot;label&quot;:&quot;Thompson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Thompson2019_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_reference&quot;,&quot;label&quot;:&quot;Toutain_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_reference.md&quot;,&quot;status&quot;:&quot;built, not shipped&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2016_E&quot;,&quot;label&quot;:&quot;Zhang_2016 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/pd_Zhang_2016_E.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Zhang_2019_E&quot;,&quot;label&quot;:&quot;Zhang_2019 \u00b7 E&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/pd_Zhang_2019_E.md&quot;,&quot;status&quot;:&quot;rejected&quot;,&quot;css&quot;:&quot;pk-badge--red&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Doxycycline_Altan2024_reference&quot;,&quot;label&quot;:&quot;Altan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Altan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Thompson2019_reference&quot;,&quot;label&quot;:&quot;Thompson_2019_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Thompson2019_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Doxycycline_Toutain2025_reference&quot;,&quot;label&quot;:&quot;Toutain_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_doxycycline/Doxycycline_Toutain2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # doxycycline — `Doxycycline_Petkova2022_reference`
 
-> ## <span class="pk-badge pk-badge--orange">built, not shipped</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.923). The first reading is what the record holds.">cross-check: partial</span> <span class="pk-badge pk-badge--species" title="Animal study (bird), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">bird</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +15,7 @@
 
 > **Species: bird.** This record comes from an animal study (bird), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** A model was generated (see the **Models** tab); it has no in-browser simulator.
 
 ### Reviewer guidance
 
@@ -23,14 +23,18 @@
 
 Although the record lists kabs 0.093, V/F 4.73, kel 0.154 and tlag 0.80 for doxycycline, the review found no reported values for clearance, volume of distribution, absorption rate constant and absorption lag time, so generic placeholder values stood in for these parameters and the model was held back rather than published with invented numbers. The builder also assumed F=1 and Fm=1 with no molar correction, making the parameterization apparent. An adjudicated check flagged the defaulted absorption rate constant as an invented absorption process, which was judged not acceptable. Extracted — doxycycline: kabs 0.093, V/F 4.73, kel 0.154, tlag 0.8.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of tvk 12: this record has none, the second reading 4.59. That field does not shape the model.
+
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `model_quarantined` (reviewed 2026-09-28 14:37:51.529459+00:00) predates the upstream re-run (2026-10-04 00:43:06.243818+00:00). Current validate status: `extracted`.
 
 ## Citation
 Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (2022)
   ·  DOI: [10.3390/pharmaceutics14112440](https://doi.org/10.3390/pharmaceutics14112440)
 
 ## Model component
-<dbs-pgx drug="doxycycline" model-id="Doxycycline_Petkova2022_reference" status="model_quarantined" stale="false" population="healthy and M. gallisepticum-infected broiler chickens" measured-compound="doxycycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="doxycycline" model-id="Doxycycline_Petkova2022_reference" status="extracted" stale="true" population="healthy and M. gallisepticum-infected broiler chickens" measured-compound="doxycycline" parameterization="apparent" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
 **Parameters:** 4 extracted.
@@ -38,14 +42,12 @@ Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (202
 **Parameterization:** V/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `model_quarantined`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| tvka | `Q49` · kabs | 0.093 | not captured | not captured | not captured | 1.47 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row1:col1, pharmaceutics-14-02440-t001:row1:col2, pharmaceutics-14-02440-t001:row1:col3, pharmaceutics-14-02440-t001:row1:col4, pharmaceutics-14-02440-t001:row1:col5, pharmaceutics-14-02440-t001:row1:col6 | — | not captured |
-| tvV/F | `Q76` · V/F | 4.73 | not captured | not captured | not captured | 2.94 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row2:col1, pharmaceutics-14-02440-t001:row2:col3, pharmaceutics-14-02440-t001:row2:col4, pharmaceutics-14-02440-t001:row2:col5, pharmaceutics-14-02440-t001:row2:col6 | — | not captured |
-| tvke | `Q47` · kel | 0.154 | not captured | not captured | not captured | 1.16 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row3:col1, pharmaceutics-14-02440-t001:row3:col2, pharmaceutics-14-02440-t001:row3:col3, pharmaceutics-14-02440-t001:row3:col4, pharmaceutics-14-02440-t001:row3:col5, pharmaceutics-14-02440-t001:row3:col6 | — | not captured |
-| tvtlag | `Q83` · tlag | 0.80 | not captured | not captured | not captured | 3.58 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row6:col1, pharmaceutics-14-02440-t001:row6:col3, pharmaceutics-14-02440-t001:row6:col4, pharmaceutics-14-02440-t001:row6:col5, pharmaceutics-14-02440-t001:row6:col6 | — | not captured |
+| tvka | `Q49` · kabs | 0.093 | 1/h | 2.5833333333333332e-05 | 1/h | 1.47 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row1:col1, pharmaceutics-14-02440-t001:row1:col2, pharmaceutics-14-02440-t001:row1:col3, pharmaceutics-14-02440-t001:row1:col4, pharmaceutics-14-02440-t001:row1:col5, pharmaceutics-14-02440-t001:row1:col6 | — | not captured |
+| tvV/F | `Q76` · V/F | 4.73 | L/kg | 0.33110000000000006 | L | 2.94 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row2:col1, pharmaceutics-14-02440-t001:row2:col3, pharmaceutics-14-02440-t001:row2:col4, pharmaceutics-14-02440-t001:row2:col5, pharmaceutics-14-02440-t001:row2:col6 | — | not captured |
+| tvke | `Q47` · kel | 0.154 | 1/h | 4.277777777777778e-05 | 1/h | 1.16 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row3:col1, pharmaceutics-14-02440-t001:row3:col2, pharmaceutics-14-02440-t001:row3:col3, pharmaceutics-14-02440-t001:row3:col4, pharmaceutics-14-02440-t001:row3:col5, pharmaceutics-14-02440-t001:row3:col6 | — | not captured |
+| tvtlag | `Q83` · tlag | 0.80 | h | 2880.0 | h | 3.58 | tv_prefix (0.95) | pharmaceutics-14-02440-t001:row6:col1, pharmaceutics-14-02440-t001:row6:col3, pharmaceutics-14-02440-t001:row6:col4, pharmaceutics-14-02440-t001:row6:col5, pharmaceutics-14-02440-t001:row6:col6 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -54,21 +56,50 @@ Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (202
 
 ## Departures & gaps
 
+**Deviations:**
+- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
+
 **Interpretation flags:**
 - column 'units' classified 'other' by the LLM but kept: the deterministic diagnostic-column test disagrees (a stratum column is a value column, not a statistic)
 - dropped unlinked row (NIL): 'tvk 12' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-02440-t001:row4:col1', 'pharmaceutics-14-02440-t001:row4:col2', 'pharmaceutics-14-02440-t001:row4:col3', 'pharmaceutics-14-02440-t001:row4:col4', 'pharmaceutics-14-02440-t001:row4:col5', 'pharmaceutics-14-02440-t001:row4:col6'])
 - dropped unlinked row (NIL): 'tvk 21' — extend the ontology if this is a real PK parameter (source ['pharmaceutics-14-02440-t001:row5:col1', 'pharmaceutics-14-02440-t001:row5:col2', 'pharmaceutics-14-02440-t001:row5:col3', 'pharmaceutics-14-02440-t001:row5:col4', 'pharmaceutics-14-02440-t001:row5:col5', 'pharmaceutics-14-02440-t001:row5:col6'])
 - routed 'tvCMultStdev' → Q312 (IIV) to iiv — variability estimate, not a structural parameter
 - routed 'stdev0' → Q315 (sigma) to residual_error — variability estimate, not a structural parameter
+- implicit units: 'tvka' → 1/h (from the paper text: "The text states: 'Its value was lower compared to the majority of published data (from 1.1 ± 0.24–0.83 ± 0.26 to 2.55 ± ")
+- implicit units: 'tvV/F' → L/kg (from the paper text: "The text states: 'The values of tvV/F and tvke were 4.73 L × kg−1 and 0.154 h−1, respectively'.")
+- implicit units: 'tvke' → 1/h (from the paper text: "The text states: 'The values of tvV/F and tvke were 4.73 L × kg−1 and 0.154 h−1, respectively'.")
+- implicit units: 'tvtlag' → h (from the paper text: "The text states: 'A high BSV of 93.17% was calculated for the value of tlag of 0.8 h'.")
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=doxycycline
 - skipped review gap-fill of CL: primary's parameterization (rate-constant / ka-only) does not use it
 - skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
 - skipped review gap-fill of Q: primary's parameterization (rate-constant / ka-only) does not use it
+- derived CL/F=50.9894 L/h from Ke × V/F = CL/F (Q47 × Q76); not separately reported
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
 
 ## Validation
+
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | partly confirmed | 0.923 (12/13 fields) | 1 |
+
+<details><summary>1 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[tvk 12]` | not captured | 4.59 | only_one_extracted |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
 
 **Scholar closed-form checks:**
 
@@ -77,12 +108,13 @@ Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (202
 | C0_has_structural_params | pass | not captured | 4 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_unit_missing_Q47 | fail | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row3:col1', 'pharmaceutics-14-02440-t001:row3:col2', 'pharmaceutics-14-02440-t001:row3:col3', 'pharmaceutics-14-02440-t001:row3:col4', 'pharmaceutics-14-02440-t001:row3:col5', 'pharmaceutics-14-02440-t001:row3:col6'] |
-| C5_unit_missing_Q49 | fail | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row1:col1', 'pharmaceutics-14-02440-t001:row1:col2', 'pharmaceutics-14-02440-t001:row1:col3', 'pharmaceutics-14-02440-t001:row1:col4', 'pharmaceutics-14-02440-t001:row1:col5', 'pharmaceutics-14-02440-t001:row1:col6'] |
-| C5_unit_missing_Q76 | fail | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row2:col1', 'pharmaceutics-14-02440-t001:row2:col3', 'pharmaceutics-14-02440-t001:row2:col4', 'pharmaceutics-14-02440-t001:row2:col5', 'pharmaceutics-14-02440-t001:row2:col6'] |
-| C5_unit_missing_Q83 | fail | [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row6:col1', 'pharmaceutics-14-02440-t001:row6:col3', 'pharmaceutics-14-02440-t001:row6:col4', 'pharmaceutics-14-02440-t001:row6:col5', 'pharmaceutics-14-02440-t001:row6:col6'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row3:col1', 'pharmaceutics-14-02440-t001:row3:col2', 'pharmaceutics-14-02440-t001:row3:col3', 'pharmaceutics-14-02440-t001:row3:col4', 'pharmaceutics-14-02440-t001:row3:col5', 'pharmaceutics-14-02440-t001:row3:col6'] |
+| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row1:col1', 'pharmaceutics-14-02440-t001:row1:col2', 'pharmaceutics-14-02440-t001:row1:col3', 'pharmaceutics-14-02440-t001:row1:col4', 'pharmaceutics-14-02440-t001:row1:col5', 'pharmaceutics-14-02440-t001:row1:col6'] |
+| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row2:col1', 'pharmaceutics-14-02440-t001:row2:col3', 'pharmaceutics-14-02440-t001:row2:col4', 'pharmaceutics-14-02440-t001:row2:col5', 'pharmaceutics-14-02440-t001:row2:col6'] |
+| C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['pharmaceutics-14-02440-t001:row6:col1', 'pharmaceutics-14-02440-t001:row6:col3', 'pharmaceutics-14-02440-t001:row6:col4', 'pharmaceutics-14-02440-t001:row6:col5', 'pharmaceutics-14-02440-t001:row6:col6'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q76 | pass | volume within physiological range | 331 L | not captured | not captured | ['pharmaceutics-14-02440-t001:row2:col1', 'pharmaceutics-14-02440-t001:row2:col3', 'pharmaceutics-14-02440-t001:row2:col4', 'pharmaceutics-14-02440-t001:row2:col5', 'pharmaceutics-14-02440-t001:row2:col6'] |
 
 **Reviewer per-scenario checks:**
 
@@ -113,14 +145,14 @@ Petkova T et al., Population Pharmacokinetics of Doxycycl…, Pharmaceutics (202
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_doxycycline/Doxycycline_Petkova2022_reference/Doxycycline_Petkova2022_reference_modelica.zip" download>Doxycycline_Petkova2022_reference_modelica.zip</a> <span class="pk-size">(5.0 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 </tbody></table>
-<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+<p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 </div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
@@ -130,4 +162,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 00:04 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:43 UTC</sub>

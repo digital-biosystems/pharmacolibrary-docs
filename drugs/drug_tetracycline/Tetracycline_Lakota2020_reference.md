@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;tetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/&quot;},{&quot;label&quot;:&quot;Lakota_2020 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracycline_Anadn1985_reference&quot;,&quot;label&quot;:&quot;Anad\u00f3n_1985_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Anadn1985_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tetracycline_Martnez2024_reference&quot;,&quot;label&quot;:&quot;Mart\u00ednez_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Martnez2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Yaghoubi2022_reference&quot;,&quot;label&quot;:&quot;Yaghoubi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Yaghoubi2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Tetracycline_Ji2025_reference&quot;,&quot;label&quot;:&quot;Ji_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Ji2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Lakota2020_reference&quot;,&quot;label&quot;:&quot;Lakota_2020_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Lakota2020_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true},{&quot;id&quot;:&quot;Tetracycline_Martnez2024_reference&quot;,&quot;label&quot;:&quot;Mart\u00ednez_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Martnez2024_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Mileva2021_reference&quot;,&quot;label&quot;:&quot;Mileva_2021_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Mileva2021_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Singh2026_reference&quot;,&quot;label&quot;:&quot;Singh_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Singh2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Tetracycline_Yaghoubi2022_reference&quot;,&quot;label&quot;:&quot;Yaghoubi_2022_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_tetracycline/Tetracycline_Yaghoubi2022_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # tetracycline — `Tetracycline_Lakota2020_reference`
 
-> ## <span class="pk-badge pk-badge--green">reviewed — candidate</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.0). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.4). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -19,30 +19,29 @@
 
 **Every check that could be run on this record passed.**
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 2.06; it also differs on 10 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on parameter Q21: this record has none, the second reading 2.06; it also differs on 5 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `curated_candidate` (reviewed 2026-09-28 14:41:36.272406+00:00) predates the upstream re-run (2026-10-04 03:39:16.230809+00:00). Current validate status: `extracted`.
 
 ## Citation
 Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agents and ch… (2020)
   ·  DOI: [10.1128/AAC.02263-19](https://doi.org/10.1128/AAC.02263-19)
 
 ## Model component
-<dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="curated_candidate" stale="false" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="2C"></dbs-pgx>
+<dbs-pgx drug="tetracycline" model-id="Tetracycline_Lakota2020_reference" status="extracted" stale="true" population="" measured-compound="tetracycline" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
-**Model structure:** 2-compartment, oral mammillary model — template `PK_2C_enteral`.  
-**Parameters:** 5 extracted.
+**Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
+**Parameters:** 2 extracted.
 
 **Parameterization:** mechanistic.
 
 ## Parameters
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| CL (liters/h) | `Q22` · CL | 10.3 | liters/h | 2.861111111111111e-06 | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| Vc (liters) | `Q63` · V1 | 21.1 | liters | 0.0211 | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| Vp1 (liters) | `Q64` · V2 | 79.9 | liters | 0.07990000000000001 | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| CLd2 (liters/h) | `Q30` · Q | 21.3 | liters/h | 5.916666666666666e-06 | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
-| ka (h−1) | `Q49` · kabs | 1.74 | h−1 | 0.00048333333333333334 | 1/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| clearance (CL) | `Q22` · CL | 10.3 | liters/h | 2.861111111111111e-06 | L/h | not captured | review (0.7) | Lakota_2020:review | — | not captured |
+| V (derived from CL·t½/ln2) | `Q61` · V | 22.5868 | L | 0.022586833560157612 | L | not captured | review (0.7) | Lakota_2020:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -51,12 +50,9 @@ Lakota EA et al., Population Pharmacokinetic Analyses for…, Antimicrobial agen
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['F', 'Tlag']
-
 **Interpretation flags:**
 - built from REVIEW reference values (Lakota_2020) — secondary source
-- volume reported by review
+- central volume derived from CL·t½/ln2
 
 ## Validation
 
@@ -65,23 +61,18 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.0 (0/11 fields) | 11 |
+| `gpt-oss:120b` | not confirmed | 0.4 (4/10 fields) | 6 |
 
-<details><summary>11 field(s) a reader read differently</summary>
+<details><summary>6 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
 | `gpt-oss:120b` | `values[Q21]` | not captured | 2.06 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q22]` | 10.3 | 8.69 | mismatch |
-| `gpt-oss:120b` | `values[Q30]` | 21.3 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q40]` | not captured | 0.00663 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q46]` | not captured | 21 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q49]` | 1.74 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q56]` | not captured | 1.52 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q63]` | 21.1 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q64]` | 79.9 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `values[Q73]` | not captured | 0.568 | only_one_extracted |
-| `gpt-oss:120b` | `values[Q77]` | 129 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `values[Q312]` | not captured | 94.1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q40]` | 3 | 0.00663 | mismatch |
+| `gpt-oss:120b` | `values[Q57]` | 1.52 | 0.568 | mismatch |
+| `gpt-oss:120b` | `values[Q83]` | not captured | 1.52 | only_one_extracted |
 
 </details>
 
@@ -95,19 +86,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 5 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 2 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
 | C5_dimension_Q22 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lakota_2020:review'] |
-| C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Lakota_2020:review'] |
-| C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['Lakota_2020:review'] |
-| C5_dimension_Q63 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lakota_2020:review'] |
-| C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lakota_2020:review'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Lakota_2020:review'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 10.3 | not captured | not captured | ['Lakota_2020:review'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 10.3 L/h | not captured | not captured | ['Lakota_2020:review'] |
-| C9_phys_window_Q63 | pass | volume within physiological range | 21.1 L | not captured | not captured | ['Lakota_2020:review'] |
-| C9_phys_window_Q64 | pass | volume within physiological range | 79.9 L | not captured | not captured | ['Lakota_2020:review'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 22.6 L | not captured | not captured | ['Lakota_2020:review'] |
 
 **Reviewer per-scenario checks:**
 
@@ -139,12 +126,12 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_modelica.zip" download>Tetracycline_Lakota2020_reference_modelica.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_modelica.zip" download>Tetracycline_Lakota2020_reference_modelica.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_fmi.zip" download>Tetracycline_Lakota2020_reference_fmi.zip</a> <span class="pk-size">(4.2 kB)</span><br><a href="models/fmu/PK_2C_enteral.fmu" download>PK_2C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
-<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_matlab.zip" download>Tetracycline_Lakota2020_reference_matlab.zip</a> <span class="pk-size">(3.4 kB)</span></td></tr>
-<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_matlab_simbio.zip" download>Tetracycline_Lakota2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.8 kB)</span></td></tr>
-<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_sbml.zip" download>Tetracycline_Lakota2020_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
-<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_cellml.zip" download>Tetracycline_Lakota2020_reference_cellml.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_matlab.zip" download>Tetracycline_Lakota2020_reference_matlab.zip</a> <span class="pk-size">(3.3 kB)</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_matlab_simbio.zip" download>Tetracycline_Lakota2020_reference_matlab_simbio.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_sbml.zip" download>Tetracycline_Lakota2020_reference_sbml.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_tetracycline/Tetracycline_Lakota2020_reference/Tetracycline_Lakota2020_reference_cellml.zip" download>Tetracycline_Lakota2020_reference_cellml.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
 <p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_2C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
@@ -161,4 +148,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 03:27 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 03:39 UTC</sub>

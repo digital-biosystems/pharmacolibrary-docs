@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;N06A&quot;,&quot;href&quot;:&quot;atc/N06A.md&quot;},{&quot;label&quot;:&quot;paroxetine&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/&quot;},{&quot;label&quot;:&quot;Feng_2006 \u00b7 final&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Paroxetine_Chen2025_reference&quot;,&quot;label&quot;:&quot;Chen_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Chen2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Yan2026_reference&quot;,&quot;label&quot;:&quot;Yan_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Yan2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Paroxetine_Zhang2025_reference&quot;,&quot;label&quot;:&quot;Zhang_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_paroxetine/Paroxetine_Zhang2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # paroxetine — `Paroxetine_Feng2006_final`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.682). The first reading is what the record holds.">cross-check: partial</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.429). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,19 +21,21 @@
 
 One parameter of the paroxetine three-compartment model was reported in a unit that could not be expressed in SI, so the parameter arrived without a usable value and the dimension check on a structural parameter failed. The fitted parameters themselves are Vmax 32.5 µg h⁻¹, Km 83.4 µg l⁻¹, V2 6.70 l, V3 102.1 l, Q 12.3 l h⁻¹, kabs 8.8 h⁻¹ and Vd/F 1010.0 L. A second reader also disagreed on several covariate-effect values, reading theta_q61_im as 182 and theta_q61_pm as 125 where this record lists theta_q367_im 182, theta_q367_um 3670, theta_vmax_pm 125 and theta_vmax_um as absent. Extracted — paroxetine: Vmax 32.5 µg h -1, Km 83.4 µg l -1, V2 6.7 l, V3 102 l, Q 12.3 l h -1, kabs 8.8 h -1, V 1.01e+03 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of theta_q367_im: this record has 182, the second reading none; it also differs on 6 more fields. That field does not shape the model.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has paroxetine, the second reading unknown; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `rejected` (reviewed 2026-09-28 14:39:24.125837+00:00) predates the upstream re-run (2026-10-04 00:51:55.331120+00:00). Current validate status: `rejected`.
 
 ## Citation
 Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of clinical… (2006)
   ·  DOI: [10.1111/j.1365-2125.2006.02629.x](https://doi.org/10.1111/j.1365-2125.2006.02629.x)
 
 ## Model component
-<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="false" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="paroxetine" model-id="Paroxetine_Feng2006_final" status="rejected" stale="true" population="elderly subjects with major depressive disorder" measured-compound="paroxetine" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted, plus 6 covariate effects.
+**Parameters:** 6 extracted, plus 6 covariate effects.
 
 **Parameterization:** mechanistic.
 
@@ -48,13 +50,12 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 | V 3 (l) | `Q77` · V3 | 102.1 | l | 0.1021 | [l] | not captured | space_fold (0.95) | tab_4:row5:col2, tab_4:row5:col4, tab_4:row5:col5 | — | not captured |
 | Q (l h -1 ) | `Q30` · Q | 12.3 | l h -1 | 3.416666666666667e-06 | [l] / [h] | not captured | exact (1.0) | tab_4:row6:col2, tab_4:row6:col4, tab_4:row6:col5 | — | not captured |
 | K a (h -1 ) | `Q49` · kabs | 8.8 | h -1 | 0.002444444444444445 | [1] / [h] | not captured | space_fold (0.95) | tab_4:row7:col2, tab_4:row7:col4, tab_4:row7:col5 | — | not captured |
-| theta_vmax_pm | `Q900` · theta_vmax_pm | 125 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col4, tab_4:row8:col5 | — | not captured |
+| theta_q367_pm | `Q900` · theta_q367_pm | 125 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row8:col4, tab_4:row8:col5 | — | not captured |
 | theta_q367_im | `Q900` · theta_q367_im | 182 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row9:col4, tab_4:row9:col5 | — | not captured |
-| theta_vmax_em | `Q900` · theta_vmax_em | 454 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row10:col4, tab_4:row10:col5 | — | not captured |
+| theta_q367_em | `Q900` · theta_q367_em | 454 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row10:col4, tab_4:row10:col5 | — | not captured |
 | theta_q367_um | `Q900` · theta_q367_um | 3670 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row11:col4, tab_4:row11:col5 | — | not captured |
 | theta_v2_wt_v2 | `Q900` · theta_v2_wt_v2 | 1.83 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row12:col4, tab_4:row12:col5 | — | not captured |
 | theta_v2_sex_v2 | `Q900` · theta_v2_sex_v2 | 99.3 | not captured | not captured | not captured | not captured | not captured (not captured) | tab_4:row13:col4, tab_4:row13:col5 | — | not captured |
-| volume of distribution (Vd/F) | `Q61` · V | 1010.0 | L | 1.01 | L | not captured | review_gapfill (0.7) | Shigetome_2025:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -72,7 +73,6 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 - structure disagreement: deterministic 1C vs LLM 3C — review compartment count
 - status held at route_to_review — not promoted
 - model-stage split: 'final model' is the final model of Feng_2006 (paper reports 2 stages: base model, final model); same population, different model-building step
-- gap-filled Q61 (V) from Shigetome_2025's review values (primary lacked it)
 - skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
@@ -91,24 +91,29 @@ Feng Y et al., Paroxetine: population pharmacokinetic…, British journal of cli
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
 first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | partly confirmed | 0.682 (15/22 fields) | 7 |
+| `gpt-oss:120b` | not confirmed | 0.429 (9/21 fields) | 12 |
 
-<details><summary>7 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[theta_q367_em]` | 454 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_im]` | 182 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q367_pm]` | 125 | not captured | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q367_um]` | 3670 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q61_em]` | not captured | 454 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_im]` | not captured | 182 | only_one_extracted |
 | `gpt-oss:120b` | `parameters[theta_q61_pm]` | not captured | 125 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_vmax_pm]` | 125 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[theta_vmax_um]` | not captured | 3670 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[volume of distribution]` | 1010.0 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_q61_um]` | not captured | 3670 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[theta_v2_wt_v2]` | 1.83 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v 2].covariate_forms` | ['linear_fractional', 'linear_fractional'] | ['linear_fractional'] | mismatch |
+| `gpt-oss:120b` | `screen.dose_compound` | paroxetine | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | paroxetine | unknown | mismatch |
 
 </details>
 
@@ -129,12 +134,10 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q1 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['tab_4:row3:col2', 'tab_4:row3:col4', 'tab_4:row3:col5'] |
 | C5_dimension_Q30 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['tab_4:row6:col2', 'tab_4:row6:col4', 'tab_4:row6:col5'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['tab_4:row7:col2', 'tab_4:row7:col4', 'tab_4:row7:col5'] |
-| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Shigetome_2025:review'] |
 | C5_dimension_Q64 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row4:col2', 'tab_4:row4:col4', 'tab_4:row4:col5'] |
 | C5_dimension_Q66 | fail | [mass] / [time] | µg h -1 | not captured | not captured | ['tab_4:row2:col2', 'tab_4:row2:col4', 'tab_4:row2:col5'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['tab_4:row5:col2', 'tab_4:row5:col4', 'tab_4:row5:col5'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
-| C9_phys_window_Q61 | pass | volume within physiological range | 1.01e+03 L | not captured | not captured | ['Shigetome_2025:review'] |
 | C9_phys_window_Q64 | pass | volume within physiological range | 6.7 L | not captured | not captured | ['tab_4:row4:col2', 'tab_4:row4:col4', 'tab_4:row4:col5'] |
 
 <details class="legend">
@@ -160,4 +163,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-24 03:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:51 UTC</sub>

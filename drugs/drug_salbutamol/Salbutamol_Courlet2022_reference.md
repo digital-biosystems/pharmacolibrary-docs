@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;R03A&quot;,&quot;href&quot;:&quot;atc/R03A.md&quot;},{&quot;label&quot;:&quot;salbutamol&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/&quot;},{&quot;label&quot;:&quot;Courlet_2022 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_HR_Z_score&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 HR Z-score&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_HR_Z_score.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_glucose.md&quot;,&quot;status&quot;:&quot;accepted (caveats)&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Salbutamol_Marques2024v2_reference&quot;,&quot;label&quot;:&quot;Marques_2024_2_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Marques2024v2_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Salbutamol_Walsh2023_reference&quot;,&quot;label&quot;:&quot;Walsh_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/Salbutamol_Walsh2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Walsh_2023_Glucose&quot;,&quot;label&quot;:&quot;Walsh_2023 \u00b7 Glucose&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_salbutamol/pd_Walsh_2023_Glucose.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # salbutamol — `Salbutamol_Courlet2022_reference`
 
-> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.778). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.615). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,7 +21,7 @@
 
 The parameter labelled 'k a2 (h−1)' with value 1.47 is recorded as the half-life of the absorption phase, but a half-life should have dimensions of time, not inverse time — the reported unit h−1 could not be reconciled into a consistent dimension, giving a dimension mismatch on a structural parameter. A second reader also disagreed on this parameter, reading no value where the record holds 1.47, and additionally reported a urine production rate of 0.0426 that is absent from this record. Because the h−1 unit could not be converted to a standard unit, the parameter entered model construction without a consistent value. Extracted — salbutamol: Fab 0.2, kabs 31.6 h−1, t1/2ka 1.47 h−1, V3 203 L, kcomp 0.0432 h−1, CL 28 L h−1, V 167 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 1 more field. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has salbutamol, the second reading unknown; it also differs on 4 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
 
@@ -35,7 +35,7 @@ Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometri
 <dbs-pgx drug="salbutamol" model-id="Salbutamol_Courlet2022_reference" status="rejected" stale="true" population="healthy adults" measured-compound="salbutamol" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment; no model was built for this record.  
-**Parameters:** 7 extracted.
+**Parameters:** 8 extracted.
 
 **Parameterization:** mechanistic.
 
@@ -51,6 +51,7 @@ Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometri
 | k 34 (h−1) | `Q48` · kcomp | 0.0432 | h−1 | 1.2e-05 | [1] / [h] | not captured | space_fold (0.95) | psp412773-tbl-0001:row7:col1, psp412773-tbl-0001:row7:col2, psp412773-tbl-0001:row7:col3, psp412773-tbl-0001:row7:col4 | — | not captured |
 | CL (L h−1) | `Q22` · CL | 28 | L h−1 | 7.777777777777777e-06 | [l] / [h] | not captured | exact (1.0) | psp412773-tbl-0001:row8:col1, psp412773-tbl-0001:row8:col2, psp412773-tbl-0001:row8:col3, psp412773-tbl-0001:row8:col4 | — | not captured |
 | UR_PROD (L h−1) | `Q24` · CLu | 0.0426 | L h−1 | 1.1833333333333333e-08 | [l] / [h] | not captured | llm (0.6) | psp412773-tbl-0001:row10:col1, psp412773-tbl-0001:row10:col3, psp412773-tbl-0001:row10:col4 | — | not captured |
+| Vd | `Q61` · V | 195.75 | L | 0.19575 | L | not captured | review_gapfill (0.7) | Marques_2024:review | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -74,6 +75,10 @@ Courlet P et al., Model-based meta-analysis of salbutamol…, CPT: pharmacometri
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - structure disagreement: deterministic 1C vs LLM 2C — review compartment count
 - status held at route_to_review — not promoted
+- gap-filled Q61 (V) from Marques_2024's review values (primary lacked it)
+- skipped review gap-fill of V2: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of Q: primary is 1C (peripheral family needs ≥2C)
+- skipped review gap-fill of TLAG: primary's parameterization (rate-constant / ka-only) does not use it
 
 **Extraction notes:**
 - unparsed cell psp412773-tbl-0001:row10:col2 = '4.8 × 10−6'
@@ -87,12 +92,15 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.778 (7/9 fields) | 2 |
+| `gpt-oss:120b` | not confirmed | 0.615 (8/13 fields) | 5 |
 
-<details><summary>2 field(s) a reader read differently</summary>
+<details><summary>5 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[k a2]` | 1.47 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[logitf 2]` | not captured | -0.328 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[ur_prod].parameter_id` | Q24 | Q30 | mismatch |
 | `gpt-oss:120b` | `screen.dose_compound` | salbutamol | unknown | mismatch |
 | `gpt-oss:120b` | `screen.primary_analyte` | salbutamol | unknown | mismatch |
 
@@ -115,12 +123,14 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 | C5_dimension_Q24 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['psp412773-tbl-0001:row10:col1', 'psp412773-tbl-0001:row10:col3', 'psp412773-tbl-0001:row10:col4'] |
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412773-tbl-0001:row7:col1', 'psp412773-tbl-0001:row7:col2', 'psp412773-tbl-0001:row7:col3', 'psp412773-tbl-0001:row7:col4'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['psp412773-tbl-0001:row4:col1'] |
+| C5_dimension_Q61 | pass | [length] ** 3 | not captured | not captured | not captured | ['Marques_2024:review'] |
 | C5_dimension_Q77 | pass | [length] ** 3 | not captured | not captured | not captured | ['psp412773-tbl-0001:row6:col1', 'psp412773-tbl-0001:row6:col2', 'psp412773-tbl-0001:row6:col3', 'psp412773-tbl-0001:row6:col4'] |
 | C5_dimension_Q95 | fail | 1 / [time] | h−1 | not captured | not captured | ['psp412773-tbl-0001:row5:col1'] |
 | C6_cl_magnitude | pass | &lt;= 90.0 L/h | 0.0426 | not captured | not captured | ['psp412773-tbl-0001:row10:col1', 'psp412773-tbl-0001:row10:col3', 'psp412773-tbl-0001:row10:col4'] |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q22 | pass | clearance within physiological range | 28 L/h | not captured | not captured | ['psp412773-tbl-0001:row8:col1', 'psp412773-tbl-0001:row8:col2', 'psp412773-tbl-0001:row8:col3', 'psp412773-tbl-0001:row8:col4'] |
 | C9_phys_window_Q24 | pass | clearance within physiological range | 0.0426 L/h | not captured | not captured | ['psp412773-tbl-0001:row10:col1', 'psp412773-tbl-0001:row10:col3', 'psp412773-tbl-0001:row10:col4'] |
+| C9_phys_window_Q61 | pass | volume within physiological range | 196 L | not captured | not captured | ['Marques_2024:review'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>

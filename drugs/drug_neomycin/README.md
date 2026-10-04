@@ -19,26 +19,34 @@ Neomycin, in combination with polymyxin B sulfates and hydrocortisone in otic su
 
 The ophthalmic solution containing neomycin in combination with polymyxin B sulfates and dexamethasone is used to treat steroid-responsive inflammatory ocular conditions for which a corticosteroid is indicated and where bacterial infection or a risk of bacterial infection exists.[L10716]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| neomycin | parent | 614.65 | C23H46N6O13 | PubChem | [8378](https://pubchem.ncbi.nlm.nih.gov/compound/8378) | Lentzen_1981 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 02:09 | 1:57 | 0/4/0 | 1/0/0 | 0/0/0 | 61,316/3,133 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
+| 2026-10-04 02:34 | 3:44 | 0/4/0 | 0/1/0 | 0/0/0 | 73,046/7,446 | ollama / qwen3.8:27b-mtp-q8_0 | 10 | 1/2 | 3/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--red">rejected</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
-| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.857). The first reading is what the record holds.">cross-check: partial</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Lentzen_1981_reference](drugs/drug_neomycin/Neomycin_Lentzen1981_reference.md) | — | 1-compartment (no model) | 2 | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | — |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_control](drugs/drug_neomycin/Neomycin_Samuel1968_control.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_neomycin](drugs/drug_neomycin/Neomycin_Samuel1968_neomycin.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.2). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: rejected</sub><br><sub>blocking: no distribution volume and no clearance/elimination — not a compartmental popPK…</sub><br><sub>route_to: `human_review`</sub> | [Samuel_1968_placebo](drugs/drug_neomycin/Neomycin_Samuel1968_placebo.md) | — | 1-compartment (no model) | 3 | Samuel P et al., Effect of neomycin on exchangeable pool…, The Journal of clinical inv… (1968) | [10.1172/JCI105870](https://doi.org/10.1172/JCI105870) |
 
 ## Pharmacodynamics (PD)
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="Animal study (mouse), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">mouse</span> | [Rodriguez_2024_unknown](drugs/drug_neomycin/pd_Rodriguez_2024_unknown.md) | outer hair cell survival ← Castanopsis echinocarpa · direct Emax (saturable) effect | — | Rodriguez I et al., Effects of, Nutrients (2024) | [10.3390/nu16162716](https://doi.org/10.3390/nu16162716) |
+| <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from the LLM relevance screen, p(non-human) 1.00).">in vitro</span> | [Parkash_2004_Ca2_i](drugs/drug_neomycin/pd_Parkash_2004_Ca2_i.md) | [Ca2+]i ← neomycin sulfate · direct sigmoid Emax (Hill) effect | — | Parkash J et al., Calbindin-D28k and calcium sensing rece…, International journal of on… (2004) | — |
 
 ## ADME sites
 
@@ -62,22 +70,21 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 54 matched, 19 returned
 - **screened:** 4  ·  **relevant:** 3
-- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 0
+- **records:** 4  ·  extracted 0  ·  needs_review 0  ·  rejected 4  ·  stale 4
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
 
-_5 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
+_4 paper(s) judged relevant from the abstract, with no full text on disk — paywalled, or the resolver could not reach them. Follow the DOI, then save the PDF into `papers/` as `&lt;save as&gt;.pdf` and re-run the extraction._
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
 | `Black_1983.pdf` | Black WD et al., Pharmacokinetic study of neomycin in ca…, Canadian journal of compara… (1983) | popPK | 10 | not captured | [6667431](https://pubmed.ncbi.nlm.nih.gov/6667431) | The paper reports quantitative two-compartment pharmacokinetic parameters (CL, V, half-lives, rate constants) for neomycin in calves with all numeric values explicitly listed in the evidence. |
-| `Burrows_1987.pdf` | Burrows GE et al., Comparative pharmacokinetics of gentami…, Journal of veterinary pharm… (1987) | popPK | 9 | [10.1111/j.1365-2885.1987.tb00077.x](https://doi.org/10.1111/j.1365-2885.1987.tb00077.x) | [3586124](https://pubmed.ncbi.nlm.nih.gov/3586124) | The study reports quantitative PK parameters for neomycin in calves, but the specific numeric values for neomycin are not present in the provided text (only oxytetracycline values are explicitly listed). |
-| `Lentzen_1981.pdf` | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | popPK | 9 | not captured | [7198477](https://pubmed.ncbi.nlm.nih.gov/7198477) | The study reports quantitative PK parameters for neomycin, including half-lives (1.5 h, 9 h), Tmax (2.6 h), Cmax (5.1 µg/ml), and AUC comparisons, derived from a two-compartment model. |
-| `Liu_2021_2.pdf` | Liu Y et al., Pharmacokinetics of neomycin sulfate af…, Journal of veterinary pharm… (2021) | popPK | 9 | [10.1111/jvp.12981](https://doi.org/10.1111/jvp.12981) | [34165196](https://pubmed.ncbi.nlm.nih.gov/34165196) | The study reports quantitative non-compartmental pharmacokinetic parameters (half-life, MRT, Cmax, Tmax, AUC, bioavailability) for neomycin in swine, with all numeric values explicitly present in the text. |
-| `Mishra_2024.pdf` | Mishra A et al., Concurrent determination of anti-microb…, Journal of pharmaceutical a… (2024) | popPK | 8 | [10.1016/j.jpba.2023.115920](https://doi.org/10.1016/j.jpba.2023.115920) | [38113826](https://pubmed.ncbi.nlm.nih.gov/38113826) | The study reports ocular pharmacokinetics for neomycin in rabbits, but specific quantitative parameter values (CL, V, t1/2) are not explicitly listed in the provided text, only dosing frequency predictions. |
+| `Liu_2021_2.pdf` | Liu Y et al., Pharmacokinetics of neomycin sulfate af…, Journal of veterinary pharm… (2021) | popPK | 10 | [10.1111/jvp.12981](https://doi.org/10.1111/jvp.12981) | [34165196](https://pubmed.ncbi.nlm.nih.gov/34165196) | The study reports quantitative non-compartmental pharmacokinetic parameters (half-life, MRT, Cmax, Tmax, AUC, bioavailability) for neomycin in swine. |
+| `Burrows_1987.pdf` | Burrows GE et al., Comparative pharmacokinetics of gentami…, Journal of veterinary pharm… (1987) | popPK | 9 | [10.1111/j.1365-2885.1987.tb00077.x](https://doi.org/10.1111/j.1365-2885.1987.tb00077.x) | [3586124](https://pubmed.ncbi.nlm.nih.gov/3586124) | The study reports compartmental PK parameters for neomycin in calves, but the specific numeric values are not present in the provided abstract text. |
+| `Lentzen_1981.pdf` | Lentzen H et al., [Comparative study of serum levels and…, Arzneimittel-Forschung (1981) | popPK | 9 | not captured | [7198477](https://pubmed.ncbi.nlm.nih.gov/7198477) | The study reports quantitative PK parameters (half-lives, Tmax, AUC ratios) for neomycin in humans using a two-compartment model. |
 
-<sub>queue written 2026-09-18T02:08:31.332481+00:00</sub>
+<sub>queue written 2026-10-04T02:31:55.521020+00:00</sub>
 
 ## Screened and excluded
 
@@ -85,27 +92,27 @@ _5 paper(s) judged relevant from the abstract, with no full text on disk — pay
 |---|---|---|---|---|---|
 | popPK | Alcaraz-Estrada_2013 | irrelevant | 0 | 0 | The paper describes the construction of a viral replicon system where neomycin phosphotransferase is used as a selection marker for cell lines, not a pharmacokinetic study of neomycin. |
 | PD | Alcaraz-Estrada_2013 | not_relevant | 0 | 0 | The paper describes the construction of a viral replicon system for antiviral screening; neomycin is mentioned only as a selection marker (G418 resistance) and no pharmacodynamic or exposure-response data for neomycin is reported. |
-| popPK | Burrows_1987 | relevant | 9 | 2 | The study reports quantitative PK parameters for neomycin in calves, but the specific numeric values for neomycin are not present in the provided text (only oxytetracycline values are explicitly listed). |
-| popPK | Lee_2012 | irrelevant | 0 | 0 | Neomycin is used only as part of an antibiotic cocktail to prepare pseudo germ-free rats, and the pharmacokinetic parameters reported are for acetaminophen, not neomycin. |
-| popPK | Maeng_2019 | irrelevant | 0 | 0 | The study focuses on the effect of topical steroids on intraocular pressure, and neomycin is only mentioned as a component of a combination ophthalmic ointment, with no pharmacokinetic parameters reported. |
-| popPK | Mishra_2024 | relevant | 8 | 2 | The study reports ocular pharmacokinetics for neomycin in rabbits, but specific quantitative parameter values (CL, V, t1/2) are not explicitly listed in the provided text, only dosing frequency predictions. |
+| popPK | Burrows_1987 | relevant | 9 | 2 | The study reports compartmental PK parameters for neomycin in calves, but the specific numeric values are not present in the provided abstract text. |
+| popPK | Lee_2012 | irrelevant | 0 | 0 | Neomycin is used only as a component of an antibiotic cocktail to prepare pseudo germ-free rats, not as the subject drug for PK parameter estimation. |
+| popPK | Maeng_2019 | irrelevant | 0 | 0 | The study investigates the effect of topical steroids on intraocular pressure and mentions neomycin only as a component of a combination ophthalmic preparation, without reporting any pharmacokinetic parameters for neomycin. |
+| popPK | Mishra_2024 | irrelevant | 2 | 0 | The paper describes a bioanalytical method and PK-PD simulation for neomycin in rabbit tear fluid/cornea, but no specific quantitative PK parameter values (CL, V, t1/2, etc.) are reported in the text. |
 | popPK | Parkash_2004 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium signaling in breast cancer cells where neomycin is used as a probe agent, not a pharmacokinetic study of neomycin disposition. |
-| popPK | Ponce_2023 | irrelevant | 0 | 0 | The paper is an in-vitro electrophysiology study on TRPV4 channels where neomycin is used only as a phospholipase C inhibitor, not as a subject drug for pharmacokinetic analysis. |
+| popPK | Ponce_2023 | irrelevant | 0 | 0 | The study is an in-vitro electrophysiology investigation of TRPV4 channels in MDCK cells, where neomycin is used only as a phospholipase C inhibitor (mechanistic tool) and no pharmacokinetic parameters for neomycin are reported. |
 | PD | Ponce_2023 | not_relevant | 0 | 0 | The paper investigates the pharmacodynamics of ouabain (reporting an EC50), not neomycin; neomycin is only mentioned as an inhibitor used to probe signaling pathways. |
 | popPK | Rodriguez_2024 | irrelevant | 0 | 0 | The study investigates the protective effects of Castanopsis echinocarpa on hearing loss, using neomycin only as an ototoxic agent to induce injury in zebrafish, and does not report any pharmacokinetic parameters for neomycin. |
-| popPK | Samuel_1968 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cholesterol (using a radioactive tracer) to assess the effect of neomycin on cholesterol pools, rather than measuring the disposition parameters of neomycin itself. |
-| popPK | Sandmann_1991 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study on muscarinic receptors where neomycin is used as a pharmacological inhibitor, not a subject of pharmacokinetic analysis. |
+| popPK | Samuel_1968 | irrelevant | 0 | 0 | The study investigates the pharmacokinetics of cholesterol (a tracer) in humans, using neomycin as a therapeutic agent to alter cholesterol pools, rather than measuring the disposition parameters of neomycin itself. |
+| popPK | Sandmann_1991 | irrelevant | 0 | 0 | The paper is an in-vitro mechanistic study of muscarinic receptors where neomycin is used as a pharmacological inhibitor, not as the subject of a pharmacokinetic analysis. |
 | PD | Sandmann_1991 | not_relevant | 1 | 1 | The paper reports a single-point inhibition percentage (50% and 20%) for neomycin at a fixed concentration (1 mM) without providing a dose-response curve or numeric PD parameters like IC50. |
-| popPK | Seol_2005 | irrelevant | 0 | 0 | The paper is a mechanistic study on calcium signaling where neomycin is used only as a pharmacological inhibitor, not as the subject of a pharmacokinetic analysis. |
+| popPK | Seol_2005 | irrelevant | 0 | 0 | The study is an in-vitro mechanistic investigation of calcium signaling where neomycin is used solely as a pharmacological inhibitor, not as the subject of pharmacokinetic analysis. |
 | PD | Seol_2005 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50, Hill coefficient) for sphingosine-1-phosphate (S1P), not for neomycin, which is only mentioned as a qualitative inhibitor of the pathway. |
-| popPK | Soback_1986 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mecillinam, with neomycin only mentioned as a comparator for MIC values. |
-| popPK | Teng_1997 | irrelevant | 0 | 0 | The paper studies the mechanism of platelet aggregation by rugosin E, using neomycin only as a non-specific inhibitor/comparator, and reports no pharmacokinetic parameters for neomycin. |
+| popPK | Soback_1986 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of mecillinam in calves, with neomycin only mentioned as a comparator for antimicrobial susceptibility (MIC). |
+| popPK | Teng_1997 | irrelevant | 0 | 0 | The study investigates the mechanism of platelet aggregation by rugosin E, using neomycin only as a non-specific inhibitor/comparator, and reports no pharmacokinetic parameters for neomycin. |
 | PD | Teng_1997 | not_relevant | 0 | 0 | The paper reports PD parameters (EC50) for rugosin E, not neomycin; neomycin is only mentioned qualitatively as an inhibitor without numeric dose-response data. |
-| popPK | Wehling_1995 | irrelevant | 0 | 0 | The paper studies the nongenomic effects of aldosterone on calcium signaling, using neomycin only as a pharmacological inhibitor, and contains no pharmacokinetic parameters for neomycin. |
+| popPK | Wehling_1995 | irrelevant | 0 | 0 | The paper studies the nongenomic effects of aldosterone on calcium signaling, using neomycin only as a pharmacological inhibitor to probe mechanism, not as a subject of PK analysis. |
 | PD | Wehling_1995 | not_relevant | 0 | 0 | The paper reports PD parameters for aldosterone and other steroids, not for neomycin, which is only mentioned as an inhibitor of the aldosterone effect. |
-| popPK | Zhang_2009 | irrelevant | 0 | 0 | The study focuses on the antiviral activity of geneticin against dengue virus, with neomycin only mentioned as a comparator with weak activity, and no pharmacokinetic parameters are reported. |
+| popPK | Zhang_2009 | irrelevant | 0 | 0 | The study investigates the antiviral activity of geneticin and other aminoglycosides in vitro, with neomycin serving only as a comparator agent showing weak activity, and no pharmacokinetic parameters are reported. |
 | PD | Zhang_2009 | not_relevant | 0 | 0 | The paper reports PD parameters for geneticin (G418), not neomycin; neomycin is only mentioned as having weak activity without specific numeric PD parameters. |
-| popPK | Ziv_1985 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of apramycin, with neomycin serving only as a comparator for in-vitro MICs. |
+| popPK | Ziv_1985 | irrelevant | 0 | 0 | The study focuses on the pharmacokinetics of apramycin in calves, with neomycin serving only as a comparator for in vitro MICs. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 02:08 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 02:32 UTC</sub>

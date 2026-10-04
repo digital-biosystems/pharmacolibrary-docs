@@ -126,7 +126,7 @@ first reading `ollama:glm-5.3-flash` — the numbers on this page are its, whate
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip</a> <span class="pk-size">(2.3 kB)</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_modelica.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_warfarin/Warfarin_RodrguezFernndez2024_PD_inr/Warfarin_RodrguezFernndez2024_PD_inr_matlab.zip" download>Warfarin_RodrguezFernndez2024_PD_inr_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>

@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;prednisolone&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/&quot;},{&quot;label&quot;:&quot;Tan_2024 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Prednisolone_Bouazza2025_reference&quot;,&quot;label&quot;:&quot;Bouazza_2025_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Bouazza2025_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;Prednisolone_Tan2024_reference&quot;,&quot;label&quot;:&quot;Tan_2024_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_prednisolone/Prednisolone_Tan2024_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # prednisolone — `Prednisolone_Tan2024_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.235). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.333). The first reading is what the record holds.">cross-check: disputed</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -21,16 +21,18 @@
 
 The record for prednisolone lists CL 7.74 L/h, V1 9.6 L and tlag 0.36 hour, but the coverage check found only 2 of 3 expected parameters emitted or defaulted, with tlag missing from the covered set. A second reader also disagreed on the clearance value, reading 8.4 L/h against this record's 7.74 L/h, and reported several additional values (e.g. 0.590, 8.260, 0.7) that this record left null. These unresolved value disagreements and the uncovered tlag parameter are why the record was not published. Extracted — prednisolone: CL 7.74 L.hour À1, V1 9.6 L, tlag 0.36 hour.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 12 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of CL: this record has 7.74, the second reading 8.4; it also differs on 11 more fields. That field shapes the model, so the record is marked disputed.
 
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 15:42:51.275233+00:00) predates the upstream re-run (2026-10-04 03:03:02.792650+00:00). Current validate status: `extracted`.
 
 ## Citation
 Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of clinical… (2024)
   ·  DOI: [10.1111/bcp.16158](https://doi.org/10.1111/bcp.16158)
 
 ## Model component
-<dbs-pgx drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="needs_review" stale="false" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
+<dbs-pgx drug="prednisolone" model-id="Prednisolone_Tan2024_reference" status="extracted" stale="true" population="" measured-compound="prednisolone" parameterization="mechanistic" topology="1C"></dbs-pgx>
 
 **Model structure:** 1-compartment, IV mammillary model — template `PK_1C`.  
 **Parameters:** 3 extracted.
@@ -38,8 +40,6 @@ Tan JM et al., Pharmacokinetic-pharmacodynamic modelli…, British journal of cl
 **Parameterization:** mechanistic.
 
 ## Parameters
-> ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
-
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | CL RBCs | `Q22` · CL | 7.74 | L.hour À1 | 2.15e-06 | L/h | not captured | review (0.7) | Tan_2024:review | — | not captured |
@@ -64,25 +64,24 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.235 (4/17 fields) | 13 |
+| `gpt-oss:120b` | not confirmed | 0.333 (6/18 fields) | 12 |
 
-<details><summary>13 field(s) a reader read differently</summary>
+<details><summary>12 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
+| `gpt-oss:120b` | `model.topology_template` | 1C | 2C | mismatch |
 | `gpt-oss:120b` | `values[Q22]` | 7.74 | 8.4 | mismatch |
-| `gpt-oss:120b` | `values[Q301]` | 0.81 | 0.81 | mismatch |
-| `gpt-oss:120b` | `values[Q302]` | 0.55 | 0.55 | mismatch |
 | `gpt-oss:120b` | `values[Q312]` | 31 | 14 | mismatch |
 | `gpt-oss:120b` | `values[Q316]` | not captured | 0.590 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q317]` | not captured | 8.260 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q327]` | 6.55 | 12 | mismatch |
 | `gpt-oss:120b` | `values[Q40]` | not captured | 0.7 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q47]` | not captured | 0.144 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q49]` | not captured | 0.87 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q51]` | not captured | 0.171 | only_one_extracted |
 | `gpt-oss:120b` | `values[Q63]` | 9.6 | 0.3 | mismatch |
-| `gpt-oss:120b` | `values[Q77]` | 0.3 | 0.3 | mismatch |
-| `gpt-oss:120b` | `values[Q87]` | not captured | 1 | only_one_extracted |
+| `gpt-oss:120b` | `values[Q64]` | not captured | 0.3 | only_one_extracted |
 
 </details>
 
@@ -159,4 +158,4 @@ first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whate
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 02:49 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 03:03 UTC</sub>

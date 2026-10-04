@@ -1,11 +1,10 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;chlortetracycline&quot;,&quot;href&quot;:&quot;drugs/drug_chlortetracycline/&quot;},{&quot;label&quot;:&quot;Reinbold_2010 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;Chlortetracycline_Reinbold2010_reference&quot;,&quot;label&quot;:&quot;Reinbold_2010_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:true}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # chlortetracycline — `Chlortetracycline_Reinbold2010_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.118). The first reading is what the record holds.">cross-check: disputed</span> <span class="pk-badge pk-badge--species" title="Animal study (cattle), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">cattle</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -15,7 +14,7 @@
 
 > **Species: cattle.** This record comes from an animal study (cattle), not from people. The values, the model and its simulation are shown as the paper reports them — they describe that system, not human pharmacology (read from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).
 
-**Model:** A simulatable model was generated — see the **Models** and **Simulation** tabs.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -23,16 +22,20 @@
 
 The record was built from the abstract only, so reported summary statistics (V/F 40.9 L/kg, kel 0.0478 h⁻¹, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h, AUC/dose 0.29 h·µg/L) stood in for a fitted model. The source never reports ka or Tlag, so library defaults were substituted, and the invented absorption constant was judged not acceptable. Because the parameters are apparent (/F) values, bioavailability was assumed to be 1 with no molar correction, and a first-order depot input was assumed for the extravascular dosing. Extracted — chlortetracycline: V/F 40.9 L/kg, kel 0.0478 h(-1), AUC/dose 0.29 h x microg/L, CL/F 1.8 L/kg/h, t1/2z 16.2 h, Cmax/dose 4.5 ng/mL, tmax 23.3 h.
 
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has chlortetracycline, the second reading unknown; it also differs on 14 more fields. That field shapes the model, so the record is marked disputed.
+
 <sub>reviewed by glm-5.3-flash</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:36:55.377867+00:00) predates the upstream re-run (2026-10-04 00:02:09.713015+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veterinary pharm… (2010)
   ·  DOI: [10.1111/j.1365-2885.2009.1116.x](https://doi.org/10.1111/j.1365-2885.2009.1116.x)
 
 ## Model component
-<dbs-pgx drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="needs_review" stale="false" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
+<dbs-pgx drug="chlortetracycline" model-id="Chlortetracycline_Reinbold2010_reference" status="needs_review" stale="true" population="group fed, ruminating, Holstein steers" measured-compound="chlortetracycline" parameterization="apparent" topology="1C"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
+**Model structure:** 1-compartment; no model was built for this record.  
 **Parameters:** 7 extracted.
 
 **Parameterization:** CL/F, V/F — apparent, F unknown (apparent — bioavailability not identifiable).
@@ -42,13 +45,13 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
-| volume of distribution (V/F | `Q76` · V/F | 40.9 | L/kg | 2.863 | [l] / [kg] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
-| rate constant (k | `Q47` · kel | 0.0478 | h(-1) | 1.3277777777777779e-05 | [1] / [h] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
-| dose-normalized area under the curve (AUC/D | `Q189` · AUC/dose | 0.29 | h x microg/L | not captured | [[h] · [µg]] / [l] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
-| clearance (Cl/F | `Q27` · CL/F | 1.8 | L/kg/h | 3.5000000000000004e-05 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
-| elimination half-life (t(1/2) | `Q57` · t1/2z | 16.2 | h | 58320.0 | [h] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
-| C(max/Dose) | `Q174` · Cmax/dose | 4.5 | ng/mL | not captured | [ng] / [ml] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
-| time of C(max) (T(max) | `Q56` · tmax | 23.3 | h | 83880.0 | [h] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
+| volume of distribution (V/F | `Q76` · V/F | 40.9 | L/kg) | 2.863 | [l] / [kg] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
+| rate constant (k | `Q47` · kel | 0.0478 | 1/h | 1.3277777777777779e-05 | 1/h | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
+| dose-normalized area under the curve (AUC/D | `Q189` · AUC/dose | 0.29 | h x microg/L) | not captured | [[h] · [µg]] / [l] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
+| clearance (Cl/F | `Q27` · CL/F | 1.8 | L/kg/h) | 3.5000000000000004e-05 | [l] / [[h] · [kg]] | not captured | llm_corrected (0.6) | Reinbold_2010:abstract | — | not captured |
+| elimination half-life (t(1/2) | `Q57` · t1/2z | 16.2 | h) | 58320.0 | [h] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
+| C(max/Dose) | `Q174` · Cmax/dose | 4.5 | ng/mL) | not captured | [ng] / [ml] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
+| time of C(max) (T(max) | `Q56` · tmax | 23.3 | h) | 83880.0 | [h] | not captured | llm (0.6) | Reinbold_2010:abstract | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -57,14 +60,17 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 
 ## Departures & gaps
 
-**Deviations:**
-- `defaulted_parameters`: ['ka', 'Tlag']
-- `apparent_assumption`: F=1, Fm=1, no molar correction (parameterization=apparent)
-- `invented_absorption`: ka defaulted — not reported in source
-- `input_model`: first-order depot input — apparent (/F) parameterization ⇒ extravascular dosing
-
 **Interpretation flags:**
-- unit_dimension_unknown: 'h x microg/L' (AUC/dose)
+- unit_dimension_unknown: 'L/kg)' (V/F)
+- unit_dimension_unknown: 'h(-1))' (kel)
+- unit_dimension_unknown: 'h x microg/L)' (AUC/dose)
+- unit_dimension_unknown: 'L/kg/h)' (CL/F)
+- unit_dimension_unknown: 'h)' (t1/2z)
+- unit_dimension_unknown: 'ng/mL)' (Cmax/dose)
+- unit_dimension_unknown: 'h)' (tmax)
+- implicit units: 'rate constant (k' → 1/h (from the popPK convention: 'Elimination rate constants are first-order rate constants, conventionally expressed in reciprocal time units (1/h) in po')
+- implicit units: 'dose-normalized area under the curve (AUC/D' — the LLM proposed 'L/h', whose dimension does not fit Q189; left unset
+- implicit units: 'C(max/Dose)' — the LLM proposed 'L', whose dimension does not fit Q174; left unset
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=chlortetracycline
 - held at status:extracted — NIL link or unit issue (mismatch/unknown/normalisation-failed) present
 - status held at route_to_review — not promoted
@@ -77,6 +83,41 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 
 ## Validation
 
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
+
+| second reader | verdict | agreement | disagreements |
+|---|---|---|---|
+| `gpt-oss:120b` | not confirmed | 0.118 (2/17 fields) | 15 |
+
+<details><summary>15 field(s) a reader read differently</summary>
+
+| second reader | field | first reading | second reading | agreement |
+|---|---|---|---|---|
+| `gpt-oss:120b` | `parameters[auc/d]` | not captured | 0.29 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c]` | 4.5 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[c]` | not captured | 4.5 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[cl/f]` | not captured | 1.8 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[clearance (cl/f]` | 1.8 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[dose-normalized area under the curve (auc/d]` | 0.29 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[elimination half-life]` | 16.2 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[k]` | not captured | 0.0478 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[rate constant (k]` | 0.0478 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[t]` | not captured | 16.2 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[time of c(max)]` | 23.3 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[v/f]` | not captured | 40.9 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[volume of distribution (v/f]` | 40.9 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `screen.dose_compound` | chlortetracycline | unknown | mismatch |
+| `gpt-oss:120b` | `screen.primary_analyte` | chlortetracycline | unknown | mismatch |
+
+</details>
+
+<details class="legend">
+<summary>Cross-check legend</summary>
+<table><thead><tr><th>column</th><th>what it holds</th></tr></thead><tbody><tr><td><code>second reader</code></td><td>a model that re-read the paper independently, always from a different family than the first reading (scholarv2.secondary_for): a qwen primary is checked by gpt-oss:120b, a gpt-oss primary by qwen3.8:27b-mtp-q8_0 — two checkpoints of one family share their misreads, so agreement between them would mean little. A record can have several readers.</td></tr><tr><td><code>agreement</code></td><td>share of the compared fields that reader agreed on.</td></tr><tr><td><code>verdict</code></td><td>per reader: `confirmed` it agrees throughout · `partly confirmed` a non-structural field differs · `not confirmed` a structural one differs (clearance, a volume, ka, a lag) · `primary re-run` the first reading extracted nothing and was given one hinted retry.</td></tr><tr><td><code>combined</code></td><td>the record's verdict over ALL its readers: confirmed only when every reader that answered agrees, disputed as soon as one disagrees on a structural parameter. The most favourable reading is never taken — an extra reader must not be a way to find one that agrees.</td></tr><tr><td><code>kept</code></td><td>which reading the record holds. ALWAYS the first — a disagreement is a signal for a reviewer, never an automatic correction, so the numbers on this page are the first model's either way.</td></tr></tbody></table>
+</details>
+
+
 **Scholar closed-form checks:**
 
 | check | status | expected | obtained | ratio | tol | source |
@@ -84,13 +125,9 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 | C0_has_structural_params | pass | not captured | 7 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q174 | pass | [mass] / [length] ** 3 | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
-| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
 | C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
-| C5_dimension_Q56 | pass | [time] | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
-| C5_dimension_Q57 | pass | [time] | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
-| C5_dimension_Q76 | pass | [length] ** 3 | not captured | not captured | not captured | ['Reinbold_2010:abstract'] |
-| C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | h x microg/L | not captured | not captured | ['Reinbold_2010:abstract'] |
+| C5_unit_missing_Q174 | fail | [mass] / [length] ** 3 | ng/mL) | not captured | not captured | ['Reinbold_2010:abstract'] |
+| C5_unit_missing_Q189 | fail | [mass] * [time] / [length] ** 3 | h x microg/L) | not captured | not captured | ['Reinbold_2010:abstract'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
 | C9_phys_window_Q27 | pass | clearance within physiological range | 126 L/h | not captured | not captured | ['Reinbold_2010:abstract'] |
@@ -128,25 +165,20 @@ Reinbold JB et al., Plasma pharmacokinetics of oral chlorte…, Journal of veter
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
 <tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_modelica.zip" download>Chlortetracycline_Reinbold2010_reference_modelica.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_fmi.zip" download>Chlortetracycline_Reinbold2010_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span><br><a href="models/fmu/PK_1C_enteral.fmu" download>PK_1C_enteral.fmu</a> <span class="pk-size">(1.3 MB, shared)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_fmi.zip" download>Chlortetracycline_Reinbold2010_reference_fmi.zip</a> <span class="pk-size">(4.3 kB)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_matlab.zip" download>Chlortetracycline_Reinbold2010_reference_matlab.zip</a> <span class="pk-size">(3.5 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_matlab_simbio.zip" download>Chlortetracycline_Reinbold2010_reference_matlab_simbio.zip</a> <span class="pk-size">(2.9 kB)</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_sbml.zip" download>Chlortetracycline_Reinbold2010_reference_sbml.zip</a> <span class="pk-size">(2.7 kB)</span></td></tr>
 <tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><a href="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_cellml.zip" download>Chlortetracycline_Reinbold2010_reference_cellml.zip</a> <span class="pk-size">(3.2 kB)</span></td></tr>
 </tbody></table>
 <p>Each archive holds the model source, a script that simulates it against the appropriate library, and a README describing both and how to run them.</p>
-<p><b>FMI is two downloads.</b> The archive holds this record's parameters and its driver; the simulator itself is <code>PK_1C_enteral.fmu</code>, one compiled template shared by every model of this structure. Take the FMU once, keep it beside the script (or pass <code>--fmu PATH</code>). Running it reproduces the model-specific FMU exactly.</p>
-</div><figure class="pk-models-diagram"><img src="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference.svg" alt="Chlortetracycline_Reinbold2010_reference diagram"><figcaption>Model diagram (Modelica) using Pharmacolibrary v26.09 components, rendered by OpenModelica 1.26.7.</figcaption></figure></div>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 
-**Administration: oral** — 1000 mg, single dose, first-order absorption (ka 0.5 /h, F 1). _The paper's dose was not captured; the default is the WHO ATC DDD 1000 mg oral (J01AA03) (defined daily dose)._
-
-<dbs-fmusim paramsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_params.json" metaurl="assets/fmu/PK_1C_enteral.vr.json" wasmurl="assets/fmu/PK_1C_enteral.js" controlsurl="drugs/drug_chlortetracycline/Chlortetracycline_Reinbold2010_reference/Chlortetracycline_Reinbold2010_reference_sim_controls.json"></dbs-fmusim>
-
-<sub>Runs this record's model in the browser as WebAssembly. Sliders start at the extracted values; the reference check compares the browser's peak against the FMPy result recorded when the record was built, and is withheld once a value has been edited. Template `PK_1C_enteral` · parameters `Chlortetracycline_Reinbold2010_reference_params.json` · controls `Chlortetracycline_Reinbold2010_reference_sim_controls.json`. A slider marked *simulator value* is running on the template's own default because this record does not pin that parameter.</sub>
+_No web simulator for this record: its structure has no shared WebAssembly template. The FMI archive under **Models** carries its own compiled FMU._
 
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-18 01:41 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 00:02 UTC</sub>

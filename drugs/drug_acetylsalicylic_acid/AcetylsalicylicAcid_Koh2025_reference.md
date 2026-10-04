@@ -1,11 +1,11 @@
 <div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;acetylsalicylic acid&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/&quot;},{&quot;label&quot;:&quot;Koh_2025 \u00b7 reference&quot;}]"></div>
-<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Zapadniuk1987_reference&quot;,&quot;label&quot;:&quot;Zapadniuk_1987_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Zapadniuk1987_reference.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koh_2025_TXB2&quot;,&quot;label&quot;:&quot;Koh_2025 \u00b7 TXB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
+<div class="pk-recnav" data-items="[{&quot;id&quot;:&quot;AcetylsalicylicAcid_Dziubina2026_reference&quot;,&quot;label&quot;:&quot;Dziubina_2026_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Dziubina2026_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Thoueille2023_reference&quot;,&quot;label&quot;:&quot;Thoueille_2023_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Thoueille2023_reference.md&quot;,&quot;status&quot;:&quot;extracted \u00b7 stale&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;AcetylsalicylicAcid_Shi2008_reference&quot;,&quot;label&quot;:&quot;Shi_2008_reference&quot;,&quot;group&quot;:&quot;popPK&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/AcetylsalicylicAcid_Shi2008_reference.md&quot;,&quot;status&quot;:&quot;needs review&quot;,&quot;css&quot;:&quot;pk-badge--orange&quot;,&quot;here&quot;:false},{&quot;id&quot;:&quot;pd_Koh_2025_TXB2&quot;,&quot;label&quot;:&quot;Koh_2025 \u00b7 TXB2&quot;,&quot;group&quot;:&quot;PD&quot;,&quot;href&quot;:&quot;drugs/drug_acetylsalicylic_acid/pd_Koh_2025_TXB2.md&quot;,&quot;status&quot;:&quot;reviewed \u2014 candidate&quot;,&quot;css&quot;:&quot;pk-badge--green&quot;,&quot;here&quot;:false}]"></div>
 
 <div class="pk-tab-mark" data-tab="Information"></div>
 
 # acetylsalicylic acid — `AcetylsalicylicAcid_Koh2025_reference`
 
-> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.722). The first reading is what the record holds.">cross-check: disputed</span>
+> ## <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--orange" title="re-read by gpt-oss:120b (partly confirmed, agreement 0.852). The first reading is what the record holds.">cross-check: partial</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,7 +13,7 @@
 <p><small>The first badge is the record's <b>status</b> — what the pipeline and the reviewer concluded. A second badge, when present, is the <b>cross-check</b>: whether a model of another family, re-reading the same paper, extracted the same numbers. They are independent — a rejected record can be cross-checked, and a confirmed reading can still fail a plausibility check.</small></p>
 </details>
 
-**Model:** A model was built but held back: a core parameter had no value, so it is not published or simulated.
+**Model:** No model was generated from this record.
 
 ### Reviewer guidance
 
@@ -21,21 +21,23 @@
 
 Without a unit the value cannot be converted, so the model cannot use it. Extracted — acetylsalicylic acid: FR 0.69, kabs 0.22 h−1, tlag 2.81 h, kcomp 2.32 h−1, k31 1.31, CLm/F 2.76 L/h, Q/F 0.08 L/h, V3/F 23.5 L.
 
-A second, independent reading of the paper (`gpt-oss:120b`) disagrees on which compound was dosed: this record has enteric-coated aspirin, the second reading acetylsalicylic acid; it also differs on 9 more fields. That field shapes the model, so the record is marked disputed.
+A second, independent reading of the paper (`gpt-oss:120b`) disagrees on the value of βweight_clm: this record has none, the second reading 1.42; it also differs on 3 more fields. That field does not shape the model.
 
 <sub>reviewed by rule template (no LLM)</sub>
+
+> ⚠️ **STALE** — review status `needs_review` (reviewed 2026-09-28 14:35:51.384501+00:00) predates the upstream re-run (2026-10-04 01:06:14.759610+00:00). Current validate status: `needs_review`.
 
 ## Citation
 Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, development an… (2025)
   ·  DOI: [10.2147/DDDT.S533428](https://doi.org/10.2147/DDDT.S533428)
 
 ## Model component
-<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="needs_review" stale="false" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
+<dbs-pgx drug="acetylsalicylic acid" model-id="AcetylsalicylicAcid_Koh2025_reference" status="needs_review" stale="true" population="healthy adults" measured-compound="acetylsalicylic_acid" parameterization="apparent" topology="parent_metabolite"></dbs-pgx>
 
-**Model structure:** 1-compartment, oral mammillary model — template `PK_1C_enteral`.  
-**Parameters:** 8 extracted.
+**Model structure:** parent + metabolite; no model was built for this record.  
+**Parameters:** 13 extracted.
 
-**Parameterization:** CLm/F, Q/F, V3/F — apparent, F unknown (apparent — bioavailability not identifiable).
+**Parameterization:** CL/F, Q/F, V1/F, V2/F — apparent, F unknown (apparent — bioavailability not identifiable).
 
 ## Parameters
 > ⚠️ This record is not accepted (current status `needs_review`) — the values below are the extraction as recorded, **not verified**; see the reviewer guidance above for what failed. Any model or simulator on the other tabs runs on these numbers.
@@ -43,13 +45,18 @@ Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, developme
 | label (paper) | Q-code · name | value | unit | value_si | unit_canonical | RSE% | link | source | covariates | IIV |
 |---|---|---|---|---|---|---|---|---|---|---|
 | fr | `Q43` · FR | 0.69 | not captured | not captured | not captured | 4.99 | exact (1.0) | t0001:row2:col1, t0001:row2:col2 | — | 0.29 (16.5% RSE) |
-| ka capsule (h−1) | `Q49` · kabs | 0.22 | h−1 | 6.111111111111111e-05 | [1] / [h] | 21.8 | llm_confirmed (0.6) | t0001:row3:col1, t0001:row3:col2 | — | 1.09 (14.7% RSE) |
-| Lag0 (h) | `Q83` · tlag | 2.81 | h | 10116.0 | [h] | 8.26 | llm (0.6) | t0001:row6:col1, t0001:row6:col2 | — | not captured |
+| ka capsule (h−1) | `Q49` · kabs | 0.22 | h−1 | 6.111111111111111e-05 | [1] / [h] | 21.8 | exact (1.0) | t0001:row3:col1, t0001:row3:col2 | — | 1.09 (14.7% RSE) |
+| Lag0 (h) | `Q83` · tlag | 2.81 | h | 10116.0 | [h] | 8.26 | exact (1.0) | t0001:row6:col1, t0001:row6:col2 | — | not captured |
 | k23 (h−1) | `Q48` · kcomp | 2.32 | h−1 | 0.0006444444444444444 | [1] / [h] | 4.11 | exact (1.0) | t0001:row7:col1, t0001:row7:col2 | — | 0.27 (15% RSE) |
+| k24 (h−1) | `Q48` · kcomp | 0.57 | h−1 | 0.00015833333333333332 | [1] / [h] | not captured | exact (1.0) | t0001:row8:col1 | — | not captured |
+| k34 (h−1) | `Q305` · kfm | 2.97 | h−1 | 0.0008250000000000001 | [1] / [h] | 11.7 | exact (1.0) | t0001:row9:col1, t0001:row9:col2 | — | not captured |
 | βweight_k34 | `Q304` · k31 | 1.31 | not captured | not captured | not captured | 30.9 | llm (0.6) | t0001:row10:col1, t0001:row10:col2 | — | not captured |
-| CLm/F (L/h) | `Q351` · CLm/F | 2.76 | L/h | 7.666666666666666e-07 | [l] / [h] | 3.86 | exact (1.0) | t0001:row11:col1, t0001:row11:col2 | — | 0.24 (11.9% RSE) |
+| CLm/F (L/h) | `Q27` · CL/F | 2.76 | L/h | 7.666666666666666e-07 | [l] / [h] | 3.86 | exact (1.0) | t0001:row11:col1, t0001:row11:col2 | — | not captured |
 | Q/F (L/h) | `Q69` · Q/F | 0.08 | L/h | 2.2222222222222224e-08 | [l] / [h] | not captured | exact (1.0) | t0001:row13:col1 | — | not captured |
-| V3/F (L) | `Q78` · V3/F | 23.51 | L | 0.023510000000000003 | [l] | 12.3 | exact (1.0) | t0001:row14:col1, t0001:row14:col2 | — | not captured |
+| V3/F (L) | `Q290` · V1/F | 23.51 | L | 0.023510000000000003 | [l] | 12.3 | exact (1.0) | t0001:row14:col1, t0001:row14:col2 | — | not captured |
+| V4/F (L) | `Q290` · V1/F | 7.5 | L | 0.0075 | [l] | 2.6 | exact (1.0) | t0001:row15:col1, t0001:row15:col2 | — | not captured |
+| V5/F (L) | `Q82` · V2/F | 1.98 | L | 0.00198 | [l] | not captured | exact (1.0) | t0001:row16:col1 | — | not captured |
+| kout (h−1) | `Q47` · kel | 0.023 | h−1 | 6.3888888888888885e-06 | [1] / [h] | 5.51 | exact (1.0) | t0001:row18:col1, t0001:row18:col2 | — | not captured |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -59,48 +66,41 @@ Koh J et al., Population Pharmacokinetic and Pharmaco…, Drug design, developme
 ## Departures & gaps
 
 **Interpretation flags:**
-- compound tags: 2 row(s) → salicylic_acid (m_suffix 2)
+- table section residual_error: 'Proportional error (ASA)' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Proportional error (SA)' routed out of structural estimates ('Residual error')
+- table section residual_error: 'Additive error (TXB2)' routed out of structural estimates ('Residual error')
 - dropped duplicate Q49 ('ka tablet (h−1)', value '0.053') — already have one for this compound
 - dropped unlinked row (NIL): 'Tk0 (h)' — extend the ontology if this is a real PK parameter (source ['t0001:row5:col1', 't0001:row5:col2'])
-- dropped duplicate Q48 ('k24 (h−1)', value '0.57') — already have one for this compound
-- dropped duplicate Q48 ('k34 (h−1)', value '2.97') — already have one for this compound
 - routed 'βweight_CLm' → Q314 (omega_cov) to covariance — variability estimate, not a structural parameter
-- dropped duplicate Q78 ('V4/F (L)', value '7.5') — already have one for this compound
-- dropped duplicate Q78 ('V5/F (L)', value '1.98') — already have one for this compound
 - dropped PD-category row 'R0 (μg/L)' → Q336 (R0, category G13) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row17:col1', 't0001:row17:col2'])
-- dropped PD-category row 'kout (h−1)' → Q328 (kout, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row18:col1', 't0001:row18:col2'])
 - dropped PD-category row 'Imax' → Q323 (Imax, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row19:col1'])
 - dropped PD-category row 'IC50 (mol/L)' → Q322 (IC50, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row20:col1'])
 - dropped PD-category row 'Gamma' → Q325 (Hill, category G11) — pharmacodynamic parameters belong to scholarpd, not the PK model (source ['t0001:row21:col1'])
 - apparent-ness (ontology-grounded): parameterization=apparent, measured_compound=acetylsalicylic_acid
-- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [0] (site presystemic: 'Differences in absorption profiles between two formulations were assessed as a covariate effect.ResultsThe PK of aspirin')
+- template fit: PK_3M_3C — first-pass formation; parent 1 + hepatic, metabolites [2] (site presystemic: 'Differences in absorption profiles between two formulations were assessed as a covariate effect.ResultsThe PK of aspirin')
+- row roles: 2 per-group rows of acetylsalicylic_acid absorption_rate_constant but 0 reference group(s) — kept as printed
+- row roles (LLM): model_class=compartmental; 30/30 row label(s) assigned, 17 linked by role; re-tagged parent→salicylic_acid ×19, parent→thromboxane_B2 ×11
 
 **Extraction notes:**
 - LLM selected parameter table(s) 1
 
 ## Validation
 
-**Cross-check (independent readings):** <span class="pk-badge pk-badge--red">cross-check: disputed</span>  
-first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever the readers say
+**Cross-check (independent readings):** <span class="pk-badge pk-badge--orange">cross-check: partial</span>  
+first reading `qwen3.8:27b-mtp-q8_0` — the numbers on this page are its, whatever the readers say
 
 | second reader | verdict | agreement | disagreements |
 |---|---|---|---|
-| `gpt-oss:120b` | not confirmed | 0.722 (26/36 fields) | 10 |
+| `gpt-oss:120b` | partly confirmed | 0.852 (23/27 fields) | 4 |
 
-<details><summary>10 field(s) a reader read differently</summary>
+<details><summary>4 field(s) a reader read differently</summary>
 
 | second reader | field | first reading | second reading | agreement |
 |---|---|---|---|---|
-| `gpt-oss:120b` | `parameters[k 23]` | 2.32 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[k 24].parameter_id` | Q47 | Q48 | mismatch |
-| `gpt-oss:120b` | `parameters[k 34].parameter_id` | Q304 | Q47 | mismatch |
-| `gpt-oss:120b` | `parameters[k a capsule].parameter_id` | Q95 | Q49 | mismatch |
-| `gpt-oss:120b` | `parameters[tk 0]` | 1.58 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 4 /f]` | 7.5 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[v 5 /f]` | not captured | 1.98 | only_one_extracted |
-| `gpt-oss:120b` | `parameters[β weight_k34]` | 1.31 | not captured | only_one_extracted |
-| `gpt-oss:120b` | `parameters[ωtk 0]` | not captured | 0.91 | only_one_extracted |
-| `gpt-oss:120b` | `screen.dose_compound` | enteric-coated aspirin | acetylsalicylic acid | mismatch |
+| `gpt-oss:120b` | `parameters[kout]` | not captured | 0.023 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[kout]` | 0.023 | not captured | only_one_extracted |
+| `gpt-oss:120b` | `parameters[βweight_clm]` | not captured | 1.42 | only_one_extracted |
+| `gpt-oss:120b` | `parameters[βweight_k34]` | 1.31 | not captured | only_one_extracted |
 
 </details>
 
@@ -114,18 +114,27 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 | check | status | expected | obtained | ratio | tol | source |
 |---|---|---|---|---|---|---|
-| C0_has_structural_params | pass | not captured | 8 | not captured | not captured | not captured |
+| C0_has_structural_params | pass | not captured | 13 | not captured | not captured | not captured |
 | C0b_disposition_core | pass | not captured | not captured | not captured | not captured | not captured |
 | C0c_disposition_complete | pass | not captured | not captured | not captured | not captured | not captured |
-| C5_dimension_Q351 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0001:row11:col1', 't0001:row11:col2'] |
+| C5_dimension_Q27 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0001:row11:col1', 't0001:row11:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0001:row14:col1', 't0001:row14:col2'] |
+| C5_dimension_Q290 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0001:row15:col1', 't0001:row15:col2'] |
+| C5_dimension_Q305 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row9:col1', 't0001:row9:col2'] |
+| C5_dimension_Q47 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row18:col1', 't0001:row18:col2'] |
 | C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row7:col1', 't0001:row7:col2'] |
+| C5_dimension_Q48 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row8:col1'] |
 | C5_dimension_Q49 | pass | 1 / [time] | not captured | not captured | not captured | ['t0001:row3:col1', 't0001:row3:col2'] |
 | C5_dimension_Q69 | pass | [length] ** 3 / [time] | not captured | not captured | not captured | ['t0001:row13:col1'] |
-| C5_dimension_Q78 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0001:row14:col1', 't0001:row14:col2'] |
+| C5_dimension_Q82 | pass | [length] ** 3 | not captured | not captured | not captured | ['t0001:row16:col1'] |
 | C5_dimension_Q83 | pass | [time] | not captured | not captured | not captured | ['t0001:row6:col1', 't0001:row6:col2'] |
 | C5_unit_missing_Q304 | fail | 1 / [time] | not captured | not captured | not captured | ['t0001:row10:col1', 't0001:row10:col2'] |
 | C7_apparent_coherence | pass | not captured | not captured | not captured | not captured | not captured |
 | C8_topology | pass | not captured | not captured | not captured | not captured | not captured |
+| C9_phys_window_Q27 | pass | clearance within physiological range | 2.76 L/h | not captured | not captured | ['t0001:row11:col1', 't0001:row11:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 23.5 L | not captured | not captured | ['t0001:row14:col1', 't0001:row14:col2'] |
+| C9_phys_window_Q290 | pass | volume within physiological range | 7.5 L | not captured | not captured | ['t0001:row15:col1', 't0001:row15:col2'] |
+| C9_phys_window_Q82 | pass | volume within physiological range | 1.98 L | not captured | not captured | ['t0001:row16:col1'] |
 
 <details class="legend">
 <summary>Check legend — what each column means</summary>
@@ -160,4 +169,4 @@ _No web simulator for this record: its structure has no shared WebAssembly templ
 <div class="pk-tab-end"></div>
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · extracted 2026-09-26 20:33 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · extracted 2026-10-04 01:06 UTC</sub>

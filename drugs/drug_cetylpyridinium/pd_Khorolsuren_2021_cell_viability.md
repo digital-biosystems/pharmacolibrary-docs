@@ -1,7 +1,7 @@
-<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;cetylpyridinium&quot;,&quot;href&quot;:&quot;drugs/drug_cetylpyridinium/&quot;},{&quot;label&quot;:&quot;Khorolsuren_2021 \u00b7 PD name&quot;}]"></div>
+<div class="pk-crumbs" data-crumbs="[{&quot;label&quot;:&quot;Drugs&quot;,&quot;href&quot;:&quot;README.md&quot;},{&quot;label&quot;:&quot;A01A&quot;,&quot;href&quot;:&quot;atc/A01A.md&quot;},{&quot;label&quot;:&quot;cetylpyridinium&quot;,&quot;href&quot;:&quot;drugs/drug_cetylpyridinium/&quot;},{&quot;label&quot;:&quot;Khorolsuren_2021 \u00b7 PD cell viability&quot;}]"></div>
 <div class="pk-tab-mark" data-tab="Information"></div>
 
-# name — PD  <span class="pk-badge pk-badge--red">rejected</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
+# cell viability — PD  <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span>
 
 <details class="legend">
 <summary>What the badges above mean</summary>
@@ -13,19 +13,19 @@
 
 ## What this record describes
 
-**As extracted:** Cetylpyridinium chloride, chlorhexidine, triclosan, povidone-iodine, sodium bicarbonate drive name (in % of control) (inhibition; the model form was not identified).
+**As extracted:** Cetylpyridinium chloride (measured concentrations) drives cell viability (in %): direct sigmoid Emax (Hill) effect.
 
 **Model:** No model was generated from this record.
 
-> Cetylpyridinium chloride (and comparator antiseptics) concentrations act directly on periodontal ligament cell viability (% of control), producing dose- and time-dependent cytotoxic inhibition; the paper does not state a mechanistic PD model beyond this direct inhibitory effect. At 48 h, IC50 values were 0.001–0.0022 mg/ml for cetylpyridinium chloride, 0.0014–0.0037 mg/ml for chlorhexidine, 0.57–1.25 mg/ml for triclosan, 0.7–1.4 mg/ml for povidone-iodine, and 2.4–7.4 mg/ml for sodium bicarbonate.
+> Cetylpyridinium chloride concentrations inhibit cell viability in periodontal ligament cells via a sigmoid Emax model, with an IC50 of 0.0022 mg/ml. The paper describes the effect as dose- and time-dependent cytotoxicity but does not specify a mechanistic rate constant or effect compartment.
 >
-> <sub>in the paper's terms — summarised by glm-5.3-flash from the paper's text; not checked by a person</sub>
+> <sub>in the paper's terms — summarised by qwen3.8:27b-mtp-q8_0 from the paper's text; not checked by a person</sub>
 
 - **paper:** `Khorolsuren_2021`
-- **model family:** `unknown`
-- **driver:** `not_resolved`
+- **model family:** `sigmoid_emax`
+- **driver:** `conc_no_pk`
 - **tier:** descriptive
-- **effect:** inhibition/unknown
+- **effect:** inhibition/proportional
 
 ## Citation
 Khorolsuren Z et al., Effect of dental antiseptic agents on t…, The Saudi dental journal (2021)
@@ -34,16 +34,7 @@ Khorolsuren Z et al., Effect of dental antiseptic agents on t…, The Saudi dent
 ## Parameters
 | role | label (paper) | Q-code · name | value | unit | value_si | link | source |
 |---|---|---|---|---|---|---|---|
-| PD (effect) | IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.0022 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col3 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0037 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col4 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 1.25 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col5 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 1.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col6 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 2.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row0:col7 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Cetylpyridinium chloride | `Q322` · not captured | 0.001 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col3 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Chlorhexidine | `Q322` · not captured | 0.0014 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col4 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Triclosan | `Q322` · not captured | 0.57 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col5 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Povidone-iodine | `Q322` · not captured | 0.7 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col6 |
-| PD (effect) | IC50 (mg/ml) at 48 h — Sodium bicarbonate | `Q322` · not captured | 7.4 | unknown | not captured | llm_confirmed (not captured) | t0005:row1:col7 |
+| PD (effect) | IC50 | `Q322` · not captured | 0.0022 | mg/ml | not captured | llm (not captured) | Khorolsuren_2021:pdv3 |
 
 <details class="legend">
 <summary>Column legend — what each column means</summary>
@@ -53,9 +44,19 @@ Khorolsuren Z et al., Effect of dental antiseptic agents on t…, The Saudi dent
 
 <div class="pk-tab-mark" data-tab="Models"></div>
 
-## Models
+## Downloadable models
 
-<p>No downloads: this record is <b>rejected</b>, so it is not published as a model. Any archives generated for it before the verdict have been removed — a download outlives the page that explains it.</p>
+<div class="pk-models-grid"><div class="pk-models-table">
+<table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td><code>.fmu</code> + fmpy driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>CellML</b></td><td><code>.cellml</code> + Python driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
+</tbody></table>
+<p>No bundles have been generated for this record yet. When the engineer emits them they appear here automatically — this page reports what is on disk and generates nothing itself.</p>
+</div></div>
 
 <div class="pk-tab-mark" data-tab="Simulation"></div>
 

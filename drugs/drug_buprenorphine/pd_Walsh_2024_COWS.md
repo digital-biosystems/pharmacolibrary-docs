@@ -118,8 +118,8 @@ first reading `qwen3.6:27b-q8_0` — the numbers on this page are its, whatever 
 
 <div class="pk-models-grid"><div class="pk-models-table">
 <table class="pk-models"><thead><tr><th>format</th><th>archive contents</th><th>download</th></tr></thead><tbody>
-<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_modelica.zip" download>Buprenorphine_Walsh2024_PD_cows_modelica.zip</a> <span class="pk-size">(2.4 kB)</span></td></tr>
-<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><span class="pk-missing">not generated yet</span></td></tr>
+<tr><td><b>Modelica</b></td><td><code>.mo</code> + Modelica script</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_modelica.zip" download>Buprenorphine_Walsh2024_PD_cows_modelica.zip</a> <span class="pk-size">(3.0 kB)</span></td></tr>
+<tr><td><b>FMI 2.0 (FMU)</b></td><td>parameters + fmpy driver (FMU below)</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_fmi.zip" download>Buprenorphine_Walsh2024_PD_cows_fmi.zip</a> <span class="pk-size">(4.5 kB)</span><br><a href="models/fmu/PD_SigmoidEmaxSweep.fmu" download>PD_SigmoidEmaxSweep.fmu</a> <span class="pk-size">(1.2 MB, shared)</span></td></tr>
 <tr><td><b>MATLAB &amp; GNU Octave</b></td><td><code>.m</code> ODE function + driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_matlab.zip" download>Buprenorphine_Walsh2024_PD_cows_matlab.zip</a> <span class="pk-size">(3.1 kB)</span></td></tr>
 <tr><td><b>MATLAB (SimBiology)</b></td><td><code>.sbproj</code> + driver</td><td><span class="pk-missing">not generated yet</span></td></tr>
 <tr><td><b>SBML</b></td><td><code>.xml</code> (L3V2) + Python driver</td><td><a href="drugs/drug_buprenorphine/Buprenorphine_Walsh2024_PD_cows/Buprenorphine_Walsh2024_PD_cows_sbml.zip" download>Buprenorphine_Walsh2024_PD_cows_sbml.zip</a> <span class="pk-size">(2.6 kB)</span></td></tr>

@@ -16,18 +16,32 @@ Hydrocortisone was granted FDA approval on 5 August 1952.[L10574]
 
 **Indication.** Otic solutions are indicated for infections of the external auditory canal caused by susceptible organisms and with inflammation.[L10529,L10532] Hydrocortisone tablets are indicated for certain endocrine, rheumatic, collagen, allergic, ophthalmic, respiratory, hematologic, neoplastic, edematous, gastrointestinal, and other conditions.[L10535] A hydrocortisone enema is indicated for ulcerative colitis,[L10538] a topical ointment with antibiotics is indicated for corticosteroid responsive dermatoses with infections,[L7772] and a topical cream with [acyclovir] is indicated to treat cold sores.[L7321] Oral granules of hydrocortisone are used as a replacement therapy for Adrenocortical Insufficiency (AI) in children under 17 years of age.[L16533]
 
+## Molecules and molar masses
+
+> The molar mass each model uses to convert mass to molar concentration and to form a metabolite molecule for molecule. Looked up, never estimated: DrugBank for the drug, the paper's own value or the PubChem entry matched to the paper's name for a metabolite.
+
+| molecule | role | molar mass (g/mol) | formula | source | PubChem | records |
+|---|---|---|---|---|---|---|
+| hydrocortisone (cortisol) | parent | 362.46 | C21H30O5 | DrugBank | [5754](https://pubchem.ncbi.nlm.nih.gov/compound/5754) | Hamitouche_2017, Werumeus_2017 |
+
 ## Extraction summary
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 00:38 | 1:48 | 0/0/2 | 0/0/0 | 0/0/0 | 20,877/6,607 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
+| 2026-10-04 01:30 | 6:33 | 1/0/1 | 0/0/1 | 0/0/0 | 46,366/25,184 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 1/0 | 1/0 | 0 |
 
 ## popPK records
 
 | status | detail | model | model structure | params | citation | doi |
 |---|---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | — | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
-| <span class="pk-badge pk-badge--orange">needs review</span><br><sub>blocking: C6_cl_magnitude failed (ratio None)</sub><br><sub>route_to: `human_review`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | — | 1-compartment (no model) | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.625). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: extracted</sub><br><sub>route_to: `engineer_replication`</sub> | [Werumeus_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Werumeus2017_reference.md) | model (no simulator) | 1-compartment, oral | 3 | Werumeus Buning J et al., Pharmacokinetics of oral hydrocortisone…, Metabolism: clinical and ex… (2017) | [10.1016/j.metabol.2017.02.005](https://doi.org/10.1016/j.metabol.2017.02.005) |
+| <span class="pk-badge pk-badge--orange">needs review</span> <span class="pk-badge pk-badge--stale">stale</span> <span class="pk-badge pk-badge--red" title="re-read by gpt-oss:120b (not confirmed, agreement 0.25). The first reading is what the record holds.">cross-check: disputed</span><br><sub>STALE — current validate: needs_review</sub><br><sub>blocking: disposition incomplete — only clearance/elimination extracted — the engineer ne…</sub><br><sub>route_to: `human_review`</sub> | [Hamitouche_2017_reference](drugs/drug_hydrocortisone/Hydrocortisone_Hamitouche2017_reference.md) | — | 1-compartment (no model) | 2 | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
+
+## Pharmacodynamics (PD)
+
+| status | detail | about | model | citation | doi |
+|---|---|---|---|---|---|
+| <span class="pk-badge pk-badge--orange">needs review</span> | [Hamitouche_2017_Na_K](drugs/drug_hydrocortisone/pd_Hamitouche_2017_Na_K.md) | urinary sodium/potassium ratio ← hydrocortisone · indirect response — drug inhibits the production of urinary sodium/potassium ratio | model (no simulator) | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) |
 
 ## ADME sites
 
@@ -63,7 +77,7 @@ Where this drug is handled, from DrugBank's curated enzymes / transporters / car
 
 - **PubMed hits:** 102 matched, 19 returned
 - **screened:** 2  ·  **relevant:** 2
-- **records:** 2  ·  extracted 0  ·  needs_review 2  ·  rejected 0  ·  stale 0
+- **records:** 2  ·  extracted 1  ·  needs_review 1  ·  rejected 0  ·  stale 2
 - **scholar-agent fallback query used:** not captured
 
 ## Full text wanted
@@ -72,17 +86,17 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 
 | save as | citation | domain | score | DOI | PubMed | why wanted |
 |---|---|---|---|---|---|---|
-| `Hamitouche_2017.pdf` | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | popPK | 10 | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) | [28083797](https://pubmed.ncbi.nlm.nih.gov/28083797) | The study reports quantitative population PK parameters (clearance and half-life) for intravenous hydrocortisone in healthy volunteers. |
-| `Rozenveld_2022.pdf` | Rozenveld E et al., Pharmacokinetic Modeling of Hydrocortis…, Pharmaceutics (2022) | popPK | 9 | [10.3390/pharmaceutics14061161](https://doi.org/10.3390/pharmaceutics14061161) | [35745734](https://pubmed.ncbi.nlm.nih.gov/35745734) | The paper describes a population PK model for hydrocortisone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative results and correlation coefficients. |
+| `Hamitouche_2017.pdf` | Hamitouche N et al., Population Pharmacokinetic-Pharmacodyna…, The AAPS journal (2017) | popPK | 10 | [10.1208/s12248-016-0041-9](https://doi.org/10.1208/s12248-016-0041-9) | [28083797](https://pubmed.ncbi.nlm.nih.gov/28083797) | The study reports quantitative population PK parameters (clearance, half-life) for intravenous hydrocortisone in healthy human volunteers. |
+| `Rozenveld_2022.pdf` | Rozenveld E et al., Pharmacokinetic Modeling of Hydrocortis…, Pharmaceutics (2022) | popPK | 9 | [10.3390/pharmaceutics14061161](https://doi.org/10.3390/pharmaceutics14061161) | [35745734](https://pubmed.ncbi.nlm.nih.gov/35745734) | The paper describes a population PK model for hydrocortisone in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only correlation coefficients and study design details. |
 
-<sub>queue written 2026-09-18T00:36:30.238781+00:00</sub>
+<sub>queue written 2026-10-04T01:24:35.306538+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
-| popPK | Czock_2005 | irrelevant | 2 | 0 | The paper is a review discussing general pharmacokinetic principles and simulations for methylprednisolone, without reporting specific quantitative PK parameter values for hydrocortisone. |
-| popPK | Rozenveld_2022 | relevant | 9 | 0 | The paper describes a population PK model for hydrocortisone, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, which only contains qualitative results and correlation coefficients. |
+| popPK | Czock_2005 | irrelevant | 2 | 0 | This is a review article that discusses glucocorticoid pharmacokinetics generally and presents simulations for methylprednisolone, but it does not report original quantitative PK parameter values for hydrocortisone. |
+| popPK | Rozenveld_2022 | relevant | 9 | 2 | The paper describes a population PK model for hydrocortisone in humans, but the specific numeric parameter values (CL, V, etc.) are not present in the provided evidence, only correlation coefficients and study design details. |
 
 ---
-<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-09-18 00:36 UTC</sub>
+<sub>Generated by `docs.py` (scholarv2) · newest extraction 2026-10-04 01:24 UTC</sub>

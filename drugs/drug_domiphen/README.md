@@ -18,7 +18,7 @@
 
 | extracted at | time | popPK e/r/o | PD e/r/o (paper) | PGx e/r/o | tokens in/out | LLM | papers | GROBID/JATS | OA/non-OA | NONMEM |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-18 00:02 | 1:24 | 0/0/0 | 1/0/0 | 0/0/0 | 29,573/1,082 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
+| 2026-10-04 00:40 | 0:28 | 0/0/0 | 1/0/0 | 0/0/0 | 16,111/633 | ollama / qwen3.8:27b-mtp-q8_0 | 1 | 0/2 | 1/0 | 0 |
 
 ## popPK records
 
@@ -28,7 +28,7 @@ _not available_
 
 | status | detail | about | model | citation | doi |
 |---|---|---|---|---|---|
-| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Biosca_2019_unknown](drugs/drug_domiphen/pd_Biosca_2019_unknown.md) | parasite growth inhibition ← pyronaridine · inhibition effect | — | Biosca A et al., An ImmunoPEGliposome for Targeted Antim…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070341](https://doi.org/10.3390/pharmaceutics11070341) |
+| <span class="pk-badge pk-badge--green">extracted</span> <span class="pk-badge pk-badge--species" title="In-vitro data (cells, tissue or microsomes), not measured in people (from an LLM reading of the title and abstract by gpt-6-luna, p(non-human) 1.00).">in vitro</span> | [Biosca_2019_Growth_inhibition](drugs/drug_domiphen/pd_Biosca_2019_Growth_inhibition.md) | P. falciparum growth inhibition ← domiphen bromide · direct sigmoid Emax (Hill) effect | — | Biosca A et al., An ImmunoPEGliposome for Targeted Antim…, Pharmaceutics (2019) | [10.3390/pharmaceutics11070341](https://doi.org/10.3390/pharmaceutics11070341) |
 
 <details class="legend">
 <summary>Badge legend — what each badge means</summary>
@@ -52,15 +52,15 @@ _2 paper(s) judged relevant from the abstract, with no full text on disk — pay
 | `Long_2014.pdf` | Long Y et al., Inhibition of HERG potassium channels b…, European journal of pharmac… (2014) | pd | 4 | [10.1016/j.ejphar.2014.05.002](https://doi.org/10.1016/j.ejphar.2014.05.002) | [24846011](https://www.ncbi.nlm.nih.gov/pubmed/24846011) | metadata signals extractable PD data (IC50) |
 | `Long_2021.pdf` | Long Y et al., Proarrhythmic effects induced by benzet…, Toxicology and applied phar… (2021) | pd | 4 | [10.1016/j.taap.2021.115731](https://doi.org/10.1016/j.taap.2021.115731) | [34592322](https://www.ncbi.nlm.nih.gov/pubmed/34592322) | metadata signals extractable PD data (IC50) |
 
-<sub>queue written 2026-09-18T00:02:03.317310+00:00</sub>
+<sub>queue written 2026-10-04T00:39:49.522615+00:00</sub>
 
 ## Screened and excluded
 
 | domain | paper | verdict | relevance | extractability | reason |
 |---|---|---|---|---|---|
 | popPK | Biosca_2019 | irrelevant | 0 | 0 | The paper is an in-vitro nanomedicine study focusing on liposome formulation and antimalarial activity, reporting no pharmacokinetic parameters for domiphen. |
-| popPK | Chen_2006 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for quantifying domiphen in bioprocess intermediates, not a pharmacokinetic study of domiphen as a drug. |
-| popPK | Goerke_2005 | irrelevant | 0 | 0 | The paper describes a bioprocess purification method using domiphen bromide as a reagent, not a pharmacokinetic study of domiphen as a drug. |
+| popPK | Chen_2006 | irrelevant | 0 | 0 | The paper describes an analytical HPLC method for quantifying surfactants in bioprocess intermediates, not a pharmacokinetic study of domiphen in a biological subject. |
+| popPK | Goerke_2005 | irrelevant | 0 | 0 | The paper describes a bioprocess purification method using domiphen bromide as a reagent, not a pharmacokinetic study of domiphen. |
 | popPK | Hu_2021 | irrelevant | 0 | 0 | The paper is an in-vitro antimicrobial study reporting MIC and MBC values, not a pharmacokinetic study with disposition parameters for domiphen. |
 | PD | Hu_2021 | not_relevant | 2 | 1 | The paper reports antimicrobial susceptibility (MIC, MBC, MBEC50) and synergy (FIC) data, which are pharmacological endpoints but do not constitute a pharmacodynamic (exposure-response) model with parameters like Emax or EC50 for the drug's effect on a physiological target. |
 | popPK | Long_2014 | irrelevant | 0 | 0 | no_text gate: only 94 chars of text extracted (&lt; 400) |
