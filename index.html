@@ -267,6 +267,14 @@
     aside.pk-recpanel li.here a { font-weight: 700; }
     aside.pk-recpanel .pk-badge { font-size: 9px; padding: 1px 6px; flex: 0 0 auto; }
     @media (max-width: 1100px) { aside.pk-recpanel { display: none; } }
+    /* The panel is fixed over the page, so the content makes room for it: without this it sat
+       over the right edge of whatever was there — the simulator's legend on a ~1300 px window,
+       where a click on the legend followed a record link instead. Collapsed it is only its
+       header, so it needs less room. */
+    @media (min-width: 1101px) {
+      body.pk-recpanel-open .content { right: 320px; }
+      body.pk-recpanel-closed .content { right: 200px; }
+    }
     /* The search box the official plugin injects at the top of the sidebar. */
     .sidebar .search { margin-bottom: 12px; border-bottom: 1px solid #eaecef; }
     .sidebar .search input { font-size: 14px; padding: 7px 8px; }
@@ -991,6 +999,14 @@
       hook.doneEach(function () {
         var old = document.querySelector('aside.pk-recpanel');
         if (old) old.remove();
+        // the room the content leaves for the panel (CSS above) follows its state
+        function room() {
+          var b = document.querySelector('aside.pk-recpanel');
+          document.body.classList.toggle('pk-recpanel-open', !!b && !b.classList.contains('closed'));
+          document.body.classList.toggle('pk-recpanel-closed', !!b && b.classList.contains('closed'));
+          window.dispatchEvent(new Event('resize'));   // canvases re-measure their width
+        }
+        room();
         var section = document.querySelector('.markdown-section');
         var mark = section && section.querySelector('.pk-recnav');
         if (!mark) return;
@@ -1010,6 +1026,7 @@
           box.classList.toggle('closed');
           try { localStorage.setItem(KEY, box.classList.contains('closed') ? '1' : '0'); } catch (e) {}
           paint();
+          room();
         });
         paint();
         box.appendChild(hd);
@@ -1043,6 +1060,7 @@
         });
         box.appendChild(ul);
         document.body.appendChild(box);
+        room();
       });
     });
 
