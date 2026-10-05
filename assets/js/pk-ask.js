@@ -21,14 +21,14 @@
   var FAMILIES = [
     { words: ['cl/f', 'apparent clearance', 'oral clearance', 'apparent oral clearance'],
       codes: ['Q27'], label: 'apparent clearance (CL/F)' },
-    { words: ['clearance', 'cl', 'total clearance'], codes: ['Q22', 'Q27'],
+    { words: ['clearance', 'cl', 'total clearance', 'cleared', 'clear', 'eliminated', 'elimination'], codes: ['Q22', 'Q27'],
       label: 'clearance (CL, CL/F)' },
     { words: ['volume', 'volume of distribution', 'vd', 'v/f', 'central volume'],
       codes: ['Q61', 'Q63', 'Q76', 'Q290'], label: 'volume of distribution (V, V1, V/F, V1/F)' },
     { words: ['peripheral volume'], codes: ['Q64', 'Q82'], label: 'peripheral volume (V2, V2/F)' },
     { words: ['half-life', 'half life', 'halflife', 't1/2', 'elimination half-life'],
       codes: ['Q57', 'Q60', 'Q89'], label: 'half-life' },
-    { words: ['absorption rate', 'absorption rate constant', 'ka', 'absorption'],
+    { words: ['absorption rate', 'absorption rate constant', 'ka', 'absorption', 'absorbed'],
       codes: ['Q49'], label: 'absorption rate constant (ka)' },
     { words: ['bioavailability'], codes: ['Q40', 'Q87'], label: 'bioavailability' },
     { words: ['renal clearance', 'clr'], codes: ['Q26'], label: 'renal clearance (CLR)' },
@@ -42,7 +42,7 @@
     { words: ['cmax', 'peak concentration', 'maximum concentration'], codes: ['Q32'], label: 'Cmax' },
     { words: ['tmax', 'time to peak'], codes: ['Q56'], label: 'tmax' },
     { words: ['auc', 'area under the curve', 'exposure'], codes: ['Q17', 'Q18', 'Q19', 'Q74', 'Q88'], label: 'AUC' },
-    { words: ['ec50', 'potency'], codes: ['Q321'], label: 'EC50' },
+    { words: ['ec50', 'potency', 'potent'], codes: ['Q321'], label: 'EC50' },
     { words: ['ic50'], codes: ['Q322'], label: 'IC50' },
     { words: ['emax', 'imax', 'maximal effect', 'maximum effect'], codes: ['Q320', 'Q323'], label: 'Emax / Imax' },
     { words: ['baseline', 'e0'], codes: ['Q324'], label: 'baseline (E0)' },
@@ -57,14 +57,34 @@
   // ── intents: what the question asks for ───────────────────────────────────────────────────
   var CUES = {
     gapfill: /\b(gap.?fill\w*|borrowed|from (a|the) review|review values?)\b/,
-    disagree: /\b(disagree\w*|differ\w*|discrepan\w*|spread|vary|varies|inconsisten\w*|conflict\w*)\b/,
-    pgx: /\b(pharmacogen\w*|genotype\w*|phenotype\w*|metaboli[sz]ers?|pgx|polymorphism\w*|allele\w*|gene|genes|genetic\w*)\b/,
+    // 'differ'/'vary' alone is not disagreement ('handle warfarin differently', 'how widely
+    // does it spread'): only with the papers or values that would differ
+    disagree: /\b(disagree\w*|discrepan\w*|inconsisten\w*|conflict\w*)\b|\b(differ\w*|vary|varies|spread)\b.*\b(papers?|stud(y|ies)|values?|reports?|estimates?)\b|\b(papers?|stud(y|ies)|values?|reports?|estimates?)\b.*\b(differ\w*|vary|varies|spread)\b/,
+    pgx: /\b(pharmacogen\w*|genotype\w*|phenotype\w*|metaboli[sz]ers?|pgx|polymorphism\w*|allele\w*|gene|genes|genetic\w*|dna)\b/,
     dose: /\bdose[- ]?response\b/,
     pkdriven: /\b((driven by|linked to|coupled (to|with)) (a |an |the )?(pk|pharmacokinetic)( model)?|pk[- ](driven|linked)|pk[- ]?pd)\b/,
     pd: /\b(pd|pharmacodynamic\w*|effects?|responses?|biomarkers?|exposure[- ]response|concentration[- ]effect)\b/,
     papers: /\b(papers?|stud(y|ies)|publications?|literature|references?|articles?)\b/,
     models: /\b(models?|records?|simulat\w*)\b/
   };
+  // who was studied: a reader's word → LIKE patterns over record.population (PK records carry it)
+  var POPULATIONS = [
+    { words: ['children', 'child', 'paediatric', 'pediatric', 'paediatrics', 'pediatrics', 'kids', 'adolescents'],
+      like: ['%child%', '%pediatric%', '%paediatric%', '%adolescent%', '%infant%'], label: 'children' },
+    { words: ['infants', 'infant', 'neonates', 'neonate', 'newborns', 'newborn', 'preterm'],
+      like: ['%infant%', '%neonat%', '%newborn%', '%preterm%'], label: 'infants and neonates' },
+    { words: ['elderly', 'older adults', 'older patients', 'aged'], like: ['%elderly%', '%older%', '%geriatric%'], label: 'elderly' },
+    { words: ['pregnant', 'pregnancy', 'pregnant women'], like: ['%pregnan%', '%parturient%'], label: 'pregnancy' },
+    { words: ['healthy', 'healthy volunteers', 'volunteers', 'healthy subjects'], like: ['%healthy%', '%volunteer%'], label: 'healthy volunteers' },
+    { words: ['renal impairment', 'kidney disease', 'ckd', 'renal failure', 'dialysis'],
+      like: ['%renal%', '%kidney%', '%ckd%', '%dialysis%'], label: 'renal impairment' },
+    { words: ['hepatic impairment', 'liver disease', 'cirrhosis'], like: ['%hepatic%', '%liver%', '%cirrho%'], label: 'hepatic impairment' },
+    { words: ['obese', 'obesity'], like: ['%obes%'], label: 'obesity' },
+    { words: ['cancer', 'oncology', 'tumour', 'tumor'], like: ['%cancer%', '%tumo%', '%oncolog%', '%lymphoma%', '%leuk%'], label: 'cancer patients' },
+    { words: ['critically ill', 'icu', 'intensive care'], like: ['%critical%', '%icu%', '%intensive%'], label: 'critically ill' },
+    { words: ['animals', 'animal', 'rats', 'rat', 'mice', 'mouse', 'dogs', 'dog', 'preclinical'],
+      like: ['%rat%', '%mice%', '%mouse%', '%dog%', '%animal%', '%monkey%', '%pig%'], label: 'animals' }
+  ];
   var STOP = ('a an the of for in on and or with to is are was were what which who how many much ' +
               'does do did show me list give find all any by from at as its it that this these those ' +
               'about between vs versus compare compared there their have has value values reported ' +
@@ -81,7 +101,9 @@
     gapfill: 'values a review supplied (not the paper)',
     search: 'search of names',
     missing: 'a drug with nothing extracted yet',
-    choose: 'which drug?'
+    choose: 'which drug?',
+    out_of_scope: 'not a question about the data',
+    other: 'a custom query'
   };
 
   function norm(s) {
@@ -165,12 +187,20 @@
     return d[a.length][b.length];
   }
 
+  function popOf(ph) {
+    for (var i = 0; i < POPULATIONS.length; i++) if (POPULATIONS[i].words.indexOf(ph) >= 0) return POPULATIONS[i];
+    return null;
+  }
+
   function parse(question, lex) {
     var text = norm(question);
     var toks = text ? text.split(' ') : [];
     var used = toks.map(function () { return false; });
     var plan = { question: question, text: text, drugs: [], params: null, genes: [],
-                 missing: [], corrected: [], suggestions: [], rest: [] };
+                 missing: [], corrected: [], suggestions: [], rest: [], population: null, year: null };
+    // 'after 2020', 'since 2015', 'before 2000', 'in 2024' — a paper's year
+    var ym = /\b(after|since|from|before|until|in) ((?:19|20)\d\d)\b/.exec(text);
+    if (ym) plan.year = { op: { after: '>', since: '>=', from: '>=', before: '<', until: '<=', 'in': '=' }[ym[1]], y: +ym[2] };
     var seenDrug = {};
     // longest phrase first: 'peripheral volume' before 'volume', 'acetylsalicylic acid' whole
     for (var n = Math.min(6, toks.length); n >= 1; n--) {
@@ -179,7 +209,11 @@
         if (span.indexOf(true) >= 0) continue;
         var ph = toks.slice(i, i + n).join(' ');
         var hit = false;
-        if (ph in lex.drug) {
+        var pop = popOf(ph);
+        if (pop && !plan.population) {
+          plan.population = pop;
+          hit = true;
+        } else if (ph in lex.drug) {
           var slug = lex.drug[ph];
           if (!seenDrug[slug]) { plan.drugs.push({ slug: slug, name: lex.drugName[slug] || ph, matched: ph }); seenDrug[slug] = 1; }
           hit = true;
@@ -258,6 +292,11 @@
 
   function toSQL(p) {
     var drugF = p.drugs.length ? " AND r.drug_slug IN (" + inList(p.drugs.map(function (d) { return d.slug; })) + ")" : '';
+    // who was studied (PK records carry it; PD and PGx records do not, so it is not applied there)
+    if (p.year && p.intent !== 'papers')
+      drugF += " AND r.stem IN (SELECT stem FROM paper WHERE drug_slug = r.drug_slug AND year " + p.year.op + ' ' + (+p.year.y) + ")";
+    if (p.population && (p.intent === 'param_values' || p.intent === 'records' || p.intent === 'disagree' || p.intent === 'gapfill'))
+      drugF += " AND (" + p.population.like.map(function (l) { return "lower(r.population) LIKE '" + sq(l) + "'"; }).join(' OR ') + ")";
     var who = p.drugs.length ? p.drugs.map(function (d) { return d.name; }).join(', ') : 'all drugs';
     var codes = p.params ? p.params.codes : null;
     var sql, title;
@@ -271,7 +310,7 @@
               "JOIN qcode q ON q.parameter_id = p.parameter_id\n" +
               "WHERE p.parameter_id IN (" + inList(codes) + ")" + drugF + "\n" +
               "ORDER BY d.generic_name, q.name, r.stem LIMIT 300;";
-        title = p.params.label + ' — ' + who;
+        title = p.params.label + ' — ' + who + (p.population ? ' · ' + p.population.label : '');
         break;
       case 'disagree':
         var dc = codes || ['Q27'];
@@ -315,7 +354,8 @@
       case 'papers':
         sql = "SELECT d.generic_name AS drug, pa.year, pa.stem AS paper, pa.title, pa.journal, pa.doi\n" +
               "FROM paper pa JOIN drug d ON d.slug = pa.drug_slug\n" +
-              "WHERE 1 = 1" + drugF.replace('r.drug_slug', 'pa.drug_slug') + "\n" +
+              "WHERE 1 = 1" + (p.drugs.length ? " AND pa.drug_slug IN (" + inList(p.drugs.map(function (d) { return d.slug; })) + ")" : '') +
+              (p.year ? " AND pa.year " + p.year.op + ' ' + (+p.year.y) : '') + "\n" +
               "ORDER BY d.generic_name, pa.year DESC LIMIT 300;";
         title = 'papers — ' + who;
         break;
@@ -434,11 +474,331 @@
     return n + ' row(s).' + more;
   }
 
+
+  // ══ phase 2: a language model reads the question; code still writes the query ═════════════
+  // The model is optional and never supplies a number. It fills a small plan (intent, names,
+  // population) under a JSON schema; code resolves every name through the lexicon and compiles
+  // the plan with the templates above. Only a question no template fits ('other') gets SQL
+  // written by the model, and that SQL passes guardSQL first. The explanation it may add is
+  // checked: a sentence with a number the rows do not contain is dropped.
+  //
+  // An engine is { name, json(messages, schema) → Promise<object>, text(messages, maxTokens)
+  // → Promise<string> } — WebLLM on the page (pk-ask-llm.js), Ollama in test/query_eval.js.
+
+  var MODEL_INTENTS = ['param_values', 'disagree', 'pgx', 'dose_response', 'pd_models', 'papers',
+                       'records', 'gapfill', 'search', 'out_of_scope', 'other'];
+  var INTENT_HELP = {
+    param_values: 'values of a PK or PD parameter (clearance, volume, half-life, absorption rate, bioavailability, EC50, Emax…)',
+    disagree: 'drugs whose papers report very different values of one parameter',
+    pgx: 'pharmacogenomics: genes, genotypes, metaboliser phenotypes acting on a drug',
+    dose_response: 'PD models driven by the dose alone (dose–response)',
+    pd_models: 'pharmacodynamic models: effects, responses, biomarkers, exposure–response',
+    papers: 'which papers or studies the database holds',
+    records: 'what models or records the database holds for a drug',
+    gapfill: 'values a review supplied because the paper lacked them',
+    search: 'look up a name',
+    out_of_scope: 'personal medical or dosing advice, or not about this database',
+    other: 'about the data, but none of the above (counts, rankings, comparisons across tables)'
+  };
+  var PLAN_SCHEMA = {
+    type: 'object',
+    properties: {
+      intent: { type: 'string', enum: MODEL_INTENTS },
+      drugs: { type: 'array', items: { type: 'string' } },
+      parameter: { type: 'string' },
+      gene: { type: 'string' },
+      population: { type: 'string' }
+    },
+    required: ['intent', 'drugs', 'parameter', 'gene', 'population']
+  };
+  var SHOTS = [
+    ['How fast is metformin cleared?', { intent: 'param_values', drugs: ['metformin'], parameter: 'clearance', gene: '', population: '' }],
+    ['Which genes change how codeine works?', { intent: 'pgx', drugs: ['codeine'], parameter: '', gene: '', population: '' }],
+    ['Does the INR model of warfarin depend on the concentration?', { intent: 'pd_models', drugs: ['warfarin'], parameter: '', gene: '', population: '' }],
+    ['How much ibuprofen should I give my 4-year-old?', { intent: 'out_of_scope', drugs: ['ibuprofen'], parameter: '', gene: '', population: '' }],
+    ['Which drug has the most papers?', { intent: 'other', drugs: [], parameter: '', gene: '', population: '' }],
+    ['volume of distribution of vancomycin in newborns', { intent: 'param_values', drugs: ['vancomycin'], parameter: 'volume of distribution', gene: '', population: 'newborns' }]
+  ];
+
+  // phrasing that asks for personal medical advice — answered without any model
+  var OUT_OF_SCOPE = /\b(should i|can i (take|give|use)|how much (should|can|do|to) (i|we|you) (take|give)|my (dose|dosage|child|son|daughter|baby|doctor|wife|husband|mother|father)|dose for (me|my)|safe for me|i am taking|i'm taking|im taking)\b/;
+  // what a keyword reading cannot do: counts, rankings, aggregates
+  var AGGREGATE = /\b(most|least|highest|lowest|largest|smallest|how many|number of|count|average|mean|median|top \d+|rank\w*|per (drug|gene|paper)|each drug|(more|fewer|less) than \d+|at least \d+)\b|\bboth\b.+\band\b/;
+  var FILLER = ('model models record records paper papers study studies data database known ' +
+                'available report reports there kb library pk pd pgx parameter parameters ' +
+                'value values extracted').split(' ');
+
+  // Does the keyword reading leave something unread that a model could read?
+  function needsModel(p) {
+    if (p.corrected.length) return true;          // 'weather' read as feather: let the model weigh in
+    if (p.intent === 'missing' || p.intent === 'choose') return false;
+    if (p.intent === 'search') return true;
+    if (AGGREGATE.test(p.text)) return true;
+    var cue = function (t) {
+      return Object.keys(CUES).some(function (k) { return CUES[k].test(t); });
+    };
+    return p.rest.some(function (t) { return FILLER.indexOf(t) < 0 && !cue(t) && !/^\d/.test(t); });
+  }
+
+  function planMessages(question, p) {
+    var cat = MODEL_INTENTS.map(function (k) { return '- ' + k + ': ' + INTENT_HELP[k]; }).join('\n');
+    var shots = SHOTS.map(function (x) { return 'Q: ' + x[0] + '\nA: ' + JSON.stringify(x[1]); }).join('\n');
+    var found = [];
+    if (p.drugs.length) found.push('drugs: ' + p.drugs.map(function (d) { return d.name; }).join(', '));
+    if (p.params) found.push('parameter: ' + p.params.label);
+    if (p.genes.length) found.push('genes: ' + p.genes.join(', '));
+    if (p.population) found.push('population: ' + p.population.label);
+    return [
+      { role: 'system', content:
+        'You read questions about a pharmacokinetics database and fill a JSON plan. ' +
+        'Never answer the question and never write numbers. Choose one intent:\n' + cat + '\n' +
+        'drugs: the drug names the question mentions, as written. parameter, gene, population: ' +
+        'as written in the question, or "" when not mentioned.\n' + shots },
+      { role: 'user', content: 'Q: ' + question +
+        (found.length ? '\n(names the database recognised: ' + found.join('; ') + ')' : '') + '\nA:' }
+    ];
+  }
+
+  // a name the model wrote → the lexicon's entry, or nothing (code decides what a name means)
+  function resolveDrug(name, lex) {
+    var n = norm(name);
+    if (!n) return null;
+    if (n in lex.drug) return { slug: lex.drug[n] };
+    if (n in lex.known) return { known: lex.known[n] };
+    var c = lex.words.filter(function (w) { return lev(n, w) <= (n.length >= 8 ? 2 : 1); });
+    if (c.length === 1) return lex.drug[c[0]] ? { slug: lex.drug[c[0]] } : { known: lex.known[c[0]] };
+    return null;
+  }
+  function resolveParam(name, lex) {
+    var n = norm(name);
+    if (!n) return null;
+    if (n in lex.param) return lex.param[n];
+    var words = n.split(' ');                          // 'the elimination half-life' → 'half-life'
+    for (var k = words.length; k >= 1; k--) for (var i = 0; i + k <= words.length; i++) {
+      var ph = words.slice(i, i + k).join(' ');
+      if (ph in lex.param && ph.length > 1) return lex.param[ph];
+    }
+    return null;
+  }
+
+  // Did the question say it? A small model copies names from its examples ('newborns',
+  // 'metformin') into plans for questions that never mentioned them.
+  function inQuestion(name, p) {
+    var toks = p.text.split(' ');
+    var ws = norm(name).split(' ').filter(function (w) { return w.length > 2 && STOP.indexOf(w) < 0; });
+    return ws.length > 0 && ws.every(function (w) {
+      return toks.some(function (t) { return t === w || (w.length >= 5 && lev(t, w) <= (w.length >= 8 ? 2 : 1)); });
+    });
+  }
+  // Intents the keywords read from an explicit cue; the model does not overrule them.
+  var LOCKED = ['gapfill', 'disagree', 'pgx', 'dose_response', 'param_values', 'missing', 'choose'];
+
+  function mergePlan(p, m, lex, by) {
+    var q = JSON.parse(JSON.stringify(p));               // the keyword plan is kept as it was
+    q.population = p.population; q.params = p.params;    // (objects with functions survive a copy as data)
+    q.by = by || 'model';
+    q.unresolved = [];
+    if (!m || typeof m !== 'object') return p;
+    var seen = {};
+    q.drugs.forEach(function (d) { seen[d.slug] = 1; });
+    (Array.isArray(m.drugs) ? m.drugs : []).slice(0, 4).forEach(function (nm) {
+      if (!inQuestion(nm, p)) return;
+      var r = resolveDrug(nm, lex);
+      if (r && r.slug && !seen[r.slug]) { q.drugs.push({ slug: r.slug, name: lex.drugName[r.slug] || nm, matched: nm }); seen[r.slug] = 1; }
+      else if (r && r.known && !q.missing.some(function (x) { return x.name === r.known.name; })) q.missing.push(r.known);
+      else if (!r && String(nm).trim()) q.unresolved.push(String(nm).trim());
+    });
+    if (!q.params && m.parameter) q.params = resolveParam(m.parameter, lex);
+    if (m.gene && inQuestion(m.gene, p)) {
+      var g = lex.gene[norm(m.gene)];
+      if (g && q.genes.indexOf(g) < 0) q.genes.push(g);
+    }
+    if (!q.population && m.population && inQuestion(m.population, p)) {
+      var pn = norm(m.population);
+      q.population = popOf(pn) || POPULATIONS.filter(function (x) {
+        return x.words.some(function (w) { return pn.indexOf(w) >= 0; }); })[0] || null;
+    }
+    var it = MODEL_INTENTS.indexOf(m.intent) >= 0 ? m.intent : p.intent;
+    // the keywords found data in the question (not by a guessed spelling): it is not off topic
+    var named = p.drugs.some(function (d) { return !p.corrected.some(function (c) { return c.from === d.matched; }); }) ||
+                !!p.params || p.genes.length > 0;
+    if (it === 'out_of_scope' && named) it = p.intent;
+    if (LOCKED.indexOf(p.intent) >= 0 && it !== 'out_of_scope' && it !== 'other') it = p.intent;
+    // a count or a ranking has no template: a small model often reaches for the nearest one
+    // ('records' for "how many drugs have…"), which answers a different question
+    if (AGGREGATE.test(p.text) && it !== 'out_of_scope') it = 'other';
+    if (it === 'param_values' && !q.params) it = q.drugs.length ? 'records' : 'search';
+    if (it === 'search' && p.intent !== 'search') it = p.intent;
+    // names the database has nothing extracted for decide the answer, as in the keyword path
+    if (q.missing.length && !q.drugs.length && it !== 'out_of_scope' && it !== 'other') it = 'missing';
+    q.intent = it;
+    return q;
+  }
+
+  // ── SQL the model writes: one read-only statement, a LIMIT, nothing else ─────────────────
+  var FORBIDDEN = /\b(attach|detach|pragma|insert|update|delete|drop|create|alter|replace|vacuum|reindex|analyze)\b/i;
+  function guardSQL(text) {
+    var q = String(text || '').replace(/```(sql)?/gi, '').trim().replace(/;\s*$/, '').trim();
+    if (!q) throw new Error('empty query');
+    if (q.indexOf(';') >= 0) throw new Error('one statement only');
+    if (!/^\s*(select|with)\b/i.test(q)) throw new Error('only SELECT (or WITH … SELECT) is allowed');
+    if (FORBIDDEN.test(q)) throw new Error('read-only: no schema or data modification');
+    if (!/\blimit\s+\d+\s*$/i.test(q)) q += '\nLIMIT 300';
+    return q + ';';
+  }
+  // the schema as the database states it, comments included — one source, never out of date
+  function schemaCard(db) {
+    var r = db.exec("SELECT sql FROM sqlite_master WHERE type = 'table' AND name NOT LIKE 'sqlite_%' ORDER BY name");
+    var tables = r[0] ? r[0].values.map(function (v) { return String(v[0]).replace(/[ \t]+/g, ' '); }).join('\n') : '';
+    return tables + '\n-- Q-codes: CL Q22, CL/F Q27, V Q61, V1 Q63, V/F Q76, V2 Q64, Q Q30, ka Q49, t1/2 Q57, F Q40, ' +
+           'tlag Q83, Cmax Q32, AUC Q88, EC50 Q321, IC50 Q322, Emax Q320, E0 Q324, Hill Q325, kout Q328.\n' +
+           '-- value_si is SI: clearance m3/s (× 3.6e6 → L/h), volume m3 (× 1000 → L), rate 1/s (× 3600 → 1/h), time s (/ 3600 → h).';
+  }
+  function sqlMessages(question, card, failed) {
+    var m = [
+      { role: 'system', content: 'Write ONE SQLite SELECT for the question over this schema. Answer with the SQL only, no ' +
+        'explanation. Join drug for names (d.generic_name AS drug). Include r.model_id when rows are records.\n' + card },
+      { role: 'user', content: question }
+    ];
+    if (failed) m.push({ role: 'assistant', content: failed.sql },
+                       { role: 'user', content: 'That failed: ' + failed.error + '. Write the corrected SQL only.' });
+    return m;
+  }
+
+  // ── the explanation: the model's words, the rows' numbers ───────────────────────────────
+  var EXPLAIN_COLS = ['drug', 'parameter', 'value', 'unit', 'compound', 'population', 'paper', 'gene', 'mechanism',
+                      'response', 'model_family', 'driver_kind', 'year', 'title', 'n', 'spread', 'domain', 'status'];
+  function explainMessages(question, plan, res, summary) {
+    var r = res && res[0];
+    var cols = r ? r.columns.filter(function (c) { return EXPLAIN_COLS.indexOf(c) >= 0; }) : [];
+    if (r && !cols.length) cols = r.columns.slice(0, 6);
+    var rows = r ? r.values.slice(0, 12).map(function (v) {
+      return cols.map(function (c) { var x = v[r.columns.indexOf(c)]; return x === null ? '' : String(x).slice(0, 40); }).join(' | ');
+    }) : [];
+    return [
+      { role: 'system', content: 'Explain a database result in at most three short sentences for a pharmacologist. ' +
+        'Use only numbers that appear in the summary or the rows. No advice, no outside knowledge, no lists.' },
+      { role: 'user', content: 'Question: ' + question + '\nSummary: ' + summary + '\nRows (' + (r ? r.values.length : 0) +
+        ' in all):\n' + cols.join(' | ') + '\n' + rows.join('\n') }
+    ];
+  }
+  function numbersIn(s) {
+    return (String(s).replace(/(\d),(\d{3})\b/g, '$1$2').match(/-?\d+(\.\d+)?(e-?\d+)?/gi) || []).map(Number);
+  }
+  // A kept sentence (1) uses only numbers the model was shown — the summary, the rows it saw,
+  // the question; (2) computes nothing: an average or a 'most common value' over rows it saw a
+  // part of is invented however plausible; (3) shares a word with the rows or the summary that
+  // the question did not already contain — a sentence that does not is outside knowledge
+  // ('metformin is eliminated by glomerular filtration'), true or not.
+  var STATS = /\b(average|mean|median|approximately|roughly|around|most (common|commonly|frequent|frequently)|typical(ly)?|on average|in total|overall)\b/i;
+  function words(s) {
+    return (norm(s).match(/[a-z][a-z0-9-]{3,}/g) || []).filter(function (w) { return STOP.indexOf(w) < 0; })
+      .map(function (w) { return w.replace(/(es|s)$/, ''); });         // 'records' and 'record(s)' alike
+  }
+  function checkExplanation(text, res, extra, question, shown) {
+    var r = res && res[0];
+    var cells = [String(extra || '')];
+    if (r) r.values.slice(0, shown || 12).forEach(function (v) { v.forEach(function (x) { if (x !== null) cells.push(String(x)); }); });
+    var allowed = numbersIn(cells.join(' ') + ' ' + (question || ''));
+    if (r) allowed.push(r.values.length);
+    var vocab = {};
+    words(cells.join(' ') + ' ' + (r ? r.columns.join(' ') : '')).forEach(function (w) { vocab[w] = 1; });
+    var asked = {};
+    words(question || '').forEach(function (w) { asked[w] = 1; });
+    var ok = function (x) {
+      return allowed.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); });
+    };
+    var kept = [], dropped = [];
+    String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').replace(/^\s*(\d+[.)]|[-*•])\s+/gm, '')
+      .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
+        sent = sent.trim();
+        if (!sent) return;
+        var nums = numbersIn(sent);
+        // a checked number ties a sentence to the rows; without one it needs a word from them
+        var grounded = nums.length > 0 || words(sent).some(function (w) { return vocab[w] && !asked[w]; });
+        if (nums.every(ok) && !(nums.length && STATS.test(sent)) && grounded) kept.push(sent);
+        else dropped.push(sent);
+      });
+    return { text: kept.join(' '), dropped: dropped };
+  }
+
+  function stripLimit(sql) { return String(sql).replace(/\s+LIMIT\s+\d+\s*;?\s*$/i, ';'); }
+
+  // ── one question, start to finish: what the page and the evaluation both run ──────────────
+  // opts: { engine, explain: bool, always: bool (ask the model even when keywords suffice) }
+  function answer(question, db, lex, opts) {
+    opts = opts || {};
+    var eng = opts.engine || null;
+    var out = { question: question, by: 'keywords', explanation: null, dropped: [], modelError: null };
+    var p = parse(question, lex);
+    if (OUT_OF_SCOPE.test(p.text)) p.intent = 'out_of_scope';
+    var step = Promise.resolve(p);
+    if (eng && p.intent !== 'out_of_scope' && (opts.always || needsModel(p))) {
+      step = eng.json(planMessages(question, p), PLAN_SCHEMA).then(function (m) {
+        out.modelPlan = m;
+        return mergePlan(p, m, lex, eng.name);
+      }, function (e) { out.modelError = String(e && e.message || e); return p; });
+    }
+    return step.then(function (plan) {
+      out.plan = plan;
+      out.by = plan.by || 'keywords';
+      if (plan.intent === 'out_of_scope') {
+        out.sql = null; out.title = 'not a question for this page'; out.res = [];
+        out.summary = 'This page answers questions about the extracted literature data. It cannot give dosing ' +
+                      'or medical advice — ask a doctor or pharmacist.';
+        return out;
+      }
+      if (plan.intent === 'other' && !eng) plan.intent = 'search';
+      if (plan.intent === 'other') return modelSQL(question, db, eng, out);
+      var q = toSQL(plan);
+      out.sql = q.sql; out.title = q.title;
+      out.res = db.exec(q.sql);
+      return out;
+    }).then(function (o) {
+      o.summary = o.summary || summarize(o.plan, o.res);
+      if (!eng || !opts.explain || !o.res || !o.res[0] || !o.res[0].values.length) return o;
+      return eng.text(explainMessages(question, o.plan, o.res, o.summary), 160).then(function (t) {
+        var c = checkExplanation(t, o.res, o.summary, question, 12);
+        o.explanation = c.text || null; o.dropped = c.dropped;
+        return o;
+      }, function (e) { o.modelError = String(e && e.message || e); return o; });
+    });
+  }
+
+  // 'other': the model writes the SQL; one repair with the error; else the name search
+  function modelSQL(question, db, eng, out) {
+    var card = schemaCard(db);
+    var tryRun = function (text) {
+      var sql = guardSQL(text);
+      return { sql: sql, res: db.exec(sql) };
+    };
+    return eng.text(sqlMessages(question, card), 300).then(function (t1) {
+      try { return tryRun(t1); } catch (e1) {
+        return eng.text(sqlMessages(question, card, { sql: t1, error: String(e1.message || e1) }), 300)
+          .then(function (t2) { return tryRun(t2); });
+      }
+    }).then(function (r) {
+      out.sql = '-- written by ' + eng.name + ', checked read-only\n' + r.sql;
+      out.title = 'custom query'; out.res = r.res;
+      return out;
+    }, function (e) {
+      out.modelError = 'SQL: ' + String(e && e.message || e);
+      out.plan.intent = 'search';
+      var q = toSQL(out.plan);
+      out.sql = q.sql; out.title = q.title; out.res = db.exec(q.sql);
+      return out;
+    });
+  }
+
   function understood(p) {
     var bits = [INTENT_TEXT[p.intent] || p.intent];
     if (p.drugs.length) bits.push('drug: ' + p.drugs.map(function (d) { return d.name; }).join(', '));
     if (p.params) bits.push('parameter: ' + p.params.label);
     if (p.genes.length) bits.push('gene: ' + p.genes.join(', '));
+    if (p.population) bits.push('population: ' + p.population.label);
+    if (p.year) bits.push('year ' + p.year.op + ' ' + p.year.y);
+    if (p.unresolved && p.unresolved.length) bits.push('not a name in the database: ' + p.unresolved.join(', '));
+    if (p.by) bits.push('read by ' + p.by);
     if (p.missing.length && p.drugs.length)
       bits.push('not extracted: ' + p.missing.map(function (m) { return m.name; }).join(', '));
     return bits;
@@ -446,7 +806,12 @@
 
   var api = { FAMILIES: FAMILIES, INTENT_TEXT: INTENT_TEXT, lexiconFromRows: lexiconFromRows,
               lexiconFromDB: lexiconFromDB, parse: parse, toSQL: toSQL, summarize: summarize,
-              understood: understood, norm: norm };
+              understood: understood, norm: norm,
+              // phase 2
+              PLAN_SCHEMA: PLAN_SCHEMA, MODEL_INTENTS: MODEL_INTENTS, needsModel: needsModel,
+              planMessages: planMessages, mergePlan: mergePlan, guardSQL: guardSQL, schemaCard: schemaCard,
+              sqlMessages: sqlMessages, explainMessages: explainMessages, checkExplanation: checkExplanation,
+              stripLimit: stripLimit, answer: answer };
   root.pkAsk = api;
   if (typeof module === 'object' && module.exports) module.exports = api;
 })(typeof window !== 'undefined' ? window : globalThis);

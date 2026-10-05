@@ -98,6 +98,11 @@
     .pkq-answer { margin: 8px 0 4px; padding: 8px 12px; border-left: 3px solid var(--theme-color, #0074d9);
                   background: #f8fafc; }
     .pkq-answer .pkq-meta { display: block; margin-top: 2px; }
+    .pkq-answer .pkq-explain { display: block; margin-top: 6px; font-style: italic; }
+    .pkq-llm { margin: 6px 0 2px; font-size: 13.5px; }
+    .pkq-llm summary { cursor: pointer; color: #475569; }
+    .pkq-llm select { font: inherit; font-size: 13px; padding: 4px 6px; max-width: 100%; }
+    .pkq-llm .pkq-row label { color: inherit; }
     #pkq-out table { font-size: 13px; border-collapse: collapse; margin-top: 10px; }
     #pkq-out th { text-align: left; background: #f1f5f9; position: sticky; top: 0; }
     #pkq-out th, #pkq-out td { padding: 4px 10px; border-bottom: 1px solid #e2e8f0;
@@ -646,21 +651,27 @@
 
       function sq(v) { return String(v).replace(/'/g, "''"); }
 
-      // ── ask in words (assets/js/pk-ask.js; IMPROVEMENTS_CHAT.md phase 1) ──────────────
-      // No language model: names from the database, a fixed intent catalogue, SQL templates.
-      // The generated SQL goes into the editor and runs like any other query, so what was
-      // asked, what ran and what came back are all on the page.
-      var LEX = null, askP = null;
-      function askScript() {
-        if (window.pkAsk) return Promise.resolve();
-        if (askP) return askP;
-        askP = new Promise(function (resolve, reject) {
-          var t = document.createElement('script'); t.src = 'assets/js/pk-ask.js';
-          t.onload = resolve; t.onerror = function () { askP = null; reject(new Error('could not load pk-ask.js')); };
+      // ── ask in words (assets/js/pk-ask.js; IMPROVEMENTS_CHAT.md phases 1–2) ───────────
+      // Keywords first: names from the database, a fixed intent catalogue, SQL templates. A
+      // reader may switch on a small language model (assets/js/pk-ask-llm.js, WebLLM on their
+      // own GPU) that reads what the keywords leave unread; it fills a plan, code still writes
+      // the query, and the numbers are the rows'. The SQL goes into the editor and runs like
+      // any other query, so what was asked, what ran and what came back are all on the page.
+      var LEX = null, ENGINE = null, BUSY = false;
+      var scripts = {};
+      function script(src) {
+        if (scripts[src]) return scripts[src];
+        scripts[src] = new Promise(function (resolve, reject) {
+          var t = document.createElement('script'); t.src = src;
+          t.onload = resolve;
+          t.onerror = function () { delete scripts[src]; reject(new Error('could not load ' + src)); };
           document.head.appendChild(t);
         });
-        return askP;
+        return scripts[src];
       }
+      function askScript() { return window.pkAsk ? Promise.resolve() : script('assets/js/pk-ask.js'); }
+      function llmScript() { return window.pkAskLLM ? Promise.resolve() : script('assets/js/pk-ask-llm.js'); }
+      function lexicon() { if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB); return LEX; }
       function chip(text, cls) {
         var c = document.createElement('span'); c.className = 'pkq-chip' + (cls ? ' ' + cls : '');
         c.textContent = text; return c;
@@ -668,13 +679,19 @@
       function ask(question) {
         var q = String(question || '').trim();
         var box = el('pkq-understood'), ans = el('pkq-answer');
-        if (!q || !DB || !box || !ans) return;
+        if (!q || !DB || !box || !ans || BUSY) return;
+        BUSY = true;
+        var explainBox = el('pkq-llm-explain');
+        if (ENGINE) { ans.hidden = false; ans.textContent = ENGINE.name + ' is reading the question…'; }
         askScript().then(function () {
-          if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB);
-          var plan = window.pkAsk.parse(q, LEX), out = window.pkAsk.toSQL(plan);
+          return window.pkAsk.answer(q, DB, lexicon(), {
+            engine: ENGINE, explain: !!(ENGINE && (!explainBox || explainBox.checked)) });
+        }).then(function (a) {
+          var plan = a.plan;
           box.innerHTML = '';
           window.pkAsk.understood(plan).forEach(function (b) { box.appendChild(chip(b)); });
           plan.corrected.forEach(function (c) { box.appendChild(chip('read “' + c.from + '” as ' + c.to, 'warn')); });
+          if (a.modelError) box.appendChild(chip('model: ' + a.modelError.slice(0, 80) + ' — answered from keywords', 'warn'));
           // an ambiguous name is a choice, never a guess: each option re-asks with it spelled out
           plan.suggestions.forEach(function (sg) {
             box.appendChild(chip('“' + sg.word + '” could be:', 'warn'));
@@ -685,25 +702,110 @@
               box.appendChild(b);
             });
           });
-          var sqlBox = el('pkq-sql');
-          sqlBox.dataset.kind = 'ask';                       // drug/parameter inputs leave it alone
-          sqlBox.value = '-- ' + q.replace(/\n/g, ' ') + '\n-- ' + out.title + '\n' + out.sql;
-          var res = null;
-          try { res = DB.exec(out.sql); } catch (e) { /* run() below reports it */ }
-          run();
+          if (a.sql) {
+            var sqlBox = el('pkq-sql');
+            sqlBox.dataset.kind = 'ask';                     // drug/parameter inputs leave it alone
+            sqlBox.value = '-- ' + q.replace(/\n/g, ' ') + '\n-- ' + a.title + '\n' + a.sql;
+            run();
+          } else {
+            el('pkq-out').innerHTML = ''; el('pkq-meta').textContent = '';
+          }
           ans.hidden = false;
           ans.innerHTML = '';
-          ans.appendChild(document.createTextNode(window.pkAsk.summarize(plan, res)));
+          ans.appendChild(document.createTextNode(a.summary));
+          if (a.explanation) {
+            var ex = document.createElement('span'); ex.className = 'pkq-explain';
+            ex.textContent = a.explanation;
+            ans.appendChild(ex);
+          }
           var m = document.createElement('span'); m.className = 'pkq-meta';
-          m.textContent = 'The SQL that produced this is in the editor below — change it and Run.';
+          m.textContent = (a.explanation ? 'Explanation by ' + ENGINE.name + '; its numbers were checked against the rows' +
+                           (a.dropped.length ? ' (' + a.dropped.length + ' sentence(s) dropped)' : '') + '. ' : '') +
+                          (a.sql ? 'The SQL that produced this is in the editor below — change it and Run.' : '');
           ans.appendChild(m);
           // the question is the link: #/query?ask=…
           try {
             var h = '#/query?ask=' + encodeURIComponent(q);
             if (location.hash !== h) history.replaceState(null, '', h);
           } catch (e) { /* a file:// page without history is fine */ }
-        }).catch(function (e) { status(String(e.message || e), true); });
+        }).catch(function (e) { status(String(e.message || e), true); })
+          .then(function () { BUSY = false; });
       }
+
+      // ── the optional model: opt-in, its size stated, nothing until the reader asks ─────────
+      var LLM_KEY = 'pkq-llm-model';
+      function llmStatus(msg) { var s = el('pkq-llm-status'); if (s) s.textContent = msg; }
+      function llmPanel() {
+        var sel = el('pkq-llm-model');
+        if (!sel || sel.options.length) return;
+        llmScript().then(function () { return window.pkAskLLM.support(); }).then(function (sup) {
+          var last = null;
+          try { last = localStorage.getItem(LLM_KEY); } catch (e) { /* storage blocked: no default */ }
+          window.pkAskLLM.MODELS.forEach(function (m) {
+            var o = document.createElement('option'); o.value = m.key;
+            o.textContent = m.label + ' — ' + m.gb + ' GB download, needs ~' + m.vram + ' GB of GPU memory';
+            if (m.key === last) o.selected = true;
+            sel.appendChild(o);
+          });
+          if (!sup.ok) {
+            el('pkq-llm-load').disabled = true;
+            llmStatus('Not available here: ' + sup.why + '. Asking in words still works without it.');
+            return;
+          }
+          return window.pkAskLLM.cached(sel.value).then(function (c) {
+            if (c) llmStatus('Already downloaded in this browser — enabling it loads it onto the GPU.');
+          });
+        }).catch(function (e) { llmStatus(String(e.message || e)); });
+      }
+      function llmLoad() {
+        var sel = el('pkq-llm-model'), btn = el('pkq-llm-load');
+        if (!sel || !btn) return;
+        btn.disabled = true;
+        llmScript().then(function () {
+          return window.pkAskLLM.load(sel.value, function (text) { llmStatus(text); });
+        }).then(function (eng) {
+          ENGINE = eng;
+          try { localStorage.setItem(LLM_KEY, sel.value); } catch (e) { /* a convenience only */ }
+          llmStatus(eng.name + ' is on. Questions the keywords cannot read go to it; ' +
+                    'the answers still come from the database.');
+          btn.textContent = 'Enabled';
+        }).catch(function (e) {
+          btn.disabled = false;
+          llmStatus('Could not load the model: ' + String(e.message || e));
+        });
+      }
+
+      // ── evaluation hook: query_eval.py --engine webllm drives the page's own code ─────────
+      window.pkAskEval = {
+        _s: { done: false, log: [], results: [] },
+        state: function () { return this._s; },
+        start: function (questions, modelKey, opts) {
+          var s = this._s = { done: false, log: [], results: [] };
+          Promise.all([askScript(), llmScript()]).then(function () {
+            return window.pkAskLLM.load(modelKey, function (t) { if (s.log.length < 400) s.log.push(t); });
+          }).then(function (eng) {
+            s.log.push('loaded ' + eng.id);
+            return questions.reduce(function (pr, q) {
+              return pr.then(function () {
+                var t0 = performance.now(), n0 = eng.calls.length;
+                return window.pkAsk.answer(q, DB, lexicon(), { engine: eng, explain: !!opts.explain, always: !!opts.always })
+                  .then(function (a) {
+                    var r = a.res && a.res[0];
+                    s.results.push({ question: q, error: null, ms: Math.round(performance.now() - t0),
+                      intent: a.plan.intent, by: a.by, drugs: a.plan.drugs.map(function (d) { return d.slug; }),
+                      params: a.plan.params ? a.plan.params.codes : null, model_plan: a.modelPlan || null,
+                      model_error: a.modelError || null, sql: a.sql || null, rows: r ? r.values.length : 0,
+                      summary: a.summary, explanation: a.explanation, dropped: a.dropped,
+                      calls: eng.calls.slice(n0) });
+                  }, function (e) { s.results.push({ question: q, error: String(e && e.stack || e) }); })
+                  .then(function () { s.log.push(s.results.length + '/' + questions.length + ' ' + q); });
+              });
+            }, Promise.resolve());
+          }).catch(function (e) { s.log.push('ERROR ' + String(e && e.stack || e)); })
+            .then(function () { s.done = true; });
+          return true;
+        }
+      };
       function askFromHash() {
         var m = /[?&]ask=([^&]*)/.exec(location.hash || '');
         if (!m) return false;
@@ -810,6 +912,10 @@
             el('pkq-sql').value = (kind === 'param') ? buildParam() : CANNED[kind];
             run();
           });
+          // the model panel fills itself the first time it is opened, not before
+          document.addEventListener('toggle', function (ev) {
+            if (ev.target && ev.target.id === 'pkq-llm' && ev.target.open) llmPanel();
+          }, true);
           document.addEventListener('input', function (ev) {
             var t = ev.target;
             if (!t || (t.id !== 'pkq-drug' && t.id !== 'pkq-code')) return;
@@ -827,6 +933,7 @@
           document.addEventListener('click', function (ev) {
             if (ev.target && ev.target.id === 'pkq-run') run();
             if (ev.target && ev.target.id === 'pkq-askbtn') ask((el('pkq-ask') || {}).value);
+            if (ev.target && ev.target.id === 'pkq-llm-load') llmLoad();
             var c = ev.target.closest && ev.target.closest('button.pkq-chip[data-ask]');
             if (c) { if (el('pkq-ask')) el('pkq-ask').value = c.dataset.ask; ask(c.dataset.ask); }
           });

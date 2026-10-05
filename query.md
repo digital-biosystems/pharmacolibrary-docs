@@ -7,9 +7,10 @@ Every extracted parameter, with the paper it came from. The whole database is a
 anywhere, and there is no server to be down.
 
 Ask in words, or write SQL. A question is matched against the database's own names — drugs,
-brands and synonyms, parameters, genes — and turned into a query; the answer is the rows that
-come back, and the SQL it ran is in the editor below, to read or change. No language model is
-involved, so nothing is made up: what is not in the extraction comes back as no rows.
+brands and synonyms, parameters, genes, who was studied — and turned into a query; the answer
+is the rows that come back, and the SQL it ran is in the editor below, to read or change. No language model is
+involved unless you switch one on below, and even then it only reads the question: what is
+not in the extraction comes back as no rows. This is literature data, not medical advice.
 
 <div id="pkq">
   <div id="pkq-status" class="pkq-status">Loading the query engine…</div>
@@ -18,6 +19,16 @@ involved, so nothing is made up: what is not in the extraction comes back as no 
       <input id="pkq-ask" type="search" placeholder="clearance of metformin · CYP2C19 and clopidogrel · PD models of warfarin" autocomplete="off" aria-label="Ask a question about the data">
       <button id="pkq-askbtn" class="pkq-btn pkq-run" type="button">Ask</button>
     </p>
+    <details id="pkq-llm" class="pkq-llm">
+      <summary>Read questions with a language model — optional, runs in your browser</summary>
+      <p class="pkq-meta">Keywords answer most questions. A small model reads the rest: paraphrases ("how fast is it cleared"), counts and rankings (it writes the SQL, which is checked read-only). It runs on your own GPU (WebGPU); the weights download once from Hugging Face and stay in this browser. It never supplies a number: values come from the database, and an explanation sentence with a number the rows do not contain is dropped.</p>
+      <p class="pkq-row">
+        <select id="pkq-llm-model" aria-label="Model"></select>
+        <button id="pkq-llm-load" class="pkq-btn" type="button">Download and enable</button>
+        <label><input id="pkq-llm-explain" type="checkbox"> add a short explanation (its numbers are checked against the rows)</label>
+      </p>
+      <p id="pkq-llm-status" class="pkq-meta" aria-live="polite"></p>
+    </details>
     <div id="pkq-understood" class="pkq-chips" aria-live="polite"></div>
     <p id="pkq-answer" class="pkq-answer" aria-live="polite" hidden></p>
     <p class="pkq-canned">
