@@ -52,6 +52,12 @@ Download: **[pharmacolibrary.sqlite](data/latest.json)**.
 
 Download: **[knowledge.sqlite](data/knowledge-latest.json)**.
 
+**Simulation**: a question with a drug and a regimen ("tolvaptan 120 mg daily after 1 week",
+"500 mg twice daily for 3 days", "single dose of 1 g", "(model Lanke_2019)") runs the drug's PK
+models (up to 5, from `record.model_id`) with each paper's fitted parameters on the record's
+WebAssembly template (`assets/js/pk-sim.js`, horizon ≤ 28 days); the answer gives the value at the
+end, the peak, the trough over the last interval and the range across the models.
+
 **Language model** (optional): WebLLM, Qwen3.5 0.8B / 4B / 9B on WebGPU, weights cached in
 IndexedDB. Per question: up to 6 passages (~3,200 characters, BM25 within the named drugs) go into
 the prompt, are cited as [n] and listed under the answer. A sentence with a number found in neither

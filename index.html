@@ -104,6 +104,13 @@
       background: #f1f5f9; color: #64748b; font-size: 11px; line-height: 1.35; white-space: pre-wrap; }
     .pkq-thinking-box[hidden] { display: none; }
     .pkq-thinking-label { font-weight: 600; color: #475569; }
+    .pkq-sim { margin: 8px 0 0; }
+    .pkq-simchart { width: 100%; max-width: 640px; height: auto; display: block; font-size: 11px; fill: #64748b; }
+    .pkq-simchart .grid { stroke: #e2e8f0; stroke-width: 1; }
+    .pkq-simchart path { fill: none; stroke-linejoin: round; }
+    .pkq-simchart path.main { stroke: #2563eb; stroke-width: 2; }
+    .pkq-simchart path.other { stroke: #94a3b8; stroke-width: 1; opacity: .7; }
+    .pkq-sim-main { color: #2563eb; } .pkq-sim-other { color: #94a3b8; }
     .pkq-sources { margin: 4px 0 0; padding-left: 22px; font-size: 12.5px; color: #475569; }
     .pkq-sources li { margin: 0 0 6px; }
     .pkq-source-text { color: #64748b; font-size: 12px; line-height: 1.4; }
@@ -574,7 +581,8 @@
       var DB = null, loading = false, LEX = null, ENGINE = null, BUSY = false;
       var TURNS = [];                 // turn elements, re-attached when docsify re-renders the page
       var EXAMPLES = ['clearance of metformin', 'What is the difference between CL and CL/F?', 'CYP2C19 and clopidogrel',
-                      'PD models of warfarin', 'clearance of midazolam in children', 'papers on semaglutide after 2023'];
+                      'PD models of warfarin', 'clearance of midazolam in children', 'papers on semaglutide after 2023',
+                      'concentration of tolvaptan 120 mg daily after 1 week'];
       var HIST = [];                  // {q, a} of earlier turns, for follow-up questions in words
       var GLOSS = null;               // the glossary's load, once
 
@@ -655,6 +663,66 @@
         return scripts[src];
       }
       function askScript() { return window.pkAsk ? Promise.resolve() : script('assets/js/pk-ask.js'); }
+      function simScript() { return window.pkSim ? Promise.resolve() : script('assets/js/pk-sim.js'); }
+      // "simulate" answers: one record's model, the reader's regimen (pk-sim.js). The parameters
+      // are the record page's own file, the template the Simulation tab's WebAssembly build.
+      function fetchJson(url) {
+        return fetch(url).then(function (r) { if (!r.ok) throw new Error(url + ': ' + r.status); return r.json(); });
+      }
+      function simulateRow(row, reg) {
+        var base = 'drugs/' + row.drug_slug + '/' + row.model + '/';
+        return simScript().then(function () { return fetchJson(base + row.model + '_params.json'); }).then(function (params) {
+          return fetchJson('assets/fmu/' + params.template + '.vr.json').then(function (meta) {
+            return window.pkSim.load(meta, 'assets/fmu/' + params.template + '.js').then(function (M) {
+              // a week of steps is 0.2–1.5 s of main thread per model: let the page paint between models
+              return new Promise(function (ok) { setTimeout(function () { ok(M); }, 0); });
+            }).then(function (M) {
+              var run = window.pkSim.withRegimen(params, meta, reg), res = window.pkSim.run(M, meta, run);
+              var o = run.observables.filter(function (x) { return x in res.final; })[0];
+              return { observable: o, final: res.final[o], peak: res.peak[o], trough: res.trough[o],
+                       stop_h: res.stop / 3600, t_h: res.t.map(function (x) { return x / 3600; }),
+                       series: res.series, params: run, href: '#/drugs/' + row.drug_slug + '/' + row.model };
+            });
+          });
+        });
+      }
+      // the curves: the answer's model in colour, the others grey; time in h, or days past 72 h
+      function simChart(sim) {
+        var NS = 'http://www.w3.org/2000/svg', W = 640, H = 260, L = 56, R = 12, T = 12, B = 34;
+        var u = sim.unit === 'mg/L' ? 1e3 : 1e6, days = sim.runs[0].stop_h > 72;
+        var xmax = sim.runs[0].stop_h, ymax = 0;
+        sim.runs.forEach(function (r) { r.series[r.observable].forEach(function (v) { ymax = Math.max(ymax, v * u); }); });
+        ymax = ymax || 1;
+        var sx = function (h) { return L + (W - L - R) * h / xmax; }, sy = function (y) { return H - B - (H - T - B) * y / ymax; };
+        var svg = document.createElementNS(NS, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); svg.setAttribute('class', 'pkq-simchart');
+        svg.setAttribute('role', 'img'); svg.setAttribute('aria-label', 'Simulated concentration over time');
+        var el2 = function (tag, at, text) {
+          var e = document.createElementNS(NS, tag);
+          Object.keys(at).forEach(function (k) { e.setAttribute(k, at[k]); });
+          if (text != null) e.textContent = text;
+          svg.appendChild(e); return e;
+        };
+        for (var i = 0; i <= 4; i++) {
+          var yv = ymax * i / 4;
+          el2('line', { x1: L, x2: W - R, y1: sy(yv), y2: sy(yv), class: 'grid' });
+          el2('text', { x: L - 6, y: sy(yv) + 4, 'text-anchor': 'end' }, +yv.toPrecision(2));
+        }
+        // whole days (every day up to two weeks, then weekly), or hours in steps of 1/2/3/6/12/24
+        var span = days ? xmax / 24 : xmax, tick = days ? (span <= 14 ? 1 : 7)
+          : [1, 2, 3, 6, 12, 24].filter(function (x) { return span / x <= 8; })[0] || 24;
+        for (var xv = 0; xv <= span + 1e-9; xv += tick)
+          el2('text', { x: sx(days ? xv * 24 : xv), y: H - B + 16, 'text-anchor': 'middle' }, String(+xv.toFixed(2)));
+        el2('text', { x: (L + W - R) / 2, y: H - 4, 'text-anchor': 'middle' }, days ? 'time (days)' : 'time (h)');
+        el2('text', { x: 12, y: (T + H - B) / 2, 'text-anchor': 'middle', transform: 'rotate(-90 12 ' + (T + H - B) / 2 + ')' }, sim.unit);
+        sim.runs.slice().reverse().forEach(function (r, k) {
+          var ys = r.series[r.observable];
+          var d = r.t_h.map(function (t, j) { return (j ? 'L' : 'M') + sx(t).toFixed(1) + ' ' + sy(ys[j] * u).toFixed(1); }).join('');
+          var first = k === sim.runs.length - 1;
+          el2('path', { d: d, class: first ? 'main' : 'other' });
+        });
+        return svg;
+      }
       function llmScript() { return window.pkAskLLM ? Promise.resolve() : script('assets/js/pk-ask-llm.js'); }
       function markdownScript() {
         if (window.DOMPurify && typeof window.DOMPurify.sanitize === 'function') return Promise.resolve();
@@ -740,7 +808,7 @@
         }).then(function (kdb) {
           if (answerEngine) text.textContent = answerEngine.name + ' is reading the question…';
           return window.pkAsk.answer(q, DB, lexicon(), {
-            engine: answerEngine, explain: !!answerEngine, history: HIST.slice(-3), knowledge: kdb,
+            engine: answerEngine, explain: !!answerEngine, history: HIST.slice(-3), knowledge: kdb, simulate: simulateRow,
             onText: function (partial) {
               text.className = 'pkq-text streaming';
               renderMarkdown(text, partial);   // parse Markdown, then sanitize before insertion
@@ -810,6 +878,29 @@
               (gl.length ? '; the why draws on the site glossary — ' + titles : '') +
               (stats ? ' · ' + stats : '') + '.'));
           }
+          // a simulation: the curves, the numbers per model, the record's own simulator
+          if (ans.sim && ans.sim.runs.length) {
+            var fig = node('div', 'pkq-sim');
+            fig.appendChild(simChart(ans.sim));
+            var leg = node('div', 'pkq-sub');
+            leg.appendChild(node('span', 'pkq-sim-main', '— ' + ans.sim.runs[0].row.model));
+            if (ans.sim.runs.length > 1) leg.appendChild(node('span', 'pkq-sim-other', '  — ' + (ans.sim.runs.length - 1) + ' other model(s)'));
+            fig.appendChild(leg);
+            var tb2 = node('table'), hr = node('tr'), f = ans.sim.unit === 'mg/L' ? 1e3 : 1e6;
+            ['model', 'paper', 'population', 'at end (' + ans.sim.unit + ')', 'peak', 'trough'].forEach(function (h) { hr.appendChild(node('th', null, h)); });
+            tb2.appendChild(hr);
+            ans.sim.runs.forEach(function (r) {
+              var tr2 = node('tr'), td = node('td'), lk = node('a', null, r.row.model);
+              lk.href = r.href; lk.title = 'open this record’s simulator'; td.appendChild(lk); tr2.appendChild(td);
+              [r.row.paper, r.row.population || '', +(r.final * f).toPrecision(3), +(r.peak * f).toPrecision(3),
+               +(r.trough * f).toPrecision(3)].forEach(function (x) { tr2.appendChild(node('td', null, String(x))); });
+              tb2.appendChild(tr2);
+            });
+            var tw = node('div', 'pkq-table'); tw.appendChild(tb2); fig.appendChild(tw);
+            fig.appendChild(node('span', 'pkq-sub', 'Each model runs with its paper’s fitted parameters and this regimen; ' +
+              'a regimen outside the doses the paper studied is an extrapolation.'));
+            a.appendChild(fig);
+          }
           // the passages the model was shown, numbered as it cites them
           if (ans.explanation && ans.passages && ans.passages.length) {
             var src = node('details', 'pkq-sqlbox'), ol = node('ol', 'pkq-sources');
@@ -829,7 +920,8 @@
           if (ans.sql) {
             var box = node('div', 'pkq-table');
             a.appendChild(box);
-            table(ans.res, box);
+            if (ans.sim && ans.sim.runs.length) box.hidden = true;   // the simulation table lists the same models
+            else table(ans.res, box);
             var det = node('details', 'pkq-sqlbox'), sum = node('summary', null, 'SQL');
             var ta = node('textarea'); ta.value = ans.sql; ta.spellcheck = false;
             var row = node('div', 'pkq-row'), run = node('button', 'pkq-btn', 'Run'), meta = node('span', 'pkq-meta');

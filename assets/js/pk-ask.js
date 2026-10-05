@@ -104,6 +104,7 @@
     gapfill: 'values a review supplied (not the paper)',
     search: 'search of names',
     explain: 'a question about meaning, not about the data',
+    simulate: 'a simulation of the dosing regimen asked for',
     missing: 'a drug with nothing extracted yet',
     choose: 'which drug?',
     out_of_scope: 'not a question about the data',
@@ -292,6 +293,50 @@
     return left.length <= 2;
   }
 
+  // ── simulate: a regimen in the question → the record's model run for it (pk-sim.js) ───────
+  // "final concentration of tolvaptan 120 mg daily after 1 week": the dose, the interval and the
+  // horizon are read by code; the model, its fitted parameters and the numbers are the KB's.
+  var SIM_CUE = /\b(simulat\w*|concentrations?|levels?|exposure|cmax|cmin|trough|peak|plasma|profile|curve)\b/;
+  var NUM_WORDS = { a: 1, an: 1, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8,
+                    nine: 9, ten: 10, twelve: 12, fourteen: 14 };
+  var DUR_H = { h: 1, hr: 1, hrs: 1, hour: 1, hours: 1, d: 24, day: 24, days: 24, week: 168, weeks: 168,
+                month: 720, months: 720 };
+  var MAX_SIM_H = 28 * 24;
+  function parseRegimen(raw) {
+    var t = String(raw || '').toLowerCase().replace(/[–—]/g, '-').replace(/µ/g, 'u');
+    var r = {}, m;
+    m = /(\d+(?:\.\d+)?)\s*-?\s*(mg|milligrams?|g|grams?|mcg|ug|micrograms?)\b/.exec(t);
+    if (m) r.dose_mg = +m[1] * ({ g: 1000, gram: 1000, grams: 1000, mcg: 1e-3, ug: 1e-3, microgram: 1e-3,
+                                  micrograms: 1e-3 }[m[2]] || 1);
+    if (/\b(once (a |per )?week|weekly|every week)\b/.test(t)) r.interval_h = 168;
+    else if (/\b(four times (a |per )?day|qid|q6h)\b/.test(t)) r.interval_h = 6;
+    else if (/\b(three times (a |per )?day|thrice daily|tid|q8h)\b/.test(t)) r.interval_h = 8;
+    else if (/\b(twice (a |per )?day|twice daily|bid|q12h)\b/.test(t)) r.interval_h = 12;
+    else if (/\b(once (a |per )?day|once daily|daily|every day|per day|a day|qd|q24h)\b/.test(t)) r.interval_h = 24;
+    m = /\bevery (\d+(?:\.\d+)?|other) ?(h|hrs?|hours?|days?|weeks?)\b/.exec(t) || /\bq(\d+)h\b/.exec(t);
+    if (m) r.interval_h = (m[1] === 'other' ? 2 : +m[1]) * (m[2] ? DUR_H[m[2]] || 24 : 1);
+    m = /\b(?:after|for|over|during|within|at|until|by)\s+(?:the end of\s+)?(?:(\d+(?:\.\d+)?)|(a|an|one|two|three|four|five|six|seven|eight|nine|ten|twelve|fourteen))\s*-?\s*(h|hrs?|hours?|d|days?|weeks?|months?)\b/.exec(t) ||
+        /\b(?:on|at|by) day (\d+)\b/.exec(t);
+    if (m) r.duration_h = m[3] ? (m[1] ? +m[1] : NUM_WORDS[m[2]]) * DUR_H[m[3]] : +m[1] * 24;
+    m = /\b(?:after|for)\s+(\d+|two|three|four|five|six|seven|eight|nine|ten)\s+doses\b/.exec(t);
+    if (m && !r.duration_h && r.interval_h) r.duration_h = (+m[1] || NUM_WORDS[m[1]]) * r.interval_h;
+    if (/\bsingle dose\b|\bone dose\b/.test(t)) r.single = true;
+    if (r.duration_h > MAX_SIM_H) { r.capped_from_h = r.duration_h; r.duration_h = MAX_SIM_H; }
+    r.quantity = /\b(peak|cmax|maximum|highest)\b/.test(t) ? 'peak' : /\b(trough|cmin|minimum|lowest)\b/.test(t) ? 'trough' : 'final';
+    // the record the reader picked: '(model Tolvaptan_Lanke2019_reference)' or a paper 'Lanke_2019'
+    m = /\bmodel ([a-z0-9_]+)\b/.exec(t);
+    if (m) r.model = m[1];
+    return (r.dose_mg || r.interval_h || r.duration_h) ? r : null;
+  }
+  function isSimulate(p) {
+    if (!p.drugs.length) return false;
+    var reg = parseRegimen(p.question || p.text);
+    if (!reg) return false;
+    if (!/\bsimulat/.test(p.text) && !(SIM_CUE.test(p.text) && (reg.dose_mg || reg.duration_h))) return false;
+    p.regimen = reg;
+    return true;
+  }
+
   function intentOf(p) {
     var t = p.text;
     if (isExplain(p)) return 'explain';
@@ -299,6 +344,7 @@
     if (p.missing.length && !p.drugs.length) return 'missing';
     // a name that could be several drugs: ask, rather than answer for all drugs
     if (p.suggestions.length && !p.drugs.length) return 'choose';
+    if (isSimulate(p)) return 'simulate';
     if (CUES.gapfill.test(t)) return 'gapfill';
     if (CUES.disagree.test(t)) return 'disagree';
     if (p.genes.length || CUES.pgx.test(t)) return 'pgx';
@@ -405,6 +451,23 @@
         sql = "SELECT parameter_id AS code, name, category, units, synonyms FROM qcode\n" +
               "WHERE parameter_id IN (" + inList(tc) + ")\nORDER BY parameter_id LIMIT 50;";
         title = 'ontology entries — ' + p.terms.map(function (x) { return x.label; }).join(', ');
+        break;
+      case 'simulate':
+        // the drug's PK records that have a runnable model, the most usable first: extracted
+        // before unreviewed, the asked population (or healthy subjects) before others, a paper's
+        // own population before a review's typical values
+        var slug = p.drugs[0].slug, popOrder = p.population
+          ? "CASE WHEN " + p.population.like.map(function (l) { return "lower(r.population) LIKE '" + sq(l) + "'"; }).join(' OR ') + " THEN 0 ELSE 1 END"
+          : "CASE WHEN lower(r.population) LIKE '%healthy%' THEN 0 ELSE 1 END";
+        sql = "SELECT d.generic_name AS drug, r.model_id AS model, r.stem AS paper, r.population, r.status,\n" +
+              "       r.drug_slug" + FROM + "\n" +
+              "WHERE r.domain = 'pk' AND r.model_id IS NOT NULL AND coalesce(r.status, '') <> 'rejected'\n" +
+              "  AND r.drug_slug = '" + sq(slug) + "'\n" +
+              "ORDER BY CASE coalesce(r.status, '') WHEN 'extracted' THEN 0 WHEN '' THEN 1 ELSE 2 END,\n" +
+              "         " + popOrder + ",\n" +
+              "         CASE WHEN lower(coalesce(r.population, '')) LIKE '%review%' THEN 1 ELSE 0 END, r.stem\n" +
+              "LIMIT 20;";
+        title = 'models to simulate — ' + p.drugs[0].name;
         break;
       case 'choose':
         var opts = [];
@@ -570,6 +633,7 @@
   // Does the keyword reading leave something unread that a model could read?
   function needsModel(p) {
     if (p.intent === 'explain') return false;      // answered in words already; nothing to look up
+    if (p.intent === 'simulate') return false;     // the regimen is read by code; nothing for a model to fill
     if (p.corrected.length) return true;          // 'weather' read as feather: let the model weigh in
     if (p.intent === 'missing' || p.intent === 'choose') return false;
     if (p.intent === 'search') return true;
@@ -631,7 +695,7 @@
     });
   }
   // Intents the keywords read from an explicit cue; the model does not overrule them.
-  var LOCKED = ['gapfill', 'disagree', 'pgx', 'dose_response', 'param_values', 'missing', 'choose'];
+  var LOCKED = ['simulate', 'gapfill', 'disagree', 'pgx', 'dose_response', 'param_values', 'missing', 'choose'];
 
   function mergePlan(p, m, lex, by) {
     var q = JSON.parse(JSON.stringify(p));               // the keyword plan is kept as it was
@@ -719,6 +783,14 @@
   var EXPLAIN_COLS = ['drug', 'parameter', 'value', 'unit', 'compound', 'population', 'paper', 'gene', 'mechanism',
                       'response', 'model_family', 'driver_kind', 'year', 'title', 'n', 'spread', 'domain', 'status'];
   function explainMessages(question, plan, res, summary, general, entries, passages) {
+    // a simulation: the result is one paragraph of the simulator's numbers; the rows (the models
+    // that could run) only distract a small model from it
+    if (plan.intent === 'simulate') return [
+      { role: 'system', content: 'Restate the simulation result for a pharmacologist in two to four sentences: the ' +
+        'regimen, the value the question asks for, the model it comes from and the range the other models give. ' +
+        'Say that the values are simulated, not measured. Use only the numbers in the result; no advice, no disclaimer.' },
+      { role: 'user', content: 'Simulation result: ' + summary + '\n\nQuestion: ' + question }
+    ];
     var ref = (entries || []).map(function (e) { return '[' + e.title + '] ' + e.text; }).join('\n');
     var r = res && res[0];
     var cols = r ? r.columns.filter(function (c) { return EXPLAIN_COLS.indexOf(c) >= 0; }) : [];
@@ -741,6 +813,7 @@
         '. Use only numbers that appear in the summary or the rows; do not compute averages. ' +
         (general ? 'Say which part comes from general knowledge rather than the data. ' : '') +
         'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ' +
+
         'No personal dosing advice; do not add a disclaimer, the page shows one.' +
         (ref ? '\nFor the why or how, the site glossary says (use it, do not contradict it; if it does not ' +
                'explain the case, say what the data show and that the reason is not in the data):\n' + ref : '') },
@@ -1122,6 +1195,8 @@
       out.res = q.sql ? db.exec(q.sql) : [];
       return out;
     }).then(function (o) {
+      return o.plan.intent === 'simulate' ? runSimulation(o, opts) : o;
+    }).then(function (o) {
       if (o.general) return o;
       if (o.plan.intent === 'explain') { o.summary = summarize(o.plan, o.res); return o; }
       o.summary = o.summary || summarize(o.plan, o.res);
@@ -1129,7 +1204,8 @@
       if (!eng || !opts.explain || ['missing', 'choose', 'out_of_scope'].indexOf(o.plan.intent) >= 0) return o;
       // the passages that bear on the question: with them the prose may answer even where the
       // rows are empty or only a name search ('how is metformin eliminated')
-      var passages = retrieve(opts.knowledge, o.plan);
+      // a simulation's numbers are the simulator's: passages would only invite a citation for them
+      var passages = o.plan.intent === 'simulate' ? [] : retrieve(opts.knowledge, o.plan);
       var rows = o.res && o.res[0] && o.res[0].values.length;
       if (!passages.length && (!rows || o.plan.intent === 'search')) return o;   // nothing to say in prose
       o.passages = passages;
@@ -1142,9 +1218,76 @@
         why ? 700 : 500,
         opts.onText, opts.onThinking).then(function (t) {
         var c = checkExplanation(t, o.res, o.summary + ' ' + passageText(passages), question, 12, why, passages);
+        // the simulator answered; a model that says it does not know adds nothing to that
+        if (o.plan.intent === 'simulate' && NO_KNOWLEDGE.test(c.text)) c = { text: '', dropped: [c.text] };
         o.explanation = c.text || null; o.dropped = c.dropped;
         return o;
       }, function (e) { o.modelError = String(e && e.message || e); return o; });
+    });
+  }
+
+  // ── simulate: run the candidate models (opts.simulate, the page's or the test's runner) ─────
+  // The first model the SQL ranks is the answer; the others (up to four more) give the spread
+  // a reader needs to judge it — five tolvaptan models put 120 mg daily at 0.03–0.11 mg/L
+  // after a week. Every number in the summary is the simulator's; the prose may only repeat them.
+  var SIM_MODELS = 5;
+  function sig(x) { return fmt(+x.toPrecision(3)); }
+  function hoursText(h) {
+    return h % 168 === 0 ? (h / 168) + (h === 168 ? ' week' : ' weeks') :
+           h % 24 === 0 ? (h / 24) + (h === 24 ? ' day' : ' days') : sig(h) + ' h';
+  }
+  function concUnit(peakKgM3) {             // kg/m3 → mg/L, or µg/L when mg/L would have no digits
+    return peakKgM3 * 1e3 >= 0.1 ? { unit: 'mg/L', f: 1e3 } : { unit: 'µg/L', f: 1e6 };
+  }
+  function runSimulation(o, opts) {
+    var r = o.res && o.res[0], reg = o.plan.regimen || {};
+    var rows = r ? r.values.map(function (v) {
+      var row = {}; r.columns.forEach(function (c, i) { row[c] = v[i]; }); return row;
+    }) : [];
+    var seen = {};
+    rows = rows.filter(function (x) { return x.model && !seen[x.model] && (seen[x.model] = 1); });
+    if (reg.model) {                       // the reader picked one: it goes first
+      var pick = rows.filter(function (x) { return x.model.toLowerCase() === reg.model ||
+                                                    String(x.paper).toLowerCase() === reg.model; });
+      rows = pick.concat(rows.filter(function (x) { return pick.indexOf(x) < 0; }));
+    }
+    var drug = o.plan.drugs[0].name;
+    if (!rows.length) { o.summary = 'No simulation model for ' + drug + ' in the knowledge base.'; return o; }
+    if (typeof opts.simulate !== 'function') {
+      o.summary = rows.length + ' model(s) for ' + drug + ' can run this regimen; the simulation runs on the Query page.';
+      return o;
+    }
+    var runs = [], errors = [];
+    var next = rows.slice(0, SIM_MODELS).reduce(function (chain, row) {
+      return chain.then(function () {
+        return Promise.resolve(opts.simulate(row, reg)).then(function (res) {
+          if (res) runs.push(Object.assign({ row: row }, res));
+        }, function (e) { errors.push(row.model + ': ' + String(e && e.message || e)); });
+      });
+    }, Promise.resolve());
+    return next.then(function () {
+      o.sim = { regimen: reg, runs: runs, errors: errors, drug: drug };
+      if (!runs.length) {
+        o.summary = 'The models for ' + drug + ' could not be run here' + (errors.length ? ' (' + errors[0] + ')' : '') + '.';
+        return o;
+      }
+      var a = runs[0], u = concUnit(a.peak), key = reg.quantity || 'final';
+      var val = function (run) { return sig(run[key] * u.f); };
+      var count = a.params && a.params.parameters && a.params.parameters.adminCount;
+      var dose = reg.dose_mg ? sig(reg.dose_mg) + ' mg' : 'the paper’s dose (' + sig(a.params.parameters.adminMass * 1e6) + ' mg)';
+      var how = reg.interval_h && !reg.single ? ' every ' + sig(reg.interval_h) + ' h' + (count ? ' (' + count + ' doses)' : '') : ' once';
+      var at = hoursText(a.stop_h);
+      o.sim.unit = u.unit; o.sim.quantity = key;
+      o.summary = drug + ' ' + dose + how + ', simulated for ' + at + ': ' +
+        (key === 'peak' ? 'peak concentration ' : key === 'trough' ? 'trough over the last interval ' : 'concentration at ' + at + ' ') +
+        val(a) + ' ' + u.unit + (key !== 'peak' ? '; peak ' + sig(a.peak * u.f) + ' ' + u.unit : '') +
+        (key === 'final' && reg.interval_h ? ', trough over the last interval ' + sig(a.trough * u.f) + ' ' + u.unit : '') +
+        '. Model ' + a.row.model + ' (' + a.row.paper + (a.row.population ? '; ' + a.row.population : '') + ').' +
+        (runs.length > 1 ? ' The other ' + (runs.length - 1) + ' model(s) give ' +
+          sig(Math.min.apply(null, runs.slice(1).map(function (x) { return x[key]; })) * u.f) + '–' +
+          sig(Math.max.apply(null, runs.slice(1).map(function (x) { return x[key]; })) * u.f) + ' ' + u.unit + '.' : '') +
+        (reg.capped_from_h ? ' The horizon was capped at ' + hoursText(MAX_SIM_H) + '.' : '');
+      return o;
     });
   }
 
@@ -1212,7 +1355,7 @@
               planMessages: planMessages, mergePlan: mergePlan, guardSQL: guardSQL, schemaCard: schemaCard,
               sqlMessages: sqlMessages, explainMessages: explainMessages, checkExplanation: checkExplanation,
               stripLimit: stripLimit, answer: answer, generalMessages: generalMessages, checkGeneral: checkGeneral,
-              withGlossary: withGlossary, glossaryFor: glossaryFor,
+              withGlossary: withGlossary, glossaryFor: glossaryFor, parseRegimen: parseRegimen,
               // retrieval
               retrieve: retrieve, ragTerms: ragTerms, passageBlock: passageBlock };
   root.pkAsk = api;
