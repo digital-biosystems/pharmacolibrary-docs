@@ -733,7 +733,8 @@
         '. Use only numbers that appear in the summary or the rows; do not compute averages. ' +
         (general ? 'Say which part comes from general knowledge rather than the data. ' : '') +
         (passages && passages.length
-          ? 'Answer mainly from the passages; cite a passage as [1] after a claim taken from it. Only if neither the ' +
+          ? 'Use both the passages and the rows, and cover every distinct point they give that answers the question ' +
+            'in your own words, without listing the rows one by one; cite a passage as [1] after a claim taken from it. Only if neither the ' +
             'passages nor the rows say anything about the question, reply "I have no knowledge about it". '
           : 'If the result does not answer the question, say "I have no knowledge about it" rather than guessing. ') +
         'No personal dosing advice; do not add a disclaimer, the page shows one.' +
@@ -920,7 +921,7 @@
     [/^(bound|binding|protein)/, ['protein', 'binding']],
     [/^(guideline|recommend|cpic|dpwg)/, ['guideline', 'recommendation', 'recommends']],
     [/^(side|adverse|toxic)/, ['adverse', 'toxicity']],
-    [/^(indicat|treat|used)/, ['indicated', 'treatment']]
+    [/^(indicat|treat|used?$|diagnos|disease|disorder|condition|therap)/, ['indication', 'indicated', 'treatment']]
   ];
   function ragTerms(p) {
     var named = {};
@@ -928,11 +929,13 @@
     var seen = {}, out = [];
     p.text.split(' ').concat(p.genes.map(function (g) { return g.toLowerCase(); })).forEach(function (w) {
       w = w.replace(/[^a-z0-9]/g, '');
-      if (w.length < 3 || RAG_STOP.indexOf(w) >= 0 || named[w] || seen[w] || /^\d+$/.test(w)) return;
-      seen[w] = 1; out.push(w);
+      if (w.length < 3 || named[w] || /^\d+$/.test(w)) return;
+      // a stop word may still say what is asked ('what is it used for' → indication)
       RAG_SYNONYMS.forEach(function (x) {
         if (x[0].test(w)) x[1].forEach(function (y) { if (!seen[y]) { seen[y] = 1; out.push(y); } });
       });
+      if (RAG_STOP.indexOf(w) >= 0 || seen[w]) return;
+      seen[w] = 1; out.push(w);
     });
     return out.slice(0, 16);
   }
@@ -960,8 +963,8 @@
     }) : [];
   }
   // what a drug's passages say first when the question's words match none of them
-  var DRUGBANK_ORDER = ['description', 'mechanism_of_action', 'metabolism', 'half_life', 'clearance',
-                        'absorption', 'volume_of_distribution', 'protein_binding', 'indication', 'pharmacodynamics'];
+  var DRUGBANK_ORDER = ['description', 'indication', 'mechanism_of_action', 'metabolism', 'half_life', 'clearance',
+                        'absorption', 'volume_of_distribution', 'protein_binding', 'pharmacodynamics'];
   function retrieve(kdb, p, opts) {
     if (!kdb) return [];
     opts = opts || {};
@@ -1009,8 +1012,10 @@
     var max = opts.max || (slugs.length ? 6 : 3);
     for (var i = 0; i < hits.length && out.length < max; i++) {
       var h = hits[i], n = h.text.length + h.title.length + 30;
-      if ((perSource[h.source] || 0) >= 2 || used + n > budget) continue;
-      perSource[h.source] = (perSource[h.source] || 0) + 1;
+      // two chunks of one document at most; DrugBank's fields are separate documents
+      var doc = h.source + '|' + h.title;
+      if ((perSource[doc] || 0) >= 2 || used + n > budget) continue;
+      perSource[doc] = (perSource[doc] || 0) + 1;
       used += n; out.push(h);
     }
     return out;
