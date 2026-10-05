@@ -796,20 +796,42 @@
   }
   // a general answer may explain; a value for a named drug must come from the data, so a
   // sentence naming a drug with a number goes
-  function checkGeneral(text, lex, passages) {
-    var kept = [], dropped = [], shown = numbersIn(passageText(passages));
-    var inPassages = function (x) { return shown.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); }); };
-    String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').replace(/^\s*(\d+[.)]|[-*•])\s+/gm, '')
-      .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
-        sent = sent.trim();
-        if (!sent) return;
-        var toks = norm(sent).split(' '), drug = false;
-        for (var i = 0; i < toks.length && !drug; i++)
-          drug = (toks[i] in lex.drug && toks[i].length > 3) || (i + 1 < toks.length && (toks[i] + ' ' + toks[i + 1]) in lex.drug);
-        var nums = generalNumbersIn(uncite(sent));
-        (drug && nums.length && !nums.every(inPassages) ? dropped : kept).push(sent);
+  // The checks judge sentences, but the answer is Markdown. Lines, list markers, headings and
+  // table rules stay as the model wrote them and only a failing sentence is cut out of its
+  // line, so the final render keeps the formatting the stream showed. A heading without a
+  // number makes no claim and is kept; one left with nothing under it is harmless.
+  var MD_PREFIX = /^(\s*(?:#{1,6}\s+|>\s*)?(?:(?:\d+[.)]|[-*•+])\s+)?)/;
+  var MD_RULE = /^\s*(?:\|?\s*:?-{3,}:?\s*)+\|?\s*$|^\s*(?:-{3,}|\*{3,}|_{3,})\s*$/;
+  function filterSentences(text, keep) {
+    var dropped = [], lines = [];
+    String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').split('\n').forEach(function (line) {
+      if (!line.trim() || MD_RULE.test(line)) { lines.push(line.trim() ? line : ''); return; }
+      var pre = MD_PREFIX.exec(line)[1], body = line.slice(pre.length);
+      if (/^\s*#/.test(pre) && !/\d/.test(body)) { lines.push(line); return; }
+      var out = [];
+      body.split(/(?<=[.!?])\s+/).forEach(function (sent) {
+        var t = sent.trim();
+        if (!t) return;
+        if (keep(t.replace(/\*\*|__|`/g, ''))) out.push(t); else dropped.push(t);
       });
-    return { text: kept.join(' '), dropped: dropped };
+      if (out.length) lines.push(pre + out.join(' '));
+    });
+    var md = lines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+    // headings alone, every sentence under them dropped, say nothing
+    var claims = md.split('\n').filter(function (l) { return l.trim() && !/^\s*#/.test(l) && !MD_RULE.test(l); });
+    return { text: claims.length ? md : '', dropped: dropped };
+  }
+
+  function checkGeneral(text, lex, passages) {
+    var shown = numbersIn(passageText(passages));
+    var inPassages = function (x) { return shown.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); }); };
+    return filterSentences(text, function (sent) {
+      var toks = norm(sent).split(' '), drug = false;
+      for (var i = 0; i < toks.length && !drug; i++)
+        drug = (toks[i] in lex.drug && toks[i].length > 3) || (i + 1 < toks.length && (toks[i] + ' ' + toks[i + 1]) in lex.drug);
+      var nums = generalNumbersIn(uncite(sent));
+      return !(drug && nums.length && !nums.every(inPassages));
+    });
   }
 
   function numbersIn(s) {
@@ -856,11 +878,7 @@
     var ok = function (x) {
       return allowed.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); });
     };
-    var kept = [], dropped = [];
-    String(text || '').replace(/<think>[\s\S]*?<\/think>/g, '').replace(/^\s*(\d+[.)]|[-*•])\s+/gm, '')
-      .split(/(?<=[.!?])\s+|\n+/).forEach(function (sent) {
-        sent = sent.trim();
-        if (!sent) return;
+    return filterSentences(text, function (sent) {
         var nums = numbersIn(uncite(sent));
         // a checked number ties a sentence to the rows; without one it needs a word from them
         var grounded = general || nums.length > 0 || NO_KNOWLEDGE.test(sent) ||
@@ -868,10 +886,8 @@
         var fromPassage = nums.length && nums.every(function (x) {
           return quoted.some(function (a) { return a === x || (a !== 0 && Math.abs(a - x) / Math.abs(a) < 0.005); });
         });
-        if (nums.every(ok) && !(nums.length && STATS.test(sent) && !fromPassage) && grounded) kept.push(sent);
-        else dropped.push(sent);
+        return nums.every(ok) && !(nums.length && STATS.test(sent) && !fromPassage) && grounded;
       });
-    return { text: kept.join(' '), dropped: dropped };
   }
 
   // Stream every partial update to the live UI. The displayed draft is provisional; once the
