@@ -88,6 +88,16 @@
       background: #f8fafc; color: #0f172a; }
     .pkq-meta { font-size: 12.5px; color: #64748b; }
     #pkq-out { overflow-x: auto; }
+    .pkq-askrow input { flex: 1 1 320px; font-size: 15px; padding: 8px 10px; }
+    .pkq-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0; }
+    .pkq-chip { font-size: 12.5px; padding: 2px 9px; border-radius: 999px; background: #eef2ff;
+                color: #3730a3; border: 1px solid #c7d2fe; }
+    .pkq-chip.warn { background: #fffbeb; color: #92400e; border-color: #fde68a; }
+    button.pkq-chip { cursor: pointer; font: inherit; font-size: 12.5px; }
+    button.pkq-chip:hover { border-color: var(--theme-color, #0074d9); }
+    .pkq-answer { margin: 8px 0 4px; padding: 8px 12px; border-left: 3px solid var(--theme-color, #0074d9);
+                  background: #f8fafc; }
+    .pkq-answer .pkq-meta { display: block; margin-top: 2px; }
     #pkq-out table { font-size: 13px; border-collapse: collapse; margin-top: 10px; }
     #pkq-out th { text-align: left; background: #f1f5f9; position: sticky; top: 0; }
     #pkq-out th, #pkq-out td { padding: 4px 10px; border-bottom: 1px solid #e2e8f0;
@@ -597,6 +607,12 @@
               a.href = '#/drugs/drug_' + String(row[drugCol] || '').toLowerCase()
                         .replace(/[^a-z0-9]+/g, '_') + '/' + v;
               td.appendChild(a);
+            } else if ((r.columns[i] === 'href' || r.columns[i] === 'doi') && v) {
+              var l = document.createElement('a');
+              l.textContent = v;
+              l.href = r.columns[i] === 'doi' ? 'https://doi.org/' + v : '#/' + v;
+              if (r.columns[i] === 'doi') { l.target = '_blank'; l.rel = 'noopener'; }
+              td.appendChild(l);
             } else { td.textContent = v === null ? '' : String(v); }
             trr.appendChild(td);
           });
@@ -629,6 +645,73 @@
       }
 
       function sq(v) { return String(v).replace(/'/g, "''"); }
+
+      // ── ask in words (assets/js/pk-ask.js; IMPROVEMENTS_CHAT.md phase 1) ──────────────
+      // No language model: names from the database, a fixed intent catalogue, SQL templates.
+      // The generated SQL goes into the editor and runs like any other query, so what was
+      // asked, what ran and what came back are all on the page.
+      var LEX = null, askP = null;
+      function askScript() {
+        if (window.pkAsk) return Promise.resolve();
+        if (askP) return askP;
+        askP = new Promise(function (resolve, reject) {
+          var t = document.createElement('script'); t.src = 'assets/js/pk-ask.js';
+          t.onload = resolve; t.onerror = function () { askP = null; reject(new Error('could not load pk-ask.js')); };
+          document.head.appendChild(t);
+        });
+        return askP;
+      }
+      function chip(text, cls) {
+        var c = document.createElement('span'); c.className = 'pkq-chip' + (cls ? ' ' + cls : '');
+        c.textContent = text; return c;
+      }
+      function ask(question) {
+        var q = String(question || '').trim();
+        var box = el('pkq-understood'), ans = el('pkq-answer');
+        if (!q || !DB || !box || !ans) return;
+        askScript().then(function () {
+          if (!LEX) LEX = window.pkAsk.lexiconFromDB(DB);
+          var plan = window.pkAsk.parse(q, LEX), out = window.pkAsk.toSQL(plan);
+          box.innerHTML = '';
+          window.pkAsk.understood(plan).forEach(function (b) { box.appendChild(chip(b)); });
+          plan.corrected.forEach(function (c) { box.appendChild(chip('read “' + c.from + '” as ' + c.to, 'warn')); });
+          // an ambiguous name is a choice, never a guess: each option re-asks with it spelled out
+          plan.suggestions.forEach(function (sg) {
+            box.appendChild(chip('“' + sg.word + '” could be:', 'warn'));
+            sg.options.forEach(function (o) {
+              var b = document.createElement('button'); b.type = 'button'; b.className = 'pkq-chip';
+              b.textContent = o;
+              b.dataset.ask = (' ' + plan.text + ' ').replace(' ' + sg.word + ' ', ' ' + o + ' ').trim();
+              box.appendChild(b);
+            });
+          });
+          var sqlBox = el('pkq-sql');
+          sqlBox.dataset.kind = 'ask';                       // drug/parameter inputs leave it alone
+          sqlBox.value = '-- ' + q.replace(/\n/g, ' ') + '\n-- ' + out.title + '\n' + out.sql;
+          var res = null;
+          try { res = DB.exec(out.sql); } catch (e) { /* run() below reports it */ }
+          run();
+          ans.hidden = false;
+          ans.innerHTML = '';
+          ans.appendChild(document.createTextNode(window.pkAsk.summarize(plan, res)));
+          var m = document.createElement('span'); m.className = 'pkq-meta';
+          m.textContent = 'The SQL that produced this is in the editor below — change it and Run.';
+          ans.appendChild(m);
+          // the question is the link: #/query?ask=…
+          try {
+            var h = '#/query?ask=' + encodeURIComponent(q);
+            if (location.hash !== h) history.replaceState(null, '', h);
+          } catch (e) { /* a file:// page without history is fine */ }
+        }).catch(function (e) { status(String(e.message || e), true); });
+      }
+      function askFromHash() {
+        var m = /[?&]ask=([^&]*)/.exec(location.hash || '');
+        if (!m) return false;
+        var q = decodeURIComponent(m[1].replace(/\+/g, ' '));
+        if (el('pkq-ask')) el('pkq-ask').value = q;
+        ask(q);
+        return true;
+      }
 
       function qcodeFor(text) {
         // Resolve a typed parameter name through the ontology's 740 synonyms, so
@@ -696,6 +779,7 @@
           fillLists();
           el('pkq-status').hidden = true;
           el('pkq-ui').hidden = false;
+          if (askFromHash()) return;
           el('pkq-sql').dataset.kind = 'param';
           el('pkq-sql').value = buildParam();
           run();
@@ -736,11 +820,15 @@
           document.addEventListener('keydown', function (ev) {
             var t = ev.target;
             if (!t) return;
+            if (t.id === 'pkq-ask' && ev.key === 'Enter') { ask(t.value); return; }
             if ((t.id === 'pkq-drug' || t.id === 'pkq-code') && ev.key === 'Enter') { run(); return; }
             if (t.id === 'pkq-sql' && (ev.ctrlKey || ev.metaKey) && ev.key === 'Enter') run();
           });
           document.addEventListener('click', function (ev) {
             if (ev.target && ev.target.id === 'pkq-run') run();
+            if (ev.target && ev.target.id === 'pkq-askbtn') ask((el('pkq-ask') || {}).value);
+            var c = ev.target.closest && ev.target.closest('button.pkq-chip[data-ask]');
+            if (c) { if (el('pkq-ask')) el('pkq-ask').value = c.dataset.ask; ask(c.dataset.ask); }
           });
         } else if (ui && !runBtn) {
           status('The query controls did not render — see query.md.', true);

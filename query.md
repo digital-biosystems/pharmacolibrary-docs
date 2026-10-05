@@ -3,12 +3,23 @@
 # Query the data
 
 Every extracted parameter, with the paper it came from. The whole database is a
-**single 3.9 MB file** your browser downloads once and queries itself — nothing is sent
+**single ~8 MB file** your browser downloads once and queries itself — nothing is sent
 anywhere, and there is no server to be down.
+
+Ask in words, or write SQL. A question is matched against the database's own names — drugs,
+brands and synonyms, parameters, genes — and turned into a query; the answer is the rows that
+come back, and the SQL it ran is in the editor below, to read or change. No language model is
+involved, so nothing is made up: what is not in the extraction comes back as no rows.
 
 <div id="pkq">
   <div id="pkq-status" class="pkq-status">Loading the query engine…</div>
   <div id="pkq-ui" hidden>
+    <p class="pkq-row pkq-askrow">
+      <input id="pkq-ask" type="search" placeholder="clearance of metformin · CYP2C19 and clopidogrel · PD models of warfarin" autocomplete="off" aria-label="Ask a question about the data">
+      <button id="pkq-askbtn" class="pkq-btn pkq-run" type="button">Ask</button>
+    </p>
+    <div id="pkq-understood" class="pkq-chips" aria-live="polite"></div>
+    <p id="pkq-answer" class="pkq-answer" aria-live="polite" hidden></p>
     <p class="pkq-canned">
       <button class="pkq-btn" data-q="param">absorption rate of a drug</button>
       <button class="pkq-btn" data-q="pdpk">PD models driven by a PK model</button>
@@ -38,13 +49,15 @@ anywhere, and there is no server to be down.
 
 | table | rows | what it holds |
 |---|---|---|
-| `drug` | 588 | generic name, ATC codes, drug or toxin |
-| `paper` | 3,144 | title, year, DOI, PMID per source paper |
-| `record` | 6,952 | one per extracted model: domain, population, status, `model_id` |
-| `parameter` | 23,327 | value, `value_si` + `unit_si`, units, origin paper, `link_method` |
-| `pd_record` | 4,024 | model family, effect form, **`driver_kind`** — how a PD model attaches to PK |
-| `pgx_record` | 1,434 | gene, mechanism, **`applies_to`**, the Q-code it modifies |
-| `qcode` | 149 | the PK ontology, with 740 synonyms |
+| `drug` | 869 | generic name, ATC codes, drug or toxin |
+| `paper` | 3,990 | title, year, DOI, PMID per source paper |
+| `record` | 8,087 | one per extracted model: domain, population, status, `model_id` |
+| `parameter` | 28,196 | value, `value_si` + `unit_si`, units, origin paper, `link_method` |
+| `pd_record` | 3,697 | model family, effect form, the response (`biomarker`), **`driver_kind`** — how a PD model attaches to PK |
+| `pgx_record` | 2,239 | gene, mechanism, **`applies_to`**, the Q-code it modifies |
+| `qcode` | 158 | the PK ontology, with 849 synonyms |
+| `drug_alias` | 11,559 | brand names and synonyms → the drug (a brand of several drugs is listed under each) |
+| `search_doc` | 11,757 | every name the sidebar search knows, including drugs not extracted yet |
 
 `value_si` is in **SI base units** — `unit_si` names which (`m3/s` for a clearance, `m3`,
 `1/s`, `s`). That is *not* `unit_canonical`, which is the display unit (`L/h`): the two differ
